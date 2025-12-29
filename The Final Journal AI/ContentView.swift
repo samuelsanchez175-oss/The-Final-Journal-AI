@@ -4,18 +4,23 @@ import SwiftData
 // =======================================================
 // PAGE MAP (ARCHITECTURAL)
 // =======================================================
-// Page 1  — Journal Library (Home / Notes List)
-// Page 2  — Note Editor (Writing Surface)
-// Page 3  — Bottom Dynamic Island Toolbar
-// Page 4  — Eye Toggle (Rhyme Visibility State)
-// Page 5  — Rhyme Highlighter Engine (Base)
-// Page 6  — Visual Highlight Overlay
-// Page 7  — Phonetic Rhyme Engine (CMUDICT)
-// Page 8  — Rhyme Categories (Perfect vs Near)
-// Page 9  — Internal Rhymes & Position Awareness
-// Page 10 — Rhyme Intelligence Panel
-// Page 11 — Syllables & Stress Illumination
-// Page 12 — Cadence & Flow Metrics
+// Page 1    — Journal Library (Home / Notes List)
+// Page 1.1  — Profile Entry Point (Top Right)
+// Page 1.2  — Bottom Search Bar (Home)
+// Page 1.3  — Import / Create Menu (Top Right)
+// Page 1.4  — Filters & Folders (Home)
+// Page 1.5  — Quick Compose Button (Bottom Right)
+// Page 2    — Note Editor (Writing Surface)
+// Page 3    — Bottom Dynamic Island Toolbar
+// Page 4    — Eye Toggle (Rhyme Visibility State)
+// Page 5    — Rhyme Highlighter Engine (Base)
+// Page 6    — Visual Highlight Overlay
+// Page 7    — Phonetic Rhyme Engine (CMUDICT)
+// Page 8    — Rhyme Categories (Perfect vs Near)
+// Page 9    — Internal Rhymes & Position Awareness
+// Page 10   — Rhyme Intelligence Panel
+// Page 11   — Syllables & Stress Illumination
+// Page 12   — Cadence & Flow Metrics
 // =======================================================
 
 // =======================================================
@@ -33,40 +38,170 @@ struct JournalLibraryView: View {
     @Query private var items: [Item]
     @AppStorage("didSeedInitialNotes") private var didSeedInitialNotes: Bool = false
 
-    var body: some View {
-        NavigationSplitView {
-            Group {
-                if items.isEmpty {
-                    JournalEmptyStateView(onCreate: addItem)
-                } else {
-                    JournalListView(items: items, onDelete: deleteItems)
+    // =======================================================
+    // MARK: - PAGE 1.1: Profile Entry Point (Button Only)
+    // =======================================================
+    @State private var showProfile: Bool = false
+    // =======================================================
+    // MARK: - PAGE 1.2: Bottom Search Bar (UI + logic)
+    // =======================================================
+    @State private var searchText: String = ""
+    @FocusState private var isSearchFocused: Bool
+    @State private var showSearchCancel: Bool = false
+    // =======================================================
+    // MARK: - PAGE 1.4: Filters & Folders (UI only)
+    // =======================================================
+    @State private var selectedFilter: Page1Filter = .all
+    // =======================================================
+    // MARK: - PAGE 1: Local Visibility Gate for Bottom Bar
+    // =======================================================
+    @State private var isOnPage1: Bool = true
+
+    // =======================================================
+    // MARK: - PAGE 1.2: Live Filtering (computed property)
+    // =======================================================
+    private var filteredItems: [Item] {
+        var base: [Item]
+
+        // Step 1: text-based filtering
+        if searchText.isEmpty {
+            base = items
+        } else {
+            let q = searchText.lowercased()
+
+            if q.hasPrefix("title:") {
+                let t = q.replacingOccurrences(of: "title:", with: "").trimmingCharacters(in: .whitespaces)
+                base = items.filter { $0.title.lowercased().contains(t) }
+            } else if q.hasPrefix("body:") {
+                let b = q.replacingOccurrences(of: "body:", with: "").trimmingCharacters(in: .whitespaces)
+                base = items.filter { $0.body.lowercased().contains(b) }
+            } else {
+                base = items.filter {
+                    $0.title.lowercased().contains(q) ||
+                    $0.body.lowercased().contains(q)
                 }
             }
-            .background(.ultraThinMaterial)
-            .navigationTitle("Journal")
-            .toolbar {
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Image(systemName: "plus")
+        }
+
+        // Step 2: filter pills
+        switch selectedFilter {
+        case .all:
+            return base
+        case .recent:
+            return base.sorted { $0.timestamp > $1.timestamp }
+        case .drafts:
+            return base.filter { $0.body.isEmpty }
+        case .folders:
+            return base // placeholder for future folder logic
+        }
+    }
+
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            NavigationSplitView {
+                Group {
+                    if items.isEmpty {
+                        JournalEmptyStateView(onCreate: addItem)
+                    } else {
+                        // =======================================================
+                        // MARK: - PAGE 1.4: Filters & Folders (UI only)
+                        // =======================================================
+                        if isSearchFocused {
+                            page1FiltersView
+                                .transition(.opacity)
+                        }
+                        JournalListView(items: filteredItems, onDelete: deleteItems, isOnPage1: $isOnPage1)
                     }
                 }
+                .background(.ultraThinMaterial)
+                .navigationTitle("Journal")
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+
+                        Button {
+                            showProfile.toggle()
+                        } label: {
+                            Image(systemName: "person.crop.circle")
+                        }
+
+                        Menu {
+                            Button {
+                                addItem()
+                            } label: {
+                                Label("New Note", systemImage: "square.and.pencil")
+                            }
+
+                            Button {
+                                // TODO: Import from Apple Notes
+                            } label: {
+                                Label("Import from Notes", systemImage: "note.text")
+                            }
+
+                            Button {
+                                // TODO: Import from Voice Memos
+                            } label: {
+                                Label("Import from Voice Memos", systemImage: "waveform")
+                            }
+                        } label: {
+                            Image(systemName: "plus")
+                        }
+                    }
+                }
+            } detail: {
+                JournalDetailPlaceholderView()
             }
-        } detail: {
-            JournalDetailPlaceholderView()
-        }
-        .task {
-            guard !didSeedInitialNotes else { return }
-            guard items.isEmpty else {
+            .popover(isPresented: $showProfile, arrowEdge: .top) {
+                VStack(spacing: 12) {
+                    Text("Profile")
+                        .font(.headline)
+
+                    Text("Coming soon")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                .padding()
+                .frame(width: 220)
+                .background(.ultraThinMaterial)
+            }
+            .task {
+                guard !didSeedInitialNotes else { return }
+                guard items.isEmpty else {
+                    didSeedInitialNotes = true
+                    return
+                }
+
+                for _ in 0..<5 {
+                    let note = Item(timestamp: Date())
+                    modelContext.insert(note)
+                }
+
                 didSeedInitialNotes = true
-                return
             }
 
-            for _ in 0..<5 {
-                let note = Item(timestamp: Date())
-                modelContext.insert(note)
+            // =======================================================
+            // MARK: - PAGE 1.5: Quick Compose Button (Bottom Right)
+            // =======================================================
+            if isOnPage1 {
+                Button(action: addItem) {
+                    Image(systemName: "square.and.pencil")
+                        .font(.title2)
+                        .padding(14)
+                        .background(.ultraThinMaterial, in: Circle())
+                }
+                .padding(.trailing, 16)
+                .padding(.bottom, 16)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
             }
 
-            didSeedInitialNotes = true
+            // =======================================================
+            // MARK: - PAGE 1.2: Bottom Search Bar (UI + logic)
+            // =======================================================
+            if isOnPage1 {
+                page1BottomBar
+                    .safeAreaInset(edge: .bottom) {
+                        Color.clear.frame(height: 0)
+                    }
+            }
         }
     }
 
@@ -84,16 +219,127 @@ struct JournalLibraryView: View {
             }
         }
     }
+
+    // =======================================================
+    // MARK: - PAGE 1.2: Bottom Search Bar (UI + logic)
+    // =======================================================
+    private var page1BottomBar: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "magnifyingglass")
+                .foregroundStyle(.secondary)
+
+            TextField("Search (title:, body:)", text: $searchText)
+                .focused($isSearchFocused)
+                .textFieldStyle(.plain)
+                .submitLabel(.search)
+                .onChange(of: isSearchFocused) { focused in
+                    withAnimation(.easeInOut(duration: 0.15)) {
+                        showSearchCancel = focused
+                    }
+                }
+
+            if !searchText.isEmpty {
+                Button {
+                    searchText = ""
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundStyle(.secondary)
+                }
+                .buttonStyle(.plain)
+            }
+
+            Spacer()
+
+            Image(systemName: "mic.fill")
+                .foregroundStyle(.secondary)
+
+            if showSearchCancel {
+                Button {
+                    searchText = ""
+                    isSearchFocused = false
+                } label: {
+                    Image(systemName: "xmark")
+                        .font(.callout.weight(.semibold))
+                        .padding(6)
+                        .background(.ultraThinMaterial, in: Circle())
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .padding(.horizontal, 14)
+        .frame(height: 44)
+        .background(
+            Capsule()
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    Capsule()
+                        .strokeBorder(.primary.opacity(isSearchFocused ? 0.18 : 0.08))
+                )
+        )
+        .padding(.horizontal)
+        .padding(.bottom, 20)
+        .padding(.trailing, 72)
+    }
+
+// =======================================================
+// MARK: - PAGE 1.4: Filters & Folders (Extracted View)
+// =======================================================
+private var page1FiltersView: some View {
+    ScrollView(.horizontal, showsIndicators: false) {
+        HStack(spacing: 10) {
+            ForEach(Page1Filter.allCases) { filter in
+                filterPill(filter)
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
+    }
+}
+
+@ViewBuilder
+private func filterPill(_ filter: Page1Filter) -> some View {
+    Button {
+        selectedFilter = filter
+    } label: {
+        Text(filter.rawValue)
+            .font(.callout)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 8)
+            .background(
+                ZStack {
+                    Capsule().fill(.ultraThinMaterial)
+                    if selectedFilter != filter {
+                        Capsule().fill(Color.clear)
+                    }
+                }
+                .overlay(
+                    Capsule()
+                        .strokeBorder(.primary.opacity(selectedFilter == filter ? 0.18 : 0.08))
+                )
+            )
+    }
+    .buttonStyle(.plain)
+}
+}
+
+enum Page1Filter: String, CaseIterable, Identifiable {
+    case all = "All"
+    case recent = "Recent"
+    case drafts = "Drafts"
+    case folders = "Folders"
+
+    var id: String { rawValue }
 }
 
 struct JournalListView: View {
     let items: [Item]
     let onDelete: (IndexSet) -> Void
+    @Binding var isOnPage1: Bool
 
     var body: some View {
         List {
             ForEach(items) { item in
-                JournalRowView(item: item)
+                JournalRowView(item: item, isOnPage1: $isOnPage1)
                     .listRowBackground(Color.clear)
                     .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
                     .listRowSeparator(.hidden)
@@ -107,10 +353,13 @@ struct JournalListView: View {
 
 struct JournalRowView: View {
     let item: Item
+    @Binding var isOnPage1: Bool
 
     var body: some View {
         NavigationLink {
             NoteEditorView(item: item)
+                .onAppear { isOnPage1 = false }
+                .onDisappear { isOnPage1 = true }
         } label: {
             VStack(spacing: 0) {
                 VStack(alignment: .leading, spacing: 6) {
