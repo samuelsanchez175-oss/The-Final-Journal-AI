@@ -31,6 +31,7 @@ struct ContentView: View {
 struct JournalLibraryView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    @AppStorage("didSeedInitialNotes") private var didSeedInitialNotes: Bool = false
 
     var body: some View {
         NavigationSplitView {
@@ -52,6 +53,20 @@ struct JournalLibraryView: View {
             }
         } detail: {
             JournalDetailPlaceholderView()
+        }
+        .task {
+            guard !didSeedInitialNotes else { return }
+            guard items.isEmpty else {
+                didSeedInitialNotes = true
+                return
+            }
+
+            for _ in 0..<5 {
+                let note = Item(timestamp: Date())
+                modelContext.insert(note)
+            }
+
+            didSeedInitialNotes = true
         }
     }
 
@@ -79,9 +94,9 @@ struct JournalListView: View {
         List {
             ForEach(items) { item in
                 JournalRowView(item: item)
-                    .listRowSeparator(.hidden)
                     .listRowBackground(Color.clear)
                     .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
+                    .listRowSeparator(.hidden)
             }
             .onDelete(perform: onDelete)
         }
@@ -97,23 +112,25 @@ struct JournalRowView: View {
         NavigationLink {
             NoteEditorView(item: item)
         } label: {
-            VStack(alignment: .leading, spacing: 6) {
-                Text(noteTitle)
-                    .font(.headline)
-                    .lineLimit(1)
+            VStack(spacing: 0) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(noteTitle)
+                        .font(.headline)
+                        .lineLimit(1)
 
-                Text(notePreview)
-                    .font(.callout)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(2)
+                    Text(notePreview)
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(2)
+                }
+                .padding(.vertical, 12)
+                .padding(.horizontal, 16)
+
+                Divider()
+                    .padding(.leading, 16)
             }
-            .padding(.vertical, 4)
-            .padding(.horizontal, 12)
-            .background(
-                RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .fill(.ultraThinMaterial)
-            )
-            .contentShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .background(Color.clear)
+            .contentShape(Rectangle())
         }
     }
 
@@ -175,7 +192,7 @@ struct NoteEditorView: View {
                 VStack(spacing: 0) {
                     TextField("Title", text: $item.title)
                         .font(.title2.weight(.semibold))
-                        .padding(.horizontal, 20)
+                        .padding(.horizontal, 12)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.vertical, 12)
                     
@@ -190,7 +207,7 @@ struct NoteEditorView: View {
                             TextEditor(text: $item.body)
                                 .font(.body)
                                 .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.horizontal, 16)
+                                .padding(.horizontal, 12)
                                 .padding(.top, 8)
                                 .padding(.bottom, 24)
                                 .frame(minHeight: 400, alignment: .top)
@@ -345,7 +362,17 @@ final class CMUDICTStore {
     private(set) var phonemesByWord: [String: [String]] = [:]
     private init() { load() }
     private func load() {
-        guard let url = Bundle.main.url(forResource: "cmudict", withExtension: "txt"), let contents = try? String(contentsOf: url) else { return }
+        // Try to load from bundle first
+        if let url = Bundle.main.url(forResource: "cmudict", withExtension: "txt"),
+           let contents = try? String(contentsOf: url) {
+            parseDict(contents)
+        } else {
+            // Fallback to a minimal built-in dictionary for common rhyming words
+            loadFallbackDictionary()
+        }
+    }
+    
+    private func parseDict(_ contents: String) {
         for line in contents.split(separator: "\n") {
             guard !line.hasPrefix(";;;") else { continue }
             let parts = line.split(separator: " ")
@@ -354,6 +381,39 @@ final class CMUDICTStore {
             let phones = parts.dropFirst().map(String.init)
             phonemesByWord[word] = phones
         }
+    }
+    
+    private func loadFallbackDictionary() {
+        // Minimal fallback dictionary with common words
+        phonemesByWord = [
+            "love": ["L", "AH1", "V"],
+            "dove": ["D", "AH1", "V"],
+            "above": ["AH0", "B", "AH1", "V"],
+            "shove": ["SH", "AH1", "V"],
+            "cat": ["K", "AE1", "T"],
+            "hat": ["HH", "AE1", "T"],
+            "bat": ["B", "AE1", "T"],
+            "rat": ["R", "AE1", "T"],
+            "mat": ["M", "AE1", "T"],
+            "sat": ["S", "AE1", "T"],
+            "day": ["D", "EY1"],
+            "way": ["W", "EY1"],
+            "say": ["S", "EY1"],
+            "pay": ["P", "EY1"],
+            "play": ["P", "L", "EY1"],
+            "stay": ["S", "T", "EY1"],
+            "night": ["N", "AY1", "T"],
+            "light": ["L", "AY1", "T"],
+            "fight": ["F", "AY1", "T"],
+            "right": ["R", "AY1", "T"],
+            "sight": ["S", "AY1", "T"],
+            "bright": ["B", "R", "AY1", "T"],
+            "time": ["T", "AY1", "M"],
+            "rhyme": ["R", "AY1", "M"],
+            "climb": ["K", "L", "AY1", "M"],
+            "chime": ["CH", "AY1", "M"],
+            "sublime": ["S", "AH0", "B", "L", "AY1", "M"]
+        ]
     }
 }
 // =======================================================
@@ -365,7 +425,7 @@ struct RhymeHighlightOverlayView: View {
     var body: some View {
         Text(attributedString)
             .font(.body)
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 12)
             .allowsHitTesting(false)
     }
     private var attributedString: AttributedString {
@@ -473,7 +533,7 @@ struct SyllableStressOverlayView: View {
     var body: some View {
         Text(attributed)
             .font(.body)
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 12)
             .allowsHitTesting(false)
     }
     private var attributed: AttributedString {
