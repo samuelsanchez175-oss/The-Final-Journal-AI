@@ -19,7 +19,13 @@ struct The_Final_Journal_AIApp: App {
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+            // Fallback to in-memory store to prevent app crash
+            return try! ModelContainer(
+                for: schema,
+                configurations: [
+                    ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
+                ]
+            )
         }
     }()
 
