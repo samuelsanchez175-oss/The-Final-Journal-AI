@@ -1,8 +1,12 @@
 import SwiftUI
 import SwiftData
+import UIKit
+import Combine
 
 // =======================================================
 // PAGE MAP (ARCHITECTURAL)
+// 🔒 LOCKED — DO NOT MODIFY
+// Any structural changes here require explicit review.
 // =======================================================
 // Page 1    — Journal Library (Home / Notes List)
 // Page 1.1  — Profile Entry Point (Top Right)
@@ -11,7 +15,12 @@ import SwiftData
 // Page 1.4  — Filters & Folders (Home)
 // Page 1.5  — Quick Compose Button (Bottom Right)
 // Page 2    — Note Editor (Writing Surface)
-// Page 3    — Bottom Dynamic Island Toolbar
+// Page 3    — Keyboard Bottom Dynamic Island Toolbar
+// Page 3.1  — Clip / Attach Menu (Files, Notes, Voice Memos)
+// Page 3.2  — AI Assist Menu (Read‑Only Suggestions)
+// Page 3.3  — Eye Toggle (Rhyme Group Visibility)
+// Page 3.4  — Debug / Diagnostics Tool (Analysis Only)
+// Page 3.5  — Magnifying Glass (Rhyme Group List / Map)
 // Page 4    — Eye Toggle (Rhyme Visibility State)
 // Page 5    — Rhyme Highlighter Engine (Base)
 // Page 6    — Visual Highlight Overlay
@@ -97,35 +106,39 @@ struct JournalLibraryView: View {
     }
 
     var body: some View {
-        ZStack(alignment: .bottom) {
+        ZStack {
             NavigationSplitView {
                 Group {
                     if items.isEmpty {
                         JournalEmptyStateView(onCreate: addItem)
                     } else {
-                        // =======================================================
-                        // MARK: - PAGE 1.4: Filters & Folders (UI only)
-                        // =======================================================
-                        if isSearchFocused {
+                        VStack(spacing: 0) {
                             page1FiltersView
-                                .transition(.opacity)
+                            JournalListView(items: filteredItems, onDelete: deleteItems, isOnPage1: $isOnPage1)
                         }
-                        JournalListView(items: filteredItems, onDelete: deleteItems, isOnPage1: $isOnPage1)
                     }
                 }
                 .background(.ultraThinMaterial)
                 .navigationTitle("Journal")
                 .toolbar {
-                    ToolbarItemGroup(placement: .navigationBarTrailing) {
-
+                    // ===================================================
+                    // PAGE 1.1 — Profile Entry Point (Top Right)
+                    // ===================================================
+                    ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
                             showProfile.toggle()
                         } label: {
                             Image(systemName: "person.crop.circle")
                         }
+                    }
 
+                    // ===================================================
+                    // PAGE 1.3 — Import / Create Menu (Top Right)
+                    // ===================================================
+                    ToolbarItem(placement: .navigationBarTrailing) {
                         Menu {
                             Button {
+                                prepareHapticForNewNote()
                                 addItem()
                             } label: {
                                 Label("New Note", systemImage: "square.and.pencil")
@@ -150,72 +163,82 @@ struct JournalLibraryView: View {
             } detail: {
                 JournalDetailPlaceholderView()
             }
-            .popover(isPresented: $showProfile, arrowEdge: .top) {
-                VStack(spacing: 12) {
-                    Text("Profile")
-                        .font(.headline)
-
-                    Text("Coming soon")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-                .padding()
-                .frame(width: 220)
-                .background(.ultraThinMaterial)
-            }
-            .task {
-                guard !didSeedInitialNotes else { return }
-                guard items.isEmpty else {
-                    didSeedInitialNotes = true
-                    return
-                }
-
-                for _ in 0..<5 {
-                    let note = Item(timestamp: Date())
-                    modelContext.insert(note)
-                }
-
-                didSeedInitialNotes = true
-            }
 
             // =======================================================
-            // MARK: - PAGE 1.5: Quick Compose Button (Bottom Right)
+            // PAGE 1.2 — Bottom Search Bar
             // =======================================================
             if isOnPage1 {
-                Button(action: addItem) {
-                    Image(systemName: "square.and.pencil")
-                        .font(.title2)
-                        .padding(14)
-                        .background(.ultraThinMaterial, in: Circle())
+                VStack {
+                    Spacer()
+                    page1BottomBar
                 }
-                .padding(.trailing, 16)
-                .padding(.bottom, 16)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
             }
 
             // =======================================================
-            // MARK: - PAGE 1.2: Bottom Search Bar (UI + logic)
+            // PAGE 1.5 — Quick Compose Button (Bottom Right)
             // =======================================================
             if isOnPage1 {
-                page1BottomBar
-                    .safeAreaInset(edge: .bottom) {
-                        Color.clear.frame(height: 0)
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Button(action: addItem) {
+                            Image(systemName: "square.and.pencil")
+                                .font(.title2)
+                                .padding(14)
+                                .background(.ultraThinMaterial, in: Circle())
+                        }
+                        .padding(.trailing, 16)
+                        .padding(.bottom, 16)
                     }
+                }
             }
         }
+        .task {
+            guard !didSeedInitialNotes else { return }
+            guard items.isEmpty else {
+                didSeedInitialNotes = true
+                return
+            }
+            for i in 1...5 {
+                modelContext.insert(
+                    Item(
+                        timestamp: Date(),
+                        title: "Note \(i)",
+                        body: ""
+                    )
+                )
+            }
+            didSeedInitialNotes = true
+        }
+    }
+
+    // NEW: Trigger haptic feedback for "New Note"
+    private func prepareHapticForNewNote() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
     }
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(timestamp: Date())
+            let nextIndex = items.count + 1
+            let newItem = Item(
+                timestamp: Date(),
+                title: "Note \(nextIndex)",
+                body: ""
+            )
             modelContext.insert(newItem)
         }
     }
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+            let filteredItems = self.filteredItems
+            let itemToDelete = offsets.map { filteredItems[$0] }
+            for item in itemToDelete {
+                if let index = items.firstIndex(where: { $0.id == item.id}) {
+                    modelContext.delete(items[index])
+                }
             }
         }
     }
@@ -232,9 +255,9 @@ struct JournalLibraryView: View {
                 .focused($isSearchFocused)
                 .textFieldStyle(.plain)
                 .submitLabel(.search)
-                .onChange(of: isSearchFocused) { focused in
+                .onChange(of: isSearchFocused) {
                     withAnimation(.easeInOut(duration: 0.15)) {
-                        showSearchCancel = focused
+                        showSearchCancel = isSearchFocused
                     }
                 }
 
@@ -281,45 +304,45 @@ struct JournalLibraryView: View {
         .padding(.trailing, 72)
     }
 
-// =======================================================
-// MARK: - PAGE 1.4: Filters & Folders (Extracted View)
-// =======================================================
-private var page1FiltersView: some View {
-    ScrollView(.horizontal, showsIndicators: false) {
-        HStack(spacing: 10) {
-            ForEach(Page1Filter.allCases) { filter in
-                filterPill(filter)
-            }
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 8)
-    }
-}
-
-@ViewBuilder
-private func filterPill(_ filter: Page1Filter) -> some View {
-    Button {
-        selectedFilter = filter
-    } label: {
-        Text(filter.rawValue)
-            .font(.callout)
-            .padding(.horizontal, 14)
-            .padding(.vertical, 8)
-            .background(
-                ZStack {
-                    Capsule().fill(.ultraThinMaterial)
-                    if selectedFilter != filter {
-                        Capsule().fill(Color.clear)
-                    }
+    // =======================================================
+    // MARK: - PAGE 1.4: Filters & Folders (Extracted View)
+    // =======================================================
+    private var page1FiltersView: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                ForEach(Page1Filter.allCases) { filter in
+                    filterPill(filter)
                 }
-                .overlay(
-                    Capsule()
-                        .strokeBorder(.primary.opacity(selectedFilter == filter ? 0.18 : 0.08))
-                )
-            )
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
+        }
     }
-    .buttonStyle(.plain)
-}
+
+    @ViewBuilder
+    private func filterPill(_ filter: Page1Filter) -> some View {
+        Button {
+            selectedFilter = filter
+        } label: {
+            Text(filter.rawValue)
+                .font(.callout)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 8)
+                .background(
+                    ZStack {
+                        Capsule().fill(.ultraThinMaterial)
+                        if selectedFilter != filter {
+                            Capsule().fill(Color.clear)
+                        }
+                    }
+                    .overlay(
+                        Capsule()
+                            .strokeBorder(.primary.opacity(selectedFilter == filter ? 0.18 : 0.08))
+                    )
+                )
+        }
+        .buttonStyle(.plain)
+    }
 }
 
 enum Page1Filter: String, CaseIterable, Identifiable {
@@ -414,10 +437,32 @@ struct JournalEmptyStateView: View {
 }
 
 // =======================================================
+// MARK: - Downstream Highlight Model
+// =======================================================
+struct Highlight {
+    enum Kind {
+        case perfect, near, `internal`
+    }
+    let word: String
+    let range: Range<String.Index>
+    let kind: Kind
+}
+
+
+// =======================================================
 // MARK: - PAGE 2: Note Editor (Correctly Bound)
 // =======================================================
 
+struct ScrollOffsetKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+
 struct NoteEditorView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
     @Bindable var item: Item
 
     @State private var isRhymeOverlayVisible: Bool = false
@@ -426,80 +471,231 @@ struct NoteEditorView: View {
     @State private var showInternalRhymes: Bool = true
     @State private var showRhymeDiagnostics: Bool = false
     @State private var showRhymePanel: Bool = false
+    @FocusState private var isEditorFocused: Bool
+
+    // STEP 1 — Track scroll offset
+    @State private var scrollOffset: CGFloat = 0
+
+    // PART 1 STEP 1 — Add inline diagnostics state
+    @State private var activeDiagnostics: DiagnosticsMode? = nil
+    enum DiagnosticsMode {
+        case rhyme, cadence, stress
+    }
+    
+    // New property to generate highlights
+    private var computedHighlights: [Highlight] {
+        let text = item.body
+        let groups = rhymeHighlighter.groups(in: text)
+        var highlights: [Highlight] = []
+        for group in groups {
+            for word in group.words {
+                let range = word.range
+                let isLineEnding = range.upperBound == text.endIndex || (range.upperBound < text.endIndex && text[text.index(after: range.upperBound)].isNewline)
+                
+                // Simplified classification. Assuming all grouped rhymes are 'perfect'.
+                // Can be refined later.
+                let baseKind: Highlight.Kind = .perfect
+                let finalKind: Highlight.Kind = isLineEnding ? baseKind : .internal
+                
+                highlights.append(Highlight(word: word.word, range: range, kind: finalKind))
+            }
+        }
+        return highlights
+    }
+
 
     private let rhymeHighlighter = RhymeHighlighterEngine()
     private let cadenceAnalyzer = CadenceAnalyzer()
 
     private var cadenceMetrics: CadenceMetrics {
-        cadenceAnalyzer.analyze(text: item.body, highlights: rhymeHighlighter.highlights(in: item.body))
+        cadenceAnalyzer.analyze(text: item.body, highlights: computedHighlights)
     }
 
     var body: some View {
-        ZStack(alignment: .bottom) {
+        ZStack {
             VStack(spacing: 0) {
                 // Title Header Container
                 VStack(spacing: 0) {
                     TextField("Title", text: $item.title)
                         .font(.title2.weight(.semibold))
-                        .padding(.horizontal, 12)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: 680)
+                        .padding(.horizontal, 20)
                         .padding(.vertical, 12)
-                    
+                        // STEP 4 — Animate the title based on scroll
+                        .scaleEffect(scrollOffset < -20 ? 0.94 : 1.0)
+                        .opacity(scrollOffset < -20 ? 0.6 : 1.0)
+                        .animation(.easeOut(duration: 0.2), value: scrollOffset)
+
                     Divider()
+                        .frame(maxWidth: 680)
                 }
-                .background(.ultraThinMaterial)
 
                 // Body Editor
+                // STEP 2 — Add a scroll offset reader
                 ScrollView {
+                    GeometryReader { geo in
+                        Color.clear
+                            .preference(key: ScrollOffsetKey.self,
+                                        value: geo.frame(in: .named("editorScroll")).minY)
+                    }
+                    .frame(height: 0)
                     VStack(alignment: .leading, spacing: 0) {
                         ZStack(alignment: .topLeading) {
                             TextEditor(text: $item.body)
+                                .focused($isEditorFocused)
                                 .font(.body)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.horizontal, 12)
+                                .frame(maxWidth: 680, alignment: .leading)
+                                .padding(.horizontal, 20)
                                 .padding(.top, 8)
                                 .padding(.bottom, 24)
                                 .frame(minHeight: 400, alignment: .top)
+                                // Remove the white TextEditor canvas (UIKit scroll background)
+                                .scrollContentBackground(.hidden)
+                                .textEditorStyle(.plain)
+                                // Preserve layout: hide text color, not the view
+                                .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
 
-                            if isRhymeOverlayVisible {
-                                RhymeHighlightOverlayView(
-                                    text: item.body,
-                                    highlights: rhymeHighlights
-                                )
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            }
+                            // Always mount the overlay, toggle opacity only
+                            RhymeHighlightOverlayView(
+                                text: item.body,
+                                highlights: rhymeHighlights
+                            )
+                            .frame(maxWidth: 680, alignment: .leading)
+                            .padding(.horizontal, 20)
+                            .padding(.top, 8)
+                            .padding(.bottom, 24)
+                            .opacity(isRhymeOverlayVisible ? 1.0 : 0.0)
+                            .allowsHitTesting(false)
                         }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
+                // STEP 3 — Name the coordinate space and listen for changes
+                .coordinateSpace(name: "editorScroll")
+                .onPreferenceChange(ScrollOffsetKey.self) { value in
+                    scrollOffset = value
+                }
             }
+
             if isRhymeOverlayVisible {
-                RhymeLegendView(showPerfect: $showPerfectRhymes, showNear: $showNearRhymes, showInternal: $showInternalRhymes)
-                    .padding(.bottom, 72)
+                RhymeLegendView(
+                    showPerfect: $showPerfectRhymes,
+                    showNear: $showNearRhymes,
+                    showInternal: $showInternalRhymes
+                )
+                .padding(.bottom, 72)
             }
-            DynamicIslandToolbarView(isRhymeOverlayVisible: $isRhymeOverlayVisible, showDiagnostics: $showRhymeDiagnostics, showRhymePanel: $showRhymePanel)
-                .padding(.bottom, 12)
+
+            // PART 1 STEP 4 — Render diagnostics inline near toolbar
+            if let diagnostics = activeDiagnostics {
+                VStack(spacing: 12) {
+                    if diagnostics == .rhyme {
+                        let highlights = computedHighlights
+                        RhymeDiagnosticsView(
+                            perfect: highlights.filter { $0.kind == .perfect }.count,
+                            near: highlights.filter { $0.kind == .near }.count,
+                            internalCount: highlights.filter { $0.kind == .`internal` }.count
+                        )
+                    }
+                    if diagnostics == .cadence {
+                        CadenceMetricsView(metrics: cadenceMetrics)
+                    }
+                    if diagnostics == .stress {
+                        StressAnalysisInlineView(text: item.body)
+                    }
+                }
+                .padding(12)
+                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+                .frame(maxWidth: 320)
+                .transition(.opacity)
+                .padding(.top, 32)
+            }
         }
-        .popover(isPresented: $showRhymeDiagnostics, arrowEdge: .bottom) {
-            let highlights = rhymeHighlighter.highlights(in: item.body)
-            RhymeDiagnosticsView(perfect: highlights.filter { $0.kind == .perfect }.count, near: highlights.filter { $0.kind == .near }.count, internalCount: highlights.filter { $0.kind == .`internal` }.count)
+        .safeAreaInset(edge: .bottom) {
+            // Pass activeDiagnostics and set closures to toolbar for bug menu
+            DynamicIslandToolbarView(
+                isRhymeOverlayVisible: $isRhymeOverlayVisible,
+                showDiagnostics: $showRhymeDiagnostics,
+                showRhymePanel: $showRhymePanel,
+                isEditorFocused: $isEditorFocused,
+                activeDiagnostics: $activeDiagnostics
+            )
         }
-        .popover(isPresented: $showRhymePanel, arrowEdge: .bottom) {
-            RhymeIntelligencePanelView(highlights: rhymeHighlighter.highlights(in: item.body))
+        // ===================================================
+        // PAGE 1.3 — Import / Create Menu (Editor)
+        // ===================================================
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Menu {
+                    Button {
+                        prepareHapticForNewNote()
+                        createAndNavigateToNewNote()
+                    } label: {
+                        Label("New Note", systemImage: "square.and.pencil")
+                    }
+
+                    Button {
+                        // TODO: Import from Apple Notes
+                    } label: {
+                        Label("Import from Notes", systemImage: "note.text")
+                    }
+
+                    Button {
+                        // TODO: Import from Voice Memos
+                    } label: {
+                        Label("Import from Voice Memos", systemImage: "waveform")
+                    }
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+        }
+        // PART 1 STEP 3 — Remove popover-based diagnostics
+        // (popover for showRhymeDiagnostics removed)
+        // .popover for showRhymePanel removed; replaced with inline floating panel below.
+        // =======================================================
+        // PAGE 3.5 — Magnifying Glass: Rhyme Group List Panel
+        // =======================================================
+        if showRhymePanel {
+            RhymeGroupListView(
+                groups: rhymeHighlighter.groups(in: item.body)
+            )
+            .padding(.top, 48)
+            .transition(.opacity)
         }
         .navigationBarTitleDisplayMode(.inline)
-        .background(.ultraThinMaterial)
     }
 
-    private var rhymeHighlights: [RhymeHighlighterEngine.Highlight] {
+    private var rhymeHighlights: [Highlight] {
         guard isRhymeOverlayVisible else { return [] }
-        return rhymeHighlighter.highlights(in: item.body).filter { h in
+        return computedHighlights.filter { h in
             switch h.kind {
             case .perfect: return showPerfectRhymes
             case .near: return showNearRhymes
             case .`internal`: return showInternalRhymes
             }
         }
+    }
+
+    private func prepareHapticForNewNote() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+    }
+
+    private func createAndNavigateToNewNote() {
+        let count = try? modelContext.fetch(FetchDescriptor<Item>()).count
+        let nextIndex = (count ?? 0) + 1
+
+        let newItem = Item(
+            timestamp: Date(),
+            title: "Note \(nextIndex)",
+            body: ""
+        )
+        modelContext.insert(newItem)
+
+        // Exit current editor so NavigationSplitView selects the new item
+        dismiss()
     }
 }
 
@@ -510,13 +706,48 @@ struct DynamicIslandToolbarView: View {
     @Binding var isRhymeOverlayVisible: Bool
     @Binding var showDiagnostics: Bool
     @Binding var showRhymePanel: Bool
+    @FocusState.Binding var isEditorFocused: Bool
+    // PART 1 STEP 2 — Add activeDiagnostics binding for inline diagnostics
+    @Binding var activeDiagnostics: NoteEditorView.DiagnosticsMode?
 
     var body: some View {
         HStack(spacing: 14) {
-            toolbarButton("•")
-            toolbarButton("📎")
-            toolbarButton("AI")
+            // Leading: keyboard dismiss
             Button {
+                lightHaptic()
+                isEditorFocused = false
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.headline)
+                    .frame(width: 44, height: 44)
+            }
+
+            // Paperclip — Menu
+            Menu {
+                Button("Attach File") { }
+                Button("Import from Notes") { }
+                Button("Import from Voice Memos") { }
+            } label: {
+                Image(systemName: "paperclip")
+                    .font(.headline)
+                    .frame(width: 44, height: 44)
+            }
+
+            // AI (blue) — Menu
+            Menu {
+                Button("Rewrite Line") { }
+                Button("Suggest Rhymes") { }
+                Button("Improve Flow") { }
+            } label: {
+                Image(systemName: "sparkles")
+                    .font(.headline)
+                    .frame(width: 44, height: 44)
+                    .foregroundStyle(.blue)
+            }
+
+            // Eye
+            Button {
+                lightHaptic()
                 withAnimation(.easeInOut(duration: 0.15)) {
                     isRhymeOverlayVisible.toggle()
                 }
@@ -524,35 +755,103 @@ struct DynamicIslandToolbarView: View {
                 Image(systemName: isRhymeOverlayVisible ? "eye.fill" : "eye")
                     .font(.headline)
                     .frame(width: 44, height: 44)
-                    .foregroundStyle(isRhymeOverlayVisible ? .primary : .secondary)
             }
 
-            Button { showDiagnostics.toggle() } label: {
+            // Bug — Menu (Diagnostics)
+            Menu {
+                Button("Rhyme Diagnostics") {
+                    withAnimation(.easeInOut(duration: 0.18)) {
+                        if activeDiagnostics == .rhyme {
+                            activeDiagnostics = nil
+                        } else {
+                            activeDiagnostics = .rhyme
+                        }
+                    }
+                }
+                Button("Cadence Metrics") {
+                    withAnimation(.easeInOut(duration: 0.18)) {
+                        if activeDiagnostics == .cadence {
+                            activeDiagnostics = nil
+                        } else {
+                            activeDiagnostics = .cadence
+                        }
+                    }
+                }
+                Button("Stress Analysis") {
+                    withAnimation(.easeInOut(duration: 0.18)) {
+                        if activeDiagnostics == .stress {
+                            activeDiagnostics = nil
+                        } else {
+                            activeDiagnostics = .stress
+                        }
+                    }
+                }
+            } label: {
                 Image(systemName: "ladybug")
                     .font(.headline)
                     .frame(width: 44, height: 44)
             }
 
-            Button { showRhymePanel.toggle() } label: {
+            // Magnifier
+            Button {
+                lightHaptic()
+                showRhymePanel.toggle()
+            } label: {
                 Image(systemName: "text.magnifyingglass")
                     .font(.headline)
                     .frame(width: 44, height: 44)
             }
 
             Spacer()
-            toolbarButton("+")
-        }
-        .padding(.horizontal, 16)
-        .frame(height: 56)
-        .background(Capsule(style: .continuous).fill(.ultraThinMaterial))
-        .padding(.horizontal)
-    }
 
-    private func toolbarButton(_ label: String) -> some View {
-        Text(label)
-            .font(.headline)
-            .frame(width: 44, height: 44)
-            .contentShape(Circle())
+            // Trailing: keyboard toggle button
+            Button {
+                lightHaptic()
+                isEditorFocused.toggle()
+            } label: {
+                Image(systemName: isEditorFocused ? "keyboard.chevron.compact.down" : "keyboard")
+                    .font(.headline)
+                    .frame(width: 44, height: 44)
+            }
+        }
+        .frame(height: 56)
+        .frame(maxWidth: 680)
+        .background(Capsule(style: .continuous).fill(.ultraThinMaterial))
+        .padding(.horizontal, 16)
+    }
+}
+
+private func lightHaptic() {
+    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+}
+
+// =======================================================
+// MARK: - PAGE 3.5: Rhyme Group List View
+// =======================================================
+struct RhymeGroupListView: View {
+    let groups: [RhymeHighlighterEngine.RhymeGroup]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Rhyme Groups")
+                .font(.headline)
+
+            if groups.isEmpty {
+                Text("No rhyme groups detected")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            } else {
+                ForEach(groups) { group in
+                    Text(group.words.map(\.word).joined(separator: ", "))
+                        .font(.callout)
+                        .foregroundStyle(.primary)
+                }
+            }
+        }
+        .padding(14)
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18))
+        .frame(maxWidth: 320)
+        .shadow(radius: 8)
     }
 }
 
@@ -560,65 +859,86 @@ struct DynamicIslandToolbarView: View {
 // MARK: - PAGE 5–9: Rhyme Intelligence Engine
 // =======================================================
 struct RhymeHighlighterEngine {
-    struct Highlight {
-        enum Kind {
-            case perfect, near, `internal`
-        }
+    // MARK: - Rhyme Group Models (Group-based output)
+    struct RhymeGroup: Identifiable {
+        let id: UUID
+        let rhymeTailKey: String
+        let words: [RhymeGroupWord]
+    }
+
+    struct RhymeGroupWord: Identifiable {
+        let id = UUID()
         let word: String
         let range: Range<String.Index>
-        let kind: Kind
-        let syllableCount: Int?
-        let stressedSyllables: [Int]
     }
-    private let analyzer = SyllableStressAnalyzer()
-    func highlights(in text: String) -> [Highlight] {
-        let words = text.split { !$0.isLetter }.map { String($0).lowercased() }
+
+    /// Returns rhyme groups found in the text, grouped by rhyme tail.
+    func groups(in text: String) -> [RhymeGroup] {
         let dict = CMUDICTStore.shared.phonemesByWord
-        func rhymeTail(for phonemes: [String]) -> [String] {
-            guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else { return [] }
-            return Array(phonemes[idx...])
-        }
-        var tails: [String: [[String]]] = [:]
-        for word in words {
-            guard let phonemes = dict[word] else { continue }
-            let tail = rhymeTail(for: phonemes)
-            guard !tail.isEmpty else { continue }
-            tails[tail.joined(separator: "-"), default: []].append([word])
-        }
-        var results: [Highlight] = []
-        for (_, wordGroups) in tails where wordGroups.count > 1 {
-            for group in wordGroups {
-                for word in group {
-                    if let range = text.range(of: word, options: .caseInsensitive) {
-                        let isLineEnding = range.upperBound == text.endIndex || (range.upperBound < text.endIndex && text[text.index(after: range.upperBound)...].hasPrefix("\n"))
-                        let baseKind: Highlight.Kind = {
-                            let phonemes = dict[word] ?? []
-                            let tail = rhymeTail(for: phonemes)
-                            if tail == rhymeTail(for: dict[group.first ?? ""] ?? []) { return .perfect } else { return .near }
-                        }()
-                        let kind: Highlight.Kind = isLineEnding ? baseKind : .`internal`
-                        let analysis = analyzer.analyze(word: word)
-                        results.append(Highlight(word: word, range: range, kind: kind, syllableCount: analysis.syllables, stressedSyllables: analysis.stresses))
-                    }
+        let analyzer = SyllableStressAnalyzer()
+
+        // Tokenize words with ranges
+        var wordRanges: [(String, Range<String.Index>)] = []
+        var index = text.startIndex
+
+        while index < text.endIndex {
+            if text[index].isLetter {
+                let start = index
+                var end = index
+                while end < text.endIndex, text[end].isLetter {
+                    end = text.index(after: end)
                 }
+                let word = String(text[start..<end]).lowercased()
+                wordRanges.append((word, start..<end))
+                index = end
+            } else {
+                index = text.index(after: index)
             }
         }
-        return results
+
+        // Build rhyme tail key
+        func rhymeTailKey(for phonemes: [String]) -> String? {
+            guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else { return nil }
+            return phonemes[idx...].joined(separator: "-")
+        }
+
+        // Group words by rhyme tail
+        var groupsByTail: [String: [RhymeGroupWord]] = [:]
+
+        for (word, range) in wordRanges {
+            guard let phonemes = dict[word],
+                  let tailKey = rhymeTailKey(for: phonemes)
+            else { continue }
+
+            groupsByTail[tailKey, default: []].append(
+                RhymeGroupWord(word: word, range: range)
+            )
+        }
+
+        // Only keep real rhyme groups (2+ words)
+        return groupsByTail
+            .filter { $0.value.count > 1 }
+            .map { tailKey, words in
+                RhymeGroup(
+                    id: UUID(),
+                    rhymeTailKey: tailKey,
+                    words: words
+                )
+            }
     }
+    // NOTE: Highlight.Kind and classification logic removed from engine; will be computed downstream if needed.
 }
 final class CMUDICTStore {
     static let shared = CMUDICTStore()
     private(set) var phonemesByWord: [String: [String]] = [:]
     private init() { load() }
     private func load() {
-        // Try to load from bundle first
-        if let url = Bundle.main.url(forResource: "cmudict", withExtension: "txt"),
-           let contents = try? String(contentsOf: url) {
-            parseDict(contents)
-        } else {
-            // Fallback to a minimal built-in dictionary for common rhyming words
+        guard let url = Bundle.main.url(forResource: "cmudict", withExtension: "txt"),
+            let contents = try? String(contentsOf: url, encoding: .utf8) else {
             loadFallbackDictionary()
+            return
         }
+        parseDict(contents)
     }
     
     private func parseDict(_ contents: String) {
@@ -670,11 +990,10 @@ final class CMUDICTStore {
 // =======================================================
 struct RhymeHighlightOverlayView: View {
     let text: String
-    let highlights: [RhymeHighlighterEngine.Highlight]
+    let highlights: [Highlight]
     var body: some View {
         Text(attributedString)
             .font(.body)
-            .padding(.horizontal, 12)
             .allowsHitTesting(false)
     }
     private var attributedString: AttributedString {
@@ -754,7 +1073,7 @@ struct CadenceMetrics {
 // =======================================================
 struct CadenceAnalyzer {
     private let syllableAnalyzer = SyllableStressAnalyzer()
-    func analyze(text: String, highlights: [RhymeHighlighterEngine.Highlight]) -> CadenceMetrics {
+    func analyze(text: String, highlights: [Highlight]) -> CadenceMetrics {
         let lines = text.split(separator: "\n", omittingEmptySubsequences: false)
         var results: [CadenceMetrics.LineMetrics] = []
         for (index, line) in lines.enumerated() {
@@ -777,7 +1096,7 @@ struct CadenceAnalyzer {
 // =======================================================
 struct SyllableStressOverlayView: View {
     let text: String
-    let highlights: [RhymeHighlighterEngine.Highlight]
+    let highlights: [Highlight]
     private let analyzer = SyllableStressAnalyzer()
     var body: some View {
         Text(attributed)
@@ -799,7 +1118,7 @@ struct SyllableStressOverlayView: View {
     }
 }
 struct RhymeIntelligencePanelView: View {
-    let highlights: [RhymeHighlighterEngine.Highlight]
+    let highlights: [Highlight]
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
@@ -812,7 +1131,7 @@ struct RhymeIntelligencePanelView: View {
         .frame(width: 320)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 20))
     }
-    private func panelSection(_ title: String, kind: RhymeHighlighterEngine.Highlight.Kind) -> some View {
+    private func panelSection(_ title: String, kind: Highlight.Kind) -> some View {
         let words = highlights.filter { $0.kind == kind }.map { $0.word }.sorted()
         return VStack(alignment: .leading, spacing: 8) {
             Text(title).font(.headline)
@@ -844,9 +1163,93 @@ struct RhymeDiagnosticsView: View {
         HStack { Text(label); Spacer(); Text("\(count)").fontWeight(.semibold) }.font(.caption)
     }
 }
+
+struct CadenceMetricsView: View {
+    let metrics: CadenceMetrics
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Cadence Metrics").font(.headline)
+            diagnosticsRow("Avg Syllables / Line", value: String(format: "%.2f", metrics.averageSyllables))
+            diagnosticsRow("Syllable Variance", value: String(format: "%.2f", metrics.syllableVariance))
+        }
+        .padding()
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+        .frame(maxWidth: 240)
+    }
+
+    private func diagnosticsRow(_ label: String, value: String) -> some View {
+        HStack {
+            Text(label)
+            Spacer()
+            Text(value).fontWeight(.semibold)
+        }
+        .font(.caption)
+    }
+}
+
+struct StressAnalysisInlineView: View {
+    let text: String
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Stress Analysis").font(.headline)
+            Text("Coming soon...")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
+        .padding()
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+        .frame(maxWidth: 240)
+    }
+}
+
 struct JournalDetailPlaceholderView: View {
     var body: some View { VStack { Spacer(); Text("Select a note").foregroundStyle(.secondary); Spacer() } }
 }
+
+// =======================================================
+// MARK: - Shared: Keyboard Observer (for Toolbar Docking)
+// =======================================================
+final class KeyboardObserver: ObservableObject {
+    @Published var height: CGFloat = 0
+
+    private var observers: [NSObjectProtocol] = []
+
+    init() {
+        let center = NotificationCenter.default
+
+        observers.append(
+            center.addObserver(
+                forName: UIResponder.keyboardWillShowNotification,
+                object: nil,
+                queue: .main
+            ) { [weak self] notification in
+                guard
+                    let frame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
+                else { return }
+                self?.height = frame.height
+            }
+        )
+
+        observers.append(
+            center.addObserver(
+                forName: UIResponder.keyboardWillHideNotification,
+                object: nil,
+                queue: .main
+            ) { [weak self] _ in
+                self?.height = 0
+            }
+        )
+    }
+
+    deinit {
+        let center = NotificationCenter.default
+        observers.forEach { center.removeObserver($0) }
+        observers.removeAll()
+    }
+}
+
 #Preview {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)

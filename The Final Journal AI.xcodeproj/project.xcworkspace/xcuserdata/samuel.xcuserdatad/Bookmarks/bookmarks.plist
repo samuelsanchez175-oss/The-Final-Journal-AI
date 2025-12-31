@@ -12,13 +12,13 @@
 					<key>EndingColumnNumber</key>
 					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>853</string>
+					<string>1221</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>853</string>
+					<string>1221</string>
 					<key>Timestamp</key>
-					<string>788846023.322091</string>
+					<string>788864263.32608</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -36,11 +36,14 @@
 				<key>focused</key>
 				<string></string>
 				<key>leading</key>
-				<string>        .modelContainer(for: Item.self, inMemory: true)
-}
+				<string>        let center = NotificationCenter.default
+
 </string>
 				<key>trailing</key>
-				<string></string>
+				<string>        observers.append(
+            center.addObserver(
+                forName: UIResponder.keyboardWillShowNotification,
+</string>
 			</dict>
 			<key>type</key>
 			<string>bookmark</string>
