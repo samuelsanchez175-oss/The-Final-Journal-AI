@@ -3,6 +3,8 @@ import SwiftData
 import UIKit
 import Combine
 import NaturalLanguage
+import AVFoundation
+import Speech
 
 // =======================================================
 // PAGE MAP (ARCHITECTURAL)
@@ -40,8 +42,55 @@ import NaturalLanguage
 // =======================================================
 
 struct ContentView: View {
+    @Environment(\.modelContext) private var modelContext
+    @State private var selectedImportedItem: Item?
+
     var body: some View {
         JournalLibraryView()
+            .onOpenURL { url in
+                guard url.scheme == "finaljournal",
+                      url.host == "import"
+                else { return }
+
+                let defaults = UserDefaults(suiteName: "group.com.finaljournal.app")
+                let source = defaults?.string(forKey: "importSource")
+
+                // Import from Apple Notes
+                if source == "notes",
+                   let text = defaults?.string(forKey: "importedNoteText"),
+                   !text.isEmpty {
+
+                    let newItem = Item(
+                        timestamp: Date(),
+                        title: "Imported Note",
+                        body: text
+                    )
+
+                    modelContext.insert(newItem)
+                    selectedImportedItem = newItem
+
+                    defaults?.removeObject(forKey: "importedNoteText")
+                }
+
+                // Import from Voice Memos
+                if source == "voiceMemo",
+                   let path = defaults?.string(forKey: "importedAudioPath") {
+
+                    let newItem = Item(
+                        timestamp: Date(),
+                        title: "Voice Memo",
+                        body: ""
+                    )
+
+                    newItem.audioPath = path
+                    modelContext.insert(newItem)
+                    selectedImportedItem = newItem
+
+                    defaults?.removeObject(forKey: "importedAudioPath")
+                }
+
+                defaults?.removeObject(forKey: "importSource")
+            }
     }
 }
 
@@ -219,7 +268,7 @@ struct JournalLibraryView: View {
                     """
                     Every time I try to rhyme
                     I climb the thought inside my mind
-                    The clock won’t stop, it keeps its time
+                    The clock won't stop, it keeps its time
                     I chase the sound I left behind
 
                     I write the line, erase the line
@@ -415,7 +464,7 @@ struct JournalListView: View {
                 JournalRowView(item: item, isOnPage1: $isOnPage1)
                     .listRowBackground(Color.clear)
                     .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
-                    .listRowSeparator(.hidden)
+                    .listRowSeparator(.hidden, edges: .all)
             }
             .onDelete(perform: onDelete)
         }
@@ -461,7 +510,11 @@ struct JournalRowView: View {
     }
 
     private var notePreview: String {
-        item.body.isEmpty ? item.timestamp.formatted(date: .numeric, time: .standard) : item.body
+        item.body.isEmpty
+            ? item.timestamp.formatted(
+                Date.FormatStyle(date: .numeric, time: .standard)
+            )
+            : item.body
     }
 }
 
@@ -497,7 +550,6 @@ struct Highlight: Equatable {
     let range: Range<String.Index>
     let kind: Kind
 }
-
 
 // =======================================================
 // MARK: - Shared Glass Popover Container (Page 3.4 & 3.5)
@@ -550,6 +602,17 @@ struct NoteEditorView: View {
         case rhyme, cadence, stress
     }
 
+    // =======================================================
+    // Voice Memo Playback State
+    // =======================================================
+    @State private var isPlayingAudio: Bool = false
+    @State private var audioPlayer: AVAudioPlayer?
+
+    // =======================================================
+    // Voice Memo Transcription State
+    // =======================================================
+    @State private var isTranscribing: Bool = false
+    @State private var transcriptionError: String?
 
     private let rhymeHighlighter = RhymeHighlighterEngine()
     private let cadenceAnalyzer = CadenceAnalyzer()
@@ -580,7 +643,13 @@ struct NoteEditorView: View {
                 let baseKind: Highlight.Kind = (wordTail == groupTail) ? .perfect : .near
                 let finalKind: Highlight.Kind = isLineEnding ? baseKind : .internal
 
-                highlights.append(Highlight(word: wordInfo.word, range: range, kind: finalKind))
+                highlights.append(
+                    Highlight(
+                        word: wordInfo.word,
+                        range: range,
+                        kind: finalKind
+                    )
+                )
             }
         }
         return highlights
@@ -590,9 +659,39 @@ struct NoteEditorView: View {
         cadenceAnalyzer.analyze(text: item.body, highlights: computedHighlights)
     }
 
+    // =======================================================
+    // Voice Memo Transcription Generation Helper
+    // =======================================================
+    private func generateTranscription() {
+        guard let audioPath = item.audioPath else { return }
+
+        isTranscribing = true
+        transcriptionError = nil
+
+        let recognizer = SFSpeechRecognizer()
+        let url = URL(fileURLWithPath: audioPath)
+
+        let request = SFSpeechURLRecognitionRequest(url: url)
+        request.shouldReportPartialResults = false
+
+        recognizer?.recognitionTask(with: request) { result, error in
+            DispatchQueue.main.async {
+                isTranscribing = false
+
+                if let error = error {
+                    transcriptionError = error.localizedDescription
+                    return
+                }
+
+                if let result = result, result.isFinal {
+                    item.audioPath = item.audioPath // ensure mutation observed
+                    item.transcription = result.bestTranscription.formattedString
+                }
+            }
+        }
+    }
+
     var body: some View {
-        // 🔒 PAGE 3.3 LOCK
-        // TextEditor and overlay must NEVER render visible text at the same time.
         ZStack {
             VStack(spacing: 0) {
                 // Title Header Container
@@ -612,8 +711,6 @@ struct NoteEditorView: View {
                         .frame(maxWidth: 680)
                 }
 
-                // Body Editor
-                // STEP 2 — Add a scroll offset reader
                 ScrollView {
                     GeometryReader { geo in
                         Color.clear
@@ -668,8 +765,6 @@ struct NoteEditorView: View {
                     scrollOffset = value
                 }
             }
-
-            // (Legend and filters removed for Eye overlay per PAGE 3.3 group-based rule.)
 
             // PART 1 STEP 4 — Render diagnostics inline near toolbar
             if let diagnostics = activeDiagnostics {
@@ -805,8 +900,9 @@ struct NoteEditorView: View {
     }
 
     private func createAndNavigateToNewNote() {
-        let count = try? modelContext.fetch(FetchDescriptor<Item>()).count
-        let nextIndex = (count ?? 0) + 1
+        let descriptor = FetchDescriptor<Item>()
+        let count = (try? modelContext.fetch(descriptor).count) ?? 0
+        let nextIndex = count + 1
 
         let newItem = Item(
             timestamp: Date(),
@@ -817,6 +913,101 @@ struct NoteEditorView: View {
 
         // Exit current editor so NavigationSplitView selects the new item
         dismiss()
+    }
+}
+
+struct VoiceMemoPlaybackView: View {
+    let audioPath: String
+    @Binding var isPlaying: Bool
+    @Binding var audioPlayer: AVAudioPlayer?
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Button {
+                togglePlayback()
+            } label: {
+                Image(systemName: isPlaying ? "pause.fill" : "play.fill")
+                    .font(.title3)
+                    .frame(width: 44, height: 44)
+            }
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Voice Memo")
+                    .font(.callout.weight(.semibold))
+                Text(fileName)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
+            Spacer()
+
+            Image(systemName: "waveform")
+                .foregroundStyle(.secondary)
+        }
+        .padding(12)
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+    }
+
+    private var fileName: String {
+        URL(fileURLWithPath: audioPath).lastPathComponent
+    }
+
+    private func togglePlayback() {
+        if isPlaying {
+            audioPlayer?.stop()
+            isPlaying = false
+        } else {
+            do {
+                let url = URL(fileURLWithPath: audioPath)
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.prepareToPlay()
+                audioPlayer?.play()
+                isPlaying = true
+            } catch {
+                isPlaying = false
+            }
+        }
+    }
+}
+
+struct VoiceMemoTranscriptionView: View {
+    let text: String
+    var onInsert: (() -> Void)? = nil
+
+    @State private var isExpanded: Bool = false
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                Text("Transcription")
+                    .font(.callout.weight(.semibold))
+                Spacer()
+
+                if let onInsert {
+                    Button("Insert") {
+                        onInsert()
+                    }
+                    .font(.caption.weight(.semibold))
+                }
+
+                Button {
+                    withAnimation(.easeInOut(duration: 0.15)) {
+                        isExpanded.toggle()
+                    }
+                } label: {
+                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+
+            Text(text)
+                .font(.callout)
+                .foregroundStyle(.primary)
+                .lineLimit(isExpanded ? nil : 3)
+        }
+        .padding(12)
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
     }
 }
 
@@ -1017,7 +1208,6 @@ struct RhymeGroupListView: View {
     }
 }
 
-
 // =======================================================
 // MARK: - PAGE 5–9: Rhyme Intelligence Engine
 // =======================================================
@@ -1073,8 +1263,8 @@ struct RhymeHighlighterEngine {
                 )
             }
     }
-    // NOTE: Highlight.Kind and classification logic removed from engine; will be computed downstream if needed.
 }
+
 final class CMUDICTStore {
     static let shared = CMUDICTStore()
     private(set) var phonemesByWord: [String: [String]] = [:]
@@ -1132,6 +1322,7 @@ final class CMUDICTStore {
         ]
     }
 }
+
 // =======================================================
 // 🔒 PAGE 3.3 — FINAL OVERLAY IMPLEMENTATION
 // UIKit UITextView-based overlay.
@@ -1214,6 +1405,7 @@ struct RhymeHighlightTextView: UIViewRepresentable {
         uiView.attributedText = attributed
     }
 }
+
 // 🔒 PAGE 3.3 LOCK — Dark Mode & Typography
 // UITextView overlay must always use system font + UIColor.label.
 // Highlight contrast is mode-aware. Do not override colors elsewhere.
@@ -1234,6 +1426,7 @@ struct SyllableStressAnalyzer {
         return (syllableIndex, stresses)
     }
 }
+
 // =======================================================
 // MARK: - PAGE 12: Cadence & Flow Metrics (Engine)
 // =======================================================
@@ -1251,6 +1444,7 @@ struct CadenceMetrics {
         return lines.map { pow(Double($0.syllableCount) - avg, 2) }.reduce(0, +) / Double(lines.count)
     }
 }
+
 // =======================================================
 // MARK: - PAGE 12: Cadence Analyzer
 // =======================================================
@@ -1274,6 +1468,7 @@ struct CadenceAnalyzer {
         return CadenceMetrics(lines: results)
     }
 }
+
 // =======================================================
 // MARK: - PAGE 11: Syllable Stress Overlay View
 // =======================================================

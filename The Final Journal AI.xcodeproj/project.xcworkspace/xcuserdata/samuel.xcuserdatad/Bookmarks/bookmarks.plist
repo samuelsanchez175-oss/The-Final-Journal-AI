@@ -12,13 +12,13 @@
 					<key>EndingColumnNumber</key>
 					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>1444</string>
+					<string>1694</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>1444</string>
+					<string>1694</string>
 					<key>Timestamp</key>
-					<string>788871173.9214391</string>
+					<string>788874233.131175</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -36,11 +36,14 @@
 				<key>focused</key>
 				<string></string>
 				<key>leading</key>
-				<string>        .modelContainer(for: Item.self, inMemory: true)
+				<string>    }
 }
 </string>
 				<key>trailing</key>
-				<string></string>
+				<string>
+#Preview {
+    ContentView()
+</string>
 			</dict>
 			<key>type</key>
 			<string>bookmark</string>
