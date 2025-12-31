@@ -711,6 +711,51 @@ struct NoteEditorView: View {
                         .frame(maxWidth: 680)
                 }
 
+                // Voice Memo Inline Playback (iOS 26–style)
+                if let audioPath = item.audioPath {
+                    VoiceMemoPlaybackView(
+                        audioPath: audioPath,
+                        isPlaying: $isPlayingAudio,
+                        audioPlayer: $audioPlayer
+                    )
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+                }
+
+                // Voice Memo Transcription (Generated + Read‑Only)
+                if let transcript = item.transcription, !transcript.isEmpty {
+                    VoiceMemoTranscriptionView(
+                        text: transcript,
+                        onInsert: {
+                            item.body.append(
+                                item.body.isEmpty ? transcript : "\n\n" + transcript
+                            )
+                        }
+                    )
+                    .padding(.horizontal, 16)
+                    .padding(.top, 6)
+                } else if item.audioPath != nil {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Button {
+                            generateTranscription()
+                        } label: {
+                            Label(
+                                isTranscribing ? "Transcribing…" : "Generate Transcription",
+                                systemImage: "text.badge.plus"
+                            )
+                        }
+                        .disabled(isTranscribing)
+
+                        if let error = transcriptionError {
+                            Text(error)
+                                .font(.caption)
+                                .foregroundStyle(.red)
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 6)
+                }
+
                 ScrollView {
                     GeometryReader { geo in
                         Color.clear
@@ -916,6 +961,9 @@ struct NoteEditorView: View {
     }
 }
 
+// =======================================================
+// Voice Memo Playback View (iOS 26–style)
+// =======================================================
 struct VoiceMemoPlaybackView: View {
     let audioPath: String
     @Binding var isPlaying: Bool
@@ -929,8 +977,8 @@ struct VoiceMemoPlaybackView: View {
                 Image(systemName: isPlaying ? "pause.fill" : "play.fill")
                     .font(.title3)
                     .frame(width: 44, height: 44)
+                    .background(.ultraThinMaterial, in: Circle())
             }
-
             VStack(alignment: .leading, spacing: 4) {
                 Text("Voice Memo")
                     .font(.callout.weight(.semibold))
@@ -938,9 +986,7 @@ struct VoiceMemoPlaybackView: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
-
             Spacer()
-
             Image(systemName: "waveform")
                 .foregroundStyle(.secondary)
         }
@@ -970,6 +1016,10 @@ struct VoiceMemoPlaybackView: View {
     }
 }
 
+// =======================================================
+// Voice Memo Transcription View (Read‑Only, iOS 26–style)
+// (Extended: Insert action, expanded/collapsed, glass card)
+// =======================================================
 struct VoiceMemoTranscriptionView: View {
     let text: String
     var onInsert: (() -> Void)? = nil
@@ -982,14 +1032,12 @@ struct VoiceMemoTranscriptionView: View {
                 Text("Transcription")
                     .font(.callout.weight(.semibold))
                 Spacer()
-
                 if let onInsert {
                     Button("Insert") {
                         onInsert()
                     }
                     .font(.caption.weight(.semibold))
                 }
-
                 Button {
                     withAnimation(.easeInOut(duration: 0.15)) {
                         isExpanded.toggle()
@@ -1000,7 +1048,6 @@ struct VoiceMemoTranscriptionView: View {
                         .foregroundStyle(.secondary)
                 }
             }
-
             Text(text)
                 .font(.callout)
                 .foregroundStyle(.primary)
@@ -1011,9 +1058,6 @@ struct VoiceMemoTranscriptionView: View {
     }
 }
 
-// =======================================================
-// MARK: - PAGE 3: Bottom Dynamic Island Toolbar (UI only)
-// =======================================================
 struct DynamicIslandToolbarView: View {
     @Binding var isRhymeOverlayVisible: Bool
     @Binding var showDiagnostics: Bool

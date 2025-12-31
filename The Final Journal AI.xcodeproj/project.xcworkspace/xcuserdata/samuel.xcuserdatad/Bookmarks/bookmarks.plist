@@ -12,13 +12,13 @@
 					<key>EndingColumnNumber</key>
 					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>1694</string>
+					<string>1638</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>1694</string>
+					<string>1638</string>
 					<key>Timestamp</key>
-					<string>788874233.131175</string>
+					<string>788877864.230752</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -36,13 +36,13 @@
 				<key>focused</key>
 				<string></string>
 				<key>leading</key>
-				<string>    }
-}
+				<string>
+// =======================================================
 </string>
 				<key>trailing</key>
-				<string>
-#Preview {
-    ContentView()
+				<string>// MARK: - Shared: Keyboard Observer (for Toolbar Docking)
+// =======================================================
+final class KeyboardObserver: ObservableObject {
 </string>
 			</dict>
 			<key>type</key>
