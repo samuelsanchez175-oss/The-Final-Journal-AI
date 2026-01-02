@@ -12,13 +12,13 @@
 					<key>EndingColumnNumber</key>
 					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>1936</string>
+					<string>393</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>1936</string>
+					<string>393</string>
 					<key>Timestamp</key>
-					<string>789042621.940691</string>
+					<string>789042821.253796</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -36,11 +36,14 @@
 				<key>focused</key>
 				<string></string>
 				<key>leading</key>
-				<string>    }
-}
+				<string>                                Label("New Note", systemImage: "square.and.pencil")
+                            }
 </string>
 				<key>trailing</key>
-				<string></string>
+				<string>
+                            Button {
+                                // TODO: Import from Apple Notes
+</string>
 			</dict>
 			<key>type</key>
 			<string>bookmark</string>
