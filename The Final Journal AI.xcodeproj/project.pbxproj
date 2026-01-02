@@ -6,18 +6,7 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		7E4A1BB02F053B71003FE03C /* Journal Import Extention @.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7E4A1BA62F053B71003FE03C /* Journal Import Extention @.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
-		7E4A1BAE2F053B71003FE03C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EB8BBB72F01F74F0055B1C6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E4A1BA52F053B71003FE03C;
-			remoteInfo = "Journal Import Extention @";
-		};
 		7EB8BBCF2F01F7510055B1C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7EB8BBB72F01F74F0055B1C6 /* Project object */;
@@ -41,7 +30,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7E4A1BB02F053B71003FE03C /* Journal Import Extention @.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +37,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7E4A1BA62F053B71003FE03C /* Journal Import Extention @.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Journal Import Extention @.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8BBBF2F01F74F0055B1C6 /* The Final Journal AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Final Journal AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8BBCE2F01F7510055B1C6 /* The Final Journal AITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Final Journal AITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8BBD82F01F7510055B1C6 /* The Final Journal AIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Final Journal AIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,13 +71,6 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7E4A1BA32F053B71003FE03C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7EB8BBBC2F01F74F0055B1C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,7 +113,6 @@
 				7EB8BBBF2F01F74F0055B1C6 /* The Final Journal AI.app */,
 				7EB8BBCE2F01F7510055B1C6 /* The Final Journal AITests.xctest */,
 				7EB8BBD82F01F7510055B1C6 /* The Final Journal AIUITests.xctest */,
-				7E4A1BA62F053B71003FE03C /* Journal Import Extention @.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,28 +120,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E4A1BA52F053B71003FE03C /* Journal Import Extention @ */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E4A1BB22F053B71003FE03C /* Build configuration list for PBXNativeTarget "Journal Import Extention @" */;
-			buildPhases = (
-				7E4A1BA22F053B71003FE03C /* Sources */,
-				7E4A1BA32F053B71003FE03C /* Frameworks */,
-				7E4A1BA42F053B71003FE03C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				7E4A1BA72F053B71003FE03C /* Journal Import Extention @ */,
-			);
-			name = "Journal Import Extention @";
-			packageProductDependencies = (
-			);
-			productName = "Journal Import Extention @";
-			productReference = 7E4A1BA62F053B71003FE03C /* Journal Import Extention @.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		7EB8BBBE2F01F74F0055B1C6 /* The Final Journal AI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EB8BBE22F01F7510055B1C6 /* Build configuration list for PBXNativeTarget "The Final Journal AI" */;
@@ -175,7 +132,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7E4A1BAF2F053B71003FE03C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7EB8BBC12F01F74F0055B1C6 /* The Final Journal AI */,
@@ -243,9 +199,6 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					7E4A1BA52F053B71003FE03C = {
-						CreatedOnToolsVersion = 26.2;
-					};
 					7EB8BBBE2F01F74F0055B1C6 = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -276,19 +229,11 @@
 				7EB8BBBE2F01F74F0055B1C6 /* The Final Journal AI */,
 				7EB8BBCD2F01F7510055B1C6 /* The Final Journal AITests */,
 				7EB8BBD72F01F7510055B1C6 /* The Final Journal AIUITests */,
-				7E4A1BA52F053B71003FE03C /* Journal Import Extention @ */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7E4A1BA42F053B71003FE03C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7EB8BBBD2F01F74F0055B1C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,13 +258,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7E4A1BA22F053B71003FE03C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7EB8BBBB2F01F74F0055B1C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,11 +282,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7E4A1BAF2F053B71003FE03C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7E4A1BA52F053B71003FE03C /* Journal Import Extention @ */;
-			targetProxy = 7E4A1BAE2F053B71003FE03C /* PBXContainerItemProxy */;
-		};
 		7EB8BBD02F01F7510055B1C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7EB8BBBE2F01F74F0055B1C6 /* The Final Journal AI */;
@@ -362,64 +295,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		7E4A1BB32F053B71003FE03C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Journal Import Extention @/Journal Import Extention @.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Journal Import Extention @/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Journal Import Extention @";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "TEAMDB.The-Final-Journal-AI.Journal-Import-Extention--";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7E4A1BB42F053B71003FE03C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Journal Import Extention @/Journal Import Extention @.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Journal Import Extention @/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Journal Import Extention @";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "TEAMDB.The-Final-Journal-AI.Journal-Import-Extention--";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		7EB8BBE02F01F7510055B1C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -694,15 +569,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E4A1BB22F053B71003FE03C /* Build configuration list for PBXNativeTarget "Journal Import Extention @" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E4A1BB32F053B71003FE03C /* Debug */,
-				7E4A1BB42F053B71003FE03C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7EB8BBBA2F01F74F0055B1C6 /* Build configuration list for PBXProject "The Final Journal AI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

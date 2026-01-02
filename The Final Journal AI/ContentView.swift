@@ -1,3 +1,27 @@
+// =======================================================
+// MARK: - Segment 4: Micro-Compression (Touchdown Physics)
+// =======================================================
+struct MicroPressModifier: ViewModifier {
+    @GestureState private var isPressed = false
+
+    func body(content: Content) -> some View {
+        content
+            .scaleEffect(isPressed ? 0.96 : 1.0)
+            .animation(.spring(response: 0.18, dampingFraction: 0.75), value: isPressed)
+            .gesture(
+                DragGesture(minimumDistance: 0)
+                    .updating($isPressed) { _, state, _ in
+                        state = true
+                    }
+            )
+    }
+}
+
+extension View {
+    func microPress() -> some View {
+        modifier(MicroPressModifier())
+    }
+}
 import SwiftUI
 import SwiftData
 import UIKit
@@ -38,9 +62,181 @@ import Speech
 // =======================================================
 
 // =======================================================
+// SEGMENTS (ARCHITECTURAL)
+// 🔒 LOCKED — DO NOT MODIFY WITHOUT EXPLICIT CHANGE
+// =======================================================
+//
+// Segment 1 — Editorial Release Sheet
+// • Notes-style release notes presentation
+// • Medium + Large detents
+// • Dense editorial hierarchy
+// • Feature cards, scrollable
+// • Used by: Page 1.1.2 (Release Notes)
+//
+// Segment 2 — Menu-Anchored Glass Popover
+// • Liquid glass popover (non-sheet)
+// • Anchored to triggering control
+// • Tap-away dismiss
+// • Compact height
+// • Used by:
+//   - Page 1.1 (Profile Entry)
+//   - Page 1.3 (Import / Create)
+//   - Page 3.2 (AI Assist)
+//   - Page 3.4 (Debug Menu)
+//   - Page 3.5 (Rhyme Group List)
+//
+// Segment 3 — Focused Morphing
+// • UI morphs based on focus state
+// • Search expands on focus
+// • Collapses on tap-outside
+// • No layout reflow
+// • Used by:
+//   - Page 1.2 (Bottom Search Bar)
+//   - Page 1 Bottom Bar
+//
+// Segment 4 — Micro-Compression (Touchdown Physics)
+// • Subtle press-in on touch down
+// • Rebound on release
+// • Visual-only (no layout shift)
+// • Used by:
+//   - Profile button
+//   - Import menu
+//   - Quick Compose button
+//   - Search capsule
+//   - Page 3 toolbar buttons
+//
+// Segment 5 — Keyboard-Aware Glass Compression
+// • Adaptive densification when keyboard is visible
+// • Reduced vertical padding
+// • Preserved width lock
+// • Toolbar anchored above keyboard
+// • Used by:
+//   - Page 3 (Keyboard Dynamic Toolbar)
+//
+// =======================================================
+// MARK: - Unified Bottom Glass Bar (Page 1 + Page 3)
+// =======================================================
+struct UnifiedBottomGlassBar: View {
+    enum Mode {
+        case home      // Page 1
+        case editor    // Page 3
+    }
+
+    let mode: Mode
+
+    // Shared state
+    @Binding var isExpanded: Bool
+    var isSearchFocused: FocusState<Bool>.Binding?
+    @Binding var searchText: String
+
+    // Editor-only bindings
+    var isEditorFocused: FocusState<Bool>.Binding?
+    var onCompose: (() -> Void)? = nil
+
+    @ObservedObject var keyboard: KeyboardObserver
+
+    private var barHeight: CGFloat {
+        keyboard.height > 0 ? 48 : 56
+    }
+
+    private var verticalPadding: CGFloat {
+        keyboard.height > 0 ? 6 : 12
+    }
+
+    var body: some View {
+        GlassEffectContainer(spacing: 14) {
+            // LEFT SIDE
+            if mode == .editor {
+                if isExpanded {
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.18)) {
+                            isExpanded = false
+                        }
+                    } label: {
+                        Image(systemName: "xmark")
+                            .frame(width: 44, height: 44)
+                    }
+                    .microPress()
+                } else {
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.18)) {
+                            isExpanded = true
+                        }
+                    } label: {
+                        Image(systemName: "plus")
+                            .frame(width: 44, height: 44)
+                    }
+                    .microPress()
+                }
+            }
+
+            // SEARCH (Page 1 only)
+            if mode == .home {
+                if let isSearchFocused = isSearchFocused {
+                    HStack(spacing: 8) {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundStyle(.secondary)
+
+                        TextField("Search", text: $searchText)
+                            .focused(isSearchFocused)
+                            .textFieldStyle(.plain)
+
+                        if isSearchFocused.wrappedValue && !searchText.isEmpty {
+                            Button {
+                                searchText = ""
+                            } label: {
+                                Image(systemName: "xmark.circle.fill")
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 14)
+                    .frame(height: 44)
+                    .background(
+                        Capsule().fill(.ultraThinMaterial)
+                    )
+                    .microPress()
+                }
+            }
+
+            Spacer()
+
+            // RIGHT SIDE
+            if mode == .home {
+                Button {
+                    onCompose?()
+                } label: {
+                    Image(systemName: "square.and.pencil")
+                        .frame(width: 44, height: 44)
+                }
+                .microPress()
+            }
+
+            if mode == .editor {
+                Button {
+                    if let focus = isEditorFocused {
+                        focus.wrappedValue.toggle()
+                    }
+                } label: {
+                    Image(systemName: isEditorFocused?.wrappedValue == true
+                          ? "keyboard.chevron.compact.down"
+                          : "keyboard")
+                        .frame(width: 44, height: 44)
+                }
+                .microPress()
+            }
+        }
+        .frame(height: barHeight)
+        .frame(width: 680) // 🔒 width lock
+        .padding(.horizontal, 16)
+        .padding(.vertical, verticalPadding)
+        .animation(.easeInOut(duration: 0.22), value: keyboard.height)
+    }
+}
+
+// =======================================================
 // MARK: - PAGE 1: Journal Library
 // =======================================================
-
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var selectedImportedItem: Item?
@@ -216,33 +412,17 @@ struct JournalLibraryView: View {
                 JournalDetailPlaceholderView()
             }
 
-            // =======================================================
-            // PAGE 1.2 — Bottom Search Bar
-            // =======================================================
             if isOnPage1 {
                 VStack {
                     Spacer()
-                    page1BottomBar
-                }
-            }
-
-            // =======================================================
-            // PAGE 1.5 — Quick Compose Button (Bottom Right)
-            // =======================================================
-            if isOnPage1 {
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        Button(action: addItem) {
-                            Image(systemName: "square.and.pencil")
-                                .font(.title2)
-                                .padding(14)
-                                .background(.ultraThinMaterial, in: Circle())
-                        }
-                        .padding(.trailing, 16)
-                        .padding(.bottom, 16)
-                    }
+                    UnifiedBottomGlassBar(
+                        mode: .home,
+                        isExpanded: .constant(false),
+                        isSearchFocused: $isSearchFocused,
+                        searchText: $searchText,
+                        onCompose: addItem,
+                        keyboard: KeyboardObserver()
+                    )
                 }
             }
         }
@@ -587,11 +767,15 @@ struct NoteEditorView: View {
     @Bindable var item: Item
 
     @State private var isRhymeOverlayVisible: Bool = false
+    @State private var isPage3Expanded: Bool = false
     // STEP 2 — UIKit Overlay Test Flag (TEMPORARY)
     @State private var testUIKitRhymeOverlay: Bool = false
     @State private var showRhymeDiagnostics: Bool = false
     @State private var showRhymePanel: Bool = false
     @FocusState private var isEditorFocused: Bool
+    @StateObject private var keyboard = KeyboardObserver()
+    // Calibration lock for Page 2 text positioning
+    @State private var lockedEditorXOffset: CGFloat? = nil
 
     // STEP 1 — Track scroll offset
     @State private var scrollOffset: CGFloat = 0
@@ -763,46 +947,59 @@ struct NoteEditorView: View {
                                         value: geo.frame(in: .named("editorScroll")).minY)
                     }
                     .frame(height: 0)
-                    VStack(alignment: .leading, spacing: 0) {
-                        ZStack(alignment: .topLeading) {
-                            // --- BEGIN: PAGE 2 Editor Layout RESTORED ---
-                            TextEditor(text: $item.body)
-                                .focused($isEditorFocused)
-                                .font(.body)
-                                .frame(maxWidth: 680, alignment: .leading)
-                                .padding(.leading, 25)   // +5pt alignment correction
-                                .padding(.trailing, 20)
-                                .padding(.top, 8)
-                                .padding(.bottom, 24)
-                                .frame(minHeight: 400, alignment: .top)
-                                // Remove the white TextEditor canvas (UIKit scroll background)
-                                .scrollContentBackground(.hidden)
-                                .textEditorStyle(.plain)
-                                // PAGE 3.3 — Eye Toggle
-                                // When overlay is ON, TextEditor must not render visible glyphs
-                                .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
-                            // --- END: PAGE 2 Editor Layout RESTORED ---
+                    VStack(alignment: .center, spacing: 0) {
+                        GeometryReader { geo in
+                            ZStack(alignment: .topLeading) {
+                                // --- BEGIN: PAGE 2 Editor Layout RESTORED ---
+                                TextEditor(text: $item.body)
+                                    .focused($isEditorFocused)
+                                    .font(.body)
+                                    .frame(maxWidth: 680, alignment: .leading)
+                                    .padding(.horizontal, 20)
+                                    .padding(.top, 8)
+                                    .padding(.bottom, 24)
+                                    .frame(minHeight: 400, alignment: .top)
+                                    // Remove the white TextEditor canvas (UIKit scroll background)
+                                    .scrollContentBackground(.hidden)
+                                    .textEditorStyle(.plain)
+                                    // PAGE 3.3 — Eye Toggle
+                                    // When overlay is ON, TextEditor must not render visible glyphs
+                                    .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
+                                // --- END: PAGE 2 Editor Layout RESTORED ---
 
-                            // 🔒 PAGE 3.3 LOCK — UIKit Overlay
-                            // The Eye button now renders a UITextView-based overlay
-                            // to guarantee pixel-perfect alignment with the editor.
-                            // SwiftUI overlay and offset hacks are intentionally removed.
-                            if isRhymeOverlayVisible {
-                                RhymeHighlightTextView(
-                                    text: item.body,
-                                    highlights: rhymeHighlights
-                                )
-                                .frame(maxWidth: 680, alignment: .leading)
-                                .padding(.horizontal, 20)
-                                .padding(.top, 8)
-                                .padding(.bottom, 24)
-                                .opacity(1)
-                                .animation(.easeInOut(duration: 0.18), value: isRhymeOverlayVisible)
-                                .allowsHitTesting(false)
+                                // 🔒 PAGE 3.3 LOCK — UIKit Overlay
+                                // The Eye button now renders a UITextView-based overlay
+                                // to guarantee pixel-perfect alignment with the editor.
+                                // SwiftUI overlay and offset hacks are intentionally removed.
+                                if isRhymeOverlayVisible {
+                                    RhymeHighlightTextView(
+                                        text: item.body,
+                                        highlights: rhymeHighlights
+                                    )
+                                    .frame(maxWidth: 680, alignment: .leading)
+                                    .padding(.horizontal, 20)
+                                    .padding(.top, 8)
+                                    .padding(.bottom, 24)
+                                    .opacity(1)
+                                    .animation(.easeInOut(duration: 0.18), value: isRhymeOverlayVisible)
+                                    .allowsHitTesting(false)
+                                }
+                            }
+                            .offset(x: lockedEditorXOffset ?? 0)
+                            .onChange(of: testUIKitRhymeOverlay) { isEnabled in
+                                if isEnabled {
+                                    // unlock – allow live movement
+                                    lockedEditorXOffset = nil
+                                } else {
+                                    // lock – capture current resolved position
+                                    lockedEditorXOffset = geo.frame(in: .global).minX
+                                }
                             }
                         }
+                        .frame(maxWidth: 680)
+                        .frame(maxWidth: .infinity, alignment: .center)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .frame(maxWidth: .infinity, alignment: .center)
                 }
                 // STEP 3 — Name the coordinate space and listen for changes
                 .coordinateSpace(name: "editorScroll")
@@ -864,14 +1061,13 @@ struct NoteEditorView: View {
             }
         }
         .safeAreaInset(edge: .bottom) {
-            // Pass activeDiagnostics and set closures to toolbar for bug menu
-            DynamicIslandToolbarView(
-                isRhymeOverlayVisible: $isRhymeOverlayVisible,
-                showDiagnostics: $showRhymeDiagnostics,
-                showRhymePanel: $showRhymePanel,
+            UnifiedBottomGlassBar(
+                mode: .editor,
+                isExpanded: $isPage3Expanded,
+                isSearchFocused: nil,
+                searchText: .constant(""),
                 isEditorFocused: $isEditorFocused,
-                activeDiagnostics: $activeDiagnostics,
-                testUIKitRhymeOverlay: $testUIKitRhymeOverlay
+                keyboard: keyboard
             )
         }
         // ===================================================
@@ -1062,135 +1258,169 @@ struct DynamicIslandToolbarView: View {
     @Binding var isRhymeOverlayVisible: Bool
     @Binding var showDiagnostics: Bool
     @Binding var showRhymePanel: Bool
-    @FocusState.Binding var isEditorFocused: Bool
+    var isEditorFocused: FocusState<Bool>.Binding
     @Binding var activeDiagnostics: NoteEditorView.DiagnosticsMode?
-
-    // STEP 2 — UIKit Overlay Test Flag (TEMPORARY)
     @Binding var testUIKitRhymeOverlay: Bool
+    @Binding var isExpanded: Bool
+
+    @StateObject private var keyboard = KeyboardObserver()
+
+    private var verticalPadding: CGFloat {
+        keyboard.height > 0 ? 6 : 12
+    }
+
+    private var barHeight: CGFloat {
+        keyboard.height > 0 ? 48 : 56
+    }
 
     var body: some View {
-        HStack(spacing: 14) {
-            // Leading: keyboard dismiss
-            Button {
-                lightHaptic()
-                isEditorFocused = false
-            } label: {
-                Image(systemName: "xmark")
-                    .font(.headline)
-                    .frame(width: 44, height: 44)
-            }
-
-            // Paperclip — Menu
-            Menu {
-                Button("Attach File") { }
-                Button("Import from Notes") { }
-                Button("Import from Voice Memos") { }
-            } label: {
-                Image(systemName: "paperclip")
-                    .font(.headline)
-                    .frame(width: 44, height: 44)
-            }
-
-            // AI (blue) — Menu
-            Menu {
-                Button("Rewrite Line") { }
-                Button("Suggest Rhymes") { }
-                Button("Improve Flow") { }
-            } label: {
-                Image(systemName: "sparkles")
-                    .font(.headline)
-                    .frame(width: 44, height: 44)
-                    .foregroundStyle(.blue)
-            }
-
-            // Eye
-            Button {
-                lightHaptic()
-                withAnimation(.easeInOut(duration: 0.15)) {
-                    isRhymeOverlayVisible.toggle()
-                }
-            } label: {
-                Image(systemName: isRhymeOverlayVisible ? "eye.fill" : "eye")
-                    .font(.headline)
-                    .frame(width: 44, height: 44)
-            }
-
-            // Bug — Menu (Diagnostics)
-            Menu {
-                Button("Rhyme Diagnostics") {
-                    withAnimation(.easeInOut(duration: 0.18)) {
-                        if activeDiagnostics == .rhyme {
-                            activeDiagnostics = nil
-                        } else {
-                            activeDiagnostics = .rhyme
+        ZStack {
+            GlassEffectContainer(spacing: 14) {
+                if isExpanded {
+                    // Leading: collapse Page 3 (❌)
+                    Button {
+                        lightHaptic()
+                        withAnimation(.easeInOut(duration: 0.18)) {
+                            isExpanded = false
                         }
+                    } label: {
+                        Image(systemName: "xmark")
+                            .font(.headline)
+                            .frame(width: 44, height: 44)
                     }
-                }
-                Button("Cadence Metrics") {
-                    withAnimation(.easeInOut(duration: 0.18)) {
-                        if activeDiagnostics == .cadence {
-                            activeDiagnostics = nil
-                        } else {
-                            activeDiagnostics = .cadence
-                        }
-                    }
-                }
-                Button("Stress Analysis") {
-                    withAnimation(.easeInOut(duration: 0.18)) {
-                        if activeDiagnostics == .stress {
-                            activeDiagnostics = nil
-                        } else {
-                            activeDiagnostics = .stress
-                        }
-                    }
-                }
-                Divider()
+                    .microPress()
 
-                // UIKit Overlay Test Flag (TEMPORARY) — visually present as a flag icon button
+                    // Paperclip — Menu
+                    Menu {
+                        Button("Attach File") { }
+                        Button("Import from Notes") { }
+                        Button("Import from Voice Memos") { }
+                    } label: {
+                        Image(systemName: "paperclip")
+                            .font(.headline)
+                            .frame(width: 44, height: 44)
+                    }
+                    .microPress()
+
+                    // AI (blue) — Menu
+                    Menu {
+                        Button("Rewrite Line") { }
+                        Button("Suggest Rhymes") { }
+                        Button("Improve Flow") { }
+                    } label: {
+                        Image(systemName: "sparkles")
+                            .font(.headline)
+                            .frame(width: 44, height: 44)
+                            .foregroundStyle(.blue)
+                    }
+                    .microPress()
+
+                    // Eye
+                    Button {
+                        lightHaptic()
+                        withAnimation(.easeInOut(duration: 0.15)) {
+                            isRhymeOverlayVisible.toggle()
+                        }
+                    } label: {
+                        Image(systemName: isRhymeOverlayVisible ? "eye.fill" : "eye")
+                            .font(.headline)
+                            .frame(width: 44, height: 44)
+                    }
+                    .microPress()
+
+                    // Bug — Menu (Diagnostics)
+                    Menu {
+                        Button("Rhyme Diagnostics") {
+                            withAnimation(.easeInOut(duration: 0.18)) {
+                                if activeDiagnostics == .rhyme {
+                                    activeDiagnostics = nil
+                                } else {
+                                    activeDiagnostics = .rhyme
+                                }
+                            }
+                        }
+                        Button("Cadence Metrics") {
+                            withAnimation(.easeInOut(duration: 0.18)) {
+                                if activeDiagnostics == .cadence {
+                                    activeDiagnostics = nil
+                                } else {
+                                    activeDiagnostics = .cadence
+                                }
+                            }
+                        }
+                        Button("Stress Analysis") {
+                            withAnimation(.easeInOut(duration: 0.18)) {
+                                if activeDiagnostics == .stress {
+                                    activeDiagnostics = nil
+                                } else {
+                                    activeDiagnostics = .stress
+                                }
+                            }
+                        }
+                        Divider()
+                        Button {
+                            testUIKitRhymeOverlay.toggle()
+                        } label: {
+                            Label {
+                                Text("UIKit Overlay Test Flag")
+                            } icon: {
+                                Image(systemName: testUIKitRhymeOverlay ? "flag.fill" : "flag")
+                                    .foregroundStyle(testUIKitRhymeOverlay ? .orange : .secondary)
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "ladybug")
+                            .font(.headline)
+                            .frame(width: 44, height: 44)
+                    }
+                    .microPress()
+
+                    // Magnifier (manual glass popover trigger, no .popover)
+                    Button {
+                        lightHaptic()
+                        withAnimation(.easeInOut(duration: 0.15)) {
+                            showRhymePanel.toggle()
+                        }
+                    } label: {
+                        Image(systemName: "text.magnifyingglass")
+                            .font(.headline)
+                            .frame(width: 44, height: 44)
+                    }
+                    .microPress()
+                }
+                else {
+                    Button {
+                        lightHaptic()
+                        withAnimation(.easeInOut(duration: 0.18)) {
+                            isExpanded = true
+                        }
+                    } label: {
+                        Image(systemName: "plus")
+                            .font(.headline)
+                            .frame(width: 44, height: 44)
+                    }
+                    .microPress()
+                }
+
+                Spacer()
+
+                // Trailing: keyboard toggle button
                 Button {
-                    testUIKitRhymeOverlay.toggle()
+                    lightHaptic()
+                    isEditorFocused.wrappedValue.toggle()
                 } label: {
-                    Label {
-                        Text("UIKit Overlay Test Flag")
-                    } icon: {
-                        Image(systemName: testUIKitRhymeOverlay ? "flag.fill" : "flag")
-                            .foregroundStyle(testUIKitRhymeOverlay ? .orange : .secondary)
-                    }
+                    Image(systemName: isEditorFocused.wrappedValue ? "keyboard.chevron.compact.down" : "keyboard")
+                        .font(.headline)
+                        .frame(width: 44, height: 44)
                 }
-            } label: {
-                Image(systemName: "ladybug")
-                    .font(.headline)
-                    .frame(width: 44, height: 44)
+                .microPress()
             }
-
-            // Magnifier (manual glass popover trigger, no .popover)
-            Button {
-                lightHaptic()
-                withAnimation(.easeInOut(duration: 0.15)) {
-                    showRhymePanel.toggle()
-                }
-            } label: {
-                Image(systemName: "text.magnifyingglass")
-                    .font(.headline)
-                    .frame(width: 44, height: 44)
-            }
-
-            Spacer()
-
-            // Trailing: keyboard toggle button
-            Button {
-                lightHaptic()
-                isEditorFocused.toggle()
-            } label: {
-                Image(systemName: isEditorFocused ? "keyboard.chevron.compact.down" : "keyboard")
-                    .font(.headline)
-                    .frame(width: 44, height: 44)
-            }
+            .frame(height: barHeight)
         }
-        .frame(height: 56)
-        .frame(maxWidth: 680)
-        .background(Capsule(style: .continuous).fill(.ultraThinMaterial))
+        .frame(width: 680) // HARD WIDTH LOCK — DO NOT REMOVE
         .padding(.horizontal, 16)
+        .padding(.vertical, verticalPadding)
+        .animation(.easeInOut(duration: 0.22), value: keyboard.height)
     }
 }
 
@@ -1680,4 +1910,27 @@ final class KeyboardObserver: ObservableObject {
 #Preview {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
+}
+
+// =======================================================
+// MARK: - Shared: Glass Effect Container (for Toolbar)
+// =======================================================
+struct GlassEffectContainer<Content: View>: View {
+    let spacing: CGFloat
+    let content: () -> Content
+
+    init(spacing: CGFloat = 14, @ViewBuilder content: @escaping () -> Content) {
+        self.spacing = spacing
+        self.content = content
+    }
+
+    var body: some View {
+        HStack(spacing: spacing) {
+            content()
+        }
+        .background(
+            Capsule(style: .continuous)
+                .fill(.ultraThinMaterial)
+        )
+    }
 }
