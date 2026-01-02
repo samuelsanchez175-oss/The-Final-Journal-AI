@@ -1,27 +1,3 @@
-// =======================================================
-// MARK: - Segment 4: Micro-Compression (Touchdown Physics)
-// =======================================================
-struct MicroPressModifier: ViewModifier {
-    @GestureState private var isPressed = false
-
-    func body(content: Content) -> some View {
-        content
-            .scaleEffect(isPressed ? 0.96 : 1.0)
-            .animation(.spring(response: 0.18, dampingFraction: 0.75), value: isPressed)
-            .gesture(
-                DragGesture(minimumDistance: 0)
-                    .updating($isPressed) { _, state, _ in
-                        state = true
-                    }
-            )
-    }
-}
-
-extension View {
-    func microPress() -> some View {
-        modifier(MicroPressModifier())
-    }
-}
 import SwiftUI
 import SwiftData
 import UIKit
@@ -29,14 +5,17 @@ import Combine
 import NaturalLanguage
 import AVFoundation
 import Speech
+import PhotosUI
 
 // =======================================================
 // PAGE MAP (ARCHITECTURAL)
-// 🔒 LOCKED — DO NOT MODIFY
+// — LOCKED — DO NOT MODIFY
 // Any structural changes here require explicit review.
 // =======================================================
 // Page 1    — Journal Library (Home / Notes List)
 // Page 1.1  — Profile Entry Point (Top Right)
+// Page 1.1.1 — Release Notes (Top Right, Segment 1 Sheet)
+// Page 1.1.2 — Support / Shop (Top Right, Segment 1 Sheet)
 // Page 1.2  — Bottom Search Bar (Home)
 // Page 1.3  — Import / Create Menu (Top Right)
 // Page 1.4  — Filters & Folders (Home)
@@ -44,6 +23,7 @@ import Speech
 // Page 2    — Note Editor (Writing Surface)
 // Page 3    — Keyboard Bottom Dynamic Island Toolbar
 // Page 3.1  — Clip / Attach Menu (Files, Notes, Voice Memos)
+// Page 3.1.1 — Keyboard Dynamic Toolbar Part 2 (Overlay)
 // Page 3.2  — AI Assist Menu (Read‑Only Suggestions)
 // Page 3.3  — Eye Toggle (Rhyme Group Visibility)
 // NOTE: Eye toggle state is an internal implementation detail of Page 3.3,
@@ -60,179 +40,29 @@ import Speech
 // Page 11   — Syllables & Stress Illumination
 // Page 12   — Cadence & Flow Metrics
 // =======================================================
-
-// =======================================================
-// SEGMENTS (ARCHITECTURAL)
-// 🔒 LOCKED — DO NOT MODIFY WITHOUT EXPLICIT CHANGE
-// =======================================================
-//
-// Segment 1 — Editorial Release Sheet
-// • Notes-style release notes presentation
-// • Medium + Large detents
-// • Dense editorial hierarchy
-// • Feature cards, scrollable
-// • Used by: Page 1.1.2 (Release Notes)
-//
-// Segment 2 — Menu-Anchored Glass Popover
-// • Liquid glass popover (non-sheet)
-// • Anchored to triggering control
-// • Tap-away dismiss
-// • Compact height
-// • Used by:
-//   - Page 1.1 (Profile Entry)
-//   - Page 1.3 (Import / Create)
-//   - Page 3.2 (AI Assist)
-//   - Page 3.4 (Debug Menu)
-//   - Page 3.5 (Rhyme Group List)
-//
+// SEGMENTS (DESIGN / INTERACTION CONTRACTS)
+// Segment 1 — Editorial Release Notes Sheet
+// Notes-style release notes presented as a sheet with medium + large detents,
+// dense editorial layout, and feature cards. Client-facing, readable, polished.
+// Segment 2 — Menu-Anchored Glass Popovers
+// Menu-driven, button-anchored liquid-glass popovers (non-sheet),
+// matching Page 1.3 Import/Create behavior.
 // Segment 3 — Focused Morphing
-// • UI morphs based on focus state
-// • Search expands on focus
-// • Collapses on tap-outside
-// • No layout reflow
-// • Used by:
-//   - Page 1.2 (Bottom Search Bar)
-//   - Page 1 Bottom Bar
-//
-// Segment 4 — Micro-Compression (Touchdown Physics)
-// • Subtle press-in on touch down
-// • Rebound on release
-// • Visual-only (no layout shift)
-// • Used by:
-//   - Profile button
-//   - Import menu
-//   - Quick Compose button
-//   - Search capsule
-//   - Page 3 toolbar buttons
-//
-// Segment 5 — Keyboard-Aware Glass Compression
-// • Adaptive densification when keyboard is visible
-// • Reduced vertical padding
-// • Preserved width lock
-// • Toolbar anchored above keyboard
-// • Used by:
-//   - Page 3 (Keyboard Dynamic Toolbar)
-//
-// =======================================================
-// MARK: - Unified Bottom Glass Bar (Page 1 + Page 3)
-// =======================================================
-struct UnifiedBottomGlassBar: View {
-    enum Mode {
-        case home      // Page 1
-        case editor    // Page 3
-    }
+// UI elements expand / contract based on focus state (search, keyboard)
+// with no layout drift — internal morphing only.
+// Segment 4 — Micro-Compression on Touch
+// Subtle press-in compression on touch-down,
+// released on lift or expansion. Applied consistently across controls.
+// Segment 5 — Keyboard-Aware Adaptive Glass Bars
+// GlassEffectContainer-based toolbars that live above the keyboard,
+// support collapse (+) and expand states,
+// and never shift the underlying text surface.
 
-    let mode: Mode
-
-    // Shared state
-    @Binding var isExpanded: Bool
-    var isSearchFocused: FocusState<Bool>.Binding?
-    @Binding var searchText: String
-
-    // Editor-only bindings
-    var isEditorFocused: FocusState<Bool>.Binding?
-    var onCompose: (() -> Void)? = nil
-
-    @ObservedObject var keyboard: KeyboardObserver
-
-    private var barHeight: CGFloat {
-        keyboard.height > 0 ? 48 : 56
-    }
-
-    private var verticalPadding: CGFloat {
-        keyboard.height > 0 ? 6 : 12
-    }
-
-    var body: some View {
-        GlassEffectContainer(spacing: 14) {
-            // LEFT SIDE
-            if mode == .editor {
-                if isExpanded {
-                    Button {
-                        withAnimation(.easeInOut(duration: 0.18)) {
-                            isExpanded = false
-                        }
-                    } label: {
-                        Image(systemName: "xmark")
-                            .frame(width: 44, height: 44)
-                    }
-                    .microPress()
-                } else {
-                    Button {
-                        withAnimation(.easeInOut(duration: 0.18)) {
-                            isExpanded = true
-                        }
-                    } label: {
-                        Image(systemName: "plus")
-                            .frame(width: 44, height: 44)
-                    }
-                    .microPress()
-                }
-            }
-
-            // SEARCH (Page 1 only)
-            if mode == .home {
-                if let isSearchFocused = isSearchFocused {
-                    HStack(spacing: 8) {
-                        Image(systemName: "magnifyingglass")
-                            .foregroundStyle(.secondary)
-
-                        TextField("Search", text: $searchText)
-                            .focused(isSearchFocused)
-                            .textFieldStyle(.plain)
-
-                        if isSearchFocused.wrappedValue && !searchText.isEmpty {
-                            Button {
-                                searchText = ""
-                            } label: {
-                                Image(systemName: "xmark.circle.fill")
-                                    .foregroundStyle(.secondary)
-                            }
-                        }
-                    }
-                    .padding(.horizontal, 14)
-                    .frame(height: 44)
-                    .background(
-                        Capsule().fill(.ultraThinMaterial)
-                    )
-                    .microPress()
-                }
-            }
-
-            Spacer()
-
-            // RIGHT SIDE
-            if mode == .home {
-                Button {
-                    onCompose?()
-                } label: {
-                    Image(systemName: "square.and.pencil")
-                        .frame(width: 44, height: 44)
-                }
-                .microPress()
-            }
-
-            if mode == .editor {
-                Button {
-                    if let focus = isEditorFocused {
-                        focus.wrappedValue.toggle()
-                    }
-                } label: {
-                    Image(systemName: isEditorFocused?.wrappedValue == true
-                          ? "keyboard.chevron.compact.down"
-                          : "keyboard")
-                        .frame(width: 44, height: 44)
-                }
-                .microPress()
-            }
-        }
-        .frame(height: barHeight)
-        .frame(width: 680) // 🔒 width lock
-        .padding(.horizontal, 16)
-        .padding(.vertical, verticalPadding)
-        .animation(.easeInOut(duration: 0.22), value: keyboard.height)
-    }
-}
+// Segment 6 — Editorial Symbol Tiles
+// Notes-style editorial symbol tiles used in release notes and announcements.
+// Uses SF Symbols rendered inside soft glass cards instead of image assets.
+// Ensures zero asset dependency, consistent loading, and system-native polish.
+// Supports versioned feature cards with icon + text pairings.
 
 // =======================================================
 // MARK: - PAGE 1: Journal Library
@@ -294,64 +124,23 @@ struct JournalLibraryView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     @AppStorage("didSeedInitialNotes") private var didSeedInitialNotes: Bool = false
+    @Environment(\.colorScheme) private var colorScheme
 
-    // =======================================================
-    // MARK: - PAGE 1.1: Profile Entry Point (Button Only)
-    // =======================================================
+    // MARK: - PAGE 1.1 Profile Entry Point (Button Only)
     @State private var showProfile: Bool = false
-    // =======================================================
+    @State private var showReleaseNotes: Bool = false
+    @State private var showSupportShop: Bool = false
+
     // MARK: - PAGE 1.2: Bottom Search Bar (UI + logic)
-    // =======================================================
     @State private var searchText: String = ""
     @FocusState private var isSearchFocused: Bool
     @State private var showSearchCancel: Bool = false
-    // =======================================================
+
     // MARK: - PAGE 1.4: Filters & Folders (UI only)
-    // =======================================================
     @State private var selectedFilter: Page1Filter = .all
-    // =======================================================
+
     // MARK: - PAGE 1: Local Visibility Gate for Bottom Bar
-    // =======================================================
     @State private var isOnPage1: Bool = true
-
-    // =======================================================
-    // MARK: - PAGE 1.2: Live Filtering (computed property)
-    // =======================================================
-    private var filteredItems: [Item] {
-        var base: [Item]
-
-        // Step 1: text-based filtering
-        if searchText.isEmpty {
-            base = items
-        } else {
-            let q = searchText.lowercased()
-
-            if q.hasPrefix("title:") {
-                let t = q.replacingOccurrences(of: "title:", with: "").trimmingCharacters(in: .whitespaces)
-                base = items.filter { $0.title.lowercased().contains(t) }
-            } else if q.hasPrefix("body:") {
-                let b = q.replacingOccurrences(of: "body:", with: "").trimmingCharacters(in: .whitespaces)
-                base = items.filter { $0.body.lowercased().contains(b) }
-            } else {
-                base = items.filter {
-                    $0.title.lowercased().contains(q) ||
-                    $0.body.lowercased().contains(q)
-                }
-            }
-        }
-
-        // Step 2: filter pills
-        switch selectedFilter {
-        case .all:
-            return base
-        case .recent:
-            return base.sorted { $0.timestamp > $1.timestamp }
-        case .drafts:
-            return base.filter { $0.body.isEmpty }
-        case .folders:
-            return base // placeholder for future folder logic
-        }
-    }
 
     var body: some View {
         ZStack {
@@ -366,12 +155,15 @@ struct JournalLibraryView: View {
                         }
                     }
                 }
-                .background(.ultraThinMaterial)
+                .background(
+                    Rectangle()
+                        .fill(.ultraThinMaterial)
+                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                        .ignoresSafeArea()
+                )
                 .navigationTitle("Journal")
                 .toolbar {
-                    // ===================================================
-                    // PAGE 1.1 — Profile Entry Point (Top Right)
-                    // ===================================================
+                    // MARK: - PAGE 1.1
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
                             showProfile.toggle()
@@ -380,9 +172,22 @@ struct JournalLibraryView: View {
                         }
                     }
 
-                    // ===================================================
-                    // PAGE 1.3 — Import / Create Menu (Top Right)
-                    // ===================================================
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            showReleaseNotes = true
+                        } label: {
+                            Image(systemName: "clock.arrow.circlepath")
+                        }
+                    }
+
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            showSupportShop = true
+                        } label: {
+                            Image(systemName: "bag")
+                        }
+                    }
+
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Menu {
                             Button {
@@ -415,19 +220,46 @@ struct JournalLibraryView: View {
             if isOnPage1 {
                 VStack {
                     Spacer()
-                    UnifiedBottomGlassBar(
-                        mode: .home,
-                        isExpanded: .constant(false),
-                        isSearchFocused: $isSearchFocused,
-                        searchText: $searchText,
-                        onCompose: addItem,
-                        keyboard: KeyboardObserver()
-                    )
+                    page1BottomBar
+                }
+            }
+
+            if isOnPage1 {
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Button(action: addItem) {
+                            Image(systemName: "square.and.pencil")
+                                .font(.title2)
+                                .padding(14)
+                                .background(
+                                    Circle()
+                                        .fill(.ultraThinMaterial)
+                                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                                        .clipShape(Circle())
+                                )
+                        }
+                        .padding(.trailing, 16)
+                        .padding(.bottom, 16)
+                    }
                 }
             }
         }
+        .popover(isPresented: $showProfile, arrowEdge: .top) {
+            ProfilePopoverView()
+        }
+        .sheet(isPresented: $showReleaseNotes) {
+            ReleaseNotesSheetView()
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $showSupportShop) {
+            SupportShopSheetView()
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
+        }
         .task {
-            // Demo notes we want to guarantee exist (dev only)
             let demoNotes: [(title: String, body: String)] = [
                 (
                     "Night Cycle",
@@ -473,10 +305,8 @@ struct JournalLibraryView: View {
                 )
             ]
 
-            // Existing titles in the store
             let existingTitles = Set(items.map { $0.title })
 
-            // Insert only missing demo notes
             for note in demoNotes where !existingTitles.contains(note.title) {
                 modelContext.insert(
                     Item(
@@ -487,12 +317,10 @@ struct JournalLibraryView: View {
                 )
             }
 
-            // Mark seeded (kept for future launch logic)
             didSeedInitialNotes = true
         }
     }
 
-    // NEW: Trigger haptic feedback for "New Note"
     private func prepareHapticForNewNote() {
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
@@ -500,7 +328,12 @@ struct JournalLibraryView: View {
 
     private func addItem() {
         withAnimation {
-            let nextIndex = items.count + 1
+            let nextIndex = (items.map { item in
+                if let number = Int(item.title.replacingOccurrences(of: "Note ", with: "")) {
+                    return number
+                }
+                return 0
+            }.max() ?? 0) + 1
             let newItem = Item(
                 timestamp: Date(),
                 title: "Note \(nextIndex)",
@@ -522,9 +355,40 @@ struct JournalLibraryView: View {
         }
     }
 
-    // =======================================================
-    // MARK: - PAGE 1.2: Bottom Search Bar (UI + logic)
-    // =======================================================
+    private var filteredItems: [Item] {
+        var base: [Item]
+
+        if searchText.isEmpty {
+            base = items
+        } else {
+            let q = searchText.lowercased()
+
+            if q.hasPrefix("title:") {
+                let t = q.replacingOccurrences(of: "title:", with: "").trimmingCharacters(in: .whitespaces)
+                base = items.filter { $0.title.lowercased().contains(t) }
+            } else if q.hasPrefix("body:") {
+                let b = q.replacingOccurrences(of: "body:", with: "").trimmingCharacters(in: .whitespaces)
+                base = items.filter { $0.body.lowercased().contains(b) }
+            } else {
+                base = items.filter {
+                    $0.title.lowercased().contains(q) ||
+                    $0.body.lowercased().contains(q)
+                }
+            }
+        }
+
+        switch selectedFilter {
+        case .all:
+            return base
+        case .recent:
+            return base.sorted { $0.timestamp > $1.timestamp }
+        case .drafts:
+            return base.filter { $0.body.isEmpty }
+        case .folders:
+            return base
+        }
+    }
+
     private var page1BottomBar: some View {
         HStack(spacing: 10) {
             Image(systemName: "magnifyingglass")
@@ -534,7 +398,7 @@ struct JournalLibraryView: View {
                 .focused($isSearchFocused)
                 .textFieldStyle(.plain)
                 .submitLabel(.search)
-                .onChange(of: isSearchFocused) { newValue in
+                .onChange(of: isSearchFocused) { _, newValue in
                     withAnimation(.easeInOut(duration: 0.15)) {
                         showSearchCancel = newValue
                     }
@@ -563,7 +427,12 @@ struct JournalLibraryView: View {
                     Image(systemName: "xmark")
                         .font(.callout.weight(.semibold))
                         .padding(6)
-                        .background(.ultraThinMaterial, in: Circle())
+                        .background(
+                            Circle()
+                                .fill(.ultraThinMaterial)
+                                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                                .clipShape(Circle())
+                        )
                 }
                 .buttonStyle(.plain)
             }
@@ -571,21 +440,20 @@ struct JournalLibraryView: View {
         .padding(.horizontal, 14)
         .frame(height: 44)
         .background(
-            Capsule()
+            Capsule(style: .continuous)
                 .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .overlay(
-                    Capsule()
+                    Capsule(style: .continuous)
                         .strokeBorder(.primary.opacity(isSearchFocused ? 0.18 : 0.08))
                 )
+                .clipShape(Capsule(style: .continuous))
         )
         .padding(.horizontal)
         .padding(.bottom, 20)
         .padding(.trailing, 72)
     }
 
-    // =======================================================
-    // MARK: - PAGE 1.4: Filters & Folders (Extracted View)
-    // =======================================================
     private var page1FiltersView: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
@@ -609,18 +477,22 @@ struct JournalLibraryView: View {
                 .padding(.vertical, 8)
                 .background(
                     ZStack {
-                        Capsule().fill(.ultraThinMaterial)
+                        Capsule(style: .continuous)
+                            .fill(.ultraThinMaterial)
+                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                            .clipShape(Capsule(style: .continuous))
+
                         if selectedFilter != filter {
-                            Capsule().fill(Color.clear)
+                            Capsule(style: .continuous).fill(Color.clear)
                         }
                     }
                     .overlay(
-                        Capsule()
+                        Capsule(style: .continuous)
                             .strokeBorder(.primary.opacity(selectedFilter == filter ? 0.18 : 0.08))
                     )
                 )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
@@ -634,6 +506,7 @@ enum Page1Filter: String, CaseIterable, Identifiable {
 }
 
 struct JournalListView: View {
+    @Environment(\.colorScheme) private var colorScheme
     let items: [Item]
     let onDelete: (IndexSet) -> Void
     @Binding var isOnPage1: Bool
@@ -649,7 +522,13 @@ struct JournalListView: View {
             .onDelete(perform: onDelete)
         }
         .listStyle(.plain)
-        .background(.ultraThinMaterial)
+        .contentMargins(.horizontal, 0, for: .scrollContent)
+        .background(
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                .ignoresSafeArea()
+        )
     }
 }
 
@@ -663,7 +542,7 @@ struct JournalRowView: View {
                 .onAppear { isOnPage1 = false }
                 .onDisappear { isOnPage1 = true }
         } label: {
-            VStack(spacing: 0) {
+            VStack(alignment: .leading, spacing: 0) {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(noteTitle)
                         .font(.headline)
@@ -675,14 +554,14 @@ struct JournalRowView: View {
                         .lineLimit(2)
                 }
                 .padding(.vertical, 12)
-                .padding(.horizontal, 16)
 
                 Divider()
-                    .padding(.leading, 16)
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.clear)
             .contentShape(Rectangle())
         }
+        .buttonStyle(.plain)
     }
 
     private var noteTitle: String {
@@ -699,6 +578,7 @@ struct JournalRowView: View {
 }
 
 struct JournalEmptyStateView: View {
+    @Environment(\.colorScheme) private var colorScheme
     let onCreate: () -> Void
 
     var body: some View {
@@ -715,49 +595,228 @@ struct JournalEmptyStateView: View {
         }
         .buttonStyle(.plain)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.ultraThinMaterial)
+        .background(
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                .ignoresSafeArea()
+        )
     }
 }
 
-// =======================================================
-// MARK: - Downstream Highlight Model
-// =======================================================
-struct Highlight: Equatable {
-    enum Kind: Equatable {
-        case perfect, near, `internal`
+// MARK: - PAGE 1.1 Profile Entry Point (Static UI + Editable Fields, No Persistence)
+
+struct ProfilePopoverView: View {
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) private var colorScheme
+    @AppStorage("profile_name") private var storedName: String = ""
+    @AppStorage("profile_email") private var storedEmail: String = ""
+    @AppStorage("profile_phone") private var storedPhone: String = ""
+    @AppStorage("profile_avatar_data") private var storedAvatarData: Data?
+
+    @State private var selectedItem: PhotosPickerItem?
+    @State private var avatarImage: Image?
+
+    @State private var name: String
+    @State private var email: String
+    @State private var phone: String
+
+    init() {
+        _name = State(initialValue: UserDefaults.standard.string(forKey: "profile_name") ?? "")
+        _email = State(initialValue: UserDefaults.standard.string(forKey: "profile_email") ?? "")
+        _phone = State(initialValue: UserDefaults.standard.string(forKey: "profile_phone") ?? "")
     }
-    let word: String
-    let range: Range<String.Index>
-    let kind: Kind
-}
 
-// =======================================================
-// MARK: - Shared Glass Popover Container (Page 3.4 & 3.5)
-// =======================================================
-struct GlassPopoverContainer<Content: View>: View {
-    let content: Content
+    private var isEmailValid: Bool {
+        email.isEmpty || email.contains("@")
+    }
 
-    init(@ViewBuilder content: () -> Content) {
-        self.content = content()
+    private var isPhoneValid: Bool {
+        phone.isEmpty || phone.filter(\.isNumber).count >= 10
+    }
+
+    private var isFormValid: Bool {
+        !name.trimmingCharacters(in: .whitespaces).isEmpty &&
+        isEmailValid &&
+        isPhoneValid
     }
 
     var body: some View {
-        content
-            .padding(12)
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
-            .shadow(radius: 6)
-            .transition(.opacity.combined(with: .scale(scale: 0.98)))
+        VStack(alignment: .leading, spacing: 20) {
+            HStack {
+                Spacer()
+
+                PhotosPicker(
+                    selection: $selectedItem,
+                    matching: .images,
+                    photoLibrary: .shared()
+                ) {
+                    ZStack {
+                        Circle()
+                            .fill(.ultraThinMaterial)
+                            .frame(width: 96, height: 96)
+
+                        if let avatarImage {
+                            avatarImage
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 96, height: 96)
+                                .clipShape(Circle())
+                        } else {
+                            Image(systemName: "person.crop.circle.fill")
+                                .font(.system(size: 48))
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
+                .buttonStyle(PlainButtonStyle())
+
+                Spacer()
+            }
+            .padding(.top, 8)
+
+            VStack(spacing: 14) {
+                profileField(label: "Name", text: $name, placeholder: "Your name")
+                profileField(
+                    label: "Email",
+                    text: $email,
+                    placeholder: "you@email.com",
+                    keyboard: .emailAddress,
+                    isValid: isEmailValid,
+                    helperText: isEmailValid ? nil : "Enter a valid email address"
+                )
+                profileField(
+                    label: "Phone",
+                    text: $phone,
+                    placeholder: "+1 (000) 000‑0000",
+                    keyboard: .phonePad,
+                    isValid: isPhoneValid,
+                    helperText: isPhoneValid ? nil : "Include area code"
+                )
+            }
+
+            Divider().opacity(0.15)
+
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Your Invites")
+                    .font(.headline)
+
+                ShareLink(
+                    item: URL(string: "https://finaljournal.app/invite")!,
+                    subject: Text("Join me on The Final Journal AI"),
+                    message: Text("Check out The Final Journal AI and join my creative journey!"),
+                    preview: SharePreview("The Final Journal AI", image: Image(systemName: "sparkles"))
+                ) {
+                    Label("Share Invite Link", systemImage: "square.and.arrow.up")
+                }
+                .buttonStyle(.plain)
+                .onTapGesture {
+                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+                }
+            }
+
+            HStack {
+                Spacer()
+
+                Button {
+                    storedName = name
+                    storedEmail = email
+                    storedPhone = phone
+
+                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+                    dismiss()
+                } label: {
+                    Text("Done")
+                        .font(.headline)
+                        .frame(minWidth: 88)
+                        .padding(.vertical, 10)
+                }
+                .disabled(!isFormValid)
+                .opacity(isFormValid ? 1.0 : 0.4)
+                .background(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .fill(.ultraThinMaterial)
+                )
+            }
+            .padding(.top, 8)
+        }
+        .padding(20)
+        .frame(width: 340)
+        .background(
+            RoundedRectangle(cornerRadius: 22, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                .overlay(
+                    LinearGradient(
+                        colors: [
+                            .white.opacity((GlassSettings.gloss - 0.6) / 3),
+                            .clear
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                    .blendMode(.overlay)
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+        )
+        .onAppear {
+            if let data = storedAvatarData,
+               let uiImage = UIImage(data: data) {
+                avatarImage = Image(uiImage: uiImage)
+            }
+        }
+        .onChange(of: selectedItem) { newItem in
+            guard let newItem else { return }
+            Task {
+                if let data = try? await newItem.loadTransferable(type: Data.self),
+                   let uiImage = UIImage(data: data) {
+                    avatarImage = Image(uiImage: uiImage)
+                    if let jpegData = uiImage.jpegData(compressionQuality: 0.9) {
+                        storedAvatarData = jpegData
+                    }
+                }
+            }
+        }
     }
-}
 
-// =======================================================
-// MARK: - PAGE 2: Note Editor (Correctly Bound)
-// =======================================================
+    @ViewBuilder
+    private func profileField(
+        label: String,
+        text: Binding<String>,
+        placeholder: String,
+        keyboard: UIKeyboardType = .default,
+        isValid: Bool? = nil,
+        helperText: String? = nil
+    ) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(.secondary)
 
-struct ScrollOffsetKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
-    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
-        value = nextValue()
+            TextField(placeholder, text: text)
+                .keyboardType(keyboard)
+                .textFieldStyle(.plain)
+                .padding(10)
+                .background(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(.ultraThinMaterial)
+                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                .strokeBorder(
+                                    (isValid == false ? Color.red.opacity(0.35) : Color.primary.opacity(0.08)),
+                                    lineWidth: isValid == false ? 1.2 : 1
+                                )
+                        )
+                )
+
+            if let helperText {
+                Text(helperText)
+                    .font(.caption2)
+                    .foregroundStyle(isValid == false ? .red : .secondary)
+            }
+        }
     }
 }
 
@@ -767,47 +826,21 @@ struct NoteEditorView: View {
     @Bindable var item: Item
 
     @State private var isRhymeOverlayVisible: Bool = false
-    @State private var isPage3Expanded: Bool = false
-    // STEP 2 — UIKit Overlay Test Flag (TEMPORARY)
-    @State private var testUIKitRhymeOverlay: Bool = false
     @State private var showRhymeDiagnostics: Bool = false
     @State private var showRhymePanel: Bool = false
     @FocusState private var isEditorFocused: Bool
-    @StateObject private var keyboard = KeyboardObserver()
-    // Calibration lock for Page 2 text positioning
-    @State private var lockedEditorXOffset: CGFloat? = nil
-
-    // STEP 1 — Track scroll offset
+    @StateObject private var keyboardObserver = KeyboardObserver()
+    @State private var isToolbarExpanded: Bool = false
     @State private var scrollOffset: CGFloat = 0
 
-    // PART 1 STEP 1 — Add inline diagnostics state
-    @State private var activeDiagnostics: DiagnosticsMode? = nil
-    enum DiagnosticsMode {
-        case rhyme, cadence, stress
-    }
-
-    // =======================================================
-    // Voice Memo Playback State
-    // =======================================================
-    @State private var isPlayingAudio: Bool = false
-    @State private var audioPlayer: AVAudioPlayer?
-
-    // =======================================================
-    // Voice Memo Transcription State
-    // =======================================================
-    @State private var isTranscribing: Bool = false
-    @State private var transcriptionError: String?
-
     private let rhymeHighlighter = RhymeHighlighterEngine()
-    private let cadenceAnalyzer = CadenceAnalyzer()
 
-    // New property to generate highlights from groups
     private var computedHighlights: [Highlight] {
         let text = item.body
         let groups = rhymeHighlighter.groups(in: text)
         var highlights: [Highlight] = []
 
-        let dict = CMUDICTStore.shared.phonemesByWord
+        let dict = FJCMUDICTStore.shared.phonemesByWord
         func rhymeTail(for phonemes: [String]) -> [String] {
             guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else { return [] }
             return Array(phonemes[idx...])
@@ -839,106 +872,21 @@ struct NoteEditorView: View {
         return highlights
     }
 
-    private var cadenceMetrics: CadenceMetrics {
-        cadenceAnalyzer.analyze(text: item.body, highlights: computedHighlights)
-    }
-
-    // =======================================================
-    // Voice Memo Transcription Generation Helper
-    // =======================================================
-    private func generateTranscription() {
-        guard let audioPath = item.audioPath else { return }
-
-        isTranscribing = true
-        transcriptionError = nil
-
-        let recognizer = SFSpeechRecognizer()
-        let url = URL(fileURLWithPath: audioPath)
-
-        let request = SFSpeechURLRecognitionRequest(url: url)
-        request.shouldReportPartialResults = false
-
-        recognizer?.recognitionTask(with: request) { result, error in
-            DispatchQueue.main.async {
-                isTranscribing = false
-
-                if let error = error {
-                    transcriptionError = error.localizedDescription
-                    return
-                }
-
-                if let result = result, result.isFinal {
-                    item.audioPath = item.audioPath // ensure mutation observed
-                    item.transcription = result.bestTranscription.formattedString
-                }
-            }
-        }
-    }
-
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                // Title Header Container
-                VStack(spacing: 0) {
-                    TextField("Title", text: $item.title)
-                        .font(.title2.weight(.semibold))
-                        .multilineTextAlignment(.center)
-                        .frame(maxWidth: 680)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 12)
-                        // STEP 4 — Animate the title based on scroll
-                        .scaleEffect(scrollOffset < -20 ? 0.94 : 1.0)
-                        .opacity(scrollOffset < -20 ? 0.6 : 1.0)
-                        .animation(.easeOut(duration: 0.2), value: scrollOffset)
+                TextField("Title", text: $item.title)
+                    .font(.title2.weight(.semibold))
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: 680)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 12)
+                    .scaleEffect(scrollOffset < -20 ? 0.94 : 1.0)
+                    .opacity(scrollOffset < -20 ? 0.6 : 1.0)
+                    .animation(.easeOut(duration: 0.2), value: scrollOffset)
 
-                    Divider()
-                        .frame(maxWidth: 680)
-                }
-
-                // Voice Memo Inline Playback (iOS 26–style)
-                if let audioPath = item.audioPath {
-                    VoiceMemoPlaybackView(
-                        audioPath: audioPath,
-                        isPlaying: $isPlayingAudio,
-                        audioPlayer: $audioPlayer
-                    )
-                    .padding(.horizontal, 16)
-                    .padding(.top, 8)
-                }
-
-                // Voice Memo Transcription (Generated + Read‑Only)
-                if let transcript = item.transcription, !transcript.isEmpty {
-                    VoiceMemoTranscriptionView(
-                        text: transcript,
-                        onInsert: {
-                            item.body.append(
-                                item.body.isEmpty ? transcript : "\n\n" + transcript
-                            )
-                        }
-                    )
-                    .padding(.horizontal, 16)
-                    .padding(.top, 6)
-                } else if item.audioPath != nil {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Button {
-                            generateTranscription()
-                        } label: {
-                            Label(
-                                isTranscribing ? "Transcribing…" : "Generate Transcription",
-                                systemImage: "text.badge.plus"
-                            )
-                        }
-                        .disabled(isTranscribing)
-
-                        if let error = transcriptionError {
-                            Text(error)
-                                .font(.caption)
-                                .foregroundStyle(.red)
-                        }
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.top, 6)
-                }
+                Divider()
+                    .frame(maxWidth: 680)
 
                 ScrollView {
                     GeometryReader { geo in
@@ -947,132 +895,55 @@ struct NoteEditorView: View {
                                         value: geo.frame(in: .named("editorScroll")).minY)
                     }
                     .frame(height: 0)
-                    VStack(alignment: .center, spacing: 0) {
-                        GeometryReader { geo in
-                            ZStack(alignment: .topLeading) {
-                                // --- BEGIN: PAGE 2 Editor Layout RESTORED ---
-                                TextEditor(text: $item.body)
-                                    .focused($isEditorFocused)
-                                    .font(.body)
-                                    .frame(maxWidth: 680, alignment: .leading)
-                                    .padding(.horizontal, 20)
-                                    .padding(.top, 8)
-                                    .padding(.bottom, 24)
-                                    .frame(minHeight: 400, alignment: .top)
-                                    // Remove the white TextEditor canvas (UIKit scroll background)
-                                    .scrollContentBackground(.hidden)
-                                    .textEditorStyle(.plain)
-                                    // PAGE 3.3 — Eye Toggle
-                                    // When overlay is ON, TextEditor must not render visible glyphs
-                                    .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
-                                // --- END: PAGE 2 Editor Layout RESTORED ---
+                    VStack(alignment: .leading, spacing: 0) {
+                        ZStack(alignment: .topLeading) {
+                            TextEditor(text: $item.body)
+                                .focused($isEditorFocused)
+                                .font(.body)
+                                .frame(maxWidth: 680, alignment: .leading)
+                                .padding(.horizontal, 20)
+                                .padding(.top, 8)
+                                .padding(.bottom, 24)
+                                .frame(minHeight: 400, alignment: .top)
+                                .scrollContentBackground(.hidden)
+                                .textEditorStyle(.plain)
+                                .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
 
-                                // 🔒 PAGE 3.3 LOCK — UIKit Overlay
-                                // The Eye button now renders a UITextView-based overlay
-                                // to guarantee pixel-perfect alignment with the editor.
-                                // SwiftUI overlay and offset hacks are intentionally removed.
-                                if isRhymeOverlayVisible {
-                                    RhymeHighlightTextView(
-                                        text: item.body,
-                                        highlights: rhymeHighlights
-                                    )
-                                    .frame(maxWidth: 680, alignment: .leading)
-                                    .padding(.horizontal, 20)
-                                    .padding(.top, 8)
-                                    .padding(.bottom, 24)
-                                    .opacity(1)
-                                    .animation(.easeInOut(duration: 0.18), value: isRhymeOverlayVisible)
-                                    .allowsHitTesting(false)
-                                }
-                            }
-                            .offset(x: lockedEditorXOffset ?? 0)
-                            .onChange(of: testUIKitRhymeOverlay) { isEnabled in
-                                if isEnabled {
-                                    // unlock – allow live movement
-                                    lockedEditorXOffset = nil
-                                } else {
-                                    // lock – capture current resolved position
-                                    lockedEditorXOffset = geo.frame(in: .global).minX
-                                }
+                            if isRhymeOverlayVisible {
+                                RhymeHighlightTextView(
+                                    text: item.body,
+                                    highlights: computedHighlights
+                                )
+                                .frame(maxWidth: 680, alignment: .leading)
+                                .padding(.horizontal, 20)
+                                .padding(.top, 8)
+                                .padding(.bottom, 24)
+                                .opacity(1)
+                                .animation(.easeInOut(duration: 0.18), value: isRhymeOverlayVisible)
+                                .allowsHitTesting(false)
                             }
                         }
-                        .frame(maxWidth: 680)
-                        .frame(maxWidth: .infinity, alignment: .center)
                     }
-                    .frame(maxWidth: .infinity, alignment: .center)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
-                // STEP 3 — Name the coordinate space and listen for changes
                 .coordinateSpace(name: "editorScroll")
                 .onPreferenceChange(ScrollOffsetKey.self) { value in
                     scrollOffset = value
                 }
             }
-
-            // PART 1 STEP 4 — Render diagnostics inline near toolbar
-            if let diagnostics = activeDiagnostics {
-                GlassPopoverContainer {
-                    VStack(spacing: 12) {
-                        if diagnostics == .rhyme {
-                            let highlights = computedHighlights
-                            RhymeDiagnosticsView(
-                                perfect: highlights.filter { $0.kind == .perfect }.count,
-                                near: highlights.filter { $0.kind == .near }.count,
-                                internalCount: highlights.filter { $0.kind == .`internal` }.count
-                            )
-                        }
-                        if diagnostics == .cadence {
-                            CadenceMetricsView(metrics: cadenceMetrics)
-                        }
-                        if diagnostics == .stress {
-                            StressAnalysisInlineView(text: item.body)
-                        }
-                    }
-                }
-                .frame(maxWidth: 320)
-                .padding(.top, 32)
-            }
-
-            // =======================================================
-            // PAGE 3.5 — Magnifying Glass: Rhyme Group List Panel
-            // (smaller, lighter, tap-away dismiss, deduped words)
-            // FINAL: opens anchored above toolbar button (matches Page 3.4, 3.2)
-            // =======================================================
-            if showRhymePanel {
-                ZStack {
-                    Color.clear
-                        .contentShape(Rectangle())
-                        .onTapGesture {
-                            withAnimation(.easeOut(duration: 0.15)) {
-                                showRhymePanel = false
-                            }
-                        }
-
-                    VStack {
-                        Spacer()
-                        GlassPopoverContainer {
-                            RhymeGroupListView(
-                                groups: rhymeHighlighter.groups(in: item.body)
-                            )
-                        }
-                        .frame(width: 280)
-                        .padding(.bottom, 88) // aligns above Page 3 toolbar
-                    }
-                }
-            }
         }
         .safeAreaInset(edge: .bottom) {
-            UnifiedBottomGlassBar(
-                mode: .editor,
-                isExpanded: $isPage3Expanded,
-                isSearchFocused: nil,
-                searchText: .constant(""),
+            DynamicIslandToolbarView(
+                isExpanded: $isToolbarExpanded,
+                isRhymeOverlayVisible: $isRhymeOverlayVisible,
+                showDiagnostics: $showRhymeDiagnostics,
+                showRhymePanel: $showRhymePanel,
                 isEditorFocused: $isEditorFocused,
-                keyboard: keyboard
+                keyboardHeight: $keyboardObserver.height
             )
+            .frame(maxWidth: 680)
+            .padding(.bottom, keyboardObserver.height > 0 ? 6 : 14)
         }
-        // ===================================================
-        // PAGE 1.3 — Import / Create Menu (Editor)
-        // ===================================================
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Menu {
@@ -1099,40 +970,7 @@ struct NoteEditorView: View {
                 }
             }
         }
-        // PART 1 STEP 3 — Remove popover-based diagnostics
-        // (popover for showRhymeDiagnostics removed)
-        // .popover for showRhymePanel removed; replaced with inline floating panel below.
         .navigationBarTitleDisplayMode(.inline)
-    }
-
-    // PAGE 3.3 — Eye Toggle
-    // NOTE: Visual grouping ONLY.
-    // No rhyme classification logic allowed here.
-    // Diagnostics own Perfect/Near/Internal semantics.
-    private var rhymeHighlights: [Highlight] {
-        guard isRhymeOverlayVisible else { return [] }
-
-        let groups = rhymeHighlighter.groups(in: item.body)
-        var output: [Highlight] = []
-
-        let colors: [Highlight.Kind] = [.perfect, .near, .internal]
-        var colorIndex = 0
-
-        for group in groups {
-            let kind = colors[colorIndex % colors.count]
-            colorIndex += 1
-
-            for word in group.words {
-                output.append(
-                    Highlight(
-                        word: word.word,
-                        range: word.range,
-                        kind: kind
-                    )
-                )
-            }
-        }
-        return output
     }
 
     private func prepareHapticForNewNote() {
@@ -1152,275 +990,115 @@ struct NoteEditorView: View {
         )
         modelContext.insert(newItem)
 
-        // Exit current editor so NavigationSplitView selects the new item
         dismiss()
     }
 }
 
-// =======================================================
-// Voice Memo Playback View (iOS 26–style)
-// =======================================================
-struct VoiceMemoPlaybackView: View {
-    let audioPath: String
-    @Binding var isPlaying: Bool
-    @Binding var audioPlayer: AVAudioPlayer?
-
-    var body: some View {
-        HStack(spacing: 12) {
-            Button {
-                togglePlayback()
-            } label: {
-                Image(systemName: isPlaying ? "pause.fill" : "play.fill")
-                    .font(.title3)
-                    .frame(width: 44, height: 44)
-                    .background(.ultraThinMaterial, in: Circle())
-            }
-            VStack(alignment: .leading, spacing: 4) {
-                Text("Voice Memo")
-                    .font(.callout.weight(.semibold))
-                Text(fileName)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
-            Spacer()
-            Image(systemName: "waveform")
-                .foregroundStyle(.secondary)
-        }
-        .padding(12)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
-    }
-
-    private var fileName: String {
-        URL(fileURLWithPath: audioPath).lastPathComponent
-    }
-
-    private func togglePlayback() {
-        if isPlaying {
-            audioPlayer?.stop()
-            isPlaying = false
-        } else {
-            do {
-                let url = URL(fileURLWithPath: audioPath)
-                audioPlayer = try AVAudioPlayer(contentsOf: url)
-                audioPlayer?.prepareToPlay()
-                audioPlayer?.play()
-                isPlaying = true
-            } catch {
-                isPlaying = false
-            }
-        }
-    }
-}
-
-// =======================================================
-// Voice Memo Transcription View (Read‑Only, iOS 26–style)
-// (Extended: Insert action, expanded/collapsed, glass card)
-// =======================================================
-struct VoiceMemoTranscriptionView: View {
-    let text: String
-    var onInsert: (() -> Void)? = nil
-
-    @State private var isExpanded: Bool = false
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                Text("Transcription")
-                    .font(.callout.weight(.semibold))
-                Spacer()
-                if let onInsert {
-                    Button("Insert") {
-                        onInsert()
-                    }
-                    .font(.caption.weight(.semibold))
-                }
-                Button {
-                    withAnimation(.easeInOut(duration: 0.15)) {
-                        isExpanded.toggle()
-                    }
-                } label: {
-                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-            }
-            Text(text)
-                .font(.callout)
-                .foregroundStyle(.primary)
-                .lineLimit(isExpanded ? nil : 3)
-        }
-        .padding(12)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
-    }
-}
-
 struct DynamicIslandToolbarView: View {
+    @Binding var isExpanded: Bool
     @Binding var isRhymeOverlayVisible: Bool
     @Binding var showDiagnostics: Bool
     @Binding var showRhymePanel: Bool
-    var isEditorFocused: FocusState<Bool>.Binding
-    @Binding var activeDiagnostics: NoteEditorView.DiagnosticsMode?
-    @Binding var testUIKitRhymeOverlay: Bool
-    @Binding var isExpanded: Bool
-
-    @StateObject private var keyboard = KeyboardObserver()
-
-    private var verticalPadding: CGFloat {
-        keyboard.height > 0 ? 6 : 12
-    }
-
-    private var barHeight: CGFloat {
-        keyboard.height > 0 ? 48 : 56
-    }
+    @FocusState.Binding var isEditorFocused: Bool
+    @Environment(\.colorScheme) private var colorScheme
+    @Binding var keyboardHeight: CGFloat
 
     var body: some View {
-        ZStack {
-            GlassEffectContainer(spacing: 14) {
-                if isExpanded {
-                    // Leading: collapse Page 3 (❌)
+        VStack(spacing: 0) {
+            ZStack {
+                if !isExpanded {
                     Button {
                         lightHaptic()
-                        withAnimation(.easeInOut(duration: 0.18)) {
-                            isExpanded = false
-                        }
-                    } label: {
-                        Image(systemName: "xmark")
-                            .font(.headline)
-                            .frame(width: 44, height: 44)
-                    }
-                    .microPress()
-
-                    // Paperclip — Menu
-                    Menu {
-                        Button("Attach File") { }
-                        Button("Import from Notes") { }
-                        Button("Import from Voice Memos") { }
-                    } label: {
-                        Image(systemName: "paperclip")
-                            .font(.headline)
-                            .frame(width: 44, height: 44)
-                    }
-                    .microPress()
-
-                    // AI (blue) — Menu
-                    Menu {
-                        Button("Rewrite Line") { }
-                        Button("Suggest Rhymes") { }
-                        Button("Improve Flow") { }
-                    } label: {
-                        Image(systemName: "sparkles")
-                            .font(.headline)
-                            .frame(width: 44, height: 44)
-                            .foregroundStyle(.blue)
-                    }
-                    .microPress()
-
-                    // Eye
-                    Button {
-                        lightHaptic()
-                        withAnimation(.easeInOut(duration: 0.15)) {
-                            isRhymeOverlayVisible.toggle()
-                        }
-                    } label: {
-                        Image(systemName: isRhymeOverlayVisible ? "eye.fill" : "eye")
-                            .font(.headline)
-                            .frame(width: 44, height: 44)
-                    }
-                    .microPress()
-
-                    // Bug — Menu (Diagnostics)
-                    Menu {
-                        Button("Rhyme Diagnostics") {
-                            withAnimation(.easeInOut(duration: 0.18)) {
-                                if activeDiagnostics == .rhyme {
-                                    activeDiagnostics = nil
-                                } else {
-                                    activeDiagnostics = .rhyme
-                                }
-                            }
-                        }
-                        Button("Cadence Metrics") {
-                            withAnimation(.easeInOut(duration: 0.18)) {
-                                if activeDiagnostics == .cadence {
-                                    activeDiagnostics = nil
-                                } else {
-                                    activeDiagnostics = .cadence
-                                }
-                            }
-                        }
-                        Button("Stress Analysis") {
-                            withAnimation(.easeInOut(duration: 0.18)) {
-                                if activeDiagnostics == .stress {
-                                    activeDiagnostics = nil
-                                } else {
-                                    activeDiagnostics = .stress
-                                }
-                            }
-                        }
-                        Divider()
-                        Button {
-                            testUIKitRhymeOverlay.toggle()
-                        } label: {
-                            Label {
-                                Text("UIKit Overlay Test Flag")
-                            } icon: {
-                                Image(systemName: testUIKitRhymeOverlay ? "flag.fill" : "flag")
-                                    .foregroundStyle(testUIKitRhymeOverlay ? .orange : .secondary)
-                            }
-                        }
-                    } label: {
-                        Image(systemName: "ladybug")
-                            .font(.headline)
-                            .frame(width: 44, height: 44)
-                    }
-                    .microPress()
-
-                    // Magnifier (manual glass popover trigger, no .popover)
-                    Button {
-                        lightHaptic()
-                        withAnimation(.easeInOut(duration: 0.15)) {
-                            showRhymePanel.toggle()
-                        }
-                    } label: {
-                        Image(systemName: "text.magnifyingglass")
-                            .font(.headline)
-                            .frame(width: 44, height: 44)
-                    }
-                    .microPress()
-                }
-                else {
-                    Button {
-                        lightHaptic()
-                        withAnimation(.easeInOut(duration: 0.18)) {
-                            isExpanded = true
-                        }
+                        isExpanded = true
                     } label: {
                         Image(systemName: "plus")
-                            .font(.headline)
-                            .frame(width: 44, height: 44)
+                            .font(.title2)
+                            .frame(width: 52, height: 52)
+                            .background(
+                                Circle()
+                                    .fill(.ultraThinMaterial)
+                                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                                    .clipShape(Circle())
+                            )
                     }
-                    .microPress()
-                }
+                } else {
+                    HStack(spacing: 14) {
+                        Button {
+                            lightHaptic()
+                            isExpanded = false
+                        } label: {
+                            Image(systemName: "xmark")
+                                .font(.headline)
+                                .frame(width: 44, height: 44)
+                        }
 
-                Spacer()
+                        Menu {
+                            Button("Attach File") { }
+                            Button("Import from Notes") { }
+                            Button("Import from Voice Memos") { }
+                        } label: {
+                            Image(systemName: "paperclip")
+                                .font(.headline)
+                                .frame(width: 44, height: 44)
+                        }
 
-                // Trailing: keyboard toggle button
-                Button {
-                    lightHaptic()
-                    isEditorFocused.wrappedValue.toggle()
-                } label: {
-                    Image(systemName: isEditorFocused.wrappedValue ? "keyboard.chevron.compact.down" : "keyboard")
-                        .font(.headline)
-                        .frame(width: 44, height: 44)
+                        Menu {
+                            Button("Rewrite Line") { }
+                            Button("Suggest Rhymes") { }
+                            Button("Improve Flow") { }
+                        } label: {
+                            Image(systemName: "sparkles")
+                                .font(.headline)
+                                .frame(width: 44, height: 44)
+                                .foregroundStyle(.blue)
+                        }
+
+                        Button {
+                            lightHaptic()
+                            withAnimation(.easeInOut(duration: 0.15)) {
+                                isRhymeOverlayVisible.toggle()
+                            }
+                        } label: {
+                            Image(systemName: isRhymeOverlayVisible ? "eye.fill" : "eye")
+                                .font(.headline)
+                                .frame(width: 44, height: 44)
+                        }
+
+                        Button {
+                            lightHaptic()
+                            withAnimation(.easeInOut(duration: 0.15)) {
+                                showRhymePanel.toggle()
+                            }
+                        } label: {
+                            Image(systemName: "text.magnifyingglass")
+                                .font(.headline)
+                                .frame(width: 44, height: 44)
+                        }
+
+                        Spacer()
+
+                        Button {
+                            lightHaptic()
+                            isEditorFocused.toggle()
+                        } label: {
+                            Image(systemName: isEditorFocused ? "keyboard.chevron.compact.down" : "keyboard")
+                                .font(.headline)
+                                .frame(width: 44, height: 44)
+                        }
+                    }
+                    .frame(height: 56)
+                    .frame(maxWidth: 680)
+                    .background(
+                        Capsule(style: .continuous)
+                            .fill(.ultraThinMaterial)
+                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                            .clipShape(Capsule(style: .continuous))
+                    )
+                    .padding(.horizontal, 16)
                 }
-                .microPress()
             }
-            .frame(height: barHeight)
+            .padding(.vertical, keyboardHeight > 0 ? 6 : 12)
         }
-        .frame(width: 680) // HARD WIDTH LOCK — DO NOT REMOVE
-        .padding(.horizontal, 16)
-        .padding(.vertical, verticalPadding)
-        .animation(.easeInOut(duration: 0.22), value: keyboard.height)
     }
 }
 
@@ -1428,9 +1106,8 @@ private func lightHaptic() {
     UIImpactFeedbackGenerator(style: .light).impactOccurred()
 }
 
-// =======================================================
 // MARK: - PAGE 3.5: Rhyme Group List View (Polished Glass Card)
-// =======================================================
+
 struct RhymeGroupListView: View {
     let groups: [RhymeHighlighterEngine.RhymeGroup]
 
@@ -1475,18 +1152,16 @@ struct RhymeGroupListView: View {
                         }
                     }
                 }
-                .frame(maxHeight: 220) // caps height to ~6 groups
+                .frame(maxHeight: 220)
             }
         }
         .padding(13)
     }
 }
 
-// =======================================================
 // MARK: - PAGE 5–9: Rhyme Intelligence Engine
-// =======================================================
+
 struct RhymeHighlighterEngine {
-    // MARK: - Rhyme Group Models (Group-based output)
     struct RhymeGroup: Identifiable {
         let id: UUID
         let rhymeTailKey: String
@@ -1499,7 +1174,6 @@ struct RhymeHighlighterEngine {
         let range: Range<String.Index>
     }
 
-    /// Returns rhyme groups found in the text, grouped by rhyme tail.
     func groups(in text: String) -> [RhymeGroup] {
         var wordRanges: [(String, Range<String.Index>)] = []
         let tokenizer = NLTokenizer(unit: .word)
@@ -1509,7 +1183,7 @@ struct RhymeHighlighterEngine {
             return true
         }
 
-        let dict = CMUDICTStore.shared.phonemesByWord
+        let dict = FJCMUDICTStore.shared.phonemesByWord
         func rhymeTailKey(for phonemes: [String]) -> String? {
             guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else { return nil }
             return phonemes[idx...].joined(separator: "-")
@@ -1539,8 +1213,483 @@ struct RhymeHighlighterEngine {
     }
 }
 
-final class CMUDICTStore {
-    static let shared = CMUDICTStore()
+// MARK: - PAGE 11: Syllable Stress Analyzer
+
+struct SyllableStressAnalyzer {
+    func analyze(word: String) -> (syllables: Int, stresses: [Int]) {
+        guard let phonemes = FJCMUDICTStore.shared.phonemesByWord[word.lowercased()] else { return (0, []) }
+        var syllableIndex = 0
+        var stresses: [Int] = []
+        for phone in phonemes {
+            if let last = phone.last, last.isNumber {
+                if last == "1" { stresses.append(syllableIndex) }
+                syllableIndex += 1
+            }
+        }
+        return (syllableIndex, stresses)
+    }
+}
+
+// MARK: - PAGE 12: Cadence & Flow Metrics (Engine)
+
+struct CadenceMetrics {
+    struct LineMetrics {
+        let lineIndex: Int, syllableCount: Int, stressCount: Int, rhymeCount: Int
+    }
+    let lines: [LineMetrics]
+    var averageSyllables: Double {
+        guard !lines.isEmpty else { return 0 }
+        return Double(lines.map(\.syllableCount).reduce(0, +)) / Double(lines.count)
+    }
+    var syllableVariance: Double {
+        let avg = averageSyllables
+        return lines.map { pow(Double($0.syllableCount) - avg, 2) }.reduce(0, +) / Double(lines.count)
+    }
+}
+
+// MARK: - PAGE 12: Cadence Analyzer
+
+struct CadenceAnalyzer {
+    private let syllableAnalyzer = SyllableStressAnalyzer()
+    func analyze(text: String, highlights: [Highlight]) -> CadenceMetrics {
+        let lines = text.split(separator: "\n", omittingEmptySubsequences: false)
+        var results: [CadenceMetrics.LineMetrics] = []
+        for (index, line) in lines.enumerated() {
+            let words = line.split { !$0.isLetter }
+            var syllables = 0, stresses = 0, rhymeCount = 0
+            for wordSub in words {
+                let word = String(wordSub).lowercased()
+                let analysis = syllableAnalyzer.analyze(word: word)
+                syllables += analysis.syllables
+                stresses += analysis.stresses.count
+            }
+            rhymeCount = highlights.filter { line.contains($0.word) }.count
+            results.append(CadenceMetrics.LineMetrics(lineIndex: index, syllableCount: syllables, stressCount: stresses, rhymeCount: rhymeCount))
+        }
+        return CadenceMetrics(lines: results)
+    }
+}
+
+// MARK: - GLASS EFFECT
+
+struct GlassView<S: Shape>: View {
+    @Environment(\.colorScheme) private var colorScheme
+    let shape: S
+    var applyGloss: Bool = false
+
+    var body: some View {
+        let material = shape.fill(.ultraThinMaterial)
+            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+
+        if applyGloss {
+            material
+                .overlay(
+                    LinearGradient(
+                        colors: [.white.opacity(0.4 * (GlassSettings.gloss - 0.6)), .clear],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                    .blendMode(.overlay)
+                    .clipShape(shape)
+                )
+        } else {
+            material
+        }
+    }
+}
+
+// MARK: - PAGE 3.3 — FINAL OVERLAY IMPLEMENTATION
+
+struct RhymeHighlightTextView: UIViewRepresentable {
+    let text: String
+    let highlights: [Highlight]
+
+    func makeUIView(context: Context) -> UITextView {
+        let textView = UITextView()
+
+        textView.isEditable = false
+        textView.isSelectable = false
+        textView.isScrollEnabled = false
+        textView.isUserInteractionEnabled = false
+
+        textView.textContainerInset = UIEdgeInsets(
+            top: 8,
+            left: 20,
+            bottom: 24,
+            right: 20
+        )
+        textView.textContainer.lineFragmentPadding = 0
+
+        textView.font = UIFont.preferredFont(forTextStyle: .body)
+        textView.adjustsFontForContentSizeCategory = true
+        textView.textColor = .label
+
+        textView.backgroundColor = .clear
+        textView.tintColor = .clear
+
+        return textView
+    }
+
+    func updateUIView(_ uiView: UITextView, context: Context) {
+        let attributed = NSMutableAttributedString(
+            string: text,
+            attributes: [
+                .font: UIFont.preferredFont(forTextStyle: .body),
+                .foregroundColor: UIColor.label
+            ]
+        )
+
+        let isDarkMode = uiView.traitCollection.userInterfaceStyle == .dark
+
+        for highlight in highlights {
+            let nsRange = NSRange(highlight.range, in: text)
+
+            let color: UIColor
+            switch highlight.kind {
+            case .perfect:
+                color = isDarkMode
+                    ? UIColor.systemYellow.withAlphaComponent(0.55)
+                    : UIColor.systemYellow.withAlphaComponent(0.28)
+
+            case .near:
+                color = isDarkMode
+                    ? UIColor.systemOrange.withAlphaComponent(0.45)
+                    : UIColor.systemOrange.withAlphaComponent(0.22)
+
+            case .`internal`:
+                color = isDarkMode
+                    ? UIColor.systemBlue.withAlphaComponent(0.40)
+                    : UIColor.systemBlue.withAlphaComponent(0.20)
+            }
+
+            attributed.addAttribute(
+                .backgroundColor,
+                value: color,
+                range: nsRange
+            )
+        }
+
+        uiView.attributedText = attributed
+    }
+}
+
+// MARK: - PAGE 11: Syllable Stress Analyzer
+
+struct Highlight: Equatable {
+    enum Kind: Equatable {
+        case perfect, near, `internal`
+    }
+    let word: String
+    let range: Range<String.Index>
+    let kind: Kind
+}
+
+// MARK: - PAGE 1.1.1: Release Notes Sheet (Segment 1)
+
+struct ReleaseNotesSheetView: View {
+    @Environment(\.colorScheme) private var colorScheme
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 28) {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("What’s New")
+                        .font(.largeTitle.weight(.bold))
+
+                    Text("The Final Journal AI")
+                        .font(.headline)
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.top, 12)
+
+                featureCard(
+                    symbolName: "sparkles.rectangle.stack",
+                    version: "1.1.0",
+                    title: "Writing Intelligence Update",
+                    description: "Smarter rhyme awareness and clearer creative feedback.",
+                    bullets: [
+                        "Group‑based rhyme coloring",
+                        "Magnifying‑glass rhyme map",
+                        "Keyboard‑aware adaptive glass bars",
+                        "Improved dark‑mode contrast"
+                    ]
+                )
+
+                featureCard(
+                    symbolName: "checkmark.seal",
+                    version: "1.0.5",
+                    title: "Stability & Polish",
+                    description: "Smoother interactions and visual refinement.",
+                    bullets: [
+                        "Navigation stability improvements",
+                        "Cleaner editor alignment",
+                        "Performance optimizations"
+                    ]
+                )
+            }
+            .padding(24)
+        }
+        .background(
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                .ignoresSafeArea()
+        )
+    }
+
+    @ViewBuilder
+    private func featureCard(
+        symbolName: String,
+        version: String,
+        title: String,
+        description: String,
+        bullets: [String]
+    ) -> some View {
+        HStack(spacing: 16) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 22, style: .continuous)
+                    .fill(.ultraThinMaterial)
+                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+
+                Image(systemName: symbolName)
+                    .font(.system(size: 44, weight: .semibold))
+                    .foregroundStyle(.primary)
+            }
+            .frame(width: 120, height: 120)
+
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Version \(version)")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+
+                Text(title)
+                    .font(.title3.weight(.semibold))
+
+                Text(description)
+                    .font(.callout)
+                    .foregroundStyle(.secondary)
+
+                VStack(alignment: .leading, spacing: 6) {
+                    ForEach(bullets, id: \.self) { bullet in
+                        Text("• \(bullet)")
+                            .font(.callout)
+                    }
+                }
+            }
+        }
+        .padding(20)
+        .background(
+            RoundedRectangle(cornerRadius: 22, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+        )
+    }
+}
+
+// MARK: - PAGE 1.1.2: Support / Shop Sheet (Segment 1)
+
+struct SupportShopSheetView: View {
+    @Environment(\.openURL) private var openURL
+    @Environment(\.colorScheme) private var colorScheme
+    @State private var showThankYou: Bool = false
+    @State private var lastActionTitle: String = ""
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 28) {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Support the Creators")
+                        .font(.largeTitle.weight(.bold))
+
+                    Text("Your support helps keep The Final Journal AI independent, thoughtful, and evolving.")
+                        .font(.headline)
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.top, 12)
+
+                sectionHeader("Follow & Support")
+
+                supportRow(
+                    title: "X (Twitter)",
+                    subtitle: "Follow updates and design progress",
+                    symbol: "xmark"
+                ) {
+                    lastActionTitle = "X (Twitter)"
+                    showThankYou = true
+                    openURL(URL(string: "https://twitter.com")!)
+                }
+
+                supportRow(
+                    title: "Instagram",
+                    subtitle: "Visual updates and behind-the-scenes",
+                    symbol: "camera"
+                ) {
+                    lastActionTitle = "Instagram"
+                    showThankYou = true
+                    openURL(URL(string: "https://instagram.com")!)
+                }
+
+                supportRow(
+                    title: "Patreon",
+                    subtitle: "Directly support ongoing development",
+                    symbol: "heart.fill"
+                ) {
+                    lastActionTitle = "Patreon"
+                    showThankYou = true
+                    openURL(URL(string: "https://patreon.com")!)
+                }
+
+                supportRow(
+                    title: "Facebook",
+                    subtitle: "Community updates and announcements",
+                    symbol: "person.2.fill"
+                ) {
+                    lastActionTitle = "Facebook"
+                    showThankYou = true
+                    openURL(URL(string: "https://facebook.com")!)
+                }
+
+                sectionHeader("Affiliate Support")
+
+                Text(
+                    "Some links may be affiliate links. Purchases made through these links help support development at no extra cost to you."
+                )
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+                supportRow(
+                    title: "Amazon",
+                    subtitle: "Support via affiliate purchases",
+                    symbol: "cart.fill"
+                ) {
+                    lastActionTitle = "Amazon"
+                    showThankYou = true
+                    openURL(URL(string: "https://amazon.com")!)
+                }
+
+                if showThankYou {
+                    HStack(spacing: 12) {
+                        Image(systemName: "heart.fill")
+                            .foregroundStyle(.pink)
+
+                        Text("Thank you for supporting The Final Journal AI via \(lastActionTitle).")
+                            .font(.callout)
+                    }
+                    .padding(14)
+                    .background(
+                        RoundedRectangle(cornerRadius: 18, style: .continuous)
+                            .fill(.ultraThinMaterial)
+                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                    )
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                            withAnimation(.easeOut(duration: 0.2)) {
+                                showThankYou = false
+                            }
+                        }
+                    }
+                }
+            }
+            .padding(24)
+        }
+        .background(
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                .ignoresSafeArea()
+        )
+        .animation(.easeInOut(duration: 0.2), value: showThankYou)
+    }
+
+    private func sectionHeader(_ title: String) -> some View {
+        Text(title)
+            .font(.title3.weight(.semibold))
+            .padding(.top, 12)
+    }
+
+    @ViewBuilder
+    private func supportRow(
+        title: String,
+        subtitle: String,
+        symbol: String,
+        action: @escaping () -> Void
+    ) -> some View {
+        Button(action: action) {
+            HStack(spacing: 16) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .fill(.ultraThinMaterial)
+                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+
+                    Image(systemName: symbol)
+                        .font(.system(size: 28, weight: .semibold))
+                }
+                .frame(width: 64, height: 64)
+
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(title)
+                        .font(.headline)
+
+                    Text(subtitle)
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                }
+
+                Spacer()
+            }
+            .padding(12)
+            .background(
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .fill(.ultraThinMaterial)
+                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+            )
+        }
+        .buttonStyle(.plain)
+    }
+}
+
+struct JournalDetailPlaceholderView: View {
+    var body: some View {
+        Color.clear
+    }
+}
+
+final class KeyboardObserver: ObservableObject {
+    @Published var height: CGFloat = 0
+
+    private var cancellable: AnyCancellable?
+    private let keyboardWillShow = NotificationCenter.default
+        .publisher(for: UIResponder.keyboardWillShowNotification)
+        .compactMap { ($0.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect)?.height }
+
+    private let keyboardWillHide = NotificationCenter.default
+        .publisher(for: UIResponder.keyboardWillHideNotification)
+        .map { _ in CGFloat(0) }
+
+    init() {
+        cancellable = Publishers.Merge(keyboardWillShow, keyboardWillHide)
+            .subscribe(on: DispatchQueue.main)
+            .assign(to: \.height, on: self)
+    }
+}
+
+
+struct ScrollOffsetKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+
+// MARK: - GLASS EFFECT
+
+enum GlassSettings {
+    static let darkening: Double = 0.12
+    static let gloss: Double = 1.0
+}
+
+final class FJCMUDICTStore {
+    static let shared = FJCMUDICTStore()
     private(set) var phonemesByWord: [String: [String]] = [:]
     private init() { load() }
     private func load() {
@@ -1594,343 +1743,5 @@ final class CMUDICTStore {
             "chime": ["CH", "AY1", "M"],
             "sublime": ["S", "AH0", "B", "L", "AY1", "M"]
         ]
-    }
-}
-
-// =======================================================
-// 🔒 PAGE 3.3 — FINAL OVERLAY IMPLEMENTATION
-// UIKit UITextView-based overlay.
-// Legacy SwiftUI overlay removed intentionally.
-// Do not reintroduce SwiftUI Text overlays here.
-// =======================================================
-struct RhymeHighlightTextView: UIViewRepresentable {
-    let text: String
-    let highlights: [Highlight]
-
-    func makeUIView(context: Context) -> UITextView {
-        let textView = UITextView()
-
-        // Interaction (paint-only)
-        textView.isEditable = false
-        textView.isSelectable = false
-        textView.isScrollEnabled = false
-        textView.isUserInteractionEnabled = false
-
-        // Geometry — must mirror Page 2
-        textView.textContainerInset = UIEdgeInsets(
-            top: 8,
-            left: 20,
-            bottom: 24,
-            right: 20
-        )
-        textView.textContainer.lineFragmentPadding = 0
-
-        // Typography — match system TextEditor
-        textView.font = UIFont.preferredFont(forTextStyle: .body)
-        textView.adjustsFontForContentSizeCategory = true
-        textView.textColor = .label
-
-        // Appearance
-        textView.backgroundColor = .clear
-        textView.tintColor = .clear
-
-        return textView
-    }
-
-    func updateUIView(_ uiView: UITextView, context: Context) {
-        let attributed = NSMutableAttributedString(
-            string: text,
-            attributes: [
-                .font: UIFont.preferredFont(forTextStyle: .body),
-                .foregroundColor: UIColor.label
-            ]
-        )
-
-        let isDarkMode = uiView.traitCollection.userInterfaceStyle == .dark
-
-        for highlight in highlights {
-            let nsRange = NSRange(highlight.range, in: text)
-
-            let color: UIColor
-            switch highlight.kind {
-            case .perfect:
-                color = isDarkMode
-                    ? UIColor.systemYellow.withAlphaComponent(0.55)
-                    : UIColor.systemYellow.withAlphaComponent(0.28)
-
-            case .near:
-                color = isDarkMode
-                    ? UIColor.systemOrange.withAlphaComponent(0.45)
-                    : UIColor.systemOrange.withAlphaComponent(0.22)
-
-            case .internal:
-                color = isDarkMode
-                    ? UIColor.systemBlue.withAlphaComponent(0.40)
-                    : UIColor.systemBlue.withAlphaComponent(0.20)
-            }
-
-            attributed.addAttribute(
-                .backgroundColor,
-                value: color,
-                range: nsRange
-            )
-        }
-
-        uiView.attributedText = attributed
-    }
-}
-
-// 🔒 PAGE 3.3 LOCK — Dark Mode & Typography
-// UITextView overlay must always use system font + UIColor.label.
-// Highlight contrast is mode-aware. Do not override colors elsewhere.
-// =======================================================
-// MARK: - PAGE 11: Syllable Stress Analyzer
-// =======================================================
-struct SyllableStressAnalyzer {
-    func analyze(word: String) -> (syllables: Int, stresses: [Int]) {
-        guard let phonemes = CMUDICTStore.shared.phonemesByWord[word.lowercased()] else { return (0, []) }
-        var syllableIndex = 0
-        var stresses: [Int] = []
-        for phone in phonemes {
-            if let last = phone.last, last.isNumber {
-                if last == "1" { stresses.append(syllableIndex) }
-                syllableIndex += 1
-            }
-        }
-        return (syllableIndex, stresses)
-    }
-}
-
-// =======================================================
-// MARK: - PAGE 12: Cadence & Flow Metrics (Engine)
-// =======================================================
-struct CadenceMetrics {
-    struct LineMetrics {
-        let lineIndex: Int, syllableCount: Int, stressCount: Int, rhymeCount: Int
-    }
-    let lines: [LineMetrics]
-    var averageSyllables: Double {
-        guard !lines.isEmpty else { return 0 }
-        return Double(lines.map(\.syllableCount).reduce(0, +)) / Double(lines.count)
-    }
-    var syllableVariance: Double {
-        let avg = averageSyllables
-        return lines.map { pow(Double($0.syllableCount) - avg, 2) }.reduce(0, +) / Double(lines.count)
-    }
-}
-
-// =======================================================
-// MARK: - PAGE 12: Cadence Analyzer
-// =======================================================
-struct CadenceAnalyzer {
-    private let syllableAnalyzer = SyllableStressAnalyzer()
-    func analyze(text: String, highlights: [Highlight]) -> CadenceMetrics {
-        let lines = text.split(separator: "\n", omittingEmptySubsequences: false)
-        var results: [CadenceMetrics.LineMetrics] = []
-        for (index, line) in lines.enumerated() {
-            let words = line.split { !$0.isLetter }
-            var syllables = 0, stresses = 0, rhymeCount = 0
-            for wordSub in words {
-                let word = String(wordSub).lowercased()
-                let analysis = syllableAnalyzer.analyze(word: word)
-                syllables += analysis.syllables
-                stresses += analysis.stresses.count
-            }
-            rhymeCount = highlights.filter { line.contains($0.word) }.count
-            results.append(CadenceMetrics.LineMetrics(lineIndex: index, syllableCount: syllables, stressCount: stresses, rhymeCount: rhymeCount))
-        }
-        return CadenceMetrics(lines: results)
-    }
-}
-
-// =======================================================
-// MARK: - PAGE 11: Syllable Stress Overlay View
-// =======================================================
-struct SyllableStressOverlayView: View {
-    let text: String
-    let highlights: [Highlight]
-    private let analyzer = SyllableStressAnalyzer()
-    var body: some View {
-        Text(attributed)
-            .font(.body)
-            .padding(.horizontal, 12)
-            .allowsHitTesting(false)
-    }
-    private var attributed: AttributedString {
-        var attr = AttributedString(text)
-        for h in highlights {
-            let analysis = analyzer.analyze(word: h.word)
-            guard
-                analysis.syllables > 0,
-                let lower = AttributedString.Index(h.range.lowerBound, within: attr),
-                let upper = AttributedString.Index(h.range.upperBound, within: attr)
-            else { continue }
-            let range = lower..<upper
-            if !analysis.stresses.isEmpty {
-                attr[range].underlineStyle = .single
-                attr[range].underlineColor = UIColor.label.withAlphaComponent(0.35)
-            }
-        }
-        return attr
-    }
-}
-struct RhymeIntelligencePanelView: View {
-    let highlights: [Highlight]
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                panelSection("Perfect Rhymes", kind: .perfect)
-                panelSection("Near Rhymes", kind: .near)
-                panelSection("Internal Rhymes", kind: .`internal`)
-            }
-            .padding()
-        }
-        .frame(width: 320)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 20))
-    }
-    private func panelSection(_ title: String, kind: Highlight.Kind) -> some View {
-        let words = highlights.filter { $0.kind == kind }.map { $0.word }.sorted()
-        return VStack(alignment: .leading, spacing: 8) {
-            Text(title).font(.headline)
-            if words.isEmpty {
-                Text("None detected").font(.caption).foregroundStyle(.secondary)
-            } else {
-                ForEach(words, id: \.self) { word in Text(word).font(.callout) }
-            }
-        }
-    }
-}
-// =======================================================
-// MARK: - PAGE 9: Rhyme Diagnostics View
-// =======================================================
-struct RhymeDiagnosticsView: View {
-    let perfect: Int, near: Int, internalCount: Int
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Rhyme Diagnostics").font(.headline)
-            diagnosticsRow("Perfect", count: perfect)
-            diagnosticsRow("Near", count: near)
-            diagnosticsRow("Internal", count: internalCount)
-        }
-        .padding()
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
-        .frame(maxWidth: 240)
-    }
-    private func diagnosticsRow(_ label: String, count: Int) -> some View {
-        HStack { Text(label); Spacer(); Text("\(count)").fontWeight(.semibold) }.font(.caption)
-    }
-}
-
-struct CadenceMetricsView: View {
-    let metrics: CadenceMetrics
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Cadence Metrics").font(.headline)
-            diagnosticsRow("Avg Syllables / Line", value: String(format: "%.2f", metrics.averageSyllables))
-            diagnosticsRow("Syllable Variance", value: String(format: "%.2f", metrics.syllableVariance))
-        }
-        .padding()
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
-        .frame(maxWidth: 240)
-    }
-
-    private func diagnosticsRow(_ label: String, value: String) -> some View {
-        HStack {
-            Text(label)
-            Spacer()
-            Text(value).fontWeight(.semibold)
-        }
-        .font(.caption)
-    }
-}
-
-struct StressAnalysisInlineView: View {
-    let text: String
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Stress Analysis").font(.headline)
-            Text("Coming soon...")
-                .font(.caption)
-                .foregroundStyle(.secondary)
-        }
-        .padding()
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
-        .frame(maxWidth: 240)
-    }
-}
-
-struct JournalDetailPlaceholderView: View {
-    var body: some View { VStack { Spacer(); Text("Select a note").foregroundStyle(.secondary); Spacer() } }
-}
-
-// =======================================================
-// MARK: - Shared: Keyboard Observer (for Toolbar Docking)
-// =======================================================
-final class KeyboardObserver: ObservableObject {
-    @Published var height: CGFloat = 0
-
-    private var observers: [NSObjectProtocol] = []
-
-    init() {
-        let center = NotificationCenter.default
-
-        observers.append(
-            center.addObserver(
-                forName: UIResponder.keyboardWillShowNotification,
-                object: nil,
-                queue: .main
-            ) { [weak self] notification in
-                guard
-                    let frame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
-                else { return }
-                self?.height = frame.height
-            }
-        )
-
-        observers.append(
-            center.addObserver(
-                forName: UIResponder.keyboardWillHideNotification,
-                object: nil,
-                queue: .main
-            ) { [weak self] _ in
-                self?.height = 0
-            }
-        )
-    }
-
-    deinit {
-        let center = NotificationCenter.default
-        observers.forEach { center.removeObserver($0) }
-        observers.removeAll()
-    }
-}
-
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
-}
-
-// =======================================================
-// MARK: - Shared: Glass Effect Container (for Toolbar)
-// =======================================================
-struct GlassEffectContainer<Content: View>: View {
-    let spacing: CGFloat
-    let content: () -> Content
-
-    init(spacing: CGFloat = 14, @ViewBuilder content: @escaping () -> Content) {
-        self.spacing = spacing
-        self.content = content
-    }
-
-    var body: some View {
-        HStack(spacing: spacing) {
-            content()
-        }
-        .background(
-            Capsule(style: .continuous)
-                .fill(.ultraThinMaterial)
-        )
     }
 }

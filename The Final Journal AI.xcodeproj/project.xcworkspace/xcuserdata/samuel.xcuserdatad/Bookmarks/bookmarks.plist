@@ -12,13 +12,13 @@
 					<key>EndingColumnNumber</key>
 					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>1936</string>
+					<string>457</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>1936</string>
+					<string>456</string>
 					<key>Timestamp</key>
-					<string>789042621.940691</string>
+					<string>789217511.472411</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -34,13 +34,17 @@
 			<key>text-context</key>
 			<dict>
 				<key>focused</key>
-				<string></string>
+				<string>    private var page1FiltersView: some View {
+</string>
 				<key>leading</key>
 				<string>    }
-}
+
 </string>
 				<key>trailing</key>
-				<string></string>
+				<string>        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                ForEach(Page1Filter.allCases) { filter in
+</string>
 			</dict>
 			<key>type</key>
 			<string>bookmark</string>
