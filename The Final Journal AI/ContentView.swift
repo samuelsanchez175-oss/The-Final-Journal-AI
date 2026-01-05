@@ -552,6 +552,7 @@ struct JournalRowView: View {
                         .font(.callout)
                         .foregroundStyle(.secondary)
                         .lineLimit(2)
+                        .truncationMode(.tail)
                 }
                 .padding(.vertical, 12)
 
@@ -827,49 +828,18 @@ struct NoteEditorView: View {
 
     @State private var isRhymeOverlayVisible: Bool = false
     @State private var showRhymeDiagnostics: Bool = false
-    @State private var showRhymePanel: Bool = false
     @FocusState private var isEditorFocused: Bool
     @StateObject private var keyboardObserver = KeyboardObserver()
     @State private var isToolbarExpanded: Bool = false
     @State private var scrollOffset: CGFloat = 0
+    @StateObject private var rhymeEngineState = RhymeEngineState()
 
-    private let rhymeHighlighter = RhymeHighlighterEngine()
+    private var rhymeGroups: [RhymeHighlighterEngine.RhymeGroup] {
+        rhymeEngineState.cachedGroups
+    }
 
     private var computedHighlights: [Highlight] {
-        let text = item.body
-        let groups = rhymeHighlighter.groups(in: text)
-        var highlights: [Highlight] = []
-
-        let dict = FJCMUDICTStore.shared.phonemesByWord
-        func rhymeTail(for phonemes: [String]) -> [String] {
-            guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else { return [] }
-            return Array(phonemes[idx...])
-        }
-
-        for group in groups {
-            let groupPhonemes = dict[group.words.first?.word ?? ""] ?? []
-            let groupTail = rhymeTail(for: groupPhonemes)
-
-            for wordInfo in group.words {
-                let range = wordInfo.range
-                let isLineEnding = (range.upperBound == text.endIndex) || (range.upperBound < text.endIndex && text[range.upperBound...].first?.isNewline ?? false)
-
-                let wordPhonemes = dict[wordInfo.word] ?? []
-                let wordTail = rhymeTail(for: wordPhonemes)
-
-                let baseKind: Highlight.Kind = (wordTail == groupTail) ? .perfect : .near
-                let finalKind: Highlight.Kind = isLineEnding ? baseKind : .internal
-
-                highlights.append(
-                    Highlight(
-                        word: wordInfo.word,
-                        range: range,
-                        kind: finalKind
-                    )
-                )
-            }
-        }
-        return highlights
+        rhymeEngineState.cachedHighlights
     }
 
     var body: some View {
@@ -937,7 +907,7 @@ struct NoteEditorView: View {
                 isExpanded: $isToolbarExpanded,
                 isRhymeOverlayVisible: $isRhymeOverlayVisible,
                 showDiagnostics: $showRhymeDiagnostics,
-                showRhymePanel: $showRhymePanel,
+                rhymeGroups: rhymeGroups,
                 isEditorFocused: $isEditorFocused,
                 keyboardHeight: $keyboardObserver.height
             )
@@ -971,6 +941,12 @@ struct NoteEditorView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            rhymeEngineState.updateIfNeeded(text: item.body)
+        }
+        .onChange(of: item.body) {
+            rhymeEngineState.updateIfNeeded(text: item.body)
+        }
     }
 
     private func prepareHapticForNewNote() {
@@ -998,7 +974,7 @@ struct DynamicIslandToolbarView: View {
     @Binding var isExpanded: Bool
     @Binding var isRhymeOverlayVisible: Bool
     @Binding var showDiagnostics: Bool
-    @Binding var showRhymePanel: Bool
+    let rhymeGroups: [RhymeHighlighterEngine.RhymeGroup]
     @FocusState.Binding var isEditorFocused: Bool
     @Environment(\.colorScheme) private var colorScheme
     @Binding var keyboardHeight: CGFloat
@@ -1064,16 +1040,16 @@ struct DynamicIslandToolbarView: View {
                                 .frame(width: 44, height: 44)
                         }
 
-                        Button {
-                            lightHaptic()
-                            withAnimation(.easeInOut(duration: 0.15)) {
-                                showRhymePanel.toggle()
-                            }
+                        Menu {
+                            RhymeGroupListView(
+                                groups: rhymeGroups
+                            )
                         } label: {
                             Image(systemName: "text.magnifyingglass")
                                 .font(.headline)
                                 .frame(width: 44, height: 44)
                         }
+                        .menuStyle(.borderlessButton)
 
                         Spacer()
 
@@ -1110,61 +1086,110 @@ private func lightHaptic() {
 
 struct RhymeGroupListView: View {
     let groups: [RhymeHighlighterEngine.RhymeGroup]
+    @Environment(\.colorScheme) private var colorScheme
+    @State private var isSortReversed = true
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text("Rhyme Groups")
-                .font(.headline)
-                .padding(.bottom, 6)
-                .padding(.horizontal, 2)
+        let baseOrderedGroups = groups.sorted { g1, g2 in
+            guard
+                let r1 = g1.words.map({ $0.range.lowerBound }).min(),
+                let r2 = g2.words.map({ $0.range.lowerBound }).min()
+            else { return false }
+            return r1 < r2
+        }
+        
+        let orderedGroups = isSortReversed ? Array(baseOrderedGroups.reversed()) : baseOrderedGroups
 
-            if groups.isEmpty {
-                Text("No rhyme groups detected")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                    .padding(.vertical, 8)
-                    .padding(.horizontal, 2)
-            } else {
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 0) {
-                        ForEach(Array(groups.enumerated()), id: \.element.id) { index, group in
-                            if index > 0 {
-                                Divider()
-                                    .opacity(0.35)
-                                    .padding(.vertical, 4)
-                            }
+        VStack(alignment: .leading, spacing: 10) {
+            Button {
+                isSortReversed.toggle()
+            } label: {
+                HStack {
+                    Text("Rhyme Groups")
+                        .font(.headline)
+                    Spacer()
+                    Image(systemName: "arrow.up.arrow.down")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+            .buttonStyle(.plain)
+            .padding(.bottom, 6)
 
-                            VStack(alignment: .leading, spacing: 2) {
+
+            ScrollView {
+                VStack(alignment: .leading, spacing: 14) {
+                    if orderedGroups.isEmpty {
+                        Text("No rhymes found.")
+                            .font(.callout)
+                            .foregroundStyle(.secondary)
+                    } else {
+                        ForEach(Array(orderedGroups.enumerated()), id: \.element.id) { index, group in
+                            let groupColor = Color(RhymeColorPalette.colors[group.colorIndex])
+                            
+                            VStack(alignment: .leading, spacing: 6) {
                                 Text("Group \(index + 1)")
                                     .font(.caption.weight(.semibold))
-                                    .foregroundStyle(.secondary)
-                                    .padding(.bottom, 1)
-
+                                    .foregroundStyle(groupColor)
+                                
                                 let uniqueWords = Array(Set(group.words.map { $0.word })).sorted()
                                 Text(uniqueWords.joined(separator: " · "))
                                     .font(.callout)
-                                    .lineLimit(1)
-                                    .truncationMode(.tail)
-                                    .padding(.bottom, 2)
+                                    .foregroundStyle(groupColor.opacity(0.8))
+                                    .lineLimit(nil)
+                                    .fixedSize(horizontal: false, vertical: true)
                             }
-                            .padding(.vertical, 6)
-                            .padding(.horizontal, 2)
+
+                            if index < orderedGroups.count - 1 {
+                                Divider().opacity(0.25)
+                            }
                         }
                     }
                 }
-                .frame(maxHeight: 220)
             }
         }
-        .padding(13)
+        .padding(16)
+        .frame(minWidth: 480, idealWidth: 520)
+        .background(
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+        )
     }
 }
 
-// MARK: - PAGE 5–9: Rhyme Intelligence Engine
+// MARK: - Rhyme Color Palette (Engine-Level)
+
+enum RhymeColorPalette {
+    static let colors: [UIColor] = [
+        UIColor(red: 0.94, green: 0.76, blue: 0.20, alpha: 1),
+        UIColor(red: 0.94, green: 0.45, blue: 0.35, alpha: 1),
+        UIColor(red: 0.48, green: 0.78, blue: 0.64, alpha: 1),
+        UIColor(red: 0.45, green: 0.64, blue: 0.90, alpha: 1),
+        UIColor(red: 0.72, green: 0.56, blue: 0.90, alpha: 1),
+        UIColor(red: 0.90, green: 0.62, blue: 0.78, alpha: 1)
+    ]
+}
+
+// MARK: - PAGE 5–9: Rhyme Intelligence Engine (Scored)
 
 struct RhymeHighlighterEngine {
+    enum RhymeStrength: Double {
+        case perfect = 1.0
+        case near = 0.75
+        case slant = 0.55
+    }
+
+    struct PhoneticSignature {
+        let stressedVowel: String
+        let coda: [String]
+    }
+
     struct RhymeGroup: Identifiable {
         let id: UUID
-        let rhymeTailKey: String
+        let key: String
+        let strength: RhymeStrength
+        let colorIndex: Int
         let words: [RhymeGroupWord]
     }
 
@@ -1174,42 +1199,89 @@ struct RhymeHighlighterEngine {
         let range: Range<String.Index>
     }
 
-    func groups(in text: String) -> [RhymeGroup] {
-        var wordRanges: [(String, Range<String.Index>)] = []
+    static func extractSignature(from phonemes: [String]) -> PhoneticSignature? {
+        guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else {
+            return nil
+        }
+        let vowel = phonemes[idx]
+        let coda = Array(phonemes.dropFirst(idx + 1))
+        return PhoneticSignature(stressedVowel: vowel, coda: coda)
+    }
+
+    static func rhymeScore(_ a: PhoneticSignature, _ b: PhoneticSignature) -> RhymeStrength? {
+        if a.stressedVowel == b.stressedVowel && a.coda == b.coda {
+            return .perfect
+        }
+        if a.stressedVowel == b.stressedVowel {
+            return .near
+        }
+        return nil
+    }
+
+    static func computeGroups(text: String) -> [RhymeGroup] {
         let tokenizer = NLTokenizer(unit: .word)
         tokenizer.string = text
+
+        var tokens: [(String, Range<String.Index>)] = []
         tokenizer.enumerateTokens(in: text.startIndex..<text.endIndex) { range, _ in
-            wordRanges.append((String(text[range]).lowercased(), range))
+            tokens.append((String(text[range]).lowercased(), range))
             return true
         }
 
         let dict = FJCMUDICTStore.shared.phonemesByWord
-        func rhymeTailKey(for phonemes: [String]) -> String? {
-            guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else { return nil }
-            return phonemes[idx...].joined(separator: "-")
-        }
+        var buckets: [String: [(RhymeGroupWord, PhoneticSignature)]] = [:]
 
-        var groupsByTail: [String: [RhymeGroupWord]] = [:]
-
-        for (word, range) in wordRanges {
-            guard let phonemes = dict[word],
-                  let tailKey = rhymeTailKey(for: phonemes)
+        for (word, range) in tokens {
+            guard
+                let phonemes = dict[word],
+                let sig = extractSignature(from: phonemes)
             else { continue }
 
-            groupsByTail[tailKey, default: []].append(
-                RhymeGroupWord(word: word, range: range)
+            buckets[sig.stressedVowel, default: []]
+                .append((RhymeGroupWord(word: word, range: range), sig))
+        }
+
+        var result: [RhymeGroup] = []
+
+        for (key, entries) in buckets where entries.count > 1 {
+            let signatures = entries.map { $0.1 }
+            let base = signatures[0]
+
+            let strength: RhymeStrength = entries.allSatisfy {
+                rhymeScore(base, $0.1) == .perfect
+            } ? .perfect : .near
+
+            let colorIndex = abs(key.hashValue) % RhymeColorPalette.colors.count
+
+            result.append(
+                RhymeGroup(
+                    id: UUID(),
+                    key: key,
+                    strength: strength,
+                    colorIndex: colorIndex,
+                    words: entries.map { $0.0 }
+                )
             )
         }
 
-        return groupsByTail
-            .filter { $0.value.count > 1 }
-            .map { tailKey, words in
-                RhymeGroup(
-                    id: UUID(),
-                    rhymeTailKey: tailKey,
-                    words: words
+        return result
+    }
+
+    static func computeAll(text: String) -> ([RhymeGroup], [Highlight]) {
+        let groups = computeGroups(text: text)
+        var highlights: [Highlight] = []
+        for group in groups {
+            for wordInfo in group.words {
+                highlights.append(
+                    Highlight(
+                        range: wordInfo.range,
+                        colorIndex: group.colorIndex,
+                        strength: group.strength
+                    )
                 )
             }
+        }
+        return (groups, highlights)
     }
 }
 
@@ -1263,7 +1335,10 @@ struct CadenceAnalyzer {
                 syllables += analysis.syllables
                 stresses += analysis.stresses.count
             }
-            rhymeCount = highlights.filter { line.contains($0.word) }.count
+            rhymeCount = highlights.filter { highlight in
+                let rangeText = text[highlight.range]
+                return line.contains(rangeText)
+            }.count
             results.append(CadenceMetrics.LineMetrics(lineIndex: index, syllableCount: syllables, stressCount: stresses, rhymeCount: rhymeCount))
         }
         return CadenceMetrics(lines: results)
@@ -1344,27 +1419,21 @@ struct RhymeHighlightTextView: UIViewRepresentable {
         for highlight in highlights {
             let nsRange = NSRange(highlight.range, in: text)
 
-            let color: UIColor
-            switch highlight.kind {
+            let baseColor = RhymeColorPalette.colors[highlight.colorIndex]
+
+            let opacity: CGFloat
+            switch highlight.strength {
             case .perfect:
-                color = isDarkMode
-                    ? UIColor.systemYellow.withAlphaComponent(0.55)
-                    : UIColor.systemYellow.withAlphaComponent(0.28)
-
+                opacity = isDarkMode ? 0.55 : 0.30
             case .near:
-                color = isDarkMode
-                    ? UIColor.systemOrange.withAlphaComponent(0.45)
-                    : UIColor.systemOrange.withAlphaComponent(0.22)
-
-            case .`internal`:
-                color = isDarkMode
-                    ? UIColor.systemBlue.withAlphaComponent(0.40)
-                    : UIColor.systemBlue.withAlphaComponent(0.20)
+                opacity = isDarkMode ? 0.40 : 0.22
+            case .slant:
+                opacity = isDarkMode ? 0.30 : 0.16
             }
 
             attributed.addAttribute(
                 .backgroundColor,
-                value: color,
+                value: baseColor.withAlphaComponent(opacity),
                 range: nsRange
             )
         }
@@ -1376,12 +1445,9 @@ struct RhymeHighlightTextView: UIViewRepresentable {
 // MARK: - PAGE 11: Syllable Stress Analyzer
 
 struct Highlight: Equatable {
-    enum Kind: Equatable {
-        case perfect, near, `internal`
-    }
-    let word: String
     let range: Range<String.Index>
-    let kind: Kind
+    let colorIndex: Int
+    let strength: RhymeHighlighterEngine.RhymeStrength
 }
 
 // MARK: - PAGE 1.1.1: Release Notes Sheet (Segment 1)
@@ -1673,7 +1739,6 @@ final class KeyboardObserver: ObservableObject {
     }
 }
 
-
 struct ScrollOffsetKey: PreferenceKey {
     static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
@@ -1686,6 +1751,30 @@ struct ScrollOffsetKey: PreferenceKey {
 enum GlassSettings {
     static let darkening: Double = 0.12
     static let gloss: Double = 1.0
+}
+
+@MainActor
+final class RhymeEngineState: ObservableObject {
+    @Published var cachedGroups: [RhymeHighlighterEngine.RhymeGroup] = []
+    @Published var cachedHighlights: [Highlight] = []
+    private var lastTextHash: Int?
+
+    func updateIfNeeded(text: String) {
+        let hash = text.hashValue
+        guard hash != lastTextHash else { return }
+        lastTextHash = hash
+        computeAsync(text: text)
+    }
+
+    private func computeAsync(text: String) {
+        Task.detached(priority: .userInitiated) {
+            let (groups, highlights) = RhymeHighlighterEngine.computeAll(text: text)
+            await MainActor.run {
+                self.cachedGroups = groups
+                self.cachedHighlights = highlights
+            }
+        }
+    }
 }
 
 final class FJCMUDICTStore {
