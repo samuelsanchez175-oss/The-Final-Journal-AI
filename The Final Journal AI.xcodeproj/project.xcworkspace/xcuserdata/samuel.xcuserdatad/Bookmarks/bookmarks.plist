@@ -36,13 +36,13 @@
 				<key>focused</key>
 				<string></string>
 				<key>leading</key>
-				<string>            "cat": ["K", "AE1", "T"],
-            "hat": ["HH", "AE1", "T"],
+				<string>        let suggestions = showSuggestions ? findRhymeSuggestions(for: group) : []
+        
 </string>
 				<key>trailing</key>
-				<string>            "bat": ["B", "AE1", "T"],
-            "rat": ["R", "AE1", "T"],
-            "mat": ["M", "AE1", "T"],
+				<string>        VStack(alignment: .leading, spacing: 8) {
+            // Group header
+            Text("Group \(index + 1)")
 </string>
 			</dict>
 			<key>type</key>
