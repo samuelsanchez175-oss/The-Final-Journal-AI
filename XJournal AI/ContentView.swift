@@ -144,6 +144,20 @@ struct JournalLibraryView: View {
     @State private var selectedScale: String? = nil
     @State private var selectedURL: String? = nil
     
+    // MARK: - Sorting (Page 1.4)
+    enum SortType {
+        case byCreated
+        case byModified
+    }
+    
+    enum SortDirection {
+        case newestFirst  // Most recent at top
+        case oldestFirst  // Oldest at top
+    }
+    
+    @State private var sortType: SortType = .byCreated
+    @State private var sortDirection: SortDirection = .newestFirst
+    
     // MARK: - Filter Caching (Performance Optimization)
     @State private var cachedFilteredItems: [Item]? = nil
     @State private var lastFilterHash: Int = 0
@@ -154,6 +168,11 @@ struct JournalLibraryView: View {
     
     // MARK: - PAGE 1.3: Import from Notes
     @State private var showImportNotesInstructions: Bool = false
+    
+    // MARK: - Selection Mode
+    @State private var isSelectionMode: Bool = false
+    @State private var selectedItems: Set<PersistentIdentifier> = []
+    @State private var showFolderSelection: Bool = false
 
     var body: some View {
         NavigationSplitView {
@@ -163,7 +182,13 @@ struct JournalLibraryView: View {
                 } else {
                     VStack(spacing: 0) {
                         page1FiltersView
-                        JournalListView(items: filteredItems, onDelete: deleteItems, isOnPage1: $isOnPage1)
+                        JournalListView(
+                            items: filteredItems,
+                            onDelete: deleteItems,
+                            isOnPage1: $isOnPage1,
+                            isSelectionMode: $isSelectionMode,
+                            selectedItems: $selectedItems
+                        )
                     }
                 }
             }
@@ -173,7 +198,7 @@ struct JournalLibraryView: View {
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
-            .navigationTitle("Journal")
+            .navigationTitle(isSelectionMode ? "\(selectedItems.count) Selected" : "Journal")
             .toolbar {
                 // MARK: - PAGE 1.1
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -201,27 +226,75 @@ struct JournalLibraryView: View {
                 }
 
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Menu {
-                        Button {
-                            prepareHapticForNewNote()
-                            addItem()
-                        } label: {
-                            Label("New Note", systemImage: "square.and.pencil")
+                    if isSelectionMode {
+                        // Selection mode toolbar
+                        HStack(spacing: 16) {
+                            // Cancel button
+                            Button {
+                                isSelectionMode = false
+                                selectedItems.removeAll()
+                            } label: {
+                                Text("Cancel")
+                            }
+                            
+                            // Delete button (only show if items selected)
+                            if !selectedItems.isEmpty {
+                                Button(role: .destructive) {
+                                    deleteSelectedItems()
+                                } label: {
+                                    Label("Delete", systemImage: "trash")
+                                        .padding(.horizontal, 12)
+                                        .padding(.vertical, 6)
+                                        .background(
+                                            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                                                .fill(Color.red)
+                                        )
+                                        .foregroundStyle(.white)
+                                }
+                                
+                                // Folder button
+                                Button {
+                                    showFolderSelection = true
+                                } label: {
+                                    Label("Folder", systemImage: "folder")
+                                }
+                            }
                         }
+                    } else {
+                        // Normal mode - show menu
+                        Menu {
+                            Button {
+                                prepareHapticForNewNote()
+                                addItem()
+                            } label: {
+                                Label("New Note", systemImage: "square.and.pencil")
+                            }
 
-                        Button {
-                            showImportNotesInstructions = true
-                        } label: {
-                            Label("Import from Notes", systemImage: "note.text")
-                        }
+                            Button {
+                                showImportNotesInstructions = true
+                            } label: {
+                                Label("Import from Notes", systemImage: "note.text")
+                            }
 
-                        Button {
-                            // TODO: Import from Voice Memos
+                            Button {
+                                // Audio recording is available in NoteEditorView
+                                // This creates a new note where user can record
+                                prepareHapticForNewNote()
+                                addItem()
+                            } label: {
+                                Label("New Note (Record Audio)", systemImage: "waveform")
+                            }
+                            
+                            Divider()
+                            
+                            Button {
+                                isSelectionMode = true
+                            } label: {
+                                Label("Select", systemImage: "checkmark.circle")
+                            }
                         } label: {
-                            Label("Import from Voice Memos", systemImage: "waveform")
+                            Image(systemName: "plus")
                         }
-                    } label: {
-                        Image(systemName: "plus")
                     }
                 }
             }
@@ -274,6 +347,21 @@ struct JournalLibraryView: View {
             .presentationDetents([.large])
             .presentationDragIndicator(.visible)
             .interactiveDismissDisabled()
+        }
+        .sheet(isPresented: $showFolderSelection) {
+            FolderSelectionSheetView(
+                selectedItems: selectedItems,
+                items: items,
+                onAssign: { folderName in
+                    assignSelectedItemsToFolder(folderName)
+                    showFolderSelection = false
+                },
+                onCancel: {
+                    showFolderSelection = false
+                }
+            )
+            .presentationDetents([.medium])
+            .presentationDragIndicator(.visible)
         }
         .task {
             let demoNotes: [(title: String, body: String)] = [
@@ -370,9 +458,32 @@ struct JournalLibraryView: View {
             }
         }
     }
+    
+    // MARK: - Selection Mode Functions
+    private func deleteSelectedItems() {
+        withAnimation {
+            let itemsToDelete = items.filter { selectedItems.contains($0.id) }
+            for item in itemsToDelete {
+                modelContext.delete(item)
+            }
+            selectedItems.removeAll()
+            isSelectionMode = false
+        }
+    }
+    
+    private func assignSelectedItemsToFolder(_ folderName: String?) {
+        withAnimation {
+            let itemsToUpdate = items.filter { selectedItems.contains($0.id) }
+            for item in itemsToUpdate {
+                item.folder = folderName
+            }
+            selectedItems.removeAll()
+            isSelectionMode = false
+        }
+    }
 
     private var filteredItems: [Item] {
-        // Compute hash of filter state for change detection (performance optimization)
+        // Compute hash of filter state and sort order for change detection (performance optimization)
         var filterHasher = Hasher()
         filterHasher.combine(searchText)
         if let filter = selectedFilter {
@@ -384,10 +495,12 @@ struct JournalLibraryView: View {
         filterHasher.combine(selectedBPM)
         filterHasher.combine(selectedScale)
         filterHasher.combine(selectedURL)
+        filterHasher.combine(sortType == .byCreated ? 1 : 2) // Include sort type in hash
+        filterHasher.combine(sortDirection == .newestFirst ? 1 : 0) // Include sort direction in hash
         filterHasher.combine(items.count)
         let currentFilterHash = filterHasher.finalize()
         
-        // Return cached result if filter state and items count haven't changed
+        // Return cached result if filter state, sort order, and items count haven't changed
         if currentFilterHash == lastFilterHash,
            items.count == lastItemsCount,
            let cached = cachedFilteredItems {
@@ -477,12 +590,35 @@ struct JournalLibraryView: View {
             filtered = filtered.filter { $0.urlAttachment == url }
         }
         
-        // Cache the filtered results and update hash (performance optimization)
-        cachedFilteredItems = filtered
+        // Sort by selected type and direction
+        let sorted = filtered.sorted { item1, item2 in
+            let date1: Date
+            let date2: Date
+            
+            switch sortType {
+            case .byCreated:
+                date1 = item1.timestamp
+                date2 = item2.timestamp
+            case .byModified:
+                // Use modifiedDate if available, otherwise fall back to timestamp
+                date1 = item1.modifiedDate ?? item1.timestamp
+                date2 = item2.modifiedDate ?? item2.timestamp
+            }
+            
+            switch sortDirection {
+            case .newestFirst:
+                return date1 > date2 // Newest at top
+            case .oldestFirst:
+                return date1 < date2 // Oldest at top
+            }
+        }
+        
+        // Cache the sorted results and update hash (performance optimization)
+        cachedFilteredItems = sorted
         lastFilterHash = currentFilterHash
         lastItemsCount = items.count
         
-        return filtered
+        return sorted
     }
 
     // MARK: - PAGE 1.2 & 1.5: Unified iOS 26 Style Container
@@ -631,13 +767,113 @@ struct JournalLibraryView: View {
     private var page1FiltersView: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
+                // Sort Button (Time Created)
+                sortButton
+                
                 ForEach(Page1Filter.allCases) { filter in
                     filterPill(filter)
                 }
             }
-            .padding(.horizontal, 16)
+            .padding(.leading, 16) // Leading padding for first button
+            .padding(.trailing, 16) // Trailing padding for last button
             .padding(.vertical, 8)
         }
+    }
+    
+    // MARK: - Sort Button (Menu)
+    private var sortButton: some View {
+        Menu {
+            // Sort by Time Created
+            Section("Time Created") {
+                Button {
+                    lightHaptic()
+                    withAnimation {
+                        sortType = .byCreated
+                        sortDirection = .newestFirst
+                        cachedFilteredItems = nil
+                    }
+                } label: {
+                    HStack {
+                        Text("Newest First")
+                        if sortType == .byCreated && sortDirection == .newestFirst {
+                            Image(systemName: "checkmark")
+                        }
+                    }
+                }
+                
+                Button {
+                    lightHaptic()
+                    withAnimation {
+                        sortType = .byCreated
+                        sortDirection = .oldestFirst
+                        cachedFilteredItems = nil
+                    }
+                } label: {
+                    HStack {
+                        Text("Oldest First")
+                        if sortType == .byCreated && sortDirection == .oldestFirst {
+                            Image(systemName: "checkmark")
+                        }
+                    }
+                }
+            }
+            
+            // Sort by Last Modified
+            Section("Last Modified") {
+                Button {
+                    lightHaptic()
+                    withAnimation {
+                        sortType = .byModified
+                        sortDirection = .newestFirst
+                        cachedFilteredItems = nil
+                    }
+                } label: {
+                    HStack {
+                        Text("Newest First")
+                        if sortType == .byModified && sortDirection == .newestFirst {
+                            Image(systemName: "checkmark")
+                        }
+                    }
+                }
+                
+                Button {
+                    lightHaptic()
+                    withAnimation {
+                        sortType = .byModified
+                        sortDirection = .oldestFirst
+                        cachedFilteredItems = nil
+                    }
+                } label: {
+                    HStack {
+                        Text("Oldest First")
+                        if sortType == .byModified && sortDirection == .oldestFirst {
+                            Image(systemName: "checkmark")
+                        }
+                    }
+                }
+            }
+        } label: {
+            HStack(spacing: 6) {
+                Image(systemName: sortDirection == .newestFirst ? "arrow.down.circle.fill" : "arrow.up.circle.fill")
+                    .font(.system(size: 12, weight: .medium))
+                Text(sortType == .byCreated ? "Created" : "Modified")
+                    .font(.callout)
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 8)
+            .foregroundStyle(.primary)
+            .background(
+                Capsule(style: .continuous)
+                    .fill(.ultraThinMaterial)
+                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                    .clipShape(Capsule(style: .continuous))
+                    .overlay(
+                        Capsule(style: .continuous)
+                            .strokeBorder(.primary.opacity(0.18))
+                    )
+            )
+        }
+        .buttonStyle(PlainButtonStyle())
     }
 
     @ViewBuilder
@@ -873,14 +1109,21 @@ struct JournalListView: View {
     let items: [Item]
     let onDelete: (IndexSet) -> Void
     @Binding var isOnPage1: Bool
+    @Binding var isSelectionMode: Bool
+    @Binding var selectedItems: Set<PersistentIdentifier>
 
     var body: some View {
         List {
             ForEach(items) { item in
-                JournalRowView(item: item, isOnPage1: $isOnPage1)
-                    .listRowBackground(Color.clear)
-                    .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
-                    .listRowSeparator(.hidden, edges: .all)
+                JournalRowView(
+                    item: item,
+                    isOnPage1: $isOnPage1,
+                    isSelectionMode: $isSelectionMode,
+                    selectedItems: $selectedItems
+                )
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
+                .listRowSeparator(.hidden, edges: .all)
             }
             .onDelete(perform: onDelete)
         }
@@ -898,18 +1141,63 @@ struct JournalListView: View {
 struct JournalRowView: View {
     let item: Item
     @Binding var isOnPage1: Bool
+    @Binding var isSelectionMode: Bool
+    @Binding var selectedItems: Set<PersistentIdentifier>
     
     // Cache computed properties to avoid recalculation on every view update
     @State private var cachedTitle: String?
     @State private var cachedPreview: String?
     @State private var lastItemId: PersistentIdentifier?
+    
+    private var isSelected: Bool {
+        selectedItems.contains(item.id)
+    }
 
     var body: some View {
-        NavigationLink {
-            NoteEditorView(item: item)
-                .onAppear { isOnPage1 = false }
-                .onDisappear { isOnPage1 = true }
-        } label: {
+        Group {
+            if isSelectionMode {
+                // Selection mode - show checkbox
+                Button {
+                    if isSelected {
+                        selectedItems.remove(item.id)
+                    } else {
+                        selectedItems.insert(item.id)
+                    }
+                } label: {
+                    HStack(spacing: 12) {
+                        // Checkbox
+                        Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
+                            .font(.title3)
+                            .foregroundStyle(isSelected ? .blue : .secondary)
+                        
+                        // Content
+                        VStack(alignment: .leading, spacing: 0) {
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text(noteTitle)
+                                    .font(.headline)
+                                    .lineLimit(1)
+
+                                Text(notePreview)
+                                    .font(.callout)
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(2)
+                                    .truncationMode(.tail)
+                            }
+                            .padding(.vertical, 12)
+
+                            Divider()
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+                .buttonStyle(.plain)
+            } else {
+                // Normal mode - NavigationLink
+                NavigationLink {
+                    NoteEditorView(item: item)
+                        .onAppear { isOnPage1 = false }
+                        .onDisappear { isOnPage1 = true }
+                } label: {
             VStack(alignment: .leading, spacing: 0) {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(noteTitle)
@@ -929,16 +1217,18 @@ struct JournalRowView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.clear)
             .contentShape(Rectangle())
-            .onAppear {
-                // Update cache when view appears if item changed
-                updateCacheIfNeeded()
-            }
-            .onChange(of: item.id) { _, _ in
-                // Update cache when item ID changes
-                updateCacheIfNeeded()
+                }
+                .buttonStyle(.plain)
             }
         }
-        .buttonStyle(.plain)
+        .onAppear {
+            // Update cache when view appears if item changed
+            updateCacheIfNeeded()
+        }
+        .onChange(of: item.id) { _, _ in
+            // Update cache when item ID changes
+            updateCacheIfNeeded()
+        }
     }
     
     /// Update cached values if item has changed
@@ -1103,6 +1393,29 @@ struct ProfilePopoverView: View {
 
             Divider().opacity(0.15)
 
+            VStack(alignment: .leading, spacing: 14) {
+                Text("API Settings")
+                    .font(.headline)
+                
+                profileSecureField(
+                    label: "OpenAI API Key",
+                    text: Binding(
+                        get: { KeychainHelper.shared.getAPIKey() ?? "" },
+                        set: { newValue in
+                            if !newValue.isEmpty {
+                                try? KeychainHelper.shared.saveAPIKey(newValue)
+                            } else {
+                                try? KeychainHelper.shared.deleteAPIKey()
+                            }
+                        }
+                    ),
+                    placeholder: "sk-...",
+                    helperText: "Get your key from platform.openai.com/api-keys"
+                )
+            }
+
+            Divider().opacity(0.15)
+
             VStack(alignment: .leading, spacing: 8) {
                 Text("Your Invites")
                     .font(.headline)
@@ -1186,6 +1499,40 @@ struct ProfilePopoverView: View {
     }
 
     @ViewBuilder
+    private func profileSecureField(
+        label: String,
+        text: Binding<String>,
+        placeholder: String,
+        helperText: String? = nil
+    ) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            SecureField(placeholder, text: text)
+                .textFieldStyle(.plain)
+                .padding(10)
+                .background(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(.ultraThinMaterial)
+                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                .strokeBorder(Color.primary.opacity(0.08), lineWidth: 1)
+                        )
+                )
+
+            if let helperText {
+                Text(helperText)
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+    
+    @ViewBuilder
     private func profileField(
         label: String,
         text: Binding<String>,
@@ -1238,13 +1585,153 @@ struct NoteEditorView: View {
     @State private var isToolbarExpanded: Bool = false
     @State private var scrollOffset: CGFloat = 0
     @StateObject private var rhymeEngineState = RhymeEngineState()
+    
+    // Helper function to count trailing newlines
+    private func countTrailingNewlines(in text: String) -> Int {
+        var count = 0
+        var index = text.endIndex
+        while index > text.startIndex {
+            let previousIndex = text.index(before: index)
+            if text[previousIndex] == "\n" {
+                count += 1
+                index = previousIndex
+            } else {
+                break
+            }
+        }
+        return count
+    }
+    
+    // No longer using trailing newlines - using padding instead to avoid text splitting issues
+    // This function is kept for compatibility but is no longer used
+    private func ensureTrailingNewlines() {
+        // Padding is handled by TextEditor's bottom padding instead
+    }
 
     private var rhymeGroups: [RhymeHighlighterEngine.RhymeGroup] {
         rhymeEngineState.cachedGroups
     }
 
     private var computedHighlights: [Highlight] {
-        rhymeEngineState.cachedHighlights
+        // Use actual text for highlight calculations (no trailing newlines)
+        let displayText = item.body
+        var highlights = rhymeEngineState.cachedHighlights
+        
+        // Add context highlights for last 4 lines when generating suggestions
+        if showContextHighlight {
+            let contextHighlights = calculateContextHighlights(text: displayText)
+            highlights.append(contentsOf: contextHighlights)
+        }
+        
+        // Add AI-generated text highlights (blue color)
+        let aiHighlights = calculateAITextHighlights(text: displayText)
+        highlights.append(contentsOf: aiHighlights)
+        
+        return highlights
+    }
+    
+    // MARK: - AI Text Highlights
+    
+    private func calculateAITextHighlights(text: String) -> [Highlight] {
+        guard !text.isEmpty, !item.aiTextRanges.isEmpty else { return [] }
+        
+        var highlights: [Highlight] = []
+        var validRanges: [String] = [] // Track valid ranges for cleanup
+        
+        for rangeString in item.aiTextRanges {
+            let components = rangeString.split(separator: ":")
+            guard components.count == 2,
+                  let start = Int(components[0]),
+                  let end = Int(components[1]),
+                  start >= 0,
+                  end <= text.count,
+                  start < end else {
+                // Range is invalid, skip it (will be cleaned up)
+                continue
+            }
+            
+            // Create range safely with bounds checking using limitedBy
+            guard let startIndex = text.index(text.startIndex, offsetBy: start, limitedBy: text.endIndex),
+                  let endIndex = text.index(text.startIndex, offsetBy: end, limitedBy: text.endIndex),
+                  startIndex < endIndex else {
+                continue
+            }
+            
+            let range = startIndex..<endIndex
+            
+            // Use blue color (index 3) for AI-generated text
+            highlights.append(Highlight(
+                range: range,
+                colorIndex: 3, // Blue color
+                strength: .perfect,
+                rhymeType: .endRhyme
+            ))
+            validRanges.append(rangeString) // Track valid ranges
+        }
+        
+        // Clean up invalid ranges if any were removed
+        if validRanges.count != item.aiTextRanges.count {
+            item.aiTextRanges = validRanges
+        }
+        
+        return highlights
+    }
+    
+    // MARK: - Context Highlights (Last 4 lines for AI suggestions)
+    
+    private func calculateContextHighlights(text: String) -> [Highlight] {
+        guard !text.isEmpty else { return [] }
+        
+        let lines = text.components(separatedBy: "\n")
+        guard lines.count >= 1 else { return [] }
+        
+        // Get last 4 lines (or fewer if text has fewer lines)
+        let last4Lines = Array(lines.suffix(4))
+        var highlights: [Highlight] = []
+        
+        // Calculate ranges for each line
+        var currentIndex = text.startIndex
+        var lineIndex = 0
+        
+        // Find the starting index of the last 4 lines
+        var linesSkipped = max(0, lines.count - 4)
+        
+        for (index, line) in lines.enumerated() {
+            if index >= linesSkipped {
+                // This is one of the last 4 lines
+                let lineEndIndex = text.index(currentIndex, offsetBy: line.count, limitedBy: text.endIndex) ?? text.endIndex
+                let lineRange = currentIndex..<lineEndIndex
+                
+                // Create highlight for entire line (including newline if not last line)
+                let highlightRange: Range<String.Index>
+                if index < lines.count - 1 {
+                    // Include newline character
+                    let newlineEnd = text.index(lineRange.upperBound, offsetBy: 1, limitedBy: text.endIndex) ?? text.endIndex
+                    highlightRange = lineRange.lowerBound..<newlineEnd
+                } else {
+                    // Last line, no newline
+                    highlightRange = lineRange
+                }
+                
+                // Use blue background highlight (index 3 from RhymeColorPalette) and perfect strength
+                // This is a background highlight, not foreground color
+                highlights.append(Highlight(
+                    range: highlightRange,
+                    colorIndex: 3, // Blue color for background
+                    strength: .perfect,
+                    rhymeType: .endRhyme
+                ))
+            }
+            
+            // Move to next line
+            if index < lines.count - 1 {
+                // Skip to after the newline
+                let nextLineStart = text.index(currentIndex, offsetBy: line.count + 1, limitedBy: text.endIndex) ?? text.endIndex
+                currentIndex = nextLineStart
+            }
+        }
+        
+        return highlights
     }
 
     // MARK: - Metadata Popover States
@@ -1253,6 +1740,14 @@ struct NoteEditorView: View {
     @State private var showScalePopover: Bool = false
     @State private var showURLPopover: Bool = false
     @State private var showFolderPopover: Bool = false
+    @State private var showAudioRecorder: Bool = false
+    @State private var showRapSuggestions: Bool = false
+    @State private var isShowingRecalled: Bool = false
+    @State private var showContextHighlight: Bool = false
+    @StateObject private var rapSuggestionEngine = RapSuggestionEngine()
+    @State private var slamAnimationText: String? = nil
+    @State private var slamAnimationOffset: CGFloat = 0
+    @State private var slamAnimationScale: CGFloat = 1.0
     @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
@@ -1270,12 +1765,10 @@ struct NoteEditorView: View {
 
                 // MARK: - Metadata Pills Section
                 metadataPillsView
-                    .frame(maxWidth: 680)
-                    .padding(.horizontal, 20)
                     .padding(.vertical, 8)
 
                 Divider()
-                    .frame(maxWidth: 680)
+                    .frame(maxWidth: .infinity) // Extend divider to full width
 
                 ScrollView(.vertical, showsIndicators: false) {
                     GeometryReader { geo in
@@ -1292,29 +1785,78 @@ struct NoteEditorView: View {
                                 .frame(maxWidth: 680)
                                 .padding(.horizontal, 20)
                                 .padding(.top, 8)
-                                .padding(.bottom, 24)
+                                .padding(.bottom, 400) // Large bottom padding to create writing space without newlines
                                 .frame(minHeight: 400, alignment: .top)
                                 .scrollContentBackground(.hidden)
                                 .textEditorStyle(.plain)
                                 .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
                                 .fixedSize(horizontal: false, vertical: true) // Allow vertical expansion, constrain horizontal
+                                .allowsHitTesting(!isRhymeOverlayVisible) // Disable interaction when overlay is visible
+                                .scrollDismissesKeyboard(.never) // Prevent keyboard from dismissing on scroll
+                                .onAppear {
+                                    // Auto-focus TextEditor for new notes (empty body)
+                                    if item.body.isEmpty {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                            isEditorFocused = true
+                                        }
+                                    }
+                                }
+
+                            // AI text is now only shown in the main overlay when eye toggle is on
+                            // When eye toggle is off, AI text is just normal text in the TextEditor
 
                             // Always keep view in hierarchy - optimize by using opacity instead of conditional rendering
                             // This prevents view recreation on toggle, allowing cache reuse
+                            // When eye toggle is on, show ALL text with highlights (not just highlights)
                             RhymeHighlightTextView(
                                 text: item.body,
                                 highlights: computedHighlights,
-                                isVisible: isRhymeOverlayVisible
+                                isVisible: isRhymeOverlayVisible,
+                                showFullText: true, // Always show full text, not just highlights
+                                horizontalPadding: 20, // Match TextEditor padding
+                                isEditable: isRhymeOverlayVisible, // Make overlay editable when visible
+                                onTextChange: { newText in
+                                    // Sync changes from overlay back to item.body
+                                    item.body = newText
+                                }
                             )
-                            .frame(maxWidth: 683) // 3 points wider to better match TextEditor width
-                            .padding(.horizontal, 20) // Match TextEditor padding
+                            .frame(maxWidth: .infinity, alignment: .leading) // Align to left edge, full width
+                            .padding(.leading, 20) // Left padding only
+                            .padding(.trailing, 20) // Right padding
                             .padding(.top, 8)
-                            .padding(.bottom, 24)
+                            .padding(.bottom, 400) // Match TextEditor bottom padding for consistency
                             .opacity(isRhymeOverlayVisible ? 1.0 : 0.0)
                             .animation(.easeInOut(duration: 0.18), value: isRhymeOverlayVisible)
-                            .allowsHitTesting(false)
+                            .allowsHitTesting(isRhymeOverlayVisible) // Allow interaction when overlay is visible
                             .fixedSize(horizontal: false, vertical: true) // Allow vertical expansion, constrain horizontal
+                            .id("\(item.id)_\(isRhymeOverlayVisible)") // Force recreation when toggle changes to fix scrolling
+                            
+                            // Slam animation overlay (iMessage-style)
+                            if let slamText = slamAnimationText {
+                                Text(slamText)
+                                    .font(.body)
+                                    .foregroundStyle(.blue)
+                                    .padding(.horizontal, 20)
+                                    .padding(.top, 8)
+                                    .frame(maxWidth: 680, alignment: .leading)
+                                    .offset(y: slamAnimationOffset)
+                                    .scaleEffect(slamAnimationScale)
+                                    .opacity(slamAnimationScale < 1.0 ? 0.6 : 1.0)
+                                    .allowsHitTesting(false)
+                            }
                         }
+                        
+                        // MARK: - Audio Player (if audio exists)
+                        if let audioPath = item.audioPath, !audioPath.isEmpty {
+                            AudioPlayerView(audioPath: audioPath)
+                                .padding(.top, 16)
+                                .padding(.horizontal, 20)
+                        }
+                        
+                        // MARK: - Timestamp Metadata Bar (Bottom of Note)
+                        noteTimestampBar
+                            .padding(.top, 24)
+                            .padding(.bottom, keyboardObserver.height > 0 ? 80 : 100) // Space above toolbar
                     }
                     .frame(maxWidth: 680) // Constrain to max width
                     .frame(maxWidth: .infinity) // But allow it to center
@@ -1332,11 +1874,36 @@ struct NoteEditorView: View {
                 showDiagnostics: $showRhymeDiagnostics,
                 rhymeGroups: rhymeGroups,
                 currentText: item.body,
+                highlights: computedHighlights,
                 isEditorFocused: $isEditorFocused,
-                keyboardHeight: $keyboardObserver.height
+                keyboardHeight: $keyboardObserver.height,
+                showAudioRecorder: $showAudioRecorder,
+                showRapSuggestions: $showRapSuggestions,
+                rapSuggestionEngine: rapSuggestionEngine,
+                isShowingRecalled: $isShowingRecalled,
+                showContextHighlight: $showContextHighlight
             )
             .frame(maxWidth: 680)
+            .frame(maxWidth: .infinity) // Center the toolbar within safe area
             .padding(.bottom, keyboardObserver.height > 0 ? 6 : 14)
+        }
+        .sheet(isPresented: $showRapSuggestions) {
+            RapSuggestionView(
+                suggestions: isShowingRecalled ? rapSuggestionEngine.previousSuggestions : rapSuggestionEngine.suggestions,
+                isLoading: rapSuggestionEngine.isLoading && !isShowingRecalled,
+                loadingStep: isShowingRecalled ? nil : rapSuggestionEngine.loadingStep,
+                error: isShowingRecalled ? nil : rapSuggestionEngine.error,
+                onSelect: { suggestion in
+                    insertRapSuggestion(suggestion, isAIGenerated: true)
+                },
+                onCopy: { suggestion in
+                    copyRapSuggestionWithSlam(suggestion)
+                },
+                onDismiss: {
+                    showRapSuggestions = false
+                    isShowingRecalled = false
+                }
+            )
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -1355,9 +1922,9 @@ struct NoteEditorView: View {
                     }
 
                     Button {
-                        // TODO: Import from Voice Memos
+                        openAudioRecorder()
                     } label: {
-                        Label("Import from Voice Memos", systemImage: "waveform")
+                        Label("Record Audio", systemImage: "waveform")
                     }
                 } label: {
                     Image(systemName: "plus")
@@ -1365,14 +1932,29 @@ struct NoteEditorView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showAudioRecorder) {
+            AudioRecorderView(item: item)
+        }
         .onAppear {
+            // Ensure text has 4 trailing newlines for writing space
+            ensureTrailingNewlines()
             // Immediate analysis on appear (no debounce needed - user isn't typing yet)
             rhymeEngineState.updateIfNeeded(text: item.body)
         }
         .onChange(of: item.body) { oldValue, newValue in
+            // Track modification date when body changes
+            if oldValue != newValue && !newValue.isEmpty {
+                item.modifiedDate = Date()
+            }
             // Debounced analysis - waits 400ms after typing stops before analyzing
             // This reduces computation during active typing and improves performance
             rhymeEngineState.updateIfNeeded(text: newValue)
+        }
+        .onChange(of: item.title) { oldValue, newValue in
+            // Track modification date when title changes
+            if oldValue != newValue && !newValue.isEmpty {
+                item.modifiedDate = Date()
+            }
         }
         // MARK: - Metadata Popovers (Segment 2)
         .sheet(isPresented: $showBPMPopover) {
@@ -1395,6 +1977,61 @@ struct NoteEditorView: View {
             FolderPopoverView(folder: $item.folder)
         }
     }
+    
+    // MARK: - Note Timestamp Metadata Bar
+    private var noteTimestampBar: some View {
+        VStack(spacing: 10) {
+            // Created Date
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Created")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                
+                Text(formatTimestamp(item.timestamp))
+                    .font(.caption)
+                    .foregroundStyle(.primary)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
+            // Modified Date (if exists)
+            if let modifiedDate = item.modifiedDate {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("modified")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                    
+                    Text(formatTimestamp(modifiedDate))
+                        .font(.caption)
+                        .foregroundStyle(.primary)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .frame(maxWidth: 680)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .strokeBorder(.primary.opacity(0.08), lineWidth: 1)
+                )
+        )
+        .frame(maxWidth: .infinity) // Center the bar
+    }
+    
+    // MARK: - Timestamp Formatting Helper
+    private func formatTimestamp(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "M - d - yyyy h:mm a"
+        formatter.amSymbol = "am"
+        formatter.pmSymbol = "pm"
+        return formatter.string(from: date)
+            .lowercased()
+    }
 
     // MARK: - Metadata Pills View
     private var metadataPillsView: some View {
@@ -1415,8 +2052,10 @@ struct NoteEditorView: View {
                 // Folder Pill Menu
                 folderPillMenu
             }
-            .padding(.horizontal, 4)
+            .padding(.leading, 16) // Leading padding for first pill
+            .padding(.trailing, 16) // Trailing padding for last pill
         }
+        .frame(maxWidth: .infinity) // Extend to full width
     }
     
     // MARK: - BPM Pill Menu
@@ -1657,6 +2296,90 @@ struct NoteEditorView: View {
 
         dismiss()
     }
+    
+    // MARK: - Voice Memos Integration / Audio Recording
+    private func openAudioRecorder() {
+        lightHaptic()
+        // Note: Audio recording will be handled in NoteEditorView via binding
+    }
+    
+    // MARK: - Rap Suggestions
+    private func insertRapSuggestion(_ suggestion: RapSuggestion, isAIGenerated: Bool = false) {
+        // Set up slam animation
+        slamAnimationText = suggestion.text
+        slamAnimationOffset = -200 // Start above
+        slamAnimationScale = 0.8
+        
+        let originalLength = item.body.count
+        let prefix = item.body.isEmpty ? "" : "\n"
+        
+        // Animate slam effect
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+            slamAnimationOffset = 0
+            slamAnimationScale = 1.0
+        }
+        
+        // Insert suggestion at the end of the body, with a newline if body is not empty
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            if self.item.body.isEmpty {
+                self.item.body = suggestion.text
+            } else {
+                self.item.body += prefix + suggestion.text
+            }
+            
+            // Track AI-generated text range
+            if isAIGenerated {
+                let startIndex = originalLength + (self.item.body.isEmpty ? 0 : prefix.count)
+                let endIndex = self.item.body.count
+                let rangeString = "\(startIndex):\(endIndex)"
+                self.item.aiTextRanges.append(rangeString)
+            }
+            
+            // Update modification date
+            self.item.modifiedDate = Date()
+            
+            // Re-enable focus and ensure cursor is at the end
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                self.isEditorFocused = true
+            }
+        }
+        
+        // Clear animation after completion
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            withAnimation(.easeOut(duration: 0.2)) {
+                self.slamAnimationText = nil
+                self.slamAnimationOffset = 0
+                self.slamAnimationScale = 1.0
+            }
+        }
+    }
+    
+    private func copyRapSuggestionWithSlam(_ suggestion: RapSuggestion) {
+        // Set up slam animation
+        slamAnimationText = suggestion.text
+        slamAnimationOffset = -200 // Start above
+        slamAnimationScale = 0.8
+        
+        // Animate slam effect
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+            slamAnimationOffset = 0
+            slamAnimationScale = 1.0
+        }
+        
+        // Insert the text after animation starts
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            insertRapSuggestion(suggestion, isAIGenerated: true)
+        }
+        
+        // Clear animation after completion
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            withAnimation(.easeOut(duration: 0.2)) {
+                slamAnimationText = nil
+                slamAnimationOffset = 0
+                slamAnimationScale = 1.0
+            }
+        }
+    }
 }
 
 struct DynamicIslandToolbarView: View {
@@ -1665,10 +2388,23 @@ struct DynamicIslandToolbarView: View {
     @Binding var showDiagnostics: Bool
     let rhymeGroups: [RhymeHighlighterEngine.RhymeGroup]
     let currentText: String
+    let highlights: [Highlight]
     @FocusState.Binding var isEditorFocused: Bool
     @Environment(\.colorScheme) private var colorScheme
     @Binding var keyboardHeight: CGFloat
     @State private var showRhymeGroupsPopover: Bool = false
+    @Binding var showAudioRecorder: Bool
+    @Binding var showRapSuggestions: Bool
+    @ObservedObject var rapSuggestionEngine: RapSuggestionEngine
+    @Binding var isShowingRecalled: Bool
+    @Binding var showContextHighlight: Bool
+    @State private var rotationAngle: Double = 0
+    
+    // MARK: - Audio Recording
+    private func openAudioRecorder() {
+        lightHaptic()
+        showAudioRecorder = true
+    }
 
     var body: some View {
         VStack(spacing: 0) {
@@ -1702,7 +2438,11 @@ struct DynamicIslandToolbarView: View {
                         Menu {
                             Button("Attach File") { }
                             Button("Import from Notes") { }
-                            Button("Import from Voice Memos") { }
+                            Button {
+                                openAudioRecorder()
+                            } label: {
+                                Label("Record Audio", systemImage: "waveform")
+                            }
                         } label: {
                             Image(systemName: "paperclip")
                                 .font(.headline)
@@ -1710,14 +2450,79 @@ struct DynamicIslandToolbarView: View {
                         }
 
                         Menu {
+                            Button {
+                                lightHaptic()
+                                isEditorFocused = false
+                                isShowingRecalled = false // Clear recall flag when generating new suggestions
+                                // Show context highlight for last 4 lines
+                                showContextHighlight = true
+                                Task {
+                                    await rapSuggestionEngine.generateSuggestions(
+                                        text: currentText,
+                                        highlights: highlights
+                                    )
+                                    // Hide context highlight when generation completes
+                                    showContextHighlight = false
+                                    showRapSuggestions = true
+                                }
+                            } label: {
+                                Label("Suggest Next Lines", systemImage: "sparkles")
+                            }
+                            
+                            Button {
+                                lightHaptic()
+                                isEditorFocused = false
+                                // Set flag to show previous suggestions (no AI call)
+                                isShowingRecalled = true
+                                showRapSuggestions = true
+                            } label: {
+                                Label("Recall Suggested Lines", systemImage: "clock.arrow.circlepath")
+                            }
+                            .disabled(rapSuggestionEngine.previousSuggestions.isEmpty)
+                            
                             Button("Rewrite Line") { }
                             Button("Suggest Rhymes") { }
                             Button("Improve Flow") { }
                         } label: {
-                            Image(systemName: "sparkles")
-                                .font(.headline)
-                                .frame(width: 44, height: 44)
-                                .foregroundStyle(.blue)
+                            ZStack {
+                                // Circular progress indicator (outer ring)
+                                if rapSuggestionEngine.isLoading {
+                                    Circle()
+                                        .trim(from: 0, to: 0.75)
+                                        .stroke(
+                                            style: StrokeStyle(
+                                                lineWidth: 3,
+                                                lineCap: .round,
+                                                lineJoin: .round
+                                            )
+                                        )
+                                        .foregroundStyle(.blue)
+                                        .frame(width: 44, height: 44)
+                                        .rotationEffect(.degrees(rotationAngle))
+                                }
+                                
+                                // Sparkles icon (centered)
+                                Image(systemName: "sparkles")
+                                    .font(.headline)
+                                    .frame(width: 44, height: 44)
+                                    .foregroundStyle(.blue)
+                            }
+                        }
+                        .disabled(rapSuggestionEngine.isLoading)
+                        .onChange(of: rapSuggestionEngine.isLoading) { oldValue, newValue in
+                            if newValue {
+                                // Start rotating animation
+                                rotationAngle = 0
+                                withAnimation(
+                                    Animation.linear(duration: 1.0)
+                                        .repeatForever(autoreverses: false)
+                                ) {
+                                    rotationAngle = 360
+                                }
+                            } else {
+                                // Stop animation and reset
+                                rotationAngle = 0
+                            }
                         }
 
                         Button {
@@ -1783,7 +2588,7 @@ struct DynamicIslandToolbarView: View {
     }
 }
 
-private func lightHaptic() {
+func lightHaptic() {
     UIImpactFeedbackGenerator(style: .light).impactOccurred()
 }
 
@@ -1994,15 +2799,15 @@ struct RhymeGroupListView: View {
                 continue
             }
             
-            // Stop if we have enough perfect rhymes
-            if perfectRhymes.count >= 3 {
+            // Stop if we have enough perfect rhymes (7 for better suggestions)
+            if perfectRhymes.count >= 7 {
                 break
             }
         }
         
-        // Return perfect rhymes first, then fill with near rhymes up to 3 total
+        // Return perfect rhymes first, then fill with near rhymes up to 7 total
         let allSuggestions = perfectRhymes + nearRhymes
-        return Array(allSuggestions.prefix(3)).sorted()
+        return Array(allSuggestions.prefix(7)).sorted() // Increased from 3 to 7 suggestions
     }
 }
 
@@ -2501,35 +3306,52 @@ struct RhymeHighlightTextView: UIViewRepresentable {
     let text: String
     let highlights: [Highlight]
     let isVisible: Bool // Track visibility to skip unnecessary updates when hidden
+    var showFullText: Bool = true // If true, show all text; if false, only show highlighted portions
+    var horizontalPadding: CGFloat = 20 // Padding to match TextEditor
+    var isEditable: Bool = false // Whether the text view is editable
+    var onTextChange: ((String) -> Void)? = nil // Callback for text changes
 
     func makeCoordinator() -> Coordinator {
-        Coordinator()
+        let coordinator = Coordinator()
+        coordinator.onTextChange = onTextChange
+        return coordinator
     }
 
     func makeUIView(context: Context) -> UITextView {
         let textView = UITextView()
 
-        textView.isEditable = false
-        textView.isSelectable = false
-        textView.isScrollEnabled = false
-        textView.isUserInteractionEnabled = false
+        textView.isEditable = isEditable
+        textView.isSelectable = isEditable
+        textView.isScrollEnabled = false // Never scroll - parent ScrollView handles scrolling
+        textView.isUserInteractionEnabled = isEditable // Only allow interaction when editable
 
+        // Match TextEditor's internal padding exactly
+        // TextEditor has .padding(.horizontal, 20), so we need to account for that
+        // The textContainerInset should be 0 since we're applying padding at the SwiftUI level
         textView.textContainerInset = UIEdgeInsets(
             top: 8,
-            left: 20, // Match TextEditor padding
-            bottom: 24,
-            right: 20 // Match TextEditor padding
+            left: 0, // No inset - padding is handled at SwiftUI level
+            bottom: 200, // Increased bottom padding to match TextEditor and provide more writing space
+            right: 0 // No inset - padding is handled at SwiftUI level
         )
         textView.textContainer.lineFragmentPadding = 0
+        
+        // Ensure text aligns to left edge (not centered)
+        textView.textAlignment = .left
         
         // CRITICAL: Enable text wrapping to prevent horizontal overflow
         textView.textContainer.widthTracksTextView = true
         textView.textContainer.lineBreakMode = .byWordWrapping
         textView.textContainer.maximumNumberOfLines = 0 // Unlimited lines
+        // Container size is automatically managed when widthTracksTextView is true
         
         // Ensure text wraps within bounds - prevent horizontal scrolling
         textView.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         textView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        
+        // Allow vertical expansion to show all content
+        textView.setContentCompressionResistancePriority(.required, for: .vertical)
+        textView.setContentHuggingPriority(.defaultLow, for: .vertical)
 
         textView.font = UIFont.preferredFont(forTextStyle: .body)
         textView.adjustsFontForContentSizeCategory = true
@@ -2537,12 +3359,25 @@ struct RhymeHighlightTextView: UIViewRepresentable {
 
         textView.backgroundColor = .clear
         textView.tintColor = .clear
+        
+        // Set delegate for text changes when editable
+        if isEditable {
+            textView.delegate = context.coordinator
+        }
 
         return textView
     }
 
     func updateUIView(_ uiView: UITextView, context: Context) {
         let coordinator = context.coordinator
+        let isDarkMode = uiView.traitCollection.userInterfaceStyle == .dark
+        
+        // Update delegate and interaction settings
+        uiView.delegate = isEditable ? coordinator : nil
+        uiView.isEditable = isEditable
+        uiView.isSelectable = isEditable
+        uiView.isUserInteractionEnabled = isEditable
+        coordinator.onTextChange = onTextChange
         
         // Early exit optimization: Skip all work if view is hidden
         // This prevents unnecessary hash calculations and attributed string work
@@ -2558,8 +3393,6 @@ struct RhymeHighlightTextView: UIViewRepresentable {
         
         // Mark as visible for next comparison
         coordinator.lastVisible = true
-        
-        let isDarkMode = uiView.traitCollection.userInterfaceStyle == .dark
         
         // Optimized change detection - use hash-based comparison for efficiency
         let textHash = text.hashValue
@@ -2597,37 +3430,134 @@ struct RhymeHighlightTextView: UIViewRepresentable {
         }
         
         // Build attributed string
+        // For AI text overlay, use clear color so TextEditor text shows through
+        // Only AI text ranges will have blue foreground color
+        // Context highlights (last 4 lines) use background color
+        let isAITextOverlay = highlights.contains { $0.colorIndex == 3 && !showFullText }
         let attributed = NSMutableAttributedString(
             string: text,
             attributes: [
                 .font: UIFont.preferredFont(forTextStyle: .body),
-                .foregroundColor: UIColor.label
+                .foregroundColor: isAITextOverlay ? UIColor.clear : UIColor.label
             ]
         )
 
         for highlight in highlights {
+            // Validate range is valid before converting to NSRange to prevent crashes
+            guard highlight.range.lowerBound >= text.startIndex,
+                  highlight.range.upperBound <= text.endIndex,
+                  highlight.range.lowerBound <= highlight.range.upperBound else {
+                continue // Skip invalid ranges
+            }
+            
             let nsRange = NSRange(highlight.range, in: text)
-
-            let baseColor = RhymeColorPalette.colors[highlight.colorIndex]
-
-            let opacity: CGFloat
-            switch highlight.strength {
-            case .perfect:
-                opacity = isDarkMode ? 0.55 : 0.30
-            case .near:
-                opacity = isDarkMode ? 0.40 : 0.22
-            case .slant:
-                opacity = isDarkMode ? 0.30 : 0.16
+            
+            // Validate NSRange is valid (not out of bounds)
+            guard nsRange.location != NSNotFound,
+                  nsRange.location + nsRange.length <= (text as NSString).length else {
+                continue // Skip invalid NSRange
             }
 
-            attributed.addAttribute(
-                .backgroundColor,
-                value: baseColor.withAlphaComponent(opacity),
-                range: nsRange
-            )
+            // Special handling for colorIndex 3 (blue):
+            // - If showFullText is true, it's a context highlight (background)
+            // - If showFullText is false, it's AI text (foreground)
+            if highlight.colorIndex == 3 {
+                if showFullText {
+                    // Context highlight (last 4 lines): use blue background color with 40% opacity
+                    let blueColor = RhymeColorPalette.colors[3]
+                    let opacity: CGFloat = 0.4 // Fixed 40% opacity as requested
+                    attributed.addAttribute(
+                        .backgroundColor,
+                        value: blueColor.withAlphaComponent(opacity),
+                        range: nsRange
+                    )
+                } else {
+                    // AI-generated text: use blue foreground color
+                    let blueColor = UIColor.systemBlue
+                    attributed.addAttribute(
+                        .foregroundColor,
+                        value: blueColor,
+                        range: nsRange
+                    )
+                }
+            } else {
+                // Regular rhyme highlighting: use background color
+                let baseColor = RhymeColorPalette.colors[highlight.colorIndex]
+
+                let opacity: CGFloat
+                switch highlight.strength {
+                case .perfect:
+                    opacity = isDarkMode ? 0.55 : 0.30
+                case .near:
+                    opacity = isDarkMode ? 0.40 : 0.22
+                case .slant:
+                    opacity = isDarkMode ? 0.30 : 0.16
+                }
+
+                attributed.addAttribute(
+                    .backgroundColor,
+                    value: baseColor.withAlphaComponent(opacity),
+                    range: nsRange
+                )
+            }
         }
 
-        uiView.attributedText = attributed
+        // Only update attributed text if text actually changed (prevents infinite loop when editable)
+        // When editable, text changes come from user input via delegate, not from this update
+        if !isEditable || uiView.text != text {
+            uiView.attributedText = attributed
+        } else if isEditable {
+            // When editable, preserve user's cursor position and only update highlights
+            // Don't replace the entire attributed string as it resets cursor
+            let currentText = uiView.text
+            if currentText == text {
+                // Text matches, just update highlights without replacing attributed string
+                // This preserves cursor position
+                return
+            }
+        }
+        
+        // Force text layout to ensure all content is rendered
+        uiView.layoutIfNeeded()
+        
+        // Use async dispatch to ensure layout happens after the current update cycle
+        // This fixes scrolling issues when overlay is first shown - the ScrollView needs
+        // to see the correct size immediately, but layout might not be complete yet
+        DispatchQueue.main.async {
+            guard let layoutManager = uiView.textContainer.layoutManager else { return }
+            
+            layoutManager.ensureLayout(for: uiView.textContainer)
+            
+            // Calculate content height and ensure text container can display all content
+            let usedRect = layoutManager.usedRect(for: uiView.textContainer)
+            let contentHeight = usedRect.height + uiView.textContainerInset.top + uiView.textContainerInset.bottom + 400 // Match TextEditor bottom padding
+            
+            // Always update size to ensure it's correct - don't check if it's already correct
+            // This fixes scrolling issues where size calculation happens before layout is complete
+            if contentHeight > 0 {
+                let currentSize = uiView.textContainer.size
+                let requiredHeight = max(contentHeight, usedRect.height + uiView.textContainerInset.top + uiView.textContainerInset.bottom + 400)
+                
+                // Always update size to ensure ScrollView sees the correct content height
+                uiView.textContainer.size = CGSize(
+                    width: currentSize.width > 0 ? currentSize.width : (uiView.bounds.width > 0 ? uiView.bounds.width : 680),
+                    height: requiredHeight
+                )
+                
+                // Force layout again after updating size
+                layoutManager.ensureLayout(for: uiView.textContainer)
+                
+                // Invalidate intrinsic content size to ensure UITextView expands to show all content
+                uiView.invalidateIntrinsicContentSize()
+                
+                // Force parent view hierarchy to update layout so ScrollView recognizes the new size
+                uiView.superview?.setNeedsLayout()
+                uiView.superview?.layoutIfNeeded()
+            }
+        }
+        
+        // Also invalidate immediately for synchronous updates
+        uiView.invalidateIntrinsicContentSize()
         
         // Cache the attributed string and update coordinator cache
         coordinator.cachedAttributedString = attributed.copy() as? NSAttributedString
@@ -2636,12 +3566,17 @@ struct RhymeHighlightTextView: UIViewRepresentable {
         coordinator.lastDarkMode = isDarkMode
     }
     
-    class Coordinator {
+    class Coordinator: NSObject, UITextViewDelegate {
         var lastTextHash: Int = 0
         var lastHighlightsHash: Int = 0
         var lastDarkMode: Bool = false
         var lastVisible: Bool = false // Track visibility state
         var cachedAttributedString: NSAttributedString? = nil
+        var onTextChange: ((String) -> Void)? = nil
+        
+        func textViewDidChange(_ textView: UITextView) {
+            onTextChange?(textView.text)
+        }
     }
 }
 
@@ -3032,7 +3967,9 @@ final class RhymeEngineState: ObservableObject {
             object: nil,
             queue: .main
         ) { [weak self] _ in
-            self?.clearCaches()
+            Task { @MainActor in
+                self?.clearCaches()
+            }
         }
     }
     
@@ -4115,5 +5052,503 @@ struct ImportNotesInstructionsView: View {
         
         // Callback to navigate to the new note
         onNoteCreated(newItem)
+    }
+}
+
+// MARK: - Audio Player Component (iOS 26 Style)
+struct AudioPlayerView: View {
+    let audioPath: String
+    @StateObject private var audioPlayer = AudioPlayerManager()
+    @State private var isPlaying = false
+    @State private var currentTime: TimeInterval = 0
+    @State private var duration: TimeInterval = 0
+    @State private var isDragging = false
+    @State private var dragValue: Double = 0
+    @Environment(\.colorScheme) private var colorScheme
+    
+    var body: some View {
+        VStack(spacing: 12) {
+            // Waveform and Playback Controls
+            HStack(spacing: 12) {
+                // Play/Pause Button
+                Button {
+                    if isPlaying {
+                        audioPlayer.pause()
+                    } else {
+                        audioPlayer.play()
+                    }
+                } label: {
+                    Image(systemName: isPlaying ? "pause.circle.fill" : "play.circle.fill")
+                        .font(.system(size: 44))
+                        .foregroundStyle(.blue)
+                }
+                
+                // Waveform and Time Display
+                VStack(alignment: .leading, spacing: 6) {
+                    // Waveform visualization (iOS 26 style - static bars for now)
+                    HStack(spacing: 2) {
+                        ForEach(0..<40, id: \.self) { index in
+                            RoundedRectangle(cornerRadius: 1)
+                                .fill(.blue.opacity(0.6))
+                                .frame(width: 3, height: CGFloat(8 + (index % 3) * 4))
+                        }
+                    }
+                    .frame(height: 24)
+                    
+                    // Time Display
+                    HStack {
+                        Text(formatTime(currentTime))
+                            .font(.caption.monospacedDigit())
+                            .foregroundStyle(.secondary)
+                        
+                        Spacer()
+                        
+                        Text(formatTime(duration))
+                            .font(.caption.monospacedDigit())
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+            
+            // Progress Slider
+            Slider(value: Binding(
+                get: { isDragging ? dragValue : (duration > 0 ? currentTime / duration : 0) },
+                set: { newValue in
+                    dragValue = newValue
+                    isDragging = true
+                }
+            ), in: 0...1) { editing in
+                if !editing {
+                    let newTime = dragValue * duration
+                    audioPlayer.seek(to: newTime)
+                    isDragging = false
+                }
+            }
+            .tint(.blue)
+        }
+        .padding(16)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .strokeBorder(.primary.opacity(0.08), lineWidth: 1)
+                )
+        )
+        .onAppear {
+            audioPlayer.loadAudio(from: audioPath)
+        }
+        .onReceive(audioPlayer.$isPlaying) { playing in
+            isPlaying = playing
+        }
+        .onReceive(audioPlayer.$currentTime) { time in
+            if !isDragging {
+                currentTime = time
+            }
+        }
+        .onReceive(audioPlayer.$duration) { dur in
+            duration = dur
+        }
+    }
+    
+    private func formatTime(_ time: TimeInterval) -> String {
+        let minutes = Int(time) / 60
+        let seconds = Int(time) % 60
+        return String(format: "%d:%02d", minutes, seconds)
+    }
+}
+
+// MARK: - Audio Player Manager
+class AudioPlayerManager: ObservableObject {
+    private var player: AVPlayer?
+    private var timeObserver: Any?
+    @Published var isPlaying = false
+    @Published var currentTime: TimeInterval = 0
+    @Published var duration: TimeInterval = 0
+    
+    func loadAudio(from path: String) {
+        let url = URL(fileURLWithPath: path)
+        let playerItem = AVPlayerItem(url: url)
+        player = AVPlayer(playerItem: playerItem)
+        
+        // Observe duration
+        playerItem.asset.loadValuesAsynchronously(forKeys: ["duration"]) {
+            DispatchQueue.main.async {
+                self.duration = CMTimeGetSeconds(playerItem.asset.duration)
+            }
+        }
+        
+        // Observe time updates
+        let interval = CMTime(seconds: 0.1, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+        timeObserver = player?.addPeriodicTimeObserver(forInterval: interval, queue: .main) { [weak self] time in
+            guard let self = self else { return }
+            self.currentTime = CMTimeGetSeconds(time)
+        }
+        
+        // Observe playback status
+        NotificationCenter.default.addObserver(
+            forName: .AVPlayerItemDidPlayToEndTime,
+            object: playerItem,
+            queue: .main
+        ) { [weak self] _ in
+            self?.isPlaying = false
+            self?.currentTime = 0
+        }
+    }
+    
+    func play() {
+        player?.play()
+        isPlaying = true
+    }
+    
+    func pause() {
+        player?.pause()
+        isPlaying = false
+    }
+    
+    func seek(to time: TimeInterval) {
+        let cmTime = CMTime(seconds: time, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+        player?.seek(to: cmTime)
+        currentTime = time
+    }
+    
+    deinit {
+        if let observer = timeObserver {
+            player?.removeTimeObserver(observer)
+        }
+        NotificationCenter.default.removeObserver(self)
+    }
+}
+
+// MARK: - Audio Recorder View (iOS 26 Style)
+struct AudioRecorderView: View {
+    @Bindable var item: Item
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) private var colorScheme
+    @StateObject private var recorder = AudioRecorderManager()
+    @State private var recordingTime: TimeInterval = 0
+    @State private var timer: Timer?
+    
+    var body: some View {
+        NavigationView {
+            recorderContentView
+                .padding(24)
+                .background(backgroundView)
+                .navigationTitle("Record Audio")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button("Done") {
+                            dismiss()
+                        }
+                    }
+                }
+        }
+        .onAppear {
+            requestMicrophonePermission()
+        }
+        .onDisappear {
+            cleanup()
+        }
+    }
+    
+    private var recorderContentView: some View {
+        VStack(spacing: 24) {
+            Spacer()
+            
+            recordButton
+            
+            timeDisplay
+            
+            if recorder.isRecording {
+                waveformView
+            }
+            
+            Spacer()
+            
+            infoText
+        }
+    }
+    
+    private var recordButton: some View {
+        Button {
+            if recorder.isRecording {
+                stopRecording()
+            } else {
+                startRecording()
+            }
+        } label: {
+            ZStack {
+                Circle()
+                    .fill(recorder.isRecording ? Color.red : Color.blue)
+                    .frame(width: 100, height: 100)
+                
+                Image(systemName: recorder.isRecording ? "stop.fill" : "mic.fill")
+                    .font(.system(size: 44))
+                    .foregroundStyle(.white)
+            }
+        }
+        .buttonStyle(.plain)
+    }
+    
+    @ViewBuilder
+    private var timeDisplay: some View {
+        if recorder.isRecording {
+            Text(formatTime(recordingTime))
+                .font(.title.monospacedDigit())
+                .foregroundStyle(.primary)
+        } else {
+            Text("Tap to Record")
+                .font(.title3)
+                .foregroundStyle(.secondary)
+        }
+    }
+    
+    private var waveformView: some View {
+        HStack(spacing: 3) {
+            ForEach(0..<40, id: \.self) { index in
+                RoundedRectangle(cornerRadius: 2)
+                    .fill(.blue.opacity(0.7))
+                    .frame(width: 4, height: waveformHeight(for: index))
+            }
+        }
+        .frame(height: 32)
+        .animation(.linear(duration: 0.1).repeatForever(autoreverses: true), value: recordingTime)
+    }
+    
+    private func waveformHeight(for index: Int) -> CGFloat {
+        CGFloat(8 + (sin(Double(index) * 0.5 + recordingTime * 2) + 1) * 16)
+    }
+    
+    private var infoText: some View {
+        Text("Audio will be saved to this note")
+            .font(.caption)
+            .foregroundStyle(.secondary)
+    }
+    
+    private var backgroundView: some View {
+        Rectangle()
+            .fill(.ultraThinMaterial)
+            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+            .ignoresSafeArea()
+    }
+    
+    private func startRecording() {
+        requestMicrophonePermission { granted in
+            if granted {
+                let audioFilename = getDocumentsDirectory().appendingPathComponent("recording_\(UUID().uuidString).m4a")
+                recorder.startRecording(to: audioFilename.path)
+                
+                recordingTime = 0
+                timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+                    recordingTime += 0.1
+                }
+            }
+        }
+    }
+    
+    private func stopRecording() {
+        timer?.invalidate()
+        if let audioPath = recorder.stopRecording() {
+            item.audioPath = audioPath
+            dismiss()
+        }
+    }
+    
+    private func cleanup() {
+        timer?.invalidate()
+        if recorder.isRecording {
+            stopRecording()
+        }
+    }
+    
+    private func formatTime(_ time: TimeInterval) -> String {
+        let minutes = Int(time) / 60
+        let seconds = Int(time) % 60
+        let milliseconds = Int((time.truncatingRemainder(dividingBy: 1)) * 10)
+        return String(format: "%d:%02d.%d", minutes, seconds, milliseconds)
+    }
+    
+    private func getDocumentsDirectory() -> URL {
+        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+    }
+    
+    private func requestMicrophonePermission(completion: ((Bool) -> Void)? = nil) {
+        if #available(iOS 17.0, *) {
+            AVAudioApplication.requestRecordPermission { granted in
+                DispatchQueue.main.async {
+                    completion?(granted)
+                }
+            }
+        } else {
+            AVAudioSession.sharedInstance().requestRecordPermission { granted in
+                DispatchQueue.main.async {
+                    completion?(granted)
+                }
+            }
+        }
+    }
+}
+
+// MARK: - Audio Recorder Manager
+class AudioRecorderManager: ObservableObject {
+    private var audioRecorder: AVAudioRecorder?
+    private var recordingURL: URL?
+    @Published var isRecording = false
+    
+    func startRecording(to path: String) {
+        let url = URL(fileURLWithPath: path)
+        recordingURL = url
+        
+        let settings: [String: Any] = [
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 44100,
+            AVNumberOfChannelsKey: 2,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ]
+        
+        do {
+            let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setCategory(.record, mode: .default)
+            try audioSession.setActive(true)
+            
+            audioRecorder = try AVAudioRecorder(url: url, settings: settings)
+            audioRecorder?.record()
+            isRecording = true
+        } catch {
+            print("Failed to start recording: \(error)")
+            isRecording = false
+        }
+    }
+    
+    func stopRecording() -> String? {
+        guard let recorder = audioRecorder, isRecording else { return nil }
+        
+        recorder.stop()
+        isRecording = false
+        
+        do {
+            try AVAudioSession.sharedInstance().setActive(false)
+        } catch {
+            print("Failed to deactivate audio session: \(error)")
+        }
+        
+        return recordingURL?.path
+    }
+}
+
+// MARK: - Folder Selection Sheet
+struct FolderSelectionSheetView: View {
+    let selectedItems: Set<PersistentIdentifier>
+    let items: [Item]
+    let onAssign: (String?) -> Void
+    let onCancel: () -> Void
+    
+    @Environment(\.colorScheme) private var colorScheme
+    @State private var newFolderName: String = ""
+    @State private var showNewFolderField: Bool = false
+    
+    private var existingFolders: [String] {
+        Array(Set(items.compactMap { $0.folder })).sorted()
+    }
+    
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 0) {
+                // Header
+                VStack(spacing: 8) {
+                    Text("Assign to Folder")
+                        .font(.headline)
+                    Text("\(selectedItems.count) note\(selectedItems.count == 1 ? "" : "s") selected")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.top, 20)
+                .padding(.bottom, 16)
+                
+                // Folder list
+                List {
+                    // "None" option (remove from folder)
+                    Button {
+                        onAssign(nil)
+                    } label: {
+                        HStack {
+                            Image(systemName: "folder.badge.minus")
+                                .foregroundStyle(.secondary)
+                            Text("None (Remove from folder)")
+                            Spacer()
+                        }
+                        .padding(.vertical, 8)
+                    }
+                    .buttonStyle(.plain)
+                    
+                    // Existing folders
+                    ForEach(existingFolders, id: \.self) { folder in
+                        Button {
+                            onAssign(folder)
+                        } label: {
+                            HStack {
+                                Image(systemName: "folder.fill")
+                                    .foregroundStyle(.blue)
+                                Text(folder)
+                                Spacer()
+                            }
+                            .padding(.vertical, 8)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    
+                    // New folder option
+                    if showNewFolderField {
+                        HStack(spacing: 12) {
+                            Image(systemName: "folder.badge.plus")
+                                .foregroundStyle(.blue)
+                            TextField("Folder name", text: $newFolderName)
+                                .textFieldStyle(.plain)
+                            Button {
+                                if !newFolderName.isEmpty {
+                                    onAssign(newFolderName)
+                                }
+                            } label: {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .foregroundStyle(.blue)
+                            }
+                            .disabled(newFolderName.isEmpty)
+                        }
+                        .padding(.vertical, 8)
+                    } else {
+                        Button {
+                            showNewFolderField = true
+                        } label: {
+                            HStack {
+                                Image(systemName: "folder.badge.plus")
+                                    .foregroundStyle(.blue)
+                                Text("New Folder")
+                                Spacer()
+                            }
+                            .padding(.vertical, 8)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .listStyle(.plain)
+            }
+            .background(
+                Rectangle()
+                    .fill(.ultraThinMaterial)
+                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                    .ignoresSafeArea()
+            )
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Cancel") {
+                        onCancel()
+                    }
+                }
+            }
+        }
     }
 }

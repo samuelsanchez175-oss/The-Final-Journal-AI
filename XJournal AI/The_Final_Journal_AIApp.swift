@@ -49,6 +49,15 @@ struct The_Final_Journal_AIApp: App {
                     // Pre-load CMUDICT dictionary asynchronously on app launch
                     // This ensures dictionary is ready before first rhyme analysis
                     FJCMUDICTStore.shared.preloadAsync()
+                    
+                    // Load rap lyrics database asynchronously on app launch
+                    Task {
+                        do {
+                            try await RapLyricsDatabase.shared.loadFromAppGroup()
+                        } catch {
+                            print("⚠️ Failed to load rap lyrics database: \(error.localizedDescription)")
+                        }
+                    }
                 }
         }
         .modelContainer(sharedModelContainer)
