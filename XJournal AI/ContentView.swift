@@ -1918,6 +1918,14 @@ struct RhymeHighlighterEngine {
         case near = 0.75
         case slant = 0.55
     }
+    
+    /// Distinguishes between different types of phonetic patterns
+    enum RhymeType {
+        case endRhyme      // Words at the end of lines that rhyme
+        case internalRhyme // Words within the same line or nearby that rhyme
+        case alliteration  // Words with same starting consonant sound(s)
+        case assonance     // Words with same stressed vowel sound (but different codas)
+    }
 
     struct PhoneticSignature {
         let stressedVowel: String
@@ -1930,12 +1938,16 @@ struct RhymeHighlighterEngine {
         let strength: RhymeStrength
         let colorIndex: Int
         let words: [RhymeGroupWord]
+        let rhymeType: RhymeType // NEW: Classifies rhyme as end or internal
     }
 
     struct RhymeGroupWord: Identifiable {
         let id = UUID()
         let word: String
         let range: Range<String.Index>
+        let lineIndex: Int
+        let positionInLine: Int
+        let isLineEnd: Bool
     }
 
     nonisolated static func extractSignature(from phonemes: [String]) -> PhoneticSignature? {
@@ -2073,7 +2085,7 @@ struct RhymeHighlighterEngine {
             else { continue }
 
             buckets[sig.stressedVowel, default: []]
-                .append((RhymeGroupWord(word: word, range: range), sig))
+                .append((RhymeGroupWord(word: word, range: range, lineIndex: 0, positionInLine: 0, isLineEnd: false), sig))
         }
 
         var result: [RhymeGroup] = []
@@ -2097,7 +2109,8 @@ struct RhymeHighlighterEngine {
                     key: key,
                     strength: strength,
                     colorIndex: colorIndex,
-                    words: words
+                    words: words,
+                    rhymeType: .endRhyme // TODO: Implement proper classification
                 )
             )
             
@@ -2137,7 +2150,8 @@ struct RhymeHighlighterEngine {
                         key: "\(baseVowel)_slant",
                         strength: .slant,
                         colorIndex: colorIndex,
-                        words: slantGroup.map { $0.0 }
+                        words: slantGroup.map { $0.0 },
+                        rhymeType: .internalRhyme // TODO: Implement proper classification
                     )
                 )
                 
@@ -2172,7 +2186,7 @@ struct RhymeHighlighterEngine {
             guard let sig = signatureCache[word] else { continue }
 
             buckets[sig.stressedVowel, default: []]
-                .append((RhymeGroupWord(word: word, range: range), sig))
+                .append((RhymeGroupWord(word: word, range: range, lineIndex: 0, positionInLine: 0, isLineEnd: false), sig))
         }
 
         var result: [RhymeGroup] = []
@@ -2196,7 +2210,8 @@ struct RhymeHighlighterEngine {
                     key: key,
                     strength: strength,
                     colorIndex: colorIndex,
-                    words: words
+                    words: words,
+                    rhymeType: .endRhyme // TODO: Implement proper classification
                 )
             )
             
@@ -2236,7 +2251,8 @@ struct RhymeHighlighterEngine {
                         key: "\(baseVowel)_slant",
                         strength: .slant,
                         colorIndex: colorIndex,
-                        words: slantGroup.map { $0.0 }
+                        words: slantGroup.map { $0.0 },
+                        rhymeType: .internalRhyme // TODO: Implement proper classification
                     )
                 )
                 
@@ -2254,7 +2270,8 @@ struct RhymeHighlighterEngine {
                 highlights.append(Highlight(
                     range: wordInfo.range,
                     colorIndex: group.colorIndex,
-                    strength: group.strength
+                    strength: group.strength,
+                    rhymeType: group.rhymeType
                 ))
             }
         }
@@ -2271,7 +2288,8 @@ struct RhymeHighlighterEngine {
                     Highlight(
                         range: wordInfo.range,
                         colorIndex: group.colorIndex,
-                        strength: group.strength
+                        strength: group.strength,
+                        rhymeType: group.rhymeType
                     )
                 )
             }
@@ -2471,6 +2489,7 @@ struct Highlight: Equatable {
     let range: Range<String.Index>
     let colorIndex: Int
     let strength: RhymeHighlighterEngine.RhymeStrength
+    let rhymeType: RhymeHighlighterEngine.RhymeType
 }
 
 // MARK: - PAGE 1.1.1: Release Notes Sheet (Segment 1)
