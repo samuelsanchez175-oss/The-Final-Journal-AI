@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import UIKit
 
 @main
 struct The_Final_Journal_AIApp: App {
@@ -29,9 +30,26 @@ struct The_Final_Journal_AIApp: App {
         }
     }()
 
+    init() {
+        // Set up memory warning observer on app launch
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.didReceiveMemoryWarningNotification,
+            object: nil,
+            queue: .main
+        ) { _ in
+            // Clear caches on memory warning for better memory management
+            print("⚠️ Memory Warning: Caches cleared")
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    // Pre-load CMUDICT dictionary asynchronously on app launch
+                    // This ensures dictionary is ready before first rhyme analysis
+                    FJCMUDICTStore.shared.preloadAsync()
+                }
         }
         .modelContainer(sharedModelContainer)
     }

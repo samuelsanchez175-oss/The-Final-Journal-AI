@@ -21,7 +21,7 @@ import PhotosUI
 // Page 1.4  — Filters & Folders (Home)
 // Page 1.5  — Quick Compose Button (Bottom Right)
 // Page 2    — Note Editor (Writing Surface)
-// Page 3    — Keyboard Bottom Dynamic Island Toolbar
+// Page 3    — Keyboard Bottrom Dynamic Island Toolbar
 // Page 3.1  — Clip / Attach Menu (Files, Notes, Voice Memos)
 // Page 3.1.1 — Keyboard Dynamic Toolbar Part 2 (Overlay)
 // Page 3.2  — AI Assist Menu (Read‑Only Suggestions)
@@ -143,6 +143,11 @@ struct JournalLibraryView: View {
     @State private var selectedBPM: Int? = nil
     @State private var selectedScale: String? = nil
     @State private var selectedURL: String? = nil
+    
+    // MARK: - Filter Caching (Performance Optimization)
+    @State private var cachedFilteredItems: [Item]? = nil
+    @State private var lastFilterHash: Int = 0
+    @State private var lastItemsCount: Int = 0
 
     // MARK: - PAGE 1: Local Visibility Gate for Bottom Bar
     @State private var isOnPage1: Bool = true
@@ -367,6 +372,29 @@ struct JournalLibraryView: View {
     }
 
     private var filteredItems: [Item] {
+        // Compute hash of filter state for change detection (performance optimization)
+        var filterHasher = Hasher()
+        filterHasher.combine(searchText)
+        if let filter = selectedFilter {
+            filterHasher.combine(filter.hashValue)
+        } else {
+            filterHasher.combine(0)
+        }
+        filterHasher.combine(selectedFolder)
+        filterHasher.combine(selectedBPM)
+        filterHasher.combine(selectedScale)
+        filterHasher.combine(selectedURL)
+        filterHasher.combine(items.count)
+        let currentFilterHash = filterHasher.finalize()
+        
+        // Return cached result if filter state and items count haven't changed
+        if currentFilterHash == lastFilterHash,
+           items.count == lastItemsCount,
+           let cached = cachedFilteredItems {
+            return cached
+        }
+        
+        // Recompute filtered items (only when filter state or items actually changed)
         var base: [Item]
 
         if searchText.isEmpty {
@@ -448,6 +476,11 @@ struct JournalLibraryView: View {
         if selectedFilter != .url, let url = selectedURL {
             filtered = filtered.filter { $0.urlAttachment == url }
         }
+        
+        // Cache the filtered results and update hash (performance optimization)
+        cachedFilteredItems = filtered
+        lastFilterHash = currentFilterHash
+        lastItemsCount = items.count
         
         return filtered
     }
@@ -692,17 +725,43 @@ struct JournalLibraryView: View {
     }
     
     // MARK: - Filter Helper Functions
+    
+    // Cache unique filter values to avoid recalculation
+    @State private var cachedUniqueValues: [Page1Filter: [AnyHashable]] = [:]
+    @State private var lastUniqueValuesHash: Int = 0
+    
     private func getUniqueValues(for filter: Page1Filter) -> [AnyHashable] {
+        // Compute hash of items for change detection
+        let itemsHash = items.count.hashValue
+        
+        // Return cached values if items haven't changed
+        if itemsHash == lastUniqueValuesHash,
+           let cached = cachedUniqueValues[filter] {
+            return cached
+        }
+        
+        // Recompute unique values
+        let uniqueValues: [AnyHashable]
         switch filter {
         case .folders:
-            return Array(Set(items.compactMap { $0.folder })).sorted()
+            uniqueValues = Array(Set(items.compactMap { $0.folder })).sorted()
         case .bpm:
-            return Array(Set(items.compactMap { $0.bpm })).sorted()
+            uniqueValues = Array(Set(items.compactMap { $0.bpm })).sorted()
         case .scale:
-            return Array(Set(items.compactMap { $0.scale })).sorted()
+            uniqueValues = Array(Set(items.compactMap { $0.scale })).sorted()
         case .url:
-            return Array(Set(items.compactMap { $0.urlAttachment })).sorted()
+            uniqueValues = Array(Set(items.compactMap { $0.urlAttachment })).sorted()
         }
+        
+        // Cache the unique values
+        cachedUniqueValues[filter] = uniqueValues
+        if itemsHash != lastUniqueValuesHash {
+            // Clear cache if items changed
+            lastUniqueValuesHash = itemsHash
+            cachedUniqueValues = [filter: uniqueValues]
+        }
+        
+        return uniqueValues
     }
     
     private func displayValue(for filter: Page1Filter, value: AnyHashable) -> String {
@@ -839,6 +898,11 @@ struct JournalListView: View {
 struct JournalRowView: View {
     let item: Item
     @Binding var isOnPage1: Bool
+    
+    // Cache computed properties to avoid recalculation on every view update
+    @State private var cachedTitle: String?
+    @State private var cachedPreview: String?
+    @State private var lastItemId: PersistentIdentifier?
 
     var body: some View {
         NavigationLink {
@@ -865,20 +929,57 @@ struct JournalRowView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.clear)
             .contentShape(Rectangle())
+            .onAppear {
+                // Update cache when view appears if item changed
+                updateCacheIfNeeded()
+            }
+            .onChange(of: item.id) { _, _ in
+                // Update cache when item ID changes
+                updateCacheIfNeeded()
+            }
         }
         .buttonStyle(.plain)
     }
+    
+    /// Update cached values if item has changed
+    private func updateCacheIfNeeded() {
+        // Only recalculate if item actually changed
+        guard lastItemId != item.id else { return }
+        
+        cachedTitle = item.title.isEmpty ? "Untitled Note" : item.title
+        
+        // Cache preview - format date only once
+        if item.body.isEmpty {
+            cachedPreview = item.timestamp.formatted(
+                Date.FormatStyle(date: .numeric, time: .standard)
+            )
+        } else {
+            cachedPreview = item.body
+        }
+        
+        lastItemId = item.id
+    }
 
     private var noteTitle: String {
-        item.title.isEmpty ? "Untitled Note" : item.title
+        if let cached = cachedTitle, lastItemId == item.id {
+            return cached
+        }
+        // Fallback if cache not yet set
+        return item.title.isEmpty ? "Untitled Note" : item.title
     }
 
     private var notePreview: String {
-        item.body.isEmpty
-            ? item.timestamp.formatted(
+        if let cached = cachedPreview, lastItemId == item.id {
+            return cached
+        }
+        // Fallback if cache not yet set
+        if item.body.isEmpty {
+            return item.timestamp.formatted(
                 Date.FormatStyle(date: .numeric, time: .standard)
             )
-            : item.body
+        } else {
+            return item.body
+        }
     }
 }
 
@@ -1176,7 +1277,7 @@ struct NoteEditorView: View {
                 Divider()
                     .frame(maxWidth: 680)
 
-                ScrollView {
+                ScrollView(.vertical, showsIndicators: false) {
                     GeometryReader { geo in
                         Color.clear
                             .preference(key: ScrollOffsetKey.self,
@@ -1188,7 +1289,7 @@ struct NoteEditorView: View {
                             TextEditor(text: $item.body)
                                 .focused($isEditorFocused)
                                 .font(.body)
-                                .frame(maxWidth: 680, alignment: .leading)
+                                .frame(maxWidth: 680)
                                 .padding(.horizontal, 20)
                                 .padding(.top, 8)
                                 .padding(.bottom, 24)
@@ -1196,23 +1297,27 @@ struct NoteEditorView: View {
                                 .scrollContentBackground(.hidden)
                                 .textEditorStyle(.plain)
                                 .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
+                                .fixedSize(horizontal: false, vertical: true) // Allow vertical expansion, constrain horizontal
 
-                            if isRhymeOverlayVisible {
-                                RhymeHighlightTextView(
-                                    text: item.body,
-                                    highlights: computedHighlights
-                                )
-                                .frame(maxWidth: 680, alignment: .leading)
-                                .padding(.horizontal, 20)
-                                .padding(.top, 8)
-                                .padding(.bottom, 24)
-                                .opacity(1)
-                                .animation(.easeInOut(duration: 0.18), value: isRhymeOverlayVisible)
-                                .allowsHitTesting(false)
-                            }
+                            // Always keep view in hierarchy - optimize by using opacity instead of conditional rendering
+                            // This prevents view recreation on toggle, allowing cache reuse
+                            RhymeHighlightTextView(
+                                text: item.body,
+                                highlights: computedHighlights,
+                                isVisible: isRhymeOverlayVisible
+                            )
+                            .frame(maxWidth: 683) // 3 points wider to better match TextEditor width
+                            .padding(.horizontal, 20) // Match TextEditor padding
+                            .padding(.top, 8)
+                            .padding(.bottom, 24)
+                            .opacity(isRhymeOverlayVisible ? 1.0 : 0.0)
+                            .animation(.easeInOut(duration: 0.18), value: isRhymeOverlayVisible)
+                            .allowsHitTesting(false)
+                            .fixedSize(horizontal: false, vertical: true) // Allow vertical expansion, constrain horizontal
                         }
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .frame(maxWidth: 680) // Constrain to max width
+                    .frame(maxWidth: .infinity) // But allow it to center
                 }
                 .coordinateSpace(name: "editorScroll")
                 .onPreferenceChange(ScrollOffsetKey.self) { value in
@@ -1261,10 +1366,13 @@ struct NoteEditorView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
+            // Immediate analysis on appear (no debounce needed - user isn't typing yet)
             rhymeEngineState.updateIfNeeded(text: item.body)
         }
-        .onChange(of: item.body) {
-            rhymeEngineState.updateIfNeeded(text: item.body)
+        .onChange(of: item.body) { oldValue, newValue in
+            // Debounced analysis - waits 400ms after typing stops before analyzing
+            // This reduces computation during active typing and improves performance
+            rhymeEngineState.updateIfNeeded(text: newValue)
         }
         // MARK: - Metadata Popovers (Segment 2)
         .sheet(isPresented: $showBPMPopover) {
@@ -1660,6 +1768,7 @@ struct DynamicIslandToolbarView: View {
                     }
                     .frame(height: 56)
                     .frame(maxWidth: 680)
+                    .frame(maxWidth: .infinity) // Center the toolbar
                     .background(
                         Capsule(style: .continuous)
                             .fill(.ultraThinMaterial)
@@ -2391,6 +2500,7 @@ struct GlassView<S: Shape>: View {
 struct RhymeHighlightTextView: UIViewRepresentable {
     let text: String
     let highlights: [Highlight]
+    let isVisible: Bool // Track visibility to skip unnecessary updates when hidden
 
     func makeCoordinator() -> Coordinator {
         Coordinator()
@@ -2406,11 +2516,20 @@ struct RhymeHighlightTextView: UIViewRepresentable {
 
         textView.textContainerInset = UIEdgeInsets(
             top: 8,
-            left: 20,
+            left: 20, // Match TextEditor padding
             bottom: 24,
-            right: 20
+            right: 20 // Match TextEditor padding
         )
         textView.textContainer.lineFragmentPadding = 0
+        
+        // CRITICAL: Enable text wrapping to prevent horizontal overflow
+        textView.textContainer.widthTracksTextView = true
+        textView.textContainer.lineBreakMode = .byWordWrapping
+        textView.textContainer.maximumNumberOfLines = 0 // Unlimited lines
+        
+        // Ensure text wraps within bounds - prevent horizontal scrolling
+        textView.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        textView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
 
         textView.font = UIFont.preferredFont(forTextStyle: .body)
         textView.adjustsFontForContentSizeCategory = true
@@ -2423,18 +2542,58 @@ struct RhymeHighlightTextView: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: UITextView, context: Context) {
+        let coordinator = context.coordinator
+        
+        // Early exit optimization: Skip all work if view is hidden
+        // This prevents unnecessary hash calculations and attributed string work
+        if !isVisible {
+            // If we're hiding the view and it was previously visible, clear the text
+            // This is a visual optimization - don't rebuild attributed string when hidden
+            if coordinator.lastVisible {
+                uiView.attributedText = nil
+                coordinator.lastVisible = false
+            }
+            return
+        }
+        
+        // Mark as visible for next comparison
+        coordinator.lastVisible = true
+        
         let isDarkMode = uiView.traitCollection.userInterfaceStyle == .dark
         
-        // Check if we can skip rebuild (change detection)
-        let coordinator = context.coordinator
-        let currentText = uiView.attributedText?.string ?? ""
-        let highlightsChanged = coordinator.lastHighlights != highlights
-        let textChanged = currentText != text
+        // Optimized change detection - use hash-based comparison for efficiency
+        let textHash = text.hashValue
+        
+        // Calculate highlights hash efficiently - only hash the essential properties
+        var highlightsHasher = Hasher()
+        highlightsHasher.combine(highlights.count)
+        for highlight in highlights {
+            // Convert range to NSRange for stable hashing (handles String.Index properly)
+            let nsRange = NSRange(highlight.range, in: text)
+            highlightsHasher.combine(nsRange.location)
+            highlightsHasher.combine(nsRange.length)
+            highlightsHasher.combine(highlight.colorIndex)
+            highlightsHasher.combine(highlight.strength)
+            highlightsHasher.combine(highlight.rhymeType)
+        }
+        let highlightsHash = highlightsHasher.finalize()
+        
+        let textChanged = coordinator.lastTextHash != textHash
+        let highlightsChanged = coordinator.lastHighlightsHash != highlightsHash
         let darkModeChanged = coordinator.lastDarkMode != isDarkMode
         
-        // Skip rebuild if nothing changed
+        // Skip rebuild if nothing changed - reuse cached attributed string
         if !textChanged && !highlightsChanged && !darkModeChanged {
-            return
+            // Use cached attributed string if available and text matches
+            if let cachedAttributed = coordinator.cachedAttributedString,
+               cachedAttributed.string == text {
+                // Only update if the attributed text is actually different
+                if uiView.attributedText != cachedAttributed {
+                    uiView.attributedText = cachedAttributed
+                }
+                return
+            }
+            // If we don't have a cache but nothing changed, we still need to build it once
         }
         
         // Build attributed string
@@ -2470,16 +2629,19 @@ struct RhymeHighlightTextView: UIViewRepresentable {
 
         uiView.attributedText = attributed
         
-        // Update coordinator cache
-        coordinator.lastText = text
-        coordinator.lastHighlights = highlights
+        // Cache the attributed string and update coordinator cache
+        coordinator.cachedAttributedString = attributed.copy() as? NSAttributedString
+        coordinator.lastTextHash = textHash
+        coordinator.lastHighlightsHash = highlightsHash
         coordinator.lastDarkMode = isDarkMode
     }
     
     class Coordinator {
-        var lastText: String = ""
-        var lastHighlights: [Highlight] = []
+        var lastTextHash: Int = 0
+        var lastHighlightsHash: Int = 0
         var lastDarkMode: Bool = false
+        var lastVisible: Bool = false // Track visibility state
+        var cachedAttributedString: NSAttributedString? = nil
     }
 }
 
@@ -2858,20 +3020,74 @@ final class RhymeEngineState: ObservableObject {
     
     // Word-level caching: cache phonetic signatures by word text
     private var wordSignatureCache: [String: RhymeHighlighterEngine.PhoneticSignature] = [:]
+    
+    // Debounce state for typing delay
+    private var debounceTask: Task<Void, Never>? = nil
+    private let debounceDelay: TimeInterval = 0.4 // 400ms delay after typing stops
+    
+    init() {
+        // Set up memory warning observer to clear caches when needed
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.didReceiveMemoryWarningNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            self?.clearCaches()
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    /// Clear caches on memory warning (performance optimization)
+    private func clearCaches() {
+        // Clear word signature cache (can be rebuilt as needed)
+        wordSignatureCache.removeAll(keepingCapacity: false)
+        print("⚠️ RhymeEngineState: Caches cleared due to memory warning")
+    }
 
     func updateIfNeeded(text: String) {
         let hash = text.hashValue
+        
+        // Skip if text hasn't actually changed (hash check is fast, prevents unnecessary debounce setup)
         guard hash != lastTextHash else { return }
-        lastTextHash = hash
         
-        // Use incremental update if we have previous text
-        if !lastText.isEmpty {
-            computeIncrementalAsync(oldText: lastText, newText: text)
-        } else {
-            computeAsync(text: text)
+        // Cancel any pending debounced analysis (user typed again)
+        debounceTask?.cancel()
+        
+        // Store the text we want to analyze (capture current state for the debounced task)
+        let textToAnalyze = text
+        let previousText = lastText
+        
+        // Create new debounced task that will analyze after user stops typing
+        debounceTask = Task { @MainActor [weak self] in
+            guard let self = self else { return }
+            
+            // Wait for user to stop typing (debounce delay: 400ms)
+            // This prevents analysis during active typing
+            try? await Task.sleep(nanoseconds: UInt64(self.debounceDelay * 1_000_000_000))
+            
+            // Check if task was cancelled (user typed again during delay)
+            guard !Task.isCancelled else { return }
+            
+            // Verify the text we captured still hasn't been analyzed
+            // (hash might have changed if another update occurred, but that's handled by the guard above)
+            let currentHash = textToAnalyze.hashValue
+            guard currentHash != self.lastTextHash else { return }
+            
+            // Update hash before analysis to prevent duplicate calls
+            self.lastTextHash = currentHash
+            
+            // Use incremental update if we have previous text (more efficient)
+            if !previousText.isEmpty {
+                self.computeIncrementalAsync(oldText: previousText, newText: textToAnalyze)
+            } else {
+                self.computeAsync(text: textToAnalyze)
+            }
+            
+            self.lastText = textToAnalyze
         }
-        
-        lastText = text
     }
 
     private func computeAsync(text: String) {
@@ -3000,7 +3216,91 @@ final class RhymeEngineState: ObservableObject {
 final class FJCMUDICTStore {
     static let shared = FJCMUDICTStore()
     private(set) var phonemesByWord: [String: [String]] = [:]
-    private init() { load() }
+    private let loadingQueue = DispatchQueue(label: "com.finaljournal.cmudict.loading", qos: .userInitiated)
+    private var isLoading = false
+    private var isLoaded = false
+    private let loadingLock = NSLock()
+    
+    // Thread-safe loading state check
+    private var isDictionaryLoaded: Bool {
+        loadingLock.lock()
+        defer { loadingLock.unlock() }
+        return isLoaded
+    }
+    
+    private init() {
+        // Load fallback dictionary immediately for basic functionality
+        loadFallbackDictionary()
+        // Start async loading of full dictionary
+        preloadAsync()
+    }
+    
+    /// Pre-loads the full dictionary asynchronously on a background thread
+    /// This is called on app launch to ensure dictionary is ready before first use
+    func preloadAsync() {
+        loadingLock.lock()
+        let shouldLoad = !isLoaded && !isLoading
+        if shouldLoad {
+            isLoading = true
+        }
+        loadingLock.unlock()
+        
+        guard shouldLoad else { return }
+        
+        Task.detached(priority: .userInitiated) {
+            await self.loadAsync()
+        }
+    }
+    
+    /// Asynchronously loads the full dictionary on a background thread
+    private func loadAsync() async {
+        // Load dictionary file and parse on background thread
+        let dictionary: [String: [String]]? = await Task.detached(priority: .userInitiated) { () -> [String: [String]]? in
+            guard let url = Bundle.main.url(forResource: "cmudict", withExtension: "txt") else {
+                print("⚠️ CMUDICT: Dictionary file not found")
+                return nil
+            }
+            
+            guard let contents = try? String(contentsOf: url, encoding: .utf8) else {
+                print("⚠️ CMUDICT: Failed to read dictionary file")
+                return nil
+            }
+            
+            // Parse dictionary on background thread
+            var parsedDict: [String: [String]] = [:]
+            for line in contents.split(separator: "\n") {
+                guard !line.hasPrefix(";;;") else { continue }
+                let parts = line.split(separator: " ")
+                guard parts.count > 1 else { continue }
+                let word = String(parts[0]).lowercased()
+                let phones = parts.dropFirst().map(String.init)
+                parsedDict[word] = phones
+            }
+            
+            return parsedDict
+        }.value
+        
+        // Update dictionary on main thread (thread-safe)
+        await MainActor.run {
+            if let dict = dictionary {
+                self.phonemesByWord = dict
+                
+                self.loadingLock.lock()
+                self.isLoaded = true
+                self.isLoading = false
+                self.loadingLock.unlock()
+                
+                print("✅ CMUDICT: Full dictionary loaded successfully (\(dict.count) words)")
+            } else {
+                self.loadingLock.lock()
+                self.isLoading = false
+                self.loadingLock.unlock()
+                print("⚠️ CMUDICT: Failed to load full dictionary, using fallback")
+            }
+        }
+    }
+    
+    /// Synchronous load method (kept for backwards compatibility, but should use preloadAsync)
     private func load() {
         guard let url = Bundle.main.url(forResource: "cmudict", withExtension: "txt"),
             let contents = try? String(contentsOf: url, encoding: .utf8) else {
@@ -3010,6 +3310,7 @@ final class FJCMUDICTStore {
         parseDict(contents)
     }
     
+    /// Parse dictionary contents (used by both sync and async loading)
     private func parseDict(_ contents: String) {
         for line in contents.split(separator: "\n") {
             guard !line.hasPrefix(";;;") else { continue }
@@ -3019,6 +3320,14 @@ final class FJCMUDICTStore {
             let phones = parts.dropFirst().map(String.init)
             phonemesByWord[word] = phones
         }
+    }
+    
+    /// Get phonemes for a word (thread-safe access)
+    /// Falls back to empty array if dictionary not yet loaded
+    func getPhonemes(for word: String) -> [String]? {
+        loadingLock.lock()
+        defer { loadingLock.unlock() }
+        return phonemesByWord[word.lowercased()]
     }
     
     private func loadFallbackDictionary() {
