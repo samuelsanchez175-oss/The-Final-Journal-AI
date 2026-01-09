@@ -36,13 +36,13 @@
 				<key>focused</key>
 				<string></string>
 				<key>leading</key>
-				<string>            "cat": ["K", "AE1", "T"],
-            "hat": ["HH", "AE1", "T"],
+				<string>                    }
+                }
 </string>
 				<key>trailing</key>
-				<string>            "bat": ["B", "AE1", "T"],
-            "rat": ["R", "AE1", "T"],
-            "mat": ["M", "AE1", "T"],
+				<string>            }
+            .padding(24)
+        }
 </string>
 			</dict>
 			<key>type</key>
