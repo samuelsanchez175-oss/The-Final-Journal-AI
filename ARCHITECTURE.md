@@ -38,7 +38,7 @@ This document provides a complete understanding of the rhyme engine and core com
 "light": ["L", "AY1", "T"]  // Same rhyme tail (AY1-T)
 ```
 
-**Note**: There's a naming inconsistency - `FJCMUDICTStore` is used in the main engine, while `CMUDICTStore` is used in diagnostics. Both should be unified.
+**Note**: ✅ Unified implementation - `FJCMUDICTStore` is now used throughout the app (main engine and diagnostics).
 
 ---
 
@@ -328,7 +328,7 @@ struct CadenceMetrics {
 - Shows all phonemes in visual capsules
 - Computes and displays "rhyme tail" (stressed vowel + coda)
 
-**Current Issue**: Uses `CMUDICTStore.shared` instead of `FJCMUDICTStore.shared` (inconsistency)
+**Status**: ✅ Uses `FJCMUDICTStore.shared` (unified implementation)
 
 ---
 
@@ -401,10 +401,10 @@ struct CadenceMetrics {
 
 ## ⚠️ Known Issues / Inconsistencies
 
-1. **Dictionary Store Naming**:
-   - `FJCMUDICTStore` used in main engine (`ContentView.swift`)
-   - `CMUDICTStore` used in diagnostics (`RhymeDiagnosticsPanelView.swift`)
-   - **Recommendation**: Unify to one implementation
+1. ~~**Dictionary Store Naming**~~ ✅ **FIXED**:
+   - ~~`FJCMUDICTStore` used in main engine (`ContentView.swift`)~~
+   - ~~`CMUDICTStore` used in diagnostics (`RhymeDiagnosticsPanelView.swift`)~~
+   - **Status**: Unified to `FJCMUDICTStore` throughout. Removed redundant `CMUDICTStore.swift` file.
 
 2. **Slant Rhyme**:
    - Enum case exists but not implemented in scoring

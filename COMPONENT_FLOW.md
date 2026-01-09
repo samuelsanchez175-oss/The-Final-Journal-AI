@@ -222,7 +222,7 @@ Supporting Components:
   │     └── SyllableStressAnalyzer
   │
   └── RhymeDiagnosticsPanelView
-        └── CMUDICTStore (⚠️ naming inconsistency)
+        └── FJCMUDICTStore (✅ unified)
 ```
 
 ---

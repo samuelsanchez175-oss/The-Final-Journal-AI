@@ -177,6 +177,11 @@
 
 ## 📝 Change Log
 
+### 2024-12-28 - Dictionary Store Unification
+- ✅ Fixed naming inconsistency: Unified to `FJCMUDICTStore` throughout
+- ✅ Updated `RhymeDiagnosticsPanelView` to use `FJCMUDICTStore.shared`
+- ✅ Removed redundant `CMUDICTStore.swift` file
+
 ### Initial Status (Current)
 - Documented all Pages and Segments
 - Identified complete vs concurrent vs pending

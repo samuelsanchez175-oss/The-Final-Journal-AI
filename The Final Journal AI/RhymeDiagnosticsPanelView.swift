@@ -7,8 +7,8 @@ import SwiftUI
 struct RhymeDiagnosticsPanelView: View {
     let word: String
     
-    // Use a mock service for preview and development
-    private let phonetics = CMUDICTStore.shared
+    // Use the main dictionary store (unified implementation)
+    private let phonetics = FJCMUDICTStore.shared
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
