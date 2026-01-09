@@ -12,13 +12,13 @@
 					<key>EndingColumnNumber</key>
 					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>393</string>
+					<string>1812</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>393</string>
+					<string>1812</string>
 					<key>Timestamp</key>
-					<string>789042821.253796</string>
+					<string>789308970.779299</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -36,13 +36,13 @@
 				<key>focused</key>
 				<string></string>
 				<key>leading</key>
-				<string>                                Label("New Note", systemImage: "square.and.pencil")
-                            }
+				<string>        let suggestions = showSuggestions ? findRhymeSuggestions(for: group) : []
+        
 </string>
 				<key>trailing</key>
-				<string>
-                            Button {
-                                // TODO: Import from Apple Notes
+				<string>        VStack(alignment: .leading, spacing: 8) {
+            // Group header
+            Text("Group \(index + 1)")
 </string>
 			</dict>
 			<key>type</key>
