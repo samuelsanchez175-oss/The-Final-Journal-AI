@@ -75,7 +75,7 @@ enum RhymeStrength: Double {
 **Classification**:
 - **Perfect Rhyme**: `"night"` and `"light"` (both AY1 + T)
 - **Near Rhyme**: `"night"` and `"time"` (both AY1, but different codas)
-- **Slant Rhyme**: Not currently implemented in scoring
+- **Slant Rhyme**: `"night"` [AY1-T] and `"day"` [EY1] (similar vowels AY/EY, different codas)
 
 #### 2.3 **RhymeGroup**
 ```swift
@@ -406,9 +406,11 @@ struct CadenceMetrics {
    - ~~`CMUDICTStore` used in diagnostics (`RhymeDiagnosticsPanelView.swift`)~~
    - **Status**: Unified to `FJCMUDICTStore` throughout. Removed redundant `CMUDICTStore.swift` file.
 
-2. **Slant Rhyme**:
-   - Enum case exists but not implemented in scoring
-   - Currently only returns `nil` or `.perfect`/`.near`
+2. ~~**Slant Rhyme**~~ ✅ **IMPLEMENTED**:
+   - ✅ Slant rhyme detection now implemented in `rhymeScore()`
+   - ✅ Detects similar vowel sounds across different vowel groups
+   - ✅ Groups slant rhymes in second pass of `computeGroups()`
+   - ✅ Visual rendering with appropriate opacity (0.16 light / 0.30 dark)
 
 3. **Missing Words**:
    - Words not in CMUDICT are silently skipped

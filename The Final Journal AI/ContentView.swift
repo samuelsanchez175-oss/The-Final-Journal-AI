@@ -1087,7 +1087,7 @@ private func lightHaptic() {
 struct RhymeGroupListView: View {
     let groups: [RhymeHighlighterEngine.RhymeGroup]
     @Environment(\.colorScheme) private var colorScheme
-    @State private var isSortReversed = true
+    @State private var isSortReversed = false
 
     var body: some View {
         let baseOrderedGroups = groups.sorted { g1, g2 in
@@ -1117,33 +1117,43 @@ struct RhymeGroupListView: View {
             .padding(.bottom, 6)
 
 
-            ScrollView {
-                VStack(alignment: .leading, spacing: 14) {
-                    if orderedGroups.isEmpty {
-                        Text("No rhymes found.")
-                            .font(.callout)
-                            .foregroundStyle(.secondary)
-                    } else {
-                        ForEach(Array(orderedGroups.enumerated()), id: \.element.id) { index, group in
-                            let groupColor = Color(RhymeColorPalette.colors[group.colorIndex])
-                            
-                            VStack(alignment: .leading, spacing: 6) {
-                                Text("Group \(index + 1)")
-                                    .font(.caption.weight(.semibold))
-                                    .foregroundStyle(groupColor)
+            ScrollViewReader { proxy in
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 14) {
+                        if orderedGroups.isEmpty {
+                            Text("No rhymes found.")
+                                .font(.callout)
+                                .foregroundStyle(.secondary)
+                                .id("top")
+                        } else {
+                            ForEach(Array(orderedGroups.enumerated()), id: \.element.id) { index, group in
+                                let groupColor = Color(RhymeColorPalette.colors[group.colorIndex])
                                 
-                                let uniqueWords = Array(Set(group.words.map { $0.word })).sorted()
-                                Text(uniqueWords.joined(separator: " · "))
-                                    .font(.callout)
-                                    .foregroundStyle(groupColor.opacity(0.8))
-                                    .lineLimit(nil)
-                                    .fixedSize(horizontal: false, vertical: true)
-                            }
+                                VStack(alignment: .leading, spacing: 6) {
+                                    Text("Group \(index + 1)")
+                                        .font(.caption.weight(.semibold))
+                                        .foregroundStyle(groupColor)
+                                    
+                                    let uniqueWords = Array(Set(group.words.map { $0.word })).sorted()
+                                    Text(uniqueWords.joined(separator: " · "))
+                                        .font(.callout)
+                                        .foregroundStyle(groupColor.opacity(0.8))
+                                        .lineLimit(nil)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                }
+                                .id(index == 0 ? "top" : group.id.uuidString)
 
-                            if index < orderedGroups.count - 1 {
-                                Divider().opacity(0.25)
+                                if index < orderedGroups.count - 1 {
+                                    Divider().opacity(0.25)
+                                }
                             }
                         }
+                    }
+                }
+                .onAppear {
+                    // Scroll to top when view appears
+                    withAnimation {
+                        proxy.scrollTo("top", anchor: .top)
                     }
                 }
             }
@@ -1207,14 +1217,110 @@ struct RhymeHighlighterEngine {
         let coda = Array(phonemes.dropFirst(idx + 1))
         return PhoneticSignature(stressedVowel: vowel, coda: coda)
     }
+    
+    /// Extracts the base vowel sound (without stress number) for similarity comparison
+    private static func baseVowelSound(_ vowel: String) -> String {
+        // Remove stress numbers (0, 1, 2) from the end
+        return String(vowel.dropLast())
+    }
+    
+    /// Checks if two vowels are similar enough for slant rhyme
+    /// Groups similar-sounding vowels together
+    private static func areVowelsSimilar(_ vowelA: String, _ vowelB: String) -> Bool {
+        let baseA = baseVowelSound(vowelA)
+        let baseB = baseVowelSound(vowelB)
+        
+        // Exact match (already handled by perfect/near, but included for completeness)
+        if baseA == baseB {
+            return true
+        }
+        
+        // Define vowel similarity groups (common slant rhyme patterns)
+        let similarVowelGroups: [Set<String>] = [
+            // AY (night) and EY (day) - similar long I/A sounds
+            ["AY", "EY"],
+            // OW (show) and AW (saw) - similar O sounds
+            ["OW", "AW", "AO"],
+            // IY (see) and IH (sit) - similar I sounds
+            ["IY", "IH"],
+            // UW (too) and UH (put) - similar U sounds
+            ["UW", "UH"],
+            // AE (cat) and EH (bet) - similar short E/A sounds
+            ["AE", "EH"],
+            // ER (her) and AH (but) - similar R/neutral sounds
+            ["ER", "AH"],
+            // OY (boy) and OW (show) - similar O sounds
+            ["OY", "OW"],
+            // AY (night) and IH (sit) - sometimes similar in context
+            ["AY", "IH"]
+        ]
+        
+        // Check if both vowels are in the same similarity group
+        for group in similarVowelGroups {
+            if group.contains(baseA) && group.contains(baseB) {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    /// Checks if two codas are similar (same length and similar endings)
+    private static func areCodasSimilar(_ codaA: [String], _ codaB: [String]) -> Bool {
+        // If codas are identical, that's handled by perfect rhyme
+        if codaA == codaB {
+            return true
+        }
+        
+        // If one coda is empty and the other isn't, they're not similar
+        if codaA.isEmpty != codaB.isEmpty {
+            return false
+        }
+        
+        // If both are empty, they're similar
+        if codaA.isEmpty && codaB.isEmpty {
+            return true
+        }
+        
+        // Check if they have the same length and similar final phonemes
+        if codaA.count == codaB.count {
+            // If they share at least half of their phonemes, consider them similar
+            let matchingCount = zip(codaA, codaB).filter { $0.0 == $0.1 }.count
+            return Double(matchingCount) / Double(codaA.count) >= 0.5
+        }
+        
+        // Check if the last phoneme matches (common slant rhyme pattern)
+        if let lastA = codaA.last, let lastB = codaB.last {
+            if lastA == lastB {
+                return true
+            }
+        }
+        
+        return false
+    }
 
     static func rhymeScore(_ a: PhoneticSignature, _ b: PhoneticSignature) -> RhymeStrength? {
+        // Perfect rhyme: same stressed vowel + same coda
         if a.stressedVowel == b.stressedVowel && a.coda == b.coda {
             return .perfect
         }
+        
+        // Near rhyme: same stressed vowel, different coda
         if a.stressedVowel == b.stressedVowel {
             return .near
         }
+        
+        // Slant rhyme: similar vowels (with or without similar codas)
+        if areVowelsSimilar(a.stressedVowel, b.stressedVowel) {
+            // If codas are also similar, it's a stronger slant rhyme
+            if areCodasSimilar(a.coda, b.coda) {
+                return .slant
+            }
+            // Even with different codas, similar vowels can be slant rhymes
+            // (e.g., "night" [AY1-T] and "day" [EY1] - similar vowels, different codas)
+            return .slant
+        }
+        
         return nil
     }
 
@@ -1242,7 +1348,9 @@ struct RhymeHighlighterEngine {
         }
 
         var result: [RhymeGroup] = []
+        var processedWords: Set<UUID> = []
 
+        // First pass: Group by exact stressed vowel (perfect and near rhymes)
         for (key, entries) in buckets where entries.count > 1 {
             let signatures = entries.map { $0.1 }
             let base = signatures[0]
@@ -1253,15 +1361,62 @@ struct RhymeHighlighterEngine {
 
             let colorIndex = abs(key.hashValue) % RhymeColorPalette.colors.count
 
+            let words = entries.map { $0.0 }
             result.append(
                 RhymeGroup(
                     id: UUID(),
                     key: key,
                     strength: strength,
                     colorIndex: colorIndex,
-                    words: entries.map { $0.0 }
+                    words: words
                 )
             )
+            
+            // Mark these words as processed
+            for word in words {
+                processedWords.insert(word.id)
+            }
+        }
+
+        // Second pass: Find slant rhymes across different vowel groups
+        let allEntries = buckets.values.flatMap { $0 }
+        
+        for (wordA, sigA) in allEntries {
+            // Skip if already processed in a perfect/near group
+            if processedWords.contains(wordA.id) { continue }
+            
+            var slantGroup: [(RhymeGroupWord, PhoneticSignature)] = [(wordA, sigA)]
+            
+            for (wordB, sigB) in allEntries {
+                if wordA.id == wordB.id { continue }
+                if processedWords.contains(wordB.id) { continue }
+                
+                // Check for slant rhyme
+                if let score = rhymeScore(sigA, sigB), score == .slant {
+                    slantGroup.append((wordB, sigB))
+                }
+            }
+            
+            // Only create group if we found at least one slant rhyme match
+            if slantGroup.count > 1 {
+                let baseVowel = baseVowelSound(sigA.stressedVowel)
+                let colorIndex = abs(baseVowel.hashValue) % RhymeColorPalette.colors.count
+                
+                result.append(
+                    RhymeGroup(
+                        id: UUID(),
+                        key: "\(baseVowel)_slant",
+                        strength: .slant,
+                        colorIndex: colorIndex,
+                        words: slantGroup.map { $0.0 }
+                    )
+                )
+                
+                // Mark all words in this slant group as processed
+                for (word, _) in slantGroup {
+                    processedWords.insert(word.id)
+                }
+            }
         }
 
         return result

@@ -67,7 +67,7 @@
 | **Page 5** | Rhyme Highlighter Engine (Base) | ✅ COMPLETE | `RhymeHighlighterEngine` struct |
 | **Page 6** | Visual Highlight Overlay | ✅ COMPLETE | `RhymeHighlightTextView` (UIViewRepresentable) |
 | **Page 7** | Phonetic Rhyme Engine (CMUDICT) | ✅ COMPLETE | `FJCMUDICTStore` + `cmudict.txt` |
-| **Page 8** | Rhyme Categories (Perfect vs Near) | ✅ COMPLETE | `RhymeStrength` enum + scoring logic |
+| **Page 8** | Rhyme Categories (Perfect vs Near vs Slant) | ✅ COMPLETE | `RhymeStrength` enum + full scoring logic (all three types) |
 | **Page 9** | Internal Rhymes & Position Awareness | ⚪ PENDING | Not implemented (only end-rhymes detected) |
 | **Page 10** | Rhyme Intelligence Panel | 🟡 CONCURRENT | `RhymeGroupListView` exists, but full panel not shown |
 | **Page 11** | Syllables & Stress Illumination | ✅ COMPLETE | `SyllableStressAnalyzer` + `RhymeDiagnosticsPanelView` |
@@ -176,6 +176,13 @@
 ---
 
 ## 📝 Change Log
+
+### 2024-12-28 - Slant Rhyme Implementation
+- ✅ Implemented slant rhyme detection in `rhymeScore()` function
+- ✅ Added vowel similarity groups (AY/EY, OW/AW, IY/IH, etc.)
+- ✅ Added coda similarity detection for stronger slant rhymes
+- ✅ Updated `computeGroups()` with second pass for slant rhyme grouping
+- ✅ Slant rhymes now properly detected and highlighted with lower opacity
 
 ### 2024-12-28 - Dictionary Store Unification
 - ✅ Fixed naming inconsistency: Unified to `FJCMUDICTStore` throughout
