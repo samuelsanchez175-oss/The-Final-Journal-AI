@@ -434,6 +434,148 @@ struct CadenceMetrics {
 
 ---
 
+## 🎨 UI/UX Architecture Segments
+
+### Segment 1 — Editorial Release Notes Sheet
+This segment implements dense, polished feature cards presented as sheets with medium and large detents.
+
+**Implementation**: Sheets that present feature information with multiple detent sizes (`.medium` and `.large`) for flexible user interaction and content presentation.
+
+---
+
+### Segment 2 — Menu-Anchored Glass Popovers
+These are button-anchored popovers that expand in-place from a trigger item rather than using a standard sheet presentation.
+
+**Implementation**: Popovers anchored to buttons that expand directly from their trigger point, maintaining spatial context and avoiding modal sheet interruption.
+
+---
+
+### Segment 3 — Focused Morphing
+This contract covers UI elements that expand or contract based on state—such as a search bar—using `glassEffectID` to ensure no layout drift occurs.
+
+**Implementation**: State-driven expansion/contraction of UI elements (e.g., search bars) with `glassEffectID` to maintain consistent layout positioning without visual shifts.
+
+---
+
+### Segment 4 — Micro-Compression on Touch
+This defines a consistent press-in behavior across controls using the `.interactive()` modifier to trigger scaling and touch-point illumination.
+
+**Implementation**: 
+```swift
+Button("Action") {}
+    .interactive()  // Triggers scaling and touch-point illumination on press
+```
+
+Provides tactile feedback through scale animation and visual illumination at the touch point.
+
+---
+
+### Segment 5 — Keyboard-Aware Adaptive Glass Bars
+This utilizes the `GlassEffectContainer` and `.safeAreaInset(edge: .bottom)` to create toolbars that float above the keyboard without shifting underlying text.
+
+**Implementation**:
+```swift
+.safeAreaInset(edge: .bottom) {
+    GlassEffectContainer {
+        // Toolbar content
+    }
+}
+```
+
+Creates floating toolbars that adapt to keyboard height without affecting the layout of underlying content.
+
+---
+
+### Segment 6 — Hardware Curvature Alignment
+Aligns glass effect corner radius with device-specific hardware curvature for seamless visual integration.
+
+**Implementation**:
+```swift
+.glassEffect(in: .rect(cornerRadius: .containerConcentric))  // [2, 20]
+```
+
+Ensures glass effect containers match device bezel curvature for cohesive hardware-software visual alignment.
+
+---
+
+### Segment 7 — Identity-Linked Presentation
+Provides smooth zoom transitions between source and destination views using matched geometry effects.
+
+**Implementation**:
+```swift
+Button("Open") { showDetail = true }
+    .matchedTransitionSource(id: "source", in: namespace)  // [5, 6]
+
+.sheet(isPresented: $showDetail) {
+    DetailView()
+        .navigationTransition(.zoom(sourceID: "source", in: namespace))  // [5, 7]
+}
+```
+
+Creates seamless visual continuity between source and destination views using shared transition identifiers.
+
+---
+
+### Segment 8 — Shared-Surface Grouping
+Groups related glass elements on a shared surface with controlled spacing for visual cohesion.
+
+**Implementation**:
+```swift
+GlassEffectContainer(spacing: 24) {  // Blends elements within 24pts [10, 11]
+    HStack {
+        Button(systemImage: "pencil") {}.buttonStyle(.glass)
+        Button(systemImage: "trash") {}.buttonStyle(.glass)
+    }
+}
+```
+
+Blends multiple glass-effect elements within a shared container, maintaining consistent spacing and visual grouping.
+
+---
+
+### Segment 9 — Semantic Tinting & Vibrancy
+Applies semantic color tinting to convey meaning and importance, particularly for call-to-action elements.
+
+**Implementation**:
+```swift
+Button("Primary Action") {}
+    .buttonStyle(.glassProminent)
+    .tint(.blue)  // Used for CTA meaning [12, 21]
+```
+
+Uses color tinting to communicate semantic meaning—primary actions, secondary actions, and informational states.
+
+---
+
+### Segment 10 — Materialized Reveal
+Implements fade-in transitions for secondary controls using light modulation for smooth materialization.
+
+**Implementation**:
+```swift
+if isMenuExpanded {
+    SecondaryControl()
+        .glassEffectTransition(.materialize)  // Fade via light modulation [15, 22]
+}
+```
+
+Provides elegant reveal animations where secondary UI elements fade in through light modulation effects.
+
+---
+
+### Segment 11 — Floating Keyboard Island
+Creates a keyboard-adaptive component that follows keyboard height changes while maintaining visual consistency.
+
+**Implementation**:
+```swift
+.safeAreaInset(edge: .bottom) {
+    KeyboardIslandView()  // Component follows keyboard height [17, 18]
+}
+```
+
+Floating UI components that dynamically adjust to keyboard presentation, providing contextually relevant controls without layout disruption.
+
+---
+
 ## 📝 Summary
 
 The rhyme engine is a sophisticated phonetic analysis system that:

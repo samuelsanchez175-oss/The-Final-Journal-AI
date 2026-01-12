@@ -1,4 +1,5 @@
 import Foundation
+import NaturalLanguage
 
 // MARK: - Scored Candidate
 
@@ -15,6 +16,14 @@ struct ScoredCandidate: Identifiable {
 // MARK: - Constraint Filter
 
 class ConstraintFilter {
+    // Provider for CMUdict phoneme map to avoid hard dependency on a concrete type
+    private let phonemeStoreProvider: () -> [String: [String]]
+    
+    init(phonemeStoreProvider: @escaping () -> [String: [String]]) {
+        // Require provider to be passed in explicitly to avoid direct dependency on FJCMUDICTStore
+        self.phonemeStoreProvider = phonemeStoreProvider
+    }
+
     // Scoring weights - prioritize rhyme matching
     private let semanticWeight: Double = 0.2
     private let rhymeWeight: Double = 0.6 // Increased from 0.3 to prioritize rhymes
@@ -26,8 +35,7 @@ class ConstraintFilter {
     
     func filterCandidates(
         candidates: [RapLine],
-        metrics: RapMetrics,
-        rhymeEngine: RhymeHighlighterEngine.Type
+        metrics: RapMetrics
     ) -> [ScoredCandidate] {
         var scored: [ScoredCandidate] = []
         
@@ -43,8 +51,7 @@ class ConstraintFilter {
             // Calculate scores
             let rhymeScore = calculateRhymeScore(
                 candidate: candidate,
-                target: metrics.rhymeTarget,
-                rhymeEngine: rhymeEngine
+                target: metrics.rhymeTarget
             )
             
             let syllableScore = calculateSyllableScore(
@@ -86,8 +93,7 @@ class ConstraintFilter {
     
     private func calculateRhymeScore(
         candidate: RapLine,
-        target: String?,
-        rhymeEngine: RhymeHighlighterEngine.Type
+        target: String?
     ) -> Double {
         guard let target = target?.lowercased() else {
             // No target, return neutral score
@@ -100,27 +106,77 @@ class ConstraintFilter {
             return 0.0
         }
         
-        // Check if words rhyme using existing rhyme engine
-        guard let targetPhonemes = FJCMUDICTStore.shared.phonemesByWord[target],
-              let candidatePhonemes = FJCMUDICTStore.shared.phonemesByWord[lastWord],
-              let targetSig = rhymeEngine.extractSignature(from: targetPhonemes),
-              let candidateSig = rhymeEngine.extractSignature(from: candidatePhonemes) else {
+        // Access the provided CMUdict phoneme store
+        let cmudictStore = phonemeStoreProvider()
+        
+        guard let targetPhonemes = cmudictStore[target],
+              let candidatePhonemes =  cmudictStore[lastWord] else {
+            return 0.0
+        }
+        
+        // Extract phonetic signatures
+        guard let targetSig = extractPhoneticSignature(from: targetPhonemes),
+              let candidateSig = extractPhoneticSignature(from: candidatePhonemes) else {
             return 0.0
         }
         
         // Check rhyme strength
-        if let strength = rhymeEngine.rhymeScore(targetSig, candidateSig) {
-            switch strength {
-            case .perfect:
-                return 1.0
-            case .near:
-                return 0.75
-            case .slant:
-                return 0.55
-            }
+        let strength = calculateRhymeStrength(targetSig: targetSig, candidateSig: candidateSig)
+        switch strength {
+        case .perfect:
+            return 1.0
+        case .near:
+            return 0.75
+        case .slant:
+            return 0.55
+        case .none:
+            return 0.0
+        }
+    }
+    
+    // Extract phonetic signature from phonemes
+    private func extractPhoneticSignature(from phonemes: [String]) -> (stressedVowel: String, coda: [String])? {
+        // Find the stressed vowel (phoneme ending in 0, 1, or 2)
+        guard let stressedIndex = phonemes.firstIndex(where: { $0.hasSuffix("0") || $0.hasSuffix("1") || $0.hasSuffix("2") }) else {
+            return nil
         }
         
-        return 0.0
+        let stressedVowel = phonemes[stressedIndex]
+        let coda = Array(phonemes[(stressedIndex + 1)...])
+        
+        return (stressedVowel: stressedVowel, coda: coda)
+    }
+    
+    // Calculate rhyme strength between two signatures
+    private func calculateRhymeStrength(
+        targetSig: (stressedVowel: String, coda: [String]),
+        candidateSig: (stressedVowel: String, coda: [String])
+    ) -> RhymeStrength {
+        // Perfect rhyme: same stressed vowel and coda
+        if targetSig.stressedVowel == candidateSig.stressedVowel && targetSig.coda == candidateSig.coda {
+            return .perfect
+        }
+        
+        // Near rhyme: same stressed vowel, different coda
+        if targetSig.stressedVowel == candidateSig.stressedVowel {
+            return .near
+        }
+        
+        // Slant rhyme: similar stressed vowel
+        let targetVowelBase = String(targetSig.stressedVowel.dropLast())
+        let candidateVowelBase = String(candidateSig.stressedVowel.dropLast())
+        if targetVowelBase == candidateVowelBase {
+            return .slant
+        }
+        
+        return .none
+    }
+    
+    enum RhymeStrength {
+        case perfect
+        case near
+        case slant
+        case none
     }
     
     private func calculateSyllableScore(
@@ -168,4 +224,4 @@ class ConstraintFilter {
     }
 }
 
-import NaturalLanguage
+

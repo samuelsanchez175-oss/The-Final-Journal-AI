@@ -7,8 +7,10 @@ import SwiftUI
 struct RhymeDiagnosticsPanelView: View {
     let word: String
     
-    // Use the main dictionary store (unified implementation)
-    private let phonetics = FJCMUDICTStore.shared
+    // Use the main dictionary store via global accessor function
+    private var phonemesByWord: [String: [String]] {
+        getGlobalCMUDICTStore()
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -24,7 +26,7 @@ struct RhymeDiagnosticsPanelView: View {
 
             Divider()
 
-            let phonemes = phonetics.phonemesByWord[word.lowercased()] ?? []
+            let phonemes = phonemesByWord[word.lowercased()] ?? []
             if phonemes.isEmpty {
                 Text("No phonetic data found for this word.")
                     .foregroundStyle(.secondary)
@@ -32,7 +34,7 @@ struct RhymeDiagnosticsPanelView: View {
                 Text("Rhyme Tail: \(rhymeTail(for: phonemes))")
                     .font(.callout)
                 
-                FlowLayout(spacing: 8) {
+                PhonemeFlowLayout(spacing: 8) {
                     ForEach(phonemes, id: \.self) { p in
                         Text(p)
                             .padding(6)
@@ -56,7 +58,7 @@ struct RhymeDiagnosticsPanelView: View {
 }
 
 // Simple FlowLayout for the phoneme capsules
-struct FlowLayout: Layout {
+struct PhonemeFlowLayout: Layout {
     var spacing: CGFloat = 8
 
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {

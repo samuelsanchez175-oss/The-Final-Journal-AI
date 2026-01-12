@@ -9,6 +9,9 @@ final class Item {
     var body: String
     var audioPath: String?
     var transcription: String?
+    var transcriptionSegments: [TranscriptionSegment]?
+    var audioSummary: String?
+    var audioDuration: TimeInterval?
     
     // MARK: - Metadata Fields
     var bpm: Int? // 60-220
@@ -27,6 +30,9 @@ final class Item {
         self.body = body
         self.audioPath = nil
         self.transcription = nil
+        self.transcriptionSegments = nil
+        self.audioSummary = nil
+        self.audioDuration = nil
         self.bpm = nil
         self.key = nil
         self.scale = nil

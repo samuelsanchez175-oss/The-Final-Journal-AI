@@ -21,6 +21,110 @@ struct CadenceSummary: Codable {
     let lineCount: Int
 }
 
+// MARK: - Local Type Definitions (to avoid type resolution issues)
+
+private struct PhoneticSignature {
+    let stressedVowel: String
+    let coda: [String]
+}
+
+private enum RhymeStrength: Double {
+    case perfect = 1.0
+    case near = 0.75
+    case slant = 0.55
+}
+
+// NOTE: Highlight is defined in ContentView.swift and is accessible here
+
+private struct CadenceMetrics {
+    struct LineMetrics {
+        let lineIndex: Int
+        let syllableCount: Int
+        let stressCount: Int
+        let rhymeCount: Int
+    }
+    let lines: [LineMetrics]
+    
+    var averageSyllables: Double {
+        guard !lines.isEmpty else { return 0 }
+        return Double(lines.map(\.syllableCount).reduce(0, +)) / Double(lines.count)
+    }
+    var syllableVariance: Double {
+        let avg = averageSyllables
+        return lines.map { pow(Double($0.syllableCount) - avg, 2) }.reduce(0, +) / Double(lines.count)
+    }
+}
+
+private struct SyllableStressAnalyzer {
+    func analyze(word: String) -> (syllables: Int, stresses: [Int]) {
+        guard let phonemes = getCMUDICTPhonemes(for: word.lowercased()) else { return (0, []) }
+        var syllableIndex = 0
+        var stresses: [Int] = []
+        for phone in phonemes {
+            if let last = phone.last, last.isNumber {
+                if last == "1" { stresses.append(syllableIndex) }
+                syllableIndex += 1
+            }
+        }
+        return (syllableIndex, stresses)
+    }
+}
+
+private struct CadenceAnalyzer {
+    private let syllableAnalyzer = SyllableStressAnalyzer()
+    func analyze(text: String, highlights: [Highlight]) -> CadenceMetrics {
+        let lines = text.split(separator: "\n", omittingEmptySubsequences: false)
+        var results: [CadenceMetrics.LineMetrics] = []
+        for (index, line) in lines.enumerated() {
+            let words = line.split { !$0.isLetter }
+            var syllables = 0, stresses = 0, rhymeCount = 0
+            for wordSub in words {
+                let word = String(wordSub).lowercased()
+                let analysis = syllableAnalyzer.analyze(word: word)
+                syllables += analysis.syllables
+                stresses += analysis.stresses.count
+            }
+            rhymeCount = highlights.filter { highlight in
+                let rangeText = text[highlight.range]
+                return line.contains(rangeText)
+            }.count
+            results.append(CadenceMetrics.LineMetrics(lineIndex: index, syllableCount: syllables, stressCount: stresses, rhymeCount: rhymeCount))
+        }
+        return CadenceMetrics(lines: results)
+    }
+}
+
+// MARK: - Helper Functions for CMUDICT Access
+
+private func getCMUDICTPhonemes(for word: String) -> [String]? {
+    return getGlobalCMUDICTStore()[word.lowercased()]
+}
+
+private func extractSignature(from phonemes: [String]) -> PhoneticSignature? {
+    guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else {
+        return nil
+    }
+    let vowel = phonemes[idx]
+    let coda = Array(phonemes.dropFirst(idx + 1))
+    return PhoneticSignature(stressedVowel: vowel, coda: coda)
+}
+
+private func rhymeScore(_ a: PhoneticSignature, _ b: PhoneticSignature) -> RhymeStrength? {
+    if a.stressedVowel == b.stressedVowel && a.coda == b.coda {
+        return .perfect
+    }
+    if a.stressedVowel == b.stressedVowel {
+        return .near
+    }
+    // Check for slant rhyme (similar vowels)
+    let baseA = String(a.stressedVowel.dropLast())
+    let baseB = String(b.stressedVowel.dropLast())
+    if baseA == baseB {
+        return .slant
+    }
+    return nil
+}
+
 // MARK: - Rap Analysis Engine
 
 struct RapAnalysisEngine {
@@ -178,15 +282,15 @@ struct RapAnalysisEngine {
     
     private func wordsRhyme(_ word1: String, _ word2: String) -> Bool {
         // Use existing CMUDICT to check if words rhyme
-        guard let phonemes1 = FJCMUDICTStore.shared.phonemesByWord[word1.lowercased()],
-              let phonemes2 = FJCMUDICTStore.shared.phonemesByWord[word2.lowercased()],
-              let sig1 = RhymeHighlighterEngine.extractSignature(from: phonemes1),
-              let sig2 = RhymeHighlighterEngine.extractSignature(from: phonemes2) else {
+        guard let phonemes1 = getCMUDICTPhonemes(for: word1),
+              let phonemes2 = getCMUDICTPhonemes(for: word2),
+              let sig1 = extractSignature(from: phonemes1),
+              let sig2 = extractSignature(from: phonemes2) else {
             return false
         }
         
         // Check rhyme strength
-        if let strength = RhymeHighlighterEngine.rhymeScore(sig1, sig2) {
+        if let strength = rhymeScore(sig1, sig2) {
             return strength == .perfect || strength == .near
         }
         

@@ -27,7 +27,7 @@ final class ShareViewController: SLComposeServiceViewController {
                     if let text = item as? String {
                         self?.storeTextAndReturn(text)
                     } else if let url = item as? URL,
-                              let text = try? String(contentsOf: url) {
+                              let text = try? String(contentsOf: url, encoding: .utf8) {
                         self?.storeTextAndReturn(text)
                     } else {
                         self?.complete()
