@@ -40,7 +40,7 @@ DEFAULT_LEXICON = os.path.join(REPO_ROOT, "XJournal AI", "jargon_authority_lexic
 
 # Axis weights (full rubric in eval/README.md). Now covers A1/A2/A5/A6/A7
 # (A3 rhyme-quality and A4 flow/stress still pending).
-WEIGHTS = {"A1": 0.20, "A2": 0.20, "A5": 0.10, "A6": 0.10, "A7": 0.10}
+WEIGHTS = {"A1": 0.20, "A2": 0.20, "A3": 0.15, "A5": 0.10, "A6": 0.10, "A7": 0.10}
 
 # A5 tone proxy: the corpus-dominant register is confident + luxurious (see baseline). These
 # word sets are a heuristic until a real tone classifier / theme emotional_tone is wired (G1+).
@@ -58,6 +58,9 @@ RHYME_WINDOW = 2  # a bar counts as rhymed if it rhymes with either of the prior
 # end-rhyme rate is far lower (~0.12) because Gunna/Thug rhyme is largely INTERNAL and
 # multisyllabic, which last-word matching misses. G1 measures that properly (RhymeClusterEngine).
 RHYME_TARGET = 0.50
+# A3 internal/multisyllabic rhyme: density of rhyming word-pairs within a short window.
+# Real rap is internal-rhyme dense; ~0.12 = rich. Fixed target for now (corpus-grounded later).
+INTERNAL_RHYME_TARGET = 0.12
 
 PUNCT = ".,!?;:\"'()[]{}*—–-…"
 ADLIB_RE = re.compile(r"\((.*?)\)")          # (Skrrt), (yeah) ...
@@ -269,6 +272,39 @@ def score_rhyme(lines, cmu, base):
     return score, rate
 
 
+def score_rhyme_quality(lines, cmu):
+    """A3: internal + multisyllabic rhyme richness (depth beyond the end-word adjacency of A2)."""
+    words = []  # (word, rime tuple, rime-syllable count)
+    for line in lines:
+        for w in WORD_RE.findall(ADLIB_RE.sub(" ", line).lower()):
+            ph = cmu.get(w)
+            if ph:
+                r = _rime_strict(ph)
+                if r:
+                    words.append((w, r, sum(1 for p in ph if p[-1].isdigit())))
+    if len(words) < 2:
+        return 0.0, {}
+    internal_hits = multi_hits = total = 0
+    n = len(words)
+    for a in range(n):
+        for b in range(a + 1, min(n, a + 8)):          # nearby word pairs (window 8)
+            if words[a][0] == words[b][0]:
+                continue
+            total += 1
+            if words[a][1] == words[b][1]:             # same rime = rhyme
+                internal_hits += 1
+                if min(words[a][2], words[b][2]) >= 2:  # multisyllabic rime
+                    multi_hits += 1
+    if total == 0:
+        return 0.0, {}
+    density = internal_hits / total
+    base = min(100.0, (density / INTERNAL_RHYME_TARGET) * 100.0)
+    multi_bonus = min(20.0, multi_hits * 6.0)
+    score = min(100.0, base * 0.85 + multi_bonus)
+    return score, {"internal_pairs": internal_hits, "multisyllabic_pairs": multi_hits,
+                   "internal_density": round(density, 3)}
+
+
 def build_originality_index(bars):
     corpus_lines, grams = set(), set()
     for b in bars:
@@ -359,6 +395,20 @@ def score_tone(lines):
     return min(100.0, density * 600.0), counts      # ~1 tone word / 6 words ≈ full marks
 
 
+def grade_verse(lines, cmu, base, lexicon_terms, corpus_lines, corpus_4grams):
+    """Score a verse on all available axes. Returns (scores dict, details dict)."""
+    a1, counts = score_cadence(lines, cmu, base)
+    a2, rate = score_rhyme(lines, cmu, base)
+    a3, rq = score_rhyme_quality(lines, cmu)
+    a5, tone_counts = score_tone(lines)
+    a6, lex = score_lexical(lines, lexicon_terms)
+    a7, orig = score_originality(lines, corpus_lines, corpus_4grams)
+    scores = {"A1": a1, "A2": a2, "A3": a3, "A5": a5, "A6": a6, "A7": a7}
+    details = {"syllables": counts, "rhyme_rate": rate, "rhyme_quality": rq,
+               "tone": tone_counts, "lexical": lex, "originality": orig}
+    return scores, details
+
+
 def partial_authenticity(scores):
     tw = sum(WEIGHTS.values())
     return sum(scores[k] * WEIGHTS[k] for k in WEIGHTS) / tw
@@ -381,6 +431,7 @@ def main():
     ap.add_argument("--lexicon", default=DEFAULT_LEXICON)
     ap.add_argument("--log", action="store_true", help="append result to eval/grading_log.csv")
     ap.add_argument("--version-label", default="manual", help="pipeline label for the log")
+    ap.add_argument("--compare", nargs="+", metavar="VERSE", help="grade multiple verse files side-by-side")
     args = ap.parse_args()
 
     for p in (args.corpus, args.cmudict):
@@ -404,35 +455,45 @@ def main():
     if args.corpus_stats:
         return
 
-    verse_path = args.verse or (SAMPLE_VERSE_PATH if args.demo else None)
-    if not verse_path:
-        ap.error("provide --verse PATH or --demo")
-    lines = read_verse(verse_path)
-
     corpus_lines, corpus_4grams = build_originality_index(bars)
     lexicon_terms = load_lexicon_terms(args.lexicon)
-    a1, counts = score_cadence(lines, cmu, base)
-    a2, rate = score_rhyme(lines, cmu, base)
-    a5, tone_counts = score_tone(lines)
-    a6, lex = score_lexical(lines, lexicon_terms)
-    a7, orig = score_originality(lines, corpus_lines, corpus_4grams)
-    scores = {"A1": a1, "A2": a2, "A5": a5, "A6": a6, "A7": a7}
+
+    # Compare mode: grade several verses side-by-side (e.g. v2 output vs v3 output).
+    if args.compare:
+        print("\n=== COMPARE ===")
+        cols = list(WEIGHTS.keys())
+        print(f"{'verse':<26}" + "".join(f"{c:>6}" for c in cols) + f"{'PARTIAL':>9}  band")
+        for path in args.compare:
+            s, _ = grade_verse(read_verse(path), cmu, base, lexicon_terms, corpus_lines, corpus_4grams)
+            p = partial_authenticity(s)
+            print(f"{os.path.basename(path):<26}" + "".join(f"{s[c]:>6.1f}" for c in cols)
+                  + f"{p:>9.1f}  {band(p).split()[0]}")
+        return
+
+    verse_path = args.verse or (SAMPLE_VERSE_PATH if args.demo else None)
+    if not verse_path:
+        ap.error("provide --verse PATH, --demo, or --compare")
+    lines = read_verse(verse_path)
+
+    scores, det = grade_verse(lines, cmu, base, lexicon_terms, corpus_lines, corpus_4grams)
     partial = partial_authenticity(scores)
 
     print(f"\n=== VERSE: {os.path.relpath(verse_path, REPO_ROOT)} ({len(lines)} bars) ===")
-    print(f"  syllables/bar        : {counts}  (corpus mean {base['syll_mean']:.1f})")
-    print(f"  rhyme rate (end-word) : {rate:.2f}  (A2 target {RHYME_TARGET:.2f})")
-    print(f"  tone words           : {tone_counts}")
-    print(f"  lexical              : {lex}  ({len(lexicon_terms)} lexicon terms loaded)")
-    print(f"  originality          : {orig}")
+    print(f"  syllables/bar        : {det['syllables']}  (corpus mean {base['syll_mean']:.1f})")
+    print(f"  rhyme rate (end-word) : {det['rhyme_rate']:.2f}  (A2 target {RHYME_TARGET:.2f})")
+    print(f"  rhyme quality        : {det['rhyme_quality']}")
+    print(f"  tone words           : {det['tone']}")
+    print(f"  lexical              : {det['lexical']}  ({len(lexicon_terms)} lexicon terms loaded)")
+    print(f"  originality          : {det['originality']}")
     print("\n  --- AXES (0-100) ---")
-    print(f"  A1 Cadence             : {a1:6.1f}")
-    print(f"  A2 Rhyme density       : {a2:6.1f}")
-    print(f"  A5 Tone                : {a5:6.1f}")
-    print(f"  A6 Lexical authenticity: {a6:6.1f}")
-    print(f"  A7 Originality         : {a7:6.1f}")
+    print(f"  A1 Cadence             : {scores['A1']:6.1f}")
+    print(f"  A2 Rhyme density       : {scores['A2']:6.1f}")
+    print(f"  A3 Rhyme quality       : {scores['A3']:6.1f}")
+    print(f"  A5 Tone                : {scores['A5']:6.1f}")
+    print(f"  A6 Lexical authenticity: {scores['A6']:6.1f}")
+    print(f"  A7 Originality         : {scores['A7']:6.1f}")
     print(f"\n  PARTIAL AUTHENTICITY   : {partial:6.1f}   {band(partial)}")
-    print("  (partial = A1/A2/A5/A6/A7; A3 rhyme-quality + A4 flow/stress still pending)\n")
+    print("  (partial = A1/A2/A3/A5/A6/A7; A4 flow/stress still pending)\n")
 
     if args.log:
         log_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "grading_log.csv")
@@ -440,9 +501,9 @@ def main():
         with open(log_path, "a", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
             if new:
-                w.writerow(["version_label", "verse", "A1", "A2", "A5", "A6", "A7", "partial_authenticity"])
-            w.writerow([args.version_label, os.path.basename(verse_path),
-                        round(a1, 1), round(a2, 1), round(a5, 1), round(a6, 1), round(a7, 1), round(partial, 1)])
+                w.writerow(["version_label", "verse"] + list(WEIGHTS.keys()) + ["partial_authenticity"])
+            w.writerow([args.version_label, os.path.basename(verse_path)]
+                       + [round(scores[k], 1) for k in WEIGHTS] + [round(partial, 1)])
         print(f"  logged -> {os.path.relpath(log_path, REPO_ROOT)}")
 
 

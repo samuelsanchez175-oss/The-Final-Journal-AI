@@ -8,6 +8,7 @@ struct ModelPreferencesView: View {
     
     @State private var selectedModel: SuggestionModel = .modelG
     @State private var modelGSettings = ModelSettings()
+    @State private var modelGv3Settings = ModelSettings()
     @State private var modelYSettings = ModelSettings()
     
     var body: some View {
@@ -21,9 +22,20 @@ struct ModelPreferencesView: View {
                 // Settings Content
                 ScrollView {
                     VStack(spacing: 24) {
-                        if selectedModel == .modelG {
+                        switch selectedModel {
+                        case .modelG:
+                            modelGCoreToggle
+                            if ModelGEnvironment.useModelGCore {
+                                modelGv2Toggle
+                            }
                             ModelSettingsForm(settings: $modelGSettings, modelName: "Model G")
-                        } else {
+                        case .modelGv3:
+                            modelGv3Toggle
+                            Text("Model G v3 uses the upgraded prompt and scoring path. Tune voice and constraints independently from classic Model G.")
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                            ModelSettingsForm(settings: $modelGv3Settings, modelName: "Model G v3")
+                        case .modelY:
                             ModelSettingsForm(settings: $modelYSettings, modelName: "Model Y")
                         }
                     }
@@ -54,8 +66,55 @@ struct ModelPreferencesView: View {
         }
     }
     
+    // MARK: - Model G Core Toggle
+
+    private var modelGCoreToggle: some View {
+        Toggle(isOn: Binding(
+            get: { ModelGEnvironment.useModelGCore },
+            set: { ModelGEnvironment.useModelGCore = $0 }
+        )) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Model G Core v1.0")
+                    .font(.subheadline.weight(.semibold))
+                Text("Competitive bar generation, style branches, beat fingerprint. When off, uses legacy Model G batch generation.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+
+    private var modelGv3Toggle: some View {
+        Toggle(isOn: Binding(
+            get: { ModelGEnvironment.useModelGv3 },
+            set: { ModelGEnvironment.useModelGv3 = $0 }
+        )) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Model G v3 (Planned single-call)")
+                    .font(.subheadline.weight(.semibold))
+                Text("Plans the verse, then writes the whole verse in one call (~3 API calls vs ~17). Theme + voice aware. Takes precedence over v2 when on.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+
+    private var modelGv2Toggle: some View {
+        Toggle(isOn: Binding(
+            get: { ModelGEnvironment.useModelGv2 },
+            set: { ModelGEnvironment.useModelGv2 = $0 }
+        )) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Model G v2 (Flow DNA)")
+                    .font(.subheadline.weight(.semibold))
+                Text("Flow DNA analysis: syllable stress, beat grid, rhyme clusters, cadence vector. Cross-test with v1.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+
     // MARK: - Model Selector
-    
+
     private var modelSelector: some View {
         HStack(spacing: 0) {
             ForEach(SuggestionModel.allCases, id: \.self) { model in
@@ -65,7 +124,7 @@ struct ModelPreferencesView: View {
                     }
                 } label: {
                     VStack(spacing: 8) {
-                        Image(systemName: model == .modelG ? "sparkles" : "sparkles.rectangle.stack")
+                        Image(systemName: symbolName(for: model))
                             .font(.title2)
                         
                         Text(model.displayName)
@@ -84,6 +143,14 @@ struct ModelPreferencesView: View {
         }
         .background(.ultraThinMaterial)
     }
+
+    private func symbolName(for model: SuggestionModel) -> String {
+        switch model {
+        case .modelG: return "sparkles"
+        case .modelY: return "sparkles.rectangle.stack"
+        case .modelGv3: return "wand.and.stars"
+        }
+    }
     
     // MARK: - Settings Management
     
@@ -91,26 +158,55 @@ struct ModelPreferencesView: View {
         // Load Model G settings
         if let data = UserDefaults.standard.data(forKey: "modelG_settings"),
            let decoded = try? JSONDecoder().decode(ModelSettings.self, from: data) {
-            modelGSettings = decoded
+            modelGSettings = clampedSettings(decoded)
+        } else {
+            // Use defaults for Model G
+            modelGSettings = clampedSettings(ModelSettings.defaultForModelG())
         }
         
+        // Load Model G v3 settings
+        if let data = UserDefaults.standard.data(forKey: "modelGv3_settings"),
+           let decoded = try? JSONDecoder().decode(ModelSettings.self, from: data) {
+            modelGv3Settings = clampedSettings(decoded)
+        } else {
+            modelGv3Settings = clampedSettings(ModelSettings.defaultForModelG())
+        }
+
         // Load Model Y settings
         if let data = UserDefaults.standard.data(forKey: "modelY_settings"),
            let decoded = try? JSONDecoder().decode(ModelSettings.self, from: data) {
-            modelYSettings = decoded
+            modelYSettings = clampedSettings(decoded)
+        } else {
+            // Use defaults for Model Y
+            modelYSettings = clampedSettings(ModelSettings.defaultForModelY())
         }
     }
     
     private func saveSettings() {
+        modelGSettings = clampedSettings(modelGSettings)
+        modelGv3Settings = clampedSettings(modelGv3Settings)
+        modelYSettings = clampedSettings(modelYSettings)
+
         // Save Model G settings
         if let encoded = try? JSONEncoder().encode(modelGSettings) {
             UserDefaults.standard.set(encoded, forKey: "modelG_settings")
+        }
+
+        if let encoded = try? JSONEncoder().encode(modelGv3Settings) {
+            UserDefaults.standard.set(encoded, forKey: "modelGv3_settings")
         }
         
         // Save Model Y settings
         if let encoded = try? JSONEncoder().encode(modelYSettings) {
             UserDefaults.standard.set(encoded, forKey: "modelY_settings")
         }
+    }
+
+    private func clampedSettings(_ settings: ModelSettings) -> ModelSettings {
+        var clamped = settings
+        clamped.silenceThreshold = min(max(clamped.silenceThreshold, 0.0), 0.8)
+        clamped.registerWeight = min(max(clamped.registerWeight, 0.0), 1.0)
+        return clamped
     }
 }
 
@@ -122,6 +218,12 @@ struct ModelSettingsForm: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
+            // Intro: what these settings control
+            Text("These options control how \(modelName) suggests bars: voice, tone, restraint, and when it returns no suggestion.")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .padding(.bottom, 8)
+            
             // Priority Section
             prioritySection
             
@@ -162,263 +264,255 @@ struct ModelSettingsForm: View {
             
             Divider()
             
-            // Creativity & Originality Section
-            creativityOriginalitySection
-            
-            Divider()
-            
             // Content Generation Section
             contentGenerationSection
         }
     }
     
-    // MARK: - Priority Section
+    // MARK: - Editorial Authority & Risk Section
     
     private var prioritySection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Priority & Focus")
-                .font(.headline)
+            SectionHeader(title: "What to protect", affects: "Which aspect of your voice the AI prioritizes when it refuses or adjusts suggestions.")
             
             QuestionView(
-                question: "What should be the highest priority?",
+                question: "What should the system protect?",
                 options: [
-                    "Balanced approach (all aspects equally important)",
-                    "Musical flow & rhythm (flow is everything)",
-                    "Thematic depth & narrative (story is everything)",
-                    "Voice consistency (match user's voice strictly)"
+                    "Authority (maintain earned voice, refuse weak suggestions)",
+                    "Exposure (guard against over-sharing, prefer implication)",
+                    "Cultural specificity (preserve authentic references)",
+                    "Narrative integrity (maintain story coherence above all)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.priorityFocus.rawValue },
-                    set: { settings.priorityFocus = PriorityFocus(rawValue: $0) ?? .balanced }
+                    get: { settings.editorialProtection.rawValue },
+                    set: { settings.editorialProtection = EditorialProtection(rawValue: $0) ?? .authority }
                 )
             )
         }
     }
     
-    // MARK: - Thematic Complexity Section
+    // MARK: - Implication & Compression Section
     
     private var thematicComplexitySection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Thematic Complexity")
-                .font(.headline)
+            SectionHeader(title: "Show vs tell", affects: "How much the bars spell things out vs. leave things implied.")
             
             QuestionView(
-                question: "How should the model handle thematic contradictions/ironies?",
+                question: "How much should be implied without explanation?",
                 options: [
-                    "Preserve contradictions strictly (maintain tension)",
-                    "Detect but allow smooth transitions when appropriate",
-                    "Prioritize coherence over contradictions"
+                    "Heavy implication (show aftermath, not events)",
+                    "Moderate implication (balance shown and told)",
+                    "Explicit (explain when necessary)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.contradictionHandling.rawValue },
-                    set: { settings.contradictionHandling = ContradictionHandling(rawValue: $0) ?? .preserve }
+                    get: { settings.implicationLevel.rawValue },
+                    set: { settings.implicationLevel = ImplicationLevel(rawValue: $0) ?? .moderate }
                 )
             )
             
             QuestionView(
-                question: "How should surface themes vs underlying themes be handled?",
+                question: "How should compression work?",
                 options: [
-                    "Maintain both layers strictly (preserve depth)",
-                    "Match whatever mode the current verse is in",
-                    "Allow intentional transitions between surface and depth"
+                    "High compression (silence where appropriate)",
+                    "Moderate compression (selective silence)",
+                    "Low compression (fill gaps, explain)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.thematicLayering.rawValue },
-                    set: { settings.thematicLayering = ThematicLayering(rawValue: $0) ?? .maintainBoth }
+                    get: { settings.compressionLevel.rawValue },
+                    set: { settings.compressionLevel = CompressionLevel(rawValue: $0) ?? .moderate }
                 )
             )
         }
     }
     
-    // MARK: - Musical Constraints Section
+    // MARK: - Register Constraints Section
     
     private var musicalConstraintsSection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Musical Constraints")
-                .font(.headline)
+            SectionHeader(title: "Formality & word choice", affects: "How formal or street the bars sound and how consistent that tone stays.")
             
             QuestionView(
-                question: "How strict should musical constraints be?",
+                question: "What register constraints should apply?",
                 options: [
-                    "Very strict (musical flow is critical)",
-                    "Moderate (balance flow with content)",
-                    "Flexible (allow creative freedom)"
+                    "Strict register (maintain linguistic register consistently)",
+                    "Moderate register (allow register shifts when narratively strong)",
+                    "Flexible register (register follows narrative needs)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.musicalStrictness.rawValue },
-                    set: { settings.musicalStrictness = MusicalStrictness(rawValue: $0) ?? .moderate }
+                    get: { settings.registerStrictness.rawValue },
+                    set: { settings.registerStrictness = RegisterStrictness(rawValue: $0) ?? .moderate }
                 )
             )
             
             VStack(alignment: .leading, spacing: 8) {
-                Text("Musical Constraints Weight")
+                Text("Register Enforcement Weight")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
+                Text("How strongly the chosen register is enforced in every line.")
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
                 
                 HStack {
-                    Text("\(Int(settings.musicalWeight * 100))%")
+                    Text("\(Int(settings.registerWeight * 100))%")
                         .font(.headline)
                         .frame(width: 60)
                     
-                    Slider(value: $settings.musicalWeight, in: 0.1...0.5, step: 0.05)
+                    Slider(value: $settings.registerWeight, in: 0.1...0.5, step: 0.05)
                 }
             }
             .padding(.vertical, 8)
         }
     }
     
-    // MARK: - Voice & Style Section
+    // MARK: - Authority & Dominance Section
     
     private var voiceStyleSection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Voice & Style")
-                .font(.headline)
+            SectionHeader(title: "Confidence of the voice", affects: "How sure and commanding the bars sound vs. tentative or exploratory.")
             
             QuestionView(
-                question: "How should defensive vs vulnerable voice be handled?",
+                question: "How much authority should statements carry?",
                 options: [
-                    "Strictly match (defensive stays defensive)",
-                    "Allow transitions when narratively appropriate",
-                    "Detect but let AI decide based on narrative needs"
+                    "High authority (final, earned statements)",
+                    "Moderate authority (confident but open)",
+                    "Low authority (tentative, exploratory)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.voiceMatching.rawValue },
-                    set: { settings.voiceMatching = VoiceMatching(rawValue: $0) ?? .strictMatch }
+                    get: { settings.authorityLevel.rawValue },
+                    set: { settings.authorityLevel = AuthorityLevel(rawValue: $0) ?? .moderate }
                 )
             )
             
             QuestionView(
-                question: "How should topic treatment modes be handled?",
+                question: "How much dominance should the voice assert?",
                 options: [
-                    "Strictly match detected mode",
-                    "Detect but allow mode shifts if narratively appropriate",
-                    "Treat all topics the same way"
+                    "High dominance (assertive, commanding)",
+                    "Moderate dominance (confident but not overbearing)",
+                    "Low dominance (collaborative, yielding)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.topicModeHandling.rawValue },
-                    set: { settings.topicModeHandling = TopicModeHandling(rawValue: $0) ?? .strictMatch }
+                    get: { settings.dominanceLevel.rawValue },
+                    set: { settings.dominanceLevel = DominanceLevel(rawValue: $0) ?? .moderate }
                 )
             )
         }
     }
     
-    // MARK: - Output Style & Tone Section
+    // MARK: - Exposure & Cultural Specificity Section
     
     private var outputStyleToneSection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Output Style & Tone")
-                .font(.headline)
+            SectionHeader(title: "Personal vs guarded, niche vs universal", affects: "How much the bars share, how specific the references are, and how bold or safe the choices are.")
             
             QuestionView(
-                question: "What aggressiveness level should the output have?",
+                question: "How much exposure can this voice afford?",
                 options: [
-                    "Calm (subtle, restrained)",
-                    "Moderate (balanced intensity)",
-                    "Aggressive (high energy, bold)"
+                    "Low exposure (guarded, minimal sharing)",
+                    "Moderate exposure (selective sharing)",
+                    "High exposure (open, revealing)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.aggressivenessLevel.rawValue },
-                    set: { settings.aggressivenessLevel = AggressivenessLevel(rawValue: $0) ?? .moderate }
+                    get: { settings.exposureLevel.rawValue },
+                    set: { settings.exposureLevel = ExposureLevel(rawValue: $0) ?? .moderate }
                 )
             )
             
             QuestionView(
-                question: "What formality level should the language use?",
+                question: "How culturally specific should references be?",
                 options: [
-                    "Street slang (casual, authentic)",
-                    "Mixed (varied register)",
-                    "Formal (polished, refined)"
+                    "High specificity (assume shared understanding)",
+                    "Moderate specificity (some explanation)",
+                    "Low specificity (universal, explained)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.formalityPreference.rawValue },
-                    set: { settings.formalityPreference = FormalityPreference(rawValue: $0) ?? .mixed }
+                    get: { settings.culturalSpecificity.rawValue },
+                    set: { settings.culturalSpecificity = CulturalSpecificity(rawValue: $0) ?? .moderate }
                 )
             )
             
             QuestionView(
-                question: "What energy level should the output have?",
+                question: "How much risk can this voice afford?",
                 options: [
-                    "Low (contemplative, mellow)",
-                    "Medium (balanced energy)",
-                    "High (intense, dynamic)"
+                    "Low risk (conservative, safe choices)",
+                    "Moderate risk (calculated risks)",
+                    "High risk (experimental, bold choices)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.energyLevelPreference.rawValue },
-                    set: { settings.energyLevelPreference = EnergyLevelPreference(rawValue: $0) ?? .medium }
+                    get: { settings.riskTolerance.rawValue },
+                    set: { settings.riskTolerance = RiskTolerance(rawValue: $0) ?? .moderate }
                 )
             )
             
             QuestionView(
-                question: "How much metaphor and figurative language?",
+                question: "How symbolic should language be?",
                 options: [
-                    "Minimal (direct, literal)",
-                    "Moderate (balanced imagery)",
-                    "Heavy (rich metaphors, symbolism)"
+                    "High symbolism (fluid, abstract language)",
+                    "Moderate symbolism (mix of concrete and abstract)",
+                    "Low symbolism (concrete, literal language)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.metaphorDensity.rawValue },
-                    set: { settings.metaphorDensity = MetaphorDensity(rawValue: $0) ?? .moderate }
+                    get: { settings.symbolismLevel.rawValue },
+                    set: { settings.symbolismLevel = SymbolismLevel(rawValue: $0) ?? .moderate }
                 )
             )
         }
     }
     
-    // MARK: - Narrative Approach Section
+    // MARK: - Finality & Restraint Section
     
     private var narrativeApproachSection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Narrative Approach")
-                .font(.headline)
+            SectionHeader(title: "Decisiveness & when to stay silent", affects: "How conclusive the bars feel, how minimal the wording is, and how often the AI returns no suggestion.")
             
             QuestionView(
-                question: "How should the story progress?",
+                question: "How final should statements feel?",
                 options: [
-                    "Linear (chronological, straightforward)",
-                    "Moderate (some variation)",
-                    "Non-linear (experimental, abstract)"
+                    "High finality (conclusive, definitive)",
+                    "Moderate finality (confident but open-ended)",
+                    "Low finality (exploratory, provisional)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.storyProgressionStyle.rawValue },
-                    set: { settings.storyProgressionStyle = StoryProgressionStyle(rawValue: $0) ?? .linear }
+                    get: { settings.finalityLevel.rawValue },
+                    set: { settings.finalityLevel = FinalityLevel(rawValue: $0) ?? .moderate }
                 )
             )
             
             QuestionView(
-                question: "How deep should character development be?",
+                question: "How much restraint should be exercised?",
                 options: [
-                    "Surface (simple, direct)",
-                    "Moderate (some depth)",
-                    "Deep (complex, layered)"
+                    "High restraint (minimal, essential only)",
+                    "Moderate restraint (selective expression)",
+                    "Low restraint (full expression)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.characterDevelopmentDepth.rawValue },
-                    set: { settings.characterDevelopmentDepth = CharacterDevelopmentDepth(rawValue: $0) ?? .moderate }
+                    get: { settings.restraintLevel.rawValue },
+                    set: { settings.restraintLevel = RestraintLevel(rawValue: $0) ?? .moderate }
                 )
             )
             
             QuestionView(
-                question: "What emotional range should be explored?",
+                question: "How much should posture shifts be allowed?",
                 options: [
-                    "Narrow (focused emotions)",
-                    "Moderate (varied emotions)",
-                    "Wide (full emotional spectrum)"
+                    "No shifts (maintain consistent posture)",
+                    "Moderate shifts (allow when narratively strong)",
+                    "Flexible shifts (posture follows narrative)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.emotionalRange.rawValue },
-                    set: { settings.emotionalRange = EmotionalRange(rawValue: $0) ?? .moderate }
+                    get: { settings.postureShiftTolerance.rawValue },
+                    set: { settings.postureShiftTolerance = PostureShiftTolerance(rawValue: $0) ?? .moderate }
                 )
             )
             
             QuestionView(
-                question: "How should narratives resolve?",
+                question: "When should the system refuse to generate?",
                 options: [
-                    "Open-ended (ambiguous, thought-provoking)",
-                    "Balanced (some closure)",
-                    "Conclusive (clear resolution)"
+                    "Frequent refusal (silence when uncertain)",
+                    "Moderate refusal (refuse when clearly misaligned)",
+                    "Rare refusal (generate even when uncertain)"
                 ],
                 selectedIndex: Binding(
-                    get: { settings.resolutionPreference.rawValue },
-                    set: { settings.resolutionPreference = ResolutionPreference(rawValue: $0) ?? .balanced }
+                    get: { settings.refusalFrequency.rawValue },
+                    set: { settings.refusalFrequency = RefusalFrequency(rawValue: $0) ?? .moderate }
                 )
             )
         }
@@ -428,8 +522,7 @@ struct ModelSettingsForm: View {
     
     private var musicalPreferencesSection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Musical Preferences")
-                .font(.headline)
+            SectionHeader(title: "Flow, rhyme & beat", affects: "Density of syllables, rhyme complexity, and how tightly bars lock to the beat.")
             
             QuestionView(
                 question: "How dense should the flow be?",
@@ -489,8 +582,7 @@ struct ModelSettingsForm: View {
     
     private var contentBoundariesSection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Content Boundaries")
-                .font(.headline)
+            SectionHeader(title: "Topics, explicitness & references", affects: "What to avoid, how explicit language can be, and how personal or abstract references are.")
             
             VStack(alignment: .leading, spacing: 8) {
                 Text("Topic Restrictions")
@@ -530,7 +622,7 @@ struct ModelSettingsForm: View {
             )
             
             QuestionView(
-                question: "How sensitive should cultural context be?",
+                question: "How much shared understanding should be assumed?",
                 options: [
                     "Low (universal themes)",
                     "Moderate (some cultural awareness)",
@@ -544,92 +636,56 @@ struct ModelSettingsForm: View {
         }
     }
     
-    // MARK: - Creativity & Originality Section
-    
-    private var creativityOriginalitySection: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text("Creativity & Originality")
-                .font(.headline)
-            
-            QuestionView(
-                question: "Balance between adaptation and originality?",
-                options: [
-                    "Adaptation (draw from existing lyrics)",
-                    "Balanced (mix of both)",
-                    "Originality (create fresh content)"
-                ],
-                selectedIndex: Binding(
-                    get: { settings.adaptationOriginalityBalance.rawValue },
-                    set: { settings.adaptationOriginalityBalance = AdaptationOriginalityBalance(rawValue: $0) ?? .balanced }
-                )
-            )
-            
-            QuestionView(
-                question: "How often should references appear?",
-                options: [
-                    "Rare (minimal references)",
-                    "Moderate (occasional references)",
-                    "Frequent (many references)"
-                ],
-                selectedIndex: Binding(
-                    get: { settings.referenceFrequency.rawValue },
-                    set: { settings.referenceFrequency = ReferenceFrequency(rawValue: $0) ?? .moderate }
-                )
-            )
-            
-            QuestionView(
-                question: "How experimental should language be?",
-                options: [
-                    "Conservative (traditional language)",
-                    "Moderate (some experimentation)",
-                    "Experimental (innovative, creative)"
-                ],
-                selectedIndex: Binding(
-                    get: { settings.experimentalLanguageTolerance.rawValue },
-                    set: { settings.experimentalLanguageTolerance = ExperimentalLanguageTolerance(rawValue: $0) ?? .moderate }
-                )
-            )
-            
-            QuestionView(
-                question: "How much genre blending should occur?",
-                options: [
-                    "Pure (stay within rap genre)",
-                    "Moderate (some blending)",
-                    "Blended (cross-genre elements)"
-                ],
-                selectedIndex: Binding(
-                    get: { settings.genreBlendingPreference.rawValue },
-                    set: { settings.genreBlendingPreference = GenreBlendingPreference(rawValue: $0) ?? .moderate }
-                )
-            )
-        }
-    }
-    
     // MARK: - Content Generation Section
     
     private var contentGenerationSection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Content Generation")
-                .font(.headline)
+            SectionHeader(title: "When to return no suggestion", affects: "If the AI’s confidence is below this level, it returns nothing instead of a weak bar.")
             
             VStack(alignment: .leading, spacing: 8) {
-                Text("Candidate Selection vs Free Generation")
+                Text("Silence Threshold")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
+                Text("Left = suggest more often (even when unsure). Right = only suggest when confident.")
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
                 
                 HStack {
-                    Text("\(Int(settings.candidateSelectionRatio * 100))% Candidates")
+                    Text("Suggest more")
                         .font(.caption)
                     
                     Spacer()
                     
-                    Text("\(Int((1 - settings.candidateSelectionRatio) * 100))% Free")
+                    Text("Refuse more")
                         .font(.caption)
                 }
                 
-                Slider(value: $settings.candidateSelectionRatio, in: 0.5...0.9, step: 0.1)
+                HStack {
+                    Text("\(String(format: "%.1f", settings.silenceThreshold))")
+                        .font(.headline)
+                        .frame(width: 60)
+                    
+                    Slider(value: $settings.silenceThreshold, in: 0.0...0.8, step: 0.1)
+                }
             }
             .padding(.vertical, 8)
+        }
+    }
+}
+
+// MARK: - Section Header with "Affects" subtitle
+
+private struct SectionHeader: View {
+    let title: String
+    let affects: String
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(title)
+                .font(.headline)
+            Text("Affects: \(affects)")
+                .font(.caption)
+                .foregroundStyle(.secondary)
         }
     }
 }
@@ -689,28 +745,33 @@ struct QuestionView: View {
 // MARK: - Model Settings Data Structure
 
 struct ModelSettings: Codable {
-    var priorityFocus: PriorityFocus = .balanced
-    var contradictionHandling: ContradictionHandling = .detectAllow
-    var thematicLayering: ThematicLayering = .maintainBoth
-    var musicalStrictness: MusicalStrictness = .moderate
-    var musicalWeight: Double = 0.17
-    var voiceMatching: VoiceMatching = .strictMatch
-    var topicModeHandling: TopicModeHandling = .detectAllow
-    var candidateSelectionRatio: Double = 0.7
+    // Editorial Authority & Risk
+    var editorialProtection: EditorialProtection = .authority
+    var implicationLevel: ImplicationLevel = .moderate
+    var compressionLevel: CompressionLevel = .moderate
+    var registerStrictness: RegisterStrictness = .moderate
+    var registerWeight: Double = 0.17
     
-    // Output Style & Tone
-    var aggressivenessLevel: AggressivenessLevel = .moderate
-    var formalityPreference: FormalityPreference = .mixed
-    var energyLevelPreference: EnergyLevelPreference = .medium
-    var metaphorDensity: MetaphorDensity = .moderate
+    // Authority & Dominance
+    var authorityLevel: AuthorityLevel = .moderate
+    var dominanceLevel: DominanceLevel = .moderate
     
-    // Narrative Approach
-    var storyProgressionStyle: StoryProgressionStyle = .linear
-    var characterDevelopmentDepth: CharacterDevelopmentDepth = .moderate
-    var emotionalRange: EmotionalRange = .moderate
-    var resolutionPreference: ResolutionPreference = .balanced
+    // Exposure & Cultural Specificity
+    var exposureLevel: ExposureLevel = .moderate
+    var culturalSpecificity: CulturalSpecificity = .moderate
+    var riskTolerance: RiskTolerance = .moderate
+    var symbolismLevel: SymbolismLevel = .moderate
     
-    // Musical Preferences
+    // Finality & Restraint
+    var finalityLevel: FinalityLevel = .moderate
+    var restraintLevel: RestraintLevel = .moderate
+    var postureShiftTolerance: PostureShiftTolerance = .moderate
+    var refusalFrequency: RefusalFrequency = .moderate
+    
+    // Silence Threshold
+    var silenceThreshold: Double = 0.5
+    
+    // Musical Preferences (kept as-is)
     var flowDensity: FlowDensity = .moderate
     var rhymeComplexity: RhymeComplexity = .moderate
     var syllableVarianceTolerance: SyllableVarianceTolerance = .moderate
@@ -722,101 +783,314 @@ struct ModelSettings: Codable {
     var referenceStyle: ReferenceStyle = .balanced
     var culturalContextSensitivity: CulturalContextSensitivity = .moderate
     
-    // Creativity & Originality
-    var adaptationOriginalityBalance: AdaptationOriginalityBalance = .balanced
-    var referenceFrequency: ReferenceFrequency = .moderate
-    var experimentalLanguageTolerance: ExperimentalLanguageTolerance = .moderate
-    var genreBlendingPreference: GenreBlendingPreference = .moderate
+    // MARK: - Initializers
+    
+    init() {
+        // Default initializer - all properties use their default values
+    }
+    
+    // MARK: - Default Presets
+    
+    static func defaultForModelG() -> ModelSettings {
+        var settings = ModelSettings()
+        settings.editorialProtection = .authority
+        settings.implicationLevel = .heavy
+        settings.compressionLevel = .high
+        settings.registerStrictness = .strict
+        settings.authorityLevel = .high
+        settings.dominanceLevel = .moderate
+        settings.exposureLevel = .low
+        settings.culturalSpecificity = .high
+        settings.riskTolerance = .low
+        settings.symbolismLevel = .moderate
+        settings.finalityLevel = .high
+        settings.restraintLevel = .high
+        settings.postureShiftTolerance = .noShifts
+        settings.refusalFrequency = .frequent
+        settings.silenceThreshold = 0.7
+        return settings
+    }
+    
+    static func defaultForModelY() -> ModelSettings {
+        var settings = ModelSettings()
+        settings.editorialProtection = .culturalSpecificity
+        settings.implicationLevel = .moderate
+        settings.compressionLevel = .moderate
+        settings.registerStrictness = .flexible
+        settings.authorityLevel = .moderate
+        settings.dominanceLevel = .high
+        settings.exposureLevel = .moderate
+        settings.culturalSpecificity = .high
+        settings.riskTolerance = .high
+        settings.symbolismLevel = .high
+        settings.finalityLevel = .moderate
+        settings.restraintLevel = .moderate
+        settings.postureShiftTolerance = .flexible
+        settings.refusalFrequency = .moderate
+        settings.silenceThreshold = 0.4
+        return settings
+    }
+    
+    // MARK: - Backward Compatibility (for migration)
+    
+    enum CodingKeys: String, CodingKey {
+        // New keys
+        case editorialProtection, implicationLevel, compressionLevel
+        case registerStrictness, registerWeight
+        case authorityLevel, dominanceLevel
+        case exposureLevel, culturalSpecificity, riskTolerance, symbolismLevel
+        case finalityLevel, restraintLevel, postureShiftTolerance, refusalFrequency
+        case silenceThreshold
+        case flowDensity, rhymeComplexity, syllableVarianceTolerance, beatSyncPreference
+        case topicRestrictions, languageRestrictions, referenceStyle, culturalContextSensitivity
+        
+        // Old keys (for migration)
+        case priorityFocus, contradictionHandling, thematicLayering
+        case musicalStrictness, musicalWeight
+        case voiceMatching, topicModeHandling, candidateSelectionRatio
+        case aggressivenessLevel, formalityPreference, energyLevelPreference, metaphorDensity
+        case storyProgressionStyle, characterDevelopmentDepth, emotionalRange, resolutionPreference
+        case adaptationOriginalityBalance, referenceFrequency, experimentalLanguageTolerance, genreBlendingPreference
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        // Try new keys first, fall back to old keys for migration
+        if let value = try? container.decode(EditorialProtection.self, forKey: .editorialProtection) {
+            self.editorialProtection = value
+        } else if let oldValue = try? container.decode(Int.self, forKey: .priorityFocus) {
+            // Map old PriorityFocus to new EditorialProtection
+            switch oldValue {
+            case 0: self.editorialProtection = .authority // balanced -> authority
+            case 1: self.editorialProtection = .narrativeIntegrity // musicalFlow -> narrativeIntegrity
+            case 2: self.editorialProtection = .narrativeIntegrity // thematicDepth -> narrativeIntegrity
+            case 3: self.editorialProtection = .authority // voiceConsistency -> authority
+            default: self.editorialProtection = .authority
+            }
+        } else {
+            self.editorialProtection = .authority
+        }
+        
+        // Similar migration for other fields...
+        // For brevity, I'll implement key migrations and use defaults for others
+        self.implicationLevel = (try? container.decode(ImplicationLevel.self, forKey: .implicationLevel)) ?? 
+            ((try? container.decode(Int.self, forKey: .contradictionHandling)).map { ImplicationLevel(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.compressionLevel = (try? container.decode(CompressionLevel.self, forKey: .compressionLevel)) ?? 
+            ((try? container.decode(Int.self, forKey: .thematicLayering)).map { CompressionLevel(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.registerStrictness = (try? container.decode(RegisterStrictness.self, forKey: .registerStrictness)) ?? 
+            ((try? container.decode(Int.self, forKey: .musicalStrictness)).map { RegisterStrictness(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.registerWeight = (try? container.decode(Double.self, forKey: .registerWeight)) ?? 
+            (try? container.decode(Double.self, forKey: .musicalWeight)) ?? 0.17
+        
+        self.authorityLevel = (try? container.decode(AuthorityLevel.self, forKey: .authorityLevel)) ?? 
+            ((try? container.decode(Int.self, forKey: .voiceMatching)).map { AuthorityLevel(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.dominanceLevel = (try? container.decode(DominanceLevel.self, forKey: .dominanceLevel)) ?? 
+            ((try? container.decode(Int.self, forKey: .topicModeHandling)).map { DominanceLevel(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.exposureLevel = (try? container.decode(ExposureLevel.self, forKey: .exposureLevel)) ?? 
+            ((try? container.decode(Int.self, forKey: .aggressivenessLevel)).map { ExposureLevel(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.culturalSpecificity = (try? container.decode(CulturalSpecificity.self, forKey: .culturalSpecificity)) ?? 
+            ((try? container.decode(Int.self, forKey: .formalityPreference)).map { CulturalSpecificity(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.riskTolerance = (try? container.decode(RiskTolerance.self, forKey: .riskTolerance)) ?? 
+            ((try? container.decode(Int.self, forKey: .energyLevelPreference)).map { RiskTolerance(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.symbolismLevel = (try? container.decode(SymbolismLevel.self, forKey: .symbolismLevel)) ?? 
+            ((try? container.decode(Int.self, forKey: .metaphorDensity)).map { SymbolismLevel(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.finalityLevel = (try? container.decode(FinalityLevel.self, forKey: .finalityLevel)) ?? 
+            ((try? container.decode(Int.self, forKey: .storyProgressionStyle)).map { FinalityLevel(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.restraintLevel = (try? container.decode(RestraintLevel.self, forKey: .restraintLevel)) ?? 
+            ((try? container.decode(Int.self, forKey: .characterDevelopmentDepth)).map { RestraintLevel(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.postureShiftTolerance = (try? container.decode(PostureShiftTolerance.self, forKey: .postureShiftTolerance)) ?? 
+            ((try? container.decode(Int.self, forKey: .emotionalRange)).map { PostureShiftTolerance(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.refusalFrequency = (try? container.decode(RefusalFrequency.self, forKey: .refusalFrequency)) ?? 
+            ((try? container.decode(Int.self, forKey: .resolutionPreference)).map { RefusalFrequency(rawValue: $0) ?? .moderate }) ?? .moderate
+        
+        self.silenceThreshold = (try? container.decode(Double.self, forKey: .silenceThreshold)) ?? 
+            ((try? container.decode(Double.self, forKey: .candidateSelectionRatio)).map { 1.0 - $0 }) ?? 0.5
+        
+        // Keep existing fields
+        self.flowDensity = (try? container.decode(FlowDensity.self, forKey: .flowDensity)) ?? .moderate
+        self.rhymeComplexity = (try? container.decode(RhymeComplexity.self, forKey: .rhymeComplexity)) ?? .moderate
+        self.syllableVarianceTolerance = (try? container.decode(SyllableVarianceTolerance.self, forKey: .syllableVarianceTolerance)) ?? .moderate
+        self.beatSyncPreference = (try? container.decode(BeatSyncPreference.self, forKey: .beatSyncPreference)) ?? .moderate
+        self.topicRestrictions = (try? container.decode(String.self, forKey: .topicRestrictions)) ?? ""
+        self.languageRestrictions = (try? container.decode(LanguageRestrictions.self, forKey: .languageRestrictions)) ?? .moderate
+        self.referenceStyle = (try? container.decode(ReferenceStyle.self, forKey: .referenceStyle)) ?? .balanced
+        self.culturalContextSensitivity = (try? container.decode(CulturalContextSensitivity.self, forKey: .culturalContextSensitivity)) ?? .moderate
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        // Encode new keys only
+        try container.encode(editorialProtection, forKey: .editorialProtection)
+        try container.encode(implicationLevel, forKey: .implicationLevel)
+        try container.encode(compressionLevel, forKey: .compressionLevel)
+        try container.encode(registerStrictness, forKey: .registerStrictness)
+        try container.encode(registerWeight, forKey: .registerWeight)
+        try container.encode(authorityLevel, forKey: .authorityLevel)
+        try container.encode(dominanceLevel, forKey: .dominanceLevel)
+        try container.encode(exposureLevel, forKey: .exposureLevel)
+        try container.encode(culturalSpecificity, forKey: .culturalSpecificity)
+        try container.encode(riskTolerance, forKey: .riskTolerance)
+        try container.encode(symbolismLevel, forKey: .symbolismLevel)
+        try container.encode(finalityLevel, forKey: .finalityLevel)
+        try container.encode(restraintLevel, forKey: .restraintLevel)
+        try container.encode(postureShiftTolerance, forKey: .postureShiftTolerance)
+        try container.encode(refusalFrequency, forKey: .refusalFrequency)
+        try container.encode(silenceThreshold, forKey: .silenceThreshold)
+        try container.encode(flowDensity, forKey: .flowDensity)
+        try container.encode(rhymeComplexity, forKey: .rhymeComplexity)
+        try container.encode(syllableVarianceTolerance, forKey: .syllableVarianceTolerance)
+        try container.encode(beatSyncPreference, forKey: .beatSyncPreference)
+        try container.encode(topicRestrictions, forKey: .topicRestrictions)
+        try container.encode(languageRestrictions, forKey: .languageRestrictions)
+        try container.encode(referenceStyle, forKey: .referenceStyle)
+        try container.encode(culturalContextSensitivity, forKey: .culturalContextSensitivity)
+    }
 }
 
-enum PriorityFocus: Int, Codable {
-    case balanced = 0
-    case musicalFlow = 1
-    case thematicDepth = 2
-    case voiceConsistency = 3
+// MARK: - Editorial Intelligence Enums
+
+enum EditorialProtection: Int, Codable {
+    case authority = 0
+    case exposure = 1
+    case culturalSpecificity = 2
+    case narrativeIntegrity = 3
 }
 
-enum ContradictionHandling: Int, Codable {
-    case preserve = 0
-    case detectAllow = 1
-    case prioritizeCoherence = 2
+enum ImplicationLevel: Int, Codable {
+    case heavy = 0
+    case moderate = 1
+    case explicit = 2
 }
 
-enum ThematicLayering: Int, Codable {
-    case maintainBoth = 0
-    case matchCurrent = 1
-    case allowTransitions = 2
+enum CompressionLevel: Int, Codable {
+    case high = 0
+    case moderate = 1
+    case low = 2
 }
 
-enum MusicalStrictness: Int, Codable {
-    case veryStrict = 0
+enum RegisterStrictness: Int, Codable {
+    case strict = 0
     case moderate = 1
     case flexible = 2
 }
 
-enum VoiceMatching: Int, Codable {
-    case strictMatch = 0
-    case allowTransitions = 1
-    case detectOnly = 2
-}
-
-enum TopicModeHandling: Int, Codable {
-    case strictMatch = 0
-    case detectAllow = 1
-    case treatSame = 2
-}
-
-// MARK: - Output Style & Tone Enums
-
-enum AggressivenessLevel: Int, Codable {
-    case calm = 0
+enum AuthorityLevel: Int, Codable {
+    case high = 0
     case moderate = 1
-    case aggressive = 2
+    case low = 2
 }
 
-enum FormalityPreference: Int, Codable {
-    case streetSlang = 0
-    case mixed = 1
-    case formal = 2
+enum DominanceLevel: Int, Codable {
+    case high = 0
+    case moderate = 1
+    case low = 2
 }
 
-enum EnergyLevelPreference: Int, Codable {
+enum ExposureLevel: Int, Codable {
     case low = 0
-    case medium = 1
+    case moderate = 1
     case high = 2
 }
 
-enum MetaphorDensity: Int, Codable {
-    case minimal = 0
+enum CulturalSpecificity: Int, Codable {
+    case high = 0
     case moderate = 1
-    case heavy = 2
+    case low = 2
 }
 
-// MARK: - Narrative Approach Enums
-
-enum StoryProgressionStyle: Int, Codable {
-    case linear = 0
+enum RiskTolerance: Int, Codable {
+    case low = 0
     case moderate = 1
-    case nonLinear = 2
+    case high = 2
 }
 
-enum CharacterDevelopmentDepth: Int, Codable {
-    case surface = 0
+enum SymbolismLevel: Int, Codable {
+    case high = 0
     case moderate = 1
-    case deep = 2
+    case low = 2
 }
 
-enum EmotionalRange: Int, Codable {
-    case narrow = 0
+enum FinalityLevel: Int, Codable {
+    case high = 0
     case moderate = 1
-    case wide = 2
+    case low = 2
 }
 
-enum ResolutionPreference: Int, Codable {
-    case openEnded = 0
-    case balanced = 1
-    case conclusive = 2
+enum RestraintLevel: Int, Codable {
+    case high = 0
+    case moderate = 1
+    case low = 2
 }
+
+enum PostureShiftTolerance: Int, Codable {
+    case noShifts = 0
+    case moderate = 1
+    case flexible = 2
+}
+
+enum RefusalFrequency: Int, Codable {
+    case frequent = 0
+    case moderate = 1
+    case rare = 2
+}
+
+// MARK: - Deprecated Enums (for backward compatibility)
+
+@available(*, deprecated, renamed: "EditorialProtection")
+typealias PriorityFocus = EditorialProtection
+
+@available(*, deprecated, renamed: "ImplicationLevel")
+typealias ContradictionHandling = ImplicationLevel
+
+@available(*, deprecated, renamed: "CompressionLevel")
+typealias ThematicLayering = CompressionLevel
+
+@available(*, deprecated, renamed: "RegisterStrictness")
+typealias MusicalStrictness = RegisterStrictness
+
+@available(*, deprecated, renamed: "AuthorityLevel")
+typealias VoiceMatching = AuthorityLevel
+
+@available(*, deprecated, renamed: "DominanceLevel")
+typealias TopicModeHandling = DominanceLevel
+
+@available(*, deprecated, renamed: "ExposureLevel")
+typealias AggressivenessLevel = ExposureLevel
+
+@available(*, deprecated, renamed: "CulturalSpecificity")
+typealias FormalityPreference = CulturalSpecificity
+
+@available(*, deprecated, renamed: "RiskTolerance")
+typealias EnergyLevelPreference = RiskTolerance
+
+@available(*, deprecated, renamed: "SymbolismLevel")
+typealias MetaphorDensity = SymbolismLevel
+
+@available(*, deprecated, renamed: "FinalityLevel")
+typealias StoryProgressionStyle = FinalityLevel
+
+@available(*, deprecated, renamed: "RestraintLevel")
+typealias CharacterDevelopmentDepth = RestraintLevel
+
+@available(*, deprecated, renamed: "PostureShiftTolerance")
+typealias EmotionalRange = PostureShiftTolerance
+
+@available(*, deprecated, renamed: "RefusalFrequency")
+typealias ResolutionPreference = RefusalFrequency
 
 // MARK: - Musical Preferences Enums
 
@@ -862,30 +1136,4 @@ enum CulturalContextSensitivity: Int, Codable {
     case low = 0
     case moderate = 1
     case high = 2
-}
-
-// MARK: - Creativity & Originality Enums
-
-enum AdaptationOriginalityBalance: Int, Codable {
-    case adaptation = 0
-    case balanced = 1
-    case originality = 2
-}
-
-enum ReferenceFrequency: Int, Codable {
-    case rare = 0
-    case moderate = 1
-    case frequent = 2
-}
-
-enum ExperimentalLanguageTolerance: Int, Codable {
-    case conservative = 0
-    case moderate = 1
-    case experimental = 2
-}
-
-enum GenreBlendingPreference: Int, Codable {
-    case pure = 0
-    case moderate = 1
-    case blended = 2
 }
