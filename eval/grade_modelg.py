@@ -69,8 +69,9 @@ def append_log(version, verse_name, pos, neg, net, run_id):
                    + [round(v, 1) for v in vals])
 
 
-def show_history(limit=None):
-    """Trend view: mean NET per run per version, overall stats, and a goal check."""
+def show_history(limit=None, goal_net=65.0, max_penalty=20.0):
+    """Trend view: mean NET per run per version, mean penalty, goal flags, and a goal check.
+    A run flags MISS if the best version's NET is below goal_net or mean penalty exceeds max_penalty."""
     if not os.path.exists(LOG_PATH):
         print("No grading_log.csv yet — run a graded generation first.")
         return
@@ -79,32 +80,43 @@ def show_history(limit=None):
     if not rows:
         print("Log is empty.")
         return
-    runs = defaultdict(lambda: defaultdict(list))
+    nets = defaultdict(lambda: defaultdict(list))     # run_id -> version -> [NET]
+    pens = defaultdict(list)                           # run_id -> [total penalty per verse]
     for r in rows:
-        runs[r["run_id"]][r["version"]].append(float(r["NET"]))
+        nets[r["run_id"]][r["version"]].append(float(r["NET"]))
+        pens[r["run_id"]].append(float(r["Repetition"]) + float(r["OverExplain"]))
     versions = sorted({r["version"] for r in rows})
-    run_ids = sorted(runs.keys())
+    run_ids = sorted(nets.keys())
     if limit:
         run_ids = run_ids[-limit:]
-    print("\n=== GRADING HISTORY — mean NET per run ===")
-    print(f"{'run (time)':<21}" + "".join(f"{v:>11}" for v in versions))
+    print(f"\n=== GRADING HISTORY (goal: NET >= {goal_net:.0f}, penalties <= {max_penalty:.0f}) ===")
+    print(f"{'run (time)':<21}" + "".join(f"{v:>11}" for v in versions) + f"{'pen':>7}  status")
     for rid in run_ids:
         ts = next((r["timestamp"] for r in rows if r["run_id"] == rid), rid)[:19]
-        cells = "".join((f"{sum(runs[rid][v]) / len(runs[rid][v]):>11.1f}"
-                         if runs[rid].get(v) else f"{'-':>11}") for v in versions)
-        print(f"{ts:<21}{cells}")
+        cells = "".join((f"{sum(nets[rid][v]) / len(nets[rid][v]):>11.1f}"
+                         if nets[rid].get(v) else f"{'-':>11}") for v in versions)
+        best = max((sum(n) / len(n) for n in nets[rid].values()), default=0.0)
+        pen = sum(pens[rid]) / len(pens[rid]) if pens[rid] else 0.0
+        miss = []
+        if best < goal_net: miss.append("NET")
+        if pen > max_penalty: miss.append("pen")
+        status = "OK" if not miss else "MISS(" + ",".join(miss) + ")"
+        print(f"{ts:<21}{cells}{pen:>7.1f}  {status}")
     print("\n=== OVERALL (all runs) ===")
     by_ver = defaultdict(list)
     for r in rows:
         by_ver[r["version"]].append(float(r["NET"]))
     for v in versions:
         vals = by_ver[v]
-        print(f"  {v:<10} n={len(vals):<3} mean NET {sum(vals) / len(vals):6.1f}  (min {min(vals):.0f}, max {max(vals):.0f})")
+        mark = "meets goal" if sum(vals) / len(vals) >= goal_net else "BELOW goal"
+        print(f"  {v:<10} n={len(vals):<3} mean NET {sum(vals)/len(vals):6.1f}  "
+              f"({mark}; min {min(vals):.0f}, max {max(vals):.0f})")
     if "v3" in versions and "baseline" in versions:
-        paired = [runs[rid] for rid in runs if runs[rid].get("v3") and runs[rid].get("baseline")]
-        wins = sum(1 for rr in paired
-                   if sum(rr["v3"]) / len(rr["v3"]) >= sum(rr["baseline"]) / len(rr["baseline"]))
-        print(f"\n  GOAL CHECK: v3 >= baseline in {wins}/{len(paired)} runs.")
+        paired = [nets[rid] for rid in nets if nets[rid].get("v3") and nets[rid].get("baseline")]
+        wins = sum(1 for rr in paired if sum(rr["v3"]) / len(rr["v3"]) >= sum(rr["baseline"]) / len(rr["baseline"]))
+        meets = sum(1 for rr in paired if sum(rr["v3"]) / len(rr["v3"]) >= goal_net)
+        print(f"\n  GOAL CHECK: v3 >= baseline in {wins}/{len(paired)} runs; "
+              f"v3 meets NET goal ({goal_net:.0f}) in {meets}/{len(paired)} runs.")
 
 # A5 tone proxy: the corpus-dominant register is confident + luxurious (see baseline). These
 # word sets are a heuristic until a real tone classifier / theme emotional_tone is wired (G1+).
@@ -601,10 +613,12 @@ def main():
     ap.add_argument("--compare", nargs="+", metavar="VERSE", help="grade multiple verse files side-by-side")
     ap.add_argument("--history", nargs="?", const=0, type=int, metavar="N",
                     help="show the grading trend over runs (optionally just the last N runs)")
+    ap.add_argument("--goal-net", type=float, default=65.0, help="target NET for history goal flags")
+    ap.add_argument("--max-penalty", type=float, default=20.0, help="penalty ceiling for history flags")
     args = ap.parse_args()
 
     if args.history is not None:
-        show_history(limit=args.history or None)
+        show_history(limit=args.history or None, goal_net=args.goal_net, max_penalty=args.max_penalty)
         return
 
     for p in (args.corpus, args.cmudict):

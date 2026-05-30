@@ -606,6 +606,11 @@ class RapSuggestionAPI {
                 let momentLineIndices = record.modelGMomentBarIndices.isEmpty ? nil
                     : record.modelGMomentBarIndices.map { $0 + 1 }
                 let sourceLabel = modelGCoreSuggestionSetCount > 1 ? "\(baseSource) · Set \(setIndex)" : baseSource
+                let ledger = VerseLedgerScorer.score(hook: record.hook, bars: record.bars)
+                VerseLedgerLog.shared.record(ledger, source: sourceLabel)
+                #if DEBUG
+                print("📊 \(sourceLabel): \(ledger.summary)")
+                #endif
                 coreSuggestions.append(
                     RapSuggestion(
                         id: UUID(),
@@ -619,7 +624,7 @@ class RapSuggestionAPI {
                         styleMatch: nil,
                         userFeedback: nil,
                         signalStrength: nil,
-                        signalNote: nil,
+                        signalNote: ledger.summary,
                         arCritique: nil,
                         modelGMomentLineIndices: momentLineIndices
                     )
