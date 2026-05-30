@@ -1,0 +1,26 @@
+# Xcode build artifacts
+build/
+DerivedData/
+*.o
+*.d
+*.dia
+*.swiftconstvalues
+*.swiftdeps
+*.swiftmodule
+*.moduleinfo
+
+# Xcode user-specific state
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods / Carthage (if ever used)
+Pods/
+Carthage/Build/

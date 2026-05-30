@@ -135,6 +135,86 @@ class KeychainHelper {
     func deleteAuthToken() throws {
         try delete(key: "auth_token")
     }
+    
+    // Genius API Key Management
+    func getGeniusAPIKey() -> String? {
+        do {
+            guard let data = try load(key: "genius_api_key") else { return nil }
+            return String(data: data, encoding: .utf8)
+        } catch {
+            return nil
+        }
+    }
+    
+    func saveGeniusAPIKey(_ apiKey: String) throws {
+        guard let data = apiKey.data(using: .utf8) else {
+            throw KeychainError.encodingError
+        }
+        try save(key: "genius_api_key", data: data)
+    }
+    
+    func deleteGeniusAPIKey() throws {
+        try delete(key: "genius_api_key")
+    }
+
+    // Suno API Key
+    func getSunoAPIKey() -> String? {
+        do {
+            guard let data = try load(key: "suno_api_key") else { return nil }
+            return String(data: data, encoding: .utf8)
+        } catch {
+            return nil
+        }
+    }
+
+    func saveSunoAPIKey(_ apiKey: String) throws {
+        guard let data = apiKey.data(using: .utf8) else {
+            throw KeychainError.encodingError
+        }
+        try save(key: "suno_api_key", data: data)
+    }
+
+    func deleteSunoAPIKey() throws {
+        try delete(key: "suno_api_key")
+    }
+
+    // Uberduck API credentials
+    func getUberduckAPIKey() -> String? {
+        do {
+            guard let data = try load(key: "uberduck_api_key") else { return nil }
+            return String(data: data, encoding: .utf8)
+        } catch {
+            return nil
+        }
+    }
+
+    func saveUberduckAPIKey(_ key: String) throws {
+        guard let data = key.data(using: .utf8) else {
+            throw KeychainError.encodingError
+        }
+        try save(key: "uberduck_api_key", data: data)
+    }
+
+    func getUberduckAPISecret() -> String? {
+        do {
+            guard let data = try load(key: "uberduck_api_secret") else { return nil }
+            return String(data: data, encoding: .utf8)
+        } catch {
+            return nil
+        }
+    }
+
+    func saveUberduckAPISecret(_ secret: String) throws {
+        guard let data = secret.data(using: .utf8) else {
+            throw KeychainError.encodingError
+        }
+        try save(key: "uberduck_api_secret", data: data)
+    }
+
+    func deleteUberduckCredentials() {
+        try? delete(key: "uberduck_api_key")
+        try? delete(key: "uberduck_api_secret")
+    }
 }
 
 // MARK: - Helper Functions
@@ -146,8 +226,70 @@ func lightHaptic() {
 // MARK: - Glass Settings
 
 enum GlassSettings {
-    static let darkening: Double = 0.12
+    static let darkening: Double = 0.05
     static let gloss: Double = 1.0
+}
+
+enum SoftBlueGlassStyle {
+    static func tint(for colorScheme: ColorScheme) -> Color {
+        Color(red: 0.45, green: 0.72, blue: 1.0)
+            .opacity(colorScheme == .dark ? 0.96 : 0.88)
+    }
+}
+
+struct SoftBlueGlassBackground<S: InsettableShape>: View {
+    let shape: S
+    let colorScheme: ColorScheme
+    var darkeningMultiplier: Double = 1.0
+    var outlineLineWidth: CGFloat = 0.8
+
+    var body: some View {
+        shape
+            .fill(.ultraThinMaterial)
+            .overlay(
+                shape
+                    .fill(
+                        LinearGradient(
+                            colors: [
+                                Color.white.opacity(colorScheme == .dark ? 0.14 : 0.24),
+                                Color.white.opacity(colorScheme == .dark ? 0.10 : 0.18),
+                                Color.white.opacity(colorScheme == .dark ? 0.14 : 0.24)
+                            ],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .blendMode(.overlay)
+                    .clipShape(shape)
+            )
+            .overlay(
+                Color.black.opacity(
+                    colorScheme == .dark ? GlassSettings.darkening * darkeningMultiplier : 0.04
+                )
+            )
+            .overlay(
+                shape
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [
+                                Color.white.opacity(colorScheme == .dark ? 0.22 : 0.36),
+                                SoftBlueGlassStyle.tint(for: colorScheme).opacity(colorScheme == .dark ? 0.28 : 0.22),
+                                Color.white.opacity(colorScheme == .dark ? 0.18 : 0.30)
+                            ],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: outlineLineWidth
+                    )
+            )
+            .clipShape(shape)
+            .shadow(
+                color: Color.black.opacity(colorScheme == .dark ? 0.30 : 0.10),
+                radius: 8,
+                x: 0,
+                y: 2
+            )
+    }
 }
 
 // MARK: - Scroll Offset Key
