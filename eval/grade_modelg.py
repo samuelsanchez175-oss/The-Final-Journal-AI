@@ -40,7 +40,7 @@ DEFAULT_LEXICON = os.path.join(REPO_ROOT, "XJournal AI", "jargon_authority_lexic
 
 # Axis weights (full rubric in eval/README.md). Now covers A1/A2/A5/A6/A7
 # (A3 rhyme-quality and A4 flow/stress still pending).
-WEIGHTS = {"A1": 0.20, "A2": 0.20, "A3": 0.15, "A5": 0.10, "A6": 0.10, "A7": 0.10}
+WEIGHTS = {"A1": 0.20, "A2": 0.20, "A3": 0.15, "A4": 0.15, "A5": 0.10, "A6": 0.10, "A7": 0.10}
 
 # A5 tone proxy: the corpus-dominant register is confident + luxurious (see baseline). These
 # word sets are a heuristic until a real tone classifier / theme emotional_tone is wired (G1+).
@@ -238,6 +238,17 @@ def corpus_baseline(bars, cmu):
         total_eligible += elig
     rhyme_rate = (total_rhymed / total_eligible) if total_eligible else 0.5
 
+    # Corpus-derived targets (over a sample): A3 internal-rhyme density, A4 stress density.
+    sample = bars[:2500]
+    _ci_d, _, _ci_multi, _ci_total = _internal_density(_collect_rimes([b["text"] for b in sample], cmu))
+    corpus_internal = _ci_d
+    corpus_multi_density = (_ci_multi / _ci_total) if _ci_total else 0.0
+    s_tot = t_tot = 0
+    for b in sample:
+        s, t = _bar_stress(b["text"], cmu)
+        s_tot += s; t_tot += t
+    stress_density = (s_tot / t_tot) if t_tot else 0.5
+
     tones = defaultdict(int)
     for b in bars:
         if b["tone"]:
@@ -247,6 +258,8 @@ def corpus_baseline(bars, cmu):
         "n_bars": len(bars), "n_syll_used": len(syl), "n_syll_dropped": len(raw) - len(syl),
         "syll_mean": mean, "syll_std": std,
         "rhyme_rate": rhyme_rate, "rhyme_pairs": total_eligible,
+        "internal_density": corpus_internal, "multi_density": corpus_multi_density,
+        "stress_density": stress_density,
         "tones": dict(sorted(tones.items(), key=lambda kv: -kv[1])[:6]),
     }
 
@@ -272,37 +285,89 @@ def score_rhyme(lines, cmu, base):
     return score, rate
 
 
-def score_rhyme_quality(lines, cmu):
-    """A3: internal + multisyllabic rhyme richness (depth beyond the end-word adjacency of A2)."""
-    words = []  # (word, rime tuple, rime-syllable count)
+def _collect_rimes(lines, cmu):
+    """[(word, rime, rime-syllable-count)] for all CMUDICT-known words across the lines."""
+    out = []
     for line in lines:
         for w in WORD_RE.findall(ADLIB_RE.sub(" ", line).lower()):
             ph = cmu.get(w)
             if ph:
                 r = _rime_strict(ph)
                 if r:
-                    words.append((w, r, sum(1 for p in ph if p[-1].isdigit())))
-    if len(words) < 2:
-        return 0.0, {}
-    internal_hits = multi_hits = total = 0
-    n = len(words)
+                    out.append((w, r, sum(1 for p in ph if p[-1].isdigit())))
+    return out
+
+
+def _internal_density(rimes, window=8):
+    """Windowed word-pair rime analysis. Returns (density, internal_hits, multi_hits, total)."""
+    internal = multi = total = 0
+    n = len(rimes)
     for a in range(n):
-        for b in range(a + 1, min(n, a + 8)):          # nearby word pairs (window 8)
-            if words[a][0] == words[b][0]:
+        for b in range(a + 1, min(n, a + window)):
+            if rimes[a][0] == rimes[b][0]:
                 continue
             total += 1
-            if words[a][1] == words[b][1]:             # same rime = rhyme
-                internal_hits += 1
-                if min(words[a][2], words[b][2]) >= 2:  # multisyllabic rime
-                    multi_hits += 1
+            if rimes[a][1] == rimes[b][1]:
+                internal += 1
+                if min(rimes[a][2], rimes[b][2]) >= 2:
+                    multi += 1
+    return ((internal / total) if total else 0.0), internal, multi, total
+
+
+def _bar_stress(text, cmu):
+    """(stressed, total) syllable counts for a bar via CMUDICT stress digits (1/2 = stressed)."""
+    stressed = total = 0
+    for w in WORD_RE.findall(ADLIB_RE.sub(" ", text).lower()):
+        ph = cmu.get(w)
+        if ph:
+            for p in ph:
+                if p[-1].isdigit():
+                    total += 1
+                    if p[-1] in "12":
+                        stressed += 1
+        else:
+            v = len(re.findall(r"[aeiouy]+", w))
+            total += v
+            stressed += round(v * 0.4)
+    return stressed, total
+
+
+def score_rhyme_quality(lines, cmu, base):
+    """A3: rhyme DEPTH (internal + multisyllabic), scored against the corpus's own densities.
+    Weighted toward multisyllabic rhyme — the actual Gunna/Thug hallmark."""
+    rimes = _collect_rimes(lines, cmu)
+    if len(rimes) < 2:
+        return 0.0, {}
+    density, internal, multi, total = _internal_density(rimes)
     if total == 0:
         return 0.0, {}
-    density = internal_hits / total
-    base = min(100.0, (density / INTERNAL_RHYME_TARGET) * 100.0)
-    multi_bonus = min(20.0, multi_hits * 6.0)
-    score = min(100.0, base * 0.85 + multi_bonus)
-    return score, {"internal_pairs": internal_hits, "multisyllabic_pairs": multi_hits,
-                   "internal_density": round(density, 3)}
+    multi_density = multi / total
+    t_int = base.get("internal_density") or INTERNAL_RHYME_TARGET
+    t_multi = base.get("multi_density") or 0.01
+    int_score = min(100.0, (density / t_int) * 100.0) if t_int > 0 else 0.0
+    multi_score = min(100.0, (multi_density / t_multi) * 100.0) if t_multi > 0 else 0.0
+    score = 0.35 * int_score + 0.65 * multi_score    # multisyllabic = the real quality marker
+    return score, {"internal_density": round(density, 3), "multi_density": round(multi_density, 3),
+                   "corpus_internal": round(t_int, 3), "corpus_multi": round(t_multi, 3)}
+
+
+def score_flow(lines, cmu, base):
+    """A4: stress-density match to the corpus + rhythmic consistency across bars."""
+    densities = []
+    for ln in lines:
+        s, t = _bar_stress(ln, cmu)
+        if t > 0:
+            densities.append(s / t)
+    if not densities:
+        return 0.0, {}
+    mean_d = statistics.mean(densities)
+    target = base.get("stress_density") or 0.5
+    match = max(0.0, 100.0 - abs(mean_d - target) * 200.0)
+    cv = (statistics.pstdev(densities) / mean_d) if (mean_d > 0 and len(densities) > 1) else 0.0
+    consistency = max(0.0, 100.0 - cv * 100.0)
+    score = 0.6 * match + 0.4 * consistency
+    return score, {"stress_density": round(mean_d, 3), "corpus": round(target, 3),
+                   "consistency": round(consistency, 1)}
 
 
 def build_originality_index(bars):
@@ -399,12 +464,13 @@ def grade_verse(lines, cmu, base, lexicon_terms, corpus_lines, corpus_4grams):
     """Score a verse on all available axes. Returns (scores dict, details dict)."""
     a1, counts = score_cadence(lines, cmu, base)
     a2, rate = score_rhyme(lines, cmu, base)
-    a3, rq = score_rhyme_quality(lines, cmu)
+    a3, rq = score_rhyme_quality(lines, cmu, base)
+    a4, flow = score_flow(lines, cmu, base)
     a5, tone_counts = score_tone(lines)
     a6, lex = score_lexical(lines, lexicon_terms)
     a7, orig = score_originality(lines, corpus_lines, corpus_4grams)
-    scores = {"A1": a1, "A2": a2, "A3": a3, "A5": a5, "A6": a6, "A7": a7}
-    details = {"syllables": counts, "rhyme_rate": rate, "rhyme_quality": rq,
+    scores = {"A1": a1, "A2": a2, "A3": a3, "A4": a4, "A5": a5, "A6": a6, "A7": a7}
+    details = {"syllables": counts, "rhyme_rate": rate, "rhyme_quality": rq, "flow": flow,
                "tone": tone_counts, "lexical": lex, "originality": orig}
     return scores, details
 
@@ -447,8 +513,9 @@ def main():
     print(f"  bars indexed         : {base['n_bars']}")
     print(f"  syllables/bar        : mean {base['syll_mean']:.2f}, std {base['syll_std']:.2f} "
           f"(used {base['n_syll_used']}, dropped {base['n_syll_dropped']} out-of-range)")
-    print(f"  rhyme rate (end-word) : {base['rhyme_rate']:.2f}  (informational; end-word only — "
-          f"undercounts internal/multisyllabic rhyme, see G1)")
+    print(f"  rhyme rate (end-word) : {base['rhyme_rate']:.2f}  (informational; end-word only)")
+    print(f"  internal rhyme density: {base['internal_density']:.3f}  (A3 target, corpus-derived)")
+    print(f"  stress density       : {base['stress_density']:.3f}  (A4 target, corpus-derived)")
     print(f"  top tones            : {base['tones']}")
     print(f"  cmudict words        : {len(cmu)}")
 
@@ -482,6 +549,7 @@ def main():
     print(f"  syllables/bar        : {det['syllables']}  (corpus mean {base['syll_mean']:.1f})")
     print(f"  rhyme rate (end-word) : {det['rhyme_rate']:.2f}  (A2 target {RHYME_TARGET:.2f})")
     print(f"  rhyme quality        : {det['rhyme_quality']}")
+    print(f"  flow                 : {det['flow']}")
     print(f"  tone words           : {det['tone']}")
     print(f"  lexical              : {det['lexical']}  ({len(lexicon_terms)} lexicon terms loaded)")
     print(f"  originality          : {det['originality']}")
@@ -489,11 +557,13 @@ def main():
     print(f"  A1 Cadence             : {scores['A1']:6.1f}")
     print(f"  A2 Rhyme density       : {scores['A2']:6.1f}")
     print(f"  A3 Rhyme quality       : {scores['A3']:6.1f}")
+    print(f"  A4 Flow / stress       : {scores['A4']:6.1f}")
     print(f"  A5 Tone                : {scores['A5']:6.1f}")
     print(f"  A6 Lexical authenticity: {scores['A6']:6.1f}")
     print(f"  A7 Originality         : {scores['A7']:6.1f}")
-    print(f"\n  PARTIAL AUTHENTICITY   : {partial:6.1f}   {band(partial)}")
-    print("  (partial = A1/A2/A3/A5/A6/A7; A4 flow/stress still pending)\n")
+    print(f"\n  AUTHENTICITY SCORE     : {partial:6.1f}   {band(partial)}")
+    print("  (7-axis rubric. Trust A1/A2/A6/A7. A3/A4/A5 are heuristics — A3 is CMUDICT-exact, so")
+    print("   it undercounts real multisyllabic/slant rhyme and can be gamed; needs RhymeClusterEngine.)\n")
 
     if args.log:
         log_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "grading_log.csv")
