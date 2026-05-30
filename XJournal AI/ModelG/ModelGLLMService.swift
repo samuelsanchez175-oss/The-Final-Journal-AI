@@ -13,48 +13,18 @@ class ModelGLLMService {
 
     private var apiKey: String? { KeychainHelper.shared.getAPIKey() }
     private let baseURL = "https://api.openai.com/v1"
+    /// Gemini text model, used automatically when an "AIza" (Google AI Studio) key is supplied.
+    private let geminiModel = "gemini-2.0-flash"
 
     private init() {}
 
     /// Generate N bar candidates in one request. Returns raw line strings.
     func generateBarCandidates(count: Int, context: GenerationContext) async throws -> [String] {
-        guard let key = apiKey else { throw ModelGLLMError.missingAPIKey }
-
         let prompt = buildBarCandidatesPrompt(count: count, context: context)
-        let requestBody: [String: Any] = [
-            "model": "gpt-4o",
-            "messages": [
-                ["role": "system", "content": "You are Model G. Output ONLY the requested number of bar options, one per line. No numbering, labels, or explanations."],
-                ["role": "user", "content": prompt]
-            ],
-            "temperature": 0.7,
-            "max_tokens": 700
-        ]
-
-        let url = URL(string: "\(baseURL)/chat/completions")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("Bearer \(key)", forHTTPHeaderField: "Authorization")
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
-
-        let (data, response) = try await URLSession.shared.data(for: request)
-        if let http = response as? HTTPURLResponse, http.statusCode == 429 {
-            let headers = Dictionary(uniqueKeysWithValues: http.allHeaderFields.compactMap { k, v -> (String, String)? in
-                guard let key = k as? String, let val = v as? String else { return nil }
-                return (key.lowercased(), val)
-            })
-            let retryAfter = headers["retry-after"].flatMap { Int($0) }
-            throw ModelGLLMError.rateLimitExceeded(retryAfterSeconds: retryAfter)
-        }
-        guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
-            throw ModelGLLMError.requestFailed
-        }
-        let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
-        let choices = json?["choices"] as? [[String: Any]]
-        let content = choices?.first?["message"] as? [String: Any]
-        let text = content?["content"] as? String ?? ""
-
+        let text = try await postChat(
+            system: "You are Model G. Output ONLY the requested number of bar options, one per line. No numbering, labels, or explanations.",
+            user: prompt, maxTokens: 700, temperature: 0.7, jsonMode: false
+        )
         let lines = text.components(separatedBy: .newlines)
             .map { $0.trimmingCharacters(in: .whitespaces) }
             .filter { !$0.isEmpty }
@@ -64,8 +34,6 @@ class ModelGLLMService {
 
     /// Generate a hook.
     func generateHook(context: GenerationContext) async throws -> String {
-        guard let key = apiKey else { throw ModelGLLMError.missingAPIKey }
-
         let params = context.directedParams
         let layer = context.luxuryLayer ?? .empty
         let signalBlock = context.signalAxes.map { "\n" + signalDirective($0) } ?? ""
@@ -87,39 +55,10 @@ class ModelGLLMService {
         Output ONLY the hook lines, nothing else.
         """
 
-        let requestBody: [String: Any] = [
-            "model": "gpt-4o",
-            "messages": [
-                ["role": "system", "content": "You are Model G. Output only the hook lines."],
-                ["role": "user", "content": prompt]
-            ],
-            "temperature": 0.7,
-            "max_tokens": 80
-        ]
-
-        let url = URL(string: "\(baseURL)/chat/completions")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("Bearer \(key)", forHTTPHeaderField: "Authorization")
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
-
-        let (data, response) = try await URLSession.shared.data(for: request)
-        if let http = response as? HTTPURLResponse, http.statusCode == 429 {
-            let headers = Dictionary(uniqueKeysWithValues: http.allHeaderFields.compactMap { k, v -> (String, String)? in
-                guard let key = k as? String, let val = v as? String else { return nil }
-                return (key.lowercased(), val)
-            })
-            let retryAfter = headers["retry-after"].flatMap { Int($0) }
-            throw ModelGLLMError.rateLimitExceeded(retryAfterSeconds: retryAfter)
-        }
-        guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
-            throw ModelGLLMError.requestFailed
-        }
-        let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
-        let choices = json?["choices"] as? [[String: Any]]
-        let content = choices?.first?["message"] as? [String: Any]
-        return (content?["content"] as? String ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        return (try await postChat(
+            system: "You are Model G. Output only the hook lines.",
+            user: prompt, maxTokens: 80, temperature: 0.7, jsonMode: false
+        )).trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
     // MARK: - Model G v3 — planned single-call verse
@@ -127,6 +66,10 @@ class ModelGLLMService {
     /// Shared chat-completion call. Returns the assistant message content (JSON string when jsonMode).
     private func postChat(system: String, user: String, maxTokens: Int, temperature: Double, jsonMode: Bool) async throws -> String {
         guard let key = apiKey else { throw ModelGLLMError.missingAPIKey }
+        if key.hasPrefix("AIza") {   // Google AI Studio (Gemini) keys start with "AIza"
+            return try await postGemini(key: key, system: system, user: user,
+                                        maxTokens: maxTokens, temperature: temperature, jsonMode: jsonMode)
+        }
         var body: [String: Any] = [
             "model": "gpt-4o",
             "messages": [
@@ -160,6 +103,37 @@ class ModelGLLMService {
         let choices = json?["choices"] as? [[String: Any]]
         let content = choices?.first?["message"] as? [String: Any]
         return (content?["content"] as? String) ?? ""
+    }
+
+    /// Gemini (Google AI Studio) backend — used automatically when the key starts with "AIza".
+    /// Lets Model G run on a Gemini key (e.g. reused from another project) with no OpenAI key.
+    private func postGemini(key: String, system: String, user: String,
+                            maxTokens: Int, temperature: Double, jsonMode: Bool) async throws -> String {
+        var generationConfig: [String: Any] = ["temperature": temperature, "maxOutputTokens": maxTokens]
+        if jsonMode { generationConfig["responseMimeType"] = "application/json" }
+        let body: [String: Any] = [
+            "system_instruction": ["parts": [["text": system]]],
+            "contents": [["role": "user", "parts": [["text": user]]]],
+            "generationConfig": generationConfig
+        ]
+        let url = URL(string: "https://generativelanguage.googleapis.com/v1beta/models/\(geminiModel):generateContent?key=\(key)")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try JSONSerialization.data(withJSONObject: body)
+
+        let (data, response) = try await URLSession.shared.data(for: request)
+        if let http = response as? HTTPURLResponse, http.statusCode == 429 {
+            throw ModelGLLMError.rateLimitExceeded(retryAfterSeconds: nil)
+        }
+        guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
+            throw ModelGLLMError.requestFailed
+        }
+        let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
+        let candidates = json?["candidates"] as? [[String: Any]]
+        let content = candidates?.first?["content"] as? [String: Any]
+        let parts = content?["parts"] as? [[String: Any]]
+        return (parts?.first?["text"] as? String) ?? ""
     }
 
     /// v3 step 1 — plan the verse (central image, angle, anchor rhymes).
