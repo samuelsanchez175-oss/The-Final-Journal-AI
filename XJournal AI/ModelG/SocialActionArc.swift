@@ -40,6 +40,15 @@ enum SocialActionArc {
         return arc
     }
 
+    /// One-line description of the verse's emotional/strategic shape, for the single-call
+    /// v3 verse prompt (which can't take 16 discrete per-bar moves).
+    static func shape(dominant: SocialAction?) -> String {
+        let base = dominant ?? .assert
+        let turn = contrast(of: base).rawValue
+        let peak = escalate(from: base).rawValue
+        return "Let the voice shift across the verse: open establishing (\(base.rawValue)), a turn to \(turn) mid-verse for tension, escalate (\(peak)) at the peak, then land with finality (assert). Do not hold one posture for all 16 bars."
+    }
+
     /// The contrasting move that creates a mid-verse "turn".
     private static func contrast(of a: SocialAction) -> SocialAction {
         switch a {

@@ -485,6 +485,16 @@ class RapSuggestionAPI {
     ) async throws -> GeneratedRecord {
         let styleOverride = directedParams?.styleOverride
         func run() async throws -> GeneratedRecord {
+            if ModelGEnvironment.useModelGv3 {
+                let coordinatorV3 = ModelGCoreCoordinatorV3()
+                return try await coordinatorV3.generateRecord(
+                    input: metrics.fullText,
+                    audioURL: audioURL,
+                    styleOverride: styleOverride,
+                    directedParams: directedParams,
+                    transcriptionRhythmMapData: transcriptionRhythmMapData
+                )
+            }
             if useV2 {
                 let coordinatorV2 = ModelGCoreCoordinatorV2()
                 return try await coordinatorV2.generateRecord(
@@ -545,7 +555,7 @@ class RapSuggestionAPI {
             #if DEBUG
             print("Model G Core: Starting \(modelGCoreSuggestionSetCount) set(s) (\(useV2 ? "v2" : "v1"))...")
             #endif
-            let baseSource = useV2 ? "Model G Core v2.0" : "Model G Core v1.0"
+            let baseSource = ModelGEnvironment.useModelGv3 ? "Model G Core v3.0" : (useV2 ? "Model G Core v2.0" : "Model G Core v1.0")
             var coreSuggestions: [RapSuggestion] = []
 
             // Generate all sets concurrently so their network round-trips overlap.

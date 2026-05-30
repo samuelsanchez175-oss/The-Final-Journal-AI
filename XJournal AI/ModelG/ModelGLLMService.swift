@@ -122,6 +122,103 @@ class ModelGLLMService {
         return (content?["content"] as? String ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
+    // MARK: - Model G v3 — planned single-call verse
+
+    /// Shared chat-completion call. Returns the assistant message content (JSON string when jsonMode).
+    private func postChat(system: String, user: String, maxTokens: Int, temperature: Double, jsonMode: Bool) async throws -> String {
+        guard let key = apiKey else { throw ModelGLLMError.missingAPIKey }
+        var body: [String: Any] = [
+            "model": "gpt-4o",
+            "messages": [
+                ["role": "system", "content": system],
+                ["role": "user", "content": user]
+            ],
+            "temperature": temperature,
+            "max_tokens": maxTokens
+        ]
+        if jsonMode { body["response_format"] = ["type": "json_object"] }
+
+        let url = URL(string: "\(baseURL)/chat/completions")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("Bearer \(key)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try JSONSerialization.data(withJSONObject: body)
+
+        let (data, response) = try await URLSession.shared.data(for: request)
+        if let http = response as? HTTPURLResponse, http.statusCode == 429 {
+            let headers = Dictionary(uniqueKeysWithValues: http.allHeaderFields.compactMap { k, v -> (String, String)? in
+                guard let key = k as? String, let val = v as? String else { return nil }
+                return (key.lowercased(), val)
+            })
+            throw ModelGLLMError.rateLimitExceeded(retryAfterSeconds: headers["retry-after"].flatMap { Int($0) })
+        }
+        guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
+            throw ModelGLLMError.requestFailed
+        }
+        let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
+        let choices = json?["choices"] as? [[String: Any]]
+        let content = choices?.first?["message"] as? [String: Any]
+        return (content?["content"] as? String) ?? ""
+    }
+
+    /// v3 step 1 — plan the verse (central image, angle, anchor rhymes).
+    func generateVersePlan(context: GenerationContext) async throws -> VersePlan {
+        let theme = context.themeContext
+        let axesLine = context.signalAxes.map {
+            "Voice: \($0.authorityPosture.rawValue) authority to \($0.audienceScope.rawValue), exposure \($0.exposureRisk.rawValue)."
+        } ?? ""
+        let user = """
+        Plan a 16-bar melodic trap verse. JSON only.
+        Theme: \(theme?.themeName ?? context.intent.theme) (tone: \(theme?.emotionalTone ?? context.intent.tone.rawValue))
+        Direction: \(context.intent.theme)
+        \(axesLine)
+        Return JSON exactly: {"centralImage": "core image/motif", "angle": "strategic angle in a phrase", "anchorRhymes": ["sound1", "sound2", "sound3"]}
+        """
+        let raw = try await postChat(
+            system: "You are Model G's planning step. Respond ONLY with valid JSON.",
+            user: user, maxTokens: 220, temperature: 0.6, jsonMode: true
+        )
+        guard let data = raw.data(using: .utf8),
+              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+            return .empty
+        }
+        return VersePlan(
+            centralImage: obj["centralImage"] as? String ?? "",
+            angle: obj["angle"] as? String ?? "",
+            anchorRhymes: (obj["anchorRhymes"] as? [String]) ?? []
+        )
+    }
+
+    /// v3 step 2 — generate the whole verse (hook + 16 bars) in one call, conditioned on the plan.
+    func generateFullVerse(plan: VersePlan, arcShape: String, context: GenerationContext) async throws -> (hook: String, bars: [String]) {
+        let layer = context.luxuryLayer ?? .empty
+        let themeBlock = context.themeContext.map { themeDirective($0) } ?? ""
+        let voiceBlock = context.signalAxes.map { "\n" + signalDirective($0) } ?? ""
+        let user = """
+        Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
+        Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
+        \(plan.promptText)
+        Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
+        \(arcShape)\(themeBlock)\(voiceBlock)
+        Rules: ~8-12 syllables per bar; rhyme hard (multisyllabic/internal welcome); imply more than you state; no numbering inside the bar strings.
+        Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}
+        """
+        let raw = try await postChat(
+            system: "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars.",
+            user: user, maxTokens: 900, temperature: 0.8, jsonMode: true
+        )
+        guard let data = raw.data(using: .utf8),
+              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+            return ("", [])
+        }
+        let hook = (obj["hook"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let bars = ((obj["bars"] as? [String]) ?? [])
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
+        return (hook, bars)
+    }
+
     private func buildBarCandidatesPrompt(count: Int, context: GenerationContext) -> String {
         let params = context.directedParams
         let layer = context.luxuryLayer ?? .empty

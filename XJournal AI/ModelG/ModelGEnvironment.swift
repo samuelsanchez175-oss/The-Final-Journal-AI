@@ -34,6 +34,13 @@ enum ModelGEnvironment {
         get { UserDefaults.standard.bool(forKey: "model_g_v2_enabled") }
         set { UserDefaults.standard.set(newValue, forKey: "model_g_v2_enabled") }
     }
+
+    /// When true (and useModelGCore is true), use Model G v3: planned single-call verse
+    /// (~3 calls/verse instead of ~17). Takes precedence over v2 when enabled.
+    static var useModelGv3: Bool {
+        get { UserDefaults.standard.bool(forKey: "model_g_v3_enabled") }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_v3_enabled") }
+    }
 }
 
 // MARK: - Generation Context
