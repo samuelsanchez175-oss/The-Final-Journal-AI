@@ -14,7 +14,7 @@ class ModelGLLMService {
     private var apiKey: String? { KeychainHelper.shared.getAPIKey() }
     private let baseURL = "https://api.openai.com/v1"
     /// Gemini text model, used automatically when an "AIza" (Google AI Studio) key is supplied.
-    private let geminiModel = "gemini-2.0-flash"
+    private let geminiModel = "gemini-2.5-flash"
 
     private init() {}
 
@@ -109,7 +109,9 @@ class ModelGLLMService {
     /// Lets Model G run on a Gemini key (e.g. reused from another project) with no OpenAI key.
     private func postGemini(key: String, system: String, user: String,
                             maxTokens: Int, temperature: Double, jsonMode: Bool) async throws -> String {
-        var generationConfig: [String: Any] = ["temperature": temperature, "maxOutputTokens": maxTokens]
+        // Disable 2.5 "thinking" — it otherwise consumes the output budget and truncates the verse.
+        var generationConfig: [String: Any] = ["temperature": temperature, "maxOutputTokens": maxTokens,
+                                                "thinkingConfig": ["thinkingBudget": 0]]
         if jsonMode { generationConfig["responseMimeType"] = "application/json" }
         let body: [String: Any] = [
             "system_instruction": ["parts": [["text": system]]],
@@ -180,7 +182,7 @@ class ModelGLLMService {
         """
         let raw = try await postChat(
             system: "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars.",
-            user: user, maxTokens: 900, temperature: 0.8, jsonMode: true
+            user: user, maxTokens: 1400, temperature: 0.8, jsonMode: true
         )
         guard let data = raw.data(using: .utf8),
               let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
