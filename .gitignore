@@ -24,3 +24,7 @@ xcuserdata/
 # CocoaPods / Carthage (if ever used)
 Pods/
 Carthage/Build/
+
+# Eval runtime artifacts (regenerated each run)
+eval/grading_log.csv
+eval/captures/e*.txt

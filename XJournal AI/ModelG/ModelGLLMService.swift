@@ -177,7 +177,7 @@ class ModelGLLMService {
         \(plan.promptText)
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)
-        Rules: ~8-12 syllables per bar; rhyme hard (multisyllabic/internal welcome); imply more than you state; no numbering inside the bar strings.
+        Rules (strict): each bar SHORT and punchy, 8-10 syllables MAX (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; concrete images over statements; do not repeat the same word; imply more than you state; no numbering inside the bar strings.
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}
         """
         let raw = try await postChat(

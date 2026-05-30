@@ -29,9 +29,10 @@ import argparse
 import csv
 import os
 import re
+import datetime
 import statistics
 import sys
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_CORPUS = os.path.join(REPO_ROOT, "XJournal AI", "ground_truth_rap_bars_MODEL_G.csv")
@@ -41,6 +42,69 @@ DEFAULT_LEXICON = os.path.join(REPO_ROOT, "XJournal AI", "jargon_authority_lexic
 # Axis weights (full rubric in eval/README.md). Now covers A1/A2/A5/A6/A7
 # (A3 rhyme-quality and A4 flow/stress still pending).
 WEIGHTS = {"A1": 0.20, "A2": 0.20, "A3": 0.15, "A4": 0.15, "A5": 0.10, "A6": 0.10, "A7": 0.10}
+
+# Positive/negative ledger. Positives are 0-100 axes weighted into a positive total; negatives are
+# penalty points subtracted. NET = positive_total - penalties (clamped 0-100). See eval/README.md.
+POSITIVE_WEIGHTS = {"Cadence": 0.18, "EndRhyme": 0.18, "InnerRhyme": 0.15, "Jargon": 0.15,
+                    "Smart": 0.15, "Flow": 0.10, "Originality": 0.09}
+STOPWORDS = set("the a an and or but to of in on at it is be we they that this i you my me your "
+                "im its got get gon gonna gotta yeah uh with for from now know like all out up so".split())
+EXPLAINER_MARKERS = set("because so really just finally trying tryna means destined blessed manifesting "
+                        "manifestin always never everything everybody literally honestly".split())
+
+LOG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "grading_log.csv")
+LOG_COLS = (["timestamp", "run_id", "version", "verse"] + list(POSITIVE_WEIGHTS.keys())
+            + ["Repetition", "OverExplain", "NET"])
+
+
+def append_log(version, verse_name, pos, neg, net, run_id):
+    """Auto-record one graded generation so every run leaves an objective trail."""
+    new = not os.path.exists(LOG_PATH)
+    with open(LOG_PATH, "a", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        if new:
+            w.writerow(LOG_COLS)
+        vals = [pos[k] for k in POSITIVE_WEIGHTS] + [neg["Repetition"], neg["OverExplain"], net]
+        w.writerow([datetime.datetime.now().isoformat(timespec="seconds"), run_id, version, verse_name]
+                   + [round(v, 1) for v in vals])
+
+
+def show_history(limit=None):
+    """Trend view: mean NET per run per version, overall stats, and a goal check."""
+    if not os.path.exists(LOG_PATH):
+        print("No grading_log.csv yet — run a graded generation first.")
+        return
+    with open(LOG_PATH, encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    if not rows:
+        print("Log is empty.")
+        return
+    runs = defaultdict(lambda: defaultdict(list))
+    for r in rows:
+        runs[r["run_id"]][r["version"]].append(float(r["NET"]))
+    versions = sorted({r["version"] for r in rows})
+    run_ids = sorted(runs.keys())
+    if limit:
+        run_ids = run_ids[-limit:]
+    print("\n=== GRADING HISTORY — mean NET per run ===")
+    print(f"{'run (time)':<21}" + "".join(f"{v:>11}" for v in versions))
+    for rid in run_ids:
+        ts = next((r["timestamp"] for r in rows if r["run_id"] == rid), rid)[:19]
+        cells = "".join((f"{sum(runs[rid][v]) / len(runs[rid][v]):>11.1f}"
+                         if runs[rid].get(v) else f"{'-':>11}") for v in versions)
+        print(f"{ts:<21}{cells}")
+    print("\n=== OVERALL (all runs) ===")
+    by_ver = defaultdict(list)
+    for r in rows:
+        by_ver[r["version"]].append(float(r["NET"]))
+    for v in versions:
+        vals = by_ver[v]
+        print(f"  {v:<10} n={len(vals):<3} mean NET {sum(vals) / len(vals):6.1f}  (min {min(vals):.0f}, max {max(vals):.0f})")
+    if "v3" in versions and "baseline" in versions:
+        paired = [runs[rid] for rid in runs if runs[rid].get("v3") and runs[rid].get("baseline")]
+        wins = sum(1 for rr in paired
+                   if sum(rr["v3"]) / len(rr["v3"]) >= sum(rr["baseline"]) / len(rr["baseline"]))
+        print(f"\n  GOAL CHECK: v3 >= baseline in {wins}/{len(paired)} runs.")
 
 # A5 tone proxy: the corpus-dominant register is confident + luxurious (see baseline). These
 # word sets are a heuristic until a real tone classifier / theme emotional_tone is wired (G1+).
@@ -460,24 +524,61 @@ def score_tone(lines):
     return min(100.0, density * 600.0), counts      # ~1 tone word / 6 words ≈ full marks
 
 
+def score_smart(lines):
+    """Positive: vocabulary variety (type-token ratio) + concrete specificity — cleverness proxy."""
+    raw = " ".join(lines)
+    all_words = WORD_RE.findall(ADLIB_RE.sub(" ", raw).lower())
+    content = [w for w in all_words if len(w) > 3 and w not in STOPWORDS]
+    if not content:
+        return 0.0, {}
+    variety = len(set(content)) / len(content)
+    specific = sum(1 for w in WORD_RE.findall(ADLIB_RE.sub(" ", raw))
+                   if any(c.isdigit() for c in w) or len(w) > 7)
+    spec_density = specific / max(1, len(all_words))
+    return min(100.0, variety * 95.0 + spec_density * 180.0), {
+        "vocab_variety": round(variety, 2), "specific_words": specific}
+
+
+def penalty_repetition(lines):
+    """Negative: same content word reused 4+ times (hooks may intentionally repeat up to 3)."""
+    words = [w for ln in lines for w in WORD_RE.findall(ADLIB_RE.sub(" ", ln).lower())
+             if len(w) > 3 and w not in STOPWORDS]
+    counts = Counter(words)
+    overused = {w: c for w, c in counts.items() if c >= 4}
+    penalty = min(25.0, sum(c - 3 for c in overused.values()) * 5.0)
+    return penalty, {"overused": dict(sorted(overused.items(), key=lambda kv: -kv[1])[:5])}
+
+
+def penalty_over_explain(lines, cmu):
+    """Negative: telling-not-showing — explainer markers + rambling over-long bars (the AI tell)."""
+    words = [w for ln in lines for w in WORD_RE.findall(ADLIB_RE.sub(" ", ln).lower())]
+    if not words:
+        return 0.0, {}
+    markers = sum(1 for w in words if w in EXPLAINER_MARKERS)
+    long_bars = sum(1 for ln in lines if line_syllables(ln, cmu) > 16)
+    penalty = min(15.0, markers * 2.0 + long_bars * 2.5)
+    return penalty, {"explainer_markers": markers, "over_long_bars": long_bars}
+
+
 def grade_verse(lines, cmu, base, lexicon_terms, corpus_lines, corpus_4grams):
-    """Score a verse on all available axes. Returns (scores dict, details dict)."""
+    """Positive/negative ledger. Returns (positives, negatives, net, details)."""
     a1, counts = score_cadence(lines, cmu, base)
     a2, rate = score_rhyme(lines, cmu, base)
     a3, rq = score_rhyme_quality(lines, cmu, base)
     a4, flow = score_flow(lines, cmu, base)
-    a5, tone_counts = score_tone(lines)
     a6, lex = score_lexical(lines, lexicon_terms)
     a7, orig = score_originality(lines, corpus_lines, corpus_4grams)
-    scores = {"A1": a1, "A2": a2, "A3": a3, "A4": a4, "A5": a5, "A6": a6, "A7": a7}
+    smart, sm = score_smart(lines)
+    positives = {"Cadence": a1, "EndRhyme": a2, "InnerRhyme": a3, "Jargon": a6,
+                 "Smart": smart, "Flow": a4, "Originality": a7}
+    pos_total = sum(positives[k] * POSITIVE_WEIGHTS[k] for k in POSITIVE_WEIGHTS)
+    rep, rd = penalty_repetition(lines)
+    over, od = penalty_over_explain(lines, cmu)
+    negatives = {"Repetition": rep, "OverExplain": over}
+    net = max(0.0, min(100.0, pos_total - rep - over))
     details = {"syllables": counts, "rhyme_rate": rate, "rhyme_quality": rq, "flow": flow,
-               "tone": tone_counts, "lexical": lex, "originality": orig}
-    return scores, details
-
-
-def partial_authenticity(scores):
-    tw = sum(WEIGHTS.values())
-    return sum(scores[k] * WEIGHTS[k] for k in WEIGHTS) / tw
+               "lexical": lex, "smart": sm, "repetition": rd, "over_explain": od}
+    return positives, negatives, net, details
 
 
 def band(score):
@@ -498,7 +599,13 @@ def main():
     ap.add_argument("--log", action="store_true", help="append result to eval/grading_log.csv")
     ap.add_argument("--version-label", default="manual", help="pipeline label for the log")
     ap.add_argument("--compare", nargs="+", metavar="VERSE", help="grade multiple verse files side-by-side")
+    ap.add_argument("--history", nargs="?", const=0, type=int, metavar="N",
+                    help="show the grading trend over runs (optionally just the last N runs)")
     args = ap.parse_args()
+
+    if args.history is not None:
+        show_history(limit=args.history or None)
+        return
 
     for p in (args.corpus, args.cmudict):
         if not os.path.exists(p):
@@ -527,14 +634,22 @@ def main():
 
     # Compare mode: grade several verses side-by-side (e.g. v2 output vs v3 output).
     if args.compare:
-        print("\n=== COMPARE ===")
-        cols = list(WEIGHTS.keys())
-        print(f"{'verse':<26}" + "".join(f"{c:>6}" for c in cols) + f"{'PARTIAL':>9}  band")
+        print("\n=== COMPARE (positives | -penalties | NET) ===")
+        pos_cols = list(POSITIVE_WEIGHTS.keys())
+        print(f"{'verse':<22}" + "".join(f"{c[:5]:>6}" for c in pos_cols)
+              + f"{'-Rep':>6}{'-Exp':>6}{'NET':>7}")
+        groups = defaultdict(list)
         for path in args.compare:
-            s, _ = grade_verse(read_verse(path), cmu, base, lexicon_terms, corpus_lines, corpus_4grams)
-            p = partial_authenticity(s)
-            print(f"{os.path.basename(path):<26}" + "".join(f"{s[c]:>6.1f}" for c in cols)
-                  + f"{p:>9.1f}  {band(p).split()[0]}")
+            pos, neg, net, _ = grade_verse(read_verse(path), cmu, base, lexicon_terms, corpus_lines, corpus_4grams)
+            name = os.path.basename(path)
+            print(f"{name:<22}" + "".join(f"{pos[c]:>6.0f}" for c in pos_cols)
+                  + f"{neg['Repetition']:>6.0f}{neg['OverExplain']:>6.0f}{net:>7.1f}")
+            key = name.replace(".txt", "").split("_")[-1]  # group by suffix (baseline vs v3)
+            groups[key].append(net)
+        if len(groups) > 1 or any(len(v) > 1 for v in groups.values()):
+            print("  --- group means (NET) ---")
+            for key, nets in sorted(groups.items()):
+                print(f"  {key:<18} n={len(nets)}  mean NET = {sum(nets)/len(nets):6.1f}")
         return
 
     verse_path = args.verse or (SAMPLE_VERSE_PATH if args.demo else None)
@@ -542,39 +657,28 @@ def main():
         ap.error("provide --verse PATH, --demo, or --compare")
     lines = read_verse(verse_path)
 
-    scores, det = grade_verse(lines, cmu, base, lexicon_terms, corpus_lines, corpus_4grams)
-    partial = partial_authenticity(scores)
+    pos, neg, net, det = grade_verse(lines, cmu, base, lexicon_terms, corpus_lines, corpus_4grams)
 
     print(f"\n=== VERSE: {os.path.relpath(verse_path, REPO_ROOT)} ({len(lines)} bars) ===")
-    print(f"  syllables/bar        : {det['syllables']}  (corpus mean {base['syll_mean']:.1f})")
-    print(f"  rhyme rate (end-word) : {det['rhyme_rate']:.2f}  (A2 target {RHYME_TARGET:.2f})")
-    print(f"  rhyme quality        : {det['rhyme_quality']}")
-    print(f"  flow                 : {det['flow']}")
-    print(f"  tone words           : {det['tone']}")
-    print(f"  lexical              : {det['lexical']}  ({len(lexicon_terms)} lexicon terms loaded)")
-    print(f"  originality          : {det['originality']}")
-    print("\n  --- AXES (0-100) ---")
-    print(f"  A1 Cadence             : {scores['A1']:6.1f}")
-    print(f"  A2 Rhyme density       : {scores['A2']:6.1f}")
-    print(f"  A3 Rhyme quality       : {scores['A3']:6.1f}")
-    print(f"  A4 Flow / stress       : {scores['A4']:6.1f}")
-    print(f"  A5 Tone                : {scores['A5']:6.1f}")
-    print(f"  A6 Lexical authenticity: {scores['A6']:6.1f}")
-    print(f"  A7 Originality         : {scores['A7']:6.1f}")
-    print(f"\n  AUTHENTICITY SCORE     : {partial:6.1f}   {band(partial)}")
-    print("  (7-axis rubric. Trust A1/A2/A6/A7. A3/A4/A5 are heuristics — A3 is CMUDICT-exact, so")
-    print("   it undercounts real multisyllabic/slant rhyme and can be gamed; needs RhymeClusterEngine.)\n")
+    print(f"  syllables/bar : {det['syllables']}  (corpus mean {base['syll_mean']:.1f})")
+    print(f"  rhyme quality : {det['rhyme_quality']}")
+    print(f"  smart         : {det['smart']}")
+    print(f"  lexical       : {det['lexical']}")
+    print(f"  repetition    : {det['repetition']}")
+    print(f"  over-explain  : {det['over_explain']}")
+    print("\n  +++ POSITIVE (0-100, weighted) +++")
+    for k in POSITIVE_WEIGHTS:
+        print(f"     {k:<12}: {pos[k]:6.1f}   (weight {POSITIVE_WEIGHTS[k]:.2f})")
+    print("  --- NEGATIVE (penalty points) ---")
+    for k in neg:
+        print(f"     {k:<12}: -{neg[k]:.1f}")
+    print(f"\n  NET SCORE     : {net:6.1f}   {band(net)}")
+    print("  (Trust Cadence/EndRhyme/Jargon/Smart/Originality; InnerRhyme/Flow are heuristics.)\n")
 
     if args.log:
-        log_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "grading_log.csv")
-        new = not os.path.exists(log_path)
-        with open(log_path, "a", newline="", encoding="utf-8") as f:
-            w = csv.writer(f)
-            if new:
-                w.writerow(["version_label", "verse"] + list(WEIGHTS.keys()) + ["partial_authenticity"])
-            w.writerow([args.version_label, os.path.basename(verse_path)]
-                       + [round(scores[k], 1) for k in WEIGHTS] + [round(partial, 1)])
-        print(f"  logged -> {os.path.relpath(log_path, REPO_ROOT)}")
+        append_log(args.version_label, os.path.basename(verse_path), pos, neg, net,
+                   run_id=datetime.datetime.now().isoformat(timespec="seconds"))
+        print(f"  logged -> {os.path.relpath(LOG_PATH, REPO_ROOT)}")
 
 
 if __name__ == "__main__":
