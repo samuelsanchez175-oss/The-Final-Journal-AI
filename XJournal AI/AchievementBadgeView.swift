@@ -15,46 +15,37 @@ struct AchievementBadgeView: View {
     var body: some View {
         VStack(spacing: 8) {
             ZStack {
+                let unlocked = achievement.unlockedAt != nil
                 Circle()
-                    .fill(
-                        achievement.unlockedAt != nil
-                            ? LinearGradient(
-                                colors: [.blue, .purple],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                            : LinearGradient(
-                                colors: [.gray.opacity(0.3), .gray.opacity(0.2)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                    )
+                    .fill(Momentum.surfaceElevated)
+                    .overlay(Circle().stroke(unlocked ? Momentum.accent : Momentum.hairline,
+                                             lineWidth: unlocked ? Momentum.lineThick : Momentum.lineThin))
                     .frame(width: size, height: size)
-                
+
                 Image(systemName: achievement.icon)
                     .font(.system(size: size * 0.4, weight: .semibold))
-                    .foregroundStyle(achievement.unlockedAt != nil ? .white : .gray)
-                
-                if achievement.unlockedAt != nil {
+                    .foregroundStyle(unlocked ? Momentum.contentPrimary : Momentum.contentSecondary)
+
+                if unlocked {
                     Image(systemName: "checkmark.circle.fill")
                         .font(.system(size: size * 0.3))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Momentum.accent)
                         .offset(x: size * 0.35, y: -size * 0.35)
                 }
             }
-            
+
             if size > 60 {
                 VStack(spacing: 4) {
                     Text(achievement.title)
                         .font(.caption.weight(.semibold))
-                        .foregroundStyle(.primary)
+                        .foregroundStyle(Momentum.contentPrimary)
                         .multilineTextAlignment(.center)
                         .lineLimit(2)
-                    
+
                     if achievement.unlockedAt == nil {
                         Text("\(Int(achievement.progress * 100))%")
                             .font(.caption2)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                 }
                 .frame(width: size + 20)
@@ -86,26 +77,22 @@ struct AchievementCelebrationView: View {
             VStack(spacing: 24) {
                 // Achievement badge with animation
                 ZStack {
-                    Circle()
-                        .fill(
-                            LinearGradient(
-                                colors: [.blue, .purple, .pink],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
+                    Circle().stroke(Momentum.contentPrimary.opacity(0.15), lineWidth: Momentum.lineThin)
                         .frame(width: 120, height: 120)
-                        .shadow(color: .blue.opacity(0.5), radius: 20, x: 0, y: 10)
-                    
+                    Circle().stroke(Momentum.contentPrimary.opacity(0.3), lineWidth: Momentum.lineThin)
+                        .frame(width: 86, height: 86)
+                    Circle().stroke(Momentum.accent, lineWidth: Momentum.lineThick)
+                        .frame(width: 56, height: 56)
+
                     Image(systemName: achievement.icon)
-                        .font(.system(size: 50, weight: .semibold))
-                        .foregroundStyle(.white)
+                        .font(.system(size: 40, weight: .semibold))
+                        .foregroundStyle(Momentum.contentPrimary)
                     
                     // Sparkle effect
                     ForEach(0..<8) { index in
                         Image(systemName: "sparkle")
                             .font(.system(size: 12))
-                            .foregroundStyle(.white)
+                            .foregroundStyle(Momentum.accent)
                             .offset(
                                 x: cos(Double(index) * .pi / 4) * 70,
                                 y: sin(Double(index) * .pi / 4) * 70
@@ -119,37 +106,31 @@ struct AchievementCelebrationView: View {
                 VStack(spacing: 8) {
                     Text("Achievement Unlocked!")
                         .font(.title2.weight(.bold))
-                        .foregroundStyle(.primary)
-                    
+                        .foregroundStyle(Momentum.contentPrimary)
+
                     Text(achievement.title)
                         .font(.title3.weight(.semibold))
-                        .foregroundStyle(.blue)
-                    
+                        .foregroundStyle(Momentum.accent)
+
                     Text(achievement.description)
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .multilineTextAlignment(.center)
                 }
-                
+
                 Button {
                     dismiss()
                 } label: {
-                    Text("Awesome!")
-                        .font(.headline)
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(
-                            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                                .fill(.blue)
-                        )
+                    Text("Awesome!").frame(maxWidth: .infinity)
                 }
+                .buttonStyle(MomentumSquareButtonStyle(fill: .inverse))
             }
             .padding(32)
             .background(
                 RoundedRectangle(cornerRadius: 24, style: .continuous)
-                    .fill(.ultraThinMaterial)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                    .fill(Momentum.surfaceElevated)
+                    .overlay(RoundedRectangle(cornerRadius: 24, style: .continuous)
+                        .stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
             )
             .padding(40)
             .scaleEffect(scale)
