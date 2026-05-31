@@ -51,8 +51,7 @@ struct AnalyticsDashboardView: View {
     
     private var writingActivitySection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Writing Activity")
-                .font(.headline)
+            MomentumSectionHeader(title: "Writing Activity")
             
             VStack(spacing: 12) {
                 StatRow(
@@ -86,8 +85,7 @@ struct AnalyticsDashboardView: View {
         Group {
             if !stats.mostUsedWords.isEmpty {
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("Most Used Words")
-                        .font(.headline)
+                    MomentumSectionHeader(title: "Most Used Words")
                     
                     VStack(spacing: 8) {
                         ForEach(Array(stats.mostUsedWords.prefix(5).enumerated()), id: \.offset) { index, word in
@@ -123,8 +121,7 @@ struct AnalyticsDashboardView: View {
         Group {
             if stats.averageBPM != nil || stats.mostUsedKey != nil {
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("Music Metadata")
-                        .font(.headline)
+                    MomentumSectionHeader(title: "Music Metadata")
                     
                     VStack(spacing: 12) {
                         if let avgBPM = stats.averageBPM {
