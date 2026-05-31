@@ -31,7 +31,7 @@ struct VerseLedger: Codable {
 enum VerseLedgerScorer {
     // Corpus-derived targets (measured from ground_truth_rap_bars_MODEL_G.csv).
     private static let syllMean = 9.7, syllTol = 4.0
-    private static let internalTarget = 0.02, multiTarget = 0.003, stressTarget = 0.72, rhymeTarget = 0.5
+    private static let stressTarget = 0.72
     private static let weights: [(String, Double)] = [
         ("Cadence", 0.18), ("EndRhyme", 0.18), ("InnerRhyme", 0.15),
         ("Jargon", 0.15), ("Smart", 0.15), ("Flow", 0.10), ("Originality", 0.09)]
@@ -60,8 +60,7 @@ enum VerseLedgerScorer {
             cadence = per.reduce(0.0, +) / Double(counts.count)
         }
 
-        let endRhyme = endRhymeScore(lines, cmu: cmu)
-        let (innerRhyme, _) = innerRhymeScore(lines, cmu: cmu)
+        let (endRhyme, innerRhyme) = engineRhyme(lines)
         let jargon = jargonScore(lines, terms: jargonTerms)
         let smart = smartScore(lines)
         let flow = flowScore(lines, cmu: cmu)
@@ -103,66 +102,25 @@ enum VerseLedgerScorer {
         return total
     }
 
-    /// Rime = phonemes from the last stressed vowel to the end (stress stripped).
-    private static func rime(_ word: String, cmu: [String: [String]]) -> [String]? {
-        guard let ph = cmu[word] else { return nil }
-        guard let idx = ph.lastIndex(where: { $0.last?.isNumber == true }) else { return nil }
-        return ph[idx...].map { $0.filter { !$0.isNumber } }
-    }
+    /// Slant/assonance-aware rhyme via the app's own RhymeClusterEngine (RapSlangPhonemes + CMUDICT),
+    /// replacing exact-rime-only scoring that under-counted real slant/multisyllabic rhyme. Targets are
+    /// heuristic coverage levels (not corpus-calibrated) — the slant-aware detection is the upgrade.
+    private static let endCoverageTarget = 0.5, internalCovTarget = 0.12, vowelFamilyCovTarget = 0.30
 
-    private static func rimeSyllables(_ word: String, cmu: [String: [String]]) -> Int {
-        guard let ph = cmu[word], let idx = ph.lastIndex(where: { $0.last?.isNumber == true }) else { return 0 }
-        return ph[idx...].filter { $0.last?.isNumber == true }.count
-    }
-
-    private static func wordsRhyme(_ a: String, _ b: String, cmu: [String: [String]]) -> Bool {
-        if a == b { return false }
-        if let ra = rime(a, cmu: cmu), let rb = rime(b, cmu: cmu) { return ra == rb }
-        return a.count > 1 && b.count > 1 && a.suffix(2) == b.suffix(2)
-    }
-
-    private static func lastWord(_ line: String) -> String? { wordsIn(line).last }
-
-    private static func endRhymeScore(_ lines: [String], cmu: [String: [String]]) -> Double {
-        let lws = lines.map { lastWord($0) }
-        var eligible = 0, rhymed = 0
-        for i in 1..<max(1, lws.count) {
-            guard let cur = lws[i] else { continue }
-            eligible += 1
-            for j in max(0, i - 2)..<i {
-                if let prev = lws[j], wordsRhyme(cur, prev, cmu: cmu) { rhymed += 1; break }
-            }
-        }
-        let rate = eligible > 0 ? Double(rhymed) / Double(eligible) : 0
-        return rate >= rhymeTarget ? 100 : rate / rhymeTarget * 100
-    }
-
-    private static func innerRhymeScore(_ lines: [String], cmu: [String: [String]]) -> (Double, Double) {
-        var rimes: [([String], Int)] = []
-        var wordList: [String] = []
-        for line in lines {
-            for w in wordsIn(line) {
-                if let r = rime(w, cmu: cmu) { rimes.append((r, rimeSyllables(w, cmu: cmu))); wordList.append(w) }
-            }
-        }
-        guard rimes.count >= 2 else { return (0, 0) }
-        var internalHits = 0, multiHits = 0, total = 0
-        for a in 0..<rimes.count {
-            for b in (a + 1)..<min(rimes.count, a + 8) {
-                if wordList[a] == wordList[b] { continue }
-                total += 1
-                if rimes[a].0 == rimes[b].0 {
-                    internalHits += 1
-                    if min(rimes[a].1, rimes[b].1) >= 2 { multiHits += 1 }
-                }
-            }
-        }
-        guard total > 0 else { return (0, 0) }
-        let density = Double(internalHits) / Double(total)
-        let multiDensity = Double(multiHits) / Double(total)
-        let intScore = min(100, density / internalTarget * 100)
-        let multiScore = min(100, multiDensity / multiTarget * 100)
-        return (min(100, intScore * 0.35 + multiScore * 0.65), multiDensity)
+    private static func engineRhyme(_ lines: [String]) -> (end: Double, inner: Double) {
+        let total = max(1, lines.flatMap { wordsIn($0) }.count)
+        let clusters = RhymeClusterEngine.detect(lines: lines)
+        // End rhyme: share of line-ends landing in a shared-stressed-vowel group (slant-aware).
+        let endParts = Set(clusters.filter { $0.type == "end" }.flatMap { $0.parts })
+        let endCov = Double(endParts.count) / Double(max(2, lines.count))
+        let end = min(100, endCov / endCoverageTarget * 100)
+        // Inner rhyme: true internal rhyme (vowel+coda) drives it, vowel-family assonance is a bonus.
+        let internalParts = Set(clusters.filter { $0.type == "internal" }.flatMap { $0.parts })
+        let famParts = Set(clusters.filter { $0.type == "vowel_family" }.flatMap { $0.parts })
+        let internalCov = Double(internalParts.count) / Double(total)
+        let famCov = Double(famParts.count) / Double(total)
+        let inner = min(100, (internalCov / internalCovTarget * 0.7 + famCov / vowelFamilyCovTarget * 0.3) * 100)
+        return (end, inner)
     }
 
     private static func jargonScore(_ lines: [String], terms: Set<String>) -> Double {
