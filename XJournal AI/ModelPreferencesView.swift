@@ -35,7 +35,7 @@ struct ModelPreferencesView: View {
                             originalitySlider
                             Text("Model G v3 uses the upgraded prompt and scoring path. Tune voice and constraints independently from classic Model G.")
                                 .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                             ModelSettingsForm(settings: $modelGv3Settings, modelName: "Model G v3")
                         case .modelY:
                             ModelSettingsForm(settings: $modelYSettings, modelName: "Model Y")
@@ -80,7 +80,7 @@ struct ModelPreferencesView: View {
                     .font(.subheadline.weight(.semibold))
                 Text("Competitive bar generation, style branches, beat fingerprint. When off, uses legacy Model G batch generation.")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
         }
     }
@@ -91,7 +91,7 @@ struct ModelPreferencesView: View {
                 Text("Originality").font(.subheadline.weight(.semibold))
                 Spacer()
                 Text(originalityBias < 0.34 ? "Inspired" : (originalityBias < 0.67 ? "Balanced" : "Novel"))
-                    .font(.caption).foregroundStyle(.secondary)
+                    .font(.caption).foregroundStyle(Momentum.contentSecondary)
             }
             Slider(value: Binding(
                 get: { originalityBias },
@@ -99,7 +99,7 @@ struct ModelPreferencesView: View {
             ), in: 0...1)
             Text("Lower = lean on the culture & training lyrics (references, wordplay, familiar phrases). "
                  + "Higher = more novel. Mid is the sweet spot — fully original loses the voice.")
-                .font(.caption).foregroundStyle(.secondary)
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
         }
     }
 
@@ -113,7 +113,7 @@ struct ModelPreferencesView: View {
                     .font(.subheadline.weight(.semibold))
                 Text("Plans the verse, then writes the whole verse in one call (~3 API calls vs ~17). Theme + voice aware. Takes precedence over v2 when on.")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
         }
     }
@@ -128,7 +128,7 @@ struct ModelPreferencesView: View {
                     .font(.subheadline.weight(.semibold))
                 Text("Flow DNA analysis: syllable stress, beat grid, rhyme clusters, cadence vector. Cross-test with v1.")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
         }
     }
@@ -241,7 +241,7 @@ struct ModelSettingsForm: View {
             // Intro: what these settings control
             Text("These options control how \(modelName) suggests bars: voice, tone, restraint, and when it returns no suggestion.")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .padding(.bottom, 8)
             
             // Priority Section
@@ -367,7 +367,7 @@ struct ModelSettingsForm: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Register Enforcement Weight")
                     .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 Text("How strongly the chosen register is enforced in every line.")
                     .font(.caption2)
                     .foregroundStyle(.tertiary)
@@ -607,7 +607,7 @@ struct ModelSettingsForm: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Topic Restrictions")
                     .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 
                 TextField("Topics to avoid (comma-separated)", text: $settings.topicRestrictions, axis: .vertical)
                     .textFieldStyle(.roundedBorder)
@@ -665,7 +665,7 @@ struct ModelSettingsForm: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Silence Threshold")
                     .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 Text("Left = suggest more often (even when unsure). Right = only suggest when confident.")
                     .font(.caption2)
                     .foregroundStyle(.tertiary)
@@ -705,7 +705,7 @@ private struct SectionHeader: View {
                 .font(.headline)
             Text("Affects: \(affects)")
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         }
     }
 }
@@ -721,7 +721,7 @@ struct QuestionView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text(question)
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             
             VStack(spacing: 8) {
                 ForEach(Array(options.enumerated()), id: \.offset) { index, option in
@@ -740,7 +740,7 @@ struct QuestionView: View {
                                     .foregroundStyle(.blue)
                             } else {
                                 Image(systemName: "circle")
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                         .padding(.horizontal, 16)

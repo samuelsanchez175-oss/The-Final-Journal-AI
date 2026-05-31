@@ -1,4 +1,42 @@
 import SwiftUI
+import Combine
+
+// MARK: - Theme Model (moved from RapLyricsDatabase)
+struct Theme: Codable, Identifiable, Hashable {
+    let id: String
+    let name: String
+    let jargonTerms: [String]
+    let contextDescription: String
+    let relatedThemes: [String]
+    let emotionalTone: String
+}
+
+// MARK: - Theme Database (uses NewRapDatabase)
+class ThemeDatabase: ObservableObject {
+    @Published var themes: [Theme] = []
+    @Published var isLoading: Bool = false
+    @Published var isLoaded: Bool = false
+    
+    func loadFromAppGroup() async throws {
+        await MainActor.run {
+            isLoading = true
+        }
+        
+        do {
+            try await NewRapDatabase.shared.loadAllCSVs()
+            await MainActor.run {
+                self.themes = NewRapDatabase.shared.themes
+                self.isLoaded = true
+                self.isLoading = false
+            }
+        } catch {
+            await MainActor.run {
+                self.isLoading = false
+            }
+            throw error
+        }
+    }
+}
 
 // MARK: - Theme Expansion Sheet (Phase 4: Advanced AI Features)
 
@@ -16,7 +54,7 @@ struct ThemeExpansionSheet: View {
     @State private var retryCount: Int = 0
     @State private var searchText: String = ""
     @State private var selectedEmotionalTone: String? = nil
-    @StateObject private var themeDatabase = RapLyricsDatabase.shared
+    @StateObject private var themeDatabase = ThemeDatabase()
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     
@@ -92,7 +130,7 @@ struct ThemeExpansionSheet: View {
                                     
                                     Text(error)
                                         .font(.caption)
-                                        .foregroundStyle(.secondary)
+                                        .foregroundStyle(Momentum.contentSecondary)
                                         .multilineTextAlignment(.center)
                                         .padding(.horizontal, 32)
                                     
@@ -167,6 +205,8 @@ struct ThemeExpansionSheet: View {
     
     // MARK: - Theme Loading
     
+    // NOTE: CSV loading is now optional - ThemeExpansionSheet loads themes lazily
+    // If CSV files are not available, the sheet will show an empty state
     private func loadThemesWithRetry() async {
         guard !themeDatabase.isLoaded && !themeDatabase.isLoading else { return }
         
@@ -176,7 +216,8 @@ struct ThemeExpansionSheet: View {
             try await themeDatabase.loadFromAppGroup()
             retryCount = 0
         } catch {
-            loadingError = error.localizedDescription
+            // CSV files may not be available - this is okay if using SIGNAL LAYER-only generation
+            loadingError = "Theme database not available. CSV files may need to be added if you want to use Theme Expansion feature."
             
             // Retry logic - up to 2 retries
             if retryCount < 2 {
@@ -217,7 +258,7 @@ struct ThemeExpansionSheet: View {
             // Description
             Text("Explore related themes and expand your narrative")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
         }
@@ -305,7 +346,7 @@ struct ThemeExpansionSheet: View {
                 
                 Text("\(selectedThemeIDs.count) selected")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
             .padding(.horizontal, 20)
             
@@ -314,7 +355,7 @@ struct ThemeExpansionSheet: View {
                 // Search bar
                 HStack {
                     Image(systemName: "magnifyingglass")
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                     
                     TextField("Search themes...", text: $searchText)
                         .textFieldStyle(.plain)
@@ -324,7 +365,7 @@ struct ThemeExpansionSheet: View {
                             searchText = ""
                         } label: {
                             Image(systemName: "xmark.circle.fill")
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                     }
                 }
@@ -399,10 +440,10 @@ struct ThemeExpansionSheet: View {
                 VStack(spacing: 12) {
                     Image(systemName: "magnifyingglass")
                         .font(.system(size: 32))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                     Text("No themes found")
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
                 .padding(.vertical, 20)
             }
@@ -433,7 +474,7 @@ struct ThemeExpansionSheet: View {
                                         
                                         Text(theme.emotionalTone.capitalized)
                                             .font(.caption2)
-                                            .foregroundStyle(.secondary)
+                                            .foregroundStyle(Momentum.contentSecondary)
                                     }
                                     .padding(10)
                                     .frame(width: 140)
@@ -560,7 +601,7 @@ struct ThemeExpansionSheet: View {
             
             Text("Loading themes...")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             
             // Skeleton loading cards
             VStack(spacing: 12) {
@@ -662,7 +703,7 @@ struct ThemeExpansionSheet: View {
             
             Text("Themes will be loaded from the database. If this persists, the theme database may need to be initialized.")
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
             
@@ -702,11 +743,14 @@ struct ThemeExpansionSheet: View {
             : themeNames
         
         do {
-            let results = try await RapSuggestionAPI.shared.generateThemeExpansion(
+            // Note: generateThemeExpansion is an extension method on RapSuggestionAPI
+            let api = RapSuggestionAPI.shared
+            let themeDetails: [Theme]? = selectedThemes.isEmpty ? nil : selectedThemes
+            let results = try await api.generateThemeExpansion(
                 text: currentText,
                 currentThemes: themesToUse,
                 context: nil,
-                selectedThemeDetails: selectedThemes.isEmpty ? nil : selectedThemes
+                selectedThemeDetails: themeDetails
             )
             
             await MainActor.run {

@@ -21,7 +21,7 @@ struct BPMPopoverView: View {
                 HStack {
                     Text("60")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                     Spacer()
                     if let bpm = bpm {
                         Text("\(bpm)")
@@ -29,12 +29,12 @@ struct BPMPopoverView: View {
                     } else {
                         Text("—")
                             .font(.title3.weight(.semibold))
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     Spacer()
                     Text("220")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
                 
                 Slider(
@@ -73,7 +73,7 @@ struct BPMPopoverView: View {
                 } label: {
                     Text("Clear")
                         .font(.callout)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
                 .buttonStyle(.plain)
                 
@@ -153,7 +153,7 @@ struct KeyPopoverView: View {
             } label: {
                 Text("Clear")
                     .font(.callout)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
             .buttonStyle(.plain)
         }
@@ -231,11 +231,11 @@ struct ScalePopoverView: View {
         if key == nil {
             Text("Select Key First")
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         } else {
             Text("Key: \(key ?? "")")
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         }
     }
     
@@ -270,7 +270,7 @@ struct ScalePopoverView: View {
         } label: {
             Text("Clear")
                 .font(.callout)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         }
         .buttonStyle(.plain)
     }
@@ -344,10 +344,10 @@ struct URLAttachmentPopoverView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "link")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                     Text(urlText)
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .lineLimit(1)
                 }
                 .padding(.horizontal, 12)
@@ -366,7 +366,7 @@ struct URLAttachmentPopoverView: View {
                 } label: {
                     Text("Clear")
                         .font(.callout)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
                 .buttonStyle(.plain)
                 
@@ -438,7 +438,7 @@ struct FolderPopoverView: View {
             if !existingFolders.isEmpty {
                 Text("Existing Folders")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
@@ -484,7 +484,7 @@ struct FolderPopoverView: View {
                 } label: {
                     Text("Clear")
                         .font(.callout)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 10)
                 }
