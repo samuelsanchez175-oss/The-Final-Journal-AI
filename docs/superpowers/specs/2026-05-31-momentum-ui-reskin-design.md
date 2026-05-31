@@ -2,9 +2,9 @@
 
 - **Date:** 2026-05-31
 - **Branch:** `ui-momentum-reskin` (off `phase-0-quick-wins`)
-- **Status:** Draft — awaiting Samuel's review
+- **Status:** Living spec — Samuel building against it (P0 done; P1 in progress). Updated with app-specific mockups 2026-05-31.
 - **Type:** Visual-only UI reskin. No feature, logic, data, or navigation changes.
-- **Source refs:** 4 exported HTML mockups ("Momentum" habit-tracker style) in `~/Downloads/design-*.html`. Related Obsidian docs: `XJournal AI - App/UI Overhaul — Phased Plan.md`, `UX — Slow, Dark & Hard to Use.md`.
+- **Source refs:** exported HTML mockups in `~/Downloads/design-*.html` — first the "Momentum" habit-tracker style refs, then **app-specific** screens (Note Detail + Metadata editor, Profile/Settings, Home/Create/Editor) drawn with these exact tokens. Related Obsidian docs: `XJournal AI - App/UI Overhaul — Phased Plan.md`, `UX — Slow, Dark & Hard to Use.md`.
 
 ---
 
@@ -13,7 +13,7 @@
 Reskin **the entire app** from the current dark "Silk Boys" glass aesthetic to a **light, editorial, flat** look — directly answering the documented complaint that the app feels *slow, dark, and hard to use*.
 
 **Decisions locked with Samuel:**
-- Ambition: **full reskin → light** (retire the glass system, don't keep it side-by-side).
+- Ambition: **full reskin → light** — retire glass from **content** surfaces; floating chrome stays frosted (see **Surface rules**, §3).
 - Coverage: **entire app**.
 - Accent: **coral `#FF8C66`** (reuses the existing `RhymeColorPalette` coral).
 - Dark mode: **light default now, editorial-dark deferred** to a later pass (clean seam left for it).
@@ -48,7 +48,7 @@ Reskin **the entire app** from the current dark "Silk Boys" glass aesthetic to a
 
 ## 3. The Momentum style kit (named + ordered)
 
-The 25 patterns below are **reusable SwiftUI views/styles**, not features. New code lives in a `Momentum/` group; tokens in `MomentumDesignSystem.swift`. Ordered by build dependency (foundation first).
+The 32 patterns below are **reusable SwiftUI views/styles**, not features. New code lives in a `Momentum/` group; tokens in `MomentumDesignSystem.swift`. Ordered by build dependency (foundation first).
 
 **Signature elements (non-negotiable — Samuel):** every component must preserve (1) **line work** — `lineThin`/`lineThick` rules + the thin-bordered line-art circles; (2) the **soft coral atmosphere glow** (`AtmosphereGlow`); (3) **square buttons** — sharp corners, thin or thick borders, fill-on-press; never rounded or pill-shaped.
 
@@ -62,7 +62,7 @@ The 25 patterns below are **reusable SwiftUI views/styles**, not features. New c
 | `inverseSurface` / `onInverse` | `#1C1C1E` / `#F8F8F8` | — (emphasis banner, primary button) |
 | `lineThick` / `lineThin` | 3px / 1px | heavy shadows + dividers |
 | `edge` | 24px | ad-hoc paddings |
-| `corners` | **square / sharp (0–2px)** — buttons & toggles especially; never pill/rounded. 44pt tap targets via size, not radius | 20pt glass radius |
+| `corners` | **square / sharp (0–2px)** for cards, action buttons, toggles. *Rounded exceptions:* metadata pills (BPM/Key/Scale), counters, key-grid circles, and frosted floating chrome — see **Surface rules**. 44pt targets via size | 20pt glass radius |
 | Type: `heroNumeral` (≈64–80pt, w700, tight) · `sectionTitle` (12pt UPPERCASE +tracking, secondary) · `cardTitle` (18pt w600) · `bodyContent` (**≥16pt**) · `metadata` (13pt) | | sub-16pt captions for content |
 
 ### Components (build layers)
@@ -74,6 +74,17 @@ The 25 patterns below are **reusable SwiftUI views/styles**, not features. New c
 **Signature additions (apply across layers):** `23. SelectionToggle` (square check — sharp, thin/thick border, fills dark + checkmark on select) · `24. CircleLineGraphic` (thin-border concentric line-art circles; spin/sink/pop animation; the core of `HeroGraphic` & celebration) · `25. SuggestionGrid` (multi-select square-toggle cards + `SectionHeader` + footer `PrimaryActionButton` + coral `CounterPill`).
 
 > All buttons (`PrimaryActionButton`, `PillButton`, `FAB`, `SelectionToggle`) are **square**. The coral glow + line-art circles are the recurring ambient motif.
+
+### Surface rules (glass — "chrome frosted, content flat", Samuel 2026-05-31)
+The app-specific mockups keep glass in specific places. Canonical 3-way split:
+- **Flat + square + line work:** content cards, list rows, action buttons, selection toggles, stat boxes, dividers.
+- **Frosted + rounded (`momentumFloatingBar`):** *floating chrome only* — bottom search bar, editor/keyboard toolbar, bottom sheets (e.g. the metadata editor). `.ultraThinMaterial` is **allowed here** — this is why `momentumFloatingBar` is kept, not retired.
+- **Rounded pills / circles:** *data, not actions* — metadata pills (BPM/Key/Scale), the counter pill, the musical-key circle grid.
+
+So "retire glass" = **retire it from content surfaces**, not from floating chrome.
+
+### Layer 5 — app-specific (from the Journal/Lyrics mockups)
+`26. MetadataPill` (icon + value, color-by-type via `pillBPM`/`pillKey`/`pillScale`) · `27. MetadataEditorSheet` (frosted bottom sheet: Tempo tap+stepper · `NoteKeyGrid` · Scale pills) · `28. ToggleSwitch` (iOS pill toggle) · `29. ThemeSegmentedControl` (Light/Dark/Warm) · `30. Avatar` (gradient initials) · `31. EditorToolbar` (structure marks + `HighlightSwatch` ×3 + mic, in a frosted bar) · `32. MusicPlatformRow` (icon + name + Connected/Link).
 
 ---
 
@@ -111,7 +122,7 @@ The natural home for the big-number patterns (it already has real stats).
 
 ### Note Editor + keyboard toolbar — `CCV.13` / `CCV.14`
 - Writing surface → `surface`; brighten body text to `contentPrimary` (≥16pt).
-- Keyboard toolbar (`DynamicIslandToolbarView`) and AI-assist menu → flat Momentum bars; **retire the glass containers** (preserve collapse/expand behavior — Segment 5).
+- Keyboard toolbar (`DynamicIslandToolbarView`) + AI-assist menu → **frosted floating bar** (`momentumFloatingBar`, per Surface rules — chrome, *not* a flat card): structure marks + 3 `HighlightSwatch` color buttons + mic; preserve collapse/expand (Segment 5).
 - ⚠️ **Risk:** rhyme-highlight colors (`RhymeColorPalette`) were tuned for dark glass. **Re-tune the highlight palette for legibility on a light surface** (perfect vs near-rhyme must stay distinguishable + readable). Treat as its own verified sub-task.
 - Preserve all locked Page-3 behaviors (eye toggle, magnifier, AI-assist read-only).
 
@@ -119,6 +130,17 @@ The natural home for the big-number patterns (it already has real stats).
 - **Steering (topic / tone / world-building word selection)** ← Welcome mockup: multi-select `SuggestionGrid` — square `SelectionToggle` cards under `SectionHeader`s, fixed footer `PrimaryActionButton` "Generate" with coral `CounterPill` showing # selected. Strong direct analog (the app already multi-selects topics/tones to steer Model G).
 - Results cards → `LibraryRowCard` / `Surface`; CTAs → `PrimaryActionButton`.
 - Per the Phase-4 note, lean toward **one primary Generate** + a "Customize" disclosure (visual hierarchy only; no logic change).
+
+### Note Detail + Metadata editor — note detail (`CCV.12`) + metadata sheet ← Detail/Metadata mockup
+- **Detail view:** `BackNav` + history/regenerate + add icons; centered title (22pt `cardTitle`); horizontal **`MetadataPill`** row (BPM blue / Key purple / Scale — via existing `pillBPM`/`pillKey`/`pillScale` tokens); lyric body in `bodyContent` with rhyme **highlight** spans (`highlightPink/Green/Yellow`).
+- **Metadata editor** (`MetadataEditorSheet` — frosted bottom sheet): **Tempo** = big `heroNumeral` + Tap card + −/＋ stepper · **Key** = `NoteKeyGrid` (6-col circles) · **Scale** = rounded pills (selected `inverseSurface`); coral "Done".
+- Pills/circles **rounded** (data); sheet **frosted** (chrome); lyric cards/buttons stay flat & square.
+
+### Profile / Settings — `CCV.12` ← Profile mockup
+- `BackNav` + "Settings"; **`Avatar`** (coral→peach gradient initials) + name + uppercase role/location.
+- **`StatGrid`** (3-col, hairline dividers) — *only stats the app already tracks; no new streak feature.*
+- `sectionTitle` sections: **Appearance** → `ThemeSegmentedControl` (Light/Dark/Warm = your `ThemeMode`) · **Notifications** → label + `ToggleSwitch` · **Music Platforms** → `MusicPlatformRow` (Spotify/Apple Music/Suno/Genius/Uberduck: icon + name + Connected/Link).
+- Destructive **Log Out** in red.
 
 ### Everything else — Settings (`CCV.12`), Paywall, Support/Shop, Release Notes, Splash
 - **Systematic token sweep:** `.ultraThinMaterial` → `Surface`; `.secondary` → `contentPrimary`/`contentSecondary`; sub-16pt content captions → `bodyContent`; CTAs → `PrimaryActionButton`.
@@ -149,7 +171,7 @@ Each phase is independently shippable and screenshot-verified (light mode).
 | **P3 Achievements** | Badge/collection rows + **unlock celebration** + fix hard-coded-dark. | 14–18, 24 |
 | **P4 Empty/churn** | Empathy flows (empty journal, comeback). | 19–22 |
 | **P5 App-wide sweep** | Editor readability + rhyme-palette re-tune; settings/paywall/shop/release; fix Splash. | tokens |
-| **P6 Glass retirement** | Remove dead `GlassEffectComponents`/`SoftBlueGlass` paths; leave editorial-dark seam. | — |
+| **P6 Glass scoping** | Retire glass from **content** surfaces; keep frosted floating chrome (`momentumFloatingBar`). Remove dead `GlassEffectComponents`/`SoftBlueGlass` paths; leave editorial-dark seam. | — |
 | **P7 Polish** | Atmosphere animation, micro-compression (Segment 4), full contrast/accessibility audit. | — |
 
 ---
@@ -177,7 +199,7 @@ Each phase is independently shippable and screenshot-verified (light mode).
 
 ## 9. Files & artifacts
 
-- **New:** `XJournal AI/Momentum/MomentumDesignSystem.swift` + component files (Layers 0–4).
+- **New:** `XJournal AI/Momentum/MomentumDesignSystem.swift` + component files (Layers 0–5).
 - **Edited per phase:** `CCV.10/.11/.12/.13/.14`, `AnalyticsDashboardView`, `AchievementBadgeView`, `RapSuggestionView`, `PaywallView`, `SupportShopSheetView`, `ReleaseNotesSheetView`, `SplashScreenView`; palette re-tune in `CCV.2` (`RhymeColorPalette`).
 - **Retired (P6):** `GlassEffectComponents.swift`, glass tints in `CCV.2`.
 - **Branch:** `ui-momentum-reskin`. (Phase-0 token WIP from `phase-0-quick-wins` rides along; can rebase onto `main` if preferred.)
