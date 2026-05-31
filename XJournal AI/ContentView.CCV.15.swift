@@ -190,7 +190,7 @@ struct RhymeGroupListView: View {
         .frame(maxHeight: popoverMaxHeight)
         .background(
             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
         )
     }

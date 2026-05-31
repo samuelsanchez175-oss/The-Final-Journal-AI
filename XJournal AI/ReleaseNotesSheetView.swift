@@ -115,7 +115,7 @@ struct ReleaseNotesSheetView: View {
         }
         .background(
             Rectangle()
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .ignoresSafeArea()
         )
@@ -132,7 +132,7 @@ struct ReleaseNotesSheetView: View {
         HStack(spacing: 16) {
             ZStack {
                 RoundedRectangle(cornerRadius: 22, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .overlay(
                         LinearGradient(
@@ -177,7 +177,7 @@ struct ReleaseNotesSheetView: View {
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .overlay(
                     LinearGradient(

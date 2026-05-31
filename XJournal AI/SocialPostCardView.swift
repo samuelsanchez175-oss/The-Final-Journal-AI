@@ -46,7 +46,7 @@ struct SocialPostCardView: View {
                     // Placeholder when no images
                     ZStack {
                         Rectangle()
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                         
                         Image(systemName: "photo")
@@ -97,7 +97,7 @@ struct SocialPostCardView: View {
         }
         .background(
             Rectangle()
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .ignoresSafeArea()
         )
@@ -110,7 +110,7 @@ struct SocialPostCardView: View {
         if let systemImage = systemImageForName(imageName) {
             ZStack {
                 Rectangle()
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 
                 Image(systemName: systemImage)
@@ -128,7 +128,7 @@ struct SocialPostCardView: View {
                 // Placeholder
                 ZStack {
                     Rectangle()
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                         .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     
                     Image(systemName: "photo")

@@ -89,7 +89,7 @@ struct ThemeExpansionSheet: View {
             ZStack {
                 // Background
                 Rectangle()
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
                 
@@ -318,7 +318,7 @@ struct ThemeExpansionSheet: View {
         .padding(.vertical, 8)
         .background(
             Capsule()
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(
                     Capsule()
                         .stroke(
@@ -372,7 +372,7 @@ struct ThemeExpansionSheet: View {
                 .padding(12)
                 .background(
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                         .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 )
                 
@@ -480,7 +480,7 @@ struct ThemeExpansionSheet: View {
                                     .frame(width: 140)
                                     .background(
                                         RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                            .fill(.ultraThinMaterial)
+                                            .fill(Momentum.surfaceElevated)
                                             .overlay(
                                                 RoundedRectangle(cornerRadius: 10, style: .continuous)
                                                     .stroke(Color.orange.opacity(0.3), lineWidth: 1)
@@ -573,7 +573,7 @@ struct ThemeExpansionSheet: View {
             .padding(16)
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .overlay(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
@@ -607,7 +607,7 @@ struct ThemeExpansionSheet: View {
             VStack(spacing: 12) {
                 ForEach(0..<3) { _ in
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                         .frame(height: 80)
                         .opacity(0.6)
                 }
@@ -863,7 +863,7 @@ struct ThemeSelectionCard: View {
                             )
                     } else {
                         RoundedRectangle(cornerRadius: 14, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                     .overlay(
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
                                     .stroke(Color.clear, lineWidth: 1)

@@ -757,7 +757,7 @@ struct QuestionView: View {
         .padding(16)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
         )
     }
 }

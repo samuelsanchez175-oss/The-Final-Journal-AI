@@ -103,7 +103,7 @@ struct FolderSelectionSheetView: View {
                         .fill(Color.accentColor.opacity(0.1))
                 } else {
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                 }
             }
             .overlay(

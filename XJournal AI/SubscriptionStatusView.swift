@@ -42,7 +42,7 @@ struct SubscriptionStatusView: View {
                     .padding(.vertical, 12)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                     )
                 }
                 .buttonStyle(.plain)
@@ -75,7 +75,7 @@ struct SubscriptionStatusView: View {
                         .padding(.vertical, 12)
                         .background(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                         )
                     }
                     .buttonStyle(.plain)

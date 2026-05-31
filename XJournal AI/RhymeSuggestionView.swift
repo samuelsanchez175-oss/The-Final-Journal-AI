@@ -119,7 +119,7 @@ struct RhymeSuggestionView: View {
             .padding(16)
             .background(
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
             )
         }
         .buttonStyle(.plain)

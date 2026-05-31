@@ -113,7 +113,7 @@ struct ImportNotesInstructionsView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
             Rectangle()
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .ignoresSafeArea()
         )
@@ -151,7 +151,7 @@ struct ImportNotesInstructionsView: View {
                     .frame(minHeight: 300)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                     .overlay(
@@ -192,7 +192,7 @@ struct ImportNotesInstructionsView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
             Rectangle()
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .ignoresSafeArea()
         )

@@ -45,7 +45,7 @@ struct CouponRedemptionView: View {
                             .padding()
                             .background(
                                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                    .fill(.ultraThinMaterial)
+                                    .fill(Momentum.surfaceElevated)
                                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 12, style: .continuous)
@@ -152,7 +152,7 @@ struct CouponRedemptionView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
@@ -160,7 +160,7 @@ struct CouponRedemptionView: View {
             }
             .background(
                 Rectangle()
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )

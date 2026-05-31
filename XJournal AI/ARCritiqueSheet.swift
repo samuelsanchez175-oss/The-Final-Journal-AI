@@ -80,7 +80,7 @@ struct ARCritiqueSheet: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .background(
                                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                    .fill(.ultraThinMaterial)
+                                    .fill(Momentum.surfaceElevated)
                                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                             )
                             .padding(.horizontal)
@@ -120,7 +120,7 @@ struct ARCritiqueSheet: View {
                         .frame(maxWidth: .infinity)
                         .background(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                         )
                         .padding(.horizontal)
@@ -130,7 +130,7 @@ struct ARCritiqueSheet: View {
             }
             .background(
                 Rectangle()
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
@@ -213,7 +213,7 @@ struct ARCritiqueSheet: View {
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
         )
     }

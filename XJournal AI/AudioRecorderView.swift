@@ -156,7 +156,7 @@ struct AudioRecorderView: View {
     
     private var backgroundView: some View {
         Rectangle()
-            .fill(.ultraThinMaterial)
+            .fill(Momentum.surfaceElevated)
             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
             .ignoresSafeArea()
     }

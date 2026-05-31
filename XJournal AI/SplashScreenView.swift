@@ -32,7 +32,7 @@ struct SplashScreenView: View {
                         .frame(width: 28, height: 28)
                         .background(
                             Circle()
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                         )
                 }
             }
@@ -70,7 +70,7 @@ struct SplashScreenView: View {
                         .padding(.vertical, 12)
                         .background(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                         )
                 }
                 .buttonStyle(.plain)
@@ -189,7 +189,7 @@ struct HeroSplashView: View {
                             .frame(width: 120, height: 120)
                             .background(
                                 RoundedRectangle(cornerRadius: 26, style: .continuous)
-                                    .fill(.ultraThinMaterial)
+                                    .fill(Momentum.surfaceElevated)
                             )
                             .shadow(color: .black.opacity(0.2), radius: 20, x: 0, y: 10)
                     }
@@ -328,7 +328,7 @@ struct ToolbarOverviewSplashView: View {
                                 .padding(.vertical, 12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                        .fill(.ultraThinMaterial)
+                                        .fill(Momentum.surfaceElevated)
                                 )
                         }
                         .buttonStyle(.plain)
@@ -500,7 +500,7 @@ struct ToolbarButtonSplashView: View {
                                 .padding(.vertical, 12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                        .fill(.ultraThinMaterial)
+                                        .fill(Momentum.surfaceElevated)
                                 )
                         }
                         .buttonStyle(.plain)

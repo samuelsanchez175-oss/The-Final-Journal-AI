@@ -116,7 +116,7 @@ struct SupportShopSheetView: View {
                     .padding(14)
                     .background(
                         RoundedRectangle(cornerRadius: 18, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                     .transition(.move(edge: .bottom).combined(with: .opacity))
@@ -133,7 +133,7 @@ struct SupportShopSheetView: View {
         }
         .background(
             Rectangle()
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .ignoresSafeArea()
         )
@@ -157,7 +157,7 @@ struct SupportShopSheetView: View {
             HStack(spacing: 16) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                         .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
 
                     Image(systemName: symbol)
@@ -179,7 +179,7 @@ struct SupportShopSheetView: View {
             .padding(12)
             .background(
                 RoundedRectangle(cornerRadius: 20, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
             )
         }

@@ -89,7 +89,7 @@ struct InlineAudioCardView: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .strokeBorder(Color.primary.opacity(0.08), lineWidth: 1)
@@ -222,7 +222,7 @@ struct InlineAudioCardView: View {
                     .padding(.vertical, 4)
                     .background(
                         Capsule()
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                     .padding(.top, 4)
