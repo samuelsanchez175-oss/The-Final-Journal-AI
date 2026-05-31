@@ -16,17 +16,21 @@ import Combine
 
 struct JournalLibraryView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    // CRITICAL: Use SortDescriptor to make Query lazy - only loads when actually accessed
+    @Query(sort: \Item.timestamp, order: .reverse) private var items: [Item]
     @AppStorage("didSeedInitialNotes") private var didSeedInitialNotes: Bool = false
     @Environment(\.colorScheme) private var colorScheme
     @Binding var selectedImportedItem: Item?
+    
+    // Loading state - track if we've attempted to load items
+    // Start as true, but UI shows immediately (non-blocking)
+    @State private var isInitialLoad = true
 
     // MARK: - PAGE 1.1 Profile Entry Point (Button Only)
     @State private var showProfile: Bool = false
     @State private var showReleaseNotes: Bool = false
     @State private var showSupportShop: Bool = false
     @State private var showAnalytics: Bool = false
-    @State private var showSocial: Bool = false
     @State private var showAchievements: Bool = false
     @State private var showAchievementCelebration: Bool = false
     @State private var currentAchievement: Achievement? = nil
@@ -61,6 +65,8 @@ struct JournalLibraryView: View {
     @State private var cachedFilteredItems: [Item]? = nil
     @State private var lastFilterHash: Int = 0
     @State private var lastItemsCount: Int = 0
+    @State private var debouncedSearchText: String = ""
+    @State private var searchDebounceTask: Task<Void, Never>?
 
     // MARK: - PAGE 1: Local Visibility Gate for Bottom Bar
     @State private var isOnPage1: Bool = true
@@ -76,11 +82,16 @@ struct JournalLibraryView: View {
     var body: some View {
         NavigationSplitView {
             Group {
-                if items.isEmpty {
+                // Show UI structure immediately - don't block on loading
+                // Notes will appear progressively as they load
+                if items.isEmpty && !isInitialLoad {
                     JournalEmptyStateView(onCreate: addItem)
                 } else {
                     VStack(spacing: 0) {
                         page1FiltersView
+                        // Show notes list immediately - it will populate as items load
+                        // Use a subtle loading indicator only if truly needed
+                        ZStack {
                         JournalListView(
                             items: filteredItems,
                             onDelete: deleteItems,
@@ -88,15 +99,24 @@ struct JournalLibraryView: View {
                             isSelectionMode: $isSelectionMode,
                             selectedItems: $selectedItems
                         )
+                            
+                            // Show minimal loading indicator only during initial load with no items
+                            if isInitialLoad && items.isEmpty {
+                                VStack {
+                                    Spacer()
+                                    ProgressView()
+                                        .tint(.white.opacity(0.6))
+                                        .scaleEffect(0.8)
+                                    Spacer()
+                                }
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(Color.black.opacity(0.1))
+                            }
+                        }
                     }
                 }
             }
-            .background(
-                Rectangle()
-                    .fill(.ultraThinMaterial)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                    .ignoresSafeArea()
-            )
+            .background(AtmosphereBackground())
             .navigationTitle(isSelectionMode ? "\(selectedItems.count) Selected" : "Journal")
             .toolbar {
                 if isSelectionMode {
@@ -135,7 +155,7 @@ struct JournalLibraryView: View {
                     }
                 } else {
                     // Normal mode - show all toolbar buttons
-                    // MARK: - PAGE 1.1
+                // MARK: - PAGE 1.1
                     // Analytics button (5th button, leftmost)
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
@@ -148,51 +168,40 @@ struct JournalLibraryView: View {
                         .accessibilityHint("View writing statistics and insights")
                     }
                     
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                            showSocial = true
-                        } label: {
-                            Image(systemName: "person.2.fill")
-                        }
-                        .accessibilityLabel("Social")
-                        .accessibilityHint("View curated tips and guides for writers and poets")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                        showProfile.toggle()
+                    } label: {
+                        Image(systemName: "person.crop.circle")
                     }
-                    
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                            showProfile.toggle()
-                        } label: {
-                            Image(systemName: "person.crop.circle")
-                        }
-                        .accessibilityLabel("Profile")
-                        .accessibilityHint("Open profile settings")
-                    }
+                    .accessibilityLabel("Profile")
+                    .accessibilityHint("Open profile settings")
+                }
 
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                            showReleaseNotes = true
-                        } label: {
-                            Image(systemName: "clock.arrow.circlepath")
-                        }
-                        .accessibilityLabel("Release Notes")
-                        .accessibilityHint("View app updates and new features")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                        showReleaseNotes = true
+                    } label: {
+                        Image(systemName: "clock.arrow.circlepath")
                     }
+                    .accessibilityLabel("Release Notes")
+                    .accessibilityHint("View app updates and new features")
+                }
 
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                            showSupportShop = true
-                        } label: {
-                            Image(systemName: "bag")
-                        }
-                        .accessibilityLabel("Support & Shop")
-                        .accessibilityHint("Support the creators and view shop")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                        showSupportShop = true
+                    } label: {
+                        Image(systemName: "bag")
                     }
+                    .accessibilityLabel("Support & Shop")
+                    .accessibilityHint("Support the creators and view shop")
+                }
 
-                    ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                         // Normal mode - show menu
                         Menu {
                             Button {
@@ -270,9 +279,6 @@ struct JournalLibraryView: View {
         .sheet(isPresented: $showAnalytics) {
             AnalyticsDashboardView()
         }
-        .sheet(isPresented: $showSocial) {
-            SocialFeedView()
-        }
         .overlay {
             if showAchievementCelebration, let achievement = currentAchievement {
                 AchievementCelebrationView(achievement: achievement) {
@@ -284,15 +290,68 @@ struct JournalLibraryView: View {
             }
         }
         .onAppear {
-            // Check achievements when view appears
-            UserBehaviorTracker.shared.checkAchievementsWithItems(items: items)
+            StartupPerformanceTracker.shared.recordMilestone("journallibraryview_appear")
             
-            // Record app open for notifications
-            NotificationManager.shared.recordAppOpen()
+            // PRIORITY 1: Load notes immediately - no delay!
+            // Access query right away so notes appear as fast as possible
+            StartupPerformanceTracker.shared.recordMilestone("query_access_start")
+            
+            // Track when @Query property is first accessed
+            // This helps identify if there's any delay in SwiftData query initialization
+            StartupPerformanceTracker.shared.recordMilestone("query_property_accessed")
+            
+            // Force Query to load by accessing items immediately
+            // @Query is lazy but accessing it triggers loading
+            // This happens synchronously but SwiftData may do async work internally
+            let itemsCount = items.count
+            
+            StartupPerformanceTracker.shared.recordMilestone("query_count_evaluated")
+            
+            // Track the actual count to verify query worked
+            if itemsCount > 0 {
+                StartupPerformanceTracker.shared.recordMilestone("query_has_items")
+            } else {
+                StartupPerformanceTracker.shared.recordMilestone("query_empty")
+            }
+            
+            StartupPerformanceTracker.shared.recordMilestone("query_access_complete")
+            
+            // Mark initial load complete immediately after query access
+            // UI will show notes progressively as they load
+            isInitialLoad = false
+            
+            // PRIORITY 2: Defer ALL non-essential operations; run on MainActor so we can use items (not Sendable)
+            Task { @MainActor in
+                // Wait 3-5 seconds before doing heavy background work
+                try? await Task.sleep(nanoseconds: 3_000_000_000) // 3 seconds
+                StartupPerformanceTracker.shared.recordMilestone("background_ops_start")
+                UserBehaviorTracker.shared.checkAchievementsWithItems(items: items)
+                StartupPerformanceTracker.shared.recordMilestone("achievements_checked")
+            }
+            
+            // Initialize debounced search text immediately (lightweight)
+            debouncedSearchText = searchText
         }
         .onChange(of: items.count) { _, _ in
-            // Check achievements when items count changes
-            UserBehaviorTracker.shared.checkAchievementsWithItems(items: items)
+            // Defer achievement checking when items change - don't block UI
+            if !isInitialLoad {
+                Task { @MainActor in
+                    try? await Task.sleep(nanoseconds: 1_000_000_000) // 1 second
+                    UserBehaviorTracker.shared.checkAchievementsWithItems(items: items)
+                }
+            }
+        }
+        .onChange(of: searchText) { oldValue, newValue in
+            // Debounce search text changes to avoid filtering on every keystroke
+            searchDebounceTask?.cancel()
+            searchDebounceTask = Task {
+                try? await Task.sleep(nanoseconds: 300_000_000) // 300ms debounce
+                if !Task.isCancelled {
+                    await MainActor.run {
+                        debouncedSearchText = newValue
+                    }
+                }
+            }
         }
         .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("AchievementUnlocked"))) { notification in
             // Show achievement celebration when unlocked
@@ -411,18 +470,18 @@ struct JournalLibraryView: View {
 
     private func addItem() {
         // SEGMENT 21: Create new note with immediate selection routing
-        let nextIndex = (items.map { item in
-            if let number = Int(item.title.replacingOccurrences(of: "Note ", with: "")) {
-                return number
-            }
-            return 0
-        }.max() ?? 0) + 1
-        let newItem = Item(
-            timestamp: Date(),
-            title: "Note \(nextIndex)",
-            body: ""
-        )
-        modelContext.insert(newItem)
+            let nextIndex = (items.map { item in
+                if let number = Int(item.title.replacingOccurrences(of: "Note ", with: "")) {
+                    return number
+                }
+                return 0
+            }.max() ?? 0) + 1
+            let newItem = Item(
+                timestamp: Date(),
+                title: "Note \(nextIndex)",
+                body: ""
+            )
+            modelContext.insert(newItem)
         
         // Save the context immediately to ensure the item is persisted
         do {
@@ -433,7 +492,7 @@ struct JournalLibraryView: View {
         
         // SEGMENT 21: Force the NavigationSplitView to jump to the detail view immediately
         // Setting selectedImportedItem triggers the detail closure to render NoteEditorView
-        selectedImportedItem = newItem
+            selectedImportedItem = newItem
         
         // Track note creation for achievements
         UserBehaviorTracker.shared.trackWritingActivity(wordsWritten: 0, noteCreated: true)
@@ -480,9 +539,15 @@ struct JournalLibraryView: View {
     }
 
     private var filteredItems: [Item] {
+        // CRITICAL: Return empty array during initial load to avoid blocking
+        guard !isInitialLoad else { return [] }
+        
+        // Use debounced search text for filtering to avoid filtering on every keystroke
+        let searchTextToUse = debouncedSearchText
+        
         // Compute hash of filter state and sort order for change detection (performance optimization)
         var filterHasher = Hasher()
-        filterHasher.combine(searchText)
+        filterHasher.combine(searchTextToUse)
         if let filter = selectedFilter {
             filterHasher.combine(filter.hashValue)
         } else {
@@ -507,10 +572,10 @@ struct JournalLibraryView: View {
         // Recompute filtered items (only when filter state or items actually changed)
         var base: [Item]
 
-        if searchText.isEmpty {
+        if searchTextToUse.isEmpty {
             base = items
         } else {
-            let q = searchText.lowercased()
+            let q = searchTextToUse.lowercased()
 
             if q.hasPrefix("title:") {
                 let t = q.replacingOccurrences(of: "title:", with: "").trimmingCharacters(in: .whitespaces)
@@ -994,7 +1059,7 @@ struct JournalLibraryView: View {
         DispatchQueue.main.async { [filter, uniqueValues, itemsHash] in
             self.cachedUniqueValues[filter] = uniqueValues
             if itemsHash != self.lastUniqueValuesHash {
-                // Clear cache if items changed
+            // Clear cache if items changed
                 self.lastUniqueValuesHash = itemsHash
                 self.cachedUniqueValues = [filter: uniqueValues]
             }
