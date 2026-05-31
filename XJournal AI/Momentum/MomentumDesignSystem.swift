@@ -89,9 +89,11 @@ enum ThemeMode: String, CaseIterable, Identifiable {
 
 struct AtmosphereGlow: View {
     @Environment(\.colorScheme) private var scheme
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     var calm: Bool = false                                   // blue accentCalm for empathy/reset
     private var glow: Color { calm ? Momentum.accentCalm : Momentum.accent }
     private var base: Color { scheme == .dark ? Color(hex: 0x121214) : Momentum.surface }
+    @State private var breathe = false
     var body: some View {
         base
             .overlay(alignment: .top) {
@@ -105,7 +107,15 @@ struct AtmosphereGlow: View {
                     startRadius: 0,
                     endRadius: 470
                 )
+                .scaleEffect(breathe ? 1.06 : 1.0, anchor: .top)
+                .opacity(breathe ? 0.72 : 1.0)
                 .allowsHitTesting(false)
+                .onAppear {
+                    guard !reduceMotion else { return }   // respect Reduce Motion
+                    withAnimation(.easeInOut(duration: 9).repeatForever(autoreverses: true)) {
+                        breathe = true
+                    }
+                }
             }
             .ignoresSafeArea()
     }
@@ -184,6 +194,8 @@ struct MomentumSquareButtonStyle: ButtonStyle {
             .foregroundStyle(fg)
             .contentShape(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous))
             .opacity(pressed && fill != .outline ? 0.9 : 1)
+            .scaleEffect(pressed ? 0.98 : 1)                  // micro-compression (Segment 4)
+            .animation(.easeOut(duration: 0.12), value: pressed)
     }
 }
 
