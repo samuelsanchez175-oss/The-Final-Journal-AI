@@ -6,13 +6,18 @@ import Security
 // MARK: - Rhyme Color Palette
 
 enum RhymeColorPalette {
+    // Light re-tune (2026-05-31): the editor already applies these as low-opacity backgrounds
+    // (CCV.6: ~0.16–0.30 alpha in light), but the rhyme-group list (CCV.15) uses them as
+    // foreground TEXT on the white Momentum surface — where amber[0] + green[2] read too faint.
+    // Deepened just those two so they're legible as text AND still soft as editor highlights.
+    // Distinct 6-hue identity preserved.
     static let colors: [UIColor] = [
-        UIColor(red: 0.94, green: 0.76, blue: 0.20, alpha: 1),
-        UIColor(red: 0.94, green: 0.45, blue: 0.35, alpha: 1),
-        UIColor(red: 0.48, green: 0.78, blue: 0.64, alpha: 1),
-        UIColor(red: 0.45, green: 0.64, blue: 0.90, alpha: 1),
-        UIColor(red: 0.72, green: 0.56, blue: 0.90, alpha: 1),
-        UIColor(red: 0.90, green: 0.62, blue: 0.78, alpha: 1)
+        UIColor(red: 0.82, green: 0.58, blue: 0.08, alpha: 1),  // amber (deepened for light)
+        UIColor(red: 0.94, green: 0.45, blue: 0.35, alpha: 1),  // coral
+        UIColor(red: 0.18, green: 0.62, blue: 0.45, alpha: 1),  // emerald (deepened for light)
+        UIColor(red: 0.45, green: 0.64, blue: 0.90, alpha: 1),  // azure
+        UIColor(red: 0.72, green: 0.56, blue: 0.90, alpha: 1),  // violet
+        UIColor(red: 0.90, green: 0.62, blue: 0.78, alpha: 1)   // rose
     ]
 }
 
