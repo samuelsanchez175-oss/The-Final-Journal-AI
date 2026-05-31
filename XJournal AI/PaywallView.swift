@@ -68,7 +68,7 @@ struct PaywallView: View {
                         
                         Text("Upgrade to Premium for unlimited access")
                             .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                             .multilineTextAlignment(.center)
                     }
                     .padding(.top, 20)
@@ -89,7 +89,7 @@ struct PaywallView: View {
                                 .font(.headline)
                             Text("Please check your internet connection")
                                 .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                         .padding()
                     } else {
@@ -164,14 +164,14 @@ struct PaywallView: View {
                         } label: {
                             Text("Restore Purchases")
                                 .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                     }
                 }
             }
             .background(
                 Rectangle()
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
@@ -239,7 +239,7 @@ struct UsageInfoView: View {
                 if !UsageTracker.shared.isPremium() {
                     Text("Resets in \(timeUntilReset)")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
             }
             .padding(.horizontal)
@@ -375,7 +375,7 @@ struct EnhancedUsageRow: View {
         .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
         )
     }
@@ -423,7 +423,7 @@ struct TierProductCard: View {
                         
                         Text(product.formattedPrice)
                             .font(.headline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     
                     Spacer()
@@ -443,7 +443,7 @@ struct TierProductCard: View {
                                 .foregroundStyle(tierColor)
                             Text(feature)
                                 .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                     }
                 }
@@ -452,7 +452,7 @@ struct TierProductCard: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .strokeBorder(
