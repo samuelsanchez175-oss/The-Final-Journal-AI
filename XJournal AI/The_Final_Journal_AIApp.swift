@@ -194,7 +194,7 @@ struct The_Final_Journal_AIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .tint(MomentumTheme.accent)
+                .tint(Momentum.accent)
                 .preferredColorScheme((ThemeMode(rawValue: appTheme) ?? .light).colorScheme)
                 .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
                     // Re-activate audio session when app comes to foreground

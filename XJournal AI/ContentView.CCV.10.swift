@@ -116,7 +116,8 @@ struct JournalLibraryView: View {
                     }
                 }
             }
-            .background(AtmosphereBackground())
+            .background(AtmosphereGlow())
+            .toolbarBackground(.hidden, for: .navigationBar)
             .navigationTitle(isSelectionMode ? "\(selectedItems.count) Selected" : "Journal")
             .toolbar {
                 if isSelectionMode {
