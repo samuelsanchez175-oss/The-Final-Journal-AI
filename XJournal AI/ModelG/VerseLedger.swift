@@ -46,8 +46,8 @@ enum VerseLedgerScorer {
     static func score(hook: String, bars: [String]) -> VerseLedger {
         let lines = ([hook] + bars).map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
         let cmu = getGlobalCMUDICTStore()
-        let jargonTerms = Set(NewRapDatabase.shared.themes.flatMap { $0.jargonTerms }
-            .map { $0.lowercased().trimmingCharacters(in: .whitespaces) }.filter { $0.count > 2 })
+        // Full v8 lexicon (≈500 terms), not just a theme subset — more authentic vocab to credit.
+        let jargonTerms = Set(LexiconStore.shared.allTermStrings().filter { $0.count > 2 })
 
         // ---- positives ----
         let counts = lines.map { syllables(in: $0, cmu: cmu) }
@@ -65,7 +65,7 @@ enum VerseLedgerScorer {
         let jargon = jargonScore(lines, terms: jargonTerms)
         let smart = smartScore(lines)
         let flow = flowScore(lines, cmu: cmu)
-        let originality = 100.0   // on-device: no corpus n-gram set loaded; assume original
+        let originality = originalityScore(lines, bias: ModelGEnvironment.originalityBias)
 
         let positives: [String: Double] = ["Cadence": cadence, "EndRhyme": endRhyme,
             "InnerRhyme": innerRhyme, "Jargon": jargon, "Smart": smart, "Flow": flow,
@@ -206,6 +206,37 @@ enum VerseLedgerScorer {
         let cv = mean > 0 ? variance.squareRoot() / mean : 0.0
         let consistency = max(0.0, 100.0 - cv * 100.0)
         return 0.6 * match + 0.4 * consistency
+    }
+
+    // Corpus vocabulary + exact lines for the inspiration/originality axis (lazy, on-device).
+    private static var corpusVocab: Set<String> = []
+    private static var corpusLines: Set<String> = []
+    private static var corpusLoaded = false
+
+    private static func loadCorpusOnce() {
+        guard !corpusLoaded else { return }
+        corpusLoaded = true
+        for bar in EditorialGroundTruth.shared.groundTruthBars {
+            let ws = wordsIn(bar.text)
+            guard !ws.isEmpty else { continue }
+            corpusLines.insert(ws.joined(separator: " "))
+            for w in ws where w.count > 3 && !stopwords.contains(w) { corpusVocab.insert(w) }
+        }
+    }
+
+    /// Reward hitting the inspiration target (bias): grounded in the culture's idioms but not
+    /// verbatim. Sterile-original AND plagiarized both score low; the sweet spot is `bias`.
+    private static func originalityScore(_ lines: [String], bias: Double) -> Double {
+        loadCorpusOnce()
+        guard !corpusVocab.isEmpty else { return 100.0 }   // corpus not loaded yet → neutral
+        let verbatim = lines.contains { corpusLines.contains(wordsIn($0).joined(separator: " ")) }
+        let content = lines.flatMap { wordsIn($0) }.filter { $0.count > 3 && !stopwords.contains($0) }
+        guard !content.isEmpty else { return 50.0 }
+        let inCorpus = content.filter { corpusVocab.contains($0) }.count
+        let originalityLevel = 1.0 - Double(inCorpus) / Double(content.count)
+        var score = max(0.0, 100.0 - abs(originalityLevel - bias) * 150.0)
+        if verbatim { score = min(score, 20.0) }           // verbatim corpus line = plagiarism floor
+        return score
     }
 
     private static func repetitionPenalty(_ lines: [String]) -> Double {

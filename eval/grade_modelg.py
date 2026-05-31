@@ -137,6 +137,9 @@ RHYME_TARGET = 0.50
 # A3 internal/multisyllabic rhyme: density of rhyming word-pairs within a short window.
 # Real rap is internal-rhyme dense; ~0.12 = rich. Fixed target for now (corpus-grounded later).
 INTERNAL_RHYME_TARGET = 0.12
+# Originality is reframed as INSPIRATION: reward hitting a target originality level (1 - corpus
+# overlap), not maxing it. Sterile-original and verbatim-copied both miss. Matches the in-app slider.
+ORIGINALITY_TARGET = 0.6
 
 PUNCT = ".,!?;:\"'()[]{}*—–-…"
 ADLIB_RE = re.compile(r"\((.*?)\)")          # (Skrrt), (yeah) ...
@@ -459,28 +462,29 @@ def build_originality_index(bars):
 
 
 def score_originality(lines, corpus_lines, corpus_4grams):
-    """A7: penalise near-duplicate lines and high 4-gram overlap with the corpus."""
+    """A7 reframed (Inspiration): reward hitting the inspiration target — grounded in the corpus's
+    phrasing but not verbatim. Sterile-original AND plagiarized both score low; verbatim = hard floor."""
     if not lines:
         return 0.0, {}
-    penalty, dup_lines, overlaps = 0.0, 0, []
+    dup_lines, overlaps = 0, []
     for ln in lines:
         norm = " ".join(WORD_RE.findall(ADLIB_RE.sub(" ", ln).lower()))
         if not norm:
             continue
         if norm in corpus_lines:
             dup_lines += 1
-            penalty += 35.0                  # verbatim corpus line = heavy hit
+            overlaps.append(1.0)
             continue
         toks = norm.split()
         grams = [tuple(toks[i:i + 4]) for i in range(len(toks) - 3)]
-        if grams:
-            hit = sum(1 for g in grams if g in corpus_4grams) / len(grams)
-            overlaps.append(hit)
-            if hit > 0.5:
-                penalty += hit * 25.0        # heavily-borrowed phrasing
+        overlaps.append(sum(1 for g in grams if g in corpus_4grams) / len(grams) if grams else 0.0)
     avg_overlap = statistics.mean(overlaps) if overlaps else 0.0
-    return max(0.0, 100.0 - penalty), {"duplicate_lines": dup_lines,
-                                       "avg_4gram_overlap": round(avg_overlap, 3)}
+    originality_level = 1.0 - avg_overlap
+    score = max(0.0, 100.0 - abs(originality_level - ORIGINALITY_TARGET) * 150.0)
+    if dup_lines:
+        score = min(score, 20.0)             # verbatim corpus line = plagiarism floor
+    return score, {"duplicate_lines": dup_lines, "avg_4gram_overlap": round(avg_overlap, 3),
+                   "originality_level": round(originality_level, 2)}
 
 
 # -------------------------------------------------------------------- MAIN ---

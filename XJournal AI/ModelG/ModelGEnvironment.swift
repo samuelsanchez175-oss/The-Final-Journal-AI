@@ -41,6 +41,13 @@ enum ModelGEnvironment {
         get { UserDefaults.standard.bool(forKey: "model_g_v3_enabled") }
         set { UserDefaults.standard.set(newValue, forKey: "model_g_v3_enabled") }
     }
+
+    /// Originality/inspiration target (0 = lean hard on the culture's idioms & the training lyrics;
+    /// 1 = more novel). Default 0.6: fresh but grounded — sterile-original loses the voice.
+    static var originalityBias: Double {
+        get { (UserDefaults.standard.object(forKey: "model_g_originality_bias") as? Double) ?? 0.6 }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_originality_bias") }
+    }
 }
 
 // MARK: - Generation Context

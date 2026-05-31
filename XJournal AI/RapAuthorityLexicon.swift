@@ -146,7 +146,12 @@ class LexiconStore {
     
     private var lexicons: [LexiconScene: SceneLexicon] = [:]
     private var defaultScene: LexiconScene = .atlanta
-    
+
+    /// Every distinct term string across all scenes — the full v8 lexicon, lowercased.
+    func allTermStrings() -> [String] {
+        Array(Set(lexicons.values.flatMap { $0.terms.map { $0.term.lowercased() } }))
+    }
+
     private init() {
         // Try to load from bundle first, then Downloads folder
         do {

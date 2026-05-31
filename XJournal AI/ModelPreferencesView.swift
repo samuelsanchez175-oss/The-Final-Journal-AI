@@ -9,6 +9,7 @@ struct ModelPreferencesView: View {
     @State private var selectedModel: SuggestionModel = .modelG
     @State private var modelGSettings = ModelSettings()
     @State private var modelGv3Settings = ModelSettings()
+    @State private var originalityBias = ModelGEnvironment.originalityBias
     @State private var modelYSettings = ModelSettings()
     
     var body: some View {
@@ -31,6 +32,7 @@ struct ModelPreferencesView: View {
                             ModelSettingsForm(settings: $modelGSettings, modelName: "Model G")
                         case .modelGv3:
                             modelGv3Toggle
+                            originalitySlider
                             Text("Model G v3 uses the upgraded prompt and scoring path. Tune voice and constraints independently from classic Model G.")
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
@@ -80,6 +82,24 @@ struct ModelPreferencesView: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
+        }
+    }
+
+    private var originalitySlider: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack {
+                Text("Originality").font(.subheadline.weight(.semibold))
+                Spacer()
+                Text(originalityBias < 0.34 ? "Inspired" : (originalityBias < 0.67 ? "Balanced" : "Novel"))
+                    .font(.caption).foregroundStyle(.secondary)
+            }
+            Slider(value: Binding(
+                get: { originalityBias },
+                set: { originalityBias = $0; ModelGEnvironment.originalityBias = $0 }
+            ), in: 0...1)
+            Text("Lower = lean on the culture & training lyrics (references, wordplay, familiar phrases). "
+                 + "Higher = more novel. Mid is the sweet spot — fully original loses the voice.")
+                .font(.caption).foregroundStyle(.secondary)
         }
     }
 
