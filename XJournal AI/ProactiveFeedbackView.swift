@@ -51,15 +51,16 @@ struct ProactiveFeedbackView: View {
         VStack(spacing: 8) {
             Image(systemName: "hand.thumbsup.fill")
                 .font(.system(size: 48))
-                .foregroundStyle(.blue)
-            
+                .foregroundStyle(Momentum.accentCalm)
+
             Text("How did this suggestion work for you?")
                 .font(.title2.weight(.semibold))
+                .foregroundStyle(Momentum.contentPrimary)
                 .multilineTextAlignment(.center)
-            
+
             Text("Your feedback helps improve future suggestions")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.center)
         }
         .padding(.top, 32)
@@ -105,11 +106,14 @@ struct ProactiveFeedbackView: View {
             Text(text)
                 .font(.headline)
         }
+        .foregroundStyle(Momentum.contentPrimary)
         .frame(maxWidth: .infinity)
         .padding()
         .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(.ultraThinMaterial)
+            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                .fill(Momentum.surfaceElevated)
+                .overlay(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                    .stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
         )
     }
     
@@ -125,11 +129,7 @@ struct ProactiveFeedbackView: View {
     }
     
     private var backgroundView: some View {
-        let overlayOpacity = colorScheme == .dark ? GlassSettings.darkening : 0.0
-        return Rectangle()
-            .fill(.ultraThinMaterial)
-            .overlay(Color.black.opacity(overlayOpacity))
-            .ignoresSafeArea()
+        AtmosphereGlow(calm: true)   // gentle blue accentCalm tone for the empathy/feedback prompt
     }
     
     @ViewBuilder

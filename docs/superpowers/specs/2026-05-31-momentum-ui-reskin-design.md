@@ -171,7 +171,7 @@ Each phase is independently shippable and screenshot-verified (light mode).
 | **P3 Achievements** | Badge/collection rows + **unlock celebration** + fix hard-coded-dark. | 14–18, 24 |
 | **P4 Empty/churn** | Empathy flows (empty journal, comeback). | 19–22 |
 | **P5 App-wide sweep** | Editor readability + rhyme-palette re-tune; settings/paywall/shop/release; fix Splash. | tokens |
-| **P6 Glass scoping** | Retire glass from **content** surfaces; keep frosted floating chrome (`momentumFloatingBar`). Remove dead `GlassEffectComponents`/`SoftBlueGlass` paths; leave editorial-dark seam. | — |
+| **P6 Tasteful glass (REINTRODUCE)** | **Decision (Samuel 2026-05-31): bring glass *back*, done naturally — not the old forced muddy glass — in 3 spots only:** the **dynamic-island keyboard toolbar** (`DynamicIslandToolbarView`), the **bottom-of-page buttons** (search/compose), and the **note creator/editor surface** (`CCV.13`). Translucency as deliberate *chrome* over the light surface; content surfaces (lists/cards) stay flat. | `DynamicIslandToolbarView`, `CCV.10` bottom bar, `CCV.13` |
 | **P7 Polish** | Atmosphere animation, micro-compression (Segment 4), full contrast/accessibility audit. | — |
 
 ---
