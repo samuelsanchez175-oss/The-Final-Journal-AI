@@ -41,7 +41,7 @@ struct SuggestionDefaultsSection: View {
                 .font(.headline)
             Text("Profile defines defaults. Session-specific direction (tone, rhyme groups, intent) is set on the Model G control surface (or Model G Core when enabled) when you suggest lines.")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .fixedSize(horizontal: false, vertical: true)
             VStack(alignment: .leading, spacing: 12) {
                 HStack {
@@ -75,7 +75,7 @@ struct SuggestionDefaultsSection: View {
             .padding(12)
             .background(
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
             )
         }
     }
@@ -224,6 +224,7 @@ struct ProfilePopoverView: View {
             .padding(.top, 20) // Extra top padding to prevent cutoff
         }
         .frame(maxWidth: .infinity)
+        .background(AtmosphereGlow())
         // DISABLED: Authentication disabled - no sign-in/sign-up sheets
         /*
         .sheet(isPresented: $showSignIn) {
@@ -248,7 +249,7 @@ struct ProfilePopoverView: View {
                         .foregroundStyle(.green)
                     Text("Signed in as \(user.email)")
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                     Spacer()
                     Button {
                         Task {
@@ -264,7 +265,7 @@ struct ProfilePopoverView: View {
                 .padding(.vertical, 10)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                 )
             } else {
                 HStack {
@@ -272,14 +273,14 @@ struct ProfilePopoverView: View {
                         .foregroundStyle(.orange)
                     Text("Not signed in")
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 10)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                 )
             }
         }
@@ -295,7 +296,7 @@ struct ProfilePopoverView: View {
             
             Text("Create an account or sign in to sync your configurations, preferences, and data across devices.")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             
             HStack(spacing: 12) {
                 Button {
@@ -321,7 +322,7 @@ struct ProfilePopoverView: View {
                         .padding(.vertical, 10)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                         )
                 }
             }
@@ -330,7 +331,7 @@ struct ProfilePopoverView: View {
         .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
         )
     }
     
@@ -348,7 +349,7 @@ struct ProfilePopoverView: View {
                 ) {
                     ZStack {
                         Circle()
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .frame(width: 96, height: 96)
 
                         if let avatarImage {
@@ -360,7 +361,7 @@ struct ProfilePopoverView: View {
                         } else {
                             Image(systemName: "person.crop.circle.fill")
                                 .font(.system(size: 48))
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                     }
                 }
@@ -439,7 +440,7 @@ struct ProfilePopoverView: View {
                 
                 Text("Inputting your personal details can influence the lyrics produced via generators. It adds weight to the generator to make suggestions more personal and tailored to your experiences.")
                     .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                     .fixedSize(horizontal: false, vertical: true)
                 
                 Button {
@@ -460,13 +461,13 @@ struct ProfilePopoverView: View {
                         
                         Image(systemName: "chevron.right")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                     )
                 }
                 .buttonStyle(.plain)
@@ -485,7 +486,7 @@ struct ProfilePopoverView: View {
                 
                 Text("Enter your API keys to enable AI-powered features. OpenAI API key is required for AI suggestions. Genius API key is optional and improves rhyme ranking by accessing song lyrics data.")
                     .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                     .fixedSize(horizontal: false, vertical: true)
                 
                 APIKeyField(
@@ -552,13 +553,13 @@ struct ProfilePopoverView: View {
                         
                         Image(systemName: "chevron.right")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                     )
                 }
                 .buttonStyle(.plain)
@@ -589,13 +590,13 @@ struct ProfilePopoverView: View {
                             
                             Image(systemName: "chevron.right")
                                 .font(.caption)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
                         .background(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                         )
                     }
                     .buttonStyle(.plain)
@@ -615,13 +616,13 @@ struct ProfilePopoverView: View {
                         
                         Image(systemName: "chevron.right")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                     )
                 }
                 .buttonStyle(.plain)
@@ -677,14 +678,14 @@ struct ProfilePopoverView: View {
                             } else {
                                 Image(systemName: "chevron.right")
                                     .font(.caption)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
                         .background(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                         )
                     }
                     .buttonStyle(.plain)
@@ -722,14 +723,14 @@ struct ProfilePopoverView: View {
                             } else {
                                 Image(systemName: "chevron.right")
                                     .font(.caption)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
                         .background(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                         )
                     }
                     .buttonStyle(.plain)
@@ -759,13 +760,13 @@ struct ProfilePopoverView: View {
                         
                         Image(systemName: "chevron.right")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                     )
                 }
                 .buttonStyle(.plain)
@@ -787,7 +788,7 @@ struct ProfilePopoverView: View {
                     HStack {
                         Text("Version")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         Spacer()
                         Text(appVersion)
                             .font(.caption)
@@ -797,7 +798,7 @@ struct ProfilePopoverView: View {
                     HStack {
                         Text("Build")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         Spacer()
                         Text(appBuild)
                             .font(.caption)
@@ -808,7 +809,7 @@ struct ProfilePopoverView: View {
                 .padding(.vertical, 12)
                 .background(
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                 )
             }
 
@@ -856,13 +857,13 @@ struct ProfilePopoverView: View {
                         Spacer()
                         Image(systemName: "chevron.right")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                     )
                 }
                 .buttonStyle(.plain)
@@ -889,7 +890,7 @@ struct ProfilePopoverView: View {
                                 .font(.caption.weight(.medium))
                             Text("Stored securely in Keychain")
                                 .font(.caption2)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                         Spacer()
                     }
@@ -897,7 +898,7 @@ struct ProfilePopoverView: View {
                     .padding(.vertical, 12)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                     )
                 }
             }
@@ -934,7 +935,7 @@ struct ProfilePopoverView: View {
                 } label: {
                     Text("Cancel")
                         .font(.body)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .frame(minWidth: 70)
                         .padding(.vertical, 10)
                 }
@@ -978,7 +979,7 @@ struct ProfilePopoverView: View {
                 .opacity(isFormValid ? 1.0 : 0.4)
                 .background(
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                 )
             }
             .padding(.top, 8)
@@ -994,7 +995,7 @@ struct ProfilePopoverView: View {
                     .padding(.vertical, 6)
                     .background(
                         Capsule(style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                     .transition(.move(edge: .top).combined(with: .opacity))
@@ -1015,7 +1016,7 @@ struct ProfilePopoverView: View {
         }
         .background(
             Rectangle()
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .overlay(
                     LinearGradient(
@@ -1070,7 +1071,7 @@ struct UsageInfoRow: View {
         HStack {
             Text(label)
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             Spacer()
             Text("\(used)/\(limit)")
                 .font(.caption)
@@ -1090,7 +1091,7 @@ struct PreferencesInfoView: View {
             HStack {
                 Text("Default Rhyme Overlay")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 Spacer()
                 Toggle("", isOn: $defaultRhymeOverlayVisible)
                     .labelsHidden()
@@ -1100,7 +1101,7 @@ struct PreferencesInfoView: View {
                 HStack {
                     Text("Default BPM")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                     Spacer()
                     Text("\(defaultBPM)")
                         .font(.caption)
@@ -1112,7 +1113,7 @@ struct PreferencesInfoView: View {
         .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
         )
     }
 }
@@ -1127,7 +1128,7 @@ struct SignalLayerAdvancedModeToggle: View {
             HStack {
                 Text("Signal Layer Advanced Mode")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 
                 Spacer()
                 
@@ -1146,7 +1147,7 @@ struct SignalLayerAdvancedModeToggle: View {
         .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
         )
     }
 }
@@ -1195,7 +1196,7 @@ struct StorageInfoView: View {
             HStack {
                 Text("Total Notes")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 Spacer()
                 Text("\(totalNotes)")
                     .font(.caption)
@@ -1205,7 +1206,7 @@ struct StorageInfoView: View {
             HStack {
                 Text("Audio Files")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 Spacer()
                 Text(formatBytes(audioFilesSize))
                     .font(.caption)
@@ -1216,7 +1217,7 @@ struct StorageInfoView: View {
         .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
         )
         .onAppear {
             calculateStorage()
@@ -1291,14 +1292,14 @@ struct UserPersonalizationSheet: View {
                         
                         Text("Share any context about yourself that could personalize your AI suggestions")
                             .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         
                         TextEditor(text: $personalDetails.background)
                             .frame(minHeight: 120)
                             .padding(8)
                             .background(
                                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                    .fill(.ultraThinMaterial)
+                                    .fill(Momentum.surfaceElevated)
                                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                             )
                             .overlay(
@@ -1307,7 +1308,7 @@ struct UserPersonalizationSheet: View {
                                         VStack {
                                             HStack {
                                                 Text("Tell us about yourself...")
-                                                    .foregroundStyle(.secondary)
+                                                    .foregroundStyle(Momentum.contentSecondary)
                                                     .padding(.leading, 12)
                                                     .padding(.top, 16)
                                                 Spacer()
@@ -1358,7 +1359,7 @@ struct UserPersonalizationSheet: View {
             
             Text(description)
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             
             // Tags Display
             if !tags.wrappedValue.isEmpty {
@@ -1379,7 +1380,7 @@ struct UserPersonalizationSheet: View {
                         .padding(.vertical, 6)
                         .background(
                             Capsule(style: .continuous)
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                         )
                     }
@@ -1506,7 +1507,7 @@ struct NotificationPreferencesView: View {
             .padding(.vertical, 12)
             .background(
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
             )
             
             if notificationManager.authorizationStatus == .authorized {
@@ -1547,7 +1548,7 @@ struct NotificationPreferencesView: View {
                 .padding(.vertical, 12)
                 .background(
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                 )
             }
         }
@@ -1569,14 +1570,14 @@ extension ProfilePopoverView {
         VStack(alignment: .leading, spacing: 6) {
             Text(label)
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
 
             SecureField(placeholder, text: text)
                 .textFieldStyle(.plain)
                 .padding(10)
                 .background(
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                         .overlay(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
                                 .strokeBorder(Color.primary.opacity(0.08), lineWidth: 1)
@@ -1586,7 +1587,7 @@ extension ProfilePopoverView {
             if let helperText {
                 Text(helperText)
                     .font(.caption2)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
         }
     }
@@ -1603,7 +1604,7 @@ extension ProfilePopoverView {
         VStack(alignment: .leading, spacing: 6) {
             Text(label)
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
 
             TextField(placeholder, text: text)
                 .keyboardType(keyboard)
@@ -1611,7 +1612,7 @@ extension ProfilePopoverView {
                 .padding(10)
                 .background(
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                         .overlay(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
                                 .strokeBorder(
