@@ -256,8 +256,24 @@ enum VerseLedgerScorer {
     }
 }
 
-/// Appends each generation's ledger to Documents/verse_ledger.jsonl — an on-device trend the app
-/// accumulates over generations (pull the file, or surface it in a debug view later).
+/// One recorded generation (one line of verse_ledger.jsonl).
+struct VerseLedgerEntry: Codable, Identifiable {
+    var id: Double { timestamp }
+    let timestamp: Double
+    let source: String
+    let net: Double
+    let cadence: Double
+    let endRhyme: Double
+    let innerRhyme: Double
+    let jargon: Double
+    let smart: Double
+    let flow: Double
+    let repetitionPenalty: Double
+    let overExplainPenalty: Double
+}
+
+/// Appends each generation's ledger to Documents/verse_ledger.jsonl and reads it back —
+/// an on-device trend the app accumulates over generations (see VerseLedgerTrendView).
 final class VerseLedgerLog {
     static let shared = VerseLedgerLog()
     private init() {}
@@ -269,12 +285,7 @@ final class VerseLedgerLog {
 
     func record(_ ledger: VerseLedger, source: String) {
         guard let url = fileURL else { return }
-        struct Entry: Codable {
-            let timestamp: Double, source: String, net: Double, cadence: Double, endRhyme: Double
-            let innerRhyme: Double, jargon: Double, smart: Double, flow: Double
-            let repetitionPenalty: Double, overExplainPenalty: Double
-        }
-        let e = Entry(timestamp: Date().timeIntervalSince1970, source: source, net: ledger.net,
+        let e = VerseLedgerEntry(timestamp: Date().timeIntervalSince1970, source: source, net: ledger.net,
             cadence: ledger.cadence, endRhyme: ledger.endRhyme, innerRhyme: ledger.innerRhyme,
             jargon: ledger.jargon, smart: ledger.smart, flow: ledger.flow,
             repetitionPenalty: ledger.repetitionPenalty, overExplainPenalty: ledger.overExplainPenalty)
@@ -287,6 +298,15 @@ final class VerseLedgerLog {
             try? handle.close()
         } else {
             try? line.data(using: .utf8)?.write(to: url)
+        }
+    }
+
+    /// All recorded generations, oldest first. Empty if nothing logged yet.
+    func loadAll() -> [VerseLedgerEntry] {
+        guard let url = fileURL, let text = try? String(contentsOf: url, encoding: .utf8) else { return [] }
+        let decoder = JSONDecoder()
+        return text.split(separator: "\n").compactMap { line in
+            line.data(using: .utf8).flatMap { try? decoder.decode(VerseLedgerEntry.self, from: $0) }
         }
     }
 }

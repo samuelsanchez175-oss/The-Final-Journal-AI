@@ -16,6 +16,7 @@ KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 if not KEY:
     sys.exit("set GEMINI_API_KEY")
 MODEL = "gemini-2.5-flash"
+BIAS = float(os.environ.get("ORIG_BIAS", "0.6"))   # originality/inspiration target (matches the in-app slider)
 HERE = os.path.dirname(os.path.abspath(__file__))
 CAP = os.path.join(HERE, "captures")
 
@@ -77,10 +78,14 @@ def v3(entry):
     voice = ("Voice: established, guarded. IMPLY, don't explain — signal through one concrete detail, never "
              "justify, never name the act. Let the posture shift across the verse (open flexing, turn distant "
              "mid-verse, escalate, land with finality). No motivational or filler lines.")
+    inspiration = ("Be grounded in the culture — reference music, brands, places, slang and play on familiar "
+                   "phrases; borrow the genre's idioms. Clever and referential beats sterile-original."
+                   if BIAS < 0.5 else
+                   "Lean fresh and novel, but stay grounded in the culture — references and wordplay over invention.")
     o = json.loads(gemini(
         "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars.",
         f'Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.\n'
-        f'Source feeling: "{entry}"\n{plan_text}\n{voice}\n'
+        f'Source feeling: "{entry}"\n{plan_text}\n{voice}\n{inspiration}\n'
         f'RULES (strict): each bar SHORT and punchy, 8-10 syllables MAX — no wordy or run-on lines; '
         f'rhyme HARD — multisyllabic and INTERNAL rhyme, not just line-ends; concrete images over statements; '
         f'do not repeat the same word; no numbering inside bars.\n'
@@ -97,6 +102,7 @@ def main():
     base = G.corpus_baseline(corpus, cmu)
     clines, c4 = G.build_originality_index(corpus)
     lex = G.load_lexicon_terms(G.DEFAULT_LEXICON)
+    G.ORIGINALITY_TARGET = BIAS   # score originality against the same target the generation used
     run_id = datetime.datetime.now().isoformat(timespec="seconds")
     sums = defaultdict(list)
 

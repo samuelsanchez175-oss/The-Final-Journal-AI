@@ -515,6 +515,7 @@ struct AnalyticsDashboardView: View {
     
     enum AnalyticsTab: String, CaseIterable {
         case apiDebug = "API Debug"
+        case modelGScores = "Lyric Scores"
         case overview = "Overview"
         case errors = "Errors"
         case network = "Network"
@@ -853,6 +854,8 @@ struct AnalyticsDashboardView: View {
                             #else
                             EmptyView()
                             #endif
+                        case .modelGScores:
+                            VerseLedgerTrendView()
                         case .network:
                             networkPerformanceSection
                         case .tokens:
