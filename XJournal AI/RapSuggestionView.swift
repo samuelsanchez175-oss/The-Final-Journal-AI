@@ -90,9 +90,7 @@ struct RapSuggestionView: View {
         NavigationView {
             ZStack {
                 // Background
-                Color.clear
-                    .background(.ultraThinMaterial)
-                    .ignoresSafeArea()
+                AtmosphereGlow()
                 
                 if isLoading {
                     loadingView
