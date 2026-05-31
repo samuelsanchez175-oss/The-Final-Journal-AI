@@ -17,6 +17,7 @@ Reskin **the entire app** from the current dark "Silk Boys" glass aesthetic to a
 - Coverage: **entire app**.
 - Accent: **coral `#FF8C66`** (reuses the existing `RhymeColorPalette` coral).
 - Dark mode: **light default now, editorial-dark deferred** to a later pass (clean seam left for it).
+- **Signature elements (must-keep, Samuel 2026-05-31):** the **line work** (thin/thick rules + line-art circles), the **soft coral atmosphere glow**, and the **square buttons** (sharp corners — never rounded/pill). These constrain every component below.
 
 **Critical framing (Samuel, 2026-05-31):** The HTML files are **style references, not screens to copy literally.** We do **not** import their habit-tracker *features* (day streaks, friend leaderboards, habit checkboxes, nudges). We extract the **visual language + reusable component patterns**, compare them to the app's **current** structure, and map each style pattern onto what already exists. Where a mockup concept has no analog in this app, we borrow the visual treatment only — or skip it.
 
@@ -47,7 +48,9 @@ Reskin **the entire app** from the current dark "Silk Boys" glass aesthetic to a
 
 ## 3. The Momentum style kit (named + ordered)
 
-The 22 patterns below are **reusable SwiftUI views/styles**, not features. New code lives in a `Momentum/` group; tokens in `MomentumDesignSystem.swift`. Ordered by build dependency (foundation first).
+The 25 patterns below are **reusable SwiftUI views/styles**, not features. New code lives in a `Momentum/` group; tokens in `MomentumDesignSystem.swift`. Ordered by build dependency (foundation first).
+
+**Signature elements (non-negotiable — Samuel):** every component must preserve (1) **line work** — `lineThin`/`lineThick` rules + the thin-bordered line-art circles; (2) the **soft coral atmosphere glow** (`AtmosphereGlow`); (3) **square buttons** — sharp corners, thin or thick borders, fill-on-press; never rounded or pill-shaped.
 
 ### Design tokens
 | Token | Value | Replaces |
@@ -59,7 +62,7 @@ The 22 patterns below are **reusable SwiftUI views/styles**, not features. New c
 | `inverseSurface` / `onInverse` | `#1C1C1E` / `#F8F8F8` | — (emphasis banner, primary button) |
 | `lineThick` / `lineThin` | 3px / 1px | heavy shadows + dividers |
 | `edge` | 24px | ad-hoc paddings |
-| `cardRadius` | ~4–8pt (softened from the mockup's 2px for touch) | 20pt glass radius |
+| `corners` | **square / sharp (0–2px)** — buttons & toggles especially; never pill/rounded. 44pt tap targets via size, not radius | 20pt glass radius |
 | Type: `heroNumeral` (≈64–80pt, w700, tight) · `sectionTitle` (12pt UPPERCASE +tracking, secondary) · `cardTitle` (18pt w600) · `bodyContent` (**≥16pt**) · `metadata` (13pt) | | sub-16pt captions for content |
 
 ### Components (build layers)
@@ -68,18 +71,21 @@ The 22 patterns below are **reusable SwiftUI views/styles**, not features. New c
 **Layer 2 — data/analytics:** `9. MonthSelector` · `10. EmphasisBanner` (inverted dark card) · `11. BarChart` · `12. BreakdownRow` (label + value + thin track) · `13. StatGrid` (hairline 2-col boxes).
 **Layer 3 — ranked/badge lists:** `14. BackNav` · `15. ViewTitleBlock` (title + subtitle) · `16. RankRow` (index + avatar + mini-bar + value) · `17. HighlightRow` (tinted self) · `18. PillButton` (outline action).
 **Layer 4 — empty/empathy:** `19. HeroGraphic` (concentric circles + faded numeral) · `20. EmpathyCopyBlock` (headline + sub) · `21. PrimaryActionButton` (full-width, trailing icon) · `22. SecondaryLink`.
+**Signature additions (apply across layers):** `23. SelectionToggle` (square check — sharp, thin/thick border, fills dark + checkmark on select) · `24. CircleLineGraphic` (thin-border concentric line-art circles; spin/sink/pop animation; the core of `HeroGraphic` & celebration) · `25. SuggestionGrid` (multi-select square-toggle cards + `SectionHeader` + footer `PrimaryActionButton` + coral `CounterPill`).
+
+> All buttons (`PrimaryActionButton`, `PillButton`, `FAB`, `SelectionToggle`) are **square**. The coral glow + line-art circles are the recurring ambient motif.
 
 ---
 
 ## 4. Mapping: current structure → new look (the core)
 
-For each existing surface: which style patterns apply, the concrete change, and explicit no-analog calls.
+For each existing surface: which style patterns apply, the concrete change, and explicit no-analog calls. **Across every surface:** keep the **line work**, **soft coral glow**, and **square buttons** (Samuel's must-keeps).
 
 ### Home / Journal Library — `CCV.10` / `CCV.11`
 - **Background:** add `AtmosphereGlow`; swap `.ultraThinMaterial` base → `surface`.
 - **Title:** keep "Journal" `navigationTitle`; render as an editorial large title (optionally `AppHeader`). *No streak/HeroStat invented here — there's no day-streak feature.*
 - **Filter chips** (`page1FiltersView`): flat pills, thin border, **coral** when active.
-- **Note rows** (`JournalRowView`): glass card → `LibraryRowCard` (flat `surfaceElevated`, `lineThin` bottom separator, `cardTitle` + `metadata`; drop gradient/heavy shadow). Selection-mode checkmark adopts the mockup's square-toggle visual.
+- **Note rows** (`JournalRowView`): glass card → `LibraryRowCard` (flat `surfaceElevated`, `lineThin` bottom separator, `cardTitle` + `metadata`; drop gradient/heavy shadow). Selection-mode checkmark → square `SelectionToggle`.
 - **Empty state** (`JournalEmptyStateView`): → `HeroGraphic` + `EmpathyCopyBlock` + `PrimaryActionButton` ("New Note").
 - **Bottom search bar / quick-compose:** restyle flat; compose button → `FAB` treatment.
 - **Top-bar icons (5):** monochrome line icons on light; per the existing Phase-5 note, **demote shop/achievements** visually so Write/Record/Generate reads as primary. *(Visual de-emphasis only — icons stay, page map unchanged.)*
@@ -95,6 +101,7 @@ The natural home for the big-number patterns (it already has real stats).
 - `ViewTitleBlock` header; badge/collection rows adopt the `RankRow` visual (index/icon + label + progress track + value).
 - `CategoryFilterButton` → flat pills.
 - **Fix the hard-coded dark gradient** so it respects tokens (currently identical in light & dark).
+- **Celebration** (`AchievementCelebrationView`) ← Milestone mockup: `CircleLineGraphic` (spinning) + big `heroNumeral` + `headline` + square `PrimaryActionButton` ("Share") + square secondary ("Keep going"). Reskin the existing unlock celebration; wire to real achievement values, not a streak.
 - *No-analog:* the mockup's **friend leaderboard / nudge** has no social-ranking feature — borrow the `RankRow` layout only; **do not build social ranking**.
 
 ### Empty / re-engagement — `JournalEmptyStateView`, `ChurnInterventionManager` screens
@@ -109,6 +116,7 @@ The natural home for the big-number patterns (it already has real stats).
 - Preserve all locked Page-3 behaviors (eye toggle, magnifier, AI-assist read-only).
 
 ### Generation & results — `RapSuggestionView.swift`
+- **Steering (topic / tone / world-building word selection)** ← Welcome mockup: multi-select `SuggestionGrid` — square `SelectionToggle` cards under `SectionHeader`s, fixed footer `PrimaryActionButton` "Generate" with coral `CounterPill` showing # selected. Strong direct analog (the app already multi-selects topics/tones to steer Model G).
 - Results cards → `LibraryRowCard` / `Surface`; CTAs → `PrimaryActionButton`.
 - Per the Phase-4 note, lean toward **one primary Generate** + a "Customize" disclosure (visual hierarchy only; no logic change).
 
@@ -136,9 +144,9 @@ Each phase is independently shippable and screenshot-verified (light mode).
 | Phase | Scope | Components |
 |---|---|---|
 | **P0 Foundation** | `MomentumDesignSystem.swift` (tokens + type + flat `Surface`) + Layer-0 primitives. No screen changes yet. Builds on existing Phase-0 WIP. | 1–4 |
-| **P1 Home** | Reskin Journal Library + rows + filters + empty state + search/compose. | 5–8, 19–22 |
+| **P1 Home + core flow** | Journal Library + rows + filters + empty state + search/compose; **generation steering (multi-select) & results**. | 5–8, 19–25 |
 | **P2 Analytics** | Charts, stat grid, emphasis banner, breakdown rows. | 9–13 |
-| **P3 Achievements** | Badge/collection rows + fix hard-coded-dark. | 14–18 |
+| **P3 Achievements** | Badge/collection rows + **unlock celebration** + fix hard-coded-dark. | 14–18, 24 |
 | **P4 Empty/churn** | Empathy flows (empty journal, comeback). | 19–22 |
 | **P5 App-wide sweep** | Editor readability + rhyme-palette re-tune; settings/paywall/shop/release; fix Splash. | tokens |
 | **P6 Glass retirement** | Remove dead `GlassEffectComponents`/`SoftBlueGlass` paths; leave editorial-dark seam. | — |
@@ -154,7 +162,7 @@ Each phase is independently shippable and screenshot-verified (light mode).
 | 2 hard-coded-dark screens | Explicit fixes in P3 (achievements) & P5 (splash). |
 | Large mechanical sweep (270 `.secondary` / 246 caption) | Token aliases make it find-replace-able, screen by screen; not all at once. |
 | 53k-LOC scale | Strict phasing — each phase ships + verifies independently. |
-| Touch ergonomics of near-sharp 2px cards | Soften `cardRadius` to ~4–8pt; keep 44pt tap targets. |
+| SwiftUI defaults creep in rounded corners / materials | Enforce **square corners + flat surfaces** in the design system; audit for stray `RoundedRectangle`(large radius)/`.cornerRadius`/`.ultraThinMaterial`. Meet 44pt targets via size. |
 | Disturbing locked structure | Reskin is presentation-only; no edits to page map, handlers, or `@State`. |
 
 ---
