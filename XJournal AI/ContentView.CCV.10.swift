@@ -728,7 +728,8 @@ struct JournalLibraryView: View {
             .frame(height: 44)
             .background(
                 Capsule()
-                    .fill(Momentum.surfaceElevated)
+                    .fill(.ultraThinMaterial)
+                    .overlay(Capsule().fill(Momentum.accent.opacity(0.10)))   // soft coral undertone over the frosted glass
                     .overlay(Capsule().stroke(isSearchFocused ? Momentum.accent : Momentum.hairline,
                                               lineWidth: Momentum.lineThin))
             )
