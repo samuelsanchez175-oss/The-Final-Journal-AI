@@ -7,7 +7,7 @@ Key via env GEMINI_API_KEY (never stored). Writes eval/captures/e{i}_{baseline,v
   python3 eval/grade_modelg.py --compare eval/captures/e1_baseline.txt eval/captures/e1_v3.txt ...
 No third-party deps.
 """
-import datetime, json, os, sys, urllib.request, urllib.error
+import datetime, json, os, re, sys, urllib.request, urllib.error
 from collections import defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import grade_modelg as G
@@ -19,6 +19,29 @@ MODEL = "gemini-2.5-flash"
 BIAS = float(os.environ.get("ORIG_BIAS", "0.6"))   # originality/inspiration target (matches the in-app slider)
 HERE = os.path.dirname(os.path.abspath(__file__))
 CAP = os.path.join(HERE, "captures")
+REF_PALETTE = []   # specific authority/coded references drawn from the lexicon (set in main)
+
+
+def load_reference_palette(path, n=32):
+    """Sample recognizable `term`-column references (proper case), spread across the file so all
+    clusters (watches, places, coded product, apps...) are represented — the menu the verse picks from."""
+    import csv
+    rows = list(csv.reader(open(path, newline="", encoding="utf-8", errors="replace")))
+    h = [c.strip().lower() for c in rows[0]]
+    ti = h.index("term") if "term" in h else 0
+    refs, seen = [], set()
+    for r in rows[1:]:
+        if ti >= len(r):
+            continue
+        raw = re.split(r"[(\[]", r[ti].strip(), 1)[0].strip().strip('"“”‘’\'').strip()
+        raw = re.sub(r"^[^\w]+|[^\w]+$", "", raw)
+        if 2 < len(raw) < 24 and len(raw.split()) <= 2 and re.match(r"^[A-Za-z][A-Za-z0-9'.\- ]*$", raw):
+            if raw.lower() not in seen:
+                seen.add(raw.lower()); refs.append(raw)
+    if len(refs) <= n:
+        return refs
+    step = max(1, len(refs) // n)
+    return refs[::step][:n]
 
 ENTRIES = [
     "Long day but a good one. Paid the car off, moved mama into the new place. I don't tell people my "
@@ -82,12 +105,16 @@ def v3(entry):
                    "phrases; borrow the genre's idioms. Clever and referential beats sterile-original."
                    if BIAS < 0.5 else
                    "Lean fresh and novel, but stay grounded in the culture — references and wordplay over invention.")
+    refs = (f"Specific references you MAY draw on (pick 1-3 that genuinely fit the feeling; never force, "
+            f"never list them): {', '.join(REF_PALETTE)}." if REF_PALETTE else "")
     o = json.loads(gemini(
         "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars.",
         f'Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.\n'
-        f'Source feeling: "{entry}"\n{plan_text}\n{voice}\n{inspiration}\n'
+        f'Source feeling: "{entry}"\n{plan_text}\n{voice}\n{inspiration}\n{refs}\n'
         f'RULES (strict): each bar SHORT and punchy, 8-10 syllables MAX — no wordy or run-on lines; '
-        f'rhyme HARD — multisyllabic and INTERNAL rhyme, not just line-ends; concrete images over statements; '
+        f'rhyme HARD — multisyllabic and INTERNAL rhyme, not just line-ends; '
+        f'name something CONCRETE — a specific brand, place, or coded term, not a generic word '
+        f'("Roley" not "a watch", "the trap" not "the block") — at least 1-2 per verse; '
         f'do not repeat the same word; no numbering inside bars.\n'
         f'Return JSON exactly: {{"hook": "...", "bars": ["...", "... 16 total"]}}',
         1400, 0.9))
@@ -103,6 +130,9 @@ def main():
     clines, c4 = G.build_originality_index(corpus)
     lex = G.load_lexicon_terms(G.DEFAULT_LEXICON)
     G.ORIGINALITY_TARGET = BIAS   # score originality against the same target the generation used
+    global REF_PALETTE
+    REF_PALETTE = load_reference_palette(G.DEFAULT_LEXICON)
+    print(f"reference palette ({len(REF_PALETTE)}): {', '.join(REF_PALETTE[:12])} …")
     run_id = datetime.datetime.now().isoformat(timespec="seconds")
     sums = defaultdict(list)
 

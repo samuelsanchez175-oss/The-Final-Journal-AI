@@ -174,14 +174,17 @@ class ModelGLLMService {
         let inspiration = ModelGEnvironment.originalityBias < 0.5
             ? "Inspiration: be grounded in the culture — reference music, brands, places, slang and play on familiar phrases; borrow the genre's idioms. Clever and referential beats sterile-original."
             : "Inspiration: lean fresh and novel, but stay grounded in the culture — references and wordplay over invented-from-nothing lines."
+        let palette = LexiconStore.shared.referencePalette()
+        let referencesBlock = palette.isEmpty ? "" :
+            "\nSpecific references you MAY draw on (pick 1-3 that genuinely fit the feeling; never force, never list them): \(palette.joined(separator: ", "))."
         let user = """
         Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
         Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
         \(plan.promptText)
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)
-        \(inspiration)
-        Rules (strict): each bar SHORT and punchy, 8-10 syllables MAX (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; concrete images over statements; do not repeat the same word; imply more than you state; no numbering inside the bar strings.
+        \(inspiration)\(referencesBlock)
+        Rules (strict): each bar SHORT and punchy, 8-10 syllables MAX (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}
         """
         let raw = try await postChat(

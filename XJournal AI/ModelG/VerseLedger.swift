@@ -168,7 +168,11 @@ enum VerseLedgerScorer {
     private static func jargonScore(_ lines: [String], terms: Set<String>) -> Double {
         guard !terms.isEmpty else { return 0 }
         let text = lines.joined(separator: " ").lowercased()
-        let distinct = terms.filter { text.contains($0) }.count
+        let range = NSRange(text.startIndex..., in: text)
+        let distinct = terms.filter { term in            // word-boundary, so 'bin' won't fire in 'cabin'
+            guard let re = try? NSRegularExpression(pattern: "\\b\(NSRegularExpression.escapedPattern(for: term))\\b") else { return false }
+            return re.firstMatch(in: text, range: range) != nil
+        }.count
         return min(100, Double(distinct) * 25)
     }
 

@@ -147,9 +147,43 @@ class LexiconStore {
     private var lexicons: [LexiconScene: SceneLexicon] = [:]
     private var defaultScene: LexiconScene = .atlanta
 
-    /// Every distinct term string across all scenes — the full v8 lexicon, lowercased.
+    /// Strip a raw lexicon headword to a clean surface form, preserving case.
+    /// `"Water" (diamonds…)` → `Water`; `Cartier ("Cartis").` → `Cartier`; `AP (Audemars Piguet)` → `AP`.
+    static func cleanReference(_ s: String) -> String {
+        var t = s
+        if let r = t.range(of: "[(\\[]", options: .regularExpression) { t = String(t[..<r.lowerBound]) }
+        t = t.trimmingCharacters(in: .whitespaces)
+        t = t.trimmingCharacters(in: CharacterSet(charactersIn: "\"“”‘’'.,;:!?-—()[] "))
+        return t.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
+    }
+
+    /// A token that can plausibly be matched in a verse: starts with a letter, ≤2 words, no junk.
+    private static func isMatchableRef(_ t: String) -> Bool {
+        t.count > 2 && t.count < 30 && t.split(separator: " ").count <= 2 &&
+            t.range(of: "^[A-Za-z][A-Za-z0-9'.\\- ]*$", options: .regularExpression) != nil
+    }
+
+    /// Every distinct matchable reference token across all scenes — cleaned + lowercased, for scoring.
     func allTermStrings() -> [String] {
-        Array(Set(lexicons.values.flatMap { $0.terms.map { $0.term.lowercased() } }))
+        Array(Set(lexicons.values.flatMap { $0.terms.compactMap { term -> String? in
+            let c = Self.cleanReference(term.term)
+            return Self.isMatchableRef(c) ? c.lowercased() : nil
+        } }))
+    }
+
+    /// A presentable menu of specific references (proper case), spread across the lexicon's clusters
+    /// for diversity — fed to generation so verses name concrete brands/places/coded terms.
+    func referencePalette(limit: Int = 28) -> [String] {
+        var seen = Set<String>(); var refs: [String] = []
+        for term in lexicons.values.flatMap({ $0.terms }) {
+            let c = Self.cleanReference(term.term)
+            guard Self.isMatchableRef(c) else { continue }
+            let k = c.lowercased()
+            if !seen.contains(k) { seen.insert(k); refs.append(c) }
+        }
+        guard refs.count > limit else { return refs }
+        let step = max(1, refs.count / limit)
+        return stride(from: 0, to: refs.count, by: step).prefix(limit).map { refs[$0] }
     }
 
     private init() {

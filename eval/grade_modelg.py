@@ -496,8 +496,37 @@ def read_verse(path):
         return [ln.strip() for ln in f if ln.strip()]
 
 
+def _clean_lexicon_token(s):
+    """Reduce a raw lexicon cell to a matchable surface token.
+    '"Water" (diamonds or high purity)' -> 'water'; 'Cartier ("Cartis").' -> 'cartier';
+    'AP (Audemars Piguet)' -> 'ap'. Returns '' if nothing usable."""
+    s = re.split(r"[(\[]", s.strip(), 1)[0]        # drop parenthetical definitions
+    s = s.strip().strip('"“”‘’\'').strip()
+    s = re.sub(r"^[^\w]+|[^\w]+$", "", s)          # outer punctuation
+    return re.sub(r"\s+", " ", s).lower()
+
+
+# Common English — used ONLY to filter the noisy `rap_shorthand_term` column (which is polluted
+# with sentence-fragment junk like "The"/"And"/"Used"). The curated `term` column is trusted as-is.
+# Coded shorthands (Roley, Carti, Patek, Draco) aren't common words, so they survive.
+_COMMON_EN = set("""the a an and or but so to of in on at by for with from as it is be are was were been
+we they that this these those i you he she me my your our his her him them their there here what when
+where who how why not no yes do does did done have has had got get gets getting go goes going gone went
+come comes coming came can could will would should may might must used use using long looking look looks
+every all some any more most much many few one two now then today still just only even ever never always
+like make made take takes give gave keep kept stay stayed said say says want need know knew time life day
+way back down out up off over into about real same new old big lil""".split())
+
+
+def _ok_ref(t):
+    """A token that could plausibly be matched in a verse: starts with a letter, <=2 words, no junk."""
+    return bool(2 < len(t) < 30 and len(t.split()) <= 2 and re.match(r"^[a-z][a-z0-9'.\- ]*$", t))
+
+
 def load_lexicon_terms(path):
-    """Distinct authentic jargon terms (the `term` column) for lexical-authenticity scoring."""
+    """Matchable authority/coded references: cleaned `term` headwords PLUS the (filtered)
+    `rap_shorthand_term` coded forms (Roley, Carti, Patek...). <=2-char forms are dropped — they
+    cause substring false-positives (ap -> trap). This is a coded-reference lexicon, not slang."""
     terms = set()
     if not os.path.exists(path):
         return terms
@@ -507,11 +536,16 @@ def load_lexicon_terms(path):
         return terms
     header = [c.strip().lower() for c in rows[0]]
     ti = header.index("term") if "term" in header else 0
+    si = header.index("rap_shorthand_term") if "rap_shorthand_term" in header else None
     for row in rows[1:]:
-        if ti < len(row):
-            t = row[ti].strip().lower()
-            if 2 < len(t) < 30 and " " not in t[:1]:
+        if ti < len(row):                                   # term column is curated — trust it
+            t = _clean_lexicon_token(row[ti])
+            if _ok_ref(t):
                 terms.add(t)
+        if si is not None and si < len(row):                # shorthand is noisy — drop English junk
+            s = _clean_lexicon_token(row[si])
+            if _ok_ref(s) and not all(w in _COMMON_EN for w in s.split()):
+                terms.add(s)
     return terms
 
 
@@ -520,11 +554,16 @@ def score_lexical(lines, lexicon_terms):
     if not lines or not lexicon_terms:
         return 0.0, {}
     text = " ".join(lines).lower()
-    hits = {t: text.count(t) for t in lexicon_terms if text.count(t) > 0}
+    hits = {}
+    for t in lexicon_terms:                          # word-boundary, so 'bin' won't fire in 'cabin'
+        n = len(re.findall(r"\b" + re.escape(t) + r"\b", text))
+        if n > 0:
+            hits[t] = n
     distinct = len(hits)
     overuse = sum(max(0, n - 2) for n in hits.values()) * 10.0
     presence = min(100.0, distinct * 25.0)          # ~4 distinct authentic terms = full marks
     return max(0.0, presence - overuse), {"distinct_terms": distinct,
+                                          "hits": sorted(hits)[:8],
                                           "overused": [t for t, n in hits.items() if n > 2]}
 
 
