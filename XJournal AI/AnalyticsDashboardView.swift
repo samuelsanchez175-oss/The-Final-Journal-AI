@@ -76,7 +76,7 @@ struct AnalyticsDashboardView: View {
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
             )
         }
@@ -111,7 +111,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
@@ -154,7 +154,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
@@ -214,7 +214,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
@@ -283,7 +283,7 @@ struct AnalyticsDashboardView: View {
                             .padding()
                             .background(
                                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                    .fill(.ultraThinMaterial)
+                                    .fill(Momentum.surfaceElevated)
                                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                             )
                         }
@@ -424,7 +424,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
@@ -505,7 +505,7 @@ struct AnalyticsDashboardView: View {
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
             )
         }
@@ -585,7 +585,7 @@ struct AnalyticsDashboardView: View {
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(.ultraThinMaterial)
+                        .fill(Momentum.surfaceElevated)
                         .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
                 )
             }
@@ -611,7 +611,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
                     )
                 }
@@ -698,7 +698,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
                     )
                 }
@@ -765,7 +765,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
                     )
                 }
@@ -805,7 +805,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(.ultraThinMaterial)
+                            .fill(Momentum.surfaceElevated)
                             .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
                     )
                 }
@@ -883,12 +883,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                 }
             }
-            .background(
-                Rectangle()
-                    .fill(.ultraThinMaterial)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                    .ignoresSafeArea()
-            )
+            .background(AtmosphereGlow())
             .navigationTitle("Analytics")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -1053,7 +1048,7 @@ struct ReleaseNotesContentView: View {
         HStack(spacing: 16) {
             ZStack {
                 RoundedRectangle(cornerRadius: 22, style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .overlay(
                         LinearGradient(
@@ -1098,7 +1093,7 @@ struct ReleaseNotesContentView: View {
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
                 .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .overlay(
                     LinearGradient(
@@ -1372,17 +1367,20 @@ struct StatCard: View {
                 .foregroundStyle(color)
             
             Text(value)
-                .font(.title2.weight(.bold))
-            
+                .font(.momentumHero(26))
+                .foregroundStyle(Momentum.contentPrimary)
+
             Text(title)
-                .font(.caption)
-                .foregroundStyle(.secondary)
+                .font(.momentumMetadata)
+                .foregroundStyle(Momentum.contentSecondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
         .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(.ultraThinMaterial)
+            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                .fill(Momentum.surfaceElevated)
+                .overlay(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                    .stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
         )
     }
 }
@@ -1397,16 +1395,18 @@ struct StatRow: View {
     var body: some View {
         HStack {
             Image(systemName: icon)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.accent)
                 .frame(width: 24)
-            
+
             Text(label)
-                .font(.body)
-            
+                .font(.momentumBody)
+                .foregroundStyle(Momentum.contentPrimary)
+
             Spacer()
-            
+
             Text(value)
-                .font(.body.weight(.medium))
+                .font(.momentumBody.weight(.medium))
+                .foregroundStyle(Momentum.contentPrimary)
         }
     }
 }

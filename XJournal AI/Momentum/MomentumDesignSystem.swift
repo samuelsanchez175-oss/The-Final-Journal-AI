@@ -5,9 +5,9 @@
 //  Momentum reskin — the canonical design system (per docs/superpowers/specs/
 //  2026-05-31-momentum-ui-reskin-design.md). Light, editorial, FLAT. Signature must-keeps
 //  (locked w/ Samuel): line work (1px/3px rules + line-art circles), the soft coral
-//  AtmosphereGlow, and SQUARE buttons (sharp corners — never rounded/pill).
+//  AtmosphereGlow, and SOFT / pill buttons (rounded edges — updated 2026-05-31, were too square).
 //
-//  Layer 0 foundation only (tokens · AtmosphereGlow · MomentumSectionHeader · MainDivider + square
+//  Layer 0 foundation only (tokens · AtmosphereGlow · MomentumSectionHeader · MainDivider + soft
 //  control styles). Layers 1–4 components land per phase.
 //
 
@@ -44,6 +44,7 @@ enum Momentum {
     static let lineThick: CGFloat = 3
     static let hairline          = Color(hex: 0x1C1C1E, alpha: 0.10)
     static let edge: CGFloat      = 24
+    static let corner: CGFloat    = 14   // soft button/card radius (chips use a full pill / Capsule)
 
     // Rhyme-highlight + metadata-pill tints — retained for the editor re-tune (P5) and the
     // detail-view metadata pills; NOT used in Layer 0.
@@ -131,9 +132,9 @@ struct MainDivider: View {
     var body: some View { Rectangle().fill(Momentum.contentPrimary).frame(height: Momentum.lineThick) }
 }
 
-// MARK: - Square controls (signature — sharp corners, border, fill-on-press; never pill)
+// MARK: - Soft controls (rounded edges + border, fill-on-press — updated 2026-05-31, were too square)
 
-/// Flat, SQUARE filter chip — thin border, coral when active. (Home filter row.)
+/// Flat **pill** filter chip — thin border, coral when active. (Home filter row.)
 struct MomentumChip: View {
     let title: String
     var systemImage: String? = nil
@@ -147,15 +148,14 @@ struct MomentumChip: View {
             }
             .padding(.horizontal, 14).padding(.vertical, 9)
             .foregroundStyle(active ? Momentum.accent : Momentum.contentSecondary)
-            .background(Rectangle().fill(Momentum.surfaceElevated))
-            .overlay(Rectangle().stroke(active ? Momentum.accent : Momentum.hairline,
-                                        lineWidth: active ? Momentum.lineThin : Momentum.lineThin))
+            .background(Capsule().fill(Momentum.surfaceElevated))
+            .overlay(Capsule().stroke(active ? Momentum.accent : Momentum.hairline, lineWidth: Momentum.lineThin))
         }
         .buttonStyle(.plain)
     }
 }
 
-/// SQUARE button — outline by default, fills (accent or inverse) on press / when `filled`.
+/// Soft-cornered button — outline by default, fills (accent or inverse) on press.
 struct MomentumSquareButtonStyle: ButtonStyle {
     enum Fill { case outline, accent, inverse }
     var fill: Fill = .outline
@@ -179,10 +179,10 @@ struct MomentumSquareButtonStyle: ButtonStyle {
             .font(.system(size: 16, weight: .semibold))
             .padding(.horizontal, 18).padding(.vertical, 13)
             .frame(minHeight: 44)
-            .background(Rectangle().fill(bg))
-            .overlay(Rectangle().stroke(Momentum.contentPrimary, lineWidth: Momentum.lineThin))
+            .background(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous).fill(bg))
+            .overlay(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous).stroke(Momentum.contentPrimary, lineWidth: Momentum.lineThin))
             .foregroundStyle(fg)
-            .contentShape(Rectangle())
+            .contentShape(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous))
             .opacity(pressed && fill != .outline ? 0.9 : 1)
     }
 }
