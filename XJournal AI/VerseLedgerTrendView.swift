@@ -20,10 +20,10 @@ struct VerseLedgerTrendView: View {
             if entries.isEmpty {
                 VStack(spacing: 8) {
                     Image(systemName: "chart.line.uptrend.xyaxis")
-                        .font(.largeTitle).foregroundStyle(.secondary)
+                        .font(.largeTitle).foregroundStyle(Momentum.contentSecondary)
                     Text("No scores yet").font(.headline)
                     Text("Generate a verse with Model G and its score appears here.")
-                        .font(.caption).foregroundStyle(.secondary).multilineTextAlignment(.center)
+                        .font(.caption).foregroundStyle(Momentum.contentSecondary).multilineTextAlignment(.center)
                 }
                 .frame(maxWidth: .infinity).padding(.vertical, 40)
             } else {
@@ -45,7 +45,7 @@ struct VerseLedgerTrendView: View {
 
     private func stat(_ label: String, _ value: Double, isCount: Bool = false) -> some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text(label).font(.caption).foregroundStyle(.secondary)
+            Text(label).font(.caption).foregroundStyle(Momentum.contentSecondary)
             Text(isCount ? "\(Int(value))" : String(format: "%.0f", value))
                 .font(.title2.weight(.bold).monospacedDigit())
         }
@@ -60,7 +60,7 @@ struct VerseLedgerTrendView: View {
         let maxN = max(nets.max() ?? 100, 1)
         return VStack(alignment: .leading, spacing: 4) {
             Text("NET over recent generations (green ≥ 65 goal)")
-                .font(.caption).foregroundStyle(.secondary)
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
             HStack(alignment: .bottom, spacing: 2) {
                 ForEach(nets.indices, id: \.self) { i in
                     RoundedRectangle(cornerRadius: 1)
@@ -79,7 +79,7 @@ struct VerseLedgerTrendView: View {
                 Text(String(format: "rhyme %.0f · inner %.0f · jargon %.0f · smart %.0f · −rep %.0f −exp %.0f",
                             e.endRhyme, e.innerRhyme, e.jargon, e.smart,
                             e.repetitionPenalty, e.overExplainPenalty))
-                    .font(.caption2).foregroundStyle(.secondary).lineLimit(1)
+                    .font(.caption2).foregroundStyle(Momentum.contentSecondary).lineLimit(1)
             }
             Spacer()
             Text(String(format: "%.0f", e.net))

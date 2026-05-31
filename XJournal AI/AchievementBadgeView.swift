@@ -192,7 +192,7 @@ struct AchievementCollectionView: View {
                     VStack(spacing: 8) {
                         Text("\(unlockedCount) / \(totalCount)")
                             .font(.system(size: 48, weight: .bold))
-                            .foregroundStyle(.blue)
+                            .foregroundStyle(Momentum.accent)
                         
                         Text("Achievements Unlocked")
                             .font(.headline)
@@ -202,17 +202,11 @@ struct AchievementCollectionView: View {
                         GeometryReader { geometry in
                             ZStack(alignment: .leading) {
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(.gray.opacity(0.2))
+                                    .fill(Momentum.hairline)
                                     .frame(height: 8)
                                 
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [.blue, .purple],
-                                            startPoint: .leading,
-                                            endPoint: .trailing
-                                        )
-                                    )
+                                    .fill(Momentum.accent)
                                     .frame(
                                         width: geometry.size.width * (Double(unlockedCount) / Double(totalCount)),
                                         height: 8
@@ -260,7 +254,7 @@ struct AchievementCollectionView: View {
             }
             .background(
                 Rectangle()
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
@@ -285,24 +279,7 @@ struct CategoryFilterButton: View {
     let action: () -> Void
     
     var body: some View {
-        Button(action: action) {
-            Text(category?.rawValue ?? "All")
-                .font(.subheadline.weight(.medium))
-                .foregroundStyle(isSelected ? .white : .primary)
-                .padding(.horizontal, 16)
-                .padding(.vertical, 8)
-                .background(
-                    Group {
-                        if isSelected {
-                            Capsule(style: .continuous)
-                                .fill(Color.blue)
-                        } else {
-                            Capsule(style: .continuous)
-                                .fill(.ultraThinMaterial)
-                        }
-                    }
-                )
-        }
+        MomentumChip(title: category?.rawValue ?? "All", active: isSelected, action: action)
     }
 }
 

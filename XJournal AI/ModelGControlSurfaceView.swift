@@ -136,7 +136,7 @@ struct ModelGControlSurfaceView: View {
                         .font(.subheadline)
                     Text("Competitive bar generation, style branches, beat fingerprint. Off = legacy batch.")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
             }
             if ModelGEnvironment.useModelGCore {
@@ -149,7 +149,7 @@ struct ModelGControlSurfaceView: View {
                             .font(.subheadline)
                         Text("Syllable stress, beat grid, rhyme clusters, cadence. Cross-test with v1.")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                 }
             }
@@ -199,7 +199,7 @@ struct ModelGControlSurfaceView: View {
             if rhymeGroups.isEmpty {
                 Text("No rhyme groups yet. Add text to your draft and open Magnifier to see groups here.")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                     .padding(.vertical, 8)
                     .padding(.horizontal, 12)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -237,7 +237,7 @@ struct ModelGControlSurfaceView: View {
                 .foregroundStyle(.primary)
             Text(group.words.map(\.word).joined(separator: " · "))
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .lineLimit(2)
                 .multilineTextAlignment(.leading)
         }

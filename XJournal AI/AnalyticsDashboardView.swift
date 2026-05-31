@@ -7,6 +7,7 @@ struct AnalyticsDashboardView: View {
     @Query private var items: [Item]
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var showAllAchievements: Bool = false
     
     private var stats: AnalyticsManager.WritingStats {
@@ -20,14 +21,14 @@ struct AnalyticsDashboardView: View {
                     title: "Total Notes",
                     value: "\(stats.totalNotes)",
                     icon: "note.text",
-                    color: .blue
+                    color: Momentum.accent
                 )
                 
                 StatCard(
                     title: "Total Words",
                     value: "\(stats.totalWords)",
                     icon: "text.word.spacing",
-                    color: .green
+                    color: Momentum.accent
                 )
             }
             
@@ -36,14 +37,14 @@ struct AnalyticsDashboardView: View {
                     title: "Avg Words/Note",
                     value: String(format: "%.0f", stats.averageWordsPerNote),
                     icon: "chart.bar",
-                    color: .orange
+                    color: Momentum.accent
                 )
                 
                 StatCard(
                     title: "Writing Streak",
                     value: "\(stats.writingStreak) days",
                     icon: "flame.fill",
-                    color: .red
+                    color: Momentum.accent
                 )
             }
         }
@@ -92,7 +93,7 @@ struct AnalyticsDashboardView: View {
                             HStack {
                                 Text("\(index + 1).")
                                     .font(.caption)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                                     .frame(width: 30, alignment: .leading)
                                 
                                 Text(word.word)
@@ -102,7 +103,7 @@ struct AnalyticsDashboardView: View {
                                 
                                 Text("\(word.count)")
                                     .font(.caption)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                     }
@@ -176,7 +177,7 @@ struct AnalyticsDashboardView: View {
                             .foregroundStyle(.red)
                         Text("Total Errors")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     
                     Spacer()
@@ -187,7 +188,7 @@ struct AnalyticsDashboardView: View {
                             .foregroundStyle(.orange)
                         Text("Last 24 Hours")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                 }
                 
@@ -204,7 +205,7 @@ struct AnalyticsDashboardView: View {
                                 Spacer()
                                 Text("\(count)")
                                     .font(.body.weight(.medium))
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                     }
@@ -245,7 +246,7 @@ struct AnalyticsDashboardView: View {
                             .font(.headline)
                         Text("All systems running smoothly!")
                             .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 40)
@@ -256,13 +257,13 @@ struct AnalyticsDashboardView: View {
                                 HStack {
                                     Text(error.source)
                                         .font(.caption.weight(.semibold))
-                                        .foregroundStyle(.secondary)
+                                        .foregroundStyle(Momentum.contentSecondary)
                                     
                                     Spacer()
                                     
                                     Text(error.timestamp, style: .relative)
                                         .font(.caption)
-                                        .foregroundStyle(.secondary)
+                                        .foregroundStyle(Momentum.contentSecondary)
                                 }
                                 
                                 Text(error.message)
@@ -273,7 +274,7 @@ struct AnalyticsDashboardView: View {
                                 if let context = error.context {
                                     Text(context)
                                         .font(.caption)
-                                        .foregroundStyle(.secondary)
+                                        .foregroundStyle(Momentum.contentSecondary)
                                         .italic()
                                 }
                             }
@@ -298,8 +299,7 @@ struct AnalyticsDashboardView: View {
         return Group {
             if feedbackStats.totalFeedback > 0 {
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("AI Suggestion Feedback")
-                        .font(.headline)
+                    MomentumSectionHeader(title: "AI Suggestion Feedback")
                     
                     VStack(spacing: 12) {
                         // Overall stats
@@ -309,7 +309,7 @@ struct AnalyticsDashboardView: View {
                                     .font(.title2.weight(.bold))
                                 Text("Total Feedback")
                                     .font(.caption)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                             
                             Spacer()
@@ -320,7 +320,7 @@ struct AnalyticsDashboardView: View {
                                     .foregroundStyle(feedbackStats.acceptanceRate > 0.6 ? .green : feedbackStats.acceptanceRate > 0.4 ? .orange : .red)
                                 Text("Acceptance Rate")
                                     .font(.caption)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                         
@@ -343,7 +343,7 @@ struct AnalyticsDashboardView: View {
                                             Spacer()
                                             Text("\(stats.liked)👍 \(stats.disliked)👎")
                                                 .font(.caption)
-                                                .foregroundStyle(.secondary)
+                                                .foregroundStyle(Momentum.contentSecondary)
                                         }
                                         
                                         GeometryReader { geometry in
@@ -373,13 +373,13 @@ struct AnalyticsDashboardView: View {
                             
                             Text(trend == .improving ? "Improving" : trend == .declining ? "Declining" : "Stable")
                                 .font(.caption)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                             
                             Spacer()
                             
                             Text("Based on recent feedback")
                                 .font(.caption2)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                         
                         // Show active improvements
@@ -406,7 +406,7 @@ struct AnalyticsDashboardView: View {
                                         
                                         Text(improvement.suggestedChange)
                                             .font(.caption2)
-                                            .foregroundStyle(.secondary)
+                                            .foregroundStyle(Momentum.contentSecondary)
                                             .fixedSize(horizontal: false, vertical: true)
                                     }
                                     .padding(.vertical, 4)
@@ -431,18 +431,13 @@ struct AnalyticsDashboardView: View {
     
     private var achievementsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack {
-                Text("Achievements")
-                    .font(.headline)
-                
-                Spacer()
-                
+            MomentumSectionHeader(title: "Achievements") {
                 Button {
                     showAllAchievements = true
                 } label: {
                     Text("View All")
-                        .font(.subheadline)
-                        .foregroundStyle(.blue)
+                        .font(.momentumMetadata.weight(.semibold))
+                        .foregroundStyle(Momentum.accent)
                 }
             }
             
@@ -456,27 +451,21 @@ struct AnalyticsDashboardView: View {
                 VStack(spacing: 8) {
                     Text("\(unlockedCount) / \(totalCount)")
                         .font(.system(size: 32, weight: .bold))
-                        .foregroundStyle(.blue)
+                        .foregroundStyle(Momentum.accent)
                     
                     Text("Achievements Unlocked")
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                     
                     // Progress bar
                     GeometryReader { geometry in
                         ZStack(alignment: .leading) {
                             RoundedRectangle(cornerRadius: 8)
-                                .fill(.gray.opacity(0.2))
+                                .fill(Momentum.hairline)
                                 .frame(height: 8)
                             
                             RoundedRectangle(cornerRadius: 8)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [.blue, .purple],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
+                                .fill(Momentum.accent)
                                 .frame(
                                     width: geometry.size.width * (Double(unlockedCount) / Double(max(totalCount, 1))),
                                     height: 8
@@ -509,7 +498,8 @@ struct AnalyticsDashboardView: View {
     }
     
     @State private var selectedTab: AnalyticsTab = .overview
-    
+    @State private var lastDiagnosticTab: AnalyticsTab = .errors   // remembers which diagnostic to reopen
+
     enum AnalyticsTab: String, CaseIterable {
         case apiDebug = "API Debug"
         case modelGScores = "Lyric Scores"
@@ -523,7 +513,96 @@ struct AnalyticsDashboardView: View {
         case whatsNew = "What's New"
         case social = "Social"
     }
-    
+
+    // MARK: - Momentum tab bar (pills + grouped diagnostics)
+
+    /// User-facing sections shown as primary pills.
+    private var primarySections: [AnalyticsTab] {
+        [.overview, .modelGScores, .rewards, .whatsNew, .social]
+    }
+
+    /// Developer/telemetry views, folded behind the "Diagnostics" group pill.
+    private var diagnosticTabs: [AnalyticsTab] {
+        var tabs: [AnalyticsTab] = [.errors, .network, .tokens, .jsonValidation, .errorCorrelation]
+        #if DEBUG
+        tabs.append(.apiDebug)   // debug inspector stays DEBUG-only
+        #endif
+        return tabs
+    }
+
+    private var isDiagnosticActive: Bool { diagnosticTabs.contains(selectedTab) }
+
+    private var chipAnimation: Animation? { reduceMotion ? nil : .easeOut(duration: 0.18) }
+
+    private func chipIcon(for tab: AnalyticsTab) -> String {
+        switch tab {
+        case .overview:         return "square.grid.2x2.fill"
+        case .modelGScores:     return "music.note"
+        case .rewards:          return "cube.fill"
+        case .whatsNew:         return "sparkles"
+        case .social:           return "person.2.fill"
+        case .errors:           return "exclamationmark.triangle.fill"
+        case .network:          return "dot.radiowaves.left.and.right"
+        case .tokens:           return "number"
+        case .jsonValidation:   return "curlybraces"
+        case .errorCorrelation: return "point.3.connected.trianglepath.dotted"
+        case .apiDebug:         return "ladybug.fill"
+        }
+    }
+
+    /// Replaces the cramped `.segmented` picker: a scrollable row of Momentum pills,
+    /// with the six diagnostics tabs revealed in a second row only when active.
+    private var analyticsChipBar: some View {
+        VStack(spacing: 10) {
+            // Primary sections — user-facing first, Diagnostics group last.
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    ForEach(primarySections, id: \.self) { tab in
+                        MomentumChip(
+                            title: tab.rawValue,
+                            systemImage: chipIcon(for: tab),
+                            active: selectedTab == tab
+                        ) {
+                            withAnimation(chipAnimation) { selectedTab = tab }
+                        }
+                    }
+                    MomentumChip(
+                        title: "Diagnostics",
+                        systemImage: "wrench.and.screwdriver.fill",
+                        active: isDiagnosticActive
+                    ) {
+                        guard !isDiagnosticActive else { return }
+                        withAnimation(chipAnimation) { selectedTab = lastDiagnosticTab }
+                    }
+                }
+                .padding(.horizontal, 16)
+            }
+
+            // Diagnostics sub-row — present only while a diagnostic view is open.
+            if isDiagnosticActive {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        ForEach(diagnosticTabs, id: \.self) { tab in
+                            MomentumChip(
+                                title: tab.rawValue,
+                                systemImage: chipIcon(for: tab),
+                                active: selectedTab == tab
+                            ) {
+                                withAnimation(chipAnimation) {
+                                    selectedTab = tab
+                                    lastDiagnosticTab = tab
+                                }
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                }
+                .transition(.move(edge: .top).combined(with: .opacity))
+            }
+        }
+        .padding(.vertical, 12)
+    }
+
     // MARK: - Network Performance Section
     
     private var networkPerformanceSection: some View {
@@ -601,7 +680,7 @@ struct AnalyticsDashboardView: View {
                                 Spacer()
                                 Text("\(count)")
                                     .font(.body.weight(.medium))
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                     }
@@ -688,7 +767,7 @@ struct AnalyticsDashboardView: View {
                                 Spacer()
                                 Text("\(dayTokens) tokens ($\(String(format: "%.2f", dayCost)))")
                                     .font(.body.weight(.medium))
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                     }
@@ -795,7 +874,7 @@ struct AnalyticsDashboardView: View {
                                     .font(.body.weight(.medium))
                                 Text("Occurrences: \(cluster.frequency)")
                                     .font(.caption)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                     }
@@ -814,20 +893,8 @@ struct AnalyticsDashboardView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                // Tab selector
-                Picker("Analytics Tab", selection: $selectedTab) {
-                    ForEach(AnalyticsTab.allCases.filter({ tab in
-                        #if DEBUG
-                        return true
-                        #else
-                        return tab != .apiDebug   // hide debug inspector from release builds
-                        #endif
-                    }), id: \.self) { tab in
-                        Text(tab.rawValue).tag(tab)
-                    }
-                }
-                .pickerStyle(.segmented)
-                .padding()
+                // Tab selector — Momentum pill bar (replaces the cramped .segmented picker)
+                analyticsChipBar
                 
                 // Content based on selected tab
                 ScrollView {
@@ -865,7 +932,7 @@ struct AnalyticsDashboardView: View {
                                     )
                                     .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                                 Text("Spins automatically · drag to orbit · tilt your phone to sweep the light (device only). Swap in a .usdz from SAM 3D later.")
-                                    .font(.caption).foregroundStyle(.secondary).multilineTextAlignment(.center)
+                                    .font(.caption).foregroundStyle(Momentum.contentSecondary).multilineTextAlignment(.center)
                             }
                         case .network:
                             networkPerformanceSection
@@ -941,7 +1008,7 @@ struct ReleaseNotesContentView: View {
                 
                 Text("The Final Journal AI")
                     .font(.headline)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
             .padding(.top, 12)
             
@@ -1070,14 +1137,14 @@ struct ReleaseNotesContentView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Version \(version)")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 
                 Text(title)
                     .font(.title3.weight(.semibold))
                 
                 Text(description)
                     .font(.callout)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                 
                 VStack(alignment: .leading, spacing: 6) {
                     ForEach(bullets, id: \.self) { bullet in
@@ -1333,14 +1400,14 @@ struct SocialFeedContentView: View {
         VStack(spacing: 20) {
             Image(systemName: "person.2.fill")
                 .font(.system(size: 60))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             
             Text("No Posts Yet")
                 .font(.title2.weight(.semibold))
             
             Text("Check back soon for curated tips and guides for writers and poets using Logic Pro, ProTools, and audio equipment.")
                 .font(.body)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 40)
         }

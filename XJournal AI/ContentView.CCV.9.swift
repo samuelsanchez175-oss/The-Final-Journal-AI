@@ -36,7 +36,7 @@ struct SignInView: View {
                             showPassword.toggle()
                         } label: {
                             Image(systemName: showPassword ? "eye.slash" : "eye")
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                     }
                 } header: {
@@ -142,7 +142,7 @@ struct SignUpView: View {
                             showPassword.toggle()
                         } label: {
                             Image(systemName: showPassword ? "eye.slash" : "eye")
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                     }
                     
@@ -159,7 +159,7 @@ struct SignUpView: View {
                             showConfirmPassword.toggle()
                         } label: {
                             Image(systemName: showConfirmPassword ? "eye.slash" : "eye")
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                     }
                 } header: {
@@ -183,7 +183,7 @@ struct SignUpView: View {
                         
                         Text("By creating an account, you agree to sync your data to the cloud. Your data will be encrypted and stored securely.")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                 }
                 
