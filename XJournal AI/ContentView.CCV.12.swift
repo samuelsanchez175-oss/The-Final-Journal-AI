@@ -4,8 +4,8 @@
 // This file contains ProfilePopoverView, FlowLayout, and related profile views.
 //
 // Dependencies:
-// - ContentView.CCV.2.swift (for GlassSettings)
-// - AccountManager.swift (external) - DISABLED: Not needed (no Supabase/authentication)
+// - ContentView.CCV.2.swift (for GlassSettings, KeychainHelper, lightHaptic)
+// - Momentum/MomentumDesignSystem.swift (tokens, AtmosphereGlow, MomentumSectionHeader)
 //
 import SwiftUI
 import SwiftData
@@ -37,10 +37,9 @@ struct SuggestionDefaultsSection: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("Suggestion defaults")
-                .font(.headline)
-            Text("Profile defines defaults. Session-specific direction (tone, rhyme groups, intent) is set on the Model G control surface (or Model G Core when enabled) when you suggest lines.")
-                .font(.subheadline)
+            MomentumSectionHeader(title: "Suggestion Defaults")
+            Text("Defaults for new suggestions. Per-session direction is set on the Model G control surface when you generate.")
+                .font(.momentumMetadata)
                 .foregroundStyle(Momentum.contentSecondary)
                 .fixedSize(horizontal: false, vertical: true)
             VStack(alignment: .leading, spacing: 12) {
@@ -74,8 +73,12 @@ struct SuggestionDefaultsSection: View {
             }
             .padding(12)
             .background(
-                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
                     .fill(Momentum.surfaceElevated)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                            .stroke(Momentum.hairline, lineWidth: Momentum.lineThin)
+                    )
             )
         }
     }
@@ -87,7 +90,7 @@ enum SuggestionDensity: String, CaseIterable {
     case full
 }
 
-// MARK: - PAGE 1.1 Profile Entry Point (Static UI + Editable Fields, No Persistence)
+// MARK: - Profile Page (Momentum reskin + single top-right Save)
 
 struct ProfilePopoverView: View {
     @Environment(\.dismiss) private var dismiss
@@ -98,40 +101,31 @@ struct ProfilePopoverView: View {
     @AppStorage("profile_phone") private var storedPhone: String = ""
     @AppStorage("profile_avatar_data") private var storedAvatarData: Data?
 
-    // DISABLED: AccountManager removed - no authentication/Supabase needed
-    // @StateObject private var accountManager = AccountManager.shared
     @State private var selectedItem: PhotosPickerItem?
     @State private var avatarImage: Image?
     @State private var showPersonalizationSheet: Bool = false
-    @State private var showPaywall: Bool = false
-    @State private var paywallFeature: String = "Premium Features"
-    @State private var showSubscriptionManagement: Bool = false
-    @State private var showCouponRedemption: Bool = false
-    @State private var showSignIn: Bool = false
-    @State private var showSignUp: Bool = false
     @State private var showModelPreferences: Bool = false
 
     @State private var name: String
     @State private var email: String
     @State private var phone: String
+    @State private var openAIKeyDraft: String = ""
+    @State private var geniusKeyDraft: String = ""
     @State private var showSaveConfirmation: Bool = false
     @State private var hasUnsavedChanges: Bool = false
-    
+
     // App version info
     private var appVersion: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
     }
-    
+
     private var appBuild: String {
         Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Unknown"
     }
-    
-    // Export user data
+
     private func exportUserData() {
-        // TODO: Implement data export functionality
-        // This should export all journal entries, profile data, and settings
+        // TODO: Implement data export (journal entries, profile, settings).
         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-        // For now, just show a placeholder
         print("Export data functionality - to be implemented")
     }
 
@@ -145,32 +139,26 @@ struct ProfilePopoverView: View {
 
     private var isEmailValid: Bool {
         if email.isEmpty { return true } // Email is optional
-        // Proper email regex validation
         let emailRegex = #"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"#
         return email.range(of: emailRegex, options: .regularExpression) != nil
     }
 
     private var isPhoneValid: Bool {
         if phone.isEmpty { return true } // Phone is optional
-        // Remove all non-digit characters for validation
         let digitsOnly = phone.filter(\.isNumber)
-        // Valid if 10 digits (US format) or 11 digits (with country code)
         return digitsOnly.count == 10 || digitsOnly.count == 11
     }
-    
+
     private func formatPhoneNumber(_ input: String) -> String {
-        // Remove all non-digit characters
         let digitsOnly = input.filter(\.isNumber)
-        
-        // Format as (XXX) XXX-XXXX for 10 digits
+
         if digitsOnly.count == 10 {
             let areaCode = String(digitsOnly.prefix(3))
             let firstPart = String(digitsOnly.dropFirst(3).prefix(3))
             let lastPart = String(digitsOnly.dropFirst(6))
             return "(\(areaCode)) \(firstPart)-\(lastPart)"
         }
-        
-        // Format as +X (XXX) XXX-XXXX for 11 digits
+
         if digitsOnly.count == 11 {
             let countryCode = String(digitsOnly.prefix(1))
             let areaCode = String(digitsOnly.dropFirst(1).prefix(3))
@@ -178,170 +166,177 @@ struct ProfilePopoverView: View {
             let lastPart = String(digitsOnly.dropFirst(7))
             return "+\(countryCode) (\(areaCode)) \(firstPart)-\(lastPart)"
         }
-        
-        // Return as-is if not 10 or 11 digits (user still typing)
+
         return input
     }
 
+    /// Save is enabled as long as the optional email/phone are well-formed (name is optional —
+    /// so a user pasting only an API key can still Save).
     private var isFormValid: Bool {
-        !name.trimmingCharacters(in: .whitespaces).isEmpty &&
-        isEmailValid &&
-        isPhoneValid
+        isEmailValid && isPhoneValid
     }
-    
+
     private func hasPersonalDetails() -> Bool {
         if let data = UserDefaults.standard.data(forKey: "user_personal_details"),
            let details = try? JSONDecoder().decode(UserPersonalDetails.self, from: data) {
-            return !details.locations.isEmpty || 
-                   !details.people.isEmpty || 
-                   !details.themes.isEmpty || 
-                   !details.interests.isEmpty || 
+            return !details.locations.isEmpty ||
+                   !details.people.isEmpty ||
+                   !details.themes.isEmpty ||
+                   !details.interests.isEmpty ||
                    !details.background.isEmpty
         }
         return false
     }
 
+    // MARK: Body
+
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                // Account Status Section
-                accountStatusSection
-                
-                // DISABLED: Authentication disabled - always show profile content (no sign-in required)
+        NavigationStack {
+            ScrollView {
                 profileContentSection
-                
-                /*
-                if accountManager.isSignedIn {
-                    // Signed in - show profile content
-                    profileContentSection
-                } else {
-                    // Not signed in - show sign-in prompt
-                    signInPromptSection
-                }
-                */
+                    .padding(Momentum.edge)
+                    .padding(.top, 8)
             }
-            .padding(20)
-            .padding(.top, 20) // Extra top padding to prevent cutoff
-        }
-        .frame(maxWidth: .infinity)
-        .background(AtmosphereGlow())
-        // DISABLED: Authentication disabled - no sign-in/sign-up sheets
-        /*
-        .sheet(isPresented: $showSignIn) {
-            SignInView(onDismiss: { showSignIn = false })
-        }
-        .sheet(isPresented: $showSignUp) {
-            SignUpView(onDismiss: { showSignUp = false })
-        }
-        */
-    }
-    
-    // MARK: - Account Status Section
-    
-    // MARK: - Account Status Section (DISABLED - Authentication disabled)
-    private var accountStatusSection: some View {
-        EmptyView() // DISABLED: No authentication needed
-        /*
-        VStack(alignment: .leading, spacing: 12) {
-            if accountManager.isSignedIn, let user = accountManager.currentUser {
-                HStack {
-                    Image(systemName: "checkmark.circle.fill")
-                        .foregroundStyle(.green)
-                    Text("Signed in as \(user.email)")
-                        .font(.subheadline)
+            .frame(maxWidth: .infinity)
+            .background(AtmosphereGlow())
+            .scrollDismissesKeyboard(.interactively)
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { discardAndDismiss() }
                         .foregroundStyle(Momentum.contentSecondary)
-                    Spacer()
-                    Button {
-                        Task {
-                            try? await accountManager.signOut()
-                        }
-                    } label: {
-                        Text("Sign Out")
-                            .font(.caption)
-                            .foregroundStyle(.red)
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Save") { saveAll() }
+                        .fontWeight(.semibold)
+                        .disabled(!isFormValid)
+                }
+            }
+            .overlay(alignment: .top) { saveConfirmationToast }
+            .onAppear { loadOnAppear() }
+            .onChange(of: selectedItem) { _, newItem in handleAvatarPick(newItem) }
+        }
+    }
+
+    @ViewBuilder private var saveConfirmationToast: some View {
+        if showSaveConfirmation {
+            HStack(spacing: 8) {
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundStyle(Momentum.accent)
+                Text("Saved")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Momentum.contentPrimary)
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 8)
+            .background(
+                Capsule(style: .continuous)
+                    .fill(Momentum.surfaceElevated)
+                    .overlay(Capsule().stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
+            )
+            .padding(.top, 8)
+            .transition(.move(edge: .top).combined(with: .opacity))
+        }
+    }
+
+    // MARK: Actions
+
+    private func loadOnAppear() {
+        if let data = storedAvatarData, let uiImage = UIImage(data: data) {
+            avatarImage = Image(uiImage: uiImage)
+        }
+        name = storedName
+        email = storedEmail
+        phone = storedPhone
+        openAIKeyDraft = KeychainHelper.shared.getAPIKey() ?? ""
+        geniusKeyDraft = KeychainHelper.shared.getGeniusAPIKey() ?? ""
+        hasUnsavedChanges = false
+    }
+
+    private func handleAvatarPick(_ newItem: PhotosPickerItem?) {
+        guard let newItem else { return }
+        Task {
+            if let data = try? await newItem.loadTransferable(type: Data.self),
+               let uiImage = UIImage(data: data) {
+                await MainActor.run {
+                    avatarImage = Image(uiImage: uiImage)
+                    if let jpegData = uiImage.jpegData(compressionQuality: 0.9) {
+                        storedAvatarData = jpegData
+                        hasUnsavedChanges = true
                     }
                 }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 10)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Momentum.surfaceElevated)
-                )
-            } else {
-                HStack {
-                    Image(systemName: "exclamationmark.circle.fill")
-                        .foregroundStyle(.orange)
-                    Text("Not signed in")
-                        .font(.subheadline)
-                        .foregroundStyle(Momentum.contentSecondary)
-                    Spacer()
-                }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 10)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Momentum.surfaceElevated)
-                )
             }
         }
-        */
     }
-    
-    // MARK: - Sign In Prompt Section
-    
-    private var signInPromptSection: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text("Sign in to sync your data")
-                .font(.headline)
-            
-            Text("Create an account or sign in to sync your configurations, preferences, and data across devices.")
-                .font(.subheadline)
+
+    /// One Save: profile fields → @AppStorage, both API keys → Keychain (cleared field deletes the key).
+    private func saveAll() {
+        if !phone.isEmpty && isPhoneValid {
+            phone = formatPhoneNumber(phone)
+        }
+        storedName = name
+        storedEmail = email
+        storedPhone = phone
+
+        let openAI = openAIKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines)
+        if openAI.isEmpty { try? KeychainHelper.shared.deleteAPIKey() }
+        else { try? KeychainHelper.shared.saveAPIKey(openAI) }
+
+        let genius = geniusKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines)
+        if genius.isEmpty { try? KeychainHelper.shared.deleteGeniusAPIKey() }
+        else { try? KeychainHelper.shared.saveGeniusAPIKey(genius) }
+
+        hasUnsavedChanges = false
+        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+        withAnimation { showSaveConfirmation = true }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            dismiss()
+        }
+    }
+
+    private func discardAndDismiss() {
+        // Restore profile fields; key drafts are only persisted on Save, so nothing to undo there.
+        name = storedName
+        email = storedEmail
+        phone = storedPhone
+        hasUnsavedChanges = false
+        lightHaptic()
+        dismiss()
+    }
+
+    // MARK: Content
+
+    // Extracted to keep profileContentSection within the SwiftUI type-checker's budget.
+    private var personalDetailsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            MomentumSectionHeader(title: "Personal Details")
+            Text("Adds weight to generators so suggestions feel more personal to you.")
+                .font(.momentumMetadata)
                 .foregroundStyle(Momentum.contentSecondary)
-            
-            HStack(spacing: 12) {
-                Button {
-                    showSignUp = true
-                } label: {
-                    Text("Create Account")
-                        .font(.subheadline.weight(.medium))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 10)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.blue)
-                        )
-                        .foregroundStyle(.white)
-                }
-                
-                Button {
-                    showSignIn = true
-                } label: {
-                    Text("Sign In")
-                        .font(.subheadline.weight(.medium))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 10)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Momentum.surfaceElevated)
-                        )
-                }
+                .fixedSize(horizontal: false, vertical: true)
+            Button {
+                lightHaptic()
+                showPersonalizationSheet = true
+            } label: {
+                navRow(
+                    title: "Add Personal Details",
+                    systemImage: "person.text.rectangle",
+                    trailingCheck: hasPersonalDetails()
+                )
             }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Add Personal Details")
+            .accessibilityHint("Opens a form for locations, people, themes, interests, and background")
         }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 12)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Momentum.surfaceElevated)
-        )
     }
-    
-    // MARK: - Profile Content Section
-    
+
     private var profileContentSection: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .leading, spacing: 28) {
+
+            // Identity — avatar + contact fields
             HStack {
                 Spacer()
-
                 PhotosPicker(
                     selection: $selectedItem,
                     matching: .images,
@@ -350,6 +345,7 @@ struct ProfilePopoverView: View {
                     ZStack {
                         Circle()
                             .fill(Momentum.surfaceElevated)
+                            .overlay(Circle().stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
                             .frame(width: 96, height: 96)
 
                         if let avatarImage {
@@ -366,29 +362,16 @@ struct ProfilePopoverView: View {
                     }
                 }
                 .buttonStyle(PlainButtonStyle())
-
                 Spacer()
             }
             .padding(.top, 8)
 
             VStack(spacing: 14) {
                 profileField(label: "Name", text: $name, placeholder: "Your name")
-                    .onChange(of: name) { _, _ in
-                        hasUnsavedChanges = true
-                    }
-                
-                // Email field with simplified helper text
+                    .onChange(of: name) { _, _ in hasUnsavedChanges = true }
+
                 Group {
-                    let emailHelperText: String? = {
-                        if !isEmailValid {
-                            return "Enter a valid email address (e.g., name@example.com)"
-                        } else if !email.isEmpty {
-                            return "Valid email format"
-                        } else {
-                            return nil
-                        }
-                    }()
-                    
+                    let emailHelperText: String? = isEmailValid ? nil : "Enter a valid email (e.g. name@example.com)"
                     profileField(
                         label: "Email",
                         text: $email,
@@ -398,28 +381,15 @@ struct ProfilePopoverView: View {
                         helperText: emailHelperText
                     )
                 }
-                .onChange(of: email) { _, _ in
-                    hasUnsavedChanges = true
-                }
-                
-                // Phone field with simplified helper text
+                .onChange(of: email) { _, _ in hasUnsavedChanges = true }
+
                 Group {
-                    let phoneHelperText: String? = {
-                        if !isPhoneValid {
-                            return "Enter 10-digit phone number (e.g., (555) 123-4567)"
-                        } else if !phone.isEmpty {
-                            return "Valid phone number"
-                        } else {
-                            return nil
-                        }
-                    }()
-                    
+                    let phoneHelperText: String? = isPhoneValid ? nil : "Enter a 10-digit number"
                     profileField(
                         label: "Phone",
                         text: Binding(
                             get: { phone },
                             set: { newValue in
-                                // Allow user to type freely, format on blur
                                 phone = newValue
                                 hasUnsavedChanges = true
                             }
@@ -432,482 +402,105 @@ struct ProfilePopoverView: View {
                 }
             }
 
-            Divider().opacity(0.15)
+            // Personal Details
+            personalDetailsSection
 
-            VStack(alignment: .leading, spacing: 14) {
-                Text("Personal Details")
-                    .font(.headline)
-                
-                Text("Inputting your personal details can influence the lyrics produced via generators. It adds weight to the generator to make suggestions more personal and tailored to your experiences.")
-                    .font(.subheadline)
+            // API Keys
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "API Keys")
+                Text("Required for AI suggestions. Genius is optional and improves rhyme ranking.")
+                    .font(.momentumMetadata)
                     .foregroundStyle(Momentum.contentSecondary)
                     .fixedSize(horizontal: false, vertical: true)
-                
-                Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    showPersonalizationSheet = true
-                } label: {
-                    HStack {
-                        Label("Add Personal Details", systemImage: "person.text.rectangle")
-                            .font(.body)
-                            .foregroundStyle(.primary)
-                        
-                        Spacer()
-                        
-                        if hasPersonalDetails() {
-                            Image(systemName: "checkmark.circle.fill")
-                                .foregroundStyle(.green)
-                        }
-                        
-                        Image(systemName: "chevron.right")
-                            .font(.caption)
-                            .foregroundStyle(Momentum.contentSecondary)
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                    )
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Add Personal Details")
-                .accessibilityHint("Opens a form to add locations, people, themes, interests, and background information")
-            }
-            .sheet(isPresented: $showPersonalizationSheet) {
-                UserPersonalizationSheet()
-            }
 
-            Divider().opacity(0.15)
-
-            VStack(alignment: .leading, spacing: 14) {
-                Text("API Settings")
-                    .font(.headline)
-                
-                Text("Enter your API keys to enable AI-powered features. OpenAI API key is required for AI suggestions. Genius API key is optional and improves rhyme ranking by accessing song lyrics data.")
-                    .font(.subheadline)
-                    .foregroundStyle(Momentum.contentSecondary)
-                    .fixedSize(horizontal: false, vertical: true)
-                
                 APIKeyField(
                     label: "OpenAI or Gemini API Key",
                     placeholder: "sk-…  or  AIza…",
-                    helperText: "Required for AI suggestions. Paste an OpenAI (sk-…) or Gemini (AIza…) key — Model G auto-detects which. Tap Test to verify it.",
+                    helperText: "Paste an OpenAI (sk-…) or Gemini (AIza…) key — Model G auto-detects. Tap Test to verify.",
                     detectProvider: true,
-                    load: { KeychainHelper.shared.getAPIKey() ?? "" },
-                    save: { v in
-                        if v.isEmpty { try? KeychainHelper.shared.deleteAPIKey() }
-                        else { try? KeychainHelper.shared.saveAPIKey(v) }
-                    }
+                    draft: $openAIKeyDraft
                 )
-
-                Divider().opacity(0.15)
 
                 APIKeyField(
                     label: "Genius API Key (Optional)",
                     placeholder: "Enter Genius API key",
-                    helperText: "Improves rhyme suggestions by accessing song lyrics data",
+                    helperText: "Improves rhyme suggestions via song-lyrics data.",
                     fixedGetKeyURL: URL(string: "https://genius.com/api-clients"),
-                    load: { KeychainHelper.shared.getGeniusAPIKey() ?? "" },
-                    save: { v in
-                        if v.isEmpty { try? KeychainHelper.shared.deleteGeniusAPIKey() }
-                        else { try? KeychainHelper.shared.saveGeniusAPIKey(v) }
-                    }
+                    draft: $geniusKeyDraft
                 )
+
+                Label("Saved securely in your device Keychain.", systemImage: "lock.shield")
+                    .font(.caption)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
 
-            Divider().opacity(0.15)
-
+            // Suggestion Defaults (carries its own MomentumSectionHeader)
             SuggestionDefaultsSection()
-            .sheet(isPresented: $showPaywall) {
-                PaywallView(
-                    featureName: paywallFeature,
-                    onDismiss: {
-                        showPaywall = false
-                    },
-                    onSubscribe: {
-                        // TODO: Implement StoreKit subscription
-                        // For now, set premium status for testing
-                        UsageTracker.shared.setPremiumStatus(true)
-                        showPaywall = false
-                    }
-                )
-            }
 
-            Divider().opacity(0.15)
-
-            VStack(alignment: .leading, spacing: 14) {
-                Text("Splash Screens")
-                    .font(.headline)
-                
-                Button {
-                    SplashScreenManager.shared.resetAllSplashScreens()
-                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
-                } label: {
-                    HStack {
-                        Label("Reset All Splash Screens", systemImage: "arrow.counterclockwise")
-                            .font(.body)
-                            .foregroundStyle(.primary)
-                        
-                        Spacer()
-                        
-                        Image(systemName: "chevron.right")
-                            .font(.caption)
-                            .foregroundStyle(Momentum.contentSecondary)
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                    )
-                }
-                .buttonStyle(.plain)
-            }
-
-            Divider().opacity(0.15)
-
-            // MARK: - Subscription Status Section (DISABLED - Subscriptions not needed)
-            // DISABLED: Subscription features turned off
-            /*
-            VStack(alignment: .leading, spacing: 14) {
-                Text("Subscription")
-                    .font(.headline)
-                
-                SubscriptionStatusView()
-                
-                // Manage Subscription Button
-                if SubscriptionManager.shared.subscriptionStatus == .subscribed {
-                    Button {
-                        showSubscriptionManagement = true
-                    } label: {
-                        HStack {
-                            Label("Manage Subscription", systemImage: "gearshape")
-                                .font(.body)
-                                .foregroundStyle(.primary)
-                            
-                            Spacer()
-                            
-                            Image(systemName: "chevron.right")
-                                .font(.caption)
-                                .foregroundStyle(Momentum.contentSecondary)
-                        }
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 12)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(Momentum.surfaceElevated)
-                        )
-                    }
-                    .buttonStyle(.plain)
-                }
-                
-                // Redeem Coupon Code Button
-                Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    showCouponRedemption = true
-                } label: {
-                    HStack {
-                        Label("Redeem Coupon Code", systemImage: "ticket.fill")
-                            .font(.body)
-                            .foregroundStyle(.primary)
-                        
-                        Spacer()
-                        
-                        Image(systemName: "chevron.right")
-                            .font(.caption)
-                            .foregroundStyle(Momentum.contentSecondary)
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                    )
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Redeem Coupon Code")
-                .accessibilityHint("Enter a promotional code to unlock premium features")
-            }
-            .sheet(isPresented: $showSubscriptionManagement) {
-                SubscriptionManagementView()
-            }
-            .sheet(isPresented: $showCouponRedemption) {
-                CouponRedemptionView()
-            }
-            .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("ShowSubscriptionManagement"))) { _ in
-                showSubscriptionManagement = true
-            }
-            */
-
-            Divider().opacity(0.15)
-            
-            // MARK: - Data Sync Section (DISABLED - Authentication disabled)
-            // DISABLED: Cloud sync disabled - no authentication needed
-            /*
-            if accountManager.isSignedIn {
-                VStack(alignment: .leading, spacing: 14) {
-                    Text("Data Sync")
-                        .font(.headline)
-                    
-                    Button {
-                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                        Task {
-                            do {
-                                try await accountManager.syncUserData()
-                                await MainActor.run {
-                                    showSaveConfirmation = true
-                                }
-                            } catch {
-                                await MainActor.run {
-                                    accountManager.errorMessage = error.localizedDescription
-                                }
-                            }
-                        }
-                    } label: {
-                        HStack {
-                            Label("Sync to Cloud", systemImage: "icloud.and.arrow.up")
-                                .font(.body)
-                                .foregroundStyle(.primary)
-                            
-                            Spacer()
-                            
-                            if accountManager.isLoading {
-                                ProgressView()
-                                    .scaleEffect(0.8)
-                            } else {
-                                Image(systemName: "chevron.right")
-                                    .font(.caption)
-                                    .foregroundStyle(Momentum.contentSecondary)
-                            }
-                        }
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 12)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(Momentum.surfaceElevated)
-                        )
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(accountManager.isLoading)
-                    
-                    Button {
-                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                        Task {
-                            do {
-                                try await accountManager.loadUserData()
-                                await MainActor.run {
-                                    showSaveConfirmation = true
-                                    // Reload profile fields
-                                    name = UserDefaults.standard.string(forKey: "profile_name") ?? ""
-                                    email = UserDefaults.standard.string(forKey: "profile_email") ?? ""
-                                    phone = UserDefaults.standard.string(forKey: "profile_phone") ?? ""
-                                }
-                            } catch {
-                                await MainActor.run {
-                                    accountManager.errorMessage = error.localizedDescription
-                                }
-                            }
-                        }
-                    } label: {
-                        HStack {
-                            Label("Load from Cloud", systemImage: "icloud.and.arrow.down")
-                                .font(.body)
-                                .foregroundStyle(.primary)
-                            
-                            Spacer()
-                            
-                            if accountManager.isLoading {
-                                ProgressView()
-                                    .scaleEffect(0.8)
-                            } else {
-                                Image(systemName: "chevron.right")
-                                    .font(.caption)
-                                    .foregroundStyle(Momentum.contentSecondary)
-                            }
-                        }
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 12)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(Momentum.surfaceElevated)
-                        )
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(accountManager.isLoading)
-                }
-                
-                Divider().opacity(0.15)
-            }
-            */
-
-            // MARK: - Account Management Section
-            VStack(alignment: .leading, spacing: 14) {
-                Text("Account")
-                    .font(.headline)
-                
-                Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    // Export data functionality
-                    exportUserData()
-                } label: {
-                    HStack {
-                        Label("Export Data", systemImage: "square.and.arrow.up")
-                            .font(.body)
-                            .foregroundStyle(.primary)
-                        
-                        Spacer()
-                        
-                        Image(systemName: "chevron.right")
-                            .font(.caption)
-                            .foregroundStyle(Momentum.contentSecondary)
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                    )
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Export Data")
-                .accessibilityHint("Export your journal entries and profile data")
-                
-                // Analytics Dashboard removed - now in top toolbar
-                // Achievements moved to Analytics tab
-            }
-
-            Divider().opacity(0.15)
-
-            // MARK: - App Information Section
-            VStack(alignment: .leading, spacing: 14) {
-                Text("About")
-                    .font(.headline)
-                
-                VStack(alignment: .leading, spacing: 8) {
-                    HStack {
-                        Text("Version")
-                            .font(.caption)
-                            .foregroundStyle(Momentum.contentSecondary)
-                        Spacer()
-                        Text(appVersion)
-                            .font(.caption)
-                            .foregroundStyle(.primary)
-                    }
-                    
-                    HStack {
-                        Text("Build")
-                            .font(.caption)
-                            .foregroundStyle(Momentum.contentSecondary)
-                        Spacer()
-                        Text(appBuild)
-                            .font(.caption)
-                            .foregroundStyle(.primary)
-                    }
-                }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 12)
-                .background(
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(Momentum.surfaceElevated)
-                )
-            }
-
-            Divider().opacity(0.15)
-
-            // MARK: - Storage & Data Section
-            VStack(alignment: .leading, spacing: 14) {
-                Text("Storage")
-                    .font(.headline)
-                
-                StorageInfoView(modelContext: modelContext)
-            }
-
-            Divider().opacity(0.15)
-
-            // MARK: - Notifications Section
-            VStack(alignment: .leading, spacing: 14) {
-                Text("Notifications")
-                    .font(.headline)
-                
+            // Notifications
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "Notifications")
                 NotificationPreferencesView()
             }
 
-            Divider().opacity(0.15)
-
-            // MARK: - Preferences Section
-            VStack(alignment: .leading, spacing: 14) {
-                Text("Preferences")
-                    .font(.headline)
-                
+            // Preferences
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "Preferences")
                 PreferencesInfoView()
-                
-                // Signal Layer Advanced Mode Toggle
                 SignalLayerAdvancedModeToggle()
-                
-                // Model Preferences (Model G Core toggle, Model G/Y settings)
                 Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    lightHaptic()
                     showModelPreferences = true
                 } label: {
-                    HStack {
-                        Label("Model Preferences", systemImage: "brain.head.profile")
-                            .font(.body)
-                            .foregroundStyle(.primary)
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .font(.caption)
-                            .foregroundStyle(Momentum.contentSecondary)
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                    )
+                    navRow(title: "Model Preferences", systemImage: "brain.head.profile")
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel("Model Preferences")
                 .accessibilityHint("Customize Model G and Model Y, enable Model G Core v1.0")
             }
-            .sheet(isPresented: $showModelPreferences) {
-                ModelPreferencesView()
-            }
 
-            Divider().opacity(0.15)
-
-            // MARK: - Privacy & Security Section
-            VStack(alignment: .leading, spacing: 14) {
-                Text("Privacy & Security")
-                    .font(.headline)
-                
-                VStack(alignment: .leading, spacing: 8) {
-                    HStack {
-                        Image(systemName: "lock.shield.fill")
-                            .foregroundStyle(.blue)
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("API Key Security")
-                                .font(.caption.weight(.medium))
-                            Text("Stored securely in Keychain")
-                                .font(.caption2)
-                                .foregroundStyle(Momentum.contentSecondary)
-                        }
-                        Spacer()
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                    )
+            // General (merged: Export + Reset Splash Screens)
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "General")
+                Button {
+                    lightHaptic()
+                    exportUserData()
+                } label: {
+                    navRow(title: "Export Data", systemImage: "square.and.arrow.up")
                 }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Export Data")
+                .accessibilityHint("Export your journal entries and profile data")
+
+                Button {
+                    SplashScreenManager.shared.resetAllSplashScreens()
+                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+                } label: {
+                    navRow(title: "Reset Splash Screens", systemImage: "arrow.counterclockwise")
+                }
+                .buttonStyle(.plain)
             }
 
-            Divider().opacity(0.15)
+            // App (merged: About + Storage + Invites)
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "App")
 
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Your Invites")
-                    .font(.headline)
+                VStack(alignment: .leading, spacing: 10) {
+                    infoRow("Version", appVersion)
+                    infoRow("Build", appBuild)
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                        .fill(Momentum.surfaceElevated)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                                .stroke(Momentum.hairline, lineWidth: Momentum.lineThin)
+                        )
+                )
+
+                StorageInfoView(modelContext: modelContext)
 
                 ShareLink(
                     item: URL(string: "https://finaljournal.app/invite")!,
@@ -915,148 +508,19 @@ struct ProfilePopoverView: View {
                     message: Text("Check out The Final Journal AI and join my creative journey!"),
                     preview: SharePreview("The Final Journal AI", image: Image(systemName: "sparkles"))
                 ) {
-                    Label("Share Invite Link", systemImage: "square.and.arrow.up")
+                    navRow(title: "Share Invite Link", systemImage: "square.and.arrow.up")
                 }
                 .buttonStyle(.plain)
                 .onTapGesture {
                     UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                 }
             }
-
-            HStack {
-                Button {
-                    // Cancel - discard changes
-                    name = storedName
-                    email = storedEmail
-                    phone = storedPhone
-                    hasUnsavedChanges = false
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    dismiss()
-                } label: {
-                    Text("Cancel")
-                        .font(.body)
-                        .foregroundStyle(Momentum.contentSecondary)
-                        .frame(minWidth: 70)
-                        .padding(.vertical, 10)
-                }
-                
-                Spacer()
-
-                Button {
-                    // Format phone number before saving
-                    if !phone.isEmpty && isPhoneValid {
-                        phone = formatPhoneNumber(phone)
-                    }
-                    
-                    // Save to @AppStorage
-                    storedName = name
-                    storedEmail = email
-                    storedPhone = phone
-                    hasUnsavedChanges = false
-
-                    UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-                    showSaveConfirmation = true
-                    
-                    // DISABLED: Cloud sync disabled - no authentication needed
-                    // Sync to cloud if signed in
-                    // if accountManager.isSignedIn {
-                    //     Task {
-                    //         try? await accountManager.syncUserData()
-                    //     }
-                    // }
-                    
-                    // Dismiss after showing confirmation
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    dismiss()
-                    }
-                } label: {
-                    Text("Save")
-                        .font(.headline)
-                        .frame(minWidth: 88)
-                        .padding(.vertical, 10)
-                }
-                .disabled(!isFormValid)
-                .opacity(isFormValid ? 1.0 : 0.4)
-                .background(
-                    RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .fill(Momentum.surfaceElevated)
-                )
-            }
-            .padding(.top, 8)
-            .overlay(alignment: .top) {
-                if showSaveConfirmation {
-                    HStack(spacing: 8) {
-                        Image(systemName: "checkmark.circle.fill")
-                            .foregroundStyle(.green)
-                        Text("Profile saved")
-                            .font(.caption)
-                    }
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 6)
-                    .background(
-                        Capsule(style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                    )
-                    .transition(.move(edge: .top).combined(with: .opacity))
-                }
-            }
-            
-            // DISABLED: AccountManager error messages disabled - no authentication needed
-            /*
-            // Show error message if any
-            if let errorMessage = accountManager.errorMessage {
-                Text(errorMessage)
-                    .font(.caption)
-                    .foregroundStyle(.red)
-                    .padding(.horizontal, 20)
-                    .padding(.top, 8)
-            }
-            */
         }
-        .background(
-            Rectangle()
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .overlay(
-                    LinearGradient(
-                        colors: [
-                            .white.opacity((GlassSettings.gloss - 0.6) / 3),
-                            .clear
-                        ],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                    .blendMode(.overlay)
-                )
-        )
-        .onAppear {
-            // Load avatar from storage
-            if let data = storedAvatarData,
-               let uiImage = UIImage(data: data) {
-                avatarImage = Image(uiImage: uiImage)
-            }
-            
-            // Sync state with @AppStorage on appear
-            name = storedName
-            email = storedEmail
-            phone = storedPhone
-            hasUnsavedChanges = false
+        .sheet(isPresented: $showPersonalizationSheet) {
+            UserPersonalizationSheet()
         }
-        .onChange(of: selectedItem) { oldValue, newItem in
-            guard let newItem else { return }
-            Task {
-                if let data = try? await newItem.loadTransferable(type: Data.self),
-                   let uiImage = UIImage(data: data) {
-                    await MainActor.run {
-                    avatarImage = Image(uiImage: uiImage)
-                    if let jpegData = uiImage.jpegData(compressionQuality: 0.9) {
-                        storedAvatarData = jpegData
-                            hasUnsavedChanges = true // Avatar change counts as unsaved
-                        }
-                    }
-                }
-            }
+        .sheet(isPresented: $showModelPreferences) {
+            ModelPreferencesView()
         }
     }
 }
@@ -1066,7 +530,7 @@ struct UsageInfoRow: View {
     let label: String
     let used: Int
     let limit: Int
-    
+
     var body: some View {
         HStack {
             Text(label)
@@ -1085,7 +549,7 @@ struct PreferencesInfoView: View {
     @AppStorage("defaultRhymeOverlayVisible") private var defaultRhymeOverlayVisible: Bool = false
     @AppStorage("defaultBPM") private var defaultBPM: Int = 0
     @Environment(\.colorScheme) private var colorScheme
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -1096,7 +560,7 @@ struct PreferencesInfoView: View {
                 Toggle("", isOn: $defaultRhymeOverlayVisible)
                     .labelsHidden()
             }
-            
+
             if defaultBPM > 0 {
                 HStack {
                     Text("Default BPM")
@@ -1122,23 +586,23 @@ struct PreferencesInfoView: View {
 
 struct SignalLayerAdvancedModeToggle: View {
     @AppStorage("signal_advanced_mode_enabled") private var isAdvancedModeEnabled: Bool = false
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text("Signal Layer Advanced Mode")
                     .font(.caption)
                     .foregroundStyle(Momentum.contentSecondary)
-                
+
                 Spacer()
-                
+
                 Toggle("", isOn: $isAdvancedModeEnabled)
                     .labelsHidden()
                     .onChange(of: isAdvancedModeEnabled) { _, newValue in
                         SignalAdvancedExposure.shared.setAdvancedModeEnabled(newValue)
                     }
             }
-            
+
             Text("Show Signal Mode, Axes, and technical details in suggestion cards")
                 .font(.caption2)
                 .foregroundStyle(.tertiary)
@@ -1158,24 +622,24 @@ struct StorageInfoView: View {
     @State private var totalNotes: Int = 0
     @State private var audioFilesSize: Int64 = 0
     @Environment(\.colorScheme) private var colorScheme
-    
+
     private func formatBytes(_ bytes: Int64) -> String {
         let formatter = ByteCountFormatter()
         formatter.allowedUnits = [.useKB, .useMB, .useGB]
         formatter.countStyle = .file
         return formatter.string(fromByteCount: bytes)
     }
-    
+
     private func calculateStorage() {
         Task {
             let descriptor = FetchDescriptor<Item>()
             if let items = try? modelContext.fetch(descriptor) {
                 await MainActor.run {
                     totalNotes = items.count
-                    
+
                     var totalSize: Int64 = 0
                     let fileManager = FileManager.default
-                    
+
                     for item in items {
                         if let audioPath = item.audioPath {
                             if let attributes = try? fileManager.attributesOfItem(atPath: audioPath),
@@ -1184,13 +648,13 @@ struct StorageInfoView: View {
                             }
                         }
                     }
-                    
+
                     audioFilesSize = totalSize
                 }
             }
         }
     }
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -1202,7 +666,7 @@ struct StorageInfoView: View {
                     .font(.caption)
                     .foregroundStyle(.primary)
             }
-            
+
             HStack {
                 Text("Audio Files")
                     .font(.caption)
@@ -1230,13 +694,13 @@ struct StorageInfoView: View {
 struct UserPersonalizationSheet: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) private var colorScheme
-    
+
     @State private var personalDetails = UserPersonalDetails()
     @State private var locationInput: String = ""
     @State private var peopleInput: String = ""
     @State private var themesInput: String = ""
     @State private var interestsInput: String = ""
-    
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -1249,9 +713,9 @@ struct UserPersonalizationSheet: View {
                         tags: $personalDetails.locations,
                         placeholder: "Enter location and press return"
                     )
-                    
+
                     Divider()
-                    
+
                     // People Section
                     tagInputSection(
                         title: "People",
@@ -1260,9 +724,9 @@ struct UserPersonalizationSheet: View {
                         tags: $personalDetails.people,
                         placeholder: "Enter name and press return"
                     )
-                    
+
                     Divider()
-                    
+
                     // Themes Section
                     tagInputSection(
                         title: "Themes",
@@ -1271,9 +735,9 @@ struct UserPersonalizationSheet: View {
                         tags: $personalDetails.themes,
                         placeholder: "Enter theme and press return"
                     )
-                    
+
                     Divider()
-                    
+
                     // Interests Section
                     tagInputSection(
                         title: "Interests",
@@ -1282,18 +746,18 @@ struct UserPersonalizationSheet: View {
                         tags: $personalDetails.interests,
                         placeholder: "Enter interest and press return"
                     )
-                    
+
                     Divider()
-                    
+
                     // Background Section
                     VStack(alignment: .leading, spacing: 12) {
                         Text("Background & Context")
                             .font(.headline)
-                        
+
                         Text("Share any context about yourself that could personalize your AI suggestions")
                             .font(.subheadline)
                             .foregroundStyle(Momentum.contentSecondary)
-                        
+
                         TextEditor(text: $personalDetails.background)
                             .frame(minHeight: 120)
                             .padding(8)
@@ -1330,7 +794,7 @@ struct UserPersonalizationSheet: View {
                         dismiss()
                     }
                 }
-                
+
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
                         savePersonalDetails()
@@ -1344,7 +808,7 @@ struct UserPersonalizationSheet: View {
             loadPersonalDetails()
         }
     }
-    
+
     @ViewBuilder
     private func tagInputSection(
         title: String,
@@ -1356,11 +820,11 @@ struct UserPersonalizationSheet: View {
         VStack(alignment: .leading, spacing: 12) {
             Text(title)
                 .font(.headline)
-            
+
             Text(description)
                 .font(.subheadline)
                 .foregroundStyle(Momentum.contentSecondary)
-            
+
             // Tags Display
             if !tags.wrappedValue.isEmpty {
                 FlowLayout(spacing: 8) {
@@ -1368,7 +832,7 @@ struct UserPersonalizationSheet: View {
                         HStack(spacing: 6) {
                             Text(tag)
                                 .font(.subheadline)
-                            
+
                             Button {
                                 tags.wrappedValue.remove(at: index)
                             } label: {
@@ -1386,7 +850,7 @@ struct UserPersonalizationSheet: View {
                     }
                 }
             }
-            
+
             // Input Field
             TextField(placeholder, text: input)
                 .textFieldStyle(.roundedBorder)
@@ -1395,7 +859,7 @@ struct UserPersonalizationSheet: View {
                 }
         }
     }
-    
+
     private func addTag(from input: Binding<String>, to tags: Binding<[String]>) {
         let trimmed = input.wrappedValue.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         if !trimmed.isEmpty && !tags.wrappedValue.contains(trimmed) {
@@ -1403,14 +867,14 @@ struct UserPersonalizationSheet: View {
             input.wrappedValue = ""
         }
     }
-    
+
     private func loadPersonalDetails() {
         if let data = UserDefaults.standard.data(forKey: "user_personal_details"),
            let decoded = try? JSONDecoder().decode(UserPersonalDetails.self, from: data) {
             personalDetails = decoded
         }
     }
-    
+
     private func savePersonalDetails() {
         if let encoded = try? JSONEncoder().encode(personalDetails) {
             UserDefaults.standard.set(encoded, forKey: "user_personal_details")
@@ -1422,7 +886,7 @@ struct UserPersonalizationSheet: View {
 
 struct FlowLayout: Layout {
     var spacing: CGFloat = 8
-    
+
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
         let result = FlowResult(
             in: proposal.width ?? .infinity,
@@ -1431,7 +895,7 @@ struct FlowLayout: Layout {
         )
         return result.size
     }
-    
+
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
         let result = FlowResult(
             in: bounds.width,
@@ -1444,30 +908,30 @@ struct FlowLayout: Layout {
                          proposal: .unspecified)
         }
     }
-    
+
     struct FlowResult {
         var size: CGSize = .zero
         var frames: [CGRect] = []
-        
+
         init(in maxWidth: CGFloat, subviews: Subviews, spacing: CGFloat) {
             var currentX: CGFloat = 0
             var currentY: CGFloat = 0
             var lineHeight: CGFloat = 0
-            
+
             for subview in subviews {
                 let size = subview.sizeThatFits(.unspecified)
-                
+
                 if currentX + size.width > maxWidth && currentX > 0 {
                     currentX = 0
                     currentY += lineHeight + spacing
                     lineHeight = 0
                 }
-                
+
                 frames.append(CGRect(x: currentX, y: currentY, width: size.width, height: size.height))
                 lineHeight = max(lineHeight, size.height)
                 currentX += size.width + spacing
             }
-            
+
             self.size = CGSize(width: maxWidth, height: currentY + lineHeight)
         }
     }
@@ -1479,19 +943,19 @@ struct NotificationPreferencesView: View {
     @StateObject private var notificationManager = NotificationManager.shared
     @State private var preferences: NotificationPreferences = NotificationManager.shared.getPreferences()
     @Environment(\.colorScheme) private var colorScheme
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             // Permission status
             HStack {
                 Image(systemName: notificationManager.authorizationStatus == .authorized ? "bell.fill" : "bell.slash.fill")
                     .foregroundStyle(notificationManager.authorizationStatus == .authorized ? .green : .orange)
-                
+
                 Text(notificationManager.authorizationStatus == .authorized ? "Notifications Enabled" : "Notifications Disabled")
                     .font(.subheadline)
-                
+
                 Spacer()
-                
+
                 if notificationManager.authorizationStatus != .authorized {
                     Button("Enable") {
                         Task {
@@ -1509,7 +973,7 @@ struct NotificationPreferencesView: View {
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                     .fill(Momentum.surfaceElevated)
             )
-            
+
             if notificationManager.authorizationStatus == .authorized {
                 VStack(spacing: 12) {
                     Toggle(isOn: $preferences.dailyReminders) {
@@ -1519,7 +983,7 @@ struct NotificationPreferencesView: View {
                     .onChange(of: preferences.dailyReminders) { _, _ in
                         NotificationManager.shared.savePreferences(preferences)
                     }
-                    
+
                     Toggle(isOn: $preferences.streakReminders) {
                         Label("Streak Reminders", systemImage: "flame.fill")
                             .font(.body)
@@ -1527,7 +991,7 @@ struct NotificationPreferencesView: View {
                     .onChange(of: preferences.streakReminders) { _, _ in
                         NotificationManager.shared.savePreferences(preferences)
                     }
-                    
+
                     Toggle(isOn: $preferences.achievementNotifications) {
                         Label("Achievement Notifications", systemImage: "trophy.fill")
                             .font(.body)
@@ -1535,7 +999,7 @@ struct NotificationPreferencesView: View {
                     .onChange(of: preferences.achievementNotifications) { _, _ in
                         NotificationManager.shared.savePreferences(preferences)
                     }
-                    
+
                     Toggle(isOn: $preferences.weeklySummary) {
                         Label("Weekly Summary", systemImage: "chart.bar.fill")
                             .font(.body)
@@ -1560,38 +1024,52 @@ struct NotificationPreferencesView: View {
 
 // MARK: - Profile Helper Functions
 extension ProfilePopoverView {
+    /// Standard tappable row: leading label, optional trailing check, chevron — on a flat Momentum card.
     @ViewBuilder
-    func profileSecureField(
-        label: String,
-        text: Binding<String>,
-        placeholder: String,
-        helperText: String? = nil
-    ) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(label)
+    func navRow(title: String, systemImage: String, trailingCheck: Bool = false) -> some View {
+        HStack {
+            Label(title, systemImage: systemImage)
+                .font(.momentumBody)
+                .foregroundStyle(Momentum.contentPrimary)
+
+            Spacer()
+
+            if trailingCheck {
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundStyle(Momentum.accent)
+            }
+
+            Image(systemName: "chevron.right")
                 .font(.caption)
                 .foregroundStyle(Momentum.contentSecondary)
-
-            SecureField(placeholder, text: text)
-                .textFieldStyle(.plain)
-                .padding(10)
-                .background(
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(Momentum.surfaceElevated)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .strokeBorder(Color.primary.opacity(0.08), lineWidth: 1)
-                        )
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 13)
+        .background(
+            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                .fill(Momentum.surfaceElevated)
+                .overlay(
+                    RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                        .stroke(Momentum.hairline, lineWidth: Momentum.lineThin)
                 )
+        )
+        .contentShape(Rectangle())
+    }
 
-            if let helperText {
-                Text(helperText)
-                    .font(.caption2)
-                    .foregroundStyle(Momentum.contentSecondary)
-            }
+    /// Label / value metadata row (version, build, …).
+    @ViewBuilder
+    func infoRow(_ label: String, _ value: String) -> some View {
+        HStack {
+            Text(label)
+                .font(.momentumMetadata)
+                .foregroundStyle(Momentum.contentSecondary)
+            Spacer()
+            Text(value)
+                .font(.momentumMetadata)
+                .foregroundStyle(Momentum.contentPrimary)
         }
     }
-    
+
     @ViewBuilder
     func profileField(
         label: String,
@@ -1609,15 +1087,16 @@ extension ProfilePopoverView {
             TextField(placeholder, text: text)
                 .keyboardType(keyboard)
                 .textFieldStyle(.plain)
-                .padding(10)
+                .foregroundStyle(Momentum.contentPrimary)
+                .padding(12)
                 .background(
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
                         .fill(Momentum.surfaceElevated)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
                                 .strokeBorder(
-                                    (isValid == false ? Color.red.opacity(0.35) : Color.primary.opacity(0.08)),
-                                    lineWidth: isValid == false ? 1.2 : 1
+                                    (isValid == false ? Color.red.opacity(0.45) : Momentum.hairline),
+                                    lineWidth: isValid == false ? 1.2 : Momentum.lineThin
                                 )
                         )
                 )
@@ -1625,7 +1104,7 @@ extension ProfilePopoverView {
             if let helperText {
                 Text(helperText)
                     .font(.caption2)
-                    .foregroundStyle(isValid == false ? .red : .secondary)
+                    .foregroundStyle(isValid == false ? .red : Momentum.contentSecondary)
             }
         }
     }

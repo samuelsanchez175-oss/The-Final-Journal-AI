@@ -2,9 +2,10 @@
 //  APIKeyField.swift
 //  XJournal AI
 //
-//  Self-contained API-key input that fixes the "no save button / did it save?" problem:
-//  reveal toggle, explicit Save + persistent confirmation, optional free "Test" (provider
-//  models endpoint — no token cost), and provider auto-detect from the key prefix.
+//  API-key input. The key value lives in a parent @Binding; the Profile page's single
+//  top-right Save persists it to Keychain — this field no longer self-saves. Keeps a reveal
+//  toggle, provider auto-detect, a free "Test" (provider models endpoint — no token cost),
+//  and a "Get key" link. Momentum-styled (flat surface + hairline).
 //
 
 import SwiftUI
@@ -16,15 +17,12 @@ struct APIKeyField: View {
     var helperText: String? = nil
     var detectProvider: Bool = false        // OpenAI/Gemini auto-detect + Test + dynamic "Get key" link
     var fixedGetKeyURL: URL? = nil           // for non-AI keys (e.g. Genius)
-    let load: () -> String
-    let save: (String) -> Void
+    @Binding var draft: String
 
-    @State private var draft = ""
-    @State private var lastSaved = ""
     @State private var revealed = false
     @State private var phase: Phase = .idle
 
-    private enum Phase: Equatable { case idle, saved, testing, valid, invalid }
+    private enum Phase: Equatable { case idle, testing, valid, invalid }
     private enum Provider { case gemini, openAI, unknown }
 
     private var provider: Provider {
@@ -50,7 +48,9 @@ struct APIKeyField: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(label).font(.subheadline.weight(.semibold))
+            Text(label)
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(Momentum.contentPrimary)
 
             HStack(spacing: 8) {
                 Group {
@@ -61,20 +61,21 @@ struct APIKeyField: View {
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.never)
                 .font(.callout.monospaced())
+                .foregroundStyle(Momentum.contentPrimary)
 
                 Button { revealed.toggle() } label: {
                     Image(systemName: revealed ? "eye.slash" : "eye")
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
                 .buttonStyle(.plain)
             }
             .padding(12)
             .background(
-                RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .fill(Color(.secondarySystemBackground))
+                RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .strokeBorder(Color.primary.opacity(0.18), lineWidth: 1)
+                        RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                            .strokeBorder(Momentum.hairline, lineWidth: Momentum.lineThin)
                     )
             )
             .onChange(of: draft) { _, _ in if phase != .idle { phase = .idle } }
@@ -82,7 +83,7 @@ struct APIKeyField: View {
             HStack(spacing: 12) {
                 if detectProvider && provider != .unknown {
                     Label("Detected: \(providerName)", systemImage: "checkmark.seal")
-                        .font(.caption).foregroundStyle(.secondary)
+                        .font(.caption).foregroundStyle(Momentum.contentSecondary)
                 }
                 Spacer()
                 if detectProvider {
@@ -90,22 +91,12 @@ struct APIKeyField: View {
                         .font(.caption.weight(.semibold))
                         .disabled(draft.isEmpty || phase == .testing)
                 }
-                Button {
-                    save(draft)
-                    lastSaved = draft
-                    phase = .saved
-                } label: {
-                    Text("Save").font(.caption.weight(.bold))
-                }
-                .buttonStyle(.borderedProminent)
-                .controlSize(.small)
-                .disabled(draft == lastSaved)
             }
 
             statusLine
 
             if let helperText {
-                Text(helperText).font(.caption).foregroundStyle(.secondary)
+                Text(helperText).font(.caption).foregroundStyle(Momentum.contentSecondary)
             }
             if let getKeyURL {
                 Link(destination: getKeyURL) {
@@ -114,17 +105,13 @@ struct APIKeyField: View {
                 .padding(.top, 2)
             }
         }
-        .onAppear { draft = load(); lastSaved = draft }
     }
 
     @ViewBuilder private var statusLine: some View {
         switch phase {
         case .idle: EmptyView()
-        case .saved:
-            Label("Saved ✓", systemImage: "checkmark.circle.fill")
-                .font(.caption).foregroundStyle(.green)
         case .testing:
-            Label("Testing…", systemImage: "hourglass").font(.caption).foregroundStyle(.secondary)
+            Label("Testing…", systemImage: "hourglass").font(.caption).foregroundStyle(Momentum.contentSecondary)
         case .valid:
             Label("Key is valid ✓", systemImage: "checkmark.seal.fill")
                 .font(.caption).foregroundStyle(.green)
@@ -135,7 +122,6 @@ struct APIKeyField: View {
     }
 
     private func runTest() async {
-        save(draft); lastSaved = draft        // test exactly what's stored
         phase = .testing
         let ok = await Self.validate(draft)
         phase = ok ? .valid : .invalid
