@@ -22,6 +22,71 @@ struct UserPersonalDetails: Codable {
     var background: String = ""
 }
 
+// MARK: - Suggestion Defaults (Profile)
+
+/// Profile defines suggestion defaults. Session-specific direction (tone, rhyme groups, intent) is set on the Model G control surface when you suggest lines.
+struct SuggestionDefaultsSection: View {
+    @AppStorage("suggestion_default_line_count") private var defaultLineCount: Int = 4
+    @AppStorage("suggestion_safe_language") private var safeLanguage: Bool = true
+    @AppStorage("suggestion_density") private var densityRaw: String = "moderate"
+
+    private var density: SuggestionDensity {
+        get { SuggestionDensity(rawValue: densityRaw) ?? .moderate }
+        set { densityRaw = newValue.rawValue }
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text("Suggestion defaults")
+                .font(.headline)
+            Text("Profile defines defaults. Session-specific direction (tone, rhyme groups, intent) is set on the Model G control surface (or Model G Core when enabled) when you suggest lines.")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+            VStack(alignment: .leading, spacing: 12) {
+                HStack {
+                    Text("Default line count")
+                        .font(.subheadline)
+                    Spacer()
+                    Picker("", selection: $defaultLineCount) {
+                        Text("2").tag(2)
+                        Text("4").tag(4)
+                    }
+                    .pickerStyle(.segmented)
+                    .frame(maxWidth: 120)
+                }
+                Toggle("Safe language level", isOn: $safeLanguage)
+                    .font(.subheadline)
+                HStack {
+                    Text("Density")
+                        .font(.subheadline)
+                    Spacer()
+                    Picker("", selection: Binding(get: { density }, set: { newValue in
+                        UserDefaults.standard.set(newValue.rawValue, forKey: "suggestion_density")
+                    })) {
+                        Text("Minimal").tag(SuggestionDensity.minimal)
+                        Text("Moderate").tag(SuggestionDensity.moderate)
+                        Text("Full").tag(SuggestionDensity.full)
+                    }
+                    .pickerStyle(.menu)
+                    .frame(maxWidth: 140)
+                }
+            }
+            .padding(12)
+            .background(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(.ultraThinMaterial)
+            )
+        }
+    }
+}
+
+enum SuggestionDensity: String, CaseIterable {
+    case minimal
+    case moderate
+    case full
+}
+
 // MARK: - PAGE 1.1 Profile Entry Point (Static UI + Editable Fields, No Persistence)
 
 struct ProfilePopoverView: View {
@@ -37,7 +102,6 @@ struct ProfilePopoverView: View {
     // @StateObject private var accountManager = AccountManager.shared
     @State private var selectedItem: PhotosPickerItem?
     @State private var avatarImage: Image?
-    @State private var showModelPreferences: Bool = false
     @State private var showPersonalizationSheet: Bool = false
     @State private var showPaywall: Bool = false
     @State private var paywallFeature: String = "Premium Features"
@@ -45,6 +109,7 @@ struct ProfilePopoverView: View {
     @State private var showCouponRedemption: Bool = false
     @State private var showSignIn: Bool = false
     @State private var showSignUp: Bool = false
+    @State private var showModelPreferences: Bool = false
 
     @State private var name: String
     @State private var email: String
@@ -418,68 +483,41 @@ struct ProfilePopoverView: View {
                 Text("API Settings")
                     .font(.headline)
                 
-                Text("Enter your API key to enable AI-powered features. You can find your API key at platform.openai.com/api-keys for OpenAI, or in the Google Cloud Console for Google AI services.")
+                Text("Enter your API keys to enable AI-powered features. OpenAI API key is required for AI suggestions. Genius API key is optional and improves rhyme ranking by accessing song lyrics data.")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
                 
-                profileSecureField(
-                    label: "OpenAI API Key",
-                    text: Binding(
-                        get: { KeychainHelper.shared.getAPIKey() ?? "" },
-                        set: { newValue in
-                            if !newValue.isEmpty {
-                                try? KeychainHelper.shared.saveAPIKey(newValue)
-                            } else {
-                                try? KeychainHelper.shared.deleteAPIKey()
-                            }
-                        }
-                    ),
-                    placeholder: "sk-...",
-                    helperText: "Get your key from platform.openai.com/api-keys"
+                APIKeyField(
+                    label: "OpenAI or Gemini API Key",
+                    placeholder: "sk-…  or  AIza…",
+                    helperText: "Required for AI suggestions. Paste an OpenAI (sk-…) or Gemini (AIza…) key — Model G auto-detects which. Tap Test to verify it.",
+                    detectProvider: true,
+                    load: { KeychainHelper.shared.getAPIKey() ?? "" },
+                    save: { v in
+                        if v.isEmpty { try? KeychainHelper.shared.deleteAPIKey() }
+                        else { try? KeychainHelper.shared.saveAPIKey(v) }
+                    }
+                )
+
+                Divider().opacity(0.15)
+
+                APIKeyField(
+                    label: "Genius API Key (Optional)",
+                    placeholder: "Enter Genius API key",
+                    helperText: "Improves rhyme suggestions by accessing song lyrics data",
+                    fixedGetKeyURL: URL(string: "https://genius.com/api-clients"),
+                    load: { KeychainHelper.shared.getGeniusAPIKey() ?? "" },
+                    save: { v in
+                        if v.isEmpty { try? KeychainHelper.shared.deleteGeniusAPIKey() }
+                        else { try? KeychainHelper.shared.saveGeniusAPIKey(v) }
+                    }
                 )
             }
 
             Divider().opacity(0.15)
 
-            VStack(alignment: .leading, spacing: 14) {
-                Text("Model Preferences")
-                    .font(.headline)
-                
-                Text("Configure Model G and Model Y to customize how AI suggestions are generated. Model G provides creative and artistic suggestions, while Model Y offers more technical and structured outputs. Adjust settings to match your writing style.")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .fixedSize(horizontal: false, vertical: true)
-                
-                Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    showModelPreferences = true
-                } label: {
-                    HStack {
-                        Label("Configure Model G & Model Y", systemImage: "slider.horizontal.3")
-                            .font(.body)
-                            .foregroundStyle(.primary)
-                        
-                        Spacer()
-                        
-                        Image(systemName: "chevron.right")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(.ultraThinMaterial)
-                    )
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Configure Model G and Model Y")
-                .accessibilityHint("Opens settings to configure AI model preferences for suggestions")
-            }
-            .sheet(isPresented: $showModelPreferences) {
-                ModelPreferencesView()
-            }
+            SuggestionDefaultsSection()
             .sheet(isPresented: $showPaywall) {
                 PaywallView(
                     featureName: paywallFeature,
@@ -802,6 +840,37 @@ struct ProfilePopoverView: View {
                     .font(.headline)
                 
                 PreferencesInfoView()
+                
+                // Signal Layer Advanced Mode Toggle
+                SignalLayerAdvancedModeToggle()
+                
+                // Model Preferences (Model G Core toggle, Model G/Y settings)
+                Button {
+                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    showModelPreferences = true
+                } label: {
+                    HStack {
+                        Label("Model Preferences", systemImage: "brain.head.profile")
+                            .font(.body)
+                            .foregroundStyle(.primary)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .fill(.ultraThinMaterial)
+                    )
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Model Preferences")
+                .accessibilityHint("Customize Model G and Model Y, enable Model G Core v1.0")
+            }
+            .sheet(isPresented: $showModelPreferences) {
+                ModelPreferencesView()
             }
 
             Divider().opacity(0.15)
@@ -1038,6 +1107,40 @@ struct PreferencesInfoView: View {
                         .foregroundStyle(.primary)
                 }
             }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(.ultraThinMaterial)
+        )
+    }
+}
+
+// MARK: - Signal Layer Advanced Mode Toggle
+
+struct SignalLayerAdvancedModeToggle: View {
+    @AppStorage("signal_advanced_mode_enabled") private var isAdvancedModeEnabled: Bool = false
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text("Signal Layer Advanced Mode")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                
+                Spacer()
+                
+                Toggle("", isOn: $isAdvancedModeEnabled)
+                    .labelsHidden()
+                    .onChange(of: isAdvancedModeEnabled) { _, newValue in
+                        SignalAdvancedExposure.shared.setAdvancedModeEnabled(newValue)
+                    }
+            }
+            
+            Text("Show Signal Mode, Axes, and technical details in suggestion cards")
+                .font(.caption2)
+                .foregroundStyle(.tertiary)
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
