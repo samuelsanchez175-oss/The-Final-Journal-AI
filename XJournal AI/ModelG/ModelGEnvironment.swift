@@ -76,6 +76,11 @@ struct GenerationContext {
     var signalAxes: SignalAxes? = nil
     /// Detected theme + jargon palette + emotional tone + few-shot example for this verse.
     var themeContext: ThemeContext? = nil
+    /// Entry musical metadata (BPM/key/scale) — auto-scales the cadence target & biases mood.
+    /// Nil when the entry has none. Trailing defaults keep the memberwise init back-compatible.
+    var musicalBPM: Int? = nil
+    var musicalKey: String? = nil
+    var musicalScale: String? = nil
 }
 
 /// Compute Signal Layer axes (exposure / social action / register / audience) from the

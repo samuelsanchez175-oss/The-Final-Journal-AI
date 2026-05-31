@@ -29,7 +29,10 @@ class ModelGCoreCoordinatorV3 {
         audioURL: URL?,
         styleOverride: StyleProfile? = nil,
         directedParams: DirectedGenerationParams? = nil,
-        transcriptionRhythmMapData: Data? = nil
+        transcriptionRhythmMapData: Data? = nil,
+        bpm: Int? = nil,
+        musicalKey: String? = nil,
+        musicalScale: String? = nil
     ) async throws -> GeneratedRecord {
         riskManager.reset()
 
@@ -55,7 +58,8 @@ class ModelGCoreCoordinatorV3 {
         )
         let baseContext = makeContext(
             intent: intent, beat: beatFingerprint, style: styleProfile, directedParams: directedParams,
-            luxury: luxuryLayer, barIndex: 0, existingBars: [], signalAxes: signalAxes, themeContext: themeContext
+            luxury: luxuryLayer, barIndex: 0, existingBars: [], signalAxes: signalAxes, themeContext: themeContext,
+            bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale
         )
 
         // Step 1 — plan the verse (1 call).
@@ -87,7 +91,8 @@ class ModelGCoreCoordinatorV3 {
                 let ctx = makeContext(
                     intent: intent, beat: beatFingerprint, style: styleProfile, directedParams: directedParams,
                     luxury: luxuryLayer, barIndex: i, existingBars: Array(usable.prefix(i)),
-                    signalAxes: signalAxes, themeContext: themeContext
+                    signalAxes: signalAxes, themeContext: themeContext,
+                    bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale
                 )
                 total += scoringEngine.evaluateBar(bar, context: ctx).totalScore
             }
@@ -136,14 +141,25 @@ class ModelGCoreCoordinatorV3 {
     private func makeContext(
         intent: GenerationIntent, beat: BeatFingerprint?, style: StyleProfile,
         directedParams: DirectedGenerationParams?, luxury: LuxuryLayer?, barIndex: Int,
-        existingBars: [String], signalAxes: SignalAxes?, themeContext: ThemeContext?
+        existingBars: [String], signalAxes: SignalAxes?, themeContext: ThemeContext?,
+        bpm: Int? = nil, musicalKey: String? = nil, musicalScale: String? = nil
     ) -> GenerationContext {
         GenerationContext(
             intent: intent, beatFingerprint: beat, styleProfile: style, directedParams: directedParams,
-            luxuryLayer: luxury, userTasteVector: .neutral, syllableTarget: defaultSyllableTarget,
+            luxuryLayer: luxury, userTasteVector: .neutral,
+            syllableTarget: Self.tempoSyllableTarget(bpm: bpm) ?? defaultSyllableTarget,
             barIndex: barIndex, isHook: false, existingBars: existingBars, riskIndex: riskManager.riskIndex,
             flowDNAFeatures: nil, rhythmMap: nil, perBarSyllableTargets: nil,
-            signalAxes: signalAxes, themeContext: themeContext
+            signalAxes: signalAxes, themeContext: themeContext,
+            musicalBPM: bpm, musicalKey: musicalKey, musicalScale: musicalScale
         )
+    }
+
+    /// Tempo → syllables/bar (heuristic, centered on the corpus norm ~9–10 near 110 BPM; slower
+    /// fits more syllables, faster fewer). Clamped to a musical range. Nil when no BPM is set.
+    static func tempoSyllableTarget(bpm: Int?) -> Int? {
+        guard let bpm = bpm, bpm > 0 else { return nil }
+        let raw = 9.5 + (110.0 - Double(bpm)) * 0.035
+        return min(13, max(7, Int(raw.rounded())))
     }
 }

@@ -492,7 +492,10 @@ class RapSuggestionAPI {
                     audioURL: audioURL,
                     styleOverride: styleOverride,
                     directedParams: directedParams,
-                    transcriptionRhythmMapData: transcriptionRhythmMapData
+                    transcriptionRhythmMapData: transcriptionRhythmMapData,
+                    bpm: metrics.bpm,
+                    musicalKey: metrics.key,
+                    musicalScale: metrics.scale
                 )
             }
             if useV2 {

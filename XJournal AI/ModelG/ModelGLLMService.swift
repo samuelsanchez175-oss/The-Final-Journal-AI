@@ -177,14 +177,18 @@ class ModelGLLMService {
         let palette = LexiconStore.shared.referencePalette()
         let referencesBlock = palette.isEmpty ? "" :
             "\nSpecific references you MAY draw on (pick 1-3 that genuinely fit the feeling; never force, never list them): \(palette.joined(separator: ", "))."
+        let beatBlock = beatDirective(context)
+        let syllRule = context.musicalBPM != nil
+            ? "around \(context.syllableTarget) syllables per bar — sit in the pocket at this tempo"
+            : "8-10 syllables MAX"
         let user = """
         Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
         Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
         \(plan.promptText)
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
-        \(arcShape)\(themeBlock)\(voiceBlock)
+        \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
         \(inspiration)\(referencesBlock)
-        Rules (strict): each bar SHORT and punchy, 8-10 syllables MAX (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.
+        Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}
         """
         let raw = try await postChat(
@@ -263,6 +267,33 @@ class ModelGLLMService {
         case .mixed:
             return "balance explicit and subtle signaling"
         }
+    }
+
+    /// Beat metadata → cadence feel + mood lean. Empty when the entry has no BPM/key.
+    /// Maps the entry's BPM (tempo feel) and musical key/scale (major→bright, minor/modes→dark)
+    /// onto the corpus's 8-tone mood palette so the verse matches the track.
+    private func beatDirective(_ context: GenerationContext) -> String {
+        var parts: [String] = []
+        if let bpm = context.musicalBPM, bpm > 0 {
+            let feel = bpm >= 140 ? "fast — short, clipped bars, double-time pockets"
+                     : (bpm <= 85 ? "slow — more room per bar, stretch the melody"
+                                  : "mid-tempo — steady pocket")
+            parts.append("\(bpm) BPM (\(feel))")
+        }
+        if let key = context.musicalKey, !key.isEmpty {
+            let scale = context.musicalScale ?? ""
+            if scale.isEmpty {
+                parts.append("key \(key)")
+            } else {
+                let bright = ["major", "lydian", "ionian", "mixolydian"]
+                    .contains { scale.lowercased().contains($0) }
+                let mood = bright
+                    ? "brighter, assured moods (confident, luxurious, celebratory)"
+                    : "darker, tense moods (gritty, paranoid, aggressive, detached)"
+                parts.append("key \(key) \(scale) → lean \(mood)")
+            }
+        }
+        return parts.isEmpty ? "" : "\nBeat: " + parts.joined(separator: "; ") + "."
     }
 
     /// Inject the detected theme: name, emotional tone, jargon palette, and a few-shot anchor.
