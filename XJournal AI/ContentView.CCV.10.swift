@@ -727,10 +727,10 @@ struct JournalLibraryView: View {
             .padding(.horizontal, 16)
             .frame(height: 44)
             .background(
-                Rectangle()
+                Capsule()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Rectangle().stroke(isSearchFocused ? Momentum.accent : Momentum.hairline,
-                                                lineWidth: Momentum.lineThin))
+                    .overlay(Capsule().stroke(isSearchFocused ? Momentum.accent : Momentum.hairline,
+                                              lineWidth: Momentum.lineThin))
             )
             
             // Quick Compose Button (iOS 26 Style - Integrated)
@@ -742,7 +742,7 @@ struct JournalLibraryView: View {
                     .font(.system(size: 18, weight: .semibold))
                     .foregroundStyle(Momentum.onInverse)
                     .frame(width: 44, height: 44)
-                    .background(Rectangle().fill(Momentum.inverseSurface))
+                    .background(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous).fill(Momentum.inverseSurface))
             }
             .buttonStyle(.plain)
         }
@@ -850,9 +850,9 @@ struct JournalLibraryView: View {
             .padding(.vertical, 8)
             .foregroundStyle(.primary)
             .background(
-                Rectangle()
+                Capsule()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Rectangle().stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
+                    .overlay(Capsule().stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
             )
         }
         .buttonStyle(PlainButtonStyle())
@@ -923,10 +923,10 @@ struct JournalLibraryView: View {
             .padding(.vertical, 8)
             .foregroundStyle(selectedFilter == filter ? Momentum.accent : Momentum.contentSecondary)
             .background(
-                Rectangle()
+                Capsule()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Rectangle().stroke(selectedFilter == filter ? Momentum.accent : Momentum.hairline,
-                                                lineWidth: Momentum.lineThin))
+                    .overlay(Capsule().stroke(selectedFilter == filter ? Momentum.accent : Momentum.hairline,
+                                              lineWidth: Momentum.lineThin))
             )
         }
         .buttonStyle(PlainButtonStyle())

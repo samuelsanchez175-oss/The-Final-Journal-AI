@@ -17,7 +17,7 @@ Reskin **the entire app** from the current dark "Silk Boys" glass aesthetic to a
 - Coverage: **entire app**.
 - Accent: **coral `#FF8C66`** (reuses the existing `RhymeColorPalette` coral).
 - Dark mode: **light default now, editorial-dark deferred** to a later pass (clean seam left for it).
-- **Signature elements (must-keep, Samuel 2026-05-31):** the **line work** (thin/thick rules + line-art circles), the **soft coral atmosphere glow**, and the **square buttons** (sharp corners — never rounded/pill). These constrain every component below.
+- **Signature elements (must-keep, Samuel 2026-05-31):** the **line work** (thin/thick rules + line-art circles), the **soft coral atmosphere glow**, and **soft / pill buttons** (rounded edges — *updated 2026-05-31: the first square pass read too sharp*). These constrain every component below.
 
 **Critical framing (Samuel, 2026-05-31):** The HTML files are **style references, not screens to copy literally.** We do **not** import their habit-tracker *features* (day streaks, friend leaderboards, habit checkboxes, nudges). We extract the **visual language + reusable component patterns**, compare them to the app's **current** structure, and map each style pattern onto what already exists. Where a mockup concept has no analog in this app, we borrow the visual treatment only — or skip it.
 
@@ -50,7 +50,7 @@ Reskin **the entire app** from the current dark "Silk Boys" glass aesthetic to a
 
 The 32 patterns below are **reusable SwiftUI views/styles**, not features. New code lives in a `Momentum/` group; tokens in `MomentumDesignSystem.swift`. Ordered by build dependency (foundation first).
 
-**Signature elements (non-negotiable — Samuel):** every component must preserve (1) **line work** — `lineThin`/`lineThick` rules + the thin-bordered line-art circles; (2) the **soft coral atmosphere glow** (`AtmosphereGlow`); (3) **square buttons** — sharp corners, thin or thick borders, fill-on-press; never rounded or pill-shaped.
+**Signature elements (non-negotiable — Samuel):** every component must preserve (1) **line work** — `lineThin`/`lineThick` rules + the thin-bordered line-art circles; (2) the **soft coral atmosphere glow** (`AtmosphereGlow`); (3) **soft / pill buttons** — rounded edges (`Momentum.corner` ≈14; chips = `Capsule` pill), border, fill-on-press *(updated 2026-05-31, were too square)*.
 
 ### Design tokens
 | Token | Value | Replaces |
@@ -62,7 +62,7 @@ The 32 patterns below are **reusable SwiftUI views/styles**, not features. New c
 | `inverseSurface` / `onInverse` | `#1C1C1E` / `#F8F8F8` | — (emphasis banner, primary button) |
 | `lineThick` / `lineThin` | 3px / 1px | heavy shadows + dividers |
 | `edge` | 24px | ad-hoc paddings |
-| `corners` | **square / sharp (0–2px)** for cards, action buttons, toggles. *Rounded exceptions:* metadata pills (BPM/Key/Scale), counters, key-grid circles, and frosted floating chrome — see **Surface rules**. 44pt targets via size | 20pt glass radius |
+| `corners` | **soft rounded** — buttons/cards use `Momentum.corner` ≈14; chips, pills & search bar = `Capsule`. Line work (1/3px rules) stays crisp. *(Updated 2026-05-31: buttons were too square.)* 44pt targets via size | 20pt glass radius |
 | Type: `heroNumeral` (≈64–80pt, w700, tight) · `sectionTitle` (12pt UPPERCASE +tracking, secondary) · `cardTitle` (18pt w600) · `bodyContent` (**≥16pt**) · `metadata` (13pt) | | sub-16pt captions for content |
 
 ### Components (build layers)
@@ -73,7 +73,7 @@ The 32 patterns below are **reusable SwiftUI views/styles**, not features. New c
 **Layer 4 — empty/empathy:** `19. HeroGraphic` (concentric circles + faded numeral) · `20. EmpathyCopyBlock` (headline + sub) · `21. PrimaryActionButton` (full-width, trailing icon) · `22. SecondaryLink`.
 **Signature additions (apply across layers):** `23. SelectionToggle` (square check — sharp, thin/thick border, fills dark + checkmark on select) · `24. CircleLineGraphic` (thin-border concentric line-art circles; spin/sink/pop animation; the core of `HeroGraphic` & celebration) · `25. SuggestionGrid` (multi-select square-toggle cards + `SectionHeader` + footer `PrimaryActionButton` + coral `CounterPill`).
 
-> All buttons (`PrimaryActionButton`, `PillButton`, `FAB`, `SelectionToggle`) are **square**. The coral glow + line-art circles are the recurring ambient motif.
+> All buttons (`PrimaryActionButton`, `PillButton`, `FAB`, `SelectionToggle`) are **soft-cornered / pill** (`Momentum.corner` ≈14; chips = `Capsule`). The coral glow + line-art circles are the recurring ambient motif.
 
 ### Surface rules (glass — "chrome frosted, content flat", Samuel 2026-05-31)
 The app-specific mockups keep glass in specific places. Canonical 3-way split:
@@ -184,7 +184,7 @@ Each phase is independently shippable and screenshot-verified (light mode).
 | 2 hard-coded-dark screens | Explicit fixes in P3 (achievements) & P5 (splash). |
 | Large mechanical sweep (270 `.secondary` / 246 caption) | Token aliases make it find-replace-able, screen by screen; not all at once. |
 | 53k-LOC scale | Strict phasing — each phase ships + verifies independently. |
-| SwiftUI defaults creep in rounded corners / materials | Enforce **square corners + flat surfaces** in the design system; audit for stray `RoundedRectangle`(large radius)/`.cornerRadius`/`.ultraThinMaterial`. Meet 44pt targets via size. |
+| Inconsistent corner radii across buttons/cards | Route shapes through `Momentum.corner` (≈14) / `Capsule`; audit stray `.cornerRadius(<other>)` and `.ultraThinMaterial` on content surfaces. Meet 44pt targets via size. |
 | Disturbing locked structure | Reskin is presentation-only; no edits to page map, handlers, or `@State`. |
 
 ---
