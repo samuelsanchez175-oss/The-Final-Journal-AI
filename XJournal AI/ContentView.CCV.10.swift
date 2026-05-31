@@ -727,47 +727,10 @@ struct JournalLibraryView: View {
             .padding(.horizontal, 16)
             .frame(height: 44)
             .background(
-                Capsule(style: .continuous)
-                    .fill(.ultraThinMaterial)
-                    .overlay(
-                        // Enhanced glassmorphism effect
-                        Capsule(style: .continuous)
-                            .fill(
-                                LinearGradient(
-                                    colors: [
-                                        Color.white.opacity(colorScheme == .dark ? 0.15 : 0.25),
-                                        Color.white.opacity(colorScheme == .dark ? 0.12 : 0.20),
-                                        Color.white.opacity(colorScheme == .dark ? 0.15 : 0.25)
-                                    ],
-                                    startPoint: .top,
-                                    endPoint: .bottom
-                                )
-                            )
-                            .blendMode(.overlay)
-                            .clipShape(Capsule(style: .continuous))
-                    )
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening * 1.5 : 0.05))
-                    .overlay(
-                        Capsule(style: .continuous)
-                            .strokeBorder(
-                                LinearGradient(
-                                    colors: [
-                                        Color.white.opacity(isSearchFocused ? 0.25 : 0.12),
-                                        Color.white.opacity(isSearchFocused ? 0.20 : 0.10),
-                                        Color.white.opacity(isSearchFocused ? 0.25 : 0.12)
-                                    ],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                ),
-                                lineWidth: isSearchFocused ? 1.5 : 0.5
-                            )
-                    )
-                    .shadow(
-                        color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1),
-                        radius: 8,
-                        x: 0,
-                        y: 2
-                    )
+                Rectangle()
+                    .fill(Momentum.surfaceElevated)
+                    .overlay(Rectangle().stroke(isSearchFocused ? Momentum.accent : Momentum.hairline,
+                                                lineWidth: Momentum.lineThin))
             )
             
             // Quick Compose Button (iOS 26 Style - Integrated)
@@ -777,51 +740,9 @@ struct JournalLibraryView: View {
             }) {
                 Image(systemName: "square.and.pencil")
                     .font(.system(size: 18, weight: .semibold))
-                    .foregroundStyle(.primary)
+                    .foregroundStyle(Momentum.onInverse)
                     .frame(width: 44, height: 44)
-                    .background(
-                        Circle()
-                            .fill(.ultraThinMaterial)
-                            .overlay(
-                                // Enhanced glassmorphism effect
-                                Circle()
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [
-                                                Color.white.opacity(colorScheme == .dark ? 0.2 : 0.3),
-                                                Color.white.opacity(colorScheme == .dark ? 0.15 : 0.22),
-                                                Color.white.opacity(colorScheme == .dark ? 0.2 : 0.3)
-                                            ],
-                                            startPoint: .topLeading,
-                                            endPoint: .bottomTrailing
-                                        )
-                                    )
-                                    .blendMode(.overlay)
-                                    .clipShape(Circle())
-                            )
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening * 1.5 : 0.05))
-                            .overlay(
-                                Circle()
-                                    .strokeBorder(
-                                        LinearGradient(
-                                            colors: [
-                                                Color.white.opacity(0.2),
-                                                Color.white.opacity(0.15),
-                                                Color.white.opacity(0.2)
-                                            ],
-                                            startPoint: .topLeading,
-                                            endPoint: .bottomTrailing
-                                        ),
-                                        lineWidth: 0.5
-                                    )
-                            )
-                            .shadow(
-                                color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1),
-                                radius: 8,
-                                x: 0,
-                                y: 2
-                            )
-                    )
+                    .background(Rectangle().fill(Momentum.inverseSurface))
             }
             .buttonStyle(.plain)
         }
