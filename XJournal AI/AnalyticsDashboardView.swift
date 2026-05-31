@@ -516,6 +516,7 @@ struct AnalyticsDashboardView: View {
     enum AnalyticsTab: String, CaseIterable {
         case apiDebug = "API Debug"
         case modelGScores = "Lyric Scores"
+        case rewards = "Reward 3D"
         case overview = "Overview"
         case errors = "Errors"
         case network = "Network"
@@ -856,6 +857,19 @@ struct AnalyticsDashboardView: View {
                             #endif
                         case .modelGScores:
                             VerseLedgerTrendView()
+                        case .rewards:
+                            VStack(spacing: 12) {
+                                Text("3D reward (prototype)").font(.headline)
+                                Reward3DView()
+                                    .frame(height: 300)
+                                    .background(
+                                        RadialGradient(colors: [Color(white: 0.16), .black],
+                                                       center: .center, startRadius: 30, endRadius: 320)
+                                    )
+                                    .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                                Text("Spins automatically · drag to orbit · tilt your phone to sweep the light (device only). Swap in a .usdz from SAM 3D later.")
+                                    .font(.caption).foregroundStyle(.secondary).multilineTextAlignment(.center)
+                            }
                         case .network:
                             networkPerformanceSection
                         case .tokens:
