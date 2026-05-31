@@ -32,7 +32,7 @@ struct StyleTransferSheet: View {
                     
                     Text("Rewrite your lyrics in the style of any artist")
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .multilineTextAlignment(.center)
                 }
                 .padding(.top, 20)
@@ -47,7 +47,7 @@ struct StyleTransferSheet: View {
                                 .scaleEffect(0.8)
                             Text("Analyzing text...")
                                 .font(.caption)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                         .padding(.horizontal)
                     }
@@ -215,14 +215,15 @@ struct StyleTransferSheet: View {
         isAnalyzingAxes = true
         
         Task {
-            // Analyze text to get signal profile
-            let profile = SignalIngest.shared.analyzeBehavior(text: currentText)
+            // Analyze text to get signal metrics and profile
+            let metrics = SignalIngest.shared.analyzeBehavior(text: currentText)
+            let profile = SignalIngest.shared.extractSignalProfile(text: currentText)
             
-            // Resolve signal mode from profile
-            let mode = SignalModeResolver.shared.resolveMode(from: profile)
+            // Resolve signal mode from metrics
+            let mode = SignalModeResolver.shared.resolveMode(from: metrics)
             
             // Calculate signal axes
-            let axes = SignalAxes.calibrateAxes(profile: profile, mode: mode)
+            let axes = SignalAxes.calibrateAxes(metrics: metrics, mode: mode)
             
             await MainActor.run {
                 self.signalProfile = profile
@@ -299,7 +300,7 @@ struct StyleTransferSheet: View {
                     .foregroundStyle(.purple)
                 Text("These characteristics will be preserved in the style transfer")
                     .font(.caption2)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
         }
     }
@@ -330,7 +331,7 @@ struct StyleTransferSheet: View {
             
             Text(description)
                 .font(.caption2)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .padding(.leading, 32)
         }
     }

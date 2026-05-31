@@ -17,6 +17,7 @@ import AVFoundation
 struct InlineAudioCardView: View {
     @Bindable var item: Item
     let onTap: () -> Void
+    let onTranscribe: (() -> Void)?
     let onAddTranscriptToNote: (() -> Void)?
     
     @StateObject private var audioPlayer = AudioPlayerManager()
@@ -30,6 +31,7 @@ struct InlineAudioCardView: View {
     @State private var seekTooltipTime: TimeInterval = 0
     @State private var lastTapTime: Date?
     @State private var isExpanded: Bool = false
+    @State private var loadTask: Task<Void, Never>?
     @Namespace private var audioNamespace
     
     @Environment(\.colorScheme) private var colorScheme
@@ -45,16 +47,33 @@ struct InlineAudioCardView: View {
         return item.transcription != nil && !item.transcription!.isEmpty
     }
     
+    /// Display name without extension (e.g. .mp3). Full name shown; truncation handled by layout.
     private var displayFilename: String {
         guard let audioPath = item.audioPath else { return "Audio" }
         let filename = audioPath.components(separatedBy: "/").last ?? "Audio"
-        // Smart truncation: show beginning and end if too long
-        if filename.count > 30 {
-            let start = String(filename.prefix(15))
-            let end = String(filename.suffix(12))
-            return "\(start)...\(end)"
+        // Remove common audio extensions
+        let lower = filename.lowercased()
+        for ext in [".mp3", ".m4a", ".wav", ".aac", ".caf", ".m4r"] {
+            if lower.hasSuffix(ext) {
+                return String(filename.dropLast(ext.count))
+            }
         }
         return filename
+    }
+    
+    private var transcriptionPreview: String {
+        if let transcript = item.transcription, !transcript.isEmpty {
+            // Show first 100 characters as preview
+            return String(transcript.prefix(100)) + (transcript.count > 100 ? "..." : "")
+        }
+        return ""
+    }
+    
+    private var formattedDuration: String {
+        guard let duration = item.audioDuration else { return "" }
+        let minutes = Int(duration) / 60
+        let seconds = Int(duration) % 60
+        return String(format: "%d:%02d", minutes, seconds)
     }
     
     var body: some View {
@@ -64,14 +83,8 @@ struct InlineAudioCardView: View {
                 errorView(error: error)
                     .padding(16)
             } else {
-                // Loading state
-                if audioPlayer.isLoading {
-                    loadingView
-                        .padding(16)
-                } else {
-                    // Normal content with expansion
-                    expandableContentView
-                }
+                // Always show content, even when loading (play button should be visible)
+                expandableContentView
             }
         }
         .background(
@@ -86,13 +99,24 @@ struct InlineAudioCardView: View {
         )
         .matchedGeometryEffect(id: "audio_card_\(item.id.hashValue)", in: audioNamespace)
         .onAppear {
-            if let audioPath = item.audioPath {
-                audioPlayer.loadAudio(from: audioPath)
-                calculateFileSize(audioPath: audioPath)
-            }
+            // Use stored duration immediately if available (no loading needed)
             if let duration = item.audioDuration {
                 self.duration = duration
+            } else if let audioPath = item.audioPath {
+                // Pre-load duration metadata (lightweight, doesn't create full player)
+                // This makes playback start instantly when user taps play
+                Task {
+                    await preloadDurationMetadata(audioPath: audioPath)
+                }
             }
+            
+            // Don't load full audio player automatically - only load when user interacts (play button)
+            // This significantly improves app load time when multiple audio items are present
+        }
+        .onDisappear {
+            // Cancel loading if view disappears quickly
+            loadTask?.cancel()
+            loadTask = nil
         }
         .onReceive(audioPlayer.$isPlaying) { playing in
             withAnimation(.easeInOut(duration: 0.2)) {
@@ -120,9 +144,10 @@ struct InlineAudioCardView: View {
     
     private var expandableContentView: some View {
         VStack(alignment: .leading, spacing: 0) {
-            // Compact header - always visible
+            // Compact header - always visible (more compact padding)
             compactHeaderView
-                .padding(16)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 10)
             
             // Expanded transcript section
             if isExpanded, let transcript = item.transcription, !transcript.isEmpty {
@@ -135,149 +160,64 @@ struct InlineAudioCardView: View {
         }
     }
     
-    // MARK: - Compact Header View
+    // MARK: - Compact Header View (Wider, More Compact Design)
     
     private var compactHeaderView: some View {
-        VStack(spacing: 0) {
-            // Top row: Skip backward + Play button + Skip forward + Filename + Time + Expand/Collapse + Menu
-            HStack(spacing: 12) {
-                // Skip backward button
-                Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    audioPlayer.skipBackward(seconds: 15)
-                } label: {
-                    Image(systemName: "gobackward.15")
-                        .font(.system(size: 20))
-                        .foregroundStyle(.secondary)
-                        .frame(width: 32, height: 32)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Skip backward 15 seconds")
-                
-                // Play button with animation
-                Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    if isPlaying {
-                        audioPlayer.pause()
-                    } else {
-                        audioPlayer.play()
-                    }
-                } label: {
-                    Image(systemName: isPlaying ? "pause.circle.fill" : "play.circle.fill")
-                        .font(.system(size: 32))
-                        .foregroundStyle(.blue)
-                        .scaleEffect(isPlaying ? 1.05 : 1.0)
-                        .animation(.easeInOut(duration: 0.2), value: isPlaying)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel(isPlaying ? "Pause audio" : "Play audio")
-                
-                // Skip forward button
-                Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    audioPlayer.skipForward(seconds: 15)
-                } label: {
-                    Image(systemName: "goforward.15")
-                        .font(.system(size: 20))
-                        .foregroundStyle(.secondary)
-                        .frame(width: 32, height: 32)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Skip forward 15 seconds")
-                
-                // Audio info
-                VStack(alignment: .leading, spacing: 4) {
-                    if item.audioPath != nil {
-                        Text(displayFilename)
-                            .font(.subheadline.weight(.medium))
-                            .foregroundStyle(.primary)
-                            .lineLimit(1)
-                    }
+        VStack(alignment: .leading, spacing: 6) {
+            // Top row: Audio name + Duration (left), Insert to Body (top right when transcription exists)
+            HStack(alignment: .top, spacing: 8) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(displayFilename)
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(.primary)
+                        .lineLimit(1)
+                        .truncationMode(.tail)
                     
-                    // Metadata row: Recording date + File size
-                    HStack(spacing: 6) {
-                        let recordingDate = item.modifiedDate ?? item.timestamp
-                        Text(isRecordedAudio ? "Recorded \(formatDate(recordingDate))" : "Imported \(formatDate(recordingDate))")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                        
-                        if fileSize > 0 {
-                            if item.modifiedDate != nil {
-                                Text("•")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
-                            Text(formatFileSize(fileSize))
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                    
-                    // Time display
-                    HStack(spacing: 8) {
-                        Text(formatTime(currentTime))
-                            .font(.caption2.monospacedDigit())
-                            .foregroundStyle(.secondary)
-                        
-                        if let duration = item.audioDuration {
-                            Text("•")
-                                .font(.caption2)
-                                .foregroundStyle(.secondary)
-                            Text(formatTime(duration))
-                                .font(.caption2.monospacedDigit())
-                                .foregroundStyle(.secondary)
-                        }
+                    if !formattedDuration.isEmpty {
+                        Text(formattedDuration)
+                            .font(.caption2)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                 }
                 
-                Spacer()
+                Spacer(minLength: 8)
                 
-                // Expand/Collapse button (only show if transcript exists)
-                if let transcript = item.transcription, !transcript.isEmpty {
-                    Button {
-                        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                            isExpanded.toggle()
-                        }
+                // Insert to Body at top right when transcription exists
+                if let transcription = item.transcription, !transcription.isEmpty {
+                    Button(action: {
                         UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                    } label: {
-                        Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
-                            .font(.system(size: 14, weight: .semibold))
-                            .foregroundStyle(.secondary)
-                            .frame(width: 32, height: 32)
+                        handleAddTranscriptToNote()
+                    }) {
+                        Text("Insert to Body")
+                            .font(.caption.weight(.medium))
+                            .foregroundStyle(.yellow)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 6)
                             .background(
-                                Circle()
-                                    .fill(.ultraThinMaterial)
-                                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                                Capsule()
+                                    .fill(Color.yellow.opacity(0.15))
+                                    .overlay(
+                                        Capsule()
+                                            .strokeBorder(Color.yellow.opacity(0.4), lineWidth: 1)
+                                    )
                             )
                     }
                     .buttonStyle(.plain)
-                    .accessibilityLabel(isExpanded ? "Collapse transcript" : "Expand transcript")
+                    .fixedSize(horizontal: true, vertical: false)
                 }
-                
-                // Menu button (three dots)
-                Menu {
-                    audioContextMenuItems
-                } label: {
-                    Image(systemName: "ellipsis")
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundStyle(.secondary)
-                        .frame(width: 44, height: 44)
-                        .contentShape(Rectangle())
-                }
-                .accessibilityLabel("Audio options")
             }
             
             // Progress bar with scrubbing
             if duration > 0 {
                 progressBar
-                    .padding(.top, 12)
+                    .padding(.top, 4)
             }
             
             // Seek tooltip (shown during scrubbing)
             if showSeekTooltip {
                 Text(formatTime(seekTooltipTime))
                     .font(.caption2.monospacedDigit())
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                     .padding(.horizontal, 8)
                     .padding(.vertical, 4)
                     .background(
@@ -285,15 +225,101 @@ struct InlineAudioCardView: View {
                             .fill(.ultraThinMaterial)
                             .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
-                    .padding(.top, 8)
+                    .padding(.top, 4)
                     .transition(.opacity.combined(with: .scale))
             }
             
-            // Quick action buttons
-            if hasQuickActions {
-                quickActionButtons
-                    .padding(.top, 12)
+            // Playback controls row: Share (left), Centered scrubbers, Transcribe (right)
+            if duration > 0 {
+                ZStack(alignment: .center) {
+                    HStack {
+                        // Share button (left)
+                        if item.audioPath != nil {
+                            Button(action: {
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                handleShareAudio()
+                            }) {
+                                Image(systemName: "square.and.arrow.up")
+                                    .font(.body)
+                                    .foregroundStyle(.primary)
+                                    .frame(width: 32, height: 32)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                        Spacer()
+                        // Transcribe button (right)
+                        Button(action: {
+                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                            handleTranscribe()
+                        }) {
+                            Text("Transcribe")
+                                .font(.caption.weight(.medium))
+                                .foregroundStyle(.yellow)
+                                .padding(.horizontal, 10)
+                                .padding(.vertical, 6)
+                                .background(
+                                    Capsule()
+                                        .fill(Color.yellow.opacity(0.15))
+                                        .overlay(
+                                            Capsule()
+                                                .strokeBorder(Color.yellow.opacity(0.4), lineWidth: 1)
+                                        )
+                                )
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    // Playback controls centered in the row
+                    playbackControls
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.top, 8)
             }
+        }
+    }
+    
+    // MARK: - Playback Controls (Centered, Icons Only)
+    
+    private var playbackControls: some View {
+        HStack(spacing: 4) {
+            // Skip backward 15s (icon only, no text)
+            Button(action: {
+                print("🔵 Skip backward tapped")
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                handleSkipBackward()
+            }) {
+                Image(systemName: "gobackward.15")
+                    .font(.body)
+                    .foregroundStyle(.blue)
+                    .frame(width: 32, height: 32)
+            }
+            .buttonStyle(.plain)
+            
+            // Play/Pause button
+            Button(action: {
+                print("🔵 Play/Pause tapped")
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                handlePlayPause()
+            }) {
+                Image(systemName: isPlaying ? "pause.circle.fill" : "play.circle.fill")
+                    .font(.title3)
+                    .foregroundStyle(.blue)
+                    .opacity(audioPlayer.isLoading ? 0.5 : 1.0)
+                    .frame(width: 36, height: 36)
+            }
+            .buttonStyle(.plain)
+            
+            // Skip forward 15s (icon only, no text)
+            Button(action: {
+                print("🔵 Skip forward tapped")
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                handleSkipForward()
+            }) {
+                Image(systemName: "goforward.15")
+                    .font(.body)
+                    .foregroundStyle(.blue)
+                    .frame(width: 32, height: 32)
+            }
+            .buttonStyle(.plain)
         }
     }
     
@@ -313,14 +339,14 @@ struct InlineAudioCardView: View {
                     HStack(spacing: 8) {
                         Image(systemName: "doc.text")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         Text("Summary")
                             .font(.subheadline.weight(.medium))
                             .foregroundStyle(.primary)
                         Spacer()
                         Image(systemName: "chevron.right")
                             .font(.caption2)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
@@ -441,7 +467,7 @@ struct InlineAudioCardView: View {
                 .scaleEffect(0.8)
             Text("Loading audio...")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             Spacer()
         }
     }
@@ -458,14 +484,15 @@ struct InlineAudioCardView: View {
                         .foregroundStyle(.primary)
                     Text(error)
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .lineLimit(2)
                 }
                 Spacer()
                 Button {
                     audioPlayer.retry()
                     if let audioPath = item.audioPath {
-                        audioPlayer.loadAudio(from: audioPath)
+                        let title = item.title.isEmpty ? nil : item.title
+                        audioPlayer.loadAudio(from: audioPath, title: title)
                     }
                 } label: {
                     Image(systemName: "arrow.clockwise")
@@ -496,10 +523,10 @@ struct InlineAudioCardView: View {
                     VStack(spacing: 4) {
                         Image(systemName: "square.and.arrow.up")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         Text("Share")
                             .font(.caption2)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .frame(width: 44, height: 44)
                     .contentShape(Rectangle())
@@ -518,10 +545,10 @@ struct InlineAudioCardView: View {
                     VStack(spacing: 4) {
                         Image(systemName: "doc.on.doc")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         Text("Copy")
                             .font(.caption2)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .frame(width: 44, height: 44)
                     .contentShape(Rectangle())
@@ -540,10 +567,10 @@ struct InlineAudioCardView: View {
                     VStack(spacing: 4) {
                         Image(systemName: "doc.text")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         Text("Add")
                             .font(.caption2)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .frame(width: 44, height: 44)
                     .contentShape(Rectangle())
@@ -633,12 +660,31 @@ struct InlineAudioCardView: View {
         guard let audioPath = item.audioPath else { return }
         let url = URL(fileURLWithPath: audioPath)
         
+        // Check if file exists
+        guard FileManager.default.fileExists(atPath: audioPath) else {
+            print("⚠️ InlineAudioCardView: Audio file not found at path: \(audioPath)")
+            return
+        }
+        
         let activityVC = UIActivityViewController(activityItems: [url], applicationActivities: nil)
         
+        // For iPad, we need to set the popover presentation
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let window = windowScene.windows.first,
            let rootVC = window.rootViewController {
-            rootVC.present(activityVC, animated: true)
+            
+            // Configure for iPad
+            if let popover = activityVC.popoverPresentationController {
+                popover.sourceView = window
+                popover.sourceRect = CGRect(x: window.bounds.midX, y: window.bounds.midY, width: 0, height: 0)
+                popover.permittedArrowDirections = []
+            }
+            
+            rootVC.present(activityVC, animated: true) {
+                print("✅ InlineAudioCardView: Share sheet presented")
+            }
+        } else {
+            print("⚠️ InlineAudioCardView: Could not find root view controller for share sheet")
         }
         lightHaptic()
     }
@@ -654,6 +700,84 @@ struct InlineAudioCardView: View {
     }
     
     // MARK: - Helper Functions
+    
+    // MARK: - Audio Loading Helper
+    
+    /// Loads audio only when needed (when user wants to play)
+    /// This implements lazy loading pattern to avoid blocking app startup
+    private func loadAudioIfNeeded() {
+        guard let audioPath = item.audioPath else { return }
+        // Load if player doesn't exist or duration is 0 (not loaded yet)
+        if audioPlayer.duration == 0 || audioPlayer.isLoading {
+            let title = item.title.isEmpty ? nil : item.title
+            audioPlayer.loadAudio(from: audioPath, title: title)
+            calculateFileSize(audioPath: audioPath)
+        }
+    }
+    
+    private func handlePlayPause() {
+        if isPlaying {
+            audioPlayer.pause()
+        } else {
+            // Load audio only when user wants to play (lazy loading)
+            if let audioPath = item.audioPath {
+                if audioPlayer.duration == 0 {
+                    let title = item.title.isEmpty ? nil : item.title
+                    audioPlayer.loadAudio(from: audioPath, title: title)
+                    calculateFileSize(audioPath: audioPath)
+                }
+                // Wait a moment for player to be ready, then play
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    self.audioPlayer.play()
+                }
+            }
+        }
+    }
+    
+    private func handleSkipBackward() {
+        // Ensure audio is loaded before skipping
+        guard let audioPath = item.audioPath else { return }
+        
+        if audioPlayer.duration == 0 {
+            // Load audio first, then skip after a short delay
+            let title = item.title.isEmpty ? nil : item.title
+            audioPlayer.loadAudio(from: audioPath, title: title)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                self.audioPlayer.skipBackward(seconds: 15)
+            }
+        } else {
+            // Audio already loaded, skip immediately
+            audioPlayer.skipBackward(seconds: 15)
+        }
+    }
+    
+    private func handleSkipForward() {
+        // Ensure audio is loaded before skipping
+        guard let audioPath = item.audioPath else { return }
+        
+        if audioPlayer.duration == 0 {
+            // Load audio first, then skip after a short delay
+            let title = item.title.isEmpty ? nil : item.title
+            audioPlayer.loadAudio(from: audioPath, title: title)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                self.audioPlayer.skipForward(seconds: 15)
+            }
+        } else {
+            // Audio already loaded, skip immediately
+            audioPlayer.skipForward(seconds: 15)
+        }
+    }
+    
+    private func handleTranscribe() {
+        // Opens the audio detail view and triggers transcription
+        if let onTranscribe = onTranscribe {
+            onTranscribe()
+        } else {
+            // Fallback to regular tap if onTranscribe not provided
+            onTap()
+        }
+    }
+    
     private func formatTime(_ time: TimeInterval) -> String {
         let minutes = Int(time) / 60
         let seconds = Int(time) % 60
@@ -694,6 +818,42 @@ struct InlineAudioCardView: View {
                     fileSize = size
                 }
             }
+        }
+    }
+    
+    /// Pre-load duration metadata without creating full audio player
+    /// This makes playback start instantly when user taps play
+    private func preloadDurationMetadata(audioPath: String) async {
+        let url = URL(fileURLWithPath: audioPath)
+        let asset = AVURLAsset(url: url)
+        
+        do {
+            if #available(iOS 16.0, *) {
+                let durationValue = try await asset.load(.duration)
+                let durationSeconds = CMTimeGetSeconds(durationValue)
+                await MainActor.run {
+                    self.duration = durationSeconds
+                    // Also update item if it doesn't have duration stored
+                    if item.audioDuration == nil {
+                        item.audioDuration = durationSeconds
+                    }
+                }
+            } else {
+                // For iOS < 16, try synchronous access
+                let durationValue = asset.duration
+                if CMTimeCompare(durationValue, CMTime.zero) != 0 {
+                    let durationSeconds = CMTimeGetSeconds(durationValue)
+                    await MainActor.run {
+                        self.duration = durationSeconds
+                        if item.audioDuration == nil {
+                            item.audioDuration = durationSeconds
+                        }
+                    }
+                }
+            }
+        } catch {
+            // Silently fail - duration will be loaded when audio player is created
+            print("⚠️ Failed to preload duration: \(error.localizedDescription)")
         }
     }
 }

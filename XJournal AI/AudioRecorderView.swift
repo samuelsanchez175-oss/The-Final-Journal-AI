@@ -47,17 +47,54 @@ struct AudioRecorderView: View {
         VStack(spacing: 24) {
             Spacer()
             
-            recordButton
-            
-            timeDisplay
-            
-            if recorder.isRecording {
-                waveformView
+            if isProcessing {
+                processingView
+            } else {
+                recordButton
+                
+                timeDisplay
+                
+                if recorder.isRecording {
+                    waveformView
+                }
             }
             
             Spacer()
             
-            infoText
+            if !isProcessing {
+                infoText
+            }
+            
+            if let error = processingError {
+                VStack(spacing: 8) {
+                    Text("Processing Error")
+                        .font(.headline)
+                        .foregroundStyle(.red)
+                    Text(error)
+                        .font(.caption)
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .multilineTextAlignment(.center)
+                    Button("Dismiss") {
+                        dismiss()
+                    }
+                    .buttonStyle(.bordered)
+                }
+                .padding()
+            }
+        }
+    }
+    
+    private var processingView: some View {
+        VStack(spacing: 16) {
+            ProgressView()
+                .scaleEffect(1.5)
+            Text("Processing audio...")
+                .font(.headline)
+            Text("Getting duration, analyzing (BPM/Key), and transcribing")
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 32)
         }
     }
     
@@ -91,7 +128,7 @@ struct AudioRecorderView: View {
         } else {
             Text("Tap to Record")
                 .font(.title3)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         }
     }
     
@@ -114,7 +151,7 @@ struct AudioRecorderView: View {
     private var infoText: some View {
         Text("Audio will be saved to this note")
             .font(.caption)
-            .foregroundStyle(.secondary)
+            .foregroundStyle(Momentum.contentSecondary)
     }
     
     private var backgroundView: some View {
@@ -138,11 +175,140 @@ struct AudioRecorderView: View {
         }
     }
     
+    @State private var isProcessing = false
+    @State private var processingError: String?
+    
     private func stopRecording() {
         timer?.invalidate()
         if let audioPath = recorder.stopRecording() {
             item.audioPath = audioPath
-            dismiss()
+            // Process recorded audio: get duration, transcribe, generate summary
+            // Don't dismiss immediately - wait for processing to complete
+            isProcessing = true
+            Task {
+                await processRecordedAudio(audioPath: audioPath)
+                await MainActor.run {
+                    isProcessing = false
+                    if processingError == nil {
+                        dismiss()
+                    }
+                }
+            }
+        }
+    }
+    
+    @MainActor
+    private func processRecordedAudio(audioPath: String) async {
+        let url = URL(fileURLWithPath: audioPath)
+        
+        // Get audio duration
+        do {
+            let duration = try await WaveformAnalyzer.shared.getDuration(url: url)
+            item.audioDuration = duration
+            item.modifiedDate = Date()
+            print("✅ Audio duration: \(duration) seconds")
+        } catch {
+            print("❌ Failed to get audio duration: \(error)")
+            processingError = "Failed to get audio duration: \(error.localizedDescription)"
+            return
+        }
+        
+        // Analyze audio for BPM, key, and scale (await to ensure it completes)
+        do {
+            print("🎵 Starting audio analysis (BPM, Key, Scale)...")
+            let analysis = try await AudioAnalysisService.shared.analyzeAudio(url: url)
+            
+            if let bpm = analysis.bpm {
+                item.bpm = bpm
+                print("✅ BPM auto-filled: \(bpm)")
+            }
+            if let key = analysis.key {
+                item.key = key
+                print("✅ Key auto-filled: \(key)")
+            }
+            if let scale = analysis.scale {
+                item.scale = scale
+                print("✅ Scale auto-filled: \(scale)")
+            }
+            item.modifiedDate = Date()
+            
+            // Force save to SwiftData to ensure values persist
+            try? item.modelContext?.save()
+            print("✅ Audio metadata saved: BPM=\(item.bpm?.description ?? "nil"), Key=\(item.key ?? "nil"), Scale=\(item.scale ?? "nil")")
+        } catch {
+            print("⚠️ Audio analysis failed: \(error.localizedDescription)")
+            // Don't fail the whole process if analysis fails - user can analyze manually later
+        }
+        
+        // Transcribe audio (on-device)
+        do {
+            print("🎤 Starting transcription...")
+            let transcriptionService = AudioTranscriptionService()
+            let result = try await transcriptionService.transcribe(audioURL: url)
+            
+            print("✅ Transcription complete: \(result.fullText.count) characters, \(result.segments.count) segments")
+            
+            // Debug: Log segments before saving
+            print("📝 Saving transcription - segments count: \(result.segments.count)")
+            if let firstSegment = result.segments.first {
+                print("📝 First segment: text='\(firstSegment.text)', timestamp=\(firstSegment.timestamp)")
+            }
+            
+            item.transcription = result.fullText
+            item.transcriptionSegments = result.segments
+            item.modifiedDate = Date()
+            
+            // Force save to SwiftData with error handling
+            do {
+                try item.modelContext?.save()
+                print("✅ Transcription saved to SwiftData successfully")
+                
+                // Verify segments were saved
+                if let savedSegments = item.transcriptionSegments {
+                    print("✅ Verified segments after save: \(savedSegments.count) segments")
+                } else {
+                    print("⚠️ Warning: Segments are nil after save - SwiftData may not support arrays of Codable structs")
+                }
+            } catch {
+                print("❌ Failed to save transcription to SwiftData: \(error.localizedDescription)")
+            }
+            
+            // Show completion notification with all detected metadata
+            let hasTimestamps = !result.segments.isEmpty
+            NotificationManager.shared.showAudioProcessingCompleteNotification(
+                bpm: item.bpm,
+                key: item.key,
+                scale: item.scale,
+                transcriptionComplete: true,
+                timestampsComplete: hasTimestamps
+            )
+            
+            // Generate summary (cloud API) - don't wait for this
+            Task {
+                do {
+                    let summary = try await AudioSummaryService.shared.generateSummary(from: result.fullText)
+                    await MainActor.run {
+                        item.audioSummary = summary
+                        item.modifiedDate = Date()
+                        try? item.modelContext?.save()
+                    }
+                } catch {
+                    // Summary generation failed (e.g., no API key) - that's okay
+                    print("⚠️ Summary generation skipped: \(error.localizedDescription)")
+                }
+            }
+        } catch {
+            print("❌ Transcription failed: \(error.localizedDescription)")
+            processingError = "Transcription failed: \(error.localizedDescription)\n\nYou can transcribe this audio later from the audio detail view."
+            
+            // Show notification even if transcription failed (but with metadata if available)
+            NotificationManager.shared.showAudioProcessingCompleteNotification(
+                bpm: item.bpm,
+                key: item.key,
+                scale: item.scale,
+                transcriptionComplete: false,
+                timestampsComplete: false
+            )
         }
     }
     

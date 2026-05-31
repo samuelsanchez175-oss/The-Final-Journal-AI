@@ -46,7 +46,7 @@ struct ImportNotesInstructionsView: View {
             // Icon
             Image(systemName: "note.text")
                 .font(.system(size: 64))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .padding(.bottom, 8)
             
             // Title
@@ -105,7 +105,7 @@ struct ImportNotesInstructionsView: View {
             } label: {
                 Text("Cancel")
                     .font(.callout)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
             .padding(.bottom, 20)
             .accessibilityLabel("Cancel")
@@ -132,7 +132,7 @@ struct ImportNotesInstructionsView: View {
                 
                 Text("Your text is ready to import")
                     .font(.callout)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
             .padding(.top, 40)
             

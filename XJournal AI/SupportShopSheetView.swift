@@ -25,7 +25,7 @@ struct SupportShopSheetView: View {
 
                     Text("Your support helps keep The Final Journal AI independent, thoughtful, and evolving.")
                         .font(.headline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
                 .padding(.top, 12)
 
@@ -90,7 +90,7 @@ struct SupportShopSheetView: View {
                     "Some links may be affiliate links. Purchases made through these links help support development at no extra cost to you."
                 )
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
 
                 supportRow(
                     title: "Amazon",
@@ -171,7 +171,7 @@ struct SupportShopSheetView: View {
 
                     Text(subtitle)
                         .font(.callout)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
 
                 Spacer()

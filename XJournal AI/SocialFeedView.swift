@@ -53,7 +53,7 @@ struct SocialFeedView: View {
                         dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .accessibilityLabel("Close")
                 }
@@ -247,14 +247,14 @@ struct SocialFeedView: View {
         VStack(spacing: 20) {
             Image(systemName: "person.2.fill")
                 .font(.system(size: 60))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             
             Text("No Posts Yet")
                 .font(.title2.weight(.semibold))
             
             Text("Check back soon for curated tips and guides for writers and poets using Logic Pro, ProTools, and audio equipment.")
                 .font(.body)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 40)
         }

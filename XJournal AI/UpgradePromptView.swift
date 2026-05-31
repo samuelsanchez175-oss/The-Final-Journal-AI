@@ -26,7 +26,7 @@ struct UpgradePromptView: View {
             // Message based on trigger
             Text(promptMessage)
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
             
@@ -53,7 +53,7 @@ struct UpgradePromptView: View {
                     } label: {
                         Text("Not Now")
                             .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .buttonStyle(.plain)
                     
@@ -62,7 +62,7 @@ struct UpgradePromptView: View {
                     } label: {
                         Text("Don't Show Again")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .buttonStyle(.plain)
                 }
@@ -112,7 +112,7 @@ struct BannerUpgradePromptView: View {
                     .font(.subheadline.weight(.medium))
                 Text("Tap to view plans")
                     .font(.caption2)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
             
             Spacer()
@@ -122,7 +122,7 @@ struct BannerUpgradePromptView: View {
             } label: {
                 Image(systemName: "xmark")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
             .buttonStyle(.plain)
         }

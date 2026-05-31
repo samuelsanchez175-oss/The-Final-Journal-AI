@@ -51,7 +51,7 @@ struct SocialPostCardView: View {
                         
                         Image(systemName: "photo")
                             .font(.system(size: 60))
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .frame(height: 400)
                 }
@@ -71,16 +71,16 @@ struct SocialPostCardView: View {
                         if let category = post.category {
                             Label(category, systemImage: "tag.fill")
                                 .font(.caption)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                         
                         Text(post.author)
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         
                         Text(post.createdDate, style: .relative)
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .padding(.horizontal, 20)
                     
@@ -133,7 +133,7 @@ struct SocialPostCardView: View {
                     
                     Image(systemName: "photo")
                         .font(.system(size: 60))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
             }
         }

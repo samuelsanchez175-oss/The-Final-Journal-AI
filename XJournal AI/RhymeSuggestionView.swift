@@ -60,7 +60,7 @@ struct RhymeSuggestionView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Rhymes for:")
                             .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         
                         Text(targetWord.capitalized)
                             .font(.title2)
@@ -112,7 +112,7 @@ struct RhymeSuggestionView: View {
                     
                     Text(strengthLabel(rhyme.strength))
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)

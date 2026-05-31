@@ -101,7 +101,7 @@ struct SubscriptionManagementView: View {
                         if let expirationDate = getExpirationDate() {
                             Text("Renews: \(formatDate(expirationDate))")
                                 .font(.caption)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                     }
                     
@@ -113,7 +113,7 @@ struct SubscriptionManagementView: View {
                         .font(.title2.weight(.bold))
                     Text("Limited features")
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
             }
         }
@@ -237,7 +237,7 @@ struct SubscriptionManagementView: View {
             
             Text("Unlock unlimited AI features and advanced tools")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.center)
             
             Button {
@@ -273,7 +273,7 @@ struct SubscriptionManagementView: View {
             
             Text("View your purchase history in the App Store")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             
             Button {
                 openSubscriptionManagement()
@@ -312,7 +312,7 @@ struct SubscriptionManagementView: View {
                         .font(.body)
                     Spacer()
                 }
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .padding()
                 .frame(maxWidth: .infinity)
                 .background(

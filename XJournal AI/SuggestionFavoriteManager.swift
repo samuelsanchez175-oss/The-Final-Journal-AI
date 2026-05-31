@@ -86,12 +86,12 @@ struct SuggestionHistoryView: View {
                     VStack(spacing: 16) {
                         Image(systemName: "clock")
                             .font(.system(size: 48))
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         Text("No History")
                             .font(.headline)
                         Text("Previous suggestions will appear here")
                             .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                 } else {
                     List {
@@ -107,7 +107,7 @@ struct SuggestionHistoryView: View {
                                     if let confidence = suggestion.confidence as Double? {
                                         Text("Confidence: \(Int(confidence * 100))%")
                                             .font(.caption)
-                                            .foregroundStyle(.secondary)
+                                            .foregroundStyle(Momentum.contentSecondary)
                                     }
                                 }
                                 .padding(.vertical, 4)
@@ -166,12 +166,12 @@ struct FavoriteSuggestionsView: View {
                     VStack(spacing: 16) {
                         Image(systemName: "star")
                             .font(.system(size: 48))
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         Text("No Favorites")
                             .font(.headline)
                         Text("Tap the star icon on suggestions to save them")
                             .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
                     }
@@ -194,7 +194,7 @@ struct FavoriteSuggestionsView: View {
                                     if let confidence = suggestion.confidence as Double? {
                                         Text("Confidence: \(Int(confidence * 100))%")
                                             .font(.caption)
-                                            .foregroundStyle(.secondary)
+                                            .foregroundStyle(Momentum.contentSecondary)
                                     }
                                 }
                                 .padding(.vertical, 4)

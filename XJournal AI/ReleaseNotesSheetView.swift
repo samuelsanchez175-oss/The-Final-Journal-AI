@@ -21,9 +21,26 @@ struct ReleaseNotesSheetView: View {
 
                     Text("The Final Journal AI")
                         .font(.headline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
                 .padding(.top, 12)
+
+                featureCard(
+                    symbolName: "waveform.path",
+                    version: "1.4.0",
+                    title: "Audio Intelligence & Analytics",
+                    description: "Advanced audio transcription, interactive playback, and comprehensive analytics dashboard.",
+                    bullets: [
+                        "High-fidelity on-device audio transcription with timestamped segments",
+                        "Interactive audio detail sheet with synchronized text highlighting",
+                        "Audio waveform visualization and playback controls",
+                        "Comprehensive analytics dashboard with multiple tabs",
+                        "Error tracking and storage with detailed analytics",
+                        "Social feed integration for tips and guides",
+                        "Improved AI suggestion reliability with robust JSON parsing",
+                        "Real-time title editing with instant library updates"
+                    ]
+                )
 
                 featureCard(
                     symbolName: "sparkles.rectangle.stack",
@@ -35,7 +52,7 @@ struct ReleaseNotesSheetView: View {
                         "Rewrite Line: AI suggests single-line replacements matching rhyme and syllables",
                         "Suggest Rhymes: Find 8 rhyming words for your last word",
                         "Improve Flow: Focus on maintaining rhyme scheme patterns",
-                        "Model Preferences: Customize Model G and Model Y behaviors",
+                        "Model Preferences: Customize Model G, Model G Core, and Model Y behaviors",
                         "Undo/Redo: Easily revert or restore your changes",
                         "Audio Import: Import audio files with automatic transcription"
                     ]
@@ -140,14 +157,14 @@ struct ReleaseNotesSheetView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Version \(version)")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
 
                 Text(title)
                     .font(.title3.weight(.semibold))
 
                 Text(description)
                     .font(.callout)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
 
                 VStack(alignment: .leading, spacing: 6) {
                     ForEach(bullets, id: \.self) { bullet in

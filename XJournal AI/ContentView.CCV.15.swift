@@ -127,7 +127,7 @@ struct RhymeGroupListView: View {
                         Spacer()
                         Image(systemName: "arrow.up.arrow.down")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                 }
                 .buttonStyle(.plain)
@@ -152,7 +152,7 @@ struct RhymeGroupListView: View {
                         if orderedGroups.isEmpty {
                             Text("No rhymes found.")
                                 .font(.callout)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                                 .id("top")
                         } else {
                             ForEach(Array(orderedGroups.enumerated()), id: \.element.id) { index, group in

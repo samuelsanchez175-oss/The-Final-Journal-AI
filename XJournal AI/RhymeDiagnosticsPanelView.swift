@@ -7,9 +7,8 @@ import SwiftUI
 struct RhymeDiagnosticsPanelView: View {
     let word: String
     
-    // Use the main dictionary store via global accessor function
     private var phonemesByWord: [String: [String]] {
-        getGlobalCMUDICTStore()
+        FJCMUDICTStore.shared.phonemesByWord
     }
 
     var body: some View {
@@ -21,7 +20,7 @@ struct RhymeDiagnosticsPanelView: View {
                 Spacer()
                 Text("PHONETIC BREAKDOWN")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
 
             Divider()
@@ -29,7 +28,7 @@ struct RhymeDiagnosticsPanelView: View {
             let phonemes = phonemesByWord[word.lowercased()] ?? []
             if phonemes.isEmpty {
                 Text("No phonetic data found for this word.")
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             } else {
                 Text("Rhyme Tail: \(rhymeTail(for: phonemes))")
                     .font(.callout)

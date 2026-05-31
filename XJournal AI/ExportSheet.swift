@@ -40,7 +40,7 @@ struct ExportSheet: View {
                     
                     Text("Choose a format to export your note")
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .multilineTextAlignment(.center)
                 }
                 .padding(.top, 20)

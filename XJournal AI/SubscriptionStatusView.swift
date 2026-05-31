@@ -24,19 +24,19 @@ struct SubscriptionStatusView: View {
                                 .font(.subheadline.weight(.medium))
                             Text(tierDescription(for: currentTier))
                                 .font(.caption2)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                             
                             if let expirationDate = getExpirationDate() {
                                 Text("Renews: \(formatDate(expirationDate))")
                                     .font(.caption2)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Momentum.contentSecondary)
                             }
                         }
                         Spacer()
                         
                         Image(systemName: "chevron.right")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
@@ -69,7 +69,7 @@ struct SubscriptionStatusView: View {
                             
                             Image(systemName: "chevron.right")
                                 .font(.caption)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                         }
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)

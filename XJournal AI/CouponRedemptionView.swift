@@ -27,7 +27,7 @@ struct CouponRedemptionView: View {
                         
                         Text("Enter a promotional code to unlock premium features")
                             .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                             .multilineTextAlignment(.center)
                     }
                     .padding(.top, 20)
@@ -147,7 +147,7 @@ struct CouponRedemptionView: View {
                         
                         Text("For App Store offer codes, use the link above or go to Settings > App Store > Redeem")
                             .font(.caption2)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                     }
                     .padding()
                     .background(
@@ -319,7 +319,7 @@ struct InfoRow: View {
                 .frame(width: 20)
             Text(text)
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         }
     }
 }
