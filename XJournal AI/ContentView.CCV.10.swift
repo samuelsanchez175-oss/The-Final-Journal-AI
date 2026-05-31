@@ -741,9 +741,9 @@ struct JournalLibraryView: View {
             }) {
                 Image(systemName: "square.and.pencil")
                     .font(.system(size: 18, weight: .semibold))
-                    .foregroundStyle(Momentum.onInverse)
+                    .foregroundStyle(Momentum.accent)
                     .frame(width: 44, height: 44)
-                    .background(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous).fill(Momentum.inverseSurface))
+                    .momentumGlass()
             }
             .buttonStyle(.plain)
         }
