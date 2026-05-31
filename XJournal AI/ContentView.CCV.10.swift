@@ -929,14 +929,9 @@ struct JournalLibraryView: View {
             .padding(.vertical, 8)
             .foregroundStyle(.primary)
             .background(
-                Capsule(style: .continuous)
-                    .fill(.ultraThinMaterial)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                    .clipShape(Capsule(style: .continuous))
-                    .overlay(
-                        Capsule(style: .continuous)
-                            .strokeBorder(.primary.opacity(0.18))
-                    )
+                Rectangle()
+                    .fill(Momentum.surfaceElevated)
+                    .overlay(Rectangle().stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
             )
         }
         .buttonStyle(PlainButtonStyle())
@@ -1005,22 +1000,12 @@ struct JournalLibraryView: View {
             }
             .padding(.horizontal, 14)
             .padding(.vertical, 8)
-            .foregroundStyle(selectedFilter == filter ? .primary : .secondary)
+            .foregroundStyle(selectedFilter == filter ? Momentum.accent : Momentum.contentSecondary)
             .background(
-                ZStack {
-                    Capsule(style: .continuous)
-                        .fill(.ultraThinMaterial)
-                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                        .clipShape(Capsule(style: .continuous))
-
-                    if selectedFilter != filter {
-                        Capsule(style: .continuous).fill(Color.clear)
-                    }
-                }
-                .overlay(
-                    Capsule(style: .continuous)
-                        .strokeBorder(.primary.opacity(selectedFilter == filter ? 0.18 : 0.08))
-                )
+                Rectangle()
+                    .fill(Momentum.surfaceElevated)
+                    .overlay(Rectangle().stroke(selectedFilter == filter ? Momentum.accent : Momentum.hairline,
+                                                lineWidth: Momentum.lineThin))
             )
         }
         .buttonStyle(PlainButtonStyle())
