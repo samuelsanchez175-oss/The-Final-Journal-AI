@@ -196,7 +196,7 @@ struct AchievementCollectionView: View {
                         
                         Text("Achievements Unlocked")
                             .font(.headline)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         
                         // Progress bar
                         GeometryReader { geometry in

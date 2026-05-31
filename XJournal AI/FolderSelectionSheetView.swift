@@ -62,7 +62,7 @@ struct FolderSelectionSheetView: View {
             
             Text("Selected items: \(selectedItems.count)")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         }
         .padding(.horizontal)
         .padding(.top)

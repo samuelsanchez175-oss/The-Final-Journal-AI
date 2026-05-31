@@ -26,7 +26,7 @@ struct UsageWidgetView: View {
                     HStack {
                         Text("AI Usage")
                             .font(.caption2)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Momentum.contentSecondary)
                         Spacer()
                         Text("\(used)/\(total)")
                             .font(.caption2.weight(.medium))

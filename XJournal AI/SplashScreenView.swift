@@ -28,7 +28,7 @@ struct SplashScreenView: View {
                 } label: {
                     Image(systemName: "xmark")
                         .font(.system(size: 14, weight: .semibold))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .frame(width: 28, height: 28)
                         .background(
                             Circle()
@@ -65,7 +65,7 @@ struct SplashScreenView: View {
                 } label: {
                     Text("\"Never show again\"")
                         .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 12)
                         .background(
@@ -207,7 +207,7 @@ struct HeroSplashView: View {
                 VStack(spacing: 16) {
                     Text("Your intelligent writing companion for rap lyrics and journaling")
                         .font(.title3)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 40)
                     
@@ -266,7 +266,7 @@ struct FeatureRow: View {
             
             Text(text)
                 .font(.body)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         }
     }
 }
@@ -306,7 +306,7 @@ struct ToolbarOverviewSplashView: View {
                     
                     Text("The dynamic toolbar at the bottom of your screen contains powerful tools to enhance your writing. It includes AI assistance, rhyme analysis, audio recording, and more. Let's explore each button together.")
                         .font(.body)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 24)
                     
@@ -323,7 +323,7 @@ struct ToolbarOverviewSplashView: View {
                         } label: {
                             Text("Skip All")
                                 .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 12)
                                 .background(
@@ -480,7 +480,7 @@ struct ToolbarButtonSplashView: View {
                     
                     Text(description)
                         .font(.body)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 24)
                     
@@ -495,7 +495,7 @@ struct ToolbarButtonSplashView: View {
                         } label: {
                             Text("Never show again")
                                 .font(.subheadline)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Momentum.contentSecondary)
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 12)
                                 .background(

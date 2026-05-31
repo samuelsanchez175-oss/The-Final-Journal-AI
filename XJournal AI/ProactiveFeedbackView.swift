@@ -123,7 +123,7 @@ struct ProactiveFeedbackView: View {
         } label: {
             Text("Maybe later")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         }
         .padding(.top, 8)
     }
