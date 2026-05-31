@@ -14,6 +14,18 @@ struct RapSuggestionView: View {
     let onDismiss: () -> Void
     let contextText: String? // The text that prompted these suggestions (optional)
     let onRegenerate: (() -> Void)? // Regenerate callback (Phase 1)
+    let currentSignalMode: SignalMode? // Current Signal Mode for Writers Critique
+    let currentSignalProfile: SignalProfile? // Current Signal Profile for Writers Critique
+    let silenceCommentary: CriticCommentary? // PR 6: Silence as valid output
+    /// When non-nil with rightSuggestions/rightTitle, show side-by-side (v1 left, v2 right).
+    let leftSuggestions: [RapSuggestion]?
+    let rightSuggestions: [RapSuggestion]?
+    let leftTitle: String?
+    let rightTitle: String?
+    
+    private var isParallelMode: Bool {
+        leftTitle != nil && rightTitle != nil
+    }
     
     init(
         suggestions: [RapSuggestion],
@@ -24,7 +36,14 @@ struct RapSuggestionView: View {
         onCopy: ((RapSuggestion) -> Void)? = nil,
         onDismiss: @escaping () -> Void,
         contextText: String? = nil,
-        onRegenerate: (() -> Void)? = nil
+        onRegenerate: (() -> Void)? = nil,
+        currentSignalMode: SignalMode? = nil,
+        currentSignalProfile: SignalProfile? = nil,
+        silenceCommentary: CriticCommentary? = nil,
+        leftSuggestions: [RapSuggestion]? = nil,
+        rightSuggestions: [RapSuggestion]? = nil,
+        leftTitle: String? = nil,
+        rightTitle: String? = nil
     ) {
         self.suggestions = suggestions
         self.isLoading = isLoading
@@ -35,6 +54,13 @@ struct RapSuggestionView: View {
         self.onDismiss = onDismiss
         self.contextText = contextText
         self.onRegenerate = onRegenerate
+        self.currentSignalMode = currentSignalMode
+        self.currentSignalProfile = currentSignalProfile
+        self.silenceCommentary = silenceCommentary
+        self.leftSuggestions = leftSuggestions
+        self.rightSuggestions = rightSuggestions
+        self.leftTitle = leftTitle
+        self.rightTitle = rightTitle
     }
     
     @Environment(\.colorScheme) private var colorScheme
@@ -53,6 +79,12 @@ struct RapSuggestionView: View {
     @State private var highlightedLines: [UUID: Set<Int>] = [:] // Suggestion ID -> Set of line indices (liked)
     @State private var dislikedLines: [UUID: Set<Int>] = [:] // Suggestion ID -> Set of line indices (disliked)
     @State private var showingReasoning: String? = nil
+    @State private var lastShownMode: SignalMode? = nil // Track last shown mode for auto-show logic
+    @State private var showCritiqueSheet: Bool = false // For on-demand critique sheet
+    @State private var tightenedSuggestions: [UUID: SignalAdjustedLine] = [:] // Store tightened versions
+    @State private var showingTightened: Set<UUID> = [] // Track which suggestions show tightened version
+    /// Parallel mode: 0 = V1 (default), 1 = V2. User swipes right to see V2.
+    @State private var parallelPageIndex: Int = 0
     
     var body: some View {
         NavigationView {
@@ -66,6 +98,10 @@ struct RapSuggestionView: View {
                     loadingView
                 } else if let error = error {
                     errorView(error)
+                } else if let silence = silenceCommentary {
+                    silenceView(silence)
+                } else if isParallelMode {
+                    sideBySideView
                 } else if suggestions.isEmpty {
                     emptyView
                 } else {
@@ -77,8 +113,8 @@ struct RapSuggestionView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack(spacing: 12) {
-                        // Comparison toggle
-                        if suggestions.count > 1 {
+                        // Comparison toggle (hide in parallel mode)
+                        if !isParallelMode && suggestions.count > 1 {
                             Button {
                                 showComparison.toggle()
                             } label: {
@@ -141,6 +177,11 @@ struct RapSuggestionView: View {
                     }
                 )
             }
+            .sheet(isPresented: $showCritiqueSheet) {
+                if let mode = currentSignalMode, let profile = currentSignalProfile {
+                    WritersCritiqueSheet(mode: mode, profile: profile)
+                }
+            }
             .onAppear {
                 // Track suggestion view
                 for suggestion in suggestions {
@@ -179,7 +220,7 @@ struct RapSuggestionView: View {
             if let step = loadingStep {
                 Text(step)
                     .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 40)
             }
@@ -199,9 +240,41 @@ struct RapSuggestionView: View {
             
             Text(message)
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 40)
+        }
+    }
+    
+    // MARK: - Silence View (PR 6)
+    
+    private func silenceView(_ commentary: CriticCommentary) -> some View {
+        VStack(spacing: 16) {
+            Image(systemName: "text.bubble")
+                .font(.system(size: 48))
+                .foregroundStyle(Momentum.contentSecondary)
+            
+            Text("No Line Generated")
+                .font(.headline)
+            
+            VStack(alignment: .leading, spacing: 12) {
+                Text(commentary.explanation)
+                    .font(.subheadline)
+                    .foregroundStyle(Momentum.contentSecondary)
+                    .multilineTextAlignment(.center)
+                
+                Divider()
+                
+                Text("Reason: \(commentary.reason)")
+                    .font(.caption)
+                    .foregroundStyle(.tertiary)
+                
+                Text(commentary.guidance)
+                    .font(.caption)
+                    .foregroundStyle(Momentum.contentSecondary)
+                    .italic()
+            }
+            .padding(.horizontal, 40)
         }
     }
     
@@ -211,14 +284,14 @@ struct RapSuggestionView: View {
         VStack(spacing: 16) {
             Image(systemName: "text.bubble")
                 .font(.system(size: 48))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
             
             Text("No Suggestions")
                 .font(.headline)
             
             Text("Try adjusting your verse or check your API key settings.")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 40)
         }
@@ -229,6 +302,17 @@ struct RapSuggestionView: View {
     private var suggestionsList: some View {
         ScrollView {
             VStack(spacing: 16) {
+                // Writers Critique Section (auto-show on mode change, only once at top)
+                if let mode = currentSignalMode, let profile = currentSignalProfile {
+                    // Auto-show once per mode change
+                    if mode != lastShownMode {
+                        writersCritiqueSection(mode: mode, profile: profile)
+                            .onAppear {
+                                lastShownMode = mode
+                            }
+                    }
+                }
+                
                 ForEach(suggestions) { suggestion in
                     suggestionCard(suggestion)
                 }
@@ -236,6 +320,71 @@ struct RapSuggestionView: View {
             .padding(.horizontal, 20)
             .padding(.vertical, 16)
         }
+    }
+    
+    // MARK: - Side-by-Side (Model G v1 default, swipe right for v2)
+    
+    private var sideBySideView: some View {
+        VStack(spacing: 0) {
+            // Page indicator: V1 (default) | V2 — swipe to switch
+            HStack(spacing: 8) {
+                Text(leftTitle ?? "Model G v1")
+                    .font(.subheadline.weight(parallelPageIndex == 0 ? .semibold : .regular))
+                    .foregroundStyle(parallelPageIndex == 0 ? .primary : .secondary)
+                Text("•")
+                    .foregroundStyle(.tertiary)
+                Text(rightTitle ?? "Model G v2")
+                    .font(.subheadline.weight(parallelPageIndex == 1 ? .semibold : .regular))
+                    .foregroundStyle(parallelPageIndex == 1 ? .primary : .secondary)
+                Spacer()
+                Text("Swipe to switch")
+                    .font(.caption)
+                    .foregroundStyle(.tertiary)
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 10)
+            .background(.ultraThinMaterial.opacity(0.5))
+            
+            TabView(selection: $parallelPageIndex) {
+                parallelColumn(
+                    title: leftTitle ?? "Model G v1",
+                    suggestions: leftSuggestions ?? []
+                )
+                .tag(0)
+                parallelColumn(
+                    title: rightTitle ?? "Model G v2",
+                    suggestions: rightSuggestions ?? []
+                )
+                .tag(1)
+            }
+            .tabViewStyle(.page(indexDisplayMode: .never))
+        }
+        .padding(.vertical, 8)
+    }
+    
+    private func parallelColumn(title: String, suggestions: [RapSuggestion]) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(title)
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(Momentum.contentSecondary)
+            ScrollView {
+                VStack(spacing: 16) {
+                    if suggestions.isEmpty {
+                        Text("No result")
+                            .font(.caption)
+                            .foregroundStyle(.tertiary)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 24)
+                    } else {
+                        ForEach(suggestions) { suggestion in
+                            suggestionCard(suggestion)
+                        }
+                    }
+                }
+                .padding(.vertical, 8)
+            }
+        }
+        .frame(maxWidth: .infinity)
     }
     
     // MARK: - Suggestion Card
@@ -257,12 +406,163 @@ struct RapSuggestionView: View {
     private func cardContent(suggestion: RapSuggestion, lines: [String], hasAnyFeedback: Bool) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             suggestionTextSection(suggestion, lines: lines, hasAnyFeedback: hasAnyFeedback)
+            
+            // A&R Critique (teaching feedback based on user's submitted text)
+            if let critique = suggestion.arCritique, !critique.isEmpty {
+                arCritiqueSection(critique: critique)
+            }
+            
+            // PR 5: Line Comparison Critique (beneath generated lines)
+            if let mode = currentSignalMode, let profile = currentSignalProfile, let contextText = contextText {
+                lineComparisonCritique(
+                    userLine: contextText,
+                    generatedLine: suggestion.text,
+                    mode: mode,
+                    profile: profile,
+                    suggestion: suggestion
+                )
+            }
+            
             suggestionThemeTags(suggestion)
             suggestionQualityIndicators(suggestion)
+            feedbackLearningIndicator() // Show when feedback is being used
             suggestionSignalNote(suggestion)
+            
+            // "Tighten for authority" toggle (Layer 8 - Comparative Learning)
+            if let mode = currentSignalMode, let constraints = getConstraintsForMode(mode) {
+                tightenForAuthoritySection(suggestion: suggestion, mode: mode, constraints: constraints)
+            }
+            
+            // Advanced mode display (Layer 10 - Advanced Exposure)
+            if SignalAdvancedExposure.shared.isAdvancedModeEnabled(),
+               let mode = currentSignalMode,
+               let profile = currentSignalProfile,
+               let text = contextText,
+               let axes = getAxesForMode(mode, profile: profile) {
+                let metrics = SignalIngest.shared.analyzeBehavior(text: text)
+                let advancedInfo = SignalAdvancedExposure.shared.generateAdvancedInfo(
+                    metrics: metrics,
+                    mode: mode,
+                    axes: axes,
+                    profile: profile
+                )
+                signalModeInfo(mode: mode, axes: axes, profile: profile, advancedInfo: advancedInfo)
+            }
         }
         .padding(16)
         .background(cardBackgroundView())
+    }
+    
+    // Helper to get constraints for current mode
+    private func getConstraintsForMode(_ mode: SignalMode) -> ConstraintRules? {
+        guard let profile = currentSignalProfile, let text = contextText else { return nil }
+        let axes = SignalAxes.calibrateAxes(profile: profile, mode: mode, text: text)
+        return SignalConstraintEngine.shared.generateConstraints(mode: mode, axes: axes)
+    }
+    
+    // Helper to get axes for current mode
+    private func getAxesForMode(_ mode: SignalMode, profile: SignalProfile) -> SignalAxes? {
+        guard let text = contextText else { return nil }
+        return SignalAxes.calibrateAxes(profile: profile, mode: mode, text: text)
+    }
+    
+    // MARK: - Line Comparison Critique (PR 5)
+    
+    @ViewBuilder
+    private func lineComparisonCritique(userLine: String, generatedLine: String, mode: SignalMode, profile: SignalProfile, suggestion: RapSuggestion) -> some View {
+        // Get last line from context for comparison
+        let lastUserLine = userLine.split(separator: "\n", omittingEmptySubsequences: false).last.map { String($0) } ?? userLine
+        
+        // Get context info from engine (we'll need to pass this through)
+        // For now, extract from contextText
+        let allLines = (contextText ?? "").split(separator: "\n", omittingEmptySubsequences: false).map { String($0) }
+        let previousLines = Array(allLines.suffix(6))
+        let fullTextLineCount = allLines.count
+        let contextLineCount = min(6, fullTextLineCount)
+        
+        // Get axes and strength mode for lexicon feedback
+        let axes = getAxesForMode(mode, profile: profile)
+        let strengthMode = ThematicStateDetector.shared.checkStrengthMode(
+            text: contextText ?? "",
+            axes: axes ?? SignalAxes(
+                exposureRisk: .low,
+                authorityPosture: .unstable,
+                socialAction: .assert,
+                audienceScope: .selfOnly
+            ),
+            profile: profile
+        )
+        
+        let comparison = WritersCritiqueGenerator.compareLines(
+            userLine: lastUserLine,
+            generatedLine: generatedLine,
+            mode: mode,
+            profile: profile,
+            suggestionReasoning: suggestion.reasoning, // Why these lines were suggested
+            previousLines: previousLines,
+            fullTextLineCount: fullTextLineCount,
+            contextLineCount: contextLineCount,
+            axes: axes,
+            strengthMode: strengthMode
+        )
+        
+        VStack(alignment: .leading, spacing: 12) {
+            Divider()
+                .padding(.vertical, 4)
+            
+            HStack(alignment: .top, spacing: 8) {
+                Image(systemName: "text.bubble")
+                    .font(.caption)
+                    .foregroundStyle(.orange)
+                
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Critic")
+                        .font(.caption)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.orange)
+                    
+                    // Context information
+                    Text(comparison.contextInfo)
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                        .italic()
+                    
+                    // Why suggested
+                    if let why = comparison.whySuggested {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Why suggested:")
+                                .font(.caption2)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Momentum.contentSecondary)
+                            Text(why)
+                                .font(.caption)
+                                .foregroundStyle(Momentum.contentSecondary)
+                        }
+                    }
+                    
+                    // Previous lines critique
+                    if let previous = comparison.previousLineCritique {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Previous lines need:")
+                                .font(.caption2)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Momentum.contentSecondary)
+                            Text(previous)
+                                .font(.caption)
+                                .foregroundStyle(Momentum.contentSecondary)
+                        }
+                    }
+                    
+                    // Main commentary
+                    Text(comparison.commentary)
+                        .font(.caption)
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+        }
+        .padding(.top, 4)
+        .padding(.bottom, 8)
     }
     
     @ViewBuilder
@@ -277,11 +577,13 @@ struct RapSuggestionView: View {
                 let line = pair.element
                 let isLiked = highlightedLines[suggestion.id]?.contains(index) ?? false
                 let isDisliked = dislikedLines[suggestion.id]?.contains(index) ?? false
+                let isModelGMoment = suggestion.modelGMomentLineIndices?.contains(index) ?? false
                 SuggestionLineRow(
                     line: line,
                     isLiked: isLiked,
                     isDisliked: isDisliked,
                     isHighlighted: highlightedSuggestionId == suggestion.id,
+                    isModelGMoment: isModelGMoment,
                     onTap: { toggleLineFeedback(suggestionId: suggestion.id, lineIndex: index) }
                 )
             }
@@ -297,7 +599,7 @@ struct RapSuggestionView: View {
             Text("Tap lines: 1st tap = dislike, 2nd tap = like, 3rd tap = clear")
                 .font(.caption2)
         }
-        .foregroundStyle(.secondary)
+        .foregroundStyle(Momentum.contentSecondary)
         .padding(.bottom, 4)
     }
     
@@ -331,6 +633,18 @@ struct RapSuggestionView: View {
                     value: suggestion.signalStrength ?? suggestion.confidence,
                     color: .yellow
                 )
+                
+                // On-demand Writers Critique button
+                if currentSignalMode != nil && currentSignalProfile != nil {
+                    Button {
+                        showCritiqueSheet = true
+                    } label: {
+                        Image(systemName: "info.circle")
+                            .font(.caption)
+                            .foregroundStyle(.orange)
+                    }
+                    .accessibilityLabel("Show Writer's Critique")
+                }
                 
                 if let rhymeStrength = suggestion.rhymeStrength {
                     qualityIndicator(
@@ -366,10 +680,37 @@ struct RapSuggestionView: View {
                         .font(.caption2)
                     Text(source)
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .lineLimit(1)
                 }
             }
+        }
+    }
+    
+    @ViewBuilder
+    private func feedbackLearningIndicator() -> some View {
+        let feedbackStats = SuggestionFeedbackManager.shared.getFeedbackStats()
+        let hasFeedback = feedbackStats.totalFeedback >= 3
+        
+        if hasFeedback {
+            HStack(spacing: 6) {
+                Image(systemName: "brain.head.profile")
+                    .font(.caption2)
+                    .foregroundStyle(.blue)
+                Text("AI learning from your feedback")
+                    .font(.caption)
+                    .foregroundStyle(Momentum.contentSecondary)
+                Spacer()
+                Text("\(feedbackStats.totalFeedback) feedback entries")
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
+            }
+            .padding(.vertical, 6)
+            .padding(.horizontal, 10)
+            .background(
+                RoundedRectangle(cornerRadius: 6)
+                    .fill(Color.blue.opacity(0.1))
+            )
         }
     }
     
@@ -389,20 +730,221 @@ struct RapSuggestionView: View {
                 }
                 Text(signalNote)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
                     .multilineTextAlignment(.leading)
+                
+                // Signal Pattern counter (optional - shows frequency)
+                if let noteType = SignalMemory.shared.determineNoteType(from: signalNote) {
+                    let patternSummary = SignalMemory.shared.getPatternSummary(noteType: noteType, timeWindow: 86400)
+                    if patternSummary.frequency > 1 {
+                        Text(patternSummary.displayText)
+                            .font(.caption2)
+                            .foregroundStyle(.tertiary)
+                            .padding(.top, 2)
+                    }
+                }
             }
         } else if let reasoning = suggestion.reasoning {
             Text(reasoning)
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
                 .multilineTextAlignment(.leading)
         }
     }
     
+    @ViewBuilder
+    private func writersCritiqueSection(mode: SignalMode, profile: SignalProfile) -> some View {
+        let critique = WritersCritiqueGenerator.shared.generateCritique(for: mode, profile: profile)
+        
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(spacing: 4) {
+                Image(systemName: "book.closed")
+                    .font(.caption2)
+                    .foregroundStyle(.orange)
+                Text("Writer's Room")
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.orange)
+            }
+            
+            Text(critique.fullCritique)
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+                .multilineTextAlignment(.leading)
+            
+            // Expandable details (optional)
+            DisclosureGroup("What this means") {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Allowed: \(critique.whatIsAllowed)")
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                    Text("Unsafe: \(critique.whatIsUnsafe)")
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                    Text("Premature: \(critique.whatIsPremature)")
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                }
+            }
+            .font(.caption2)
+        }
+        .padding(.vertical, 8)
+        .padding(.horizontal, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.orange.opacity(0.1))
+        )
+    }
+    
+    @ViewBuilder
+    private func arCritiqueSection(critique: String) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(spacing: 4) {
+                Image(systemName: "mic.fill")
+                    .font(.caption2)
+                    .foregroundStyle(.purple)
+                Text("A&R Critique")
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.purple)
+            }
+            
+            Text(critique)
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+                .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(.vertical, 8)
+        .padding(.horizontal, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.purple.opacity(0.1))
+        )
+    }
+    
+    @ViewBuilder
+    private func tightenForAuthoritySection(suggestion: RapSuggestion, mode: SignalMode, constraints: ConstraintRules) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Button {
+                if showingTightened.contains(suggestion.id) {
+                    showingTightened.remove(suggestion.id)
+                } else {
+                    // Generate tightened version
+                    Task {
+                        do {
+                            let adjusted = try await SignalComparison.shared.generateSignalAdjustedVersion(
+                                originalLine: suggestion.text,
+                                mode: mode,
+                                constraints: constraints
+                            )
+                            await MainActor.run {
+                                tightenedSuggestions[suggestion.id] = adjusted
+                                showingTightened.insert(suggestion.id)
+                            }
+                        } catch {
+                            // Handle error silently
+                        }
+                    }
+                }
+            } label: {
+                HStack(spacing: 4) {
+                    Image(systemName: showingTightened.contains(suggestion.id) ? "lock.fill" : "lock.open")
+                        .font(.caption2)
+                    Text("Tighten for authority")
+                        .font(.caption)
+                        .fontWeight(.medium)
+                }
+                .foregroundStyle(.blue)
+            }
+            
+            // Show comparison if available
+            if showingTightened.contains(suggestion.id),
+               let adjusted = tightenedSuggestions[suggestion.id] {
+                VStack(alignment: .leading, spacing: 6) {
+                    // Original (greyed)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Original")
+                            .font(.caption2)
+                            .foregroundStyle(.tertiary)
+                        Text(adjusted.original)
+                            .font(.caption)
+                            .foregroundStyle(Momentum.contentSecondary)
+                            .strikethrough()
+                    }
+                    
+                    // Adjusted (highlighted)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Adjusted")
+                            .font(.caption2)
+                            .foregroundStyle(.blue)
+                        Text(adjusted.adjusted)
+                            .font(.caption)
+                            .foregroundStyle(.primary)
+                    }
+                    .padding(.vertical, 6)
+                    .padding(.horizontal, 8)
+                    .background(
+                        RoundedRectangle(cornerRadius: 6)
+                            .fill(Color.blue.opacity(0.1))
+                    )
+                    
+                    // Explanation
+                    Text(adjusted.explanation)
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                        .italic()
+                }
+                .padding(.top, 4)
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private func signalModeInfo(mode: SignalMode, axes: SignalAxes, profile: SignalProfile, advancedInfo: SignalAdvancedInfo) -> some View {
+        
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(spacing: 4) {
+                Image(systemName: "gearshape.fill")
+                    .font(.caption2)
+                    .foregroundStyle(.purple)
+                Text("Signal Mode: \(mode.displayName)")
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.purple)
+            }
+            
+            Text(advancedInfo.modeSelectionReason)
+                .font(.caption2)
+                .foregroundStyle(.tertiary)
+            
+            HStack(spacing: 12) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Exposure: \(axes.exposureRisk.rawValue)")
+                        .font(.caption2)
+                    Text("Authority: \(axes.authorityPosture.rawValue)")
+                        .font(.caption2)
+                }
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Action: \(axes.socialAction.rawValue)")
+                        .font(.caption2)
+                    Text("Audience: \(axes.audienceScope.rawValue)")
+                        .font(.caption2)
+                }
+            }
+            .foregroundStyle(.tertiary)
+        }
+        .padding(.vertical, 6)
+        .padding(.horizontal, 10)
+        .background(
+            RoundedRectangle(cornerRadius: 6)
+                .fill(Color.purple.opacity(0.1))
+        )
+    }
+    
     private func cardBackgroundView() -> some View {
         RoundedRectangle(cornerRadius: 16)
-            .fill(.ultraThinMaterial)
+            .fill(Momentum.surfaceElevated)
             .overlay(
                 LinearGradient(
                     colors: [
@@ -455,6 +997,17 @@ struct RapSuggestionView: View {
                 Button {
                     let feedback: RapSuggestion.SuggestionFeedback = .disliked
                     userFeedback[suggestion.id] = feedback
+
+                    // PR 7: Taste Memory - Record rejected suggestion
+                    TasteMemory.shared.recordRejected(
+                        suggestion: suggestion,
+                        signalMode: currentSignalMode,
+                        signalProfile: currentSignalProfile,
+                        registers: nil, // Will be inferred if needed
+                        axes: nil, // Will be inferred if needed
+                        axisProfile: nil, // Will be inferred if needed
+                        alignmentScore: nil // Will be available if scored
+                    )
 
                     // Show contextual feedback form
                     showingFeedbackForm = suggestion.id
@@ -657,7 +1210,7 @@ struct RapSuggestionView: View {
                         .padding(.vertical, 10)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(.ultraThinMaterial)
+                                .fill(Momentum.surfaceElevated)
                         )
                 }
                 .buttonStyle(.plain)
@@ -672,12 +1225,12 @@ struct RapSuggestionView: View {
     private func themeTag(_ theme: String) -> some View {
         Text(theme)
             .font(.system(size: 11, weight: .medium))
-            .foregroundStyle(.secondary)
+            .foregroundStyle(Momentum.contentSecondary)
             .padding(.horizontal, 10)
             .padding(.vertical, 5)
             .background(
                 Capsule(style: .continuous)
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? 0.1 : 0))
                     .overlay(
                         Capsule(style: .continuous)
@@ -799,7 +1352,7 @@ struct RapSuggestionView: View {
                 .foregroundStyle(color)
             Text(String(format: "%.0f%%", value * 100))
                 .font(.caption2)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Momentum.contentSecondary)
         }
         .padding(.horizontal, 6)
         .padding(.vertical, 4)
@@ -816,6 +1369,7 @@ private struct SuggestionLineRow: View {
     let isLiked: Bool
     let isDisliked: Bool
     let isHighlighted: Bool
+    let isModelGMoment: Bool
     let onTap: () -> Void
 
     var body: some View {
@@ -838,6 +1392,11 @@ private struct SuggestionLineRow: View {
                 )
                 .onTapGesture { onTap() }
 
+            if isModelGMoment {
+                Text("✴")
+                    .font(.caption)
+                    .foregroundStyle(Momentum.contentSecondary)
+            }
             if isLiked {
                 Image(systemName: "hand.thumbsup.fill")
                     .font(.caption)
@@ -872,7 +1431,7 @@ struct SuggestionComparisonView: View {
                     
                     Text("Select up to 3 suggestions to compare side-by-side")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                         .padding(.horizontal)
                     
                     // Comparison grid
@@ -899,7 +1458,7 @@ struct SuggestionComparisonView: View {
             }
             .background(
                 Rectangle()
-                    .fill(.ultraThinMaterial)
+                    .fill(Momentum.surfaceElevated)
                     .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
@@ -926,14 +1485,14 @@ struct SuggestionComparisonView: View {
             if let confidence = suggestion.confidence as Double? {
                 Text("\(Int(confidence * 100))%")
                     .font(.caption2)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Momentum.contentSecondary)
             }
         }
         .padding(12)
         .frame(maxWidth: .infinity)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(.ultraThinMaterial)
+                .fill(Momentum.surfaceElevated)
         )
     }
     
@@ -973,9 +1532,32 @@ class RapSuggestionEngine: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var loadingStep: String?
     @Published var error: String?
+    @Published var silenceCommentary: CriticCommentary? = nil  // PR 6: Silence as valid output
     
     // Store previous suggestions for recall
     @Published var previousSuggestions: [RapSuggestion] = []
+    
+    // Parallel Model G v1 + v2: when true, UI shows suggestionsV1 (left) and suggestionsV2 (right) side-by-side
+    @Published var suggestionsV1: [RapSuggestion] = []
+    @Published var suggestionsV2: [RapSuggestion] = []
+    @Published var isParallelModelG: Bool = false
+    /// Model from the last `generateSuggestions` call; used for Regenerate when not in parallel Model G mode.
+    private(set) var lastStandardGenerationModel: SuggestionModel = .modelG
+    /// Stored for Regenerate when in parallel mode (ContentView passes these back into generateSuggestionsModelGParallel).
+    var lastParallelDirectedParams: DirectedGenerationParams?
+    var lastParallelRhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]?
+    
+    // Store current Signal Mode and Profile for Writers Critique
+    @Published var currentSignalMode: SignalMode?
+    @Published var currentSignalProfile: SignalProfile?
+    
+    // Store context information for critique
+    @Published var contextLineCount: Int = 0
+    @Published var fullTextLineCount: Int = 0
+    @Published var previousLines: [String] = []
+    
+    // Pre-computed A&R critiques (generated in background when suggestions are created)
+    @Published var precomputedCritiques: [LineCritique] = []
     
     private let analysisEngine = RapAnalysisEngine()
     private let api = RapSuggestionAPI.shared
@@ -984,11 +1566,16 @@ class RapSuggestionEngine: ObservableObject {
         return ConstraintFilter(phonemeStoreProvider: { getGlobalCMUDICTStore() })
     }()
     
-    func generateSuggestions(text: String, highlights: [Highlight], model: SuggestionModel = .modelG) async {
+    func generateSuggestions(text: String, highlights: [Highlight], model: SuggestionModel = .modelG, bpm: Int? = nil, key: String? = nil, scale: String? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil) async {
         await MainActor.run {
             isLoading = true
             error = nil
             suggestions = []
+            silenceCommentary = nil  // Clear any previous silence commentary
+            isParallelModelG = false
+            suggestionsV1 = []
+            suggestionsV2 = []
+            lastStandardGenerationModel = model
         }
         
         defer {
@@ -1002,66 +1589,199 @@ class RapSuggestionEngine: ObservableObject {
             await MainActor.run {
                 loadingStep = "Analyzing your verse..."
             }
-            let metrics = analysisEngine.extractMetrics(text: text, highlights: highlights)
+            let metrics = analysisEngine.extractMetrics(text: text, highlights: highlights, bpm: bpm, key: key, scale: scale)
+            
+            // Store context information for critique
+            let allLines = text.split(separator: "\n", omittingEmptySubsequences: false).map { String($0) }
+            let previousLines = Array(allLines.suffix(6))
+            let fullTextLineCount = allLines.count
+            let contextLineCount = min(6, fullTextLineCount)
+            
+            await MainActor.run {
+                self.previousLines = previousLines
+                self.fullTextLineCount = fullTextLineCount
+                self.contextLineCount = contextLineCount
+            }
             
             // SIGNAL LAYER: Step 1 - Signal Ingest (analyze behavior)
-            let signalProfile = SignalIngest.shared.analyzeBehavior(text: text)
+            let signalMetrics = SignalIngest.shared.analyzeBehavior(text: text)
+            let signalProfile = SignalIngest.shared.extractSignalProfile(text: text)
             
             // SIGNAL LAYER: Step 2 - Signal Mode Resolution
-            let signalMode = SignalMode.resolveMode(from: signalProfile)
+            let signalMode = SignalMode.resolveMode(from: signalMetrics)
+            
+            // Store for Writers Critique
+            await MainActor.run {
+                currentSignalMode = signalMode
+                currentSignalProfile = signalProfile
+            }
             
             // SIGNAL LAYER: Step 3 - Signal Axes Calibration
-            let signalAxes = SignalAxes.calibrateAxes(profile: signalProfile, mode: signalMode)
+            let signalAxes = SignalAxes.calibrateAxes(metrics: signalMetrics, mode: signalMode)
+            
+            // PR 2: Axis Profile (read-only, computed but not consumed)
+            let axisProfile = AxisProfile.calculate(metrics: signalMetrics, axes: signalAxes)
+            axisProfile.log() // Observability only
+            #if DEBUG
+            let useModelGCore = ModelGEnvironment.useModelGCore && model == .modelG
+            print("Model G: useModelGCore=\(useModelGCore), model=\(model.rawValue)")
+            #endif
+            
+            // PR 3: Register Profile Inference (artist position, not constraints)
+            let registerProfile = RegisterProfile.inferRegisters(from: signalMetrics)
             
             // SIGNAL LAYER: Step 4 - Constraint Engine
             let constraints = SignalConstraintEngine.shared.generateConstraints(mode: signalMode, axes: signalAxes)
             
-            // Step 2: Narrative analysis
-            await MainActor.run {
-                loadingStep = "Understanding themes and tone..."
-            }
-            let narrative = try await api.analyzeNarrative(
+            // THEMATIC STATE DETECTION: Check for Strength Mode
+            let strengthMode = ThematicStateDetector.shared.checkStrengthMode(
                 text: text,
-                lastNLines: metrics.lastNLines,
-                model: model
+                axes: signalAxes,
+                profile: signalProfile
             )
             
-            // Step 3: Semantic search
+            // LEXICON GATE: Filter terms before generation
             await MainActor.run {
-                loadingStep = "Searching lyrics database..."
+                loadingStep = "Filtering lexicon terms..."
             }
-            let candidates = try await api.searchLyrics(
-                narrativeSummary: narrative.summary,
-                themes: narrative.primaryThemes + narrative.secondaryThemes,
-                limit: 200
+            let lexiconGate = LexiconGate.shared
+            let lexiconGateResult = lexiconGate.filterAllowedTerms(
+                text: text,
+                axes: signalAxes,
+                profile: signalProfile,
+                scene: nil,  // Default to Atlanta
+                isKnownArtist: false  // User-generated content
             )
             
-            // Step 4: Constraint filtering
-            await MainActor.run {
-                loadingStep = "Filtering by rhyme and flow..."
+            // Handle lexicon gate silence result
+            let allowedLexiconTerms: [LexiconTerm]
+            if case .silence(let commentary) = lexiconGateResult {
+                #if DEBUG
+                print("Model G: Lexicon gate returned silence — \(commentary.reason)")
+                #endif
+                await MainActor.run {
+                    self.silenceCommentary = commentary
+                    self.suggestions = []
+                    loadingStep = nil
+                }
+                return
+            } else if case .allowed(let terms) = lexiconGateResult {
+                allowedLexiconTerms = terms
+            } else {
+                allowedLexiconTerms = []
             }
-            let filtered = filter.filterCandidates(
-                candidates: candidates,
-                metrics: metrics
-            )
             
-            // Step 5: Load model settings and user details
+            // STRENGTH MODE: If active, prefer silence (fewer outputs)
+            if strengthMode.isActive && strengthMode.prefersSilence {
+                // Bias toward fewer outputs - if we have multiple candidates, prefer silence
+                // This is handled later in the flow when we filter suggestions
+            }
+            
+            // Step 2: Narrative analysis (skip when Model G Core — it derives intent from text)
+            let narrative: NarrativeAnalysis
+            if ModelGEnvironment.useModelGCore && model == .modelG {
+                #if DEBUG
+                print("Model G: Skipping narrative analysis (Model G Core path)")
+                #endif
+                narrative = .modelGCorePlaceholder
+            } else {
+                await MainActor.run {
+                    loadingStep = "Understanding themes and tone..."
+                }
+                narrative = try await api.analyzeNarrative(
+                    text: text,
+                    lastNLines: metrics.lastNLines,
+                    model: model
+                )
+            }
+            
+            // SIGNAL LAYER-DRIVEN: Skip CSV search - generate directly from constraints
+            // Step 3: Load model settings and user details
             let modelSettings = api.loadModelSettings(for: model)
             let userDetails = api.loadUserPersonalDetails()
             
-            // Step 6: Generate suggestions (with SIGNAL LAYER constraints)
+            // Step 4: Generate suggestions
             await MainActor.run {
-                loadingStep = "Generating suggestions..."
+                loadingStep = ModelGEnvironment.useModelGCore && model == .modelG
+                    ? "Model G Core"
+                    : "Generating from signal constraints..."
             }
+            #if DEBUG
+            print("Model G: Calling generateSuggestions (useModelGCore=\(ModelGEnvironment.useModelGCore))...")
+            #endif
             var finalSuggestions = try await api.generateSuggestions(
-                candidates: filtered.map { $0.line },
+                candidates: [], // Empty - generate from scratch
                 metrics: metrics,
                 narrative: narrative,
                 model: model,
                 settings: modelSettings,
                 userDetails: userDetails,
-                constraints: constraints
+                constraints: constraints,
+                registers: registerProfile,
+                signalProfile: signalProfile,
+                signalAxes: signalAxes,
+                allowedLexiconTerms: allowedLexiconTerms,
+                directedParams: directedParams,
+                rhymeGroupsByID: rhymeGroupsByID,
+                audioURL: audioURL,
+                transcriptionRhythmMapData: transcriptionRhythmMapData
             )
+            #if DEBUG
+            print("Model G: Generated \(finalSuggestions.count) suggestion(s)")
+            #endif
+            
+            // PR 4: Internal Alignment Scoring (scores logged but not exposed to UI)
+            let alignmentScores = finalSuggestions.map { suggestion in
+                AlignmentScorer.shared.scoreSuggestion(
+                    suggestion: suggestion,
+                    userText: text,
+                    userProfile: signalProfile,
+                    axes: signalAxes,
+                    axisProfile: axisProfile,
+                    registers: registerProfile
+                )
+            }
+            
+            // PR 6: Check alignment threshold - allow silence if no candidate passes
+            let alignmentThreshold = 0.4 // Minimum alignment score required
+            let passingSuggestions = finalSuggestions.enumerated().filter { index, _ in
+                alignmentScores[index].totalScore >= alignmentThreshold
+            }.map { $0.element }
+            
+            // If no suggestions pass threshold, create silence commentary
+            if passingSuggestions.isEmpty && !finalSuggestions.isEmpty {
+                let silenceCommentary = Self.createSilenceCommentary(
+                    mode: signalMode,
+                    profile: signalProfile,
+                    axes: signalAxes,
+                    highestScore: alignmentScores.map { $0.totalScore }.max() ?? 0.0
+                )
+                
+                await MainActor.run {
+                    // Store silence commentary for display
+                    self.silenceCommentary = silenceCommentary
+                    self.suggestions = []
+                    loadingStep = nil
+                }
+                return
+            }
+            
+            // Use passing suggestions, or all if threshold not enforced yet
+            var suggestionsToUse = passingSuggestions.isEmpty ? finalSuggestions : passingSuggestions
+            
+            // STRENGTH MODE: Prefer silence (fewer outputs) - one restrained line beats multiple decent ones
+            if strengthMode.isActive && strengthMode.prefersSilence {
+                // If we have multiple suggestions, prefer only the best one (or silence)
+                if suggestionsToUse.count > 1 {
+                    // Sort by signal strength and take only the top one
+                    let sorted = suggestionsToUse.sorted { (s1, s2) -> Bool in
+                        let strength1 = s1.signalStrength ?? s1.confidence
+                        let strength2 = s2.signalStrength ?? s2.confidence
+                        return strength1 > strength2
+                    }
+                    suggestionsToUse = Array(sorted.prefix(1))  // Only keep the best one
+                }
+            }
             
             // SIGNAL LAYER: Step 6 - Signal Evaluation
             let evaluations = finalSuggestions.map { suggestion in
@@ -1091,8 +1811,17 @@ class RapSuggestionEngine: ObservableObject {
             // SIGNAL LAYER: Step 9 - Signal Memory (track patterns)
             SignalMemory.shared.recordPatterns(from: finalSuggestions)
             
+            // LEXICON: Track thematic state for memory
+            let thematicState = ThematicStateDetector.shared.detectState(
+                text: text,
+                axes: signalAxes,
+                profile: signalProfile
+            )
+            SignalMemory.shared.recordThematicState(thematicState)
+            
             await MainActor.run {
-                suggestions = finalSuggestions
+                suggestions = suggestionsToUse
+                silenceCommentary = nil  // Clear any previous silence
                 // Save to previous suggestions (append to history, limit to last 50)
                 previousSuggestions.append(contentsOf: finalSuggestions)
                 if previousSuggestions.count > 50 {
@@ -1101,12 +1830,320 @@ class RapSuggestionEngine: ObservableObject {
                 loadingStep = nil
             }
             
-        } catch {
+            // Background: Pre-compute A&R critiques for seamless opening
+            // PR 10: Pass GeneratorPolicy to critique generator
+            Task.detached(priority: .utility) {
+                let critiques = await MainActor.run {
+                    ARCritiqueGenerator.shared.analyzeTextForCritiques(
+                        text: text,
+                        policy: narrative.generatorPolicy  // Pass policy for policy-aware critiques
+                    )
+                }
+                await MainActor.run {
+                    self.precomputedCritiques = critiques
+                }
+            }
+            
+        } catch let apiError as RapAPIError {
+            #if DEBUG
+            print("Model G: RapAPIError — \(apiError.localizedDescription)")
+            #endif
             await MainActor.run {
-                self.error = error.localizedDescription
+                switch apiError {
+                case .silence(let commentary):
+                    // Handle silence response gracefully
+                    self.silenceCommentary = commentary
+                    self.suggestions = []
+                    self.error = nil  // Don't show as error, show as silence
+                    loadingStep = nil
+                    
+                    // Store silence for analytics (not as error, but as valid output)
+                    ErrorStorageManager.shared.storeError(
+                        "API returned silence: \(commentary.reason)",
+                        source: "AI Sparkle Button",
+                        context: "Explanation: \(commentary.explanation). Guidance: \(commentary.guidance)"
+                    )
+                    
+                default:
+                    // Handle other API errors
+                    let errorMessage = apiError.localizedDescription
+                    self.error = errorMessage
+                    self.silenceCommentary = nil
+                    loadingStep = nil
+                    
+                    // Store error for analytics
+                    ErrorStorageManager.shared.storeError(
+                        errorMessage,
+                        source: "AI Sparkle Button",
+                        context: "Rap Suggestion Generation - \(loadingStep ?? "Unknown step")"
+                    )
+                    // In-app notification with short explanation
+                    let shortMessage = apiError.inAppNotificationMessage
+                    if !shortMessage.isEmpty {
+                        NotificationCenter.default.post(
+                            name: .inAppAPIError,
+                            object: nil,
+                            userInfo: [InAppAPIErrorPayload.messageKey: shortMessage]
+                        )
+                    }
+                }
+            }
+        } catch {
+            #if DEBUG
+            print("Model G: Error — \(error)")
+            #endif
+            await MainActor.run {
+                let errorMessage = error.localizedDescription
+                self.error = errorMessage
+                self.silenceCommentary = nil
                 loadingStep = nil
+                
+                // Store error for analytics
+                ErrorStorageManager.shared.storeError(
+                    errorMessage,
+                    source: "AI Sparkle Button",
+                    context: "Rap Suggestion Generation - \(loadingStep ?? "Unknown step")"
+                )
+                // In-app notification with short explanation
+                let shortMessage = Self.shortMessageForError(error)
+                NotificationCenter.default.post(
+                    name: .inAppAPIError,
+                    object: nil,
+                    userInfo: [InAppAPIErrorPayload.messageKey: shortMessage]
+                )
             }
         }
+    }
+    
+    /// Run Model G Core v1 and v2 in parallel; results go to suggestionsV1 (left) and suggestionsV2 (right) for side-by-side UI.
+    func generateSuggestionsModelGParallel(text: String, highlights: [Highlight], bpm: Int? = nil, key: String? = nil, scale: String? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil) async {
+        await MainActor.run {
+            isLoading = true
+            error = nil
+            suggestions = []
+            suggestionsV1 = []
+            suggestionsV2 = []
+            silenceCommentary = nil
+            isParallelModelG = false
+            loadingStep = "Model G v1 & v2..."
+            lastStandardGenerationModel = .modelG
+        }
+        defer {
+            Task { @MainActor in
+                isLoading = false
+            }
+        }
+        do {
+            await MainActor.run { loadingStep = "Analyzing your verse..." }
+            let metrics = analysisEngine.extractMetrics(text: text, highlights: highlights, bpm: bpm, key: key, scale: scale)
+            let allLines = text.split(separator: "\n", omittingEmptySubsequences: false).map { String($0) }
+            let previousLines = Array(allLines.suffix(6))
+            let fullTextLineCount = allLines.count
+            let contextLineCount = min(6, fullTextLineCount)
+            await MainActor.run {
+                self.previousLines = previousLines
+                self.fullTextLineCount = fullTextLineCount
+                self.contextLineCount = contextLineCount
+            }
+            let signalMetrics = SignalIngest.shared.analyzeBehavior(text: text)
+            let signalProfile = SignalIngest.shared.extractSignalProfile(text: text)
+            let signalMode = SignalMode.resolveMode(from: signalMetrics)
+            let signalAxes = SignalAxes.calibrateAxes(metrics: signalMetrics, mode: signalMode)
+            await MainActor.run {
+                currentSignalMode = signalMode
+                currentSignalProfile = signalProfile
+            }
+            let registerProfile = RegisterProfile.inferRegisters(from: signalMetrics)
+            let constraints = SignalConstraintEngine.shared.generateConstraints(mode: signalMode, axes: signalAxes)
+            await MainActor.run { loadingStep = "Filtering lexicon terms..." }
+            let lexiconGate = LexiconGate.shared
+            let lexiconGateResult = lexiconGate.filterAllowedTerms(
+                text: text,
+                axes: signalAxes,
+                profile: signalProfile,
+                scene: nil,
+                isKnownArtist: false
+            )
+            if case .silence(let commentary) = lexiconGateResult {
+                await MainActor.run {
+                    self.silenceCommentary = commentary
+                    self.suggestionsV1 = []
+                    self.suggestionsV2 = []
+                    loadingStep = nil
+                }
+                return
+            }
+            let allowedLexiconTerms: [LexiconTerm]
+            if case .allowed(let terms) = lexiconGateResult {
+                allowedLexiconTerms = terms
+            } else {
+                allowedLexiconTerms = []
+            }
+            let narrative: NarrativeAnalysis = .modelGCorePlaceholder
+            let modelSettings = api.loadModelSettings(for: .modelG)
+            let userDetails = api.loadUserPersonalDetails()
+            await MainActor.run { loadingStep = "Model G v1 & v2..." }
+            async let v1Task = api.generateSuggestions(
+                candidates: [],
+                metrics: metrics,
+                narrative: narrative,
+                model: .modelG,
+                settings: modelSettings,
+                userDetails: userDetails,
+                constraints: constraints,
+                registers: registerProfile,
+                signalProfile: signalProfile,
+                signalAxes: signalAxes,
+                allowedLexiconTerms: allowedLexiconTerms,
+                directedParams: directedParams,
+                rhymeGroupsByID: rhymeGroupsByID,
+                audioURL: audioURL,
+                transcriptionRhythmMapData: transcriptionRhythmMapData,
+                modelGVariantOverride: false
+            )
+            async let v2Task = api.generateSuggestions(
+                candidates: [],
+                metrics: metrics,
+                narrative: narrative,
+                model: .modelG,
+                settings: modelSettings,
+                userDetails: userDetails,
+                constraints: constraints,
+                registers: registerProfile,
+                signalProfile: signalProfile,
+                signalAxes: signalAxes,
+                allowedLexiconTerms: allowedLexiconTerms,
+                directedParams: directedParams,
+                rhymeGroupsByID: rhymeGroupsByID,
+                audioURL: audioURL,
+                transcriptionRhythmMapData: transcriptionRhythmMapData,
+                modelGVariantOverride: true
+            )
+            var resultsV1: [RapSuggestion] = []
+            var resultsV2: [RapSuggestion] = []
+            do { resultsV1 = try await v1Task } catch {
+                #if DEBUG
+                print("Model G parallel: v1 failed — \(error)")
+                #endif
+            }
+            do { resultsV2 = try await v2Task } catch {
+                #if DEBUG
+                print("Model G parallel: v2 failed — \(error)")
+                #endif
+            }
+            await MainActor.run {
+                self.suggestionsV1 = resultsV1
+                self.suggestionsV2 = resultsV2
+                self.isParallelModelG = true
+                self.lastParallelDirectedParams = directedParams
+                self.lastParallelRhymeGroupsByID = rhymeGroupsByID
+                self.error = nil
+                self.silenceCommentary = nil
+                self.loadingStep = nil
+                self.previousSuggestions.append(contentsOf: resultsV1)
+                self.previousSuggestions.append(contentsOf: resultsV2)
+                if self.previousSuggestions.count > 50 {
+                    self.previousSuggestions = Array(self.previousSuggestions.suffix(50))
+                }
+            }
+        } catch {
+            #if DEBUG
+            print("Model G parallel: Error — \(error)")
+            #endif
+            await MainActor.run {
+                self.error = error.localizedDescription
+                self.suggestionsV1 = []
+                self.suggestionsV2 = []
+                self.isParallelModelG = false
+                self.loadingStep = nil
+                let shortMessage = Self.shortMessageForError(error)
+                NotificationCenter.default.post(
+                    name: .inAppAPIError,
+                    object: nil,
+                    userInfo: [InAppAPIErrorPayload.messageKey: shortMessage]
+                )
+            }
+        }
+    }
+    
+    // MARK: - In-app error notification helpers
+    
+    /// Short user-facing message for in-app toast when an error is not RapAPIError.
+    private static func shortMessageForError(_ error: Error) -> String {
+        if let apiError = error as? RapAPIError, !apiError.inAppNotificationMessage.isEmpty {
+            return apiError.inAppNotificationMessage
+        }
+        if let modelGError = error as? ModelGLLMError {
+            switch modelGError {
+            case .missingAPIKey:
+                return "API key missing. Add your OpenAI key in Settings."
+            case .rateLimitExceeded(let sec):
+                let wait = sec ?? 60
+                return "Too many requests. Wait \(wait)s and try again."
+            case .requestFailed:
+                return "Request failed. Check your connection and try again."
+            }
+        }
+        let lower = error.localizedDescription.lowercased()
+        if lower.contains("rate") || lower.contains("429") || lower.contains("limit") {
+            return "Too many requests. Wait a minute and try again."
+        }
+        if lower.contains("key") || lower.contains("api") {
+            return "API issue. Check your key in Settings."
+        }
+        if lower.contains("network") || lower.contains("connection") || lower.contains("timed out") {
+            return "Connection problem. Check your network and try again."
+        }
+        return "Something went wrong. Try again."
+    }
+    
+    // MARK: - Silence Commentary
+    
+    /// Create silence commentary when no suggestions pass alignment threshold
+    private static func createSilenceCommentary(
+        mode: SignalMode,
+        profile: SignalProfile,
+        axes: SignalAxes,
+        highestScore: Double
+    ) -> CriticCommentary {
+        let explanation: String
+        let reason: String
+        let guidance: String
+        
+        // Generate explanation based on signal mode and alignment score
+        if highestScore < 0.2 {
+            explanation = "No lines generated that align with your current signal profile."
+            reason = "Alignment score too low (\(String(format: "%.1f", highestScore * 100))%). Generated lines don't match your register position or axis profile."
+        } else {
+            explanation = "Generated lines don't meet the minimum alignment threshold."
+            reason = "Highest alignment score (\(String(format: "%.1f", highestScore * 100))%) is below the required threshold (40%)."
+        }
+        
+        // Generate guidance based on signal mode
+        switch mode {
+        case .uncontainedVulnerability:
+            guidance = "Consider processing your thoughts more directly. The current register may be too vulnerable or explanatory for strong line generation."
+        case .informationRefusal:
+            guidance = "Your holding back position is valid, but it may limit line generation. Consider if you want to maintain this distance or allow more expression."
+        case .noRepair:
+            guidance = "The closed position is strong, but it may be too final for generating new lines. Consider if you want to maintain closure or explore what led to it."
+        case .voluntaryIsolation:
+            guidance = "Distance without hostility is powerful, but it may limit generative options. Consider if you want to maintain this calm separation."
+        case .lossAcknowledgmentWithoutAttribution:
+            guidance = "Loss processing is important, but it may be too emotional for strong line generation. Consider balancing emotion with structure."
+        case .postChaosStabilization:
+            guidance = "Stabilizing mode focuses on logistics, which may limit creative line generation. Consider if you want to maintain this practical focus."
+        case .declarativeClosureWithoutEvidence:
+            guidance = "Declarative closure is strong, but it may be too final for generating new lines. Consider if you want to maintain this position or explore alternatives."
+        case .defaultExpressive:
+            guidance = "The current expressive mode may not align well with line generation. Consider adjusting your approach or signal profile."
+        }
+        
+        return CriticCommentary(
+            explanation: explanation,
+            reason: reason,
+            guidance: guidance
+        )
     }
 }
 
@@ -1262,7 +2299,7 @@ struct ContextualFeedbackView: View {
                     
                     Text("What were you looking for? What did you expect?")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(Momentum.contentSecondary)
                 }
             }
             .navigationTitle("Feedback")
