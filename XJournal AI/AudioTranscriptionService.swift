@@ -87,9 +87,19 @@ class AudioTranscriptionService: ObservableObject {
     }
     
     /// Transcribe audio file with word-level timestamps.
-    /// On iOS 26+, uses SpeechAnalyzer + SpeechTranscriber for on-device, phrase-aware transcription.
-    /// Otherwise uses SFSpeechRecognizer.
+    /// Backend is chosen by the `transcription_backend` setting:
+    ///  - `"whisper"` + a valid OpenAI (`sk-…`) key → OpenAI Whisper API.
+    ///  - otherwise → on-device Apple Speech (SpeechAnalyzer on iOS 26+, else SFSpeechRecognizer).
+    /// Whisper requires an OpenAI key specifically; Gemini (`AIza…`) keys are not supported and
+    /// transparently fall back to Apple so transcription never silently breaks.
     func transcribe(audioURL: URL) async throws -> TranscriptionResult {
+        let backend = UserDefaults.standard.string(forKey: "transcription_backend") ?? "apple"
+        if backend == "whisper",
+           let apiKey = KeychainHelper.shared.getAPIKey(),
+           apiKey.hasPrefix("sk-") {
+            return try await transcribeWithWhisper(audioURL: audioURL, apiKey: apiKey)
+        }
+
         if #available(iOS 26.0, *) {
             return try await SpeechAnalyzerEngine.transcribe(audioURL: audioURL)
         }
@@ -201,5 +211,107 @@ class AudioTranscriptionService: ObservableObject {
                 continuation.resume(throwing: TranscriptionError.transcriptionFailed("Recognition task was cancelled"))
             }
         }
+    }
+
+    // MARK: - OpenAI Whisper
+
+    /// Transcribe via the OpenAI Whisper API (`whisper-1`, verbose_json for segment timings).
+    /// Uses the same OpenAI key as Model G (Keychain `openai_api_key`).
+    private func transcribeWithWhisper(audioURL: URL, apiKey: String) async throws -> TranscriptionResult {
+        guard FileManager.default.fileExists(atPath: audioURL.path) else {
+            throw TranscriptionError.audioFileNotFound
+        }
+
+        isTranscribing = true
+        progress = 0.1
+        defer {
+            isTranscribing = false
+            progress = 0.0
+        }
+
+        let fileData = try Data(contentsOf: audioURL)
+        let boundary = "Boundary-\(UUID().uuidString)"
+        var request = URLRequest(url: URL(string: "https://api.openai.com/v1/audio/transcriptions")!)
+        request.httpMethod = "POST"
+        request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+
+        var body = Data()
+        func appendField(_ name: String, _ value: String) {
+            body.append("--\(boundary)\r\n".data(using: .utf8)!)
+            body.append("Content-Disposition: form-data; name=\"\(name)\"\r\n\r\n".data(using: .utf8)!)
+            body.append("\(value)\r\n".data(using: .utf8)!)
+        }
+        appendField("model", "whisper-1")
+        appendField("response_format", "verbose_json")
+        body.append("--\(boundary)\r\n".data(using: .utf8)!)
+        body.append("Content-Disposition: form-data; name=\"file\"; filename=\"\(audioURL.lastPathComponent)\"\r\n".data(using: .utf8)!)
+        body.append("Content-Type: audio/m4a\r\n\r\n".data(using: .utf8)!)
+        body.append(fileData)
+        body.append("\r\n".data(using: .utf8)!)
+        body.append("--\(boundary)--\r\n".data(using: .utf8)!)
+
+        progress = 0.4
+        let (data, response) = try await URLSession.shared.upload(for: request, from: body)
+        guard let http = response as? HTTPURLResponse else {
+            throw TranscriptionError.transcriptionFailed("No response from the Whisper API.")
+        }
+        guard http.statusCode == 200 else {
+            switch http.statusCode {
+            case 401:
+                throw TranscriptionError.transcriptionFailed("OpenAI rejected the API key (401). Re-check your key in Profile → AI.")
+            case 429:
+                throw TranscriptionError.transcriptionFailed("OpenAI rate limit reached (429). Try again shortly, or switch to on-device transcription.")
+            default:
+                let detail = String(data: data, encoding: .utf8) ?? "status \(http.statusCode)"
+                throw TranscriptionError.transcriptionFailed("Whisper API error \(http.statusCode): \(detail.prefix(200))")
+            }
+        }
+
+        progress = 0.8
+        let parsed = try JSONDecoder().decode(WhisperVerboseResponse.self, from: data)
+
+        var fullText = ""
+        var segments: [TranscriptionSegment] = []
+        let whisperSegments = parsed.segments ?? []
+        if whisperSegments.isEmpty {
+            fullText = parsed.text.trimmingCharacters(in: .whitespacesAndNewlines)
+        } else {
+            for seg in whisperSegments {
+                let text = seg.text.trimmingCharacters(in: .whitespacesAndNewlines)
+                guard !text.isEmpty else { continue }
+                if !fullText.isEmpty { fullText += " " }
+                let startIndex = fullText.count
+                fullText += text
+                segments.append(TranscriptionSegment(
+                    text: text,
+                    timestamp: seg.start,
+                    duration: max(0, seg.end - seg.start),
+                    startIndex: startIndex,
+                    length: text.count
+                ))
+            }
+        }
+
+        let trimmed = fullText.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else {
+            throw TranscriptionError.transcriptionFailed("Whisper returned no speech. Check the recording contains clear audio.")
+        }
+
+        progress = 1.0
+        return TranscriptionResult(fullText: fullText, segments: segments)
+    }
+}
+
+// MARK: - Whisper verbose_json response
+
+private struct WhisperVerboseResponse: Decodable {
+    let text: String
+    let segments: [WhisperSegment]?
+
+    struct WhisperSegment: Decodable {
+        let start: Double
+        let end: Double
+        let text: String
     }
 }

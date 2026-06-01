@@ -501,15 +501,13 @@ struct AnalyticsDashboardView: View {
         case tokens = "Tokens"
         case jsonValidation = "JSON"
         case errorCorrelation = "Correlation"
-        case whatsNew = "What's New"
-        case social = "Social"
     }
 
     // MARK: - Momentum tab bar (pills + grouped diagnostics)
 
     /// User-facing sections shown as primary pills.
     private var primarySections: [AnalyticsTab] {
-        [.overview, .modelGScores, .rewards, .whatsNew, .social]
+        [.overview, .modelGScores, .rewards]
     }
 
     /// Developer/telemetry views, folded behind the "Diagnostics" group pill.
@@ -530,8 +528,6 @@ struct AnalyticsDashboardView: View {
         case .overview:         return "square.grid.2x2.fill"
         case .modelGScores:     return "music.note"
         case .rewards:          return "cube.fill"
-        case .whatsNew:         return "sparkles"
-        case .social:           return "person.2.fill"
         case .errors:           return "exclamationmark.triangle.fill"
         case .network:          return "dot.radiowaves.left.and.right"
         case .tokens:           return "number"
@@ -891,10 +887,6 @@ struct AnalyticsDashboardView: View {
                             feedbackAnalyticsSection
                         case .errors:
                             errorAnalyticsSection
-                        case .whatsNew:
-                            whatsNewSection
-                        case .social:
-                            socialSection
                         case .apiDebug:
                             #if DEBUG
                             APIDebugInspectorView()

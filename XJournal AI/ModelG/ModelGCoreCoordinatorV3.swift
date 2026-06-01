@@ -146,7 +146,7 @@ class ModelGCoreCoordinatorV3 {
     ) -> GenerationContext {
         GenerationContext(
             intent: intent, beatFingerprint: beat, styleProfile: style, directedParams: directedParams,
-            luxuryLayer: luxury, userTasteVector: .neutral,
+            luxuryLayer: luxury, userTasteVector: UserTasteStore.shared.currentVector(),
             syllableTarget: Self.tempoSyllableTarget(bpm: bpm) ?? defaultSyllableTarget,
             barIndex: barIndex, isHook: false, existingBars: existingBars, riskIndex: riskManager.riskIndex,
             flowDNAFeatures: nil, rhythmMap: nil, perBarSyllableTargets: nil,

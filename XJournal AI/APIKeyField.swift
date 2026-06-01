@@ -44,7 +44,12 @@ struct APIKeyField: View {
         case .openAI, .unknown: return URL(string: "https://platform.openai.com/api-keys")
         }
     }
-    private var getKeyLabel: String { provider == .gemini ? "Get Gemini key" : "Get OpenAI key" }
+    private var getKeyLabel: String {
+        if let host = fixedGetKeyURL?.host() {            // non-AI field (e.g. Genius) — don't assume OpenAI
+            return host.contains("genius") ? "Get Genius key" : "Get key"
+        }
+        return provider == .gemini ? "Get Gemini key" : "Get OpenAI key"
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {

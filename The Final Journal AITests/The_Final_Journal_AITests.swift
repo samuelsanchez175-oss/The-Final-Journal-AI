@@ -6,7 +6,7 @@
 //
 
 import Testing
-@testable import The_Final_Journal_AI
+@testable import XJournal_AI
 
 struct The_Final_Journal_AITests {
 

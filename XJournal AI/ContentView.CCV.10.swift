@@ -254,24 +254,28 @@ struct JournalLibraryView: View {
                 JournalDetailPlaceholderView()
             }
         }
-        .popover(isPresented: $showProfile, arrowEdge: .top) {
+        .sheet(isPresented: $showProfile) {
             ProfilePopoverView()
+                .presentationDetents([PresentationDetent.large])
+                .presentationDragIndicator(Visibility.visible)
         }
         .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("ShowProfile"))) { _ in
             showProfile = true
         }
         .sheet(isPresented: $showReleaseNotes) {
             ReleaseNotesSheetView()
-                .presentationDetents([PresentationDetent.medium, PresentationDetent.large])
+                .presentationDetents([PresentationDetent.large])
                 .presentationDragIndicator(Visibility.visible)
         }
         .sheet(isPresented: $showSupportShop) {
             SupportShopSheetView()
-                .presentationDetents([PresentationDetent.medium, PresentationDetent.large])
+                .presentationDetents([PresentationDetent.large])
                 .presentationDragIndicator(Visibility.visible)
         }
         .sheet(isPresented: $showAnalytics) {
             AnalyticsDashboardView()
+                .presentationDetents([PresentationDetent.large])
+                .presentationDragIndicator(Visibility.visible)
         }
         .overlay {
             if showAchievementCelebration, let achievement = currentAchievement {

@@ -62,3 +62,20 @@ eval/captures/e*.txt
 /XJournal AI/SIGNAL_LAYER_POWER_UPGRADES.md
 /XJournal AI/SIGNAL_LAYER_USER_GUIDE.md
 /XJournal AI/SignalDrivenGeneration.md
+
+# ── iCloud / Finder duplicate artifacts ──────────────────────────────────────
+# This repo lives in an iCloud-synced folder, which periodically forks files as
+# "<name> 2.ext", "<name> 3.ext", … These are NEVER real source. Verified at add
+# time that NO tracked file matches this pattern, so committed files are unaffected
+# (.gitignore only hides untracked files). The real fix is to move the repo out of
+# iCloud Drive — these rules are a stopgap so the dupes stop reappearing in status.
+* [2-9].swift
+* [2-9].md
+* [2-9].plist
+* [2-9].json
+* [2-9].entitlements
+* [2-9].storyboard
+* [2-9].pbxproj
+* [2-9].h
+* [2-9].m
+.gitignore [2-9]

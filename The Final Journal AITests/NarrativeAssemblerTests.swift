@@ -1,5 +1,5 @@
 import XCTest
-@testable import The_Final_Journal_AI
+@testable import XJournal_AI
 
 final class NarrativeAssemblerTests: XCTestCase {
 

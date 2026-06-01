@@ -166,33 +166,16 @@ struct NoteEditorView: View {
     
     // MARK: - AI Text Highlights
     
+    /// Pure: builds blue highlights for the currently-stored AI text ranges.
+    /// MUST NOT mutate model state — this runs inside `computedHighlights` during view
+    /// updates. Stale/out-of-bounds ranges are simply skipped here; they get pruned
+    /// off the render path in `pruneInvalidAITextRanges()`.
     private func calculateAITextHighlights(text: String) -> [Highlight] {
         guard !text.isEmpty, !item.aiTextRanges.isEmpty else { return [] }
-        
+
         var highlights: [Highlight] = []
-        var validRanges: [String] = [] // Track valid ranges for cleanup
-        
         for rangeString in item.aiTextRanges {
-            let components = rangeString.split(separator: ":")
-            guard components.count == 2,
-                  let start = Int(components[0]),
-                  let end = Int(components[1]),
-                  start >= 0,
-                  end <= text.count,
-                  start < end else {
-                // Range is invalid, skip it (will be cleaned up)
-                continue
-            }
-            
-            // Create range safely with bounds checking using limitedBy
-            guard let startIndex = text.index(text.startIndex, offsetBy: start, limitedBy: text.endIndex),
-                  let endIndex = text.index(text.startIndex, offsetBy: end, limitedBy: text.endIndex),
-                  startIndex < endIndex else {
-                continue
-            }
-            
-            let range = startIndex..<endIndex
-            
+            guard let range = aiTextRange(from: rangeString, in: text) else { continue }
             // Use blue color (index 3) for AI-generated text
             highlights.append(Highlight(
                 range: range,
@@ -200,15 +183,39 @@ struct NoteEditorView: View {
                 strength: .perfect,
                 rhymeType: .endRhyme
             ))
-            validRanges.append(rangeString) // Track valid ranges
         }
-        
-        // Clean up invalid ranges if any were removed
+        return highlights
+    }
+
+    /// Parses a "start:end" character-offset range string into a `String` range,
+    /// bounds-checked against `text`. Returns nil when the range is malformed or no
+    /// longer fits the text (e.g. after an edit shortened the body).
+    private func aiTextRange(from rangeString: String, in text: String) -> Range<String.Index>? {
+        let components = rangeString.split(separator: ":")
+        guard components.count == 2,
+              let start = Int(components[0]),
+              let end = Int(components[1]),
+              start >= 0,
+              end <= text.count,
+              start < end,
+              let startIndex = text.index(text.startIndex, offsetBy: start, limitedBy: text.endIndex),
+              let endIndex = text.index(text.startIndex, offsetBy: end, limitedBy: text.endIndex),
+              startIndex < endIndex else {
+            return nil
+        }
+        return startIndex..<endIndex
+    }
+
+    /// Drops AI text ranges that no longer fit the current body. Call this OFF the render
+    /// path (e.g. from `.onChange(of: item.body)`) — it writes to the model, so it must
+    /// never run during view-body evaluation.
+    private func pruneInvalidAITextRanges() {
+        guard !item.aiTextRanges.isEmpty else { return }
+        let text = item.body
+        let validRanges = item.aiTextRanges.filter { aiTextRange(from: $0, in: text) != nil }
         if validRanges.count != item.aiTextRanges.count {
             item.aiTextRanges = validRanges
         }
-        
-        return highlights
     }
     
     // MARK: - Context Highlights (Last 4 lines for AI suggestions)
@@ -362,21 +369,6 @@ struct NoteEditorView: View {
                 .scaleEffect(scrollOffset < -20 ? 0.94 : 1.0)
                 .opacity(scrollOffset < -20 ? 0.6 : 1.0)
                 .animation(.easeOut(duration: 0.2), value: scrollOffset)
-                .onAppear {
-                    // #region agent log
-                    let logData: [String: Any] = ["sessionId": "debug-session", "runId": "run1", "hypothesisId": "D", "location": "ContentView.CCV.13.swift:298", "message": "TextField appeared", "data": ["title": item.title, "titleLength": item.title.count], "timestamp": Int(Date().timeIntervalSince1970 * 1000)]
-                    let logPath = "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log"
-                    if let jsonData = try? JSONSerialization.data(withJSONObject: logData), let jsonString = String(data: jsonData, encoding: .utf8) {
-                        if let fileHandle = FileHandle(forWritingAtPath: logPath) {
-                            fileHandle.seekToEndOfFile()
-                            fileHandle.write((jsonString + "\n").data(using: .utf8)!)
-                            fileHandle.closeFile()
-                        } else {
-                            try? (jsonString + "\n").write(toFile: logPath, atomically: true, encoding: .utf8)
-                        }
-                    }
-                    // #endregion
-                }
 
             // MARK: - Metadata Pills Section
             metadataPillsView
@@ -556,49 +548,7 @@ struct NoteEditorView: View {
         // This prevents the entire view from shifting upward when focus is gained
         .ignoresSafeArea(.keyboard, edges: .bottom)
         .safeAreaInset(edge: .bottom) {
-            DynamicIslandToolbarView(
-                isExpanded: $isToolbarExpanded,
-                isRhymeOverlayVisible: $isRhymeOverlayVisible,
-                showDiagnostics: $showRhymeDiagnostics,
-                rhymeGroups: rhymeGroups,
-                currentText: item.body,
-                highlights: computedHighlights,
-                isEditorFocused: $isEditorFocused,
-                keyboardHeight: $keyboardObserver.height,
-                showAudioRecorder: $showAudioRecorder,
-                showRapSuggestions: $showRapSuggestions,
-                showModelGControlSurface: $showModelGControlSurface,
-                rapSuggestionEngine: rapSuggestionEngine,
-                isShowingRecalled: $isShowingRecalled,
-                showContextHighlight: $showContextHighlight,
-                showAudioImporter: $showAudioImporter,
-                showImportNotesInstructions: $showImportNotesInstructions,
-                onRewriteLine: handleRewriteLine,
-                onSuggestRhymes: handleSuggestRhymes,
-                onImproveFlow: handleImproveFlow,
-                onUndo: handleUndo,
-                onRedo: handleRedo,
-                onInsertRapSuggestion: { suggestion in insertRapSuggestion(suggestion, isAIGenerated: true) },
-                canUndo: !undoHistory.isEmpty,
-                canRedo: !redoHistory.isEmpty,
-                isRewritingLine: $isRewritingLine,
-                isImprovingFlow: $isImprovingFlow,
-                rewriteLineLoadingStep: $rewriteLineLoadingStep,
-                improveFlowLoadingStep: $improveFlowLoadingStep,
-                showPaywall: $showPaywall,
-                paywallFeature: $paywallFeature,
-                showAIErrorToast: $showAIErrorToast,
-                aiErrorMessage: $aiErrorMessage,
-                showGenerateLyricsFromFlowSheet: $showGenerateLyricsFromFlowSheet,
-                showARCritiqueSheet: $showARCritiqueSheet,
-                showThemeExpansionSheet: $showThemeExpansionSheet,
-                showExportSheet: $showExportSheet,
-                insertRapSuggestion: insertRapSuggestion,
-                extractThemes: extractThemes,
-                showAIError: showAIErrorWrapper,
-                item: item
-            )
-            .frame(maxWidth: 680)
+            bottomToolbar
         }
         .onReceive(NotificationCenter.default.publisher(for: .inAppAPIError)) { notification in
             guard let msg = notification.userInfo?[InAppAPIErrorPayload.messageKey] as? String, !msg.isEmpty else { return }
@@ -761,69 +711,7 @@ struct NoteEditorView: View {
             )
         }
         .toolbar {
-            ToolbarItemGroup(placement: .navigationBarTrailing) {
-                Button {
-                    HapticFeedbackManager.shared.lightTap()
-                    handleUndo()
-                } label: {
-                    Image(systemName: "arrow.uturn.backward")
-                }
-                .disabled(undoHistory.isEmpty)
-                .accessibilityLabel("Undo")
-                .accessibilityHint("Double tap to undo last change")
-                
-                Button {
-                    HapticFeedbackManager.shared.lightTap()
-                    handleRedo()
-                } label: {
-                    Image(systemName: "arrow.uturn.forward")
-                }
-                .disabled(redoHistory.isEmpty)
-                .accessibilityLabel("Redo")
-                .accessibilityHint("Double tap to redo last undone change")
-                
-                Menu {
-                    Button {
-                        prepareHapticForNewNote()
-                        createAndNavigateToNewNote()
-                    } label: {
-                        Label("New Note", systemImage: "square.and.pencil")
-                    }
-
-                    Button {
-                        // TODO: Import from Apple Notes
-                    } label: {
-                        Label("Import from Notes", systemImage: "note.text")
-                    }
-
-                    Button {
-                        openAudioRecorder()
-                    } label: {
-                        Label("Record Audio", systemImage: "waveform")
-                    }
-                    
-                    // Phase 5: Export functionality (Basic+)
-                    if FeatureGate.canAccess(.exportPDF) || FeatureGate.canAccess(.exportWord) {
-                        Divider()
-                        
-                        Button {
-                            HapticFeedbackManager.shared.lightTap()
-                            // Check feature access before showing sheet
-                            if !FeatureGate.checkAccess(.exportPDF, showPaywall: { featureName in
-                                paywallFeature = featureName
-                                showPaywall = true
-                            }) {
-                                return
-                            }
-                            showExportSheet = true
-                        } label: {
-                            Label("Export Note", systemImage: "square.and.arrow.up")
-                        }
-                    }
-                } label: {
-                    Image(systemName: "plus")
-                }
-            }
+            editorToolbarItems
         }
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showAudioRecorder) {
@@ -884,91 +772,10 @@ struct NoteEditorView: View {
             }
         }
         .overlay {
-            // Toolbar Overview Splash
-            if showToolbarOverview {
-                ToolbarOverviewSplashView(
-                    toolbarFrame: toolbarFrame,
-                    onDismiss: {
-                        showToolbarOverview = false
-                    },
-                    onNext: {
-                        showToolbarOverview = false
-                        showNextToolbarButtonSplash()
-                    }
-                )
-                .transition(.opacity)
-                .zIndex(1000)
-            }
-            
-            // Toolbar Button Splash
-            if showToolbarButtonSplash, let splashID = currentButtonSplashID {
-                let buttonInfo = getButtonInfo(for: splashID)
-                let buttonFrame = buttonFrames[splashID] ?? (toolbarFrame != nil ? calculateApproximateButtonFrame(for: splashID, toolbarFrame: toolbarFrame!) : nil)
-                ToolbarButtonSplashView(
-                    id: splashID,
-                    buttonFrame: buttonFrame,
-                    title: buttonInfo.title,
-                    description: buttonInfo.description,
-                    icon: buttonInfo.icon,
-                    onDismiss: {
-                        showToolbarButtonSplash = false
-                        currentButtonSplashID = nil
-                    },
-                    onNext: {
-                        showToolbarButtonSplash = false
-                        currentButtonSplashID = nil
-                        showNextToolbarButtonSplash()
-                    }
-                )
-                .transition(.opacity)
-                .zIndex(1000)
-            }
+            toolbarSplashesOverlay
         }
         .onChange(of: item.body) { oldValue, newValue in
-            // Track modification date when body changes
-            if oldValue != newValue {
-                item.modifiedDate = Date()
-                
-                // Track writing activity
-                let oldWords = oldValue.components(separatedBy: CharacterSet.whitespacesAndNewlines)
-                    .filter { !$0.isEmpty }.count
-                let newWords = newValue.components(separatedBy: CharacterSet.whitespacesAndNewlines)
-                    .filter { !$0.isEmpty }.count
-                let wordsAdded = newWords - oldWords
-                if wordsAdded > 0 {
-                    UserBehaviorTracker.shared.trackWritingActivity(wordsWritten: wordsAdded)
-                    
-                    // Check achievements periodically (every 100 words)
-                    // Defer to background to avoid blocking UI
-                    if newWords % 100 == 0 {
-                        Task.detached(priority: .utility) {
-                            await MainActor.run {
-                                // Get all items to check achievements accurately
-                                let descriptor = FetchDescriptor<Item>()
-                                if let allItems = try? modelContext.fetch(descriptor) {
-                                    UserBehaviorTracker.shared.checkAchievementsWithItems(items: allItems)
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            
-            // Track undo/redo history (skip if we're currently undoing/redoing)
-            if !isUndoing && !isRedoing && oldValue != newValue {
-                // Add to undo history
-                undoHistory.append(oldValue)
-                // Clear redo history when new change is made
-                redoHistory.removeAll()
-                // Limit undo history to 50 entries
-                if undoHistory.count > 50 {
-                    undoHistory.removeFirst()
-                }
-            }
-            
-            // Debounced analysis - waits 400ms after typing stops before analyzing
-            // This reduces computation during active typing and improves performance
-            rhymeEngineState.updateIfNeeded(text: newValue)
+            handleBodyChange(old: oldValue, new: newValue)
         }
         .onChange(of: item.title) { oldValue, newValue in
             // Track modification date when title changes
@@ -1071,6 +878,222 @@ struct NoteEditorView: View {
         }
     }
     
+    // MARK: - Bottom Dynamic Island Toolbar (Page 3)
+    private var bottomToolbar: some View {
+        DynamicIslandToolbarView(
+            isExpanded: $isToolbarExpanded,
+            isRhymeOverlayVisible: $isRhymeOverlayVisible,
+            showDiagnostics: $showRhymeDiagnostics,
+            rhymeGroups: rhymeGroups,
+            currentText: item.body,
+            highlights: computedHighlights,
+            isEditorFocused: $isEditorFocused,
+            keyboardHeight: $keyboardObserver.height,
+            showAudioRecorder: $showAudioRecorder,
+            showRapSuggestions: $showRapSuggestions,
+            showModelGControlSurface: $showModelGControlSurface,
+            rapSuggestionEngine: rapSuggestionEngine,
+            isShowingRecalled: $isShowingRecalled,
+            showContextHighlight: $showContextHighlight,
+            showAudioImporter: $showAudioImporter,
+            showImportNotesInstructions: $showImportNotesInstructions,
+            onRewriteLine: handleRewriteLine,
+            onSuggestRhymes: handleSuggestRhymes,
+            onImproveFlow: handleImproveFlow,
+            onUndo: handleUndo,
+            onRedo: handleRedo,
+            onInsertRapSuggestion: { suggestion in insertRapSuggestion(suggestion, isAIGenerated: true) },
+            canUndo: !undoHistory.isEmpty,
+            canRedo: !redoHistory.isEmpty,
+            isRewritingLine: $isRewritingLine,
+            isImprovingFlow: $isImprovingFlow,
+            rewriteLineLoadingStep: $rewriteLineLoadingStep,
+            improveFlowLoadingStep: $improveFlowLoadingStep,
+            showPaywall: $showPaywall,
+            paywallFeature: $paywallFeature,
+            showAIErrorToast: $showAIErrorToast,
+            aiErrorMessage: $aiErrorMessage,
+            showGenerateLyricsFromFlowSheet: $showGenerateLyricsFromFlowSheet,
+            showARCritiqueSheet: $showARCritiqueSheet,
+            showThemeExpansionSheet: $showThemeExpansionSheet,
+            showExportSheet: $showExportSheet,
+            insertRapSuggestion: insertRapSuggestion,
+            extractThemes: extractThemes,
+            showAIError: showAIErrorWrapper,
+            item: item
+        )
+        .frame(maxWidth: 680)
+    }
+
+    // MARK: - Navigation Bar Toolbar Items (undo / redo / add menu)
+    @ToolbarContentBuilder
+    private var editorToolbarItems: some ToolbarContent {
+        ToolbarItemGroup(placement: .navigationBarTrailing) {
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                handleUndo()
+            } label: {
+                Image(systemName: "arrow.uturn.backward")
+            }
+            .disabled(undoHistory.isEmpty)
+            .accessibilityLabel("Undo")
+            .accessibilityHint("Double tap to undo last change")
+
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                handleRedo()
+            } label: {
+                Image(systemName: "arrow.uturn.forward")
+            }
+            .disabled(redoHistory.isEmpty)
+            .accessibilityLabel("Redo")
+            .accessibilityHint("Double tap to redo last undone change")
+
+            Menu {
+                Button {
+                    prepareHapticForNewNote()
+                    createAndNavigateToNewNote()
+                } label: {
+                    Label("New Note", systemImage: "square.and.pencil")
+                }
+
+                Button {
+                    // TODO: Import from Apple Notes
+                } label: {
+                    Label("Import from Notes", systemImage: "note.text")
+                }
+
+                Button {
+                    openAudioRecorder()
+                } label: {
+                    Label("Record Audio", systemImage: "waveform")
+                }
+
+                // Phase 5: Export functionality (Basic+)
+                if FeatureGate.canAccess(.exportPDF) || FeatureGate.canAccess(.exportWord) {
+                    Divider()
+
+                    Button {
+                        HapticFeedbackManager.shared.lightTap()
+                        // Check feature access before showing sheet
+                        if !FeatureGate.checkAccess(.exportPDF, showPaywall: { featureName in
+                            paywallFeature = featureName
+                            showPaywall = true
+                        }) {
+                            return
+                        }
+                        showExportSheet = true
+                    } label: {
+                        Label("Export Note", systemImage: "square.and.arrow.up")
+                    }
+                }
+            } label: {
+                Image(systemName: "plus")
+            }
+        }
+    }
+
+    // MARK: - Toolbar Onboarding Splash Overlays
+    @ViewBuilder
+    private var toolbarSplashesOverlay: some View {
+        // Toolbar Overview Splash
+        if showToolbarOverview {
+            ToolbarOverviewSplashView(
+                toolbarFrame: toolbarFrame,
+                onDismiss: {
+                    showToolbarOverview = false
+                },
+                onNext: {
+                    showToolbarOverview = false
+                    showNextToolbarButtonSplash()
+                }
+            )
+            .transition(.opacity)
+            .zIndex(1000)
+        }
+
+        // Toolbar Button Splash
+        if showToolbarButtonSplash, let splashID = currentButtonSplashID {
+            let buttonInfo = getButtonInfo(for: splashID)
+            let buttonFrame = buttonFrames[splashID] ?? (toolbarFrame != nil ? calculateApproximateButtonFrame(for: splashID, toolbarFrame: toolbarFrame!) : nil)
+            ToolbarButtonSplashView(
+                id: splashID,
+                buttonFrame: buttonFrame,
+                title: buttonInfo.title,
+                description: buttonInfo.description,
+                icon: buttonInfo.icon,
+                onDismiss: {
+                    showToolbarButtonSplash = false
+                    currentButtonSplashID = nil
+                },
+                onNext: {
+                    showToolbarButtonSplash = false
+                    currentButtonSplashID = nil
+                    showNextToolbarButtonSplash()
+                }
+            )
+            .transition(.opacity)
+            .zIndex(1000)
+        }
+    }
+
+    // MARK: - Body Change Handling
+    /// Per-keystroke side effects for the note body: modified-date, AI-range pruning,
+    /// writing-activity tracking, undo history, and debounced rhyme analysis. Extracted
+    /// from the `.onChange(of: item.body)` closure to keep the view body type-checkable.
+    private func handleBodyChange(old oldValue: String, new newValue: String) {
+        // Track modification date when body changes
+        if oldValue != newValue {
+            item.modifiedDate = Date()
+
+            // Prune AI text ranges the edit pushed out of bounds. This used to run
+            // inside computedHighlights and mutate item.aiTextRanges mid-render
+            // ("Modifying state during view update"); doing it here is both safe and
+            // more correct — ranges go stale exactly when the body changes.
+            pruneInvalidAITextRanges()
+
+            // Track writing activity
+            let oldWords = oldValue.components(separatedBy: CharacterSet.whitespacesAndNewlines)
+                .filter { !$0.isEmpty }.count
+            let newWords = newValue.components(separatedBy: CharacterSet.whitespacesAndNewlines)
+                .filter { !$0.isEmpty }.count
+            let wordsAdded = newWords - oldWords
+            if wordsAdded > 0 {
+                UserBehaviorTracker.shared.trackWritingActivity(wordsWritten: wordsAdded)
+
+                // Check achievements periodically (every 100 words)
+                // Defer to background to avoid blocking UI
+                if newWords % 100 == 0 {
+                    Task.detached(priority: .utility) {
+                        await MainActor.run {
+                            // Get all items to check achievements accurately
+                            let descriptor = FetchDescriptor<Item>()
+                            if let allItems = try? modelContext.fetch(descriptor) {
+                                UserBehaviorTracker.shared.checkAchievementsWithItems(items: allItems)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Track undo/redo history (skip if we're currently undoing/redoing)
+        if !isUndoing && !isRedoing && oldValue != newValue {
+            // Add to undo history
+            undoHistory.append(oldValue)
+            // Clear redo history when new change is made
+            redoHistory.removeAll()
+            // Limit undo history to 50 entries
+            if undoHistory.count > 50 {
+                undoHistory.removeFirst()
+            }
+        }
+
+        // Debounced analysis - waits 400ms after typing stops before analyzing
+        // This reduces computation during active typing and improves performance
+        rhymeEngineState.updateIfNeeded(text: newValue)
+    }
+
     // Phase 4: Extract themes from text for theme expansion
     private func extractThemes(from text: String) -> [String] {
         guard !text.isEmpty else { return [] }
@@ -1163,14 +1186,6 @@ struct NoteEditorView: View {
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
         .frame(maxWidth: 680)
-        .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(.ultraThinMaterial)                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .strokeBorder(.primary.opacity(0.08), lineWidth: 1)
-                )
-        )
         .frame(maxWidth: .infinity) // Center the bar
     }
     

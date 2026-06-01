@@ -90,6 +90,67 @@ enum SuggestionDensity: String, CaseIterable {
     case full
 }
 
+// MARK: - Profile Tabs (concrete segmented control for the Profile page)
+
+/// The three zones of the Profile page. Concrete (not a generic segmented control)
+/// so the large view bodies in this file keep type-checking fast.
+enum ProfileTab: String, CaseIterable, Identifiable {
+    case you, ai, app
+    var id: String { rawValue }
+    var label: String {
+        switch self {
+        case .you: return "You"
+        case .ai:  return "AI"
+        case .app: return "App"
+        }
+    }
+}
+
+/// Flat editorial pill segmented control: white track + hairline, the selected segment
+/// fills with the inverse (dark) surface. A coral dot flags a tab that needs attention.
+struct MomentumProfileTabs: View {
+    @Binding var selection: ProfileTab
+    var attention: Set<ProfileTab> = []
+
+    var body: some View {
+        HStack(spacing: 4) {
+            ForEach(ProfileTab.allCases) { tab in
+                let isSelected = selection == tab
+                Button {
+                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+                    withAnimation(.easeOut(duration: 0.18)) { selection = tab }
+                } label: {
+                    HStack(spacing: 5) {
+                        Text(tab.label)
+                            .font(.system(size: 15, weight: .semibold))
+                        if attention.contains(tab) && !isSelected {
+                            Circle()
+                                .fill(Momentum.accent)
+                                .frame(width: 6, height: 6)
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 9)
+                    .foregroundStyle(isSelected ? Momentum.onInverse : Momentum.contentSecondary)
+                    .background(
+                        Capsule(style: .continuous)
+                            .fill(isSelected ? Momentum.inverseSurface : Color.clear)
+                    )
+                    .contentShape(Capsule(style: .continuous))
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(tab.label)
+            }
+        }
+        .padding(4)
+        .background(
+            Capsule(style: .continuous)
+                .fill(Momentum.surfaceElevated)
+                .overlay(Capsule(style: .continuous).stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
+        )
+    }
+}
+
 // MARK: - Profile Page (Momentum reskin + single top-right Save)
 
 struct ProfilePopoverView: View {
@@ -105,12 +166,15 @@ struct ProfilePopoverView: View {
     @State private var avatarImage: Image?
     @State private var showPersonalizationSheet: Bool = false
     @State private var showModelPreferences: Bool = false
+    @State private var selectedTab: ProfileTab = .you
+    @State private var didRouteInitialTab: Bool = false
 
     @State private var name: String
     @State private var email: String
     @State private var phone: String
     @State private var openAIKeyDraft: String = ""
     @State private var geniusKeyDraft: String = ""
+    @AppStorage("transcription_backend") private var transcriptionBackend: String = "apple"
     @State private var showSaveConfirmation: Bool = false
     @State private var hasUnsavedChanges: Bool = false
 
@@ -245,6 +309,14 @@ struct ProfilePopoverView: View {
         geniusKeyDraft = KeychainHelper.shared.getGeniusAPIKey() ?? ""
         hasUnsavedChanges = false
         showSaveConfirmation = false
+
+        // First open with no key → land on AI so setup isn't hidden behind a tab.
+        if !didRouteInitialTab {
+            didRouteInitialTab = true
+            if openAIKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                selectedTab = .ai
+            }
+        }
     }
 
     private func handleAvatarPick(_ newItem: PhotosPickerItem?) {
@@ -292,107 +364,256 @@ struct ProfilePopoverView: View {
 
     // MARK: Content
 
-    // Extracted to keep profileContentSection within the SwiftUI type-checker's budget.
-    private var personalDetailsSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            MomentumSectionHeader(title: "Personal Details")
-            Text("Adds weight to generators so suggestions feel more personal to you.")
-                .font(.momentumMetadata)
-                .foregroundStyle(Momentum.contentSecondary)
-                .fixedSize(horizontal: false, vertical: true)
-            Button {
-                lightHaptic()
-                showPersonalizationSheet = true
-            } label: {
-                navRow(
-                    title: "Add Personal Details",
-                    systemImage: "person.text.rectangle",
-                    trailingCheck: hasPersonalDetails()
-                )
+    // MARK: Content building blocks
+    // Each tab is its own extracted `some View` property so the SwiftUI type-checker
+    // stays within budget (this file has hit that ceiling before — see CCV.12 history).
+
+    private var hasAPIKey: Bool {
+        !openAIKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+
+    /// Pinned identity card above the tabs — avatar (tap to change) + live name/email.
+    private var identityCard: some View {
+        VStack(spacing: 10) {
+            PhotosPicker(
+                selection: $selectedItem,
+                matching: .images,
+                photoLibrary: .shared()
+            ) {
+                ZStack {
+                    Circle()
+                        .fill(Momentum.surfaceElevated)
+                        .overlay(Circle().stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
+                        .frame(width: 84, height: 84)
+
+                    if let avatarImage {
+                        avatarImage
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 84, height: 84)
+                            .clipShape(Circle())
+                    } else {
+                        Image(systemName: "person.crop.circle.fill")
+                            .font(.system(size: 42))
+                            .foregroundStyle(Momentum.contentSecondary)
+                    }
+                }
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Add Personal Details")
-            .accessibilityHint("Opens a form for locations, people, themes, interests, and background")
+            .buttonStyle(PlainButtonStyle())
+            .accessibilityLabel("Profile photo")
+
+            Text(name.isEmpty ? "Your name" : name)
+                .font(.momentumCardTitle)
+                .foregroundStyle(name.isEmpty ? Momentum.contentSecondary : Momentum.contentPrimary)
+
+            if !email.isEmpty {
+                Text(email)
+                    .font(.momentumMetadata)
+                    .foregroundStyle(Momentum.contentSecondary)
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.top, 8)
+    }
+
+    /// Short human-readable chips summarizing the saved personalization details.
+    private func personalDetailsChips() -> [String] {
+        guard let data = UserDefaults.standard.data(forKey: "user_personal_details"),
+              let d = try? JSONDecoder().decode(UserPersonalDetails.self, from: data) else {
+            return []
+        }
+        func summarize(_ items: [String]) -> String {
+            let head = items.prefix(2).joined(separator: ", ")
+            return items.count > 2 ? "\(head) +\(items.count - 2)" : head
+        }
+        var chips: [String] = []
+        if !d.locations.isEmpty { chips.append(summarize(d.locations)) }
+        if !d.people.isEmpty    { chips.append("\(d.people.count) \(d.people.count == 1 ? "person" : "people")") }
+        if !d.themes.isEmpty    { chips.append("\(d.themes.count) \(d.themes.count == 1 ? "theme" : "themes")") }
+        if !d.interests.isEmpty { chips.append("\(d.interests.count) \(d.interests.count == 1 ? "interest" : "interests")") }
+        if !d.background.isEmpty { chips.append("Background") }
+        return chips
+    }
+
+    /// Tappable personalization card — previews what's filled, opens the editor sheet.
+    private var personalizationCard: some View {
+        Button {
+            lightHaptic()
+            showPersonalizationSheet = true
+        } label: {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack {
+                    Label("Your Personalization", systemImage: "person.text.rectangle")
+                        .font(.momentumBody)
+                        .foregroundStyle(Momentum.contentPrimary)
+                    Spacer()
+                    if hasPersonalDetails() {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundStyle(Momentum.accent)
+                    }
+                    Image(systemName: "chevron.right")
+                        .font(.caption)
+                        .foregroundStyle(Momentum.contentSecondary)
+                }
+
+                let chips = personalDetailsChips()
+                if chips.isEmpty {
+                    Text("Add locations, people, themes, interests, and background so suggestions sound like you.")
+                        .font(.momentumMetadata)
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                } else {
+                    FlowLayout(spacing: 6) {
+                        ForEach(chips, id: \.self) { chip in
+                            Text(chip)
+                                .font(.system(size: 13, weight: .medium))
+                                .padding(.horizontal, 12)
+                                .padding(.vertical, 7)
+                                .foregroundStyle(Momentum.contentSecondary)
+                                .background(Capsule(style: .continuous).fill(Momentum.surface))
+                                .overlay(Capsule(style: .continuous).stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+            }
+            .padding(16)
+            .background(
+                RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                    .fill(Momentum.surfaceElevated)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                            .stroke(Momentum.hairline, lineWidth: Momentum.lineThin)
+                    )
+            )
+            .contentShape(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Your Personalization")
+        .accessibilityHint("Opens a form for locations, people, themes, interests, and background")
+    }
+
+    /// Nudge shown on the You tab when no AI key is set — jumps to the AI tab.
+    private var connectKeyBanner: some View {
+        Button {
+            UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+            withAnimation(.easeOut(duration: 0.18)) { selectedTab = .ai }
+        } label: {
+            HStack(spacing: 10) {
+                Image(systemName: "key.horizontal.fill")
+                    .foregroundStyle(Momentum.accent)
+                Text("Connect a key to turn on AI suggestions")
+                    .font(.momentumMetadata)
+                    .foregroundStyle(Momentum.contentPrimary)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Image(systemName: "arrow.right")
+                    .font(.caption)
+                    .foregroundStyle(Momentum.contentSecondary)
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 12)
+            .background(
+                RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                    .fill(Momentum.accent.opacity(0.10))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                            .stroke(Momentum.accent.opacity(0.35), lineWidth: Momentum.lineThin)
+                    )
+            )
+            .contentShape(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous))
+        }
+        .buttonStyle(.plain)
+        .accessibilityHint("Switches to the AI tab to add your API key")
+    }
+
+    // MARK: Content
+
+    private var profileContentSection: some View {
+        VStack(alignment: .leading, spacing: 24) {
+            identityCard
+            MomentumProfileTabs(selection: $selectedTab, attention: hasAPIKey ? [] : [.ai])
+            tabContent
+        }
+        .sheet(isPresented: $showPersonalizationSheet) {
+            UserPersonalizationSheet()
+        }
+        .sheet(isPresented: $showModelPreferences) {
+            ModelPreferencesView()
         }
     }
 
-    private var profileContentSection: some View {
+    @ViewBuilder private var tabContent: some View {
+        switch selectedTab {
+        case .you: youTab
+        case .ai:  aiTab
+        case .app: appTab
+        }
+    }
+
+    // MARK: You tab — personalization + account
+
+    private var youTab: some View {
         VStack(alignment: .leading, spacing: 28) {
+            if !hasAPIKey { connectKeyBanner }
 
-            // Identity — avatar + contact fields
-            HStack {
-                Spacer()
-                PhotosPicker(
-                    selection: $selectedItem,
-                    matching: .images,
-                    photoLibrary: .shared()
-                ) {
-                    ZStack {
-                        Circle()
-                            .fill(Momentum.surfaceElevated)
-                            .overlay(Circle().stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
-                            .frame(width: 96, height: 96)
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "Your Personalization")
+                Text("Adds weight to generators so suggestions feel more personal to you.")
+                    .font(.momentumMetadata)
+                    .foregroundStyle(Momentum.contentSecondary)
+                    .fixedSize(horizontal: false, vertical: true)
+                personalizationCard
+            }
 
-                        if let avatarImage {
-                            avatarImage
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 96, height: 96)
-                                .clipShape(Circle())
-                        } else {
-                            Image(systemName: "person.crop.circle.fill")
-                                .font(.system(size: 48))
-                                .foregroundStyle(Momentum.contentSecondary)
-                        }
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "Account")
+                VStack(spacing: 14) {
+                    profileField(label: "Name", text: $name, placeholder: "Your name")
+                        .onChange(of: name) { _, _ in hasUnsavedChanges = true }
+
+                    Group {
+                        let emailHelperText: String? = isEmailValid ? nil : "Enter a valid email (e.g. name@example.com)"
+                        profileField(
+                            label: "Email",
+                            text: $email,
+                            placeholder: "you@email.com",
+                            keyboard: .emailAddress,
+                            isValid: isEmailValid,
+                            helperText: emailHelperText
+                        )
+                    }
+                    .onChange(of: email) { _, _ in hasUnsavedChanges = true }
+
+                    Group {
+                        let phoneHelperText: String? = isPhoneValid ? nil : "Enter a 10-digit number"
+                        profileField(
+                            label: "Phone",
+                            text: Binding(
+                                get: { phone },
+                                set: { newValue in
+                                    phone = newValue
+                                    hasUnsavedChanges = true
+                                }
+                            ),
+                            placeholder: "(000) 000-0000",
+                            keyboard: .phonePad,
+                            isValid: isPhoneValid,
+                            helperText: phoneHelperText
+                        )
                     }
                 }
-                .buttonStyle(PlainButtonStyle())
-                Spacer()
             }
-            .padding(.top, 8)
+        }
+    }
 
-            VStack(spacing: 14) {
-                profileField(label: "Name", text: $name, placeholder: "Your name")
-                    .onChange(of: name) { _, _ in hasUnsavedChanges = true }
+    // MARK: AI tab — connection + suggestion defaults + model
 
-                Group {
-                    let emailHelperText: String? = isEmailValid ? nil : "Enter a valid email (e.g. name@example.com)"
-                    profileField(
-                        label: "Email",
-                        text: $email,
-                        placeholder: "you@email.com",
-                        keyboard: .emailAddress,
-                        isValid: isEmailValid,
-                        helperText: emailHelperText
-                    )
-                }
-                .onChange(of: email) { _, _ in hasUnsavedChanges = true }
-
-                Group {
-                    let phoneHelperText: String? = isPhoneValid ? nil : "Enter a 10-digit number"
-                    profileField(
-                        label: "Phone",
-                        text: Binding(
-                            get: { phone },
-                            set: { newValue in
-                                phone = newValue
-                                hasUnsavedChanges = true
-                            }
-                        ),
-                        placeholder: "(000) 000-0000",
-                        keyboard: .phonePad,
-                        isValid: isPhoneValid,
-                        helperText: phoneHelperText
-                    )
-                }
-            }
-
-            // Personal Details
-            personalDetailsSection
-
-            // API Keys
+    private var aiTab: some View {
+        VStack(alignment: .leading, spacing: 28) {
             VStack(alignment: .leading, spacing: 12) {
-                MomentumSectionHeader(title: "API Keys")
+                MomentumSectionHeader(title: "Connection")
                 Text("Required for AI suggestions. Genius is optional and improves rhyme ranking.")
                     .font(.momentumMetadata)
                     .foregroundStyle(Momentum.contentSecondary)
@@ -419,20 +640,14 @@ struct ProfilePopoverView: View {
                     .foregroundStyle(Momentum.contentSecondary)
             }
 
+            // Voice Transcription engine — Apple on-device vs OpenAI Whisper.
+            transcriptionSection
+
             // Suggestion Defaults (carries its own MomentumSectionHeader)
             SuggestionDefaultsSection()
 
-            // Notifications
             VStack(alignment: .leading, spacing: 12) {
-                MomentumSectionHeader(title: "Notifications")
-                NotificationPreferencesView()
-            }
-
-            // Preferences
-            VStack(alignment: .leading, spacing: 12) {
-                MomentumSectionHeader(title: "Preferences")
-                PreferencesInfoView()
-                SignalLayerAdvancedModeToggle()
+                MomentumSectionHeader(title: "Model")
                 Button {
                     lightHaptic()
                     showModelPreferences = true
@@ -443,10 +658,58 @@ struct ProfilePopoverView: View {
                 .accessibilityLabel("Model Preferences")
                 .accessibilityHint("Customize Model G and Model Y, enable Model G Core v1.0")
             }
+        }
+    }
 
-            // General (merged: Export + Reset Splash Screens)
+    /// Voice transcription engine picker. OpenAI Whisper is only selectable when an
+    /// OpenAI (`sk-…`) key is present — Gemini keys can't run Whisper, so we lock to
+    /// on-device Apple transcription and explain why.
+    private var transcriptionSection: some View {
+        let hasOpenAIKey = openAIKeyDraft
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .hasPrefix("sk-")
+        return VStack(alignment: .leading, spacing: 12) {
+            MomentumSectionHeader(title: "Voice Transcription")
+            Picker("Transcription engine", selection: Binding(
+                get: { hasOpenAIKey ? transcriptionBackend : "apple" },
+                set: { transcriptionBackend = $0 }
+            )) {
+                Text("On-device (Apple)").tag("apple")
+                Text("OpenAI Whisper").tag("whisper")
+            }
+            .pickerStyle(.segmented)
+            .disabled(!hasOpenAIKey)
+            .accessibilityHint(hasOpenAIKey
+                ? "Choose how voice notes are transcribed"
+                : "Add an OpenAI key to enable OpenAI Whisper")
+
+            Text(hasOpenAIKey
+                ? "On-device is private and free. OpenAI Whisper can be more accurate for music-heavy or noisy recordings and is billed to your OpenAI key."
+                : "Add an OpenAI (sk-…) key above to enable OpenAI Whisper. Gemini keys don't support Whisper, so transcription stays on-device.")
+                .font(.momentumMetadata)
+                .foregroundStyle(Momentum.contentSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+    }
+
+    // MARK: App tab — notifications, preferences, data, about
+
+    private var appTab: some View {
+        VStack(alignment: .leading, spacing: 28) {
             VStack(alignment: .leading, spacing: 12) {
-                MomentumSectionHeader(title: "General")
+                MomentumSectionHeader(title: "Notifications")
+                NotificationPreferencesView()
+            }
+
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "Preferences")
+                PreferencesInfoView()
+                SignalLayerAdvancedModeToggle()
+            }
+
+            // Data (merged: Export + Reset Splash Screens)
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "Data")
                 Button {
                     lightHaptic()
                     exportUserData()
@@ -466,9 +729,9 @@ struct ProfilePopoverView: View {
                 .buttonStyle(.plain)
             }
 
-            // App (merged: About + Storage + Invites)
+            // About (merged: Version/Build + Storage + Invite)
             VStack(alignment: .leading, spacing: 12) {
-                MomentumSectionHeader(title: "App")
+                MomentumSectionHeader(title: "About")
 
                 VStack(alignment: .leading, spacing: 10) {
                     infoRow("Version", appVersion)
@@ -500,12 +763,6 @@ struct ProfilePopoverView: View {
                     UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                 }
             }
-        }
-        .sheet(isPresented: $showPersonalizationSheet) {
-            UserPersonalizationSheet()
-        }
-        .sheet(isPresented: $showModelPreferences) {
-            ModelPreferencesView()
         }
     }
 }

@@ -314,12 +314,6 @@ struct DynamicIslandToolbarView: View {
         .frame(height: ToolbarConstants.height) // LOCKED: Exactly 64pt (44 + 10 + 10) - NEVER MODIFY
         .accessibilityLabel("Expand toolbar")
         .accessibilityHint("Double tap to expand toolbar with writing tools")
-        .gesture(
-            LongPressGesture(minimumDuration: 0.5)
-            .onEnded { _ in
-                HapticFeedbackManager.shared.mediumTap()
-            }
-        )
     }
     
     private var collapsedButtonContent: some View {
@@ -335,10 +329,6 @@ struct DynamicIslandToolbarView: View {
             Image(systemName: "plus")
                 .font(.title2)
                 .foregroundStyle(toolbarTint)
-            
-            if wordCount > 0 {
-                activityIndicatorsView
-            }
             
             if isAILoading {
                 aiLoadingIndicator

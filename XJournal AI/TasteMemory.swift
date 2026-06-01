@@ -159,6 +159,9 @@ class TasteMemory {
             records = Array(records.suffix(maxRecords))
         }
         
+        // Train the persisted taste vector that Model G scoring consumes.
+        UserTasteStore.shared.learn(from: record.suggestionText, action: record.action)
+        
         // Log for observability (passive - no behavior changes)
         logRecord(record)
     }
