@@ -106,7 +106,7 @@ enum PremiumFeature {
         case .generateLyricsFromFlow:
             return "Generate Lyrics from Flow"
         case .styleTransfer:
-            return "A&R Critique"
+            return "Critic"
         case .themeExpansion:
             return "Theme Expansion"
         case .exportPDF:

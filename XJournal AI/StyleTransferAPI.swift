@@ -229,4 +229,80 @@ extension RapSuggestionAPI {
         
         return suggestions
     }
+
+    // MARK: - Theme Identification (input analysis only — does not affect lyric output)
+
+    /// Identifies which catalog themes are present in lyrics. Used for auto-selection only.
+    func identifyThemesFromLyrics(text: String, availableThemes: [Theme]) async throws -> Set<String> {
+        guard let apiKey = internalAPIKey else {
+            throw RapAPIError.missingAPIKey
+        }
+
+        guard !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+            return []
+        }
+
+        let themeList = availableThemes.map { theme in
+            "- id: \(theme.id) | name: \(theme.name) | terms: \(theme.jargonTerms.prefix(4).joined(separator: ", "))"
+        }.joined(separator: "\n")
+
+        let systemPrompt = """
+        You are a rap lyric theme classifier. Given lyrics and a fixed theme catalog, return ONLY the theme IDs that are clearly present or strongly implied in the text.
+
+        Rules:
+        - Return JSON only: {"theme_ids": ["THEME_...", ...]}
+        - Pick from the provided catalog IDs only — never invent IDs
+        - Prefer precision over recall (3–8 themes max)
+        - Do NOT generate lyrics, suggestions, or commentary
+        """
+
+        let userPrompt = """
+        Catalog:
+        \(themeList)
+
+        Lyrics:
+        \(text)
+
+        Return JSON with theme_ids array.
+        """
+
+        let url = URL(string: "\(internalBaseURL)/chat/completions")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let requestBody: [String: Any] = [
+            "model": "gpt-4-turbo-preview",
+            "messages": [
+                ["role": "system", "content": systemPrompt],
+                ["role": "user", "content": userPrompt]
+            ],
+            "temperature": 0.2,
+            "max_tokens": 200,
+            "response_format": ["type": "json_object"]
+        ]
+
+        request.httpBody = try JSONSerialization.data(withJSONObject: requestBody)
+
+        let (data, response) = try await URLSession.shared.data(for: request)
+
+        guard let httpResponse = response as? HTTPURLResponse,
+              (200...299).contains(httpResponse.statusCode) else {
+            throw RapAPIError.requestFailed
+        }
+
+        guard let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let choices = json["choices"] as? [[String: Any]],
+              let message = choices.first?["message"] as? [String: Any],
+              let content = message["content"] as? String,
+              let contentData = content.data(using: .utf8),
+              let parsed = try JSONSerialization.jsonObject(with: contentData) as? [String: Any],
+              let ids = parsed["theme_ids"] as? [String] else {
+            return []
+        }
+
+        let validIDs = Set(availableThemes.map(\.id))
+        return Set(ids.filter { validIDs.contains($0) })
+    }
 }

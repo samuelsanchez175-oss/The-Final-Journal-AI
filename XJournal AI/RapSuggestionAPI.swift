@@ -476,13 +476,14 @@ class RapSuggestionAPI {
     // MARK: - Model G Core
 
     /// Distinct full-verse generations per Core call (each appears as its own suggestion card).
-    private let modelGCoreSuggestionSetCount = 2
+    private let modelGCoreSuggestionSetCount = 2  // two suggestion cards; speed comes from v3 verseCandidateCount = 1
 
     private func generateModelGCoreRecordWithRetry(
         useV2: Bool,
         metrics: RapMetrics,
         audioURL: URL?,
         directedParams: DirectedGenerationParams?,
+        selectedThemeIDs: [String] = [],
         transcriptionRhythmMapData: Data?
     ) async throws -> GeneratedRecord {
         let styleOverride = directedParams?.styleOverride
@@ -494,6 +495,7 @@ class RapSuggestionAPI {
                     audioURL: audioURL,
                     styleOverride: styleOverride,
                     directedParams: directedParams,
+                    selectedThemeIDs: selectedThemeIDs,
                     transcriptionRhythmMapData: transcriptionRhythmMapData,
                     bpm: metrics.bpm,
                     musicalKey: metrics.key,
@@ -507,6 +509,7 @@ class RapSuggestionAPI {
                     audioURL: audioURL,
                     styleOverride: styleOverride,
                     directedParams: directedParams,
+                    selectedThemeIDs: selectedThemeIDs,
                     transcriptionRhythmMapData: transcriptionRhythmMapData
                 )
             } else {
@@ -515,7 +518,8 @@ class RapSuggestionAPI {
                     input: metrics.fullText,
                     audioURL: audioURL,
                     styleOverride: styleOverride,
-                    directedParams: directedParams
+                    directedParams: directedParams,
+                    selectedThemeIDs: selectedThemeIDs
                 )
             }
         }
@@ -544,6 +548,7 @@ class RapSuggestionAPI {
         signalAxes: SignalAxes? = nil,
         allowedLexiconTerms: [LexiconTerm] = [],
         directedParams: DirectedGenerationParams? = nil,
+        selectedThemeIDs: [String] = [],
         rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil,
         audioURL: URL? = nil,
         transcriptionRhythmMapData: Data? = nil,
@@ -576,6 +581,7 @@ class RapSuggestionAPI {
                                 metrics: metrics,
                                 audioURL: audioURL,
                                 directedParams: directedParams,
+                                selectedThemeIDs: selectedThemeIDs,
                                 transcriptionRhythmMapData: transcriptionRhythmMapData
                             )
                             return (setIndex, record)
@@ -2260,6 +2266,10 @@ class RapSuggestionAPI {
             for improvement in highPriorityImprovements {
                 enhancedMessage += "\n- \(improvement.area): \(improvement.suggestedChange)"
             }
+        }
+
+        if let taste = UserTasteInsights.promptFragment() {
+            enhancedMessage += "\n\n\(taste)"
         }
         
         return enhancedMessage
@@ -6660,10 +6670,4 @@ enum RapAPIError: LocalizedError {
 }
 
 // MARK: - In-app API error notification
-// Post this when an API error occurs so the UI can show a short toast/banner.
-extension Notification.Name {
-    static let inAppAPIError = Notification.Name("InAppAPIError")
-}
-struct InAppAPIErrorPayload {
-    static let messageKey = "message"
-}
+// Post via AppErrorRecovery.postInAppError; see InAppAPIErrorPayload in AppErrorRecovery.swift.

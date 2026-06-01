@@ -63,6 +63,11 @@ class ModelGLLMService {
 
     // MARK: - Model G v3 — planned single-call verse
 
+    /// JSON completion for Human Critic and other structured side calls.
+    func fetchJSONCompletion(system: String, user: String, maxTokens: Int = 520) async throws -> String {
+        try await postChat(system: system, user: user, maxTokens: maxTokens, temperature: 0.65, jsonMode: true)
+    }
+
     /// Shared chat-completion call. Returns the assistant message content (JSON string when jsonMode).
     private func postChat(system: String, user: String, maxTokens: Int, temperature: Double, jsonMode: Bool) async throws -> String {
         guard let key = apiKey else { throw ModelGLLMError.missingAPIKey }

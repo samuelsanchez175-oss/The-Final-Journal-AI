@@ -259,7 +259,7 @@ struct JournalLibraryView: View {
                 .presentationDetents([PresentationDetent.large])
                 .presentationDragIndicator(Visibility.visible)
         }
-        .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("ShowProfile"))) { _ in
+        .onReceive(NotificationCenter.default.publisher(for: .showProfile)) { _ in
             showProfile = true
         }
         .sheet(isPresented: $showReleaseNotes) {

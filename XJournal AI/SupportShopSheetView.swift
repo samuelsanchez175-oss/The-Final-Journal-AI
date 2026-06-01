@@ -29,7 +29,7 @@ struct SupportShopSheetView: View {
                 }
                 .padding(.top, 12)
 
-                sectionHeader("Follow & Support")
+                MomentumSectionHeader(title: "Follow & Support")
 
                 // Tight stack so the social buttons sit close together rather than
                 // inheriting the loose 28pt section spacing.
@@ -88,7 +88,7 @@ struct SupportShopSheetView: View {
                     }
                 }
 
-                sectionHeader("Affiliate Support")
+                MomentumSectionHeader(title: "Affiliate Support")
 
                 Text(
                     "Some links may be affiliate links. Purchases made through these links help support development at no extra cost to you."
@@ -109,10 +109,24 @@ struct SupportShopSheetView: View {
                     }
                 }
 
+                MomentumSectionHeader(title: "Feedback")
+
+                Text("Spotted a bug or have an idea? We read every message.")
+                    .font(.callout)
+                    .foregroundStyle(Momentum.contentSecondary)
+
+                Button {
+                    sendFeedback()
+                } label: {
+                    Label("Send Feedback", systemImage: "envelope")
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(MomentumSquareButtonStyle(fill: .inverse))
+
                 if showThankYou {
                     HStack(spacing: 12) {
                         Image(systemName: "heart.fill")
-                            .foregroundStyle(.pink)
+                            .foregroundStyle(Momentum.accent)
 
                         Text("Thank you for supporting The Final Journal AI via \(lastActionTitle).")
                             .font(.callout)
@@ -120,7 +134,12 @@ struct SupportShopSheetView: View {
                     .padding(14)
                     .background(
                         RoundedRectangle(cornerRadius: 18, style: .continuous)
-                            .fill(Momentum.surfaceElevated)                    )
+                            .fill(Momentum.surfaceElevated)
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 18, style: .continuous)
+                            .stroke(Momentum.hairline, lineWidth: Momentum.lineThin)
+                    )
                     .transition(.move(edge: .bottom).combined(with: .opacity))
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
@@ -137,10 +156,14 @@ struct SupportShopSheetView: View {
         .animation(.easeInOut(duration: 0.2), value: showThankYou)
     }
 
-    private func sectionHeader(_ title: String) -> some View {
-        Text(title)
-            .font(.title3.weight(.semibold))
-            .padding(.top, 12)
+    private func sendFeedback() {
+        // TODO: Replace with the real feedback recipient address (e.g., "hello@thefinaljournalai.app")
+        let recipient = "feedback@example.com"
+        let subject = "The Final Journal AI — Feedback"
+        let encoded = subject.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? subject
+        if let url = URL(string: "mailto:\(recipient)?subject=\(encoded)") {
+            openURL(url)
+        }
     }
 
     @ViewBuilder
@@ -154,10 +177,11 @@ struct SupportShopSheetView: View {
             HStack(spacing: 16) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(Momentum.surfaceElevated)
+                        .fill(Momentum.accent.opacity(0.12))
 
                     Image(systemName: symbol)
                         .font(.system(size: 28, weight: .semibold))
+                        .foregroundStyle(Momentum.accent)
                 }
                 .frame(width: 64, height: 64)
 
@@ -176,6 +200,10 @@ struct SupportShopSheetView: View {
             .background(
                 RoundedRectangle(cornerRadius: 20, style: .continuous)
                     .fill(Momentum.surfaceElevated)
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .stroke(Momentum.hairline, lineWidth: Momentum.lineThin)
             )
         }
         .buttonStyle(.plain)

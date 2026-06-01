@@ -28,11 +28,29 @@ struct ReleaseNotesSheetView: View {
                 .padding(.bottom, 4)
 
                 featureCard(
+                    symbolName: "paintpalette",
+                    version: "1.5.0",
+                    title: "Momentum Redesign & Dark Mode",
+                    description: "A bold new coral redesign, full dark mode, and a rebuilt AI suggestions experience.",
+                    isLatest: true,
+                    bullets: [
+                        "Brand-new \"Momentum\" look — a warm coral redesign with iOS 26 glass, flat hairline cards, and a cleaner editor header",
+                        "Full Dark Mode with the new \"Lagoon\" palette — your accent color doubles as a one-tap light/dark switch",
+                        "Rebuilt Rap Suggestions — swipe a deck of generations with a floating island toolbar for rhyme, stress, and the rhyme map",
+                        "Stress emphasis: a \"Stack\" view that highlights the hardest-hitting syllables in every line",
+                        "Cascade layout steps long bars into breath-sized phrases for easier reading at large text sizes",
+                        "Human Critic — plain-language feedback on your lyrics in a Calm editor, Friend, or Hype voice",
+                        "Theme-aware suggestions — the app reads your song's themes and steers Model G to match",
+                        "Model G v3: a more capable generation engine with a simpler AI setup",
+                        "Smoother first-run onboarding, plus clearer AI error handling and recovery"
+                    ]
+                )
+
+                featureCard(
                     symbolName: "waveform.path",
                     version: "1.4.0",
                     title: "Audio Intelligence & Analytics",
                     description: "Advanced audio transcription, interactive playback, and comprehensive analytics dashboard.",
-                    isLatest: true,
                     bullets: [
                         "High-fidelity on-device audio transcription with timestamped segments",
                         "Interactive audio detail sheet with synchronized text highlighting",

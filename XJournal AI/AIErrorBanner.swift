@@ -14,7 +14,9 @@ import SwiftUI
 
 struct AIErrorBanner: View {
     let message: String
+    var fixButtonTitle: String? = nil
     let onDismiss: () -> Void
+    var onFix: (() -> Void)? = nil
 
     @State private var dragOffset: CGFloat = 0
     @Environment(\.colorScheme) private var colorScheme
@@ -24,32 +26,52 @@ struct AIErrorBanner: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            HStack(spacing: 12) {
-                Image(systemName: "exclamationmark.triangle.fill")
-                    .foregroundStyle(Color.red.opacity(0.85))
-                    .font(.system(size: 18, weight: .semibold))
+            VStack(spacing: 8) {
+                HStack(spacing: 12) {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .foregroundStyle(Color.red.opacity(0.85))
+                        .font(.system(size: 18, weight: .semibold))
 
-                VStack(alignment: .leading, spacing: 3) {
-                    Text("AI Error")
-                        .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(Momentum.contentPrimary)
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("AI Error")
+                            .font(.system(size: 14, weight: .bold))
+                            .foregroundStyle(Momentum.contentPrimary)
 
-                    Text(message)
-                        .font(.system(size: 13))
-                        .foregroundStyle(Momentum.contentSecondary)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(3)
+                        Text(message)
+                            .font(.system(size: 13))
+                            .foregroundStyle(Momentum.contentSecondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .multilineTextAlignment(.leading)
+                            .lineLimit(3)
+                    }
+
+                    Spacer(minLength: 8)
+
+                    Button(action: onDismiss) {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundStyle(Momentum.contentSecondary)
+                            .font(.system(size: 18))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Dismiss error")
                 }
 
-                Spacer()
-
-                Button(action: onDismiss) {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundStyle(Momentum.contentSecondary)
-                        .font(.system(size: 18))
+                if let fixButtonTitle, let onFix {
+                    Button {
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        onFix()
+                    } label: {
+                        HStack(spacing: 6) {
+                            Image(systemName: "arrow.right.circle.fill")
+                            Text(fixButtonTitle)
+                                .font(.system(size: 14, weight: .semibold))
+                        }
+                        .foregroundStyle(Color.accentColor)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityHint("Opens the screen where you can fix this issue")
                 }
-                .buttonStyle(.plain)
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 14)
@@ -63,9 +85,8 @@ struct AIErrorBanner: View {
                     .shadow(color: .black.opacity(colorScheme == .dark ? 0.4 : 0.10), radius: 12, y: 4)
             )
             .padding(.horizontal, 12)
-            .padding(.top, 8)  // .overlay(alignment: .top) already clears safe area; this is breathing room
+            .padding(.top, 8)
 
-            // Drag handle hint
             Capsule()
                 .fill(Momentum.hairline)
                 .frame(width: 36, height: 4)
@@ -117,7 +138,9 @@ struct AIErrorBanner: View {
     VStack {
         AIErrorBanner(
             message: "API key missing. Add your OpenAI key in Settings.",
-            onDismiss: {}
+            fixButtonTitle: "Open API Settings",
+            onDismiss: {},
+            onFix: {}
         )
         AIErrorBanner(
             message: "Too many requests. Wait 60s and try again.",

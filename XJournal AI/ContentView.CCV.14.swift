@@ -87,6 +87,9 @@ struct DynamicIslandToolbarView: View {
     @Binding var paywallFeature: String
     @Binding var showAIErrorToast: Bool
     @Binding var aiErrorMessage: String?
+    @Binding var aiErrorFixDestination: AppErrorFixDestination
+    let onAIErrorFix: () -> Void
+    let onDismissAIError: () -> Void
     
     // Sheet state bindings
     @Binding var showGenerateLyricsFromFlowSheet: Bool
@@ -98,6 +101,7 @@ struct DynamicIslandToolbarView: View {
     let insertRapSuggestion: (RapSuggestion, Bool) -> Void
     let extractThemes: (String) -> [String]
     let showAIError: (String) -> Void
+    let onRetryHumanCritic: () -> Void
     let item: Item
     
     // MARK: - Enhancement State Variables
@@ -436,7 +440,7 @@ struct DynamicIslandToolbarView: View {
                             } label: {
                                 Label("Open Last Suggestions", systemImage: "clock.arrow.circlepath")
                             }
-                            .disabled(rapSuggestionEngine.previousSuggestions.isEmpty)
+                            .disabled(!NoteSuggestionSessionStore.hasSession(on: item) && !rapSuggestionEngine.hasRecallableSuggestions)
                             
                             Divider()
                             
@@ -459,7 +463,7 @@ struct DynamicIslandToolbarView: View {
                                     Button {
                                         showARCritiqueSheet = true
                                     } label: {
-                                        Label("A&R Critique", systemImage: "text.bubble")
+                                        Label("Critic", systemImage: "text.bubble")
                                     }
                                 }
                                 
@@ -501,7 +505,7 @@ struct DynamicIslandToolbarView: View {
                                     .foregroundStyle(toolbarTint)
                             }
                             .overlay(alignment: .topTrailing) {
-                                if !rapSuggestionEngine.previousSuggestions.isEmpty {
+                                if NoteSuggestionSessionStore.hasSession(on: item) || rapSuggestionEngine.hasRecallableSuggestions {
                                     Image(systemName: "clock.arrow.circlepath")
                                         .font(.system(size: 11, weight: .semibold))
                                         .foregroundStyle(.orange)
@@ -779,8 +783,7 @@ struct DynamicIslandToolbarView: View {
                                 // Navigate to profile - this will be handled by parent view
                                 // For now, dismiss and user can manually open profile
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                                    // Show profile after splash dismisses
-                                    NotificationCenter.default.post(name: NSNotification.Name("ShowProfile"), object: nil)
+                                    AppNavigation.navigate(to: .profileAI)
                                 }
                             } label: {
                                 HStack {
@@ -788,7 +791,7 @@ struct DynamicIslandToolbarView: View {
                                     Text("Open Profile Settings")
                                         .font(.headline)
                                 }
-                                .foregroundStyle(.white)
+                                .foregroundStyle(Momentum.onInverse)
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 12)
                                 .background(
@@ -874,10 +877,9 @@ struct DynamicIslandToolbarView: View {
             if showAIErrorToast, let errorMessage = aiErrorMessage {
                 AIErrorBanner(
                     message: errorMessage,
-                    onDismiss: {
-                        withAnimation(.easeOut(duration: 0.25)) { showAIErrorToast = false }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { aiErrorMessage = nil }
-                    }
+                    fixButtonTitle: aiErrorFixDestination.fixButtonTitle,
+                    onDismiss: onDismissAIError,
+                    onFix: aiErrorFixDestination == .none ? nil : onAIErrorFix
                 )
                 .transition(.move(edge: .top).combined(with: .opacity))
                 .zIndex(999)
@@ -891,7 +893,10 @@ struct DynamicIslandToolbarView: View {
                     onDismiss: {
                         showARCritiqueSheet = false
                     },
-                    precomputedCritiques: rapSuggestionEngine.precomputedCritiques.isEmpty ? nil : rapSuggestionEngine.precomputedCritiques
+                    feedback: $rapSuggestionEngine.humanCriticFeedback,
+                    isLoading: $rapSuggestionEngine.humanCriticLoading,
+                    errorMessage: $rapSuggestionEngine.humanCriticError,
+                    onRetry: onRetryHumanCritic
                 )
             } else {
                 PaywallView(
@@ -911,10 +916,7 @@ struct DynamicIslandToolbarView: View {
             if FeatureGate.canAccess(.themeExpansion) {
                 ThemeExpansionSheet(
                     currentText: currentText,
-                    currentThemes: extractThemes(currentText),
-                    onSelect: { suggestion in
-                        onInsertRapSuggestion(suggestion)
-                    },
+                    item: item,
                     onDismiss: {
                         showThemeExpansionSheet = false
                     }

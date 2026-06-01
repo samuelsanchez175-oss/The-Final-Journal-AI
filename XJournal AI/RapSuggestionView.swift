@@ -1,5 +1,6 @@
 import SwiftUI
 import Combine
+import SwiftData
 
 // MARK: - Rap Suggestion View
 // NOTE: Highlight is defined in ContentView.swift and is accessible here
@@ -22,7 +23,13 @@ struct RapSuggestionView: View {
     let rightSuggestions: [RapSuggestion]?
     let leftTitle: String?
     let rightTitle: String?
-    
+    let noteKey: String?
+    let generationId: UUID?
+    @Binding var humanCriticFeedback: HumanCriticFeedback?
+    @Binding var humanCriticLoading: Bool
+    @Binding var humanCriticError: String?
+    let onRetryHumanCritic: () -> Void
+
     private var isParallelMode: Bool {
         leftTitle != nil && rightTitle != nil
     }
@@ -43,7 +50,13 @@ struct RapSuggestionView: View {
         leftSuggestions: [RapSuggestion]? = nil,
         rightSuggestions: [RapSuggestion]? = nil,
         leftTitle: String? = nil,
-        rightTitle: String? = nil
+        rightTitle: String? = nil,
+        noteKey: String? = nil,
+        generationId: UUID? = nil,
+        humanCriticFeedback: Binding<HumanCriticFeedback?>,
+        humanCriticLoading: Binding<Bool>,
+        humanCriticError: Binding<String?>,
+        onRetryHumanCritic: @escaping () -> Void
     ) {
         self.suggestions = suggestions
         self.isLoading = isLoading
@@ -61,6 +74,12 @@ struct RapSuggestionView: View {
         self.rightSuggestions = rightSuggestions
         self.leftTitle = leftTitle
         self.rightTitle = rightTitle
+        self.noteKey = noteKey
+        self.generationId = generationId
+        _humanCriticFeedback = humanCriticFeedback
+        _humanCriticLoading = humanCriticLoading
+        _humanCriticError = humanCriticError
+        self.onRetryHumanCritic = onRetryHumanCritic
     }
     
     @Environment(\.colorScheme) private var colorScheme
@@ -247,32 +266,39 @@ struct RapSuggestionView: View {
     // MARK: - Silence View (PR 6)
     
     private func silenceView(_ commentary: CriticCommentary) -> some View {
-        VStack(spacing: 16) {
-            Image(systemName: "text.bubble")
-                .font(.system(size: 48))
-                .foregroundStyle(Momentum.contentSecondary)
-            
-            Text("No Line Generated")
-                .font(.headline)
-            
-            VStack(alignment: .leading, spacing: 12) {
-                Text(commentary.explanation)
-                    .font(.subheadline)
+        ScrollView {
+            VStack(spacing: 20) {
+                Image(systemName: "text.bubble")
+                    .font(.system(size: 48))
                     .foregroundStyle(Momentum.contentSecondary)
-                    .multilineTextAlignment(.center)
-                
-                Divider()
-                
-                Text("Reason: \(commentary.reason)")
-                    .font(.caption)
-                    .foregroundStyle(.tertiary)
-                
-                Text(commentary.guidance)
-                    .font(.caption)
-                    .foregroundStyle(Momentum.contentSecondary)
-                    .italic()
+
+                Text("No Line Generated")
+                    .font(.headline)
+
+                HumanCriticSectionView(
+                    feedback: humanCriticFeedback,
+                    isLoading: humanCriticLoading,
+                    errorMessage: humanCriticError,
+                    onRetry: onRetryHumanCritic
+                )
+                .padding(.horizontal, 20)
+
+                if humanCriticFeedback == nil && !humanCriticLoading {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text(commentary.explanation)
+                            .font(.subheadline)
+                            .foregroundStyle(Momentum.contentSecondary)
+                            .multilineTextAlignment(.center)
+                        Text(commentary.guidance)
+                            .font(.caption)
+                            .foregroundStyle(Momentum.contentSecondary)
+                            .italic()
+                            .multilineTextAlignment(.center)
+                    }
+                    .padding(.horizontal, 24)
+                }
             }
-            .padding(.horizontal, 40)
+            .padding(.vertical, 24)
         }
     }
     
@@ -300,20 +326,16 @@ struct RapSuggestionView: View {
     private var suggestionsList: some View {
         ScrollView {
             VStack(spacing: 16) {
-                // Writers Critique Section (auto-show on mode change, only once at top)
-                if let mode = currentSignalMode, let profile = currentSignalProfile {
-                    // Auto-show once per mode change
-                    if mode != lastShownMode {
-                        writersCritiqueSection(mode: mode, profile: profile)
-                            .onAppear {
-                                lastShownMode = mode
-                            }
-                    }
-                }
-                
                 ForEach(suggestions) { suggestion in
                     suggestionCard(suggestion)
                 }
+
+                HumanCriticSectionView(
+                    feedback: humanCriticFeedback,
+                    isLoading: humanCriticLoading,
+                    errorMessage: humanCriticError,
+                    onRetry: onRetryHumanCritic
+                )
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 16)
@@ -403,24 +425,28 @@ struct RapSuggestionView: View {
     @ViewBuilder
     private func cardContent(suggestion: RapSuggestion, lines: [String], hasAnyFeedback: Bool) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            suggestionTextSection(suggestion, lines: lines, hasAnyFeedback: hasAnyFeedback)
-            
-            // A&R Critique (teaching feedback based on user's submitted text)
-            if let critique = suggestion.arCritique, !critique.isEmpty {
-                arCritiqueSection(critique: critique)
-            }
-            
-            // PR 5: Line Comparison Critique (beneath generated lines)
-            if let mode = currentSignalMode, let profile = currentSignalProfile, let contextText = contextText {
+            if humanCriticFeedback == nil,
+               let mode = currentSignalMode,
+               let profile = currentSignalProfile,
+               let context = contextText,
+               !context.isEmpty {
                 lineComparisonCritique(
-                    userLine: contextText,
+                    userLine: context,
                     generatedLine: suggestion.text,
                     mode: mode,
                     profile: profile,
                     suggestion: suggestion
                 )
             }
+
+            suggestionTextSection(suggestion, lines: lines, hasAnyFeedback: hasAnyFeedback)
             
+            // Legacy A&R block hidden when human critic is active (calm editor MVP).
+            if humanCriticFeedback == nil,
+               let critique = suggestion.arCritique, !critique.isEmpty {
+                arCritiqueSection(critique: critique)
+            }
+
             suggestionThemeTags(suggestion)
             suggestionQualityIndicators(suggestion)
             feedbackLearningIndicator() // Show when feedback is being used
@@ -525,36 +551,7 @@ struct RapSuggestionView: View {
                         .foregroundStyle(.tertiary)
                         .italic()
                     
-                    // Why suggested
-                    if let why = comparison.whySuggested {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Why suggested:")
-                                .font(.caption2)
-                                .fontWeight(.semibold)
-                                .foregroundStyle(Momentum.contentSecondary)
-                            Text(why)
-                                .font(.caption)
-                                .foregroundStyle(Momentum.contentSecondary)
-                        }
-                    }
-                    
-                    // Previous lines critique
-                    if let previous = comparison.previousLineCritique {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Previous lines need:")
-                                .font(.caption2)
-                                .fontWeight(.semibold)
-                                .foregroundStyle(Momentum.contentSecondary)
-                            Text(previous)
-                                .font(.caption)
-                                .foregroundStyle(Momentum.contentSecondary)
-                        }
-                    }
-                    
-                    // Main commentary
-                    Text(comparison.commentary)
-                        .font(.caption)
-                        .foregroundStyle(Momentum.contentSecondary)
+                    LineComparisonCommentaryView(commentary: comparison.commentary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
@@ -1084,7 +1081,14 @@ struct RapSuggestionView: View {
                             categories: [],
                             qualityMetricCorrections: nil,
                             specificIssues: [],
-                            expectedVsActual: "Liked lines: \(likedLineTexts.joined(separator: ", "))"
+                            expectedVsActual: "Liked lines: \(likedLineTexts.joined(separator: ", "))",
+                            noteKey: noteKey,
+                            generationId: generationId
+                        )
+                        AIGenerationLedger.applyFeedbackGrade(
+                            generationId: generationId,
+                            suggestionId: suggestion.id,
+                            feedback: .liked
                         )
                     } else {
                         recordFeedback(suggestion: suggestion, feedback: feedback)
@@ -1244,7 +1248,9 @@ struct RapSuggestionView: View {
             suggestionId: suggestion.id,
             feedback: feedback,
             suggestionText: suggestion.text,
-            context: contextText ?? ""
+            context: contextText ?? "",
+            noteKey: noteKey,
+            generationId: generationId
         )
         
         // Track interaction
@@ -1252,6 +1258,20 @@ struct RapSuggestionView: View {
             suggestionId: suggestion.id,
             action: feedback == .liked ? .liked : .disliked
         )
+
+        if feedback == .liked {
+            TasteMemory.shared.recordAccepted(
+                suggestion: suggestion,
+                signalMode: currentSignalMode,
+                signalProfile: currentSignalProfile
+            )
+        } else {
+            TasteMemory.shared.recordRejected(
+                suggestion: suggestion,
+                signalMode: currentSignalMode,
+                signalProfile: currentSignalProfile
+            )
+        }
     }
     
     private func toggleLineFeedback(suggestionId: UUID, lineIndex: Int) {
@@ -1316,7 +1336,9 @@ struct RapSuggestionView: View {
             categories: Array(categories),
             qualityMetricCorrections: qualityMetrics,
             specificIssues: specificIssues,
-            expectedVsActual: feedbackText[suggestion.id]
+            expectedVsActual: feedbackText[suggestion.id],
+            noteKey: noteKey,
+            generationId: generationId
         )
         
         // Track interaction
@@ -1531,8 +1553,22 @@ class RapSuggestionEngine: ObservableObject {
     @Published var error: String?
     @Published var silenceCommentary: CriticCommentary? = nil  // PR 6: Silence as valid output
     
-    // Store previous suggestions for recall
+    // Store previous suggestions for recall (rolling history on this note)
     @Published var previousSuggestions: [RapSuggestion] = []
+    /// Most recent generation batch — used for "Open Last Suggestions" and persistence.
+    @Published var lastBatchSuggestions: [RapSuggestion] = []
+    @Published var lastSessionGenerationId: UUID?
+    @Published var lastSessionContextText: String?
+
+    @Published var humanCriticFeedback: HumanCriticFeedback?
+    @Published var humanCriticLoading: Bool = false
+    @Published var humanCriticError: String?
+
+    var hasRecallableSuggestions: Bool {
+        silenceCommentary != nil
+            || !lastBatchSuggestions.isEmpty
+            || (isParallelModelG && (!suggestionsV1.isEmpty || !suggestionsV2.isEmpty))
+    }
     
     // Parallel Model G v1 + v2: when true, UI shows suggestionsV1 (left) and suggestionsV2 (right) side-by-side
     @Published var suggestionsV1: [RapSuggestion] = []
@@ -1553,20 +1589,96 @@ class RapSuggestionEngine: ObservableObject {
     @Published var fullTextLineCount: Int = 0
     @Published var previousLines: [String] = []
     
-    // Pre-computed A&R critiques (generated in background when suggestions are created)
-    @Published var precomputedCritiques: [LineCritique] = []
-    
     private let analysisEngine = RapAnalysisEngine()
     private let api = RapSuggestionAPI.shared
     private lazy var filter: ConstraintFilter = {
         // Access FJCMUDICTStore via global accessor function
         return ConstraintFilter(phonemeStoreProvider: { getGlobalCMUDICTStore() })
     }()
+
+    /// Call after a successful generation to update recall state, ledger, and optional note persistence.
+    @MainActor
+    func commitGeneration(
+        batch: [RapSuggestion],
+        contextText: String,
+        model: SuggestionModel,
+        noteKey: String?,
+        noteTitle: String,
+        persistTo item: Item?
+    ) {
+        let generationId = UUID()
+        lastSessionGenerationId = generationId
+        lastSessionContextText = contextText
+        lastBatchSuggestions = batch
+
+        previousSuggestions.append(contentsOf: batch)
+        if previousSuggestions.count > NoteSuggestionSession.historyCap {
+            previousSuggestions = Array(previousSuggestions.suffix(NoteSuggestionSession.historyCap))
+        }
+
+        AIGenerationLedger.record(
+            generationId: generationId,
+            noteKey: noteKey ?? "",
+            noteTitle: noteTitle,
+            contextText: contextText,
+            model: model,
+            suggestions: batch,
+            silence: false
+        )
+
+        if let item {
+            NoteSuggestionSessionStore.save(from: self, contextText: contextText, model: model, to: item)
+        }
+    }
+
+    @MainActor
+    func clearHumanCritic() {
+        humanCriticFeedback = nil
+        humanCriticLoading = false
+        humanCriticError = nil
+    }
+
+    func refreshHumanCritic(userVerse: String, primarySuggestion: RapSuggestion?, themes: [String] = [], persistTo item: Item? = nil, model: SuggestionModel = .modelG) {
+        Task { @MainActor in
+            humanCriticLoading = true
+            humanCriticError = nil
+        }
+
+        let generated = primarySuggestion?.text
+        let voice = HumanCriticVoice(rawValue: UserDefaults.standard.string(forKey: "human_critic_voice") ?? "") ?? .calmEditor
+        Task {
+            do {
+                let feedback = try await HumanCriticService.shared.generate(
+                    userVerse: userVerse,
+                    generatedSuggestion: generated,
+                    themes: themes,
+                    voice: voice
+                )
+                await MainActor.run {
+                    self.humanCriticFeedback = feedback
+                    self.humanCriticLoading = false
+                    if let item {
+                        NoteSuggestionSessionStore.save(from: self, contextText: userVerse, model: model, to: item)
+                    }
+                }
+            } catch {
+                await MainActor.run {
+                    self.humanCriticLoading = false
+                    if let api = error as? RapAPIError, case .missingAPIKey = api {
+                        self.humanCriticError = "Add your API key in Profile → AI for personalized feedback."
+                    } else {
+                        self.humanCriticError = "Personal feedback unavailable. Try again."
+                    }
+                }
+            }
+        }
+    }
     
-    func generateSuggestions(text: String, highlights: [Highlight], model: SuggestionModel = .modelG, bpm: Int? = nil, key: String? = nil, scale: String? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil) async {
+    func generateSuggestions(text: String, highlights: [Highlight], model: SuggestionModel = .modelG, bpm: Int? = nil, key: String? = nil, scale: String? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil, noteKey: String? = nil, noteTitle: String = "", persistTo item: Item? = nil) async {
         await MainActor.run {
             isLoading = true
             error = nil
+            clearHumanCritic()
             suggestions = []
             silenceCommentary = nil  // Clear any previous silence commentary
             isParallelModelG = false
@@ -1706,6 +1818,7 @@ class RapSuggestionEngine: ObservableObject {
             #if DEBUG
             print("Model G: Calling generateSuggestions (useModelGCore=\(ModelGEnvironment.useModelGCore))...")
             #endif
+            let resolvedThemeIDs = item?.selectedThemeIDs ?? []
             var finalSuggestions = try await api.generateSuggestions(
                 candidates: [], // Empty - generate from scratch
                 metrics: metrics,
@@ -1719,6 +1832,7 @@ class RapSuggestionEngine: ObservableObject {
                 signalAxes: signalAxes,
                 allowedLexiconTerms: allowedLexiconTerms,
                 directedParams: directedParams,
+                selectedThemeIDs: resolvedThemeIDs,
                 rhymeGroupsByID: rhymeGroupsByID,
                 audioURL: audioURL,
                 transcriptionRhythmMapData: transcriptionRhythmMapData
@@ -1818,27 +1932,25 @@ class RapSuggestionEngine: ObservableObject {
             
             await MainActor.run {
                 suggestions = suggestionsToUse
-                silenceCommentary = nil  // Clear any previous silence
-                // Save to previous suggestions (append to history, limit to last 50)
-                previousSuggestions.append(contentsOf: finalSuggestions)
-                if previousSuggestions.count > 50 {
-                    previousSuggestions = Array(previousSuggestions.suffix(50))
-                }
+                silenceCommentary = nil
+                commitGeneration(
+                    batch: finalSuggestions,
+                    contextText: text,
+                    model: model,
+                    noteKey: noteKey,
+                    noteTitle: noteTitle,
+                    persistTo: item
+                )
                 loadingStep = nil
-            }
-            
-            // Background: Pre-compute A&R critiques for seamless opening
-            // PR 10: Pass GeneratorPolicy to critique generator
-            Task.detached(priority: .utility) {
-                let critiques = await MainActor.run {
-                    ARCritiqueGenerator.shared.analyzeTextForCritiques(
-                        text: text,
-                        policy: narrative.generatorPolicy  // Pass policy for policy-aware critiques
-                    )
-                }
-                await MainActor.run {
-                    self.precomputedCritiques = critiques
-                }
+                let primary = suggestionsToUse.first ?? finalSuggestions.first
+                let themeSet = Array(Set(finalSuggestions.flatMap(\.themes))).prefix(6).map { $0 }
+                refreshHumanCritic(
+                    userVerse: text,
+                    primarySuggestion: primary,
+                    themes: themeSet,
+                    persistTo: item,
+                    model: model
+                )
             }
             
         } catch let apiError as RapAPIError {
@@ -1848,11 +1960,30 @@ class RapSuggestionEngine: ObservableObject {
             await MainActor.run {
                 switch apiError {
                 case .silence(let commentary):
-                    // Handle silence response gracefully
                     self.silenceCommentary = commentary
                     self.suggestions = []
-                    self.error = nil  // Don't show as error, show as silence
+                    self.lastBatchSuggestions = []
+                    self.lastSessionGenerationId = UUID()
+                    self.error = nil
                     loadingStep = nil
+                    if let item {
+                        NoteSuggestionSessionStore.save(from: self, contextText: text, model: model, to: item)
+                    }
+                    AIGenerationLedger.record(
+                        generationId: self.lastSessionGenerationId!,
+                        noteKey: noteKey ?? "",
+                        noteTitle: noteTitle,
+                        contextText: text,
+                        model: model,
+                        suggestions: [],
+                        silence: true
+                    )
+                    refreshHumanCritic(
+                        userVerse: text,
+                        primarySuggestion: nil,
+                        persistTo: item,
+                        model: model
+                    )
                     
                     // Store silence for analytics (not as error, but as valid output)
                     ErrorStorageManager.shared.storeError(
@@ -1875,13 +2006,8 @@ class RapSuggestionEngine: ObservableObject {
                         context: "Rap Suggestion Generation - \(loadingStep ?? "Unknown step")"
                     )
                     // In-app notification with short explanation
-                    let shortMessage = apiError.inAppNotificationMessage
-                    if !shortMessage.isEmpty {
-                        NotificationCenter.default.post(
-                            name: .inAppAPIError,
-                            object: nil,
-                            userInfo: [InAppAPIErrorPayload.messageKey: shortMessage]
-                        )
+                    if !apiError.inAppNotificationMessage.isEmpty {
+                        AppErrorRecovery.postInAppError(from: apiError)
                     }
                 }
             }
@@ -1902,21 +2028,17 @@ class RapSuggestionEngine: ObservableObject {
                     context: "Rap Suggestion Generation - \(loadingStep ?? "Unknown step")"
                 )
                 // In-app notification with short explanation
-                let shortMessage = Self.shortMessageForError(error)
-                NotificationCenter.default.post(
-                    name: .inAppAPIError,
-                    object: nil,
-                    userInfo: [InAppAPIErrorPayload.messageKey: shortMessage]
-                )
+                AppErrorRecovery.postInAppError(from: error)
             }
         }
     }
     
     /// Run Model G Core v1 and v2 in parallel; results go to suggestionsV1 (left) and suggestionsV2 (right) for side-by-side UI.
-    func generateSuggestionsModelGParallel(text: String, highlights: [Highlight], bpm: Int? = nil, key: String? = nil, scale: String? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil) async {
+    func generateSuggestionsModelGParallel(text: String, highlights: [Highlight], bpm: Int? = nil, key: String? = nil, scale: String? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil, noteKey: String? = nil, noteTitle: String = "", persistTo item: Item? = nil) async {
         await MainActor.run {
             isLoading = true
             error = nil
+            clearHumanCritic()
             suggestions = []
             suggestionsV1 = []
             suggestionsV2 = []
@@ -1980,6 +2102,7 @@ class RapSuggestionEngine: ObservableObject {
             let modelSettings = api.loadModelSettings(for: .modelG)
             let userDetails = api.loadUserPersonalDetails()
             await MainActor.run { loadingStep = "Model G v1 & v2..." }
+            let resolvedThemeIDs = item?.selectedThemeIDs ?? []
             async let v1Task = api.generateSuggestions(
                 candidates: [],
                 metrics: metrics,
@@ -1993,6 +2116,7 @@ class RapSuggestionEngine: ObservableObject {
                 signalAxes: signalAxes,
                 allowedLexiconTerms: allowedLexiconTerms,
                 directedParams: directedParams,
+                selectedThemeIDs: resolvedThemeIDs,
                 rhymeGroupsByID: rhymeGroupsByID,
                 audioURL: audioURL,
                 transcriptionRhythmMapData: transcriptionRhythmMapData,
@@ -2011,6 +2135,7 @@ class RapSuggestionEngine: ObservableObject {
                 signalAxes: signalAxes,
                 allowedLexiconTerms: allowedLexiconTerms,
                 directedParams: directedParams,
+                selectedThemeIDs: resolvedThemeIDs,
                 rhymeGroupsByID: rhymeGroupsByID,
                 audioURL: audioURL,
                 transcriptionRhythmMapData: transcriptionRhythmMapData,
@@ -2037,11 +2162,24 @@ class RapSuggestionEngine: ObservableObject {
                 self.error = nil
                 self.silenceCommentary = nil
                 self.loadingStep = nil
-                self.previousSuggestions.append(contentsOf: resultsV1)
-                self.previousSuggestions.append(contentsOf: resultsV2)
-                if self.previousSuggestions.count > 50 {
-                    self.previousSuggestions = Array(self.previousSuggestions.suffix(50))
-                }
+                let batch = resultsV1 + resultsV2
+                self.commitGeneration(
+                    batch: batch,
+                    contextText: text,
+                    model: .modelG,
+                    noteKey: noteKey,
+                    noteTitle: noteTitle,
+                    persistTo: item
+                )
+                let primary = resultsV1.first ?? resultsV2.first
+                let themes = Array(Set(batch.flatMap(\.themes))).prefix(6).map { $0 }
+                self.refreshHumanCritic(
+                    userVerse: text,
+                    primarySuggestion: primary,
+                    themes: themes,
+                    persistTo: item,
+                    model: .modelG
+                )
             }
         } catch {
             #if DEBUG
@@ -2053,45 +2191,9 @@ class RapSuggestionEngine: ObservableObject {
                 self.suggestionsV2 = []
                 self.isParallelModelG = false
                 self.loadingStep = nil
-                let shortMessage = Self.shortMessageForError(error)
-                NotificationCenter.default.post(
-                    name: .inAppAPIError,
-                    object: nil,
-                    userInfo: [InAppAPIErrorPayload.messageKey: shortMessage]
-                )
+                AppErrorRecovery.postInAppError(from: error)
             }
         }
-    }
-    
-    // MARK: - In-app error notification helpers
-    
-    /// Short user-facing message for in-app toast when an error is not RapAPIError.
-    private static func shortMessageForError(_ error: Error) -> String {
-        if let apiError = error as? RapAPIError, !apiError.inAppNotificationMessage.isEmpty {
-            return apiError.inAppNotificationMessage
-        }
-        if let modelGError = error as? ModelGLLMError {
-            switch modelGError {
-            case .missingAPIKey:
-                return "API key missing. Add your OpenAI key in Settings."
-            case .rateLimitExceeded(let sec):
-                let wait = sec ?? 60
-                return "Too many requests. Wait \(wait)s and try again."
-            case .requestFailed:
-                return "Request failed. Check your connection and try again."
-            }
-        }
-        let lower = error.localizedDescription.lowercased()
-        if lower.contains("rate") || lower.contains("429") || lower.contains("limit") {
-            return "Too many requests. Wait a minute and try again."
-        }
-        if lower.contains("key") || lower.contains("api") {
-            return "API issue. Check your key in Settings."
-        }
-        if lower.contains("network") || lower.contains("connection") || lower.contains("timed out") {
-            return "Connection problem. Check your network and try again."
-        }
-        return "Something went wrong. Try again."
     }
     
     // MARK: - Silence Commentary

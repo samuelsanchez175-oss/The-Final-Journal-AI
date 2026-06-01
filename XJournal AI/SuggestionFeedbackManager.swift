@@ -14,7 +14,14 @@ class SuggestionFeedbackManager {
     
     // MARK: - Store Feedback
     
-    func recordFeedback(suggestionId: UUID, feedback: RapSuggestion.SuggestionFeedback, suggestionText: String, context: String) {
+    func recordFeedback(
+        suggestionId: UUID,
+        feedback: RapSuggestion.SuggestionFeedback,
+        suggestionText: String,
+        context: String,
+        noteKey: String? = nil,
+        generationId: UUID? = nil
+    ) {
         recordEnhancedFeedback(
             suggestionId: suggestionId,
             feedback: feedback,
@@ -24,7 +31,14 @@ class SuggestionFeedbackManager {
             qualityMetricCorrections: nil,
             specificIssues: nil,
             expectedVsActual: nil,
-            sessionId: UserBehaviorTracker.shared.sessionId ?? UUID().uuidString
+            sessionId: UserBehaviorTracker.shared.sessionId ?? UUID().uuidString,
+            noteKey: noteKey,
+            generationId: generationId
+        )
+        AIGenerationLedger.applyFeedbackGrade(
+            generationId: generationId,
+            suggestionId: suggestionId,
+            feedback: feedback
         )
     }
     
@@ -37,7 +51,9 @@ class SuggestionFeedbackManager {
         qualityMetricCorrections: QualityMetricFeedback? = nil,
         specificIssues: [String]? = nil,
         expectedVsActual: String? = nil,
-        sessionId: String? = nil
+        sessionId: String? = nil,
+        noteKey: String? = nil,
+        generationId: UUID? = nil
     ) {
         var allFeedback = loadAllFeedback()
         
@@ -52,7 +68,9 @@ class SuggestionFeedbackManager {
             suggestionText: suggestionText,
             context: context,
             timestamp: Date(),
-            sessionId: sessionId ?? UserBehaviorTracker.shared.sessionId ?? UUID().uuidString
+            sessionId: sessionId ?? UserBehaviorTracker.shared.sessionId ?? UUID().uuidString,
+            noteKey: noteKey,
+            generationId: generationId
         )
         
         allFeedback.append(feedbackEntry)
@@ -84,6 +102,11 @@ class SuggestionFeedbackManager {
     func getRecentFeedback(limit: Int = 50) -> [EnhancedFeedbackEntry] {
         let allFeedback = loadAllFeedback()
         return Array(allFeedback.suffix(limit))
+    }
+
+    func feedback(forNoteKey noteKey: String, limit: Int = 30) -> [EnhancedFeedbackEntry] {
+        let allFeedback = loadAllFeedback()
+        return Array(allFeedback.filter { $0.noteKey == noteKey }.suffix(limit))
     }
     
     func getFeedbackByCategory() -> [FeedbackCategory: Int] {
@@ -144,7 +167,9 @@ class SuggestionFeedbackManager {
                     suggestionText: oldEntry.suggestionText,
                     context: oldEntry.context,
                     timestamp: oldEntry.timestamp,
-                    sessionId: UUID().uuidString
+                    sessionId: UUID().uuidString,
+                    noteKey: nil,
+                    generationId: nil
                 )
             }
             saveFeedback(migrated)
@@ -185,6 +210,8 @@ struct EnhancedFeedbackEntry: Codable {
     let context: String
     let timestamp: Date
     let sessionId: String
+    let noteKey: String?
+    let generationId: UUID?
 }
 
 // MARK: - Feedback Category

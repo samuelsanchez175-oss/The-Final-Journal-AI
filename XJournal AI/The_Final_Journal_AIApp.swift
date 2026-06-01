@@ -43,6 +43,10 @@ struct The_Final_Journal_AIApp: App {
     /// Momentum appearance — Light by default (the app was leaning too dark). Light/Dark/Warm.
     @AppStorage("appTheme") private var appTheme = ThemeMode.light.rawValue
 
+    /// First-run onboarding gate: coral welcome bloom + skippable AI-key (BYOK) setup.
+    /// Cleared by SplashScreenManager.markOnboardingComplete() when the flow finishes.
+    @State private var showOnboarding: Bool = !SplashScreenManager.shared.hasCompletedOnboarding
+
     // MARK: - Pre-initialized ModelContainer
     // Initialize ModelContainer asynchronously on app launch to avoid blocking startup
     // Use static storage to avoid mutating getter issues in computed properties
@@ -195,6 +199,7 @@ struct The_Final_Journal_AIApp: App {
 
     var body: some Scene {
         WindowGroup {
+            ZStack {
             ContentView()
                 .tint(Momentum.accent)
                 .preferredColorScheme((ThemeMode(rawValue: appTheme) ?? .light).colorScheme)
@@ -275,6 +280,17 @@ struct The_Final_Journal_AIApp: App {
                     // Note: CMUDICT dictionary preloading and hero splash screen
                     // are handled in ContentView.onAppear where all types are accessible
                 }
+
+            // First-run onboarding overlay: coral welcome bloom + skippable AI-key setup.
+            if showOnboarding {
+                OnboardingWelcomeFlow {
+                    SplashScreenManager.shared.markOnboardingComplete()
+                    withAnimation(.easeInOut(duration: 0.45)) { showOnboarding = false }
+                }
+                .transition(.opacity)
+                .zIndex(10)
+            }
+            }
         }
         .modelContainer(sharedModelContainer)
     }

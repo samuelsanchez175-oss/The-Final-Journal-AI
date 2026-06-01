@@ -33,13 +33,14 @@ class ModelGCoreCoordinatorV2 {
         audioURL: URL?,
         styleOverride: StyleProfile? = nil,
         directedParams: DirectedGenerationParams? = nil,
+        selectedThemeIDs: [String] = [],
         transcriptionRhythmMapData: Data? = nil
     ) async throws -> GeneratedRecord {
         riskManager.reset()
 
         let intent = IntentExtractor.extractFromTopic(input)
         let signalAxes = computeModelGSignalAxes(from: input)
-        let themeContext = ThemeContextBuilder.build(from: input)
+        let themeContext = ThemeContextBuilder.build(from: input, selectedThemeIDs: selectedThemeIDs)
         let actionArc = SocialActionArc.build(dominant: signalAxes?.socialAction, count: barCount)
         var beatFingerprint: BeatFingerprint?
         if let url = audioURL {

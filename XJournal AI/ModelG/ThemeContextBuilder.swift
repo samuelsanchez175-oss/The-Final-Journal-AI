@@ -125,12 +125,32 @@ final class ThemeExampleStore {
 // MARK: - Theme Context Builder
 
 enum ThemeContextBuilder {
-    /// Detect the entry's dominant theme and build the Model G theme context.
-    /// Always-on but accuracy-preserving: best content match → taste favorite → none.
-    static func build(from entry: String, record: Bool = true) -> ThemeContext? {
+    static let themeAwareDefaultsKey = "theme_aware_generation"
+
+    /// Whether theme-aware generation is enabled. Defaults to ON when the user has never set it.
+    static var isThemeAwareEnabled: Bool {
+        (UserDefaults.standard.object(forKey: themeAwareDefaultsKey) as? Bool) ?? true
+    }
+
+    /// Resolve the entry's theme(s) and build the Model G theme context.
+    /// - selectedThemeIDs: user picks from the Theme Expansion sheet. Non-empty → overrides auto-detect.
+    /// Returns nil when theme-aware generation is OFF, or when no theme resolves.
+    static func build(from entry: String,
+                      selectedThemeIDs: [String] = [],
+                      record: Bool = true) -> ThemeContext? {
+        guard isThemeAwareEnabled else { return nil }
+
+        // 1. Selection overrides auto-detect.
+        if !selectedThemeIDs.isEmpty {
+            let picked = selectedThemeIDs.compactMap { ThemeCatalog.theme(id: $0) }
+            if let ctx = makeContext(from: picked, record: record) { return ctx }
+            // else fall through to auto-detect
+        }
+
+        // 2. Auto-detect over the curated 34-theme catalog.
         let text = entry.lowercased()
         guard !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { return nil }
-        let themes = NewRapDatabase.shared.themes
+        let themes = ThemeCatalog.all
         guard !themes.isEmpty else { return nil }
 
         func score(_ t: Theme) -> Double {
@@ -165,19 +185,36 @@ enum ThemeContextBuilder {
             chosen = nil                                // no signal — don't fabricate a theme
         }
         guard let theme = chosen else { return nil }
+        return makeContext(from: [theme], record: record)
+    }
 
-        if record { ThemeTasteTracker.shared.record(theme.name) }
+    /// Merge one or more themes into a single ThemeContext (cap 3 themes, 8 jargon terms).
+    private static func makeContext(from themes: [Theme], record: Bool) -> ThemeContext? {
+        let capped = Array(themes.prefix(3))
+        guard let primary = capped.first else { return nil }
+        if record { ThemeTasteTracker.shared.record(primary.name) }
 
-        let palette = theme.jargonTerms
-            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
-            .filter { $0.count > 1 }
-            .prefix(8)
+        var palette: [String] = []
+        var seen = Set<String>()
+        for t in capped {
+            for term in t.jargonTerms {
+                let cleaned = term.trimmingCharacters(in: .whitespacesAndNewlines)
+                let lower = cleaned.lowercased()
+                if cleaned.count > 1, !seen.contains(lower) {
+                    seen.insert(lower)
+                    palette.append(cleaned)
+                }
+            }
+        }
+        palette = Array(palette.prefix(8))
+
+        let name = capped.count > 1 ? capped.map(\.name).joined(separator: " + ") : primary.name
 
         return ThemeContext(
-            themeName: theme.name,
-            emotionalTone: theme.emotionalTone,
-            jargonPalette: Array(palette),
-            example: ThemeExampleStore.shared.example(forTheme: theme.name)
+            themeName: name,
+            emotionalTone: primary.emotionalTone,
+            jargonPalette: palette,
+            example: ThemeExampleStore.shared.example(forTheme: primary.name)
         )
     }
 }

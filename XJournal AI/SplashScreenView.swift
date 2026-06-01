@@ -185,7 +185,7 @@ struct HeroSplashView: View {
                         // Fallback to SF Symbol if icon not found
                         Image(systemName: "doc.text")
                             .font(.system(size: 60))
-                            .foregroundStyle(.blue)
+                            .foregroundStyle(Momentum.accent)
                             .frame(width: 120, height: 120)
                             .background(
                                 RoundedRectangle(cornerRadius: 26, style: .continuous)
@@ -231,12 +231,12 @@ struct HeroSplashView: View {
                 } label: {
                     Text("Get Started")
                         .font(.headline)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Momentum.onInverse)
                         .frame(maxWidth: 280)
                         .padding(.vertical, 16)
                         .background(
                             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                                .fill(.blue)
+                                .fill(Momentum.accent)
                         )
                 }
                 .opacity(showContent ? 1.0 : 0.0)
@@ -261,7 +261,7 @@ struct FeatureRow: View {
         HStack(spacing: 12) {
             Image(systemName: icon)
                 .font(.system(size: 16, weight: .medium))
-                .foregroundStyle(.blue)
+                .foregroundStyle(Momentum.accent)
                 .frame(width: 24)
             
             Text(text)
@@ -339,12 +339,12 @@ struct ToolbarOverviewSplashView: View {
                         } label: {
                             Text("Next")
                                 .font(.headline)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(Momentum.onInverse)
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                        .fill(.blue)
+                                        .fill(Momentum.accent)
                                 )
                         }
                         .buttonStyle(.plain)
@@ -416,7 +416,7 @@ struct ToolbarHighlightOverlay: View {
                 RoundedRectangle(cornerRadius: 20, style: .continuous)
                     .strokeBorder(
                         LinearGradient(
-                            colors: [.blue.opacity(0.8), .blue.opacity(0.4)],
+                            colors: [Momentum.accent.opacity(0.8), Momentum.accent.opacity(0.4)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
@@ -425,7 +425,7 @@ struct ToolbarHighlightOverlay: View {
                     .frame(width: frame.width + 20, height: frame.height + 20)
                     .position(x: frame.midX, y: frame.midY)
                     .scaleEffect(pulseScale)
-                    .shadow(color: .blue.opacity(0.5), radius: 20)
+                    .shadow(color: Momentum.accent.opacity(0.5), radius: 20)
             }
         }
     }
@@ -466,11 +466,11 @@ struct ToolbarButtonSplashView: View {
                     // Icon
                     Image(systemName: icon)
                         .font(.system(size: 48, weight: .medium))
-                        .foregroundStyle(.blue)
+                        .foregroundStyle(Momentum.accent)
                         .frame(width: 80, height: 80)
                         .background(
                             Circle()
-                                .fill(.blue.opacity(0.1))
+                                .fill(Momentum.accent.opacity(0.1))
                         )
                     
                     Text(title)
@@ -512,12 +512,12 @@ struct ToolbarButtonSplashView: View {
                             } label: {
                                 Text("Next")
                                     .font(.headline)
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(Momentum.onInverse)
                                     .frame(maxWidth: .infinity)
                                     .padding(.vertical, 12)
                                     .background(
                                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                            .fill(.blue)
+                                            .fill(Momentum.accent)
                                     )
                             }
                             .buttonStyle(.plain)
@@ -528,12 +528,12 @@ struct ToolbarButtonSplashView: View {
                             } label: {
                                 Text("Got it")
                                     .font(.headline)
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(Momentum.onInverse)
                                     .frame(maxWidth: .infinity)
                                     .padding(.vertical, 12)
                                     .background(
                                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                            .fill(.blue)
+                                            .fill(Momentum.accent)
                                     )
                             }
                             .buttonStyle(.plain)
@@ -603,7 +603,7 @@ struct ButtonHighlightOverlay: View {
                 Circle()
                     .strokeBorder(
                         LinearGradient(
-                            colors: [.blue.opacity(0.8), .blue.opacity(0.4)],
+                            colors: [Momentum.accent.opacity(0.8), Momentum.accent.opacity(0.4)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
@@ -612,20 +612,20 @@ struct ButtonHighlightOverlay: View {
                     .frame(width: frame.width + 30, height: frame.height + 30)
                     .position(x: frame.midX, y: frame.midY)
                     .scaleEffect(pulseScale)
-                    .shadow(color: .blue.opacity(0.5), radius: 15)
+                    .shadow(color: Momentum.accent.opacity(0.5), radius: 15)
                 
                 // Arrow pointing to button
                 if frame.midY < geometry.size.height / 2 {
                     // Button is in upper half, arrow points down
                     Image(systemName: "arrow.down")
                         .font(.system(size: 24, weight: .bold))
-                        .foregroundStyle(.blue)
+                        .foregroundStyle(Momentum.accent)
                         .position(x: frame.midX, y: frame.midY - frame.height / 2 - 40)
                 } else {
                     // Button is in lower half, arrow points up
                     Image(systemName: "arrow.up")
                         .font(.system(size: 24, weight: .bold))
-                        .foregroundStyle(.blue)
+                        .foregroundStyle(Momentum.accent)
                         .position(x: frame.midX, y: frame.midY + frame.height / 2 + 40)
                 }
             }

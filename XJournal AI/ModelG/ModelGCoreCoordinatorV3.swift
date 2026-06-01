@@ -20,7 +20,7 @@ class ModelGCoreCoordinatorV3 {
     private let debugLogger = DebugLogger()
 
     private let barCount = 16
-    private let verseCandidateCount = 2          // full-verse candidates generated in parallel
+    private let verseCandidateCount = 1          // speed trim (was 2): single verse, skips candidate scoring
     private let verseAverageThreshold: Double = 82
     private let defaultSyllableTarget = 11
 
@@ -29,6 +29,7 @@ class ModelGCoreCoordinatorV3 {
         audioURL: URL?,
         styleOverride: StyleProfile? = nil,
         directedParams: DirectedGenerationParams? = nil,
+        selectedThemeIDs: [String] = [],
         transcriptionRhythmMapData: Data? = nil,
         bpm: Int? = nil,
         musicalKey: String? = nil,
@@ -38,7 +39,7 @@ class ModelGCoreCoordinatorV3 {
 
         let intent = IntentExtractor.extractFromTopic(input)
         let signalAxes = computeModelGSignalAxes(from: input)
-        let themeContext = ThemeContextBuilder.build(from: input)
+        let themeContext = ThemeContextBuilder.build(from: input, selectedThemeIDs: selectedThemeIDs)
         let arcShape = SocialActionArc.shape(dominant: signalAxes?.socialAction)
 
         var beatFingerprint: BeatFingerprint?

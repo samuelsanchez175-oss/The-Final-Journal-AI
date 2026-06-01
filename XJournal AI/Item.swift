@@ -28,6 +28,12 @@ final class Item {
     // MARK: - AI Text Tracking
     var aiTextRanges: [String] = [] // Store AI text ranges as strings (startIndex:endIndex format)
 
+    /// Encoded `NoteSuggestionSession` — last suggestion batch for this note (survives app restart).
+    var lastSuggestionSessionData: Data?
+
+    /// Theme Expansion picks that steer Model G generation for this note (empty → auto-detect).
+    var selectedThemeIDs: [String] = []
+
     init(timestamp: Date, title: String = "", body: String = "") {
         self.timestamp = timestamp
         self.modifiedDate = nil // No modifications on creation

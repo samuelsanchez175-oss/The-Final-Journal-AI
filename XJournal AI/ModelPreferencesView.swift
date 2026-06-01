@@ -7,12 +7,16 @@ struct ModelPreferencesView: View {
 
     @State private var modelGv3Settings = ModelSettings()
     @State private var originalityBias = ModelGEnvironment.originalityBias
+    @AppStorage("theme_aware_generation") private var themeAwareGeneration = true
+    @AppStorage("human_critic_voice") private var criticVoiceRaw = HumanCriticVoice.calmEditor.rawValue
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 24) {
                     originalitySlider
+                    themeAwareToggle
+                    criticVoicePicker
                     ModelSettingsForm(settings: $modelGv3Settings)
                 }
                 .padding(.horizontal, 20)
@@ -55,6 +59,30 @@ struct ModelPreferencesView: View {
                 set: { originalityBias = $0; ModelGEnvironment.originalityBias = $0 }
             ), in: 0...1)
             Text("Lower leans on culture and familiar phrasing; higher is more novel. Mid is usually the sweet spot.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+        }
+    }
+
+    private var themeAwareToggle: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Toggle(isOn: $themeAwareGeneration) {
+                Text("Apply detected themes").font(.subheadline.weight(.semibold))
+            }
+            Text("When on, Model G draws on the themes in your note (or the ones you pick in Theme Expansion). Turn off to ignore themes entirely.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+        }
+    }
+
+    private var criticVoicePicker: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text("Critic voice").font(.subheadline.weight(.semibold))
+            Picker("Critic voice", selection: $criticVoiceRaw) {
+                ForEach(HumanCriticVoice.allCases, id: \.self) { voice in
+                    Text(voice.displayName).tag(voice.rawValue)
+                }
+            }
+            .pickerStyle(.segmented)
+            Text("How the Critic talks when it reacts to your lyrics — calm editor, a hyped friend, or full hype-man.")
                 .font(.caption).foregroundStyle(Momentum.contentSecondary)
         }
     }
