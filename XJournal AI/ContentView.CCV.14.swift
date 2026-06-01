@@ -946,56 +946,17 @@ struct DynamicIslandToolbarView: View {
             )
         }
         .overlay(alignment: .top) {
-            // AI Error Banner at top of screen
+            // AI Error Banner — sits just under notch/Dynamic Island, swipe-up to dismiss
             if showAIErrorToast, let errorMessage = aiErrorMessage {
-                VStack(spacing: 0) {
-                    HStack(spacing: 12) {
-                        Image(systemName: "exclamationmark.triangle.fill")
-                            .foregroundStyle(.red)
-                            .font(.title3)
-                        
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("AI Error")
-                                .font(.headline)
-                                .foregroundStyle(.primary)
-                            
-                            Text(errorMessage)
-                                .font(.body)
-                                .foregroundStyle(.primary)
-                                .fixedSize(horizontal: false, vertical: true)
-                                .multilineTextAlignment(.leading)
-                        }
-                        
-                        Spacer()
-                        
-                        Button {
-                            withAnimation(.easeOut(duration: 0.3)) {
-                                showAIErrorToast = false
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                                aiErrorMessage = nil
-                            }
-                        } label: {
-                            Image(systemName: "xmark.circle.fill")
-                                .foregroundStyle(.secondary)
-                                .font(.title3)
-                        }
+                AIErrorBanner(
+                    message: errorMessage,
+                    onDismiss: {
+                        withAnimation(.easeOut(duration: 0.25)) { showAIErrorToast = false }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { aiErrorMessage = nil }
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 16)
-                    .frame(maxWidth: .infinity)
-                    .background(
-                        Rectangle()
-                            .fill(.ultraThinMaterial)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                            .overlay(
-                                Rectangle()
-                                    .strokeBorder(Color.red.opacity(0.3), lineWidth: 1)
-                            )
-                    )
-                    .padding(.top, 60)
-                    .transition(.move(edge: .top).combined(with: .opacity))
-                }
+                )
+                .transition(.move(edge: .top).combined(with: .opacity))
+                .zIndex(999)
             }
         }
         // Phase 4: A&R Critique & Theme Expansion Sheets
