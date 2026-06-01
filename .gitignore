@@ -28,3 +28,37 @@ Carthage/Build/
 # Eval runtime artifacts (regenerated each run)
 eval/grading_log.csv
 eval/captures/e*.txt
+
+# ── Triage 2026-05-31 (Momentum reskin merge prep) ───────────────────────────
+# NOTE: this only ignores NOISE. The ~60 untracked .swift source files + data
+# CSVs + FlowDNA/ + backend/ are NOT ignored here on purpose — they must be
+# `git add`ed and committed, or the branch is broken on a fresh checkout.
+
+# Local editor / agent state (not shared)
+.cursor/
+.vscode/
+.claude/
+
+# Scratch dev notes & status reports. Design docs live in docs/ and the Obsidian
+# vault — if any of the below are real keepers, move them to docs/ instead of ignoring.
+/ADVANCED_RHYME_RANKING_SETUP.md
+/AI_PIPELINE_QUICK_REFERENCE.md
+/AI_PIPELINE_VISUAL.md
+/ANALYTICS_PAGE_STATUS.md
+/CSV_FILES_PLACEMENT_GUIDE.md
+/CSV_SETUP_INSTRUCTIONS.md
+/FEEDBACK_LOOP_IMPROVEMENTS.md
+/GENIUS_API_IMPLEMENTATION.md
+/GUNNA_CONSTRAINTS_UPDATE.md
+/MODEL_G_V2_PRIORITIES.md
+/NARRATIVE_PIPELINE_DOCUMENTATION.md
+/OPPORTUNITIES.md
+/RAP_AGENT_INTEGRATION_ROADMAP.md
+/XJournal AI/ADDING_CONSTRAINTS_TUTORIAL.md
+/XJournal AI/CSV_CLEANUP_PLAN.md
+/XJournal AI/CSV_FILES_SUMMARY.md
+/XJournal AI/MODEL_PREFERENCES_RECOMMENDATIONS.md
+/XJournal AI/SIGNAL_LAYER_GUIDE.md
+/XJournal AI/SIGNAL_LAYER_POWER_UPGRADES.md
+/XJournal AI/SIGNAL_LAYER_USER_GUIDE.md
+/XJournal AI/SignalDrivenGeneration.md

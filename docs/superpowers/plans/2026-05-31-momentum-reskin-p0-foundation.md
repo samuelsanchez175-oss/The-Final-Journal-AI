@@ -97,7 +97,7 @@ Add the file to the `The Final Journal AITests` target (Setup S2).
 Run:
 ```bash
 xcodebuild test -project "The Final Journal AI.xcodeproj" -scheme "The Final Journal AI" \
-  -destination 'platform=iOS Simulator,name=iPhone 16' \
+  -destination 'platform=iOS Simulator,name=iPhone 17' \
   -only-testing:"The Final Journal AITests/MomentumThemeTests" -quiet
 ```
 Expected: FAIL — `testLineAndLayoutTokens` can't compile / `lineThin` not a member of `MomentumTheme`. (`testHexInitDecodesChannels` would pass — the hex init already exists.)
@@ -551,7 +551,7 @@ Expected: `** BUILD SUCCEEDED **`. (Confirms the kit compiles into the app even 
 Run:
 ```bash
 xcodebuild test -project "The Final Journal AI.xcodeproj" -scheme "The Final Journal AI" \
-  -destination 'platform=iOS Simulator,name=iPhone 16' \
+  -destination 'platform=iOS Simulator,name=iPhone 17' \
   -only-testing:"The Final Journal AITests/MomentumThemeTests" -quiet
 ```
 Expected: PASS.
