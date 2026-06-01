@@ -238,7 +238,7 @@ struct SubscriptionManagementView: View {
             } label: {
                 Text("View Plans")
                     .font(.headline)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Momentum.onInverse)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 16)
                     .background(

@@ -85,7 +85,7 @@ struct BPMPopoverView: View {
                 } label: {
                     Image(systemName: "checkmark")
                         .font(.callout.weight(.semibold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Momentum.onInverse)
                         .frame(width: 32, height: 32)
                         .background(
                             Circle()
@@ -373,7 +373,7 @@ struct URLAttachmentPopoverView: View {
                 } label: {
                     Image(systemName: "checkmark")
                         .font(.callout.weight(.semibold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Momentum.onInverse)
                         .frame(width: 32, height: 32)
                         .background(
                             Circle()

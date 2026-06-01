@@ -85,7 +85,7 @@ struct ImportNotesInstructionsView: View {
                     Text("Open Notes App")
                         .font(.headline)
                 }
-                .foregroundStyle(.white)
+                .foregroundStyle(Momentum.onInverse)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 16)
                 .background(
@@ -171,7 +171,7 @@ struct ImportNotesInstructionsView: View {
                     Text("Done")
                         .font(.headline)
                 }
-                .foregroundStyle(.white)
+                .foregroundStyle(Momentum.onInverse)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 16)
                 .background(
@@ -198,7 +198,7 @@ struct ImportNotesInstructionsView: View {
         HStack(alignment: .top, spacing: 12) {
             Text(number)
                 .font(.title3.weight(.bold))
-                .foregroundStyle(.white)
+                .foregroundStyle(Momentum.onInverse)
                 .frame(width: 32, height: 32)
                 .background(
                     Circle()

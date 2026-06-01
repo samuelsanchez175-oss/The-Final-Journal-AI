@@ -37,7 +37,7 @@ struct UpgradePromptView: View {
                 } label: {
                     Text("Upgrade Now")
                         .font(.headline)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Momentum.onInverse)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 14)
                         .background(

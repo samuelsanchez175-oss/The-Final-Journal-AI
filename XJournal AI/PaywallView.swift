@@ -133,7 +133,7 @@ struct PaywallView: View {
                                 }
                                 Text(isPurchasing ? "Processing..." : "Subscribe")
                                     .font(.headline)
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(Momentum.onInverse)
                             }
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 16)

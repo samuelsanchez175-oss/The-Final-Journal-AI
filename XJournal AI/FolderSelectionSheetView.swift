@@ -136,7 +136,7 @@ struct FolderSelectionSheetView: View {
                                 RoundedRectangle(cornerRadius: 8, style: .continuous)
                                     .fill(Color.accentColor)
                             )
-                            .foregroundStyle(.white)
+                            .foregroundStyle(Momentum.onInverse)
                     }
                     .buttonStyle(.plain)
                 }
