@@ -46,7 +46,6 @@ struct CouponRedemptionView: View {
                             .background(
                                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                                     .fill(Momentum.surfaceElevated)
-                                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 12, style: .continuous)
                                             .strokeBorder(
@@ -153,7 +152,6 @@ struct CouponRedemptionView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
                 .padding()
@@ -161,7 +159,6 @@ struct CouponRedemptionView: View {
             .background(
                 Rectangle()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
             .navigationTitle("Redeem Code")

@@ -47,7 +47,6 @@ struct SocialPostCardView: View {
                     ZStack {
                         Rectangle()
                             .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                         
                         Image(systemName: "photo")
                             .font(.system(size: 60))
@@ -97,9 +96,7 @@ struct SocialPostCardView: View {
         }
         .background(
             Rectangle()
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .ignoresSafeArea()
+                .fill(Momentum.surfaceElevated)                .ignoresSafeArea()
         )
     }
     
@@ -111,7 +108,6 @@ struct SocialPostCardView: View {
             ZStack {
                 Rectangle()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 
                 Image(systemName: systemImage)
                     .font(.system(size: 80))
@@ -129,7 +125,6 @@ struct SocialPostCardView: View {
                 ZStack {
                     Rectangle()
                         .fill(Momentum.surfaceElevated)
-                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     
                     Image(systemName: "photo")
                         .font(.system(size: 60))

@@ -90,7 +90,6 @@ struct ThemeExpansionSheet: View {
                 // Background
                 Rectangle()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
                 
                 VStack(spacing: 0) {
@@ -373,7 +372,6 @@ struct ThemeExpansionSheet: View {
                 .background(
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .fill(Momentum.surfaceElevated)
-                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 )
                 
                 // Emotional tone filter
@@ -574,7 +572,6 @@ struct ThemeExpansionSheet: View {
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .overlay(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .stroke(
@@ -868,7 +865,6 @@ struct ThemeSelectionCard: View {
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
                                     .stroke(Color.clear, lineWidth: 1)
                     )
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     }
                 }
             )

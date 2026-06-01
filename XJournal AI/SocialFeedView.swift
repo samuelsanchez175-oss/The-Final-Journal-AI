@@ -41,7 +41,6 @@ struct SocialFeedView: View {
             .background(
                 Rectangle()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
             .navigationTitle("Social")

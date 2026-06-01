@@ -99,9 +99,7 @@ struct BPMPopoverView: View {
         .frame(width: 340)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .overlay(
+                .fill(Momentum.surfaceElevated)                .overlay(
                     LinearGradient(
                         colors: [
                             .white.opacity((GlassSettings.gloss - 0.6) / 3),
@@ -161,9 +159,7 @@ struct KeyPopoverView: View {
         .frame(width: 340)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .overlay(
+                .fill(Momentum.surfaceElevated)                .overlay(
                     LinearGradient(
                         colors: [
                             .white.opacity((GlassSettings.gloss - 0.6) / 3),
@@ -278,7 +274,6 @@ struct ScalePopoverView: View {
     private var backgroundView: some View {
         RoundedRectangle(cornerRadius: 22, style: .continuous)
             .fill(Momentum.surfaceElevated)
-            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
             .overlay(
                 LinearGradient(
                     colors: [
@@ -319,7 +314,6 @@ struct URLAttachmentPopoverView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
                         .fill(Momentum.surfaceElevated)
-                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                         .overlay(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
                                 .strokeBorder(
@@ -393,9 +387,7 @@ struct URLAttachmentPopoverView: View {
         .frame(width: 340)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .overlay(
+                .fill(Momentum.surfaceElevated)                .overlay(
                     LinearGradient(
                         colors: [
                             .white.opacity((GlassSettings.gloss - 0.6) / 3),
@@ -495,9 +487,7 @@ struct FolderPopoverView: View {
         .frame(width: 340)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .overlay(
+                .fill(Momentum.surfaceElevated)                .overlay(
                     LinearGradient(
                         colors: [
                             .white.opacity((GlassSettings.gloss - 0.6) / 3),

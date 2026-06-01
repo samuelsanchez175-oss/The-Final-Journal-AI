@@ -145,7 +145,6 @@ struct StyleTransferSheet: View {
                                     .background(
                                         RoundedRectangle(cornerRadius: 12, style: .continuous)
                                             .fill(Momentum.surfaceElevated)
-                                                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                                     )
                                 }
                                 .buttonStyle(.plain)
@@ -161,7 +160,6 @@ struct StyleTransferSheet: View {
             .background(
                 Rectangle()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
             .navigationTitle("Style Transfer")
@@ -291,7 +289,6 @@ struct StyleTransferSheet: View {
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
             )
             
             HStack(spacing: 6) {

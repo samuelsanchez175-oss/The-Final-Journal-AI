@@ -63,9 +63,7 @@ struct UsageWidgetView: View {
         .padding(.vertical, 8)
         .background(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-        )
+                .fill(Momentum.surfaceElevated)        )
         .onAppear {
             updateUsage()
             timer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { _ in

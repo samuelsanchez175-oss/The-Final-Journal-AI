@@ -115,9 +115,7 @@ struct ReleaseNotesSheetView: View {
         }
         .background(
             Rectangle()
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .ignoresSafeArea()
+                .fill(Momentum.surfaceElevated)                .ignoresSafeArea()
         )
     }
 
@@ -133,7 +131,6 @@ struct ReleaseNotesSheetView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 22, style: .continuous)
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .overlay(
                         LinearGradient(
                             colors: [
@@ -177,9 +174,7 @@ struct ReleaseNotesSheetView: View {
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .overlay(
+                .fill(Momentum.surfaceElevated)                .overlay(
                     LinearGradient(
                         colors: [
                             .white.opacity((GlassSettings.gloss - 0.6) / 3),

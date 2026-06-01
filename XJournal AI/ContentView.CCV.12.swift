@@ -749,7 +749,6 @@ struct UserPersonalizationSheet: View {
                             .background(
                                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                                     .fill(Momentum.surfaceElevated)
-                                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                             )
                             .overlay(
                                 Group {
@@ -830,7 +829,6 @@ struct UserPersonalizationSheet: View {
                         .background(
                             Capsule(style: .continuous)
                                 .fill(Momentum.surfaceElevated)
-                                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                         )
                     }
                 }

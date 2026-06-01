@@ -1165,9 +1165,7 @@ struct NoteEditorView: View {
         .frame(maxWidth: 680)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(.ultraThinMaterial)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .fill(.ultraThinMaterial)                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                 .overlay(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .strokeBorder(.primary.opacity(0.08), lineWidth: 1)

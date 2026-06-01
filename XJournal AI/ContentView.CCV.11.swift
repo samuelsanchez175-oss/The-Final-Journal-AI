@@ -70,9 +70,7 @@ struct JournalListView: View {
         .contentMargins(.horizontal, 0, for: .scrollContent)
         .background(
             Rectangle()
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .ignoresSafeArea()
+                .fill(Momentum.surfaceElevated)                .ignoresSafeArea()
         )
     }
 }

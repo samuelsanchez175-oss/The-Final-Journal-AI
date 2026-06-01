@@ -42,7 +42,7 @@ struct AnalyticsDashboardView: View {
                 
                 StatCard(
                     title: "Writing Streak",
-                    value: "\(stats.writingStreak) days",
+                    value: stats.writingStreak == 1 ? "1 day" : "\(stats.writingStreak) days",
                     icon: "flame.fill",
                     color: Momentum.accent
                 )
@@ -76,9 +76,7 @@ struct AnalyticsDashboardView: View {
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-            )
+                    .fill(Momentum.surfaceElevated)            )
         }
     }
     
@@ -111,7 +109,6 @@ struct AnalyticsDashboardView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
             }
@@ -153,7 +150,6 @@ struct AnalyticsDashboardView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
             }
@@ -213,7 +209,6 @@ struct AnalyticsDashboardView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
             }
@@ -282,7 +277,6 @@ struct AnalyticsDashboardView: View {
                             .background(
                                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                                     .fill(Momentum.surfaceElevated)
-                                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                             )
                         }
                     }
@@ -422,7 +416,6 @@ struct AnalyticsDashboardView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                 }
             }
@@ -491,9 +484,7 @@ struct AnalyticsDashboardView: View {
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-            )
+                    .fill(Momentum.surfaceElevated)            )
         }
     }
     
@@ -662,7 +653,6 @@ struct AnalyticsDashboardView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .fill(Momentum.surfaceElevated)
-                        .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
                 )
             }
             
@@ -687,9 +677,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
-                    )
+                            .fill(Momentum.surfaceElevated)                    )
                 }
             }
         }
@@ -774,9 +762,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
-                    )
+                            .fill(Momentum.surfaceElevated)                    )
                 }
             }
         }
@@ -841,9 +827,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
-                    )
+                            .fill(Momentum.surfaceElevated)                    )
                 }
             }
         }
@@ -881,9 +865,7 @@ struct AnalyticsDashboardView: View {
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(isDarkMode ? GlassSettings.darkening : 0))
-                    )
+                            .fill(Momentum.surfaceElevated)                    )
                 }
             }
         }
@@ -1112,9 +1094,7 @@ struct ReleaseNotesContentView: View {
         HStack(spacing: 16) {
             ZStack {
                 RoundedRectangle(cornerRadius: 22, style: .continuous)
-                    .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                    .overlay(
+                    .fill(Momentum.surfaceElevated)                    .overlay(
                         LinearGradient(
                             colors: [
                                 .white.opacity((GlassSettings.gloss - 0.6) / 3),
@@ -1158,7 +1138,6 @@ struct ReleaseNotesContentView: View {
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
                 .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .overlay(
                     LinearGradient(
                         colors: [

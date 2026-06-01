@@ -120,7 +120,6 @@ struct SuggestionHistoryView: View {
             .background(
                 Rectangle()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
             .navigationTitle("Suggestion History")
@@ -214,7 +213,6 @@ struct FavoriteSuggestionsView: View {
             .background(
                 Rectangle()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
             .navigationTitle("Favorite Suggestions")

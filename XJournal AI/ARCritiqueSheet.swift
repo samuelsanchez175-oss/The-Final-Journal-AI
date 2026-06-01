@@ -81,7 +81,6 @@ struct ARCritiqueSheet: View {
                             .background(
                                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                                     .fill(Momentum.surfaceElevated)
-                                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                             )
                             .padding(.horizontal)
                         }
@@ -121,7 +120,6 @@ struct ARCritiqueSheet: View {
                         .background(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
                                 .fill(Momentum.surfaceElevated)
-                                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                         )
                         .padding(.horizontal)
                     }
@@ -131,7 +129,6 @@ struct ARCritiqueSheet: View {
             .background(
                 Rectangle()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
             .navigationTitle("A&R Critique")
@@ -213,9 +210,7 @@ struct ARCritiqueSheet: View {
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-        )
+                .fill(Momentum.surfaceElevated)        )
     }
     
     private func critiqueIcon(for type: CritiqueType) -> String {

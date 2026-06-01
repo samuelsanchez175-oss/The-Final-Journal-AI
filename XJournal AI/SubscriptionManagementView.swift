@@ -40,7 +40,6 @@ struct SubscriptionManagementView: View {
             .background(
                 Rectangle()
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     .ignoresSafeArea()
             )
             .navigationTitle("Subscription")
@@ -121,9 +120,7 @@ struct SubscriptionManagementView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-        )
+                .fill(Momentum.surfaceElevated)        )
     }
     
     // MARK: - Benefits Card
@@ -148,9 +145,7 @@ struct SubscriptionManagementView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-        )
+                .fill(Momentum.surfaceElevated)        )
     }
     
     // MARK: - Management Actions Card
@@ -223,9 +218,7 @@ struct SubscriptionManagementView: View {
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-        )
+                .fill(Momentum.surfaceElevated)        )
     }
     
     // MARK: - Upgrade Card
@@ -259,9 +252,7 @@ struct SubscriptionManagementView: View {
         .frame(maxWidth: .infinity)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-        )
+                .fill(Momentum.surfaceElevated)        )
     }
     
     // MARK: - Transaction History Card
@@ -293,9 +284,7 @@ struct SubscriptionManagementView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-        )
+                .fill(Momentum.surfaceElevated)        )
     }
     
     // MARK: - Restore Purchases Card
@@ -338,9 +327,7 @@ struct SubscriptionManagementView: View {
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-        )
+                .fill(Momentum.surfaceElevated)        )
     }
     
     // MARK: - Helper Methods

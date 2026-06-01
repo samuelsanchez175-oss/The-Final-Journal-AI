@@ -93,9 +93,7 @@ struct InlineAudioCardView: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .strokeBorder(Color.primary.opacity(0.08), lineWidth: 1)
-                )
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .shadow(color: colorScheme == .dark ? .clear : .black.opacity(0.05), radius: 4, x: 0, y: 2)
+                )                .shadow(color: colorScheme == .dark ? .clear : .black.opacity(0.05), radius: 4, x: 0, y: 2)
         )
         .matchedGeometryEffect(id: "audio_card_\(item.id.hashValue)", in: audioNamespace)
         .onAppear {
@@ -223,7 +221,6 @@ struct InlineAudioCardView: View {
                     .background(
                         Capsule()
                             .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                     )
                     .padding(.top, 4)
                     .transition(.opacity.combined(with: .scale))

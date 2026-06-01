@@ -116,9 +116,7 @@ struct SupportShopSheetView: View {
                     .padding(14)
                     .background(
                         RoundedRectangle(cornerRadius: 18, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                    )
+                            .fill(Momentum.surfaceElevated)                    )
                     .transition(.move(edge: .bottom).combined(with: .opacity))
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
@@ -134,7 +132,6 @@ struct SupportShopSheetView: View {
         .background(
             Rectangle()
                 .fill(Momentum.surfaceElevated)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
                 .ignoresSafeArea()
         )
         .animation(.easeInOut(duration: 0.2), value: showThankYou)
@@ -158,7 +155,6 @@ struct SupportShopSheetView: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .fill(Momentum.surfaceElevated)
-                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
 
                     Image(systemName: symbol)
                         .font(.system(size: 28, weight: .semibold))
@@ -180,7 +176,6 @@ struct SupportShopSheetView: View {
             .background(
                 RoundedRectangle(cornerRadius: 20, style: .continuous)
                     .fill(Momentum.surfaceElevated)
-                    .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
             )
         }
         .buttonStyle(.plain)
