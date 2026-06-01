@@ -1,0 +1,2215 @@
+//
+// ContentView.CCV.13.swift
+//
+// This file contains NoteEditorView.
+//
+// Dependencies:
+// - ContentView.CCV.2.swift (for GlassSettings, ScrollOffsetKey, lightHaptic)
+// - ContentView.CCV.3.swift (for RhymeHighlighterEngine, Highlight, RhymeEngineState)
+// - ContentView.CCV.4.swift (for AudioPlayerManager)
+// - ContentView.CCV.5.swift (for KeyboardObserver)
+// - ContentView.CCV.6.swift (for RhymeHighlightTextView)
+// - ContentView.CCV.7.swift (for GlassView)
+// - ContentView.CCV.8.swift (for PopoverViews)
+// - ContentView.CCV.14.swift (for DynamicIslandToolbarView)
+// - ContentView.CCV.15.swift (for RhymeGroupListView)
+//
+import SwiftUI
+import SwiftData
+import UIKit
+import Combine
+import Foundation
+
+// #region agent log
+extension String {
+    func appendLineToFile(atPath path: String) throws {
+        // Create directory if it doesn't exist
+        let url = URL(fileURLWithPath: path)
+        let directory = url.deletingLastPathComponent()
+        try? FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil)
+        
+        // Now try to append to file
+        if let fileHandle = FileHandle(forWritingAtPath: path) {
+            defer { fileHandle.closeFile() }
+            fileHandle.seekToEndOfFile()
+            if let data = (self + "\n").data(using: .utf8) {
+                fileHandle.write(data)
+            }
+        } else {
+            // File doesn't exist, create it
+            try (self + "\n").write(toFile: path, atomically: true, encoding: .utf8)
+        }
+    }
+}
+// #endregion
+import NaturalLanguage
+import AVFoundation
+import Speech
+import PhotosUI
+import UniformTypeIdentifiers
+
+struct NoteEditorView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
+    @Bindable var item: Item
+
+    @State private var isRhymeOverlayVisible: Bool = false
+    @State private var showRhymeDiagnostics: Bool = false
+    @FocusState private var isEditorFocused: Bool
+    @StateObject private var keyboardObserver = KeyboardObserver()
+    @State private var isToolbarExpanded: Bool = false
+    @State private var scrollOffset: CGFloat = 0
+    @State private var savedScrollPosition: CGFloat = 0 // SEGMENT 20: Save scroll position to prevent jump
+    @State private var rhymeOverlayHeight: CGFloat = 40 // Dynamic height for rhyme overlay
+    @StateObject private var rhymeEngineState = RhymeEngineState()
+
+    @AppStorage("toolbar_ai_last_suggestion_model") private var lastToolbarSuggestionModelRaw: String = SuggestionModel.modelG.rawValue
+
+    /// Toolbar’s selected AI model (Model G, Model G v3, or Model Y). Drives Model G control surface generation.
+    private var toolbarSuggestionModel: SuggestionModel {
+        SuggestionModel.allCases.first { $0.rawValue == lastToolbarSuggestionModelRaw } ?? .modelG
+    }
+
+    /// When generating from the shared Model G control surface, map toolbar selection to the API model (never `.modelY`).
+    private var modelGControlSurfaceAPIModel: SuggestionModel {
+        switch toolbarSuggestionModel {
+        case .modelGv3: return .modelGv3
+        case .modelG, .modelY: return .modelG
+        }
+    }
+    
+    // Onboarding splash screen state
+    @ObservedObject private var splashManager = SplashScreenManager.shared
+    @State private var showToolbarOverview: Bool = false
+    @State private var showToolbarButtonSplash: Bool = false
+    @State private var currentButtonSplashID: SplashScreenID?
+    @State private var toolbarFrame: CGRect?
+    @State private var buttonFrames: [SplashScreenID: CGRect] = [:]
+    
+    // Helper function to count trailing newlines
+    private func countTrailingNewlines(in text: String) -> Int {
+        var count = 0
+        var index = text.endIndex
+        while index > text.startIndex {
+            let previousIndex = text.index(before: index)
+            if text[previousIndex] == "\n" {
+                count += 1
+                index = previousIndex
+            } else {
+                break
+            }
+        }
+        return count
+    }
+    
+    // No longer using trailing newlines - using padding instead to avoid text splitting issues
+    // This function is kept for compatibility but is no longer used
+    private func ensureTrailingNewlines() {
+        // Padding is handled by TextEditor's bottom padding instead
+    }
+
+    private var rhymeGroups: [RhymeHighlighterEngine.RhymeGroup] {
+        rhymeEngineState.cachedGroups
+    }
+
+    private var computedHighlights: [Highlight] {
+        // Use actual text for highlight calculations (no trailing newlines)
+        let displayText = item.body
+        var highlights = rhymeEngineState.cachedHighlights
+        
+        // Add context highlights for last 4 lines when generating suggestions
+        if showContextHighlight {
+            let contextHighlights = calculateContextHighlights(text: displayText)
+            highlights.append(contentsOf: contextHighlights)
+        }
+        
+        // Add AI-generated text highlights (blue color)
+        let aiHighlights = calculateAITextHighlights(text: displayText)
+        highlights.append(contentsOf: aiHighlights)
+        
+        return highlights
+    }
+    
+    // Computed properties for use in closures
+    private var currentText: String {
+        item.body
+    }
+    
+    private var highlights: [Highlight] {
+        computedHighlights
+    }
+    
+    // Improve flow function
+    private func improveFlow() async {
+        isImprovingFlow = true
+        improveFlowLoadingStep = "Analyzing flow..."
+        defer {
+            isImprovingFlow = false
+            improveFlowLoadingStep = nil
+        }
+        
+        await rapSuggestionEngine.generateSuggestions(
+            text: currentText,
+            highlights: highlights,
+            bpm: item.bpm,
+            key: item.key,
+            scale: item.scale,
+            audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+            transcriptionRhythmMapData: item.transcriptionRhythmMapData
+        )
+        
+        improveFlowSuggestions = rapSuggestionEngine.suggestions
+        if !improveFlowSuggestions.isEmpty {
+            showImproveFlow = true
+        }
+    }
+    
+    // MARK: - AI Text Highlights
+    
+    private func calculateAITextHighlights(text: String) -> [Highlight] {
+        guard !text.isEmpty, !item.aiTextRanges.isEmpty else { return [] }
+        
+        var highlights: [Highlight] = []
+        var validRanges: [String] = [] // Track valid ranges for cleanup
+        
+        for rangeString in item.aiTextRanges {
+            let components = rangeString.split(separator: ":")
+            guard components.count == 2,
+                  let start = Int(components[0]),
+                  let end = Int(components[1]),
+                  start >= 0,
+                  end <= text.count,
+                  start < end else {
+                // Range is invalid, skip it (will be cleaned up)
+                continue
+            }
+            
+            // Create range safely with bounds checking using limitedBy
+            guard let startIndex = text.index(text.startIndex, offsetBy: start, limitedBy: text.endIndex),
+                  let endIndex = text.index(text.startIndex, offsetBy: end, limitedBy: text.endIndex),
+                  startIndex < endIndex else {
+                continue
+            }
+            
+            let range = startIndex..<endIndex
+            
+            // Use blue color (index 3) for AI-generated text
+            highlights.append(Highlight(
+                range: range,
+                colorIndex: 3, // Blue color
+                strength: .perfect,
+                rhymeType: .endRhyme
+            ))
+            validRanges.append(rangeString) // Track valid ranges
+        }
+        
+        // Clean up invalid ranges if any were removed
+        if validRanges.count != item.aiTextRanges.count {
+            item.aiTextRanges = validRanges
+        }
+        
+        return highlights
+    }
+    
+    // MARK: - Context Highlights (Last 4 lines for AI suggestions)
+    
+    private func calculateContextHighlights(text: String) -> [Highlight] {
+        guard !text.isEmpty else { return [] }
+        
+        let lines = text.components(separatedBy: "\n")
+        guard lines.count >= 1 else { return [] }
+        
+        var highlights: [Highlight] = []
+        
+        // Calculate ranges for each line
+        var currentIndex = text.startIndex
+        
+        // Find the starting index of the last 4 lines
+        let linesSkipped = max(0, lines.count - 4)
+        
+        for (index, line) in lines.enumerated() {
+            if index >= linesSkipped {
+                // This is one of the last 4 lines
+                let lineEndIndex = text.index(currentIndex, offsetBy: line.count, limitedBy: text.endIndex) ?? text.endIndex
+                let lineRange = currentIndex..<lineEndIndex
+                
+                // Create highlight for entire line (including newline if not last line)
+                let highlightRange: Range<String.Index>
+                if index < lines.count - 1 {
+                    // Include newline character
+                    let newlineEnd = text.index(lineRange.upperBound, offsetBy: 1, limitedBy: text.endIndex) ?? text.endIndex
+                    highlightRange = lineRange.lowerBound..<newlineEnd
+                } else {
+                    // Last line, no newline
+                    highlightRange = lineRange
+                }
+                
+                // Use blue background highlight (index 3 from RhymeColorPalette) and perfect strength
+                // This is a background highlight, not foreground color
+                highlights.append(Highlight(
+                    range: highlightRange,
+                    colorIndex: 3, // Blue color for background
+                    strength: .perfect,
+                    rhymeType: .endRhyme
+                ))
+            }
+            
+            // Move to next line
+            if index < lines.count - 1 {
+                // Skip to after the newline
+                let nextLineStart = text.index(currentIndex, offsetBy: line.count + 1, limitedBy: text.endIndex) ?? text.endIndex
+                currentIndex = nextLineStart
+            }
+        }
+        
+        return highlights
+    }
+
+    // MARK: - Metadata Popover States
+    @State private var showBPMPopover: Bool = false
+    @State private var showKeyPopover: Bool = false
+    @State private var showScalePopover: Bool = false
+    @State private var showURLPopover: Bool = false
+    @State private var showFolderPopover: Bool = false
+    @State private var showAudioRecorder: Bool = false
+    @State private var showRapSuggestions: Bool = false
+    @State private var showModelGControlSurface: Bool = false
+    @State private var isShowingRecalled: Bool = false
+    @State private var showContextHighlight: Bool = false
+    @State private var showAudioImporter: Bool = false
+    @State private var showImportNotesInstructions: Bool = false
+    @State private var showAudioDetailSheet: Bool = false
+    @State private var showRawTranscriptOnSurface: Bool = false
+    @State private var shouldAutoTranscribe: Bool = false
+    @State private var showFindInTranscript: Bool = false
+    @StateObject private var transcriptionService = AudioTranscriptionService()
+    @StateObject private var rapSuggestionEngine = RapSuggestionEngine()
+    
+    // New features state
+    @State private var showRhymeSuggestions: Bool = false
+    @State private var showImproveFlow: Bool = false
+    @State private var showRewriteLine: Bool = false
+    @State private var lastWordRhymes: [RhymeSuggestion] = []
+    @State private var targetWordForRhymes: String = ""
+    @State private var improveFlowSuggestions: [RapSuggestion] = []
+    @State private var rewriteLineSuggestion: String = ""
+    
+    // Loading states for new features
+    @State private var isRewritingLine: Bool = false
+    @State private var isImprovingFlow: Bool = false
+    @State private var rewriteLineLoadingStep: String?
+    @State private var improveFlowLoadingStep: String?
+    @State private var slamAnimationText: String? = nil
+    @State private var slamAnimationOffset: CGFloat = 0
+    @State private var slamAnimationScale: CGFloat = 1.0
+    @State private var showProactiveFeedback: Bool = false
+    @State private var lastInsertedSuggestion: RapSuggestion? = nil
+    @State private var aiErrorMessage: String? = nil
+    @State private var showAIErrorToast: Bool = false
+    @State private var showPaywall: Bool = false
+    @State private var paywallFeature: String = ""
+    
+    // Phase 4 & 5: A&R Critique, Theme Expansion, Export, Analytics
+    @State private var showGenerateLyricsFromFlowSheet: Bool = false
+    @State private var showARCritiqueSheet: Bool = false
+    @State private var showThemeExpansionSheet: Bool = false
+    @State private var showExportSheet: Bool = false
+    @State private var themeExpansionSuggestions: [RapSuggestion] = []
+    @State private var isGeneratingThemeExpansion: Bool = false
+    @State private var selectedArtistForStyleTransfer: String = ""
+    
+    @Environment(\.colorScheme) private var colorScheme
+    
+    // Show AI error message
+    private func showAIError(_ message: String, source: String = "AI Sparkle Button", context: String? = nil) {
+        // Store error for analytics
+        ErrorStorageManager.shared.storeError(message, source: source, context: context)
+        
+        aiErrorMessage = message
+        showAIErrorToast = true
+        UINotificationFeedbackGenerator().notificationOccurred(.error)
+        
+        // Auto-dismiss after 8 seconds (longer for readability)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
+            withAnimation(.easeOut(duration: 0.3)) {
+                showAIErrorToast = false
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                aiErrorMessage = nil
+            }
+        }
+    }
+    
+    // Wrapper function for DynamicIslandToolbarView that expects (String) -> Void
+    private func showAIErrorWrapper(_ message: String) {
+        showAIError(message)
+    }
+    
+    // MARK: - Undo/Redo State
+    @State private var undoHistory: [String] = []
+    @State private var redoHistory: [String] = []
+    @State private var isUndoing: Bool = false
+    @State private var isRedoing: Bool = false
+
+    var body: some View {
+        VStack(spacing: 0) {
+            TextField("Title", text: $item.title)
+                .font(.title2.weight(.semibold))
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: 680)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 12)
+                .scaleEffect(scrollOffset < -20 ? 0.94 : 1.0)
+                .opacity(scrollOffset < -20 ? 0.6 : 1.0)
+                .animation(.easeOut(duration: 0.2), value: scrollOffset)
+                .onAppear {
+                    // #region agent log
+                    let logData: [String: Any] = ["sessionId": "debug-session", "runId": "run1", "hypothesisId": "D", "location": "ContentView.CCV.13.swift:298", "message": "TextField appeared", "data": ["title": item.title, "titleLength": item.title.count], "timestamp": Int(Date().timeIntervalSince1970 * 1000)]
+                    let logPath = "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log"
+                    if let jsonData = try? JSONSerialization.data(withJSONObject: logData), let jsonString = String(data: jsonData, encoding: .utf8) {
+                        if let fileHandle = FileHandle(forWritingAtPath: logPath) {
+                            fileHandle.seekToEndOfFile()
+                            fileHandle.write((jsonString + "\n").data(using: .utf8)!)
+                            fileHandle.closeFile()
+                        } else {
+                            try? (jsonString + "\n").write(toFile: logPath, atomically: true, encoding: .utf8)
+                        }
+                    }
+                    // #endregion
+                }
+
+            // MARK: - Metadata Pills Section
+            metadataPillsView
+                .padding(.vertical, 8)
+
+            Divider()
+                .frame(maxWidth: .infinity) // Extend divider to full width
+
+            GeometryReader { viewport in
+                ScrollViewReader { proxy in
+            ScrollView(.vertical, showsIndicators: false) {
+                        // Disable automatic scrolling when text editor is focused
+                        GeometryReader { geo in
+                            Color.clear
+                                .preference(key: ScrollOffsetKey.self,
+                                            value: geo.frame(in: CoordinateSpace.named("editorScroll")).minY)
+                        }
+                        .frame(height: 0)
+                    VStack(alignment: .leading, spacing: 0) { // FIXED: Decouple spacing
+                        // MARK: - Audio + transcript (scroll with content; not persistent)
+                        if let audioPath = item.audioPath, !audioPath.isEmpty {
+                            VStack(alignment: .leading, spacing: 12) {
+                                InlineAudioCardView(
+                                    item: item,
+                                    onTap: {
+                                        shouldAutoTranscribe = false
+                                        showAudioDetailSheet = true
+                                    },
+                                    onTranscribe: {
+                                        shouldAutoTranscribe = true
+                                        showAudioDetailSheet = true
+                                    },
+                                    onAddTranscriptToNote: {
+                                        guard let transcription = item.transcription, !transcription.isEmpty else { return }
+                                        let prefix = item.body.isEmpty ? "" : "\n\n"
+                                        item.body += prefix + transcription
+                                        item.modifiedDate = Date()
+                                    }
+                                )
+                                .padding(.horizontal, 20)
+                                if let transcription = item.transcription, !transcription.isEmpty {
+                                    transcriptSurfaceSection(transcription: transcription)
+                                }
+                            }
+                            .padding(.top, 16)
+                            .padding(.bottom, 8)
+                        }
+                        // SEGMENT 19: Unified Padding - Apply padding to ZStack for consistent writing room
+                            ZStack(alignment: .topLeading) {
+                                TextEditor(text: $item.body)
+                                    .focused($isEditorFocused)
+                                    .font(.body)
+                                    .frame(maxWidth: 680)
+                                    .padding(.horizontal, 20)
+                                    .padding(.top, 8)
+                                // SEGMENT 20: Static buffer for Keyboard Island - prevents displacement
+                                .padding(.bottom, 150) // Static buffer reserves physical space for Dynamic Island
+                                    .scrollContentBackground(.hidden)
+                                    .textEditorStyle(.plain)
+                                    .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
+                                // SEGMENT 20: Disable internal scroll to prevent "jumps"
+                                .scrollDisabled(true) // CRITICAL: Disable internal scroll - parent ScrollView handles scrolling
+                                // SEGMENT 20: Lock vertical rigidity - prevents viewport shift
+                                .fixedSize(horizontal: false, vertical: true) // CRITICAL: Vertical locking - forces expansion
+                                .layoutPriority(0) // Lower priority allows expansion (defaultLow hugging)
+                                    .allowsHitTesting(!isRhymeOverlayVisible) // Disable interaction when overlay is visible
+                                    .scrollDismissesKeyboard(.never) // Prevent keyboard from dismissing on scroll
+                                // SEGMENT 21: Auto-focus for empty notes to immediately show keyboard
+                                    .onAppear {
+                                    // Auto-focus TextEditor for new notes (empty body) to activate keyboard immediately
+                                        if item.body.isEmpty {
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                                isEditorFocused = true
+                                            }
+                                        }
+                                    }
+                                // SEGMENT 20: Prevent automatic scroll-to-cursor on focus
+                                .onChange(of: isEditorFocused) { oldValue, newValue in
+                                    if newValue && !oldValue {
+                                        // When focus is gained, save current scroll position immediately
+                                        savedScrollPosition = scrollOffset
+                                    }
+                                }
+                                // SEGMENT 20: Prevent automatic keyboard avoidance that causes jump
+                                // This modifier prevents the view from automatically adjusting when keyboard appears
+                                .ignoresSafeArea(.keyboard, edges: .all)
+
+                        // AI text is now only shown in the main overlay when eye toggle is on
+                        // When eye toggle is off, AI text is just normal text in the TextEditor
+
+                        // Always keep view in hierarchy - optimize by using opacity instead of conditional rendering
+                        // This prevents view recreation on toggle, allowing cache reuse
+                        // When eye toggle is on, show ALL text with highlights (not just highlights)
+                        // Wrap in GeometryReader to get real SwiftUI width for accurate height measurement
+                        GeometryReader { geo in
+                            RhymeHighlightTextView(
+                                text: item.body,
+                                highlights: computedHighlights,
+                                isVisible: isRhymeOverlayVisible,
+                                showFullText: true, // Always show full text, not just highlights
+                                horizontalPadding: 20, // Match TextEditor padding
+                                isEditable: isRhymeOverlayVisible, // Make overlay editable when visible
+                                onTextChange: { newText in
+                                    // Sync changes from overlay back to item.body
+                                    item.body = newText
+                                },
+                                dynamicHeight: $rhymeOverlayHeight,
+                                availableWidth: geo.size.width // Pass real SwiftUI width from GeometryReader
+                            )
+                            .frame(height: rhymeOverlayHeight)
+                            .animation(nil, value: isRhymeOverlayVisible) // Disable implicit animations on height changes
+                        }
+                        .frame(maxWidth: 680, alignment: .leading) // Match TextEditor width exactly
+                        .padding(.horizontal, 20) // Match TextEditor padding exactly
+                        .padding(.top, 8)
+                        // REMOVED: .padding(.bottom, 100) - moved to ZStack level for unified padding
+                        .opacity(isRhymeOverlayVisible ? 1.0 : 0.0)
+                        .allowsHitTesting(isRhymeOverlayVisible) // Allow interaction when overlay is visible
+                        .fixedSize(horizontal: false, vertical: true) // CRITICAL: Vertical locking - ensures both views match height
+                        .layoutPriority(0) // Lower priority allows expansion (defaultLow hugging)
+                        // REMOVED: .id() modifier - prevents view recreation that causes scroll jumps
+                        // The view stays in hierarchy and only opacity changes, preserving scroll position
+                        .onChange(of: isRhymeOverlayVisible) { oldValue, newValue in
+                            // CRITICAL: Prevent scroll jump when toggling eye icon
+                            // Layout updates happen in updateUIView without affecting scroll position
+                            // No forced layout here to prevent scroll position reset
+                        }
+                        
+                        // Slam animation overlay (iMessage-style)
+                        if let slamText = slamAnimationText {
+                            Text(slamText)
+                                .font(.body)
+                                .foregroundStyle(.blue)
+                                .padding(.horizontal, 20)
+                                .padding(.top, 8)
+                                .frame(maxWidth: 680, alignment: .leading)
+                                .offset(y: slamAnimationOffset)
+                                .scaleEffect(slamAnimationScale)
+                                .opacity(slamAnimationScale < 1.0 ? 0.6 : 1.0)
+                                .allowsHitTesting(false)
+                            }
+                        }
+                        .layoutPriority(0) // Text surface expands to fill available space
+                        // SEGMENT 20: Additional buffer at ZStack level for consistency
+                        // TextEditor already has .padding(.bottom, 150), this ensures overlay matches
+                        .padding(.bottom, 150) // Match TextEditor padding for synchronized height
+                        // FIXED: Ensure the text area fills the screen for easy tapping (Segment 18)
+                        // This ensures the entire viewport is tappable for writing
+                        .frame(minHeight: viewport.size.height - 200, alignment: .topLeading) // Reserve space for title, metadata pills, and toolbar
+                        
+                        // FIXED: Metadata bar now sits at the end of the content stream
+                        // MARK: - Timestamp Metadata Bar (Bottom of Note)
+                        noteTimestampBar
+                            .layoutPriority(1) // Higher priority - takes only what it needs (required hugging)
+                            .padding(.top, 40) // Create breathing room between text and meta
+                            .padding(.bottom, keyboardObserver.height > 0 ? 80 : 100) // Space above toolbar
+                    }
+                    .frame(maxWidth: 680) // Constrain to max width, center within parent
+                .coordinateSpace(name: "editorScroll")
+                .onPreferenceChange(ScrollOffsetKey.self) { value in
+                    scrollOffset = value
+                    }
+                    // SEGMENT 20: Override Keyboard Centering - Prevent system re-centering
+                    // Stops the system from trying to re-center the viewport upon focus
+                    .scrollDismissesKeyboard(.never) // CRITICAL: Stops system re-centering
+                    // SEGMENT 20: Disable automatic keyboard avoidance that causes jump
+                    .defaultScrollAnchor(.top) // Anchor to top to prevent bottom jump
+                    // SEGMENT 20: Prevent automatic scroll adjustments when keyboard appears
+                    .ignoresSafeArea(.keyboard, edges: .all)
+                    }
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        // SEGMENT 20: Scroll Gravity Locking - Ignore keyboard safe area to prevent displacement
+        // While the toolbar follows the keyboard, the text surface should ignore keyboard displacement
+        // This prevents the entire view from shifting upward when focus is gained
+        .ignoresSafeArea(.keyboard, edges: .bottom)
+        .safeAreaInset(edge: .bottom) {
+            DynamicIslandToolbarView(
+                isExpanded: $isToolbarExpanded,
+                isRhymeOverlayVisible: $isRhymeOverlayVisible,
+                showDiagnostics: $showRhymeDiagnostics,
+                rhymeGroups: rhymeGroups,
+                currentText: item.body,
+                highlights: computedHighlights,
+                isEditorFocused: $isEditorFocused,
+                keyboardHeight: $keyboardObserver.height,
+                showAudioRecorder: $showAudioRecorder,
+                showRapSuggestions: $showRapSuggestions,
+                showModelGControlSurface: $showModelGControlSurface,
+                rapSuggestionEngine: rapSuggestionEngine,
+                isShowingRecalled: $isShowingRecalled,
+                showContextHighlight: $showContextHighlight,
+                showAudioImporter: $showAudioImporter,
+                showImportNotesInstructions: $showImportNotesInstructions,
+                onRewriteLine: handleRewriteLine,
+                onSuggestRhymes: handleSuggestRhymes,
+                onImproveFlow: handleImproveFlow,
+                onUndo: handleUndo,
+                onRedo: handleRedo,
+                onInsertRapSuggestion: { suggestion in insertRapSuggestion(suggestion, isAIGenerated: true) },
+                canUndo: !undoHistory.isEmpty,
+                canRedo: !redoHistory.isEmpty,
+                isRewritingLine: $isRewritingLine,
+                isImprovingFlow: $isImprovingFlow,
+                rewriteLineLoadingStep: $rewriteLineLoadingStep,
+                improveFlowLoadingStep: $improveFlowLoadingStep,
+                showPaywall: $showPaywall,
+                paywallFeature: $paywallFeature,
+                showAIErrorToast: $showAIErrorToast,
+                aiErrorMessage: $aiErrorMessage,
+                showGenerateLyricsFromFlowSheet: $showGenerateLyricsFromFlowSheet,
+                showARCritiqueSheet: $showARCritiqueSheet,
+                showThemeExpansionSheet: $showThemeExpansionSheet,
+                showExportSheet: $showExportSheet,
+                insertRapSuggestion: insertRapSuggestion,
+                extractThemes: extractThemes,
+                showAIError: showAIErrorWrapper,
+                item: item
+            )
+            .frame(maxWidth: 680)
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .inAppAPIError)) { notification in
+            guard let msg = notification.userInfo?[InAppAPIErrorPayload.messageKey] as? String, !msg.isEmpty else { return }
+            aiErrorMessage = msg
+            showAIErrorToast = true
+            UINotificationFeedbackGenerator().notificationOccurred(.error)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
+                withAnimation(.easeOut(duration: 0.3)) {
+                    showAIErrorToast = false
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    aiErrorMessage = nil
+                }
+            }
+        }
+        .onChange(of: showModelGControlSurface) { _, isShowing in
+            if isShowing {
+                Task { await rhymeEngineState.refreshImmediately(text: item.body) }
+            }
+        }
+        .sheet(isPresented: $showModelGControlSurface) {
+            ModelGControlSurfaceView(rhymeGroups: rhymeGroups) { params, rhymeGroupsByID in
+                showModelGControlSurface = false
+                showContextHighlight = true
+                Task {
+                    let useParallelModelG = toolbarSuggestionModel == .modelG
+                        && ModelGEnvironment.useModelGCore
+                        && ModelGEnvironment.useModelGv2
+                    if useParallelModelG {
+                        await rapSuggestionEngine.generateSuggestionsModelGParallel(
+                            text: currentText,
+                            highlights: computedHighlights,
+                            bpm: item.bpm,
+                            key: item.key,
+                            scale: item.scale,
+                            directedParams: params,
+                            rhymeGroupsByID: rhymeGroupsByID,
+                            audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                            transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                        )
+                    } else {
+                        await rapSuggestionEngine.generateSuggestions(
+                            text: currentText,
+                            highlights: computedHighlights,
+                            model: modelGControlSurfaceAPIModel,
+                            bpm: item.bpm,
+                            key: item.key,
+                            scale: item.scale,
+                            directedParams: params,
+                            rhymeGroupsByID: rhymeGroupsByID,
+                            audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                            transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                        )
+                    }
+                    await MainActor.run {
+                        showContextHighlight = false
+                        if let error = rapSuggestionEngine.error {
+                            HapticFeedbackManager.shared.error()
+                            showAIErrorWrapper(error)
+                        } else {
+                            HapticFeedbackManager.shared.success()
+                            showRapSuggestions = true
+                        }
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $showRapSuggestions) {
+            RapSuggestionView(
+                suggestions: isShowingRecalled ? rapSuggestionEngine.previousSuggestions : rapSuggestionEngine.suggestions,
+                isLoading: rapSuggestionEngine.isLoading && !isShowingRecalled,
+                loadingStep: isShowingRecalled ? nil : rapSuggestionEngine.loadingStep,
+                error: isShowingRecalled ? nil : rapSuggestionEngine.error,
+                onSelect: { suggestion in
+                    insertRapSuggestion(suggestion, isAIGenerated: true)
+                },
+                onCopy: { suggestion in
+                    copyRapSuggestionWithSlam(suggestion)
+                },
+                onDismiss: {
+                    showRapSuggestions = false
+                    isShowingRecalled = false
+                },
+                contextText: currentText,
+                onRegenerate: {
+                    Task {
+                        if rapSuggestionEngine.isParallelModelG,
+                           let params = rapSuggestionEngine.lastParallelDirectedParams,
+                           let rhymeGroupsByID = rapSuggestionEngine.lastParallelRhymeGroupsByID {
+                            await rapSuggestionEngine.generateSuggestionsModelGParallel(
+                                text: currentText,
+                                highlights: computedHighlights,
+                                bpm: item.bpm,
+                                key: item.key,
+                                scale: item.scale,
+                                directedParams: params,
+                                rhymeGroupsByID: rhymeGroupsByID,
+                                audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                                transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                            )
+                        } else {
+                            await rapSuggestionEngine.generateSuggestions(
+                                text: currentText,
+                                highlights: highlights,
+                                model: rapSuggestionEngine.lastStandardGenerationModel,
+                                bpm: item.bpm,
+                                key: item.key,
+                                scale: item.scale,
+                                audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                                transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                            )
+                        }
+                    }
+                },
+                currentSignalMode: isShowingRecalled ? nil : rapSuggestionEngine.currentSignalMode,
+                currentSignalProfile: isShowingRecalled ? nil : rapSuggestionEngine.currentSignalProfile,
+                silenceCommentary: rapSuggestionEngine.silenceCommentary,
+                leftSuggestions: rapSuggestionEngine.isParallelModelG ? rapSuggestionEngine.suggestionsV1 : nil,
+                rightSuggestions: rapSuggestionEngine.isParallelModelG ? rapSuggestionEngine.suggestionsV2 : nil,
+                leftTitle: rapSuggestionEngine.isParallelModelG ? "Model G v1" : nil,
+                rightTitle: rapSuggestionEngine.isParallelModelG ? "Model G v2" : nil
+            )
+        }
+        .sheet(isPresented: $showRhymeSuggestions) {
+            RhymeSuggestionView(
+                rhymes: lastWordRhymes,
+                targetWord: targetWordForRhymes,
+                onSelect: { word in
+                    insertRhymeWord(word)
+                },
+                onDismiss: {
+                    showRhymeSuggestions = false
+                }
+            )
+        }
+        .sheet(isPresented: $showImproveFlow) {
+            RapSuggestionView(
+                suggestions: improveFlowSuggestions,
+                isLoading: rapSuggestionEngine.isLoading,
+                loadingStep: rapSuggestionEngine.loadingStep,
+                error: rapSuggestionEngine.error,
+                onSelect: { suggestion in
+                    insertRapSuggestion(suggestion, isAIGenerated: true)
+                },
+                onCopy: { suggestion in
+                    copyRapSuggestionWithSlam(suggestion)
+                },
+                onDismiss: {
+                    showImproveFlow = false
+                },
+                contextText: item.body, // Pass context for feedback tracking
+                onRegenerate: {
+                    // Regenerate flow improvements (Phase 1)
+                    Task {
+                        await improveFlow()
+                    }
+                },
+                currentSignalMode: rapSuggestionEngine.currentSignalMode,
+                currentSignalProfile: rapSuggestionEngine.currentSignalProfile
+            )
+        }
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                Button {
+                    HapticFeedbackManager.shared.lightTap()
+                    handleUndo()
+                } label: {
+                    Image(systemName: "arrow.uturn.backward")
+                }
+                .disabled(undoHistory.isEmpty)
+                .accessibilityLabel("Undo")
+                .accessibilityHint("Double tap to undo last change")
+                
+                Button {
+                    HapticFeedbackManager.shared.lightTap()
+                    handleRedo()
+                } label: {
+                    Image(systemName: "arrow.uturn.forward")
+                }
+                .disabled(redoHistory.isEmpty)
+                .accessibilityLabel("Redo")
+                .accessibilityHint("Double tap to redo last undone change")
+                
+                Menu {
+                    Button {
+                        prepareHapticForNewNote()
+                        createAndNavigateToNewNote()
+                    } label: {
+                        Label("New Note", systemImage: "square.and.pencil")
+                    }
+
+                    Button {
+                        // TODO: Import from Apple Notes
+                    } label: {
+                        Label("Import from Notes", systemImage: "note.text")
+                    }
+
+                    Button {
+                        openAudioRecorder()
+                    } label: {
+                        Label("Record Audio", systemImage: "waveform")
+                    }
+                    
+                    // Phase 5: Export functionality (Basic+)
+                    if FeatureGate.canAccess(.exportPDF) || FeatureGate.canAccess(.exportWord) {
+                        Divider()
+                        
+                        Button {
+                            HapticFeedbackManager.shared.lightTap()
+                            // Check feature access before showing sheet
+                            if !FeatureGate.checkAccess(.exportPDF, showPaywall: { featureName in
+                                paywallFeature = featureName
+                                showPaywall = true
+                            }) {
+                                return
+                            }
+                            showExportSheet = true
+                        } label: {
+                            Label("Export Note", systemImage: "square.and.arrow.up")
+                        }
+                    }
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showAudioRecorder) {
+            AudioRecorderView(item: item)
+        }
+        .sheet(isPresented: $showAudioDetailSheet) {
+            AudioDetailSheet(item: item, autoTranscribe: shouldAutoTranscribe)
+        }
+        .onChange(of: showAudioDetailSheet) { oldValue, newValue in
+            // Reset auto-transcribe flag when sheet is dismissed
+            if !newValue {
+                shouldAutoTranscribe = false
+            }
+        }
+        .fileImporter(
+            isPresented: $showAudioImporter,
+            allowedContentTypes: [.audio, .mpeg4Audio],
+            allowsMultipleSelection: false
+        ) { result in
+            handleAudioImport(result: result)
+        }
+        .sheet(isPresented: $showImportNotesInstructions) {
+            ImportNotesInstructionsView(
+                modelContext: modelContext,
+                onNoteCreated: { newItem in
+                  showImportNotesInstructions = false
+                  // When importing from NoteEditorView, append to current note instead of creating new one
+                  let importedText = newItem.body
+                  if !importedText.isEmpty {
+                      if !item.body.isEmpty {
+                          item.body += "\n\n"
+                      }
+                      item.body += importedText
+                      item.modifiedDate = Date()
+                  }
+                }
+            )
+            .presentationDetents([PresentationDetent.large])
+            .presentationDragIndicator(Visibility.visible)
+        }
+        .onAppear {
+            // Ensure text has 4 trailing newlines for writing space
+            ensureTrailingNewlines()
+            // Initialize undo history with current state
+            if undoHistory.isEmpty {
+                undoHistory.append(item.body)
+            }
+            // Immediate analysis on appear (no debounce needed - user isn't typing yet)
+            rhymeEngineState.updateIfNeeded(text: item.body)
+            
+            // Check if we should show toolbar overview splash
+            if splashManager.hasCompletedOnboarding && splashManager.shouldShowSplash(.toolbarOverview) {
+                // Small delay to ensure toolbar is rendered
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    isToolbarExpanded = true // Expand toolbar for overview
+                    showToolbarOverview = true
+                }
+            }
+        }
+        .overlay {
+            // Toolbar Overview Splash
+            if showToolbarOverview {
+                ToolbarOverviewSplashView(
+                    toolbarFrame: toolbarFrame,
+                    onDismiss: {
+                        showToolbarOverview = false
+                    },
+                    onNext: {
+                        showToolbarOverview = false
+                        showNextToolbarButtonSplash()
+                    }
+                )
+                .transition(.opacity)
+                .zIndex(1000)
+            }
+            
+            // Toolbar Button Splash
+            if showToolbarButtonSplash, let splashID = currentButtonSplashID {
+                let buttonInfo = getButtonInfo(for: splashID)
+                let buttonFrame = buttonFrames[splashID] ?? (toolbarFrame != nil ? calculateApproximateButtonFrame(for: splashID, toolbarFrame: toolbarFrame!) : nil)
+                ToolbarButtonSplashView(
+                    id: splashID,
+                    buttonFrame: buttonFrame,
+                    title: buttonInfo.title,
+                    description: buttonInfo.description,
+                    icon: buttonInfo.icon,
+                    onDismiss: {
+                        showToolbarButtonSplash = false
+                        currentButtonSplashID = nil
+                    },
+                    onNext: {
+                        showToolbarButtonSplash = false
+                        currentButtonSplashID = nil
+                        showNextToolbarButtonSplash()
+                    }
+                )
+                .transition(.opacity)
+                .zIndex(1000)
+            }
+        }
+        .onChange(of: item.body) { oldValue, newValue in
+            // Track modification date when body changes
+            if oldValue != newValue {
+                item.modifiedDate = Date()
+                
+                // Track writing activity
+                let oldWords = oldValue.components(separatedBy: CharacterSet.whitespacesAndNewlines)
+                    .filter { !$0.isEmpty }.count
+                let newWords = newValue.components(separatedBy: CharacterSet.whitespacesAndNewlines)
+                    .filter { !$0.isEmpty }.count
+                let wordsAdded = newWords - oldWords
+                if wordsAdded > 0 {
+                    UserBehaviorTracker.shared.trackWritingActivity(wordsWritten: wordsAdded)
+                    
+                    // Check achievements periodically (every 100 words)
+                    // Defer to background to avoid blocking UI
+                    if newWords % 100 == 0 {
+                        Task.detached(priority: .utility) {
+                            await MainActor.run {
+                                // Get all items to check achievements accurately
+                                let descriptor = FetchDescriptor<Item>()
+                                if let allItems = try? modelContext.fetch(descriptor) {
+                                    UserBehaviorTracker.shared.checkAchievementsWithItems(items: allItems)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            // Track undo/redo history (skip if we're currently undoing/redoing)
+            if !isUndoing && !isRedoing && oldValue != newValue {
+                // Add to undo history
+                undoHistory.append(oldValue)
+                // Clear redo history when new change is made
+                redoHistory.removeAll()
+                // Limit undo history to 50 entries
+                if undoHistory.count > 50 {
+                    undoHistory.removeFirst()
+                }
+            }
+            
+            // Debounced analysis - waits 400ms after typing stops before analyzing
+            // This reduces computation during active typing and improves performance
+            rhymeEngineState.updateIfNeeded(text: newValue)
+        }
+        .onChange(of: item.title) { oldValue, newValue in
+            // Track modification date when title changes
+            if oldValue != newValue {
+                item.modifiedDate = Date()
+                // Explicitly save the context to ensure changes persist
+                do {
+                    try item.modelContext?.save()
+                } catch {
+                    print("⚠️ Failed to save title change: \(error.localizedDescription)")
+                }
+            }
+        }
+        // MARK: - Metadata Popovers (Segment 2)
+        .sheet(isPresented: $showBPMPopover) {
+            BPMPopoverView(bpm: $item.bpm)
+                .presentationDetents([.medium])
+                .presentationDragIndicator(.visible)
+        }
+        .popover(isPresented: $showKeyPopover) {
+            KeyPopoverView(key: $item.key)
+        }
+        .popover(isPresented: $showScalePopover) {
+            ScalePopoverView(key: $item.key, scale: $item.scale)
+        }
+        .sheet(isPresented: $showURLPopover) {
+            URLAttachmentPopoverView(url: $item.urlAttachment)
+                .presentationDetents([.medium])
+                .presentationDragIndicator(.visible)
+        }
+        .popover(isPresented: $showFolderPopover) {
+            FolderPopoverView(folder: $item.folder)
+        }
+        // Phase 4: Style Transfer & Theme Expansion Sheets
+        .sheet(isPresented: $showProactiveFeedback) {
+            if let suggestion = lastInsertedSuggestion {
+                ProactiveFeedbackView(
+                    suggestion: suggestion,
+                    context: currentText,
+                    onDismiss: {
+                        showProactiveFeedback = false
+                        lastInsertedSuggestion = nil
+                    }
+                )
+            }
+        }
+        .sheet(isPresented: $showGenerateLyricsFromFlowSheet) {
+            GenerateLyricsFromFlowSheet(
+                item: item,
+                onInsertLyrics: { lyrics in
+                    let trimmed = lyrics.trimmingCharacters(in: .whitespacesAndNewlines)
+                    if !trimmed.isEmpty {
+                        let newBody = item.body.isEmpty ? trimmed : (item.body + "\n\n" + trimmed)
+                        item.body = newBody
+                        item.modifiedDate = Date()
+                    }
+                },
+                onDismiss: {
+                    showGenerateLyricsFromFlowSheet = false
+                },
+                onOpenRecorder: {
+                    showGenerateLyricsFromFlowSheet = false
+                    showAudioRecorder = true
+                },
+                onOpenAudioImporter: {
+                    showGenerateLyricsFromFlowSheet = false
+                    showAudioImporter = true
+                }
+            )
+        }
+        .sheet(isPresented: $showARCritiqueSheet) {
+            ARCritiqueSheet(
+                currentText: item.body,
+                onDismiss: {
+                    showARCritiqueSheet = false
+                },
+                precomputedCritiques: rapSuggestionEngine.precomputedCritiques.isEmpty ? nil : rapSuggestionEngine.precomputedCritiques
+            )
+        }
+        .sheet(isPresented: $showThemeExpansionSheet) {
+            ThemeExpansionSheet(
+                currentText: currentText,
+                currentThemes: extractThemes(from: currentText),
+                onSelect: { suggestion in
+                    insertRapSuggestion(suggestion, isAIGenerated: true)
+                },
+                onDismiss: {
+                    showThemeExpansionSheet = false
+                }
+            )
+        }
+        // Phase 5: Export Sheet
+        .sheet(isPresented: $showExportSheet) {
+            ExportSheet(
+                item: item,
+                onDismiss: {
+                    showExportSheet = false
+                }
+            )
+        }
+    }
+    
+    // Phase 4: Extract themes from text for theme expansion
+    private func extractThemes(from text: String) -> [String] {
+        guard !text.isEmpty else { return [] }
+        
+        // Try to extract themes using simple keyword matching as fallback
+        // This is a lightweight extraction - full AI analysis happens in theme expansion API
+        var extractedThemes: [String] = []
+        
+        // Common rap theme keywords
+        let themeKeywords: [String: String] = [
+            "money": "wealth",
+            "cash": "wealth",
+            "rich": "wealth",
+            "poor": "struggle",
+            "hustle": "hustle",
+            "grind": "hustle",
+            "success": "success",
+            "fame": "fame",
+            "power": "power",
+            "respect": "respect",
+            "loyalty": "loyalty",
+            "betrayal": "betrayal",
+            "love": "love",
+            "heartbreak": "heartbreak",
+            "pain": "pain",
+            "struggle": "struggle",
+            "street": "street",
+            "gang": "gang",
+            "violence": "violence",
+            "family": "family",
+            "friends": "friendship",
+            "enemy": "conflict",
+            "dream": "aspiration",
+            "goal": "aspiration",
+            "fear": "fear",
+            "courage": "courage",
+            "freedom": "freedom",
+            "prison": "confinement",
+            "death": "mortality",
+            "life": "life",
+            "god": "spirituality",
+            "faith": "spirituality"
+        ]
+        
+        let lowercasedText = text.lowercased()
+        var foundThemes = Set<String>()
+        
+        for (keyword, theme) in themeKeywords {
+            if lowercasedText.contains(keyword) {
+                foundThemes.insert(theme)
+            }
+        }
+        
+        extractedThemes = Array(foundThemes)
+        
+        // If we found themes, return them; otherwise return empty array
+        // The API will do more sophisticated analysis
+        return extractedThemes
+    }
+    
+    // MARK: - Note Timestamp Metadata Bar
+    private var noteTimestampBar: some View {
+        VStack(spacing: 10) {
+            // Created Date
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Created")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                
+                Text(formatTimestamp(item.timestamp))
+                    .font(.caption)
+                    .foregroundStyle(.primary)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
+            // Modified Date (if exists)
+            if let modifiedDate = item.modifiedDate {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("modified")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                    
+                    Text(formatTimestamp(modifiedDate))
+                        .font(.caption)
+                        .foregroundStyle(.primary)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .frame(maxWidth: 680)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(.ultraThinMaterial)                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .strokeBorder(.primary.opacity(0.08), lineWidth: 1)
+                )
+        )
+        .frame(maxWidth: .infinity) // Center the bar
+    }
+    
+    // MARK: - Timestamp Formatting Helper
+    private func formatTimestamp(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "M - d - yyyy h:mm a"
+        formatter.amSymbol = "AM"
+        formatter.pmSymbol = "PM"
+        return formatter.string(from: date)
+    }
+
+    /// Split transcription into phrases/lines by sentence boundaries and commas, similar to rap bars.
+    private func splitTranscriptionIntoLines(_ text: String) -> [String] {
+        let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return [] }
+        
+        // Split by sentence boundaries (. ? !) and commas
+        var normalized = trimmed
+            .replacingOccurrences(of: ". ", with: ".\n")
+            .replacingOccurrences(of: "? ", with: "?\n")
+            .replacingOccurrences(of: "! ", with: "!\n")
+            .replacingOccurrences(of: ", ", with: ",\n")
+        
+        // Ensure trailing punctuation doesn't create empty lines
+        if normalized.hasSuffix(".") || normalized.hasSuffix("?") || normalized.hasSuffix("!") || normalized.hasSuffix(",") {
+            // Keep as is
+        } else if !normalized.isEmpty {
+            normalized = normalized + "\n"
+        }
+        
+        let phrases = normalized
+            .split(separator: "\n", omittingEmptySubsequences: true)
+            .map { String($0).trimmingCharacters(in: .whitespaces) }
+            .filter { !$0.isEmpty }
+        
+        // Split very long phrases at word boundaries (max ~120 chars per line)
+        let maxLineLength = 120
+        var result: [String] = []
+        for phrase in phrases {
+            if phrase.count > maxLineLength {
+                var remaining = phrase
+                while remaining.count > maxLineLength {
+                    let chunk = String(remaining.prefix(maxLineLength))
+                    if let lastSpace = chunk.lastIndex(of: " ") {
+                        result.append(String(chunk[..<lastSpace]).trimmingCharacters(in: .whitespaces))
+                        remaining = String(remaining[chunk.index(after: lastSpace)...]).trimmingCharacters(in: .whitespaces)
+                    } else {
+                        result.append(chunk)
+                        remaining = String(remaining[chunk.endIndex...]).trimmingCharacters(in: .whitespaces)
+                    }
+                }
+                if !remaining.isEmpty {
+                    result.append(remaining)
+                }
+            } else {
+                result.append(phrase)
+            }
+        }
+        
+        return result
+    }
+    
+    /// Transcript block on the text surface: heading, "Open transcription" button (toggles raw text visibility), and inline text displayed line-by-line (hidden until button pressed).
+    private func transcriptSurfaceSection(transcription: String) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text("Transcript")
+                    .font(.headline)
+                Spacer()
+                Button {
+                    showRawTranscriptOnSurface.toggle()
+                } label: {
+                    Text(showRawTranscriptOnSurface ? "Close transcription" : "Open transcription")
+                        .font(.subheadline.weight(.medium))
+                }
+                .buttonStyle(.bordered)
+                .tint(.yellow)
+            }
+            .padding(.horizontal, 20)
+            if showRawTranscriptOnSurface {
+                VStack(alignment: .leading, spacing: 4) {
+                    ForEach(Array(splitTranscriptionIntoLines(transcription).enumerated()), id: \.offset) { _, line in
+                        Text(line)
+                            .font(.body)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .padding(.horizontal, 20)
+            }
+        }
+        .padding(.top, 8)
+    }
+
+    // MARK: - Metadata Pills View
+    private var metadataPillsView: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                // BPM Pill Menu
+                bpmPillMenu
+                
+                // Key Pill Menu
+                keyPillMenu
+                
+                // Scale Pill Menu
+                scalePillMenu
+                
+                // URL Pill Menu
+                urlPillMenu
+                
+                // Folder Pill Menu
+                folderPillMenu
+            }
+            .padding(.leading, 16) // Leading padding for first pill
+            .padding(.trailing, 16) // Trailing padding for last pill
+        }
+        .frame(maxWidth: .infinity) // Extend to full width
+    }
+    
+    // MARK: - BPM Pill Menu
+    private var bpmPillMenu: some View {
+        Menu {
+            // Quick Select BPM Values
+            ForEach([60, 90, 120, 140, 160, 180, 200], id: \.self) { bpmValue in
+                Button {
+                    item.bpm = bpmValue
+                } label: {
+                    HStack {
+                        Text("\(bpmValue) BPM")
+                        Spacer()
+                        if item.bpm == bpmValue {
+                            Image(systemName: "checkmark")
+                                .font(.caption.weight(.semibold))
+                        }
+                    }
+                }
+            }
+            
+            Divider()
+            
+            // Custom BPM (opens popover)
+            Button {
+                showBPMPopover = true
+            } label: {
+                Label("Custom BPM", systemImage: "slider.horizontal.3")
+            }
+            
+            if item.bpm != nil {
+                Divider()
+                
+                Button(role: .destructive) {
+                    item.bpm = nil
+                } label: {
+                    Label("Clear", systemImage: "xmark.circle")
+                }
+            }
+        } label: {
+            metadataPillLabel(
+                icon: "metronome",
+                label: item.bpm != nil ? "\(item.bpm!) BPM" : "BPM",
+                isSet: item.bpm != nil
+            )
+        }
+    }
+    
+    // MARK: - Key Pill Menu
+    private var keyPillMenu: some View {
+        Menu {
+            // All Musical Keys
+            ForEach(["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"], id: \.self) { keyValue in
+                Button {
+                    item.key = keyValue
+                } label: {
+                    HStack {
+                        Text(keyValue)
+                        Spacer()
+                        if item.key == keyValue {
+                            Image(systemName: "checkmark")
+                                .font(.caption.weight(.semibold))
+                        }
+                    }
+                }
+            }
+            
+            if item.key != nil {
+                Divider()
+                
+                Button(role: .destructive) {
+                    item.key = nil
+                } label: {
+                    Label("Clear", systemImage: "xmark.circle")
+                }
+            }
+        } label: {
+            metadataPillLabel(
+                icon: "music.note",
+                label: item.key ?? "KEY",
+                isSet: item.key != nil
+            )
+        }
+    }
+    
+    // MARK: - Scale Pill Menu
+    private var scalePillMenu: some View {
+        Menu {
+            // All Scales
+            ForEach([
+                "Chromatic",
+                "Major",
+                "Natural Minor",
+                "Harmonic Minor",
+                "Melodic Minor",
+                "Ionian (Major)",
+                "Dorian",
+                "Phrygian",
+                "Lydian",
+                "Mixolydian",
+                "Aeolian (Natural Minor)",
+                "Locrian"
+            ], id: \.self) { scaleValue in
+                Button {
+                    item.scale = scaleValue
+                } label: {
+                    HStack {
+                        Text(scaleValue)
+                        Spacer()
+                        if item.scale == scaleValue {
+                            Image(systemName: "checkmark")
+                                .font(.caption.weight(.semibold))
+                        }
+                    }
+                }
+            }
+            
+            if item.scale != nil {
+                Divider()
+                
+                Button(role: .destructive) {
+                    item.scale = nil
+                } label: {
+                    Label("Clear", systemImage: "xmark.circle")
+                }
+            }
+        } label: {
+            metadataPillLabel(
+                icon: "slider.horizontal.3",
+                label: item.scale ?? "SCALE",
+                isSet: item.scale != nil
+            )
+        }
+    }
+    
+    // MARK: - URL Pill Menu
+    private var urlPillMenu: some View {
+        Menu {
+            Button {
+                showURLPopover = true
+            } label: {
+                Label("Set URL", systemImage: "link")
+            }
+            
+            if item.urlAttachment != nil {
+                Divider()
+                
+                if let url = item.urlAttachment, let urlObj = URL(string: url) {
+                    ShareLink(item: urlObj) {
+                        Label("Share URL", systemImage: "square.and.arrow.up")
+                    }
+                }
+                
+                Button(role: .destructive) {
+                    item.urlAttachment = nil
+                } label: {
+                    Label("Clear", systemImage: "xmark.circle")
+                }
+            }
+        } label: {
+            metadataPillLabel(
+                icon: "link",
+                label: item.urlAttachment != nil ? "URL" : "URL",
+                isSet: item.urlAttachment != nil
+            )
+        }
+    }
+    
+    // MARK: - Folder Pill Menu
+    private var folderPillMenu: some View {
+        Menu {
+            Button {
+                showFolderPopover = true
+            } label: {
+                Label("Set Folder", systemImage: "folder")
+            }
+            
+            if item.folder != nil {
+                Divider()
+                
+                Button(role: .destructive) {
+                    item.folder = nil
+                } label: {
+                    Label("Clear", systemImage: "xmark.circle")
+                }
+            }
+        } label: {
+            metadataPillLabel(
+                icon: "folder",
+                label: item.folder ?? "FOLDER",
+                isSet: item.folder != nil
+            )
+        }
+    }
+    
+    // MARK: - Metadata Pill Label Component
+    @ViewBuilder
+    private func metadataPillLabel(icon: String, label: String, isSet: Bool) -> some View {
+        HStack(spacing: 6) {
+            Image(systemName: icon)
+                .font(.system(size: 12, weight: .medium))
+            Text(label)
+                .font(.system(size: 13, weight: .medium))
+        }
+        .foregroundStyle(
+            SoftBlueGlassStyle
+                .tint(for: colorScheme)
+                .opacity(isSet ? 1.0 : 0.88)
+        )
+        .padding(.horizontal, 13)
+        .padding(.vertical, 7)
+        .background(
+            SoftBlueGlassBackground(
+                shape: Capsule(style: .continuous),
+                colorScheme: colorScheme,
+                darkeningMultiplier: 1.0,
+                outlineLineWidth: isSet ? 0.95 : 0.75
+            )
+        )
+    }
+
+    private func prepareHapticForNewNote() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+    }
+
+    private func createAndNavigateToNewNote() {
+        let descriptor = FetchDescriptor<Item>()
+        let count = (try? modelContext.fetch(descriptor).count) ?? 0
+        let nextIndex = count + 1
+
+        let newItem = Item(
+            timestamp: Date(),
+            title: "Note \(nextIndex)",
+            body: ""
+        )
+        modelContext.insert(newItem)
+
+        dismiss()
+    }
+    
+    // MARK: - Voice Memos Integration / Audio Recording
+    private func openAudioRecorder() {
+        lightHaptic()
+        // Note: Audio recording will be handled in NoteEditorView via binding
+    }
+    
+    // MARK: - File Import Handlers
+    private func handleAudioImport(result: Result<[URL], Error>) {
+        switch result {
+        case .success(let urls):
+            guard let url = urls.first else { return }
+            
+            // Start accessing security-scoped resource
+            guard url.startAccessingSecurityScopedResource() else {
+                print("Failed to access security-scoped resource")
+                return
+            }
+            defer { url.stopAccessingSecurityScopedResource() }
+            
+            // Copy file to app container
+            let fileManager = FileManager.default
+            guard let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else {
+                return
+            }
+            
+            let destinationURL = documentsURL.appendingPathComponent(url.lastPathComponent)
+            
+            // Remove existing file if present
+            try? fileManager.removeItem(at: destinationURL)
+            
+            do {
+                try fileManager.copyItem(at: url, to: destinationURL)
+                
+                // Store audio path
+                item.audioPath = destinationURL.path
+                
+                // Process audio: get duration, transcribe, generate summary
+                Task {
+                    await processImportedAudio(url: destinationURL)
+                }
+            } catch {
+                print("Failed to copy audio file: \(error)")
+            }
+            
+        case .failure(let error):
+            print("File import failed: \(error)")
+        }
+    }
+    
+    @MainActor
+    private func processImportedAudio(url: URL) async {
+        // Get audio duration
+        do {
+            let duration = try await WaveformAnalyzer.shared.getDuration(url: url)
+            item.audioDuration = duration
+        } catch {
+            print("Failed to get audio duration: \(error)")
+        }
+        
+        // Analyze audio for BPM, key, and scale (await to ensure it completes and auto-fills)
+        Task {
+            do {
+                print("🎵 Starting audio analysis (BPM, Key, Scale)...")
+                let analysis = try await AudioAnalysisService.shared.analyzeAudio(url: url)
+                
+                await MainActor.run {
+                    if let bpm = analysis.bpm {
+                        item.bpm = bpm
+                        print("✅ BPM auto-filled: \(bpm)")
+                    }
+                    if let key = analysis.key {
+                        item.key = key
+                        print("✅ Key auto-filled: \(key)")
+                    }
+                    if let scale = analysis.scale {
+                        item.scale = scale
+                        print("✅ Scale auto-filled: \(scale)")
+                    }
+                    item.modifiedDate = Date()
+                    
+                    // Force save to SwiftData to ensure values persist and UI updates
+                    try? item.modelContext?.save()
+                    print("✅ Audio metadata saved: BPM=\(item.bpm?.description ?? "nil"), Key=\(item.key ?? "nil"), Scale=\(item.scale ?? "nil")")
+                }
+            } catch {
+                print("⚠️ Audio analysis failed: \(error.localizedDescription)")
+                // Don't fail the whole process if analysis fails - user can analyze manually later
+            }
+        }
+        
+        // Transcribe audio (on-device)
+        do {
+            let result = try await transcriptionService.transcribe(audioURL: url)
+            item.transcription = result.fullText
+            item.transcriptionSegments = result.segments
+            
+            // Show completion notification with all detected metadata
+            let hasTimestamps = !result.segments.isEmpty
+            NotificationManager.shared.showAudioProcessingCompleteNotification(
+                bpm: item.bpm,
+                key: item.key,
+                scale: item.scale,
+                transcriptionComplete: true,
+                timestampsComplete: hasTimestamps
+            )
+            
+            // Generate summary (cloud API)
+            Task {
+                do {
+                    let summary = try await AudioSummaryService.shared.generateSummary(from: result.fullText)
+                    await MainActor.run {
+                        item.audioSummary = summary
+                    }
+                } catch {
+                    // Summary generation failed (e.g., no API key) - that's okay
+                    print("Summary generation skipped: \(error.localizedDescription)")
+                }
+            }
+        } catch {
+            print("Transcription failed: \(error.localizedDescription)")
+            // Show error to user if needed
+            
+            // Show notification even if transcription failed (but with metadata if available)
+            NotificationManager.shared.showAudioProcessingCompleteNotification(
+                bpm: item.bpm,
+                key: item.key,
+                scale: item.scale,
+                transcriptionComplete: false,
+                timestampsComplete: false
+            )
+        }
+    }
+    
+    // MARK: - Rap Suggestions
+    private func insertRapSuggestion(_ suggestion: RapSuggestion, isAIGenerated: Bool = false) {
+        // PR 7: Taste Memory - Record accepted suggestion
+        if isAIGenerated {
+            TasteMemory.shared.recordAccepted(
+                suggestion: suggestion,
+                signalMode: rapSuggestionEngine.currentSignalMode,
+                signalProfile: rapSuggestionEngine.currentSignalProfile,
+                registers: nil, // Will be inferred if needed
+                axes: nil, // Will be inferred if needed
+                axisProfile: nil, // Will be inferred if needed
+                alignmentScore: nil // Will be available if scored
+            )
+        }
+        // Set up slam animation
+        slamAnimationText = suggestion.text
+        slamAnimationOffset = -200 // Start above
+        slamAnimationScale = 0.8
+        
+        let originalLength = item.body.count
+        let wasEmpty = item.body.isEmpty
+        let prefix = wasEmpty ? "" : "\n"
+        
+        // Animate slam effect
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+            slamAnimationOffset = 0
+            slamAnimationScale = 1.0
+        }
+        
+        // Insert suggestion at the end of the body, with a newline if body is not empty
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            if wasEmpty {
+                self.item.body = suggestion.text
+            } else {
+                self.item.body += prefix + suggestion.text
+            }
+            
+            // Track AI-generated text range
+            if isAIGenerated {
+                let startIndex = originalLength + (wasEmpty ? 0 : prefix.count)
+                let endIndex = self.item.body.count
+                let rangeString = "\(startIndex):\(endIndex)"
+                self.item.aiTextRanges.append(rangeString)
+                
+                // Track insertion for implicit feedback
+                SuggestionInteractionTracker.shared.trackSuggestionInsertion(
+                    suggestionId: suggestion.id,
+                    suggestionText: suggestion.text,
+                    context: self.currentText
+                )
+            }
+            
+            // Update modification date
+            self.item.modifiedDate = Date()
+            
+            // Re-enable focus and ensure cursor is at the end
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                self.isEditorFocused = true
+            }
+        }
+        
+        // Clear animation after completion
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            withAnimation(.easeOut(duration: 0.2)) {
+                self.slamAnimationText = nil
+                self.slamAnimationOffset = 0
+                self.slamAnimationScale = 1.0
+            }
+        }
+        
+        // Show proactive feedback prompt after a delay (if AI-generated)
+        if isAIGenerated {
+            lastInsertedSuggestion = suggestion
+            // Show feedback prompt after 3 seconds to give user time to see/edit the suggestion
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                // Only show if user hasn't dismissed it and suggestion is still in text
+                if self.item.body.contains(suggestion.text) {
+                    self.showProactiveFeedback = true
+                }
+            }
+        }
+    }
+    
+    private func copyRapSuggestionWithSlam(_ suggestion: RapSuggestion) {
+        // Set up slam animation
+        slamAnimationText = suggestion.text
+        slamAnimationOffset = -200 // Start above
+        slamAnimationScale = 0.8
+        
+        // Animate slam effect
+        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+            slamAnimationOffset = 0
+            slamAnimationScale = 1.0
+        }
+        
+        // Insert the text after animation starts
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            insertRapSuggestion(suggestion, isAIGenerated: true)
+        }
+        
+        // Clear animation after completion
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            withAnimation(.easeOut(duration: 0.2)) {
+                slamAnimationText = nil
+                slamAnimationOffset = 0
+                slamAnimationScale = 1.0
+            }
+        }
+    }
+    
+    // MARK: - New Feature Handlers
+    
+    private func handleSuggestRhymes() {
+        // Check usage limits (Phase 2: Monetization)
+        if !UsageTracker.shared.canUseSuggestRhymes() {
+            paywallFeature = "Suggest Rhymes"
+            showPaywall = true
+            return
+        }
+        
+        // Track usage
+        UsageTracker.shared.trackSuggestRhymes()
+        UserBehaviorTracker.shared.trackFeatureUsage(feature: .suggestRhymes)
+        
+        lightHaptic()
+        isEditorFocused = false
+        
+        // Extract last word from text
+        let lines = item.body.split(separator: "\n", omittingEmptySubsequences: false)
+        guard let lastLine = lines.last, !lastLine.isEmpty else {
+            return
+        }
+        
+        let tokenizer = NLTokenizer(unit: .word)
+        tokenizer.string = String(lastLine)
+        
+        var lastWord: String?
+        tokenizer.enumerateTokens(in: String(lastLine).startIndex..<String(lastLine).endIndex) { range, _ in
+            lastWord = String(lastLine[range]).lowercased()
+            return true
+        }
+        
+        guard let word = lastWord else { return }
+        
+        // Find rhymes (this is instant, no loading needed)
+        let rhymes = RhymeFinder.findRhymes(for: word, limit: 8)
+        targetWordForRhymes = word
+        lastWordRhymes = rhymes
+        showRhymeSuggestions = true
+    }
+    
+    private func insertRhymeWord(_ word: String) {
+        // Replace the last word in the last line with the selected rhyme
+        let lines = item.body.split(separator: "\n", omittingEmptySubsequences: false)
+        guard let lastLineSubstring = lines.last, !lastLineSubstring.isEmpty else { return }
+        
+        let lastLine = String(lastLineSubstring)
+        let tokenizer = NLTokenizer(unit: .word)
+        tokenizer.string = lastLine
+        
+        var wordRanges: [(String, Range<String.Index>)] = []
+        tokenizer.enumerateTokens(in: lastLine.startIndex..<lastLine.endIndex) { range, _ in
+            wordRanges.append((String(lastLine[range]), range))
+            return true
+        }
+        
+        guard let lastWordRange = wordRanges.last else { return }
+        
+        // Replace the last word
+        var newLastLine = lastLine
+        newLastLine.replaceSubrange(lastWordRange.1, with: word)
+        
+        // Reconstruct text
+        var newLines = Array(lines.dropLast())
+        newLines.append(Substring(newLastLine))
+        item.body = newLines.joined(separator: "\n")
+        item.modifiedDate = Date()
+        
+        showRhymeSuggestions = false
+    }
+    
+    private func handleImproveFlow() {
+        // Check feature access (Phase 1: Feature Gating)
+        if !FeatureGate.checkAccess(.improveFlow, showPaywall: { featureName in
+            paywallFeature = featureName
+            showPaywall = true
+        }) {
+            return
+        }
+        
+        // Check usage limits (Phase 2: Monetization)
+        if !UsageTracker.shared.canUseImproveFlow() {
+            paywallFeature = "Improve Flow"
+            showPaywall = true
+            return
+        }
+        
+        // Track usage
+        UsageTracker.shared.trackImproveFlow()
+        
+        lightHaptic()
+        isEditorFocused = false
+        showContextHighlight = true
+        
+        Task {
+            await MainActor.run {
+                isImprovingFlow = true
+                improveFlowLoadingStep = "Analyzing rhyme scheme..."
+            }
+            
+            let metrics = RapAnalysisEngine().extractMetrics(text: item.body, highlights: computedHighlights)
+            
+            // Get rhyme scheme
+            guard let rhymeScheme = metrics.rhymeScheme else {
+                await MainActor.run {
+                    isImprovingFlow = false
+                    showContextHighlight = false
+                }
+                return
+            }
+            
+            // Generate suggestions focused on maintaining rhyme scheme
+            do {
+                await MainActor.run {
+                    improveFlowLoadingStep = "Understanding themes..."
+                }
+                
+                let narrative = try await RapSuggestionAPI.shared.analyzeNarrative(
+                    text: item.body,
+                    lastNLines: metrics.lastNLines,
+                    model: .modelG
+                )
+                
+                await MainActor.run {
+                    improveFlowLoadingStep = "Generating suggestions..."
+                }
+                
+                // CSV search is deprecated - use constraint-driven generation instead
+                let candidates: [RapLine] = []
+                
+                let filtered = ConstraintFilter(phonemeStoreProvider: { FJCMUDICTStore.shared.phonemesByWord }).filterCandidates(
+                    candidates: candidates,
+                    metrics: metrics
+                )
+                
+                // Generate suggestions with rhyme scheme focus
+                let suggestions = try await RapSuggestionAPI.shared.generateSuggestionsForFlow(
+                    candidates: filtered.map { $0.line },
+                    metrics: metrics,
+                    narrative: narrative,
+                    rhymeScheme: rhymeScheme,
+                    model: .modelG
+                )
+                
+                await MainActor.run {
+                    improveFlowSuggestions = suggestions
+                    isImprovingFlow = false
+                    improveFlowLoadingStep = nil
+                    showContextHighlight = false
+                    showImproveFlow = true
+                }
+            } catch {
+                await MainActor.run {
+                    isImprovingFlow = false
+                    improveFlowLoadingStep = nil
+                    showContextHighlight = false
+                }
+            }
+        }
+    }
+    
+    private func handleRewriteLine() {
+        // Check feature access (Phase 1: Feature Gating)
+        if !FeatureGate.checkAccess(.rewriteLine, showPaywall: { featureName in
+            paywallFeature = featureName
+            showPaywall = true
+        }) {
+            return
+        }
+        
+        // Check usage limits (Phase 2: Monetization)
+        if !UsageTracker.shared.canUseRewriteLine() {
+            paywallFeature = "Rewrite Line"
+            showPaywall = true
+            return
+        }
+        
+        // Track usage
+        UsageTracker.shared.trackRewriteLine()
+        UserBehaviorTracker.shared.trackFeatureUsage(feature: .rewriteLine)
+        
+        lightHaptic()
+        isEditorFocused = false
+        
+        // Get last 4 lines
+        let lines = item.body.split(separator: "\n", omittingEmptySubsequences: false)
+        guard lines.count >= 1 else { return }
+        
+        let last4Lines = Array(lines.suffix(4))
+        
+        // Extract last word and syllable count
+        let metrics = RapAnalysisEngine().extractMetrics(text: item.body, highlights: computedHighlights)
+        guard let rhymeTarget = metrics.rhymeTarget,
+              let syllableTarget = metrics.syllableTarget else {
+            return
+        }
+        
+        Task {
+            await MainActor.run {
+                isRewritingLine = true
+                rewriteLineLoadingStep = "Analyzing your verse..."
+            }
+            
+            do {
+                await MainActor.run {
+                    rewriteLineLoadingStep = "Understanding themes..."
+                }
+                
+                // Use Model G to generate a single line suggestion
+                let narrative = try await RapSuggestionAPI.shared.analyzeNarrative(
+                    text: item.body,
+                    lastNLines: Array(last4Lines.map { String($0) }),
+                    model: .modelG
+                )
+                
+                await MainActor.run {
+                    rewriteLineLoadingStep = "Generating suggestions..."
+                }
+                
+                // CSV search is deprecated - use constraint-driven generation instead
+                let candidates: [RapLine] = []
+                
+                // Filter candidates that rhyme with the target
+                let rhymingCandidates = candidates.filter { line in
+                    let tokenizer = NLTokenizer(unit: .word)
+                    tokenizer.string = line.text
+                    var lastWord: String?
+                    tokenizer.enumerateTokens(in: line.text.startIndex..<line.text.endIndex) { range, _ in
+                        lastWord = String(line.text[range]).lowercased()
+                        return true
+                    }
+                    
+                    guard let word = lastWord else { return false }
+                    
+                    // Check if it rhymes with target
+                    guard let wordPhonemes = FJCMUDICTStore.shared.phonemesByWord[word],
+                          let targetPhonemes = FJCMUDICTStore.shared.phonemesByWord[rhymeTarget],
+                          let wordSig = RhymeHighlighterEngine.extractSignature(from: wordPhonemes),
+                          let targetSig = RhymeHighlighterEngine.extractSignature(from: targetPhonemes),
+                          let strength = RhymeHighlighterEngine.rhymeScore(wordSig, targetSig) else {
+                        return false
+                    }
+                    
+                    return strength == .perfect || strength == .near
+                }
+                
+                await MainActor.run {
+                    rewriteLineLoadingStep = "Generating line..."
+                }
+                
+                // Generate single line suggestion using Model G
+                let filtered = ConstraintFilter(phonemeStoreProvider: { FJCMUDICTStore.shared.phonemesByWord }).filterCandidates(
+                    candidates: rhymingCandidates,
+                    metrics: metrics
+                )
+                
+                // Generate single line suggestion
+                let suggestion = try await RapSuggestionAPI.shared.generateSingleLineSuggestion(
+                    candidates: filtered.map { $0.line },
+                    metrics: metrics,
+                    narrative: narrative,
+                    rhymeTarget: rhymeTarget,
+                    syllableTarget: syllableTarget,
+                    model: .modelG
+                )
+                
+                await MainActor.run {
+                    rewriteLineSuggestion = suggestion
+                    insertRewriteLine(suggestion)
+                    isRewritingLine = false
+                    rewriteLineLoadingStep = nil
+                }
+            } catch {
+                await MainActor.run {
+                    isRewritingLine = false
+                    rewriteLineLoadingStep = nil
+                }
+            }
+        }
+    }
+    
+    // MARK: - Undo/Redo Handlers
+    private func handleUndo() {
+        guard !undoHistory.isEmpty else { return }
+        lightHaptic()
+        
+        // Save current state to redo history
+        redoHistory.append(item.body)
+        
+        // Restore previous state
+        let previousState = undoHistory.removeLast()
+        isUndoing = true
+        item.body = previousState
+        isUndoing = false
+        
+        // Update modification date
+        item.modifiedDate = Date()
+    }
+    
+    private func handleRedo() {
+        guard !redoHistory.isEmpty else { return }
+        lightHaptic()
+        
+        // Save current state to undo history
+        undoHistory.append(item.body)
+        
+        // Restore next state
+        let nextState = redoHistory.removeLast()
+        isRedoing = true
+        item.body = nextState
+        isRedoing = false
+        
+        // Update modification date
+        item.modifiedDate = Date()
+    }
+    
+    private func insertRewriteLine(_ line: String) {
+        // Insert a new line instead of replacing
+        let prefix = item.body.isEmpty ? "" : "\n"
+        item.body += prefix + line
+        item.modifiedDate = Date()
+    }
+    
+    // MARK: - Onboarding Splash Screen Helpers
+    
+    private func showNextToolbarButtonSplash() {
+        guard let nextSplashID = splashManager.getNextToolbarButtonSplash() else {
+            // All button splashes shown
+            return
+        }
+        
+        currentButtonSplashID = nextSplashID
+        isToolbarExpanded = true // Ensure toolbar is expanded
+        
+        // Small delay to ensure toolbar is rendered
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            showToolbarButtonSplash = true
+        }
+    }
+    
+    private func getButtonInfo(for id: SplashScreenID) -> (title: String, description: String, icon: String) {
+        switch id {
+        case .toolbarPaperclip:
+            return (
+                title: "Attach & Import",
+                description: "Import audio files, notes, or record audio directly into your journal entry",
+                icon: "paperclip"
+            )
+        case .toolbarAISparkle:
+            return (
+                title: "AI Writing Assistant",
+                description: "Get AI-powered suggestions for your next lines, rewrite lines, suggest rhymes, and improve flow. Configure Model G, Model G Core, and Model Y in preferences.",
+                icon: "sparkles"
+            )
+        case .toolbarUndoRedo:
+            return (
+                title: "Undo & Redo",
+                description: "Easily undo or redo your changes while writing",
+                icon: "arrow.uturn.backward"
+            )
+        case .toolbarEyeToggle:
+            return (
+                title: "Rhyme Overlay",
+                description: "Toggle visual rhyme highlighting to see rhyming words color-coded in your text",
+                icon: "eye"
+            )
+        case .toolbarMagnifyingGlass:
+            return (
+                title: "Rhyme Groups",
+                description: "View all rhyme groups in your text and explore rhyming words",
+                icon: "text.magnifyingglass"
+            )
+        case .toolbarDiagnostics:
+            return (
+                title: "Rhyme Diagnostics",
+                description: "Analyze syllables, stress patterns, cadence, and flow metrics for your verse",
+                icon: "chart.bar"
+            )
+        default:
+            return (title: "", description: "", icon: "questionmark")
+        }
+    }
+    
+    private func calculateApproximateButtonFrame(for id: SplashScreenID, toolbarFrame: CGRect) -> CGRect {
+        // Calculate approximate button positions based on toolbar layout
+        // Buttons are in order: X, Paperclip, AI Sparkle, Undo, Redo, Eye, Magnifying Glass, Diagnostics, Keyboard
+        // Each button is 44x44 with 14pt spacing
+        let buttonSize: CGFloat = 44
+        let spacing: CGFloat = 14
+        let startX = toolbarFrame.minX + 16 + 44 + spacing // After X button
+        
+        let buttonIndex: Int
+        switch id {
+        case .toolbarPaperclip:
+            buttonIndex = 0
+        case .toolbarAISparkle:
+            buttonIndex = 1
+        case .toolbarUndoRedo:
+            buttonIndex = 2 // Approximate for undo button
+        case .toolbarEyeToggle:
+            buttonIndex = 4
+        case .toolbarMagnifyingGlass:
+            buttonIndex = 5
+        case .toolbarDiagnostics:
+            buttonIndex = 6
+        default:
+            buttonIndex = 0
+        }
+        
+        let buttonX = startX + CGFloat(buttonIndex) * (buttonSize + spacing)
+        let buttonY = toolbarFrame.midY
+        
+        return CGRect(
+            x: buttonX,
+            y: buttonY - buttonSize / 2,
+            width: buttonSize,
+            height: buttonSize
+        )
+    }
+    
+    // Helper function to find UITextView in view hierarchy
+    private func findTextView(in view: UIView) -> UITextView? {
+        if let textView = view as? UITextView {
+            return textView
+        }
+        for subview in view.subviews {
+            if let textView = findTextView(in: subview) {
+                return textView
+            }
+        }
+        return nil
+    }
+    
+    // SEGMENT 20: Helper to find TextEditor's underlying UITextView
+    // This is used to disable automatic scroll-to-cursor behavior
+    private func findTextEditorTextView() -> UITextView? {
+        // This is a fallback - the actual TextEditor UITextView might be harder to access
+        // The main fix is through the modifiers and delegate methods
+        return nil
+    }
+    }

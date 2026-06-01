@@ -23,6 +23,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7E4A1B8E2F053973003FE03C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7EB8BBBF2F01F74F0055B1C6 /* The Final Journal AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Final Journal AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8BBCE2F01F7510055B1C6 /* The Final Journal AITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Final Journal AITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,9 +43,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7EB8BBC12F01F74F0055B1C6 /* The Final Journal AI */ = {
+		7E4A1B802F053973003FE03C /* the final JOURNAL AI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "The Final Journal AI";
+			path = "the final JOURNAL AI";
+			sourceTree = "<group>";
+		};
+		7E4A1BA72F053B71003FE03C /* Journal Import Extention @ */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Journal Import Extention @";
+			sourceTree = "<group>";
+		};
+		7EB8BBC12F01F74F0055B1C6 /* XJournal AI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "XJournal AI";
 			sourceTree = "<group>";
 		};
 		7EB8BBD12F01F7510055B1C6 /* The Final Journal AITests */ = {
@@ -75,9 +98,11 @@
 		7EB8BBB62F01F74F0055B1C6 = {
 			isa = PBXGroup;
 			children = (
-				7EB8BBC12F01F74F0055B1C6 /* The Final Journal AI */,
+				7EB8BBC12F01F74F0055B1C6 /* XJournal AI */,
 				7EB8BBD12F01F7510055B1C6 /* The Final Journal AITests */,
 				7EB8BBDB2F01F7510055B1C6 /* The Final Journal AIUITests */,
+				7E4A1B802F053973003FE03C /* the final JOURNAL AI */,
+				7E4A1BA72F053B71003FE03C /* Journal Import Extention @ */,
 				7EB8BBC02F01F74F0055B1C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,13 +127,14 @@
 				7EB8BBBB2F01F74F0055B1C6 /* Sources */,
 				7EB8BBBC2F01F74F0055B1C6 /* Frameworks */,
 				7EB8BBBD2F01F74F0055B1C6 /* Resources */,
+				7E4A1B8E2F053973003FE03C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7EB8BBC12F01F74F0055B1C6 /* The Final Journal AI */,
+				7EB8BBC12F01F74F0055B1C6 /* XJournal AI */,
 			);
 			name = "The Final Journal AI";
 			packageProductDependencies = (
@@ -171,7 +197,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
-				LastUpgradeCheck = 2620;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					7EB8BBBE2F01F74F0055B1C6 = {
 						CreatedOnToolsVersion = 26.2;
@@ -328,6 +354,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -385,6 +412,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -395,11 +423,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "XJournal AI/The Final Journal AI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "X journal AI ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,7 +440,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "TEAMDB.The-Final-Journal-AI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -427,11 +458,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "XJournal AI/The Final Journal AI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "X journal AI ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,7 +475,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "TEAMDB.The-Final-Journal-AI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;

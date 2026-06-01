@@ -1,0 +1,742 @@
+#!/usr/bin/env python3
+"""
+G0 — Model G Authenticity grading (baseline).
+
+Scores a generated verse against the real Gunna/Young-Thug ground-truth corpus on
+three computable-today axes from the grading rubric:
+
+    A1  Cadence     (0-100)  syllables/bar vs. corpus distribution
+    A2  Rhyme       (0-100)  slant-aware rhyme rate (2-line window) vs. corpus
+    A7  Originality  (0-100)  similar style WITHOUT copying corpus lines
+
+Reports each axis plus a partial Authenticity Score (the three weights, renormalised).
+G1 will add A3 rhyme-quality, A4 flow/stress, A5 tone, A6 lexical authenticity, and the
+"social action / exposure discipline" axis from the voice-theory notes. See eval/README.md.
+
+Detection is intentionally simple and TRANSPARENT, and is applied identically to the
+corpus and the verse so the comparison is apples-to-apples. Proper multisyllabic rhyme
+(RhymeClusterEngine-grade) lands in G1.
+
+Usage:
+    python3 eval/grade_modelg.py --demo                  # score the bundled sample verse
+    python3 eval/grade_modelg.py --verse path/to.txt     # score a verse file (one bar per line)
+    python3 eval/grade_modelg.py --corpus-stats          # just print corpus baseline stats
+    python3 eval/grade_modelg.py --verse v.txt --log     # append result to eval/grading_log.csv
+
+No third-party deps. Reads the corpus + cmudict straight from the repo.
+"""
+import argparse
+import csv
+import os
+import re
+import datetime
+import statistics
+import sys
+from collections import defaultdict, Counter
+
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DEFAULT_CORPUS = os.path.join(REPO_ROOT, "XJournal AI", "ground_truth_rap_bars_MODEL_G.csv")
+DEFAULT_CMUDICT = os.path.join(REPO_ROOT, "XJournal AI", "cmudict.txt")
+DEFAULT_LEXICON = os.path.join(REPO_ROOT, "XJournal AI", "jargon_authority_lexicon_v8.csv")
+
+# Axis weights (full rubric in eval/README.md). Now covers A1/A2/A5/A6/A7
+# (A3 rhyme-quality and A4 flow/stress still pending).
+WEIGHTS = {"A1": 0.20, "A2": 0.20, "A3": 0.15, "A4": 0.15, "A5": 0.10, "A6": 0.10, "A7": 0.10}
+
+# Positive/negative ledger. Positives are 0-100 axes weighted into a positive total; negatives are
+# penalty points subtracted. NET = positive_total - penalties (clamped 0-100). See eval/README.md.
+POSITIVE_WEIGHTS = {"Cadence": 0.18, "EndRhyme": 0.18, "InnerRhyme": 0.15, "Jargon": 0.15,
+                    "Smart": 0.15, "Flow": 0.10, "Originality": 0.09}
+STOPWORDS = set("the a an and or but to of in on at it is be we they that this i you my me your "
+                "im its got get gon gonna gotta yeah uh with for from now know like all out up so".split())
+EXPLAINER_MARKERS = set("because so really just finally trying tryna means destined blessed manifesting "
+                        "manifestin always never everything everybody literally honestly".split())
+
+LOG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "grading_log.csv")
+LOG_COLS = (["timestamp", "run_id", "version", "verse"] + list(POSITIVE_WEIGHTS.keys())
+            + ["Repetition", "OverExplain", "NET"])
+
+
+def append_log(version, verse_name, pos, neg, net, run_id):
+    """Auto-record one graded generation so every run leaves an objective trail."""
+    new = not os.path.exists(LOG_PATH)
+    with open(LOG_PATH, "a", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        if new:
+            w.writerow(LOG_COLS)
+        vals = [pos[k] for k in POSITIVE_WEIGHTS] + [neg["Repetition"], neg["OverExplain"], net]
+        w.writerow([datetime.datetime.now().isoformat(timespec="seconds"), run_id, version, verse_name]
+                   + [round(v, 1) for v in vals])
+
+
+def show_history(limit=None, goal_net=65.0, max_penalty=20.0):
+    """Trend view: mean NET per run per version, mean penalty, goal flags, and a goal check.
+    A run flags MISS if the best version's NET is below goal_net or mean penalty exceeds max_penalty."""
+    if not os.path.exists(LOG_PATH):
+        print("No grading_log.csv yet — run a graded generation first.")
+        return
+    with open(LOG_PATH, encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    if not rows:
+        print("Log is empty.")
+        return
+    nets = defaultdict(lambda: defaultdict(list))     # run_id -> version -> [NET]
+    pens = defaultdict(list)                           # run_id -> [total penalty per verse]
+    for r in rows:
+        nets[r["run_id"]][r["version"]].append(float(r["NET"]))
+        pens[r["run_id"]].append(float(r["Repetition"]) + float(r["OverExplain"]))
+    versions = sorted({r["version"] for r in rows})
+    run_ids = sorted(nets.keys())
+    if limit:
+        run_ids = run_ids[-limit:]
+    print(f"\n=== GRADING HISTORY (goal: NET >= {goal_net:.0f}, penalties <= {max_penalty:.0f}) ===")
+    print(f"{'run (time)':<21}" + "".join(f"{v:>11}" for v in versions) + f"{'pen':>7}  status")
+    for rid in run_ids:
+        ts = next((r["timestamp"] for r in rows if r["run_id"] == rid), rid)[:19]
+        cells = "".join((f"{sum(nets[rid][v]) / len(nets[rid][v]):>11.1f}"
+                         if nets[rid].get(v) else f"{'-':>11}") for v in versions)
+        best = max((sum(n) / len(n) for n in nets[rid].values()), default=0.0)
+        pen = sum(pens[rid]) / len(pens[rid]) if pens[rid] else 0.0
+        miss = []
+        if best < goal_net: miss.append("NET")
+        if pen > max_penalty: miss.append("pen")
+        status = "OK" if not miss else "MISS(" + ",".join(miss) + ")"
+        print(f"{ts:<21}{cells}{pen:>7.1f}  {status}")
+    print("\n=== OVERALL (all runs) ===")
+    by_ver = defaultdict(list)
+    for r in rows:
+        by_ver[r["version"]].append(float(r["NET"]))
+    for v in versions:
+        vals = by_ver[v]
+        mark = "meets goal" if sum(vals) / len(vals) >= goal_net else "BELOW goal"
+        print(f"  {v:<10} n={len(vals):<3} mean NET {sum(vals)/len(vals):6.1f}  "
+              f"({mark}; min {min(vals):.0f}, max {max(vals):.0f})")
+    if "v3" in versions and "baseline" in versions:
+        paired = [nets[rid] for rid in nets if nets[rid].get("v3") and nets[rid].get("baseline")]
+        wins = sum(1 for rr in paired if sum(rr["v3"]) / len(rr["v3"]) >= sum(rr["baseline"]) / len(rr["baseline"]))
+        meets = sum(1 for rr in paired if sum(rr["v3"]) / len(rr["v3"]) >= goal_net)
+        print(f"\n  GOAL CHECK: v3 >= baseline in {wins}/{len(paired)} runs; "
+              f"v3 meets NET goal ({goal_net:.0f}) in {meets}/{len(paired)} runs.")
+
+# A5 tone proxy: the corpus-dominant register is confident + luxurious (see baseline). These
+# word sets are a heuristic until a real tone classifier / theme emotional_tone is wired (G1+).
+TONE_WORDS = {
+    "confident": {"won", "boss", "top", "king", "best", "never", "came", "up", "run", "own", "real", "solid", "gang", "team"},
+    "luxurious": {"diamond", "diamonds", "foreign", "designer", "rich", "mansion", "watch", "drip", "ice", "gold", "racks", "bands", "chain", "estate", "penthouse", "porsche", "rolex"},
+    "aggressive": {"smoke", "opp", "opps", "clip", "war", "beam", "stick", "drum", "slide"},
+}
+
+# Realistic single-bar syllable band — mirrors the app's own clamp (8...18) but a bit
+# wider; used to drop corrupt/extreme corpus rows so the cadence tolerance stays meaningful.
+SYLL_CLIP = (3, 20)
+RHYME_WINDOW = 2  # a bar counts as rhymed if it rhymes with either of the prior 2 bars
+# G0 scores A2 against a fixed "clearly-rhyming verse" target. The corpus's OWN last-word
+# end-rhyme rate is far lower (~0.12) because Gunna/Thug rhyme is largely INTERNAL and
+# multisyllabic, which last-word matching misses. G1 measures that properly (RhymeClusterEngine).
+RHYME_TARGET = 0.50
+# A3 internal/multisyllabic rhyme: density of rhyming word-pairs within a short window.
+# Real rap is internal-rhyme dense; ~0.12 = rich. Fixed target for now (corpus-grounded later).
+INTERNAL_RHYME_TARGET = 0.12
+# Originality is reframed as INSPIRATION: reward hitting a target originality level (1 - corpus
+# overlap), not maxing it. Sterile-original and verbatim-copied both miss. Matches the in-app slider.
+ORIGINALITY_TARGET = 0.6
+
+PUNCT = ".,!?;:\"'()[]{}*—–-…"
+ADLIB_RE = re.compile(r"\((.*?)\)")          # (Skrrt), (yeah) ...
+WORD_RE = re.compile(r"[A-Za-z']+")
+
+
+# ---------------------------------------------------------------- CMUDICT ----
+def load_cmudict(path):
+    """word(lowercase) -> list[phoneme]. Stress digits (0/1/2) mark vowels."""
+    d = {}
+    with open(path, encoding="utf-8", errors="replace") as f:
+        for line in f:
+            if line.startswith(";;;") or not line.strip():
+                continue
+            parts = line.split()
+            if len(parts) < 2:
+                continue
+            word = re.sub(r"\(\d+\)$", "", parts[0]).lower()
+            if word not in d:                # keep first (primary) pronunciation
+                d[word] = parts[1:]
+    return d
+
+
+def syllables(word, cmu):
+    """Syllable count for a word: # of vowel phonemes, else vowel-group fallback."""
+    w = word.lower().strip(PUNCT)
+    if not w:
+        return 0
+    ph = cmu.get(w)
+    if ph:
+        return max(1, sum(1 for p in ph if p[-1].isdigit()))
+    return max(1, len(re.findall(r"[aeiouy]+", w)))
+
+
+def line_syllables(text, cmu):
+    clean = ADLIB_RE.sub(" ", text)          # drop ad-libs like (Skrrt)
+    return sum(syllables(w, cmu) for w in WORD_RE.findall(clean))
+
+
+def last_word(text):
+    clean = ADLIB_RE.sub(" ", text)          # ignore trailing ad-libs for rhyme
+    words = WORD_RE.findall(clean)
+    return words[-1].lower() if words else None
+
+
+# ---- rhyme primitives (slant-aware) -----------------------------------------
+def _last_stressed(phones):
+    idx = None
+    for i, p in enumerate(phones):
+        if p[-1].isdigit():
+            idx = i
+    return idx
+
+
+def _rime_strict(phones):
+    i = _last_stressed(phones)
+    if i is None:
+        return None
+    return tuple(re.sub(r"\d", "", p) for p in phones[i:])
+
+
+def _vowel_and_coda(phones):
+    i = _last_stressed(phones)
+    if i is None:
+        return None, None
+    vowel = re.sub(r"\d", "", phones[i])
+    coda = tuple(phones[i + 1:])
+    return vowel, coda
+
+
+def rhyme_phones(p1, p2):
+    """Perfect OR reasonable slant rhyme."""
+    if not p1 or not p2:
+        return False
+    if _rime_strict(p1) == _rime_strict(p2):
+        return True                          # perfect rhyme
+    v1, c1 = _vowel_and_coda(p1)
+    v2, c2 = _vowel_and_coda(p2)
+    if v1 and v1 == v2:                      # same stressed vowel -> assonant base
+        if c1 == c2:
+            return True
+        if c1 and c2 and c1[-1] == c2[-1]:   # share final consonant
+            return True
+        if not c1 or not c2:                 # open vowel vs light coda
+            return True
+    return False
+
+
+def rhyme_words(w1, w2, cmu):
+    if not w1 or not w2 or w1 == w2:         # identical word = repetition, not rhyme
+        return False
+    p1, p2 = cmu.get(w1), cmu.get(w2)
+    if p1 and p2:
+        return rhyme_phones(p1, p2)
+    return w1[-2:] == w2[-2:]                # OOV/slang fallback
+
+
+def windowed_rhyme_rate(last_words, cmu, window=RHYME_WINDOW):
+    """Fraction of bars (from the 2nd on) that rhyme with any of the prior `window` bars."""
+    eligible = rhymed = 0
+    for i in range(1, len(last_words)):
+        if not last_words[i]:
+            continue
+        eligible += 1
+        for j in range(max(0, i - window), i):
+            if last_words[j] and rhyme_words(last_words[i], last_words[j], cmu):
+                rhymed += 1
+                break
+    return (rhymed / eligible) if eligible else 0.0, eligible
+
+
+# ----------------------------------------------------------------- CORPUS ----
+def find_col(header, *cands):
+    for cand in cands:
+        for idx, name in enumerate(header):
+            if cand in name.lower():
+                return idx
+    return None
+
+
+def load_corpus(path):
+    with open(path, newline="", encoding="utf-8", errors="replace") as f:
+        rows = list(csv.reader(f))
+    header_idx = 0
+    for i, row in enumerate(rows[:5]):
+        joined = ",".join(c.lower() for c in row)
+        if "syllable_count" in joined and "rhyme_class" in joined and "primary_tone" in joined:
+            header_idx = i
+            break
+    header = [c.strip() for c in rows[header_idx]]
+    c_text = find_col(header, "text_bar_line", "text")
+    c_syll = find_col(header, "syllable_count")
+    c_tone = find_col(header, "primary_tone")
+    c_id = find_col(header, "text_id") or 0
+
+    bars = []
+    for row in rows[header_idx + 1:]:
+        if c_text is None or len(row) <= c_text:
+            continue
+        text = row[c_text].strip()
+        if not text or text.lower() in ("text", "text_bar_line"):
+            continue                          # skip stray header/metadata rows
+        def cell(i):
+            return row[i].strip() if (i is not None and i < len(row)) else ""
+        syl = cell(c_syll)
+        bars.append({
+            "id": cell(c_id),
+            "text": text,
+            "syllables": int(syl) if syl.isdigit() else None,
+            "tone": cell(c_tone),
+        })
+    return bars
+
+
+def corpus_baseline(bars, cmu):
+    syl = [b["syllables"] for b in bars
+           if b["syllables"] and SYLL_CLIP[0] <= b["syllables"] <= SYLL_CLIP[1]]
+    raw = [b["syllables"] for b in bars if b["syllables"]]
+    mean = statistics.mean(syl) if syl else 10.0
+    std = statistics.pstdev(syl) if len(syl) > 1 else 2.0
+
+    # Reconstruct song sequences from text_id ("gunna.200forlunch.7") and measure the
+    # windowed slant-rhyme rate -> the corpus's natural rhyme density.
+    songs = defaultdict(list)
+    for b in bars:
+        m = re.match(r"^(.*)\.(\d+)$", b["id"])
+        if m:
+            songs[m.group(1)].append((int(m.group(2)), b["text"]))
+    total_rhymed = total_eligible = 0
+    for seq in songs.values():
+        seq.sort(key=lambda t: t[0])
+        lws = [last_word(t) for _, t in seq]
+        rate, elig = windowed_rhyme_rate(lws, cmu)
+        total_rhymed += rate * elig
+        total_eligible += elig
+    rhyme_rate = (total_rhymed / total_eligible) if total_eligible else 0.5
+
+    # Corpus-derived targets (over a sample): A3 internal-rhyme density, A4 stress density.
+    sample = bars[:2500]
+    _ci_d, _, _ci_multi, _ci_total = _internal_density(_collect_rimes([b["text"] for b in sample], cmu))
+    corpus_internal = _ci_d
+    corpus_multi_density = (_ci_multi / _ci_total) if _ci_total else 0.0
+    s_tot = t_tot = 0
+    for b in sample:
+        s, t = _bar_stress(b["text"], cmu)
+        s_tot += s; t_tot += t
+    stress_density = (s_tot / t_tot) if t_tot else 0.5
+
+    tones = defaultdict(int)
+    for b in bars:
+        if b["tone"]:
+            tones[b["tone"]] += 1
+
+    return {
+        "n_bars": len(bars), "n_syll_used": len(syl), "n_syll_dropped": len(raw) - len(syl),
+        "syll_mean": mean, "syll_std": std,
+        "rhyme_rate": rhyme_rate, "rhyme_pairs": total_eligible,
+        "internal_density": corpus_internal, "multi_density": corpus_multi_density,
+        "stress_density": stress_density,
+        "tones": dict(sorted(tones.items(), key=lambda kv: -kv[1])[:6]),
+    }
+
+
+# ----------------------------------------------------------------- SCORING ---
+def score_cadence(lines, cmu, base):
+    """A1: each bar's syllable count vs. corpus mean; tolerance ~ corpus std (floor 1.5)."""
+    if not lines:
+        return 0.0, []
+    tol = max(1.5, base["syll_std"])
+    counts = [line_syllables(ln, cmu) for ln in lines]
+    per = [max(0.0, 100.0 - (abs(c - base["syll_mean"]) / tol) * 50.0) for c in counts]
+    return statistics.mean(per), counts
+
+
+def score_rhyme(lines, cmu, base):
+    """A2: verse windowed slant-rhyme rate scored against the corpus rate (apples-to-apples)."""
+    if len(lines) < 2:
+        return 0.0, 0.0
+    lws = [last_word(ln) for ln in lines]
+    rate, _ = windowed_rhyme_rate(lws, cmu)
+    score = 100.0 if rate >= RHYME_TARGET else (rate / RHYME_TARGET) * 100.0
+    return score, rate
+
+
+def _collect_rimes(lines, cmu):
+    """[(word, rime, rime-syllable-count)] for all CMUDICT-known words across the lines."""
+    out = []
+    for line in lines:
+        for w in WORD_RE.findall(ADLIB_RE.sub(" ", line).lower()):
+            ph = cmu.get(w)
+            if ph:
+                r = _rime_strict(ph)
+                if r:
+                    out.append((w, r, sum(1 for p in ph if p[-1].isdigit())))
+    return out
+
+
+def _internal_density(rimes, window=8):
+    """Windowed word-pair rime analysis. Returns (density, internal_hits, multi_hits, total)."""
+    internal = multi = total = 0
+    n = len(rimes)
+    for a in range(n):
+        for b in range(a + 1, min(n, a + window)):
+            if rimes[a][0] == rimes[b][0]:
+                continue
+            total += 1
+            if rimes[a][1] == rimes[b][1]:
+                internal += 1
+                if min(rimes[a][2], rimes[b][2]) >= 2:
+                    multi += 1
+    return ((internal / total) if total else 0.0), internal, multi, total
+
+
+def _bar_stress(text, cmu):
+    """(stressed, total) syllable counts for a bar via CMUDICT stress digits (1/2 = stressed)."""
+    stressed = total = 0
+    for w in WORD_RE.findall(ADLIB_RE.sub(" ", text).lower()):
+        ph = cmu.get(w)
+        if ph:
+            for p in ph:
+                if p[-1].isdigit():
+                    total += 1
+                    if p[-1] in "12":
+                        stressed += 1
+        else:
+            v = len(re.findall(r"[aeiouy]+", w))
+            total += v
+            stressed += round(v * 0.4)
+    return stressed, total
+
+
+def score_rhyme_quality(lines, cmu, base):
+    """A3: rhyme DEPTH (internal + multisyllabic), scored against the corpus's own densities.
+    Weighted toward multisyllabic rhyme — the actual Gunna/Thug hallmark."""
+    rimes = _collect_rimes(lines, cmu)
+    if len(rimes) < 2:
+        return 0.0, {}
+    density, internal, multi, total = _internal_density(rimes)
+    if total == 0:
+        return 0.0, {}
+    multi_density = multi / total
+    t_int = base.get("internal_density") or INTERNAL_RHYME_TARGET
+    t_multi = base.get("multi_density") or 0.01
+    int_score = min(100.0, (density / t_int) * 100.0) if t_int > 0 else 0.0
+    multi_score = min(100.0, (multi_density / t_multi) * 100.0) if t_multi > 0 else 0.0
+    score = 0.35 * int_score + 0.65 * multi_score    # multisyllabic = the real quality marker
+    return score, {"internal_density": round(density, 3), "multi_density": round(multi_density, 3),
+                   "corpus_internal": round(t_int, 3), "corpus_multi": round(t_multi, 3)}
+
+
+def score_flow(lines, cmu, base):
+    """A4: stress-density match to the corpus + rhythmic consistency across bars."""
+    densities = []
+    for ln in lines:
+        s, t = _bar_stress(ln, cmu)
+        if t > 0:
+            densities.append(s / t)
+    if not densities:
+        return 0.0, {}
+    mean_d = statistics.mean(densities)
+    target = base.get("stress_density") or 0.5
+    match = max(0.0, 100.0 - abs(mean_d - target) * 200.0)
+    cv = (statistics.pstdev(densities) / mean_d) if (mean_d > 0 and len(densities) > 1) else 0.0
+    consistency = max(0.0, 100.0 - cv * 100.0)
+    score = 0.6 * match + 0.4 * consistency
+    return score, {"stress_density": round(mean_d, 3), "corpus": round(target, 3),
+                   "consistency": round(consistency, 1)}
+
+
+def build_originality_index(bars):
+    corpus_lines, grams = set(), set()
+    for b in bars:
+        norm = " ".join(WORD_RE.findall(ADLIB_RE.sub(" ", b["text"]).lower()))
+        if norm:
+            corpus_lines.add(norm)
+            toks = norm.split()
+            for i in range(len(toks) - 3):
+                grams.add(tuple(toks[i:i + 4]))
+    return corpus_lines, grams
+
+
+def score_originality(lines, corpus_lines, corpus_4grams):
+    """A7 reframed (Inspiration): reward hitting the inspiration target — grounded in the corpus's
+    phrasing but not verbatim. Sterile-original AND plagiarized both score low; verbatim = hard floor."""
+    if not lines:
+        return 0.0, {}
+    dup_lines, overlaps = 0, []
+    for ln in lines:
+        norm = " ".join(WORD_RE.findall(ADLIB_RE.sub(" ", ln).lower()))
+        if not norm:
+            continue
+        if norm in corpus_lines:
+            dup_lines += 1
+            overlaps.append(1.0)
+            continue
+        toks = norm.split()
+        grams = [tuple(toks[i:i + 4]) for i in range(len(toks) - 3)]
+        overlaps.append(sum(1 for g in grams if g in corpus_4grams) / len(grams) if grams else 0.0)
+    avg_overlap = statistics.mean(overlaps) if overlaps else 0.0
+    originality_level = 1.0 - avg_overlap
+    score = max(0.0, 100.0 - abs(originality_level - ORIGINALITY_TARGET) * 150.0)
+    if dup_lines:
+        score = min(score, 20.0)             # verbatim corpus line = plagiarism floor
+    return score, {"duplicate_lines": dup_lines, "avg_4gram_overlap": round(avg_overlap, 3),
+                   "originality_level": round(originality_level, 2)}
+
+
+# -------------------------------------------------------------------- MAIN ---
+SAMPLE_VERSE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sample_verse.txt")
+
+
+def read_verse(path):
+    with open(path, encoding="utf-8") as f:
+        return [ln.strip() for ln in f if ln.strip()]
+
+
+def _clean_lexicon_token(s):
+    """Reduce a raw lexicon cell to a matchable surface token.
+    '"Water" (diamonds or high purity)' -> 'water'; 'Cartier ("Cartis").' -> 'cartier';
+    'AP (Audemars Piguet)' -> 'ap'. Returns '' if nothing usable."""
+    s = re.split(r"[(\[]", s.strip(), 1)[0]        # drop parenthetical definitions
+    s = s.strip().strip('"“”‘’\'').strip()
+    s = re.sub(r"^[^\w]+|[^\w]+$", "", s)          # outer punctuation
+    return re.sub(r"\s+", " ", s).lower()
+
+
+# Common English — used ONLY to filter the noisy `rap_shorthand_term` column (which is polluted
+# with sentence-fragment junk like "The"/"And"/"Used"). The curated `term` column is trusted as-is.
+# Coded shorthands (Roley, Carti, Patek, Draco) aren't common words, so they survive.
+_COMMON_EN = set("""the a an and or but so to of in on at by for with from as it is be are was were been
+we they that this these those i you he she me my your our his her him them their there here what when
+where who how why not no yes do does did done have has had got get gets getting go goes going gone went
+come comes coming came can could will would should may might must used use using long looking look looks
+every all some any more most much many few one two now then today still just only even ever never always
+like make made take takes give gave keep kept stay stayed said say says want need know knew time life day
+way back down out up off over into about real same new old big lil""".split())
+
+
+def _ok_ref(t):
+    """A token that could plausibly be matched in a verse: starts with a letter, <=2 words, no junk."""
+    return bool(2 < len(t) < 30 and len(t.split()) <= 2 and re.match(r"^[a-z][a-z0-9'.\- ]*$", t))
+
+
+def load_lexicon_terms(path):
+    """Matchable authority/coded references: cleaned `term` headwords PLUS the (filtered)
+    `rap_shorthand_term` coded forms (Roley, Carti, Patek...). <=2-char forms are dropped — they
+    cause substring false-positives (ap -> trap). This is a coded-reference lexicon, not slang."""
+    terms = set()
+    if not os.path.exists(path):
+        return terms
+    with open(path, newline="", encoding="utf-8", errors="replace") as f:
+        rows = list(csv.reader(f))
+    if not rows:
+        return terms
+    header = [c.strip().lower() for c in rows[0]]
+    ti = header.index("term") if "term" in header else 0
+    si = header.index("rap_shorthand_term") if "rap_shorthand_term" in header else None
+    for row in rows[1:]:
+        if ti < len(row):                                   # term column is curated — trust it
+            t = _clean_lexicon_token(row[ti])
+            if _ok_ref(t):
+                terms.add(t)
+        if si is not None and si < len(row):                # shorthand is noisy — drop English junk
+            s = _clean_lexicon_token(row[si])
+            if _ok_ref(s) and not all(w in _COMMON_EN for w in s.split()):
+                terms.add(s)
+    return terms
+
+
+def score_lexical(lines, lexicon_terms):
+    """A6: authentic-jargon coverage minus overuse (the lexicon's own overuse_penalty idea)."""
+    if not lines or not lexicon_terms:
+        return 0.0, {}
+    text = " ".join(lines).lower()
+    hits = {}
+    for t in lexicon_terms:                          # word-boundary, so 'bin' won't fire in 'cabin'
+        n = len(re.findall(r"\b" + re.escape(t) + r"\b", text))
+        if n > 0:
+            hits[t] = n
+    distinct = len(hits)
+    overuse = sum(max(0, n - 2) for n in hits.values()) * 10.0
+    presence = min(100.0, distinct * 25.0)          # ~4 distinct authentic terms = full marks
+    return max(0.0, presence - overuse), {"distinct_terms": distinct,
+                                          "hits": sorted(hits)[:8],
+                                          "overused": [t for t, n in hits.items() if n > 2]}
+
+
+def score_tone(lines):
+    """A5 (proxy): density of corpus-dominant tone words (confident + luxurious)."""
+    if not lines:
+        return 0.0, {}
+    words = re.findall(r"[a-z']+", " ".join(lines).lower())
+    if not words:
+        return 0.0, {}
+    counts = {tone: sum(1 for w in words if w in vocab) for tone, vocab in TONE_WORDS.items()}
+    density = (counts["confident"] + counts["luxurious"]) / len(words)
+    return min(100.0, density * 600.0), counts      # ~1 tone word / 6 words ≈ full marks
+
+
+def score_smart(lines):
+    """Positive: vocabulary variety (type-token ratio) + concrete specificity — cleverness proxy."""
+    raw = " ".join(lines)
+    all_words = WORD_RE.findall(ADLIB_RE.sub(" ", raw).lower())
+    content = [w for w in all_words if len(w) > 3 and w not in STOPWORDS]
+    if not content:
+        return 0.0, {}
+    variety = len(set(content)) / len(content)
+    specific = sum(1 for w in WORD_RE.findall(ADLIB_RE.sub(" ", raw))
+                   if any(c.isdigit() for c in w) or len(w) > 7)
+    spec_density = specific / max(1, len(all_words))
+    return min(100.0, variety * 95.0 + spec_density * 180.0), {
+        "vocab_variety": round(variety, 2), "specific_words": specific}
+
+
+def penalty_repetition(lines):
+    """Negative: same content word reused 4+ times (hooks may intentionally repeat up to 3)."""
+    words = [w for ln in lines for w in WORD_RE.findall(ADLIB_RE.sub(" ", ln).lower())
+             if len(w) > 3 and w not in STOPWORDS]
+    counts = Counter(words)
+    overused = {w: c for w, c in counts.items() if c >= 4}
+    penalty = min(25.0, sum(c - 3 for c in overused.values()) * 5.0)
+    return penalty, {"overused": dict(sorted(overused.items(), key=lambda kv: -kv[1])[:5])}
+
+
+def penalty_over_explain(lines, cmu):
+    """Negative: telling-not-showing — explainer markers + rambling over-long bars (the AI tell)."""
+    words = [w for ln in lines for w in WORD_RE.findall(ADLIB_RE.sub(" ", ln).lower())]
+    if not words:
+        return 0.0, {}
+    markers = sum(1 for w in words if w in EXPLAINER_MARKERS)
+    long_bars = sum(1 for ln in lines if line_syllables(ln, cmu) > 16)
+    penalty = min(15.0, markers * 2.0 + long_bars * 2.5)
+    return penalty, {"explainer_markers": markers, "over_long_bars": long_bars}
+
+
+def grade_verse(lines, cmu, base, lexicon_terms, corpus_lines, corpus_4grams):
+    """Positive/negative ledger. Returns (positives, negatives, net, details)."""
+    a1, counts = score_cadence(lines, cmu, base)
+    a2, rate = score_rhyme(lines, cmu, base)
+    a3, rq = score_rhyme_quality(lines, cmu, base)
+    a4, flow = score_flow(lines, cmu, base)
+    a6, lex = score_lexical(lines, lexicon_terms)
+    a7, orig = score_originality(lines, corpus_lines, corpus_4grams)
+    smart, sm = score_smart(lines)
+    positives = {"Cadence": a1, "EndRhyme": a2, "InnerRhyme": a3, "Jargon": a6,
+                 "Smart": smart, "Flow": a4, "Originality": a7}
+    pos_total = sum(positives[k] * POSITIVE_WEIGHTS[k] for k in POSITIVE_WEIGHTS)
+    rep, rd = penalty_repetition(lines)
+    over, od = penalty_over_explain(lines, cmu)
+    negatives = {"Repetition": rep, "OverExplain": over}
+    net = max(0.0, min(100.0, pos_total - rep - over))
+    details = {"syllables": counts, "rhyme_rate": rate, "rhyme_quality": rq, "flow": flow,
+               "lexical": lex, "smart": sm, "repetition": rd, "over_explain": od}
+    return positives, negatives, net, details
+
+
+def band(score):
+    if score >= 90: return "A  (corpus-indistinguishable)"
+    if score >= 80: return "B  (ship)"
+    if score >= 70: return "C  (passable)"
+    return "D  (needs work)"
+
+
+def main():
+    ap = argparse.ArgumentParser(description="G0 Model G authenticity grader")
+    ap.add_argument("--verse", help="path to a verse file (one bar per line)")
+    ap.add_argument("--demo", action="store_true", help="score the bundled sample verse")
+    ap.add_argument("--corpus-stats", action="store_true", help="print corpus baseline only")
+    ap.add_argument("--corpus", default=DEFAULT_CORPUS)
+    ap.add_argument("--cmudict", default=DEFAULT_CMUDICT)
+    ap.add_argument("--lexicon", default=DEFAULT_LEXICON)
+    ap.add_argument("--log", action="store_true", help="append result to eval/grading_log.csv")
+    ap.add_argument("--version-label", default="manual", help="pipeline label for the log")
+    ap.add_argument("--compare", nargs="+", metavar="VERSE", help="grade multiple verse files side-by-side")
+    ap.add_argument("--history", nargs="?", const=0, type=int, metavar="N",
+                    help="show the grading trend over runs (optionally just the last N runs)")
+    ap.add_argument("--goal-net", type=float, default=65.0, help="target NET for history goal flags")
+    ap.add_argument("--max-penalty", type=float, default=20.0, help="penalty ceiling for history flags")
+    args = ap.parse_args()
+
+    if args.history is not None:
+        show_history(limit=args.history or None, goal_net=args.goal_net, max_penalty=args.max_penalty)
+        return
+
+    for p in (args.corpus, args.cmudict):
+        if not os.path.exists(p):
+            sys.exit(f"missing required file: {p}")
+
+    print("Loading CMUDICT + corpus ...", file=sys.stderr)
+    cmu = load_cmudict(args.cmudict)
+    bars = load_corpus(args.corpus)
+    base = corpus_baseline(bars, cmu)
+
+    print("\n=== CORPUS BASELINE (real Gunna/Thug ground truth) ===")
+    print(f"  bars indexed         : {base['n_bars']}")
+    print(f"  syllables/bar        : mean {base['syll_mean']:.2f}, std {base['syll_std']:.2f} "
+          f"(used {base['n_syll_used']}, dropped {base['n_syll_dropped']} out-of-range)")
+    print(f"  rhyme rate (end-word) : {base['rhyme_rate']:.2f}  (informational; end-word only)")
+    print(f"  internal rhyme density: {base['internal_density']:.3f}  (A3 target, corpus-derived)")
+    print(f"  stress density       : {base['stress_density']:.3f}  (A4 target, corpus-derived)")
+    print(f"  top tones            : {base['tones']}")
+    print(f"  cmudict words        : {len(cmu)}")
+
+    if args.corpus_stats:
+        return
+
+    corpus_lines, corpus_4grams = build_originality_index(bars)
+    lexicon_terms = load_lexicon_terms(args.lexicon)
+
+    # Compare mode: grade several verses side-by-side (e.g. v2 output vs v3 output).
+    if args.compare:
+        print("\n=== COMPARE (positives | -penalties | NET) ===")
+        pos_cols = list(POSITIVE_WEIGHTS.keys())
+        print(f"{'verse':<22}" + "".join(f"{c[:5]:>6}" for c in pos_cols)
+              + f"{'-Rep':>6}{'-Exp':>6}{'NET':>7}")
+        groups = defaultdict(list)
+        for path in args.compare:
+            pos, neg, net, _ = grade_verse(read_verse(path), cmu, base, lexicon_terms, corpus_lines, corpus_4grams)
+            name = os.path.basename(path)
+            print(f"{name:<22}" + "".join(f"{pos[c]:>6.0f}" for c in pos_cols)
+                  + f"{neg['Repetition']:>6.0f}{neg['OverExplain']:>6.0f}{net:>7.1f}")
+            key = name.replace(".txt", "").split("_")[-1]  # group by suffix (baseline vs v3)
+            groups[key].append(net)
+        if len(groups) > 1 or any(len(v) > 1 for v in groups.values()):
+            print("  --- group means (NET) ---")
+            for key, nets in sorted(groups.items()):
+                print(f"  {key:<18} n={len(nets)}  mean NET = {sum(nets)/len(nets):6.1f}")
+        return
+
+    verse_path = args.verse or (SAMPLE_VERSE_PATH if args.demo else None)
+    if not verse_path:
+        ap.error("provide --verse PATH, --demo, or --compare")
+    lines = read_verse(verse_path)
+
+    pos, neg, net, det = grade_verse(lines, cmu, base, lexicon_terms, corpus_lines, corpus_4grams)
+
+    print(f"\n=== VERSE: {os.path.relpath(verse_path, REPO_ROOT)} ({len(lines)} bars) ===")
+    print(f"  syllables/bar : {det['syllables']}  (corpus mean {base['syll_mean']:.1f})")
+    print(f"  rhyme quality : {det['rhyme_quality']}")
+    print(f"  smart         : {det['smart']}")
+    print(f"  lexical       : {det['lexical']}")
+    print(f"  repetition    : {det['repetition']}")
+    print(f"  over-explain  : {det['over_explain']}")
+    print("\n  +++ POSITIVE (0-100, weighted) +++")
+    for k in POSITIVE_WEIGHTS:
+        print(f"     {k:<12}: {pos[k]:6.1f}   (weight {POSITIVE_WEIGHTS[k]:.2f})")
+    print("  --- NEGATIVE (penalty points) ---")
+    for k in neg:
+        print(f"     {k:<12}: -{neg[k]:.1f}")
+    print(f"\n  NET SCORE     : {net:6.1f}   {band(net)}")
+    print("  (Trust Cadence/EndRhyme/Jargon/Smart/Originality; InnerRhyme/Flow are heuristics.)\n")
+
+    if args.log:
+        append_log(args.version_label, os.path.basename(verse_path), pos, neg, net,
+                   run_id=datetime.datetime.now().isoformat(timespec="seconds"))
+        print(f"  logged -> {os.path.relpath(LOG_PATH, REPO_ROOT)}")
+
+
+if __name__ == "__main__":
+    main()
