@@ -109,7 +109,7 @@ struct DynamicIslandToolbarView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     
     /// Single-tap on the AI control runs this model again; choosing G or Y in the menu updates it after gates pass.
-    @AppStorage("toolbar_ai_last_suggestion_model") private var lastSuggestionModelRaw: String = SuggestionModel.modelG.rawValue
+    @AppStorage("toolbar_ai_last_suggestion_model") private var lastSuggestionModelRaw: String = SuggestionModel.modelGv3.rawValue
     
     // Computed properties for live activity indicators
     private var wordCount: Int {
@@ -124,17 +124,7 @@ struct DynamicIslandToolbarView: View {
         rapSuggestionEngine.isLoading
     }
     
-    private var resolvedLastSuggestionModel: SuggestionModel {
-        SuggestionModel.allCases.first { $0.rawValue == lastSuggestionModelRaw } ?? .modelG
-    }
-    
-    private func sparkleToolbarSymbolName() -> String {
-        switch resolvedLastSuggestionModel {
-        case .modelG: return "sparkles"
-        case .modelY: return "sparkles.rectangle.stack"
-        case .modelGv3: return "wand.and.stars"
-        }
-    }
+    private func sparkleToolbarSymbolName() -> String { "wand.and.stars" }
     
     /// Shared API-key splash, subscription gate, usage limit, and analytics. Returns whether the caller should proceed.
     private func runAISparkleAccessGates() -> Bool {
@@ -169,43 +159,7 @@ struct DynamicIslandToolbarView: View {
         return true
     }
     
-    private func beginModelGFlow() {
-        guard runAISparkleAccessGates() else { return }
-        lastSuggestionModelRaw = SuggestionModel.modelG.rawValue
-        isShowingRecalled = false
-        showModelGControlSurface = true
-    }
-    
-    private func beginModelYFlow() {
-        guard runAISparkleAccessGates() else { return }
-        lastSuggestionModelRaw = SuggestionModel.modelY.rawValue
-        isShowingRecalled = false
-        showContextHighlight = true
-        Task {
-            await rapSuggestionEngine.generateSuggestions(
-                text: currentText,
-                highlights: highlights,
-                model: .modelY,
-                bpm: item.bpm,
-                key: item.key,
-                scale: item.scale,
-                audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
-                transcriptionRhythmMapData: item.transcriptionRhythmMapData
-            )
-            await MainActor.run {
-                showContextHighlight = false
-                if let error = rapSuggestionEngine.error {
-                    HapticFeedbackManager.shared.error()
-                    showAIError(error)
-                } else {
-                    HapticFeedbackManager.shared.success()
-                    showRapSuggestions = true
-                }
-            }
-        }
-    }
-
-    private func beginModelGv3Flow() {
+    private func beginSuggestNextLinesFlow() {
         guard runAISparkleAccessGates() else { return }
         lastSuggestionModelRaw = SuggestionModel.modelGv3.rawValue
         isShowingRecalled = false
@@ -469,23 +423,11 @@ struct DynamicIslandToolbarView: View {
 
                         Menu {
                             Button {
-                                beginModelGFlow()
+                                beginSuggestNextLinesFlow()
                             } label: {
-                                Label("Suggest Next Lines with Model G", systemImage: "sparkles")
-                            }
-                            
-                            Button {
-                                beginModelYFlow()
-                            } label: {
-                                Label("Suggest Next Lines with Model Y", systemImage: "sparkles.rectangle.stack")
+                                Label("Suggest Next Lines", systemImage: "wand.and.stars")
                             }
 
-                            Button {
-                                beginModelGv3Flow()
-                            } label: {
-                                Label("Suggest Next Lines with Model G v3", systemImage: "wand.and.stars")
-                            }
-                            
                             Button {
                                 HapticFeedbackManager.shared.selection()
                                 isEditorFocused = false
@@ -571,19 +513,15 @@ struct DynamicIslandToolbarView: View {
                             .scaleEffect((buttonPressStates["aiSparkle"] ?? false) ? 0.92 : 1.0)
                             .animation(.spring(response: 0.3, dampingFraction: 0.6), value: buttonPressStates["aiSparkle"])
                         } primaryAction: {
-                            switch resolvedLastSuggestionModel {
-                            case .modelG: beginModelGFlow()
-                            case .modelY: beginModelYFlow()
-                            case .modelGv3: beginModelGv3Flow()
-                            }
+                            beginSuggestNextLinesFlow()
                         }
                         // NOTE: No press-tracking DragGesture here — a simultaneous
                         // DragGesture(minimumDistance: 0) swallows the tap and forces the
                         // Menu into long-press mode. Leaving it off lets `primaryAction`
                         // fire on a single tap.
                         .disabled(rapSuggestionEngine.isLoading)
-                        .accessibilityLabel("AI suggestions, \(resolvedLastSuggestionModel.displayName)")
-                        .accessibilityHint("Tap once for \(resolvedLastSuggestionModel.displayName). Open the menu to choose Model G, Model G v3, Model Y, or open last suggestions.")
+                        .accessibilityLabel("Suggest next lines with Model G v3")
+                        .accessibilityHint("Tap once to suggest next lines. Open the menu for more actions or last suggestions.")
                         .onChange(of: rapSuggestionEngine.isLoading) { oldValue, newValue in
                             if newValue {
                                 // Start rotating animation

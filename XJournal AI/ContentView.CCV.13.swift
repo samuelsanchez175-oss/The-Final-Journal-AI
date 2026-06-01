@@ -63,20 +63,10 @@ struct NoteEditorView: View {
     @State private var rhymeOverlayHeight: CGFloat = 40 // Dynamic height for rhyme overlay
     @StateObject private var rhymeEngineState = RhymeEngineState()
 
-    @AppStorage("toolbar_ai_last_suggestion_model") private var lastToolbarSuggestionModelRaw: String = SuggestionModel.modelG.rawValue
+    @AppStorage("toolbar_ai_last_suggestion_model") private var lastToolbarSuggestionModelRaw: String = SuggestionModel.modelGv3.rawValue
 
-    /// Toolbar’s selected AI model (Model G, Model G v3, or Model Y). Drives Model G control surface generation.
-    private var toolbarSuggestionModel: SuggestionModel {
-        SuggestionModel.allCases.first { $0.rawValue == lastToolbarSuggestionModelRaw } ?? .modelG
-    }
-
-    /// When generating from the shared Model G control surface, map toolbar selection to the API model (never `.modelY`).
-    private var modelGControlSurfaceAPIModel: SuggestionModel {
-        switch toolbarSuggestionModel {
-        case .modelGv3: return .modelGv3
-        case .modelG, .modelY: return .modelG
-        }
-    }
+    /// Control surface generation uses `.modelG` so DirectedGenerationParams + Model G Core v3 coordinator stay wired.
+    private var modelGControlSurfaceAPIModel: SuggestionModel { .modelG }
     
     // Onboarding splash screen state
     @ObservedObject private var splashManager = SplashScreenManager.shared
@@ -383,14 +373,21 @@ struct NoteEditorView: View {
                     Momentum.surfaceElevated
                     EditorCoralGlow(bpm: item.bpm)
                         .mask(
+                            // Hold full coral through title + pills; fade only at the
+                            // bottom edge so the wash meets the gray divider cleanly.
                             LinearGradient(
-                                colors: [.black, .black, .clear],
+                                stops: [
+                                    .init(color: .black, location: 0.0),
+                                    .init(color: .black, location: 0.82),
+                                    .init(color: .clear, location: 1.0)
+                                ],
                                 startPoint: .top,
                                 endPoint: .bottom
                             )
                         )
-                        .allowsHitTesting(false)
                 }
+                .ignoresSafeArea(edges: .top)
+                .allowsHitTesting(false)
             )
 
             Divider()
@@ -510,35 +507,18 @@ struct NoteEditorView: View {
                 showModelGControlSurface = false
                 showContextHighlight = true
                 Task {
-                    let useParallelModelG = toolbarSuggestionModel == .modelG
-                        && ModelGEnvironment.useModelGCore
-                        && ModelGEnvironment.useModelGv2
-                    if useParallelModelG {
-                        await rapSuggestionEngine.generateSuggestionsModelGParallel(
-                            text: currentText,
-                            highlights: computedHighlights,
-                            bpm: item.bpm,
-                            key: item.key,
-                            scale: item.scale,
-                            directedParams: params,
-                            rhymeGroupsByID: rhymeGroupsByID,
-                            audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
-                            transcriptionRhythmMapData: item.transcriptionRhythmMapData
-                        )
-                    } else {
-                        await rapSuggestionEngine.generateSuggestions(
-                            text: currentText,
-                            highlights: computedHighlights,
-                            model: modelGControlSurfaceAPIModel,
-                            bpm: item.bpm,
-                            key: item.key,
-                            scale: item.scale,
-                            directedParams: params,
-                            rhymeGroupsByID: rhymeGroupsByID,
-                            audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
-                            transcriptionRhythmMapData: item.transcriptionRhythmMapData
-                        )
-                    }
+                    await rapSuggestionEngine.generateSuggestions(
+                        text: currentText,
+                        highlights: computedHighlights,
+                        model: modelGControlSurfaceAPIModel,
+                        bpm: item.bpm,
+                        key: item.key,
+                        scale: item.scale,
+                        directedParams: params,
+                        rhymeGroupsByID: rhymeGroupsByID,
+                        audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                        transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                    )
                     await MainActor.run {
                         showContextHighlight = false
                         if let error = rapSuggestionEngine.error {
@@ -649,6 +629,7 @@ struct NoteEditorView: View {
         .toolbar {
             editorToolbarItems
         }
+        .toolbarBackground(.hidden, for: .navigationBar)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showAudioRecorder) {
             AudioRecorderView(item: item)

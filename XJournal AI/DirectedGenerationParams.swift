@@ -1,7 +1,7 @@
 //
 // DirectedGenerationParams.swift
 // Model G control surface: user prompt, highlight injection, style injection.
-// Used when user selects "Suggest Next Lines with Model G" and the post-select page is shown.
+// Used by the "Suggest next lines" control surface before generation runs.
 //
 
 import Foundation

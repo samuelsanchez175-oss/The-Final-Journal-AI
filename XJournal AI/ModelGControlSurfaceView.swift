@@ -1,7 +1,7 @@
 //
 // ModelGControlSurfaceView.swift
-// "Model G → Next Page" control surface: user prompt, highlight injection, style injection.
-// Shown after user taps "Suggest Next Lines with Model G"; Generate runs with DirectedGenerationParams.
+// Pre-generation sheet: direction, style, optional word/topic/tone/rhyme constraints.
+// Generate runs with DirectedGenerationParams into Model G v3.
 //
 
 import SwiftUI
@@ -23,6 +23,7 @@ struct ModelGControlSurfaceView: View {
     @State private var selectedTopicsText: String = ""
     @State private var worldBuildingText: String = ""
     @State private var styleOverrideKey: String = "auto"
+    @State private var isWorldBuildingExpanded = false
 
     private static let styleOptions: [(key: String, label: String, profile: StyleProfile)] = [
         ("auto", "Auto", StyleProfile.coldTrap),
@@ -68,7 +69,7 @@ struct ModelGControlSurfaceView: View {
                 }
                 generateFooter
             }
-            .navigationTitle("Model G")
+            .navigationTitle("Suggest next lines")
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
                 let defaultFromProfile = UserDefaults.standard.object(forKey: "suggestion_default_line_count") as? Int ?? 4
@@ -111,54 +112,15 @@ struct ModelGControlSurfaceView: View {
 
     private var formContent: some View {
         VStack(alignment: .leading, spacing: 20) {
-            modelVersionSection
             userPromptSection
             styleOverrideSection
             lineCountSection
-            rhymeGroupsSection
-            highlightWordsSection
-            toneSection
+            wordsToEmphasizeSection
             topicsSection
+            toneSection
+            rhymeGroupsSection
         }
         .padding()
-    }
-
-    // MARK: - Model version (v1 vs v2) — same toggles as Model Preferences, for pre-generation choice
-    private var modelVersionSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            MomentumSectionHeader(title: "Engine")
-            Toggle(isOn: Binding(
-                get: { ModelGEnvironment.useModelGCore },
-                set: { ModelGEnvironment.useModelGCore = $0 }
-            )) {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("Model G Core v1.0")
-                        .font(.subheadline)
-                    Text("Competitive bar generation, style branches, beat fingerprint. Off = legacy batch.")
-                        .font(.caption)
-                        .foregroundStyle(Momentum.contentSecondary)
-                }
-            }
-            if ModelGEnvironment.useModelGCore {
-                Toggle(isOn: Binding(
-                    get: { ModelGEnvironment.useModelGv2 },
-                    set: { ModelGEnvironment.useModelGv2 = $0 }
-                )) {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("Model G v2 (Flow DNA)")
-                            .font(.subheadline)
-                        Text("Syllable stress, beat grid, rhyme clusters, cadence. Cross-test with v1.")
-                            .font(.caption)
-                            .foregroundStyle(Momentum.contentSecondary)
-                    }
-                }
-            }
-        }
-        .padding(12)
-        .background(
-            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(colorScheme == .dark ? Color.white.opacity(0.06) : Color.black.opacity(0.04))
-        )
     }
 
     private var styleOverrideSection: some View {
@@ -176,7 +138,7 @@ struct ModelGControlSurfaceView: View {
     private var userPromptSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             MomentumSectionHeader(title: "Direction")
-            TextField("What to write about, or leave blank to continue the draft", text: $userPrompt, axis: .vertical)
+            TextField("What should the next lines be about? Leave blank to continue the draft.", text: $userPrompt, axis: .vertical)
                 .textFieldStyle(.roundedBorder)
                 .lineLimit(3...6)
         }
@@ -197,7 +159,7 @@ struct ModelGControlSurfaceView: View {
         VStack(alignment: .leading, spacing: 12) {
             MomentumSectionHeader(title: "Rhyme groups")
             if rhymeGroups.isEmpty {
-                Text("No rhyme groups yet. Add text to your draft and open Magnifier to see groups here.")
+                Text("Add lyrics to your draft to pick rhyme groups here (via Magnifier).")
                     .font(.caption)
                     .foregroundStyle(Momentum.contentSecondary)
                     .padding(.vertical, 8)
@@ -266,12 +228,15 @@ struct ModelGControlSurfaceView: View {
         }
     }
 
-    private var highlightWordsSection: some View {
+    private var wordsToEmphasizeSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            MomentumSectionHeader(title: "Highlight words")
-            TextField("e.g. drip, flow, ice", text: $highlightWordsText)
+            MomentumSectionHeader(title: "Words to emphasize")
+            Text("Optional — nudge rhyme and imagery without rewriting the draft.")
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+            TextField("Near-rhyme or mood, e.g. drip, flow, ice", text: $highlightWordsText)
                 .textFieldStyle(.roundedBorder)
-            TextField("Must use verbatim (comma-separated)", text: $mustUseWordsText)
+            TextField("Must appear verbatim, comma-separated", text: $mustUseWordsText)
                 .textFieldStyle(.roundedBorder)
         }
     }
@@ -312,11 +277,19 @@ struct ModelGControlSurfaceView: View {
 
     private var topicsSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            MomentumSectionHeader(title: "Topics & world-building")
-            TextField("Topics", text: $selectedTopicsText)
+            MomentumSectionHeader(title: "Topics")
+            TextField("Themes to hit, comma-separated", text: $selectedTopicsText)
                 .textFieldStyle(.roundedBorder)
-            TextField("World-building words (places, textures, props)", text: $worldBuildingText)
-                .textFieldStyle(.roundedBorder)
+
+            DisclosureGroup(isExpanded: $isWorldBuildingExpanded) {
+                TextField("Places, textures, props — comma-separated", text: $worldBuildingText)
+                    .textFieldStyle(.roundedBorder)
+                    .padding(.top, 4)
+            } label: {
+                Text("World-building detail")
+                    .font(.subheadline)
+                    .foregroundStyle(Momentum.contentSecondary)
+            }
         }
     }
 }

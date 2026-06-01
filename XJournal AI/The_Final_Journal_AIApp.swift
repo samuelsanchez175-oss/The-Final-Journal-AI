@@ -141,6 +141,8 @@ struct The_Final_Journal_AIApp: App {
         
         // Configure audio session to bypass silent mode at app startup
         Self.configureAudioSessionForPlayback()
+
+        ModelGEnvironment.applyV3OnlyProductDefaultsIfNeeded()
         
         // Start ModelContainer initialization immediately on background thread
         // This pre-initializes the database before views need it

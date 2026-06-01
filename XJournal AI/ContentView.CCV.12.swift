@@ -656,7 +656,7 @@ struct ProfilePopoverView: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel("Model Preferences")
-                .accessibilityHint("Customize Model G and Model Y, enable Model G Core v1.0")
+                .accessibilityHint("Customize Model G v3 voice and generation preferences")
             }
         }
     }

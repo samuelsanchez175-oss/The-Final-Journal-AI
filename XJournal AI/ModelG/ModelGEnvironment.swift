@@ -48,6 +48,31 @@ enum ModelGEnvironment {
         get { (UserDefaults.standard.object(forKey: "model_g_originality_bias") as? Double) ?? 0.6 }
         set { UserDefaults.standard.set(newValue, forKey: "model_g_originality_bias") }
     }
+
+    private static let v3OnlyDefaultsAppliedKey = "ai_product_defaults_v3_only_applied"
+
+    /// One-time migration: toolbar + settings → Model G v3; pin Core + v3 engine flags.
+    static func applyV3OnlyProductDefaultsIfNeeded() {
+        guard !UserDefaults.standard.bool(forKey: v3OnlyDefaultsAppliedKey) else { return }
+
+        let toolbarKey = "toolbar_ai_last_suggestion_model"
+        if UserDefaults.standard.string(forKey: toolbarKey) != SuggestionModel.modelGv3.rawValue {
+            UserDefaults.standard.set(SuggestionModel.modelGv3.rawValue, forKey: toolbarKey)
+        }
+
+        if UserDefaults.standard.data(forKey: "modelGv3_settings") == nil {
+            if let legacy = UserDefaults.standard.data(forKey: "modelG_settings") {
+                UserDefaults.standard.set(legacy, forKey: "modelGv3_settings")
+            } else if let legacyY = UserDefaults.standard.data(forKey: "modelY_settings") {
+                UserDefaults.standard.set(legacyY, forKey: "modelGv3_settings")
+            }
+        }
+
+        useModelGCore = true
+        useModelGv3 = true
+
+        UserDefaults.standard.set(true, forKey: v3OnlyDefaultsAppliedKey)
+    }
 }
 
 // MARK: - Generation Context

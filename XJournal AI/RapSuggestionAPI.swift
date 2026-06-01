@@ -152,7 +152,9 @@ class RapSuggestionAPI {
     func loadModelSettings(for model: SuggestionModel) -> ModelSettings {
         let key: String
         switch model {
-        case .modelG:   key = "modelG_settings"
+        case .modelG:
+            // Product default: Model G v3 settings drive Core / directed generation on the .modelG API path.
+            key = "modelGv3_settings"
         case .modelY:   key = "modelY_settings"
         case .modelGv3: key = "modelGv3_settings"
         }
