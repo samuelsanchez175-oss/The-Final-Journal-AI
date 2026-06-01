@@ -268,6 +268,13 @@ struct ProfilePopoverView: View {
             }
             .overlay(alignment: .top) { saveConfirmationToast }
             .onAppear { loadOnAppear() }
+            .onReceive(NotificationCenter.default.publisher(for: .showProfile)) { _ in
+                if AppNavigation.applyPendingProfileRouting(selectedTab: &selectedTab) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                        showModelPreferences = true
+                    }
+                }
+            }
             .onDisappear { if hasUnsavedChanges { persist() } }
             .onChange(of: selectedItem) { _, newItem in handleAvatarPick(newItem) }
             .onChange(of: openAIKeyDraft) { _, _ in hasUnsavedChanges = true }
@@ -315,6 +322,12 @@ struct ProfilePopoverView: View {
             didRouteInitialTab = true
             if openAIKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                 selectedTab = .ai
+            }
+        }
+
+        if AppNavigation.applyPendingProfileRouting(selectedTab: &selectedTab) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                showModelPreferences = true
             }
         }
     }
@@ -697,8 +710,13 @@ struct ProfilePopoverView: View {
     private var appTab: some View {
         VStack(alignment: .leading, spacing: 28) {
             VStack(alignment: .leading, spacing: 12) {
-                MomentumSectionHeader(title: "Coral")
+                MomentumSectionHeader(title: "Appearance")
                 CoralAppearanceSection()
+            }
+
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "Editor")
+                EditorButtonsSection()
             }
 
             VStack(alignment: .leading, spacing: 12) {

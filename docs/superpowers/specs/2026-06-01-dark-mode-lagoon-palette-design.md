@@ -1,10 +1,22 @@
 # Dark Mode — "Lagoon" Palette & Scheme-Aware Tokens
 
 **Date:** 2026-06-01
-**Status:** Design approved (2026-06-01) — ready for implementation plan
+**Status:** Implemented (2026-06-01) — builds green (`The Final Journal AI` scheme, simulator). In-app testable via Profile → App → Appearance. See **Implementation note** for how the shipped model refined this design.
 **Goal:** Define the dark-mode color palette ("Lagoon" — green→blue, dark background) as the cool-half mirror of the light "Coral" system, and convert the `Momentum` design tokens to resolve light/dark automatically. This is the **palette + token foundation only** — the per-screen dark-mode audit is a separate, later effort.
 
 ---
+
+## Implementation note — what shipped (2026-06-01)
+
+The build refined the design in one important way, at Samuel's direction: **the accent picker doubles as the Light/Dark switch.** Rather than a separate `LagoonPreset` enum surfaced only in dark, the seven cool colors were appended to the existing `CoralPreset` enum (each flagged `isDark`), and a **7th** was added — **Mint `#2BD49A`** at the green end. `CoralAppearanceSection` now renders two labeled rows (**Light** = the 6 warm coral; **Dark** = the 7 cool Lagoon). Tapping a swatch sets the accent **and** writes `@AppStorage("appTheme")` — the key [`The_Final_Journal_AIApp.swift`](../../../XJournal AI/The_Final_Journal_AIApp.swift) already feeds to `.preferredColorScheme` — so a cool swatch flips the whole app to dark, a warm one back to light.
+
+Divergences from the originally-approved design below:
+- **One enum, not two.** `CoralPreset` now holds warm + cool (backward-compatible — the 6 warm raw values are unchanged). `Momentum.accent` stays `CoralSettings.preset.color`; no scheme branch is needed, since the single selected preset *is* the accent in both modes.
+- **No separate dark default.** "Viridian as dark default" is moot under one unified picker (the user just taps); its hex is retained in the family.
+- **Section header** "Coral" → **"Appearance"** (it now governs light/dark too).
+- The dynamic `Color(light:dark:)` token mechanism and all token *values* shipped exactly as specified below.
+
+Everything below describes the originally-approved design; the points above are the only divergences.
 
 ## Background — the seam already exists
 

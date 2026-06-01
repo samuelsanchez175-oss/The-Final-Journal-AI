@@ -12,6 +12,7 @@
 //
 
 import SwiftUI
+import UIKit
 import CoreMotion
 import Combine
 
@@ -25,34 +26,45 @@ extension Color {
                   blue: Double(hex & 0xFF) / 255.0,
                   opacity: alpha)
     }
+
+    /// A color that resolves to a different value in Light vs Dark mode, backed by a dynamic
+    /// `UIColor`. Lets static token constants (`Momentum.surface`, …) flip automatically with
+    /// the color scheme — no `@Environment` plumbing at the call sites. Dark = the "Lagoon" palette.
+    init(light: UInt, dark: UInt, lightAlpha: Double = 1.0, darkAlpha: Double = 1.0) {
+        self = Color(UIColor { traits in
+            let isDark = traits.userInterfaceStyle == .dark
+            return UIColor(Color(hex: isDark ? dark : light, alpha: isDark ? darkAlpha : lightAlpha))
+        })
+    }
 }
 
 // MARK: - Tokens
 
 enum Momentum {
-    // Surfaces / content
-    static let surface          = Color(hex: 0xF8F8F8)
-    static let surfaceElevated   = Color.white
-    static let contentPrimary    = Color(hex: 0x1C1C1E)
-    static let contentSecondary  = Color(hex: 0x1C1C1E, alpha: 0.6)
+    // Surfaces / content — Light value | Dark value ("Lagoon"). Dynamic, so the whole app
+    // flips when the color scheme does (the accent picker writes `appTheme`).
+    static let surface          = Color(light: 0xF8F8F8, dark: 0x0C1417)
+    static let surfaceElevated   = Color(light: 0xFFFFFF, dark: 0x16201F)
+    static let contentPrimary    = Color(light: 0x1C1C1E, dark: 0xE6EEF0)
+    static let contentSecondary  = Color(light: 0x1C1C1E, dark: 0xE6EEF0, lightAlpha: 0.6, darkAlpha: 0.6)
     // Accent
-    static var accent: Color { CoralSettings.preset.color }   // coral — follows the user's Coral preset (default #FF8C66)
-    static let accentCalm        = Color(hex: 0x6688FF)   // empathy / reset states only
-    // Inverse (emphasis banner, primary button)
-    static let inverseSurface    = Color(hex: 0x1C1C1E)
-    static let onInverse         = Color(hex: 0xF8F8F8)
+    static var accent: Color { CoralSettings.preset.color }   // follows the selected preset — warm (Light) or Lagoon cool (Dark)
+    static let accentCalm        = Color(light: 0x6688FF, dark: 0x7E9FE0)   // empathy / reset states only
+    // Inverse (emphasis banner, primary button) — flips in Dark
+    static let inverseSurface    = Color(light: 0x1C1C1E, dark: 0xE6EEF0)
+    static let onInverse         = Color(light: 0xF8F8F8, dark: 0x0C1417)
     // Line work
     static let lineThin: CGFloat  = 1
     static let lineThick: CGFloat = 3
-    static let hairline          = Color(hex: 0x1C1C1E, alpha: 0.10)
+    static let hairline          = Color(light: 0x1C1C1E, dark: 0xE6EEF0, lightAlpha: 0.10, darkAlpha: 0.12)
     static let edge: CGFloat      = 24
     static let corner: CGFloat    = 14   // soft button/card radius (chips use a full pill / Capsule)
 
-    // Rhyme-highlight + metadata-pill tints — retained for the editor re-tune (P5) and the
-    // detail-view metadata pills; NOT used in Layer 0.
-    static let highlightPink   = Color(hex: 0xFCE7F3)
-    static let highlightGreen  = Color(hex: 0xDCFCE7)
-    static let highlightYellow = Color(hex: 0xFEF08A)
+    // Rhyme-highlight + metadata-pill tints — solid pastels in Light; translucent jewel/amber
+    // washes in Dark so they read on the dark surface (editor retune may refine these).
+    static let highlightPink   = Color(light: 0xFCE7F3, dark: 0x3A6CE4, darkAlpha: 0.20)
+    static let highlightGreen  = Color(light: 0xDCFCE7, dark: 0x1AB082, darkAlpha: 0.20)
+    static let highlightYellow = Color(light: 0xFEF08A, dark: 0xE8C24A, darkAlpha: 0.18)
 }
 
 // MARK: - Type scale (≥16pt for content; sub-16 only for true metadata)
@@ -89,11 +101,29 @@ enum ThemeMode: String, CaseIterable, Identifiable {
 
 // MARK: - Coral appearance (user-adjustable accent preset + glow strength)
 
-/// Curated warm/coral accent presets. `classic` is the locked Momentum coral (#FF8C66);
-/// the rest are warm siblings so the picker stays on-brand and hard to make ugly.
+/// Accent presets. Warm "Coral" siblings (Light mode) + cool "Lagoon" siblings (Dark mode).
+/// `classic` is the locked Momentum coral (#FF8C66). Selecting a cool preset switches the app
+/// to Dark mode — see `isDark` and `CoralAppearanceSection`.
 enum CoralPreset: String, CaseIterable, Identifiable {
+    // Warm — Light mode
     case classic, blush, ember, apricot, rose, plum
+    // Cool — "Lagoon" (Dark mode)
+    case mint, jade, viridian, teal, marine, cobalt, iris
+
     var id: String { rawValue }
+
+    /// Cool presets drive Dark mode; warm presets drive Light.
+    var isDark: Bool {
+        switch self {
+        case .classic, .blush, .ember, .apricot, .rose, .plum: return false
+        case .mint, .jade, .viridian, .teal, .marine, .cobalt, .iris: return true
+        }
+    }
+
+    /// Split for the two-row picker (Light row / Dark row).
+    static var lightCases: [CoralPreset] { allCases.filter { !$0.isDark } }
+    static var darkCases:  [CoralPreset] { allCases.filter {  $0.isDark } }
+
     var label: String {
         switch self {
         case .classic: return "Coral"
@@ -102,6 +132,13 @@ enum CoralPreset: String, CaseIterable, Identifiable {
         case .apricot: return "Apricot"
         case .rose:    return "Rose"
         case .plum:    return "Plum"
+        case .mint:     return "Mint"
+        case .jade:     return "Jade"
+        case .viridian: return "Viridian"
+        case .teal:     return "Teal"
+        case .marine:   return "Marine"
+        case .cobalt:   return "Cobalt"
+        case .iris:     return "Iris"
         }
     }
     var hex: UInt {
@@ -112,6 +149,13 @@ enum CoralPreset: String, CaseIterable, Identifiable {
         case .apricot: return 0xFF9F45
         case .rose:    return 0xE0566E
         case .plum:    return 0xB56576
+        case .mint:     return 0x2BD49A
+        case .jade:     return 0x1AB082
+        case .viridian: return 0x0E9E92
+        case .teal:     return 0x0C97B4
+        case .marine:   return 0x1E8AD4
+        case .cobalt:   return 0x3A6CE4
+        case .iris:     return 0x5F66EA
         }
     }
     var color: Color { Color(hex: hex) }
@@ -133,6 +177,14 @@ enum CoralSettings {
     }
 }
 
+/// Editor chrome toggles (Page 2 toolbar). Separate from coral — these don't tint the glow.
+enum EditorChromeSettings {
+    /// When true (default), the Note Editor's undo/redo/add pill drops its iOS 26
+    /// liquid-glass background (`sharedBackgroundVisibility(.hidden)`) and sits flat on
+    /// the coral — the weak header coral made that platter read muddy gray.
+    static let hideToolbarGlassKey = "hide_editor_toolbar_glass"
+}
+
 // MARK: - 2. AtmosphereGlow (signature soft coral radial top-glow; blue calm variant)
 
 struct AtmosphereGlow: View {
@@ -142,7 +194,7 @@ struct AtmosphereGlow: View {
     @AppStorage(CoralSettings.strengthKey) private var strength: Double = CoralSettings.defaultStrength
     var calm: Bool = false                                   // blue accentCalm for empathy/reset
     private var glow: Color { calm ? Momentum.accentCalm : (CoralPreset(rawValue: presetRaw) ?? .classic).color }
-    private var base: Color { scheme == .dark ? Color(hex: 0x121214) : Momentum.surface }
+    private var base: Color { Momentum.surface }   // dynamic — Light #F8F8F8 / Dark Lagoon #0C1417
     // strength (0…1) scales the glow; 0.5 reproduces the original 0.42 / 0.22 peak.
     private var peakOpacity: Double { (scheme == .dark ? 0.44 : 0.84) * strength }
     private var midOpacity: Double { 0.24 * strength }
@@ -239,36 +291,58 @@ struct EditorCoralGlow: View {
     }
 }
 
+/// Full-height coral wash for the note editor header (nav bar → title → pills → divider).
+/// The breathing radial alone fades out around the title; this adds a vertical tint so the
+/// bloom continues through the pill row and stops cleanly at the gray divider below.
+struct EditorHeaderCoralBackground: View {
+    var bpm: Int?
+    @Environment(\.colorScheme) private var scheme
+    @AppStorage(CoralSettings.presetKey) private var presetRaw: String = CoralPreset.classic.rawValue
+    @AppStorage(CoralSettings.strengthKey) private var strength: Double = CoralSettings.defaultStrength
+
+    private var glow: Color { (CoralPreset(rawValue: presetRaw) ?? .classic).color }
+    private var washTop: Double { (scheme == .dark ? 0.16 : 0.24) * strength }
+    private var washMid: Double { (scheme == .dark ? 0.11 : 0.17) * strength }
+    private var washLower: Double { (scheme == .dark ? 0.07 : 0.11) * strength }
+
+    var body: some View {
+        ZStack(alignment: .top) {
+            Momentum.surfaceElevated
+            LinearGradient(
+                stops: [
+                    .init(color: glow.opacity(washTop), location: 0.0),
+                    .init(color: glow.opacity(washMid), location: 0.38),
+                    .init(color: glow.opacity(washLower), location: 0.88),
+                    // Hairline fade at the very bottom — hard stop at the divider line.
+                    .init(color: glow.opacity(washLower * 0.35), location: 0.97),
+                    .init(color: glow.opacity(0), location: 1.0)
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            EditorCoralGlow(bpm: bpm)
+        }
+    }
+}
+
 // MARK: - Coral appearance controls (Profile → App)
 
-/// Preset swatches + strength + breathing toggle. Concrete + self-contained so the large
-/// profile body in CCV.12 keeps type-checking fast.
+/// Preset swatches (Light row + Dark row) + strength + breathing. The picker doubles as the
+/// Light/Dark switch — a cool "Lagoon" swatch flips the app to Dark. Concrete + self-contained
+/// so the large profile body in CCV.12 keeps type-checking fast.
 struct CoralAppearanceSection: View {
     @AppStorage(CoralSettings.presetKey) private var presetRaw: String = CoralPreset.classic.rawValue
     @AppStorage(CoralSettings.strengthKey) private var strength: Double = CoralSettings.defaultStrength
     @AppStorage(CoralSettings.editorBreathingKey) private var breatheInEditor: Bool = true
+    /// Same key the app root reads for `.preferredColorScheme`. Warm swatch → Light, cool → Dark.
+    @AppStorage("appTheme") private var appTheme: String = ThemeMode.light.rawValue
 
     private var selected: CoralPreset { CoralPreset(rawValue: presetRaw) ?? .classic }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            HStack(spacing: 12) {
-                ForEach(CoralPreset.allCases) { preset in
-                    Button {
-                        presetRaw = preset.rawValue
-                    } label: {
-                        Circle()
-                            .fill(preset.color)
-                            .frame(width: 34, height: 34)
-                            .overlay(Circle().strokeBorder(Momentum.hairline, lineWidth: Momentum.lineThin))
-                            .overlay(Circle().strokeBorder(Momentum.contentPrimary,
-                                                           lineWidth: preset == selected ? 2.5 : 0))
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel(preset.label)
-                    .accessibilityAddTraits(preset == selected ? .isSelected : [])
-                }
-            }
+            swatchRow(title: "Light", presets: CoralPreset.lightCases)
+            swatchRow(title: "Dark",  presets: CoralPreset.darkCases)
 
             VStack(alignment: .leading, spacing: 6) {
                 HStack {
@@ -287,12 +361,59 @@ struct CoralAppearanceSection: View {
             Toggle(isOn: $breatheInEditor) {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Breathe inside notes").font(.momentumBody)
-                    Text("A gentle coral pulse behind your writing.")
+                    Text("A gentle pulse behind your writing.")
                         .font(.momentumMetadata)
                         .foregroundStyle(Momentum.contentSecondary)
                 }
             }
             .tint(selected.color)
+        }
+    }
+
+    /// One labeled row of swatches. Tapping sets the accent and flips the app between Light and
+    /// Dark to match the swatch (cool = Dark).
+    private func swatchRow(title: String, presets: [CoralPreset]) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(title.uppercased())
+                .font(.momentumSection)
+                .tracking(1.4)
+                .foregroundStyle(Momentum.contentSecondary)
+            HStack(spacing: 12) {
+                ForEach(presets) { preset in
+                    Button {
+                        presetRaw = preset.rawValue
+                        appTheme = (preset.isDark ? ThemeMode.dark : ThemeMode.light).rawValue
+                    } label: {
+                        Circle()
+                            .fill(preset.color)
+                            .frame(width: 34, height: 34)
+                            .overlay(Circle().strokeBorder(Momentum.hairline, lineWidth: Momentum.lineThin))
+                            .overlay(Circle().strokeBorder(Momentum.contentPrimary,
+                                                           lineWidth: preset == selected ? 2.5 : 0))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(preset.label)
+                    .accessibilityAddTraits(preset == selected ? .isSelected : [])
+                }
+            }
+        }
+    }
+}
+
+/// Page 1.1 Profile → Page 2 editor chrome. Concrete + self-contained so the large
+/// profile body in CCV.12 keeps type-checking fast.
+struct EditorButtonsSection: View {
+    @AppStorage(EditorChromeSettings.hideToolbarGlassKey) private var flatten: Bool = true
+
+    var body: some View {
+        Toggle(isOn: $flatten) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Flatten editor buttons").font(.momentumBody)
+                Text("Removes the frosted-glass panel behind the editor's undo, redo, and add buttons so they sit flat on the coral. On by default.")
+                    .font(.momentumMetadata)
+                    .foregroundStyle(Momentum.contentSecondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
         }
     }
 }

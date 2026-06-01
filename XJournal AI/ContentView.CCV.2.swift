@@ -6,19 +6,29 @@ import Security
 // MARK: - Rhyme Color Palette
 
 enum RhymeColorPalette {
-    // Light re-tune (2026-05-31): the editor already applies these as low-opacity backgrounds
-    // (CCV.6: ~0.16–0.30 alpha in light), but the rhyme-group list (CCV.15) uses them as
-    // foreground TEXT on the white Momentum surface — where amber[0] + green[2] read too faint.
-    // Deepened just those two so they're legible as text AND still soft as editor highlights.
-    // Distinct 6-hue identity preserved.
+    // Six distinct rhyme-group hues, used both as low-opacity editor highlight backgrounds
+    // (CCV.6: ~0.16–0.30 alpha) and as foreground TEXT in the rhyme-group list (CCV.15).
+    // Scheme-aware: deepened in Light so amber/emerald read as text on the white surface;
+    // brightened in Dark so the same hues read on the Lagoon surface (#0C1417). Light values
+    // are unchanged from the 2026-05-31 re-tune. Distinct 6-hue identity preserved.
     static let colors: [UIColor] = [
-        UIColor(red: 0.82, green: 0.58, blue: 0.08, alpha: 1),  // amber (deepened for light)
-        UIColor(red: 0.94, green: 0.45, blue: 0.35, alpha: 1),  // coral
-        UIColor(red: 0.18, green: 0.62, blue: 0.45, alpha: 1),  // emerald (deepened for light)
-        UIColor(red: 0.45, green: 0.64, blue: 0.90, alpha: 1),  // azure
-        UIColor(red: 0.72, green: 0.56, blue: 0.90, alpha: 1),  // violet
-        UIColor(red: 0.90, green: 0.62, blue: 0.78, alpha: 1)   // rose
+        dynamic(light: (0.82, 0.58, 0.08), dark: (0.96, 0.74, 0.28)),  // amber
+        dynamic(light: (0.94, 0.45, 0.35), dark: (0.97, 0.54, 0.45)),  // coral
+        dynamic(light: (0.18, 0.62, 0.45), dark: (0.33, 0.82, 0.60)),  // emerald
+        dynamic(light: (0.45, 0.64, 0.90), dark: (0.56, 0.73, 0.96)),  // azure
+        dynamic(light: (0.72, 0.56, 0.90), dark: (0.79, 0.66, 0.97)),  // violet
+        dynamic(light: (0.90, 0.62, 0.78), dark: (0.94, 0.69, 0.85))   // rose
     ]
+
+    /// Resolves Light vs Dark RGB at render time via a dynamic `UIColor` — keeps the static
+    /// `[UIColor]` API so every caller (editor highlights, rhyme-group list) is unchanged.
+    private static func dynamic(light l: (CGFloat, CGFloat, CGFloat),
+                                dark d: (CGFloat, CGFloat, CGFloat)) -> UIColor {
+        UIColor { traits in
+            let c = traits.userInterfaceStyle == .dark ? d : l
+            return UIColor(red: c.0, green: c.1, blue: c.2, alpha: 1)
+        }
+    }
 }
 
 // MARK: - Keychain Helper
