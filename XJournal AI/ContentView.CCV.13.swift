@@ -51,6 +51,7 @@ import UniformTypeIdentifiers
 struct NoteEditorView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
+    @AppStorage(EditorChromeSettings.hideToolbarGlassKey) private var hideToolbarGlass = true
     @Bindable var item: Item
 
     @State private var isRhymeOverlayVisible: Bool = false
@@ -128,6 +129,28 @@ struct NoteEditorView: View {
     private var highlights: [Highlight] {
         computedHighlights
     }
+
+    private var aiNoteKey: String {
+        NoteSuggestionSessionStore.noteKey(for: item)
+    }
+
+    private var hasRecallableSuggestionsOnNote: Bool {
+        NoteSuggestionSessionStore.hasSession(on: item) || rapSuggestionEngine.hasRecallableSuggestions
+    }
+
+    private func retryHumanCriticForCurrentNote() {
+        let batch = rapSuggestionEngine.lastBatchSuggestions.isEmpty
+            ? rapSuggestionEngine.suggestions
+            : rapSuggestionEngine.lastBatchSuggestions
+        let verse = rapSuggestionEngine.lastSessionContextText ?? currentText
+        rapSuggestionEngine.refreshHumanCritic(
+            userVerse: verse,
+            primarySuggestion: batch.first,
+            themes: Array(Set(batch.flatMap(\.themes))).prefix(6).map { $0 },
+            persistTo: item,
+            model: rapSuggestionEngine.lastStandardGenerationModel
+        )
+    }
     
     // Improve flow function
     private func improveFlow() async {
@@ -145,7 +168,10 @@ struct NoteEditorView: View {
             key: item.key,
             scale: item.scale,
             audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
-            transcriptionRhythmMapData: item.transcriptionRhythmMapData
+            transcriptionRhythmMapData: item.transcriptionRhythmMapData,
+            noteKey: aiNoteKey,
+            noteTitle: item.title,
+            persistTo: item
         )
         
         improveFlowSuggestions = rapSuggestionEngine.suggestions
@@ -302,6 +328,7 @@ struct NoteEditorView: View {
     @State private var showProactiveFeedback: Bool = false
     @State private var lastInsertedSuggestion: RapSuggestion? = nil
     @State private var aiErrorMessage: String? = nil
+    @State private var aiErrorFixDestination: AppErrorFixDestination = .none
     @State private var showAIErrorToast: Bool = false
     @State private var showPaywall: Bool = false
     @State private var paywallFeature: String = ""
@@ -318,25 +345,50 @@ struct NoteEditorView: View {
     @Environment(\.colorScheme) private var colorScheme
     
     // Show AI error message
-    private func showAIError(_ message: String, source: String = "AI Sparkle Button", context: String? = nil) {
-        // Store error for analytics
+    private func showAIError(
+        _ message: String,
+        fixDestination: AppErrorFixDestination = .none,
+        source: String = "AI Sparkle Button",
+        context: String? = nil
+    ) {
         ErrorStorageManager.shared.storeError(message, source: source, context: context)
-        
+
+        let resolvedDestination = fixDestination == .none
+            ? AppErrorRecovery.destination(forMessage: message)
+            : fixDestination
+
         aiErrorMessage = message
+        aiErrorFixDestination = resolvedDestination
         showAIErrorToast = true
         UINotificationFeedbackGenerator().notificationOccurred(.error)
-        
-        // Auto-dismiss after 8 seconds (longer for readability)
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
             withAnimation(.easeOut(duration: 0.3)) {
                 showAIErrorToast = false
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 aiErrorMessage = nil
+                aiErrorFixDestination = .none
             }
         }
     }
-    
+
+    private func dismissAIErrorToast() {
+        withAnimation(.easeOut(duration: 0.25)) {
+            showAIErrorToast = false
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            aiErrorMessage = nil
+            aiErrorFixDestination = .none
+        }
+    }
+
+    private func handleAIErrorFix() {
+        let destination = aiErrorFixDestination
+        dismissAIErrorToast()
+        AppNavigation.navigate(to: destination)
+    }
+
     // Wrapper function for DynamicIslandToolbarView that expects (String) -> Void
     private func showAIErrorWrapper(_ message: String) {
         showAIError(message)
@@ -369,25 +421,9 @@ struct NoteEditorView: View {
                     .padding(.vertical, 8)
             }
             .background(
-                ZStack(alignment: .top) {
-                    Momentum.surfaceElevated
-                    EditorCoralGlow(bpm: item.bpm)
-                        .mask(
-                            // Hold full coral through title + pills; fade only at the
-                            // bottom edge so the wash meets the gray divider cleanly.
-                            LinearGradient(
-                                stops: [
-                                    .init(color: .black, location: 0.0),
-                                    .init(color: .black, location: 0.82),
-                                    .init(color: .clear, location: 1.0)
-                                ],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
-                        )
-                }
-                .ignoresSafeArea(edges: .top)
-                .allowsHitTesting(false)
+                EditorHeaderCoralBackground(bpm: item.bpm)
+                    .ignoresSafeArea(edges: .top)
+                    .allowsHitTesting(false)
             )
 
             Divider()
@@ -485,17 +521,8 @@ struct NoteEditorView: View {
         }
         .onReceive(NotificationCenter.default.publisher(for: .inAppAPIError)) { notification in
             guard let msg = notification.userInfo?[InAppAPIErrorPayload.messageKey] as? String, !msg.isEmpty else { return }
-            aiErrorMessage = msg
-            showAIErrorToast = true
-            UINotificationFeedbackGenerator().notificationOccurred(.error)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
-                withAnimation(.easeOut(duration: 0.3)) {
-                    showAIErrorToast = false
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                    aiErrorMessage = nil
-                }
-            }
+            let destination = AppErrorRecovery.destination(from: notification)
+            showAIError(msg, fixDestination: destination, source: "API", context: nil)
         }
         .onChange(of: showModelGControlSurface) { _, isShowing in
             if isShowing {
@@ -517,7 +544,10 @@ struct NoteEditorView: View {
                         directedParams: params,
                         rhymeGroupsByID: rhymeGroupsByID,
                         audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
-                        transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                        transcriptionRhythmMapData: item.transcriptionRhythmMapData,
+                        noteKey: aiNoteKey,
+                        noteTitle: item.title,
+                        persistTo: item
                     )
                     await MainActor.run {
                         showContextHighlight = false
@@ -534,7 +564,7 @@ struct NoteEditorView: View {
         }
         .sheet(isPresented: $showRapSuggestions) {
             RapSuggestionView(
-                suggestions: isShowingRecalled ? rapSuggestionEngine.previousSuggestions : rapSuggestionEngine.suggestions,
+                suggestions: isShowingRecalled ? rapSuggestionEngine.lastBatchSuggestions : rapSuggestionEngine.suggestions,
                 isLoading: rapSuggestionEngine.isLoading && !isShowingRecalled,
                 loadingStep: isShowingRecalled ? nil : rapSuggestionEngine.loadingStep,
                 error: isShowingRecalled ? nil : rapSuggestionEngine.error,
@@ -548,7 +578,9 @@ struct NoteEditorView: View {
                     showRapSuggestions = false
                     isShowingRecalled = false
                 },
-                contextText: currentText,
+                contextText: isShowingRecalled
+                    ? (rapSuggestionEngine.lastSessionContextText ?? currentText)
+                    : currentText,
                 onRegenerate: {
                     Task {
                         if rapSuggestionEngine.isParallelModelG,
@@ -563,7 +595,10 @@ struct NoteEditorView: View {
                                 directedParams: params,
                                 rhymeGroupsByID: rhymeGroupsByID,
                                 audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
-                                transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                                transcriptionRhythmMapData: item.transcriptionRhythmMapData,
+                                noteKey: aiNoteKey,
+                                noteTitle: item.title,
+                                persistTo: item
                             )
                         } else {
                             await rapSuggestionEngine.generateSuggestions(
@@ -574,7 +609,10 @@ struct NoteEditorView: View {
                                 key: item.key,
                                 scale: item.scale,
                                 audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
-                                transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                                transcriptionRhythmMapData: item.transcriptionRhythmMapData,
+                                noteKey: aiNoteKey,
+                                noteTitle: item.title,
+                                persistTo: item
                             )
                         }
                     }
@@ -585,7 +623,13 @@ struct NoteEditorView: View {
                 leftSuggestions: rapSuggestionEngine.isParallelModelG ? rapSuggestionEngine.suggestionsV1 : nil,
                 rightSuggestions: rapSuggestionEngine.isParallelModelG ? rapSuggestionEngine.suggestionsV2 : nil,
                 leftTitle: rapSuggestionEngine.isParallelModelG ? "Model G v1" : nil,
-                rightTitle: rapSuggestionEngine.isParallelModelG ? "Model G v2" : nil
+                rightTitle: rapSuggestionEngine.isParallelModelG ? "Model G v2" : nil,
+                noteKey: aiNoteKey,
+                generationId: rapSuggestionEngine.lastSessionGenerationId,
+                humanCriticFeedback: $rapSuggestionEngine.humanCriticFeedback,
+                humanCriticLoading: $rapSuggestionEngine.humanCriticLoading,
+                humanCriticError: $rapSuggestionEngine.humanCriticError,
+                onRetryHumanCritic: retryHumanCriticForCurrentNote
             )
         }
         .sheet(isPresented: $showRhymeSuggestions) {
@@ -623,7 +667,11 @@ struct NoteEditorView: View {
                     }
                 },
                 currentSignalMode: rapSuggestionEngine.currentSignalMode,
-                currentSignalProfile: rapSuggestionEngine.currentSignalProfile
+                currentSignalProfile: rapSuggestionEngine.currentSignalProfile,
+                humanCriticFeedback: .constant(nil),
+                humanCriticLoading: .constant(false),
+                humanCriticError: .constant(nil),
+                onRetryHumanCritic: {}
             )
         }
         .toolbar {
@@ -670,6 +718,9 @@ struct NoteEditorView: View {
             .presentationDragIndicator(Visibility.visible)
         }
         .onAppear {
+            if let session = NoteSuggestionSessionStore.load(from: item) {
+                NoteSuggestionSessionStore.apply(session, to: rapSuggestionEngine)
+            }
             // Ensure text has 4 trailing newlines for writing space
             ensureTrailingNewlines()
             // Initialize undo history with current state
@@ -763,22 +814,10 @@ struct NoteEditorView: View {
                 }
             )
         }
-        .sheet(isPresented: $showARCritiqueSheet) {
-            ARCritiqueSheet(
-                currentText: item.body,
-                onDismiss: {
-                    showARCritiqueSheet = false
-                },
-                precomputedCritiques: rapSuggestionEngine.precomputedCritiques.isEmpty ? nil : rapSuggestionEngine.precomputedCritiques
-            )
-        }
         .sheet(isPresented: $showThemeExpansionSheet) {
             ThemeExpansionSheet(
                 currentText: currentText,
-                currentThemes: extractThemes(from: currentText),
-                onSelect: { suggestion in
-                    insertRapSuggestion(suggestion, isAIGenerated: true)
-                },
+                item: item,
                 onDismiss: {
                     showThemeExpansionSheet = false
                 }
@@ -939,6 +978,9 @@ struct NoteEditorView: View {
             paywallFeature: $paywallFeature,
             showAIErrorToast: $showAIErrorToast,
             aiErrorMessage: $aiErrorMessage,
+            aiErrorFixDestination: $aiErrorFixDestination,
+            onAIErrorFix: handleAIErrorFix,
+            onDismissAIError: dismissAIErrorToast,
             showGenerateLyricsFromFlowSheet: $showGenerateLyricsFromFlowSheet,
             showARCritiqueSheet: $showARCritiqueSheet,
             showThemeExpansionSheet: $showThemeExpansionSheet,
@@ -946,6 +988,7 @@ struct NoteEditorView: View {
             insertRapSuggestion: insertRapSuggestion,
             extractThemes: extractThemes,
             showAIError: showAIErrorWrapper,
+            onRetryHumanCritic: retryHumanCriticForCurrentNote,
             item: item
         )
         .frame(maxWidth: 680)
@@ -954,6 +997,9 @@ struct NoteEditorView: View {
     // MARK: - Navigation Bar Toolbar Items (undo / redo / add menu)
     @ToolbarContentBuilder
     private var editorToolbarItems: some ToolbarContent {
+        // Page 2 — the undo/redo/add pill drops its iOS 26 liquid-glass backdrop and sits
+        // flat on the coral (the weak header coral made that platter read muddy gray).
+        // The system back button is left intact so its swipe-back gesture keeps working.
         ToolbarItemGroup(placement: .navigationBarTrailing) {
             Button {
                 HapticFeedbackManager.shared.lightTap()
@@ -1017,6 +1063,7 @@ struct NoteEditorView: View {
                 Image(systemName: "plus")
             }
         }
+        .sharedBackgroundVisibility(hideToolbarGlass ? .hidden : .automatic)
     }
 
     // MARK: - Toolbar Onboarding Splash Overlays
@@ -1120,64 +1167,9 @@ struct NoteEditorView: View {
         rhymeEngineState.updateIfNeeded(text: newValue)
     }
 
-    // Phase 4: Extract themes from text for theme expansion
+    // Phase 4: Detect themes from lyrics for theme expansion auto-selection
     private func extractThemes(from text: String) -> [String] {
-        guard !text.isEmpty else { return [] }
-        
-        // Try to extract themes using simple keyword matching as fallback
-        // This is a lightweight extraction - full AI analysis happens in theme expansion API
-        var extractedThemes: [String] = []
-        
-        // Common rap theme keywords
-        let themeKeywords: [String: String] = [
-            "money": "wealth",
-            "cash": "wealth",
-            "rich": "wealth",
-            "poor": "struggle",
-            "hustle": "hustle",
-            "grind": "hustle",
-            "success": "success",
-            "fame": "fame",
-            "power": "power",
-            "respect": "respect",
-            "loyalty": "loyalty",
-            "betrayal": "betrayal",
-            "love": "love",
-            "heartbreak": "heartbreak",
-            "pain": "pain",
-            "struggle": "struggle",
-            "street": "street",
-            "gang": "gang",
-            "violence": "violence",
-            "family": "family",
-            "friends": "friendship",
-            "enemy": "conflict",
-            "dream": "aspiration",
-            "goal": "aspiration",
-            "fear": "fear",
-            "courage": "courage",
-            "freedom": "freedom",
-            "prison": "confinement",
-            "death": "mortality",
-            "life": "life",
-            "god": "spirituality",
-            "faith": "spirituality"
-        ]
-        
-        let lowercasedText = text.lowercased()
-        var foundThemes = Set<String>()
-        
-        for (keyword, theme) in themeKeywords {
-            if lowercasedText.contains(keyword) {
-                foundThemes.insert(theme)
-            }
-        }
-        
-        extractedThemes = Array(foundThemes)
-        
-        // If we found themes, return them; otherwise return empty array
-        // The API will do more sophisticated analysis
-        return extractedThemes
+        ThemeIdentificationService.detectedThemeNames(in: text)
     }
     
     // MARK: - Note Timestamp Metadata Bar
@@ -1531,13 +1523,18 @@ struct NoteEditorView: View {
         )
         .padding(.horizontal, 13)
         .padding(.vertical, 7)
+        // Clean outline on the coral — restores the pill border without the muddy fill.
+        // The old SoftBlueGlassBackground used .ultraThinMaterial (read gray over coral)
+        // plus a gyro glint overlay that ate the horizontal scroll drag; a plain tinted
+        // strokeBorder is non-interactive, so the row keeps scrolling. Keep a `.background`
+        // here — fully dropping it tips NoteEditorView's body over the Swift type-checker
+        // limit. A set value still shows inline (e.g. "120 BPM").
         .background(
-            SoftBlueGlassBackground(
-                shape: Capsule(style: .continuous),
-                colorScheme: colorScheme,
-                darkeningMultiplier: 1.0,
-                outlineLineWidth: isSet ? 0.95 : 0.75
-            )
+            Capsule(style: .continuous)
+                .strokeBorder(
+                    SoftBlueGlassStyle.tint(for: colorScheme).opacity(isSet ? 0.55 : 0.35),
+                    lineWidth: isSet ? 1.0 : 0.8
+                )
         )
     }
 
@@ -1702,10 +1699,14 @@ struct NoteEditorView: View {
                 suggestion: suggestion,
                 signalMode: rapSuggestionEngine.currentSignalMode,
                 signalProfile: rapSuggestionEngine.currentSignalProfile,
-                registers: nil, // Will be inferred if needed
-                axes: nil, // Will be inferred if needed
-                axisProfile: nil, // Will be inferred if needed
-                alignmentScore: nil // Will be available if scored
+                registers: nil,
+                axes: nil,
+                axisProfile: nil,
+                alignmentScore: nil
+            )
+            AIGenerationLedger.markInserted(
+                generationId: rapSuggestionEngine.lastSessionGenerationId ?? UUID(),
+                suggestionId: suggestion.id
             )
         }
         // Set up slam animation
