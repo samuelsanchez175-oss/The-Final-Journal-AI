@@ -125,12 +125,32 @@ struct AtmosphereGlow: View {
 
 struct MomentumSectionHeader: View {
     let title: String
+    let accessory: AnyView?
+
+    init(title: String) {
+        self.title = title
+        self.accessory = nil
+    }
+
+    /// Header with a trailing action (e.g. a "View All" button) on the label row.
+    /// Type-erased so the struct stays concrete — keeps large view bodies type-checking fast.
+    init<Accessory: View>(title: String, @ViewBuilder accessory: () -> Accessory) {
+        self.title = title
+        self.accessory = AnyView(accessory())
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(title.uppercased())
-                .font(.momentumSection)
-                .tracking(1.4)
-                .foregroundStyle(Momentum.contentSecondary)
+            HStack(alignment: .firstTextBaseline) {
+                Text(title.uppercased())
+                    .font(.momentumSection)
+                    .tracking(1.4)
+                    .foregroundStyle(Momentum.contentSecondary)
+                if let accessory {
+                    Spacer(minLength: 8)
+                    accessory
+                }
+            }
             Rectangle().fill(Momentum.contentPrimary).frame(height: Momentum.lineThin)
         }
     }
