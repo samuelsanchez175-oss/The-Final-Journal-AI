@@ -318,18 +318,21 @@ struct DynamicIslandToolbarView: View {
     
     private var collapsedButtonContent: some View {
         ZStack {
-            SoftBlueGlassBackground(
-                shape: Circle(),
-                colorScheme: colorScheme,
-                darkeningMultiplier: 1.2,
-                outlineLineWidth: 0.9
-            )
-            .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized 44pt height
-            
+            // More transparent glassmorphic disc so the coral background runs through.
+            Circle()
+                .fill(.ultraThinMaterial)
+                .overlay(
+                    Circle().strokeBorder(toolbarTint.opacity(0.35), lineWidth: 0.9)
+                )
+                // iOS 26-style moving glint that rides the edge with device tilt.
+                .overlay(GyroSpecularEdge(shape: Circle(), lineWidth: 1.4, tint: toolbarTint, intensity: 1.0))
+                .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized 44pt height
+
+            // Opaque, vivid blue plus so it pops.
             Image(systemName: "plus")
-                .font(.title2)
-                .foregroundStyle(toolbarTint)
-            
+                .font(.title2.weight(.bold))
+                .foregroundStyle(toolbarTint.opacity(1.0))
+
             if isAILoading {
                 aiLoadingIndicator
             }
@@ -574,17 +577,10 @@ struct DynamicIslandToolbarView: View {
                             case .modelGv3: beginModelGv3Flow()
                             }
                         }
-                        .simultaneousGesture(
-                            DragGesture(minimumDistance: 0)
-                                .onChanged { _ in
-                                    if buttonPressStates["aiSparkle"] != true {
-                                        buttonPressStates["aiSparkle"] = true
-                                    }
-                                }
-                                .onEnded { _ in
-                                    buttonPressStates["aiSparkle"] = false
-                                }
-                        )
+                        // NOTE: No press-tracking DragGesture here — a simultaneous
+                        // DragGesture(minimumDistance: 0) swallows the tap and forces the
+                        // Menu into long-press mode. Leaving it off lets `primaryAction`
+                        // fire on a single tap.
                         .disabled(rapSuggestionEngine.isLoading)
                         .accessibilityLabel("AI suggestions, \(resolvedLastSuggestionModel.displayName)")
                         .accessibilityHint("Tap once for \(resolvedLastSuggestionModel.displayName). Open the menu to choose Model G, Model G v3, Model Y, or open last suggestions.")

@@ -237,8 +237,10 @@ enum GlassSettings {
 
 enum SoftBlueGlassStyle {
     static func tint(for colorScheme: ColorScheme) -> Color {
-        Color(red: 0.45, green: 0.72, blue: 1.0)
-            .opacity(colorScheme == .dark ? 0.96 : 0.88)
+        // Vivid, near-opaque blue so it pops against the coral page instead of
+        // reading as a faint pastel.
+        Color(red: 0.13, green: 0.52, blue: 1.0)
+            .opacity(colorScheme == .dark ? 1.0 : 0.96)
     }
 }
 
@@ -286,6 +288,15 @@ struct SoftBlueGlassBackground<S: InsettableShape>: View {
                         ),
                         lineWidth: outlineLineWidth
                     )
+            )
+            // iOS 26-style moving glint that rides the blue glass edge with device tilt.
+            .overlay(
+                GyroSpecularEdge(
+                    shape: shape,
+                    lineWidth: outlineLineWidth + 0.8,
+                    tint: .white,
+                    intensity: colorScheme == .dark ? 0.85 : 1.0
+                )
             )
             .clipShape(shape)
             .shadow(

@@ -723,9 +723,11 @@ struct JournalLibraryView: View {
             }
             .padding(.horizontal, 16)
             .frame(height: 44)
+            .background(Capsule().fill(Momentum.surfaceElevated.opacity(0.72))) // more opaque, less see-through
             .glassEffect(in: Capsule())
             .overlay(Capsule().stroke(isSearchFocused ? Momentum.accent : Color.clear,
                                       lineWidth: Momentum.lineThin))
+            .overlay(GyroSpecularEdge(shape: Capsule(), lineWidth: 1.3)) // iOS 26-style tilt glint
             
             // Quick Compose Button (iOS 26 Style - Integrated)
             Button(action: {
@@ -736,7 +738,9 @@ struct JournalLibraryView: View {
                     .font(.system(size: 18, weight: .semibold))
                     .foregroundStyle(Momentum.accent)
                     .frame(width: 44, height: 44)
+                    .background(Circle().fill(Momentum.surfaceElevated.opacity(0.72))) // more opaque, less see-through
                     .glassEffect(in: Circle())
+                    .overlay(GyroSpecularEdge(shape: Circle(), lineWidth: 1.3)) // iOS 26-style tilt glint
             }
             .buttonStyle(.plain)
         }
@@ -845,8 +849,9 @@ struct JournalLibraryView: View {
             .foregroundStyle(.primary)
             .background(
                 Capsule()
-                    .fill(Momentum.surfaceElevated)
+                    .fill(.ultraThinMaterial) // glassmorphic — lets the coral wash show through
                     .overlay(Capsule().stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
+                    .overlay(GyroSpecularEdge(shape: Capsule(), lineWidth: 1.2)) // iOS 26-style tilt glint
             )
         }
         .buttonStyle(PlainButtonStyle())
@@ -918,9 +923,10 @@ struct JournalLibraryView: View {
             .foregroundStyle(selectedFilter == filter ? Momentum.accent : Momentum.contentSecondary)
             .background(
                 Capsule()
-                    .fill(Momentum.surfaceElevated)
+                    .fill(.ultraThinMaterial) // glassmorphic — lets the coral wash show through
                     .overlay(Capsule().stroke(selectedFilter == filter ? Momentum.accent : Momentum.hairline,
                                               lineWidth: Momentum.lineThin))
+                    .overlay(GyroSpecularEdge(shape: Capsule(), lineWidth: 1.2)) // iOS 26-style tilt glint
             )
         }
         .buttonStyle(PlainButtonStyle())

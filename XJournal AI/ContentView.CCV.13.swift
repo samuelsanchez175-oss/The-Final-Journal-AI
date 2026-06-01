@@ -360,19 +360,38 @@ struct NoteEditorView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            TextField("Title", text: $item.title)
-                .font(.title2.weight(.semibold))
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: 680)
-                .padding(.horizontal, 20)
-                .padding(.vertical, 12)
-                .scaleEffect(scrollOffset < -20 ? 0.94 : 1.0)
-                .opacity(scrollOffset < -20 ? 0.6 : 1.0)
-                .animation(.easeOut(duration: 0.2), value: scrollOffset)
+            // MARK: - Header (title + metadata pills)
+            // The coral bloom now lives HERE in the top section and fades out toward
+            // the divider, leaving the writing surface below fully opaque.
+            VStack(spacing: 0) {
+                TextField("Title", text: $item.title)
+                    .font(.title2.weight(.semibold))
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: 680)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 12)
+                    .scaleEffect(scrollOffset < -20 ? 0.94 : 1.0)
+                    .opacity(scrollOffset < -20 ? 0.6 : 1.0)
+                    .animation(.easeOut(duration: 0.2), value: scrollOffset)
 
-            // MARK: - Metadata Pills Section
-            metadataPillsView
-                .padding(.vertical, 8)
+                // MARK: - Metadata Pills Section
+                metadataPillsView
+                    .padding(.vertical, 8)
+            }
+            .background(
+                ZStack(alignment: .top) {
+                    Momentum.surfaceElevated
+                    EditorCoralGlow(bpm: item.bpm)
+                        .mask(
+                            LinearGradient(
+                                colors: [.black, .black, .clear],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .allowsHitTesting(false)
+                }
+            )
 
             Divider()
                 .frame(maxWidth: .infinity) // Extend divider to full width
@@ -431,16 +450,13 @@ struct NoteEditorView: View {
                                 minHeight: viewport.size.height - 200
                             )
                         
-                        // FIXED: Metadata bar now sits at the end of the content stream
-                        // MARK: - Timestamp Metadata Bar (Bottom of Note)
-                        noteTimestampBar
-                            .layoutPriority(1) // Higher priority - takes only what it needs (required hugging)
-                            .padding(.top, 40) // Create breathing room between text and meta
-                            .padding(.bottom, keyboardObserver.height > 0 ? 80 : 100) // Space above toolbar
+                        // Timestamp bar moved out of the scroll stream — it is now a
+                        // centered overlay pinned to the bottom of the editor (see
+                        // `.overlay(alignment: .bottom)` below) so it always stays
+                        // visible above the toolbar instead of scrolling away.
                     }
                     .frame(maxWidth: 680) // Constrain to max width, center within parent
                 .coordinateSpace(name: "editorScroll")
-                .background(EditorCoralGlow(bpm: item.bpm))
                 .onPreferenceChange(ScrollOffsetKey.self) { value in
                     scrollOffset = value
                     }
@@ -453,6 +469,13 @@ struct NoteEditorView: View {
                     .ignoresSafeArea(.keyboard, edges: .all)
                     }
                 }
+            }
+            // Fully opaque writing surface — the coral bloom now lives in the header
+            // section above the divider, not on the writing area.
+            .background(Momentum.surfaceElevated)
+            .overlay(alignment: .bottom) {
+                noteTimestampBar
+                    .padding(.bottom, 8)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -1178,37 +1201,28 @@ struct NoteEditorView: View {
     
     // MARK: - Note Timestamp Metadata Bar
     private var noteTimestampBar: some View {
-        VStack(spacing: 10) {
-            // Created Date
-            VStack(alignment: .leading, spacing: 4) {
-                Text("Created")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                
-                Text(formatTimestamp(item.timestamp))
-                    .font(.caption)
-                    .foregroundStyle(.primary)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            
-            // Modified Date (if exists)
+        VStack(spacing: 6) {
+            timestampLine(label: "Created", date: item.timestamp)
             if let modifiedDate = item.modifiedDate {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("modified")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                    
-                    Text(formatTimestamp(modifiedDate))
-                        .font(.caption)
-                        .foregroundStyle(.primary)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
+                timestampLine(label: "Modified", date: modifiedDate)
             }
         }
+        .frame(maxWidth: .infinity) // Center horizontally
+        .multilineTextAlignment(.center)
         .padding(.horizontal, 16)
-        .padding(.vertical, 12)
-        .frame(maxWidth: 680)
-        .frame(maxWidth: .infinity) // Center the bar
+        .padding(.vertical, 8)
+    }
+
+    @ViewBuilder
+    private func timestampLine(label: String, date: Date) -> some View {
+        HStack(spacing: 5) {
+            Text(label)
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(.secondary)
+            Text(formatTimestamp(date))
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
     }
     
     // MARK: - Timestamp Formatting Helper

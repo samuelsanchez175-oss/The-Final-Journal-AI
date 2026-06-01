@@ -12,36 +12,10 @@ import SwiftData
 import Combine
 import UIKit
 
-/// Body preview that limits to a fixed number of lines (SwiftUI Text lineLimit can be ignored in List).
-private struct NotePreviewLabel: UIViewRepresentable {
-    let text: String
-    let font: UIFont
-    let textColor: UIColor
-    var maxWidth: CGFloat = 400
-    var lineCount: Int = 3
-    
-    func makeUIView(context: Context) -> UILabel {
-        let label = UILabel()
-        label.numberOfLines = lineCount
-        label.lineBreakMode = .byTruncatingTail
-        label.font = font
-        label.textColor = textColor
-        label.backgroundColor = .clear
-        label.setContentHuggingPriority(.defaultLow, for: .horizontal)
-        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
-        label.preferredMaxLayoutWidth = maxWidth
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }
-    
-    func updateUIView(_ label: UILabel, context: Context) {
-        label.text = text
-        label.font = font
-        label.textColor = textColor
-        label.preferredMaxLayoutWidth = maxWidth
-        label.numberOfLines = lineCount
-    }
-}
+// Body preview now uses a native SwiftUI Text with .lineLimit(3). The old
+// UILabel-backed NotePreviewLabel + GeometryReader width hack were removed to
+// fix uneven row heights and title/preview misalignment (native Text wraps to
+// the real available width and aligns with the title).
 
 struct JournalListView: View {
     @Environment(\.colorScheme) private var colorScheme
@@ -68,9 +42,13 @@ struct JournalListView: View {
         }
         .listStyle(.plain)
         .contentMargins(.horizontal, 0, for: .scrollContent)
+        .scrollContentBackground(.hidden)
+        // Opaque surface so the note list reads as its own section, distinct from
+        // the coral header above it (the coral wash washing through it didn't read well).
         .background(
             Rectangle()
-                .fill(Momentum.surfaceElevated)                .ignoresSafeArea()
+                .fill(Momentum.surfaceElevated)
+                .ignoresSafeArea()
         )
     }
 }
@@ -84,6 +62,7 @@ struct JournalRowView: View {
     // Cache computed properties to avoid recalculation on every view update
     @State private var cachedTitle: String?
     @State private var cachedPreview: String?
+    @State private var cachedDate: String?
     @State private var lastItemId: PersistentIdentifier?
     
     // Static date formatter for better performance
@@ -99,90 +78,39 @@ struct JournalRowView: View {
     }
 
     var body: some View {
-        GeometryReader { geo in
-            let previewMaxWidth = max(0, geo.size.width - 72)
-            Group {
-                if isSelectionMode {
-                    // Selection mode - show checkbox
-                    Button {
-                        if isSelected {
-                            selectedItems.remove(item.id)
-                        } else {
-                            selectedItems.insert(item.id)
-                        }
-                    } label: {
-                        HStack(alignment: .top, spacing: 12) {
-                            // Checkbox
-                            Image(systemName: isSelected ? "checkmark.square.fill" : "square")
-                                .font(.title3)
-                                .foregroundStyle(isSelected ? Momentum.accent : Momentum.contentSecondary)
-                            
-                            // Content — title at top, then 3-line preview; spacer pushes block to top, divider at bottom
-                            VStack(alignment: .leading, spacing: 0) {
-                                VStack(alignment: .leading, spacing: 8) {
-                                    Text(noteTitle)
-                                        .font(.momentumCardTitle).foregroundStyle(Momentum.contentPrimary)
-                                        .lineLimit(1)
-
-                                    NotePreviewLabel(
-                                        text: notePreview,
-                                        font: .preferredFont(forTextStyle: .callout),
-                                        textColor: .secondaryLabel,
-                                        maxWidth: previewMaxWidth,
-                                        lineCount: 3
-                                    )
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                }
-                                .frame(maxWidth: .infinity, alignment: .topLeading)
-                                Spacer(minLength: 0)
-                                Divider()
-                            }
-                            .padding(.bottom, 14)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                            .frame(minHeight: 80)
-                        }
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        Group {
+            if isSelectionMode {
+                // Selection mode - show checkbox
+                Button {
+                    if isSelected {
+                        selectedItems.remove(item.id)
+                    } else {
+                        selectedItems.insert(item.id)
                     }
-                    .buttonStyle(.plain)
-                } else {
-                    // Normal mode - NavigationLink
-                    NavigationLink {
-                        NoteEditorView(item: item)
-                            .onAppear { isOnPage1 = false }
-                            .onDisappear { isOnPage1 = true }
-                    } label: {
-                VStack(alignment: .leading, spacing: 0) {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text(noteTitle)
-                            .font(.momentumCardTitle).foregroundStyle(Momentum.contentPrimary)
-                            .lineLimit(1)
-
-                        NotePreviewLabel(
-                            text: notePreview,
-                            font: .preferredFont(forTextStyle: .callout),
-                            textColor: .secondaryLabel,
-                            maxWidth: previewMaxWidth,
-                            lineCount: 3
-                        )
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                } label: {
+                    HStack(alignment: .top, spacing: 12) {
+                        Image(systemName: isSelected ? "checkmark.square.fill" : "square")
+                            .font(.title3)
+                            .foregroundStyle(isSelected ? Momentum.accent : Momentum.contentSecondary)
+                            .padding(.top, 1)
+                        rowContent
                     }
-                    .frame(maxWidth: .infinity, alignment: .topLeading)
-                    Spacer(minLength: 0)
-                    Divider()
                 }
-                .padding(.bottom, 14)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                .frame(minHeight: 80)
-                .background(Color.clear)
-                .contentShape(Rectangle())
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-                    .buttonStyle(.plain)
+                .buttonStyle(.plain)
+            } else {
+                // Normal mode - NavigationLink
+                NavigationLink {
+                    NoteEditorView(item: item)
+                        .onAppear { isOnPage1 = false }
+                        .onDisappear { isOnPage1 = true }
+                } label: {
+                    rowContent
+                        .contentShape(Rectangle())
                 }
+                .buttonStyle(.plain)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
-        .frame(minHeight: 88)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .onAppear {
             // Update cache when view appears if item changed
             updateCacheIfNeeded()
@@ -199,29 +127,59 @@ struct JournalRowView: View {
             // Update cache when body changes (affects preview)
             updateCacheIfNeeded()
         }
+        .onChange(of: item.modifiedDate) { _, _ in
+            // Update cache when the last-modified date changes
+            updateCacheIfNeeded()
+        }
     }
     
+    /// Shared row content — identical structure for every note so all rows share
+    /// the same design language and the same height: title, a fixed 2-line
+    /// preview area (reserves space even when the body is empty), and the
+    /// last-modified date/time. One hairline divider closes the card.
+    private var rowContent: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(noteTitle)
+                .font(.momentumCardTitle)
+                .foregroundStyle(Momentum.contentPrimary)
+                .lineLimit(1)
+
+            // reservesSpace keeps empty-body notes the same height as full ones.
+            Text(notePreview.isEmpty ? " " : notePreview)
+                .font(.callout)
+                .foregroundStyle(Momentum.contentSecondary)
+                .lineLimit(2, reservesSpace: true)
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            HStack(spacing: 5) {
+                Image(systemName: "clock")
+                    .font(.system(size: 11, weight: .semibold))
+                Text(lastModifiedText)
+                    .font(.momentumMetadata)
+            }
+            .foregroundStyle(Momentum.contentSecondary)
+
+            Divider()
+                .padding(.top, 4)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
     /// Update cached values if item has changed
     private func updateCacheIfNeeded() {
-        // Check if item ID changed or if title/body changed (for same item)
-        let titleChanged = cachedTitle != (item.title.isEmpty ? "Untitled Note" : item.title)
-        let bodyChanged = {
-            let newPreview = item.body.isEmpty ? Self.dateFormatter.string(from: item.timestamp) : item.body
-            return cachedPreview != newPreview
-        }()
-        
-        // Update cache if item ID changed or if title/body changed
-        guard lastItemId != item.id || titleChanged || bodyChanged else { return }
-        
-        cachedTitle = item.title.isEmpty ? "Untitled Note" : item.title
-        
-        // Cache preview - format date only once using static formatter
-        if item.body.isEmpty {
-            cachedPreview = Self.dateFormatter.string(from: item.timestamp)
-        } else {
-            cachedPreview = item.body
-        }
-        
+        let newTitle = item.title.isEmpty ? "Untitled Note" : item.title
+        let newPreview = item.body
+        let newDate = Self.dateFormatter.string(from: item.modifiedDate ?? item.timestamp)
+
+        guard lastItemId != item.id
+                || cachedTitle != newTitle
+                || cachedPreview != newPreview
+                || cachedDate != newDate else { return }
+
+        cachedTitle = newTitle
+        cachedPreview = newPreview
+        cachedDate = newDate
         lastItemId = item.id
     }
 
@@ -237,12 +195,16 @@ struct JournalRowView: View {
         if let cached = cachedPreview, lastItemId == item.id {
             return cached
         }
-        // Fallback if cache not yet set - use static formatter
-        if item.body.isEmpty {
-            return Self.dateFormatter.string(from: item.timestamp)
-        } else {
-            return item.body
+        // Fallback if cache not yet set
+        return item.body
+    }
+
+    /// Last-modified (falls back to created) date/time, formatted short.
+    private var lastModifiedText: String {
+        if let cached = cachedDate, lastItemId == item.id {
+            return cached
         }
+        return Self.dateFormatter.string(from: item.modifiedDate ?? item.timestamp)
     }
 }
 

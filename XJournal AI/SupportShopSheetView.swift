@@ -31,56 +31,60 @@ struct SupportShopSheetView: View {
 
                 sectionHeader("Follow & Support")
 
-                // TODO: Replace placeholder URLs with actual social media account URLs
-                supportRow(
-                    title: "X (Twitter)",
-                    subtitle: "Follow updates and design progress",
-                    symbol: "xmark"
-                ) {
-                    // TODO: Replace with actual Twitter/X account URL (e.g., "https://twitter.com/yourhandle")
-                    if let url = URL(string: "https://twitter.com") {
-                    lastActionTitle = "X (Twitter)"
-                    showThankYou = true
-                        openURL(url)
+                // Tight stack so the social buttons sit close together rather than
+                // inheriting the loose 28pt section spacing.
+                VStack(spacing: 10) {
+                    // TODO: Replace placeholder URLs with actual social media account URLs
+                    supportRow(
+                        title: "X (Twitter)",
+                        subtitle: "Follow updates and design progress",
+                        symbol: "xmark"
+                    ) {
+                        // TODO: Replace with actual Twitter/X account URL (e.g., "https://twitter.com/yourhandle")
+                        if let url = URL(string: "https://twitter.com") {
+                            lastActionTitle = "X (Twitter)"
+                            showThankYou = true
+                            openURL(url)
+                        }
                     }
-                }
 
-                supportRow(
-                    title: "Instagram",
-                    subtitle: "Visual updates and behind-the-scenes",
-                    symbol: "camera"
-                ) {
-                    // TODO: Replace with actual Instagram account URL (e.g., "https://instagram.com/yourhandle")
-                    if let url = URL(string: "https://instagram.com") {
-                    lastActionTitle = "Instagram"
-                    showThankYou = true
-                        openURL(url)
+                    supportRow(
+                        title: "Instagram",
+                        subtitle: "Visual updates and behind-the-scenes",
+                        symbol: "camera"
+                    ) {
+                        // TODO: Replace with actual Instagram account URL (e.g., "https://instagram.com/yourhandle")
+                        if let url = URL(string: "https://instagram.com") {
+                            lastActionTitle = "Instagram"
+                            showThankYou = true
+                            openURL(url)
+                        }
                     }
-                }
 
-                supportRow(
-                    title: "Patreon",
-                    subtitle: "Directly support ongoing development",
-                    symbol: "heart.fill"
-                ) {
-                    // TODO: Replace with actual Patreon creator page URL (e.g., "https://patreon.com/yourpage")
-                    if let url = URL(string: "https://patreon.com") {
-                    lastActionTitle = "Patreon"
-                    showThankYou = true
-                        openURL(url)
+                    supportRow(
+                        title: "Patreon",
+                        subtitle: "Directly support ongoing development",
+                        symbol: "heart.fill"
+                    ) {
+                        // TODO: Replace with actual Patreon creator page URL (e.g., "https://patreon.com/yourpage")
+                        if let url = URL(string: "https://patreon.com") {
+                            lastActionTitle = "Patreon"
+                            showThankYou = true
+                            openURL(url)
+                        }
                     }
-                }
 
-                supportRow(
-                    title: "Facebook",
-                    subtitle: "Community updates and announcements",
-                    symbol: "person.2.fill"
-                ) {
-                    // TODO: Replace with actual Facebook page URL (e.g., "https://facebook.com/yourpage")
-                    if let url = URL(string: "https://facebook.com") {
-                    lastActionTitle = "Facebook"
-                    showThankYou = true
-                        openURL(url)
+                    supportRow(
+                        title: "Facebook",
+                        subtitle: "Community updates and announcements",
+                        symbol: "person.2.fill"
+                    ) {
+                        // TODO: Replace with actual Facebook page URL (e.g., "https://facebook.com/yourpage")
+                        if let url = URL(string: "https://facebook.com") {
+                            lastActionTitle = "Facebook"
+                            showThankYou = true
+                            openURL(url)
+                        }
                     }
                 }
 
@@ -129,11 +133,7 @@ struct SupportShopSheetView: View {
             }
             .padding(24)
         }
-        .background(
-            Rectangle()
-                .fill(Momentum.surfaceElevated)
-                .ignoresSafeArea()
-        )
+        .background(AtmosphereGlow())
         .animation(.easeInOut(duration: 0.2), value: showThankYou)
     }
 

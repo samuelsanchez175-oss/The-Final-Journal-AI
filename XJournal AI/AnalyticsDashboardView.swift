@@ -21,14 +21,14 @@ struct AnalyticsDashboardView: View {
                     title: "Total Notes",
                     value: "\(stats.totalNotes)",
                     icon: "note.text",
-                    color: Momentum.accent
+                    color: .yellow
                 )
                 
                 StatCard(
                     title: "Total Words",
                     value: "\(stats.totalWords)",
                     icon: "text.word.spacing",
-                    color: Momentum.accent
+                    color: .orange
                 )
             }
             
@@ -37,14 +37,14 @@ struct AnalyticsDashboardView: View {
                     title: "Avg Words/Note",
                     value: String(format: "%.0f", stats.averageWordsPerNote),
                     icon: "chart.bar",
-                    color: Momentum.accent
+                    color: .green
                 )
                 
                 StatCard(
                     title: "Writing Streak",
                     value: stats.writingStreak == 1 ? "1 day" : "\(stats.writingStreak) days",
                     icon: "flame.fill",
-                    color: Momentum.accent
+                    color: .red
                 )
             }
         }
@@ -74,9 +74,7 @@ struct AnalyticsDashboardView: View {
                 )
             }
             .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(Momentum.surfaceElevated)            )
+            .background(SoftGlowCardBackground(color: .blue, glowStrength: 0.20))
         }
     }
     
@@ -106,10 +104,7 @@ struct AnalyticsDashboardView: View {
                         }
                     }
                     .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(Momentum.surfaceElevated)
-                    )
+                    .background(SoftGlowCardBackground(color: Color(red: 0.13, green: 0.23, blue: 0.52), glowStrength: 0.28))
                 }
             }
         }
@@ -482,9 +477,7 @@ struct AnalyticsDashboardView: View {
                 }
             }
             .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(Momentum.surfaceElevated)            )
+            .background(SoftGlowCardBackground(color: Color(red: 0.13, green: 0.23, blue: 0.52), glowStrength: 0.28))
         }
     }
     
@@ -1374,6 +1367,42 @@ struct SocialFeedContentView: View {
 
 // MARK: - Stat Card
 
+// MARK: - Soft Glow Card Background
+
+/// A soft, atmospheric color glow (à la the coral AtmosphereGlow) blooming up from
+/// the bottom of an opaque card — replaces the flat top→bottom gradient fill that
+/// read like a hard color band.
+struct SoftGlowCardBackground: View {
+    let color: Color
+    var cornerRadius: CGFloat = 16
+    var glowStrength: Double = 0.32
+    var center: UnitPoint = UnitPoint(x: 0.5, y: 1.18)
+    var endRadius: CGFloat = 260
+
+    var body: some View {
+        let shape = RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+        return shape
+            .fill(Momentum.surfaceElevated)
+            .overlay {
+                RadialGradient(
+                    gradient: Gradient(colors: [
+                        color.opacity(glowStrength),
+                        color.opacity(glowStrength * 0.4),
+                        color.opacity(0)
+                    ]),
+                    center: center,
+                    startRadius: 0,
+                    endRadius: endRadius
+                )
+                .blur(radius: 22)
+            }
+            .clipShape(shape)
+            .overlay(
+                shape.strokeBorder(Momentum.hairline, lineWidth: Momentum.lineThin)
+            )
+    }
+}
+
 struct StatCard: View {
     let title: String
     let value: String
@@ -1396,12 +1425,7 @@ struct StatCard: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
-        .background(
-            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
-                    .stroke(Momentum.hairline, lineWidth: Momentum.lineThin))
-        )
+        .background(SoftGlowCardBackground(color: color, cornerRadius: Momentum.corner))
     }
 }
 

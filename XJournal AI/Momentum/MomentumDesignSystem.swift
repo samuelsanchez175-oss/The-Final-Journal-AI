@@ -12,6 +12,8 @@
 //
 
 import SwiftUI
+import CoreMotion
+import Combine
 
 // MARK: - Hex helper
 
@@ -145,8 +147,21 @@ struct AtmosphereGlow: View {
     private var peakOpacity: Double { (scheme == .dark ? 0.44 : 0.84) * strength }
     private var midOpacity: Double { 0.24 * strength }
     @State private var breathe = false
+    // Subtle full-bleed wash so the otherwise-white areas pick up a faint coral
+    // too — deliberately much lighter than the top radial glow, a touch stronger
+    // toward the bottom for depth.
+    private var washTop: Double { 0.05 * strength * 2 }
+    private var washBottom: Double { (scheme == .dark ? 0.12 : 0.11) * strength * 2 }
     var body: some View {
         base
+            .overlay {
+                LinearGradient(
+                    colors: [glow.opacity(washTop), glow.opacity(washBottom)],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .allowsHitTesting(false)
+            }
             .overlay(alignment: .top) {
                 RadialGradient(
                     gradient: Gradient(colors: [
@@ -377,6 +392,96 @@ struct MomentumSquareButtonStyle: ButtonStyle {
             .opacity(pressed && fill != .outline ? 0.9 : 1)
             .scaleEffect(pressed ? 0.98 : 1)                  // micro-compression (Segment 4)
             .animation(.easeOut(duration: 0.12), value: pressed)
+    }
+}
+
+// MARK: - Gyro Specular Edge (iOS 26-style glass light)
+
+/// Shared device-motion source. A single CoreMotion stream drives every glass
+/// edge highlight in the app so we never spin up more than one `CMMotionManager`.
+final class GyroMotionManager: ObservableObject {
+    static let shared = GyroMotionManager()
+
+    private let manager = CMMotionManager()
+    let isAvailable: Bool
+
+    /// Device roll (left/right tilt) in radians, lightly smoothed.
+    @Published var roll: Double = 0
+    /// Device pitch (forward/back tilt) in radians, lightly smoothed.
+    @Published var pitch: Double = 0
+
+    private init() {
+        isAvailable = manager.isDeviceMotionAvailable
+        guard isAvailable else { return }
+        manager.deviceMotionUpdateInterval = 1.0 / 30.0
+        manager.startDeviceMotionUpdates(to: .main) { [weak self] motion, _ in
+            guard let self, let attitude = motion?.attitude else { return }
+            // Low-pass filter so the highlight glides instead of jittering.
+            self.roll = self.roll * 0.82 + attitude.roll * 0.18
+            self.pitch = self.pitch * 0.82 + attitude.pitch * 0.18
+        }
+    }
+}
+
+/// A thin, bright reflection that rides the edge of a glass shape and tracks the
+/// device's tilt — the small moving "specular" glint Apple uses on iOS 26 glass.
+/// Falls back to a slow auto-rotation on devices/simulators without a gyro.
+struct GyroSpecularEdge<S: InsettableShape>: View {
+    let shape: S
+    var lineWidth: CGFloat = 1.4
+    var tint: Color = .white
+    var intensity: Double = 1.0
+
+    @ObservedObject private var motion = GyroMotionManager.shared
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var autoAngle: Double = 0
+
+    private var angle: Angle {
+        if motion.isAvailable && !reduceMotion {
+            return .radians(motion.roll * 1.7 + motion.pitch * 0.8)
+        }
+        return .degrees(autoAngle)
+    }
+
+    var body: some View {
+        shape
+            .strokeBorder(
+                AngularGradient(
+                    gradient: Gradient(stops: [
+                        .init(color: tint.opacity(0),                  location: 0.00),
+                        .init(color: tint.opacity(0.95 * intensity),   location: 0.05),
+                        .init(color: tint.opacity(0.30 * intensity),   location: 0.11),
+                        .init(color: tint.opacity(0),                  location: 0.22),
+                        .init(color: tint.opacity(0),                  location: 0.55),
+                        .init(color: tint.opacity(0.45 * intensity),   location: 0.60),
+                        .init(color: tint.opacity(0),                  location: 0.68),
+                        .init(color: tint.opacity(0),                  location: 1.00)
+                    ]),
+                    center: .center,
+                    angle: angle
+                ),
+                lineWidth: lineWidth
+            )
+            .blendMode(.screen)
+            .allowsHitTesting(false)
+            .onAppear {
+                guard !(motion.isAvailable && !reduceMotion), !reduceMotion else { return }
+                withAnimation(.linear(duration: 5.5).repeatForever(autoreverses: false)) {
+                    autoAngle = 360
+                }
+            }
+    }
+}
+
+extension View {
+    /// Adds an iOS 26-style moving specular glint to the edge of a glass shape.
+    func gyroSpecularEdge<S: InsettableShape>(
+        _ shape: S,
+        lineWidth: CGFloat = 1.4,
+        tint: Color = .white,
+        intensity: Double = 1.0
+    ) -> some View {
+        overlay(GyroSpecularEdge(shape: shape, lineWidth: lineWidth, tint: tint, intensity: intensity))
     }
 }
 

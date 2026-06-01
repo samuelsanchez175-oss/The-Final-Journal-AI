@@ -153,7 +153,7 @@ struct ReleaseNotesSheetView: View {
                                 .foregroundStyle(Momentum.onInverse)
                                 .padding(.horizontal, 8)
                                 .padding(.vertical, 3)
-                                .background(Capsule().fill(Momentum.accent))
+                                .background(Capsule().fill(Color(red: 0.13, green: 0.52, blue: 1.0))) // blue = notification alert
                         }
                     }
 
@@ -192,12 +192,15 @@ struct ReleaseNotesSheetView: View {
         .padding(20)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(Momentum.surfaceElevated)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 20, style: .continuous)
-                        .strokeBorder(Momentum.hairline, lineWidth: Momentum.lineThin)
-                )
+            // Subtle coral glow that blooms in only from the bottom-right corner,
+            // not down the middle / full length of the card.
+            SoftGlowCardBackground(
+                color: Momentum.accent,
+                cornerRadius: 20,
+                glowStrength: 0.13,
+                center: UnitPoint(x: 0.95, y: 1.08),
+                endRadius: 170
+            )
         )
     }
 }
