@@ -155,88 +155,81 @@ struct JournalLibraryView: View {
                         }
                     }
                 } else {
-                    // Normal mode - show all toolbar buttons
-                // MARK: - PAGE 1.1
-                    // Analytics button (5th button, leftmost)
+                    // Normal mode — all 5 buttons in one merged glass pill
+                    // MARK: - PAGE 1.1
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                            showAnalytics = true
-                        } label: {
-                            Image(systemName: "chart.bar.fill")
+                        HStack(spacing: 0) {
+                            Button {
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                showAnalytics = true
+                            } label: {
+                                Image(systemName: "chart.bar.fill")
+                                    .frame(width: 36, height: 36)
+                            }
+                            .accessibilityLabel("Analytics")
+                            .accessibilityHint("View writing statistics and insights")
+
+                            Button {
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                showProfile.toggle()
+                            } label: {
+                                Image(systemName: "person.crop.circle")
+                                    .frame(width: 36, height: 36)
+                            }
+                            .accessibilityLabel("Profile")
+                            .accessibilityHint("Open profile settings")
+
+                            Button {
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                showReleaseNotes = true
+                            } label: {
+                                Image(systemName: "clock.arrow.circlepath")
+                                    .frame(width: 36, height: 36)
+                            }
+                            .accessibilityLabel("Release Notes")
+                            .accessibilityHint("View app updates and new features")
+
+                            Button {
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                showSupportShop = true
+                            } label: {
+                                Image(systemName: "bag")
+                                    .frame(width: 36, height: 36)
+                            }
+                            .accessibilityLabel("Support & Shop")
+                            .accessibilityHint("Support the creators and view shop")
+
+                            Menu {
+                                Button {
+                                    prepareHapticForNewNote()
+                                    addItem()
+                                } label: {
+                                    Label("New Note", systemImage: "square.and.pencil")
+                                }
+                                Button {
+                                    showImportNotesInstructions = true
+                                } label: {
+                                    Label("Import from Notes", systemImage: "note.text")
+                                }
+                                Button {
+                                    prepareHapticForNewNote()
+                                    addItem()
+                                } label: {
+                                    Label("New Note (Record Audio)", systemImage: "waveform")
+                                }
+                                Divider()
+                                Button {
+                                    isSelectionMode = true
+                                } label: {
+                                    Label("Select", systemImage: "checkmark.circle")
+                                }
+                            } label: {
+                                Image(systemName: "plus")
+                                    .frame(width: 36, height: 36)
+                            }
                         }
-                        .accessibilityLabel("Analytics")
-                        .accessibilityHint("View writing statistics and insights")
-                    }
-                    
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                        showProfile.toggle()
-                    } label: {
-                        Image(systemName: "person.crop.circle")
-                    }
-                    .accessibilityLabel("Profile")
-                    .accessibilityHint("Open profile settings")
-                }
-
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                        showReleaseNotes = true
-                    } label: {
-                        Image(systemName: "clock.arrow.circlepath")
-                    }
-                    .accessibilityLabel("Release Notes")
-                    .accessibilityHint("View app updates and new features")
-                }
-
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                        showSupportShop = true
-                    } label: {
-                        Image(systemName: "bag")
-                    }
-                    .accessibilityLabel("Support & Shop")
-                    .accessibilityHint("Support the creators and view shop")
-                }
-
-                ToolbarItem(placement: .navigationBarTrailing) {
-                        // Normal mode - show menu
-                        Menu {
-                            Button {
-                                prepareHapticForNewNote()
-                                addItem()
-                            } label: {
-                                Label("New Note", systemImage: "square.and.pencil")
-                            }
-
-                            Button {
-                                showImportNotesInstructions = true
-                            } label: {
-                                Label("Import from Notes", systemImage: "note.text")
-                            }
-
-                            Button {
-                                // Audio recording is available in NoteEditorView
-                                // This creates a new note where user can record
-                                prepareHapticForNewNote()
-                                addItem()
-                            } label: {
-                                Label("New Note (Record Audio)", systemImage: "waveform")
-                            }
-                            
-                            Divider()
-                            
-                            Button {
-                                isSelectionMode = true
-                            } label: {
-                                Label("Select", systemImage: "checkmark.circle")
-                            }
-                        } label: {
-                            Image(systemName: "plus")
-                        }
+                        .foregroundStyle(Momentum.accent)
+                        .glassEffect(in: Capsule())
                     }
                 }
             }
@@ -726,13 +719,9 @@ struct JournalLibraryView: View {
             }
             .padding(.horizontal, 16)
             .frame(height: 44)
-            .background(
-                Capsule()
-                    .fill(.ultraThinMaterial)
-                    .overlay(Capsule().fill(Momentum.accent.opacity(0.10)))   // soft coral undertone over the frosted glass
-                    .overlay(Capsule().stroke(isSearchFocused ? Momentum.accent : Momentum.hairline,
-                                              lineWidth: Momentum.lineThin))
-            )
+            .glassEffect(in: Capsule())
+            .overlay(Capsule().stroke(isSearchFocused ? Momentum.accent : Color.clear,
+                                      lineWidth: Momentum.lineThin))
             
             // Quick Compose Button (iOS 26 Style - Integrated)
             Button(action: {
@@ -743,7 +732,7 @@ struct JournalLibraryView: View {
                     .font(.system(size: 18, weight: .semibold))
                     .foregroundStyle(Momentum.accent)
                     .frame(width: 44, height: 44)
-                    .momentumGlass()
+                    .glassEffect(in: Circle())
             }
             .buttonStyle(.plain)
         }
