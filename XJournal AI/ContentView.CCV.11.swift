@@ -152,18 +152,81 @@ struct JournalRowView: View {
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-            HStack(spacing: 5) {
-                Image(systemName: "clock")
-                    .font(.system(size: 11, weight: .semibold))
-                Text(lastModifiedText)
-                    .font(.momentumMetadata)
+            HStack(spacing: 8) {
+                HStack(spacing: 5) {
+                    Image(systemName: "clock")
+                        .font(.system(size: 11, weight: .semibold))
+                    Text(lastModifiedText)
+                        .font(.momentumMetadata)
+                }
+                .foregroundStyle(Momentum.contentSecondary)
+
+                Spacer(minLength: 8)
+
+                metaChips   // BPM · key/scale · folder · link — right of the date
             }
-            .foregroundStyle(Momentum.contentSecondary)
+            .frame(minHeight: 18)
 
             Divider()
                 .padding(.top, 4)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// Palette-tinted metadata chips (BPM · key/scale · folder · link), shown to the
+    /// right of the date. Renders only the fields this note actually has.
+    @ViewBuilder
+    private var metaChips: some View {
+        HStack(spacing: 6) {
+            if let bpm = item.bpm {
+                metaChip("\(bpm)", systemImage: "metronome")
+            }
+            if let keyScale = keyScaleLabel {
+                metaChip(keyScale, systemImage: "music.note")
+            }
+            if let folder = item.folder, !folder.trimmingCharacters(in: .whitespaces).isEmpty {
+                metaChip(folder, systemImage: "folder")
+            }
+            if let url = item.urlAttachment, !url.trimmingCharacters(in: .whitespaces).isEmpty {
+                metaChip("Link", systemImage: "link")
+            }
+        }
+    }
+
+    /// "C Minor" / "C" / "Minor" / nil from the note's key + scale.
+    private var keyScaleLabel: String? {
+        let trimmedKey = item.key?.trimmingCharacters(in: .whitespaces)
+        let trimmedScale = item.scale?.trimmingCharacters(in: .whitespaces)
+        let key = (trimmedKey?.isEmpty == false) ? trimmedKey : nil
+        let scale = (trimmedScale?.isEmpty == false) ? trimmedScale : nil
+        switch (key, scale) {
+        case let (key?, scale?): return "\(key) \(scale)"
+        case let (key?, nil):    return key
+        case let (nil, scale?):  return scale
+        default:                 return nil
+        }
+    }
+
+    /// Small palette-coral pill (icon + label). Concrete + file-local per the Momentum rule.
+    private func metaChip(_ text: String, systemImage: String) -> some View {
+        HStack(spacing: 3) {
+            Image(systemName: systemImage)
+                .font(.system(size: 9, weight: .semibold))
+            Text(text)
+                .font(.system(size: 11, weight: .medium))
+                .lineLimit(1)
+        }
+        .foregroundStyle(Momentum.accent)
+        .padding(.horizontal, 7)
+        .padding(.vertical, 3)
+        .background(
+            Capsule(style: .continuous)
+                .fill(Momentum.accent.opacity(0.12))
+                .overlay(
+                    Capsule(style: .continuous)
+                        .stroke(Momentum.accent.opacity(0.22), lineWidth: Momentum.lineThin)
+                )
+        )
     }
 
     /// Update cached values if item has changed
