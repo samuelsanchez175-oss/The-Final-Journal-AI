@@ -417,107 +417,19 @@ struct NoteEditorView: View {
                             .padding(.bottom, 8)
                         }
                         // SEGMENT 19: Unified Padding - Apply padding to ZStack for consistent writing room
-                            ZStack(alignment: .topLeading) {
-                                TextEditor(text: $item.body)
-                                    .focused($isEditorFocused)
-                                    .font(.body)
-                                    .frame(maxWidth: 680)
-                                    .padding(.horizontal, 20)
-                                    .padding(.top, 8)
-                                // SEGMENT 20: Static buffer for Keyboard Island - prevents displacement
-                                .padding(.bottom, 150) // Static buffer reserves physical space for Dynamic Island
-                                    .scrollContentBackground(.hidden)
-                                    .textEditorStyle(.plain)
-                                    .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
-                                // SEGMENT 20: Disable internal scroll to prevent "jumps"
-                                .scrollDisabled(true) // CRITICAL: Disable internal scroll - parent ScrollView handles scrolling
-                                // SEGMENT 20: Lock vertical rigidity - prevents viewport shift
-                                .fixedSize(horizontal: false, vertical: true) // CRITICAL: Vertical locking - forces expansion
-                                .layoutPriority(0) // Lower priority allows expansion (defaultLow hugging)
-                                    .allowsHitTesting(!isRhymeOverlayVisible) // Disable interaction when overlay is visible
-                                    .scrollDismissesKeyboard(.never) // Prevent keyboard from dismissing on scroll
-                                // SEGMENT 21: Auto-focus for empty notes to immediately show keyboard
-                                    .onAppear {
-                                    // Auto-focus TextEditor for new notes (empty body) to activate keyboard immediately
-                                        if item.body.isEmpty {
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                                                isEditorFocused = true
-                                            }
-                                        }
-                                    }
-                                // SEGMENT 20: Prevent automatic scroll-to-cursor on focus
-                                .onChange(of: isEditorFocused) { oldValue, newValue in
-                                    if newValue && !oldValue {
-                                        // When focus is gained, save current scroll position immediately
-                                        savedScrollPosition = scrollOffset
-                                    }
-                                }
-                                // SEGMENT 20: Prevent automatic keyboard avoidance that causes jump
-                                // This modifier prevents the view from automatically adjusting when keyboard appears
-                                .ignoresSafeArea(.keyboard, edges: .all)
-
-                        // AI text is now only shown in the main overlay when eye toggle is on
-                        // When eye toggle is off, AI text is just normal text in the TextEditor
-
-                        // Always keep view in hierarchy - optimize by using opacity instead of conditional rendering
-                        // This prevents view recreation on toggle, allowing cache reuse
-                        // When eye toggle is on, show ALL text with highlights (not just highlights)
-                        // Wrap in GeometryReader to get real SwiftUI width for accurate height measurement
-                        GeometryReader { geo in
-                            RhymeHighlightTextView(
-                                text: item.body,
+                            WritingSurface(
+                                text: $item.body,
                                 highlights: computedHighlights,
-                                isVisible: isRhymeOverlayVisible,
-                                showFullText: true, // Always show full text, not just highlights
-                                horizontalPadding: 20, // Match TextEditor padding
-                                isEditable: isRhymeOverlayVisible, // Make overlay editable when visible
-                                onTextChange: { newText in
-                                    // Sync changes from overlay back to item.body
-                                    item.body = newText
-                                },
-                                dynamicHeight: $rhymeOverlayHeight,
-                                availableWidth: geo.size.width // Pass real SwiftUI width from GeometryReader
+                                isEditorFocused: $isEditorFocused,
+                                isRhymeOverlayVisible: isRhymeOverlayVisible,
+                                rhymeOverlayHeight: $rhymeOverlayHeight,
+                                scrollOffset: scrollOffset,
+                                savedScrollPosition: $savedScrollPosition,
+                                slamAnimationText: slamAnimationText,
+                                slamAnimationOffset: slamAnimationOffset,
+                                slamAnimationScale: slamAnimationScale,
+                                minHeight: viewport.size.height - 200
                             )
-                            .frame(height: rhymeOverlayHeight)
-                            .animation(nil, value: isRhymeOverlayVisible) // Disable implicit animations on height changes
-                        }
-                        .frame(maxWidth: 680, alignment: .leading) // Match TextEditor width exactly
-                        .padding(.horizontal, 20) // Match TextEditor padding exactly
-                        .padding(.top, 8)
-                        // REMOVED: .padding(.bottom, 100) - moved to ZStack level for unified padding
-                        .opacity(isRhymeOverlayVisible ? 1.0 : 0.0)
-                        .allowsHitTesting(isRhymeOverlayVisible) // Allow interaction when overlay is visible
-                        .fixedSize(horizontal: false, vertical: true) // CRITICAL: Vertical locking - ensures both views match height
-                        .layoutPriority(0) // Lower priority allows expansion (defaultLow hugging)
-                        // REMOVED: .id() modifier - prevents view recreation that causes scroll jumps
-                        // The view stays in hierarchy and only opacity changes, preserving scroll position
-                        .onChange(of: isRhymeOverlayVisible) { oldValue, newValue in
-                            // CRITICAL: Prevent scroll jump when toggling eye icon
-                            // Layout updates happen in updateUIView without affecting scroll position
-                            // No forced layout here to prevent scroll position reset
-                        }
-                        
-                        // Slam animation overlay (iMessage-style)
-                        if let slamText = slamAnimationText {
-                            Text(slamText)
-                                .font(.body)
-                                .foregroundStyle(.blue)
-                                .padding(.horizontal, 20)
-                                .padding(.top, 8)
-                                .frame(maxWidth: 680, alignment: .leading)
-                                .offset(y: slamAnimationOffset)
-                                .scaleEffect(slamAnimationScale)
-                                .opacity(slamAnimationScale < 1.0 ? 0.6 : 1.0)
-                                .allowsHitTesting(false)
-                            }
-                        }
-                        .layoutPriority(0) // Text surface expands to fill available space
-                        // SEGMENT 20: Additional buffer at ZStack level for consistency
-                        // TextEditor already has .padding(.bottom, 150), this ensures overlay matches
-                        .padding(.bottom, 150) // Match TextEditor padding for synchronized height
-                        // FIXED: Ensure the text area fills the screen for easy tapping (Segment 18)
-                        // This ensures the entire viewport is tappable for writing
-                        .frame(minHeight: viewport.size.height - 200, alignment: .topLeading) // Reserve space for title, metadata pills, and toolbar
                         
                         // FIXED: Metadata bar now sits at the end of the content stream
                         // MARK: - Timestamp Metadata Bar (Bottom of Note)
@@ -878,6 +790,115 @@ struct NoteEditorView: View {
         }
     }
     
+    // MARK: - Writing Surface (isolated child view)
+    /// The text-entry surface — `TextEditor` + rhyme-highlight overlay + slam animation.
+    /// Extracted into its own `View` so that a keystroke (or a debounced rhyme-engine
+    /// update) re-renders ONLY this subtree, not the entire NoteEditorView chrome
+    /// (toolbar, sheets, metadata bar). Inputs are deliberately narrow and value-typed,
+    /// so SwiftUI can skip re-rendering this subtree when unrelated parent state changes.
+    /// Behavior, modifier order, and the SEGMENT-20 anti-jump tricks are preserved exactly.
+    private struct WritingSurface: View {
+        @Binding var text: String
+        let highlights: [Highlight]
+        @FocusState.Binding var isEditorFocused: Bool
+        let isRhymeOverlayVisible: Bool
+        @Binding var rhymeOverlayHeight: CGFloat
+        let scrollOffset: CGFloat
+        @Binding var savedScrollPosition: CGFloat
+        let slamAnimationText: String?
+        let slamAnimationOffset: CGFloat
+        let slamAnimationScale: CGFloat
+        let minHeight: CGFloat
+
+        var body: some View {
+            ZStack(alignment: .topLeading) {
+                TextEditor(text: $text)
+                    .focused($isEditorFocused)
+                    .font(.body)
+                    .frame(maxWidth: 680)
+                    .padding(.horizontal, 20)
+                    .padding(.top, 8)
+                    // SEGMENT 20: Static buffer reserves physical space for the Dynamic Island
+                    .padding(.bottom, 150)
+                    .scrollContentBackground(.hidden)
+                    .textEditorStyle(.plain)
+                    .foregroundStyle(isRhymeOverlayVisible ? .clear : .primary)
+                    // SEGMENT 20: parent ScrollView handles scrolling (prevents "jumps")
+                    .scrollDisabled(true)
+                    // SEGMENT 20: vertical locking — forces expansion, prevents viewport shift
+                    .fixedSize(horizontal: false, vertical: true)
+                    .layoutPriority(0)
+                    .allowsHitTesting(!isRhymeOverlayVisible)
+                    .scrollDismissesKeyboard(.never)
+                    // SEGMENT 21: auto-focus empty notes so the keyboard shows immediately
+                    .onAppear {
+                        if text.isEmpty {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                isEditorFocused = true
+                            }
+                        }
+                    }
+                    // SEGMENT 20: save scroll position the moment focus is gained
+                    .onChange(of: isEditorFocused) { oldValue, newValue in
+                        if newValue && !oldValue {
+                            savedScrollPosition = scrollOffset
+                        }
+                    }
+                    // SEGMENT 20: prevent automatic keyboard avoidance that causes jump
+                    .ignoresSafeArea(.keyboard, edges: .all)
+
+                // Rhyme-highlight overlay — kept in the hierarchy (opacity toggles visibility
+                // instead of conditional rendering) so the UIKit view + cache aren't recreated.
+                GeometryReader { geo in
+                    RhymeHighlightTextView(
+                        text: text,
+                        highlights: highlights,
+                        isVisible: isRhymeOverlayVisible,
+                        showFullText: true,
+                        horizontalPadding: 20,
+                        isEditable: isRhymeOverlayVisible,
+                        onTextChange: { newText in
+                            text = newText
+                        },
+                        dynamicHeight: $rhymeOverlayHeight,
+                        availableWidth: geo.size.width
+                    )
+                    .frame(height: rhymeOverlayHeight)
+                    .animation(nil, value: isRhymeOverlayVisible)
+                }
+                .frame(maxWidth: 680, alignment: .leading)
+                .padding(.horizontal, 20)
+                .padding(.top, 8)
+                .opacity(isRhymeOverlayVisible ? 1.0 : 0.0)
+                .allowsHitTesting(isRhymeOverlayVisible)
+                .fixedSize(horizontal: false, vertical: true)
+                .layoutPriority(0)
+                .onChange(of: isRhymeOverlayVisible) { _, _ in
+                    // Intentionally empty: no forced layout, to prevent scroll jump on eye toggle.
+                }
+
+                // Slam animation overlay (iMessage-style)
+                if let slamText = slamAnimationText {
+                    Text(slamText)
+                        .font(.body)
+                        .foregroundStyle(.blue)
+                        .padding(.horizontal, 20)
+                        .padding(.top, 8)
+                        .frame(maxWidth: 680, alignment: .leading)
+                        .offset(y: slamAnimationOffset)
+                        .scaleEffect(slamAnimationScale)
+                        .opacity(slamAnimationScale < 1.0 ? 0.6 : 1.0)
+                        .allowsHitTesting(false)
+                }
+            }
+            .layoutPriority(0)
+            // SEGMENT 20: buffer matches TextEditor's bottom padding for synchronized height
+            .padding(.bottom, 150)
+            // Fill the viewport so the whole text area is tappable for writing
+            .frame(minHeight: minHeight, alignment: .topLeading)
+        }
+    }
+
     // MARK: - Bottom Dynamic Island Toolbar (Page 3)
     private var bottomToolbar: some View {
         DynamicIslandToolbarView(

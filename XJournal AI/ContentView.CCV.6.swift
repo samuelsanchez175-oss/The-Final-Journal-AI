@@ -46,7 +46,10 @@ struct RhymeHighlightTextView: UIViewRepresentable {
             bottom: 0, // SEGMENT 19: Padding moved to ZStack level for consistency
             right: 0 // No inset - padding is handled at SwiftUI level
         )
-        textView.textContainer.lineFragmentPadding = 0
+        // Must match SwiftUI TextEditor's default lineFragmentPadding (5pt). This overlay swaps
+        // with the TextEditor on the rhyme-eye toggle; using 0 here put the overlay's glyphs 5pt
+        // left of the editor's, so the text jumped left when highlighting turned on.
+        textView.textContainer.lineFragmentPadding = 5
         
         // Ensure text aligns to left edge (not centered)
         textView.textAlignment = .left
