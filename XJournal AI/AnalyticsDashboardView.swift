@@ -494,7 +494,6 @@ struct AnalyticsDashboardView: View {
     enum AnalyticsTab: String, CaseIterable {
         case apiDebug = "API Debug"
         case modelGScores = "Lyric Scores"
-        case rewards = "Reward 3D"
         case overview = "Overview"
         case errors = "Errors"
         case network = "Network"
@@ -507,7 +506,7 @@ struct AnalyticsDashboardView: View {
 
     /// User-facing sections shown as primary pills.
     private var primarySections: [AnalyticsTab] {
-        [.overview, .modelGScores, .rewards]
+        [.overview, .modelGScores]
     }
 
     /// Developer/telemetry views, folded behind the "Diagnostics" group pill.
@@ -527,7 +526,6 @@ struct AnalyticsDashboardView: View {
         switch tab {
         case .overview:         return "square.grid.2x2.fill"
         case .modelGScores:     return "music.note"
-        case .rewards:          return "cube.fill"
         case .errors:           return "exclamationmark.triangle.fill"
         case .network:          return "dot.radiowaves.left.and.right"
         case .tokens:           return "number"
@@ -895,19 +893,6 @@ struct AnalyticsDashboardView: View {
                             #endif
                         case .modelGScores:
                             VerseLedgerTrendView()
-                        case .rewards:
-                            VStack(spacing: 12) {
-                                Text("3D reward (prototype)").font(.headline)
-                                Reward3DView()
-                                    .frame(height: 300)
-                                    .background(
-                                        RadialGradient(colors: [Color(white: 0.16), .black],
-                                                       center: .center, startRadius: 30, endRadius: 320)
-                                    )
-                                    .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                                Text("Spins automatically · drag to orbit · tilt your phone to sweep the light (device only). Swap in a .usdz from SAM 3D later.")
-                                    .font(.caption).foregroundStyle(Momentum.contentSecondary).multilineTextAlignment(.center)
-                            }
                         case .network:
                             networkPerformanceSection
                         case .tokens:
