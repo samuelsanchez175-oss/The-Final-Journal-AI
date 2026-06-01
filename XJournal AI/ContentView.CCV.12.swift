@@ -170,12 +170,6 @@ struct ProfilePopoverView: View {
         return input
     }
 
-    /// Save is enabled as long as the optional email/phone are well-formed (name is optional —
-    /// so a user pasting only an API key can still Save).
-    private var isFormValid: Bool {
-        isEmailValid && isPhoneValid
-    }
-
     private func hasPersonalDetails() -> Bool {
         if let data = UserDefaults.standard.data(forKey: "user_personal_details"),
            let details = try? JSONDecoder().decode(UserPersonalDetails.self, from: data) {
@@ -203,19 +197,17 @@ struct ProfilePopoverView: View {
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") { discardAndDismiss() }
-                        .foregroundStyle(Momentum.contentSecondary)
-                }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Save") { saveAll() }
+                    Button("Save") { persist(thenDismiss: true) }
                         .fontWeight(.semibold)
-                        .disabled(!isFormValid)
                 }
             }
             .overlay(alignment: .top) { saveConfirmationToast }
             .onAppear { loadOnAppear() }
+            .onDisappear { if hasUnsavedChanges { persist() } }
             .onChange(of: selectedItem) { _, newItem in handleAvatarPick(newItem) }
+            .onChange(of: openAIKeyDraft) { _, _ in hasUnsavedChanges = true }
+            .onChange(of: geniusKeyDraft) { _, _ in hasUnsavedChanges = true }
         }
     }
 
@@ -252,6 +244,7 @@ struct ProfilePopoverView: View {
         openAIKeyDraft = KeychainHelper.shared.getAPIKey() ?? ""
         geniusKeyDraft = KeychainHelper.shared.getGeniusAPIKey() ?? ""
         hasUnsavedChanges = false
+        showSaveConfirmation = false
     }
 
     private func handleAvatarPick(_ newItem: PhotosPickerItem?) {
@@ -270,14 +263,16 @@ struct ProfilePopoverView: View {
         }
     }
 
-    /// One Save: profile fields → @AppStorage, both API keys → Keychain (cleared field deletes the key).
-    private func saveAll() {
+    /// Persist all valid fields to storage.
+    /// - thenDismiss: true when called from the Save button (adds haptic + toast + close).
+    ///   false when called silently on swipe-dismiss via .onDisappear.
+    private func persist(thenDismiss: Bool = false) {
         if !phone.isEmpty && isPhoneValid {
             phone = formatPhoneNumber(phone)
         }
         storedName = name
-        storedEmail = email
-        storedPhone = phone
+        if isEmailValid { storedEmail = email }   // skip invalid — keep last-saved value
+        if isPhoneValid { storedPhone = phone }    // skip invalid — keep last-saved value
 
         let openAI = openAIKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines)
         if openAI.isEmpty { try? KeychainHelper.shared.deleteAPIKey() }
@@ -288,21 +283,11 @@ struct ProfilePopoverView: View {
         else { try? KeychainHelper.shared.saveGeniusAPIKey(genius) }
 
         hasUnsavedChanges = false
-        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-        withAnimation { showSaveConfirmation = true }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-            dismiss()
+        if thenDismiss {
+            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+            withAnimation { showSaveConfirmation = true }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { dismiss() }
         }
-    }
-
-    private func discardAndDismiss() {
-        // Restore profile fields; key drafts are only persisted on Save, so nothing to undo there.
-        name = storedName
-        email = storedEmail
-        phone = storedPhone
-        hasUnsavedChanges = false
-        lightHaptic()
-        dismiss()
     }
 
     // MARK: Content
