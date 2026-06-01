@@ -25,6 +25,7 @@ struct RapSuggestionView: View {
     let rightTitle: String?
     let noteKey: String?
     let generationId: UUID?
+    var generations: [Generation] = []   // deck of past generations (newest first); [] → fallback to flat suggestions
     @Binding var humanCriticFeedback: HumanCriticFeedback?
     @Binding var humanCriticLoading: Bool
     @Binding var humanCriticError: String?
@@ -53,6 +54,7 @@ struct RapSuggestionView: View {
         rightTitle: String? = nil,
         noteKey: String? = nil,
         generationId: UUID? = nil,
+        generations: [Generation] = [],
         humanCriticFeedback: Binding<HumanCriticFeedback?>,
         humanCriticLoading: Binding<Bool>,
         humanCriticError: Binding<String?>,
@@ -76,6 +78,7 @@ struct RapSuggestionView: View {
         self.rightTitle = rightTitle
         self.noteKey = noteKey
         self.generationId = generationId
+        self.generations = generations
         _humanCriticFeedback = humanCriticFeedback
         _humanCriticLoading = humanCriticLoading
         _humanCriticError = humanCriticError
@@ -104,6 +107,11 @@ struct RapSuggestionView: View {
     @State private var showingTightened: Set<UUID> = [] // Track which suggestions show tightened version
     /// Parallel mode: 0 = V1 (default), 1 = V2. User swipes right to see V2.
     @State private var parallelPageIndex: Int = 0
+
+    // Deck UI (Rap Suggestions redesign)
+    @State private var deckIndex: Int = 0
+    @State private var stackOn: Bool = false
+    @State private var rhymeOn: Bool = false
     
     var body: some View {
         NavigationView {
@@ -122,7 +130,7 @@ struct RapSuggestionView: View {
                 } else if suggestions.isEmpty {
                     emptyView
                 } else {
-                    suggestionsList
+                    deckView
                 }
             }
             .navigationTitle("Rap Suggestions")
@@ -323,6 +331,58 @@ struct RapSuggestionView: View {
     
     // MARK: - Suggestions List
     
+    // MARK: - Deck (Rap Suggestions redesign)
+
+    /// Generations to show in the deck. Falls back to wrapping the flat `suggestions`
+    /// as a single generation when the engine deck wasn't passed (recall / improve-flow).
+    private var deckGenerations: [Generation] {
+        if !generations.isEmpty { return generations }
+        return [Generation(
+            id: generationId ?? suggestions.first?.id ?? UUID(),
+            suggestions: suggestions,
+            critic: humanCriticFeedback,
+            createdAt: Date(),
+            isFavorite: false,
+            isFresh: false
+        )]
+    }
+
+    /// Text of the currently-visible generation (for the island's rhyme-groups popover).
+    private var currentDeckText: String {
+        let gens = deckGenerations
+        guard !gens.isEmpty else { return "" }
+        let i = min(max(deckIndex, 0), gens.count - 1)
+        return gens[i].suggestions.map(\.text).joined(separator: "\n")
+    }
+
+    private var deckView: some View {
+        ZStack(alignment: .bottom) {
+            RapDeckView(
+                generations: deckGenerations,
+                index: $deckIndex,
+                stackOn: stackOn,
+                rhymeOn: rhymeOn,
+                criticFeedback: humanCriticFeedback,
+                criticLoading: humanCriticLoading,
+                criticError: humanCriticError,
+                onRetryCritic: onRetryHumanCritic,
+                onTapLine: { suggestion, lineIndex in
+                    toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex)
+                }
+            )
+            RapIslandToolbar(
+                rhymeOn: $rhymeOn,
+                stackOn: $stackOn,
+                rhymeGroups: [],          // TODO: compute groups for the magnifying-glass popover
+                currentText: currentDeckText
+            )
+            .padding(.bottom, 12)
+        }
+        .onChange(of: deckGenerations.first?.id) { _, _ in
+            deckIndex = 0   // newest generation auto-lands at the front (spec §3.6)
+        }
+    }
+
     private var suggestionsList: some View {
         ScrollView {
             VStack(spacing: 16) {

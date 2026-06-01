@@ -2,11 +2,12 @@
 //  GenerationCardView.swift
 //  XJournal AI
 //
-//  One card in the Rap Suggestions deck: lyrics first, then this generation's Critic
-//  below (spec §3.5), with the freshness flash (spec §3.6) and the eye-toggle rhyme
-//  overlay (spec §3.3). Standalone structural view — the rich per-suggestion affordances
-//  (theme tags, quality indicators, feedback form, Tighten) and the real feedback-index
-//  convention are folded in during the assembly phase that edits RapSuggestionView.
+//  One card in the Rap Suggestions deck: lyrics first, then the Critic below (spec §3.5),
+//  with the freshness flash (spec §3.6) and the eye-toggle rhyme overlay (spec §3.3).
+//  The critic is passed in (live for the visible card, snapshot for others) by RapDeckView.
+//  NOTE: this is the new-design card — it does not (yet) carry the legacy suggestionCard
+//  affordances (theme tags, quality indicators, feedback form, Tighten). Those are a
+//  follow-up if we want them back in the deck.
 //
 
 import SwiftUI
@@ -15,6 +16,9 @@ struct GenerationCardView: View {
     let generation: Generation
     var stackOn: Bool = false
     var rhymeOn: Bool = false
+    var criticFeedback: HumanCriticFeedback?
+    var criticLoading: Bool = false
+    var criticError: String? = nil
     var onRetryCritic: () -> Void = {}
     var onTapLine: (RapSuggestion, Int) -> Void = { _, _ in }
 
@@ -25,11 +29,17 @@ struct GenerationCardView: View {
     init(generation: Generation,
          stackOn: Bool = false,
          rhymeOn: Bool = false,
+         criticFeedback: HumanCriticFeedback? = nil,
+         criticLoading: Bool = false,
+         criticError: String? = nil,
          onRetryCritic: @escaping () -> Void = {},
          onTapLine: @escaping (RapSuggestion, Int) -> Void = { _, _ in }) {
         self.generation = generation
         self.stackOn = stackOn
         self.rhymeOn = rhymeOn
+        self.criticFeedback = criticFeedback
+        self.criticLoading = criticLoading
+        self.criticError = criticError
         self.onRetryCritic = onRetryCritic
         self.onTapLine = onTapLine
         _fresh = State(initialValue: generation.isFresh)
@@ -45,9 +55,9 @@ struct GenerationCardView: View {
                 Divider()
 
                 HumanCriticSectionView(
-                    feedback: generation.critic,
-                    isLoading: false,
-                    errorMessage: nil,
+                    feedback: criticFeedback,
+                    isLoading: criticLoading,
+                    errorMessage: criticError,
                     onRetry: onRetryCritic
                 )
             }
@@ -57,7 +67,6 @@ struct GenerationCardView: View {
             .padding(.vertical, 8)
         }
         .task(id: generation.id) {
-            // Freshness flash: clear after ~4s on screen (or on tap, below).
             guard fresh else { return }
             try? await Task.sleep(nanoseconds: 4_000_000_000)
             if !Task.isCancelled {
@@ -65,7 +74,6 @@ struct GenerationCardView: View {
             }
         }
         .task(id: "\(generation.id.uuidString)-\(rhymeOn)") {
-            // Eye toggle: compute rhyme highlights per suggestion (whole verse together).
             guard rhymeOn else { rhymeBySuggestion = [:]; return }
             var map: [UUID: [AttributedString]] = [:]
             for suggestion in generation.suggestions {
@@ -84,8 +92,6 @@ struct GenerationCardView: View {
 
     @ViewBuilder
     private func lyrics(for suggestion: RapSuggestion) -> some View {
-        // Unfiltered split so indices line up with the rhyme renderer's per-line output.
-        // (The filtered feedback-index convention is reconciled during assembly.)
         let rawLines = suggestion.text.components(separatedBy: "\n")
         let rhyme = rhymeOn ? (rhymeBySuggestion[suggestion.id] ?? []) : []
         VStack(alignment: .leading, spacing: 4) {

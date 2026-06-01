@@ -3,8 +3,8 @@
 //  XJournal AI
 //
 //  The swipeable deck of generations (spec §3.6). Newest is index 0 (front); swipe right
-//  for older. Page dots + the blue swipe hint. Standalone — the assembly phase binds this
-//  to RapSuggestionEngine.generations / currentGenerationIndex.
+//  for older. Page dots + the blue swipe hint. The live critic is shown on the visible
+//  card; older cards show their own snapshot.
 //
 
 import SwiftUI
@@ -14,21 +14,18 @@ struct RapDeckView: View {
     @Binding var index: Int
     var stackOn: Bool = false
     var rhymeOn: Bool = false
+    var criticFeedback: HumanCriticFeedback? = nil
+    var criticLoading: Bool = false
+    var criticError: String? = nil
     var onRetryCritic: () -> Void = {}
     var onTapLine: (RapSuggestion, Int) -> Void = { _, _ in }
 
     var body: some View {
         VStack(spacing: 8) {
             TabView(selection: $index) {
-                ForEach(Array(generations.enumerated()), id: \.element.id) { i, gen in
-                    GenerationCardView(
-                        generation: gen,
-                        stackOn: stackOn,
-                        rhymeOn: rhymeOn,
-                        onRetryCritic: onRetryCritic,
-                        onTapLine: onTapLine
-                    )
-                    .tag(i)
+                ForEach(Array(generations.enumerated()), id: \.element.id) { pair in
+                    card(for: pair.element, at: pair.offset)
+                        .tag(pair.offset)
                 }
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
@@ -41,6 +38,21 @@ struct RapDeckView: View {
                     .padding(.bottom, 4)
             }
         }
+    }
+
+    @ViewBuilder
+    private func card(for gen: Generation, at i: Int) -> some View {
+        let isCurrent = i == index
+        GenerationCardView(
+            generation: gen,
+            stackOn: stackOn,
+            rhymeOn: rhymeOn,
+            criticFeedback: isCurrent ? criticFeedback : gen.critic,
+            criticLoading: isCurrent ? criticLoading : false,
+            criticError: isCurrent ? criticError : nil,
+            onRetryCritic: onRetryCritic,
+            onTapLine: onTapLine
+        )
     }
 
     private var pageIndicator: some View {
