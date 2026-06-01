@@ -13,6 +13,7 @@ struct RapDeckView: View {
     let generations: [Generation]
     @Binding var index: Int
     var stackOn: Bool = false
+    var rhymeOn: Bool = false
     var onRetryCritic: () -> Void = {}
     var onTapLine: (RapSuggestion, Int) -> Void = { _, _ in }
 
@@ -23,6 +24,7 @@ struct RapDeckView: View {
                     GenerationCardView(
                         generation: gen,
                         stackOn: stackOn,
+                        rhymeOn: rhymeOn,
                         onRetryCritic: onRetryCritic,
                         onTapLine: onTapLine
                     )
