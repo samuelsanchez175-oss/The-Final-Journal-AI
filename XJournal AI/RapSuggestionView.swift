@@ -1548,6 +1548,11 @@ struct SuggestionComparisonView: View {
 
 class RapSuggestionEngine: ObservableObject {
     @Published var suggestions: [RapSuggestion] = []
+
+    // Deck UI (Rap Suggestions redesign): each generation is a card, newest at index 0.
+    // Populated in commitGeneration; consumed by RapDeckView once the body swap lands.
+    @Published var generations: [Generation] = []
+    @Published var currentGenerationIndex: Int = 0
     @Published var isLoading: Bool = false
     @Published var loadingStep: String?
     @Published var error: String?
@@ -1610,6 +1615,18 @@ class RapSuggestionEngine: ObservableObject {
         lastSessionGenerationId = generationId
         lastSessionContextText = contextText
         lastBatchSuggestions = batch
+
+        // Deck UI: keep each generation as its own card, newest first (spec §3.6).
+        let generation = Generation(
+            id: generationId,
+            suggestions: batch,
+            critic: humanCriticFeedback,
+            createdAt: Date(),
+            isFavorite: false,
+            isFresh: true
+        )
+        generations = GenerationDeck.inserting(generation, into: generations)
+        currentGenerationIndex = 0
 
         previousSuggestions.append(contentsOf: batch)
         if previousSuggestions.count > NoteSuggestionSession.historyCap {
