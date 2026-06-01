@@ -34,7 +34,7 @@ enum Momentum {
     static let contentPrimary    = Color(hex: 0x1C1C1E)
     static let contentSecondary  = Color(hex: 0x1C1C1E, alpha: 0.6)
     // Accent
-    static let accent            = Color(hex: 0xFF8C66)   // coral
+    static var accent: Color { CoralSettings.preset.color }   // coral — follows the user's Coral preset (default #FF8C66)
     static let accentCalm        = Color(hex: 0x6688FF)   // empathy / reset states only
     // Inverse (emphasis banner, primary button)
     static let inverseSurface    = Color(hex: 0x1C1C1E)
@@ -85,22 +85,73 @@ enum ThemeMode: String, CaseIterable, Identifiable {
     }
 }
 
+// MARK: - Coral appearance (user-adjustable accent preset + glow strength)
+
+/// Curated warm/coral accent presets. `classic` is the locked Momentum coral (#FF8C66);
+/// the rest are warm siblings so the picker stays on-brand and hard to make ugly.
+enum CoralPreset: String, CaseIterable, Identifiable {
+    case classic, blush, ember, apricot, rose, plum
+    var id: String { rawValue }
+    var label: String {
+        switch self {
+        case .classic: return "Coral"
+        case .blush:   return "Blush"
+        case .ember:   return "Ember"
+        case .apricot: return "Apricot"
+        case .rose:    return "Rose"
+        case .plum:    return "Plum"
+        }
+    }
+    var hex: UInt {
+        switch self {
+        case .classic: return 0xFF8C66
+        case .blush:   return 0xF7849B
+        case .ember:   return 0xF2542D
+        case .apricot: return 0xFF9F45
+        case .rose:    return 0xE0566E
+        case .plum:    return 0xB56576
+        }
+    }
+    var color: Color { Color(hex: hex) }
+}
+
+/// Shared keys + defaults for the coral appearance settings. Views bind via `@AppStorage`;
+/// non-View contexts (e.g. the app-wide accent, Phase 3D) read the resolvers below.
+enum CoralSettings {
+    static let presetKey          = "coral_preset"
+    static let strengthKey        = "coral_strength"          // 0…1; 0.5 ≈ the original glow
+    static let editorBreathingKey = "coral_breathing_in_editor"
+    static let defaultStrength: Double = 0.5
+
+    static var preset: CoralPreset {
+        CoralPreset(rawValue: UserDefaults.standard.string(forKey: presetKey) ?? "") ?? .classic
+    }
+    static var strength: Double {
+        (UserDefaults.standard.object(forKey: strengthKey) as? Double) ?? defaultStrength
+    }
+}
+
 // MARK: - 2. AtmosphereGlow (signature soft coral radial top-glow; blue calm variant)
 
 struct AtmosphereGlow: View {
     @Environment(\.colorScheme) private var scheme
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @AppStorage(CoralSettings.presetKey) private var presetRaw: String = CoralPreset.classic.rawValue
+    @AppStorage(CoralSettings.strengthKey) private var strength: Double = CoralSettings.defaultStrength
     var calm: Bool = false                                   // blue accentCalm for empathy/reset
-    private var glow: Color { calm ? Momentum.accentCalm : Momentum.accent }
+    private var glow: Color { calm ? Momentum.accentCalm : (CoralPreset(rawValue: presetRaw) ?? .classic).color }
     private var base: Color { scheme == .dark ? Color(hex: 0x121214) : Momentum.surface }
+    // strength (0…1) scales the glow; 0.5 reproduces the original 0.42 / 0.22 peak.
+    private var peakOpacity: Double { (scheme == .dark ? 0.44 : 0.84) * strength }
+    private var midOpacity: Double { 0.24 * strength }
     @State private var breathe = false
     var body: some View {
         base
             .overlay(alignment: .top) {
                 RadialGradient(
                     gradient: Gradient(colors: [
-                        glow.opacity(scheme == .dark ? 0.22 : 0.42),
-                        glow.opacity(0.12),
+                        glow.opacity(peakOpacity),
+                        glow.opacity(midOpacity),
                         base.opacity(0)
                     ]),
                     center: UnitPoint(x: 0.72, y: 0.05),
@@ -118,6 +169,116 @@ struct AtmosphereGlow: View {
                 }
             }
             .ignoresSafeArea()
+    }
+}
+
+// MARK: - Editor coral glow (breathing behind the writing surface; BPM-damped)
+
+/// The signature coral atmosphere, scoped to the note editor and gently *breathing*. The pulse
+/// period is loosely tied to the note's BPM (damped — an interactive feel, never the literal
+/// tempo). Honors the "Breathe inside notes" preference; renders nothing when it's off.
+struct EditorCoralGlow: View {
+    var bpm: Int?
+    @Environment(\.colorScheme) private var scheme
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @AppStorage(CoralSettings.presetKey) private var presetRaw: String = CoralPreset.classic.rawValue
+    @AppStorage(CoralSettings.strengthKey) private var strength: Double = CoralSettings.defaultStrength
+    @AppStorage(CoralSettings.editorBreathingKey) private var enabled: Bool = true
+    @State private var breathe = false
+
+    private var glow: Color { (CoralPreset(rawValue: presetRaw) ?? .classic).color }
+    // Subtler than the home background so it never fights the text.
+    private var peak: Double { (scheme == .dark ? 0.16 : 0.26) * strength }
+    private var mid: Double { 0.08 * strength }
+    // Damped BPM → period: 60bpm→12s, 220bpm→6s, unset→9s. Deliberately NOT the literal beat.
+    private var period: Double {
+        guard let bpm else { return 9 }
+        let c = Double(min(max(bpm, 60), 220))
+        return 12 - (c - 60) / 160 * 6
+    }
+
+    var body: some View {
+        ZStack {
+            if enabled {
+                RadialGradient(
+                    gradient: Gradient(colors: [glow.opacity(peak), glow.opacity(mid), glow.opacity(0)]),
+                    center: UnitPoint(x: 0.7, y: 0.12),
+                    startRadius: 0,
+                    endRadius: 440
+                )
+                .scaleEffect(breathe ? 1.05 : 1.0, anchor: .top)
+                .opacity(breathe ? 0.78 : 1.0)
+                .allowsHitTesting(false)
+                .onAppear { animate() }
+                .onChange(of: period) { _, _ in animate() }
+            }
+        }
+    }
+
+    private func animate() {
+        guard enabled, !reduceMotion else { return }
+        breathe = false
+        withAnimation(.easeInOut(duration: period).repeatForever(autoreverses: true)) {
+            breathe = true
+        }
+    }
+}
+
+// MARK: - Coral appearance controls (Profile → App)
+
+/// Preset swatches + strength + breathing toggle. Concrete + self-contained so the large
+/// profile body in CCV.12 keeps type-checking fast.
+struct CoralAppearanceSection: View {
+    @AppStorage(CoralSettings.presetKey) private var presetRaw: String = CoralPreset.classic.rawValue
+    @AppStorage(CoralSettings.strengthKey) private var strength: Double = CoralSettings.defaultStrength
+    @AppStorage(CoralSettings.editorBreathingKey) private var breatheInEditor: Bool = true
+
+    private var selected: CoralPreset { CoralPreset(rawValue: presetRaw) ?? .classic }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack(spacing: 12) {
+                ForEach(CoralPreset.allCases) { preset in
+                    Button {
+                        presetRaw = preset.rawValue
+                    } label: {
+                        Circle()
+                            .fill(preset.color)
+                            .frame(width: 34, height: 34)
+                            .overlay(Circle().strokeBorder(Momentum.hairline, lineWidth: Momentum.lineThin))
+                            .overlay(Circle().strokeBorder(Momentum.contentPrimary,
+                                                           lineWidth: preset == selected ? 2.5 : 0))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(preset.label)
+                    .accessibilityAddTraits(preset == selected ? .isSelected : [])
+                }
+            }
+
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Text("Strength")
+                        .font(.momentumMetadata)
+                        .foregroundStyle(Momentum.contentSecondary)
+                    Spacer()
+                    Text("\(Int((strength * 100).rounded()))%")
+                        .font(.momentumMetadata)
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .monospacedDigit()
+                }
+                Slider(value: $strength, in: 0...1).tint(selected.color)
+            }
+
+            Toggle(isOn: $breatheInEditor) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Breathe inside notes").font(.momentumBody)
+                    Text("A gentle coral pulse behind your writing.")
+                        .font(.momentumMetadata)
+                        .foregroundStyle(Momentum.contentSecondary)
+                }
+            }
+            .tint(selected.color)
+        }
     }
 }
 

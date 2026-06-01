@@ -697,6 +697,11 @@ struct ProfilePopoverView: View {
     private var appTab: some View {
         VStack(alignment: .leading, spacing: 28) {
             VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "Coral")
+                CoralAppearanceSection()
+            }
+
+            VStack(alignment: .leading, spacing: 12) {
                 MomentumSectionHeader(title: "Notifications")
                 NotificationPreferencesView()
             }

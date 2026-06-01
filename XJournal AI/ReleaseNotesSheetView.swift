@@ -3,33 +3,36 @@
 //  The Final Journal AI
 //
 //  Extracted from ContentView.swift
+//  Momentum reskin (2026-05-31): flat hairline cards on the signature coral
+//  AtmosphereGlow, coral accents throughout. Retired the old glassmorphic gloss.
 //
 
 import SwiftUI
 
 // MARK: - PAGE 1.1.1: Release Notes Sheet (Segment 1)
-// NOTE: GlassSettings is defined in ContentView.swift
 
 struct ReleaseNotesSheetView: View {
-    @Environment(\.colorScheme) private var colorScheme
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 28) {
+            VStack(alignment: .leading, spacing: 24) {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("What's New")
                         .font(.largeTitle.weight(.bold))
+                        .foregroundStyle(Momentum.contentPrimary)
 
                     Text("The Final Journal AI")
                         .font(.headline)
                         .foregroundStyle(Momentum.contentSecondary)
                 }
                 .padding(.top, 12)
+                .padding(.bottom, 4)
 
                 featureCard(
                     symbolName: "waveform.path",
                     version: "1.4.0",
                     title: "Audio Intelligence & Analytics",
                     description: "Advanced audio transcription, interactive playback, and comprehensive analytics dashboard.",
+                    isLatest: true,
                     bullets: [
                         "High-fidelity on-device audio transcription with timestamped segments",
                         "Interactive audio detail sheet with synchronized text highlighting",
@@ -113,10 +116,7 @@ struct ReleaseNotesSheetView: View {
             }
             .padding(24)
         }
-        .background(
-            Rectangle()
-                .fill(Momentum.surfaceElevated)                .ignoresSafeArea()
-        )
+        .background(AtmosphereGlow())
     }
 
     @ViewBuilder
@@ -125,67 +125,78 @@ struct ReleaseNotesSheetView: View {
         version: String,
         title: String,
         description: String,
+        isLatest: Bool = false,
         bullets: [String]
     ) -> some View {
-        HStack(spacing: 16) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 22, style: .continuous)
-                    .fill(Momentum.surfaceElevated)
-                    .overlay(
-                        LinearGradient(
-                            colors: [
-                                .white.opacity((GlassSettings.gloss - 0.6) / 3),
-                                .white.opacity((GlassSettings.gloss - 0.6) / 4),
-                                .white.opacity((GlassSettings.gloss - 0.6) / 3)
-                            ],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                        .blendMode(.overlay)
-                        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
-                    )
+        VStack(alignment: .leading, spacing: 14) {
+            HStack(spacing: 14) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .fill(Momentum.accent.opacity(0.14))
+                    Image(systemName: symbolName)
+                        .font(.system(size: 26, weight: .semibold))
+                        .foregroundStyle(Momentum.accent)
+                }
+                .frame(width: 52, height: 52)
 
-                Image(systemName: symbolName)
-                    .font(.system(size: 44, weight: .semibold))
-                    .foregroundStyle(.primary)
+                VStack(alignment: .leading, spacing: 4) {
+                    HStack(spacing: 8) {
+                        Text("VERSION \(version)")
+                            .font(.momentumSection)
+                            .tracking(1.2)
+                            .foregroundStyle(Momentum.accent)
+
+                        if isLatest {
+                            Text("LATEST")
+                                .font(.system(size: 10, weight: .bold))
+                                .tracking(0.8)
+                                .foregroundStyle(Momentum.onInverse)
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 3)
+                                .background(Capsule().fill(Momentum.accent))
+                        }
+                    }
+
+                    Text(title)
+                        .font(.title3.weight(.semibold))
+                        .foregroundStyle(Momentum.contentPrimary)
+                }
+
+                Spacer(minLength: 0)
             }
-            .frame(width: 120, height: 120)
 
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Version \(version)")
-                    .font(.caption)
-                    .foregroundStyle(Momentum.contentSecondary)
+            Text(description)
+                .font(.callout)
+                .foregroundStyle(Momentum.contentSecondary)
 
-                Text(title)
-                    .font(.title3.weight(.semibold))
+            Rectangle()
+                .fill(Momentum.hairline)
+                .frame(height: Momentum.lineThin)
+                .padding(.vertical, 2)
 
-                Text(description)
-                    .font(.callout)
-                    .foregroundStyle(Momentum.contentSecondary)
-
-                VStack(alignment: .leading, spacing: 6) {
-                    ForEach(bullets, id: \.self) { bullet in
-                        Text("• \(bullet)")
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(bullets, id: \.self) { bullet in
+                    HStack(alignment: .firstTextBaseline, spacing: 10) {
+                        Circle()
+                            .fill(Momentum.accent)
+                            .frame(width: 6, height: 6)
+                            .offset(y: -1)
+                        Text(bullet)
                             .font(.callout)
+                            .foregroundStyle(Momentum.contentPrimary)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                 }
             }
         }
         .padding(20)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(
-            RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(Momentum.surfaceElevated)                .overlay(
-                    LinearGradient(
-                        colors: [
-                            .white.opacity((GlassSettings.gloss - 0.6) / 3),
-                            .white.opacity((GlassSettings.gloss - 0.6) / 4),
-                            .white.opacity((GlassSettings.gloss - 0.6) / 3)
-                        ],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                    .blendMode(.overlay)
-                    .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .fill(Momentum.surfaceElevated)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                        .strokeBorder(Momentum.hairline, lineWidth: Momentum.lineThin)
                 )
         )
     }

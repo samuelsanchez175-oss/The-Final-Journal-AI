@@ -440,6 +440,7 @@ struct NoteEditorView: View {
                     }
                     .frame(maxWidth: 680) // Constrain to max width, center within parent
                 .coordinateSpace(name: "editorScroll")
+                .background(EditorCoralGlow(bpm: item.bpm))
                 .onPreferenceChange(ScrollOffsetKey.self) { value in
                     scrollOffset = value
                     }
