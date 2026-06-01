@@ -13,6 +13,9 @@ struct RapMetrics: Codable {
     let cadence: CadenceSummary
     let averageSyllables: Double
     let syllableVariance: Double
+    let bpm: Int? // Musical tempo (60-220)
+    let key: String? // Musical key (e.g., "C", "D", "A#")
+    let scale: String? // Scale type (e.g., "Major", "Dorian", "Chromatic")
 }
 
 struct CadenceSummary: Codable {
@@ -34,7 +37,7 @@ private enum RhymeStrength: Double {
     case slant = 0.55
 }
 
-// NOTE: Highlight is defined in ContentView.swift and is accessible here
+// NOTE: Highlight is defined in ContentView.CCV.3.swift
 
 private struct CadenceMetrics {
     struct LineMetrics {
@@ -133,7 +136,7 @@ struct RapAnalysisEngine {
     
     // MARK: - Main Analysis Function
     
-    func extractMetrics(text: String, highlights: [Highlight]) -> RapMetrics {
+    func extractMetrics(text: String, highlights: [Highlight], bpm: Int? = nil, key: String? = nil, scale: String? = nil) -> RapMetrics {
         // Use existing CadenceAnalyzer
         let cadence = cadenceAnalyzer.analyze(text: text, highlights: highlights)
         
@@ -187,7 +190,10 @@ struct RapAnalysisEngine {
             rhymeScheme: rhymeScheme,
             cadence: cadenceSummary,
             averageSyllables: cadence.averageSyllables,
-            syllableVariance: cadence.syllableVariance
+            syllableVariance: cadence.syllableVariance,
+            bpm: bpm,
+            key: key,
+            scale: scale
         )
     }
     

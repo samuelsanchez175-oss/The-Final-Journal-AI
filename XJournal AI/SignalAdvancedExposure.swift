@@ -19,11 +19,12 @@ class SignalAdvancedExposure {
     // MARK: - Generate Advanced Info
     
     func generateAdvancedInfo(
-        profile: SignalProfile,
+        metrics: SignalMetrics,
         mode: SignalMode,
-        axes: SignalAxes
+        axes: SignalAxes,
+        profile: SignalProfile
     ) -> SignalAdvancedInfo {
-        let reason = generateModeSelectionReason(profile: profile, mode: mode)
+        let reason = generateModeSelectionReason(metrics: metrics, mode: mode)
         
         return SignalAdvancedInfo(
             mode: mode,
@@ -35,20 +36,20 @@ class SignalAdvancedExposure {
     
     // MARK: - Generate Mode Selection Reason
     
-    private func generateModeSelectionReason(profile: SignalProfile, mode: SignalMode) -> String {
+    private func generateModeSelectionReason(metrics: SignalMetrics, mode: SignalMode) -> String {
         switch mode {
         case .uncontainedVulnerability:
-            return "High emotion (\(String(format: "%.0f", profile.emotionalLeakage * 100))%) and explanation (\(String(format: "%.0f", profile.explanationDensity * 100))%) without closure detected. Authority unstable."
+            return "High emotion (\(String(format: "%.0f", metrics.emotionalLeakage * 100))%) and explanation (\(String(format: "%.0f", metrics.explanationDensity * 100))%) without closure detected. Authority unstable."
         case .lossAcknowledgmentWithoutAttribution:
-            return "High emotion (\(String(format: "%.0f", profile.emotionalLeakage * 100))%) with low specificity (\(String(format: "%.0f", profile.specificityLoad * 100))%) suggests loss acknowledgment without attribution."
+            return "High emotion (\(String(format: "%.0f", metrics.emotionalLeakage * 100))%) with low specificity (\(String(format: "%.0f", metrics.specificityLoad * 100))%) suggests loss acknowledgment without attribution."
         case .voluntaryIsolation:
             return "Low emotion and defensive tone suggests voluntary isolation. Distance without hostility."
         case .noRepair:
-            return "Defensive framing (\(String(format: "%.0f", profile.defensiveFraming * 100))%) with explanation suggests relationship closure. No repair mode activated."
+            return "Defensive framing (\(String(format: "%.0f", metrics.defensiveFraming * 100))%) with explanation suggests relationship closure. No repair mode activated."
         case .informationRefusal:
-            return "Low explanation (\(String(format: "%.0f", profile.explanationDensity * 100))%) and specificity suggests information refusal. Ambiguity preferred."
+            return "Low explanation (\(String(format: "%.0f", metrics.explanationDensity * 100))%) and specificity suggests information refusal. Ambiguity preferred."
         case .declarativeClosureWithoutEvidence:
-            return "High authority (\(String(format: "%.0f", profile.authorityPosture * 100))%) with low explanation suggests declarative closure without evidence."
+            return "High authority (\(String(format: "%.0f", metrics.authorityPosture * 100))%) with low explanation suggests declarative closure without evidence."
         case .postChaosStabilization:
             return "Low emotion, moderate authority suggests post-chaos stabilization. Structure over spectacle."
         case .defaultExpressive:

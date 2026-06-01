@@ -55,11 +55,11 @@ struct RhymeHighlighterEngine {
         return PhoneticSignature(stressedVowel: vowel, coda: coda)
     }
     
-    private static func baseVowelSound(_ vowel: String) -> String {
+    nonisolated private static func baseVowelSound(_ vowel: String) -> String {
         return String(vowel.dropLast())
     }
     
-    private static func areVowelsSimilar(_ vowelA: String, _ vowelB: String) -> Bool {
+    nonisolated private static func areVowelsSimilar(_ vowelA: String, _ vowelB: String) -> Bool {
         let baseA = baseVowelSound(vowelA)
         let baseB = baseVowelSound(vowelB)
         
@@ -87,7 +87,7 @@ struct RhymeHighlighterEngine {
         return false
     }
     
-    private static func areCodasSimilar(_ codaA: [String], _ codaB: [String]) -> Bool {
+    nonisolated private static func areCodasSimilar(_ codaA: [String], _ codaB: [String]) -> Bool {
         if codaA == codaB {
             return true
         }
@@ -297,6 +297,8 @@ final class RhymeEngineState: ObservableObject {
     private var debounceTask: Task<Void, Never>? = nil
     private let debounceDelay: TimeInterval = 0.4
     
+    private var cmudictObserver: NSObjectProtocol?
+    
     init() {
         NotificationCenter.default.addObserver(
             forName: UIApplication.didReceiveMemoryWarningNotification,
@@ -308,15 +310,37 @@ final class RhymeEngineState: ObservableObject {
                 self?.clearCaches()
             }
         }
+        cmudictObserver = NotificationCenter.default.addObserver(
+            forName: .cmudictDidFinishLoading,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            Task { @MainActor [weak self] in
+                self?.retryIfNeededAfterDictionaryLoad()
+            }
+        }
     }
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+        if let obs = cmudictObserver {
+            NotificationCenter.default.removeObserver(obs)
+        }
     }
     
     private func clearCaches() {
         wordSignatureCache.removeAll(keepingCapacity: false)
         print("⚠️ RhymeEngineState: Caches cleared due to memory warning")
+    }
+    
+    /// Re-run rhyme analysis when CMUDICT finishes loading (handles race where user typed before dictionary was ready).
+    private func retryIfNeededAfterDictionaryLoad() {
+        guard !lastText.isEmpty else { return }
+        Task { @MainActor in
+            let (groups, highlights) = await RhymeHighlighterEngine.computeAll(text: lastText)
+            cachedGroups = groups
+            cachedHighlights = highlights
+        }
     }
 
     func updateIfNeeded(text: String) {
@@ -340,6 +364,18 @@ final class RhymeEngineState: ObservableObject {
             self.cachedHighlights = highlights
             self.lastTextHash = hash
             self.lastText = textToAnalyze
+        }
+    }
+
+    /// Run rhyme analysis immediately (no debounce). Use when opening Model G so the sheet has fresh rhyme groups.
+    func refreshImmediately(text: String) async {
+        debounceTask?.cancel()
+        let (groups, highlights) = await RhymeHighlighterEngine.computeAll(text: text)
+        await MainActor.run {
+            self.cachedGroups = groups
+            self.cachedHighlights = highlights
+            self.lastTextHash = text.hashValue
+            self.lastText = text
         }
     }
 }

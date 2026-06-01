@@ -18,8 +18,8 @@ class UserBehaviorTracker {
     private var currentSessionStartTime: Date?
     
     private init() {
-        // Start a session on initialization
-        startSession()
+        // DO NOT start session on initialization - it blocks startup
+        // Session will be started lazily when first accessed
     }
     
     // MARK: - Session Management

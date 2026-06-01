@@ -82,7 +82,7 @@ class SignalModeResolver {
     
     // MARK: - Mode Resolution
     
-    func resolveMode(from profile: SignalProfile) -> SignalMode {
+    func resolveMode(from profile: SignalMetrics) -> SignalMode {
         // Priority order matters - check most specific first
         
         // 1. Uncontained Vulnerability: High emotion + high explanation + no closure
@@ -291,7 +291,7 @@ class SignalModeResolver {
 // MARK: - Convenience Extension
 
 extension SignalMode {
-    static func resolveMode(from profile: SignalProfile) -> SignalMode {
+    static func resolveMode(from profile: SignalMetrics) -> SignalMode {
         return SignalModeResolver.shared.resolveMode(from: profile)
     }
     

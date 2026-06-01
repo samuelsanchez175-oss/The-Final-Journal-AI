@@ -7,13 +7,20 @@ import UserNotifications
 class SmartNotificationManager {
     static let shared = SmartNotificationManager()
     
+    private var hasRequestedPermission = false
+    
     private init() {
-        requestNotificationPermission()
+        // DO NOT request permission synchronously - it blocks startup
+        // Will be requested lazily when first needed
     }
     
     // MARK: - Notification Permission
     
     func requestNotificationPermission() {
+        // Only request once
+        guard !hasRequestedPermission else { return }
+        hasRequestedPermission = true
+        
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
             if let error = error {
                 print("Notification permission error: \(error)")
@@ -23,20 +30,34 @@ class SmartNotificationManager {
     
     // MARK: - Schedule Notifications
     
-    func scheduleContextualNotifications() {
+    /// Schedule contextual notifications asynchronously on background thread
+    /// This should be called after UI is fully rendered to avoid blocking startup
+    func scheduleContextualNotifications() async {
+        StartupPerformanceTracker.shared.recordMilestone("smart_notifications_start")
+        
+        // Perform churn analysis on background thread
         let assessment = ChurnRiskAnalyzer.shared.assessChurnRisk()
+        StartupPerformanceTracker.shared.recordMilestone("churn_analysis_complete")
+        
+        // Get engagement metrics on background thread
         let engagementMetrics = UserBehaviorTracker.shared.getEngagementMetrics()
+        StartupPerformanceTracker.shared.recordMilestone("engagement_metrics_complete")
         
-        // Check for writing streak reminders
-        scheduleWritingStreakReminder(engagementMetrics: engagementMetrics)
-        
-        // Check for feature tips
-        scheduleFeatureTips(engagementMetrics: engagementMetrics)
-        
-        // Check for churn interventions
-        if assessment.riskLevel == .high || assessment.riskLevel == .medium {
-            scheduleChurnIntervention(assessment: assessment)
+        // Schedule notifications (these are async operations)
+        await MainActor.run {
+            // Check for writing streak reminders
+            self.scheduleWritingStreakReminder(engagementMetrics: engagementMetrics)
+            
+            // Check for feature tips
+            self.scheduleFeatureTips(engagementMetrics: engagementMetrics)
+            
+            // Check for churn interventions
+            if assessment.riskLevel == .high || assessment.riskLevel == .medium {
+                self.scheduleChurnIntervention(assessment: assessment)
+            }
         }
+        
+        StartupPerformanceTracker.shared.recordMilestone("smart_notifications_complete")
     }
     
     // MARK: - Writing Streak Reminders
@@ -83,7 +104,8 @@ class SmartNotificationManager {
     
     private func scheduleChurnIntervention(assessment: ChurnRiskAssessment) {
         let interventionManager = ChurnInterventionManager.shared
-        interventionManager.checkAndTriggerInterventions()
+        // Pass assessment to avoid duplicate churn analysis
+        interventionManager.checkAndTriggerInterventions(assessment: assessment)
         
         if let intervention = interventionManager.getNextIntervention() {
             let content = UNMutableNotificationContent()

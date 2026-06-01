@@ -7,47 +7,66 @@ import SwiftUI
 class FeatureGate {
     static let shared = FeatureGate()
     
+    // MARK: - Development Mode
+    // Set to true to disable all feature gates during development
+    private static let isDevelopmentMode = true
+    
     private init() {}
     
     // MARK: - Feature Access Checks
     
     /// Check if user can access a premium feature
-    /// DISABLED: Always returns true - subscriptions disabled
+    /// DEVELOPMENT MODE: Always returns true - all features enabled
     static func canAccess(_ feature: PremiumFeature) -> Bool {
-        return true // Always allow access - subscriptions disabled
+        if isDevelopmentMode {
+            return true // Always allow access in development
+        }
+        // Production code (disabled during development):
         // return SubscriptionManager.shared.hasTier(feature.requiredTier)
+        return true
     }
     
     /// Require a specific tier, return false if not met (for showing paywall)
-    /// DISABLED: Always returns true - subscriptions disabled
+    /// DEVELOPMENT MODE: Always returns true - all features enabled
     static func requireTier(_ tier: SubscriptionTier, featureName: String) -> Bool {
-        return true // Always allow - subscriptions disabled
+        if isDevelopmentMode {
+            return true // Always allow in development
+        }
+        // Production code (disabled during development):
         // if !SubscriptionManager.shared.hasTier(tier) {
         //     return false
         // }
-        // return true
+        return true
     }
     
     /// Check if user can use a feature and optionally show paywall
-    /// DISABLED: Always returns true - subscriptions disabled
+    /// DEVELOPMENT MODE: Always returns true - all features enabled (paywall never shown)
     static func checkAccess(
         _ feature: PremiumFeature,
         showPaywall: @escaping (String) -> Void
     ) -> Bool {
-        return true // Always allow access - subscriptions disabled
+        if isDevelopmentMode {
+            return true // Always allow access in development (paywall never shown)
+        }
+        // Production code (disabled during development):
         // if canAccess(feature) {
         //     return true
         // } else {
         //     showPaywall(feature.displayName)
         //     return false
         // }
+        return true
     }
     
     /// Get the required tier for a feature
-    /// DISABLED: Always returns .none - subscriptions disabled
+    /// DEVELOPMENT MODE: Always returns .none - no tier required
     static func requiredTier(for feature: PremiumFeature) -> SubscriptionTier {
-        return .none // Always return none tier - subscriptions disabled
+        if isDevelopmentMode {
+            return .none // No tier required in development
+        }
+        // Production code (disabled during development):
         // return feature.requiredTier
+        return .none
     }
 }
 
@@ -57,6 +76,7 @@ enum PremiumFeature {
     case aiSuggestions
     case rewriteLine
     case improveFlow
+    case generateLyricsFromFlow
     case styleTransfer
     case themeExpansion
     case exportPDF
@@ -70,7 +90,7 @@ enum PremiumFeature {
         switch self {
         case .aiSuggestions, .rewriteLine, .improveFlow, .exportPDF, .exportWord, .cloudSync, .prioritySupport:
             return .basic
-        case .styleTransfer, .themeExpansion, .analytics, .advancedDiagnostics:
+        case .generateLyricsFromFlow, .styleTransfer, .themeExpansion, .analytics, .advancedDiagnostics:
             return .pro
         }
     }
@@ -83,8 +103,10 @@ enum PremiumFeature {
             return "Rewrite Line"
         case .improveFlow:
             return "Improve Flow"
+        case .generateLyricsFromFlow:
+            return "Generate Lyrics from Flow"
         case .styleTransfer:
-            return "Style Transfer"
+            return "A&R Critique"
         case .themeExpansion:
             return "Theme Expansion"
         case .exportPDF:
@@ -110,8 +132,10 @@ enum PremiumFeature {
             return "Rewrite lines with AI assistance"
         case .improveFlow:
             return "Improve the flow and cadence of your lyrics"
+        case .generateLyricsFromFlow:
+            return "Generate lyrics from your recorded flow or mumble"
         case .styleTransfer:
-            return "Rewrite lyrics in the style of any artist"
+            return "Get A&R-style line-by-line critiques of your writing"
         case .themeExpansion:
             return "Expand on themes and explore related concepts"
         case .exportPDF:

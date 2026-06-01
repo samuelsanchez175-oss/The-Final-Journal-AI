@@ -119,7 +119,7 @@ class SignalMemory {
     
     // MARK: - Determine Note Type from Text
     
-    private func determineNoteType(from noteText: String) -> SignalNoteType? {
+    func determineNoteType(from noteText: String) -> SignalNoteType? {
         let lowercased = noteText.lowercased()
         
         // Match note text to type (using key phrases from templates)
@@ -158,6 +158,87 @@ class SignalMemory {
         return nil
     }
     
+    // MARK: - Thematic State Memory
+    
+    private let wealthDripAscensionKey = "thematic_state_wealth_drip_ascension"
+    private let wealthDripAscensionHistoryKey = "thematic_state_wealth_drip_ascension_history"
+    
+    /// Track when user enters Wealth-Drip-Ascension zone
+    func recordThematicState(_ state: ThematicState, timestamp: Date = Date()) {
+        guard state == .wealthDripAscension else { return }
+        
+        // Get existing count
+        let currentCount = userDefaults.integer(forKey: wealthDripAscensionKey)
+        userDefaults.set(currentCount + 1, forKey: wealthDripAscensionKey)
+        
+        // Store timestamp in history
+        var timestamps = userDefaults.array(forKey: wealthDripAscensionHistoryKey) as? [TimeInterval] ?? []
+        timestamps.append(timestamp.timeIntervalSince1970)
+        
+        // Keep only last 50 occurrences
+        if timestamps.count > 50 {
+            timestamps = Array(timestamps.suffix(50))
+        }
+        
+        userDefaults.set(timestamps, forKey: wealthDripAscensionHistoryKey)
+    }
+    
+    /// Get frequency of Wealth-Drip-Ascension state in time window
+    func getWealthDripAscensionFrequency(timeWindow: TimeInterval = 86400) -> Int {
+        guard let timestamps = userDefaults.array(forKey: wealthDripAscensionHistoryKey) as? [TimeInterval] else {
+            return 0
+        }
+        
+        let cutoffTime = Date().timeIntervalSince1970 - timeWindow
+        return timestamps.filter { $0 >= cutoffTime }.count
+    }
+    
+    /// Check if user repeatedly enters Wealth-Drip-Ascension zone
+    func hasRepeatedWealthDripAscension(threshold: Int = 5, timeWindow: TimeInterval = 86400) -> Bool {
+        return getWealthDripAscensionFrequency(timeWindow: timeWindow) >= threshold
+    }
+    
+    /// Get adjusted authority threshold for high-cost terms
+    /// Lower threshold when user repeatedly enters Wealth-Drip-Ascension zone
+    func getAdjustedAuthorityThreshold(baseThreshold: Double) -> Double {
+        let frequency = getWealthDripAscensionFrequency(timeWindow: 86400) // Last 24 hours
+        
+        // If user has entered zone 5+ times in last 24 hours, lower threshold by 0.1
+        if frequency >= 5 {
+            return max(0.0, baseThreshold - 0.1)
+        }
+        
+        // If user has entered zone 10+ times, lower threshold by 0.2
+        if frequency >= 10 {
+            return max(0.0, baseThreshold - 0.2)
+        }
+        
+        return baseThreshold
+    }
+    
+    /// Get adjusted overuse penalty for juvenile flex language
+    /// Raise penalty when user repeatedly enters Wealth-Drip-Ascension zone
+    func getAdjustedOverusePenalty(basePenalty: Double, category: LexiconTermCategory) -> Double {
+        // Only adjust for luxury_list and acquisition categories (juvenile flex markers)
+        guard category == .luxuryList || category == .acquisition else {
+            return basePenalty
+        }
+        
+        let frequency = getWealthDripAscensionFrequency(timeWindow: 86400) // Last 24 hours
+        
+        // If user has entered zone 5+ times, raise penalty by 0.1
+        if frequency >= 5 {
+            return min(1.0, basePenalty + 0.1)
+        }
+        
+        // If user has entered zone 10+ times, raise penalty by 0.2
+        if frequency >= 10 {
+            return min(1.0, basePenalty + 0.2)
+        }
+        
+        return basePenalty
+    }
+    
     // MARK: - Clear Patterns
     
     func clearPatterns() {
@@ -177,5 +258,9 @@ class SignalMemory {
             userDefaults.removeObject(forKey: timestampKey)
             userDefaults.removeObject(forKey: historyKey)
         }
+        
+        // Clear thematic state memory
+        userDefaults.removeObject(forKey: wealthDripAscensionKey)
+        userDefaults.removeObject(forKey: wealthDripAscensionHistoryKey)
     }
 }

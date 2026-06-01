@@ -10,6 +10,7 @@ final class Item {
     var audioPath: String?
     var transcription: String?
     var transcriptionSegments: [TranscriptionSegment]?
+    var transcriptionRhythmMapData: Data? // JSON-encoded RhythmicTranscriptionResult
     var audioSummary: String?
     var audioDuration: TimeInterval?
     
@@ -19,7 +20,11 @@ final class Item {
     var scale: String? // Scale type (e.g., "Major", "Dorian", "Chromatic")
     var urlAttachment: String? // URL for YouTube beat, etc.
     var folder: String? // Folder name for filtering
-    
+
+    // MARK: - Model G Beat Fingerprint
+    var beatFingerprintData: Data? // JSON-encoded BeatFingerprint
+    var beatFingerprintHash: String? // Hash to detect audio file changes; re-analyze only if changed
+
     // MARK: - AI Text Tracking
     var aiTextRanges: [String] = [] // Store AI text ranges as strings (startIndex:endIndex format)
 
@@ -38,5 +43,7 @@ final class Item {
         self.scale = nil
         self.urlAttachment = nil
         self.folder = nil
+        self.beatFingerprintData = nil
+        self.beatFingerprintHash = nil
     }
 }

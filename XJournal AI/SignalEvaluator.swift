@@ -17,10 +17,55 @@ struct SignalEvaluation {
     }
 }
 
+// MARK: - Term Usage Tracking
+
+struct TermUsage {
+    let term: String
+    let category: LexiconTermCategory
+    let timestamp: Date
+}
+
+// MARK: - Axis Nudge Accumulation
+
+struct AxisNudgeAccumulation {
+    var authorityDelta: Double = 0.0
+    var exposureDelta: Double = 0.0
+    var dominanceDelta: Double = 0.0
+    var riskDelta: Double = 0.0
+    
+    // Soft caps to prevent drift
+    private let maxAuthorityDelta: Double = 0.3
+    private let maxExposureDelta: Double = 0.3
+    private let maxDominanceDelta: Double = 0.3
+    private let maxRiskDelta: Double = 0.3
+    
+    mutating func addNudge(authority: Double = 0.0, exposure: Double = 0.0, dominance: Double = 0.0, risk: Double = 0.0) {
+        authorityDelta = clamp(authorityDelta + authority, max: maxAuthorityDelta)
+        exposureDelta = clamp(exposureDelta + exposure, max: maxExposureDelta)
+        dominanceDelta = clamp(dominanceDelta + dominance, max: maxDominanceDelta)
+        riskDelta = clamp(riskDelta + risk, max: maxRiskDelta)
+    }
+    
+    private func clamp(_ value: Double, max: Double) -> Double {
+        return Swift.max(-max, Swift.min(max, value))
+    }
+    
+    mutating func reset() {
+        authorityDelta = 0.0
+        exposureDelta = 0.0
+        dominanceDelta = 0.0
+        riskDelta = 0.0
+    }
+}
+
 // MARK: - Signal Evaluator
 
 class SignalEvaluator {
     static let shared = SignalEvaluator()
+    
+    private var recentTermUsage: [TermUsage] = []  // Track last 20 bars
+    private var sessionNudgeAccumulation = AxisNudgeAccumulation()
+    private let recentBarsWindow = 20
     
     private init() {}
     
@@ -49,6 +94,9 @@ class SignalEvaluator {
         mode: SignalMode,
         axes: SignalAxes
     ) -> SignalEvaluation {
+        // Track term usage and apply axis nudges
+        trackTermUsageAndApplyNudges(suggestion: suggestion)
+        
         let emotionalContainment = evaluateEmotionalContainment(suggestion: suggestion, mode: mode)
         let authorityConsistency = evaluateAuthorityConsistency(suggestion: suggestion, axes: axes)
         let modeAdherence = evaluateModeAdherence(suggestion: suggestion, mode: mode)
@@ -60,6 +108,95 @@ class SignalEvaluator {
             modeAdherence: modeAdherence,
             reductionVsEscalation: reductionVsEscalation
         )
+    }
+    
+    // MARK: - Term Usage Tracking and Axis Nudges
+    
+    private func trackTermUsageAndApplyNudges(suggestion: RapSuggestion) {
+        let text = suggestion.text.lowercased()
+        let lexiconStore = LexiconStore.shared
+        
+        // Check each word/phrase against lexicon
+        let words = text.components(separatedBy: .whitespacesAndNewlines)
+            .map { $0.trimmingCharacters(in: CharacterSet.punctuationCharacters) }
+            .filter { !$0.isEmpty }
+        
+        for word in words {
+            // Try to find term in lexicon
+            if let term = lexiconStore.getTerm(word) {
+                // Track usage
+                let usage = TermUsage(
+                    term: term.term,
+                    category: term.category,
+                    timestamp: Date()
+                )
+                recentTermUsage.append(usage)
+                
+                // Apply axis nudges based on category
+                applyAxisNudges(for: term)
+                
+                // Track in LexiconGate for overuse penalty
+                LexiconGate.shared.trackTermUsage(term.term)
+            }
+        }
+        
+        // Clean old entries (keep last 20 bars worth)
+        let cutoffTime = Date().addingTimeInterval(-180) // ~3 minutes for 20 bars
+        recentTermUsage = recentTermUsage.filter { $0.timestamp > cutoffTime }
+    }
+    
+    private func applyAxisNudges(for term: LexiconTerm) {
+        // Apply small, reversible deltas (0.05-0.15)
+        switch term.category {
+        case .codedLogistics:
+            // coded/logistics terms → +authority, −exposure
+            sessionNudgeAccumulation.addNudge(authority: 0.08, exposure: -0.06)
+            
+        case .declarativeFinality:
+            // declarative finality terms → +dominance, +risk
+            sessionNudgeAccumulation.addNudge(dominance: 0.1, risk: 0.07)
+            
+        case .aftermath, .maintenance:
+            // aftermath/maintenance → slight authority boost, exposure reduction
+            sessionNudgeAccumulation.addNudge(authority: 0.05, exposure: -0.04)
+            
+        case .luxuryList, .acquisition:
+            // luxury/acquisition → slight exposure increase
+            sessionNudgeAccumulation.addNudge(exposure: 0.05)
+            
+        default:
+            break
+        }
+    }
+    
+    // MARK: - Get Current Nudge Accumulation
+    
+    func getCurrentNudgeAccumulation() -> AxisNudgeAccumulation {
+        return sessionNudgeAccumulation
+    }
+    
+    // MARK: - Reset Session Accumulation
+    
+    func resetSessionAccumulation() {
+        sessionNudgeAccumulation.reset()
+    }
+    
+    // MARK: - Check Overuse Penalty
+    
+    func checkOverusePenalty(for term: LexiconTerm) -> Bool {
+        let termKey = term.term.lowercased()
+        let recentUsage = recentTermUsage.filter { $0.term.lowercased() == termKey }
+        
+        // Check if used more than 3 times recently
+        if recentUsage.count > 3 {
+            return true  // Overuse penalty applies
+        }
+        
+        // Check penalty threshold
+        let usageCount = Double(recentUsage.count)
+        let penaltyThreshold = term.overusePenalty * 5.0  // Scale penalty
+        
+        return usageCount >= penaltyThreshold
     }
     
     // MARK: - Calculate Signal Strength

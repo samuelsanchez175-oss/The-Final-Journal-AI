@@ -6,6 +6,10 @@ import Foundation
 class UsageTracker {
     static let shared = UsageTracker()
     
+    // MARK: - Development Mode
+    // Set to true to disable all usage limits during development
+    private static let isDevelopmentMode = true
+    
     private let usageKey = "ai_usage_tracking"
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -92,24 +96,32 @@ class UsageTracker {
     // MARK: - Check Limits
     
     func canUseAISuggestion() -> Bool {
+        // DEVELOPMENT MODE: Always allow in development
+        if Self.isDevelopmentMode { return true }
         if isPremiumUser() { return true }
         let usage = getTodayUsage()
         return usage.aiSuggestionsUsed < freeTierLimits.aiSuggestions
     }
     
     func canUseRewriteLine() -> Bool {
+        // DEVELOPMENT MODE: Always allow in development
+        if Self.isDevelopmentMode { return true }
         if isPremiumUser() { return true }
         let usage = getTodayUsage()
         return usage.rewriteLineUsed < freeTierLimits.rewriteLine
     }
     
     func canUseImproveFlow() -> Bool {
+        // DEVELOPMENT MODE: Always allow in development
+        if Self.isDevelopmentMode { return true }
         if isPremiumUser() { return true }
         let usage = getTodayUsage()
         return usage.improveFlowUsed < freeTierLimits.improveFlow
     }
     
     func canUseSuggestRhymes() -> Bool {
+        // DEVELOPMENT MODE: Always allow in development
+        if Self.isDevelopmentMode { return true }
         if isPremiumUser() { return true }
         let usage = getTodayUsage()
         return usage.suggestRhymesUsed < freeTierLimits.suggestRhymes

@@ -1,9 +1,11 @@
 import Foundation
 import NaturalLanguage
 
-// MARK: - Signal Profile
+// MARK: - Signal Metrics (Legacy)
+// Renamed from SignalProfile to avoid conflict with new SignalProfile in SignalLayerModels.swift
+// Kept for backward compatibility
 
-struct SignalProfile {
+struct SignalMetrics: Codable {
     let explanationDensity: Double      // 0.0-1.0: Frequency of causal language, justification
     let specificityLoad: Double          // 0.0-1.0: Names, acts, sequences, detailed grievances
     let emotionalLeakage: Double        // 0.0-1.0: Repetition of affect, sentiment volatility
@@ -25,16 +27,16 @@ class SignalIngest {
     
     private init() {}
     
-    // MARK: - Main Analysis Function
+    // MARK: - Main Analysis Function (Legacy)
     
-    func analyzeBehavior(text: String) -> SignalProfile {
+    func analyzeBehavior(text: String) -> SignalMetrics {
         let explanationDensity = extractExplanationDensity(text: text)
         let specificityLoad = extractSpecificityLoad(text: text)
         let emotionalLeakage = detectEmotionalLeakage(text: text)
         let defensiveFraming = detectDefensiveFraming(text: text)
         let authorityPosture = detectAuthorityPosture(text: text)
         
-        return SignalProfile(
+        return SignalMetrics(
             explanationDensity: explanationDensity,
             specificityLoad: specificityLoad,
             emotionalLeakage: emotionalLeakage,
@@ -42,6 +44,108 @@ class SignalIngest {
             authorityPosture: authorityPosture
         )
     }
+    
+    // MARK: - New Signal Profile Extraction
+    
+    /// Extracts weak signals from text as optional fields (new SignalProfile format)
+    func extractSignalProfile(text: String) -> SignalProfile {
+        // Extract theme candidates (simple keyword extraction)
+        let themeCandidates = extractThemeCandidates(text: text)
+        
+        // Extract emotional cues
+        let emotionalCues = extractEmotionalCues(text: text)
+        
+        // Infer perspective hint
+        let perspectiveHint = inferPerspectiveHint(text: text)
+        
+        // Extract entity hints
+        let entityHints = extractEntityHints(text: text)
+        
+        return SignalProfile(
+            themeCandidates: themeCandidates.isEmpty ? nil : themeCandidates,
+            emotionalCues: emotionalCues.isEmpty ? nil : emotionalCues,
+            perspectiveHint: perspectiveHint,
+            entityHints: entityHints.isEmpty ? nil : entityHints
+        )
+    }
+    
+    // MARK: - Signal Extraction Helpers
+    
+    private func extractThemeCandidates(text: String) -> [String] {
+        // Simple keyword extraction - can be enhanced with NLP
+        let words = text.lowercased()
+            .components(separatedBy: .whitespacesAndNewlines)
+            .filter { $0.count > 4 }
+            .filter { !stopWords.contains($0) }
+        
+        return Array(Set(words)).prefix(5).map { $0 }
+    }
+    
+    private func extractEmotionalCues(text: String) -> [EmotionCue] {
+        let emotionalWords: [String: Double] = [
+            "hurt": 0.8, "pain": 0.9, "angry": 0.7, "sad": 0.8,
+            "love": 0.7, "hate": 0.9, "fear": 0.8, "joy": 0.6,
+            "confident": 0.7, "hopeful": 0.6, "resentful": 0.8
+        ]
+        
+        let lowercased = text.lowercased()
+        var cues: [EmotionCue] = []
+        
+        for (word, intensity) in emotionalWords {
+            if lowercased.contains(word) {
+                cues.append(EmotionCue(emotion: word, intensity: intensity))
+            }
+        }
+        
+        return cues
+    }
+    
+    private func inferPerspectiveHint(text: String) -> Perspective? {
+        let lowercased = text.lowercased()
+        
+        if lowercased.contains("i ") || lowercased.contains("i'm") || lowercased.contains("i've") {
+            return .first_person
+        } else if lowercased.contains("you ") || lowercased.contains("you're") {
+            return .second_person
+        } else if lowercased.contains("they ") || lowercased.contains("he ") || lowercased.contains("she ") {
+            return .third_person
+        } else if lowercased.contains("we ") || lowercased.contains("us ") {
+            return .collective
+        }
+        
+        return nil
+    }
+    
+    private func extractEntityHints(text: String) -> [Entity] {
+        var entities: [Entity] = []
+        
+        // Use NLTagger to find named entities
+        let tagger = NLTagger(tagSchemes: [.nameType])
+        tagger.string = text
+        
+        tagger.enumerateTags(in: text.startIndex..<text.endIndex, unit: .word, scheme: .nameType) { tag, range in
+            if let tag = tag {
+                let entityValue = String(text[range])
+                let entityType: EntityType
+                
+                switch tag {
+                case .personalName:
+                    entityType = .person
+                case .placeName:
+                    entityType = .place
+                default:
+                    entityType = .concept
+                }
+                
+                entities.append(Entity(type: entityType, value: entityValue))
+            }
+            return true
+        }
+        
+        return entities
+    }
+    
+    private let stopWords = Set(["the", "and", "for", "are", "but", "not", "you", "all", "can", "her", "was", "one", "our", "out", "day", "get", "has", "him", "his", "how", "its", "may", "new", "now", "old", "see", "two", "way", "who", "boy", "did", "she", "use", "her", "many", "than", "them", "these", "this", "that", "with", "from", "have", "been", "will", "what", "when", "where", "which"])
     
     // MARK: - Explanation Density
     

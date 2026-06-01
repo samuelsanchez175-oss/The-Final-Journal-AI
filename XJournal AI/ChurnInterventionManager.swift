@@ -19,8 +19,10 @@ class ChurnInterventionManager: ObservableObject {
     
     // MARK: - Check and Trigger Interventions
     
-    func checkAndTriggerInterventions() {
-        let assessment = ChurnRiskAnalyzer.shared.assessChurnRisk()
+    /// Check and trigger interventions with optional pre-computed assessment to avoid duplicate work
+    func checkAndTriggerInterventions(assessment: ChurnRiskAssessment? = nil) {
+        // Use provided assessment or compute if not provided
+        let assessment = assessment ?? ChurnRiskAnalyzer.shared.assessChurnRisk()
         let lastInterventionDate = UserDefaults.standard.object(forKey: lastInterventionKey) as? Date ?? Date.distantPast
         let daysSinceLastIntervention = Calendar.current.dateComponents([.day], from: lastInterventionDate, to: Date()).day ?? 0
         

@@ -15,12 +15,23 @@ class NotificationManager: NSObject, ObservableObject {
     
     private override init() {
         super.init()
-        checkAuthorizationStatus()
+        // DO NOT check authorization status synchronously - it blocks startup
+        // Will be checked lazily when first needed
+    }
+    
+    /// Lazy initialization - check authorization status when first accessed
+    private func ensureInitialized() {
+        // Only check once
+        if authorizationStatus == .notDetermined {
+            checkAuthorizationStatus()
+        }
     }
     
     // MARK: - Permission Management
     
     func requestPermission() async -> Bool {
+        // Lazy initialization
+        ensureInitialized()
         do {
             let granted = try await UNUserNotificationCenter.current().requestAuthorization(
                 options: [.alert, .sound, .badge]
@@ -72,6 +83,8 @@ class NotificationManager: NSObject, ObservableObject {
     // MARK: - Notification Scheduling
     
     func scheduleNotifications() {
+        // Lazy initialization
+        ensureInitialized()
         // Cancel all existing notifications
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         
@@ -202,6 +215,80 @@ class NotificationManager: NSObject, ObservableObject {
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
                 print("Error scheduling achievement notification: \(error)")
+            }
+        }
+    }
+    
+    // MARK: - Audio Processing Completion Notification
+    
+    func showAudioProcessingCompleteNotification(
+        bpm: Int?,
+        key: String?,
+        scale: String?,
+        transcriptionComplete: Bool,
+        timestampsComplete: Bool
+    ) {
+        guard authorizationStatus == .authorized else {
+            // If not authorized, request permission first
+            Task {
+                _ = await requestPermission()
+                if authorizationStatus == .authorized {
+                    showAudioProcessingCompleteNotification(
+                        bpm: bpm,
+                        key: key,
+                        scale: scale,
+                        transcriptionComplete: transcriptionComplete,
+                        timestampsComplete: timestampsComplete
+                    )
+                }
+            }
+            return
+        }
+        
+        var bodyParts: [String] = []
+        
+        // Add BPM, Key, Scale
+        if let bpm = bpm {
+            bodyParts.append("BPM: \(bpm)")
+        }
+        if let key = key {
+            bodyParts.append("Key: \(key)")
+        }
+        if let scale = scale {
+            bodyParts.append("Scale: \(scale)")
+        }
+        
+        // Add transcription status
+        if transcriptionComplete {
+            bodyParts.append("✓ Transcription complete")
+        }
+        
+        // Add timestamps status
+        if timestampsComplete {
+            bodyParts.append("✓ Timestamps ready")
+        }
+        
+        let body = bodyParts.joined(separator: " • ")
+        
+        let content = UNMutableNotificationContent()
+        content.title = "🎵 Audio Processing Complete"
+        content.body = body.isEmpty ? "Audio processing finished" : body
+        content.sound = .default
+        content.badge = 1
+        
+        // Show immediately
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.5, repeats: false)
+        let request = UNNotificationRequest(
+            identifier: "audio_processing_\(UUID().uuidString)",
+            content: content,
+            trigger: trigger
+        )
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error showing audio processing notification: \(error)")
+            } else {
+                print("✅ Audio processing notification shown: \(body)")
             }
         }
     }

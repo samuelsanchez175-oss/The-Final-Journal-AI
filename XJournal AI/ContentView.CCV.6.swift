@@ -15,6 +15,8 @@ struct RhymeHighlightTextView: UIViewRepresentable {
     var horizontalPadding: CGFloat = 20 // Padding to match TextEditor
     var isEditable: Bool = false // Whether the text view is editable
     var onTextChange: ((String) -> Void)? = nil // Callback for text changes
+    @Binding var dynamicHeight: CGFloat // Height binding to update SwiftUI frame
+    var availableWidth: CGFloat // Real SwiftUI width from GeometryReader (not bounds.width)
 
     func makeCoordinator() -> Coordinator {
         let coordinator = Coordinator()
@@ -113,6 +115,10 @@ struct RhymeHighlightTextView: UIViewRepresentable {
         let coordinator = context.coordinator
         let isDarkMode = uiView.traitCollection.userInterfaceStyle == .dark
         
+        // Preserve scroll position and selection to avoid "jump"
+        let oldOffset = uiView.contentOffset
+        let oldSelected = uiView.selectedRange
+        
         // SEGMENT 20: Scroll Gravity Locking - Disable internal scrolling
         // This ensures the UITextView remains a static-height element that grows with content
         // rather than a scrollable box, preventing "jump" behavior on focus
@@ -149,7 +155,9 @@ struct RhymeHighlightTextView: UIViewRepresentable {
             // If we're hiding the view and it was previously visible, clear the text
             // This is a visual optimization - don't rebuild attributed string when hidden
             if coordinator.lastVisible {
-                uiView.attributedText = nil
+                UIView.performWithoutAnimation {
+                    uiView.attributedText = nil
+                }
                 coordinator.lastVisible = false
             }
             // CRITICAL: Update layout asynchronously without affecting scroll position
@@ -160,12 +168,6 @@ struct RhymeHighlightTextView: UIViewRepresentable {
             }
             return
         }
-        
-        // SEGMENT 19: Total Content Capture - Step 1: MAXIMIZE BUFFER
-        // Set temporary massive height to force total calculation BEFORE processing text
-        let textEditorContentWidth: CGFloat = 640 // 680 - 40 (20 left + 20 right padding)
-        let textWidth = uiView.bounds.width > 0 && uiView.bounds.width <= textEditorContentWidth ? uiView.bounds.width : textEditorContentWidth
-        uiView.textContainer.size = CGSize(width: textWidth, height: .greatestFiniteMagnitude)
         
         // Mark as visible for next comparison
         coordinator.lastVisible = true
@@ -205,91 +207,100 @@ struct RhymeHighlightTextView: UIViewRepresentable {
             // If we don't have a cache but nothing changed, we still need to build it once
         }
         
-        // Build attributed string
-        // For AI text overlay, use clear color so TextEditor text shows through
-        // Only AI text ranges will have blue foreground color
-        // Context highlights (last 4 lines) use background color
-        let isAITextOverlay = highlights.contains { $0.colorIndex == 3 && !showFullText }
+        // Build attributed string with consistent font and paragraph style
+        // Always use the same base font and paragraph style regardless of highlight state
+        let baseFont = uiView.font ?? UIFont.preferredFont(forTextStyle: .body)
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.lineBreakMode = .byWordWrapping
         
         // CRITICAL: Ensure foreground color is explicitly set for all text
         // Use system label color that adapts to light/dark mode
         let baseTextColor = UIColor.label
         
+        // For AI text overlay, use clear color so TextEditor text shows through
+        // Only AI text ranges will have blue foreground color
+        // Context highlights (last 4 lines) use background color
+        let isAITextOverlay = highlights.contains { $0.colorIndex == 3 && !showFullText }
+        
         let attributed = NSMutableAttributedString(
             string: text,
             attributes: [
-                .font: UIFont.preferredFont(forTextStyle: .body),
-                .foregroundColor: isAITextOverlay ? UIColor.clear : baseTextColor
+                .font: baseFont,
+                .foregroundColor: isAITextOverlay ? UIColor.clear : baseTextColor,
+                .paragraphStyle: paragraph
             ]
         )
 
-        for highlight in highlights {
-            // Validate range is valid before converting to NSRange to prevent crashes
-            guard highlight.range.lowerBound >= text.startIndex,
-                  highlight.range.upperBound <= text.endIndex,
-                  highlight.range.lowerBound <= highlight.range.upperBound else {
-                continue // Skip invalid ranges
-            }
-            
-            let nsRange = NSRange(highlight.range, in: text)
-            
-            // Validate NSRange is valid (not out of bounds)
-            guard nsRange.location != NSNotFound,
-                  nsRange.location + nsRange.length <= (text as NSString).length else {
-                continue // Skip invalid NSRange
-            }
+        // Only add background colors when isVisible is true (highlight mode on)
+        if isVisible {
+            for highlight in highlights {
+                // Validate range is valid before converting to NSRange to prevent crashes
+                guard highlight.range.lowerBound >= text.startIndex,
+                      highlight.range.upperBound <= text.endIndex,
+                      highlight.range.lowerBound <= highlight.range.upperBound else {
+                    continue // Skip invalid ranges
+                }
+                
+                let nsRange = NSRange(highlight.range, in: text)
+                
+                // Validate NSRange is valid (not out of bounds)
+                guard nsRange.location != NSNotFound,
+                      nsRange.location + nsRange.length <= (text as NSString).length else {
+                    continue // Skip invalid NSRange
+                }
 
-            // Special handling for colorIndex 3 (blue):
-            // - If showFullText is true, it's a context highlight (background)
-            // - If showFullText is false, it's AI text (foreground)
-            if highlight.colorIndex == 3 {
-                if showFullText {
-                    // Context highlight (last 4 lines): use blue background color with 40% opacity
-                    let blueColor = RhymeColorPalette.colors[3]
-                    let opacity: CGFloat = 0.4 // Fixed 40% opacity as requested
+                // Special handling for colorIndex 3 (blue):
+                // - If showFullText is true, it's a context highlight (background)
+                // - If showFullText is false, it's AI text (foreground)
+                if highlight.colorIndex == 3 {
+                    if showFullText {
+                        // Context highlight (last 4 lines): use blue background color with 40% opacity
+                        let blueColor = RhymeColorPalette.colors[3]
+                        let opacity: CGFloat = 0.4 // Fixed 40% opacity as requested
+                        attributed.addAttribute(
+                            .backgroundColor,
+                            value: blueColor.withAlphaComponent(opacity),
+                            range: nsRange
+                        )
+                    } else {
+                        // AI-generated text: use blue foreground color
+                        let blueColor = UIColor.systemBlue
+                        attributed.addAttribute(
+                            .foregroundColor,
+                            value: blueColor,
+                            range: nsRange
+                        )
+                    }
+                } else {
+                    // Regular rhyme highlighting: use background color
+                    // CRITICAL: Ensure foreground color is maintained when applying background
+                    let baseColor = RhymeColorPalette.colors[highlight.colorIndex]
+
+                    let opacity: CGFloat
+                    switch highlight.strength {
+                    case .perfect:
+                        opacity = isDarkMode ? 0.55 : 0.30
+                    case .near:
+                        opacity = isDarkMode ? 0.40 : 0.22
+                    case .slant:
+                        opacity = isDarkMode ? 0.30 : 0.16
+                    }
+
+                    // Apply background color while preserving foreground color
                     attributed.addAttribute(
                         .backgroundColor,
-                        value: blueColor.withAlphaComponent(opacity),
+                        value: baseColor.withAlphaComponent(opacity),
                         range: nsRange
                     )
-                } else {
-                    // AI-generated text: use blue foreground color
-                    let blueColor = UIColor.systemBlue
+                    
+                    // CRITICAL: Explicitly maintain foreground color for highlighted text
+                    // Always set it to ensure it's not lost when applying background colors
                     attributed.addAttribute(
                         .foregroundColor,
-                        value: blueColor,
+                        value: baseTextColor,
                         range: nsRange
                     )
                 }
-            } else {
-                // Regular rhyme highlighting: use background color
-                // CRITICAL: Ensure foreground color is maintained when applying background
-                let baseColor = RhymeColorPalette.colors[highlight.colorIndex]
-
-                let opacity: CGFloat
-                switch highlight.strength {
-                case .perfect:
-                    opacity = isDarkMode ? 0.55 : 0.30
-                case .near:
-                    opacity = isDarkMode ? 0.40 : 0.22
-                case .slant:
-                    opacity = isDarkMode ? 0.30 : 0.16
-                }
-
-                // Apply background color while preserving foreground color
-                attributed.addAttribute(
-                    .backgroundColor,
-                    value: baseColor.withAlphaComponent(opacity),
-                    range: nsRange
-                )
-                
-                // CRITICAL: Explicitly maintain foreground color for highlighted text
-                // Always set it to ensure it's not lost when applying background colors
-                attributed.addAttribute(
-                    .foregroundColor,
-                    value: baseTextColor,
-                    range: nsRange
-                )
             }
         }
 
@@ -307,47 +318,44 @@ struct RhymeHighlightTextView: UIViewRepresentable {
             }
         }
         
-        // SEGMENT 19: Total Content Capture - Step 2: SYNCHRONOUS CALCULATION
-        // Set attributed text and force engine to process all 700+ words synchronously
-        // Only update attributed text if text actually changed (prevents infinite loop when editable)
-        // When editable, text changes come from user input via delegate, not from this update
-        if !isEditable || uiView.text != text {
-            uiView.attributedText = attributed
-        } else if isEditable {
-            // When editable, preserve user's cursor position and only update highlights
-            // Don't replace the entire attributed string as it resets cursor
-            let currentText = uiView.text
-            if currentText == text {
-                // Text matches, just update highlights without replacing attributed string
-                // This preserves cursor position
-                // But still need to calculate layout for size
+        // Update in-place (reduces layout thrash vs replacing the view)
+        // Preserve scroll position and selection, use performWithoutAnimation to prevent layout thrash
+        UIView.performWithoutAnimation {
+            if !isEditable || uiView.text != text {
+                uiView.textStorage.setAttributedString(attributed)
+            } else if isEditable {
+                // When editable, preserve user's cursor position and only update highlights
+                // Don't replace the entire attributed string as it resets cursor
+                let currentText = uiView.text
+                if currentText == text {
+                    // Text matches, just update highlights without replacing attributed string
+                    // This preserves cursor position
+                    // But still need to calculate layout for size
+                }
+            }
+            uiView.contentOffset = oldOffset
+            uiView.selectedRange = oldSelected
+            uiView.layoutIfNeeded()
+        }
+        
+        // Recompute height using the current width from GeometryReader
+        // Force layout before measuring to ensure wrapping is finalized
+        DispatchQueue.main.async {
+            // Use availableWidth from GeometryReader (not bounds.width which can be 0 on first layout)
+            let w = max(10, self.availableWidth)
+            
+            // Force layout before measuring
+            guard let layoutManager = uiView.textContainer.layoutManager else { return }
+            layoutManager.ensureLayout(for: uiView.textContainer)
+            
+            // Compute height using sizeThatFits with the stable width
+            let size = uiView.sizeThatFits(CGSize(width: w, height: .greatestFiniteMagnitude))
+            
+            // Only update if the difference is significant (> 0.5pt) to avoid infinite update loops
+            if abs(self.dynamicHeight - size.height) > 0.5 {
+                self.dynamicHeight = size.height
             }
         }
-        
-        // SEGMENT 19: Step 2 continued - Force synchronous layout calculation
-        // This MUST happen synchronously to ensure usedRect includes ALL text
-        guard let layoutManager = uiView.textContainer.layoutManager else { return }
-        layoutManager.ensureLayout(for: uiView.textContainer)
-        
-        // SEGMENT 19: Total Content Capture - Step 3: PRECISION SIZING
-        // Calculate actual used rectangle plus safety margin
-        // SEGMENT 20: Increased buffer to 150pt to match ZStack padding and prevent jump on focus
-        let usedRect = layoutManager.usedRect(for: uiView.textContainer)
-        let writingSpaceBuffer: CGFloat = 150 // Safety margin - increased to prevent jump when cursor activates
-        let finalHeight = usedRect.height + uiView.textContainerInset.top + uiView.textContainerInset.bottom + writingSpaceBuffer
-        
-        // SEGMENT 20: Total Content Capture - Step 4: INVALIDATION
-        // Re-lock scroll gravity by invalidating intrinsic size immediately
-        // This ensures the parent ScrollView doesn't assume a height of zero
-        // and the text remains visible and stable during focus
-        DispatchQueue.main.async {
-            uiView.textContainer.size = CGSize(width: textWidth, height: finalHeight)
-            // SEGMENT 20: Invalidate intrinsic size to re-lock scroll gravity
-            uiView.invalidateIntrinsicContentSize() // Re-locks scroll gravity
-            uiView.superview?.setNeedsLayout()
-        }
-            
-        // Note: Layout invalidation is handled in Step 4 above
         
         // Cache the attributed string and update coordinator cache
         coordinator.cachedAttributedString = attributed.copy() as? NSAttributedString

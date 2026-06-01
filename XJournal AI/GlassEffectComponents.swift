@@ -112,8 +112,8 @@ struct GlassProminentButtonStyle: ButtonStyle {
                         y: configuration.isPressed ? 2 : 4
                     )
             )
-            .scaleEffect(configuration.isPressed ? 0.96 : 1.0)
-            .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+            .animation(.spring(response: 0.3, dampingFraction: 0.6), value: configuration.isPressed)
     }
 }
 
@@ -166,5 +166,36 @@ struct BackgroundExtensionEffect: ViewModifier {
 extension View {
     func backgroundExtensionEffect() -> some View {
         modifier(BackgroundExtensionEffect())
+    }
+}
+
+// MARK: - Micro-Compression Button Style (Segment 4)
+
+struct MicroCompressionButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+            .animation(.spring(response: 0.3, dampingFraction: 0.6), value: configuration.isPressed)
+    }
+}
+
+extension ButtonStyle where Self == MicroCompressionButtonStyle {
+    static var microCompression: MicroCompressionButtonStyle {
+        MicroCompressionButtonStyle()
+    }
+}
+
+// MARK: - Smooth Animation Modifier
+
+struct SmoothAnimationModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .animation(.spring(response: 0.4, dampingFraction: 0.8), value: UUID())
+    }
+}
+
+extension View {
+    func smoothAnimation() -> some View {
+        modifier(SmoothAnimationModifier())
     }
 }

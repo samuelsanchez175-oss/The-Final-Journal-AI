@@ -163,6 +163,16 @@ class ModelImprovementPipeline {
         return UserDefaults.standard.integer(forKey: promptVersionKey)
     }
     
+    // MARK: - Get Recent Improvements
+    
+    func getRecentImprovements() -> [PromptImprovement] {
+        let allImprovements = loadImprovements()
+        // Get the most recent improvements and extract all prompt improvements
+        let recent = allImprovements.suffix(5) // Last 5 improvement sets
+        return recent.flatMap { $0.promptImprovements }
+            .sorted { $0.priority.rawValue > $1.priority.rawValue } // High priority first
+    }
+    
     // MARK: - Private Helpers
     
     private func loadImprovements() -> [ModelImprovements] {

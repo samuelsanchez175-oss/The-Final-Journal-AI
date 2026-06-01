@@ -37,7 +37,7 @@ enum AudienceScope: String, Codable {
 
 // MARK: - Signal Axes
 
-struct SignalAxes {
+struct SignalAxes: Codable {
     let exposureRisk: ExposureRisk
     let authorityPosture: AuthorityPosture
     let socialAction: SocialAction
@@ -57,11 +57,11 @@ class SignalAxesCalibrator {
     
     // MARK: - Main Calibration Function
     
-    func calibrateAxes(profile: SignalProfile, mode: SignalMode) -> SignalAxes {
-        let exposureRisk = calculateExposureRisk(profile: profile, mode: mode)
-        let authorityPosture = calculateAuthorityPosture(profile: profile, mode: mode)
-        let socialAction = calculateSocialAction(profile: profile, mode: mode)
-        let audienceScope = calculateAudienceScope(profile: profile, mode: mode)
+    func calibrateAxes(metrics: SignalMetrics, mode: SignalMode) -> SignalAxes {
+        let exposureRisk = calculateExposureRisk(metrics: metrics, mode: mode)
+        let authorityPosture = calculateAuthorityPosture(metrics: metrics, mode: mode)
+        let socialAction = calculateSocialAction(metrics: metrics, mode: mode)
+        let audienceScope = calculateAudienceScope(metrics: metrics, mode: mode)
         
         return SignalAxes(
             exposureRisk: exposureRisk,
@@ -73,7 +73,7 @@ class SignalAxesCalibrator {
     
     // MARK: - Exposure Risk Calculation
     
-    private func calculateExposureRisk(profile: SignalProfile, mode: SignalMode) -> ExposureRisk {
+    private func calculateExposureRisk(metrics: SignalMetrics, mode: SignalMode) -> ExposureRisk {
         // High specificity + high explanation = high exposure
         // High emotional leakage = medium exposure
         // Defensive framing = medium exposure
@@ -81,22 +81,22 @@ class SignalAxesCalibrator {
         var riskScore = 0.0
         
         // Specificity contributes heavily
-        if profile.hasHighSpecificity {
+        if metrics.hasHighSpecificity {
             riskScore += 0.4
         }
         
         // Explanation density contributes
-        if profile.hasHighExplanation {
+        if metrics.hasHighExplanation {
             riskScore += 0.3
         }
         
         // Emotional leakage contributes
-        if profile.emotionalLeakage > 0.5 {
+        if metrics.emotionalLeakage > 0.5 {
             riskScore += 0.2
         }
         
         // Defensive framing contributes
-        if profile.hasDefensiveTone {
+        if metrics.hasDefensiveTone {
             riskScore += 0.1
         }
         
@@ -126,9 +126,9 @@ class SignalAxesCalibrator {
     
     // MARK: - Authority Posture Calculation
     
-    private func calculateAuthorityPosture(profile: SignalProfile, mode: SignalMode) -> AuthorityPosture {
-        // Direct mapping from profile authority score
-        let authorityScore = profile.authorityPosture
+    private func calculateAuthorityPosture(metrics: SignalMetrics, mode: SignalMode) -> AuthorityPosture {
+        // Direct mapping from metrics authority score
+        let authorityScore = metrics.authorityPosture
         
         // Mode-specific adjustments
         var adjustedScore = authorityScore
@@ -159,7 +159,7 @@ class SignalAxesCalibrator {
     
     // MARK: - Social Action Calculation
     
-    private func calculateSocialAction(profile: SignalProfile, mode: SignalMode) -> SocialAction {
+    private func calculateSocialAction(metrics: SignalMetrics, mode: SignalMode) -> SocialAction {
         // Mode-specific primary actions
         switch mode {
         case .uncontainedVulnerability:
@@ -177,12 +177,12 @@ class SignalAxesCalibrator {
         case .postChaosStabilization:
             return .assert
         case .defaultExpressive:
-            // Determine from profile
-            if profile.authorityPosture > 0.6 {
+            // Determine from metrics
+            if metrics.authorityPosture > 0.6 {
                 return .flex
-            } else if profile.hasDefensiveTone {
+            } else if metrics.hasDefensiveTone {
                 return .warn
-            } else if profile.hasHighEmotion {
+            } else if metrics.hasHighEmotion {
                 return .confess
             } else {
                 return .assert
@@ -192,22 +192,22 @@ class SignalAxesCalibrator {
     
     // MARK: - Audience Scope Calculation
     
-    private func calculateAudienceScope(profile: SignalProfile, mode: SignalMode) -> AudienceScope {
+    private func calculateAudienceScope(metrics: SignalMetrics, mode: SignalMode) -> AudienceScope {
         // High specificity suggests public audience
         // High emotional leakage suggests inner circle or self
         // Defensive framing suggests public (defending against audience)
         
         var scopeScore = 0.0
         
-        if profile.hasHighSpecificity {
+        if metrics.hasHighSpecificity {
             scopeScore += 0.4  // Specificity suggests public
         }
         
-        if profile.hasDefensiveTone {
+        if metrics.hasDefensiveTone {
             scopeScore += 0.3  // Defensive suggests public audience
         }
         
-        if profile.hasHighEmotion && !profile.hasHighSpecificity {
+        if metrics.hasHighEmotion && !metrics.hasHighSpecificity {
             scopeScore -= 0.3  // High emotion without specificity suggests private
         }
         
@@ -240,7 +240,13 @@ class SignalAxesCalibrator {
 // MARK: - Convenience Extension
 
 extension SignalAxes {
-    static func calibrateAxes(profile: SignalProfile, mode: SignalMode) -> SignalAxes {
-        return SignalAxesCalibrator.shared.calibrateAxes(profile: profile, mode: mode)
+    static func calibrateAxes(metrics: SignalMetrics, mode: SignalMode) -> SignalAxes {
+        return SignalAxesCalibrator.shared.calibrateAxes(metrics: metrics, mode: mode)
+    }
+    
+    // Convenience method that accepts SignalProfile and text to compute metrics
+    static func calibrateAxes(profile: SignalProfile, mode: SignalMode, text: String) -> SignalAxes {
+        let metrics = SignalIngest.shared.analyzeBehavior(text: text)
+        return SignalAxesCalibrator.shared.calibrateAxes(metrics: metrics, mode: mode)
     }
 }
