@@ -51,12 +51,14 @@ struct DynamicIslandToolbarView: View {
     @State private var showRhymeGroupsPopover: Bool = false
     @Binding var showAudioRecorder: Bool
     @Binding var showRapSuggestions: Bool
+    @Binding var showModelGControlSurface: Bool
     @ObservedObject var rapSuggestionEngine: RapSuggestionEngine
     @Binding var isShowingRecalled: Bool
     @Binding var showContextHighlight: Bool
     @Binding var showAudioImporter: Bool
     @Binding var showImportNotesInstructions: Bool
     @State private var rotationAngle: Double = 0
+    private var toolbarTint: Color { SoftBlueGlassStyle.tint(for: colorScheme) }
     
     // Handler closures
     let onRewriteLine: () -> Void
@@ -87,7 +89,8 @@ struct DynamicIslandToolbarView: View {
     @Binding var aiErrorMessage: String?
     
     // Sheet state bindings
-    @Binding var showStyleTransferSheet: Bool
+    @Binding var showGenerateLyricsFromFlowSheet: Bool
+    @Binding var showARCritiqueSheet: Bool
     @Binding var showThemeExpansionSheet: Bool
     @Binding var showExportSheet: Bool
     
@@ -105,6 +108,9 @@ struct DynamicIslandToolbarView: View {
     @State private var buttonAppearanceDelay: Double = 0
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     
+    /// Single-tap on the AI control runs this model again; choosing G or Y in the menu updates it after gates pass.
+    @AppStorage("toolbar_ai_last_suggestion_model") private var lastSuggestionModelRaw: String = SuggestionModel.modelG.rawValue
+    
     // Computed properties for live activity indicators
     private var wordCount: Int {
         currentText.components(separatedBy: CharacterSet.whitespacesAndNewlines).filter { !$0.isEmpty }.count
@@ -115,7 +121,95 @@ struct DynamicIslandToolbarView: View {
     }
     
     private var isAILoading: Bool {
-        rapSuggestionEngine.isLoading || isRewritingLine || isImprovingFlow
+        rapSuggestionEngine.isLoading
+    }
+    
+    private var resolvedLastSuggestionModel: SuggestionModel {
+        SuggestionModel.allCases.first { $0.rawValue == lastSuggestionModelRaw } ?? .modelG
+    }
+    
+    private func sparkleToolbarSymbolName() -> String {
+        switch resolvedLastSuggestionModel {
+        case .modelG: return "sparkles"
+        case .modelY: return "sparkles.rectangle.stack"
+        case .modelGv3: return "wand.and.stars"
+        }
+    }
+    
+    /// Shared API-key splash, subscription gate, usage limit, and analytics. Returns whether the caller should proceed.
+    private func runAISparkleAccessGates() -> Bool {
+        HapticFeedbackManager.shared.lightTap()
+        isEditorFocused = false
+        
+        if splashManager.shouldShowSplash(.aiSparkleButton) {
+            let apiKey = KeychainHelper.shared.getAPIKey()
+            if apiKey == nil || apiKey?.isEmpty == true {
+                showAISparkleSplash = true
+                return false
+            } else {
+                splashManager.dismissSplash(.aiSparkleButton)
+            }
+        }
+        
+        if !FeatureGate.checkAccess(.aiSuggestions, showPaywall: { featureName in
+            paywallFeature = featureName
+            showPaywall = true
+        }) {
+            return false
+        }
+        
+        if !UsageTracker.shared.canUseAISuggestion() {
+            paywallFeature = "AI Suggestions"
+            showPaywall = true
+            return false
+        }
+        
+        UsageTracker.shared.trackAISuggestion()
+        UserBehaviorTracker.shared.trackFeatureUsage(feature: .aiSuggestions)
+        return true
+    }
+    
+    private func beginModelGFlow() {
+        guard runAISparkleAccessGates() else { return }
+        lastSuggestionModelRaw = SuggestionModel.modelG.rawValue
+        isShowingRecalled = false
+        showModelGControlSurface = true
+    }
+    
+    private func beginModelYFlow() {
+        guard runAISparkleAccessGates() else { return }
+        lastSuggestionModelRaw = SuggestionModel.modelY.rawValue
+        isShowingRecalled = false
+        showContextHighlight = true
+        Task {
+            await rapSuggestionEngine.generateSuggestions(
+                text: currentText,
+                highlights: highlights,
+                model: .modelY,
+                bpm: item.bpm,
+                key: item.key,
+                scale: item.scale,
+                audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                transcriptionRhythmMapData: item.transcriptionRhythmMapData
+            )
+            await MainActor.run {
+                showContextHighlight = false
+                if let error = rapSuggestionEngine.error {
+                    HapticFeedbackManager.shared.error()
+                    showAIError(error)
+                } else {
+                    HapticFeedbackManager.shared.success()
+                    showRapSuggestions = true
+                }
+            }
+        }
+    }
+
+    private func beginModelGv3Flow() {
+        guard runAISparkleAccessGates() else { return }
+        lastSuggestionModelRaw = SuggestionModel.modelGv3.rawValue
+        isShowingRecalled = false
+        showModelGControlSurface = true
     }
     
     // MARK: - Audio Recording
@@ -181,21 +275,15 @@ struct DynamicIslandToolbarView: View {
                 )
         }
         .buttonStyle(.plain)
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged { _ in
-                    if !isPressed {
-                        withAnimation(.easeOut(duration: 0.1)) {
-                            buttonPressStates[id] = true
-                        }
-                    }
-                }
-                .onEnded { _ in
-                    withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                        buttonPressStates[id] = false
-                    }
-                }
-        )
+        .contentShape(Rectangle())
+        .onLongPressGesture(minimumDuration: 0, maximumDistance: 20, pressing: { pressing in
+            withAnimation(pressing ? .easeOut(duration: 0.1) : .spring(response: 0.3, dampingFraction: 0.6)) {
+                buttonPressStates[id] = pressing
+            }
+        }, perform: {})
+        .onDisappear {
+            buttonPressStates[id] = false
+        }
     }
     
     enum HapticStyle {
@@ -236,13 +324,17 @@ struct DynamicIslandToolbarView: View {
     
     private var collapsedButtonContent: some View {
         ZStack {
-            Circle()
-                .fill(.ultraThinMaterial)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized 44pt height
+            SoftBlueGlassBackground(
+                shape: Circle(),
+                colorScheme: colorScheme,
+                darkeningMultiplier: 1.2,
+                outlineLineWidth: 0.9
+            )
+            .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized 44pt height
             
             Image(systemName: "plus")
                 .font(.title2)
+                .foregroundStyle(toolbarTint)
             
             if wordCount > 0 {
                 activityIndicatorsView
@@ -309,10 +401,12 @@ struct DynamicIslandToolbarView: View {
         // Segment 15: Centered Gravity Calibration - Edge Buffer with centered buttons
         // Segment 16: Edge Buffer Calibration - Horizontal padding creates edge buffer
         // Segment 17: Static Verticality Locking - Vertical alignment and size stability
-        HStack(alignment: .center, spacing: 8) {
-            // Bookend Spacer 1: Pushes buttons to center
-            Spacer(minLength: 0)
-            
+        let compactWidth = geometry.size.width < 340
+        let buttonSpacing: CGFloat = compactWidth ? 5 : 8
+        let horizontalInset: CGFloat = compactWidth ? 8 : 12
+        
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .center, spacing: buttonSpacing) {
             enhancedButton(
                             id: "close",
                             action: {
@@ -325,6 +419,7 @@ struct DynamicIslandToolbarView: View {
                                 Image(systemName: "xmark")
                                     .font(.headline)
                                     .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
+                                    .foregroundStyle(toolbarTint)
                             },
                             hapticStyle: .medium
                         )
@@ -360,7 +455,7 @@ struct DynamicIslandToolbarView: View {
                         } label: {
                             Image(systemName: "paperclip")
                                 .font(.headline)
-                                .frame(width: 44, height: 44)
+                                .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
                                 .scaleEffect((buttonPressStates["paperclip"] ?? false) ? 0.92 : 1.0)
                                 .animation(.spring(response: 0.3, dampingFraction: 0.6), value: buttonPressStates["paperclip"])
                         }
@@ -381,175 +476,45 @@ struct DynamicIslandToolbarView: View {
 
                         Menu {
                             Button {
-                                HapticFeedbackManager.shared.lightTap()
-                                isEditorFocused = false
-                                
-                                // Show splash screen on first press
-                                if splashManager.shouldShowSplash(.aiSparkleButton) {
-                                    // Check if API key exists
-                                    let apiKey = KeychainHelper.shared.getAPIKey()
-                                    
-                                    // Only show splash if API key is missing
-                                    if apiKey == nil || apiKey?.isEmpty == true {
-                                        showAISparkleSplash = true
-                                        return
-                                    } else {
-                                        // API key exists, mark splash as dismissed
-                                        splashManager.dismissSplash(.aiSparkleButton)
-                                    }
-                                }
-                                
-                                // Check feature access (Phase 1: Feature Gating)
-                                if !FeatureGate.checkAccess(.aiSuggestions, showPaywall: { featureName in
-                                    paywallFeature = featureName
-                                    showPaywall = true
-                                }) {
-                                    return
-                                }
-                                
-                                // Check usage limits (Phase 2: Monetization)
-                                if !UsageTracker.shared.canUseAISuggestion() {
-                                    paywallFeature = "AI Suggestions"
-                                    showPaywall = true
-                                    return
-                                }
-                                
-                                // Track usage
-                                UsageTracker.shared.trackAISuggestion()
-                                UserBehaviorTracker.shared.trackFeatureUsage(feature: .aiSuggestions)
-                                
-                                isShowingRecalled = false // Clear recall flag when generating new suggestions
-                                // Show context highlight for last 4 lines
-                                showContextHighlight = true
-                                Task {
-                                    await rapSuggestionEngine.generateSuggestions(
-                                        text: currentText,
-                                        highlights: highlights,
-                                        model: .modelG
-                                    )
-                                    // Hide context highlight when generation completes
-                                    await MainActor.run {
-                                    showContextHighlight = false
-                                        if let error = rapSuggestionEngine.error {
-                                            HapticFeedbackManager.shared.error()
-                                            showAIError(error)
-                                        } else {
-                                            HapticFeedbackManager.shared.success()
-                                    showRapSuggestions = true
-                                        }
-                                    }
-                                }
+                                beginModelGFlow()
                             } label: {
                                 Label("Suggest Next Lines with Model G", systemImage: "sparkles")
                             }
                             
                             Button {
-                                HapticFeedbackManager.shared.lightTap()
-                                isEditorFocused = false
-                                
-                                // Show splash screen on first press
-                                if splashManager.shouldShowSplash(.aiSparkleButton) {
-                                    // Check if API key exists
-                                    let apiKey = KeychainHelper.shared.getAPIKey()
-                                    
-                                    // Only show splash if API key is missing
-                                    if apiKey == nil || apiKey?.isEmpty == true {
-                                        showAISparkleSplash = true
-                                        return
-                                    } else {
-                                        // API key exists, mark splash as dismissed
-                                        splashManager.dismissSplash(.aiSparkleButton)
-                                    }
-                                }
-                                
-                                // Check feature access (Phase 1: Feature Gating)
-                                if !FeatureGate.checkAccess(.aiSuggestions, showPaywall: { featureName in
-                                    paywallFeature = featureName
-                                    showPaywall = true
-                                }) {
-                                    return
-                                }
-                                
-                                // Check usage limits (Phase 2: Monetization)
-                                if !UsageTracker.shared.canUseAISuggestion() {
-                                    paywallFeature = "AI Suggestions"
-                                    showPaywall = true
-                                    return
-                                }
-                                
-                                // Track usage
-                                UsageTracker.shared.trackAISuggestion()
-                                UserBehaviorTracker.shared.trackFeatureUsage(feature: .aiSuggestions)
-                                
-                                isShowingRecalled = false // Clear recall flag when generating new suggestions
-                                // Show context highlight for last 4 lines
-                                showContextHighlight = true
-                                Task {
-                                    await rapSuggestionEngine.generateSuggestions(
-                                        text: currentText,
-                                        highlights: highlights,
-                                        model: .modelY
-                                    )
-                                    // Hide context highlight when generation completes
-                                    await MainActor.run {
-                                    showContextHighlight = false
-                                        if let error = rapSuggestionEngine.error {
-                                            HapticFeedbackManager.shared.error()
-                                            showAIError(error)
-                                        } else {
-                                            HapticFeedbackManager.shared.success()
-                                    showRapSuggestions = true
-                                        }
-                                    }
-                                }
+                                beginModelYFlow()
                             } label: {
-                                Label("Suggest Next Lines with Model Y", systemImage: "sparkles")
+                                Label("Suggest Next Lines with Model Y", systemImage: "sparkles.rectangle.stack")
+                            }
+
+                            Button {
+                                beginModelGv3Flow()
+                            } label: {
+                                Label("Suggest Next Lines with Model G v3", systemImage: "wand.and.stars")
                             }
                             
                             Button {
                                 HapticFeedbackManager.shared.selection()
                                 isEditorFocused = false
-                                // Set flag to show previous suggestions (no AI call)
                                 isShowingRecalled = true
                                 showRapSuggestions = true
                             } label: {
-                                Label("Recall Suggested Lines", systemImage: "clock.arrow.circlepath")
+                                Label("Open Last Suggestions", systemImage: "clock.arrow.circlepath")
                             }
                             .disabled(rapSuggestionEngine.previousSuggestions.isEmpty)
                             
-                            Button {
-                                onRewriteLine()
-                            } label: {
-                                HStack {
-                                    if isRewritingLine {
-                                        ProgressView()
-                                            .scaleEffect(0.8)
-                                            .frame(width: 16, height: 16)
-                                    }
-                                    Label("Rewrite Line", systemImage: "arrow.clockwise")
-                                }
-                            }
-                            .disabled(isRewritingLine)
+                            Divider()
                             
-                            Button {
-                                onSuggestRhymes()
-                            } label: {
-                                Label("Suggest Rhymes", systemImage: "text.magnifyingglass")
-                            }
-                            
-                            Button {
-                                onImproveFlow()
-                            } label: {
-                                HStack {
-                                    if isImprovingFlow {
-                                        ProgressView()
-                                            .scaleEffect(0.8)
-                                            .frame(width: 16, height: 16)
-                                    }
-                                    Label("Improve Flow", systemImage: "waveform")
+                            // Generate Lyrics from Flow (above A&R Critique)
+                            if FeatureGate.canAccess(.generateLyricsFromFlow) {
+                                Button {
+                                    HapticFeedbackManager.shared.selection()
+                                    showGenerateLyricsFromFlowSheet = true
+                                } label: {
+                                    Label("Generate Lyrics from Flow", systemImage: "waveform.badge.plus")
                                 }
+                                .disabled(item.audioPath == nil || (item.audioPath?.isEmpty ?? true))
                             }
-                            .disabled(isImprovingFlow)
                             
                             // Phase 4: Advanced AI Features (Pro tier and above)
                             if FeatureGate.canAccess(.styleTransfer) || FeatureGate.canAccess(.themeExpansion) {
@@ -557,9 +522,9 @@ struct DynamicIslandToolbarView: View {
                                 
                                 if FeatureGate.canAccess(.styleTransfer) {
                                     Button {
-                                        showStyleTransferSheet = true
+                                        showARCritiqueSheet = true
                                     } label: {
-                                        Label("Style Transfer", systemImage: "paintbrush")
+                                        Label("A&R Critique", systemImage: "text.bubble")
                                     }
                                 }
                                 
@@ -574,7 +539,7 @@ struct DynamicIslandToolbarView: View {
                         } label: {
                             ZStack {
                                 // Circular progress indicator (outer ring)
-                                if rapSuggestionEngine.isLoading || isRewritingLine || isImprovingFlow {
+                                if rapSuggestionEngine.isLoading {
                                     Circle()
                                         .trim(from: 0, to: 0.75)
                                         .stroke(
@@ -584,7 +549,7 @@ struct DynamicIslandToolbarView: View {
                                                 lineJoin: .round
                                             )
                                         )
-                                        .foregroundStyle(.blue)
+                                        .foregroundStyle(toolbarTint)
                                         .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
                                         .rotationEffect(.degrees(rotationAngle))
                                     
@@ -595,14 +560,29 @@ struct DynamicIslandToolbarView: View {
                                         .blur(radius: 4)
                                 }
                                 
-                                // Sparkles icon (centered)
-                                Image(systemName: "sparkles")
+                                Image(systemName: sparkleToolbarSymbolName())
                                     .font(.headline)
                                     .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
-                                    .foregroundStyle(.blue)
+                                    .foregroundStyle(toolbarTint)
+                            }
+                            .overlay(alignment: .topTrailing) {
+                                if !rapSuggestionEngine.previousSuggestions.isEmpty {
+                                    Image(systemName: "clock.arrow.circlepath")
+                                        .font(.system(size: 11, weight: .semibold))
+                                        .foregroundStyle(.orange)
+                                        .padding(2)
+                                        .background(.ultraThinMaterial, in: Circle())
+                                        .offset(x: 10, y: -8)
+                                }
                             }
                             .scaleEffect((buttonPressStates["aiSparkle"] ?? false) ? 0.92 : 1.0)
                             .animation(.spring(response: 0.3, dampingFraction: 0.6), value: buttonPressStates["aiSparkle"])
+                        } primaryAction: {
+                            switch resolvedLastSuggestionModel {
+                            case .modelG: beginModelGFlow()
+                            case .modelY: beginModelYFlow()
+                            case .modelGv3: beginModelGv3Flow()
+                            }
                         }
                         .simultaneousGesture(
                             DragGesture(minimumDistance: 0)
@@ -612,13 +592,12 @@ struct DynamicIslandToolbarView: View {
                                     }
                                 }
                                 .onEnded { _ in
-                                    HapticFeedbackManager.shared.lightTap()
                                     buttonPressStates["aiSparkle"] = false
                                 }
                         )
-                        .disabled(rapSuggestionEngine.isLoading || isRewritingLine || isImprovingFlow)
-                        .accessibilityLabel("AI suggestions")
-                        .accessibilityHint("Double tap to open AI writing assistance menu")
+                        .disabled(rapSuggestionEngine.isLoading)
+                        .accessibilityLabel("AI suggestions, \(resolvedLastSuggestionModel.displayName)")
+                        .accessibilityHint("Tap once for \(resolvedLastSuggestionModel.displayName). Open the menu to choose Model G, Model G v3, Model Y, or open last suggestions.")
                         .onChange(of: rapSuggestionEngine.isLoading) { oldValue, newValue in
                             if newValue {
                                 // Start rotating animation
@@ -631,36 +610,6 @@ struct DynamicIslandToolbarView: View {
                                 }
                             } else {
                                 // Stop animation and reset
-                                rotationAngle = 0
-                            }
-                        }
-                        .onChange(of: isRewritingLine) { oldValue, newValue in
-                            if newValue {
-                                // Start rotating animation
-                                rotationAngle = 0
-                                withAnimation(
-                                    Animation.linear(duration: 1.0)
-                                        .repeatForever(autoreverses: false)
-                                ) {
-                                    rotationAngle = 360
-                                }
-                            } else if !rapSuggestionEngine.isLoading && !isImprovingFlow {
-                                // Stop animation and reset only if nothing else is loading
-                                rotationAngle = 0
-                            }
-                        }
-                        .onChange(of: isImprovingFlow) { oldValue, newValue in
-                            if newValue {
-                                // Start rotating animation
-                                rotationAngle = 0
-                                withAnimation(
-                                    Animation.linear(duration: 1.0)
-                                        .repeatForever(autoreverses: false)
-                                ) {
-                                    rotationAngle = 360
-                                }
-                            } else if !rapSuggestionEngine.isLoading && !isRewritingLine {
-                                // Stop animation and reset only if nothing else is loading
                                 rotationAngle = 0
                             }
                         }
@@ -689,7 +638,7 @@ struct DynamicIslandToolbarView: View {
                                 Image(systemName: isRhymeOverlayVisible ? "eye.fill" : "eye")
                                     .font(.headline)
                                     .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
-                                    .foregroundStyle(isRhymeOverlayVisible ? .blue : .primary)
+                                    .foregroundStyle(toolbarTint)
                             },
                             hapticStyle: .light
                         )
@@ -697,47 +646,11 @@ struct DynamicIslandToolbarView: View {
                         .accessibilityHint("Double tap to toggle visual rhyme highlighting")
 
                         enhancedButton(
-                            id: "undo",
-                            action: {
-                            onUndo()
-                                startAutoCollapseTimer()
-                            },
-                            label: {
-                                Image(systemName: "arrow.uturn.backward")
-                                    .font(.headline)
-                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
-                            },
-                            hapticStyle: .light
-                        )
-                        .disabled(!canUndo)
-                        .opacity(canUndo ? 1.0 : 0.4)
-                        .accessibilityLabel("Undo")
-                        .accessibilityHint("Double tap to undo last change")
-                        
-                        enhancedButton(
-                            id: "redo",
-                            action: {
-                            onRedo()
-                                startAutoCollapseTimer()
-                            },
-                            label: {
-                                Image(systemName: "arrow.uturn.forward")
-                                    .font(.headline)
-                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
-                            },
-                            hapticStyle: .light
-                        )
-                        .disabled(!canRedo)
-                        .opacity(canRedo ? 1.0 : 0.4)
-                        .accessibilityLabel("Redo")
-                        .accessibilityHint("Double tap to redo last undone change")
-                        
-                        enhancedButton(
                             id: "magnifyingGlass",
                             action: {
                             // Dismiss keyboard when opening popover
-                            isEditorFocused = false
-                            showRhymeGroupsPopover = true
+                                isEditorFocused = false
+                                showRhymeGroupsPopover = true
                                 startAutoCollapseTimer()
                             },
                             label: {
@@ -779,21 +692,23 @@ struct DynamicIslandToolbarView: View {
             .accessibilityLabel(isEditorFocused ? "Dismiss keyboard" : "Show keyboard")
             .accessibilityHint("Double tap to toggle keyboard")
             
-            // Bookend Spacer 2: Completes centered gravity calibration
-            Spacer(minLength: 0)
+            }
+            .foregroundStyle(toolbarTint)
+            // Segment 17: Move padding to inner HStack for static verticality
+            .padding(.vertical, ToolbarConstants.verticalPadding) // LOCKED: Consistent vertical padding (10 top + 10 bottom)
+            // Keep controls inside the tappable island width on compact screens
+            .padding(.horizontal, horizontalInset)
+            .frame(height: ToolbarConstants.height) // LOCKED: Exactly 64pt (44 + 10 + 10) - NEVER MODIFY
         }
-        // Segment 17: Move padding to inner HStack for static verticality
-        .padding(.vertical, ToolbarConstants.verticalPadding) // LOCKED: Consistent vertical padding (10 top + 10 bottom)
-        // Segment 16: Edge Buffer Calibration - Creates space between buttons and glass edge
-        .padding(.horizontal, 24) // Increased edge buffer to prevent X from touching container edge
-        .frame(maxWidth: .infinity) // Ensure HStack respects container boundaries
+        .scrollDisabled(!compactWidth)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .frame(height: ToolbarConstants.height) // LOCKED: Exactly 64pt (44 + 10 + 10) - NEVER MODIFY
     }
     
     private func expandedStateView(geometry: GeometryProxy) -> some View {
         expandedStateButtons(geometry: geometry)
-            // Segment 17: Remove explicit height - let inner HStack determine height (44 + padding = 64)
-            .frame(maxWidth: geometry.size.width - 24) // Slightly reduce width to account for edge padding
+            // Keep full available width so right-side buttons remain tappable on compact devices
+            .frame(maxWidth: .infinity, alignment: .leading)
             // REMOVED: Secondary background - only outer container should have glass effect
             // This prevents "double island" effect - single unified glass container
             // glassEffectID fallback: Using matchedGeometryEffect for fluid island transitions
@@ -859,14 +774,22 @@ struct DynamicIslandToolbarView: View {
                 }
             )
         }
-        .background(
-            // GlassEffectContainer fallback: Using continuous corner style for hardware alignment
-            // More rounded edges for pill-shaped appearance
-            RoundedRectangle(cornerRadius: 28, style: .continuous)
-                .fill(.ultraThinMaterial)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+        .background {
+            if isExpanded {
+                SoftBlueGlassBackground(
+                    shape: RoundedRectangle(cornerRadius: 30, style: .continuous),
+                    colorScheme: colorScheme,
+                    darkeningMultiplier: 1.15,
+                    outlineLineWidth: 0.9
+                )
+            }
+        }
+        .clipShape(
+            RoundedRectangle(
+                cornerRadius: isExpanded ? 30 : 0,
+                style: .continuous
+            )
         )
-        .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
         .padding(.horizontal, 16) // Outer margin from device screen edges
         .padding(.bottom, ToolbarConstants.keyboardSpacing) // LOCKED FOREVER: Space between toolbar and keyboard - NEVER MODIFY
         // Intrinsic Surface Calibration: Prevent keyboard from squashing the toolbar
@@ -1023,64 +946,73 @@ struct DynamicIslandToolbarView: View {
             )
         }
         .overlay(alignment: .top) {
-            // AI Error Toast
+            // AI Error Banner at top of screen
             if showAIErrorToast, let errorMessage = aiErrorMessage {
-                HStack(spacing: 12) {
-                    Image(systemName: "exclamationmark.triangle.fill")
-                        .foregroundStyle(.red)
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("AI Error")
-                            .font(.caption.weight(.semibold))
-                        Text(errorMessage)
-                            .font(.caption2)
-                            .lineLimit(2)
-                    }
-                    Spacer()
-                    Button {
-                        withAnimation(.easeOut(duration: 0.3)) {
-                            showAIErrorToast = false
+                VStack(spacing: 0) {
+                    HStack(spacing: 12) {
+                        Image(systemName: "exclamationmark.triangle.fill")
+                            .foregroundStyle(.red)
+                            .font(.title3)
+                        
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("AI Error")
+                                .font(.headline)
+                                .foregroundStyle(.primary)
+                            
+                            Text(errorMessage)
+                                .font(.body)
+                                .foregroundStyle(.primary)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .multilineTextAlignment(.leading)
                         }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                            aiErrorMessage = nil
+                        
+                        Spacer()
+                        
+                        Button {
+                            withAnimation(.easeOut(duration: 0.3)) {
+                                showAIErrorToast = false
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                aiErrorMessage = nil
+                            }
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundStyle(.secondary)
+                                .font(.title3)
                         }
-                    } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .foregroundStyle(.secondary)
                     }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 16)
+                    .frame(maxWidth: .infinity)
+                    .background(
+                        Rectangle()
+                            .fill(.ultraThinMaterial)
+                            .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
+                            .overlay(
+                                Rectangle()
+                                    .strokeBorder(Color.red.opacity(0.3), lineWidth: 1)
+                            )
+                    )
+                    .padding(.top, 60)
+                    .transition(.move(edge: .top).combined(with: .opacity))
                 }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 12)
-                .frame(maxWidth: 400)
-                .background(
-                    RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(.ultraThinMaterial)
-                        .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                                .strokeBorder(Color.red.opacity(0.3), lineWidth: 1)
-                        )
-                )
-                .padding(.top, 60)
-                .transition(.move(edge: .top).combined(with: .opacity))
             }
         }
-        // Phase 4: Style Transfer & Theme Expansion Sheets
-        .sheet(isPresented: $showStyleTransferSheet) {
+        // Phase 4: A&R Critique & Theme Expansion Sheets
+        .sheet(isPresented: $showARCritiqueSheet) {
             if FeatureGate.canAccess(.styleTransfer) {
-                StyleTransferSheet(
+                ARCritiqueSheet(
                     currentText: currentText,
-                    onSelect: { suggestion in
-                        onInsertRapSuggestion(suggestion)
-                    },
                     onDismiss: {
-                        showStyleTransferSheet = false
-                    }
+                        showARCritiqueSheet = false
+                    },
+                    precomputedCritiques: rapSuggestionEngine.precomputedCritiques.isEmpty ? nil : rapSuggestionEngine.precomputedCritiques
                 )
             } else {
                 PaywallView(
                     featureName: FeatureGate.requiredTier(for: .styleTransfer).displayName + " Features",
                     onDismiss: {
-                        showStyleTransferSheet = false
+                        showARCritiqueSheet = false
                     },
                     onSubscribe: {
                         Task {

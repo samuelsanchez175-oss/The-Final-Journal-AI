@@ -18,6 +18,30 @@ import SwiftUI
 import SwiftData
 import UIKit
 import Combine
+import Foundation
+
+// #region agent log
+extension String {
+    func appendLineToFile(atPath path: String) throws {
+        // Create directory if it doesn't exist
+        let url = URL(fileURLWithPath: path)
+        let directory = url.deletingLastPathComponent()
+        try? FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil)
+        
+        // Now try to append to file
+        if let fileHandle = FileHandle(forWritingAtPath: path) {
+            defer { fileHandle.closeFile() }
+            fileHandle.seekToEndOfFile()
+            if let data = (self + "\n").data(using: .utf8) {
+                fileHandle.write(data)
+            }
+        } else {
+            // File doesn't exist, create it
+            try (self + "\n").write(toFile: path, atomically: true, encoding: .utf8)
+        }
+    }
+}
+// #endregion
 import NaturalLanguage
 import AVFoundation
 import Speech
@@ -36,7 +60,23 @@ struct NoteEditorView: View {
     @State private var isToolbarExpanded: Bool = false
     @State private var scrollOffset: CGFloat = 0
     @State private var savedScrollPosition: CGFloat = 0 // SEGMENT 20: Save scroll position to prevent jump
+    @State private var rhymeOverlayHeight: CGFloat = 40 // Dynamic height for rhyme overlay
     @StateObject private var rhymeEngineState = RhymeEngineState()
+
+    @AppStorage("toolbar_ai_last_suggestion_model") private var lastToolbarSuggestionModelRaw: String = SuggestionModel.modelG.rawValue
+
+    /// Toolbar’s selected AI model (Model G, Model G v3, or Model Y). Drives Model G control surface generation.
+    private var toolbarSuggestionModel: SuggestionModel {
+        SuggestionModel.allCases.first { $0.rawValue == lastToolbarSuggestionModelRaw } ?? .modelG
+    }
+
+    /// When generating from the shared Model G control surface, map toolbar selection to the API model (never `.modelY`).
+    private var modelGControlSurfaceAPIModel: SuggestionModel {
+        switch toolbarSuggestionModel {
+        case .modelGv3: return .modelGv3
+        case .modelG, .modelY: return .modelG
+        }
+    }
     
     // Onboarding splash screen state
     @ObservedObject private var splashManager = SplashScreenManager.shared
@@ -110,7 +150,12 @@ struct NoteEditorView: View {
         
         await rapSuggestionEngine.generateSuggestions(
             text: currentText,
-            highlights: highlights
+            highlights: highlights,
+            bpm: item.bpm,
+            key: item.key,
+            scale: item.scale,
+            audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+            transcriptionRhythmMapData: item.transcriptionRhythmMapData
         )
         
         improveFlowSuggestions = rapSuggestionEngine.suggestions
@@ -228,11 +273,14 @@ struct NoteEditorView: View {
     @State private var showFolderPopover: Bool = false
     @State private var showAudioRecorder: Bool = false
     @State private var showRapSuggestions: Bool = false
+    @State private var showModelGControlSurface: Bool = false
     @State private var isShowingRecalled: Bool = false
     @State private var showContextHighlight: Bool = false
     @State private var showAudioImporter: Bool = false
     @State private var showImportNotesInstructions: Bool = false
     @State private var showAudioDetailSheet: Bool = false
+    @State private var showRawTranscriptOnSurface: Bool = false
+    @State private var shouldAutoTranscribe: Bool = false
     @State private var showFindInTranscript: Bool = false
     @StateObject private var transcriptionService = AudioTranscriptionService()
     @StateObject private var rapSuggestionEngine = RapSuggestionEngine()
@@ -261,26 +309,28 @@ struct NoteEditorView: View {
     @State private var showPaywall: Bool = false
     @State private var paywallFeature: String = ""
     
-    // Phase 4 & 5: Style Transfer, Theme Expansion, Export, Analytics
-    @State private var showStyleTransferSheet: Bool = false
+    // Phase 4 & 5: A&R Critique, Theme Expansion, Export, Analytics
+    @State private var showGenerateLyricsFromFlowSheet: Bool = false
+    @State private var showARCritiqueSheet: Bool = false
     @State private var showThemeExpansionSheet: Bool = false
     @State private var showExportSheet: Bool = false
-    @State private var styleTransferSuggestions: [RapSuggestion] = []
     @State private var themeExpansionSuggestions: [RapSuggestion] = []
-    @State private var isGeneratingStyleTransfer: Bool = false
     @State private var isGeneratingThemeExpansion: Bool = false
     @State private var selectedArtistForStyleTransfer: String = ""
     
     @Environment(\.colorScheme) private var colorScheme
     
     // Show AI error message
-    private func showAIError(_ message: String) {
+    private func showAIError(_ message: String, source: String = "AI Sparkle Button", context: String? = nil) {
+        // Store error for analytics
+        ErrorStorageManager.shared.storeError(message, source: source, context: context)
+        
         aiErrorMessage = message
         showAIErrorToast = true
         UINotificationFeedbackGenerator().notificationOccurred(.error)
         
-        // Auto-dismiss after 4 seconds
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+        // Auto-dismiss after 8 seconds (longer for readability)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
             withAnimation(.easeOut(duration: 0.3)) {
                 showAIErrorToast = false
             }
@@ -288,6 +338,11 @@ struct NoteEditorView: View {
                 aiErrorMessage = nil
             }
         }
+    }
+    
+    // Wrapper function for DynamicIslandToolbarView that expects (String) -> Void
+    private func showAIErrorWrapper(_ message: String) {
+        showAIError(message)
     }
     
     // MARK: - Undo/Redo State
@@ -330,44 +385,6 @@ struct NoteEditorView: View {
             Divider()
                 .frame(maxWidth: .infinity) // Extend divider to full width
 
-            // MARK: - Audio Player (if audio exists) - iOS 26 Notes Style (at top)
-            if let audioPath = item.audioPath, !audioPath.isEmpty {
-                VStack(spacing: 12) {
-                    InlineAudioCardView(
-                        item: item,
-                        onTap: {
-                            showAudioDetailSheet = true
-                        },
-                        onAddTranscriptToNote: {
-                            guard let transcription = item.transcription, !transcription.isEmpty else { return }
-                            let prefix = item.body.isEmpty ? "" : "\n\n"
-                            item.body += prefix + transcription
-                            item.modifiedDate = Date()
-                        }
-                    )
-                    .padding(.horizontal, 20)
-                    
-                    // Inline Transcript
-                    if let transcription = item.transcription, !transcription.isEmpty {
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Transcript")
-                                .font(.headline)
-                                .padding(.horizontal, 20)
-                            Text(transcription)
-                                .font(.body)
-                                .foregroundStyle(.secondary)
-                                .padding(.horizontal, 20)
-                        }
-                        .padding(.top, 8)
-                    }
-                }
-                .padding(.top, 16)
-                .padding(.bottom, 8)
-                
-                Divider()
-                    .frame(maxWidth: .infinity)
-            }
-
             GeometryReader { viewport in
                 ScrollViewReader { proxy in
             ScrollView(.vertical, showsIndicators: false) {
@@ -379,6 +396,34 @@ struct NoteEditorView: View {
                         }
                         .frame(height: 0)
                     VStack(alignment: .leading, spacing: 0) { // FIXED: Decouple spacing
+                        // MARK: - Audio + transcript (scroll with content; not persistent)
+                        if let audioPath = item.audioPath, !audioPath.isEmpty {
+                            VStack(alignment: .leading, spacing: 12) {
+                                InlineAudioCardView(
+                                    item: item,
+                                    onTap: {
+                                        shouldAutoTranscribe = false
+                                        showAudioDetailSheet = true
+                                    },
+                                    onTranscribe: {
+                                        shouldAutoTranscribe = true
+                                        showAudioDetailSheet = true
+                                    },
+                                    onAddTranscriptToNote: {
+                                        guard let transcription = item.transcription, !transcription.isEmpty else { return }
+                                        let prefix = item.body.isEmpty ? "" : "\n\n"
+                                        item.body += prefix + transcription
+                                        item.modifiedDate = Date()
+                                    }
+                                )
+                                .padding(.horizontal, 20)
+                                if let transcription = item.transcription, !transcription.isEmpty {
+                                    transcriptSurfaceSection(transcription: transcription)
+                                }
+                            }
+                            .padding(.top, 16)
+                            .padding(.bottom, 8)
+                        }
                         // SEGMENT 19: Unified Padding - Apply padding to ZStack for consistent writing room
                             ZStack(alignment: .topLeading) {
                                 TextEditor(text: $item.body)
@@ -425,24 +470,30 @@ struct NoteEditorView: View {
                         // Always keep view in hierarchy - optimize by using opacity instead of conditional rendering
                         // This prevents view recreation on toggle, allowing cache reuse
                         // When eye toggle is on, show ALL text with highlights (not just highlights)
-                        RhymeHighlightTextView(
-                            text: item.body,
-                            highlights: computedHighlights,
-                            isVisible: isRhymeOverlayVisible,
-                            showFullText: true, // Always show full text, not just highlights
-                            horizontalPadding: 20, // Match TextEditor padding
-                            isEditable: isRhymeOverlayVisible, // Make overlay editable when visible
-                            onTextChange: { newText in
-                                // Sync changes from overlay back to item.body
-                                item.body = newText
-                            }
-                        )
+                        // Wrap in GeometryReader to get real SwiftUI width for accurate height measurement
+                        GeometryReader { geo in
+                            RhymeHighlightTextView(
+                                text: item.body,
+                                highlights: computedHighlights,
+                                isVisible: isRhymeOverlayVisible,
+                                showFullText: true, // Always show full text, not just highlights
+                                horizontalPadding: 20, // Match TextEditor padding
+                                isEditable: isRhymeOverlayVisible, // Make overlay editable when visible
+                                onTextChange: { newText in
+                                    // Sync changes from overlay back to item.body
+                                    item.body = newText
+                                },
+                                dynamicHeight: $rhymeOverlayHeight,
+                                availableWidth: geo.size.width // Pass real SwiftUI width from GeometryReader
+                            )
+                            .frame(height: rhymeOverlayHeight)
+                            .animation(nil, value: isRhymeOverlayVisible) // Disable implicit animations on height changes
+                        }
                         .frame(maxWidth: 680, alignment: .leading) // Match TextEditor width exactly
                         .padding(.horizontal, 20) // Match TextEditor padding exactly
                         .padding(.top, 8)
                         // REMOVED: .padding(.bottom, 100) - moved to ZStack level for unified padding
                         .opacity(isRhymeOverlayVisible ? 1.0 : 0.0)
-                        .animation(.easeInOut(duration: 0.18), value: isRhymeOverlayVisible)
                         .allowsHitTesting(isRhymeOverlayVisible) // Allow interaction when overlay is visible
                         .fixedSize(horizontal: false, vertical: true) // CRITICAL: Vertical locking - ensures both views match height
                         .layoutPriority(0) // Lower priority allows expansion (defaultLow hugging)
@@ -516,6 +567,7 @@ struct NoteEditorView: View {
                 keyboardHeight: $keyboardObserver.height,
                 showAudioRecorder: $showAudioRecorder,
                 showRapSuggestions: $showRapSuggestions,
+                showModelGControlSurface: $showModelGControlSurface,
                 rapSuggestionEngine: rapSuggestionEngine,
                 isShowingRecalled: $isShowingRecalled,
                 showContextHighlight: $showContextHighlight,
@@ -537,15 +589,82 @@ struct NoteEditorView: View {
                 paywallFeature: $paywallFeature,
                 showAIErrorToast: $showAIErrorToast,
                 aiErrorMessage: $aiErrorMessage,
-                showStyleTransferSheet: $showStyleTransferSheet,
+                showGenerateLyricsFromFlowSheet: $showGenerateLyricsFromFlowSheet,
+                showARCritiqueSheet: $showARCritiqueSheet,
                 showThemeExpansionSheet: $showThemeExpansionSheet,
                 showExportSheet: $showExportSheet,
                 insertRapSuggestion: insertRapSuggestion,
                 extractThemes: extractThemes,
-                showAIError: showAIError,
+                showAIError: showAIErrorWrapper,
                 item: item
             )
             .frame(maxWidth: 680)
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .inAppAPIError)) { notification in
+            guard let msg = notification.userInfo?[InAppAPIErrorPayload.messageKey] as? String, !msg.isEmpty else { return }
+            aiErrorMessage = msg
+            showAIErrorToast = true
+            UINotificationFeedbackGenerator().notificationOccurred(.error)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
+                withAnimation(.easeOut(duration: 0.3)) {
+                    showAIErrorToast = false
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    aiErrorMessage = nil
+                }
+            }
+        }
+        .onChange(of: showModelGControlSurface) { _, isShowing in
+            if isShowing {
+                Task { await rhymeEngineState.refreshImmediately(text: item.body) }
+            }
+        }
+        .sheet(isPresented: $showModelGControlSurface) {
+            ModelGControlSurfaceView(rhymeGroups: rhymeGroups) { params, rhymeGroupsByID in
+                showModelGControlSurface = false
+                showContextHighlight = true
+                Task {
+                    let useParallelModelG = toolbarSuggestionModel == .modelG
+                        && ModelGEnvironment.useModelGCore
+                        && ModelGEnvironment.useModelGv2
+                    if useParallelModelG {
+                        await rapSuggestionEngine.generateSuggestionsModelGParallel(
+                            text: currentText,
+                            highlights: computedHighlights,
+                            bpm: item.bpm,
+                            key: item.key,
+                            scale: item.scale,
+                            directedParams: params,
+                            rhymeGroupsByID: rhymeGroupsByID,
+                            audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                            transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                        )
+                    } else {
+                        await rapSuggestionEngine.generateSuggestions(
+                            text: currentText,
+                            highlights: computedHighlights,
+                            model: modelGControlSurfaceAPIModel,
+                            bpm: item.bpm,
+                            key: item.key,
+                            scale: item.scale,
+                            directedParams: params,
+                            rhymeGroupsByID: rhymeGroupsByID,
+                            audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                            transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                        )
+                    }
+                    await MainActor.run {
+                        showContextHighlight = false
+                        if let error = rapSuggestionEngine.error {
+                            HapticFeedbackManager.shared.error()
+                            showAIErrorWrapper(error)
+                        } else {
+                            HapticFeedbackManager.shared.success()
+                            showRapSuggestions = true
+                        }
+                    }
+                }
+            }
         }
         .sheet(isPresented: $showRapSuggestions) {
             RapSuggestionView(
@@ -563,16 +682,44 @@ struct NoteEditorView: View {
                     showRapSuggestions = false
                     isShowingRecalled = false
                 },
-                contextText: currentText, // Pass context for feedback tracking
+                contextText: currentText,
                 onRegenerate: {
-                    // Regenerate suggestions (Phase 1)
                     Task {
-                        await rapSuggestionEngine.generateSuggestions(
-                            text: currentText,
-                            highlights: highlights
-                        )
+                        if rapSuggestionEngine.isParallelModelG,
+                           let params = rapSuggestionEngine.lastParallelDirectedParams,
+                           let rhymeGroupsByID = rapSuggestionEngine.lastParallelRhymeGroupsByID {
+                            await rapSuggestionEngine.generateSuggestionsModelGParallel(
+                                text: currentText,
+                                highlights: computedHighlights,
+                                bpm: item.bpm,
+                                key: item.key,
+                                scale: item.scale,
+                                directedParams: params,
+                                rhymeGroupsByID: rhymeGroupsByID,
+                                audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                                transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                            )
+                        } else {
+                            await rapSuggestionEngine.generateSuggestions(
+                                text: currentText,
+                                highlights: highlights,
+                                model: rapSuggestionEngine.lastStandardGenerationModel,
+                                bpm: item.bpm,
+                                key: item.key,
+                                scale: item.scale,
+                                audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
+                                transcriptionRhythmMapData: item.transcriptionRhythmMapData
+                            )
+                        }
                     }
-                }
+                },
+                currentSignalMode: isShowingRecalled ? nil : rapSuggestionEngine.currentSignalMode,
+                currentSignalProfile: isShowingRecalled ? nil : rapSuggestionEngine.currentSignalProfile,
+                silenceCommentary: rapSuggestionEngine.silenceCommentary,
+                leftSuggestions: rapSuggestionEngine.isParallelModelG ? rapSuggestionEngine.suggestionsV1 : nil,
+                rightSuggestions: rapSuggestionEngine.isParallelModelG ? rapSuggestionEngine.suggestionsV2 : nil,
+                leftTitle: rapSuggestionEngine.isParallelModelG ? "Model G v1" : nil,
+                rightTitle: rapSuggestionEngine.isParallelModelG ? "Model G v2" : nil
             )
         }
         .sheet(isPresented: $showRhymeSuggestions) {
@@ -608,11 +755,33 @@ struct NoteEditorView: View {
                     Task {
                         await improveFlow()
                     }
-                }
+                },
+                currentSignalMode: rapSuggestionEngine.currentSignalMode,
+                currentSignalProfile: rapSuggestionEngine.currentSignalProfile
             )
         }
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                Button {
+                    HapticFeedbackManager.shared.lightTap()
+                    handleUndo()
+                } label: {
+                    Image(systemName: "arrow.uturn.backward")
+                }
+                .disabled(undoHistory.isEmpty)
+                .accessibilityLabel("Undo")
+                .accessibilityHint("Double tap to undo last change")
+                
+                Button {
+                    HapticFeedbackManager.shared.lightTap()
+                    handleRedo()
+                } label: {
+                    Image(systemName: "arrow.uturn.forward")
+                }
+                .disabled(redoHistory.isEmpty)
+                .accessibilityLabel("Redo")
+                .accessibilityHint("Double tap to redo last undone change")
+                
                 Menu {
                     Button {
                         prepareHapticForNewNote()
@@ -661,7 +830,13 @@ struct NoteEditorView: View {
             AudioRecorderView(item: item)
         }
         .sheet(isPresented: $showAudioDetailSheet) {
-            AudioDetailSheet(item: item)
+            AudioDetailSheet(item: item, autoTranscribe: shouldAutoTranscribe)
+        }
+        .onChange(of: showAudioDetailSheet) { oldValue, newValue in
+            // Reset auto-transcribe flag when sheet is dismissed
+            if !newValue {
+                shouldAutoTranscribe = false
+            }
         }
         .fileImporter(
             isPresented: $showAudioImporter,
@@ -764,11 +939,16 @@ struct NoteEditorView: View {
                     UserBehaviorTracker.shared.trackWritingActivity(wordsWritten: wordsAdded)
                     
                     // Check achievements periodically (every 100 words)
+                    // Defer to background to avoid blocking UI
                     if newWords % 100 == 0 {
-                        // Get all items to check achievements accurately
-                        let descriptor = FetchDescriptor<Item>()
-                        if let allItems = try? modelContext.fetch(descriptor) {
-                            UserBehaviorTracker.shared.checkAchievementsWithItems(items: allItems)
+                        Task.detached(priority: .utility) {
+                            await MainActor.run {
+                                // Get all items to check achievements accurately
+                                let descriptor = FetchDescriptor<Item>()
+                                if let allItems = try? modelContext.fetch(descriptor) {
+                                    UserBehaviorTracker.shared.checkAchievementsWithItems(items: allItems)
+                                }
+                            }
                         }
                     }
                 }
@@ -794,6 +974,12 @@ struct NoteEditorView: View {
             // Track modification date when title changes
             if oldValue != newValue {
                 item.modifiedDate = Date()
+                // Explicitly save the context to ensure changes persist
+                do {
+                    try item.modelContext?.save()
+                } catch {
+                    print("⚠️ Failed to save title change: \(error.localizedDescription)")
+                }
             }
         }
         // MARK: - Metadata Popovers (Segment 2)
@@ -829,15 +1015,37 @@ struct NoteEditorView: View {
                 )
             }
         }
-        .sheet(isPresented: $showStyleTransferSheet) {
-            StyleTransferSheet(
-                currentText: currentText,
-                onSelect: { suggestion in
-                    insertRapSuggestion(suggestion, isAIGenerated: true)
+        .sheet(isPresented: $showGenerateLyricsFromFlowSheet) {
+            GenerateLyricsFromFlowSheet(
+                item: item,
+                onInsertLyrics: { lyrics in
+                    let trimmed = lyrics.trimmingCharacters(in: .whitespacesAndNewlines)
+                    if !trimmed.isEmpty {
+                        let newBody = item.body.isEmpty ? trimmed : (item.body + "\n\n" + trimmed)
+                        item.body = newBody
+                        item.modifiedDate = Date()
+                    }
                 },
                 onDismiss: {
-                    showStyleTransferSheet = false
+                    showGenerateLyricsFromFlowSheet = false
+                },
+                onOpenRecorder: {
+                    showGenerateLyricsFromFlowSheet = false
+                    showAudioRecorder = true
+                },
+                onOpenAudioImporter: {
+                    showGenerateLyricsFromFlowSheet = false
+                    showAudioImporter = true
                 }
+            )
+        }
+        .sheet(isPresented: $showARCritiqueSheet) {
+            ARCritiqueSheet(
+                currentText: item.body,
+                onDismiss: {
+                    showARCritiqueSheet = false
+                },
+                precomputedCritiques: rapSuggestionEngine.precomputedCritiques.isEmpty ? nil : rapSuggestionEngine.precomputedCritiques
             )
         }
         .sheet(isPresented: $showThemeExpansionSheet) {
@@ -975,6 +1183,88 @@ struct NoteEditorView: View {
         formatter.amSymbol = "AM"
         formatter.pmSymbol = "PM"
         return formatter.string(from: date)
+    }
+
+    /// Split transcription into phrases/lines by sentence boundaries and commas, similar to rap bars.
+    private func splitTranscriptionIntoLines(_ text: String) -> [String] {
+        let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return [] }
+        
+        // Split by sentence boundaries (. ? !) and commas
+        var normalized = trimmed
+            .replacingOccurrences(of: ". ", with: ".\n")
+            .replacingOccurrences(of: "? ", with: "?\n")
+            .replacingOccurrences(of: "! ", with: "!\n")
+            .replacingOccurrences(of: ", ", with: ",\n")
+        
+        // Ensure trailing punctuation doesn't create empty lines
+        if normalized.hasSuffix(".") || normalized.hasSuffix("?") || normalized.hasSuffix("!") || normalized.hasSuffix(",") {
+            // Keep as is
+        } else if !normalized.isEmpty {
+            normalized = normalized + "\n"
+        }
+        
+        let phrases = normalized
+            .split(separator: "\n", omittingEmptySubsequences: true)
+            .map { String($0).trimmingCharacters(in: .whitespaces) }
+            .filter { !$0.isEmpty }
+        
+        // Split very long phrases at word boundaries (max ~120 chars per line)
+        let maxLineLength = 120
+        var result: [String] = []
+        for phrase in phrases {
+            if phrase.count > maxLineLength {
+                var remaining = phrase
+                while remaining.count > maxLineLength {
+                    let chunk = String(remaining.prefix(maxLineLength))
+                    if let lastSpace = chunk.lastIndex(of: " ") {
+                        result.append(String(chunk[..<lastSpace]).trimmingCharacters(in: .whitespaces))
+                        remaining = String(remaining[chunk.index(after: lastSpace)...]).trimmingCharacters(in: .whitespaces)
+                    } else {
+                        result.append(chunk)
+                        remaining = String(remaining[chunk.endIndex...]).trimmingCharacters(in: .whitespaces)
+                    }
+                }
+                if !remaining.isEmpty {
+                    result.append(remaining)
+                }
+            } else {
+                result.append(phrase)
+            }
+        }
+        
+        return result
+    }
+    
+    /// Transcript block on the text surface: heading, "Open transcription" button (toggles raw text visibility), and inline text displayed line-by-line (hidden until button pressed).
+    private func transcriptSurfaceSection(transcription: String) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text("Transcript")
+                    .font(.headline)
+                Spacer()
+                Button {
+                    showRawTranscriptOnSurface.toggle()
+                } label: {
+                    Text(showRawTranscriptOnSurface ? "Close transcription" : "Open transcription")
+                        .font(.subheadline.weight(.medium))
+                }
+                .buttonStyle(.bordered)
+                .tint(.yellow)
+            }
+            .padding(.horizontal, 20)
+            if showRawTranscriptOnSurface {
+                VStack(alignment: .leading, spacing: 4) {
+                    ForEach(Array(splitTranscriptionIntoLines(transcription).enumerated()), id: \.offset) { _, line in
+                        Text(line)
+                            .font(.body)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .padding(.horizontal, 20)
+            }
+        }
+        .padding(.top, 8)
     }
 
     // MARK: - Metadata Pills View
@@ -1204,20 +1494,20 @@ struct NoteEditorView: View {
             Text(label)
                 .font(.system(size: 13, weight: .medium))
         }
-        .foregroundStyle(isSet ? .primary : .secondary)
-        .padding(.horizontal, 12)
-        .padding(.vertical, 6)
+        .foregroundStyle(
+            SoftBlueGlassStyle
+                .tint(for: colorScheme)
+                .opacity(isSet ? 1.0 : 0.88)
+        )
+        .padding(.horizontal, 13)
+        .padding(.vertical, 7)
         .background(
-            Capsule(style: .continuous)
-                .fill(.ultraThinMaterial)
-                .overlay(Color.black.opacity(colorScheme == .dark ? GlassSettings.darkening : 0))
-                .overlay(
-                    Capsule(style: .continuous)
-                        .strokeBorder(
-                            isSet ? Color.primary.opacity(0.2) : Color.primary.opacity(0.1),
-                            lineWidth: isSet ? 1 : 0.5
-                        )
-                )
+            SoftBlueGlassBackground(
+                shape: Capsule(style: .continuous),
+                colorScheme: colorScheme,
+                darkeningMultiplier: 1.0,
+                outlineLineWidth: isSet ? 0.95 : 0.75
+            )
         )
     }
 
@@ -1300,11 +1590,52 @@ struct NoteEditorView: View {
             print("Failed to get audio duration: \(error)")
         }
         
+        // Analyze audio for BPM, key, and scale (await to ensure it completes and auto-fills)
+        Task {
+            do {
+                print("🎵 Starting audio analysis (BPM, Key, Scale)...")
+                let analysis = try await AudioAnalysisService.shared.analyzeAudio(url: url)
+                
+                await MainActor.run {
+                    if let bpm = analysis.bpm {
+                        item.bpm = bpm
+                        print("✅ BPM auto-filled: \(bpm)")
+                    }
+                    if let key = analysis.key {
+                        item.key = key
+                        print("✅ Key auto-filled: \(key)")
+                    }
+                    if let scale = analysis.scale {
+                        item.scale = scale
+                        print("✅ Scale auto-filled: \(scale)")
+                    }
+                    item.modifiedDate = Date()
+                    
+                    // Force save to SwiftData to ensure values persist and UI updates
+                    try? item.modelContext?.save()
+                    print("✅ Audio metadata saved: BPM=\(item.bpm?.description ?? "nil"), Key=\(item.key ?? "nil"), Scale=\(item.scale ?? "nil")")
+                }
+            } catch {
+                print("⚠️ Audio analysis failed: \(error.localizedDescription)")
+                // Don't fail the whole process if analysis fails - user can analyze manually later
+            }
+        }
+        
         // Transcribe audio (on-device)
         do {
             let result = try await transcriptionService.transcribe(audioURL: url)
             item.transcription = result.fullText
             item.transcriptionSegments = result.segments
+            
+            // Show completion notification with all detected metadata
+            let hasTimestamps = !result.segments.isEmpty
+            NotificationManager.shared.showAudioProcessingCompleteNotification(
+                bpm: item.bpm,
+                key: item.key,
+                scale: item.scale,
+                transcriptionComplete: true,
+                timestampsComplete: hasTimestamps
+            )
             
             // Generate summary (cloud API)
             Task {
@@ -1321,11 +1652,32 @@ struct NoteEditorView: View {
         } catch {
             print("Transcription failed: \(error.localizedDescription)")
             // Show error to user if needed
+            
+            // Show notification even if transcription failed (but with metadata if available)
+            NotificationManager.shared.showAudioProcessingCompleteNotification(
+                bpm: item.bpm,
+                key: item.key,
+                scale: item.scale,
+                transcriptionComplete: false,
+                timestampsComplete: false
+            )
         }
     }
     
     // MARK: - Rap Suggestions
     private func insertRapSuggestion(_ suggestion: RapSuggestion, isAIGenerated: Bool = false) {
+        // PR 7: Taste Memory - Record accepted suggestion
+        if isAIGenerated {
+            TasteMemory.shared.recordAccepted(
+                suggestion: suggestion,
+                signalMode: rapSuggestionEngine.currentSignalMode,
+                signalProfile: rapSuggestionEngine.currentSignalProfile,
+                registers: nil, // Will be inferred if needed
+                axes: nil, // Will be inferred if needed
+                axisProfile: nil, // Will be inferred if needed
+                alignmentScore: nil // Will be available if scored
+            )
+        }
         // Set up slam animation
         slamAnimationText = suggestion.text
         slamAnimationOffset = -200 // Start above
@@ -1546,18 +1898,11 @@ struct NoteEditorView: View {
                 )
                 
                 await MainActor.run {
-                    improveFlowLoadingStep = "Searching lyrics database..."
-                }
-                
-                let candidates = try await RapSuggestionAPI.shared.searchLyrics(
-                    narrativeSummary: narrative.summary,
-                    themes: narrative.primaryThemes + narrative.secondaryThemes,
-                    limit: 200
-                )
-                
-                await MainActor.run {
                     improveFlowLoadingStep = "Generating suggestions..."
                 }
+                
+                // CSV search is deprecated - use constraint-driven generation instead
+                let candidates: [RapLine] = []
                 
                 let filtered = ConstraintFilter(phonemeStoreProvider: { FJCMUDICTStore.shared.phonemesByWord }).filterCandidates(
                     candidates: candidates,
@@ -1645,14 +1990,11 @@ struct NoteEditorView: View {
                 )
                 
                 await MainActor.run {
-                    rewriteLineLoadingStep = "Searching for rhyming lines..."
+                    rewriteLineLoadingStep = "Generating suggestions..."
                 }
                 
-                let candidates = try await RapSuggestionAPI.shared.searchLyrics(
-                    narrativeSummary: narrative.summary,
-                    themes: narrative.primaryThemes + narrative.secondaryThemes,
-                    limit: 200
-                )
+                // CSV search is deprecated - use constraint-driven generation instead
+                let candidates: [RapLine] = []
                 
                 // Filter candidates that rhyme with the target
                 let rhymingCandidates = candidates.filter { line in
@@ -1783,7 +2125,7 @@ struct NoteEditorView: View {
         case .toolbarAISparkle:
             return (
                 title: "AI Writing Assistant",
-                description: "Get AI-powered suggestions for your next lines, rewrite lines, suggest rhymes, and improve flow. Configure Model G and Model Y in preferences.",
+                description: "Get AI-powered suggestions for your next lines, rewrite lines, suggest rhymes, and improve flow. Configure Model G, Model G Core, and Model Y in preferences.",
                 icon: "sparkles"
             )
         case .toolbarUndoRedo:
