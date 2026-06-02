@@ -654,7 +654,9 @@ struct DynamicIslandToolbarView: View {
             .frame(height: ToolbarConstants.height) // LOCKED: Exactly 64pt (44 + 10 + 10) - NEVER MODIFY
         }
         .scrollDisabled(!compactWidth)
-        .frame(maxWidth: .infinity, alignment: .leading)
+        // iPhone (compact) keeps the buttons leading so they scroll from the left;
+        // iPad (regular) centers them in the wide island instead of pooling left.
+        .frame(maxWidth: .infinity, alignment: compactWidth ? .leading : .center)
         .frame(height: ToolbarConstants.height) // LOCKED: Exactly 64pt (44 + 10 + 10) - NEVER MODIFY
     }
     

@@ -191,6 +191,7 @@ struct JournalLibraryView: View {
             page1ActionButtons(distributed: true, includeSidebarToggle: true)
                 .frame(maxWidth: .infinity)
                 .glassEffect(in: Capsule())
+                .overlay(GyroSpecularEdge(shape: Capsule(), lineWidth: 1.3)) // iOS 26-style tilt glint — matches the iPhone glass pill
                 .padding(.horizontal, 16)
 
             Text("Journal")
@@ -203,14 +204,6 @@ struct JournalLibraryView: View {
         .padding(.top, 12)
         .padding(.bottom, 12)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            LinearGradient(
-                colors: [Momentum.accent.opacity(0.22), Momentum.accent.opacity(0.05), .clear],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .ignoresSafeArea(edges: .top)
-        )
     }
 
     var body: some View {
@@ -254,7 +247,23 @@ struct JournalLibraryView: View {
                     }
                 }
             }
-            .background(AtmosphereGlow())
+            .background {
+                AtmosphereGlow()
+                    .overlay(alignment: .top) {
+                        // Uniform full-width coral wash that reaches the very top edge
+                        // and corners — the radial AtmosphereGlow alone falls off there,
+                        // which left the top-left corner pale above the header buttons.
+                        LinearGradient(
+                            colors: [Momentum.accent.opacity(0.32), Momentum.accent.opacity(0.10), .clear],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 360)
+                        .allowsHitTesting(false)
+                    }
+                    .ignoresSafeArea()
+            }
             .toolbarBackground(.hidden, for: .navigationBar)
             .navigationTitle((horizontalSizeClass == .regular && !isSelectionMode) ? "" : (isSelectionMode ? "\(selectedItems.count) Selected" : "Journal"))
             .toolbar {
