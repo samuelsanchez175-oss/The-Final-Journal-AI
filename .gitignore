@@ -1,6 +1,7 @@
 # Xcode build artifacts
 build/
 DerivedData/
+.derivedData/
 *.o
 *.d
 *.dia
