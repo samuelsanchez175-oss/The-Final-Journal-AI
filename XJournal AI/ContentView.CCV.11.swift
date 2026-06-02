@@ -142,7 +142,7 @@ struct JournalRowView: View {
             Text(noteTitle)
                 .font(.momentumCardTitle)
                 .foregroundStyle(Momentum.contentPrimary)
-                .lineLimit(1)
+                .lineLimit(2)   // was 1 — allow scaled titles a second line before truncating
 
             // reservesSpace keeps empty-body notes the same height as full ones.
             Text(notePreview.isEmpty ? " " : notePreview)
@@ -155,7 +155,7 @@ struct JournalRowView: View {
             HStack(spacing: 8) {
                 HStack(spacing: 5) {
                     Image(systemName: "clock")
-                        .font(.system(size: 11, weight: .semibold))
+                        .font(.footnote.weight(.semibold))   // scales with the .momentumMetadata date label
                     Text(lastModifiedText)
                         .font(.momentumMetadata)
                         .lineLimit(1)
@@ -169,6 +169,9 @@ struct JournalRowView: View {
                 Spacer(minLength: 0)
             }
             .frame(minHeight: 18)
+            // Dense metadata row (fixed-width date column + alignment-critical chips): clamp Dynamic
+            // Type so the 146pt column and cross-row chip alignment survive large text sizes.
+            .chromeClamp()
 
             Divider()
                 .padding(.top, 4)
@@ -214,9 +217,9 @@ struct JournalRowView: View {
     private func metaChip(_ text: String, systemImage: String) -> some View {
         HStack(spacing: 3) {
             Image(systemName: systemImage)
-                .font(.system(size: 9, weight: .semibold))
+                .font(.caption2.weight(.semibold))   // was 9pt fixed — scales (clamped by the row's chromeClamp)
             Text(text)
-                .font(.system(size: 11, weight: .medium))
+                .font(.caption.weight(.medium))       // was 11pt fixed — scales (clamped by the row's chromeClamp)
                 .lineLimit(1)
         }
         .foregroundStyle(Momentum.accent)

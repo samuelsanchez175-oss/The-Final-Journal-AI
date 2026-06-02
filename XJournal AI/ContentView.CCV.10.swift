@@ -690,14 +690,14 @@ struct JournalLibraryView: View {
             // Search Bar Container (iOS 26 Style)
             HStack(spacing: 10) {
                 Image(systemName: "magnifyingglass")
-                    .font(.system(size: 16, weight: .medium))
+                    .font(.callout.weight(.medium))
                     .foregroundStyle(.secondary)
 
                 TextField("Search", text: $searchText)
                     .focused($isSearchFocused)
                     .textFieldStyle(.plain)
                     .submitLabel(.search)
-                    .font(.system(size: 16))
+                    .font(.callout)
                     .onChange(of: isSearchFocused) { _, newValue in
                         withAnimation(.easeInOut(duration: 0.15)) {
                             showSearchCancel = newValue
@@ -709,7 +709,7 @@ struct JournalLibraryView: View {
                         searchText = ""
                     } label: {
                         Image(systemName: "xmark.circle.fill")
-                            .font(.system(size: 16))
+                            .font(.callout)
                             .foregroundStyle(.secondary)
                     }
                     .buttonStyle(.plain)
@@ -718,7 +718,7 @@ struct JournalLibraryView: View {
                 Spacer()
 
                 Image(systemName: "mic.fill")
-                    .font(.system(size: 16, weight: .medium))
+                    .font(.callout.weight(.medium))
                     .foregroundStyle(.secondary)
             }
             .padding(.horizontal, 16)
@@ -735,7 +735,7 @@ struct JournalLibraryView: View {
                 addItem()
             }) {
                 Image(systemName: "square.and.pencil")
-                    .font(.system(size: 18, weight: .semibold))
+                    .font(.title3.weight(.semibold))
                     .foregroundStyle(Momentum.accent)
                     .frame(width: 44, height: 44)
                     .background(Circle().fill(Momentum.surfaceElevated.opacity(0.72))) // more opaque, less see-through
@@ -747,6 +747,7 @@ struct JournalLibraryView: View {
         .padding(.horizontal, 16)
         .padding(.bottom, 20)
         .background(Color.clear)
+        .chromeClamp()   // search field + compose live in a fixed 44pt bar — cap Dynamic Type growth
     }
 
     private var page1FiltersView: some View {
@@ -763,8 +764,9 @@ struct JournalLibraryView: View {
             .padding(.trailing, 16) // Trailing padding for last button
             .padding(.vertical, 8)
         }
+        .chromeClamp()   // horizontally-scrolling chip bar — keep pills usable at large text
     }
-    
+
     // MARK: - Sort Button (Menu)
     private var sortButton: some View {
         Menu {
@@ -840,7 +842,7 @@ struct JournalLibraryView: View {
         } label: {
             HStack(spacing: 6) {
                 Image(systemName: sortDirection == .newestFirst ? "arrow.down.circle.fill" : "arrow.up.circle.fill")
-                    .font(.system(size: 12, weight: .medium))
+                    .font(.callout.weight(.medium))
                 Text(sortType == .byCreated ? "Created" : "Modified")
                     .font(.callout)
             }
@@ -910,12 +912,12 @@ struct JournalLibraryView: View {
         } label: {
             HStack(spacing: 6) {
                 Image(systemName: filter.icon)
-                    .font(.system(size: 12, weight: .medium))
+                    .font(.callout.weight(.medium))
                 Text(filter.rawValue)
                     .font(.callout)
                 if hasActiveSelection(for: filter) {
                     Image(systemName: "checkmark.circle.fill")
-                        .font(.system(size: 10))
+                        .font(.caption)
                 }
             }
             .padding(.horizontal, 14)

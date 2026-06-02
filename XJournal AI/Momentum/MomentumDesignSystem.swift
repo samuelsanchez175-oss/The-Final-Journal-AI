@@ -68,13 +68,45 @@ enum Momentum {
 }
 
 // MARK: - Type scale (≥16pt for content; sub-16 only for true metadata)
+//
+// Dynamic Type: the ramp maps to semantic text styles so it scales with the iOS Text Size slider
+// AND re-renders live (SwiftUI tracks the dependency for semantic fonts; a static UIFontMetrics
+// read would not update live). Base sizes preserved: body 16 = .callout, metadata 13 = .footnote,
+// section 12 = .caption, cardTitle = .headline (17 semibold; was 18 — locked 1pt drop). Hero scales
+// relative to .largeTitle, clamped (display text shouldn't run away).
 
 extension Font {
-    static func momentumHero(_ size: CGFloat = 72) -> Font { .system(size: size, weight: .bold) }
-    static let momentumCardTitle = Font.system(size: 18, weight: .semibold)
-    static let momentumBody      = Font.system(size: 16)
-    static let momentumMetadata  = Font.system(size: 13)
-    static let momentumSection   = Font.system(size: 12, weight: .semibold)   // + .tracking in MomentumSectionHeader
+    static func momentumHero(_ size: CGFloat = 72) -> Font {
+        let scaled = UIFontMetrics(forTextStyle: .largeTitle).scaledValue(for: size)
+        return .system(size: min(scaled, size * 1.6), weight: .bold)
+    }
+    static let momentumCardTitle = Font.headline                    // 17 semibold (was .system(size: 18, .semibold))
+    static let momentumBody      = Font.callout                     // 16 (exact)
+    static let momentumMetadata  = Font.footnote                    // 13 (exact)
+    static let momentumSection   = Font.caption.weight(.semibold)   // 12 (+ .tracking in MomentumSectionHeader)
+}
+
+// MARK: - Dynamic Type helpers
+
+extension View {
+    /// Cap Dynamic Type growth for dense chrome (toolbars, chip bars, tab rows, metadata rows) so it
+    /// stays usable at large text sizes. Reading surfaces stay UNclamped (full accessibility range).
+    func chromeClamp() -> some View {
+        dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+    }
+
+    /// Keep an icon button's tappable area at ≥44pt, scaled with Dynamic Type. Apply to the button's
+    /// label so the hit area grows with text (within any `chromeClamp()` ceiling on the subtree).
+    func scaledHitTarget() -> some View { modifier(ScaledHitTarget()) }
+}
+
+/// Backs `scaledHitTarget()`. `@ScaledMetric` lives in a view, so the minimum grows with the
+/// effective `dynamicTypeSize` (and respects a parent `chromeClamp()`).
+private struct ScaledHitTarget: ViewModifier {
+    @ScaledMetric(relativeTo: .body) private var minSide: CGFloat = 44
+    func body(content: Content) -> some View {
+        content.frame(minWidth: minSide, minHeight: minSide)
+    }
 }
 
 // MARK: - Theme mode (Light default; editorial-dark deferred, seam kept)

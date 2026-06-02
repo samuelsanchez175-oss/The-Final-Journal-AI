@@ -305,7 +305,7 @@ struct DynamicIslandToolbarView: View {
             HStack(spacing: 4) {
                 if rhymeCount > 0 {
                     Text("\(rhymeCount)")
-                        .font(.system(size: 8, weight: .semibold))
+                        .font(.caption2.weight(.semibold))
                         .foregroundStyle(.blue)
                         .padding(.horizontal, 4)
                         .padding(.vertical, 2)
@@ -315,7 +315,7 @@ struct DynamicIslandToolbarView: View {
                         )
                 }
                 Text("\(wordCount)")
-                    .font(.system(size: 8, weight: .semibold))
+                    .font(.caption2.weight(.semibold))
                     .foregroundStyle(.secondary)
                     .padding(.horizontal, 4)
                     .padding(.vertical, 2)
@@ -509,7 +509,7 @@ struct DynamicIslandToolbarView: View {
                             .overlay(alignment: .topTrailing) {
                                 if NoteSuggestionSessionStore.hasSession(on: item) || rapSuggestionEngine.hasRecallableSuggestions {
                                     Image(systemName: "clock.arrow.circlepath")
-                                        .font(.system(size: 11, weight: .semibold))
+                                        .font(.caption.weight(.semibold))
                                         .foregroundStyle(.orange)
                                         .padding(2)
                                         .background(.ultraThinMaterial, in: Circle())
@@ -778,7 +778,7 @@ struct DynamicIslandToolbarView: View {
                                 showAISparkleSplash = false
                             } label: {
                                 Image(systemName: "xmark")
-                                    .font(.system(size: 14, weight: .semibold))
+                                    .font(.subheadline.weight(.semibold))
                                     .foregroundStyle(.secondary)
                                     .frame(width: 28, height: 28)
                                     .background(
@@ -875,6 +875,7 @@ struct DynamicIslandToolbarView: View {
     
     var body: some View {
         toolbarContent
+        .chromeClamp()   // toolbar height is LOCKED at 64pt — cap Dynamic Type so contents fit the locked geometry
         .overlay(aiSparkleSplashOverlay)
         .onChange(of: showAISparkleSplash) { _, isShowing in
             if isShowing {

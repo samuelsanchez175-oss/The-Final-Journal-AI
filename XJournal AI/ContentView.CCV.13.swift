@@ -1575,10 +1575,11 @@ struct NoteEditorView: View {
     private func metadataPillLabel(icon: String, label: String, isSet: Bool) -> some View {
         HStack(spacing: 6) {
             Image(systemName: icon)
-                .font(.system(size: 12, weight: .medium))
+                .font(.footnote.weight(.medium))
             Text(label)
-                .font(.system(size: 13, weight: .medium))
+                .font(.footnote.weight(.medium))
         }
+        .chromeClamp()   // editor metadata pills live in a horizontal-scroll row — cap Dynamic Type
         .foregroundStyle(
             SoftBlueGlassStyle
                 .tint(for: colorScheme)
