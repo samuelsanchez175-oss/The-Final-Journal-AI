@@ -89,10 +89,14 @@ struct JournalLibraryView: View {
     @State private var selectedItems: Set<PersistentIdentifier> = []
     @State private var showFolderSelection: Bool = false
 
+    // iPad: drive the split-view sidebar visibility from our own toggle button
+    // (the system sidebar-toggle is removed so all 6 header buttons share one row).
+    @State private var columnVisibility: NavigationSplitViewVisibility = .all
+
     // The 5-button cluster (Page 1.1). Shared: iPhone shows it as a compact
     // nav-bar glass pill (distributed: false); iPad spreads it evenly full-width
     // across iPadSidebarHeader (distributed: true) so it reads as a top bar.
-    private func page1ActionButtons(distributed: Bool = false) -> some View {
+    private func page1ActionButtons(distributed: Bool = false, includeSidebarToggle: Bool = false) -> some View {
         HStack(spacing: distributed ? 2 : 0) {
             Button {
                 UIImpactFeedbackGenerator(style: .light).impactOccurred()
@@ -162,6 +166,20 @@ struct JournalLibraryView: View {
                 Image(systemName: "plus")
                     .actionIconFrame(distributed)
             }
+
+            if includeSidebarToggle {
+                Button {
+                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    withAnimation(.easeInOut(duration: 0.25)) {
+                        columnVisibility = (columnVisibility == .detailOnly) ? .all : .detailOnly
+                    }
+                } label: {
+                    Image(systemName: "sidebar.left")
+                        .actionIconFrame(distributed)
+                }
+                .accessibilityLabel("Toggle sidebar")
+                .accessibilityHint("Show or hide the journal list")
+            }
         }
         .foregroundStyle(Momentum.accent)
     }
@@ -170,7 +188,7 @@ struct JournalLibraryView: View {
     // large "Journal" title, then the filter pills.
     private var iPadSidebarHeader: some View {
         VStack(alignment: .leading, spacing: 14) {
-            page1ActionButtons(distributed: true)
+            page1ActionButtons(distributed: true, includeSidebarToggle: true)
                 .frame(maxWidth: .infinity)
                 .glassEffect(in: Capsule())
                 .padding(.horizontal, 16)
@@ -196,7 +214,7 @@ struct JournalLibraryView: View {
     }
 
     var body: some View {
-        NavigationSplitView {
+        NavigationSplitView(columnVisibility: $columnVisibility) {
             Group {
                 // Show UI structure immediately - don't block on loading
                 // Notes will appear progressively as they load
@@ -284,6 +302,7 @@ struct JournalLibraryView: View {
                     }
                 }
             }
+            .toolbar(removing: .sidebarToggle)
             .safeAreaInset(edge: .bottom, spacing: 0) {
                 if isOnPage1 {
                     page1BottomBarWithCompose
@@ -295,18 +314,39 @@ struct JournalLibraryView: View {
             }
             .navigationSplitViewColumnWidth(min: 320, ideal: 360, max: 420)
         } detail: {
-            if let selectedItem = selectedImportedItem {
-                NoteEditorView(item: selectedItem)
-                    .onAppear { isOnPage1 = false }
-                    .onDisappear { 
-                        isOnPage1 = true
-                        selectedImportedItem = nil
+            ZStack(alignment: .topLeading) {
+                if let selectedItem = selectedImportedItem {
+                    NoteEditorView(item: selectedItem)
+                        .onAppear { isOnPage1 = false }
+                        .onDisappear {
+                            isOnPage1 = true
+                            selectedImportedItem = nil
+                        }
+                } else {
+                    JournalDetailPlaceholderView(onCreate: {
+                        prepareHapticForNewNote()
+                        addItem()
+                    })
+                }
+
+                // When the sidebar is collapsed the header toggle is hidden with it,
+                // so surface a re-show button here as the way back to the list.
+                if columnVisibility == .detailOnly {
+                    Button {
+                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                        withAnimation(.easeInOut(duration: 0.25)) { columnVisibility = .all }
+                    } label: {
+                        Image(systemName: "sidebar.left")
+                            .font(.title3)
+                            .foregroundStyle(Momentum.accent)
+                            .frame(width: 40, height: 40)
+                            .glassEffect(in: Circle())
                     }
-            } else {
-                JournalDetailPlaceholderView(onCreate: {
-                    prepareHapticForNewNote()
-                    addItem()
-                })
+                    .padding(.leading, 16)
+                    .padding(.top, 12)
+                    .accessibilityLabel("Show journal list")
+                    .transition(.opacity)
+                }
             }
         }
         .navigationSplitViewStyle(.balanced)
