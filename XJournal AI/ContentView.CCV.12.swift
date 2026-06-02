@@ -122,7 +122,7 @@ struct MomentumProfileTabs: View {
                 } label: {
                     HStack(spacing: 5) {
                         Text(tab.label)
-                            .font(.system(size: 15, weight: .semibold))
+                            .font(.subheadline.weight(.semibold))
                         if attention.contains(tab) && !isSelected {
                             Circle()
                                 .fill(Momentum.accent)
@@ -284,7 +284,7 @@ struct ProfilePopoverView: View {
                     }
                 }
             }
-            .onDisappear { if hasUnsavedChanges { persist() } }
+            .onDisappear { persist() }   // always persist on dismiss (persist() is idempotent) so no field is ever dropped on swipe-dismiss
             .onChange(of: selectedItem) { _, newItem in handleAvatarPick(newItem) }
             .onChange(of: openAIKeyDraft) { _, _ in hasUnsavedChanges = true }
             .onChange(of: geniusKeyDraft) { _, _ in hasUnsavedChanges = true }
@@ -502,7 +502,7 @@ struct ProfilePopoverView: View {
                     FlowLayout(spacing: 6) {
                         ForEach(chips, id: \.self) { chip in
                             Text(chip)
-                                .font(.system(size: 13, weight: .medium))
+                                .font(.footnote.weight(.medium))
                                 .padding(.horizontal, 12)
                                 .padding(.vertical, 7)
                                 .foregroundStyle(Momentum.contentSecondary)
