@@ -280,7 +280,7 @@ private struct OnboardingFeatureRow: View {
     var body: some View {
         HStack(spacing: 12) {
             Image(systemName: icon)
-                .font(.system(size: 16, weight: .semibold))
+                .font(.callout.weight(.semibold))
                 .foregroundStyle(Momentum.accent)
                 .frame(width: 26)
 

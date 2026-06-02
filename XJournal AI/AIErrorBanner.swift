@@ -30,15 +30,15 @@ struct AIErrorBanner: View {
                 HStack(spacing: 12) {
                     Image(systemName: "exclamationmark.triangle.fill")
                         .foregroundStyle(Color.red.opacity(0.85))
-                        .font(.system(size: 18, weight: .semibold))
+                        .font(.title3.weight(.semibold))
 
                     VStack(alignment: .leading, spacing: 3) {
                         Text("AI Error")
-                            .font(.system(size: 14, weight: .bold))
+                            .font(.subheadline.weight(.bold))
                             .foregroundStyle(Momentum.contentPrimary)
 
                         Text(message)
-                            .font(.system(size: 13))
+                            .font(.footnote)
                             .foregroundStyle(Momentum.contentSecondary)
                             .fixedSize(horizontal: false, vertical: true)
                             .multilineTextAlignment(.leading)
@@ -50,7 +50,7 @@ struct AIErrorBanner: View {
                     Button(action: onDismiss) {
                         Image(systemName: "xmark.circle.fill")
                             .foregroundStyle(Momentum.contentSecondary)
-                            .font(.system(size: 18))
+                            .font(.title3)
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel("Dismiss error")
@@ -64,7 +64,7 @@ struct AIErrorBanner: View {
                         HStack(spacing: 6) {
                             Image(systemName: "arrow.right.circle.fill")
                             Text(fixButtonTitle)
-                                .font(.system(size: 14, weight: .semibold))
+                                .font(.subheadline.weight(.semibold))
                         }
                         .foregroundStyle(Color.accentColor)
                         .frame(maxWidth: .infinity, alignment: .leading)

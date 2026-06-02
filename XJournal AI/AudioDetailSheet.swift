@@ -316,7 +316,7 @@ struct AudioDetailSheet: View {
                 // Title and metadata
                 VStack(spacing: 4) {
                     Text(displayTitle)
-                        .font(.system(size: 22, weight: .bold))
+                        .font(.title2.weight(.bold))
                         .foregroundStyle(.white)
                     
                     Text(dateTimeString)
@@ -762,7 +762,7 @@ struct AudioDetailSheet: View {
                 .buttonStyle(.plain)
             }
             Text(fullText)
-                .font(.system(size: 17, weight: .regular))
+                .font(.body)
                 .foregroundStyle(.primary)
                 .lineSpacing(8)
                 .lineLimit(showFullTranscript ? nil : collapsedLineLimit)
@@ -1017,7 +1017,7 @@ struct AudioDetailSheet: View {
             HStack(alignment: .top, spacing: transcriptRowSpacing) {
                 if showTimestamps {
                     Text(timestampText)
-                        .font(.system(size: 12, weight: .medium, design: .monospaced))
+                        .font(.system(.caption, design: .monospaced).weight(.medium))
                         .foregroundStyle(.secondary.opacity(0.6))
                         .frame(width: transcriptTimestampColumnWidth, alignment: .leading)
                         .fixedSize(horizontal: true, vertical: false)
@@ -1064,7 +1064,7 @@ struct AudioDetailSheet: View {
                         Color.clear.frame(width: 0, height: 0)
                     }
                     Text(syllableDisplay.isEmpty ? "—" : syllableDisplay)
-                        .font(.system(size: 12, weight: .medium).monospacedDigit())
+                        .font(.caption.weight(.medium).monospacedDigit())
                         .foregroundStyle(Momentum.contentSecondary)
                 }
                 .padding(.horizontal, transcriptRowHorizontalPadding)
@@ -1203,7 +1203,7 @@ struct AudioDetailSheet: View {
             HStack(alignment: .top, spacing: transcriptRowSpacing) {
                 if showTimestamps {
                     Text(formatTime(segment.timestamp))
-                        .font(.system(size: 12, weight: .medium, design: .monospaced))
+                        .font(.system(.caption, design: .monospaced).weight(.medium))
                         .foregroundStyle(.secondary.opacity(0.6))
                         .frame(width: transcriptTimestampColumnWidth, alignment: .leading)
                         .fixedSize(horizontal: true, vertical: false)
@@ -1229,7 +1229,7 @@ struct AudioDetailSheet: View {
                         Color.clear.frame(width: 0, height: 0)
                     }
                     Text(syllableDisplay.isEmpty ? "—" : syllableDisplay)
-                        .font(.system(size: 12, weight: .medium).monospacedDigit())
+                        .font(.caption.weight(.medium).monospacedDigit())
                         .foregroundStyle(Momentum.contentSecondary)
                 }
                 .padding(.horizontal, transcriptRowHorizontalPadding)
@@ -1251,7 +1251,7 @@ struct AudioDetailSheet: View {
             HStack(alignment: .top, spacing: transcriptRowSpacing) {
                 if showTimestamps {
                     Text(formatTime(startTime))
-                        .font(.system(size: 12, weight: .medium, design: .monospaced))
+                        .font(.system(.caption, design: .monospaced).weight(.medium))
                         .foregroundStyle(.secondary.opacity(0.6))
                         .frame(width: transcriptTimestampColumnWidth, alignment: .leading)
                         .fixedSize(horizontal: true, vertical: false)
@@ -1276,7 +1276,7 @@ struct AudioDetailSheet: View {
                     Color.clear.frame(width: 0, height: 0)
                 }
                 Text(beatLine.perBeatDisplay)
-                    .font(.system(size: 12, weight: .medium).monospacedDigit())
+                    .font(.caption.weight(.medium).monospacedDigit())
                     .foregroundStyle(Momentum.contentSecondary)
             }
             .padding(.horizontal, transcriptRowHorizontalPadding)
@@ -1489,7 +1489,7 @@ struct AudioDetailSheet: View {
         VStack(spacing: 12) {
             // Reduced timer display size (less prominent)
             Text(formatTimer(animatedTime))
-                .font(.system(size: 32, weight: .semibold, design: .monospaced))
+                .font(.system(.title, design: .monospaced).weight(.semibold))
                 .foregroundStyle(.white.opacity(0.9))
                 .contentTransition(.numericText())
                 .animation(.linear(duration: 0.1), value: animatedTime)

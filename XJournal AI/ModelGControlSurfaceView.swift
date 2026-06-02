@@ -93,7 +93,7 @@ struct ModelGControlSurfaceView: View {
                 Text("Generate")
                 if !selectedTones.isEmpty {
                     Text("\(selectedTones.count)")
-                        .font(.system(size: 13, weight: .bold))
+                        .font(.footnote.weight(.bold))
                         .foregroundStyle(Momentum.onInverse)
                         .padding(.horizontal, 7).padding(.vertical, 2)
                         .background(Rectangle().fill(Momentum.accent))
@@ -263,8 +263,8 @@ struct ModelGControlSurfaceView: View {
         } label: {
             HStack(spacing: 6) {
                 Image(systemName: isSelected ? "checkmark.square.fill" : "square")
-                    .font(.system(size: 13, weight: .semibold))
-                Text(tone.rawValue).font(.system(size: 14, weight: .medium))
+                    .font(.footnote.weight(.semibold))
+                Text(tone.rawValue).font(.subheadline.weight(.medium))
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 9)

@@ -134,7 +134,7 @@ struct ThemeExpansionSheet: View {
                 .symbolEffect(.pulse, options: .repeating)
 
             Text("Theme Expansion")
-                .font(.system(size: 32, weight: .bold))
+                .font(.title.weight(.bold))
                 .foregroundStyle(Momentum.contentPrimary)
 
             Text("Themes auto-select from your lyrics. Choose any to steer where your narrative goes next.")

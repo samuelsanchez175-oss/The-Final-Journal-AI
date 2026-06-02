@@ -235,7 +235,7 @@ struct FontSizeStepperPopover: View {
                 fontSize = max(range.lowerBound, fontSize - 1)
             }
             Text("\(Int(fontSize))")
-                .font(.system(size: 17, weight: .semibold).monospacedDigit())
+                .font(.body.weight(.semibold).monospacedDigit())
                 .frame(minWidth: 26)
             stepButton("plus", disabled: fontSize >= range.upperBound) {
                 fontSize = min(range.upperBound, fontSize + 1)
@@ -243,6 +243,7 @@ struct FontSizeStepperPopover: View {
         }
         .padding(.horizontal, 18)
         .padding(.vertical, 12)
+        .chromeClamp()   // compact stepper: glyphs live in fixed 38pt circles — cap Dynamic Type
     }
 
     @ViewBuilder
@@ -252,7 +253,7 @@ struct FontSizeStepperPopover: View {
             action()
         } label: {
             Image(systemName: symbol)
-                .font(.system(size: 15, weight: .bold))
+                .font(.subheadline.weight(.bold))
                 .frame(width: 38, height: 38)
                 .background(Circle().fill(Color(.secondarySystemFill)))
         }
@@ -547,8 +548,8 @@ struct MomentumChip: View {
     var body: some View {
         Button(action: action) {
             HStack(spacing: 6) {
-                if let systemImage { Image(systemName: systemImage).font(.system(size: 12, weight: .semibold)) }
-                Text(title).font(.system(size: 14, weight: .medium))
+                if let systemImage { Image(systemName: systemImage).font(.caption.weight(.semibold)) }
+                Text(title).font(.subheadline.weight(.medium))
             }
             .padding(.horizontal, 14).padding(.vertical, 9)
             .foregroundStyle(active ? Momentum.accent : Momentum.contentSecondary)
@@ -580,7 +581,7 @@ struct MomentumSquareButtonStyle: ButtonStyle {
             }
         }()
         return configuration.label
-            .font(.system(size: 16, weight: .semibold))
+            .font(.callout.weight(.semibold))
             .padding(.horizontal, 18).padding(.vertical, 13)
             .frame(minHeight: 44)
             .background(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous).fill(bg))

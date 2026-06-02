@@ -166,7 +166,7 @@ struct ReleaseNotesSheetView: View {
 
                         if isLatest {
                             Text("LATEST")
-                                .font(.system(size: 10, weight: .bold))
+                                .font(.caption2.weight(.bold))
                                 .tracking(0.8)
                                 .foregroundStyle(Momentum.onInverse)
                                 .padding(.horizontal, 8)

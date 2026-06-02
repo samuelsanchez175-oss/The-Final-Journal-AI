@@ -1293,7 +1293,7 @@ struct RapSuggestionView: View {
     @ViewBuilder
     private func themeTag(_ theme: String) -> some View {
         Text(theme)
-            .font(.system(size: 11, weight: .medium))
+            .font(.caption2.weight(.medium))
             .foregroundStyle(Momentum.contentSecondary)
             .padding(.horizontal, 10)
             .padding(.vertical, 5)

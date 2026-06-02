@@ -37,21 +37,27 @@ scale at all. Wrap dense chrome in `.chromeClamp()`.
 | `ContentView.CCV.11.swift` :296 | Empty-state hero glyph sized to fixed concentric circles (decorative). |
 | `Momentum/MomentumDesignSystem.swift` :81 | `momentumHero` — already scaled via `UIFontMetrics`, clamped. |
 
-## P1 — Design-system internals (highest leverage; foundation file)
+## P1 — Design-system internals ✅ DONE 2026-06-01 (build verified)
 
-These back shared components (section headers, chips, button styles), so converting them propagates app-wide.
+All 5 converted in `Momentum/MomentumDesignSystem.swift`. Shared components, so the fix propagates app-wide.
 
-| File:line | Current | → Recommended |
-|-----------|---------|---------------|
-| `Momentum/MomentumDesignSystem.swift` :238 | 17 semibold | `.body.weight(.semibold)` (or `.headline`) |
-| `Momentum/MomentumDesignSystem.swift` :255 | 15 bold | `.subheadline.weight(.bold)` |
-| `Momentum/MomentumDesignSystem.swift` :550 | 12 semibold | `.caption.weight(.semibold)` |
-| `Momentum/MomentumDesignSystem.swift` :551 | 14 medium | `.subheadline.weight(.medium)` |
-| `Momentum/MomentumDesignSystem.swift` :583 | 16 semibold | `.callout.weight(.semibold)` |
+| Component | Was | Applied |
+|-----------|-----|---------|
+| `FontSizeStepperPopover` — value readout | 17 semibold | `.body.weight(.semibold).monospacedDigit()` |
+| `FontSizeStepperPopover` — ± glyphs | 15 bold | `.subheadline.weight(.bold)` (+ popover `.chromeClamp()` — fixed 38pt circles) |
+| `MomentumChip` — icon | 12 semibold | `.caption.weight(.semibold)` |
+| `MomentumChip` — text | 14 medium | `.subheadline.weight(.medium)` |
+| `MomentumSquareButtonStyle` — label | 16 semibold | `.callout.weight(.semibold)` |
 
-## P2 — High-traffic content screens
+## P2 — High-traffic content screens ✅ DONE 2026-06-01 (build verified)
 
-| File:line | Current | → Recommended |
+**19 text fonts converted** across RapSuggestionView, OnboardingWelcomeFlow, AnalyticsDashboardView,
+CCV.12, ModelGControlSurfaceView, InlineAudioCardView, AudioDetailSheet (9 incl. monospaced/digit groups),
+ReleaseNotesSheetView. **8 kept fixed** (decorative SF Symbol hero/control glyphs in fixed frames):
+RapSuggestionView ×3 (empty-state icons), OnboardingWelcomeFlow `house.fill`, CCV.12 avatar,
+InlineAudioCardView reload button, AudioDetailSheet play/pause, ReleaseNotesSheetView version-card icon.
+
+| File:line | Was | → Applied |
 |-----------|---------|---------------|
 | `RapSuggestionView.swift` :261, :281, :319 | 48 | decorative glyph — review (likely keep) |
 | `RapSuggestionView.swift` :1296 | 11 medium | `.caption2.weight(.medium)` + `.chromeClamp()` |
@@ -75,9 +81,14 @@ These back shared components (section headers, chips, button styles), so convert
 | `ReleaseNotesSheetView.swift` :155 | 26 semibold | `.title.weight(.semibold)` |
 | `ReleaseNotesSheetView.swift` :169 | 10 bold | `.caption2.weight(.bold)` |
 
-## P3 — Sheets, banners, badges, splash
+## P3 — Sheets, banners, badges, splash ✅ DONE 2026-06-01 (build verified)
 
-| File:line | Current | → Recommended |
+**8 text fonts converted** (AIErrorBanner ×5 — glyph + title + message + dismiss + fix label;
+AchievementBadgeView stat readout; SplashScreenView app name; ThemeExpansionSheet header).
+**28 kept fixed** (decorative SF Symbol hero/empty-state/avatar/control glyphs in fixed frames, +
+proportional `size * 0.x` badge glyphs). 15 P3 files needed no edits at all.
+
+| File:line | Was | → Applied |
 |-----------|---------|---------------|
 | `AIErrorBanner.swift` :33 | 18 semibold | `.headline` |
 | `AIErrorBanner.swift` :37 | 14 bold | `.subheadline.weight(.bold)` |
@@ -117,6 +128,9 @@ These back shared components (section headers, chips, button styles), so convert
 | `StyleTransferSheet.swift` :27 | 48 | decorative — review |
 | `UpgradePromptView.swift` :18 | 40 | decorative — review |
 
-**Summary:** ~75 offenders. ~30 are large (≥40pt) decorative SF Symbol glyphs that likely stay
-fixed; the ~45 text-bearing ones (≤38pt) are the real follow-up conversions. P1 (5, in the
-design system) is the highest-leverage starting point.
+**Summary: ✅ COMPLETE 2026-06-01.** P1 (5) + P2 (19) + P3 (8) = **32 text fonts converted to scale**;
+all build-verified. Every remaining `.system(size:)` in the app is an **intentional keep** — verified
+2026-06-01: decorative/control SF Symbol glyphs in fixed frames, proportional `size * 0.x` badge
+glyphs, the scaled `momentumHero`, and the editor `writingFontSize` body (decision B). **No
+text-bearing fixed fonts remain.** Re-run the grep at the top to confirm; new code should use
+semantic styles (or a documented decorative-keep).

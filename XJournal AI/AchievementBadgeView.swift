@@ -191,7 +191,7 @@ struct AchievementCollectionView: View {
                     // Header stats
                     VStack(spacing: 8) {
                         Text("\(unlockedCount) / \(totalCount)")
-                            .font(.system(size: 48, weight: .bold))
+                            .font(.largeTitle.weight(.bold))
                             .foregroundStyle(Momentum.accent)
                         
                         Text("Achievements Unlocked")

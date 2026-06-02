@@ -199,7 +199,7 @@ struct HeroSplashView: View {
                 
                 // App Name
                 Text("The Final Journal AI")
-                    .font(.system(size: 32, weight: .bold))
+                    .font(.title.weight(.bold))
                     .foregroundStyle(.primary)
                     .opacity(showContent ? 1.0 : 0.0)
                 

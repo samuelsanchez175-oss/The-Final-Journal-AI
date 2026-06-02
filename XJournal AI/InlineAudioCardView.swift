@@ -365,7 +365,7 @@ struct InlineAudioCardView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     Text(transcript)
-                        .font(.system(size: 17, weight: .regular))
+                        .font(.body)
                         .foregroundStyle(.primary)
                         .lineSpacing(8)
                         .frame(maxWidth: .infinity, alignment: .leading)
