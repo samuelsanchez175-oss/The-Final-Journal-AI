@@ -45,7 +45,19 @@ class KeychainHelper {
         case saveError(String)
         case loadError(String)
     }
-    
+
+    // MARK: - UserDefaults fallback (unsigned / simulator builds)
+    // Adhoc-signed simulator builds lack the keychain entitlement, so SecItem* returns
+    // errSecMissingEntitlement (-34018) and keys never persist. When (and ONLY when) the
+    // Keychain is unavailable for that reason, fall back to UserDefaults so saves stick on
+    // the sim / dev builds. A properly-signed device build never hits -34018, so it always
+    // uses the Keychain and this fallback stays empty. Tradeoff: the fallback is less
+    // protected than the Keychain — fine for dev/sim, never used on real signed builds.
+    private let fallbackPrefix = "kc_fallback_"
+    private func writeFallback(_ key: String, _ data: Data) { UserDefaults.standard.set(data, forKey: fallbackPrefix + key) }
+    private func clearFallback(_ key: String) { UserDefaults.standard.removeObject(forKey: fallbackPrefix + key) }
+    private func readFallback(_ key: String) -> Data? { UserDefaults.standard.data(forKey: fallbackPrefix + key) }
+
     private func save(key: String, data: Data) throws {
         let query = [
             kSecClass as String: kSecClassGenericPassword,
@@ -66,13 +78,19 @@ class KeychainHelper {
             let attributesToUpdate = [kSecValueData as String: data] as CFDictionary
             
             let updateStatus = SecItemUpdate(updateQuery, attributesToUpdate)
+            if updateStatus == errSecMissingEntitlement { writeFallback(key, data); return }
             guard updateStatus == noErr else {
-                throw KeychainError.saveError("Failed to update existing item")
+                throw KeychainError.saveError("Failed to update existing item (OSStatus: \(updateStatus))")
             }
+            clearFallback(key)
+        } else if status == errSecMissingEntitlement {
+            // Keychain unavailable on this (unsigned / simulator) build — persist to the fallback.
+            writeFallback(key, data)
         } else {
             guard status == noErr else {
                 throw KeychainError.saveError("OSStatus: \(status)")
             }
+            clearFallback(key)
         }
     }
     
@@ -86,15 +104,18 @@ class KeychainHelper {
         
         var result: AnyObject?
         let status = SecItemCopyMatching(query, &result)
-        
-        guard status == noErr, let data = result as? Data else {
-            if status == errSecItemNotFound {
-                throw KeychainError.itemNotFound
-            }
-            throw KeychainError.loadError("OSStatus: \(status)")
+
+        if status == noErr, let data = result as? Data {
+            return data
         }
-        
-        return data
+        // Keychain miss or unavailable (unsigned / simulator) — try the UserDefaults fallback.
+        if let data = readFallback(key) {
+            return data
+        }
+        if status == errSecItemNotFound {
+            throw KeychainError.itemNotFound
+        }
+        throw KeychainError.loadError("OSStatus: \(status)")
     }
     
     private func delete(key: String) throws {
@@ -103,8 +124,9 @@ class KeychainHelper {
             kSecAttrAccount as String: key
         ] as CFDictionary
         
+        clearFallback(key)
         let status = SecItemDelete(query)
-        guard status == noErr || status == errSecItemNotFound else {
+        guard status == noErr || status == errSecItemNotFound || status == errSecMissingEntitlement else {
             throw KeychainError.saveError("OSStatus: \(status)")
         }
     }
