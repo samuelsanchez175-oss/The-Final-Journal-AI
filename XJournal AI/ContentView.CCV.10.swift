@@ -176,6 +176,16 @@ struct JournalLibraryView: View {
             page1FiltersView
         }
         .padding(.top, 12)
+        .padding(.bottom, 12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            LinearGradient(
+                colors: [Momentum.accent.opacity(0.22), Momentum.accent.opacity(0.05), .clear],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea(edges: .top)
+        )
     }
 
     var body: some View {
