@@ -14,6 +14,15 @@ import SwiftData
 import UIKit
 import Combine
 
+private extension View {
+    /// Action-button icon frame: a fixed 36pt square on iPhone (the compact nav-bar
+    /// pill); expands to fill evenly across the iPad header row when `distributed`.
+    func actionIconFrame(_ distributed: Bool) -> some View {
+        frame(width: distributed ? nil : 36, height: 36)
+            .frame(maxWidth: distributed ? .infinity : nil)
+    }
+}
+
 struct JournalLibraryView: View {
     @Environment(\.modelContext) private var modelContext
     // CRITICAL: Use SortDescriptor to make Query lazy - only loads when actually accessed
@@ -80,17 +89,17 @@ struct JournalLibraryView: View {
     @State private var selectedItems: Set<PersistentIdentifier> = []
     @State private var showFolderSelection: Bool = false
 
-    // The 5-button cluster (Page 1.1). Shared: iPhone shows it as a nav-bar
-    // glass pill; iPad shows it inside iPadSidebarHeader (the narrow sidebar
-    // clips an inline nav-bar title + trailing pill).
-    private var page1ActionButtons: some View {
-        HStack(spacing: 0) {
+    // The 5-button cluster (Page 1.1). Shared: iPhone shows it as a compact
+    // nav-bar glass pill (distributed: false); iPad spreads it evenly full-width
+    // across iPadSidebarHeader (distributed: true) so it reads as a top bar.
+    private func page1ActionButtons(distributed: Bool = false) -> some View {
+        HStack(spacing: distributed ? 2 : 0) {
             Button {
                 UIImpactFeedbackGenerator(style: .light).impactOccurred()
                 showAnalytics = true
             } label: {
                 Image(systemName: "chart.bar.fill")
-                    .frame(width: 36, height: 36)
+                    .actionIconFrame(distributed)
             }
             .accessibilityLabel("Analytics")
             .accessibilityHint("View writing statistics and insights")
@@ -100,7 +109,7 @@ struct JournalLibraryView: View {
                 showProfile.toggle()
             } label: {
                 Image(systemName: "person.crop.circle")
-                    .frame(width: 36, height: 36)
+                    .actionIconFrame(distributed)
             }
             .accessibilityLabel("Profile")
             .accessibilityHint("Open profile settings")
@@ -110,7 +119,7 @@ struct JournalLibraryView: View {
                 showReleaseNotes = true
             } label: {
                 Image(systemName: "clock.arrow.circlepath")
-                    .frame(width: 36, height: 36)
+                    .actionIconFrame(distributed)
             }
             .accessibilityLabel("Release Notes")
             .accessibilityHint("View app updates and new features")
@@ -120,7 +129,7 @@ struct JournalLibraryView: View {
                 showSupportShop = true
             } label: {
                 Image(systemName: "bag")
-                    .frame(width: 36, height: 36)
+                    .actionIconFrame(distributed)
             }
             .accessibilityLabel("Support & Shop")
             .accessibilityHint("Support the creators and view shop")
@@ -151,7 +160,7 @@ struct JournalLibraryView: View {
                 }
             } label: {
                 Image(systemName: "plus")
-                    .frame(width: 36, height: 36)
+                    .actionIconFrame(distributed)
             }
         }
         .foregroundStyle(Momentum.accent)
@@ -161,12 +170,10 @@ struct JournalLibraryView: View {
     // large "Journal" title, then the filter pills.
     private var iPadSidebarHeader: some View {
         VStack(alignment: .leading, spacing: 14) {
-            HStack {
-                page1ActionButtons
-                    .glassEffect(in: Capsule())
-                Spacer(minLength: 0)
-            }
-            .padding(.horizontal, 16)
+            page1ActionButtons(distributed: true)
+                .frame(maxWidth: .infinity)
+                .glassEffect(in: Capsule())
+                .padding(.horizontal, 16)
 
             Text("Journal")
                 .font(.largeTitle.weight(.bold))
@@ -272,7 +279,7 @@ struct JournalLibraryView: View {
                     // On iPad the same cluster lives in iPadSidebarHeader.
                     // MARK: - PAGE 1.1
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        page1ActionButtons
+                        page1ActionButtons()
                             .glassEffect(in: Capsule())
                     }
                 }
