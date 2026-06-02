@@ -242,6 +242,7 @@ struct JournalLibraryView: View {
                         .allowsHitTesting(false)
                 }
             }
+            .navigationSplitViewColumnWidth(min: 320, ideal: 360, max: 420)
         } detail: {
             if let selectedItem = selectedImportedItem {
                 NoteEditorView(item: selectedItem)
@@ -254,6 +255,7 @@ struct JournalLibraryView: View {
                 JournalDetailPlaceholderView()
             }
         }
+        .navigationSplitViewStyle(.balanced)
         .sheet(isPresented: $showProfile) {
             ProfilePopoverView()
                 .presentationDetents([PresentationDetent.large])

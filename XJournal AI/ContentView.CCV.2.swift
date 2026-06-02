@@ -331,6 +331,30 @@ struct ScrollOffsetKey: PreferenceKey {
 
 struct JournalDetailPlaceholderView: View {
     var body: some View {
-        Color.clear
+        ZStack {
+            AtmosphereGlow()
+                .ignoresSafeArea()
+
+            VStack(spacing: 16) {
+                Image(systemName: "text.book.closed")
+                    .font(.system(size: 56, weight: .light))
+                    .foregroundStyle(Momentum.accent)
+                    .accessibilityHidden(true)
+
+                VStack(spacing: 6) {
+                    Text("Select a note to start writing")
+                        .font(.title3.weight(.semibold))
+                        .foregroundStyle(.primary)
+
+                    Text("Pick a note from your journal on the left, or tap the + button to begin a new one.")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: 340)
+                }
+            }
+            .padding(40)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
