@@ -20,6 +20,7 @@ struct JournalLibraryView: View {
     @Query(sort: \Item.timestamp, order: .reverse) private var items: [Item]
     @AppStorage("didSeedInitialNotes") private var didSeedInitialNotes: Bool = false
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Binding var selectedImportedItem: Item?
     
     // Loading state - track if we've attempted to load items
@@ -79,6 +80,104 @@ struct JournalLibraryView: View {
     @State private var selectedItems: Set<PersistentIdentifier> = []
     @State private var showFolderSelection: Bool = false
 
+    // The 5-button cluster (Page 1.1). Shared: iPhone shows it as a nav-bar
+    // glass pill; iPad shows it inside iPadSidebarHeader (the narrow sidebar
+    // clips an inline nav-bar title + trailing pill).
+    private var page1ActionButtons: some View {
+        HStack(spacing: 0) {
+            Button {
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                showAnalytics = true
+            } label: {
+                Image(systemName: "chart.bar.fill")
+                    .frame(width: 36, height: 36)
+            }
+            .accessibilityLabel("Analytics")
+            .accessibilityHint("View writing statistics and insights")
+
+            Button {
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                showProfile.toggle()
+            } label: {
+                Image(systemName: "person.crop.circle")
+                    .frame(width: 36, height: 36)
+            }
+            .accessibilityLabel("Profile")
+            .accessibilityHint("Open profile settings")
+
+            Button {
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                showReleaseNotes = true
+            } label: {
+                Image(systemName: "clock.arrow.circlepath")
+                    .frame(width: 36, height: 36)
+            }
+            .accessibilityLabel("Release Notes")
+            .accessibilityHint("View app updates and new features")
+
+            Button {
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                showSupportShop = true
+            } label: {
+                Image(systemName: "bag")
+                    .frame(width: 36, height: 36)
+            }
+            .accessibilityLabel("Support & Shop")
+            .accessibilityHint("Support the creators and view shop")
+
+            Menu {
+                Button {
+                    prepareHapticForNewNote()
+                    addItem()
+                } label: {
+                    Label("New Note", systemImage: "square.and.pencil")
+                }
+                Button {
+                    showImportNotesInstructions = true
+                } label: {
+                    Label("Import from Notes", systemImage: "note.text")
+                }
+                Button {
+                    prepareHapticForNewNote()
+                    addItem()
+                } label: {
+                    Label("New Note (Record Audio)", systemImage: "waveform")
+                }
+                Divider()
+                Button {
+                    isSelectionMode = true
+                } label: {
+                    Label("Select", systemImage: "checkmark.circle")
+                }
+            } label: {
+                Image(systemName: "plus")
+                    .frame(width: 36, height: 36)
+            }
+        }
+        .foregroundStyle(Momentum.accent)
+    }
+
+    // PAGE 1 (iPad / regular width): stacked coral header — action buttons row,
+    // large "Journal" title, then the filter pills.
+    private var iPadSidebarHeader: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack {
+                page1ActionButtons
+                    .glassEffect(in: Capsule())
+                Spacer(minLength: 0)
+            }
+            .padding(.horizontal, 16)
+
+            Text("Journal")
+                .font(.largeTitle.weight(.bold))
+                .foregroundStyle(.primary)
+                .padding(.horizontal, 16)
+
+            page1FiltersView
+        }
+        .padding(.top, 12)
+    }
+
     var body: some View {
         NavigationSplitView {
             Group {
@@ -88,7 +187,11 @@ struct JournalLibraryView: View {
                     JournalEmptyStateView(onCreate: addItem)
                 } else {
                     VStack(spacing: 0) {
-                        page1FiltersView
+                        if horizontalSizeClass == .regular && !isSelectionMode {
+                            iPadSidebarHeader
+                        } else {
+                            page1FiltersView
+                        }
                         // Show notes list immediately - it will populate as items load
                         // Use a subtle loading indicator only if truly needed
                         ZStack {
@@ -118,7 +221,7 @@ struct JournalLibraryView: View {
             }
             .background(AtmosphereGlow())
             .toolbarBackground(.hidden, for: .navigationBar)
-            .navigationTitle(isSelectionMode ? "\(selectedItems.count) Selected" : "Journal")
+            .navigationTitle((horizontalSizeClass == .regular && !isSelectionMode) ? "" : (isSelectionMode ? "\(selectedItems.count) Selected" : "Journal"))
             .toolbar {
                 if isSelectionMode {
                     // Selection mode toolbar - show only selection controls
@@ -154,82 +257,13 @@ struct JournalLibraryView: View {
                             .accessibilityHint("Move selected notes to a folder")
                         }
                     }
-                } else {
-                    // Normal mode — all 5 buttons in one merged glass pill
+                } else if horizontalSizeClass != .regular {
+                    // iPhone (compact): the 5-button glass pill in the nav bar.
+                    // On iPad the same cluster lives in iPadSidebarHeader.
                     // MARK: - PAGE 1.1
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        HStack(spacing: 0) {
-                            Button {
-                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                                showAnalytics = true
-                            } label: {
-                                Image(systemName: "chart.bar.fill")
-                                    .frame(width: 36, height: 36)
-                            }
-                            .accessibilityLabel("Analytics")
-                            .accessibilityHint("View writing statistics and insights")
-
-                            Button {
-                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                                showProfile.toggle()
-                            } label: {
-                                Image(systemName: "person.crop.circle")
-                                    .frame(width: 36, height: 36)
-                            }
-                            .accessibilityLabel("Profile")
-                            .accessibilityHint("Open profile settings")
-
-                            Button {
-                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                                showReleaseNotes = true
-                            } label: {
-                                Image(systemName: "clock.arrow.circlepath")
-                                    .frame(width: 36, height: 36)
-                            }
-                            .accessibilityLabel("Release Notes")
-                            .accessibilityHint("View app updates and new features")
-
-                            Button {
-                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                                showSupportShop = true
-                            } label: {
-                                Image(systemName: "bag")
-                                    .frame(width: 36, height: 36)
-                            }
-                            .accessibilityLabel("Support & Shop")
-                            .accessibilityHint("Support the creators and view shop")
-
-                            Menu {
-                                Button {
-                                    prepareHapticForNewNote()
-                                    addItem()
-                                } label: {
-                                    Label("New Note", systemImage: "square.and.pencil")
-                                }
-                                Button {
-                                    showImportNotesInstructions = true
-                                } label: {
-                                    Label("Import from Notes", systemImage: "note.text")
-                                }
-                                Button {
-                                    prepareHapticForNewNote()
-                                    addItem()
-                                } label: {
-                                    Label("New Note (Record Audio)", systemImage: "waveform")
-                                }
-                                Divider()
-                                Button {
-                                    isSelectionMode = true
-                                } label: {
-                                    Label("Select", systemImage: "checkmark.circle")
-                                }
-                            } label: {
-                                Image(systemName: "plus")
-                                    .frame(width: 36, height: 36)
-                            }
-                        }
-                        .foregroundStyle(Momentum.accent)
-                        .glassEffect(in: Capsule())
+                        page1ActionButtons
+                            .glassEffect(in: Capsule())
                     }
                 }
             }
