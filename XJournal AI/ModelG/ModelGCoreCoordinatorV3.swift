@@ -20,7 +20,6 @@ class ModelGCoreCoordinatorV3 {
     private let debugLogger = DebugLogger()
 
     private let barCount = 16
-    private let verseCandidateCount = 2          // generate 2 temp-varied verses, pick best syllable fit
     private let verseAverageThreshold: Double = 82
     private let defaultSyllableTarget = 11
 
@@ -69,24 +68,30 @@ class ModelGCoreCoordinatorV3 {
         // Step 1 — plan the verse (1 call).
         let plan = (try? await llmService.generateVersePlan(context: baseContext)) ?? .empty
 
-        // Step 2 — generate N full-verse candidates concurrently (1 call each).
-        let candidates: [(hook: String, bars: [String])] = await withTaskGroup(
-            of: (hook: String, bars: [String])?.self
-        ) { group in
-            let candidateTemps: [Double] = [0.7, 0.95]
-            for i in 0..<verseCandidateCount {
-                let temp = candidateTemps[i % candidateTemps.count]
-                group.addTask {
-                    try? await self.llmService.generateFullVerse(
-                        plan: plan, arcShape: arcShape, context: baseContext, temperature: temp
-                    )
+        // Step 2 — generate full-verse candidates (best-of-N) and pick the best.
+        // Effort = how many candidates; Creativity = their temperature spread; Quality bar =
+        // run one extra round if the best scores below target. Defaults reproduce legacy behavior
+        // (effort 2, creativity 0.5 → temps [0.7, 0.95], quality bar 0 = no retry).
+        let nCandidates = ModelGEnvironment.effortCandidates
+        let temps = Self.candidateTemps(count: nCandidates, creativity: ModelGEnvironment.creativity)
+        let qualityTarget = ModelGEnvironment.qualityBar * 95.0
+
+        func generateRound() async -> [(hook: String, bars: [String])] {
+            await withTaskGroup(of: (hook: String, bars: [String])?.self) { group in
+                for i in 0..<nCandidates {
+                    let temp = temps[i % temps.count]
+                    group.addTask {
+                        try? await self.llmService.generateFullVerse(
+                            plan: plan, arcShape: arcShape, context: baseContext, temperature: temp
+                        )
+                    }
                 }
+                var out: [(hook: String, bars: [String])] = []
+                for await result in group {
+                    if let result = result, !result.bars.isEmpty { out.append(result) }
+                }
+                return out
             }
-            var out: [(hook: String, bars: [String])] = []
-            for await result in group {
-                if let result = result, !result.bars.isEmpty { out.append(result) }
-            }
-            return out
         }
 
         // Score each candidate verse (avg bar score) and pick the best.
@@ -106,25 +111,33 @@ class ModelGCoreCoordinatorV3 {
         var best: (hook: String, bars: [String])?
         var bestPenalty = Double.greatestFiniteMagnitude
         var bestScore = -1.0
-        for verse in candidates where verse.bars.count >= 8 {
-            let usable = Array(verse.bars.prefix(barCount))
-            var total = 0.0
-            for (i, bar) in usable.enumerated() {
-                let ctx = makeContext(
-                    intent: intent, beat: beatFingerprint, style: styleProfile, directedParams: directedParams,
-                    luxury: luxuryLayer, barIndex: i, existingBars: Array(usable.prefix(i)),
-                    signalAxes: signalAxes, themeContext: themeContext,
-                    bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale,
-                    syllableMin: syllableMin, syllableMax: syllableMax
-                )
-                total += scoringEngine.evaluateBar(bar, context: ctx).totalScore
+        func consider(_ verses: [(hook: String, bars: [String])]) {
+            for verse in verses where verse.bars.count >= 8 {
+                let usable = Array(verse.bars.prefix(barCount))
+                var total = 0.0
+                for (i, bar) in usable.enumerated() {
+                    let ctx = makeContext(
+                        intent: intent, beat: beatFingerprint, style: styleProfile, directedParams: directedParams,
+                        luxury: luxuryLayer, barIndex: i, existingBars: Array(usable.prefix(i)),
+                        signalAxes: signalAxes, themeContext: themeContext,
+                        bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale,
+                        syllableMin: syllableMin, syllableMax: syllableMax
+                    )
+                    total += scoringEngine.evaluateBar(bar, context: ctx).totalScore
+                }
+                let score = usable.isEmpty ? 0 : total / Double(usable.count)
+                let pen = syllablePenalty(verse.bars)
+                // Primary: lowest syllable penalty. Tie-break: higher quality score.
+                if pen < bestPenalty || (pen == bestPenalty && score > bestScore) {
+                    bestPenalty = pen; bestScore = score; best = verse
+                }
             }
-            let score = usable.isEmpty ? 0 : total / Double(usable.count)
-            let pen = syllablePenalty(verse.bars)
-            // Primary: lowest syllable penalty. Tie-break: higher quality score.
-            if pen < bestPenalty || (pen == bestPenalty && score > bestScore) {
-                bestPenalty = pen; bestScore = score; best = verse
-            }
+        }
+
+        consider(await generateRound())
+        // Quality bar: one extra round if the best is below target (off when the bar == 0).
+        if qualityTarget > 0 && bestScore < qualityTarget {
+            consider(await generateRound())
         }
 
         guard let chosen = best else {
@@ -198,5 +211,18 @@ class ModelGCoreCoordinatorV3 {
         if let lo = min { return lo }
         if let hi = max { return hi }
         return tempoSyllableTarget(bpm: bpm)
+    }
+
+    /// Candidate sampling temperatures from the Creativity setting. `count > 1` spreads ±0.125
+    /// around a creativity-scaled center; creativity 0.5 → [0.7, 0.95] (legacy default).
+    static func candidateTemps(count: Int, creativity: Double) -> [Double] {
+        let c = min(max(creativity, 0), 1)
+        let center = 0.6 + c * 0.45            // 0.6 … 1.05  (0.5 → 0.825)
+        guard count > 1 else { return [min(1.3, max(0.3, center))] }
+        let half = 0.125
+        return (0..<count).map { i in
+            let t = center - half + (2 * half) * Double(i) / Double(count - 1)
+            return min(1.3, max(0.3, t))
+        }
     }
 }

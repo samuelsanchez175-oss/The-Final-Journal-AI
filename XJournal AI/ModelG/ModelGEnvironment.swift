@@ -49,6 +49,28 @@ enum ModelGEnvironment {
         set { UserDefaults.standard.set(newValue, forKey: "model_g_originality_bias") }
     }
 
+    /// Creativity (v3): sampling-temperature spread for verse candidates. 0 = safe/tight, 1 = wild.
+    /// Default 0.5 reproduces the legacy candidate temps [0.7, 0.95].
+    static var creativity: Double {
+        get { (UserDefaults.standard.object(forKey: "model_g_creativity") as? Double) ?? 0.5 }
+        set { UserDefaults.standard.set(min(max(newValue, 0), 1), forKey: "model_g_creativity") }
+    }
+
+    /// Effort (v3): how many full-verse candidates to generate in parallel and pick the best of
+    /// (best-of-N). Higher = better pick but slower + more API cost. 1…4, default 2 (legacy).
+    static var effortCandidates: Int {
+        get { let v = (UserDefaults.standard.object(forKey: "model_g_effort") as? Int) ?? 2; return min(max(v, 1), 4) }
+        set { UserDefaults.standard.set(min(max(newValue, 1), 4), forKey: "model_g_effort") }
+    }
+
+    /// Quality bar (v3): if the best candidate's score is below this target, run one extra round
+    /// of candidates and re-pick (slower, higher quality). 0 = off (default = legacy behavior),
+    /// 1 = retry toward a top score.
+    static var qualityBar: Double {
+        get { (UserDefaults.standard.object(forKey: "model_g_quality_bar") as? Double) ?? 0.0 }
+        set { UserDefaults.standard.set(min(max(newValue, 0), 1), forKey: "model_g_quality_bar") }
+    }
+
     private static let v3OnlyDefaultsAppliedKey = "ai_product_defaults_v3_only_applied"
 
     /// One-time migration: toolbar + settings → Model G v3; pin Core + v3 engine flags.

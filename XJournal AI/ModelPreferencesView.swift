@@ -9,12 +9,18 @@ struct ModelPreferencesView: View {
     @State private var originalityBias = ModelGEnvironment.originalityBias
     @AppStorage("theme_aware_generation") private var themeAwareGeneration = true
     @AppStorage("human_critic_voice") private var criticVoiceRaw = HumanCriticVoice.calmEditor.rawValue
+    @State private var creativity = ModelGEnvironment.creativity
+    @State private var effortCandidates = ModelGEnvironment.effortCandidates
+    @State private var qualityBar = ModelGEnvironment.qualityBar
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 24) {
                     originalitySlider
+                    creativitySlider
+                    effortSlider
+                    qualityBarSlider
                     themeAwareToggle
                     criticVoicePicker
                     ModelSettingsForm(settings: $modelGv3Settings)
@@ -59,6 +65,57 @@ struct ModelPreferencesView: View {
                 set: { originalityBias = $0; ModelGEnvironment.originalityBias = $0 }
             ), in: 0...1)
             Text("Lower leans on culture and familiar phrasing; higher is more novel. Mid is usually the sweet spot.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+        }
+    }
+
+    private var creativitySlider: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack {
+                Text("Creativity").font(.subheadline.weight(.semibold))
+                Spacer()
+                Text(creativity < 0.34 ? "Safe" : (creativity < 0.67 ? "Balanced" : "Wild"))
+                    .font(.caption).foregroundStyle(Momentum.contentSecondary)
+            }
+            Slider(value: Binding(
+                get: { creativity },
+                set: { creativity = $0; ModelGEnvironment.creativity = $0 }
+            ), in: 0...1)
+            Text("How loose the wording gets — lower stays tight and safe, higher takes bigger swings.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+        }
+    }
+
+    private var effortSlider: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack {
+                Text("Effort").font(.subheadline.weight(.semibold))
+                Spacer()
+                Text("Best of \(effortCandidates)")
+                    .font(.caption).foregroundStyle(Momentum.contentSecondary)
+            }
+            Slider(value: Binding(
+                get: { Double(effortCandidates) },
+                set: { effortCandidates = Int($0.rounded()); ModelGEnvironment.effortCandidates = effortCandidates }
+            ), in: 1...4, step: 1)
+            Text("How many full verses it drafts before picking the best. Higher is better but slower and costs more.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+        }
+    }
+
+    private var qualityBarSlider: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack {
+                Text("Quality bar").font(.subheadline.weight(.semibold))
+                Spacer()
+                Text(qualityBar < 0.05 ? "Off" : (qualityBar < 0.67 ? "Higher" : "Only keepers"))
+                    .font(.caption).foregroundStyle(Momentum.contentSecondary)
+            }
+            Slider(value: Binding(
+                get: { qualityBar },
+                set: { qualityBar = $0; ModelGEnvironment.qualityBar = $0 }
+            ), in: 0...1)
+            Text("Off = fastest. Higher re-drafts a verse when the first try scores low — slower, but holds out for a better one.")
                 .font(.caption).foregroundStyle(Momentum.contentSecondary)
         }
     }
@@ -601,47 +658,62 @@ struct QuestionView: View {
     @Binding var selectedIndex: Int
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 8) {
             Text(question)
-                .font(.subheadline)
-                .foregroundStyle(Momentum.contentSecondary)
-            
-            VStack(spacing: 8) {
-                ForEach(Array(options.enumerated()), id: \.offset) { index, option in
-                    Button {
-                        selectedIndex = index
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .font(.body)
-                                .foregroundStyle(.primary)
-                            
-                            Spacer()
-                            
-                            if selectedIndex == index {
-                                Image(systemName: "checkmark.circle.fill")
-                                    .foregroundStyle(.blue)
-                            } else {
-                                Image(systemName: "circle")
-                                    .foregroundStyle(Momentum.contentSecondary)
-                            }
-                        }
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 12)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(selectedIndex == index ? Color.blue.opacity(0.1) : Color.clear)
-                        )
-                    }
-                    .buttonStyle(.plain)
-                }
+                .font(.subheadline.weight(.semibold))
+
+            // Spectrum slider — snaps to each option (replaces the old radio list).
+            // Bound through `selectedIndex` so every enum/merged mapping is unchanged.
+            Slider(
+                value: Binding(
+                    get: { Double(safeIndex) },
+                    set: { selectedIndex = Int($0.rounded()) }
+                ),
+                in: 0...Double(max(options.count - 1, 1)),
+                step: 1
+            )
+
+            // Short anchors at the ends of the spectrum
+            HStack {
+                Text(shortLabel(options.first))
+                Spacer()
+                Text(shortLabel(options.last))
             }
+            .font(.caption2)
+            .foregroundStyle(Momentum.contentSecondary)
+
+            // Full description of the current stop (updates as you slide)
+            Text(currentOption)
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(Momentum.surfaceElevated)
         )
+    }
+
+    private var safeIndex: Int {
+        guard !options.isEmpty else { return 0 }
+        return min(max(selectedIndex, 0), options.count - 1)
+    }
+
+    private var currentOption: String {
+        options.indices.contains(safeIndex) ? options[safeIndex] : ""
+    }
+
+    /// Short anchor label for a spectrum end — the part before an em/en-dash.
+    private func shortLabel(_ raw: String?) -> String {
+        guard let raw, !raw.isEmpty else { return "" }
+        for sep in [" — ", " – ", " - ", "—", "–"] {
+            if let r = raw.range(of: sep) {
+                return String(raw[..<r.lowerBound]).trimmingCharacters(in: .whitespaces)
+            }
+        }
+        return raw
     }
 }
 
