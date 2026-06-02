@@ -6,5 +6,9 @@
 	<array>
 		<string>group.com.finaljournal.app</string>
 	</array>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>$(AppIdentifierPrefix)TEAMDB.The-Final-Journal-AI</string>
+	</array>
 </dict>
 </plist>

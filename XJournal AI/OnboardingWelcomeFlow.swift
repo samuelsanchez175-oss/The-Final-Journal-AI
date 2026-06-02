@@ -100,6 +100,7 @@ struct OnboardingWelcomeFlow: View {
 
     @State private var step: Step = .welcome
     @State private var apiKeyDraft: String = ""
+    @State private var keychainSaveError: String? = nil
 
     private var trimmedKey: String {
         apiKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -133,6 +134,15 @@ struct OnboardingWelcomeFlow: View {
             .padding(.horizontal, 28)
         }
         .transition(.opacity)
+        .alert("Couldn't save key", isPresented: Binding(
+            get: { keychainSaveError != nil },
+            set: { if !$0 { keychainSaveError = nil } }
+        )) {
+            Button("Try again", role: .cancel) { keychainSaveError = nil }
+            Button("Skip for now") { keychainSaveError = nil; onComplete() }
+        } message: {
+            Text(keychainSaveError ?? "")
+        }
     }
 
     // MARK: Step 1 — Welcome
@@ -147,7 +157,7 @@ struct OnboardingWelcomeFlow: View {
                     .tracking(2)
                     .foregroundStyle(Momentum.contentSecondary)
 
-                Text("Journal & Pen")
+                Text("XJournal AI")
                     .font(.momentumHero(48))
                     .foregroundStyle(Momentum.contentPrimary)
                     .multilineTextAlignment(.center)
@@ -197,7 +207,7 @@ struct OnboardingWelcomeFlow: View {
                     .font(.momentumHero(34))
                     .foregroundStyle(Momentum.contentPrimary)
 
-                Text("Journal & Pen uses your own OpenAI or Google Gemini key for AI features. It's stored only on this device — you can add it later in Settings.")
+                Text("XJournal AI uses your own OpenAI or Google Gemini key for AI features. It's stored only on this device — you can add it later in Settings.")
                     .font(.momentumBody)
                     .foregroundStyle(Momentum.contentSecondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -225,10 +235,17 @@ struct OnboardingWelcomeFlow: View {
 
             VStack(spacing: 12) {
                 Button {
-                    if !trimmedKey.isEmpty {
-                        try? KeychainHelper.shared.saveAPIKey(trimmedKey)
+                    if trimmedKey.isEmpty {
+                        onComplete()
+                    } else {
+                        do {
+                            try KeychainHelper.shared.saveAPIKey(trimmedKey)
+                            onComplete()
+                        } catch {
+                            print("Onboarding Keychain save failed: \(error)")
+                            keychainSaveError = "We couldn't save your key to your device Keychain. You can try again, or skip and add it later in Settings."
+                        }
                     }
-                    onComplete()
                 } label: {
                     Text(trimmedKey.isEmpty ? "Skip for now" : "Save & Continue")
                         .font(.headline)

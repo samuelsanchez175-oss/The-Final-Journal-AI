@@ -32,7 +32,7 @@ struct ModelPreferencesView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Cancel") {
+                    Button("Done") {
                         dismiss()
                     }
                 }
@@ -49,6 +49,11 @@ struct ModelPreferencesView: View {
         .onAppear {
             ModelGEnvironment.applyV3OnlyProductDefaultsIfNeeded()
             loadSettings()
+        }
+        .onDisappear {
+            // Persist the form knobs too (the sliders already write through live),
+            // so changes aren't silently dropped on swipe-dismiss or Done.
+            saveSettings()
         }
     }
 

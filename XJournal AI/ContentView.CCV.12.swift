@@ -177,6 +177,7 @@ struct ProfilePopoverView: View {
     @AppStorage("transcription_backend") private var transcriptionBackend: String = "apple"
     @State private var showSaveConfirmation: Bool = false
     @State private var hasUnsavedChanges: Bool = false
+    @State private var keychainErrorMessage: String? = nil
 
     // App version info
     private var appVersion: String {
@@ -267,6 +268,14 @@ struct ProfilePopoverView: View {
                 }
             }
             .overlay(alignment: .top) { saveConfirmationToast }
+            .alert("Couldn't save key", isPresented: Binding(
+                get: { keychainErrorMessage != nil },
+                set: { if !$0 { keychainErrorMessage = nil } }
+            )) {
+                Button("OK", role: .cancel) { keychainErrorMessage = nil }
+            } message: {
+                Text(keychainErrorMessage ?? "")
+            }
             .onAppear { loadOnAppear() }
             .onReceive(NotificationCenter.default.publisher(for: .showProfile)) { _ in
                 if AppNavigation.applyPendingProfileRouting(selectedTab: &selectedTab) {
@@ -359,15 +368,28 @@ struct ProfilePopoverView: View {
         if isEmailValid { storedEmail = email }   // skip invalid — keep last-saved value
         if isPhoneValid { storedPhone = phone }    // skip invalid — keep last-saved value
 
+        var keychainFailed = false
         let openAI = openAIKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines)
-        if openAI.isEmpty { try? KeychainHelper.shared.deleteAPIKey() }
-        else { try? KeychainHelper.shared.saveAPIKey(openAI) }
+        do {
+            if openAI.isEmpty { try KeychainHelper.shared.deleteAPIKey() }
+            else { try KeychainHelper.shared.saveAPIKey(openAI) }
+        } catch { keychainFailed = true; print("Keychain save (OpenAI/Gemini) failed: \(error)") }
 
         let genius = geniusKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines)
-        if genius.isEmpty { try? KeychainHelper.shared.deleteGeniusAPIKey() }
-        else { try? KeychainHelper.shared.saveGeniusAPIKey(genius) }
+        do {
+            if genius.isEmpty { try KeychainHelper.shared.deleteGeniusAPIKey() }
+            else { try KeychainHelper.shared.saveGeniusAPIKey(genius) }
+        } catch { keychainFailed = true; print("Keychain save (Genius) failed: \(error)") }
 
         hasUnsavedChanges = false
+
+        // Surface a real failure instead of a false "Saved" toast (e.g. Keychain
+        // errSecMissingEntitlement on an unsigned build).
+        if keychainFailed {
+            keychainErrorMessage = "We couldn't save your API key to this device's Keychain. Your other details were saved — please try again."
+            return
+        }
+
         if thenDismiss {
             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
             withAnimation { showSaveConfirmation = true }
