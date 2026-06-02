@@ -24,6 +24,13 @@ enum SyllableEngine {
         return Syllabifier.syllableCount(word: w)
     }
 
+    /// Total syllables in a full line/bar. Splits on non-letters (keeps in-word apostrophes),
+    /// sums the accurate per-word count. Used to score generated bars against the target.
+    static func lineSyllableCount(_ line: String) -> Int {
+        line.split { !$0.isLetter && $0 != "'" }
+            .reduce(0) { $0 + syllableCount(word: String($1)) }
+    }
+
     /// Returns word split into syllable strings. Uses phoneme boundaries when available, else heuristic.
     static func syllables(word: String) -> [String] {
         let w = word.trimmingCharacters(in: .whitespacesAndNewlines)

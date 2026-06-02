@@ -158,12 +158,15 @@ struct JournalRowView: View {
                         .font(.system(size: 11, weight: .semibold))
                     Text(lastModifiedText)
                         .font(.momentumMetadata)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.85)
                 }
                 .foregroundStyle(Momentum.contentSecondary)
+                .frame(width: 146, alignment: .leading)   // fixed date column → chips align across rows
 
-                Spacer(minLength: 8)
+                metaChips   // chips begin at the same x on every row, right next to the date
 
-                metaChips   // BPM · key/scale · folder · link — right of the date
+                Spacer(minLength: 0)
             }
             .frame(minHeight: 18)
 

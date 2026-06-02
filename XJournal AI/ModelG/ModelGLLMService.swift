@@ -172,7 +172,7 @@ class ModelGLLMService {
     }
 
     /// v3 step 2 — generate the whole verse (hook + 16 bars) in one call, conditioned on the plan.
-    func generateFullVerse(plan: VersePlan, arcShape: String, context: GenerationContext) async throws -> (hook: String, bars: [String]) {
+    func generateFullVerse(plan: VersePlan, arcShape: String, context: GenerationContext, temperature: Double = 0.8) async throws -> (hook: String, bars: [String]) {
         let layer = context.luxuryLayer ?? .empty
         let themeBlock = context.themeContext.map { themeDirective($0) } ?? ""
         let voiceBlock = context.signalAxes.map { "\n" + signalDirective($0) } ?? ""
@@ -183,9 +183,20 @@ class ModelGLLMService {
         let referencesBlock = palette.isEmpty ? "" :
             "\nSpecific references you MAY draw on (pick 1-3 that genuinely fit the feeling; never force, never list them): \(palette.joined(separator: ", "))."
         let beatBlock = beatDirective(context)
-        let syllRule = context.musicalBPM != nil
-            ? "around \(context.syllableTarget) syllables per bar — sit in the pocket at this tempo"
-            : "8-10 syllables MAX"
+        let syllRule: String
+        if let lo = context.syllableMin, let hi = context.syllableMax {
+            syllRule = "between \(lo) and \(hi) syllables per bar — sit in the pocket"
+        } else if context.musicalBPM != nil {
+            syllRule = "around \(context.syllableTarget) syllables per bar — sit in the pocket at this tempo"
+        } else {
+            syllRule = "8-10 syllables MAX"
+        }
+        // Example-based targeting (roadmap §2): models match length by example better than by count.
+        let exampleLine = context.existingBars.min {
+            abs(SyllableEngine.lineSyllableCount($0) - context.syllableTarget) <
+            abs(SyllableEngine.lineSyllableCount($1) - context.syllableTarget)
+        }
+        let exampleBlock = exampleLine.map { "\nMatch the rhythm/length of a line like: \"\($0)\"" } ?? ""
         let user = """
         Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
         Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
@@ -194,11 +205,11 @@ class ModelGLLMService {
         \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
         \(inspiration)\(referencesBlock)
         Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.
-        Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}
+        Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}\(exampleBlock)
         """
         let raw = try await postChat(
             system: "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars.",
-            user: user, maxTokens: 1400, temperature: 0.8, jsonMode: true
+            user: user, maxTokens: 1400, temperature: temperature, jsonMode: true
         )
         guard let data = raw.data(using: .utf8),
               let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
@@ -209,6 +220,26 @@ class ModelGLLMService {
             .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
             .filter { !$0.isEmpty }
         return (hook, bars)
+    }
+
+    /// Extract beat metadata (BPM/key/scale) from a beat link's title/description text.
+    /// Text-only: beat uploads list e.g. "140 BPM C# Minor" in the title. Returns nils when absent.
+    func extractBeatMetadata(fromText text: String) async throws -> (bpm: Int?, key: String?, scale: String?) {
+        let system = "Extract music beat metadata from a title/description. Respond ONLY with JSON: {\"bpm\": number or null, \"key\": one of C C# D D# E F F# G G# A A# B or null, \"scale\": \"Major\"/\"Minor\"/a mode or null}. Use null when not stated. Normalize: 'Cmin'→key C scale Minor; 'Am'→key A scale Minor; 'F#maj'→key F# scale Major."
+        let user = "Title/description:\n\(text)\n\nReturn the JSON."
+        let raw = try await postChat(system: system, user: user, maxTokens: 80, temperature: 0.0, jsonMode: true)
+        guard let data = raw.data(using: .utf8),
+              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+            return (nil, nil, nil)
+        }
+        let bpm = (obj["bpm"] as? Int)
+            ?? (obj["bpm"] as? Double).map { Int($0) }
+            ?? (obj["bpm"] as? String).flatMap { Int($0) }
+        let key = (obj["key"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let scale = (obj["scale"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines)
+        return (bpm.flatMap { (60...220).contains($0) ? $0 : nil },
+                (key?.isEmpty == false) ? key : nil,
+                (scale?.isEmpty == false) ? scale : nil)
     }
 
     private func buildBarCandidatesPrompt(count: Int, context: GenerationContext) -> String {

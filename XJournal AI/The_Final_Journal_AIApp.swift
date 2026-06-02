@@ -47,6 +47,10 @@ struct The_Final_Journal_AIApp: App {
     /// Cleared by SplashScreenManager.markOnboardingComplete() when the flow finishes.
     @State private var showOnboarding: Bool = !SplashScreenManager.shared.hasCompletedOnboarding
 
+    /// "This is your home" coachmark, shown once over the real home after onboarding.
+    @State private var showHomeIntro: Bool = SplashScreenManager.shared.hasCompletedOnboarding
+        && SplashScreenManager.shared.shouldShowSplash(.homeOverview)
+
     // MARK: - Pre-initialized ModelContainer
     // Initialize ModelContainer asynchronously on app launch to avoid blocking startup
     // Use static storage to avoid mutating getter issues in computed properties
@@ -285,10 +289,21 @@ struct The_Final_Journal_AIApp: App {
             if showOnboarding {
                 OnboardingWelcomeFlow {
                     SplashScreenManager.shared.markOnboardingComplete()
+                    showHomeIntro = SplashScreenManager.shared.shouldShowSplash(.homeOverview)
                     withAnimation(.easeInOut(duration: 0.45)) { showOnboarding = false }
                 }
                 .transition(.opacity)
                 .zIndex(10)
+            }
+
+            // "This is your home" coachmark over the real home, right after onboarding.
+            if !showOnboarding && showHomeIntro {
+                HomeIntroCoachmark {
+                    SplashScreenManager.shared.dismissSplash(.homeOverview)
+                    withAnimation(.easeInOut(duration: 0.35)) { showHomeIntro = false }
+                }
+                .transition(.opacity)
+                .zIndex(9)
             }
             }
         }

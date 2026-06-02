@@ -17,6 +17,7 @@ struct RhymeHighlightTextView: UIViewRepresentable {
     var onTextChange: ((String) -> Void)? = nil // Callback for text changes
     @Binding var dynamicHeight: CGFloat // Height binding to update SwiftUI frame
     var availableWidth: CGFloat // Real SwiftUI width from GeometryReader (not bounds.width)
+    var fontSize: CGFloat = 17 // Writing-area font size; kept in lockstep with the TextEditor.
 
     func makeCoordinator() -> Coordinator {
         let coordinator = Coordinator()
@@ -71,7 +72,7 @@ struct RhymeHighlightTextView: UIViewRepresentable {
         textView.setContentCompressionResistancePriority(.required, for: .vertical) // Resists compression (1000)
         textView.setContentHuggingPriority(.defaultLow, for: .vertical) // Allows expansion (defaultLow hugging)
 
-        textView.font = UIFont.preferredFont(forTextStyle: .body)
+        textView.font = UIFont.systemFont(ofSize: fontSize)
         textView.adjustsFontForContentSizeCategory = true
         textView.textColor = .label
 
@@ -175,6 +176,13 @@ struct RhymeHighlightTextView: UIViewRepresentable {
         // Mark as visible for next comparison
         coordinator.lastVisible = true
         
+        // Keep the overlay's font locked to the editor's adjustable size. makeUIView only
+        // runs once, so re-apply here and flag it so the skip-cache below rebuilds on change.
+        let fontChanged = (uiView.font?.pointSize ?? 0) != fontSize
+        if fontChanged {
+            uiView.font = UIFont.systemFont(ofSize: fontSize)
+        }
+
         // Optimized change detection - use hash-based comparison for efficiency
         let textHash = text.hashValue
         
@@ -197,7 +205,7 @@ struct RhymeHighlightTextView: UIViewRepresentable {
         let darkModeChanged = coordinator.lastDarkMode != isDarkMode
         
         // Skip rebuild if nothing changed - reuse cached attributed string
-        if !textChanged && !highlightsChanged && !darkModeChanged {
+        if !textChanged && !highlightsChanged && !darkModeChanged && !fontChanged {
             // Use cached attributed string if available and text matches
             if let cachedAttributed = coordinator.cachedAttributedString,
                cachedAttributed.string == text {

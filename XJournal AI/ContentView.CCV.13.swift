@@ -167,6 +167,8 @@ struct NoteEditorView: View {
             bpm: item.bpm,
             key: item.key,
             scale: item.scale,
+            syllableMin: item.syllableMin,
+            syllableMax: item.syllableMax,
             audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
             transcriptionRhythmMapData: item.transcriptionRhythmMapData,
             noteKey: aiNoteKey,
@@ -293,6 +295,7 @@ struct NoteEditorView: View {
     @State private var showKeyPopover: Bool = false
     @State private var showScalePopover: Bool = false
     @State private var showURLPopover: Bool = false
+    @State private var showSyllablesPopover: Bool = false
     @State private var showFolderPopover: Bool = false
     @State private var showAudioRecorder: Bool = false
     @State private var showRapSuggestions: Bool = false
@@ -483,10 +486,14 @@ struct NoteEditorView: View {
                                 minHeight: viewport.size.height - 200
                             )
                         
-                        // Timestamp bar moved out of the scroll stream — it is now a
-                        // centered overlay pinned to the bottom of the editor (see
-                        // `.overlay(alignment: .bottom)` below) so it always stays
-                        // visible above the toolbar instead of scrolling away.
+                            // Timestamp lives at the END of the scroll content so it
+                            // scrolls WITH the text (Apple Notes style). Pinning it as a
+                            // bottom overlay made long notes scroll text *under* it — a
+                            // visual clash. WritingSurface's minHeight keeps it near the
+                            // bottom for short notes without needing to scroll.
+                            noteTimestampBar
+                                .padding(.top, 8)
+                                .padding(.bottom, 16)
                     }
                     .frame(maxWidth: 680) // Constrain to max width, center within parent
                 .coordinateSpace(name: "editorScroll")
@@ -506,10 +513,6 @@ struct NoteEditorView: View {
             // Fully opaque writing surface — the coral bloom now lives in the header
             // section above the divider, not on the writing area.
             .background(Momentum.surfaceElevated)
-            .overlay(alignment: .bottom) {
-                noteTimestampBar
-                    .padding(.bottom, 8)
-            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         // SEGMENT 20: Scroll Gravity Locking - Ignore keyboard safe area to prevent displacement
@@ -541,6 +544,8 @@ struct NoteEditorView: View {
                         bpm: item.bpm,
                         key: item.key,
                         scale: item.scale,
+                        syllableMin: item.syllableMin,
+                        syllableMax: item.syllableMax,
                         directedParams: params,
                         rhymeGroupsByID: rhymeGroupsByID,
                         audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
@@ -592,6 +597,8 @@ struct NoteEditorView: View {
                                 bpm: item.bpm,
                                 key: item.key,
                                 scale: item.scale,
+                                syllableMin: item.syllableMin,
+                                syllableMax: item.syllableMax,
                                 directedParams: params,
                                 rhymeGroupsByID: rhymeGroupsByID,
                                 audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
@@ -608,6 +615,8 @@ struct NoteEditorView: View {
                                 bpm: item.bpm,
                                 key: item.key,
                                 scale: item.scale,
+                                syllableMin: item.syllableMin,
+                                syllableMax: item.syllableMax,
                                 audioURL: item.audioPath.flatMap { URL(fileURLWithPath: $0) },
                                 transcriptionRhythmMapData: item.transcriptionRhythmMapData,
                                 noteKey: aiNoteKey,
@@ -626,6 +635,7 @@ struct NoteEditorView: View {
                 rightTitle: rapSuggestionEngine.isParallelModelG ? "Model G v2" : nil,
                 noteKey: aiNoteKey,
                 generationId: rapSuggestionEngine.lastSessionGenerationId,
+                generations: isShowingRecalled ? [] : rapSuggestionEngine.generations,
                 humanCriticFeedback: $rapSuggestionEngine.humanCriticFeedback,
                 humanCriticLoading: $rapSuggestionEngine.humanCriticLoading,
                 humanCriticError: $rapSuggestionEngine.humanCriticError,
@@ -770,7 +780,12 @@ struct NoteEditorView: View {
             ScalePopoverView(key: $item.key, scale: $item.scale)
         }
         .sheet(isPresented: $showURLPopover) {
-            URLAttachmentPopoverView(url: $item.urlAttachment)
+            URLAttachmentPopoverView(url: $item.urlAttachment, bpm: $item.bpm, key: $item.key, scale: $item.scale)
+                .presentationDetents([.medium])
+                .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $showSyllablesPopover) {
+            SyllablesPopoverView(syllableMin: $item.syllableMin, syllableMax: $item.syllableMax)
                 .presentationDetents([.medium])
                 .presentationDragIndicator(.visible)
         }
@@ -853,12 +868,13 @@ struct NoteEditorView: View {
         let slamAnimationOffset: CGFloat
         let slamAnimationScale: CGFloat
         let minHeight: CGFloat
+        @AppStorage(EditorChromeSettings.writingFontSizeKey) private var writingFontSize: Double = EditorChromeSettings.defaultWritingFontSize
 
         var body: some View {
             ZStack(alignment: .topLeading) {
                 TextEditor(text: $text)
                     .focused($isEditorFocused)
-                    .font(.body)
+                    .font(.system(size: CGFloat(writingFontSize)))
                     .frame(maxWidth: 680)
                     .padding(.horizontal, 20)
                     .padding(.top, 8)
@@ -905,7 +921,8 @@ struct NoteEditorView: View {
                             text = newText
                         },
                         dynamicHeight: $rhymeOverlayHeight,
-                        availableWidth: geo.size.width
+                        availableWidth: geo.size.width,
+                        fontSize: CGFloat(writingFontSize)
                     )
                     .frame(height: rhymeOverlayHeight)
                     .animation(nil, value: isRhymeOverlayVisible)
@@ -924,7 +941,7 @@ struct NoteEditorView: View {
                 // Slam animation overlay (iMessage-style)
                 if let slamText = slamAnimationText {
                     Text(slamText)
-                        .font(.body)
+                        .font(.system(size: CGFloat(writingFontSize)))
                         .foregroundStyle(.blue)
                         .padding(.horizontal, 20)
                         .padding(.top, 8)
@@ -1301,7 +1318,10 @@ struct NoteEditorView: View {
                 
                 // Scale Pill Menu
                 scalePillMenu
-                
+
+                // Syllables Pill Menu
+                syllablesPillMenu
+
                 // URL Pill Menu
                 urlPillMenu
                 
@@ -1447,6 +1467,49 @@ struct NoteEditorView: View {
         }
     }
     
+    // MARK: - Syllables Pill Menu
+    private var syllablesPillMenu: some View {
+        Menu {
+            ForEach([8, 9, 10, 12], id: \.self) { lo in
+                let hi = lo + 2
+                Button {
+                    item.syllableMin = lo; item.syllableMax = hi
+                } label: {
+                    HStack {
+                        Text("\(lo)–\(hi) syllables")
+                        Spacer()
+                        if item.syllableMin == lo && item.syllableMax == hi {
+                            Image(systemName: "checkmark").font(.caption.weight(.semibold))
+                        }
+                    }
+                }
+            }
+            Divider()
+            Button { showSyllablesPopover = true } label: {
+                Label("Custom range", systemImage: "slider.horizontal.3")
+            }
+            if item.syllableMin != nil || item.syllableMax != nil {
+                Divider()
+                Button(role: .destructive) {
+                    item.syllableMin = nil; item.syllableMax = nil
+                } label: { Label("Clear", systemImage: "xmark.circle") }
+            }
+        } label: {
+            metadataPillLabel(
+                icon: "textformat.123",
+                label: syllablesPillLabel,
+                isSet: item.syllableMin != nil || item.syllableMax != nil
+            )
+        }
+    }
+
+    private var syllablesPillLabel: String {
+        if let lo = item.syllableMin, let hi = item.syllableMax { return "\(lo)–\(hi) syll" }
+        if let lo = item.syllableMin { return "≥\(lo) syll" }
+        if let hi = item.syllableMax { return "≤\(hi) syll" }
+        return "Syllables"
+    }
+
     // MARK: - URL Pill Menu
     private var urlPillMenu: some View {
         Menu {
@@ -2150,37 +2213,37 @@ struct NoteEditorView: View {
         case .toolbarPaperclip:
             return (
                 title: "Attach & Import",
-                description: "Import audio files, notes, or record audio directly into your journal entry",
+                description: "Pull in audio, photos, or notes — or record straight into your entry.",
                 icon: "paperclip"
             )
         case .toolbarAISparkle:
             return (
                 title: "AI Writing Assistant",
-                description: "Get AI-powered suggestions for your next lines, rewrite lines, suggest rhymes, and improve flow. Configure Model G, Model G Core, and Model Y in preferences.",
+                description: "Your AI co-writer — next lines, rewrites, rhyme ideas, and flow help, powered by your own key.",
                 icon: "sparkles"
             )
         case .toolbarUndoRedo:
             return (
                 title: "Undo & Redo",
-                description: "Easily undo or redo your changes while writing",
+                description: "Step back or forward through your edits anytime.",
                 icon: "arrow.uturn.backward"
             )
         case .toolbarEyeToggle:
             return (
                 title: "Rhyme Overlay",
-                description: "Toggle visual rhyme highlighting to see rhyming words color-coded in your text",
+                description: "Tap the eye to light up rhymes — matching sounds get color-coded right in your text.",
                 icon: "eye"
             )
         case .toolbarMagnifyingGlass:
             return (
                 title: "Rhyme Groups",
-                description: "View all rhyme groups in your text and explore rhyming words",
+                description: "See every rhyme family in your verse and explore related words.",
                 icon: "text.magnifyingglass"
             )
         case .toolbarDiagnostics:
             return (
                 title: "Rhyme Diagnostics",
-                description: "Analyze syllables, stress patterns, cadence, and flow metrics for your verse",
+                description: "Break down syllables, stress, cadence, and flow for your verse.",
                 icon: "chart.bar"
             )
         default:

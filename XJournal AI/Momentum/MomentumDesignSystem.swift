@@ -183,6 +183,51 @@ enum EditorChromeSettings {
     /// liquid-glass background (`sharedBackgroundVisibility(.hidden)`) and sits flat on
     /// the coral — the weak header coral made that platter read muddy gray.
     static let hideToolbarGlassKey = "hide_editor_toolbar_glass"
+
+    /// Writing-area font size in points. Global across all notes. Default 17 ≈ `.body`.
+    /// Drives the TextEditor, the rhyme-highlight overlay, and the slam animation so all
+    /// three stay pixel-aligned. Adjusted via the Page 3 toolbar font-size popover.
+    static let writingFontSizeKey = "editor_writing_font_size"
+    static let defaultWritingFontSize: Double = 17
+}
+
+/// Compact − / value / + stepper for the writing-area font size, shown in the Page 3
+/// toolbar popover. Concrete + self-contained; theme-adaptive (light + dark).
+struct FontSizeStepperPopover: View {
+    @Binding var fontSize: Double
+    private let range: ClosedRange<Double> = 12...34
+
+    var body: some View {
+        HStack(spacing: 14) {
+            stepButton("minus", disabled: fontSize <= range.lowerBound) {
+                fontSize = max(range.lowerBound, fontSize - 1)
+            }
+            Text("\(Int(fontSize))")
+                .font(.system(size: 17, weight: .semibold).monospacedDigit())
+                .frame(minWidth: 26)
+            stepButton("plus", disabled: fontSize >= range.upperBound) {
+                fontSize = min(range.upperBound, fontSize + 1)
+            }
+        }
+        .padding(.horizontal, 18)
+        .padding(.vertical, 12)
+    }
+
+    @ViewBuilder
+    private func stepButton(_ symbol: String, disabled: Bool, _ action: @escaping () -> Void) -> some View {
+        Button {
+            HapticFeedbackManager.shared.lightTap()
+            action()
+        } label: {
+            Image(systemName: symbol)
+                .font(.system(size: 15, weight: .bold))
+                .frame(width: 38, height: 38)
+                .background(Circle().fill(Color(.secondarySystemFill)))
+        }
+        .buttonStyle(.plain)
+        .disabled(disabled)
+        .opacity(disabled ? 0.35 : 1.0)
+    }
 }
 
 // MARK: - 2. AtmosphereGlow (signature soft coral radial top-glow; blue calm variant)

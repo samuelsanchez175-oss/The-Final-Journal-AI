@@ -21,6 +21,10 @@ final class Item {
     var urlAttachment: String? // URL for YouTube beat, etc.
     var folder: String? // Folder name for filtering
 
+    // MARK: - Syllable Control
+    var syllableMin: Int? // User-set lower bound for syllables/bar (nil = auto)
+    var syllableMax: Int? // User-set upper bound for syllables/bar (nil = auto)
+
     // MARK: - Model G Beat Fingerprint
     var beatFingerprintData: Data? // JSON-encoded BeatFingerprint
     var beatFingerprintHash: String? // Hash to detect audio file changes; re-analyze only if changed
@@ -49,6 +53,8 @@ final class Item {
         self.scale = nil
         self.urlAttachment = nil
         self.folder = nil
+        self.syllableMin = nil
+        self.syllableMax = nil
         self.beatFingerprintData = nil
         self.beatFingerprintHash = nil
     }

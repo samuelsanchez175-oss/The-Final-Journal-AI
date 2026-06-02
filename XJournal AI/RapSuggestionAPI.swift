@@ -499,7 +499,9 @@ class RapSuggestionAPI {
                     transcriptionRhythmMapData: transcriptionRhythmMapData,
                     bpm: metrics.bpm,
                     musicalKey: metrics.key,
-                    musicalScale: metrics.scale
+                    musicalScale: metrics.scale,
+                    syllableMin: metrics.syllableMin,
+                    syllableMax: metrics.syllableMax
                 )
             }
             if useV2 {

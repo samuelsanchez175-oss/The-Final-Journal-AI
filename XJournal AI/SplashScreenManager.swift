@@ -135,6 +135,7 @@ func hasCompletedOnboarding() -> Bool {
 enum SplashScreenID: String, CaseIterable {
     case heroScreen = "hero_screen"
     case toolbarOverview = "toolbar_overview"
+    case homeOverview = "home_overview"
     case toolbarPaperclip = "toolbar_paperclip"
     case toolbarAISparkle = "toolbar_ai_sparkle"
     case toolbarUndoRedo = "toolbar_undo_redo"
@@ -149,6 +150,8 @@ enum SplashScreenID: String, CaseIterable {
             return "Welcome"
         case .toolbarOverview:
             return "Your Writing Toolbar"
+        case .homeOverview:
+            return "This is your home"
         case .toolbarPaperclip:
             return "Attach & Import"
         case .toolbarAISparkle:

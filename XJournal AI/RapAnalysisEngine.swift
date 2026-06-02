@@ -16,6 +16,8 @@ struct RapMetrics: Codable {
     let bpm: Int? // Musical tempo (60-220)
     let key: String? // Musical key (e.g., "C", "D", "A#")
     let scale: String? // Scale type (e.g., "Major", "Dorian", "Chromatic")
+    let syllableMin: Int? // User-set lower bound (nil = auto)
+    let syllableMax: Int? // User-set upper bound (nil = auto)
 }
 
 struct CadenceSummary: Codable {
@@ -136,7 +138,7 @@ struct RapAnalysisEngine {
     
     // MARK: - Main Analysis Function
     
-    func extractMetrics(text: String, highlights: [Highlight], bpm: Int? = nil, key: String? = nil, scale: String? = nil) -> RapMetrics {
+    func extractMetrics(text: String, highlights: [Highlight], bpm: Int? = nil, key: String? = nil, scale: String? = nil, syllableMin: Int? = nil, syllableMax: Int? = nil) -> RapMetrics {
         // Use existing CadenceAnalyzer
         let cadence = cadenceAnalyzer.analyze(text: text, highlights: highlights)
         
@@ -193,7 +195,9 @@ struct RapAnalysisEngine {
             syllableVariance: cadence.syllableVariance,
             bpm: bpm,
             key: key,
-            scale: scale
+            scale: scale,
+            syllableMin: syllableMin,
+            syllableMax: syllableMax
         )
     }
     

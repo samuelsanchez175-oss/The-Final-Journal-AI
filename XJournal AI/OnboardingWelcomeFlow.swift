@@ -276,8 +276,75 @@ private struct OnboardingFeatureRow: View {
     }
 }
 
+// MARK: - Home intro coachmark
+
+/// Shown once over the real home screen right after onboarding completes ("This is your home").
+/// A centered coral card over a dimmed backdrop — the actual home stays visible behind it.
+struct HomeIntroCoachmark: View {
+    var onDismiss: () -> Void
+
+    @State private var show = false
+
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.45)
+                .ignoresSafeArea()
+                .onTapGesture { onDismiss() }
+
+            VStack(spacing: 18) {
+                Image(systemName: "house.fill")
+                    .font(.system(size: 38, weight: .semibold))
+                    .foregroundStyle(Momentum.accent)
+                    .frame(width: 84, height: 84)
+                    .background(Circle().fill(Momentum.accent.opacity(0.12)))
+
+                Text("This is your home")
+                    .font(.momentumCardTitle)
+                    .foregroundStyle(Momentum.contentPrimary)
+
+                Text("Your journal entries live here. Tap the + to start a new one — your writing tools appear the moment you're inside an entry.")
+                    .font(.momentumBody)
+                    .foregroundStyle(Momentum.contentSecondary)
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Button { onDismiss() } label: {
+                    Text("Got it")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 14)
+                        .background(Capsule().fill(Momentum.accent))
+                }
+                .buttonStyle(.plain)
+            }
+            .padding(28)
+            .frame(maxWidth: 360)
+            .background(
+                RoundedRectangle(cornerRadius: 24, style: .continuous)
+                    .fill(Momentum.surfaceElevated)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 24, style: .continuous)
+                            .strokeBorder(Momentum.hairline, lineWidth: Momentum.lineThin)
+                    )
+            )
+            .shadow(color: .black.opacity(0.18), radius: 24, x: 0, y: 12)
+            .padding(.horizontal, 28)
+            .scaleEffect(show ? 1.0 : 0.92)
+            .opacity(show ? 1.0 : 0.0)
+        }
+        .onAppear {
+            withAnimation(.spring(response: 0.45, dampingFraction: 0.85)) { show = true }
+        }
+    }
+}
+
 // MARK: - Preview
 
 #Preview("Welcome") {
     OnboardingWelcomeFlow(onComplete: {})
+}
+
+#Preview("Home intro") {
+    HomeIntroCoachmark(onDismiss: {})
 }

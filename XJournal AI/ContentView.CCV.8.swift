@@ -290,12 +290,67 @@ struct ScalePopoverView: View {
 
 // MARK: - URL Attachment Popover View
 
+struct SyllablesPopoverView: View {
+    @Binding var syllableMin: Int?
+    @Binding var syllableMax: Int?
+    @Environment(\.dismiss) private var dismiss
+
+    private var lo: Int { syllableMin ?? 8 }
+    private var hi: Int { syllableMax ?? 12 }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text("Syllables per bar")
+                .font(.headline)
+            Text("Target range Model G aims for on each bar. Leave on Auto to derive from BPM.")
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+
+            Stepper(value: Binding(get: { lo }, set: { newLo in
+                syllableMin = newLo
+                if hi < newLo { syllableMax = newLo }
+            }), in: 4...18) {
+                HStack { Text("Min"); Spacer(); Text("\(lo)").font(.title3.weight(.semibold)) }
+            }
+            Stepper(value: Binding(get: { hi }, set: { newHi in
+                syllableMax = newHi
+                if lo > newHi { syllableMin = newHi }
+            }), in: 4...18) {
+                HStack { Text("Max"); Spacer(); Text("\(hi)").font(.title3.weight(.semibold)) }
+            }
+
+            HStack(spacing: 12) {
+                Button { syllableMin = nil; syllableMax = nil } label: {
+                    Text("Auto").font(.callout).foregroundStyle(Momentum.contentSecondary)
+                }
+                .buttonStyle(.plain)
+                Spacer()
+                Button { dismiss() } label: {
+                    Image(systemName: "checkmark")
+                        .font(.callout.weight(.semibold))
+                        .foregroundStyle(Momentum.onInverse)
+                        .frame(width: 32, height: 32)
+                        .background(Circle().fill(Color.accentColor))
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .padding(20)
+        .frame(width: 340)
+    }
+}
+
 struct URLAttachmentPopoverView: View {
     @Binding var url: String?
+    @Binding var bpm: Int?
+    @Binding var key: String?
+    @Binding var scale: String?
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @State private var urlText: String = ""
     @FocusState private var isTextFieldFocused: Bool
+    @State private var isDetecting = false
+    @State private var detected: BeatURLAnalyzer.Result?
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -352,6 +407,57 @@ struct URLAttachmentPopoverView: View {
                 )
             }
             
+            if !urlText.isEmpty {
+                Button {
+                    isDetecting = true
+                    detected = nil
+                    Task {
+                        let result = await BeatURLAnalyzer.analyze(urlText)
+                        await MainActor.run {
+                            isDetecting = false
+                            detected = result
+                        }
+                    }
+                } label: {
+                    HStack(spacing: 8) {
+                        if isDetecting { ProgressView().controlSize(.small) }
+                        Image(systemName: "waveform.badge.magnifyingglass")
+                        Text(isDetecting ? "Detecting…" : "Detect BPM / Key from link")
+                            .font(.callout.weight(.medium))
+                    }
+                }
+                .buttonStyle(.plain)
+                .disabled(isDetecting)
+            }
+
+            if let d = detected {
+                let found = [d.bpm.map { "\($0) BPM" }, d.key, d.scale].compactMap { $0 }
+                if found.isEmpty {
+                    Text("Couldn't detect beat info from this link.")
+                        .font(.caption)
+                        .foregroundStyle(Momentum.contentSecondary)
+                } else {
+                    HStack(spacing: 8) {
+                        Text("Found: \(found.joined(separator: " · "))")
+                            .font(.caption.weight(.medium))
+                        Spacer()
+                        Button("Apply") {
+                            if let b = d.bpm { bpm = b }
+                            if let k = d.key { key = k }
+                            if let s = d.scale { scale = s }
+                            detected = nil
+                        }
+                        .font(.caption.weight(.semibold))
+                    }
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 8)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8, style: .continuous)
+                            .fill(Color.accentColor.opacity(0.12))
+                    )
+                }
+            }
+
             HStack(spacing: 12) {
                 // Clear Button
                 Button {

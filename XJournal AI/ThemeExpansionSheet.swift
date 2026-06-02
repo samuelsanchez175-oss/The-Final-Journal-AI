@@ -66,7 +66,7 @@ struct ThemeExpansionSheet: View {
                             dismiss()
                             onDismiss()
                         }
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Momentum.accent)
                         .padding(.trailing, 20)
                         .padding(.top, 20)
                     }
@@ -135,13 +135,7 @@ struct ThemeExpansionSheet: View {
 
             Text("Theme Expansion")
                 .font(.system(size: 32, weight: .bold))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [.white, .white.opacity(0.9)],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
+                .foregroundStyle(Momentum.contentPrimary)
 
             Text("Themes auto-select from your lyrics. Choose any to steer where your narrative goes next.")
                 .font(.subheadline)
@@ -158,7 +152,7 @@ struct ThemeExpansionSheet: View {
             HStack {
                 Label("Detected in your lyrics", systemImage: "sparkles")
                     .font(.headline)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Momentum.contentPrimary)
 
                 Spacer()
 
@@ -209,7 +203,7 @@ struct ThemeExpansionSheet: View {
             HStack {
                 Text("Themes")
                     .font(.headline)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Momentum.contentPrimary)
 
                 Spacer()
 
@@ -332,7 +326,7 @@ struct ThemeExpansionSheet: View {
                     .foregroundStyle(.orange)
                 Text("Pairs well with your selection")
                     .font(.headline)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Momentum.contentPrimary)
             }
             .padding(.horizontal, 20)
 

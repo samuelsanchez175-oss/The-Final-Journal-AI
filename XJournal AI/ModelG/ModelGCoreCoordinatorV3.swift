@@ -20,7 +20,7 @@ class ModelGCoreCoordinatorV3 {
     private let debugLogger = DebugLogger()
 
     private let barCount = 16
-    private let verseCandidateCount = 1          // speed trim (was 2): single verse, skips candidate scoring
+    private let verseCandidateCount = 2          // generate 2 temp-varied verses, pick best syllable fit
     private let verseAverageThreshold: Double = 82
     private let defaultSyllableTarget = 11
 
@@ -33,7 +33,9 @@ class ModelGCoreCoordinatorV3 {
         transcriptionRhythmMapData: Data? = nil,
         bpm: Int? = nil,
         musicalKey: String? = nil,
-        musicalScale: String? = nil
+        musicalScale: String? = nil,
+        syllableMin: Int? = nil,
+        syllableMax: Int? = nil
     ) async throws -> GeneratedRecord {
         riskManager.reset()
 
@@ -60,7 +62,8 @@ class ModelGCoreCoordinatorV3 {
         let baseContext = makeContext(
             intent: intent, beat: beatFingerprint, style: styleProfile, directedParams: directedParams,
             luxury: luxuryLayer, barIndex: 0, existingBars: [], signalAxes: signalAxes, themeContext: themeContext,
-            bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale
+            bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale,
+            syllableMin: syllableMin, syllableMax: syllableMax
         )
 
         // Step 1 — plan the verse (1 call).
@@ -70,9 +73,13 @@ class ModelGCoreCoordinatorV3 {
         let candidates: [(hook: String, bars: [String])] = await withTaskGroup(
             of: (hook: String, bars: [String])?.self
         ) { group in
-            for _ in 0..<verseCandidateCount {
+            let candidateTemps: [Double] = [0.7, 0.95]
+            for i in 0..<verseCandidateCount {
+                let temp = candidateTemps[i % candidateTemps.count]
                 group.addTask {
-                    try? await self.llmService.generateFullVerse(plan: plan, arcShape: arcShape, context: baseContext)
+                    try? await self.llmService.generateFullVerse(
+                        plan: plan, arcShape: arcShape, context: baseContext, temperature: temp
+                    )
                 }
             }
             var out: [(hook: String, bars: [String])] = []
@@ -83,7 +90,21 @@ class ModelGCoreCoordinatorV3 {
         }
 
         // Score each candidate verse (avg bar score) and pick the best.
+        func syllablePenalty(_ bars: [String]) -> Double {
+            let usable = Array(bars.prefix(barCount))
+            guard !usable.isEmpty else { return .greatestFiniteMagnitude }
+            let total = usable.reduce(0.0) { acc, bar in
+                let n = SyllableEngine.lineSyllableCount(bar)
+                if let lo = syllableMin, let hi = syllableMax {
+                    return acc + Double(max(0, lo - n) + max(0, n - hi)) // distance outside [lo,hi]
+                }
+                return acc + abs(Double(n) - Double(baseContext.syllableTarget))
+            }
+            return total / Double(usable.count)
+        }
+
         var best: (hook: String, bars: [String])?
+        var bestPenalty = Double.greatestFiniteMagnitude
         var bestScore = -1.0
         for verse in candidates where verse.bars.count >= 8 {
             let usable = Array(verse.bars.prefix(barCount))
@@ -93,12 +114,17 @@ class ModelGCoreCoordinatorV3 {
                     intent: intent, beat: beatFingerprint, style: styleProfile, directedParams: directedParams,
                     luxury: luxuryLayer, barIndex: i, existingBars: Array(usable.prefix(i)),
                     signalAxes: signalAxes, themeContext: themeContext,
-                    bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale
+                    bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale,
+                    syllableMin: syllableMin, syllableMax: syllableMax
                 )
                 total += scoringEngine.evaluateBar(bar, context: ctx).totalScore
             }
-            let avg = usable.isEmpty ? 0 : total / Double(usable.count)
-            if avg > bestScore { bestScore = avg; best = verse }
+            let score = usable.isEmpty ? 0 : total / Double(usable.count)
+            let pen = syllablePenalty(verse.bars)
+            // Primary: lowest syllable penalty. Tie-break: higher quality score.
+            if pen < bestPenalty || (pen == bestPenalty && score > bestScore) {
+                bestPenalty = pen; bestScore = score; best = verse
+            }
         }
 
         guard let chosen = best else {
@@ -143,16 +169,18 @@ class ModelGCoreCoordinatorV3 {
         intent: GenerationIntent, beat: BeatFingerprint?, style: StyleProfile,
         directedParams: DirectedGenerationParams?, luxury: LuxuryLayer?, barIndex: Int,
         existingBars: [String], signalAxes: SignalAxes?, themeContext: ThemeContext?,
-        bpm: Int? = nil, musicalKey: String? = nil, musicalScale: String? = nil
+        bpm: Int? = nil, musicalKey: String? = nil, musicalScale: String? = nil,
+        syllableMin: Int? = nil, syllableMax: Int? = nil
     ) -> GenerationContext {
         GenerationContext(
             intent: intent, beatFingerprint: beat, styleProfile: style, directedParams: directedParams,
             luxuryLayer: luxury, userTasteVector: UserTasteStore.shared.currentVector(),
-            syllableTarget: Self.tempoSyllableTarget(bpm: bpm) ?? defaultSyllableTarget,
+            syllableTarget: Self.effectiveTarget(min: syllableMin, max: syllableMax, bpm: bpm) ?? defaultSyllableTarget,
             barIndex: barIndex, isHook: false, existingBars: existingBars, riskIndex: riskManager.riskIndex,
             flowDNAFeatures: nil, rhythmMap: nil, perBarSyllableTargets: nil,
             signalAxes: signalAxes, themeContext: themeContext,
-            musicalBPM: bpm, musicalKey: musicalKey, musicalScale: musicalScale
+            musicalBPM: bpm, musicalKey: musicalKey, musicalScale: musicalScale,
+            syllableMin: syllableMin, syllableMax: syllableMax
         )
     }
 
@@ -162,5 +190,13 @@ class ModelGCoreCoordinatorV3 {
         guard let bpm = bpm, bpm > 0 else { return nil }
         let raw = 9.5 + (110.0 - Double(bpm)) * 0.035
         return min(13, max(7, Int(raw.rounded())))
+    }
+
+    /// Target precedence: user range midpoint → user single bound → BPM-derived → nil (caller defaults).
+    static func effectiveTarget(min: Int?, max: Int?, bpm: Int?) -> Int? {
+        if let lo = min, let hi = max { return (lo + hi) / 2 }
+        if let lo = min { return lo }
+        if let hi = max { return hi }
+        return tempoSyllableTarget(bpm: bpm)
     }
 }

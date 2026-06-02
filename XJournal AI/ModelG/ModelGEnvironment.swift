@@ -106,6 +106,9 @@ struct GenerationContext {
     var musicalBPM: Int? = nil
     var musicalKey: String? = nil
     var musicalScale: String? = nil
+    /// User-set syllables-per-bar range (nil = auto). Drives candidate selection + the bar rule.
+    var syllableMin: Int? = nil
+    var syllableMax: Int? = nil
 }
 
 /// Compute Signal Layer axes (exposure / social action / register / audience) from the

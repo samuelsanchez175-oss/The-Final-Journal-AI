@@ -112,6 +112,7 @@ struct RapSuggestionView: View {
     @State private var deckIndex: Int = 0
     @State private var stackOn: Bool = false
     @State private var rhymeOn: Bool = false
+    @State private var deckRhymeGroups: [RhymeHighlighterEngine.RhymeGroup] = []
     
     var body: some View {
         NavigationView {
@@ -373,13 +374,19 @@ struct RapSuggestionView: View {
             RapIslandToolbar(
                 rhymeOn: $rhymeOn,
                 stackOn: $stackOn,
-                rhymeGroups: [],          // TODO: compute groups for the magnifying-glass popover
+                rhymeGroups: deckRhymeGroups,
                 currentText: currentDeckText
             )
             .padding(.bottom, 12)
         }
         .onChange(of: deckGenerations.first?.id) { _, _ in
             deckIndex = 0   // newest generation auto-lands at the front (spec §3.6)
+        }
+        .task(id: currentDeckText) {
+            // Rhyme groups for the island's magnifying-glass popover (visible generation).
+            guard !currentDeckText.isEmpty else { deckRhymeGroups = []; return }
+            let (groups, _) = await RhymeHighlighterEngine.computeAll(text: currentDeckText)
+            deckRhymeGroups = groups
         }
     }
 
@@ -1751,7 +1758,7 @@ class RapSuggestionEngine: ObservableObject {
         }
     }
     
-    func generateSuggestions(text: String, highlights: [Highlight], model: SuggestionModel = .modelG, bpm: Int? = nil, key: String? = nil, scale: String? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil, noteKey: String? = nil, noteTitle: String = "", persistTo item: Item? = nil) async {
+    func generateSuggestions(text: String, highlights: [Highlight], model: SuggestionModel = .modelG, bpm: Int? = nil, key: String? = nil, scale: String? = nil, syllableMin: Int? = nil, syllableMax: Int? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil, noteKey: String? = nil, noteTitle: String = "", persistTo item: Item? = nil) async {
         await MainActor.run {
             isLoading = true
             error = nil
@@ -1775,7 +1782,7 @@ class RapSuggestionEngine: ObservableObject {
             await MainActor.run {
                 loadingStep = "Analyzing your verse..."
             }
-            let metrics = analysisEngine.extractMetrics(text: text, highlights: highlights, bpm: bpm, key: key, scale: scale)
+            let metrics = analysisEngine.extractMetrics(text: text, highlights: highlights, bpm: bpm, key: key, scale: scale, syllableMin: syllableMin, syllableMax: syllableMax)
             
             // Store context information for critique
             let allLines = text.split(separator: "\n", omittingEmptySubsequences: false).map { String($0) }
@@ -2111,7 +2118,7 @@ class RapSuggestionEngine: ObservableObject {
     }
     
     /// Run Model G Core v1 and v2 in parallel; results go to suggestionsV1 (left) and suggestionsV2 (right) for side-by-side UI.
-    func generateSuggestionsModelGParallel(text: String, highlights: [Highlight], bpm: Int? = nil, key: String? = nil, scale: String? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil, noteKey: String? = nil, noteTitle: String = "", persistTo item: Item? = nil) async {
+    func generateSuggestionsModelGParallel(text: String, highlights: [Highlight], bpm: Int? = nil, key: String? = nil, scale: String? = nil, syllableMin: Int? = nil, syllableMax: Int? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil, noteKey: String? = nil, noteTitle: String = "", persistTo item: Item? = nil) async {
         await MainActor.run {
             isLoading = true
             error = nil
@@ -2131,7 +2138,7 @@ class RapSuggestionEngine: ObservableObject {
         }
         do {
             await MainActor.run { loadingStep = "Analyzing your verse..." }
-            let metrics = analysisEngine.extractMetrics(text: text, highlights: highlights, bpm: bpm, key: key, scale: scale)
+            let metrics = analysisEngine.extractMetrics(text: text, highlights: highlights, bpm: bpm, key: key, scale: scale, syllableMin: syllableMin, syllableMax: syllableMax)
             let allLines = text.split(separator: "\n", omittingEmptySubsequences: false).map { String($0) }
             let previousLines = Array(allLines.suffix(6))
             let fullTextLineCount = allLines.count

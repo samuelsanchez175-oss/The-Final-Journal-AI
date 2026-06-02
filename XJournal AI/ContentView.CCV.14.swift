@@ -49,6 +49,8 @@ struct DynamicIslandToolbarView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Binding var keyboardHeight: CGFloat
     @State private var showRhymeGroupsPopover: Bool = false
+    @State private var showFontSizePopover: Bool = false
+    @AppStorage(EditorChromeSettings.writingFontSizeKey) private var writingFontSize: Double = EditorChromeSettings.defaultWritingFontSize
     @Binding var showAudioRecorder: Bool
     @Binding var showRapSuggestions: Bool
     @Binding var showModelGControlSurface: Bool
@@ -619,6 +621,29 @@ struct DynamicIslandToolbarView: View {
                         )
             .accessibilityLabel(isEditorFocused ? "Dismiss keyboard" : "Show keyboard")
             .accessibilityHint("Double tap to toggle keyboard")
+
+                        // Font-size control — popover with − / value / + steppers driving
+                        // the global writing-area font size (Page 2). Placed after keyboard.
+                        enhancedButton(
+                            id: "fontSize",
+                            action: {
+                                isEditorFocused = false
+                                showFontSizePopover = true
+                                startAutoCollapseTimer()
+                            },
+                            label: {
+                                Image(systemName: "textformat.size")
+                                    .font(.headline)
+                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+                            },
+                            hapticStyle: .light
+                        )
+                        .accessibilityLabel("Text size")
+                        .accessibilityHint("Double tap to adjust the writing font size")
+                        .popover(isPresented: $showFontSizePopover, arrowEdge: .bottom) {
+                            FontSizeStepperPopover(fontSize: $writingFontSize)
+                                .presentationCompactAdaptation(.popover)
+                        }
             
             }
             .foregroundStyle(toolbarTint)
