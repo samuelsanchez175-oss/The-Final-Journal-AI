@@ -286,7 +286,10 @@ struct JournalLibraryView: View {
                         selectedImportedItem = nil
                     }
             } else {
-                JournalDetailPlaceholderView()
+                JournalDetailPlaceholderView(onCreate: {
+                    prepareHapticForNewNote()
+                    addItem()
+                })
             }
         }
         .navigationSplitViewStyle(.balanced)

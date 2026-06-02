@@ -330,6 +330,8 @@ struct ScrollOffsetKey: PreferenceKey {
 // MARK: - Journal Detail Placeholder View
 
 struct JournalDetailPlaceholderView: View {
+    var onCreate: (() -> Void)? = nil
+
     var body: some View {
         ZStack {
             AtmosphereGlow()
@@ -351,6 +353,18 @@ struct JournalDetailPlaceholderView: View {
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 340)
+                }
+
+                if let onCreate {
+                    Button(action: onCreate) {
+                        Label("New Note", systemImage: "square.and.pencil")
+                            .font(.headline)
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 12)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(Momentum.accent)
+                    .padding(.top, 8)
                 }
             }
             .padding(40)
