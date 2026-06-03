@@ -1,0 +1,7 @@
+{
+  "name": "modelg-corpus",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "test": "node --test", "build": "node build-corpus.mjs" },
+  "dependencies": { "gray-matter": "^4.0.3" }
+}
