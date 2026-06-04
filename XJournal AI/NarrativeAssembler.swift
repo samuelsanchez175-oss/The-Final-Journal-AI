@@ -9,7 +9,7 @@ struct NarrativeAssembler {
     static func assemble(
         from draft: NarrativeDraft,
         signal: SignalProfile,
-        model: SuggestionModel = .modelG  // PR 3: Model parameter for GeneratorPolicy
+        model: SuggestionModel = .modelY  // Neutral completeness default (no SuperGunna forcing); real callers pass an explicit model. See NarrativeAssemblerTests.
     ) -> NarrativeAnalysis {
         
         // Primary themes: use draft if non-empty, otherwise fallback
