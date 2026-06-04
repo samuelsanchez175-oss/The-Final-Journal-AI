@@ -23,6 +23,12 @@ struct ScoreBreakdown {
     var passesThreshold: Bool {
         totalScore >= 72
     }
+
+    // MARK: - v4 composite fields (additive; zero-defaulted; existing call sites unaffected)
+    var houseFit: Double = 0
+    var autoFit: Double = 0
+    var userFit: Double = 0
+    var v4Total: Double = 0
 }
 
 // MARK: - Scoring Engine
@@ -223,5 +229,58 @@ class ScoringEngine {
         weights.glide = max(0, weights.glide + min(cap, taste.glideBias * 0.01))
         weights.edgeConfidence = max(0, weights.edgeConfidence + min(cap, taste.edgeBias * 0.01))
         weights.culturalIntegration = max(0, weights.culturalIntegration + min(cap, taste.culturalBias * 0.01))
+    }
+
+    // MARK: - v4 50/10/40 composite scoring
+
+    /// House 50% + Auto 10% + User 40% → 0…100.
+    static func v4Composite(houseFit: Double, autoFit: Double, userFit: Double) -> Double {
+        100.0 * (0.50 * houseFit + 0.10 * autoFit + 0.40 * userFit)
+    }
+
+    /// Jaccard similarity between `norm` and the best-matching exemplar norm. 0…1.
+    static func signatureSimilarity(norm: String, exemplarNorms: [String]) -> Double {
+        let a = Set(norm.split(separator: " ").map(String.init))
+        guard !a.isEmpty else { return 0 }
+        return exemplarNorms.map { e -> Double in
+            let b = Set(e.split(separator: " ").map(String.init))
+            let inter = a.intersection(b).count, uni = a.union(b).count
+            return uni == 0 ? 0 : Double(inter) / Double(uni)
+        }.max() ?? 0
+    }
+
+    /// User-constraint fit: coverage of mustUse tokens, topic terms, and syllable range. 0…1.
+    static func userFit(text: String, mustUse: [String], topicTerms: [String],
+                        syllables: Int, syllableMin: Int?, syllableMax: Int?) -> Double {
+        let lower = text.lowercased()
+        var parts: [Double] = []
+        if !mustUse.isEmpty {
+            parts.append(Double(mustUse.filter { lower.contains($0.lowercased()) }.count) / Double(mustUse.count))
+        }
+        if !topicTerms.isEmpty {
+            parts.append(Double(topicTerms.filter { lower.contains($0.lowercased()) }.count) / Double(topicTerms.count))
+        }
+        if let lo = syllableMin, let hi = syllableMax {
+            parts.append((syllables >= lo && syllables <= hi) ? 1.0 : 0.0)
+        }
+        return parts.isEmpty ? 0.5 : parts.reduce(0, +) / Double(parts.count)
+    }
+
+    /// Compute and attach all v4 composite fields to a base ScoreBreakdown.
+    func v4Breakdown(base: ScoreBreakdown, text: String, context: GenerationContext,
+                     exemplarNorms: [String], syllables: Int) -> ScoreBreakdown {
+        var b = base
+        let craft = base.totalScore / 100.0
+        let sig = Self.signatureSimilarity(norm: text.lowercased(), exemplarNorms: exemplarNorms)
+        b.houseFit = 0.65 * craft + 0.35 * sig
+        b.autoFit = min(max(base.intentAlignment, 0), 1)
+        let dp = context.directedParams
+        b.userFit = Self.userFit(text: text,
+                                 mustUse: dp?.mustUseTokens ?? [],
+                                 topicTerms: (dp?.selectedTopics ?? []) + (dp?.worldBuildingWords ?? []),
+                                 syllables: syllables,
+                                 syllableMin: context.syllableMin, syllableMax: context.syllableMax)
+        b.v4Total = Self.v4Composite(houseFit: b.houseFit, autoFit: b.autoFit, userFit: b.userFit)
+        return b
     }
 }
