@@ -618,8 +618,12 @@ struct DynamicIslandToolbarView: View {
                                 startAutoCollapseTimer()
                             },
                             label: {
-                                Image(systemName: ghostMode == .off ? "wand.and.stars" : "wand.and.stars.inverse")
-                                    .font(.headline)
+                                Image("GhostIcon")
+                                    .renderingMode(.template)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 21, height: 21)
+                                    .opacity(ghostMode == .off ? 0.5 : 1.0)
                                     .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
                             },
                             hapticStyle: .light
