@@ -16,6 +16,7 @@ struct ModelGControlSurfaceView: View {
 
     @State private var userPrompt: String = ""
     @State private var lineCount: Int = 4
+    @State private var endRhymeLines: Int = 2
     @State private var selectedRhymeGroupIDs: Set<RhymeGroupID> = []
     @State private var highlightWordsText: String = ""
     @State private var mustUseWordsText: String = ""
@@ -24,6 +25,11 @@ struct ModelGControlSurfaceView: View {
     @State private var worldBuildingText: String = ""
     @State private var styleOverrideKey: String = "auto"
     @State private var isWorldBuildingExpanded = false
+
+    // v3↔v4 engine A/B switch. Same key the directed-generation router reads
+    // (RapSuggestionAPI.generateModelGCoreRecordWithRetry: useModelGv4 → CoordinatorV4, else v3),
+    // so flipping this here changes which pipeline this sheet's Generate runs. Off by default.
+    @AppStorage("model_g_v4_enabled") private var useModelGv4 = false
 
     private static let styleOptions: [(key: String, label: String, profile: StyleProfile)] = [
         ("auto", "Auto", StyleProfile.coldTrap),
@@ -52,7 +58,7 @@ struct ModelGControlSurfaceView: View {
             worldBuildingWords: worldBuilding,
             lineCount: lineCount,
             syllableTolerance: 2,
-            minEndRhymeLines: nil,
+            minEndRhymeLines: endRhymeLines,
             styleOverride: Self.styleOptions.first(where: { $0.key == styleOverrideKey })?.key == "auto" ? nil : Self.styleOptions.first(where: { $0.key == styleOverrideKey })?.profile
         )
     }
@@ -74,6 +80,8 @@ struct ModelGControlSurfaceView: View {
             .onAppear {
                 let defaultFromProfile = UserDefaults.standard.object(forKey: "suggestion_default_line_count") as? Int ?? 4
                 lineCount = (defaultFromProfile == 2 || defaultFromProfile == 4) ? defaultFromProfile : 4
+                let savedRhyme = UserDefaults.standard.object(forKey: "suggestion_default_end_rhyme_lines") as? Int ?? 2
+                endRhymeLines = [2, 4, 6, 8].contains(savedRhyme) ? savedRhyme : 2
             }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -112,15 +120,28 @@ struct ModelGControlSurfaceView: View {
 
     private var formContent: some View {
         VStack(alignment: .leading, spacing: 20) {
+            modelGEngineSection
             userPromptSection
             styleOverrideSection
             lineCountSection
+            endRhymeSection
             wordsToEmphasizeSection
             topicsSection
             toneSection
             rhymeGroupsSection
         }
         .padding()
+    }
+
+    private var modelGEngineSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            MomentumSectionHeader(title: "Generation engine")
+            Toggle(isOn: $useModelGv4) {
+                Text("Use Model G v4 engine").font(.subheadline.weight(.semibold))
+            }
+            Text("Generates with the newer v4 pipeline, which grounds your bars in your reference-lyric corpus. Takes priority over v3 when on. Experimental — off by default.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+        }
     }
 
     private var styleOverrideSection: some View {
@@ -152,6 +173,37 @@ struct ModelGControlSurfaceView: View {
                 Text("4 (standard)").tag(4)
             }
             .pickerStyle(.segmented)
+        }
+    }
+
+    private var endRhymeSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            MomentumSectionHeader(title: "Lines per rhyme")
+            Picker("", selection: Binding(
+                get: { endRhymeLines },
+                set: { newValue in
+                    endRhymeLines = newValue
+                    UserDefaults.standard.set(newValue, forKey: "suggestion_default_end_rhyme_lines")
+                }
+            )) {
+                Text("2").tag(2)
+                Text("4").tag(4)
+                Text("6").tag(6)
+                Text("8").tag(8)
+            }
+            .pickerStyle(.segmented)
+            Text(endRhymeCaption)
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+        }
+    }
+
+    private var endRhymeCaption: String {
+        switch endRhymeLines {
+        case 2: return "The ending rhyme switches every 2 lines — couplets, the fastest switch."
+        case 4: return "The same ending rhyme is held for 4 lines before it switches."
+        case 6: return "The same ending rhyme is held for 6 lines before it switches."
+        default: return "One ending rhyme carried across 8 lines — the slowest switch."
         }
     }
 
