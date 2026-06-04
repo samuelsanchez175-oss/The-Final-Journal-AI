@@ -197,6 +197,22 @@ class ModelGLLMService {
             abs(SyllableEngine.lineSyllableCount($1) - context.syllableTarget)
         }
         let exampleBlock = exampleLine.map { "\nMatch the rhythm/length of a line like: \"\($0)\"" } ?? ""
+        // End-rhyme cadence ("Lines per rhyme" control): hold the same ending rhyme for N bars before switching.
+        // Soft hints don't hold — gpt-4o defaults to 2-bar couplets — so phrase it as a strict scheme with a concrete
+        // example and an explicit "do not fall back to couplets", plus the target count of distinct end-rhyme sounds.
+        let rhymeCadence: String = {
+            guard let n = context.directedParams?.minEndRhymeLines, n >= 2 else { return "" }
+            if n == 2 {
+                return "\nEND-RHYME SCHEME (strict): rhyme in couplets — bars 1&2 share an ending rhyme, bars 3&4 a new one, and so on (AABB CCDD …)."
+            }
+            let example: String
+            switch n {
+            case 4: example = "bars 1-4 all end on ONE rhyme (e.g. -ight: night / sight / ignite / tonight), bars 5-8 a DIFFERENT rhyme, and so on"
+            case 6: example = "bars 1-6 all end on ONE rhyme, bars 7-12 a DIFFERENT rhyme, and so on"
+            default: example = "bars 1-8 all end on ONE rhyme, bars 9-16 a DIFFERENT rhyme"
+            }
+            return "\nEND-RHYME SCHEME (strict — this OVERRIDES your default): hold the SAME ending-rhyme sound for \(n) bars in a row, THEN switch to a brand-new rhyme sound for the next \(n) bars. Do NOT fall back to 2-bar couplets. Concretely: \(example). Use only about \(max(2, 16 / n)) distinct end-rhyme sounds across the 16 bars."
+        }()
         let user = """
         Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
         Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
@@ -204,7 +220,7 @@ class ModelGLLMService {
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
         \(inspiration)\(referencesBlock)
-        Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.
+        Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.\(rhymeCadence)
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}\(exampleBlock)
         """
         let raw = try await postChat(
