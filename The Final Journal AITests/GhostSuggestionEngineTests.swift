@@ -76,4 +76,39 @@ final class GhostSuggestionEngineTests: XCTestCase {
         let out = GhostSuggestionEngine.rankedRhymes(target: ["N", "AY1", "T"], lexicon: lexicon, excluding: "night", limit: 1)
         XCTAssertEqual(out, ["light"], "limit honored; alphabetical-first perfect rhyme; source excluded")
     }
+
+    // MARK: - Regression: multi-syllable word ending in an UNSTRESSED vowel (the "crazy" bug)
+
+    // CMUDICT marks EVERY vowel with a stress digit (0/1/2), so anchoring the rhyme on the last
+    // digit-bearing phoneme grabs the unstressed final vowel — e.g. "crazy" K R EY1 Z IY0 → IY0,
+    // empty coda — which then "rhymes" with every word ending in unstressed -y (abbe, abadi…).
+    func testRhymeAnchorsOnStressedVowelNotLastVowel() {
+        let crazy = ["K", "R", "EY1", "Z", "IY0"]   // primary stress EY1, unstressed final IY0
+        XCTAssertEqual(GhostSuggestionEngine.rhymeStrength(of: ["L", "EY1", "Z", "IY0"], against: crazy), 2,
+                       "lazy is a perfect rhyme for crazy")
+        XCTAssertEqual(GhostSuggestionEngine.rhymeStrength(of: ["AE1", "B", "IY0"], against: crazy), 0,
+                       "abbe must NOT rhyme with crazy — it only shares the unstressed final IY0")
+    }
+
+    func testRankedRhymesIgnoresUnstressedFinalVowelMatches() {
+        let lexicon: [String: [String]] = [
+            "crazy": ["K", "R", "EY1", "Z", "IY0"],
+            "lazy":  ["L", "EY1", "Z", "IY0"],
+            "hazy":  ["HH", "EY1", "Z", "IY0"],
+            "abbe":  ["AE1", "B", "IY0"],            // alphabetical-first, but NOT a rhyme
+            "abadi": ["AH0", "B", "AE1", "D", "IY0"] // NOT a rhyme
+        ]
+        let out = GhostSuggestionEngine.rankedRhymes(target: ["K", "R", "EY1", "Z", "IY0"], lexicon: lexicon, excluding: "crazy", limit: 3)
+        XCTAssertEqual(out, ["hazy", "lazy"], "real rhymes only; alphabetical 'abbe'/'abadi' must not be treated as rhymes")
+    }
+
+    // End-to-end against the REAL bundled CMUDICT — the exact symptom observed running in the sim
+    // (a line ending in "crazy" surfaced "abbe · abadi · abadie").
+    func testFreeHintForCrazyDoesNotSurfaceAlphabeticalNonRhymes() {
+        let hint = GhostSuggestionEngine(retriever: nil).freeHint(forLastLine: "I was going to crazy")
+        guard let hint else { return }   // CMUDICT not in this bundle → skip (matches testFreeRhymeCandidates)
+        XCTAssertFalse(hint.candidates.contains("abbe"), "alphabetical-first non-rhyme must not appear")
+        XCTAssertFalse(hint.candidates.contains("abadi"))
+        XCTAssertFalse(hint.candidates.isEmpty, "crazy has real rhymes (lazy, hazy, daisy…)")
+    }
 }

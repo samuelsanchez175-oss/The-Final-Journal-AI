@@ -92,10 +92,17 @@ struct GhostSuggestionEngine {
         let coda: [String]
     }
 
-    /// Mirrors the canonical `extractSignature` (RapAnalysisEngine.swift:108): the last
-    /// stress-marked vowel is the rhyme vowel; everything after it is the coda.
+    /// The rhyme is anchored on the last **stressed** vowel (CMUDICT stress marker `1` or `2`);
+    /// everything after it is the coda. CMUDICT marks EVERY vowel with a stress digit (0/1/2), so
+    /// matching the last *digit-bearing* phoneme would grab an unstressed final vowel — e.g.
+    /// "crazy" `K R EY1 Z IY0` → `IY0` with an empty coda — collapsing the rhyme key to a bare
+    /// "-y" that "rhymes" with thousands of words (abbe, abadi…). Fall back to the last vowel of
+    /// any stress only when no stressed vowel exists (rare; all-unstressed function words).
+    /// (The canonical `extractSignature`, RapAnalysisEngine.swift:108, has the same latent pattern;
+    /// corrected here because the Ghost scans the whole dictionary, where it surfaces.)
     private static func phoneticSignature(from phonemes: [String]) -> PhoneticSig? {
-        guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else {
+        let stressed = phonemes.lastIndex { $0.last == "1" || $0.last == "2" }
+        guard let idx = stressed ?? phonemes.lastIndex(where: { $0.last?.isNumber == true }) else {
             return nil
         }
         return PhoneticSig(
