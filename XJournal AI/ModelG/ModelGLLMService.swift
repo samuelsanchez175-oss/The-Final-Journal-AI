@@ -172,7 +172,9 @@ class ModelGLLMService {
     }
 
     /// v3 step 2 — generate the whole verse (hook + 16 bars) in one call, conditioned on the plan.
-    func generateFullVerse(plan: VersePlan, arcShape: String, context: GenerationContext, temperature: Double = 0.8) async throws -> (hook: String, bars: [String]) {
+    func generateFullVerse(plan: VersePlan, arcShape: String, context: GenerationContext,
+                           temperature: Double = 0.8,
+                           corpusExemplars: [String] = [], corpusVocab: [String] = []) async throws -> (hook: String, bars: [String]) {
         let layer = context.luxuryLayer ?? .empty
         let themeBlock = context.themeContext.map { themeDirective($0) } ?? ""
         let voiceBlock = context.signalAxes.map { "\n" + signalDirective($0) } ?? ""
@@ -213,18 +215,25 @@ class ModelGLLMService {
             }
             return "\nEND-RHYME SCHEME (strict — this OVERRIDES your default): hold the SAME ending-rhyme sound for \(n) bars in a row, THEN switch to a brand-new rhyme sound for the next \(n) bars. Do NOT fall back to 2-bar couplets. Concretely: \(example). Use only about \(max(2, 16 / n)) distinct end-rhyme sounds across the 16 bars."
         }()
+        let corpusExemplarBlock: String = corpusExemplars.isEmpty ? "" : """
+
+        REFERENCE BARS (study the craft, cadence and vocabulary — DO NOT copy, paraphrase/blend):
+        \(corpusExemplars.prefix(6).map { "• \($0)" }.joined(separator: "\n"))
+        """
+        let corpusVocabBlock: String = corpusVocab.isEmpty ? "" :
+            "\nVOCAB PALETTE (weave in naturally, only if it fits): \(corpusVocab.prefix(12).joined(separator: ", "))"
         let user = """
         Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
         Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
         \(plan.promptText)
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
-        \(inspiration)\(referencesBlock)
+        \(inspiration)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)
         Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.\(rhymeCadence)
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}\(exampleBlock)
         """
         let raw = try await postChat(
-            system: "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars.",
+            system: "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars. House style and the reference bars take priority over the requested topic when they conflict.",
             user: user, maxTokens: 1400, temperature: temperature, jsonMode: true
         )
         guard let data = raw.data(using: .utf8),
