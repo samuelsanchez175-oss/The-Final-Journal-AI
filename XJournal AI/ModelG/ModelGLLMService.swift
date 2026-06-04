@@ -15,6 +15,14 @@ class ModelGLLMService {
     private let baseURL = "https://api.openai.com/v1"
     /// Gemini text model, used automatically when an "AIza" (Google AI Studio) key is supplied.
     private let geminiModel = "gemini-2.5-flash"
+    private let anthropicModel = "claude-3-5-sonnet-latest"  // configurable; current Claude model
+
+    enum LLMProvider { case openAI, gemini, anthropic }
+    static func provider(forKey key: String) -> LLMProvider {
+        if key.hasPrefix("AIza") { return .gemini }
+        if key.hasPrefix("sk-ant-") { return .anthropic }
+        return .openAI
+    }
 
     private init() {}
 
@@ -82,9 +90,13 @@ class ModelGLLMService {
     /// Shared chat-completion call. Returns the assistant message content (JSON string when jsonMode).
     private func postChat(system: String, user: String, maxTokens: Int, temperature: Double, jsonMode: Bool) async throws -> String {
         guard let key = apiKey else { throw ModelGLLMError.missingAPIKey }
-        if key.hasPrefix("AIza") {   // Google AI Studio (Gemini) keys start with "AIza"
-            return try await postGemini(key: key, system: system, user: user,
-                                        maxTokens: maxTokens, temperature: temperature, jsonMode: jsonMode)
+        switch Self.provider(forKey: key) {
+        case .gemini:
+            return try await postGemini(key: key, system: system, user: user, maxTokens: maxTokens, temperature: temperature, jsonMode: jsonMode)
+        case .anthropic:
+            return try await postAnthropic(key: key, system: system, user: user, maxTokens: maxTokens, temperature: temperature, jsonMode: jsonMode)
+        case .openAI:
+            break  // OpenAI body below (unchanged)
         }
         var body: [String: Any] = [
             "model": "gpt-4o",
@@ -152,6 +164,37 @@ class ModelGLLMService {
         let content = candidates?.first?["content"] as? [String: Any]
         let parts = content?["parts"] as? [[String: Any]]
         return (parts?.first?["text"] as? String) ?? ""
+    }
+
+    /// Anthropic (Claude) backend — used automatically when the key starts with "sk-ant-".
+    private func postAnthropic(key: String, system: String, user: String,
+                               maxTokens: Int, temperature: Double, jsonMode: Bool) async throws -> String {
+        let userContent = jsonMode ? user + "\n\nRespond with valid JSON only — no prose." : user
+        let body: [String: Any] = [
+            "model": anthropicModel,
+            "max_tokens": maxTokens,
+            "system": system,
+            "temperature": temperature,
+            "messages": [["role": "user", "content": userContent]]
+        ]
+        let url = URL(string: "https://api.anthropic.com/v1/messages")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue(key, forHTTPHeaderField: "x-api-key")
+        request.setValue("2023-06-01", forHTTPHeaderField: "anthropic-version")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try JSONSerialization.data(withJSONObject: body)
+
+        let (data, response) = try await URLSession.shared.data(for: request)
+        if let http = response as? HTTPURLResponse, http.statusCode == 429 {
+            throw ModelGLLMError.rateLimitExceeded(retryAfterSeconds: nil)
+        }
+        guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
+            throw ModelGLLMError.requestFailed
+        }
+        let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
+        let content = json?["content"] as? [[String: Any]]
+        return content?.compactMap { $0["text"] as? String }.joined() ?? ""
     }
 
     /// v3 step 1 — plan the verse (central image, angle, anchor rhymes).
