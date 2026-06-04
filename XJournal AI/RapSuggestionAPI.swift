@@ -488,6 +488,22 @@ class RapSuggestionAPI {
     ) async throws -> GeneratedRecord {
         let styleOverride = directedParams?.styleOverride
         func run() async throws -> GeneratedRecord {
+            if ModelGEnvironment.useModelGv4 {
+                let coordinatorV4 = ModelGCoreCoordinatorV4()
+                return try await coordinatorV4.generateRecord(
+                    input: metrics.fullText,
+                    audioURL: audioURL,
+                    styleOverride: styleOverride,
+                    directedParams: directedParams,
+                    selectedThemeIDs: selectedThemeIDs,
+                    transcriptionRhythmMapData: transcriptionRhythmMapData,
+                    bpm: metrics.bpm,
+                    musicalKey: metrics.key,
+                    musicalScale: metrics.scale,
+                    syllableMin: metrics.syllableMin,
+                    syllableMax: metrics.syllableMax
+                )
+            }
             if ModelGEnvironment.useModelGv3 {
                 let coordinatorV3 = ModelGCoreCoordinatorV3()
                 return try await coordinatorV3.generateRecord(
