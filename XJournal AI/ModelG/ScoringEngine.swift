@@ -233,9 +233,17 @@ class ScoringEngine {
 
     // MARK: - v4 50/10/40 composite scoring
 
-    /// House 50% + Auto 10% + User 40% → 0…100.
+    // v4 weighting (tunable). houseFit already blends craft (quality) + corpus signature,
+    // so 0 here would also drop quality — keep > 0. Sum of the three should be 1.0.
+    static let v4HouseWeight: Double    = 0.45
+    static let v4AutoWeight: Double     = 0.15
+    static let v4UserWeight: Double     = 0.40
+    static let houseCraftShare: Double     = 0.80  // existing quality engine
+    static let houseSignatureShare: Double = 0.20  // vault mimicry (quality risk — keep low)
+
+    /// House 45% + Auto 15% + User 40% → 0…100.
     static func v4Composite(houseFit: Double, autoFit: Double, userFit: Double) -> Double {
-        100.0 * (0.50 * houseFit + 0.10 * autoFit + 0.40 * userFit)
+        100.0 * (v4HouseWeight * houseFit + v4AutoWeight * autoFit + v4UserWeight * userFit)
     }
 
     /// Jaccard similarity between `norm` and the best-matching exemplar norm. 0…1.
@@ -272,7 +280,7 @@ class ScoringEngine {
         var b = base
         let craft = base.totalScore / 100.0
         let sig = Self.signatureSimilarity(norm: text.lowercased(), exemplarNorms: exemplarNorms)
-        b.houseFit = 0.65 * craft + 0.35 * sig
+        b.houseFit = Self.houseCraftShare * craft + Self.houseSignatureShare * sig
         b.autoFit = min(max(base.intentAlignment, 0), 1)
         let dp = context.directedParams
         b.userFit = Self.userFit(text: text,
