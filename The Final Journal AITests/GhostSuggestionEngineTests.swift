@@ -40,4 +40,40 @@ final class GhostSuggestionEngineTests: XCTestCase {
         XCTAssertTrue(hint.display.contains("fight"))
         XCTAssertTrue(hint.display.contains("bright"))
     }
+
+    // MARK: - Rhyme ranking (deterministic, CMUDICT-independent)
+
+    func testRhymeStrengthTiers() {
+        let night = ["N", "AY1", "T"]
+        // perfect = same stressed vowel AND coda
+        XCTAssertEqual(GhostSuggestionEngine.rhymeStrength(of: ["L", "AY1", "T"], against: night), 2, "light should be a perfect rhyme")
+        // slant = same stressed vowel, coda differs
+        XCTAssertEqual(GhostSuggestionEngine.rhymeStrength(of: ["R", "AY1", "D"], against: night), 1, "ride should be a slant rhyme")
+        // none = different stressed vowel
+        XCTAssertEqual(GhostSuggestionEngine.rhymeStrength(of: ["K", "AE1", "T"], against: night), 0, "cat should not rhyme")
+    }
+
+    func testRankedRhymesPerfectBeforeSlantDeterministic() {
+        let lexicon: [String: [String]] = [
+            "night":  ["N", "AY1", "T"],        // source word — must be excluded
+            "light":  ["L", "AY1", "T"],        // perfect
+            "bright": ["B", "R", "AY1", "T"],   // perfect
+            "ride":   ["R", "AY1", "D"],        // slant
+            "time":   ["T", "AY1", "M"],        // slant
+            "cat":    ["K", "AE1", "T"],        // no rhyme — must be dropped
+        ]
+        let out = GhostSuggestionEngine.rankedRhymes(target: ["N", "AY1", "T"], lexicon: lexicon, excluding: "night", limit: 4)
+        // perfect tier (alphabetical) before slant tier (alphabetical); "cat" excluded, "night" excluded
+        XCTAssertEqual(out, ["bright", "light", "ride", "time"])
+    }
+
+    func testRankedRhymesHonorsLimitAndExcludesSource() {
+        let lexicon: [String: [String]] = [
+            "night": ["N", "AY1", "T"],
+            "light": ["L", "AY1", "T"],
+            "sight": ["S", "AY1", "T"],
+        ]
+        let out = GhostSuggestionEngine.rankedRhymes(target: ["N", "AY1", "T"], lexicon: lexicon, excluding: "night", limit: 1)
+        XCTAssertEqual(out, ["light"], "limit honored; alphabetical-first perfect rhyme; source excluded")
+    }
 }
