@@ -78,6 +78,33 @@ test('parseSlang extracts term, category, theme, definition', () => {
   assert.equal(s.definition, "Reinvesting wealth into the old neighborhood.");
 });
 
+const OLD_BAR = `---
+artist: "Gunna"
+song: "bread & butter"
+active_artist: "Gunna"
+bpm: 172
+type: bar_note
+---
+**Song:** bread & butter
+**Active Artist:** Gunna
+**Section:** Verse 2
+
+## Contextual Lyric
+42 > Never gave no statement or agree to take no stand on 'em
+43 > **On whatever you niggas on and trust me, I'ma stand on it**
+44 > Lawyers and the DA did some sneaky shit, I fell for it
+
+## The Breakdown
+**Related Concepts:** [[General Lyricism and Flexing]]
+`;
+
+test('parseBar uses filename lyric, not the **Song:** metadata label (old format)', () => {
+  const b = parseBar("bread & butter - On whatever you niggas on and trust me, I'ma stand on it.md", OLD_BAR);
+  assert.equal(b.text, "On whatever you niggas on and trust me, I'ma stand on it");
+  assert.notEqual(b.text, "Song:");
+  assert.ok(b.context.includes("On whatever you niggas on and trust me, I'ma stand on it"));
+});
+
 test('buildCorpus routes by kind and materializes brand->attribute pairs', () => {
   const files = [
     { relPath: "4. Bar Notes/x.md", name: "World Is Yours - Got garments (Nope).md", raw: BAR, kind: "bar" },

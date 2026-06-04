@@ -25,16 +25,19 @@ function asArray(v) { return Array.isArray(v) ? v : (v == null || v === '' ? [] 
 
 export function parseBar(fileName, raw) {
   const { content, data } = matter(raw);
-  const bold = content.match(/\*\*(.+?)\*\*/);
-  let full = bold
-    ? bold[1].trim()
-    : path.basename(fileName).replace(/\.md$/, '').replace(/^.*? - /, '').replace(/[_ ]\d+$/, '').trim();
+  // Canonical lyric = the filename's "<song> - <lyric>" tail. Uniform across both
+  // vault body formats; the body's first **bold** is a metadata label ("**Song:**")
+  // in ~61% of files, so it is NOT a reliable source for the lyric.
+  const base = path.basename(fileName).replace(/\.md$/, '');
+  const sep = base.indexOf(' - ');
+  let full = (sep >= 0 ? base.slice(sep + 3) : base).replace(/[_ ]\d+$/, '').trim();
   let text = full, adlib = null;
   const am = full.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
   if (am) { text = am[1].trim(); adlib = am[2].trim(); }
+  // Context = surrounding lyric lines ("NN > x" or "> x"), ** stripped.
   const context = [];
   for (const line of content.split('\n')) {
-    const cm = line.match(/^\s*\d+\s*>\s*(.+?)\s*$/);
+    const cm = line.match(/^\s*(?:\d+\s*)?>\s*(.+?)\s*$/);
     if (cm) context.push(cm[1].replace(/\*\*/g, '').trim());
   }
   const concepts = [...new Set(extractWikilinks(content))];
