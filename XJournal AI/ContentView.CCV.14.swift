@@ -52,6 +52,7 @@ struct DynamicIslandToolbarView: View {
     @State private var showFontSizePopover: Bool = false
     @Binding var ghostMode: GhostMode
     @State private var showGhostPopover: Bool = false
+    @State private var showGhostPricing: Bool = false
     @AppStorage(EditorChromeSettings.writingFontSizeKey) private var writingFontSize: Double = EditorChromeSettings.defaultWritingFontSize
     @Binding var showAudioRecorder: Bool
     @Binding var showRapSuggestions: Bool
@@ -641,10 +642,17 @@ struct DynamicIslandToolbarView: View {
                                     .buttonStyle(.plain)
                                     .padding(.vertical, 5)
                                 }
+                                Divider()
+                                Button { showGhostPricing = true } label: {
+                                    Label("Compare costs", systemImage: "dollarsign.circle").font(.footnote)
+                                }.buttonStyle(.plain).padding(.top, 2)
                             }
                             .padding(12)
                             .frame(width: 170)
                             .presentationCompactAdaptation(.popover)
+                            .sheet(isPresented: $showGhostPricing) {
+                                ProviderPricingView().presentationDetents([.medium])
+                            }
                         }
 
                         enhancedButton(
