@@ -16,7 +16,14 @@ private struct PhoneticSignature {
 }
 
 private func extractSignature(from phonemes: [String]) -> PhoneticSignature? {
-    guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else {
+    // Anchor on the last STRESSED vowel (CMUDICT stress marker 1 or 2), not the last vowel.
+    // CMUDICT marks EVERY vowel with a stress digit (0/1/2), so the last digit-bearing phoneme is
+    // often an unstressed final vowel — e.g. "crazy" K R EY1 Z IY0 → IY0 with an empty coda —
+    // which over-loosens rhyme matching to bare assonance ("-y" endings). Fall back to the last
+    // vowel of any stress only when none is stressed.
+    // (Mirrors GhostSuggestionEngine.phoneticSignature, fixed in 558937e.)
+    let stressed = phonemes.lastIndex { $0.last == "1" || $0.last == "2" }
+    guard let idx = stressed ?? phonemes.lastIndex(where: { $0.last?.isNumber == true }) else {
         return nil
     }
     let vowel = phonemes[idx]
@@ -159,33 +166,53 @@ struct RhymeSuggestion: Identifiable {
 // MARK: - Rhyme Finder Helper
 
 class RhymeFinder {
+    /// Rhyme tier over raw CMUDICT phoneme arrays — the single rhyme classifier used by
+    /// `findRhymes` and exercised directly (CMUDICT-independent) by tests.
+    /// 3 = perfect (same stressed vowel + coda), 2 = near (same stressed vowel, different coda),
+    /// 1 = slant (same base vowel), 0 = no rhyme.
+    static func rhymeTier(_ a: [String], _ b: [String]) -> Int {
+        guard let sigA = extractSignature(from: a),
+              let sigB = extractSignature(from: b),
+              let strength = rhymeScore(sigA, sigB) else {
+            return 0
+        }
+        switch strength {
+        case .perfect: return 3
+        case .near:    return 2
+        case .slant:   return 1
+        }
+    }
+
     static func findRhymes(for word: String, limit: Int = 8) -> [RhymeSuggestion] {
         guard let phonemes = getCMUDICTPhonemes(for: word),
-              let targetSignature = extractSignature(from: phonemes) else {
+              extractSignature(from: phonemes) != nil else {
             return []
         }
-        
+
         let dict = getGlobalCMUDICTStore()
         var perfectRhymes: [RhymeSuggestion] = []
         var nearRhymes: [RhymeSuggestion] = []
         var slantRhymes: [RhymeSuggestion] = []
-        
+
         for (dictWord, wordPhonemes) in dict {
             // Skip the same word
             if dictWord.lowercased() == word.lowercased() {
                 continue
             }
-            
-            guard let wordSignature = extractSignature(from: wordPhonemes),
-                  let strength = rhymeScore(targetSignature, wordSignature) else {
-                continue
+
+            let strength: RhymeStrength
+            switch RhymeFinder.rhymeTier(phonemes, wordPhonemes) {
+            case 3:  strength = .perfect
+            case 2:  strength = .near
+            case 1:  strength = .slant
+            default: continue
             }
-            
+
             let suggestion = RhymeSuggestion(
                 word: dictWord.capitalized,
                 strength: strength
             )
-            
+
             switch strength {
             case .perfect:
                 perfectRhymes.append(suggestion)
@@ -194,7 +221,7 @@ class RhymeFinder {
             case .slant:
                 slantRhymes.append(suggestion)
             }
-            
+
             // Stop if we have enough perfect rhymes
             if perfectRhymes.count >= limit {
                 break

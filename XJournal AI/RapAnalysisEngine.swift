@@ -106,7 +106,14 @@ private func getCMUDICTPhonemes(for word: String) -> [String]? {
 }
 
 private func extractSignature(from phonemes: [String]) -> PhoneticSignature? {
-    guard let idx = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else {
+    // Anchor on the last STRESSED vowel (CMUDICT stress marker 1 or 2), not the last vowel.
+    // CMUDICT marks EVERY vowel with a stress digit (0/1/2), so the last digit-bearing phoneme is
+    // often an unstressed final vowel — e.g. "crazy" K R EY1 Z IY0 → IY0 with an empty coda —
+    // which over-loosens rhyme matching to bare assonance ("-y" endings). Fall back to the last
+    // vowel of any stress only when none is stressed.
+    // (Mirrors GhostSuggestionEngine.phoneticSignature, fixed in 558937e.)
+    let stressed = phonemes.lastIndex { $0.last == "1" || $0.last == "2" }
+    guard let idx = stressed ?? phonemes.lastIndex(where: { $0.last?.isNumber == true }) else {
         return nil
     }
     let vowel = phonemes[idx]
@@ -290,20 +297,30 @@ struct RapAnalysisEngine {
         return rhymePattern.joined()
     }
     
+    /// Rhyme tier over raw CMUDICT phoneme arrays — the single rhyme classifier shared by
+    /// `wordsRhyme` and exercised directly (CMUDICT-independent) by tests.
+    /// 3 = perfect (same stressed vowel + coda), 2 = near (same stressed vowel, different coda),
+    /// 1 = slant (same base vowel), 0 = no rhyme.
+    static func rhymeTier(_ a: [String], _ b: [String]) -> Int {
+        guard let sigA = extractSignature(from: a),
+              let sigB = extractSignature(from: b),
+              let strength = rhymeScore(sigA, sigB) else {
+            return 0
+        }
+        switch strength {
+        case .perfect: return 3
+        case .near:    return 2
+        case .slant:   return 1
+        }
+    }
+
     private func wordsRhyme(_ word1: String, _ word2: String) -> Bool {
         // Use existing CMUDICT to check if words rhyme
         guard let phonemes1 = getCMUDICTPhonemes(for: word1),
-              let phonemes2 = getCMUDICTPhonemes(for: word2),
-              let sig1 = extractSignature(from: phonemes1),
-              let sig2 = extractSignature(from: phonemes2) else {
+              let phonemes2 = getCMUDICTPhonemes(for: word2) else {
             return false
         }
-        
-        // Check rhyme strength
-        if let strength = rhymeScore(sig1, sig2) {
-            return strength == .perfect || strength == .near
-        }
-        
-        return false
+        // Perfect or near rhyme (matches the prior threshold).
+        return RapAnalysisEngine.rhymeTier(phonemes1, phonemes2) >= 2
     }
 }
