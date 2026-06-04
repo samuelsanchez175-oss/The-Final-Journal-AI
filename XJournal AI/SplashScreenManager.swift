@@ -84,6 +84,7 @@ class SplashScreenManager: ObservableObject {
             .toolbarUndoRedo,
             .toolbarEyeToggle,
             .toolbarMagnifyingGlass,
+            .toolbarGhost,
             .toolbarDiagnostics
         ]
         
@@ -141,6 +142,7 @@ enum SplashScreenID: String, CaseIterable {
     case toolbarUndoRedo = "toolbar_undo_redo"
     case toolbarEyeToggle = "toolbar_eye_toggle"
     case toolbarMagnifyingGlass = "toolbar_magnifying_glass"
+    case toolbarGhost = "toolbar_ghost"
     case toolbarDiagnostics = "toolbar_diagnostics"
     case aiSparkleButton = "ai_sparkle_button"
     
@@ -162,6 +164,8 @@ enum SplashScreenID: String, CaseIterable {
             return "Rhyme Overlay"
         case .toolbarMagnifyingGlass:
             return "Rhyme Groups"
+        case .toolbarGhost:
+            return "Meet the Ghost"
         case .toolbarDiagnostics:
             return "Rhyme Diagnostics"
         case .aiSparkleButton:

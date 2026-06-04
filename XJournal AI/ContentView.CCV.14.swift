@@ -50,6 +50,8 @@ struct DynamicIslandToolbarView: View {
     @Binding var keyboardHeight: CGFloat
     @State private var showRhymeGroupsPopover: Bool = false
     @State private var showFontSizePopover: Bool = false
+    @Binding var ghostMode: GhostMode
+    @State private var showGhostPopover: Bool = false
     @AppStorage(EditorChromeSettings.writingFontSizeKey) private var writingFontSize: Double = EditorChromeSettings.defaultWritingFontSize
     @Binding var showAudioRecorder: Bool
     @Binding var showRapSuggestions: Bool
@@ -604,6 +606,45 @@ struct DynamicIslandToolbarView: View {
                             if isPresented {
                                 isEditorFocused = false
                             }
+                        }
+
+                        // Ghost Bar mode picker
+                        enhancedButton(
+                            id: "ghost",
+                            action: {
+                                isEditorFocused = false
+                                showGhostPopover = true
+                                startAutoCollapseTimer()
+                            },
+                            label: {
+                                Image(systemName: ghostMode == .off ? "wand.and.stars" : "wand.and.stars.inverse")
+                                    .font(.headline)
+                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+                            },
+                            hapticStyle: .light
+                        )
+                        .accessibilityLabel("Ghost rhyme mode: \(ghostMode.label)")
+                        .accessibilityHint("Double tap to change Ghost Bar mode")
+                        .popover(isPresented: $showGhostPopover, arrowEdge: .bottom) {
+                            VStack(alignment: .leading, spacing: 2) {
+                                ForEach(GhostMode.allCases) { m in
+                                    Button { ghostMode = m } label: {
+                                        HStack {
+                                            Text(m.label)
+                                            Spacer()
+                                            if ghostMode == m {
+                                                Image(systemName: "checkmark").font(.caption)
+                                            }
+                                        }
+                                        .contentShape(Rectangle())
+                                    }
+                                    .buttonStyle(.plain)
+                                    .padding(.vertical, 5)
+                                }
+                            }
+                            .padding(12)
+                            .frame(width: 170)
+                            .presentationCompactAdaptation(.popover)
                         }
 
                         enhancedButton(

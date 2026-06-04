@@ -68,6 +68,17 @@ class ModelGLLMService {
         try await postChat(system: system, user: user, maxTokens: maxTokens, temperature: 0.65, jsonMode: true)
     }
 
+    // MARK: - Ghost Bar (Live tier)
+
+    /// Ghost (Live tier): up to 3 single end-rhyme words for the next line that rhyme with `rhymeWith` and fit `topic`.
+    func ghostRhymes(rhymeWith: String, topic: String) async throws -> [String] {
+        let system = "You are Model G's rhyme helper. Output ONLY 3 single words, comma-separated, that rhyme with the given word and fit the topic. No sentences, no punctuation other than commas."
+        let user = "Rhyme with: \(rhymeWith). Topic: \(topic). 3 words:"
+        let text = try await postChat(system: system, user: user, maxTokens: 24, temperature: 0.8, jsonMode: false)
+        return text.split(whereSeparator: { $0 == "," || $0 == "\n" })
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }.filter { !$0.isEmpty }
+    }
+
     /// Shared chat-completion call. Returns the assistant message content (JSON string when jsonMode).
     private func postChat(system: String, user: String, maxTokens: Int, temperature: Double, jsonMode: Bool) async throws -> String {
         guard let key = apiKey else { throw ModelGLLMError.missingAPIKey }

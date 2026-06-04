@@ -344,6 +344,11 @@ struct NoteEditorView: View {
     @State private var showThemeExpansionSheet: Bool = false
     @State private var showExportSheet: Bool = false
     @State private var themeExpansionSuggestions: [RapSuggestion] = []
+
+    // Ghost Bar
+    @AppStorage(GhostMode.storageKey) private var ghostModeRaw: String = GhostMode.off.rawValue
+    @State private var ghostHint: GhostHint?
+    @State private var ghostTask: Task<Void, Never>?
     @State private var isGeneratingThemeExpansion: Bool = false
     @State private var selectedArtistForStyleTransfer: String = ""
     
@@ -521,6 +526,14 @@ struct NoteEditorView: View {
         // While the toolbar follows the keyboard, the text surface should ignore keyboard displacement
         // This prevents the entire view from shifting upward when focus is gained
         .ignoresSafeArea(.keyboard, edges: .bottom)
+        .safeAreaInset(edge: .bottom) {
+            // Ghost Bar pill — floats just above the toolbar when a hint is available
+            if let hint = ghostHint, GhostMode(rawValue: ghostModeRaw) != .off {
+                GhostBarPill(candidates: hint.candidates, onAccept: insertGhostWord, onDismiss: { ghostHint = nil })
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .padding(.bottom, 2)
+            }
+        }
         .safeAreaInset(edge: .bottom) {
             bottomToolbar
         }
@@ -981,6 +994,10 @@ struct NoteEditorView: View {
             highlights: computedHighlights,
             isEditorFocused: $isEditorFocused,
             keyboardHeight: $keyboardObserver.height,
+            ghostMode: Binding(
+                get: { GhostMode(rawValue: ghostModeRaw) ?? .off },
+                set: { ghostModeRaw = $0.rawValue }
+            ),
             showAudioRecorder: $showAudioRecorder,
             showRapSuggestions: $showRapSuggestions,
             showModelGControlSurface: $showModelGControlSurface,
@@ -1192,11 +1209,44 @@ struct NoteEditorView: View {
         // Debounced analysis - waits 400ms after typing stops before analyzing
         // This reduces computation during active typing and improves performance
         rhymeEngineState.updateIfNeeded(text: newValue)
+
+        // Ghost Bar: fire hint when user finishes a line (newline appended)
+        if GhostMode(rawValue: ghostModeRaw) != .off, newValue.hasSuffix("\n"), !oldValue.hasSuffix("\n") {
+            let line = newValue.split(separator: "\n", omittingEmptySubsequences: true).last.map(String.init)
+            ghostTask?.cancel()
+            ghostTask = Task { await refreshGhost(lastLine: line) }
+        }
     }
 
     // Phase 4: Detect themes from lyrics for theme expansion auto-selection
     private func extractThemes(from text: String) -> [String] {
         ThemeIdentificationService.detectedThemeNames(in: text)
+    }
+
+    // MARK: - Ghost Bar
+
+    @MainActor private func refreshGhost(lastLine: String?) async {
+        guard let line = lastLine, !line.trimmingCharacters(in: .whitespaces).isEmpty else { ghostHint = nil; return }
+        let mode = GhostMode(rawValue: ghostModeRaw) ?? .off
+        let store = try? ModelGCorpusStore()
+        let engine = GhostSuggestionEngine(retriever: store.map { ModelGCorpusRetriever(store: $0) })
+        if mode == .live, KeychainHelper.shared.getAPIKey() != nil {
+            if let live = try? await liveGhostHint(lastLine: line), !live.candidates.isEmpty { ghostHint = live; return }
+        }
+        ghostHint = engine.freeHint(forLastLine: line)   // free, or live-fallback
+    }
+
+    private func liveGhostHint(lastLine: String) async throws -> GhostHint? {
+        guard let end = GhostSuggestionEngine.endWord(of: lastLine) else { return nil }
+        let topic = item.title.isEmpty ? "rap verse" : item.title
+        let words = try await ModelGLLMService.shared.ghostRhymes(rhymeWith: end, topic: topic)
+        return words.isEmpty ? nil : GhostHint(candidates: Array(words.prefix(3)), tail: nil)
+    }
+
+    private func insertGhostWord(_ word: String) {
+        if !item.body.isEmpty && !item.body.hasSuffix("\n") && !item.body.hasSuffix(" ") { item.body += " " }
+        item.body += word
+        ghostHint = nil
     }
     
     // MARK: - Note Timestamp Metadata Bar
@@ -2267,6 +2317,12 @@ struct NoteEditorView: View {
                 description: "See every rhyme family in your verse and explore related words.",
                 icon: "text.magnifyingglass"
             )
+        case .toolbarGhost:
+            return (
+                title: "Meet the Ghost",
+                description: "Finish a line and the Ghost whispers your next rhyme. Free Ghost pulls on-brand rhymes from a built-in library — no cost, offline. Live Ghost uses your AI key for a rhyme that fits your verse — a quick call each time, usually well under a penny. Flip it Off in the toolbar anytime.",
+                icon: "wand.and.stars"
+            )
         case .toolbarDiagnostics:
             return (
                 title: "Rhyme Diagnostics",
@@ -2298,8 +2354,10 @@ struct NoteEditorView: View {
             buttonIndex = 4
         case .toolbarMagnifyingGlass:
             buttonIndex = 5
-        case .toolbarDiagnostics:
+        case .toolbarGhost:
             buttonIndex = 6
+        case .toolbarDiagnostics:
+            buttonIndex = 7
         default:
             buttonIndex = 0
         }
