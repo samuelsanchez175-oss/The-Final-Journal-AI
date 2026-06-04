@@ -42,6 +42,13 @@ enum ModelGEnvironment {
         set { UserDefaults.standard.set(newValue, forKey: "model_g_v3_enabled") }
     }
 
+    /// When true, use Model G v4 pipeline with corpus-grounded exemplar retrieval and
+    /// 50/10/40 house/auto/user composite scoring. Opt-in; off by default.
+    static var useModelGv4: Bool {
+        get { UserDefaults.standard.bool(forKey: "model_g_v4_enabled") }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_v4_enabled") }
+    }
+
     /// Originality/inspiration target (0 = lean hard on the culture's idioms & the training lyrics;
     /// 1 = more novel). Default 0.6: fresh but grounded — sterile-original loses the voice.
     static var originalityBias: Double {
