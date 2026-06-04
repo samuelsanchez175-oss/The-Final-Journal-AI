@@ -73,7 +73,8 @@ class ModelGCoreCoordinatorV4 {
         var v4ExemplarNorms: [String] = []
         var v4Vocab: [String] = []
         if let corpusStore = try? ModelGCorpusStore() {
-            let retrieved = ModelGCorpusRetriever(store: corpusStore).retrieve(
+            ModelGEmbeddingIndex.shared.buildIfNeeded(bars: corpusStore.corpus.bars)
+            let retrieved = ModelGCorpusRetriever(store: corpusStore, embeddingIndex: ModelGEmbeddingIndex.shared).retrieve(
                 theme: themeContext?.themeName,
                 draft: input,
                 brands: directedParams?.worldBuildingWords ?? [],
