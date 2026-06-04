@@ -1228,7 +1228,7 @@ struct NoteEditorView: View {
     @MainActor private func refreshGhost(lastLine: String?) async {
         guard let line = lastLine, !line.trimmingCharacters(in: .whitespaces).isEmpty else { ghostHint = nil; return }
         let mode = GhostMode(rawValue: ghostModeRaw) ?? .off
-        let store = try? ModelGCorpusStore()
+        let store = ModelGCorpusStore.shared   // cached singleton — avoid re-decoding 8.7MB JSON per newline
         let engine = GhostSuggestionEngine(retriever: store.map { ModelGCorpusRetriever(store: $0) })
         if mode == .live, KeychainHelper.shared.getAPIKey() != nil {
             if let live = try? await liveGhostHint(lastLine: line), !live.candidates.isEmpty { ghostHint = live; return }
