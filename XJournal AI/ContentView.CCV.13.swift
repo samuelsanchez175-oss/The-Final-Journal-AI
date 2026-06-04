@@ -305,6 +305,8 @@ struct NoteEditorView: View {
     @State private var showAudioImporter: Bool = false
     @State private var showImportNotesInstructions: Bool = false
     @State private var showAudioDetailSheet: Bool = false
+    @State private var metadataGlow: Bool = false
+    @State private var audioMetaSnapshot: String = ""
     @State private var showRawTranscriptOnSurface: Bool = false
     @State private var shouldAutoTranscribe: Bool = false
     @State private var showFindInTranscript: Bool = false
@@ -696,9 +698,17 @@ struct NoteEditorView: View {
             AudioDetailSheet(item: item, autoTranscribe: shouldAutoTranscribe)
         }
         .onChange(of: showAudioDetailSheet) { oldValue, newValue in
-            // Reset auto-transcribe flag when sheet is dismissed
-            if !newValue {
+            if newValue {
+                // Opening: snapshot audio metadata so we can detect what analysis adds.
+                audioMetaSnapshot = "\(item.bpm ?? -1)|\(item.key ?? "")|\(item.scale ?? "")"
+            } else {
+                // Reset auto-transcribe flag when sheet is dismissed
                 shouldAutoTranscribe = false
+                // Toast: if fresh BPM/key/scale arrived from the audio, glow the pills.
+                let now = "\(item.bpm ?? -1)|\(item.key ?? "")|\(item.scale ?? "")"
+                if now != audioMetaSnapshot && (item.bpm != nil || item.key != nil || item.scale != nil) {
+                    triggerMetadataGlow()
+                }
             }
         }
         .fileImporter(
@@ -1600,6 +1610,22 @@ struct NoteEditorView: View {
                     lineWidth: isSet ? 1.0 : 0.8
                 )
         )
+        // Metadata-arrived toast: coral glow ring + halo for ~4s (see triggerMetadataGlow).
+        .overlay(
+            Capsule(style: .continuous)
+                .strokeBorder(Momentum.accent.opacity(metadataGlow ? 0.9 : 0), lineWidth: metadataGlow ? 1.6 : 0)
+        )
+        .shadow(color: metadataGlow ? Momentum.accent.opacity(0.7) : .clear, radius: metadataGlow ? 8 : 0)
+        .animation(.easeInOut(duration: 0.45), value: metadataGlow)
+    }
+
+    /// Pulse the metadata pills with a coral glow for ~4s to toast that fresh
+    /// BPM/key/scale just arrived from audio analysis.
+    private func triggerMetadataGlow() {
+        withAnimation(.easeInOut(duration: 0.45)) { metadataGlow = true }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            withAnimation(.easeInOut(duration: 0.55)) { metadataGlow = false }
+        }
     }
 
     private func prepareHapticForNewNote() {
