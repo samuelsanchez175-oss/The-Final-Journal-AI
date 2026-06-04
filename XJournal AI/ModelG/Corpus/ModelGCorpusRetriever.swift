@@ -5,6 +5,7 @@ import Foundation
 /// `retrieve(...)` signature is the seam where Phase 2b semantic embeddings drop in.
 struct ModelGCorpusRetriever {
     let store: ModelGCorpusStore
+    var embeddingIndex: ModelGEmbeddingIndex? = nil
 
     struct Result {
         let exemplars: [CorpusBar]
@@ -17,6 +18,11 @@ struct ModelGCorpusRetriever {
             let kw = Self.keywords(from: draft)
             let extra = kw.flatMap { store.bars(matching: $0) }
             pool.append(contentsOf: extra)
+        }
+        let semantic = embeddingIndex?.isReady == true
+        if pool.count < k, semantic { pool = store.corpus.bars }
+        if semantic, let ranked = embeddingIndex?.rank(bars: pool, near: draft, k: k * 3) {
+            pool = ranked
         }
         var seen = Set<String>(), deduped: [CorpusBar] = []
         for b in pool where !b.norm.isEmpty && seen.insert(b.norm).inserted {
