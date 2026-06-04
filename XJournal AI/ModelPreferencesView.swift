@@ -12,6 +12,11 @@ struct ModelPreferencesView: View {
     @State private var creativity = ModelGEnvironment.creativity
     @State private var effortCandidates = ModelGEnvironment.effortCandidates
     @State private var qualityBar = ModelGEnvironment.qualityBar
+    #if DEBUG
+    // Dev-only switch for the experimental Model G v4 engine. Binds the same UserDefaults
+    // key (`model_g_v4_enabled`) that ModelGEnvironment.useModelGv4 / RapSuggestionAPI read.
+    @AppStorage("model_g_v4_enabled") private var useModelGv4 = false
+    #endif
 
     var body: some View {
         NavigationStack {
@@ -22,6 +27,9 @@ struct ModelPreferencesView: View {
                     effortSlider
                     qualityBarSlider
                     themeAwareToggle
+                    #if DEBUG
+                    modelGv4Toggle
+                    #endif
                     criticVoicePicker
                     ModelSettingsForm(settings: $modelGv3Settings)
                 }
@@ -134,6 +142,18 @@ struct ModelPreferencesView: View {
                 .font(.caption).foregroundStyle(Momentum.contentSecondary)
         }
     }
+
+    #if DEBUG
+    private var modelGv4Toggle: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Toggle(isOn: $useModelGv4) {
+                Text("Use Model G v4 engine").font(.subheadline.weight(.semibold))
+            }
+            Text("Generates with the newer v4 pipeline, which grounds bars in your reference-lyric corpus. Takes priority over v3 when on. Experimental — off by default.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+        }
+    }
+    #endif
 
     private var criticVoicePicker: some View {
         VStack(alignment: .leading, spacing: 4) {
