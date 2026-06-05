@@ -171,8 +171,10 @@ class ModelGLLMService {
         )
     }
 
-    /// v3 step 2 — generate the whole verse (hook + 16 bars) in one call, conditioned on the plan.
-    func generateFullVerse(plan: VersePlan, arcShape: String, context: GenerationContext) async throws -> (hook: String, bars: [String]) {
+    /// v3/v4 step 2 — generate the whole verse (hook + 16 bars) in one call, conditioned on the plan.
+    /// `exemplars` (v4 RAG): real ground-truth bars retrieved for this request. When present they
+    /// anchor the verse's cadence and rhyme. v3 calls without them (default empty) → unchanged.
+    func generateFullVerse(plan: VersePlan, arcShape: String, context: GenerationContext, exemplars: [String] = []) async throws -> (hook: String, bars: [String]) {
         let layer = context.luxuryLayer ?? .empty
         let themeBlock = context.themeContext.map { themeDirective($0) } ?? ""
         let voiceBlock = context.signalAxes.map { "\n" + signalDirective($0) } ?? ""
@@ -182,6 +184,10 @@ class ModelGLLMService {
         let palette = LexiconStore.shared.referencePalette()
         let referencesBlock = palette.isEmpty ? "" :
             "\nSpecific references you MAY draw on (pick 1-3 that genuinely fit the feeling; never force, never list them): \(palette.joined(separator: ", "))."
+        // v4 RAG anchors: study the rhythm of real bars in this lane, don't copy their content.
+        let exemplarBlock = exemplars.isEmpty ? "" :
+            "\nReal bars in this exact lane — study their CADENCE, syllable count, and rhyme placement; match that rhythm and pocket, but do NOT reuse their words, brands, or images:\n"
+            + exemplars.map { "• \($0)" }.joined(separator: "\n")
         let beatBlock = beatDirective(context)
         let syllRule = context.musicalBPM != nil
             ? "around \(context.syllableTarget) syllables per bar — sit in the pocket at this tempo"
@@ -192,7 +198,7 @@ class ModelGLLMService {
         \(plan.promptText)
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
-        \(inspiration)\(referencesBlock)
+        \(inspiration)\(referencesBlock)\(exemplarBlock)
         Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}
         """

@@ -488,6 +488,33 @@ class RapSuggestionAPI {
     ) async throws -> GeneratedRecord {
         let styleOverride = directedParams?.styleOverride
         func run() async throws -> GeneratedRecord {
+            // v4: RAG-grounded verse. Falls through to v3 if it errors or yields only fallback bars.
+            if ModelGEnvironment.useModelGv4 {
+                do {
+                    let recordV4 = try await ModelGCoreCoordinatorV4().generateRecord(
+                        input: metrics.fullText,
+                        audioURL: audioURL,
+                        styleOverride: styleOverride,
+                        directedParams: directedParams,
+                        selectedThemeIDs: selectedThemeIDs,
+                        transcriptionRhythmMapData: transcriptionRhythmMapData,
+                        bpm: metrics.bpm,
+                        musicalKey: metrics.key,
+                        musicalScale: metrics.scale
+                    )
+                    let onlyFallback = recordV4.bars.allSatisfy {
+                        $0 == "Fallback bar — continue the flow." || $0.hasPrefix("Continue the flow —")
+                    }
+                    if !onlyFallback { return recordV4 }
+                    #if DEBUG
+                    print("Model G v4: only fallback bars — falling back to v3.")
+                    #endif
+                } catch {
+                    #if DEBUG
+                    print("Model G v4 error — falling back to v3: \(error.localizedDescription)")
+                    #endif
+                }
+            }
             if ModelGEnvironment.useModelGv3 {
                 let coordinatorV3 = ModelGCoreCoordinatorV3()
                 return try await coordinatorV3.generateRecord(
@@ -565,7 +592,8 @@ class RapSuggestionAPI {
             #if DEBUG
             print("Model G Core: Starting \(modelGCoreSuggestionSetCount) set(s) (\(useV2 ? "v2" : "v1"))...")
             #endif
-            let baseSource = ModelGEnvironment.useModelGv3 ? "Model G Core v3.0" : (useV2 ? "Model G Core v2.0" : "Model G Core v1.0")
+            let baseSource = ModelGEnvironment.useModelGv4 ? "Model G Core v4.0"
+                : (ModelGEnvironment.useModelGv3 ? "Model G Core v3.0" : (useV2 ? "Model G Core v2.0" : "Model G Core v1.0"))
             var coreSuggestions: [RapSuggestion] = []
 
             // Generate all sets concurrently so their network round-trips overlap.
