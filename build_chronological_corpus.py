@@ -86,9 +86,10 @@ COLS = ["order", "song_id", "song", "artist", "active_artist", "album", "section
 
 
 def write_corpus(out):
-    w = csv.DictWriter(open(OUT, "w", newline="", encoding="utf-8"), fieldnames=COLS)
-    w.writeheader()
-    w.writerows(out)
+    with open(OUT, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=COLS)
+        w.writeheader()
+        w.writerows(out)
     print(f"wrote {len(out)} rows -> {OUT} ({os.path.getsize(OUT)//1024} KB)")
 
 

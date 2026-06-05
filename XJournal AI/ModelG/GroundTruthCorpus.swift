@@ -46,26 +46,33 @@ final class GroundTruthCorpus {
     private(set) var isLoaded: Bool = false
     /// songId → that song's bars in chronological order (for couplets / context windows).
     private var bySong: [String: [CorpusBar]] = [:]
+    /// Serializes the one-time load so concurrent first-generation callers (the two suggestion sets
+    /// run in parallel) can't double-parse or race the writes to `bars`/`bySong`. Mirrors
+    /// FJCMUDICTStore's NSLock. Reads in retrieve/couplet are safe without locking: every caller goes
+    /// through loadIfNeeded (which takes the lock) first, and the corpus is immutable once loaded.
+    private let lock = NSLock()
 
     private static let chronologicalResource = "chronological_rap_bars_MODEL_G"
     private static let alphabetizedResource = "ground_truth_rap_bars_MODEL_G"
 
     // MARK: - Load
 
-    /// Load + parse the corpus from the app bundle. Safe to call repeatedly (idempotent).
+    /// Load + parse the corpus from the app bundle. Safe to call repeatedly + concurrently (idempotent).
+    /// The lock is held across the synchronous parse (no `await` inside), so concurrent callers
+    /// serialize: the first parses, the rest see `isLoaded` and return.
     func loadIfNeeded() async {
+        lock.lock()
+        defer { lock.unlock() }
         guard !isLoaded else { return }
 
         if let url = Bundle.main.url(forResource: Self.chronologicalResource, withExtension: "csv"),
            let data = try? Data(contentsOf: url) {
-            let parsed = await Task.detached(priority: .utility) { Self.parseChronological(data) }.value
-            finishLoad(parsed, label: "chronological")
+            finishLoad(Self.parseChronological(data), label: "chronological")
             return
         }
         if let url = Bundle.main.url(forResource: Self.alphabetizedResource, withExtension: "csv"),
            let data = try? Data(contentsOf: url) {
-            let parsed = await Task.detached(priority: .utility) { Self.parseAlphabetized(data) }.value
-            finishLoad(parsed, label: "alphabetized (fallback)")
+            finishLoad(Self.parseAlphabetized(data), label: "alphabetized (fallback)")
             return
         }
 

@@ -97,17 +97,19 @@ enum VerseLedgerScorer {
         // A9 — exposure discipline from explanation density (the "AI tell").
         let metrics = SignalIngest.shared.analyzeBehavior(text: verse)
         let a9 = max(0.0, min(100.0, 100.0 - metrics.explanationDensity * 150.0))
-        // A10 + A8 — compare the verse's two halves for register consistency + social-action movement.
-        let mid = max(1, lines.count / 2)
-        let firstHalf = lines.prefix(mid).joined(separator: ". ")
-        let secondHalf = lines.suffix(max(1, lines.count - mid)).joined(separator: ". ")
-        let axesA = computeModelGSignalAxes(from: firstHalf)
-        let axesB = computeModelGSignalAxes(from: secondHalf)
+        // A10 + A8 — compare the verse's two DISTINCT halves (needs 2+ lines; a single line would
+        // compare a half against itself and falsely score perfect consistency).
         var a10 = 50.0, a8 = 50.0
-        if let a = axesA, let b = axesB {
-            a10 = (a.authorityPosture == b.authorityPosture ? 60.0 : 0.0)
-                + (a.audienceScope == b.audienceScope ? 40.0 : 0.0)
-            a8 = (a.socialAction != b.socialAction) ? 100.0 : 50.0
+        if lines.count >= 2 {
+            let mid = lines.count / 2
+            let firstHalf = lines.prefix(mid).joined(separator: ". ")
+            let secondHalf = lines.suffix(lines.count - mid).joined(separator: ". ")
+            if let a = computeModelGSignalAxes(from: firstHalf),
+               let b = computeModelGSignalAxes(from: secondHalf) {
+                a10 = (a.authorityPosture == b.authorityPosture ? 60.0 : 0.0)
+                    + (a.audienceScope == b.audienceScope ? 40.0 : 0.0)
+                a8 = (a.socialAction != b.socialAction) ? 100.0 : 50.0
+            }
         }
         return 0.55 * a9 + 0.35 * a10 + 0.10 * a8
     }
@@ -160,7 +162,7 @@ enum VerseLedgerScorer {
         // match as substrings — equivalent to the old \bterm\b pass but far cheaper.
         let tokens = Set(text.split { !$0.isLetter && !$0.isNumber && $0 != "'" }.map(String.init))
         let distinct = terms.filter { term in
-            term.contains(" ") ? text.contains(term) : tokens.contains(term)
+            (term.contains(" ") || term.contains("-")) ? text.contains(term) : tokens.contains(term)
         }.count
         return min(100, Double(distinct) * 25)
     }
