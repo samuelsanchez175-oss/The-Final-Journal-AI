@@ -15,6 +15,16 @@ final class ModelGV4ScoringTests: XCTestCase {
         let some = ScoringEngine.signatureSimilarity(norm: "ice on my wrist drippin", exemplarNorms: ["ice on my neck drippin"])
         XCTAssertGreaterThan(some, none)
     }
+    func testSignatureShareScalesWithInspiration() {
+        // Default inspiration (0.4 = the default Originality 0.6) preserves the tuned baseline.
+        XCTAssertEqual(ScoringEngine.signatureShare(inspiration: 0.4), ScoringEngine.houseSignatureShare, accuracy: 0.001)
+        // More "inspired" → corpus mimicry weighs more in selection; novel → less. Monotonic.
+        XCTAssertGreaterThan(ScoringEngine.signatureShare(inspiration: 1.0), ScoringEngine.signatureShare(inspiration: 0.4))
+        XCTAssertLessThan(ScoringEngine.signatureShare(inspiration: 0.0), ScoringEngine.signatureShare(inspiration: 0.4))
+        // Clamped to a sane band (never zero-out quality, never dominate).
+        XCTAssertGreaterThanOrEqual(ScoringEngine.signatureShare(inspiration: 0.0), 0.05)
+        XCTAssertLessThanOrEqual(ScoringEngine.signatureShare(inspiration: 1.0), 0.6)
+    }
     func testUserFitCountsMustUseAndSyllableRange() {
         let fit = ScoringEngine.userFit(text: "rolls royce with the suicide doors", mustUse: ["rolls", "doors"], topicTerms: ["royce"], syllables: 9, syllableMin: 7, syllableMax: 11)
         XCTAssertGreaterThan(fit, 0.8)

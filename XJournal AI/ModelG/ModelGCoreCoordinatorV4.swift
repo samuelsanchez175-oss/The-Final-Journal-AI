@@ -164,7 +164,8 @@ class ModelGCoreCoordinatorV4 {
                     let base = scoringEngine.evaluateBar(bar, context: ctx)
                     let v4 = scoringEngine.v4Breakdown(base: base, text: bar, context: ctx,
                                                        exemplarNorms: v4ExemplarNorms,
-                                                       syllables: SyllableEngine.lineSyllableCount(bar))
+                                                       syllables: SyllableEngine.lineSyllableCount(bar),
+                                                       inspiration: inspiration)
                     total += v4.v4Total
                 }
                 let score = usable.isEmpty ? 0 : total / Double(usable.count)

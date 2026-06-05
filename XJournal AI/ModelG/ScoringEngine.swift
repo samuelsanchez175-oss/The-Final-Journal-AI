@@ -238,12 +238,22 @@ class ScoringEngine {
     static let v4HouseWeight: Double    = 0.45
     static let v4AutoWeight: Double     = 0.15
     static let v4UserWeight: Double     = 0.40
-    static let houseCraftShare: Double     = 0.80  // existing quality engine
-    static let houseSignatureShare: Double = 0.20  // vault mimicry (quality risk — keep low)
+    static let houseCraftShare: Double     = 0.80  // existing quality engine (baseline; = 1 - signatureShare)
+    static let houseSignatureShare: Double = 0.20  // vault mimicry baseline at the default Inspiration (0.4)
+    /// How fast the corpus-signature share grows with the Inspiration slider (1 - originality).
+    static let v4SignatureInspirationSlope: Double = 0.42
 
     /// House 45% + Auto 15% + User 40% → 0…100.
     static func v4Composite(houseFit: Double, autoFit: Double, userFit: Double) -> Double {
         100.0 * (v4HouseWeight * houseFit + v4AutoWeight * autoFit + v4UserWeight * userFit)
+    }
+
+    /// Corpus-signature share of houseFit, scaled by Inspiration (0 = novel … 1 = max inspired).
+    /// Pivots on the tuned `houseSignatureShare` baseline at the default Inspiration (0.4): more
+    /// inspired → vault mimicry weighs more in candidate selection; novel → less. Clamped [0.05, 0.6].
+    static func signatureShare(inspiration: Double) -> Double {
+        let s = houseSignatureShare + v4SignatureInspirationSlope * (inspiration - 0.4)
+        return min(0.6, max(0.05, s))
     }
 
     /// Jaccard similarity between `norm` and the best-matching exemplar norm. 0…1.
@@ -276,11 +286,12 @@ class ScoringEngine {
 
     /// Compute and attach all v4 composite fields to a base ScoreBreakdown.
     func v4Breakdown(base: ScoreBreakdown, text: String, context: GenerationContext,
-                     exemplarNorms: [String], syllables: Int) -> ScoreBreakdown {
+                     exemplarNorms: [String], syllables: Int, inspiration: Double = 0.4) -> ScoreBreakdown {
         var b = base
         let craft = base.totalScore / 100.0
         let sig = Self.signatureSimilarity(norm: text.lowercased(), exemplarNorms: exemplarNorms)
-        b.houseFit = Self.houseCraftShare * craft + Self.houseSignatureShare * sig
+        let sigShare = Self.signatureShare(inspiration: inspiration)   // scales with the Inspiration slider
+        b.houseFit = (1 - sigShare) * craft + sigShare * sig
         b.autoFit = min(max(base.intentAlignment, 0), 1)
         let dp = context.directedParams
         b.userFit = Self.userFit(text: text,
