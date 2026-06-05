@@ -126,10 +126,12 @@ enum VerseLedgerScorer {
     private static func jargonScore(_ lines: [String], terms: Set<String>) -> Double {
         guard !terms.isEmpty else { return 0 }
         let text = lines.joined(separator: " ").lowercased()
-        let range = NSRange(text.startIndex..., in: text)
-        let distinct = terms.filter { term in            // word-boundary, so 'bin' won't fire in 'cabin'
-            guard let re = try? NSRegularExpression(pattern: "\\b\(NSRegularExpression.escapedPattern(for: term))\\b") else { return false }
-            return re.firstMatch(in: text, range: range) != nil
+        // Tokenize once and match by membership instead of compiling ~500 regexes per call.
+        // Single-word terms match whole tokens (so 'bin' won't fire in 'cabin'); multi-word terms
+        // match as substrings — equivalent to the old \bterm\b pass but far cheaper.
+        let tokens = Set(text.split { !$0.isLetter && !$0.isNumber && $0 != "'" }.map(String.init))
+        let distinct = terms.filter { term in
+            term.contains(" ") ? text.contains(term) : tokens.contains(term)
         }.count
         return min(100, Double(distinct) * 25)
     }

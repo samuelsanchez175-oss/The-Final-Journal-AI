@@ -25,6 +25,54 @@ Run from the repo root:  python3 build_chronological_corpus.py
 import zipfile, re, csv, os
 import xml.etree.ElementTree as ET
 
+# ---------------------------------------------------------------------------
+# Python port of RapConceptLexicon.conceptKeywords + concepts(in:).
+# Matching rules (must stay faithful to the Swift source):
+#   - Single-word and non-hyphenated keys: match as whole tokens (split on
+#     non-letter/non-digit/non-hyphen characters, then set-membership check).
+#   - Multi-word OR hyphenated keys: substring match on the lowercased text.
+# ---------------------------------------------------------------------------
+CONCEPT_KEYWORDS = {
+    "cars": ["car", "cars", "lambo", "lamborghini", "huracan", "huracán", "urus", "bentley",
+             "bentayga", "maybach", "porsche", "rolls", "royce", "rolls-royce", "phantom",
+             "wraith", "cullinan", "ghost", "coupe", "foreign", "whip", "trackhawk", "suicide doors"],
+    "watches": ["watch", "ap", "audemars", "piguet", "cartier", "patek", "philippe",
+                "richard mille", "rolex", "roley", "plain jane", "hurricane ap"],
+    "fashion": ["gucci", "ysl", "saint laurent", "prada", "birkin", "hermes", "hermès",
+                "balenciaga", "amiri", "designer", "off-white", "vlone", "fendi", "dior", "louis"],
+    "jewelry": ["rocks", "stones", "frozen", "glistening", "cubans", "choker", "pendant", "vvs",
+                "diamonds", "diamond", "ice", "iced", "bust down", "bustdown", "bussdown", "chain"],
+    "substances": ["codeine", "lean", "xanax", "xans", "xanny", "percocet", "percs", "perc",
+                   "molly", "wock", "wockhardt", "pints", "drank", "actavis"],
+    "weapons": ["glock", "glizzy", "blicky", "draco", "chop", "drum", "stick", "tec", "beam",
+                "extendo", "switch"],
+    "luxury_travel": ["jet", "jets", "private jet", "netjets", "yacht", "mansion", "estate", "penthouse"],
+    "money": ["racks", "bands", "hunnids", "commas", "gwap", "guap", "bread", "bag", "bags",
+              "blue faces", "profit", "mil", "mills"],
+    "drip_identity": ["drip", "drippy", "wunna", "flex", "flexin", "flexing", "slime", "slatt", "gang"],
+}
+
+_TOKEN_RE = re.compile(r"[^a-z0-9\-]+")
+
+
+def concepts(text):
+    """Return a set of concept names matched in text (faithful port of RapConceptLexicon.concepts(in:))."""
+    lower = text.lower()
+    tokens = set(_TOKEN_RE.split(lower))
+    out = set()
+    for concept, keywords in CONCEPT_KEYWORDS.items():
+        for kw in keywords:
+            is_multi = " " in kw or "-" in kw
+            if is_multi:
+                if kw in lower:
+                    out.add(concept)
+                    break
+            else:
+                if kw in tokens:
+                    out.add(concept)
+                    break
+    return out
+
 NS = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 XLSX = "X Journal CSV  files /LLM DATA 2026/2026 LLM MS EXCEL SHEET .xlsx"
 TONECSV = "XJournal AI/ground_truth_rap_bars_MODEL_G.csv"
@@ -132,11 +180,12 @@ def main():
                         "rhyme_class": (td or {}).get("rhyme_class", ""),
                         "phonetic_ending": (td or {}).get("phonetic_ending", ""),
                         "syllable_count": (td or {}).get("syllable_count", ""),
-                        "authority": (td or {}).get("authority", "")})
+                        "authority": (td or {}).get("authority", ""),
+                        "concepts": "|".join(sorted(concepts(s)))})
 
     cols = ["order", "song_id", "song", "artist", "active_artist", "album", "section", "line_no",
             "text", "primary_tone", "secondary_tone", "rhyme_class", "phonetic_ending",
-            "syllable_count", "authority"]
+            "syllable_count", "authority", "concepts"]
     w = csv.DictWriter(open(OUT, "w", newline="", encoding="utf-8"), fieldnames=cols)
     w.writeheader()
     w.writerows(out)

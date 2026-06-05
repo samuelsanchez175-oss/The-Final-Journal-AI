@@ -26,7 +26,7 @@ class ModelGCoreCoordinatorV4 {
     private let debugLogger = DebugLogger()
 
     private let barCount = 16
-    private let verseCandidateCount = 2          // generate 2, keep the best (real selection)
+    private let verseCandidateCount = 3          // generate 3, keep the best (real selection)
     private let exemplarCount = 4                 // real bars retrieved to anchor cadence/rhyme
     private let verseAverageThreshold: Double = 82
     private let defaultSyllableTarget = 11

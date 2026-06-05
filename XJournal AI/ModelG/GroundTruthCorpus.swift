@@ -148,7 +148,9 @@ final class GroundTruthCorpus {
 
     /// Chronological corpus: header on line 0 with named columns (order, song_id, song, artist,
     /// active_artist, album, section, line_no, text, primary_tone, secondary_tone, rhyme_class,
-    /// phonetic_ending, syllable_count, authority).
+    /// phonetic_ending, syllable_count, authority, concepts).
+    /// The `concepts` column (pipe-delimited concept names) is baked in by build_chronological_corpus.py;
+    /// when present and non-empty it is used directly — skipping the per-bar RapConceptLexicon call.
     private nonisolated static func parseChronological(_ data: Data) -> [CorpusBar] {
         guard let csv = String(data: data, encoding: .utf8) else { return [] }
         let lines = csv.components(separatedBy: .newlines)
@@ -161,6 +163,7 @@ final class GroundTruthCorpus {
         let cText = col("text") ?? 8
         let cPrim = col("primary_tone"), cSec = col("secondary_tone"), cRC = col("rhyme_class")
         let cPhon = col("phonetic_ending"), cSyl = col("syllable_count"), cAuth = col("authority")
+        let cConcepts = col("concepts")
 
         var out: [CorpusBar] = []
         out.reserveCapacity(lines.count)
@@ -178,13 +181,20 @@ final class GroundTruthCorpus {
             let songId = g(cSongId) ?? (g(cSong)?.lowercased().filter { $0.isLetter || $0.isNumber } ?? "unknown")
             let lineNo = Int(g(cLineNo) ?? "") ?? 0
             let syll = Int(g(cSyl) ?? "") ?? estimateSyllables(text)
+            // Use pre-baked concept tags from the CSV when available; fall back to live tagging.
+            let barConcepts: Set<String>
+            if let raw = g(cConcepts) {
+                barConcepts = Set(raw.split(separator: "|").map { String($0) })
+            } else {
+                barConcepts = RapConceptLexicon.concepts(in: text)
+            }
             out.append(CorpusBar(
                 id: "\(songId).\(g(cOrder) ?? String(lineNo))",
                 text: text, artist: g(cArtist), song: g(cSong),
                 songId: songId, lineNo: lineNo, section: g(cSection), activeArtist: g(cActive),
                 syllableCount: syll, rhymeClass: g(cRC), phoneticEnding: g(cPhon),
                 primaryTone: g(cPrim)?.lowercased(), secondaryTone: g(cSec)?.lowercased(),
-                authorityClass: g(cAuth), concepts: RapConceptLexicon.concepts(in: text)
+                authorityClass: g(cAuth), concepts: barConcepts
             ))
         }
         return out
