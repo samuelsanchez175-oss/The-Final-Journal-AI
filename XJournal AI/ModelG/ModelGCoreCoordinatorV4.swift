@@ -74,8 +74,9 @@ class ModelGCoreCoordinatorV4 {
         let plan = (try? await llmService.generateVersePlan(context: baseContext)) ?? .empty
 
         // Step 1.5 — RAG: retrieve the real bars closest to this request (tone + cadence + rhyme).
+        let corpusTones = Self.corpusTones(intent: intent, themeContext: themeContext)
         let exemplars = await retrieveExemplars(
-            intent: intent, themeContext: themeContext, plan: plan,
+            tones: corpusTones, anchorRhymes: plan.anchorRhymes,
             syllableTarget: baseContext.syllableTarget
         )
 
@@ -115,6 +116,9 @@ class ModelGCoreCoordinatorV4 {
             )
         }
 
+        // Phase 3: feed the authenticity outcome back so retrieval adapts toward tones that score well.
+        CorpusFeedbackStore.shared.recordGeneration(tones: corpusTones, net: bestNet)
+
         var bars = Array(chosen.bars.prefix(barCount))
         while bars.count < barCount {
             bars.append("Continue the flow — \(intent.theme.prefix(40))...")
@@ -153,23 +157,24 @@ class ModelGCoreCoordinatorV4 {
 
     /// RAG retrieval: map the request's tone(s) + the plan's anchor rhymes onto the corpus and
     /// pull the closest real bars so the LLM has concrete cadence/rhyme anchors (never to copy).
-    private func retrieveExemplars(
-        intent: GenerationIntent, themeContext: ThemeContext?, plan: VersePlan, syllableTarget: Int
-    ) async -> [String] {
+    private func retrieveExemplars(tones: [String], anchorRhymes: [String], syllableTarget: Int) async -> [String] {
         await GroundTruthCorpus.shared.loadIfNeeded()
-
-        var tones: [String] = []
-        if let t = themeContext?.emotionalTone { tones.append(t) }
-        tones.append(intent.tone.rawValue)
-        let mappedTones = tones.flatMap { Self.mapToCorpusTones($0) }
-
         let retrieved = GroundTruthCorpus.shared.retrieve(
             syllableTarget: syllableTarget,
-            tones: mappedTones,
-            rhymeClasses: plan.anchorRhymes,
+            tones: tones,
+            rhymeClasses: anchorRhymes,
             limit: exemplarCount
         )
         return retrieved.map { $0.text }
+    }
+
+    /// The request's tone(s) mapped onto the corpus's tone vocabulary — used both to retrieve
+    /// exemplars and to attribute the authenticity outcome back to those tones (Phase 3).
+    private static func corpusTones(intent: GenerationIntent, themeContext: ThemeContext?) -> [String] {
+        var tones: [String] = []
+        if let t = themeContext?.emotionalTone { tones.append(t) }
+        tones.append(intent.tone.rawValue)
+        return tones.flatMap { mapToCorpusTones($0) }
     }
 
     /// Map free-form tone words onto the corpus's dominant tone labels

@@ -92,6 +92,8 @@ final class GroundTruthCorpus {
 
         let toneSet = Set(tones.map { $0.lowercased() })
         let rhymeSet = Set(rhymeClasses.map { $0.lowercased() })
+        // Phase 3: learned per-tone reward (from authenticity NET + accept/reject). Read once, not per bar.
+        let toneRewards = CorpusFeedbackStore.shared.rewardsSnapshot()
 
         func score(_ b: CorpusBar) -> Double {
             var s = 0.0
@@ -101,6 +103,7 @@ final class GroundTruthCorpus {
             if syllableTarget > 0 {
                 s += max(0.0, 3.0 - Double(abs(b.syllableCount - syllableTarget)))
             }
+            if let p = b.primaryTone, let r = toneRewards[p] { s += r * CorpusFeedbackStore.biasScale }
             return s
         }
 
