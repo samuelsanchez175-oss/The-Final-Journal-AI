@@ -66,13 +66,22 @@ class ModelGCoreCoordinatorV4 {
         )
 
         // Step 1 — plan the verse (1 call).
-        let plan = (try? await llmService.generateVersePlan(context: baseContext)) ?? .empty
+        let plan: VersePlan
+        do {
+            plan = try await llmService.generateVersePlan(context: baseContext)
+        } catch {
+            #if DEBUG
+            print("⚠️ [ModelG v4] generateVersePlan failed: \(error) — using empty plan")
+            #endif
+            plan = .empty
+        }
 
         // Step 1b — corpus retrieval (RAG): fetch exemplar bars + brand vocab.
         var v4Exemplars: [String] = []
         var v4ExemplarNorms: [String] = []
         var v4Vocab: [String] = []
-        if let corpusStore = try? ModelGCorpusStore() {
+        do {
+            let corpusStore = try ModelGCorpusStore()
             ModelGEmbeddingIndex.shared.buildIfNeeded(bars: corpusStore.corpus.bars)
             let retrieved = ModelGCorpusRetriever(store: corpusStore, embeddingIndex: ModelGEmbeddingIndex.shared).retrieve(
                 theme: themeContext?.themeName,
@@ -82,7 +91,14 @@ class ModelGCoreCoordinatorV4 {
             v4Exemplars = retrieved.exemplars.map(\.text)
             v4ExemplarNorms = retrieved.exemplars.map(\.norm)
             v4Vocab = retrieved.vocab
+        } catch {
+            #if DEBUG
+            print("⚠️ [ModelG v4] corpus load/retrieve failed: \(error) — proceeding with empty exemplars (== v3 prompt)")
+            #endif
         }
+        #if DEBUG
+        print("🔎 [ModelG v4] exemplars=\(v4Exemplars.count) vocab=\(v4Vocab.count) embeddingsReady=\(ModelGEmbeddingIndex.shared.isReady)")
+        #endif
 
         // Step 2 — generate full-verse candidates (best-of-N) and pick the best.
         // Effort = how many candidates; Creativity = their temperature spread; Quality bar =
@@ -97,10 +113,17 @@ class ModelGCoreCoordinatorV4 {
                 for i in 0..<nCandidates {
                     let temp = temps[i % temps.count]
                     group.addTask {
-                        try? await self.llmService.generateFullVerse(
-                            plan: plan, arcShape: arcShape, context: baseContext, temperature: temp,
-                            corpusExemplars: v4Exemplars, corpusVocab: v4Vocab
-                        )
+                        do {
+                            return try await self.llmService.generateFullVerse(
+                                plan: plan, arcShape: arcShape, context: baseContext, temperature: temp,
+                                corpusExemplars: v4Exemplars, corpusVocab: v4Vocab
+                            )
+                        } catch {
+                            #if DEBUG
+                            print("⚠️ [ModelG v4] generateFullVerse candidate (temp \(temp)) failed: \(error)")
+                            #endif
+                            return nil
+                        }
                     }
                 }
                 var out: [(hook: String, bars: [String])] = []
@@ -146,7 +169,13 @@ class ModelGCoreCoordinatorV4 {
             consider(await generateRound())
         }
 
+        #if DEBUG
+        print("🔎 [ModelG v4] bestScore=\(bestScore) chosen=\(best != nil)")
+        #endif
         guard let chosen = best else {
+            #if DEBUG
+            print("❌ [ModelG v4] no usable candidate — returning fallback bars (this is what triggers the legacy fallthrough → 'API request failed')")
+            #endif
             return GeneratedRecord(
                 hook: "", bars: ["Fallback bar — continue the flow."],
                 modelGMomentBarIndices: [], averageBarScore: 0

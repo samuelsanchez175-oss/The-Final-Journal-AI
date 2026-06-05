@@ -125,6 +125,10 @@ class ModelGLLMService {
             throw ModelGLLMError.rateLimitExceeded(retryAfterSeconds: headers["retry-after"].flatMap { Int($0) })
         }
         guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
+            #if DEBUG
+            let status = (response as? HTTPURLResponse)?.statusCode ?? -1
+            print("❌ [ModelG OpenAI] HTTP \(status): \(String(data: data, encoding: .utf8)?.prefix(700) ?? "<no body>")")
+            #endif
             throw ModelGLLMError.requestFailed
         }
         let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
@@ -157,6 +161,10 @@ class ModelGLLMService {
             throw ModelGLLMError.rateLimitExceeded(retryAfterSeconds: nil)
         }
         guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
+            #if DEBUG
+            let status = (response as? HTTPURLResponse)?.statusCode ?? -1
+            print("❌ [ModelG Gemini] HTTP \(status): \(String(data: data, encoding: .utf8)?.prefix(700) ?? "<no body>")")
+            #endif
             throw ModelGLLMError.requestFailed
         }
         let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
@@ -190,6 +198,10 @@ class ModelGLLMService {
             throw ModelGLLMError.rateLimitExceeded(retryAfterSeconds: nil)
         }
         guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
+            #if DEBUG
+            let status = (response as? HTTPURLResponse)?.statusCode ?? -1
+            print("❌ [ModelG Anthropic] HTTP \(status): \(String(data: data, encoding: .utf8)?.prefix(700) ?? "<no body>")")
+            #endif
             throw ModelGLLMError.requestFailed
         }
         let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
