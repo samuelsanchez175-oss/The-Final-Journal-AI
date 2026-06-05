@@ -31,6 +31,7 @@ struct CorpusBar: Identifiable, Hashable {
     let primaryTone: String?    // e.g. "luxurious" (lowercased)
     let secondaryTone: String?  // (lowercased)
     let authorityClass: String?
+    let concepts: Set<String>   // theme/meaning tags (RapConceptLexicon): cars, watches, money…
 
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
     static func == (lhs: CorpusBar, rhs: CorpusBar) -> Bool { lhs.id == rhs.id }
@@ -92,11 +93,13 @@ final class GroundTruthCorpus {
     func retrieve(syllableTarget: Int,
                   tones: [String] = [],
                   rhymeClasses: [String] = [],
+                  concepts: [String] = [],
                   limit: Int = 4) -> [CorpusBar] {
         guard !bars.isEmpty, limit > 0 else { return [] }
 
         let toneSet = Set(tones.map { $0.lowercased() })
         let rhymeSet = Set(rhymeClasses.map { $0.lowercased() })
+        let conceptSet = Set(concepts)
         // Phase 3: learned per-tone reward (from authenticity NET + accept/reject). Read once, not per bar.
         let toneRewards = CorpusFeedbackStore.shared.rewardsSnapshot()
 
@@ -108,6 +111,8 @@ final class GroundTruthCorpus {
             if syllableTarget > 0 {
                 s += max(0.0, 3.0 - Double(abs(b.syllableCount - syllableTarget)))
             }
+            // Phase 5: reward bars that share the entry's concepts (theme/meaning match).
+            if !conceptSet.isEmpty { s += Double(b.concepts.intersection(conceptSet).count) * 2.5 }
             if let p = b.primaryTone, let r = toneRewards[p] { s += r * CorpusFeedbackStore.biasScale }
             return s
         }
@@ -179,7 +184,7 @@ final class GroundTruthCorpus {
                 songId: songId, lineNo: lineNo, section: g(cSection), activeArtist: g(cActive),
                 syllableCount: syll, rhymeClass: g(cRC), phoneticEnding: g(cPhon),
                 primaryTone: g(cPrim)?.lowercased(), secondaryTone: g(cSec)?.lowercased(),
-                authorityClass: g(cAuth)
+                authorityClass: g(cAuth), concepts: RapConceptLexicon.concepts(in: text)
             ))
         }
         return out
@@ -229,7 +234,7 @@ final class GroundTruthCorpus {
                 songId: songId, lineNo: lineNo, section: nil, activeArtist: g(cArtist),
                 syllableCount: syll, rhymeClass: g(cRC), phoneticEnding: g(cPhon),
                 primaryTone: g(cPrim)?.lowercased(), secondaryTone: g(cSec)?.lowercased(),
-                authorityClass: g(cAuth)
+                authorityClass: g(cAuth), concepts: RapConceptLexicon.concepts(in: text)
             ))
         }
         return out

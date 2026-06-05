@@ -73,10 +73,11 @@ class ModelGCoreCoordinatorV4 {
         // Step 1 — plan the verse (1 call).
         let plan = (try? await llmService.generateVersePlan(context: baseContext)) ?? .empty
 
-        // Step 1.5 — RAG: retrieve the real bars closest to this request (tone + cadence + rhyme).
+        // Step 1.5 — RAG: retrieve the real bars closest to this request (tone + cadence + rhyme + concept).
         let corpusTones = Self.corpusTones(intent: intent, themeContext: themeContext)
+        let queryConcepts = Array(RapConceptLexicon.concepts(in: input))
         let exemplars = await retrieveExemplars(
-            tones: corpusTones, anchorRhymes: plan.anchorRhymes,
+            tones: corpusTones, anchorRhymes: plan.anchorRhymes, concepts: queryConcepts,
             syllableTarget: baseContext.syllableTarget
         )
 
@@ -157,12 +158,13 @@ class ModelGCoreCoordinatorV4 {
 
     /// RAG retrieval: map the request's tone(s) + the plan's anchor rhymes onto the corpus and
     /// pull the closest real bars so the LLM has concrete cadence/rhyme anchors (never to copy).
-    private func retrieveExemplars(tones: [String], anchorRhymes: [String], syllableTarget: Int) async -> [String] {
+    private func retrieveExemplars(tones: [String], anchorRhymes: [String], concepts: [String], syllableTarget: Int) async -> [String] {
         await GroundTruthCorpus.shared.loadIfNeeded()
         let retrieved = GroundTruthCorpus.shared.retrieve(
             syllableTarget: syllableTarget,
             tones: tones,
             rhymeClasses: anchorRhymes,
+            concepts: concepts,
             limit: exemplarCount
         )
         // Hand the LLM real consecutive couplets (chronological corpus), not isolated lines.
