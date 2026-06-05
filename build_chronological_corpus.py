@@ -76,7 +76,20 @@ def concepts(text):
 NS = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 XLSX = "X Journal CSV  files /LLM DATA 2026/2026 LLM MS EXCEL SHEET .xlsx"
 TONECSV = "XJournal AI/ground_truth_rap_bars_MODEL_G.csv"
+# Authoritative chronological corpus exported from the LLM builder vault (preferred when present).
+SRC = "X Journal CSV  files /LLM DATA 2026/chronological_lyrics_source_of_truth.csv"
 OUT = "XJournal AI/chronological_rap_bars_MODEL_G.csv"
+
+COLS = ["order", "song_id", "song", "artist", "active_artist", "album", "section", "line_no",
+        "text", "primary_tone", "secondary_tone", "rhyme_class", "phonetic_ending",
+        "syllable_count", "authority", "concepts"]
+
+
+def write_corpus(out):
+    w = csv.DictWriter(open(OUT, "w", newline="", encoding="utf-8"), fieldnames=COLS)
+    w.writeheader()
+    w.writerows(out)
+    print(f"wrote {len(out)} rows -> {OUT} ({os.path.getsize(OUT)//1024} KB)")
 
 
 def norm(t):
@@ -140,7 +153,7 @@ def load_tone(path):
     return tone
 
 
-def main():
+def build_from_excel():
     rows = parse_xlsx(XLSX)
     tone = load_tone(TONECSV)
     hdr_re = re.compile(r"^\[(.+)\]$")
@@ -183,15 +196,53 @@ def main():
                         "authority": (td or {}).get("authority", ""),
                         "concepts": "|".join(sorted(concepts(s)))})
 
-    cols = ["order", "song_id", "song", "artist", "active_artist", "album", "section", "line_no",
-            "text", "primary_tone", "secondary_tone", "rhyme_class", "phonetic_ending",
-            "syllable_count", "authority", "concepts"]
-    w = csv.DictWriter(open(OUT, "w", newline="", encoding="utf-8"), fieldnames=cols)
-    w.writeheader()
-    w.writerows(out)
+    print(f"[excel] songs: {songs}  lines: {total}  tone-matched: {matched} ({100*matched/max(1,total):.1f}%)")
+    write_corpus(out)
 
-    print(f"songs: {songs}  lines: {total}  tone-matched: {matched} ({100*matched/max(1,total):.1f}%)")
-    print(f"wrote {len(out)} rows -> {OUT} ({os.path.getsize(OUT)//1024} KB)")
+
+def build_from_source(src):
+    """Preferred: normalize the vault's authoritative chronological source-of-truth into the app
+    schema, tagging concepts and merging phonetic_ending + authority from the alphabetized CSV
+    (the source-of-truth already carries authoritative tone / rhyme_class / syllable_count)."""
+    extra = load_tone(TONECSV)   # source-of-truth lacks phonetic_ending + AuthorityClass
+    rows = list(csv.reader(open(src, encoding="utf-8", errors="replace")))
+    ix = {c.strip().lower(): i for i, c in enumerate(rows[0])}
+
+    def g(r, name):
+        i = ix.get(name)
+        return r[i].strip() if i is not None and i < len(r) else ""
+
+    out, songs, toned = [], set(), 0
+    for r in rows[1:]:
+        text = g(r, "text")
+        if not text:
+            continue
+        song = g(r, "song")
+        songs.add(song)
+        ex = extra.get(norm(text), {})
+        if g(r, "primary_tone"):
+            toned += 1
+        out.append({"order": len(out) + 1, "song_id": norm(song).replace(" ", ""),
+                    "song": song, "artist": g(r, "artist"),
+                    "active_artist": g(r, "active_artist") or g(r, "artist"),
+                    "album": g(r, "album"), "section": g(r, "section"),
+                    "line_no": g(r, "line_index"), "text": text,
+                    "primary_tone": g(r, "primary_tone"), "secondary_tone": g(r, "secondary_tone"),
+                    "rhyme_class": g(r, "rhyme_class"),
+                    "phonetic_ending": ex.get("phonetic_ending", ""),
+                    "syllable_count": g(r, "syllable_count"),
+                    "authority": ex.get("authority", ""),
+                    "concepts": "|".join(sorted(concepts(text)))})
+    print(f"[source-of-truth] songs: {len(songs)}  lines: {len(out)}  "
+          f"tone: {toned} ({100*toned/max(1,len(out)):.1f}%)")
+    write_corpus(out)
+
+
+def main():
+    if os.path.exists(SRC):
+        build_from_source(SRC)
+    else:
+        build_from_excel()
 
 
 if __name__ == "__main__":
