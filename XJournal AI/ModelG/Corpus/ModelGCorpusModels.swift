@@ -22,6 +22,7 @@ struct CorpusBar: Codable {
     let tags: [String]
     let bpm: Int?
     let scale: String?
+    let tier: String?          // "signature" for hand/auto-nominated standout bars; nil otherwise
     let concepts: [String]
     let context: [String]
 }

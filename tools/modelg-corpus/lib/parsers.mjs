@@ -53,6 +53,7 @@ export function parseBar(fileName, raw) {
     tags: asArray(data.tags),
     bpm: typeof data.bpm === 'number' ? data.bpm : null,
     scale: data.scale ?? null,
+    tier: data.tier ?? null,
     concepts, context,
   };
 }

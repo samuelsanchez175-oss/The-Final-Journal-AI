@@ -30,7 +30,8 @@ final class ModelGCorpusStoreTests: XCTestCase {
 
     func testRealBundledCorpusLoads() throws {
         let store = try ModelGCorpusStore()
-        XCTAssertGreaterThan(store.barCount, 12_000)
+        // Deduped corpus (same-song variants archived in the vault); thousands of unique bars.
+        XCTAssertGreaterThan(store.barCount, 5_000)
         XCTAssertFalse(store.bars(matching: "diamond").isEmpty)
     }
 }

@@ -12,7 +12,7 @@ final class ModelGEmbeddingTests: XCTestCase {
 
     func testRankByVectorsOrdersByCosine() {
         func bar(_ id: String) -> CorpusBar {
-            CorpusBar(id: id, text: id, adlib: nil, norm: id, artist: nil, activeArtist: nil, song: nil, album: nil, section: nil, themes: [], tags: [], bpm: nil, scale: nil, concepts: [], context: [])
+            CorpusBar(id: id, text: id, adlib: nil, norm: id, artist: nil, activeArtist: nil, song: nil, album: nil, section: nil, themes: [], tags: [], bpm: nil, scale: nil, tier: nil, concepts: [], context: [])
         }
         let bars = [bar("a"), bar("b"), bar("c")]
         let vectors: [String: [Float]] = ["a": [1, 0], "b": [0.9, 0.1], "c": [0, 1]]
