@@ -29,6 +29,10 @@ Carthage/Build/
 eval/grading_log.csv
 eval/captures/e*.txt
 
+# Python bytecode cache (regenerated on import)
+__pycache__/
+*.pyc
+
 # ── Triage 2026-05-31 (Momentum reskin merge prep) ───────────────────────────
 # NOTE: this only ignores NOISE. The ~60 untracked .swift source files + data
 # CSVs + FlowDNA/ + backend/ are NOT ignored here on purpose — they must be
