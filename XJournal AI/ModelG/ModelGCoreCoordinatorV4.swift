@@ -125,7 +125,7 @@ class ModelGCoreCoordinatorV4 {
         let temps = Self.candidateTemps(count: nCandidates, creativity: ModelGEnvironment.creativity)
         let qualityTarget = ModelGEnvironment.qualityBar * 95.0
 
-        func generateRound() async -> [(hook: String, bars: [String])] {
+        func generateRound(useCorpus: Bool) async -> [(hook: String, bars: [String])] {
             await withTaskGroup(of: (hook: String, bars: [String])?.self) { group in
                 for i in 0..<nCandidates {
                     let temp = temps[i % temps.count]
@@ -133,11 +133,13 @@ class ModelGCoreCoordinatorV4 {
                         do {
                             return try await self.llmService.generateFullVerse(
                                 plan: plan, arcShape: arcShape, context: baseContext, temperature: temp,
-                                corpusExemplars: v4Exemplars, corpusVocab: v4Vocab, inspiration: inspiration
+                                corpusExemplars: useCorpus ? v4Exemplars : [],
+                                corpusVocab: useCorpus ? v4Vocab : [],
+                                inspiration: inspiration
                             )
                         } catch {
                             #if DEBUG
-                            print("⚠️ [ModelG v4] generateFullVerse candidate (temp \(temp)) failed: \(error)")
+                            print("⚠️ [ModelG v4] generateFullVerse candidate (temp \(temp), corpus=\(useCorpus)) failed: \(error)")
                             #endif
                             return nil
                         }
@@ -183,10 +185,21 @@ class ModelGCoreCoordinatorV4 {
             }
         }
 
-        consider(await generateRound())
+        consider(await generateRound(useCorpus: true))
         // Quality bar: one extra round if the best is below target (off when the bar == 0).
         if qualityTarget > 0 && bestScore < qualityTarget {
-            consider(await generateRound())
+            consider(await generateRound(useCorpus: true))
+        }
+        // ROBUSTNESS (ship-blocker fix): if corpus-injected generation produced no usable verse —
+        // e.g. a provider safety-blocked the explicit reference lyrics, or returned non-JSON — retry
+        // WITHOUT the corpus, which is the exact v3 prompt that already works. This guarantees v4 is
+        // never worse than v3 and never silently falls through to the legacy path's "API request
+        // failed" toast for any corpus-specific reason. (A genuine outage still fails, like v3 would.)
+        if best == nil {
+            #if DEBUG
+            print("⚠️ [ModelG v4] no usable candidate WITH corpus — retrying WITHOUT corpus (v3-equivalent prompt)")
+            #endif
+            consider(await generateRound(useCorpus: false))
         }
 
         #if DEBUG
@@ -194,7 +207,7 @@ class ModelGCoreCoordinatorV4 {
         #endif
         guard let chosen = best else {
             #if DEBUG
-            print("❌ [ModelG v4] no usable candidate — returning fallback bars (this is what triggers the legacy fallthrough → 'API request failed')")
+            print("❌ [ModelG v4] no usable candidate even without corpus — genuine provider/network failure (v3 would fail too)")
             #endif
             return GeneratedRecord(
                 hook: "", bars: ["Fallback bar — continue the flow."],

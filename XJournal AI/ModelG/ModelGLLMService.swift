@@ -148,7 +148,17 @@ class ModelGLLMService {
         let body: [String: Any] = [
             "system_instruction": ["parts": [["text": system]]],
             "contents": [["role": "user", "parts": [["text": user]]]],
-            "generationConfig": generationConfig
+            "generationConfig": generationConfig,
+            // Rap lyrics — including the user's OWN reference bars injected by v4 — routinely trip
+            // Gemini's default filters, which blocks the response (empty candidates) and makes v4
+            // fail where v3's cleaner prompt passed. The user supplies the content; don't let safety
+            // filters gut a creative-writing tool. (OpenAI/Anthropic have no equivalent per-request knob.)
+            "safetySettings": [
+                ["category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"],
+                ["category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"],
+                ["category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"],
+                ["category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"]
+            ]
         ]
         let url = URL(string: "https://generativelanguage.googleapis.com/v1beta/models/\(geminiModel):generateContent?key=\(key)")!
         var request = URLRequest(url: url)
