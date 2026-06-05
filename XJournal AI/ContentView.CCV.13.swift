@@ -349,6 +349,9 @@ struct NoteEditorView: View {
     @AppStorage(GhostMode.storageKey) private var ghostModeRaw: String = GhostMode.off.rawValue
     @State private var ghostHint: GhostHint?
     @State private var ghostTask: Task<Void, Never>?
+    @State private var ghostPool: [String] = []        // current rhyme group (cached per family)
+    @State private var ghostRhymeKey: String?          // family of ghostPool; re-scan when it changes
+    @State private var ghostRotation = 0               // advances each line → fresh options from the group
     @State private var isGeneratingThemeExpansion: Bool = false
     @State private var selectedArtistForStyleTransfer: String = ""
     
@@ -1231,12 +1234,21 @@ struct NoteEditorView: View {
     @MainActor private func refreshGhost(lastLine: String?) async {
         guard let line = lastLine, !line.trimmingCharacters(in: .whitespaces).isEmpty else { ghostHint = nil; return }
         let mode = GhostMode(rawValue: ghostModeRaw) ?? .off
-        let store = ModelGCorpusStore.shared   // cached singleton — avoid re-decoding 8.7MB JSON per newline
-        let engine = GhostSuggestionEngine(retriever: store.map { ModelGCorpusRetriever(store: $0) })
         if mode == .live, KeychainHelper.shared.getAPIKey() != nil {
             if let live = try? await liveGhostHint(lastLine: line), !live.candidates.isEmpty { ghostHint = live; return }
         }
-        ghostHint = engine.freeHint(forLastLine: line)   // free, or live-fallback
+        // Free: keep one rhyme pool per rhyme family and advance a rotation each line, so each
+        // Enter/indent surfaces FRESH options from the group without re-scanning CMUDICT (responsive).
+        let key = GhostSuggestionEngine.rhymeKey(forLastLine: line)
+        if key == ghostRhymeKey, !ghostPool.isEmpty {
+            ghostRotation += 1
+        } else {
+            ghostPool = GhostSuggestionEngine.freeRhymePool(forLastLine: line)
+            ghostRhymeKey = key
+            ghostRotation = 0
+        }
+        let options = GhostSuggestionEngine.window(ghostPool, rotation: ghostRotation)
+        ghostHint = options.isEmpty ? nil : GhostHint(candidates: options, tail: nil)
     }
 
     private func liveGhostHint(lastLine: String) async throws -> GhostHint? {

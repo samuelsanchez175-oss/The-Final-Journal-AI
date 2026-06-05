@@ -127,4 +127,23 @@ final class GhostSuggestionEngineTests: XCTestCase {
         XCTAssertEqual(GhostSuggestionEngine.justCompletedLine(in: "line one\nline two\n"), "line two")
         XCTAssertNil(GhostSuggestionEngine.justCompletedLine(in: "\n\n"))
     }
+
+    // MARK: - Rotating rhyme pool (fresh options on each new line)
+
+    func testWindowPagesThroughPoolWithWrap() {
+        let pool = ["a", "b", "c", "d", "e"]
+        XCTAssertEqual(GhostSuggestionEngine.window(pool, rotation: 0), ["a", "b", "c"])
+        XCTAssertEqual(GhostSuggestionEngine.window(pool, rotation: 1), ["d", "e", "a"]) // fresh set; wraps
+        XCTAssertEqual(GhostSuggestionEngine.window(pool, rotation: 2), ["b", "c", "d"])
+        XCTAssertEqual(GhostSuggestionEngine.window([], rotation: 3), [])
+        XCTAssertEqual(GhostSuggestionEngine.window(["x"], rotation: 5), ["x"])
+    }
+
+    func testRhymeKeyGroupsRhymingLinesAndSeparatesOthers() {
+        guard let star = GhostSuggestionEngine.rhymeKey(forLastLine: "be a shooting star") else { return } // needs CMUDICT
+        XCTAssertEqual(star, GhostSuggestionEngine.rhymeKey(forLastLine: "got me a car"),
+                       "star & car share a rhyme family → same key (pool reused, no re-scan)")
+        XCTAssertNotEqual(star, GhostSuggestionEngine.rhymeKey(forLastLine: "flesh and bone"),
+                          "bone is a different family → key changes (pool re-scanned)")
+    }
 }

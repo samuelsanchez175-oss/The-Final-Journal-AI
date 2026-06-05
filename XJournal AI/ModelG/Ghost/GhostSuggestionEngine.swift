@@ -99,13 +99,40 @@ struct GhostSuggestionEngine {
 
     // MARK: - Private helpers
 
-    /// CMUDICT-backed rhyme lookup for the live engine. Perfect-first + deterministic via `rankedRhymes`.
-    /// Caps at 12 so `freeHint`'s on-brand promotion runs a bounded number of corpus lookups.
-    private static func rhymeCandidates(for word: String) -> [String] {
+    /// CMUDICT-backed rhyme lookup. Perfect-first + deterministic via `rankedRhymes`.
+    private static func rhymeCandidates(for word: String, limit: Int = 12) -> [String] {
         let key = word.lowercased()
         let dict = getGlobalCMUDICTStore()
         guard let target = dict[key] else { return [] }
-        return rankedRhymes(target: target, lexicon: dict, excluding: key, limit: 12)
+        return rankedRhymes(target: target, lexicon: dict, excluding: key, limit: limit)
+    }
+
+    // MARK: - Live ghost: pooled + rotating rhymes (responsive, fresh options each line)
+
+    /// Ordered rhyme pool for a line's end word (perfect rhymes first, then slant, alphabetical) —
+    /// larger than the displayed window so the live path can rotate through fresh options.
+    static func freeRhymePool(forLastLine line: String, limit: Int = 30) -> [String] {
+        guard let end = endWord(of: line) else { return [] }
+        return rhymeCandidates(for: end, limit: limit)
+    }
+
+    /// Stable key for the rhyme FAMILY of a line's end word. The live path keeps the SAME pool while
+    /// this key is unchanged (a run of rhyming lines) — no CMUDICT re-scan, so it stays responsive —
+    /// and re-scans only when the rhyme group changes.
+    static func rhymeKey(forLastLine line: String) -> String? {
+        guard let end = endWord(of: line),
+              let phonemes = getGlobalCMUDICTStore()[end],
+              let sig = phoneticSignature(from: phonemes) else { return nil }
+        return sig.stressedVowel + "|" + sig.coda.joined(separator: " ")
+    }
+
+    /// `count` options from `pool`, advanced by `rotation` (pages by `count`, wraps) — so each
+    /// Enter/indent surfaces fresh words from the same rhyme group.
+    static func window(_ pool: [String], rotation: Int, count: Int = 3) -> [String] {
+        guard !pool.isEmpty else { return [] }
+        let n = pool.count
+        let start = ((rotation * count) % n + n) % n
+        return (0..<min(count, n)).map { pool[(start + $0) % n] }
     }
 
     private struct PhoneticSig {
