@@ -63,7 +63,7 @@ final class GroundTruthCorpus {
 
         do {
             let data = try Data(contentsOf: url)
-            let parsed = try await Task.detached(priority: .utility) { Self.parse(data) }.value
+            let parsed = await Task.detached(priority: .utility) { Self.parse(data) }.value
             bars = parsed
             isLoaded = true
             print("✅ GroundTruthCorpus: loaded \(parsed.count) real ground-truth bars for retrieval.")
