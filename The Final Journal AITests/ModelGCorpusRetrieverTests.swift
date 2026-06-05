@@ -51,4 +51,28 @@ final class ModelGCorpusRetrieverTests: XCTestCase {
         let out = r.retrieve(draft: "zxqwvun", k: 1)
         XCTAssertTrue(out.exemplars.isEmpty, "no tone + no match must NOT force-ground (Ghost relies on this)")
     }
+
+    // MARK: - Integration against the REAL bundled corpus (the actual vault data the app ships)
+
+    /// Proves the v4 retrieval path returns relevant, on-tone, real lyric exemplars from the
+    /// shipped 6,376-bar corpus — not just the 2-bar fixture.
+    func testRealCorpusReturnsOnToneExemplars() throws {
+        guard let store = ModelGCorpusStore.shared else { throw XCTSkip("bundled corpus unavailable in test host") }
+        let r = ModelGCorpusRetriever(store: store)
+        let out = r.retrieve(tones: ["luxurious"], topics: ["wealth", "money"],
+                             draft: "diamonds on my wrist, foreign car in the lot", k: 8)
+        XCTAssertFalse(out.exemplars.isEmpty, "luxurious draft should yield exemplars from the real corpus")
+        XCTAssertLessThanOrEqual(out.exemplars.count, 8)
+        XCTAssertTrue(out.exemplars.allSatisfy { !$0.text.isEmpty && !$0.norm.isEmpty }, "exemplars are real lyrics")
+        XCTAssertTrue(out.exemplars.contains { $0.themes.contains("luxurious") }, "at least one exemplar carries the requested tone")
+    }
+
+    /// On the real corpus, a known tone always grounds retrieval (the v4 floor) even when the
+    /// draft/topics match nothing — so v4 never silently degrades to an empty prompt.
+    func testRealCorpusToneFloorNeverEmpty() throws {
+        guard let store = ModelGCorpusStore.shared else { throw XCTSkip("bundled corpus unavailable in test host") }
+        let r = ModelGCorpusRetriever(store: store)
+        let out = r.retrieve(tones: ["confident"], topics: [], draft: "zzqxv mxqzpf unmatchable", k: 5)
+        XCTAssertFalse(out.exemplars.isEmpty, "a known tone must always ground retrieval on the real corpus")
+    }
 }
