@@ -15,6 +15,13 @@ final class ModelGV4ScoringTests: XCTestCase {
         let some = ScoringEngine.signatureSimilarity(norm: "ice on my wrist drippin", exemplarNorms: ["ice on my neck drippin"])
         XCTAssertGreaterThan(some, none)
     }
+    func testSignatureCosineUsesNearestExemplarVectorClampedNonNegative() {
+        // Semantic path: max cosine to the exemplar vectors, clamped ≥ 0; 0 when no vectors.
+        let s = ScoringEngine.signatureSimilarity(candidateVector: [1, 0], exemplarVectors: [[0, 1], [0.8, 0.2]])
+        XCTAssertEqual(s, Double(VectorMath.cosine([1, 0], [0.8, 0.2])), accuracy: 0.001)
+        XCTAssertEqual(ScoringEngine.signatureSimilarity(candidateVector: [1, 0], exemplarVectors: []), 0)
+        XCTAssertGreaterThanOrEqual(ScoringEngine.signatureSimilarity(candidateVector: [-1, 0], exemplarVectors: [[1, 0]]), 0)
+    }
     func testSignatureShareScalesWithInspiration() {
         // Default inspiration (0.4 = the default Originality 0.6) preserves the tuned baseline.
         XCTAssertEqual(ScoringEngine.signatureShare(inspiration: 0.4), ScoringEngine.houseSignatureShare, accuracy: 0.001)

@@ -112,6 +112,11 @@ class ModelGCoreCoordinatorV4 {
         print("🔎 [ModelG v4] inspiration=\(String(format: "%.2f", inspiration)) k=\(kExemplars) exemplars=\(v4Exemplars.count) vocab=\(v4Vocab.count) embeddingsReady=\(ModelGEmbeddingIndex.shared.isReady)")
         #endif
 
+        // Pre-embed the exemplars once for the SEMANTIC signature score (cosine). Empty when the
+        // on-device index isn't warm yet → scoring falls back to Jaccard word overlap per bar.
+        let v4ExemplarVectors: [[Float]] = ModelGEmbeddingIndex.shared.isReady
+            ? v4Exemplars.compactMap { ModelGEmbeddingIndex.shared.embed($0) } : []
+
         // Step 2 — generate full-verse candidates (best-of-N) and pick the best.
         // Effort = how many candidates; Creativity = their temperature spread; Quality bar =
         // run one extra round if the best scores below target. Defaults reproduce legacy behavior
@@ -165,7 +170,9 @@ class ModelGCoreCoordinatorV4 {
                     let v4 = scoringEngine.v4Breakdown(base: base, text: bar, context: ctx,
                                                        exemplarNorms: v4ExemplarNorms,
                                                        syllables: SyllableEngine.lineSyllableCount(bar),
-                                                       inspiration: inspiration)
+                                                       inspiration: inspiration,
+                                                       exemplarVectors: v4ExemplarVectors,
+                                                       candidateVector: v4ExemplarVectors.isEmpty ? nil : ModelGEmbeddingIndex.shared.embed(bar))
                     total += v4.v4Total
                 }
                 let score = usable.isEmpty ? 0 : total / Double(usable.count)

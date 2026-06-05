@@ -267,6 +267,15 @@ class ScoringEngine {
         }.max() ?? 0
     }
 
+    /// Semantic signature: max cosine (clamped ≥ 0) between the candidate's embedding and the
+    /// exemplar embeddings. Rewards on-STYLE bars (same vibe/imagery/cadence), not just literal word
+    /// reuse — used when the on-device embedding index is warm; else the Jaccard norm overlap is used.
+    static func signatureSimilarity(candidateVector: [Float], exemplarVectors: [[Float]]) -> Double {
+        guard !candidateVector.isEmpty, !exemplarVectors.isEmpty else { return 0 }
+        let best = exemplarVectors.map { VectorMath.cosine(candidateVector, $0) }.max() ?? 0
+        return Double(max(0, best))
+    }
+
     /// User-constraint fit: coverage of mustUse tokens, topic terms, and syllable range. 0…1.
     static func userFit(text: String, mustUse: [String], topicTerms: [String],
                         syllables: Int, syllableMin: Int?, syllableMax: Int?) -> Double {
@@ -286,10 +295,17 @@ class ScoringEngine {
 
     /// Compute and attach all v4 composite fields to a base ScoreBreakdown.
     func v4Breakdown(base: ScoreBreakdown, text: String, context: GenerationContext,
-                     exemplarNorms: [String], syllables: Int, inspiration: Double = 0.4) -> ScoreBreakdown {
+                     exemplarNorms: [String], syllables: Int, inspiration: Double = 0.4,
+                     exemplarVectors: [[Float]] = [], candidateVector: [Float]? = nil) -> ScoreBreakdown {
         var b = base
         let craft = base.totalScore / 100.0
-        let sig = Self.signatureSimilarity(norm: text.lowercased(), exemplarNorms: exemplarNorms)
+        // Semantic cosine when the embedding index is warm (rewards on-style bars); else Jaccard overlap.
+        let sig: Double
+        if let cv = candidateVector, !exemplarVectors.isEmpty {
+            sig = Self.signatureSimilarity(candidateVector: cv, exemplarVectors: exemplarVectors)
+        } else {
+            sig = Self.signatureSimilarity(norm: text.lowercased(), exemplarNorms: exemplarNorms)
+        }
         let sigShare = Self.signatureShare(inspiration: inspiration)   // scales with the Inspiration slider
         b.houseFit = (1 - sigShare) * craft + sigShare * sig
         b.autoFit = min(max(base.intentAlignment, 0), 1)
