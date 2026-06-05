@@ -47,6 +47,12 @@ struct GhostSuggestionEngine {
         return segments.reversed().first { !$0.trimmingCharacters(in: .whitespaces).isEmpty }
     }
 
+    /// The last non-empty line — the line the user is currently typing. Used for the live (debounced)
+    /// refresh so rhymes appear as you type, before you hit Enter.
+    static func lastNonEmptyLine(in text: String) -> String? {
+        text.components(separatedBy: "\n").reversed().first { !$0.trimmingCharacters(in: .whitespaces).isEmpty }
+    }
+
     func freeHint(forLastLine line: String) -> GhostHint? {
         guard let end = Self.endWord(of: line) else { return nil }
         let phonetic = Self.rhymeCandidates(for: end)

@@ -1213,14 +1213,20 @@ struct NoteEditorView: View {
         // This reduces computation during active typing and improves performance
         rhymeEngineState.updateIfNeeded(text: newValue)
 
-        // Ghost Bar: refresh rhymes when the user finishes a line (Enter) or indents (Tab).
-        // Triggered on a newline/tab COUNT increase, not a trailing "\n" — predictive text batches
-        // the newline with the next word, so the old hasSuffix check silently missed most lines.
-        if GhostMode(rawValue: ghostModeRaw) != .off,
-           GhostSuggestionEngine.didCompleteLineOrIndent(old: oldValue, new: newValue) {
-            let line = GhostSuggestionEngine.justCompletedLine(in: newValue)
+        // Ghost Bar: rhymes appear as you type (debounced ~250ms, so no Enter needed) and roll
+        // fresh options immediately when a line is finished (Enter/indent). The Live-tier API call
+        // only fires on completion, never per keystroke.
+        if GhostMode(rawValue: ghostModeRaw) != .off {
+            let completed = GhostSuggestionEngine.didCompleteLineOrIndent(old: oldValue, new: newValue)
+            let text = newValue
             ghostTask?.cancel()
-            ghostTask = Task { await refreshGhost(lastLine: line) }
+            ghostTask = Task { @MainActor in
+                if !completed {
+                    try? await Task.sleep(nanoseconds: 250_000_000)
+                    if Task.isCancelled { return }
+                }
+                await refreshGhost(text: text, completed: completed)
+            }
         }
     }
 
@@ -1231,23 +1237,27 @@ struct NoteEditorView: View {
 
     // MARK: - Ghost Bar
 
-    @MainActor private func refreshGhost(lastLine: String?) async {
-        guard let line = lastLine, !line.trimmingCharacters(in: .whitespaces).isEmpty else { ghostHint = nil; return }
+    @MainActor private func refreshGhost(text: String, completed: Bool) async {
+        // Target the line just finished (Enter/indent) or the line currently being typed (live).
+        let line = completed ? GhostSuggestionEngine.justCompletedLine(in: text)
+                             : GhostSuggestionEngine.lastNonEmptyLine(in: text)
+        guard let line, !line.trimmingCharacters(in: .whitespaces).isEmpty else { ghostHint = nil; return }
         let mode = GhostMode(rawValue: ghostModeRaw) ?? .off
-        if mode == .live, KeychainHelper.shared.getAPIKey() != nil {
+        // Live API only fires on line completion — never per keystroke (cost).
+        if completed, mode == .live, KeychainHelper.shared.getAPIKey() != nil {
             if let live = try? await liveGhostHint(lastLine: line), !live.candidates.isEmpty { ghostHint = live; return }
         }
-        // Free: keep one rhyme pool per rhyme family and advance a rotation each line, so each
-        // Enter/indent surfaces FRESH options from the group without re-scanning CMUDICT (responsive).
+        // Free: one rhyme pool per family (cached → responsive); advance the rotation only when a
+        // line is finished, so each new bar surfaces FRESH options from the group.
         let key = GhostSuggestionEngine.rhymeKey(forLastLine: line)
-        if key == ghostRhymeKey, !ghostPool.isEmpty {
-            ghostRotation += 1
-        } else {
+        if key != ghostRhymeKey {
             ghostPool = GhostSuggestionEngine.freeRhymePool(forLastLine: line)
             ghostRhymeKey = key
             ghostRotation = 0
+        } else if completed {
+            ghostRotation += 1
         }
-        let options = GhostSuggestionEngine.window(ghostPool, rotation: ghostRotation)
+        let options = GhostSuggestionEngine.window(ghostPool, rotation: ghostRotation, count: 6)
         ghostHint = options.isEmpty ? nil : GhostHint(candidates: options, tail: nil)
     }
 

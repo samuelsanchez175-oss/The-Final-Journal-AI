@@ -146,4 +146,11 @@ final class GhostSuggestionEngineTests: XCTestCase {
         XCTAssertNotEqual(star, GhostSuggestionEngine.rhymeKey(forLastLine: "flesh and bone"),
                           "bone is a different family → key changes (pool re-scanned)")
     }
+
+    func testLastNonEmptyLineIsTheCurrentTypingLine() {
+        XCTAssertEqual(GhostSuggestionEngine.lastNonEmptyLine(in: "one\ntwo\nthree"), "three")
+        XCTAssertEqual(GhostSuggestionEngine.lastNonEmptyLine(in: "I'm typing smart"), "I'm typing smart")
+        XCTAssertEqual(GhostSuggestionEngine.lastNonEmptyLine(in: "done\n"), "done")
+        XCTAssertNil(GhostSuggestionEngine.lastNonEmptyLine(in: "   \n  "))
+    }
 }
