@@ -165,7 +165,8 @@ class ModelGCoreCoordinatorV4 {
             rhymeClasses: anchorRhymes,
             limit: exemplarCount
         )
-        return retrieved.map { $0.text }
+        // Hand the LLM real consecutive couplets (chronological corpus), not isolated lines.
+        return retrieved.map { GroundTruthCorpus.shared.couplet(for: $0) }
     }
 
     /// The request's tone(s) mapped onto the corpus's tone vocabulary — used both to retrieve

@@ -4,47 +4,50 @@
 //
 //  Model G v4 — the RAG retrieval layer.
 //
-//  Loads the real Gunna/Young-Thug ground-truth corpus (ground_truth_rap_bars_MODEL_G.csv)
-//  with the CORRECT schema and retrieves the bars closest to a generation request so they can
-//  anchor the LLM's cadence and rhyme.
+//  Prefers the CHRONOLOGICAL corpus (chronological_rap_bars_MODEL_G.csv): the real bars in true
+//  song order, with section + active-artist attribution and tone/rhyme metadata, built from the
+//  vault's Excel source of truth (see build_chronological_corpus.py). Because order is preserved,
+//  retrieval can hand the LLM real consecutive couplets — not isolated, alphabetized lines.
 //
-//  Why this exists (and the old GroundTruthRetriever/EditorialGroundTruth parsers don't suffice):
-//  the CSV has a 2-row preamble. The real *column names* are on line 0, the `text_id` is column 0,
-//  and the lyric is in `text_bar_line` (col 6). The legacy loaders read the header from the wrong
-//  line, so they either set `text` to the artist name or miss `syllable_count`/`stress`/`rhyme`
-//  entirely. This loader reads line 0 as the schema and indexes the columns retrieval actually needs.
+//  Falls back to the alphabetized ground_truth_rap_bars_MODEL_G.csv if the chronological file isn't
+//  bundled. Either way it indexes the columns retrieval needs: tone, rhyme_class, syllable_count.
 //
 
 import Foundation
 
 /// One real bar from the ground-truth corpus, with the metadata Model G retrieves on.
 struct CorpusBar: Identifiable, Hashable {
-    let id: String              // text_id, e.g. "gunna.200forlunch.1"
-    let text: String            // the actual lyric (text_bar_line)
-    let artist: String?
+    let id: String
+    let text: String            // the actual lyric
+    let artist: String?         // the track's billed artist
     let song: String?
+    let songId: String          // stable per-song key (for chronological grouping / couplets)
+    let lineNo: Int             // chronological position within the song (0 = unknown)
+    let section: String?        // e.g. "Chorus", "Verse 1"
+    let activeArtist: String?   // who performs this line (from [Section: Artist] headers)
     let syllableCount: Int
     let rhymeClass: String?     // e.g. "ood"
     let phoneticEnding: String? // e.g. "F EY1 S AH0 Z"
     let primaryTone: String?    // e.g. "luxurious" (lowercased)
-    let secondaryTone: String?  // e.g. "aspirational" (lowercased)
-    let authorityClass: String? // e.g. "LIFESTYLE_BACKGROUND"
+    let secondaryTone: String?  // (lowercased)
+    let authorityClass: String?
 
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
     static func == (lhs: CorpusBar, rhs: CorpusBar) -> Bool { lhs.id == rhs.id }
 }
 
 /// Loads + retrieves the ground-truth corpus for Model G v4. Singleton; load once.
-/// Mirrors the concurrency style of `GroundTruthRetriever` (plain class singleton; parse on a
-/// detached task; read-only after load).
 final class GroundTruthCorpus {
     static let shared = GroundTruthCorpus()
     private init() {}
 
     private(set) var bars: [CorpusBar] = []
     private(set) var isLoaded: Bool = false
+    /// songId → that song's bars in chronological order (for couplets / context windows).
+    private var bySong: [String: [CorpusBar]] = [:]
 
-    private static let resourceName = "ground_truth_rap_bars_MODEL_G"
+    private static let chronologicalResource = "chronological_rap_bars_MODEL_G"
+    private static let alphabetizedResource = "ground_truth_rap_bars_MODEL_G"
 
     // MARK: - Load
 
@@ -52,38 +55,40 @@ final class GroundTruthCorpus {
     func loadIfNeeded() async {
         guard !isLoaded else { return }
 
-        guard let url = Bundle.main.url(forResource: Self.resourceName, withExtension: "csv") else {
-            // Hard, visible failure: if this fires, the corpus isn't in the app target's resources
-            // and the RAG silently has nothing to retrieve. (It should bundle via the synchronized group.)
-            print("❌ GroundTruthCorpus: \(Self.resourceName).csv NOT found in bundle — RAG corpus is EMPTY. " +
-                  "Add it to the app target's Copy Bundle Resources.")
-            isLoaded = true
+        if let url = Bundle.main.url(forResource: Self.chronologicalResource, withExtension: "csv"),
+           let data = try? Data(contentsOf: url) {
+            let parsed = await Task.detached(priority: .utility) { Self.parseChronological(data) }.value
+            finishLoad(parsed, label: "chronological")
+            return
+        }
+        if let url = Bundle.main.url(forResource: Self.alphabetizedResource, withExtension: "csv"),
+           let data = try? Data(contentsOf: url) {
+            let parsed = await Task.detached(priority: .utility) { Self.parseAlphabetized(data) }.value
+            finishLoad(parsed, label: "alphabetized (fallback)")
             return
         }
 
-        do {
-            let data = try Data(contentsOf: url)
-            let parsed = await Task.detached(priority: .utility) { Self.parse(data) }.value
-            bars = parsed
-            isLoaded = true
-            print("✅ GroundTruthCorpus: loaded \(parsed.count) real ground-truth bars for retrieval.")
-        } catch {
-            isLoaded = true
-            print("❌ GroundTruthCorpus: failed to read corpus — \(error.localizedDescription)")
-        }
+        print("❌ GroundTruthCorpus: no corpus CSV found in bundle — RAG corpus is EMPTY. " +
+              "Add chronological_rap_bars_MODEL_G.csv (or the alphabetized fallback) to the app target.")
+        isLoaded = true
+    }
+
+    private func finishLoad(_ parsed: [CorpusBar], label: String) {
+        bars = parsed
+        var grouped: [String: [CorpusBar]] = [:]
+        for b in parsed { grouped[b.songId, default: []].append(b) }
+        for k in grouped.keys { grouped[k]?.sort { $0.lineNo < $1.lineNo } }
+        bySong = grouped
+        isLoaded = true
+        print("✅ GroundTruthCorpus: loaded \(parsed.count) real bars across \(grouped.count) songs (\(label)).")
     }
 
     // MARK: - Retrieve
 
     /// Retrieve up to `limit` real bars closest to the request, to anchor cadence & rhyme.
-    ///
-    /// Ranking blends three signals, all optional:
-    ///  - tone match (primary +3, secondary +1) against `tones`
-    ///  - rhyme-class overlap (+3) against `rhymeClasses`
-    ///  - syllable proximity to `syllableTarget` (closer = higher, up to +3)
-    ///
-    /// Empty `tones`/`rhymeClasses` simply don't constrain on that axis. A top window is sampled
-    /// (not strictly top-k) so two verses generated back-to-back get varied anchors.
+    /// Ranking: tone match (primary +3, secondary +1) + rhyme-class overlap (+3) + syllable
+    /// proximity (≤ +3) + learned per-tone feedback (Phase 3). Empty `tones`/`rhymeClasses` don't
+    /// constrain that axis. A top window is sampled (not strictly top-k) so back-to-back verses vary.
     func retrieve(syllableTarget: Int,
                   tones: [String] = [],
                   rhymeClasses: [String] = [],
@@ -123,9 +128,67 @@ final class GroundTruthCorpus {
         return Array(ranked.shuffled().prefix(limit))
     }
 
-    // MARK: - Parsing (canonical schema: column names on line 0, text_id in col 0)
+    /// The retrieved line plus the next line in the same song — a real consecutive couplet — when
+    /// available, so exemplars show true cadence/rhyme ACROSS bars, not an isolated line. Falls back
+    /// to the single line (e.g. when loaded from the alphabetized corpus, which has no true order).
+    func couplet(for bar: CorpusBar) -> String {
+        guard bar.lineNo > 0, let seq = bySong[bar.songId],
+              let i = seq.firstIndex(where: { $0.id == bar.id }), i + 1 < seq.count else {
+            return bar.text
+        }
+        return bar.text + " / " + seq[i + 1].text
+    }
 
-    private nonisolated static func parse(_ data: Data) -> [CorpusBar] {
+    // MARK: - Parsing
+
+    /// Chronological corpus: header on line 0 with named columns (order, song_id, song, artist,
+    /// active_artist, album, section, line_no, text, primary_tone, secondary_tone, rhyme_class,
+    /// phonetic_ending, syllable_count, authority).
+    private nonisolated static func parseChronological(_ data: Data) -> [CorpusBar] {
+        guard let csv = String(data: data, encoding: .utf8) else { return [] }
+        let lines = csv.components(separatedBy: .newlines)
+        guard lines.count > 1 else { return [] }
+
+        let header = parseLine(lines[0]).map { $0.lowercased().trimmingCharacters(in: .whitespaces) }
+        func col(_ name: String) -> Int? { header.firstIndex(of: name) }
+        let cOrder = col("order"), cSongId = col("song_id"), cSong = col("song"), cArtist = col("artist")
+        let cActive = col("active_artist"), cSection = col("section"), cLineNo = col("line_no")
+        let cText = col("text") ?? 8
+        let cPrim = col("primary_tone"), cSec = col("secondary_tone"), cRC = col("rhyme_class")
+        let cPhon = col("phonetic_ending"), cSyl = col("syllable_count"), cAuth = col("authority")
+
+        var out: [CorpusBar] = []
+        out.reserveCapacity(lines.count)
+        for i in 1..<lines.count {
+            let raw = lines[i]
+            if raw.trimmingCharacters(in: .whitespaces).isEmpty { continue }
+            let f = parseLine(raw)
+            guard f.count > cText else { continue }
+            func g(_ idx: Int?) -> String? {
+                guard let idx = idx, idx < f.count else { return nil }
+                let v = f[idx].trimmingCharacters(in: .whitespaces)
+                return v.isEmpty ? nil : v
+            }
+            guard let text = g(cText) else { continue }
+            let songId = g(cSongId) ?? (g(cSong)?.lowercased().filter { $0.isLetter || $0.isNumber } ?? "unknown")
+            let lineNo = Int(g(cLineNo) ?? "") ?? 0
+            let syll = Int(g(cSyl) ?? "") ?? estimateSyllables(text)
+            out.append(CorpusBar(
+                id: "\(songId).\(g(cOrder) ?? String(lineNo))",
+                text: text, artist: g(cArtist), song: g(cSong),
+                songId: songId, lineNo: lineNo, section: g(cSection), activeArtist: g(cActive),
+                syllableCount: syll, rhymeClass: g(cRC), phoneticEnding: g(cPhon),
+                primaryTone: g(cPrim)?.lowercased(), secondaryTone: g(cSec)?.lowercased(),
+                authorityClass: g(cAuth)
+            ))
+        }
+        return out
+    }
+
+    /// Alphabetized fallback: canonical schema (names on line 0, text_id in col 0, lyric in
+    /// text_bar_line). text_id is "song.N" — N is the *alphabetical* index here, so couplets are
+    /// not truly chronological in this mode, but tone/rhyme/syllable retrieval still works.
+    private nonisolated static func parseAlphabetized(_ data: Data) -> [CorpusBar] {
         guard let csv = String(data: data, encoding: .utf8) else { return [] }
         let lines = csv.components(separatedBy: .newlines)
         guard lines.count > 3 else { return [] }
@@ -135,52 +198,38 @@ final class GroundTruthCorpus {
             for n in names { if let i = header.firstIndex(of: n) { return i } }
             return nil
         }
-
         let cText = col("text_bar_line", "text") ?? 6
-        let cArtist = col("artist")
-        let cSong = col("song")
-        let cSyll = col("syllable_count", "syllable_count_recalc")
-        let cRhymeClass = col("rhyme_class")
-        let cPhonEnd = col("phonetic_ending")
-        let cPrimaryTone = col("primary_tone")
-        let cSecondaryTone = col("secondary_tone")
-        let cAuthority = col("authorityclass")
+        let cArtist = col("artist"), cSong = col("song")
+        let cSyl = col("syllable_count", "syllable_count_recalc"), cRC = col("rhyme_class")
+        let cPhon = col("phonetic_ending"), cPrim = col("primary_tone"), cSec = col("secondary_tone")
+        let cAuth = col("authorityclass")
 
         var out: [CorpusBar] = []
         out.reserveCapacity(lines.count)
-
         for i in 1..<lines.count {
             let raw = lines[i]
             if raw.trimmingCharacters(in: .whitespaces).isEmpty { continue }
             let f = parseLine(raw)
             guard f.count > cText else { continue }
-
             let id = f[0].trimmingCharacters(in: .whitespaces)
-            // A real data row's id looks like "artist.song.n"; this skips the 2 preamble/header rows.
             guard id.contains("."), !id.isEmpty else { continue }
-
             let text = f[cText].trimmingCharacters(in: .whitespaces)
             guard !text.isEmpty, text.lowercased() != "text" else { continue }
-
             func g(_ idx: Int?) -> String? {
                 guard let idx = idx, idx < f.count else { return nil }
                 let v = f[idx].trimmingCharacters(in: .whitespaces)
                 return v.isEmpty ? nil : v
             }
-
-            let syll = Int(g(cSyll) ?? "") ?? estimateSyllables(text)
-
+            let parts = id.split(separator: ".")
+            let lineNo = Int(parts.last.map(String.init) ?? "") ?? 0
+            let songId = parts.count > 1 ? parts.dropLast().joined(separator: ".") : id
+            let syll = Int(g(cSyl) ?? "") ?? estimateSyllables(text)
             out.append(CorpusBar(
-                id: id,
-                text: text,
-                artist: g(cArtist),
-                song: g(cSong),
-                syllableCount: syll,
-                rhymeClass: g(cRhymeClass),
-                phoneticEnding: g(cPhonEnd),
-                primaryTone: g(cPrimaryTone)?.lowercased(),
-                secondaryTone: g(cSecondaryTone)?.lowercased(),
-                authorityClass: g(cAuthority)
+                id: id, text: text, artist: g(cArtist), song: g(cSong),
+                songId: songId, lineNo: lineNo, section: nil, activeArtist: g(cArtist),
+                syllableCount: syll, rhymeClass: g(cRC), phoneticEnding: g(cPhon),
+                primaryTone: g(cPrim)?.lowercased(), secondaryTone: g(cSec)?.lowercased(),
+                authorityClass: g(cAuth)
             ))
         }
         return out
