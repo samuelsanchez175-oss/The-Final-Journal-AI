@@ -19,8 +19,12 @@ struct GenerationCardView: View {
     var criticFeedback: HumanCriticFeedback?
     var criticLoading: Bool = false
     var criticError: String? = nil
+    var contextText: String? = nil                       // the user's written lyrics (shown first)
+    var userFeedback: [UUID: RapSuggestion.SuggestionFeedback] = [:]
     var onRetryCritic: () -> Void = {}
     var onTapLine: (RapSuggestion, Int) -> Void = { _, _ in }
+    var onLike: (RapSuggestion) -> Void = { _ in }
+    var onDislike: (RapSuggestion) -> Void = { _ in }
 
     @State private var fresh: Bool
     @State private var rhymeBySuggestion: [UUID: [AttributedString]] = [:]
@@ -32,24 +36,50 @@ struct GenerationCardView: View {
          criticFeedback: HumanCriticFeedback? = nil,
          criticLoading: Bool = false,
          criticError: String? = nil,
+         contextText: String? = nil,
+         userFeedback: [UUID: RapSuggestion.SuggestionFeedback] = [:],
          onRetryCritic: @escaping () -> Void = {},
-         onTapLine: @escaping (RapSuggestion, Int) -> Void = { _, _ in }) {
+         onTapLine: @escaping (RapSuggestion, Int) -> Void = { _, _ in },
+         onLike: @escaping (RapSuggestion) -> Void = { _ in },
+         onDislike: @escaping (RapSuggestion) -> Void = { _ in }) {
         self.generation = generation
         self.stackOn = stackOn
         self.rhymeOn = rhymeOn
         self.criticFeedback = criticFeedback
         self.criticLoading = criticLoading
         self.criticError = criticError
+        self.contextText = contextText
+        self.userFeedback = userFeedback
         self.onRetryCritic = onRetryCritic
         self.onTapLine = onTapLine
+        self.onLike = onLike
+        self.onDislike = onDislike
         _fresh = State(initialValue: generation.isFresh)
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
+                // The user's written lyrics FIRST (the context that prompted these), then the suggestions.
+                if let ctx = contextText?.trimmingCharacters(in: .whitespacesAndNewlines), !ctx.isEmpty {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Your lines")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(Momentum.contentSecondary)
+                        ForEach(Array(ctx.components(separatedBy: "\n").enumerated()), id: \.offset) { _, line in
+                            if !line.isEmpty {
+                                Text(line).font(.body).foregroundStyle(Momentum.contentSecondary)
+                            }
+                        }
+                    }
+                    Divider()
+                }
+
                 ForEach(generation.suggestions) { suggestion in
-                    lyrics(for: suggestion)
+                    VStack(alignment: .leading, spacing: 8) {
+                        lyrics(for: suggestion)
+                        feedbackRow(for: suggestion)
+                    }
                 }
 
                 Divider()
@@ -64,7 +94,8 @@ struct GenerationCardView: View {
             .padding(16)
             .background(Momentum.surfaceElevated, in: RoundedRectangle(cornerRadius: 16))
             .padding(.horizontal, 16)
-            .padding(.vertical, 8)
+            .padding(.top, 8)
+            .padding(.bottom, 80)   // clear the floating island pill so feedback/critic aren't hidden
         }
         .task(id: generation.id) {
             guard fresh else { return }
@@ -107,6 +138,33 @@ struct GenerationCardView: View {
                     )
                 }
             }
+        }
+    }
+
+    @ViewBuilder
+    private func feedbackRow(for suggestion: RapSuggestion) -> some View {
+        HStack(spacing: 20) {
+            Button { onDislike(suggestion) } label: {
+                Image(systemName: userFeedback[suggestion.id] == .disliked ? "hand.thumbsdown.fill" : "hand.thumbsdown")
+                    .font(.subheadline)
+                    .foregroundStyle(userFeedback[suggestion.id] == .disliked ? .red : Momentum.contentSecondary)
+                    .frame(width: 44, height: 44)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Dislike suggestion")
+
+            Button { onLike(suggestion) } label: {
+                Image(systemName: userFeedback[suggestion.id] == .liked ? "hand.thumbsup.fill" : "hand.thumbsup")
+                    .font(.subheadline)
+                    .foregroundStyle(userFeedback[suggestion.id] == .liked ? .green : Momentum.contentSecondary)
+                    .frame(width: 44, height: 44)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Like suggestion")
+
+            Spacer()
         }
     }
 }

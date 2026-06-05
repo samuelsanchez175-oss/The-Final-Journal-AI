@@ -369,6 +369,18 @@ struct RapSuggestionView: View {
                 onRetryCritic: onRetryHumanCritic,
                 onTapLine: { suggestion, lineIndex in
                     toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex)
+                },
+                contextText: contextText,
+                userFeedback: userFeedback,
+                onLike: { suggestion in
+                    userFeedback[suggestion.id] = .liked
+                    recordFeedback(suggestion: suggestion, feedback: .liked)
+                    UINotificationFeedbackGenerator().notificationOccurred(.success)
+                },
+                onDislike: { suggestion in
+                    userFeedback[suggestion.id] = .disliked
+                    recordFeedback(suggestion: suggestion, feedback: .disliked)
+                    UINotificationFeedbackGenerator().notificationOccurred(.error)
                 }
             )
             RapIslandToolbar(
