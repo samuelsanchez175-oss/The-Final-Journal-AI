@@ -111,4 +111,20 @@ final class GhostSuggestionEngineTests: XCTestCase {
         XCTAssertFalse(hint.candidates.contains("abadi"))
         XCTAssertFalse(hint.candidates.isEmpty, "crazy has real rhymes (lazy, hazy, daisy…)")
     }
+
+    // MARK: - Refresh trigger (Enter / indent; robust to predictive-text batching the newline)
+
+    func testDidCompleteLineOrIndentFiresOnEnterAndIndentNotPlainTyping() {
+        XCTAssertTrue(GhostSuggestionEngine.didCompleteLineOrIndent(old: "the city", new: "the city\n"), "Enter at end")
+        XCTAssertTrue(GhostSuggestionEngine.didCompleteLineOrIndent(old: "the city", new: "the city\nI talk"), "batched newline + next word")
+        XCTAssertTrue(GhostSuggestionEngine.didCompleteLineOrIndent(old: "the city", new: "\tthe city"), "indent (tab)")
+        XCTAssertFalse(GhostSuggestionEngine.didCompleteLineOrIndent(old: "the cit", new: "the city"), "plain typing must not refresh")
+    }
+
+    func testJustCompletedLineIsTheLineBeforeTheLatestNewline() {
+        XCTAssertEqual(GhostSuggestionEngine.justCompletedLine(in: "shooting star\n"), "shooting star")
+        XCTAssertEqual(GhostSuggestionEngine.justCompletedLine(in: "shooting star\nI talk"), "shooting star") // not "I talk"
+        XCTAssertEqual(GhostSuggestionEngine.justCompletedLine(in: "line one\nline two\n"), "line two")
+        XCTAssertNil(GhostSuggestionEngine.justCompletedLine(in: "\n\n"))
+    }
 }

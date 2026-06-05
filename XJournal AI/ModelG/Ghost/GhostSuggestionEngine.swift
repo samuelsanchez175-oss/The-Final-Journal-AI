@@ -26,6 +26,27 @@ struct GhostSuggestionEngine {
             .last
     }
 
+    /// True when a body edit just finished a line (Enter) or added an indent (Tab) — the moment to
+    /// recompute rhymes. Counts newlines/tabs rather than checking a trailing "\n": predictive text
+    /// routinely batches the newline with the next word ("…star\nI talk"), so the old suffix check
+    /// missed most line completions and the rhymes went stale.
+    static func didCompleteLineOrIndent(old: String, new: String) -> Bool {
+        func count(_ s: String, _ c: Character) -> Int { s.reduce(0) { $1 == c ? $0 + 1 : $0 } }
+        return count(new, "\n") > count(old, "\n") || count(new, "\t") > count(old, "\t")
+    }
+
+    /// The line the user most recently finished — the segment terminated by the latest newline.
+    /// Robust to predictive-text batching ("…star\nI talk" still yields "…star"). Falls back to the
+    /// last non-empty line.
+    static func justCompletedLine(in text: String) -> String? {
+        let segments = text.components(separatedBy: "\n")
+        if segments.count >= 2 {
+            let candidate = segments[segments.count - 2]
+            if !candidate.trimmingCharacters(in: .whitespaces).isEmpty { return candidate }
+        }
+        return segments.reversed().first { !$0.trimmingCharacters(in: .whitespaces).isEmpty }
+    }
+
     func freeHint(forLastLine line: String) -> GhostHint? {
         guard let end = Self.endWord(of: line) else { return nil }
         let phonetic = Self.rhymeCandidates(for: end)

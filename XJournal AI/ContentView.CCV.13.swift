@@ -1210,9 +1210,12 @@ struct NoteEditorView: View {
         // This reduces computation during active typing and improves performance
         rhymeEngineState.updateIfNeeded(text: newValue)
 
-        // Ghost Bar: fire hint when user finishes a line (newline appended)
-        if GhostMode(rawValue: ghostModeRaw) != .off, newValue.hasSuffix("\n"), !oldValue.hasSuffix("\n") {
-            let line = newValue.split(separator: "\n", omittingEmptySubsequences: true).last.map(String.init)
+        // Ghost Bar: refresh rhymes when the user finishes a line (Enter) or indents (Tab).
+        // Triggered on a newline/tab COUNT increase, not a trailing "\n" — predictive text batches
+        // the newline with the next word, so the old hasSuffix check silently missed most lines.
+        if GhostMode(rawValue: ghostModeRaw) != .off,
+           GhostSuggestionEngine.didCompleteLineOrIndent(old: oldValue, new: newValue) {
+            let line = GhostSuggestionEngine.justCompletedLine(in: newValue)
             ghostTask?.cancel()
             ghostTask = Task { await refreshGhost(lastLine: line) }
         }
