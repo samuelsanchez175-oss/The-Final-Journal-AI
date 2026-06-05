@@ -19,7 +19,6 @@ import Foundation
 
 class ModelGCoreCoordinatorV4 {
     private let llmService = ModelGLLMService.shared
-    private let scoringEngine = ScoringEngine()
     private let styleEngine = StyleEngine()
     private let luxuryLexiconService = LuxuryLexiconService()
     private let riskManager = RiskManager()
@@ -98,23 +97,15 @@ class ModelGCoreCoordinatorV4 {
             return out
         }
 
-        // Step 3 — score each candidate verse (avg bar score) and pick the best.
+        // Step 3 — grade each candidate by AUTHENTICITY (the same VerseLedger rubric the app logs
+        // and eval/grade_modelg.py defines) and keep the highest NET. Replaces the weaker per-bar
+        // ScoringEngine selection: best-of-N is now chosen on the real authenticity score.
         var best: (hook: String, bars: [String])?
-        var bestScore = -1.0
+        var bestNet = -1.0
         for verse in candidates where verse.bars.count >= 8 {
             let usable = Array(verse.bars.prefix(barCount))
-            var total = 0.0
-            for (i, bar) in usable.enumerated() {
-                let ctx = makeContext(
-                    intent: intent, beat: beatFingerprint, style: styleProfile, directedParams: directedParams,
-                    luxury: luxuryLayer, barIndex: i, existingBars: Array(usable.prefix(i)),
-                    signalAxes: signalAxes, themeContext: themeContext,
-                    bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale
-                )
-                total += scoringEngine.evaluateBar(bar, context: ctx).totalScore
-            }
-            let avg = usable.isEmpty ? 0 : total / Double(usable.count)
-            if avg > bestScore { bestScore = avg; best = verse }
+            let net = VerseLedgerScorer.score(hook: verse.hook, bars: usable).net
+            if net > bestNet { bestNet = net; best = verse }
         }
 
         guard let chosen = best else {
@@ -128,7 +119,7 @@ class ModelGCoreCoordinatorV4 {
         while bars.count < barCount {
             bars.append("Continue the flow — \(intent.theme.prefix(40))...")
         }
-        var averageBarScore = bestScore
+        var averageBarScore = bestNet
         if averageBarScore < verseAverageThreshold {
             averageBarScore = max(averageBarScore, verseAverageThreshold - 1)
         }
@@ -145,7 +136,8 @@ class ModelGCoreCoordinatorV4 {
             },
             deviationMetadata: [
                 "plan": plan.centralImage.isEmpty ? "none" : plan.centralImage,
-                "exemplars": "\(exemplars.count)"
+                "exemplars": "\(exemplars.count)",
+                "authenticityNet": String(format: "%.0f", bestNet)
             ],
             averageBarScore: averageBarScore,
             timestamp: Date()
