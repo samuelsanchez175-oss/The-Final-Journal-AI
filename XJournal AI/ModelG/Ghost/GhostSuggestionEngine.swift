@@ -61,7 +61,7 @@ struct GhostSuggestionEngine {
         // Promote on-brand words (corpus hit) to the front.
         let onBrand: [String] = retriever.map { r in
             phonetic.filter { w in
-                !r.retrieve(theme: nil, draft: w, brands: [], k: 1).exemplars.isEmpty
+                !r.retrieve(draft: w, k: 1).exemplars.isEmpty
             }
         } ?? []
 

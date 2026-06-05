@@ -23,6 +23,6 @@ final class ModelGEmbeddingTests: XCTestCase {
     func testRetrieverLexicalWhenNoIndex() throws {
         let store = try ModelGCorpusStore(bundle: Bundle(for: ModelGEmbeddingTests.self), resource: "ModelGCorpus.fixture")
         let r = ModelGCorpusRetriever(store: store)
-        XCTAssertFalse(r.retrieve(theme: "confident", draft: "garments", brands: [], k: 5).exemplars.isEmpty)
+        XCTAssertFalse(r.retrieve(tones: ["confident"], draft: "garments", k: 5).exemplars.isEmpty)
     }
 }

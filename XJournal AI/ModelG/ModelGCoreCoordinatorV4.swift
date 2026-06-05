@@ -76,18 +76,30 @@ class ModelGCoreCoordinatorV4 {
             plan = .empty
         }
 
-        // Step 1b — corpus retrieval (RAG): fetch exemplar bars + brand vocab.
+        // Inspiration (0 = novel … 1 = max "inspired"/grounded) from the Originality slider.
+        // Drives how hard v4 leans on the vault: more exemplars + stronger prompt grounding.
+        let inspiration = 1.0 - ModelGEnvironment.originalityBias
+        let kExemplars = 4 + Int((inspiration * 8).rounded())   // 4 (novel) … 12 (max inspired)
+
+        // Step 1b — corpus retrieval (RAG): tone → corpus themes, topics → tags, draft → keywords.
         var v4Exemplars: [String] = []
         var v4ExemplarNorms: [String] = []
         var v4Vocab: [String] = []
         do {
             let corpusStore = try ModelGCorpusStore()
             ModelGEmbeddingIndex.shared.buildIfNeeded(bars: corpusStore.corpus.bars)
+            // emotionalTone is a "|"-separated list whose values ARE the corpus theme vocab
+            // (confident/luxurious/…) — so this reliably matches, unlike the topic `themeName`.
+            let tones = (themeContext?.emotionalTone ?? "")
+                .split(separator: "|").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
+            let topics = ((themeContext?.themeName ?? "").split(separator: " ").map(String.init)
+                + (themeContext?.jargonPalette ?? [])
+                + (directedParams?.selectedTopics ?? [])
+                + (directedParams?.worldBuildingWords ?? []))
+                .filter { $0.count >= 3 }
             let retrieved = ModelGCorpusRetriever(store: corpusStore, embeddingIndex: ModelGEmbeddingIndex.shared).retrieve(
-                theme: themeContext?.themeName,
-                draft: input,
-                brands: directedParams?.worldBuildingWords ?? [],
-                k: 6)
+                tones: tones, topics: topics, draft: input,
+                brands: directedParams?.worldBuildingWords ?? [], k: kExemplars)
             v4Exemplars = retrieved.exemplars.map(\.text)
             v4ExemplarNorms = retrieved.exemplars.map(\.norm)
             v4Vocab = retrieved.vocab
@@ -97,7 +109,7 @@ class ModelGCoreCoordinatorV4 {
             #endif
         }
         #if DEBUG
-        print("🔎 [ModelG v4] exemplars=\(v4Exemplars.count) vocab=\(v4Vocab.count) embeddingsReady=\(ModelGEmbeddingIndex.shared.isReady)")
+        print("🔎 [ModelG v4] inspiration=\(String(format: "%.2f", inspiration)) k=\(kExemplars) exemplars=\(v4Exemplars.count) vocab=\(v4Vocab.count) embeddingsReady=\(ModelGEmbeddingIndex.shared.isReady)")
         #endif
 
         // Step 2 — generate full-verse candidates (best-of-N) and pick the best.
@@ -116,7 +128,7 @@ class ModelGCoreCoordinatorV4 {
                         do {
                             return try await self.llmService.generateFullVerse(
                                 plan: plan, arcShape: arcShape, context: baseContext, temperature: temp,
-                                corpusExemplars: v4Exemplars, corpusVocab: v4Vocab
+                                corpusExemplars: v4Exemplars, corpusVocab: v4Vocab, inspiration: inspiration
                             )
                         } catch {
                             #if DEBUG

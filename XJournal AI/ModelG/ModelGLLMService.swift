@@ -240,11 +240,12 @@ class ModelGLLMService {
     /// v3 step 2 — generate the whole verse (hook + 16 bars) in one call, conditioned on the plan.
     func generateFullVerse(plan: VersePlan, arcShape: String, context: GenerationContext,
                            temperature: Double = 0.8,
-                           corpusExemplars: [String] = [], corpusVocab: [String] = []) async throws -> (hook: String, bars: [String]) {
+                           corpusExemplars: [String] = [], corpusVocab: [String] = [],
+                           inspiration: Double = 0.4) async throws -> (hook: String, bars: [String]) {
         let layer = context.luxuryLayer ?? .empty
         let themeBlock = context.themeContext.map { themeDirective($0) } ?? ""
         let voiceBlock = context.signalAxes.map { "\n" + signalDirective($0) } ?? ""
-        let inspiration = ModelGEnvironment.originalityBias < 0.5
+        let inspirationLine = ModelGEnvironment.originalityBias < 0.5
             ? "Inspiration: be grounded in the culture — reference music, brands, places, slang and play on familiar phrases; borrow the genre's idioms. Clever and referential beats sterile-original."
             : "Inspiration: lean fresh and novel, but stay grounded in the culture — references and wordplay over invented-from-nothing lines."
         let palette = LexiconStore.shared.referencePalette()
@@ -281,11 +282,21 @@ class ModelGLLMService {
             }
             return "\nEND-RHYME SCHEME (strict — this OVERRIDES your default): hold the SAME ending-rhyme sound for \(n) bars in a row, THEN switch to a brand-new rhyme sound for the next \(n) bars. Do NOT fall back to 2-bar couplets. Concretely: \(example). Use only about \(max(2, 16 / n)) distinct end-rhyme sounds across the 16 bars."
         }()
-        let corpusExemplarBlock: String = corpusExemplars.isEmpty ? "" : """
-
-        REFERENCE BARS (study the craft, cadence and vocabulary — DO NOT copy, paraphrase/blend):
-        \(corpusExemplars.prefix(6).map { "• \($0)" }.joined(separator: "\n"))
-        """
+        // Grounding strength scales with the Inspiration slider (1 - originality). High = lean hard
+        // on the vault; low = loose flavor only. Show all retrieved exemplars (retriever capped k).
+        let corpusExemplarBlock: String = {
+            guard !corpusExemplars.isEmpty else { return "" }
+            let lines = corpusExemplars.map { "• \($0)" }.joined(separator: "\n")
+            let directive: String
+            if inspiration >= 0.66 {
+                directive = "REFERENCE BARS — your BLUEPRINT. Echo their cadence, slang, imagery and phrasing closely and lean HARD on this exact style; a strong family resemblance is intended (reword, never copy verbatim):"
+            } else if inspiration <= 0.33 {
+                directive = "REFERENCE BARS (loose flavor only — diverge from these, do NOT echo them):"
+            } else {
+                directive = "REFERENCE BARS (study the craft, cadence and vocabulary — DO NOT copy; paraphrase/blend):"
+            }
+            return "\n\n\(directive)\n\(lines)"
+        }()
         let corpusVocabBlock: String = corpusVocab.isEmpty ? "" :
             "\nVOCAB PALETTE (weave in naturally, only if it fits): \(corpusVocab.prefix(12).joined(separator: ", "))"
         let user = """
@@ -294,7 +305,7 @@ class ModelGLLMService {
         \(plan.promptText)
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
-        \(inspiration)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)
+        \(inspirationLine)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)
         Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.\(rhymeCadence)
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}\(exampleBlock)
         """

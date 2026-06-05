@@ -34,6 +34,16 @@ final class ModelGCorpusStore {
         return corpus.bars.filter { $0.norm.contains(k) }
     }
 
+    /// Bars whose `tags` (master-concept taxonomy, e.g. "master-concept/wealth-cars") contain the
+    /// topic term as a substring. Powers topic-based retrieval: the corpus `themes` are emotional
+    /// tones (confident/luxurious/…), so topical matching must go through tags. Ignores fragments
+    /// shorter than 3 chars to avoid noise.
+    func bars(tag: String) -> [CorpusBar] {
+        let t = tag.lowercased().trimmingCharacters(in: .whitespaces)
+        guard t.count >= 3 else { return [] }
+        return corpus.bars.filter { $0.tags.contains { $0.lowercased().contains(t) } }
+    }
+
     func concept(named name: String) -> CorpusConcept? { conceptIndex[name.lowercased()] }
 
     func brandAttributes(brand: String) -> [String] {
