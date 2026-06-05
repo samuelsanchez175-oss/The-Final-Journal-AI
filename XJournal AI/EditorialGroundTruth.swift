@@ -148,64 +148,50 @@ class EditorialGroundTruth: ObservableObject {
         }
         
         var bars: [GroundTruthBar] = []
-        
-        // Parse header to determine column indices
-        let header = parseCSVLine(lines[0])
-        guard let textIndex = header.firstIndex(where: { $0.lowercased().contains("text") || $0.lowercased().contains("line") || $0.lowercased().contains("bar") }),
-              let idIndex = header.firstIndex(where: { $0.lowercased().contains("id") }) else {
-            // If no clear header, assume simple format: id,text,artist,song,year
-            for (index, line) in lines.enumerated() {
-                guard index > 0, !line.trimmingCharacters(in: .whitespaces).isEmpty else { continue }
-                let components = parseCSVLine(line)
-                guard components.count >= 2 else { continue }
-                
-                let id = components[0].trimmingCharacters(in: .whitespaces)
-                let text = components[1].trimmingCharacters(in: .whitespaces)
-                guard !id.isEmpty, !text.isEmpty else { continue }
-                
-                let artist = components.count > 2 ? components[2].trimmingCharacters(in: .whitespaces) : nil
-                let song = components.count > 3 ? components[3].trimmingCharacters(in: .whitespaces) : nil
-                let year = components.count > 4 ? Int(components[4].trimmingCharacters(in: .whitespaces)) : nil
-                
-                bars.append(GroundTruthBar(
-                    id: id,
-                    text: text,
-                    artist: artist?.isEmpty == false ? artist : nil,
-                    song: song?.isEmpty == false ? song : nil,
-                    year: year
-                ))
-            }
-            return bars
+        bars.reserveCapacity(lines.count)
+
+        // Canonical schema: the real column NAMES are on line 0, the text_id is column 0, and the
+        // lyric is in `text_bar_line`. The file has a 2-row preamble and data rows have ids shaped
+        // like "artist.song.n". The previous logic read the header off the wrong row, failed to find
+        // an "id" column, and fell back to a simple format that set `text` to the ARTIST column —
+        // so every "bar" was just an artist name. This restores correct parsing.
+        let header = parseCSVLine(lines[0]).map { $0.lowercased().trimmingCharacters(in: .whitespaces) }
+        func col(_ names: String...) -> Int? {
+            for n in names { if let i = header.firstIndex(of: n) { return i } }
+            return nil
         }
-        
-        // Parse with header
+        let textIndex = col("text_bar_line", "text") ?? 6
+        let artistIndex = col("artist")
+        let songIndex = col("song")
+        let yearIndex = col("year")
+
         for (index, line) in lines.enumerated() {
             guard index > 0, !line.trimmingCharacters(in: .whitespaces).isEmpty else { continue }
             let components = parseCSVLine(line)
-            guard components.count > max(textIndex, idIndex) else { continue }
-            
-            let id = components[idIndex].trimmingCharacters(in: .whitespaces)
+            guard components.count > textIndex else { continue }
+
+            let id = components[0].trimmingCharacters(in: .whitespaces)
+            // Real data rows have ids like "gunna.200forlunch.1"; this skips the preamble/sub-header rows.
+            guard id.contains("."), !id.isEmpty else { continue }
+
             let text = components[textIndex].trimmingCharacters(in: .whitespaces)
-            guard !id.isEmpty, !text.isEmpty else { continue }
-            
-            // Try to find optional columns
-            let artistIndex = header.firstIndex(where: { $0.lowercased().contains("artist") })
-            let songIndex = header.firstIndex(where: { $0.lowercased().contains("song") })
-            let yearIndex = header.firstIndex(where: { $0.lowercased().contains("year") })
-            
-            let artist = artistIndex.flatMap { components.indices.contains($0) ? components[$0].trimmingCharacters(in: .whitespaces) : nil }
-            let song = songIndex.flatMap { components.indices.contains($0) ? components[$0].trimmingCharacters(in: .whitespaces) : nil }
-            let year = yearIndex.flatMap { components.indices.contains($0) ? Int(components[$0].trimmingCharacters(in: .whitespaces)) : nil }
-            
+            guard !text.isEmpty, text.lowercased() != "text" else { continue }
+
+            func cell(_ idx: Int?) -> String? {
+                guard let idx = idx, components.indices.contains(idx) else { return nil }
+                let v = components[idx].trimmingCharacters(in: .whitespaces)
+                return v.isEmpty ? nil : v
+            }
+
             bars.append(GroundTruthBar(
                 id: id,
                 text: text,
-                artist: artist?.isEmpty == false ? artist : nil,
-                song: song?.isEmpty == false ? song : nil,
-                year: year
+                artist: cell(artistIndex),
+                song: cell(songIndex),
+                year: cell(yearIndex).flatMap { Int($0) }
             ))
         }
-        
+
         return bars
     }
     
