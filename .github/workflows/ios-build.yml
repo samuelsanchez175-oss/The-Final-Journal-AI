@@ -24,10 +24,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Toolchain versions
+      - name: Select newest Xcode (the app uses iOS 26 SpeechAnalyzer; needs a 26 SDK)
         run: |
+          echo "Installed Xcodes:"; ls -d /Applications/Xcode*.app 2>/dev/null || true
+          LATEST=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$LATEST" ]; then echo "Selecting $LATEST"; sudo xcode-select -s "$LATEST/Contents/Developer"; fi
           xcodebuild -version
-          xcrun --sdk iphonesimulator --show-sdk-version
+          xcrun --sdk iphonesimulator --show-sdk-version || true
 
       - name: Build (compile-check, iOS Simulator, no signing)
         run: |
