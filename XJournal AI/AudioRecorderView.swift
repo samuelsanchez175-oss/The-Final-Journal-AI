@@ -165,7 +165,7 @@ struct AudioRecorderView: View {
             if granted {
                 let audioFilename = getDocumentsDirectory().appendingPathComponent("recording_\(UUID().uuidString).m4a")
                 recorder.startRecording(to: audioFilename.path)
-                HapticFeedbackManager.shared.fire(.impact(.medium))
+                HapticFeedbackManager.shared.play(.recordStart)
 
                 recordingTime = 0
                 timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
@@ -181,7 +181,7 @@ struct AudioRecorderView: View {
     private func stopRecording() {
         timer?.invalidate()
         if let audioPath = recorder.stopRecording() {
-            HapticFeedbackManager.shared.fire(.impact(.light))
+            HapticFeedbackManager.shared.play(.recordStop)
             item.audioPath = audioPath
             // Process recorded audio: get duration, transcribe, generate summary
             // Don't dismiss immediately - wait for processing to complete

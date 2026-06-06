@@ -462,7 +462,7 @@ struct JournalLibraryView: View {
     }
 
     private func prepareHapticForNewNote() {
-        HapticFeedbackManager.shared.lightTap()
+        HapticFeedbackManager.shared.play(.newNote)
     }
 
     private func addItem() {

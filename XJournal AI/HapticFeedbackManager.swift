@@ -115,6 +115,9 @@ final class HapticFeedbackManager {
         case aiReady       // soft anticipation → crisp arrival (AI results landed)
         case love          // quick crisp double-pop (favorite / like)
         case sparkle       // tiny high-sharpness tick (a standout "Model G moment")
+        case recordStart   // soft build → firm commit (recording armed)
+        case recordStop    // firm release → soft settle (recording ended)
+        case newNote       // gentle bloom (a fresh page)
     }
 
     private var hapticEngine: CHHapticEngine?
@@ -156,6 +159,12 @@ final class HapticFeedbackManager {
                 CHHapticEventParameter(parameterID: .hapticSharpness, value: sharpness)
             ], relativeTime: time)
         }
+        func swell(_ time: TimeInterval, duration: TimeInterval, intensity: Float, sharpness: Float) -> CHHapticEvent {
+            CHHapticEvent(eventType: .hapticContinuous, parameters: [
+                CHHapticEventParameter(parameterID: .hapticIntensity, value: intensity),
+                CHHapticEventParameter(parameterID: .hapticSharpness, value: sharpness)
+            ], relativeTime: time, duration: duration)
+        }
         let events: [CHHapticEvent]
         switch signature {
         case .achievement:                       // three rising taps — a little triumph
@@ -178,6 +187,21 @@ final class HapticFeedbackManager {
             events = [
                 tap(0.00, intensity: 0.5, sharpness: 1.00)
             ]
+        case .recordStart:                       // soft build, then a firm "armed" commit
+            events = [
+                swell(0.00, duration: 0.16, intensity: 0.40, sharpness: 0.25),
+                tap(0.16, intensity: 0.95, sharpness: 0.50)
+            ]
+        case .recordStop:                        // firm release, then a soft settle
+            events = [
+                tap(0.00, intensity: 0.95, sharpness: 0.60),
+                swell(0.04, duration: 0.14, intensity: 0.35, sharpness: 0.20)
+            ]
+        case .newNote:                           // gentle bloom for a fresh page
+            events = [
+                tap(0.00, intensity: 0.45, sharpness: 0.25),
+                swell(0.05, duration: 0.12, intensity: 0.28, sharpness: 0.15)
+            ]
         }
         return try CHHapticPattern(events: events, parameters: [])
     }
@@ -196,6 +220,15 @@ final class HapticFeedbackManager {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.07) { [weak self] in self?.fire(.impact(.light)) }
         case .sparkle:
             fire(.impact(.soft))
+        case .recordStart:
+            fire(.impact(.soft))
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.16) { [weak self] in self?.fire(.impact(.heavy)) }
+        case .recordStop:
+            fire(.impact(.medium))
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.06) { [weak self] in self?.fire(.impact(.soft)) }
+        case .newNote:
+            fire(.impact(.soft))
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.06) { [weak self] in self?.fire(.impact(.light)) }
         }
     }
 }

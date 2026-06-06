@@ -29,6 +29,9 @@
   - `.aiReady` — soft lead-in then a crisp arrival → AI results land (main deck + Improve-Flow).
   - `.love` — quick crisp double-pop → favorite a suggestion / like a line.
   - `.sparkle` — tiny high-sharpness tick → swiping onto a generation with a Model G moment.
+  - `.recordStart` — soft build → firm commit → recording armed.
+  - `.recordStop` — firm release → soft settle → recording ended.
+  - `.newNote` — gentle bloom → a fresh page is created.
 
 Decision taken: the in-app toggle gates **all** haptics (including errors and signatures) for
 predictability; revisit if we want failures to stay feel-able when haptics are off.
