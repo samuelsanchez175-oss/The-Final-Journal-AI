@@ -21,8 +21,17 @@
   wired and is now gated). Remaining low-traffic nav/segment surfaces follow the mapping table
   as a fast-follow.
 
-Decision taken: the in-app toggle gates **all** haptics (including errors) for predictability;
-revisit if we want failures to stay feel-able when haptics are off.
+- **Signature (Core Haptics) — added.** Standout moments now use *composed* patterns via
+  `CHHapticEngine` so they feel distinct (not just another tap), with a graceful fallback to
+  sequenced simple generators when Core Haptics is unsupported (older devices / Simulator) or
+  the engine can't start:
+  - `.achievement` — rising triple-tap → badge unlocked (`AchievementBadgeView`).
+  - `.aiReady` — soft lead-in then a crisp arrival → AI results land (main deck + Improve-Flow).
+  - `.love` — quick crisp double-pop → favorite a suggestion / like a line.
+  - `.sparkle` — tiny high-sharpness tick → swiping onto a generation with a Model G moment.
+
+Decision taken: the in-app toggle gates **all** haptics (including errors and signatures) for
+predictability; revisit if we want failures to stay feel-able when haptics are off.
 
 ---
 

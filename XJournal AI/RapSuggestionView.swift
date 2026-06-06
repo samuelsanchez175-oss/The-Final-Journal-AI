@@ -1038,7 +1038,7 @@ struct RapSuggestionView: View {
                         )
                         UserBehaviorTracker.shared.trackSuggestionInteraction(action: .favorited, suggestionId: suggestion.id)
                     }
-                    HapticFeedbackManager.shared.success()
+                    HapticFeedbackManager.shared.play(.love)
                 } label: {
                     Image(systemName: favoriteSuggestions.contains(suggestion.id) ? "star.fill" : "star")
                         .font(.subheadline)
@@ -1348,13 +1348,13 @@ struct RapSuggestionView: View {
         if likedSet.contains(lineIndex) {
             // Currently liked, remove it (back to neutral) — nothing new to record.
             likedSet.remove(lineIndex)
-            HapticFeedbackManager.shared.success()
+            HapticFeedbackManager.shared.selection()
         } else if dislikedSet.contains(lineIndex) {
             // Currently disliked, switch to liked
             dislikedSet.remove(lineIndex)
             likedSet.insert(lineIndex)
             CorpusFeedbackStore.shared.recordAcceptance(text: lineText, accepted: true)
-            HapticFeedbackManager.shared.success()
+            HapticFeedbackManager.shared.play(.love)
         } else {
             // Neutral, add to disliked
             dislikedSet.insert(lineIndex)

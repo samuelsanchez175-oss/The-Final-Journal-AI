@@ -33,8 +33,16 @@ struct RapDeckView: View {
                 }
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
-            .onChange(of: index) { _, _ in
-                HapticFeedbackManager.shared.fire(.impact(.light))
+            .onChange(of: index) { _, newIndex in
+                // Swiping onto a generation with a standout "Model G moment" gets a distinct
+                // sparkle; everything else gets the usual light page tick.
+                let hasMoment = generations.indices.contains(newIndex)
+                    && generations[newIndex].suggestions.contains { ($0.modelGMomentLineIndices?.isEmpty == false) }
+                if hasMoment {
+                    HapticFeedbackManager.shared.play(.sparkle)
+                } else {
+                    HapticFeedbackManager.shared.fire(.impact(.light))
+                }
             }
 
             if generations.count > 1 {

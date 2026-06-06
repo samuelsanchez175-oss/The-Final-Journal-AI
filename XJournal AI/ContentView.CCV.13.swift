@@ -555,7 +555,7 @@ struct NoteEditorView: View {
                             HapticFeedbackManager.shared.error()
                             showAIErrorWrapper(error)
                         } else {
-                            HapticFeedbackManager.shared.success()
+                            HapticFeedbackManager.shared.play(.aiReady)
                             showRapSuggestions = true
                         }
                     }
@@ -1954,7 +1954,7 @@ struct NoteEditorView: View {
                     improveFlowLoadingStep = nil
                     showContextHighlight = false
                     showImproveFlow = true
-                    HapticFeedbackManager.shared.success()
+                    HapticFeedbackManager.shared.play(.aiReady)
                 }
             } catch {
                 await MainActor.run {

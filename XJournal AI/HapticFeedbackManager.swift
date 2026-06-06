@@ -1,4 +1,5 @@
 import UIKit
+import CoreHaptics
 
 /// Centralized haptic feedback for consistent, low-latency tactile responses throughout the app.
 ///
@@ -102,4 +103,99 @@ final class HapticFeedbackManager {
     func error()     { fire(.error) }
     /// Selection haptic for menu items and pickers
     func selection() { fire(.selection) }
+
+    // MARK: - Signature (Core Haptics) patterns
+
+    /// Distinctive, *composed* haptics for standout moments — these are meant to feel different
+    /// from the everyday taps above so the user can recognize them by touch. Falls back to a
+    /// sequence of simple generators when Core Haptics isn't supported (e.g. older devices,
+    /// Simulator) or the engine can't start, so there's never a regression to "no feedback".
+    enum Signature {
+        case achievement   // celebratory rising triple-tap (badge unlocked)
+        case aiReady       // soft anticipation → crisp arrival (AI results landed)
+        case love          // quick crisp double-pop (favorite / like)
+        case sparkle       // tiny high-sharpness tick (a standout "Model G moment")
+    }
+
+    private var hapticEngine: CHHapticEngine?
+    private lazy var supportsCoreHaptics = CHHapticEngine.capabilitiesForHardware().supportsHaptics
+
+    /// Play a composed signature haptic (gated by the user setting, with a graceful fallback).
+    func play(_ signature: Signature) {
+        guard isEnabled else { return }
+        guard supportsCoreHaptics, let pattern = try? Self.pattern(for: signature) else {
+            playFallback(for: signature)
+            return
+        }
+        do {
+            let engine = try runningEngine()
+            let player = try engine.makePlayer(with: pattern)
+            try player.start(atTime: CHHapticTimeImmediate)
+        } catch {
+            playFallback(for: signature)
+        }
+    }
+
+    private func runningEngine() throws -> CHHapticEngine {
+        if let engine = hapticEngine {
+            try? engine.start() // no-op if already running; cheap to ensure it's up
+            return engine
+        }
+        let engine = try CHHapticEngine()
+        engine.isAutoShutdownEnabled = true
+        engine.resetHandler = { [weak self] in try? self?.hapticEngine?.start() }
+        try engine.start()
+        hapticEngine = engine
+        return engine
+    }
+
+    private static func pattern(for signature: Signature) throws -> CHHapticPattern {
+        func tap(_ time: TimeInterval, intensity: Float, sharpness: Float) -> CHHapticEvent {
+            CHHapticEvent(eventType: .hapticTransient, parameters: [
+                CHHapticEventParameter(parameterID: .hapticIntensity, value: intensity),
+                CHHapticEventParameter(parameterID: .hapticSharpness, value: sharpness)
+            ], relativeTime: time)
+        }
+        let events: [CHHapticEvent]
+        switch signature {
+        case .achievement:                       // three rising taps — a little triumph
+            events = [
+                tap(0.00, intensity: 0.6, sharpness: 0.30),
+                tap(0.10, intensity: 0.8, sharpness: 0.50),
+                tap(0.20, intensity: 1.0, sharpness: 0.80)
+            ]
+        case .aiReady:                           // soft lead-in, then a crisp "it's here"
+            events = [
+                tap(0.00, intensity: 0.4, sharpness: 0.20),
+                tap(0.13, intensity: 0.9, sharpness: 0.60)
+            ]
+        case .love:                              // quick crisp double-pop
+            events = [
+                tap(0.00, intensity: 0.7, sharpness: 0.70),
+                tap(0.07, intensity: 1.0, sharpness: 0.90)
+            ]
+        case .sparkle:                           // single tiny, very crisp tick
+            events = [
+                tap(0.00, intensity: 0.5, sharpness: 1.00)
+            ]
+        }
+        return try CHHapticPattern(events: events, parameters: [])
+    }
+
+    /// Approximate each signature with the simple generators when Core Haptics is unavailable.
+    private func playFallback(for signature: Signature) {
+        switch signature {
+        case .achievement:
+            fire(.success)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) { [weak self] in self?.fire(.impact(.light)) }
+        case .aiReady:
+            fire(.impact(.light))
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.13) { [weak self] in self?.fire(.success) }
+        case .love:
+            fire(.impact(.rigid))
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.07) { [weak self] in self?.fire(.impact(.light)) }
+        case .sparkle:
+            fire(.impact(.soft))
+        }
+    }
 }
