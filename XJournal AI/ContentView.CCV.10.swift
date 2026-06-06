@@ -118,7 +118,7 @@ struct JournalLibraryView: View {
             }
             .background(AtmosphereGlow())
             .toolbarBackground(.hidden, for: .navigationBar)
-            .navigationTitle(isSelectionMode ? "\(selectedItems.count) Selected" : "Journal")
+            .navigationTitle(isSelectionMode ? "\(selectedItems.count) Selected" : "Penwork")
             .toolbar {
                 if isSelectionMode {
                     // Selection mode toolbar - show only selection controls
