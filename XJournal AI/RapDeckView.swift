@@ -33,6 +33,9 @@ struct RapDeckView: View {
                 }
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
+            .onChange(of: index) { _, _ in
+                HapticFeedbackManager.shared.fire(.impact(.light))
+            }
 
             if generations.count > 1 {
                 pageIndicator

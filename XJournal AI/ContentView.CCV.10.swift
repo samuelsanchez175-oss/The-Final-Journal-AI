@@ -160,7 +160,7 @@ struct JournalLibraryView: View {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         HStack(spacing: 0) {
                             Button {
-                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                HapticFeedbackManager.shared.lightTap()
                                 showAnalytics = true
                             } label: {
                                 Image(systemName: "chart.bar.fill")
@@ -170,7 +170,7 @@ struct JournalLibraryView: View {
                             .accessibilityHint("View writing statistics and insights")
 
                             Button {
-                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                HapticFeedbackManager.shared.lightTap()
                                 showProfile.toggle()
                             } label: {
                                 Image(systemName: "person.crop.circle")
@@ -180,7 +180,7 @@ struct JournalLibraryView: View {
                             .accessibilityHint("Open profile settings")
 
                             Button {
-                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                HapticFeedbackManager.shared.lightTap()
                                 showReleaseNotes = true
                             } label: {
                                 Image(systemName: "clock.arrow.circlepath")
@@ -190,7 +190,7 @@ struct JournalLibraryView: View {
                             .accessibilityHint("View app updates and new features")
 
                             Button {
-                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                HapticFeedbackManager.shared.lightTap()
                                 showSupportShop = true
                             } label: {
                                 Image(systemName: "bag")
@@ -462,8 +462,7 @@ struct JournalLibraryView: View {
     }
 
     private func prepareHapticForNewNote() {
-        let generator = UIImpactFeedbackGenerator(style: .light)
-        generator.impactOccurred()
+        HapticFeedbackManager.shared.lightTap()
     }
 
     private func addItem() {

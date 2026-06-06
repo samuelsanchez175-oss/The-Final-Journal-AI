@@ -117,7 +117,7 @@ struct MomentumProfileTabs: View {
             ForEach(ProfileTab.allCases) { tab in
                 let isSelected = selection == tab
                 Button {
-                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+                    HapticFeedbackManager.shared.softTap()
                     withAnimation(.easeOut(duration: 0.18)) { selection = tab }
                 } label: {
                     HStack(spacing: 5) {
@@ -189,7 +189,7 @@ struct ProfilePopoverView: View {
 
     private func exportUserData() {
         // TODO: Implement data export (journal entries, profile, settings).
-        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+        HapticFeedbackManager.shared.mediumTap()
         print("Export data functionality - to be implemented")
     }
 
@@ -369,7 +369,7 @@ struct ProfilePopoverView: View {
 
         hasUnsavedChanges = false
         if thenDismiss {
-            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+            HapticFeedbackManager.shared.mediumTap()
             withAnimation { showSaveConfirmation = true }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { dismiss() }
         }
@@ -510,7 +510,7 @@ struct ProfilePopoverView: View {
     /// Nudge shown on the You tab when no AI key is set — jumps to the AI tab.
     private var connectKeyBanner: some View {
         Button {
-            UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+            HapticFeedbackManager.shared.softTap()
             withAnimation(.easeOut(duration: 0.18)) { selectedTab = .ai }
         } label: {
             HStack(spacing: 10) {
@@ -728,6 +728,7 @@ struct ProfilePopoverView: View {
                 MomentumSectionHeader(title: "Preferences")
                 PreferencesInfoView()
                 SignalLayerAdvancedModeToggle()
+                HapticsSettingsToggle()
             }
 
             // Data (merged: Export + Reset Splash Screens)
@@ -745,7 +746,7 @@ struct ProfilePopoverView: View {
 
                 Button {
                     SplashScreenManager.shared.resetAllSplashScreens()
-                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+                    HapticFeedbackManager.shared.softTap()
                 } label: {
                     navRow(title: "Reset Splash Screens", systemImage: "arrow.counterclockwise")
                 }
@@ -783,7 +784,7 @@ struct ProfilePopoverView: View {
                 }
                 .buttonStyle(.plain)
                 .onTapGesture {
-                    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+                    HapticFeedbackManager.shared.softTap()
                 }
             }
         }
@@ -869,6 +870,40 @@ struct SignalLayerAdvancedModeToggle: View {
             }
 
             Text("Show Signal Mode, Axes, and technical details in suggestion cards")
+                .font(.caption2)
+                .foregroundStyle(.tertiary)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Momentum.surfaceElevated)
+        )
+    }
+}
+
+// MARK: - Haptics Settings Toggle
+struct HapticsSettingsToggle: View {
+    @AppStorage(HapticFeedbackManager.enabledKey) private var hapticsEnabled: Bool = true
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text("Haptic Feedback")
+                    .font(.caption)
+                    .foregroundStyle(Momentum.contentSecondary)
+
+                Spacer()
+
+                Toggle("", isOn: $hapticsEnabled)
+                    .labelsHidden()
+                    .onChange(of: hapticsEnabled) { _, newValue in
+                        // Let the user feel the result when turning haptics back on.
+                        if newValue { HapticFeedbackManager.shared.success() }
+                    }
+            }
+
+            Text("Tactile taps for buttons, toggles, swipes, and AI results. Also follows your iOS System Haptics setting.")
                 .font(.caption2)
                 .foregroundStyle(.tertiary)
         }

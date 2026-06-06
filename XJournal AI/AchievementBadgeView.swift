@@ -144,8 +144,7 @@ struct AchievementCelebrationView: View {
             }
             
             // Haptic feedback
-            let generator = UINotificationFeedbackGenerator()
-            generator.notificationOccurred(.success)
+            HapticFeedbackManager.shared.success()
         }
     }
     

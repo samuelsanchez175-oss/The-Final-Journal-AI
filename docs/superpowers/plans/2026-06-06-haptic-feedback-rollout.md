@@ -1,8 +1,28 @@
 # Haptic Feedback Rollout — Plan
 
 **Date:** 2026-06-06
-**Status:** Proposed (plan only — not yet implemented)
+**Status:** Implemented (Phases 1, 2, 4 complete; Phase 3 seeded in Rap Suggestions)
 **Scope:** App-wide tactile feedback, standardized and made consistent.
+
+## Implementation status (2026-06-06)
+
+- **Phase 1 (Foundation) — done.** `HapticFeedbackManager` now has a semantic `Haptic`
+  enum, `fire(_:)` / `prepare(_:)`, retained + re-prepared generators, and an `isEnabled`
+  gate read from `UserDefaults` key `hapticsEnabled` (default on). Old methods kept as gated
+  wrappers; added `softTap()` / `rigidTap()`.
+- **Phase 2 (Standardize) — done.** Every raw `UIImpactFeedbackGenerator` /
+  `UINotificationFeedbackGenerator` call site across the app was routed through the manager,
+  and the global `lightHaptic()` now delegates to it — so the user toggle is authoritative.
+- **Phase 4 (Settings UI) — done.** `HapticsSettingsToggle` added to Settings → Preferences,
+  bound to `@AppStorage("hapticsEnabled")`, fires a sample on enable.
+- **Phase 3 (Coverage) — partial.** Added to the Rap Suggestions deck (swipe tick + island
+  toggle selection). Remaining surfaces (generation lifecycle, recording, nav) follow the
+  mapping table below as a fast-follow.
+
+Decision taken: the in-app toggle gates **all** haptics (including errors) for predictability;
+revisit if we want failures to stay feel-able when haptics are off.
+
+---
 
 ---
 

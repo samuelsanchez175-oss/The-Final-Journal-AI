@@ -58,7 +58,7 @@ struct AIErrorBanner: View {
 
                 if let fixButtonTitle, let onFix {
                     Button {
-                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        HapticFeedbackManager.shared.mediumTap()
                         onFix()
                     } label: {
                         HStack(spacing: 6) {

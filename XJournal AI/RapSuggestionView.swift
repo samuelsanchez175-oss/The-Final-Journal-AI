@@ -1038,7 +1038,7 @@ struct RapSuggestionView: View {
                         )
                         UserBehaviorTracker.shared.trackSuggestionInteraction(action: .favorited, suggestionId: suggestion.id)
                     }
-                    UINotificationFeedbackGenerator().notificationOccurred(.success)
+                    HapticFeedbackManager.shared.success()
                 } label: {
                     Image(systemName: favoriteSuggestions.contains(suggestion.id) ? "star.fill" : "star")
                         .font(.subheadline)
@@ -1071,7 +1071,7 @@ struct RapSuggestionView: View {
                     // Show contextual feedback form
                     showingFeedbackForm = suggestion.id
 
-                    UINotificationFeedbackGenerator().notificationOccurred(.error)
+                    HapticFeedbackManager.shared.error()
                 } label: {
                     Image(systemName: userFeedback[suggestion.id] == .disliked ? "hand.thumbsdown.fill" : "hand.thumbsdown")
                         .font(.subheadline)
@@ -1158,7 +1158,7 @@ struct RapSuggestionView: View {
                         recordFeedback(suggestion: suggestion, feedback: feedback)
                     }
 
-                    UINotificationFeedbackGenerator().notificationOccurred(.success)
+                    HapticFeedbackManager.shared.success()
                 } label: {
                     Image(systemName: userFeedback[suggestion.id] == .liked ? "hand.thumbsup.fill" : "hand.thumbsup")
                         .font(.subheadline)
@@ -1184,7 +1184,7 @@ struct RapSuggestionView: View {
                         )
                         UserBehaviorTracker.shared.trackSuggestionInteraction(action: .regenerated, suggestionId: nil)
 
-                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        HapticFeedbackManager.shared.mediumTap()
                         onRegenerate()
                     } label: {
                         Image(systemName: "arrow.clockwise")
@@ -1348,18 +1348,18 @@ struct RapSuggestionView: View {
         if likedSet.contains(lineIndex) {
             // Currently liked, remove it (back to neutral) — nothing new to record.
             likedSet.remove(lineIndex)
-            UINotificationFeedbackGenerator().notificationOccurred(.success)
+            HapticFeedbackManager.shared.success()
         } else if dislikedSet.contains(lineIndex) {
             // Currently disliked, switch to liked
             dislikedSet.remove(lineIndex)
             likedSet.insert(lineIndex)
             CorpusFeedbackStore.shared.recordAcceptance(text: lineText, accepted: true)
-            UINotificationFeedbackGenerator().notificationOccurred(.success)
+            HapticFeedbackManager.shared.success()
         } else {
             // Neutral, add to disliked
             dislikedSet.insert(lineIndex)
             CorpusFeedbackStore.shared.recordAcceptance(text: lineText, accepted: false)
-            UINotificationFeedbackGenerator().notificationOccurred(.error)
+            HapticFeedbackManager.shared.error()
         }
 
         highlightedLines[suggestionId] = likedSet

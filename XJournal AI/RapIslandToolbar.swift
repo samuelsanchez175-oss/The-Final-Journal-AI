@@ -46,7 +46,10 @@ struct RapIslandToolbar: View {
     }
 
     private func toggleButton(icon: String, label: String, isOn: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
+        Button(action: {
+            HapticFeedbackManager.shared.fire(.selection)
+            action()
+        }) {
             VStack(spacing: 2) {
                 Image(systemName: icon).font(.headline)
                 Text(label).font(.caption2)
@@ -58,7 +61,10 @@ struct RapIslandToolbar: View {
     }
 
     private var groupsButton: some View {
-        Button { showGroups = true } label: {
+        Button {
+            HapticFeedbackManager.shared.fire(.impact(.light))
+            showGroups = true
+        } label: {
             VStack(spacing: 2) {
                 Image(systemName: "text.magnifyingglass").font(.headline)
                 Text("Groups").font(.caption2)

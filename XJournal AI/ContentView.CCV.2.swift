@@ -243,7 +243,7 @@ class KeychainHelper {
 // MARK: - Helper Functions
 
 func lightHaptic() {
-    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    HapticFeedbackManager.shared.lightTap()
 }
 
 // MARK: - Glass Settings
