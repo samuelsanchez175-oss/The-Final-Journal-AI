@@ -92,16 +92,21 @@ class ModelGCoreCoordinatorV4 {
             // (confident/luxurious/…) — so this reliably matches, unlike the topic `themeName`.
             let tones = (themeContext?.emotionalTone ?? "")
                 .split(separator: "|").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
-            let topics = ((themeContext?.themeName ?? "").split(separator: " ").map(String.init)
-                + (themeContext?.jargonPalette ?? [])
-                + (directedParams?.selectedTopics ?? [])
-                + (directedParams?.worldBuildingWords ?? []))
+            // Built from explicitly-typed sub-arrays: the original single `+`-chain expression
+            // overran the Swift type-checker ("unable to type-check in reasonable time"), which
+            // cascaded into the key-path inference errors on `retrieved.exemplars` below.
+            let nameTokens: [String] = (themeContext?.themeName ?? "")
+                .split(separator: " ").map(String.init)
+            let jargon: [String] = themeContext?.jargonPalette ?? []
+            let userSelected: [String] = directedParams?.selectedTopics ?? []
+            let worldWords: [String] = directedParams?.worldBuildingWords ?? []
+            let topics: [String] = (nameTokens + jargon + userSelected + worldWords)
                 .filter { $0.count >= 3 }
             let retrieved = ModelGCorpusRetriever(store: corpusStore, embeddingIndex: ModelGEmbeddingIndex.shared).retrieve(
                 tones: tones, topics: topics, draft: input,
                 brands: directedParams?.worldBuildingWords ?? [], k: kExemplars)
-            v4Exemplars = retrieved.exemplars.map(\.text)
-            v4ExemplarNorms = retrieved.exemplars.map(\.norm)
+            v4Exemplars = retrieved.exemplars.map { $0.text }
+            v4ExemplarNorms = retrieved.exemplars.map { $0.norm }
             v4Vocab = retrieved.vocab
         } catch {
             #if DEBUG
