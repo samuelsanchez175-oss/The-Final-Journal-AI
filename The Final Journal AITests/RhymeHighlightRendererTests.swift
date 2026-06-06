@@ -15,7 +15,7 @@ struct RhymeHighlightRendererTests {
         let lines = RhymeHighlightRenderer.perLineAttributed(fullText: full, spans: spans)
         #expect(lines.count == 1)
         #expect(String(lines[0].characters) == full)
-        #expect(lines[0].runs.contains { $0.foregroundColor != nil })   // "fire" coloured
+        #expect(lines[0].runs.contains { $0.backgroundColor != nil })   // "fire" highlighted
     }
 
     @Test func spans_map_to_the_correct_line() {
@@ -28,14 +28,14 @@ struct RhymeHighlightRendererTests {
         #expect(lines.count == 2)
         #expect(String(lines[0].characters) == "higher in the sky")
         #expect(String(lines[1].characters) == "buyer wants the buy")
-        #expect(lines[0].runs.contains { $0.foregroundColor != nil })
-        #expect(lines[1].runs.contains { $0.foregroundColor != nil })
+        #expect(lines[0].runs.contains { $0.backgroundColor != nil })
+        #expect(lines[1].runs.contains { $0.backgroundColor != nil })
     }
 
     @Test func no_spans_means_no_colouring() {
         let lines = RhymeHighlightRenderer.perLineAttributed(fullText: "plain line", spans: [])
         #expect(lines.count == 1)
-        #expect(lines[0].runs.allSatisfy { $0.foregroundColor == nil })
+        #expect(lines[0].runs.allSatisfy { $0.backgroundColor == nil })
     }
 
     @Test func empty_text_yields_one_empty_line() {

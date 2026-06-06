@@ -221,8 +221,8 @@ struct RhymeHighlighterEngine {
                 .append((RhymeGroupWord(word: word, range: range, lineIndex: 0, positionInLine: 0, isLineEnd: false), sig))
         }
         
-        // Cache colors count to avoid main actor access
-        let colorsCount = 6 // RhymeColorPalette.colors.count (hardcoded to avoid main actor isolation)
+        // Cache colors count to avoid main actor access. Keep in sync with RhymeColorPalette.colors.
+        let colorsCount = 12 // RhymeColorPalette.colors.count (hardcoded to avoid main actor isolation)
         
         var result: [RhymeGroup] = []
         

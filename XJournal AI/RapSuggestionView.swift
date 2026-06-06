@@ -370,7 +370,9 @@ struct RapSuggestionView: View {
                     let lines = suggestion.text.components(separatedBy: "\n").filter { !$0.isEmpty }
                     toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex,
                                        lineText: lineIndex < lines.count ? lines[lineIndex] : "")
-                }
+                },
+                likedLines: highlightedLines,
+                dislikedLines: dislikedLines
             )
             RapIslandToolbar(
                 rhymeOn: $rhymeOn,
