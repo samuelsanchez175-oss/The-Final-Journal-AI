@@ -112,6 +112,7 @@ struct ModelGControlSurfaceView: View {
 
     private var formContent: some View {
         VStack(alignment: .leading, spacing: 20) {
+            engineSection
             userPromptSection
             styleOverrideSection
             lineCountSection
@@ -121,6 +122,15 @@ struct ModelGControlSurfaceView: View {
             rhymeGroupsSection
         }
         .padding()
+    }
+
+    /// Generation engine toggles (Model G v4 + v5 grader) so they're visible and switchable
+    /// right before generating — same flags as Profile → AI → Model.
+    private var engineSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            MomentumSectionHeader(title: "Generation engine")
+            ModelEngineTogglesView()
+        }
     }
 
     private var styleOverrideSection: some View {
