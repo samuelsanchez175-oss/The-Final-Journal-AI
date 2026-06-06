@@ -4,46 +4,49 @@
 //
 //  Self-contained list of audio "stems" with a play/pause toggle per row.
 //
-//  Rewritten to remove the compile errors from a half-finished generated version:
-//   • line 21 `$item.stemPaths` — needed `@Bindable` + a non-existent `Item.stemPaths`.
-//     This view now owns its data (no `Item` dependency at all), so those errors cannot occur.
-//   • line 32 `nowPlaying ?? <#default value#> == path` — an unfilled Xcode placeholder.
-//     Replaced with `nowPlaying == path` (`Optional<String> == String` is valid Swift; no
-//     unwrap and no placeholder needed).
+//  Self-contained on purpose: it owns its data (no `Item`/`@Bindable` dependency), which removes
+//  the cross-file compile fragility that previously broke the build, and uses stable per-row UUIDs
+//  so duplicate paths stay independent. To persist edits, wire it to a model where it's presented
+//  (e.g. pass `item.stemPaths` in and add a save callback) — see Item.stemPaths.
 //
 
 import SwiftUI
 
 struct StemsListView: View {
-    @State private var stemPaths: [String]
-    @State private var nowPlaying: String?
+    private struct Stem: Identifiable {
+        let id = UUID()
+        var path: String
+    }
+
+    @State private var stems: [Stem]
+    @State private var playingID: UUID?
     @State private var newStemPath: String = ""
 
     /// Pass initial stem paths in, or use `StemsListView()` for an empty list.
     init(stemPaths: [String] = []) {
-        _stemPaths = State(initialValue: stemPaths)
-        _nowPlaying = State(initialValue: nil)
+        _stems = State(initialValue: stemPaths.map { Stem(path: $0) })
+        _playingID = State(initialValue: nil)
     }
 
     var body: some View {
         List {
             Section("Stems") {
-                if stemPaths.isEmpty {
+                if stems.isEmpty {
                     Text("No stems yet. Add one below.")
                         .foregroundStyle(.secondary)
                 } else {
-                    ForEach(stemPaths, id: \.self) { path in
+                    ForEach(stems) { stem in
                         HStack(spacing: 12) {
                             Button {
-                                nowPlaying = (nowPlaying == path) ? nil : path
+                                playingID = (playingID == stem.id) ? nil : stem.id
                             } label: {
-                                Image(systemName: nowPlaying == path ? "pause.circle.fill" : "play.circle.fill")
+                                Image(systemName: playingID == stem.id ? "pause.circle.fill" : "play.circle.fill")
                                     .font(.title2)
                                     .foregroundStyle(.tint)
                             }
                             .buttonStyle(.plain)
 
-                            Text(stemDisplayName(path))
+                            Text(stemDisplayName(stem.path))
                                 .lineLimit(1)
                                 .truncationMode(.middle)
                             Spacer()
@@ -74,15 +77,15 @@ struct StemsListView: View {
     private func addStem() {
         let path = trimmedNewPath
         guard !path.isEmpty else { return }
-        stemPaths.append(path)
+        stems.append(Stem(path: path))
         newStemPath = ""
     }
 
     private func deleteStems(at offsets: IndexSet) {
-        for index in offsets where stemPaths[index] == nowPlaying {
-            nowPlaying = nil
+        for index in offsets where stems[index].id == playingID {
+            playingID = nil
         }
-        stemPaths.remove(atOffsets: offsets)
+        stems.remove(atOffsets: offsets)
     }
 
     private func stemDisplayName(_ path: String) -> String {
@@ -93,6 +96,6 @@ struct StemsListView: View {
 
 #Preview {
     NavigationStack {
-        StemsListView(stemPaths: ["/tmp/drums.wav", "/tmp/vocals.wav", "/tmp/bass.wav"])
+        StemsListView(stemPaths: ["/tmp/drums.wav", "/tmp/vocals.wav", "/tmp/drums.wav"])
     }
 }
