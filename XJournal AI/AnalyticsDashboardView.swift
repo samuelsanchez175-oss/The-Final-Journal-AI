@@ -585,7 +585,6 @@ struct AnalyticsDashboardView: View {
     
     private var networkPerformanceSection: some View {
         let stats = NetworkPerformanceMonitor.shared.getStats()
-        let isDarkMode = colorScheme == .dark
         
         return VStack(alignment: .leading, spacing: 24) {
             Text("Network Performance")
@@ -677,7 +676,6 @@ struct AnalyticsDashboardView: View {
         let stats = TokenUsageTracker.shared.getStats()
         _ = TokenUsageTracker.shared.getDailyStats()
         _ = TokenUsageTracker.shared.getWeeklyStats()
-        let isDarkMode = colorScheme == .dark
         
         return VStack(alignment: .leading, spacing: 24) {
             Text("Token Usage")
@@ -760,7 +758,6 @@ struct AnalyticsDashboardView: View {
     
     private var jsonValidationSection: some View {
         let stats = JSONValidationService.shared.getStats()
-        let isDarkMode = colorScheme == .dark
         
         return VStack(alignment: .leading, spacing: 24) {
             Text("JSON Validation")
@@ -825,7 +822,6 @@ struct AnalyticsDashboardView: View {
     
     private var errorCorrelationSection: some View {
         let analysis = ErrorCorrelationAnalyzer.shared.analyzeErrors()
-        let isDarkMode = colorScheme == .dark
         
         return VStack(alignment: .leading, spacing: 24) {
             Text("Error Correlation")
