@@ -1954,17 +1954,19 @@ struct NoteEditorView: View {
                     improveFlowLoadingStep = nil
                     showContextHighlight = false
                     showImproveFlow = true
+                    HapticFeedbackManager.shared.success()
                 }
             } catch {
                 await MainActor.run {
                     isImprovingFlow = false
                     improveFlowLoadingStep = nil
                     showContextHighlight = false
+                    HapticFeedbackManager.shared.error()
                 }
             }
         }
     }
-    
+
     private func handleRewriteLine() {
         // Check feature access (Phase 1: Feature Gating)
         if !FeatureGate.checkAccess(.rewriteLine, showPaywall: { featureName in

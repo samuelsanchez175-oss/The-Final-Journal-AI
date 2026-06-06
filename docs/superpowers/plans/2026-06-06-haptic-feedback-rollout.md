@@ -15,9 +15,11 @@
   and the global `lightHaptic()` now delegates to it — so the user toggle is authoritative.
 - **Phase 4 (Settings UI) — done.** `HapticsSettingsToggle` added to Settings → Preferences,
   bound to `@AppStorage("hapticsEnabled")`, fires a sample on enable.
-- **Phase 3 (Coverage) — partial.** Added to the Rap Suggestions deck (swipe tick + island
-  toggle selection). Remaining surfaces (generation lifecycle, recording, nav) follow the
-  mapping table below as a fast-follow.
+- **Phase 3 (Coverage) — broad.** Rap Suggestions deck (swipe tick + island toggle selection);
+  audio recording (medium on start, light on stop, success/error on processing); AI generation
+  lifecycle (success/error on the main deck **and** Improve-Flow paths — main path was already
+  wired and is now gated). Remaining low-traffic nav/segment surfaces follow the mapping table
+  as a fast-follow.
 
 Decision taken: the in-app toggle gates **all** haptics (including errors) for predictability;
 revisit if we want failures to stay feel-able when haptics are off.

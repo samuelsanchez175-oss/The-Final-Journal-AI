@@ -165,7 +165,8 @@ struct AudioRecorderView: View {
             if granted {
                 let audioFilename = getDocumentsDirectory().appendingPathComponent("recording_\(UUID().uuidString).m4a")
                 recorder.startRecording(to: audioFilename.path)
-                
+                HapticFeedbackManager.shared.fire(.impact(.medium))
+
                 recordingTime = 0
                 timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
                     recordingTime += 0.1
@@ -180,6 +181,7 @@ struct AudioRecorderView: View {
     private func stopRecording() {
         timer?.invalidate()
         if let audioPath = recorder.stopRecording() {
+            HapticFeedbackManager.shared.fire(.impact(.light))
             item.audioPath = audioPath
             // Process recorded audio: get duration, transcribe, generate summary
             // Don't dismiss immediately - wait for processing to complete
@@ -189,7 +191,10 @@ struct AudioRecorderView: View {
                 await MainActor.run {
                     isProcessing = false
                     if processingError == nil {
+                        HapticFeedbackManager.shared.success()
                         dismiss()
+                    } else {
+                        HapticFeedbackManager.shared.error()
                     }
                 }
             }
