@@ -2,42 +2,58 @@
 //  StemsListView.swift
 //  XJournal AI
 //
-//  Recreated from scratch. The previous (local, uncommitted) copy referenced `item.stemPaths`
-//  before that property existed and used `$item` without `@Bindable`, which produced:
-//    - "Referencing subscript 'subscript(dynamicMember:)' requires wrapper 'Bindable<Item>'"
-//    - "Value of type 'Item' has no dynamic member 'stemPaths'"
-//    - "Cannot convert value of type '[Any]' to expected argument type 'Binding<Subject>'"
-//    - "Value of optional type 'String?' must be unwrapped…"
-//  This version declares `@Bindable var item: Item` (so $-bindings work), reads the now-existing
-//  `item.stemPaths` ([String], non-optional), and handles paths safely — so it compiles clean.
+//  Self-contained list of audio "stems" with a play/pause toggle per row.
+//
+//  Self-contained on purpose: it owns its data (no `Item`/`@Bindable` dependency), which removes
+//  the cross-file compile fragility that previously broke the build, and uses stable per-row UUIDs
+//  so duplicate paths stay independent. To persist edits, wire it to a model where it's presented
+//  (e.g. pass `item.stemPaths` in and add a save callback) — see Item.stemPaths.
 //
 
 import SwiftUI
 
-/// Lists the audio "stems" (separated track file paths) attached to an `Item`, with add + delete.
 struct StemsListView: View {
-    @Bindable var item: Item
+    private struct Stem: Identifiable {
+        let id = UUID()
+        var path: String
+    }
 
+    @State private var stems: [Stem]
+    @State private var playingID: UUID?
     @State private var newStemPath: String = ""
+
+    /// Pass initial stem paths in, or use `StemsListView()` for an empty list.
+    init(stemPaths: [String] = []) {
+        _stems = State(initialValue: stemPaths.map { Stem(path: $0) })
+        _playingID = State(initialValue: nil)
+    }
 
     var body: some View {
         List {
-            Section {
-                if item.stemPaths.isEmpty {
-                    Text("No stems yet. Add a stem file path below.")
+            Section("Stems") {
+                if stems.isEmpty {
+                    Text("No stems yet. Add one below.")
                         .foregroundStyle(.secondary)
                 } else {
-                    ForEach(Array(item.stemPaths.enumerated()), id: \.offset) { _, path in
-                        Label(stemDisplayName(path), systemImage: "waveform")
-                            .lineLimit(1)
-                            .truncationMode(.middle)
+                    ForEach(stems) { stem in
+                        HStack(spacing: 12) {
+                            Button {
+                                playingID = (playingID == stem.id) ? nil : stem.id
+                            } label: {
+                                Image(systemName: playingID == stem.id ? "pause.circle.fill" : "play.circle.fill")
+                                    .font(.title2)
+                                    .foregroundStyle(.tint)
+                            }
+                            .buttonStyle(.plain)
+
+                            Text(stemDisplayName(stem.path))
+                                .lineLimit(1)
+                                .truncationMode(.middle)
+                            Spacer()
+                        }
                     }
-                    .onDelete { offsets in
-                        item.stemPaths.remove(atOffsets: offsets)
-                    }
+                    .onDelete(perform: deleteStems)
                 }
-            } header: {
-                Text("Stems")
             }
 
             Section {
@@ -61,13 +77,25 @@ struct StemsListView: View {
     private func addStem() {
         let path = trimmedNewPath
         guard !path.isEmpty else { return }
-        item.stemPaths.append(path)
+        stems.append(Stem(path: path))
         newStemPath = ""
     }
 
-    /// File name for a stem path; falls back to the raw path if there's no last component.
+    private func deleteStems(at offsets: IndexSet) {
+        for index in offsets where stems[index].id == playingID {
+            playingID = nil
+        }
+        stems.remove(atOffsets: offsets)
+    }
+
     private func stemDisplayName(_ path: String) -> String {
         let name = URL(fileURLWithPath: path).lastPathComponent
         return name.isEmpty ? path : name
+    }
+}
+
+#Preview {
+    NavigationStack {
+        StemsListView(stemPaths: ["/tmp/drums.wav", "/tmp/vocals.wav", "/tmp/drums.wav"])
     }
 }
