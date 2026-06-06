@@ -752,6 +752,18 @@ struct ProfilePopoverView: View {
                     navRow(title: "Reset Splash Screens", systemImage: "arrow.counterclockwise")
                 }
                 .buttonStyle(.plain)
+
+                Button {
+                    HapticFeedbackManager.shared.softTap()
+                    SplashScreenManager.shared.resetOnboarding()
+                    NotificationCenter.default.post(name: .showOnboardingAgain, object: nil)
+                    dismiss()
+                } label: {
+                    navRow(title: "Reset Welcome Screen", systemImage: "hand.wave")
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Reset Welcome Screen")
+                .accessibilityHint("Show the first-run welcome again")
             }
 
             // About (merged: Version/Build + Storage + Invite)
