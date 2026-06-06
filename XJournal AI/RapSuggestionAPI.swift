@@ -592,8 +592,13 @@ class RapSuggestionAPI {
             #if DEBUG
             print("Model G Core: Starting \(modelGCoreSuggestionSetCount) set(s) (\(useV2 ? "v2" : "v1"))...")
             #endif
-            let baseSource = ModelGEnvironment.useModelGv4 ? "Model G Core v4.0"
+            let baseEngine = ModelGEnvironment.useModelGv4 ? "Model G Core v4.0"
                 : (ModelGEnvironment.useModelGv3 ? "Model G Core v3.0" : (useV2 ? "Model G Core v2.0" : "Model G Core v1.0"))
+            // The v5 grader only runs inside the v4 path, so only tag it when both are active —
+            // this makes "is v5 actually selecting?" verifiable from the suggestion's source.
+            let baseSource = (ModelGEnvironment.useModelGv4 && ModelGEnvironment.useV5Grader)
+                ? baseEngine + " · v5 grader"
+                : baseEngine
             var coreSuggestions: [RapSuggestion] = []
 
             // Generate all sets concurrently so their network round-trips overlap.
