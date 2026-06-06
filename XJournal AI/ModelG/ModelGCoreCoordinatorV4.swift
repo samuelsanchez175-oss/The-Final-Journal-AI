@@ -101,13 +101,23 @@ class ModelGCoreCoordinatorV4 {
 
         // Step 3 — grade each candidate by AUTHENTICITY (the same VerseLedger rubric the app logs
         // and eval/grade_modelg.py defines) and keep the highest NET. Replaces the weaker per-bar
-        // ScoringEngine selection: best-of-N is now chosen on the real authenticity score.
+        // Best-of-N is chosen on the real authenticity score. When the v5 grader is enabled
+        // (typicality-calibrated, slant-rhyme aware) it drives selection; else the original scorer.
+        let useV5 = ModelGEnvironment.useV5Grader
         var best: (hook: String, bars: [String])?
         var bestNet = -1.0
+        var bestTypicality = 0.0
         for verse in candidates where verse.bars.count >= 8 {
             let usable = Array(verse.bars.prefix(barCount))
-            let net = VerseLedgerScorer.score(hook: verse.hook, bars: usable).net
-            if net > bestNet { bestNet = net; best = verse }
+            let net: Double
+            var typ = 0.0
+            if useV5 {
+                let s = VerseLedgerV5Scorer.score(hook: verse.hook, bars: usable)
+                net = s.net; typ = s.typicality
+            } else {
+                net = VerseLedgerScorer.score(hook: verse.hook, bars: usable).net
+            }
+            if net > bestNet { bestNet = net; bestTypicality = typ; best = verse }
         }
 
         guard let chosen = best else {
@@ -130,7 +140,7 @@ class ModelGCoreCoordinatorV4 {
         }
 
         let sessionLog = GenerationSessionLog(
-            modelVersion: "Model G Core v4.0 (RAG-grounded)",
+            modelVersion: "Model G Core v4.0 (RAG-grounded)" + (useV5 ? " · v5 grader" : ""),
             styleBranch: styleProfile.name,
             riskProfile: riskManager.riskIndex,
             beatSummary: beatFingerprint.map { "\($0.bpm) BPM, \($0.key) \($0.scale)" },
@@ -142,7 +152,9 @@ class ModelGCoreCoordinatorV4 {
             deviationMetadata: [
                 "plan": plan.centralImage.isEmpty ? "none" : plan.centralImage,
                 "exemplars": "\(exemplars.count)",
-                "authenticityNet": String(format: "%.0f", bestNet)
+                "authenticityNet": String(format: "%.0f", bestNet),
+                "grader": useV5 ? "v5" : "v4",
+                "v5Typicality": String(format: "%.0f", bestTypicality)
             ],
             averageBarScore: averageBarScore,
             timestamp: Date()
