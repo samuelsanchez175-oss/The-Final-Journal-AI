@@ -42,6 +42,21 @@ enum ModelGEnvironment {
         set { UserDefaults.standard.set(newValue, forKey: "model_g_v3_enabled") }
     }
 
+    /// When true (and useModelGCore is true), use Model G v4: v3's planned verse GROUNDED in
+    /// retrieved real ground-truth bars (the RAG). Takes precedence over v3 when enabled; if v4
+    /// fails or yields nothing it falls back to v3 at runtime. Defaults ON.
+    static var useModelGv4: Bool {
+        get { (UserDefaults.standard.object(forKey: "model_g_v4_enabled") as? Bool) ?? true }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_v4_enabled") }
+    }
+
+    /// Pick the best-of-N candidate with the v5 grader (typicality-calibrated, slant-rhyme aware,
+    /// section-routed) instead of the original VerseLedgerScorer. Defaults ON so it can be A/B'd in-app.
+    static var useV5Grader: Bool {
+        get { (UserDefaults.standard.object(forKey: "model_g_v5_grader_enabled") as? Bool) ?? true }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_v5_grader_enabled") }
+    }
+
     /// Originality/inspiration target (0 = lean hard on the culture's idioms & the training lyrics;
     /// 1 = more novel). Default 0.6: fresh but grounded — sterile-original loses the voice.
     static var originalityBias: Double {

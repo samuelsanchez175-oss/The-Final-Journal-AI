@@ -367,7 +367,9 @@ struct RapSuggestionView: View {
                 criticError: humanCriticError,
                 onRetryCritic: onRetryHumanCritic,
                 onTapLine: { suggestion, lineIndex in
-                    toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex)
+                    let lines = suggestion.text.components(separatedBy: "\n").filter { !$0.isEmpty }
+                    toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex,
+                                       lineText: lineIndex < lines.count ? lines[lineIndex] : "")
                 }
             )
             RapIslandToolbar(
@@ -639,7 +641,7 @@ struct RapSuggestionView: View {
                     isDisliked: isDisliked,
                     isHighlighted: highlightedSuggestionId == suggestion.id,
                     isModelGMoment: isModelGMoment,
-                    onTap: { toggleLineFeedback(suggestionId: suggestion.id, lineIndex: index) }
+                    onTap: { toggleLineFeedback(suggestionId: suggestion.id, lineIndex: index, lineText: line) }
                 )
             }
         }
@@ -1334,26 +1336,30 @@ struct RapSuggestionView: View {
         }
     }
     
-    private func toggleLineFeedback(suggestionId: UUID, lineIndex: Int) {
-        // Cycle through: neutral -> dislike -> like -> neutral
+    private func toggleLineFeedback(suggestionId: UUID, lineIndex: Int, lineText: String) {
+        // Cycle through: neutral -> dislike -> like -> neutral.
+        // Each time a like/dislike is SET, record it into the learning loop so per-line
+        // feedback actually biases future retrieval (was previously local UI state only).
         var likedSet = highlightedLines[suggestionId] ?? []
         var dislikedSet = dislikedLines[suggestionId] ?? []
-        
+
         if likedSet.contains(lineIndex) {
-            // Currently liked, remove it (back to neutral)
+            // Currently liked, remove it (back to neutral) — nothing new to record.
             likedSet.remove(lineIndex)
             UINotificationFeedbackGenerator().notificationOccurred(.success)
         } else if dislikedSet.contains(lineIndex) {
             // Currently disliked, switch to liked
             dislikedSet.remove(lineIndex)
             likedSet.insert(lineIndex)
+            CorpusFeedbackStore.shared.recordAcceptance(text: lineText, accepted: true)
             UINotificationFeedbackGenerator().notificationOccurred(.success)
         } else {
             // Neutral, add to disliked
             dislikedSet.insert(lineIndex)
+            CorpusFeedbackStore.shared.recordAcceptance(text: lineText, accepted: false)
             UINotificationFeedbackGenerator().notificationOccurred(.error)
         }
-        
+
         highlightedLines[suggestionId] = likedSet
         dislikedLines[suggestionId] = dislikedSet
     }
