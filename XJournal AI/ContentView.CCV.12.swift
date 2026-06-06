@@ -661,6 +661,7 @@ struct ProfilePopoverView: View {
 
             VStack(alignment: .leading, spacing: 12) {
                 MomentumSectionHeader(title: "Model")
+                ModelEngineTogglesView()
                 Button {
                     lightHaptic()
                     showModelPreferences = true
@@ -913,6 +914,59 @@ struct HapticsSettingsToggle: View {
             RoundedRectangle(cornerRadius: 12, style: .continuous)
                 .fill(Momentum.surfaceElevated)
         )
+    }
+}
+
+// MARK: - Model Engine Toggles (Profile → AI → Model)
+/// Surfaces the Model G engine flags right on the profile page. Bound to the same
+/// UserDefaults keys `ModelGEnvironment` reads (`model_g_v4_enabled`,
+/// `model_g_v5_grader_enabled`), so flipping these drives generation immediately.
+struct ModelEngineTogglesView: View {
+    @AppStorage("model_g_v4_enabled") private var useModelGv4: Bool = true
+    @AppStorage("model_g_v5_grader_enabled") private var useV5Grader: Bool = true
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            engineRow(
+                title: "Model G v4 engine",
+                detail: "Grounds bars in your reference-lyric corpus (RAG). Takes priority over v3, and falls back automatically if it can't ground a verse.",
+                isOn: $useModelGv4
+            )
+
+            Divider()
+
+            engineRow(
+                title: "Model G v5 grader",
+                detail: "Picks the best of several drafts with the typicality-calibrated v5 grader (slant-rhyme aware, section-routed) instead of the original scorer.",
+                isOn: $useV5Grader
+            )
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Momentum.surfaceElevated)
+        )
+    }
+
+    private func engineRow(title: String, detail: String, isOn: Binding<Bool>) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack {
+                Text(title)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.primary)
+                Spacer()
+                Toggle("", isOn: isOn)
+                    .labelsHidden()
+                    .onChange(of: isOn.wrappedValue) { _, _ in
+                        HapticFeedbackManager.shared.fire(.selection)
+                    }
+            }
+            Text(detail)
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
     }
 }
 
