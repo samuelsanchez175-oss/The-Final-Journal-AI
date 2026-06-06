@@ -16,30 +16,41 @@ Run where an ANTHROPIC_API_KEY exists (your machine / CI / the app) — not in t
 """
 import os, sys, json, argparse
 
-AXES = ["wordplay", "specificity", "cultural_truth", "range", "human_not_caption", "punchline"]
+AXES = ["wordplay", "specificity", "flow", "slang_coinage", "effortlessness",
+        "authenticity", "range", "human_not_caption", "punchline"]
 
-JUDGE_SYSTEM = """You are a veteran rap A&R and ghostwriter with an ear for what's REAL. You judge \
-whether a verse reads like something a human rapper (Atlanta trap — the Gunna/Young Thug/Lil Baby \
-lineage and peers) would actually say on a song, versus competent-but-soulless AI imitation or \
-motivational-poster "caption rap." You can hear what statistics cannot.
+JUDGE_SYSTEM = """You are a veteran rap A&R and ghostwriter with an ear for what's REAL, judging \
+verses in the melodic-trap lineage of Gunna, Young Thug, and Lil Uzi Vert.
 
-REWARD:
-- WORDPLAY: real double-entendres and puns — especially drug/gun/money/sex multi-meaning (e.g. \
-"Uzi" = the gun AND Lil Uzi Vert AND iced-out jewelry; "slime" = YSL brotherhood AND the word).
-- SPECIFICITY: concrete, lived, surprising detail (e.g. "fall asleep at the light", "a coat his \
-grandma archived") — not generic flexing.
-- CULTURAL TRUTH: codes used correctly ("we ain't snitchin'", loyalty/street codes, accurate \
-rapper/producer nicknames and references).
-- RANGE: moving between family, luxury, and casual taboo (sex, drugs, violence) in one breath \
-without flinching.
-- PUNCHLINE: at least one line you'd rewind.
+CRUCIAL FRAME: the artist is usually a NEW, independent rapper — NOT Gunna/Thug/Uzi. Treat that \
+corpus as the CRAFT reference (how to build flow, wordplay, drip, effortlessness), NOT a life to \
+borrow. Content authenticity is judged against the artist's OWN profile (city, come-up, crew, \
+boundaries), provided below when available.
 
-PENALIZE: generic gratitude/"blessed"/manifestation rap, over-explanation, vague brand-dropping \
-with no image, anything that sounds like an Instagram caption or a motivational poster.
+Score each axis 0-10 (0 = absent / AI-tell, 10 = elite):
+- wordplay: real double-entendres / puns (drug-gun-money-sex multi-meaning; "Uzi" = gun/rapper/jewelry).
+- specificity: concrete, lived, surprising detail — including DRIP precision (exact item, colorway, \
+fabric), not generic flexing.
+- flow: pocket/cadence inventiveness — rhythm switches, vowel-stretching, riding vs breaking the beat \
+(the melodic-trap signature; judge the text's shadow of it).
+- slang_coinage: fresh slang / lexical invention vs recycled cliche (this lineage INVENTS language).
+- effortlessness: calm, unbothered "cool" — confidence without strain; trying-too-hard or \
+over-explaining is the tell.
+- authenticity: does it ring TRUE to THIS artist (per profile)? PENALIZE borrowed-lineage flexing — \
+claiming "Slime"/YSL/insider codes, or a trap/violence/drug life, that isn't theirs. For a new artist, \
+faking an OG's life is the WORST inauthenticity even when well-crafted; reward their OWN truth (their \
+block, their come-up, their people, their slang).
+- range: moving between family, luxury, and casual taboo in one breath without flinching — WITHIN what \
+is true for this artist.
+- human_not_caption: sounds like a human rapper, not an Instagram caption or motivational poster.
+- punchline: at least one line you'd rewind.
 
-Score each axis 0-10 (0 = absent / AI-tell, 10 = elite human). `overall` is 0-100. `best_line` is \
-the strongest bar, verbatim. `weakest_tell` is the most AI-sounding/inauthentic line verbatim, or \
-"none". `verdict` is one blunt sentence: does this sound like a real rapper, or not?"""
+PENALIZE generally: generic gratitude/"blessed"/manifestation rap, over-explanation, vague \
+brand-drops with no image.
+
+`overall` is 0-100. `best_line` = strongest bar verbatim. `weakest_tell` = the most AI-sounding OR \
+most inauthentic-to-this-artist line verbatim, or "none". `verdict` = one blunt sentence: does this \
+sound like a real, authentic verse for THIS artist?"""
 
 _AXIS = {"type": "object", "additionalProperties": False,
          "properties": {"score": {"type": "integer"}, "note": {"type": "string"}},
@@ -70,12 +81,17 @@ def _glossary(limit=40):
     return "\n".join(out)
 
 
-def judge_verse(lines, section="verse", model="claude-opus-4-8"):
+def judge_verse(lines, section="verse", profile=None, model="claude-opus-4-8"):
     import anthropic
     client = anthropic.Anthropic()
     glossary = _glossary()
-    user = (f"Section type: {section}\n"
-            + (f"\nReference glossary (verify any of these used in the verse):\n{glossary}\n" if glossary else "")
+    prof = ("\nARTIST PROFILE — judge authenticity against THIS, not YSL/insider lineage:\n"
+            + json.dumps(profile, indent=2) + "\n") if profile else \
+           "\n(No artist profile supplied — judge authenticity by internal consistency, and still " \
+           "penalize borrowed-lineage flexing the writer plainly hasn't earned.)\n"
+    user = (f"Section type: {section}\n" + prof
+            + (f"\nReference glossary (recognize these, but do NOT reward a new artist for borrowing "
+               f"them unless the profile makes them genuinely his):\n{glossary}\n" if glossary else "")
             + "\nGrade this verse:\n\"\"\"\n" + "\n".join(lines) + "\n\"\"\"")
     resp = client.messages.create(
         model=model,
@@ -93,12 +109,14 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Model G LLM-judge — semantic quality of a verse")
     ap.add_argument("--verse", required=True, help="verse file, one bar per line")
     ap.add_argument("--section", choices=["verse", "hook"], default="verse")
+    ap.add_argument("--profile", help="path to a user-profile JSON (grounds authenticity in the artist's truth)")
     ap.add_argument("--model", default="claude-opus-4-8")
     a = ap.parse_args()
     if not os.environ.get("ANTHROPIC_API_KEY"):
         sys.exit("Set ANTHROPIC_API_KEY to run the judge (it calls Claude).")
     lines = [l.strip() for l in open(a.verse, encoding="utf-8") if l.strip()]
-    r = judge_verse(lines, section=a.section, model=a.model)
+    profile = json.load(open(a.profile, encoding="utf-8")) if a.profile else None
+    r = judge_verse(lines, section=a.section, profile=profile, model=a.model)
     print(f"\nLLM-judge ({a.model})  —  OVERALL {r['overall']}/100")
     for ax in AXES:
         print(f"  {ax:18}{r[ax]['score']:>3}/10   {r[ax]['note']}")
