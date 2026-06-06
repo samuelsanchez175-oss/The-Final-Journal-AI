@@ -367,7 +367,9 @@ struct RapSuggestionView: View {
                 criticError: humanCriticError,
                 onRetryCritic: onRetryHumanCritic,
                 onTapLine: { suggestion, lineIndex in
-                    toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex)
+                    let lines = suggestion.text.components(separatedBy: "\n").filter { !$0.isEmpty }
+                    toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex,
+                                       lineText: lineIndex < lines.count ? lines[lineIndex] : "")
                 }
             )
             RapIslandToolbar(
