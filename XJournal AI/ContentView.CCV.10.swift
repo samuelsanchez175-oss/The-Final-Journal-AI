@@ -158,13 +158,13 @@ struct JournalLibraryView: View {
                     // Normal mode — all 5 buttons in one merged glass pill
                     // MARK: - PAGE 1.1
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        HStack(spacing: 0) {
+                        HStack(spacing: 4) {
                             Button {
                                 HapticFeedbackManager.shared.lightTap()
                                 showAnalytics = true
                             } label: {
                                 Image(systemName: "chart.bar.fill")
-                                    .frame(width: 36, height: 36)
+                                    .frame(width: 44, height: 36)
                             }
                             .accessibilityLabel("Analytics")
                             .accessibilityHint("View writing statistics and insights")
@@ -174,7 +174,7 @@ struct JournalLibraryView: View {
                                 showProfile.toggle()
                             } label: {
                                 Image(systemName: "person.crop.circle")
-                                    .frame(width: 36, height: 36)
+                                    .frame(width: 44, height: 36)
                             }
                             .accessibilityLabel("Profile")
                             .accessibilityHint("Open profile settings")
@@ -184,7 +184,7 @@ struct JournalLibraryView: View {
                                 showReleaseNotes = true
                             } label: {
                                 Image(systemName: "clock.arrow.circlepath")
-                                    .frame(width: 36, height: 36)
+                                    .frame(width: 44, height: 36)
                             }
                             .accessibilityLabel("Release Notes")
                             .accessibilityHint("View app updates and new features")
@@ -194,7 +194,7 @@ struct JournalLibraryView: View {
                                 showSupportShop = true
                             } label: {
                                 Image(systemName: "bag")
-                                    .frame(width: 36, height: 36)
+                                    .frame(width: 44, height: 36)
                             }
                             .accessibilityLabel("Support & Shop")
                             .accessibilityHint("Support the creators and view shop")
@@ -225,9 +225,10 @@ struct JournalLibraryView: View {
                                 }
                             } label: {
                                 Image(systemName: "plus")
-                                    .frame(width: 36, height: 36)
+                                    .frame(width: 44, height: 36)
                             }
                         }
+                        .padding(.horizontal, 6)
                         .foregroundStyle(Momentum.accent)
                         .glassEffect(in: Capsule())
                     }
