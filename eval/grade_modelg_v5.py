@@ -17,7 +17,7 @@ Built from the 6-lyric ablation + the big corpus baseline. Changes vs v4:
 Pure text/number -> on-device-able. Audio axes (Pocket@BPM, Singability@Key) are OFF here.
 No app code is touched.
 """
-import os, re, sys, statistics
+import os, re, sys, json, math, statistics
 from collections import Counter
 from itertools import combinations
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -178,10 +178,42 @@ def grade_v5(lines, cmu, corpus_4grams, lexicon_set, common=None, section=None, 
     pos = sum(axes[k] * W[k] for k in W)
     rep = repetition_penalty(lines, section)
     gate = plagiarism_gate(lines, corpus_4grams)
-    net_raw = max(0.0, min(100.0, pos - rep))            # authenticity (no plagiarism gate)
+    net_raw = max(0.0, min(100.0, pos - rep))            # weighted-axis authenticity (no plagiarism gate)
     net = max(0.0, min(100.0, net_raw * gate))           # final, with downstream plagiarism gate
+    typ = typicality_net(axes, section)                  # learned grader: proximity to authentic band
     return {"section": section, "axes": axes, "weights": W, "rep": rep, "gate": gate,
-            "net_raw": round(net_raw, 1), "net": round(net, 1)}
+            "net_raw": round(net_raw, 1), "net": round(net, 1), "typicality": typ}
+
+
+# ---------------- Typicality scorer (the LEARNED grader) ----------------------
+# The big-baseline + real-vs-AI fit showed authenticity is NON-monotonic: word-salad scores
+# too LOW on rhyme/meter, AI imitation scores too HIGH (too clean). So the right model isn't
+# "maximise the axes" or a linear fit (its weights flip sign depending on the negative class) —
+# it's "match the authentic distribution". The learned parameters are the per-section mean/std
+# per axis (eval/v5_fingerprint.json), built from the real corpus alone; a verse scores high by
+# being TYPICAL of real lyrics, which rejects both word-salad and over-polished AI.
+_FP = None
+
+
+def load_fingerprint(path=None):
+    global _FP
+    if _FP is None:
+        p = path or os.path.join(os.path.dirname(os.path.abspath(__file__)), "v5_fingerprint.json")
+        _FP = json.load(open(p)) if os.path.exists(p) else {}
+    return _FP
+
+
+def typicality_net(axes, section, fp=None):
+    fp = fp if fp is not None else load_fingerprint()
+    band = fp.get(section) if fp else None
+    if not band:
+        return None
+    k = fp.get("k", 1.5)
+    closeness = []
+    for a, (mean, std) in band.items():
+        z = (axes.get(a, mean) - mean) / (k * (std or 1e-9))
+        closeness.append(math.exp(-0.5 * z * z))
+    return round(100 * sum(closeness) / len(closeness), 1)
 
 
 # ---------------- setup helpers ----------------------------------------------
@@ -223,3 +255,5 @@ if __name__ == "__main__":
     for k, v in r["axes"].items():
         print(f"  {k:12}{v:6.1f}   w={r['weights'][k]:.2f}")
     print(f"  {'-Repetition':12}{r['rep']:6.1f}")
+    if r.get("typicality") is not None:
+        print(f"  TYPICALITY  {r['typicality']:6.1f}   (learned: proximity to the authentic {r['section']} band)")
