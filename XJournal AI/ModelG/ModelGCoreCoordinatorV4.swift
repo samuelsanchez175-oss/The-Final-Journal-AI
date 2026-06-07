@@ -182,8 +182,11 @@ class ModelGCoreCoordinatorV4 {
                                                        candidateVector: v4ExemplarVectors.isEmpty ? nil : ModelGEmbeddingIndex.shared.embed(bar))
                     total += v4.v4Total
                 }
-                let score = usable.isEmpty ? 0 : total / Double(usable.count)
-                // Primary: highest average v4Total.
+                let v4Score = usable.isEmpty ? 0 : total / Double(usable.count)
+                // Primary: highest average v4Total — or the v5 typicality grader when enabled.
+                let score = ModelGEnvironment.useV5Grader
+                    ? VerseLedgerV5Scorer.score(hook: verse.hook, bars: usable).net
+                    : v4Score
                 if score > bestScore {
                     bestScore = score; best = verse
                 }

@@ -1,0 +1,56 @@
+{
+  "k": 1.5,
+  "features": [
+    "Meter",
+    "Rhyme",
+    "Specificity",
+    "Throughline",
+    "Craft"
+  ],
+  "verse": {
+    "Meter": [
+      84.08,
+      16.48
+    ],
+    "Rhyme": [
+      64.69,
+      17.07
+    ],
+    "Specificity": [
+      48.36,
+      17.39
+    ],
+    "Throughline": [
+      8.19,
+      15.78
+    ],
+    "Craft": [
+      85.46,
+      10.41
+    ]
+  },
+  "verse_n": 364,
+  "hook": {
+    "Meter": [
+      87.55,
+      17.15
+    ],
+    "Rhyme": [
+      63.34,
+      19.79
+    ],
+    "Specificity": [
+      41.18,
+      17.7
+    ],
+    "Throughline": [
+      16.9,
+      24.26
+    ],
+    "Craft": [
+      80.0,
+      17.35
+    ]
+  },
+  "hook_n": 239
+}

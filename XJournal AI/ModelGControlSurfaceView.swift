@@ -30,6 +30,7 @@ struct ModelGControlSurfaceView: View {
     // (RapSuggestionAPI.generateModelGCoreRecordWithRetry: useModelGv4 → CoordinatorV4, else v3),
     // so flipping this here changes which pipeline this sheet's Generate runs. Off by default.
     @AppStorage("model_g_v4_enabled") private var useModelGv4 = false
+    @AppStorage("model_g_v5_grader_enabled") private var useV5Grader = true
 
     private static let styleOptions: [(key: String, label: String, profile: StyleProfile)] = [
         ("auto", "Auto", StyleProfile.coldTrap),
@@ -140,6 +141,12 @@ struct ModelGControlSurfaceView: View {
                 Text("Use Model G v4 engine").font(.subheadline.weight(.semibold))
             }
             Text("Generates with the newer v4 pipeline, which grounds your bars in your reference-lyric corpus. Takes priority over v3 when on. Experimental — off by default.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+
+            Toggle(isOn: $useV5Grader) {
+                Text("Use Model G v5 grader").font(.subheadline.weight(.semibold))
+            }
+            Text("Picks the best of several v4 drafts with the v5 grader — typicality-calibrated and slant-rhyme aware. Only active when v4 is on. On by default.")
                 .font(.caption).foregroundStyle(Momentum.contentSecondary)
         }
     }
