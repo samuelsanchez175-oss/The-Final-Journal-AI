@@ -23,6 +23,7 @@ struct ModelGControlSurfaceView: View {
     @State private var selectedTopicsText: String = ""
     @State private var worldBuildingText: String = ""
     @State private var styleOverrideKey: String = "auto"
+    @State private var modelChoice: ModelGGraderChoice = .v5
     @State private var isWorldBuildingExpanded = false
 
     private static let styleOptions: [(key: String, label: String, profile: StyleProfile)] = [
@@ -74,6 +75,7 @@ struct ModelGControlSurfaceView: View {
             .onAppear {
                 let defaultFromProfile = UserDefaults.standard.object(forKey: "suggestion_default_line_count") as? Int ?? 4
                 lineCount = (defaultFromProfile == 2 || defaultFromProfile == 4) ? defaultFromProfile : 4
+                modelChoice = ModelGGraderChoice.current()
             }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -86,6 +88,7 @@ struct ModelGControlSurfaceView: View {
     // Fixed footer — square PrimaryActionButton with a coral CounterPill (# tones selected).
     private var generateFooter: some View {
         Button {
+            modelChoice.apply()
             onGenerate(params, rhymeGroupsByID)
             dismiss()
         } label: {
@@ -112,6 +115,7 @@ struct ModelGControlSurfaceView: View {
 
     private var formContent: some View {
         VStack(alignment: .leading, spacing: 20) {
+            modelSection
             userPromptSection
             styleOverrideSection
             lineCountSection
@@ -121,6 +125,21 @@ struct ModelGControlSurfaceView: View {
             rhymeGroupsSection
         }
         .padding()
+    }
+
+    private var modelSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            MomentumSectionHeader(title: "Model")
+            Picker("", selection: $modelChoice) {
+                ForEach(ModelGGraderChoice.allCases) { choice in
+                    Text(choice.displayName).tag(choice)
+                }
+            }
+            .pickerStyle(.menu)
+            Text(modelChoice.blurb)
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+        }
     }
 
     private var styleOverrideSection: some View {
@@ -291,6 +310,47 @@ struct ModelGControlSurfaceView: View {
                     .foregroundStyle(Momentum.contentSecondary)
             }
         }
+    }
+}
+
+// MARK: - Selectable Model G variant (suggest-next-lines flow)
+
+/// User-facing Model G choice on the "Suggest next lines" sheet.
+///
+/// Both options run the same RAG-grounded Model G Core (v4) verse generation; the choice swaps
+/// the best-of-N grader that picks which candidate verse you get. "Model G v5" uses the
+/// recalibrated, typicality-calibrated `VerseLedgerV5Scorer`; "Model G v4" uses the original
+/// `VerseLedgerScorer`. Selecting an option writes the existing `ModelGEnvironment` flags, so the
+/// pick sticks and drives the next generation (and shows up on each suggestion card's source line).
+enum ModelGGraderChoice: String, CaseIterable, Identifiable {
+    case v5
+    case v4
+
+    var id: String { rawValue }
+
+    var displayName: String {
+        switch self {
+        case .v5: return "Model G v5"
+        case .v4: return "Model G v4"
+        }
+    }
+
+    var blurb: String {
+        switch self {
+        case .v5: return "RAG-grounded verse, picked by the v5 grader — typicality-calibrated and slant-rhyme aware. Recommended."
+        case .v4: return "RAG-grounded verse, picked by the original v4 authenticity grader."
+        }
+    }
+
+    /// Persist this choice into the Model G environment flags that drive generation.
+    func apply() {
+        ModelGEnvironment.useModelGv4 = true
+        ModelGEnvironment.useV5Grader = (self == .v5)
+    }
+
+    /// The choice reflecting the current environment flags (so the picker opens on what's active).
+    static func current() -> ModelGGraderChoice {
+        ModelGEnvironment.useV5Grader ? .v5 : .v4
     }
 }
 

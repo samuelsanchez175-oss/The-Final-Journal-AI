@@ -592,7 +592,8 @@ class RapSuggestionAPI {
             #if DEBUG
             print("Model G Core: Starting \(modelGCoreSuggestionSetCount) set(s) (\(useV2 ? "v2" : "v1"))...")
             #endif
-            let baseSource = ModelGEnvironment.useModelGv4 ? "Model G Core v4.0"
+            let baseSource = ModelGEnvironment.useModelGv4
+                ? "Model G Core v4.0" + (ModelGEnvironment.useV5Grader ? " · v5 grader" : "")
                 : (ModelGEnvironment.useModelGv3 ? "Model G Core v3.0" : (useV2 ? "Model G Core v2.0" : "Model G Core v1.0"))
             var coreSuggestions: [RapSuggestion] = []
 
