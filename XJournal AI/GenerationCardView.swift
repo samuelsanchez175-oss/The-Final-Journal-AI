@@ -21,6 +21,9 @@ struct GenerationCardView: View {
     var criticError: String? = nil
     var onRetryCritic: () -> Void = {}
     var onTapLine: (RapSuggestion, Int) -> Void = { _, _ in }
+    /// Per-suggestion liked / disliked line indices (so taps show up green/red on the deck card).
+    var likedLines: [UUID: Set<Int>] = [:]
+    var dislikedLines: [UUID: Set<Int>] = [:]
 
     @State private var fresh: Bool
     @State private var rhymeBySuggestion: [UUID: [AttributedString]] = [:]
@@ -33,7 +36,9 @@ struct GenerationCardView: View {
          criticLoading: Bool = false,
          criticError: String? = nil,
          onRetryCritic: @escaping () -> Void = {},
-         onTapLine: @escaping (RapSuggestion, Int) -> Void = { _, _ in }) {
+         onTapLine: @escaping (RapSuggestion, Int) -> Void = { _, _ in },
+         likedLines: [UUID: Set<Int>] = [:],
+         dislikedLines: [UUID: Set<Int>] = [:]) {
         self.generation = generation
         self.stackOn = stackOn
         self.rhymeOn = rhymeOn
@@ -42,12 +47,18 @@ struct GenerationCardView: View {
         self.criticError = criticError
         self.onRetryCritic = onRetryCritic
         self.onTapLine = onTapLine
+        self.likedLines = likedLines
+        self.dislikedLines = dislikedLines
         _fresh = State(initialValue: generation.isFresh)
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
+                Text("Tap a line: once = dislike, again = like, again = clear")
+                    .font(.caption2)
+                    .foregroundStyle(Momentum.contentSecondary)
+
                 ForEach(generation.suggestions) { suggestion in
                     lyrics(for: suggestion)
                 }
@@ -94,6 +105,8 @@ struct GenerationCardView: View {
     private func lyrics(for suggestion: RapSuggestion) -> some View {
         let rawLines = suggestion.text.components(separatedBy: "\n")
         let rhyme = rhymeOn ? (rhymeBySuggestion[suggestion.id] ?? []) : []
+        let liked = likedLines[suggestion.id] ?? []
+        let disliked = dislikedLines[suggestion.id] ?? []
         VStack(alignment: .leading, spacing: 4) {
             ForEach(Array(rawLines.enumerated()), id: \.offset) { idx, line in
                 if !line.isEmpty {
@@ -102,6 +115,8 @@ struct GenerationCardView: View {
                         mode: stackOn ? .stress : .plain,
                         rhymeAttributed: idx < rhyme.count ? rhyme[idx] : nil,
                         isFresh: fresh,
+                        isLiked: liked.contains(idx),
+                        isDisliked: disliked.contains(idx),
                         isModelGMoment: suggestion.modelGMomentLineIndices?.contains(idx) ?? false,
                         onTap: { onTapLine(suggestion, idx) }
                     )

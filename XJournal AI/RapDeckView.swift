@@ -19,6 +19,8 @@ struct RapDeckView: View {
     var criticError: String? = nil
     var onRetryCritic: () -> Void = {}
     var onTapLine: (RapSuggestion, Int) -> Void = { _, _ in }
+    var likedLines: [UUID: Set<Int>] = [:]
+    var dislikedLines: [UUID: Set<Int>] = [:]
 
     var body: some View {
         VStack(spacing: 8) {
@@ -51,7 +53,9 @@ struct RapDeckView: View {
             criticLoading: isCurrent ? criticLoading : false,
             criticError: isCurrent ? criticError : nil,
             onRetryCritic: onRetryCritic,
-            onTapLine: onTapLine
+            onTapLine: onTapLine,
+            likedLines: likedLines,
+            dislikedLines: dislikedLines
         )
     }
 

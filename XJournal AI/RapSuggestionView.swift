@@ -367,10 +367,14 @@ struct RapSuggestionView: View {
                 criticError: humanCriticError,
                 onRetryCritic: onRetryHumanCritic,
                 onTapLine: { suggestion, lineIndex in
-                    let lines = suggestion.text.components(separatedBy: "\n").filter { !$0.isEmpty }
+                    // lineIndex is the raw (unfiltered) line index the deck card taps with, so
+                    // resolve the tapped line's text the same way (was filtering → wrong text).
+                    let lines = suggestion.text.components(separatedBy: "\n")
                     toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex,
                                        lineText: lineIndex < lines.count ? lines[lineIndex] : "")
-                }
+                },
+                likedLines: highlightedLines,
+                dislikedLines: dislikedLines
             )
             RapIslandToolbar(
                 rhymeOn: $rhymeOn,
