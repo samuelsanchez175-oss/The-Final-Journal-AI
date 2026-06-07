@@ -18,13 +18,14 @@ struct VerseLedger: Codable {
     let smart: Double
     let flow: Double
     let originality: Double
+    let voice: Double
     let repetitionPenalty: Double
     let overExplainPenalty: Double
     let net: Double
 
     var summary: String {
-        String(format: "NET %.0f · cad %.0f · rhyme %.0f · inner %.0f · jargon %.0f · smart %.0f · −rep %.0f −exp %.0f",
-               net, cadence, endRhyme, innerRhyme, jargon, smart, repetitionPenalty, overExplainPenalty)
+        String(format: "NET %.0f · cad %.0f · rhyme %.0f · inner %.0f · jargon %.0f · smart %.0f · voice %.0f · −rep %.0f −exp %.0f",
+               net, cadence, endRhyme, innerRhyme, jargon, smart, voice, repetitionPenalty, overExplainPenalty)
     }
 }
 
@@ -32,6 +33,7 @@ enum VerseLedgerScorer {
     // Corpus-derived targets (measured from ground_truth_rap_bars_MODEL_G.csv).
     private static let syllMean = 9.7, syllTol = 4.0
     private static let stressTarget = 0.72
+    private static let voiceWeight = 0.08   // bounded Voice (A8/A9/A10) bonus → at most +8 NET
     private static let weights: [(String, Double)] = [
         ("Cadence", 0.18), ("EndRhyme", 0.18), ("InnerRhyme", 0.15),
         ("Jargon", 0.15), ("Smart", 0.15), ("Flow", 0.10), ("Originality", 0.09)]
@@ -65,6 +67,7 @@ enum VerseLedgerScorer {
         let smart = smartScore(lines)
         let flow = flowScore(lines, cmu: cmu)
         let originality = originalityScore(lines, bias: ModelGEnvironment.originalityBias)
+        let voice = voiceScore(lines)   // A8/A9/A10 — Voice & Signal Theory via SignalIngest
 
         let positives: [String: Double] = ["Cadence": cadence, "EndRhyme": endRhyme,
             "InnerRhyme": innerRhyme, "Jargon": jargon, "Smart": smart, "Flow": flow,
@@ -74,14 +77,42 @@ enum VerseLedgerScorer {
         // ---- negatives ----
         let rep = repetitionPenalty(lines)
         let over = overExplainPenalty(lines, cmu: cmu)
-        let net = max(0, min(100, posTotal - rep - over))
+        // Voice folds in as a bounded bonus so it shifts NET without destabilizing the trusted axes.
+        let net = max(0, min(100, posTotal + voice * voiceWeight - rep - over))
 
         return VerseLedger(cadence: cadence, endRhyme: endRhyme, innerRhyme: innerRhyme,
-            jargon: jargon, smart: smart, flow: flow, originality: originality,
+            jargon: jargon, smart: smart, flow: flow, originality: originality, voice: voice,
             repetitionPenalty: rep, overExplainPenalty: over, net: net)
     }
 
     // MARK: - helpers
+
+    /// A8/A9/A10 — Voice & Signal Theory measured with the app's own SignalIngest engine:
+    /// A9 exposure discipline (penalize the over-explaining "AI tell"), A10 register consistency
+    /// (hold one authority posture / audience across the verse), A8 social-action movement (a verse
+    /// should shift its move, not stay flat). Returns 0–100; folded into NET as a bounded bonus.
+    private static func voiceScore(_ lines: [String]) -> Double {
+        let verse = lines.joined(separator: ". ")
+        guard !verse.trimmingCharacters(in: .whitespaces).isEmpty else { return 50 }
+        // A9 — exposure discipline from explanation density (the "AI tell").
+        let metrics = SignalIngest.shared.analyzeBehavior(text: verse)
+        let a9 = max(0.0, min(100.0, 100.0 - metrics.explanationDensity * 150.0))
+        // A10 + A8 — compare the verse's two DISTINCT halves (needs 2+ lines; a single line would
+        // compare a half against itself and falsely score perfect consistency).
+        var a10 = 50.0, a8 = 50.0
+        if lines.count >= 2 {
+            let mid = lines.count / 2
+            let firstHalf = lines.prefix(mid).joined(separator: ". ")
+            let secondHalf = lines.suffix(lines.count - mid).joined(separator: ". ")
+            if let a = computeModelGSignalAxes(from: firstHalf),
+               let b = computeModelGSignalAxes(from: secondHalf) {
+                a10 = (a.authorityPosture == b.authorityPosture ? 60.0 : 0.0)
+                    + (a.audienceScope == b.audienceScope ? 40.0 : 0.0)
+                a8 = (a.socialAction != b.socialAction) ? 100.0 : 50.0
+            }
+        }
+        return 0.55 * a9 + 0.35 * a10 + 0.10 * a8
+    }
 
     private static func wordsIn(_ s: String) -> [String] {
         let stripped = s.replacingOccurrences(of: "\\(.*?\\)", with: " ", options: .regularExpression)
@@ -126,10 +157,12 @@ enum VerseLedgerScorer {
     private static func jargonScore(_ lines: [String], terms: Set<String>) -> Double {
         guard !terms.isEmpty else { return 0 }
         let text = lines.joined(separator: " ").lowercased()
-        let range = NSRange(text.startIndex..., in: text)
-        let distinct = terms.filter { term in            // word-boundary, so 'bin' won't fire in 'cabin'
-            guard let re = try? NSRegularExpression(pattern: "\\b\(NSRegularExpression.escapedPattern(for: term))\\b") else { return false }
-            return re.firstMatch(in: text, range: range) != nil
+        // Tokenize once and match by membership instead of compiling ~500 regexes per call.
+        // Single-word terms match whole tokens (so 'bin' won't fire in 'cabin'); multi-word terms
+        // match as substrings — equivalent to the old \bterm\b pass but far cheaper.
+        let tokens = Set(text.split { !$0.isLetter && !$0.isNumber && $0 != "'" }.map(String.init))
+        let distinct = terms.filter { term in
+            (term.contains(" ") || term.contains("-")) ? text.contains(term) : tokens.contains(term)
         }.count
         return min(100, Double(distinct) * 25)
     }
@@ -230,6 +263,7 @@ struct VerseLedgerEntry: Codable, Identifiable {
     let jargon: Double
     let smart: Double
     let flow: Double
+    let voice: Double?
     let repetitionPenalty: Double
     let overExplainPenalty: Double
 }
@@ -249,7 +283,7 @@ final class VerseLedgerLog {
         guard let url = fileURL else { return }
         let e = VerseLedgerEntry(timestamp: Date().timeIntervalSince1970, source: source, net: ledger.net,
             cadence: ledger.cadence, endRhyme: ledger.endRhyme, innerRhyme: ledger.innerRhyme,
-            jargon: ledger.jargon, smart: ledger.smart, flow: ledger.flow,
+            jargon: ledger.jargon, smart: ledger.smart, flow: ledger.flow, voice: ledger.voice,
             repetitionPenalty: ledger.repetitionPenalty, overExplainPenalty: ledger.overExplainPenalty)
         guard let data = try? JSONEncoder().encode(e),
               var line = String(data: data, encoding: .utf8) else { return }

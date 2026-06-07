@@ -1,0 +1,48 @@
+name: iOS Build Check
+
+# Compile-checks the app on every push so Swift errors surface automatically
+# (this repo had no working CI — the only prior workflow was the broken default
+# `swift build` starter). Simulator build, code signing off — no certs needed.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ios-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Compile-check (iOS Simulator)
+    runs-on: macos-latest
+    timeout-minutes: 45
+    env:
+      PROJECT: "XJournal AI.xcodeproj"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select newest Xcode (the app uses iOS 26 SpeechAnalyzer; needs a 26 SDK)
+        run: |
+          echo "Installed Xcodes:"; ls -d /Applications/Xcode*.app 2>/dev/null || true
+          LATEST=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$LATEST" ]; then echo "Selecting $LATEST"; sudo xcode-select -s "$LATEST/Contents/Developer"; fi
+          xcodebuild -version
+          xcrun --sdk iphonesimulator --show-sdk-version || true
+
+      - name: Build (compile-check, iOS Simulator, no signing)
+        run: |
+          set -o pipefail
+          # The shared scheme has an unusual name, so discover it instead of hardcoding.
+          SCHEME=$(xcodebuild -list -json -project "$PROJECT" | jq -r '.project.schemes[0]')
+          echo "Building project '$PROJECT' scheme '[$SCHEME]'"
+          xcodebuild \
+            -project "$PROJECT" \
+            -scheme "$SCHEME" \
+            -destination 'generic/platform=iOS Simulator' \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            clean build

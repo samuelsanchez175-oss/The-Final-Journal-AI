@@ -18,7 +18,7 @@ private extension View {
     /// Action-button icon frame: a fixed 36pt square on iPhone (the compact nav-bar
     /// pill); expands to fill evenly across the iPad header row when `distributed`.
     func actionIconFrame(_ distributed: Bool) -> some View {
-        frame(width: distributed ? nil : 36, height: 36)
+        frame(width: distributed ? nil : 44, height: 36)
             .frame(maxWidth: distributed ? .infinity : nil)
     }
 }
@@ -97,7 +97,7 @@ struct JournalLibraryView: View {
     // nav-bar glass pill (distributed: false); iPad spreads it evenly full-width
     // across iPadSidebarHeader (distributed: true) so it reads as a top bar.
     private func page1ActionButtons(distributed: Bool = false, includeSidebarToggle: Bool = false) -> some View {
-        HStack(spacing: distributed ? 2 : 0) {
+        HStack(spacing: distributed ? 2 : 4) {
             Button {
                 UIImpactFeedbackGenerator(style: .light).impactOccurred()
                 showAnalytics = true
@@ -194,7 +194,7 @@ struct JournalLibraryView: View {
                 .overlay(GyroSpecularEdge(shape: Capsule(), lineWidth: 1.3)) // iOS 26-style tilt glint — matches the iPhone glass pill
                 .padding(.horizontal, 16)
 
-            Text("Journal")
+            Text("Penwork")
                 .font(.largeTitle.weight(.bold))
                 .foregroundStyle(.primary)
                 .padding(.horizontal, 16)
@@ -265,7 +265,7 @@ struct JournalLibraryView: View {
                     .ignoresSafeArea()
             }
             .toolbarBackground(.hidden, for: .navigationBar)
-            .navigationTitle((horizontalSizeClass == .regular && !isSelectionMode) ? "" : (isSelectionMode ? "\(selectedItems.count) Selected" : "Journal"))
+            .navigationTitle((horizontalSizeClass == .regular && !isSelectionMode) ? "" : (isSelectionMode ? "\(selectedItems.count) Selected" : "Penwork"))
             .toolbar {
                 if isSelectionMode {
                     // Selection mode toolbar - show only selection controls
@@ -567,8 +567,7 @@ struct JournalLibraryView: View {
     }
 
     private func prepareHapticForNewNote() {
-        let generator = UIImpactFeedbackGenerator(style: .light)
-        generator.impactOccurred()
+        HapticFeedbackManager.shared.play(.newNote)
     }
 
     private func addItem() {

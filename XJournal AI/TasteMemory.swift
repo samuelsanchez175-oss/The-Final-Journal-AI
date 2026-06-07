@@ -92,6 +92,9 @@ class TasteMemory {
         
         // Integrate with ground truth CSV
         integrateWithGroundTruth(record: record, action: .accepted)
+
+        // Phase 3: adapt corpus retrieval toward the tones the user keeps.
+        CorpusFeedbackStore.shared.recordAcceptance(text: suggestion.text, accepted: true)
     }
     
     /// Record when user rejects a suggestion
@@ -119,6 +122,9 @@ class TasteMemory {
         
         // Integrate with ground truth CSV
         integrateWithGroundTruth(record: record, action: .rejected)
+
+        // Phase 3: adapt corpus retrieval away from the tones the user discards.
+        CorpusFeedbackStore.shared.recordAcceptance(text: suggestion.text, accepted: false)
     }
     
     /// Record when user edits a suggestion

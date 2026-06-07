@@ -157,7 +157,7 @@ struct OnboardingWelcomeFlow: View {
                     .tracking(2)
                     .foregroundStyle(Momentum.contentSecondary)
 
-                Text("XJournal AI")
+                Text("Penwork Studios")
                     .font(.momentumHero(48))
                     .foregroundStyle(Momentum.contentPrimary)
                     .multilineTextAlignment(.center)
@@ -207,7 +207,7 @@ struct OnboardingWelcomeFlow: View {
                     .font(.momentumHero(34))
                     .foregroundStyle(Momentum.contentPrimary)
 
-                Text("XJournal AI uses your own OpenAI or Google Gemini key for AI features. It's stored only on this device — you can add it later in Settings.")
+                Text("Penwork Studios uses your own OpenAI or Google Gemini key for AI features. It's stored only on this device — you can add it later in Settings.")
                     .font(.momentumBody)
                     .foregroundStyle(Momentum.contentSecondary)
                     .fixedSize(horizontal: false, vertical: true)

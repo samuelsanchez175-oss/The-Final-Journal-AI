@@ -368,8 +368,12 @@ struct RapSuggestionView: View {
                 criticError: humanCriticError,
                 onRetryCritic: onRetryHumanCritic,
                 onTapLine: { suggestion, lineIndex in
-                    toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex)
-                }
+                    let lines = suggestion.text.components(separatedBy: "\n").filter { !$0.isEmpty }
+                    toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex,
+                                       lineText: lineIndex < lines.count ? lines[lineIndex] : "")
+                },
+                likedLines: highlightedLines,
+                dislikedLines: dislikedLines
             )
             RapIslandToolbar(
                 rhymeOn: $rhymeOn,
@@ -646,7 +650,7 @@ struct RapSuggestionView: View {
                     isDisliked: isDisliked,
                     isHighlighted: highlightedSuggestionId == suggestion.id,
                     isModelGMoment: isModelGMoment,
-                    onTap: { toggleLineFeedback(suggestionId: suggestion.id, lineIndex: index) }
+                    onTap: { toggleLineFeedback(suggestionId: suggestion.id, lineIndex: index, lineText: line) }
                 )
             }
         }
@@ -1041,7 +1045,7 @@ struct RapSuggestionView: View {
                         )
                         UserBehaviorTracker.shared.trackSuggestionInteraction(action: .favorited, suggestionId: suggestion.id)
                     }
-                    UINotificationFeedbackGenerator().notificationOccurred(.success)
+                    HapticFeedbackManager.shared.play(.love)
                 } label: {
                     Image(systemName: favoriteSuggestions.contains(suggestion.id) ? "star.fill" : "star")
                         .font(.subheadline)
@@ -1074,7 +1078,7 @@ struct RapSuggestionView: View {
                     // Show contextual feedback form
                     showingFeedbackForm = suggestion.id
 
-                    UINotificationFeedbackGenerator().notificationOccurred(.error)
+                    HapticFeedbackManager.shared.error()
                 } label: {
                     Image(systemName: userFeedback[suggestion.id] == .disliked ? "hand.thumbsdown.fill" : "hand.thumbsdown")
                         .font(.subheadline)
@@ -1161,7 +1165,7 @@ struct RapSuggestionView: View {
                         recordFeedback(suggestion: suggestion, feedback: feedback)
                     }
 
-                    UINotificationFeedbackGenerator().notificationOccurred(.success)
+                    HapticFeedbackManager.shared.success()
                 } label: {
                     Image(systemName: userFeedback[suggestion.id] == .liked ? "hand.thumbsup.fill" : "hand.thumbsup")
                         .font(.subheadline)
@@ -1187,7 +1191,7 @@ struct RapSuggestionView: View {
                         )
                         UserBehaviorTracker.shared.trackSuggestionInteraction(action: .regenerated, suggestionId: nil)
 
-                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        HapticFeedbackManager.shared.mediumTap()
                         onRegenerate()
                     } label: {
                         Image(systemName: "arrow.clockwise")
@@ -1341,26 +1345,30 @@ struct RapSuggestionView: View {
         }
     }
     
-    private func toggleLineFeedback(suggestionId: UUID, lineIndex: Int) {
-        // Cycle through: neutral -> dislike -> like -> neutral
+    private func toggleLineFeedback(suggestionId: UUID, lineIndex: Int, lineText: String) {
+        // Cycle through: neutral -> dislike -> like -> neutral.
+        // Each time a like/dislike is SET, record it into the learning loop so per-line
+        // feedback actually biases future retrieval (was previously local UI state only).
         var likedSet = highlightedLines[suggestionId] ?? []
         var dislikedSet = dislikedLines[suggestionId] ?? []
-        
+
         if likedSet.contains(lineIndex) {
-            // Currently liked, remove it (back to neutral)
+            // Currently liked, remove it (back to neutral) — nothing new to record.
             likedSet.remove(lineIndex)
-            UINotificationFeedbackGenerator().notificationOccurred(.success)
+            HapticFeedbackManager.shared.selection()
         } else if dislikedSet.contains(lineIndex) {
             // Currently disliked, switch to liked
             dislikedSet.remove(lineIndex)
             likedSet.insert(lineIndex)
-            UINotificationFeedbackGenerator().notificationOccurred(.success)
+            CorpusFeedbackStore.shared.recordAcceptance(text: lineText, accepted: true)
+            HapticFeedbackManager.shared.play(.love)
         } else {
             // Neutral, add to disliked
             dislikedSet.insert(lineIndex)
-            UINotificationFeedbackGenerator().notificationOccurred(.error)
+            CorpusFeedbackStore.shared.recordAcceptance(text: lineText, accepted: false)
+            HapticFeedbackManager.shared.error()
         }
-        
+
         highlightedLines[suggestionId] = likedSet
         dislikedLines[suggestionId] = dislikedSet
     }

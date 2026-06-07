@@ -76,6 +76,13 @@ class SplashScreenManager: ObservableObject {
     func markOnboardingComplete() {
         hasCompletedOnboarding = true
     }
+
+    /// Reset the first-run welcome so it can be viewed again: clears the onboarding flag and the
+    /// toolbar coachmark tour it unlocks. Post `.showOnboardingAgain` afterwards to present it now.
+    func resetOnboarding() {
+        hasCompletedOnboarding = false
+        resetAllSplashScreens()
+    }
     
     func getNextToolbarButtonSplash() -> SplashScreenID? {
         let buttonSplashes: [SplashScreenID] = [
@@ -96,6 +103,14 @@ class SplashScreenManager: ObservableObject {
         
         return nil
     }
+}
+
+// MARK: - Notifications
+
+extension Notification.Name {
+    /// Posted when the user asks to view the first-run welcome again (from Settings).
+    /// The app root observes this to re-present `OnboardingWelcomeFlow` without a relaunch.
+    static let showOnboardingAgain = Notification.Name("showOnboardingAgain")
 }
 
 // MARK: - Global Accessor Functions

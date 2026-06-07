@@ -38,6 +38,11 @@ final class Item {
     /// Theme Expansion picks that steer Model G generation for this note (empty → auto-detect).
     var selectedThemeIDs: [String] = []
 
+    /// Audio "stem" file paths (separated tracks) attached to this note.
+    /// `StemsListView` is self-contained (owns its own state); pass these in via its initializer
+    /// and persist edits back through a save callback at the presentation site.
+    var stemPaths: [String] = []
+
     init(timestamp: Date, title: String = "", body: String = "") {
         self.timestamp = timestamp
         self.modifiedDate = nil // No modifications on creation

@@ -28,8 +28,8 @@ struct ModelGControlSurfaceView: View {
 
     // v3↔v4 engine A/B switch. Same key the directed-generation router reads
     // (RapSuggestionAPI.generateModelGCoreRecordWithRetry: useModelGv4 → CoordinatorV4, else v3),
-    // so flipping this here changes which pipeline this sheet's Generate runs. Off by default.
-    @AppStorage("model_g_v4_enabled") private var useModelGv4 = false
+    // so flipping this here changes which pipeline this sheet's Generate runs. On by default.
+    @AppStorage("model_g_v4_enabled") private var useModelGv4 = true
     @AppStorage("model_g_v5_grader_enabled") private var useV5Grader = true
 
     private static let styleOptions: [(key: String, label: String, profile: StyleProfile)] = [
@@ -140,7 +140,7 @@ struct ModelGControlSurfaceView: View {
             Toggle(isOn: $useModelGv4) {
                 Text("Use Model G v4 engine").font(.subheadline.weight(.semibold))
             }
-            Text("Generates with the newer v4 pipeline, which grounds your bars in your reference-lyric corpus. Takes priority over v3 when on. Experimental — off by default.")
+            Text("Generates with the newer v4 pipeline, which grounds your bars in your reference-lyric corpus. Takes priority over v3. On by default — powers the Model G v5 grader below.")
                 .font(.caption).foregroundStyle(Momentum.contentSecondary)
 
             Toggle(isOn: $useV5Grader) {

@@ -6,18 +6,26 @@ import Security
 // MARK: - Rhyme Color Palette
 
 enum RhymeColorPalette {
-    // Six distinct rhyme-group hues, used both as low-opacity editor highlight backgrounds
-    // (CCV.6: ~0.16–0.30 alpha) and as foreground TEXT in the rhyme-group list (CCV.15).
-    // Scheme-aware: deepened in Light so amber/emerald read as text on the white surface;
-    // brightened in Dark so the same hues read on the Lagoon surface (#0C1417). Light values
-    // are unchanged from the 2026-05-31 re-tune. Distinct 6-hue identity preserved.
+    // Twelve distinct rhyme-group hues, used both as low-opacity highlight backgrounds
+    // (editor CCV.6 and the Rap Suggestions deck) and as foreground TEXT in the rhyme-group
+    // list (CCV.15). Scheme-aware: deepened in Light so the hues read on the white surface;
+    // brightened in Dark so they read on the Lagoon surface (#0C1417).
+    // IMPORTANT: indices 0–5 are unchanged from the 2026-05-31 re-tune. Index 3 (azure) is a
+    // reserved sentinel in the editor (see CCV.6), so the six new hues are appended at 6–11.
+    // More hues = fewer distinct rhymes colliding onto the same colour.
     static let colors: [UIColor] = [
-        dynamic(light: (0.82, 0.58, 0.08), dark: (0.96, 0.74, 0.28)),  // amber
-        dynamic(light: (0.94, 0.45, 0.35), dark: (0.97, 0.54, 0.45)),  // coral
-        dynamic(light: (0.18, 0.62, 0.45), dark: (0.33, 0.82, 0.60)),  // emerald
-        dynamic(light: (0.45, 0.64, 0.90), dark: (0.56, 0.73, 0.96)),  // azure
-        dynamic(light: (0.72, 0.56, 0.90), dark: (0.79, 0.66, 0.97)),  // violet
-        dynamic(light: (0.90, 0.62, 0.78), dark: (0.94, 0.69, 0.85))   // rose
+        dynamic(light: (0.82, 0.58, 0.08), dark: (0.96, 0.74, 0.28)),  // 0  amber
+        dynamic(light: (0.94, 0.45, 0.35), dark: (0.97, 0.54, 0.45)),  // 1  coral
+        dynamic(light: (0.18, 0.62, 0.45), dark: (0.33, 0.82, 0.60)),  // 2  emerald
+        dynamic(light: (0.45, 0.64, 0.90), dark: (0.56, 0.73, 0.96)),  // 3  azure (sentinel)
+        dynamic(light: (0.72, 0.56, 0.90), dark: (0.79, 0.66, 0.97)),  // 4  violet
+        dynamic(light: (0.90, 0.62, 0.78), dark: (0.94, 0.69, 0.85)),  // 5  rose
+        dynamic(light: (0.20, 0.60, 0.66), dark: (0.34, 0.80, 0.86)),  // 6  teal
+        dynamic(light: (0.55, 0.55, 0.16), dark: (0.74, 0.78, 0.34)),  // 7  chartreuse
+        dynamic(light: (0.36, 0.42, 0.86), dark: (0.52, 0.58, 0.98)),  // 8  indigo
+        dynamic(light: (0.82, 0.36, 0.66), dark: (0.94, 0.52, 0.82)),  // 9  magenta
+        dynamic(light: (0.86, 0.46, 0.16), dark: (0.98, 0.62, 0.30)),  // 10 orange
+        dynamic(light: (0.30, 0.66, 0.90), dark: (0.45, 0.78, 0.99))   // 11 sky
     ]
 
     /// Resolves Light vs Dark RGB at render time via a dynamic `UIColor` — keeps the static
@@ -257,7 +265,7 @@ class KeychainHelper {
 // MARK: - Helper Functions
 
 func lightHaptic() {
-    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    HapticFeedbackManager.shared.lightTap()
 }
 
 // MARK: - Glass Settings

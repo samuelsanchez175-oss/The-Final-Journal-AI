@@ -76,7 +76,7 @@ struct ImportNotesInstructionsView: View {
             
             // Open Notes Button
             Button {
-                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                HapticFeedbackManager.shared.mediumTap()
                 openNotesApp()
             } label: {
                 HStack {
@@ -100,7 +100,7 @@ struct ImportNotesInstructionsView: View {
             
             // Cancel Button
             Button {
-                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                HapticFeedbackManager.shared.lightTap()
                 dismiss()
             } label: {
                 Text("Cancel")
@@ -162,7 +162,7 @@ struct ImportNotesInstructionsView: View {
             
             // Done Button
             Button {
-                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                HapticFeedbackManager.shared.mediumTap()
                 createAndOpenNote()
             } label: {
                 HStack {

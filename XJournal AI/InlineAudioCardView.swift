@@ -183,7 +183,7 @@ struct InlineAudioCardView: View {
                 // Insert to Body at top right when transcription exists
                 if let transcription = item.transcription, !transcription.isEmpty {
                     Button(action: {
-                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                        HapticFeedbackManager.shared.lightTap()
                         handleAddTranscriptToNote()
                     }) {
                         Text("Insert to Body")
@@ -233,7 +233,7 @@ struct InlineAudioCardView: View {
                         // Share button (left)
                         if item.audioPath != nil {
                             Button(action: {
-                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                HapticFeedbackManager.shared.lightTap()
                                 handleShareAudio()
                             }) {
                                 Image(systemName: "square.and.arrow.up")
@@ -246,7 +246,7 @@ struct InlineAudioCardView: View {
                         Spacer()
                         // Transcribe button (right)
                         Button(action: {
-                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                            HapticFeedbackManager.shared.lightTap()
                             handleTranscribe()
                         }) {
                             Text("Transcribe")
@@ -281,7 +281,7 @@ struct InlineAudioCardView: View {
             // Skip backward 15s (icon only, no text)
             Button(action: {
                 print("🔵 Skip backward tapped")
-                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                HapticFeedbackManager.shared.lightTap()
                 handleSkipBackward()
             }) {
                 Image(systemName: "gobackward.15")
@@ -294,7 +294,7 @@ struct InlineAudioCardView: View {
             // Play/Pause button
             Button(action: {
                 print("🔵 Play/Pause tapped")
-                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                HapticFeedbackManager.shared.mediumTap()
                 handlePlayPause()
             }) {
                 Image(systemName: isPlaying ? "pause.circle.fill" : "play.circle.fill")
@@ -308,7 +308,7 @@ struct InlineAudioCardView: View {
             // Skip forward 15s (icon only, no text)
             Button(action: {
                 print("🔵 Skip forward tapped")
-                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                HapticFeedbackManager.shared.lightTap()
                 handleSkipForward()
             }) {
                 Image(systemName: "goforward.15")
@@ -420,7 +420,7 @@ struct InlineAudioCardView: View {
                     .onEnded { value in
                         let newProgress = max(0, min(1, value.location.x / geometry.size.width))
                         let seekTime = newProgress * duration
-                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        HapticFeedbackManager.shared.mediumTap()
                         audioPlayer.seek(to: seekTime)
                         isDraggingProgress = false
                         dragProgress = 0
@@ -434,14 +434,14 @@ struct InlineAudioCardView: View {
                 let tapX = location.x
                 let seekTime = (tapX / geometry.size.width) * duration
                 audioPlayer.seek(to: seekTime)
-                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                HapticFeedbackManager.shared.lightTap()
             }
             .simultaneousGesture(
                 TapGesture(count: 2)
                     .onEnded { _ in
                         // Double tap: skip forward 30 seconds
                         audioPlayer.skipForward(seconds: 30)
-                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        HapticFeedbackManager.shared.mediumTap()
                     }
             )
         }
@@ -514,7 +514,7 @@ struct InlineAudioCardView: View {
             // Share button
             if item.audioPath != nil {
                 Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    HapticFeedbackManager.shared.lightTap()
                     handleShareAudio()
                 } label: {
                     VStack(spacing: 4) {
@@ -536,7 +536,7 @@ struct InlineAudioCardView: View {
             // Copy Transcript button
             if let transcription = item.transcription, !transcription.isEmpty {
                 Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    HapticFeedbackManager.shared.lightTap()
                     handleCopyTranscript()
                 } label: {
                     VStack(spacing: 4) {
@@ -558,7 +558,7 @@ struct InlineAudioCardView: View {
             // Add to Note button
             if let transcription = item.transcription, !transcription.isEmpty {
                 Button {
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    HapticFeedbackManager.shared.lightTap()
                     handleAddTranscriptToNote()
                 } label: {
                     VStack(spacing: 4) {

@@ -42,10 +42,10 @@ enum ModelGEnvironment {
         set { UserDefaults.standard.set(newValue, forKey: "model_g_v3_enabled") }
     }
 
-    /// When true, use Model G v4 pipeline with corpus-grounded exemplar retrieval and
-    /// 50/10/40 house/auto/user composite scoring. Opt-in; off by default.
+    /// Use the Model G v4 pipeline (corpus-grounded RAG retrieval + best-of-N selection). Default
+    /// ON so the modern engine — and the v5 grader that rides on it — is the default experience.
     static var useModelGv4: Bool {
-        get { UserDefaults.standard.bool(forKey: "model_g_v4_enabled") }
+        get { (UserDefaults.standard.object(forKey: "model_g_v4_enabled") as? Bool) ?? true }
         set { UserDefaults.standard.set(newValue, forKey: "model_g_v4_enabled") }
     }
 

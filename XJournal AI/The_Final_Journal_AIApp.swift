@@ -223,6 +223,9 @@ struct The_Final_Journal_AIApp: App {
                         print("⚠️ App: Failed to maintain audio session in background: \(error.localizedDescription)")
                     }
                 }
+                .onReceive(NotificationCenter.default.publisher(for: .showOnboardingAgain)) { _ in
+                    withAnimation(.easeInOut(duration: 0.45)) { showOnboarding = true }
+                }
                 .onAppear {
                     StartupPerformanceTracker.shared.recordMilestone("first_view_appear")
                     

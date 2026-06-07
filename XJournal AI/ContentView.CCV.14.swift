@@ -857,7 +857,7 @@ struct DynamicIslandToolbarView: View {
                                 .fixedSize(horizontal: false, vertical: true)
                             
                             Button {
-                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                                HapticFeedbackManager.shared.mediumTap()
                                 splashManager.dismissSplash(.aiSparkleButton)
                                 showAISparkleSplash = false
                                 // Navigate to profile - this will be handled by parent view

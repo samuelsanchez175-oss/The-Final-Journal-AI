@@ -9,6 +9,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 enum RhymeHighlightRenderer {
     /// One coloured AttributedString per line of `fullText` (split on "\n", unfiltered so
@@ -39,7 +40,10 @@ enum RhymeHighlightRenderer {
                 guard relEnd > relStart, relStart >= 0, relEnd <= lineLen else { continue }
                 let a0 = attr.index(attr.startIndex, offsetByCharacters: relStart)
                 let a1 = attr.index(a0, offsetByCharacters: relEnd - relStart)
-                attr[a0..<a1].foregroundColor = color(for: o.colorIndex)
+                // Highlight the rhyme as a translucent coloured background behind the text
+                // (matching the editor) rather than recolouring the glyphs — keeps every bar
+                // legible while still grouping rhymes by colour.
+                attr[a0..<a1].backgroundColor = highlightColor(for: o.colorIndex)
             }
 
             results.append(attr)
@@ -48,10 +52,18 @@ enum RhymeHighlightRenderer {
         return results
     }
 
-    private static func color(for index: Int) -> Color {
+    /// Translucent background tint for a rhyme group, scheme-aware so it reads on both the
+    /// light surface and the dark Lagoon surface. Foreground text is left untouched so the
+    /// glyphs stay legible on top of the highlight.
+    private static func highlightColor(for index: Int) -> Color {
         let palette = RhymeColorPalette.colors
-        guard !palette.isEmpty else { return .primary }
+        guard !palette.isEmpty else { return .clear }
         let i = ((index % palette.count) + palette.count) % palette.count
-        return Color(uiColor: palette[i])
+        let base = palette[i]
+        let tint = UIColor { traits in
+            base.resolvedColor(with: traits)
+                .withAlphaComponent(traits.userInterfaceStyle == .dark ? 0.45 : 0.25)
+        }
+        return Color(uiColor: tint)
     }
 }

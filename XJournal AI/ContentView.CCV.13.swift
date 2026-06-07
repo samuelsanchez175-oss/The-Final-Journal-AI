@@ -373,7 +373,7 @@ struct NoteEditorView: View {
         aiErrorMessage = message
         aiErrorFixDestination = resolvedDestination
         showAIErrorToast = true
-        UINotificationFeedbackGenerator().notificationOccurred(.error)
+        HapticFeedbackManager.shared.error()
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
             withAnimation(.easeOut(duration: 0.3)) {
@@ -578,7 +578,7 @@ struct NoteEditorView: View {
                             HapticFeedbackManager.shared.error()
                             showAIErrorWrapper(error)
                         } else {
-                            HapticFeedbackManager.shared.success()
+                            HapticFeedbackManager.shared.play(.aiReady)
                             showRapSuggestions = true
                         }
                     }
@@ -1704,8 +1704,7 @@ struct NoteEditorView: View {
     }
 
     private func prepareHapticForNewNote() {
-        let generator = UIImpactFeedbackGenerator(style: .light)
-        generator.impactOccurred()
+        HapticFeedbackManager.shared.play(.newNote)
     }
 
     private func createAndNavigateToNewNote() {
@@ -2120,17 +2119,19 @@ struct NoteEditorView: View {
                     improveFlowLoadingStep = nil
                     showContextHighlight = false
                     showImproveFlow = true
+                    HapticFeedbackManager.shared.play(.aiReady)
                 }
             } catch {
                 await MainActor.run {
                     isImprovingFlow = false
                     improveFlowLoadingStep = nil
                     showContextHighlight = false
+                    HapticFeedbackManager.shared.error()
                 }
             }
         }
     }
-    
+
     private func handleRewriteLine() {
         // Check feature access (Phase 1: Feature Gating)
         if !FeatureGate.checkAccess(.rewriteLine, showPaywall: { featureName in

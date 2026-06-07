@@ -48,7 +48,7 @@ struct SocialFeedView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                        HapticFeedbackManager.shared.lightTap()
                         dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
