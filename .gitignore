@@ -38,10 +38,12 @@ __pycache__/
 # CSVs + FlowDNA/ + backend/ are NOT ignored here on purpose — they must be
 # `git add`ed and committed, or the branch is broken on a fresh checkout.
 
-# Local editor / agent state (not shared)
+# Local editor / agent state (not shared) — but .claude/skills/ IS shared,
+# so project skills (e.g. obsidian-cli) survive fresh checkouts.
 .cursor/
 .vscode/
-.claude/
+.claude/*
+!.claude/skills/
 
 # Scratch dev notes & status reports. Design docs live in docs/ and the Obsidian
 # vault — if any of the below are real keepers, move them to docs/ instead of ignoring.
