@@ -157,9 +157,41 @@ def detect_section(lines):
     return "verse"
 
 
+# ---------------- Punchline / wit (v5.1) — mechanical proxy --------------------
+# Counts lines with a comparison/flip marker (simile, "more than", "but I…", "thought I…", flip)
+# or the genre's "X on X" device. Skips duplicate lines so the fragment-echo failure ("Yeah, yeah")
+# does NOT read as wit. A flat brand inventory scores ~0 here — the point. Validated on the
+# 2026-06-10 ablation captures (de-biases the grader: net↔human r −0.44→−0.03, punchline −0.32→+0.12).
+# Mirror of VerseLedgerV5.punchline — keep the markers + 0.35 divisor identical.
+COMPARE = re.compile(r"(like a |like the |like i |like we |like it |more than|than a |than the |than my |"
+                     r"worth more|cost more|but i |but the |'til|\btil |until|turn into|turned into|"
+                     r"thought i|thought it|thought they|came from|come from)")
+
+
+def punchline_axis(lines):
+    if not lines:
+        return 0.0
+    wit, seen = 0, set()
+    for ln in lines:
+        norm = " ".join(re.findall(r"[a-z0-9']+", ln.lower()))
+        if norm in seen:                 # degenerate echo is not wit
+            continue
+        seen.add(norm)
+        low = ln.lower()
+        toks = re.findall(r"[a-z']+", low)
+        hit = bool(COMPARE.search(low))
+        if not hit:
+            for i in range(len(toks) - 2):   # "X on X"
+                if toks[i + 1] == "on" and toks[i] == toks[i + 2] and len(toks[i]) > 2:
+                    hit = True; break
+        if hit:
+            wit += 1
+    return round(min(100.0, 100.0 * (wit / len(lines)) / 0.35), 1)
+
+
 WEIGHTS = {
-    "verse": {"Meter": 0.25, "Rhyme": 0.32, "Specificity": 0.25, "Throughline": 0.08, "Craft": 0.10},
-    "hook":  {"Meter": 0.28, "Rhyme": 0.32, "Specificity": 0.20, "Throughline": 0.08, "Craft": 0.12},
+    "verse": {"Punchline": 0.25, "Rhyme": 0.25, "Meter": 0.18, "Specificity": 0.17, "Throughline": 0.07, "Craft": 0.08},
+    "hook":  {"Punchline": 0.18, "Rhyme": 0.30, "Meter": 0.22, "Specificity": 0.14, "Throughline": 0.06, "Craft": 0.10},
 }
 
 
@@ -173,6 +205,7 @@ def grade_v5(lines, cmu, corpus_4grams, lexicon_set, common=None, section=None, 
         "Specificity": specificity_score(lines, lexicon_set, common),
         "Throughline": throughline_bonus(lines),
         "Craft": craft_score(lines),
+        "Punchline": punchline_axis(lines),
     }
     W = WEIGHTS[section]
     pos = sum(axes[k] * W[k] for k in W)

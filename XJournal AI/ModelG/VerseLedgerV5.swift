@@ -25,22 +25,31 @@ struct VerseLedgerV5: Codable {
     let specificity: Double
     let throughline: Double
     let craft: Double
+    let punchline: Double        // v5.1: mechanical wit proxy (setup→payoff / simile / "X on X")
     let repetitionPenalty: Double
     let net: Double              // weighted-axis authenticity (0–100)
     let typicality: Double       // the learned grader: proximity to the authentic band (0–100)
 
     var summary: String {
-        String(format: "v5[%@] NET %.0f · typ %.0f · meter %.0f rhyme %.0f spec %.0f thru %.0f craft %.0f −rep %.0f",
-               section, net, typicality, meter, rhyme, specificity, throughline, craft, repetitionPenalty)
+        String(format: "v5[%@] NET %.0f · typ %.0f · punch %.0f meter %.0f rhyme %.0f spec %.0f thru %.0f craft %.0f −rep %.0f",
+               section, net, typicality, punchline, meter, rhyme, specificity, throughline, craft, repetitionPenalty)
     }
 }
 
 enum VerseLedgerV5Scorer {
     // Per-section axis weights (mirror grade_modelg_v5.WEIGHTS).
+    // v5.1 (P5): a mechanical Punchline/wit axis joins the mix, with weight taken from the axes a
+    // brand-list maxes (Meter / Specificity). The 2026-06-10 ablation showed the old grader was
+    // anti-correlated with punchline taste (r≈−0.44 vs a blind judge); adding this axis neutralizes
+    // that (r≈−0.03; punchline brief −0.32→+0.12), so plain-v4 selection stops rewarding pure
+    // brand inventories. Each section row sums to 1.0.
     private static let weights: [String: [String: Double]] = [
-        "verse": ["Meter": 0.25, "Rhyme": 0.32, "Specificity": 0.25, "Throughline": 0.08, "Craft": 0.10],
-        "hook":  ["Meter": 0.28, "Rhyme": 0.32, "Specificity": 0.20, "Throughline": 0.08, "Craft": 0.12],
+        "verse": ["Punchline": 0.25, "Rhyme": 0.25, "Meter": 0.18, "Specificity": 0.17, "Throughline": 0.07, "Craft": 0.08],
+        "hook":  ["Punchline": 0.18, "Rhyme": 0.30, "Meter": 0.22, "Specificity": 0.14, "Throughline": 0.06, "Craft": 0.10],
     ]
+    // Setup→payoff / simile / flip markers — the structures a brand-list lacks. (mirror grade_modelg_v5.COMPARE)
+    private static let compareRe = try! NSRegularExpression(pattern:
+        "like a |like the |like i |like we |like it |more than|than a |than the |than my |worth more|cost more|but i |but the |'til|\\btil |until|turn into|turned into|thought i|thought it|thought they|came from|come from")
     // Same stopword set the fingerprint was built with (grade_modelg.STOPWORDS).
     private static let stop: Set<String> = ["the","a","an","and","or","but","to","of","in","on","at","it",
         "is","be","we","they","that","this","i","you","my","me","your","im","its","got","get","gon","gonna",
@@ -77,6 +86,7 @@ enum VerseLedgerV5Scorer {
             "Specificity": specificity(lines),
             "Throughline": throughline(lines),
             "Craft": craft(lines),
+            "Punchline": punchline(lines),
         ]
         let w = weights[section] ?? weights["verse"]!
         let pos = w.reduce(0.0) { $0 + (axes[$1.key] ?? 0) * $1.value }
@@ -84,7 +94,7 @@ enum VerseLedgerV5Scorer {
         let net = max(0, min(100, pos - rep))
         return VerseLedgerV5(section: section, meter: axes["Meter"]!, rhyme: axes["Rhyme"]!,
                              specificity: axes["Specificity"]!, throughline: axes["Throughline"]!,
-                             craft: axes["Craft"]!, repetitionPenalty: rep,
+                             craft: axes["Craft"]!, punchline: axes["Punchline"]!, repetitionPenalty: rep,
                              net: net, typicality: typicality(axes, section: section))
     }
 
@@ -176,6 +186,37 @@ enum VerseLedgerV5Scorer {
         let cw = lines.flatMap { content($0) }
         guard !cw.isEmpty else { return 50 }
         return round1(min(100, 100 * Double(Set(cw).count) / Double(cw.count)))
+    }
+
+    // MARK: - Punchline / wit (v5.1) — mechanical proxy for "is there a setup→payoff?"
+    // Counts lines with a comparison/flip marker (simile, "more than", "but I…", "thought I…", flip)
+    // or the genre's "X on X" device. Skips duplicate lines so the fragment-echo failure ("Yeah,
+    // yeah" / a repeated bar) does NOT read as wit. A flat brand inventory scores ~0 here, which is
+    // the point. Validated on the 2026-06-10 ablation captures (mirror grade_modelg_v5.punchline_axis).
+    private static func punchline(_ lines: [String]) -> Double {
+        guard !lines.isEmpty else { return 0 }
+        var wit = 0
+        var seen = Set<String>()
+        for line in lines {
+            let norm = normLine(line)
+            if seen.contains(norm) { continue }   // degenerate echo is not wit
+            seen.insert(norm)
+            let low = line.lowercased()
+            var hit = false
+            let r = NSRange(low.startIndex..., in: low)
+            if compareRe.firstMatch(in: low, range: r) != nil {
+                hit = true
+            } else {
+                let toks = words(line)            // "X on X" — intentional repetition device
+                if toks.count >= 3 {
+                    for i in 0..<(toks.count - 2) where toks[i + 1] == "on" && toks[i] == toks[i + 2] && toks[i].count > 2 {
+                        hit = true; break
+                    }
+                }
+            }
+            if hit { wit += 1 }
+        }
+        return round1(min(100, 100 * Double(wit) / Double(lines.count) / 0.35))
     }
 
     // MARK: - Repetition (refrain-exempt + monotony, section-softened, hard floor)
