@@ -21,7 +21,8 @@ struct GenerationCardView: View {
     var criticError: String? = nil
     var onRetryCritic: () -> Void = {}
     var onTapLine: (RapSuggestion, Int) -> Void = { _, _ in }
-    /// Per-suggestion liked / disliked line indices (non-empty-line index space).
+    /// Per-suggestion liked / disliked line indices (non-empty-line index space),
+    /// so taps show up green/red on the deck card.
     var likedLines: [UUID: Set<Int>] = [:]
     var dislikedLines: [UUID: Set<Int>] = [:]
 
@@ -55,6 +56,10 @@ struct GenerationCardView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
+                Text("Tap a line: once = dislike, again = like, again = clear")
+                    .font(.caption2)
+                    .foregroundStyle(Momentum.contentSecondary)
+
                 ForEach(generation.suggestions) { suggestion in
                     lyrics(for: suggestion)
                 }

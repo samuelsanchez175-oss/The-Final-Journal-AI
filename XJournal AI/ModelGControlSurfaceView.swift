@@ -352,4 +352,3 @@ struct ModelGControlSurfaceView: View {
         }
     }
 }
-

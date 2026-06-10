@@ -583,7 +583,9 @@ class RapSuggestionAPI {
             #if DEBUG
             print("🟢 [ModelG Core] entered \(modelGCoreSuggestionSetCount) set(s) — engine: v4=\(ModelGEnvironment.useModelGv4) v3=\(ModelGEnvironment.useModelGv3) v2=\(useV2) | model=\(model)")
             #endif
-            let baseSource = ModelGEnvironment.useModelGv3 ? "Model G Core v3.0" : (useV2 ? "Model G Core v2.0" : "Model G Core v1.0")
+            let baseSource = ModelGEnvironment.useModelGv4
+                ? "Model G Core v4.0" + (ModelGEnvironment.useV5Grader ? " · v5 grader" : "")
+                : (ModelGEnvironment.useModelGv3 ? "Model G Core v3.0" : (useV2 ? "Model G Core v2.0" : "Model G Core v1.0"))
             var coreSuggestions: [RapSuggestion] = []
 
             // Generate all sets concurrently so their network round-trips overlap.
