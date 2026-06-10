@@ -12,7 +12,12 @@
 - **People**: `[People/]` — one note per person
 - **Context files**: files matching `*context*` describe the current state of
   my life and projects; treat them as the freshest summary of intent.
+- **Clippings**: `[Clippings/]` — saved external content; my one-line
+  annotation and links on a clip are the part that's mine.
 - **Agent area**: `_agent/` — the only place agents may write (see rules).
+  Known artifacts: `_agent/Home.md` (landing page, rebuilt by /home),
+  `_agent/briefings/` (scheduled command output), `_agent/digests/`
+  (per-topic clipping digests from /digest).
 
 ## Rules for agents
 
@@ -32,6 +37,11 @@
 
 <!-- Keep only what's true, add your own. -->
 
+- Every note carries `source:` frontmatter when it isn't my own writing:
+  `me` (default — my thinking), `agent` (AI-written or AI-conversation
+  derived), `clip` (saved external content). Pattern analysis (/ghost,
+  /drift, /emerge, /trace) reads `me` as my thinking, treats `clip` as
+  interest-signal only, and uses `agent` for project state only.
 - Ideas worth developing get tagged `#idea` in daily notes.
 - Hypotheses are written with a confidence marker, e.g.
   `hypothesis: ... (confidence: 6/10)`.

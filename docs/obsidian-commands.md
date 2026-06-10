@@ -39,6 +39,16 @@ and these implementations expand them into full commands.
 | `/emerge` | Surfaces what the vault implies but never states; clusters ready to become projects |
 | `/schedule [request]` | Evaluates a meeting request — or plans the week — against calendar *and* vault priorities |
 
+## Beyond the original 12
+
+| Command | What it does |
+|---|---|
+| `/home` | Rebuilds `_agent/Home.md` — a landing page: today, recent daily notes, recurring ideas, opportunities, digests, active projects |
+| `/digest [topic]` | Clusters clippings into rolling per-topic digests (`_agent/digests/<topic>.md`) connected to active projects; no topic = triage all new clips |
+
+Both write only inside `_agent/` (agent-owned space), consistent with the
+human-written vault rule.
+
 ## The rules these commands follow
 
 1. **The vault is human-written.** Vin's strict separation: the agent reads

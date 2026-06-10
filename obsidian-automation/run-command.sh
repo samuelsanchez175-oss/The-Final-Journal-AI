@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # Run one Obsidian thinking-tool slash command headlessly and save the
-# briefing into the vault's _agent/briefings/ folder.
+# briefing into the vault's _agent/briefings/ folder. The home and digest
+# commands write their own files under _agent/ instead of a briefing.
 #
-# Usage: run-command.sh <today|closeday|ideas|drift|graduate> [--dry-run]
+# Usage: run-command.sh <today|closeday|ideas|drift|graduate|home|digest> [--dry-run]
 #
 # Config: ~/.config/obsidian-commands/config (created by install.sh)
 #   VAULT_PATH=/path/to/vault     required
@@ -19,8 +20,9 @@ DRY_RUN=false
 [[ "${2:-}" == "--dry-run" ]] && DRY_RUN=true
 
 case "$CMD" in
-  today|closeday|ideas|drift|graduate) ;;
-  *) echo "usage: $(basename "$0") <today|closeday|ideas|drift|graduate> [--dry-run]" >&2; exit 2 ;;
+  today|closeday|ideas|drift|graduate) WRITES_OWN_FILES=false ;;
+  home|digest)                         WRITES_OWN_FILES=true ;;
+  *) echo "usage: $(basename "$0") <today|closeday|ideas|drift|graduate|home|digest> [--dry-run]" >&2; exit 2 ;;
 esac
 
 CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/obsidian-commands/config"
@@ -52,10 +54,19 @@ ALLOWED_TOOLS=(
   "Bash(grep:*)" "Bash(cat:*)" "Bash(head:*)" "Bash(tail:*)" "Bash(wc:*)"
 )
 
+# /home and /digest maintain their own files; writes stay inside _agent/.
+if $WRITES_OWN_FILES; then
+  ALLOWED_TOOLS+=("Write(_agent/**)" "Edit(_agent/**)" "Bash(mkdir:*)")
+fi
+
 if $DRY_RUN; then
   echo "would cd:    $VAULT_PATH"
   echo "would run:   $CLAUDE_BIN -p \"/$CMD\" --allowedTools ${ALLOWED_TOOLS[*]} ${CLAUDE_EXTRA_ARGS:-}"
-  echo "would write: $OUT_FILE"
+  if $WRITES_OWN_FILES; then
+    echo "would write: files under $VAULT_PATH/_agent/ (command-managed)"
+  else
+    echo "would write: $OUT_FILE"
+  fi
   exit 0
 fi
 
@@ -67,18 +78,24 @@ if [[ "$LAUNCH_OBSIDIAN" == "true" && "$(uname)" == "Darwin" ]] \
   sleep 8
 fi
 
-mkdir -p "$OUT_DIR"
 cd "$VAULT_PATH"
 
-# shellcheck disable=SC2086  # CLAUDE_EXTRA_ARGS is intentionally word-split
-{
-  echo "---"
-  echo "command: /$CMD"
-  echo "generated: $(date '+%Y-%m-%d %H:%M')"
-  echo "source: agent"
-  echo "---"
-  echo
+if $WRITES_OWN_FILES; then
+  mkdir -p "$VAULT_PATH/_agent"
+  # shellcheck disable=SC2086  # CLAUDE_EXTRA_ARGS is intentionally word-split
   "$CLAUDE_BIN" -p "/$CMD" --allowedTools "${ALLOWED_TOOLS[@]}" ${CLAUDE_EXTRA_ARGS:-}
-} > "$OUT_FILE.tmp" && mv "$OUT_FILE.tmp" "$OUT_FILE"
-
-echo "wrote $OUT_FILE"
+  echo "refreshed $CMD (see $VAULT_PATH/_agent/)"
+else
+  mkdir -p "$OUT_DIR"
+  # shellcheck disable=SC2086  # CLAUDE_EXTRA_ARGS is intentionally word-split
+  {
+    echo "---"
+    echo "command: /$CMD"
+    echo "generated: $(date '+%Y-%m-%d %H:%M')"
+    echo "source: agent"
+    echo "---"
+    echo
+    "$CLAUDE_BIN" -p "/$CMD" --allowedTools "${ALLOWED_TOOLS[@]}" ${CLAUDE_EXTRA_ARGS:-}
+  } > "$OUT_FILE.tmp" && mv "$OUT_FILE.tmp" "$OUT_FILE"
+  echo "wrote $OUT_FILE"
+fi

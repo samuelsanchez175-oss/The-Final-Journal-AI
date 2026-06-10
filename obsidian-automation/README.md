@@ -1,22 +1,33 @@
 # Obsidian Command Automation
 
 Scheduled, headless runs of the thinking-tool commands
-(see `docs/obsidian-commands.md`), with briefings saved into your vault.
+(see `docs/obsidian-commands.md`), with output saved into your vault.
 
 ## What you get
 
 | Job | Schedule | Output |
 |---|---|---|
 | `today` | daily 07:00 | `_agent/briefings/YYYY-MM-DD-today.md` |
+| `home` | daily 07:15 | `_agent/Home.md` — the landing page, rebuilt |
 | `ideas` | Sundays 17:00 | `..-ideas.md` |
 | `closeday` | daily 21:30 *(opt-in)* | `..-closeday.md` |
 | `drift` | Mondays 08:00, even ISO weeks *(opt-in)* | `..-drift.md` |
+| `digest` | Fridays 16:00, triage mode *(opt-in)* | `_agent/digests/<topic>.md` |
 | `graduate` | Saturdays 10:00, report-only *(opt-in)* | `..-graduate.md` |
 
-Default install enables only `today` + `ideas` — start there; add the rest
-once you're reliably reading those two. The interactive commands (`/ghost`,
+Default install enables `today` + `ideas` + `home` — start there; add the
+rest once you're reliably reading those. The interactive commands (`/ghost`,
 `/challenge`, `/trace`, `/connect`, `/context`, `/schedule`) are not
 schedulable on purpose: they need you.
+
+## The landing page
+
+`/home` maintains `_agent/Home.md`: today's plan, the week's daily notes,
+recurring ideas, opportunities from the latest briefings, digests by topic,
+and active projects — all as wikilinks. To make it your "log in" screen,
+install the community **Homepage** plugin and point it at `_agent/Home.md`
+(or just pin the note). Run `/digest coding` (or `business`, `creative`, any
+topic) to build the per-topic clipping digests it links to.
 
 ## Prerequisites
 
@@ -54,11 +65,28 @@ Test immediately without waiting for the schedule:
 ## How it stays safe
 
 - Headless runs use a **read-only tool allowlist** (vault reads, the
-  `obsidian` CLI, calendar helpers). No write tools are granted.
+  `obsidian` CLI, calendar helpers). Only the `home` and `digest` jobs get
+  write access, scoped to `_agent/**`.
 - `/graduate` halts at its approval step in print mode, so the Saturday job
   produces a candidates report; promoting notes stays an interactive act.
-- Briefings carry `source: agent` frontmatter and live only in `_agent/`,
-  keeping the human-written vault rule intact.
+- Agent output carries `source: agent` frontmatter and lives only in
+  `_agent/`, keeping the human-written vault rule intact.
+
+## Merging vaults
+
+If you're consolidating several vaults into one (recommended for the
+thinking commands — one vault, one link graph), `merge-vaults.sh` copies
+source vaults into subfolders of a target vault and reports wikilink name
+collisions first. Dry-run by default:
+
+```bash
+./merge-vaults.sh ~/Vaults/Main ~/Vaults/OB:Projects ~/Vaults/Alamo:Clippings
+# review the collision report, rename as needed, then:
+./merge-vaults.sh ~/Vaults/Main ~/Vaults/OB:Projects ~/Vaults/Alamo:Clippings --apply
+```
+
+Sources are never modified. `.obsidian/` settings are not copied — the
+target vault's settings win.
 
 ## Cost & tuning
 

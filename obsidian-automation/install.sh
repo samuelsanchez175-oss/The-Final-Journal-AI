@@ -19,9 +19,9 @@ if [[ "$(uname)" != "Darwin" ]]; then
   exit 1
 fi
 
-VAULT_ARG="${1:?usage: install.sh /path/to/vault [today ideas closeday drift graduate]}"
+VAULT_ARG="${1:?usage: install.sh /path/to/vault [today ideas home closeday drift graduate digest]}"
 shift
-if [[ $# -gt 0 ]]; then JOBS=("$@"); else JOBS=(today ideas); fi
+if [[ $# -gt 0 ]]; then JOBS=("$@"); else JOBS=(today ideas home); fi
 
 VAULT="$(cd "$VAULT_ARG" && pwd)"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -64,9 +64,11 @@ schedule_xml() {
   # launchd Weekday: 0 = Sunday
   case "$1" in
     today)    echo '<dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>0</integer></dict>' ;;
+    home)     echo '<dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>15</integer></dict>' ;;
     closeday) echo '<dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>30</integer></dict>' ;;
     ideas)    echo '<dict><key>Weekday</key><integer>0</integer><key>Hour</key><integer>17</integer><key>Minute</key><integer>0</integer></dict>' ;;
     drift)    echo '<dict><key>Weekday</key><integer>1</integer><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer></dict>' ;;
+    digest)   echo '<dict><key>Weekday</key><integer>5</integer><key>Hour</key><integer>16</integer><key>Minute</key><integer>0</integer></dict>' ;;
     graduate) echo '<dict><key>Weekday</key><integer>6</integer><key>Hour</key><integer>10</integer><key>Minute</key><integer>0</integer></dict>' ;;
     *) return 1 ;;
   esac
@@ -75,16 +77,18 @@ schedule_xml() {
 schedule_human() {
   case "$1" in
     today)    echo "daily 07:00" ;;
+    home)     echo "daily 07:15 (after today)" ;;
     closeday) echo "daily 21:30" ;;
     ideas)    echo "Sundays 17:00" ;;
     drift)    echo "Mondays 08:00 (even ISO weeks only)" ;;
+    digest)   echo "Fridays 16:00 (triage mode)" ;;
     graduate) echo "Saturdays 10:00 (report only)" ;;
   esac
 }
 
 for job in "${JOBS[@]}"; do
   if ! xml="$(schedule_xml "$job")"; then
-    echo "unknown job: $job (valid: today closeday ideas drift graduate)" >&2
+    echo "unknown job: $job (valid: today home closeday ideas drift digest graduate)" >&2
     exit 2
   fi
   label="com.obsidian-commands.$job"
