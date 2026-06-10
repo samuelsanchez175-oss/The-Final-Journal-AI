@@ -199,10 +199,16 @@ class ModelGCoreCoordinatorV4 {
             }
         }
 
-        consider(await generateRound(useCorpus: true))
+        // Keep every usable candidate across rounds so v4.1 can re-pick by WIT (see below).
+        var allCandidates: [(hook: String, bars: [String])] = []
+        let round1 = await generateRound(useCorpus: true)
+        allCandidates += round1
+        consider(round1)
         // Quality bar: one extra round if the best is below target (off when the bar == 0).
         if qualityTarget > 0 && bestScore < qualityTarget {
-            consider(await generateRound(useCorpus: true))
+            let round2 = await generateRound(useCorpus: true)
+            allCandidates += round2
+            consider(round2)
         }
         // ROBUSTNESS (ship-blocker fix): if corpus-injected generation produced no usable verse —
         // e.g. a provider safety-blocked the explicit reference lyrics, or returned non-JSON — retry
@@ -213,7 +219,24 @@ class ModelGCoreCoordinatorV4 {
             #if DEBUG
             print("⚠️ [ModelG v4] no usable candidate WITH corpus — retrying WITHOUT corpus (v3-equivalent prompt)")
             #endif
-            consider(await generateRound(useCorpus: false))
+            let round3 = await generateRound(useCorpus: false)
+            allCandidates += round3
+            consider(round3)
+        }
+
+        // v4.1 (P4): the mechanical v5/v4 grader is anti-correlated with punchline taste, so for v4.1
+        // override its pick with a wit-focused LLM rerank over the full candidate pool. Falls back to
+        // the mechanical `best` on any failure, and only fires when there are ≥2 usable candidates.
+        if ModelGEnvironment.useModelGv41 {
+            let usable = allCandidates.filter { $0.bars.count >= 8 }
+            if usable.count >= 2, let pick = try? await llmService.rankByWit(candidates: usable, topic: intent.theme) {
+                best = usable[pick]
+                #if DEBUG
+                print("🃏 [ModelG v4.1] wit-rerank picked candidate \(pick) of \(usable.count)")
+                #endif
+            } else if best == nil, let first = usable.first {
+                best = first
+            }
         }
 
         #if DEBUG

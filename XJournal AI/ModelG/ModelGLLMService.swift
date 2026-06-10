@@ -348,6 +348,35 @@ class ModelGLLMService {
         return (hook, bars)
     }
 
+    /// v4.1 selection (P4): rank candidate verses by WIT — punchlines / wordplay / a carried concept
+    /// — with one cheap LLM call, and return the index of the best. The mechanical v5/v4 grader is
+    /// anti-correlated with punchline taste (2026-06-10 ablation: it rewards regular brand-lists and
+    /// penalizes the meter-breaking setup→payoff of a real punchline), so for v4.1 we let the model
+    /// pick the sharpest draft instead. Returns 0 (first candidate) on any failure so generation
+    /// never breaks on the rerank.
+    func rankByWit(candidates: [(hook: String, bars: [String])], topic: String) async throws -> Int {
+        guard candidates.count >= 2 else { return 0 }
+        let blocks = candidates.enumerated().map { (i, c) -> String in
+            let body = ([c.hook] + c.bars).filter { !$0.isEmpty }.joined(separator: "\n")
+            return "CANDIDATE \(i):\n\(body)"
+        }.joined(separator: "\n\n")
+        let system = "You are a veteran rap A&R judging melodic-trap verses for WIT. Respond ONLY with valid JSON."
+        let user = """
+        Pick the BEST candidate verse: the one with the most real punchlines, double-entendres / wordplay, and a single concept carried across the bars. A line worth rewinding beats clean brand-drops. PENALIZE a verse that is just a list of flexes with no concept or payoff.
+        Topic: \(topic)
+
+        \(blocks)
+
+        Return JSON exactly: {"best": <candidate number 0-\(candidates.count - 1)>, "why": "short reason"}
+        """
+        let raw = try await postChat(system: system, user: user, maxTokens: 200, temperature: 0.2, jsonMode: true)
+        guard let data = raw.data(using: .utf8),
+              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let n = obj["best"] as? NSNumber else { return 0 }
+        let idx = n.intValue
+        return (idx >= 0 && idx < candidates.count) ? idx : 0
+    }
+
     /// Extract beat metadata (BPM/key/scale) from a beat link's title/description text.
     /// Text-only: beat uploads list e.g. "140 BPM C# Minor" in the title. Returns nils when absent.
     func extractBeatMetadata(fromText text: String) async throws -> (bpm: Int?, key: String?, scale: String?) {
