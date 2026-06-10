@@ -958,6 +958,7 @@ struct HapticsSettingsToggle: View {
 struct ModelEngineTogglesView: View {
     @AppStorage("model_g_v4_enabled") private var useModelGv4: Bool = true
     @AppStorage("model_g_v5_grader_enabled") private var useV5Grader: Bool = true
+    @AppStorage("model_g_v41_enabled") private var useModelGv41: Bool = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
@@ -973,6 +974,14 @@ struct ModelEngineTogglesView: View {
                 title: "Model G v5 grader",
                 detail: "Picks the best of several drafts with the typicality-calibrated v5 grader (slant-rhyme aware, section-routed) instead of the original scorer.",
                 isOn: $useV5Grader
+            )
+
+            Divider()
+
+            engineRow(
+                title: "Model G v4.1 — punchline mode",
+                detail: "Chases real punchlines, wordplay and one carried concept (the gap vs Gemini): drops the “imply” + “no-repeat” rules and the ad-lib reference bars. Rides on v4. Off by default — A/B against plain v4.",
+                isOn: $useModelGv41
             )
         }
         .padding(.horizontal, 16)

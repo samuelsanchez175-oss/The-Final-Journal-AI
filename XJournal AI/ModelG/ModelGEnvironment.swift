@@ -56,6 +56,16 @@ enum ModelGEnvironment {
         set { UserDefaults.standard.set(newValue, forKey: "model_g_v5_grader_enabled") }
     }
 
+    /// Model G v4.1 — "punchline mode". Rides on the v4 path (no effect unless v4 is on). Closes the
+    /// punchline/wordplay/concept gap proven by the 2026-06-10 axis ablation: adds an explicit
+    /// concept+punchline directive, drops the "imply" + "no-repeat" rules that fight the genre, and
+    /// filters ad-lib/fragment corpus exemplars (≤3 words) so the model isn't told to "echo" "Yeah".
+    /// Opt-in (default OFF) so v4 stays byte-identical for A/B until it's validated by listening.
+    static var useModelGv41: Bool {
+        get { UserDefaults.standard.bool(forKey: "model_g_v41_enabled") }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_v41_enabled") }
+    }
+
     /// Originality/inspiration target (0 = lean hard on the culture's idioms & the training lyrics;
     /// 1 = more novel). Default 0.6: fresh but grounded — sterile-original loses the voice.
     static var originalityBias: Double {

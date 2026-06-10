@@ -309,18 +309,32 @@ class ModelGLLMService {
         }()
         let corpusVocabBlock: String = corpusVocab.isEmpty ? "" :
             "\nVOCAB PALETTE (weave in naturally, only if it fits): \(corpusVocab.prefix(12).joined(separator: ", "))"
+        // v4.1 "punchline mode" — closes the punchline/wordplay/concept gap proven by the
+        // 2026-06-10 axis ablation. Adds a concept+punchline directive, drops the "imply" + "no-repeat"
+        // rules (which forbid the reveal and the genre's anaphora), and softens the concrete-noun quota
+        // so the model writes wit instead of a brand inventory. Off → the v4 prompt is byte-identical.
+        let v41 = ModelGEnvironment.useModelGv41
+        let punchlineBlock = v41
+            ? "\nPUNCHLINES & CONCEPT (most important): pick ONE concept/image and carry it across the bars. Land at least 2-3 real punchlines — double-entendres / play-on-words where one phrase means two things at once (gun/drug/money/sex/jewelry multi-meaning), or a flipped common phrase. Set up, then SNAP the reveal on the rhyme. A line worth rewinding beats three clean flexes. Be vivid and direct when the punchline needs it — don't imply your way around the joke."
+            : ""
+        let rulesLine = v41
+            ? "Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; ground it in 1 concrete detail (a specific brand, place, or coded term) when it serves the line — but a punchline beats a brand-drop; deliberate repetition/anaphora is welcome (e.g. \"Pateks on Pateks\", \"you ain't my slime, you ain't my slime\") — just don't pad; no numbering inside the bar strings."
+            : "Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word (\"Roley\" not \"a watch\", \"the trap\" not \"the block\"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings."
         let user = """
         Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
         Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
         \(plan.promptText)
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
-        \(inspirationLine)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)
-        Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.\(rhymeCadence)
+        \(inspirationLine)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)\(punchlineBlock)
+        \(rulesLine)\(rhymeCadence)
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}\(exampleBlock)
         """
+        let systemMsg = v41
+            ? "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars. Your #1 job is WIT — land real punchlines and wordplay with one concept carried across the bars; on-style texture and the reference bars serve that, they never replace it."
+            : "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars. House style and the reference bars take priority over the requested topic when they conflict."
         let raw = try await postChat(
-            system: "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars. House style and the reference bars take priority over the requested topic when they conflict.",
+            system: systemMsg,
             user: user, maxTokens: 1400, temperature: temperature, jsonMode: true
         )
         guard let data = raw.data(using: .utf8),

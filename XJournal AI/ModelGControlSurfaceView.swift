@@ -31,6 +31,7 @@ struct ModelGControlSurfaceView: View {
     // so flipping this here changes which pipeline this sheet's Generate runs. On by default.
     @AppStorage("model_g_v4_enabled") private var useModelGv4 = true
     @AppStorage("model_g_v5_grader_enabled") private var useV5Grader = true
+    @AppStorage("model_g_v41_enabled") private var useModelGv41 = false
 
     private static let styleOptions: [(key: String, label: String, profile: StyleProfile)] = [
         ("auto", "Auto", StyleProfile.coldTrap),
@@ -147,6 +148,12 @@ struct ModelGControlSurfaceView: View {
                 Text("Use Model G v5 grader").font(.subheadline.weight(.semibold))
             }
             Text("Picks the best of several v4 drafts with the v5 grader — typicality-calibrated and slant-rhyme aware. Only active when v4 is on. On by default.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+
+            Toggle(isOn: $useModelGv41) {
+                Text("Model G v4.1 — punchline mode").font(.subheadline.weight(.semibold))
+            }
+            Text("Rewrites the v4 prompt to chase real punchlines, wordplay and one carried concept (the gap vs Gemini): drops the “imply” + “no-repeat” rules and the ad-lib reference bars. Rides on v4. Off by default — A/B against plain v4.")
                 .font(.caption).foregroundStyle(Momentum.contentSecondary)
         }
     }

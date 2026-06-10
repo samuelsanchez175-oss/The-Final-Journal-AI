@@ -105,8 +105,14 @@ class ModelGCoreCoordinatorV4 {
             let retrieved = ModelGCorpusRetriever(store: corpusStore, embeddingIndex: ModelGEmbeddingIndex.shared).retrieve(
                 tones: tones, topics: topics, draft: input,
                 brands: directedParams?.worldBuildingWords ?? [], k: kExemplars)
-            v4Exemplars = retrieved.exemplars.map { $0.text }
-            v4ExemplarNorms = retrieved.exemplars.map { $0.norm }
+            // v4.1: drop ad-lib/fragment exemplars (≤3 words like "Ah"/"Yeah"/"Ooh, ooh"). The ablation
+            // showed ~6% of confident/luxury corpus bars are fragments, and injecting them under the
+            // "echo this BLUEPRINT" directive made the model parrot "Yeah, yeah". Real bars only.
+            let usableExemplars = ModelGEnvironment.useModelGv41
+                ? retrieved.exemplars.filter { $0.text.split(separator: " ").count >= 4 }
+                : retrieved.exemplars
+            v4Exemplars = usableExemplars.map { $0.text }
+            v4ExemplarNorms = usableExemplars.map { $0.norm }
             v4Vocab = retrieved.vocab
         } catch {
             #if DEBUG
