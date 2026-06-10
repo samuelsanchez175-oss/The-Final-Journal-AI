@@ -334,6 +334,75 @@ class ModelGLLMService {
         return (hook, bars)
     }
 
+    // MARK: - Ablation harness (Model Lab)
+
+    /// Generate a verse for the axis-ablation harness with explicit prompt toggles, so the app can
+    /// MEASURE which constraints actually help instead of guessing. Self-contained (no
+    /// GenerationContext) — the harness flips each block directly. Reuses `postChat`, so it runs on
+    /// whatever provider key is configured (OpenAI / Gemini / Anthropic).
+    func generateAblationVerse(
+        topic: String,
+        tone: String,
+        referenceBars: [String],
+        barCount: Int,
+        voiceGuard: Bool,
+        punchline: Bool,
+        grounding: Bool,
+        slim: Bool,
+        temperature: Double = 0.85
+    ) async throws -> (hook: String, bars: [String]) {
+        var blocks: [String] = []
+        blocks.append("Write a melodic trap verse: a 1-2 line HOOK and EXACTLY \(barCount) bars. JSON only.")
+        blocks.append("Topic: \(topic) (tone: \(tone)).")
+
+        if voiceGuard {
+            // The production exposure/social-action directive — the one that suppresses concreteness.
+            blocks.append("""
+            Voice (stay in character):
+            - Exposure: Imply, don't explain. Signal wealth/risk through detail; never justify, never name the act. Over-explaining kills the line.
+            - Social move: warn — signal a consequence without naming the act.
+            """)
+        }
+
+        if punchline {
+            blocks.append("""
+            PUNCHLINES (top priority): every 3-4 bars, land a punchline. Set an ordinary expectation, then TURN it on the final word so it re-reads two ways — a pun, homophone, or double meaning that pays off the END RHYME and the picture at once. Name the thing concretely; wordplay beats vagueness.
+            """)
+        }
+
+        if grounding && !referenceBars.isEmpty {
+            let refs = referenceBars.prefix(6).map { "• \($0)" }.joined(separator: "\n")
+            blocks.append("REFERENCE BARS — study the cadence, slang and imagery; paraphrase, never copy:\n\(refs)")
+        }
+
+        if !slim {
+            blocks.append("""
+            Craft rules: name something CONCRETE — a specific brand, place or coded term ("Roley" not "a watch", "Eastside" not "the block"), at least 1-2 across the verse; rhyme HARD — multisyllabic and internal, not only line-ends; do not repeat the same word.
+            """)
+        }
+
+        blocks.append("Each bar 8-12 syllables — short and in the pocket, no run-ons. No numbering inside the bar strings.")
+        blocks.append("Return JSON exactly: {\"hook\": \"the hook lines\", \"bars\": [\"bar 1\", \"… \(barCount) bars total\"]}")
+
+        let system = slim
+            ? "You are a sharp trap lyricist. Respond ONLY with valid JSON: a hook and exactly \(barCount) bars."
+            : "You are Model G. Respond ONLY with valid JSON: a hook and exactly \(barCount) bars. Reference bars and house style take priority over the topic when they conflict."
+
+        let raw = try await postChat(
+            system: system, user: blocks.joined(separator: "\n\n"),
+            maxTokens: 1400, temperature: temperature, jsonMode: true
+        )
+        guard let data = raw.data(using: .utf8),
+              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+            return ("", [])
+        }
+        let hook = (obj["hook"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let bars = ((obj["bars"] as? [String]) ?? [])
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
+        return (hook, bars)
+    }
+
     /// Extract beat metadata (BPM/key/scale) from a beat link's title/description text.
     /// Text-only: beat uploads list e.g. "140 BPM C# Minor" in the title. Returns nils when absent.
     func extractBeatMetadata(fromText text: String) async throws -> (bpm: Int?, key: String?, scale: String?) {
