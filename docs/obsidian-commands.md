@@ -58,3 +58,10 @@ and these implementations expand them into full commands.
   from the command picker or rename `context.md` (e.g. to `prime.md`).
 - `/today` and `/schedule` read your calendar best-effort (`icalBuddy`,
   `gcalcli`, or a calendar MCP tool) and degrade gracefully without one.
+
+## Scheduled runs
+
+`/today`, `/ideas`, `/closeday`, `/drift`, and `/graduate` can run on a
+schedule, writing briefings to `<vault>/_agent/briefings/`. See
+`obsidian-automation/README.md` for the launchd/cron setup, the read-only
+allowlist headless runs use, and the vault `CLAUDE.md` template.
