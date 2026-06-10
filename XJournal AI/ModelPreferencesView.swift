@@ -12,6 +12,7 @@ struct ModelPreferencesView: View {
     @State private var creativity = ModelGEnvironment.creativity
     @State private var effortCandidates = ModelGEnvironment.effortCandidates
     @State private var qualityBar = ModelGEnvironment.qualityBar
+    @State private var showModelLab = false
     #if DEBUG
     // Dev-only switch for the experimental Model G v4 engine. Binds the same UserDefaults
     // key (`model_g_v4_enabled`) that ModelGEnvironment.useModelGv4 / RapSuggestionAPI read.
@@ -29,6 +30,7 @@ struct ModelPreferencesView: View {
                     themeAwareToggle
                     #if DEBUG
                     modelGv4Toggle
+                    modelLabButton
                     #endif
                     criticVoicePicker
                     ModelSettingsForm(settings: $modelGv3Settings)
@@ -63,6 +65,27 @@ struct ModelPreferencesView: View {
             // so changes aren't silently dropped on swipe-dismiss or Done.
             saveSettings()
         }
+        .sheet(isPresented: $showModelLab) { ModelGAblationView() }
+    }
+
+    private var modelLabButton: some View {
+        Button {
+            showModelLab = true
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "slider.horizontal.3")
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Model Lab — axis A/B").font(.subheadline.weight(.semibold))
+                    Text("Run a verse through the axis combinations and score each with v5.")
+                        .font(.caption).foregroundStyle(Momentum.contentSecondary)
+                }
+                Spacer()
+                Image(systemName: "chevron.right").font(.caption).foregroundStyle(.secondary)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.vertical, 4)
+        }
+        .buttonStyle(.plain)
     }
 
     private var originalitySlider: some View {
