@@ -14,7 +14,7 @@ class ModelGLLMService {
     private var apiKey: String? { KeychainHelper.shared.getAPIKey() }
     private let baseURL = "https://api.openai.com/v1"
     /// Gemini text model, used automatically when an "AIza" (Google AI Studio) key is supplied.
-    private let geminiModel = "gemini-2.5-flash"
+    private let geminiModel = "gemini-2.0-flash"
     private let anthropicModel = "claude-3-5-sonnet-latest"  // configurable; current Claude model
 
     enum LLMProvider { case openAI, gemini, anthropic }
@@ -141,9 +141,7 @@ class ModelGLLMService {
     /// Lets Model G run on a Gemini key (e.g. reused from another project) with no OpenAI key.
     private func postGemini(key: String, system: String, user: String,
                             maxTokens: Int, temperature: Double, jsonMode: Bool) async throws -> String {
-        // Disable 2.5 "thinking" — it otherwise consumes the output budget and truncates the verse.
-        var generationConfig: [String: Any] = ["temperature": temperature, "maxOutputTokens": maxTokens,
-                                                "thinkingConfig": ["thinkingBudget": 0]]
+        var generationConfig: [String: Any] = ["temperature": temperature, "maxOutputTokens": maxTokens]
         if jsonMode { generationConfig["responseMimeType"] = "application/json" }
         let body: [String: Any] = [
             "system_instruction": ["parts": [["text": system]]],
@@ -251,7 +249,8 @@ class ModelGLLMService {
     func generateFullVerse(plan: VersePlan, arcShape: String, context: GenerationContext,
                            temperature: Double = 0.8,
                            corpusExemplars: [String] = [], corpusVocab: [String] = [],
-                           inspiration: Double = 0.4) async throws -> (hook: String, bars: [String]) {
+                           inspiration: Double = 0.4,
+                           punchlineMode: Bool = false) async throws -> (hook: String, bars: [String]) {
         let layer = context.luxuryLayer ?? .empty
         let themeBlock = context.themeContext.map { themeDirective($0) } ?? ""
         let voiceBlock = context.signalAxes.map { "\n" + signalDirective($0) } ?? ""
@@ -309,13 +308,15 @@ class ModelGLLMService {
         }()
         let corpusVocabBlock: String = corpusVocab.isEmpty ? "" :
             "\nVOCAB PALETTE (weave in naturally, only if it fits): \(corpusVocab.prefix(12).joined(separator: ", "))"
+            
+        let punchlineBlock = punchlineMode ? "\n\nPUNCHLINE MODE (STRICT STRUCTURE):\n- Structure the entire 16-bar verse into 4-bar chunks.\n- Bars 1 and 2 MUST establish a premise or narrative.\n- Bar 3 MUST be a setup or misdirection.\n- Bar 4 MUST deliver a hard punchline/payoff.\n- This means bars 4, 8, 12, and 16 should be the strongest punchlines, set up by the preceding 3 bars." : ""
         let user = """
         Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
         Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
         \(plan.promptText)
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
-        \(inspirationLine)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)
+        \(inspirationLine)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)\(punchlineBlock)
         Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.\(rhymeCadence)
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}\(exampleBlock)
         """

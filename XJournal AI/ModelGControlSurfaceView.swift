@@ -30,6 +30,8 @@ struct ModelGControlSurfaceView: View {
     // (RapSuggestionAPI.generateModelGCoreRecordWithRetry: useModelGv4 → CoordinatorV4, else v3),
     // so flipping this here changes which pipeline this sheet's Generate runs. Off by default.
     @AppStorage("model_g_v4_enabled") private var useModelGv4 = false
+    @AppStorage("model_g_v4_1_enabled") private var useModelGv4_1 = false
+    @AppStorage("model_gl_enabled") private var useModelGL = false
 
     private static let styleOptions: [(key: String, label: String, profile: StyleProfile)] = [
         ("auto", "Auto", StyleProfile.coldTrap),
@@ -136,10 +138,24 @@ struct ModelGControlSurfaceView: View {
     private var modelGEngineSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             MomentumSectionHeader(title: "Generation engine")
+            Toggle(isOn: $useModelGL) {
+                Text("Use Model GL (Gemini Light)").font(.subheadline.weight(.semibold))
+            }
+            Text("Generates with a lightning-fast, clever prompt bypassing complex corpus routing. Simplest generation pipeline.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+
             Toggle(isOn: $useModelGv4) {
                 Text("Use Model G v4 engine").font(.subheadline.weight(.semibold))
             }
-            Text("Generates with the newer v4 pipeline, which grounds your bars in your reference-lyric corpus. Takes priority over v3 when on. Experimental — off by default.")
+            .disabled(useModelGL || useModelGv4_1)
+            Text("Generates with the newer v4 pipeline, which grounds your bars in your reference-lyric corpus. Experimental — off by default.")
+                .font(.caption).foregroundStyle(Momentum.contentSecondary)
+
+            Toggle(isOn: $useModelGv4_1) {
+                Text("Use Model G v4.1 (Punchline Mode)").font(.subheadline.weight(.semibold))
+            }
+            .disabled(useModelGL)
+            Text("Generates with strict 4-bar setup-and-payoff logic. Takes priority over v4/v3.")
                 .font(.caption).foregroundStyle(Momentum.contentSecondary)
         }
     }

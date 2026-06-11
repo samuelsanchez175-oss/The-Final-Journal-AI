@@ -8,6 +8,8 @@ enum SuggestionModel: String, CaseIterable {
     case modelG = "Model G"
     case modelY = "Model Y"
     case modelGv3 = "Model G v3"
+    case modelGv4_1 = "Model G v4.1"
+    case geminiLight = "Model GL"
 
     var displayName: String {
         return rawValue
@@ -24,6 +26,10 @@ enum SuggestionModel: String, CaseIterable {
             // After training, replace with your fine-tuned model ID, e.g.:
             // return "ft:gpt-4o-mini:your-org:rap-agent-v3:XXXXXXXX"
             return "gpt-4o"
+        case .modelGv4_1:
+            return "gpt-4o"
+        case .geminiLight:
+            return "gemini-2.5-flash"
         }
     }
 
@@ -36,6 +42,10 @@ enum SuggestionModel: String, CaseIterable {
         case .modelGv3:
             // Slightly tighter temperature for sharper rhyme control and less hallucination
             return 0.55
+        case .modelGv4_1:
+            return 0.6
+        case .geminiLight:
+            return 0.6
         }
     }
 }
@@ -157,6 +167,8 @@ class RapSuggestionAPI {
             key = "modelGv3_settings"
         case .modelY:   key = "modelY_settings"
         case .modelGv3: key = "modelGv3_settings"
+        case .modelGv4_1: key = "modelGv3_settings"
+        case .geminiLight: key = "modelGv3_settings"
         }
         if let data = UserDefaults.standard.data(forKey: key),
            let decoded = try? JSONDecoder().decode(ModelSettings.self, from: data) {
@@ -488,6 +500,22 @@ class RapSuggestionAPI {
     ) async throws -> GeneratedRecord {
         let styleOverride = directedParams?.styleOverride
         func run() async throws -> GeneratedRecord {
+            if ModelGEnvironment.useModelGv4_1 {
+                let coordinatorV4_1 = ModelGCoreCoordinatorV4_1()
+                return try await coordinatorV4_1.generateRecord(
+                    input: metrics.fullText,
+                    audioURL: audioURL,
+                    styleOverride: styleOverride,
+                    directedParams: directedParams,
+                    selectedThemeIDs: selectedThemeIDs,
+                    transcriptionRhythmMapData: transcriptionRhythmMapData,
+                    bpm: metrics.bpm,
+                    musicalKey: metrics.key,
+                    musicalScale: metrics.scale,
+                    syllableMin: metrics.syllableMin,
+                    syllableMax: metrics.syllableMax
+                )
+            }
             if ModelGEnvironment.useModelGv4 {
                 let coordinatorV4 = ModelGCoreCoordinatorV4()
                 return try await coordinatorV4.generateRecord(
@@ -574,6 +602,49 @@ class RapSuggestionAPI {
     ) async throws -> [RapSuggestion] {
         guard apiKey != nil else {
             throw RapAPIError.missingAPIKey
+        }
+
+        if model == .geminiLight {
+            let coordinator = ModelGeminiLightCoordinator()
+            let record = try await coordinator.generateRecord(
+                input: metrics.fullText,
+                audioURL: audioURL,
+                styleOverride: nil,
+                directedParams: directedParams,
+                selectedThemeIDs: selectedThemeIDs,
+                transcriptionRhythmMapData: transcriptionRhythmMapData,
+                bpm: metrics.bpm,
+                musicalKey: metrics.key,
+                musicalScale: metrics.scale,
+                syllableMin: metrics.syllableMin,
+                syllableMax: metrics.syllableMax
+            )
+            
+            let lines = [record.hook] + record.bars
+            let text = lines.filter { !$0.isEmpty }.joined(separator: "\n")
+            
+            guard !text.isEmpty else {
+                return []
+            }
+            
+            return [
+                RapSuggestion(
+                    id: UUID(),
+                    text: text,
+                    confidence: 0.9,
+                    source: "Gemini Light",
+                    reasoning: "Generated via clean Gemini pipeline.",
+                    themes: narrative.primaryThemes,
+                    rhymeStrength: nil,
+                    flowMatch: nil,
+                    styleMatch: nil,
+                    userFeedback: nil,
+                    signalStrength: nil,
+                    signalNote: "Gemini Direct",
+                    arCritique: nil,
+                    modelGMomentLineIndices: nil
+                )
+            ]
         }
 
         // Model G Core — Use v2 when enabled, else v1. Override from param when provided (for parallel v1+v2).
@@ -3489,7 +3560,7 @@ class RapSuggestionAPI {
         feedbackImprovements: ModelImprovements? = nil
     ) -> String {
         switch model {
-        case .modelG, .modelGv3:
+        case .modelG, .modelGv3, .geminiLight:
             return buildModelGRules(
                 metrics: metrics,
                 topicModesInfo: topicModesInfo,
@@ -3829,7 +3900,7 @@ class RapSuggestionAPI {
             "\n- Confidence threshold adjusted based on feedback: \(metricTuning.confidenceThresholdAdjustment > 0 ? "increased" : "decreased") by \(String(format: "%.2f", abs(metricTuning.confidenceThresholdAdjustment)))" : ""
         
         switch model {
-        case .modelG, .modelGv3:
+        case .modelG, .modelGv3, .geminiLight:
             return """
         CONFIDENCE SCORING (REQUIRED - CRITICAL)\(thresholdNote):
         Score confidence 0.0-1.0 based on how well the suggestion matches ALL constraints above. Lower confidence if any constraint is weak.

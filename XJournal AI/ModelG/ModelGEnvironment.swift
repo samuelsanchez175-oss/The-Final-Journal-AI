@@ -42,11 +42,21 @@ enum ModelGEnvironment {
         set { UserDefaults.standard.set(newValue, forKey: "model_g_v3_enabled") }
     }
 
-    /// When true, use Model G v4 pipeline with corpus-grounded exemplar retrieval and
-    /// 50/10/40 house/auto/user composite scoring. Opt-in; off by default.
     static var useModelGv4: Bool {
         get { UserDefaults.standard.bool(forKey: "model_g_v4_enabled") }
         set { UserDefaults.standard.set(newValue, forKey: "model_g_v4_enabled") }
+    }
+
+    /// When true (and useModelGCore is true), use Model G v4.1 (Punchline Mode).
+    static var useModelGv4_1: Bool {
+        get { UserDefaults.standard.bool(forKey: "model_g_v4_1_enabled") }
+        set { UserDefaults.standard.set(newValue, forKey: "model_g_v4_1_enabled") }
+    }
+
+    /// When true, bypass Model G Core and use the Gemini Light (Model GL) pipeline.
+    static var useModelGL: Bool {
+        get { UserDefaults.standard.bool(forKey: "model_gl_enabled") }
+        set { UserDefaults.standard.set(newValue, forKey: "model_gl_enabled") }
     }
 
     /// Originality/inspiration target (0 = lean hard on the culture's idioms & the training lyrics;
