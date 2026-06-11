@@ -314,11 +314,14 @@ class ModelGLLMService {
         // rules (which forbid the reveal and the genre's anaphora), and softens the concrete-noun quota
         // so the model writes wit instead of a brand inventory. Off → the v4 prompt is byte-identical.
         let v41 = ModelGEnvironment.useModelGv41
+        // v4.1 punchline mode wants BUILT, multi-bar jokes (a setup line or two, then the payoff on a
+        // later rhyme) and DENSITY (don't strand one good line in a sea of flex-filler). Models copy
+        // structure from an example far better than from instruction, so a worked example is included.
         let punchlineBlock = v41
-            ? "\nPUNCHLINES & CONCEPT (most important): pick ONE concept/image and carry it across the bars. Land at least 2-3 real punchlines — double-entendres / play-on-words where one phrase means two things at once (gun/drug/money/sex/jewelry multi-meaning), or a flipped common phrase. Set up, then SNAP the reveal on the rhyme. A line worth rewinding beats three clean flexes. Be vivid and direct when the punchline needs it — don't imply your way around the joke."
+            ? "\nPUNCHLINES (this is the whole job): pick ONE concept and BUILD your punchlines across MULTIPLE bars — do NOT cram the joke into a single line. Most punches should run 2-4 bars: a plain setup line, a bar that misdirects or raises the stakes, THEN the payoff that flips it on the rhyme. Keep them coming — a real turn, flip, or vivid image roughly every 2 bars; cut the brand-list filler between jokes. Use double-entendres / play-on-words (one phrase meaning two things at once — gun/drug/money/sex/jewelry) or a flipped common phrase. Be vivid and direct when the punchline needs it; don't imply your way around it.\nEXAMPLE of a BUILT multi-bar punchline — copy the STRUCTURE, not the words:\n  \"They thought I fell off 'cause I went quiet a while,\n   Held my breath like a sniper that's closin' a file,\n   Came back, put a hole straight through everybody style.\"\n(plain setup -> misdirect that re-colors \"quiet\" -> payoff lands on the rhyme.)"
             : ""
         let rulesLine = v41
-            ? "Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; ground it in 1 concrete detail (a specific brand, place, or coded term) when it serves the line — but a punchline beats a brand-drop; deliberate repetition/anaphora is welcome (e.g. \"Pateks on Pateks\", \"you ain't my slime, you ain't my slime\") — just don't pad; no numbering inside the bar strings."
+            ? "Rules (strict): keep bars tight, \(syllRule) — but a SETUP or a building punchline MAY run across 2-3 bars (let it breathe; don't force every line self-contained); rhyme HARD — multisyllabic and internal, not just line-ends; ground it in 1 concrete detail (a brand, place, or coded term) when it serves the line — but a punchline beats a brand-drop; deliberate repetition/anaphora is welcome (e.g. \"Pateks on Pateks\"); no numbering inside the bar strings."
             : "Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word (\"Roley\" not \"a watch\", \"the trap\" not \"the block\"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings."
         let user = """
         Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
@@ -331,7 +334,7 @@ class ModelGLLMService {
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}\(exampleBlock)
         """
         let systemMsg = v41
-            ? "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars. Your #1 job is WIT — land real punchlines and wordplay with one concept carried across the bars; on-style texture and the reference bars serve that, they never replace it."
+            ? "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars. Your #1 job is WIT — BUILD punchlines across 2-4 bars (setup, misdirect, payoff on the rhyme), keep them DENSE (don't strand one good line in flex-filler), and carry one concept; on-style texture and the reference bars serve that, they never replace it."
             : "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars. House style and the reference bars take priority over the requested topic when they conflict."
         let raw = try await postChat(
             system: systemMsg,
@@ -362,7 +365,11 @@ class ModelGLLMService {
         }.joined(separator: "\n\n")
         let system = "You are a veteran rap A&R judging melodic-trap verses for WIT. Respond ONLY with valid JSON."
         let user = """
-        Pick the BEST candidate verse: the one with the most real punchlines, double-entendres / wordplay, and a single concept carried across the bars. A line worth rewinding beats clean brand-drops. PENALIZE a verse that is just a list of flexes with no concept or payoff.
+        Pick the BEST candidate verse, in this priority order:
+        1) BUILT punchlines — jokes set up over 2-4 bars (setup -> misdirect -> payoff on the rhyme), NOT crammed into one line;
+        2) DENSITY — turns/flips/punchlines come often, with little flex-filler between them;
+        3) real double-entendres / wordplay and ONE concept carried across the bars.
+        A built multi-bar punchline beats an isolated one-liner; both beat a brand-drop. PENALIZE a verse that is mostly flex-filler with only one or two stranded good lines, or a verse where every punch is a lonely one-liner.
         Topic: \(topic)
 
         \(blocks)
