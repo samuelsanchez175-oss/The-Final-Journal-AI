@@ -80,7 +80,8 @@ ARPABET_VOWELS = {
 _VARIANT_RE = re.compile(r"\(\d+\)$")        # WORD(2) -> WORD
 _WORD_RE = re.compile(r"[A-Za-z']+")
 _LRC_TS_RE = re.compile(r"\[\d{1,2}:\d{2}(?:[.:]\d{1,3})?\]")  # [00:12.34]
-_SECTION_RE = re.compile(r"^\s*[\[\(]\s*([A-Za-z][\w &/-]*?)\s*[\]\)]\s*$")
+# matches [Verse], [Chorus], and Genius-style [Verse 1: Gunna] (speaker after ':')
+_SECTION_RE = re.compile(r"^\s*[\[\(]\s*([A-Za-z][\w &/-]*?)(?:\s*:[^\]\)]*)?\s*[\]\)]\s*$")
 _PAREN_RE = re.compile(r"\([^)]*\)")          # (Skrrt) ad-libs
 
 
@@ -287,14 +288,26 @@ def detect_columns(header):
     return cols
 
 
+_ARTIST_SPLIT_RE = re.compile(r"\s*(?:,|;|&|/|\bfeat\.?\b|\bft\.?\b|\bx\b|\bwith\b)\s*", re.I)
+
+
 def normalize_artist(value, opts):
-    """`artists` may be a stringified list like "['Gunna', 'Lil Baby']"."""
+    """`artists` may be a list-string "['Gunna', 'Lil Baby']" or plain
+    "Gunna, Lil Baby" / "Gunna feat. Lil Baby". Return (display, names) where
+    `names` is every individual artist (plus the full string), so keep_row's
+    allowlist check still matches collaborations."""
     s = str(value).strip()
     if opts.get("treat_artists_field_as_list", True) and s[:1] in "[(":
-        names = re.findall(r"['\"]([^'\"]+)['\"]", s)
-        if names:
-            return names[0] if opts.get("primary_artist_only", False) else ", ".join(names), names
-    return s, [s]
+        quoted = re.findall(r"['\"]([^'\"]+)['\"]", s)
+        if quoted:
+            display = quoted[0] if opts.get("primary_artist_only", False) else ", ".join(quoted)
+            return display, quoted
+    # plain text: split common multi-artist delimiters, but keep the full string
+    # too (so a name like "Tyler, The Creator" still matches if allowlisted whole).
+    parts = [p.strip() for p in _ARTIST_SPLIT_RE.split(s) if p.strip()]
+    names = [s] + [p for p in parts if p.lower() != s.lower()]
+    display = (parts[0] if parts else s) if opts.get("primary_artist_only", False) else s
+    return display, names
 
 
 def year_of(value):
@@ -483,8 +496,8 @@ def main():
                         "LeadPriorityWeight": "",
                         "SupportingAuthorityClasses": "",
                         "bar_index": bi,
-                        "bar_group_2": (bi - 1) // 2,
-                        "bar_group_4": (bi - 1) // 4,
+                        "bar_group_2": (bi - 1) // 2 + 1,   # 1-based, matches corpus
+                        "bar_group_4": (bi - 1) // 4 + 1,
                         "syllable_count_recalc": a["syllable_count"],
                         "stress_pattern": a["stress_pattern"],
                         "stress_density": round(sd, 6),
