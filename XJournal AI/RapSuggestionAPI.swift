@@ -21,8 +21,13 @@ enum SuggestionModel: String, CaseIterable {
             return "gpt-4o"
         case .modelGv3:
             // CROSS-TEST: runs on base gpt-4o with the upgraded v3 prompt until fine-tune is ready.
-            // After training, replace with your fine-tuned model ID, e.g.:
-            // return "ft:gpt-4o-mini:your-org:rap-agent-v3:XXXXXXXX"
+            // Local fine-tune: set UserDefaults "modelg_local_model" to the served model
+            //   name (e.g. "modelg") and point baseURL at LM Studio/Ollama (see above).
+            // Hosted OpenAI fine-tune: set it to e.g. "ft:gpt-4o-mini:org:rap-agent-v3:XXXX".
+            if let localModel = UserDefaults.standard.string(forKey: "modelg_local_model"),
+               !localModel.isEmpty {
+                return localModel
+            }
             return "gpt-4o"
         }
     }
@@ -130,7 +135,14 @@ struct RapSuggestion: Codable, Identifiable {
 class RapSuggestionAPI {
     static let shared = RapSuggestionAPI()
     
-    private let baseURL = "https://api.openai.com/v1"
+    // Defaults to OpenAI. To run Model G against a LOCAL OpenAI-compatible server
+    // (LM Studio: http://localhost:1234/v1, Ollama: http://localhost:11434/v1),
+    // set UserDefaults key "modelg_local_base_url". Empty = OpenAI (unchanged default).
+    // See tools/modelg_local/README.md.
+    private let baseURL: String = {
+        let override = UserDefaults.standard.string(forKey: "modelg_local_base_url") ?? ""
+        return override.isEmpty ? "https://api.openai.com/v1" : override
+    }()
     private var apiKey: String? {
         // Retrieve from Keychain
         return KeychainHelper.shared.getAPIKey()

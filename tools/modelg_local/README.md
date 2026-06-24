@@ -81,6 +81,24 @@ mlx_lm.fuse \
   (`convert_hf_to_gguf.py`), then `ollama create modelg -f Modelfile`. Extra
   step vs LM Studio, but gives you the OpenAI-compatible local API.
 
+## 7. Point the app at your local model
+`RapSuggestionAPI` now reads two optional `UserDefaults` keys (defaults keep the
+existing OpenAI behavior, so nothing changes unless you set them):
+
+| Key | Value | Effect |
+|---|---|---|
+| `modelg_local_base_url` | `http://localhost:1234/v1` (LM Studio) or `http://localhost:11434/v1` (Ollama) | Routes all `/chat/completions` calls to your local server |
+| `modelg_local_model` | the served model name (e.g. `modelg`) | What `.modelGv3` sends as the model id |
+
+Set them once (e.g. in a debug build, app settings, or a launch argument):
+```swift
+UserDefaults.standard.set("http://localhost:11434/v1", forKey: "modelg_local_base_url")
+UserDefaults.standard.set("modelg", forKey: "modelg_local_model")
+```
+Pick **Model G v3** in the app and it'll hit your local fine-tune. Clear the keys
+to fall back to OpenAI. (Note: a simulator/device reaches your Mac's localhost
+server over the LAN IP, not `localhost` — use the Mac's IP on a physical device.)
+
 ## Notes
 - `data/`, `adapters/`, `*-fused/`, `*.gguf` are git-ignored — they're rebuilt
   from your source data, not committed.
