@@ -1,0 +1,68 @@
+{
+  "_comment": "Filter config for build_rap_dataset.py. Edit freely. A song is KEPT if its genre matches `genres_any` (substring, case-insensitive) OR its artist is in `artists_allow`. Anything in `artists_block` is always dropped. The artist list was SEEDED from the user's Spotify (melodic-trap neighborhood) and a curated default roster; refresh it any time — see README. NOTE: the 960K Spotify set may have NO genre column, in which case `artists_allow` is the primary filter, so keep it reasonably full.",
+
+  "genres_any": [
+    "hip hop",
+    "hip-hop",
+    "rap",
+    "trap",
+    "drill",
+    "southern hip hop",
+    "gangster rap",
+    "melodic rap",
+    "conscious hip hop",
+    "atl hip hop",
+    "plugg"
+  ],
+
+  "artists_allow": {
+    "_spotify_seed": [
+      "Gunna",
+      "Young Thug",
+      "Lil Baby",
+      "Future"
+    ],
+    "_curated_melodic_trap": [
+      "Travis Scott",
+      "Lil Uzi Vert",
+      "Playboi Carti",
+      "Don Toliver",
+      "Roddy Ricch",
+      "Lil Keed",
+      "Lil Gotit",
+      "Nav",
+      "Juice WRLD",
+      "Lil Tjay",
+      "Polo G",
+      "Lil Durk",
+      "Rod Wave",
+      "21 Savage",
+      "Metro Boomin",
+      "Quavo",
+      "Offset",
+      "Takeoff",
+      "Migos",
+      "Lil Yachty",
+      "Young Nudy",
+      "Hotboii",
+      "42 Dugg",
+      "EST Gee",
+      "Yak Gotti",
+      "YTB Trench",
+      "Lil Duke",
+      "Strick",
+      "Nechie",
+      "Dolly White"
+    ]
+  },
+
+  "artists_block": [],
+
+  "options": {
+    "min_line_chars": 6,
+    "max_line_chars": 140,
+    "drop_pure_adlib_lines": true,
+    "treat_artists_field_as_list": true,
+    "primary_artist_only": false
+  }
+}

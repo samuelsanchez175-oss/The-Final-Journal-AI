@@ -1,0 +1,39 @@
+# MLX-LM LoRA config for fine-tuning Model G locally on Apple Silicon.
+# Run from the repo root:   mlx_lm.lora --config tools/modelg_local/mlx_lora_config.yaml
+#
+# NOTE: MLX-LM's config keys shift slightly between versions. If a key errors,
+# run `mlx_lm.lora --help` for your installed version, or use the CLI form in
+# README.md (the flags are the most stable interface).
+
+# Base model (must have a chat template for 'chat'-format data).
+# Pick by RAM:  ~16GB -> 3B-4bit   ·   32GB+ -> 7-8B-4bit
+model: "mlx-community/Llama-3.2-3B-Instruct-4bit"
+# alt: "mlx-community/Qwen2.5-7B-Instruct-4bit"
+# alt: "mlx-community/Mistral-7B-Instruct-v0.3-4bit"
+
+train: true
+fine_tune_type: lora           # lora | dora | full
+
+# Data dir produced by build_mlx_dataset.py (contains train.jsonl + valid.jsonl)
+data: "tools/modelg_local/data"
+adapter_path: "tools/modelg_local/adapters"
+
+# Training schedule — conservative defaults; tune to your dataset size.
+iters: 600
+batch_size: 4
+num_layers: 16                 # layers to apply LoRA to (more = stronger, slower)
+learning_rate: 1.0e-5
+max_seq_length: 2048
+grad_checkpoint: true          # lower memory; set false if you have RAM to spare
+
+# Reporting / eval / checkpoints
+steps_per_report: 10
+steps_per_eval: 200
+val_batches: 25
+save_every: 100
+
+# LoRA hyperparameters
+lora_parameters:
+  rank: 8
+  scale: 20.0
+  dropout: 0.0
