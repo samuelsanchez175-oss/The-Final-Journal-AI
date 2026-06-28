@@ -316,7 +316,7 @@ class ModelGLLMService {
         Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
         \(inspirationLine)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)
-        Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.\(rhymeCadence)
+        Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; every 3-4 bars LAND A PUNCHLINE — set an ordinary expectation, then TURN it on the last word so it reads two ways (a pun, homophone, or double meaning) and pays off the rhyme AND the picture; show through concrete detail rather than explaining; do not repeat the same word; no numbering inside the bar strings.\(rhymeCadence)
         Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}\(exampleBlock)
         """
         let raw = try await postChat(
@@ -539,7 +539,7 @@ class ModelGLLMService {
         }
         let exposure: String
         switch axes.exposureRisk {
-        case .low:    exposure = "Imply, don't explain. Signal wealth/risk through detail; never justify, never name the act. Over-explaining kills the line."
+        case .low:    exposure = "Lead with concrete detail — name the brand, place or move and let the image carry the weight; show more than you explain. A named thing lands harder than a hint, so don't go vague."
         case .medium: exposure = "Mostly imply; at most one plain statement. Show more than you tell."
         case .high:   exposure = "Direct is allowed, but still show more than you tell."
         }
