@@ -183,9 +183,14 @@ class ModelGCoreCoordinatorV4 {
                     total += v4.v4Total
                 }
                 let v4Score = usable.isEmpty ? 0 : total / Double(usable.count)
-                // Primary: highest average v4Total — or the v5 typicality grader when enabled.
+                // Primary: the v5 grader's TYPICALITY (proximity to the authentic band) when
+                // enabled, else the average v4Total. Selecting on .net was the bug behind "no
+                // punchlines": net weights end-rhyme 0.32, so a punchline — which breaks neat rhyme
+                // to land its turn — scores LOWER on net than a bland rhyming verse (real Gunna nets
+                // ~67 vs a generic verse's ~84 on eval/grade_modelg_v5.py). Typicality ranks the
+                // punchy/authentic candidate highest instead.
                 let score = ModelGEnvironment.useV5Grader
-                    ? VerseLedgerV5Scorer.score(hook: verse.hook, bars: usable).net
+                    ? VerseLedgerV5Scorer.score(hook: verse.hook, bars: usable).typicality
                     : v4Score
                 if score > bestScore {
                     bestScore = score; best = verse
@@ -233,7 +238,7 @@ class ModelGCoreCoordinatorV4 {
         }
 
         let sessionLog = GenerationSessionLog(
-            modelVersion: "Model G Core v4.0 (corpus RAG + v4Total selection)",
+            modelVersion: "Model G Core v4.0 (corpus RAG + v5 typicality selection)",
             styleBranch: styleProfile.name,
             riskProfile: riskManager.riskIndex,
             beatSummary: beatFingerprint.map { "\($0.bpm) BPM, \($0.key) \($0.scale)" },
