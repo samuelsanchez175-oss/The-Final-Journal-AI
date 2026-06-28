@@ -99,25 +99,31 @@ class ModelGCoreCoordinatorV4 {
             return out
         }
 
-        // Step 3 — grade each candidate by AUTHENTICITY (the same VerseLedger rubric the app logs
-        // and eval/grade_modelg.py defines) and keep the highest NET. Replaces the weaker per-bar
-        // Best-of-N is chosen on the real authenticity score. When the v5 grader is enabled
-        // (typicality-calibrated, slant-rhyme aware) it drives selection; else the original scorer.
+        // Step 3 — grade each candidate and keep the best.
+        // v5 path: selectionScore = typicality + 0.2 × punch (authentic-band gate + punchline bonus).
+        // Selecting on raw .net was the punchline-killer: net weights Rhyme 0.32, so a turn line
+        // (last word reveals a double meaning, breaking neat rhyme) scored LOWER than a bland rhyming
+        // verse. selectionScore routes to the punchy-but-authentic candidate instead.
         let useV5 = ModelGEnvironment.useV5Grader
         var best: (hook: String, bars: [String])?
-        var bestNet = -1.0
+        var bestSelScore = -1.0   // sort key (selectionScore or net)
+        var bestNet = -1.0        // actual NET for logging/averageBarScore
         var bestTypicality = 0.0
         for verse in candidates where verse.bars.count >= 8 {
             let usable = Array(verse.bars.prefix(barCount))
-            let net: Double
+            let selScore: Double
+            var netScore: Double
             var typ = 0.0
             if useV5 {
                 let s = VerseLedgerV5Scorer.score(hook: verse.hook, bars: usable)
-                net = s.net; typ = s.typicality
+                selScore = s.selectionScore; netScore = s.net; typ = s.typicality
             } else {
-                net = VerseLedgerScorer.score(hook: verse.hook, bars: usable).net
+                netScore = VerseLedgerScorer.score(hook: verse.hook, bars: usable).net
+                selScore = netScore
             }
-            if net > bestNet { bestNet = net; bestTypicality = typ; best = verse }
+            if selScore > bestSelScore {
+                bestSelScore = selScore; bestNet = netScore; bestTypicality = typ; best = verse
+            }
         }
 
         guard let chosen = best else {
@@ -140,7 +146,7 @@ class ModelGCoreCoordinatorV4 {
         }
 
         let sessionLog = GenerationSessionLog(
-            modelVersion: "Model G Core v4.0 (RAG-grounded)" + (useV5 ? " · v5 grader" : ""),
+            modelVersion: "Model G Core v4.0 (RAG-grounded)" + (useV5 ? " · v5 typ+punch" : ""),
             styleBranch: styleProfile.name,
             riskProfile: riskManager.riskIndex,
             beatSummary: beatFingerprint.map { "\($0.bpm) BPM, \($0.key) \($0.scale)" },

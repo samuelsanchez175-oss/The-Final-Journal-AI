@@ -17,7 +17,7 @@ Built from the 6-lyric ablation + the big corpus baseline. Changes vs v4:
 Pure text/number -> on-device-able. Audio axes (Pocket@BPM, Singability@Key) are OFF here.
 No app code is touched.
 """
-import os, re, sys, json, math, statistics
+import os, re, sys, json, math, statistics, csv as _csv
 from collections import Counter
 from itertools import combinations
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -28,6 +28,36 @@ ADLIB = re.compile(r"\([^)]*\)")
 VOWELS = re.compile(r"[aeiouy]+")
 STOP = G.STOPWORDS
 SPELL_VOWEL = {"a": "AE", "e": "EH", "i": "AY", "o": "OW", "u": "UW", "y": "AY"}
+
+# ---- Punch / coded-vocabulary axis ------------------------------------------
+_CODED = None
+
+def _load_coded():
+    global _CODED
+    if _CODED is not None:
+        return _CODED
+    coded = set()
+    lex_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lexicons")
+    for fn in ("drug_lexicon.csv", "rapper_lexicon.csv"):
+        p = os.path.join(lex_dir, fn)
+        if not os.path.exists(p):
+            continue
+        for row in _csv.DictReader(open(p, encoding="utf-8")):
+            cells = [row.get("canonical") or row.get("term") or "", row.get("aliases") or ""]
+            for cell in cells:
+                for term in re.split(r"[;,]", cell):
+                    t = term.strip().lower()
+                    if len(t) >= 2:
+                        coded.add(t)
+    # curated flex / jewelry / weapon / money double-meaning terms
+    coded |= {"ice","iced","rocks","stones","bands","racks","guap","knot","pipe","stick","steel",
+              "chopper","draco","dracos","bird","brick","bricks","pack","plug","whip","coupe","wraith",
+              "drip","drippin","dripping","wave","heat","pole","hammer","beam","switch","drum","glock",
+              "cake","bread","cheese","dough","sauce","juice","ticket","paper","presi","patek","audemar",
+              "vvs","cuban","bezel","busted","froze","frozen","opp","opps","pressure","demon","styrofoam",
+              "two-tone","double cup","pushin p","the p","spaceship","kingface","rolex","gucci","prada"}
+    _CODED = coded
+    return coded
 
 
 def _words(text):
@@ -118,6 +148,36 @@ def craft_score(lines):
     return round(min(100.0, 100 * len(set(cw)) / len(cw)), 1) if cw else 50.0
 
 
+# ---------------- Punch: coded-vocab density + turn-word + compound ending ----
+def punch_score(lines, common=None):
+    """Heuristic punchline/wordplay proxy: 3 signals weighted 0.55/0.15/0.30."""
+    coded = _load_coded()
+    n = len(lines)
+    if n == 0:
+        return 0.0
+    coded_hits = turn_hits = cmpd_hits = 0
+    for l in lines:
+        low = l.lower()
+        toks = WORD.findall(low)
+        if not toks:
+            continue
+        # 1) coded vocabulary (double-meaning drug/rap/flex terms)
+        if any(w in coded for w in toks) or any(" " in c and c in low for c in coded):
+            coded_hits += 1
+        # 2) surprising turn: last content word not common, not foreshadowed earlier in bar
+        content = [w for w in toks if w not in STOP and len(w) > 2]
+        if content:
+            last, setup = content[-1], set(content[:-1])
+            if len(last) > 3 and last not in (common or set()) and last not in setup:
+                turn_hits += 1
+        # 3) compound / hyphen ending (phrase-pun proxy: send-off, two-tone, kingface)
+        endtok = low.split()[-1].strip(".,!?\"'") if low.split() else ""
+        if "-" in endtok or endtok in {"sendoff", "kingface", "spaceship", "backwood", "stylewise"}:
+            cmpd_hits += 1
+    return round(min(100.0, 100 * (0.55 * coded_hits/n + 0.15 * turn_hits/n
+                                   + 0.30 * min(1.0, cmpd_hits/2.0))), 1)
+
+
 # ---------------- Repetition: refrain-exempt + monotony, section-softened -----
 def repetition_penalty(lines, section):
     norm = [re.sub(r"\W+", " ", l.lower()).strip() for l in lines]
@@ -158,8 +218,9 @@ def detect_section(lines):
 
 
 WEIGHTS = {
-    "verse": {"Meter": 0.25, "Rhyme": 0.32, "Specificity": 0.25, "Throughline": 0.08, "Craft": 0.10},
-    "hook":  {"Meter": 0.28, "Rhyme": 0.32, "Specificity": 0.20, "Throughline": 0.08, "Craft": 0.12},
+    # Punch added (0.10); Rhyme reduced 0.32→0.22 (was the punchline-killer: a turn breaks neat rhyme).
+    "verse": {"Meter": 0.25, "Rhyme": 0.22, "Specificity": 0.25, "Throughline": 0.08, "Craft": 0.10, "Punch": 0.10},
+    "hook":  {"Meter": 0.28, "Rhyme": 0.22, "Specificity": 0.20, "Throughline": 0.08, "Craft": 0.12, "Punch": 0.10},
 }
 
 
@@ -173,6 +234,7 @@ def grade_v5(lines, cmu, corpus_4grams, lexicon_set, common=None, section=None, 
         "Specificity": specificity_score(lines, lexicon_set, common),
         "Throughline": throughline_bonus(lines),
         "Craft": craft_score(lines),
+        "Punch": punch_score(lines, common=common),
     }
     W = WEIGHTS[section]
     pos = sum(axes[k] * W[k] for k in W)
@@ -237,6 +299,7 @@ def _setup():
     _, grams = G.build_originality_index(G.load_corpus(G.DEFAULT_CORPUS))
     lex = {t.lower() for t in G.load_lexicon_terms(G.DEFAULT_LEXICON) if len(t) > 2}
     common = build_common(corpus_texts())
+    _load_coded()   # warm the module-level cache
     return cmu, grams, lex, common
 
 

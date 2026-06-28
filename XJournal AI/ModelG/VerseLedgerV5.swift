@@ -25,21 +25,42 @@ struct VerseLedgerV5: Codable {
     let specificity: Double
     let throughline: Double
     let craft: Double
+    let punch: Double            // coded-vocab density + turn-word + compound ending (0–100)
     let repetitionPenalty: Double
     let net: Double              // weighted-axis authenticity (0–100)
     let typicality: Double       // the learned grader: proximity to the authentic band (0–100)
 
+    /// Composite selection score: typicality (authentic-band gate) + punch bonus.
+    /// Allows punchy-but-authentic bars to win over bland-but-typical ones in best-of-N selection.
+    var selectionScore: Double { typicality + 0.2 * punch }
+
     var summary: String {
-        String(format: "v5[%@] NET %.0f · typ %.0f · meter %.0f rhyme %.0f spec %.0f thru %.0f craft %.0f −rep %.0f",
-               section, net, typicality, meter, rhyme, specificity, throughline, craft, repetitionPenalty)
+        String(format: "v5[%@] NET %.0f · typ %.0f · punch %.0f · meter %.0f rhyme %.0f spec %.0f thru %.0f craft %.0f −rep %.0f",
+               section, net, typicality, punch, meter, rhyme, specificity, throughline, craft, repetitionPenalty)
     }
 }
 
 enum VerseLedgerV5Scorer {
-    // Per-section axis weights (mirror grade_modelg_v5.WEIGHTS).
+    // Per-section axis weights (mirrors grade_modelg_v5.WEIGHTS; Punch added, Rhyme 0.32→0.22).
     private static let weights: [String: [String: Double]] = [
-        "verse": ["Meter": 0.25, "Rhyme": 0.32, "Specificity": 0.25, "Throughline": 0.08, "Craft": 0.10],
-        "hook":  ["Meter": 0.28, "Rhyme": 0.32, "Specificity": 0.20, "Throughline": 0.08, "Craft": 0.12],
+        "verse": ["Meter": 0.25, "Rhyme": 0.22, "Specificity": 0.25, "Throughline": 0.08, "Craft": 0.10, "Punch": 0.10],
+        "hook":  ["Meter": 0.28, "Rhyme": 0.22, "Specificity": 0.20, "Throughline": 0.08, "Craft": 0.12, "Punch": 0.10],
+    ]
+    // Coded vocabulary: drug/rap/flex double-meaning terms (mirrors _load_coded() in grade_modelg_v5.py).
+    // LexiconStore provides the lexicon CSV terms; this curated set adds genre-specific coded signals.
+    private static let coded: Set<String> = [
+        "ice","iced","rocks","stones","bands","racks","guap","knot","pipe","stick","steel",
+        "chopper","draco","dracos","bird","brick","bricks","pack","plug","whip","coupe","wraith",
+        "drip","drippin","dripping","wave","heat","pole","hammer","beam","switch","drum","glock",
+        "cake","bread","cheese","dough","sauce","juice","ticket","paper","presi","patek","audemar",
+        "vvs","cuban","bezel","busted","froze","frozen","opp","opps","pressure","demon","styrofoam",
+        "rolex","gucci","prada","versace","amiri","balenciaga","offwhite","trapstar",
+        "lean","wock","actavis","percs","xans","blues","drank","sip","cup","mud","weed",
+        "bud","pack","gas","loud","smoke","blunt","wood","backwood","swisher","dutch",
+        "trap","grind","flip","move","serve","cook","push","blow","sack","zone","eight",
+        "lick","hit","score","bag","bag","cheese","cabbage","gwap","knot","roll","roll",
+        "spinner","switchy","choppa","glizzy","blicky","stick","mac","clip","drum",
+        "strapped","loaded","locked","cocked","busting","spinning","spinning"
     ]
     // Same stopword set the fingerprint was built with (grade_modelg.STOPWORDS).
     private static let stop: Set<String> = ["the","a","an","and","or","but","to","of","in","on","at","it",
@@ -71,21 +92,26 @@ enum VerseLedgerV5Scorer {
         let lines = ([hook] + bars).map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
         let cmu = getGlobalCMUDICTStore()
         let section = forced ?? detectSection(lines)
+        let punchVal = punch(lines)
         let axes: [String: Double] = [
             "Meter": meter(lines, cmu, intentSyllables),
             "Rhyme": rhyme(lines, cmu),
             "Specificity": specificity(lines),
             "Throughline": throughline(lines),
             "Craft": craft(lines),
+            "Punch": punchVal,
         ]
         let w = weights[section] ?? weights["verse"]!
         let pos = w.reduce(0.0) { $0 + (axes[$1.key] ?? 0) * $1.value }
         let rep = repetitionPenalty(lines, section: section)
         let net = max(0, min(100, pos - rep))
+        // Typicality uses only the 5 original axes (Punch is asymmetric: higher is always better,
+        // so Gaussian proximity would wrongly penalize very-punchy bars).
+        let typAxes = axes.filter { ["Meter","Rhyme","Specificity","Throughline","Craft"].contains($0.key) }
         return VerseLedgerV5(section: section, meter: axes["Meter"]!, rhyme: axes["Rhyme"]!,
                              specificity: axes["Specificity"]!, throughline: axes["Throughline"]!,
-                             craft: axes["Craft"]!, repetitionPenalty: rep,
-                             net: net, typicality: typicality(axes, section: section))
+                             craft: axes["Craft"]!, punch: punchVal, repetitionPenalty: rep,
+                             net: net, typicality: typicality(typAxes, section: section))
     }
 
     // MARK: - Tokenizing
@@ -105,6 +131,44 @@ enum VerseLedgerV5Scorer {
     }
     private static func lineSyllables(_ line: String, _ cmu: [String: [String]]) -> Int {
         words(line).reduce(0) { $0 + syllables($1, cmu) }
+    }
+
+    // MARK: - Punch (coded-vocab density + surprising turn-word + compound ending)
+    private static func punch(_ lines: [String]) -> Double {
+        let n = lines.count
+        guard n > 0 else { return 0 }
+        var codedHits = 0, turnHits = 0, cmpdHits = 0
+        let allCoded = coded.union(Set(lexicon.filter { $0.count >= 2 }))
+        for l in lines {
+            let low = l.lowercased()
+            let toks = words(low)
+            guard !toks.isEmpty else { continue }
+            // 1) coded vocabulary
+            let tokset = Set(toks)
+            if tokset.contains(where: { allCoded.contains($0) })
+                || allCoded.contains(where: { $0.contains(" ") && low.contains($0) }) {
+                codedHits += 1
+            }
+            // 2) surprising turn: last content word, not in common, not set up earlier in bar
+            let cont = toks.filter { $0.count > 2 && !stop.contains($0) }
+            if let last = cont.last {
+                let setup = Set(cont.dropLast())
+                if last.count > 3 && !common.contains(last) && !setup.contains(last) {
+                    turnHits += 1
+                }
+            }
+            // 3) compound / hyphen ending (phrase-pun proxy)
+            let endTok = low.split(separator: " ").last.map {
+                String($0).trimmingCharacters(in: CharacterSet(charactersIn: ".,!?\"'"))
+            } ?? ""
+            if endTok.contains("-") || ["sendoff","kingface","spaceship","backwood","stylewise"].contains(endTok) {
+                cmpdHits += 1
+            }
+        }
+        let fn = Double(n)
+        return round1(min(100, 100 * (0.55 * Double(codedHits)/fn
+                                     + 0.15 * Double(turnHits)/fn
+                                     + 0.30 * min(1.0, Double(cmpdHits)/2.0))))
     }
 
     // MARK: - Rhyme (two-tier: vowel + vowel/coda, slant + monorhyme + OOV, scheme-aware)
