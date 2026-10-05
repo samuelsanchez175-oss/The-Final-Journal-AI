@@ -1,5 +1,6 @@
 import Foundation
 import NaturalLanguage
+import FoundationModels
 
 enum SummaryError: LocalizedError {
     case summarizationFailed(String)
@@ -17,21 +18,59 @@ class AudioSummaryService {
     
     private init() {}
     
-    /// Generate a concise summary from transcription text using Apple's on-device Natural Language framework
-    /// Falls back to OpenAI API if available and on-device summarization is insufficient
+    /// Notes-style summary: Apple Intelligence first, then sentence extract, then OpenAI if a key exists.
     func generateSummary(from transcription: String) async throws -> String {
-        // Try on-device summarization first (Apple Intelligence / Natural Language)
-        if let onDeviceSummary = try? generateOnDeviceSummary(from: transcription) {
+        let trimmed = transcription.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else {
+            throw SummaryError.summarizationFailed("Nothing to summarize yet. Transcribe the recording first.")
+        }
+
+        if let apple = try? await generateAppleIntelligenceSummary(from: trimmed) {
+            let cleaned = apple.trimmingCharacters(in: .whitespacesAndNewlines)
+            if !cleaned.isEmpty { return cleaned }
+        }
+
+        if let onDeviceSummary = try? generateOnDeviceSummary(from: trimmed) {
             return onDeviceSummary
         }
-        
-        // Fallback to OpenAI API if available
-        if let apiKey = KeychainHelper.shared.getAPIKey(), !apiKey.isEmpty {
-            return try await generateOpenAISummary(from: transcription, apiKey: apiKey)
+
+        if let apiKey = KeychainHelper.shared.getAPIKey(), apiKey.hasPrefix("sk-") {
+            return try await generateOpenAISummary(from: trimmed, apiKey: apiKey)
         }
-        
-        // If both fail, generate a simple extractive summary
-        return generateExtractiveSummary(from: transcription)
+
+        return generateExtractiveSummary(from: trimmed)
+    }
+
+    /// Apple Intelligence on-device model (same family Notes uses).
+    func generateAppleIntelligenceSummary(from text: String) async throws -> String {
+        let model = SystemLanguageModel.default
+        switch model.availability {
+        case .available:
+            break
+        case .unavailable(.appleIntelligenceNotEnabled):
+            throw SummaryError.summarizationFailed("Turn on Apple Intelligence in Settings to summarize like Notes.")
+        case .unavailable(.deviceNotEligible):
+            throw SummaryError.summarizationFailed("This iPhone can’t run Apple Intelligence summaries.")
+        case .unavailable(.modelNotReady):
+            throw SummaryError.summarizationFailed("Apple Intelligence is still downloading. Try again in a minute.")
+        case .unavailable(_):
+            throw SummaryError.summarizationFailed("Apple Intelligence isn’t available right now.")
+        }
+
+        let session = LanguageModelSession(instructions: """
+            You write short summaries of voice recordings the way Apple Notes does.
+            Output only bullet points. Each line starts with • .
+            Write 3 to 8 bullets covering the main topics and key moments.
+            If the recording is rap or lyrics, summarize the themes and standout lines.
+            No title, no intro, no closing sentence.
+            """)
+        let clipped = String(text.prefix(12_000))
+        let response = try await session.respond(to: "Summarize this transcript:\n\n\(clipped)")
+        let content = response.content.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !content.isEmpty else {
+            throw SummaryError.summarizationFailed("Apple Intelligence returned an empty summary.")
+        }
+        return content
     }
     
     // MARK: - On-Device Summarization (Apple Intelligence / Natural Language)
@@ -95,6 +134,10 @@ class AudioSummaryService {
     }
     
     /// Generate a simple extractive summary (fallback)
+    func extractiveSummary(from text: String) -> String {
+        generateExtractiveSummary(from: text)
+    }
+
     private func generateExtractiveSummary(from text: String) -> String {
         let tokenizer = NLTokenizer(unit: .sentence)
         tokenizer.string = text

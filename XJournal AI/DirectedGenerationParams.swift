@@ -52,10 +52,46 @@ struct DirectedGenerationParams {
     var userPrompt: String
     /// B) Selected rhyme groups by ID (from Magnifier). Resolved via rhyme group lookup when building prompt.
     var selectedRhymeGroupIDs: [RhymeGroupID]
+    /// B) Resolved rhyme groups (key + words) so Core `generateFullVerse` can inject them without a lookup table.
+    var selectedRhymeGroups: [RhymeGroupSummary]
     /// B) Highlight/anchor tokens from Magnifier (word + optional strength).
     var highlightAnchors: [TokenSpan]
     /// B) Words that must appear verbatim at least once in the output.
     var mustUseTokens: [String]
+    /// Ohm word-recipe seed (one word). Empty = no recipe cook.
+    var recipeSeed: String
+    /// Semantic / homophone cage: one sound.
+    var semanticSound: String
+    /// Optional labeled meanings for `semanticSound`. Planner fills if empty.
+    var semanticSenses: [String]
+    /// Keyword cage (4–6 words, every bar touches one). Distinct from a single recipe seed.
+    var keywordCage: [String]
+    /// Copy the last 4 draft bars' syllable map (Ohm interpolation). Default on.
+    var copyLastFourRhythm: Bool
+    /// Optional pasted 4-bar pocket (Fergie → Kreayshawn slot). Used if last-4 is off or draft is short.
+    var pastedFlowText: String
+    /// Gunna wrap preset. Off = Phase 0 fields only, no BarClock prompt block.
+    var gunnaWrap: Bool
+    var wrapPocket: WrapPocket
+    var wrapBpmSource: WrapBpmSource
+    var wrapBpmCustom: Int?
+    /// 4 = one cycle, 16 = four cycles.
+    var targetBarCount: Int
+    var punchGrammar: PunchGrammar
+    /// Ad-lib "yeah" may mark beat 4 (metronome click, not a bar).
+    var adlibOnFour: Bool
+    /// First letters of bars spell this word. Empty = off.
+    var acrosticWord: String
+    /// F2: 16 is a hero's journey instead of eight punch couplets.
+    var storyArc: Bool
+    /// B7: verse describes its own cadence, or teaches inside the bars.
+    var lyricalPainting: Bool
+    /// F4: after the end-rhyme hold, switch rime AND cadence on purpose.
+    var breakTheRun: Bool
+    /// A7: stresses first, SuperGunna nouns second (fills copy-flow map when present).
+    var scatFirst: Bool
+    /// B2: punch does not have to cash every name. Default on for Gunna.
+    var setupOnlyRefs: Bool
     /// C) Topic selectors chosen.
     var selectedTopics: [String]
     /// C) Tone selectors chosen.
@@ -70,28 +106,81 @@ struct DirectedGenerationParams {
     var minEndRhymeLines: Int
     /// Model G Core style override (ColdTrap, FloatyTrap, etc.). nil = auto-detect.
     var styleOverride: StyleProfile?
+    /// Model You per-verse retrieve filters. Ignored on Model G.
+    var youFilters: ModelYouVerseFilters
 
     /// When userPrompt is empty, this fallback is used. No silent inference of direction from narrative.
     static let defaultUserPromptWhenEmpty = "Continue the draft in the same vein."
     static let emptyPlaceholder = "—"
 
+    /// Spark mode: keep the wrap/pocket, swap the objects.
+    static func samePocketNewNouns() -> DirectedGenerationParams {
+        DirectedGenerationParams(
+            userPrompt: "Keep this pocket. Swap the nouns. Same wrap, new objects.",
+            copyLastFourRhythm: true,
+            gunnaWrap: true,
+            scatFirst: true
+        )
+    }
+
     init(
         userPrompt: String = "",
         selectedRhymeGroupIDs: [RhymeGroupID] = [],
+        selectedRhymeGroups: [RhymeGroupSummary] = [],
         highlightAnchors: [TokenSpan] = [],
         mustUseTokens: [String] = [],
+        recipeSeed: String = "",
+        semanticSound: String = "",
+        semanticSenses: [String] = [],
+        keywordCage: [String] = [],
+        copyLastFourRhythm: Bool = true,
+        pastedFlowText: String = "",
+        gunnaWrap: Bool = true,
+        wrapPocket: WrapPocket = .behind,
+        wrapBpmSource: WrapBpmSource = .note,
+        wrapBpmCustom: Int? = nil,
+        targetBarCount: Int = 16,
+        punchGrammar: PunchGrammar = .couplet,
+        adlibOnFour: Bool = false,
+        acrosticWord: String = "",
+        storyArc: Bool = false,
+        lyricalPainting: Bool = false,
+        breakTheRun: Bool = false,
+        scatFirst: Bool = false,
+        setupOnlyRefs: Bool = true,
         selectedTopics: [String] = [],
         selectedTones: [EmotionalTone] = [],
         worldBuildingWords: [String] = [],
         lineCount: Int = 4,
         syllableTolerance: Int = 2,
         minEndRhymeLines: Int? = nil,
-        styleOverride: StyleProfile? = nil
+        styleOverride: StyleProfile? = nil,
+        youFilters: ModelYouVerseFilters = .init()
     ) {
         self.userPrompt = userPrompt
         self.selectedRhymeGroupIDs = selectedRhymeGroupIDs
+        self.selectedRhymeGroups = selectedRhymeGroups
         self.highlightAnchors = highlightAnchors
         self.mustUseTokens = mustUseTokens
+        self.recipeSeed = recipeSeed
+        self.semanticSound = semanticSound
+        self.semanticSenses = semanticSenses
+        self.keywordCage = keywordCage
+        self.copyLastFourRhythm = copyLastFourRhythm
+        self.pastedFlowText = pastedFlowText
+        self.gunnaWrap = gunnaWrap
+        self.wrapPocket = wrapPocket
+        self.wrapBpmSource = wrapBpmSource
+        self.wrapBpmCustom = wrapBpmCustom
+        self.punchGrammar = punchGrammar
+        self.adlibOnFour = adlibOnFour
+        self.acrosticWord = acrosticWord
+        self.storyArc = storyArc
+        self.lyricalPainting = lyricalPainting
+        self.breakTheRun = breakTheRun
+        self.scatFirst = scatFirst
+        self.setupOnlyRefs = setupOnlyRefs
+        self.targetBarCount = storyArc ? 16 : ((targetBarCount == 4) ? 4 : 16)
         self.selectedTopics = selectedTopics
         self.selectedTones = selectedTones
         self.worldBuildingWords = worldBuildingWords
@@ -99,6 +188,86 @@ struct DirectedGenerationParams {
         self.syllableTolerance = syllableTolerance
         self.minEndRhymeLines = minEndRhymeLines ?? max(1, lineCount / 2)
         self.styleOverride = styleOverride
+        self.youFilters = youFilters
+    }
+
+    /// Recipe seed: explicit field, else a single must-use token is the seed (not a cage).
+    var resolvedRecipeSeed: String {
+        let seed = recipeSeed.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !seed.isEmpty { return seed }
+        if mustUseTokens.count == 1 {
+            return mustUseTokens[0].trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        return ""
+    }
+
+    /// Cage sound: explicit field, else the recipe seed.
+    var resolvedSemanticSound: String {
+        let sound = semanticSound.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !sound.isEmpty { return sound }
+        return resolvedRecipeSeed
+    }
+
+    /// Keyword cage only when 4–6 words (Ohm drill). One word is a seed; 2–3 stay must-use.
+    var resolvedKeywordCage: [String] {
+        if !keywordCage.isEmpty { return keywordCage }
+        let n = mustUseTokens.count
+        if (4...6).contains(n) { return mustUseTokens }
+        return []
+    }
+
+    /// BPM fed to BarClock when wrap is on. `noteBPM` is the entry's stored tempo.
+    func resolvedWrapBPM(noteBPM: Int?) -> Int? {
+        switch wrapBpmSource {
+        case .wrap92: return 92
+        case .custom: return wrapBpmCustom ?? noteBPM ?? 92
+        case .note: return noteBPM
+        }
+    }
+
+    /// Verbatim must-use when it is not acting as seed or keyword cage.
+    var resolvedMustUseVerbatim: [String] {
+        if !resolvedKeywordCage.isEmpty { return [] }
+        if mustUseTokens.count == 1 && recipeSeed.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            return []
+        }
+        return mustUseTokens
+    }
+
+    /// Letters only, uppercased. Empty means the acrostic chip is off.
+    var resolvedAcrostic: String {
+        String(acrosticWord.uppercased().filter(\.isLetter))
+    }
+
+    /// Ohm F2 journey line. Replaces SocialActionArc when `storyArc` is on.
+    static let storyArcPrompt =
+        "STORY ARC: comfort zone → call to leave → cross the line → climax → earn the treasure → return changed → don't recognize home. Punches still land late. One journey across the 16, not eight isolated couplets."
+
+    /// One prompt flag per optional chip. Empty/off chips are omitted.
+    func schemeChipBlock() -> String {
+        var lines: [String] = []
+        let word = resolvedAcrostic
+        if !word.isEmpty {
+            lines.append("ACROSTIC: first letter of each bar, in order, spells \(word). After the word is spelled, later bars may start normally. Do not pad to a 16-letter word.")
+        }
+        if storyArc {
+            lines.append(Self.storyArcPrompt)
+        }
+        if lyricalPainting {
+            lines.append("DESCRIBE THE FLOW: some bars describe the cadence itself, or teach a how-to inside the verse. Not five boasts that you rap well.")
+        }
+        if breakTheRun {
+            let n = max(2, minEndRhymeLines)
+            lines.append("BREAK THE RUN: after \(n) bars on one end-rime, switch the ending sound AND the cadence on purpose (new pocket, not just a new noun).")
+        }
+        if scatFirst {
+            lines.append("RHYTHM FIRST: place the stresses first (yeah/uh on beats 3–4), then drop nouns into those slots. If a COPY-FLOW map is present, fill that map — do not invent a new rhythm.")
+        }
+        if setupOnlyRefs {
+            lines.append("SETUP-ONLY REFS: a name or brand in the setup may stay in the setup. The punch does not have to cash every reference.")
+        }
+        guard !lines.isEmpty else { return "" }
+        return "\n" + lines.joined(separator: "\n") + "\n"
     }
 }
 

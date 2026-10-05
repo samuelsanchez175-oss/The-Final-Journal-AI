@@ -99,13 +99,47 @@ enum IntentExtractor {
     /// Used when user provides only a topic.
     static func extractFromTopic(_ topic: String) -> GenerationIntent {
         let theme = topic.trimmingCharacters(in: .whitespacesAndNewlines)
-            .isEmpty ? "Continue in melodic trap style with luxury flex and smooth flow" : topic
+            .isEmpty ? DirectedGenerationParams.defaultUserPromptWhenEmpty : topic
         return GenerationIntent(
             theme: theme,
             tone: .confident,
             perspective: .flexing,
             energyLevel: .medium,
             mustInclude: extractKeywords(from: topic),
+            mustAvoid: ["generic party flex disconnected from theme", "random luxury flex without context"]
+        )
+    }
+
+    /// Writing-partner-aware intent. Direction, must-use, and selected tones beat the draft.
+    static func extractForModelG(draft: String, directedParams: DirectedGenerationParams?) -> GenerationIntent {
+        let direction = directedParams?.userPrompt.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let draftTrimmed = draft.trimmingCharacters(in: .whitespacesAndNewlines)
+        let theme: String
+        if !direction.isEmpty {
+            theme = direction
+        } else if !draftTrimmed.isEmpty {
+            theme = draftTrimmed
+        } else {
+            theme = DirectedGenerationParams.defaultUserPromptWhenEmpty
+        }
+        let selectedTones = directedParams?.selectedTones ?? []
+        let tone: IntentTone
+        if let first = selectedTones.first {
+            tone = mapTone(first, detectedTones: selectedTones)
+        } else {
+            tone = .confident
+        }
+        var must: [String] = directedParams?.mustUseTokens ?? []
+        must.append(contentsOf: directedParams?.selectedTopics ?? [])
+        must.append(contentsOf: extractKeywords(from: theme))
+        var seen = Set<String>()
+        let uniqueMust = must.filter { seen.insert($0.lowercased()).inserted }
+        return GenerationIntent(
+            theme: theme,
+            tone: tone,
+            perspective: .flexing,
+            energyLevel: .medium,
+            mustInclude: Array(uniqueMust.prefix(8)),
             mustAvoid: ["generic party flex disconnected from theme", "random luxury flex without context"]
         )
     }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Street Echo — breath wash</title>
+<style>
+  :root { --setup: rgba(52,199,89,.18); --punch: rgba(255,59,48,.16); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #d8d0c4;
+    display: flex;
+    justify-content: center;
+    padding: 24px 12px 48px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  }
+  .phone {
+    width: 390px;
+    background: #fff;
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: 0 24px 50px rgba(40,30,10,.22);
+  }
+  .top {
+    background: linear-gradient(#f7d7d0, #fbece8 70%, #fff);
+    padding: 14px 16px 10px;
+  }
+  .status { text-align: center; font-weight: 600; font-size: 15px; margin-bottom: 10px; }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .round {
+    width: 36px; height: 36px; border-radius: 18px; background: #fff;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08); font-size: 18px;
+  }
+  .tools {
+    background: #fff; border-radius: 20px; padding: 6px 10px;
+    display: flex; gap: 12px; font-size: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+  }
+  h1 { text-align: center; font-size: 22px; font-weight: 700; margin: 14px 0 10px; }
+  .pills { display: flex; gap: 8px; overflow: hidden; padding-bottom: 8px; }
+  .pill {
+    white-space: nowrap; border: 1px solid #e6e2de; border-radius: 999px;
+    padding: 7px 12px; font-size: 13px; font-weight: 600; background: #fff;
+  }
+  .editor { padding: 6px 10px 20px; }
+  .row { display: grid; grid-template-columns: 36px 1fr; gap: 8px; align-items: start; min-height: 28px; }
+  .g {
+    width: 28px; height: 22px; border-radius: 6px; background: #eceae8;
+    color: #6b6662; font-size: 12px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; margin-top: 2px;
+  }
+  .line { font-size: 17px; line-height: 26px; color: #1c1c1e; }
+  .rhyme { background: #d8f0dc; }
+  .pink { background: #f3d6ea; }
+  .tan { background: #f3e3b8; }
+  .setup { background: var(--setup); }
+  .punch { background: var(--punch); }
+  .focus { outline: none; border-left: 2px solid #e36b4a; padding-left: 2px; }
+  .ghost {
+    margin: 28px 14px 8px; background: #f4f3f1; border-radius: 22px;
+    padding: 12px 14px; font-size: 15px; color: #3a3a3c;
+  }
+  .ghost b { font-weight: 700; }
+  .chips { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px 6px; margin-top: 8px; }
+  .cap { text-align: center; color: #8e8e93; font-size: 12px; margin: 6px 0 14px; }
+  .dock { display: flex; justify-content: center; padding-bottom: 22px; }
+  .plus {
+    border: 1px solid #e6e2de; border-radius: 22px; padding: 10px 18px; font-size: 18px;
+  }
+  .key { font-size: 11px; font-weight: 800; letter-spacing: .12em; color: #8e8e93; text-transform: uppercase; margin: 10px 16px 0; }
+</style>
+</head>
+<body>
+  <div class="phone">
+    <div class="top">
+      <div class="status">3:00</div>
+      <div class="nav">
+        <div class="round">‹</div>
+        <div class="tools">👟 &nbsp; 🔍 &nbsp; 👻 &nbsp; ↩ &nbsp; ↪ &nbsp; +</div>
+      </div>
+      <h1>Street Echo</h1>
+      <div class="pills">
+        <div class="pill">BPM</div><div class="pill">Key</div><div class="pill">Scale</div><div class="pill">AA Bar length</div>
+      </div>
+    </div>
+    <div class="editor">
+      <div class="row"><div class="g">9</div><div class="line">A cracked-up verse, a <span class="rhyme">microphone</span></div></div>
+      <div class="row"><div class="g">8</div><div class="line">I speak in heat, but not <span class="rhyme">alone</span></div></div>
+      <div class="row"><div class="g">8</div><div class="line">The city hums in flesh and <span class="rhyme">bone</span></div></div>
+      <div class="row"><div class="g">9</div><div class="line">I love my loved ones deeply</div></div>
+      <div class="row"><div class="g">7</div><div class="line">I <span class="tan">run</span> down the block creeping</div></div>
+      <div class="row"><div class="g">7</div><div class="line">She wanted to cheat me <span class="pink">some</span></div></div>
+      <div class="row"><div class="g">8</div><div class="line">I hope you ain't reach in for <span class="pink">some</span></div></div>
+      <div class="row"><div class="g">10</div><div class="line">I was tryna see if I can get <span class="pink">sum</span></div></div>
+      <div class="row"><div class="g">13</div><div class="line">I gotta girl I was fucking, now she on the <span class="tan">run</span></div></div>
+      <div class="row"><div class="g">12</div><div class="line">If I was to crash out, I hope i got my <span class="tan">gun</span></div></div>
+      <div class="row">
+        <div class="g">13</div>
+        <div class="line focus">
+          <span class="setup">I been running from my opps</span>, yea i do my<br>
+          <span class="punch">own stunts</span>
+        </div>
+      </div>
+    </div>
+    <p class="key">Live wash · green setup · red punch · gutter still 13</p>
+    <div class="ghost">
+      👻 &nbsp; <b>blunts</b> &nbsp; hunts &nbsp; hunt's &nbsp; kuntz &nbsp; mun
+      <div class="chips" style="display:block; margin-top:8px">
+        fronts &nbsp; punts &nbsp; buntz &nbsp; luntz &nbsp; brur
+      </div>
+    </div>
+    <p class="cap">Cadence 7 + 6 · ghost still leads stunts</p>
+    <div class="dock"><div class="plus">✦ &nbsp; +</div></div>
+  </div>
+</body>
+</html>

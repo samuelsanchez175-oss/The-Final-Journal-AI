@@ -3,48 +3,60 @@ import UIKit
 /// Centralized haptic feedback manager for consistent tactile responses throughout the app
 class HapticFeedbackManager {
     static let shared = HapticFeedbackManager()
-    
-    private init() {}
-    
+
+    private let light = UIImpactFeedbackGenerator(style: .light)
+    private let medium = UIImpactFeedbackGenerator(style: .medium)
+    private let heavy = UIImpactFeedbackGenerator(style: .heavy)
+    private let notify = UINotificationFeedbackGenerator()
+    private let select = UISelectionFeedbackGenerator()
+
+    private init() {
+        prepareHold()
+    }
+
+    /// Warm the motors so the next hold/tap actually fires on-device.
+    func prepareHold() {
+        light.prepare()
+        medium.prepare()
+        select.prepare()
+    }
+
     /// Light tap for button presses
     func lightTap() {
-        let generator = UIImpactFeedbackGenerator(style: .light)
-        generator.impactOccurred()
+        light.impactOccurred()
+        light.prepare()
     }
-    
+
     /// Medium tap for expand/collapse and important actions
     func mediumTap() {
-        let generator = UIImpactFeedbackGenerator(style: .medium)
-        generator.impactOccurred()
+        medium.impactOccurred()
+        medium.prepare()
     }
-    
+
     /// Heavy tap for significant actions
     func heavyTap() {
-        let generator = UIImpactFeedbackGenerator(style: .heavy)
-        generator.impactOccurred()
+        heavy.impactOccurred()
+        heavy.prepare()
     }
-    
+
     /// Success haptic for AI completion and successful operations
     func success() {
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.success)
+        notify.notificationOccurred(.success)
     }
-    
+
     /// Error haptic for failed operations
     func error() {
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.error)
+        notify.notificationOccurred(.error)
     }
-    
+
     /// Warning haptic for warnings
     func warning() {
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.warning)
+        notify.notificationOccurred(.warning)
     }
-    
+
     /// Selection haptic for menu items and pickers
     func selection() {
-        let generator = UISelectionFeedbackGenerator()
-        generator.selectionChanged()
+        select.selectionChanged()
+        select.prepare()
     }
 }

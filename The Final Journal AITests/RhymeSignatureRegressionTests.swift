@@ -47,4 +47,36 @@ final class RhymeSignatureRegressionTests: XCTestCase {
         XCTAssertEqual(RhymeFinder.rhymeTier(light, night), 3, "light/night perfect")
         XCTAssertEqual(RhymeFinder.rhymeTier(cat, night), 0, "cat/night no rhyme")
     }
+
+    func testGroupedBySyllableMatchesRhymeZoneBuckets() {
+        let groups = RhymeFinder.groupedBySyllable(words: [
+            ("count", 1), ("mount", 1), ("account", 2), ("discount", 2), ("paramount", 3)
+        ])
+        XCTAssertEqual(groups.map(\.syllables), [1, 2, 3])
+        XCTAssertEqual(groups[0].words, ["count", "mount"])
+        XCTAssertEqual(groups[1].words, ["account", "discount"])
+        XCTAssertEqual(groups[2].words, ["paramount"])
+    }
+
+    func testRhymeZoneAdvancedURLPointsAtOfficialAdvancedView() {
+        let url = RhymeFinder.rhymeZoneAdvancedURL(for: "amount")
+        XCTAssertEqual(url?.host, "www.rhymezone.com")
+        XCTAssertTrue(url?.absoluteString.contains("typeofrhyme=adv") == true)
+        XCTAssertTrue(url?.absoluteString.contains("Word=amount") == true)
+    }
+
+    func testFindRhymesReturnsEmptyForUnknownWord() {
+        XCTAssertTrue(RhymeFinder.findRhymes(for: "zzzzqx", limit: 8).isEmpty)
+    }
+
+    func testIndexedRhymesIncludeKnownPerfectPair() throws {
+        let dict = getGlobalCMUDICTStore()
+        guard dict["night"] != nil, dict["light"] != nil else {
+            throw XCTSkip("cmudict not loaded in test bundle")
+        }
+        let words = RhymeFinder.rankedRhymeWords(for: "night", limit: 80)
+        XCTAssertTrue(words.contains("light"), "indexed lookup must still return light for night")
+        XCTAssertFalse(words.contains("night"))
+        XCTAssertEqual(RhymeFinder.rhymeTier(dict["light"]!, dict["night"]!), 3)
+    }
 }

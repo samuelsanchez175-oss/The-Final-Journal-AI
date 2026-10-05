@@ -8,7 +8,7 @@ struct ModelGCorpus: Codable {
     let slang: [CorpusSlang]
 }
 
-struct CorpusBar: Codable {
+nonisolated struct CorpusBar: Codable, Sendable {
     let id: String
     let text: String
     let adlib: String?

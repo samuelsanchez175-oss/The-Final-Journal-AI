@@ -79,15 +79,16 @@ class UserBehaviorTracker {
         engagement.lastFeatureUseTime = Date()
         
         saveEngagement(engagement)
-        
-        // Check achievements after feature usage
-        checkAchievements()
+        if AchievementSystem.isEnabled {
+            checkAchievements()
+        }
     }
     
     // MARK: - Achievement Checking
     
     /// Check achievements using engagement data
     func checkAchievements() {
+        guard AchievementSystem.isEnabled else { return }
         let allEngagement = loadAllEngagementHistory()
         
         // Calculate totals from engagement history
@@ -129,6 +130,7 @@ class UserBehaviorTracker {
     
     /// Check achievements with actual items data (more accurate)
     func checkAchievementsWithItems(items: [Item]) {
+        guard AchievementSystem.isEnabled else { return }
         let totalNotes = items.count
         
         // Calculate total words
@@ -242,9 +244,9 @@ class UserBehaviorTracker {
         engagement.lastWritingActivity = Date()
         
         saveEngagement(engagement)
-        
-        // Check achievements after tracking activity
-        checkAchievements()
+        if AchievementSystem.isEnabled {
+            checkAchievements()
+        }
     }
     
     func trackSuggestionInteraction(action: SuggestionAction, suggestionId: UUID? = nil) {

@@ -131,7 +131,7 @@ struct MomentumProfileTabs: View {
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 9)
-                    .foregroundStyle(isSelected ? Momentum.onInverse : Momentum.contentSecondary)
+                    .foregroundStyle(isSelected ? Momentum.onInverse : Momentum.chromeIconMuted)
                     .background(
                         Capsule(style: .continuous)
                             .fill(isSelected ? Momentum.inverseSurface : Color.clear)
@@ -160,24 +160,35 @@ struct ProfilePopoverView: View {
     @AppStorage("profile_name") private var storedName: String = ""
     @AppStorage("profile_email") private var storedEmail: String = ""
     @AppStorage("profile_phone") private var storedPhone: String = ""
+    @AppStorage("profile_marketing_opt_in") private var marketingOptIn: Bool = false
+    @AppStorage("profile_marketing_last_signature") private var lastMarketingSignature: String = ""
     @AppStorage("profile_avatar_data") private var storedAvatarData: Data?
 
     @State private var selectedItem: PhotosPickerItem?
     @State private var avatarImage: Image?
     @State private var showPersonalizationSheet: Bool = false
     @State private var showModelPreferences: Bool = false
+    @State private var showReleaseNotes: Bool = false
+    @State private var showSupportShop: Bool = false
+    @State private var showAnalyticsFromProfile: Bool = false
+    @State private var showAchievementsFromProfile: Bool = false
     @State private var selectedTab: ProfileTab = .you
-    @State private var didRouteInitialTab: Bool = false
 
     @State private var name: String
     @State private var email: String
     @State private var phone: String
     @State private var openAIKeyDraft: String = ""
     @State private var geniusKeyDraft: String = ""
+    @State private var sunoKeyDraft: String = ""
+    @State private var uberduckKeyDraft: String = ""
+    @State private var uberduckSecretDraft: String = ""
     @AppStorage("transcription_backend") private var transcriptionBackend: String = "apple"
     @State private var showSaveConfirmation: Bool = false
+    @State private var saveToastMessage: String = "Saved"
+    @State private var isSubmittingMarketing: Bool = false
     @State private var hasUnsavedChanges: Bool = false
     @State private var keychainErrorMessage: String? = nil
+    @State private var exportedURL: URLWrapper?
 
     // App version info
     private var appVersion: String {
@@ -189,9 +200,13 @@ struct ProfilePopoverView: View {
     }
 
     private func exportUserData() {
-        // TODO: Implement data export (journal entries, profile, settings).
         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-        print("Export data functionality - to be implemented")
+        let descriptor = FetchDescriptor<Item>(
+            sortBy: [SortDescriptor(\.timestamp, order: .reverse)]
+        )
+        let notes = (try? modelContext.fetch(descriptor)) ?? []
+        guard let url = ExportManager.shared.exportMultipleToPDF(items: notes) else { return }
+        exportedURL = URLWrapper(url: url)
     }
 
     init() {
@@ -265,8 +280,10 @@ struct ProfilePopoverView: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") { persist(thenDismiss: true) }
                         .fontWeight(.semibold)
+                        .foregroundStyle(Momentum.chromeIcon)
                 }
             }
+            .tint(Momentum.chromeIcon)
             .overlay(alignment: .top) { saveConfirmationToast }
             .alert("Couldn't save key", isPresented: Binding(
                 get: { keychainErrorMessage != nil },
@@ -288,6 +305,12 @@ struct ProfilePopoverView: View {
             .onChange(of: selectedItem) { _, newItem in handleAvatarPick(newItem) }
             .onChange(of: openAIKeyDraft) { _, _ in hasUnsavedChanges = true }
             .onChange(of: geniusKeyDraft) { _, _ in hasUnsavedChanges = true }
+            .onChange(of: sunoKeyDraft) { _, _ in hasUnsavedChanges = true }
+            .onChange(of: uberduckKeyDraft) { _, _ in hasUnsavedChanges = true }
+            .onChange(of: uberduckSecretDraft) { _, _ in hasUnsavedChanges = true }
+            .sheet(item: $exportedURL) { wrapper in
+                ShareSheet(items: [wrapper.url])
+            }
         }
     }
 
@@ -296,7 +319,7 @@ struct ProfilePopoverView: View {
             HStack(spacing: 8) {
                 Image(systemName: "checkmark.circle.fill")
                     .foregroundStyle(Momentum.accent)
-                Text("Saved")
+                Text(saveToastMessage)
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Momentum.contentPrimary)
             }
@@ -323,16 +346,11 @@ struct ProfilePopoverView: View {
         phone = storedPhone
         openAIKeyDraft = KeychainHelper.shared.getAPIKey() ?? ""
         geniusKeyDraft = KeychainHelper.shared.getGeniusAPIKey() ?? ""
+        sunoKeyDraft = KeychainHelper.shared.getSunoAPIKey() ?? ""
+        uberduckKeyDraft = KeychainHelper.shared.getUberduckAPIKey() ?? ""
+        uberduckSecretDraft = KeychainHelper.shared.getUberduckAPISecret() ?? ""
         hasUnsavedChanges = false
         showSaveConfirmation = false
-
-        // First open with no key → land on AI so setup isn't hidden behind a tab.
-        if !didRouteInitialTab {
-            didRouteInitialTab = true
-            if openAIKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                selectedTab = .ai
-            }
-        }
 
         if AppNavigation.applyPendingProfileRouting(selectedTab: &selectedTab) {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
@@ -381,6 +399,23 @@ struct ProfilePopoverView: View {
             else { try KeychainHelper.shared.saveGeniusAPIKey(genius) }
         } catch { keychainFailed = true; print("Keychain save (Genius) failed: \(error)") }
 
+        let suno = sunoKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines)
+        do {
+            if suno.isEmpty { try KeychainHelper.shared.deleteSunoAPIKey() }
+            else { try KeychainHelper.shared.saveSunoAPIKey(suno) }
+        } catch { keychainFailed = true; print("Keychain save (Suno) failed: \(error)") }
+
+        let uberduckKey = uberduckKeyDraft.trimmingCharacters(in: .whitespacesAndNewlines)
+        let uberduckSecret = uberduckSecretDraft.trimmingCharacters(in: .whitespacesAndNewlines)
+        do {
+            if uberduckKey.isEmpty && uberduckSecret.isEmpty {
+                KeychainHelper.shared.deleteUberduckCredentials()
+            } else {
+                if !uberduckKey.isEmpty { try KeychainHelper.shared.saveUberduckAPIKey(uberduckKey) }
+                if !uberduckSecret.isEmpty { try KeychainHelper.shared.saveUberduckAPISecret(uberduckSecret) }
+            }
+        } catch { keychainFailed = true; print("Keychain save (Uberduck) failed: \(error)") }
+
         hasUnsavedChanges = false
 
         // Surface a real failure instead of a false "Saved" toast (e.g. Keychain
@@ -391,9 +426,60 @@ struct ProfilePopoverView: View {
         }
 
         if thenDismiss {
-            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-            withAnimation { showSaveConfirmation = true }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { dismiss() }
+            presentSaveToast("Saved", autoDismiss: true)
+        }
+    }
+
+    /// Confirm on the You tab: keep details on-device, and send contact + marketing
+    /// consent to the Google Form only when the user taps Confirm with a valid email.
+    private func confirmAndShare() {
+        persist(thenDismiss: false)
+        guard isEmailValid, isPhoneValid else { return }
+        let trimmedEmail = email.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedEmail.isEmpty else {
+            presentSaveToast("Saved on this device", autoDismiss: false)
+            return
+        }
+        let payload = ProfileMarketingFormClient.Payload(
+            name: name,
+            email: trimmedEmail,
+            phone: phone,
+            marketingOptIn: marketingOptIn
+        )
+        let signature = ProfileMarketingFormClient.signature(for: payload)
+        if signature == lastMarketingSignature {
+            presentSaveToast("Saved", autoDismiss: false)
+            return
+        }
+        isSubmittingMarketing = true
+        Task {
+            do {
+                try await ProfileMarketingFormClient.submit(payload)
+                await MainActor.run {
+                    lastMarketingSignature = signature
+                    isSubmittingMarketing = false
+                    presentSaveToast("Saved", autoDismiss: false)
+                }
+            } catch {
+                await MainActor.run {
+                    isSubmittingMarketing = false
+                    presentSaveToast("Saved on this device", autoDismiss: false)
+                }
+            }
+        }
+    }
+
+    private func presentSaveToast(_ message: String, autoDismiss: Bool) {
+        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+        saveToastMessage = message
+        withAnimation { showSaveConfirmation = true }
+        let delay: TimeInterval = autoDismiss ? 0.6 : 2.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            if autoDismiss {
+                dismiss()
+            } else {
+                withAnimation { showSaveConfirmation = false }
+            }
         }
     }
 
@@ -430,7 +516,7 @@ struct ProfilePopoverView: View {
                     } else {
                         Image(systemName: "person.crop.circle.fill")
                             .font(.system(size: 42))
-                            .foregroundStyle(Momentum.contentSecondary)
+                            .foregroundStyle(Momentum.chromeIconMuted)
                     }
                 }
             }
@@ -480,7 +566,8 @@ struct ProfilePopoverView: View {
                 HStack {
                     Label("Your Personalization", systemImage: "person.text.rectangle")
                         .font(.momentumBody)
-                        .foregroundStyle(Momentum.contentPrimary)
+                        .symbolRenderingMode(.monochrome)
+                        .foregroundStyle(Momentum.chromeIcon)
                     Spacer()
                     if hasPersonalDetails() {
                         Image(systemName: "checkmark.circle.fill")
@@ -488,12 +575,12 @@ struct ProfilePopoverView: View {
                     }
                     Image(systemName: "chevron.right")
                         .font(.caption)
-                        .foregroundStyle(Momentum.contentSecondary)
+                        .foregroundStyle(Momentum.chromeIconMuted)
                 }
 
                 let chips = personalDetailsChips()
                 if chips.isEmpty {
-                    Text("Add locations, people, themes, interests, and background so suggestions sound like you.")
+                    Text("Add locations, people, themes, interests, and background so the sparkle button sounds like you. This stays on the app.")
                         .font(.momentumMetadata)
                         .foregroundStyle(Momentum.contentSecondary)
                         .fixedSize(horizontal: false, vertical: true)
@@ -526,7 +613,7 @@ struct ProfilePopoverView: View {
         }
         .buttonStyle(.plain)
         .accessibilityLabel("Your Personalization")
-        .accessibilityHint("Opens a form for locations, people, themes, interests, and background")
+        .accessibilityHint("Opens on-device details used only to personalize the AI sparkle button")
     }
 
     /// Nudge shown on the You tab when no AI key is set — jumps to the AI tab.
@@ -577,6 +664,26 @@ struct ProfilePopoverView: View {
         .sheet(isPresented: $showModelPreferences) {
             ModelPreferencesView()
         }
+        .sheet(isPresented: $showReleaseNotes) {
+            ReleaseNotesSheetView()
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $showSupportShop) {
+            SupportShopSheetView()
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $showAnalyticsFromProfile) {
+            AnalyticsDashboardView()
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $showAchievementsFromProfile) {
+            AchievementCollectionView()
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
+        }
     }
 
     @ViewBuilder private var tabContent: some View {
@@ -587,60 +694,135 @@ struct ProfilePopoverView: View {
         }
     }
 
-    // MARK: You tab — personalization + account
+    // MARK: You tab — artist onboarding (Model You)
 
     private var youTab: some View {
         VStack(alignment: .leading, spacing: 28) {
             if !hasAPIKey { connectKeyBanner }
+            ArtistOnboardingView()
+            youTabWriting
+        }
+    }
 
-            VStack(alignment: .leading, spacing: 12) {
-                MomentumSectionHeader(title: "Your Personalization")
-                Text("Adds weight to generators so suggestions feel more personal to you.")
+    private var youTabWriting: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            MomentumSectionHeader(title: "Your writing")
+            Button {
+                lightHaptic()
+                showAnalyticsFromProfile = true
+            } label: {
+                navRow(title: "Analytics", systemImage: "chart.bar.fill")
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Analytics")
+            .accessibilityHint("Opens word counts, streaks, and lyric scores for your notes")
+        }
+    }
+
+    private var youTabIntro: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Contact details and marketing live on the App tab.")
+                .font(.momentumMetadata)
+                .foregroundStyle(Momentum.contentSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    private var youTabAccount: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            MomentumSectionHeader(title: "Account & marketing")
+            Text("Name, email, and phone save on this device. Confirm sends your email to us if you add one, so we can keep in touch.")
+                .font(.momentumMetadata)
+                .foregroundStyle(Momentum.contentSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            VStack(spacing: 14) {
+                profileField(label: "Name", text: $name, placeholder: "Your name")
+                    .onChange(of: name) { _, _ in hasUnsavedChanges = true }
+
+                Group {
+                    let emailHelperText: String? = isEmailValid
+                        ? (email.isEmpty ? "Add an email if you want us to save it and keep in touch." : nil)
+                        : "Enter a valid email (e.g. name@example.com)"
+                    profileField(
+                        label: "Email",
+                        text: $email,
+                        placeholder: "you@email.com",
+                        keyboard: .emailAddress,
+                        isValid: isEmailValid,
+                        helperText: emailHelperText
+                    )
+                }
+                .onChange(of: email) { _, _ in hasUnsavedChanges = true }
+
+                Group {
+                    let phoneHelperText: String? = isPhoneValid ? nil : "Enter a 10-digit number"
+                    profileField(
+                        label: "Phone",
+                        text: Binding(
+                            get: { phone },
+                            set: { newValue in
+                                phone = newValue
+                                hasUnsavedChanges = true
+                            }
+                        ),
+                        placeholder: "(000) 000-0000",
+                        keyboard: .phonePad,
+                        isValid: isPhoneValid,
+                        helperText: phoneHelperText
+                    )
+                }
+
+                marketingOptInRow
+
+                Button(action: confirmAndShare) {
+                    HStack(spacing: 8) {
+                        if isSubmittingMarketing {
+                            ProgressView()
+                                .tint(Momentum.onInverse)
+                        }
+                        Text("Confirm")
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(MomentumSquareButtonStyle(fill: .inverse))
+                .disabled(isSubmittingMarketing)
+                .accessibilityLabel("Confirm")
+                .accessibilityHint("Saves your details on this device and sends your email to \(Momentum.appName) if you added one")
+
+                Text("Confirm saves your details and, with a valid email, sends them to our signup form. Swiping away does not send anything.")
                     .font(.momentumMetadata)
                     .foregroundStyle(Momentum.contentSecondary)
                     .fixedSize(horizontal: false, vertical: true)
-                personalizationCard
-            }
-
-            VStack(alignment: .leading, spacing: 12) {
-                MomentumSectionHeader(title: "Account")
-                VStack(spacing: 14) {
-                    profileField(label: "Name", text: $name, placeholder: "Your name")
-                        .onChange(of: name) { _, _ in hasUnsavedChanges = true }
-
-                    Group {
-                        let emailHelperText: String? = isEmailValid ? nil : "Enter a valid email (e.g. name@example.com)"
-                        profileField(
-                            label: "Email",
-                            text: $email,
-                            placeholder: "you@email.com",
-                            keyboard: .emailAddress,
-                            isValid: isEmailValid,
-                            helperText: emailHelperText
-                        )
-                    }
-                    .onChange(of: email) { _, _ in hasUnsavedChanges = true }
-
-                    Group {
-                        let phoneHelperText: String? = isPhoneValid ? nil : "Enter a 10-digit number"
-                        profileField(
-                            label: "Phone",
-                            text: Binding(
-                                get: { phone },
-                                set: { newValue in
-                                    phone = newValue
-                                    hasUnsavedChanges = true
-                                }
-                            ),
-                            placeholder: "(000) 000-0000",
-                            keyboard: .phonePad,
-                            isValid: isPhoneValid,
-                            helperText: phoneHelperText
-                        )
-                    }
-                }
             }
         }
+    }
+
+    private var marketingOptInRow: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Toggle(isOn: $marketingOptIn) {
+                Text("Email me updates")
+                    .font(.subheadline)
+                    .foregroundStyle(Momentum.contentPrimary)
+            }
+            .tint(Momentum.accent)
+            .onChange(of: marketingOptIn) { _, _ in hasUnsavedChanges = true }
+            .accessibilityHint("Off by default. Turn on to get product news and offers from \(Momentum.appName)")
+
+            Text("Product news and offers from \(Momentum.appName). Off by default. We do not sell anyone's data.")
+                .font(.momentumMetadata)
+                .foregroundStyle(Momentum.contentSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(12)
+        .background(
+            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                .fill(Momentum.surfaceElevated)
+                .overlay(
+                    RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                        .stroke(Momentum.hairline, lineWidth: Momentum.lineThin)
+                )
+        )
     }
 
     // MARK: AI tab — connection + suggestion defaults + model
@@ -649,7 +831,7 @@ struct ProfilePopoverView: View {
         VStack(alignment: .leading, spacing: 28) {
             VStack(alignment: .leading, spacing: 12) {
                 MomentumSectionHeader(title: "Connection")
-                Text("Required for AI suggestions. Genius is optional and improves rhyme ranking.")
+                Text("Paste an OpenAI or Gemini key in the same field — we detect which one and check that it works. Bar hits already search songs without a Genius key.")
                     .font(.momentumMetadata)
                     .foregroundStyle(Momentum.contentSecondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -657,23 +839,49 @@ struct ProfilePopoverView: View {
                 APIKeyField(
                     label: "OpenAI or Gemini API Key",
                     placeholder: "sk-…  or  AIza…",
-                    helperText: "Paste an OpenAI (sk-…) or Gemini (AIza…) key — Model G auto-detects. Tap Test to verify.",
+                    helperText: "Paste an OpenAI (sk-…) or Gemini (AIza…) key. We detect the provider and check the key as soon as it looks complete. Tap Test to check again.",
                     detectProvider: true,
                     draft: $openAIKeyDraft
                 )
 
                 APIKeyField(
                     label: "Genius API Key (Optional)",
-                    placeholder: "Enter Genius API key",
-                    helperText: "Improves rhyme suggestions via song-lyrics data.",
-                    fixedGetKeyURL: URL(string: "https://genius.com/api-clients"),
+                    placeholder: "Client Access Token",
+                    helperText: "Not required. Bar hits already search songs without this. Open Genius API docs, then create a Genius API client and paste the Client Access Token here.",
+                    fixedGetKeyURL: GeniusReferenceClient.newAPIClientURL,
+                    kind: .genius,
                     draft: $geniusKeyDraft
+                )
+
+                APIKeyField(
+                    label: "Suno API Key (Optional)",
+                    placeholder: "Suno key",
+                    helperText: "Used by the paperclip → Beat & vocal sheet to make a backing beat from this note.",
+                    fixedGetKeyURL: URL(string: "https://sunoapi.org"),
+                    draft: $sunoKeyDraft
+                )
+
+                APIKeyField(
+                    label: "Uberduck API Key (Optional)",
+                    placeholder: "Uberduck key",
+                    helperText: "Used with the secret below to sing this note’s lyrics. Get both from Uberduck.",
+                    fixedGetKeyURL: URL(string: "https://uberduck.ai"),
+                    draft: $uberduckKeyDraft
+                )
+
+                APIKeyField(
+                    label: "Uberduck API Secret (Optional)",
+                    placeholder: "Uberduck secret",
+                    helperText: "Pairs with the Uberduck key. Leave both empty if you are not using vocals.",
+                    draft: $uberduckSecretDraft
                 )
 
                 Label("Saved securely in your device Keychain.", systemImage: "lock.shield")
                     .font(.caption)
                     .foregroundStyle(Momentum.contentSecondary)
             }
+
+            aiPersonalizationSection
 
             // Voice Transcription engine — Apple on-device vs OpenAI Whisper.
             transcriptionSection
@@ -691,8 +899,19 @@ struct ProfilePopoverView: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel("Model Preferences")
-                .accessibilityHint("Customize Model G v3 voice and generation preferences")
+                .accessibilityHint("Customize Model G voice and generation preferences")
             }
+        }
+    }
+
+    private var aiPersonalizationSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            MomentumSectionHeader(title: "Your Personalization")
+            Text("Locations, people, themes, and background stay on this app. They are not collected or uploaded. The AI sparkle button uses them only to personalize suggestions.")
+                .font(.momentumMetadata)
+                .foregroundStyle(Momentum.contentSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            personalizationCard
         }
     }
 
@@ -731,6 +950,42 @@ struct ProfilePopoverView: View {
 
     private var appTab: some View {
         VStack(alignment: .leading, spacing: 28) {
+            youTabAccount
+            VStack(alignment: .leading, spacing: 12) {
+                MomentumSectionHeader(title: "App")
+                Button {
+                    lightHaptic()
+                    showReleaseNotes = true
+                } label: {
+                    navRow(title: "What’s New", systemImage: "clock.arrow.circlepath")
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("What’s New")
+                .accessibilityHint("Opens release notes for this version")
+
+                Button {
+                    lightHaptic()
+                    showSupportShop = true
+                } label: {
+                    navRow(title: "Support", systemImage: "heart.fill")
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Support")
+                .accessibilityHint("Opens Instagram, X, and Cash App so you can follow or donate")
+
+                if AchievementSystem.isEnabled {
+                    Button {
+                        lightHaptic()
+                        showAchievementsFromProfile = true
+                    } label: {
+                        navRow(title: "Achievements", systemImage: "trophy")
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Achievements")
+                    .accessibilityHint("Opens badges you have unlocked")
+                }
+            }
+
             VStack(alignment: .leading, spacing: 12) {
                 MomentumSectionHeader(title: "Appearance")
                 CoralAppearanceSection()
@@ -797,9 +1052,9 @@ struct ProfilePopoverView: View {
 
                 ShareLink(
                     item: URL(string: "https://finaljournal.app/invite")!,
-                    subject: Text("Join me on The Final Journal AI"),
-                    message: Text("Check out The Final Journal AI and join my creative journey!"),
-                    preview: SharePreview("The Final Journal AI", image: Image(systemName: "sparkles"))
+                    subject: Text("Join me on \(Momentum.appName)"),
+                    message: Text("Check out \(Momentum.appName) and join my creative journey!"),
+                    preview: SharePreview(Momentum.appName, image: Image(systemName: "sparkles"))
                 ) {
                     navRow(title: "Share Invite Link", systemImage: "square.and.arrow.up")
                 }
@@ -833,20 +1088,23 @@ struct UsageInfoRow: View {
 
 // MARK: - Preferences Info View
 struct PreferencesInfoView: View {
-    @AppStorage("defaultRhymeOverlayVisible") private var defaultRhymeOverlayVisible: Bool = false
+    @AppStorage(EyeHighlightOption.rhymesStorageKey) private var defaultRhymeOverlayVisible: Bool = true
     @AppStorage("defaultBPM") private var defaultBPM: Int = 0
     @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Text("Default Rhyme Overlay")
+                Text("Rhymes highlight")
                     .font(.caption)
-                    .foregroundStyle(Momentum.contentSecondary)
+                    .foregroundStyle(Momentum.chromeIcon)
                 Spacer()
                 Toggle("", isOn: $defaultRhymeOverlayVisible)
                     .labelsHidden()
             }
+            Text("Same switch as the eye. Turning this on turns Techniques off.")
+                .font(.caption2)
+                .foregroundStyle(Momentum.contentSecondary)
 
             if defaultBPM > 0 {
                 HStack {
@@ -879,7 +1137,7 @@ struct SignalLayerAdvancedModeToggle: View {
             HStack {
                 Text("Signal Layer Advanced Mode")
                     .font(.caption)
-                    .foregroundStyle(Momentum.contentSecondary)
+                    .foregroundStyle(Momentum.chromeIcon)
 
                 Spacer()
 
@@ -891,8 +1149,9 @@ struct SignalLayerAdvancedModeToggle: View {
             }
 
             Text("Show Signal Mode, Axes, and technical details in suggestion cards")
-                .font(.caption2)
-                .foregroundStyle(.tertiary)
+                .font(.caption)
+                .foregroundStyle(Momentum.chromeIconMuted)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
@@ -992,6 +1251,22 @@ struct UserPersonalizationSheet: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
+                    Text("These details are not collected. They stay on this app and are only used to personalize responses from the AI sparkle button.")
+                        .font(.subheadline)
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(14)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(
+                            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                                .fill(Momentum.surfaceElevated)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                                        .stroke(Momentum.hairline, lineWidth: Momentum.lineThin)
+                                )
+                        )
+                        .accessibilityElement(children: .combine)
+
                     // Locations Section
                     tagInputSection(
                         title: "Locations",
@@ -1079,6 +1354,7 @@ struct UserPersonalizationSheet: View {
                     Button("Cancel") {
                         dismiss()
                     }
+                    .foregroundStyle(Momentum.chromeIcon)
                 }
 
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -1087,8 +1363,10 @@ struct UserPersonalizationSheet: View {
                         dismiss()
                     }
                     .fontWeight(.semibold)
+                    .foregroundStyle(Momentum.chromeIcon)
                 }
             }
+            .tint(Momentum.chromeIcon)
         }
         .onAppear {
             loadPersonalDetails()
@@ -1264,6 +1542,8 @@ struct NotificationPreferencesView: View {
                     Toggle(isOn: $preferences.dailyReminders) {
                         Label("Daily Writing Reminders", systemImage: "sunrise.fill")
                             .font(.body)
+                            .symbolRenderingMode(.monochrome)
+                            .foregroundStyle(Momentum.chromeIcon)
                     }
                     .onChange(of: preferences.dailyReminders) { _, _ in
                         NotificationManager.shared.savePreferences(preferences)
@@ -1272,22 +1552,30 @@ struct NotificationPreferencesView: View {
                     Toggle(isOn: $preferences.streakReminders) {
                         Label("Streak Reminders", systemImage: "flame.fill")
                             .font(.body)
+                            .symbolRenderingMode(.monochrome)
+                            .foregroundStyle(Momentum.chromeIcon)
                     }
                     .onChange(of: preferences.streakReminders) { _, _ in
                         NotificationManager.shared.savePreferences(preferences)
                     }
 
-                    Toggle(isOn: $preferences.achievementNotifications) {
-                        Label("Achievement Notifications", systemImage: "trophy.fill")
-                            .font(.body)
-                    }
-                    .onChange(of: preferences.achievementNotifications) { _, _ in
-                        NotificationManager.shared.savePreferences(preferences)
+                    if AchievementSystem.isEnabled {
+                        Toggle(isOn: $preferences.achievementNotifications) {
+                            Label("Achievement Notifications", systemImage: "trophy.fill")
+                                .font(.body)
+                                .symbolRenderingMode(.monochrome)
+                                .foregroundStyle(Momentum.chromeIcon)
+                        }
+                        .onChange(of: preferences.achievementNotifications) { _, _ in
+                            NotificationManager.shared.savePreferences(preferences)
+                        }
                     }
 
                     Toggle(isOn: $preferences.weeklySummary) {
                         Label("Weekly Summary", systemImage: "chart.bar.fill")
                             .font(.body)
+                            .symbolRenderingMode(.monochrome)
+                            .foregroundStyle(Momentum.chromeIcon)
                     }
                     .onChange(of: preferences.weeklySummary) { _, _ in
                         NotificationManager.shared.savePreferences(preferences)
@@ -1315,7 +1603,8 @@ extension ProfilePopoverView {
         HStack {
             Label(title, systemImage: systemImage)
                 .font(.momentumBody)
-                .foregroundStyle(Momentum.contentPrimary)
+                .symbolRenderingMode(.monochrome)
+                .foregroundStyle(Momentum.chromeIcon)
 
             Spacer()
 
@@ -1326,7 +1615,7 @@ extension ProfilePopoverView {
 
             Image(systemName: "chevron.right")
                 .font(.caption)
-                .foregroundStyle(Momentum.contentSecondary)
+                .foregroundStyle(Momentum.chromeIconMuted)
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 13)

@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - Exposure Risk
 
-enum ExposureRisk: String, Codable {
+nonisolated enum ExposureRisk: String, Codable {
     case low
     case medium
     case high
@@ -10,7 +10,7 @@ enum ExposureRisk: String, Codable {
 
 // MARK: - Authority Posture
 
-enum AuthorityPosture: String, Codable {
+nonisolated enum AuthorityPosture: String, Codable {
     case unstable
     case emerging
     case established
@@ -18,7 +18,7 @@ enum AuthorityPosture: String, Codable {
 
 // MARK: - Social Action
 
-enum SocialAction: String, Codable {
+nonisolated enum SocialAction: String, Codable {
     case confess
     case distance
     case assert
@@ -29,7 +29,7 @@ enum SocialAction: String, Codable {
 
 // MARK: - Audience Scope
 
-enum AudienceScope: String, Codable {
+nonisolated enum AudienceScope: String, Codable {
     case selfOnly
     case innerCircle
     case `public`
@@ -37,7 +37,7 @@ enum AudienceScope: String, Codable {
 
 // MARK: - Signal Axes
 
-struct SignalAxes: Codable {
+nonisolated struct SignalAxes: Codable {
     let exposureRisk: ExposureRisk
     let authorityPosture: AuthorityPosture
     let socialAction: SocialAction
@@ -50,7 +50,7 @@ struct SignalAxes: Codable {
 
 // MARK: - Signal Axes Calibrator
 
-class SignalAxesCalibrator {
+nonisolated class SignalAxesCalibrator {
     static let shared = SignalAxesCalibrator()
     
     private init() {}
@@ -239,7 +239,7 @@ class SignalAxesCalibrator {
 
 // MARK: - Convenience Extension
 
-extension SignalAxes {
+nonisolated extension SignalAxes {
     static func calibrateAxes(metrics: SignalMetrics, mode: SignalMode) -> SignalAxes {
         return SignalAxesCalibrator.shared.calibrateAxes(metrics: metrics, mode: mode)
     }

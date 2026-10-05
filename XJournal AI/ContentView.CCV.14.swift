@@ -48,11 +48,11 @@ struct DynamicIslandToolbarView: View {
     @FocusState.Binding var isEditorFocused: Bool
     @Environment(\.colorScheme) private var colorScheme
     @Binding var keyboardHeight: CGFloat
-    @State private var showRhymeGroupsPopover: Bool = false
+    @Binding var showRemindsMeOfPopover: Bool
+    @AppStorage("barHits.opensFromHold") private var barHitsOpensFromHold = true
+    @State private var remindsMeOfDetent: PresentationDetent = .medium
+    @ObservedObject var remindsMeOfService: RemindsMeOfService
     @State private var showFontSizePopover: Bool = false
-    @Binding var ghostMode: GhostMode
-    @State private var showGhostPopover: Bool = false
-    @State private var showGhostPricing: Bool = false
     @AppStorage(EditorChromeSettings.writingFontSizeKey) private var writingFontSize: Double = EditorChromeSettings.defaultWritingFontSize
     @Binding var showAudioRecorder: Bool
     @Binding var showRapSuggestions: Bool
@@ -63,7 +63,7 @@ struct DynamicIslandToolbarView: View {
     @Binding var showAudioImporter: Bool
     @Binding var showImportNotesInstructions: Bool
     @State private var rotationAngle: Double = 0
-    private var toolbarTint: Color { SoftBlueGlassStyle.tint(for: colorScheme) }
+    private var toolbarTint: Color { Momentum.chromeIcon }
     
     // Handler closures
     let onRewriteLine: () -> Void
@@ -101,6 +101,29 @@ struct DynamicIslandToolbarView: View {
     @Binding var showARCritiqueSheet: Bool
     @Binding var showThemeExpansionSheet: Bool
     @Binding var showExportSheet: Bool
+    @State private var showStyleTransferSheet: Bool = false
+    @State private var showModelPreferences: Bool = false
+    @State private var showBeatVocalSheet: Bool = false
+    @State private var showNeedAudioForFlow: Bool = false
+
+    private var hasAudioForFlow: Bool {
+        !(item.audioPath == nil || (item.audioPath?.isEmpty ?? true))
+    }
+
+    private var canRecallLastSuggestions: Bool {
+        NoteSuggestionSessionStore.hasSession(on: item) || rapSuggestionEngine.hasRecallableSuggestions
+    }
+
+    private func recallLastSuggestions() {
+        if rapSuggestionEngine.lastBatchSuggestions.isEmpty,
+           let session = NoteSuggestionSessionStore.load(from: item) {
+            NoteSuggestionSessionStore.apply(session, to: rapSuggestionEngine)
+        }
+        HapticFeedbackManager.shared.selection()
+        isEditorFocused = false
+        isShowingRecalled = true
+        showRapSuggestions = true
+    }
     
     // Handler closures for actions
     let insertRapSuggestion: (RapSuggestion, Bool) -> Void
@@ -108,6 +131,15 @@ struct DynamicIslandToolbarView: View {
     let showAIError: (String) -> Void
     let onRetryHumanCritic: () -> Void
     let item: Item
+    let onSamePocketNewNouns: () -> Void
+    var onShowNounBank: () -> Void = {}
+    @Binding var techniqueOverlayOn: Bool
+    @Binding var setupAndPunchOn: Bool
+    var onSelectEyeHighlight: (EyeHighlightOption) -> Void = { _ in }
+    var onEnsureRhymes: () -> Void = {}
+    @Binding var ghostModeRaw: String
+    @Binding var showGhostPricing: Bool
+    var onGhostModeChange: (String) -> Void = { _ in }
     
     // MARK: - Enhancement State Variables
     @State private var autoCollapseTimer: Timer?
@@ -115,10 +147,14 @@ struct DynamicIslandToolbarView: View {
     @State private var dragOffset: CGFloat = 0
     @State private var isDragging: Bool = false
     @State private var buttonAppearanceDelay: Double = 0
+    @State private var plusPulse = 0
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     
     /// Single-tap on the AI control runs this model again; choosing G or Y in the menu updates it after gates pass.
-    @AppStorage("toolbar_ai_last_suggestion_model") private var lastSuggestionModelRaw: String = SuggestionModel.modelGv3.rawValue
+    @AppStorage("toolbar_ai_last_suggestion_model") private var lastSuggestionModelRaw: String = SuggestionModel.modelG.rawValue
+    @State private var showEyePopover = false
+    @State private var showGhostPopover = false
+    @State private var showRhymeGroupsPopover = false
     
     // Computed properties for live activity indicators
     private var wordCount: Int {
@@ -132,7 +168,231 @@ struct DynamicIslandToolbarView: View {
     private var isAILoading: Bool {
         rapSuggestionEngine.isLoading
     }
+
+    private var anyEyeHighlightOn: Bool {
+        isRhymeOverlayVisible || setupAndPunchOn || techniqueOverlayOn
+    }
+
+    /// Rhymes, Setup and punch, and Techniques each keep their own on color.
+    /// Setup and punch follows the editor washes: green setup into red punch.
+    private var eyeHighlightInk: AnyShapeStyle {
+        if techniqueOverlayOn {
+            return AnyShapeStyle(
+                LinearGradient(
+                    colors: [
+                        CraftHeatPalette.color(0.40),
+                        CraftHeatPalette.color(0.72),
+                        CraftHeatPalette.color(0.92),
+                    ],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+        }
+        if setupAndPunchOn {
+            return AnyShapeStyle(
+                LinearGradient(
+                    colors: [Color(uiColor: .systemGreen), Color(uiColor: .systemRed)],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+        }
+        if isRhymeOverlayVisible {
+            return AnyShapeStyle(Color(uiColor: RhymeColorPalette.color(at: 0)))
+        }
+        return AnyShapeStyle(toolbarTint)
+    }
+
+    /// Mid blue accents match the gray glass in brightness. Keep the hue and lift it.
+    private var ghostOnInk: Color {
+        let ui = UIColor(Momentum.accent)
+        var hue: CGFloat = 0
+        var saturation: CGFloat = 0
+        var brightness: CGFloat = 0
+        var alpha: CGFloat = 0
+        guard ui.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) else {
+            return Momentum.accent
+        }
+        let blue = hue > 0.45 && hue < 0.75
+        guard blue else { return Momentum.accent }
+        return Color(uiColor: UIColor(hue: hue, saturation: 0.42, brightness: 1, alpha: 1))
+    }
+
+    private var eyeHighlightAccessibilityValue: String {
+        let on = [
+            isRhymeOverlayVisible ? EyeHighlightOption.rhymes.label : nil,
+            setupAndPunchOn ? EyeHighlightOption.setupAndPunch.label : nil,
+            techniqueOverlayOn ? EyeHighlightOption.techniques.label : nil
+        ].compactMap { $0 }
+        return on.isEmpty ? "Off" : on.joined(separator: ", ")
+    }
+
+    @ViewBuilder
+    private func eyeOptionRow(_ option: EyeHighlightOption, isOn: Bool, action: @escaping () -> Void) -> some View {
+        Button {
+            action()
+            showEyePopover = false
+        } label: {
+            HStack {
+                Text(option.label)
+                Spacer()
+                if isOn {
+                    Image(systemName: "checkmark").font(.caption)
+                }
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .padding(.vertical, 5)
+    }
     
+    @ViewBuilder
+    private func eyeHighlightButton(font: Font) -> some View {
+        Button {
+            HapticFeedbackManager.shared.lightTap()
+            isEditorFocused = false
+            showEyePopover = true
+            startAutoCollapseTimer()
+        } label: {
+            Image(systemName: anyEyeHighlightOn ? "eye.fill" : "eye")
+                .font(font)
+                .symbolRenderingMode(.monochrome)
+                .foregroundStyle(eyeHighlightInk)
+                .modifier(IslandEyeBlink(active: anyEyeHighlightOn && !reduceMotion))
+                .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Highlighting")
+        .accessibilityHint("One highlight at a time: Rhymes, Setup and punch, or Techniques. Setup and punch can offer breath commas. Tap again to turn off.")
+        .accessibilityValue(eyeHighlightAccessibilityValue)
+        .popover(isPresented: $showEyePopover, arrowEdge: .bottom) {
+            VStack(alignment: .leading, spacing: 2) {
+                eyeOptionRow(
+                    .rhymes,
+                    isOn: isRhymeOverlayVisible && !setupAndPunchOn && !techniqueOverlayOn
+                ) {
+                    onSelectEyeHighlight(.rhymes)
+                }
+                eyeOptionRow(.setupAndPunch, isOn: setupAndPunchOn && !techniqueOverlayOn) {
+                    onSelectEyeHighlight(.setupAndPunch)
+                }
+                eyeOptionRow(.techniques, isOn: techniqueOverlayOn) {
+                    onSelectEyeHighlight(.techniques)
+                }
+                Divider()
+                Button {
+                    HapticFeedbackManager.shared.selection()
+                    showEyePopover = false
+                    showRhymeGroupsPopover = true
+                } label: {
+                    HStack {
+                        Text("Rhyme groups")
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.caption).foregroundStyle(.secondary)
+                    }
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .padding(.vertical, 5)
+            }
+            .padding(12)
+            .frame(width: 210)
+            .presentationCompactAdaptation(.popover)
+        }
+        .popover(isPresented: $showRhymeGroupsPopover, arrowEdge: .bottom) {
+            RhymeGroupListView(
+                groups: rhymeGroups,
+                currentText: currentText
+            )
+            .presentationCompactAdaptation(.popover)
+        }
+    }
+
+    @ViewBuilder
+    private func ghostModeButton(compact: Bool) -> some View {
+        let mode = GhostMode(rawValue: ghostModeRaw) ?? .off
+        let icon = compact ? 24.0 : 22.0
+        let paused = techniqueOverlayOn && mode != .off
+        Button {
+            HapticFeedbackManager.shared.lightTap()
+            isEditorFocused = false
+            showGhostPopover = true
+            startAutoCollapseTimer()
+        } label: {
+            let quiet = mode == .off || paused
+            Image("GhostIcon")
+                .renderingMode(.template)
+                .resizable()
+                .scaledToFit()
+                .frame(width: icon, height: icon)
+                .foregroundStyle(quiet ? toolbarTint : ghostOnInk)
+                .opacity(quiet ? 0.55 : 1)
+                .modifier(IslandGhostWave(active: !quiet && !reduceMotion, size: icon))
+                .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Ghost rhyme mode: \(mode.label)")
+        .accessibilityValue(paused ? "Paused while Techniques is on" : mode.label)
+        .accessibilityHint("Choose end rhymes, end rhymes plus AI, or line completions. Techniques hides the dock.")
+        .popover(isPresented: $showGhostPopover, arrowEdge: .bottom) {
+            VStack(alignment: .leading, spacing: 2) {
+                ForEach(GhostMode.allCases) { item in
+                    Button {
+                        HapticFeedbackManager.shared.selection()
+                        onGhostModeChange(item.rawValue)
+                        showGhostPopover = false
+                    } label: {
+                        HStack {
+                            Text(item.label)
+                            Spacer()
+                            if ghostModeRaw == item.rawValue {
+                                Image(systemName: "checkmark").font(.caption)
+                            }
+                        }
+                        .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                    .padding(.vertical, 5)
+                }
+                Divider()
+                Button { showGhostPricing = true } label: {
+                    Label("Compare costs", systemImage: "dollarsign.circle").font(.footnote)
+                }
+                .buttonStyle(.plain)
+                .padding(.top, 2)
+            }
+            .padding(12)
+            .frame(width: 230)
+            .presentationCompactAdaptation(.popover)
+        }
+    }
+
+    @ViewBuilder
+    private func keyboardToggleButton(font: Font) -> some View {
+        Button {
+            HapticFeedbackManager.shared.lightTap()
+            toggleKeyboard()
+        } label: {
+            VStack(spacing: 1) {
+                Image(systemName: "keyboard")
+                    .font(font)
+                    .modifier(IslandKeyPress(active: isKeyboardVisible && !reduceMotion))
+                Image(systemName: isKeyboardVisible ? "chevron.down" : "chevron.up")
+                    .font(.system(size: 8, weight: .bold))
+            }
+            .symbolRenderingMode(.monochrome)
+            .foregroundStyle(toolbarTint)
+            .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(isKeyboardVisible ? "Hide keyboard" : "Show keyboard")
+        .accessibilityValue(isKeyboardVisible ? "Keyboard is open" : "Keyboard is put away")
+        .accessibilityHint(isKeyboardVisible
+            ? "Puts the keyboard away so you can see more of the page."
+            : "Opens the keyboard so you can keep writing.")
+    }
+
     private func sparkleToolbarSymbolName() -> String { "wand.and.stars" }
     
     /// Shared API-key splash, subscription gate, usage limit, and analytics. Returns whether the caller should proceed.
@@ -170,9 +430,16 @@ struct DynamicIslandToolbarView: View {
     
     private func beginSuggestNextLinesFlow() {
         guard runAISparkleAccessGates() else { return }
-        lastSuggestionModelRaw = SuggestionModel.modelGv3.rawValue
         isShowingRecalled = false
+        lastSuggestionModelRaw = ModelYouWriterPolicy.adoptDefaultSparkleIfNeeded(
+            brain: ArtistBrainStore.shared.brain,
+            currentRaw: lastSuggestionModelRaw
+        )
         showModelGControlSurface = true
+    }
+
+    private func runRemindsMeOfCommand() {
+        showRemindsMeOfPopover = true
     }
     
     // MARK: - Audio Recording
@@ -255,51 +522,36 @@ struct DynamicIslandToolbarView: View {
     
     // MARK: - Body Components (broken down for compiler)
     private var collapsedStateView: some View {
-        enhancedButton(
-            id: "expand",
-            action: {
+        HStack(spacing: 8) {
+            eyeHighlightButton(font: .title2.weight(.bold))
+            ghostModeButton(compact: true)
+
+            Button {
+                plusPulse += 1
                 withAnimation(reduceMotion ? .easeInOut(duration: 0.3) : .spring(response: 0.4, dampingFraction: 0.75)) {
                     isExpanded = true
                     buttonAppearanceDelay = 0.1
                 }
                 HapticFeedbackManager.shared.mediumTap()
-            },
-            label: {
-                collapsedButtonContent
-            },
-            hapticStyle: .medium
-        )
-        // glassEffectID fallback: Using matchedGeometryEffect for fluid island transitions
-        .matchedGeometryEffect(id: "island_main", in: islandNamespace)
-        // Segment 17: Vertical padding for collapsed state to match expanded state
-        .padding(.vertical, ToolbarConstants.verticalPadding) // LOCKED: Consistent vertical padding
-        // Segment 17: LOCKED FOREVER - Toolbar height must never change
-        .frame(height: ToolbarConstants.height) // LOCKED: Exactly 64pt (44 + 10 + 10) - NEVER MODIFY
-        .accessibilityLabel("Expand toolbar")
-        .accessibilityHint("Double tap to expand toolbar with writing tools")
-    }
-    
-    private var collapsedButtonContent: some View {
-        ZStack {
-            // More transparent glassmorphic disc so the coral background runs through.
-            Circle()
-                .fill(.ultraThinMaterial)
-                .overlay(
-                    Circle().strokeBorder(toolbarTint.opacity(0.35), lineWidth: 0.9)
-                )
-                // iOS 26-style moving glint that rides the edge with device tilt.
-                .overlay(GyroSpecularEdge(shape: Circle(), lineWidth: 1.4, tint: toolbarTint, intensity: 1.0))
-                .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized 44pt height
-
-            // Opaque, vivid blue plus so it pops.
-            Image(systemName: "plus")
-                .font(.title2.weight(.bold))
-                .foregroundStyle(toolbarTint.opacity(1.0))
-
-            if isAILoading {
-                aiLoadingIndicator
+            } label: {
+                Image(systemName: "plus")
+                    .font(.title2.weight(.bold))
+                    .symbolRenderingMode(.monochrome)
+                    .foregroundStyle(toolbarTint)
+                    .symbolEffect(.bounce, value: plusPulse)
+                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
             }
+            .accessibilityLabel("Expand toolbar")
+            .accessibilityHint("Shows the wand, attach, nouns, and the rest of the island")
+
+            keyboardToggleButton(font: .title2.weight(.bold))
         }
+        .padding(.horizontal, 10)
+        .frame(height: ToolbarConstants.contentHeight)
+        .momentumLiquidGlass(in: Capsule())
+        .matchedGeometryEffect(id: "island_main", in: islandNamespace)
+        .padding(.vertical, ToolbarConstants.verticalPadding)
+        .frame(height: ToolbarConstants.height)
     }
     
     private var activityIndicatorsView: some View {
@@ -360,7 +612,7 @@ struct DynamicIslandToolbarView: View {
         let compactWidth = geometry.size.width < 340
         let buttonSpacing: CGFloat = compactWidth ? 5 : 8
         let horizontalInset: CGFloat = compactWidth ? 8 : 12
-        
+
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center, spacing: buttonSpacing) {
             enhancedButton(
@@ -384,13 +636,19 @@ struct DynamicIslandToolbarView: View {
                         // Always visible - no opacity animation for close button
                         .opacity(1.0)
 
+                        EditorClipboardButton(style: .island)
+                            .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+
                         Menu {
                             Button {
                                 HapticFeedbackManager.shared.selection()
                                 isExpanded = false
-                                showAudioImporter = true
+                                Task { @MainActor in
+                                    try? await Task.sleep(nanoseconds: 350_000_000)
+                                    showAudioImporter = true
+                                }
                             } label: {
-                                Label("Import Audio", systemImage: "waveform")
+                                Label("Attach audio", systemImage: "paperclip")
                             }
                             
                             Button {
@@ -408,77 +666,115 @@ struct DynamicIslandToolbarView: View {
                             } label: {
                                 Label("Record Audio", systemImage: "waveform")
                             }
+
+                            Divider()
+
+                            Button {
+                                HapticFeedbackManager.shared.selection()
+                                isExpanded = false
+                                showBeatVocalSheet = true
+                            } label: {
+                                Label("Make a beat or vocal", systemImage: "music.note")
+                            }
                         } label: {
                             Image(systemName: "paperclip")
                                 .font(.headline)
+                                .symbolRenderingMode(.monochrome)
+                                .foregroundStyle(toolbarTint)
                                 .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
                                 .scaleEffect((buttonPressStates["paperclip"] ?? false) ? 0.92 : 1.0)
                                 .animation(.spring(response: 0.3, dampingFraction: 0.6), value: buttonPressStates["paperclip"])
                         }
                         .accessibilityLabel("Attach menu")
-                        .accessibilityHint("Double tap to open attachment options")
-                        .simultaneousGesture(
-                            DragGesture(minimumDistance: 0)
-                                .onChanged { _ in
-                                    if buttonPressStates["paperclip"] != true {
-                                        buttonPressStates["paperclip"] = true
-                                    }
-                                }
-                                .onEnded { _ in
-                                    HapticFeedbackManager.shared.lightTap()
-                                    buttonPressStates["paperclip"] = false
-                                }
-                        )
+                        .accessibilityHint("Attach an mp3, m4a, wav, or aiff, import a note, record audio, or make a beat or vocal")
+
+                        Button {
+                            HapticFeedbackManager.shared.selection()
+                            onShowNounBank()
+                        } label: {
+                            Text("Nouns")
+                                .font(.system(size: 12, weight: .bold, design: .rounded))
+                                .foregroundStyle(toolbarTint)
+                                .padding(.horizontal, 10)
+                                .padding(.vertical, 6)
+                                .background(
+                                    Capsule().fill(Color.primary.opacity(0.10))
+                                )
+                        }
+                        .accessibilityLabel("Nouns")
+                        .accessibilityHint("Browse noun chips and the catalog lines that mention them")
+                        .buttonStyle(.plain)
 
                         Menu {
+                            if canRecallLastSuggestions {
+                                Button {
+                                    recallLastSuggestions()
+                                } label: {
+                                    Label("Open Last Suggestions", systemImage: "clock.arrow.circlepath")
+                                }
+                            }
+
                             Button {
                                 beginSuggestNextLinesFlow()
                             } label: {
-                                Label("Suggest Next Lines", systemImage: "wand.and.stars")
+                                Label("Suggest next lines", systemImage: "wand.and.stars")
                             }
 
                             Button {
-                                HapticFeedbackManager.shared.selection()
-                                isEditorFocused = false
-                                isShowingRecalled = true
-                                showRapSuggestions = true
+                                onSamePocketNewNouns()
                             } label: {
-                                Label("Open Last Suggestions", systemImage: "clock.arrow.circlepath")
+                                Label("Same pocket, new nouns", systemImage: "arrow.triangle.2.circlepath")
                             }
-                            .disabled(!NoteSuggestionSessionStore.hasSession(on: item) && !rapSuggestionEngine.hasRecallableSuggestions)
-                            
-                            Divider()
-                            
-                            // Generate Lyrics from Flow (above A&R Critique)
-                            if FeatureGate.canAccess(.generateLyricsFromFlow) {
+
+                            if !canRecallLastSuggestions {
                                 Button {
                                     HapticFeedbackManager.shared.selection()
-                                    showGenerateLyricsFromFlowSheet = true
+                                    isEditorFocused = false
+                                    isShowingRecalled = true
+                                    showRapSuggestions = true
                                 } label: {
-                                    Label("Generate Lyrics from Flow", systemImage: "waveform.badge.plus")
+                                    Label("Open Last Suggestions", systemImage: "clock.arrow.circlepath")
                                 }
-                                .disabled(item.audioPath == nil || (item.audioPath?.isEmpty ?? true))
+                                .disabled(true)
                             }
-                            
-                            // Phase 4: Advanced AI Features (Pro tier and above)
-                            if FeatureGate.canAccess(.styleTransfer) || FeatureGate.canAccess(.themeExpansion) {
-                                Divider()
-                                
-                                if FeatureGate.canAccess(.styleTransfer) {
-                                    Button {
-                                        showARCritiqueSheet = true
-                                    } label: {
-                                        Label("Critic", systemImage: "text.bubble")
-                                    }
+
+                            Divider()
+
+                            Button {
+                                HapticFeedbackManager.shared.selection()
+                                if hasAudioForFlow {
+                                    showGenerateLyricsFromFlowSheet = true
+                                } else {
+                                    showNeedAudioForFlow = true
                                 }
-                                
-                                if FeatureGate.canAccess(.themeExpansion) {
-                                    Button {
-                                        showThemeExpansionSheet = true
-                                    } label: {
-                                        Label("Theme Expansion", systemImage: "arrow.triangle.branch")
-                                    }
-                                }
+                            } label: {
+                                Label("Generate Lyrics from Flow", systemImage: "waveform.badge.plus")
+                            }
+
+                            Button {
+                                showStyleTransferSheet = true
+                            } label: {
+                                Label("Rewrite in an artist’s style", systemImage: "paintbrush")
+                            }
+
+                            Button {
+                                showARCritiqueSheet = true
+                            } label: {
+                                Label("Critic", systemImage: "text.bubble")
+                            }
+
+                            Button {
+                                showThemeExpansionSheet = true
+                            } label: {
+                                Label("Theme Expansion", systemImage: "arrow.triangle.branch")
+                            }
+
+                            Divider()
+
+                            Button {
+                                showModelPreferences = true
+                            } label: {
+                                Label("Model Preferences", systemImage: "slider.horizontal.3")
                             }
                         } label: {
                             ZStack {
@@ -506,7 +802,7 @@ struct DynamicIslandToolbarView: View {
                                 
                                 Image(systemName: sparkleToolbarSymbolName())
                                     .font(.headline)
-                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
+                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
                                     .foregroundStyle(toolbarTint)
                             }
                             .overlay(alignment: .topTrailing) {
@@ -524,13 +820,9 @@ struct DynamicIslandToolbarView: View {
                         } primaryAction: {
                             beginSuggestNextLinesFlow()
                         }
-                        // NOTE: No press-tracking DragGesture here — a simultaneous
-                        // DragGesture(minimumDistance: 0) swallows the tap and forces the
-                        // Menu into long-press mode. Leaving it off lets `primaryAction`
-                        // fire on a single tap.
                         .disabled(rapSuggestionEngine.isLoading)
-                        .accessibilityLabel("Suggest next lines with Model G v3")
-                        .accessibilityHint("Tap once to suggest next lines. Open the menu for more actions or last suggestions.")
+                        .accessibilityLabel("Suggest next lines with Model G")
+                        .accessibilityHint("Tap once to generate. Open the menu for last suggestions, flow lyrics, style, critic, or Model Preferences.")
                         .onChange(of: rapSuggestionEngine.isLoading) { oldValue, newValue in
                             if newValue {
                                 // Start rotating animation
@@ -559,124 +851,75 @@ struct DynamicIslandToolbarView: View {
                             }
                         }
 
-                        enhancedButton(
-                            id: "eyeToggle",
-                            action: {
-                                withAnimation(reduceMotion ? .easeInOut(duration: 0.2) : .spring(response: 0.3, dampingFraction: 0.7)) {
-                                isRhymeOverlayVisible.toggle()
-                            }
-                                startAutoCollapseTimer()
-                            },
-                            label: {
-                                Image(systemName: isRhymeOverlayVisible ? "eye.fill" : "eye")
-                                    .font(.headline)
-                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
-                                    .foregroundStyle(toolbarTint)
-                            },
-                            hapticStyle: .light
-                        )
-                        .accessibilityLabel(isRhymeOverlayVisible ? "Hide rhyme overlay" : "Show rhyme overlay")
-                        .accessibilityHint("Double tap to toggle visual rhyme highlighting")
+                        eyeHighlightButton(font: .headline)
+                        ghostModeButton(compact: false)
 
-                        enhancedButton(
-                            id: "magnifyingGlass",
-                            action: {
-                            // Dismiss keyboard when opening popover
-                                isEditorFocused = false
-                                showRhymeGroupsPopover = true
-                                startAutoCollapseTimer()
-                            },
-                            label: {
-                                Image(systemName: "text.magnifyingglass")
-                                    .font(.headline)
-                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
-                            },
-                            hapticStyle: .light
-                        )
+                        Button {
+                            HapticFeedbackManager.shared.lightTap()
+                            isEditorFocused = false
+                            showRhymeGroupsPopover = true
+                            startAutoCollapseTimer()
+                        } label: {
+                            Image(systemName: "text.magnifyingglass")
+                                .font(.headline)
+                                .symbolRenderingMode(.monochrome)
+                                .foregroundStyle(
+                                    showRhymeGroupsPopover
+                                        ? AnyShapeStyle(Color(uiColor: RhymeColorPalette.color(at: 4)))
+                                        : AnyShapeStyle(toolbarTint)
+                                )
+                                .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+                        }
+                        .buttonStyle(.plain)
                         .accessibilityLabel("Rhyme groups")
-                        .accessibilityHint("Double tap to view all rhyme groups in your text")
-                        .popover(isPresented: $showRhymeGroupsPopover, arrowEdge: .bottom) {
-                            RhymeGroupListView(
-                                groups: rhymeGroups,
-                                currentText: currentText
-                            )
-                            .presentationCompactAdaptation(.popover)
-                        }
-                        .onChange(of: showRhymeGroupsPopover) { _, isPresented in
-                            // Ensure keyboard is dismissed when popover opens
-                            if isPresented {
-                                isEditorFocused = false
-                            }
-                        }
+                        .accessibilityHint("Shows each rhyme family and its color")
 
-                        // Ghost Bar mode picker
+                        Button {
+                            barHitsOpensFromHold.toggle()
+                            HapticFeedbackManager.shared.lightTap()
+                        } label: {
+                            Image(systemName: barHitsOpensFromHold ? "hand.tap.fill" : "hand.raised.slash")
+                                .font(.headline)
+                                .symbolRenderingMode(.monochrome)
+                                .foregroundStyle(
+                                    barHitsOpensFromHold
+                                        ? AnyShapeStyle(Color(uiColor: .systemGreen))
+                                        : AnyShapeStyle(toolbarTint)
+                                )
+                                .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel(
+                            barHitsOpensFromHold
+                                ? "Bar Hits opens when you hold"
+                                : "Bar Hits stays closed until you tap it"
+                        )
+                        .accessibilityHint("Turns automatic Bar Hits on or off. The Bar Hits button beside this still opens it. On by default.")
+                        .accessibilityAddTraits(barHitsOpensFromHold ? .isSelected : [])
+
                         enhancedButton(
-                            id: "ghost",
+                            id: "remindsMeOf",
                             action: {
                                 isEditorFocused = false
-                                showGhostPopover = true
+                                runRemindsMeOfCommand()
                                 startAutoCollapseTimer()
                             },
                             label: {
-                                Image("GhostIcon")
-                                    .renderingMode(.template)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 21, height: 21)
-                                    .opacity(ghostMode == .off ? 0.5 : 1.0)
+                                Image(systemName: "command")
+                                    .font(.headline)
+                                    .symbolRenderingMode(.monochrome)
+                                    .foregroundStyle(Color(uiColor: .systemGreen))
                                     .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
                             },
                             hapticStyle: .light
                         )
-                        .accessibilityLabel("Ghost rhyme mode: \(ghostMode.label)")
-                        .accessibilityHint("Double tap to change Ghost Bar mode")
-                        .popover(isPresented: $showGhostPopover, arrowEdge: .bottom) {
-                            VStack(alignment: .leading, spacing: 2) {
-                                ForEach(GhostMode.allCases) { m in
-                                    Button { ghostMode = m } label: {
-                                        HStack {
-                                            Text(m.label)
-                                            Spacer()
-                                            if ghostMode == m {
-                                                Image(systemName: "checkmark").font(.caption)
-                                            }
-                                        }
-                                        .contentShape(Rectangle())
-                                    }
-                                    .buttonStyle(.plain)
-                                    .padding(.vertical, 5)
-                                }
-                                Divider()
-                                Button { showGhostPricing = true } label: {
-                                    Label("Compare costs", systemImage: "dollarsign.circle").font(.footnote)
-                                }.buttonStyle(.plain).padding(.top, 2)
-                            }
-                            .padding(12)
-                            .frame(width: 170)
-                            .presentationCompactAdaptation(.popover)
-                            .sheet(isPresented: $showGhostPricing) {
-                                ProviderPricingView().presentationDetents([.medium])
-                            }
-                        }
+                        .accessibilityLabel(RemindsMeOfCopy.accessibility)
+                        .accessibilityHint(RemindsMeOfCopy.hint)
 
-                        enhancedButton(
-                            id: "keyboard",
-                            action: {
-                            isEditorFocused.toggle()
-                                startAutoCollapseTimer()
-                            },
-                            label: {
-                                Image(systemName: isEditorFocused ? "keyboard.chevron.compact.down" : "keyboard")
-                                    .font(.headline)
-                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight) // LOCKED: Standardized button height
-                            },
-                            hapticStyle: .light
-                        )
-            .accessibilityLabel(isEditorFocused ? "Dismiss keyboard" : "Show keyboard")
-            .accessibilityHint("Double tap to toggle keyboard")
+                        keyboardToggleButton(font: .headline)
 
                         // Font-size control — popover with − / value / + steppers driving
-                        // the global writing-area font size (Page 2). Placed after keyboard.
+                        // the global writing-area font size (Page 2).
                         enhancedButton(
                             id: "fontSize",
                             action: {
@@ -687,41 +930,75 @@ struct DynamicIslandToolbarView: View {
                             label: {
                                 Image(systemName: "textformat.size")
                                     .font(.headline)
+                                    .symbolRenderingMode(.monochrome)
+                                    .foregroundStyle(toolbarTint)
                                     .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
                             },
                             hapticStyle: .light
                         )
                         .accessibilityLabel("Text size")
-                        .accessibilityHint("Double tap to adjust the writing font size")
+                        .accessibilityHint("Opens a stepper to make the lyrics larger or smaller.")
                         .popover(isPresented: $showFontSizePopover, arrowEdge: .bottom) {
                             FontSizeStepperPopover(fontSize: $writingFontSize)
                                 .presentationCompactAdaptation(.popover)
                         }
-            
+                        .onChange(of: showFontSizePopover) { _, isPresented in
+                            if isPresented {
+                                isEditorFocused = false
+                            }
+                        }
             }
-            .foregroundStyle(toolbarTint)
-            // Segment 17: Move padding to inner HStack for static verticality
-            .padding(.vertical, ToolbarConstants.verticalPadding) // LOCKED: Consistent vertical padding (10 top + 10 bottom)
-            // Keep controls inside the tappable island width on compact screens
+            // Keep controls inside the tappable island width on compact screens.
+            // Vertical padding sits outside the glass, same as the collapsed pill.
             .padding(.horizontal, horizontalInset)
-            .frame(height: ToolbarConstants.height) // LOCKED: Exactly 64pt (44 + 10 + 10) - NEVER MODIFY
+            .frame(height: ToolbarConstants.contentHeight)
         }
-        .scrollDisabled(!compactWidth)
-        // iPhone (compact) keeps the buttons leading so they scroll from the left;
-        // iPad (regular) centers them in the wide island instead of pooling left.
+        .scrollIndicators(.hidden)
+        .contentMargins(0, for: .scrollContent)
+        // Always allow a swipe so later dock buttons (Ghost, Hide keyboard, Text size)
+        // are never clipped off the island.
         .frame(maxWidth: .infinity, alignment: compactWidth ? .leading : .center)
-        .frame(height: ToolbarConstants.height) // LOCKED: Exactly 64pt (44 + 10 + 10) - NEVER MODIFY
+        .frame(height: ToolbarConstants.contentHeight)
+    }
+
+    private var isKeyboardVisible: Bool {
+        keyboardHeight > 40
+    }
+
+    private func toggleKeyboard() {
+        let editor = EditorWritingMetrics.activeTextView
+        if keyboardHeight > 40 {
+            isEditorFocused = false
+            editor?.resignFirstResponder()
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        } else {
+            isEditorFocused = true
+            DispatchQueue.main.async {
+                guard let editor = EditorWritingMetrics.activeTextView else { return }
+                if editor.isFirstResponder {
+                    editor.resignFirstResponder()
+                    DispatchQueue.main.async {
+                        self.isEditorFocused = true
+                        EditorWritingMetrics.activeTextView?.becomeFirstResponder()
+                    }
+                } else {
+                    editor.becomeFirstResponder()
+                }
+            }
+        }
+        startAutoCollapseTimer()
     }
     
     private func expandedStateView(geometry: GeometryProxy) -> some View {
         expandedStateButtons(geometry: geometry)
-            // Keep full available width so right-side buttons remain tappable on compact devices
+            // Keep full available width so right-side buttons remain tappable on compact devices.
+            // Glass matches the collapsed capsule: 44pt, with the 10pt pad outside it.
             .frame(maxWidth: .infinity, alignment: .leading)
-            // REMOVED: Secondary background - only outer container should have glass effect
-            // This prevents "double island" effect - single unified glass container
-            // glassEffectID fallback: Using matchedGeometryEffect for fluid island transitions
+            .frame(height: ToolbarConstants.contentHeight)
+            .momentumLiquidGlass(in: Capsule())
             .matchedGeometryEffect(id: "island_main", in: islandNamespace)
-            // REMOVED: Drag gesture - swipe away toolbar functionality removed
+            .padding(.vertical, ToolbarConstants.verticalPadding)
+            .frame(height: ToolbarConstants.height)
             .scaleEffect(isExpanded ? 1.0 : 0.8)
             .opacity(isExpanded ? 1.0 : 0)
             .animation(
@@ -755,14 +1032,6 @@ struct DynamicIslandToolbarView: View {
                     buttonAppearanceDelay = 0
                 }
             }
-            .onChange(of: keyboardHeight) { oldValue, newValue in
-                if newValue > 0 && !isExpanded {
-                    withAnimation(reduceMotion ? .easeInOut(duration: 0.3) : .spring(response: 0.4, dampingFraction: 0.75)) {
-                        isExpanded = true
-                    }
-                    HapticFeedbackManager.shared.lightTap()
-                }
-            }
             .onChange(of: isAILoading) { oldValue, newValue in
                 if newValue {
                     cancelAutoCollapseTimer()
@@ -782,22 +1051,6 @@ struct DynamicIslandToolbarView: View {
                 }
             )
         }
-        .background {
-            if isExpanded {
-                SoftBlueGlassBackground(
-                    shape: RoundedRectangle(cornerRadius: 30, style: .continuous),
-                    colorScheme: colorScheme,
-                    darkeningMultiplier: 1.15,
-                    outlineLineWidth: 0.9
-                )
-            }
-        }
-        .clipShape(
-            RoundedRectangle(
-                cornerRadius: isExpanded ? 30 : 0,
-                style: .continuous
-            )
-        )
         .padding(.horizontal, 16) // Outer margin from device screen edges
         .padding(.bottom, ToolbarConstants.keyboardSpacing) // LOCKED FOREVER: Space between toolbar and keyboard - NEVER MODIFY
         // Intrinsic Surface Calibration: Prevent keyboard from squashing the toolbar
@@ -932,10 +1185,50 @@ struct DynamicIslandToolbarView: View {
         toolbarContent
         .chromeClamp()   // toolbar height is LOCKED at 64pt — cap Dynamic Type so contents fit the locked geometry
         .overlay(aiSparkleSplashOverlay)
+        .sheet(isPresented: $showGhostPricing) {
+            ProviderPricingView().presentationDetents([.medium])
+        }
         .onChange(of: showAISparkleSplash) { _, isShowing in
             if isShowing {
                 withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
                     // Animation handled by transition
+                }
+            }
+        }
+        .sheet(isPresented: $showRemindsMeOfPopover, onDismiss: {
+            remindsMeOfService.cancelHeldLookup()
+        }) {
+            RemindsMeOfListView(
+                service: remindsMeOfService,
+                text: currentText,
+                bpm: item.bpm,
+                syllableMin: item.syllableMin,
+                syllableMax: item.syllableMax,
+                onGeniusKeySaved: {
+                    onEnsureRhymes()
+                    Task { await remindsMeOfService.scanVerse(text: currentText) }
+                },
+                onSearchGenius: {
+                    onEnsureRhymes()
+                },
+                onClose: {
+                    remindsMeOfService.cancelHeldLookup()
+                    showRemindsMeOfPopover = false
+                }
+            )
+            .presentationDetents([.medium, .large], selection: $remindsMeOfDetent)
+            .presentationDragIndicator(.visible)
+            .presentationContentInteraction(.automatic)
+            .interactiveDismissDisabled(false)
+            .presentationCompactAdaptation(.sheet)
+            .presentationBackground(Momentum.surfaceElevated)
+        }
+        .onChange(of: showRemindsMeOfPopover) { _, isPresented in
+            if isPresented {
+                var transaction = Transaction()
+                transaction.disablesAnimations = true
+                withTransaction(transaction) {
+                    isEditorFocused = false
                 }
             }
         }
@@ -1016,6 +1309,44 @@ struct DynamicIslandToolbarView: View {
                 )
             }
         }
+        .sheet(isPresented: $showStyleTransferSheet) {
+            StyleTransferSheet(
+                currentText: currentText,
+                onSelect: { suggestion in
+                    insertRapSuggestion(suggestion, true)
+                },
+                onDismiss: {
+                    showStyleTransferSheet = false
+                }
+            )
+        }
+        .sheet(isPresented: $showModelPreferences) {
+            ModelPreferencesView()
+        }
+        .sheet(isPresented: $showBeatVocalSheet) {
+            BeatAndVocalSheet(
+                lyrics: currentText,
+                noteTitle: item.title
+            )
+        }
+        .confirmationDialog(
+            "Record or attach audio first",
+            isPresented: $showNeedAudioForFlow,
+            titleVisibility: .visible
+        ) {
+            Button("Record audio") {
+                showAudioRecorder = true
+            }
+            Button("Attach audio") {
+                Task { @MainActor in
+                    try? await Task.sleep(nanoseconds: 350_000_000)
+                    showAudioImporter = true
+                }
+            }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("Generate Lyrics from Flow matches a beat or vocal on this note. Record or attach audio, then try again.")
+        }
         // Phase 5: Export Sheet
         .sheet(isPresented: $showExportSheet) {
             if FeatureGate.canAccess(.exportPDF) || FeatureGate.canAccess(.exportWord) {
@@ -1045,3 +1376,61 @@ struct DynamicIslandToolbarView: View {
         }
     }
 }
+
+/// One tap opens cut, copy, paste, and selection. The menu is built when it
+/// opens, so a pasteboard read never runs on each keystroke.
+struct EditorClipboardButton: UIViewRepresentable {
+    enum Style {
+        case dock
+        case island
+    }
+
+    var style: Style
+
+    func makeUIView(context: Context) -> UIButton {
+        let button = UIButton(type: .system)
+        button.showsMenuAsPrimaryAction = true
+        button.menu = UIMenu(children: [
+            UIDeferredMenuElement.uncached { completion in
+                completion(EditorClipboard.menuElements())
+            }
+        ])
+        apply(to: button)
+        return button
+    }
+
+    func updateUIView(_ button: UIButton, context: Context) {
+        apply(to: button)
+    }
+
+    func sizeThatFits(_ proposal: ProposedViewSize, uiView: UIButton, context: Context) -> CGSize? {
+        CGSize(width: 44, height: 44)
+    }
+
+    private func apply(to button: UIButton) {
+        let weight: UIImage.SymbolWeight = style == .dock ? .bold : .semibold
+        button.setImage(UIImage(systemName: "doc.on.clipboard"), for: .normal)
+        button.setPreferredSymbolConfiguration(
+            UIImage.SymbolConfiguration(pointSize: 17, weight: weight),
+            forImageIn: .normal
+        )
+        button.tintColor = UIColor(Momentum.chromeIcon)
+        button.backgroundColor = .clear
+        button.accessibilityLabel = "Edit lyrics"
+        button.accessibilityHint = "Cut, copy, or paste. Select a word, a line, or all the lyrics."
+        button.accessibilityIdentifier = style == .dock ? "note-clipboard-dock" : "note-clipboard"
+    }
+}
+
+/// Circle at the leading edge of the bottom island. Hidden while that island is open.
+struct NoteClipboardDockButton: View {
+    var body: some View {
+        EditorClipboardButton(style: .dock)
+            .frame(width: 44, height: 44)
+            .momentumLiquidGlass(in: Circle())
+            .accessibilityIdentifier("note-clipboard-dock")
+            .accessibilityLabel("Edit lyrics")
+            .accessibilityHint("Cut, copy, or paste. Select a word, a line, or all the lyrics.")
+    }
+}
+

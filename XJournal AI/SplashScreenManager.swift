@@ -81,11 +81,9 @@ class SplashScreenManager: ObservableObject {
         let buttonSplashes: [SplashScreenID] = [
             .toolbarPaperclip,
             .toolbarAISparkle,
-            .toolbarUndoRedo,
             .toolbarEyeToggle,
-            .toolbarMagnifyingGlass,
             .toolbarGhost,
-            .toolbarDiagnostics
+            .toolbarMagnifyingGlass,
         ]
         
         for splashID in buttonSplashes {
@@ -103,32 +101,7 @@ class SplashScreenManager: ObservableObject {
 /// Global accessor function to check if onboarding has been completed
 /// This allows The_Final_Journal_AIApp.swift to access hasCompletedOnboarding without direct property access
 func hasCompletedOnboarding() -> Bool {
-    // #region agent log
-    let result = SplashScreenManager.shared.hasCompletedOnboarding
-    let logData: [String: Any] = [
-        "location": "SplashScreenManager.swift:hasCompletedOnboarding",
-        "message": "hasCompletedOnboarding wrapper called",
-        "data": ["result": result],
-        "timestamp": Date().timeIntervalSince1970 * 1000,
-        "sessionId": "debug-session",
-        "runId": "run1",
-        "hypothesisId": "B"
-    ]
-    if let jsonData = try? JSONSerialization.data(withJSONObject: logData),
-       let jsonString = String(data: jsonData, encoding: .utf8) {
-        let logPath = "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log"
-        if let fileHandle = FileHandle(forWritingAtPath: logPath) {
-            fileHandle.seekToEndOfFile()
-            fileHandle.write(jsonString.data(using: .utf8)!)
-            fileHandle.write("\n".data(using: .utf8)!)
-            fileHandle.closeFile()
-        } else {
-            try? jsonString.write(toFile: logPath, atomically: true, encoding: .utf8)
-        }
-    }
-    // #endregion
-    
-    return result
+    SplashScreenManager.shared.hasCompletedOnboarding
 }
 
 // MARK: - Splash Screen IDs

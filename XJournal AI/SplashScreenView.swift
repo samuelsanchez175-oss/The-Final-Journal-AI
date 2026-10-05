@@ -198,14 +198,14 @@ struct HeroSplashView: View {
                 .opacity(showContent ? 1.0 : 0.0)
                 
                 // App Name
-                Text("The Final Journal AI")
+                Text(Momentum.appName)
                     .font(.title.weight(.bold))
                     .foregroundStyle(.primary)
                     .opacity(showContent ? 1.0 : 0.0)
                 
                 // Description
                 VStack(spacing: 16) {
-                    Text("Your intelligent writing companion for rap lyrics and journaling")
+                    Text("Write rap to the beat.")
                         .font(.title3)
                         .foregroundStyle(Momentum.contentSecondary)
                         .multilineTextAlignment(.center)
@@ -215,7 +215,7 @@ struct HeroSplashView: View {
                         FeatureRow(icon: "sparkles", text: "AI-powered lyric suggestions")
                         FeatureRow(icon: "text.magnifyingglass", text: "Real-time rhyme analysis")
                         FeatureRow(icon: "waveform", text: "Audio recording & transcription")
-                        FeatureRow(icon: "doc.text", text: "Smart journaling tools")
+                        FeatureRow(icon: "doc.text", text: "Notes, beats, and verses in one place")
                     }
                     .padding(.top, 8)
                 }

@@ -6,27 +6,27 @@ import Foundation
 
 extension Theme {
     /// Short line explaining what selecting this theme will steer expansion toward.
-    var selectionHint: String {
+    nonisolated var selectionHint: String {
         ThemeCatalog.hint(for: id) ?? contextDescription
     }
 
     /// User-facing tags (not generic status/survival placeholders).
-    var categoryTags: [String] {
+    nonisolated var categoryTags: [String] {
         ThemeCatalog.tags(for: id)
     }
 
     /// Keywords and jargon used to auto-detect this theme in lyrics.
-    var matchKeywords: [String] {
+    nonisolated var matchKeywords: [String] {
         ThemeCatalog.keywords(for: id)
     }
 
     /// Simplified tone bucket for filter pills.
-    var toneCategory: String {
+    nonisolated var toneCategory: String {
         ThemeCatalog.toneCategory(for: emotionalTone)
     }
 }
 
-enum ThemeCatalog {
+nonisolated enum ThemeCatalog: Sendable {
     static let all: [Theme] = entries
 
     static func theme(id: String) -> Theme? {
@@ -61,7 +61,7 @@ enum ThemeCatalog {
 
     // MARK: - Keyword matching
 
-    struct MatchResult: Identifiable {
+    struct MatchResult: Identifiable, Sendable {
         let id: String
         let theme: Theme
         let score: Int

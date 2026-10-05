@@ -24,9 +24,17 @@ struct JournalListView: View {
     @Binding var isOnPage1: Bool
     @Binding var isSelectionMode: Bool
     @Binding var selectedItems: Set<PersistentIdentifier>
+    @Binding var selectedNoteID: PersistentIdentifier?
+
+    private var listSelection: Binding<PersistentIdentifier?> {
+        Binding(
+            get: { isSelectionMode ? nil : selectedNoteID },
+            set: { if !isSelectionMode { selectedNoteID = $0 } }
+        )
+    }
 
     var body: some View {
-        List {
+        List(selection: listSelection) {
             ForEach(items) { item in
                 JournalRowView(
                     item: item,
@@ -34,6 +42,7 @@ struct JournalListView: View {
                     isSelectionMode: $isSelectionMode,
                     selectedItems: $selectedItems
                 )
+                .tag(item.persistentModelID)
                 .listRowBackground(Color.clear)
                 .listRowInsets(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
                 .listRowSeparator(.hidden, edges: .all)
@@ -58,14 +67,7 @@ struct JournalRowView: View {
     @Binding var isOnPage1: Bool
     @Binding var isSelectionMode: Bool
     @Binding var selectedItems: Set<PersistentIdentifier>
-    
-    // Cache computed properties to avoid recalculation on every view update
-    @State private var cachedTitle: String?
-    @State private var cachedPreview: String?
-    @State private var cachedDate: String?
-    @State private var lastItemId: PersistentIdentifier?
-    
-    // Static date formatter for better performance
+
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
@@ -98,39 +100,11 @@ struct JournalRowView: View {
                 }
                 .buttonStyle(.plain)
             } else {
-                // Normal mode - NavigationLink
-                NavigationLink {
-                    NoteEditorView(item: item)
-                        .onAppear { isOnPage1 = false }
-                        .onDisappear { isOnPage1 = true }
-                } label: {
-                    rowContent
-                        .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
+                rowContent
+                    .contentShape(Rectangle())
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .onAppear {
-            // Update cache when view appears if item changed
-            updateCacheIfNeeded()
-        }
-        .onChange(of: item.id) { _, _ in
-            // Update cache when item ID changes
-            updateCacheIfNeeded()
-        }
-        .onChange(of: item.title) { _, _ in
-            // Update cache when title changes
-            updateCacheIfNeeded()
-        }
-        .onChange(of: item.body) { _, _ in
-            // Update cache when body changes (affects preview)
-            updateCacheIfNeeded()
-        }
-        .onChange(of: item.modifiedDate) { _, _ in
-            // Update cache when the last-modified date changes
-            updateCacheIfNeeded()
-        }
     }
     
     /// Shared row content — identical structure for every note so all rows share
@@ -179,11 +153,15 @@ struct JournalRowView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    /// Palette-tinted metadata chips (BPM · key/scale · folder · link), shown to the
+    /// Palette-tinted metadata chips (audio · BPM · key/scale · folder · link), shown to the
     /// right of the date. Renders only the fields this note actually has.
     @ViewBuilder
     private var metaChips: some View {
         HStack(spacing: 6) {
+            if let path = item.audioPath, !path.trimmingCharacters(in: .whitespaces).isEmpty {
+                metaChip("Audio", systemImage: "waveform")
+                    .accessibilityLabel("Has audio attached")
+            }
             if let bpm = item.bpm {
                 metaChip("\(bpm)", systemImage: "metronome")
             }
@@ -235,45 +213,16 @@ struct JournalRowView: View {
         )
     }
 
-    /// Update cached values if item has changed
-    private func updateCacheIfNeeded() {
-        let newTitle = item.title.isEmpty ? "Untitled Note" : item.title
-        let newPreview = item.body
-        let newDate = Self.dateFormatter.string(from: item.modifiedDate ?? item.timestamp)
-
-        guard lastItemId != item.id
-                || cachedTitle != newTitle
-                || cachedPreview != newPreview
-                || cachedDate != newDate else { return }
-
-        cachedTitle = newTitle
-        cachedPreview = newPreview
-        cachedDate = newDate
-        lastItemId = item.id
-    }
-
     private var noteTitle: String {
-        if let cached = cachedTitle, lastItemId == item.id {
-            return cached
-        }
-        // Fallback if cache not yet set
-        return item.title.isEmpty ? "Untitled Note" : item.title
+        item.title.isEmpty ? "Untitled Note" : item.title
     }
 
     private var notePreview: String {
-        if let cached = cachedPreview, lastItemId == item.id {
-            return cached
-        }
-        // Fallback if cache not yet set
-        return item.body
+        item.preview
     }
 
-    /// Last-modified (falls back to created) date/time, formatted short.
     private var lastModifiedText: String {
-        if let cached = cachedDate, lastItemId == item.id {
-            return cached
-        }
-        return Self.dateFormatter.string(from: item.modifiedDate ?? item.timestamp)
+        Self.dateFormatter.string(from: item.modifiedDate ?? item.timestamp)
     }
 }
 
@@ -282,7 +231,8 @@ struct JournalEmptyStateView: View {
 
     var body: some View {
         ZStack {
-            AtmosphereGlow()
+            Momentum.surface
+                .ignoresSafeArea()
             VStack(spacing: 22) {
                 // HeroGraphic — thin-border concentric line-art circles (Momentum signature)
                 ZStack {

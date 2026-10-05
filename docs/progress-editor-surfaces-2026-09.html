@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>XJournal — editor surfaces progress</title>
+<style>
+  :root { --fg:#1a1a1a; --bg:#fdfdfd; --accent:#0a7d4a; --warn:#b45309; --red:#b91c1c; --muted:#666; --border:#ddd; --code-bg:#f5f5f5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e4e4e4; --bg:#1a1a1a; --accent:#4ade80; --warn:#fbbf24; --red:#f87171; --muted:#999; --border:#333; --code-bg:#262626; }
+  }
+  * { box-sizing:border-box; }
+  body { font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--fg); background:var(--bg); max-width:980px; margin:1.5em auto; padding:0 1.5em 3em; }
+  h1,h2,h3 { font-weight:600; margin-top:1.6em; line-height:1.3; }
+  h1 { font-size:1.7em; margin-bottom:.2em; }
+  h2 { font-size:1.35em; border-bottom:1px solid var(--border); padding-bottom:.2em; }
+  h3 { font-size:1.1em; }
+  a { color:var(--accent); }
+  code { background:var(--code-bg); padding:.15em .35em; border-radius:3px; font-size:.92em; font-family:ui-monospace,Menlo,monospace; }
+  table { border-collapse:collapse; width:100%; margin:.8em 0; font-size:.93em; }
+  th,td { border:1px solid var(--border); padding:.45em .7em; vertical-align:top; text-align:left; }
+  th { font-weight:600; background:var(--code-bg); }
+  .wrap { overflow-x:auto; }
+  ul { padding-left:1.4em; } li { margin:.25em 0; }
+  .meta { color:var(--muted); font-size:.85em; }
+  .sub { color:var(--muted); font-size:.95em; margin-top:.3em; }
+  .status { background:color-mix(in srgb, var(--accent) 12%, var(--bg)); border:1px solid var(--accent); border-radius:8px; padding:.9em 1.2em; margin:1.2em 0; }
+  .status .badge { display:inline-block; background:var(--accent); color:var(--bg); padding:.1em .6em; border-radius:4px; font-size:.78em; font-weight:600; }
+  .status p { margin:.5em 0 0; font-size:.92em; }
+  .next { border:1px solid var(--warn); border-left:4px solid var(--warn); border-radius:8px; padding:.8em 1.2em; margin:1.2em 0; background:color-mix(in srgb, var(--warn) 8%, var(--bg)); }
+  .next > summary { cursor:pointer; font-weight:600; }
+  .next ol { margin:.5em 0 .1em 1.3em; padding:0; }
+  .who { font-weight:600; }
+  .pill { display:inline-block; font-size:.78em; padding:.1em .55em; border-radius:10px; background:var(--code-bg); color:var(--muted); margin-left:.4em; }
+  .pill.done { background:var(--accent); color:var(--bg); }
+  .pill.now  { background:var(--warn); color:var(--bg); }
+  .pill.next { background:var(--code-bg); color:var(--fg); border:1px solid var(--border); }
+  .pill.warn { background:var(--red); color:var(--bg); }
+  .callout { border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:4px; padding:.7em 1em; margin:1em 0; font-size:.93em; background:color-mix(in srgb, var(--accent) 5%, var(--bg)); }
+  .tabbar { display:flex; flex-wrap:wrap; gap:.2em; border-bottom:2px solid var(--border); margin:1.2em 0 1.5em; }
+  .tabbar .tab { padding:.55em 1em; cursor:pointer; border:1px solid transparent; border-bottom:none; border-radius:6px 6px 0 0; font:inherit; font-weight:500; font-size:.95em; color:var(--muted); background:none; margin-bottom:-2px; }
+  .tabbar .tab:hover { color:var(--fg); }
+  .tabbar .tab.active { color:var(--fg); border-color:var(--border); border-bottom:2px solid var(--bg); background:var(--bg); font-weight:600; }
+  .pane { display:none; } .pane.active { display:block; }
+</style>
+</head>
+<body>
+<header>
+  <h1>XJournal — editor surfaces</h1>
+  <div class="sub">Seven jobs on the writing well, plus catalog-backed Nouns / Ghost / MIR. Same shape as the 70-artist catalog tracker. Repo: <code>The Final Journal AI.nosync</code> · scheme <code>PennWork Studios</code> · sim iPhone 17.</div>
+</header>
+
+<div class="status">
+  <span class="badge">IN SIM · CONFIRM ON DEVICE</span>
+  <span class="meta" style="float:right">As of 2026-09-04</span>
+  <p>7 original surfaces in source + sim build. Nouns mined from the full 1.7M-bar vault (784 artists). Eye paint no longer blanks while typing. Ghost Enter keeps chips. MIR enriches songs but is <strong>not</strong> wired into Bar hits ranking.</p>
+</div>
+
+<details class="next" open>
+  <summary>Next steps <span class="meta">· 3 items</span></summary>
+  <ol>
+    <li><span class="who">You</span> — Walk the seven checks on the <strong>iPhone 17 simulator</strong> (not the physical phone). <span class="meta">— Phone still has the old binary.</span></li>
+    <li><span class="who">You</span> — Confirm eye stays on while typing, Ghost Enter doesn’t freeze, Nouns shows Damier / Guns / Money. <span class="meta">— Unblocks treating this cut as done.</span></li>
+    <li><span class="who">Later</span> — Install this build on the device. <span class="meta">— Screenshots from 5G+ will then match sim.</span></li>
+  </ol>
+</details>
+
+<div class="tabbar">
+  <button class="tab active" data-pane="over">1 · Overview</button>
+  <button class="tab" data-pane="work">2 · Workstreams</button>
+  <button class="tab" data-pane="att">3 · How to test</button>
+  <button class="tab" data-pane="bg">4 · Ghost pipeline</button>
+  <button class="tab" data-pane="risk">5 · Risks</button>
+</div>
+
+<main>
+<section class="pane active" id="over">
+  <div class="callout">Fix seven writing-surface failures without merging them: sort Catalog A–Z, tap-to-write, end-rhyme lock, Ghost catalog landings, Nouns bank, Similar meaning neighborhoods, catalog MIR enrich. Follow-ups: eye paint while typing, Ghost Enter, full-vault noun pockets.</div>
+  <h2>Success criteria</h2>
+  <div class="wrap">
+  <table>
+    <tr><th>Criterion</th><th>Check</th><th>Status</th></tr>
+    <tr><td>Catalog A–Z</td><td>Drake before Juice before Lil Wayne; The/A/An ignored; count unchanged</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>Tap to write</td><td>One tap anywhere in the empty well opens keyboard</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>End-rhyme lock</td><td>militant…shit same color; blink/think stay out; phone/tone stable green</td><td><span class="pill done">in sim</span></td></tr>
+    <tr><td>Ghost Free</td><td>20–40 catalog landings, sticky until end-sound changes; no boan/boen</td><td><span class="pill done">in sim</span></td></tr>
+    <tr><td>Nouns</td><td>12 pockets, catalog descriptors (Damier buckle), all non-empty</td><td><span class="pill done">in sim</span></td></tr>
+    <tr><td>Similar meaning</td><td>Priors dimmed + bold punch + axes; wrap is not a gate</td><td><span class="pill done">in sim</span></td></tr>
+    <tr><td>Catalog MIR</td><td>Every unique song tagged; BPM/key/scale null without audio; not wired into Bar hits</td><td><span class="pill done">enrich only</span></td></tr>
+    <tr><td>Eye while typing</td><td>Highlights stay up; no need to re-tap eye</td><td><span class="pill done">in sim</span></td></tr>
+    <tr><td>Ghost Enter</td><td>Return starts next line; chips stay; no freeze</td><td><span class="pill done">in sim</span></td></tr>
+  </table>
+  </div>
+  <h2>Out of scope</h2>
+  <ul>
+    <li>Wiring note BPM/key/scale into Bar hits ranking — vault is lyrics-only; no accuracy proof.</li>
+    <li>Inventing BPM from lyrics.</li>
+    <li>Pasting full stolen bars into Ghost or Nouns.</li>
+    <li>Device OTA — confirm on sim first.</li>
+  </ul>
+</section>
+
+<section class="pane" id="work">
+  <h2>Status</h2>
+  <div class="wrap">
+  <table>
+    <tr><th>ID</th><th>What</th><th>Status</th></tr>
+    <tr><td>1</td><td>Catalog artists A–Z display sort (<code>CatalogArtistSort</code>)</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>2</td><td>Tap-to-write full well</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>3</td><td>End-rhyme IH/alveolar + line-end T/D family</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>4</td><td>Ghost catalog end-word index + 40 sticky chips</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>5</td><td>Nouns bank — 12 pockets from 1.7M bars</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>6</td><td>Similar meaning neighborhoods + rubric</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>7</td><td>Catalog MIR batch (enrich, don’t rank Bar hits)</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>5b</td><td>Eye overlay persists while typing</td><td><span class="pill done">done</span></td></tr>
+    <tr><td>4b</td><td>Ghost Enter does not wipe chips / trap</td><td><span class="pill done">done</span></td></tr>
+  </table>
+  </div>
+  <h2>Nouns pockets (full vault scrape)</h2>
+  <p class="meta">Mined SQLite <code>bars</code> + FTS across all artists, then curated. Not Gunna-only.</p>
+  <div class="wrap">
+  <table>
+    <tr><th>Pocket</th><th>Example chips</th></tr>
+    <tr><td>Liquors</td><td>that Henny, Ace of Spades, in Bel-Air, Don Julio</td></tr>
+    <tr><td>Syrups</td><td>my double cup, dirty sprite, sippin' lean, out the mud</td></tr>
+    <tr><td>Drugs</td><td>white girl, a perc, loud pack, off the molly</td></tr>
+    <tr><td>Jewelry</td><td>bust down Rollie, presidential Rollie, flooded Patek, VVS diamonds</td></tr>
+    <tr><td>Brands</td><td>Damier buckle, Saint Laurent, Chrome Heart, Amiri jeans</td></tr>
+    <tr><td>Clothing</td><td>red bottoms, black ski mask, mink coat, wave cap</td></tr>
+    <tr><td>Guns</td><td>Glock 40, the stick, choppa, hundred round drum</td></tr>
+    <tr><td>Kill</td><td>the opps, catch a body, spin the block</td></tr>
+    <tr><td>Woman</td><td>bad bitch, baby mama, these hoes, shawty</td></tr>
+    <tr><td>Money</td><td>them racks, a bag, the guap, cash out</td></tr>
+    <tr><td>Cars</td><td>big body Benz, foreign, Phantom, Lear</td></tr>
+    <tr><td>Places</td><td>the block, trap house, the hood, the stu</td></tr>
+  </table>
+  </div>
+</section>
+
+<section class="pane" id="att">
+  <h2>How to confirm (simulator)</h2>
+  <ol>
+    <li><strong>Catalog A–Z</strong> — hold a gutter → Bar hits → Catalog. Drake before Juice before Lil Wayne.</li>
+    <li><strong>Tap to write</strong> — new note, tap empty well, keyboard.</li>
+    <li><strong>End rhyme</strong> — Drake remix, eye on. militant…shit same color; think/blink separate.</li>
+    <li><strong>Ghost</strong> — Ghost on, line ending in bone. Long catalog list. Enter starts next line; chips stay.</li>
+    <li><strong>Nouns</strong> — expanded island → Nouns. Brands → Damier. Scroll to Guns / Kill / Woman / Money / Cars / Places.</li>
+    <li><strong>Similar meaning</strong> — hold “broke…bowl”. Setup dimmed, punch bold, axis line.</li>
+    <li><strong>MIR</strong> — You tab → Analyze every catalog song. Lyrics-only shows no invented BPM.</li>
+    <li><strong>Eye while typing</strong> — eye on, keep writing. Paint must not blank.</li>
+  </ol>
+  <p class="meta">Physical phone screenshots (5G+) are the old binary until this build is installed there.</p>
+</section>
+
+<section class="pane" id="bg">
+  <h2>Ghost Free × 70-artist (actually 784 in sqlite) pipeline</h2>
+  <ol>
+    <li><strong>Vault</strong> — gzipped SQLite of Genius bars. Row: line, artist, song, syllables, end_word, phonetic_class (CMUDICT from last primary stress, e.g. bone → <code>OW1 N</code>).</li>
+    <li><strong>Index</strong> — <code>CatalogEndWordIndex</code> samples end words: <code>{word, phones, rhymeClass, artist, song, wrap}</code>.</li>
+    <li><strong>On a written line</strong> — last word + wrap + phonetic class.</li>
+    <li><strong>Lookup</strong> — same class, prefer similar wrap, then rest of class, then live <code>GROUP BY end_word ORDER BY n</code>.</li>
+    <li><strong>Fill</strong> — CMUDICT if still short; drop dictionary junk (<code>boan</code>).</li>
+    <li><strong>UI</strong> — up to 40 chips, two rows, sticky until the class changes. Word heads only.</li>
+  </ol>
+  <h2>Catalog MIR vs Bar hits</h2>
+  <p>MIR writes per-song records (<code>artist|title</code>): audio → BPM/key/scale; lyrics-only those stay null; style tags still fill at low confidence. <strong>Not used as a Bar hits ranker</strong> — almost the whole vault has no audio, so matching the note’s BPM would drop real wrap hits with no proof of better bars.</p>
+</section>
+
+<section class="pane" id="risk">
+  <h2>Risks</h2>
+  <div class="wrap">
+  <table>
+    <tr><th>Risk</th><th>Why it matters</th><th>Mitigation</th></tr>
+    <tr><td>Device vs sim</td><td>User screenshots are the phone</td><td>Confirm on iPhone 17 sim; install later</td></tr>
+    <tr><td>iCloud Documents</td><td><code>xcodebuild</code> hangs on dataless files in the repo</td><td>Build from <code>/tmp/FinalJournalSrc</code></td></tr>
+    <tr><td>MIR ranking</td><td>Tempting to filter Bar hits by BPM</td><td>Do not wire until a large audio slice exists</td></tr>
+    <tr><td>Noun chips</td><td>Could paste stolen bars</td><td>1–5 word descriptors only</td></tr>
+  </table>
+  </div>
+</section>
+</main>
+
+<script type="application/json" id="artifact-state">
+{"as_of":"2026-09-04","workstreams":[
+  {"id":"1","status":"done"},{"id":"2","status":"done"},{"id":"3","status":"done"},
+  {"id":"4","status":"done"},{"id":"5","status":"done"},{"id":"6","status":"done"},
+  {"id":"7","status":"done"},{"id":"5b","status":"done"},{"id":"4b","status":"done"}
+]}
+</script>
+<script>
+document.querySelectorAll('.tabbar .tab').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.tabbar .tab').forEach(function(b){ b.classList.remove('active'); });
+    document.querySelectorAll('.pane').forEach(function(p){ p.classList.remove('active'); });
+    btn.classList.add('active');
+    document.getElementById(btn.getAttribute('data-pane')).classList.add('active');
+  });
+});
+</script>
+</body>
+</html>

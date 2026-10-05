@@ -5,7 +5,7 @@ import NaturalLanguage
 // Renamed from SignalProfile to avoid conflict with new SignalProfile in SignalLayerModels.swift
 // Kept for backward compatibility
 
-struct SignalMetrics: Codable {
+nonisolated struct SignalMetrics: Codable {
     let explanationDensity: Double      // 0.0-1.0: Frequency of causal language, justification
     let specificityLoad: Double          // 0.0-1.0: Names, acts, sequences, detailed grievances
     let emotionalLeakage: Double        // 0.0-1.0: Repetition of affect, sentiment volatility
@@ -23,13 +23,13 @@ struct SignalMetrics: Codable {
 // MARK: - Signal Ingest
 
 class SignalIngest {
-    static let shared = SignalIngest()
+    nonisolated static let shared = SignalIngest()
     
-    private init() {}
+    nonisolated private init() {}
     
     // MARK: - Main Analysis Function (Legacy)
     
-    func analyzeBehavior(text: String) -> SignalMetrics {
+    nonisolated func analyzeBehavior(text: String) -> SignalMetrics {
         let explanationDensity = extractExplanationDensity(text: text)
         let specificityLoad = extractSpecificityLoad(text: text)
         let emotionalLeakage = detectEmotionalLeakage(text: text)
@@ -150,7 +150,7 @@ class SignalIngest {
     // MARK: - Explanation Density
     
     /// Detects frequency of causal language, justification, narrative reasoning
-    func extractExplanationDensity(text: String) -> Double {
+    nonisolated func extractExplanationDensity(text: String) -> Double {
         let explanationMarkers = [
             "because", "since", "so that", "in order to", "due to", "as a result",
             "therefore", "thus", "hence", "consequently", "for this reason",
@@ -196,7 +196,7 @@ class SignalIngest {
     // MARK: - Specificity Load
     
     /// Detects names, acts, sequences, detailed grievances
-    func extractSpecificityLoad(text: String) -> Double {
+    nonisolated func extractSpecificityLoad(text: String) -> Double {
         var specificityScore = 0.0
         
         // Check for proper nouns (names)
@@ -271,7 +271,7 @@ class SignalIngest {
     // MARK: - Emotional Leakage
     
     /// Detects repetition of affect, sentiment volatility, emotional redundancy
-    func detectEmotionalLeakage(text: String) -> Double {
+    nonisolated func detectEmotionalLeakage(text: String) -> Double {
         let emotionalWords = [
             "hurt", "pain", "angry", "mad", "sad", "upset", "frustrated", "disappointed",
             "betrayed", "abandoned", "lonely", "scared", "afraid", "worried", "anxious",
@@ -320,7 +320,7 @@ class SignalIngest {
     // MARK: - Defensive Framing
     
     /// Detects preemptive rebuttals, grievance validation, self-justification
-    func detectDefensiveFraming(text: String) -> Double {
+    nonisolated func detectDefensiveFraming(text: String) -> Double {
         let defensiveMarkers = [
             "I'm not saying", "I'm not trying to", "I don't mean to", "I didn't mean",
             "it's not like", "it's not that", "I know you think", "you might think",
@@ -360,7 +360,7 @@ class SignalIngest {
     // MARK: - Authority Posture
     
     /// Detects confidence indicators, position strength
-    func detectAuthorityPosture(text: String) -> Double {
+    nonisolated func detectAuthorityPosture(text: String) -> Double {
         let authorityMarkers = [
             "I am", "I'm", "I got", "I have", "I own", "I control",
             "I run", "I lead", "I make", "I decide", "I choose",

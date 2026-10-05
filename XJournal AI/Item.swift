@@ -6,6 +6,9 @@ final class Item {
     var timestamp: Date
     var modifiedDate: Date? // Track when item was last modified
     var title: String
+    /// Two-line list snippet. Home rows and default search use this so they
+    /// do not walk the full lyric. Empty until the first body save / backfill.
+    var preview: String = ""
     var body: String
     var audioPath: String?
     var transcription: String?
@@ -43,6 +46,7 @@ final class Item {
         self.modifiedDate = nil // No modifications on creation
         self.title = title
         self.body = body
+        self.preview = Self.makePreview(from: body)
         self.audioPath = nil
         self.transcription = nil
         self.transcriptionSegments = nil
@@ -57,5 +61,23 @@ final class Item {
         self.syllableMax = nil
         self.beatFingerprintData = nil
         self.beatFingerprintHash = nil
+    }
+
+    func refreshPreview() {
+        let next = Self.makePreview(from: body)
+        if preview != next { preview = next }
+    }
+
+    /// First two non-empty lines, capped at 160 characters.
+    static func makePreview(from body: String) -> String {
+        let trimmed = body.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return "" }
+        let twoLines = trimmed
+            .split(separator: "\n", omittingEmptySubsequences: true)
+            .prefix(2)
+            .joined(separator: "\n")
+        if twoLines.count <= 160 { return twoLines }
+        let end = twoLines.index(twoLines.startIndex, offsetBy: 160)
+        return String(twoLines[..<end])
     }
 }

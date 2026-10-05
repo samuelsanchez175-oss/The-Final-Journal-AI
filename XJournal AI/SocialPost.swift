@@ -18,7 +18,7 @@ final class SocialPost {
         title: String,
         caption: String,
         images: [String] = [],
-        author: String = "The Final Journal AI",
+        author: String = Momentum.appName,
         createdDate: Date = Date(),
         category: String? = nil,
         order: Int = 0,

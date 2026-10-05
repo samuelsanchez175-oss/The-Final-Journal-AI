@@ -14,7 +14,7 @@ class ExportManager {
     
     func exportToPDF(item: Item) -> URL? {
         let pdfMetaData = [
-            kCGPDFContextCreator: "The Final Journal AI",
+            kCGPDFContextCreator: Momentum.appName,
             kCGPDFContextAuthor: "User",
             kCGPDFContextTitle: item.title.isEmpty ? "Untitled Note" : item.title
         ]
@@ -106,7 +106,7 @@ class ExportManager {
     
     func exportMultipleToPDF(items: [Item]) -> URL? {
         let pdfMetaData = [
-            kCGPDFContextCreator: "The Final Journal AI",
+            kCGPDFContextCreator: Momentum.appName,
             kCGPDFContextAuthor: "User",
             kCGPDFContextTitle: "Journal Export"
         ]

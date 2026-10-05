@@ -23,89 +23,43 @@ struct SupportShopSheetView: View {
                     Text("Support the Creators")
                         .font(.largeTitle.weight(.bold))
 
-                    Text("Your support helps keep The Final Journal AI independent, thoughtful, and evolving.")
+                    Text("Your support helps keep \(Momentum.appName) independent, thoughtful, and evolving.")
                         .font(.headline)
                         .foregroundStyle(Momentum.contentSecondary)
                 }
                 .padding(.top, 12)
 
-                MomentumSectionHeader(title: "Follow & Support")
+                MomentumSectionHeader(title: "Donate")
+
+                VStack(spacing: 10) {
+                    supportRow(
+                        title: "Cash App",
+                        subtitle: "Send a donation to $samleumas",
+                        symbol: "dollarsign.circle.fill"
+                    ) {
+                        openSupport(SupportLinks.cashApp, titled: "Cash App")
+                    }
+                }
+
+                MomentumSectionHeader(title: "Follow")
 
                 // Tight stack so the social buttons sit close together rather than
                 // inheriting the loose 28pt section spacing.
                 VStack(spacing: 10) {
-                    // TODO: Replace placeholder URLs with actual social media account URLs
-                    supportRow(
-                        title: "X (Twitter)",
-                        subtitle: "Follow updates and design progress",
-                        symbol: "xmark"
-                    ) {
-                        // TODO: Replace with actual Twitter/X account URL (e.g., "https://twitter.com/yourhandle")
-                        if let url = URL(string: "https://twitter.com") {
-                            lastActionTitle = "X (Twitter)"
-                            showThankYou = true
-                            openURL(url)
-                        }
-                    }
-
                     supportRow(
                         title: "Instagram",
-                        subtitle: "Visual updates and behind-the-scenes",
+                        subtitle: "@samuelorsamuel",
                         symbol: "camera"
                     ) {
-                        // TODO: Replace with actual Instagram account URL (e.g., "https://instagram.com/yourhandle")
-                        if let url = URL(string: "https://instagram.com") {
-                            lastActionTitle = "Instagram"
-                            showThankYou = true
-                            openURL(url)
-                        }
+                        openSupport(SupportLinks.instagram, titled: "Instagram")
                     }
 
                     supportRow(
-                        title: "Patreon",
-                        subtitle: "Directly support ongoing development",
-                        symbol: "heart.fill"
+                        title: "X (Twitter)",
+                        subtitle: "@samodayx",
+                        symbol: "xmark"
                     ) {
-                        // TODO: Replace with actual Patreon creator page URL (e.g., "https://patreon.com/yourpage")
-                        if let url = URL(string: "https://patreon.com") {
-                            lastActionTitle = "Patreon"
-                            showThankYou = true
-                            openURL(url)
-                        }
-                    }
-
-                    supportRow(
-                        title: "Facebook",
-                        subtitle: "Community updates and announcements",
-                        symbol: "person.2.fill"
-                    ) {
-                        // TODO: Replace with actual Facebook page URL (e.g., "https://facebook.com/yourpage")
-                        if let url = URL(string: "https://facebook.com") {
-                            lastActionTitle = "Facebook"
-                            showThankYou = true
-                            openURL(url)
-                        }
-                    }
-                }
-
-                MomentumSectionHeader(title: "Affiliate Support")
-
-                Text(
-                    "Some links may be affiliate links. Purchases made through these links help support development at no extra cost to you."
-                )
-                .font(.caption)
-                .foregroundStyle(Momentum.contentSecondary)
-
-                supportRow(
-                    title: "Amazon",
-                    subtitle: "Support via affiliate purchases",
-                    symbol: "cart.fill"
-                ) {
-                    // TODO: Replace with actual Amazon affiliate link
-                    if let url = URL(string: "https://amazon.com") {
-                    lastActionTitle = "Amazon"
-                    showThankYou = true
-                        openURL(url)
+                        openSupport(SupportLinks.twitter, titled: "X (Twitter)")
                     }
                 }
 
@@ -128,7 +82,7 @@ struct SupportShopSheetView: View {
                         Image(systemName: "heart.fill")
                             .foregroundStyle(Momentum.accent)
 
-                        Text("Thank you for supporting The Final Journal AI via \(lastActionTitle).")
+                        Text("Thank you for supporting \(Momentum.appName) via \(lastActionTitle).")
                             .font(.callout)
                     }
                     .padding(14)
@@ -156,10 +110,22 @@ struct SupportShopSheetView: View {
         .animation(.easeInOut(duration: 0.2), value: showThankYou)
     }
 
+    private enum SupportLinks {
+        static let cashApp = URL(string: "https://cash.app/$samleumas")!
+        static let instagram = URL(string: "https://www.instagram.com/samuelorsamuel")!
+        static let twitter = URL(string: "https://x.com/samodayx")!
+    }
+
+    private func openSupport(_ url: URL, titled title: String) {
+        lastActionTitle = title
+        showThankYou = true
+        openURL(url)
+    }
+
     private func sendFeedback() {
         // TODO: Replace with the real feedback recipient address (e.g., "hello@thefinaljournalai.app")
         let recipient = "feedback@example.com"
-        let subject = "The Final Journal AI — Feedback"
+        let subject = "\(Momentum.appName) — Feedback"
         let encoded = subject.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? subject
         if let url = URL(string: "mailto:\(recipient)?subject=\(encoded)") {
             openURL(url)

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cadence Ghost — internal-to-end chain</title>
+<style>
+  :root { color-scheme: light; --ink: #1a1410; --wash: #f6ebe3; --card: #fffdf9; --chain: #6b3fa0; --fit: #1f8a4c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.45 ui-sans-serif, system-ui, sans-serif; background: var(--wash); color: var(--ink); }
+  main { max-width: 720px; margin: 0 auto; padding: 28px 20px 64px; }
+  h1 { font-size: 1.35rem; margin: 0 0 6px; }
+  .term { font-size: 0.92rem; color: #5a4a40; margin-bottom: 18px; }
+  label { display: block; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; color: #6a5a50; margin-bottom: 6px; }
+  input { width: 100%; font: inherit; padding: 12px 14px; border: 1px solid #e0d0c4; border-radius: 12px; background: var(--card); }
+  .dock { margin-top: 18px; background: var(--card); border-radius: 18px; padding: 14px 14px 10px; box-shadow: 0 8px 30px rgba(40,20,10,0.06); }
+  .dock-h { font-size: 0.78rem; color: #6a5a50; margin-bottom: 10px; }
+  .chip { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; padding: 10px 12px; border-radius: 12px; background: #f3ece6; margin-bottom: 8px; }
+  .chip.front { background: #ece4f6; outline: 1.5px solid #c9b3e6; }
+  .chip b { font-weight: 650; }
+  .meta { font-size: 0.78rem; color: #5a4a40; white-space: nowrap; }
+  .chain { color: var(--chain); font-weight: 700; }
+  .fit { color: var(--fit); font-weight: 700; }
+  .marks { color: var(--chain); font-weight: 650; }
+  kbd { font: inherit; background: #efe6de; padding: 0 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Cadence Ghost ranks <em>internal-to-end chains</em></h1>
+  <p class="term">Technical name: <strong>internal-to-end rhyme chain</strong> (inner rhyme + mosaic). The setup landing is hit inside the punch, then again at the end — <em>ten toes</em> → <em>hoes know</em> … <em>let it go</em>.</p>
+  <label for="setup">Setup (comma is the breath)</label>
+  <input id="setup" value="im standing ten toes," autocomplete="off" />
+  <div class="dock" id="dock"></div>
+</main>
+<script>
+const FAMILY = {
+  toes: "OH", hoes: "OH", hoe: "OH", know: "OH", knows: "OH", go: "OH", goes: "OH",
+  though: "OH", flow: "OH", blow: "OH", show: "OH", fold: "OH", gold: "OH",
+  bitch: "IH", need: "IY", needs: "IY", what: "AH",
+  bag: "AE", cash: "AE",
+};
+function norm(s) {
+  return s.toLowerCase().replace(/['’]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+}
+function words(s) { return norm(s).split(" ").filter(Boolean); }
+function fam(w) {
+  if (FAMILY[w]) return FAMILY[w];
+  if (/oe?s$|ow[sn]?$/.test(w)) return "OH";
+  return w.slice(-2);
+}
+function lands(a, b) { return !!a && !!b && fam(a) === fam(b); }
+function chain(setup, punch) {
+  const sw = words(setup), pw = words(punch);
+  const end = sw[sw.length - 1];
+  if (!end || pw.length < 2) return { score: 0, chained: false, internals: 0, marks: [] };
+  const internals = pw.slice(0, -1);
+  const marks = [];
+  let internalHits = 0;
+  const seen = new Set();
+  for (const w of internals) {
+    if (seen.has(w) || w === end) continue;
+    seen.add(w);
+    if (lands(end, w)) { internalHits++; marks.push(w); }
+  }
+  internalHits = Math.min(internalHits, 2);
+  let score = internalHits * 8;
+  const punchEnd = pw[pw.length - 1];
+  let landsEnd = false;
+  if (lands(end, punchEnd)) { landsEnd = true; score += 8; marks.push(punchEnd); }
+  if (sw.length >= 2 && pw.length >= 2) {
+    const b = sw[sw.length - 1];
+    for (let i = 0; i < pw.length - 1; i++) {
+      if (lands(b, pw[i]) && lands(b, pw[i + 1])) { score += 8; break; }
+    }
+  }
+  const chained = internalHits >= 1 && landsEnd;
+  if (chained) score += 10;
+  return { score, chained, internals: internalHits, marks };
+}
+const CATALOG = [
+  "hoes know how i let it go",
+  "hoes know i never fold",
+  "i never let it go",
+  "i keep the money in the bag",
+  "toes on the ground i don't fold",
+  "everybody in the room know",
+  "i been like this since a kid though",
+];
+function rank(setup) {
+  const wrap = words(setup).length;
+  return CATALOG.map(text => {
+    const c = chain(setup, text);
+    const syl = words(text).length;
+    let score = c.score;
+    const d = Math.abs(syl - wrap);
+    if (d <= 1) score += 6;
+    else if (d <= 2) score += 3;
+    return { text, score, chained: c.chained, syl, marks: c.marks };
+  }).sort((a, b) => b.score - a.score);
+}
+function highlight(text, marks) {
+  const set = new Set(marks);
+  return words(text).map(w => set.has(w) ? `<span class="marks">${w}</span>` : w).join(" ");
+}
+function render() {
+  const raw = document.getElementById("setup").value;
+  const setup = raw.replace(/,+\s*$/, "");
+  const ranked = rank(setup);
+  const rows = ranked.map((r, i) => `
+    <div class="chip ${i === 0 && r.chained ? "front" : ""}">
+      <div>${i === 0 ? "<b>front</b> · " : ""}${highlight(r.text, r.marks)}</div>
+      <div class="meta">
+        ${r.chained ? '<span class="chain">chain</span> · ' : ""}
+        <span class="fit">${r.syl}</span>
+        · ${r.score}
+      </div>
+    </div>`).join("");
+  document.getElementById("dock").innerHTML =
+    `<div class="dock-h">Cadence Ghost after <kbd>${setup},</kbd></div>${rows}`;
+}
+document.getElementById("setup").addEventListener("input", render);
+render();
+</script>
+</body>
+</html>

@@ -17,6 +17,10 @@ enum RejectionReason: String, Codable {
     case clichéDetected
     case beatMisalignment
     case scoreBelowThreshold
+    case neverUseHit
+    case unconfirmedGrief
+    case punchDemoted
+    case youFitTooLow
 }
 
 // MARK: - Hard Rejection Engine
@@ -71,6 +75,12 @@ class HardRejectionEngine {
         }
 
         return nil
+    }
+
+    /// Model You post-write gate. Does not change the Model G path.
+    func rejectYouVerse(_ text: String, brain: ArtistBrain, graph: ArtistBrainGraph? = nil) -> RejectionReason? {
+        let scored = YouFitScorer.score(verse: text, brain: brain, graph: graph)
+        return YouFitScorer.reject(scored)
     }
 
     private func containsBannedLexicon(_ text: String) -> Bool {

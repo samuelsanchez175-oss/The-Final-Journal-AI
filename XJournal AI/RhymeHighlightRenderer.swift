@@ -39,7 +39,9 @@ enum RhymeHighlightRenderer {
                 guard relEnd > relStart, relStart >= 0, relEnd <= lineLen else { continue }
                 let a0 = attr.index(attr.startIndex, offsetByCharacters: relStart)
                 let a1 = attr.index(a0, offsetByCharacters: relEnd - relStart)
-                attr[a0..<a1].foregroundColor = color(for: o.colorIndex)
+                let fill = color(for: o.colorIndex)
+                attr[a0..<a1].backgroundColor = fill.opacity(0.32)
+                attr[a0..<a1].foregroundColor = Color.primary
             }
 
             results.append(attr)

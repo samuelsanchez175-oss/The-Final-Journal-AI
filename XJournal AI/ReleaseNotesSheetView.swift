@@ -20,7 +20,7 @@ struct ReleaseNotesSheetView: View {
                         .font(.largeTitle.weight(.bold))
                         .foregroundStyle(Momentum.contentPrimary)
 
-                    Text("The Final Journal AI")
+                    Text(Momentum.appName)
                         .font(.headline)
                         .foregroundStyle(Momentum.contentSecondary)
                 }
@@ -28,11 +28,27 @@ struct ReleaseNotesSheetView: View {
                 .padding(.bottom, 4)
 
                 featureCard(
+                    symbolName: "quote.bubble",
+                    version: "1.6.0",
+                    title: "Wrap Clock, Reminds Me Of & RhymeZone",
+                    description: "Hold a line or a word and the editor traces wrap, Genius, and rhymes without leaving the verse.",
+                    isLatest: true,
+                    bullets: [
+                        "Reminds me of — hold a line’s syllable count to search that bar three ways: similar, end rhyme, and same wrap. Vault hits are real bars, not album credits",
+                        "Connect Genius with a Client Access Token from genius.com/api-clients. Matching verse lines stay yellow while the sheet is open so you can see how you got there",
+                        "Hold a word for Suggest Rhymes in a RhymeZone-style sheet — syllable groups, near and slant, plus an Advanced view",
+                        "Per-line syllable gutter on the writing surface; the eye overlay turns on when you open any note",
+                        "Punch bar 1–2–3–4 follows the note BPM. The live beat grows; tap a tile to mark it purple (punch) or leave it dark. The “Punch on 3 and 4” hint fades after five seconds, once per launch",
+                        "Metadata pills (BPM, Key, Scale, Bar length) scroll sideways; dark-mode glass and header icons stay readable on the Lagoon surface"
+                    ]
+                )
+
+                featureCard(
                     symbolName: "paintpalette",
                     version: "1.5.0",
                     title: "Momentum Redesign & Dark Mode",
                     description: "A bold new coral redesign, full dark mode, and a rebuilt AI suggestions experience.",
-                    isLatest: true,
+                    isLatest: false,
                     bullets: [
                         "Brand-new \"Momentum\" look — a warm coral redesign with iOS 26 glass, flat hairline cards, and a cleaner editor header",
                         "Full Dark Mode with the new \"Lagoon\" palette — your accent color doubles as a one-tap light/dark switch",
@@ -41,7 +57,7 @@ struct ReleaseNotesSheetView: View {
                         "Cascade layout steps long bars into breath-sized phrases for easier reading at large text sizes",
                         "Human Critic — plain-language feedback on your lyrics in a Calm editor, Friend, or Hype voice",
                         "Theme-aware suggestions — the app reads your song's themes and steers Model G to match",
-                        "Model G v3: a more capable generation engine with a simpler AI setup",
+                        "Model G planned verse: a more capable generation engine with a simpler AI setup",
                         "Smoother first-run onboarding, plus clearer AI error handling and recovery"
                     ]
                 )

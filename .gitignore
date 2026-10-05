@@ -33,6 +33,12 @@ Carthage/Build/
 eval/grading_log.csv
 eval/captures/e*.txt
 
+# Regenerable bar-hits catalog (run tools/build-bar-hits-catalog.py)
+XJournal AI/RemindsMeOf/BarHitsCatalog.sqlite
+XJournal AI/RemindsMeOf/BarHitsCatalog.sqlite.gz
+tools/bar-hits-catalog/*.sqlite
+tools/bar-hits-catalog/*.sqlite.gz
+
 # ── Triage 2026-05-31 (Momentum reskin merge prep) ───────────────────────────
 # NOTE: this only ignores NOISE. The ~60 untracked .swift source files + data
 # CSVs + FlowDNA/ + backend/ are NOT ignored here on purpose — they must be

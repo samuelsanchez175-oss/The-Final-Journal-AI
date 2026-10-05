@@ -12,28 +12,19 @@ struct ModelPreferencesView: View {
     @State private var creativity = ModelGEnvironment.creativity
     @State private var effortCandidates = ModelGEnvironment.effortCandidates
     @State private var qualityBar = ModelGEnvironment.qualityBar
-    #if DEBUG
-    // Dev-only switch for the experimental Model G v4 engine. Binds the same UserDefaults
-    // key (`model_g_v4_enabled`) that ModelGEnvironment.useModelGv4 / RapSuggestionAPI read.
-    @AppStorage("model_g_v4_enabled") private var useModelGv4 = false
-    @AppStorage("model_g_v4_1_enabled") private var useModelGv4_1 = false
-    #endif
-    @AppStorage("model_gl_enabled") private var useModelGL = false
-
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 24) {
+                    Text("These sliders shape G craft for the planned verse. Model You uses the same craft plus the artist brain from Profile → You. SUPERG 4-bar is a separate continuation prompt.")
+                        .font(.callout)
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
                     originalitySlider
                     creativitySlider
                     effortSlider
                     qualityBarSlider
                     themeAwareToggle
-                    modelGLToggle
-                    #if DEBUG
-                    modelGv4Toggle
-                    modelGv4_1Toggle
-                    #endif
                     criticVoicePicker
                     ModelSettingsForm(settings: $modelGv3Settings)
                 }
@@ -146,40 +137,6 @@ struct ModelPreferencesView: View {
                 .font(.caption).foregroundStyle(Momentum.contentSecondary)
         }
     }
-
-    private var modelGLToggle: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Toggle(isOn: $useModelGL) {
-                Text("Use Model GL (Gemini Light)").font(.subheadline.weight(.semibold))
-            }
-            Text("Generates with a lightning-fast, clever prompt bypassing complex corpus routing. Simplest generation pipeline.")
-                .font(.caption).foregroundStyle(Momentum.contentSecondary)
-        }
-    }
-
-    #if DEBUG
-    private var modelGv4Toggle: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Toggle(isOn: $useModelGv4) {
-                Text("Use Model G v4 engine").font(.subheadline.weight(.semibold))
-            }
-            .disabled(useModelGL)
-            Text("Generates with the newer v4 pipeline, which grounds bars in your reference-lyric corpus. Takes priority over v3 when on. Experimental — off by default.")
-                .font(.caption).foregroundStyle(Momentum.contentSecondary)
-        }
-    }
-
-    private var modelGv4_1Toggle: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Toggle(isOn: $useModelGv4_1) {
-                Text("Use Model G v4.1 (Punchline Mode)").font(.subheadline.weight(.semibold))
-            }
-            .disabled(useModelGL)
-            Text("Generates with strict 4-bar setup-and-payoff logic. Takes priority over v4/v3.")
-                .font(.caption).foregroundStyle(Momentum.contentSecondary)
-        }
-    }
-    #endif
 
     private var criticVoicePicker: some View {
         VStack(alignment: .leading, spacing: 4) {

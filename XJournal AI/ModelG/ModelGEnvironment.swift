@@ -90,27 +90,30 @@ enum ModelGEnvironment {
 
     private static let v3OnlyDefaultsAppliedKey = "ai_product_defaults_v3_only_applied"
 
-    /// One-time migration: toolbar + settings → Model G v3; pin Core + v3 engine flags.
-    static func applyV3OnlyProductDefaultsIfNeeded() {
-        guard !UserDefaults.standard.bool(forKey: v3OnlyDefaultsAppliedKey) else { return }
-
-        let toolbarKey = "toolbar_ai_last_suggestion_model"
-        if UserDefaults.standard.string(forKey: toolbarKey) != SuggestionModel.modelGv3.rawValue {
-            UserDefaults.standard.set(SuggestionModel.modelGv3.rawValue, forKey: toolbarKey)
-        }
-
-        if UserDefaults.standard.data(forKey: "modelGv3_settings") == nil {
-            if let legacy = UserDefaults.standard.data(forKey: "modelG_settings") {
-                UserDefaults.standard.set(legacy, forKey: "modelGv3_settings")
-            } else if let legacyY = UserDefaults.standard.data(forKey: "modelY_settings") {
-                UserDefaults.standard.set(legacyY, forKey: "modelGv3_settings")
-            }
-        }
-
+    /// Pin the product to a single Model G path (planned verse + corpus). Legacy engine flags stay in UserDefaults but are forced off.
+    static func pinSingleModelGPipeline() {
+        UserDefaults.standard.set(SuggestionModel.modelG.rawValue, forKey: "toolbar_ai_last_suggestion_model")
         useModelGCore = true
-        useModelGv3 = true
+        useModelGv4 = true
+        useModelGv3 = false
+        useModelGv2 = false
+        useModelGv4_1 = false
+        useModelGL = false
+    }
 
-        UserDefaults.standard.set(true, forKey: v3OnlyDefaultsAppliedKey)
+    /// One-time settings copy, then re-pin the single Model G pipeline on every call so old toggles cannot resurrect.
+    static func applyV3OnlyProductDefaultsIfNeeded() {
+        if !UserDefaults.standard.bool(forKey: v3OnlyDefaultsAppliedKey) {
+            if UserDefaults.standard.data(forKey: "modelGv3_settings") == nil {
+                if let legacy = UserDefaults.standard.data(forKey: "modelG_settings") {
+                    UserDefaults.standard.set(legacy, forKey: "modelGv3_settings")
+                } else if let legacyY = UserDefaults.standard.data(forKey: "modelY_settings") {
+                    UserDefaults.standard.set(legacyY, forKey: "modelGv3_settings")
+                }
+            }
+            UserDefaults.standard.set(true, forKey: v3OnlyDefaultsAppliedKey)
+        }
+        pinSingleModelGPipeline()
     }
 }
 
@@ -148,12 +151,18 @@ struct GenerationContext {
     /// User-set syllables-per-bar range (nil = auto). Drives candidate selection + the bar rule.
     var syllableMin: Int? = nil
     var syllableMax: Int? = nil
+    /// Wrap pocket clock. Default 92 BPM, last stress on beats 3–4. Distinct from syllable *count*.
+    var barClock: BarClock? = nil
+    /// Model You: confirmed ArtistBrain prompt. Nil on Model G (house wrap).
+    var artistBrainPrompt: String? = nil
+    /// Model You RAG bars (confirmed chunks). Empty on Model G.
+    var artistBrainChunks: [String] = []
 }
 
 /// Compute Signal Layer axes (exposure / social action / register / audience) from the
 /// journal entry so Model G generation can condition on voice — not just theme/rhyme.
 /// Reuses the existing SignalIngest → SignalMode → SignalAxes pipeline. Nil for empty input.
-func computeModelGSignalAxes(from text: String) -> SignalAxes? {
+nonisolated func computeModelGSignalAxes(from text: String) -> SignalAxes? {
     let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
     guard !trimmed.isEmpty else { return nil }
     let metrics = SignalIngest.shared.analyzeBehavior(text: trimmed)

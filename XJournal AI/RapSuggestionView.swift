@@ -517,6 +517,7 @@ struct RapSuggestionView: View {
             suggestionThemeTags(suggestion)
             suggestionQualityIndicators(suggestion)
             feedbackLearningIndicator() // Show when feedback is being used
+            suggestionWrapNote(suggestion)
             suggestionSignalNote(suggestion)
             
             // "Tighten for authority" toggle (Layer 8 - Comparative Learning)
@@ -777,6 +778,27 @@ struct RapSuggestionView: View {
     }
     
     @ViewBuilder
+    private func suggestionWrapNote(_ suggestion: RapSuggestion) -> some View {
+        if let wrapNote = suggestion.wrapNote, !wrapNote.isEmpty {
+            VStack(alignment: .leading, spacing: 4) {
+                HStack(spacing: 4) {
+                    Image(systemName: "metronome")
+                        .font(.caption2)
+                        .foregroundStyle(Momentum.accent)
+                    Text("Wrap read")
+                        .font(.caption)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Momentum.accent)
+                }
+                Text(wrapNote)
+                    .font(.caption)
+                    .foregroundStyle(Momentum.contentSecondary)
+                    .multilineTextAlignment(.leading)
+            }
+        }
+    }
+
+    @ViewBuilder
     private func suggestionSignalNote(_ suggestion: RapSuggestion) -> some View {
         // Show Signal Note if available, otherwise fall back to reasoning
         if let signalNote = suggestion.signalNote {
@@ -1016,7 +1038,7 @@ struct RapSuggestionView: View {
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 )
-                .blendMode(.overlay)
+                .blendMode(SwiftUI.BlendMode.overlay)
             )
             .clipShape(RoundedRectangle(cornerRadius: 16))
     }
@@ -1661,7 +1683,7 @@ class RapSuggestionEngine: ObservableObject {
     @Published var fullTextLineCount: Int = 0
     @Published var previousLines: [String] = []
     
-    private let analysisEngine = RapAnalysisEngine()
+    private lazy var analysisEngine = RapAnalysisEngine()
     private let api = RapSuggestionAPI.shared
     private lazy var filter: ConstraintFilter = {
         // Access FJCMUDICTStore via global accessor function
@@ -1769,6 +1791,8 @@ class RapSuggestionEngine: ObservableObject {
             suggestionsV1 = []
             suggestionsV2 = []
             lastStandardGenerationModel = model
+            lastParallelDirectedParams = directedParams
+            lastParallelRhymeGroupsByID = rhymeGroupsByID
         }
         
         defer {
@@ -1778,6 +1802,8 @@ class RapSuggestionEngine: ObservableObject {
         }
         
         do {
+            try? await NewRapDatabase.shared.loadAllCSVs()
+
             // Step 1: Extract metrics
             await MainActor.run {
                 loadingStep = "Analyzing your verse..."
@@ -1847,8 +1873,9 @@ class RapSuggestionEngine: ObservableObject {
             )
             
             // Handle lexicon gate silence result
+            let wrapOn = directedParams?.gunnaWrap != false
             let allowedLexiconTerms: [LexiconTerm]
-            if case .silence(let commentary) = lexiconGateResult {
+            if case .silence(let commentary) = lexiconGateResult, !wrapOn {
                 #if DEBUG
                 print("Model G: Lexicon gate returned silence — \(commentary.reason)")
                 #endif
@@ -1872,7 +1899,7 @@ class RapSuggestionEngine: ObservableObject {
             
             // Step 2: Narrative analysis (skip when Model G Core — it derives intent from text)
             let narrative: NarrativeAnalysis
-            if ModelGEnvironment.useModelGCore && model == .modelG {
+            if (ModelGEnvironment.useModelGCore && model == .modelG) || model == .modelYou {
                 #if DEBUG
                 print("Model G: Skipping narrative analysis (Model G Core path)")
                 #endif
@@ -1895,9 +1922,11 @@ class RapSuggestionEngine: ObservableObject {
             
             // Step 4: Generate suggestions
             await MainActor.run {
-                loadingStep = ModelGEnvironment.useModelGCore && model == .modelG
+                loadingStep = model == .modelYou
+                    ? "Model You"
+                    : (ModelGEnvironment.useModelGCore && model == .modelG
                     ? "Model G Core"
-                    : "Generating from signal constraints..."
+                    : "Generating from signal constraints...")
             }
             #if DEBUG
             print("Model G: Calling generateSuggestions (useModelGCore=\(ModelGEnvironment.useModelGCore))...")
@@ -1943,8 +1972,9 @@ class RapSuggestionEngine: ObservableObject {
                 alignmentScores[index].totalScore >= alignmentThreshold
             }.map { $0.element }
             
-            // If no suggestions pass threshold, create silence commentary
-            if passingSuggestions.isEmpty && !finalSuggestions.isEmpty {
+            // If no suggestions pass threshold, create silence commentary —
+            // skip when wrap is on so pocket verses are not eaten by signal scoring.
+            if !wrapOn, passingSuggestions.isEmpty && !finalSuggestions.isEmpty {
                 let silenceCommentary = Self.createSilenceCommentary(
                     mode: signalMode,
                     profile: signalProfile,
@@ -2117,168 +2147,27 @@ class RapSuggestionEngine: ObservableObject {
         }
     }
     
-    /// Run Model G Core v1 and v2 in parallel; results go to suggestionsV1 (left) and suggestionsV2 (right) for side-by-side UI.
+    /// Legacy v1/v2 A/B entry. Phase 0: same single Model G path as `generateSuggestions`.
     func generateSuggestionsModelGParallel(text: String, highlights: [Highlight], bpm: Int? = nil, key: String? = nil, scale: String? = nil, syllableMin: Int? = nil, syllableMax: Int? = nil, directedParams: DirectedGenerationParams? = nil, rhymeGroupsByID: [RhymeGroupID: RhymeGroupSummary]? = nil, audioURL: URL? = nil, transcriptionRhythmMapData: Data? = nil, noteKey: String? = nil, noteTitle: String = "", persistTo item: Item? = nil) async {
-        await MainActor.run {
-            isLoading = true
-            error = nil
-            clearHumanCritic()
-            suggestions = []
-            suggestionsV1 = []
-            suggestionsV2 = []
-            silenceCommentary = nil
-            isParallelModelG = false
-            loadingStep = "Model G v1 & v2..."
-            lastStandardGenerationModel = .modelG
-        }
-        defer {
-            Task { @MainActor in
-                isLoading = false
-            }
-        }
-        do {
-            await MainActor.run { loadingStep = "Analyzing your verse..." }
-            let metrics = analysisEngine.extractMetrics(text: text, highlights: highlights, bpm: bpm, key: key, scale: scale, syllableMin: syllableMin, syllableMax: syllableMax)
-            let allLines = text.split(separator: "\n", omittingEmptySubsequences: false).map { String($0) }
-            let previousLines = Array(allLines.suffix(6))
-            let fullTextLineCount = allLines.count
-            let contextLineCount = min(6, fullTextLineCount)
-            await MainActor.run {
-                self.previousLines = previousLines
-                self.fullTextLineCount = fullTextLineCount
-                self.contextLineCount = contextLineCount
-            }
-            let signalMetrics = SignalIngest.shared.analyzeBehavior(text: text)
-            let signalProfile = SignalIngest.shared.extractSignalProfile(text: text)
-            let signalMode = SignalMode.resolveMode(from: signalMetrics)
-            let signalAxes = SignalAxes.calibrateAxes(metrics: signalMetrics, mode: signalMode)
-            await MainActor.run {
-                currentSignalMode = signalMode
-                currentSignalProfile = signalProfile
-            }
-            let registerProfile = RegisterProfile.inferRegisters(from: signalMetrics)
-            let constraints = SignalConstraintEngine.shared.generateConstraints(mode: signalMode, axes: signalAxes)
-            await MainActor.run { loadingStep = "Filtering lexicon terms..." }
-            let lexiconGate = LexiconGate.shared
-            let lexiconGateResult = lexiconGate.filterAllowedTerms(
-                text: text,
-                axes: signalAxes,
-                profile: signalProfile,
-                scene: nil,
-                isKnownArtist: false
-            )
-            if case .silence(let commentary) = lexiconGateResult {
-                await MainActor.run {
-                    self.silenceCommentary = commentary
-                    self.suggestionsV1 = []
-                    self.suggestionsV2 = []
-                    loadingStep = nil
-                }
-                return
-            }
-            let allowedLexiconTerms: [LexiconTerm]
-            if case .allowed(let terms) = lexiconGateResult {
-                allowedLexiconTerms = terms
-            } else {
-                allowedLexiconTerms = []
-            }
-            let narrative: NarrativeAnalysis = .modelGCorePlaceholder
-            let modelSettings = api.loadModelSettings(for: .modelG)
-            let userDetails = api.loadUserPersonalDetails()
-            await MainActor.run { loadingStep = "Model G v1 & v2..." }
-            let resolvedThemeIDs = item?.selectedThemeIDs ?? []
-            async let v1Task = api.generateSuggestions(
-                candidates: [],
-                metrics: metrics,
-                narrative: narrative,
-                model: .modelG,
-                settings: modelSettings,
-                userDetails: userDetails,
-                constraints: constraints,
-                registers: registerProfile,
-                signalProfile: signalProfile,
-                signalAxes: signalAxes,
-                allowedLexiconTerms: allowedLexiconTerms,
-                directedParams: directedParams,
-                selectedThemeIDs: resolvedThemeIDs,
-                rhymeGroupsByID: rhymeGroupsByID,
-                audioURL: audioURL,
-                transcriptionRhythmMapData: transcriptionRhythmMapData,
-                modelGVariantOverride: false
-            )
-            async let v2Task = api.generateSuggestions(
-                candidates: [],
-                metrics: metrics,
-                narrative: narrative,
-                model: .modelG,
-                settings: modelSettings,
-                userDetails: userDetails,
-                constraints: constraints,
-                registers: registerProfile,
-                signalProfile: signalProfile,
-                signalAxes: signalAxes,
-                allowedLexiconTerms: allowedLexiconTerms,
-                directedParams: directedParams,
-                selectedThemeIDs: resolvedThemeIDs,
-                rhymeGroupsByID: rhymeGroupsByID,
-                audioURL: audioURL,
-                transcriptionRhythmMapData: transcriptionRhythmMapData,
-                modelGVariantOverride: true
-            )
-            var resultsV1: [RapSuggestion] = []
-            var resultsV2: [RapSuggestion] = []
-            do { resultsV1 = try await v1Task } catch {
-                #if DEBUG
-                print("Model G parallel: v1 failed — \(error)")
-                #endif
-            }
-            do { resultsV2 = try await v2Task } catch {
-                #if DEBUG
-                print("Model G parallel: v2 failed — \(error)")
-                #endif
-            }
-            await MainActor.run {
-                self.suggestionsV1 = resultsV1
-                self.suggestionsV2 = resultsV2
-                self.isParallelModelG = true
-                self.lastParallelDirectedParams = directedParams
-                self.lastParallelRhymeGroupsByID = rhymeGroupsByID
-                self.error = nil
-                self.silenceCommentary = nil
-                self.loadingStep = nil
-                let batch = resultsV1 + resultsV2
-                self.commitGeneration(
-                    batch: batch,
-                    contextText: text,
-                    model: .modelG,
-                    noteKey: noteKey,
-                    noteTitle: noteTitle,
-                    persistTo: item
-                )
-                let primary = resultsV1.first ?? resultsV2.first
-                let themes = Array(Set(batch.flatMap(\.themes))).prefix(6).map { $0 }
-                self.refreshHumanCritic(
-                    userVerse: text,
-                    primarySuggestion: primary,
-                    themes: themes,
-                    persistTo: item,
-                    model: .modelG
-                )
-            }
-        } catch {
-            #if DEBUG
-            print("Model G parallel: Error — \(error)")
-            #endif
-            await MainActor.run {
-                self.error = error.localizedDescription
-                self.suggestionsV1 = []
-                self.suggestionsV2 = []
-                self.isParallelModelG = false
-                self.loadingStep = nil
-                AppErrorRecovery.postInAppError(from: error)
-            }
-        }
+        await generateSuggestions(
+            text: text,
+            highlights: highlights,
+            model: .modelG,
+            bpm: bpm,
+            key: key,
+            scale: scale,
+            syllableMin: syllableMin,
+            syllableMax: syllableMax,
+            directedParams: directedParams,
+            rhymeGroupsByID: rhymeGroupsByID,
+            audioURL: audioURL,
+            transcriptionRhythmMapData: transcriptionRhythmMapData,
+            noteKey: noteKey,
+            noteTitle: noteTitle,
+            persistTo: item
+        )
     }
+
     
     // MARK: - Silence Commentary
     

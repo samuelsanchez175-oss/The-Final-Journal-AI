@@ -50,6 +50,7 @@ struct GenerationCardView: View {
             VStack(alignment: .leading, spacing: 14) {
                 ForEach(generation.suggestions) { suggestion in
                     lyrics(for: suggestion)
+                    decisionRead(for: suggestion)
                 }
 
                 Divider()
@@ -78,7 +79,10 @@ struct GenerationCardView: View {
             var map: [UUID: [AttributedString]] = [:]
             for suggestion in generation.suggestions {
                 let (_, highlights) = await RhymeHighlighterEngine.computeAll(text: suggestion.text)
-                let spans = highlights.map { (range: $0.range, colorIndex: $0.colorIndex) }
+                let spans = highlights.compactMap { h -> (range: Range<String.Index>, colorIndex: Int)? in
+                    guard let range = h.stringRange(in: suggestion.text) else { return nil }
+                    return (range, h.colorIndex)
+                }
                 map[suggestion.id] = RhymeHighlightRenderer.perLineAttributed(fullText: suggestion.text, spans: spans)
             }
             rhymeBySuggestion = map
@@ -107,6 +111,40 @@ struct GenerationCardView: View {
                     )
                 }
             }
+        }
+    }
+
+    @ViewBuilder
+    private func decisionRead(for suggestion: RapSuggestion) -> some View {
+        let lines = suggestion.text.components(separatedBy: "\n").filter { !$0.isEmpty }
+        let scheme = RhymeHighlighterEngine.endRhymeScheme(lines: lines, dict: getGlobalCMUDICTStore())
+        VStack(alignment: .leading, spacing: 6) {
+            if !scheme.label.isEmpty {
+                labeledBit(title: "Rhyme scheme", body: scheme.label)
+            }
+            let ends = scheme.ends.filter { !$0.isEmpty }.prefix(8)
+            if !ends.isEmpty {
+                labeledBit(title: "Line ends", body: ends.joined(separator: " · "))
+            }
+            if let wrap = suggestion.wrapNote, !wrap.isEmpty {
+                labeledBit(title: "Wrap read", body: wrap)
+            }
+            if let signal = suggestion.signalNote, !signal.isEmpty {
+                labeledBit(title: "How it scored", body: signal)
+            }
+        }
+        .padding(.top, 8)
+    }
+
+    private func labeledBit(title: String, body: String) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(title)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(Momentum.accent)
+            Text(body)
+                .font(.caption)
+                .foregroundStyle(Momentum.contentSecondary)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 }

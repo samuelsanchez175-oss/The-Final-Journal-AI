@@ -1,0 +1,1210 @@
+{
+  "keep": [
+    {
+      "chip": "Kobe",
+      "bars": 647,
+      "wiki": "Kobe Bryant",
+      "kind": "nba",
+      "query": "kobe"
+    },
+    {
+      "chip": "Michael Jackson",
+      "bars": 412,
+      "wiki": "Michael Jackson",
+      "kind": "celeb",
+      "query": "\"michael jackson\" OR \"mj\""
+    },
+    {
+      "chip": "Prince",
+      "bars": 412,
+      "wiki": "Prince (musician)",
+      "kind": "celeb",
+      "query": "prince"
+    },
+    {
+      "chip": "LeBron",
+      "bars": 389,
+      "wiki": "LeBron James",
+      "kind": "nba",
+      "query": "lebron OR \"le bron\""
+    },
+    {
+      "chip": "Obama",
+      "bars": 361,
+      "wiki": "Barack Obama",
+      "kind": "celeb",
+      "query": "obama"
+    },
+    {
+      "chip": "Curry",
+      "bars": 335,
+      "wiki": "Stephen Curry",
+      "kind": "nba",
+      "query": "curry OR steph"
+    },
+    {
+      "chip": "The Rock",
+      "bars": 287,
+      "wiki": "Dwayne Johnson",
+      "kind": "actor",
+      "query": "\"the rock\" OR \"dwayne johnson\""
+    },
+    {
+      "chip": "Iverson",
+      "bars": 280,
+      "wiki": "Allen Iverson",
+      "kind": "nba",
+      "query": "iverson OR \"ai\""
+    },
+    {
+      "chip": "MJ",
+      "bars": 274,
+      "wiki": "Michael Jordan",
+      "kind": "nba",
+      "query": "\"michael jordan\" OR \"mj\""
+    },
+    {
+      "chip": "Shaq",
+      "bars": 250,
+      "wiki": "Shaquille O'Neal",
+      "kind": "nba",
+      "query": "shaq OR shaquille"
+    },
+    {
+      "chip": "Beyonce",
+      "bars": 238,
+      "wiki": "Beyonc\u00e9",
+      "kind": "celeb",
+      "query": "beyonce OR beyonc\u00e9"
+    },
+    {
+      "chip": "Rihanna",
+      "bars": 204,
+      "wiki": "Rihanna",
+      "kind": "celeb",
+      "query": "rihanna OR rih"
+    },
+    {
+      "chip": "Dame",
+      "bars": 190,
+      "wiki": "Damian Lillard",
+      "kind": "nba",
+      "query": "lillard OR dame"
+    },
+    {
+      "chip": "Pippen",
+      "bars": 187,
+      "wiki": "Scottie Pippen",
+      "kind": "nba",
+      "query": "pippen"
+    },
+    {
+      "chip": "Oprah",
+      "bars": 166,
+      "wiki": "Oprah Winfrey",
+      "kind": "celeb",
+      "query": "oprah"
+    },
+    {
+      "chip": "KD",
+      "bars": 163,
+      "wiki": "Kevin Durant",
+      "kind": "nba",
+      "query": "\"kd\" OR durant"
+    },
+    {
+      "chip": "AD",
+      "bars": 163,
+      "wiki": "Anthony Davis",
+      "kind": "nba",
+      "query": "\"anthony davis\" OR \"ad\""
+    },
+    {
+      "chip": "Harden",
+      "bars": 151,
+      "wiki": "James Harden",
+      "kind": "nba",
+      "query": "harden OR \"the beard\""
+    },
+    {
+      "chip": "Randy Moss",
+      "bars": 143,
+      "wiki": "Randy Moss",
+      "kind": "nfl",
+      "query": "\"randy moss\" OR moss"
+    },
+    {
+      "chip": "Brady",
+      "bars": 139,
+      "wiki": "Tom Brady",
+      "kind": "nfl",
+      "query": "brady"
+    },
+    {
+      "chip": "Scarface",
+      "bars": 130,
+      "wiki": "Al Pacino",
+      "kind": "actor",
+      "query": "scarface"
+    },
+    {
+      "chip": "Vick",
+      "bars": 123,
+      "wiki": "Michael Vick",
+      "kind": "nfl",
+      "query": "\"michael vick\" OR vick"
+    },
+    {
+      "chip": "TO",
+      "bars": 117,
+      "wiki": "Terrell Owens",
+      "kind": "nfl",
+      "query": "\"terrell owens\" OR \"t.o.\""
+    },
+    {
+      "chip": "Kim K",
+      "bars": 108,
+      "wiki": "Kim Kardashian",
+      "kind": "celeb",
+      "query": "\"kim k\" OR kardashian"
+    },
+    {
+      "chip": "Elvis",
+      "bars": 106,
+      "wiki": "Elvis Presley",
+      "kind": "celeb",
+      "query": "elvis"
+    },
+    {
+      "chip": "Odell",
+      "bars": 100,
+      "wiki": "Odell Beckham Jr.",
+      "kind": "nfl",
+      "query": "odell OR obj OR beckham"
+    },
+    {
+      "chip": "Marilyn",
+      "bars": 99,
+      "wiki": "Marilyn Monroe",
+      "kind": "celeb",
+      "query": "marilyn"
+    },
+    {
+      "chip": "Deion",
+      "bars": 87,
+      "wiki": "Deion Sanders",
+      "kind": "nfl",
+      "query": "deion OR primetime OR \"prime time\""
+    },
+    {
+      "chip": "Melo",
+      "bars": 85,
+      "wiki": "Carmelo Anthony",
+      "kind": "nba",
+      "query": "melo OR anthony"
+    },
+    {
+      "chip": "CP3",
+      "bars": 85,
+      "wiki": "Chris Paul",
+      "kind": "nba",
+      "query": "cp3 OR \"chris paul\""
+    },
+    {
+      "chip": "Kylie",
+      "bars": 84,
+      "wiki": "Kylie Jenner",
+      "kind": "celeb",
+      "query": "kylie"
+    },
+    {
+      "chip": "Will Smith",
+      "bars": 73,
+      "wiki": "Will Smith",
+      "kind": "actor",
+      "query": "\"will smith\""
+    },
+    {
+      "chip": "Jada",
+      "bars": 72,
+      "wiki": "Jada Pinkett Smith",
+      "kind": "celeb",
+      "query": "\"jada\""
+    },
+    {
+      "chip": "Wade",
+      "bars": 71,
+      "wiki": "Dwyane Wade",
+      "kind": "nba",
+      "query": "\"d wade\" OR dwade OR wade"
+    },
+    {
+      "chip": "T-Mac",
+      "bars": 64,
+      "wiki": "Tracy McGrady",
+      "kind": "nba",
+      "query": "tmac OR \"t-mac\" OR mcgrady"
+    },
+    {
+      "chip": "Kareem",
+      "bars": 63,
+      "wiki": "Kareem Abdul-Jabbar",
+      "kind": "nba",
+      "query": "kareem"
+    },
+    {
+      "chip": "Vince Carter",
+      "bars": 62,
+      "wiki": "Vince Carter",
+      "kind": "nba",
+      "query": "\"vince carter\""
+    },
+    {
+      "chip": "Westbrook",
+      "bars": 61,
+      "wiki": "Russell Westbrook",
+      "kind": "nba",
+      "query": "westbrook OR russ"
+    },
+    {
+      "chip": "Selena",
+      "bars": 61,
+      "wiki": "Selena Quintanilla",
+      "kind": "celeb",
+      "query": "selena"
+    },
+    {
+      "chip": "De Niro",
+      "bars": 53,
+      "wiki": "Robert De Niro",
+      "kind": "actor",
+      "query": "\"de niro\" OR deniro"
+    },
+    {
+      "chip": "Zion",
+      "bars": 49,
+      "wiki": "Zion Williamson",
+      "kind": "nba",
+      "query": "zion"
+    },
+    {
+      "chip": "Denzel",
+      "bars": 46,
+      "wiki": "Denzel Washington",
+      "kind": "actor",
+      "query": "denzel"
+    },
+    {
+      "chip": "Tom Cruise",
+      "bars": 46,
+      "wiki": "Tom Cruise",
+      "kind": "actor",
+      "query": "\"tom cruise\""
+    },
+    {
+      "chip": "Jerry Rice",
+      "bars": 45,
+      "wiki": "Jerry Rice",
+      "kind": "nfl",
+      "query": "\"jerry rice\""
+    },
+    {
+      "chip": "Rice",
+      "bars": 45,
+      "wiki": "Jerry Rice",
+      "kind": "nfl",
+      "query": "\"jerry rice\""
+    },
+    {
+      "chip": "Dirk",
+      "bars": 44,
+      "wiki": "Dirk Nowitzki",
+      "kind": "nba",
+      "query": "dirk"
+    },
+    {
+      "chip": "Tyler Perry",
+      "bars": 40,
+      "wiki": "Tyler Perry",
+      "kind": "actor",
+      "query": "\"tyler perry\""
+    },
+    {
+      "chip": "Chris Rock",
+      "bars": 40,
+      "wiki": "Chris Rock",
+      "kind": "celeb",
+      "query": "\"chris rock\""
+    },
+    {
+      "chip": "Halle",
+      "bars": 39,
+      "wiki": "Halle Berry",
+      "kind": "celeb",
+      "query": "\"halle berry\""
+    },
+    {
+      "chip": "Adele",
+      "bars": 39,
+      "wiki": "Adele",
+      "kind": "celeb",
+      "query": "adele"
+    },
+    {
+      "chip": "Pacino",
+      "bars": 38,
+      "wiki": "Al Pacino",
+      "kind": "actor",
+      "query": "pacino"
+    },
+    {
+      "chip": "Taylor Swift",
+      "bars": 38,
+      "wiki": "Taylor Swift",
+      "kind": "celeb",
+      "query": "\"taylor swift\""
+    },
+    {
+      "chip": "Bird",
+      "bars": 35,
+      "wiki": "Larry Bird",
+      "kind": "nba",
+      "query": "\"larry bird\""
+    },
+    {
+      "chip": "Duncan",
+      "bars": 32,
+      "wiki": "Tim Duncan",
+      "kind": "nba",
+      "query": "\"tim duncan\""
+    },
+    {
+      "chip": "Leonardo",
+      "bars": 32,
+      "wiki": "Leonardo DiCaprio",
+      "kind": "actor",
+      "query": "dicaprio OR leonardo"
+    },
+    {
+      "chip": "Brad Pitt",
+      "bars": 31,
+      "wiki": "Brad Pitt",
+      "kind": "actor",
+      "query": "\"brad pitt\""
+    },
+    {
+      "chip": "Kevin Hart",
+      "bars": 31,
+      "wiki": "Kevin Hart",
+      "kind": "celeb",
+      "query": "\"kevin hart\""
+    },
+    {
+      "chip": "Giannis",
+      "bars": 30,
+      "wiki": "Giannis Antetokounmpo",
+      "kind": "nba",
+      "query": "giannis"
+    },
+    {
+      "chip": "Mahomes",
+      "bars": 30,
+      "wiki": "Patrick Mahomes",
+      "kind": "nfl",
+      "query": "mahomes"
+    },
+    {
+      "chip": "Angelina",
+      "bars": 30,
+      "wiki": "Angelina Jolie",
+      "kind": "celeb",
+      "query": "angelina OR jolie"
+    },
+    {
+      "chip": "Megatron",
+      "bars": 28,
+      "wiki": "Calvin Johnson",
+      "kind": "nfl",
+      "query": "megatron OR \"calvin johnson\""
+    },
+    {
+      "chip": "Eddie Murphy",
+      "bars": 27,
+      "wiki": "Eddie Murphy",
+      "kind": "actor",
+      "query": "\"eddie murphy\""
+    },
+    {
+      "chip": "Klay",
+      "bars": 25,
+      "wiki": "Klay Thompson",
+      "kind": "nba",
+      "query": "klay"
+    },
+    {
+      "chip": "Ja",
+      "bars": 25,
+      "wiki": "Ja Morant",
+      "kind": "nba",
+      "query": "\"ja morant\""
+    },
+    {
+      "chip": "Jamie Foxx",
+      "bars": 25,
+      "wiki": "Jamie Foxx",
+      "kind": "actor",
+      "query": "\"jamie foxx\""
+    },
+    {
+      "chip": "Kendall",
+      "bars": 25,
+      "wiki": "Kendall Jenner",
+      "kind": "celeb",
+      "query": "kendall"
+    },
+    {
+      "chip": "Dave Chappelle",
+      "bars": 25,
+      "wiki": "Dave Chappelle",
+      "kind": "celeb",
+      "query": "chappelle"
+    },
+    {
+      "chip": "Tatum",
+      "bars": 23,
+      "wiki": "Jayson Tatum",
+      "kind": "nba",
+      "query": "tatum"
+    },
+    {
+      "chip": "JLo",
+      "bars": 22,
+      "wiki": "Jennifer Lopez",
+      "kind": "celeb",
+      "query": "jlo OR \"jennifer lopez\""
+    },
+    {
+      "chip": "Kawhi",
+      "bars": 21,
+      "wiki": "Kawhi Leonard",
+      "kind": "nba",
+      "query": "kawhi"
+    },
+    {
+      "chip": "Booker",
+      "bars": 19,
+      "wiki": "Devin Booker",
+      "kind": "nba",
+      "query": "\"devin booker\" OR booker"
+    },
+    {
+      "chip": "KG",
+      "bars": 18,
+      "wiki": "Kevin Garnett",
+      "kind": "nba",
+      "query": "\"kg\" OR garnett"
+    },
+    {
+      "chip": "Cam",
+      "bars": 18,
+      "wiki": "Cam Newton",
+      "kind": "nfl",
+      "query": "\"cam newton\""
+    },
+    {
+      "chip": "Magic",
+      "bars": 16,
+      "wiki": "Magic Johnson",
+      "kind": "nba",
+      "query": "\"magic johnson\""
+    },
+    {
+      "chip": "Luka",
+      "bars": 15,
+      "wiki": "Luka Don\u010di\u0107",
+      "kind": "nba",
+      "query": "luka"
+    },
+    {
+      "chip": "Iman",
+      "bars": 13,
+      "wiki": "Iman (model)",
+      "kind": "celeb",
+      "query": "iman"
+    },
+    {
+      "chip": "Zendaya",
+      "bars": 12,
+      "wiki": "Zendaya",
+      "kind": "celeb",
+      "query": "zendaya"
+    },
+    {
+      "chip": "Tyreek",
+      "bars": 10,
+      "wiki": "Tyreek Hill",
+      "kind": "nfl",
+      "query": "tyreek"
+    },
+    {
+      "chip": "Burrow",
+      "bars": 10,
+      "wiki": "Joe Burrow",
+      "kind": "nfl",
+      "query": "burrow OR \"joe burrow\""
+    },
+    {
+      "chip": "Lamar",
+      "bars": 9,
+      "wiki": "Lamar Jackson",
+      "kind": "nfl",
+      "query": "\"lamar jackson\""
+    },
+    {
+      "chip": "Jokic",
+      "bars": 8,
+      "wiki": "Nikola Joki\u0107",
+      "kind": "nba",
+      "query": "jokic"
+    },
+    {
+      "chip": "Vin Diesel",
+      "bars": 8,
+      "wiki": "Vin Diesel",
+      "kind": "actor",
+      "query": "\"vin diesel\""
+    }
+  ],
+  "all": [
+    {
+      "chip": "Kobe",
+      "bars": 647,
+      "wiki": "Kobe Bryant",
+      "kind": "nba",
+      "query": "kobe"
+    },
+    {
+      "chip": "Michael Jackson",
+      "bars": 412,
+      "wiki": "Michael Jackson",
+      "kind": "celeb",
+      "query": "\"michael jackson\" OR \"mj\""
+    },
+    {
+      "chip": "Prince",
+      "bars": 412,
+      "wiki": "Prince (musician)",
+      "kind": "celeb",
+      "query": "prince"
+    },
+    {
+      "chip": "LeBron",
+      "bars": 389,
+      "wiki": "LeBron James",
+      "kind": "nba",
+      "query": "lebron OR \"le bron\""
+    },
+    {
+      "chip": "Obama",
+      "bars": 361,
+      "wiki": "Barack Obama",
+      "kind": "celeb",
+      "query": "obama"
+    },
+    {
+      "chip": "Curry",
+      "bars": 335,
+      "wiki": "Stephen Curry",
+      "kind": "nba",
+      "query": "curry OR steph"
+    },
+    {
+      "chip": "The Rock",
+      "bars": 287,
+      "wiki": "Dwayne Johnson",
+      "kind": "actor",
+      "query": "\"the rock\" OR \"dwayne johnson\""
+    },
+    {
+      "chip": "Iverson",
+      "bars": 280,
+      "wiki": "Allen Iverson",
+      "kind": "nba",
+      "query": "iverson OR \"ai\""
+    },
+    {
+      "chip": "MJ",
+      "bars": 274,
+      "wiki": "Michael Jordan",
+      "kind": "nba",
+      "query": "\"michael jordan\" OR \"mj\""
+    },
+    {
+      "chip": "Shaq",
+      "bars": 250,
+      "wiki": "Shaquille O'Neal",
+      "kind": "nba",
+      "query": "shaq OR shaquille"
+    },
+    {
+      "chip": "Beyonce",
+      "bars": 238,
+      "wiki": "Beyonc\u00e9",
+      "kind": "celeb",
+      "query": "beyonce OR beyonc\u00e9"
+    },
+    {
+      "chip": "Rihanna",
+      "bars": 204,
+      "wiki": "Rihanna",
+      "kind": "celeb",
+      "query": "rihanna OR rih"
+    },
+    {
+      "chip": "Dame",
+      "bars": 190,
+      "wiki": "Damian Lillard",
+      "kind": "nba",
+      "query": "lillard OR dame"
+    },
+    {
+      "chip": "Pippen",
+      "bars": 187,
+      "wiki": "Scottie Pippen",
+      "kind": "nba",
+      "query": "pippen"
+    },
+    {
+      "chip": "Oprah",
+      "bars": 166,
+      "wiki": "Oprah Winfrey",
+      "kind": "celeb",
+      "query": "oprah"
+    },
+    {
+      "chip": "KD",
+      "bars": 163,
+      "wiki": "Kevin Durant",
+      "kind": "nba",
+      "query": "\"kd\" OR durant"
+    },
+    {
+      "chip": "AD",
+      "bars": 163,
+      "wiki": "Anthony Davis",
+      "kind": "nba",
+      "query": "\"anthony davis\" OR \"ad\""
+    },
+    {
+      "chip": "Harden",
+      "bars": 151,
+      "wiki": "James Harden",
+      "kind": "nba",
+      "query": "harden OR \"the beard\""
+    },
+    {
+      "chip": "Randy Moss",
+      "bars": 143,
+      "wiki": "Randy Moss",
+      "kind": "nfl",
+      "query": "\"randy moss\" OR moss"
+    },
+    {
+      "chip": "Brady",
+      "bars": 139,
+      "wiki": "Tom Brady",
+      "kind": "nfl",
+      "query": "brady"
+    },
+    {
+      "chip": "Scarface",
+      "bars": 130,
+      "wiki": "Al Pacino",
+      "kind": "actor",
+      "query": "scarface"
+    },
+    {
+      "chip": "Vick",
+      "bars": 123,
+      "wiki": "Michael Vick",
+      "kind": "nfl",
+      "query": "\"michael vick\" OR vick"
+    },
+    {
+      "chip": "TO",
+      "bars": 117,
+      "wiki": "Terrell Owens",
+      "kind": "nfl",
+      "query": "\"terrell owens\" OR \"t.o.\""
+    },
+    {
+      "chip": "Kim K",
+      "bars": 108,
+      "wiki": "Kim Kardashian",
+      "kind": "celeb",
+      "query": "\"kim k\" OR kardashian"
+    },
+    {
+      "chip": "Elvis",
+      "bars": 106,
+      "wiki": "Elvis Presley",
+      "kind": "celeb",
+      "query": "elvis"
+    },
+    {
+      "chip": "Odell",
+      "bars": 100,
+      "wiki": "Odell Beckham Jr.",
+      "kind": "nfl",
+      "query": "odell OR obj OR beckham"
+    },
+    {
+      "chip": "Marilyn",
+      "bars": 99,
+      "wiki": "Marilyn Monroe",
+      "kind": "celeb",
+      "query": "marilyn"
+    },
+    {
+      "chip": "Deion",
+      "bars": 87,
+      "wiki": "Deion Sanders",
+      "kind": "nfl",
+      "query": "deion OR primetime OR \"prime time\""
+    },
+    {
+      "chip": "Melo",
+      "bars": 85,
+      "wiki": "Carmelo Anthony",
+      "kind": "nba",
+      "query": "melo OR anthony"
+    },
+    {
+      "chip": "CP3",
+      "bars": 85,
+      "wiki": "Chris Paul",
+      "kind": "nba",
+      "query": "cp3 OR \"chris paul\""
+    },
+    {
+      "chip": "Kylie",
+      "bars": 84,
+      "wiki": "Kylie Jenner",
+      "kind": "celeb",
+      "query": "kylie"
+    },
+    {
+      "chip": "Will Smith",
+      "bars": 73,
+      "wiki": "Will Smith",
+      "kind": "actor",
+      "query": "\"will smith\""
+    },
+    {
+      "chip": "Jada",
+      "bars": 72,
+      "wiki": "Jada Pinkett Smith",
+      "kind": "celeb",
+      "query": "\"jada\""
+    },
+    {
+      "chip": "Wade",
+      "bars": 71,
+      "wiki": "Dwyane Wade",
+      "kind": "nba",
+      "query": "\"d wade\" OR dwade OR wade"
+    },
+    {
+      "chip": "T-Mac",
+      "bars": 64,
+      "wiki": "Tracy McGrady",
+      "kind": "nba",
+      "query": "tmac OR \"t-mac\" OR mcgrady"
+    },
+    {
+      "chip": "Kareem",
+      "bars": 63,
+      "wiki": "Kareem Abdul-Jabbar",
+      "kind": "nba",
+      "query": "kareem"
+    },
+    {
+      "chip": "Vince Carter",
+      "bars": 62,
+      "wiki": "Vince Carter",
+      "kind": "nba",
+      "query": "\"vince carter\""
+    },
+    {
+      "chip": "Westbrook",
+      "bars": 61,
+      "wiki": "Russell Westbrook",
+      "kind": "nba",
+      "query": "westbrook OR russ"
+    },
+    {
+      "chip": "Selena",
+      "bars": 61,
+      "wiki": "Selena Quintanilla",
+      "kind": "celeb",
+      "query": "selena"
+    },
+    {
+      "chip": "De Niro",
+      "bars": 53,
+      "wiki": "Robert De Niro",
+      "kind": "actor",
+      "query": "\"de niro\" OR deniro"
+    },
+    {
+      "chip": "Zion",
+      "bars": 49,
+      "wiki": "Zion Williamson",
+      "kind": "nba",
+      "query": "zion"
+    },
+    {
+      "chip": "Denzel",
+      "bars": 46,
+      "wiki": "Denzel Washington",
+      "kind": "actor",
+      "query": "denzel"
+    },
+    {
+      "chip": "Tom Cruise",
+      "bars": 46,
+      "wiki": "Tom Cruise",
+      "kind": "actor",
+      "query": "\"tom cruise\""
+    },
+    {
+      "chip": "Jerry Rice",
+      "bars": 45,
+      "wiki": "Jerry Rice",
+      "kind": "nfl",
+      "query": "\"jerry rice\""
+    },
+    {
+      "chip": "Rice",
+      "bars": 45,
+      "wiki": "Jerry Rice",
+      "kind": "nfl",
+      "query": "\"jerry rice\""
+    },
+    {
+      "chip": "Dirk",
+      "bars": 44,
+      "wiki": "Dirk Nowitzki",
+      "kind": "nba",
+      "query": "dirk"
+    },
+    {
+      "chip": "Tyler Perry",
+      "bars": 40,
+      "wiki": "Tyler Perry",
+      "kind": "actor",
+      "query": "\"tyler perry\""
+    },
+    {
+      "chip": "Chris Rock",
+      "bars": 40,
+      "wiki": "Chris Rock",
+      "kind": "celeb",
+      "query": "\"chris rock\""
+    },
+    {
+      "chip": "Halle",
+      "bars": 39,
+      "wiki": "Halle Berry",
+      "kind": "celeb",
+      "query": "\"halle berry\""
+    },
+    {
+      "chip": "Adele",
+      "bars": 39,
+      "wiki": "Adele",
+      "kind": "celeb",
+      "query": "adele"
+    },
+    {
+      "chip": "Pacino",
+      "bars": 38,
+      "wiki": "Al Pacino",
+      "kind": "actor",
+      "query": "pacino"
+    },
+    {
+      "chip": "Taylor Swift",
+      "bars": 38,
+      "wiki": "Taylor Swift",
+      "kind": "celeb",
+      "query": "\"taylor swift\""
+    },
+    {
+      "chip": "Bird",
+      "bars": 35,
+      "wiki": "Larry Bird",
+      "kind": "nba",
+      "query": "\"larry bird\""
+    },
+    {
+      "chip": "Duncan",
+      "bars": 32,
+      "wiki": "Tim Duncan",
+      "kind": "nba",
+      "query": "\"tim duncan\""
+    },
+    {
+      "chip": "Leonardo",
+      "bars": 32,
+      "wiki": "Leonardo DiCaprio",
+      "kind": "actor",
+      "query": "dicaprio OR leonardo"
+    },
+    {
+      "chip": "Brad Pitt",
+      "bars": 31,
+      "wiki": "Brad Pitt",
+      "kind": "actor",
+      "query": "\"brad pitt\""
+    },
+    {
+      "chip": "Kevin Hart",
+      "bars": 31,
+      "wiki": "Kevin Hart",
+      "kind": "celeb",
+      "query": "\"kevin hart\""
+    },
+    {
+      "chip": "Giannis",
+      "bars": 30,
+      "wiki": "Giannis Antetokounmpo",
+      "kind": "nba",
+      "query": "giannis"
+    },
+    {
+      "chip": "Mahomes",
+      "bars": 30,
+      "wiki": "Patrick Mahomes",
+      "kind": "nfl",
+      "query": "mahomes"
+    },
+    {
+      "chip": "Angelina",
+      "bars": 30,
+      "wiki": "Angelina Jolie",
+      "kind": "celeb",
+      "query": "angelina OR jolie"
+    },
+    {
+      "chip": "Megatron",
+      "bars": 28,
+      "wiki": "Calvin Johnson",
+      "kind": "nfl",
+      "query": "megatron OR \"calvin johnson\""
+    },
+    {
+      "chip": "Eddie Murphy",
+      "bars": 27,
+      "wiki": "Eddie Murphy",
+      "kind": "actor",
+      "query": "\"eddie murphy\""
+    },
+    {
+      "chip": "Klay",
+      "bars": 25,
+      "wiki": "Klay Thompson",
+      "kind": "nba",
+      "query": "klay"
+    },
+    {
+      "chip": "Ja",
+      "bars": 25,
+      "wiki": "Ja Morant",
+      "kind": "nba",
+      "query": "\"ja morant\""
+    },
+    {
+      "chip": "Jamie Foxx",
+      "bars": 25,
+      "wiki": "Jamie Foxx",
+      "kind": "actor",
+      "query": "\"jamie foxx\""
+    },
+    {
+      "chip": "Kendall",
+      "bars": 25,
+      "wiki": "Kendall Jenner",
+      "kind": "celeb",
+      "query": "kendall"
+    },
+    {
+      "chip": "Dave Chappelle",
+      "bars": 25,
+      "wiki": "Dave Chappelle",
+      "kind": "celeb",
+      "query": "chappelle"
+    },
+    {
+      "chip": "Tatum",
+      "bars": 23,
+      "wiki": "Jayson Tatum",
+      "kind": "nba",
+      "query": "tatum"
+    },
+    {
+      "chip": "JLo",
+      "bars": 22,
+      "wiki": "Jennifer Lopez",
+      "kind": "celeb",
+      "query": "jlo OR \"jennifer lopez\""
+    },
+    {
+      "chip": "Kawhi",
+      "bars": 21,
+      "wiki": "Kawhi Leonard",
+      "kind": "nba",
+      "query": "kawhi"
+    },
+    {
+      "chip": "Booker",
+      "bars": 19,
+      "wiki": "Devin Booker",
+      "kind": "nba",
+      "query": "\"devin booker\" OR booker"
+    },
+    {
+      "chip": "KG",
+      "bars": 18,
+      "wiki": "Kevin Garnett",
+      "kind": "nba",
+      "query": "\"kg\" OR garnett"
+    },
+    {
+      "chip": "Cam",
+      "bars": 18,
+      "wiki": "Cam Newton",
+      "kind": "nfl",
+      "query": "\"cam newton\""
+    },
+    {
+      "chip": "Magic",
+      "bars": 16,
+      "wiki": "Magic Johnson",
+      "kind": "nba",
+      "query": "\"magic johnson\""
+    },
+    {
+      "chip": "Luka",
+      "bars": 15,
+      "wiki": "Luka Don\u010di\u0107",
+      "kind": "nba",
+      "query": "luka"
+    },
+    {
+      "chip": "Iman",
+      "bars": 13,
+      "wiki": "Iman (model)",
+      "kind": "celeb",
+      "query": "iman"
+    },
+    {
+      "chip": "Zendaya",
+      "bars": 12,
+      "wiki": "Zendaya",
+      "kind": "celeb",
+      "query": "zendaya"
+    },
+    {
+      "chip": "Tyreek",
+      "bars": 10,
+      "wiki": "Tyreek Hill",
+      "kind": "nfl",
+      "query": "tyreek"
+    },
+    {
+      "chip": "Burrow",
+      "bars": 10,
+      "wiki": "Joe Burrow",
+      "kind": "nfl",
+      "query": "burrow OR \"joe burrow\""
+    },
+    {
+      "chip": "Lamar",
+      "bars": 9,
+      "wiki": "Lamar Jackson",
+      "kind": "nfl",
+      "query": "\"lamar jackson\""
+    },
+    {
+      "chip": "Jokic",
+      "bars": 8,
+      "wiki": "Nikola Joki\u0107",
+      "kind": "nba",
+      "query": "jokic"
+    },
+    {
+      "chip": "Vin Diesel",
+      "bars": 8,
+      "wiki": "Vin Diesel",
+      "kind": "actor",
+      "query": "\"vin diesel\""
+    },
+    {
+      "chip": "Embiid",
+      "bars": 7,
+      "wiki": "Joel Embiid",
+      "kind": "nba",
+      "query": "embiid"
+    },
+    {
+      "chip": "Naomi",
+      "bars": 7,
+      "wiki": "Naomi Campbell",
+      "kind": "celeb",
+      "query": "\"naomi campbell\""
+    },
+    {
+      "chip": "Saquon",
+      "bars": 5,
+      "wiki": "Saquon Barkley",
+      "kind": "nfl",
+      "query": "saquon"
+    },
+    {
+      "chip": "Megan Fox",
+      "bars": 5,
+      "wiki": "Megan Fox",
+      "kind": "celeb",
+      "query": "\"megan fox\""
+    },
+    {
+      "chip": "Julio",
+      "bars": 4,
+      "wiki": "Julio Jones",
+      "kind": "nfl",
+      "query": "\"julio jones\""
+    },
+    {
+      "chip": "Samuel Jackson",
+      "bars": 2,
+      "wiki": "Samuel L. Jackson",
+      "kind": "actor",
+      "query": "\"samuel l\" OR \"samuel jackson\""
+    },
+    {
+      "chip": "CMC",
+      "bars": 0,
+      "wiki": "Christian McCaffrey",
+      "kind": "nfl",
+      "query": "\"christian mccaffrey\" OR cmc"
+    },
+    {
+      "chip": "Jefferson",
+      "bars": 0,
+      "wiki": "Justin Jefferson",
+      "kind": "nfl",
+      "query": "\"justin jefferson\""
+    }
+  ]
+}

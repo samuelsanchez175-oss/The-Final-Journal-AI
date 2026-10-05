@@ -13,6 +13,8 @@ enum AppErrorFixDestination: String, Equatable {
     case none
     case profileAI
     case modelPreferences
+    /// Rate-limit / busy: stay on the note and try generate again.
+    case retryGenerate
 
     var fixButtonTitle: String? {
         switch self {
@@ -22,6 +24,8 @@ enum AppErrorFixDestination: String, Equatable {
             return "Open API Settings"
         case .modelPreferences:
             return "Open Model Preferences"
+        case .retryGenerate:
+            return "Retry"
         }
     }
 }
@@ -31,6 +35,10 @@ enum AppErrorFixDestination: String, Equatable {
 extension Notification.Name {
     static let inAppAPIError = Notification.Name("InAppAPIError")
     static let showProfile = Notification.Name("ShowProfile")
+}
+
+enum PendingNoteLaunch {
+    static var openRecorder = false
 }
 
 struct InAppAPIErrorPayload {
@@ -46,10 +54,10 @@ enum AppNavigation {
 
     @MainActor
     static func navigate(to destination: AppErrorFixDestination) {
-        guard destination != .none else { return }
+        guard destination == .profileAI || destination == .modelPreferences else { return }
 
         switch destination {
-        case .none:
+        case .none, .retryGenerate:
             break
         case .profileAI:
             pendingProfileTab = .ai
@@ -95,7 +103,7 @@ enum AppErrorRecovery {
         case .missingAPIKey:
             return .profileAI
         case .rateLimitExceeded:
-            return .profileAI
+            return .retryGenerate
         case .serverError(let code, _):
             if code == 401 || code == 403 || code == 402 {
                 return .profileAI
@@ -117,7 +125,7 @@ enum AppErrorRecovery {
         case .missingAPIKey:
             return .profileAI
         case .rateLimitExceeded:
-            return .profileAI
+            return .retryGenerate
         case .requestFailed:
             return .none
         }
@@ -125,11 +133,12 @@ enum AppErrorRecovery {
 
     static func destination(forMessage message: String) -> AppErrorFixDestination {
         let lower = message.lowercased()
+        if lower.contains("rate limit") || lower.contains("too many requests") || lower.contains("429")
+            || lower.contains("usage limit") {
+            return .retryGenerate
+        }
         if lower.contains("api key") || lower.contains("missing key") || lower.contains("add your openai")
             || (lower.contains("key") && lower.contains("settings")) {
-            return .profileAI
-        }
-        if lower.contains("rate limit") || lower.contains("too many requests") || lower.contains("429") {
             return .profileAI
         }
         if lower.contains("model preferences")
@@ -152,9 +161,8 @@ enum AppErrorRecovery {
             switch modelG {
             case .missingAPIKey:
                 return "API key missing. Add your OpenAI key in Settings."
-            case .rateLimitExceeded(let sec):
-                let wait = sec ?? 60
-                return "Too many requests. Wait \(wait)s and try again."
+            case .rateLimitExceeded:
+                return "The AI hit a usage limit. Your key is fine. Wait a minute, then try again."
             case .requestFailed:
                 return "Request failed. Check your connection and try again."
             }

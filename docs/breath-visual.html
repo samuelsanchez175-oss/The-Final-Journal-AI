@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>What actually changed — comma ranking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Oswald:wght@500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --paper: #ece6d8;
+    --rule: #d7cfc0;
+    --ink: #1c1712;
+    --mute: #6e675c;
+    --setup: #2a6a3c;
+    --setup-wash: #d7eadc;
+    --punch: #b41c22;
+    --punch-wash: #f3d4d2;
+    --wrap: #f0c21a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #cfc6b4; color: var(--ink); }
+  body { font-family: "IBM Plex Mono", ui-monospace, monospace; padding: 24px 14px 72px; }
+  .board {
+    max-width: 920px;
+    margin: 0 auto;
+    background:
+      linear-gradient(90deg, transparent 55px, #e8b4a8 55px, #e8b4a8 57px, transparent 57px),
+      repeating-linear-gradient(180deg, transparent 0 31px, var(--rule) 31px 32px),
+      var(--paper);
+    border: 1px solid #b7ad9a;
+    box-shadow: 0 18px 40px rgba(40, 30, 10, .18);
+    padding: 26px 26px 40px 18px;
+  }
+  .kicker {
+    font-family: Oswald, sans-serif;
+    letter-spacing: .18em;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin: 0 0 6px 52px;
+  }
+  h1 {
+    font-family: Oswald, sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: .02em;
+    margin: 0 0 8px 52px;
+    text-transform: uppercase;
+  }
+  .lede {
+    margin: 0 0 22px 52px;
+    max-width: 58ch;
+    line-height: 1.55;
+    font-size: 14px;
+  }
+  .tabs { display: flex; gap: 8px; margin: 0 0 22px 52px; flex-wrap: wrap; }
+  .tabs button {
+    font-family: Oswald, sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 1px solid #1c1712;
+    background: transparent;
+    padding: 7px 12px;
+    cursor: pointer;
+  }
+  .tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+  .panel { display: none; }
+  .panel.on { display: block; }
+
+  .pair { display: grid; gap: 12px; margin-left: 52px; }
+  @media (min-width: 720px) { .pair { grid-template-columns: 1fr 1fr; } }
+  .card {
+    border: 2px solid var(--ink);
+    padding: 12px 14px 14px;
+    background: rgba(255,255,255,.4);
+    min-height: 168px;
+  }
+  .card .tag {
+    font-family: Oswald, sans-serif;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 0 0 8px;
+  }
+  .up { border-color: var(--setup); }
+  .up .tag { color: var(--setup); }
+  .stay { border-color: var(--punch); }
+  .stay .tag { color: var(--punch); }
+  .line { font-size: 15px; line-height: 1.45; margin: 0 0 10px; }
+  .setup { background: var(--setup-wash); color: var(--setup); }
+  .punch { background: var(--punch-wash); color: var(--punch); }
+  .why { font-size: 12px; color: var(--mute); line-height: 1.5; margin: 0; }
+
+  .bar {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 12px;
+    margin: 0 0 10px;
+    align-items: start;
+  }
+  .gutter {
+    width: 44px; min-height: 44px; background: var(--wrap);
+    font-family: Oswald, sans-serif; font-size: 22px; font-weight: 600;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .verse { font-size: 18px; line-height: 32px; padding-top: 6px; }
+  .pockets {
+    margin: 0 0 16px 56px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--mute);
+  }
+  .note { margin: 16px 0 0 52px; color: var(--mute); font-size: 13px; line-height: 1.55; max-width: 62ch; }
+  .stack { margin-left: 52px; }
+  .row { display: grid; grid-template-columns: 44px 1fr; gap: 12px; margin-bottom: 8px; }
+  .tiny { min-height: 34px; font-size: 16px; }
+</style>
+</head>
+<body>
+<main class="board">
+  <p class="kicker">The new change · option 4</p>
+  <h1>A comma is not a reason to rank</h1>
+  <p class="lede">You already knew the pause is not a new bar. The yellow 13 stays. What we just shipped: bar hits may still <i>show</i> a vault line that only shares <i>stunts</i>. They no longer <b>jump it up</b> just because it also has a comma. Boost only if the punch re-reads the setup picture, or the words on the cut slant.</p>
+
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" aria-selected="true" data-tab="change">The change</button>
+    <button type="button" role="tab" aria-selected="false" data-tab="yours">Your 13</button>
+    <button type="button" role="tab" aria-selected="false" data-tab="ohm">Ohm’s picture</button>
+  </div>
+
+  <section class="panel on" id="change" role="tabpanel">
+    <div class="pair">
+      <article class="card up">
+        <p class="tag">Moves up</p>
+        <p class="line"><span class="setup">Came up off nothing</span>, <span class="punch">still nothing special</span></p>
+        <p class="why">Same picture after the pause. <i>Nothing</i> comes back. That is Ohm’s punch: second reading of the setup. This is the boost.</p>
+      </article>
+      <article class="card stay">
+        <p class="tag">Stays in wrap · no boost</p>
+        <p class="line"><span class="setup">I duck the cops</span>, <span class="punch">then I hit my own stunts</span></p>
+        <p class="why">Comma + same end word <i>stunts</i>. No flip. It can still appear in Wrap. It does not outrank a bar that only matches the wrap.</p>
+      </article>
+    </div>
+    <p class="note">Old bug we fixed: every vault bar with a comma floated. New rule: comma is a breath you can hear. It is not a ranking cheat.</p>
+  </section>
+
+  <section class="panel" id="yours" role="tabpanel">
+    <div class="bar" style="margin-left:52px">
+      <div class="gutter">13</div>
+      <div class="verse"><span class="setup">I been running from my opps</span> <span class="punch">yea i do my own stunts</span></div>
+    </div>
+    <p class="pockets">Still one bar · 7 + 6 cadence · ghost still leads stunts</p>
+    <p class="note"><i>Opps</i> and <i>stunts</i> do not have to rhyme. This line is a breath with no picture re-read, so random comma vault bars should not jump. Wrap still fills with same-end <i>stunts</i> hits.</p>
+  </section>
+
+  <section class="panel" id="ohm" role="tabpanel">
+    <div class="stack">
+      <div class="row"><div class="gutter tiny">8</div><div class="verse"><span class="setup">Came up off nothing like the first seconds</span></div></div>
+      <div class="row"><div class="gutter tiny">9</div><div class="verse"><span class="punch">When you come from nothing, you know firsts second</span></div></div>
+    </div>
+    <p class="note">Ohm: setup aims, punch re-reads. Green picture, red second meaning. That couplet can be two newlines or one line with a comma. The app now ranks the re-read, not the punctuation mark.</p>
+  </section>
+</main>
+<script>
+  const tabs = [...document.querySelectorAll('[role=tab]')];
+  const panels = Object.fromEntries([...document.querySelectorAll('.panel')].map(p => [p.id, p]));
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.setAttribute('aria-selected', String(t === tab)));
+      Object.values(panels).forEach(p => p.classList.toggle('on', p.id === tab.dataset.tab));
+    });
+  });
+</script>
+</body>
+</html>

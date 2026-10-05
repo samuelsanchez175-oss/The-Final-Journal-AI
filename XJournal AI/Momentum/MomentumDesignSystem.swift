@@ -13,8 +13,6 @@
 
 import SwiftUI
 import UIKit
-import CoreMotion
-import Combine
 
 // MARK: - Hex helper
 
@@ -41,12 +39,19 @@ extension Color {
 // MARK: - Tokens
 
 enum Momentum {
+    /// Home-screen and in-app product name. Keep this the only user-facing brand string.
+    static let appName = "Penwork Studios"
+
     // Surfaces / content — Light value | Dark value ("Lagoon"). Dynamic, so the whole app
     // flips when the color scheme does (the accent picker writes `appTheme`).
     static let surface          = Color(light: 0xF8F8F8, dark: 0x0C1417)
     static let surfaceElevated   = Color(light: 0xFFFFFF, dark: 0x16201F)
     static let contentPrimary    = Color(light: 0x1C1C1E, dark: 0xE6EEF0)
     static let contentSecondary  = Color(light: 0x1C1C1E, dark: 0xE6EEF0, lightAlpha: 0.6, darkAlpha: 0.6)
+    /// Icons on glass chrome (header dock, search, compose, island). Near-white in Dark so
+    /// they do not vanish into the Lagoon/accent wash.
+    static let chromeIcon        = Color(light: 0x1C1C1E, dark: 0xFFFFFF)
+    static let chromeIconMuted   = Color(light: 0x1C1C1E, dark: 0xF4F7F8, lightAlpha: 0.72, darkAlpha: 0.92)
     // Accent
     static var accent: Color { CoralSettings.preset.color }   // follows the selected preset — warm (Light) or Lagoon cool (Dark)
     static let accentCalm        = Color(light: 0x6688FF, dark: 0x7E9FE0)   // empathy / reset states only
@@ -211,16 +216,20 @@ enum CoralSettings {
 
 /// Editor chrome toggles (Page 2 toolbar). Separate from coral — these don't tint the glow.
 enum EditorChromeSettings {
-    /// When true (default), the Note Editor's undo/redo/add pill drops its iOS 26
+    /// When true, the Note Editor's undo/redo/add pill drops its iOS 26
     /// liquid-glass background (`sharedBackgroundVisibility(.hidden)`) and sits flat on
-    /// the coral — the weak header coral made that platter read muddy gray.
-    static let hideToolbarGlassKey = "hide_editor_toolbar_glass"
+    /// the coral. Off by default — glass stays unless the user flattens it.
+    /// Key renamed so existing installs pick up the new default.
+    static let hideToolbarGlassKey = "flatten_editor_buttons"
 
     /// Writing-area font size in points. Global across all notes. Default 17 ≈ `.body`.
     /// Drives the TextEditor, the rhyme-highlight overlay, and the slam animation so all
     /// three stay pixel-aligned. Adjusted via the Page 3 toolbar font-size popover.
     static let writingFontSizeKey = "editor_writing_font_size"
     static let defaultWritingFontSize: Double = 17
+
+    /// Ruled lines under each lyric bar. Syllable-count buttons sit on these lines. On by default.
+    static let writingLineGuidesKey = "editor_writing_line_guides"
 }
 
 /// Compact − / value / + stepper for the writing-area font size, shown in the Page 3
@@ -267,16 +276,14 @@ struct FontSizeStepperPopover: View {
 
 struct AtmosphereGlow: View {
     @Environment(\.colorScheme) private var scheme
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @AppStorage(CoralSettings.presetKey) private var presetRaw: String = CoralPreset.classic.rawValue
     @AppStorage(CoralSettings.strengthKey) private var strength: Double = CoralSettings.defaultStrength
     var calm: Bool = false                                   // blue accentCalm for empathy/reset
     private var glow: Color { calm ? Momentum.accentCalm : (CoralPreset(rawValue: presetRaw) ?? .classic).color }
     private var base: Color { Momentum.surface }   // dynamic — Light #F8F8F8 / Dark Lagoon #0C1417
     // strength (0…1) scales the glow; 0.5 reproduces the original 0.42 / 0.22 peak.
-    private var peakOpacity: Double { (scheme == .dark ? 0.44 : 0.84) * strength }
+    private var peakOpacity: Double { (scheme == .dark ? 0.40 : 0.38) * strength }
     private var midOpacity: Double { 0.24 * strength }
-    @State private var breathe = false
     // Subtle full-bleed wash so the otherwise-white areas pick up a faint coral
     // too — deliberately much lighter than the top radial glow, a touch stronger
     // toward the bottom for depth.
@@ -303,15 +310,7 @@ struct AtmosphereGlow: View {
                     startRadius: 0,
                     endRadius: 470
                 )
-                .scaleEffect(breathe ? 1.06 : 1.0, anchor: .top)
-                .opacity(breathe ? 0.72 : 1.0)
                 .allowsHitTesting(false)
-                .onAppear {
-                    guard !reduceMotion else { return }   // respect Reduce Motion
-                    withAnimation(.easeInOut(duration: 9).repeatForever(autoreverses: true)) {
-                        breathe = true
-                    }
-                }
             }
             .ignoresSafeArea()
     }
@@ -319,52 +318,46 @@ struct AtmosphereGlow: View {
 
 // MARK: - Editor coral glow (breathing behind the writing surface; BPM-damped)
 
-/// The signature coral atmosphere, scoped to the note editor and gently *breathing*. The pulse
-/// period is loosely tied to the note's BPM (damped — an interactive feel, never the literal
-/// tempo). Honors the "Breathe inside notes" preference; renders nothing when it's off.
+/// Static coral wash behind the note editor header. No pulse — a looping
+/// scale/opacity cycle was hitching the palette on every frame.
 struct EditorCoralGlow: View {
     var bpm: Int?
+    var compact: Bool = false
+    var overrideEnabled: Bool? = nil
     @Environment(\.colorScheme) private var scheme
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @AppStorage(CoralSettings.presetKey) private var presetRaw: String = CoralPreset.classic.rawValue
     @AppStorage(CoralSettings.strengthKey) private var strength: Double = CoralSettings.defaultStrength
-    @AppStorage(CoralSettings.editorBreathingKey) private var enabled: Bool = true
-    @State private var breathe = false
 
     private var glow: Color { (CoralPreset(rawValue: presetRaw) ?? .classic).color }
-    // Subtler than the home background so it never fights the text.
-    private var peak: Double { (scheme == .dark ? 0.16 : 0.26) * strength }
-    private var mid: Double { 0.08 * strength }
-    // Damped BPM → period: 60bpm→12s, 220bpm→6s, unset→9s. Deliberately NOT the literal beat.
-    private var period: Double {
-        guard let bpm else { return 9 }
-        let c = Double(min(max(bpm, 60), 220))
-        return 12 - (c - 60) / 160 * 6
-    }
+    /// Strong enough to read on Lagoon dark; still below body text contrast.
+    private var peak: Double { (scheme == .dark ? 0.52 : 0.46) * max(strength, 0.28) }
+    private var mid: Double { (scheme == .dark ? 0.22 : 0.18) * max(strength, 0.28) }
+    private var radius: CGFloat { compact ? 160 : 480 }
 
     var body: some View {
         ZStack {
-            if enabled {
-                RadialGradient(
-                    gradient: Gradient(colors: [glow.opacity(peak), glow.opacity(mid), glow.opacity(0)]),
-                    center: UnitPoint(x: 0.7, y: 0.12),
-                    startRadius: 0,
-                    endRadius: 440
-                )
-                .scaleEffect(breathe ? 1.05 : 1.0, anchor: .top)
-                .opacity(breathe ? 0.78 : 1.0)
-                .allowsHitTesting(false)
-                .onAppear { animate() }
-                .onChange(of: period) { _, _ in animate() }
-            }
-        }
-    }
+            RadialGradient(
+                gradient: Gradient(colors: [
+                    glow.opacity(peak),
+                    glow.opacity(mid),
+                    glow.opacity(0)
+                ]),
+                center: UnitPoint(x: 0.62, y: 0.0),
+                startRadius: 0,
+                endRadius: radius
+            )
+            .allowsHitTesting(false)
 
-    private func animate() {
-        guard enabled, !reduceMotion else { return }
-        breathe = false
-        withAnimation(.easeInOut(duration: period).repeatForever(autoreverses: true)) {
-            breathe = true
+            RadialGradient(
+                gradient: Gradient(colors: [
+                    glow.opacity(peak * 0.55),
+                    glow.opacity(0)
+                ]),
+                center: UnitPoint(x: 0.28, y: 0.08),
+                startRadius: 0,
+                endRadius: radius * 0.62
+            )
+            .allowsHitTesting(false)
         }
     }
 }
@@ -379,9 +372,9 @@ struct EditorHeaderCoralBackground: View {
     @AppStorage(CoralSettings.strengthKey) private var strength: Double = CoralSettings.defaultStrength
 
     private var glow: Color { (CoralPreset(rawValue: presetRaw) ?? .classic).color }
-    private var washTop: Double { (scheme == .dark ? 0.16 : 0.24) * strength }
-    private var washMid: Double { (scheme == .dark ? 0.11 : 0.17) * strength }
-    private var washLower: Double { (scheme == .dark ? 0.07 : 0.11) * strength }
+    private var washTop: Double { (scheme == .dark ? 0.22 : 0.28) * strength }
+    private var washMid: Double { (scheme == .dark ? 0.14 : 0.18) * strength }
+    private var washLower: Double { (scheme == .dark ? 0.08 : 0.12) * strength }
 
     var body: some View {
         ZStack(alignment: .top) {
@@ -391,7 +384,6 @@ struct EditorHeaderCoralBackground: View {
                     .init(color: glow.opacity(washTop), location: 0.0),
                     .init(color: glow.opacity(washMid), location: 0.38),
                     .init(color: glow.opacity(washLower), location: 0.88),
-                    // Hairline fade at the very bottom — hard stop at the divider line.
                     .init(color: glow.opacity(washLower * 0.35), location: 0.97),
                     .init(color: glow.opacity(0), location: 1.0)
                 ],
@@ -439,13 +431,47 @@ struct CoralAppearanceSection: View {
             Toggle(isOn: $breatheInEditor) {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Breathe inside notes").font(.momentumBody)
-                    Text("A gentle pulse behind your writing.")
+                    Text("The color wash at the top of a note slowly grows and fades. Watch the preview.")
                         .font(.momentumMetadata)
                         .foregroundStyle(Momentum.contentSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
             }
             .tint(selected.color)
+            .accessibilityHint("On: the note wash expands and fades. Off: the wash stays still.")
+
+            noteBreathPreview
         }
+    }
+
+    /// Same bloom as the editor, clipped into a small card so the toggle is checkable here.
+    private var noteBreathPreview: some View {
+        ZStack(alignment: .topLeading) {
+            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                .fill(Momentum.surface)
+            EditorCoralGlow(bpm: 92, compact: true, overrideEnabled: breatheInEditor)
+                .clipShape(RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous))
+            VStack(alignment: .leading, spacing: 4) {
+                Text(breatheInEditor ? "Preview · breathing" : "Preview · still")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(Momentum.chromeIcon)
+                Text("Same wash as inside a note.")
+                    .font(.caption)
+                    .foregroundStyle(Momentum.chromeIconMuted)
+            }
+            .padding(12)
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 96)
+        .overlay(
+            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                .stroke(Momentum.hairline, lineWidth: Momentum.lineThin)
+        )
+        .clipped()
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(breatheInEditor
+            ? "Preview of the breathing color wash"
+            : "Preview of the still color wash")
     }
 
     /// One labeled row of swatches. Tapping sets the accent and flips the app between Light and
@@ -481,17 +507,32 @@ struct CoralAppearanceSection: View {
 /// Page 1.1 Profile → Page 2 editor chrome. Concrete + self-contained so the large
 /// profile body in CCV.12 keeps type-checking fast.
 struct EditorButtonsSection: View {
-    @AppStorage(EditorChromeSettings.hideToolbarGlassKey) private var flatten: Bool = true
+    @AppStorage(EditorChromeSettings.hideToolbarGlassKey) private var flatten: Bool = false
+    @AppStorage(EditorChromeSettings.writingLineGuidesKey) private var showWritingLines: Bool = true
 
     var body: some View {
-        Toggle(isOn: $flatten) {
-            VStack(alignment: .leading, spacing: 2) {
-                Text("Flatten editor buttons").font(.momentumBody)
-                Text("Removes the frosted-glass panel behind the editor's undo, redo, and add buttons so they sit flat on the coral. On by default.")
-                    .font(.momentumMetadata)
-                    .foregroundStyle(Momentum.contentSecondary)
-                    .fixedSize(horizontal: false, vertical: true)
+        VStack(alignment: .leading, spacing: 16) {
+            Toggle(isOn: $showWritingLines) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Writing lines").font(.momentumBody)
+                    Text("A rule under each bar so syllable counts sit on the lyrics. On by default.")
+                        .font(.momentumMetadata)
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
             }
+            .accessibilityHint("On by default. Turn off to hide the ruled lines in the editor.")
+
+            Toggle(isOn: $flatten) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Flatten editor buttons").font(.momentumBody)
+                    Text("Removes the frosted-glass panel behind the editor's undo, redo, and add buttons so they sit flat on the page. Off by default.")
+                        .font(.momentumMetadata)
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            .accessibilityHint("Off by default. Turn on to drop the glass behind undo, redo, and add.")
         }
     }
 }
@@ -594,101 +635,11 @@ struct MomentumSquareButtonStyle: ButtonStyle {
     }
 }
 
-// MARK: - Gyro Specular Edge (iOS 26-style glass light)
-
-/// Shared device-motion source. A single CoreMotion stream drives every glass
-/// edge highlight in the app so we never spin up more than one `CMMotionManager`.
-final class GyroMotionManager: ObservableObject {
-    static let shared = GyroMotionManager()
-
-    private let manager = CMMotionManager()
-    let isAvailable: Bool
-
-    /// Device roll (left/right tilt) in radians, lightly smoothed.
-    @Published var roll: Double = 0
-    /// Device pitch (forward/back tilt) in radians, lightly smoothed.
-    @Published var pitch: Double = 0
-
-    private init() {
-        isAvailable = manager.isDeviceMotionAvailable
-        guard isAvailable else { return }
-        manager.deviceMotionUpdateInterval = 1.0 / 30.0
-        manager.startDeviceMotionUpdates(to: .main) { [weak self] motion, _ in
-            guard let self, let attitude = motion?.attitude else { return }
-            // Low-pass filter so the highlight glides instead of jittering.
-            self.roll = self.roll * 0.82 + attitude.roll * 0.18
-            self.pitch = self.pitch * 0.82 + attitude.pitch * 0.18
-        }
-    }
-}
-
-/// A thin, bright reflection that rides the edge of a glass shape and tracks the
-/// device's tilt — the small moving "specular" glint Apple uses on iOS 26 glass.
-/// Falls back to a slow auto-rotation on devices/simulators without a gyro.
-struct GyroSpecularEdge<S: InsettableShape>: View {
-    let shape: S
-    var lineWidth: CGFloat = 1.4
-    var tint: Color = .white
-    var intensity: Double = 1.0
-
-    @ObservedObject private var motion = GyroMotionManager.shared
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @State private var autoAngle: Double = 0
-
-    private var angle: Angle {
-        if motion.isAvailable && !reduceMotion {
-            return .radians(motion.roll * 1.7 + motion.pitch * 0.8)
-        }
-        return .degrees(autoAngle)
-    }
-
-    var body: some View {
-        shape
-            .strokeBorder(
-                AngularGradient(
-                    gradient: Gradient(stops: [
-                        .init(color: tint.opacity(0),                  location: 0.00),
-                        .init(color: tint.opacity(0.95 * intensity),   location: 0.05),
-                        .init(color: tint.opacity(0.30 * intensity),   location: 0.11),
-                        .init(color: tint.opacity(0),                  location: 0.22),
-                        .init(color: tint.opacity(0),                  location: 0.55),
-                        .init(color: tint.opacity(0.45 * intensity),   location: 0.60),
-                        .init(color: tint.opacity(0),                  location: 0.68),
-                        .init(color: tint.opacity(0),                  location: 1.00)
-                    ]),
-                    center: .center,
-                    angle: angle
-                ),
-                lineWidth: lineWidth
-            )
-            .blendMode(.screen)
-            .allowsHitTesting(false)
-            .onAppear {
-                guard !(motion.isAvailable && !reduceMotion), !reduceMotion else { return }
-                withAnimation(.linear(duration: 5.5).repeatForever(autoreverses: false)) {
-                    autoAngle = 360
-                }
-            }
-    }
-}
-
-extension View {
-    /// Adds an iOS 26-style moving specular glint to the edge of a glass shape.
-    func gyroSpecularEdge<S: InsettableShape>(
-        _ shape: S,
-        lineWidth: CGFloat = 1.4,
-        tint: Color = .white,
-        intensity: Double = 1.0
-    ) -> some View {
-        overlay(GyroSpecularEdge(shape: shape, lineWidth: lineWidth, tint: tint, intensity: intensity))
-    }
-}
-
 #Preview {
     ZStack {
         AtmosphereGlow()
         VStack(alignment: .leading, spacing: 18) {
-            Text("Journal").font(.momentumHero(40)).foregroundStyle(Momentum.contentPrimary)
+            Text(Momentum.appName).font(.momentumHero(40)).foregroundStyle(Momentum.contentPrimary)
             HStack(spacing: 8) {
                 MomentumChip(title: "Created", systemImage: "arrow.down.circle", active: true)
                 MomentumChip(title: "Folders", systemImage: "folder")

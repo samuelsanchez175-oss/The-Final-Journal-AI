@@ -544,6 +544,7 @@ struct AnalyticsDashboardView: View {
                             withAnimation(chipAnimation) { selectedTab = tab }
                         }
                     }
+                    #if DEBUG
                     MomentumChip(
                         title: "Diagnostics",
                         systemImage: "wrench.and.screwdriver.fill",
@@ -552,11 +553,13 @@ struct AnalyticsDashboardView: View {
                         guard !isDiagnosticActive else { return }
                         withAnimation(chipAnimation) { selectedTab = lastDiagnosticTab }
                     }
+                    #endif
                 }
                 .padding(.horizontal, 16)
             }
 
-            // Diagnostics sub-row — present only while a diagnostic view is open.
+            // Diagnostics sub-row — DEBUG only, and only while a diagnostic view is open.
+            #if DEBUG
             if isDiagnosticActive {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
@@ -577,6 +580,7 @@ struct AnalyticsDashboardView: View {
                 }
                 .transition(.move(edge: .top).combined(with: .opacity))
             }
+            #endif
         }
         .padding(.vertical, 12)
     }
@@ -585,8 +589,6 @@ struct AnalyticsDashboardView: View {
     
     private var networkPerformanceSection: some View {
         let stats = NetworkPerformanceMonitor.shared.getStats()
-        let isDarkMode = colorScheme == .dark
-        
         return VStack(alignment: .leading, spacing: 24) {
             Text("Network Performance")
                 .font(.largeTitle.weight(.bold))
@@ -677,7 +679,6 @@ struct AnalyticsDashboardView: View {
         let stats = TokenUsageTracker.shared.getStats()
         _ = TokenUsageTracker.shared.getDailyStats()
         _ = TokenUsageTracker.shared.getWeeklyStats()
-        let isDarkMode = colorScheme == .dark
         
         return VStack(alignment: .leading, spacing: 24) {
             Text("Token Usage")
@@ -760,7 +761,6 @@ struct AnalyticsDashboardView: View {
     
     private var jsonValidationSection: some View {
         let stats = JSONValidationService.shared.getStats()
-        let isDarkMode = colorScheme == .dark
         
         return VStack(alignment: .leading, spacing: 24) {
             Text("JSON Validation")
@@ -825,7 +825,6 @@ struct AnalyticsDashboardView: View {
     
     private var errorCorrelationSection: some View {
         let analysis = ErrorCorrelationAnalyzer.shared.analyzeErrors()
-        let isDarkMode = colorScheme == .dark
         
         return VStack(alignment: .leading, spacing: 24) {
             Text("Error Correlation")
@@ -872,7 +871,9 @@ struct AnalyticsDashboardView: View {
                         case .overview:
                             overviewCards
                             writingActivitySection
-                            achievementsSection
+                            if AchievementSystem.isEnabled {
+                                achievementsSection
+                            }
                             mostUsedWordsSection
                             musicMetadataSection
                             feedbackAnalyticsSection

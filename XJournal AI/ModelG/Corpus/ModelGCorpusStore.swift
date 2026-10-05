@@ -8,8 +8,17 @@ final class ModelGCorpusStore {
     let corpus: ModelGCorpus
     private let conceptIndex: [String: CorpusConcept]
 
-    /// Shared production instance backed by the app-bundled `ModelGCorpus.json`. nil if absent.
-    static let shared = try? ModelGCorpusStore()
+    /// Loaded on first Reminds / generate access — not at process start.
+    private static let lock = NSLock()
+    private static var _shared: ModelGCorpusStore?
+    static var shared: ModelGCorpusStore? {
+        lock.lock()
+        defer { lock.unlock() }
+        if _shared == nil {
+            _shared = try? ModelGCorpusStore()
+        }
+        return _shared
+    }
 
     init(bundle: Bundle = .main, resource: String = "ModelGCorpus") throws {
         guard let url = bundle.url(forResource: resource, withExtension: "json") else {

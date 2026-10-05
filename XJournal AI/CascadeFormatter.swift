@@ -10,12 +10,12 @@
 import Foundation
 
 /// One breath/phrase chunk of a bar, with its step indentation (0, 1, 2, …).
-struct CascadeChunk: Equatable {
+nonisolated struct CascadeChunk: Equatable, Sendable {
     let text: String
     let indentLevel: Int
 }
 
-enum CascadeFormatter {
+nonisolated enum CascadeFormatter: Sendable {
     /// Greedy: accumulate words until adding the next would exceed `maxSyllablesPerChunk`,
     /// or a word ends in a comma (hard breath), then start a new, deeper-indented chunk.
     static func chunks(for line: String, maxSyllablesPerChunk: Int = 5) -> [CascadeChunk] {

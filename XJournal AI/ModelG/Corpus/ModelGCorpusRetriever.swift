@@ -38,8 +38,10 @@ struct ModelGCorpusRetriever {
         //    and reads `exemplars.isEmpty` to test if a word is on-brand) keeps its semantics.
         if pool.isEmpty, !tones.isEmpty { pool = store.corpus.bars }
         // Dedup by normalized text; cap at k (most-specific signals survive the cap).
+        // Drop ad-libs / fragments ("Yeah", "Ah") — they are metronome clicks, not bars.
         var seen = Set<String>(), deduped: [CorpusBar] = []
         for b in pool where !b.norm.isEmpty && seen.insert(b.norm).inserted {
+            guard Self.isRealBar(b.text) else { continue }
             deduped.append(b)
             if deduped.count >= k { break }
         }
@@ -52,5 +54,54 @@ struct ModelGCorpusRetriever {
             .components(separatedBy: CharacterSet.alphanumerics.inverted)
             .filter { $0.count >= 4 }
         return Array(words.prefix(6))
+    }
+
+    /// Ad-lib / fragment filter. Needs ≥4 tokens and ≥3 content words.
+    nonisolated static func isRealBar(_ text: String) -> Bool {
+        let words = text.split(whereSeparator: { $0.isWhitespace || $0.isNewline })
+        guard words.count >= 4 else { return false }
+        let fragments: Set<String> = ["yeah", "yah", "ah", "ooh", "uh", "skrrt", "skrr", "ayy", "ay", "woah", "whoa"]
+        let content = words.filter { raw in
+            let t = raw.lowercased().trimmingCharacters(in: .punctuationCharacters)
+            return t.count >= 2 && !fragments.contains(t)
+        }
+        return content.count >= 3
+    }
+
+    /// 4-bar windows whose syllable map sits near `targetSyllables`. Used as a CLOCK only —
+    /// callers must not inject these bar texts as lyric BLUEPRINT.
+    func retrieveFlow(targetSyllables: Int, k: Int = 1) -> [FlowExemplar] {
+        let real = store.corpus.bars.filter { Self.isRealBar($0.text) }
+        let grouped = Dictionary(grouping: real) { bar -> String in
+            let song = (bar.song ?? "").trimmingCharacters(in: .whitespaces)
+            return song.isEmpty ? bar.id : song
+        }
+        var scored: [(distance: Int, exemplar: FlowExemplar)] = []
+        for (_, bars) in grouped where bars.count >= 4 {
+            for i in 0...(bars.count - 4) {
+                let chunk = Array(bars[i..<(i + 4)])
+                let map = chunk.map { SyllableEngine.lineSyllableCount($0.text) }
+                guard map.allSatisfy({ $0 > 0 }) else { continue }
+                let avg = map.reduce(0, +) / 4
+                let distance = abs(avg - targetSyllables) + map.map { abs($0 - targetSyllables) }.reduce(0, +) / 4
+                let exemplar = FlowExemplar(
+                    bars: chunk.map(\.text),
+                    syllableMap: map,
+                    stressHint: "end-loaded, last stress of each bar in the punch window (beats 3–4)",
+                    source: .corpusMap
+                )
+                scored.append((distance, exemplar))
+            }
+        }
+        scored.sort { $0.distance < $1.distance }
+        var seen = Set<String>()
+        var out: [FlowExemplar] = []
+        for item in scored {
+            let key = item.exemplar.syllableMap.map(String.init).joined(separator: "-")
+            guard seen.insert(key).inserted else { continue }
+            out.append(item.exemplar)
+            if out.count >= k { break }
+        }
+        return out
     }
 }

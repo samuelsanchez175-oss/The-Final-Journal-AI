@@ -29,6 +29,8 @@ class NewRapDatabase: ObservableObject {
     // MARK: - Load All CSV Files
     
     func loadAllCSVs() async throws {
+        let already = await MainActor.run { isLoaded || isLoading }
+        if already { return }
         await MainActor.run {
             isLoading = true
         }
@@ -40,37 +42,37 @@ class NewRapDatabase: ObservableObject {
             }
         }
         
-        // Load ground truth bars
-        try await loadGroundTruthBars()
+        let bars = try await loadGroundTruthBars()
+        let terms = try await loadLexicon()
+        let loadedThemes = try await loadThemes()
+        await MainActor.run {
+            groundTruthBars = bars
+            lexiconTerms = terms
+            themes = loadedThemes
+        }
         
-        // Load lexicon
-        try await loadLexicon()
-        
-        // Load themes
-        try await loadThemes()
-        
-        print("✅ NewRapDatabase: Loaded \(groundTruthBars.count) ground truth bars, \(lexiconTerms.count) lexicon terms, \(themes.count) themes")
+        print("✅ NewRapDatabase: Loaded \(bars.count) ground truth bars, \(terms.count) lexicon terms, \(loadedThemes.count) themes")
     }
     
     // MARK: - Load Ground Truth Bars
     
-    private func loadGroundTruthBars() async throws {
+    private func loadGroundTruthBars() async throws -> [GroundTruthBar] {
         let csvData = try await loadCSVFile(filename: groundTruthFilename)
-        groundTruthBars = try parseGroundTruthCSV(csvData: csvData)
+        return try parseGroundTruthCSV(csvData: csvData)
     }
     
     // MARK: - Load Lexicon
     
-    private func loadLexicon() async throws {
+    private func loadLexicon() async throws -> [LexiconTerm] {
         let csvData = try await loadCSVFile(filename: lexiconFilename)
-        lexiconTerms = try parseLexiconCSV(csvData: csvData)
+        return try parseLexiconCSV(csvData: csvData)
     }
     
     // MARK: - Load Themes
     
-    private func loadThemes() async throws {
+    private func loadThemes() async throws -> [Theme] {
         let csvData = try await loadCSVFile(filename: themeFilename)
-        themes = try parseThemeCSV(csvData: csvData)
+        return try parseThemeCSV(csvData: csvData)
     }
     
     // MARK: - CSV File Loading

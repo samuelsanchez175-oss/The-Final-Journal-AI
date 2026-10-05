@@ -14,6 +14,8 @@ struct GeneratedRecord {
     let bars: [String]
     let modelGMomentBarIndices: [Int]
     let averageBarScore: Double
+    var wrapNote: String? = nil
+    var wrapTieBreak: Double = 0
 }
 
 // MARK: - Model G Core Coordinator

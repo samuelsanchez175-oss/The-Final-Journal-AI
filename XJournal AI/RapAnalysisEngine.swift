@@ -81,17 +81,18 @@ private struct CadenceAnalyzer {
         let lines = text.split(separator: "\n", omittingEmptySubsequences: false)
         var results: [CadenceMetrics.LineMetrics] = []
         for (index, line) in lines.enumerated() {
+            let lineText = String(line)
+            let syllables = LineSyllableCounter.syllableCount(forLine: lineText)
             let words = line.split { !$0.isLetter }
-            var syllables = 0, stresses = 0, rhymeCount = 0
+            var stresses = 0, rhymeCount = 0
             for wordSub in words {
                 let word = String(wordSub).lowercased()
                 let analysis = syllableAnalyzer.analyze(word: word)
-                syllables += analysis.syllables
                 stresses += analysis.stresses.count
             }
             rhymeCount = highlights.filter { highlight in
-                let rangeText = text[highlight.range]
-                return line.contains(rangeText)
+                guard let range = highlight.stringRange(in: text) else { return false }
+                return line.contains(text[range])
             }.count
             results.append(CadenceMetrics.LineMetrics(lineIndex: index, syllableCount: syllables, stressCount: stresses, rhymeCount: rhymeCount))
         }
@@ -157,14 +158,7 @@ struct RapAnalysisEngine {
         let last2Lines = Array(lines.suffix(2))
         var last2SyllableCounts: [Int] = []
         for lineSubstring in last2Lines {
-            let line = String(lineSubstring)
-            let words = line.split { !$0.isLetter }
-            var syllables = 0
-            for wordSub in words {
-                let word = String(wordSub).lowercased()
-                let analysis = syllableAnalyzer.analyze(word: word)
-                syllables += analysis.syllables
-            }
+            let syllables = LineSyllableCounter.syllableCount(forLine: String(lineSubstring))
             if syllables > 0 {
                 last2SyllableCounts.append(syllables)
             }

@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - Signal Mode
 
-enum SignalMode: String, Codable {
+nonisolated enum SignalMode: String, Codable {
     case uncontainedVulnerability      // High emotion, high explanation, no closure
     case lossAcknowledgmentWithoutAttribution  // Loss admitted, cause withheld
     case voluntaryIsolation             // Distance without hostility
@@ -57,7 +57,7 @@ enum SignalMode: String, Codable {
 
 // MARK: - Signal Constraints
 
-struct SignalConstraints {
+nonisolated struct SignalConstraints {
     let blockedPatterns: [String]      // Language patterns that cannot appear
     let requiredImplications: [String]  // What must be implied, not stated
     let preferredOutcomes: [String]    // Prefer outcomes over processes
@@ -75,7 +75,7 @@ struct SignalConstraints {
 
 // MARK: - Signal Mode Resolver
 
-class SignalModeResolver {
+nonisolated class SignalModeResolver {
     static let shared = SignalModeResolver()
     
     private init() {}
@@ -290,7 +290,7 @@ class SignalModeResolver {
 
 // MARK: - Convenience Extension
 
-extension SignalMode {
+nonisolated extension SignalMode {
     static func resolveMode(from profile: SignalMetrics) -> SignalMode {
         return SignalModeResolver.shared.resolveMode(from: profile)
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SyllableEngine {
+nonisolated enum SyllableEngine: Sendable {
     private static let vowelSet = CharacterSet(charactersIn: "aeiouAEIOUàèìòùáéíóúâêîôûäëïöü")
 
     /// Returns syllable count for a word. Uses slang first, then CMUDICT, then Syllabifier.
@@ -24,11 +24,10 @@ enum SyllableEngine {
         return Syllabifier.syllableCount(word: w)
     }
 
-    /// Total syllables in a full line/bar. Splits on non-letters (keeps in-word apostrophes),
-    /// sums the accurate per-word count. Used to score generated bars against the target.
+    /// Total syllables in a full line/bar. Same tokenizer as the editor gutter
+    /// (`LineSyllableCounter`) so generate scoring matches what the writer sees.
     static func lineSyllableCount(_ line: String) -> Int {
-        line.split { !$0.isLetter && $0 != "'" }
-            .reduce(0) { $0 + syllableCount(word: String($1)) }
+        LineSyllableCounter.syllableCount(forLine: line)
     }
 
     /// Returns word split into syllable strings. Uses phoneme boundaries when available, else heuristic.

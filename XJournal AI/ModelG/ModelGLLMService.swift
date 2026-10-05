@@ -14,11 +14,11 @@ class ModelGLLMService {
     private var apiKey: String? { KeychainHelper.shared.getAPIKey() }
     private let baseURL = "https://api.openai.com/v1"
     /// Gemini text model, used automatically when an "AIza" (Google AI Studio) key is supplied.
-    private let geminiModel = "gemini-2.0-flash"
+    private let geminiModel = "gemini-2.5-flash"
     private let anthropicModel = "claude-3-5-sonnet-latest"  // configurable; current Claude model
 
-    enum LLMProvider { case openAI, gemini, anthropic }
-    static func provider(forKey key: String) -> LLMProvider {
+    nonisolated enum LLMProvider: Equatable, Sendable { case openAI, gemini, anthropic }
+    nonisolated static func provider(forKey key: String) -> LLMProvider {
         if key.hasPrefix("AIza") { return .gemini }
         if key.hasPrefix("sk-ant-") { return .anthropic }
         return .openAI
@@ -78,13 +78,78 @@ class ModelGLLMService {
 
     // MARK: - Ghost Bar (Live tier)
 
-    /// Ghost (Live tier): up to 3 single end-rhyme words for the next line that rhyme with `rhymeWith` and fit `topic`.
-    func ghostRhymes(rhymeWith: String, topic: String) async throws -> [String] {
-        let system = "You are Model G's rhyme helper. Output ONLY 3 single words, comma-separated, that rhyme with the given word and fit the topic. No sentences, no punctuation other than commas."
-        let user = "Rhyme with: \(rhymeWith). Topic: \(topic). 3 words:"
-        let text = try await postChat(system: system, user: user, maxTokens: 24, temperature: 0.8, jsonMode: false)
-        return text.split(whereSeparator: { $0 == "," || $0 == "\n" })
-            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }.filter { !$0.isEmpty }
+    /// Cadence Ghost: punch halves after a comma-breath. Fit `targetSyllables` (±1). Catalog hints first.
+    func cadencePunches(setup: String, targetSyllables: Int, catalogHints: [String]) async throws -> [String] {
+        let hints = catalogHints.prefix(8).map { "- \($0)" }.joined(separator: "\n")
+        let system = """
+        You write rap punchlines after a setup that ends in a comma (a breath). \
+        Output JSON only: {"punches":["...","..."]}. \
+        Each punch is the SECOND HALF only — no setup, no leading comma, no quotes, no artist names. \
+        Each punch must be \(max(4, targetSyllables - 1))-\(targetSyllables + 1) syllables. \
+        Prefer INTERNAL-TO-END RHYME CHAINS (mosaic / inner rhyme): take the setup's last sound and hit it \
+        INSIDE the punch early, then land on the same family at the end. \
+        Example: setup "im standing ten toes" → punch "hoes know how i let it go" \
+        (toes → hoes/know internally, go at the end). \
+        Rank those ahead of end-rhyme-only fillers. Rap diction. 5 punches. Polish catalog hints when they already chain.
+        """
+        let user = """
+        Setup: \(setup)
+        Target punch syllables: \(targetSyllables)
+        Catalog punches:
+        \(hints.isEmpty ? "(none)" : hints)
+        Write punches that chain the setup landing internally and at the end.
+        """
+        let raw = try await postChat(system: system, user: user, maxTokens: 220, temperature: 0.7, jsonMode: true)
+        return Self.parsePunchJSON(raw)
+    }
+
+    private static func parsePunchJSON(_ raw: String) -> [String] {
+        struct Box: Decodable { var punches: [String] }
+        if let data = raw.data(using: .utf8), let box = try? JSONDecoder().decode(Box.self, from: data) {
+            return box.punches.map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }.filter { !$0.isEmpty }
+        }
+        return raw.split(whereSeparator: { $0 == "\n" || $0 == "," })
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\"[]")) }
+            .filter { $0.split(whereSeparator: \.isWhitespace).count >= 2 }
+    }
+
+    /// End rhymes + AI: a full extra set of end words, on top of the on-phone list in `avoid`.
+    func ghostRhymes(rhymeWith: String, topic: String, line: String, avoid: [String]) async throws -> [String] {
+        let already = avoid.prefix(12).map { "- \($0)" }.joined(separator: "\n")
+        let system = """
+        You are the ghost on a rapper's shoulder, finding the next end word. \
+        Output JSON only: {"words":["..."]}. \
+        Give 16 different single words that can end a bar rhyming with the seed. \
+        A rhyme is perfect (same stressed vowel and the same ending consonants) or one of these near families: \
+        feminine -y (pretty/chelly), same vowel plus P/B/K/G (hip/dick), IY or IH plus T or CH (cheat/reach), \
+        line-end IH plus an alveolar stop (shit/militant). \
+        A shared vowel with any other ending is not a rhyme. \
+        Fit the topic and the line. Concrete words a rapper would say out loud. \
+        Skip the seed, spelling twins of the seed, and every word already on the dock. No sentences.
+        """
+        let user = """
+        Seed: \(rhymeWith)
+        Topic: \(topic)
+        Line: \(line)
+        Already on the dock:
+        \(already.isEmpty ? "(none)" : already)
+        16 more end words the dock does not already have.
+        """
+        let raw = try await postChat(system: system, user: user, maxTokens: 220, temperature: 0.65, jsonMode: true)
+        return Self.parseGhostRhymeWords(raw)
+    }
+
+    private static func parseGhostRhymeWords(_ raw: String) -> [String] {
+        struct Box: Decodable { var words: [String] }
+        let pieces: [String]
+        if let data = raw.data(using: .utf8), let box = try? JSONDecoder().decode(Box.self, from: data) {
+            pieces = box.words
+        } else {
+            pieces = raw.split(whereSeparator: { $0 == "," || $0 == "\n" }).map(String.init)
+        }
+        return pieces
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\"[]")) }
+            .filter { !$0.isEmpty && !$0.contains(where: \.isWhitespace) }
     }
 
     /// Shared chat-completion call. Returns the assistant message content (JSON string when jsonMode).
@@ -223,26 +288,55 @@ class ModelGLLMService {
         let axesLine = context.signalAxes.map {
             "Voice: \($0.authorityPosture.rawValue) authority to \($0.audienceScope.rawValue), exposure \($0.exposureRisk.rawValue)."
         } ?? ""
+        let params = context.directedParams
+        let recipeSeed = params?.resolvedRecipeSeed ?? ""
+        let cageSound = params?.resolvedSemanticSound ?? ""
+        let namedSenses = params?.semanticSenses ?? []
+        let cookRecipe = !recipeSeed.isEmpty
+        let cookCage = !cageSound.isEmpty
+        var cookBlock = ""
+        var returnJSON = "Return JSON exactly: {\"centralImage\": \"core image/motif\", \"angle\": \"strategic angle in a phrase\", \"anchorRhymes\": [\"sound1\", \"sound2\", \"sound3\"]}"
+        if cookRecipe || cookCage {
+            var extra: [String] = []
+            if cookRecipe {
+                extra.append("""
+                WORD RECIPE SEED: \(recipeSeed)
+                Cook Ohm's neighborhood-news recipe: (1) pick the word (2) parse it for meaning AND rhyme (3) find an outside cultural reference (4) combine into ONE image. Example shape: "working laser and scope / Herculaneum notes". Do not lecture the steps — only cook the image.
+                """)
+            }
+            if cookCage {
+                let sensesLine = namedSenses.isEmpty
+                    ? "List 3–6 labeled meanings of that sound (e.g. switch = swap / walk / punishment / pistol / circuit)."
+                    : "Senses already named (use and extend, do not write a dictionary): \(namedSenses.joined(separator: ", "))."
+                extra.append("""
+                SEMANTIC CAGE SOUND: \(cageSound)
+                \(sensesLine)
+                """)
+            }
+            cookBlock = "\n" + extra.joined(separator: "\n")
+            returnJSON = """
+            Return JSON exactly: {"centralImage":"core image/motif","angle":"strategic angle in a phrase","anchorRhymes":["sound1","sound2","sound3"]\
+            \(cookRecipe ? ",\"wordRecipe\":{\"seed\":\"\(recipeSeed)\",\"meanings\":[\"...\"],\"rimeFamily\":[\"...\"],\"culturalRef\":\"...\",\"combinedImage\":\"one cooked bar-image\"}" : "")\
+            \(cookCage ? ",\"semanticCage\":{\"sound\":\"\(cageSound)\",\"senses\":[\"...\",\"...\"]}" : "")}
+            """
+        }
+        let barAsk = params?.targetBarCount == 4 ? 4 : 16
         let user = """
-        Plan a 16-bar melodic trap verse. JSON only.
+        Plan a \(barAsk)-bar melodic trap verse. JSON only.
         Theme: \(theme?.themeName ?? context.intent.theme) (tone: \(theme?.emotionalTone ?? context.intent.tone.rawValue))
-        Direction: \(context.intent.theme)
-        \(axesLine)
-        Return JSON exactly: {"centralImage": "core image/motif", "angle": "strategic angle in a phrase", "anchorRhymes": ["sound1", "sound2", "sound3"]}
+        \(controlSurfaceBlock(params))
+        \(axesLine)\(cookBlock)
+        \(returnJSON)
         """
         let raw = try await postChat(
-            system: "You are Model G's planning step. Respond ONLY with valid JSON.",
-            user: user, maxTokens: 220, temperature: 0.6, jsonMode: true
+            system: "You are Model G's planning step. Respond ONLY with valid JSON. Cook punches; do not write the verse yet.",
+            user: user, maxTokens: (cookRecipe || cookCage) ? 520 : 220, temperature: 0.6, jsonMode: true
         )
         guard let data = raw.data(using: .utf8),
               let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
             return .empty
         }
-        return VersePlan(
-            centralImage: obj["centralImage"] as? String ?? "",
-            angle: obj["angle"] as? String ?? "",
-            anchorRhymes: (obj["anchorRhymes"] as? [String]) ?? []
-        )
+        return VersePlan.fromJSONObject(obj)
     }
 
     /// v3 step 2 — generate the whole verse (hook + 16 bars) in one call, conditioned on the plan.
@@ -250,21 +344,23 @@ class ModelGLLMService {
                            temperature: Double = 0.8,
                            corpusExemplars: [String] = [], corpusVocab: [String] = [],
                            inspiration: Double = 0.4,
-                           punchlineMode: Bool = false) async throws -> (hook: String, bars: [String]) {
-        let layer = context.luxuryLayer ?? .empty
+                           punchlineMode: Bool = false,
+                           flowExemplar: FlowExemplar? = nil) async throws -> (hook: String, bars: [String]) {
+        let usingArtistBrain = ModelYouWriterPolicy.usesArtistSeat(artistBrainPrompt: context.artistBrainPrompt)
+        let layer = usingArtistBrain ? LuxuryLayer.empty : (context.luxuryLayer ?? .empty)
         let themeBlock = context.themeContext.map { themeDirective($0) } ?? ""
         let voiceBlock = context.signalAxes.map { "\n" + signalDirective($0) } ?? ""
         let inspirationLine = ModelGEnvironment.originalityBias < 0.5
             ? "Inspiration: be grounded in the culture — reference music, brands, places, slang and play on familiar phrases; borrow the genre's idioms. Clever and referential beats sterile-original."
             : "Inspiration: lean fresh and novel, but stay grounded in the culture — references and wordplay over invented-from-nothing lines."
         let palette = LexiconStore.shared.referencePalette()
-        let referencesBlock = palette.isEmpty ? "" :
-            "\nSpecific references you MAY draw on (pick 1-3 that genuinely fit the feeling; never force, never list them): \(palette.joined(separator: ", "))."
+        let referencesBlock = ModelYouWriterPolicy.housePaletteLine(palette: palette, usingArtistBrain: usingArtistBrain)
         let beatBlock = beatDirective(context)
+        let wrapBlock = wrapClockBlock(context)
         let syllRule: String
         if let lo = context.syllableMin, let hi = context.syllableMax {
             syllRule = "between \(lo) and \(hi) syllables per bar — sit in the pocket"
-        } else if context.musicalBPM != nil {
+        } else if context.barClock != nil || context.musicalBPM != nil {
             syllRule = "around \(context.syllableTarget) syllables per bar — sit in the pocket at this tempo"
         } else {
             syllRule = "8-10 syllables MAX"
@@ -291,37 +387,89 @@ class ModelGLLMService {
             }
             return "\nEND-RHYME SCHEME (strict — this OVERRIDES your default): hold the SAME ending-rhyme sound for \(n) bars in a row, THEN switch to a brand-new rhyme sound for the next \(n) bars. Do NOT fall back to 2-bar couplets. Concretely: \(example). Use only about \(max(2, 16 / n)) distinct end-rhyme sounds across the 16 bars."
         }()
-        // Grounding strength scales with the Inspiration slider (1 - originality). High = lean hard
-        // on the vault; low = loose flavor only. Show all retrieved exemplars (retriever capped k).
+        // Lyric RAG is vocabulary flavor only. Pocket resemblance lives on COPY-FLOW, not phrasing.
         let corpusExemplarBlock: String = {
             guard !corpusExemplars.isEmpty else { return "" }
             let lines = corpusExemplars.map { "• \($0)" }.joined(separator: "\n")
-            let directive: String
-            if inspiration >= 0.66 {
-                directive = "REFERENCE BARS — your BLUEPRINT. Echo their cadence, slang, imagery and phrasing closely and lean HARD on this exact style; a strong family resemblance is intended (reword, never copy verbatim):"
-            } else if inspiration <= 0.33 {
-                directive = "REFERENCE BARS (loose flavor only — diverge from these, do NOT echo them):"
-            } else {
-                directive = "REFERENCE BARS (study the craft, cadence and vocabulary — DO NOT copy; paraphrase/blend):"
-            }
+            let directive = ModelYouWriterPolicy.referenceBarsDirective(
+                usingArtistBrain: usingArtistBrain,
+                inspiration: inspiration
+            )
             return "\n\n\(directive)\n\(lines)"
         }()
-        let corpusVocabBlock: String = corpusVocab.isEmpty ? "" :
+        let copyFlow = copyFlowBlock(flowExemplar)
+        let corpusVocabBlock: String = (usingArtistBrain || corpusVocab.isEmpty) ? "" :
             "\nVOCAB PALETTE (weave in naturally, only if it fits): \(corpusVocab.prefix(12).joined(separator: ", "))"
             
         let punchlineBlock = punchlineMode ? "\n\nPUNCHLINE MODE (STRICT STRUCTURE):\n- Structure the entire 16-bar verse into 4-bar chunks.\n- Bars 1 and 2 MUST establish a premise or narrative.\n- Bar 3 MUST be a setup or misdirection.\n- Bar 4 MUST deliver a hard punchline/payoff.\n- This means bars 4, 8, 12, and 16 should be the strongest punchlines, set up by the preceding 3 bars." : ""
+        let directedBlock = controlSurfaceBlock(context.directedParams)
+        let punchContentBlock = punchContentBlock(plan)
+        let artistBrainBlock: String = {
+            guard let prompt = context.artistBrainPrompt, !prompt.isEmpty else { return "" }
+            return "\n\nMODEL YOU ARTIST BRAIN (this writer — not Gunna house wrap):\n\(prompt)"
+        }()
+        let barAsk = context.directedParams?.targetBarCount == 4 ? 4 : 16
+        let cycleAsk = barAsk == 4
+            ? "a 1-2 line HOOK and EXACTLY 4 bars (one wrap cycle)"
+            : "a 1-2 line HOOK and EXACTLY 16 bars as FOUR 4-bar cycles"
+        let rhymeRule = usingArtistBrain
+            ? "rhyme HARD — multisyllabic and internal, not just line-ends"
+            : "end on a perfect hit (same ending sound) or a painter-family near (pretty/chelly, hip/dick, cheat/reach, line-end shit/militant); a shared vowel outside those families is not a rhyme; internal rhyme is welcome when the line stays relaxed; skip stacked multisyllabic flexes"
+        let emptyRule = usingArtistBrain
+            ? ""
+            : " If you cannot keep DIRECTION inside ±2 syllables with that ending, return {\"hook\":\"\",\"bars\":[]} and write no filler."
         let user = """
-        Write a melodic trap verse: a 1-2 line HOOK and EXACTLY 16 bars. JSON only.
+        Write a melodic trap verse: \(cycleAsk). JSON only.
+        \(wrapBlock)
+        \(copyFlow)
+        \(directedBlock)
+        \(punchContentBlock)
         Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
         \(plan.promptText)
-        Luxury layers (weave naturally, never list): brands \(joinedOrDash(layer.brands)); specs \(joinedOrDash(layer.specs)); environments \(joinedOrDash(layer.environments)).
         \(arcShape)\(themeBlock)\(voiceBlock)\(beatBlock)
-        \(inspirationLine)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)\(punchlineBlock)
-        Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); rhyme HARD — multisyllabic and internal, not just line-ends; name something CONCRETE — a specific brand, place, or coded term, not a generic word ("Roley" not "a watch", "the trap" not "the block"), at least 1-2 per verse; do not repeat the same word; imply more than you state; no numbering inside the bar strings.\(rhymeCadence)
-        Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… 16 bars total"]}\(exampleBlock)
+        \(ModelYouWriterPolicy.luxuryPromptLine(layer: layer, usingArtistBrain: usingArtistBrain))
+        \(inspirationLine)\(referencesBlock)\(corpusExemplarBlock)\(corpusVocabBlock)\(punchlineBlock)\(artistBrainBlock)
+        Rules (strict): each bar SHORT and punchy, \(syllRule) (no wordy/run-on lines); \(rhymeRule); \(ModelYouWriterPolicy.concreteRule(usingArtistBrain: usingArtistBrain, filters: context.directedParams?.youFilters ?? .init())); deliberate repetition/anaphora is allowed — don't pad; earn the reveal, don't over-explain; no numbering inside the bar strings.\(rhymeCadence)
+        Return JSON exactly: {"hook": "the hook lines", "bars": ["bar 1", "bar 2", "… \(barAsk) bars total"]}\(emptyRule)\(exampleBlock)
         """
+        #if DEBUG
+        let clock = context.barClock
+        let recipeNote = plan.wordRecipe.map { " recipe=\($0.seed)" } ?? ""
+        let cageNote = plan.semanticCage.map { " cage=\($0.sound)/\($0.senses.count)" } ?? ""
+        let flowNote = flowExemplar.map { " flow=\($0.source.rawValue) \($0.syllableMap.map(String.init).joined(separator: "/"))" } ?? ""
+        print("📝 [ModelG] clock bpm=\(clock.map { String(Int($0.bpm.rounded())) } ?? "nil") folded=\(clock?.hatsFolded ?? false)\(recipeNote)\(cageNote)\(flowNote) partner:\(directedBlock.prefix(180))")
+        #endif
+        let youSystem = usingArtistBrain
+            ? "You are Model You. G craft (score, reject, syllables, silence) still applies, but identity is this artist's confirmed brain — not Gunna / Young Thug / Lil Baby house wrap. If the brain is thin, write like a pro using only what they told us. Punch stays punch. Respond ONLY with valid JSON: a hook and exactly the requested bars."
+            : """
+            ROLE
+            You are Model G, the Verse Writer for Penwork. Swift reads your JSON and drops an empty bars array. Write short, concrete, cadence-driven trap lines.
+
+            INPUT
+            The user message uses these headings: DIRECTION, MUST-USE, HIGHLIGHTS, TOPICS, RHYME GROUPS, COPY-FLOW, BAR CLOCK. This request asks for \(barAsk) bars. Obey that count.
+
+            ORDER
+            1. DIRECTION. Keep the user's specific subject and picture. Compress it into the pocket.
+            2. BAR CLOCK and COPY-FLOW. Stay within ±2 syllables of each slot on the map. When the subject is long, shorten the line. Stay inside ±2.
+            3. RHYME. A perfect hit is the same ending sound. A near hit is a painter family only:
+               - feminine -y, as in pretty/chelly
+               - same vowel plus one P, B, K, or G, as in hip/dick
+               - IY or IH plus T or CH, as in cheat/reach
+               - a line-end IH plus an alveolar stop, as in shit/militant
+               A shared vowel outside those families is not a rhyme. When RHYME GROUPS lists families, end on those. When the user message says to hold one ending for N bars, hold it for N bars.
+            4. MUST-USE and HIGHLIGHTS. Place them inside the clock.
+
+            STYLE
+            One image or action per line. One brand per line. No run-on lines. Internal rhyme is welcome when the line stays relaxed. Skip stacked multisyllabic flexes. Reference bars are tone only. Leave their words behind. Match the intensity the direction already asks for. Do not add profanity to sound authentic.
+
+            OUTPUT
+            JSON only. No markdown, no commentary.
+            {"hook":"1-2 lines in one string","bars":["…"]}
+            The bars array length equals \(barAsk).
+            When you cannot keep the direction inside ±2 with a perfect or painter-family ending, return {"hook":"","bars":[]}. Leave the slot empty. Do not write a filler bar.
+            """
         let raw = try await postChat(
-            system: "You are Model G. Respond ONLY with valid JSON: a hook and exactly 16 bars. House style and the reference bars take priority over the requested topic when they conflict.",
+            system: youSystem,
             user: user, maxTokens: 1400, temperature: temperature, jsonMode: true
         )
         guard let data = raw.data(using: .utf8),
@@ -407,6 +555,103 @@ class ModelGLLMService {
         return trimmed.isEmpty ? DirectedGenerationParams.defaultUserPromptWhenEmpty : trimmed
     }
 
+    /// Writing-partner fields for the live Core prompt. Empty sections are omitted (not "—") so the model does not treat blanks as constraints.
+    private func controlSurfaceBlock(_ params: DirectedGenerationParams?) -> String {
+        var lines: [String] = []
+        lines.append("DIRECTION: \(controlSurfaceDirection(params))")
+        let job = params?.targetBarCount == 4 ? 4 : 16
+        if job == 4 {
+            lines.append("JOB: one 4-bar cycle. Do not punch-in one caption at a time.")
+        } else {
+            lines.append("JOB: four 4-bar cycles (16 bars). Repeat the pocket, swap nouns. Do not punch-in one caption at a time.")
+        }
+        guard let params else {
+            return "\n" + lines.joined(separator: "\n") + "\n"
+        }
+        let recipeSeed = params.resolvedRecipeSeed
+        if !recipeSeed.isEmpty {
+            lines.append("RECIPE SEED: \(recipeSeed) — cook meaning + rhyme + one outside cultural ref into a single image. Do not just name the word.")
+        }
+        let cageSound = params.resolvedSemanticSound
+        if !cageSound.isEmpty {
+            let senses = params.semanticSenses
+            if senses.isEmpty {
+                lines.append("SOUND CAGE: \"\(cageSound)\" — one sound, several meanings. Use at least two senses across the 16. Do not define the word.")
+            } else {
+                lines.append("SOUND CAGE: \"\(cageSound)\" may mean \(senses.joined(separator: " / ")). Each 4-bar cycle uses at least two senses. Do not define the word.")
+            }
+        }
+        let keywordCage = params.resolvedKeywordCage
+        if !keywordCage.isEmpty {
+            lines.append("KEYWORD CAGE (every bar touches at least one): \(keywordCage.joined(separator: ", "))")
+        }
+        let mustUse = params.resolvedMustUseVerbatim
+        if !mustUse.isEmpty {
+            lines.append("MUST-USE (include each verbatim at least once): \(mustUse.joined(separator: ", "))")
+        }
+        if !params.highlightAnchors.isEmpty {
+            let bits = params.highlightAnchors.map { anchor -> String in
+                guard let strength = anchor.strength else { return anchor.word }
+                return "\(anchor.word) (\(strength.rawValue))"
+            }
+            lines.append("HIGHLIGHTS (nudge rhyme and imagery): \(bits.joined(separator: ", "))")
+        }
+        if !params.selectedTopics.isEmpty {
+            lines.append("TOPICS: \(params.selectedTopics.joined(separator: ", "))")
+        }
+        if !params.selectedTones.isEmpty {
+            lines.append("TONES: \(params.selectedTones.map(\.rawValue).joined(separator: ", "))")
+        }
+        if !params.worldBuildingWords.isEmpty {
+            lines.append("WORLD-BUILDING (weave as imagery, not a list): \(params.worldBuildingWords.joined(separator: ", "))")
+        }
+        if !params.selectedRhymeGroups.isEmpty {
+            let groups = params.selectedRhymeGroups
+                .map { "\($0.key): \($0.words.joined(separator: ", "))" }
+                .joined(separator: "; ")
+            lines.append("RHYME GROUPS (prefer these families at line end): \(groups)")
+        }
+        let chips = params.schemeChipBlock().trimmingCharacters(in: .whitespacesAndNewlines)
+        if !chips.isEmpty {
+            lines.append(contentsOf: chips.split(separator: "\n").map(String.init))
+        }
+        return "\n" + lines.joined(separator: "\n") + "\n"
+    }
+
+    /// Cooked punch content from the plan call. Empty when no recipe/cage was requested.
+    private func punchContentBlock(_ plan: VersePlan) -> String {
+        var lines: [String] = []
+        if let recipe = plan.wordRecipe, recipe.isUsable {
+            let meanings = recipe.meanings.isEmpty ? "" : " Meanings in play: \(recipe.meanings.joined(separator: ", "))."
+            let rimes = recipe.rimeFamily.isEmpty ? "" : " Rime family: \(recipe.rimeFamily.joined(separator: ", "))."
+            let culture = recipe.culturalRef.isEmpty ? "" : " Cultural ref: \(recipe.culturalRef)."
+            lines.append("WORD RECIPE (use this cooked image, do not restate the steps): \(recipe.combinedImage).\(meanings)\(rimes)\(culture)")
+        }
+        if let cage = plan.semanticCage, cage.isUsable {
+            lines.append("SEMANTIC CAGE: the sound \"\(cage.sound)\" may mean \(cage.senses.joined(separator: " / ")). Each 4-bar cycle uses at least two senses. Do not define the word. Do not say it has many meanings.")
+        }
+        guard !lines.isEmpty else { return "" }
+        return "\n" + lines.joined(separator: "\n") + "\n"
+    }
+
+    /// Copy the CLOCK (syllable map + punch-window stress), never the nouns.
+    private func copyFlowBlock(_ exemplar: FlowExemplar?) -> String {
+        guard let exemplar, exemplar.isUsable else { return "" }
+        let map = exemplar.syllableMap.map(String.init).joined(separator: " / ")
+        var block = """
+
+        COPY-FLOW (copy the CLOCK, not the nouns):
+        Syllable map: \(map)
+        Stress: \(exemplar.stressHint)
+        Stay within ±2 syllables of each slot. Fill new nouns. Do not reuse the reference words.
+        """
+        if exemplar.includeBarText {
+            let shape = exemplar.bars.joined(separator: "\n")
+            block += "\nReference shape (do not reuse these words):\n\(shape)\n"
+        }
+        return block
+    }
+
     private func volumeInstruction(_ volume: SignalVolume) -> String {
         switch volume {
         case .loud:
@@ -418,15 +663,61 @@ class ModelGLLMService {
         }
     }
 
+    /// Ohm wrap clock: pocket + punch window. Omitted when Gunna wrap is off.
+    private func wrapClockBlock(_ context: GenerationContext) -> String {
+        if context.directedParams?.gunnaWrap == false { return "" }
+        guard let clock = context.barClock else { return "" }
+        let foldNote = clock.hatsFolded
+            ? " Hats were 2×; write the vocal at this pocket, not double-time."
+            : ""
+        let job = context.directedParams?.targetBarCount == 4 ? 4 : 16
+        let cycleLine: String
+        if context.directedParams?.storyArc == true {
+            cycleLine = "Write FOUR 4-bar cycles as ONE journey (not eight isolated couplets). Repeat this pocket; advance the story."
+        } else if job == 4 {
+            cycleLine = "Write ONE 4-bar cycle."
+        } else {
+            cycleLine = "Write FOUR 4-bar cycles. Repeat this pocket; swap nouns."
+        }
+        let grammar: String
+        switch context.directedParams?.punchGrammar ?? .couplet {
+        case .threePlusOne:
+            grammar = "PUNCH GRAMMAR: bars 1–3 setup/misdirection, bar 4 payoff. Repeat that 4-bar shape."
+        case .closedLoop4:
+            grammar = "PUNCH GRAMMAR: closed-loop 4 — one concept across the four (same picture, illegal second readings). Example shape: first / second / nothing."
+        case .couplet:
+            grammar = "PUNCH GRAMMAR: couplet. Bars 1–2 setup/punch, bars 3–4 same pocket and same concept, new nouns. Setup on beats 1–2.5. Punch re-reads the setup (same picture, second meaning)."
+        }
+        let adlib = (context.directedParams?.adlibOnFour == true)
+            ? "\nAd-lib \"yeah\" may mark beat 4 as a metronome click — not a bar."
+            : ""
+        return """
+
+        BAR CLOCK: \(Int(clock.bpm.rounded())) BPM, 4/4, \(String(format: "%.1f", clock.barsPerMinute)) bars/min, \(String(format: "%.2f", clock.secondsPerBar))s per bar.
+        Pocket: \(clock.pocket.promptLabel). Land the last stress on beats 3–4.\(foldNote)
+        \(grammar)
+        \(cycleLine) Do not punch-in one bar at a time.\(adlib)
+        Syllable count follows THIS beat (~\(context.syllableTarget) per bar). Wrap is when the last stress lands, not four short words per bar.
+
+        EXEMPLAR (timing only — last stress late. Copy WHEN it lands, not how many words these lines have):
+        Came up off nothing like the first seconds
+        When you come from nothing, you know firsts second
+        You know no firsts like the first seconds
+        I'm just getting started. This is nothing special
+        """
+    }
+
     /// Beat metadata → cadence feel + mood lean. Empty when the entry has no BPM/key.
     /// Maps the entry's BPM (tempo feel) and musical key/scale (major→bright, minor/modes→dark)
     /// onto the corpus's 8-tone mood palette so the verse matches the track.
     private func beatDirective(_ context: GenerationContext) -> String {
         var parts: [String] = []
-        if let bpm = context.musicalBPM, bpm > 0 {
-            let feel = bpm >= 140 ? "fast — short, clipped bars, double-time pockets"
-                     : (bpm <= 85 ? "slow — more room per bar, stretch the melody"
-                                  : "mid-tempo — steady pocket")
+        if let clock = context.barClock {
+            let foldNote = clock.hatsFolded ? " (hats folded; write the vocal at this pocket, not double-time)" : ""
+            parts.append("\(Int(clock.bpm.rounded())) BPM, \(String(format: "%.1f", clock.barsPerMinute)) bars/min, pocket \(clock.pocket.promptLabel), last stress on beats 3–4\(foldNote)")
+        } else if let bpm = context.musicalBPM, bpm > 0 {
+            let feel = bpm <= 85 ? "slow — more room per bar, stretch the melody"
+                     : "mid-tempo — steady pocket"
             parts.append("\(bpm) BPM (\(feel))")
         }
         if let key = context.musicalKey, !key.isEmpty {
@@ -471,8 +762,8 @@ class ModelGLLMService {
         }
         let exposure: String
         switch axes.exposureRisk {
-        case .low:    exposure = "Imply, don't explain. Signal wealth/risk through detail; never justify, never name the act. Over-explaining kills the line."
-        case .medium: exposure = "Mostly imply; at most one plain statement. Show more than you tell."
+        case .low:    exposure = "Earn the reveal on the punch bar; don't over-explain the setup. Naming the flip is allowed. Don't justify, don't list."
+        case .medium: exposure = "Mostly imply on the setup; the punch may name the second meaning. Show more than you tell."
         case .high:   exposure = "Direct is allowed, but still show more than you tell."
         }
         return """

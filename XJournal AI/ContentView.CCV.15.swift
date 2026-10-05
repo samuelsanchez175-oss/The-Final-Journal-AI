@@ -10,7 +10,6 @@
 import SwiftUI
 import UIKit
 import Combine
-import NaturalLanguage
 
 struct RhymeGroupListView: View {
     let groups: [RhymeHighlighterEngine.RhymeGroup]
@@ -42,33 +41,9 @@ struct RhymeGroupListView: View {
     
     // Helper to get screen width using modern API
     private func getScreenWidth() -> CGFloat {
-        // #region agent log
-        let logData: [String: Any] = ["sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ContentView.CCV.15.swift:43", "message": "getScreenWidth entry", "data": ["horizontalSizeClass": String(describing: horizontalSizeClass)], "timestamp": Int(Date().timeIntervalSince1970 * 1000)]
-        if let logFile = FileHandle(forWritingAtPath: "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log") {
-            logFile.seekToEndOfFile()
-            if let jsonData = try? JSONSerialization.data(withJSONObject: logData) {
-                logFile.write(jsonData)
-                logFile.write("\n".data(using: .utf8)!)
-            }
-            logFile.closeFile()
-        }
-        // #endregion
-        // Try modern API first (iOS 13+)
         let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
         let window = windowScene?.windows.first
-        let width = window?.bounds.width ?? (horizontalSizeClass == .compact ? 390 : 768)
-        // #region agent log
-        let logData2: [String: Any] = ["sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ContentView.CCV.15.swift:50", "message": "getScreenWidth exit", "data": ["windowSceneFound": windowScene != nil, "windowFound": window != nil, "width": width], "timestamp": Int(Date().timeIntervalSince1970 * 1000)]
-        if let logFile2 = FileHandle(forWritingAtPath: "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log") {
-            logFile2.seekToEndOfFile()
-            if let jsonData2 = try? JSONSerialization.data(withJSONObject: logData2) {
-                logFile2.write(jsonData2)
-                logFile2.write("\n".data(using: .utf8)!)
-            }
-            logFile2.closeFile()
-        }
-        // #endregion
-        return width
+        return window?.bounds.width ?? (horizontalSizeClass == .compact ? 390 : 768)
     }
     
     // Helper to get screen height using modern API
@@ -82,37 +57,23 @@ struct RhymeGroupListView: View {
 
     // Computed property to avoid complex expression in body
     private var orderedGroups: [RhymeHighlighterEngine.RhymeGroup] {
-        // #region agent log
-        let logData: [String: Any] = ["sessionId": "debug-session", "runId": "run1", "hypothesisId": "D", "location": "ContentView.CCV.15.swift:65", "message": "orderedGroups computed", "data": ["groupsCount": groups.count, "isSortReversed": isSortReversed], "timestamp": Int(Date().timeIntervalSince1970 * 1000)]
-        if let logFile = FileHandle(forWritingAtPath: "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log") {
-            logFile.seekToEndOfFile()
-            if let jsonData = try? JSONSerialization.data(withJSONObject: logData) {
-                logFile.write(jsonData)
-                logFile.write("\n".data(using: .utf8)!)
-            }
-            logFile.closeFile()
+        func firstWordStart(_ group: RhymeHighlighterEngine.RhymeGroup) -> String.Index? {
+            group.words.map({ $0.range.lowerBound }).min()
         }
-        // #endregion
+        func typeRank(_ type: RhymeHighlighterEngine.RhymeType) -> Int {
+            type == .internalRhyme ? 1 : 0
+        }
         let baseOrdered = groups.sorted { g1, g2 in
+            let rank1 = typeRank(g1.rhymeType)
+            let rank2 = typeRank(g2.rhymeType)
+            if rank1 != rank2 { return rank1 < rank2 }
             guard
-                let r1 = g1.words.map({ $0.range.lowerBound }).min(),
-                let r2 = g2.words.map({ $0.range.lowerBound }).min()
+                let r1 = firstWordStart(g1),
+                let r2 = firstWordStart(g2)
             else { return false }
             return r1 < r2
         }
-        let result = isSortReversed ? Array(baseOrdered.reversed()) : baseOrdered
-        // #region agent log
-        let logData2: [String: Any] = ["sessionId": "debug-session", "runId": "run1", "hypothesisId": "D", "location": "ContentView.CCV.15.swift:73", "message": "orderedGroups result", "data": ["resultCount": result.count], "timestamp": Int(Date().timeIntervalSince1970 * 1000)]
-        if let logFile2 = FileHandle(forWritingAtPath: "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log") {
-            logFile2.seekToEndOfFile()
-            if let jsonData2 = try? JSONSerialization.data(withJSONObject: logData2) {
-                logFile2.write(jsonData2)
-                logFile2.write("\n".data(using: .utf8)!)
-            }
-            logFile2.closeFile()
-        }
-        // #endregion
-        return result
+        return isSortReversed ? Array(baseOrdered.reversed()) : baseOrdered
     }
 
     var body: some View {
@@ -167,18 +128,6 @@ struct RhymeGroupListView: View {
                     }
                 }
                 .onAppear {
-                    // #region agent log
-                    let logData: [String: Any] = ["sessionId": "debug-session", "runId": "run1", "hypothesisId": "E", "location": "ContentView.CCV.15.swift:127", "message": "ScrollView onAppear", "data": ["orderedGroupsCount": orderedGroups.count], "timestamp": Int(Date().timeIntervalSince1970 * 1000)]
-                    if let logFile = FileHandle(forWritingAtPath: "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log") {
-                        logFile.seekToEndOfFile()
-                        if let jsonData = try? JSONSerialization.data(withJSONObject: logData) {
-                            logFile.write(jsonData)
-                            logFile.write("\n".data(using: .utf8)!)
-                        }
-                        logFile.closeFile()
-                    }
-                    // #endregion
-                    // Scroll to top when view appears
                     withAnimation {
                         proxy.scrollTo("top", anchor: .top)
                     }
@@ -196,13 +145,13 @@ struct RhymeGroupListView: View {
     // Helper view builder to break up complex expression
     @ViewBuilder
     private func groupRowView(index: Int, group: RhymeHighlighterEngine.RhymeGroup) -> some View {
-        let groupColor = Color(RhymeColorPalette.colors[group.colorIndex])
+        let groupColor = Color(RhymeColorPalette.color(at: group.colorIndex))
         let uniqueWords = Array(Set(group.words.map { $0.word })).sorted()
         let suggestions = showSuggestions ? findRhymeSuggestions(for: group) : []
         
         VStack(alignment: .leading, spacing: 8) {
             // Group header
-            Text("Group \(index + 1)")
+            Text(groupHeaderTitle(index: index, group: group))
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(groupColor)
             
@@ -224,31 +173,24 @@ struct RhymeGroupListView: View {
         }
     }
     
+    private func groupHeaderTitle(index: Int, group: RhymeHighlighterEngine.RhymeGroup) -> String {
+        let isInternal = group.rhymeType == .internalRhyme
+        let kind = isInternal ? "Internal" : "End"
+        let ordinal = orderedGroups.prefix(index + 1).filter {
+            ($0.rhymeType == .internalRhyme) == isInternal
+        }.count
+        return "\(kind) \(ordinal)"
+    }
+
     // Find rhyming words that aren't in the current text
     private func findRhymeSuggestions(for group: RhymeHighlighterEngine.RhymeGroup) -> [String] {
-        // #region agent log
-        let logData: [String: Any] = ["sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ContentView.CCV.15.swift:177", "message": "findRhymeSuggestions entry", "data": ["groupWordsCount": group.words.count, "currentTextLength": currentText.count], "timestamp": Int(Date().timeIntervalSince1970 * 1000)]
-        if let logFile = FileHandle(forWritingAtPath: "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log") {
-            logFile.seekToEndOfFile()
-            if let jsonData = try? JSONSerialization.data(withJSONObject: logData) {
-                logFile.write(jsonData)
-                logFile.write("\n".data(using: .utf8)!)
-            }
-            logFile.closeFile()
-        }
-        // #endregion
-        // Get all words currently in the text (lowercased)
-        let tokenizer = NLTokenizer(unit: .word)
-        tokenizer.string = currentText
-        var wordsInText: Set<String> = []
-        tokenizer.enumerateTokens(in: currentText.startIndex..<currentText.endIndex) { range, _ in
-            wordsInText.insert(String(currentText[range]).lowercased())
-            return true
-        }
+        let wordsInText = Set(
+            RhymeHighlighterEngine.tokenizeWords(in: currentText).map { $0.0.lowercased() }
+        )
         
         // Get the phonetic signature from the first word in the group
         guard let firstWord = group.words.first,
-              let phonemes = FJCMUDICTStore.shared.phonemesByWord[firstWord.word.lowercased()],
+              let phonemes = RhymeHighlighterEngine.phonemes(for: firstWord.word),
               let groupSignature = RhymeHighlighterEngine.extractSignature(from: phonemes) else {
             return []
         }
@@ -294,18 +236,6 @@ struct RhymeGroupListView: View {
         
         // Return perfect rhymes first, then fill with near rhymes up to 7 total
         let allSuggestions = perfectRhymes + nearRhymes
-        let result = Array(allSuggestions.prefix(7)).sorted() // Increased from 3 to 7 suggestions
-        // #region agent log
-        let logData2: [String: Any] = ["sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ContentView.CCV.15.swift:235", "message": "findRhymeSuggestions exit", "data": ["perfectRhymesCount": perfectRhymes.count, "nearRhymesCount": nearRhymes.count, "resultCount": result.count], "timestamp": Int(Date().timeIntervalSince1970 * 1000)]
-        if let logFile2 = FileHandle(forWritingAtPath: "/Users/samuel/Documents/The Final Journal AI/.cursor/debug.log") {
-            logFile2.seekToEndOfFile()
-            if let jsonData2 = try? JSONSerialization.data(withJSONObject: logData2) {
-                logFile2.write(jsonData2)
-                logFile2.write("\n".data(using: .utf8)!)
-            }
-            logFile2.closeFile()
-        }
-        // #endregion
-        return result
+        return Array(allSuggestions.prefix(7)).sorted()
     }
 }

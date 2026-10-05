@@ -5,12 +5,18 @@ import Security
 
 // MARK: - Rhyme Color Palette
 
-enum RhymeColorPalette {
+nonisolated enum RhymeColorPalette: Sendable {
     // Six distinct rhyme-group hues, used both as low-opacity editor highlight backgrounds
     // (CCV.6: ~0.16–0.30 alpha) and as foreground TEXT in the rhyme-group list (CCV.15).
     // Scheme-aware: deepened in Light so amber/emerald read as text on the white surface;
     // brightened in Dark so the same hues read on the Lagoon surface (#0C1417). Light values
     // are unchanged from the 2026-05-31 re-tune. Distinct 6-hue identity preserved.
+    static func color(at index: Int) -> UIColor {
+        guard !colors.isEmpty else { return .systemGray }
+        let i = ((index % colors.count) + colors.count) % colors.count
+        return colors[i]
+    }
+
     static let colors: [UIColor] = [
         dynamic(light: (0.82, 0.58, 0.08), dark: (0.96, 0.74, 0.28)),  // amber
         dynamic(light: (0.94, 0.45, 0.35), dark: (0.97, 0.54, 0.45)),  // coral
@@ -321,15 +327,6 @@ struct SoftBlueGlassBackground<S: InsettableShape>: View {
                         lineWidth: outlineLineWidth
                     )
             )
-            // iOS 26-style moving glint that rides the blue glass edge with device tilt.
-            .overlay(
-                GyroSpecularEdge(
-                    shape: shape,
-                    lineWidth: outlineLineWidth + 0.8,
-                    tint: .white,
-                    intensity: colorScheme == .dark ? 0.85 : 1.0
-                )
-            )
             .clipShape(shape)
             .shadow(
                 color: Color.black.opacity(colorScheme == .dark ? 0.30 : 0.10),
@@ -356,7 +353,7 @@ struct JournalDetailPlaceholderView: View {
 
     var body: some View {
         ZStack {
-            AtmosphereGlow()
+            Momentum.surface
                 .ignoresSafeArea()
 
             VStack(spacing: 16) {

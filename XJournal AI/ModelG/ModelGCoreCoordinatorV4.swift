@@ -19,7 +19,7 @@ class ModelGCoreCoordinatorV4 {
     private let beatAnalyzer = BeatAnalyzer()
     private let debugLogger = DebugLogger()
 
-    private let barCount = 16
+    private let defaultBarCount = 16
     private let verseAverageThreshold: Double = 82
     private let defaultSyllableTarget = 11
 
@@ -34,35 +34,65 @@ class ModelGCoreCoordinatorV4 {
         musicalKey: String? = nil,
         musicalScale: String? = nil,
         syllableMin: Int? = nil,
-        syllableMax: Int? = nil
+        syllableMax: Int? = nil,
+        artistBrainPrompt: String? = nil,
+        artistBrainChunks: [String] = []
     ) async throws -> GeneratedRecord {
         riskManager.reset()
 
-        let intent = IntentExtractor.extractFromTopic(input)
+        let intent = IntentExtractor.extractForModelG(draft: input, directedParams: directedParams)
         let signalAxes = computeModelGSignalAxes(from: input)
         let themeContext = ThemeContextBuilder.build(from: input, selectedThemeIDs: selectedThemeIDs)
-        let arcShape = SocialActionArc.shape(dominant: signalAxes?.socialAction)
+        let arcShape = directedParams?.storyArc == true
+            ? DirectedGenerationParams.storyArcPrompt
+            : SocialActionArc.shape(dominant: signalAxes?.socialAction)
+        let wrapOn = directedParams?.gunnaWrap != false
+        let targetBarCount = directedParams?.targetBarCount == 4 ? 4 : defaultBarCount
 
         var beatFingerprint: BeatFingerprint?
         if let url = audioURL {
             beatFingerprint = try? await beatAnalyzer.analyze(audioURL: url)
         }
+        // Note fields first; if the beat is attached but BPM/key never saved, use the live fingerprint.
+        let liveBPM = beatFingerprint.flatMap { $0.bpm > 0 ? Int($0.bpm.rounded()) : nil }
+        let liveKey = nonempty(beatFingerprint?.key)
+        let liveScale = nonempty(beatFingerprint?.scale)
+        let noteBPM = bpm ?? liveBPM
+        let noteKey = nonempty(musicalKey) ?? liveKey
+        let noteScale = nonempty(musicalScale) ?? liveScale
+
+        let resolvedBPM = wrapOn
+            ? (directedParams?.resolvedWrapBPM(noteBPM: noteBPM) ?? noteBPM)
+            : noteBPM
+        let barClock: BarClock? = wrapOn
+            ? BarClock.resolve(
+                userBPM: resolvedBPM,
+                pocket: directedParams?.wrapPocket ?? .behind,
+                foldHatsEnabled: true
+            )
+            : nil
 
         // Detect style with a luxury-free context (matches v1/v2).
         let styleDetectContext = makeContext(
             intent: intent, beat: beatFingerprint, style: .coldTrap, directedParams: directedParams,
-            luxury: nil, barIndex: 0, existingBars: [], signalAxes: signalAxes, themeContext: themeContext
+            luxury: nil, barIndex: 0, existingBars: [], signalAxes: signalAxes, themeContext: themeContext,
+            barClock: barClock
         )
         let styleProfile = styleOverride ?? styleEngine.detectStyle(context: styleDetectContext)
 
-        let luxuryLayer = luxuryLexiconService.sampleForContext(
-            theme: intent.theme, style: styleProfile, volume: styleProfile.signalVolume, barIndex: 0, isHook: false
-        )
+        let usingArtistBrain = ModelYouWriterPolicy.usesArtistSeat(artistBrainPrompt: artistBrainPrompt)
+        let luxuryLayer: LuxuryLayer? = ModelYouWriterPolicy.usesHouseLuxury(artistBrainPrompt: artistBrainPrompt)
+            ? luxuryLexiconService.sampleForContext(
+                theme: intent.theme, style: styleProfile, volume: styleProfile.signalVolume, barIndex: 0, isHook: false
+            )
+            : nil
+        let writeBPM = barClock.map { Int($0.bpm.rounded()) } ?? noteBPM
         let baseContext = makeContext(
             intent: intent, beat: beatFingerprint, style: styleProfile, directedParams: directedParams,
             luxury: luxuryLayer, barIndex: 0, existingBars: [], signalAxes: signalAxes, themeContext: themeContext,
-            bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale,
-            syllableMin: syllableMin, syllableMax: syllableMax
+            bpm: writeBPM, musicalKey: noteKey, musicalScale: noteScale,
+            syllableMin: syllableMin, syllableMax: syllableMax, barClock: barClock,
+            artistBrainPrompt: artistBrainPrompt, artistBrainChunks: artistBrainChunks
         )
 
         // Step 1 — plan the verse (1 call).
@@ -81,10 +111,21 @@ class ModelGCoreCoordinatorV4 {
         let inspiration = 1.0 - ModelGEnvironment.originalityBias
         let kExemplars = 4 + Int((inspiration * 8).rounded())   // 4 (novel) … 12 (max inspired)
 
+        // Copy-flow: last 4 draft bars → pasted 4 → corpus syllable map (no Gunna nouns in the prompt).
+        var flowExemplar: FlowExemplar? = Self.resolveFlowExemplar(
+            draft: input, params: directedParams, bpm: writeBPM
+        )
+
         // Step 1b — corpus retrieval (RAG): tone → corpus themes, topics → tags, draft → keywords.
         var v4Exemplars: [String] = []
         var v4ExemplarNorms: [String] = []
         var v4Vocab: [String] = []
+        if usingArtistBrain {
+            v4Exemplars = ModelYouWriterPolicy.referenceSeat(artistChunks: artistBrainChunks)
+            v4ExemplarNorms = v4Exemplars.map { $0.lowercased() }
+            v4Vocab = []
+        }
+        if !usingArtistBrain {
         do {
             let corpusStore = try ModelGCorpusStore()
             ModelGEmbeddingIndex.shared.buildIfNeeded(bars: corpusStore.corpus.bars)
@@ -97,19 +138,40 @@ class ModelGCoreCoordinatorV4 {
                 + (directedParams?.selectedTopics ?? [])
                 + (directedParams?.worldBuildingWords ?? []))
                 .filter { $0.count >= 3 }
-            let retrieved = ModelGCorpusRetriever(store: corpusStore, embeddingIndex: ModelGEmbeddingIndex.shared).retrieve(
+            let retriever = ModelGCorpusRetriever(store: corpusStore, embeddingIndex: ModelGEmbeddingIndex.shared)
+            let retrieved = retriever.retrieve(
                 tones: tones, topics: topics, draft: input,
                 brands: directedParams?.worldBuildingWords ?? [], k: kExemplars)
             v4Exemplars = retrieved.exemplars.map(\.text)
             v4ExemplarNorms = retrieved.exemplars.map(\.norm)
             v4Vocab = retrieved.vocab
+            if flowExemplar == nil {
+                let clockBPM = barClock.map { Int($0.bpm.rounded()) } ?? bpm
+                let target = Self.effectiveTarget(min: syllableMin, max: syllableMax, bpm: clockBPM) ?? defaultSyllableTarget
+                flowExemplar = retriever.retrieveFlow(targetSyllables: target, k: 1).first
+            }
         } catch {
             #if DEBUG
             print("⚠️ [ModelG v4] corpus load/retrieve failed: \(error) — proceeding with empty exemplars (== v3 prompt)")
             #endif
         }
+        } else if flowExemplar == nil {
+            // House corpus as a CLOCK only — syllable map, no Gunna nouns in the You seat.
+            do {
+                let corpusStore = try ModelGCorpusStore()
+                let retriever = ModelGCorpusRetriever(store: corpusStore)
+                let clockBPM = barClock.map { Int($0.bpm.rounded()) } ?? bpm
+                let target = Self.effectiveTarget(min: syllableMin, max: syllableMax, bpm: clockBPM) ?? defaultSyllableTarget
+                flowExemplar = retriever.retrieveFlow(targetSyllables: target, k: 1).first
+            } catch {
+                #if DEBUG
+                print("⚠️ [ModelYou] house flow map failed: \(error) — continuing without it")
+                #endif
+            }
+        }
         #if DEBUG
-        print("🔎 [ModelG v4] inspiration=\(String(format: "%.2f", inspiration)) k=\(kExemplars) exemplars=\(v4Exemplars.count) vocab=\(v4Vocab.count) embeddingsReady=\(ModelGEmbeddingIndex.shared.isReady)")
+        let flowDesc = flowExemplar.map { "\($0.source.rawValue):\($0.syllableMap.map(String.init).joined(separator: "/"))" } ?? "none"
+        print("🔎 [ModelG v4] inspiration=\(String(format: "%.2f", inspiration)) k=\(kExemplars) exemplars=\(v4Exemplars.count) vocab=\(v4Vocab.count) flow=\(flowDesc) embeddingsReady=\(ModelGEmbeddingIndex.shared.isReady)")
         #endif
 
         // Pre-embed the exemplars once for the SEMANTIC signature score (cosine). Empty when the
@@ -135,7 +197,8 @@ class ModelGCoreCoordinatorV4 {
                                 plan: plan, arcShape: arcShape, context: baseContext, temperature: temp,
                                 corpusExemplars: useCorpus ? v4Exemplars : [],
                                 corpusVocab: useCorpus ? v4Vocab : [],
-                                inspiration: inspiration
+                                inspiration: inspiration,
+                                flowExemplar: flowExemplar
                             )
                         } catch {
                             #if DEBUG
@@ -154,19 +217,23 @@ class ModelGCoreCoordinatorV4 {
         }
 
         // Score each candidate verse by avg v4Total and pick the best.
+        // Wrap overlay is a close-score tie-break only — never discards a witty short line.
         var best: (hook: String, bars: [String])?
         var bestScore = -1.0
+        var bestWrapTie = -1.0
+        let minBars = min(4, targetBarCount)
+        let grammar = directedParams?.punchGrammar ?? .couplet
         func consider(_ verses: [(hook: String, bars: [String])]) {
-            for verse in verses where verse.bars.count >= 8 {
-                let usable = Array(verse.bars.prefix(barCount))
+            for verse in verses where verse.bars.count >= minBars {
+                let usable = Array(verse.bars.prefix(targetBarCount))
                 var total = 0.0
                 for (i, bar) in usable.enumerated() {
                     let ctx = makeContext(
                         intent: intent, beat: beatFingerprint, style: styleProfile, directedParams: directedParams,
                         luxury: luxuryLayer, barIndex: i, existingBars: Array(usable.prefix(i)),
                         signalAxes: signalAxes, themeContext: themeContext,
-                        bpm: bpm, musicalKey: musicalKey, musicalScale: musicalScale,
-                        syllableMin: syllableMin, syllableMax: syllableMax
+                        bpm: noteBPM, musicalKey: noteKey, musicalScale: noteScale,
+                        syllableMin: syllableMin, syllableMax: syllableMax, barClock: barClock
                     )
                     let base = scoringEngine.evaluateBar(bar, context: ctx)
                     let v4 = scoringEngine.v4Breakdown(base: base, text: bar, context: ctx,
@@ -178,9 +245,20 @@ class ModelGCoreCoordinatorV4 {
                     total += v4.v4Total
                 }
                 let score = usable.isEmpty ? 0 : total / Double(usable.count)
-                // Primary: highest average v4Total.
-                if score > bestScore {
-                    bestScore = score; best = verse
+                let overlay = WrapOverlayEngine.evaluate(bars: usable, grammar: grammar)
+                let wrapTie = overlay.tieBreak
+                let takesLead: Bool
+                if best == nil {
+                    takesLead = true
+                } else if abs(score - bestScore) <= 1.5 {
+                    takesLead = wrapTie > bestWrapTie || (wrapTie == bestWrapTie && score > bestScore)
+                } else {
+                    takesLead = score > bestScore
+                }
+                if takesLead {
+                    bestScore = score
+                    bestWrapTie = wrapTie
+                    best = verse
                 }
             }
         }
@@ -215,14 +293,16 @@ class ModelGCoreCoordinatorV4 {
             )
         }
 
-        var bars = Array(chosen.bars.prefix(barCount))
-        while bars.count < barCount {
-            bars.append("Continue the flow — \(intent.theme.prefix(40))...")
-        }
+        let bars = Array(chosen.bars.prefix(targetBarCount))
+        // Do not pad dummy captions. A 4-bar cycle is a valid wrap; Phase 1 still *asks* for 16.
         var averageBarScore = bestScore
         if averageBarScore < verseAverageThreshold {
             averageBarScore = max(averageBarScore, verseAverageThreshold - 1)
         }
+        let wrapOverlay = WrapOverlayEngine.evaluate(bars: bars, grammar: grammar)
+        #if DEBUG
+        print("🎧 [ModelG wrap] \(wrapOverlay.summary) tie=\(String(format: "%.2f", wrapOverlay.tieBreak))")
+        #endif
 
         let sessionLog = GenerationSessionLog(
             modelVersion: "Model G Core v4.0 (corpus RAG + v4Total selection)",
@@ -241,7 +321,8 @@ class ModelGCoreCoordinatorV4 {
         debugLogger.export(session: sessionLog)
 
         return GeneratedRecord(
-            hook: chosen.hook, bars: bars, modelGMomentBarIndices: [], averageBarScore: averageBarScore
+            hook: chosen.hook, bars: bars, modelGMomentBarIndices: [], averageBarScore: averageBarScore,
+            wrapNote: wrapOverlay.summary, wrapTieBreak: wrapOverlay.tieBreak
         )
     }
 
@@ -251,22 +332,47 @@ class ModelGCoreCoordinatorV4 {
         directedParams: DirectedGenerationParams?, luxury: LuxuryLayer?, barIndex: Int,
         existingBars: [String], signalAxes: SignalAxes?, themeContext: ThemeContext?,
         bpm: Int? = nil, musicalKey: String? = nil, musicalScale: String? = nil,
-        syllableMin: Int? = nil, syllableMax: Int? = nil
+        syllableMin: Int? = nil, syllableMax: Int? = nil,
+        barClock: BarClock? = nil,
+        artistBrainPrompt: String? = nil,
+        artistBrainChunks: [String] = []
     ) -> GenerationContext {
-        GenerationContext(
+        let bpmForSyllables = barClock.map { Int($0.bpm.rounded()) } ?? bpm
+        return GenerationContext(
             intent: intent, beatFingerprint: beat, styleProfile: style, directedParams: directedParams,
             luxuryLayer: luxury, userTasteVector: UserTasteStore.shared.currentVector(),
-            syllableTarget: Self.effectiveTarget(min: syllableMin, max: syllableMax, bpm: bpm) ?? defaultSyllableTarget,
+            syllableTarget: Self.effectiveTarget(min: syllableMin, max: syllableMax, bpm: bpmForSyllables) ?? defaultSyllableTarget,
             barIndex: barIndex, isHook: false, existingBars: existingBars, riskIndex: riskManager.riskIndex,
             flowDNAFeatures: nil, rhythmMap: nil, perBarSyllableTargets: nil,
             signalAxes: signalAxes, themeContext: themeContext,
             musicalBPM: bpm, musicalKey: musicalKey, musicalScale: musicalScale,
-            syllableMin: syllableMin, syllableMax: syllableMax
+            syllableMin: syllableMin, syllableMax: syllableMax,
+            barClock: barClock,
+            artistBrainPrompt: artistBrainPrompt,
+            artistBrainChunks: artistBrainChunks
         )
     }
 
-    /// Tempo → syllables/bar (heuristic, centered on the corpus norm ~9–10 near 110 BPM; slower
-    /// fits more syllables, faster fewer). Clamped to a musical range. Nil when no BPM is set.
+    static func resolveFlowExemplar(draft: String, params: DirectedGenerationParams?, bpm: Int?) -> FlowExemplar? {
+        if params?.copyLastFourRhythm != false, let fromDraft = FlowExemplar.fromDraft(draft, bpm: bpm) {
+            return fromDraft
+        }
+        let pasted = params?.pastedFlowText ?? ""
+        if !pasted.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            let lines = pasted.split(separator: "\n", omittingEmptySubsequences: false).map(String.init)
+            if let fromPaste = FlowExemplar.fromLines(lines, source: .pasted, bpm: bpm) {
+                return fromPaste
+            }
+        }
+        return nil
+    }
+
+    private func nonempty(_ value: String?) -> String? {
+        let trimmed = value?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        return trimmed.isEmpty ? nil : trimmed
+    }
+
+    /// Tempo → syllables/bar. Pass already-folded wrap BPM when Gunna wrap is on.
     static func tempoSyllableTarget(bpm: Int?) -> Int? {
         guard let bpm = bpm, bpm > 0 else { return nil }
         let raw = 9.5 + (110.0 - Double(bpm)) * 0.035

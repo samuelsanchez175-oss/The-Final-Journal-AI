@@ -123,8 +123,8 @@ final class RapTrackPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
 
     private func startTimer() {
         displayLink = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { [weak self] _ in
-            guard let self, let p = self.player else { return }
-            Task { @MainActor in
+            Task { @MainActor [weak self] in
+                guard let self, let p = self.player else { return }
                 self.currentTime = p.currentTime
             }
         }

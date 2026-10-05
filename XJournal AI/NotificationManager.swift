@@ -193,6 +193,7 @@ class NotificationManager: NSObject, ObservableObject {
     // MARK: - Achievement Notifications
     
     func scheduleAchievementNotification(_ achievement: Achievement) {
+        guard AchievementSystem.isEnabled else { return }
         guard authorizationStatus == .authorized else { return }
         
         let preferences = getPreferences()

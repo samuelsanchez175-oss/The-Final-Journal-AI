@@ -33,15 +33,8 @@ class SmartNotificationManager {
     /// Schedule contextual notifications asynchronously on background thread
     /// This should be called after UI is fully rendered to avoid blocking startup
     func scheduleContextualNotifications() async {
-        StartupPerformanceTracker.shared.recordMilestone("smart_notifications_start")
-        
-        // Perform churn analysis on background thread
         let assessment = ChurnRiskAnalyzer.shared.assessChurnRisk()
-        StartupPerformanceTracker.shared.recordMilestone("churn_analysis_complete")
-        
-        // Get engagement metrics on background thread
         let engagementMetrics = UserBehaviorTracker.shared.getEngagementMetrics()
-        StartupPerformanceTracker.shared.recordMilestone("engagement_metrics_complete")
         
         // Schedule notifications (these are async operations)
         await MainActor.run {
@@ -56,8 +49,6 @@ class SmartNotificationManager {
                 self.scheduleChurnIntervention(assessment: assessment)
             }
         }
-        
-        StartupPerformanceTracker.shared.recordMilestone("smart_notifications_complete")
     }
     
     // MARK: - Writing Streak Reminders

@@ -6,13 +6,22 @@ import NaturalLanguage
 
 enum SuggestionModel: String, CaseIterable {
     case modelG = "Model G"
+    case modelYou = "Model You"
     case modelY = "Model Y"
     case modelGv3 = "Model G v3"
     case modelGv4_1 = "Model G v4.1"
     case geminiLight = "Model GL"
 
+    static var sparklePickerModels: [SuggestionModel] { [.modelG, .modelYou] }
+
     var displayName: String {
-        return rawValue
+        switch self {
+        case .modelGv3:
+            // Prompt-preset 4-bar continuation — not the planned-verse coordinator.
+            return "SUPERG (4-bar)"
+        default:
+            return rawValue
+        }
     }
 
     var modelIdentifier: String {
@@ -30,6 +39,8 @@ enum SuggestionModel: String, CaseIterable {
             return "gpt-4o"
         case .geminiLight:
             return "gemini-2.5-flash"
+        case .modelYou:
+            return "gpt-4o"
         }
     }
 
@@ -45,6 +56,8 @@ enum SuggestionModel: String, CaseIterable {
         case .modelGv4_1:
             return 0.6
         case .geminiLight:
+            return 0.6
+        case .modelYou:
             return 0.6
         }
     }
@@ -129,6 +142,9 @@ struct RapSuggestion: Codable, Identifiable {
     // Model G Core v1.0 — CRDP moment indices for ✴ glyph display
     var modelGMomentLineIndices: [Int]?
 
+    /// Soft wrap overlay (punch window / setup-punch / rime / pocket). Advisory, not a veto.
+    var wrapNote: String? = nil
+
     enum SuggestionFeedback: String, Codable {
         case liked = "liked"
         case disliked = "disliked"
@@ -160,16 +176,7 @@ class RapSuggestionAPI {
     // MARK: - Settings Loading
     
     func loadModelSettings(for model: SuggestionModel) -> ModelSettings {
-        let key: String
-        switch model {
-        case .modelG:
-            // Product default: Model G v3 settings drive Core / directed generation on the .modelG API path.
-            key = "modelGv3_settings"
-        case .modelY:   key = "modelY_settings"
-        case .modelGv3: key = "modelGv3_settings"
-        case .modelGv4_1: key = "modelGv3_settings"
-        case .geminiLight: key = "modelGv3_settings"
-        }
+        let key = ModelYouWriterPolicy.settingsKey(for: model)
         if let data = UserDefaults.standard.data(forKey: key),
            let decoded = try? JSONDecoder().decode(ModelSettings.self, from: data) {
             return sanitizeModelSettings(decoded)
@@ -496,87 +503,145 @@ class RapSuggestionAPI {
         audioURL: URL?,
         directedParams: DirectedGenerationParams?,
         selectedThemeIDs: [String] = [],
-        transcriptionRhythmMapData: Data?
+        transcriptionRhythmMapData: Data?,
+        artistBrainPrompt: String? = nil,
+        artistBrainChunks: [String] = []
     ) async throws -> GeneratedRecord {
         let styleOverride = directedParams?.styleOverride
         func run() async throws -> GeneratedRecord {
-            if ModelGEnvironment.useModelGv4_1 {
-                let coordinatorV4_1 = ModelGCoreCoordinatorV4_1()
-                return try await coordinatorV4_1.generateRecord(
-                    input: metrics.fullText,
-                    audioURL: audioURL,
-                    styleOverride: styleOverride,
-                    directedParams: directedParams,
-                    selectedThemeIDs: selectedThemeIDs,
-                    transcriptionRhythmMapData: transcriptionRhythmMapData,
-                    bpm: metrics.bpm,
-                    musicalKey: metrics.key,
-                    musicalScale: metrics.scale,
-                    syllableMin: metrics.syllableMin,
-                    syllableMax: metrics.syllableMax
-                )
-            }
-            if ModelGEnvironment.useModelGv4 {
-                let coordinatorV4 = ModelGCoreCoordinatorV4()
-                return try await coordinatorV4.generateRecord(
-                    input: metrics.fullText,
-                    audioURL: audioURL,
-                    styleOverride: styleOverride,
-                    directedParams: directedParams,
-                    selectedThemeIDs: selectedThemeIDs,
-                    transcriptionRhythmMapData: transcriptionRhythmMapData,
-                    bpm: metrics.bpm,
-                    musicalKey: metrics.key,
-                    musicalScale: metrics.scale,
-                    syllableMin: metrics.syllableMin,
-                    syllableMax: metrics.syllableMax
-                )
-            }
-            if ModelGEnvironment.useModelGv3 {
-                let coordinatorV3 = ModelGCoreCoordinatorV3()
-                return try await coordinatorV3.generateRecord(
-                    input: metrics.fullText,
-                    audioURL: audioURL,
-                    styleOverride: styleOverride,
-                    directedParams: directedParams,
-                    selectedThemeIDs: selectedThemeIDs,
-                    transcriptionRhythmMapData: transcriptionRhythmMapData,
-                    bpm: metrics.bpm,
-                    musicalKey: metrics.key,
-                    musicalScale: metrics.scale,
-                    syllableMin: metrics.syllableMin,
-                    syllableMax: metrics.syllableMax
-                )
-            }
-            if useV2 {
-                let coordinatorV2 = ModelGCoreCoordinatorV2()
-                return try await coordinatorV2.generateRecord(
-                    input: metrics.fullText,
-                    audioURL: audioURL,
-                    styleOverride: styleOverride,
-                    directedParams: directedParams,
-                    selectedThemeIDs: selectedThemeIDs,
-                    transcriptionRhythmMapData: transcriptionRhythmMapData
-                )
-            } else {
-                let coordinator = ModelGCoreCoordinator()
-                return try await coordinator.generateRecord(
-                    input: metrics.fullText,
-                    audioURL: audioURL,
-                    styleOverride: styleOverride,
-                    directedParams: directedParams,
-                    selectedThemeIDs: selectedThemeIDs
-                )
-            }
+            // Single product path: planned full verse + corpus (former v4). GL / v1 / v2 / v3 / v4.1 are not routed.
+            let coordinatorV4 = ModelGCoreCoordinatorV4()
+            return try await coordinatorV4.generateRecord(
+                input: metrics.fullText,
+                audioURL: audioURL,
+                styleOverride: styleOverride,
+                directedParams: directedParams,
+                selectedThemeIDs: selectedThemeIDs,
+                transcriptionRhythmMapData: transcriptionRhythmMapData,
+                bpm: metrics.bpm,
+                musicalKey: metrics.key,
+                musicalScale: metrics.scale,
+                syllableMin: metrics.syllableMin,
+                syllableMax: metrics.syllableMax,
+                artistBrainPrompt: artistBrainPrompt,
+                artistBrainChunks: artistBrainChunks
+            )
         }
         do {
             return try await run()
         } catch ModelGLLMError.rateLimitExceeded(let retryAfter) {
-            let waitSeconds = retryAfter ?? 60
-            print("⏳ Model G Core: Rate limited (429). Waiting \(waitSeconds)s before retry...")
-            try await Task.sleep(nanoseconds: UInt64(waitSeconds) * 1_000_000_000)
-            return try await run()
+            throw RapAPIError.rateLimitExceeded(retryAfterSeconds: retryAfter)
         }
+    }
+
+    // MARK: - Model You (G craft × this artist's brain)
+
+    private func generateModelYouSuggestions(
+        metrics: RapMetrics,
+        directedParams: DirectedGenerationParams?,
+        selectedThemeIDs: [String],
+        audioURL: URL?,
+        transcriptionRhythmMapData: Data?,
+        signalAxes: SignalAxes?
+    ) async throws -> [RapSuggestion] {
+        let brain = await MainActor.run {
+            ArtistBrainStore.shared.reload()
+            return ArtistBrainStore.shared.brain
+        }
+        let filters = directedParams?.youFilters ?? .init()
+        let prompt = ArtistBrainPrompt.injection(
+            brain: brain,
+            noteText: metrics.fullText,
+            noteAxes: signalAxes,
+            filters: filters
+        )
+        let retrieved = ArtistBrainRAG.retrieve(
+            brain: brain,
+            noteText: metrics.fullText,
+            filters: filters
+        )
+        let chunks = retrieved.map(\.text)
+        #if DEBUG
+        print("🟣 [ModelYou] injecting ArtistBrain name=\(brain.artistName) cards=\(brain.confirmedCards.count) chunks=\(chunks.count)")
+        #endif
+        var coreSuggestions: [RapSuggestion] = []
+        let generatedSets: [(Int, ModelGCoreSetResult)] = await withTaskGroup(of: (Int, ModelGCoreSetResult).self) { group in
+            for setIndex in 1...modelGCoreSuggestionSetCount {
+                group.addTask {
+                    do {
+                        let record = try await self.generateModelGCoreRecordWithRetry(
+                            useV2: false,
+                            metrics: metrics,
+                            audioURL: audioURL,
+                            directedParams: directedParams,
+                            selectedThemeIDs: selectedThemeIDs,
+                            transcriptionRhythmMapData: transcriptionRhythmMapData,
+                            artistBrainPrompt: prompt,
+                            artistBrainChunks: chunks
+                        )
+                        return (setIndex, .success(record))
+                    } catch {
+                        return (setIndex, .failure(error))
+                    }
+                }
+            }
+            var collected: [(Int, ModelGCoreSetResult)] = []
+            for await result in group { collected.append(result) }
+            return collected.sorted { $0.0 < $1.0 }
+        }
+        _ = try ModelGCoreSetResult.recordsOrThrow(generatedSets.map(\.1))
+        var candidates: [(text: String, gScore: Double, record: GeneratedRecord, setIndex: Int)] = []
+        for (setIndex, outcome) in generatedSets {
+            guard case .success(let record) = outcome else { continue }
+            let lines = [record.hook] + record.bars
+            let text = lines.filter { !$0.isEmpty }.joined(separator: "\n")
+            let isFallbackOnly = record.bars.allSatisfy { bar in
+                bar == "Fallback bar — continue the flow."
+                    || bar.hasPrefix("Continue the flow —")
+            }
+            guard !isFallbackOnly && !text.isEmpty else { continue }
+            candidates.append((text, record.averageBarScore, record, setIndex))
+        }
+        let picked = YouFitScorer.pick(
+            candidates: candidates.map { (text: $0.text, gScore: $0.gScore) },
+            brain: brain
+        )
+        if let picked {
+            guard let match = candidates.first(where: { $0.text == picked.text }) else {
+                return coreSuggestions
+            }
+            #if DEBUG
+            print("🟣 [ModelYou] You-fit \(Int(picked.you.total.rounded())) G \(Int(picked.gScore.rounded()))")
+            #endif
+            coreSuggestions.append(RapSuggestion(
+                id: UUID(),
+                text: picked.text,
+                confidence: min(1, max(0.45, picked.gScore / 100.0)),
+                source: modelGCoreSuggestionSetCount > 1 ? "Model You · Set \(match.setIndex)" : "Model You",
+                reasoning: brain.hasConfirmedBrain
+                    ? "G craft \(Int(picked.gScore.rounded())) × You-fit \(Int(picked.you.total.rounded()))."
+                    : brain.emptyBrainCopy,
+                themes: Array(brain.confirmedCards.prefix(4).map(\.title)),
+                rhymeStrength: nil,
+                flowMatch: nil,
+                styleMatch: picked.you.total / 100.0,
+                userFeedback: nil,
+                signalStrength: nil,
+                signalNote: nil,
+                arCritique: nil,
+                modelGMomentLineIndices: match.record.modelGMomentBarIndices.isEmpty ? nil : match.record.modelGMomentBarIndices,
+                wrapNote: match.record.wrapNote
+            ))
+            return coreSuggestions
+        }
+        if !candidates.isEmpty {
+            throw RapAPIError.silence(CriticCommentary(
+                explanation: "Those bars sounded like the house writer, not this artist.",
+                reason: "you-fit",
+                guidance: "Keep more cards or ingest more of their bars, then generate again."
+            ))
+        }
+        return coreSuggestions
     }
 
     // MARK: - Controlled Rewriting
@@ -604,93 +669,64 @@ class RapSuggestionAPI {
             throw RapAPIError.missingAPIKey
         }
 
-        if model == .geminiLight {
-            let coordinator = ModelGeminiLightCoordinator()
-            let record = try await coordinator.generateRecord(
-                input: metrics.fullText,
-                audioURL: audioURL,
-                styleOverride: nil,
+        // Model You keeps G craft (score / reject / syllables / silence) but injects ArtistBrain.
+        // Do not pin this path to Model G — pinSingleModelGPipeline overwrites the sparkle picker.
+        if model == .modelYou {
+            return try await generateModelYouSuggestions(
+                metrics: metrics,
                 directedParams: directedParams,
                 selectedThemeIDs: selectedThemeIDs,
+                audioURL: audioURL,
                 transcriptionRhythmMapData: transcriptionRhythmMapData,
-                bpm: metrics.bpm,
-                musicalKey: metrics.key,
-                musicalScale: metrics.scale,
-                syllableMin: metrics.syllableMin,
-                syllableMax: metrics.syllableMax
+                signalAxes: signalAxes
             )
-            
-            let lines = [record.hook] + record.bars
-            let text = lines.filter { !$0.isEmpty }.joined(separator: "\n")
-            
-            guard !text.isEmpty else {
-                return []
-            }
-            
-            return [
-                RapSuggestion(
-                    id: UUID(),
-                    text: text,
-                    confidence: 0.9,
-                    source: "Gemini Light",
-                    reasoning: "Generated via clean Gemini pipeline.",
-                    themes: narrative.primaryThemes,
-                    rhymeStrength: nil,
-                    flowMatch: nil,
-                    styleMatch: nil,
-                    userFeedback: nil,
-                    signalStrength: nil,
-                    signalNote: "Gemini Direct",
-                    arCritique: nil,
-                    modelGMomentLineIndices: nil
-                )
-            ]
         }
 
-        // Model G Core — Use v2 when enabled, else v1. Override from param when provided (for parallel v1+v2).
-        // Emits `modelGCoreSuggestionSetCount` full verses per model (each as its own card).
-        if ModelGEnvironment.useModelGCore && model == .modelG {
-            let useV2 = modelGVariantOverride ?? ModelGEnvironment.useModelGv2
+        // Single product path: every other SuggestionModel routes to Model G (planned verse + corpus).
+        ModelGEnvironment.pinSingleModelGPipeline()
+        if true {
+            _ = modelGVariantOverride
             #if DEBUG
-            print("🟢 [ModelG Core] entered \(modelGCoreSuggestionSetCount) set(s) — engine: v4=\(ModelGEnvironment.useModelGv4) v3=\(ModelGEnvironment.useModelGv3) v2=\(useV2) | model=\(model)")
+            print("🟢 [ModelG] entered \(modelGCoreSuggestionSetCount) set(s) — single pipeline | requested model=\(model)")
             #endif
-            let baseSource = ModelGEnvironment.useModelGv3 ? "Model G Core v3.0" : (useV2 ? "Model G Core v2.0" : "Model G Core v1.0")
+            let baseSource = "Model G"
             var coreSuggestions: [RapSuggestion] = []
 
             // Generate all sets concurrently so their network round-trips overlap.
             // Each set builds its own coordinator, so there is no shared mutable state.
-            let generatedSets: [(Int, GeneratedRecord?)] = await withTaskGroup(
-                of: (Int, GeneratedRecord?).self
+            let generatedSets: [(Int, ModelGCoreSetResult)] = await withTaskGroup(
+                of: (Int, ModelGCoreSetResult).self
             ) { group in
                 for setIndex in 1...modelGCoreSuggestionSetCount {
                     group.addTask {
                         do {
                             let record = try await self.generateModelGCoreRecordWithRetry(
-                                useV2: useV2,
+                                useV2: false,
                                 metrics: metrics,
                                 audioURL: audioURL,
                                 directedParams: directedParams,
                                 selectedThemeIDs: selectedThemeIDs,
                                 transcriptionRhythmMapData: transcriptionRhythmMapData
                             )
-                            return (setIndex, record)
+                            return (setIndex, .success(record))
                         } catch {
                             #if DEBUG
                             print("Model G Core: set \(setIndex)/\(self.modelGCoreSuggestionSetCount) — \(error.localizedDescription)")
                             #endif
-                            return (setIndex, nil)
+                            return (setIndex, .failure(error))
                         }
                     }
                 }
-                var collected: [(Int, GeneratedRecord?)] = []
+                var collected: [(Int, ModelGCoreSetResult)] = []
                 for await result in group {
                     collected.append(result)
                 }
                 return collected.sorted { $0.0 < $1.0 }
             }
 
-            for (setIndex, recordOpt) in generatedSets {
-                guard let record = recordOpt else { continue }
+            _ = try ModelGCoreSetResult.recordsOrThrow(generatedSets.map(\.1))
+            for (setIndex, outcome) in generatedSets {
+                guard case .success(let record) = outcome else { continue }
                 let lines = [record.hook] + record.bars
                 let text = lines.filter { !$0.isEmpty }.joined(separator: "\n")
                 let isFallbackOnly = record.bars.allSatisfy { bar in
@@ -726,16 +762,15 @@ class RapSuggestionAPI {
                         signalStrength: nil,
                         signalNote: ledger.summary,
                         arCritique: nil,
-                        modelGMomentLineIndices: momentLineIndices
+                        modelGMomentLineIndices: momentLineIndices,
+                        wrapNote: record.wrapNote
                     )
                 )
             }
-            if !coreSuggestions.isEmpty {
-                return coreSuggestions
+            if coreSuggestions.isEmpty {
+                throw RapAPIError.modelGCoreFailed
             }
-            #if DEBUG
-            print("Model G Core: No valid sets. Falling back to legacy Model G generation.")
-            #endif
+            return coreSuggestions
         }
 
         // LEXICON GATE: Filter terms before generation
@@ -1014,17 +1049,8 @@ class RapSuggestionAPI {
                     rejectedLines: &rejectedLines,
                     expectPlainTextLines: usePlainTextResponse
                 )
-            } catch RapAPIError.rateLimitExceeded(let retryAfter) {
-                let waitSeconds = retryAfter ?? 60
-                print("⏳ RapSuggestionAPI: Rate limited (429). Waiting \(waitSeconds)s before retry...")
-                try await Task.sleep(nanoseconds: UInt64(waitSeconds) * 1_000_000_000)
-                candidateSuggestions = try await performAPIRequest(
-                    requestBody: requestBody,
-                    narrative: narrative,
-                    metrics: metrics,
-                    rejectedLines: &rejectedLines,
-                    expectPlainTextLines: usePlainTextResponse
-                )
+            } catch let RapAPIError.rateLimitExceeded(retryAfter) {
+                throw RapAPIError.rateLimitExceeded(retryAfterSeconds: retryAfter)
             } catch RapAPIError.silence(let commentary) {
                 // If settings are strict enough to force silence often, return a safe fallback line
                 // instead of surfacing a no-output state after model preference changes.
@@ -1054,6 +1080,13 @@ class RapSuggestionAPI {
                     }
                     return true  // Keep this suggestion
                 }
+            }
+            filteredCandidateSuggestions = filteredCandidateSuggestions.filter { suggestion in
+                let keeps = SignatureBridge.keepsDraft(suggestion.text)
+                if !keeps {
+                    print("❌ RapSuggestionAPI: Dropped a signature draft")
+                }
+                return keeps
             }
             
             if !filteredCandidateSuggestions.isEmpty {
@@ -1826,7 +1859,7 @@ class RapSuggestionAPI {
             - **Success/Dominance (CSV ONLY)**: Reference being at the top, winning, dominance (e.g., "Perfectly aim for the top", "We keep winning 'cause we workin' harder", "I'm pushin' P, that's my favorite alphabet", "Fresh and I'm blessed, that's why I'm the drip god", "You can hear the money in my voice")
             - **Food/Dining (CSV ONLY)**: Reference expensive dining (e.g., "I had two hundred for lunch")
             - **Idiomatic expressions**: Use common idioms naturally ("dead wrong", "money long", "pop up", "come and go", "pullin' kick doors", "call it a lick")
-            - **Pop culture smart references**: Reference movies/artists/athletes in clever ways (e.g., "like the Men in Black", "like Nudy", "I shoot like I'm Montana", "ninety-nine problems")
+            - **Pop culture smart references**: One signature when the scene already has the picture. A picture can be a mannerism, song, album, catchphrase, producer tag, or adlib (eye roll like Uzi, we the best like Khaled, mustard on the beat like Mustard). Say the picture and the short name, then stop. If the name is already in the line, say the picture instead. Movies and cultural lines still count ("like the Men in Black", "ninety-nine problems").
             - **Location + hotel specificity**: Reference specific hotels and locations when flexing (e.g., "stayin' at the Loews", "LA live")
             - **Brand placement**: Place brands on specific body parts/clothing (e.g., "Prada on my collar", "diamonds on her toes")
             - **Food/cooking metaphors**: Use cooking similes for activities (e.g., "cookin' crack like grits")
@@ -1906,8 +1939,8 @@ class RapSuggestionAPI {
                - **Idioms**: Integrate common idioms naturally ("dead wrong", "money long", "come and go", "pop up", "knockin' down", "pullin' kick doors", "call it a lick")
                - **Pop culture references**: Reference movies, artists, athletes, or cultural touchstones in a smart way:
                  * Movies: "like the Men in Black"
-                 * Artists: "like Nudy", "like Uzi"
-                 * Athletes: "I shoot like I'm Montana" (Joe Montana), "like Big Worm or Vick" (Michael Vick), sports references when contextually appropriate
+                 * Signatures: at most one in the 4 bars, and only when the scene already has the picture. The generation prompt lists the pictures this verse earned. If that list says not to add a name, do not add one. Say the picture and the short name, then stop. Do not explain the link.
+                 * Character pictures can stay "like Big Worm".
                  * Cultural references: "ninety-nine problems" (Jay-Z reference with twist)
                - **Scientific/Biological References**: Use scientific terms for emphasis and wordplay:
                  * "I feel it in my chromosomes" (biological/genetic reference)
@@ -2624,11 +2657,12 @@ class RapSuggestionAPI {
         
         // FIX 1 & 2: Extract last rhyme word and compute rhyme family for 4-line block generation
         let (lastRhymeWord, rhymeFamily) = extractLastRhymeWordAndFamily(from: metrics.fullText)
-        let rhymeFamilyExamples = rhymeFamily != nil ? await getRhymeFamilyExamples(rhymeFamily: rhymeFamily!, allowedLexiconTerms: allowedLexiconTerms, context: narrative) : []
+        let rhymeFamilyExamples = rhymeFamily != nil ? await getRhymeFamilyExamples(rhymeFamily: rhymeFamily!, seedWord: lastRhymeWord, allowedLexiconTerms: allowedLexiconTerms, context: narrative) : []
         
         // Get ranked rhyme candidates for detailed guidance (if available)
         let rankedRhymes: [RankedRhymeCandidate] = rhymeFamily != nil ? await getRankedRhymeCandidates(
             rhymeFamily: rhymeFamily!,
+            seedWord: lastRhymeWord,
             allowedLexiconTerms: allowedLexiconTerms,
             context: narrative,
             weights: .default
@@ -3078,8 +3112,8 @@ class RapSuggestionAPI {
                • Idioms: Integrate common idioms naturally ("dead wrong", "money long", "come and go", "pop up", "knockin' down", "pullin' kick doors", "call it a lick")
                • Pop culture references: Reference movies, artists, athletes, or cultural touchstones in a smart way:
                  - Movies: "like the Men in Black"
-                 - Artists: "like Nudy", "like Uzi"
-                 - Athletes: "I shoot like I'm Montana" (Joe Montana), sports references when contextually appropriate
+                 - Signatures: at most one in the 4 bars. Use only a picture listed below. Say the picture and the short name, then stop. Do not explain the link.
+                 \(SignatureBridge.promptFragment(earnedBy: metrics.fullText))
                  - Cultural: "ninety-nine problems" (Jay-Z reference with twist)
                • Metaphors: Use creative metaphors ("boomerang bitches", "lumberjack", "slimy", "knockin' these hoes down like domino", "Condo like the pharmacy", "cookin' crack like grits")
                • Euphemisms: Use euphemisms for sexual/drug/violence references when appropriate:
@@ -3560,7 +3594,7 @@ class RapSuggestionAPI {
         feedbackImprovements: ModelImprovements? = nil
     ) -> String {
         switch model {
-        case .modelG, .modelGv3, .geminiLight:
+        case .modelG, .modelGv3, .modelGv4_1, .geminiLight, .modelYou:
             return buildModelGRules(
                 metrics: metrics,
                 topicModesInfo: topicModesInfo,
@@ -3900,7 +3934,7 @@ class RapSuggestionAPI {
             "\n- Confidence threshold adjusted based on feedback: \(metricTuning.confidenceThresholdAdjustment > 0 ? "increased" : "decreased") by \(String(format: "%.2f", abs(metricTuning.confidenceThresholdAdjustment)))" : ""
         
         switch model {
-        case .modelG, .modelGv3, .geminiLight:
+        case .modelG, .modelGv3, .modelGv4_1, .geminiLight, .modelYou:
             return """
         CONFIDENCE SCORING (REQUIRED - CRITICAL)\(thresholdNote):
         Score confidence 0.0-1.0 based on how well the suggestion matches ALL constraints above. Lower confidence if any constraint is weak.
@@ -4683,9 +4717,7 @@ class RapSuggestionAPI {
               let word2 = lastWord2,
               let phonemes1 = getCMUDICTPhonemes(for: word1),
               let phonemes2 = getCMUDICTPhonemes(for: word2),
-              let sig1 = extractPhoneticSignature(from: phonemes1),
-              let sig2 = extractPhoneticSignature(from: phonemes2),
-              let strength = calculateRhymeStrengthFromSignatures(sig1: sig1, sig2: sig2) else {
+              let strength = calculateRhymeStrengthFromSignatures(word1: word1, phonemes1: phonemes1, word2: word2, phonemes2: phonemes2) else {
             return nil
         }
         
@@ -4814,9 +4846,7 @@ class RapSuggestionAPI {
             guard let word = lastWord,
                   let wordPhonemes = getCMUDICTPhonemes(for: word),
                   let targetPhonemes = getCMUDICTPhonemes(for: rhymeTarget),
-                  let wordSig = extractPhoneticSignature(from: wordPhonemes),
-                  let targetSig = extractPhoneticSignature(from: targetPhonemes),
-                  let strength = calculateRhymeStrengthFromSignatures(sig1: wordSig, sig2: targetSig) else {
+                  let strength = calculateRhymeStrengthFromSignatures(word1: word, phonemes1: wordPhonemes, word2: rhymeTarget, phonemes2: targetPhonemes) else {
                 return false
             }
             
@@ -5327,6 +5357,32 @@ class RapSuggestionAPI {
     // Global accessor function is defined in ContentView.swift
     // This allows access to FJCMUDICTStore without direct type reference
     
+    /// Perfect when the ending matches. Near when `endGroupKey` puts both words in one painter family
+    /// (`pretty`/`chelly`, `hip`/`dick`, `cheat`/`reach`, line-end `shit`/`militant`).
+    /// Same stressed vowel with a different ending returns nil.
+    private func familyRhymeStrength(
+        of word: String,
+        phonemes: [String],
+        seedWord: String?,
+        seedSignature: RhymeHighlighterEngine.PhoneticSignature?,
+        stressedVowel: String,
+        coda: String
+    ) -> RhymeStrength? {
+        if let seedWord, let seedSignature,
+           let signature = RhymeHighlighterEngine.extractSignature(from: phonemes) {
+            if signature.rhymeClassId == seedSignature.rhymeClassId {
+                return .perfect
+            }
+            let seedKey = RhymeHighlighterEngine.endGroupKey(for: seedWord, signature: seedSignature, isLineEnd: true)
+            let wordKey = RhymeHighlighterEngine.endGroupKey(for: word, signature: signature, isLineEnd: true)
+            return wordKey == seedKey ? .near : nil
+        }
+        guard let signature = extractPhoneticSignature(from: phonemes) else { return nil }
+        let sameEnding = signature.stressedVowel == stressedVowel
+            && signature.coda.joined(separator: "-") == coda
+        return sameEnding ? .perfect : nil
+    }
+
     private func extractPhoneticSignature(from phonemes: [String]) -> PhoneticSignature? {
         // Find the stressed vowel (phoneme ending in 0, 1, or 2)
         guard let stressedIndex = phonemes.lastIndex(where: { $0.last?.isNumber == true }) else {
@@ -5436,8 +5492,8 @@ class RapSuggestionAPI {
             // Check local/accumulated database
             var frequency = lyricsDatabase[normalized] ?? 0
             
-            // If not found locally and API key available, query API and accumulate
-            if frequency == 0, let apiKey = apiKey, !apiKey.isEmpty {
+            // If not found locally, query Genius (user token if present, otherwise the public search).
+            if frequency == 0 {
                 let hitCount = await queryGeniusAPIAndAccumulate(word: normalized, apiKey: apiKey)
                 frequency = hitCount
             }
@@ -5470,37 +5526,18 @@ class RapSuggestionAPI {
         }
         
         /// Query Genius API and accumulate results (crowdsourcing)
-        private func queryGeniusAPIAndAccumulate(word: String, apiKey: String) async -> Int {
-            // Genius API search endpoint
-            let searchURL = "https://api.genius.com/search?q=\(word.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? word)"
-            
-            guard let url = URL(string: searchURL) else {
-                return 0
-            }
-            
-            var request = URLRequest(url: url)
-            request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-            request.setValue("application/json", forHTTPHeaderField: "Accept")
-            
+        private func queryGeniusAPIAndAccumulate(word: String, apiKey: String?) async -> Int {
             do {
-                let (data, _) = try await URLSession.shared.data(for: request)
-                if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                   let response = json["response"] as? [String: Any],
-                   let hits = response["hits"] as? [[String: Any]] {
-                    let hitCount = hits.count
-                    
-                    // Accumulate this data (crowdsourcing)
-                    if hitCount > 0 {
-                        accumulateWordFrequency(word: word, count: hitCount)
-                    }
-                    
-                    return hitCount
+                let hits = try await GeniusReferenceClient.search(query: word, apiKey: apiKey)
+                let hitCount = hits.count
+                if hitCount > 0 {
+                    accumulateWordFrequency(word: word, count: hitCount)
                 }
+                return hitCount
             } catch {
                 print("⚠️ LyricsFrequencyService: Genius API error - \(error.localizedDescription)")
+                return 0
             }
-            
-            return 0
         }
         
         /// Query Genius API for word frequency (requires API key) - legacy method
@@ -5799,9 +5836,11 @@ class RapSuggestionAPI {
     
     // MARK: - Advanced Rhyme Ranking
     
-    /// Get ranked rhyme candidates with multi-source scoring
+    /// Get ranked rhyme candidates with multi-source scoring.
+    /// Perfect is the same ending. Near is an `endGroupKey` family. Same vowel alone is dropped.
     private func getRankedRhymeCandidates(
         rhymeFamily: String,
+        seedWord: String? = nil,
         allowedLexiconTerms: [LexiconTerm] = [],
         context: NarrativeAnalysis? = nil,
         weights: RhymeRankingWeights
@@ -5833,22 +5872,19 @@ class RapSuggestionAPI {
         
         let stressedVowel = parts[0]
         let coda = parts[1...].joined(separator: "-")
+        let seedSignature: RhymeHighlighterEngine.PhoneticSignature? = {
+            guard let seedWord,
+                  let phones = getCMUDICTPhonemes(for: seedWord.lowercased()) else { return nil }
+            return RhymeHighlighterEngine.extractSignature(from: phones)
+        }()
         
-        // Collect all potential rhyme words from CMUDICT
+        // Collect rhyme words from CMUDICT. Same vowel with a different ending stays out.
         var potentialWords: Set<String> = []
         
         if let store = getCMUDICTStore() {
             for (word, phonemes) in store {
-                if let signature = extractPhoneticSignature(from: phonemes) {
-                    // Perfect rhymes
-                    if signature.stressedVowel == stressedVowel && 
-                       signature.coda.joined(separator: "-") == coda {
-                        potentialWords.insert(word)
-                    }
-                    // Near rhymes (same vowel, different coda)
-                    else if signature.stressedVowel == stressedVowel {
-                        potentialWords.insert(word)
-                    }
+                if familyRhymeStrength(of: word, phonemes: phonemes, seedWord: seedWord, seedSignature: seedSignature, stressedVowel: stressedVowel, coda: coda) != nil {
+                    potentialWords.insert(word)
                 }
             }
         }
@@ -5864,30 +5900,16 @@ class RapSuggestionAPI {
         for word in potentialWords {
             let normalized = word.lowercased()
             
-            // 1. Phonetic score (based on rhyme strength)
+            // 1. Phonetic score. Perfect = same ending. Near = painter family. Same vowel is not enough.
             guard let phonemes = getCMUDICTPhonemes(for: normalized),
-                  let signature = extractPhoneticSignature(from: phonemes) else { continue }
-            
-            // Create target signature from rhyme family
-            // The rhyme family format is "VOWEL-CODA", so we need to construct phonemes
-            // For comparison, we'll check if the signature matches the rhyme family directly
-            let matchesPerfect = signature.stressedVowel == stressedVowel && 
-                                signature.coda.joined(separator: "-") == coda
-            let matchesNear = signature.stressedVowel == stressedVowel
-            
-            let rhymeStrength: RhymeStrength?
-            if matchesPerfect {
-                rhymeStrength = .perfect
-            } else if matchesNear {
-                rhymeStrength = .near
-            } else {
-                // Check for slant rhyme (similar vowels)
-                let vowel1Base = String(signature.stressedVowel.dropLast())
-                let vowel2Base = String(stressedVowel.dropLast())
-                rhymeStrength = (vowel1Base == vowel2Base) ? .slant : nil
-            }
-            
-            guard let strength = rhymeStrength else { continue }
+                  let strength = familyRhymeStrength(
+                    of: normalized,
+                    phonemes: phonemes,
+                    seedWord: seedWord,
+                    seedSignature: seedSignature,
+                    stressedVowel: stressedVowel,
+                    coda: coda
+                  ) else { continue }
             let phoneticScore = strength.rawValue
             
             // 2. Lyrics frequency score (with accumulation)
@@ -5939,10 +5961,11 @@ class RapSuggestionAPI {
     }
     
     /// Gets example words that rhyme with the given rhyme family (updated to use advanced ranking)
-    private func getRhymeFamilyExamples(rhymeFamily: String, allowedLexiconTerms: [LexiconTerm] = [], context: NarrativeAnalysis? = nil) async -> [String] {
+    private func getRhymeFamilyExamples(rhymeFamily: String, seedWord: String? = nil, allowedLexiconTerms: [LexiconTerm] = [], context: NarrativeAnalysis? = nil) async -> [String] {
         // Use advanced ranking system
         let ranked = await getRankedRhymeCandidates(
             rhymeFamily: rhymeFamily,
+            seedWord: seedWord,
             allowedLexiconTerms: allowedLexiconTerms,
             context: context,
             weights: .default
@@ -5994,25 +6017,16 @@ class RapSuggestionAPI {
         return luxuryRhymes[rhymeFamily] ?? []
     }
     
-    private func calculateRhymeStrengthFromSignatures(sig1: PhoneticSignature, sig2: PhoneticSignature) -> RhymeStrength? {
-        // Perfect rhyme: same stressed vowel + same coda
-        if sig1.stressedVowel == sig2.stressedVowel && sig1.coda == sig2.coda {
+    /// Perfect = same ending. Near = one `endGroupKey` family. Same vowel alone is not a rhyme.
+    private func calculateRhymeStrengthFromSignatures(word1: String, phonemes1: [String], word2: String, phonemes2: [String]) -> RhymeStrength? {
+        guard let sig1 = RhymeHighlighterEngine.extractSignature(from: phonemes1),
+              let sig2 = RhymeHighlighterEngine.extractSignature(from: phonemes2) else { return nil }
+        if sig1.rhymeClassId == sig2.rhymeClassId {
             return .perfect
         }
-        
-        // Near rhyme: same stressed vowel, different coda
-        if sig1.stressedVowel == sig2.stressedVowel {
-            return .near
-        }
-        
-        // Slant rhyme: similar vowels (check base vowel without stress number)
-        let vowel1Base = String(sig1.stressedVowel.dropLast())
-        let vowel2Base = String(sig2.stressedVowel.dropLast())
-        if vowel1Base == vowel2Base {
-            return .slant
-        }
-        
-        return nil
+        let key1 = RhymeHighlighterEngine.endGroupKey(for: word1, signature: sig1, isLineEnd: true)
+        let key2 = RhymeHighlighterEngine.endGroupKey(for: word2, signature: sig2, isLineEnd: true)
+        return key1 == key2 ? .near : nil
     }
     
     private func analyzeCadence(text: String) -> CadenceMetrics {
@@ -6711,9 +6725,8 @@ enum RapAPIError: LocalizedError {
             return "OpenAI API key not found. Please add your API key in settings."
         case .requestFailed:
             return "API request failed. Please check your internet connection and try again."
-        case .rateLimitExceeded(let retryAfter):
-            let wait = retryAfter ?? 60
-            return "Too many requests. Please wait \(wait) seconds and try again, or check your OpenAI usage/limits."
+        case .rateLimitExceeded:
+            return "The AI hit a usage limit. Your key is fine. Wait a minute, then try again."
         case .serverError(let code, let message):
             if let msg = message?.trimmingCharacters(in: .whitespacesAndNewlines), !msg.isEmpty {
                 return "API error (\(code)): \(msg)"
@@ -6726,7 +6739,7 @@ enum RapAPIError: LocalizedError {
         case .jsonParsingFailed(_):
             return "The AI response format was unexpected. Please try again. If this persists, the issue has been logged for review."
         case .modelGCoreFailed:
-            return "Model G Core could not generate. Check your API key in settings, or try turning off Model G Core in Model Preferences."
+            return "Model G could not generate. Try again in a minute, or turn Model G off in Model Preferences."
         case .silence(let commentary):
             return "\(commentary.explanation) \(commentary.guidance)"
         }
@@ -6739,10 +6752,12 @@ enum RapAPIError: LocalizedError {
             return "API key missing. Add your OpenAI key in Settings."
         case .requestFailed:
             return "Request failed. Check your connection and try again."
-        case .rateLimitExceeded(let retryAfter):
-            let wait = retryAfter ?? 60
-            return "Too many requests. Wait \(wait)s and try again, or check your API usage."
+        case .rateLimitExceeded:
+            return "The AI hit a usage limit. Your key is fine. Wait a minute, then try again."
         case .serverError(let code, _):
+            if code == 403 || code == 401 {
+                return "Refresh the Genius client access token. Web search was blocked."
+            }
             return "Server error (\(code)). Try again in a moment."
         case .invalidResponse:
             return "Response was invalid. Try again."
@@ -6751,7 +6766,7 @@ enum RapAPIError: LocalizedError {
         case .jsonParsingFailed:
             return "Response format issue. Try again."
         case .modelGCoreFailed:
-            return "Model G couldn’t generate. Check Settings or try again."
+            return "Model G could not generate. Try again in a minute."
         case .silence:
             return "" // Not shown as error toast
         }

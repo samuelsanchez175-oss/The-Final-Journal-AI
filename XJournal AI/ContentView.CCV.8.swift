@@ -47,15 +47,15 @@ struct BPMPopoverView: View {
                 )
             }
             
-            // Quick Select Buttons
-            HStack(spacing: 8) {
-                ForEach([60, 90, 120, 140, 160, 180, 200], id: \.self) { value in
+            // Quick Select Buttons — same landmarks as the BPM pill menu
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 52), spacing: 8)], spacing: 8) {
+                ForEach(BarClock.quickSelectBPMs, id: \.self) { value in
                     Button {
                         bpm = value
                     } label: {
                         Text("\(value)")
                             .font(.caption.weight(.medium))
-                            .padding(.horizontal, 10)
+                            .frame(maxWidth: .infinity)
                             .padding(.vertical, 6)
                             .background(
                                 Capsule(style: .continuous)
@@ -108,7 +108,7 @@ struct BPMPopoverView: View {
                         startPoint: .top,
                         endPoint: .bottom
                     )
-                    .blendMode(.overlay)
+                    .blendMode(SwiftUI.BlendMode.overlay)
                 )
         )
     }
@@ -168,7 +168,7 @@ struct KeyPopoverView: View {
                         startPoint: .top,
                         endPoint: .bottom
                     )
-                    .blendMode(.overlay)
+                    .blendMode(SwiftUI.BlendMode.overlay)
                 )
         )
     }
@@ -283,12 +283,42 @@ struct ScalePopoverView: View {
                     startPoint: .top,
                     endPoint: .bottom
                 )
-                .blendMode(.overlay)
+                .blendMode(SwiftUI.BlendMode.overlay)
             )
     }
 }
 
-// MARK: - URL Attachment Popover View
+// MARK: - Syllable count buttons
+
+struct SyllableCountButtonGrid: View {
+    @Binding var syllableMin: Int?
+    @Binding var syllableMax: Int?
+    var counts: [Int] = SyllableCountButtonMetrics.quickSelectCounts
+
+    var body: some View {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 44), spacing: 8)], spacing: 8) {
+            ForEach(counts, id: \.self) { value in
+                let selected = SyllableCountButtonMetrics.isExactCount(value, min: syllableMin, max: syllableMax)
+                Button {
+                    syllableMin = value
+                    syllableMax = value
+                } label: {
+                    Text("\(value)")
+                        .font(.callout.weight(.medium))
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                .fill(selected ? Color.accentColor.opacity(0.2) : Color.clear)
+                        )
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("\(value) syllables per bar")
+                .accessibilityAddTraits(selected ? [.isSelected] : [])
+            }
+        }
+    }
+}
 
 struct SyllablesPopoverView: View {
     @Binding var syllableMin: Int?
@@ -302,21 +332,30 @@ struct SyllablesPopoverView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Syllables per bar")
                 .font(.headline)
-            Text("Target range Model G aims for on each bar. Leave on Auto to derive from BPM.")
+            Text("Tap a count to aim every bar at that length. Auto follows the beat.")
                 .font(.caption)
                 .foregroundStyle(Momentum.contentSecondary)
 
-            Stepper(value: Binding(get: { lo }, set: { newLo in
-                syllableMin = newLo
-                if hi < newLo { syllableMax = newLo }
-            }), in: 4...18) {
-                HStack { Text("Min"); Spacer(); Text("\(lo)").font(.title3.weight(.semibold)) }
-            }
-            Stepper(value: Binding(get: { hi }, set: { newHi in
-                syllableMax = newHi
-                if lo > newHi { syllableMin = newHi }
-            }), in: 4...18) {
-                HStack { Text("Max"); Spacer(); Text("\(hi)").font(.title3.weight(.semibold)) }
+            SyllableCountButtonGrid(syllableMin: $syllableMin, syllableMax: $syllableMax)
+
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Custom range")
+                    .font(.subheadline.weight(.semibold))
+                Text("Use only if you want a span instead of one count.")
+                    .font(.caption)
+                    .foregroundStyle(Momentum.contentSecondary)
+                Stepper(value: Binding(get: { lo }, set: { newLo in
+                    syllableMin = newLo
+                    if hi < newLo { syllableMax = newLo }
+                }), in: 4...18) {
+                    HStack { Text("Shortest"); Spacer(); Text("\(lo)").font(.title3.weight(.semibold)) }
+                }
+                Stepper(value: Binding(get: { hi }, set: { newHi in
+                    syllableMax = newHi
+                    if lo > newHi { syllableMin = newHi }
+                }), in: 4...18) {
+                    HStack { Text("Longest"); Spacer(); Text("\(hi)").font(.title3.weight(.semibold)) }
+                }
             }
 
             HStack(spacing: 12) {
@@ -324,6 +363,7 @@ struct SyllablesPopoverView: View {
                     Text("Auto").font(.callout).foregroundStyle(Momentum.contentSecondary)
                 }
                 .buttonStyle(.plain)
+                .accessibilityHint("Clears the count so Model G follows the beat.")
                 Spacer()
                 Button { dismiss() } label: {
                     Image(systemName: "checkmark")
@@ -333,6 +373,7 @@ struct SyllablesPopoverView: View {
                         .background(Circle().fill(Color.accentColor))
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Done")
             }
         }
         .padding(20)
@@ -503,7 +544,7 @@ struct URLAttachmentPopoverView: View {
                         startPoint: .top,
                         endPoint: .bottom
                     )
-                    .blendMode(.overlay)
+                    .blendMode(SwiftUI.BlendMode.overlay)
                     .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
                 )
         )
@@ -602,7 +643,7 @@ struct FolderPopoverView: View {
                         startPoint: .top,
                         endPoint: .bottom
                     )
-                    .blendMode(.overlay)
+                    .blendMode(SwiftUI.BlendMode.overlay)
                 )
         )
     }

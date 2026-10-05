@@ -9,6 +9,9 @@ import MediaPlayer
 // Used by: ContentView.swift, audio-related views
 
 class AudioPlayerManager: ObservableObject {
+    /// One player for the note card and the transcript sheet so they stay on the same file.
+    static let shared = AudioPlayerManager()
+
     private var player: AVPlayer?
     private var playerItem: AVPlayerItem?
     private var timeObserver: Any?
@@ -35,22 +38,45 @@ class AudioPlayerManager: ObservableObject {
     private var changePlaybackPositionCommandTarget: Any?
     
     @Published var isPlaying = false
+    /// Bumps when this note's file is asked to play, before the buffer starts.
+    @Published private(set) var playGeneration: Int = 0
     @Published var currentTime: TimeInterval = 0
     @Published var duration: TimeInterval = 0
     @Published var isLoading = false
+    @Published var isReady = false
     @Published var error: String?
     @Published var foundAlternativePath: String? // Path found in alternative location
-    
-    func loadAudio(from path: String, title: String? = nil, artist: String? = nil) {
-        // Clean up previous player and observers
+
+    private var playWhenReady = false
+    private var pendingSeek: TimeInterval?
+
+    func loadAudio(from path: String, title: String? = nil, artist: String? = nil, seedDuration: TimeInterval? = nil) {
+        if isSameLoadedFile(path), player != nil, error == nil, isReady {
+            if let seed = Self.finiteDuration(seedDuration), duration <= 0 {
+                duration = seed
+            }
+            isLoading = false
+            return
+        }
+
+        let queuedPlay = playWhenReady
+        let queuedSeek = pendingSeek
         cleanup()
-        
+        playWhenReady = queuedPlay
+        pendingSeek = queuedSeek
+
         isLoading = true
+        isReady = false
         error = nil
         currentPath = path
         trackTitle = title
         trackArtist = artist
-        
+        if let seed = Self.finiteDuration(seedDuration) {
+            duration = seed
+        } else {
+            duration = 0
+        }
+
         // Extract filename if no title provided
         if trackTitle == nil {
             let filename = (path as NSString).lastPathComponent
@@ -85,9 +111,8 @@ class AudioPlayerManager: ObservableObject {
     }
     
     private func loadAudioFile(at path: String) {
-        // Configure audio session to bypass silent mode
-        configureAudioSession()
-        
+        PlaybackAudioSession.configureInBackground()
+
         let url = URL(fileURLWithPath: path)
         let newPlayerItem = AVPlayerItem(url: url)
         self.playerItem = newPlayerItem
@@ -150,9 +175,10 @@ class AudioPlayerManager: ObservableObject {
                 do {
                     let durationValue = try await playerItem.asset.load(.duration)
                     await MainActor.run {
-                        self.duration = CMTimeGetSeconds(durationValue)
+                        if let seconds = Self.finiteDuration(CMTimeGetSeconds(durationValue)) {
+                            self.duration = seconds
+                        }
                         self.isLoading = false
-                        // Update lock screen info when duration is loaded
                         self.updateNowPlayingInfo()
                     }
                 } catch {
@@ -163,16 +189,16 @@ class AudioPlayerManager: ObservableObject {
                 }
             }
         } else {
-            // For iOS < 16, try to get duration synchronously if available
-            if playerItem.asset.statusOfValue(forKey: "duration", error: nil) == .loaded {
-                duration = CMTimeGetSeconds(playerItem.asset.duration)
-                isLoading = false
-            } else {
-                // Duration not loaded yet, but player can still play
-                // Will be updated when duration becomes available
-                isLoading = false
+            if let seconds = Self.finiteDuration(CMTimeGetSeconds(playerItem.asset.duration)) {
+                duration = seconds
             }
+            isLoading = false
         }
+    }
+
+    private static func finiteDuration(_ value: TimeInterval?) -> TimeInterval? {
+        guard let value, value.isFinite, value > 0 else { return nil }
+        return value
     }
     
     // MARK: - File Location Helper
@@ -184,6 +210,10 @@ class AudioPlayerManager: ObservableObject {
             let fileManager = FileManager.default
             let filename = (originalPath as NSString).lastPathComponent
             
+            if fileManager.fileExists(atPath: originalPath) {
+                return originalPath
+            }
+
             // Try App Group container (for files imported via Share Extension) - fast check
             if let containerURL = fileManager.containerURL(forSecurityApplicationGroupIdentifier: appGroupID) {
                 let appGroupPath = containerURL.appendingPathComponent(filename).path
@@ -192,151 +222,128 @@ class AudioPlayerManager: ObservableObject {
                 }
             }
             
-            // Try document directory - fast check
             if let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first {
                 let documentsPath = documentsURL.appendingPathComponent(filename).path
                 if fileManager.fileExists(atPath: documentsPath) {
                     return documentsPath
                 }
             }
-            
-            // Last resort: recursive search (slow, but only if needed)
-            if let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first {
-                if let foundPath = Self.searchForFile(filename: filename, in: documentsURL) {
-                    return foundPath
-                }
-            }
-            
+
             return nil
         }.value
     }
     
-    nonisolated private static func searchForFile(filename: String, in directory: URL) -> String? {
-        let fileManager = FileManager.default
-        guard let enumerator = fileManager.enumerator(at: directory, includingPropertiesForKeys: [.isRegularFileKey], options: [.skipsHiddenFiles]) else {
-            return nil
-        }
-        
-        for case let fileURL as URL in enumerator {
-            if fileURL.lastPathComponent == filename {
-                return fileURL.path
-            }
-        }
-        
-        return nil
+    /// Path currently loaded, so the note dock can tell this file from another note.
+    var loadedFilePath: String? { currentPath }
+
+    func noteAudioMatches(_ path: String) -> Bool {
+        guard let loaded = currentPath, !loaded.isEmpty, !path.isEmpty else { return false }
+        if loaded == path { return true }
+        return (loaded as NSString).lastPathComponent == (path as NSString).lastPathComponent
     }
-    
+
     func play() {
-        guard let player = player else {
-            print("⚠️ AudioPlayerManager: Cannot play - player is nil")
+        playWhenReady = true
+        playGeneration += 1
+
+        guard player != nil else {
+            if let path = currentPath {
+                loadAudio(from: path, title: trackTitle, artist: trackArtist, seedDuration: duration)
+            }
             return
         }
-        
-        guard player.status != .failed else {
+
+        guard player?.status != .failed else {
+            playWhenReady = false
             handleError("Player is in failed state. Please reload the audio.")
             return
         }
-        
-        // Configure audio session to bypass silent mode and support background playback
-        configureAudioSession()
-        
-        // Ensure audio session stays active for background playback
-        do {
-            try AVAudioSession.sharedInstance().setActive(true, options: [])
-        } catch {
-            print("⚠️ AudioPlayerManager: Failed to activate audio session: \(error.localizedDescription)")
-        }
-        
-        player.play()
-        isPlaying = true
-        
-        // Set up lock screen controls
-        setupRemoteCommandCenter()
-        updateNowPlayingInfo()
-        
-        print("✅ AudioPlayerManager: Playback started (background enabled)")
-    }
-    
-    // MARK: - Audio Session Configuration
-    
-    private func configureAudioSession() {
-        let audioSession = AVAudioSession.sharedInstance()
-        // Use .playback category to allow audio even when silent mode is on
-        // Try with Bluetooth options first; fall back to no options if -50 (paramErr) on some devices
-        do {
-            try audioSession.setCategory(.playback, mode: .default, options: [.allowBluetoothHFP, .allowBluetoothA2DP])
-            try audioSession.setActive(true, options: [.notifyOthersOnDeactivation])
-            print("✅ AudioPlayerManager: Audio session configured for background playback")
-        } catch {
-            let nsErr = error as NSError
-            print("⚠️ AudioPlayerManager: Failed to configure audio session: \(error.localizedDescription) (code: \(nsErr.code), domain: \(nsErr.domain))")
-            if nsErr.code == -50 {
-                print("📝 AudioPlayerManager: Retrying with playback category only (no Bluetooth options)")
-            }
-            do {
-                try audioSession.setCategory(.playback, mode: .default)
-                try audioSession.setActive(true, options: [.notifyOthersOnDeactivation])
-                print("✅ AudioPlayerManager: Audio session configured (playback only, no Bluetooth options)")
-            } catch let fallbackError {
-                let fallbackNs = fallbackError as NSError
-                print("❌ AudioPlayerManager: Fallback config also failed: \(fallbackError.localizedDescription) (code: \(fallbackNs.code))")
+
+        guard playerItem?.status == .readyToPlay else { return }
+
+        playWhenReady = false
+        Task {
+            await PlaybackAudioSession.activate()
+            await MainActor.run {
+                guard let player = self.player, player.status != .failed else { return }
+                player.play()
+                self.isPlaying = true
+                self.setupRemoteCommandCenter()
+                self.updateNowPlayingInfo()
             }
         }
     }
-    
+
     func pause() {
-        guard let player = player else {
-            print("⚠️ AudioPlayerManager: Cannot pause - player is nil")
-            return
-        }
-        
-        player.pause()
+        playWhenReady = false
+        player?.pause()
         isPlaying = false
-        
-        // Update lock screen info
         updateNowPlayingInfo()
-        
-        print("✅ AudioPlayerManager: Playback paused")
     }
-    
+
+    func togglePlayPause() {
+        if isPlaying || playWhenReady {
+            pause()
+        } else {
+            play()
+        }
+    }
+
     func seek(to time: TimeInterval) {
-        guard let player = player, let playerItem = playerItem else {
-            print("⚠️ AudioPlayerManager: Cannot seek - player or playerItem is nil")
-            return
-        }
-        
-        guard playerItem.status == .readyToPlay else {
-            print("⚠️ AudioPlayerManager: Cannot seek - player item not ready")
-            return
-        }
-        
-        let clampedTime = max(0, min(time, duration > 0 ? duration : time))
+        let clampedTime = duration > 0 ? max(0, min(time, duration)) : max(0, time)
+        currentTime = clampedTime
+        pendingSeek = clampedTime
+
+        guard let player, let playerItem, playerItem.status == .readyToPlay else { return }
+
+        pendingSeek = nil
         let cmTime = CMTime(seconds: clampedTime, preferredTimescale: 600)
-        
         player.seek(to: cmTime) { [weak self] completed in
-            if completed {
-                DispatchQueue.main.async {
-                    self?.currentTime = clampedTime
-                    print("✅ AudioPlayerManager: Seeked to \(clampedTime)s")
-                }
-            } else {
-                print("⚠️ AudioPlayerManager: Seek failed")
+            guard completed else { return }
+            DispatchQueue.main.async {
+                self?.currentTime = clampedTime
+                self?.updateNowPlayingInfo()
             }
         }
+    }
+
+    func seekAndPlay(to time: TimeInterval) {
+        seek(to: time)
+        play()
+    }
+
+    private func isSameLoadedFile(_ path: String) -> Bool {
+        guard let currentPath else { return false }
+        if currentPath == path { return true }
+        return (currentPath as NSString).standardizingPath == (path as NSString).standardizingPath
+    }
+
+    /// Unthrottled playhead, so the full-screen clock can show hundredths of a second.
+    func playbackTime() -> TimeInterval {
+        if let player {
+            let seconds = CMTimeGetSeconds(player.currentTime())
+            if seconds.isFinite, seconds >= 0 { return seconds }
+        }
+        return currentTime
     }
     
     func skipForward(seconds: TimeInterval = 15) {
-        seek(to: currentTime + seconds)
+        seek(to: playbackTime() + seconds)
     }
     
     func skipBackward(seconds: TimeInterval = 15) {
-        seek(to: currentTime - seconds)
+        seek(to: playbackTime() - seconds)
     }
     
     func retry() {
+        let path = currentPath
+        let title = trackTitle
+        let artist = trackArtist
+        let seed = duration
         error = nil
-        if let path = currentPath {
-            loadAudio(from: path)
+        cleanup()
+        if let path {
+            loadAudio(from: path, title: title, artist: artist, seedDuration: seed)
         }
     }
     
@@ -346,16 +353,28 @@ class AudioPlayerManager: ObservableObject {
         switch status {
         case .readyToPlay:
             isLoading = false
+            isReady = true
             error = nil
-            print("✅ AudioPlayerManager: Player item ready to play")
+            if duration <= 0, let item = playerItem,
+               let seconds = Self.finiteDuration(CMTimeGetSeconds(item.duration)) {
+                duration = seconds
+            }
+            if let pending = pendingSeek {
+                pendingSeek = nil
+                seek(to: pending)
+            }
+            if playWhenReady {
+                play()
+            }
         case .failed:
+            isReady = false
+            playWhenReady = false
             if let error = playerItem?.error {
                 handleError(error.localizedDescription)
             } else {
                 handleError("Unknown player item error")
             }
         case .unknown:
-            // Still loading
             break
         @unknown default:
             break
@@ -402,6 +421,9 @@ class AudioPlayerManager: ObservableObject {
         player = nil
         playerItem = nil
         isPlaying = false
+        isReady = false
+        playWhenReady = false
+        pendingSeek = nil
         currentTime = 0
         currentPath = nil
         
@@ -516,7 +538,7 @@ class AudioPlayerManager: ObservableObject {
         }
         
         // Artist (or app name if not provided)
-        nowPlayingInfo[MPMediaItemPropertyArtist] = trackArtist ?? "The Final Journal AI"
+        nowPlayingInfo[MPMediaItemPropertyArtist] = trackArtist ?? Momentum.appName
         
         // Playback duration
         if duration > 0 {

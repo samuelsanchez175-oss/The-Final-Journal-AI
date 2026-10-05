@@ -3,7 +3,7 @@ import Foundation
 // MARK: - Register Profile
 // Represents artist position/stance (registers), separate from system constraints
 
-struct RegisterProfile: Codable {
+nonisolated struct RegisterProfile: Codable, Equatable {
     // Register positions - these describe the artist's stance, not system constraints
     let register_noRepairPosition: Bool      // No reconciliation language allowed
     let register_isolationPosition: Bool     // Distance without hostility

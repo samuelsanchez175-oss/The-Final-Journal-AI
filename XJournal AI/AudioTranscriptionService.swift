@@ -1,6 +1,8 @@
 import Foundation
 import Speech
 import Combine
+import AVFoundation
+import os
 
 enum TranscriptionError: LocalizedError {
     case recognizerUnavailable
@@ -92,7 +94,10 @@ class AudioTranscriptionService: ObservableObject {
     ///  - otherwise → on-device Apple Speech (SpeechAnalyzer on iOS 26+, else SFSpeechRecognizer).
     /// Whisper requires an OpenAI key specifically; Gemini (`AIza…`) keys are not supported and
     /// transparently fall back to Apple so transcription never silently breaks.
-    func transcribe(audioURL: URL) async throws -> TranscriptionResult {
+    func transcribe(
+        audioURL: URL,
+        onUpdate: (@Sendable ([TranscriptionSegment], String) -> Void)? = nil
+    ) async throws -> TranscriptionResult {
         let backend = UserDefaults.standard.string(forKey: "transcription_backend") ?? "apple"
         if backend == "whisper",
            let apiKey = KeychainHelper.shared.getAPIKey(),
@@ -100,8 +105,33 @@ class AudioTranscriptionService: ObservableObject {
             return try await transcribeWithWhisper(audioURL: audioURL, apiKey: apiKey)
         }
 
+        guard await requestAuthorization() else {
+            throw TranscriptionError.authorizationDenied
+        }
+
+        let limit = listenLimit(for: audioURL)
+        let delivered = OSAllocatedUnfairLock(initialState: false)
+        let forward: @Sendable ([TranscriptionSegment], String) -> Void = { segments, text in
+            if !text.isEmpty || !segments.isEmpty {
+                delivered.withLock { $0 = true }
+            }
+            onUpdate?(segments, text)
+        }
+
         if #available(iOS 26.0, *) {
-            return try await SpeechAnalyzerEngine.transcribe(audioURL: audioURL)
+            do {
+                return try await withTimeout(seconds: limit) {
+                    try await SpeechAnalyzerEngine.transcribe(audioURL: audioURL, onUpdate: forward)
+                }
+            } catch let error as TranscriptionError {
+                if case .authorizationDenied = error { throw error }
+                if case .audioFileNotFound = error { throw error }
+                if delivered.withLock({ $0 }) { throw error }
+                print("📝 SpeechAnalyzer failed (\(error.localizedDescription)) — falling back to SFSpeechRecognizer")
+            } catch {
+                if delivered.withLock({ $0 }) { throw error }
+                print("📝 SpeechAnalyzer failed (\(error.localizedDescription)) — falling back to SFSpeechRecognizer")
+            }
         }
         // Legacy path: SFSpeechRecognizer
         // Check if file exists (same URL we use for playback)
@@ -132,84 +162,114 @@ class AudioTranscriptionService: ObservableObject {
             progress = 0.0
         }
         
-        return try await withCheckedThrowingContinuation { continuation in
+        return try await withTimeout(seconds: limit) {
+            try await self.transcribeWithSFSpeech(audioURL: audioURL, recognizer: recognizer, onUpdate: forward)
+        }
+    }
+
+    /// File length plus a short buffer. A 3:35 recording is not cut off at 90 seconds.
+    private func listenLimit(for audioURL: URL) -> TimeInterval {
+        let buffer: TimeInterval = 30
+        guard let file = try? AVAudioFile(forReading: audioURL) else { return 120 }
+        let rate = file.fileFormat.sampleRate
+        guard rate > 0 else { return 120 }
+        let seconds = Double(file.length) / rate
+        guard seconds.isFinite, seconds > 0 else { return 120 }
+        return seconds + buffer
+    }
+
+    private func transcribeWithSFSpeech(
+        audioURL: URL,
+        recognizer: SFSpeechRecognizer,
+        onUpdate: (@Sendable ([TranscriptionSegment], String) -> Void)?
+    ) async throws -> TranscriptionResult {
+        try await withCheckedThrowingContinuation { continuation in
             let request = SFSpeechURLRecognitionRequest(url: audioURL)
-            request.shouldReportPartialResults = false // Get final results only
-            // Do not require on-device: Notes uses server when needed. On-device requires
-            // Settings > Keyboard > Enable Dictation + dictation language downloaded for the locale,
-            // otherwise recognition can return empty even when the same file works in Notes.
+            request.shouldReportPartialResults = true
             request.requiresOnDeviceRecognition = false
-            
+            var finished = false
+
             let task = recognizer.recognitionTask(with: request) { [weak self] result, error in
-                guard let self = self else { return }
-                
-                if let error = error {
-                    self.isTranscribing = false
+                guard let self else { return }
+                if finished { return }
+
+                if let error {
+                    finished = true
                     continuation.resume(throwing: TranscriptionError.transcriptionFailed(error.localizedDescription))
                     return
                 }
-                
-                guard let result = result, result.isFinal else {
-                    // Update progress for partial results
-                    if result != nil {
-                        // Estimate progress based on result
-                        self.progress = 0.5 // Partial results indicate ~50% progress
+
+                guard let result else { return }
+                let segments = self.segments(from: result)
+                let fullText = result.bestTranscription.formattedString
+                if !result.isFinal {
+                    self.progress = 0.5
+                    if let onUpdate, !fullText.isEmpty {
+                        onUpdate(segments, fullText)
                     }
                     return
                 }
-                
-                // Extract full transcription text
-                let fullText = result.bestTranscription.formattedString
-                
-                // Extract word-level timestamps from segments (filter out empty segments)
-                // Persist substringRange so we can map phrases to timestamps in the UI.
-                var segments: [TranscriptionSegment] = []
-                for segment in result.bestTranscription.segments {
-                    let text = segment.substring.trimmingCharacters(in: .whitespacesAndNewlines)
-                    guard !text.isEmpty else { continue }
-                    var startIndex: Int? = nil
-                    var length: Int? = nil
-                    let nsRange = segment.substringRange
-                    if nsRange.length > 0, let range = Range(nsRange, in: fullText), range.lowerBound >= fullText.startIndex, range.upperBound <= fullText.endIndex {
-                        startIndex = fullText.distance(from: fullText.startIndex, to: range.lowerBound)
-                        length = fullText.distance(from: range.lowerBound, to: range.upperBound)
-                    }
-                    let transcriptionSegment = TranscriptionSegment(
-                        text: segment.substring,
-                        timestamp: segment.timestamp,
-                        duration: segment.duration,
-                        startIndex: startIndex,
-                        length: length
-                    )
-                    segments.append(transcriptionSegment)
-                }
-                
-                // Reject empty final result so user sees an error instead of "success with nothing"
-                let trimmedFullText = fullText.trimmingCharacters(in: .whitespacesAndNewlines)
-                let allSegmentsEmpty = segments.isEmpty || segments.allSatisfy { $0.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
-                if trimmedFullText.isEmpty || allSegmentsEmpty {
-                    self.isTranscribing = false
-                    print("📝 AudioTranscriptionService: Rejecting empty final result (fullText.isEmpty: \(trimmedFullText.isEmpty), segmentsAfterFilter: \(segments.count), rawSegmentCount: \(result.bestTranscription.segments.count))")
-                    print("📝 AudioTranscriptionService: Speech framework did not detect any speech in this file. Common causes: file is mostly music, language does not match device, or no clear speech. The same file is used for playback — loading is not the issue.")
+
+                let trimmed = fullText.trimmingCharacters(in: .whitespacesAndNewlines)
+                if trimmed.isEmpty || segments.isEmpty {
+                    finished = true
                     continuation.resume(throwing: TranscriptionError.transcriptionFailed("No speech recognized. Check audio quality, language, and that the recording contains clear speech."))
                     return
                 }
-                
+
+                finished = true
                 self.progress = 1.0
-                self.isTranscribing = false
-                
-                let transcriptionResult = TranscriptionResult(
-                    fullText: fullText,
-                    segments: segments
-                )
-                
-                continuation.resume(returning: transcriptionResult)
+                continuation.resume(returning: TranscriptionResult(fullText: fullText, segments: segments))
             }
-            
-            // Handle task cancellation if needed
-            if task.isCancelled {
+
+            if task.isCancelled, !finished {
+                finished = true
                 continuation.resume(throwing: TranscriptionError.transcriptionFailed("Recognition task was cancelled"))
             }
+        }
+    }
+
+    private func segments(from result: SFSpeechRecognitionResult) -> [TranscriptionSegment] {
+        let fullText = result.bestTranscription.formattedString
+        var segments: [TranscriptionSegment] = []
+        for segment in result.bestTranscription.segments {
+            let text = segment.substring.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard !text.isEmpty else { continue }
+            var startIndex: Int?
+            var length: Int?
+            let nsRange = segment.substringRange
+            if nsRange.length > 0, let range = Range(nsRange, in: fullText) {
+                startIndex = fullText.distance(from: fullText.startIndex, to: range.lowerBound)
+                length = fullText.distance(from: range.lowerBound, to: range.upperBound)
+            }
+            segments.append(
+                TranscriptionSegment(
+                    text: segment.substring,
+                    timestamp: segment.timestamp,
+                    duration: segment.duration,
+                    startIndex: startIndex,
+                    length: length
+                )
+            )
+        }
+        return segments
+    }
+
+    private func withTimeout<T: Sendable>(
+        seconds: TimeInterval,
+        operation: @escaping @Sendable () async throws -> T
+    ) async throws -> T {
+        try await withThrowingTaskGroup(of: T.self) { group in
+            group.addTask { try await operation() }
+            group.addTask {
+                try await Task.sleep(nanoseconds: UInt64(seconds * 1_000_000_000))
+                throw TranscriptionError.transcriptionFailed("Transcription took too long. Tap Restart to try again.")
+            }
+            guard let value = try await group.next() else {
+                throw TranscriptionError.transcriptionFailed("Transcription took too long. Tap Restart to try again.")
+            }
+            group.cancelAll()
+            return value
         }
     }
 

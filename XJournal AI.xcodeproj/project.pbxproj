@@ -6,20 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BF1LE0002F10000100SHARE2 /* JournalShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BF1LE0002F10000100SHARE1 /* JournalShare.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7EB8BBCF2F01F7510055B1C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7EB8BBB72F01F74F0055B1C6 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7EB8BBBE2F01F74F0055B1C6;
-			remoteInfo = "XJournal AI";
+			remoteInfo = "PennWork Studios";
 		};
 		7EB8BBD92F01F7510055B1C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7EB8BBB72F01F74F0055B1C6 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7EB8BBBE2F01F74F0055B1C6;
-			remoteInfo = "XJournal AI";
+			remoteInfo = "PennWork Studios";
+		};
+		BF1LE0002F10000100SHARE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EB8BBB72F01F74F0055B1C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1LE0002F10000100SHARE4;
+			remoteInfo = JournalShare;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -30,16 +41,41 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				BF1LE0002F10000100SHARE2 /* JournalShare.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E4B1C010F053973003FE03C /* Copy Bar Hits Catalog */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/tools/bar-hits-catalog/BarHitsCatalog.sqlite.gz",
+			);
+			name = "Copy Bar Hits Catalog";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/BarHitsCatalog.sqlite.gz",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DEST=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BarHitsCatalog.sqlite.gz\"\nmkdir -p \"$(dirname \"$DEST\")\"\nfor SRC in \\\n  \"${SRCROOT}/tools/bar-hits-catalog/BarHitsCatalog.sqlite.gz\"\ndo\n  if [ -f \"$SRC\" ]; then\n    cp -f \"$SRC\" \"$DEST\"\n    echo \"Copied Bar Hits catalog from $SRC\"\n    exit 0\n  fi\ndone\necho \"warning: BarHitsCatalog.sqlite.gz not found — wrap hits will be empty on device\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXFileReference section */
-		7EB8BBBF2F01F74F0055B1C6 /* XJournal AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XJournal AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB8BBBF2F01F74F0055B1C6 /* PennWork Studios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PennWork Studios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8BBCE2F01F7510055B1C6 /* The Final Journal AITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Final Journal AITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8BBD82F01F7510055B1C6 /* The Final Journal AIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Final Journal AIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1LE0002F10000100SHARE1 /* JournalShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JournalShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -53,6 +89,14 @@
 			path = "XJournal AI";
 			sourceTree = "<group>";
 		};
+		BF1LE0002F10000100SHARE3 /* JournalShare */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BF1LE0002F10000100SHARED /* Exceptions for "JournalShare" folder in "JournalShare" target */,
+			);
+			path = JournalShare;
+			sourceTree = "<group>";
+		};
 		7EB8BBD12F01F7510055B1C6 /* The Final Journal AITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "The Final Journal AITests";
@@ -64,6 +108,18 @@
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BF1LE0002F10000100SHARED /* Exceptions for "JournalShare" folder in "JournalShare" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				JournalShare.entitlements,
+			);
+			target = BF1LE0002F10000100SHARE4 /* JournalShare */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 
 /* Begin PBXFrameworksBuildPhase section */
 		7EB8BBBC2F01F74F0055B1C6 /* Frameworks */ = {
@@ -87,6 +143,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF1LE0002F10000100SHARE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				7EB8BBC12F01F74F0055B1C6 /* XJournal AI */,
+				BF1LE0002F10000100SHARE3 /* JournalShare */,
 				7EB8BBD12F01F7510055B1C6 /* The Final Journal AITests */,
 				7EB8BBDB2F01F7510055B1C6 /* The Final Journal AIUITests */,
 				7E4A1BA72F053B71003FE03C /* Journal Import Extention @ */,
@@ -104,9 +168,10 @@
 		7EB8BBC02F01F74F0055B1C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7EB8BBBF2F01F74F0055B1C6 /* XJournal AI.app */,
+				7EB8BBBF2F01F74F0055B1C6 /* PennWork Studios.app */,
 				7EB8BBCE2F01F7510055B1C6 /* The Final Journal AITests.xctest */,
 				7EB8BBD82F01F7510055B1C6 /* The Final Journal AIUITests.xctest */,
+				BF1LE0002F10000100SHARE1 /* JournalShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,27 +179,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7EB8BBBE2F01F74F0055B1C6 /* XJournal AI */ = {
+		7EB8BBBE2F01F74F0055B1C6 /* PennWork Studios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EB8BBE22F01F7510055B1C6 /* Build configuration list for PBXNativeTarget "XJournal AI" */;
+			buildConfigurationList = 7EB8BBE22F01F7510055B1C6 /* Build configuration list for PBXNativeTarget "PennWork Studios" */;
 			buildPhases = (
 				7EB8BBBB2F01F74F0055B1C6 /* Sources */,
 				7EB8BBBC2F01F74F0055B1C6 /* Frameworks */,
 				7EB8BBBD2F01F74F0055B1C6 /* Resources */,
+				7E4B1C010F053973003FE03C /* Copy Bar Hits Catalog */,
 				7E4A1B8E2F053973003FE03C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BF1LE0002F10000100SHARE8 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7EB8BBC12F01F74F0055B1C6 /* XJournal AI */,
 			);
-			name = "XJournal AI";
+			name = "PennWork Studios";
 			packageProductDependencies = (
 			);
-			productName = "XJournal AI";
-			productReference = 7EB8BBBF2F01F74F0055B1C6 /* XJournal AI.app */;
+			productName = "PennWork Studios";
+			productReference = 7EB8BBBF2F01F74F0055B1C6 /* PennWork Studios.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7EB8BBCD2F01F7510055B1C6 /* The Final Journal AITests */ = {
@@ -183,6 +250,28 @@
 			productReference = 7EB8BBD82F01F7510055B1C6 /* The Final Journal AIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BF1LE0002F10000100SHARE4 /* JournalShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1LE0002F10000100SHAREC /* Build configuration list for PBXNativeTarget "JournalShare" */;
+			buildPhases = (
+				BF1LE0002F10000100SHARE5 /* Sources */,
+				BF1LE0002F10000100SHARE6 /* Frameworks */,
+				BF1LE0002F10000100SHARE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BF1LE0002F10000100SHARE3 /* JournalShare */,
+			);
+			name = JournalShare;
+			packageProductDependencies = (
+			);
+			productName = JournalShare;
+			productReference = BF1LE0002F10000100SHARE1 /* JournalShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +285,9 @@
 					7EB8BBBE2F01F74F0055B1C6 = {
 						CreatedOnToolsVersion = 26.2;
 					};
+					BF1LE0002F10000100SHARE4 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					7EB8BBCD2F01F7510055B1C6 = {
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = 7EB8BBBE2F01F74F0055B1C6;
@@ -206,7 +298,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7EB8BBBA2F01F74F0055B1C6 /* Build configuration list for PBXProject "XJournal AI" */;
+			buildConfigurationList = 7EB8BBBA2F01F74F0055B1C6 /* Build configuration list for PBXProject "PennWork Studios" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -223,9 +315,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7EB8BBBE2F01F74F0055B1C6 /* XJournal AI */,
+				7EB8BBBE2F01F74F0055B1C6 /* PennWork Studios */,
 				7EB8BBCD2F01F7510055B1C6 /* The Final Journal AITests */,
 				7EB8BBD72F01F7510055B1C6 /* The Final Journal AIUITests */,
+				BF1LE0002F10000100SHARE4 /* JournalShare */,
 			);
 		};
 /* End PBXProject section */
@@ -276,18 +369,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF1LE0002F10000100SHARE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1LE0002F10000100SHARE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		7EB8BBD02F01F7510055B1C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7EB8BBBE2F01F74F0055B1C6 /* XJournal AI */;
+			target = 7EB8BBBE2F01F74F0055B1C6 /* PennWork Studios */;
 			targetProxy = 7EB8BBCF2F01F7510055B1C6 /* PBXContainerItemProxy */;
 		};
 		7EB8BBDA2F01F7510055B1C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7EB8BBBE2F01F74F0055B1C6 /* XJournal AI */;
+			target = 7EB8BBBE2F01F74F0055B1C6 /* PennWork Studios */;
 			targetProxy = 7EB8BBD92F01F7510055B1C6 /* PBXContainerItemProxy */;
+		};
+		BF1LE0002F10000100SHARE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF1LE0002F10000100SHARE4 /* JournalShare */;
+			targetProxy = BF1LE0002F10000100SHARE9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -423,14 +535,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
+				ENABLE_DEBUG_DYLIB = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImportURL.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Penwork Studios";
 				INFOPLIST_KEY_LSApplicationQueriesSchemes = voicememos;
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app needs access to speech recognition to transcribe audio recordings.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone so you can search your journal by voice and record notes.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to search your journal by voice and to transcribe recordings.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UIBackgroundModes = audio;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
@@ -440,6 +557,7 @@
 				);
 				MARKETING_VERSION = 3;
 				PRODUCT_BUNDLE_IDENTIFIER = "TEAMDB.The-Final-Journal-AI";
+				PRODUCT_MODULE_NAME = XJournal_AI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -461,14 +579,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
+				ENABLE_DEBUG_DYLIB = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImportURL.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Penwork Studios";
 				INFOPLIST_KEY_LSApplicationQueriesSchemes = voicememos;
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app needs access to speech recognition to transcribe audio recordings.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone so you can search your journal by voice and record notes.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to search your journal by voice and to transcribe recordings.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UIBackgroundModes = audio;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
@@ -478,6 +601,7 @@
 				);
 				MARKETING_VERSION = 3;
 				PRODUCT_BUNDLE_IDENTIFIER = "TEAMDB.The-Final-Journal-AI";
+				PRODUCT_MODULE_NAME = XJournal_AI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -496,6 +620,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
@@ -507,7 +632,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XJournal AI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XJournal AI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PennWork Studios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PennWork Studios";
 			};
 			name = Debug;
 		};
@@ -518,6 +643,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
@@ -529,7 +655,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XJournal AI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XJournal AI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PennWork Studios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PennWork Studios";
 			};
 			name = Release;
 		};
@@ -549,7 +675,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "XJournal AI";
+				TEST_TARGET_NAME = "PennWork Studios";
 			};
 			name = Debug;
 		};
@@ -569,14 +695,70 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "XJournal AI";
+				TEST_TARGET_NAME = "PennWork Studios";
+			};
+			name = Release;
+		};
+		BF1LE0002F10000100SHAREA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JournalShare/JournalShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JournalShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "XJournal AI";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 3.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "TEAMDB.The-Final-Journal-AI.share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF1LE0002F10000100SHAREB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JournalShare/JournalShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5WH7EW3W8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JournalShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "XJournal AI";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 3.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "TEAMDB.The-Final-Journal-AI.share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7EB8BBBA2F01F74F0055B1C6 /* Build configuration list for PBXProject "XJournal AI" */ = {
+		7EB8BBBA2F01F74F0055B1C6 /* Build configuration list for PBXProject "PennWork Studios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EB8BBE02F01F7510055B1C6 /* Debug */,
@@ -585,7 +767,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EB8BBE22F01F7510055B1C6 /* Build configuration list for PBXNativeTarget "XJournal AI" */ = {
+		7EB8BBE22F01F7510055B1C6 /* Build configuration list for PBXNativeTarget "PennWork Studios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EB8BBE32F01F7510055B1C6 /* Debug */,
@@ -608,6 +790,15 @@
 			buildConfigurations = (
 				7EB8BBE92F01F7510055B1C6 /* Debug */,
 				7EB8BBEA2F01F7510055B1C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1LE0002F10000100SHAREC /* Build configuration list for PBXNativeTarget "JournalShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1LE0002F10000100SHAREA /* Debug */,
+				BF1LE0002F10000100SHAREB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

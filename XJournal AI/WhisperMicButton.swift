@@ -43,7 +43,7 @@ final class WhisperMicRecorder: NSObject, ObservableObject {
         guard micState == .idle else { return }
 
         let session = AVAudioSession.sharedInstance()
-        session.requestRecordPermission { [weak self] granted in
+        AVAudioApplication.requestRecordPermission { [weak self] granted in
             guard let self else { return }
             guard granted else {
                 Task { @MainActor in

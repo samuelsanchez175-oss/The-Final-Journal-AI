@@ -5,12 +5,13 @@ import Foundation
 
 class AchievementSystem {
     static let shared = AchievementSystem()
-    
+    static let isEnabled = false
+
     private let achievementsKey = "user_achievements"
     private let unlockedAchievementsKey = "unlocked_achievements"
     
     private init() {
-        // Initialize all achievements if first launch
+        guard Self.isEnabled else { return }
         if UserDefaults.standard.data(forKey: achievementsKey) == nil {
             initializeAllAchievements()
         }
@@ -43,6 +44,7 @@ class AchievementSystem {
     
     /// Check achievements with provided stats
     func checkAchievements(notesCount: Int, totalWords: Int, streak: Int, featureUsage: [FeatureType: Int]) {
+        guard Self.isEnabled else { return }
         var achievements = getAllAchievements()
         var newlyUnlocked: [Achievement] = []
         

@@ -1,0 +1,322 @@
+[
+  {
+    "chip": "Trump",
+    "bars": 275,
+    "wiki_title": "Donald Trump",
+    "kind": "celeb",
+    "query": "trump",
+    "icon_slug": "noun-celeb-trump"
+  },
+  {
+    "chip": "Tyson",
+    "bars": 246,
+    "wiki_title": "Mike Tyson",
+    "kind": "celeb",
+    "query": "tyson",
+    "icon_slug": "noun-celeb-tyson"
+  },
+  {
+    "chip": "Bieber",
+    "bars": 202,
+    "wiki_title": "Justin Bieber",
+    "kind": "celeb",
+    "query": "bieber",
+    "icon_slug": "noun-celeb-bieber"
+  },
+  {
+    "chip": "Michael Jordan",
+    "bars": 141,
+    "wiki_title": "Michael Jordan",
+    "kind": "nba",
+    "query": "\"michael jordan\"",
+    "icon_slug": "noun-celeb-michael-jordan"
+  },
+  {
+    "chip": "Usher",
+    "bars": 139,
+    "wiki_title": "Usher (musician)",
+    "kind": "celeb",
+    "query": "usher",
+    "icon_slug": "noun-celeb-usher"
+  },
+  {
+    "chip": "D-Rose",
+    "bars": 129,
+    "wiki_title": "Derrick Rose",
+    "kind": "nba",
+    "query": "\"derrick rose\" OR drose OR \"d-rose\" OR \"d. rose\"",
+    "icon_slug": "noun-celeb-d-rose"
+  },
+  {
+    "chip": "Steph",
+    "bars": 120,
+    "wiki_title": "Stephen Curry",
+    "kind": "nba",
+    "query": "steph",
+    "icon_slug": "noun-celeb-steph"
+  },
+  {
+    "chip": "Mayweather",
+    "bars": 113,
+    "wiki_title": "Floyd Mayweather Jr.",
+    "kind": "celeb",
+    "query": "mayweather",
+    "icon_slug": "noun-celeb-mayweather"
+  },
+  {
+    "chip": "Aaliyah",
+    "bars": 111,
+    "wiki_title": "Aaliyah",
+    "kind": "celeb",
+    "query": "aaliyah",
+    "icon_slug": "noun-celeb-aaliyah"
+  },
+  {
+    "chip": "Serena",
+    "bars": 108,
+    "wiki_title": "Serena Williams",
+    "kind": "celeb",
+    "query": "serena",
+    "icon_slug": "noun-celeb-serena"
+  },
+  {
+    "chip": "Usain",
+    "bars": 108,
+    "wiki_title": "Usain Bolt",
+    "kind": "celeb",
+    "query": "usain OR \"usain bolt\"",
+    "icon_slug": "noun-celeb-usain"
+  },
+  {
+    "chip": "Phelps",
+    "bars": 105,
+    "wiki_title": "Michael Phelps",
+    "kind": "celeb",
+    "query": "phelps",
+    "icon_slug": "noun-celeb-phelps"
+  },
+  {
+    "chip": "Yao Ming",
+    "bars": 101,
+    "wiki_title": "Yao Ming",
+    "kind": "nba",
+    "query": "\"yao ming\"",
+    "icon_slug": "noun-celeb-yao-ming"
+  },
+  {
+    "chip": "Kyrie",
+    "bars": 88,
+    "wiki_title": "Kyrie Irving",
+    "kind": "nba",
+    "query": "kyrie",
+    "icon_slug": "noun-celeb-kyrie"
+  },
+  {
+    "chip": "CP3",
+    "bars": 85,
+    "wiki_title": "Chris Paul",
+    "kind": "nba",
+    "query": "cp3 OR \"chris paul\"",
+    "icon_slug": "noun-celeb-cp3"
+  },
+  {
+    "chip": "Jackie Chan",
+    "bars": 84,
+    "wiki_title": "Jackie Chan",
+    "kind": "actor",
+    "query": "\"jackie chan\"",
+    "icon_slug": "noun-celeb-jackie-chan"
+  },
+  {
+    "chip": "Rondo",
+    "bars": 84,
+    "wiki_title": "Rajon Rondo",
+    "kind": "nba",
+    "query": "rondo",
+    "icon_slug": "noun-celeb-rondo"
+  },
+  {
+    "chip": "Bruce Lee",
+    "bars": 83,
+    "wiki_title": "Bruce Lee",
+    "kind": "actor",
+    "query": "\"bruce lee\"",
+    "icon_slug": "noun-celeb-bruce-lee"
+  },
+  {
+    "chip": "Spike Lee",
+    "bars": 79,
+    "wiki_title": "Spike Lee",
+    "kind": "actor",
+    "query": "\"spike lee\"",
+    "icon_slug": "noun-celeb-spike-lee"
+  },
+  {
+    "chip": "Malcolm X",
+    "bars": 73,
+    "wiki_title": "Malcolm X",
+    "kind": "celeb",
+    "query": "\"malcolm x\"",
+    "icon_slug": "noun-celeb-malcolm-x"
+  },
+  {
+    "chip": "Rodman",
+    "bars": 69,
+    "wiki_title": "Dennis Rodman",
+    "kind": "nba",
+    "query": "rodman",
+    "icon_slug": "noun-celeb-rodman"
+  },
+  {
+    "chip": "Ginobili",
+    "bars": 68,
+    "wiki_title": "Manu Ginóbili",
+    "kind": "nba",
+    "query": "ginobili",
+    "icon_slug": "noun-celeb-ginobili"
+  },
+  {
+    "chip": "Nick Cannon",
+    "bars": 64,
+    "wiki_title": "Nick Cannon",
+    "kind": "celeb",
+    "query": "\"nick cannon\"",
+    "icon_slug": "noun-celeb-nick-cannon"
+  },
+  {
+    "chip": "Pacquiao",
+    "bars": 53,
+    "wiki_title": "Manny Pacquiao",
+    "kind": "celeb",
+    "query": "pacquiao",
+    "icon_slug": "noun-celeb-pacquiao"
+  },
+  {
+    "chip": "Holyfield",
+    "bars": 52,
+    "wiki_title": "Evander Holyfield",
+    "kind": "celeb",
+    "query": "holyfield",
+    "icon_slug": "noun-celeb-holyfield"
+  },
+  {
+    "chip": "Chris Tucker",
+    "bars": 51,
+    "wiki_title": "Chris Tucker",
+    "kind": "actor",
+    "query": "\"chris tucker\"",
+    "icon_slug": "noun-celeb-chris-tucker"
+  },
+  {
+    "chip": "Hardaway",
+    "bars": 49,
+    "wiki_title": "Penny Hardaway",
+    "kind": "nba",
+    "query": "hardaway OR \"penny hardaway\"",
+    "icon_slug": "noun-celeb-hardaway"
+  },
+  {
+    "chip": "Romo",
+    "bars": 49,
+    "wiki_title": "Tony Romo",
+    "kind": "nfl",
+    "query": "romo",
+    "icon_slug": "noun-celeb-romo"
+  },
+  {
+    "chip": "Kaepernick",
+    "bars": 46,
+    "wiki_title": "Colin Kaepernick",
+    "kind": "nfl",
+    "query": "kaepernick",
+    "icon_slug": "noun-celeb-kaepernick"
+  },
+  {
+    "chip": "Muhammad Ali",
+    "bars": 45,
+    "wiki_title": "Muhammad Ali",
+    "kind": "celeb",
+    "query": "\"muhammad ali\"",
+    "icon_slug": "noun-celeb-muhammad-ali"
+  },
+  {
+    "chip": "Nia Long",
+    "bars": 43,
+    "wiki_title": "Nia Long",
+    "kind": "actor",
+    "query": "\"nia long\"",
+    "icon_slug": "noun-celeb-nia-long"
+  },
+  {
+    "chip": "Dr J",
+    "bars": 42,
+    "wiki_title": "Julius Erving",
+    "kind": "nba",
+    "query": "\"julius erving\" OR \"dr j\" OR \"dr. j\"",
+    "icon_slug": "noun-celeb-dr-j"
+  },
+  {
+    "chip": "Wilt",
+    "bars": 42,
+    "wiki_title": "Wilt Chamberlain",
+    "kind": "nba",
+    "query": "\"wilt chamberlain\" OR wilt",
+    "icon_slug": "noun-celeb-wilt"
+  },
+  {
+    "chip": "Messi",
+    "bars": 40,
+    "wiki_title": "Lionel Messi",
+    "kind": "celeb",
+    "query": "messi",
+    "icon_slug": "noun-celeb-messi"
+  },
+  {
+    "chip": "D-Wade",
+    "bars": 38,
+    "wiki_title": "Dwyane Wade",
+    "kind": "nba",
+    "query": "dwade OR \"d-wade\" OR \"d wade\" OR \"d. wade\"",
+    "icon_slug": "noun-celeb-d-wade"
+  },
+  {
+    "chip": "Ewing",
+    "bars": 38,
+    "wiki_title": "Patrick Ewing",
+    "kind": "nba",
+    "query": "ewing",
+    "icon_slug": "noun-celeb-ewing"
+  },
+  {
+    "chip": "Nash",
+    "bars": 38,
+    "wiki_title": "Steve Nash",
+    "kind": "nba",
+    "query": "\"steve nash\"",
+    "icon_slug": "noun-celeb-nash"
+  },
+  {
+    "chip": "Rosa Parks",
+    "bars": 38,
+    "wiki_title": "Rosa Parks",
+    "kind": "celeb",
+    "query": "\"rosa parks\"",
+    "icon_slug": "noun-celeb-rosa-parks"
+  },
+  {
+    "chip": "Amber Rose",
+    "bars": 37,
+    "wiki_title": "Amber Rose",
+    "kind": "celeb",
+    "query": "\"amber rose\"",
+    "icon_slug": "noun-celeb-amber-rose"
+  },
+  {
+    "chip": "John Cena",
+    "bars": 37,
+    "wiki_title": "John Cena",
+    "kind": "actor",
+    "query": "\"john cena\"",
+    "icon_slug": "noun-celeb-john-cena"
+  }
+]

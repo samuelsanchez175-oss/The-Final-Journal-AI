@@ -137,76 +137,75 @@ class EditorialGroundTruth: ObservableObject {
     
     // MARK: - CSV Parsing
     
-    nonisolated private static func parseCSVFile(data: Data) throws -> [GroundTruthBar] {
+    /// Public for tests. The vault header names the lyric `text_bar_line` and the first
+    /// column is an unlabeled id (`REAL LYRICS…`) — never treat artist as the bar text.
+    nonisolated static func parseCSVFile(data: Data) throws -> [GroundTruthBar] {
         guard let csvString = String(data: data, encoding: .utf8) else {
             throw GroundTruthError.invalidEncoding
         }
-        
+
         let lines = csvString.components(separatedBy: .newlines)
         guard lines.count > 1 else {
             throw GroundTruthError.emptyFile
         }
-        
+
+        let header = parseCSVLine(lines[0]).map { $0.lowercased() }
+        let textIndex = lyricColumnIndex(in: header)
+        let idIndex = headerIndex(in: header, exact: ["id", "text_id"], containing: ["_id"]) ?? 0
+        let artistIndex = headerIndex(in: header, exact: ["artist"], containing: ["artist"])
+        let songIndex = headerIndex(in: header, exact: ["song", "track"], containing: [])
+        let yearIndex = headerIndex(in: header, exact: ["year"], containing: ["year"])
+
         var bars: [GroundTruthBar] = []
-        
-        // Parse header to determine column indices
-        let header = parseCSVLine(lines[0])
-        guard let textIndex = header.firstIndex(where: { $0.lowercased().contains("text") || $0.lowercased().contains("line") || $0.lowercased().contains("bar") }),
-              let idIndex = header.firstIndex(where: { $0.lowercased().contains("id") }) else {
-            // If no clear header, assume simple format: id,text,artist,song,year
-            for (index, line) in lines.enumerated() {
-                guard index > 0, !line.trimmingCharacters(in: .whitespaces).isEmpty else { continue }
-                let components = parseCSVLine(line)
-                guard components.count >= 2 else { continue }
-                
-                let id = components[0].trimmingCharacters(in: .whitespaces)
-                let text = components[1].trimmingCharacters(in: .whitespaces)
-                guard !id.isEmpty, !text.isEmpty else { continue }
-                
-                let artist = components.count > 2 ? components[2].trimmingCharacters(in: .whitespaces) : nil
-                let song = components.count > 3 ? components[3].trimmingCharacters(in: .whitespaces) : nil
-                let year = components.count > 4 ? Int(components[4].trimmingCharacters(in: .whitespaces)) : nil
-                
-                bars.append(GroundTruthBar(
-                    id: id,
-                    text: text,
-                    artist: artist?.isEmpty == false ? artist : nil,
-                    song: song?.isEmpty == false ? song : nil,
-                    year: year
-                ))
-            }
-            return bars
-        }
-        
-        // Parse with header
         for (index, line) in lines.enumerated() {
             guard index > 0, !line.trimmingCharacters(in: .whitespaces).isEmpty else { continue }
             let components = parseCSVLine(line)
-            guard components.count > max(textIndex, idIndex) else { continue }
-            
-            let id = components[idIndex].trimmingCharacters(in: .whitespaces)
-            let text = components[textIndex].trimmingCharacters(in: .whitespaces)
+            func at(_ i: Int?) -> String {
+                guard let i, i < components.count else { return "" }
+                return components[i].trimmingCharacters(in: .whitespaces)
+            }
+            let id = at(idIndex)
+            let text: String
+            if let textIndex, textIndex < components.count {
+                text = at(textIndex)
+            } else if components.count > 1 {
+                // Unlabeled simple dump: id,text,artist,song,year
+                text = at(1)
+            } else {
+                continue
+            }
             guard !id.isEmpty, !text.isEmpty else { continue }
-            
-            // Try to find optional columns
-            let artistIndex = header.firstIndex(where: { $0.lowercased().contains("artist") })
-            let songIndex = header.firstIndex(where: { $0.lowercased().contains("song") })
-            let yearIndex = header.firstIndex(where: { $0.lowercased().contains("year") })
-            
-            let artist = artistIndex.flatMap { components.indices.contains($0) ? components[$0].trimmingCharacters(in: .whitespaces) : nil }
-            let song = songIndex.flatMap { components.indices.contains($0) ? components[$0].trimmingCharacters(in: .whitespaces) : nil }
-            let year = yearIndex.flatMap { components.indices.contains($0) ? Int(components[$0].trimmingCharacters(in: .whitespaces)) : nil }
-            
+            let artist = at(artistIndex)
+            let song = at(songIndex)
+            let yearRaw = at(yearIndex)
             bars.append(GroundTruthBar(
                 id: id,
                 text: text,
-                artist: artist?.isEmpty == false ? artist : nil,
-                song: song?.isEmpty == false ? song : nil,
-                year: year
+                artist: artist.isEmpty ? nil : artist,
+                song: song.isEmpty ? nil : song,
+                year: Int(yearRaw)
             ))
         }
-        
         return bars
+    }
+
+    /// Lyric column is `text_bar_line` (or `text`/`line`). Never `bar_index` / `bar_group_*`.
+    nonisolated private static func lyricColumnIndex(in header: [String]) -> Int? {
+        let exact = ["text_bar_line", "text", "line", "bar", "lyric", "lyrics"]
+        if let i = header.firstIndex(where: { exact.contains($0) }) { return i }
+        return header.firstIndex { col in
+            (col.contains("text") || col.contains("lyric"))
+                && !col.contains("id")
+                && !col.contains("index")
+                && !col.contains("group")
+        }
+    }
+
+    nonisolated private static func headerIndex(in header: [String], exact: [String], containing: [String]) -> Int? {
+        if let i = header.firstIndex(where: { exact.contains($0) }) { return i }
+        return header.firstIndex { col in
+            containing.contains { col.contains($0) }
+        }
     }
     
     nonisolated private static func parseCSVLine(_ line: String) -> [String] {

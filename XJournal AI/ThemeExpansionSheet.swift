@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 
 // MARK: - Theme Model
-struct Theme: Codable, Identifiable, Hashable {
+nonisolated struct Theme: Codable, Identifiable, Hashable, Sendable {
     let id: String
     let name: String
     let jargonTerms: [String]

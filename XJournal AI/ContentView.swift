@@ -1,11 +1,6 @@
 import SwiftUI
 import SwiftData
 import UIKit
-import Combine
-import NaturalLanguage
-import AVFoundation
-import Speech
-import PhotosUI
 
 // =======================================================
 // PAGE MAP (ARCHITECTURAL)
@@ -69,53 +64,26 @@ import PhotosUI
 // =======================================================
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.scenePhase) private var scenePhase
     @State private var selectedImportedItem: Item?
 
     var body: some View {
         JournalLibraryView(selectedImportedItem: $selectedImportedItem)
-            .onOpenURL { url in
-                guard url.scheme == "finaljournal",
-                      url.host == "import"
-                else { return }
-
-                let defaults = UserDefaults(suiteName: "group.com.finaljournal.app")
-                let source = defaults?.string(forKey: "importSource")
-
-                // Import from Apple Notes
-                if source == "notes",
-                   let text = defaults?.string(forKey: "importedNoteText"),
-                   !text.isEmpty {
-
-                    let newItem = Item(
-                        timestamp: Date(),
-                        title: "Imported Note",
-                        body: text
-                    )
-
-                    modelContext.insert(newItem)
-                    selectedImportedItem = newItem
-
-                    defaults?.removeObject(forKey: "importedNoteText")
+            .onAppear(perform: importPendingNotes)
+            .onChange(of: scenePhase) { _, phase in
+                if phase == .active {
+                    importPendingNotes()
                 }
-
-                // Import from Voice Memos
-                if source == "voiceMemo",
-                   let path = defaults?.string(forKey: "importedAudioPath") {
-
-                    let newItem = Item(
-                        timestamp: Date(),
-                        title: "Voice Memo",
-                        body: ""
-                    )
-
-                    newItem.audioPath = path
-                    modelContext.insert(newItem)
-                    selectedImportedItem = newItem
-
-                    defaults?.removeObject(forKey: "importedAudioPath")
-                }
-
-                defaults?.removeObject(forKey: "importSource")
             }
+            .onOpenURL { url in
+                guard url.scheme == "finaljournal", url.host == "import" else { return }
+                importPendingNotes()
+            }
+    }
+
+    /// Share-sheet notes land in the app group. Create them as soon as the app is open.
+    private func importPendingNotes() {
+        guard let item = SharedNoteImport.drain(into: modelContext) else { return }
+        selectedImportedItem = item
     }
 }

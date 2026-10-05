@@ -17,6 +17,7 @@ struct RapIslandToolbar: View {
     let currentText: String
 
     @State private var showGroups = false
+    @State private var showRemindsMeOf = false
 
     var body: some View {
         HStack(spacing: 18) {
@@ -29,6 +30,7 @@ struct RapIslandToolbar: View {
             .accessibilityLabel(rhymeOn ? "Hide rhyme overlay" : "Show rhyme overlay")
 
             groupsButton
+            remindsMeOfButton
 
             toggleButton(
                 icon: "text.aligncenter",
@@ -72,6 +74,42 @@ struct RapIslandToolbar: View {
             RhymeGroupListView(groups: rhymeGroups, currentText: currentText)
                 .presentationCompactAdaptation(.popover)
         }
+    }
+
+    private var remindsMeOfButton: some View {
+        Button { showRemindsMeOf = true } label: {
+            VStack(spacing: 2) {
+                Image(systemName: "command").font(.headline)
+                Text(RemindsMeOfCopy.toolbar).font(.caption2)
+            }
+            .foregroundStyle(Color.primary)
+            .frame(minWidth: 44)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(RemindsMeOfCopy.accessibility)
+        .accessibilityHint(RemindsMeOfCopy.hint)
+        .sheet(isPresented: $showRemindsMeOf) {
+            RapIslandRemindsSheet(text: currentText)
+        }
+    }
+}
+
+private struct RapIslandRemindsSheet: View {
+    let text: String
+    @StateObject private var service = RemindsMeOfService()
+
+    var body: some View {
+        RemindsMeOfListView(
+            service: service,
+            text: text,
+            bpm: nil,
+            syllableMin: nil,
+            syllableMax: nil
+        )
+        .presentationDetents([.medium, .large])
+        .presentationDragIndicator(.visible)
+        .presentationCompactAdaptation(.sheet)
+        .presentationBackground(Momentum.surfaceElevated)
     }
 }
 

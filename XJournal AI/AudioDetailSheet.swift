@@ -13,15 +13,30 @@ import Combine
 import Foundation
 import Speech
 import QuartzCore
+import UIKit
+
+/// Live transcription updates hop back to the main actor without capturing the note in a sendable closure.
+@MainActor
+private enum TranscriptionLiveBoard {
+    static var items: [PersistentIdentifier: Item] = [:]
+
+    static func publish(id: PersistentIdentifier, text: String, segments: [TranscriptionSegment]) {
+        guard let live = items[id] else { return }
+        live.transcription = text
+        live.transcriptionSegments = segments
+    }
+}
 
 // MARK: - Full-Screen Transcription Detail View
 
 struct AudioDetailSheet: View {
     @Bindable var item: Item
     var autoTranscribe: Bool = false // Flag to auto-trigger transcription on appear
+    /// Opens the recorder. The dark circle on this screen is that control.
+    var onRecord: (() -> Void)? = nil
     @Environment(\.dismiss) private var dismiss
     
-    @StateObject private var audioManager = AudioPlayerManager()
+    @ObservedObject private var audioManager = AudioPlayerManager.shared
     @StateObject private var transcriptionService = AudioTranscriptionService()
     @State private var currentTime: TimeInterval = 0
     @State private var animatedTime: TimeInterval = 0
@@ -32,13 +47,30 @@ struct AudioDetailSheet: View {
     @State private var isAnalyzingAudio = false
     @State private var audioAnalysisError: String?
     @State private var showMenu = false
+    @State private var showFindBar = false
+    @State private var findQuery = ""
+    @State private var findMatchIndex = 0
+    @State private var transcriptBanner: String? = nil
+    @FocusState private var findFieldFocused: Bool
+    @State private var detailPane: DetailPane = .transcript
+    /// Yellow quote button. On while the words are on screen.
+    @State private var transcriptVisible = true
+    @State private var isSummarizing = false
+    @State private var summaryError: String? = nil
     @State private var scrollOffset: CGFloat = 0
     @State private var lastScrollOffset: CGFloat = 0
     @State private var isPlayerVisible: Bool = true
+    @State private var isDraggingProgress = false
+    @State private var dragProgress: Double = 0
     /// Cached phrase rows so we don't recompute on every body evaluation (was causing slow transcript population).
     @State private var cachedPhraseRows: [PhraseRow]? = nil
     /// Cached decoded rhythm map to avoid decoding JSON in body every time.
     @State private var cachedRhythmMap: RhythmicTranscriptionResult? = nil
+    /// Text column after the timestamp and the gap. Measured from this screen.
+    @State private var transcriptColumnWidth: CGFloat = 280
+    /// Latest word end while a listen is in progress. Drives the fill and the open row.
+    @State private var lastHeardTime: TimeInterval = 0
+    @State private var lastHeardAt: Date = .distantPast
     
     // Computed properties
     private var displayTitle: String {
@@ -49,75 +81,142 @@ struct AudioDetailSheet: View {
         return item.title.isEmpty ? "Audio Recording" : item.title
     }
     
+    /// File creation date, same source as the card. Editing the note does not move it.
+    private var recordingDate: Date {
+        if let path = item.audioPath {
+            let created = try? URL(fileURLWithPath: path).resourceValues(forKeys: [.creationDateKey]).creationDate
+            if let created { return created }
+        }
+        return item.timestamp
+    }
+
     private var dateTimeString: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "M/d/yy, h:mm a"
-        let date = item.modifiedDate ?? item.timestamp
-        let dateStr = formatter.string(from: date)
+        let dateStr = formatter.string(from: recordingDate)
         
-        if let duration = item.audioDuration {
-            let minutes = Int(duration) / 60
-            let seconds = Int(duration) % 60
-            return "\(dateStr) \(String(format: "%02d:%02d", minutes, seconds))"
+        if let duration = item.audioDuration, duration > 0 {
+            let total = Int(duration)
+            let hours = total / 3600
+            let minutes = (total % 3600) / 60
+            let seconds = total % 60
+            let length = hours > 0
+                ? String(format: "%d:%02d:%02d", hours, minutes, seconds)
+                : String(format: "%d:%02d", minutes, seconds)
+            return "\(dateStr) \(length)"
         }
         return dateStr
     }
     
     var body: some View {
         ZStack {
-            // Dark background with extension effect
             Color.black
                 .ignoresSafeArea()
             
             VStack(spacing: 0) {
-                // HEADER: Segment 7 Linked Transition
-                headerView
-                    .padding(.horizontal, 20)
-                    .padding(.top, 8)
-                
-                // Audio analysis CTA when metadata isn't available yet
-                if item.bpm == nil && item.key == nil && item.scale == nil && item.audioPath != nil {
-                    if isAnalyzingAudio {
-                        audioAnalysisProgressView
-                            .padding(.horizontal, 20)
-                            .padding(.top, 10)
+                topBar
+                    .padding(.horizontal, 16)
+                    .padding(.top, 6)
+
+                Text(displayTitle)
+                    .font(.title2.weight(.bold))
+                    .foregroundStyle(.white)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, 28)
+                    .padding(.top, 6)
+
+                Text(dateTimeString)
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.55))
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 2)
+
+                summaryRow
+                    .padding(.horizontal, 16)
+                    .padding(.top, 16)
+
+                if showFindBar {
+                    findInTranscriptBar
+                        .padding(.horizontal, 16)
+                        .padding(.top, 8)
+                }
+
+                if let transcriptBanner {
+                    Text(transcriptBanner)
+                        .font(.subheadline)
+                        .foregroundStyle(.white.opacity(0.9))
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                        .padding(.horizontal, 12)
+                        .background(
+                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                .fill(Color.white.opacity(0.12))
+                        )
+                        .padding(.horizontal, 12)
+                        .padding(.top, 8)
+                        .accessibilityLabel(transcriptBanner)
+                        .transition(.opacity)
+                }
+
+                Group {
+                    if detailPane == .summary {
+                        summaryPane
+                    } else if transcriptVisible {
+                        transcriptView
                     } else {
-                        analyzeAudioButton
-                            .padding(.horizontal, 20)
-                            .padding(.top, 10)
+                        Color.clear
                     }
                 }
-                
-                // TRANSCRIPTION SURFACE: Fill available space so ScrollView can scroll all content
-                transcriptView
-                    .frame(maxHeight: .infinity)
-                    .padding(.horizontal, 20)
-                    .padding(.top, 14)
-                
-                // PLAYBACK CONTROLS: Show/hide based on scroll position
-                if isPlayerVisible {
-                    playbackControlsContainer
-                        .padding(.horizontal, 20)
-                        .padding(.top, 16)
-                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                .frame(maxHeight: .infinity)
+                .padding(.horizontal, 8)
+                .padding(.top, 8)
+                .mask(
+                    LinearGradient(
+                        stops: [
+                            .init(color: .black, location: 0),
+                            .init(color: .black, location: 0.72),
+                            .init(color: .clear, location: 1)
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+
+                if isTranscribing {
+                    Text("Listening")
+                        .font(.subheadline)
+                        .foregroundStyle(.white.opacity(0.7))
+                        .padding(.top, 4)
+                        .accessibilityLabel("Listening")
+                } else if let transcriptionError {
+                    Text(transcriptionError)
+                        .font(.caption)
+                        .foregroundStyle(.white.opacity(0.7))
+                        .lineLimit(2)
+                        .padding(.horizontal, 24)
+                        .padding(.top, 4)
                 }
-                
-                // Transcription status/button area
-                if item.audioPath != nil {
-                    if isTranscribing {
-                        transcriptionProgressWithRestart
-                            .padding(.horizontal, 20)
-                            .padding(.top, 16)
-                    } else if transcriptionError != nil {
-                        transcriptionErrorView
-                            .padding(.horizontal, 20)
-                            .padding(.top, 16)
-                    } else {
-                        transcriptionButtonsView
-                            .padding(.horizontal, 20)
-                            .padding(.top, 16)
-                    }
+
+                TimelineView(.animation(minimumInterval: 1.0 / 30.0, paused: !audioManager.isPlaying)) { _ in
+                    let shown = audioManager.playbackTime()
+                    Text(formatTimer(shown))
+                        .font(.system(size: 52, weight: .bold))
+                        .monospacedDigit()
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .accessibilityLabel("Playback position \(formatTimer(shown))")
                 }
+                .padding(.top, 8)
+
+                notesTransport
+                    .padding(.top, 10)
+
+                bottomTools
+                    .padding(.horizontal, 28)
+                    .padding(.top, 16)
+                    .padding(.bottom, 6)
             }
         }
         .onAppear {
@@ -146,7 +245,9 @@ struct AudioDetailSheet: View {
                     await triggerTranscription(audioPath: item.audioPath!, force: true)
                 }
             } else if !autoTranscribe, let audioPath = item.audioPath {
-                // Auto-transcribe when missing or when we have text but no segments
+                // Only auto-transcribe when this note has no Apple transcript yet.
+                // Never re-run just because segments are missing — that produced
+                // different lyrics than the note and could retarget another file.
                 Task {
                     await triggerTranscriptionIfNeeded(audioPath: audioPath)
                 }
@@ -155,12 +256,10 @@ struct AudioDetailSheet: View {
         .onDisappear {
             stopTimer()
             stopDisplayLink()
-            audioManager.pause()
         }
         .onReceive(audioManager.$currentTime) { time in
-            currentTime = time
-            // Smoothly animate to new time
-            withAnimation(.linear(duration: 0.1)) {
+            if !isDraggingProgress {
+                currentTime = time
                 animatedTime = time
             }
         }
@@ -254,6 +353,65 @@ struct AudioDetailSheet: View {
         return lines.joined(separator: "\n")
     }
     
+    private var hasTranscriptText: Bool {
+        transcriptPlainText != nil
+    }
+
+    private var transcriptPlainText: String? {
+        if let text = item.transcription?.trimmingCharacters(in: .whitespacesAndNewlines), !text.isEmpty {
+            return text
+        }
+        let joined = notesRows.filter { !$0.isPlaceholder }.map(\.phrase).joined(separator: " ")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+        return joined.isEmpty ? nil : joined
+    }
+
+    private func copyTranscript() {
+        guard let text = transcriptPlainText else { return }
+        UIPasteboard.general.string = text
+        HapticFeedbackManager.shared.lightTap()
+        flashBanner("Transcript copied")
+    }
+
+    private func addTranscriptToNote() {
+        guard let text = transcriptPlainText else { return }
+        if item.body.hasSuffix(text) {
+            flashBanner("Transcript is already in this note")
+            HapticFeedbackManager.shared.lightTap()
+            return
+        }
+        let prefix = item.body.isEmpty ? "" : "\n\n"
+        item.body += prefix + text
+        item.modifiedDate = Date()
+        try? item.modelContext?.save()
+        HapticFeedbackManager.shared.lightTap()
+        flashBanner("Added transcript to note")
+    }
+
+    private func flashBanner(_ message: String) {
+        transcriptBanner = message
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 1_800_000_000)
+            if transcriptBanner == message {
+                transcriptBanner = nil
+            }
+        }
+    }
+
+    private var findMatchIDs: [Int] {
+        TranscriptFind.matchingIDs(
+            query: findQuery,
+            rows: notesRows.map { (id: $0.id, text: $0.phrase, isPause: $0.isPlaceholder) }
+        )
+    }
+
+    private var currentFindRowID: Int? {
+        let ids = findMatchIDs
+        guard !ids.isEmpty else { return nil }
+        let index = min(max(0, findMatchIndex), ids.count - 1)
+        return ids[index]
+    }
+
     private func deleteAudio() {
         // Delete audio file
         if let audioPath = item.audioPath {
@@ -280,139 +438,444 @@ struct AudioDetailSheet: View {
                     
     // MARK: - Header View
     
-    private var headerView: some View {
-        VStack(spacing: 8) {
+    private var topBar: some View {
+        HStack {
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                showMenu = true
+            } label: {
+                Image(systemName: "ellipsis")
+                    .font(.body.weight(.semibold))
+                    .foregroundStyle(.white)
+                    .frame(width: 44, height: 44)
+                    .background(Circle().fill(Color(white: 0.16)))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("More")
+            .accessibilityHint("Find, copy, or add the transcript, share audio, or delete this recording.")
+            .confirmationDialog("Audio options", isPresented: $showMenu, titleVisibility: .visible) {
+                if hasTranscriptText {
+                    Button("Find in Transcript") {
+                        showFindBar = true
+                        findFieldFocused = true
+                    }
+                    Button("Copy Transcript") { copyTranscript() }
+                    Button("Add Transcript to Note") { addTranscriptToNote() }
+                    if let summary = item.audioSummary, !summary.isEmpty {
+                        Button("Copy Summary") { copySummary() }
+                        Button("Share Summary") { shareSummary() }
+                    }
+                }
+                Button("Share audio") { shareAudio() }
+                if hasTranscriptText {
+                    Button("Export transcript") { exportTranscription() }
+                }
+                if item.audioPath != nil {
+                    Button("Transcribe again") {
+                        guard let audioPath = item.audioPath else { return }
+                        Task { await triggerTranscription(audioPath: audioPath, force: true) }
+                    }
+                    Button("Delete recording", role: .destructive) { deleteAudio() }
+                }
+                Button("Cancel", role: .cancel) {}
+            }
+
+            Spacer()
+
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                dismiss()
+            } label: {
+                Image(systemName: "checkmark")
+                    .font(.body.weight(.bold))
+                    .foregroundStyle(.black)
+                    .frame(width: 44, height: 44)
+                    .background(Circle().fill(Color(uiColor: .systemYellow)))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Done")
+            .accessibilityHint("Closes this recording.")
+        }
+    }
+
+    private var summaryRow: some View {
+        Button {
+            HapticFeedbackManager.shared.lightTap()
+            if detailPane == .summary {
+                detailPane = .transcript
+            } else {
+                detailPane = .summary
+                Task { await ensureSummary() }
+            }
+        } label: {
+            HStack(spacing: 10) {
+                Image(systemName: detailPane == .summary ? "chevron.left" : "arrow.uturn.backward")
+                    .font(.body.weight(.medium))
+                Text(detailPane == .summary ? "Transcript" : "Summary")
+                    .font(.body)
+                Spacer()
+                if detailPane == .transcript {
+                    Image(systemName: "chevron.right")
+                        .font(.body.weight(.semibold))
+                        .foregroundStyle(.white.opacity(0.7))
+                }
+            }
+            .foregroundStyle(.white)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+            .background(
+                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                    .fill(Color(white: 0.15))
+            )
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(detailPane == .summary ? "Transcript" : "Summary")
+        .accessibilityHint(detailPane == .summary
+            ? "Shows the words in this recording."
+            : "Shows a short summary of this recording.")
+    }
+
+    private var notesTransport: some View {
+        HStack(spacing: 44) {
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                audioManager.skipBackward(seconds: 15)
+            } label: {
+                Image(systemName: "gobackward.15")
+                    .font(.title2)
+                    .foregroundStyle(.white)
+                    .frame(width: 44, height: 44)
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Skip back 15 seconds")
+
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                if audioManager.isPlaying {
+                    audioManager.pause()
+                } else {
+                    audioManager.play()
+                }
+            } label: {
+                Image(systemName: audioManager.isPlaying ? "pause.fill" : "play.fill")
+                    .font(.system(size: 46, weight: .regular))
+                    .foregroundStyle(.white)
+                    .frame(width: 56, height: 56)
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(audioManager.isPlaying ? "Pause" : "Play")
+            .accessibilityHint(audioManager.isPlaying ? "Pauses this recording." : "Plays this recording.")
+
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                audioManager.skipForward(seconds: 15)
+            } label: {
+                Image(systemName: "goforward.15")
+                    .font(.title2)
+                    .foregroundStyle(.white)
+                    .frame(width: 44, height: 44)
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Skip forward 15 seconds")
+        }
+    }
+
+    private var bottomTools: some View {
+        ZStack {
             HStack {
-                // Menu button
                 Button {
                     HapticFeedbackManager.shared.lightTap()
-                    showMenu = true
+                    transcriptVisible.toggle()
+                    if transcriptVisible { detailPane = .transcript }
                 } label: {
-                    Image(systemName: "ellipsis.circle")
-                        .font(.title2)
+                    Image(systemName: "quote.bubble.fill")
+                        .font(.title3)
                         .foregroundStyle(.white)
-                }
-                .buttonStyle(.microCompression)
-                .confirmationDialog("Audio Options", isPresented: $showMenu, titleVisibility: .visible) {
-                    Button("Share Audio") {
-                        shareAudio()
-                    }
-                    
-                    Button("Export Transcription") {
-                        exportTranscription()
-                    }
-                    
-                    if item.audioPath != nil {
-                        Button("Delete Audio", role: .destructive) {
-                            deleteAudio()
-                        }
-                    }
-                    
-                    Button("Cancel", role: .cancel) {}
-                }
-                
-                Spacer()
-                
-                // Title and metadata
-                VStack(spacing: 4) {
-                    Text(displayTitle)
-                        .font(.title2.weight(.bold))
-                        .foregroundStyle(.white)
-                    
-                    Text(dateTimeString)
-                        .font(.caption.monospacedDigit())
-                        .foregroundStyle(Momentum.contentSecondary)
-                }
-                
-                Spacer()
-                
-                // Yellow checkmark button (Segment 7) with circular glassProminent style
-                Button {
-                    HapticFeedbackManager.shared.lightTap()
-                    print("🟡 Done button tapped")
-                    dismiss()
-                } label: {
-                    Image(systemName: "checkmark")
-                        .font(.title2)
-                        .foregroundStyle(.white)
-                        .frame(width: 44, height: 44)
-                }
-                .background(
-                    Circle()
-                        .fill(
-                            LinearGradient(
-                                colors: [
-                                    Color.yellow.opacity(0.9),
-                                    Color.yellow.opacity(0.8),
-                                    Color.yellow.opacity(0.9)
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
+                        .frame(width: 54, height: 54)
+                        .background(
+                            Circle().fill(transcriptVisible
+                                           ? Color(uiColor: .systemYellow)
+                                           : Color.white.opacity(0.16))
                         )
-                        .overlay(
-                            Circle()
-                                .fill(
-                                    LinearGradient(
-                                        colors: [
-                                            Color.white.opacity(0.1),
-                                            Color.white.opacity(0.05)
-                                        ],
-                                        startPoint: .top,
-                                        endPoint: .bottom
-                                    )
-                                )
-                                .blendMode(.overlay)
-                        )
-                        .shadow(color: Color.yellow.opacity(0.4), radius: 8, x: 0, y: 4)
-                )
+                }
                 .buttonStyle(.plain)
+                .accessibilityLabel(transcriptVisible ? "Hide transcript" : "Show transcript")
+                .accessibilityHint("Shows or hides the words in this recording.")
+                Spacer()
             }
-            
-            if item.bpm != nil || item.key != nil || item.scale != nil {
-                audioMetadataView
-                    .frame(maxWidth: .infinity, alignment: .center)
+
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                onRecord?()
+            } label: {
+                Circle()
+                    .fill(Color(red: 0.24, green: 0.11, blue: 0.10))
+                    .frame(width: 64, height: 64)
             }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Record")
+            .accessibilityHint("Opens the recorder.")
+        }
+    }
+
+    private var headerView: some View {
+        HStack(alignment: .top, spacing: 10) {
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                showMenu = true
+            } label: {
+                Image(systemName: "ellipsis.circle")
+                    .font(.title3)
+                    .foregroundStyle(.white.opacity(0.9))
+                    .frame(width: 36, height: 36)
+                    .contentShape(Circle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("More")
+            .accessibilityHint("Find, copy, or add the transcript, share audio, or delete this recording.")
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text(displayTitle)
+                    .font(.headline.weight(.bold))
+                    .foregroundStyle(.white)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                Text(dateTimeString)
+                    .font(.caption.monospacedDigit())
+                    .foregroundStyle(.white.opacity(0.5))
+
+                if item.bpm != nil || item.key != nil || item.scale != nil {
+                    audioMetadataView
+                } else if item.audioPath != nil {
+                    if isAnalyzingAudio {
+                        HStack(spacing: 8) {
+                            ProgressView()
+                                .progressViewStyle(CircularProgressViewStyle(tint: .white.opacity(0.7)))
+                                .scaleEffect(0.7)
+                            Text("Reading BPM and key")
+                                .font(.caption)
+                                .foregroundStyle(.white.opacity(0.55))
+                        }
+                    } else {
+                        Button {
+                            guard let audioPath = item.audioPath else { return }
+                            Task { await analyzeAudio(audioPath: audioPath) }
+                        } label: {
+                            Text("Read BPM and key")
+                                .font(.caption.weight(.medium))
+                                .foregroundStyle(.white.opacity(0.85))
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Read BPM and key")
+                        .accessibilityHint("Detects tempo and musical key from this recording.")
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                dismiss()
+            } label: {
+                Image(systemName: "checkmark")
+                    .font(.body.weight(.bold))
+                    .foregroundStyle(.black)
+                    .frame(width: 36, height: 36)
+                    .background(Circle().fill(Color.yellow))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Done")
+            .accessibilityHint("Closes this recording.")
+        }
+        .padding(.vertical, 10)
+        .padding(.horizontal, 12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(sheetCardBackground)
+    }
+
+    private var sheetCardBackground: some View {
+        RoundedRectangle(cornerRadius: 14, style: .continuous)
+            .fill(.ultraThinMaterial.opacity(0.55))
+    }
+
+    private enum DetailPane: String, CaseIterable {
+        case transcript = "Transcript"
+        case summary = "Summary"
+    }
+
+    private var panePicker: some View {
+        HStack(spacing: 0) {
+            ForEach(DetailPane.allCases, id: \.self) { pane in
+                Button {
+                    HapticFeedbackManager.shared.lightTap()
+                    detailPane = pane
+                    if pane == .summary {
+                        Task { await ensureSummary() }
+                    }
+                } label: {
+                    Text(pane.rawValue)
+                        .font(.subheadline.weight(detailPane == pane ? .semibold : .medium))
+                        .foregroundStyle(.white.opacity(detailPane == pane ? 1 : 0.55))
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                .fill(detailPane == pane ? Color.white.opacity(0.16) : Color.clear)
+                        )
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(pane.rawValue)
+                .accessibilityAddTraits(detailPane == pane ? .isSelected : [])
+                .accessibilityHint(pane == .summary
+                    ? "Shows a short summary of this recording."
+                    : "Shows the timestamped transcript.")
+            }
+        }
+        .padding(3)
+        .background(sheetCardBackground)
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel("Transcript or Summary")
+    }
+
+    private var summaryPane: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            if isSummarizing {
+                HStack(spacing: 10) {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .white.opacity(0.7)))
+                        .scaleEffect(0.8)
+                    Text("Summarizing this recording…")
+                        .font(.subheadline)
+                        .foregroundStyle(.white.opacity(0.7))
+                }
+                .accessibilityLabel("Summarizing this recording")
+                Spacer()
+            } else if let summaryError {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(summaryError)
+                        .font(.body)
+                        .foregroundStyle(.white.opacity(0.75))
+                    Button("Try again") {
+                        Task { await ensureSummary(force: true) }
+                    }
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.white)
+                    .accessibilityLabel("Try again")
+                    .accessibilityHint("Generates a new summary of this recording.")
+                }
+                Spacer()
+            } else if let summary = item.audioSummary?.trimmingCharacters(in: .whitespacesAndNewlines), !summary.isEmpty {
+                ScrollView {
+                    Text(summary)
+                        .font(.body)
+                        .foregroundStyle(.white.opacity(0.92))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .textSelection(.enabled)
+                }
+                .scrollIndicators(.hidden)
+                HStack(spacing: 12) {
+                    Button("Copy Summary") { copySummary() }
+                        .accessibilityHint("Copies the summary to the clipboard.")
+                    Button("Share Summary") { shareSummary() }
+                        .accessibilityHint("Opens the share sheet for this summary.")
+                }
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.white)
+            } else if !hasTranscriptText {
+                Text("Transcribe this recording first, then open Summary.")
+                    .font(.body)
+                    .foregroundStyle(.white.opacity(0.6))
+                Spacer()
+            } else {
+                Text("No summary yet.")
+                    .font(.body)
+                    .foregroundStyle(.white.opacity(0.6))
+                Button("Summarize") {
+                    Task { await ensureSummary(force: true) }
+                }
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.orange)
+                .accessibilityLabel("Summarize")
+                .accessibilityHint("Writes a short summary of this recording.")
+                Spacer()
+            }
+        }
+    }
+
+    private func copySummary() {
+        guard let summary = item.audioSummary?.trimmingCharacters(in: .whitespacesAndNewlines), !summary.isEmpty else { return }
+        UIPasteboard.general.string = summary
+        HapticFeedbackManager.shared.lightTap()
+        flashBanner("Summary copied")
+    }
+
+    private func shareSummary() {
+        guard let summary = item.audioSummary?.trimmingCharacters(in: .whitespacesAndNewlines), !summary.isEmpty else { return }
+        HapticFeedbackManager.shared.lightTap()
+        let activityVC = UIActivityViewController(activityItems: [summary], applicationActivities: nil)
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let rootViewController = windowScene.windows.first?.rootViewController {
+            rootViewController.present(activityVC, animated: true)
+        }
+    }
+
+    @MainActor
+    private func ensureSummary(force: Bool = false) async {
+        if !force, let existing = item.audioSummary?.trimmingCharacters(in: .whitespacesAndNewlines), !existing.isEmpty {
+            summaryError = nil
+            return
+        }
+        guard let text = transcriptPlainText else {
+            summaryError = "Transcribe this recording first, then open Summary."
+            return
+        }
+        isSummarizing = true
+        summaryError = nil
+        defer { isSummarizing = false }
+        do {
+            let summary = try await AudioSummaryService.shared.generateSummary(from: text)
+            item.audioSummary = summary
+            item.modifiedDate = Date()
+            try? item.modelContext?.save()
+        } catch {
+            summaryError = error.localizedDescription
         }
     }
     
     // MARK: - Audio Metadata View
     
     private var audioMetadataView: some View {
-        HStack(spacing: 10) {
+        HStack(spacing: 6) {
             if let bpm = item.bpm {
                 metadataPill(icon: "metronome", label: "\(bpm) BPM", color: .blue)
             }
-            
             if let key = item.key {
                 metadataPill(icon: "music.note", label: key, color: .orange)
             }
-            
             if let scale = item.scale {
                 metadataPill(icon: "waveform", label: scale, color: .purple)
             }
         }
-        .fixedSize(horizontal: false, vertical: true)
     }
-    
+
     private func metadataPill(icon: String, label: String, color: Color) -> some View {
-        HStack(spacing: 6) {
+        HStack(spacing: 4) {
             Image(systemName: icon)
                 .font(.caption2)
             Text(label)
-                .font(.caption.weight(.medium))
+                .font(.caption2.weight(.medium))
         }
         .foregroundStyle(color)
-        .padding(.horizontal, 10)
-        .padding(.vertical, 6)
+        .padding(.horizontal, 8)
+        .padding(.vertical, 4)
         .background(
             Capsule()
-                .fill(color.opacity(0.15))
-                .overlay(
-                    Capsule()
-                        .stroke(color.opacity(0.3), lineWidth: 1)
-                )
+                .fill(color.opacity(0.16))
+                .overlay(Capsule().stroke(color.opacity(0.3), lineWidth: 1))
         )
+        .accessibilityLabel(label)
     }
     
     // MARK: - Transcript View with Active Highlighting and Glass Effect Transition
@@ -437,7 +900,6 @@ struct AudioDetailSheet: View {
                 preferredTextWidth: contentWidth,
                 cachedPhraseRows: cachedPhraseRows
             )
-            transcriptPreviewSection(fullText: fullText)
         } else if useBeatLineView {
             ForEach(beatLines) { line in
                 transcriptBeatLineView(beatLine: line, preferredTextWidth: contentWidth)
@@ -446,13 +908,11 @@ struct AudioDetailSheet: View {
             ForEach(segments) { segment in
                 transcriptSegmentView(segment: segment, rhythmMap: rhythmMap, preferredTextWidth: contentWidth)
             }
-        } else {
-            VStack(alignment: .leading, spacing: 8) {
-                Text("No transcription available")
-                    .font(.body)
-                    .foregroundStyle(Momentum.contentSecondary)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
+        } else if !isTranscribing {
+            Text("No transcription yet")
+                .font(.body)
+                .foregroundStyle(Momentum.contentSecondary)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
     
@@ -535,37 +995,67 @@ struct AudioDetailSheet: View {
         if let data = item.transcriptionRhythmMapData, cachedRhythmMap == nil {
             cachedRhythmMap = try? JSONDecoder().decode(RhythmicTranscriptionResult.self, from: data)
         }
-        if let fullText = item.transcription, !fullText.isEmpty {
-            let segs = item.transcriptionSegments ?? []
-            Task { @MainActor in
-                cachedPhraseRows = buildPhraseRows(fullText: fullText, segments: segs)
-            }
-        }
+        rebuildNotesRows()
     }
     
     private func transcriptOnTranscriptionChange() {
-        cachedPhraseRows = nil
         cachedRhythmMap = nil
         if let data = item.transcriptionRhythmMapData {
             cachedRhythmMap = try? JSONDecoder().decode(RhythmicTranscriptionResult.self, from: data)
         }
-        guard let fullText = item.transcription, !fullText.isEmpty else { return }
-        let segs = item.transcriptionSegments ?? []
-        Task { @MainActor in
-            cachedPhraseRows = buildPhraseRows(fullText: fullText, segments: segs)
-        }
+        rebuildNotesRows()
     }
     
     private func transcriptOnSegmentsChange() {
-        cachedPhraseRows = nil
         if let data = item.transcriptionRhythmMapData {
             cachedRhythmMap = try? JSONDecoder().decode(RhythmicTranscriptionResult.self, from: data)
         }
-        guard let fullText = item.transcription, !fullText.isEmpty else { return }
-        let segs = item.transcriptionSegments ?? []
-        Task { @MainActor in
-            cachedPhraseRows = buildPhraseRows(fullText: fullText, segments: segs)
+        rebuildNotesRows()
+    }
+
+    private func rebuildNotesRows() {
+        cachedPhraseRows = makePhraseRows(from: groupedPhrases())
+    }
+
+    private func groupedPhrases() -> [TranscriptPhrase] {
+        TranscriptPhraseGrouper.timelinePhrases(
+            from: item.transcriptionSegments ?? [],
+            bpm: item.bpm.map(Double.init)
+        )
+    }
+
+    private func makePhraseRows(from phrases: [TranscriptPhrase]) -> [PhraseRow] {
+        if phrases.isEmpty,
+           let fullText = item.transcription?.trimmingCharacters(in: .whitespacesAndNewlines),
+           !fullText.isEmpty {
+            return [PhraseRow(id: 0, phrase: fullText, timestamp: 0, duration: max(1, item.audioDuration ?? 1))]
         }
+        return phrases.enumerated().map { index, phrase in
+            PhraseRow(
+                id: index,
+                phrase: phrase.text,
+                timestamp: phrase.timestamp,
+                duration: phrase.duration,
+                wordTimings: phrase.wordTimings.isEmpty ? nil : phrase.wordTimings.map { ($0.text, $0.timestamp, $0.duration) },
+                isPlaceholder: phrase.isPause,
+                placeholderEndTime: phrase.isPause ? phrase.timestamp + phrase.duration : nil
+            )
+        }
+    }
+
+    /// Screen width already excludes the sheet padding. This removes the time column and the gap.
+    private func adoptColumnWidth(_ container: CGFloat) {
+        let column = max(120, container - (transcriptLinePaddingH * 2) - transcriptTimeColumnWidth - transcriptLineGap)
+        guard abs(column - transcriptColumnWidth) > 1 else { return }
+        transcriptColumnWidth = column
+        rebuildNotesRows()
+    }
+
+    private func noteHeardProgress() {
+        let heard = (item.transcriptionSegments ?? []).map { $0.timestamp + $0.duration }.max() ?? 0
+        guard heard > lastHeardTime + 0.04 else { return }
+        lastHeardTime = heard
+        lastHeardAt = Date()
     }
     
     private func transcriptOnScrollChange(value: CGFloat) {
@@ -582,12 +1072,251 @@ struct AudioDetailSheet: View {
     }
     
     private var transcriptViewInner: some View {
-        ZStack(alignment: .top) {
-            transcriptViewScrollView
+        notesStyleTranscript
+    }
+
+    private var notesRows: [PhraseRow] {
+        if let cached = cachedPhraseRows { return cached }
+        return makePhraseRows(from: groupedPhrases())
+    }
+
+    /// While a listen is running and playback is still at the start, mark the row being written.
+    private var marksRowBeingWritten: Bool {
+        isTranscribing && !audioManager.isPlaying && currentTime < 0.2
+    }
+
+    private var activeTranscriptRowID: Int? {
+        let spoken = notesRows.filter { !$0.isPlaceholder }
+        guard !spoken.isEmpty else { return nil }
+        if marksRowBeingWritten {
+            guard lastHeardTime > 0.05 else { return nil }
+            return spoken.last?.id
+        }
+        var current: Int? = nil
+        for row in spoken {
+            if currentTime + 0.08 >= row.timestamp {
+                current = row.id
+            } else if current != nil {
+                break
+            }
+        }
+        return current
+    }
+
+    private var paragraphTranscript: AttributedString {
+        let raw = (item.transcription ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        var text = AttributedString(raw)
+        text.foregroundColor = .white.opacity(0.70)
+        return applyFindHighlight(text, query: findQuery, emphasize: true)
+    }
+
+    private var notesStyleTranscript: some View {
+        let rows = notesRows
+        return VStack(spacing: 0) {
+            GeometryReader { geo in
+                ScrollViewReader { proxy in
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 12) {
+                            if rows.isEmpty && !isTranscribing {
+                                Text("No words yet")
+                                    .font(.title3)
+                                    .foregroundStyle(.white.opacity(0.45))
+                            } else {
+                                ForEach(rows) { row in
+                                    notesTranscriptLine(row)
+                                        .id(row.id)
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .padding(.bottom, 24)
+                    }
+                    .scrollIndicators(.hidden)
+                    .onChange(of: findQuery) { _, _ in
+                        findMatchIndex = 0
+                        scrollToFindMatch(proxy)
+                    }
+                    .onChange(of: findMatchIndex) { _, _ in
+                        scrollToFindMatch(proxy)
+                    }
+                }
+                .onAppear { adoptColumnWidth(geo.size.width) }
+                .onChange(of: geo.size.width) { _, width in
+                    adoptColumnWidth(width)
+                }
+            }
+        }
+        .onChange(of: item.transcription ?? "") { _, _ in
+            rebuildNotesRows()
+            noteHeardProgress()
+        }
+        .onChange(of: item.transcriptionSegments?.count ?? 0) { _, _ in
+            rebuildNotesRows()
+            noteHeardProgress()
+        }
+        .onChange(of: item.bpm) { _, _ in
+            rebuildNotesRows()
         }
     }
-    
-    
+
+    private var findInTranscriptBar: some View {
+        let matches = findMatchIDs
+        let total = matches.count
+        let current = total == 0 ? 0 : min(max(0, findMatchIndex), total - 1) + 1
+        return HStack(spacing: 8) {
+            Image(systemName: "magnifyingglass")
+                .font(.subheadline)
+                .foregroundStyle(.white.opacity(0.55))
+                .accessibilityHidden(true)
+            TextField("Find in transcript", text: $findQuery)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+                .font(.subheadline)
+                .foregroundStyle(.white)
+                .focused($findFieldFocused)
+                .accessibilityLabel("Find in transcript")
+                .accessibilityHint("Jumps to matching lines. Use next and previous to move between them.")
+            if !findQuery.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                Text(total == 0 ? "No matches" : "\(current) of \(total)")
+                    .font(.caption)
+                    .foregroundStyle(.white.opacity(0.6))
+                    .lineLimit(1)
+                    .accessibilityLabel(total == 0 ? "No matches" : "Match \(current) of \(total)")
+                Button {
+                    HapticFeedbackManager.shared.lightTap()
+                    guard total > 0 else { return }
+                    findMatchIndex = (findMatchIndex - 1 + total) % total
+                } label: {
+                    Image(systemName: "chevron.up")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(.white.opacity(total > 0 ? 0.9 : 0.35))
+                        .frame(width: 28, height: 28)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .disabled(total == 0)
+                .accessibilityLabel("Previous match")
+                Button {
+                    HapticFeedbackManager.shared.lightTap()
+                    guard total > 0 else { return }
+                    findMatchIndex = (findMatchIndex + 1) % total
+                } label: {
+                    Image(systemName: "chevron.down")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(.white.opacity(total > 0 ? 0.9 : 0.35))
+                        .frame(width: 28, height: 28)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .disabled(total == 0)
+                .accessibilityLabel("Next match")
+            }
+            Button("Done") {
+                HapticFeedbackManager.shared.lightTap()
+                findFieldFocused = false
+                showFindBar = false
+                findQuery = ""
+                findMatchIndex = 0
+            }
+            .font(.subheadline.weight(.semibold))
+            .foregroundStyle(.white)
+            .accessibilityLabel("Done")
+            .accessibilityHint("Closes find in transcript.")
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .background(
+            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                .fill(Color.white.opacity(0.10))
+        )
+    }
+
+    private func scrollToFindMatch(_ proxy: ScrollViewProxy) {
+        guard showFindBar, let id = currentFindRowID else { return }
+        withAnimation(.easeInOut(duration: 0.2)) {
+            proxy.scrollTo(id, anchor: .center)
+        }
+    }
+
+    @ViewBuilder
+    private func notesTranscriptLine(_ row: PhraseRow) -> some View {
+        if row.isPlaceholder, row.phrase.isEmpty {
+            Color.clear.frame(height: 12).accessibilityHidden(true)
+        } else {
+            let isActive = activeTranscriptRowID == row.id
+            Button {
+                HapticFeedbackManager.shared.lightTap()
+                audioManager.seekAndPlay(to: row.timestamp)
+                currentTime = row.timestamp
+            } label: {
+                HStack(alignment: .firstTextBaseline, spacing: transcriptLineGap) {
+                    Text(formatTime(row.timestamp))
+                        .font(.system(size: 15, weight: .regular, design: .rounded).monospacedDigit())
+                        .foregroundStyle(.white.opacity(0.40))
+                        .frame(width: transcriptTimeColumnWidth, alignment: .trailing)
+                    if row.isPlaceholder {
+                        Text("···")
+                            .font(.system(size: 22, weight: .regular))
+                            .foregroundStyle(.white.opacity(0.32))
+                            .tracking(6)
+                            .lineLimit(1)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    } else {
+                        Text(lineText(row))
+                            .font(.system(size: 22))
+                            .foregroundStyle(.white.opacity(0.70))
+                            .lineSpacing(6)
+                            .multilineTextAlignment(.leading)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+                .padding(.vertical, transcriptLinePaddingV)
+                .padding(.horizontal, transcriptLinePaddingH)
+                .background(
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .fill(lineBackground(isActive: isActive, rowID: row.id))
+                )
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(row.isPlaceholder ? "Pause at \(formatTime(row.timestamp))" : "\(formatTime(row.timestamp)), \(row.phrase)")
+            .accessibilityHint("Plays this recording from this line.")
+        }
+    }
+
+    private func lineBackground(isActive: Bool, rowID: Int) -> Color {
+        if currentFindRowID == rowID { return Color.orange.opacity(0.16) }
+        if isActive { return Color.white.opacity(0.10) }
+        return Color.clear
+    }
+
+    private func lineText(_ row: PhraseRow) -> AttributedString {
+        var text = AttributedString(row.phrase)
+        text.font = .system(size: 22)
+        text.foregroundColor = .white.opacity(0.70)
+        return applyFindHighlight(text, query: findQuery, emphasize: currentFindRowID == row.id)
+    }
+
+    private func applyFindHighlight(_ text: AttributedString, query: String, emphasize: Bool) -> AttributedString {
+        let needle = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !needle.isEmpty else { return text }
+        var result = text
+        let plain = String(result.characters)
+        var cursor = plain.startIndex
+        while cursor < plain.endIndex,
+              let range = plain.range(of: needle, options: [.caseInsensitive, .diacriticInsensitive], range: cursor..<plain.endIndex) {
+            let nsRange = NSRange(range, in: plain)
+            if let attributedRange = Range(nsRange, in: result) {
+                result[attributedRange].backgroundColor = emphasize
+                    ? Color.orange.opacity(0.45)
+                    : Color.yellow.opacity(0.28)
+            }
+            cursor = range.upperBound
+        }
+        return result
+    }
+
     /// PreferenceKey for tracking scroll offset
     private struct ScrollOffsetPreferenceKey: PreferenceKey {
         static var defaultValue: CGFloat = 0
@@ -596,18 +1325,45 @@ struct AudioDetailSheet: View {
         }
     }
     
-    /// Transcription progress overlay blended into transcription surface (iOS 26 style)
+    /// Listening pill: a thin fill of the file, beside Restart.
     private var transcriptionProgressOverlay: some View {
-        HStack(spacing: 10) {
-            ProgressView()
-                .progressViewStyle(CircularProgressViewStyle(tint: .orange))
-                .scaleEffect(0.8)
-            Text("Transcribing audio...")
+        TimelineView(.periodic(from: .now, by: 1)) { timeline in
+            listeningPill(at: timeline.date)
+        }
+        .transition(.opacity.combined(with: .scale(scale: 0.95)))
+    }
+
+    private func listeningPill(at now: Date) -> some View {
+        let duration = item.audioDuration ?? 0
+        let heard = duration > 0 ? min(lastHeardTime, duration) : lastHeardTime
+        let stalled = lastHeardTime > 0.05 && now.timeIntervalSince(lastHeardAt) >= 4
+        let label: String = {
+            if stalled { return "Still listening" }
+            if duration > 0 {
+                return "Listening · \(formatTime(heard)) of \(formatTime(duration))"
+            }
+            return "Listening · \(formatTime(heard))"
+        }()
+        let fraction = duration > 0 ? CGFloat(min(1, max(0, heard / duration))) : 0
+        return VStack(alignment: .leading, spacing: 6) {
+            Text(label)
                 .font(.subheadline)
-                .foregroundStyle(.secondary.opacity(0.8))
+                .foregroundStyle(.white.opacity(0.82))
+                .lineLimit(1)
+            GeometryReader { geo in
+                ZStack(alignment: .leading) {
+                    Capsule().fill(Color.white.opacity(0.14))
+                    Capsule()
+                        .fill(Color.orange)
+                        .frame(width: max(0, geo.size.width * fraction))
+                }
+            }
+            .frame(height: 3)
+            .accessibilityHidden(true)
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 10)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
                 .fill(Momentum.surfaceElevated)
@@ -616,7 +1372,8 @@ struct AudioDetailSheet: View {
                         .strokeBorder(Color.white.opacity(0.1), lineWidth: 0.5)
                 )
         )
-        .transition(.opacity.combined(with: .scale(scale: 0.95)))
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(label)
     }
     
     /// Build and save rhythm map when we have segments + BPM but no (valid) rhythm map, so beat-line view is used.
@@ -641,10 +1398,15 @@ struct AudioDetailSheet: View {
     
     /// When true, raw transcript is expanded; otherwise it stays collapsed to a few lines.
     @State private var showFullTranscript = false
-    @State private var showTimestamps: Bool = false
+    @State private var showTimestamps: Bool = true
     private let transcriptTimestampColumnWidth: CGFloat = 52
     private let transcriptRowSpacing: CGFloat = 10
     private let transcriptRowHorizontalPadding: CGFloat = 24 // Increased from 2px to 24px per side
+    private let transcriptTimeColumnWidth: CGFloat = 48
+    private let transcriptLineGap: CGFloat = 12
+    private let transcriptLinePaddingH: CGFloat = 6
+    private let transcriptLinePaddingV: CGFloat = 3
+    private let transcriptStackSpacing: CGFloat = 4
     
     /// Calculate responsive max text width: ~320px on iPhone, ~400-450px on iPad
     private var responsiveMaxTextWidth: CGFloat {
@@ -966,16 +1728,7 @@ struct AudioDetailSheet: View {
         cachedPhraseRows: [PhraseRow]?
     ) -> some View {
         let phraseRows = cachedPhraseRows ?? []
-        return VStack(alignment: .leading, spacing: 12) {
-            if showTimestamps {
-                Text("By line")
-                    .font(.subheadline.weight(.medium))
-                    .foregroundStyle(Momentum.contentSecondary)
-            } else {
-                Text("By line")
-                    .font(.caption.weight(.medium))
-                    .foregroundStyle(.tertiary)
-            }
+        return VStack(alignment: .leading, spacing: 14) {
             if !phraseRows.isEmpty {
                 ForEach(phraseRows) { row in
                     transcriptPhraseRowView(phraseRow: row, rhythmMap: rhythmMap, preferredTextWidth: preferredTextWidth)
@@ -1018,7 +1771,7 @@ struct AudioDetailSheet: View {
                 if showTimestamps {
                     Text(timestampText)
                         .font(.system(.caption, design: .monospaced).weight(.medium))
-                        .foregroundStyle(.secondary.opacity(0.6))
+                        .foregroundStyle(.white.opacity(0.45))
                         .frame(width: transcriptTimestampColumnWidth, alignment: .leading)
                         .fixedSize(horizontal: true, vertical: false)
                 } else {
@@ -1472,48 +2225,89 @@ struct AudioDetailSheet: View {
     
     // MARK: - Playback Controls
     
-    /// Subtle/material style container for playback controls (no border, subtle blur)
-    private var playbackControlsContainer: some View {
-        VStack(spacing: 12) {
-            playbackControlsView
-        }
-        .padding(.vertical, 12)
-        .padding(.horizontal, 16)
-        .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(.ultraThinMaterial.opacity(0.6))
-        )
+    private var playbackDuration: TimeInterval {
+        if audioManager.duration.isFinite, audioManager.duration > 0 { return audioManager.duration }
+        return item.audioDuration ?? 0
     }
-    
+
+    private var playbackProgress: Double {
+        guard playbackDuration > 0 else { return 0 }
+        return isDraggingProgress ? dragProgress : min(1, max(0, currentTime / playbackDuration))
+    }
+
+    private var scrubDisplayTime: TimeInterval {
+        if isDraggingProgress, playbackDuration > 0 { return dragProgress * playbackDuration }
+        return currentTime
+    }
+
+    /// Wide, short transport bar with a scrubber — Apple Notes style.
+    private var playbackControlsContainer: some View {
+        playbackControlsView
+            .padding(.vertical, 8)
+            .padding(.horizontal, 14)
+            .frame(maxWidth: .infinity)
+            .background(sheetCardBackground)
+    }
+
     private var playbackControlsView: some View {
-        VStack(spacing: 12) {
-            // Reduced timer display size (less prominent)
-            Text(formatTimer(animatedTime))
-                .font(.system(.title, design: .monospaced).weight(.semibold))
-                .foregroundStyle(.white.opacity(0.9))
-                .contentTransition(.numericText())
-                .animation(.linear(duration: 0.1), value: animatedTime)
-            
-            // Playback buttons (reduced size)
-            HStack(spacing: 28) {
-                // Skip backward 15s
+        VStack(spacing: 6) {
+            AudioScrubberTrack(
+                progress: playbackProgress,
+                isDragging: isDraggingProgress,
+                onScrubChanged: { fraction in
+                    isDraggingProgress = true
+                    dragProgress = fraction
+                    if playbackDuration > 0 {
+                        currentTime = fraction * playbackDuration
+                    }
+                },
+                onScrubEnded: { fraction in
+                    let seekTime = playbackDuration > 0 ? fraction * playbackDuration : 0
+                    audioManager.seek(to: seekTime)
+                    currentTime = seekTime
+                    isDraggingProgress = false
+                    dragProgress = 0
+                }
+            )
+            .disabled(playbackDuration <= 0 && !audioManager.isReady)
+            .opacity(playbackDuration > 0 ? 1 : 0.45)
+            .accessibilityLabel("Playback position")
+            .accessibilityValue(playbackDuration > 0
+                ? "\(formatTime(currentTime)) of \(formatTime(playbackDuration))"
+                : "Duration not loaded yet")
+            .accessibilityHint("Swipe up or down to move in 5 second steps.")
+            .accessibilityAdjustableAction { direction in
+                let step: TimeInterval = 5
+                let newTime = direction == .increment
+                    ? min(max(playbackDuration, currentTime), currentTime + step)
+                    : max(0, currentTime - step)
+                audioManager.seek(to: newTime)
+            }
+
+            HStack {
+                Text(formatTime(scrubDisplayTime))
+                Spacer()
+                Text(playbackDuration > 0 ? formatTime(playbackDuration) : "--:--")
+            }
+            .font(.caption2.monospacedDigit())
+            .foregroundStyle(.white.opacity(0.55))
+            .accessibilityHidden(true)
+
+            HStack(spacing: 36) {
                 Button {
                     HapticFeedbackManager.shared.lightTap()
-                    print("🟡 Skip backward button tapped")
                     audioManager.skipBackward(seconds: 15)
                 } label: {
                     Image(systemName: "gobackward.15")
-                        .font(.title3)
-                        .foregroundStyle(.white.opacity(0.85))
-                        .frame(width: 40, height: 40)
+                        .font(.body)
+                        .foregroundStyle(.white.opacity(0.9))
+                        .frame(width: 36, height: 32)
                 }
-                .buttonStyle(.microCompression)
-                .contentShape(Circle())
-                
-                // Play/Pause (smaller)
+                .buttonStyle(.plain)
+                .accessibilityLabel("Skip back 15 seconds")
+
                 Button {
                     HapticFeedbackManager.shared.lightTap()
-                    print("🟡 Play/Pause button tapped - isPlaying: \(audioManager.isPlaying)")
                     if audioManager.isPlaying {
                         audioManager.pause()
                     } else {
@@ -1521,27 +2315,27 @@ struct AudioDetailSheet: View {
                     }
                 } label: {
                     Image(systemName: audioManager.isPlaying ? "pause.fill" : "play.fill")
-                        .font(.system(size: 36))
-                        .foregroundStyle(.white.opacity(0.9))
-                        .frame(width: 56, height: 56)
+                        .font(.title3)
+                        .foregroundStyle(.white)
+                        .frame(width: 40, height: 32)
                 }
-                .buttonStyle(.microCompression)
-                .contentShape(Circle())
-                
-                // Skip forward 15s
+                .buttonStyle(.plain)
+                .accessibilityLabel(audioManager.isPlaying ? "Pause" : "Play")
+                .accessibilityHint(audioManager.isPlaying ? "Pauses this recording." : "Plays this recording.")
+
                 Button {
                     HapticFeedbackManager.shared.lightTap()
-                    print("🟡 Skip forward button tapped")
                     audioManager.skipForward(seconds: 15)
                 } label: {
                     Image(systemName: "goforward.15")
-                        .font(.title3)
-                        .foregroundStyle(.white.opacity(0.85))
-                        .frame(width: 40, height: 40)
+                        .font(.body)
+                        .foregroundStyle(.white.opacity(0.9))
+                        .frame(width: 36, height: 32)
                 }
-                .buttonStyle(.microCompression)
-                .contentShape(Circle())
+                .buttonStyle(.plain)
+                .accessibilityLabel("Skip forward 15 seconds")
             }
+            .frame(maxWidth: .infinity)
         }
     }
     
@@ -1549,9 +2343,9 @@ struct AudioDetailSheet: View {
     
     private func loadAudio() {
         guard let audioPath = item.audioPath else { return }
-        // Use item title or filename for lock screen display
         let title = item.title.isEmpty ? nil : item.title
-        audioManager.loadAudio(from: audioPath, title: title)
+        audioManager.loadAudio(from: audioPath, title: title, seedDuration: item.audioDuration)
+        currentTime = audioManager.currentTime
     }
     
     private func startTimer() {
@@ -1594,10 +2388,8 @@ struct AudioDetailSheet: View {
     @MainActor
     private func triggerTranscriptionIfNeeded(audioPath: String) async {
         // Check if transcription already exists
-        guard item.transcription == nil || item.transcription!.isEmpty || 
-              item.transcriptionSegments == nil || item.transcriptionSegments!.isEmpty else {
-            return
-        }
+        let hasText = !(item.transcription?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ?? true)
+        guard !hasText else { return }
         
         await triggerTranscription(audioPath: audioPath, force: false)
     }
@@ -1613,11 +2405,15 @@ struct AudioDetailSheet: View {
                 return
             }
         }
-        // Try to find the audio file (may be in different location)
-        let actualPath = await findAudioFile(originalPath: audioPath) ?? audioPath
+        // Prefer this note's stored path. Filename-only lookup can pick another recording.
+        let actualPath: String
+        if FileManager.default.fileExists(atPath: audioPath) {
+            actualPath = audioPath
+        } else {
+            actualPath = await findAudioFile(originalPath: audioPath) ?? audioPath
+        }
         let audioURL = URL(fileURLWithPath: actualPath)
         
-        // Verify file exists (same file that playback uses — the one that got you to this detail view)
         guard FileManager.default.fileExists(atPath: actualPath) else {
             print("❌ Audio file not found at path: \(actualPath)")
             await MainActor.run {
@@ -1631,8 +2427,7 @@ struct AudioDetailSheet: View {
         let fileSize = (try? FileManager.default.attributesOfItem(atPath: actualPath)[.size] as? Int64) ?? 0
         print("📝 AudioDetailSheet: Using this note’s audio file (same file as playback). Path: \(actualPath), duration: \(durationStr), size: \(fileSize) bytes, ext: \(fileExt)")
         
-        // Update item's audio path if we found it in a different location
-        if actualPath != audioPath {
+        if actualPath != audioPath, !FileManager.default.fileExists(atPath: audioPath) {
             item.audioPath = actualPath
             print("✅ Updated audio path to: \(actualPath)")
         }
@@ -1640,6 +2435,8 @@ struct AudioDetailSheet: View {
         await MainActor.run {
             isTranscribing = true
             transcriptionError = nil
+            lastHeardTime = 0
+            lastHeardAt = Date()
         }
         print("🔄 Starting transcription (Speech framework) for: \(actualPath) (force: \(force))")
         
@@ -1656,12 +2453,22 @@ struct AudioDetailSheet: View {
         }
         
         do {
-            let result = try await transcriptionService.transcribe(audioURL: audioURL)
+            let itemID = item.persistentModelID
+            TranscriptionLiveBoard.items[itemID] = item
+            defer { TranscriptionLiveBoard.items[itemID] = nil }
+            let result = try await transcriptionService.transcribe(audioURL: audioURL) { segments, text in
+                let id = itemID
+                Task { @MainActor in
+                    TranscriptionLiveBoard.publish(id: id, text: text, segments: segments)
+                }
+            }
+            TranscriptionLiveBoard.items[itemID] = nil
             
             await MainActor.run {
                 item.transcription = result.fullText
                 item.transcriptionSegments = result.segments
                 item.modifiedDate = Date()
+                rebuildNotesRows()
                 
                 // Debug: Verify segments before saving
                 print("📝 Saving transcription - segments count: \(result.segments.count)")
@@ -1691,6 +2498,7 @@ struct AudioDetailSheet: View {
                 isTranscribing = false
                 print("✅ Transcription completed - \(result.fullText.count) characters, \(result.segments.count) segments with timestamps")
             }
+            await ensureSummary(force: true)
             
             // Run BPM/key/scale analysis if not already present, then build rhythm map
             if item.bpm == nil {
@@ -1718,12 +2526,19 @@ struct AudioDetailSheet: View {
             await MainActor.run {
                 isTranscribing = false
                 let rawMessage = error.localizedDescription
-                if rawMessage.contains("No speech recognized") {
+                let kept = !(item.transcription?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ?? true)
+                if kept {
+                    transcriptionError = nil
+                    rebuildNotesRows()
+                    flashBanner("Listen stopped. Restart to try the rest.")
+                    print("❌ Transcription stopped with lines kept: \(rawMessage)")
+                } else if rawMessage.contains("No speech recognized") {
                     transcriptionError = rawMessage + "\n\nIf this is music or non‑speech, Speech won’t return text. Use “Analyze BPM only” below for BPM/Key, or try speech-only audio and match device language to the recording."
+                    print("❌ Transcription failed: \(rawMessage)")
                 } else {
                     transcriptionError = rawMessage
+                    print("❌ Transcription failed: \(rawMessage)")
                 }
-                print("❌ Transcription failed: \(rawMessage)")
             }
         }
         
@@ -1924,6 +2739,10 @@ struct AudioDetailSheet: View {
         let appGroupID = "group.com.finaljournal.app"
         let filename = (originalPath as NSString).lastPathComponent
         
+        if fileManager.fileExists(atPath: originalPath) {
+            return originalPath
+        }
+
         // Try App Group container (for files imported via Share Extension)
         if let containerURL = fileManager.containerURL(forSecurityApplicationGroupIdentifier: appGroupID) {
             let appGroupPath = containerURL.appendingPathComponent(filename).path
