@@ -1851,3 +1851,225 @@ On 2026-10-09, 20 confirmed wordplay flips were wired into Play on Words under S
 | Chris Tucker | noun-celeb-chris-tucker | celebs |
 
 58 chips from lines 1-75 queued for photo acquisition in `wordplay-image-queue.md`.
+
+## Wordplay wiring Batch 2 (reused images)
+
+On 2026-10-09, 20 confirmed wordplay flips were wired into Play on Words under Samuel's rule (reusing existing assets across tabs):
+
+| Heard word | Reused Asset | Other Tabs |
+|---|---|---|
+| Marcus Mariota | noun-marcus-mariota | (none) |
+| IHOP | noun-ihop | (shared) |
+| Iraq | noun-iraq | (none) |
+| James Harden | noun-celeb-harden | (none) |
+| Maybach | noun-car-maybach | (shared) |
+| Lil Wayne | noun-artist-wayne | (none) |
+| Kai Cenat | noun-kai-cenat | (shared) |
+| tints | noun-tints | (shared) |
+| lion | noun-lion | (shared) |
+| Kraft Dinner | noun-dinner | (none) |
+| Drake | noun-artist-drake | (shared) |
+| eye | noun-eye | (none) |
+| Prada | noun-prada | (shared) |
+| acorn | noun-acorn | (none) |
+| Kurt Angle | noun-kurt-angle | (shared) |
+| plane | noun-plane | (none) |
+| cell | noun-cell | (none) |
+| Lex Luger | noun-prod-lex-luger | (shared) |
+| Takeoff | noun-celeb-takeoff | (shared) |
+| Coi Leray | noun-celeb-coi-leray | (shared) |
+
+52 chips from lines 76-177 queued for photo acquisition in .
+
+## Wordplay wiring Batch 3 (acquired / generated images)
+
+On 2026-10-09, 20 queued wordplay flips had 1024x1024 images acquired or created and were wired into Play on Words:
+
+| Heard word | Asset Name | Subject / Kind | Other Tabs |
+|---|---|---|---|
+| Chevrolet | noun-car-chevrolet | Chevrolet car photo | (none) |
+| Altima | noun-car-altima | Nissan Altima photo | (none) |
+| Dodge Durango | noun-car-durango | Dodge Durango SUV photo | (none) |
+| paralyzed | noun-phrase-paralyzed | Phrase wordmark | (none) |
+| Hawaii | noun-place-hawaii | Hawaii landscape photo | (shared) |
+| Xbox | noun-game-xbox | Xbox console photo | (shared) |
+| respect the game | noun-phrase-respect-the-game | Phrase wordmark | (none) |
+| Ryan Tannehill | noun-nfl-tannehill | NFL quarterback photo | (none) |
+| wrist taker | noun-phrase-wrist-taker | Phrase wordmark | (none) |
+| Toronto | noun-place-toronto | Toronto skyline photo | (none) |
+| Manhattan | noun-place-manhattan | Manhattan skyline photo | (none) |
+| moose sayin' | noun-phrase-moose-sayin | Phrase wordmark | (none) |
+| diarrhea | noun-phrase-diarrhea | Phrase wordmark | (none) |
+| Cuba Gooding | noun-celeb-cuba-gooding | Actor photo | (none) |
+| Hemi | noun-car-hemi | V8 Hemi engine photo | (none) |
+| Russell Wilson | noun-nfl-russell-wilson | NFL quarterback photo | (none) |
+| Nazi | noun-phrase-nazi | Phrase wordmark | (none) |
+| nuclear bomb | noun-nuclear-bomb | Mushroom cloud photo | (none) |
+| mustard | noun-food-mustard | Mustard bottle photo | (shared) |
+| Raptor | noun-car-raptor | Ford Raptor truck photo | (none) |
+
+## Wordplay wiring Batch 5 (recheck FIXes & newly confirmed lines)
+
+On 2026-10-09, updated  ->  per recheck FIX, wired #169  (replacing Jose Cuervo), and wired 21 newly confirmed flips:
+
+| Heard word | Asset Name | Decision | Other Tabs |
+|---|---|---|---|
+| eyeball | noun-eye | updated_fix | (none) |
+| Quavo | noun-artist-quavo | reused | (shared) |
+| Shaquille O'Neal | noun-celeb-shaq | reused | (none) |
+| Gucci Mane | noun-artist-gucci-mane | reused | (shared) |
+| helicopter | noun-aviation-helicopter | reused | (shared) |
+| steak | noun-steak | reused | (shared) |
+| Robin | noun-comic-robin | created | (none) |
+| Playboi | noun-artist-carti | reused | (none) |
+| cents | noun-coins | reused | (none) |
+| Depp | noun-celeb-johnny-depp | reused | (none) |
+| Cole | noun-artist-j-cole | reused | (none) |
+| Dolce & Gabbana | noun-brand-dolce | created | (none) |
+| Jalen Hurts | noun-nfl-jalen-hurts | created | (none) |
+| Bonnie | noun-celeb-bonnie | created | (none) |
+| Clyde | noun-celeb-clyde | created | (none) |
+| Illinois | noun-place-illinois | created | (none) |
+| saxophone | noun-instrument-saxophone | created | (none) |
+| television | noun-appliance-television | created | (none) |
+| Tracy Morgan | noun-celeb-tracy-morgan | created | (none) |
+| Duke Dennis | noun-streamer-duke-dennis | created | (none) |
+| Fanum | noun-streamer-fanum | created | (none) |
+| Gotham | noun-place-gotham | created | (none) |
+| ICU | noun-place-icu | created | (none) |
+
+## Wordplay wiring Batch 6 (acquired images & wordmarks)
+
+On 2026-10-09, 20 queued wordplay flips had 1024x1024 photos/wordmarks acquired and were wired into Play on Words:
+
+| Heard word | Asset Name | Decision | Other Tabs |
+|---|---|---|---|
+| mow it | noun-phrase-mow-it | created | (none) |
+| with achoo | noun-phrase-with-achoo | created | (none) |
+| Colgate | noun-brand-colgate | created | (none) |
+| fell on knees | noun-phrase-fell-on-knees | created | (none) |
+| kneecap | noun-phrase-kneecap | created | (none) |
+| nails-on | noun-phrase-nails-on | created | (none) |
+| Aleve | noun-brand-aleve | created | (none) |
+| Emmett Till | noun-celeb-emmett-till | created | (none) |
+| Auburn | noun-college-auburn | created | (none) |
+| Crimson Tide | noun-college-crimson-tide | created | (none) |
+| Cam Robinson | noun-nfl-cam-robinson | created | (none) |
+| Zach LaVine | noun-nba-zach-lavine | created | (none) |
+| telescope | noun-science-telescope | created | (none) |
+| Mar-jealous | noun-phrase-mar-jealous | created | (none) |
+| Japan | noun-place-japan | created | (none) |
+| Orlando Magic | noun-nba-orlando-magic | created | (none) |
+| I ate | noun-phrase-i-ate | created | (none) |
+| Washington | noun-place-washington | created | (shared) |
+| insole | noun-phrase-insole | created | (none) |
+| elbow pasta | noun-food-elbow-pasta | created | (none) |
+| linguine | noun-food-linguine | created | wired |
+| Dial | noun-dial-soap | reused | wired |
+| Tone soaps | noun-brand-tone-soap | created | wired |
+| bye-sexual | noun-phrase-bye-sexual | created | wired |
+| Ben Roethlisberger | noun-nfl-ben-roethlisberger | created | wired |
+| Leonard Fournette | noun-nfl-leonard-fournette | created | wired |
+| Tahoe | noun-car-tahoe | created | wired |
+| deaf / hear | noun-phrase-deaf-hear | created | wired |
+| see | noun-phrase-see | created | wired |
+| Dublin | noun-place-dublin | created | wired |
+| Ellen DeGeneres | noun-celeb-ellen-degeneres | created | wired |
+| C-3PO | noun-char-c-3po | created | wired |
+| Amy / AIM me | noun-tech-aim | created | wired |
+| Texas | noun-place-texas | created | wired |
+| VW Passat | noun-car-passat | created | wired |
+| Russian | noun-place-russia | created | wired |
+| Mount Everest | noun-place-mount-everest | created | wired |
+| I'm Baka | noun-serge-ibaka | reused | wired |
+| Jan 1st | noun-phrase-jan-1st | created | wired |
+| blasphemy | noun-phrase-blasphemy | created | wired |
+| lewd behavior | noun-phrase-lewd-behavior | created | wired |
+| Cadillac Escalade | noun-car-escalade | created | wired |
+| flu | noun-phrase-flu | created | wired |
+| meal plan | noun-phrase-meal-plan | created | wired |
+| poppy | noun-plant-poppy | created | wired |
+| Q Dogs | noun-org-q-dogs | created | wired |
+| that's sedate | noun-phrase-thats-sedate | created | wired |
+| bald | noun-bald-head | reused | wired |
+| some oral support | noun-phrase-some-oral-support | created | wired |
+| ate | noun-phrase-ate | created | wired |
+| buy / bi | noun-phrase-buy-bi | created | wired |
+| thoughtful | noun-phrase-thoughtful | created | wired |
+| maid | noun-person-maid | created | wired |
+| dessert | noun-food-dessert | created | wired |
+| Ghost Dog | noun-phrase-ghost-dog | created | wired |
+| write | noun-action-write | created | wired |
+| blew | noun-phrase-blew | created | wired |
+| Pascal Siakam | noun-nba-pascal-siakam | created | wired |
+| Tyrese Maxey | noun-nba-tyrese-maxey | created | wired |
+| SayItAin'tTone | noun-artist-sayitainttone | created | wired |
+| JuddyRemixDem | noun-artist-juddyremixdem | created | wired |
+| Jordan Poole | noun-nba-jordan-poole | created | wired |
+| Billy Ray Cyrus / billion | noun-billy-ray | reused | wired |
+| Hartwell | noun-place-hartwell | created | wired |
+| Dunn Dunn | noun-phrase-dunn-dunn | created | wired |
+| mill | noun-phrase-mill | created | wired |
+| loch | noun-place-loch | created | wired |
+| Leggo my Eggo | noun-phrase-leggo-my-eggo | created | wired |
+| Nina Simone | noun-artist-nina-simone | created | wired |
+| Loyal | noun-phrase-loyal | created | wired |
+| All That | noun-show-all-that | created | wired |
+| not yours | noun-nachos | reused | wired |
+| 6LACK | noun-artist-6lack | created | wired |
+| Jackson | noun-celeb-michael-jackson | reused | wired |
+| con | noun-phrase-con | created | wired |
+| tricks | noun-phrase-tricks | created | wired |
+
+### Batch 10 (2026-10-09)
+
+- **Mayweather** (YoungBoy Never Broke Again - *How I Been*): `noun-celeb-mayweather` (reused)
+- **coughin'** (YoungBoy Never Broke Again - *TTG*): `noun-phrase-coughin` (created)
+- **Scottie Pippen** (YoungBoy Never Broke Again - *Fuck Niggaz*): `noun-celeb-pippen` (reused)
+- **violins** (YoungBoy Never Broke Again - *House Arrest Tingz*): `noun-instrument-violin` (created)
+- **tech** (YoungBoy Never Broke Again - *My Window*): `noun-phrase-tech` (created)
+- **Derrick Rose** (YoungBoy Never Broke Again - *I Forgive Them*): `noun-celeb-d-rose` (reused)
+- **carrots** (YoungBoy Never Broke Again - *My Life I Apologize*): `noun-food-carrots` (created)
+- **Meek Mill** (YoungBoy Never Broke Again - *Big Timerz*): `noun-artist-meek-mill` (created)
+- **Robin's Jeans** (YoungBoy Never Broke Again - *38 Baby*): `noun-robin-jeans` (reused)
+- **Soul Food** (Rick Ross - *Mercy*): `noun-soul-food` (reused)
+- **Waze** (NoCap - *Mistake*): `noun-waze` (reused)
+- **Trix** (Veeze - *Still Tippin*): `noun-food-trix` (created)
+- **pens** (A$AP Mob - *Blowin’ Minds (Skateboard)*): `noun-stationery-pens` (created)
+- **duct** (Lil Uzi Vert - *Vibe**): `noun-tool-duct-tape` (created)
+- **B-A-G** (Lil Wayne - *Uneasy*): `noun-phrase-b-a-g` (created)
+- **war ship** (Lil Wayne - *We Alright*): `noun-vehicle-warship` (created)
+- **muah** (Veeze - *GAIG*): `noun-phrase-muah` (created)
+- **Trojan condoms** (Juice WRLD - *100 Band Jugg Freestyle*): `noun-brand-trojan-condoms` (created)
+- **August Alsina** (Rick Ross - *Certified*): `noun-artist-august-alsina` (created)
+- **Milian** (Lil Wayne - *Senile*): `noun-artist-christina-milian` (created)
+- **liquor** (Lil Yachty - *Knuck If You Buck*): `noun-drink-malt-liquor` (created)
+- **trampoline** (Lil Wayne - *SMUCKERS*): `noun-object-trampoline` (created)
+- **unleashin' them keys** (Rick Ross - *Hands Up*): `noun-phrase-unleashin-them-keys` (created)
+
+### Batch 11 (2026-10-09)
+
+- **James Harden** (Drake - *My Way (Remix)*): `noun-celeb-harden` (reused)
+- **Lil Wayne** (Drake - *2 On / Thotful*): `noun-artist-wayne` (reused)
+- **K. Lamar** (Drake - *Fuckin’ Problems (A$AP Rocky)*): `noun-artist-kendrick` (reused)
+- **André 3000** (Juice WRLD - *Blastoff*): `noun-celeb-andre-3000` (reused)
+- **Nike Air Max** (Juice WRLD - *Arctic Tundra*): `noun-air-max` (reused)
+- **Sanford and Son** (Juice WRLD - *Any Other Way*): `noun-show-sanford-and-son` (created)
+- **Hilary Duff** (Juice WRLD - *Barney’s Freestyle*): `noun-celeb-hilary-duff` (created)
+- **Nutty Buddy** (Juice WRLD - *Challenger (Iron On Me)*): `noun-food-nutty-buddy` (created)
+- **Bill Burr** (Veeze - *Sell Me A Dream / I Don’t Know*): `noun-celeb-bill-burr` (created)
+- **poor pirates** (Veeze - *Old Shit*): `noun-phrase-poor-pirates` (created)
+- **melody** (Drake - *Sh!t (Remix)*): `noun-phrase-melody` (created)
+- **Joe Budden** (Drake - *No Shopping*): `noun-artist-joe-budden` (created)
+- **moneyana** (Drake - *Made Men*): `noun-phrase-moneyana` (created)
+- **why's, why's he** (Drake - *MOTH BALLS*): `noun-phrase-whys-he` (created)
+- **props** (Drake - *Seeing Green*): `noun-phrase-props` (created)
+- **Sauga City** (Drake - *Drama*): `noun-phrase-sauga-city` (created)
+- **fuck Dot** (Drake - *Poetic Justice (Kendrick Lamar)*): `noun-phrase-fuck-dot` (created)
+- **bus it** (Drake - *Round of Applause*): `noun-phrase-bus-it` (created)
+- **cheer** (Drake - *I’m On One*): `noun-phrase-cheer` (created)
+- **beast** (Drake - *Seeing Green*): `noun-phrase-beast` (created)
+- **cheque** (Drake - *2 On / Thotful*): `noun-phrase-cheque` (created)
+- **YM** (Drake - *No Frauds*): `noun-brand-young-money` (created)
+- **Maaly Raw** (Juice WRLD - *Barry Bonds (Lock On)*): `noun-artist-maaly-raw` (created)
+- **tie her** (Juice WRLD - *Autograph V2 (Stem)*): `noun-phrase-tie-her` (created)

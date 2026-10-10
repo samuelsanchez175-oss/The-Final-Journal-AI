@@ -1,0 +1,2472 @@
+#!/usr/bin/env python3
+"""Live board for the Penwork play-on-words harness.
+
+Reads the noun-bank files and Genius click notes. Does not write them.
+The other terminal keeps editing those files; this page refreshes when they change.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+import threading
+import re
+import time
+import unicodedata
+from difflib import SequenceMatcher
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+from urllib.parse import parse_qs, urlparse
+
+ROOT = Path(os.environ.get("PENWORK_ROOT", "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync"))
+SECTIONS = ROOT / "XJournal AI/NounBankSections.swift"
+STORE = ROOT / "XJournal AI/NounBankStore.swift"
+BRIEFS = ROOT / "XJournal AI/NounMentionBrief.swift"
+CATALOG = ROOT / "XJournal AI/NounBankCatalog.swift"
+NOTES_DIR = ROOT / "docs/play-on-words/genius-clicks"
+TAKEOVER_STATUS = ROOT / "docs/play-on-words/takeover-status.json"
+# Wordplay highlights (setup = blue, play = yellow). Read fresh on every /api/highlights request.
+HIGHLIGHTS = ROOT / "docs/play-on-words/wordplay-highlights.jsonl"
+BOARD_PORT = int(os.environ.get("PENWORK_BOARD_PORT", "47321"))
+CLICK_LOGS = {
+    "Drake": NOTES_DIR / "drake.jsonl",
+    "Juice WRLD": NOTES_DIR / "juice wrld.jsonl",
+    "Lil Uzi Vert": NOTES_DIR / "lil uzi vert.jsonl",
+    "NoCap": NOTES_DIR / "nocap.jsonl",
+    "Veeze": NOTES_DIR / "veeze.jsonl",
+}
+ARTIST_ORDER = list(CLICK_LOGS)
+HARNESS_CHAT = Path(
+    "/Users/samuel/.grok/sessions/%2FUsers%2Fsamuel/"
+    "01a10ee9-304b-7e51-aec2-3e4d4542eb7b/chat_history.jsonl"
+)
+
+STOP = {
+    "a", "an", "the", "my", "your", "his", "her", "our", "their", "like",
+    "im", "its", "it", "on", "in", "to", "of", "and", "with", "for", "me",
+    "you", "that", "this", "was", "were", "from", "just", "got", "get",
+}
+SEX = re.compile(
+    r"\b(sex|sexual|condom|orgasm|nude|naked|ejacul\w*|sperm|intercourse|"
+    r"from the rear|rear end|in bed|one night stand)\b",
+    re.I,
+)
+TAG_RE = re.compile(r"<[^>]+>")
+VIEW_RE = re.compile(r"\d+(?:\.\d+)?[KMB]\s*$")
+
+SOUNDEX_MAP = str.maketrans(
+    {
+        **{c: "1" for c in "bfpv"},
+        **{c: "2" for c in "cgjkqsxz"},
+        **{c: "3" for c in "dt"},
+        **{c: "4" for c in "l"},
+        **{c: "5" for c in "mn"},
+        **{c: "6" for c in "r"},
+    }
+)
+
+
+def normalize(word: str) -> str:
+    text = unicodedata.normalize("NFKD", word)
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    text = text.lower().replace("\u2019", "").replace("'", "")
+    text = re.sub(r"[^a-z0-9\s]", " ", text)
+    return " ".join(text.split())
+
+
+def content_tokens(text: str) -> list[str]:
+    return [t for t in normalize(text).split() if t not in STOP and len(t) > 2]
+
+
+def soundex(word: str) -> str:
+    cleaned = re.sub(r"[^a-z]", "", normalize(word))
+    if not cleaned:
+        return ""
+    coded = cleaned[0] + cleaned[1:].translate(SOUNDEX_MAP)
+    squashed = coded[0]
+    for ch in coded[1:]:
+        if ch != squashed[-1] and ch != "0":
+            squashed += ch
+    return (squashed + "000")[:4]
+
+
+def skeleton(word: str) -> str:
+    cleaned = re.sub(r"[^a-z]", "", normalize(word))
+    return re.sub(r"[aeiouy]", "", cleaned)
+
+
+def edit_distance(left: str, right: str) -> int:
+    if abs(len(left) - len(right)) > 2:
+        return 9
+    prev = list(range(len(right) + 1))
+    for i, ca in enumerate(left, 1):
+        cur = [i]
+        for j, cb in enumerate(right, 1):
+            cur.append(min(prev[j] + 1, cur[-1] + 1, prev[j - 1] + (ca != cb)))
+        prev = cur
+    return prev[-1]
+
+
+def sounds_alike(left: str, right: str) -> bool:
+    a = [t for t in content_tokens(left) if len(t) > 2]
+    b = [t for t in content_tokens(right) if len(t) > 2]
+    if not a or not b:
+        return False
+    for x in a:
+        for y in b:
+            if x == y:
+                continue
+            if soundex(x) == soundex(y) and soundex(x):
+                return True
+            if edit_distance(x, y) <= 2:
+                return True
+            sx, sy = skeleton(x), skeleton(y)
+            if len(sx) >= 3 and len(sy) >= 3 and (sx[:3] == sy[:3] or sx in sy or sy in sx):
+                return True
+    return False
+
+
+def swift_strings(block: str) -> list[str]:
+    out: list[str] = []
+    i = 0
+    n = len(block)
+    while i < n:
+        if block[i] != '"':
+            i += 1
+            continue
+        j = i + 1
+        chars: list[str] = []
+        closed = False
+        while j < n:
+            c = block[j]
+            if c == "\\":
+                if j + 1 < n:
+                    chars.append(block[j + 1])
+                    j += 2
+                    continue
+            if c == '"':
+                out.append("".join(chars))
+                i = j + 1
+                closed = True
+                break
+            chars.append(c)
+            j += 1
+        if not closed:
+            break
+    return out
+
+
+def case_block(text: str, name: str) -> str | None:
+    key = f"case .{name}:"
+    i = text.find(key)
+    if i < 0:
+        return None
+    rest = text[i + len(key) :]
+    m = re.search(r"\n        case \.", rest)
+    return rest[: m.start()] if m else rest
+
+
+def parse_sections(text: str) -> list[tuple[str, list[str]]]:
+    block = case_block(text, "wordplay")
+    if block is None:
+        raise ValueError("wordplay case missing in sections")
+    found = []
+    for match in re.finditer(
+        r'NounChipSection\(title:\s*"((?:\\.|[^"\\])*)",\s*words:\s*\[(.*?)\]\s*\)',
+        block,
+        re.S,
+    ):
+        title = match.group(1).replace('\\"', '"')
+        words = swift_strings(match.group(2))
+        if words:
+            found.append((title, words))
+    if not found:
+        raise ValueError("no wordplay sections")
+    return found
+
+
+def parse_store(text: str) -> list[str]:
+    key = "case .wordplay:"
+    start = 0
+    while True:
+        i = text.find(key, start)
+        if i < 0:
+            raise ValueError("wordplay store list missing")
+        rest = text[i + len(key) :]
+        match = re.search(r"\n        case \.", rest)
+        block = rest[: match.start()] if match else rest
+        open_at = block.find("[")
+        close_at = block.rfind("]")
+        if open_at >= 0 and close_at > open_at:
+            words = swift_strings(block[open_at : close_at + 1])
+            if words:
+                return words
+        start = i + len(key)
+
+
+def collection_body(text: str, marker: str) -> str:
+    """Body of a Swift array or dictionary written with square brackets."""
+    i = text.find(marker)
+    if i < 0:
+        raise ValueError(f"missing {marker}")
+    match = re.search(r"=\s*\[", text[i:])
+    if not match:
+        raise ValueError(f"missing collection after {marker}")
+    a = i + match.end() - 1
+    depth = 0
+    in_string = False
+    j = a
+    while j < len(text):
+        char = text[j]
+        if in_string:
+            if char == "\\":
+                j += 2
+                continue
+            if char == '"':
+                in_string = False
+            j += 1
+            continue
+        if char == '"':
+            in_string = True
+            j += 1
+            continue
+        if char == "[":
+            depth += 1
+        elif char == "]":
+            depth -= 1
+            if depth == 0:
+                return text[a + 1 : j]
+        j += 1
+    raise ValueError(f"unclosed collection after {marker}")
+
+
+def parse_pairs(body: str) -> dict[str, list[str]]:
+    """Swift dictionary of string -> string or string -> [string]."""
+    pairs: dict[str, list[str]] = {}
+    i = 0
+    n = len(body)
+    while i < n:
+        if body[i] != '"':
+            i += 1
+            continue
+        key, i = read_swift_string(body, i)
+        while i < n and body[i] in " \t\r\n":
+            i += 1
+        if i >= n or body[i] != ":":
+            continue
+        i += 1
+        while i < n and body[i] in " \t\r\n":
+            i += 1
+        if i < n and body[i] == "[":
+            end = body.find("]", i)
+            if end < 0:
+                break
+            pairs[normalize(key)] = swift_strings(body[i : end + 1])
+            i = end + 1
+        elif i < n and body[i] == '"':
+            value, i = read_swift_string(body, i)
+            pairs[normalize(key)] = [value]
+        else:
+            i += 1
+    return pairs
+
+
+def read_swift_string(text: str, i: int) -> tuple[str, int]:
+    if text[i] != '"':
+        raise ValueError("expected string")
+    j = i + 1
+    chars: list[str] = []
+    while j < len(text):
+        c = text[j]
+        if c == "\\":
+            if j + 1 < len(text):
+                chars.append(text[j + 1])
+                j += 2
+                continue
+        if c == '"':
+            return "".join(chars), j + 1
+        chars.append(c)
+        j += 1
+    raise ValueError("unclosed string")
+
+
+def clean_song(song: str, artist: str) -> str:
+    text = TAG_RE.sub("", song or "")
+    text = text.replace("\u2019", "'")
+    if artist and artist in text:
+        text = text.replace(artist, " ", 1)
+    text = VIEW_RE.sub("", text)
+    text = " ".join(text.split())
+    return text or "Untitled song"
+
+
+def load_notes(paths: list[Path]) -> list[dict]:
+    notes = []
+    for path in paths:
+        if not path.exists():
+            continue
+        with path.open(encoding="utf-8", errors="replace") as handle:
+            for line in handle:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if row.get("type") not in (None, "line"):
+                    continue
+                lyric = row.get("line") or ""
+                meaning = row.get("meaning") or ""
+                artist = row.get("artist") or ""
+                notes.append(
+                    {
+                        "id": str(row.get("annotation_id") or ""),
+                        "artist": artist,
+                        "song": clean_song(row.get("song") or "", artist),
+                        "line": lyric,
+                        "line_norm": normalize(lyric),
+                        "meaning": meaning,
+                        "votes": int(row.get("votes") or 0),
+                        "state": row.get("state") or "",
+                        "strength": row.get("strength") or "",
+                        "url": row.get("url") or "",
+                    }
+                )
+    return notes
+
+
+_PROGRESS_CACHE: dict = {}
+
+
+def _progress_file_key(path: Path):
+    try:
+        st = path.stat()
+    except OSError:
+        return None
+    return (st.st_mtime_ns, st.st_size)
+
+
+def load_artist_progress() -> list[dict]:
+    rows = []
+    logs = dict(CLICK_LOGS)
+    for path in sorted(NOTES_DIR.glob("*.jsonl")):
+        artist = path.stem.replace("-", " ").title()
+        artist = {
+            "juice wrld": "Juice WRLD",
+            "lil uzi vert": "Lil Uzi Vert",
+            "nocap": "NoCap",
+        }.get(path.stem, artist)
+        logs.setdefault(artist, path)
+    ordered = sorted(logs.items(), key=lambda item: (ARTIST_ORDER.index(item[0]) if item[0] in ARTIST_ORDER else 999, item[0]))
+    for artist, path in ordered:
+        rows.append(scan_artist_log(artist, path))
+    return rows
+
+
+def scan_artist_log(artist: str, path: Path) -> dict:
+    """Stats for one genius-clicks log. Re-scanned only when the file's mtime/size changes;
+    a half-written last line is ignored (partial_tail)."""
+    stats = {
+        "artist": artist,
+        "path": str(path.relative_to(ROOT)),
+        "exists": path.exists(),
+        "age": None,
+        "rows": 0,
+        "valid": 0,
+        "invalid": 0,
+        "songs": set(),
+        "opened": set(),
+        "done": 0,
+        "missing": 0,
+        "saved_notes": 0,
+        "second_sense": 0,
+        "not_new": 0,
+        "last_song": "",
+        "last_line": "",
+    }
+    if not path.exists():
+        return stats
+    stats["age"] = time.time() - path.stat().st_mtime
+    file_key = _progress_file_key(path)
+    cached = _PROGRESS_CACHE.get(str(path))
+    if cached and cached[0] == file_key:
+        done_stats = dict(cached[1])
+        done_stats["age"] = stats["age"]
+        return done_stats
+    # One completed line = one point, deduped by artist + song + line.
+    point_keys: set = set()
+    pending_bad = 0  # a bad line only counts as invalid once a good line follows it
+    with path.open(encoding="utf-8", errors="replace") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                pending_bad += 1
+                continue
+            if pending_bad:
+                stats["invalid"] += pending_bad
+                stats["rows"] += pending_bad
+                pending_bad = 0
+            stats["rows"] += 1
+            if not isinstance(row, dict):
+                stats["invalid"] += 1
+                continue
+            if (row.get("type") or "line") == "line" and (row.get("line") or "").strip():
+                point_keys.add((
+                    normalize(row.get("artist") or artist),
+                    normalize(clean_song(row.get("song") or "", row.get("artist") or artist)),
+                    " ".join((row.get("line") or "").lower().split()),
+                ))
+            stats["valid"] += 1
+            song = clean_song(row.get("song") or "", row.get("artist") or artist)
+            if song:
+                stats["songs"].add(song)
+            if row.get("clicked") or ((row.get("type") or "line") == "song" and (row.get("status") or "").lower() == "done"):
+                stats["opened"].add(song)
+            kind = row.get("type") or "line"
+            status = (row.get("click_status") or "").lower()
+            meaning = row.get("meaning") or ""
+            if kind == "song":
+                if status == "done":
+                    stats["done"] += 1
+                elif status == "missing":
+                    stats["missing"] += 1
+            if row.get("second_sense"):
+                stats["second_sense"] += 1
+            if meaning and meaning != "Opened. Not a new chip.":
+                stats["saved_notes"] += 1
+            else:
+                stats["not_new"] += 1
+            stats["last_song"] = song
+            stats["last_line"] = row.get("line") or status or kind
+    total_songs = len(stats["songs"])
+    opened_songs = len(stats["opened"])
+    stats["song_total"] = total_songs
+    stats["opened_songs"] = opened_songs
+    stats["unopened_songs"] = max(total_songs - opened_songs, stats["missing"])
+    stats["pct"] = round((opened_songs / total_songs) * 100) if total_songs else 0
+    stats["status"] = "open" if stats["unopened_songs"] or stats["invalid"] else "done"
+    stats["songs"] = total_songs
+    stats["opened"] = opened_songs
+    stats["points"] = len(point_keys)
+    stats["partial_tail"] = pending_bad  # trailing line still being written; ignored
+    _PROGRESS_CACHE[str(path)] = (file_key, dict(stats))
+    return stats
+
+
+def build_index(notes: list[dict]) -> dict[str, list[int]]:
+    index: dict[str, list[int]] = {}
+    for i, note in enumerate(notes):
+        for token in set(note["line_norm"].split()):
+            if len(token) < 3 or token in STOP:
+                continue
+            index.setdefault(token, []).append(i)
+    return index
+
+
+def best_note(chip_norm: str, brief: str, partners: list[str], notes: list[dict], index: dict[str, list[int]]) -> dict | None:
+    tokens = content_tokens(chip_norm) or [t for t in chip_norm.split() if len(t) > 2]
+    if not tokens:
+        return None
+    lists = []
+    for token in tokens:
+        hits = index.get(token)
+        if hits:
+            lists.append(hits)
+    if not lists:
+        return None
+    lists.sort(key=len)
+    chosen = set(lists[0])
+    for other in lists[1:]:
+        chosen &= set(other)
+        if not chosen:
+            break
+    if not chosen and len(tokens) > 1:
+        longest = max(tokens, key=len)
+        chosen = set(index.get(longest, []))
+    if not chosen:
+        return None
+    senses = [word for word in second_sense(brief) if len(word) >= 4]
+    for partner in partners:
+        senses.extend(token for token in content_tokens(partner) if len(token) >= 4)
+    if senses:
+        preferred = []
+        for i in chosen:
+            blob = notes[i]["line_norm"] + " " + normalize(notes[i]["meaning"])
+            if any(word in blob for word in senses):
+                preferred.append(i)
+        if preferred:
+            chosen = set(preferred)
+        elif len(tokens) == 1:
+            # A lone name with a claimed second word, and no note mentions that word.
+            # Attaching a different bar that only says the name hides the miss.
+            return None
+    phrase = chip_norm
+
+    def rank(i: int) -> tuple:
+        note = notes[i]
+        line_norm = note["line_norm"]
+        phrase_hit = 1 if phrase and phrase in line_norm else 0
+        accepted = 1 if note["strength"] == "accepted" or note["state"] == "accepted" else 0
+        return (phrase_hit, accepted, note["votes"])
+
+    winner = max(chosen, key=rank)
+    if rank(winner)[0] == 0 and len(tokens) > 1:
+        return None
+    return notes[winner]
+
+
+def second_sense(brief: str) -> list[str]:
+    if not brief or "in the line" in brief.lower():
+        return []
+    match = re.match(r"(.+?) is (.+?)(?:\.|$)", brief.strip())
+    if not match:
+        return []
+    return content_tokens(match.group(2))
+
+
+def echo_note(note: dict) -> bool:
+    meaning = normalize(note["meaning"])
+    line = note["line_norm"]
+    if not meaning or not line:
+        return False
+    if meaning == line or meaning in line or line in meaning:
+        return True
+    if SequenceMatcher(None, meaning[:280], line[:280]).ratio() > 0.72:
+        extra = set(content_tokens(meaning)) - set(content_tokens(line))
+        return len(extra) < 2
+    return False
+
+
+def hidden_flip(brief: str) -> str:
+    """The sense that shows up once both halves of the pair are on the line."""
+    text = (brief or "").strip()
+    if not text:
+        return ""
+    sound = re.search(r"sounds like\s+(.+?)(?:\.|$)", text, re.I)
+    if sound:
+        flip = sound.group(1)
+    else:
+        match = re.match(r".+?\bis\b\s+(.+?)(?:\.|$)", text, re.I)
+        if not match:
+            return ""
+        flip = match.group(1)
+        if "in the line" in flip.lower():
+            rest = text[match.end() :].strip()
+            rest = re.sub(r"^[^.]*\bis\b\s+", "", rest, count=1, flags=re.I)
+            return rest.strip(" .")
+    flip = re.sub(r",?\s*said beside\b.*$", "", flip, flags=re.I)
+    return flip.strip(" .")
+
+
+def both_halves_on_line(partners: list[str], note: dict | None) -> bool:
+    if not partners or note is None:
+        return False
+    line = note["line_norm"]
+    for partner in partners:
+        tokens = content_tokens(partner) or [token for token in normalize(partner).split() if len(token) > 2]
+        if tokens and all(token in line for token in tokens):
+            return True
+    return False
+
+
+def classify(chip: str, brief: str, note: dict | None) -> str:
+    text = brief or ""
+    lowered = text.lower()
+    match = re.match(r"(.+?) is (.+?)(?:\.|$)", text.strip())
+    if "sounds like" in lowered or (
+        match and "in the line" not in lowered and (sounds_alike(chip, match.group(2)) or sounds_alike(match.group(1), match.group(2)))
+    ):
+        return "Phonetic"
+    # The sentence is the claim. A Genius note can mention sex while explaining a different flip.
+    if SEX.search(text) or re.search(r"\b(breasts|skeet|condom)\b", lowered):
+        return "Double entendre"
+    if text:
+        return "Double meaning"
+    if note and SEX.search(note["meaning"]):
+        return "Double entendre"
+    return "Play on words"
+
+
+def check_labels(chip_norm: str, brief: str, partners: list[str], note: dict | None, in_store: bool, in_section: bool) -> list[str]:
+    labels = []
+    if in_store != in_section:
+        labels.append("Only in one file")
+    if not brief:
+        labels.append("Missing sentence")
+    if not partners:
+        labels.append("Missing partner")
+    if note is None:
+        labels.append("No Genius note joined")
+    else:
+        if echo_note(note):
+            labels.append("Note repeats the line")
+        weak = note["votes"] <= 0 or note["state"] == "pending" or note["strength"] == "weak"
+        if weak:
+            labels.append("Weak note")
+        senses = second_sense(brief)
+        if senses:
+            meaning = normalize(note["meaning"])
+            line = note["line_norm"]
+            in_note = any(word in meaning.split() or word in meaning for word in senses)
+            in_line = any(word in line.split() for word in senses)
+            if in_note:
+                labels.append("Note names the second sense")
+            elif in_line:
+                labels.append("Bar names the second sense")
+            else:
+                labels.append("Sentence is ahead of the note")
+        elif brief and "in the line" in brief.lower():
+            labels.append("Name half of a pair")
+    if not labels:
+        labels.append("Clean")
+    return labels
+
+
+NEEDS = {
+    "Only in one file",
+    "Missing sentence",
+    "Missing partner",
+    "No Genius note joined",
+    "Note repeats the line",
+    "Weak note",
+    "Sentence is ahead of the note",
+}
+
+
+def harness_snapshot() -> dict:
+    sentence = "The other terminal has not posted a status line yet."
+    batch: list[dict] = []
+    age = None
+    if HARNESS_CHAT.exists():
+        age = time.time() - HARNESS_CHAT.stat().st_mtime
+        texts: list[str] = []
+        with HARNESS_CHAT.open(encoding="utf-8", errors="replace") as handle:
+            for line in handle:
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if row.get("type") == "assistant" and isinstance(row.get("content"), str):
+                    text = row["content"].strip()
+                    if text:
+                        texts.append(text)
+        if texts:
+            sentence = " ".join(texts[-1].split())
+            if len(sentence) > 420:
+                sentence = sentence[:417] + "..."
+            for text in reversed(texts):
+                if "| Chip |" in text or "| chip |" in text.lower():
+                    batch = parse_table(text)
+                    break
+    return {"sentence": sentence, "age": age, "batch": batch}
+
+
+def takeover_snapshot() -> dict:
+    if not TAKEOVER_STATUS.exists():
+        return {
+            "agent": "Codex takeover",
+            "lane": "No active takeover lane",
+            "state": "standby",
+            "detail": "No local takeover status file is present.",
+            "done": 0,
+            "total": 0,
+            "age": None,
+        }
+    try:
+        payload = json.loads(TAKEOVER_STATUS.read_text(encoding="utf-8", errors="replace"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return {
+            "agent": "Codex takeover",
+            "lane": "Status parse error",
+            "state": "blocked",
+            "detail": str(exc),
+            "done": 0,
+            "total": 0,
+            "age": None,
+        }
+    payload["age"] = time.time() - TAKEOVER_STATUS.stat().st_mtime
+    payload.setdefault("done", 0)
+    payload.setdefault("total", 0)
+    payload.setdefault("subagents", [])
+    return payload
+
+
+def load_highlights() -> dict:
+    """Read docs/play-on-words/wordplay-highlights.jsonl at request time."""
+    out = {"ok": True, "path": str(HIGHLIGHTS), "mtime": None, "rows": [], "bad_lines": 0}
+    try:
+        stat = HIGHLIGHTS.stat()
+        out["mtime"] = stat.st_mtime
+        with HIGHLIGHTS.open(encoding="utf-8") as fh:
+            for raw in fh:
+                raw = raw.strip()
+                if not raw:
+                    continue
+                try:
+                    row = json.loads(raw)
+                except json.JSONDecodeError:
+                    out["bad_lines"] += 1
+                    continue
+                if isinstance(row, dict) and row.get("bar"):
+                    out["rows"].append(row)
+    except FileNotFoundError:
+        out["ok"] = False
+        out["error"] = "wordplay-highlights.jsonl not found"
+    except OSError as err:
+        out["ok"] = False
+        out["error"] = str(err)
+    # Confirmed lines from all sources, deduped by artist+song+bar, numbered permanently.
+    confirmed, seen = [], set()
+    extra = []
+    try:
+        extra = _verified_confirmed() + _candidate_confirmed()
+    except Exception as exc:  # never break the section because of a side source
+        out["side_error"] = str(exc)
+    for row in [dict(r, source="highlights") for r in out["rows"] if not _is_possible(r)] + extra:
+        k = confirmed_key(row.get("artist"), row.get("song"), row.get("bar"))
+        if k in seen:
+            continue
+        seen.add(k)
+        confirmed.append(row)
+    confirmed, top = number_confirmed(confirmed)
+    possible = [r for r in out["rows"] if _is_possible(r) and confirmed_key(r.get("artist"), r.get("song"), r.get("bar")) not in seen]
+    out["rows"] = confirmed + possible
+    out["max_seq"] = top
+    out["count"] = len(out["rows"])
+    out["confirmed"] = len(confirmed)
+    out["possible"] = len(possible)
+    out["new"] = sum(1 for r in confirmed if r.get("is_new"))
+    out["sig"] = hashlib.md5(json.dumps(out["rows"], sort_keys=True, default=str).encode("utf-8")).hexdigest()
+    return out
+
+
+VERIFIED_FILE = ROOT / "docs/play-on-words/possible-wordplay-verify/verified.jsonl"
+CONFIRMED_SEQ_FILE = Path(__file__).resolve().parent / "confirmed-seq.json"
+_SEQ_LOCK = threading.Lock()
+_JSONL_CACHE: dict = {}
+
+
+def _read_jsonl_cached(path: Path) -> list:
+    """Tolerant jsonl read, re-parsed only when mtime/size change; a half-written tail is skipped."""
+    key = _progress_file_key(path)
+    if key is None:
+        return []
+    hit = _JSONL_CACHE.get(str(path))
+    if hit and hit[0] == key:
+        return hit[1]
+    rows = []
+    try:
+        with path.open(encoding="utf-8", errors="replace") as fh:
+            for raw in fh:
+                raw = raw.strip()
+                if not raw:
+                    continue
+                try:
+                    row = json.loads(raw)
+                except json.JSONDecodeError:
+                    continue
+                if isinstance(row, dict):
+                    rows.append(row)
+    except OSError:
+        return []
+    _JSONL_CACHE[str(path)] = (key, rows)
+    return rows
+
+
+def confirmed_key(artist: str, song: str, bar: str) -> str:
+    return "|".join([normalize(artist or ""), normalize(song or ""), " ".join((bar or "").lower().split())])
+
+
+def _is_possible(row: dict) -> bool:
+    return str(row.get("list", "")).startswith("possible")
+
+
+def _verified_confirmed() -> list:
+    out = []
+    for r in _read_jsonl_cached(VERIFIED_FILE):
+        if str(r.get("verdict", "")).strip().upper() != "CONFIRMED" or not r.get("bar"):
+            continue
+        sources = r.get("sources") or []
+        url = r.get("url") or r.get("genius_annotation_url") or (sources[0].get("url") if sources and isinstance(sources[0], dict) else None)
+        out.append({
+            "artist": r.get("artist"), "list": "confirmed (verified)", "rank": None, "song": r.get("song"),
+            "bar": r.get("bar"), "setup_spans": r.get("setup_spans") or [], "play_spans": r.get("play_spans") or [],
+            "heard_as": r.get("heard_as"), "note_excerpt": r.get("sound_note") or "", "why_unconfirmed": None,
+            "url": url, "votes": r.get("votes"), "source": "verified", "source_id": r.get("id"),
+        })
+    return out
+
+
+def _candidate_confirmed() -> list:
+    out = []
+    paths = sorted(set(NOTES_DIR.parent.glob("*-candidates.jsonl")) | set(NOTES_DIR.glob("*-candidates.jsonl")))
+    for path in paths:
+        artist_guess = path.name[: -len("-candidates.jsonl")]
+        for r in _read_jsonl_cached(path):
+            if r.get("signal_type") != "sound_flip":
+                continue
+            kept = r.get("kept") is True or str(r.get("status", "")).lower() == "kept" or (
+                "kept" not in r and "reject_reason" in r and not r.get("reject_reason"))
+            plays = r.get("play_spans") or []
+            bar = r.get("vault_line") or r.get("bar") or ""
+            if not kept or not plays or not r.get("setup_spans") or not bar:
+                continue
+            aid = r.get("annotation_id")
+            out.append({
+                "artist": r.get("artist") or artist_guess.title(), "list": "confirmed (candidate)", "rank": None,
+                "song": r.get("song"), "bar": bar, "setup_spans": r.get("setup_spans") or [], "play_spans": plays,
+                "heard_as": r.get("heard_as") or r.get("heard"), "note_excerpt": r.get("note_excerpt") or "",
+                "why_unconfirmed": None, "url": r.get("url") or (f"https://genius.com/{aid}" if aid else None),
+                "votes": r.get("votes"), "source": "candidates:" + path.name, "source_id": aid,
+            })
+    return out
+
+
+def number_confirmed(confirmed: list) -> tuple:
+    """Give every confirmed line a permanent sequence number (confirmed-seq.json).
+    First run seeds the existing highlights rows 1..N in file order; anything later gets max+1."""
+    from datetime import datetime
+    window_start = current_window()[0].timestamp()
+    now = time.time()
+    with _SEQ_LOCK:
+        try:
+            saved = json.loads(CONFIRMED_SEQ_FILE.read_text(encoding="utf-8"))
+            items = saved.get("items") or {}
+        except (OSError, ValueError):
+            saved, items = None, {}
+        seeding = saved is None
+        changed = seeding
+        top = max([v.get("n", 0) for v in items.values()] or [0])
+        for row in confirmed:
+            key = confirmed_key(row.get("artist"), row.get("song"), row.get("bar"))
+            row["key"] = key
+            hit = items.get(key)
+            if hit is None:
+                top += 1
+                old = seeding and row.get("source") == "highlights"
+                hit = items[key] = {
+                    "n": top, "first_seen": 0 if old else now,
+                    "first_seen_at": "seed" if old else datetime.now().astimezone().isoformat(timespec="seconds"),
+                    "source": row.get("source"), "artist": row.get("artist"), "song": row.get("song"),
+                    "annotation": row.get("url"),
+                }
+                changed = True
+            row["seq"] = hit["n"]
+            row["first_seen"] = hit.get("first_seen", 0)
+            row["is_new"] = bool(hit.get("first_seen")) and hit["first_seen"] >= window_start
+        if changed:
+            tmp = CONFIRMED_SEQ_FILE.with_suffix(".json.tmp")
+            try:
+                tmp.write_text(json.dumps({"note": "Permanent confirmed-line numbers. Never renumber.",
+                                           "max": top, "items": items}, indent=1), encoding="utf-8")
+                tmp.replace(CONFIRMED_SEQ_FILE)
+            except OSError:
+                pass
+    confirmed.sort(key=lambda r: -r["seq"])
+    return confirmed, top
+
+
+def parse_table(text: str) -> list[dict]:
+    rows = []
+    for line in text.splitlines():
+        if not line.startswith("|"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 4:
+            continue
+        if cells[0].lower() == "chip" or set(cells[0]) <= {"-", ":"}:
+            continue
+        rows.append(
+            {
+                "chip": cells[0],
+                "partner": cells[1],
+                "song": cells[2],
+                "line": cells[3],
+            }
+        )
+    return rows[-40:]
+
+
+REFRESH_LOCK = threading.Lock()
+CATALOG_DB = ROOT / "tools/bar-hits-catalog/BarHitsCatalog.sqlite"
+CATALOG_CACHE_FILE = Path(__file__).resolve().parent / "catalog-artists.json"
+LANE_CLAIMS = ROOT / "docs/play-on-words/lane-claims"
+ALL_ARTISTS_PROGRESS = ROOT / "docs/play-on-words/all-artists-progress.md"
+MAIN_RUN_ACTIVE_SECONDS = 30 * 60
+_CATALOG = {"key": None, "artists": None, "loading": False, "error": None}
+_CATALOG_LOCK = threading.Lock()
+_PASS_DONE_CACHE: dict = {"key": None, "artists": set()}
+
+
+def _catalog_key():
+    try:
+        st = CATALOG_DB.stat()
+        return [st.st_mtime_ns, st.st_size]
+    except OSError:
+        return None
+
+
+def _load_catalog_worker(key) -> None:
+    import sqlite3
+    try:
+        uri = "file:" + str(CATALOG_DB) + "?mode=ro"
+        con = sqlite3.connect(uri, uri=True, timeout=5)
+        try:
+            rows = con.execute(
+                "select artist, count(distinct song) from bars "
+                "where artist is not null and artist != '' group by artist order by 2 desc, artist"
+            ).fetchall()
+        finally:
+            con.close()
+        artists = [{"artist": a, "songs": int(n)} for a, n in rows]
+        try:
+            tmp = CATALOG_CACHE_FILE.with_suffix(".json.tmp")
+            tmp.write_text(json.dumps({"key": key, "artists": artists}), encoding="utf-8")
+            tmp.replace(CATALOG_CACHE_FILE)
+        except OSError:
+            pass
+        with _CATALOG_LOCK:
+            _CATALOG.update(key=key, artists=artists, loading=False, error=None)
+    except Exception as exc:  # keep the board up even if the catalog can't be read
+        with _CATALOG_LOCK:
+            _CATALOG.update(loading=False, error=str(exc))
+
+
+def catalog_artists():
+    """Distinct artists + distinct song counts from BarHitsCatalog.sqlite (read-only).
+    Cached in memory and in catalog-artists.json; the query runs once, in the background."""
+    key = _catalog_key()
+    with _CATALOG_LOCK:
+        if _CATALOG["artists"] is not None and _CATALOG["key"] == key:
+            return _CATALOG["artists"]
+        if _CATALOG["artists"] is None:
+            try:
+                cached = json.loads(CATALOG_CACHE_FILE.read_text(encoding="utf-8"))
+                if cached.get("key") == key and isinstance(cached.get("artists"), list):
+                    _CATALOG.update(key=key, artists=cached["artists"])
+                    return _CATALOG["artists"]
+            except (OSError, ValueError):
+                pass
+        if key is not None and not _CATALOG["loading"] and _CATALOG["error"] is None:
+            _CATALOG["loading"] = True
+            threading.Thread(target=_load_catalog_worker, args=(key,), daemon=True).start()
+        return _CATALOG["artists"]  # previous list (or None) while loading
+
+
+def _pass_done_artists() -> set:
+    """Artists with a line in all-artists-progress.md (their pass finished)."""
+    key = _progress_file_key(ALL_ARTISTS_PROGRESS)
+    if key == _PASS_DONE_CACHE["key"]:
+        return _PASS_DONE_CACHE["artists"]
+    names = set()
+    try:
+        for line in ALL_ARTISTS_PROGRESS.read_text(encoding="utf-8", errors="replace").splitlines():
+            if not line.startswith("|"):
+                continue
+            cell = line.strip().strip("|").split("|")[0].strip()
+            if not cell or cell.lower() == "artist" or set(cell) <= {"-", ":", " "}:
+                continue
+            names.add(re.sub(r"\s*\[lane\d*\]\s*", "", cell, flags=re.I).strip().lower())
+    except OSError:
+        pass
+    _PASS_DONE_CACHE.update(key=key, artists=names)
+    return names
+
+
+def _lane_claims() -> dict:
+    claims = {}
+    try:
+        for p in LANE_CLAIMS.iterdir():
+            if p.suffix not in (".claim", ".done"):
+                continue
+            who = "lane2"
+            try:
+                first = p.read_text(encoding="utf-8", errors="replace").split()
+                if first:
+                    who = first[0].strip(",;:")
+            except OSError:
+                pass
+            prev = claims.get(p.stem.lower())
+            if prev and prev[0] == ".claim":
+                continue
+            claims[p.stem.lower()] = (p.suffix, who)
+    except OSError:
+        pass
+    return claims
+
+
+def load_roster() -> dict:
+    artists = catalog_artists()
+    if artists is None:
+        return {"ready": False, "error": _CATALOG.get("error"), "rows": []}
+    claims = _lane_claims()
+    pass_done = _pass_done_artists()
+    now = time.time()
+    rows = []
+    for item in artists:
+        artist = item["artist"]
+        vault = item["songs"]
+        path = NOTES_DIR / (artist.lower() + ".jsonl")
+        row = {"artist": artist, "vault_songs": vault, "exists": False, "opened": 0, "points": 0,
+               "lane": None, "mtime": None, "log_born": None}
+        try:
+            st = path.stat()
+            row["exists"] = True
+            row["mtime"] = st.st_mtime
+            row["log_born"] = getattr(st, "st_birthtime", None)
+        except OSError:
+            pass
+        if row["exists"]:
+            stats = scan_artist_log(artist, path)
+            row["opened"] = min(int(stats.get("opened") or 0), vault) if vault else int(stats.get("opened") or 0)
+            row["points"] = int(stats.get("points") or 0)
+        claim = claims.get(artist.lower())
+        if claim and claim[0] == ".claim":
+            row["lane"] = claim[1] or "lane2"
+        row["pct"] = round(row["opened"] / vault * 100, 1) if vault else 0
+        if (vault and row["opened"] >= vault) or (claim and claim[0] == ".done") or artist.lower() in pass_done:
+            row["state"] = "completed"
+        elif row["exists"] or row["lane"]:
+            row["state"] = "in_progress"
+        else:
+            row["state"] = "not_started"
+        rows.append(row)
+    # The main run's current artist: freshest log not claimed by another lane, written recently.
+    live = [r for r in rows if r["exists"] and not r["lane"] and r["mtime"] and now - r["mtime"] < MAIN_RUN_ACTIVE_SECONDS]
+    if live:
+        main = max(live, key=lambda r: r["mtime"])
+        main["lane"] = "main run"
+        if main["state"] == "not_started":
+            main["state"] = "in_progress"
+    order = {"in_progress": 0, "not_started": 1, "completed": 2}
+    rows.sort(key=lambda r: (order[r["state"]], -r["vault_songs"], r["artist"].lower()))
+    for r in rows:
+        r.pop("mtime", None)
+    return {"ready": True, "rows": rows}
+WINDOW_HOURS = 2
+WINDOW_FILE = Path(__file__).resolve().parent / "window-baseline.json"
+try:
+    from zoneinfo import ZoneInfo
+    BOARD_TZ = ZoneInfo("America/New_York")
+except Exception:  # pragma: no cover - fall back to the Mac's local zone (ET)
+    BOARD_TZ = None
+
+
+def _clock_label(dt) -> str:
+    return dt.strftime("%I:%M %p").lstrip("0") + " ET"
+
+
+def current_window():
+    """Start/end of the clock-aligned 2-hour window (00:00, 02:00, ... America/New_York)."""
+    from datetime import datetime, timedelta
+    now = datetime.now(BOARD_TZ) if BOARD_TZ else datetime.now().astimezone()
+    start = now.replace(hour=now.hour - now.hour % WINDOW_HOURS, minute=0, second=0, microsecond=0)
+    end = start + timedelta(hours=WINDOW_HOURS)
+    if BOARD_TZ:  # normalise across DST changes
+        end = end.astimezone(BOARD_TZ)
+    return start, end
+
+
+def apply_window(progress: list[dict], roster: list[dict] | None = None) -> dict:
+    """Attach new_points / new_songs since the window start. Baseline persists in WINDOW_FILE."""
+    start, end = current_window()
+    key = start.isoformat()
+    try:
+        saved = json.loads(WINDOW_FILE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        saved = {}
+    changed = False
+    if saved.get("window_start") != key or not isinstance(saved.get("artists"), dict):
+        saved = {"window_start": key, "window_end": end.isoformat(), "artists": {}}
+        changed = True
+    base = saved["artists"]
+    fresh_window = changed
+    start_ts = start.timestamp()
+    for row, total_key in [(r, "songs") for r in progress] + [(r, "vault_songs") for r in (roster or [])]:
+        if not row.get("exists"):
+            continue
+        b = base.get(row["artist"])
+        if b is None:
+            # A log first seen mid-window that was created after the window began is all new work.
+            born = row.get("log_born")
+            if not fresh_window and born is not None and born >= start_ts:
+                b = {"points": 0, "opened": 0}
+            else:
+                b = {"points": row.get("points", 0), "opened": row.get("opened", 0)}
+            base[row["artist"]] = b
+            changed = True
+        row["new_points"] = max(0, row.get("points", 0) - b.get("points", 0))
+        row["new_songs"] = max(0, min(row.get("opened", 0) - b.get("opened", 0), row.get("opened", 0)))
+        songs = row.get(total_key) or 0
+        row["new_pct"] = round(min(row["new_songs"], songs) / songs * 100, 2) if songs else 0
+        row["base_pct"] = round(max(0, min(row.get("opened", 0), songs) - row["new_songs"]) / songs * 100, 2) if songs else 0
+    if changed:
+        try:
+            tmp = WINDOW_FILE.with_suffix(".json.tmp")
+            tmp.write_text(json.dumps(saved, indent=2), encoding="utf-8")
+            tmp.replace(WINDOW_FILE)
+        except OSError:
+            pass
+    return {
+        "start": key,
+        "end": end.isoformat(),
+        "start_label": _clock_label(start),
+        "end_label": _clock_label(end),
+    }
+NOTE_RELOAD_SECONDS = 30
+
+
+class Board:
+    def __init__(self) -> None:
+        self.gen = 0
+        self.payload: dict = {}
+        self.baseline: set[str] | None = None
+        self.landed: dict[str, float] = {}
+        self.note_cache_key = None
+        self.notes: list[dict] = []
+        self.index: dict[str, list[int]] = {}
+        self.chat_key = None
+        self.chat_info: dict = {"sentence": "", "age": None, "batch": []}
+        self.takeover_info: dict = takeover_snapshot()
+        self.swift_key = None
+        self.notes_loaded_at = 0.0
+
+    def refresh(self) -> dict:
+        if not REFRESH_LOCK.acquire(blocking=not self.payload):
+            return self.payload
+        try:
+            return self._refresh()
+        finally:
+            REFRESH_LOCK.release()
+
+    def _refresh(self) -> dict:
+        progress = [dict(row) for row in load_artist_progress()]
+        roster = load_roster()
+        window = apply_window(progress, roster["rows"])
+        for r in roster["rows"]:
+            r.pop("log_born", None)
+        roster["sig"] = hashlib.md5(json.dumps(roster["rows"], sort_keys=True).encode("utf-8")).hexdigest()
+        roster["counts"] = {k: sum(1 for r in roster["rows"] if r["state"] == k) for k in ("in_progress", "not_started", "completed")}
+        self.roster = roster
+        self.takeover_info = takeover_snapshot()
+        note_key = tuple(
+            (path.name, path.stat().st_mtime if path.exists() else 0)
+            for path in CLICK_LOGS.values()
+        )
+        # Re-index Genius notes at most every NOTE_RELOAD_SECONDS while a log is being
+        # appended to (progress/points above are still read live, from a per-file cache).
+        if note_key != self.note_cache_key and (
+            self.note_cache_key is None or time.time() - self.notes_loaded_at >= NOTE_RELOAD_SECONDS
+        ):
+            self.notes_loaded_at = time.time()
+            self.notes = load_notes(list(CLICK_LOGS.values()))
+            self.index = build_index(self.notes)
+            self.note_cache_key = note_key
+            self.swift_key = None
+
+        chat_key = HARNESS_CHAT.stat().st_mtime if HARNESS_CHAT.exists() else 0
+        if chat_key != self.chat_key:
+            self.chat_info = harness_snapshot()
+            self.chat_key = chat_key
+            self.swift_key = None
+
+        swift_key = tuple(
+            path.stat().st_mtime if path.exists() else 0
+            for path in (SECTIONS, STORE, BRIEFS, CATALOG)
+        )
+        if swift_key == self.swift_key and self.payload:
+            self.payload["harness"]["age"] = self.chat_info.get("age")
+            self.payload["progress"] = progress
+            self.payload["window"] = window
+            self.payload["roster"] = roster
+            self.payload["takeover"] = self.takeover_info
+            self.payload["live"] = self._live()
+            return self.payload
+
+        try:
+            sections = parse_sections(SECTIONS.read_text(encoding="utf-8", errors="replace"))
+            store_words = parse_store(STORE.read_text(encoding="utf-8", errors="replace"))
+            briefs = parse_pairs(collection_body(BRIEFS.read_text(encoding="utf-8", errors="replace"), "private static let wordplay"))
+            partners = parse_pairs(
+                collection_body(CATALOG.read_text(encoding="utf-8", errors="replace"), "private static let mentionPartnerTable")
+            )
+        except (OSError, ValueError) as exc:
+            if self.payload:
+                self.payload["parse_error"] = str(exc)
+                self.payload["live"] = self._live()
+                return self.payload
+            raise
+
+        store_set = {normalize(w) for w in store_words}
+        section_order: list[tuple[str, str]] = []
+        seen = set()
+        for title, words in sections:
+            for word in words:
+                key = normalize(word)
+                if key in seen:
+                    continue
+                seen.add(key)
+                section_order.append((title, word))
+        for word in store_words:
+            key = normalize(word)
+            if key in seen:
+                continue
+            seen.add(key)
+            section_order.append(("In the store only", word))
+
+        if self.baseline is None:
+            self.baseline = set(seen)
+
+        now = time.time()
+        chips = []
+        counts = {
+            "Both on the line": 0,
+            "Partner filed": 0,
+            "Other half missing": 0,
+            "Needs a look": 0,
+        }
+        for title, word in section_order:
+            key = normalize(word)
+            brief = (briefs.get(key) or [""])[0]
+            partner = partners.get(key) or []
+            note = best_note(key, brief, partner, self.notes, self.index)
+            kind = classify(word, brief, note)
+            labels = check_labels(key, brief, partner, note, key in store_set, title != "In the store only")
+            needs = any(label in NEEDS for label in labels)
+            if not partner:
+                pair = "missing"
+                counts["Other half missing"] += 1
+            elif both_halves_on_line(partner, note):
+                pair = "both"
+                counts["Both on the line"] += 1
+            else:
+                pair = "filed"
+                counts["Partner filed"] += 1
+            if needs:
+                counts["Needs a look"] += 1
+            if key not in self.baseline and key not in self.landed:
+                self.landed[key] = now
+            chips.append(
+                {
+                    "chip": word,
+                    "key": key,
+                    "section": title,
+                    "kind": kind,
+                    "pair": pair,
+                    "flip": hidden_flip(brief),
+                    "labels": labels,
+                    "needs": needs,
+                    "brief": brief,
+                    "partner": ", ".join(partner),
+                    "new": key in self.landed,
+                    "landed": self.landed.get(key, 0),
+                    "note": None
+                    if note is None
+                    else {
+                        "artist": note["artist"],
+                        "song": note["song"],
+                        "line": note["line"],
+                        "meaning": note["meaning"][:900],
+                        "votes": note["votes"],
+                        "state": note["state"],
+                        "strength": note["strength"],
+                        "url": note["url"],
+                    },
+                }
+            )
+
+        batch = []
+        by_key = {chip["key"]: chip for chip in chips}
+        for row in self.chat_info.get("batch") or []:
+            key = normalize(row["chip"])
+            filed = by_key.get(key)
+            batch.append({**row, "in_bank": filed is not None, "kind": filed["kind"] if filed else "", "needs": bool(filed and filed["needs"])})
+
+        swift_age = now - max(swift_key)
+        chips_sig = hashlib.md5(json.dumps(chips, sort_keys=True, default=str).encode("utf-8")).hexdigest()
+        self.gen += 1
+        self.payload = {
+            "gen": self.gen,
+            "chips": chips,
+            "chips_sig": chips_sig,
+            "counts": counts,
+            "total": len(chips),
+            "store": len(store_set),
+            "section": sum(len(words) for _, words in sections),
+            "notes": len(self.notes),
+            "just_landed": sum(1 for chip in chips if chip["new"]),
+            "batch": batch,
+            "progress": progress,
+            "window": window,
+            "roster": roster,
+            "takeover": self.takeover_info,
+            "harness": {
+                "name": "Penwork Play on Words Genius Harness",
+                "sentence": self.chat_info.get("sentence") or "",
+                "age": self.chat_info.get("age"),
+                "swift_age": swift_age,
+            },
+            "live": self._live(swift_age),
+            "parse_error": "",
+        }
+        self.swift_key = swift_key
+        return self.payload
+
+    def _live(self, swift_age: float | None = None) -> bool:
+        ages = []
+        if swift_age is not None:
+            ages.append(swift_age)
+        elif self.payload.get("harness", {}).get("swift_age") is not None:
+            ages.append(self.payload["harness"]["swift_age"])
+        chat_age = self.chat_info.get("age")
+        if chat_age is not None:
+            ages.append(chat_age)
+        return any(age < 120 for age in ages)
+
+
+BOARD = Board()
+
+PAGE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word flips</title>
+<style>
+  :root {
+    --bg: #0A0A0C;
+    --surface: #121214;
+    --surface-2: #171719;
+    --line: #2C2C30;
+    --text-main: #EAEAEA;
+    --text-muted: #707075;
+    --amber: #F5A623;
+    --amber-glow: rgba(245, 166, 35, 0.15);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-main);
+    font: 14px/1.45 Inter, "Avenir Next", "Segoe UI", sans-serif;
+  }
+  header {
+    z-index: 2;
+    background: var(--line);
+    display: grid;
+    gap: 1px;
+    padding: 1px;
+  }
+  .topbar,
+  .telemetry,
+  .controls {
+    background: var(--surface);
+    padding: 18px 22px;
+  }
+  .topbar {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
+    gap: 1px;
+    background: var(--line);
+    padding: 1px;
+  }
+  .brand,
+  .terminal-feed {
+    background: var(--surface);
+    padding: 18px 20px;
+  }
+  .eyebrow {
+    color: var(--text-muted);
+    font: 10px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+  h1, h2 {
+    color: var(--text-main);
+    font: 400 18px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    margin: 6px 0 0;
+  }
+  h2 { font-size: 13px; margin: 0 0 10px; }
+  .status { color: var(--text-muted); max-width: 980px; margin: 8px 0 0; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; }
+  .telemetry {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1px;
+    padding: 1px;
+    background: var(--line);
+  }
+  .readout {
+    background: var(--surface);
+    min-height: 118px;
+    padding: 18px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .readout .value {
+    font: 400 clamp(34px, 5vw, 62px)/.95 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    letter-spacing: -0.05em;
+    margin-top: 12px;
+    transition: color .25s ease, text-shadow .25s ease;
+  }
+  .readout.scoring .value {
+    color: var(--amber);
+    text-shadow: 0 0 18px rgba(223, 184, 55, .32);
+  }
+  .readout .unit {
+    color: var(--text-muted);
+    font-size: .32em;
+    letter-spacing: 0;
+    margin-left: 4px;
+  }
+  .readout .caption {
+    color: var(--text-muted);
+    font: 11px/1.4 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    margin-top: 8px;
+  }
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--line);
+    margin-top: 1px;
+  }
+  .lane {
+    background: var(--surface);
+    padding: 16px 18px;
+    min-height: 126px;
+    position: relative;
+    overflow: hidden;
+  }
+  .lane.takeover {
+    background: #1b1b1d;
+    box-shadow: inset 0 0 0 1px rgba(223, 184, 55, .48);
+  }
+  .lane.active-work {
+    animation: activeGlow 2.4s ease-in-out infinite;
+    box-shadow:
+      inset 0 0 0 1px rgba(223, 184, 55, .62),
+      0 0 22px rgba(223, 184, 55, .12);
+  }
+  .lane.active-work .bar span {
+    animation: barPulse 1.8s ease-in-out infinite;
+  }
+  @keyframes activeGlow {
+    0%, 100% {
+      background: #18181a;
+      box-shadow:
+        inset 0 0 0 1px rgba(223, 184, 55, .48),
+        0 0 14px rgba(223, 184, 55, .10);
+    }
+    50% {
+      background: #202024;
+      box-shadow:
+        inset 0 0 0 1px rgba(223, 184, 55, .86),
+        0 0 32px rgba(223, 184, 55, .24);
+    }
+  }
+  @keyframes barPulse {
+    0%, 100% { box-shadow: 0 0 14px rgba(223, 184, 55, .34); }
+    50% { box-shadow: 0 0 28px rgba(223, 184, 55, .72); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .lane.active-work,
+    .lane.active-work .bar span {
+      animation: none;
+    }
+  }
+  .lane-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
+  }
+  .lane-title {
+    font: 400 12px/1.25 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+  }
+  .lane-state {
+    color: var(--amber);
+    font: 10px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+  }
+  .lane .meta { margin-top: 10px; }
+  .points {
+    color: var(--amber);
+    font: 10px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    letter-spacing: .16em;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  .lane.active-work .points::before {
+    content: "+";
+  }
+  button, .pill {
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--text-main);
+    border-radius: 999px;
+    padding: 7px 12px;
+    font: 400 10px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  button.on { border-color: var(--amber); color: var(--amber); }
+  button:hover { background: var(--surface-2); }
+  input {
+    flex: 1;
+    min-width: 180px;
+    background: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 14px;
+    font: 400 12px/1.3 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    letter-spacing: .04em;
+  }
+  .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--text-muted); display: inline-block; margin-right: 10px; vertical-align: middle; }
+  .dot.on { background: var(--amber); box-shadow: 0 0 10px var(--amber); }
+  main {
+    background: var(--line);
+    display: grid;
+    gap: 1px;
+    padding: 1px;
+    margin-top: 1px;
+  }
+  section {
+    background: var(--surface);
+    padding: 20px 22px 24px;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  th {
+    color: var(--text-muted);
+    font: 400 10px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+  }
+  .chip { font: 400 15px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace; letter-spacing: .02em; }
+  .kind, .bad, .ok { color: var(--amber); white-space: nowrap; }
+  .meta { color: var(--text-muted); font-size: 13px; }
+  tr.new td { box-shadow: inset 3px 0 0 var(--amber); }
+  tr { cursor: pointer; }
+  tr:hover td { background: var(--surface-2); }
+  .detail { display: none; background: var(--surface); }
+  tr.open + .detail { display: table-row; }
+  .detail td { padding: 4px 8px 16px 16px; }
+  a { color: var(--amber); }
+  .empty { color: var(--text-muted); padding: 18px 0; }
+  .batch td { font-size: 15px; }
+  .bar {
+    width: min(180px, 100%);
+    height: 7px;
+    background: #242426;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+  .bar { display: flex; }
+  .roster { margin-top: 16px; border-top: 1px solid var(--line); padding-top: 12px; }
+  .roster-list { max-height: 440px; overflow-y: auto; margin-top: 8px; padding-right: 6px; }
+  .roster-group { color: var(--text-muted); font: 10px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace; letter-spacing: .16em; text-transform: uppercase; margin: 12px 0 4px; }
+  .roster-row { padding: 6px 0; border-bottom: 1px solid #1d1d20; }
+  .roster-row .r-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+  .roster-row .r-name { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .roster-row .r-num { color: var(--text-muted); font: 11px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace; white-space: nowrap; }
+  .roster-row .bar { width: 100%; height: 5px; margin-top: 5px; }
+  .roster-row .r-lane { color: #5aa9ff; font: 9px/1 "DM Mono", "JetBrains Mono", Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; border: 1px solid rgba(90,169,255,.5); border-radius: 999px; padding: 2px 6px; margin-left: 6px; }
+  .roster-row .r-lane:empty { display: none; }
+  .roster-row.completed .bar span:first-child { background: #3f7d4f; box-shadow: none; }
+  .roster-row .newnote:empty { display: none; }
+  .bar span.new-work {
+    background: #5aa9ff;
+    box-shadow: 0 0 14px rgba(90, 169, 255, .45);
+    animation: none;
+  }
+  .newnote { color: #5aa9ff; font: 10px/1.3 "DM Mono", "JetBrains Mono", Menlo, monospace; letter-spacing: .06em; margin-top: 6px; min-height: 13px; }
+  .bar span {
+    flex: none;
+    display: block;
+    height: 100%;
+    background: var(--amber);
+    box-shadow: 0 0 18px var(--amber-glow);
+    position: relative;
+    transition: width 1.4s cubic-bezier(.2, .8, .2, 1);
+  }
+  .bar span::after {
+    animation: barScan 1.35s linear infinite;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.45), transparent);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: translateX(-100%);
+  }
+  @keyframes barScan {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  }
+  .watcher td { font-size: 14px; }
+  @media (max-width: 800px) {
+    .topbar, .telemetry, .focus-grid { grid-template-columns: 1fr; }
+    table, thead, tbody, tr, td { display: block; width: 100%; }
+    thead { display: none; }
+    td { border: none; padding: 2px 0 2px 10px; }
+    tr { border-bottom: 1px solid var(--line); padding: 10px 0; }
+    tr.new { box-shadow: inset 3px 0 0 var(--gold); }
+  }
+  /* --- wordplay highlights (additive) --- */
+  #hl-wrap { --su: #5aa9ff; --pl: #ffd84d; --hd: #3ddc84; }
+  #hl-wrap .hl-sub { color: var(--text-muted); margin: 0 0 10px; }
+  #hl-wrap .hl-legend { display: flex; gap: 14px; flex-wrap: wrap; color: var(--text-muted); font-size: 13px; margin: 0 0 6px; }
+  #hl-tabs { margin: 0 0 12px; }
+  .hl-list { display: grid; gap: 10px; }
+  .hl-row { background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .hl-row.possible { border-style: dashed; opacity: .92; }
+  .hl-bar { font: 18px/1.55 Georgia, "Times New Roman", serif; color: var(--text-main); }
+  .hl-bar .su { color: #0b1220; background: var(--su); border-radius: 4px; padding: 0 3px; }
+  .hl-bar .pl { color: #1a1500; background: var(--pl); border-radius: 4px; padding: 0 3px; font-weight: 700; }
+  .hl-legend .su { color: #0b1220; background: var(--su); border-radius: 4px; padding: 0 5px; }
+  .hl-legend .pl { color: #1a1500; background: var(--pl); border-radius: 4px; padding: 0 5px; font-weight: 700; }
+  .hl-heard { margin-top: 6px; }
+  .hl-heard b, .hl-legend .hd { color: #06200f; background: var(--hd); border-radius: 4px; padding: 0 5px; font-weight: 700; }
+  .hl-meta { color: var(--text-muted); font-size: 13px; margin-top: 4px; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; }
+  .hl-meta a { color: var(--su); }
+  .hl-rank { font: 11px/1 "DM Mono", "JetBrains Mono", Menlo, monospace; letter-spacing: .12em; color: var(--amber); }
+  .hl-row.is-new { border-color: rgba(90,169,255,.75); box-shadow: inset 3px 0 0 #5aa9ff; }
+  .hl-new { color: #0b1220; background: #5aa9ff; border-radius: 999px; padding: 1px 7px; font: 700 10px/1.4 "DM Mono", "JetBrains Mono", Menlo, monospace; letter-spacing: .12em; }
+  .hl-seq { font: 13px/1 "DM Mono", "JetBrains Mono", Menlo, monospace; color: var(--amber); letter-spacing: .06em; }
+  .hl-why { color: var(--text-muted); font-size: 13px; margin-top: 4px; font-style: italic; }
+  #hl-wrap details { margin-top: 14px; }
+  #hl-wrap summary { cursor: pointer; color: var(--text-muted); font: 12px/1.4 "DM Mono", "JetBrains Mono", Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <div class="eyebrow">PENWORK / RAP CATALOG</div>
+      <h1><span class="dot" id="dot"></span>WORD_FLIPS</h1>
+      <p class="status" id="status">Reading the pairs…</p>
+      <div class="roster">
+        <div class="eyebrow" id="roster-title">ARTIST ROSTER · loading catalog…</div>
+        <div class="roster-list" id="roster"></div>
+      </div>
+    </div>
+    <div class="terminal-feed">
+      <div class="eyebrow">CURRENT WORK BY TERMINAL / AI</div>
+      <div class="focus-grid" id="focus-lanes"></div>
+    </div>
+  </div>
+  <div class="telemetry" id="telemetry"></div>
+  <div class="controls">
+    <div class="row" id="filters"></div>
+    <div class="row">
+      <input id="q" type="search" placeholder="SEARCH EITHER HALF, FLIP, OR LINE" aria-label="Search the pairs">
+    </div>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>Project watcher</h2>
+    <table>
+      <thead><tr><th>Artist</th><th>Resolved</th><th>Saved notes</th><th>Second sense</th><th>Last touch</th><th>State</th></tr></thead>
+      <tbody id="progress"></tbody>
+    </table>
+  </section>
+  <section id="hl-wrap">
+    <h2>Wordplay highlights</h2>
+    <p class="hl-sub" id="hl-status">Loading wordplay highlights…</p>
+    <div class="hl-legend"><span><span class="su">blue</span> = setup</span><span><span class="pl">yellow</span> = words he plays on</span><span><span class="hd">green</span> = what it becomes</span></div>
+    <div class="row" id="hl-tabs"></div>
+    <div class="hl-list" id="hl-confirmed"></div>
+    <details id="hl-possible-wrap" hidden>
+      <summary id="hl-possible-title">Possible, note doesn't confirm</summary>
+      <div class="hl-list" id="hl-possible"></div>
+    </details>
+  </section>
+  <section id="batch-wrap" hidden>
+    <h2>Last pairs the other terminal reported</h2>
+    <table>
+      <thead><tr><th>Heard</th><th>On the same line</th><th>Song</th><th>Line</th><th>In the bank</th></tr></thead>
+      <tbody id="batch"></tbody>
+    </table>
+  </section>
+  <h2 id="list-title">Pairs</h2>
+  <table>
+    <thead>
+      <tr><th>Heard</th><th>On the same line</th><th>What appears</th><th>The bar</th></tr>
+    </thead>
+    <tbody id="list"></tbody>
+  </table>
+  <p class="empty" id="empty" hidden>Nothing matches this filter.</p>
+</main>
+<script>
+const filters = ["All", "Both on the line", "Partner filed", "Other half missing", "Needs a look"];
+let current = "All";
+let data = null;
+let gen = 0;
+let listSig = "";
+let inFlight = false;
+const scoreMemory = new Map();
+
+const filterRow = document.getElementById("filters");
+filters.forEach(name => {
+  const b = document.createElement("button");
+  b.textContent = name;
+  b.dataset.filter = name;
+  if (name === "All") b.className = "on";
+  b.addEventListener("click", () => {
+    current = name;
+    [...filterRow.querySelectorAll("button")].forEach(x => x.classList.toggle("on", x.dataset.filter === name));
+    paint();
+  });
+  filterRow.appendChild(b);
+});
+document.getElementById("q").addEventListener("input", () => { listSig = ""; paint(); });
+
+function age(seconds) {
+  if (seconds == null) return "unknown";
+  if (seconds < 90) return "just now";
+  const m = Math.round(seconds / 60);
+  if (m < 60) return m + " min ago";
+  return Math.round(m / 60) + " hr ago";
+}
+
+function pad(value, width) {
+  return String(Math.max(0, Number(value) || 0)).padStart(width, "0");
+}
+
+// Counters keep their own displayed value. A counter only moves when its target
+// changes, and "monotonic" counters (line points) never go down on a transient read.
+const counters = new Map();
+function setCounter(key, node, target, width, opts={}) {
+  target = Math.max(0, Number(target) || 0);
+  let c = counters.get(key);
+  if (!c) {
+    c = { node, shown: target, target, width, timer: null, monotonic: !!opts.monotonic, suffix: opts.suffix || "" };
+    counters.set(key, c);
+    node.textContent = pad(target, width) + c.suffix;
+    return;
+  }
+  c.node = node;
+  if (c.monotonic && target < c.target) return;
+  if (target === c.target) return;
+  c.target = target;
+  if (c.timer) return;
+  const host = node.closest(".readout");
+  if (host) host.classList.add("scoring");
+  const stepOnce = () => {
+    if (c.shown === c.target) {
+      c.timer = null;
+      if (host) setTimeout(() => host.classList.remove("scoring"), 280);
+      return;
+    }
+    c.shown += c.shown < c.target ? 1 : -1;   // always +1 / -1 steps, never a jump
+    c.node.textContent = pad(c.shown, c.width) + c.suffix;
+    const gap = Math.abs(c.target - c.shown);
+    c.timer = setTimeout(stepOnce, gap > 60 ? 12 : gap > 15 ? 40 : 110);
+  };
+  c.timer = setTimeout(stepOnce, 0);
+}
+
+function setText(node, text) { if (node.textContent !== text) node.textContent = text; }
+function setClass(node, cls) { if (node.className !== cls) node.className = cls; }
+function setWidth(fill, pct) {
+  const w = Math.max(0, Math.min(100, Number(pct) || 0)) + "%";
+  if (fill.style.width !== w) fill.style.width = w;
+}
+
+const readoutNodes = new Map();
+function readoutNode(key, label, unit) {
+  let r = readoutNodes.get(key);
+  if (r) return r;
+  const cell = document.createElement("div");
+  cell.className = "readout";
+  const eyebrow = document.createElement("div");
+  eyebrow.className = "eyebrow";
+  eyebrow.textContent = label;
+  const val = document.createElement("div");
+  val.className = "value";
+  const num = document.createElement("span");
+  val.appendChild(num);
+  if (unit) {
+    const span = document.createElement("span");
+    span.className = "unit";
+    span.textContent = unit;
+    val.appendChild(span);
+  }
+  const cap = document.createElement("div");
+  cap.className = "caption";
+  cell.append(eyebrow, val, cap);
+  r = { cell, num, cap };
+  readoutNodes.set(key, r);
+  return r;
+}
+function updateReadout(key, label, value, unit, caption, width, opts) {
+  const r = readoutNode(key, label, unit);
+  setText(r.cap, caption || "");
+  setCounter("readout:" + key, r.num, value, width, opts);
+  return r.cell;
+}
+
+const laneNodes = new Map();
+function laneNode(key) {
+  let l = laneNodes.get(key);
+  if (l) return l;
+  const cell = document.createElement("div");
+  const head = document.createElement("div");
+  head.className = "lane-head";
+  const name = document.createElement("div");
+  name.className = "lane-title";
+  const status = document.createElement("div");
+  status.className = "lane-state";
+  head.append(name, status);
+  const meta = document.createElement("div");
+  meta.className = "meta";
+  const points = document.createElement("div");
+  points.className = "points";
+  const bar = document.createElement("div");
+  bar.className = "bar";
+  const fill = document.createElement("span");
+  fill.style.width = "0%";
+  const newFill = document.createElement("span");
+  newFill.className = "new-work";
+  newFill.style.width = "0%";
+  bar.append(fill, newFill);
+  const newNote = document.createElement("div");
+  newNote.className = "newnote";
+  cell.append(head, meta, points, bar, newNote);
+  l = { cell, name, status, meta, points, fill, newFill, newNote };
+  laneNodes.set(key, l);
+  return l;
+}
+// spec: {title, state, body, pct, active, points (line points, artist lanes only)}
+function updateLane(key, spec) {
+  const l = laneNode(key);
+  setClass(l.cell, spec.active ? "lane active-work" : "lane");
+  setText(l.name, spec.title);
+  setText(l.status, spec.state);
+  setText(l.meta, spec.body);
+  if (spec.newPct != null) {
+    setWidth(l.fill, spec.basePct);
+    setWidth(l.newFill, spec.newPct);
+  } else {
+    setWidth(l.fill, spec.pct);
+    setWidth(l.newFill, 0);
+  }
+  setText(l.newNote, spec.newNote || "");
+  if (spec.points != null) {
+    setCounter("lane-pts:" + key, l.points, spec.points, 3, { monotonic: true, suffix: " pts" });
+  } else {
+    setText(l.points, String(Math.round(Math.max(0, Math.min(100, spec.pct || 0)))).padStart(3, "0") + "%");
+  }
+  return l.cell;
+}
+
+// Put `nodes` into `parent` in order, touching only what moved. Existing nodes are
+// reused, so CSS animations and width transitions are not restarted.
+function syncChildren(parent, nodes) {
+  nodes.forEach((node, i) => {
+    if (parent.children[i] !== node) parent.insertBefore(node, parent.children[i] || null);
+  });
+  while (parent.children.length > nodes.length) parent.removeChild(parent.lastElementChild);
+}
+
+const progressRows = new Map();
+function progressRow(artist) {
+  let p = progressRows.get(artist);
+  if (p) return p;
+  const tr = document.createElement("tr");
+  tr.className = "watcher";
+  const a = document.createElement("td");
+  const strong = document.createElement("div");
+  strong.className = "chip";
+  const file = document.createElement("div");
+  file.className = "meta";
+  a.append(strong, file);
+  const opened = document.createElement("td");
+  const openedText = document.createElement("div");
+  const bar = document.createElement("div");
+  bar.className = "bar";
+  const fill = document.createElement("span");
+  fill.style.width = "0%";
+  const newFill = document.createElement("span");
+  newFill.className = "new-work";
+  newFill.style.width = "0%";
+  bar.append(fill, newFill);
+  const newNote = document.createElement("div");
+  newNote.className = "newnote";
+  opened.append(openedText, bar, newNote);
+  const saved = document.createElement("td");
+  const second = document.createElement("td");
+  const last = document.createElement("td");
+  const lastSong = document.createElement("div");
+  const lastLine = document.createElement("div");
+  lastLine.className = "meta";
+  last.append(lastSong, lastLine);
+  const state = document.createElement("td");
+  const stateText = document.createElement("div");
+  const stateNote = document.createElement("div");
+  stateNote.className = "meta";
+  state.append(stateText, stateNote);
+  tr.append(a, opened, saved, second, last, state);
+  p = { tr, strong, file, openedText, fill, newFill, newNote, saved, second, lastSong, lastLine, state, stateText, stateNote };
+  progressRows.set(artist, p);
+  return p;
+}
+
+// Highest line-point count seen per artist this page load (client stays monotonic).
+const pointsHigh = new Map();
+function artistPoints(row) {
+  const prev = pointsHigh.get(row.artist) || 0;
+  const next = Math.max(prev, Number(row.points) || 0);
+  pointsHigh.set(row.artist, next);
+  return next;
+}
+
+function newNoteText(row) {
+  const w = data.window || {};
+  if (!w.start_label) return "";
+  const n = row.new_points || 0;
+  const songs = row.new_songs || 0;
+  return "+" + n + " new line" + (n === 1 ? "" : "s") + (songs ? " · +" + songs + " song" + (songs === 1 ? "" : "s") : "") +
+    " since " + w.start_label + ", resets " + w.end_label.replace(" ET", "");
+}
+
+const rosterNodes = new Map();
+const rosterGroups = new Map();
+let rosterSig = "";
+let rosterRows = [];
+function rosterGroup(state, label) {
+  let g = rosterGroups.get(state);
+  if (!g) {
+    g = document.createElement("div");
+    g.className = "roster-group";
+    rosterGroups.set(state, g);
+  }
+  setText(g, label);
+  return g;
+}
+function rosterRow(artist) {
+  let r = rosterNodes.get(artist);
+  if (r) return r;
+  const el = document.createElement("div");
+  const head = document.createElement("div");
+  head.className = "r-head";
+  const nameWrap = document.createElement("div");
+  nameWrap.className = "r-name";
+  const name = document.createElement("span");
+  const lane = document.createElement("span");
+  lane.className = "r-lane";
+  nameWrap.append(name, lane);
+  const num = document.createElement("div");
+  num.className = "r-num";
+  head.append(nameWrap, num);
+  const bar = document.createElement("div");
+  bar.className = "bar";
+  const fill = document.createElement("span");
+  fill.style.width = "0%";
+  const newFill = document.createElement("span");
+  newFill.className = "new-work";
+  newFill.style.width = "0%";
+  bar.append(fill, newFill);
+  const note = document.createElement("div");
+  note.className = "newnote";
+  el.append(head, bar, note);
+  r = { el, name, lane, num, fill, newFill, note };
+  rosterNodes.set(artist, r);
+  return r;
+}
+function paintRoster() {
+  const roster = data.roster || {};
+  if (roster.rows && roster.sig !== rosterSig) { rosterSig = roster.sig; rosterRows = roster.rows; }
+  const c = roster.counts || {};
+  if (!roster.ready && !rosterRows.length) {
+    setText(document.getElementById("roster-title"), "ARTIST ROSTER · " + (roster.error ? "catalog unavailable: " + roster.error : "loading catalog…"));
+    return;
+  }
+  setText(document.getElementById("roster-title"), "ARTIST ROSTER · " + rosterRows.length + " artists · " + (c.in_progress || 0) + " in progress · " + (c.completed || 0) + " completed");
+  const labels = { in_progress: "In progress", not_started: "Not started", completed: "Completed" };
+  const nodes = [];
+  let lastState = null;
+  rosterRows.forEach(row => {
+    if (row.state !== lastState) {
+      nodes.push(rosterGroup(row.state, labels[row.state] + " · " + (c[row.state] || 0)));
+      lastState = row.state;
+    }
+    const r = rosterRow(row.artist);
+    setClass(r.el, "roster-row " + row.state);
+    setText(r.name, row.artist);
+    setText(r.lane, row.lane || "");
+    setText(r.num, row.opened + "/" + row.vault_songs + " · " + (Math.round(row.pct || 0)) + "%");
+    setWidth(r.fill, row.base_pct != null ? row.base_pct : row.pct);
+    setWidth(r.newFill, row.new_pct || 0);
+    setText(r.note, (row.new_points || row.new_songs) ? newNoteText(row) : "");
+    nodes.push(r.el);
+  });
+  syncChildren(document.getElementById("roster"), nodes);
+}
+
+function paintTop() {
+  if (!data) return;
+  const counts = data.counts || {};
+  const h = data.harness || {};
+  const takeover = data.takeover || {};
+  setClass(document.getElementById("dot"), data.live ? "dot on" : "dot");
+  setText(document.getElementById("status"),
+    (data.live ? "The other terminal is writing. " : "The other terminal is quiet. ") +
+    data.total + " pairs. " +
+    (counts["Both on the line"] || 0) + " show both halves on a bar. " +
+    (counts["Other half missing"] || 0) + " still have no partner. " +
+    "Swift " + age(h.swift_age) + ". " +
+    (h.sentence || ""));
+
+  const progress = data.progress || [];
+  const openArtists = progress.filter(row => row.status !== "done");
+  const avg = progress.length ? Math.round(progress.reduce((sum, row) => sum + (row.pct || 0), 0) / progress.length) : 0;
+  const totalPoints = progress.reduce((sum, row) => sum + artistPoints(row), 0);
+  syncChildren(document.getElementById("telemetry"), [
+    updateReadout("pairs", "PAIRS FILED", data.total, "", (counts["Both on the line"] || 0) + " confirmed bars", 4),
+    updateReadout("notes", "NOTE INDEX", data.notes, "", "Genius community notes loaded", 5),
+    updateReadout("points", "LINE POINTS", totalPoints, "", "+1 per completed line (artist+song+line)", 5, { monotonic: true }),
+    updateReadout("open-lanes", "OPEN LANES", openArtists.length, "", progress.length + " artist logs watched", 2),
+    updateReadout("catalog-avg", "CATALOG AVG", avg, "%", "Resolved-song progress", 3)
+  ]);
+
+  const priority = {"Drake": 0, "Veeze": 1};
+  const activeArtists = [...openArtists].sort((a, b) => (priority[a.artist] ?? 10) - (priority[b.artist] ?? 10) || b.unopened_songs - a.unopened_songs || a.artist.localeCompare(b.artist));
+  const takeoverPct = takeover.total ? Math.round(((takeover.done || 0) / takeover.total) * 100) : 0;
+  const lanes = [
+    updateLane("takeover", { title: (takeover.agent || "CODEX TAKEOVER").toUpperCase(), state: (takeover.state || "standby").toUpperCase(), body: (takeover.lane || "No active lane") + " · " + (takeover.detail || ""), pct: takeoverPct, active: takeover.state === "active" }),
+    ...(takeover.subagents || []).slice(0, 3).map((agent, i) =>
+      updateLane("sub:" + (agent.name || i), { title: (agent.name || "SUBAGENT").toUpperCase(), state: (agent.state || "active").toUpperCase(), body: (agent.lane || "Working") + " · " + (agent.detail || ""), pct: agent.pct || 45, active: (agent.state || "active") === "active" })),
+    updateLane("watcher", { title: "CODEX WATCHER", state: data.live ? "LIVE" : "STANDBY", body: "This page is reading Swift, note logs, and chip state every tick.", pct: data.live ? 100 : 30, active: false }),
+    updateLane("harness", { title: "GROK HARNESS", state: h.age == null ? "NO SIGNAL" : age(h.age).toUpperCase(), body: h.sentence || "No terminal status line has been posted.", pct: h.age != null && h.age < 120 ? 100 : 35, active: false }),
+    ...activeArtists.slice(0, 3).map(row => updateLane("artist:" + row.artist, { title: row.artist + " LOG", state: row.status.toUpperCase(), body: row.opened + " of " + row.songs + " songs resolved · " + row.unopened_songs + " missing · last: " + (row.last_song || "none"), pct: row.pct, basePct: row.base_pct, newPct: row.new_pct, newNote: newNoteText(row), active: row.status !== "done", points: artistPoints(row) }))
+  ];
+  syncChildren(document.getElementById("focus-lanes"), lanes);
+
+  paintRoster();
+
+  const progressBody = document.getElementById("progress");
+  syncChildren(progressBody, progress.map(row => {
+    const p = progressRow(row.artist);
+    setText(p.strong, row.artist);
+    setText(p.file, row.path);
+    setText(p.openedText, row.opened + " / " + row.songs + " resolved · " + row.pct + "% · " + artistPoints(row) + " line pts");
+    setWidth(p.fill, row.base_pct != null ? row.base_pct : row.pct);
+    setWidth(p.newFill, row.new_pct || 0);
+    setText(p.newNote, newNoteText(row));
+    setText(p.saved, String(row.saved_notes || 0));
+    setText(p.second, String(row.second_sense || 0));
+    setText(p.lastSong, row.last_song || "No log yet");
+    setText(p.lastLine, row.last_line || "");
+    const stale = row.age == null ? "unknown" : age(row.age);
+    setText(p.stateText, row.status === "done" ? "Done · " + stale : "Open · " + stale);
+    setClass(p.state, row.status === "done" ? "ok" : "bad");
+    setText(p.stateNote, row.invalid ? row.invalid + " partial line" + (row.invalid === 1 ? "" : "s") + " ignored" : "");
+    return p.tr;
+  }));
+}
+
+function paint() {
+  if (!data) return;
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const counts = data.counts || {};
+  [...filterRow.querySelectorAll("button")].forEach(b => {
+    const name = b.dataset.filter;
+    const n = name === "All" ? data.total : (name === "Needs a look" ? counts["Needs a look"] : counts[name] || 0);
+    b.textContent = name + " " + n;
+  });
+  paintTop();
+
+  const batch = data.batch || [];
+  document.getElementById("batch-wrap").hidden = batch.length === 0;
+  const batchBody = document.getElementById("batch");
+  batchBody.replaceChildren();
+  batch.forEach(row => {
+    const tr = document.createElement("tr");
+    [row.chip, row.partner, row.song, row.line, row.in_bank ? "Filed" : "Not in the bank yet"].forEach((text, i) => {
+      const td = document.createElement("td");
+      td.textContent = text;
+      if (i === 4) td.className = row.in_bank ? "ok" : "bad";
+      tr.appendChild(td);
+    });
+    batchBody.appendChild(tr);
+  });
+
+  if (listSig === data.chips_sig + "|" + current + "|" + q) return;
+  listSig = data.chips_sig + "|" + current + "|" + q;
+  const list = document.getElementById("list");
+  list.replaceChildren();
+  const pairName = { both: "Both on the line", filed: "Partner filed", missing: "Other half missing" };
+  const rows = data.chips.filter(chip => {
+    if (current === "Needs a look" && !chip.needs) return false;
+    if (current !== "All" && current !== "Needs a look" && pairName[chip.pair] !== current) return false;
+    if (!q) return true;
+    const blob = [chip.chip, chip.partner, chip.flip, chip.brief, ...(chip.labels || []),
+      chip.note ? chip.note.song : "", chip.note ? chip.note.line : "", chip.note ? chip.note.meaning : ""
+    ].join(" ").toLowerCase();
+    return blob.includes(q);
+  });
+  rows.sort((a, b) => Number(b.new) - Number(a.new) || Number(a.pair === "missing") - Number(b.pair === "missing") || a.chip.localeCompare(b.chip));
+  document.getElementById("list-title").textContent = current === "All" ? "Heard, then the other half, then the flip" : current;
+  document.getElementById("empty").hidden = rows.length !== 0;
+  rows.forEach(chip => {
+    const tr = document.createElement("tr");
+    if (chip.new) tr.className = "new";
+    const good = new Set(["Clean", "Note names the second sense", "Bar names the second sense", "Name half of a pair"]);
+    const labels = (chip.labels || []).filter(x => x !== "Clean" && !good.has(x));
+    addCell(tr, chip.chip, "chip");
+    const partnerCell = document.createElement("td");
+    partnerCell.textContent = chip.partner || "No partner yet";
+    partnerCell.className = chip.pair === "missing" ? "bad" : "kind";
+    tr.appendChild(partnerCell);
+    addCell(tr, chip.flip || "—", "chip");
+    const td = document.createElement("td");
+    const song = chip.note ? (chip.note.artist + " · " + chip.note.song) : "No bar joined yet";
+    const s = document.createElement("div");
+    s.textContent = song;
+    const l = document.createElement("div");
+    l.className = "meta";
+    l.textContent = chip.note ? chip.note.line : "";
+    const flag = document.createElement("div");
+    flag.className = chip.pair === "both" ? "ok" : (chip.pair === "missing" ? "bad" : "meta");
+    const pairLabel = chip.pair === "both" ? "Both words are on this bar" : (chip.pair === "missing" ? "The other half is not filed" : "Partner is filed");
+    flag.textContent = [pairLabel, ...labels].join(" · ");
+    td.append(s, l, flag);
+    tr.appendChild(td);
+    tr.addEventListener("click", () => tr.classList.toggle("open"));
+    const detail = document.createElement("tr");
+    detail.className = "detail";
+    const cell = document.createElement("td");
+    cell.colSpan = 4;
+    const brief = document.createElement("div");
+    brief.textContent = chip.brief ? ("Sentence: " + chip.brief) : "No sentence filed for this chip.";
+    cell.appendChild(brief);
+    if (chip.note) {
+      const note = document.createElement("div");
+      note.textContent = "Genius (" + chip.note.votes + " votes, " + (chip.note.strength || chip.note.state || "unrated") + "): " + chip.note.meaning;
+      cell.appendChild(note);
+      if (chip.note.url) {
+        const a = document.createElement("a");
+        a.href = chip.note.url;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.textContent = "Open the Genius note";
+        cell.appendChild(document.createElement("div")).appendChild(a);
+      }
+    }
+    detail.appendChild(cell);
+    list.append(tr, detail);
+  });
+}
+
+function addCell(tr, text, cls) {
+  const td = document.createElement("td");
+  td.textContent = text;
+  if (cls) td.className = cls;
+  tr.appendChild(td);
+}
+
+async function tick() {
+  if (inFlight) return;              // never let two polls race / land out of order
+  inFlight = true;
+  try {
+    const res = await fetch("/api/state?gen=" + gen + "&rsig=" + encodeURIComponent(rosterSig), { cache: "no-store" });
+    const body = await res.json();
+    if (!body.unchanged) {
+      if (body.gen < gen) return;    // stale payload from an older refresh
+      gen = body.gen;
+      data = body;
+      paint();
+    } else if (data) {
+      data.live = body.live;
+      if (body.progress) data.progress = body.progress;
+      if (body.window) data.window = body.window;
+      if (body.roster) data.roster = body.roster;
+      if (body.takeover) data.takeover = body.takeover;
+      if (data.harness) data.harness.age = body.harness_age;
+      paintTop();                    // in-place update only
+    }
+  } catch (err) {
+    document.getElementById("status").textContent = "The board lost the local page. Refresh.";
+    document.getElementById("dot").className = "dot";
+  } finally {
+    inFlight = false;
+  }
+}
+tick();
+setInterval(tick, 2000);
+
+// --- wordplay highlights (additive; separate endpoint, read live from jsonl) ---
+let hlData = null;
+let hlMtime = null;
+let hlArtist = "All";
+function hlBar(bar, setupSpans, playSpans) {
+  const frag = document.createDocumentFragment();
+  const spans = [];
+  (setupSpans || []).forEach(s => spans.push({start: s.start, end: s.end, cls: "su", heard: null}));
+  (playSpans || []).forEach(s => spans.push({start: s.start, end: s.end, cls: "pl", heard: s.heard}));
+  spans.sort((a, b) => a.start - b.start || b.end - a.end);
+  let pos = 0;
+  spans.forEach(sp => {
+    if (sp.start == null || sp.end == null || sp.start < pos || sp.end > bar.length) return;
+    if (sp.start > pos) frag.appendChild(document.createTextNode(bar.slice(pos, sp.start)));
+    const el = document.createElement("span");
+    el.className = sp.cls;
+    el.textContent = bar.slice(sp.start, sp.end);
+    el.title = sp.cls === "su" ? "setup" : ("play" + (sp.heard ? " → " + sp.heard : ""));
+    frag.appendChild(el);
+    pos = sp.end;
+  });
+  if (pos < bar.length) frag.appendChild(document.createTextNode(bar.slice(pos)));
+  return frag;
+}
+function hlRow(row, possible) {
+  const card = document.createElement("div");
+  card.className = possible ? "hl-row possible" : (row.is_new ? "hl-row is-new" : "hl-row");
+  const b = document.createElement("div");
+  b.className = "hl-bar";
+  b.appendChild(hlBar(row.bar || "", row.setup_spans, row.play_spans));
+  const heard = document.createElement("div");
+  heard.className = "hl-heard";
+  heard.append("Heard as: ");
+  const hb = document.createElement("b");
+  hb.textContent = row.heard_as || "—";
+  heard.appendChild(hb);
+  const meta = document.createElement("div");
+  meta.className = "hl-meta";
+  if (!possible && row.seq != null) {
+    const n = document.createElement("span");
+    n.className = "hl-seq";
+    n.textContent = "#" + row.seq;
+    meta.appendChild(n);
+    if (row.is_new) {
+      const nb = document.createElement("span");
+      nb.className = "hl-new";
+      nb.textContent = "NEW";
+      meta.appendChild(nb);
+    }
+  }
+  if (row.rank != null || possible || (row.list || "").startsWith("confirmed (")) {
+    const r = document.createElement("span");
+    r.className = "hl-rank";
+    r.textContent = possible ? "POSSIBLE" : (row.list === "ranked" ? "rank " + row.rank : (row.list === "honorable mention" ? "HM" : row.list.slice(11, -1)));
+    meta.appendChild(r);
+  }
+  const who = document.createElement("span");
+  who.textContent = (row.artist || "") + " · " + (row.song || "");
+  meta.appendChild(who);
+  if (!(row.setup_spans || []).length) {
+    const ns = document.createElement("span");
+    ns.textContent = "no setup word";
+    meta.appendChild(ns);
+  }
+  if (row.votes != null) {
+    const v = document.createElement("span");
+    v.textContent = row.votes + " votes";
+    meta.appendChild(v);
+  }
+  if (row.url) {
+    const a = document.createElement("a");
+    a.href = row.url;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.textContent = "Genius annotation";
+    meta.appendChild(a);
+  }
+  card.append(b, heard, meta);
+  if (possible && row.why_unconfirmed) {
+    const w = document.createElement("div");
+    w.className = "hl-why";
+    w.textContent = "Why unconfirmed: " + row.why_unconfirmed;
+    card.appendChild(w);
+  }
+  return card;
+}
+// Keyed, in-place rendering: each confirmed line's card is built once (keyed by its permanent
+// number) and only moved/inserted; a new line is inserted at the top without rebuilding the list.
+const hlNodes = new Map();      // "c:<seq>" or "p:<key>" -> {el, sig}
+const hlHeads = new Map();
+const hlTabNodes = new Map();
+function hlCard(row, possible) {
+  const id = (possible ? "p:" : "c:") + (possible ? (row.artist + "|" + row.song + "|" + row.bar) : row.seq);
+  const sig = JSON.stringify([row.bar, row.setup_spans, row.play_spans, row.heard_as, row.url, row.votes, row.is_new, row.list, row.rank]);
+  const hit = hlNodes.get(id);
+  if (hit && hit.sig === sig) return hit.el;
+  const el = hlRow(row, possible);
+  if (hit && hit.el.parentNode) hit.el.parentNode.replaceChild(el, hit.el);
+  hlNodes.set(id, { el, sig });
+  return el;
+}
+function hlHead(artist, text) {
+  let h = hlHeads.get(artist);
+  if (!h) {
+    h = document.createElement("div");
+    h.className = "eyebrow";
+    h.style.margin = "10px 0 0";
+    hlHeads.set(artist, h);
+  }
+  setText(h, text);
+  return h;
+}
+function hlPaint() {
+  if (!hlData) return;
+  const rows = hlData.rows || [];
+  const isPossible = r => String(r.list || "").startsWith("possible");
+  const confirmedAll = rows.filter(r => !isPossible(r)).sort((a, b) => b.seq - a.seq);
+  // artist order = most recent confirmed line first, so the newest line is at the very top
+  const artists = [];
+  confirmedAll.forEach(r => { if (r.artist && !artists.includes(r.artist)) artists.push(r.artist); });
+  rows.forEach(r => { if (r.artist && !artists.includes(r.artist)) artists.push(r.artist); });
+  if (hlArtist !== "All" && !artists.includes(hlArtist)) hlArtist = "All";
+  const tabs = document.getElementById("hl-tabs");
+  syncChildren(tabs, ["All", ...artists].map(name => {
+    let btn = hlTabNodes.get(name);
+    if (!btn) {
+      btn = document.createElement("button");
+      btn.addEventListener("click", () => { hlArtist = name; hlPaint(); });
+      hlTabNodes.set(name, btn);
+    }
+    const n = name === "All" ? rows.length : rows.filter(r => r.artist === name).length;
+    setText(btn, name + " " + n);
+    setClass(btn, name === hlArtist ? "on" : "");
+    return btn;
+  }));
+  const pick = r => hlArtist === "All" || r.artist === hlArtist;
+  const confirmed = confirmedAll.filter(pick);
+  const nodes = [];
+  if (hlArtist === "All") {
+    artists.forEach(a => {
+      const mine = confirmed.filter(r => r.artist === a);
+      if (!mine.length) return;
+      const fresh = mine.filter(r => r.is_new).length;
+      nodes.push(hlHead(a, a + " · " + mine.length + " confirmed" + (fresh ? " · " + fresh + " new" : "")));
+      mine.forEach(r => nodes.push(hlCard(r, false)));
+    });
+  } else {
+    confirmed.forEach(r => nodes.push(hlCard(r, false)));
+  }
+  syncChildren(document.getElementById("hl-confirmed"), nodes);
+  const possible = rows.filter(r => isPossible(r) && pick(r));
+  syncChildren(document.getElementById("hl-possible"), possible.map(r => hlCard(r, true)));
+  document.getElementById("hl-possible-wrap").hidden = possible.length === 0;
+  setText(document.getElementById("hl-possible-title"), "Possible, note doesn't confirm (" + possible.length + ")");
+  setText(document.getElementById("hl-status"), hlData.ok
+    ? ((hlData.confirmed || 0) + " confirmed (#1–#" + (hlData.max_seq || 0) + ", newest first" + (hlData.new ? ", " + hlData.new + " new this window" : "") + ") · " + (hlData.possible || 0) + " possible (collapsed). Live from wordplay-highlights.jsonl + verified.jsonl + kept sound-flip candidates.")
+    : ("Highlights file unavailable: " + (hlData.error || "unknown error")));
+}
+let hlInFlight = false;
+let hlSig = null;
+async function hlTick() {
+  if (hlInFlight) return;
+  hlInFlight = true;
+  try {
+    const res = await fetch("/api/highlights", { cache: "no-store" });
+    const body = await res.json();
+    if (hlData === null || body.sig !== hlSig || body.ok !== hlData.ok) {
+      hlSig = body.sig;
+      hlMtime = body.mtime;
+      hlData = body;
+      hlPaint();
+    }
+  } catch (err) {
+    document.getElementById("hl-status").textContent = "Could not reach /api/highlights.";
+  } finally {
+    hlInFlight = false;
+  }
+}
+hlTick();
+setInterval(hlTick, 5000);
+</script>
+</body>
+</html>
+"""
+
+
+class Handler(BaseHTTPRequestHandler):
+    def log_message(self, fmt: str, *args) -> None:
+        return
+
+    def do_GET(self) -> None:  # noqa: N802
+        parsed = urlparse(self.path)
+        if parsed.path in ("/", "/index.html"):
+            body = PAGE.encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        if parsed.path == "/api/health":
+            payload = {"ok": True}
+            raw = json.dumps(payload).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(raw)))
+            self.end_headers()
+            self.wfile.write(raw)
+            return
+        if parsed.path == "/api/state":
+            state = BOARD.refresh()
+            query = parse_qs(parsed.query)
+            client_gen = query.get("gen", ["0"])[0]
+            client_rsig = query.get("rsig", [""])[0]
+            roster_out = state.get("roster") or {}
+            if client_rsig and client_rsig == roster_out.get("sig"):
+                roster_out = {k: v for k, v in roster_out.items() if k != "rows"}
+                roster_out["unchanged"] = True
+            if client_gen.isdigit() and int(client_gen) == state["gen"] and state["gen"] != 0:
+                raw = json.dumps({
+                    "unchanged": True,
+                    "gen": state["gen"],
+                    "live": state["live"],
+                    "progress": state.get("progress", []),
+                    "window": state.get("window", {}),
+                    "roster": roster_out,
+                    "takeover": state.get("takeover", {}),
+                    "harness_age": (state.get("harness") or {}).get("age"),
+                }).encode("utf-8")
+            else:
+                raw = json.dumps({"unchanged": False, **state, "roster": roster_out}).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(raw)))
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            self.wfile.write(raw)
+            return
+        if parsed.path == "/api/highlights":
+            raw = json.dumps(load_highlights()).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(raw)))
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            self.wfile.write(raw)
+            return
+        self.send_response(404)
+        self.end_headers()
+
+
+def main() -> None:
+    server = ThreadingHTTPServer(("127.0.0.1", BOARD_PORT), Handler)
+    print(f"PLAY_ON_WORDS_BOARD http://127.0.0.1:{BOARD_PORT}", flush=True)
+    server.serve_forever()
+
+
+if __name__ == "__main__":
+    main()

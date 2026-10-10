@@ -1,0 +1,35 @@
+# DJ Snake, line by line
+
+Each row is a highlighted Genius line that was clicked.
+The meaning is the community note that opened.
+A line with no highlight is listed as no note.
+
+Songs finished: 2 of 2.
+
+| song | line | community meaning | second sense | Genius | votes | state |
+| --- | --- | --- | --- | --- | --- | --- |
+| Enzo | Drop Top Wop is a convert (Wop) | Droptopwop is the name of Gucci Mane’s 2017 collab album with rapper and producer Metro Boomin.    ”Drop top” is also slang for a convertible car. | yes | 17904280 | 4 | accepted |
+| Enzo | So icy my whole career (It’s Gucci) | “Icy” is one of Gucci Mane’s early success, a famous single produced by Gucci’s frequent collaborator Zaytoven released in 2005. On the song, Guwop raps:  All these girls excited O | yes | 17429758 | 9 | accepted |
+| Enzo | Hit her from the back one time, didn’t call That’s a hit and run, bitch, call GEICO (21) | The Government Employees Insurance Company, or GEICO, is the world’s second largest auto insurance company after State Farm.  21 previously rapped about the insurance company on hi | yes | 17140737 | 10 | accepted |
+| Enzo | Richard Mille cost me a ’rari (And what?) | Richard Mille is a Swiss luxury watch brand founded by Richard Mille and Dominique Guenat in 2001. These luxury watches can cost as little as $70,000 to the $2.5 million sapphire t | yes | 17224469 | 9 | accepted |
+| Enzo | I’m dunkin’ on’ your bitch like Tim bro (Free throw) | Savage alludes to basketball player Tim Duncan and plays on his last name through the word “dunkin”, claiming he will “dunk” on your bitch the same way Duncan would. | yes | 17198814 | 8 | accepted |
+| Enzo | Got a couple hits, but he ain’t right though (You cappin’) | This line was first transcribed on here as “but he ain’t write though,” but the correct word is more likely the homonym, “right.” Michael Jackson is recognized as not only a perfor | yes | 17198518 | 4 | accepted |
+| Enzo | Suicidal doors got me flier than a bird (Flier) | Made popular by models like the early Lincoln Continental and Ford Thunderbird, suicide doors open opposite the way normal vehicle doors open.  Dave Brownell, former editor of Hemm | yes | 17043615 | 11 | accepted |
+| Enzo | Panamera 911 off-white verge (Off-white) | The Porsche Panamera is Porsche’s full-size luxury sedan. They started production in 2009 and have gone through various generations and styles. With some of the higher end models s | yes | 17043544 | 14 | accepted |
+| Enzo | I just want to cop me a Diablo (Diablo) | 21 Savage refers to the Lamborghini Diablo, which is an expensive sports car, that was initially designed in 1990.  Although 21 does not currently have one, he has talked about his | yes | 17036840 | 20 | accepted |
+| Enzo | But I got a whole lotta M’s though (Racks) Bitch, you wasn’t with me shootin’ in the gym ho (No cap) | On “Stay Schemin,” both Drake and Rick Ross rapped:  Bitch, you wasn’t with me shootin' in the gym (huh! Bitch, you wasn’t with me shootin' in the gym)  The lines are a reference t | yes | 17036493 | 9 | accepted |
+| Enzo | Moonwalkin’ on ya bitch, good footwork (Hey) | Offset references Michael Jackson’s icon dance: the moonwalk.  https://www.youtube.com/watch?v=b6pomaq30Gg  He cleverly implies that he’s having sexual intercourse with a girl and  | yes | 17036082 | 15 | accepted |
+| Enzo | Northside, you can get served (Nawf) | Offset references his hometown of Gwinnett County, which is slightly north of Atlanta, Georgia. As a result, it was nicknamed the “Northside or “Nawfside” according to the Migos.   | yes | 17036070 | 14 | accepted |
+| Enzo | Shinin’ like the glove on Michael (Jackson) | 21 mentions Michael Jackson’s iconic glove, which was encrusted with was a trademark possession of his. The sequined glove was worth over $60,000 and was reportedly used to conceal | yes | 17035980 | 22 | accepted |
+| Enzo | I ain’t really sendin’ no hearts though (On God) | 21 cleverly references his 2016 track, “No Heart.” On the chorus, he rapped:  ‘Cause these niggas pussy and I’m hard I turn that fuckin’ soft into some hard I grew up in the street | yes | 17035929 | 22 | accepted |
+| Enzo | 95 left wrist, white T-shirt (White) | Offset interpolates the Migos' 2017 track, “T Shirt”, where Quavo raps:  Seventeen five, same color T-shirt (Yeah)  White t-shirts are common among drug dealers, as the pale color  | yes | 17035883 | 18 | accepted |
+| Enzo | I don’t got a whole lotta friends though (Fuck ’em) | 21 Savage references his song “all my friends” on his album I AM > I WAS, where he raps about how his success impacts their ability to make and maintain friendships. On the track,  | yes | 17025700 | 25 | accepted |
+| Enzo | I don’t play, boy, I’m not Carti (21!) | 21 claims that he’s serious and refuses to mess around when it comes to business that concerns him. He echoes a similar sentiment on his feature on the track, “Don’t Play”, where h | yes | 17025680 | 52 | accepted |
+| Tsunami | [Part I] | Part 1 of the song is sampled from an unreleased Future song from 2019. https://soundcloud.com/landon-evola/future-tsunami-og?utm_source=clipboard&utm_medium=text&utm_campaign=soci | yes | 39354782 | 0 | pending |
+| Tsunami | I’m goin’ dummy | He also could me meaning “i’m going diamond”. Going diamond is a verb used for artists that got over 10 Million sales and certified by RIAA. Future got his first and only diamond w | yes | 38504799 | 0 | pending |
+| Tsunami | Seen illusion, the twins way too confusin’ | He’s essentially so high he can’t tell the difference between the two twins he’s hitting up | yes | 38474478 | 0 | pending |
+| Tsunami | .45 on the seat with the MAC | .45 generally refer to firearms chambered for the powerful, 230-grain .45 ACP (Automatic Colt Pistol) cartridge. It sits along side a ‘MAC’ which refers to a MAC-10 | yes | 38474467 | 1 | pending |
+| Tsunami | Got that Roll’ and it’s snatchin’, I keep more snow than Aspen | Future is stacking two flexes in one bar.  “Got that Rollie and it’s snatchin’” means his Rolex is eye-catching — it “snatches” attention the moment people see it. The watch repres | yes | 38061109 | 1 | pending |
+| Tsunami | Shots and contusions, the gas bad for pollution (Woah, woah, woah, let’s go) | “Shots and contusions” suggests physical violence and injury—“shots” like gunfire and “contusions” as bruises from impact—while “the gas bad for pollution” shifts the focus to envi | yes | 37671889 | 0 | pending |
+| Tsunami | As-salamu alayk’, I’m with DJ Snake | “Assalamu alaikum” is one of the greeting form in Arabic meaning “Peace be upon you.”  From the start, Future gives a nod of respect to DJ Snake’s cultural background. DJ Snake is  | yes | 37524968 | 15 | accepted |
+| Tsunami | I’m tsunami like Wheez’, I’ma trap it, yeah, yeah (Yeah, woo) | Travis shouts out Atlanta-native Wheezy, one of the most successful modern trap producers. He worked with Travis on tracks like “MY EYES”, “TOPIA TWINS”, “Best Man”, and many other | yes | 37511130 | 7 | accepted |

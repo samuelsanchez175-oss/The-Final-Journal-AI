@@ -1,0 +1,67 @@
+# DP Beats, line by line
+
+Each row is a highlighted Genius line that was clicked.
+The meaning is the community note that opened.
+A line with no highlight is listed as no note.
+
+Songs finished: 16 of 16.
+
+| song | line | community meaning | second sense | Genius | votes | state |
+| --- | --- | --- | --- | --- | --- | --- |
+| 52 | 32 like Juiceman | A reference to O.J. Simpson, who was nicknamed “Juice”. His jersey number in college and the NFL was 32. | yes | 37941424 | 0 | pending |
+| All This Money | Rocky | This is a reference to rapper A$AP Rocky. Uzi is saying that he was preforming with him at his shows. | yes | 26053513 | 1 | pending |
+| All This Money | Dread my hair like Thugger | Young Thug or “Thugger” is known to dread his hair.  Dread or Dreadlocks are “a Rastafarian hairstyle in which the hair is washed but not combed and twisted while wet into tight br | yes | 24307130 | 3 | pending |
+| All This Money | I just talked to ManeMane, listenin’ to Sosa | Here he references the two rappers Gucci Mane and Cheif Keef. So while talking to Gucci Mane, Uzi was listening to Cheif Keefs music.  Gucci Mane    Cheif Keef | yes | 24307100 | -2 | pending |
+| All This Money | And I dream chase with my Barbie (Ha, ha, ha, ha, yeah) | Obvious reference to Meek Mill and Nicki Minaj. Meek is known for his Dream Chasers brand, and Nicki is refers to herself as a Barbie. | yes | 23144327 | 2 | pending |
+| All This Money | Share my ho with Carti | He Was Making A Reference To His Friend Playboi Carti | yes | 21874044 | 0 | pending |
+| Bandz (Bye Bye Birdie) | Bead in his head like hurricane chris | Mentioning about Lil Yachty (who he referred to earlier in this line) and how he has beads on his hair similarly to another fellow rapper Hurricane Chris | yes | 22012303 | 1 | pending |
+| Bandz (Bye Bye Birdie) | With my nigga Lil Boat | Most likely referring to fellow rapper Lil Yachty and his debut 2016 album “Lil Boat” | yes | 22012275 | 1 | pending |
+| Bandz (Bye Bye Birdie) | That bitch right there, she like Squirtle | Lil Uzi Vert is known to be a big fan of Pokemon. He compares a girl to the turtle-like Pokemon Squirtle. This is because she is squirting during sexual intercourse. | yes | 18791777 | 0 | pending |
+| Bandz (Bye Bye Birdie) | I just pulled up on your bitch yeah I’m riding in the Benz | Lil Uzi picks up someone else’s girl in his Mercedes Benz | yes | 18791772 | 0 | pending |
+| Bandz (Bye Bye Birdie) | Walk around diamond choker, just to match that diamond wrist | When Uzi says he walks around with a diamond choker, he actually means it.    The choker seen on the picture is made of 100-carat diamonds — 55 black and white ones to make the Mar | yes | 14357110 | 10 | accepted |
+| Bandz (Bye Bye Birdie) | Move that off-white just like Virgil (yeah) Move that off-white just like Virgil | Lil Uzi references the popular streetwear brand Off White, founded by Virgil Abloh, a fashion designer and close friend of Uzi.  Virgil designed the cover art for Luv Is Rage 2 and | yes | 14309967 | 8 | pending |
+| Bandz (Bye Bye Birdie) | (DP on the beat) | This serves as the frequently used producer tag for DP Beats.  DP Beats has worked closely with Lil Uzi on multiple songs, such as “7AM” and “Ready, Set, Go”. He is also well known | yes | 14304508 | 3 | accepted |
+| Bankroll | Told that bitch to give me dome (Dome) | “To give dome” means to give oral sex | yes | 22144938 | 2 | pending |
+| Bankroll | My credit card got the billions, ayy (Cash Carti) Your credit card got a limit, ayy | Uzi is implying he has seemingly unlimited wealth while on the other hand his opps have extremely limited wealth. | yes | 21300842 | 2 | pending |
+| Bankroll | See me with Justine then she stopped callin’ my phone (Woo, zone, zone, zone, zone) | Carti mentioned his ex girlfriend Rubi Rose earlier. Here he says that when she saw him with one of his other hoes named Justine she stopped calling him. | yes | 18791841 | 11 | accepted |
+| Bankroll | Told that bitch to give me dome (Dome) | Dome is another name for oral sex | yes | 18370189 | 4 | accepted |
+| Bankroll | Drinking that lean out the bottle, ayy | Lean is a narcotic drink made up of three components: a soda (usually Sprite, sometimes Fanta) mixed with cough syrup containing Codeine and Promethazine and Jolly Rancher hard can | yes | 16284714 | 3 | accepted |
+| Bankroll | Told that bitch to give me dome (Dome) | Giving dome is slang for performing oral sex on someone. Uzi asks a girl to perform oral sex on him. | yes | 16284674 | 5 | accepted |
+| Bankroll | Countin’ cake, ayy Play with my cake, ayy | “Cake” is slang for money. The slang word is derived from the word “dough”, which also means money. Since cake is made of dough and dough is slang for money, cake means money.  Uzi | yes | 16284346 | 5 | accepted |
+| Bankroll | And I’m smokin’ on this dope | Dope is slang for marijuana.    Uzi is known for being a being marijuana smoker, but also abusing drugs other than marijuana too. Uzi consumes Xanax, as well as Percocet pills.  He | yes | 16284294 | 7 | accepted |
+| Bankroll | I put them diamonds in glaciers, ayy | Diamonds are commonly known as “ice” or “water” in the rap world, as the manner in which light refracts off of the precious mineral is extremely similar to the way light refracts o | yes | 14927665 | 5 | pending |
+| Bankroll | And my car don’t got no ceiling, ayy (Yeah) | The terms “no ceiling” and “drop top” are common slang for a convertible vehicle in the rap community. Uzi refers to his Lamborghini Huracán in this line, as it boasts this unique  | yes | 14923507 | 5 | pending |
+| Bankroll | Takin’ Xans ’til I can’t feel my face and I look like yeah, yeah | Xanax – or Xans as referenced on the track – is a pill used to treat anxiety. The pill produces a calming effect, however, when abused it can create a numbing feeling.  Uzi mention | yes | 14496610 | 16 | accepted |
+| Bankroll | Everywhere I go my bank don’t fold, that bank don’t fold | “Bank” is short for bankroll. A bankroll is a large amount of money rolled up and/or folded. Carti is saying that his bankroll is too thick, but he’s also saying that he won’t run  | yes | 13988685 | 5 | accepted |
+| Bankroll | And I always keep the pole (Cash Carti, always keep the pole) And I always keep the pole (Always keep the pole) Everywhere I go I keep that pole, I keep that pole (Cash Carti, ever | Pole is a slang term heavily used in gangsta rap music. It is often used to refer to weapons, more specifically guns. Guns are called pole, because a gun’s barrel bares resemblance | yes | 13946210 | 5 | accepted |
+| Bankroll | This is not no penicillin, ayy | Lean is a popular drug containing codeine with promethazine and Sprite. Penicillin is an antibiotic used for bacterial infections.    Uzi states that he drinks the lean directly fr | yes | 13917446 | 6 | accepted |
+| Bankroll | Got a bitch named Rubi Rose (Sauce, sauce, sauce) | Rubi Rose has been Carti’s on-and-off girlfriend for a while and has become well known by his fans. | yes | 13912727 | 27 | accepted |
+| Bankroll | Break the bank, ayy | “Break the bank” refers to withdrawing so much money from the bank that there’s nothing left in the bank. “Breaking the bank” refers to finishing the  bank’s reservoir of cash. Thi | yes | 13911986 | 10 | accepted |
+| Boss | I spray like Austin | The ruger, I spray it like Awesome  “Awesome” is a cleaning product you can retrieve it from your local dollar tree. | yes | 20716145 | 0 | pending |
+| Boss | Them niggas don’t learn that them bitches [?] | Them niggas gon' live with bitches and shit and bums | yes | 20716144 | 0 | pending |
+| Boss | Moving to the north suburbs, cops ran a nigga to the hills | From late 2012 to June 2014, Chief Keef lived in 2 mansions in the north suburbs area of Chicago. The first was in Northbrook and the second being in Highland Park.  First he moved | yes | 17850196 | 0 | pending |
+| Boss | Kinda like Tadoe, yeah, bitch I’m the Gloden one | Chief Keef is saying he’s the Gloden one like his cousin Tadoe who dropped a project in 2018 called “The Gloden One” also on Instagram Tadoe’s handle is “@tadoe_dagloden1” | yes | 17849880 | 0 | pending |
+| Keep A Pistol | Young nigga, I play with them K’s (Bang) Nigga play, get shot in the face (Bang) | NBA YoungBoy alludes to his history of gun-related violence, which he previously got in trouble for back in December 2016.  In April 2020, NBA YoungBoy was seen shooting assault ri | yes | 29650893 | 3 | accepted |
+| Keep A Pistol | (DP on the beat) | Jarmel Paschall (b. January 29, 1994), better known as DP Beats, is a record producer from Long Island, New York. He is best known for his production for artists such as Chief Keef | yes | 26336972 | 0 | pending |
+| Lifestyle Urgent | Might as well call me “Soon” | I’m gonna crash out if Bibby says “Soon” one more time. | yes | 32504687 | 0 | pending |
+| Lifestyle Urgent | Choppa in the closet, came from Doom | Doom is a first-person shooter game from 1993 developed by ID Software, a video game publishing company parented by ZeniMax Media.  ID Software has created other games, such as Rag | yes | 32504651 | 0 | pending |
+| Lifestyle Urgent | I see shadows all in my room | Another reference to his most popular track, Lucid Dreams. | yes | 32504644 | 0 | pending |
+| Lifestyle Urgent | Put her down, I’ma eat it like she got produce | That good ‘ol 9 to 5. | yes | 32504638 | 0 | pending |
+| Lifestyle Urgent | Balenci’ on me cost the price of the coupe | Juice is bragging that his designer jacket costs as much as his high-end car.  Balenciaga is a luxury fashion brand that was founded in Spain in 1917 by Cristóbal Balenciaga. The c | yes | 32504623 | 0 | pending |
+| Lifestyle Urgent | Ain’t nun to it but Nike, baby just do it, do it | Nike’s slogan, “Just Do It.” | yes | 32504617 | 0 | pending |
+| Lifestyle Urgent | Me and her made that Perky music | Most likely a reference to Juice’s “own” genre, known as “Heroin Music.” Juice’s unreleased track “Party By Myself” is an example of his genre. | yes | 32504607 | 0 | pending |
+| Lifestyle Urgent | I told her my dreams was lucid | Juice is referencing his most popular single, Lucid Dreams. It currently sits at 2.6B streams on Spotify. | yes | 32504594 | 0 | pending |
+| Lifestyle Urgent | Shawty so bad, she go stupid | Juice WRLD is referencing his Ex-Girlfriend turned Only Fans whore, Ally Lotti. | yes | 32504550 | 0 | pending |
+| Lifestyle Urgent | I put the Lex to Luger | 808 Mafia’s co-founder, Lex Luger. 808 Mafia was founded by Lex Luger and Southside. | yes | 32504534 | 0 | pending |
+| Lifestyle Urgent | She sit on my lap, right next where the Ruger be | Ruger is a well-known brand of firearms that produces a variety of guns, including pistols, rifles, and shotguns. The company was founded in 1949 by William B. Ruger and Alexander  | yes | 32504533 | 0 | pending |
+| Lifestyle Urgent | I was in a bout with the Devil, we standing toe to toe, tell me how the fuck I came out bruiseless? | Possibly a reference to Juice WRLD’s Drumroll/Toe2Toe, produced by Wheezy Beats and Charlie Handsome. | yes | 32504505 | 0 | pending |
+| Lifestyle Urgent | And I just woke up to money like I saw the lady that come when my tooth leave | G Herbo is reference “The Tooth Fairy” and how they take your teeth and leave you money instead. | yes | 32504279 | 0 | pending |
+| Lifestyle Urgent | I’ma just fuck off at Louis, since everybody been mad at Gucci, uh | In this line, G Herbo is saying that he is going to spend his money on Louis Vuitton instead of Gucci because he knows that many people have been boycotting Gucci due to a controve | yes | 32504270 | 0 | pending |
+| Lifestyle Urgent | I ain’t tryna kick it like Bruce Lee | Bruce Lee was a famous martial artist and actor who became a cultural icon in the 1970s. He was born in San Francisco in 1940 and grew up in Hong Kong.  Lee is known for developing | yes | 32504267 | 0 | pending |
+| Lifestyle Urgent | Tell me how you doin’ what you want, like Uzi? | Reference to Lil Uzi Vert’s song: Do What I Want. | yes | 32504246 | 0 | pending |
+| Lifestyle Urgent | Your bank account empty like Juice WRLD | Likely a reference to Juice WRLD’s Death Race For Love Single: Empty. | yes | 32504219 | 0 | pending |
+| Lifestyle Urgent | (My boy, foe, my boy DP, foe) | DP Beats‘ producer tag. This producer tag wasn’t added until the song officially or unofficially dropped on DP Beats’ album: DP On The Beat, Vol 5. | yes | 32504210 | 0 | pending |
+| Lifestyle Urgent | (Ooh, cap, Hunna) | 12Hunna’s Producer tag.  He has produced songs for Young Thug, Future, Lil Uzi Vert, and Trippie Redd. | yes | 32504168 | 0 | pending |
+| RIP | I’m Steve Drive, may L’A he R.I.P, ayy ayy | Steve Drive, aka 600, a black disciples set who Sosa was really tight with and also L'A Capone’s hood, he was an upcoming rapper who died in September, 2013 due to gun violence. He | yes | 28662196 | 1 | pending |
+| RIP | Niggas wanna be down with that D-Town shit, may Tayski R.I.P | Tayski from D-Town aka 59th, a black disciples set now known as TayTown honoring Tayski, it was in the early 2000’s a part of Lamron. | yes | 28662160 | 1 | pending |
+| RIP | On that 300 shit, Moe and Betoe, R.I.P., 33 in the clip | RIP Lil Moe and Robito aka Lil Rob aka Betoe from Lamron which is a set that’s part of the 300 movement.    Lil Moe    Lil Rob/Betoe | yes | 28662129 | 0 | pending |

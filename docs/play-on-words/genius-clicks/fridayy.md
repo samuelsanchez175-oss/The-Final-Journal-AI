@@ -1,0 +1,83 @@
+# Fridayy, line by line
+
+Each row is a highlighted Genius line that was clicked.
+The meaning is the community note that opened.
+A line with no highlight is listed as no note.
+
+Songs finished: 68 of 68.
+
+| song | line | community meaning | second sense | Genius | votes | state |
+| --- | --- | --- | --- | --- | --- | --- |
+| Better Days | I’m just grateful I know there’s more to get, I’m one on one Ain’t too many niggas make it out of here the chosen one I know I’m only here because I’m God-sent | Better days Better future ✨️🙏 | yes | 35760986 | 0 | pending |
+| Better Days | Seen my dog last breath, I realized we all gotta go someday | Mann | yes | 34819192 | 0 | pending |
+| Bezwen Ou | Bezwen ou Bezwen ou | This in Haitian Creole translates to “Need you, Need you." | yes | 34767424 | 0 | pending |
+| Bezwen Ou | Pap janm jijew si ou ban mwen sa’m vle (Sa’m vle) | This in Haitian Creole translates to “won’t ever judge you  if you give me what I want (what I want).” | yes | 34767407 | 0 | pending |
+| Bezwen Ou | Eske’w ta kwè si mwen di ou mwen vle’w? (Mwen vle’w) | This in Haitian Creole translates to “would you believe me if I told you I want you? (I want you). | yes | 34767398 | 0 | pending |
+| Blessings (Remix) | Mi |  | no | 38515166 | 0 | pending |
+| Blessings (Remix) | Ori | Neudjdjdj | yes | 38515155 | 0 | pending |
+| Blessings (Remix) | Momma cryin’ when the rent due, hmm | Yeah | yes | 32161406 | 0 | pending |
+| Blessings (Remix) | Jesu oni calvary Oun ni father mi Nobody fit gaza mi | Calvary the hill outside Jerusalem on which Christ was crucified. And it can also means a sculpture or picture representing the scene of the Crucifixion. Asake implies he’s protect | yes | 29976526 | 1 | pending |
+| Blessings (Remix) | Alhamdulillah, I dey go far | Alhamdulillah is an Arabic phrase meaning “praise be to God”, sometimes translated as “thank God”. This phrase is called Tahmid. A longer variant of the phrase is al-ḥamdu l-illāhi | yes | 29976517 | 1 | pending |
+| Blessings (Remix) | Omo olorun to’n fa poli Oluwa lo da awe ati agbo | Poli is a slang for marijuana Sativa . Asake literally means nobody is holy and God created leaves and herbs for human consumption . He insinuated that weed ( Marijuana) is created | yes | 29976474 | 2 | pending |
+| Blessings (Remix) | Oga ade, pay my money No dey tell me story | Oga ade is a Yoruba slang which translates to dude; which Asake is reminding the person he doesn’t work for free and wants no excuses (don’t start telling me story/excuses). He men | yes | 29353709 | 2 | pending |
+| Blessings (Remix) | B’on se wa mi l’ame Lo lon wa mi ni Germany | Asake continues boasting about his success.  The l’ame is a Yoruba slang for America (USA) which Asake has made appearances, and also in Europe; UK, Germany (he mentioned this in n | yes | 29353579 | 2 | pending |
+| Blessings (Remix) | Ogo to’n le gogo, ema pa mi | Translates to His glory is being chased by fans. Asake glory has continued to shine locally/international. With fans dying for his performance. He recently sold out the famous 20,0 | yes | 29353467 | 1 | pending |
+| Came Too Far | Grand Bon Dieu, toute force qui parvient de Dieu, toute puissance qui parvient de Dieu | Great Good Lord, every force that comes from God, every power that comes from God | yes | 29385449 | 1 | pending |
+| Came Too Far | Gran bondye, bondye lavi a Men gason’m mwen pote ba ou, Francis Mwen konnen zye’w deja sou li | Great god, god of life Here is my man I bring to you, Francis I know your eyes are already on him | yes | 29385444 | 4 | pending |
+| Church on Sunday | Lord, please watch over me | Its a cruel world, aint no strength or power can help except yours. | yes | 29577730 | 0 | pending |
+| Countin’ On You | Verse 1 | Tjay expresses his passion for what he loves and engages in it wholeheartedly. He mentions experiencing moments of success and fame, as well as the harsh realities of where he come | yes | 28582010 | 0 | pending |
+| Death Do Us Part | Since when is it a crime to want to love? | Mariah The Scientist dropped an album “Hearts Sold Separately” in July 2025 with ‘Is it a Crime’ as a lead single. In that song she features Kali Uchis asking what’s the crime in f | yes | 38727736 | 2 | pending |
+| Death Do Us Part | Girl, I’ve never seen a block that’s worth the spin All the times you said you would leave, turned me a man | Spin the block has since become a popular saying in recent times meaning to go back to an Ex after breaking up for some time.  Friday is saying he’s never been successful when he w | yes | 38727628 | 0 | pending |
+| Done For Me | Bring the UV light for my dusty money, I no fit explain, no | Bring the UV light for my testimony, I no fit explain, no"  What he implied here was that, he doesn’t know how to explain all the grace and mercies that he’s received from God cos  | yes | 30337225 | 4 | pending |
+| Done For Me | Siw mwen la grâce à Dieu Gade ko tem rive Malgrem pa mérité, yeah, yeah Protégé’m, mm-hmm Protégé’m, oh-oh | Fridayy is putting his family’s native language Haitian Creole on display in these lines. They translate to:  “If you see me here, it’s by Gods grace/Look how far I’ve come, even t | yes | 29431530 | 11 | pending |
+| Don’t Give Up On Me | I got this Glick up on me | Glick is a slang for glock gun. | yes | 27248361 | 1 | pending |
+| Don’t Give Up On Me | I got bad bitches that’d die for me | Meek Mill has beautiful women that would die for him due to the fact he is a popular and successful rapper. | yes | 27248042 | 1 | pending |
+| Don’t Give Up On Me | Five million cash, won’t need nobody to save us (Nobody), we don’t | $5 million cash saved up. Meek Mill is saying he’s good financially, he doesn’t need anyones money. | yes | 27248029 | 2 | pending |
+| Don’t Give Up On Me | A lot of girls that made me learn how I’m trusted for life, damn | Alot of women let Meek Mill down, this means that he doesn’t trust women. This may mean how modern women are not loyal and lack integrity. | yes | 27248026 | 1 | pending |
+| Don’t Give Up On Me | Lot of folks wanna see me fall, I think I’m stayin’ up | Lots of people want to see Meek Mill fall off but he rather stay up and not fall off. Akademiks (internet blogger) keeps saying Meek Mill falled off and he’s not hot (popular) rapp | yes | 27248023 | 1 | pending |
+| Don’t Give Up On Me | Swappin’ hoes, put it on my bro, she think she playin’ us | Swiping hoes* He has sex with girls and give the girls to his bros (friends) and the girls thinks she’s playing them. But Meek Mill only sees these girls as sex worthy not relation | yes | 27248012 | 0 | pending |
+| Don’t Give Up On Me | All this money and this fame can’t even phase us | Meek mill doesn’t let the money and fame get to his head where he gets clouded and arrogant. Instead he remains humble. | yes | 27248007 | 2 | pending |
+| Don’t Give Up On Me | Shit, I did drills with me and Ern, if he go left, I go right | Meek Mill done drills with ern (dream chaser member and close friend of meek mill). | yes | 27247998 | 1 | pending |
+| Don’t Give Up On Me | Shit get crazy, see these niggas ain’t your homies | When hard times comes, you see who your real friends are and enemies are. | yes | 27247995 | 1 | pending |
+| Don’t Give Up On Me | Real niggas that’s in prison stayin’ alive through me | Meek mill have friends in prison who is living through Meek Mill by being excited, full of spirit and happy to see meek mill win in life. | yes | 27247986 | 1 | pending |
+| Don’t Give Up On Me | This black AP, four-fifty on me | Audemars Piguet (AP) Royal Oak Openworked Black Ceramic which is $450,0000 | yes | 27247979 | 1 | pending |
+| Don’t Give Up On Me | I need a switchy on me, I need a switchy on me | Switchy gun is a gun which is converted  from shooting just one bullet each time the trigger is squeezed to having the capability of firing until the trigger is lifted. It is illeg | yes | 27247970 | 2 | pending |
+| Don’t Give Up On Me | When in codeine, niggas horny | When it’s cold nigga’s hungry | yes | 27233246 | 2 | pending |
+| Don’t Give Up On Me | Smokin’ back to back | Smokin’ back to back | yes | 27233243 | 0 | pending |
+| February ’23 | They try to knock you off your feet when you walkin’ in purpose No, I ain’t say I’m perfect I coulda quit too many times, I had to stand the rain I put my life all on the line, eve | Like that | yes | 35284388 | -1 | pending |
+| February ’23 | I’m on the stage with Wayne and Khaled, can you imagine that? Oh, God, you really did | This is a reference to the song ‘GOD DID’ where Fridayy was featured by DJ Khaled. | yes | 34772313 | 0 | pending |
+| God Sent | I know it’s no weapon Formed against me shall not prosper (Oh, yeah) | In these lines, Fridayy is referring to Isaiah 54:17 in the Bible.  “No weapon that is formed against thee shall prosper……” ‭‭ | yes | 27525959 | 0 | pending |
+| Look To You | I look to You when I’m in despair I look to You when I’m in distress |  | no | 36523735 | 0 | pending |
+| Look To You | A | There’s a fucking reason that you’re fuckin breathin. This part of the song with Llona is like God talking back and explaining that as we are praying to him, he is also looking to  | yes | 34774839 | 0 | pending |
+| Look To You | Riches | Preachers | yes | 34763869 | 1 | pending |
+| Never Leave You | All the times that you just needed a friend | Despite all the pain, this line shows that sometimes, all someone really needs is a friend a person to lean on, to listen, and to remind them that they’re not alone. | yes | 34718718 | 0 | pending |
+| Never Leave You | At your worst, and you’re hoping it’ll end (End) | This is a powerful and vulnerable moment, referring to feeling completely broken and possibly even wishing for an end to the suffering. It highlights the depth of despair one can e | yes | 34718709 | 0 | pending |
+| Never Leave You | And you’re tired of the pain you’re holdin’ in | Holding in pain suggests emotional suppression someone carrying deep hurt without expressing it. It implies exhaustion from constantly dealing with inner struggles without relief. | yes | 34718707 | 0 | pending |
+| Never Leave You | Know what it feels like when the walls are closing in | This describes a feeling of being trapped, overwhelmed, or suffocated by life’s challenges. It paints a picture of emotional distress where someone feels like there’s no escape fro | yes | 34718695 | 0 | pending |
+| Never Leave You | I’ll remind you with the words of this song | He’s leaving behind something timeless his music as a reminder of his support. Even if he’s not physically present, the song serves as a constant source of comfort and reassurance. | yes | 34718655 | 0 | pending |
+| Never Leave You | And when you’re feelin’ like you on your own | Acknowledging that there will be times when this person might feel isolated or like they have no one to turn to. | yes | 34718654 | 0 | pending |
+| Never Leave You | And I will (Never) never (Leave you) leave you all alone (Yeah) | A reiteration of his earlier promise, reinforcing that no matter what, he won’t walk away. | yes | 34718652 | 0 | pending |
+| Never Leave You | Treat you right, even when I do you wrong | This line is complex it suggests that even when he makes mistakes in the relationship, he still has good intentions and wants to make things right. It reflects the reality of human | yes | 34718649 | 0 | pending |
+| Never Leave You | Cause I know how it feel to be broken on your own (Oh) | He’s expressing empathy, indicating that he personally understands the pain of being alone and emotionally shattered. This line adds depth to his promise he’s not just offering sup | yes | 34718643 | 0 | pending |
+| Never Leave You | And I will (Never) never (Leave you) leave you all alone | He’s making a strong promise of loyalty, emphasizing that no matter what happens, he will always be there and won’t abandon the person he’s addressing. | yes | 34718634 | 0 | pending |
+| Never Leave You | When you lost your way (Oh) | This reinforces the idea of support, suggesting that the person he’s addressing might feel directionless, lost, or overwhelmed, and he’s offering to help them find their way back t | yes | 34718590 | 0 | pending |
+| Never Leave You | I’ll guide you through your darkest days | He takes on the role of a protector or guiding light, promising to help this person navigate through their struggles, pain, or hardships. | yes | 34718582 | 0 | pending |
+| Never Leave You | When everyone walked away | This highlights a sense of abandonment or isolation, where others have left this person during tough times. He positions himself as someone who remains when others don’t. | yes | 34718568 | 0 | pending |
+| Never Leave You | You know I’m just one call away | He’s reassuring someone that no matter what, he’s always available when they need him. It suggests a close bond, where he’s dependable and ready to provide comfort or help. | yes | 34718562 | 0 | pending |
+| One Call Away | Give you TLC, the way I creep in it (Ah) | Chris highlights how he wants to give his girl tender love, and care, commonly abbreviated to TLC. This is also a nod to TLC’s October 1994 single “Creep” which was sampled on his  | yes | 34703030 | 19 | accepted |
+| Proud of Me | On wedding day while we slow dance | This verse is a bit odd anyway you slice it.  At the very least, Meek’s saying he wishes he could hold hands with his dad on wedding day.  He also seems to be saying he wishes this | yes | 41235170 | 0 | pending |
+| Proud of Me | My homie dad gon’ pick us up, I want you to get me too I was kinda mad I ain’t have one that used to hit me too | as a youngin he watched his friends and other kids have a relationship with their father | yes | 40469891 | 0 | pending |
+| Proud of Me | And when I catch the nigga that did this to you, he gettin’ sent to you | “ getting sent to you “ his pops died so he’s saying he will kill the person responsible | yes | 40469873 | 0 | pending |
+| Proud of Me | The youngest of your seeds, makin’ sure the family eat well | he’s using the term seeds as kids stating that he’s the youngest child | yes | 40469838 | 0 | pending |
+| Proud of Me | Know you proud of me, look at all this shit I prevailed The youngest of your seeds, makin’ sure the family eat well | Fridayy is talking about doing whatever it takes to take care of his family and make them proud. Growing up in tough situations can make people feel responsible for their whole fam | yes | 36877280 | 0 | pending |
+| Proud of Me | I’d spend it all just to get back my niggas | Even though Meek has money and success now, it doesn’t replace the pain of losing someone he loves. He’s saying all the fame and cars don’t really matter compared to family. A lot  | yes | 36877271 | 0 | pending |
+| Proud of Me | I got everything, but I just really wanna hold hands with my old man | Even though Meek has money and success now, it doesn’t replace the pain of losing someone he loves. He’s saying all the fame and cars don’t really matter compared to family. A lot  | yes | 36877262 | 0 | pending |
+| Proud of Me | Ridin’ past the block where my dad got left on the scene (Brrr) | This shows how trauma forced Meek Mill to grow up fast. Losing his dad young and seeing violence in his neighborhood made him mature earlier than most teenagers. A lot of kids in s | yes | 36877218 | 0 | pending |
+| Proud of Me | Money rule the world, but you can’t pay God with it | God can be paid with wisdom and faith | yes | 36224723 | 0 | pending |
+| Proud of Me | Did | Daddy dead | yes | 35975753 | 4 | pending |
+| Proud of Me | Robbie | Meeks dad | yes | 35839696 | 1 | pending |
+| Proud of Me | Had to go and play my own hand, I did this for Nasheema and the whole fam | Nasheema is his sister | yes | 35839690 | 2 | pending |
+| Proud of Me | I’m havin’ nightmares, I’m havin’ nightmares of my brother clutchin’ on me | Means he is fearing his close friends “brothers” are gonna turn on him | yes | 35839676 | 0 | pending |
+| Proud of Me | Hunnid dollar nightmares turn to million dollar dreams | Growing up without money to spare to having everything you could want. | yes | 34868356 | 1 | pending |
+| Shoot | Now I just shoot, shoot (Shoot, shoot) I can’t pass that rock, I gotta hoop, hoop (Hoop, hoop) |  | no | 30071038 | 0 | pending |
+| Sun Comes Down | ’Cause when the sun comes down, that’s when we look up, ayy | In times of struggles,challenges or moments of uncertainty,we  shape up,gain strength, seek hope and inspiration.In a religious way ,looking up could refer to seeking spiritual gui | yes | 34725878 | 0 | pending |

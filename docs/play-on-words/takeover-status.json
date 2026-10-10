@@ -1,0 +1,32 @@
+{
+  "agent": "Codex takeover",
+  "lane": "Drake missing-url recovery",
+  "state": "active",
+  "detail": "Veeze verified complete. Drake has 211 Genius search misses left; second-wave subagents are verifying URLs, triaging the next missing rows, and shaping chip visuals.",
+  "done": 993,
+  "total": 1204,
+  "updated_at": "2026-10-08T18:41:00-04:00",
+  "subagents": [
+    {
+      "name": "Erdos",
+      "lane": "Feature URL verification",
+      "state": "active",
+      "detail": "Checking Slice 5 candidate Genius feature/collab URLs.",
+      "pct": 35
+    },
+    {
+      "name": "Popper",
+      "lane": "Next Drake missing chunk",
+      "state": "active",
+      "detail": "Classifying the next missing rows after log line 5993.",
+      "pct": 30
+    },
+    {
+      "name": "Helmholtz",
+      "lane": "Chip visual specs",
+      "state": "active",
+      "detail": "Turning the relationship audit into chip badge/artwork specs.",
+      "pct": 25
+    }
+  ]
+}

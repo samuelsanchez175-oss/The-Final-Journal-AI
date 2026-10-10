@@ -1,0 +1,30 @@
+# Polo G, line by line
+
+Each row is a highlighted Genius line that was clicked.
+The meaning is the community note that opened.
+A line with no highlight is listed as no note.
+
+Songs finished: 6 of 6.
+
+| song | line | community meaning | second sense | Genius | votes | state |
+| --- | --- | --- | --- | --- | --- | --- |
+| Clueless | (AXL) | This is the producer tag of Manalla Yusuf, professionally known as AXL Beats. The UK producer has worked with American artists like Fivio Foreign, Drake, and the late Pop Smoke.  H | yes | 23188063 | 29 | accepted |
+| Clueless | Stakin’ out like a date up in Ruth Chris (Ayy) | Polo G nods to Ruth’s Chris, a chain of steakhouses based out of Louisiana. A stakeout is a period of observation, usually of a particular area, looking for suspicious activities,  | yes | 21439984 | 20 | accepted |
+| Clueless | I’m downtown Chicago, on Michigan Ave with Polo and we on some woo shit (Woo shit) | Pop Smoke nods to Michigan Avenue, usually referred to as “The Magnificent Mile.” The historic landmark in Polo’s hometown—Chicago, Illinois—is known for its rich history, tourist  | yes | 21268842 | 41 | accepted |
+| Clueless | Dropped a song and I got mad lit All I did was give ’em ad-libs, ayy, ayy, ayy | Fivio Foreign’s fame is heavily attributed to his ad-libs, which have become a staple of his music. They are prominently featured in big projects such as the April 2021 remix of Ru | yes | 20952660 | 47 | accepted |
+| Clueless | Mike Amiri jeans full of blue strips (Ayy, ayy, ayy) | Mike Amiri is an American-Iranian fashion designer who gained prominence within the hip-hop community after launching his namesake luxury fashion brand in 2014. The brand’s jeans p | yes | 20048326 | 33 | accepted |
+| Gangsta Graduation | It don’t even matter if it take some years, we still’ll get our get-back | If you kill one of ours, we will get ours back. It doesn’t matter how long it takes us to up the score. It could be years later but we slidin'. | yes | 38537378 | 0 | pending |
+| Gangsta Graduation | And that’s like eleven years where you hold a grudge, it needs to be studied | Polo states how angry he is at the world (mainly towards his opposition) and how his unpleasant feelings need to be studied. He lost his first friend T Gucci in late 2014 which is  | yes | 37993811 | 0 | pending |
+| Gangsta Graduation | Send a nigga soul on vacation, we resort to ignorance | “Send a nigga soul on vacation’' means to kill someone, and ‘'We resort to ignorance’’ here means they do it with reckless violence, without thinking. The words ‘'vacation’‘ and ’‘ | yes | 37855576 | 3 | pending |
+| Gangsta Graduation | I was in the hot seat with my buddies, we’ll pull up on shit like Huggies | Straight BARSSSS!!!!!!!!! | yes | 37836417 | 6 | pending |
+| Gangsta Graduation | Lil Grouch’, I’m with him or Chuckie, since 2014, this shit got bloody | Grouchy and Chuckie, are some of Polo’s best friends.  “since 2014, this shit got bloody” he is referring to his childhood friend, Tim-Tim, who died in 2014. | yes | 37833657 | 1 | pending |
+| Go Part 1 | The FN Ruger on my lap when I don’t got a Glock | Given that an FN and a Ruger are both completely different brands of guns, I believe this is a play on words, so FN in this case is might more accurately mean “effin” which is shor | yes | 38590873 | 1 | pending |
+| Go Part 1 | K’s up, killer season like I’m Killa Cam A lot of Ls that season, I was losin’ all my niggas, damn Three years later, whole world know who the fuck I am | Polo is referring to his friend Nacurvie Smith, known to many as Killa. He was killed in November 2014 from gunshot wounds. Polo is throwing up K’s in honor of his friend, but also | yes | 23765379 | 5 | pending |
+| Go Part 1 | And my Rollie presidential like I know the Senate | A presidential Rollie, more commonly known as a Rolex Oyster Perpetual Day-Date, is a Rolex model familiar for being worn by a significant amount of leaders and presidents. This ti | yes | 23593697 | 5 | pending |
+| Go Part 1 | Pink slip shawty, bitch, this Maybach, it ain’t rented | A pink slip is recognized as the certificate of title for a vehicle, to which Polo G rebuts is why his Maybach was purchased instead of rented. In January of 2021, Polo G acquired  | yes | 23593586 | 5 | pending |
+| Go Part 1 | Pussy, no bap (Ayy), I don’t bap a lot (No bap) Can’t say no cap, put that on cap, I’m with Capalot (That’s lil’ bro) | A very smart line that includes word play from the gang culture,  Noting that Herbo is a part of “N.L.M.B.” which is a Brotherhood composed of renegade factions from two gangs the  | yes | 23348169 | 8 | pending |
+| Go Part 1 | Twin .40s stick together like Gina and Pam (Yeah, boom) | A .40 is an ammunition cartridge and gun developed by firearm manufacturer Smith & Wesson, a brand often referenced throughout Polo’s discography.  Polo likens a tandem of .40s to  | yes | 23241583 | 33 | accepted |
+| Go Part 1 | Yeah, livin’ in the slums, we just wishin’ for a hero | “Wishing For a Hero” is the title of Polo’s injustice-driven May 2020 track, primarily tackling systemic racism and police brutality over the beat to 2Pac’s 1998 track “Changes.”   | yes | 23241503 | 36 | accepted |
+| Go Part 1 | Tell me what it is, we ain’t duckin’ smoke, we ain’t scared He reach for this Carti’, it’s gon’ be a whole lotta red | Polo G builds a double entendre on Playboi Carti’s sophomore studio album, Whole Lotta Red, which was the highly anticipated follow-up to his debut studio album, Die Lit. The album | yes | 23241430 | 71 | accepted |
+| No Recruits | Young nigga, feel like I’m Trae (Trae), I score a dub in the A (In the A) | Trae Young is a professional basketball player for the Atlanta Hawks in the NBA. The three-time all-star is known for his clutch three-point abilities, earning him the nickname of  | yes | 34416374 | 6 | accepted |
+| No Recruits | Now we rich, we live like crackers, cribs all in the Ritz | Ritz crackers but also a double entendre since Ritz Hotel in Paris is for the rich | yes | 32691872 | 3 | pending |

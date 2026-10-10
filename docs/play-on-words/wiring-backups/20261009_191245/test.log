@@ -1,0 +1,113 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project "The Final Journal AI.xcodeproj" -scheme "PennWork Studios" -destination "platform=iOS Simulator,id=D66A1EF2-8DE0-45BD-B517-D0E7CD519937" -parallel-testing-enabled NO "-only-testing:The Final Journal AITests/NounBankSheetTests"
+
+⏱️ launch: App.init — +0ms from App.init, 87948904ms process uptime
+⏱️ launch: first frame — +407ms from App.init, 87949311ms process uptime
+⏱️ launch: container ready — +463ms from App.init, 87949366ms process uptime
+Test Suite 'Selected tests' started at 2026-10-09 19:29:25.003.
+Test Suite 'The Final Journal AITests.xctest' started at 2026-10-09 19:29:25.003.
+Test Suite 'NounBankSheetTests' started at 2026-10-09 19:29:25.003.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testAccessoriesStayThemselvesAndNotABrand]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testAccessoriesStayThemselvesAndNotABrand]' passed (0.118 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testAnimalsStayTheCreatureAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testAnimalsStayTheCreatureAndNotTheOtherSense]' passed (0.083 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testAppsPocketKeepsOneChipPerService]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testAppsPocketKeepsOneChipPerService]' passed (0.020 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testBehaviorPocketsStayTheSpokenSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testBehaviorPocketsStayTheSpokenSense]' passed (0.008 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testEmptyQueryStaysInSelectedCategory]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testEmptyQueryStaysInSelectedCategory]' passed (0.018 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testEventsStayThePersonAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testEventsStayThePersonAndNotTheOtherSense]' passed (0.008 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testFamilyWordsAreThePeopleAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testFamilyWordsAreThePeopleAndNotTheOtherSense]' passed (0.024 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testFlowersStayThePlantAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testFlowersStayThePlantAndNotTheOtherSense]' passed (0.003 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testFoodStaysThePlateAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testFoodStaysThePlateAndNotTheOtherSense]' passed (0.060 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testFriendsStayThePeopleAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testFriendsStayThePeopleAndNotTheOtherSense]' passed (0.024 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testGamesStayTheTitleAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testGamesStayTheTitleAndNotTheOtherSense]' passed (0.018 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testGlobalSearchFindsPeopleFromAnyTab]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testGlobalSearchFindsPeopleFromAnyTab]' passed (6.941 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testGrillsStayTheTeethAndNotTheMixtape]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testGrillsStayTheTeethAndNotTheMixtape]' passed (0.011 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testGroupsCoverEveryCategoryOnce]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testGroupsCoverEveryCategoryOnce]' passed (0.003 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testHairStaysTheCutAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testHairStaysTheCutAndNotTheOtherSense]' passed (0.020 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testHennyMentionPhrasesIncludeHennessy]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testHennyMentionPhrasesIncludeHennessy]' passed (0.006 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testHighlightMarksTheNounAndLeavesNearbyWords]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testHighlightMarksTheNounAndLeavesNearbyWords]' passed (0.003 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testInsectsStayTheBugAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testInsectsStayTheBugAndNotTheOtherSense]' passed (0.014 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testJohnWayneStaysOffLilWayneAndOtherHighCountMixesSplit]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testJohnWayneStaysOffLilWayneAndOtherHighCountMixesSplit]' passed (0.608 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testKobeCatalogLinesComeFromTheVault]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testKobeCatalogLinesComeFromTheVault]' passed (0.016 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testKobeMentionPhrasesIncludeOtherNames]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testKobeMentionPhrasesIncludeOtherNames]' passed (0.010 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testLingerieAndToysStayTheGarment]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testLingerieAndToysStayTheGarment]' passed (0.005 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testLooksPocketKeepsTraitsAndOneChipPerWayOfSayingIt]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testLooksPocketKeepsTraitsAndOneChipPerWayOfSayingIt]' passed (0.017 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testMentionHeatWarmsAsTheCountGrows]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testMentionHeatWarmsAsTheCountGrows]' passed (0.001 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testMentionMatchQuotesLongerNamesFirst]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testMentionMatchQuotesLongerNamesFirst]' passed (0.001 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testMentionStatsStayUnboundedAndZeroReadsAsEmpty]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testMentionStatsStayUnboundedAndZeroReadsAsEmpty]' passed (0.016 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testMinedPocketsKeepTheSeededTerms]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testMinedPocketsKeepTheSeededTerms]' passed (0.004 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testNailsStayTheManicureAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testNailsStayTheManicureAndNotTheOtherSense]' passed (0.005 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testNewPocketsUseADifferentSymbolOnEveryChip]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testNewPocketsUseADifferentSymbolOnEveryChip]' passed (0.765 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testNounPageBriefIsAStandingLinePlusALyricTake]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testNounPageBriefIsAStandingLinePlusALyricTake]' passed (0.001 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testNounTabsGroupEveryChipWithItsPeople]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testNounTabsGroupEveryChipWithItsPeople]' passed (0.008 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testPeoplePocketsStayThePersonAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testPeoplePocketsStayThePersonAndNotTheOtherSense]' passed (0.219 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testPlayOnWordsStayOneSenseAndOffTheOtherTabs]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testPlayOnWordsStayOneSenseAndOffTheOtherTabs]' passed (0.559 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testRecentsCapAtEightAndStayUnique]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testRecentsCapAtEightAndStayUnique]' passed (0.519 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testRecentsDropWordsMissingFromStore]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testRecentsDropWordsMissingFromStore]' passed (0.008 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testRedBottomsStayAShoeAndNotAPlace]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testRedBottomsStayAShoeAndNotAPlace]' passed (0.032 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testReferenceLinesSortByArtistThenAlbum]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testReferenceLinesSortByArtistThenAlbum]' passed (0.002 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testScrubberJumpsToTheArtistLetter]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testScrubberJumpsToTheArtistLetter]' passed (0.001 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testShortNamesStayOnThePersonTheyName]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testShortNamesStayOnThePersonTheyName]' passed (0.084 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testSimpleMentionsDropAndASetupStays]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testSimpleMentionsDropAndASetupStays]' passed (0.003 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testSpecificNounsDoNotInheritBroadWords]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testSpecificNounsDoNotInheritBroadWords]' passed (0.001 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testSwipeStepsInsideTheGroupAndStopsAtTheEnds]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testSwipeStepsInsideTheGroupAndStopsAtTheEnds]' passed (0.001 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testTattoosStayInkOnSkinAndNotTheOtherSense]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testTattoosStayInkOnSkinAndNotTheOtherSense]' passed (0.024 seconds).
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testWiredHeardAsChipsReuseExistingPictures]' started.
+Test Case '-[The_Final_Journal_AITests.NounBankSheetTests testWiredHeardAsChipsReuseExistingPictures]' passed (0.013 seconds).
+Test Suite 'NounBankSheetTests' passed at 2026-10-09 19:29:35.322.
+	 Executed 44 tests, with 0 failures (0 unexpected) in 10.300 (10.319) seconds
+Test Suite 'The Final Journal AITests.xctest' passed at 2026-10-09 19:29:35.322.
+	 Executed 44 tests, with 0 failures (0 unexpected) in 10.300 (10.319) seconds
+Test Suite 'Selected tests' passed at 2026-10-09 19:29:35.322.
+	 Executed 44 tests, with 0 failures (0 unexpected) in 10.300 (10.320) seconds
+2026-10-09 19:29:35.615 xcodebuild[11372:2233989] [MT] IDETestOperationsObserverDebug: 30.643 elapsed -- Testing started completed.
+2026-10-09 19:29:35.615 xcodebuild[11372:2233989] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-09 19:29:35.615 xcodebuild[11372:2233989] [MT] IDETestOperationsObserverDebug: 30.643 sec, +30.643 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/samuel/Library/Developer/Xcode/DerivedData/PennWork_Studios-eixeauxlsnxhikefmuhunptbjudz/Logs/Test/Test-PennWork Studios-2026.10.09_19-29-04--0400.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

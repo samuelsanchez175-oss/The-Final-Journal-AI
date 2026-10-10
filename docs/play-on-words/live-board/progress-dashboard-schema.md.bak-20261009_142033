@@ -1,0 +1,250 @@
+# Penwork progress dashboard: reusable spec
+
+The reference implementation is `docs/play-on-words/live-board/server.py`. It is one Python file using the stdlib only. It serves `http://127.0.0.1:47321/` and runs on Python 3.9+.
+
+## 1. Layout (top to bottom, left to right)
+
+```
+┌──────────────── header ──────────────────────────────────────────────────────┐
+│ LEFT (.brand)                    │ RIGHT (.terminal-feed) "CURRENT WORK BY…"  │
+│  WORD_FLIPS title + status line  │  Main lane bars, 3-column grid:            │
+│  ── ARTIST ROSTER ──             │   takeover, up to 3 sub-agents, watcher,   │
+│  (scrolls, max-height 440px)     │   harness, up to 3 open artist LOG lanes   │
+│  In progress · N                 │  Each lane: title, state, meta, points/%,  │
+│  Not started · N                 │   bar (amber + blue new-work), newnote     │
+│  Completed · N                   │                                            │
+├──────────────────────────────────┴────────────────────────────────────────────┤
+│ Top readouts (5 across): PAIRS FILED · NOTE INDEX · LINE POINTS · OPEN LANES ·  │
+│ CATALOG AVG                                                                     │
+│ Catch readouts (same grid, 5 tiles): CONFIRMED · UNCONFIRMED · UNSURE ·        │
+│ REJECTED · RE-REVIEWED (overlay)                                                │
+├───────────────────────────────────────────────────────────────────────────────┤
+│ Filters (All / Both on the line / Partner filed / Other half missing / Needs a  │
+│ look) + search                                                                  │
+└───────────────────────────────────────────────────────────────────────────────┘
+main:
+  PROJECT WATCHER table: one row per click log (Resolved bar + blue segment, saved
+                         notes, second sense, last touch, state)
+  WORDPLAY HIGHLIGHTS:   directly under the watcher's progress bars. Legend, artist
+                         filter tabs, confirmed rows NEWEST FIRST (descending permanent
+                         #number; in "All", artist groups ordered by their newest line),
+                         then a collapsed <details> with the "possible" rows
+  Last pairs the other terminal reported (hidden when empty)
+  (No separate gray pairs table: the Wordplay Highlights area is the only place pairs/flips are listed; the old Heard / On the same line / What appears / The bar table was removed 2026-10-09.)
+```
+
+### Artist roster (left, under WORD_FLIPS)
+- **Rows:** every artist in the catalog, one row each. A row shows the name, a lane tag pill, `done/total · pct%`, a 5px bar (amber done + blue new-work), and a blue "+N new lines … since … resets …" note that only appears when N > 0.
+- **Ordering:** groups in this order: `in_progress`, then `not_started`, then `completed`. Within each group, sort by vault song count descending, then by name.
+- **States:**
+  - `completed` (finished): every vault song is accounted for: done + unresolved ≥ vault songs, where unresolved = distinct songs the click log marks `missing` or `<artist>-unresolved.jsonl` lists, minus songs already done. OR the artist's own lane wrote `lane-claims/<artist>.done` with no songs remaining (`processed=N/N`). A row in `all-artists-progress.md` alone, or a `.done` claim the song counts don't back, does not count. One shared rule (`artist_finished`) drives this section, CATALOG DONE and its history.
+  - `in_progress`: has a click log or a live claim.
+  - `not_started`: everything else (shows 0%).
+- **Lane tag:** `lane2` (the first token of the claim file) when `lane-claims/<artist lowercase>.claim` exists. `main run` goes on the most recently modified click log that has no claim, if it was written in the last 30 minutes.
+- Completed rows use a muted green base fill.
+
+## 2. Data sources
+
+| Source | Used for | How it is read |
+|---|---|---|
+| `tools/bar-hits-catalog/BarHitsCatalog.sqlite`, table `bars` | roster artists + vault song counts | `file:…?mode=ro` URI. `select artist, count(distinct song) … group by artist`. Runs **once** in a background thread and is cached in memory and in `live-board/catalog-artists.json`, keyed by the db's mtime_ns+size. |
+| `docs/play-on-words/genius-clicks/<artist lowercase>.jsonl` | progress, points, roster counts | Per-file cache keyed by (mtime_ns, size), so a file is re-scanned only when it changes. Tolerant parse (see rules). |
+| `docs/play-on-words/lane-claims/*.claim / *.done` | lane tags / completed | directory listing each tick (tiny) |
+| `docs/play-on-words/all-artists-progress.md` | "pass finished" artists | first table column; cached by mtime/size |
+| `docs/play-on-words/takeover-status.json` | takeover + sub-agent lanes | each tick |
+| Grok harness `chat_history.jsonl` | harness lane sentence/age, batch table | mtime-gated |
+| `XJournal AI/NounBank*.swift`, `NounMentionBrief.swift` | the 1,226 chips, partners, briefs | mtime-gated parse |
+| `docs/play-on-words/wordplay-highlights.jsonl` | highlights section | read on every `/api/highlights` request (live) |
+| `live-board/window-baseline.json` | blue new-work baseline | read/written by the server |
+| `possible-wordplay-verify/verified.jsonl`, `possible-wordplay.jsonl`, `*-candidates.jsonl` (main run + lane 2) | wordplay-catch tiles | `_read_jsonl_cached` (mtime/size cache, half-written tail skipped) |
+| `live-board/stats-window-baseline.json` | "+N new" baselines for the catch tiles only | read/written by the server |
+
+## 3. Rules
+
+1. **In-place updates, no flicker.**
+   - Every bar, lane, readout, watcher row and roster row is created once and cached in a `Map` keyed by a stable key (lane key / artist name).
+   - Each poll only sets `textContent`, `className` or `style.width` when the value actually changed (`setText`, `setClass`, `setWidth`).
+   - Order changes go through `syncChildren()`, which moves existing nodes and never recreates them.
+   - Never rebuild with `innerHTML`/`replaceChildren` on the bar area. Never reset a width to 0. CSS animations (activeGlow, barPulse, barScan) must never restart.
+   - The 1,226-row pairs list re-renders only when `chips_sig`, the filter or the search changes.
+2. **One poll at a time.**
+   - Client: an `inFlight` guard. Polling runs every 2s, and a payload with `gen` lower than the current one is ignored.
+   - Server: `REFRESH_LOCK`. A concurrent request gets the last finished payload instead of starting a second rebuild.
+   - Genius notes are re-indexed at most every 30s while a log is being appended to.
+3. **One source of truth.** Every number on screen comes from the same `/api/state` payload. An `unchanged` reply still carries `progress`, `window`, `takeover`, `harness_age` and the `roster` meta. The top area updates from those in place.
+4. **Points.**
+   - Points = number of completed line rows (`type` is `"line"` or missing, with non-empty `line`), deduped by `(normalize(artist), normalize(song), lowercased/space-collapsed line)`.
+   - A malformed line counts as invalid only once a valid line follows it. A malformed **last** line is a half-written append: it is ignored and reported as `partial_tail`.
+   - The client keeps points monotonic (high-water mark per artist and for the total) and animates in ±1 steps, never jumps. Faster steps are used when the gap is large, and the first paint is set directly.
+   - Only artist lanes show `pts`. Non-line lanes show `NNN%`.
+5. **Blue new-work segment.**
+   - Windows are 24 hours, midnight to midnight in America/New_York (changed from 2 hours on Oct 9, 2026 at Samuel's request).
+   - The baseline per artist is `{points, opened}`, persisted in `live-board/window-baseline.json` as `{window_start, window_end, artists}`. A restart reuses it.
+   - When a new window starts, the file is replaced, so blue folds into the base colour and restarts at 0.
+   - An artist first seen mid-window whose log was created after the window began gets a `{0,0}` baseline (all its work is new). Otherwise it is baselined at its current counts.
+   - Bar = `base_pct` (amber) + `new_pct` (blue). Songs drive the width; lines drive the "+N new lines" label.
+   - Label format: `+N new lines · +M songs since 12:00 AM ET, resets 2:00 AM`.
+6. **Highlight colours.** Setup = blue `#5aa9ff`, play words in the bar = yellow `#ffd84d` (bold), heard as = green `#3ddc84` chip. The new-work segment uses the same blue `#5aa9ff`. Base progress is amber `#F5A623`.
+   - Legend text: "blue = setup · yellow = words he plays on · green = what it becomes".
+7. **Confirmed-line numbering (newest first).**
+   - Every confirmed line gets a permanent sequential number, stored in `live-board/confirmed-seq.json` as `{max, items: {key: {n, first_seen, first_seen_at, source, artist, song, annotation}}}`.
+   - The key is `normalize(artist)|normalize(song)|lowercased, space-collapsed bar`.
+   - The first run seeds the existing confirmed rows of `wordplay-highlights.jsonl` as #1–#168, in file order, with `first_seen = 0`. Every later line gets `max + 1`.
+   - Numbers are never reassigned, so restarts, re-reads and reordering never renumber.
+   - Sources, deduped by key:
+     1. `wordplay-highlights.jsonl` rows whose `list` is not "possible…"
+     2. `possible-wordplay-verify/verified.jsonl` rows with `verdict == "CONFIRMED"`. The link is the row's first `sources[].url`, and the row drops out of the possible list.
+     3. `*-candidates.jsonl` (in `docs/play-on-words/` and `genius-clicks/`) rows with `signal_type == "sound_flip"` that are kept (`kept: true`, `status: "kept"`, or an empty `reject_reason`) and have both `setup_spans` and `play_spans`. Their source label is `candidates`.
+   - Display is in descending number (newest at the top), within each artist tab as well.
+   - A line first seen in the current 24-hour window gets a blue `NEW` badge and a blue left edge (`is_new`). Its group header shows "· N new".
+   - Cards are keyed by number and built once. A new line is inserted at the top with `syncChildren` and the list is never rebuilt. The client repaints only when `/api/highlights` `sig` changes, with one highlights poll in flight at a time (every 5s).
+8. **Load safety.** No work scales with total file size per tick. Logs are re-scanned only on mtime/size change, the catalog is read once, and the roster costs one `stat()` per artist per tick.
+
+9. **Jobs panel.** The dashboard includes a Jobs panel with one card per running parallel job, showing its status, last activity in ET, and its own progress bar. It sits near the top, under the main progress bars (after the telemetry readouts). Every job shows from the start, even before it has written anything.
+   - Job cards are numbered to match the Anti-Gravity chat names (1 · Main Run, 2 · Lil Uzi Vert, 3 · Lane 2, 4 · Wire Noun Bank, 5 · Lil Wayne, 6 · YoungBoy).
+   - **Status:** `running`, `idle` (no output write in more than 10 minutes), `not started yet` (no output files), or `done`. A job whose PID has died before finishing shows `stopped`.
+   - **Last activity:** newest mtime of that job's output files, as a clock time like `12:51 AM ET`.
+   - **Bar:** one steady bar per job (amber done + blue new-work for the current 24-hour ET window, with the "+N new … since …, resets …" note). Cards and bars are created once, born at their real width, and updated in place; never recreated at 0.
+   - **Cheap readers:** stat + mtime/size-cached tolerant reads (half-written last line skipped), at most one `ps -p PID` per PID every 20s, and the whole jobs payload cached for 4s. Job new-work baselines live in their own `jobs-window-baseline.json`; `window-baseline.json` and `confirmed-seq.json` are never written by the jobs panel.
+   - **Alerts** in red on the card: dead PID, rate-limit/429 signs, a lane closer than its buffer to the main run, or Swift edited with no backups.
+
+10. **Catalog percentage = finished artists, not average progress.** The catalog tile (`catalog-avg`, labelled CATALOG DONE) counts finished artists out of the catalogued artists: artists in the roster's `completed` state ÷ all catalogued roster people, floored (one decimal under 10%), caption `N of <total> artists with 20+ songs finished`. **Artists under 20 vault songs (`count(distinct song)` in BarHitsCatalog.sqlite, merged per person) are excluded from the catalog tally** — the tile, its bar/blue segment, its live and rebuilt history (`catalog_def: done20`, REBUILD_VERSION 7), the NOTE INDEX bar, the roster header and the Project Watcher header all count only artists with 20+ songs; the under-20 artists sit in the collapsed "Show N artists under 20 songs" section. Active or in-progress artists (lane, log in the last 30 min, running job) are never collapsed and always count. Finished means every vault song is resolved or recorded unresolved (done + missing/unresolved ≥ vault), or the artist's own lane's `.done` claim shows no songs remaining; a progress-file row alone or an unbacked `.done` claim never counts. It is never the average progress of the artists that have started. The bar fills by the same share; blue = artists finished since 12:00 AM ET. The live history snapshots and the rebuilt history use the same definition.
+
+### Wordplay-catch tiles (second readout row)
+- **Rule:** directly under the 5 headline stat tiles sits a same-size row of **Confirmed**, **Unconfirmed**, **Unsure**, **Rejected** and **Re-reviewed** wordplay-catch counts. It reuses the `.telemetry` grid and `.readout` tile (same 5 columns, same big `.value` number and small `.caption`; all 5 cells filled).
+- **Deduped:** every source row is keyed with `confirmed_key(artist, song, bar)` and counts at most once. Precedence: confirmed > verify verdict (unsure / rejected) > rejected sound_flip candidate > pending. **A confirmed bar is never counted in another tile.** A possible row whose id (or the matching `possible-wordplay.jsonl` id) has a verdict counts as checked, even if the verify pass corrected the lyric.
+- **Rule (recheck overrides):** Mined sound-flip candidates are never auto-confirmed; they show as Unconfirmed until a second-pass KEEP/FIX in confirmed-recheck/recheck.jsonl. REJECT removes a line from the confirmed list without renumbering.
+  - File: `docs/play-on-words/confirmed-recheck/recheck.jsonl`, one row per line `{key_artist, key_song, key_bar, verdict: KEEP|FIX|REJECT, setup_spans, play_spans, heard_as, reason, by, ts}` (optional `needs_recheck`). Matched with `confirmed_key(key_artist, key_song, key_bar)`, last row per key wins, read with the tolerant cached reader. Applies to every source (highlights rows, `verified.jsonl`, candidates).
+  - REJECT: the line leaves the confirmed list and counts in REJECTED; its `confirmed-seq.json` number stays reserved (a gap). KEEP: stays/becomes confirmed as is. FIX: stays/becomes confirmed with the override's spans and heard_as. A re-confirmed line keeps its old number; `confirmed-seq.json` is never renumbered or pruned.
+  - Confirmed rows carrying a verdict get a small `RE-REVIEWED` (KEEP) or `FIXED` (FIX) tag in the highlights list; kept mined candidates with no verdict appear in the collapsed "Possible / unconfirmed" section, not the numbered list.
+- **Confirmed:** the same set `load_highlights` numbers (highlights non-possible rows not REJECTed + `verified.jsonl` CONFIRMED not REJECTed + any line with a KEEP/FIX override). Caption `Genius-confirmed flips (#1–#max)`, max read from `confirmed-seq.json` (read-only).
+- **Unsure:** `verified.jsonl` verdict `STILL_UNSURE` or `UNSURE`. Caption `verified, no 2nd source yet`.
+- **Rejected:** `verified.jsonl` verdict `REJECTED` + REJECT overrides in `recheck.jsonl` + sound_flip candidates with a non-empty `reject_reason` or `kept: false`. Caption lists all three parts.
+- **Unconfirmed:** possible rows (`possible-wordplay.jsonl` + "possible" highlights rows) with no verdict yet + sound_flip candidates (main run and lane 2, both `docs/play-on-words/<artist>-candidates.jsonl`) that are not rejected and have no recheck verdict (kept candidates included). Caption `awaiting verification`. Unsure = verify unsure unless overridden.
+- **Re-reviewed (overlay, not a bucket):** lines with a Genius annotation (url / annotation id on the row) and a second-pass verdict in `recheck.jsonl` from any non-samuel reviewer (e.g. `by: "antigravity-recheck"`), plus all of Samuel's own rows; deduped by `confirmed_key`. Each such line still counts in exactly one of the four tiles above by its verdict. Caption `N re-reviewed · K keep · F fixed · R rejected`. Bar = re-reviewed / annotated lines eligible for recheck (confirmed lines + unconfirmed mined candidates with an annotation, plus the re-reviewed lines themselves). Returned on `/api/catches` as `re_reviewed`.
+- Each tile has the blue `+N new since <window start> ET, resets <next>` line (2-clock-hour window). Baselines live only in `stats-window-baseline.json`; never in `window-baseline.json`, `jobs-window-baseline.json` or `confirmed-seq.json`.
+- Own poll (`/api/catches`, every 5s, one in flight), in-place `setCounter`/`setText` updates, server result cached 4s.
+
+### Stat-tile progress bars (all 10 tiles)
+- **Rule:** every stat tile (PAIRS FILED, NOTE INDEX, LINE POINTS, OPEN LANES, CATALOG AVG, CONFIRMED, UNCONFIRMED, UNSURE, REJECTED, RE-REVIEWED) has a thin progress bar right under its big number: the existing `.bar` with a **yellow/amber** fill for the total so far plus a **blue** `.new-work` segment at the leading end for what was added in the current 2-clock-hour ET window. Under it, a tiny caption names the denominator and the fill (e.g. `1004 of 1226 both halves · 82%`); the bar's tooltip adds `blue = +N since <start> ET, resets <next>`.
+- **Denominators:** PAIRS FILED = pairs with both halves on a bar / all pairs. NOTE INDEX = catalog songs resolved / all catalog (vault) songs (no note target exists). LINE POINTS = resolved songs / songs in the watched logs (no total-lines target exists). OPEN LANES = jobs running / 4 jobs. CATALOG DONE (key `catalog-avg`) = finished artists / all catalog artists (same share as its number; blue = artists finished since 12:00 AM ET). Catch tiles = that tile's count / the sum of the 4 catch tiles; RE-REVIEWED = re-reviewed / eligible annotated lines.
+- **Blue baselines:** NOTE INDEX and LINE POINTS reuse the per-artist `new_songs` from the existing window logic (`window-baseline.json`, read-only for the bars). PAIRS FILED (`pairs_both`) and OPEN LANES (`lanes_running`) baselines are extra keys in `stats-window-baseline.json`; CATALOG DONE's blue = artists whose finish time (first evidence that met the finished rule) is since 12:00 AM ET, no baseline key; catch tiles use that file's existing per-tile "+N new". Blue is clamped to 0 when a value goes down (never negative) and never wider than the fill. Never write `window-baseline.json`, `jobs-window-baseline.json` or `confirmed-seq.json` for this.
+- **Data:** top-row bars come from `tile_bars` on `/api/state` (built from the current payload + cached jobs, cached 4s, last good bar kept on a miss); catch bars are computed client-side from `/api/catches`.
+- **Standard:** bars are born once at their real width and then only their widths/text change (no recreate at 0, no flicker); one poll in flight per loop; tile size unchanged (4px gap + 3px bar + 1px caption margin = the caption's old 8px, denominator caption sits in the tile's bottom padding). Numbers, captions, points logic, roster, Jobs panel and confirmed numbering are untouched.
+
+### Trend graphs (every number)
+- **Rule:** Every number is clickable and toggles to a 15-minute-increment trend graph (metrics-history.jsonl, /api/history); click again for the number.
+- **Which numbers:** all 10 stat tiles (metric keys `pairs`, `notes`, `points`, `open-lanes`, `catalog-avg`, `catch-confirmed`, `catch-unconfirmed`, `catch-unsure`, `catch-rejected`, `catch-rereviewed`), every roster artist's done/total number (`artist:<name>`, done = `opened`) and every job card's number line (`job:<id>`, done = `value`). Clickable numbers get a pointer cursor, a `click for trend ↗` tooltip and a faint ↗ on tile hover; the mode per number is remembered across polls and in localStorage (`penwork-trend-modes`).
+- **History:** a background thread appends one whole, flushed line to `live-board/metrics-history.jsonl` at startup and on every :00/:15/:30/:45 ET boundary: `{ts, t, tiles:{10 values}, artists:{name: done}, jobs:{id: done}}`, taken from the same cached computations as `/api/state`, `/api/catches` and `/api/jobs` (no re-scan). Append-only. One-time backfill rows carry `"backfilled": true` and exist only where honest timestamps do: CONFIRMED / REJECTED / RE-REVIEWED from `confirmed-recheck/recheck.jsonl` `ts` (+ `confirmed-seq.json` `first_seen` for CONFIRMED), job 4 (wiring) from `wordplay-wiring-log.jsonl` `ts`; each is written only if its replay reproduces the live value. Every other metric starts at the first live snapshot.
+- **Graph:** inline SVG in the number's own footprint (no layout jump): amber line, blue shading for the part inside the current midnight-to-midnight ET window, labels for start, now (latest), min and max (compact roster/job graphs show start/now inline, min/max in the tooltip), hover tooltip with ET time and value. Fewer than 2 points shows `collecting — first points every 15 min`. The live on-board value is the last point. SVGs are built once and updated in place; history is fetched (one request loop in flight, every 30s) only for numbers currently showing a graph.
+- **Rule (v2):** Graphs fill the full tile; default window is since 12:00 AM ET today (the current midnight-ET window; each day starts fresh at midnight), with history rebuilt from file timestamps where needed.
+- **Rule (v3):** Terminal/AI and log cards also toggle to trend graphs filling the card body; roster graphs are compact (~50px).
+- **Top cards:** the CURRENT WORK % (`lane:takeover`, `lane:sub:<Name>`, `lane:watcher`, `lane:harness`) and, on LOG cards, "N of M songs resolved" (`log:<Artist>:opened`) and "+N PTS" (`log:<Artist>:pts`) are clickable; one graph per card (opening one closes the card's other). Snapshot rows carry `lanes` and `logs` (open logs only). Rebuilt: log cards from the artist log timelines; takeover/subagent % constant since `takeover-status.json` mtime; harness % from the harness chat file mtime; `lane:watcher` is live only (depends on every Swift edit time). Roster panels are 52px with start/end time and a min/max hint.
+- **Rule (v4):** Job cards follow each chat's current claim/status file; finished jobs move to a collapsed Done strip; Grok box runs get their own cards.
+- **Job card titles name the AI:** every Jobs card and `DONE · N` entry title ends with the responding AI's name in parentheses, derived from the card's source, never hard-coded per title: chat-status / claim cards owned by `chatN` or an Anti-Gravity chat (numbered cards 1-89) → `(Anti-Gravity)`, e.g. `1 · Main Run (Anti-Gravity)`; `box (Grok)` claims → `(Grok box)`. The API also returns it as `ai`.
+- **Jobs detail:** chat N's card = its newest lane-claims file whose first token is `chatN` (by mtime) + `chat-status/chat-N.md` (README format: Doing line, state, `needs Samuel` in red unless `no`; stale after 45 min); a status file naming an unclaimed artist shows NOT STARTED YET. `.done` / `.chatN-stopped` claims and verify 31/31 go to the `DONE · N` strip (title, final numbers, finish time ET; click to expand) and leave the grid. Box cards: every claim whose first line says `box (Grok)`, titled `G · <Artist> (Grok box)`, progress from its genius-clicks log vs vault, last sync from the claim's `status:` line. Chat 4 (Wire Noun Bank): the latest wiring-log test row alone decides PASS/FAIL; DONE only when `wordplay-image-queue.md` has no waiting rows and `chat-4.md` says done. Chat 7 (Re-review): `antigravity-recheck` verdicts in recheck.jsonl (latest per line, KEEP/FIX/REJECT) against the backlog (unconfirmed + unsure). Artist cards graph `artist:<Name>` history, so the graph follows the artist; the header counts active cards.
+- **Toggle target:** In graph mode the entire card is the toggle target, with a 32px+ close control. In number mode the whole number area (stat tiles: the whole tile) opens the graph; the SVG only takes hover (mousemove), clicks go to the card; touch-action: manipulation and a 350 ms guard so a tap never double-fires.
+- **Fill:** in graph mode a stat tile's graph covers everything under the tile label (number, bar, captions) and a job card's graph covers the card body under its head; the covered elements only turn invisible, so tile/card size never changes, and the SVG is re-measured on resize (ResizeObserver). A roster artist row opens an 80px graph panel under the artist name; the second click collapses it. The "collecting — first points every 15 min" message is centered and wraps instead of cropping.
+- **Axes:** x = 12:00 AM ET today → now with ET labels every 3 hours (12a / 3a / 6a / …); a value known before midnight is carried forward and drawn from exactly 00:00, older points are not shown; y = min/max labels; start and now labels on top; a faint blue fill = since midnight ET (now the whole graph). Values are drawn as steps (a value holds until the next known point). Rebuilt/backfilled points draw as a dimmer dashed line with the legend `dashed = rebuilt from file timestamps`; live snapshots are solid.
+- **Rebuilt history:** `metrics-history-rebuilt.jsonl` (first line `_meta` with version + per-metric report; rows `"reconstructed": true` on the 15-minute grid) is built once by the server (rebuilt when `REBUILD_VERSION` changes) and merged at read time; it never rewrites `metrics-history.jsonl`. Rebuilt and backfilled points only fill the time before a metric's first live snapshot. Sources: genius-clicks logs replayed row by row up to each `all-artists-progress.md` row (matched on done/processed count and unresolved count), `genius-clicks/*.jsonl.before-*.bak` snapshots (mtime, plus the stamp in the name when the copy kept the mtime), each log's own mtime (value constant since then) and birth time, lane-claims start times, `window-baseline.json` (written ≤ 00:30 ET, used only where its opened/points match the log replay), Swift wiring backups + git commits for PAIRS FILED, plus the earlier recheck/seq/wiring-log backfill. Values carry forward between known points; nothing before the first known point; an aggregate (LINE POINTS, OPEN LANES, CATALOG AVG, NOTE INDEX) is only emitted when every log has a known value at that time. Each metric is dropped if its rebuilt now-value disagrees with the live value.
+- **Never** writes `confirmed-seq.json`, `window-baseline.json`, `jobs-window-baseline.json` or `stats-window-baseline.json`.
+
+## 4. API
+
+### `GET /api/health`
+`{"ok": true}`
+
+### `GET /api/state?gen=<int>&rsig=<roster sig>`
+If `gen` equals the server's current generation, the reply is **unchanged**:
+```json
+{"unchanged": true, "gen": 1, "live": false,
+ "progress": [<ProgressRow>...], "window": <Window>,
+ "roster": {"ready": true, "sig": "…", "counts": {...}, "unchanged": true},
+ "takeover": <Takeover>, "harness_age": 25735.6}
+```
+Otherwise it is the **full** reply:
+```json
+{"unchanged": false, "gen": 2,
+ "chips": [<Chip>...], "chips_sig": "md5",
+ "counts": {"Both on the line": 1009, "Partner filed": 192, "Other half missing": 25, "Needs a look": 660},
+ "total": 1226, "store": 1226, "section": 1226, "notes": 19010,
+ "just_landed": 0, "batch": [{"chip":"","partner":"","song":"","line":"","in_bank":true,"kind":"","needs":false}],
+ "progress": [<ProgressRow>...], "window": <Window>, "roster": <Roster>,
+ "takeover": <Takeover>, "harness": {"name":"…","sentence":"…","age":25735.6,"swift_age":24659.3},
+ "live": false, "parse_error": null}
+```
+`roster.rows` is omitted whenever `rsig` matches `roster.sig`. The client keeps its last rows.
+
+```text
+Chip        = {chip, key, section, kind, pair: "both"|"filed"|"missing", flip, labels:[str], needs:bool,
+               brief, partner, new:bool, landed:float,
+               note: null | {artist, song, line, meaning, votes, state, strength, url}}
+ProgressRow = {artist, path, exists, age, rows, valid, invalid, songs, opened, done, missing,
+               saved_notes, second_sense, not_new, last_song, last_line, song_total, opened_songs,
+               unopened_songs, pct, status: "open"|"done", points, partial_tail,
+               new_points, new_songs, new_pct, base_pct}
+Window      = {start: ISO, end: ISO, start_label: "12:00 AM ET", end_label: "2:00 AM ET"}
+Roster      = {ready: bool, error?: str, sig: md5, counts: {in_progress, not_started, completed},
+               rows: [RosterRow...]}
+RosterRow   = {artist, vault_songs, exists, opened, points, lane: null|"lane2"|"main run",
+               pct, state: "in_progress"|"not_started"|"completed",
+               new_points?, new_songs?, new_pct?, base_pct?}      // new_* only when a log exists
+Takeover    = {agent, lane, state, detail, done, total, updated_at, age,
+               subagents: [{name, lane, state, detail, pct}]}
+```
+
+### `GET /api/highlights`
+```json
+{"ok": true, "path": ".../docs/play-on-words/wordplay-highlights.jsonl", "mtime": 1791518775.6,
+ "bad_lines": 0, "count": 199, "confirmed": 168, "possible": 31, "max_seq": 168, "new": 0, "sig": "md5",
+ "rows": [ /* confirmed rows first, sorted by seq desc; then possible rows */
+          {"seq": 168, "is_new": false, "first_seen": 0, "key": "nocap|vaccine|from a cell…",
+           "source": "highlights"|"verified"|"candidates:<file>", "source_id": null,
+           "artist": "NoCap", "list": "ranked"|"honorable mention"|"confirmed (verified)"|"confirmed (candidate)"|"possible, note doesn't confirm",
+           "rank": 1, "song": "Vaccine", "bar": "From a cell to a mansion like I'm Quagmire",
+           "setup_spans": [{"text": "Quagmire", "start": 34, "end": 42}],
+           "play_spans":  [{"text": "mansion", "start": 17, "end": 24, "heard": "man chin"}],
+           "heard_as": "man chin (Quagmire's chin)", "pair": "…", "note_excerpt": "…",
+           "why_unconfirmed": null, "url": "https://genius.com/23870390", "status": "…",
+           "votes": 21, "ag_verdict": null, "low_confidence": ""}]}
+```
+Possible rows have no `seq`. On a missing file: `{"ok": false, "error": "wordplay-highlights.jsonl not found", "rows": [], ...}`. The client polls every 5s and repaints only when `mtime` changes.
+
+### `GET /api/jobs`
+Polled every 5s by its own loop (one request in flight). Always returns every configured job.
+```json
+{"jobs": [{"id": "main"|"verify"|"lane2"|"wiring", "num": 1, "title": "Main all-artists run",
+           "status": "running"|"idle"|"not_started"|"done"|"stopped"|"unknown",
+           "pid": 99004, "alive": true, "last_ts": 1791522063.1, "last_label": "1:01 AM ET",
+           "headline": "Juice WRLD · 701 / 1599 songs", "lines": ["…"], "alerts": ["…"],
+           "unit": "song", "value": 701, "total": 1599, "pct": 43.84,
+           "new": 135, "new_pct": 8.44, "base_pct": 35.4, "bar_key": "main:Juice WRLD"}],
+ "window": {"start": "2026-10-09T00:00:00-04:00", "start_label": "12:00 AM ET", "end_label": "2:00 AM ET"},
+ "generated": 1791522076.4, "generated_label": "1:01 AM ET", "queue_exact": true}
+```
+Current jobs: (1) main all-artists run (PID, current artist songs done / vault, artists finished / queue, 429 signs); (2) verify the 31 possible bars (`verified.jsonl`: N of 31, confirmed / rejected / unsure); (3) lane 2 (claim/done files, claimed artist's songs, gap to the main run vs the buffer of 3); (4) wire confirmed flips into the noun bank (`wordplay-wiring-log.jsonl`: rows wired of 147, images queued, last batch test, backups).
+
+### `GET /api/catches`
+Polled every 5s by its own loop (one request in flight). Server caches the result for 4s.
+```json
+{"ok": true, "counts": {"confirmed": 169, "unconfirmed": 0, "unsure": 17, "rejected": 14},
+ "new": {"confirmed": 0, "unconfirmed": 0, "unsure": 0, "rejected": 0},
+ "window": {"start": "2026-10-09T00:00:00-04:00", "start_label": "12:00 AM ET", "end_label": "2:00 AM ET"},
+ "max_seq": 171,
+ "re_reviewed": {"count": 4, "keep": 0, "fix": 2, "reject": 2, "eligible": 177, "new": 0, "by": {"samuel": 4},
+                 "in_tiles": {"confirmed": 2, "unconfirmed": 0, "unsure": 0, "rejected": 2}},
+ "detail": {"rejected_recheck": 2, "unconfirmed_kept_candidates": 5,
+            "unsure_verify": 17, "rejected_verify": 13, "rejected_candidates": 1, "unconfirmed_possible": 0,
+            "unconfirmed_candidates": 0, "kept_incomplete_candidates": 0, "other_verdicts": 0,
+            "candidate_files": 74, "sound_flip_rows": 1}}
+```
+
+### `GET /api/history?metric=<key>[&days=<n>]`
+Returns `[[ts, value], ...]` (ts = ISO 8601 with ET offset, oldest first) for one metric since 12:00 AM ET today by default (a value known before midnight is re-stamped at 00:00; `days=<n>` for a rolling span; stored history is never trimmed), merged from `metrics-history.jsonl` and `metrics-history-rebuilt.jsonl` and cached by both files' mtime/size. Rebuilt or backfilled points carry a third element `1` (`[ts, value, 1]`). Keys: the 10 tile keys, `artist:<name>`, `job:<id>`. Unknown key or no data -> `[]`.
+
+## 5. Running it
+```
+cd "<root>/docs/play-on-words/live-board"
+nohup python3 server.py >> server.log 2>&1 &     # detach in its own session
+```
+Optional environment variables: `PENWORK_ROOT` (project root) and `PENWORK_BOARD_PORT` (default 47321). Generated files that sit next to `server.py`: `window-baseline.json`, `jobs-window-baseline.json`, `catalog-artists.json`, `confirmed-seq.json`, `metrics-history.jsonl` (append-only trend history) and `metrics-history-rebuilt.jsonl` (one-time 24h reconstruction). Never delete `confirmed-seq.json`, because it holds the permanent numbers.

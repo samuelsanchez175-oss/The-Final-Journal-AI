@@ -1,0 +1,656 @@
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49285)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 2256, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58627)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 3428, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50667)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 3805, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55354)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 3823, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY backfill: 18 rows; catch replay ok: confirmed=True rejected=True re_reviewed=True; wiring replay ok
+TREND_HISTORY startup snapshot written
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55864)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 4467, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55862)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 4449, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+TREND_HISTORY rebuilt 24h history: {"artists": "554 rebuilt, 0 dropped (live mismatch)", "job:main": "rebuilt from Lil Uzi Vert's log history (since the main run moved to it)", "job:uzi": "rebuilt from Lil Uzi Vert's log history", "job:lane2": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:wayne": "rebuilt from Lil Wayne's log history", "job:youngboy": "rebuilt from YoungBoy Never Broke Again's log history", "points": "rebuilt from 01:45 (now-value 34272 vs live 34272)", "open-lanes": "rebuilt from 01:45 (now-value 24 vs live 24)", "catalog-avg": "rebuilt from 01:45 (now-value 97 vs live 97)", "notes": "rebuilt from 01:45 (now-value 25599 vs live 25599)", "_last_aggregate_gap": ["2026-10-09T05:30:00-04:00", ["yeat.jsonl"]], "_unknown_logs_at_grid_start": ["drake.jsonl", "juice wrld.jsonl", "lil uzi vert.jsonl", "veeze.jsonl"], "pairs": "rebuilt from 01:15 (5 snapshots: wiring backups, git, live mtime)", "catch-unconfirmed": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-unsure": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-confirmed / catch-rejected / catch-rereviewed / job:wiring": "kept from the earlier backfill (recheck.jsonl ts, confirmed-seq first_seen, wiring-log ts)", "_stats": {"scanned": 553, "md_points": 575, "md_dropped": 0, "bak_points": 7, "wb_points": 3, "wb_dropped": 1, "lane_start_points": 5}, "_grid": ["2026-10-08T05:45:00-04:00", "2026-10-09T05:30:00-04:00"]}
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+TREND_HISTORY rebuilt 24h history: {"artists": "554 rebuilt, 0 dropped (live mismatch)", "job:main": "rebuilt from the main run's artist at each time (Veeze -> Juice WRLD -> Lil Uzi Vert; switch = untagged all-artists-progress.md rows)", "job:uzi": "rebuilt from Lil Uzi Vert's log history", "job:lane2": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:wayne": "rebuilt from Lil Wayne's log history", "job:youngboy": "rebuilt from YoungBoy Never Broke Again's log history", "points": "rebuilt from 01:45 (now-value 34274 vs live 34274)", "open-lanes": "rebuilt from 01:45 (now-value 24 vs live 24)", "catalog-avg": "rebuilt from 01:45 (now-value 97 vs live 97)", "notes": "rebuilt from 01:45 (now-value 25599 vs live 25599)", "_last_aggregate_gap": ["2026-10-09T05:30:00-04:00", ["yeat.jsonl"]], "_unknown_logs_at_grid_start": ["drake.jsonl", "juice wrld.jsonl", "lil uzi vert.jsonl", "veeze.jsonl"], "pairs": "rebuilt from 01:15 (5 snapshots: wiring backups, git, live mtime)", "catch-unconfirmed": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-unsure": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-confirmed / catch-rejected / catch-rereviewed / job:wiring": "kept from the earlier backfill (recheck.jsonl ts, confirmed-seq first_seen, wiring-log ts)", "_stats": {"scanned": 553, "md_points": 575, "md_dropped": 0, "bak_points": 7, "wb_points": 3, "wb_dropped": 1, "lane_start_points": 5}, "_grid": ["2026-10-08T05:45:00-04:00", "2026-10-09T05:30:00-04:00"]}
+Traceback (most recent call last):
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 5163, in <module>
+    main()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 5156, in main
+    server = ThreadingHTTPServer(("127.0.0.1", BOARD_PORT), Handler)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58269)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 5103, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58285)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 5130, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58282)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 5103, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+TREND_HISTORY rebuilt 24h history: {"artists": "565 rebuilt, 0 dropped (live mismatch)", "job:main": "rebuilt from the main run's artist at each time (Veeze -> Juice WRLD -> Lil Uzi Vert; switch = untagged all-artists-progress.md rows)", "job:uzi": "rebuilt from Lil Uzi Vert's log history", "job:lane2": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:wayne": "rebuilt from Lil Wayne's log history", "job:youngboy": "rebuilt from YoungBoy Never Broke Again's log history", "points": "rebuilt from 01:45 (now-value 34789 vs live 34789)", "open-lanes": "rebuilt from 01:45 (now-value 25 vs live 25)", "catalog-avg": "rebuilt from 01:45 (now-value 97 vs live 97)", "notes": "rebuilt from 01:45 (now-value 25629 vs live 25629)", "_last_aggregate_gap": ["2026-10-09T05:30:00-04:00", ["yeat.jsonl"]], "_unknown_logs_at_grid_start": ["drake.jsonl", "juice wrld.jsonl", "lil uzi vert.jsonl", "veeze.jsonl"], "pairs": "rebuilt from 01:15 (5 snapshots: wiring backups, git, live mtime)", "log cards (opened, pts)": "rebuilt: Drake from 15:30, Juice WRLD from 15:15, Lil Uzi Vert from 01:45, Veeze from 15:15, Charlie Sloth from 05:45, Genius from 05:45, Genius T\u00fcrk\u00e7e \u00c7eviriler from 05:45, Gunna & Future from 05:45, Ian from 05:45, Internet Money, Gunna & Don Toliver from 05:45, Lil Baby, Gunna, Drake from 05:45, Lil Wayne from 05:45, Lil Yachty from 05:45, Mgk from 05:45, Rick Ross from 05:45, Sevensevenseven from 05:45, Trippie Redd from 05:45, Ty Dolla $Ign from 05:45, Tyler, The Creator from 05:45, Ye from 05:45, Yeat from 05:45, Young Stoner Life, Yak Gotti & Sheck Wes from 05:45, Young Stoner Life, Young Thug & Meek Mill from 05:45, Youngboy Never Broke Again from 05:45, Yuno Miles from 05:45", "lane:takeover": "rebuilt: constant 82 since takeover-status.json mtime 10-08T18:38", "lane:sub:Erdos": "rebuilt: constant 35 since takeover-status.json mtime 10-08T18:38", "lane:sub:Popper": "rebuilt: constant 30 since takeover-status.json mtime 10-08T18:38", "lane:sub:Helmholtz": "rebuilt: constant 25 since takeover-status.json mtime 10-08T18:38", "lane:harness": "rebuilt from the harness chat file mtime 10-08T17:22 (status age known since then)", "lane:watcher": "live only: depends on every Swift edit time, and only the latest mtime survives", "catch-unconfirmed": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-unsure": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-confirmed / catch-rejected / catch-rereviewed / job:wiring": "kept from the earlier backfill (recheck.jsonl ts, confirmed-seq first_seen, wiring-log ts)", "_stats": {"scanned": 564, "md_points": 586, "md_dropped": 0, "bak_points": 7, "wb_points": 3, "wb_dropped": 1, "lane_start_points": 5}, "_grid": ["2026-10-08T05:45:00-04:00", "2026-10-09T05:30:00-04:00"]}
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+TREND_HISTORY rebuilt 24h history: {"artists": "733 rebuilt, 0 dropped (live mismatch)", "job:main": "rebuilt from the main run's artist at each time (Veeze -> Juice WRLD -> Lil Uzi Vert -> Lil Wayne; switch = untagged all-artists-progress.md rows)", "job:chat2:trippie-redd": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:lane2": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:chat5": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:chat6:yeat": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:recheck": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "points": "rebuilt from 01:45 (now-value 62614 vs live 62614)", "open-lanes": "rebuilt from 01:45 (now-value 37 vs live 37)", "catalog-avg": "rebuilt from 13:15 (now-value 92 vs live 92)", "notes": "rebuilt from 01:45 (now-value 28509 vs live 28509)", "_last_aggregate_gap": ["2026-10-09T05:45:00-04:00", ["trippie redd.jsonl", "yeat.jsonl"]], "_unknown_logs_at_grid_start": ["drake.jsonl", "juice wrld.jsonl", "lil uzi vert.jsonl", "veeze.jsonl"], "pairs": "rebuilt from 01:15 (6 snapshots: wiring backups, git, live mtime)", "log cards (opened, pts)": "rebuilt: Drake from 15:30, Juice WRLD from 15:15, Lil Uzi Vert from 01:45, Veeze from 15:15, Bslime from 13:15, Charlie Sloth from 13:15, Dababy from 13:15, Diamond* from 13:15, Genius from 13:15, Genius T\u00fcrk\u00e7e \u00c7eviriler from 13:15, Gucci Mane from 13:15, Gunna & Future from 13:15, Ian from 13:15, Internet Money, Gunna & Don Toliver from 13:15, Lil Baby & Gunna from 13:15, Lil Baby, Gunna, Drake from 13:15, Lil Unky from 13:15, Lil Wayne from 13:15, Lil Yachty from 13:15, Mgk from 13:15, Rick Ross from 13:15, Rundown Zay from 13:15, Sevensevenseven from 13:15, Trippie Redd from 13:15, Ty Dolla $Ign from 13:15, Tyler, The Creator from 13:15, Unfoonk from 13:15, Ye from 13:15, Yeat from 13:15, Young Stoner Life & Gunna from 13:15, Young Stoner Life & Young Thug from 13:15, Young Stoner Life, Yak Gotti & Sheck Wes from 13:15, Young Stoner Life, Young Thug & Gunna from 13:15, Young Stoner Life, Young Thug & Meek Mill from 13:15, Youngboy Never Broke Again from 13:15, Yume from 13:15, Yuno Miles from 13:15", "lane:takeover": "rebuilt: constant 82 since takeover-status.json mtime 10-08T18:38", "lane:sub:Erdos": "rebuilt: constant 35 since takeover-status.json mtime 10-08T18:38", "lane:sub:Popper": "rebuilt: constant 30 since takeover-status.json mtime 10-08T18:38", "lane:sub:Helmholtz": "rebuilt: constant 25 since takeover-status.json mtime 10-08T18:38", "lane:harness": "rebuilt from the harness chat file mtime 10-08T17:22 (status age known since then)", "lane:watcher": "live only: depends on every Swift edit time, and only the latest mtime survives", "catch-unconfirmed": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-unsure": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-confirmed / catch-rejected / catch-rereviewed / job:wiring": "kept from the earlier backfill (recheck.jsonl ts, confirmed-seq first_seen, wiring-log ts)", "_stats": {"scanned": 731, "md_points": 811, "md_dropped": 1, "bak_points": 8, "wb_points": 3, "wb_dropped": 1, "lane_start_points": 7}, "_grid": ["2026-10-08T13:15:00-04:00", "2026-10-09T13:00:00-04:00"]}
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+TREND_HISTORY rebuilt 24h history: {"artists": "733 rebuilt, 0 dropped (live mismatch)", "job:main": "rebuilt from the main run's artist at each time (Veeze -> Juice WRLD -> Lil Uzi Vert -> Lil Wayne; switch = untagged all-artists-progress.md rows)", "job:chat2:trippie-redd": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:lane2": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:chat5": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:chat6:yeat": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:recheck": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "points": "rebuilt from 01:45 (now-value 62801 vs live 62801)", "open-lanes": "rebuilt from 01:45 (now-value 37 vs live 37)", "catalog-avg": "rebuilt from 13:30 (now-value 92 vs live 92)", "notes": "rebuilt from 01:45 (now-value 28509 vs live 28509)", "_last_aggregate_gap": ["2026-10-09T05:45:00-04:00", ["trippie redd.jsonl", "yeat.jsonl"]], "_unknown_logs_at_grid_start": ["drake.jsonl", "juice wrld.jsonl", "lil uzi vert.jsonl", "veeze.jsonl"], "pairs": "rebuilt from 01:15 (6 snapshots: wiring backups, git, live mtime)", "log cards (opened, pts)": "rebuilt: Drake from 15:30, Juice WRLD from 15:15, Lil Uzi Vert from 01:45, Veeze from 15:15, Bslime from 13:30, Charlie Sloth from 13:30, Dababy from 13:30, Diamond* from 13:30, Genius from 13:30, Genius T\u00fcrk\u00e7e \u00c7eviriler from 13:30, Gucci Mane from 13:30, Gunna & Future from 13:30, Ian from 13:30, Internet Money, Gunna & Don Toliver from 13:30, Lil Baby & Gunna from 13:30, Lil Baby, Gunna, Drake from 13:30, Lil Unky from 13:30, Lil Wayne from 13:30, Lil Yachty from 13:30, Mgk from 13:30, Rick Ross from 13:30, Rundown Zay from 13:30, Sevensevenseven from 13:30, Trippie Redd from 13:30, Ty Dolla $Ign from 13:30, Tyler, The Creator from 13:30, Unfoonk from 13:30, Ye from 13:30, Yeat from 13:30, Young Stoner Life & Gunna from 13:30, Young Stoner Life & Young Thug from 13:30, Young Stoner Life, Yak Gotti & Sheck Wes from 13:30, Young Stoner Life, Young Thug & Gunna from 13:30, Young Stoner Life, Young Thug & Meek Mill from 13:30, Youngboy Never Broke Again from 13:30, Yume from 13:30, Yuno Miles from 13:30", "lane:takeover": "rebuilt: constant 82 since takeover-status.json mtime 10-08T18:38", "lane:sub:Erdos": "rebuilt: constant 35 since takeover-status.json mtime 10-08T18:38", "lane:sub:Popper": "rebuilt: constant 30 since takeover-status.json mtime 10-08T18:38", "lane:sub:Helmholtz": "rebuilt: constant 25 since takeover-status.json mtime 10-08T18:38", "lane:harness": "rebuilt from the harness chat file mtime 10-08T17:22 (status age known since then)", "lane:watcher": "live only: depends on every Swift edit time, and only the latest mtime survives", "catch-unconfirmed": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-unsure": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-confirmed / catch-rejected / catch-rereviewed / job:wiring": "kept from the earlier backfill (recheck.jsonl ts, confirmed-seq first_seen, wiring-log ts)", "_stats": {"scanned": 731, "md_points": 811, "md_dropped": 1, "bak_points": 8, "wb_points": 3, "wb_dropped": 1, "lane_start_points": 7}, "_grid": ["2026-10-08T13:30:00-04:00", "2026-10-09T13:15:00-04:00"]}
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58031)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 5963, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 60793)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6062, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 63699)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6290, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 65372)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6292, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50371)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6292, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+TREND_HISTORY startup snapshot written
+TREND_HISTORY rebuilt 24h history: {"artists": "734 rebuilt, 0 dropped (live mismatch)", "job:main": "rebuilt from the main run's artist at each time (Veeze -> Juice WRLD -> Lil Uzi Vert -> Lil Wayne; switch = untagged all-artists-progress.md rows)", "job:chat2:trippie-redd": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:lane2": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:chat5": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:chat6:yeat": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "job:recheck": "not rebuilt: value follows whichever artist is claimed at the moment; no per-moment record", "points": "rebuilt from 01:45 (now-value 65651 vs live 65526)", "open-lanes": "rebuilt from 01:45 (now-value 38 vs live 38)", "catalog-avg": "rebuilt from 14:30 (now-value 25 vs live 25)", "notes": "rebuilt from 01:45 (now-value 28509 vs live 28509)", "_last_aggregate_gap": ["2026-10-09T05:45:00-04:00", ["trippie redd.jsonl", "yeat.jsonl"]], "_unknown_logs_at_grid_start": ["drake.jsonl", "juice wrld.jsonl", "lil uzi vert.jsonl", "veeze.jsonl"], "pairs": "rebuilt from 01:15 (10 snapshots: wiring backups, git, live mtime)", "log cards (opened, pts)": "rebuilt: Drake from 15:30, Juice WRLD from 15:15, Lil Uzi Vert from 01:45, Veeze from 15:15, Bslime from 14:30, Charlie Sloth from 14:30, Dababy from 14:30, Diamond* from 14:30, Genius from 14:30, Genius T\u00fcrk\u00e7e \u00c7eviriler from 14:30, Glorilla from 14:30, Gucci Mane from 14:30, Gunna & Future from 14:30, Ian from 14:30, Internet Money, Gunna & Don Toliver from 14:30, Lil Baby & Gunna from 14:30, Lil Baby, Gunna, Drake from 14:30, Lil Unky from 14:30, Lil Wayne from 14:30, Lil Yachty from 14:30, Mgk from 14:30, Rick Ross from 14:30, Rundown Zay from 14:30, Sevensevenseven from 14:30, Trippie Redd from 14:30, Ty Dolla $Ign from 14:30, Tyler, The Creator from 14:30, Unfoonk from 14:30, Ye from 14:30, Yeat from 14:30, Young Stoner Life & Gunna from 14:30, Young Stoner Life & Young Thug from 14:30, Young Stoner Life, Yak Gotti & Sheck Wes from 14:30, Young Stoner Life, Young Thug & Gunna from 14:30, Young Stoner Life, Young Thug & Meek Mill from 14:30, Youngboy Never Broke Again from 14:30, Yume from 14:30, Yuno Miles from 14:30", "lane:takeover": "rebuilt: constant 82 since takeover-status.json mtime 10-08T18:38", "lane:sub:Erdos": "rebuilt: constant 35 since takeover-status.json mtime 10-08T18:38", "lane:sub:Popper": "rebuilt: constant 30 since takeover-status.json mtime 10-08T18:38", "lane:sub:Helmholtz": "rebuilt: constant 25 since takeover-status.json mtime 10-08T18:38", "lane:harness": "rebuilt from the harness chat file mtime 10-08T17:22 (status age known since then)", "lane:watcher": "live only: depends on every Swift edit time, and only the latest mtime survives", "catch-unconfirmed": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-unsure": "not rebuilt: depends on candidate/verify files with no row timestamps; the only older value (stats-window-baseline.json, written ~01:21 under pre-recheck rules) is not comparable", "catch-confirmed / catch-rejected / catch-rereviewed / job:wiring": "kept from the earlier backfill (recheck.jsonl ts, confirmed-seq first_seen, wiring-log ts)", "_stats": {"scanned": 732, "md_points": 816, "md_dropped": 1, "bak_points": 8, "wb_points": 3, "wb_dropped": 1, "lane_start_points": 7}, "_grid": ["2026-10-08T14:30:00-04:00", "2026-10-09T14:15:00-04:00"]}
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50868)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6459, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51039)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6459, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PLAY_ON_WORDS_BOARD http://127.0.0.1:47321
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51640)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6495, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51663)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6495, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51641)
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51664)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+Traceback (most recent call last):
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6504, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6504, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51639)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6486, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51662)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6486, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+TREND_HISTORY startup snapshot written
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51638)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6477, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51661)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6477, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51689)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6477, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52079)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6477, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52224)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6477, in do_GET
+    self.end_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 536, in end_headers
+    self.flush_headers()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 540, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51971)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/docs/play-on-words/live-board/server.py", line 6478, in do_GET
+    self.wfile.write(raw)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
