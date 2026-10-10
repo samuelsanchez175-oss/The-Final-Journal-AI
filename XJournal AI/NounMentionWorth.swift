@@ -14,7 +14,7 @@ nonisolated enum NounMentionWorth {
         }
         let content = text.split(whereSeparator: \.isWhitespace).map(String.init).filter { !fillers.contains($0) }
         if content.count >= 2 { return true }
-        if content.count == 1, let only = content.first, only.count >= 6 { return true }
+        if content.count == 1, let only = content.first, only.count >= 2 { return true }
         return false
     }
 

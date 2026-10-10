@@ -764,7 +764,10 @@ struct NoteEditorView: View {
                                 slamAnimationText: slamAnimationText,
                                 slamAnimationOffset: slamAnimationOffset,
                                 slamAnimationScale: slamAnimationScale,
-                                minHeight: viewport.size.height - 200,
+                                // The audio card sits above this well. A short minimum kept the
+                                // card on screen and shrank the writing area. A full well lets
+                                // the card scroll away with the text.
+                                minHeight: viewport.size.height - ((item.audioPath?.isEmpty == false) ? 16 : 200),
                                 paintEpoch: rhymePaintEpoch,
                                 onWordTap: handleTappedWord,
                                 onHoldSyllableLine: handleHoldSyllableLine,

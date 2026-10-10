@@ -164,6 +164,7 @@ enum NounBankMark {
         .woman: [0xC45C9A, 0xD4A0A8, 0xB01E23, 0xE8A0B0, 0x8B4A6A],
         .money: [0x2F6B3A, 0xD4AF37, 0x1F4D2B, 0xC4A35A, 0x3D8B5A],
         .cars: [0xB22222, 0x1A1A1A, 0xC0C0C0, 0xC4A000, 0x2C2C2C, 0x3D5C4A, 0xFF8700],
+        .motorcycles: [0x1A1A1A, 0xC4A000, 0xB22222, 0xFF8700, 0x2C2C2C, 0x4A4F55],
         .boats: [0x1E4B8C, 0xA9C7D8, 0x0B3A5B, 0xC4A35A, 0x2C2C2C],
         .aviation: [0x5B7C99, 0xC0C0C0, 0x1A1A1A, 0x4A7BA7, 0xD4AF37],
         .military: [0x3D4A3A, 0x4A4F55, 0x1A1A1A, 0x6B5A2B, 0x2F4F4F],
@@ -350,13 +351,13 @@ enum NounBankMark {
         Family(id: "lambo", aliases: ["lambo", "lamborghini"], initials: "LB", hex: 0xC4A000, onHex: 0x1C1C1E, glyph: .car),
         Family(id: "urus", aliases: ["urus", "lambo truck"], initials: "UR", hex: 0xC4A000, onHex: 0x1C1C1E, glyph: .car),
         Family(id: "benz", aliases: ["benz", "mercedes"], initials: "BZ", hex: 0xC0C0C0, onHex: 0x1C1C1E, glyph: .car),
-        Family(id: "g-wagon", aliases: ["g wagon"], initials: "GW", hex: 0x2C2C2C, onHex: 0xC0C0C0, glyph: .car),
+        Family(id: "g-wagon", aliases: ["g wagon", "g wagen"], initials: "GW", hex: 0x2C2C2C, onHex: 0xC0C0C0, glyph: .car),
         Family(id: "range rover", aliases: ["range rover", "rover"], initials: "RR", hex: 0x3D5C4A, onHex: nil, glyph: .car),
         Family(id: "rolls", aliases: ["wraith", "cullinan", "phantom", "rolls", "ghost ride", "new rolls"], initials: "RR", hex: 0xF0EBE0, onHex: 0x1C1C1E, glyph: .car),
         Family(id: "hellcat", aliases: ["hellcat", "trackhawk", "charger", "scat pack", "demon"], initials: "HC", hex: 0xB22222, onHex: nil, glyph: .car),
         Family(id: "porsche", aliases: ["porsche"], initials: "PC", hex: 0x1A1A1A, onHex: 0xD4AF37, glyph: .car),
         Family(id: "audi", aliases: ["audi"], initials: "AU", hex: 0xBB0A30, onHex: nil, glyph: .car),
-        Family(id: "corvette", aliases: ["corvette"], initials: "CV", hex: 0xC41E3A, onHex: nil, glyph: .car),
+        Family(id: "corvette", aliases: ["corvette", "vette"], initials: "CV", hex: 0xC41E3A, onHex: nil, glyph: .car),
         Family(id: "maybach", aliases: ["maybach"], initials: "MB", hex: 0x1C1C1C, onHex: 0xD4AF37, glyph: .car),
         Family(id: "bentley", aliases: ["bentley", "bentayga"], initials: "BT", hex: 0x2F4F2F, onHex: nil, glyph: .car),
         Family(id: "mclaren", aliases: ["mclaren"], initials: "MC", hex: 0xFF8700, onHex: 0x1C1C1E, glyph: .car),
@@ -502,7 +503,7 @@ extension NounBankCategory {
         case .woman: return .heart
         case .family, .friends: return .person
         case .money: return .money
-        case .cars, .boats, .aviation, .military: return .car
+        case .cars, .motorcycles, .boats, .aviation, .military: return .car
         case .places: return .pin
         case .producers: return .waveform
         case .artists, .celebs, .characters, .events, .nba, .nfl, .boxing, .sports, .wrestlers, .actors, .streamers: return .person

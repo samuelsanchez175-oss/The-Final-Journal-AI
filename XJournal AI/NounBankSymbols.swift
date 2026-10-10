@@ -390,13 +390,23 @@ nonisolated enum NounBankSymbols {
             "in 3d": "cube",
             "in 4k": "4k.tv"
         ],
-        .cars: [
+        .motorcycles: [
             "harley": "motorcycle",
             "harley davidson": "engine.combustion.fill",
             "ducati": "flag.checkered",
             "yamaha": "speedometer",
             "kawasaki": "bolt.fill",
             "can am": "scooter",
+            "bike": "bicycle",
+            "bmx bike": "figure.outdoor.cycle",
+            "suzuki": "fuelpump.fill",
+            "indian": "medal.fill",
+            "ninja": "figure.martial.arts",
+            "dirt bike": "mountain.2.fill",
+            "r1": "1.circle.fill",
+            "gsxr": "gauge.with.dots.needle.67percent"
+        ],
+        .cars: [
             "bmw": "car.side.fill",
             "mercedes": "car.rear.fill",
             "ford": "truck.pickup.side.fill",

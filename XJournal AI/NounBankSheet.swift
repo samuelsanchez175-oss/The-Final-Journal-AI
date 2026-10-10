@@ -27,7 +27,7 @@ enum NounBankGroup: String, CaseIterable, Identifiable {
         case .ice: return [.jewelry, .grills, .jewelers, .money]
         case .wear: return [.brands, .clothing, .hair, .nails, .tattoos, .lingerie, .toys]
         case .street: return [.guns, .kill, .opps, .places, .woman, .twerk, .streets, .kingpin, .trapLife, .paranoia]
-        case .vehicles: return [.cars, .boats, .aviation, .military]
+        case .vehicles: return [.cars, .motorcycles, .boats, .aviation, .military]
         case .people: return [.family, .friends, .producers, .artists, .celebs, .events, .characters, .actors, .streamers, .religion]
         case .athletes: return [.nba, .nfl, .boxing, .sports, .wrestlers]
         case .animals: return [.animals, .insects]
@@ -568,6 +568,9 @@ nonisolated enum NounMentionCounts {
 }
 
 private struct NounMentionLinesView: View {
+    private static let tightRow = EdgeInsets(top: 2, leading: 16, bottom: 2, trailing: 16)
+    private static let lyricRow = EdgeInsets(top: 1, leading: 16, bottom: 1, trailing: 16)
+
     let hit: NounBankSearch.Hit
     let count: Int?
     let onInsert: () -> Void
@@ -598,14 +601,16 @@ private struct NounMentionLinesView: View {
         List {
             Section {
                 Text(passageText)
-                    .font(.system(size: 15, weight: .medium, design: .rounded))
+                    .font(.system(size: 12, weight: .regular, design: .rounded))
                     .foregroundStyle(Momentum.contentPrimary)
                     .fixedSize(horizontal: false, vertical: true)
+                    .listRowInsets(NounMentionLinesView.tightRow)
                     .listRowBackground(Momentum.surfaceElevated)
                 if let tally, !missingCatalog {
                     Text(tally.label)
-                        .font(.system(size: 13, weight: .semibold, design: .rounded))
+                        .font(.system(size: 12, weight: .semibold, design: .rounded))
                         .foregroundStyle(Momentum.contentSecondary)
+                        .listRowInsets(NounMentionLinesView.tightRow)
                         .listRowBackground(Momentum.surfaceElevated)
                         .accessibilityLabel(tally.label)
                 }
@@ -615,12 +620,14 @@ private struct NounMentionLinesView: View {
                     Label(filterTitle, systemImage: "line.3.horizontal.decrease.circle")
                 }
                 .disabled(artists.isEmpty)
+                .listRowInsets(NounMentionLinesView.tightRow)
                 .listRowBackground(Momentum.surfaceElevated)
                 .accessibilityHint("Opens a list of artists so the lines can be limited to one")
                 if !extraNames.isEmpty {
                     Text("Also matches \(extraNames.joined(separator: ", "))")
-                        .font(.system(size: 13, weight: .medium, design: .rounded))
+                        .font(.system(size: 12, weight: .regular, design: .rounded))
                         .foregroundStyle(Momentum.contentSecondary)
+                        .listRowInsets(NounMentionLinesView.tightRow)
                         .listRowBackground(Momentum.surfaceElevated)
                 }
                 if hit.category == .feelings {
@@ -656,6 +663,10 @@ private struct NounMentionLinesView: View {
                 }
             }
         }
+        .listStyle(.plain)
+        .listSectionSpacing(4)
+        .listRowSpacing(0)
+        .environment(\.defaultMinListRowHeight, 1)
         .listSectionIndexVisibility(showsIndex ? .visible : .hidden)
         .navigationTitle(hit.item.insertWord)
         .navigationBarTitleDisplayMode(.inline)
@@ -815,15 +826,18 @@ private struct NounMentionLinesView: View {
                             Text(NounMentionHighlight.mark(row.line, phrases: phrases))
                                 .font(.system(size: 15, weight: .medium, design: .rounded))
                         }
-                        .padding(.vertical, 2)
+                        .listRowInsets(NounMentionLinesView.lyricRow)
+                        .listRowSeparator(.hidden)
                         .listRowBackground(Momentum.surfaceElevated)
                     }
                 }
             } header: {
                 Text(artist.name)
-                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .font(.system(size: 15, weight: .semibold, design: .rounded))
                     .foregroundStyle(Momentum.contentPrimary)
                     .textCase(nil)
+                    .padding(.top, 6)
+                    .padding(.bottom, 0)
             }
             .sectionIndexLabel(indexed ? indexLabel(for: artist) : nil)
         }
