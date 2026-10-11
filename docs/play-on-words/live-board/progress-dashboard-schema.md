@@ -13,11 +13,15 @@ The reference implementation is `docs/play-on-words/live-board/server.py`. It is
 │  In progress · N                 │  Each lane: title, state, meta, points/%,  │
 │  Not started · N                 │   bar (amber + blue new-work), newnote     │
 │  Completed · N                   │                                            │
+│  ── REMAINING ARTISTS · N ──     │                                            │
+│  (amber, dimmed, 20+ by default) │                                            │
 ├──────────────────────────────────┴────────────────────────────────────────────┤
 │ Top readouts (5 across): PAIRS FILED · NOTE INDEX · LINE POINTS · OPEN LANES ·  │
 │ CATALOG AVG                                                                     │
 │ Catch readouts (same grid, 5 tiles): CONFIRMED · UNCONFIRMED · UNSURE ·        │
 │ REJECTED · RE-REVIEWED (overlay)                                                │
+│ Wordplay tab readouts (same grid, 5 tiles): SOUND FLIPS & HOMOPHONES · DOUBLE   │
+│ MEANINGS · SPLIT NAMES & BRANDS · HIDDEN REFERENCES · PUNCHLINE SETUPS (flag)   │
 ├───────────────────────────────────────────────────────────────────────────────┤
 │ Filters (All / Both on the line / Partner filed / Other half missing / Needs a  │
 │ look) + search                                                                  │
@@ -32,6 +36,11 @@ main:
   Last pairs the other terminal reported (hidden when empty)
   (No separate gray pairs table: the Wordplay Highlights area is the only place pairs/flips are listed; the old Heard / On the same line / What appears / The bar table was removed 2026-10-09.)
 ```
+
+### Remaining artists (left, directly under the roster, added 2026-10-10)
+- **Rule:** amber `REMAINING ARTISTS · N · M with 20+ songs` header, dimmed rows (`name … done/vault done · vault songs`), one row per person (same `split_artist` / `catalog_people` view as the roster, so combined credits never make bogus rows; collectives such as Young Stoner Life stay as the roster shows them). Sorted by vault size, largest first. Rows under 20 vault songs are collapsed behind their own `Show N artists under 20 songs` toggle. Sent as `roster.remaining` on `/api/state` (dropped from the response, like `rows`/`people`, when the roster sig is unchanged).
+- **Not done = none of:** `lane-claims/<artist>.done` exists (a complete `processed=N/N` record, or any content when the artist has no click log; most .done files are the lane's claim stub renamed on exit, so when a click log exists and still shows uncovered vault songs the log wins); an `all-artists-progress.md` row for the artist says `completed`, or a row's Done-after + Unresolved ≥ the artist's catalog vault (not the md's own Vault Songs column, which can be a smaller per-lane credit count); the click log(s) cover every vault song (opened + logged missing/unresolved ≥ vault, per person or per credit). `Quality Control` (label credit) is skipped.
+- **Numbers:** vault = distinct songs in `tools/bar-hits-catalog/BarHitsCatalog.sqlite` (read-only, via the cached `catalog_artists()` query; re-run only when the sqlite file changes). Done = click-log opened songs, else the latest progress-md Done-after; omitted when neither exists. The list is cached on the roster rows + progress md + lane-claims dir mtime.
 
 ### Artist roster (left, under WORD_FLIPS)
 - **Rows:** every artist in the catalog, one row each. A row shows the name, a lane tag pill, `done/total · pct%`, a 5px bar (amber done + blue new-work), and a blue "+N new lines … since … resets …" note that only appears when N > 0.
@@ -125,6 +134,16 @@ main:
 - **Re-reviewed (overlay, not a bucket):** lines with a Genius annotation (url / annotation id on the row) and a second-pass verdict in `recheck.jsonl` from any non-samuel reviewer (e.g. `by: "antigravity-recheck"`), plus all of Samuel's own rows; deduped by `confirmed_key`. Each such line still counts in exactly one of the four tiles above by its verdict. Caption `N re-reviewed · K keep · F fixed · R rejected`. Bar = re-reviewed / annotated lines eligible for recheck (confirmed lines + unconfirmed mined candidates with an annotation, plus the re-reviewed lines themselves). Returned on `/api/catches` as `re_reviewed`.
 - Each tile has the blue `+N new since <window start> ET, resets <next>` line (2-clock-hour window). Baselines live only in `stats-window-baseline.json`; never in `window-baseline.json`, `jobs-window-baseline.json` or `confirmed-seq.json`.
 - Own poll (`/api/catches`, every 5s, one in flight), in-place `setCounter`/`setText` updates, server result cached 4s.
+
+### Wordplay tab tiles (third readout row, added 2026-10-10)
+- **Rule:** directly under the catch row sits a third same-size row (`<div class="telemetry catches wp-tabs" id="wp-tabs">`), one `.readout` tile per Play on Words tab, built exactly like the catch tiles (big number, caption, yellow/blue `.tile-bar` + denominator caption, blue `+N new since 12:00 AM ET, resets 12:00 AM` note, click-for-trend graph mode). Polled from `GET /api/wordplay-tabs` every 5s (one request in flight, 4s server cache), updated in place.
+- **Tiles / metric keys:** SOUND FLIPS & HOMOPHONES `tab-sound` (tab `sound_flips`: sound_flip, homophone) · DOUBLE MEANINGS `tab-double` (`double_meanings`: double_meaning, idiom_twist, extended_metaphor) · SPLIT NAMES & BRANDS `tab-split` (`split_names`: split_name, split_brand) · HIDDEN REFERENCES `tab-hidden` (`hidden_references`: hidden_title, hidden_number, letter_play) · PUNCHLINE SETUPS `tab-punch` (a flag, not a tab).
+- **Source (live, never hardcoded):** `wordplay-index/index.jsonl` (scripted full re-index; `verdict` KEEP/FIX/REJECT, `tab`, `punchline_setup`, per-row `ts`) merged with `wordplay-index/index-v2.jsonl` (manual line-by-line review; `verdict` KEEP/REJECT/UNSURE, `tab`, keyed on `line`). Lines are deduped by `confirmed_key(artist, song, line)` (case/whitespace/zero-width normalised); last row per line wins inside each file and an index-v2 verdict overrides index.jsonl for the same line. Counted = verdict KEEP or FIX (FIX = kept with corrected spans; `summary.md`'s tab totals are KEEP+FIX of index.jsonl). PUNCHLINE SETUPS = kept lines with `punchline_setup: true`, plus index-v2 KEEP rows filed under tab `punchline_setups` (an index-v2 row without the field keeps the index flag).
+- **Caption:** where the number comes from, e.g. `1158 re-index + 19 line review`. Note: `summary.md` (03:05 ET re-index) reports 1159 / 1745 / 40 / 109 / 2380; the tiles differ because of the dedupe (two Yeat lines in index.jsonl differ only by a zero-width character in the song title) and the index-v2 review rows/overrides.
+- **Bar:** tab tiles = that tab's kept lines / all kept tabbed lines (sum of the 4 tab tiles, `N of M tabbed lines`); PUNCHLINE SETUPS = flagged / all kept lines (`flagged on N of M kept lines`). Blue = kept lines added since 12:00 AM ET.
+- **+N new since 12:00 AM ET:** baselines are extra `tab-*` keys in `stats-window-baseline.json`; a missing baseline is seeded with the midnight value rebuilt from file timestamps (below) when that is knowable, else with the first value seen in the window.
+- **Graph history:** `tab-*` keys are in every 15-minute live snapshot (`metrics-history.jsonl` `tiles`). Dashed (rebuilt) points are computed in memory (never written) on the 15-minute grid: index.jsonl rows count from their `ts`; index-v2.jsonl counts in full from its mtime on, is absent before an `index-v2.jsonl.before-*-YYYYMMDD_HHMMSS.missing` marker's stamp, and grid points in between are left out (unknown). Dropped entirely unless the rebuild at "now" equals the live counts. Live points win from the first live snapshot on.
+- **Filtering the list below:** not wired (the highlights list and pairs filters carry no tab field).
 
 ### Stat-tile progress bars (all 10 tiles)
 - **Rule:** every stat tile (PAIRS FILED, NOTE INDEX, LINE POINTS, OPEN LANES, CATALOG AVG, CONFIRMED, UNCONFIRMED, UNSURE, REJECTED, RE-REVIEWED) has a thin progress bar right under its big number: the existing `.bar` with a **yellow/amber** fill for the total so far plus a **blue** `.new-work` segment at the leading end for what was added in the current 2-clock-hour ET window. Under it, a tiny caption names the denominator and the fill (e.g. `1004 of 1226 both halves · 82%`); the bar's tooltip adds `blue = +N since <start> ET, resets <next>`.
@@ -225,6 +244,8 @@ Polled every 5s by its own loop (one request in flight). Always returns every co
 ```
 Current jobs: (1) main all-artists run (PID, current artist songs done / vault, artists finished / queue, 429 signs); (2) verify the 31 possible bars (`verified.jsonl`: N of 31, confirmed / rejected / unsure); (3) lane 2 (claim/done files, claimed artist's songs, gap to the main run vs the buffer of 3); (4) wire confirmed flips into the noun bank (`wordplay-wiring-log.jsonl`: rows wired of 147, images queued, last batch test, backups).
 
+Reject rerun card (added 2026-10-10): id `reject-rerun`, title `Reject rerun (Grok Box)`, pinned (`pin: true`: shown as a card in every state, never moved to the DONE strip; the jobs header still counts only running/idle/waiting cards). Reads `confirmed-recheck/reject-rerun-progress.json` (`{total, reviewed, keep, reject, unsure, tabs:{sound_flip_homophone, double_meaning, split_name_brand, hidden_reference}, punchline_flags, updated_et, state}`) and `chat-status/reject-rerun.md` (Key: value lines, same rules as chat-N.md). Bar = reviewed / total, blue = reviewed since 12:00 AM ET (`jobs-window-baseline.json` key `reject-rerun`). Headline `N reviewed · K KEEP · R REJECT · U UNSURE`; lines: keeps per tab, punchline flags, last update (ET) + raw state. Status: json `state` done/finished (or reviewed ≥ total) → done; stopped/error → stopped; running and updated within 10 min → running, else idle. No json yet → `NOT STARTED YET`, headline `not started`, total = current REJECTED tile count as the expected size. Graph mode via `job:reject-rerun` like every job card.
+
 ### `GET /api/catches`
 Polled every 5s by its own loop (one request in flight). Server caches the result for 4s.
 ```json
@@ -240,8 +261,20 @@ Polled every 5s by its own loop (one request in flight). Server caches the resul
             "candidate_files": 74, "sound_flip_rows": 1}}
 ```
 
+### `GET /api/wordplay-tabs`
+Polled every 5s (one request in flight); server caches 4s.
+```json
+{"ok": true, "counts": {"tab-sound": 1177, "tab-double": 1798, "tab-split": 40, "tab-hidden": 132, "tab-punch": 2381},
+ "new": {"tab-sound": 0, "...": 0}, "window": {"start": "2026-10-10T00:00:00-04:00", "start_label": "12:00 AM ET", "end_label": "12:00 AM ET"},
+ "kept": 3148, "tabbed": 3147,
+ "tabs": [{"id": "tab-sound", "tab": "sound_flips", "label": "SOUND FLIPS & HOMOPHONES", "count": 1177, "new": 0, "index": 1158, "v2": 19,
+           "bar": {"value": 1177, "total": 3147, "new": 0, "caption": "1177 of 3147 tabbed lines", "pct": 37.4, "new_pct": 0, "base_pct": 37.4}}, "..."],
+ "sources": {"index": "docs/play-on-words/wordplay-index/index.jsonl", "index_v2": "docs/play-on-words/wordplay-index/index-v2.jsonl",
+             "index_rows": 8887, "index_v2_rows": 125, "rule": "index-v2 verdict overrides index.jsonl per artist+song+line; KEEP/FIX counted"}}
+```
+
 ### `GET /api/history?metric=<key>[&days=<n>]`
-Returns `[[ts, value], ...]` (ts = ISO 8601 with ET offset, oldest first) for one metric since 12:00 AM ET today by default (a value known before midnight is re-stamped at 00:00; `days=<n>` for a rolling span; stored history is never trimmed), merged from `metrics-history.jsonl` and `metrics-history-rebuilt.jsonl` and cached by both files' mtime/size. Rebuilt or backfilled points carry a third element `1` (`[ts, value, 1]`). Keys: the 10 tile keys, `artist:<name>`, `job:<id>`. Unknown key or no data -> `[]`.
+Returns `[[ts, value], ...]` (ts = ISO 8601 with ET offset, oldest first) for one metric since 12:00 AM ET today by default (a value known before midnight is re-stamped at 00:00; `days=<n>` for a rolling span; stored history is never trimmed), merged from `metrics-history.jsonl` and `metrics-history-rebuilt.jsonl` and cached by both files' mtime/size. Rebuilt or backfilled points carry a third element `1` (`[ts, value, 1]`). Keys: the 10 tile keys, the 5 wordplay tab keys (`tab-sound`, `tab-double`, `tab-split`, `tab-hidden`, `tab-punch`; their rebuilt points are computed in memory from index.jsonl `ts` / index-v2.jsonl mtime), `artist:<name>`, `job:<id>`. Unknown key or no data -> `[]`.
 
 ## 5. Running it
 ```

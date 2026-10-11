@@ -1,8 +1,8 @@
-# Chat 6 · Destroy Lonely
-updated: 2026-10-10 02:12 ET
+# Chat 6 · Earl Sweatshirt
+updated: 2026-10-10 17:38 ET
 state: running
-doing: Reverse search on Destroy Lonely (song 15/772)
-progress: 15/772 songs (15 done, 0 unresolved)
-since last update: Recent songs: which way, which one, which 1 / klueless
+doing: Reverse search on Earl Sweatshirt (song 350/351)
+progress: 350/351 songs (265 done, 85 unresolved)
+since last update: Recent songs: 2016 shit DWFH, 2010, 20 Wave Caps
 problems: none
 needs Samuel: no

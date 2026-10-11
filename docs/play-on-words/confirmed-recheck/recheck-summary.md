@@ -1,11 +1,11 @@
-# Confirmed Recheck Summary (Progress: 2139 reviewed)
-Last updated: 2026-10-10T06:00:05.141792+00:00
+# Confirmed Recheck Summary (Progress: 11684 reviewed)
+Last updated: 2026-10-10T15:30:05.900646+00:00
 
 ## Overall Counts
-- **Total Reviewed:** 2139
-- **KEEP:** 140 (6.5%)
-- **FIX:** 45 (2.1%)
-- **REJECT:** 1954 (91.4%)
+- **Total Reviewed:** 11684
+- **KEEP:** 3154 (27.0%)
+- **FIX:** 89 (0.8%)
+- **REJECT:** 8441 (72.2%)
 - **Needs Samuel Review (`needs_samuel: true`):** 4
 
 ## Wired But Rejected
@@ -25,6 +25,50 @@ Last updated: 2026-10-10T06:00:05.141792+00:00
 | Diddy | Another One Of Me | `Coi Leray in L.A., no more parties (No m...` | L.A. → Coi Leray = **Coi Leray (sounds like '…in L.A.')** | backwards per Samuel: Coi Leray is the wordplay |
 | The Game | No Brakes | `And I’m sippin’ Quavo like a Migo` | Migo → Quavo = **Quavo, a member of the Migos** | wordplay on Migos member names per Samuel, not Jose Cuervo |
 | The Game | No Brakes | `And I’m sippin’ Quavo like a Migo` | Migo → Quavo = **Quavo, a member of the Migos** | Wordplay on Migos member names per Samuel, setup Migo (not Jose Cuervo). |
+| Juice WRLD | Cali Girl | `Make your nigga take off that way Make y...` | that way → take off = **Takeoff (Migos)** | Take off flips to Takeoff (Migos), set up by song title that way (Dat Way). |
+| Juice WRLD | 2 Seat (Lifestyle Urgent) | `I put the Lex to Luger, uh` | Lex → to Luger = **Lex Luger** | Phonetic combination of Lexus and Luger into producer Lex Luger, but lacks an external setup cue. |
+| Juice WRLD | Black Out (Ca$h Out) | `Six ’Lac trucks all blacked-out` | blacked-out → Six ’Lac = **6LACK** | Six 'Lac phonetically flips to artist 6LACK, cued by blacked-out. |
+| Veeze | Get Lucki | `These niggas dumb, they'll steal the ste...` | steak → meal = **mill (million)** | Meal flips to mill ($1M), set up by steak. |
+| Drake | Pop That | `Bitch, I ball like two eyelids` | eyelids → I ball = **eyeball** | I ball flips to eyeball, set up by eyelids. |
+| Drake | Stay Schemin’ | `From the hoopty coupe to that Ghost, daw...` | Ghost → dawg = **Ghost Dog** | Play on Rolls-Royce Ghost and Ghost Dog, but the second half of couplet was not captured in this bar. |
+| Drake | No Brakes | `Nigga snuck a whole Drac' in this bitch` | in this bitch → Drac' = **Drake** | Drac' firearm flips to Drake (who is featured on the song), but lacks an explicit setup cue. |
+| Drake | Off That | `The only time I deal in past tense` | past → tense = **tints** | Bar is only first half of couplet; the past tints/rims payoff is in the missing second line. |
+| A$AP Mob | Blowin’ Minds (Skateboard) | `Deadly with the pins, I don't bowl aroun...` | bowl around → pins = **pens** | Pins phonetically flips to pens (writing bars), set up by bowling reference 'bowl around'. |
+| Lil Uzi Vert | Vibe* | `Got you on tape, now a hoe can’t duck me` | tape → duck = **duct (duct tape)** | Duck flips to duct (duct tape), set up by 'tape'. |
+| Lil Wayne | Uneasy | `I been about a bag 'cause all I wanted w...` | bag → be a G = **B-A-G (bag)** | Phonetic spelling flip: 'be a G' sounds like B-A-G, echoing 'about a bag'. |
+| Lil Wayne | We Alright | `But loose lips sink ships, but I just le...` | sink ships → Worship = **war ship** | Worship flips to war ship, cued by maritime idiom 'loose lips sink ships'. |
+| YoungBoy Never Broke Again | Panoramic | `Batman in these Robins, for some shoes, ...` | Batman → Robins = **Robin (Batman & Robin)** | Robin's Jean flips to Batman's sidekick Robin, set up by Batman. |
+| NoCap | FreeStyle | `My outfit Gucci, I’m just tryna maintain` | Gucci → maintain = **Gucci Mane** | Maintain phonetically flips to 'Mane' (Gucci Mane), set up by Gucci. |
+| Veeze | Still Tippin | `My momma done told me tricks for kids` | for kids → tricks = **Trix (silly rabbit, Trix are for kids)** | Tricks flips to Trix cereal, set up by advertising slogan 'for kids'. |
+| Juice WRLD | Barry Bonds (Lock On) | `My eyes got big off the molly, raw` | eyes got big → molly, raw = **Maaly Raw (producer tag / signature)** | Molly, raw phonetically flips to producer Maaly Raw, set up by tag cue 'eyes got big' ('That be Maaly Raw'). |
+| DJ Snake | Enzo | `I don't play, boy, I'm not Carti (21!)` | Carti → play, boy = **Playboi (Playboi Carti)** | 'play, boy' phonetically splits Playboi Carti, set up by Carti. |
+| Lil Yachty | Atlanta House Freestyle | `This all makin' sense like the back of t...` | back of the couch → sense = **cents (loose change in the couch)** | Homophone flip: 'sense' flips to 'cents' (loose coins), cued by 'back of the couch'. |
+| Rick Ross | Certified | `The last time we all seen it, it was Aug...` | August → all seen it = **August Alsina** | Phonetic flip: 'all seen it' sounds like Alsina, set up by August (singer August Alsina). |
+| Rick Ross | Hands Up | `And my homies got that work, they Alicia...` | work → Alicia'n them keys = **unleashin' them keys (Alicia Keys)** | Play on producer Swizz Beatz's wife Alicia Keys: 'Alicia'n them keys' flips to 'unleashin' them keys' (kilos of work). |
+| Lil Yachty | Knuck If You Buck | `She think I'm gon' lick her, shit, my na...` | malt → lick her = **liquor (malt liquor)** | Phonetic flip: 'lick her' sounds like liquor, set up by 'malt' (malt liquor). |
+| Lil Wayne | Senile | `Started from the, like Christina, got a ...` | Christina → a million = **Milian (Christina Milian)** | Phonetic flip: 'a million' sounds like Milian, set up by Christina (actress/singer Christina Milian). |
+| Lil Wayne | SMUCKERS | `I'm starin' at a tramp on lean, make my ...` | jump → tramp on lean = **trampoline** | Phonetic flip: 'tramp on lean' sounds like trampoline, set up by 'jump'. |
+| Lil Wayne | Rolls Royce Weather Every Day | `Pockets deep and I’mma get in depth like...` | Johnny → depth = **Depp (Johnny Depp)** | Phonetic flip: 'depth' sounds like Depp, set up by Johnny (Johnny Depp). |
+| Lil Wayne | Put Some Keys On That | `Bitch, I'm col', not dude off Martin` | dude off Martin → col' = **Cole (Cole Brown from Martin)** | Homophone flip: 'col'' (cold) sounds like Cole, cued by 'dude off Martin' (Cole Brown). |
+| Lil Wayne | Pop That | `Bitch, I ball like two eyelids` | eyelids → I ball = **eyeball** | I ball flips to eyeball, set up by eyelids. |
+| YoungBoy Never Broke Again | My Window | `I work the TEC like Window Microsoft, my...` | Window Microsoft → TEC = **tech (technology / Microsoft)** | Homophone flip: firearm 'TEC' (TEC-9) flips to 'tech' (technology), cued by 'Window Microsoft'. |
+| YoungBoy Never Broke Again | How I Been | `In May, you know I'll change the weather` | change the weather → In May = **Mayweather (his ex Yaya Mayweather)** | Phonetic combination flip: 'May' + 'weather' sounds like Mayweather (his ex Yaya Mayweather), cued by 'change the weather'. |
+| YoungBoy Never Broke Again | TTG | `Do you like a pair of lungs, all that sm...` | pair of lungs, all that smoke → coffin = **coughin' (coughing up smoke)** | Homophone sound flip: 'coffin' sounds like 'coughin'', set up by 'pair of lungs' and 'all that smoke'. |
+| YoungBoy Never Broke Again | Fuck Niggaz | `.223, that Michael Jordan on they hoes, ...` | Michael Jordan → pimpin' = **Scottie Pippen (Michael Jordan's Bulls teammate)** | Phonetic sound flip: 'pimpin'' sounds like Scottie Pippen, set up by 'Michael Jordan'. |
+| YoungBoy Never Broke Again | House Arrest Tingz | `Tryna grow up, don't come in contact wit...` | violence → Violins = **violence / violins** | Homophone flip: 'Violins' phonetically flips off 'violence'. |
+| YoungBoy Never Broke Again | I Forgive Them | `And all my niggas bulls, they 5, they ha...` | bulls → rosed up = **Derrick Rose (Chicago Bulls)** | Phonetic sound flip: 'rosed up' sounds like Derrick Rose, set up by 'bulls'. |
+| YoungBoy Never Broke Again | My Life I Apologize | `I did it, I'm here, you know that my bun...` | bunny, ears → karats = **carrots (rabbit food) / diamond karats** | Homophone sound flip: diamond 'karats' sounds like 'carrots', set up by 'bunny' and 'ears'. |
+| YoungBoy Never Broke Again | Big Timerz | `And I ain't meek but I know we gon' make...` | meek → make a mil = **Meek Mill** | Phonetic split flip: 'meek' + 'make a mil' sounds like rapper Meek Mill. |
+| YoungBoy Never Broke Again | 38 Baby | `Andy Gaulden was my uncle, robbin' shit ...` | robbin' shit → genes = **Robin's Jeans / genetics (genes)** | Homophone flip: 'robbin'... genes' phonetically flips to designer brand 'Robin's Jeans'. |
+| Rick Ross | Mercy | `It’s Rozay, I sold food like Cee-Lo` | Cee-Lo → sold food = **Soul Food (Goodie Mob's debut album Soul Food)** | Phonetic sound flip: 'sold food' sounds like 'Soul Food' (classic album by Goodie Mob, Cee-Lo Green's group), set up by 'Cee-Lo'. |
+| Pop Smoke | West Coast Shit | `Somebody call Batman, I'm robbin' (Brrt)` | Batman → robbin' = **Robin (Batman & Robin)** | Homophone sound flip: 'robbin'' sounds like Batman's sidekick 'Robin', set up by 'Batman'. |
+| Offset | FREE PICK | `I ain't never wanna be Batman, nigga, I ...` | Batman → robbin' = **Robin (Batman & Robin)** | Homophone sound flip: 'robbin'' sounds like Batman's sidekick 'Robin', set up by 'Batman'. |
+| Cardi B | I Do | `Only time that I'm a lady's when I lay t...` | lady's → lay these = **lady's (and lay these)** | Homophone sound flip: 'lay these' phonetically echoes 'lady's'. |
+| Gunna | Still Ain’t Finished | `Keep the iron, man, they could call me R...` | Robert Downey → iron, man = **Iron Man (played by Robert Downey Jr.)** | Phonetic split flip: 'iron, man' sounds like superhero 'Iron Man', cued by actor 'Robert Downey'. |
+| Fetty Wap | 679 | `He playing Batman, Fetty's gonna rob him` | Batman → rob him = **Robin (Batman & Robin)** | Phonetic sound flip: 'rob him' sounds like superhero sidekick 'Robin', directly paired with 'Batman'. |
+| Meek Mill | Pullin Up | `And she's-a-dime like Hussein` | Hussein → she's-a-dime = **Saddam (Saddam Hussein)** | Phonetic sound flip: 'she's-a-dime' phonetically sounds like 'Saddam', cued by 'Hussein'. |
+| Diddy | Another One Of Me | `Coi Leray in L.A., no more parties (No m...` | L.A. → Coi Leray = **Coi Leray (sounds like '…in L.A.')** | backwards per Samuel: Coi Leray is the wordplay |
+| The Game | No Brakes | `And I’m sippin’ Quavo like a Migo` | Migo → Quavo = **Quavo, a member of the Migos** | wordplay on Migos member names per Samuel, not Jose Cuervo |
 | Juice WRLD | Cali Girl | `Make your nigga take off that way Make y...` | that way → take off = **Takeoff (Migos)** | Take off flips to Takeoff (Migos), set up by song title that way (Dat Way). |
 | Juice WRLD | 2 Seat (Lifestyle Urgent) | `I put the Lex to Luger, uh` | Lex → to Luger = **Lex Luger** | Phonetic combination of Lexus and Luger into producer Lex Luger, but lacks an external setup cue. |
 | Juice WRLD | Black Out (Ca$h Out) | `Six ’Lac trucks all blacked-out` | blacked-out → Six ’Lac = **6LACK** | Six 'Lac phonetically flips to artist 6LACK, cued by blacked-out. |
@@ -2025,3 +2069,6490 @@ Last updated: 2026-10-10T06:00:05.141792+00:00
 | Fetty Wap | Whateva | `I’m like Silver Surfer baby, you can see me s...` | Mined candidate without confirmed sound flip or second reading. |
 | Don Toliver | You | `A lil' brown-skin hurricane, a bae-bae, bring...` | Mined candidate without confirmed sound flip or second reading. |
 | Don Toliver | VELOUR | `Hardstone psychos by my side (Ow)` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Too Many Nights | `She been comin' hot just like a hеat stroke (...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Time Heals All | `I wan' get loud with somebody` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 4 Da Fam | `I don't think you understand what type of eve...` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 4 Da Fam | `Our tracks nice, hug the block to track dice` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 4 Da Fam | `Yo, y'all niggas truly ain't ready for this D...` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 30 Something | `I used to play the block like that (Like that...` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 22 Two’s | `'Cause too much black and too much love, equa...` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 22 Two’s | `You never ready, forever petty minds stay pet...` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 2002 Funk Flex Freestyle / Back from France Freestyle | `I'm on another continent, you still ain't con...` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 1999 Tim Westwood Freestyle | `Duck spit, arm shake, who wan' gon' play` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 100$ Bill | `Einstein, my mind, this MC move white squares...` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 100$ Bill | `Move fat packs, Jack Gleason` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 100$ Bill | `Four-four's at the 4-0 (Wait) for O` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 100 Most Influential People In The World: Jay-Z | `— and as a co-owner of the NBA Nets, he helpe...` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 1-900-Hustler | `Never play the house, think drought, keep hea...` | Mined candidate without confirmed sound flip or second reading. |
+| JAY-Z | 1-900-Hustler | `I know you heard "Friend or Foe," this ain't ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Kendrick You Next | `Cutting through the alleys, you must be on th...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Jefe | `Fuck up a check, then we makin' it back` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I’m a Boss | `better run that dope back (Dope back)` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I’m Tryna | `I'm like Shaq all in the paint I bang on them...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I’m Good (IANAHB2) | `Cause I ball hard like D-Rose` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I’m Da Plug (Freestyle) | `Bought my chick a rock, that shit look like a...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I’m A Thug | `Nigga never sleep, nigga never eat shrimp` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Im On One | `I'm feeling so cold, yеah, we riding dirty bu...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Ice Cream (Freestyle) | `Before you even started that Harley, no we ai...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I Like It | `I see it, like it, I'ma cop it, oh!` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I Got the Juice | `Getting blunted in the back nigga` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I Did It for My Dawgz | `Rims on the jeep sittin higher than Khalifa` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I Did It for My Dawgz | `Highway to life, need a hundred mill exit` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I Did It for My Dawgz | `Nickel-plated Ruger have you in a box on Worl...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | I Did It for My Dawgz | `Ricky's diesel got my hood looking like it's ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | House Party | `All these stones in my chain make me a rock b...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Heavy Heart | `When shorty got a big head, I was like hol' G...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Heaven’s Afternoon | `I'm focused, I'm Kobe, I kill these niggas` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Heaven’s Afternoon | `All we need is Keisha, all we need is Becky` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Confident | `That's only legal with a doctor's note (Oh?)` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Confident | `She money dance with the money team,` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Children | `What about the children?` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Boyfriend | `If I was your boyfriend, I'd never let you go` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Bieber’s Paparazzi Deposition | `BIEBER: I was found on Youtube. Umm, I think ...` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Bieber’s Paparazzi Deposition | `PROSECUTION: Are you aware that know that Sco...` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Beauty and a Beat | `So just forget about the world, we young toni...` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Beauty and a Beat | `B-b-beauty, beauty and the beast` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Beauty and a Beat | `I-i-i-i-in time, ink lines` | Mined candidate without confirmed sound flip or second reading. |
+| Justin Bieber | Backpack | `When I die they gonna name this planet after ...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Swimming Shoes | `Do we need swimming shoes? (Mmm) I think this...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Sweet Home | `And mines out the oven` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | track 2 | `Know I won't talk on the net, I won't at you ...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | which one | `Pop a G6 molly and I'm takin' off` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | tokyoto | `Bought her vêtements, she call it VETEMENTS t...` | Mined candidate without confirmed sound flip or second reading. |
+| NoCap | Joy-Den | `I flew the bitch in, I guess that's just my w...` | Mined candidate without confirmed wordplay or second reading. |
+| NoCap | Drug Habits | `Draco got a elbow while speedin' this Lamborg...` | Mined candidate without confirmed wordplay or second reading. |
+| NoCap | Time Will Tell | `Went and seen Johnny soon as I got up out the...` | Mined candidate without confirmed wordplay or second reading. |
+| NoCap | Time Will Tell | `Niggas crossed it like Paul, I was stuck in t...` | Mined candidate without confirmed wordplay or second reading. |
+| NoCap | Rogerville | `Yeah, bad lil' bitch from Pittsburgh, she was...` | Mined candidate without confirmed wordplay or second reading. |
+| NoCap | So Lost / No Promises | `I try to run away from pain, I just can't avo...` | Mined candidate without confirmed wordplay or second reading. |
+| NoCap | Casino | `The fеar gon' roll in when he tired I called ...` | Mined candidate without confirmed wordplay or second reading. |
+| NoCap | Planet Out | `I can’t plan it out ’cause I’m always on the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fuckin’ Problems (A$AP Rocky) | `Kill 'em all, dead bodies in the hallway` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 2 On / Thotful | `You can hear it in my voice, I'm goin' way in` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Shopping | `Last week, boy dem runnin' in the room (Haan)` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Made Men | `Spending tomorrows money, I call it "Mañana"` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | MOTH BALLS | `YYZ, racing 'cause the gate 'bout to close` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Seeing Green | `Propaganda 'bout to blow out the candle` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Frauds | `Sometimes I ask God, "Man, why him?"` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Sell Me A Dream / I Don’t Know | `So many bills, I had to bury some, I feel lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Old Shit | `Hoes broker than some porch pirates` | Genius note is a weak stretch/pun on poor pirates without phonetic flip or second meaning in the bar. |
+| Drake | The Grind | `You know me if you had a job at 16 and under ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Brakes | `And my diamonds offset like a Migo` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Cannonball Remix | `Tryna make my money stretch like the city at ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Mine | `You the one they hate, this come with that (Y...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Get Lucki | `I'm gettin' too hot, man, fan me (They know)` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | This That One | `Bill, but I’m not Bradley` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Luv the Tour | `She up first like Dub E` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Millions | `All these drugs, they make my heart beat fast...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Get Lucki | `Stuff twenty thou' in skinny pants, I call th...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Get Lucki | `He wanted a split of good, I pulled up and se...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Choppas In Hawaii | `Pint of the TEC, I took the red to the neck, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice WRLD | Autograph V2 (Stem) | `I always use a rubber, bitch I need the tire ...` | Mined candidate without confirmed wordplay or second reading. |
+| NoCap | Mistake | `I ain't talking food, I just fucked two bitch...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | My Way (Remix) | `They should call me James, 'cause I'm goin' h...` | Mined candidate without confirmed wordplay or second reading. |
+| Central Cee | GBP | `If I lived in Harlem, I would've been Mitch, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juicy J | Ain’t No Rapper | `Pockets XXL and extended magazines` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | You Better Move | `I'm an iPod, man, you more like a Zune` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Yamborghini Dream | `My ice wet just like Daytona` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | YSL | `Got a red drop (Yeah)` | Mined candidate without confirmed wordplay or second reading. |
+| Kid Cudi | Show Out | `Man down, roll up` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Status | `Got an XO piece, square rocks (Rocks)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Swap | `Yeah, and it's still VLONE on my jeans` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | That Fiya | `Jump off the porch with that fire (Blam), jum...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | That’s a Rack | `I'm a Leo like lion, I'm Simba` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | The End | `I'm not from this earth, I'm from outer spacе` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | The End | `You feel blue (Blue), have a pink day` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | There She Go | `Dirty dancin', both hands in the air, there s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Thot Back | `Runnin' bands up, I get 'em pronto (Bee)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Too Much Sauce | `Diamonds they look like Dasani huh, more like...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Vetements Jeans | `Pull up in a Lambo', did the digi' dash` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Wasted | `Hatin', but they're still tryna take our cade...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Werewolf | `Better off dead in the ground, can't see you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | XO Tour Llif3 | `Countin' them bands all way to the top 'til t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tyler Herro | `The ones that hate me the most look just like...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | U.O.E.N.O. | `I'm working that graveyard shift, man, these ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | U.O.E.N.O. | `MLK would be proud of me, 'cause I do this sh...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | U.O.E.N.O. | `Niggas be sayin' they racked up, don't let th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Uh-Ohhh! | `Flow sweet as devil's food,` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Upgrade | `I'm a dog, I'm a Hoya, homie` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ur Supplier | `Call me Marlow 'cause I'm off the wire` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Used To | `Make sure the plane got a phone now` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wasted | `I'm laid up, I'm free-throwing` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Alright | `I'm a young stunna, young Wayne, I'm Young Mo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Whip Game Proper | `And I'm physically fine, but my flow's sick` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wish You Would (Dedication 4) | `I see you niggas hatin', with ya hatin' ass` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | With You | `She got Indian in her family, Seminole` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yeezy Sneakers | `Then I tell her how to tell better lies` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yes | `Red Viper slither through the streets like a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Song | `You the best dressed with your breasts showin...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You | `But I change the game for you` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yuck! | `Former Posturepedic I was slept on` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yuck! | `If you on the pole, play your position` | Mined candidate without confirmed wordplay or second reading. |
+| Pressa | 420 in London | `I put that on my son and I ain't even got a s...` | Mined candidate without confirmed wordplay or second reading. |
+| Rich Brian | Crisis | `Made a million dollars with Adidas (21)` | Mined candidate without confirmed wordplay or second reading. |
+| Saba | Survivor’s Guilt | `I'm tryna move better, what's really eatin' w...` | Mined candidate without confirmed wordplay or second reading. |
+| Skengdo | Pitbulls | `Drop-top, headshot when your roof down` | Mined candidate without confirmed wordplay or second reading. |
+| Twista | No Friend of Me | `I'm tired of these fuck niggas being frienemi...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Fire Your Manager | `I'll see ya (MASA)` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Loner Life | `I pull up in that Rover, it's chalk color` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Villain | `400 Degreez like Juvenile` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 600 Benz | `I'm a rare one, camos and some rare ones` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | All I Do Is Win | `All I do is win, win, win, no matter what (Wh...` | Mined candidate without confirmed wordplay or second reading. |
+| DJ Snake | Enzo | `Northside, you can get served (Nawf)` | Mined candidate without confirmed wordplay or second reading. |
+| DJ Snake | Enzo | `95 left wrist, white T-shirt (White)` | Mined candidate without confirmed wordplay or second reading. |
+| DJ Snake | Enzo | `I don't got a whole lotta friends though (Fuc...` | Mined candidate without confirmed wordplay or second reading. |
+| DJ Snake | Tsunami | `Shots and contusions, the gas bad for polluti...` | Mined candidate without confirmed wordplay or second reading. |
+| Childish Gambino | 12.38 | `Pipes out (On God), all my shooters came from...` | Mined candidate without confirmed wordplay or second reading. |
+| Childish Gambino | 12.38 | `The police keep harassin' 'cause I'm rich and...` | Mined candidate without confirmed wordplay or second reading. |
+| BlocBoy JB | Rover 2.0 | `Ridin' in the fuckin' Bentayga (yeah)` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Death Enclaimed | `Know you seen niggas dying on your iPhone` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Foolish Figure | `If you gotta go to school, my nigga` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | I Don’t Talk | `Blackballеd me from up out the game, bitch, s...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | I Hate YoungBoy | `Feel like Boosie don't even like me, bitch, d...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Murder Business | `Killin' scene, blood on my Soldier Rees, some...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | No Love | `And I'm gone, I'm sendin' hits, they think th...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Pain Never Fades | `Nawfside, young nigga shot marbles` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Shot Callin | `Go ask 'bout me, I'm divin', 5.56s lift his c...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Slime Mentality | `Ayy, 4KTrey, you know, free D-Dawg, nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | ooh la la (Remix) | `No computer, but this MAC got more shots than...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Zip It | `Your bitch a blowfish, she swallow my fishing...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Song | `Nose round like the wheels that my rims spin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Ain’t Got Nuthin | `My wrist look like frozen Poland Spring water` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yellow Tape | `Copped work from Saint Nick (haah)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yeah | `I keep the block jumpin', just call me bunny ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | YUSO | `Word to 50, tell them bitches, "Get the strap...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | YUSO | `I got 69 problems and cumming is not one (Yea...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | YM Banger | `Potatohead niggas get mashed when I'm spazzin...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wit Me | `Drop codeine in my punch, I’m bout to take a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wish You Would (Dedication 4) | `I like her pussy tighter than my fucking sche...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | White Girl | `And you know the flow hard, nigga, cooked cra...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Whip It | `Rings so thick, I can't even make a fist` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | When I Sleep | `Now I'm in the club: watch me make this bitch...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | What’s Wrong With Them | `And if you got beef, I turn it to a tenderloi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | What’s Wrong With Them | `Disrespectful on the beat, Borat` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Welcome to Tha Carter | `While I eat lil' mama backwards like mignon f...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Welcome to My Hood | `Young Money, Cash Money, blood bitch, I’m red...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Takin’ Over | `On up to Minnesota where it storm in the wint...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Don’t | `I took over the circus` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Don’t | `Bitch, and we was raised in these war times` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Way I’m Ballin’ | `Got some moon rocks in my pockets,` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wasted | `I shake you pussies up, I'm a vibrator, haha!` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wasted | `South Beach Miami, ho, I'm probably with Tamm...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wasted | `New Orleans nigga, I get super-dome` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Walk Out | `I say I'm at your throat, this was Tha Carter...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Walk Out | `You on the backyard lawn where a nigga got th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Walk In | `I'm so ahead of these trendy rappers, speed u...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | WIND | `Find us, we playin' hide-and-seek with the pa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Vizine | `Cut off the wings, now I'm soaring` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Used 2 | `They in it too, and bitches too, they mention...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Uptown | `And I keep that toaster, you can come and be ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Up Up and Away | `Flow so raw, this beat is pregnant` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | U.O.E.N.O. | `I'm ahead of the game, I need a blowjob` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | U.O.E.N.O. | `I blues your bitch ass, hope somebody give yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Typa Way | `And it's 6-6-2's Piru all day, my nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Two Shots | `Shoot so many times, I'ma choke off the gunsm...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | wokeuplikethis* | `Might just spend two hundred on this Audi tru...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | You’re The One (Scarecrow) | `I just called my slime, he said he boolin'` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | You Better Move | `Make 'em hit the folks every time that I shoo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | You Better Move | `Green shirt, bitch, I'm Steve, where is Blue?` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Yoko | `I shot at him once, shoot that boy, he said, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Wrong | `It's better when it feels wrong` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Who Run It (Remix) | `I put the VV's everywhere (everywhere)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Who Run It (Remix) | `Ask your bros, Grammy-nominated songs just to...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | What You Saying | `I don't even know what she said 'cause she fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Wanted You | `I'm ashamed of all the things that I was doin...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Walked Into Space | `I got the Rari' that's on Ferris Bueller (Oka...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Uzi Gang | `Harlem World got a hundred spittas` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Tony The Tiger | `Her pussy ain't dry like a raisin, it's more ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Tony The Tiger | `How you gonna save that lil' bitch and you do...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | The Rush | `Bitch, I'm a king like I'm Tip, yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Suicide Doors | `Suicide whores tryna fuck me for` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Strawberry Peels | `Hey (SEX, Spider, SEX)` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dro | FDB (Remix 3) | `Well, my girl got a girl, guess I'm living li...` | Mined candidate without confirmed wordplay or second reading. |
+| Yae Yae Jordan | Strapped | `Tell Reezy Animal I want the same head she ga...` | Mined candidate without confirmed wordplay or second reading. |
+| YC (Yung Chris) | Racks | `Get high like Cheech and Chong` | Mined candidate without confirmed wordplay or second reading. |
+| YC (Yung Chris) | Racks | `I drink so much damn lean` | Mined candidate without confirmed wordplay or second reading. |
+| Trav | 10 Toes | `Young nigga feelin' like I'm Pac, I'm bout to...` | Mined candidate without confirmed wordplay or second reading. |
+| TGUT | MONEYMAN | `I'm on the west, free GeeWee, that's my blood...` | Mined candidate without confirmed wordplay or second reading. |
+| Spazz Floss | Reckoned* | `YSL, steppin' (Steppin', why?)` | Mined candidate without confirmed wordplay or second reading. |
+| SoFaygo | BYE | `It was never in the plans, now I got them dia...` | Mined candidate without confirmed wordplay or second reading. |
+| Skengdo | Pitbulls | `Slide on ya late night like a hooker (Two 30’...` | Mined candidate without confirmed wordplay or second reading. |
+| Pharrell Williams | Cash In Cash Out | `One came with an umbrella like Rihanna` | Mined candidate without confirmed wordplay or second reading. |
+| Nigo | Remember | `Call up the Batman, I'm robbin'` | Mined candidate without confirmed wordplay or second reading. |
+| Nas | One Mic, One Gun | `They wanna see me fucked so they could deport...` | Mined candidate without confirmed wordplay or second reading. |
+| Myloyd47 | Porch | `Choppa on me, bitch I shoot like I'm Cupid` | Mined candidate without confirmed wordplay or second reading. |
+| Larry June | Intercepted | `I remember vividly, y'all ain't really see th...` | Mined candidate without confirmed wordplay or second reading. |
+| Kid Cudi | Show Out | `Pull up on scene, have 'em all lookin', we st...` | Mined candidate without confirmed wordplay or second reading. |
+| K.M. tha Original | Why Is That | `Merch Mula a' do ya and free Wet 'Em Up bitch...` | Mined candidate without confirmed wordplay or second reading. |
+| Jeymes Samuel | JEEZU | `Shawty need a signature, pass the Kirkland` | Mined candidate without confirmed wordplay or second reading. |
+| Jeremih | The Crib | `Said she like everything king sized` | Mined candidate without confirmed wordplay or second reading. |
+| JACKBOYS | GATTI | `It cost me three for the keys (Keys)` | Mined candidate without confirmed wordplay or second reading. |
+| G4 Boyz | Local Scammer (Remix) | `Service fees too high` | Mined candidate without confirmed wordplay or second reading. |
+| Common | The Neighborhood | `Fiends choked off of smoke, herringbones and ...` | Mined candidate without confirmed wordplay or second reading. |
+| Common | The Neighborhood | `The era of Reagan, the terror of Bush` | Mined candidate without confirmed wordplay or second reading. |
+| Common | The Neighborhood | `The hustlers was the taste makers and trend s...` | Mined candidate without confirmed wordplay or second reading. |
+| Cochise | HUNT | `Bro got the blicky (Blicky), got that boy doi...` | Mined candidate without confirmed wordplay or second reading. |
+| Central Cee | GBP | `If I pay a man a hundred thousand pound, I ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Central Cee | GBP | `And the G17 would've came with a switch` | Mined candidate without confirmed wordplay or second reading. |
+| Cago Leek | I Remember | `In the field no ducking` | Mined candidate without confirmed wordplay or second reading. |
+| Alcy | Stick & Move | `See my homie smokin' flocka, damn my nigga, i...` | Mined candidate without confirmed wordplay or second reading. |
+| JID | Surround Sound | `I know I can't afford to stop for one moment` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | All In | `I don't sell furniture but nigga IKEA` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trust Fund | `Walkin' 'round with the .9 like I'm Drеw Bree...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trippy | `Weed, pills and that drank, that's my trippy ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trill | `And then a guard gave me some head, she felt ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trill | `My bitch dyed her hair red for the set` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trigger Finger | `Rest in peace to the game, tell them kill the...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trigger Finger | `I like my blunt Nutty Professor` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trigger Finger | `Ain't nothin' sweet but the codeine, nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Took His Time | `I'm speedin' past in the newest soft top like...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tity Boi | `Get out of order with me, nigga, get your ord...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tina Turn Up Needs a Tune Up (Freestyle) | `Melt in your mouth not in your hand` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tiffany Blews | `A caterpillar that got stuck` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Throw It In The Bag | `You can't be broke and happy, so, me—I'm mad ...` | Mined candidate without confirmed wordplay or second reading. |
+| Hardo | Who Ya Gang | `I stack like a Jew` | Mined candidate without confirmed wordplay or second reading. |
+| Godfather of Harlem | On the Inside | `Your niggas soft (Niggas soft), Corn on the c...` | Mined candidate without confirmed wordplay or second reading. |
+| FTP Records | Fuck the World | `(Fuck the population) Fuck the world, fuck th...` | Mined candidate without confirmed wordplay or second reading. |
+| FTP Records | Fuck the World | `It's FTP and Haunted Mound, sippin' lean at Z...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | So High (See The Lord)* | `Yeah, I feel like Stevie, can't even see no m...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Smoking on Whoever | `Like, GBG babies, everything for Naz` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Six Four | `Turbo my whip like a Nismo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Sinner (Been Up) | `Like, on God (For real)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Shoota | `We gon' rob the bank, bring the loot, uh, uh` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Shoota | `You know that I'm smokin' dope, I'll be high ...` | Mined candidate without confirmed wordplay or second reading. |
+| Obasi Jackson | In My Bag* | `Pop Smoke, brought the semi-automatic` | Mined candidate without confirmed wordplay or second reading. |
+| Nicki Minaj | Chi-Raq | `I'm with EBK, you on EBT` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Blow | `We came for trigga' play, kill a nigga for a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Born-N-Raised | `Trick, he's the mayor, Luke, he's the king` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Broccoli | `Turnt up in the party, gettin' lit to Yachty` | Mined candidate without confirmed wordplay or second reading. |
+| Millyz | Emotions | `They can gentrify my hood, but they can't cha...` | Mined candidate without confirmed wordplay or second reading. |
+| London on da Track | No Flag | `Must’ve used a lot of starch 'cause they stil...` | Mined candidate without confirmed wordplay or second reading. |
+| London on da Track | No Flag | `Yo, Lil’ bitch I heard these labels tryna mak...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Tecca | CHOPPA SHOOT THE LOUDEST | `Like Ketchum can't catch 'em (Skuduskuh, skud...` | Mined candidate without confirmed wordplay or second reading. |
+| Katy Perry | Legendary Lovers (Save Me) | `I feel my lotus bloom, come closer` | Mined candidate without confirmed wordplay or second reading. |
+| Sexyy Red | Bow Bow Bow (F My Baby Mama) | `I don't shoot clubs up no more, ran out of am...` | Mined candidate without confirmed wordplay or second reading. |
+| Nardo Wick | Who Want Smoke?? (Remix) | `Hop out middle of the street, hit him (Hit hi...` | Mined candidate without confirmed wordplay or second reading. |
+| Nardo Wick | Who Want Smoke?? (Remix) | `No Limit, I never care` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | This Is the Carter | `Flow sicker than a third floor in hospitals, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Way I Are (Dance with Somebody) | `But I could never ever dance like Bobby (Hey)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Party Anthem | `Say I'm too old to rap, I'll be rapping til I...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Other Side | `And you MCs are just "milk and cherries" to L...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Lost Carter IV Song | `Even Elvis had to BOW DOWN` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Hills | `When I'm cupped up, that's the real me` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Crackhouse | `First nigga pop up and we gave him the piece` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Basement Freestyle | `Nowhere, I'm nailed to the flo'` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | That’s All I Have | `And he put them dreads in: Silver, John Long` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | That’s All I Have | `Silence lambs, bitch (Yes), run through your ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Take Kare | `No chaser for my girl, though (Rich girl)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Take Kare | `I'll never believe what Lil' Kim say (Ooh)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Take Kare | `Yeah she got Xans, she like, "Where Tar at?" ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swizzy | `You niggas is sweeter than a box of Red Hots` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swizzy | `And they be lyin' on wax like an earphone` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swizzy | `I'm a dog, you're all a bunch of fleas on my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sweet Dreams | `I'm so high, I need parachutes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sweet Dreams | `So cold, I need theraflu,` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swagger Like Us (Alternate Verse) | `Runnin this bitch like I got four thighs` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swagga Like Us | `Tryna get that Kobe number, one over Jordan` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swag Surf | `I smash this verse, and I swag and surf` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swag Surf | `And we roll them bitches thick, make 'em look...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sunshine | `These niggas Stevie (What?) to the come up` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Suffix | `Summer, please, know I live for you` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Suffix | `I'm just doing a buck down memory lane` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Successful | `I've always treated my city like some shoulde...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Stunt Hard | `I need a young Pebbles,` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Strobe Lights | `My world spin around her cause it's a world w...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Strobe Lights | `Love is the party, my heart is such a disco b...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Strange Clouds | `I just stay with a stallion,` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Still Got That Rock | `No broken mirrors, I can't see myself broke` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Started | `And we only selling what the boat bring here,...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | SportsCenter | `I see beef as dead meat` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | SportsCenter | `Cover my tracks like butter, so where the bre...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sorry 4 the Wait | `And they can't blindfold what my third eye se...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Someone To Love Me (Naked) | `Go ahead make my day, dirty Harry` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Smell Like Money | `And make it as fat as a pig in a blanket` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Smell Like Money | `Middle finger to the judicials` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Smell Like Money | `If trapping was a sport, I’d have a gold meda...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Small Thing to a Giant | `Guess what? Streets off paper` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Slip | `Heavy is the head that wears the crown, and a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Slip | `Uh, South Beach, spring, California, autumn` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sleazy (Remix 2.0) - Get Sleazier | `Know a girl named Cleopatra, she a-throw that...` | Mined candidate without confirmed wordplay or second reading. |
+| Kanye West | Don’t Like.1 | `Rose gold Jesus piece with the brown ice (Woa...` | Mined candidate without confirmed wordplay or second reading. |
+| Kanye West | Don’t Like.1 | `SoHo or Tribeca, three hoes, trifecta` | Mined candidate without confirmed wordplay or second reading. |
+| Joyner Lucas | Litty (Freestyle) | `Finna stab if you jab back, and I clap at you...` | Mined candidate without confirmed wordplay or second reading. |
+| Joyner Lucas | Litty (Freestyle) | `I'm Leonardo Da Vinci, I paint a picture with...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | 𝔉𝔦𝔯𝔢 ℑ𝔫 𝔐𝔶 ℌ𝔢𝔞𝔯𝔱 3 (Fire In My Heart ˂3) | `Dog ass hoes, get them bitches off the carpet...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | YELL OH | `She got good brain like the bitch really went...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Woah Woah Woah/Crashbandicoot And Chill | `VVS them diamonds in my necklace (Yah)` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Weeeeee | `Call her OVO thing, come from Hooters today (...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | VAN HELSING | `She get to speedin' up, bitch, like Sonic (So...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Countup | `Yeah, all the bitches bad, yeah, all the bitc...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Countup | `I take at least a twenty piece on me when I'm...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | bigger thën everything | `I'm done layin' back plottin', I'm droppin' e...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | bigger thën everything | `Ha, we so mad, them devils call me "Him" (Yea...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | been 2 long | `I'm only gon' pillow talk to my bread, yeah, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Yam | `I don't need to sign no deal, I'm richer than...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | YEET | `I went and just flooded my rings, I blew up, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | X ta C | `All my bizzies think I wifed 'em but I ain't ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Wtf thëy on | `I been taking X pills, I ain't take a Perc in...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Way back | `My money been dancin', my money been twerkin'...` | Mined candidate without confirmed wordplay or second reading. |
+| The Weeknd | Popular | `I've seen the devil` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Deeper Than Rap (Lost Intro) | `It was somethin' small, but chickens was my f...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Devil In a New Dress | `The way you look should be a sin, you my sens...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Finals | `Got birds flying around, like Mr. 23 himself` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Free Enterprise | `Grinding 'til my new accountant is fully at e...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | FuckWithMeYouKnowIGotIt | `Hov keep gettin' that dinero, got it` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Gallardo | `Fuck that BMI shit, I got me a ki, I'm out'ch...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hell’s Angels (American Heathens) | `talons and hollows my ammo` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | Everything We Need | `Go 'head, level up yourself` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | Gimme A Second 2 | `Girl named Dallas send a hundred texts` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | Good Pussy | `I hit it in my vans and my motherfucking hood...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | Hot Girl Summer | `You ain't put me in no brands, but I see you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | Hurricane (Young Thug & Ty Dolla $ign Version) | `I chose not to be a slave` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | I Won | `Then suddenly there's no top in it (No top in...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Coffin | `Ew, nigga, I'm just talkin' (Oh my God)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | FWM | `Hit from the back, her chain hit the headboar...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | For Hot 97 | `I'm gone off the sizzurp` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Get Dripped | `Shawty suck me, she so geeked, yeah` | Mined candidate without confirmed wordplay or second reading. |
+| MAF Teeski | Drench Gang | `And it ain't shit to catch a B, next thing yo...` | Mined candidate without confirmed wordplay or second reading. |
+| MAF Teeski | Drench Gang | `Put a brand new switch up on my Glock, so whe...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Pump | Gucci Gang (Mega Remix) | `Savage wear a whole lot of Gucci, man (Montan...` | Mined candidate without confirmed wordplay or second reading. |
+| King Louie | Eastside Shit | `Now we smoking and chilling, put 4s in my spr...` | Mined candidate without confirmed wordplay or second reading. |
+| DJ Twin | Lonely | `So much ice on me I might fuck around and mel...` | Mined candidate without confirmed wordplay or second reading. |
+| tobi lou | Hit & Run | `I know you need a charger, 'cause your phone ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tyga | 100's | `T-Raww pulled up on me in a motherfuckin' Lam...` | Mined candidate without confirmed wordplay or second reading. |
+| T.I. | Thank God | `Then there was Dolla, Lil Snupe, triple X, an...` | Mined candidate without confirmed wordplay or second reading. |
+| T.I. | Thank God | `Dex Osama, Camouflage back in the day` | Mined candidate without confirmed wordplay or second reading. |
+| Summer Walker | Get Yo Boy | `You fried, go move to Kentucky` | Mined candidate without confirmed wordplay or second reading. |
+| Skilla Baby | Mike Jack | `Like he discovered Young Buck, done fucked up...` | Mined candidate without confirmed wordplay or second reading. |
+| Skilla Baby | Mike Jack | `Every diamond came from Gary, they think this...` | Mined candidate without confirmed wordplay or second reading. |
+| Skilla Baby | Mike Jack | `Spent ninety days in the trap, just to leave ...` | Mined candidate without confirmed wordplay or second reading. |
+| Ski Mask the Slump God | Millionaire | `I'm like, "Bitch, who is your mans?" Huh (Yuh...` | Mined candidate without confirmed wordplay or second reading. |
+| Skepta | Lane Switcha | `Richard Millie on my wrist (Wrist, wrist)` | Mined candidate without confirmed wordplay or second reading. |
+| Rod Wave | Get Ready | `Labels used to look past me, now they trying ...` | Mined candidate without confirmed wordplay or second reading. |
+| ¥$, Kanye West & Ty Dolla $ign | DRUNK (Demo) | `I'm wit' Bad Bunny like it's Easter` | Mined candidate without confirmed wordplay or second reading. |
+| ¥$, Kanye West & Ty Dolla $ign | FIELD TRIP | `This ain't cheddar, this quiche` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Skate It Off | `Treat a Rolls Royce like a Honda, bitch back ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Skate It Off | `I just skated off on drugs, on drugs` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Skate It Off | `Me and all my skaters in cahoots, in cahoots` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Silence On The Gun (Original) | `Them nigga's pissed off, call em' R. Kelly` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sick | `Oh well, no Shamu` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Shooter | `Die, bitch nigga, die, I hope you bleed a lak...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Shoot Me Down | `And I'ma do it again, like, nigga, backwards` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Shoot Me Down | `These niggas backwards, but they behind us` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sex In The Lounge | `Don't I stunt on these bitches?` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sex In The Lounge | `Though he packin' that muscle, I'm addicted t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Senile | `All these rappers is my sons, and I'm always ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Senile | `Bombs in L.A., bombs in the Bay` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Senile | `Ride down ya block, doors 12 o'clock` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | ThyRod | `Jew with that AK, I'm playin', so cocky` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Thick Of It | `They knocked me down, but still, my feet, the...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Thick Of It | `They know me where it snows, I skied in and t...` | Mined candidate without confirmed wordplay or second reading. |
+| Kendrick Lamar | Silent Hill | `Why, oh why, oh why, oh why you keep fuckin' ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | High Definition | `Pacquiao purse, boy I took another belt` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hustlin’ Remix | `Le savoir est une arme, dois-je me suicider?` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hustlin’ Remix | `Je n’m’ferai jamais descendre, car j’fais que...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Mean It (Remix) | `Meanwhile your end's near, I've got a lane an...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | In Vein | `She give me brain, she a mastermind to be exa...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Insomniak | `Said, "Bitch look, don't try and speak around...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Insomniak | `I'm jet-lagged, don't need a stylist, pants s...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | King of Diamonds | `All these rides in my yard, my shit a carniva...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | King of The Fall (Remix) | `Their new shit all be sounding like my past s...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | My Flag/Da Homies | `I put the woop in the woop like my DLBs` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Marmalade | `Make her moan and she sound just like Mozart` | Mined candidate without confirmed wordplay or second reading. |
+| Dave East | My Trap | `My bitches was boostin', go to canal and come...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | WAR 1 | `No, I'm not coming inside that bitch, if 'cet...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | U could tëll | `I went and got me the Tonka, that big body, b...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | U could tëll | `I'm turning up but I'm not alone` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | U could tëll | `Thotty gon' pull up on me, she gon' gulp up m...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | U Should Know | `I know you know, you think you know you know ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | U DONT KNOW LYFE | `(Ooh, ooh) Cunt (Wet), watches on me` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tëslas & Rovers | `If I had the Tesla, it'd be a Roadster (Skrrt...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tëslas & Rovers | `I take this X so much, my body pale` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Trëndy way | `Yeah, all type of diamonds, I got every carat` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Trënds & Topics* | `Yeah, I'm booted and zooted and booted and zo...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tru to U | `I got the racks at the bottom myself, then I ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tru to U | `Bitch not for me, she got that Pac-sun` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tried Once | `Put me and Yeat in the same room and we keep ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tried Once | `We are like the Lakers we Kobe and Shaq (Kobe...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Lil Harold | One in the Head | `Rolls paid, feel like Nicolas Cage, I'm a Gho...` | Mined candidate without confirmed wordplay or second reading. |
+| 2 Chainz | Big Diamonds | `Hit him all in the stomach, fucked up his lin...` | Mined candidate without confirmed wordplay or second reading. |
+| 2 Chainz | Free Lighter | `I just spend 150 like Maneski (Whoa, 150), to...` | Mined candidate without confirmed wordplay or second reading. |
+| 2 Chainz | Free Lighter | `Bitch better ask God Almighty (Almighty)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Tjay | Zoo York | `I make it rain on whoever, I make it rain tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Tjay | Zoo York | `Bad bitch named RiRi, nice, but treeshy` | Mined candidate without confirmed wordplay or second reading. |
+| King Von | Don’t Play That | `I fuck that bitch with a latex (Huh? What?)` | Mined candidate without confirmed wordplay or second reading. |
+| King Von | Don’t Play That | `She fell in love with a stepper (21)` | Mined candidate without confirmed wordplay or second reading. |
+| King Von | FaceTime | `I don't bap in my raps, that's on Cap` | Mined candidate without confirmed wordplay or second reading. |
+| King Von | FaceTime | `He got killed at 25 (Damn), diss me, that's s...` | Mined candidate without confirmed wordplay or second reading. |
+| King Von | On Yo Ass | `I got Varney behind the wheel, he do the moth...` | Mined candidate without confirmed wordplay or second reading. |
+| King Von | Real Oppy | `Ballin' like I'm Ja Morant, I keep my FN (You...` | Mined candidate without confirmed wordplay or second reading. |
+| DooWop (GBE) | 2026 | `In the streets if I was Gee Money, I woulda b...` | Mined candidate without confirmed wordplay or second reading. |
+| Tink | Mine | `Tatted on me, we skin deep, and I ride with h...` | Mined candidate without confirmed wordplay or second reading. |
+| PnB Rock | Ordinary | `Life is short, I don't wanna go to court (Woo...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Take One | `Bust all on her face and let her see how heav...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | TIME TO DIE | `Yeah, on the road to riches, dodging feds lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Supernatural | `And I'm only goin' up from here like a jet pa...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Space Time | `You a bitch, wish your mom got her tubes tied` | Mined candidate without confirmed wordplay or second reading. |
+| A Boogie wit da Hoodie | Last Time | `It's okay if they jealous, we got double-R um...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Selsun Blue | `Lay a nigga down, Nina sang his ass a lullaby` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | School Shooters | `Boy, you better buckle up 'cause I got questi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Saturday Mornings | `No cap for me, we get money like athletes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Salute | `In this chopper I will p - p - p - p - pop 'e...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Salute | `I'm not that little pregnant white girl but J...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Salute | `I was once told by my nigga Meech` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | SUWU | `Cut the shit down, you'll hear old Tune, brrp` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | SMUCKERS | `You can't lynch Marshawn if Tom Brady throwin...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | SMUCKERS | `And fuck your loud pack, and fuck your Snapch...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | S.A.S.A.R.A.F. | `Glock with the magazine do you want the cover...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Run for It | `Load it up and slide it in` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Run This Town | `But how come I'm still colder than common-ly?` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Roman’s Revenge (Remix) | `All I do is win, my name should be "Victor"` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tonka 2 | `Yeah, I just got the Tonka (Yeah)` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tonka | `I tried to quit them Percs with Kratom but th...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tonka | `Swerving, dodging, oppies, coppers` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Told ya | `I was talking 'bout the Tonka so I bought it,...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Told ya | `I been off the opiates so long, I feel like c...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Timë Passed | `All this fuckin' time passed, where that shit...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Timë Passed | `Call me fire 'cause I'm fire with them diamon...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | The Bell | `Song was already turnt but the bell turned up...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tallër | `High with the birds` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tallër | `She give head like a scholar` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Talk Money | `Make you touch a bow for a bag` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Talk Money | `Yeah, twizzy serving chickens, serving bricks` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Talk 2 God | `I'm high with the gods` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Talk | `I don't give a fuck what you sayin', I don't ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Talk | `I went and painted the Benz, I switched shit ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Taliban | `Yeah, I got the Tonka outside` | Mined candidate without confirmed wordplay or second reading. |
+| Polo G | Clueless | `I'm downtown Chicago, on Michigan Ave with Po...` | Mined candidate without confirmed wordplay or second reading. |
+| Polo G | Clueless | `Dropped a song and I got mad lit` | Mined candidate without confirmed wordplay or second reading. |
+| Polo G | Go Part 1 | `The FN Ruger on my lap when I don't got a Glo...` | Mined candidate without confirmed wordplay or second reading. |
+| Mike WiLL Made-It | Blood Moon | `Speakin' on trees, can't fall, no leaves` | Mined candidate without confirmed wordplay or second reading. |
+| DJ Khaled | Iced Out My Arms | `Make her go board a plane with a brick on her...` | Mined candidate without confirmed wordplay or second reading. |
+| DJ Khaled | Wish Wish | `Cardi, from the block` | Mined candidate without confirmed wordplay or second reading. |
+| Young Chop | Valley | `Coolin' with the Blood Gang clownin' (Gang, b...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Solar Flare | `Ball in the paint, nigga, like Michelangelo` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Sleepy Hollow | `Talk down on the gang, you can get some hollo...` | Mined candidate without confirmed wordplay or second reading. |
+| Ralo | I Hope It Don’t Jam | `You was playing games, nigga I was in the fie...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | THEY TELL MË | `Yeah, I put the bills on everything, like I p...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | THE COSTËS | `White tee, plain jane, diamonds on my neck, s...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | THE COSTËS | `Heard you wanna do is live like us, you don't...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Suicidal | `I fucked my money up and married my cup (Ew)` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Suicidal | `Lost my twizzy to the system, every time I go...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Still countin | `I ain't tryna hear your music, turn it off, t...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Still countin | `I been outside in the Lamb', you don't even h...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Still countin | `Big bag, lil' Glock (Ooh-ooh)` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Still countin | `I'm on the Xan' and the bean` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Stayëd tha same | `I just walkеd in, stepping in these Louboutin...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Split | `I got a whole lotta shit that's coming` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Roman Reloaded | `Yo, I guess I went commercial, just shot a co...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rolls Royce Weather Every Day | `I keep that Maggie on me, I think I'm Homer S...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Right Above It | `Guns turn you boys into pussies, sex change` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ride With The Mack | `Don't know how to build a house but I got a b...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ride With The Mack | `Roll with duct tape and ride with the Mack` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ride 4 My Niggas (Sky is the Limit) | `My eyes get so wide as it rise in the skillet` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rich As Fuck | `Bitch niggas go behind your back like nunchuc...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rich As Fuck | `And I got Xanax, Percocet, promethazine with ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Renaissance Rap (Remix) | `Though they call me Weezy F., you gon let me ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Red Nation | `Walk in the club saggin’ with a .38 Magnum` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Red Nation | `Get it? Nah forget it, Soo Woo I live it` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Red Magic | `I'mma street king, ask dude from the Matrix` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Red Magic | `But Weezy go this hard, like pussy right in f...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Receipt | `I'm married and divorced and my daughter is a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Realized | `They know Weezy got more white than the Backs...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Real Shit (All On Me) | `You're homo's, you're not my homie` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ready for the World | `Somebody better let em know I ended the banan...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rax | `Hatin'-ass niggas be baller blockin', actin' ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Raw | `Broke phone like Lamar—ooh, baby, I like it r...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rari | `I'm goin' back to Cali, nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rari | `Sosa, not Sammy, nigga, m` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ransom | `And me and Drizzy both wrote on Detox` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ransom | `ZZ Top, yes, he rock` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ransom | `I do everything good as you; no, I do everyth...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Put on for the Game | `Stunna man said kill em all, so still and all` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Put Some Keys On That | `My eyes so low, I look like I'm from Hong Kon...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Put Some Keys On That | `Pockets just fat like the Klumps and Norbit` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pussy Monster | `And I could make it rain, I'm the hurricane, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pussy Monster | `Girl, you hot like a bowl of hot stew` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pussy Money Weed | `I'm nasty as a Scorpio, but I'm a lucky Libra` | Mined candidate without confirmed wordplay or second reading. |
+| Zaytoven | Birds | `Shoot the three, then swerve her (woo!)` | Mined candidate without confirmed wordplay or second reading. |
+| Rich The Kid | Plug | `Touch down on a nigga, I'm takin' your sack (...` | Mined candidate without confirmed wordplay or second reading. |
+| Rich The Kid | Plug | `They callin' my Motorola for zippers (Brrt)` | Mined candidate without confirmed wordplay or second reading. |
+| Rich The Kid | Trap House | `Like Slime Nudy, I don't beef` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Rockstar | `We be turnt up, feel like ozzy` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Rich MF | `Grimy as fuck but I'm a sexy motherfucker (Ok...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Red Light | `Ten thousand at Starlets on dead nights` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Durk | Chiraq (Remix) | `I'm a young nigga I be gettin' money` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Durk | Chiraq (Remix) | `New York SlowBucks them my brothers` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Durk | Chiraq (Remix) | `Four birds in the trap like` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Durk | Rich Forever | `BM don't want me wit cus` | Mined candidate without confirmed wordplay or second reading. |
+| Fredo Santana | My Pistol Make Ya Famous | `What's the recipe, I'm Plankton` | Mined candidate without confirmed wordplay or second reading. |
+| Fredo Santana | Never Had a Job | `Gang with me, don't get your ass popped` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Smooktobër | `Tapped in with the fashion, pulled up on Virg...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Slimd Em Out | `Yeah, yes I really been off this X, I'm cross...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Shyt Changëd | `I was so down bad and broke a year ago, yeah,...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Showin Out | `-JPG her fit, damn, this bitch got expensive ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Shmunk | `I was sellin' drugs, now I'm rich` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Shhhh | `I mix the syrup with soda, yeah, and I had to...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Sacrafice | `Twizzy got rid of the rest of the chicken, th...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | STYLE LYFE | `I'm on X too` | Mined candidate without confirmed wordplay or second reading. |
+| French Montana | Double G | `Rocks all in my socks, guns up in my brief` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pure Colombia | `It's loaded, so I just let her jump the gun` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pure Colombia | `We be passing blunts, they be passing judgeme...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pure Colombia | `This change of face on my Rollie, shout out L...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pull Up | `Smoking nothing but Irene` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Psycho | `I'm just tryna kick it wit' ya` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Prostitute | `At the top of the arena there's my jersey wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Promise | `Shit, Hov got Bey and I just want Ci'` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Problems | `I'm never wrong, one time I thought I was wro...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pour Up | `We got that white girl workin' like Hooters` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pop That | `Money comin', money goin', ain't like you cou...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pop That | `Gettin cheddar packs like K.D., OKC that's pl...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pop That | `I go by the name Lil Tunechi` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Poke Her Face | `P-P-Poker face (I poke her so much, I deserve...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Poison | `That girl is poison, poisonous, cyanide, arse...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Poison | `I'm Ewing in the Garden` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Bibby | Ain’t Heard Bout You (Kill Shit Pt.2) | `Posto what you smellin'` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Bibby | Better Dayz | `Nigga out of town, still throwin' sets up` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Bibby | Better Dayz | `They say I'm from a place where niggas don't ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Bibby | Shout Out | `Shout out my connect, he give techs to the se...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Bibby | Sleeping on the Floor | `Real street nigga, I had a nine before Rondo,...` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | 10 Freaky Girls | `Used to use EBT to get seafood (What?)` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Creepin’ | `Did he touch you better than me? (Touch you b...` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Creepin’ (Remix) | `Yeah, thought you'd never leave me (Just can'...` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Don’t Come Out the House | `Look like Mýa, she's on fire, who got the key...` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Niagara Falls (Foot or 2) | `Villains are made, not born` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Niagara Falls (Foot or 2) | `And all heroes do not wear capes` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Niagara Falls (Foot or 2) | `Saint Laurent Don fresher than detergent (I b...` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Nonviolent Communication | `Upside down when I took the mask off` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Walk Em Down (Don’t Kill Civilians) | `Late night, broad day` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Walk Em Down (Don’t Kill Civilians) | `Tracker on his car, catch him at the light an...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Ready Set Go* | `All this fuckin' green, lil' bitch, like cila...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | SOSAYEAT | `I got a brand new toy (Mm-mm-mm-mm-mm, skrrt)` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | SOSAYEAT | `This song will never be dropped unless it's S...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | RolËy DÆ 2 | `Yeah, this shit part two` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Rollin | `I just pulled up outta Paris, then hit Saint ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Rolled IN | `Yeah, I did my shit, I put the bell, turned t...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Risky (Unreleased) | `My twizzy moving chickens everyday, that boy ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Risk | `I send broccoli in the mail but I call it oni...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Real Trendsettër | `I don't listen to nobody music but myself, th...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Real Trendsettër | `I see everybody make the same music, tryna so...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Rav3 p4rty | `Flyer than everyone, bitch, you can't fuck wi...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Rav3 p4rty | `Playin' your role, you is a ho', I let y'all ...` | Mined candidate without confirmed wordplay or second reading. |
+| Ballout | 100 Million | `I’m in a Trump Tower, come and top me` | Mined candidate without confirmed wordplay or second reading. |
+| Ballout | 100 Million | `All I know is ball that’s what I told 'em, th...` | Mined candidate without confirmed wordplay or second reading. |
+| Ballout | 100 Million | `Feds grab me for false investigation` | Mined candidate without confirmed wordplay or second reading. |
+| Ballout | 100 Million | `I’ma go out fuckin' legendary` | Mined candidate without confirmed wordplay or second reading. |
+| Ballout | 1Take | `I served the bitch some D and pulled off, dop...` | Mined candidate without confirmed wordplay or second reading. |
+| Ballout | Diamonds For Everyone | `Like, where you get that Johnny Dang at? I go...` | Mined candidate without confirmed wordplay or second reading. |
+| Ballout | Favorite | `She say she love me, bitch need to save that` | Mined candidate without confirmed wordplay or second reading. |
+| Ballout | Pill Party | `Shouts out Johnny Dang, that boy got me icy (...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Playing with Fire | `But the bitch say I'm hot, and I say, "No, bi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Playing with Fire | `Well, where I'm from, you're nobody 'til you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pistol On My Side (P.O.M.S.) | `Pistol in my briefs, you don't wanna get this...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Phone Home | `We are not the same, I am a alien` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Peggy Bundy | `Bae you too delicious, bae, I'm the key, you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Peanuts 2 N Elephant | `All my bitches' butt grow` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Outstanding (The Flyest) | `I already know how to piss in the toilet` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Original | `The ape man taught Tarzan -- how the fuck you...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Open Safe | `I capitalize off my own mistakes, you lowerca...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Open Letter | `Sometimes our loved ones don't love us` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | Just Like It | `Savage still ride with no license (21, facts)` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | King Snipe | `We pour murder backwards after, we turned red...` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | Top in the Trash | `I just poured me up a pint of that purple` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | Turn Up | `Like 50 Cent, man, I'm hated by many men (Man...` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | Wake Up in the Sky | `Out here with the moves (Moves) like I invent...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Put somë in | `You sound like a bitch or a snitch, yeah, be ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Put somë in | `I stay freestyle every song, but they been so...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Pull Up | `For a roach nigga, I got Raid` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Psychocainë | `Don't you love that I got condos out up on th...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Probably! | `Rino just poured up a whole 'nother deuce, ma...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Poppin | `I need my drugs, I need my love (We get high)` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | PUT IT ONG | `Look at us wrong and we empty the clip (Hold ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | PUT IT ONG | `I'm finna make all these Percs legal, bitch, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Takeoff | Bruce Wayne (Outro) | `Order up a hundred ice trays for the gang (Ga...` | Mined candidate without confirmed wordplay or second reading. |
+| Takeoff | Casper | `Fuck 12, nigga fast on feet (Fuck 12)` | Mined candidate without confirmed wordplay or second reading. |
+| Takeoff | Last Memory | `Coupe with the kit, cop it (Got to)` | Mined candidate without confirmed wordplay or second reading. |
+| Takeoff | Last Memory | `Niggas in the hood shootin' twice (Pew pew)` | Mined candidate without confirmed wordplay or second reading. |
+| Takeoff | Pyrex Pot | `Put your whole wrist in the pot, put your fis...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Bad Bad Bad | `I can rent this shit out or save it for the c...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Bad Bad Bad | `Double C, no Chanel, 'cause she bad, bad, bad` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Boy Back | `I can't get no sleep, I got some habits I got...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Cartier Gucci Scarf | `I take the top of that Benz off` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Chanel (Go Get It) [Demo 2] | `She fuck my side bitch she bi-curious` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Circle of Bosses | `Throw 11 like Matt Ryan` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Circle of Bosses | `Back to back, double R trucks, no key to park...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Diamonds | `I go Kimbo Slice and fucked her 'til she slee...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Diamonds | `I got water (Diamonds ), Patek water (Diamond...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Die Today | `A green and white peppermint (Woo)` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Hop Off a Jet | `'Bout to hop off the jet (Hop off the jet, ho...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Hop Off a Jet | `I keep the drum on the TEC, hop out the Culli...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Hot (Remix) | `Actin' like they the ones created this and th...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Hot (Remix) | `Hot like the 504 Boyz how I move through the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Hot (Remix) | `Took her out of Follies 'cause her pussy pop` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Just How It Is | `Ask me how they do it, kickin' shit, Ryu, Ken` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Money Hit (Remix)* | `Eight hoes wit' me like Santa Claus' deers` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Now | `Louis Vuitton my neck` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Now | `We don't play radio, Funkmaster Flex, now (Fl...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Surf | `We got some slimy ways, don't care 'bout the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Want Me Dead | `I came from shootin' Cee-lo in the dungeon (O...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Want Me Dead | `Stones in my ear, they VVS certified, bitch, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Nightmares | `It's a Young Nigga World` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Negative Energy | `Bitch, I'm the shit like my butt stink` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Negative Energy | `Bugatti with all the speed, though` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Negative Energy | `She prolly got crabs, she so crusty` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | On tha linë | `Can't even rock with you, you not a boss (Yea...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Oh eX whY | `And my twizzy in the kitchen like that boy Pa...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Off Tha Lot | `I need some top from the bitch, need the māth...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Nvr again | `These Perkies, they don't stop, I can't feel ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Miss the Rage | `I just seen some niggas down the block that a...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Matt Hardy 999 | `Shoot out the Wraith, stick up` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Matt Hardy 999 | `Uh, pouring Prince up in my cup, no Purple Ra...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | MUSCLES | `Real killer, pop up on somebody in somebody g...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | MUSCLES | `Fitted cap better say V.Roy or that's somebod...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | MANSION MUSIK | `I got white like Hannah, proud of me like tan...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | MANSION MUSIK | `Put them poles on you niggas, turn you into d...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Nobu | `I'm gon' finesse this kid, I sold him Robitus...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | No cosign | `I got bands, I got rocks, I got chickens, I g...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | NY (feat. Lunchbox) | `We just landed in N.Y., flew out from 'Ella, ...` | Mined candidate without confirmed wordplay or second reading. |
+| BashfortheWorld | Problems & Answers | `And we all got sick stomach, all this money, ...` | Mined candidate without confirmed wordplay or second reading. |
+| BashfortheWorld | Tuck That Hate In | `But I can't even say no words, can't say shit...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Lights Out | `I spent some bands on a coat, ayy (Woo)` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Mysëlf | `Talkin' 'bout life, from the love, uh, dreams...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Mysëlf | `I just sit back and, listen` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | My wrist | `Look at my wrist (Ooh), huh, look at my bitch...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | My Way | `They pushed me into the well so they could` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | My Time | `And I'm back on the bends, on a bad bend` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Mr. Inbetweenit | `Gotta right all my wrongs, uh, gotta put it i...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Money Twërk | `Color of the jeans, I buy Trueys and Ksubis (...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Money Twërk | `Take the bitch to Margiela, shе go (Go)` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Me vs tha world | `How the fuck they rock that fake lifestyle? F...` | Mined candidate without confirmed wordplay or second reading. |
+| Fridayy | Don’t Give Up On Me | `Hold me down through the night` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | KNIGHT CRAWLER | `Yeah, jump out the Demon, I'm brave and I'm b...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Mad bout that | `Flossin' the diamonds, I ain't brushin' my te...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | M.F.U. | `So much mon', so much money, got so much mon'...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Lët ya know | `Yeah, you not my twizz, you not my twin, you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Lying 4 fun | `I just be taking these Percs, hunnid milligra...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Lyfestylë | `Pull up with the Martians and they know I'm '...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Luh m | `Pullin' up on exes` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | 4X | `I walk it out, DJ Unk (Walk it out)` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Animal | `I grip a Glock, 'cause I keep a grip of guap` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Baby Sitter | `I'm snappin' off the rip, your ho say I’m her...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Ball If I Want To | `I told bae get twenty-two inches of weave` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Cry Baby | `If her friends ain't around to record it, she...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | For the Night | `Rest in peace to the Pop, make me smoke ya` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Hot Shower | `Get me right, sippin' Sprite (Skrrt, skrrt)` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Hot Shower | `I get in, fake ID, I'm McLovin it (Yeah)` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | LIGHTSKIN SHIT | `I'm a dog, I'ma shit on my last ho` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | LIGHTSKIN SHIT | `I'ma dog on the bitch, call me Cujo (Grrr, bi...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Life Is Good (Remix) | `It's cool, man, got red bottoms on` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | My Oh My | `Pop star, I'm fresh up out the trap and I'm g...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | NASTY | `Like mm, tryna kill the pussy, call the ambul...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | No Love | `I got the gas, you can roll it, uh` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Obama | `We gon' pull up like Trump (Fuck Trump)` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | POP STAR | `I'm on front row at BET without my Glock (Huh...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | RAW SHIT | `The meeting was corporate, walked in like we ...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | RAW SHIT | `Back to back in Scatpack doing donuts (Skrrt)` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Red Light Green Light | `Give them niggas a green light, they gon' get...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | SAD SHIT | `Got me lookin' for a Polo` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Said Sum (Remix) | `He want a Minaj with a new body (Ow)` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Taking It Out | `It's just me and Ri, Dada and T.G. (On gang)` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Today | `I'm on they ass today, I just went and picked...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Under the Sun | `She ig'-ing you while we fucking for fun` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Under the Sun | `No back and forth with these rappers` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Under the Sun | `I'm from Charlotte, you know how these niggas...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | WHATS POPPIN (Remix) | `My city and state never ever seen this` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | WHATS POPPIN (Remix) | `Back with the remix` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | WHATS POPPIN (Remix) | `I just pulled up in the Batmobile (Nyoom)` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | WHATS POPPIN (Remix) | `Dark-haired bitches like Shego (Pew)` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | Walker Texas Ranger | `It ain't like Atlanta, I came out of Charlott...` | Mined candidate without confirmed wordplay or second reading. |
+| DaBaby | XXL Freshmen 2019 Cypher - Part 1 | `I been tryna' be positive mama` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Its OK (okok xxxxx) | `I want a new Ferrari and I want a Porsche` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | ILL Nana | `Told them grab from the back` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | I Love You | `You see the hate and that's big cap, that's b...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | I Kill People! | `All these diamonds, I don't get hot` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Liftëd | `I ain't even go to sleep yet, it's one o'cloc...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Let King Tonka Talk | `Brand-new BBL, I thought this bitch was fucki...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | LYING 5 FUN | `(Ooh) You must have thought I was done, huh, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | LYFE STEALER | `Backstab you, backstab you, get your throat c...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | LYFE PARTY | `Weep down on your knees, if you tell the God,...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | LOOSE LEAF | `Yeah, we outside, on Bottega, we got mob ties` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Kranky (Arriba) | `Me and Yeat, like the Hardy's, share Lita` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Kranky (Arriba) | `Serve the white out the kitchen, Zack Bia (Ay...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | King tonka | `I'm a number one rich ass junkie` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Kant rëlax | `Took another perky, bitch, I'm cranky like I'...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Kant dië | `Pullin' up, shittin' on them all day, I stink...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Kant dië | `Told my dawg I'll split a mill' with you` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Jus bëtter | `Bitch, I'm on this plane, I'm flying higher t...` | Mined candidate without confirmed wordplay or second reading. |
+| diamond* | FERRARI | `I'm rockin' Yohji, Margiela,` | Mined candidate without confirmed wordplay or second reading. |
+| diamond* | GG | `Yeah, it's diamond*, I just left Miami (Hello...` | Mined candidate without confirmed wordplay or second reading. |
+| diamond* | ØWAY CYPHER | `Call them hoes salt and pepper, uh, I'm on my...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Honorable Flex | `Hit the bitch with the Drake, take care` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Hate Me | `Ice tray, diamonds on froze` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Insidë out | `I mix the X with the Perc'` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Ghost Busters | `Turn him to ashes, make him a genie like it's...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Ghost Busters | `Just like the Knicks, play with my balls` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Hello | `Bitch, I be high with the guys, it is what it...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Heavy stunts | `And I won't talk 'em, I'm goin' bray', I'm go...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Hatër | `Bitch, I get the head, I get her melon` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Hatër | `I just pulled up in a Lamb', no, I'm not your...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Hatër | `Yeah, I came with a blick, I just brought the...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | HYD | `I see all my kids, like I just came with the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | HEARD OF MË | `Diamonds on my body, when I walk through the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | H.A.B | `High as a bitch, I'm high as a kite, oh (Skrr...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | H.A.B | `Fold 'em like a taco, we gon' roll 'em like a...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Gët Busy | `Bitch, we too legit (No cap), everything I sa...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Gët Busy | `They can't even tell the real from the fake, ...` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | Accent | `I'm thicker than my accent (Accent)` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | All Dere | `Make that ass clap, make it snap` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | Ex’s (Phatnall Remix) | `You just called DeDe a rapper, he a killer, n...` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | PROCEDURE | `Only time a nigga got power over me, he payin...` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | RAIN DOWN ON ME | `Listen, ha (Brothers and sisters)` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | TGIF | `Yeezy shirt, I'm wet (Ayy)` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | Tomorrow 2 | `I stay on her mind, I got condos in that bitc...` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | Tomorrow 2 | `That nigga a munch and he gon' eat me like a ...` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | Wanna Be | `'Bout twenty missed calls, he faded` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | Wanna Be | `A P-I-M-P (Yeah), I be hoein' these niggas (Y...` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | Wanna Be | `You can get your wig turned like Effie (Like ...` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | Yeah Glo! | `Quick to crank up on a ho, you bitches better...` | Mined candidate without confirmed wordplay or second reading. |
+| GloRilla | Yeah Glo! | `Big carbon hit like Mayweather, Tula come thr...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | I Hate YoungBoy | `Stomp him in his fuckin' face, I left him wit...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Free Meechy | `I'm on three R's, call that Reese's Pieces` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | By Myself | `He a felon there, always up in trouble 'bout ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | 86 Prayers | `Tell Sherhonda I need a Honda, I'm way too di...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Knocked Off | `I don't want you, I got cake now` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Choppa Docter | `I was countin' up plenty mula like I hit the ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Fuck The Industry Pt. 2 | `J a ho, that nigga played it cold like he was...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | House Arrest Tingz | `And live a high life like a nigga signed with...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | I Hate YoungBoy | `Set 'em up then point a nigga, field goal, Ro...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Black Ball | `On top the mountain Lookin' down on all these...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Diamond Teeth Samurai | `I'm a Bad Boy, never met Diddy but that's wha...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Through the Storm | `Today Friday so you know we on that Clyde and...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Still Waiting | `They got me wearing Bob Barker, wish I had on...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Footstep | `Top back in New York, hoodie on just like I'm...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | I Don’t Like It | `And I came from EBT, no award won from BET` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Acclaimed Emotions | `Shit, nigga, I done came up from the bottom, ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Dead Trollz | `I got a gift for you, Lil Top Claus (Baow-bao...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | I Got The Bag | `Got my fit lookin' like that I sponsor cigar ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Tears of War | `Ridin' inside a Maybach, writin' music, I'ma ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Permanent Scar | `YSL the slime, we not Saint Laurent (Slime)` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Expensive Taste | `Got Dior on my glasses, and got Nick behind t...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Ride Out | `Ima ape feel like that when I rock that bape ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Survivor | `Wipe a nigga's nose, I say slatt` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Now Who | `Can't stay off boot while in that booth, stra...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | The Story of O.J. (Top Version) | `Top number one, knocking down buildings, 9/11` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Slow Down | `I take A and place it over you and the D come...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | I Don’t Text Back | `I'm at the top of this shit like I'm Big Ole ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Ghost | `Baby, this a Cullinan, this is not no Ghost (...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | No Time | `Pull that Porsche out at eleven, ain't come b...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Wagwan | `I been guilty for your love, and I plead now` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Graffiti | `Fly time, prime time, I'm ballin' hard sideli...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Killa Season | `Diamonds on my neck, took 'em out my teeth` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Down Chick | `I walked in with 2K, we on that three shit (O...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | My Killa | `Broke-ass nigga thinkin' I'm too high, gon' g...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | No. 9 | `Treat you like you my lil thugga, buy you YSL` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Outta Here Safe | `Feelin' like Drake, I'm straight out the 6` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | My Killa | `Nike on unlike the rest, I got me a check, we...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Just Made a Play | `You can smell it through the wrapper` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Sedated | `Bae, the police don't know many stars I got, ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Showdown | `I got lil' shawty to my left lookin' right an...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Outta Here Safe | `Since a young boy, I been walkin' 'round with...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Double My Cup | `Before I met Bagg, young nigga was fed` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Fuck Da Industry | `He just wan' be real fuckin' icey like he San...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | RIP | `Dead prezis, I'm on a killin' spree (Killin')` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Showdown | `Bombs all over my 'cause my car strapped wit'...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Opposite | `Hustle so hard, I go buy you some Prada` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | My Grave | `In a 911, this my memory of the Twin Towers` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Fever | `Slimy, cutthroat, 'til my app', for sure` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | I Hate YoungBoy | `Baby with 'em, 4PF, four poles firin' (Grr-gr...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Dead Trollz | `Known disses and a nigga know I'm still selli...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Killa Season | `Better not say nothin' 'bout me, this rod bri...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | I Hate YoungBoy | `Clean up on aisle O (O, O), youngin let that ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Rear View | `Every thug need a girl with a clip, baby` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Expensive Taste | `Dirty choppa if he ever got a problem with ni...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | WTF | `Fully active, I keep my shooters in the gym, ...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Love Is Poison | `Don't need no gun 'cause when I'm with you, y...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Around | `I should change my name to Double R 'Cause, b...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Right or Wrong | `Got twenty chains in the vault, put a dog foo...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | In Control | `I just rolled me up an opp, I get my "Bang" o...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Another Episode | `Nigga, I step in 23s, I say, "I'm born to wal...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | Choppa Docter | `Hold on, clean a nigga block, they know I sta...` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | War | `I'm in this bitch kickin' shit like a player` | Mined candidate without confirmed wordplay or second reading. |
+| YoungBoy Never Broke Again | What Da What? | `Fuck 'em, them youngins gon' catch 'em and do...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Got rich | `Yeah, not no pork and beans, we got rice` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Got it all | `I heard they tried to call God, bitch, I work...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Give My Last | `Fuck from the back, that's a rack, that's a r...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Gettin Hi | `I'm not talkin' 'bout this chicken for no rea...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | GODAMNIT | `You say "It's a problem", where your MAC then...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | GODAMNIT | `And I'm different, I'm a different creature` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | GOD TALKIN SHHH | `Minigun on top of that blick (Boop-boop-boop)...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | GOD TALKIN SHHH | `Real shit, that ***** ******* boy dead` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | GEEK TIMË | `You get bread, or what?` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Fukit | `Her sex for me, I know it's not the best for ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Fukit | `I can't stand the cap, you ain't did the shit...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Fukit | `I ain't sad, just got a cold heart` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Fuk Tha Clout | `Yeah, y'all be fruit like chickens, yeah, lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Fuk Tha Clout | `I take a lot of Percs, I take a lot of X (I b...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Fuck the cops | `Go ahead and hang yourself, just like an orna...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Flip | `I called up Eliantte, need baguettes` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Flawlëss | `Niggas, they rats, they like mice, they like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Firemane | `Yeah, wake up and get this bread like I'm a r...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Face The Flamë | `I got the Rolls-Royce, rip on this bitch, Lam...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Made Men | `Spending tomorrows money, I call it "Mañana"` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mercy | `More whips then Kunta back` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Money in the Grave | `Thought my raps wasn't facts 'til they sat wi...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Money in the Grave | `Word to Junior, Jazzy, Baby J` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Money Shower | `I'm gettin' these W's, like I'm Arthur (Gang)` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Never Did Coke | `You ain't been the same since you lost your b...` | Mined candidate without confirmed wordplay or second reading. |
+| BossMan Dlow | Hit | `She say she scared of spiders, so I had to dr...` | Mined candidate without confirmed wordplay or second reading. |
+| BossMan Dlow | STOP SNITCHING | `Lemonade Cadillac, big laid, I bought the V o...` | Mined candidate without confirmed wordplay or second reading. |
+| BossMan Dlow | Trippin | `Got my wrist all in the bowl like I'm eatin' ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | DoodleBob | `Pourin' yellow Tussin and some Wock', I'm wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | No New Friends | `That's what yo' ass really call started from ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pacman | `All my power pellets turn you bitch niggas to...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Plastic | `They think cuddy marchin' for a band, the way...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | REACH THE SUNSHINE. | `Ballroom dance with my demons` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | FLYTROOP | `Uh, I'm a king high, I'm on king moon` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Extraaa | `I don't discriminate none of my bread, I'm no...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Evëry time | `I do no loving, you not my bizzy, you not my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | ELIMINATË | `(Whoo) I keep talkin'` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Dëmon tied | `I was just swervin' that Demon, was swervin' ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Dub | `(Hey, hey) I'm spinning off these Percs like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pop That | `Money comin', money goin', ain't like you cou...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | Simple | `She don't fuck with rappers, me neither, sum ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Don | `My niggas movin' that white and them P's out ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Dallas | `They say opposites attract` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | DARK BROTHERHOOD | `Off a Percocet, got my mind dancin' like Shig...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Diëd B4 | `So I been shippin’ that gas, I got you on low...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Diëd B4 | `I could get your thot to slide with one simpl...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Diëd B4 | `Brand new Chrome Hearts what I mix with VETEM...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Different bootup (X With The Boot Up) | `Yeah, woke up and took a Perc' to ball with '...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Count it up | `They ask why I name it Alive (Hope I don't di...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Real Niggas | `I got real niggas with OZs, real niggas with ...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | Spicy | `I was lightin' up a stoge` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Shoot Out the Roof | `Big Benz, too clean, three thousand dollar je...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | 30 | `Call Dread, that's the new Tom Brady (Brady)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | 30 | `.44 Bulldog, make 'em get back (Back)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | AP | `Niggas will shoot you for nun'` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | AP | `Talk to me nice (Talk to me nice), or don't t...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Brother Man | `Dropping them rakes, rake 'em (Rake 'em)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Brush Em | `Big NBA, we did it first` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Creature | `This watch don't do tick tockin' (Nah)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Defiant | `I'm in traffic, say "What's rockin'?"` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Defiant | `Niggas watchin' like the Rollie (Watch that)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Defiant | `I'm tryna beat the box, 1942, I feed her shot...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Demeanor | `You can't say Pop without Smoke` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Double It | `535, I got treesh in the back` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Dreaming | `Mike Amiri, Billie Jean (Hahaha, you heard)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Element | `That's why I like the bad gyal (Woah), like R...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Element | `Traded the AP, told my jeweler Patek it` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Exposing Me | `I turn your noodles to pasta` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Flexin’ | `Big .38 for the weapon (Weapon)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Flexin’ | `If you ain't dead, better lay down (Lay down)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Flexin’ | `Bullets makin' him sleepy like Hallow` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Flexin’ | `Sheff G, sauce him up` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | For the Night | `Rest in peace to the Pop, make me smoke ya` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Gangstas | `More like Christopher Walking, man (I be with...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Gangstas | `If my opps is chillin' in the foreign (Bah, f...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Got It on Me | `Report like I'm Craig Sager` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Hawk Em | `I like my white opps blue, uh (Woo, woo)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Hawk Em | `And bro just beat a body` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Hello | `My diamonds dancin', paint her face like Mari...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Invincible | `Pop Smoke goin' fifty for fifty` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | MPR | `Said it's Big Papi stunnin’, they see me, sta...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Make It Rain | `If my opps in the foreign (Uh)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Mannequin | `Screamin' free my nigga Melly (Grrt)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Pop Smoke Freestyle | LA Leakers Freestyle #93 | `Pick pipes like I'm Peter Pan` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Scenario | `FTO shit, free Jeezy, free Clutch, free Melly...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Shake the Room | `Frosted Flake on the wrist (Ice)` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Something Special | `Fuck Cassandra, Kanesha, Kaneeka and Tisha, L...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | The Woo | `I pull up on her top gone on the Dawn, I'm th...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | West Coast Shit | `Christian Louboutins like I stepped in pasta` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | What’s Crackin | `Back out, brush 'em (Brr), know some niggas t...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Woo Baby | `All I need is weed and Henny (Henny)` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Sixteen | `Does he know his daughter might have caught a...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Stay Schemin’ | `Spaghetti bolognese in the Polo Lounge` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | T.D | `She wanted a bag, wanted some Raf` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Che cazzo ridi | `Qua per farsi assumere` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Chair Falling | `It felt like Chair Falling, felt like Chair F...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | CHOPPA SHOOT THE LOUDEST | `Like Ketchum can't catch 'em (Skuduskuh, skud...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | The Show | `I'm hospitable, blowing on that medical` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Trap Trap Trap | `I ain't nothin' like them trap guys, I mean I...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $ign | Work From Home | `Let's put it into motion, I'ma give you a pro...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Chanëlly | `I'ma be high 'til I die, at least 'til my hea...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Can’t stop it | `I bought a crib in the sky (Yeah, yeah)` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Can’t Remember | `Catch me in the hills, in the Tesla off a Tes...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Call më | `Any time I think about fucking, I feel you ar...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Cali | `In the GLE AMG` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | COMË N GO | `I need ya to pull up, give me face right now` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | CC | `Yeah, no, no, I don't want the rollie, it wan...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | CAN’T B ME | `I just mixed the Tris up with the Wock', feel...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Bëd Side | `Can't fuck with the twelve,` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Bäk 2 BED | `Y'all been flocking like a bird, y'all act li...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Taylor Port Junkie | `Invest a quarter at my tables, light his chai...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Up Next 3 | `Let off them shells, have you duckin' your ta...` | Mined candidate without confirmed wordplay or second reading. |
+| BIA | Chain Swang | `I wear jackets the same color as bugs` | Mined candidate without confirmed wordplay or second reading. |
+| BIA | Harlem | `Now I’m major only catch me in latest` | Mined candidate without confirmed wordplay or second reading. |
+| BIA | High | `Tesla Roadster in my dream, but this beamer g...` | Mined candidate without confirmed wordplay or second reading. |
+| BIA | LONDON | `I'm in London, I like to go to shop in the ma...` | Mined candidate without confirmed wordplay or second reading. |
+| BIA | LONDON | `Yummy, they got no more bread, they're crummy` | Mined candidate without confirmed wordplay or second reading. |
+| BIA | LONDON | `Aim at fences when I swing, pay respects and ...` | Mined candidate without confirmed wordplay or second reading. |
+| BIA | Miami | `Split fast in the 2-seat, blowin' Kali Uchis` | Mined candidate without confirmed wordplay or second reading. |
+| BIA | PISSED OFF | `Somebody gon' die today, this sound like Jeff...` | Mined candidate without confirmed wordplay or second reading. |
+| BIA | WE ON GO | `I brought my twin with me just like Phil and ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Usual Suspects | `Lot of homies passed, see 'em in the future` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Black Ops (Castro) | `Play with gang, we rob and got some shit all ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Big Dawgs | `None of us sip Act', we just smoke a Wood, si...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Betrayal | `Ices out at Johnny Dang` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Baki | `Yeah, I'm poppin', forеver young, Andy Milona...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Breathe | `I won't shake your hand, bitch, you need a gl...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Box | `Bitch, I do the Percocet, I don't do bars (Hu...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Booted | `Took a Tesla pill and I wait for my car (Skrr...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Big Stonëz | `You be tripping, you be smoking the crack, yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Band or 2 | `All 'cause the last time I can't- I can't lin...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Bak on ëm | `With the Percs, there ain't never a drought` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | BIGGEST BIRD | `I'm in all black like the Matrix, no time zon...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | BANG! | `When it rains it really pours, yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Back up | `Point the gun, and I'ma fill it with lead` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | BARBARIAN | `And my diamonds in the Ice Age, barbarian` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Already Rich | `Yeah, all my chains go crazy,` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Already Rich | `Bringin' the whip out the back wit' the tinte...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | All typëz | `Fashion week, I was rocking diamonds, I don't...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | All of it | `When I'm in that Maybach, that bitch pull up,...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | All I See | `Pour some Wock' up in that pineapple Fanta, s...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | 1400 / 999 Freestyle | `All that bullshit for the birds` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | +Wrist Work+ | `Mixing my cookies with OG` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | BROAD DAY | `Yo Nick Papz, make it slap, brrt` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Back In That Mode | `Moon walkin' on shit like Mike, ho, beat it, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Backends Fasho | `Straight drop out the pot, hit the glass, it ...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Came a Long Way | `Fucked around, my grandma got sick, couldn't ...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Checkmate (Smooth) | `Fuck school and your rules, niggas dropped ou...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | FINE AS CAN BE | `That nigga a munch (Munch)` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Folgers | `Hit 'em from anywhere, I'm good like Kobe (Ko...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | HOP OUT THE VAN | `Hop out the, hop out the van, I shoot (Who sh...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | How Did I Get Here | `Then I fucked around, beat the odds (Fucked a...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | How Did We Get Here? | `Addicted to hoes, fucked the family up (Hoes)` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Lick | `Know some savages, they tryna clean up and th...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Never Let Go | `Lost myself in the process, I can't go back t...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Nightmare | `Yeah, Freddy Kruger, give 'em a nightmare` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Red Room | `Bitches ain't shit, got exposed by E! ('Spose...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Red Room | `When I used to kick the door, shoot you for t...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Red Room | `Tryna get the money, ’fore it clean, it was d...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Red Room | `How I grew up, my mama was my dad (Mama, huh)` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Style Rare | `Just me in my coupe, ISS (Just me and me)` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Style Rare | `Got broccoli, pockets is healthy (I got racks...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | TEN | `She bad, but she bad for a nigga too` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | All Different | `Just like OVO this D-R-A-C-O go bird huntin’` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Aint worried | `Yeah, we just goin' crazy, goin' AWOL` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | 3G | `I've been up inside that Tonk', yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | 3093* / Big body* | `Beans, coke, molly (Molly, huh)` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | 2Up / Bad Boy Remix | `Talking 'bout desserts, well lil' bitch come ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | 1st Off .... | `Racks came in and they too fat` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | 1st Hunnid | `I got a whole lotta flawless baguettes on my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | 1st Hunnid | `Yeah, Beni-bachi when I geek` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | BUBBLE GUM | `Hey, you got it, trust the process (Process)` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Fueled Up | `Do this shit for the fam' 'cause this shit bi...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Gilbert Arenas | `Inbeddin' that shit, I'm walkin' out Onyx (I'...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Greatness | `Came in, swept the game like a storm with the...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Greatness | `My chain, my watch, my wrist, my motherfuckin...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Himothy | `In the same breath, I can show 'em how to sca...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | KEEP THAT SHIT | `Whippin' the chicken, I'm whippin' the brick ...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | LAMB TALK | `Met Gala carpet (Hoo), Walk it like I talk it...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | LOSE IT | `Emoji all drippin', leakin' waterfalls, yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Legends | `Nine Trey, brodie them some Billies` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Look @ This | `I even told Ray Charles and Stevie Wonder to ...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | More | `Ayy, go Forrest, to that money, run Forrest (...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Nothing Changed | `No, I'm not Bruce Wayne, but I keep the fire ...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Over Hoes & Bitches (OHB) | `Want smoke with me? OHB mean fightin' over ho...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Over Hoes & Bitches (OHB) | `Talkin' 'bout fashion week, you sparin' who? ...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Shooters Inside My Crib | `I was patient, now my ice cold, glacier (Yeah...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Tender | `When I fuck on that lil' bitty bitch, yeah, s...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Tony Starks | `Geeked up while I'm walkin' 'round, the crib ...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Trappa Rappa | `BP the trucks like the president (BP)` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Trapstar | `Play with the key like piano` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Two Infinity Links | `Blowin' Irene, it was act' for the lean, I wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Two Infinity Links | `85 NAWF (Go), where we all from (Migo)` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Us vs. Them | `Gave my partner 50 Cent, he shot many men (Br...` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | All The Way | `Lil' bro get to bustin' when he off a jigga` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Anxiety Freestyle | `We gon' send that boy up, he scared of height...` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Bad Breed | `Bring them checks in` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Breakin Bad (Okay) | `And I know niggas snitching for the cheese, t...` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Chicken | `Choppa burnin' like Usher, I let it` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Cupid’s Guidance | `Fillin' my pocket with bands, uh` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Deep End- Remix | `Like Michael Myers cause a murder scene` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Luv Em All | `Baby, I'm a winner, had to do it for the fam'` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Nostalgia | `Lapping niggas, they think it's a race` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Respect | `Money all in a duff'` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | ’03 Bonnie & Clyde | `The problem is, you dudes treat the one that ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Zombies | `Come be my Kardashian, King of the Come Up, u...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Young G’s | `But it's the R-shotty that got cats likening ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | You Rock My World (Track Masters Remix) | `Uh, the Mike Jordan of rap, Mike Jackson of p...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | You Know What We Bout | `That live the "Hard Knock Life"` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Why I Love You | `And this is how niggas rewarded me, damn` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Who Gon Stop Me | `I can't be stopped, like nope, like nope` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Where I’m From | `So I felt I'm owed something and you nothing,...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Where I’m From | `I'm from where the hammers rung,` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | won't stop | `Forgiato deep dish on the all-black Range` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | so far ahead ᐳ empire | `SVJ 'Ventador, top off on the 'Ghini` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | prototype | `I just ate two more and I'm goin' outer space` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | prada dem | `Put it in they face, Benihana (Benihana)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | poochie gown | `[Just like the song, this shit got hot, I'm t...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | podcast | `Uh, they can hear the Bentley when I drive pa...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | on one tonight | `Dressed like a biker, rockin' black Margiela ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | mop | `Yeah, spider web spud (Spider)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | i was just thinking | `I had to bake cake for the boy 'cause he play...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | die in california (Streaming Version) | `They gon' be missin' me` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | can’t leave without it | `I'm 4L gang, if you reach for my chain, then ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | can’t leave without it | `I kept a stick like a hobo, no checkin' me` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | can’t leave without it | `Still gettin' money my label don't know 'bout` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | bread & butter | `Kept it real with niggas, never lied and alwa...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | back to the moon | `They sent me down like I went outer space, no...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | at my purest | `The double R stars, see Mars (The double R)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | alright | `I didn't lеarn my lesson about payin' attenti...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Yao Ming | `Amiri pants (Pants), belt Hermès, drippin' it...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | YOSEMITE | `Five hundred shoes for the drip, I invest ('V...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | When the Money Goes | `Am I your Clyde, or are you just along for th...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | What’s Free | `Enjoy your chains, what's your employer name ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | What We Talkin’ About | `A small part of the reason the President is b...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | What We Do | `If my kids hungry, snatch the dishes out ya k...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | What They Gonna Do | `No more minute man in it` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | What They Gonna Do | `Thirty-three O's on a chick back like Pippen` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | What More Can I Say | `I say a B.I.G. verse, I'm only biggin' up my ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | What More Can I Say | `There's never been a nigga this good for this...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Welcome to the Jungle | `Work pots and pans just to cop me some Airs (...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Welcome To New York City | `Stand the fuck up (Welcome to New York City)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Welcome To New York City | `You're on 22nd (22nd), hit you from two-one (...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Welcome To New York City | `Wet niggas up like the Johnny-pump is open` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | We Ride | `Next time we see him, yo, we laying Mr. Biggs...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Watch Me | `Them cops Uptown hit Homes with forty-one rou...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Venus vs. Mars | `Shorty get it in, Venus versus Mars` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Venus vs. Mars | `Thought she was Adrian, it's been rocky ever ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Venus vs. Mars | `Shorty like Pac; me, Big Poppa` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Venus vs. Mars | `Shorty played the piano; me, I played with wh...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Upgrade U | `VVS cufflinks, six-star pent suites` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Upgrade U | `Ran by the men, but the women keep the tempo` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Upgrade U | `You know I used to beat that block` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Universal Soldier | `The teachings of the Honorable Elijah Muhamma...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Universal Soldier | `That's why I build my temple like Solomon in ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Universal Soldier | `(A'oodhu Billaahi) A'oodhu Billaahi min al-Sh...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Under Pressure | `Headfirst off the deep end` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Under Pressure | `What they say? (What they say?) Sak pase (Sak...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Ultra | `My chick hotter, skip Prada, Balenciaga` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | U Don’t Know | `I came into this motherfucker hundred grand s...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Things That U Do | `Homes spazzed like a bad back` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Watcher 2 | `Now you too big for your britches, you got a ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Watcher 2 | `I was hittin' the turnpike, a'ight with the b...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Ruler’s Back | `Well, in these times, well, at least to me` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Prelude | `You see, Hova wasn't digital yet` | Mined candidate without confirmed wordplay or second reading. |
+| YFN Lucci | Key To The Streets (Remix) | `Man, he had more keys than Khaled, yeah, whuh` | Mined candidate without confirmed wordplay or second reading. |
+| YFN Lucci | Key to the Streets | `I’ma flood that bitch with more keys than a p...` | Mined candidate without confirmed wordplay or second reading. |
+| YFN Lucci | Key to the Streets | `All these sticks, they dirty (Yeah, yeah), we...` | Mined candidate without confirmed wordplay or second reading. |
+| YFN Lucci | We Up | `Thats gas and everybody got they own blunt so...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Wit It | `Back to back Maybachs and Bentleys` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Wit It | `Spot just got jammed on the North` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | What Happened To Virgil | `From the A, we was taught to be brave` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Unicorn Purp | `I put some ice in the Patek, new Richard Mill...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Moon and the Sky (Remix) | `But that'll just drive you crazy baby, girl i...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Lost Carter IV Song | `Even Elvis had to BOW DOWN` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Devil Is a Lie | `Jay, I got it, I got it` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Devil Is a Lie | `Gettin white money but I'm still black` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Devil Is a Lie | `Getting money ever since I came in it` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The City Is Mine | `And just like your spirit, the Commission rem...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The City Is Mine | `Got the whole world on lock down, you know ho...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Blinding | `That boy already knighted, he ain't even out ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | The Blinding | `It's the return of the Mahdi` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Thank You | `This way after the Ruger shoots through a few...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Thank You | `Who woulda thought by makin' birds migrate fo...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Talk Up | `I ain't on the 'Gram, they record who I am` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Talk That Talk | `'Cause you ain’t never had a woman like me, y...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Takeover | `I know you miss it, Nas, the (Fame)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Takeover | `R-O-C, we runnin' this rap shit` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Takeover | `And all you other cats throwin' shots at Jigg...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Syllables | `Detox drops, what do we got then?` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Swagga Like Us | `Tryna get that Kobe number, one over Jordan` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Suit & Tie | `Ass-tight denim and some Dunks` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Suit & Tie | `I'll show you how to do this young` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Still Got Love For You | `I would thirst often as a youth, 'cause of yo...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Soon You’ll Understand | `You deserve better, this is ugly –` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | So Ghetto | `Ever since I came through, niggas got the imp...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Show Me What You Got | `H-O-V-A, gold bottles of that Ace of Spade` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Show & Prove | `My jams be packed like a Farrakhan rally, wha...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Shiny Suit Theory | `I thought you said, "It's the return of the b...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Shiny Suit Theory | `In this manila envelope, the results of my in...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Shining | `That night I mix the Ace with the D'US'` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Top Off | `It's an Audemars Piguet (Audemars Piguet)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Took Off | `They like, "Who's in the Bentley Mulsanne?"` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Toast Up | `Moving slow and sippin' Tuss (Tuss), Hi-Tech ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Surf | `We got some slimy ways, don't care 'bout the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Stuck in a Dream | `Fly in that bitch with a TEC` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Stop Playing | `These hoes throwin' salt (Salt), you might ge...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Seen It All | `Uncle died on the spot` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Seen It All | `You know I was finna blow like a meth lab` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | SORRY NOT SORRY | `Intermittent fasting, but these meals, I'm no...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Run This Town | `You can call me Caesar in a dark Caesar` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Run This Town | `And our girls are blackbirds ridin' with they...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Roc Boys (And The Winner Is)... | `I get away with murder when I sling yay` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Roc Boys (And The Winner Is)... | `Ice cold, jewels got no flaws` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Roc Army | `Illest since the Row had it, nigga now the Ro...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Road to Perdition | `Mastered both sides of The Force` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Reservoir Dogs | `Flow hot like a heatwave, bitch` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Reservoir Dogs | `Hammers fly, might miss you, but your man'll ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Reservoir Dogs | `Yo, yo, pressure bust pipes, it's time to app...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Reminder | `All rhymers with Alzheimer's, line up please` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Regrets | `As sure as this Earth is turnin', souls burni...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Regrets | `I sold it all, from crack to opium` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Regrets | `Prayin' my people bailed out like Time Warner` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Reebok (Interlude) | `Got the sole of the old Guccis, if you upset ...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | BIG PAPER | `Got thеse hoes nervous, I can spit it to thei...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | BIG PAPER | `Platinum plaques hang on every wall in my pal...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | BIG PAPER | `Clips still push, to anybody speakin' malice` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bartier Cardi | `The bitch so bad, I popped a molly 'fore I hi...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Be Careful | `But we more like Belly, Tommy and Keisha shit` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Be Careful | `Gave you TLC, you wanna creep and shit` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Best Life | `And y'all know good and damn well I don't wan...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bet You Wanna | `Every time I walk, my hips, they don't lie` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Better Than You | `Diamonds dance like Chris B's, bitch, please,...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bodak Yellow (Remix) | `Smokin' K2 with my bunkie (woo!)` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bongos | `Beat it up (Bong), okay` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bongos | `Little dusty-ass hoes need a lint brush (Woo)` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Dinero | `I just want the green, want the money, want t...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Dinero | `I told y'all, I’m trap Selena` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Drip | `Flag, nigga, throw it up, don't care about yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Drip | `Baguettes keep dripping, droppin' (Drip)` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Hot Shit | `Jimmy Snuka off the top ropes, superfly shit ...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | I Like It | `El Diablo me llama, pero Jesucristo me abraza...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Imaginary Playerz | `I seen whole fan pages make avatar changes` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Imaginary Playerz | `, don't get starstruck` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Imaginary Playerz | `Bitches say I think I'm the shit, and do (And...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Imaginary Playerz | `Cardi B, every song platinum, I'm not the oth...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Magnet | `If it ain't 'bout money, cut it short, Toni B...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Man Of Your Word | `Nigga, I believed you, don't know if I'm mad ...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Money Bag | `With them pretty ass twins, you look like Bey...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | On The News | `Said this ass calling him like a fuckin' butt...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Pretty & Petty | `It's been two years since you put a number on...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Salute | `High off a molly, my breasts are like Dolly` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Salute | `Put in lotta work, I'm gonna kill it this sum...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Trophies | `Gotta call me Bugatti Bardi, this shit look l...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Twerk | `Only fuckin' with the plug, got a nigga worth...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | What’s Goin On | `Told me you was quiet for all of these hoes` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Wish Wish | `Cardi, from the block` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Start wit Me | `Drippin', my sweatsuit Givenchy` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Spending Addiction | `I took a Perc', I been itching since noon (It...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Space Cadet | `Dracos let these niggas know we war-ready` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Short-Ass Movies | `Or Good Time by the Safdies` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Same Yung Nigga | `Told doctor, "Get that syrup out my kidney" (...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | SUN CAME OUT | `And I got a soda full of Wockhardt (Ooh)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | STREET SWEEPER | `Strap with that Uzi, got Marni on Marni (Yeah...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | ROCKSTAR BIKERS & CHAINS | `Rockstar life, bikers and chains (Chains)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | ROCKSTAR BIKERS & CHAINS | `Young GunWunna gon' keep him a baddie (Young ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Pussy Lips | `You can check your Cash App, I ain't no fucki...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Picture Perfect | `Chanel for my queen, baguettes on my team` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Phase | `I just got some new Vlone (Vlone)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Put On (Remix) | `I put on (ay Cliff)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Put On (Remix) | `I put Nas with Def Jam, I let Diddy do my tra...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Pump It Up - Freestyle | `Matter-fact, you a Harold Miner` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Public Service Announcement | `Now, back to our regularly scheduled program,...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Public Service Announcement | `Got the hottest chick in the game wearin' my ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Public Service Announcement | `I used to move snowflakes by the O-Z` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Primetime | `Cassius in his prime, coloring out of the lin...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Pray | `As the girls start to giggle` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Poppin’ Tags | `Leave dudes in the rearview` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Pop Style (Single Version) | `Tell my mom I love her if I do not make it (D...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Politics as Usual | `If preventing him from gettin' his millions, ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Politics as Usual | `Ain't no stoppin' the champagne from poppin'` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Points of Authority / 99 Problems / One Step Closer | `"Well, we'll see how smart you are when the c...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Picasso Baby | `live at the MoMA` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | People’s Court | `Three-time felon, third album, locking it dow...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | People’s Court | `It's the rap's El Niño, get your brain splitt...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | People Talkin’ | `Are y'all even gettin' this message?` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | People Talkin’ | `Can you even fathom not havin' a fear in the ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Partition (Remix) [Live at On the Run Tour] | `Uh, skeet-skeeted on the Met dress` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Parking Lot Pimpin’ | `New driver, screwdriver, the cracked steerin'...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Parking Lot Pimpin’ | `Feathers gettin' plucked in the truck from lo...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Paper Chase | `For my top draft picks, I cop the new GS` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Paper Chase | `More arms than Green Bay's Brett Favre for ya` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Paper Chase | `For the next couple of days, I brought out al...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | POWER (Remix) | `I don't stop until I see the end, my vision c...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | POWER (Remix) | `That's no Oscar Mayer bacon, you should run a...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | POWER (Remix) | `Michael Jordan the only one more important (A...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | POWER (Remix) | `To be continued, we on that Norman Mailer shi...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Otis | `Couture-level flow is never going on sale` | Mined candidate without confirmed wordplay or second reading. |
+| SahBabii | 7 Squids | `At the top like tree stars` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Open Letter Part II (Remix) | `Trying to eat in the belly of the beast` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Open Letter | `The world's under new management` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Open Letter | `You getting too much bread, they try to jam y...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | On the Rock (Remix) | `Therefore from the grace of the Lord` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | On To The Next One | `Y'all should grow the fuck up, c'mere let me ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | On To The Next One | `Meanwhile, I had Oprah chillin' in the projec...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | On To The Next One | `No, I'm not a Jonas Brother, I'm a grown up` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Oh My God | `They gunning for me, wanna see me fall` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Oh My God | `When you're 16, coming through roofless` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Oceans | `Go ahead and watch the sun blaze on the waves...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Oceans | `I'm on the ocean, I'm in heaven` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Oceans | `Mercedes in a row winding down the road` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Oceans | `The oil spill that BP ain't clean up` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Oceans | `Elephant tusk on the bow of a sailing lady, d...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | No Hook | `Rolls-Royce, keep my movements smooth while m...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Nigga What, Nigga Who (Originator ’99) | `Let the dough stack` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Nigga What, Nigga Who (Originator ’99) | `Fuck rap, coke by the boatload` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Nickels and Dimes | `I love my niggas more than my own blood` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Never Let Me Down | `And with that in my blood, I was born to be d...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Never Let Me Down | `I'm not a miracle. I'm a Heaven-sent instrume...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Never Let Me Down | `Seen the Rovers roll up with ribbons` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Never Change | `Where my dogs at? Where my soldiers at war?` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Never Change | `Young brother, big city, eight million storie...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Neck & Wrist | `And the dope house had a line, dope house had...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Neck & Wrist | `Summertime, Winterfell, I'm the Night King` | Mined candidate without confirmed wordplay or second reading. |
+| SahBabii | Bi | `When we smoke them lil' pussies, they turn in...` | Mined candidate without confirmed wordplay or second reading. |
+| SahBabii | Bi | `And these niggas not seein' me, I don't give ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Young Niggas | `Lately I've been rollin' out in Cali with my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Young Niggas | `Extendos in my Bape (Ayy)` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Young Black America | `Threw a rock out in that field, we got interc...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | You Don’t Know Bout It | `Call her my little ghostwriter` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Work | `Velcro shorty, we strapped and they strapped` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Wild Boy (Remix) | `On your wife like Cool J, beat it up like the...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | What’s Free | `Enjoy your chains, what's your employer name ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | One Call | `Got Chanel by the ton (Chanel by the ton)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | One Call | `I already bagged the pole (Bagged the pole)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | On to Me | `I'm a dog like you Pedigree` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Ok Cool (Remix) | `Bitch, I got on white ones, Fendi on my shirt...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Oh Okay | `YSL Uber these jets (These jets)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | ONE WATCH | `The bro got rocks in his ass (On God)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Murda Murda | `Tell *Muah* Bully town's for real` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Mr. Nice Watch | `Hey, huh, Cole World` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Mr. Carter | `Hey, Mr. Carter (Hello)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Movin’ Bass | `Hoodies come in all flavors, all black if you...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Most Kingz | `Most kings (... get their heads cut off)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Most Kingz | `So raise your draw bridge and drown 'em in th...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Money, Cash, Hoes | `Is like fucking with a mad dog` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Money Goes, Honey Stay (When the Money Goes Remix) | `You know me, I'm a Murcielaga` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Money Goes, Honey Stay (When the Money Goes Remix) | `Diddy said got us all about the Benjis` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Miss You (Remix) | `All the extra hue, the darker texture you are...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Minority Report | `And the next five days, no help ensued` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Minority Report | `Niggas off the chain, because they affected` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Meiplé | `We take a show at the crazy horse` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Meiplé | `I like to play cheek to cheek` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Maybach Music | `Remind me of Paul McCartney and Mike fightin'` | Mined candidate without confirmed wordplay or second reading. |
+| SahBabii | Hey Mr. | `Yeah, ooh, she reached in my pants, I got two...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | We Are | `You and I in that Wraith, retired my pimp sup...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | WAY IT IS | `Know what I do, turn her up, she want the new...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | There She Go | `Dirty dancin', both hands in the air, there s...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | We Different | `Turn my voice up some` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | War Pain | `I've been in my cell for a week straight` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Versace (Freestyle) | `I mix that xan with the lean` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Versace (Freestyle) | `These suckers be hating, they praying to God ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Use to Be | `Got a nigga on the papers; still, I keep the ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Lucky Me | `Next time you're thinking heist, better be pr...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Lucifer | `Lucifer, son of the morning! I'm gonna chase ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Looking @ My S Dots | `Went from bein' in VA to signin' NBA niggas` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Looking @ My S Dots | `Can I get a small commercial break?` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Living So Italian | `Whole family here (What?), but it feel like a...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Living So Italian | `A nigga got unlimited credit` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Light Up | `I'm the man of the hour` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Light Up | `The shit feel like when Fredro Starr` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Lay Up (Remix) | `Dope man I need a dope bitch` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | La-La-La (Excuse Me Miss Again) | `And I'm the franchise like a Houston Rocket` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | La Familia | `You ain't ready yo, you radio, you ain't real...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Kingdom Come | `Had to dust off the Hammer dance, can't touch...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | New Hunnids | `Got an Audemar plain jane (Audemar plain jane...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Money All In (Fresh Out The Can) | `Tired of the Wock', I want some red (Ya)` | Mined candidate without confirmed wordplay or second reading. |
+| SahBabii | Only Knew 1 Way | `Oh, I want the M's like an MCM` | Mined candidate without confirmed wordplay or second reading. |
+| SahBabii | Ready to Eat | `Aim at your bell, taco filling the scene` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jungle (Remix) | `It’s foretold by Calogero, most Bronx tales d...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jungle (Remix) | `But for the game I sip champagne from the wor...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jungle (Remix) | `Turn it up a bit more in the headphones` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jigga What, Jigga Who (MTV Unplugged) | `Way before Big had the gold Ac` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jigga What, Jigga Who (MTV Unplugged) | `Not rap, coke by the boatload` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jigga That Nigga | `Or playin' guts on the cruise, Hermès boat sh...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jigga My Nigga | `Roc-A-Fella, Ruff Ryders, niggas scared of th...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jigga My Nigga | `Jigga been dope since Slick Rick's first chai...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jay Z on The Breakfast Club (Power 105.1) | `Jay: I liked it` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Jay Z Blue | `Badly I just wanna spent more time with him` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Izzo (H.O.V.A.) | `I've seen hoop dreams deflate like a true fie...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | It’s On | `Get off the block, run south with M. Betha` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | It’s Murda | `Shine on the world and reflect it` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | It Ain’t Personal | `Ask your boy what he did to the whole game` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | It Ain’t Personal | `A-alike (Uh-huh), be alike (That's right)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | It Ain’t Personal | `Hop in my wheels, and I peel, streets are bla...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Is That Yo Bitch | `Hot boy like Jigga Man scorch your bitch` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Is That Yo Bitch | `You had to see she keep calling me B.I.G` | Mined candidate without confirmed wordplay or second reading. |
+| SahBabii | Save iT 4 Me Babii | `I'm like, "What I said wrong?" I done made th...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Intro / A Million and One Questions / Rhyme No More | `For the millionth time asking me` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Intro (The Dynasty) | `It's the Dynasty, niggas` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Illest Motherfucker Alive | `Fuck Sosa, this Hova, this is real life` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Ignorant Shit | `Spike Lee's everywhere, game or the flight` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Ignorant Shit | `Just the sound of his voice is a hit, hehe` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | I Wanna Rock (The Kings G-Mix) | `I used to cop "Rob Base", turn it into "EZ Ro...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | I Love the Dough | `Play the charts like The Beatles,` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | I Love the Dough | `Makes sense, don't it? Now make dollars` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | I Know | `Uhh, she wants that old thing back` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | I Got the Keys | `We go to court, we gon' plead the fifth (Slan...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | I Got the Keys | `Key to life, keep a bag comin'` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | I Get Money (Forbes 1, 2, 3 Remix) | `Yeah! Just call me Forbes.com` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | I Get Money (Forbes 1, 2, 3 Remix) | `I'm already the GOAT, next stop is the billi` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | I Did It My Way | `I caught smaller cases, but I had capital` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | The 100th Digital Short | `Hi. We're the guys who make the SNL Digital S...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | The 100th Digital Short | `Ronnie, bitch, and I'll rip you ass open!` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Tony Story | `Couple months fly by, Tony on the high rise` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Tony Story | `Seen Ty cousin Paul, Paul couldn't believe it` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Time | `And me, I got Chanel swag, you know I be C'd ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | These Scars | `If you never seen a dream fade away behind al...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | The Future | `Nigga we be trappin' we got keys like a custo...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | The Difference | `Moon walkin' in that dealer, like it's Thrill...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Tap | `Glock 40, he got smokey, yeah, the Draco` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Tap | `In the trap, hang in places that you can’t go` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Survivor’s Guilt | `I been out L.A. with fifty shots ever since P...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Stuck in My Ways | `Call me the GOAT, but I'm in a Lam'` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Still Runnin | `We do it for Von` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Stay Woke | `Fell deep in love with the game and it marrie...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Started From The Bottom (Freestyle) | `Bitch, shake that ass, go on, shake them titt...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Sparkles | `'Cause we be breakin' bricks bitch its the ka...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Sparkles | `I'm bangin black and yellow so tell to be cau...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | So Sophisticated | `Sipping purple and that motherfucker concentr...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | So Far To Go | `9th-degree black belt in the Art of Blow` | Mined candidate without confirmed wordplay or second reading. |
+| SahBabii | Tongue Demon | `Marsupial superstar, started a species` | Mined candidate without confirmed wordplay or second reading. |
+| SahBabii | Waikiki | `Them bitches talk Swahili` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | STANDING ON BUSINESS | `Usually, when I say, "Standin' on business," ...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Runaway Love (Kanye West Remix) | `The hard drums and the Wally's somethin' that...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Runaway Love (Kanye West Remix) | `You got stacks like the International House o...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | I Wanna Rock | `When I said it's her and I, that shit was a l...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Hot (Remix) | `Ridin' in the spaceship like Bonnie and Clyde` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Hot (Remix) | `Hot like the 504 Boyz how I move through the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Hot (Remix) | `Took her out of Follies 'cause her pussy pop` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Hold Your Breath | `I know it ain't sinus, bitch keep playin' wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Hocus Pocus | `I call the code on the wop (I call the code o...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Grind Don’t Stop | `Talkin' Lambo talks (Skrrt), gotta pump gas e...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Grind Don’t Stop | `Flooded out my watch (Yeah), diamonds hittin'...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | 100 | `VVS diamonds, yeah they froze (bling, blaow)` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | 4L | `Get a nigga clapped ass, Zone 6, ride around ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | ATLANTA TEARS | `Yeah, VVSs cover all my scars like I'm Meek M...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Bad Guy | `Nigga better watch they mouth cause I'll spaz...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Bank Account | `Seventy-five hundred on a Saint Laurent jacke...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hypnotic | `Pass the dutchie if you is ill` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hustlin’ (Remix) | `Yeah I balls a lot, now I owns the team` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hovi Baby | `And I have been tryin' to be patient with the...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hovi Baby | `comin' through your environment` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hovi Baby | `Stop your run, one of the reasons that they c...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hova Interlude | `Them niggas like my Peter and Paul` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hova Interlude | `I love Beans and Bleek` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hola’ Hovito | `If you haven't heard, I'm Michael, Magic, and...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hey Papi | `Bet your man can't do it like this, like this` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hello Brooklyn 2.0 | `She said she love B.I.G., and she like 2Pac` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hello Brooklyn 2.0 | `Baby, I'm cold as ice, like I'm from Brownsvi...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hello Brooklyn 2.0 | `She said she eating on the run, but she ain't...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Heaven | `I'm like Michael, recycle, these are not 16's` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hate | `Al Roker, I used to knock pounds off` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | CODE OF HONOR | `Larry got killed with his mama, I broke into ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | CUP FULL | `I think the way we grew up` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | CUP FULL | `Nuggets in the charm, these ain't rhinestones...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | CUP FULL | `Back seat of the Phantom with a sawed-off (Pu...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Dip Dip | `Rep that Sex Money, so you know I got my guns...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Dip Dip | `Young Savage, bitch, I'm in the kitchen cooki...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Disrespectful | `Richard Mille yeah, one-on-one` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hard Knock Life (Ghetto Anthem) | `So I stretched the game out, etched your name...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hard Knock Life (Ghetto Anthem) | `I gave you prophecy on my first joint, and ya...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Hard Knock Life (Ghetto Anthem) | `I flow for those 'dro'ed out` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Guess Who’s Back | `Young'un, never pump fake, and you'll get pas...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Gotta Have It | `Poli with the PDs, now they got our shit on r...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Ghost of Soulja Slim | `Next time they bring up the Gods, you gon' re...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Get Your Mind Right Mami | `But in the blue flame, bitch you're new to th...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Get By (Remix) | `Then used to tell me, "Lighten up, put some M...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Get By (Remix) | `They used to tell me, "Toughen up, put some b...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | GOD DID | `I cleaned up la madrina with the same soap, h...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | GOD DID | `I never wanted to be the state custodian (Com...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | GOD DID | `All this pain from the outside, inspired all ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | GOD DID | `Nobody touched the billi' until Hov did` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | GOD DID | `I know only God can judge us, I say that for ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | FuckWithMeYouKnowIGotIt | `Hov keep gettin' that dinero, got it` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ricky | `And Inshallah my soul the cleanest` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Realest In The City | `Let the top peel back, let ‘Sauga see the mac...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | One Love | `Baby, no-no-nobody, has got what I need` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | GTA | `Guns like Grand Theft Auto (Grrah)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | FOR A NUT | `That skelly AP plain cost me nothing (Nothing...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | FOR A NUT | `Buy a Birk' for the bitch 'fore I buy her flo...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | First Night | `Hit it with the fork and get that work tight ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Gang | `I pull up and fuck on your main, 21, nigga, t...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Gang | `Blue hunnids, I wish they was red` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Gang Shit (Knife Talk Original) | `Sticker, AK-40 to your liver` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Gang Shit (Knife Talk Original) | `I'm mister body catcher, Slaughter Gang soul ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Ghostface Killers | `Grab the hitstick, nigga tryna blitz somethin...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Ghostface Killers | `Jamaican don dada, hang 'round the shottas` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Ghostface Killers | `Watch your fingers 'cause the Cactus dangerou...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | HA | `300 Blackout'll pierce a nigga lung (Bitch)` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | HETHEN | `Bases loaded, I'm the batter-up (I'm up)` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | HETHEN | `No curing, the Instagram is killing us (It's ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Immortal | `Nah, fuck that, only thing scare me is a rat ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Immortal | `If you foul out, get a tech', my nine (Straig...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Lazy Susan | `My girl is spicy and salty like Mala (21)` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Lazy Susan | `Little boy, this ain't checkers, this is ches...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pullin Up | `I'm like Bun B how I screw things` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pray for ’Em | `I pray on my Glock when I'm goin' to bed` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pray for ’Em | `10 summers I've been at my tempo like I'm Mus...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pray for ’Em | `Smokin' loud like surround sound` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Power Circle | `When you finish first they hate you worse, st...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Power 105.1 Freestyle | `We was sheltered by Section 8` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pizza Boy | `And I be fryin' chicken` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pizza Boy | `You know we nuh tek backchat` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pizza Boy | `Girls dyke, drink straight` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pe$o | `My taste level on Ace level` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pay Me | `And my niggas all frozen, and these bitches w...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pay Me | `Ils peuvent porter le, 3ain 3ain nous on est ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pay Me | `À ma table plus de boules que dans une conces...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pay Me | `Va me chercher une canette, j'te l'ai dit dan...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pandemonium | `What the bloodclot? Tommie Frazier, fuck your...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pandemonium | `Catch me rolling with Kelly` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Drip or Drown | `We ride in foreigns, ain't no more Impalas (F...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Don’t Talk to Me | `Can't set me up, Tori Brixx` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Don’t Gotta Flex | `Not for me 'cause she basic and she petty (Ba...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Diamonds | `I go Kimbo Slice and fucked her 'til she slee...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Diamonds | `I got water (Diamonds), Patek water (Diamonds...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | DOLLAZ ON MY HEAD | `I'm a leader, I got 'em followin' my footstep...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | DO BETTER | `Always been the freshest, I be cleaner than s...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Mistletoe | `The wise men followed a star (The wise men fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Memphis | `We one and one, both one of ones` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Free Mason | `A lot of great thinkers and a lot of great in...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Foundation | `Me and my operation, run the New York night s...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Fiesta (Remix) [Clean] | `Gettin' high off the 'dro, got her knees on t...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Family Feud | `I told my wife the spiritual shit really work` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Family Feud | `A man that don't take care his family can't b...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Fallin’ | `But that's old school to the new crew` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Fallin’ | `They doing numbers like Sudoku` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Face Off | `Meet me in the square with one in the chamber` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | F.U.T.W | `Standing on the top hold my penis` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Everything’s A Go | `Corner like you wanna proposal and lock that` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Encore | `You want in the game? Attention, new dudes` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Mad High | `Dressed in Bathing Ape, I be mad fly (21, 21)` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Mad High | `We drinkin' Actavis, ain't drinkin' on no Rém...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Mad Stalkers | `Do the surgery on the coupe like a doctor (Sk...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Many Men | `Many men wanna kill me, dawg, I feel like 50 ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Mr. Right Now | `I'ma slide anytime you want` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | My Dawg | `You know what I'm on, first girlfriend did me...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | No Advance | `I'm a dog, bitch, roof (Roof)` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | No Heart | `Pussy niggas love sneak dissin'` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | No Heart | `Stuart Little, heard these niggas some rats` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | No Heart | `'Cause these niggas pussy and I'm hard` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | No Heart | `You was with your friends playin' Nintendo` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Looking For You | `I'm young and I'm rich, ridin' in a Phantom G...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Lolly | `Order what you want, girl, it ain't no proble...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | First Day Out | `Niggas fake as fuck, in the jakes` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Early This Morning | `Hit the block like a veteran` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | D’Evils | `For the love of money, son, I'm givin' lead s...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | D’Evils | `Liquor's invaded my kidneys` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Drunk In Love (Remix) | `I've been mixin', I've been sippin'` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Drug Dealers Anonymous | `Federico Fellini in the flesh` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Drop It Like It’s Hot (Remix) | `Snitch as they may, they can't get the boy` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dope Man | `For what may be the trial of the century` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Don’t You Know Original Version (Nas Diss) | `It's Euro Jay (Uh)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Don’t You Know Original Version (Nas Diss) | `Send you back to the essence for getting fres...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Don’t You Know | `Every place I visit, I got land there` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Do It Again (Put Ya Hands Up) | `The game is ours—we'll never foul out` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dirt Off Your Shoulder | `From bricks to Billboards, from grams to Gram...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dirt Off Your Shoulder | `I drop that Black Album, then I back out it` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dirt Off Your Shoulder | `Me and my beautiful bee-itch in the back of t...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Diamonds From Sierra Leone (Remix) | `See, a part of me sayin' keep shinin'` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents III | `Expose the world to a hustler's true feelings` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents III | `Like LeBron or Sebastian` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents II | `Catch me in the joints, convinced my iguanas ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents II | `By the ounce, dough accumulates like snow` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents II | `Heavy spinners like hit records,` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents II | `Maybe this Cristals'll change your life, huh?` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents II | `Ahh, who wanna bet us that we don't touch let...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents | `Got the city drinkin' Cristals, re-up the fee` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents | `And now it's kosher, shit is so Hasidic` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Dead Presidents | `, in the game so deep fiends could catch a` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | D.O.A. (Death of Auto-Tune) | `Get this to a Blood, let a Crip walk on it (U...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | D.O.A. (Death of Auto-Tune) | `I might send this to the mixtape Weezy` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | POP IT | `He spend more than a M? Then that's a fuckin'...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Run Up the Racks | `Pulled up in paradise, they got them Glocks o...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | STEPBROTHERS | `If rap wasn't workin', I'd probably rob a Bri...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pain Away | `One nigga tellin' will take the gang away` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Outro (DC4) | `Me and all my dawgs protected by Smith & Wess...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Outro (DC4) | `I had that La La and Melo, was selling them n...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Offended | `Strip a nigga like Caine cousin (21)` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Off The Corner | `Them yellow diamonds looking clearer than Cor...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | OOOUUU (Remix) | `You wanna rumble? I got the 30 on me right no...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | No Games (Remix) | `Bout them collard greens all these rappers be...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Niggas in Paris (Freestyle) | `Perc in my system and I’m in the zone, yeah, ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | My Nigga (Remix) | `You nig— You niggas ain't got no joints` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | My Nigga (Remix) | `Like they injured Chris Paul, you ain't got n...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Cop Me a Foreign | `They listenin' to everything, yeah (Yeah)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Codeine | `Nigga play with me, he'll spray at your tee` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Clear Your Mind | `I made some millions, I'm rich, but I need so...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Clear Your Mind | `I made some millions, I'm rich, but I need so...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Chanel (Go Get It) [Demo 2] | `She fuck my side bitch she bi-curious` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Cash War | `Rose gold Richard Mille, what you ain't got (...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | My Life | `I stick to the script, switch like stick on t...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | My Life | `That choppa have nigga dancing like he Bobby ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | My Audemars | `Bout to get a swiss account so fuck bout what...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Mula (Remix) | `Yo fuck federales, I smoke medicali` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Mula (Remix) | `Condom on 'fo I go to work, that's my uniform` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Meek Mill (2018) | Funk Flex | #Freestyle118 | `Huh, we go to war for that fettuccine` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Meek Mill (2016) | Funk Flex | #Freestyle017 | `Jordan with the mic, making dudes fade, I do ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Meek Mill (2016) | Funk Flex | #Freestyle017 | `Niggas talk about me, they see me and never s...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Make Me | `And I done seen bitches change on me for a li...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Not Poppin’ | `Monty Zoo, I told these niggas that you next ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Bittersweet | `Geeking on them shrooms, I'm seeing my words ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Bittersweet | `Shit done been slow motion, but the peace ste...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Belly of the Beast | `And I let her ride, she a dime, and plus I go...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | At The Hotel | `New foreign, not the Chevelle (Not the Chevel...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | At The Hotel | `YSL, we want the smoke, that's forever (Woah,...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | At The Hotel | `These diamonds on my wrist, them bitches wet ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | At The Hotel | `With that smell, baby, YSL (YSL)` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Almighty | `Working like Gotti, my crew almighty` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Special | `But I ain't wanna pest you` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Start Dyin | `Pull up on you window down, choppas out, murd...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Three Nations | `Three nations under God, U.S., Morocco, and M...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Crown | `It's a new day, hit up KD` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Crown | `Wasn't for the 'caine wouldn't be able` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Crown | `You already know what I could do with the cok...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Crazy in Love | `It's so crazy right now` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Count It Off | `Yeah, it’s young Vito, voice of the young peo...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Count It Off | `I'm from the land of white tees, Dickies and ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Count It Off | `Make sure it's stick so Ricky ain't droppin' ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Coming of Age | `From now until death do us part, nigga` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Cheat On You | `You know the rawest, ice is flawless, baby` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Change the Game | `It's the motherfucking Roc, bitch, who hotter...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Celebration | `Tried to play Superman, ended up like Chris R...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Caught Their Eyes | `You greedy bastards sold tickets, to walk thr...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Cashmere Thoughts | `The Don, smell of Dom on my breath as I` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Can’t Knock the Hustle / Family Affair (MTV Unplugged) | `Le Tigre, Pa you're too eager` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Can’t Knock the Hustle | `Le Tigre, son, you're too eager` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Can’t Knock the Hustle | `My cup runneth over with hundreds` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Can I Live II | `Where cops lock you up more than try to defen...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Can I Live II | `I'm raised different, react in situations nig...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Can I Live | `Live at the main event, I bet a trip to Maui ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Building | `You're dyslexic, you think the luggage says V...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Brooklyn’s Finest | `Cristal forever, play the crib when it's mink...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Brooklyn’s Finest | `I got vendettas in dice games against ass bet...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Brooklyn’s Finest | `Tryna push 700's, they ain't made them yet` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Brooklyn High | `The Joneses can’t keep up` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Brooklyn Go Hard | `Like oranges-es, I'm dangerous` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Brooklyn | `I make 'em change the New York digits` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | WHERE YOU FROM | `Rock out with the stick like I'm B.B. King (Y...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | WHERE YOU FROM | `Savage, where you from? G Block, where they b...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | X | `Last name Savage, bitch, but no, I'm not Rand...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | all my friends | `No, no, never lendin' it, that's all for me` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | asmr | `Roll the window down, stick the Glock out (St...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | asmr | `My brother down the road, they tried to give ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | asmr | `I got lots of stripes, all my niggas shiest'` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | break da law | `We call you a rat 'cause you spoke (Bitch)` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | can’t leave without it | `I'm 4L gang, if you reach for my chain, then ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | can’t leave without it | `I kept a stick like a hobo, no checkin' me` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | can’t leave without it | `Still gettin' money my label don't know 'bout` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | gun smoke | `Make this Glock "Shiggy Challenge" out the wi...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | letter 2 my momma | `Before I see you stressin', I'm gonna break t...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | monster | `Pick 'em up, roll 'em out` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | n.h.i.e. | `I would never start no petty beef, that do no...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | née-nah | `Rich nigga, got my strap from Tommy Hilfiger ...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Somebody (Remix) | `And we ain't gotta tell nobody, we ain't gott...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | ARGENTINA | `We spend this shit for fun, Isabel Marant, Yv...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | AMG | `I dropped my PS4 in the mud, this shit a dirt...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | .223 | `Saint Laurent trench coat, Rick Owens my jack...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Broken English & Drug Sellin’ | `A magnet to selling small white fragments` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Broken English & Drug Sellin’ | `Take your baking soda and your triple beam` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Broken English & Drug Sellin’ | `now it's time to flip 'em like Micky D's` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Breathe Easy (Lyrical Exercise) | `Maintain your stamina, Hov will damage ya` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Breathe Easy (Lyrical Exercise) | `I drop your set for rep` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Blue’s Freestyle/We Family | `Bismillah, all the gods around me` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Blueprint² | `Unleash the flutes on 'em, Guru` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Blueprint² | `Is it Oochie Wally Wally or is it One Mic?` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Blue Magic | `Niggas wanna bring the '80s back` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Blue Magic | `The Pyrex pot, rolled up my sleeves` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Blue Magic | `My repetition with wristses'll bring the kilo...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Blow the Whistle | `Uh! Ask my nigga Lebron!` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Blackout | `Ghetto nigga, putting up Will Smith numbers (...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Black Republican | `Just like an acrobat, ready to hurl myself th...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Black Republican | `I'm standing on the roof of my building` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Bitch, Don’t Kill My Vibe (Remix) | `My drink, I got my music, I would share it, b...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Bitch, Don’t Kill My Vibe (Remix) | `Like blah, Mini-14 like blah` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Bitch, Don’t Kill My Vibe (Remix) | `So many washed up with detergent` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Bitch, Don’t Kill My Vibe (Remix) | `If Shawn's a black Beatle then I need a ten-s...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Big Pimpin’ | `Don't be surprised if your ho's there out wit...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Big Pimpin’ | `And if you catch a lick when I spit` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Big Pimpin’ | `But when shit get hot then the Glock start po...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Big Momma Thang | `And another one, and another one` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Best of Me Part 2 | `High school crossover, waved away picks` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Beach Chair | `In great shape like Heidi Klum, maricón` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Bath Salts | `I'm taking half, it's just that simple` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Bath Salts | `Come be my Kardashian, queen of the come up` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Barclays Center Freestyle | `Either way I'm gon' serve ya` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Barclays Center Freestyle | `They call me Lucky Lefty...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Bam | `Before we had A&R's, we had AR's too` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Back in the Day | `Rough, the way it oughta be` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Back in the Day | `If you riff on your EP, you gonna need an MD` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | BK Anthem | `BK stand up, Brooklyn throw your hands up` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | BK Anthem | `Man, I ran through the bush, bought pounds fr...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | BBC | `Afucker is a billionaire mothafucker (Let's w...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | BBC | `Me and Teflon Q45 infinite` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | B2K - Freestyle | `Your SoundScan going down` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | As One | `I hit it once; when I'm done, give it up to N...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | American Gangster | `Can't lie, they had Muhammad Hovi on the rope...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | American Dreamin’ | `'Cause y'all ain't fucking with me, the ironi...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | American Boy (Live at Glastonbury 2008) | `Quick, run, before the tabloids come` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Already Home | `This is just what I planned to do, oh, don't ...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Already Home | `Seen Single White Female when she dyed her ha...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Already Home | `These niggas want me to go, don’t they know t...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Allure | `and all the broads` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | All The Time | `Day and night, kid tryna get 'em some Cudi` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | All I Need | `Shut your bumba', I got A-Rod numbers` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | All I Need | `Can't even steal on a nigga, motherfuckers wi...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | All Around the World | `Real niggas out in Brooklyn, some niggas don'...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Ain’t No Nigga | `With speed, I make the best bitch see the exi...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Levels | `Lil' nigga, we don't get the same paper` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Let It Fly (Remix) | `My whores go when they throat hurt, I switch ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | pad lock | `I had to sell a lil weed to hit the flea mark...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | pop ur shit | `And I'm from the Eastside, better known as Af...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | prove it | `You are the love—` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Foreign (Remix) | `Dominican, Puerto Rican, yeah, you know they ...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Flatline | `Flatline, flatline, flatline, flatline` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Ain’t No (MTV Unplugged) | `With speed, I make the best chick see the exi...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Ain’t I | `I stood for the best, I owed no debt` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Addicted to the Game | `'cause the minute you Hova` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Addicted to the Game | `But like Dale Earnhardt, the game is racing t...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | Addicted to the Game | `I'm addicted to the game` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | A.P.I.D.T.A. | `I bow with those who bow to the creator and p...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | A Word From Hov | `I’m putting that into the universe..next up T...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | A Week Ago | `Freezin' on them corners, still holdin' my cr...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | A Star Is Born | `Rule had a run, couple movie parts` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | A Star Is Born | `They come, they go, some real, some faux` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | A Million and One Questions (Remix) | `Flip bricks like Fred, Barney Rubble and them` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | A Millie (Freestyle) | `Guru turn this shit up (Ow!)` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | A Millie (Freestyle) | `So, BRRRAK, lick a shot for, BRRRACK Obama, c...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 99 Problems | `Am I under arrest or should I guess some more...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 99 Problems | `If you're havin' girl problems, I feel bad fo...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 99 Problems | `"Well, we'll see how smart you are when the K...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Whateva | `I’m like Silver Surfer baby, you can see me s...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | You | `A lil' brown-skin hurricane, a bae-bae, bring...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Time Heals All | `I wan' get loud with somebody` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 4 Da Fam | `I don't think you understand what type of eve...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 4 Da Fam | `Our tracks nice, hug the block to track dice` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 4 Da Fam | `Yo, y'all niggas truly ain't ready for this D...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 30 Something | `I used to play the block like that (Like that...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 22 Two’s | `You never ready, forever petty minds stay pet...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 2002 Funk Flex Freestyle / Back from France Freestyle | `I'm on another continent, you still ain't con...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 1999 Tim Westwood Freestyle | `Duck spit, arm shake, who wan' gon' play` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 100$ Bill | `Einstein, my mind, this MC move white squares...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 100 Most Influential People In The World: Jay-Z | `— and as a co-owner of the NBA Nets, he helpe...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 1-900-Hustler | `Never play the house, think drought, keep hea...` | Mined candidate without confirmed wordplay or second reading. |
+| JAY-Z | 1-900-Hustler | `I know you heard "Friend or Foe," this ain't ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Jefe | `Fuck up a check, then we makin' it back` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I’m Tryna | `I'm like Shaq all in the paint I bang on them...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I’m Good (IANAHB2) | `Cause I ball hard like D-Rose` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I’m Da Plug (Freestyle) | `Bought my chick a rock, that shit look like a...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Im On One | `I'm feeling so cold, yеah, we riding dirty bu...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ice Cream (Freestyle) | `Before you even started that Harley, no we ai...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I Like It | `I see it, like it, I'ma cop it, oh!` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I Did It for My Dawgz | `Rims on the jeep sittin higher than Khalifa` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I Did It for My Dawgz | `Highway to life, need a hundred mill exit` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I Did It for My Dawgz | `Nickel-plated Ruger have you in a box on Worl...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I Did It for My Dawgz | `Ricky's diesel got my hood looking like it's ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Heavy Heart | `When shorty got a big head, I was like hol' G...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Heaven’s Afternoon | `All we need is Keisha, all we need is Becky` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Confident | `That's only legal with a doctor's note (Oh?)` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Confident | `She money dance with the money team,` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Children | `What about the children?` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Bieber’s Paparazzi Deposition | `BIEBER: I was found on Youtube. Umm, I think ...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Bieber’s Paparazzi Deposition | `PROSECUTION: Are you aware that know that Sco...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Beauty and a Beat | `So just forget about the world, we young toni...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Beauty and a Beat | `B-b-beauty, beauty and the beast` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Backpack | `When I die they gonna name this planet after ...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Swimming Shoes | `Do we need swimming shoes? (Mmm) I think this...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Sweet Home | `And mines out the oven` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | track 2 | `Know I won't talk on the net, I won't at you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | which one | `Pop a G6 molly and I'm takin' off` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | tokyoto | `Bought her vêtements, she call it VETEMENTS t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | High3R | `if it s a blowjob she gon get hired` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Drug Dealer | `hit her line my cup filled up with purple rai...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Zoo | `it s m o b til the mortician dress me` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Young Money Hospital | `i ma get get silly` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Young Money Ballaz | `i m devin hester you don t want to punt it` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Young Money Ballaz | `from here to trinidad man i should ve been di...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Song | `give you the world if it was for me my diamon...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Song | `and she know me and whoever together she hope...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Song | `fuck it i ll hire geoffrey to get a beverage ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Song | `take you to your favorite restaurant ask for ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Song | `you fine as two grapes gettin stomped out by ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Only Live Twice | `all my chains look like snakes that s some re...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Mad Yet | `i been had bands since duran duran muthafucka` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You Ain T Got Nuthin | `get you three four get you like the number af...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | You | `we should be alone we can get a day in` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yes | `you can run up like you re rambo but you bett...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yes | `weezy f baby and the f is for phenomenal` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yellow Tape | `2 chainz show your tity ho damn right i got i...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yellow Tape | `i ll be there five jacksons` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Yeezy Sneakers | `you ain t gotta lie to me but you might have ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Y U Mad | `that p on my hat is for piru not pirates` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Xo Tour Life | `to the moon like warren nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Written History | `if she want some head i ma decapitate a nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Written History | `bust a nigga grape like i m a wino` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Workin Em | `i m hotter than fire she wetter than a bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Words Of Advice | `they only show they guns gilbert arenas` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Women Lie Men Lie | `i got my 3 5 7 and my 501 s in a lear 55 wit ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | With You | `and with her brain she should make the honor ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wit Me | `let me tell you a little something bout me i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Who Wanna | `if you catch me without the burner burn me` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | White Girl | `woo pourin pink panther in the punch nigga th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | White Girl | `please back it up one more time girl you act ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Whip It | `weezy f the f for fury hang 12 witnesses that...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Whip It | `and i ain t santa claus but i make it rain de...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Where You At | `sticky in my swish man gasoline flow fire spi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Where Ya At | `rrt i m taking off` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Where Ya At | `you know my mo nigga pit that a m m o nigga b...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | What S Wrong With Them | `life on the rocks too hard to swallow` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | What You Sayin | `i ma kick a nigga in his mouth; mma` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Welcome To The Concrete Jungle | `let s see: b e n z a m g` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Welcome To Tha Carter | `welcome to tha carter vi and i m servin my gu...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Welcome To Tha Carter | `pray for cloudy weather world peace shout out...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Welcome To Tha Carter | `life a bitch you got me flirtin with death` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Welcome To My Hood | `and they say time flies well mine s first cla...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Takin Over | `touch it bring it push it systematic` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Takin Over | `great scott storch can i borrow your yacht` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Takin Over | `it s a bakery here just tryin to get dough` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Takin Over | `every day christmas i m eggnogged out` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Outchea | `and my weight up like six gyms` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Outchea | `i came up from that bottom now i m richer tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Livin Like That | `i ma put my niggas where my heart go heart go` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Back Soon Original | `my punchlines give you black eyes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Alright | `like i m new here but i m nuclear that s a bo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | We Alright | `she think i m a window of opportunity close c...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Watch My Shoes | `i am different like blue pee` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Watch My Shoes | `weezy fucking baby baby make the ladies come ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wasted | `weezy f baby the f is for forensics` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Walk It Off | `ho i m a good lookin rapper i ain t lyin to y...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Walk It Off | `i can t forget about my bitch named eddie boo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Walk It Off | `cause it ll rat tat tat tat tat tat on them d...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Walk In | `you do not want angus usda prime beef you re ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Walk In | `any drama i pace it like indiana i take your ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Waist Of A Wasp | `and the plaid skirt you got on lets a nigga k...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Wind | `no socks no shoes i put my soul in it` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Vizine | `i m an og up in ot and it s no sleep til it s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Vizine | `cocaine price low call that a low blow` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Vizine | `i m the goat nigga no goatee` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Vizine | `on my face i tatted me a fleur de lis should ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Vans | `yeah it s weezy baby` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Vamonos | `it s ym that s my team nigga vámonos` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Used To | `make sure the plane got a phone now so when w...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Used To | `y all don t understand i m the one they want ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Used To | `shout out to the g s from the ends we don t l...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Used 2 | `and you still ain t seen a fucking thing unti...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Used 2 | `put his words on the plate that nigga ate em ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Used 2 | `rock your bells ll nigga locked and loaded uh` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Upgrade | `i circle your house like bb` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Upgrade | `like a tangerine` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Up Up And Away | `her mouth is like my house so i guess you can...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Up Up And Away | `i ll bust in ya face i ain t got nothing to s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Up Up And Away | `man i son all these niggas they should have a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Up Up And Away | `you re lucky i don t kill your ass but you ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | U O E N O | `i know you want a pat on the back but then th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | U O E N O | `young sex pistol` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | U O E N O | `i ma ball like crystal` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | U O E N O | `i m hard headed ocho dedication cinco uh` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Typa Way | `niggas want to be this fly too many flights t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Typa Way | `g d o d` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Typa Way | `i wax that ass she make that mr miyagi face` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Typa Way | `i be shittin on these niggas like i m sippin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tyler Herro | `bitch think we dated off a one and done` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tyler Herro | `five aks and they pop nsync` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tyler Herro | `only smoke blunts give the j to wifey every n...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tyler Herro | `nigga i don t fuck with you like big sean` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Two Shots | `money over bitches m o b goodfellas yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tuxedo | `i ain t aaron rodgers cause i m still on that...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Turn On The Lights | `and i know how she likes it i m a psychic` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Turn On The Lights | `that pussy feel new but we been fucking way b...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Turn On The Lights | `i say come and eat this bone and stop eating ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tunechi Rollin | `my pa is the birdman` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Try Me | `fuck fast in slow motion` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trouble Maker | `shoot you on the front porch and knock you to...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trippy | `i said king me king me with my mushroom crown...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trill | `i m from west side california we the realest ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trill | `i m bout to bounce back on these niggas like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trigger Finger | `got green new orleans st patrick nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trigger Finger | `and these hoes wanna kick it with me i m a se...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Trap House | `young nigga on the moon like warren` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Too Young | `staggerin i m flaggin i m reppin suwu yeah bl...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Timeless | `like pirelli tires on chevy trucks but still ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thug Cry | `go against the odds youngin go and get a job ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thug Cry | `niggas hatin like it s salt lake city` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thug Cry | `get a bad bitch that posts up like comments` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Throw It Up | `with flipmode and dtp shit be gettin ugly wee...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Throat Baby | `i like big pussy on some soprano shit` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thoughts | `i feel a spark oh` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | This Is The Carter | `i m an offense coordinator run and shoot` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Third Strike | `tight circles in the race car an eye jerker o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Third Strike | `don t seem to get why you earthlings observe ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thinking To Myself Her Eyes | `now i get him rockier than the cavemen i deep...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thinking Bout You | `but i got one i really fuck with she makes my...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thinking Bout You | `my nigga t got a 40 and he brought two cups` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thinking Bout You | `it go u n l v it go it go u n l v it go u n l...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thinkin About You | `oops upside your head i said oops upside your...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Think I M Lyin | `who that nigga i beat them like redman i ll b...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | They Want My Blood | `and i lean to the side and pour out a lil dra...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Real Her | `now the both of us are colorblind cause the o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Profit | `joey the mayor i get keys to the city` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Profit | `i m new york s living legend` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Other Side | `i call my nina bay like san diego` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Hills | `you ridin me my magnum is your saddle find ou...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Heat | `arm leg leg arm head` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Heat | `shhh the silence will speak to you` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | The Cliche Lil Wayne Feature It S The Remix Baby | `i m on my scott storch staying clear of timba...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | That S All I Have | `money to the ceilings nigga no ceilings i m o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | That S All I Have | `weezy f baby i do it big weigh me` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | That S All I Have | `if shit hits the fan i ron artest niggas ha` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | That S All I Have | `long dough no shortbread no lorna doone` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thank You | `flying united emirates sized private plane th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thank You | `ahk see him he puss` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tha Mobb | `it s my ocean baby y all niggas is tuna yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tha Block Is Hot | `no respect for no slut and no money without p...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tell Me Remix | `whip appeal` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tattoo Girl Foreva | `then the small little catch themes catch your...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tape Beat | `hopes man i don t even have em burning ladder...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tape Beat | `this liquor nine months ago swear i d make be...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tape Beat | `fuck the pigs all day even the guineas` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tape Beat | `when the reaper come get me that s when i rea...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tape Beat | `started from a leak now we swimming` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Tap Out | `bald head yup don t want no forrest gumps` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Thankful | `nigga that s for the wankstas 50 told me that...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | T O | `since allen iverson i been like eric with the...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | T O | `gun on big pun and my clip on notorious` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sweet Dreams | `more brain than a iq` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swagga Like Us | `aye you can go see weezy for the wordplay` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swagga Like Us | `mami scream ¡papí no más` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swagga Like Us | `and me for controversy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swag Surf | `and i live on an island atlantic in my backya...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swag Surf | `weezy beat the beat up like sonny liston` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swag Surf | `walk around like i m 30 feet tall tiger woods...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Swag Surf | `redbone do me good then her friend assist her` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sunshine | `went got my bread up let em wonder` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sunshine | `big latto for real i ain t never done fronted` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sum 2 Prove | `diamonds on deep freeze ice cubes like dr dre...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sucker For Pain | `i m a sucker for pain` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Successful | `diss me you ll never hear a reply for it` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Stuntin | `and 18 g s is why the chicken crossed the str...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Street Chains | `got more sand than sudan lord` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Street Chains | `boy i m drownin in the syrup like a short sta...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Street Chains | `got insurance on the trap house allstate` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Street Chains | `i m too hard for this beat i m the heart and ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Street Chains | `i dropped out of class so i m zero degrees` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Street Chains | `i m the head nigga like prodigy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Street Chains | `my bitch from atlanta got eyes like a hawk sh...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Street Chains | `now i don t wan talk bitch i don t wan talk l...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Stop Playin With Me | `cause when i was down you all got lost on me ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Still Got That Rock | `i spit these bars this a uni verse` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Still Got That Rock | `we geeked up the revenge of the nerds` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Still Got That Rock | `i swear to god i put in work` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Still Got That Rock | `and tell that bitch give me my space like a t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Still Got That Rock | `i hope my weed ain t too loud to hear the sna...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sticky | `i be gettin off like holiday man pull some pa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sticky | `pop that shit like i m poppin some gum who th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sticky | `poppin that shit get you hit quick fast mink ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Started | `married to the mob man you niggas just some b...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Start A Fire | `she ridin me like a street car named desire` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Start This Shit Off Right | `and i m gettin more checks than a peep hole y...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Start This Shit Off Right | `leave ya house haunted i ain t kiddin i ain t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Staring At The World | `i fuck her till she whine and then i drink a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sportscenter Theme Remix | `yeah entertainment sports on your network i l...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Spitter | `take that money from that bitch she know what...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Space Jam | `she blow my dick like a blunt` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Space Jam | `thank you thank you very much` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Space Jam | `i get behind that ass we drag racing` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sorry 4 The Wait | `and then i gotta split sorry baby sour grapes...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sorry 4 The Wait | `ain t nobody fuckin with me first degree murd...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | So Special | `can t desert the future no nevada` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Smell Like Money | `my bff is benjamin franklin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sleazy Remix 2 0 Get Sleazier | `some would look at my age and try to say i m ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Skate It Off | `i just skated off in ysl` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sinister | `my siamese brother benjamin it s how i stick ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Silence On The Gun Original | `i m higher than a bitch i smoke that keisha f...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Shovlin Snow | `standin in my d boy stance is all gravy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Shoot Me Down | `i spit alcatraz bars i know` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Shoot Me Down | `now watch me get high like time s up` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Shit Stains | `i m a asshole yup but i don t give a shit nop...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Shit Stains | `dr carter m d that s mur der whoa` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | She Will | `so on my libra scale i m weighin sins and for...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | She Don T Put It Down | `[hook: tank]` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | She Don T Put It Down | `and every time we cut i used to shred her; ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | She Don T Put It Down | `but you know love is nothing; ask stan smith` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | She Don T Put It Down | `ass so mean that i m always on her bad side` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | She Bad | `i get to the point keep ya eye on the arrow y...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | She Bad | `and i m hood i want you on top of the hood yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sharks | `god ain t always at the altar` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Shades | `she do doughnuts in my head over and over and...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sh T | `i m a nerd i m a geek i m absurd i m unique` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sh T | `i m just serving these fiends sell birds to t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Sh T | `like that blunt between my two fingers i m at...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Senile | `all you niggas lame tooly on me got killers o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Senile | `infrared blam if a nigga shout don t get pack...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Selsun Blue | `got the yay locked down like kim k` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | See You In My Nightmares | `i m cold yeah i m cold yeah i m cold yeah yea...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Section | `shawty said she wanted houston s so i flew he...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Seat Down Low | `pint of dj screw and that hawaiian i am` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | School Shooters | `triple x i just popped a triple x uh` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Saturday Mornings | `bubba dub nigga straight trash` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Saturday Mornings | `plans gon be executed like niggas on death ro...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Saturday Mornings | `‘cause where i m from they catchin bullets li...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Saturday Mornings | `clayton bigsby y all done took a nigga out of...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Salute | `call me weezy f baby` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Salute | `i m not a boxer i mma be brief nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Suwu | `and she don t mind fuckin with girls as long ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Smuckers | `been exhausted i been workin while y all sill...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Smuckers | `what up slime nigga go hard` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Smuckers | `it s tunechi homie master of ceremonies i kno...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Smuckers | `cherry bomb the greatest fuckin album since t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Smuckers | `boy let s get a scrimmage and cut some niggas...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | S A S A R A F | `punch him in the kisser` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | S A S A R A F | `don t test me motherfucker i study` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | S A S A R A F | `yeah my gun pow like gasol` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Running Back | `all of this fog like the weather change` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Running Back | `you niggas be fumbling don t you give em no g...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Running Back | `yeah the dmv on the map that s a city two sta...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Running Back | `since jesus of nazareth the realest you ve co...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Runnin Circles | `i m on two eighty five around these square as...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Roman S Revenge Remix | `i got bars: sentencin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Roman S Revenge Remix | `plasma` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Roman Reloaded | `[refrain: nicki minaj]` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rock Star | `reporting to you live from the moshpit` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rock Star | `rock on they see the jewels is so sick like f...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ridin With The Ak | `and you don t need to know your alphabets to ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ride 4 My Niggas Sky Is The Limit | `and i hate when a nigga say talk is cheap cau...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rich Sex | `lil mama said she only fuckin on a rich dick ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rich Sex | `he say baby every day we ballin i say swish s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rich Niggaz | `then that s when i pull up in the b e l` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rewind | `what more can i say i can t feel my face` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rewind | `try me and i m coming out my coat arm with so...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Revolver | `i m a sex pistol my love should be illegal` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Red Nation | `now we hittin switches til the spring break c...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Red Nation | `get thrown in the backwoods los angeles` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Red Nation | `on a hill like lauren` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Red Nation | `any nigga want drama i kick up a sand dune` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Red Nation | `throw your muthafucking cincinnati hats in th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rax | `guns clap like patty cake blood gang red band...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Run It Up | `d o l l a with the movement the party go ugh` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Rnb | `kissin on my thighs and my breast he two piec...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Put On For The Game | `i m who they re looking to and who they re lo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Put On For The Game | `and it takes a lot of paper to book a show yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Put Some Keys On That | `okay i m not a rookie i m a promethazine fien...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pussy Niggaz Freestyle | `504 nola everyday` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pussy Monster | `pussy pussy pussy pussy pussy pussy pussy pus...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pure Colombia | `she said she trying to see me bitch that s st...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pure Colombia | `it s just us fuck the rest we got insomnia` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pump That Bass | `all in the strip club never get a boner only ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pull Up | `shifty eyes i see four` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pull Up | `my dead presidents reborn` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | President Carter | `uh appetite for disaster i want a full plate ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | President Carter | `gorillas in suits` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | President Carter | `i say you rappers sweet i pay the incidentals` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Preach | `the boot the battlefield` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Preach | `please don t worry nancy all my weed is organ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Post Bail Ballin | `my warrant s clear as day like doris is` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Poppin Them Bottles | `i just copped me some purp purp i m bout to o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pop That | `and nigga you s a square and i will twist you...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pop That | `shout out my bitches too huh we the 2 live cr...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pop That | `what you twerkin with` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pop Off | `come in your church and peter pop off` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pop Bottles | `so i scratch and yes junior is the best` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Playing With Fire | `you follow and i lead you straight to the nee...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Plastic Bag | `niggas get caught and tell everything with th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Picture Perfect | `bitch i m picture perfect i paint a perfect p...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Picture Perfect | `my dick feel like a prisoner cause this bitch...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Picture Perfect | `but i tell em put it away or you could get pu...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Piano Trap | `banana clip big banana up in her tailpipe` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Phone Home | `and yeah i m a bear like black and white hair...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Perfect Remix | `vvs in my jid that s perfect` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Peanuts 2 N Elephant | `but i still act a donkey` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Peanuts 2 N Elephant | `bands on bands in my pants that s a drumroll` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Peanuts 2 N Elephant | `syrup in the double cup fruit punch like knuc...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Pillowtalk Remix | `i got too many seeds they all gotta grow no i...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Outro | `what the fuck you niggas still hangin around ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Outro | `your fate is sealed no heidi klum` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Original | `i made something out of nothing thanks for no...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 10 000 Bars | `rocky watch resemble mountains or something` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 10 000 Bars | `and tell em i m like tiger woods all i got is...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 3 Peat | `so retreat or suffer defeat` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 3 Peat | `what what i don t give a motherfuck get your ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 3 Peat | `c3` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 3 Peat | `fuck is up beat him up like a million uppercu...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 3 Peat | `hollygrove i throw it up like i m tryin to lo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 3 Peat | `watch me bitch watch me bitch watch me but th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 5 Star | `you bitches don t ball out you get your qb sa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 5 Star | `these bitches pussy though pushed them out my...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 500 Degrees | `i be snappin i hope you get the bigger pictur...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 6 Minutes | `and 20 dime bitches to show y all niggas how ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 6 Minutes | `you see the wrist moving it look like pure pu...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 60 Rackz Remix | `i got three hoes with me fuck i look like san...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 9 Piece | `i put that pistol to his head and tell the ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 9 Piece | `rack em up pool table full of 8 balls` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 9 Piece | `automatic leave em dead in the living room ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | 9Mm Speaker | `because of the law i had to conceal it but if...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | A Milli | `and the bible told us every girl was sour` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | A Milli | `c3 3 peat hahaha` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | A Milli | `on some faggot bullshit call em dennis rodman` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | A Milli | `bitch i can turn a crack rock into a mountain...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | A Milli | `and my knot thick i m it` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Abortion | `life is a gamble better check the point sprea...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Abortion | `underground shit i see myself as a seed` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Abortion | `you can save your bullshit on your memory car...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Act Ghetto | `she just text me o m w with two xos` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Afro | `never been fishy but i fuck the pisces` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | After That | `them feds tryna throw me in the box i m like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All About Da Money Remix | `upstairs in my mansion knock knock who s ther...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All About Da Money Remix | `girl let s hit like kobe and ginobili` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Night Long Og Mix | `and when i m in the booth bitch the lion is l...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Night Long Og Mix | `it s blood gang slime but i parlay with snoop` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Night Long Og Mix | `man i swear my bitches do it til they suck th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All That Lady | `you know i love you like cooked food i m a go...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Of The Lights Remix | `long knife don t like to ask twice you killin...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Of The Lights Remix | `i spend all my time in houston smoke that kus...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Of The Lights Remix | `it s cold as hell i show and tell` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Of The Lights Remix | `she eat me up she got expensive taste` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Of The Lights Remix | `i took your chick now you want beef and i m j...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Of The Lights Remix | `why every rapper named big got bodied huh but...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | All Of The Lights Remix | `put you out your misery: kathy bates` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Alone In The Studio With My Gun | `223 45 do the math` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Alone In The Studio With My Gun | `smokin hay in the middle of the barn` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Always Strapped Remix | `man i m just tryin to get my spot like a polk...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Always Strapped Remix | `top chopped sent the car to the barbershop` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Amazing Amy | `i m norman bates and this bitch ain t normal ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Amen D4 | `tell them alphabet boys it s a g thing` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Amen D4 | `she like it in her ass mouth and pussy: 3 car...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Amen D4 | `she said she wanna fuck my brains out but she...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Anotha Luva | `i m lost in a tsunami that is kehlani` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | B B King Freestyle | `all i gotta be is all that i can possibly` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | B B King Freestyle | `i used to fuck gucci models i m fuckin gucci ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | B M J R Ii | `and you ask why my bitch stuck up blood she g...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | B M J R Ii | `young nigga tuned up like midas` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | B M J R Ii | `the street keep callin i gotta change my numb...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bm J R | `duckin the animal keeper runnin with my prima...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Back 2 Back | `my benzo got no ceilings but the windows came...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Back 2 Back | `tunechi pass the blunt i m gon need time to s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Back 2 Back | `dirt bags we belong on a vacuum` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Back On The Bullshit | `but i got this bright red bandana though flin...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Back On The Bullshit | `and since my d o b i ve been on my j o b nigg...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Back On My Grizzy | `the club like a grocery i just bag a bitch` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Back On The Road | `this dedication boy i want the drama too and ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bad Side | `they say ladies love cool j well the j is for...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ball Hard | `black chyna black mamba baby mama lady gaga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bando | `and my homies got more white than abercrombie` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bandz A Make Her Dance Remix | `short hair like nia long` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bank Account | `now ride me like an open road no pedestrian` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bank Account | `ruler clip rick the ruler slick` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bank Account | `just call her lewinsky;` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bank Account | `i pop a perc i m trippy call me perc nowitzki` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Banned From No Remix | `jamaica queens bitch` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Banned From No Remix | `cake for days i don t need a baker` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Banned From T V | `superhero car like i crime fight` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Barry Bonds | `and i m doing pretty hood in my pink polo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Barry Bonds | `i m so fuckin good like i m sleepin with meag...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bass Ackwards | `now the barrel of my governor is hoo tot` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Be Like Me | `stay in your own lane or make me bowl that st...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Be Like Me | `you followin my lead my chopper isn t clean a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Beat The Shit | `climbin up on sugar hill slidin down in somet...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Beat The Shit | `you ll catch a hook fish hang` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Beat The Shit | `this triple c; they triple l: lames love to l...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bells | `l i l wayne is hot as hell` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bentley Truck | `and all of my niggas is a1 and y all lil nigg...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Best Rapper Alive | `i m busy i got paper to reel in god i hope th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Best Rapper Alive | `you look a little salty have yourself a chill...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Best Thing Yet | `how do i live when i been deadly as i am` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Best Thing Yet | `i m up there too you fly i flew` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bible | `0 100 got a ticket in the benz` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Big Tipper | `i ma hit it then we practice social distance ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Big Wings | `we point them hammers at you more bullets tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bill Gates | `pistol in your mouth i can not make out what ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bill Gates | `get her to the crib get in that pussy and jus...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bill Gates | `and still i do not give you motherfuckers the...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bill Gates Remix | `i ve been popping all these pain pills and st...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bill Gates Remix | `taking all this fucking adderall i m sleep wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bird Call | `trying to skeet on a b lips down low like i m...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bitches & Bottles Let S Get It Started | `it s we the best it s ymcmb` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bitches & Bottles Let S Get It Started | `she on that molly i m on that mary i m on tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Black Out | `she gave me neck choke her` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Blackin Out | `i wear versace eyewear feelin like top shelf` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Blackin Out | `kick punch` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bless | `i m heartless nigga your shit skips` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bleu Snappin | `throw a p up for pirus shit that ps5` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Blood Pressure | `bloods like pressure that s you on a stretche...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Blue C Note | `you be savin hoes fuck em you be rest hatin f...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Blunt Blowin | `young money s eating the label getting fatter` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Blunt Blowin | `i say ym` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Boiling Water | `movin soft out the hardtop` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Boom | `they know i keep that toaster you can be my p...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Born Stunna Remix | `i show you bitches how to put together punchl...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Born Stunna Remix | `it ain t working out it ain t crunch time` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Born Stunna Remix | `you my son bitch and it s bedtime` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Both Remix | `and when i m in la i m smoking kobe bryant ei...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Both Remix | `this patek philipe gon make this crooked judg...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bottom Of The Bottle | `she ll be safe cause me and her make a real g...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bounce | `i been a playa since elementary` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bounce | `i got more bars than a penitentiary` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bounce | `if i don t get the car first i ll have a temp...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bounce | `my rivers rapid my fins are splashin my gills...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bounce | `won t wrestle niggas i spatula all you action...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bounce | `in a van full of some niggas and white bitche...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bounce | `my ceiling s absent my wheels are massive my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Boyz 2 Menace | `then i figured out how to figure out what i w...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Boyz 2 Menace | `all these rings on call me bellboy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Boyz 2 Menace | `just let him be and ignore the buzz` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Boyz 2 Menace | `i got my married hoes on single drugs got my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Brand New Money | `your girlfriend tryna knew me i mean she tryn...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Breakin My Heart | `so i play fair like roller coasters and clown...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Breakin My Heart | `not a player like pun but when shorty s get t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bring It Back | `you don t want me to see you with my peekin t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Bullet Wound | `shoot a nigga twice in case he live a double ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Burn | `in the words of my nigga bp i ll hit a bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Burn | `and my girlfriend is a chopper i finger fuck ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Buy This Buy That | `street sweeper make a nigga bite the dust` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Buy This Buy That | `i m homeless bum rush em` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Buzzin | `y all never score y all puntin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | C O L O U R S | `cool outrageous lovers of uniquely raw style` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | California Love | `i am not an actor but i m stickin to da scrip...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | California Love | `in that boxing ring and in dat box is a ring ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Call Me Nobody | `call me a killer i deserve it i walk in with ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Can You Believe It | `and i m all about my cake red velvet` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Carter Ii | `get em` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Cashed Out | `i m spendin money spendin money ben franklin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Cashed Out | `i don t gas no bitch no pit stop` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Celebration | `all my niggas got guns no registration yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Celebration | `on the road to riches bitch i got road rage` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Church | `so we move and we roam like them italian mobs...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Civiltv Next Up Cypher | `this for all my fans that been fans i m so so...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Clap For Em | `pull that grande out my pants and grind it li...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Coco | `woo birdman junior – more like ugly duckling` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Codeine Dreaming | `i m wet dreaming bout actavis two new cups fe...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Comfortable | `bedroom in the bank baby we safe` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Comfortable | `i got game like ea but i wanna let you play` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Cotton Candy | `all gas that s without the pedal` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Cotton Candy | `mary jane molly hot lesbians bitches snortin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Cotton Candy | `line s long to the powder room oh yeah powder...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Crazy | `and comin from the kitchen was an echo from a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Cream | `lift a mini skirt get behind her like benny` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Cream | `and to you it s just change i want every jc p...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Cream | `i heard a nurse say thank you for being so pa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Cross Me | `and me i m out of patience sick and tired lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Crystal Ball | `i ain t got high expectations i m just expect...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Curtains | `and i got all my niggas in that truck like an...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Curtains | `i get adam like yolonda` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D O A | `smoking purple i heard it through the grapevi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D O A | `i let my driver drive i m on par 4` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D O A | `blood gang motherfucker call me red alert` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D O A | `i m in the way you can t pass like aaron broo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dark Shades | `the grass is greener in my garden` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | David Banner I M A Rocker | `it s weezy fuckin baby yeah straight up out t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dead Bodies | `hehe ok simply i m a bug lover it s fly carte...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dear Anne | `i m sure like white sand` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dear Lord | `you gotta know how it go or else you could en...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dear Lord | `saying you don t know shit or else you dying ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Death Wish | `ahh i be on that way left shit` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dedicate | `with some rock playin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dedication 2 | `watch me let it spray like a hydrant can t do...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dedication 3 | `you can get the steel if you try these thieve...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Deep | `jail time a slap on the wrist` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Deep | `stuntin in my southernplayalistic cadillac an...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Destroyed | `i still been drinking on the low` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Destroyed | `shoutout to my plugs i pray the rats don t ch...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Destroyed | `i just might call your girl a friend but fuck...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Devastation | `got something on my side that pack a kick – t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Devastation | `my bitch named gigi give me head i be like go...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Devastation | `boy i have the people looking for you like a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Devastation | `i should probably see a shrink but i m afraid...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Devastation | `and that trash bag they find you arm leg leg ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Different Girls | `right left in them mr eterceden head all the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dippin | `pound for pound call me a heavyweight round f...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Do It Again Mastered | `and it feels so stray n g e wouldn t you say` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Do My Thang | `back seat with the heat i m warmer than a qui...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Do My Thang | `hit em with the glock put em in a coma now wh...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Do My Thang | `and it come faster than a nigga fuckin j lo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Do My Thang | `and wanna eat me alive i m like an entrée` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Do My Thang | `so icy like a motherfuckin cupcake` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Do What We Do | `i gets all in her belly like pepto` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Do Ya Thang Remix | `i don t got papers on that glock but i got pa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dontgetit | `but since i am human i am good and bad as wel...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Cry | `i told myself it s just you and i then the br...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Cry | `need my family tree next to a money tree with...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Kill | `i call shots you call forward` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Kill | `sleepin with a bad bitch wake me up when it s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Kill | `my young bitch keep on snappin on me i told t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Kill | `we on that gt vodka straight out the bottle g...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Kill | `let em know we got beef for anyone who got a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Kill | `bitch come kill my time but bitch don t steal...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Mind Remix | `keep telling me this and telling me that yes ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Tell Me It S Over Remix | `and i don t play though and they love to hate...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Touch Me Throw Da Water On Em Remix | `i go hard and my leather so soft` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Don T Want You To See Me Cry | `man they acting like they don t know i m from...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dope New Gospel | `man in the mirror my hero he helped me center...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dope Niggaz | `taught me how to be a goal tender support sys...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dough Is What I Got | `because of who i a m holler back in the morni...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dough Is What I Got | `you will just get played like an accordion` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Dr Carter | `excuse me if i m late but like a thief it tak...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Drip | `i know chris decepticon clips transform ya` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Drip | `cause bitch i m all about my paper like usher` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Drive Bys | `i chop a nigga family tree to wood ow i m thi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Drop The World | `served to survive murdered and bribed` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Droppin Seeds | `my bitch got an apple bottom and she swallow ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Droppin Seeds | `never played golf but got a driver and a cadd...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Drowning | `fake love in the air love bugs turn to ticks` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Duck | `welcome to the murder capital that s capital ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D Usse | `yeah i might have them bricks call me brick c...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D Usse | `i got a redbone with two golds` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D Usse | `okay nigga i got em point em out and i got em...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D Usse | `picture me broke but forgot to take the top o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D Usse | `and she snort too much of that michael jackso...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | D Usse | `i m married to this real shit and i m a wife ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | E T | `have trouble bein human let alone a human bei...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | E T | `i don t phone home i phone homies and catch y...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Eat You Alive | `doctor` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Enemy Turf | `gun for gun eye for eye` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Eureka | `good quality coke that s gq` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Eureka | `young money with no wrinkles` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Eureka | `she snort one line want a sequel she snort tw...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Eureka | `cut your tongue off leave you speechless` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Eureka | `that codeine my anesthesia tried to kick but ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Everyday We Sick | `i took a l what comes after l my nigga ms` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Everything Red | `got too many bloods i could never be anemic` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | F I V E | `and try to guess the color of my shoelaces re...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Faded | `she knows my dick she call that nigga richard` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Faded | `the gun selena give a nigga bieber fever` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Family Feud | `all this motherfuckin beef i need some rice o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Family Feud | `i make you pay attention then rip your receip...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Family Feud | `i m hall of fame in the booth nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Family Feud | `that s truth no boost nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Famous | `you wish that i was in your shoes i d take th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fat Albert | `hot potato on the nose of the handgun` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fat Albert | `this for the smokers and the real ones` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Feelin Like Tunechi | `many men they wishing death upon me` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Finessin Remix No Ceilings 2 | `percocets molly and syrup i got pms` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fingers Hurting | `y all shippin keys we shippin grand pianos` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Finito | `real niggas don t do sit ups when it s crunch...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Finito | `side step counter right left punchline` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fire Flame Remix | `i lucille ball bitch i love lucy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fireman | `she need her candle lit yeah and i ma wax tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fireman | `my money three sixty you only one eighty that...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fireman | `fresh on campus it s the birdman junior yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fly As The Sky | `is that the eagle gonna hurt when aiming at y...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fly As The Sky | `then you will be impressed and yes that s vs` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fly Away | `sippin slo mo at my pace` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fly Away | `hit the court shoot the da treat beef like us...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fly Away | `got a dyke ho nympho and your bitch layin nex...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fly Away | `all the gs in my corner them boys so warriors` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fly Out | `i spent a g on these frames but my vision is ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fo Sheezy | `every diamond s like a nice size i help peopl...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | For My | `even my dentist told me floss 7 days a week` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | For Nothing | `and that 380 that s my chaperone it blow like...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | For Nothing | `no bullshit at this rodeo and all my clips pi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | For Nothing | `she give me ass she give me head i call it he...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | For Nothing | `we up in méxico to see the plug and not elect...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | For Nothing | `on the set in that ovo on the jet in that ovo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | For Nothing | `looking in the mirror all i see is money bop ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | For Nothing | `pledge allegiance to the region that s beneat...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | For The Night | `flew to napa valley just to taste the grapes ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fuck Food | `i m vlad and i ll bag em put a bitch in the s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fuckwitmeyouknowigotit | `fuck all y all niggas except my niggas` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fuckwitmeyouknowigotit | `had a phone in jail that s a cellphone` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fuckin Problems | `one man band all you hear is repercussion` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Fuckin Problems | `or like rocky beat the russian` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Did | `they was tired of me winnin now they dead sle...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Did | `i never wanted to be the state custodian come...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Did | `hov did` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Did | `i m now careful with the sentences them only ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Did | `some new niggas out of pocket talkin exotic y...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Did | `they said they don t know me internationally ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Did | `all this pain from the outside inspired all t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Did | `out the mud they gotta face you now you can t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Did | `next time we have a discussion who the g o a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gangstas And Pimps | `weezy baby don t fool yourself you need me ba...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Genius Lil Wayne Remix | `upper echelon when i bless you molest you wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Get Bizzy | `big bro i m a big dog and i don t mean fleas ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Get Bizzy | `i ma draw that pistol make your chest a table...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Get High Rule The World | `from the city where the judge throw the book ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Get High Rule The World | `the top is at my fingertips like i ain t got ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Get High Rule The World | `campbell s soup on the wrist just call me ear...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Get Ya Gat | `now he exposed when we snap picture that` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Get Ya Gat | `all this white powder screaming white power` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gettin It | `stick it to the script like java` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gettin Some Head | `i m a fly ass nigga take a look at me bitch n...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gimme Mine | `ho this ain t punch i m sippin on some syzurp` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Give It Up To Me | `i m the cashier i change girls` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Give It Up To Me | `i m wayne s world` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Glory | `black your eye like will i am you willy wonka` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Glory | `and now you sleep i m inside your room wit a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Glory | `woo this that shit they didn t want me on` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Glory | `from here to hell i hear them hail i give the...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Go Dj | `ayy it s cash money records man a lawless gan...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | God Bless Amerika | `heard police was lookin for me i ma hide by a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gold Remix | `caught up in my magic caught up in my karats ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gonorrhea | `i ll let my goons rush ya like moscow` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Good | `gimme gimme good and plenty opp good as any` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Good Day | `fuck with hollygrove it s gon be a holocaust` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Good Form | `i feel like adam but i m bout to eat a apple ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Good Time | `girl turn over good defense` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Good Time | `paris do you speak french` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gossip | `and you can get tipped like you re waitin on ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Got Money | `now i ain t never been a chicken but my fifty...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Got Money | `so rolex watch this i do it four five six` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Got Money | `and i ll cool your ass down if you think you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gotta Go Hard | `bitches is softer than al dente` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gotta Go Hard | `i wear that metal no olympic` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gotta Go Hard | `put my whole borough on my back and i m good` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gotta Lotta | `got the bands on me like a football field i m...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gotti | `and you can beat around the bush and find a n...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gotti | `and if the feds bring us in we get the same t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Gotti | `c5` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Goulish | `cut off his arm and leg like i charge for my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Goulish | `his head up his ass i ma have to headbutt him` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Green Ranger | `yeah yeah yeah i don t even like this beat bu...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Groupie Gang | `my bitch got tits and two chains` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Guerilla | `boy you are not a man you are just amanda` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Guess Who S Back | `i m a motherfucking ani mal i ran a mile just...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Guess Who S Back | `knocking down the door say hello to my little...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Guess Who S Back | `thats weezy biatch baby hot blazing some say ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hallelujah Heaven | `them gold bullets come out the pistol they lo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hate | `nigga fuck ya don t make my trigger smart nig...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hello | `s on my chest like a super man vest` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | He S Dead | `now go get that shovel and dump it on wayne t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | He S Dead | `i don t know if i m comin or goin lord i m un...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | He S Dead | `i had a rolls royce ghost now i m feelin like...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hip Hop | `thug life i feel like 2pac uh huh` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hold Me Back Remix | `my cousin fighting a case i hope he beat it l...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hold Up | `pass that bitch down like an heirloom` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hold Up | `real nigga talk gangsta conversation` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hold Up | `bal like gay hoes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hold Up | `weed so strong it s like i twist tornadoes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Holla At Me | `i m a grit boy looking for a ass like ki toy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Holy | `ridin in a double r just regrettin regret get...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hot Boy | `she ask me what the tear drops on my face i t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hot Boy | `i m going oj oj go dj` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hot Boy | `stunna not around but everybody stuntin here ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hot Thing | `i got a priceless flow but i can show you rec...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hot Thing | `them other hoes trash and weezy dont litter` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | How Many Times | `wine mixin this shit like the catalina` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | How To Hate | `well i guess i m single for the night` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | How To Hate | `but don t fuck up with wayne cause when it wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Hustler Musik | `black peter pan fly til i die what you sayin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Ain T Gonna Lie | `we been hustling since mike tyson punch out m...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Don T Like | `these hoes wanna ride my dick you gotta hitch...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Don T Like | `she suck my dick for 60 seconds and swallow a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Don T Like The Look Of It | `and when it come to beef give me a1 sauce` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Don T Sleep | `i m reppin m o b the mob i got ties woo woo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Get It In Original Version | `it s too big it s too wide it won t fit but i...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Get Money | `ymcmb nigga rich gang` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Got Some Money On Me | `i m on that drink baby i think i m comatose i...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Got Some Money On Me | `i smoke that green day i m on my billie joe` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Heard You Re Married | `and tell hubby i ll kill him no hub cap` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Just Wanna Hit | `and i m a rock it like houston` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Like Tuh Remix | `would prefer the smart ones cause the brain i...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Like The View | `i just roll another joint like spike lee nigg...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Made It Cash Money Heroes | `yeah ymcmb baby` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Run This | `i ll have my goons jack son like samuel` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Told Y All | `lie to the bad guy hi to the good dope` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I Told Y All | `weezy f baby and the f is for forever boy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ianahb | `it s so strange` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ianahb | `i gotta hit em like redbones with long hair` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ianahb | `if you fake put a egg in your shoe and scramb...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ice Cream | `we the motherfuckers like milf my nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | If I Played Guitar | `she s a man eater and i was just an appetizer` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | If I Played Guitar | `if i played guitar the way you play games wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ignant Shit | `i smoke goodie no glaucoma` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ignant Shit | `g and tez got a sig but i m no smoker` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Ima Boss Remix | `and i got the gats gilbert arenas` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | In The Morning | `i se a bad bitch up in a hyundai i said baby ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | In This House | `nigga santa claus with no bag nigga you a ho ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | In The Hood | `and i am all about me like do re haha` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Instagram Song 8 Cwyn | `i m at the top i m all alone macaulay culkin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Intro C4 | `still running shit; i m on my cardio` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Island Holiday | `just got an actin coach to help me act my age` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Island Holiday | `i was raised on ugk` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | It S Good | `mind in one place heart in another please par...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | It S Okay One Blood Remix | `they hold cards down nigga like spades and pi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | It S Okay One Blood Remix | `bangin underwater fuck around and soak ya` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | It S Okay One Blood Remix | `this ain t a movie dawg nope not waist deep i...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | It S Young Money | `gettin money is the only time life make sense` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | It S Young Money | `uhh i m screaming mob money over bullshit don...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | It S Young Money | `i m bout to go ham on this motherfucking trac...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M A Ridah | `blooka blooka to your face closed casket mama...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M At War | `i m a 5 star purple hearter purple sparker` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M Me | `young money over bitches my niggas trust my s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M Me | `what s really good i m bout that ruckus like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M Me | `the only time i will depend is when i m 70 ye...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M Me | `cash money million heir to the throne` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M Me | `un fucking believable lil wayne s the preside...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M Nice | `yeah i m nice t i m nice yeah e i m nice hood...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M On One | `young mula baby` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M That Nigga | `oh i pass time like a backwood backwood i get...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | I M That Nigga | `i want my bread fuck the muffins yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Jealous | `and i know that they hatin they say i m no go...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Jumpman | `we aiming this thing at your body we aiming t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Jumpman | `ooh i m up man up man them viagras got me up ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Just Chill | `with all of my thank yous added up i still ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Just In Time | `time is of the essence i m progressively impr...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Just In Time | `nigga shot him but shit he got minimized we w...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Kamila | `i put my spear in her like i m nigerian` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Kant Nobody | `leavin bitches on they own like the oprah cha...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Kant Nobody | `can t trust my shadow that s a fact i can t g...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Karate Chop Remix | `beat that pussy up like emmett till` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Kat Food | `green goblin she red robbin we look like wate...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Kill | `toss a nigga in a river wearing cement shoes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | King Kong | `and i feed him banana clips yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Kings & Queens | `i m talking shit you can t imagine all the pe...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Kings & Queens | `rubies in the watch face it came with the fre...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Kobe Bryant | `kobe bryant aka mv me` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Krazy | `need equity need credit cleaned` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | La La | `i m richer than nicole and i m a lion like he...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | La La | `but i ain t tellin jokes apparently` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | La La La | `tell them hatin niggas one like they in the m...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | La La La | `and you know i m ducking five o and my moms` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lamar | `don t let me do it to him dunie cause i overd...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lamar | `you ain t runnin shit boy feed your ezekiel` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lamar | `fuck on her to some c5 cut on funeral and she...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lay It Down | `grab the owl out the tree and ask that bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lay It Down | `y all bout as hot as von dutch` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lay You Down | `uh i ain t a killer but don t push me` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let It All Work Out | `please swallow i had my share of dirty diaper...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let It Fly | `the uzi with the booty clip more than one i m...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let It Rock | `ménage à moi` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let Me Love You | `i say you need a real **** she say yes lord a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let Me Thru | `i got too much rubber to burn fire hazard` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let The Beat Build | `rims big make the car look like it s two stor...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let The Beat Build | `feed you to piru` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let Em All In | `ever heard of san francisco 49 ers we some ma...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let Em All In | `girl let s make a movie what s a movie withou...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let Em All In | `shout out the east we parkin shit` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let Em All In | `hotline bling if you get his phone` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Let S Talk | `now run your mouth til your knees sore` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Levels | `hungry niggas going at yo neck for that food ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Life Is Good | `new fettuccine new lasagna` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Life Of Mr Carter | `when in hell i m a roman;` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Light My Body Up | `i just started my sentence like a capital let...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Light Years | `and all she know is young money her ex is alw...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Like Dat | `all of these addies i can t subtract hoes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Like Dat | `throwin hunnids and hunnids and hunnids and m...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Like Dat | `like that the money train is on the way ho li...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Like A Man | `codeine in her punch that s a straight jab` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lil Bitch | `i m not a player i just fuck a lot` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lil Bitch | `damn watch out lil ho ooh pew i fly g4` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lil Romeo | `buy whole pounds of master p uh i m a roll me...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lisa Marie | `she say she was a model well obviously cause ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lite It Up | `weezy f baby bitch the f is for fascinate` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Live Life | `you can judge us but don t sentence us` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Live Life | `look i be with that nigga from new orleans` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Live Life | `we trukfit and we supered up` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Live From 504 | `so i don t have time to deal with willie the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Location Remix | `i kiss the right spots i know all the places ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lollipop Remix | `shawty say she wanna lick the wrapper and she...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lollipop Remix | `haha so wrap it up` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lollipop Remix | `safe sex is great sex better wear a latex cau...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | London Roads | `i know a ho who ll rock the boat but i row he...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | London Roads | `when i couldn t find jack in no one s cards` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | London Roads | `you hoes can t drive me crazy keep your eyes ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | London Roads | `holy moly hockey mask like halloween like ovo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | London Roads | `boy you go zero to sixty i go one and two zer...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | London Roads | `no i come from hollygrove turnin o s to octag...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Lonely | `toni braxton told me breathe again don t hold...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Look At Me Now Remix | `ladies love me; i m on my cool j` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Love Affair | `i ain t a player but i love a lot` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Love Me Or Hate Me | `and if i got beef i m the meat cleav er` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Love You Right | `hi i m tunechi i m triple exclusive` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Love In This Club Part Ii | `cause you could be anywhere you wanted` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Love In This Club Part Ii | `i said we could do it like a stack i mean we ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Loyal To The Soil | `oh my in a double r i m re ready to die` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mf N Right Remix | `[verse 3: lil wayne]` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mf N Right Remix | `and my acronym is hb that s for hot boy you a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mf N Right Remix | `i got trukfit on my back bitch` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mf N Right Remix | `no more ymcmb hocus pocus bye bye poof` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mf N Right Remix | `all these bitches want this dope dick` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mad | `i used to rock hand me downs and now i rock s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Make It Work For You | `shit it s like i got a pan how i heat the flo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mama Mia | `no needles ‘cause my pockets balloonin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mama Mia | `i shoot you while the sun don t shine this a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mama Mia | `you niggas talkin too much shit i m about to ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Marble Floors | `put it on the scale watch it do numbers` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Marble Floors | `playing with them keys like stevie wonder` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Maria | `they love you this evening they hate you maña...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Martians Vs Goblins | `kill em all` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Martians Vs Goblins | `tie lil b up to a full tank of propane swag n...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Me And My Drank | `up in the studio me and my drank me and my dr...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mercy | `it s young money you bitch you; my weed loude...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Millyrokk | `i m a dog i m a dog rottweilin on these shih ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Millyrokk | `i m straight n o the u n o` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Millyrokk | `write your name on a bullet she wrote my name...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mirror | `take em to mars man` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mirror | `you think that you re on your way life lined ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Miss Me | `and drake just stand for do right and kill ev...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Miss Me | `and when i m in the booth bitch the lion is l...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Miss Me | `man i swear my bitches do it til they suck th...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Miss Me | `it s blood gang slime but i parlay with snoop` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mo Fire | `my dreads hang to let him know that i m a lio...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Moment | `she say she can come and help my fat wallet g...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Moment | `got pure coke brand new birds we get em as so...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Moment | `she only want alcohol and trees fuck that you...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Moment | `all red ant pile` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Moment Of Clarity Freestyle | `and bitch i got an itch so don t let me catch...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Momma Don T Worry | `like nigga i m the captain and it s crunch ti...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Momma Don T Worry | `i could get in the octagon with these punchli...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Money In Da Bank 2005 | `murder capital bitch it s time for some actio...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Money In The Bank | `and i m a real blood if you want r&b` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Money On My Mind | `got these other haters pissed cause my toilet...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Money On My Mind | `coke transactions on the phone we call it blo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Money To Blow | `i i i i m on my disney shit: goofy flow on re...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | More Remix | `yeah the world need more like wayne baby what...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `feet up like a paraplegia` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `cause i ma murder y kill o and even u` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `i m bein hated by the season` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `man i got summer hatin on me cause i m hotter...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `i call em april babies cause they fools` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `garvey got me a molotov cocktail flow even if...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `and i will never i will never i will never fa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `got spring hatin on me cause i ain t never sp...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `queen b` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `blind eyes could look at me and see the truth...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mr Carter | `i ma need a coupe i won t need a roof flyer t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Mrs Officer | `and i know she the law and she know i m the b...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Much More | `like where is my peeps` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Birthday | `put words together like a fucking hypen` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Corner | `i m an nwa nigga with an ak` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Dawg | `and i married the mob when i was like twelve` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Dawg | `i feel like satan nigga lit dedication 6 6 6` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Dawg | `rockin louis while the pot brewin with a chin...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Dawg | `you be smokin bobby brown new edition` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Heart Races On | `got no degree but where i m from that s the o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Homies Still | `pussy for dessert` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Life | `damn i know his mama proud and since you help...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Name Is | `hustle til my dreadlock is grey as some poupo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Nigga Remix | `catch you at the red light have em screaming ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Nigga Remix | `c c catch me out in collins screaming money a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Nigga Remix | `you nig you niggas ain t got no joints` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | My Weezy | `you can get pork chopped` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | M $ | `i get keys on the spot and i keep it on lock ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | M $ | `but wait let s talk about m s not about them` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | N O Nigga | `god flow i spit bibles nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Nfl | `that s how i ball like cyclops` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Need A Stack | `if i leave a paper trail then i ma need a tip...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Neva Get Enuf | `3l and wayne what up` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Never Die | `tongue i never bite mine got dough like taekw...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Never Die | `shots i got a hundred and problems i got nine...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Never Really Mattered | `it was shockingly gorgeous it was electro cut...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | New Freezer | `this is that d6 shout out to drizzy in the 6 ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | New Orleans Maniac | `i get hit and walk it off like fuck that then...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | New Slaves | `i know i ain t gon fall even though i m power...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | New Slaves | `take that coke to the stove and whip it like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | New Slaves | `man i m so serious with this pimp shit full c...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | New Slaves | `bring that coke to the stove and whip it like...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | New Slaves | `she say you got it made i say no i got a butl...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Nightmares Of The Bottom | `and if you wanna trip then i ma meet you ther...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Nightmares Of The Bottom | `it s like i have it all but i don t have to w...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Nightmares Of The Bottom | `life is a course and i ma shoot for par` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | No Reason | `i told my homie i ll be back i got some hoes ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | No Reason | `my homie name vic because he a stealer but us...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Not Me | `you re a cookie monster yeah lookin at a gobl...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Nothing But Trouble Instagram Models | `i was so green and all she wanted was that li...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Off The Docks | `as soon as enough money is in my knot i m yel...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Off The Docks | `and you could never get it free like aj` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | On Me | `one ratchet one bougie you can call em r&b` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | On My Own | `it s money over bitches that i m gon keep pro...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | One Big Room Gucci Gucci | `fuq got the weed` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Wayne | Turn My Swag On Remix | `knick knack paddywhack give the dog a bone i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | 2 Seat Lifestyle Urgent | `they tell me the end of the world is coming s...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | 2K17 Goosebumps | `next year i cop the beamer ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | 500 Carats | `uh super slatt hit the trap i m cooking brack...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | 6 Kiss | `these niggas say they with it uh we gon harry...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | 67 Take 2 | `50 huh cent huh said it huh best huh many huh...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | 67 Take 2 | `boy your bitch is a stan huh if i fall in lov...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Allure 21 Gun Song | `ars same size as big pun` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Ay Yo Purple Devil | `40 on me nigga fuck your fist` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Addicted | `call of duty with that toolie huh no lag` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Ain T Livin Right | `but this shit real right slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Airport Security | `put the whip in srt do the race like lil tay ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Already | `okc don t play me ball me like thunder` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Any Other Way | `remember writin raps in my basement now i m u...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Arctic Tundra | `flow still need that emt tell her get at me a...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Arrow Going M I A | `how come all the love go m i a how come all t...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Bad Boy | `ain t come to kick it i m not on the soccer t...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Baller Of The Year* | `vvs all baguettes shit like a solar flare` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Barney S Freestyle | `that choppa turn him to a ballerina on his to...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Best Believe | `slatt slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Best Believe | `ap skeleton like an icee yuh woo` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Big Fan Big Mac 10 | `chiropract a nigga yeah make a nigga back ben...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Bigger Biscotti In The Air | `roll up woods pour up mud let s get stuck bit...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Blood Sweat Tears Overseer | `it s funny how niggas be hidin in they blanke...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Blood Sweat Tears Overseer | `a sagittarius but drip like aquarius and i be...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Came Up Purple Ocean | `s&w fire and i m a cowboy light off on your f...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Casualty Draco On Me | `slatt slatt slatt slatt slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Casualty Draco On Me | `michael jackson with the choppa make you beat...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Chosen Life S A Book | `40 on me extended huh stevie wonder with the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Christian Mingle | `i used to shoot like a ariza like a ariza grr...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Christian Mingle | `and i walk off a rock like i m seagull bean` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Christian Mingle | `that explains the chip on your shoulder look ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Chrome Cardi B Chopper | `slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Codeine Crazy Freestyle | `i m like michael phelps when i feel it in the...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Cold Summer | `take a few of these i ma be sky walking` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Confide | `okay it s been a long ride still the beginnin...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Confide To | `i know i m a dog nigga rufus` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Confide To | `listening to guns n roses got a closet full o...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Cross The Globe | `how you want beef but you a pussy never seen ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Dj Scheme Freestyle* | `abracadabra i rap like h potter harry with th...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Deprived | `l o l that xo got me in another zone takin ps...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Devil In A Red Dress Too Real | `i ain t tryna kick it with these bitches no k...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Die To Live | `double r truck i pull up they inside it` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Diors Version 1 | `slatt money stack to the ceiling money stack ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Don T Talk To Me Remix | `i sell rock to your momma rockstar whippin th...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Four Dangerous | `high rockin and rollin yeah keep a magnum lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Fadeaway Scars | `dirty up my soda baby dirty up my heart` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Feel Like A God | `you know what that means we always keep the m...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Feel Like A God | `the perfect point guard damn it you niggas ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Feel Like A God | `woah woah juice king tut gold on me` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Flaws | `racks up racks up` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | For The Weekend Facetious | `i got shot but i still shot a nigga i was get...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Fridget What I Deserve | `okc when i got the rock i m ballin like a thu...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Fridget What I Deserve | `vvs like damn cold like arctic tundra` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | From The Bottom | `single ladies stand up like beyoncé finger fu...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | From The Bottom | `kill bill she ll kill for me woah woah lil bi...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | From The Bottom | `magnum in my pocket that s a gun and a condom...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Go Go 38 Special | `breaking down minerals smoking on stank` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Go Go 38 Special | `yeah pop pills til i ll faint closet look lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Girl With The Blonde Hair Arctic Tundra Original | `my vvs cold like a arctic tundra` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Godzilla | `it s time to put these bitches in the obituar...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Godzilla | `better vacate retreat like a vacay mayday ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Godzilla | `like a liar s pants i m on fire` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Godzilla | `is my ‘gangsta bitch like apache with a catch...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Godzilla | `cause i caught the flack but my dollars stack...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Godzilla | `i stack chips you barely got a half eaten che...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Godzilla | `i m just a product of slick rick and onyx tol...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Godzilla | `pass the courvoisier hey hey` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Gucci Purse | `in her eyes i m still her hero yeah bank acco...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Gun You Down | `uh real slatt shit no fakes allowed` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Headlines Remix | `magnum in my pocket that s a gun or a condom` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Hectic | `for the slimes that s listenin i go bray bray...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Her Friend | `stroke in it michael phelps with the stroke` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Herbo Flow Rich Off Rap | `shooter like the rec bitch don t get wrecked ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Here I Go Again Mansion | `billy idol with that rebel yell` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Hey Mister Original | `it s just me and ski i m off the perkys while...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Hey Wonderland | `heard you got a new ho steal that ho like dee...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | His To Keep | `devil in a red dress she a dirty dancer hop a...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Hit Licks Harry Potter | `then make em disappear hahahaha poof harry po...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Hope You Understand Lil Bitch | `yellow bone simpson no bart lil bitch you wil...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | I Know What You Want | `no way 3k for the coat bitch andre backwoods ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | I Will Follow | `every time me and slime get together it s a w...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | In A Mix | `you can catch me pouring codeine in my minute...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | In Zone Time Anymore | `copped the porsche truck that s a high horse` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Infatuated | `raf no lauren` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Insecurities Electric Chair | `right now it s kinda hard to stay sober` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Invasion Spaceships | `don t give a hoover i build her like dams` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | It Won T Hurt | `45 to the face put your man in the dirt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Juice Wrld 2018 | Funk Flex | #Freestyle101 | `man i m a rebel billy idol in my earphones i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Juice Wrld Freestyle | La Leakers Freestyle #050 | `call of duty with the gun that s the lag uh a...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Juice X Makonnen Piano Freestyle | `run it fast huh ay get the cash smokin gas pu...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Juice X Makonnen Piano Freestyle | `i don t do molly no more` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Juice X Makonnen Piano Freestyle | `say he wanna fight i beat him steal his bike ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Keep Your Eyes Up | `they ll let it fly for me they blow that 45 f...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Kel Tec Talk Hi Tech Talk | `slatt slatt slatt slatt shoot at me they clap...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Key Card Impatient | `i m billy idol with that rebel yell` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Kill All My Troubles Muddy | `slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | King Kong Kiki | `but this not mace this a k bitch uh huh tie y...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Like That | `that oh na na let me get rid of your problems` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Like Yeah Don T Care | `run up on me got heat yuh like what d wade wi...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Long Time Coming Stunting | `slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Lost Myself Kiss And Tell | `lost it ain t no vanity involved` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Lost Myself Kiss And Tell | `if she won t kiss and tell no she won t kiss ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Lurkin Lotti Lotti | `i think juice wrld invited her to live in jui...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Mannequin Challenge | `me and slatt dealin the damage yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Mannequin Challenge | `we goin harder than granite` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Mclaren Drive Tic Tac Toe | `i ain t no grizzly so i can t bear it` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Miles Away Elevate | `my percs be my strap it s a 30 up in here` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Miles Away Elevate | `shout out thug that s my slatt shit is slimy ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Mistletoe Freestyle | `no taylor but when i up my choppa that bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Mistletoe Freestyle | `thanksgiving with the glizzy put a 30 in it l...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Moment Rockstar Boy | `smokin on this grouchy til i m oscar` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Money | `they wonder what i gross like my name was lan...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Motor Boat Anacondas | `where i come from it s a jungle brr gotta wat...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Murder Rate Keep Save | `he don t want beef that nigga vegetarian` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Murder Rate Freestyle 1 | `yeah overeast no limit ebk you know where i m...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Murder Rate Freestyle 3 | `i put a wood in that bitch now that bitch got...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Murder Rate Freestyle 4 | `all these niggas gon be pissin daisies in the...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Murder Rate Freestyle 4 | `i don t got time for it only tom ford nigga y...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | My Bad | `when i fuck on a freak like mia khalif uh huh...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | My Phone | `the shadows in my room what do i do this is v...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Nlmb Oh Dear | `this song called no limit oh dear bitch the e...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Nlmb Oh Dear | `kyro i know when you hear this bro hadouken h...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Nlmb Oh Dear | `slatt slatt slatt shoutout all my slatts` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Bystanders | `my niggas gon flame bang yeah bitch i m with ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Bystanders | `i told her it s b y o b that mean buy your ow...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Bystanders | `make my own rules i really don t pick i just ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Bystanders | `the party never ends in a motel layin with my...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Bystanders | `whippin the tank wu tang yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Na Na Na Quitter | `i got stripes like a tiger but i m still a ch...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Never Scared | `plug send them bricks i call up weezy we i ma...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Coaster Do The Most | `my gun a thot it ll neck that boy` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Coaster Do The Most | `kick push cracked like lupe shorty` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Coaster Do The Most | `used to play the corners like a motherfucking...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Coaster Do The Most | `that heavy metal will stick you like crackers...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Hook | `huh i ve been ballin super hard baby i m a ba...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Jumper | `don t got time to kick it with you fifa` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Shortcuts | `shoes cost three k like it s andre ho` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | No Trespassing | `life is a rodeo when it gets hard why you thi...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Not Supposed To Be Here In The Mix | `back in slatt slatt slatt woo` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Nuketown | `knife on the ak stab em with a gun ho` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | O J Glove | `hell yeah she gon fuck cause i got big bills ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Omen Freestyle | `i ma put my team on nlmb no limit we strong y...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | On My Ex Don T Know How To Act | `always pourin up that act and i don t know ho...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | On The Pills Façade | `limitless limits get reached that far we ll g...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | On The Run Blood On My Jeans Demo | `wu tang we chasin the c r e a m` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Oreo | `they say money change niggas i m makin chamel...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Overdose 911 | `9 1 1 this bitch bout to od` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Ptsd | `don t stand too close to me eternal ptsd i go...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Part Of Girdle | `45 hanging out the camaro ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Pause | `ayy your bitch is an xbox play her like game ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Pieces | `god damn i love my slatts but no i don t fuck...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Plight Late Nights [Session Studio] | `chief keef daughter with a new gun two aks ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Plight Late Nights [Session Studio] | `i m rockin commo garesawn i mean comme des ga...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Prada Cosby Molly Extended | `glock sing like cece winans` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Prada Cosby Molly Extended | `i ain t ever been no trap house boy that shit...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Priceless Wraith | `her name my tattoo all this shit i ve been th...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Priceless Freestyle | `now i got these vvs s on me ice road trucker` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Problem Lost Too Many | `let me talk to my slatt for a second yeah why...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Quitter Extended | `i got stripes like a tiger but i m still a ch...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Racks Out Best Around | `slatt talk` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Rain Dance | `condo in m i a yeah go there just to bump m i...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Real Right Abyss | `slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Real Shit | `i ma make her bawl her eyes out while these n...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Red Eye Crazy Type | `y r n better check my steez` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Remind Me Of The Summer | `i woke up feeling like last night was a wild ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Remind Me Of The Summer | `i cross my t s and dilate my eyes` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Rikers | `bitch i m relentless i put the lent in relent...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Road Rage | `slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Road Runners | `woah woah woah woah slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Rogue | `ayy woah you cannot dodge in a charger` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Run A Fade | `i been ballin on these hoes like d wade` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Sad Thing | `bitch i m not from nasa but this drama got me...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Saved By The Bell | `uh i am a monster tommy gun topplin feel like...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Scarface | `i m in london with my slatts` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Scarface | `percocets got me like a zombie i need a pack ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Shoot Back | `slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Show Stopper Two Cup * | `my gun still act like tae bo` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Sidekick Motorbike [Stem Edit] | `run up on me you die huh hand on my 45 bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Slenderman | `scooby doo bitches they be meddlin` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Sour Midnight Hours | `life is a bitch and her lips taste sour` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Stick Talk Lavagirl | `yeah i told slatt i m finna talk some shit ma...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Stick Talk Lavagirl | `hit you up like lavagirl and leave you swimmi...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Stuck In My Ways | `off the molly got me feeling like a grade a y...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Suicidal Remix | `got me taking medicine these is not no vitami...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Swerve | `he d get punched like a cup of hi c` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tempted | `i count rack after rack pour the red i m a sl...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Thank Me Later Haters | `the world is mine and it s for the taking` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tim Westwood Freestyle | `run up on me that s okay that choppa on me ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tim Westwood Freestyle | `off the top kickin it no karate class` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tim Westwood Freestyle | `catch me listenin to green day havin a blue d...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tim Westwood Freestyle | `4:44 my gun like jay z` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tim Westwood Freestyle | `chip on my shoulder it s lookin like a pringl...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tim Westwood Freestyle | `i m faster than sonic i m faster withdrawals ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tim Westwood Freestyle 2 | `desert eagle on my hip like i m a eagles fan` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Time Zones Inspired Us | `used to sell pounds of the grade a uh` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Time Zones Inspired Us | `fuckin on this bitch she screamin slatt guess...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tints No Evidence | `i m in atlana with them slatts` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | To The Face Up In London | `40 on me with a magnum that s a gun and a con...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Tsunami Soul We Outta Here | `you can call me suge okay` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Under Her Skin | `suicidal tendencies she hoping that they ende...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Wait 4 Me | `no limit gang gon pull up in a tank uh huh` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Wait 4 Me | `gdk shit` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Wasted | `i m a doctor but i m runnin out of patience` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Watch Me | `swimmin through the money yeah huh i m feelin...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Whatever Call Me Whenever | `now i m hung like a hook sing this song forev...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Where I Need To Be Set Me Free | `uh we can leave the past behind us plus we do...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Wraith* | `i got more gucci than gucci gang uh uh huh` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Wraith* | `look it s a bird look it s a plane look it s ...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | X Mas List Christmas List | `i heard her name mary hit then bailey made he...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Your Loss Girlfriend | `you left me in the dust so it s bitch fuck yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Your Mom Baked Up | `yeah i ma tweak i ma spazz out molly gras pas...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Z Nation | `on this bitch with metro if he don t trust yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Extra Studio Freestyle | `my name ain t chris but i go luda huh yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Juice Wrld | Extra Studio Freestyle | `pull up on the scene like damn that s a pussy...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | ‎X2 | `two different names like jace` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Wokeuplikethis* | `that girl all up in my face like she ain t tr...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Spend The Money | `peds` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Free Uzi | `got them boulders my neck won t see a pebble ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Free Uzi | `make it rain in the club like a nasty day tol...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Free Uzi | `we served them packs in the net we get them r...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Zoom | `size 29 my jeans but my clip is a thirty` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Yessir | `bbl on them i got extra tens i got side hoes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Yessir | `yes i blessed her like she sneezed woah i can...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Yessir | `pop a e in electric car that s a tesla` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Yes Yes Patek Swag | `diamonds that s in my double r i don t got a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Xxl Freshmen 2016 Cypher Part 2 | `rest in power it s all about power` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Xo Tour Llif3 | `fast car nascar race on em` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Xo Tour Llif3 | `she said baby i am not afraid to die push me ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Why You Starin | `diamonds water yeah diamonds water yeah diamo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Who Run It Remix | `you know that my rollie got xo diamonds in it...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | What S The Move | `luv know i got swag` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | What You Saying | `i guess that we on the same page cause i m ju...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | What You Saying | `i don t even know what she said cause she for...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | What Did I Say | `text me outer space yeah like invader zim yea...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | We Good | `yeah new contract i read mines huh they said ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | We Good | `yeah new contract i read mines huh they said ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Wasted | `i m a doctor but i m runnin out of patience` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Wassup | `drankin yellow feelin like a tycoon` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Wdyw | `whatchu want tell me whatchu want what do you...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Valentino | `paramore rockstar let s have a riot` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Uppin Downers Soundcloud Rappers Only | `all of my diamonds they start with v` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | U Z I | `she love a nigga ‘cause i m flexin my nigga m...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Two® | `the reason i got all these bitches and got al...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Thug Voice | `i m the only ysl that thugga just like` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | The End Is Near | `never did heroin but preston swagged my calve...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | That S A Rack | `okay my money sky blue but my new coupe is sl...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | That S A Rack | `i don t want you back you a thot you a nat a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | That S A Rack | `fuck from the back hit her once that s a wrap...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | That Way | `gave away my thumbs and i stood three toes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | That Way | `yes i m slimy like a snail but i m no slowpok...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | That Way | `i had to snap back into reality and go grab a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Target | `got my pocket rocket i feel like i m harden i...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Stylin | `yeah um beat your ass randy couture` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Strawberry Peels | `ysl slatt life we slimy and slick slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Star Star | `your moms sister s a anteater i call her a aa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Star Star | `your moms sister s a anteater vert i call her...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Sossboy 2 | `i got bands like i m *nsync` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Soarin Catfish * | `i ll be there in five like the jacksons` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Smoke My Dope | `heel toeing right in my visvims i do not rock...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Six Four | `she made the block hot that s thot thot` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Shoota | `whip it look like butter baby pecan drop` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Shoota | `took your girl and i ma score like i made the...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 1600 Anthem | `she give me jimmy neutron what` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 2038 | `16 29` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 392 | `slip on chromeheart mini loaf` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 392 | `told the bitch that i m just blasian she tryn...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 392 | `hittin that bitch from the back i hit her jus...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 392 | `you pull up 392 i done pulled up in a three n...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 392 | `i can go harlem nights` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 4 Eyes Open Fired | `i got four eyes open like i m shira` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 4 Eyes Open Fired | `i can t beef about no appetizer she slider` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 40 On Me | `bodied these niggas in races uh i pull up in ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 60 Times | `fuck a ferarri i m tryn get agera mexican bri...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 60 Times | `sip with my killers like sixty times pour the...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | 7Am | `ayy i told that bitch i count my cake bitch g...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | All Alone | `legends never die i got on white so there s n...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | All My Friends Are Dead Xo Tour Llif3 Version 1 | `fast car nascar race on em` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | All My Friends Are Dead Xo Tour Llif3 Version 1 | `she said i am not afraid to die yeah all my f...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Aye | `i m done with sinnin you know` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Aye | `i i i` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Banned From Tv | `vvs diamonds gon cover my face ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Bean Kobe | `yeah my eyes red but i m no damu` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Bean Kobe | `diamond vvs i put baguettes all on my rollie` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Binary Trigger Lil Uzi World | `futurama guns they ll fry you that s the reas...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Blonde Brigitte | `look at my ap that bitch is so frozen i can t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Blonde Brigitte | `my uzi weighs a ton i m public enemy number o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Bob Marley | `i m ballin no spalding swish` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Bust Me | `she took septa to my block she said uzi can y...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Chanel Boy | `one of my bracelets it co cost like nothin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Dark Queen | `slatt slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Died And Came Back | `rigatoni is not spaghetti racks is not the sa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Do What I Want | `all these girls yeah they ride with us yeah i...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Do What I Want | `i can do anything and i won t lose her yeah s...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Double G Truly | `bitch i m not a buster but got rich off these...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Double See Freestyle | `she kick it like fifa yeah yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Dover Street | `turn your brains to hamburger if it s beef we...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Drill Shit | `she sexy and she red i m bout to take her to ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Dumber | `mrs officer always tryna cuff us` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Early 20 Rager | `cheerios lick on my honey nuts` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Endless Fashion | `i was really in the field with karl lager oop...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Endless Fashion | `ayo even if my name was natalie nunn you bitc...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Everything | `whipping up that dope yeah that s that heavy ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Extendo | `slime` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Fetti | `i play with fetty but my name ain t wap` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Finessin Hearts Pt 2 | `lv` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Fire Alarm | `one of my chains on my neck is a franko it wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Flawlëss | `niggas they rats they like mice they like min...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Flawlëss | `when life give you lemons then crush that it ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Flawlëss | `buffy the vampire slayer with these cartiers ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Fly Hoe | `tatted like my idol livin by my title` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | For Real | `cut your hands if you steal damn` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | For Real | `vivienne westwood my fur lookin polar` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | For Real | `diamonds they wet like a seal diamonds wet li...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | From The Garden | `i ve been on tour i ve seen more leak i told ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Get This Bread Bankroll | `she gave me na na just like i m labels` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Go Off | `yeah rockstar heavy metal no guitar guitar` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Harley | `coppin the vetements don t rock me no vetemen...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Harley | `drive my car like rc` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Harley | `i m a rockstar like avril lavigne i m a popst...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Heartless | `shorty know i m gothic on my darkness yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Heavy | `my boys tuck the powder the flour that cauli ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | High School Reunion Prom | `my pockets full of crips my pink diamonds the...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Hold Up Dough Up | `pussy so good beat it up like sylvester stall...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Hold Up Dough Up [V1] | `uh no i m not jordan but i am the g o a t jus...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | I Am The Man Pissy Boy | `make her legs go up like doors on the lamb ye...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | I Can Show You | `boy you so broke that s real yeah armstrong o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | I Sold My Soul Endless Fashion Original | `vlone` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | In O4 | `now i got my dough count it my eyes closed wh...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | It S A Slime | `okay i m a lil cooler let s go let s go uh ye...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | It S A Slime | `shit cause nigga i m slime shit` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | I M An Alien | `my car dash just like it s kim my car dash ju...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Juiceman | `she spin on the dick like beyblade aye` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Krusty Krab* | `call my phone now that hoe dnd dnd` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Left Right | `so much ice around my neck bitch i m a rockst...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Lookin | `niggas envy me ooh yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Luv Is Art | `but if my money is gone would you still be ar...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Mama I M Sorry | `ap a frosty but i m always so tardy ayy yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Mama I M Sorry | `ap a frosty but i m always so tardy yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Mama I M Sorry | `i m a rockstar for life i can t help it ayy e...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Mama I M Sorry | `my neck is so cold bitch i m missin the sweat...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Mars | `i handle bars like a mongoose bikes` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Mars | `we not congruent i m obtuse lean` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Mars | `she gave the crewneck like a sweater sweater` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Maverick Intro | `omnitrix my wrist you know i went and got my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Maverick Intro | `i know i don t own her yeah she give me head ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Michael Jordan | `on the table got three pills` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Money Flip Get It Back | `yeah my dough nuts like krispy kreme` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Mood | `all these diamonds on me i don t feel no pres...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Mood | `my diamonds so sick what this shit is not cur...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Multi Millionaire | `danny i see you` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Nfl | `i m in yo bitch that s yo bitch not my concer...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Never Bend Remix | `we just caught an opp we thought that shit wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | New Wave | `kicking that shit just like fifa` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | New Wave | `you talking that shit boy don t come to the a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | No Sleep Leak | `my slime move with the cartridge slime` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Off White | `yeah i don t want that little bitch cause tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Ptsd | `don t stand too close to me eternal ptsd i go...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Pack A Lunch | `call of duty guns this shit came wit a pack a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Pluto To Mars | `forty` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Pretty Mami | `yeah you are the goat` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Psycho | `on my tongue place a tab` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Pump Up The Jam | `doing what i want you only doin what you can ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Raf | `livin color colors left wrist rollie butters ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Ransom | `speakin on them riches millie my wrist bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Regular | `so high swear i ain t landing woah lil uzi` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Regular | `from philly like a i the answer huh` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Roadrunner | `diamonds extra rocky like my last name stallo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Scrape It Off | `from the cabbage i collect my boy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Scrape It Off | `hundred karats on my neck` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Scrape It Off | `wash the dirty money with oxi` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Servant | `ice cubes all up in my chain like i m o shea ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Shells | `pakk boy gang got choppers like the taliban` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Uzi Vert | Shells | `one hand odell one hand slime snail slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | 4Matic | `my money tall like abdul kareem` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Ampd Up | `come on punch me in my shit watch how my youn...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Backlash Urus | `they think they furious but ain t fast than u...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Bad Bad | `i need a pint i won t go under i ll be leanin...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Brand New | `bnyx` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Bring It On | `bitch ass nigga we dyin behind this green fla...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Bring It On | `it s northside 38 4kt freeddawg` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Bring It On | `left him baptized right there on that corner ...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Came A Long Way | `all these dead men be speaking to me saying g...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Diesel | `i be rappin on these beats sayin anything i d...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Drug Addiction | `rep where i m from i m a 38 baby` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Dump Truck | `toxic punk inside a cybertruck cybertruck wha...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Fever | `we only spoke once god he gave me an oath and...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Freeze | `250hp you get hard points you stretch that bi...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Games Of War | `then i fell in love with that chopper just li...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | I Don T Text Back | `i ll fly with the birds` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | I Forgive Them | `this expedition ll have tuition but she done ...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | I Hate Youngboy | `nigga i m a real blood blood and i m screamin...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Jingle Bells | `hold on jingle bell jingle bell who gon die t...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Led My Lights Led Lights | `bruh drop off 450 cc the car shop with my bik...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Missing Everything | `young nigga like a young bull got a heart lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | My Killa | `i m talkin the apple that look like a nigga h...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | No Switch | `doj` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | No 9 | `can t tell you nothin you nba you never broke...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Nussie | `cosa nostra` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Outside Today | `my clip full of thunder you know that i ll st...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Pay Me | `know that i run that money up my trunk inside` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Preach | `nba until the end it s a way of life` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Rear View | `every thug need a girl with a clip baby truth...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Red | `lsu` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Shot Callin | `bing baow baow baow bitch stop all that holdi...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Shot Callin | `bitch i m real american made run with charger...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Solar Eclipse | `slatt slatt slatt slatt slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Tears Of War | `try once too many times we tear your show up ...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Territorial | `12 on the way redeye get away they gon high s...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Top Cobain | `in your sleeves the hundred round k punchin` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Top Cobain | `play the guitar i ma kick it` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Top Cobain | `opp packed out on the yard get his lungs puni...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Toxic Punk | `ugly boy toxic punk they don t love me yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Toxic Punk | `and it s lil top nigga yeah double r double r...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Wtf | `most these niggas claim 4ktrey ain t even fuc...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | What Da What | `fuck ‘em them youngins gon catch em and do em...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | What You Want Do | `i ve been poppin pills i ve been gone out my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Where I Been | `i was bumpin peep when i was high` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | Where I Been | `same day i give ‘em fifty grand same day they...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | With It | `green red baby know the flag could see` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | You Knew | `need shorty insurance cause i feel that you t...` | Mined candidate without confirmed wordplay or second reading. |
+| Youngboy Never Broke Again | You Knew | `i got on balmain and she got on that cc this ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Know Yourself | `with my woes` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Know Yourself | `runnin through the 6 with my woes countin mon...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Know Yourself | `i ain t rockin my jewelry that s on purpose` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Back To Back | `i don t wanna hear about this ever again not ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Back To Back | `and shout to all my boss bitches wifin niggas...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Motto | `i m so young money` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Motto | `‘cause the pimpin ice cold all these bitches ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Motto | `i m in the building and i m feeling myself re...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | One Dance | `oti oti there s never much love when we go ot...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | One Dance | `nobody makes it from my ends i had to bust up...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | One Dance Dub | `oti oti there s never much love when we go ot` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Matters | `anything to take the spotlight off the fact t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Matters | `on some bobby shit i wanna know what whitney ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Matters | `‘cause all these rappers wavin white flags wh...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Matters | `if you had a set they d give your ass a dp bu...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Matters | `you know who even bang a set out there is cb` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Matters | `oh shit it s all makin sense maybe i m prince...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Matters | `he always said i overlooked him i was starin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | From Time | `i ve been dealing with my dad speaking of lac...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Pound Cake Paris Morton Music 2 | `cake cake cake cake cake uh` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Pound Cake Paris Morton Music 2 | `my eyes bloodshot but my jet don t lag` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Pound Cake Paris Morton Music 2 | `niggas is frontin that s upside down cake` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Pound Cake Paris Morton Music 2 | `case y all didn t know i speak spanish too uh` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Middle Of The Ocean | `they should ve been in the fountain based on ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Middle Of The Ocean | `matter of time before i go net a bey like api...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Middle Of The Ocean | `feel like an amber alert the way that i can t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Middle Of The Ocean | `fifty nine bags on the 767 this is heavy carg...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lemon Pepper Freestyle | `patty mahomes bout to fall short a couple hun...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lemon Pepper Freestyle | `ross sittin on two hunnid thirty five acres` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lemon Pepper Freestyle | `ushered a generation in these are where my co...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Nonstop | `i don t have no time for no misunderstandings...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Nonstop | `i just took it left like i m ambidex bitch i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Worst Behavior | `this ain t the son you raised who used to tak...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Nice For What | `high school pics you was even bad then` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Nice For What | `with your phone out gotta hit them angles wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Headlines | `that new shit that you got is overdue` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Ignant Shit | `i smoke goodie no glaucoma` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Ignant Shit | `g and tez got a sig but i m no smoker` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Remember | `you be at the flea market that s code in the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Remember | `plot twist the owl never sees the cage the ow...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Remember | `what is it the braids even when i cut em i co...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Remember | `what y all thought i was done y all forgot wh...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sacrifices | `tryna score the bucket like a chevy seat chev...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sacrifices | `2 chainz i m a real one` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sacrifices | `niggas see me in person first thing they say ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 6Pm In New York | `part of my heritage pardon my arrogance part ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Come Winter | `instead of saving for marriage she saving for...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Hours In Silence | `know i gotta turn my bitch up turn my bih t t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Hours In Silence | `a pill in ibiza so what` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Heart Part 6 | `you thought you left d flat d major` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Heart Part 6 | `you mentionin a minor but niggas gotta b shar...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Heart Part 6 | `i got your fucking lines tapped i swear that ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Digital Dash | `i move the game up i m reckless i m harlem sh...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Shoe Fits | `baby it s late june open the blinds get out t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Shoe Fits | `she took dick in ibiza you turn into dick tra...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Firm Friends | `reportin live from the scene where i wasn t s...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Firm Friends | `i did not break up a happy home baby you pull...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Firm Friends | `nigga kys asap that s some shit that you coul...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Special | `special` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 7Am On Bridle Path | `you niggas hot to them little kids you ain t ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 7Am On Bridle Path | `see they gettin loose with the lyin like open...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 7Am On Bridle Path | `hundred thousand on the line` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 7Am On Bridle Path | `and i got the flows niggas steal like boot to...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 7Am On Bridle Path | `but let me digress on behalf of the associati...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 7Am On Bridle Path | `with the ho ratio i m like david caruso` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Jodeci Freestyle | `roof top hoes turnt up lookin for your bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Jodeci Freestyle | `who gives a poker face when you jokers showed...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Jodeci Freestyle | `all this capital it s like i left the caps lo...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lose You | `how you forget to fill up with gas on the roa...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lose You | `jealous ones still envy and niggas turn king ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Calling For You | `the bitches that come around suck dick and do...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Calling For You | `and addy in my system see a opp i ma hit em u...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Calling For You | `she was twenty one i don t see a savage` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Know | `i ve taken an eye for an eye i ve sent a boy ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Know | `pressure been getting applied and i know i be...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Know | `my bros wanna mob on the stage but i tell the...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Know | `they got wind of the fact i was hit and the w...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fair Trade | `and saved a couple bitches too like i m from ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fair Trade | `baby if you want me can t be turnin up with e...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Forever | `he s wonderin if he should spit this slow fuc...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Forever | `now it s super bad chicks givin me mclovin` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Forever | `if i was at the club you know i balled chemo` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Forever | `swimmin in the money come and find me nemo` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Stories About My Brother | `you niggas do your shootin on the web you spi...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Stories About My Brother | `it s like he playin edm that nigga a chain sm...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Thank Me Now | `i rep the atf in case you need to be reminded` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Thank Me Now | `they hear about your cons but focus on your p...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Remorse | `i tried to kill them boys with kindness but t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Remorse | `from the lemon faced radio host that love to ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 4Pm In Calabasas | `i thought we looked out for one another saw u...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 4Pm In Calabasas | `we movin militant but somehow you the one tan...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fire In The Booth | `grippin the callaway club in my hand hittin b...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lord Knows | `in this bitch all drinks on the house like sn...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lord Knows | `a lot of niggas came up off of a style that i...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lord Knows | `only fat nigga in the sauna with jews` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Cry | `i have to father my mother and treat my son s...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Cry | `i think i also put the man in manifestation` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Cry | `i put the man in manipulation when i pay your...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Cry | `shout out to the real fans that knew what i h...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Cry | `i m at the bulgari in turkey with my bitch an...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Miss Me | `and drake just stand for do right and kill ev...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Miss Me | `and when i m in the booth bitch the lion is l...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Miss Me | `man i swear my bitches do it til they suck th...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Miss Me | `it s blood gang slime but i parlay with snoop` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Away From Home | `this shit don t come on vinyl i m still recor...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Away From Home | `i wanna see some scratch from the shit that i...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Free Smoke | `house party up the road yeah i m not kid n pl...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Shut It Down | `i could bring her through and shut em down on...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Used To | `make sure the plane got a phone now so when w...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Used To | `y all don t understand i m the one they want ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Used To | `shout out to the g s from the ends we don t l...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | I Do Remix | `please put away the cameras cause we just in ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Push Ups | `i might take your latest girl and cuff her li...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Push Ups | `you won t ever take no chain off of us how th...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tuscan Leather | `fuck it like yolo` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tuscan Leather | `and i wouldn t change a thing if you paid me ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 8Am In Charlotte | `the restaurant clears out faint echoes of lau...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 8Am In Charlotte | `and jeremiah the watchdog you niggas know wha...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 8Am In Charlotte | `been talkin to adel like he majored in financ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Weston Road Flows | `weston road flows my confidence level gettin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Weston Road Flows | `creepin like chilli without the tender love a...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Weston Road Flows | `first take drake you know i rarely have to ta...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Weston Road Flows | `you was ridin ttc metro i had the place boomi...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 30 For 30 Freestyle | `these kids ll hit your noodle then take a gir...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 30 For 30 Freestyle | `and i just came from dinner where i ate some ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | On The Radar Freestyle | `knew that i made it when i had drivers holdin...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | On The Radar Freestyle | `drop me in the jungle tree to tree start swin...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | On The Radar Freestyle | `if lita s there then the mash is there with g...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | On The Radar Freestyle | `i m tryna be under your breasts like peas and...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | On The Radar Freestyle | `cench might need vaccine when he see how this...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | On The Radar Freestyle | `then i line her like emo` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Say What S Real | `so she wonder where my mind is accounts in th...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Say What S Real | `i ve always been something that these labels ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fancy | `intelligent too ooh you my sweetheart i ve al...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Successful | `diss me you ll never hear a reply for it` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Light Up | `and since no good deed go unpunished i m not ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Skies Parted | `feed her ass mcdonald s on some e i e i o shi...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Skies Parted | `you know how we rockin in this bitch it s lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Grammys | `tell me how you really feel tell me how you r...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Taylor Made Freestyle | `you better have a motherfuckin quintuple ente...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Taylor Made Freestyle | `and fall back so homegirl can run her numbers...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Diplomatic Immunity | `forecastin tornadoes brainstormin retaliation...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Diplomatic Immunity | `billboard awards i claimed 13 out in vegas li...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Diplomatic Immunity | `i ll be in better company with my own reflect...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Diplomatic Immunity | `insha allah i hope the mission keeps on getti...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Do Not Disturb | `i can never sleep ‘til mornin on all my quiet...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Slime You Out | `get a nigga hit for fifty racks girl the beef...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Slime You Out | `october is all about me cause your turn shoul...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Ride | `walking through airport security with your ha...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Ride | `young money maker season ticket holder` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Omertà | `i m bout to call the bluff of anybody that fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Omertà | `death to a coward and a traitor that s just i...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Uptown | `and i keep that toaster you can come and be m...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Club Paradise | `how d a pile of kush become a mountain of tru...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | New Bestie | `fever you lookin hot inna di facetime` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Resistance | `uh oh am i wrong for makin light of my situat...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | You Only Live Twice | `all my chains look like snakes that s some re...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 9Am In Dallas | `and have girls fall through like coins in the...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 9Am In Dallas | `throwing up in the huddle nigga willie beamen...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Hype | `i don t take this shit for granted i do my ow...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Calm | `tryin to enjoy myself with tez in miami at th...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Congratulations | `yeah i tried to tell em future let em know se...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Congratulations | `and my verses gettin stupider wayne if you re...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fear | `no auto tune but you can feel the pain` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Idgaf | `bnyx` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Is There More | `what you got time on your hands or time on yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Is There More | `it s too bad reality checks don t cover the b...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Is There More | `sweeter the berry the blacker the juice` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Losses | `like i m tryna show the waves this is no cap` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Losses | `this is not one of them stories that got thre...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Presentation | `you a gucci groupie my nigga and i m a prodig...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Presentation | `me and rich united like van nistelrooy` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | U With Me | `i wanna know how much time you spent on them ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Views | `they wanna pree the movements gotta start to ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Views | `numbers goin unlisted just to create some dis...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Views | `i get a blank page when i try to draw a compa...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Views | `i d share more of my story but you wouldn t b...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Which One | `got a fairy ting and i got a witch one` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Which One | `i got x if you wanna take drugs do you wanna ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Amen | `same neighborhood where ashton kutcher live i...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | It S Up | `we don t play patty cake they just be lettin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Tellin | `there s no code of ethics out here anyone wil...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Over My Dead Body | `shout out to asian girls let the lights dim s...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Over My Dead Body | `oh you wanna be a motherfuckin funny guy don ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All The Parties | `what s on top of the house roof what s in the...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Drew A Picasso | `artists hittin on you broke as fuck i swear t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | When To Say When | `thirty three mil i ll save that for the rain` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Real Her | `now the both of us are colorblind cause the o...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Way 2 Sexy | `i been kickin shit woah woah might need a pro...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | On Bs | `y all be goin in and out recessions the same ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Portland | `i got the keys to the streets keys` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Portland | `michael phelps with the swim moves skrrt skrr...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Us | `make sure the plane got a phone now so when w...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Us | `y all don t understand i m the one they want ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Us | `shout out to the g s from the ends we don t l...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Broke Boys | `born in october i m so ovo` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Chicago Freestyle | `pistol on j for survival lot of people gunnin...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fear Of Heights | `i never met a bitch that wasn t for it don t ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fear Of Heights | `got in my feelings i had to record it` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Summer Sixteen | `all your exes know i like my o s with a v in ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lucky Lefty | `and i m all about my brothers like the niggas...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Pay | `to let you know that everything that s said t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Pay | `and ain t no passes for you crip walkin all o...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Make Them Pay | `and i faced the way they paint me but it hurt...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | March 14 | `but this champagne toast is short lived i got...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Ran To Atlanta | `when i tell you dip cause it s ice time bitch...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Ran To Atlanta | `i went st john the baptist on the lam uh huh` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Evil Ways | `scary hours undefeated y all should be afraid...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Evil Ways | `diss me and just may see us on your block lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Evil Ways | `nah uh i only need a raise and a safe to stas...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Evil Ways | `all praise to the born sinners jesus saves` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Money In The Grave | `when you niggas thinkin small in the mall wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Money In The Grave | `niggas wanna swap like it s slauson or watts` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Money In The Grave | `mob ties so i m always good where i m at word...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Company | `i m a dog woo i go ham i m a hog woo` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fighting Irish Freestyle | `6 degrees my memory s retrievin our humble be...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fighting Irish Freestyle | `nothing was the same with all you bitches and...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Think Good Thoughts | `first name phonte i d be pleased to date ya c...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | White Bone | `are you tired of me yet tired like firestone` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Best I Ever Had | `she call me the referee cause i be so officia...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Circo Loco | `ayy known the girl for six months dinner up a...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Circo Loco | `feel like seventeen two percs frog eyes` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Circo Loco | `one more` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Don T You Have A Man | `and i m in her body like ‘gray s anatomy` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Members Only | `lol gang we the last ones laughin` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Members Only | `i wanna know all of your kinks` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Members Only | `say you started datin girls now say it to me ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Members Only | `n y see me later when i m right there like ne...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | We Ll Be Fine | `in the presidential do you like your new room` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Draft Day | `all loyal so you keep eggin me on and we gonn...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Draft Day | `i m focused on making records and gettin bigg...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 305 To My City | `your momma used to live at the church on sund...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Big Mood | `i got slimes with me they got sticks too` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Big Mood | `king pluto might as well nail me to the cross` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Janice Stfu | `they say that karma could take an eternity yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Janice Stfu | `tired of all of y all tellin me niggas is rea...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Janice Stfu | `i m so green you gotta teach me baby from van...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Janice Stfu | `we know how you ogs rockin already my nigga t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | National Treasures | `damn way niggas talkin bout ice must be a sal...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | National Treasures | `check signin is my kink pushin out ink i feel...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tsu | `what s up to all the ladies on the north side...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Duppy Freestyle | `you send shots well i got to challenge those ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Duppy Freestyle | `my hooks did it my lyrics did it my spirit di...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sandra S Rose | `i even got my very own initials inscribed on ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Since Way Back | `crowd talking` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Wants And Needs | `deposit the money to brenda latisha or linda ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Wants And Needs | `i m not a goat but i fit the description` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Wants And Needs | `i m screamin out yolo yeah that s still the m...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | We Made It Freestyle | `yeah she said she workin for walgreens but no...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 2 Hard 4 The Radio | `ayy first off i make real town smacks` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 2 Hard 4 The Radio | `yeah it s mr popstar that s the way it go` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 2 Hard 4 The Radio | `rack city bitch we remember that` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Faithful | `working working working working ain t ya you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Long Talk | `niggas wanna talk splits now we need the whol...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Papi S Home | `ym forever` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | That S Just How I Feel | `shout out to kiki she love me` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | What Would Pluto Do | `swear i wanna tear your box out like a coach` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Comeback Season | `i m clearin the air i m a humidifier` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Comeback Season | `can t help it i been brainwashed to kill em a...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Dreams Money Can Buy | `we stayed up christmas lights in the middle o...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Dreams Money Can Buy | `ymcmb these niggas make it so hard to be frie...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Gimme A Hug | `right now i got so many villas booked i m lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Gimme A Hug | `have the girls up at 29 on stage twerkin with...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Under Ground Kings | `do it for the city ugk fuck these other nigga...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Under Ground Kings | `so i drop out lessons i was taught are quick ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | B S On The Table | `i m talkin spicy hot sizzlin` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | B S On The Table | `your boyfriend a fisherman that s just the wo...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | City Is Mine | `i m just a writer flamin pages of a notebook ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Daylight | `we clumsy as fuck we droppin niggas` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Daylight | `like what s in your shoe we sockin niggas` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Desires | `i m in that 8 and that 1 and that 2 this a di...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Desires | `how you goin vegan but still beefin with me a...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Desires | `where i m from they serve the soda clean clea...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Knife Talk | `smith & wesson i m 4l gang reppin` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | More M S | `takin less l s makin more m s` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | More M S | `way that i ran shit you d think i was iranian` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | More M S | `niggas ain t got love for the boy so they fak...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Friends In The Industry | `ain t got the type of time to be playin with ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Buried Alive Interlude | `lookin in the mirror i m embarrassed i m feel...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Faith | `working working working working ain t ya you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | In The Bible | `it s not in the bible to wife off one girl i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Little Bit | `both in sync like a justin song` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Rich Flex | `it s a slaughter gang ceo i got dick for you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Rich Flex | `i used to roll with cmg the house is not a bn...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Rich Flex | `i told her ass to kiss me in the club fuck a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Rich Flex | `21 my addy so the knife is on the gate` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Rich Flex | `we revvin up and goin on a run like we dmc` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Shabang | `yeah ice` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Shabang | `where is the goat they need one the mirror s ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Shabang | `how much i got a lot` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Unforgettable | `this might just be my realest flow ever` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Bad Meaning Good | `streets are seedy i call em sesame it s ernie...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Deep Pockets | `runnin round from laurier to mackenzie when t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Deep Pockets | `pyramid schemes just like the egyptians` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Deep Pockets | `back when hotlines were still flippin now i m...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Friends With Money | `celebratin father s day every day so don t ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Neatly | `slave to the cat i prove it god gave me six l...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Nokia | `ayy how many hoes in this club is it just me ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Nokia | `[verse: drake]` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Nokia | `take a pic for the gram show the whole world ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Nokia | `i ma ice both of y all like gretzky` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Up All Night | `drizzy say get her i ma get her` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Own It | `sorry` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Talk Up | `you might think i ve taken some lumps only if...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Talk Up | `live every word that i m rappin say i lost ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Talk Up | `i promise i m bridgin the gap` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Cameras | `before i m on the next ting ymcmb ah` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Cameras | `bunch of underground kingz` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Cameras | `you know i could be your knight in shining ar...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Glow | `hope i deal with karma fore my son do` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Red Button | `do right and kill everything people knew that...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Wick Man | `that nigga a munch` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Dog House | `fuck a money tree i m a cash cow i i i` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Dog House | `[intro: julia wolf & drake]` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Dog House | `just like biggie said i just need one chance ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Major Distribution | `4l shit know we steppin y all should get to f...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Major Distribution | `hmm hmm in this mansion i m macaulay culkin` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Preach | `hey let s pop the e off at liv i ve got some ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | What S Next | `i put a skirt on a whip and a crown on the si...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Whisper My Name | `you niggas be hittin the net for some love yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Whisper My Name | `am i your goat well probably not i probably w...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 9 | `all these handouts man it s getting outta han...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Hurrr Nor Thurrr | `got ex men issues like marvel but them niggas...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Slap The City | `and before that we ve been movin like dogs i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Toosie Slide | `solo niggas only yolo for real` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Toosie Slide | `got a dance but it s really on some street sh...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Come Thru | `rap game crack game ain t that different ya k...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Easy To Please | `the whole atf you know who we are` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Not You Too | `houston we got a problem` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tim Westwood Freestyle | `i could kick a punt and turn that shit into a...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Virginia Beach | `birkin is croc like the rubber shoe i swear t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Virginia Beach | `pussy it makin me tweak ended up stayin a wee...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Virginia Beach | `talkin bout you wanna cook for a nigga in the...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | War | `the lv pouch on chest is just for fashion nig...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | War | `are you dumb or stupid the wheels on the roll...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Bbl Love Interlude | `i m as well as well known gets with a long li...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Crew Love | `take your nose off my keyboard what you bothe...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Crew Love | `this ain t no fuckin sing along so girl what ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | High Fives | `i said i m so loved and i m so hated so confl...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Blue Green Red | `but me nah watch face like dem` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Blue Green Red | `run treadmill dey inna di goodlife you wanna ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Asthma Team | `and it s cool if you spill suttin it s only c...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Asthma Team | `i should leave earth nothing left to do here` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Asthma Team | `see me in the cl 6 with haffa b` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Faded | `i m feelin like i m faded faded f faded f fad...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Imy2 | `bold niggas gettin real italics round me` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Mob Ties | `i m runnin a blitz ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Mob Ties | `yes i be with future but i like to reminisce ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Plot Twist | `i haven t seen bro in a while but that nigga ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Plot Twist | `my young boys don t do it for clout if they d...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Plot Twist | `i ll beat a producer like what s the bpm i ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Plot Twist | `swear there s some shit i m forgettin about 0...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | I M The Plug | `this that ovo halloween gang you know how i m...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Jimmy Cooks | `shot his ass twenty times damn this nigga luc...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Jimmy Cooks | `smack the backside of his head like he bart p...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Jimmy Cooks | `hoes say i m suave but i can t get rico d` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Jimmy Cooks | `i be with my gun like rozay be with lemon pep...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Kmt | `dust a man down with the pen it s a sweep` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Little Birdie | `all these pussy niggas trippin like they clip...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | November 18Th | `ayy yeah i swear like everytime we find ourse...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | November 18Th | `cup inside a cup smoking ghostface killah` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Barry Bonds Freestyle | `just because i got a buzz like a building lob...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Burning Bridges | `capo got so many watches he might clock a nig...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Burning Bridges | `capo got so many watches he need supervision` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Burning Bridges | `we g block babies we are not musicians` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Laugh Now Cry Later | `anytime that i ran into somebody it must be a...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Laugh Now Cry Later | `tired of beefin you bums you can t even pay m...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Laugh Now Cry Later | `moved out the ritz and forgot ‘bout the bent ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Smile | `i understand that you afro i m tryna get to y...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 6 Man | `i m here to fuck with niggas souls my heart i...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Chicago | `pistol on j for survival lot of people gunnin...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Gen 5 | `and you know i call you my baby girl no wonde...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | I M Upset | `jump up out the bed like i m possessed` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | I M Upset | `made me wanna buy a vest and a tec skrr` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Right Hand | `cause now it s back to business any more henn...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tried Our Best | `i ll cater to you girl but late night you a t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tried Our Best | `we in the club with your gay friends always p...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tried Our Best | `i swear to god you think i m shakespeare that...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tried Our Best | `message read like a brake light words sharp l...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All This Love | `and the way that i jack son you figure drake ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | From Florida With Love | `ymb the gang and they down to stain anything ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | That S How You Feel | `time it done left you with a broken heart har...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | That S How You Feel | `i m just in the cut sittin sideways way that ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | What Did I Miss | `yeah niggas get punched in the face on some t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Don T Worry | `i don t know what s up with me lately lately` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | I M The Problem Still A Good Man | `porsche 911 i bought your ass like an emergen...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Still Here | `i can t fuck with you no more ‘cause you be a...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Bbw | `tell me what s the eta` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Bbw | `let her do what she want my baby letter just ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Elevate | `if you need me you can call me i stay busy ma...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Flight S Booked | `lilah i know it s getting late and i m strugg...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Jumbotron Shit Poppin | `hmm hmm strapped up fuck it i ma die lit` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | With You | `m i a in the m i a` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Espys: Honorable Mention | `can t deal with life s hurdles like you re lo...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Ice Melts | `slatt slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Q&A | `me and kd got way too much cheese like the ye...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Screw The World Interlude | `screw the fuckin world on up` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Circadian Rhythm | `rap game like my sleepin pattern cause how th...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Feel No Ways | `world s world s world s famous world s world ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Paris Morton Music | `i took some sense and made a nickel of it` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Snl: Bar Mitzvah In 1999 | `like baruch yitadel yisrael` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Friends | `celebratin father s day every day so don t ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | K | `with my woes` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | K | `runnin through the 6 with my woes countin mon...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | K | `i ain t rockin my jewelry that s on purpose` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | U | `i wanna know how much time you spent on them ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Churchill Downs | `the kids carry chopsticks not for rice in the...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Churchill Downs | `chubb s got the magazine cover like rolling s...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Churchill Downs | `the g o a t s call me to the side like can we...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Deuces Remix | `you should have a travel agent cause you a tr...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Deuces Remix | `but i ll fuck you right i will i fuck you rig...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Seeing Green | `gucci flannel gucci socks gucci sandals gucci...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Seeing Green | `i put you six feet deep i m bein socially dis...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Seeing Green | `your girl was better in the mornin like a sli...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Seeing Green | `these bitches time tick tockin better stick t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Feud | `all this motherfuckin beef i need some rice o...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Feud | `i make you pay attention then rip your receip...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Feud | `i m hall of fame in the booth nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Family Feud | `that s truth no boost nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Only You Freestyle | `comin for the jungle you know where the zoo i...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Only You Freestyle | `put a dark in the blue then we put it in the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Only You Freestyle | `shit you man been droppin lately don t make m...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Only You Freestyle | `i m just tryna take this live ting to my juvi...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | The Grind | `i m flyer than aladdin on a carpet saw a whol...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Pop That | `and nigga you s a square and i will twist you...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Pop That | `shout out my bitches too huh we the 2 live cr...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Pop That | `what you twerkin with` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Gold Roses | `all smiles kevin durant trials had to blow it...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Versace Remix | `try to take my sack better run with it nigga ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 100 | `niggas is jealous of you so they try to wrap ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 100 | `i got l a unified you better off committin su...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 100 | `blowin kush clouds until his ghost is in my g...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 100 | `y` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Issa | `issa ysl slime issa pde slime` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Issa | `issa 40 forty shorty issa 30 thirty thirty is...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Stuntin | `and 18 g s is why the chicken crossed the str...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Having Our Way | `we done did so many pull ups on niggas no won...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Having Our Way | `i m playin pool and the pool just connects to...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Never Recover | `one hell of a year and a nigga still droppin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Never Recover | `breadwinner like i m kevin gates and i swear ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Schemin Up | `i been going hamilton for so long yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Schemin Up | `reps up ovo you already` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Schemin Up | `bitches tell me that i look like 40 everyday ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Blessings | `i guess when your stars align you do like the...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 100It Racks | `yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Big Amount | `got a tool with the screw missin two girls in...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Big Amount | `got the billboard melodies rap is somethin i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Believe Me | `tape a couple kilos to the bitch stomach she ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Believe Me | `nirvana coldplay nigga got bands` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Believe Me | `i ve been takin shit light you don t wanna he...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Believe Me | `on the road i do one direction numbers i don ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Believe Me | `i tote a 223 two michael jordans nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Diced Pineapples | `may your love come down so my mind might have...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Diced Pineapples | `diced pineapples i just bought my girl a set` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Diced Pineapples | `i ain t no connoisseur but i m kinda sure you...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tell Your Friends Remix | `and i miss my city man it s been a minute m i...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | B B King Freestyle | `all i gotta be is all that i can possibly` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | B B King Freestyle | `i used to fuck gucci models i m fuckin gucci ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Solid | `life s monopoly goin broke not an option` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Meltdown | `lil shawty a therapist yeah poppin her shit` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Meltdown | `yeah is you fucking crazy nah is you fucking ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Meltdown | `how many texas boys done ran it up a couple m...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Off That | `black diamonds in my jesus piece my god` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Gonorrhea | `i ll let my goons rush ya like moscow` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Walk It Talk It | `takeoff rocket keep em in pocket` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Walk It Talk It | `watch it buck no milwaukee hunnid` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Complaints | `fuck a delay yeah they gotta pay yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Complaints | `i wanna be like muhammad ali hey hang on the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Frauds | `i don t need no drama i just need some nana` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Frauds | `sometimes i ask god man why him like the team...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Bubbly | `the svr still livin deranged yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Lie | `ysl belt buckle y all niggas sure is lookin` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | I M On One | `young mula baby` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Right Above It | `guns turn you boys into pussies sex change` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Over The Top | `kilani gang i swear he go wetter` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | It S Good | `mind in one place heart in another please par...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Ojuelegba Remix | `look it s gon be a long long time fore we sto...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Waiting Up | `gemini i understand why ya uptight cause once...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Life Is Good | `never turn my back on fbg god forbid what` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Cabaret | `always strap up just for safety then go long ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Cabaret | `i m tryna ease your mind` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Recognize | `yeah shout the girls from the east who know w...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Wasting Time | `the boy is back i never turned my back i just...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Stay Schemin | `might look light but we heavy though you thin...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Stay Schemin | `me and my man oliver north that s how i roll ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Stay Schemin | `it bothers me when the gods get to actin like...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Buffalo Freestyle | `drake be joshin around but life wasn t nickel...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Tuesday | `put the world on our sound you know party and...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | For Free | `it s we the best ovo` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lemon Drake Remix | `free the dawgs doin b i ds` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lemon Drake Remix | `but it s runnin from veneers and it s runnin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lemon Drake Remix | `and the truck behind me got arms yeah longer ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Lemon Drake Remix | `you can catch me rih in the new la ferrar` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Keep The Faith | `and i know that you been working working work...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Swishin | `roll up another one pull me another one i wan...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Why You Always Hatin | `tryna get back close hit em with the stiff ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | R I C O | `i come through my block like i m rico poppin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | R I C O | `i m talking that cross you that fade you four...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | R I C O | `meek milly cause we in the field with them bi...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Made | `i m the head of my estate ain t that ironic h...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Where Ya At | `put a pic with me on the gram now you popping` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Mr Right Now | `make that thing sing like sade 21` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | U My Everything | `you ain t get your master s but i stay breaki...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Guidance | `i don t wanna play no games play no games` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | My Way Remix | `and he mad as fuck big zoowap all she sing ay...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Parade On Cleveland | `uh i ain t doin shit man just pushin more pet...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Bigger Than You | `barely came up out the mud like quicksand bar...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Bigger Than You | `quavo sinatra but we could never be the rat p...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Oh U Went | `they say that life s about balance baby and t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | What S My Name | `i heard you good with them soft lips yeah you...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Something About You | `omo ovo shit man party man px fiesta` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Cuff Yo Chick | `she know we ballin so she wants to ride my ho...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | D4L | `on that earl manigault shootin it out the spo...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | D4L | `d4l stunna man say what s hannenin what s han...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Oprah S Bank Account | `money and me are the same but i just don t fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Going Bad | `known to keep the baddest bitches on commando...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Going Bad | `dc ovo we back again we goin plat ooh ooh` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Popstar | `i m a popstar but this shit ain t bubblegum y...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | She Will | `so on my libra scale i m weighin sins and for...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 2 Mazza | `this kick iron stick like jackie kick i hate ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | 2 Mazza | `grocery shoppin at royal york plaza me and li...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Flip The Switch | `slipping through the cracks cause i m slimy i...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Brakes | `nigga walk in this shit with a limp nigga snu...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | No Brakes | `enemigos take off on a nigga like a migo and ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Moth Balls | `yorkville thrills baby blue pills slop top sk...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Night Long Og Mix | `and when i m in the booth bitch the lion is l...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Night Long Og Mix | `it s blood gang slime but i parlay with snoop` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Night Long Og Mix | `man i swear my bitches do it til they suck th...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | F**Kin Problems Clean Version | `and yeah i like to i got a p p problem` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | F**Kin Problems Clean Version | `and yeah i like to i got a p p problem i love...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | F**Kin Problems Clean Version | `i love bad bad that s my that s my problem` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Live For | `i m not tryna stunt i m just tellin you the t...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | To The Max | `got it on the dresser i ve been under pressur...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Back On Road | `see i ain t mad at you homie we ain t got no ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Both | `this patek philippe gon make this crooked jud...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | For All The Barbz | `pink friday 2 heavy on it overweight` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | For All The Barbz | `keep it a hundred keep it in a trust if i los...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | For All The Barbz | `one sub kill five bitches oceangate mmm` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fuckin Problems Original | `i remember being young dumb looking for the n...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Only | `bad bitches who i fuck with ma ma mad bitches...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Only | `i piss greatness like goldish yellow` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Only | `blood gang take the b off behavior my nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Only | `had to show bitches where the top is ri ring ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sicko Mode | `and they chokin man know the crackers wish it...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sicko Mode | `ain t by the book yeah this how it look yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sicko Mode | `now it s 4 a m and i m back up poppin with th...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sicko Mode | `yeah this shit way too formal y all know i do...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Poetic Justice | `read slow and you ll find gold mines in these...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Poetic Justice | `a fatal attraction is common and what we have...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Poetic Justice | `makin sure my punctuation curve every letter ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Poetic Justice | `they say conversation rule a nation i can tel...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Poetic Justice | `an an an an anytime you can get it you can ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Poetic Justice | `but i can never right my wrongs unless i writ...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Poetic Justice | `with poetic justice poetic justice` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fuckin Problems | `that mean your friends es need be up to par s...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fuckin Problems | `or we can stare up at the stars and put the b...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Fuckin Problems | `i love bad bitches that s my fuckin problem p...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Of The Lights | `long knife don t like to ask twice you killin...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Of The Lights | `i spend all my time in houston smoke that kus...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Of The Lights | `it s cold as hell i show and tell` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Of The Lights | `she eat me up she got expensive taste` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Of The Lights | `i took your chick now you want beef and i m j...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Of The Lights | `why every rapper named big got bodied huh but...` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | All Of The Lights | `put you out your misery: kathy bates` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sicko Mode Skrillex Remix | `ain t by the book yeah this how it look yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Drake | Sicko Mode Skrillex Remix | `now it s it s 4 a m and i m back up poppin wi...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Nëw Phone | `i fell in love with the yonk i fell in love w...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Zaza | `you can get split up you can get lit up chris...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Try Me | `all my chains on me yeah like e` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tonka Freestyle | `i don t even gotta rhyme bitch i do what i wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Përctivated | `percolated` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Bigger Thën Everything | `i rock aps yeah get fleezy yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | [Adl Is Coming] | `bnyx` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | [Adl Is Coming] | `got the factory pj on us that s that private ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Xtra Krazy | `we bout to eternal atake everything that you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Wonky | `this not willy wonka but this wocky got me wo...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Wonky | `got this soda damn i m bouta pop yeah just li...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Wonky | `i ain t talkin bout no newport know twizz kee...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Watch Dis | `ha ap watch this watch that` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Watch | `i pull up an arm and a hand i pull up an arm ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | U Dont Know Lyfe | `oh they hypebeasts yeah phew oh they oh they ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Type Monëy | `yeah i got snipers aimin down at your head` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Twizzy Rich | `you don t got no money but you judging call y...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tru To U | `really just been too goated with this punchin...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tried Once | `yeah you know it yea we the best yeah you kno...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Told Ya | `yeah i just called twizz yeah just called up ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Told Ya | `yeah it feel like i was dying slowly but sure...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | The Wolf | `just like one of them chargers you got gas al...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tha Worstie | `she huffin and puffin and blow that bih like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Tell Më | `it s easier to scream i ll send you straight ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Talk 2 God | `like somebody asking a question off the opiat...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Supër Test | `bitch what do i want yeah the vette or the ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Split | `i just been swervin my way out the deli i jus...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Sorry Bout That | `that shit s i` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Skufflr | `we some of the greatest some of the goats and...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Simplë | `you would crash out like a dummy if you was h...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Sympathy4Me | `don t gotta explain for all the haters i gott...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Sosayeat | `don t play with him my twin gon hit your ass ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Smdp | `suck my dick pussy sex money drugs power s m ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Run Thëy Mouth | `you red you need to take a breath before you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Rollin | `my fans just like a cult they read my bible b...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Rollin | `bought a motorola for my yola i was sellin` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Rokstar | `got a big body tonka matte black forgi wheels` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Rich Minion | `i had to make me some sense what` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Rackz Got Më | `i know you dig it bitch yeah i m a shovel` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Psychocainë | `i forgot yeah half a god yeah out for god yea...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Power Trip | `i brought the big ar out and you brought the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Pop Out | `yeah lil thotty wifey pull up eat my pickle w...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Put It Ong | `bnyx` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Project Lyfestyle | `i been geeked up fried up out my mind i hit t...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Out Thë Way | `yeah i make money my thot thot thot bout to f...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | On Tha Linë | `back of a shotgun barrel kick back like bucke...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Off Tha Lot | `i don t do shit but get high fuck a plan uh` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Not Tha Samë | `heard they bitin swag yeah we call them barra...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Not Tha Samë | `my money strong your shit weak yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Not Da Same | `that bitch pull up suck on give me helmut lan...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | No Handoutz | `bitch bout to uber she eat eat up` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Night Come | `yeah just face it yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Mëan Feen | `i freestyled this whole thing it s no more pu...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | My Wrist | `i was on hype hype travis scott i might might` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | My Way | `every sunday you call up your friends to tell...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Mountain Climbërs | `i m not your kid i m not your cuddy` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Made It On Our Own | `bitch i made it on my own i ain t need to sig...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Mad Bout That | `if he shit talkin light him up like he s a la...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | M F U | `i m allergic to broke hoes a nigga be sneezin...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Lyfestylë | `this not breaking bad i bring my motherfuckin...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Lyfestylë | `i ain t playin with they bitch asses lil tune...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Luh Gëek | `all my pockets lift weights they fat all my p...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Luh Geëky | `got all that shit for the free woah oh ah` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Liftëd | `i said r i p to them pussies told them rest i...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Liftëd | `peon` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Let King Tonka Talk | `and she always give good head like she a fort...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Lyfe Party | `all of us on bright mode all my diamonds shin...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Lose The Feeling | `yeah pace yourself like a hospital you need p...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Kranky Arriba | `pockets big got me looking rikishi that s sco...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Iluv | `i heard you tryna die i love i love so here s...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Idgaf | `bnyx` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | I Don T Text Back | `i ll fly with the birds` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | How It Go | `ask me what s at stake i told em flank` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | How I Eat | `red like me some chanel` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Hatër | `i just pulled up in a lamb no i m not your fr...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Growing Pains | `i m on this plane every day so it s showin yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | God Talkin Shhh | `no we not no quarterbacks at all but we gon p...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Geek Timë | `you hand us scissors we cut you thin` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Geek Timë | `worst off yeah we wanna see you worst off yea...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Flawlëss | `when life give you lemons then crush that it ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Flawlëss | `buffy the vampire slayer with these cartiers ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Feel More | `she said yeat yeah i wanna feel more told tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Familia | `million for million building for building bil...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Flytroop | `yeah we call you six feet cause we get you bu...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Down Badd | `you can take this f from this fendi fore i fu...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Comë On | `yeah all of my diamonds they muhfuckin slatt ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Chanëlly | `i was really gettin high with the motherfucki...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Cap To Me | `i been geeked up since the n e s yeah you get...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Call Up : Opiates | `call up my slatt call up my slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Comë N Go | `i m inside her body i m a organ donor okay` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Comë N Go | `i m i m i m in her pink walls i ma call her a...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Bëttr 0Ff | `when you count that bread this shit get dough` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Bought The Earth | `all day i like a mixture all day off the drug...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Band Or 2 | `yeah and my twizzy better not try and slime m...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Backroads | `bnyx` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Always Alivë | `i m feeling blessed like i just sneezed` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | Already Said It | `yeah men in black with a mask up in a scat` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | All Different | `my pockets filled with caskets hold up and pr...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | All Day | `put insurance on your life call that state fa...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | 5 2 Üh 60 | `y all be cappin bout the fashion y all some h...` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | 1St Hunnid | `i m finna take me an x` | Mined candidate without confirmed wordplay or second reading. |
+| Yeat | ‎Nëw Phone | `i fell in love with the yonk i fell in love w...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | #23 | `drip check look at my diamonds got her lips w...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 1 8 7 | `uzi mitraillettes code 1 8 7 sur la mélodie` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 1 8 7 | `j suis sur la lune sont au moyen âge` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 100 Black Coffins | `what did she do to deserve put me on the farm` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 100 Black Coffins | `is you a cat or a mouse keep them rats out th...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 100 Black Coffins | `our revenge is the sweetest` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 100 Black Coffins | `a lotta scars on my back` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 100 Black Coffins | `i see your praying to jesus but will that hel...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 100 Black Coffins | `i broke off the chains only the realest remai...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 3 Kings | `80 pair of sneakers came from the d game cous...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 3 Kings | `fuck a gym i am him andre young` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 50 Plates | `trying to flip these 50 plates it s time to f...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 600 Benz | `keep the digital ruler in arm s length of the...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 600 Benz | `all black everything this shit like a hbcu` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 800 Karats | `rohan marley i m smokin godly pettin on my le...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 9 Piece | `i put that pistol to his head and tell the ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 9 Piece | `rack em up pool table full of 8 balls` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | 9 Piece | `automatic leave em dead in the living room ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | A Geometry S Dash | `but every time i see you i seem to start to b...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Accident Murderers | `like a bad massage` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Accident Murderers | `seated in foreign cars constantly getting wee...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Accident Murderers | `you cocked back you thought you had it planne...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Addicted | `my nigga gdk a goon he ll gun you down` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Addicted | `time to milk the game bitch i went and bought...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Addicted | `i just throw the cabbage c m b gon hold me do...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Albert Pujols | `i told her da le culo` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Albert Pujols | `be a snitch no way jose canseco` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Albert Pujols | `from turning white into cream powdered milk` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Ali Bomaye | `like new orleans like baltimore come to compt...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Ali Bomaye | `in my four door lookin real photogenic` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Ali Bomaye | `you mad cause your daughter fuck with me on s...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Ali Bomaye | `sellin that chicken; no lemon pepper no sweet...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | All Away | `bitch is a dime a dozen i get dimes by the bu...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | All Birds | `niggas layin on your crib while your momma sl...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Amsterdam | `now the same cat drivin jaguars` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | B M F Blowin Money Fast | `[chorus: rick ross]` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | B M F Blowin Money Fast | `rozay that s my nickname` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | B M F Blowin Money Fast | `one nation under god` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | B M F Blowin Money Fast | `cocaine runnin in my big veins` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Big Tyme | `penal systems come to the source benzino of c...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Birdz | `butterfly doors keep the birds chirpin oh` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Birdz | `my pastor making dollars like he erick sermon` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Beautiful | `came up in the projects dreamin bout them man...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Believe It | `spend iguodala on my rolly` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Believe It | `i got that justin bieber please believe it` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Big Bank | `my hands dirty my face clean` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Bill Gates Remix | `i ve been popping all these pain pills and st...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Bill Gates Remix | `taking all this fucking adderall i m sleep wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Bitch I M From Dade County | `p o e` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Black Man S Dream | `middle of december i will melt your fucking s...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Blessing In Disguise | `fuck the police stop runnin white boys terror...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Blessing In Disguise | `death to them niggas gettin caught go and tel...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Blessing In Disguise | `work white as rita ora in that plastic` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Blessing In Disguise | `ready for a war` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Blood Stain 2 | `they keep fighting with me like blueface girl` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Born Stunna Remix | `i show you bitches how to put together punchl...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Born Stunna Remix | `it ain t working out it ain t crunch time` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Born Stunna Remix | `you my son bitch and it s bedtime` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Born N Raised | `you try me and i ma get 20 tonight` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Bossy Lady | `come in late night so i m airportin as i take...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Bossy Lady | `my kicks brown now i m lookin for rihanna and...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Bound 2 Freestyle | `run in your home put your infant in a blender...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Buy Back The Block | `we got gucci mane 2 chainz and rick ross and ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Buy Back The Block | `time to buy back the block talkin one brick a...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Buy Back The Block | `cut it to 50 cent i got a job for your father` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Camel Meat | `lord vader uh` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Cash Flow | `i ma make them come and hit me with the rico` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Certified | `my car stick in your memory that s what i cal...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Champagne Moments | `double r s spread through the yard and i swea...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Champagne Moments | `i unfollowed you nigga ‘cause you sent the mo...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Choosin | `i don t hide bitch i m high when i m in publi...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Choosin | `bust your head that s a concussion` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Cigar Music | `i touched her with the second hand stroke got...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Clappers Remix | `hs87` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Coke Like The 80 S | `carol city the set 183rd still the route we l...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Color Money | `got her selling pussy for the love of the mon...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Color Money | `fuck all these rappers real talk cause i ain ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Color Money | `make her sign a prenup just to get my dick su...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Crib In My Closet | `if ye ain t got it then you bragging that s a...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Criminal | `vigilante` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Cut Her Off Remix | `hoes thinking i m boojie when i m smoking on ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Dead Rappers | `yes i m flawed these walls will leave you tra...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Deeper Than Rap Lost Intro | `momma go to church and shit s so far from hea...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Deeper Than Rap Lost Intro | `lord forgive me for my sin but i have to serv...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Deuces Remix | `you should have a travel agent cause you a tr...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Deuces Remix | `but i ll fuck you right i will i fuck you rig...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Devil In A New Dress | `lookin at my bitch i bet she give your ass a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Devil In A New Dress | `i hit the jamaican spot at the bar take a sea...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Devil In A New Dress | `i thought i was the asshole i guess it s rubb...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Diamonds | `duckin the devil you could say i live my life...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Diced Pineapples | `may your love come down so my mind might have...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Diced Pineapples | `diced pineapples i just bought my girl a set` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Diced Pineapples | `i ain t no connoisseur but i m kinda sure you...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Diced Pineapples | `and i won t ever rest we meet at the peak of ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Do What I Do | `my atlantic star not a notre dame not a stude...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Don T Rick Ross Remix | `hit the corner burnin rubber like a stunt dri...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Don T Panic | `2 birds in the kitchen; 1 brick 1 desert eagl...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Don T Shoot | `where does it end i got my hands up what else...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Dope | `i pop pop wish a nigga would call thomas` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Dope | `murder was the case all the kids say that nig...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Dope | `say my name say my name nigga say my name hun...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Dope | `scottie pippen on the dribble i just laid em ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Dope Dick | `100 room mansions i paid all of the tax no sh...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Down Like That | `fuck up the system make it shut down` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Down In Tha Dirty | `you can get your issue like your ass subscrib...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Drug Dealer S Dream | `they say it s hard to smile with a double lif...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Elvis Presley Blvd | `i m ridin down elvis presley blvd ridin down ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Elvis Presley Blvd | `iced em with the heater took his shit it s a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Everything A Dope Boy Ever Wanted | `it s double m to the grave free meek milly` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Feds Takin Pictures | `and fbi they talk about the g i be` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Finals | `you running with me nigga or you better run` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Finals | `two times for you pussies cause you know who ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Finals 2 | `beat your ass like a buzzer` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Finals 2 | `i m just tryna get a buck nigga like milwauke...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Finals 2 | `now i seen the scenery can t seem to get the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Finals 2 | `and we show off like dolph ziggler let raw bi...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fire Hazard | `ric flair` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Florida Boy | `hit a lick in a stolen car with no headlights...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fluorescent Ink | `bonnie and clyde story mick and mallory a kil...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fluorescent Ink | `i got a couple old schools and some new girls...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fluorescent Ink | `little bit of chanel decorate your appearance...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Free Enterprise | `head of black music do you know what rhythm i...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Free Enterprise | `my inner andre 3000 uhh` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Free Mason | `hear me clearly: if y all niggas fear me just...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Free Mason | `all black diamonds times were hard woo` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fuck Em | `on a note i ma talk that jazz jungle fever fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fuckwithmeyouknowigotit | `look at me i m pure nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fuckwithmeyouknowigotit | `bad bitch she a masterpiece got a bad bitch s...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fuckwithmeyouknowigotit | `not bad for a mulignan y all know like we kno...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fuckwithmeyouknowigotit | `cent anni ciao bella` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Fuckwithmeyouknowigotit | `come money dance with the good fellas` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | God Did | `they was tired of me winnin now they dead sle...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | God Did | `i never wanted to be the state custodian come...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | God Did | `hov did` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | God Did | `i m now careful with the sentences them only ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | God Did | `some new niggas out of pocket talkin exotic y...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | God Did | `they said they don t know me internationally ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | God Did | `all this pain from the outside inspired all t...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | God Did | `out the mud they gotta face you now you can t...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | God Did | `next time we have a discussion who the g o a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Game Over | `fuck the state penn i m fuckin hoes at penn s...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Ghostwriter | `so many successful entertainers with tax prob...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Gold Roses | `all smiles kevin durant trials had to blow it...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hard Piano | `my homie amputated but gon stand for somethin` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hard Piano | `i keep the coldest flows on the hot seat m m ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hard In The Paint Freestyle | `call up bee s and beevis cause she butt heads` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hello Remix | `or give it to you live beethoven on the fifth` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hit U From The Back | `flippin chickens for the sushi` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hold On | `i sold more dope than i sold records you nigg...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hold On | `we was made in his image dialing and it s muc...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hold On | `scoring from the heights but i wanted mine pu...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Holla At Me | `i m a grit boy looking for a ass like ki toy` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hustlin | `who the fuck you think you fuckin with` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Hustlin Remix | `wordplay t es en quarantaine t as trop la hai...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Am Your Leader | `y y y young yummy fuck you got for me` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Changed Her Life | `they wanna wet william russian roulette` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Don T Play About My Paper | `i got that white on that white on the panamer...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Feel Like Pac I Feel Like Biggie | `a paid thug nigga that s why shorty wanna be ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Mean It Remix | `and i m more like whiskey neat and you re mor...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Mean It Remix | `weak rappers tryna bite the sound but my styl...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Still Wanna | `powder falls smoke clears through the walking...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Wanna Be With You | `shoot movies jennifer aniston` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I Wish You Would | `niggas getting bust over in god we trust` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Ice Cold | `vs1 s all in my bitch watch face now` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Ice Cream | `got bricks nigga shaq free throw` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | If They Knew | `i m gettin high i m above the law` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Ima Boss Remix | `and i got the gats gilbert arenas` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | In Vein | `bitches runnin wild gettin faded in the bathr...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | In Vein | `she give me brain she a mastermind to be exac...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Insomniak | `i m on my worst behavior woo` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Insomniak | `muh fuckers never loved us comin for your mon...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | It S Okay One Blood Remix | `they hold cards down nigga like spades and pi...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | It S Okay One Blood Remix | `bangin underwater fuck around and soak ya` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | It S Okay One Blood Remix | `this ain t a movie dawg nope not waist deep i...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | It S On | `went from crumbs to brick lay down the other ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I M A Coke Boy Remix | `flyest new nigga jfk is where you ll find me` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I M Good Remix | `extended clip in the fog ya gotta air it out ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I M Not A Star | `my niggas never sing if i need em i go to ne ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I M On One | `young mula baby` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I M Ya Dogg | `baby i come running baby i come running just ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I M Ya Dogg | `head in that maybach boomin thank god for leg...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I M Ya Dogg | `i got rottweiler in tube sock` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I M A Boss | `no love cry when only babies die` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | I M A Boss | `og is one who standin on his own feet` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Jumping Out The Gym | `lebron whaddup d wade whaddup` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Justice | `maybach music in the maybach bumping` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | King Of Diamonds | `love my daughter to death ten karats in her e...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Knife Fight | `it s the lazy eyed gangsta kid g giancana` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Knife Fight | `kool g s back nigga mmg` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lamborghini Doors | `now it s stones on my hands roberto durans` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lamborghini Doors | `and before i had that bag i used to bag them ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lamborghini Doors | `corners wanna check him like odell beckham` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lay Up | `and like george gervin we lay up` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Layers | `underground locomotive man` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lemon Pepper Freestyle | `patty mahomes bout to fall short a couple hun...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lemon Pepper Freestyle | `ross sittin on two hunnid thirty five acres` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lemon Pepper Freestyle | `ushered a generation in these are where my co...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Let S Talk | `cîroc got me loose but your dress fit tight` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lights Get Low | `put homes together like i m the great lakes` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Live Fast Die Young | `every time we hit the charts niggas shoot up ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Live Fast Die Young | `young and radical methods are mathematical i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lobster Omelette | `rappers wanna play sports athletes caught in ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Look Me In My Eyes | `shooters jumping out of their mask like we da...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lord Knows | `in this bitch all drinks on the house like sn...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lord Knows | `a lot of niggas came up off of a style that i...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Lord Knows | `only fat nigga in the sauna with jews` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mmg The World Is Ours | `i put mirror tint all on the ghost i m scream...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mmg The World Is Ours | `but now i pull up in that thing them niggas g...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mmg The World Is Ours | `here we are the world is ours` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mmg Untouchable | `i m running the city like a pair of new j s m...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mafia Music | `that boy get salad` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mafia Music | `the bluest of weed trunk full of white car sm...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mafia Music | `creflo prayed` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mafia Music Ii | `kilograms were the key to my success` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mafia Music Ii | `with 20 g s in my denim jeans if she fucking ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mafia Music Iii | `a lot of yellow tape where that obama care` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mafia Music Iii | `gabos game ain t based on sympathy` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Marble Floors | `put it on the scale watch it do numbers` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Marble Floors | `playing with them keys like stevie wonder` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mark My Words | `suburban tinted five or less percentage` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Maybach Curtains | `through the fire i stood knowing we would rei...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Maybach Music Iii | `still tote chrome check my chromosomes` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Maybach Music Iii | `hard times never heard of those` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Maybach Music Iii | `plus i keep a dope line similar to coldstones...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Maybach Music Iv | `j u s t i c e league` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Maybach Music Iv | `i m a mike tyson typer typewriter sniper` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Maybach Music Iv | `southpaw box a nigga off like a outlaw` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Mercy | `i came to win she s just tryna kick it like i...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Millions | `and them hoes with angel faces cryin loud wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Money To Make | `and they shoot off one leg they awkward like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Money In The Grave | `when you niggas thinkin small in the mall wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Money In The Grave | `niggas wanna swap like it s slauson or watts` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Money In The Grave | `mob ties so i m always good where i m at word...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Monster | `[verse 2: kanye west]` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Monster | `all i see is these niggas i made millionaires...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Monster | `uh the best living or dead hands down huh les...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Monster | `yeah i m in that tonka color of willy wonka` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Nevermind That | `no cat in this i volunteered for these hunger...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | New Agenda | `takes a lot of shine just to supernova` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | New Agenda | `john travolta these subwoofers might blow you...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | New Flame | `all my diamonds watchin now my watches gettin...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | New Flame | `home plate world series how a nigga slidin in...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Now That I M Paid | `wale in that ferrari but that phantom on his ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Numb | `and that s how you know i ve been hunting the...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Numb | `yellow brick road i m told it s just a cakewa...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | O Let S Do It Remix | `{ooh l don}` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | O Let S Do It Remix | `got lean` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Oil Money Gang | `tip toein through the city alvin ailey with a...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Oil Money Gang | `when the money is in the circle the squares c...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Oil Money Gang | `so it s club liv til i m exed out` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | One Love | `one two three the crew was called dpg and if ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | One More Shot | `couple real niggas repping that bcg` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | One More Shot | `ciroc shots black bottle belaire fresher than...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | One Of Us | `raw deal rob a nigga like it s on my appeal` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | One Of Us | `learn how to draw the line from when we hang ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Outlawz | `mozzarella now its only tall cheddar most dop...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pacman | `ground basing jumping over cars they blake gr...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pandemonium | `that boa shit we get paid with death over dis...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pandemonium | `armadillo cigars` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pandemonium | `they say i m special as devin hester on fourt...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pandemonium | `flyest niggas out here period no maxi pad` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Panera Bread | `all she want is me so sushi feed her ego` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Panera Bread | `always been more than a player i am thibodeau` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Paradise Lost | `but i charge em just to sell for` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Perfectionist | `get the dirty money clean it all up at the la...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pirates | `got on my mother pearl she fuckin up father t...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pirates | `had to fuck with the haitians and break a kil...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Poor Decisions | `lust apparel who dream of rolls but can t acc...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Poor Decisions | `finna d o p e bob and weave and that boxer bo...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Poor Decisions | `once i got hot they only good option to vent` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Poor Decisions | `cause we all selfish but livin shallow how we...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Poor Decisions | `up out them rings like it was rocky iii` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Poor Decisions | `if you don t believe in god then at least bel...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Poor Decisions | `cause when your p o v is poverty` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pop That | `and nigga you s a square and i will twist you...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pop That | `shout out my bitches too huh we the 2 live cr...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pop That | `what you twerkin with` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pop That | `gettin cheddar packs like k d okc that s play...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Power | `i talk money boy take heed they get the pictu...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Power Circle | `stone me throw me a pile of shit but you won ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Power Circle | `‘til the last gavel drop we gon have it locke...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Power Circle | `look inside the eyes of the last mohicans sur...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Power Circle | `guess it s a wrap when your co defendant make...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Power Circle | `ricky madoff everything i deserve` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Powers That Be | `nation of islam they say i might have a few t...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Pray For Me | `jesús hang around your neck like the noose ma...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Presidential | `walkin on jewish marble hand painted the ceil...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Push It | `i m pushin it hard i m pushin it soft if he p...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Rap Song | `like akon we can stack it all up` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Red Bottom Boss | `y all the verizon man i m just gon stand behi...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Retrosuperfuture | `waiting for the day bob rose from the dead in...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Rich Forever | `stop dealin with them niggas you need one sol...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Rich Forever | `she wanna cum maybe come over` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Rich Forever | `huh a hundred mil ain t enough got a hundred ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Rich Is Gangsta | `bo jackson i m a switch hitter` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Rich Off Cocaine | `the last bird flew the coup` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Rich Porter | `36 up in the pot like what you cooking nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Royals Rick Ross Remix | `all i heard was murder think the house haunte...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Running The Streets | `like stanley yelnats he caps his head red` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Same Hoes | `me and david beckham fuckin the same hoes apa...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Sanctified | `god i ve been guilty fornicatin from my statu...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Sanctified | `somewhere in jamaica i m still holdin on my c...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Sanctified | `keys to my success i get new keys and new add...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Santorini Greece | `room full of cloaks and they countin votes mi...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Santorini Greece | `art basel with lyor i blew 300 with em` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Saturday Night Special | `livin legend cool james` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | She Wanna Fuck | `bel air bottles like a boss penthouse at the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Smile Mama Smile | `it made me stronger made me quicker on my fee...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Smile Mama Smile | `you always was a black queen mama you showed ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | So Sophisticated | `put yo dick in the dirt now you decapitated` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | So Sophisticated | `i m the hottest and these other niggas coolin...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Somethings Going On | `p o d s got it goin on` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Speedin | `in the benz ak ridin shotgun` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Stack On My Belt | `don t believe y all kane stories i should lea...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Stack On My Belt | `of course we see em punks faking` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | State Of The Union | `so i ain t got to kneel just to stand with yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Stay Schemin | `might look light but we heavy though you thin...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Stay Schemin | `me and my man oliver north that s how i roll ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Stay Schemin | `it bothers me when the gods get to actin like...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Street Life | `now a penthouse you can call me hi top` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Sunshine Remix | `i hold the mac that them panthers and the bla...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Sunshine Remix | `the fruits of my labor is to produce on netfl...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Tats On My Arm | `see money talk and these days you thought tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Tears Of Joy | `lease a lamborghini for your pussy rate` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Tears Of Joy | `ain t life a bitch but you gotta keep her wet...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Ten Jesus Pieces | `i could see it in the sparkle cause it lacklu...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | The Devil Is A Lie | `nigga s stick dirty but his dick clean` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | The Devil Is A Lie | `motherfucker cause the devil is a lie` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | The Devil Is A Lie | `devil want these niggas hate they own kind go...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | The Devil Is A Lie | `now i m black jesus turn water to wine and al...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | The Show | `got niggas in black hoodies homicide celebrat...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | The Weather | `couple times a nigga almost got popped by ros...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | The Zenith | `riding in another drop ain t talking enterpri...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | The Zenith | `i ain t gon be slept on forever tell the sand...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | They Don T Love You No More | `if i feel threatened i ma go and get a ladder...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | They Don T Love You No More | `niggas talkin down on the crown watch them ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Think About It Rich As In Spirit | `turner field might be gone but i m still brav...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | This Thing Of Ours | `the don of all dons since y all wanna call me...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Thug Cry | `go against the odds youngin go and get a job ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Thug Cry | `niggas hatin like it s salt lake city` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Thug Cry | `get a bad bitch that posts up like comments` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Timeless | `okay times flies cars in sync tell em bye bye` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Tired Of Dreaming | `sky dweller moving counter clockwise` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Touch N You | `smokin on that cali bumpin 2pac` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Triple Beam Dreams | `blamin society mad it wasn t made fair i woul...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Triple Platinum | `double r s on the gates like i m triple plati...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Turn Ya Back | `all my niggas turned they back they turned th...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | U Ain T Him | `and i ain t talking bout no mace i m talking ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | U O E N O | `you don t even know it` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Umma Do Me Remix | `and let s get dis clear get it straight jus ‘...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Usual Suspects | `now reptiles was left out i m bout a watch wh...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Valley Of Death | `lord knows when i see this monkey i ma be the...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Vamonos | `it s ym that s my team nigga vámonos` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Vegas Residency | `dozen lawyers on the team i d rather keep em ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | War Ready | `i ll never fall for what i stand for` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | War Ready | `we could live today blood and die tonight cuz...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | We Shinin | `i got ten keys on my wrist so have you the d ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | We Takin Over | `touch and i will bust your medulla` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | We Takin Over | `been a g in the game now my son on the throne` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Welcome To My Hood | `and they say time flies well mine s first cla...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | What A Shame | `[chorus: french montana]` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Whatever | `my grandma seen me buy my first polo sweater` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | What S Free | `judge bangin that gavel turned me to slave fr...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | What S Free | `that s a cc e copy` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | What S Free | `on god it s off the head this improv but it s...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | What S Free | `in the land of the free where the blacks ensl...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Where Ya At Remix | `put a pic with me on the gram now you popping` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | White Iverson Remix | `started rockin the sleeve i can t ball with n...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Wuzzup | `couple dollars on my neck dgk on my sweats` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | Yacht Club | `i m cruisin in the gulf i think you re so dea...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | You A Lie Remix | `these flashing lights is blinding damn go get...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | You A Lie Remix | `see the jewels and they try to play cam tell ...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | You Know I Got It Reprise | `look at me i m pure nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | You Only Live Twice | `all my chains look like snakes that s some re...` | Mined candidate without confirmed wordplay or second reading. |
+| Rick Ross | You Re Everything | `look at these seats they gator made` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | 1 2 3 | `foenem radio on bd` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | 5 Like Keeta | `baby ain t a 10 but she 5 like keeta yeah yea...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | A$Ap Rocky | `i remember selling a$ap rocky ayy now i be ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Ain T Gonna Happen | `skeet on mosquitos girl don t worry gotta spr...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Awesome | `finna go and get in diana like a pacer bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Beetle Juice | `i smoke swishas who said it was sweet though` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Bitch Where | `s o s a b a b y gang` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Bouncin | `you want beef i got criscos we can get it pop...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Buy It | `get yo ass smoke if you droppin the l s they ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Cashin | `life s a box of chocolate not nesquik nah` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Cuz My Gear | `hah holograms on my hand gave me a tanned wri...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Cuz My Gear | `now i m in the laundromat; darryl strawberry` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Damn Shorty | `i was on the cta bus and a train shorty` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Diamonds | `you got a bad batch to much bakin on it` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Empty | `i m so motherfuckin true like i m 2 chainz` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Everydays Halloween | `he ain t comin right nah then we leave him le...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Faneto Remix | `my name is louie but they call me tony` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Gated | `fn with me like my lady` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Grab A Star | `i ball tyrese gibson baby boy you look so fer...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Hadouken | `bm` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Hadouken | `got a cuban on my throat so she gon overthroa...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Hadouken | `gravitated off the ground that s some super t...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Harry Potter | `i used to be in a nigga windows intel` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Hate Bein Sober | `i m wasted wasted rose thats my favorite favo...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Himalayas | `[produced by ggp]` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | How It Go | `aim at your medulla like now what` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Hunchoz | `money long like rapunzel hair` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | I Don T Like | `fake trues that s that shit i don t like` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | I Just Wanna | `who the fuck just hopped out with that rock o...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | I Just Wanna | `it s just me myself and money all this money ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Ight Doe | `i don t want that bitch she been around like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Keep That | `give me top at the stoplight beep that s a re...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Knock It Off | `i had a 30 in my hollister now i go in gucci ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Laurel Canyon | `pull up dominoes get my pizza vamonos` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Law & Order | `you think that i m kiddin round of applause g...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Lola Bunny | `riding with lola bunny cause i got carrots` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Love No Thotties | `you wanna glo up baby keef got you` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Make America Go Hard Again | `chase him in his dreams meek mill s ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Make America Go Hard Again | `if you thirsty i got juice baby wee` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Make It Count | `can t see me boy cause you are blind` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Michelin | `i m rollin i m almighty sosa michelin ayy ayy...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Minute | `rider make her put the heater in her panties` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Money Can T | `my gun look like big pun` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Morgan Tracy | `these boys don t want no smoke they don t wan...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Morgan Tracy | `i spend lots of guap then get more again trac...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Never Fly Here | `white diamonds jack harlow` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | No | `i be smoking on jet lag don t think my jet la...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | No Reason | `i fucked her then made her walk for the four ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Nobody | `member my mama used to whip me now i can buy ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Obama | `sosa what type of weed you smoke i want the o...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Oh My Goodness | `countin rolls like a boxer man countin rolls` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Oh My Goodness | `smokin tutu this my oxygen smokin tutu too mu...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | On Da D | `know i get tongue bitch like skella` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Perry The Platypus | `she know i m a dog i m tryna bone i m tryna b...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Picking Big Sean Up | `pull up in a lamb bitch no propaganda we gon ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Picking Big Sean Up | `got a chopstick same size as kevin hart but i...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Reefah | `up in the field while you was up in the bleac...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Rider | `i ain t sweat her she was comin at my crew ne...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Rider | `gbe till i die i do it for my set` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Runner | `i was in chiraq ridin with that bernie mac` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | See Through | `chief so was bool at the wiiic like a regal c...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Shawty Say She Love Me | `got them horses in my shit bitch thought it w...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Sky Say | `just flew in on a blue jet` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Smash | `we smash on niggas blow kush on niggas in a p...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Sosa Chamberlain | `i was smokin the loudest loud but i m always ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Sosa Chamberlain | `my favorite player butler and i gotta butler` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | The Moral | `the moral of the thots that i got aye i got h...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | The Moral | `if i see your thot i take her thot` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Thot Breaker | `thots wanna go to sleep and wake up` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Tree Tree | `and you can call me sosa ross i m sosa phisti...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Vet Lungs | `ggp` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Vietnam | `bitch you ain t no police officer ain t no cu...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Voodoo | `i got my toolie and my gooey and my lucy s ay...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Voodoo | `fuck niggas know us know i got my north pole ...` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Way It Go | `otf gbe yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Wazzup | `was a hander hander i m an acre handler` | Mined candidate without confirmed wordplay or second reading. |
+| Chief Keef | Young & Reckless | `i m otf but tell sosa i need a glo man` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | 2 Vaults | `brother with me and he shootin no dan folger ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | 2 Vaults | `carrot cake around my neck vs1 the crystals` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | 2 Vaults | `back to back in them ferraris we stay horsepl...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | 22 | `keep my piece on me like a reese s` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | 23 | `pass me the ball i m finna td` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | 2Am | `i ball check my floater` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | 59 Simpsons | `gimme a duff man` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Amp Freshman Cypher 2023 | `i try anything once the lifestyle yolo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Amp Freshman Cypher 2023 | `i made a mill off gta now i live like michael` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | All In | `naz for life nigga that s til the end` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | All In | `i don t sell furniture but nigga ikea i have ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Baby Daddy | `black bentayga it s a emo woo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Baby Daddy | `bitch i m not the sheep i m the big goat goat` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Boom | `fuck my old whip had to cop me a range she do...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Boom | `nigga get beat up in the moshpits yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Bagg | `jacksonville shawty my bitch drive a jag skrr...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Bahamas | `dime piece give me nana got a 9 nigga what` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Bahamas | `can t water my seed hey can t play in my gard...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Ballin Like A Piston | `vvs my whole team` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Batman & Robbin | `i feel like batman ‘cause a young nigga robbi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Believe | `look at my paper kinko s ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Can T Be Crete Boy | `glass pint slippin out the bottle ooh cindere...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Can T Be Crete Boy | `she a ho so i couldn t propose give a fuck if...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Cat Piss | `you can get jacked like a cactus yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Cat Piss | `blast off on these niggas young team rocket` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Come Up | `and she give thanks like we in november` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Damn Homie | `i used to scam before rap` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Die By Myself 3 | `imma outkast but got more than 3 stacks` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Drippin` | `aunt jemima might be my mama` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Ea | `so much head i almost died from it like saget...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Fight Night Round 3 | `you know i done done it all i ain t shawty lo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Flexin On My Ex S | `i just bought a new watch cause it was time` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Fortnite | `my bitch geeked off asher roth hoo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Fortnite | `gucci feather slipper so i m walking on duck ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Free K$Upreme Freestyle | `still naz i can t switch up on my gang` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | From Down Bad | `niggas be big crips still wanna be me` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | From Down Bad | `too calm being broke must be off the cbd yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | From The D To The A | `i m ballin ain t near a rap nigga in the game...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Get Dripped | `i put vvs on my links yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Get Dripped | `back at fifteen i was swipin oops uh ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Get Low | `stomp him in his eye like the light from pixa...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Gimmie My Respect | `yeah smokin like hickory hick` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Gimmie My Respect | `these niggas bit on the cap bitch carl ripley...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Greed | `have a cookout everybody get smoke` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Greed | `p i m p` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Hey Julie | `now they crusty ac busted house 100 degrees h...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Hit Bout It | `my shooter lookin like a center homie 6 5` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Hold Up Dough Up | `pussy so good beat it up like sylvester stall...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | How You Feel Freestyle | `and if i bought a bike then i m putting ice o...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | I Got The Baag | `when i come around these niggas get punked i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Idk | `chrome to his head like daft punk` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | It S Us | `i crossed him it s ironic cause he was christ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Intro | `lil boat` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Its Us | `i crossed him it s ironic cause he was christ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | I M The Mac | `hey these niggas pussy like tom` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Kardashians | `feel like kylie kris khloe yeah i got ks like...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | King Alfred | `we shall overcome ayy and if we don t bitch y...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Knuck If You Buck | `choppa with the pack a punch uh choppa with a...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Lil Yachty | Funk Flex | #Freestyle091 | `young nigga bitch i m qc you can see this shi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Loaded Up | `see me in this city boy i look like wool in` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Lost It | `lots of automatic chops sound like el debarge` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Marmalade | `she said how much is that rolie i said don t ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Marmalade | `top the charts hip hop ain t the same we the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Marmalade | `fuck the cops and fuck donald trump bitch it ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Mase In 97 | `big shouts out to glizzy tokyo and rizzy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Minnesota | `i was juggin off them stacks countin up them ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Mixtape | `lil boat chance thugger lil boat` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Mixtape | `they gotta ask if they may cinco de mayo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Mood Swings | `got a big ar let it bang bang bang bang` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Most Wanted | `said i m back and i m better yeah know i look...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Most Wanted | `i m in a ghost haunted skrrt` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Most Wanted | `treat the stock of my uzi as light as a feath...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | M S | `she talking bout we gave her nintendo switch` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Nbayoungboat | `i m with the 38 baby my neck see more water t...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Never Did Coke | `i hate catfishin i wanna fuck what i saw on i...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Never Did Coke | `i m like e 40 man just tell me when to go go` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Never Did Coke | `i told this bitch we re just friends just lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | New Day | `thugger brought lean and yachty got sprite no...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | New Day | `i get mm bop like a hanson` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Next Up | `x o for the weekend` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | No Hook | `i was in the trap bird singin no parrots brrr` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Oprah S Bank Account | `money and me are the same but i just don t fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Oreo | `they say money change niggas i m makin chamel...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Pardon Me | `i ma start puttin these bitches on marta i ma...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Peek A Boo | `i came from the lick went to jail i got punis...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Peek A Boo | `play with that kitty like hello` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Peek A Boo | `you not the gang we don t kick it or punt it` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Plastic | `rubber band ap on thirty racks if a bitch ask...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Play Your Position | `she play a role she know i don t need her i m...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Rain | `gremlin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Rainbow | `burning up the dope keep the pack like green ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Rocc Climbing | `bet she focused on her bills up like she chau...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Rule #1 | `rich like i m roddy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Run Wit Da Sack | `i m coming for that sack you better not fumbl...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Run Wit Da Sack | `hang with the slimes like i m thugga bitch` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Saats | `i got d wade under my shirt` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Self Made | `she gon let me fuck she like that lil boat ad...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Side Effext | `step on that boy with the clowns huh` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Sod Original | `s o d it s s on d super soak ayy ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Solo Steppin Crete Boy | `i try anything once the lifestyle yolo` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Saintlaurentysl | `i came off from scammin and swipin` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Silver Lining | `a bunch of youngins tryna slip and slide this...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Solitaire | `fiji water talkin aquafina glass crystal clea...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Sprinkle | `ridin round late night with a star like lapd` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | T D | `watch blank face and feel like groovy` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Talk To Me Nice | `fuck on a yrn logo smash fuck nigga signed wi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Talk To Me Nice | `gelato biscotti biscotto` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Terminator | `i m fergenstein i m the ferginator i fuck the...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Terminator | `i keep my diamonds in the fridgerator` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Taylor Port Junkie | `heard you re tryna turn off fatigue` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Taylor Port Junkie | `been a minute since i brought this watch out` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Taylor Port Junkie | `heard you re tryna turn off fatigue i m getti...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | The Race Freestyle | `don t fuck many circle tighter than a bantu l...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | The Secret Recipe | `i don t smoke weed already blunt all of my ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Trifling | `let that bitch eat my sons call me steve nash...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Up Next 3 | `bitch it s g herbo swervin so much watch them...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Up Next 3 | `ayy lil boat qc what up` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Up Now | `pop x` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Up Now | `twenty four k in my mouth like i chew on aces` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Van Gogh | `i m sick of these niggas i m sick of hoes got...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Wanna Be Us | `whipping the work like a prius` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Wat U Mean Remix | `but my brother and them won t hesitate to clo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Weak Hearted Won T Last | `my bitch is a brand new jem` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Wock In Stock | `got like five different aps who want one yeah...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | X Men | `i m sure you saw that one comin but i bet you...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | X Men | `yes i m a dog with a gucci collar` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Xxl Freshmen 2016 Cypher Part 2 | `rest in power it s all about power` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Yae Energy | `pull up with three model bitches coca cola no...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | High3R | `if it s a blowjob she gon get hired` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Yachty | Pretty | `wrinkled off the crease i keep a pleated piec...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Grammy Family Freestyle | `hov got flow though he s no big and pac but h...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Grammy Family Freestyle | `the baby blue maybach like i own gerber` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Grammy Family Freestyle | `saw it all before some of y all thought i was...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 03 Bonnie & Clyde | `the problem is you dudes treat the one that y...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Spiritual | `spiritual yes it is spiritual no i m not pois...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Young G S | `promise god to never look back or i turn to s...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Young G S | `i got it locked like the late bob marley pard...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Young G S | `these here s the dog years and motherfuckers ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Young Forever | `reminisce talk some shit forever young is in ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Young Forever | `without a wrinkle in today cause there s no t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Young Forever | `did you get the picture yet i m painting you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Young Forever | `i m forever young` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | You Must Love Me | `you know in more than one way cocaine numbs t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Xxxo Main Mix | `y all comin up m i m i m i a` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Who You Wit Ii | `i told her bomp *beatboxes* slow down baby` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Who You Wit Ii | `jay z rated a g baby that s all good` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Who You Wit Ii | `never sprung huh` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Where I M From | `where cats catch cases hoping the judge r and...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Where I M From | `and no matter the weather niggas know how to ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What S Free | `judge bangin that gavel turned me to slave fr...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What S Free | `that s a cc e copy` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What S Free | `on god it s off the head this improv but it s...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What S Free | `in the land of the free where the blacks ensl...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What They Gonna Do Part Ii | `niggas takin it lightly had to darken the flo...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What They Gonna Do Part Ii | `got to clap ya mean all day with me clap ya m...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What They Gonna Do | `what y all gon do you got starch in your flow...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What They Gonna Do | `oh stop calling that s ho man shit stop falli...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What They Gonna Do | `no you not balling that s pro am shit` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What They Gonna Do | `now what the fuck they gon say to me got to c...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What More Can I Say | `young hova the god nigga blast for me` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What More Can I Say | `w i double l i e nobody truer than h o v` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What More Can I Say | `movin wet off the step purple rain in a droug...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What More Can I Say | `i say a b i g verse i m only biggin up my bro...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | What More Can I Say | `these fucks too lazy to make up shit they cra...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Welcome To The Jungle | `champagne for the pain` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | We Got Em Goin | `to sit low in a six oh oh solo on lo lo s fuc...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Watch Me | `chick mad said i hold my pistol too tight get...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Versus Interlude | `the truth in my verses versus your metaphors ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Venus Vs Mars | `front` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Venus Vs Mars | `if hov s a blackberry bold then shorty is a s...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Upgrade U | `they call shots i call audibles` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Universal Soldier | `somebody should ve told you i m a motherfucki...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Universal Soldier | `that guilt trip ain t gon work don t put your...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Universal Soldier | `we done ducked them fed charges now we eatin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Under Pressure | `and i should be duckin these clubs tiger wood...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | U Don T Know | `put me anywhere on god s green earth i ll tri...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | U Don T Know | `and if somebody woulda told ‘em that hov woul...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Trouble | `i try to pretend that i m different but in th...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Trouble | `fuck that exclamation comma quotation s i lov...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Top Off | `khaled is valid every word is true what these...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Top Off | `save all that woopty woop let s let the money...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Top Off | `fuck it up and then leave come back fuck it u...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Top Off | `no jewels in this patek philippe it s complic...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Tidal Freestyle Stream Of Consciousness | `so i m the bad guy now i hear because i don t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Threat | `now it s a duet and you wet when you check ou...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Threat | `like castor oil i ll castor troy you change y...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Threat | `you ain t gotta go to church to get to know y...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | This Life Forever | `niggas tryna subtract my life my mathematics ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | This Life Forever | `what y all niggas afraid of–my mind or the me...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | They Don T Love You No More | `if i feel threatened i ma go and get a ladder...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | They Don T Love You No More | `niggas talkin down on the crown watch them ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Watcher 2 | `the momentum when it dropped how i got throug...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Streets | `it s a cold cold world but i blew my hand` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Ruler S Back | `and you got a couple of beans and you don t h...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Return | `i love em all but none of y all is doug e` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Return | `mirror mirror on the wall whose is the freshe...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Prelude | `i used to think rappin at 38 was ill but last...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Originators | `[verse 1: the jaz]` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Neverending Story | `i m at war like the dukes of hazzard against ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Devil Is A Lie | `nigga s stick dirty but his dick clean` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Devil Is A Lie | `motherfucker cause the devil is a lie` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Devil Is A Lie | `devil want these niggas hate they own kind go...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Devil Is A Lie | `now i m black jesus turn water to wine and al...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Bounce | `and i don t play pause i m from chicago` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Bounce | `of a revolutionary jay guevara` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | The Blinding | `you speakin on the kingdom you better watch y...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | That S My Bitch | `get your own dog ya heard that s my bitch` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | That S My Bitch | `i paid for them titties get your own` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Thank You | `‘cept i put eight balls in corners without us...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Talk Up | `you might think i ve taken some lumps only if...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Talk Up | `live every word that i m rappin say i lost ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Talk Up | `i promise i m bridgin the gap` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Takeover | `m easy we runnin this rap shit` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Takeover | `and all you other cats throwin shots at jigga...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Takeover | `two of them shits was doo one was nah the oth...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Sweet | `shall we dance with the devil for a beat i pr...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Sweet | `i can walk down the hall of mirrors in versai...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Swagga Like Us | `aye you can go see weezy for the wordplay` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Swagga Like Us | `mami scream ¡papí no más` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Swagga Like Us | `and me for controversy` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Super Ugly [I Got Myself A Gun] | `and since you infatuated with saying that gay...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Super Ugly [I Got Myself A Gun] | `me and the boy a i got more in common than ju...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Suit & Tie | `all saints for my angel alexander wang too` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Success | `i got watches i ain t seen in months apartmen...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Success | `i got an appetite for destruction and you re ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Streets Is Watching | `beef assorted like godiva chocolates` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Some People Hate | `we bring them knives out or we let them burne...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Some People Hate | `that old fashioned word it s a word called lo...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Some People Hate | `shoot faster than kobe nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Some People Hate | `i roll with the punches so i survive i bob an...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Some People Hate | `i came from the gutter my success in this gam...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Smile | `oh these that drugs heron flow i spaz on the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Smile | `this was meant to be a haiku huh` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Smile | `but my story s too wide to fit inside a line ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Show Me What You Got | `truth or dare mami listen and learn i got a d...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Shiny Suit Theory | `you built a mighty high ladder let me see you...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Shiny Suit Theory | `if you believe in that sort of luck your scre...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Shiny Suit Theory | `can it be the same one on covers with warren ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Shake Ya Body | `new york chicago atlanta l a miami crazy like...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Seen It All | `we used to take a little show money just to t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Say Hello | `raindrops keep falling on my brain cause i m ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Say Hello | `tell him i ll remove the curses if you tell m...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Sorry Not Sorry | `everybody s gettin bands we just dance to dif...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Run This Town | `back to runnin circles round niggas now we sq...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Run This Town | `reebok baby you need to try some new things h...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Roots Picnic Freestyle | `the roots remember even when the trees preten...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Roots Picnic Freestyle | `i reigned for forty days my neck get flooded ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Rock Star Freestyle | `giorgio armani special cut scooby doo s walki...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Roc Boys And The Winner Is | `think oj i get away with murder when i sling ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Roc Boys And The Winner Is | `hit defrost ice cold jewels got no flaws drop...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Road To Perdition | `my road to glory was road to perdition` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Ride Or Die | `i bruise wack rap niggas severely punish them` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Reservoir Dogs | `i ma be the kiss nigga until it s bedtime` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Reservoir Dogs | `yo shut the fuck up fore i blast and banned f...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Real As It Gets | `flows like syrup it just make me wanna pour u...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Rap Game Crack Game | `priority s work wasn t right so i switched fa...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Public Service Announcement | `i just rolled the dice trying to get some cha...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Public Service Announcement | `hope you don t think users are the only abuse...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Public Service Announcement | `flyer than a piece of paper bearin my name` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Public Service Announcement | `allow me to re introduce myself my name is ho...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Primetime | `nigga we rollin beat the deuce` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Primetime | `prime time beat by dion` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Pressure | `and so it seems that i m sewing jeans` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Pregame | `mute niggas could tell you how nice i am it g...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Pregame | `here comes the drama` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Pray | `this is the genesis of a nemesis mother ameri...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Pray | `i hear a car go vroom drug dealer in the bm w...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Pop Style Single Version | `why can t you just shut your mouth and take t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Pop 4 Roc | `niggas whisper cause they talk they gets slai...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Picasso Baby | `eventually the pendulum swings` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Picasso Baby | `no i want a brothel no i want a wife that fuc...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Picasso Baby | `i wanna row of christie s with my missy` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Picasso Baby | `spray everything like samo` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | People Talkin | `don t you know when you re defeated won t you...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Party Life | `art with no easel – please it s no equal` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Party Life | `i m in a whole nother league niggas never cat...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Paper Chase | `for the next couple of days i brought out all...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Psa Remix | `mobsters opt to not get in beef it s no busin...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Power Remix | `the crucifixion the being nailed to the cross...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Power Remix | `new watches you know what time it is watch us...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Otis | `and pray that all of they pain be champagne` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Otis | `i get it custom you a customer` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Otis | `i adopted these niggas phillip drummond them` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Open Letter Part Ii Remix | `common sense` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Open Letter | `bulletproof this radio scanners` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Only A Customer | `vvs s blesses my body` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | On The Rock Remix | `god knows he got a hell of a flow` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | On To The Next One | `and niggas don t be mad cause it s all about ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Off That | `black diamonds in my jesus piece my god` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Oceans | `muhammad hovi my back against the rope` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Oceans | `on the ocean i m in heaven yachting ocean 11` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Oceans | `democrat nope i sold dope` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | No Hook | `like frank lucas is cool but i ain t trying t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | No Hook | `guidance i never had that streets was my seco...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Niggas In Paris Remix | `no referee throw no flag ain t no techs for m...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Niggas In Paris Remix | `i ball so hard my ankle hurt` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nigga Please | `nigga please you can t even hold my shoes i g...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nickels And Dimes | `when you scratching for every nickel and dime...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nickels And Dimes | `got a thing for nickel plated nines and prett...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nickels And Dimes | `turn nickels to dime turn dimes to quarters` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nickels And Dimes | `respect these youngins boy it s my time now h...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nickels And Dimes | `every thing within reason can t see it taking...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | New Day | `sins of a father make your life ten times har...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Never Let Me Down | `so i guess i m one of a kind in a full house` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Never Change | `death before dishonor correct` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Never Change | `we run streets like drunks run streetlights w...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Never Change | `one cd or three hundred and sixty pies` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nymp | `niggas throwin me shade but ain t shit sunny` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nymp | `nymp` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nymp | `up against the wall tryin to pass through` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Nymp | `not only coke heads but the feds in the mercu...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | My Mind Right Remix | `it ain t about rich and po nigga – it s about...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | My 1St Song | `you gonna have to punch niggas shit` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Murder | `suicide i m trying to cut white chalk line em...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Murda Murda | `until we state property we spitting the tauru...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Murda Murda | `lose two lungs bullets ll get inside your hea...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Murda Murda | `a lil ugk for ya pour out the p a for ya` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Nice Watch | `y all niggas need a time out who got these ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Nice Watch | `yeah i got a hublot i call it tebow i strap t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Nice Watch | `young black and gifted i rap like it s christ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Nice Watch | `i stay on my toes like the white sox cause` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Nice Watch | `no more mr nice guy hello mr nice watch only ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `feet up like a paraplegia` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `cause i ma murder y kill o and even u` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `i m bein hated by the season` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `man i got summer hatin on me cause i m hotter...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `i call em april babies cause they fools` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `garvey got me a molotov cocktail flow even if...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `and i will never i will never i will never fa...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `got spring hatin on me cause i ain t never sp...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `queen b` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `blind eyes could look at me and see the truth...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Mr Carter | `i ma need a coupe i won t need a roof flyer t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Moonlight | `we stuck in la la land even when we win we go...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Money Cash Hoes | `i spits the game for those that throw bricks` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Money Ain T A Thang | `said she loved my necklace yeah started relax...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Moment Of Clarity | `see in my inner circle all we do is ball til ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Moment Of Clarity | `i dumbed down for my audience and doubled my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Miss You Remix | `pun we missing you` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Minority Report | `and the commander in chief – just flew by did...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Meiplé | `champagne spilling out of my oui oui wee wee` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Marcy Me | `reek of coca leaf in my past came through the...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Marcy Me | `think i just popped up in this bitch like a f...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Marcy Me | `marcy me streets is my artery the vein of my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Marcy Me | `i m talkin bustin off the roof uh hold a uzi ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Made In America | `sweet baby jesus ooh ooh ooh ooh ooh ooh ooh ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Made In America | `sweet king martin sweet queen coretta sweet b...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Manyfacedgod | `eating sundaes` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Lucifer | `hope you been reading your psalms and chapter...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Love For Free | `and baby girl if it s hammer time then hide y...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Love & Life Intro | `jay go first and then mary go round` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Lost One | `my nephew died in the car i bought` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Lobster & Scrimp | `yeah c mon from the gutter to the rich from h...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Living So Italian | `not bad for a mulignano y all know like we kn...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Light Up | `and since no good deed go unpunished i m not ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Legacy | `i remember like listenin to wu tang and nigga...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | La La La Excuse Me Miss Again | `please excuse yourself you re very sick` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | La La La Excuse Me Miss Again | `sick with the pen nigga no physician in the w...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | La La La Excuse Me Miss Again | `have you in your long legged life ever seen a...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | La La La Excuse Me Miss Again | `don t confuse me with marbury out this bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | La La La Excuse Me Miss Again | `you can t see me dog; nigga ya cb4 this ain t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | La La La Excuse Me Miss Again | `then i moved the weight like i m oprah son` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Kill Jay Z | `you walkin around like you invincible you dro...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Kill Jay Z | `let go your ego over your right shoulder your...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Justify My Thug | `which is why i ain t never played myself` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Jungle Remix | `especially when your own country treats you l...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Jigga My Nigga | `see i scramble with priests hustle with nuns` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Jay Z Freestyle Intro | `if a nigga told you hov got hit in the head w...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Jay Z On The Breakfast Club Power 105 1 | `envy: when you see him hit his head on that s...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Jay Z Blue | `high on life i could die from the fall imagin...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Ll Be | `never settle for less i m in excess not inexp...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Izzo In The End | `cops want to knock me d a wanna box me in but...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Izzo In The End | `used to dribble down in va` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Izzo H O V A [Mtv Unplugged] | `cops want to knock me d a wants to box me in ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Izzo H O V A [Mtv Unplugged] | `used to dribble down in va` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Izzo H O V A [Mtv Unplugged] | `for shizzle my nizzle` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Izzo H O V A | `cops want to knock me d a wants to box me in ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Izzo H O V A | `used to dribble down in va` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Izzo H O V A | `for shizzle my nizzle` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | It S On | `we slay niggas wit k s we the drama men` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | It S Murda | `i dip squat then post up with the toast up` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | It S Like That | `last nigga that fronted two shots spun him ar...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Is That Your Chick The Lost Verses | `cool out homie` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Intro Hand It Down | `peep the steez i represent for all those with...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Intro The Dynasty | `this is food for thought you do the dishes` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Imaginary Player | `yeah i mean like i gotta be like the pioneer ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Imaginary Player | `that down south master p bout it bout it shit` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Illest Motherfucker Alive | `i don t even know what we doing here seems to...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Ignorant Shit | `and with that said i will kill niggas dead cu...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | If I Should Die | `i got de mands to meet and questions to fulfi...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Wanna Rock The Kings G Mix | `y all know my forte i just might catch a dope...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Shot Ya Freestyle | `get your hardhats professionals rockin nigga ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Love The Dough | `speak my name i ll make em dash like dame` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Love The Dough | `biggie be richie like lionel shit` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Love The Dough | `cats pop bottles bone chicks that favor idali...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Got The Keys | `i got a bag for lawyers like fuck your charge...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Don T Wanna Be Alone Remix | `cristal on the rider i got the big apple in t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Don T Wanna Be Alone Remix | `playa hater not at all i don t play those gam...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Do It For Hip Hop | `they say i m so low key i m socially awkward` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | I Do | `say i do i do i do i do i do so we can float ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hustlin Remix | `i got a honey bun no not a chick i got a hone...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hovi Baby | `rapper slash exec kordell stewart` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hova Interlude | `i m cancer to the hamptons` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hot Tottie | `and now that you arrived it s time that i go` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hollywood | `hey mister pay six a a list a you re in the m...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hey Papi | `i m letting her do her and in turn she s doin...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Heaven | `heaven or hell the cards we been dealt are th...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Heaven | `meaning i had baggage` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Heaven | `i m a motherfuckin prophet smoke a tree of kn...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Heaven | `he s 6 2 how the fuck he fit in a new bugatti...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Heaven | `arm leg leg arm head – this is god body` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Heaven | `have mercy on a judas angel wings on a ghini` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Heart Of The City Ain T No Love | `youngins ice grillin me oh you not feelin me ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Heart Of The City Ain T No Love | `i scramble like randall with his cunningham b...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hate | `i ll never be done i m so ra re` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hate | `rappers get nasty in the booth but i m grosse...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hard Knock Life Ghetto Anthem | `so i stretched the game out etched your name ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Hard Knock Life Ghetto Anthem | `and sip the cris and get pissy pissy` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Guns & Roses | `post positano hov hanging with bono u2 can li...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Guess Who S Back | `you can blame my old earth for the shit she i...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Green Light | `psycho like no bitch ass niggas don t wanna s...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Gotta Have It | `i m riding through your hood you can bank i a...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Gotta Have It | `oh shit it s just blacks on blacks on blacks` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Gotta Have It | `what s up what s up what s up what s up mothe...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Gotta Have It | `who gon act phony or who gon try to embarrass...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Gotta Have It | `i ma need a day off i think i ll call ferris ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Go Crazy | `y all ain t pull my coat yet and i keep my sh...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Give It To Me Laugh At Em Remix | `i diddy bop like diddy back when biggie cock ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Girl S Best Friend | `tricked a little bit shit i lace my boo fuck ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Girls Girls Girls | `she said all you need to know is i m not a ho` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Ghost Of Soulja Slim | `you mouth off for the cameras i make a silent...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Get Throwed | `sure y all niggas want war y all got it backw...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Get Throwed | `pimp c pa trill nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Get By Remix | `picture me working mcdonald s yeah yeah i d r...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Gangsta Shit | `this life will swallow you whole so get outta...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | God Did | `they was tired of me winnin now they dead sle...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | God Did | `i never wanted to be the state custodian come...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | God Did | `hov did` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | God Did | `i m now careful with the sentences them only ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | God Did | `some new niggas out of pocket talkin exotic y...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | God Did | `they said they don t know me internationally ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | God Did | `all this pain from the outside inspired all t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | God Did | `out the mud they gotta face you now you can t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | God Did | `next time we have a discussion who the g o a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Fuckwithmeyouknowigotit | `look at me i m pure nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Fuckwithmeyouknowigotit | `bad bitch she a masterpiece got a bad bitch s...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Fuckwithmeyouknowigotit | `not bad for a mulignan y all know like we kno...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Fuckwithmeyouknowigotit | `cent anni ciao bella` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Fuckwithmeyouknowigotit | `come money dance with the good fellas` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Fuck All Nite | `like i walk with a cane ain t no half steppin` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Free Mason | `hear me clearly: if y all niggas fear me just...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Free Mason | `all black diamonds times were hard woo` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Flux Capacitor | `visions of sugar plums for all the boys and g...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Flip Flop Rock | `a player stiffen the competition pressed like...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Family Feud | `ain t no such thing as an ugly billionaire i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Family Feud | `the kid that used to pitch bricks can t be pi...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Family Feud | `we all screwed cause we never had the tools i...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Family Feud | `yeah i ll fuck up a good thing if you let me ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Face Off | `love the dough` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | F U T W | `don t be good my nigga be great` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Ezekiel S Wheel | `they say it was gon never happen but i surviv...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Excuse Me Miss | `gotta throw on ya scooby doo s; those are sho...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Entrepreneur | `for every one gucci support two fubus` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | D Evils | `she said the taste of dollars was shitty so i...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Déjà Vu | `flow blow what s the difference one you take ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Drunk In Love Remix | `we too wild won t turn down` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Drunk In Love Remix | `we fuckin all over the house girl we just mes...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Drunk In Love Remix | `woo you will never need another lover woo cau...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Drunk In Love Remix | `if you ain t on site then you on skype` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Drug Dealers Anonymous | `bitch i been brackin since the ‘80s` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Drop It Like It S Hot Remix | `snitch as they may they can t get the boy the...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Dream On | `my vision was big enough to get me out of the...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Dope Man | `exhibit a: reasonable doubt they say this was...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Don T You Know | `don t you know when you re defeated young pun...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Dirt Off Your Shoulder | `i can run it back nigga cause i m straight wi...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Dig A Hole | `i m like air lil shots go through me won t te...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Diamonds From Sierra Leone Remix | `let me handle my business damn` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Diamonds From Sierra Leone Remix | `you know the next question dawg yo where dame...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Diamonds From Sierra Leone Remix | `see a part of me sayin keep shinin how when i...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | December 4Th | `shawn carter was born december 4th weighing i...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Dead Presidents Iii | `cause he was on the block where no squares ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Dead Presidents Iii | `see in my inner circle all we do is ball` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Dead Presidents Iii | `get it i was kneadin this dough` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Dead Presidents Ii | `roll like monopoly advance` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Dead Presidents Ii | `but until then i keep the trilliant cut diamo...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Da Graveyard | `i want these bitch motherfuckers to try to fl...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Da Graveyard | `so all you new jacks kickin wack raps it s a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Crown | `[intro: sizzla] they can t keep a good man do...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Crown | `shit on me these niggas tried to shit on me i...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Crown | `you already seen me turn a man to a goat` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Crown | `i make my roof get ghost` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Crown | `you already know what i could do with the cok...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Crazy In Love | `a star like ringo` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Computerized | `[produced by daft punk]` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Computerized | `my current feels just like my exes different ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Computerized | `i told her welcome to the future that s just ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Computerized | `i can t even tell y all whats real i got an i...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Come And Get Me | `i remove your roof nigga let the sun shine in` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Change Clothes | `or that b b c shit or it s probably tailored` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Caught Their Eyes | `they eyes hide they eyes high hey my eyes wid...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Cashmere Thoughts | `you know the black got white china in the bra...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Cashmere Thoughts | `you been warned cause all beef return well do...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Cashmere Thoughts | `i m solid gold i rap like a mink stole` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Can T Knock The Hustle Family Affair Mtv Unplugged | `yo lunching punching the clock` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Can T Knock The Hustle Family Affair Mtv Unplugged | `50 gs to the crap shooter y all can t fade me...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Can T Knock The Hustle Family Affair Mtv Unplugged | `shopping sprees cop in three deuce fever is s...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Can T Knock The Hustle | `yo y all niggas lunching punching the clock` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Can T Knock The Hustle | `50 g s to the crap shooter niggas can t fade ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Can T Knock The Hustle | `shopping sprees cop in three deuce fever is s...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Can T Be Done | `now it s back to the hood again all black hoo...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Can I Live | `i keep my head both of them where they suppos...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Brooklyn S Finest | `stay out my way from here on clear gone uh` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Brooklyn S Finest | `yeah i rhyme sick i be what you re tryna do` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Brooklyn S Finest | `take that wit ya` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Brooklyn S Finest | `rolex and bracelets is frostbit frostbit ring...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Brooklyn High | `this ain t about boroughs this is about nigga...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Brooklyn High | `i m ballin for real you pump faking it` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Brooklyn Go Hard | `but if a man test my stuy i promise he won t ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Brooklyn Go Hard | `fear no orangutans` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Broken English & Drug Sellin | `putting my ass on the line like a trapeze art...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bring It On | `mano a mano` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bring It On | `money make the world go around so i made some...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bring It On | `do the knowledge due to few dollars i m due t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Breathe Easy Lyrical Exercise | `suckers get your weight up uh not your hate u...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Breathe Easy Lyrical Exercise | `and my interviews are hotter` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Blue S Freestyle We Family | `fuck embargoes i m a narco` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Blueprint² | `let s get to the proceedings preceding this e...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Blue Magic | `d a wanna indict me` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Blue Magic | `whip it around it still comes back hard so ea...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bitch Don T Kill My Vibe Remix | `so many washed up with detergent but i don t ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bitch Don T Kill My Vibe Remix | `between you and me turn eulogy to urinals nig...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bitch Don T Kill My Vibe Remix | `i got a p89 in a suitcase` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bitch Don T Kill My Vibe Remix | `i look at the game and see porn there i m fuc...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bitch Don T Kill My Vibe Remix | `go get me a knife you re looking like steak a...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bitch Don T Kill My Vibe Remix | `this courtesy of compton courtesy of compton ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Big Momma Thang | `take it in the butt yeah that s wha` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Big Momma Thang | `[verse 3: lil kim]` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Beware Jay Z Remix | `i m on my eighth summer still hot young s the...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Beach Chair | `my physical s a shell so when i say farewell ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Beach Chair | `for the sins of a father so i barter my tomor...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Beach Chair | `i don t know why we here since we gotta be he...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Beach Chair | `and so you won t lose scent i ll make a stink...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bam | `i ll line you all up with one finger wave` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bam | `i pressed ahead of your team with one finger ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Back In The Day | `jay z s for president i m namin ra as the nat...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bbc | `real niggas all feel the hook` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bbc | `from the coca leafs to the farmers` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bbc | `mace niggas at madison square garden` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bbc | `mcm seats buck 50 stitch` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bbc | `cuban link 5 kilo` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Bbc | `your life is illegal when your chain can get ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | B2K Freestyle | `plus real estate in miami is highway robbery ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | American Dreamin | `for now i m just a lazy boy daydreaming in my...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | American Dreamin | `cause y all ain t fucking with me the ironies...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | American Dreamin | `i wish you wheels i wish you wealth i wish yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | American Dreamin | `they say its celestial it s all in the stars ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | American Boy Live At Glastonbury 2008 | `london bridges are falling down not bridges b...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | American Boy Live At Glastonbury 2008 | `our family – jewelry i mean ‘cause my jewels ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | American Boy Live At Glastonbury 2008 | `quick run before the tabloids come run from t...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | All I Need | `from blowin swisher sweets outta candy drops` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Ain T I | `and i been this god made me y all hate me y a...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | Adnis | `who would ve thought i d be the dad i never h...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | A Week Ago | `i ran to the spy store to add some more featu...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | A Star Is Born | `my reign lulu s son shine` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | A Star Is Born | `standing ovay ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | A Star Is Born | `prez carter watching her get her monica on al...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | A Million And One Questions Remix | `now you see me on them stages rocks in the ai...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | A Million And One Questions Remix | `i slow flows y all to death so y all hoes kno...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | A Million And One Questions Remix | `i m the question and the answer like iverson` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | A Dream | `i agree i said my one of a kind self getting ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | A Ballad For The Fallen Soldier | `get you locked in a hole won t see the light ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 9 11 Freestyle | `and no i am not a christian though i believe ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 8 Miles And Runnin | `eight miles and runnin` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 4 Da Fam | `drug chemist thug nigga be named memphis stra...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 30 Something | `i know you re like fuck this is child abuse c...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 30 Something | `you ain t got enough stamps in ya passport to...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 3 Kings | `80 pair of sneakers came from the d game cous...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 3 Kings | `fuck a gym i am him andre young` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 22 Two S | `i dip spit quicker than you ever seen` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 22 Two S | `no question; jay z got too many answers` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 2002 Funk Flex Freestyle Back From France Freestyle | `took the best of both worlds minus the madnes...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 20 Bag Shorty | `relatively easy like jerry heller` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 20 Bag Shorty | `no more reasonable doubt i ve proven to be th...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 1999 Westwood Freestyle | `of my cds pac and biggie face and juvie looki...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 1999 Westwood Freestyle | `this wristband over my forearm the jordan of ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 1999 Westwood Freestyle | `no kids but trust me i know how to raise a gu...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 100$ Bill | `i need a hunnid bricks on them hunnid blocks` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 100$ Bill | `you re all welcome new malcolm of the talcum` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 100$ Bill | `new heroines new marilyns move coke through m...` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 100$ Bill | `yellow cars yellow gold like slick rick` | Mined candidate without confirmed wordplay or second reading. |
+| Jay Z | 100 Most Influential People In The World: Jay Z | `he even put a ring on beyoncé` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | 2Am | `baby please don t turn me to a loner` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | 392 | `yeah i m a shooter but don t gotta shoot it g...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | 4Am Flex | `me and the homie pull off the corner inside o...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | A Fools Tale Running Back | `had her in the sheets finna cut her like a dj` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | A Woman | `and to think i walked a thousand miles` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | All Away | `bitch is a dime a dozen i get dimes by the bu...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Anymore Fuck Boy Intentions | `i m buyin vvs diamonds for all of my kin` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Anyway | `wap up in my pocket that s the fetty way` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | August 19Th | `i feel like i got mob ties the way i made for...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Balenciagas | `i m a a1 nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Big Tipper | `i ma hit it then we practice social distance ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Blue Jay Season | `you hit my bitch i fuck your girl that s how ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | City Boy Summer | `just got that ass did now she can t even boun...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Cold Hard Love | `you know i love you like a bow and arrow cupi...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Collection | `if i fucked you once you part of my collectio...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Cypher | `bout to go ham you niggas just kosher` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Dance For Me | `go to b town all these brown boys start to lo...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Deceiving Eve | `adam and eve i know they wish they never did ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Deen & Ab Sga | `they try to lil bro me like baby hykeem` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Diego | `[prod by mr punisher ozhora miyagi play picas...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Don Queen Don Q Diss | `pussy gotta keep a gun on his waist ‘cause yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Drifting | `i m overseas trippin a million miles away and...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Elevator Music Remix | `probably cause i can hit it and i m rich no k...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Extravagant Bullshit Nunchucks | `say she a masochist well come give your maste...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Fallback | `got a nina but i don t ever gas her though` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Feel Alive | `it s kinda hard saying shit to ya face so i d...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Forever | `i be smokin pussy like a backwood or i m raws...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Freaky | `she a scorpio and fuck me like a cancer like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Freaky | `better talk to me nice when you hit that nigg...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Free Me | `respect is like a pistol` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Free Tory | `i stayed gp never pc ed up nothin` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Free Tory | `b&es` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Free Tory | `gleeful like i m kodak whippin the gle` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Getcha Roll On | `i be like bitch don t kill my vex huh` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Grandma S Crib | `now motherfuck my po` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Guess What Intentions * | `show for you some sex drive` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Guide Me Through The Storm | `witchcraft` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | H E R Are You Dumb | `money is the motive` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Hate To Say | `my scent smells like michelle was touchin bar...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Hate To Say | `i remember us livin not too far from the junk...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | I Sip | `i m a player i just crush baby` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | I Told You Another One | `respect the shooters that said youngin go we ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | I Told You Another One | `landlord straight buggin roaches on the ceili...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Jokes On Me | `lawyer fightin cases for the team we got fort...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Juvenile Freestyle | `took the ttc just to get to old mill yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Lick X Drive You Crazy | `it s umbrellas on my sweater for bitches that...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Lick X Drive You Crazy | `used to be in low income now see the show inc...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Litty | `i marry nicki still married to money she rich...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Look No Further Lost Tapes 2016 | `i hit the avenue and grind for the cheddar fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Lord Knows Pt 2 | `ara don t make me call my nigga karo ara my a...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Lord Knows Pt 2 | `any time that my baby catch me with a chick i...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Memories Don T Die Freestyle | `i m left hooking and i m jab writin` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Memories Don T Die Freestyle | `and my joels all embiided and i m feeling all...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Mexico | `riding in my rental got a rover in my pocket ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Miss Me | `shawty let my man in baby we can call you eli` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Money Over Fallouts | `all i want is straight cash niggas say i lack...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Mucky James | `when all these racks on my finger they look l...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | My Salsa | `bonita oui viens avec moi allez viens bonita ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | My Shayla * Spice Rilla | `but every now and then i run into a robin giv...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | No More Parties In La | `party tnt there s no survivors` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | No More Parties In La | `me in v i p got me wildin` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | One Day | `yeah miami vice shit yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | One Night Lover | `i always been a boss i never spoke to lames t...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Pieces | `early her papa he was taken by the force` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Pierre Balmain | `she s looking like a fresco you know freshly ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Purple Swave Freestyle | `told me make it wet and i lake her o neal` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Rondo | `scum gang` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Racks To The Ceiling | `these niggas talkin hot i feel like a i with ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Rapture | `here today gone tomorrow like a snapchat for ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Rapture | `we became legends they was pushing acuras cuz` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Save It | `cause what i did was wack but you don t get m...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Say What S Ill | `i do things for shorties who s eyes blue but ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Selfish York University | `young girl runnin with the keys to my heart s...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | She Make It Clap Freestyle | `twenty one gats feel like i m savage` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Shooters | `i came in i just pulled up with the slab` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Sickening | `pour me up a four like i got a strep throat` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Speaking Tongues | `anywhere i go the buzz with me like woody` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Staccato | `i ain t on no bullshit this ain t no chicago` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Still Be Friends | `like i m adam sandler she call me big daddy y...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Take Shots | `french bitch from montana told her i ma shmur...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Talk To Me Nice Fargo Season | `you hit my bitch i fuck your girl that s how ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | The Run Off | `bitch i ball money tall like that bitch juwan...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | The Most High | `got a penthouse in d r and p r i call it ph b...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | The Take | `this dick is too big just to swallow it baby ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Them Days | `worst thing about it is i know that you could...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Thoughts | `i feel a spark oh` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | To D R E A M | `uh oh look at how these niggas tryna ho a you...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | To D R E A M | `it was all about the butter i ain t stutter a...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Tory Lanez 2017 | Funk Flex | #Freestyle086 | `got street ties with the street guys even if ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Tory Lanez Freestyle On Sway In The Morning Pt 1 2015 | `boom like retirement homes i bring them grams...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Tory Lanez | Five Fingers Of Death 2018 | `i m talkin violation my lil niggas out here r...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Whats Poppin Remix | `i got a check from the shoe company now i do ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Whats Poppin Remix | `whoop a nigga like i m batman nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Wishing Remix | `i ll be your mothafuckin genie in the bottle ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Wishing Remix | `shorty this gon be your favorite song` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Wraith Talk | `lemme talk my shit i told y all was gon be a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Wrist | `slit my wrist icy wit my fist` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Y D L R | `you look like mine forever mine forever` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Y D L R | `y all don t look right together` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Y D L R | `y all don t look right together y all don t l...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Y D L R | `y all don t look right together look right y ...` | Mined candidate without confirmed wordplay or second reading. |
+| Tory Lanez | Y D S Iggy Deldia | `wheels on the bus go round all day` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | 𝔉𝔦𝔯𝔢 ℑ𝔫 𝔐𝔶 ℌ𝔢𝔞𝔯𝔱 3 Fire In My Heart ˂3 | `dog ass hoes get them bitches off the carpet ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | 𝔉𝔦𝔯𝔢 ℑ𝔫 𝔐𝔶 ℌ𝔢𝔞𝔯𝔱 3 Fire In My Heart ˂3 | `dog ass hoes get them bitches off the carpet ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | 𝔉𝔦𝔯𝔢 ℑ𝔫 𝔐𝔶 ℌ𝔢𝔞𝔯𝔱 3 Fire In My Heart ˂3 | `big blood don t need no donor` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Iphone | `let her hair down like rapunzel` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | All I Know | `i gotta go through shit to keep writin` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | All I Know | `broke his jaw now he can t say nothin nothin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | All I Know | `all i know is i don t know nothin all i know ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Yell Oh | `another foolish child dares to trespass on th...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | World Boss | `huh yeah you know it s lil michael i feel jus...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | World Boss | `feel like gretzky slide with my ice` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Wizard 101 | `ain t no nobu for me` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Wizard 101 | `play with my name and i m givin ‘em pain i m ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Weeeeee | `she was off a x pill now she want e oh` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Topanga | `tr66` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Topanga | `big 14` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Super Cell | `i was gettin bread lil bitch i had to pick th...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Stoves On 14Th | `i hope these young niggas learn learn i hope ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Sickening | `pour me up a four like i got a strep throat` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Swag Like Ohio Pt 2 | `i ain t batman bitch` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Swag Like Ohio Pt 2 | `bitch i m brave and bold bold` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Red Hot | `slatt slatt yeah red hot yeah slatt slatt yea...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Rmp | `richard mille plain ooh richard mille plain w...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Poles 1469 | `scum gang` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Pegasus | `baby i m the one not the two abe lincoln` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Overweight | `i feel like modern day mozart don t touch my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Obito Really High | `in detroit with your baby ain t talkin bout s...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Obito Really High | `with sunny it s sunny we in guatemala` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | New Money | `woods` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Negative Energy | `i might just turn into my inner beast` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | M S | `she talking bout we gave her nintendo switch` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Murderman | `niggas really don t want beef like i m the fu...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Mood Swings | `got a big ar let it bang bang bang bang` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Molly Hearts | `off that molly water not no fetty molly don t...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Missing My Idols | `i grab a bible pray for my rivals` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Me Likey | `cause i m out the way uh way bitch i m mia uh...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Me Likey | `i just spent eighty on a ap yeah eighty thous...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Mp5 | `when you see me out in la just know i m balli...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Mp5 | `when you see me out in la just know i m balli...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Lucky Charms | `bitch i m in a tesla gotta charge the fuckin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Love Scars Pt 2 Rack City | `the chopper make roaches scatter fuck a huddl...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | It Takes Time | `sk rpk hk` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Goodfellas | `he from the shit i m a big poo ah i ma reach ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Forever Ever | `ap had to go and ice the whole face` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Free Rio | `gettin tired of you niggas michelin` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Excitement | `only in your ocean you call me ho seidon in c...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Elevate & Motivate | `in this game i m big dog you could say i m a ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Early Morning Trappin | `get shot i turn your ass into clip art yeah i...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Demon Time | `like zelda bitch i m tryna link tryna link` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Che Cazzo Ridi | `è tutto fumo e pubblicità è tutto fumo e pubb...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Che Cazzo Ridi | `vivo le notti che non so ricordare con person...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Che Cazzo Ridi | `ascolto ciò che il tg riporta non gli importa...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Can You Rap Like Me Pt 2 | `bathing ape face mask like these rappers got ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Black Ops Castro | `birds until we shoot up they lil nest though ...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Black Ops Castro | `t r triple six` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Black Ops Castro | `niggas ain t got no bars they data slow` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Bird Shit | `diamonds all up on me vvs the gang` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Big 14 | `goat` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Bando Kid | `these niggas not my blood` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Baki | `i like my kool aid tropical` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | Atlantis | `runnin up that bag run up that cash i m on my...` | Mined candidate without confirmed wordplay or second reading. |
+| Trippie Redd | 6 Kiss | `these niggas say they with it uh we gon harry...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | #Wheresthelove | `jaden smith` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | $Nitches | `niggas droppin dimes in the bags in the bands...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | $Nitches | `and we been working for it so hard best belie...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Blessings Reprise | `are you ready for your blessings are you read...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Blessings Reprise | `you ready big fella` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Body Language | `i know i had people in my circle but they wer...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Campaign | `kickin bitches out like barcelona shoutout me...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Church West Coast Remix | `flippin through the pages of the old testamen...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Don T Judge Me | `rollie flood the vvs` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Ego Death | `all these half way movements need a whole lot...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Father S Day | `and i m mob deep rip prodigy` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | For A Real 1 | `let me ddp in your vagina` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Full House | `got a full house so my whole team straight` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Good Pussy | `i pull up on your bumper like beep beep` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Hope | `come fuck with a stoner and get stoned` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Hurricane Young Thug & Ty Dolla $Ign Version | `dropped the wave runners now we run the wave` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | I Won | `ten weeks i ve been top tennin` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Impatient | `still dippin through the city with the top do...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Impatient | `heart shape and i love that` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | In Some Trouble | `bridge: vic mensa` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | It S A Vibe | `gas in a ziploc now that s loud and clear` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Juice Remix | `tgod` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | La | `thug life` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | La | `i m gon liquor shot in memory of pac makaveli...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Leave Me Alone | `sometimes you gotta pop out and show these ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Like A Drug | `your love is loud i m high as shit i m high a...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Link Up | `cause its a rude bwoy link up` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Melrose | `rockstar we ain t never no punks uh` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Melrose | `spent a hundred racks tryna get home puss` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Melrose | `rockstar from the hood i got a gun and a rose` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Made In China | `our love was made in china` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Money Showers | `i make it rain on them hoes i got that amber ...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Mosh Pit | `i be on that heavy metal wave and that rock s...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | My Flag Da Homies | `middle of july i m just tryin bring a maybach` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Next To It | `but nigga i ball like soccer next to it` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Next To It | `ain t get here by myself lot of help next to ...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Nothin Like Me | `ohb l k only ballin woo` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Otw | `you was in park but i just put your shit in d...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Off Of It | `turn it up the dj nice` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Only One Demo | `hello my only one mm just like the mornin sun...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Over | `i m a king in despite all the things i m arou...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Party For Me | `yeah it s a party on a boat somebody make som...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Party For Me | `blue cups only call up all the homies` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Play No Games | `killed the pussy had to hit that shit like ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Post Up | `head in the rari that s how you blow a hundre...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Pu$$Y | `and baby girl you know what it is don t gotta...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | She Know | `whole meal plus tip brr` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Sit Down | `heartbreaker y all all petty` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Sit Down | `go ball eddie` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Sit Down | `i ll get it on top like a header that s word` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Sit Down | `lil hoe with them dreads wanna go make whoopi...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Sitting Pretty | `forgiatos on the whip skrrt that be sitting p...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | So Good | `one little taste will have you open` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | South Beach | `word to this bust down that i don t trust her...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | South Beach | `bnyx` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Stand For | `said i stand for my niggas doin life oh yeah ...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Stand For | `i stand for my niggas i ma ride for my niggas...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Stand For | `nigga i stand for yeah never seen me on the s...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Straight Up | `meet me at the bar in your white dress meet m...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Summer Reign | `i did shows around the globe and never took a...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Twitch | `ayy get bread like the last supper` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | That S Right | `bay boy got the mouthpiece of a con artist ye...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | They Know | `you won t beat me or see me whinin` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | They Know | `i pull up in that truck pull up in that truck...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | They Know | `drink codeine for mornin sickness` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | To A Boss | `i m a all out boss sitting with a new bmf i y...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Track 6 | `[verse 2: anderson paak & ty dolla $ign]` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Track 6 | `no long no long emails no long text no long t...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Trust Me | `i m on top lil bitch gimme props gimme props` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Try Me Remix | `i put that on pun` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Veggies | `if i m being blunt i really wanna fuck emily ...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Westside | `i used to listen to that chronic now i m blow...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Wheels Fall Off | `wheels fall off` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Whip It | `i got this shit on lock down like murder eigh...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Wonderful | `that shit s cray the way she drop it low and ...` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Work From Home | `put in overtime on your body` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | You And Your Friends | `it s you and your friends me and my dogs` | Mined candidate without confirmed wordplay or second reading. |
+| Ty Dolla $Ign | Safety Net | `you know we hit that jewelry store and we gon...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Young Nigga Dreams | `looking scary in that ghost when i ride by` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | You Don T Know Bout It | `can t call it like a dead line` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | You Don T Know Bout It | `my nigga moved so much britney spears they ga...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | You Don T Know Bout It | `call her my little ghostwriter she help me co...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | You Don T Know Bout It | `real nigga by myself kevin hart with it all d...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ymcmb Mmg | `we selling white girl getting christine money...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Willy Wonka | `had to go the harder way to get it like timot...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Who You Re Around | `b h we straight that was the motto my nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | What S Free | `judge bangin that gavel turned me to slave fr...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | What S Free | `that s a cc e copy` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | What S Free | `on god it s off the head this improv but it s...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | What S Free | `in the land of the free where the blacks ensl...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | We Did That | `cause she wide open like cvs` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | War Pain | `official only respect official and you are no...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Wanna Know | `you really sweet i call you buttercup` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Versace Freestyle | `cause the g55 got a hell of a view` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Uptown Vibes | `never told even through the ups and downs nig...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Type Of Way Official Remix | `when you the shit gon be some flies i just mi...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Turn Ya Back | `all my niggas turned they back they turned th...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Traumatized | `i rose from the jungle like derrick` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Trauma | `ain t no ptsds them drugs keep it at ease` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Trauma | `it say that we legally slaves if we go to the...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Trauma | `they shot that boy twenty times when they cou...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Trap Vibes Summer Sixteen & Panda Remix | `put my name on the flyer all the trappers all...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Top Lookin Down | `nigga we lit i m in m i a` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Time | `i got six watches i m ahead of time` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Tic Tac Toe | `and we goin back to back huh` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Tic Tac Toe | `pockets on fat big pun big bag` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | They Don T Love You No More | `if i feel threatened i ma go and get a ladder...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | They Don T Love You No More | `niggas talkin down on the crown watch them ni...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | The Trillest | `it s a sad saying when you make money it make...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | The Motto Freestyle | `all i know is yolo yolo` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | That S My N**** | `sippin that motherfuckin ds2` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Talk To Me Nice | `she got a drac too swingin like it s the trun...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Talk To Me Nice | `been had a fifty clip he wasn t on my second ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Stunt | `what you know about that i m balling like leu...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Stay Woke | `i m screamin out at your corner nigga that s ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Stay Woke | `i used to wanna play like randall and be an e...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Started From The Bottom Freestyle | `you gon need a green card for the cuban link ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | So Sophisticated | `put yo dick in the dirt now you decapitated` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | So Sophisticated | `i m the hottest and these other niggas coolin...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Shout Out To The Real | `cause i get paid for reading scripts been get...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Shout Out To The Real | `bet that all my niggas ball like i m mr clean` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Say It To My Face | `think you a g get hit right with the k` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Running Rebels | `lyrical assault they charge me without the ba...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ride Wit Me | `but i ain t trippin yolo nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Rich Porter | `36 up in the pot like what you cooking nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Repo | `nigga i be goin h a m till the pig gone` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Repo | `broke nigga we should put you in a bodycast r...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Real Niggas Come First | `but i spit that raw shit it s like i sell cok...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Real | `ugh shit i ain t braggin i don t boast but wh...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ready Or Not | `the meek shall inherit the earth so i ma own ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Rack City Remix | `i be ahead of these niggas last king guilloti...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Rack City Remix | `she ain t write like them old rap city skits` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | R I C O | `i come through my block like i m rico poppin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | R I C O | `i m talking that cross you that fade you four...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | R I C O | `meek milly cause we in the field with them bi...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Power Circle | `stone me throw me a pile of shit but you won ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Power Circle | `‘til the last gavel drop we gon have it locke...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Power Circle | `look inside the eyes of the last mohicans sur...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Power Circle | `guess it s a wrap when your co defendant make...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Power Circle | `ricky madoff everything i deserve` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Philadelphia Born And Raised | `niggas beefing over cheese like ishkabibble` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Peta | `nigga you balling on rookie rookie this shit ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Peta | `uh they was wondering what meek d do` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Perfectionist | `get the dirty money clean it all up at the la...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pe$O | `pyrex from pedro` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pay Me | `depuis ça a changé va me chercher à manger` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pandemonium | `that boa shit we get paid with death over dis...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pandemonium | `armadillo cigars` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pandemonium | `they say i m special as devin hester on fourt...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Pandemonium | `flyest niggas out here period no maxi pad` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Outro Dc4 | `i cut the brick like its cards and i shuffle ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Offended | `rocks on the chain like the rocks that i slan...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ooouuu Remix | `we was tryna make it out them trenches you di...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ooouuu Remix | `ain t no more coppin pleas it s on sight now ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | My Nigga Remix | `catch you at the red light have em screaming ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | My Nigga Remix | `c c catch me out in collins screaming money a...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | My Audemars | `that bitch be shining thunder up i call it kd` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Monster | `but we started from the bottom we was selling...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Monster | `i put my jeweler on his feet on his feet hund...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Moment 4 Life Freestyle | `cuz they change like the weather when you wak...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Moment 4 Life Freestyle | `and i ain t met a nigga yet i would ve made m...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Migo Dreams | `you next to tell put your chirp on woo` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Meek Mill 2016 | Funk Flex | #Freestyle017 | `living this nightmare they telling us dream l...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Meek Mill 2016 | Funk Flex | #Freestyle017 | `finna go banana like the k clip` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Meek Mill 2016 | Funk Flex | #Freestyle017 | `riding down broad street i m in the bach agai...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Meek Mill 2016 | Funk Flex | #Freestyle017 | `mixed the balmain with the bape shit i ve bee...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Maybach Curtains | `through the fire i stood knowing we would rei...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Mmg The World Is Ours | `i put mirror tint all on the ghost i m scream...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Mmg The World Is Ours | `but now i pull up in that thing them niggas g...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Mmg The World Is Ours | `here we are the world is ours` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Love My Team | `pull up in that black thing phantom of the op...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Love Forreal | `tryna rise above poverty that s why i m trapp...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Love Don T Live Here | `my friends and the women like my money just b...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Litty | `i marry nicki still married to money she rich...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Levels | `mob shit with more keys than a locksmith` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Left Hollywood | `where i m from if you turn eighteen then that...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Lay Up | `and like george gervin we lay up` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Lamborghini Doors | `now it s stones on my hands roberto durans` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Lamborghini Doors | `and before i had that bag i used to bag them ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Lamborghini Doors | `corners wanna check him like odell beckham` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Kendrick You Next | `they play pianos at your viewing let alicia k...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Jump Out The Face | `you see all them vv s jump out the face the v...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Jump Out The Face | `vvs cuts on my wrist suicidal cidal` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I M A Boss | `no love cry when only babies die` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I M A Boss | `og is one who standin on his own feet` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I M Not A Rapper | `ain t got no nine to five but u can get that ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I Ll Be Back | `dead in the middle of little italy no pun int...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I Ll Be Back | `ya moms will take care of the coffin robituss...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Indian Bounce | `i ain t never get a tat but i got philly on m...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | In God We Trust | `talkin high end guerillas banana clips make a...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | In God We Trust | `he done slaved in the field you the one on th...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | In God We Trust | `they hit his body he went in shock no pikachu` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ima Boss Remix | `and i got the gats gilbert arenas` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ice Cream Freestyle | `gets in gets out it like it s a robbery i cam...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Ice Cream Freestyle | `when i fell on the money they said that i fel...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I Feel Like Pac I Feel Like Biggie | `a paid thug nigga that s why shorty wanna be ...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | I B On Dat | `i don t believe em; they lying like leos` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | How We Roll | `off the highway and she trafficking marilyn m...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | How We Roll | `i started from selling o s now my bank accoun...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | House Party | `all my jewelry cold as fuck but i m a hot boy` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | House Party | `it s bottoms up but is going down` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Homie | `i be fuckin your wednesday crush i m with tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Hip Hop | `got the four five and the six call it cee lo` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Heaven S Afternoon | `hold up let me get a feel like jackson hold u...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Heaven S Afternoon | `scorpio freaks quantity gemini` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Heaven Or Hell | `just ask around bout the militia they malicio...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Hate Is My Motivator | `[chorus: meek mill] nigga stop your hating ge...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Good Day | `fuck with hollygrove it s gon be a holocaust` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Going Bad | `known to keep the baddest bitches on commando...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Going Bad | `dc ovo we back again we goin plat ooh ooh` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | G Season | `og nigga you can put it in the blunt` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | From Da Bottom | `i put this mac to your face like lip gloss` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | From Da Bottom | `you gotta watch for the hook like you stickin...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Fly Rich | `you in the club breathin neck to neck you nig...` | Mined candidate without confirmed wordplay or second reading. |
+| Meek Mill | Flexing | `porsche box like ali` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Wgft | `chorus` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Trio | `straight from the slum but can go cross the c...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Too Easy | `started talkin chinese from all these sticks ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Thought I Was Playing | `find out he ever stole i m choppin off his ha...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | The Time | `i could tell you bout the time i counted an m...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Prada Dem | `i m smokin on the scott coretta coretta` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | On One Tonight | `i m kickin p ah land on the jet with a bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Mop | `mop` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Missing Me | `patti labelle` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Livin Wild | `sometimes you gotta show you ain t no ho ain ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Idk That Bitch | `r stands for really rich i m in that cullinan...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | I Was Just Thinking | `i had to bake cake for the boy ‘cause he play...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Fukumean | `young gunna wunna back callin me splurge` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Fukumean | `bentley spur fly like a bird` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Fuck Witcha Boy | `take me a helicopter land in punta cana` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Flooded | `diamonds hit like they inmates in angola hmm` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Die In California Streaming Version | `watch out for opps watch out for cops they ki...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Ca$H $Hit | `clarity v s i see water` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Biting My Game | `i sell your bitch some good d i m a dealer de...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Back To The Moon | `yeah i know y all wun wunna put me on` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Back At It | `blow the dust off get it back crunk yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Back At It | `gervonta that boy out with a right jab i bet ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Alotta Cake | `she a cashew` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Yosemite | `know the coupe fast yeah when it end with an ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Yosemite | `vvss on me got my gucci shirt wet` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | World Is Yours | `they think i m racist my white gon be off` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Wit It | `yeah punch in this shit to record` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Verify | `but you know yeah he won t set you up for let...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Top Off | `we gang banging active gang banging active ys...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Top Off | `i can see now` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Tomorrow Til Infinity | `me and my dawgs headed to the sky pew cloud n...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Toast Up | `actin up` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Stuck In A Dream | `i got the ice on me drippin celine` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Start Wit Me | `i m like fuck the da` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Scarface | `i m in london with my slatts` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Scarface | `percocets got me like a zombie i need a pack ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Ready | `now i put a whole half a ticket on my white t...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Ready | `carats everywhere i m a rabbit` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Rackz Got Më | `i know you dig it bitch yeah i m a shovel` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Racks | `yslxo family til we dead oh` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Rockstar Bikers & Chains | `we pull up bullets rainin like rain rain` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Pedestrian | `vvs s bright they shine like lights ooh ooh` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Pass The Test | `jumping i m calling them jack` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Paranoia | `slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Outstanding | `ain t no shame that i hang with some snakes h...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Our Year | `4pf ysl yeah it s our year` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | On The Run Blood On My Jeans Demo | `wu tang we chasin the c r e a m` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Oh Okay | `you ain t my slime you ain t my slime` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Oh Okay | `ysl uber these jets these jets put em in some...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Oh Okay | `i got some vvss on my neck and my ears they r...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Oh Okay | `roll with my slime yeah that my lizard slime ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Numbers | `gotta be an antisocial gangster ‘cause the fe...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | New Hunnids | `want cream like wu tang wu tang` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Monday Through Sunday | `niggas more cap than g yeah these niggas like...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Martian | `i m a dinosaur rock the t rex` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | London | `la capone he all time all time` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Jimmy Choo | `playin they ll fuck round and fire the nigga ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Jimmy Choo | `most these rappers cappin i might need a few ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Insure My Wrist | `taurus` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Hot Remix | `i took the bentley coupe back then i hopped i...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Hot Remix | `had some good years ain t no way i get tired` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Hold Your Breath | `they locked my right hand up i ain t got much...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Heat | `all that ass for my ego` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Friday | `she havin` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Floyd Mayweather | `vvss hit off that g star v neck star v neck y...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Floyd Mayweather | `i m sellin purple rain r i p to prince prince...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Feefa | `glock 30 hollow tips` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Feefa | `get on one knee i prayed to the lord that he ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Fam Good We Good | `free my nigga slime free my niggas hind the w...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Emergency | `light his ass up burnin third degree ooh` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Eat | `i cop the plain jane ap cost 40 g s plain jan...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Drip Nation | `pj` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Dirty Shoes | `bought the rolls royce and came through bleve...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Diamonds | `every day she tell me i m the goat and what s...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Dollaz On My Head | `i got skeletons in my closets woah and they s...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Dollaz On My Head | `pull up with a stick i pull up with a stick` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Codeine | `i don t eat steak but i m ready for beef` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Chanel Go Get It | `been sippin this syrup i ma need a new kidney` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Chanel Go Get It | `slidin in the dm like a cha cha` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Car Sick | `vvs s in all of my jewels vvs s` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Car Sick | `i was born with all this drip i came out a fa...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Car Sick | `if i pop another tesla pill i ma be car sick ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Can T Relate | `there s flawless vs s inside of the face` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Cafeteria | `m w a music` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Cafeteria | `i like my women i like ah in two twos two` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Broken Homes | `i got me some cash and it doesn t fold` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Banking On Me | `young gunna wunna he chosen` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | At The Hotel | `til i m pale woah slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | At The Hotel | `woah slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | At The Hotel | `yeah if we slime then i m slimin you out slim...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | At The Hotel | `ap hublot for the time slatt so a ho can t wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | At The Hotel | `woah woah woah slimy slimy yeah we slimes sla...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Another Wave | `ysl takeover yeah this our year` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Almighty | `all of my bitches want vvs diamonds vvs diamo...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Ain T Livin Right | `but this shit real right slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | Addys | `drugs in my body i call up a venue he tell us...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | 5 Star | `yeah yeah it s your boy mr ez wider right her...` | Mined candidate without confirmed wordplay or second reading. |
+| Gunna | 223 | `rage edm like my bro dj carnage` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | 3 Way | `young nigga with an attitude that s why i fuc...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | All Work | `i m going straight to heaven crib big it s li...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Austin Powers | `everything gold i m a gold member six rings o...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Bagg | `jacksonville shawty my bitch drive a jag skrr...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Blonde & A Onion | `extended clips thirty thirty hollow tips fire...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Dat Recipe | `you should ve left me inna blind you should v...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Fugitive | `part of the city the nucleous` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | How Bout That Money | `how bout i been a king lord of the gold rings...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Kingpin | `just left florida with florida ki s` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Let Me See It | `caught a flight to la tonight we at aod cali ...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Old Ways | `now i just make millions might listen to some...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Rain Rain | `bullets rainin opps like [chorus: young dolph...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Rich Slave | `hah yeah i hate fame but everybody know my na...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Skerr | `whipping up that hootie and the blowfish i m ...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dolph | Starter Kit | `i am on so much green i can play golf wow` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | We Are | `you and i in that wraith retired my pimp supe...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Trust Issues Remix | `kick game run game run it real good but never...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | The 100Th Digital Short | `punched people before eating` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Runaway Love Kanye West Remix | `all my money tied in knots` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Roller Coaster | `roller coaster roller coaster spinning all ar...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Omaha Mall | `yeah we re in my world world` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Off My Face | `no words but we speak in tongues if you let m...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Never Say Never | `pick it up pick pick it up no pun intended wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Memphis | `never lie to you less i lie you down` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Memphis | `don t you take my grant it though for granted...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Memphis | `we one and one both one of ones and when you ...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Lolly | `kevin hart i got purple on the plane we smoki...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Ladies Love Me | `louis v high tops with the skinny jeans` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Ladies Love Me | `no limit to what i m spendin so i know she s ...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Ladies Love Me | `look at me now i said look at me` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Just Chill | `with all of my thank yous added up i still ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Juke Jam | `you had a nigga i couldn t stand him but when...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Hotline Bling Remix | `what do you mean it s not like that oh you re...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Holy | `wise men say fools rush in but i don t know a...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Hold On | `we all know i should be the one to say we all...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Heartbreaker | `sometimes love goes from sunshine to rain i m...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Falling For You | `i think i m falling for you i think i m falli...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Devotion | `and if you kiss me i might yell out halleluja...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Confident | `she the first mate when i rock the boat ah` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Church | `still rollin off the ketamine pills woah schy...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Bankroll | `say she wanna do it for a bankroll pull up to...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | Bankroll | `got dinner reservations out at boa yeah the c...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | As Long As You Love Me Acoustic | `i ll be your hova you could be my destiny s c...` | Mined candidate without confirmed wordplay or second reading. |
+| Justin Bieber | #Thatpower | `and i m lovin every second minute hour bigger...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | 679 | `and you don t want sauce no a1` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Again | `i don t give a fuck who cares tats on my face...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Again | `baby can you understand i m a young nigga liv...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Boomin | `smell the dope scent zoo we smoke cut` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Decline Remix | `tryna come up comin after me i swear that shi...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Fetti | `i play with fetty but my name ain t wap` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Hate You | `she know i m balling she wanna play too yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Island On My Chain | `rgf` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Klassy | `imma keep it real baby nigga try take her he ...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Like A Star | `and don t gas em without getty` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Like A Star | `every time i drop bitches like fml` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Like A Star | `hahaha you in the game i own my own game` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Merry Xmas | `i ma show you how to shine on them baby ay ke...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Merry Xmas | `anywhere you want i can take you there i swea...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | My Way Remix | `and he mad as fuck big zoowap all she sing ay...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Remaining Questions From Trap Queen | `answered` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | There She Go | `rollie with the diamonds but me and you is ti...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Westside | `rise like yeast raised on the east` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Whateva | `whole squad on the grind like a skateboard th...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | White Roses | `and if you break my heart then baby that s ju...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Young Niggas | `probably blowing sour cuz ain t nothing sweet` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Young Niggas | `cuz these niggas killing for the letter b the...` | Mined candidate without confirmed wordplay or second reading. |
+| Fetty Wap | Zoovie Zoo | `i do not skateboard but my whole camp grindin` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Joy Den | `kill you in a mcqueen s if i catch you lackin...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Vaccine | `all that free time got em lyin but i m too bu...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `ain t speakin to no opps even if my name was ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `in jail ain t smoke no paper route i hop out ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `in atlanta with them shooters thought i told ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `i was blind they never tried it come up from ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `know they thought i d be a bum them foreign c...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `airport been on my ass i had to start swipin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `e v i l turned it backwards and i told my nig...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `them boys gon walk up or run down either one ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `as long as i m on earth i ma keep buyin audem...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Hook | `cup up in my hand mix the lean with the tears...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Blind Nights | `lil joe can probably ride on snow he keep a s...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Blind Nights | `how i got water like a ocean they ain t see t...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Blind Nights | `walk with guns on they side no sidewalk they ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Blind Nights | `all my niggas gone they poppin percs like the...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Blind Nights | `these shoes ain t got no laces how the hell t...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Blind Nights | `tryna ban me from my hood the hell is a drum ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Blind Nights | `all my shoes came with snake when i walk i le...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Blind Nights | `pull out that pussy like driveway never leave...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Tight End | `for my darkest times i just go buy breitlings` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | So Lost No Promises | `i gotta keep my head up can t be starin at th...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Same Thing | `i don t get on elevators everybody round me s...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Same Thing | `domestic violence on codeine these drugs real...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Dna | `tote clips that s in my dna that mean we do n...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Dna | `i feel just like i m aaron donald i m tryna g...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Painless | `even if this shit cost yo whole hand we gotta...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Dehydrated Love | `can t find this keyboard i m a whole differen...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Dehydrated Love | `put that money in the wall forever i m a lege...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Pain Show | `nigga it s death behind this jewelry and my d...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Pain Show | `a nigga still on top the game like i m tracin...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Mistake | `gotta off all these niggas i m on` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Mistake | `this how i live i ain t saving no pictures i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Mistake | `i see them niggas they runnin like hillary th...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Mistake | `my niggas can t hoop but they stand in the al...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Freeghetto | `ain t going for nothing stand back and catch ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Mr Crawford | `in the midst of chargin my career some niggas...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Mr Crawford | `thinkin bout my past it was incomplete ayy ay...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Mr Crawford | `drinkin houston come from rula i get higher t...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Mr Crawford | `not lookin forward to your presence but a you...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Anymore | `i m with atlantic but them sticks got intersc...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Audemar | `hold you down every season even in fall shoul...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Audemar | `can t sleep i m napless got a thousand dollar...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Audemar | `i m telling her that i don t need a pen i wri...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Audemar | `i put my brain on the menu now my mind on mil...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | November 14 | `ain t feeling these niggas ima fuck around an...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Check For Yourself | `act like it s one hunnid and they ain t dawg ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Pacon Last Day Out | `i got a short bitch she look like nia long` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Lean On Me | `this shit somethin like the music app you spi...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Rich Criminals | `ain t talking lohan these designer lenses` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Radar | `in la with four friends this shit like luke w...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Drown In My Styrofoam | `i m so quick to drop my shell this glock chea...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Baby Drake | `no it s not semen on the money but the cash c...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Baby Drake | `she in booby trap until it s nine in the morn...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Standing On Lies | `skippin school now them boys tryna get home w...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | I Can T | `muhammad i dish out hits on hits` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | I Can T | `i drive them same cars i was pointin at like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Flies | `if i air this bitch it s goin flat like i m t...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Flies | `that shit tatted on my face i just love hater...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Deadicated | `ride around with dracs that leave you stiffer...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | No Jewelry | `like derek we hope the narcs don t raid us ah` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Holster Remix | `got on all this muhfuckin jewelry in exchange...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Holster Remix | `is it any love for an addict if not then i ll...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Purple Tears | `bought a condo by the ocean cause i never see...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Ftw | `gave that nigga slim a couple pints when he c...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Dead Faces | `i blocked her seven days because her head was...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Went Deaf | `known to spin it with my dogs then we flee` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Rap Dreams | `ice cubes on me shining nothing easy bout it` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Rap Dreams | `aye please don t say what i won t do i ll jum...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Rap Dreams | `like josh allen wanted bills since i was 17` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Rap Dreams | `please don t say what i won t do i ll jump of...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Hurt Me | `and if her name was helen keller we fly overs...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Hurt Me | `i was way in oklahoma really hope you came so...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Evol | `i m losin friendships cause my diamonds titan...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Evol | `they barely with me i m gettin rid of teds` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Bankroll | `hope she got insurance i hit her from the rea...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Golden Tears | `do not use a pencil i m so independent` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Glasshouse* | `i m a young thug but i m rich homie` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | 5Am In New York | `i m so busy tryna beat the jury i swing on ic...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Nothing S Changing | `no credit for my wave they took the board and...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Nothing S Changing | `we so quick to burn him like he fell on a car...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Nothing S Changing | `we on they ass like wedgies` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Nothing S Changing | `cheddar the only thing i chase ain t no way s...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Time Speed | `insecurity girl let me get through` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Swiping Cards | `you try to check us walkin with my chest up` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | One More Summer | `this ain t court but i like how we bondin` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Kill Text | `i prayed and got a bond now my pockets full o...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | House Bigger | `my opps they hungry so what s up on the barre...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | House Bigger | `slide in that charger but we gon leave em dea...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | House Bigger | `give em thirty like stephen and i let hot dig...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | House Bigger | `don t care if he a fish that boy get no hook` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | House Bigger | `bad bitch she look like rubi rose she get no ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | House Bigger | `ayy savage but i been moving swift just like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Shots Fired | `i let the neighborhood wear this watch` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Shots Fired | `i never drunk no wine damn but i still ride a...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Very Special | `give ‘em halo s i m talkin till the case clos...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Very Special | `if i m in the club then that bitch in the car...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Very Special | `lean in my cup this ain t champagne but we bo...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Shark Tale | `i know some niggas who was in front and didn ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | 200 Or Better | `every song that they hear they say it s one o...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | 200 Or Better | `wasn t nothing in my piggy bank i spent a tho...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Dismiss You | `like a rolex and some scissors niggas tell to...` | Mined candidate without confirmed wordplay or second reading. |
+| Nocap | Shackles To Diamonds | `sit at the house while i m rollin loud probab...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | 3Am On Glenwood | `shorty got that real jelly yeah petroleum` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | 7 Min Freestyle | `yeah gang gang nigga gang gang ayy niggas sni...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Atlanta Tears | `21 for l` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Atlanta Tears | `cut my hand off if i dap them niggas up i can...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Baby Girl | `put it in a bowl and whip it til it get hard ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Baby Girl | `yeah vvs bitch they doin a crip walk doin a c...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Bank Account | `keep that siggy with me bitch i m mad max you...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Brand New Draco | `big slaughter nigga big dagger in my face str...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Cup Full | `it s a red light pussy you ll get smashed on ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Cup Full | `i was sellin mid grade in middle school bitch` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Call Me Revenge Call Of Duty: Modern Warfare 3 | `g block don t play that 21` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Disrespectful | `nigga flooded out vvss flooded out` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Drippin` | `aunt jemima might be my mama` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Emergency | `light his ass up burnin third degree ooh` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Famous | `ridin in the foreign remember ridin on marta` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Gang Over Everything | `nigga hit me up i hit him up but i guess i wa...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Ghostface Killers | `on the couches tom cruise i ma make her see s...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Ghostface Killers | `trunk in the front top gotta slide woo ride s...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Ghostface Killers | `resurrect my life yeah cpr my pipe yeah` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Glock In My Lap | `givin out smoke my agenda 21` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Glock In My Lap | `partment so sweet threw a honey bun in it kee...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Glock In My Lap | `get your baby mama fore we bend her 21 hit th...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Glock In My Lap | `you pray on your knees i pray to my strap` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Glock In My Lap | `playin with the rock like i m jigga man` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Ha | `you ever try the squad we have you front row ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Hethen | `choppa with the 50 wicker make the bitch brea...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Immortal | `jab turn a lightskin pretty boy red 21` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Immortal | `people wanna say the stuff i say but they be ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Immortal | `you thought it was straight i got some chemic...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Intro | `whether from a savage land or a booming metro...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Issa | `issa ysl slime issa pde slime` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Issa | `issa 40 forty shorty issa 30 thirty thirty is...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Mad High | `savage sendin hits like a wise guy pew pew pe...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Mr Right Now | `make that thing sing like sade 21` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | My Choppa Hate Niggas | `went and bought a demon nigga just to burn ru...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | No Advance | `i scrapin the bowl with the fork skrrt scrapi...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | No Heart | `21 savage the cat with the mac` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | No Heart | `cause these niggas pussy and i m hard i turn ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | No Opp Left Behind | `free my dawg he not ink so why he in a pen` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Numb | `numb the pain with the money numb the pain wi...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Pop It | `you broke clock it clock it` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Pop It | `ass be shakin like it s jelly but this g lock...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Pop It | `crib look like the buckingham` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Real Nigga | `got them vvs s on me now got them vvs s on me...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Rich Nigga Shit | `i want all the money and the power` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Rich Nigga Shit | `used to ride marta now a nigga gettin head in...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Run Up The Racks | `in the hotbox yeah with a hot glock yeah` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Run Up The Racks | `nigga that s a trophy balling like i m kobe s...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Runnin | `all my bitches got bbls all my bitches got bu...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Still Serving | `bought a ap rose gold ap yellow gold nigga an...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Still Serving | `vvs s all on my wrist my nigga` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Where You From | `you go against this shit nigga you get the be...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Where You From | `i like robbin the niggas who flashin` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Who Run It Freestyle | `choppa like to crush a lot big pun nigga` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Whole Lot | `i jump up out that vert with an uzi skrrt` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | A Lot | `i pray for markelle cause they fucked up his ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | A Lot | `some niggas make millions other niggas make m...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | A Lot | `i don t want smoke i want cream` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | A&T | `i m so 21 i m so 4l play with this shit get r...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | All Of Me | `i got rich and opened more doors than a doorm...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | All Of Me | `see my shooter pescatarian but he eat up all ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Asmr | `i don t drink no liquor but i m smokin on mim...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Asmr | `i done did a lot in the streets and them fact...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Break Da Law | `i m 4l gang for l dawg and we got big rifles ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Break Da Law | `he savin hoes need a cape cape` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Just Like Me | `you got accounts but you don t hold yourself ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Monster | `put my hand on the bible i m still gon lie on...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | N H I E | `yeah i would never lie` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Née Nah | `battin out the 504 i saved her name as creole` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Née Nah | `rich nigga got my strap from tommy hilfiger 2...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Redrum | `put a lego in a stick it rat a tat pussy` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Redrum | `want it all i won t leave a breadcrumb bitch ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Redrum | `she got way more bodies than my old k old k` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Redrum | `marathon i really run the a run the a` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Sneaky | `i call the switch flip mode when it bust mhm ...` | Mined candidate without confirmed wordplay or second reading. |
+| 21 Savage | Sneaky | `stones in my ears colder than jermaine mhm` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Flip The Switch | `slipping through the cracks cause i m slimy i...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Lamb Talk | `designer clothes flex flex met gala carpet ho...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Lose It | `marlo s still trappin in them trap house` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Legends | `erd the leather like a biker` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Nothing Changed | `trap out the bando just choppin the chickens` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Over Hoes & Bitches Ohb | `it ain t nothin but a fade woo you know you l...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Rapunzel | `i ll look good for you yeah i m real good for...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Satchamo Freestyle | `always havin some oil bitch this drank from p...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Tony Starks | `zaza reap the spot up need a glass jar` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Tony Starks | `hundred racks too skinny we call it coi le co...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Tough | `sure as the good lord s up above` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Upscale | `yeah i used to be broke but i m rich now i kn...` | Mined candidate without confirmed wordplay or second reading. |
+| Quavo | Us Vs Them | `‘case your boy start hookin then i m jumpin i...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | 30 | `don t ask if i m gdk at all at all nah nigga ...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | 44 Bulldog | `or i call j r with the wesson grrt bah grrt` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Aim For The Moon | `i play with the check and it s blue blue` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Aim For The Moon | `welcome her to the party the afterparty s aft...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Armed And Dangerous That S On Everything | `pull up to td in i8 if we all getting money t...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Armed N Dangerous Charlie Sloth Freestyle | `i keep a smith n like stephen a picante` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Armed N Dangerous Charlie Sloth Freestyle | `all my apes on the loose loose ain t no tamin...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Bad Boys | `no you ain t gang i m big 092` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Bout A Million | `ain t no secret big 4l s them fuckboys know w...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Bout A Million | `twenty one i m a savage` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Brush Em | `you won t ever catch me broad day without it ...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Coupe | `gimme the loot purgin` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Defiant | `niggas watchin like the rollie` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Dior | `tell my shooters call me facetime woo for all...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Dior | `i ll make a movie like tnt grrt baow` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Dior | `glock 30 on me ask who really want it i bet i...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Double It | `finesse like corey` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Element | `every time she see me she wanna eat me hold o...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Element | `traded the ap told my jeweler patek it and it...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Exposing Me | `i order steak with my lobster skrrt i turn yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Fashion Chief Keef Demo | `get straight get straight to the cash to the ...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Feeling | `823 sanctioned` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Flexin | `niggas only respect you because your brother ...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Flexin | `nigga everythin k` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | For The Night | `c i p pop i wish that you could see us` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Foreigner | `christian dior` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Foreigner | `i m 823 yeah i throw up the set yo cig` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Genius | `richard millie a quarter i got time` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Got It On Me | `i don t make friends yeah i make bands want s...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Hawk Em | `big 092mlboa free nappy blue` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Hawk Em | `cause i got some black opps too baow` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Hotel Lobby | `092` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Invincible | `i pop a perc go retarded` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Invincible | `everything raw no edit edit` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Mpr | `wait it s big 092mlboa` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Make It Rain | `i treat his face like busta rhymes why you sa...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Mannequin | `boa` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | More Time | `red bottoms i m bleedin` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | More Time | `big woo know i m shooting them stars woo mama...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Ptsd | `digital dash i be switching lanes swtiching l...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Paranoia | `slatt slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Pop Smoke Freestyle | La Leakers Freestyle #93 | `for now i m givin hot shells like tacos big w...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Run Down | `i m in the double r shit look like a spaceshi...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Scenario | `big 092mlboa` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Top Shotta | `smackin niggas 7 eleven 7 eleven` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Woo Baby | `baby pop that pussy and everything but a perc` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Yea Yea | `i fuck with the bloods but i m crip huh no sh...` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke | Yea Yea | `i m big 092 nigga woo huh woo` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Big Paper | `mixtape cardi like i ain t a millionaire ha h...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Backin It Up | `lookin this good should be a sin you should c...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bartier Cardi | `i m from the motherfuckin bronx bronx` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bartier Cardi | `i like hot sauce on my chicken on god i pulle...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bartier Cardi | `bardi in a rari` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Best Life | `reach like bron james` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Best Life | `member my hands had ash like pompeii now they...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bickenhead | `i ma flex like a roid i m a ten she a droid` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Bongos | `my bd is a migo bitch your bd is a zero` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Dead | `they still mad that they don t play her in th...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Dinero | `ben and andy on a double date grant just hit ...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Dinero | `yo quiero yo quiero dinero ay yo quiero yo qu...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Dinero | `i just want my money chips guap and queso` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Dinero | `me and benjamín franco stay at the banco` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Errtime | `you somewhere on the water broke bitches must...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Gosha Remix | `dumb bitch give me dumb brain yuh` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Get Up 10 | `i went from rag to riches went from wic to li...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Girls | `i put this mac on your lips so pucker up mwah` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | I Do | `look broke hoes do what they can can good gir...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | I Like It | `me gustan boricua me gustan cubana me gusta e...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | I Like It | `eating halal driving the lam` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Imaginary Playerz | `ask rich y all need your ass whipped` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Imaginary Playerz | `striped like thom browne these bitches should...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Like What Freestyle | `blocks and money gettin spunt gettin spunt` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Like What Freestyle | `any l that i took come after ys` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Magnet | `a b c d e f g grr these bitches can t fuck wi...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Money Bag | `how you gon suck yo man dick with my name in ...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Outside | `i like kings too so baby let me meet lebron l...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Press | `mac to your face like contour brr` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Pretty & Petty | `i mean girl` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Pretty & Petty | `huh sweat me cause you bored just a big lap d...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Put It On Da Floor Again | `laughin to the bank` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Right Now | `my niggas wavy and got heart give u c lines` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Salute | `verse 1` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Salute | `‘cause they pickin it up yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Thotiana Cardi B Remix | `uh ain t got no time for no subliminals after...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Trophies | `sticks and stones we break bones all my knock...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Trophies | `birkies` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Trust Issues | `they sending shots but i swear it s all miss` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Trust Issues | `but it s not my fault when i shoot it s all n...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Wap | `beat it up nigga catch a charge` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Wap | `my head game is fire punani dasani` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | What S Goin On | `and i said hey yeah yeah yeah yeah hey yeah y...` | Mined candidate without confirmed wordplay or second reading. |
+| Cardi B | Wish Wish | `i know your mama taught you look both ways fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Idols | `4pf` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | No Sir Ski | `paperwork party rap niggas police ice t` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Luv The Tour | `sometimes feel like v i got my name just off ...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Luv The Tour | `i got a twin and ball for the six but ain t t...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | A And W | `white horns on top of my head it look like sa...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Free Shiest | `i m off them drugs i doubled up i feel like o...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Safe 2 | `i m gettin dizzy i nap on the plane went from...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Not A Drill | `keep that` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | One Of Them Ones | `soon as i hit we shilo sanders saw her in pub...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Amusing | `if i had a heart surgery the doctor d freeze ...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Gallery Dept | `you spill that bitch gotta pay the difference` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Gallery Dept | `oh you wan duck and hide i ma send them boys ...` | Mined candidate without confirmed wordplay or second reading. |
+| Veeze | Store Runner | `i ma get a ap and hold it up like shedeur` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | After Dark | `the whole city talk when i pull the titties o...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Backends Fasho | `put a lock on the door so the p ain t exposed` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Bodies | `she red like a pint i got racks in the bank a...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Code | `get you whacked detention em` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Code | `vvs you every color when these diamonds hit t...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Folgers | `strapped like derozan` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Legacy | `money to the racks so i lap em woo don t give...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Made Men | `no cape on bitch no i won t save her nah` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | No Sweat | `i take off inside her like rocket woah` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | North Star | `this is real rap offset sack em like warren s...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Red Room | `double up the cup with maple hoo` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Red Room | `now my mind goin brazy brazy got me feeling l...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Ric Flair Drip | `ric flair drip go woo on a bitch woo` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Ric Flair Drip | `going to the jeweler bust the ap yeah bust it...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Say My Grace | `we flood the field up for real we got rides i...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Say My Grace | `i m in a meditate state ever since we lost br...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Say My Grace | `why me god i need answers why why a young nig...` | Mined candidate without confirmed wordplay or second reading. |
+| Offset | Worth It | `it s a double r hearse lil mama you seein gho...` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Bad Luck | `talkin choppers i ma carry like mariah` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Chicken | `if they slip then we slide get wet up` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Pain Talk | `drillyk` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Pray 4Or | `way before instagram had them grams on me` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Purple Heart | `uh how he super crip he leavin bitches on rea...` | Mined candidate without confirmed wordplay or second reading. |
+| Sleepy Hallow | Winners In Paris | `uh she said she a savage she over twenty one` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | 100 Round Drum | `got shooters in the car i m in a hov` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | 711 | `i m shining just like the sun sun i m ballin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Bi | `got the double d s on the gen5 this bitch plu...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Bi | `pussy ass niggas be jackin the style with no ...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Bi | `when we smoke them lil pussies they turn into...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Gas Mask | `i brought my crew like i m terry ooh` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Geronimo | `suck on that dick for nothing for nothing i w...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Grandson | `nigga threw a thousand punches and still ain ...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | One And Done | `i m so ebk actin like nobody don t love me lo...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Ooh Ow | `my niggas [ ]` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Other Side | `i m a fuckin pisces but i got up on some leo ...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Pregnant | `i got cheese and sticks don t make a nigga sp...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Purple Umbrella | `i was always the outcast outcast you don t fe...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Ready To Eat | `put on they swimming trunks slide for me` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Show Off | `she my mini me everything that i say she gon ...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Soulja Slim | `drop the top on the coupe bitch i m real clum...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Trapezoid | `upside down crosses yeah yeah upside down cro...` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Waikiki | `nda` | Mined candidate without confirmed wordplay or second reading. |
+| Sahbabii | Waikiki | `[chorus]` | Mined candidate without confirmed wordplay or second reading. |
+| Future | 100 Shooters | `fifty mil buried in my safe that s a graveyar...` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Accepting My Flaws | `got franklins like aretha` | Mined candidate without confirmed wordplay or second reading. |
+| Future | After That | `them feds tryna throw me in the box i m like ...` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Ain T Livin Right | `but this shit real right slatt` | Mined candidate without confirmed wordplay or second reading. |
+| Future | All Da Smoke | `we had the bando goin crazy in the swat s in ...` | Mined candidate without confirmed wordplay or second reading. |
+| Future | All To Myself | `you singin it the loudest` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Back Of The Ghost | `you niggas ain t nothing but some punaany` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Because Of You | `all this coco chanel have a bitch cuckoo yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Black Jew | `servin fish scale china white` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Blood On The Money | `they try to give a nigga the chair i tell my ...` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Blow | `ludacris i m a legend so still drive in my ac` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Bosses | `king pluto king slime between us two we ll pi...` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Break The Rules | `a dope sale opens plenty doors fish scale wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Future | Call The Coroner | `nascar lamborghini when i m drivin` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | Undercover | `no i m never tripping baby i m not rude` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | Which Way | `i m way too b i g who shot ya` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | Tokyoto | `we gon cut off his tongue if we heard that he...` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | Safety Interlude | `i m playing spin the bottle with a whole pint...` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | Promo | `fn` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | Passenger | `i don t follow no one but i bet your main ho ...` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | Out The Box | `and my accountant say i m bool hit your accou...` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | Open It Up | `i m a rockstar like the fall out boys rocksta...` | Mined candidate without confirmed wordplay or second reading. |
+| Destroy Lonely | Ok What I Do | `i m on the ps5 bitch i don t play no games th...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Animal | `i got this juice like capri sun hah` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Blame It On Baby | `i get chicken no tender` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Blame It On Baby | `you play we gon pull up and shoot` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Bop | `i woke up couple mill on my plate let s eat` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Baby Sitter | `can t fuck with her she messy that s a hazard...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Ball If I Want To | `i told bae get twenty two inches of weave ton...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Blank Blank | `throw that rock in the air like i m jay z` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Dababy Freestyle | La Leakers Freestyle #076 | `i pull up with the bald fade like a cancer ah...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | For The Night | `c i p pop i wish that you could see us` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Lonely | `on your onlyfans you your only fan` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Pick Up | `slide on a nigga they drive through like wend...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Pony | `and i sold like 300 ps in my challenger no ca...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Said Sum Remix | `qc the clique we rich as a bitch` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Suge | `and that lil nigga ain t gon shoot shit with ...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Toes | `better not pull up with no knife cause i brin...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Tap In Remix | `flex so hard man i should be rocking tapout o...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Under The Sun | `ain t no job i m selling gas like i m jiffy l...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Under The Sun | `sawed off raw dog fashion` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Under The Sun | `this ain t no kennel behave niggas is with al...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Whats Poppin Remix | `i got a check from the shoe company now i do ...` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Whats Poppin Remix | `whoop a nigga like i m batman nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Dababy | Walker Texas Ranger | `if your boyfriend anything like daddy nigga g...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | What To Do | `fuck the club up still with my dogs` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Untitled Help | `i don t know why my vv s are shining shine i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Tuition | `the booty did jiggle like jell o yeah yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Too Many Nights | `i m talkin c notes nigga hit c notes` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Tell Your Friends* | `what i` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Tell Your Friends* | `what i got` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Tmu | `okay your birkin got some mileage take my ble...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Sweet Home | `i wanna be the one that you love yeah i wanna...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Slippy Slide | `don t short me on no ciggy i don t deal with ...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Scrape It Off | `from the cabbage i collect my boy` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Scrape It Off | `hundred karats on my neck` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Scrape It Off | `wash the dirty money with oxi` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Replace Me | `i m not your ex i m your ecstasy` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Replace Me | `i know that you believe in stars and just lik...` | Mined candidate without confirmed wordplay or second reading. |
+| Don Toliver | Recap | `fuckin with a brown boy like me girl gotta st...` | Mined candidate without confirmed wordplay or second reading. |
+| Yfn Lucci | Ammunition | `like a pawn shop thought i was with jay the w...` | Mined candidate without confirmed wordplay or second reading. |
+| Yfn Lucci | Ammunition | `you already know what s happenin hoe pull up ...` | Mined candidate without confirmed wordplay or second reading. |
+| Yfn Lucci | Never Worried | `told this bitch if she don t pay me i can t p...` | Mined candidate without confirmed wordplay or second reading. |
+| Yfn Lucci | Talk That Shit | `tryna get big like pun` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Big Business | `tear drops on my chain so sentimental` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Gucci Comin Home | `you can call up all the blogs tell ‘em gucci ...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Hollywood | `yes i m in the valley but i got no silicone` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Harlem | `only moola in my repertoire models in a lexus...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Harlem | `now i m major only catch me in latest she bee...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Harlem | `mine take it by the bundle like an al qaeda m...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Harlem | `i do the custom shit that you can t find ruge...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Harlem | `look i was uptown harlem one crazy night caug...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Harlem | `pa what s your favorite price my perico come ...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Harlem | `no time for being sentimental i wave a 40 out...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | London | `we see a opp it s g code we blow his top now ...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | London | `she go both ways so i m tastin the rainbow ha` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | London | `gold wedding ring on my finger but yet i m st...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | London | `dreamer dreamer runnin the game in my signatu...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Millions | `bling bling bling bitches is mad hahahaha` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Sue Meee¿ | `someone go and call up pardi cause we gonna b...` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | We On Go | `i m breaking hearts and i put em in chrome` | Mined candidate without confirmed wordplay or second reading. |
+| Bia | Whole Lotta Money Remix | `i just bent the block all these bitches wanna...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Brianna | `a bitch who four days late lookin ass nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Ex S Phatnall Remix | `i just start back makin love songs i nda em n...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Gomf | `why she be lyin like be in the gym we know th...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | March | `ridin with some yn s and some ar s` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Never Find | `ain t no bitch better oh and ain t no pussy w...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | No More Love | `last year i got pregnant but the mission got ...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Set The Tone | `it s the queen of the slimes queen of the dim...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Sticky | `i be gettin off like holiday man pull some pa...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Sticky | `pop that shit like i m poppin some gum who th...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Sticky | `poppin that shit get you hit quick fast mink ...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Typa | `love never knew what i was missin but i knew ...` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Whatchu Kno About Me | `big cmg` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Whatchu Kno About Me | `s s e x y y r e d uh` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Wanna Be | `i m the b a d d e s t` | Mined candidate without confirmed wordplay or second reading. |
+| Glorilla | Wanna Be | `i m mother and you know my trick is your dadd...` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | Baby | `we was in the hood sellin bags shootin choppe...` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | Ice Tray | `ap skelly fully frozen huh` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | Killin Time | `big bank take lil bank` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | My Dawg | `cash money like i m slim` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | My Dawg | `every time that i step i m bleeding` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | My Dawg | `i m a project lil baby in the projects with l...` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | She For Keeps | `rap bitches is on my nuts call ‘em chip n dal...` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | Um Yea | `he kept the ice on my neck and kept that feve...` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | Virgil | `four rings four way like the audi blaow` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | We The Ones | `alligator gucci steppin crocodile dundy` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | We The Ones | `from the north and i m with tg and he straigh...` | Mined candidate without confirmed wordplay or second reading. |
+| Quality Control | What It Is | `double r ghost ride ghost` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | 2 Slippery | `i feel like bugs got all these carats on my t...` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Count Money | `i was fuck nigga free before you even heard g...` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Get In With Me | `i was bad as fuck in school now i m tryna dod...` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Hit | `and when it come to poppin i m like orville r...` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Out The Mud | `flexin like a wrestler baby rrr i m flyer tha...` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Pillsbury Dlow | `[verse 2: ice spice]` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Pillsbury Dlow | `call me pillsbury dlow i need more dough` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Stop Snitching | `niggas ll lie to they mama and daddy but go t...` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Stop Snitching | `ygs to ogs stay the fuck up off the interview...` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | The Biggest Pt 2 | `i ma stay blessed up dressed up in christian` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Trippin | `this is murk city i m throwin up but i got br...` | Mined candidate without confirmed wordplay or second reading. |
+| Bossman Dlow | Trippin | `i ain t never been no lame ass nigga i ma pop...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Bad Bad Bad | `no playin no atari i won t play with you for ...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Big Racks | `i rock that white while she snort a g` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Big Racks | `no i m not jordan but i am the goat the goat` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Boy Back | `ever since tap tap tap i feel like the brown ...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Diamonds | `every day she tell me i m the goat and what s...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Ecstasy | `if i got a problem call my slime and he say s...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Hot Remix | `i took the bentley coupe back then i hopped i...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Hot Remix | `had some good years ain t no way i get tired` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | I M Scared | `slime do you got clocks nigga twenty times fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | I M Scared | `i got slatt engrated in my nikes` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | I M Scared | `somebody tell oprah i want wifey call me` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Jumped Out The Window | `i just hit my grower now we growin nothin but...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Light It Up | `half a million to the chain gang yeah the can...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Mannequin Challenge | `me and slatt dealin the damage yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Mannequin Challenge | `we goin harder than granite` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Sup Mate | `wipe his nose wipe his nose pussy ass nigga w...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Sup Mate | `hold up wait slatt slatt atl jacob yeah yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Walk Down | `whole court in the street hit the gavel hit t...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Want Me Dead | `put that dick in her abs like crunches woo` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Want Me Dead | `came from the bottom and i made it to the oth...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | What S The Move | `luv know i got swag` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Wit Da Racks | `snatchin my chain is a no no 21 get your ass ...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Wit Da Racks | `young fl studio from the back i m tryna beat ...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Thug | Wit Da Racks | `switch on a glock strike a pose i m a cameram...` | Mined candidate without confirmed wordplay or second reading. |
+| Diamond* | Burgers N Fries | `my pants hold the fire but i ain t told a lie...` | Mined candidate without confirmed wordplay or second reading. |
+| Diamond* | Bada Bing Bada Bøøm | `nigga walked up and tezzus had punched him` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | Big Boy Diamonds | `milkin these bitches like yoo hoo` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | King Snipe | `when i do it consider it done mm hmm fuck a s...` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | Peepin | `i m in a bando a house with boarded windows i...` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | Top In The Trash | `say i m smokin loud and they complainin bout ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | Top In The Trash | `got bank like lloyd yayo like tony but won t ...` | Mined candidate without confirmed wordplay or second reading. |
+| Gucci Mane | Top In The Trash | `cause my verses are amazing think i m walking...` | Mined candidate without confirmed wordplay or second reading. |
+| Takeoff | I Remember | `i m a jazz musician came from utah derrick fa...` | Mined candidate without confirmed wordplay or second reading. |
+| Takeoff | Insomnia | `i met the plug in england no queen elizabeth ...` | Mined candidate without confirmed wordplay or second reading. |
+| Takeoff | Martian Intro | `takeoff i m outta here marvin outta here` | Mined candidate without confirmed wordplay or second reading. |
+| Fridayy | Blessings Remix | `jesu oni calvary oun ni father mi nobody fit ...` | Mined candidate without confirmed wordplay or second reading. |
+| Fridayy | One Call Away | `give you tlc the way i creep in it ah` | Mined candidate without confirmed wordplay or second reading. |
+| Bashfortheworld | Playas Circle | `all black boot jus match my suit my swag on b...` | Mined candidate without confirmed wordplay or second reading. |
+| Bashfortheworld | Problems & Answers | `can t control your team you ain t no boss the...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Bibby | My Hood | `terror town no limit gang mb we let pistols r...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Bibby | Squad | `what they say they say they say you ain t goi...` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | 10 Freaky Girls | `sellin pussy her vajay jay got a barcode uh o...` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | 10 Freaky Girls | `in bikini bottom i m with sandy sandy` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Creepin | `side bitch in frisco i call her my bay bae` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Creepin Choppednotslopped | `si side bitch in frisco i call her my bay bae` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Don T Come Out The House | `4l gang lot of shots nigga` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Niagara Falls Foot Or 2 | `michael vick number seven i m a dawg big dawg...` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Niagara Falls Foot Or 2 | `take a shower in the maybach it got curtains ...` | Mined candidate without confirmed wordplay or second reading. |
+| Metro Boomin | Walk Em Down Don T Kill Civilians | `used to sell the gas now i m sellin all cooki...` | Mined candidate without confirmed wordplay or second reading. |
+| Bslime | Bvlgari | `‘26 lamb truck might just call it khalifa i m...` | Mined candidate without confirmed wordplay or second reading. |
+| Bslime | No Surprise | `she want gunna wunna she want king spider` | Mined candidate without confirmed wordplay or second reading. |
+| Bslime | Real Talk | `first you get the money then the power come p...` | Mined candidate without confirmed wordplay or second reading. |
+| Bslime | Really Be Slime | `ayy suwoop yeah we slime woo ooh and we bangi...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Durk | Chiraq Remix | `i m in hollywood came from kingston food` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Durk | Chiraq Remix | `know some young bulls from a while back tryna...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Durk | Chiraq Remix | `30 punch like tyson` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Durk | Chiraq Remix | `heard tyga sneak dissing on me tell them thot...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Durk | Decline | `otf bitch that s glo gang` | Mined candidate without confirmed wordplay or second reading. |
+| Dj Khaled | Keep Going | `and i m pushin p beefin with my drac i m push...` | Mined candidate without confirmed wordplay or second reading. |
+| Dj Khaled | Wish Wish | `i know your mama taught you look both ways fo...` | Mined candidate without confirmed wordplay or second reading. |
+| Latto | All Women Cypher | `new g wagon all white might have to nickname ...` | Mined candidate without confirmed wordplay or second reading. |
+| Latto | All Women Cypher | `both my exes done took a l i love stayin at t...` | Mined candidate without confirmed wordplay or second reading. |
+| Latto | Anxious | `get your dance on get your dance on` | Mined candidate without confirmed wordplay or second reading. |
+| Latto | Baby Wyd Remix | `he like bae lets sixty nine i told him i don ...` | Mined candidate without confirmed wordplay or second reading. |
+| Mike Will Made It | Gucci On My | `g d up in that gucci boo d up with your hooch...` | Mined candidate without confirmed wordplay or second reading. |
+| Mike Will Made It | On It | `bmg i put the whole world on it bmg` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Reese | Traffic | `but i m out here in these streets catch me in...` | Mined candidate without confirmed wordplay or second reading. |
+| Dp Beats | Bankroll | `countin cake ayy play with my cake ayy` | Mined candidate without confirmed wordplay or second reading. |
+| Dp Beats | Bankroll | `i put them diamonds in glaciers ayy` | Mined candidate without confirmed wordplay or second reading. |
+| French Montana | Double G | `i said i m a double g` | Mined candidate without confirmed wordplay or second reading. |
+| French Montana | Lockjaw | `nah baby i don t want the wap i just want the...` | Mined candidate without confirmed wordplay or second reading. |
+| French Montana | Mopstick | `riding round with two sticks bow bow bow bow ...` | Mined candidate without confirmed wordplay or second reading. |
+| Jackboy | Want Some More | `i ain t from miami but i be riding with that ...` | Mined candidate without confirmed wordplay or second reading. |
+| Kodak Black | Zeze | `your jewelry water whip diamonds like re rock` | Mined candidate without confirmed wordplay or second reading. |
+| Kodak Black | Zeze | `and we got more stripes than the ref he foul ...` | Mined candidate without confirmed wordplay or second reading. |
+| Kodak Black | Zeze | `i be sippin on lean tryna keep balance` | Mined candidate without confirmed wordplay or second reading. |
+| Kodak Black | Zeze | `this that z shit this that z shit this that z...` | Mined candidate without confirmed wordplay or second reading. |
+| Kodak Black | Z Look Jamaican | `wah gwan if you step you get stretched` | Mined candidate without confirmed wordplay or second reading. |
+| Kodak Black | Z Look Jamaican | `nigga tmz been in more cars than the dmv did ...` | Mined candidate without confirmed wordplay or second reading. |
+| Kodak Black | Young Prodigy | `now i m married to the money catch me stuntin...` | Mined candidate without confirmed wordplay or second reading. |
+| Kodak Black | Xxl Freshman Freestyle: Kodak Black | `hell yeah they call me kodak but i ain t come...` | Mined candidate without confirmed wordplay or second reading. |
+| Kodak Black | Xxl Freshman Freestyle: Kodak Black | `she know i m a beast at every angle you can c...` | Mined candidate without confirmed wordplay or second reading. |
+| Rich The Kid | Trap | `chapo wit the red beam` | Mined candidate without confirmed wordplay or second reading. |
+| Sniper Gang | Squad Shit | `zmf runnin wit them zombies` | Mined candidate without confirmed wordplay or second reading. |
+| A Boogie Wit Da Hoodie | Drowning | `i ain t jamaican bitch i m haitian but i got ...` | Mined candidate without confirmed wordplay or second reading. |
+| A Boogie Wit Da Hoodie | Undefeated | `rollie iced out timeless for the hashtag` | Mined candidate without confirmed wordplay or second reading. |
+| Doowop Gbe | 19 | `tote the f&n like it s licensed yeah` | Mined candidate without confirmed wordplay or second reading. |
+| Doowop Gbe | Send Em Back | `they don t want no smoke no cancer and no cig...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Unky | Bvlgari | `‘26 lamb truck might just call it khalifa i m...` | Mined candidate without confirmed wordplay or second reading. |
+| King Von | Don T Play That | `you know that you pussy you feline pussy` | Mined candidate without confirmed wordplay or second reading. |
+| King Von | Don T Play That | `i heard that you got a great mind` | Mined candidate without confirmed wordplay or second reading. |
+| King Von | Don T Play That | `fast car uh jaguar uh nascar uh ap off uh` | Mined candidate without confirmed wordplay or second reading. |
+| Polo G | Clueless | `dropped a song and i got mad lit all i did wa...` | Mined candidate without confirmed wordplay or second reading. |
+| Polo G | Gangsta Graduation | `send a nigga soul on vacation we resort to ig...` | Mined candidate without confirmed wordplay or second reading. |
+| Polo G | Go Part 1 | `the fn ruger on my lap when i don t got a glo...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Gnar | Almighty Gnar | `skokie skokie bitch i m from the southside ai...` | Mined candidate without confirmed wordplay or second reading. |
+| Pnb Rock | Horses | `rollin rollin whip a1 like steak sauce` | Mined candidate without confirmed wordplay or second reading. |
+| Zaytoven | East Atlanta Day | `21 and pde that s the east atlanta gang gang` | Mined candidate without confirmed wordplay or second reading. |
+| Joyner Lucas | Litty Freestyle | `come out and play you my prey you the goat i ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nardo Wick | Who Want Smoke Remix | `hop out middle of the street hit him hit him ...` | Mined candidate without confirmed wordplay or second reading. |
+| Nardo Wick | Who Want Smoke Remix | `i think my draco might be gay why cause he bl...` | Mined candidate without confirmed wordplay or second reading. |
+| Doe Boy | Bussin | `put together all my rhymes but i m far from a...` | Mined candidate without confirmed wordplay or second reading. |
+| Kanye West | Don T Like 1 | `and bitch we gbe` | Mined candidate without confirmed wordplay or second reading. |
+| Kanye West | Don T Like 1 | `woah oh oh we hangin out the window it s bout...` | Mined candidate without confirmed wordplay or second reading. |
+| Blocboy Jb | Rover 2 0 | `ridin in the fuckin bentayga yeah salt kill s...` | Mined candidate without confirmed wordplay or second reading. |
+| A$Ap Rocky | Cocky | `i already back for seconds i ain t even clean...` | Mined candidate without confirmed wordplay or second reading. |
+| Nicki Minaj | Chi Raq | `sign up it s recruitin time` | Mined candidate without confirmed wordplay or second reading. |
+| Nicki Minaj | Chi Raq | `got 50s in them tecs 50s in them macs man 30s...` | Mined candidate without confirmed wordplay or second reading. |
+| Nicki Minaj | Chi Raq | `i m in hollywood came from kingston food` | Mined candidate without confirmed wordplay or second reading. |
+| Nicki Minaj | Chi Raq | `know some young bulls from a while back tryna...` | Mined candidate without confirmed wordplay or second reading. |
+| Nicki Minaj | Chi Raq | `got a black nine call it bet` | Mined candidate without confirmed wordplay or second reading. |
+| Nicki Minaj | For All The Barbz | `pink friday 2 heavy on it overweight` | Mined candidate without confirmed wordplay or second reading. |
+| Nicki Minaj | For All The Barbz | `keep it a hundred keep it in a trust if i los...` | Mined candidate without confirmed wordplay or second reading. |
+| Nicki Minaj | For All The Barbz | `one sub kill five bitches oceangate mmm` | Mined candidate without confirmed wordplay or second reading. |
+| Xxl | Xxl Freshmen 2016 Cypher Part 2 | `rest in power it s all about power` | Mined candidate without confirmed wordplay or second reading. |
+| Chris Brown | I Don T Like Remix | `doin shows on the soccer field that s dome ri...` | Mined candidate without confirmed wordplay or second reading. |
+| Chris Brown | I Don T Like Remix | `ovo you overdose` | Mined candidate without confirmed wordplay or second reading. |
+| Cdot Honcho | 50 Of Em | `once i send shots watch em lay low` | Mined candidate without confirmed wordplay or second reading. |
+| Kendrick Lamar | Silent Hill | `beat the dope with a fork i m whippin up suda...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Tecca | Hvn On Earth | `heaven on earth my h o e h o e h o e` | Mined candidate without confirmed wordplay or second reading. |
+| Ftp Records | Charlie | `fuckthepopulation` | Mined candidate without confirmed wordplay or second reading. |
+| Ftp Records | Fuck The World | `ftp` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Pump | Gucci Gang Mega Remix | `gucci the gang so we watchin the snakes gucci` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Pump | Gucci Gang Mega Remix | `gucci gang louis gang fendi gang savage wear ...` | Mined candidate without confirmed wordplay or second reading. |
+| Lil Pump | Gucci Gang Mega Remix | `throw you off a wyclef like fugee gang` | Mined candidate without confirmed wordplay or second reading. |
+| Jid | Surround Sound | `makin love sounds` | Mined candidate without confirmed wordplay or second reading. |
+| Jid | Surround Sound | `most of my partners ain t have poppa just a p...` | Mined candidate without confirmed wordplay or second reading. |
+| The Kid Laroi | Don T Leave Me | `m o b fuck all these bitches i m focused on g...` | Mined candidate without confirmed wordplay or second reading. |
+| Hoodrich Pablo Juan | They Can T Stand It | `and you know i m down for life like i m fabo` | Mined candidate without confirmed wordplay or second reading. |
+| Ski Mask The Slump God | Bank Account | `i don t count up in my bank account savage li...` | Mined candidate without confirmed wordplay or second reading. |
+| Lyrical Lemonade | Equilibrium | `we don t talk to cops we don t cop pleas` | Mined candidate without confirmed wordplay or second reading. |
+| Lyrical Lemonade | Equilibrium | `how you call yourself the g o a t bitch stop ...` | Mined candidate without confirmed wordplay or second reading. |
+| Dreezy | Spar | `i took my feelings out this shit and put my t...` | Mined candidate without confirmed wordplay or second reading. |
+| Tyus | Between Us Remix | `vvs s ooh drip` | Mined candidate without confirmed wordplay or second reading. |
+| Ksi | Number 2 | `when the future is present we pop off` | Mined candidate without confirmed wordplay or second reading. |
+| Dj Esco | Who | `decisions decisions you fuckin with me that s...` | Mined candidate without confirmed wordplay or second reading. |
+| Dj Showtime | Harriet Tubman | `they gave my dawg a long sentence hit him wit...` | Mined candidate without confirmed wordplay or second reading. |
+| Rundown Zay | Bvlgari | `‘26 lamb truck might just call it khalifa i m...` | Mined candidate without confirmed wordplay or second reading. |
+| 6Ix9Ine | Shaka Laka | `y como dice tego calle pero elegante` | Mined candidate without confirmed wordplay or second reading. |
+| Smokepurpp | I Don T Know You | `vegetarian to the beef bitch` | Mined candidate without confirmed wordplay or second reading. |
+| Cassius Jay | Big Racks Raf Way | `number n ine ooh number n ine n ine number n ...` | Mined candidate without confirmed wordplay or second reading. |
+| Skengdo | Pitbulls | `take the magazine now we pluggin like it s ho...` | Mined candidate without confirmed wordplay or second reading. |
+| Skengdo | Pitbulls | `and i attempt to catch a m it s in my fuckin ...` | Mined candidate without confirmed wordplay or second reading. |
+| Skengdo | Pitbulls | `a mally with the bally got a new sound` | Mined candidate without confirmed wordplay or second reading. |
+| Rae Sremmurd | Real Chill | `all i smoke is loud yeah it s gon blast in yo...` | Mined candidate without confirmed wordplay or second reading. |
+| Young Dro | Fdb Remix 3 | `hit her off the goose then duck that chick` | Mined candidate without confirmed wordplay or second reading. |
+| Diddy | Another One Of Me | `make your mouth piece obese like della reese ...` | Mined candidate without confirmed wordplay or second reading. |
+| Diddy | Another One Of Me | `a rod i m ballin but i m loyal never leave th...` | Mined candidate without confirmed wordplay or second reading. |
+| Saba | Survivor S Guilt | `ayy ayy ayy raised below poverty now i keep i...` | Mined candidate without confirmed wordplay or second reading. |
+| H E R | Slide Remix | `drinkin champagne on the airplane` | Mined candidate without confirmed wordplay or second reading. |
+| London On Da Track | No Flag | `i ain t fucking with you sis we ain t with th...` | Mined candidate without confirmed wordplay or second reading. |
+| Rico Beats | Real Spill | `i was playin with cap guns goin on drills on ...` | Mined candidate without confirmed wordplay or second reading. |
+| Farruko | Krippy Kush Remix | `word play got em stepping up they pens es now...` | Mined candidate without confirmed wordplay or second reading. |
+| M Row | Vegeta | `i really go ku new ice for the freezer` | Mined candidate without confirmed wordplay or second reading. |
+| Pop Smoke Ai | Programmed For This [Ai] | `it s big 092mlboa i don t need no disrespect ...` | Mined candidate without confirmed wordplay or second reading. |
+| Foolio | Free Smoke | `hit a boss in a hellcat i damn near wrecked t...` | Mined candidate without confirmed wordplay or second reading. |
+| Foolio | Free Smoke | `you can duck from everything but you can t du...` | Mined candidate without confirmed wordplay or second reading. |
+| G4 Boyz | Local Scammer Remix | `service fees too high kmt that s a third of t...` | Mined candidate without confirmed wordplay or second reading. |
+| Chris James | Head Games | `medusa when she kissed me would of turned me ...` | Mined candidate without confirmed wordplay or second reading. |
+| Pharrell Williams | Cash In Cash Out | `nigga you don t be on what we on and 2 1 got ...` | Mined candidate without confirmed wordplay or second reading. |
+| Pharrell Williams | Cash In Cash Out | `rock on my hand nah this ain t dwayne hey hey` | Mined candidate without confirmed wordplay or second reading. |
+| Pharrell Williams | Cash In Cash Out | `you know my method i ma turn your shirt red m...` | Mined candidate without confirmed wordplay or second reading. |
+| Pharrell Williams | Cash In Cash Out | `call him new era he cappin yeah them the type...` | Mined candidate without confirmed wordplay or second reading. |
+| Pharrell Williams | Cash In Cash Out | `this shit neon yellow like pee on it hey hey` | Mined candidate without confirmed wordplay or second reading. |
+| Wizdawizard | No Attempt | `skeletons in my closet gunpowder in my dreads` | Mined candidate without confirmed wordplay or second reading. |
+| Yae Yae Jordan | Strapped | `naw baby i ain t babe naw` | Mined candidate without confirmed wordplay or second reading. |
+| Sad Frosty | Gengar | `twg` | Mined candidate without confirmed wordplay or second reading. |
+| T I | Thank God | `from hustle` | Mined candidate without confirmed wordplay or second reading. |
+| Cochise | Hunt | `someone hand that boy a hat he always bappin` | Mined candidate without confirmed wordplay or second reading. |
+| Latto | All-Women Cypher | `Yeah, he talk to me through wires like he Kan...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | All-Women Cypher | `Hoes be real life Tyler Perry, livin' in that...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Big Latto Freestyle | `Finesse a rich nigga like Baps (Aha)` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Big Mama | `I don't play about a side bitch and you heard...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Blick Sum (Remix) | `Uh, I'm in the 4×4, yeah, I got my wrist up (...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Rosary | `I give her different type of press when we be...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | soooo high | `She know I'm a big back, she throwin' cake an...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | see no evil | `Young Vamp Life, Young Vamp Life` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | safety (interlude) | `I’m playing spin the bottle with a whole pint...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | rollin dope | `Bitch, I'm in love with the bag, so I don't g...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | red dead | `Addicted To Money, nigga, we the movie` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | please dnt touch dis sh*t | `I brought that hoe to the trap house mansion` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | God Did | `I'm still maxin', real shooters with me like ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | God Did | `I got people prayin' for mе from all religion...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | God Did | `Never turned my back on Jigga, and every time...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | God Did | `Who brought the billionaires to the hood? Gon...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Glow Up | `She post up for MCM and we like, "That nigga ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Glow Up | `Mix the codeine with the Fanta` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Gettin’ Money | `And being broke just gave me my hunger` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | G Season | `Word bond, real talk, do my dirt up by my onl...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | G Season | `Started in the back, now I'm that nigga in th...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | G Season | `And I go crazy in that bitch, look like Baby ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Future | `Know there's a lot of artists, but I got the ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Future | `Can't fuck with me, that dyke flow, hoes blow...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Future | `I'm rolling around in my old school, I feel l...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Funkmaster Flex Freestyle (2012) | `Porsche Box like Ali` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Brokey | `You ain't never fuck with no boss bitch, I tu...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Business & Personal (Intro) | `Still makin' shit shake with no help from the...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Business & Personal (Intro) | `I done made more honey buns than that ho Litt...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Business & Personal (Intro) | `I've been gettin' thicker like my nigga addin...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Chrome Heart Diaper Bag | `Since sixteen, I been the one to beat` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Patience | `Take your time, Uzi, take your time (Seroquel...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | OPPOSITE | `Shawty keep droppin' it, shawty keep poppin' ...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | ZEZE | `Pop pills, do what you feel, I'm on that zomb...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Z Look Jamaican | `Got the Siri bitch speaking Patois` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | When Vultures Cry | `This what it sound like when a vulture cry` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Vibin in This Bih | `You gotta play your cards right, them jack bo...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Vibin in This Bih | `Hittin' licks, now I'm droppin' hits, mouthpi...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Versatile 3 | `Scat Pack orray, I paint it matte black today...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Versatile 3 | `I kept rappin', I made it happen, I'd be a bi...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Versatile | `It's too much weight on my shoulder so don't ...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Tunnel Vision | `I told that baby to come over 'cause I'm fuck...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | passenger | `I don't follow no one but I bet your main ho ...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | party n get high (interlude) | `Introduce you to the Hills, ah, lifestyle ful...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | party n get high (interlude) | `Showed you how it feel, taught you how to rol...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | party n get high (interlude) | `Introduce you to the Hills, nah, for real` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | money & sex | `He think he invincible 'cause he got a bullet...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | money & sex | `Shoot that bitch out, I turn it to a visual` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | money & sex | `If money was height, then I'm Shaquille O'Nea...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | moment of silence | `I prefer Saks Fifth, I don't really like Neim...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | margiela man | `Walk with the strap just like Mega Man` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | From da Bottom | `Cause in this game we shooting metal like it'...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | From da Bottom | `drunk Spade with Hov` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Freestyle Part 1 | `But you high as fuck cause you just smoked a ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | For The Love Of Money | `I don't know nothing that money can't buy` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Fly Rich | `That’s right, I am YMCM` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Flexing | `Wrist wear on hockey (Ha), Porsche box like A...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Flamers (Freestyle) 2 | `Hallows for the snitches we don't play with r...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | First of All | `And free my nigga Rick, they gave my nigga wh...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | First Day Out (Remix) | `I fuck with LeBron but the money tall as Shaq...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Finals | `I bring it straight to your door, do you like...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Finals | `When I get the gooking, only 3 note is the di...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Finals | `Got birds flying around, like Mr. 23 himself` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Finals | `Quarter millie for my car, and that's on the ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Fall Thru | `Fuck you on a PJ the whole way to the Bahamas` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Face Down | `I say that we see wassup and play let's see w...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | ErrTime (Remix) | `Bitch, I'm giving belt out like karate in thi...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | F.N.F (Let’s Go) [Remix] | `Young bitch, feel like a vet' in this C8` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Gimme Dat | `Can't let it hit the 'net like a goddamn goal...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | FBH | `Felonies, my niggas got felonies` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Exorcism | `I’m Bob Fischer they contemplating my next mo...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Energy | `Jump in the big drop button to start nigga` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Dreams and Nightmares (Intro) | `No crawlin', went straight to walkin', with f...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Dreams and Nightmares (Intro) | `I did shit with Mariah (Mariah, Mariah)` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Dreams and Nightmares (Intro) | `Flexin' on these niggas, I'm like Popeye on h...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Double Trouble | `Don't do it for the clout, I do it for chain ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Dope Dealer | `One wheel up and we swervin'` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Don’t Make Me Do It | `I'm on one in that 2 door` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Don’t Follow The Heathens Freestyle | `The Cosa Nostra, super ultra` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Do Dat Dere | `Six feet p low you get d pro` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Dangerous | `The pussy wet, I call it angel dust` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Gyatt | `I got that uh, she got that gyatt (Okay)` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Gyatt | `I shit on hoes for sure, but I ain't into the...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | He Say She Say | `I smell like money and Baccarat` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Hurt | `You hurt me to the core` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | In It | `Mixin' the Henny and shot of espresso, I feel...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Time Never Mattered | `Yeah, time is money, diamonds on my Audemar` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | There He Go | `Like I don't believe in Jesus, how I triple c...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | There He Go | `I ain't makin' beats but the Draco got a drum` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Still Get Chanel | `Louis Farrakhan, baby, I keep sippin' Actavis` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | ilysm | `I need codeine, ice, and a double cup` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | if looks could kill | `Real deal codeine sipper, walk 'round with a ...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | i am | `Fuck nigga come my way, he die (Uh)` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | how u feel? | `Yeah, my baby, she built like a bottle, and I...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | fly sht | `I tell her to take a picture and save that im...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | fly sht | `I'm a young nigga, I been boolin', fuckin' al...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Muwop | `'Cause I'm a very freaky girl (Yeah), get it ...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | No More Talking | `H-h-h-ha, I got all the answers to your quest...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | dream about me. | `When I woke up, I hopped in the big body` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | check the fleet | `Yeah, look, baby, I just came to smash, I ain...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Cold Hearted | `Different floors for different bulls` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Cold Hearted | `Like Kobe Bryant, Metta Peace and Gasol, nigg...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Coke Boyz | `As-salâm 'aleïkoum, Inch Allah` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Classic | `We was selling rock before Kareem Biggs, Damo...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Classic | `Cause when you get the money, the hoes do wha...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Chiraq | `Ask Mally Mall to get his shit back` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Chiraq | `Four birds in the trap like four wings at Har...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Chiraq | `Got 50 guns in my trap house` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | CYBER TRUCK | `Outside to the max, I'm goin' front line in t...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Burn | `Vroom, vroom, yeah, I know my car sound like ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Burn | `I got green on top of green, damn, it's looki...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Burn | `Maybach with Ricky Ross, my chain rock like I...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Burn | `I slam dunk in that pussy, Blake Griffin'd yo...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Burn | `(Woah), working all night, no breaks or a rec...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Bullet Wit Ya Name | `Them niggas talking reckless I get them gunne...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Bugatti (Remix) | `I got a few young hotties wanna get shit popp...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Bugatti (Remix) | `Ho - ho - hold up, double M back in this bitc...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Body Work | `Ridin' with three K's and I ain't talkin' 'bo...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Okayyy | `K's in the bank 'til you give me what's O'd` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Okayyy | `I let him pop off the tags, sauce in the bag` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | On God | `Askin' where I'm at, I'm in the wish a bitch ...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | POP IT | `He spend more than a M? Then that's a fuckin'...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Response Diss | `I already peeped huh, why her voice so deep` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Response Diss | `I just killed this baby like she did her abor...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | S/O to Me | `I got a crush on a thug, and yes, he in love ...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Lose My Mind | `Take the pain, doubled it, put it in wave for...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Long Way To Calabasas | `I guess I'll take the long way to Calabasas (...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Livin It Up (City of Lost Angels) | `City of los' angels, ah, ah, ah` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | LIFESIZE (Fat Money Reference) | `What I'm gon' do for North, Psalm, Chicago, S...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Skrilla | `And my diamonds come from Tokyo, yoin, yoin, ...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Skrilla | `That skrilla, that skrilla, boy, I'm 'bout my...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Signs | `Oh, so you know now?` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | SKRT | `Girl, I'm done with you (With you)` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Running Outta Love | `I'd rather pull up in a verse, skrrt skrrt` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Squeeze | `He want a hot girl and he tryna hit the Latto` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Sunday Service | `Think I'm the shit? Bitch, I know it, ho` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Sunshine | `These niggas Stevie (What?) to the come up` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | There She Go | `They like, "There she go, go, go, go, go, go,...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | His & Hers | `Toolie in that Birkin` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | His & Hers | `Stretchin' out that Saint Laurent` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Prison Deform | `Nigga got so used to concealin' this motherfu...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Patty Cake | `I'm 'bout to snatch your baby girl and skeet ...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | aint hard | `Forgot to tell the haters I'm sorry (I'm sorr...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | WISH YOU WELL | `Tim Tebow, the bitch on her knees` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Blue Notes | `To light up the city like Meechie in '03` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Blue Notes | `Been through some shit and I'm sick of jail` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Black Grammys | `A Carolina nigga bound to be the greatest, th...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Big Bank | `Baby please don't blow my high` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Big Bank | `You know I coach them niggas like Phil up in ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Believe It | `And I got pills, and I got purp` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Bandz | `Wake up, fall asleep to Dizzy Gillespie (Band...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Badass | `But girl, this your show, now bring it back, ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Bad for You | `You bring out feelings in me I never show` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Backboard | `No I won't hit her, she not in my caliber (wo...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Backboard | `I got me a Draco on the flight, I came out th...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | BCGMMG (Remix) | `Your work high, I'm low key` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | BCGMMG (Remix) | `Started off with that .oz and tried to flip t...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | B Boy | `On my way to meet millis` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | B Boy | `And I wheelie in that pussy like my nigga Mee...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | B Boy | `All these karats like I'm tryna lure in a rab...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Ambitionz | `Pick and roll, stop and pick` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Ambition | `Long as your mama love you, don’t ever love a...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | Ambition | `Was on my grind cause times was harder than a...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | All the Way Up (Remix) | `Meek called me and Fab, Joe called Jigga up` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | All the Way Up (Remix) | `But I'm shootin' like the Warriors' startin' ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | All the Way Up (Remix) | `Only rapper went gold without a verse from Ho...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | All the Way Up (Remix) | `Gold mic from the billboards, 'bout to plug i...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | A1 Everything | `I grab my dick in the picture, your ho be cro...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 600 Racks | `She fuck good, she gettin' a bag` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 40 On My Hip | `Get hit with all of that, they be like dat's ...` | Mined candidate without confirmed sound flip or second reading. |
+| Latto | Wet (Remix) | `Pussy smackin', sound like macaroni` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Area Codes | `Gotta get a Puma deal, waitin' on my call for...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Bacc Seat | `We go rounds like some boxing shit (Sheesh)` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Big Stepper | `Push the Hellcat like an old Corolla, ayy` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 2014 HHS1987 Freestyle | `Very thankful, ‘cause I done had shackles on ...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 2014 HHS1987 Freestyle | `And this time on my Sky-dweller say “The crow...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 1AM | `1 am, we probably be at the club` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 100 Shooters | `I ain't puttin' down my gun, I ain't Craig (B...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 100 Hunnit | `When I get my V12, I’ma be in Six of them` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 10 Bottles | `10 bottles of Rosé, killin' these bitches lik...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 10 Bottles | `Weather man he seen my jewels he said it migh...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 0 to 100 (Remix) | `So many holes in ya they gone call you Julio` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 0 to 100 (Remix) | `I tell em wear it to your funeral be stuntin'...` | Mined candidate without confirmed sound flip or second reading. |
+| Meek Mill | 0 to 100 (Remix) | `Fuck all that Meek you gotta chill shit` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | No Flockin | `I will trick yo ass for a treat, call it Hall...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Never See Me | `I wish a nigga would, I'ma put the tree branc...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Never Exaggerate | `They hate when me and Syko together 'cause we...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Mumble Rap | `For real, I be groovy, for real, for real, yo...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Mayhem | `Staring out the window on a jigga early morni...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Mayhem | `Fuck with Lil Crix, that's my dawg, yeah, Bee...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Grammy Week | `Yo, how does it feel? Super star champ` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Get Throwed | `In the Benzo, jammin' Pop Smoke` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Geronimo | `Off Codeine, I'm highly wokе, this shit colos...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Vanessa Hudgens | `I swear, any opp nigga can get it (Yeah)` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | VTMNTSCOAT | `And I'm rockin' this blood red VETEMENTS coat` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Ultimatum | `And I walk in that store and I buy what I wan...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Tokyo Mission Impossible | `Be cool when you walk in, my hitta might get ...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | TURNINUP | `You fuck around, get smoked like Lil Mouse (J...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | THRILL | `I tell her be 5, I'm with the 5ives, nah, for...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | COOLER THAN A BITCH | `Young GunWunna, I got hundreds in my pants an...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Chase the Money | `From the corner, 52, you niggas gettin' ace` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Cream | `If the nigga want it all, I gotta be my own b...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Singapore | `Copped the new SVJ, yeah, just to lose the br...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Singapore | `Yeah, I just got a paper cut from countin' al...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Singapore | `Yeah, I get fly like a raven, but a nigga not...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | SUPER SERUM | `They say what don't kill you make you stronge...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | SUPER SERUM | `Millions on the shelf, diamonds hit like chan...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | SRTBBL | `Hellcat got a BBL, yeah, it came with a wide-...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | SMOKING | `We've been smokin' and fuckin' and shoppin' a...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Rick | `'Cause these niggas be broke, and my name not...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Down Below | `'Member I was in the project walls, couldn't ...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Every Season | `Then I Randolph, like Zach` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Feed Tha Streets 2 (Intro) | `I make the package do backflips` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Free Game | `They sent him to the pound for pounds my dawg...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Fucc It Up | `Got a private just to make drugs` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Woke Up | `We the Detroit Big Tymers, how you love that?` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Wild Boy (Remix) | `On your wife like Cool J, beat it up like the...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Like Dat | `'Cause I put molly in my lean (Ayy, Kodak, Ko...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Lemme See | `Yeah, Lil Taz, he gon' juke` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Last Day In | `I told my lawyer, "Boy, I love you like a dad...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Last Day In | `I be runnin' with the Z's like I'm Piccolo (M...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Land In Hell | `In my past life, I think Sosa was my family m...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | I’m So Awesome | `Yeah, uh, thanks for them letters, bae, now y...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | I’m So Awesome | `She say I raped the bitch, no, but I bit her` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Favor (I Spy) | `And she keep a red rag on her like a matador` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Excavator | `They want me in the cage` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Encouragement | `Step back and let it pop, I'm on my Curry now` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Encouragement | `Same time, me and Travis out for our tier` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | E85 | `On the highway with my significant lover` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | De La Hoya | `Titre teasé sur son Instagram 5 jours avant l...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Crossfaded | `Are we down for each other?` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Cardigan | `Hop up in my Jeep and put your pride to the s...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Gods Eyes | `Back in Genesis, I was O.T. with the coco` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | How It Is | `I wanna get rich and put a milli on my wrist` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Intro | `I remember I ain't used to leave the house wi...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Real Sisters | `Uh-uh, that's your best friend, I'm tryna fuc...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Real Deal Vampire | `I believe all rats should die, yeah, yeah, fr...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Plea | `Yeah, I got rowdy rowdy off a Percocet` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Paranoid | `I got white diamonds and thеy colder than Ill...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | PRSSURE | `I like shrooms, I like rolling on X (X)` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | No Gain* | `I'm a millionaire off a mixtape` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | No Rest | `Shе want me to fuck her four times, pop a hun...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | In the Flesh | `Just got out today, already sent my dawg a ki...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | If I’m Lyin, I’m Flyin | `I know shawty only on my trail 'cause she see...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Helluva Love | `Kodak Black, I never hesitate to yellow tape` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Traffickin | `And I stay hot, undercover Tahoe` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Traffickin | `Get rid of the weight, keep all of the pills` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Pure Souls | `I can give a dollar to every person on Earth` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Hard Life | `Me and Lil Wiz, I don't know where to start` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Gave It All I Got | `In my own bubble nigga, had to clear my circl...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | G to the A | `I'm from the Noya where a donk sit on Forgis` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | First Day Out | `Traded my AR for a sniper, traded my Draco fo...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | That Range Rover Came With Steps | `Young shooters, real soldiers put they heart ...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | That Range Rover Came With Steps | `I was selling keys to success` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | That Range Rover Came With Steps | `I'm the king of the city, my house Graceland` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Standing In The Kitchen | `I'm just standing in the kitchen` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | CITY OF CHI | `Sending shockwaves through my system` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | ON REPEAT | `Big dog, I don't smoke no shisha` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Nobu | `Yes, I come out after dark with my shooter, h...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | No Smoke* | `If the police get behind me, I'm pulling off ...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | NOSTYLIST | `Shawty like, "Hell yeah," she grab my stick` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | NOSTYLIST | `I'm in the SRT, Trackhawk truck, let my thot ...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | NEVEREVER | `Not a regular Jeep, yeah, this the Trackhawk ...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Miley Cyrus | `Overseas drip, nigga, PPFM` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Met Gala | `Rockstar bitch, she tryna come and suck the s...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | MONEY ANTHEM | `I'm sipping purple Wock', bitch, I'm going br...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Real Life | `We havin' her homegirls inside the PJ` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Ricch Forever | `He wanted the Rollie, I wanted the Patek` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Start wit Me | `Drippin', my sweatsuit Givenchy` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | MEET THE BOSS | `It's Baby Money, you know what I'm sayin'? I'...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Loyalti | `Eighteen years, I can't cap, lil' nigga, I do...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Like This | `She got on full lips, I call 'em DSL, them di...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | The Box | `She sucked a nigga soul, gotta Cash App` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | The Woo | `I pull up on her top gone on the Dawn, I'm th...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Tip Toe | `I fuck with bougie bitches, fuck a hood ho` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Twin | `Kim K (Kim K), better get back with Ye (Back ...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Twin | `Ain't no proper cause, the state did Rose wor...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Twin | `Me and Deeski shared a room with double bed a...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Twin | `Call up Durkio, I need a evil twin in this bi...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | Walk Em Down | `Choppa got the chopper, make 'em do a backfli...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | War Baby | `Post-traumatic stress, I know the war changed...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | War Baby | `I'm a hood nigga that turned rich so I got Di...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | XXL Freshmen 2019 Cypher - Part 3 | `I got all white diamonds, Ku Klux,` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | dodger blue | `Don't say you hate L.A. when you don't travel...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Every Balmain | `Shawty say she want CC` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Don’t Leave Me | `And you know once I get my chips up, I'll Fri...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Simple | `She don't fuck with rappers, me neither, sum ...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Reppin’ North Memphis | `Niggas on [?] green with the yellow` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Bang Bang | `She shot me down, bang, bang` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Bang Bang | `Bang, bang, I hit the ground, bang, bang` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Backend | `I'm hittin' the 3 like Chris Paul` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | Backend | `I'm bad like Michael Jackson (Woo)` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | BROKEN ROAD | `When you 'bout to lose all hope` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | BROKEN ROAD | `What if the surgeon really the serpent?` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | After Party | `You and all your friends, yeah, they love to ...` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | ATTITUDE | `Orange soda my lean, I'm Baby Keem` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | ATM | `Shawty locked like it's ALYX` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | llf | `You know they gon' be bangin' this shit for t...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | more than a trend | `Wanna take you outside, Houstatlantavegas` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | thailand | `They took her ass fat right out her belly` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | too easy (Remix) | `Wheezy, Wunna, Pluto, Roddy, this shit way to...` | Mined candidate without confirmed sound flip or second reading. |
+| Roddy Ricch | too easy (Remix) | `Can't put a presidential on a bitch 'less she...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | How You Keep It | `Outside late night, all black creeper` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | 5 TO 10 | `Hitting that bag like Tyson` | Mined candidate without confirmed sound flip or second reading. |
+| Don Toliver | 4X4 | `I'm mad conceited and they got me feelin' Woc...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | ZTFO | `If we don't have the same vision, then we can...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | You Don’t Know | `I must be doing something right if every mill...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Wonder Why | `We grind, so when we shop out we cop out, lik...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Wolves | `Tried to make me leave (Leave), fell down to ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Wild | `Pull up in a gnarly 'Rari, barmy, what?` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Why Would I Stop? | `And I do this shit for the family (Straight u...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Why Would I Stop? | `I can't be handin' out samples (No way)` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Who’s Stopping Me | `Make moves with the bros, no choreographies` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Who Knows? | `And I always kept Faith like B.I.G` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | White Sand | `When I look at my wrist it's a hockey puck (W...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | White Sand | `Pull out the coupe like Bruce Wayne (Skrrt sk...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Warrior | `And I’m goin’ Dray, Klay, and Steph (Woah)` | Mined candidate without confirmed sound flip or second reading. |
+| Blac Youngsta | Beat It | `Michael Jackson, I beat I beat it, beat it` | Mined candidate without confirmed sound flip or second reading. |
+| Blac Youngsta | Birthday | `Pussy Rat Entertainment, taking niggas straig...` | Mined candidate without confirmed sound flip or second reading. |
+| Blac Youngsta | CMG | `Do a 100 some years for this shit, swear to g...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Corrlinks and JPay | `This for them niggas eatin' Zoom-Zooms and Wa...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Coolin and Booted | `I be stickin', I be movin', I'm the youngest ...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Coolin and Booted | `I'm coolin' but I'm booted, I got thirty in m...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Codeine Dreaming | `I'm wet dreaming 'bout Actavis, two new cups ...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Cherish The Moment | `I know lil' Sosa with me` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Call You | `I be totin' a pole, I'm pourin' a four, I'm r...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Call You | `My momma named me Jason, see me in your sleep...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Boost My Ego | `Kodak buyin' a Wraith, soon as he beat the ca...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Really | `Give it to 'em direct just like Jeter, uhh` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Really | `How you get caught up in the web with tarantu...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Really | `Two ice cubes and some cognac` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Really | `Like Nasir and Hov when I'm 40 years old` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Really | `My verse'll Schmurda you niggas` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Racks (Remix) | `Yeah, they call me Country Grammar` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Racks (Remix) | `Racks on, racks off, see that blonde strip wh...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Order More (Remix) | `My neighbor is a bitch, they tried to call th...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | F.U.N | `And this dope my best friend, I'm kickin' shi...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Diamonds & Foreigns | `Pakistanis and 'Raris, that's foreigns on for...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | Contraband* | `Opp niggas get Charlie— brr` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Wait for Me | `It's too—it's too late` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | WORTH SOMETHING | `I'm at Comerica, my suite is right behind the...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | WORTH SOMETHING | `Might just run for mayor for real, put that o...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | V.E.R.S.E (Very Entertaining Recitals Spit Effortlessly) | `I will not introduce you to Shawn Carter but ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Used To (Verse) | `Back when I had a crush on every girl on Nick...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Typecast | `When I walk in the arena, I feel like I’m Jer...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Tyler Herro | `The ones that hate me the most look just like...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Two Cups | `Know we quick to fuck these niggas up like ro...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Tomorrow | `Stuck to my roots, call me Questlove` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Tomorrow | `I'm sayin my city like "we need another hero"` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Together Forever | `You know I don't propose a plan unless it has...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | The Mighty Fall | `I can't stop it when there's chemicals keepin...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | The Mighty Fall | `But if you ask me two's a whole lot lonelier ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | The Mighty Fall | `And hell yeah I'm a dick, girl, addicted to y...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Thank You | `That's my wavelength, surprised I ain't go in...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Tangerine | `Sun Gods crest upon his azure shield` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Switch Up | `Never sold, but I still got more lines than c...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Beretta Love | `Baby, now I wish you` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Beretta Love | `On papers, I can't ride around with my pipe` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | Back For Everything | `Every time I'm in H-Town, I suppose I drink s...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | 5 On It Freestyle | `E Pimp told me pass him half a molly, on the ...` | Mined candidate without confirmed sound flip or second reading. |
+| Kodak Black | 4th Quarter | `I be up all night on M's, I don't fuck around...` | Mined candidate without confirmed sound flip or second reading. |
+| Blac Youngsta | Ight | `Every time I pop a molly, I start doin' sit-u...` | Mined candidate without confirmed sound flip or second reading. |
+| Blac Youngsta | I’m Assuming | `Ask me what I rep, I rep that red, black ain'...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Long Way | `Now three bricks for a punchline` | Mined candidate without confirmed sound flip or second reading. |
+| Blac Youngsta | Motor | `I want to hit her from the back, stick my sti...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | BLING | `Money tall like LeBron` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | ALLURE | `Huh, this ho want a sponsor, tell that lil' t...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Supa Dupa Lemonade | `My nigga Tone say he so Westside` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Supa Dupa Lemonade | `Don’t worry bout my niggas Thurgood Marshall` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Supa Dupa | `Only difference is, I ain't fuckin' with thes...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Supa Dupa | `You hated on the block -` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Supa Dupa | `Hoes who'll want the same thing - homo - Elto...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Sorry | `And I love 'em quarter G, quarter freak` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Smoke and Drive | `Tell Ben that it something about Mary and cle...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Skateboard P (Remix) | `Bling-blaow, oh, chains on Skateboard P` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Shape | `Let me see your shape` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Shape | `I be putting on them pounds but I ain’t gaini...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | See Me Now | `If you fall on the concrete, that's your ass ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | See Me Now | `All my homies GDs, but I am Lord` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Say You Will | `And the D is burn rubber and the Sean man lea...` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Wat Be Wrong?? | `From EBT to BET, lil' ho, I'm legendary (Big ...` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | U Played | `High off the motherfuckin' medicals (Up there...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Savage Time | `I straighten this shit out, no Botox, I call ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Sanctified | `There's a field with angels movin' around me` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Sanctified | `God, I've been guilty, fornicatin' from my st...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Sacrifices | `I get it my way from Friday to Friday` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Sacrifices | `Ten toes, yeah, you gotta stay down, ayy (Woo...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Rollin’ | `But my hotel is Valentines, all you see is X ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Respect It | `Laser focused, AOL, been had AIM` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Red Bull Spiral Freestyle | `Trippin' on me but I still feel at home like ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Red Bull Spiral Freestyle | `How niggas even want my name on they tombston...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Racks (Remix) | `Yeah, they call me Country Grammar` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Racks (Remix) | `Racks on, racks off, see that blonde strip wh...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Precision | `Fuck you mean? I'm the generous king for real` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Platinum and Wood | `And everything I want off in the world is a m...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Platinum and Wood | `It was me and my dawgs, summer on summer` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Owe Me | `Lamborghini Mercy, okay, we feel it` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Speak 4 Em | `Bread and sauce like a slice of the pizza (Th...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | 100 Shots | `If you see me out with a bitch, then you alre...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | 100 Shots | `Balenciaga clothes, I used to shop at Ross, b...` | Mined candidate without confirmed sound flip or second reading. |
+| Destroy Lonely | $$$ (Dollar Signs) | `RSG, shoutout Fluhkunxhkos (Hkunxhkos)` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Killa | `Who want it? a plug like Sosa and heart like ...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | I’m In Love With A White Girl | `I’m from East Atlanta where they cutting off ...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Icey White | `Dre back, Jack Frost, the boss in every town` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | I Know | `I know that niggas hatin' that's why I lost t...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | I Got You | `Lot of these niggas in the friend zone` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Hunnid | `That's 45 keys on a calibrated scale, bitch c...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Hot Nigga (Remix) | `I got four hoes and some Hen', some low pros ...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Hands Down | `He usually do the redbone, tonight he want a ...` | Mined candidate without confirmed sound flip or second reading. |
+| Blac Youngsta | Slide On Em | `Til they hear that gun sound (Baow, baow, bao...` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Shoota Gang | `Put that on drako world, bitch chuck district` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Scared Money | `These niggas pray to God to make it on The Sh...` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Said Sum (Remix) | `He want a Minaj with a new body (Ow)` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Run It Up | `I keep a Drac', ain't no OVO` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Rookie of the Year | `Love the game, it relate to me best (I do)` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Rolls Royce | `Bread in my pocket, I ain't poor boy` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Overtime | `All the work is analog, all the payment digit...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Overtime | `To break the unbreakable, escape the unescapa...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Outro | `The more I kick philosophy, the more I'm bori...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Open Wide | `This goes out to, uh` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | One of Them | `I see that big house, I need one of them` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | One Man Can Change the World | `And she taught me how to drive` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | One Man Can Change the World | `Back on the mattress` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | One Man Can Change the World | `I grinded out that black hole, then performed...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Once Bitten, Twice Shy | `Give her some flowers, while she can still sm...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | On the Come Up | `Quick to check a bitch, yeah I check her` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | On the Come Up | `5 to 10 for a lethal weapon` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | On Everything | `And I realized all I ever needed was in me, n...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | On Deck | `Catch a nigga talking and we make him walk th...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Oh My (Remix) | `Pussy nigga, you a pussy (Pussy), so who the ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Oh My (Remix) | `Now I'm who all these bad bitches grippin' (G...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | No More Interviews | `I'm not impressed with the whoopty woop, I do...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | My Own Planet (Remix) | `I'm hot, I sunbathe on the sun babe,` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | My Own Planet (Remix) | `When I say I'm on Venus, I don't mean that I'...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | My Last | `I could, I could, I could, I could put you on...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | My Last | `Put her hands down my pants, now she rockin' ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | My Closet | `BBC all in my closet` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | My Closet | `You might catch Tiger Woods tryna hit a birdi...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | 2040 | `I'm doin' donuts in my neighborhood, it made ...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Gallardo | `Fuck that BMI shit, I got me a ki, I'm out'ch...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | All On Me | `My OG say she don't like when I'm in the 'Raq...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | All of a Sudden | `All four of my pockets full now` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Anyway | `Not conserve' or no liberal` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Questions | `They askin’ me, askin’ me` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | PTPOM 2.0 | `How you city girls? Bitch, you from the count...` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | PTPOM 2.0 | `Put that pussy on me (Look)` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | P RUN | `I got 'bows for the D-low (Yeah)` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Moves | `Touch any of the above, now you harder to fin...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Moves | `I gave my whole family jobs and I take care o...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Moves | `I got the moves` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | More Thoughts (2019) | `And see my movie theater downtown Detroit ope...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Mercy | `Now we out in Paris, yeah, I'm Perrierin'` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Mercy | `White girls politickin', that's that Sarah Pa...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Mercy | `It's prime time, my top back, this pimp game,...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Mercy | `I step in Def Jam buildin' like I'm the shit` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Mercy | `Most rappers' taste level ain't at my waist l...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Mercy | `I give her that D, 'cause that's where I was ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Memphis | `We one and one, both one of ones` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Me Myself & I (Freestyle) | `Crazy what a cold bitch'll do for palm trees` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Me Myself & I (Freestyle) | `The most improved player, watch me turn that ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Master P | `All you niggas bums, stop sniffin' that Cate ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Marvin & Chardonnay | `Why my pants sag off? 'Cause I'm rapping my a...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Maps (Remix) | `So I'm following the map that leads to you` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Maps (Remix) | `But I wonder, where were you?` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Maps (Remix) | `To the part where we carved our name in the b...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Made | `Used to ride escorts now I get escorted (do i...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Made | `I’m just waiting on my cue dog no pledge` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Love Song | `Yea you made it that way` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Long Way | `Now three bricks for a punchline` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Dead Fresh | `Dope-boy swag forever, I went Evisus off the ...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Detox | `Nine times out of ten, I'ma be the one to win` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Drip Too Hard | `You can get the biggest Chanel bag in the sto...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Exotic | `Servin' raw and fuck the Alphabet Boys` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Lithuania | `Hit three in a row, that's just a game` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Lights On | `Fuck a man, you need a mentor` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Kingpin | `Nigga, we did it, we did it, We did it` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | K.O. | `Okay, I'm in motion, I'm rolling and smoking` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Jit/Juke | `Ho, you've got your hand out, what that mean,...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Jealous | `I rearrange your chakras, listenin' to Sade` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Ja Rule | `Two bitches like déjà vu` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Flexin | `American Gangster: chase them Franks like Rus...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Everybody Quiet | `Pawn shop Tec with no cooning it gon' gel you...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Errrbody | `Plug on the way thats a new Bugatti` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Elvis Presley BLVD (Remix) | `Nigga, yeah I'm the mayor` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Dreams Come True | `Jesus pieces only keeping me anointed (Ugh)` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Dreams Come True | `I was born with the drive and now a nigga get...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Dreams Come True | `Me and Bird see the world through a bird's ey...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Dope | `They sip syrup, she got curves` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Dope | `Say my words slurred, I got birds` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Dope | `Cause all my chains is gold` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Don’t Worry ’Bout It | `Probably moving them bricks around, they swea...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Don’t Worry ’Bout It | `Don't be worry 'bout my bitch pimping, she ge...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Don’t Shoot | `Man that sound absurd` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Don’t Shoot | `Gun shots hit the car, now I got the holy gho...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Free Promo | `I go Rylo for my captions` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Cross Me | `And me I'm out of patience, sick and tired li...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Cross Me | `What happened to that boy and I ain't Pusha T...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Cookbook | `If she do she know the biz, I only fuck with ...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Cold Blood | `Four dogs with them pistols, na-na-natural bo...` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | No Love | `You just a nigga I used to fuck with` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Make a Bag | `I'ma big dog, you a shih tzu` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Heatin Up | `I fuck with slimes and I'm gonna bust (Bah, b...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Heatin Up | `Skydweller, Jubilee, and a Presi' (No cap)` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Humble | `Told Solid to speed it up, you ain't driving ...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | In A Minute | `And I'm out here grinding still, I need equit...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | In A Minute | `This shit gon' get serious about my money, th...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | I Know | `And you know we on a roll like we did good in...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | I Don’t Think They Want It | `You was straight gassin, I put that on kerosi...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | I Don’t Fuck with You | `And you know I'm rollin' weed that's fuckin' ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Hurricane (Big Sean Version) | `I chose not to be a slave` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | How Many Times | `Callin' shots, refereein', no drama` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Hometown | `Chasing pussy, you might end up with a Kat St...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Holy Key | `Fuck your boss's employment my joy is to see ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Holy Key | `If you shoot me then you gotta deal with a ho...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Holy Key | `I'm restoring the portrait of feasting, nigga...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | High | `Kickin' it with my shirt off, on some Liu Kan...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Hate Our Love | `Tryna break a happy home while we renovate it...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Halfway Off the Balcony | `My stock's risin', I'm goin' public, if I wri...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Guard Your Heart | `Hold yo' head, guard yo' heart` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Guard Your Heart | `Ermias the prophet said it'd be a marathon` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Guap | `Takin' shots, swear it's like my stomachs mad...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Go Legend | `Bitch, this not a drill, this the real thing ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Go Crazy | `As if this fuckin' body isn't everything they...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Glenwood | `In the booth, I use the restroom—it's best yo...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Glenwood | `Y'all illy? I'm iller, I'm from Illi-noise` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Man of My Word | `How she acting funny? I bought her her tittie...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Medical | `He think I sold his ass some mud, I sold him ...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Castro | `I'm in Saks goin' AWOL` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Bussin Remix | `Beat a bitch and call me Ike Turner` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Bricks | `I'm ballin' like an athlete but got no jumper` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Bricks | `The fish scale white, same color my Hummer` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Never Hating | `Bro'n'em, in a striker, but it’s good, we swa...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Okay | `Smoking woods in the back of the Maybach` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Otha Boy | `Make a rapper take his clothes off, that boy ...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Plenty | `Look, brodie went double homicide like Melly` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Pure Cocaine | `When your wrist like this, you don't check th...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Racks In | `I'm like Luda in his prime, I got them bows i...` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Federal Fed | `We got the 'bows, same number LeBron` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | Federal Fed | `Tussionex Pikachu, Pokémon (Woah)` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Getcha Some | `I'm stickin to my roots like LRG` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Getcha Some | `My nigga BIG told me he was bout the Benji's` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Future | `Know there's a lot of artists, but I got the ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Future | `Can't fuck with me, that dyke flow, hoes blow...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Future | `I'm rolling around in my old school, I feel l...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Funkmaster Flex Freestyle 8/13/13 | `I'm the one who knew every word, then "swerve...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Funkmaster Flex Freestyle | `I ain't from Ohio but I buck at hoes randomly` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Funkmaster Flex Freestyle | `We're in the special team, we kick it like Vi...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Funkmaster Flex Freestyle | `Swisher kisser, and I'm twistin' up that mist...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Friday Night Cypher | `Get triggered down, Jhené Aiko` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | First Class | `Fuckin bitches chasing paper` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | First Class | `Lighting reef up like it’s the holiday season` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | First Chain | `BIG was the first one that had it` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Fireworkz (Remix) | `And since I came up, she want me to come insi...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Fighting Shadows | `I'm goin' through Hell and back so every room...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | FEED | `Best linens and my bitch sound like she Yoko ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Everything That’s Missing | `And if you feelin' stagnant, just know you at...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Real As It Gets | `Born in this shit, I grew up with some felons` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Realist in It | `Michael Jackson with the glove, Annie, are yo...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Russian Roulette | `I really cried when Marlo died, I felt it all...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Section 8 | `Went and copped the new plain jane (Plain jan...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Bass Ackwards | `Got a white Vette, and a white Ghost, and a w...` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | Bass Ackwards | `I am Wayne Carter, oops, I meant Cayne Warter` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | All Hustle, No Luck (Remix) | `I want thirty for a bird, 22 for a duck` | Mined candidate without confirmed sound flip or second reading. |
+| Yo Gotti | 5 Star (Remix) | `Five, little mama, you a three-star` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Don’t Play | `Played with her pussy in the Jeep` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Don’t Play | `Dealing with a seam you ain't seen, what you ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Don’t Play | `In the H, gotta hit Johnny for the frost, swe...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Do What I Gotta Do | `Asian bitches, Wu-Tang, give them RZA` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Do It Again | `Looking like a black eye pea` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Do It Again | `Yeah, run it back again and again` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Diamonds | `This broad from the DR said I was frío` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Diamonds | `I pour it out for my man who made his transit...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Diamonds | `I'm rolling with me and my partner like it wa...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Diamonds | `Open shows at the Regal for Daddy Kane and Ea...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Diamonds | `I wrote this on my born day, it was a warm da...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Deserve It | `Gettin' high now I'm the supplier now` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Dance (A$$) (Remix) | `If he got a Mandingo, then I buy him a dashik...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | D-Boy | `Lambo on The Lodge bitch you see me SWIRVIN (...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | D-Boy | `These white Diamonds like a key nigga` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Crazy | `She in and out my drawers like it's, like it'...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Cooler Than Me | `Mrs. Primadonna, this is your reminder` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Control | `They prayin' on my motherfuckin' downfall, bi...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Control | `I heard the barbershops be in great debates a...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Control | `You could check my name on the books` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Control | `The eyelashes like umbrellas when it rain fro...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Control | `I had women on women: yeah, that's bunk-bed b...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Control | `I'm important like the Pope, I'm a Muslim on ...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Control | `On some ground ball shit` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Come Up Show Freestyle Pt. 2 | `Mister Anderson, I know Sway ain't got the an...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Christmas in Harlem (GOOD Fridays Version) | `Okay, my white girl Veronica, black girl Moni...` | Mined candidate without confirmed sound flip or second reading. |
+| Big Sean | Christmas in Harlem (GOOD Fridays Version) | `They ain't hear my rain, dear, make it snow o...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Southside | `Bought it plain, then I blew out the brain (B...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Southside | `Saint Laurent on my coat, for real` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Still Runnin | `We do it for Von, we don't wait 'til it die d...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Streets Colder | `Got my mind on my money, I ain't thinkin' 'bo...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Stuff | `Me and Ski tryna see who the colder shit` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Stuff | `I put diamonds in my teeth like I'm Paul Wall` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Stuff | `Bought number three a new Guc', she suck dick` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Sum 2 Prove | `I ain't tryna have babies right now, so we fu...` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | Sum More | `Keep Twan with me case they play me` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | That’s Facts | `I'm 4 Pockets, I pop out with OTF` | Mined candidate without confirmed sound flip or second reading. |
+| Lil Baby | The Bigger Picture | `They trainin' officers to kill us, then shoot...` | Mined candidate without confirmed sound flip or second reading. |
+| Moneybagg Yo | FEBRUARY | `These new bills (blue), they been dead (prez)` | Mined candidate without confirmed sound flip or second reading. |

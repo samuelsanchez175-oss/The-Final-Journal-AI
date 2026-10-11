@@ -1,0 +1,3009 @@
+{
+  "generated": "2026-10-10",
+  "vault_threshold": "20+ distinct songs",
+  "artists": [
+    {
+      "name": "Drake",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 1211,
+      "legal_name": "Aubrey Drake Graham",
+      "aliases": [
+        "Drizzy",
+        "Champagne Papi",
+        "6 God",
+        "Aubrey"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "OVO",
+        "Toronto",
+        "the 6 / 6ix",
+        "40 (Noah Shebib)",
+        "Views",
+        "Certified Lover Boy",
+        "Degrassi",
+        "Young Money",
+        "PARTYNEXTDOOR",
+        "21 Savage (Her Loss)",
+        "Future (WATTBA)",
+        "Kendrick beef",
+        "Not Like Us"
+      ],
+      "cues_away": [
+        "duck",
+        "mallard",
+        "bird",
+        "pond",
+        "Drake Bell",
+        "Drake & Josh",
+        "Sir Francis Drake",
+        "Drake University"
+      ],
+      "collisions": [
+        "'drake' = male duck",
+        "'Aubrey' (Aubrey Plaza, Aubrey O'Day)",
+        "NoCap song 'Baby Drake' – a NoCap title, not a Drake reference",
+        "'6 God' vs generic 'six'"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Drake_(musician)",
+      "notes": ""
+    },
+    {
+      "name": "Veeze",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 220,
+      "legal_name": "Karon Malcolm Vantrees",
+      "aliases": [
+        "Veeze Worst",
+        "Black Justin Timberlake"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Detroit",
+        "Seven Mile",
+        "West Side Detroit",
+        "Navy Wavy",
+        "Ganger",
+        "GOMD",
+        "Babyface Ray",
+        "Lil Yachty (Sorry Not Sorry)",
+        "Rylo Rodriguez",
+        "Warner",
+        "Worst Tour Ever"
+      ],
+      "cues_away": [
+        "V's / vees (letters)",
+        "Icewear Vezzo",
+        "Veezo Da Shooter"
+      ],
+      "collisions": [
+        "Icewear Vezzo – another Detroit rapper, featured on Ganger",
+        "Veezo Da Shooter – Money Man collaborator",
+        "'Black Justin Timberlake' contains 'Justin' → Bieber/Timberlake fold",
+        "'Navy Wavy' vs NAV / US Navy"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Veeze",
+      "notes": ""
+    },
+    {
+      "name": "Juice WRLD",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 1599,
+      "legal_name": "Jarad Anthony Higgins",
+      "aliases": [
+        "Juice",
+        "999",
+        "JuiceTheKidd (early SoundCloud name)"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "999",
+        "Chicago",
+        "Homewood",
+        "Grade A",
+        "Lil Bibby",
+        "Interscope",
+        "Lucid Dreams",
+        "Legends Never Die",
+        "Death Race for Love",
+        "Goodbye & Good Riddance",
+        "Nick Mira",
+        "Future (WRLD on Drugs)",
+        "Ally Lotti"
+      ],
+      "cues_away": [
+        "orange juice",
+        "apple juice",
+        "OJ",
+        "juiced (steroids)",
+        "juice = clout/respect"
+      ],
+      "collisions": [
+        "'juice' = everyday word and slang for clout",
+        "'WRLD' read as 'world'",
+        "'999' as an angel number / '666' flip"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Juice_Wrld",
+      "notes": ""
+    },
+    {
+      "name": "Lil Uzi Vert",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 1886,
+      "legal_name": "Symere Bysil Woods",
+      "aliases": [
+        "Uzi",
+        "Lil Uzi",
+        "Baby Pluto"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Philadelphia",
+        "North Philly",
+        "Generation Now",
+        "DJ Drama",
+        "Don Cannon",
+        "Atlantic",
+        "Eternal Atake",
+        "XO Tour Llif3",
+        "Luv Is Rage",
+        "Pink Tape",
+        "forehead diamond",
+        "Pluto x Baby Pluto (Future)"
+      ],
+      "cues_away": [
+        "submachine gun",
+        "clip",
+        "drum",
+        "spray",
+        "Israeli",
+        "MAC-10",
+        "Draco",
+        "Glock"
+      ],
+      "collisions": [
+        "'Uzi' = the gun (very common in bars, e.g. Homixide Gang 'Uzi Work')",
+        "'Pluto'/'Baby Pluto' collides with Future's 'Pluto'",
+        "'Vert' = vert ramp"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Lil_Uzi_Vert",
+      "notes": ""
+    },
+    {
+      "name": "Fetty Wap",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 563,
+      "legal_name": "Willie Junior Maxwell II",
+      "aliases": [
+        "Fetty",
+        "1738"
+      ],
+      "aliases_unverified": [
+        "Zoo Gang (crew/nickname; seen widely, not confirmed on cited page)"
+      ],
+      "cues_toward": [
+        "Paterson, New Jersey",
+        "Remy Boyz",
+        "Monty",
+        "1738",
+        "Trap Queen",
+        "300 Entertainment",
+        "'yeah baby'",
+        "one eye"
+      ],
+      "cues_away": [
+        "fetti/fetty = money",
+        "fettuccine",
+        "WAP (Cardi B song)"
+      ],
+      "collisions": [
+        "'fetty' = money slang",
+        "'Wap'/'WAP' collides with Cardi B & Megan Thee Stallion 'WAP' (Cardi B is in the vault)",
+        "'1738' = Rémy Martin 1738 cognac (also why it's his tag)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Fetty_Wap",
+      "notes": ""
+    },
+    {
+      "name": "NoCap",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 290,
+      "legal_name": "Kobe Vidal Crawford Jr.",
+      "aliases": [
+        "Cap",
+        "Mr. Crawford",
+        "The Backend Child"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Mobile, Alabama",
+        "Birdsville",
+        "Rylo Rodriguez",
+        "Never Broke Again (former)",
+        "Atlantic",
+        "Ghetto Angels",
+        "Vaccine",
+        "The Hood Dictionary",
+        "Steel Human",
+        "The Main Bird",
+        "Before I Disappear Again"
+      ],
+      "cues_away": [
+        "no cap = no lie",
+        "cap = lie",
+        "capping",
+        "hat / fitted cap",
+        "Kobe Bryant",
+        "24 / Mamba"
+      ],
+      "collisions": [
+        "'no cap' / 'cap' is extremely common slang – never match on it without strong cues",
+        "'Kobe' (Kobe Bryant; Veeze '4 Kobe'; Money Man '24')",
+        "'Crawford' (Terence Crawford the boxer, Cindy Crawford)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/NoCap",
+      "notes": ""
+    },
+    {
+      "name": "Chief Keef",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 1081,
+      "legal_name": "Keith Farrelle Cozart",
+      "aliases": [
+        "Sosa",
+        "Almighty So",
+        "Keef"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Glo Gang / Glory Boyz",
+        "O'Block",
+        "Parkway Gardens",
+        "Chicago / Chiraq",
+        "300",
+        "Love Sosa",
+        "I Don't Like",
+        "Finally Rich",
+        "Faneto",
+        "Bang",
+        "Fredo Santana",
+        "Lil Reese",
+        "Tadoe",
+        "Ballout",
+        "Interscope"
+      ],
+      "cues_away": [
+        "kief / keef (cannabis)",
+        "chief (smoke / police chief / boss)",
+        "Alejandro Sosa (Scarface)",
+        "Sammy Sosa",
+        "Lil Keed"
+      ],
+      "collisions": [
+        "'chief' and 'keef'/'kief' are everyday/weed words",
+        "'Sosa' = Scarface plug archetype & Sammy Sosa",
+        "'Glo' collides with GloRilla ('Big Glo')",
+        "Keef vs Keed (Lil Keed) one letter apart"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Chief_Keef",
+      "notes": ""
+    },
+    {
+      "name": "YoungBoy Never Broke Again",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 1418,
+      "legal_name": "Kentrell DeSean Gaulden",
+      "aliases": [
+        "NBA YoungBoy",
+        "YoungBoy",
+        "YB",
+        "Kentrell"
+      ],
+      "aliases_unverified": [
+        "Top (used as nickname and album title; nickname not confirmed on cited page)"
+      ],
+      "cues_toward": [
+        "Baton Rouge",
+        "4KTrey",
+        "Never Broke Again",
+        "38 Baby",
+        "AI YoungBoy",
+        "Sincerely, Kentrell",
+        "Atlantic",
+        "Motown",
+        "Quando Rondo",
+        "NoCap",
+        "Utah (house arrest)"
+      ],
+      "cues_away": [
+        "NBA (the league)",
+        "basketball",
+        "Lakers / LeBron",
+        "young boy (generic)",
+        "top (generic)"
+      ],
+      "collisions": [
+        "'NBA' = National Basketball Association",
+        "'young boy' everyday phrase",
+        "'YB' generic initials",
+        "'Top' everyday word",
+        "Boosie Badazz also Baton Rouge – shared cue"
+      ],
+      "source": "https://en.wikipedia.org/wiki/YoungBoy_Never_Broke_Again",
+      "notes": ""
+    },
+    {
+      "name": "Lil Yachty",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 1352,
+      "legal_name": "Miles Parks McCollum",
+      "aliases": [
+        "Lil Boat",
+        "Boat",
+        "Yachty"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Atlanta",
+        "Mableton",
+        "Quality Control",
+        "Motown",
+        "Concrete Boys",
+        "Sailing Team",
+        "Teenage Emotions",
+        "Let's Start Here",
+        "Poland",
+        "One Night",
+        "Minnesota",
+        "red braids",
+        "Veeze",
+        "Drake"
+      ],
+      "cues_away": [
+        "yacht",
+        "boat",
+        "sailing",
+        "regatta",
+        "marina",
+        "Yacht Party (NoCap song)"
+      ],
+      "collisions": [
+        "'yacht'/'yachty'/'boat' common in luxury bars",
+        "'Lil Boat' is also an album title",
+        "'Miles' (Miles Davis, miles distance)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Lil_Yachty",
+      "notes": ""
+    },
+    {
+      "name": "Ty Dolla $ign",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 1279,
+      "legal_name": "Tyrone William Griffin Jr.",
+      "aliases": [
+        "Ty$",
+        "Ty Dolla",
+        "Dolla $ign"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Los Angeles",
+        "South Central",
+        "Taylor Gang",
+        "Wiz Khalifa",
+        "Atlantic",
+        "Paranoid",
+        "Beach House",
+        "Free TC (brother Big TC)",
+        "DJ Mustard",
+        "Kanye (¥$ / Vultures)"
+      ],
+      "cues_away": [
+        "dollar sign / $",
+        "Ty (generic)",
+        "Tyrone (generic)"
+      ],
+      "collisions": [
+        "'dollar sign' everyday phrase",
+        "'¥$' duo with Kanye – route to Ty only with Ty cues",
+        "'Ty' shared first name"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ty_Dolla_Sign",
+      "notes": ""
+    },
+    {
+      "name": "Rick Ross",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 1266,
+      "legal_name": "William Leonard Roberts II",
+      "aliases": [
+        "Rozay",
+        "Ricky Rozay",
+        "The Boss",
+        "Teflon Don",
+        "Renzel"
+      ],
+      "aliases_unverified": [
+        "Officer Ricky (diss nickname)"
+      ],
+      "cues_toward": [
+        "Maybach Music Group / MMG",
+        "Maybach Music",
+        "Miami",
+        "Carol City",
+        "Meek Mill",
+        "Wale",
+        "Hustlin'",
+        "Port of Miami",
+        "Wingstop",
+        "Belaire",
+        "beard",
+        "'ugh' grunt"
+      ],
+      "cues_away": [
+        "Freeway",
+        "LA crack",
+        "CIA",
+        "Iran-Contra",
+        "Nicaragua",
+        "Gary Webb",
+        "Dark Alliance",
+        "Ross Geller",
+        "Ross Dress for Less"
+      ],
+      "collisions": [
+        "'Freeway' Rick Ross – LA drug trafficker whose name the rapper took (he sued the rapper)",
+        "'the Boss' generic / Bruce Springsteen",
+        "'Teflon Don' also John Gotti's nickname",
+        "'Officer Ricky' – diss name from 50 Cent (references his corrections officer past) – unverified as alias"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "notes": ""
+    },
+    {
+      "name": "Justin Bieber",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 636,
+      "legal_name": "Justin Drew Bieber",
+      "aliases": [
+        "Biebs",
+        "JB",
+        "Bieber"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Stratford, Ontario",
+        "Canada",
+        "Scooter Braun",
+        "Usher",
+        "Baby",
+        "Purpose",
+        "Peaches",
+        "Hailey Bieber",
+        "Selena Gomez",
+        "Beliebers",
+        "Def Jam",
+        "Drew House"
+      ],
+      "cues_away": [
+        "Justin Timberlake",
+        "Justin Trudeau",
+        "Justin Jefferson",
+        "Justin Fields",
+        "Justin Herbert",
+        "James Brown (JB)",
+        "Jim Beam"
+      ],
+      "collisions": [
+        "'Justin' shared first name",
+        "'JB' initials (James Brown, JBL)",
+        "'Baby' song title vs everyday 'baby' and Lil Baby/DaBaby",
+        "Veeze alias 'Black Justin Timberlake'"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Justin_Bieber",
+      "notes": ""
+    },
+    {
+      "name": "Gunna",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 721,
+      "legal_name": "Sergio Giavanni Kitchens (verified; 'Sergio Kitchens' as Samuel said)",
+      "aliases": [
+        "Wunna",
+        "Gunna Wunna / GunWunna",
+        "YSL Gunna",
+        "Yung Gunna",
+        "Gunna Gunna"
+      ],
+      "aliases_unverified": [
+        "Wanna – per Samuel, unverified (no source found; documented nickname is 'Wunna', likely what Samuel means)",
+        "Shady Baby (listed by rapdictionary.com only)"
+      ],
+      "cues_toward": [
+        "YSL",
+        "Young Thug",
+        "Slime",
+        "Drip (Drip Season, Drip Too Hard, Drip or Drown)",
+        "P / pushin P",
+        "Lil Baby (Drip Harder)",
+        "Wheezy",
+        "Turbo",
+        "College Park",
+        "300",
+        "One of Wun",
+        "The Last Wun",
+        "Lemonade (Don Toliver/NAV)",
+        "DS4Ever"
+      ],
+      "cues_away": [
+        "gun / guns",
+        "gonna",
+        "want to",
+        "YNW"
+      ],
+      "collisions": [
+        "'Gunna' = 'gonna' – must not match without cues",
+        "'Wanna' = 'want to' – ONLY match with a strong Gunna cue on the same line (YSL, Thug, Drip, P, Wunna, pushin P)",
+        "'Wunna' vs 'one'/'won' (his album puns: One of Wun, The Last Wun)",
+        "2022 YSL RICO plea – 'snitch'/'plea' lines may point at him (cue toward)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Gunna_(rapper)",
+      "notes": "Legal name confirmed by Wikipedia, Library of Congress (id.loc.gov/authorities/names/no2019013417) and Wikidata. 'Wunna' is the documented spelling: 2020 album WUNNA and the song 'WUNNA' ('Your bitch on now, Gunna Wunna'); Genius notes GunWunna/GunnaWunna and the acronym Wealthy Unapologetic N***a Naturally Authentic. Searching for 'Wanna' as a Gunna nickname found nothing."
+    },
+    {
+      "name": "Quavo",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 183,
+      "legal_name": "Quavious Keyate Marshall",
+      "aliases": [
+        "Huncho",
+        "Quavious",
+        "Quavo Huncho"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Migos",
+        "Takeoff",
+        "Offset",
+        "Nawf",
+        "QC / Quality Control",
+        "Lawrenceville / Gwinnett",
+        "Rocket Power",
+        "Unc & Phew"
+      ],
+      "cues_away": [
+        "Hunxho (Atlanta rapper)"
+      ],
+      "collisions": [
+        "'Huncho Jack' = duo with Travis Scott – Quavo + Travis cues",
+        "'Hunxho' – separate Atlanta rapper, sounds the same",
+        "'Quavious' vs 'Quantavious' (Unfoonk, Young Nudy legal names)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Quavo",
+      "notes": ""
+    },
+    {
+      "name": "Future",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 756,
+      "legal_name": "Nayvadius DeMun Cash (born Nayvadius DeMun Wilburn)",
+      "aliases": [
+        "Pluto",
+        "Future Hendrix",
+        "Hndrxx",
+        "Super Future",
+        "Wizrd"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Freebandz",
+        "Metro Boomin",
+        "56 Nights",
+        "Wizrd",
+        "Dungeon Family / Rico Wade",
+        "Kirkwood",
+        "Zone 6",
+        "Mask Off",
+        "DS2",
+        "We Don't Trust You",
+        "Drake (WATTBA)",
+        "Lil Uzi (Pluto x Baby Pluto)",
+        "codeine / purple"
+      ],
+      "cues_away": [
+        "planet",
+        "dwarf planet",
+        "Disney dog",
+        "the future",
+        "in the future",
+        "Jimi Hendrix"
+      ],
+      "collisions": [
+        "'future' everyday word – require cues",
+        "'Pluto' shared with Lil Uzi Vert ('Baby Pluto')",
+        "'Hendrix' = Jimi Hendrix",
+        "legal surname 'Cash' collides with cash/money, Cash Cobain"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Future_(rapper)",
+      "notes": ""
+    },
+    {
+      "name": "Young Thug",
+      "kind": "artist",
+      "priority": true,
+      "db_distinct_songs": 36,
+      "legal_name": "Jeffery Lamar Williams",
+      "aliases": [
+        "Thugger",
+        "Jeffery / Jeffrey",
+        "Big Slime",
+        "Slime"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "YSL",
+        "slime",
+        "Gunna",
+        "Lifestyle",
+        "Atlanta",
+        "Cleveland Avenue",
+        "Lil Keed",
+        "Unfoonk",
+        "BSlime (nephew)",
+        "Slime Language",
+        "Punk",
+        "UY Scuti",
+        "Best Friend",
+        "Hot",
+        "RICO"
+      ],
+      "cues_away": [
+        "Dahmer",
+        "Epstein",
+        "Bezos",
+        "thug (generic)",
+        "Bone Thugs"
+      ],
+      "collisions": [
+        "'Jeffrey/Jeffery' = Dahmer, Epstein, Bezos",
+        "'thug' everyday word",
+        "'Slime' shared by all YSL members and YNW BSlime",
+        "'Big Slime' (Drake used it for Thug)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Young_Thug",
+      "notes": "Big Slime alias per Complex (Drake calling for 'Big Slime, a.k.a. Thugger')."
+    },
+    {
+      "name": "Lil Wayne",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 2218,
+      "legal_name": "Dwayne Michael Carter Jr.",
+      "aliases": [
+        "Weezy",
+        "Weezy F. Baby",
+        "Tunechi",
+        "Birdman Jr.",
+        "Mr. Carter",
+        "Wayne"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Young Money",
+        "Cash Money",
+        "Birdman",
+        "Hollygrove",
+        "New Orleans",
+        "Hot Boys",
+        "Tha Carter",
+        "Nicki Minaj",
+        "Drake",
+        "Lollipop",
+        "Mack Maine"
+      ],
+      "cues_away": [
+        "Bruce Wayne",
+        "Batman",
+        "Gotham",
+        "John Wayne",
+        "Dwayne Johnson",
+        "Wayne Gretzky",
+        "Wayne Rooney"
+      ],
+      "collisions": [
+        "'Wayne' – the Bruce Wayne misfile risk (Batman fold)",
+        "'Mr. Carter'/'Carter' shared with JAY-Z (Shawn Carter, 'S. Carter') and Playboi Carti (Jordan Carter)",
+        "'Baby' (Birdman's old name 'Baby')"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Lil_Wayne",
+      "notes": ""
+    },
+    {
+      "name": "JAY-Z",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 1023,
+      "legal_name": "Shawn Corey Carter",
+      "aliases": [
+        "Hov",
+        "Hova",
+        "Jigga",
+        "S. Carter",
+        "Jay"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Roc-A-Fella",
+        "Roc Nation",
+        "Marcy Projects",
+        "Brooklyn",
+        "Beyoncé",
+        "Blue Ivy",
+        "Kanye (Watch the Throne)",
+        "The Blueprint",
+        "Dame Dash",
+        "40/40"
+      ],
+      "cues_away": [
+        "blue jay",
+        "Jay (generic)"
+      ],
+      "collisions": [
+        "'Carter' shared with Lil Wayne and Playboi Carti",
+        "'Jay' generic first name / letter J"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Jay-Z",
+      "notes": ""
+    },
+    {
+      "name": "Yeat",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 1219,
+      "legal_name": "Noah Oliver Smith",
+      "aliases": [
+        "Twizzy"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Lyfestyle",
+        "Geffen",
+        "2093",
+        "Lyfë",
+        "Up 2 Më",
+        "Aftërlyfe",
+        "umlauts",
+        "bells / tonka"
+      ],
+      "cues_away": [
+        "yeet",
+        "yeah"
+      ],
+      "collisions": [
+        "'Yeat' vs 'yeet' slang",
+        "'Twizzy' vs 'Drizzy' (Drake)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Yeat",
+      "notes": ""
+    },
+    {
+      "name": "Trippie Redd",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 1142,
+      "legal_name": "Michael Lamar White IV",
+      "aliases": [
+        "Big 14",
+        "Lil 14",
+        "1400",
+        "Trippie"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Canton, Ohio",
+        "14th Street",
+        "1400 / 800",
+        "Life's a Trip",
+        "A Love Letter to You",
+        "Trip at Knight",
+        "Juice WRLD",
+        "XXXTentacion",
+        "Dark Knight Dummo (Travis Scott)"
+      ],
+      "cues_away": [
+        "trippy",
+        "trippin'",
+        "red (color)"
+      ],
+      "collisions": [
+        "'Dark Knight Dummo'/'Trip at Knight' are Batman-flavored titles – don't send to Batman fold",
+        "'14' numbers",
+        "'Redd' vs red"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Trippie_Redd",
+      "notes": ""
+    },
+    {
+      "name": "Tory Lanez",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 1118,
+      "legal_name": "Daystar Shemuel Shua Peterson",
+      "aliases": [
+        "Tory",
+        "Daystar"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Toronto",
+        "Brampton",
+        "One Umbrella",
+        "Say It",
+        "Luv",
+        "Chixtape",
+        "Megan Thee Stallion case"
+      ],
+      "cues_away": [
+        "Tory party (UK politics)",
+        "Tory Burch",
+        "traffic lanes"
+      ],
+      "collisions": [
+        "'Tory'/'Tori' names",
+        "Toronto shared with Drake, PARTYNEXTDOOR, NAV"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Tory_Lanez",
+      "notes": ""
+    },
+    {
+      "name": "Meek Mill",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 874,
+      "legal_name": "Robert Rihmeek Williams",
+      "aliases": [
+        "Meek"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Philadelphia",
+        "MMG",
+        "Rick Ross",
+        "Dreamchasers",
+        "Dreams and Nightmares",
+        "Reform Alliance",
+        "Free Meek",
+        "Nicki Minaj",
+        "Drake beef"
+      ],
+      "cues_away": [
+        "meek (humble)",
+        "mill / a mill (million)",
+        "factory"
+      ],
+      "collisions": [
+        "'meek' everyday word",
+        "'mill' = million",
+        "Big Meech / Homixide Meechie (similar sound)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Meek_Mill",
+      "notes": ""
+    },
+    {
+      "name": "Destroy Lonely",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 772,
+      "legal_name": "Bobby Wardell Sandimanie III",
+      "aliases": [
+        "Lonely"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Opium",
+        "Playboi Carti",
+        "Ken Carson",
+        "Atlanta",
+        "No Stylist",
+        "If Looks Could Kill",
+        "Unk (father)"
+      ],
+      "cues_away": [
+        "lonely (emotion)"
+      ],
+      "collisions": [
+        "'lonely' everyday word"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Destroy_Lonely",
+      "notes": ""
+    },
+    {
+      "name": "Yo Gotti",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 724,
+      "legal_name": "Mario Mims",
+      "aliases": [
+        "Gotti",
+        "Lil Yo (early name)"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "CMG / Collective Music Group",
+        "Memphis",
+        "North Memphis",
+        "Moneybagg Yo",
+        "Blac Youngsta",
+        "GloRilla",
+        "EST Gee",
+        "Rake It Up",
+        "Down in the DM"
+      ],
+      "cues_away": [
+        "John Gotti",
+        "mafia",
+        "Irv Gotti",
+        "Murder Inc",
+        "yo (interjection)"
+      ],
+      "collisions": [
+        "'Gotti' = John Gotti, very common mob reference",
+        "Yak Gotti (YSL)",
+        "Irv Gotti"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Yo_Gotti",
+      "notes": ""
+    },
+    {
+      "name": "Don Toliver",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 674,
+      "legal_name": "Caleb Zackery Toliver",
+      "aliases": [
+        "Don",
+        "Toliver"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Cactus Jack",
+        "Travis Scott",
+        "Houston",
+        "Heaven or Hell",
+        "No Idea",
+        "Lemonade",
+        "Hardstone Psycho",
+        "Kali Uchis",
+        "Atlantic"
+      ],
+      "cues_away": [
+        "mafia don",
+        "Don Corleone",
+        "Don (generic name)"
+      ],
+      "collisions": [
+        "'Don' generic & mob",
+        "'Teflon Don' = Rick Ross"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Don_Toliver",
+      "notes": ""
+    },
+    {
+      "name": "J. Cole",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 637,
+      "legal_name": "Jermaine Lamarr Cole",
+      "aliases": [
+        "Cole",
+        "Cole World"
+      ],
+      "aliases_unverified": [
+        "kiLL edward (KOD alter ego; not confirmed on cited page)"
+      ],
+      "cues_toward": [
+        "Dreamville",
+        "Fayetteville",
+        "Roc Nation",
+        "2014 Forest Hills Drive",
+        "Born Sinner",
+        "KOD",
+        "Middle Child",
+        "Kendrick (Big 3)",
+        "Bas"
+      ],
+      "cues_away": [
+        "coal",
+        "Nat King Cole",
+        "Keyshia Cole",
+        "coleslaw",
+        "Cole Haan",
+        "Cole Palmer"
+      ],
+      "collisions": [
+        "'Cole' surname everywhere",
+        "'Jermaine' (Jermaine Dupri, Jermaine Jackson)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/J._Cole",
+      "notes": ""
+    },
+    {
+      "name": "Young Dolph",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 632,
+      "legal_name": "Adolph Robert Thornton Jr.",
+      "aliases": [
+        "Dolph"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Paper Route Empire / PRE",
+        "Memphis",
+        "Castalia Heights",
+        "Key Glock",
+        "100 Shots",
+        "Major",
+        "Makeda's Cookies"
+      ],
+      "cues_away": [
+        "Dolph Lundgren",
+        "Adolf Hitler",
+        "dolphin",
+        "Dolph Ziggler"
+      ],
+      "collisions": [
+        "'Adolph/Adolf' Hitler",
+        "Dolph Lundgren"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Young_Dolph",
+      "notes": ""
+    },
+    {
+      "name": "Big Sean",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 601,
+      "legal_name": "Sean Michael Leonard Anderson",
+      "aliases": [
+        "Sean Don"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Detroit",
+        "GOOD Music",
+        "Kanye",
+        "Finally Famous",
+        "Def Jam",
+        "Jhené Aiko",
+        "'boi!' ad-lib",
+        "Mercy",
+        "IDFWU",
+        "Metro Boomin (Double or Nothing)"
+      ],
+      "cues_away": [
+        "Sean Combs / Diddy",
+        "Sean Paul",
+        "Sean Penn",
+        "Biggie"
+      ],
+      "collisions": [
+        "'Sean' shared",
+        "'Big' generic"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Big_Sean",
+      "notes": ""
+    },
+    {
+      "name": "Playboi Carti",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 599,
+      "legal_name": "Jordan Terrell Carter",
+      "aliases": [
+        "Carti",
+        "King Vamp"
+      ],
+      "aliases_unverified": [
+        "Cash Carti (early name; not confirmed on cited page)"
+      ],
+      "cues_toward": [
+        "Opium",
+        "Atlanta",
+        "AWGE / A$AP Mob",
+        "Whole Lotta Red",
+        "Die Lit",
+        "I Am Music",
+        "slatt",
+        "baby voice",
+        "Pi'erre Bourne",
+        "Ken Carson",
+        "Destroy Lonely",
+        "Homixide Gang"
+      ],
+      "cues_away": [
+        "Cartier",
+        "Carti glasses",
+        "Playboy magazine",
+        "Hugh Hefner"
+      ],
+      "collisions": [
+        "'Carti' = Cartier glasses slang",
+        "'Carter' shared with Lil Wayne & JAY-Z",
+        "'Cardi' (Cardi B) one letter off"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Playboi_Carti",
+      "notes": ""
+    },
+    {
+      "name": "Travis Scott",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 588,
+      "legal_name": "Jacques Bermon Webster II",
+      "aliases": [
+        "La Flame",
+        "Cactus Jack",
+        "Trav"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Cactus Jack",
+        "Houston",
+        "Missouri City",
+        "Astroworld",
+        "Utopia",
+        "Rodeo",
+        "'it's lit'",
+        "'straight up'",
+        "Kylie Jenner",
+        "Stormi",
+        "Mike Dean",
+        "Don Toliver",
+        "Huncho Jack"
+      ],
+      "cues_away": [
+        "Travis Kelce",
+        "Travis Barker",
+        "cactus",
+        "flame"
+      ],
+      "collisions": [
+        "'La Flame' vs Gucci Mane's 'La Flare'",
+        "'Jack' (jacking = robbing; Jack Harlow)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Travis_Scott",
+      "notes": ""
+    },
+    {
+      "name": "Tyler, the Creator",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 577,
+      "legal_name": "Tyler Gregory Okonma",
+      "aliases": [
+        "Tyler",
+        "Wolf Haley",
+        "Igor",
+        "Tyler Baudelaire"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Odd Future / OFWGKTA",
+        "Golf Wang",
+        "Golf le Fleur",
+        "Hawthorne",
+        "Frank Ocean",
+        "Earl Sweatshirt",
+        "Camp Flog Gnaw",
+        "Flower Boy",
+        "Chromakopia"
+      ],
+      "cues_away": [
+        "God / the Creator",
+        "Tyler Perry",
+        "Tyler Herro"
+      ],
+      "collisions": [
+        "'creator' = God",
+        "'Tyler' shared"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Tyler,_the_Creator",
+      "notes": ""
+    },
+    {
+      "name": "Kodak Black",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 560,
+      "legal_name": "Bill Kahan Kapri (born Dieuson Octave)",
+      "aliases": [
+        "Kodak",
+        "Yak"
+      ],
+      "aliases_unverified": [
+        "Project Baby (album title used as nickname)"
+      ],
+      "cues_toward": [
+        "Pompano Beach",
+        "Golden Acres",
+        "Sniper Gang",
+        "Atlantic",
+        "Tunnel Vision",
+        "No Flockin",
+        "Super Gremlin",
+        "Haitian"
+      ],
+      "cues_away": [
+        "Kodak camera",
+        "Kodak moment",
+        "yak = cognac"
+      ],
+      "collisions": [
+        "'Kodak' camera brand",
+        "'Yak' = cognac and Yak Gotti (YSL)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Kodak_Black",
+      "notes": ""
+    },
+    {
+      "name": "Moneybagg Yo",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 481,
+      "legal_name": "DeMario DeWayne White Jr.",
+      "aliases": [
+        "Bagg",
+        "Moneybagg"
+      ],
+      "aliases_unverified": [
+        "Bread Gang (crew name)"
+      ],
+      "cues_toward": [
+        "CMG",
+        "Memphis",
+        "Yo Gotti",
+        "N-Less / Bread Gang",
+        "Time Today",
+        "Federal 3X",
+        "Ari Fletcher"
+      ],
+      "cues_away": [
+        "money bag (generic)"
+      ],
+      "collisions": [
+        "'money bag(s)' everyday",
+        "Money Man (separate artist)",
+        "'Yo' shared with Yo Gotti"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Moneybagg_Yo",
+      "notes": ""
+    },
+    {
+      "name": "Lil Keed",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 478,
+      "legal_name": "Raqhid Jevon Render",
+      "aliases": [
+        "Keed"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "YSL",
+        "Young Thug",
+        "Cleveland Avenue",
+        "Lil Gotit (brother)",
+        "Long Live Mexico",
+        "Nameless"
+      ],
+      "cues_away": [],
+      "collisions": [
+        "Keed vs Keef (Chief Keef)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Lil_Keed",
+      "notes": ""
+    },
+    {
+      "name": "Chance the Rapper",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 465,
+      "legal_name": "Chancelor Jonathan Bennett",
+      "aliases": [
+        "Chano",
+        "Chance"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Chicago",
+        "SaveMoney",
+        "Vic Mensa",
+        "Acid Rap",
+        "Coloring Book",
+        "No Problem",
+        "Social Experiment",
+        "79th"
+      ],
+      "cues_away": [
+        "chance (probability)",
+        "take a chance"
+      ],
+      "collisions": [
+        "'chance' everyday word"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Chance_the_Rapper",
+      "notes": ""
+    },
+    {
+      "name": "Money Man",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 457,
+      "legal_name": "Tysen Jay Bolding",
+      "aliases": [
+        "Money Man"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Black Circle",
+        "Atlanta",
+        "Bronx (born)",
+        "Empire",
+        "24 (Lil Baby)",
+        "Epidemic",
+        "Red Eye",
+        "crypto / Blockchain",
+        "Cash Money (bought out)",
+        "Veezo Da Shooter",
+        "Peewee Longway"
+      ],
+      "cues_away": [
+        "money (generic)"
+      ],
+      "collisions": [
+        "'money man' everyday phrase – needs cues",
+        "'24' = Kobe Bryant"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Money_Man",
+      "notes": ""
+    },
+    {
+      "name": "03 Greedo",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 442,
+      "legal_name": "Jason Jamal Jackson",
+      "aliases": [
+        "Greedo"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Watts",
+        "Jordan Downs",
+        "Grape Street",
+        "Los Angeles",
+        "Kenny Beats",
+        "God Level",
+        "Never Bend"
+      ],
+      "cues_away": [
+        "Star Wars",
+        "Han Solo",
+        "Mos Eisley",
+        "bounty hunter",
+        "greedy"
+      ],
+      "collisions": [
+        "'Greedo' = Star Wars character"
+      ],
+      "source": "https://en.wikipedia.org/wiki/03_Greedo",
+      "notes": ""
+    },
+    {
+      "name": "G Herbo",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 440,
+      "legal_name": "Herbert Randall Wright III",
+      "aliases": [
+        "Lil Herb (former name)",
+        "Swervo",
+        "Herbo"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Chicago",
+        "79th",
+        "Terror Town",
+        "NLMB",
+        "PTSD",
+        "Lil Bibby",
+        "Swervo"
+      ],
+      "cues_away": [
+        "herb (weed)",
+        "herbs (cooking)"
+      ],
+      "collisions": [
+        "'herb' = weed slang"
+      ],
+      "source": "https://en.wikipedia.org/wiki/G_Herbo",
+      "notes": ""
+    },
+    {
+      "name": "Ken Carson",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 433,
+      "legal_name": "Kenyatta Lee Frazier Jr.",
+      "aliases": [
+        "Ken Car$on",
+        "Ken"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Opium",
+        "Playboi Carti",
+        "Destroy Lonely",
+        "Atlanta",
+        "A Great Chaos",
+        "Project X",
+        "X",
+        "Boy Barbie"
+      ],
+      "cues_away": [
+        "Barbie's Ken",
+        "Ben Carson",
+        "Johnny Carson",
+        "Kit Carson"
+      ],
+      "collisions": [
+        "'Ken'/Barbie (Nicki's 'Barbie' too)",
+        "Ben Carson"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ken_Carson_(rapper)",
+      "notes": ""
+    },
+    {
+      "name": "Key Glock",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 392,
+      "legal_name": "Markeyvius LaShun Cathey",
+      "aliases": [
+        "Glock",
+        "Glizock",
+        "Glockaveli"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Paper Route Empire",
+        "Memphis",
+        "Young Dolph (cousin)",
+        "Yellow Tape",
+        "Glock Season",
+        "Dum and Dummer"
+      ],
+      "cues_away": [
+        "Glock pistol",
+        "extended clip",
+        "switch"
+      ],
+      "collisions": [
+        "'Glock' = the gun, extremely common"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Key_Glock",
+      "notes": ""
+    },
+    {
+      "name": "Cash Cobain",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 364,
+      "legal_name": "Cashmere Lavon Small",
+      "aliases": [
+        "Cash"
+      ],
+      "aliases_unverified": [
+        "Slizzy (strongly associated nickname; not confirmed on cited page)"
+      ],
+      "cues_toward": [
+        "Bronx",
+        "sexy drill",
+        "Slizzy / Slizzies / Slizettes",
+        "Fisherrr",
+        "Bay Swag",
+        "Ice Spice",
+        "Chow Lee"
+      ],
+      "cues_away": [
+        "Kurt Cobain",
+        "Nirvana",
+        "cash (money)",
+        "Johnny Cash"
+      ],
+      "collisions": [
+        "'Cobain' = Kurt Cobain",
+        "'cash' everyday; Future's legal surname is Cash"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Cash_Cobain",
+      "notes": ""
+    },
+    {
+      "name": "Vic Mensa",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 363,
+      "legal_name": "Victor Kwesi Mensah",
+      "aliases": [
+        "Vic"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Chicago",
+        "Hyde Park",
+        "SaveMoney",
+        "Chance the Rapper",
+        "Kids These Days",
+        "Roc Nation",
+        "93PUNX",
+        "Down on My Luck"
+      ],
+      "cues_away": [
+        "Mensa (IQ society)",
+        "vics (Vicodin)"
+      ],
+      "collisions": [
+        "'Mensa' high-IQ society",
+        "'Vic' generic"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Vic_Mensa",
+      "notes": ""
+    },
+    {
+      "name": "NAV",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 356,
+      "legal_name": "Navraj Singh Goraya",
+      "aliases": [
+        "Nav"
+      ],
+      "aliases_unverified": [
+        "Brown Boy (self-descriptor tag)"
+      ],
+      "cues_toward": [
+        "XO",
+        "The Weeknd",
+        "Toronto",
+        "Rexdale",
+        "Metro Boomin (Perfect Timing)",
+        "Bad Habits",
+        "Lemonade",
+        "Champion"
+      ],
+      "cues_away": [
+        "navigation / GPS",
+        "Navy",
+        "Navy Wavy (Veeze label)"
+      ],
+      "collisions": [
+        "'nav' = GPS",
+        "Navy Wavy (Veeze)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Nav_(rapper)",
+      "notes": ""
+    },
+    {
+      "name": "Earl Sweatshirt",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 351,
+      "legal_name": "Thebe Neruda Kgositsile",
+      "aliases": [
+        "Earl",
+        "Thebe",
+        "randomblackdude (production alias)"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Odd Future",
+        "Tyler, the Creator",
+        "Free Earl / Samoa",
+        "Doris",
+        "Some Rap Songs",
+        "The Alchemist"
+      ],
+      "cues_away": [
+        "Earl Grey",
+        "sweatshirt (clothing)",
+        "Earl (generic)"
+      ],
+      "collisions": [
+        "'Earl' generic name",
+        "'sweatshirt' clothing"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Earl_Sweatshirt",
+      "notes": ""
+    },
+    {
+      "name": "Frank Ocean",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 324,
+      "legal_name": "Christopher Edwin Breaux",
+      "aliases": [
+        "Frank",
+        "Lonny Breaux (early name)"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Odd Future",
+        "Channel Orange",
+        "Blonde",
+        "Nostalgia, Ultra",
+        "Blonded",
+        "Thinkin Bout You",
+        "New Orleans",
+        "Homer"
+      ],
+      "cues_away": [
+        "ocean (water)",
+        "Frank Lucas",
+        "Frank Sinatra",
+        "Frank White"
+      ],
+      "collisions": [
+        "'ocean' everyday word",
+        "'Frank' shared"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Frank_Ocean",
+      "notes": ""
+    },
+    {
+      "name": "Young Nudy",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 320,
+      "legal_name": "Quantavious Tavario Thomas",
+      "aliases": [
+        "Nudy"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "East Atlanta",
+        "Zone 6",
+        "21 Savage (cousin)",
+        "Pi'erre Bourne (Sli'merre)",
+        "Slimeball"
+      ],
+      "cues_away": [
+        "nude / nudes"
+      ],
+      "collisions": [
+        "'nudy' vs nude",
+        "'Quantavious' shared with Unfoonk (Quantavious Grier)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Young_Nudy",
+      "notes": ""
+    },
+    {
+      "name": "PARTYNEXTDOOR",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 312,
+      "legal_name": "Jahron Anthony Brathwaite",
+      "aliases": [
+        "PND",
+        "Party"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "OVO",
+        "Drake",
+        "Mississauga",
+        "Toronto",
+        "Come and See Me",
+        "Recognize",
+        "Rihanna 'Work'"
+      ],
+      "cues_away": [
+        "party (event)",
+        "next door"
+      ],
+      "collisions": [
+        "'party' everyday word"
+      ],
+      "source": "https://en.wikipedia.org/wiki/PartyNextDoor",
+      "notes": ""
+    },
+    {
+      "name": "Fivio Foreign",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 303,
+      "legal_name": "Maxie Lee Ryles III",
+      "aliases": [
+        "Fivio"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Brooklyn",
+        "East Flatbush",
+        "drill",
+        "Pop Smoke",
+        "Big Drip",
+        "City of Gods",
+        "Columbia"
+      ],
+      "cues_away": [
+        "foreign / foreigns (cars)"
+      ],
+      "collisions": [
+        "'foreign' = luxury car, everyday rap word"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Fivio_Foreign",
+      "notes": ""
+    },
+    {
+      "name": "EST Gee",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 292,
+      "legal_name": "George Stone III",
+      "aliases": [
+        "Gee"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Louisville",
+        "Kentucky",
+        "CMG",
+        "Yo Gotti",
+        "Lick Back",
+        "Bigger Than Life or Death"
+      ],
+      "cues_away": [
+        "G / gee (generic)"
+      ],
+      "collisions": [
+        "'Gee'/'G' everyday"
+      ],
+      "source": "https://en.wikipedia.org/wiki/EST_Gee",
+      "notes": ""
+    },
+    {
+      "name": "Lil Baby",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 287,
+      "legal_name": "Dominique Armani Jones",
+      "aliases": [
+        "Baby",
+        "4PF",
+        "Lil Baby"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Quality Control",
+        "4PF / 4 Pockets Full",
+        "Atlanta",
+        "Oakland City",
+        "Gunna (Drip Harder)",
+        "Drip Too Hard",
+        "My Turn",
+        "The Bigger Picture",
+        "Jayda"
+      ],
+      "cues_away": [
+        "baby (infant / term of endearment)"
+      ],
+      "collisions": [
+        "'baby' everyday word – need cues",
+        "DaBaby",
+        "Birdman ('Baby')",
+        "Justin Bieber 'Baby'"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Lil_Baby",
+      "notes": ""
+    },
+    {
+      "name": "Blac Youngsta",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 275,
+      "legal_name": "Sammie Marquez Benson",
+      "aliases": [
+        "Youngsta"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Memphis",
+        "CMG",
+        "Yo Gotti",
+        "Heavy Camp",
+        "Booty",
+        "Young Dolph (2017 incident)"
+      ],
+      "cues_away": [
+        "youngsta (generic)"
+      ],
+      "collisions": [
+        "'youngsta' everyday slang"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Blac_Youngsta",
+      "notes": ""
+    },
+    {
+      "name": "Roddy Ricch",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 273,
+      "legal_name": "Rodrick Wayne Moore Jr.",
+      "aliases": [
+        "Roddy",
+        "Ricch"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Compton",
+        "Bird Vision",
+        "Atlantic",
+        "The Box",
+        "Ballin'",
+        "Please Excuse Me for Being Antisocial",
+        "Nipsey Hussle"
+      ],
+      "cues_away": [
+        "rich (generic)",
+        "Roddy Piper"
+      ],
+      "collisions": [
+        "'rich' everyday word",
+        "middle name 'Wayne' – another Wayne collision"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Roddy_Ricch",
+      "notes": ""
+    },
+    {
+      "name": "Latto",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 254,
+      "legal_name": "Alyssa Michelle Stephens",
+      "aliases": [
+        "Big Latto",
+        "Mulatto (former name)"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Atlanta",
+        "Clayton County",
+        "RCA",
+        "Big Energy",
+        "Put It on da Floor",
+        "777",
+        "The Rap Game"
+      ],
+      "cues_away": [
+        "latte",
+        "mulatto (term)"
+      ],
+      "collisions": [
+        "'mulatto' as a term",
+        "'latte' coffee"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Latto",
+      "notes": ""
+    },
+    {
+      "name": "Homixide Gang",
+      "kind": "group",
+      "priority": false,
+      "db_distinct_songs": 235,
+      "legal_name": "Homixide Meechie (Demetrius Chatman) & Homixide Beno! (Keyon Thomas)",
+      "aliases": [
+        "HXG",
+        "Homixide",
+        "Meechie",
+        "Beno"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Opium",
+        "Playboi Carti",
+        "Atlanta",
+        "5 / 55555",
+        "Snot or Not"
+      ],
+      "cues_away": [
+        "homicide (crime)",
+        "Big Meech / BMF",
+        "Beno (Detroit rapper)"
+      ],
+      "collisions": [
+        "'homicide' everyday crime word",
+        "Meechie vs Big Meech",
+        "Beno – Detroit rapper Beno (featured on Veeze's Navy Wavy)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Homixide_Gang",
+      "notes": ""
+    },
+    {
+      "name": "21 Savage",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 234,
+      "legal_name": "Shéyaa Bin Abraham-Joseph",
+      "aliases": [
+        "21",
+        "Savage"
+      ],
+      "aliases_unverified": [
+        "Slaughter King"
+      ],
+      "cues_toward": [
+        "Slaughter Gang",
+        "Zone 6",
+        "East Atlanta",
+        "Metro Boomin (Savage Mode)",
+        "Drake (Her Loss)",
+        "Young Nudy",
+        "Bank Account",
+        "a lot",
+        "UK / ICE"
+      ],
+      "cues_away": [
+        "savage (adjective)",
+        "21 (age)",
+        "Twenty One Pilots",
+        "Savage (Megan song)"
+      ],
+      "collisions": [
+        "'savage' and '21' everyday"
+      ],
+      "source": "https://en.wikipedia.org/wiki/21_Savage",
+      "notes": ""
+    },
+    {
+      "name": "SahBabii",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 228,
+      "legal_name": "Saaheem Malik Valdery",
+      "aliases": [
+        "King Squid"
+      ],
+      "aliases_unverified": [
+        "Sah"
+      ],
+      "cues_toward": [
+        "Atlanta",
+        "Squidnation",
+        "Pull Up Wit Ah Stick",
+        "squid"
+      ],
+      "cues_away": [
+        "squid / calamari"
+      ],
+      "collisions": [
+        "'babii' ~ baby"
+      ],
+      "source": "https://en.wikipedia.org/wiki/SahBabii",
+      "notes": ""
+    },
+    {
+      "name": "Cardi B",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 222,
+      "legal_name": "Belcalis Marlenis Almánzar",
+      "aliases": [
+        "Bardi",
+        "Cardi",
+        "Bacardi (name origin)"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Bronx",
+        "Washington Heights",
+        "Offset",
+        "Kulture",
+        "Atlantic",
+        "Bodak Yellow",
+        "WAP",
+        "Okurrr",
+        "Bardi Gang",
+        "Love & Hip Hop"
+      ],
+      "cues_away": [
+        "Bacardi rum",
+        "cardigan",
+        "cardio"
+      ],
+      "collisions": [
+        "'WAP' ↔ Fetty Wap",
+        "'Cardi' ↔ 'Carti'"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Cardi_B",
+      "notes": ""
+    },
+    {
+      "name": "YFN Lucci",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 201,
+      "legal_name": "Rayshawn Lamar Bennett",
+      "aliases": [
+        "Lucci"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "YFN / Young Fly Nation",
+        "Atlanta",
+        "Everyday We Lit",
+        "Wish Me Well",
+        "Reginae Carter"
+      ],
+      "cues_away": [
+        "Susan Lucci"
+      ],
+      "collisions": [
+        "Lucci rhymes with Gucci (Gucci Mane)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/YFN_Lucci",
+      "notes": ""
+    },
+    {
+      "name": "Sleepy Hallow",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 190,
+      "legal_name": "Tegan Anthony Chambers",
+      "aliases": [
+        "Sleepy"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Brooklyn",
+        "Sheff G",
+        "Winners Circle",
+        "Deep End Freestyle",
+        "2055",
+        "RCA"
+      ],
+      "cues_away": [
+        "Sleepy Hollow",
+        "Headless Horseman",
+        "Ichabod Crane",
+        "hollow",
+        "sleepy (tired)"
+      ],
+      "collisions": [
+        "'Sleepy Hollow' legend",
+        "'sleepy' everyday"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Sleepy_Hallow",
+      "notes": ""
+    },
+    {
+      "name": "Offset",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 182,
+      "legal_name": "Kiari Kendrell Cephus",
+      "aliases": [],
+      "aliases_unverified": [
+        "Set"
+      ],
+      "cues_toward": [
+        "Migos",
+        "Cardi B",
+        "Quavo",
+        "Takeoff",
+        "QC",
+        "Motown",
+        "Father of 4",
+        "Ric Flair Drip",
+        "Nawf"
+      ],
+      "cues_away": [
+        "offset (counterbalance)",
+        "carbon offset",
+        "set (gang set / a set)"
+      ],
+      "collisions": [
+        "'offset' everyday word",
+        "'set' everyday"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Offset_(rapper)",
+      "notes": ""
+    },
+    {
+      "name": "BIA",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 158,
+      "legal_name": "Bianca Miquela Landrau",
+      "aliases": [
+        "Bianca"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Boston / Medford",
+        "Pharrell (I Am Other)",
+        "Whole Lotta Money",
+        "London (J. Cole)",
+        "Epic"
+      ],
+      "cues_away": [
+        "Bureau of Indian Affairs",
+        "Bianca (generic)"
+      ],
+      "collisions": [
+        "'Bianca' shared name"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Bia_(rapper)",
+      "notes": ""
+    },
+    {
+      "name": "Pop Smoke",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 152,
+      "legal_name": "Bashar Barakah Jackson",
+      "aliases": [
+        "Woo",
+        "Pop"
+      ],
+      "aliases_unverified": [
+        "Big Woo"
+      ],
+      "cues_toward": [
+        "Brooklyn",
+        "Canarsie",
+        "Woo",
+        "808Melo",
+        "Fivio Foreign",
+        "Dior",
+        "Welcome to the Party",
+        "Meet the Woo",
+        "Shoot for the Stars"
+      ],
+      "cues_away": [
+        "pop smoke (military)",
+        "pop music",
+        "smoke (weed / beef)"
+      ],
+      "collisions": [
+        "'woo' ad-lib used by all Brooklyn Woos",
+        "'pop'/'smoke' everyday"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Pop_Smoke",
+      "notes": ""
+    },
+    {
+      "name": "BossMan Dlow",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 142,
+      "legal_name": "Devante Milan McCreary",
+      "aliases": [
+        "Dlow",
+        "Dlow Curry",
+        "BossMan"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Port Salerno, Florida",
+        "Alamo",
+        "Get In With Me",
+        "Mr Beat The Road",
+        "2 Slippery",
+        "NoCap ('What You Need')"
+      ],
+      "cues_away": [
+        "Steph Curry",
+        "boss man (generic)"
+      ],
+      "collisions": [
+        "'Curry' (Steph Curry / food)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Bossman_Dlow",
+      "notes": ""
+    },
+    {
+      "name": "GloRilla",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 130,
+      "legal_name": "Gloria Hallelujah Woods",
+      "aliases": [
+        "Big Glo",
+        "Glo"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Memphis",
+        "Frayser",
+        "CMG",
+        "Yo Gotti",
+        "F.N.F. (Let's Go)",
+        "Tomorrow 2",
+        "Cardi B",
+        "Hitkidd"
+      ],
+      "cues_away": [
+        "gorilla",
+        "Glo Gang (Chief Keef)"
+      ],
+      "collisions": [
+        "'Glo' ↔ Chief Keef's Glo Gang",
+        "'gorilla' everyday"
+      ],
+      "source": "https://en.wikipedia.org/wiki/GloRilla",
+      "notes": ""
+    },
+    {
+      "name": "diamond*",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 97,
+      "legal_name": "Misonn Scott",
+      "aliases": [
+        "diamond*"
+      ],
+      "aliases_unverified": [
+        "elleadorediamant (from reference.org only)"
+      ],
+      "cues_toward": [
+        "YSL",
+        "Young Thug",
+        "Tezzus",
+        "ØWay",
+        "UY Scuti Bøyz",
+        "Bada Bing, Bada Bøøm",
+        "Sk8star",
+        "Mechanicsville"
+      ],
+      "cues_away": [
+        "diamonds (jewelry)",
+        "VVS",
+        "ice"
+      ],
+      "collisions": [
+        "'diamond' is one of the most common rap words – require YSL/Tezzus/ØWay cues"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Diamond*",
+      "notes": "Wikipedia page is the duo 'Tezzus & Diamond*'."
+    },
+    {
+      "name": "DaBaby",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 82,
+      "legal_name": "Jonathan Lyndale Kirk",
+      "aliases": [
+        "Baby Jesus (former name)",
+        "Baby"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Charlotte",
+        "Billion Dollar Baby",
+        "Interscope",
+        "Suge",
+        "Rockstar",
+        "'let's go'"
+      ],
+      "cues_away": [
+        "baby",
+        "Jesus"
+      ],
+      "collisions": [
+        "'baby' everyday; Lil Baby; 'Baby Jesus' religious"
+      ],
+      "source": "https://en.wikipedia.org/wiki/DaBaby",
+      "notes": ""
+    },
+    {
+      "name": "BSlime",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 69,
+      "legal_name": "unverified (YSL BSlime – Young Thug's nephew)",
+      "aliases": [
+        "BSlime"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "YSL",
+        "Young Thug ('uncle')",
+        "Hood Voucher",
+        "Love Me or Don't",
+        "Slime Language",
+        "Lil Unky (Switch Up)"
+      ],
+      "cues_away": [
+        "YNW",
+        "YNW Melly",
+        "Gifford, Florida"
+      ],
+      "collisions": [
+        "YNW BSlime (Brandon King, YNW Melly's brother) is a DIFFERENT artist",
+        "'slime' shared YSL word"
+      ],
+      "source": "https://www.one37pm.com/music/bslime-ysl-young-thug",
+      "notes": "Vault songs ('So Slime', 'Really Be Slime') are YSL compilations → this is YSL BSlime."
+    },
+    {
+      "name": "Fridayy",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 68,
+      "legal_name": "Francis LeBlanc",
+      "aliases": [
+        "Fridayy"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Philadelphia",
+        "Olney",
+        "Haitian",
+        "DJ Khaled (God Did)",
+        "When It Comes to You",
+        "Blessings"
+      ],
+      "cues_away": [
+        "Friday (day)",
+        "Friday (movie)",
+        "Black Friday"
+      ],
+      "collisions": [
+        "'Friday' everyday word – only match exact 'Fridayy' or strong cues"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Fridayy",
+      "notes": ""
+    },
+    {
+      "name": "Montana 700",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 55,
+      "legal_name": "Anthony 'Tony' McDowell",
+      "aliases": [],
+      "aliases_unverified": [
+        "Tony Montana (alias per trapaganda.com)"
+      ],
+      "cues_toward": [
+        "Dallas",
+        "Oak Cliff",
+        "Ivywood Drive / 700 block",
+        "Double M Records",
+        "300 / Remain Solid",
+        "Zillionaire Doe",
+        "Jeezy",
+        "New Dallas",
+        "Count a Hunnit"
+      ],
+      "cues_away": [
+        "Scarface",
+        "Al Pacino",
+        "Joe Montana",
+        "Montana (state)",
+        "French Montana",
+        "Hannah Montana"
+      ],
+      "collisions": [
+        "'Tony Montana' = Scarface – almost always the movie",
+        "French Montana",
+        "Montana state"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Montana_700",
+      "notes": ""
+    },
+    {
+      "name": "BashfortheWorld",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 55,
+      "legal_name": "Sebastian Alfonso Martell",
+      "aliases": [
+        "Bash"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Dallas",
+        "Mexican-American",
+        "Migo in America",
+        "Mundo",
+        "Third World",
+        "Plata O Plomo?",
+        "SSG Splurge"
+      ],
+      "cues_away": [
+        "bash (party / hit)"
+      ],
+      "collisions": [
+        "'Migo' ↔ Migos",
+        "'bash' everyday"
+      ],
+      "source": "https://www.qobuz.com/us-en/interpreter/bashfortheworld/10797898",
+      "notes": ""
+    },
+    {
+      "name": "Fatt Smaxk",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 47,
+      "legal_name": "Bernard Banks",
+      "aliases": [
+        "HardNard"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Atlanta",
+        "Thomasville Heights",
+        "Kirkwood",
+        "Butta B",
+        "Smaxk or Die",
+        "Smaxk Season",
+        "Playboi Carti remix"
+      ],
+      "cues_away": [
+        "fat",
+        "smack (hit / heroin)",
+        "Lloyd Banks"
+      ],
+      "collisions": [
+        "'Banks' (Lloyd Banks, bank)",
+        "YTB Fatt"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Fatt_Smaxk",
+      "notes": ""
+    },
+    {
+      "name": "Unfoonk",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 36,
+      "legal_name": "Quantavious Grier",
+      "aliases": [
+        "Unfoonk"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Young Thug (brother)",
+        "YSL",
+        "Mob Ties",
+        "Slime Language 2",
+        "RICO"
+      ],
+      "cues_away": [],
+      "collisions": [
+        "'Quantavious' shared with Young Nudy",
+        "Unfoonk vs Lil Unky"
+      ],
+      "source": "https://www.rollingstone.com/music/music-news/young-thug-brother-unfoonk-sentenced-prison-rico-case-1234764381/",
+      "notes": ""
+    },
+    {
+      "name": "Takeoff",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 34,
+      "legal_name": "Kirsnick Khari Ball",
+      "aliases": [],
+      "aliases_unverified": [
+        "Take"
+      ],
+      "cues_toward": [
+        "Migos",
+        "Quavo (uncle)",
+        "Offset",
+        "QC",
+        "The Last Rocket",
+        "Only Built for Infinity Links",
+        "Houston (2022)"
+      ],
+      "cues_away": [
+        "takeoff (plane)",
+        "take off"
+      ],
+      "collisions": [
+        "'take off' everyday phrase",
+        "'Infinity Links' vs Thanos/Infinity stones"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Takeoff_(rapper)",
+      "notes": ""
+    },
+    {
+      "name": "Ballout",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 28,
+      "legal_name": "Will R. Carthan (unverified)",
+      "aliases": [
+        "Ballout"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Glo Gang",
+        "Chief Keef",
+        "Chicago",
+        "Ballout Baby"
+      ],
+      "cues_away": [
+        "ball out (phrase)"
+      ],
+      "collisions": [
+        "'ball out' everyday phrase"
+      ],
+      "source": "https://genius.com/artists/Ballout",
+      "notes": "Legal name only from low-quality aggregators."
+    },
+    {
+      "name": "Gucci Mane",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 27,
+      "legal_name": "Radric Delantic Davis",
+      "aliases": [
+        "Guwop",
+        "La Flare",
+        "East Atlanta Santa",
+        "Gucci"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "1017 / Brick Squad",
+        "East Atlanta",
+        "Zone 6",
+        "Trap House",
+        "'burr' ad-lib",
+        "ice cream tattoo",
+        "Keyshia Ka'oir"
+      ],
+      "cues_away": [
+        "Gucci (brand)"
+      ],
+      "collisions": [
+        "'Gucci' luxury brand – everyday in bars",
+        "'La Flare' vs Travis 'La Flame'"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Gucci_Mane",
+      "notes": ""
+    },
+    {
+      "name": "Lil Unky",
+      "kind": "artist",
+      "priority": false,
+      "db_distinct_songs": 21,
+      "legal_name": "Quantez Bland (unverified)",
+      "aliases": [],
+      "aliases_unverified": [
+        "Q",
+        "Q Money"
+      ],
+      "cues_toward": [
+        "YSL",
+        "Young Thug",
+        "Atlanta",
+        "Apes on Opium",
+        "Hard 2 Sleep",
+        "Quavo (What We Doing)",
+        "Ken Carson (Boy Barbie)",
+        "Biggs Money"
+      ],
+      "cues_away": [
+        "unc / unky (uncle)"
+      ],
+      "collisions": [
+        "'unky' = uncle",
+        "Unfoonk"
+      ],
+      "source": "http://rateyourmusic.com/artist/lil-unky",
+      "notes": ""
+    },
+    {
+      "name": "Quality Control",
+      "kind": "label",
+      "priority": false,
+      "db_distinct_songs": 1573,
+      "legal_name": "n/a – record label (QC)",
+      "aliases": [],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Migos",
+        "Quavo",
+        "Offset",
+        "Takeoff",
+        "Lil Baby",
+        "Lil Yachty",
+        "City Girls"
+      ],
+      "cues_away": [],
+      "collisions": [
+        "Label, not an artist: re-file bars to the performer"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Quality_Control_Music",
+      "notes": ""
+    },
+    {
+      "name": "Young Stoner Life",
+      "kind": "label",
+      "priority": false,
+      "db_distinct_songs": 525,
+      "legal_name": "n/a – record label / compilation credit (YSL)",
+      "aliases": [],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Young Thug",
+        "Gunna",
+        "Lil Keed",
+        "Unfoonk",
+        "BSlime",
+        "Lil Unky",
+        "diamond*"
+      ],
+      "cues_away": [],
+      "collisions": [
+        "Label/compilation credit; re-file by performer. 'YSL' is also Yves Saint Laurent"
+      ],
+      "source": "https://en.wikipedia.org/wiki/YSL_Records",
+      "notes": ""
+    },
+    {
+      "name": "Migos",
+      "kind": "group",
+      "priority": false,
+      "db_distinct_songs": 384,
+      "legal_name": "n/a – group (Quavo, Offset, Takeoff)",
+      "aliases": [
+        "Migos"
+      ],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "QC",
+        "Nawf",
+        "Culture",
+        "Bad and Boujee",
+        "Versace"
+      ],
+      "cues_away": [
+        "migo (Spanish 'amigo')"
+      ],
+      "collisions": [
+        "BashfortheWorld 'Migo in America'"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Migos",
+      "notes": ""
+    },
+    {
+      "name": "Sniper Gang",
+      "kind": "label",
+      "priority": false,
+      "db_distinct_songs": 30,
+      "legal_name": "n/a – Kodak Black's label",
+      "aliases": [],
+      "aliases_unverified": [],
+      "cues_toward": [
+        "Kodak Black",
+        "Syko Bob",
+        "Snapkatt"
+      ],
+      "cues_away": [
+        "sniper (rifle)"
+      ],
+      "collisions": [
+        "Label; re-file by performer"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Kodak_Black",
+      "notes": ""
+    },
+    {
+      "name": "YUME",
+      "kind": "producer",
+      "priority": false,
+      "db_distinct_songs": 25,
+      "legal_name": "n/a – producer credit",
+      "aliases": [],
+      "aliases_unverified": [],
+      "cues_toward": [],
+      "cues_away": [],
+      "collisions": [
+        "Producer: co-produced Drake 'IMY2', Young Thug 'Whoopty Do'. Re-file by performer"
+      ],
+      "source": "https://www.complex.com/music/a/tracewilliamcowen/yume-drake-kid-cudi-imy2",
+      "notes": ""
+    }
+  ],
+  "character_collisions": [
+    {
+      "name": "Batman / Bruce Wayne",
+      "fold": "Batman (DC)",
+      "toward": [
+        "Gotham",
+        "Robin",
+        "Alfred",
+        "Batmobile",
+        "Batcave",
+        "cape",
+        "Joker",
+        "Wayne Manor",
+        "Wayne Enterprises",
+        "Dark Knight"
+      ],
+      "away": [
+        "kung fu",
+        "karate",
+        "nunchucks",
+        "Enter the Dragon",
+        "dojo",
+        "Hollygrove",
+        "Young Money",
+        "Tunechi"
+      ],
+      "coll": [
+        "'Bruce' alone → Bruce Lee / Bruce Banner / Springsteen / Willis",
+        "'Wayne' alone → Lil Wayne, John Wayne, Dwayne Johnson",
+        "Trippie Redd titles 'Dark Knight Dummo', 'Trip at Knight'"
+      ]
+    },
+    {
+      "name": "Bruce Lee",
+      "fold": "Bruce Lee (martial arts)",
+      "toward": [
+        "kung fu",
+        "karate",
+        "nunchucks",
+        "Enter the Dragon",
+        "'be water'",
+        "dojo",
+        "one-inch punch",
+        "Jeet Kune Do"
+      ],
+      "away": [
+        "Gotham",
+        "Batman",
+        "Robin",
+        "green",
+        "Hulk"
+      ],
+      "coll": [
+        "Never route 'Bruce Wayne' here – 'Wayne' + any Batman cue beats 'Bruce'"
+      ]
+    },
+    {
+      "name": "Hulk / Bruce Banner",
+      "fold": "Hulk (Marvel)",
+      "toward": [
+        "green",
+        "smash",
+        "gamma",
+        "Avengers",
+        "anger / angry",
+        "Banner",
+        "incredible"
+      ],
+      "away": [
+        "Gotham",
+        "kung fu"
+      ],
+      "coll": [
+        "'Banner' vs a banner/flag",
+        "'Bruce' shared with Wayne and Lee – 'Banner' or 'Hulk' decides"
+      ]
+    },
+    {
+      "name": "Spider-Man / Peter Parker",
+      "fold": "Spider-Man (Marvel)",
+      "toward": [
+        "web",
+        "Spidey sense",
+        "Queens",
+        "Venom",
+        "Aunt May",
+        "Mary Jane + Peter",
+        "wall-crawl"
+      ],
+      "away": [
+        "weed",
+        "joint",
+        "blunt"
+      ],
+      "coll": [
+        "'Mary Jane' = weed unless Peter/Parker/Spider cues",
+        "'Parker' (Charlie Parker, Parker brand)"
+      ]
+    },
+    {
+      "name": "Superman / Clark Kent",
+      "fold": "Superman (DC)",
+      "toward": [
+        "Krypton",
+        "kryptonite",
+        "Lois Lane",
+        "Metropolis",
+        "cape",
+        "phone booth",
+        "S on chest",
+        "man of steel"
+      ],
+      "away": [],
+      "coll": [
+        "'Kent' / 'Clark' generic names",
+        "'superman' as 'super man' / Soulja Boy 'Crank That (Soulja Boy)' Superman dance"
+      ]
+    },
+    {
+      "name": "Joker",
+      "fold": "Joker (DC)",
+      "toward": [
+        "Batman",
+        "Gotham",
+        "Heath Ledger",
+        "Joaquin",
+        "why so serious",
+        "Harley Quinn",
+        "clown makeup"
+      ],
+      "away": [
+        "deck of cards",
+        "poker",
+        "comedian",
+        "joking"
+      ],
+      "coll": [
+        "'joker' = playing card / funny person"
+      ]
+    },
+    {
+      "name": "Iron Man / Tony Stark",
+      "fold": "Iron Man (Marvel)",
+      "toward": [
+        "Stark",
+        "arc reactor",
+        "Avengers",
+        "suit",
+        "Jarvis",
+        "RDJ"
+      ],
+      "away": [
+        "Scarface",
+        "Sosa"
+      ],
+      "coll": [
+        "'Tony' → Tony Montana (Scarface) / Montana 700"
+      ]
+    },
+    {
+      "name": "Tony Montana / Alejandro Sosa (Scarface)",
+      "fold": "Scarface (film)",
+      "toward": [
+        "Scarface",
+        "Pacino",
+        "say hello to my little friend",
+        "Miami",
+        "the world is yours",
+        "Manny",
+        "Elvira"
+      ],
+      "away": [
+        "Glo Gang",
+        "O'Block",
+        "Chicago"
+      ],
+      "coll": [
+        "'Sosa' → Chief Keef with Chicago/Glo cues",
+        "'Montana' → Montana 700 with Dallas/Oak Cliff cues"
+      ]
+    },
+    {
+      "name": "Thanos / Infinity Stones",
+      "fold": "Thanos (Marvel)",
+      "toward": [
+        "gauntlet",
+        "snap",
+        "infinity stones",
+        "Avengers"
+      ],
+      "away": [
+        "links",
+        "chain",
+        "Takeoff"
+      ],
+      "coll": [
+        "Takeoff album 'Only Built for Infinity Links'"
+      ]
+    },
+    {
+      "name": "Black Panther / T'Challa",
+      "fold": "Black Panther (Marvel)",
+      "toward": [
+        "Wakanda",
+        "vibranium",
+        "T'Challa",
+        "Killmonger"
+      ],
+      "away": [
+        "Black Panther Party",
+        "Huey Newton"
+      ],
+      "coll": [
+        "Black Panther Party (political)"
+      ]
+    },
+    {
+      "name": "Goku / Dragon Ball",
+      "fold": "Dragon Ball (anime)",
+      "toward": [
+        "Super Saiyan",
+        "Kamehameha",
+        "Vegeta",
+        "Kakarot",
+        "senzu"
+      ],
+      "away": [],
+      "coll": [
+        "'Saiyan' vs 'sayin''"
+      ]
+    },
+    {
+      "name": "Barbie / Ken",
+      "fold": "Barbie (Mattel)",
+      "toward": [
+        "Mattel",
+        "dollhouse",
+        "Malibu"
+      ],
+      "away": [
+        "Nicki",
+        "Barbz",
+        "Opium",
+        "Ken Carson"
+      ],
+      "coll": [
+        "Nicki Minaj = 'Barbie'",
+        "Ken Carson 'Boy Barbie'"
+      ]
+    },
+    {
+      "name": "'Freeway' Rick Ross (real person)",
+      "fold": "Freeway Rick Ross",
+      "toward": [
+        "Freeway",
+        "LA",
+        "crack",
+        "CIA",
+        "Nicaragua",
+        "Gary Webb"
+      ],
+      "away": [
+        "MMG",
+        "Maybach",
+        "Rozay",
+        "Miami"
+      ],
+      "coll": [
+        "Rapper Rick Ross"
+      ]
+    }
+  ]
+}

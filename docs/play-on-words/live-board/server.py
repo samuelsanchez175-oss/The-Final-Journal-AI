@@ -1450,6 +1450,118 @@ def mark_catalogued(people: list, watch: list) -> dict:
     return counts
 
 
+# --- Remaining artists (left column, under the roster; additive, read-only) --------------------------------
+# One row per person (same split_artist / catalog_people view as the roster) that is NOT done. DONE = any of:
+#   lane-claims/<artist>.done exists (complete 'processed=N/N', or any content when the artist has no click log;
+#   a stub .done is overridden by a click log that still shows uncovered vault songs) · an all-artists-progress.md row marks it completed
+#   ("completed" in the row, or Done-after + Unresolved >= Vault Songs) · its click log(s) cover every vault
+#   song (opened + logged missing/unresolved >= vault, the roster's coverage rule).
+# Quality Control (a label credit) is skipped. Vault sizes come from catalog_artists()/catalog_people(), which
+# read BarHitsCatalog.sqlite read-only once per file change (cached in memory + catalog-artists.json).
+REMAINING_SKIP = {"quality control"}
+_REMAINING_CACHE: dict = {"key": None, "rows": []}
+_MD_DONE_CACHE: dict = {"key": None, "rows": {}}
+
+
+def _md_progress_rows() -> dict:
+    """all-artists-progress.md -> {artist lower: {"after", "unres", "vault", "completed"}} (last row per artist)."""
+    key = _progress_file_key(ALL_ARTISTS_PROGRESS)
+    if key == _MD_DONE_CACHE["key"]:
+        return _MD_DONE_CACHE["rows"]
+    rows: dict = {}
+    for line in (_read_text_cached(ALL_ARTISTS_PROGRESS) or "").splitlines():
+        if not line.startswith("|"):
+            continue
+        c = [x.strip() for x in line.strip().strip("|").split("|")]
+        if len(c) < 4 or c[0].lower() == "artist" or set(c[0]) <= set("-: "):
+            continue
+        name = re.sub(r"\s*\[[^\]]+\]\s*", "", c[0]).strip().lower()
+        m = re.match(r"(\d+)\s*->\s*(\d+)", c[2])
+        def num(x):
+            try:
+                return int(x)
+            except (TypeError, ValueError):
+                return None
+        after = int(m.group(2)) if m else None
+        unres, vault = num(c[3]), num(c[1])
+        completed = any(x.lower() == "completed" for x in c[1:])
+        prev = rows.get(name) or {}
+        covered = (after or 0) + (unres or 0) if after is not None else None
+        rows[name] = {"after": after if after is not None else prev.get("after"), "unres": unres, "vault": vault,
+                      "covered": max(x for x in (covered, prev.get("covered"), -1) if x is not None),
+                      "completed": completed or bool(prev.get("completed"))}
+    _MD_DONE_CACHE.update(key=key, rows=rows)
+    return rows
+
+
+def remaining_artists(roster: dict) -> list:
+    """[{artist, vault_songs, done, done_src, sources?}] for persons not done, largest catalog first."""
+    people = roster.get("people") or []
+    credits = {r["artist"]: r for r in roster.get("rows") or []}
+    try:
+        claims_key = LANE_CLAIMS.stat().st_mtime_ns
+    except OSError:
+        claims_key = None
+    key = (hashlib.md5(json.dumps([[(p["artist"], p.get("vault_songs"), p.get("opened"), p.get("sources")) for p in people],
+                                   [(r["artist"], r.get("opened"), r.get("state")) for r in credits.values()]],
+                                  default=str).encode("utf-8")).hexdigest(),
+           _progress_file_key(ALL_ARTISTS_PROGRESS), claims_key)
+    if key == _REMAINING_CACHE["key"]:
+        return _REMAINING_CACHE["rows"]
+    try:
+        done_files = {p.stem.lower() for p in LANE_CLAIMS.glob("*.done")}
+    except OSError:
+        done_files = set()
+    md = _md_progress_rows()
+
+    def unres_left(credit: str) -> int:
+        try:
+            return _artist_unresolved_left(credit, NOTES_DIR / (credit.lower() + ".jsonl"))
+        except Exception:
+            return 0
+
+    def covered(credit_row) -> bool:
+        vault = int(credit_row.get("vault_songs") or 0)
+        return bool(vault) and int(credit_row.get("opened") or 0) + unres_left(credit_row["artist"]) >= vault
+
+    out = []
+    for p in people:
+        name = str(p.get("artist") or "")
+        low = name.lower()
+        if not name or low in REMAINING_SKIP:
+            continue
+        srcs = p.get("sources") or [name]
+        names = {low} | {s.lower() for s in srcs if len(split_artist(s)) == 1}
+        vault = int(p.get("vault_songs") or 0)
+        opened = int(p.get("opened") or 0)
+        src_rows = [credits[s] for s in srcs if s in credits]
+        has_log = any(r.get("exists") for r in src_rows)
+        # .done counts unless a click log for the artist exists and shows vault songs still uncovered: most .done
+        # files are the lane's claim stub renamed on exit (lane / PID / Started), so the log is the better witness.
+        if names & done_files and (not has_log or any(_done_claim_complete(n) for n in names & done_files)):
+            continue
+        # md: an explicit "completed", or Done-after + Unresolved >= the CATALOG vault (the md's own Vault Songs
+        # column can be a smaller per-lane credit count, e.g. 1 for a lane2 row of a 578-song artist).
+        if any((md.get(n) or {}).get("completed") or (vault and (md.get(n) or {}).get("covered", -1) >= vault) for n in names):
+            continue
+        if vault and opened + sum(unres_left(r["artist"]) for r in src_rows) >= vault:
+            continue
+        if src_rows and all(covered(r) for r in src_rows):
+            continue
+        row = {"artist": name, "vault_songs": vault}
+        mdr = next((md[n] for n in names if n in md and md[n].get("after") is not None), None)
+        if any(r.get("exists") for r in src_rows) or opened:
+            row["done"], row["done_src"] = min(opened, vault) if vault else opened, "click log"
+        elif mdr:
+            row["done"], row["done_src"] = min(int(mdr["after"]), vault) if vault else int(mdr["after"]), "progress md"
+        if len(srcs) > 1 or srcs[0] != name:
+            row["sources"] = srcs
+        out.append(row)
+    out.sort(key=lambda r: (-r["vault_songs"], r["artist"].lower()))
+    _REMAINING_CACHE.update(key=key, rows=out)
+    return out
+
+
 def catalog_rows(roster: dict) -> list:
     """People counted in the catalog tally (CATALOG DONE, NOTE INDEX bar, history). Falls back to per-credit
     rows with 20+ vault songs while the person view is not ready."""
@@ -2821,6 +2933,119 @@ def _job_recheck() -> dict:
     }
 
 
+# --- Reject rerun (Grok Box) job card: confirmed-recheck/reject-rerun-progress.json + chat-status/reject-rerun.md ---
+# Read-only. Pinned: the card stays in the Jobs grid in every state (not started / running / idle / done).
+REJECT_RERUN_JSON = PLAY_DIR / "confirmed-recheck/reject-rerun-progress.json"
+REJECT_RERUN_MD = CHAT_STATUS_DIR / "reject-rerun.md"
+REJECT_RERUN_TABS = (("sound_flip_homophone", "sound flips"), ("double_meaning", "double meanings"),
+                     ("split_name_brand", "split names"), ("hidden_reference", "hidden refs"))
+
+
+def _status_md(p: Path) -> dict:
+    """'Key: value' status file (same reading rules as chat-status/chat-N.md)."""
+    text = _read_text_cached(p)
+    if not text:
+        return {"exists": False}
+    out = {"exists": True, "mtime": _mtime(p)}
+    for ln in text.splitlines():
+        m = re.match(r"([A-Za-z][A-Za-z ]{1,24}):\s*(.*)$", ln.strip())
+        if m:
+            out.setdefault(m.group(1).strip().lower(), m.group(2).strip())
+    st = (out.get("state") or out.get("status") or "").strip().lower()
+    out["state_key"] = _CHAT_STATE_MAP.get(st) or next((v for k, v in _CHAT_STATE_MAP.items() if st.startswith(k)), None)
+    out["fresh"] = bool(out["mtime"] and time.time() - out["mtime"] <= CHAT_STATUS_FRESH_SECONDS)
+    return out
+
+
+def _et_text_ts(s):
+    """'2026-10-10 21:40:05 ET' / ISO 8601 / epoch -> epoch seconds (None when unreadable)."""
+    from datetime import datetime
+    if isinstance(s, (int, float)) and not isinstance(s, bool):
+        return float(s)
+    s = re.sub(r"\s*(ET|EDT|EST)\s*$", "", str(s or "").strip(), flags=re.I)
+    if not s:
+        return None
+    t = _iso_ts(s)
+    if t is not None:
+        return t
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y-%m-%d %I:%M:%S %p", "%Y-%m-%d %I:%M %p"):
+        try:
+            dt = datetime.strptime(s, fmt)
+            return (dt.replace(tzinfo=BOARD_TZ) if BOARD_TZ else dt.astimezone()).timestamp()
+        except ValueError:
+            continue
+    return None
+
+
+def _job_reject_rerun() -> dict:
+    def num(x):
+        try:
+            return max(0, int(x))
+        except (TypeError, ValueError):
+            return 0
+    md = _status_md(REJECT_RERUN_MD)
+    raw = _read_text_cached(REJECT_RERUN_JSON)
+    data, err = None, None
+    if raw is not None:
+        try:
+            data = json.loads(raw)
+            if not isinstance(data, dict):
+                data, err = None, "progress json is not an object"
+        except ValueError:
+            err = "progress json unreadable (mid-write?)"
+    lines, alerts = [], []
+    j = {"id": "reject-rerun", "num": 91, "title": "Reject rerun", "ai": "Grok Box", "pin": True, "pid": None, "alive": None,
+         "unit": "line", "bar_key": "reject-rerun", "born": None, "seed": None,
+         "chat": "Grok Box job · confirmed-recheck/reject-rerun-progress.json"}
+    if data is None:
+        expected = None
+        try:
+            cc = catch_counts()
+            expected = int((cc.get("counts") or {}).get("rejected") or 0) if cc.get("ok") else None
+        except Exception:
+            expected = None
+        lines.append("Waiting for confirmed-recheck/reject-rerun-progress.json" +
+                     (" · ~" + str(expected) + " rejected lines to re-evaluate" if expected else ""))
+        if err:
+            alerts.append(err)
+        status = md.get("state_key") if md.get("exists") and md.get("fresh") and md.get("state_key") in ("running", "waiting", "stopped") else "not_started"
+        j.update(status=status, headline="not started" if status == "not_started" else (md.get("doing") or "status file only"),
+                 value=0, total=expected or 0, last_ts=md.get("mtime"))
+    else:
+        total, reviewed = num(data.get("total")), num(data.get("reviewed"))
+        keep, reject, unsure = num(data.get("keep")), num(data.get("reject")), num(data.get("unsure"))
+        tabs = data.get("tabs") if isinstance(data.get("tabs"), dict) else {}
+        upd = _et_text_ts(data.get("updated_et"))
+        last = max([t for t in (upd, _mtime(REJECT_RERUN_JSON), md.get("mtime")) if t] or [0]) or None
+        st = str(data.get("state") or "").strip().lower()
+        if st in ("done", "finished", "complete", "completed") or (total and reviewed >= total and st not in ("running",)):
+            status = "done"
+        elif st in ("stopped", "crashed", "error", "failed"):
+            status = "stopped"
+        elif st in ("running", "") and last and time.time() - last <= JOB_IDLE_SECONDS:
+            status = "running"
+        elif st == "not_started" or (not reviewed and not st):
+            status = "not_started"
+        else:
+            status = "idle"
+        if md.get("exists") and md.get("fresh") and md.get("state_key") == "waiting":
+            status = "waiting"
+        j.update(status=status, value=reviewed, total=total, last_ts=last,
+                 headline=str(reviewed) + " reviewed · " + str(keep) + " KEEP · " + str(reject) + " REJECT · " + str(unsure) + " UNSURE")
+        j["born"] = getattr(os.stat(REJECT_RERUN_JSON), "st_birthtime", None) if REJECT_RERUN_JSON.exists() else None
+        lines.append("Keeps per tab: " + " · ".join(str(num(tabs.get(k))) + " " + label for k, label in REJECT_RERUN_TABS))
+        lines.append("Punchline flags: " + str(num(data.get("punchline_flags"))))
+        lines.append("Last update: " + (_et_label(upd) if upd else (str(data.get("updated_et") or "—"))) +
+                     (" · state: " + st if st else ""))
+        if upd and status == "idle" and st == "running":
+            alerts.append("No update for " + str(int((time.time() - upd) // 60)) + " min")
+    if md.get("exists"):
+        j["chat"] += " · status: " + (md.get("state") or md.get("status") or "?") + " (chat-status/reject-rerun.md" + ("" if md.get("fresh") else ", stale") + ")"
+        _chat_extras(md, lines, alerts)
+    j["lines"], j["alerts"] = lines, alerts
+    return j
+
+
 def _queue_counts():
     """wordplay-image-queue.md: (waiting rows before '## Completed', completed rows after)."""
     text = _read_text_cached(WIRING_QUEUE)
@@ -2908,7 +3133,7 @@ def _build_jobs() -> dict:
             _chat_extras(cs3, j["lines"], j["alerts"])
         return j
     builders = [(3, "lane2", "3 · Lane 2", lane2), (4, "wiring", "4 · Wire Noun Bank", _job_wiring),
-                (7, "recheck", "7 · Re-review", _job_recheck)]
+                (7, "recheck", "7 · Re-review", _job_recheck), (91, "reject-rerun", "Reject rerun", _job_reject_rerun)]
     special = {1, 3, 4, 7}
     chat_nums = set()
     for c in claims:
@@ -2944,7 +3169,7 @@ def _build_jobs() -> dict:
         if j is None:
             continue
         _title_with_ai(j)
-        if j.get("status") == "done" and j.get("id") not in ("main", "lane2", "wiring", "recheck"):
+        if j.get("status") == "done" and j.get("id") not in ("main", "lane2", "wiring", "recheck") and not j.get("pin"):
             done_strip.append({"id": j["id"], "title": j["title"], "summary": str(j.get("headline") or ""),
                                "finished_ts": j.get("last_ts"), "kind": "done", "ai": j.get("ai")})
             continue
@@ -3043,7 +3268,11 @@ class Board:
             roster["catalog_counts"] = mark_catalogued(roster.get("people") or [], watch)
         except Exception as exc:
             roster["catalog_counts"], roster["catalog_error"] = {}, str(exc)
-        roster["sig"] = hashlib.md5(json.dumps([roster["rows"], roster["people"]], sort_keys=True, default=str).encode("utf-8")).hexdigest()
+        try:
+            roster["remaining"] = remaining_artists(roster) if roster.get("ready") else []
+        except Exception as exc:  # never break the board over the remaining list
+            roster["remaining"], roster["remaining_error"] = [], str(exc)
+        roster["sig"] = hashlib.md5(json.dumps([roster["rows"], roster["people"], roster["remaining"]], sort_keys=True, default=str).encode("utf-8")).hexdigest()
         roster["counts"] = {k: sum(1 for r in roster["rows"] if r["state"] == k) for k in ("in_progress", "not_started", "completed")}
         self.roster = roster
         self.takeover_info = takeover_snapshot()
@@ -3326,6 +3555,8 @@ PAGE = r"""<!DOCTYPE html>
     font: 11px/1.4 "DM Mono", "JetBrains Mono", Menlo, monospace;
     margin-top: 8px;
   }
+  /* Third readout row (#wp-tabs): one tile per wordplay tab, same .telemetry.catches grid and tile style. */
+  .wp-tabs .readout .eyebrow { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   /* Second readout row: same .telemetry 5-column grid, 4 catch tiles + 1 empty cell (no stretching). */
   .telemetry.catches { padding-top: 0; }
   .readout.blank { pointer-events: none; }
@@ -3491,6 +3722,13 @@ PAGE = r"""<!DOCTYPE html>
     margin-top: 8px;
   }
   .bar { display: flex; }
+  /* Remaining artists (under the roster): amber header, dimmed rows, small ones collapsed. */
+  .remaining { margin-top: 14px; border-top: 1px solid rgba(223,184,55,.35); padding-top: 10px; }
+  .remaining .remaining-title { color: var(--amber); }
+  .remaining-list { max-height: 300px; }
+  .remaining-row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; padding: 4px 0; border-bottom: 1px solid #1d1d20; opacity: .62; }
+  .remaining-row .rm-name { font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .remaining-row .rm-num { color: var(--text-muted); font: 10px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace; white-space: nowrap; }
   .roster { margin-top: 16px; border-top: 1px solid var(--line); padding-top: 12px; }
   .roster-list { max-height: 440px; overflow-y: auto; margin-top: 8px; padding-right: 6px; }
   .roster-group { color: var(--text-muted); font: 10px/1.2 "DM Mono", "JetBrains Mono", Menlo, monospace; letter-spacing: .16em; text-transform: uppercase; margin: 12px 0 4px; }
@@ -3654,6 +3892,10 @@ PAGE = r"""<!DOCTYPE html>
         <div class="eyebrow" id="roster-title">ARTIST ROSTER · loading catalog…</div>
         <div class="roster-list" id="roster"></div>
       </div>
+      <div class="remaining">
+        <div class="eyebrow remaining-title" id="remaining-title">REMAINING ARTISTS · loading…</div>
+        <div class="roster-list remaining-list" id="remaining"></div>
+      </div>
     </div>
     <div class="terminal-feed">
       <div class="eyebrow" id="jobs-title">CURRENT WORK · LIVE JOBS · loading…</div>
@@ -3666,6 +3908,7 @@ PAGE = r"""<!DOCTYPE html>
   </div>
   <div class="telemetry" id="telemetry"></div>
   <div class="telemetry catches" id="catches"></div>
+  <div class="telemetry catches wp-tabs" id="wp-tabs"></div>
   <div class="controls">
     <div class="row" id="filters"></div>
     <div class="row">
@@ -4407,6 +4650,58 @@ function oneSongToggle(kind) {
 }
 let watchToggle = null;
 let rosterToggle = null;
+// --- Remaining artists (under the roster): keyed rows, built once, updated in place ---
+let remainingRows = null, remainingOneOpen = false, remainingToggle = null;
+const remainingNodes = new Map();
+function remainingRow(name) {
+  let r = remainingNodes.get(name);
+  if (r) return r;
+  const el = document.createElement("div");
+  el.className = "remaining-row";
+  const nm = document.createElement("span");
+  nm.className = "rm-name";
+  const num = document.createElement("span");
+  num.className = "rm-num";
+  el.append(nm, num);
+  r = { el, nm, num };
+  remainingNodes.set(name, r);
+  return r;
+}
+function paintRemaining(roster) {
+  if (Array.isArray(roster.remaining)) remainingRows = roster.remaining;
+  if (remainingRows === null) return;
+  const big = remainingRows.filter(r => Number(r.vault_songs) >= SMALL_ARTIST_SONGS);
+  const small = remainingRows.filter(r => Number(r.vault_songs) < SMALL_ARTIST_SONGS);
+  setText(document.getElementById("remaining-title"), "REMAINING ARTISTS · " + remainingRows.length + " · " + big.length + " with 20+ songs");
+  const nodes = [];
+  const put = (row, hide) => {
+    const r = remainingRow(row.artist);
+    setText(r.nm, row.artist);
+    const tip = row.sources ? "Includes: " + row.sources.join(" · ") : "";
+    if (r.nm.title !== tip) r.nm.title = tip;
+    setText(r.num, (row.done != null ? row.done + "/" + row.vault_songs + " done · " : "") + row.vault_songs + " songs");
+    if (r.num.title !== (row.done_src || "")) r.num.title = row.done_src || "";
+    setHidden(r.el, hide);
+    nodes.push(r.el);
+  };
+  big.forEach(row => put(row, false));
+  if (small.length) {
+    if (!remainingToggle) {                    // same look as the roster's toggle, its own open state
+      const holder = document.createElement("div");
+      holder.className = "one-song-row";
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "one-song-toggle";
+      btn.addEventListener("click", () => { remainingOneOpen = !remainingOneOpen; paintRemaining({}); });
+      holder.appendChild(btn);
+      remainingToggle = { el: holder, btn };
+    }
+    setText(remainingToggle.btn, (remainingOneOpen ? "Hide " : "Show ") + small.length + " artists under " + SMALL_ARTIST_SONGS + " songs");
+    nodes.push(remainingToggle.el);
+    small.forEach(row => put(row, !remainingOneOpen));
+  }
+  syncChildren(document.getElementById("remaining"), nodes);
+}
 function watcherActive(row, laneOf) {
   if (row.age != null && row.age < WATCH_ACTIVE_SECONDS) return true;
   const k = String(row.artist || "").toLowerCase();
@@ -4476,6 +4771,7 @@ function paintRoster() {
     setText(document.getElementById("roster-title"), "ARTIST ROSTER · " + (roster.error ? "catalog unavailable: " + roster.error : "loading catalog…"));
     return;
   }
+  paintRemaining(roster);
   const cc = roster.catalog_counts || {};
   setText(document.getElementById("roster-title"), "ARTIST ROSTER · " + (cc.total != null ? cc.total : rosterPeople.length) + " artists with 20+ songs · " + (cc.in_progress || 0) + " in progress · " + (cc.not_started || 0) + " not started · " + (cc.completed || 0) + " completed");
   const labels = { in_progress: "In progress", not_started: "Not started", completed: "Completed" };
@@ -4735,12 +5031,13 @@ function paintJobs(body) {
   }));
   const w = body.window || {};
   const LIVE = new Set(["running", "idle", "waiting"]);
-  const liveJobs = (body.jobs || []).filter(job => LIVE.has(job.status));
-  const demoted = (body.jobs || []).filter(job => !LIVE.has(job.status)).map(job => ({
+  const liveJobs = (body.jobs || []).filter(job => LIVE.has(job.status) || job.pin);   // pinned cards stay in every state
+  const demoted = (body.jobs || []).filter(job => !LIVE.has(job.status) && !job.pin).map(job => ({
     id: "job:" + job.id, title: job.title,
     summary: (JOB_STATE_TEXT[job.status] || String(job.status || "").toUpperCase()) + " · " + (job.headline || ""),
     finished_label: job.last_label || "" }));
   const DOT = { running: "green", idle: "amber", waiting: "red" };
+  const LIVE_N = liveJobs.filter(job => LIVE.has(job.status)).length;
   const nodes = liveJobs.map(job => {
     const j = jobNode(job);
     setClass(j.dot, "job-dot " + (job.dot || DOT[job.status] || ""));
@@ -4763,7 +5060,7 @@ function paintJobs(body) {
   syncChildren(document.getElementById("jobs"), nodes);
   paintDoneStrip(demoted.concat(body.done || []));
   trendSyncAll();
-  setText(document.getElementById("jobs-title"), "CURRENT WORK · " + nodes.length + " LIVE JOB" + (nodes.length === 1 ? "" : "S") + " · ANTI-GRAVITY CHATS + GROK BOX" + (body.generated_label ? " · checked " + body.generated_label : ""));
+  setText(document.getElementById("jobs-title"), "CURRENT WORK · " + LIVE_N + " LIVE JOB" + (LIVE_N === 1 ? "" : "S") + " · ANTI-GRAVITY CHATS + GROK BOX" + (body.generated_label ? " · checked " + body.generated_label : ""));
 }
 const doneRows = new Map();
 let doneOpen = false;
@@ -4870,6 +5167,40 @@ async function catchesTick() {
 }
 catchesTick();
 setInterval(catchesTick, 5000);
+
+// --- wordplay TAB tiles, third row (additive; /api/wordplay-tabs, one poll in flight, in-place updates only) ---
+// Same builder as the catch tiles: number + caption + yellow/blue bar + "+N new since 12:00 AM ET" + graph mode.
+let wpInFlight = false;
+function wpTile(t, w) {
+  const src = t.v2 ? t.index + " re-index + " + t.v2 + " line review" : t.index + " from the re-index";
+  const cap = t.id === "tab-punch" ? "flag on kept lines · " + src : src;
+  const cell = updateReadout(t.id, t.label, t.count, "", cap, 3);
+  const r = readoutNodes.get(t.id);
+  if (!r.note) { r.note = document.createElement("div"); r.note.className = "newnote"; cell.appendChild(r.note); }
+  setText(r.note, w && w.start_label ? "+" + (t.new || 0) + " new since " + w.start_label + ", resets " + (w.end_label || "").replace(" ET", "") : "");
+  return cell;
+}
+function paintWordplayTabs(body) {
+  if (!body || !body.ok || !Array.isArray(body.tabs)) return;   // keep the last good numbers
+  const w = body.window || {};
+  syncChildren(document.getElementById("wp-tabs"), body.tabs.map(t => wpTile(t, w)));
+  body.tabs.forEach(t => tileBar(t.id, t.bar, w));
+  trendSyncAll();
+}
+async function wpTick() {
+  if (wpInFlight) return;
+  wpInFlight = true;
+  try {
+    const res = await fetch("/api/wordplay-tabs", { cache: "no-store" });
+    if (res.ok) paintWordplayTabs(await res.json());
+  } catch (err) {
+    /* keep the last numbers on a transient miss */
+  } finally {
+    wpInFlight = false;
+  }
+}
+wpTick();
+setInterval(wpTick, 5000);
 
 // --- wordplay highlights (additive; separate endpoint, read live from jsonl) ---
 let hlData = null;
@@ -5250,6 +5581,205 @@ def catch_counts() -> dict:
         return payload
 
 
+# --- Wordplay TAB tiles (third readout row; additive, read-only) ------------------------------------------
+# Kept lines per Play on Words tab, deduped per artist+song+line (confirmed_key):
+#   wordplay-index/index.jsonl     scripted re-index (verdict KEEP/FIX/REJECT, tab, punchline_setup flag, row ts)
+#   wordplay-index/index-v2.jsonl  manual line-by-line review (verdict KEEP/REJECT/UNSURE, tab; no row ts)
+# index-v2 verdicts override index.jsonl for the same line (last row per line wins inside each file).
+# Counted = KEEP or FIX (FIX = kept with a corrected span; summary.md's tab totals count KEEP+FIX).
+# PUNCHLINE SETUPS is a flag, not a tab: kept lines with punchline_setup true, plus v2 rows filed under
+# tab "punchline_setups". "+N new" = kept lines that were not there at 12:00 AM ET (midnight value is
+# rebuilt from file timestamps, see _wp_counts_at; when it can't be known, the first value seen today).
+WP_DIR = PLAY_DIR / "wordplay-index"
+WP_INDEX = WP_DIR / "index.jsonl"
+WP_INDEX_V2 = WP_DIR / "index-v2.jsonl"
+WP_TABS = (("sound_flips", "tab-sound", "SOUND FLIPS & HOMOPHONES"),
+           ("double_meanings", "tab-double", "DOUBLE MEANINGS"),
+           ("split_names", "tab-split", "SPLIT NAMES & BRANDS"),
+           ("hidden_references", "tab-hidden", "HIDDEN REFERENCES"))
+WP_PUNCH_TAB = "punchline_setups"
+WP_METRICS = tuple(m for _t, m, _l in WP_TABS) + ("tab-punch",)
+WP_KEPT = ("KEEP", "FIX")
+WP_CACHE_SECONDS = 4
+_WP_CACHE: dict = {"at": 0.0, "payload": None}
+_WP_LOCK = threading.Lock()
+_WP_SERIES_CACHE: dict = {"key": None, "series": {}}
+_WP_MISSING_RE = re.compile(r"^index-v2\.jsonl\..*?(\d{8})_(\d{6})\.missing$")
+
+
+def _wp_v2_absent_until():
+    """Latest time index-v2.jsonl is documented as not existing yet (a '<name>.before-*-YYYYMMDD_HHMMSS.missing'
+    marker written next to it). None when there is no marker."""
+    from datetime import datetime
+    best = None
+    try:
+        for p in WP_DIR.glob("index-v2.jsonl.*.missing"):
+            m = _WP_MISSING_RE.match(p.name)
+            if not m:
+                continue
+            dt = datetime.strptime(m.group(1) + m.group(2), "%Y%m%d%H%M%S")
+            dt = dt.replace(tzinfo=BOARD_TZ) if BOARD_TZ else dt.astimezone()
+            best = max(best or 0.0, dt.timestamp())
+    except OSError:
+        return best
+    return best
+
+
+_WP_PREP: dict = {"v1": None, "v2": None, "e1": [], "e2": []}
+
+
+def _wp_prepared(v1: list, v2: list) -> tuple:
+    """Rows -> [(ts or None, key, row)] once per parsed row list (normalising 9k keys is the slow part)."""
+    if _WP_PREP["v1"] is not v1:
+        e1 = []
+        for r in v1:
+            bar = r.get("bar") or r.get("line")
+            if bar:
+                e1.append((_history_parse_ts(r.get("ts")), confirmed_key(r.get("artist"), r.get("song"), bar), r))
+        _WP_PREP.update(v1=v1, e1=e1)
+    if _WP_PREP["v2"] is not v2:
+        e2 = []
+        for r in v2:
+            bar = r.get("line") or r.get("bar")
+            if bar:
+                e2.append((None, confirmed_key(r.get("artist"), r.get("song"), bar), r))
+        _WP_PREP.update(v2=v2, e2=e2)
+    return _WP_PREP["e1"], _WP_PREP["e2"]
+
+
+def _wp_lines(t=None):
+    """{confirmed_key: {"tab", "punch", "src", "verdict"}} for the merged index. t=None: current files.
+    t=<epoch>: the same merge as it stood at t, or None when that can't be known from file timestamps."""
+    e1, e2 = _wp_prepared(_read_jsonl_cached(WP_INDEX), _read_jsonl_cached(WP_INDEX_V2))
+    use_v2 = True
+    if t is not None:
+        if any(ts is None for ts, _k, _r in e1):
+            return None                                  # index rows without ts: no honest past value
+        e1 = [e for e in e1 if e[0] <= t]
+        if e2:
+            mt = _mtime(WP_INDEX_V2)
+            absent = _wp_v2_absent_until()
+            if mt is not None and t >= mt:
+                use_v2 = True                            # file unchanged since its mtime
+            elif absent is not None and t < absent:
+                use_v2 = False                           # documented as not existing yet
+            else:
+                return None                              # written somewhere in between: unknown
+    lines: dict = {}
+    for _ts, k, r in e1:
+        lines[k] = {"verdict": str(r.get("verdict") or "").strip().upper(), "tab": str(r.get("tab") or "").strip(),
+                    "punch": r.get("punchline_setup") is True, "src": "index"}
+    if use_v2:
+        for _ts, k, r in e2:
+            prev = lines.get(k) or {}
+            tab = str(r.get("tab") or "").strip()
+            punch = r.get("punchline_setup") is True or tab == WP_PUNCH_TAB or (
+                "punchline_setup" not in r and prev.get("punch") is True)
+            lines[k] = {"verdict": str(r.get("verdict") or "").strip().upper(), "tab": tab or prev.get("tab", ""),
+                        "punch": punch, "src": "v2"}
+    return lines
+
+
+def _wp_tally(lines: dict) -> dict:
+    kept = {k: v for k, v in lines.items() if v["verdict"] in WP_KEPT}
+    out = {m: 0 for m in WP_METRICS}
+    by_src = {m: {"index": 0, "v2": 0} for m in WP_METRICS}
+    for v in kept.values():
+        m = next((mm for tab, mm, _l in WP_TABS if tab == v["tab"]), None)
+        if m:
+            out[m] += 1
+            by_src[m][v["src"]] += 1
+        if v["punch"]:
+            out["tab-punch"] += 1
+            by_src["tab-punch"][v["src"]] += 1
+    return {"counts": out, "by_src": by_src, "kept": len(kept),
+            "tabbed": sum(out[mm] for _t, mm, _l in WP_TABS)}
+
+
+def _wp_counts_at(t):
+    lines = _wp_lines(t)
+    return None if lines is None else _wp_tally(lines)["counts"]
+
+
+def _wp_window_new(values: dict):
+    """+N since 12:00 AM ET. Baselines live in stats-window-baseline.json (keys 'tab-*'); a missing baseline is
+    seeded with the midnight value rebuilt from file timestamps, else with the first value seen this window."""
+    with _STATS_WINDOW_LOCK:
+        start, _end = current_window()
+        try:
+            saved = json.loads(STATS_WINDOW_FILE.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            saved = {}
+        same = saved.get("window_start") == start.isoformat() and isinstance(saved.get("tiles"), dict)
+        base = saved.get("tiles") if same else {}
+        seed = {k: v for k, v in values.items() if not isinstance(base.get(k), int)}
+        if seed:
+            at_mid = _wp_counts_at(start.timestamp())
+            if at_mid is not None:
+                seed = {k: min(v, int(at_mid.get(k, v))) for k, v in seed.items()}
+            _stats_window_locked(seed)                   # writes baselines for the missing keys only
+        return _stats_window_locked(values)
+
+
+def _build_wordplay_tabs() -> dict:
+    lines = _wp_lines()
+    tal = _wp_tally(lines)
+    c = tal["counts"]
+    new, window = _wp_window_new(dict(c))
+    tabs = []
+    for tab, m, label in WP_TABS + ((WP_PUNCH_TAB, "tab-punch", "PUNCHLINE SETUPS"),):
+        total = tal["kept"] if m == "tab-punch" else tal["tabbed"]
+        tabs.append({"id": m, "tab": tab, "label": label, "count": c[m], "new": int(new.get(m, 0)),
+                     "index": tal["by_src"][m]["index"], "v2": tal["by_src"][m]["v2"],
+                     "bar": _tile_bar(c[m], total, new.get(m, 0),
+                                      ("flagged on %d of %d kept lines" if m == "tab-punch" else "%d of %d tabbed lines") % (c[m], total))})
+    now = time.time()
+    return {"ok": True, "tabs": tabs, "counts": c, "new": new, "window": window, "kept": tal["kept"], "tabbed": tal["tabbed"],
+            "sources": {"index": str(WP_INDEX.relative_to(ROOT)), "index_v2": str(WP_INDEX_V2.relative_to(ROOT)),
+                        "index_rows": len(_read_jsonl_cached(WP_INDEX)), "index_v2_rows": len(_read_jsonl_cached(WP_INDEX_V2)),
+                        "rule": "index-v2 verdict overrides index.jsonl per artist+song+line; KEEP/FIX counted"},
+            "generated": now, "generated_label": _et_label(now)}
+
+
+def wordplay_tabs() -> dict:
+    with _WP_LOCK:
+        now = time.time()
+        if _WP_CACHE["payload"] is not None and now - _WP_CACHE["at"] < WP_CACHE_SECONDS:
+            return _WP_CACHE["payload"]
+        try:
+            payload = _build_wordplay_tabs()
+        except Exception as exc:  # never break the board; client keeps the last numbers
+            payload = {"ok": False, "error": str(exc)}
+        _WP_CACHE.update(at=now, payload=payload)
+        return payload
+
+
+def _wp_rebuilt_series() -> tuple:
+    """(key, {metric: {grid_t: value}}) rebuilt on the 15-minute grid over the last 7 days from index.jsonl row ts
+    and index-v2.jsonl's mtime / '.missing' marker. Grid points whose value can't be known are left out, and
+    nothing is kept unless the rebuild at 'now' equals the live count. Never written to disk."""
+    key = (_progress_file_key(WP_INDEX), _progress_file_key(WP_INDEX_V2), _wp_v2_absent_until(),
+           int(time.time() // HISTORY_STEP))
+    if _WP_SERIES_CACHE["key"] == key:
+        return key, _WP_SERIES_CACHE["series"]
+    series = {m: {} for m in WP_METRICS}
+    live = _wp_tally(_wp_lines())["counts"]
+    if _wp_counts_at(time.time()) == live:
+        e1, _e2 = _wp_prepared(_read_jsonl_cached(WP_INDEX), _read_jsonl_cached(WP_INDEX_V2))
+        stamps = [e[0] for e in e1]
+        if stamps and all(s is not None for s in stamps):
+            now = time.time()
+            t = max(now - HISTORY_DAYS_DEFAULT * 86400, (min(stamps) // HISTORY_STEP) * HISTORY_STEP)
+            while t < now:
+                c = _wp_counts_at(t)
+                if c is not None:
+                    for m in WP_METRICS:
+                        series[m][t] = c[m]
+                t += HISTORY_STEP
+    _WP_SERIES_CACHE.update(key=key, series=series)
+    return key, series
+
+
 # --- Stat-tile progress bars (additive, read-only except new keys in stats-window-baseline.json) ---
 # Yellow = total so far, blue = what was added since the current 2-clock-hour ET window began.
 # NOTE INDEX / LINE POINTS reuse apply_window's per-artist new_songs (window-baseline.json, read via
@@ -5388,7 +5918,8 @@ HISTORY_STEP = 15 * 60
 HISTORY_DAYS_DEFAULT = 7
 HISTORY_VIEW_DAYS = None    # default view = since 12:00 AM ET today (current midnight-ET window); ?days= for a rolling span
 HISTORY_TILES = ("pairs", "notes", "points", "open-lanes", "catalog-avg", "catch-confirmed",
-                 "catch-unconfirmed", "catch-unsure", "catch-rejected", "catch-rereviewed")
+                 "catch-unconfirmed", "catch-unsure", "catch-rejected", "catch-rereviewed",
+                 "tab-sound", "tab-double", "tab-split", "tab-hidden", "tab-punch")
 _HISTORY_WRITE_LOCK = threading.Lock()
 _HISTORY_READ_LOCK = threading.Lock()
 _HISTORY_CACHE: dict = {"key": None, "rows": [], "resp": {}}
@@ -5457,6 +5988,13 @@ def _history_snapshot(ts=None) -> dict:
             for k in ("confirmed", "unconfirmed", "unsure", "rejected"):
                 tiles["catch-" + k] = int(c.get(k) or 0)
             tiles["catch-rereviewed"] = int((cc.get("re_reviewed") or {}).get("count") or 0)
+    except Exception:
+        pass
+    try:
+        wt = wordplay_tabs()                             # third row: wordplay tab tiles
+        if wt.get("ok"):
+            for m, v in (wt.get("counts") or {}).items():
+                tiles[m] = int(v or 0)
     except Exception:
         pass
     try:
@@ -5565,7 +6103,13 @@ def history_series(metric: str, days=None) -> list:
     else:
         cutoff = time.time() - days * 86400
     ck = (metric, days, cutoff if days is None else None)
-    sig = (id(live_rows), id(rb_rows))
+    wp_key, wp_series = (None, {})
+    if metric in WP_METRICS:
+        try:
+            wp_key, wp_series = _wp_rebuilt_series()
+        except Exception:
+            wp_key, wp_series = (None, {})
+    sig = (id(live_rows), id(rb_rows), wp_key)
     with _HISTORY_READ_LOCK:
         hit = _SERIES_CACHE.get(ck)
         if hit is not None and hit[0] == sig:
@@ -5589,6 +6133,8 @@ def history_series(metric: str, days=None) -> list:
         v = val(r)
         if v is not None:
             recon[r["t"]] = (r.get("ts") or _history_iso(r["t"]), v)
+    for t_, v in (wp_series.get(metric) or {}).items():     # wordplay tabs: rebuilt in memory from file timestamps
+        recon[t_] = (_history_iso(t_), v)
     for r in live_rows:
         v = val(r)
         if v is None:
@@ -6452,7 +6998,7 @@ class Handler(BaseHTTPRequestHandler):
             client_rsig = query.get("rsig", [""])[0]
             roster_out = state.get("roster") or {}
             if client_rsig and client_rsig == roster_out.get("sig"):
-                roster_out = {k: v for k, v in roster_out.items() if k not in ("rows", "people")}
+                roster_out = {k: v for k, v in roster_out.items() if k not in ("rows", "people", "remaining")}
                 roster_out["unchanged"] = True
             if client_gen.isdigit() and int(client_gen) == state["gen"] and state["gen"] != 0:
                 raw = json.dumps({
@@ -6488,6 +7034,15 @@ class Handler(BaseHTTPRequestHandler):
             return
         if parsed.path == "/api/catches":
             raw = json.dumps(catch_counts()).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(raw)))
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            self.wfile.write(raw)
+            return
+        if parsed.path == "/api/wordplay-tabs":
+            raw = json.dumps(wordplay_tabs()).encode("utf-8")
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.send_header("Content-Length", str(len(raw)))

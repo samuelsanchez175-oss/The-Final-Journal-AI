@@ -4,7 +4,7 @@ Each row is a highlighted Genius line that was clicked.
 The meaning is the community note that opened.
 A line with no highlight is listed as no note.
 
-Songs finished: 1065 of 1081.
+Songs finished: 1079 of 1081.
 
 | song | line | community meaning | second sense | Genius | votes | state |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3132,3 +3132,76 @@ Songs finished: 1065 of 1081.
 | Yes | Yes, yes, yes, yes, yes, yes, yes, yes, yes | Yes | no | 21368795 | 8 | pending |
 | Yes | When we get home, she eat, eat, eat, eat Chinese | Sosa in this line may be making a reference to the Chinese culture, in which some Chinese people are known for eating cats and dogs.  AlmightySo may be saying that when “they” (Ott | yes | 16623666 | 0 | pending |
 | Yes | She like eating Wonton and she like to wine and dine Baby, I ain’t got the time, tried to tell it, I went blind | Continuing the Chinese food metaphors, Keef uses Wonton soup as slang for his testicles—His girl is preforming drunk fellatio on him, like a wine and dine meal.  Keef tried to look | yes | 7641422 | 6 | accepted |
+| Yes Sir | Have your people tellin’ the news that you had potential, sir (Ayy) | “Had potential” he means that your people will be grieving your death and will be saying you had potential | yes | 41502274 | 0 | pending |
+| Yes Sir | We’ll put you on a stretcher | He’s gonna injure you bad so you get put on an ambulance stretcher | yes | 41502270 | 0 | pending |
+| Yes Sir | Is your whip bulletproof? I’ll be the tester (Test) Test that shit out like a damn semester | basically he’s gonna shoot at your car and by “damn semester” he’s referencing the tests you take in a school semester | yes | 41502261 | 0 | pending |
+| Yes Sir | Put that bitch out, she’s probably seekin’ shelter | Bitch also refers to a female dog. Keef is referring to how shelter dogs get euthanised (put down or put out) by using both meanings of the word bitch, likening the woman to a dog  | yes | 41412868 | 0 | pending |
+| Yes Sir | Got a AK the same height as Kendall | Sosa has a gun as tall as Kendall Jenner, who’s 5’11 | yes | 38461733 | 0 | pending |
+| Yes Sir | Hundred dollar steak and I don’t like the texture | He is autistic | no | 38040511 | 9 | pending |
+| Yes Sir | Walked up in the club, had to change the weather | He is talking about « making it rain » as in throwing money | yes | 37749191 | 0 | pending |
+| Yes Sir | You can die today, just scratch out yester | hes saying you can die today by scratching out yester in yesterday | yes | 33953857 | -1 | pending |
+| Yes Sir | She came to give me brain, but I can’t even learn | She is giving Chief Keef a blowjob aka brain and he saying he cant learn proabbly because he’s so focus getting the guap guap | yes | 28251194 | 2 | pending |
+| Yes Sir | I just flew a bitch in from Manchester (’Chester) | He flew in a bitch from Manchester UK | no | 28251192 | -1 | pending |
+| Yes Sir | Send the pussy boy to meet my ancestors | Basically he is going to kill the pussy boy. | yes | 27757986 | 3 | pending |
+| Yes Sir | Hop out the car, I’m flexin’ like Sylvester | Chief Keef is explaining how he’s flexing like Sylvester Stallone. Stallone is muscular and shows that in movies like Rambo and Rocky | yes | 24891276 | 2 | pending |
+| Yes Sir | Every time he beat the case, well done | Sosa’s lawyer is Grant Alvine, a tweet with Sosa, 2 associates, and Grant Alvine was posted on his twitter in 2014. | yes | 27357066 | 5 | pending |
+| Yes Sir | Chief So’ will put you on a shirt, yes sir (Yes sir) | At an individuals death due to gang violence or unsolved murder, it is common for the victim to be put on shirts by the family as a way to grieve. | yes | 27357063 | 1 | pending |
+| Yes Sir | Got a lil’ older, was a young flexer (Ayy, gang) | Chief Keef had large amounts of money since age 16 as that’s when “finally rich” was released. Spending a large portion and flaunting luxury cars as well as jewelry, notably chains | yes | 27357042 | 4 | pending |
+| Yes Sir | Best shit I ever wrote, this shit monumental, sir (Bang) But I didn’t write that shit, they like, “Why didn’t you, sir?” (Bang, bang, bang, bang-bang) How the fuck you havin’ all t | Chief Keef has stated that he freestyles much of his music. In a XXL interview, he even said that his last written album was “Almighty So” and that he was inspired by Lil Wayne, sa | yes | 26366347 | 3 | pending |
+| Yes Sir | I was trappin’, folks decided to commit a murder Tryna rob the trapper? Stupid bitch, don’t get murdered | Sosa was a heroin dealer (trapper) which he was also arrested for at age 16. The crime resulted in a Class X felony. | yes | 26324777 | 2 | pending |
+| Yes Sir | (Ayy) Yes sir I ain’t talkin’ schools, I’m waitin’ on a transfer (Gang, gang, gang) | The almighty refers to a bank transfer here | yes | 26324753 | 5 | pending |
+| Yes Sir | Poppin’ one pill, but it’s a double decker (Du-du-du, du-du-du) | Sosa says he took two pills at the same time cause they were sticking together | yes | 26324746 | -4 | pending |
+| Yes Sir | I might pull up in a Bentley Continental, sir (Bang) | The Bentley Continental is a luxurious car (>$200,000) | yes | 26324726 | 0 | pending |
+| Yes Sir | Track’ cost too much, told that bitch “No sir” (No sir) | Chief Keef refers to a Jeep Trackhawk, a Super-SUV which costed $87,650 in 2021. They are considered one of the fastest SUV’s with a 0-100 km/h time of 3.7 seconds and a top speed  | yes | 26113627 | 1 | pending |
+| Yes Sir | Tipped the waiter good | *Tipped the waiter good  Mr. Keef loves the working class.  whoever thought this said “took away the good” is an illiterate child and needs to take themselves away from transcribin | yes | 25994449 | 8 | pending |
+| Yes Sir | They asked me what I want, I said, “I want forever” (’Ever) | This refers to New Hampshire raised artist Colby Goon, who created his brand 4Evergoon. Keef and Goon have met numerous times in which one time Colby Goon gifted Keef his 4Evergoon | yes | 25600254 | 3 | pending |
+| Yes Sir | He’ll kill his mama for a lil’ exposure (Exposure) And he left her body where the fuckin’ crows were (Fuckin’ crows were) | Qaw'mane Wilson (Young QC) is a fellow Chicagoan rapper who, in 2012 hired hitmen to kill his own mother and then used the inheritance money for his own rap carrier. he was sentenc | yes | 25589892 | 10 | pending |
+| Yes Sir | Walkin’ on the P’s and gettin’ G’s, Vector (Burr) | Chief Keef as many know by now is a multifaceted talent. This verse he proves he’s a triple (entendre) threat!   “Walkin' on the P’s” is another way to say stepped on Pounds of var | yes | 24756628 | 12 | pending |
+| Yes Sir | She be tryna smoke and every time, I be big worm | Chief Keef is referencing Big Worm from the classic movie Friday. Worm is known for never wanting to share his supply, particularly with Smokey | yes | 24678249 | 5 | pending |
+| Yes Sir | Pulled up on the block, it’s hot, flamin’ Chesters (Gang, gang) | He’s referring to Lil Wayne’s debut major label studio album “The Block Is Hot”.    Chief Keef made it known multiple times that he grew up listening to Lil Wayne’s music and it in | yes | 24661405 | 8 | pending |
+| Yesterday | My gat is on me though | His pistol/revolver is with him. | yes | 31457527 | 0 | pending |
+| Yo Squad | She | She | no | 13085318 | 0 | pending |
+| You & Me | I’m sorry but I can’t eat it like groceries | A callback to Omarion’s “Post to Be,” where Jhene Aiko sang:  I might let your boy chauffeur me But he gotta eat the booty like groceries  Young Thug is heavily associated with the | yes | 38070347 | 1 | pending |
+| You & Me | I don’t see nothin’ wrong (Nah) With a gangster being on your mind (Sosa baby, GBE baby) | This line is a reference to R. Kelly’s 1994 single “Bump n' Grind” that was a huge hit, where he says:  I don’t see nothing wrong with a little bump and grind | yes | 26387249 | 0 | pending |
+| You My Number One | Baby, you’s my number one, she’s my number two You know I gotta come home, girl, what’s up with you? | Chief Keef is explicitly ranking his romantic interests. Even though he has other women in his life (“number two”), he is reassuring the woman he’s speaking to that she holds the t | yes | 41752487 | 0 | pending |
+| You My Number One | Baby, you’s my number one, she’s my number two You know I gotta come home, girl, what’s up with you? | Chief Keef is explicitly ranking his romantic interests. Even though he has other women in his life (“number two”), he is reassuring the woman he’s speaking to that she holds the t | yes | 41752481 | 0 | pending |
+| You My Number One | Baby, you’s my number one, she’s my number two You know I gotta come home, girl, what’s up with you? | Chief Keef is explicitly ranking his romantic interests. Even though he has other women in his life (“number two”), he is reassuring the woman he’s speaking to that she holds the t | yes | 41752474 | 0 | pending |
+| You My Number One | I’m outerspace, she told me phone home | Chief keef references the famous line from ET “ET phone home” while also saying he is outerspace or out her space and she wants him to phone home (phone her)  https://youtube.com/s | yes | 40323420 | 0 | pending |
+| You My Number One | Girl, I got a letter, I’m gon’ start it off with my dear | “Dear” is a formal greeting used to start a written letter to someone. | yes | 36278751 | 0 | pending |
+| You My Number One | She like, “what you getting into tonight?” You, you, you, you, you, you, you, you | Chief Keef’s lover asks what Sosa’s plans will be tonight (“what you getting into tonight?”), and he would cleverly turn this into a double entendre, saying that he plans to “get i | yes | 36250825 | 0 | pending |
+| You My Number One | Girl, I promise I’m gon’ milk you right Moo, moo, moo, moo, moo, moo, moo, moo | No words. | no | 33949745 | 6 | pending |
+| You My Number One | You know you my mamacita, I’m yo papi chulo | . | no | 31127937 | 0 | pending |
+| You My Number One | You want me to buzz you, I can be your lightyear | Referencing the Buzz Lightyear character from the Toy Story franchise. | yes | 25211804 | 2 | pending |
+| You My Number One | Turn the music up for me Chris | This is the producer tag for CBMix, producer of this track, recorded by Lil Pump. CBMix also goes by CB and formally as Chris Barnett.  CBMix is a Chicago-based producer/engineer w | yes | 14978216 | 5 | accepted |
+| Young & Reckless | Boy you be a Tweeter, I pull up on the tweaker | his opps only beef on Twitter, while he is actually about that life and will pull up and shoot you | yes | 8344747 | 1 | pending |
+| Young & Reckless | Taylor what up? | Tadoe what up❓ | no | 7632404 | 4 | pending |
+| Young & Reckless | Dummy | *dummy | no | 7628533 | 1 | pending |
+| Young & Reckless | I’m smokin’ jumbos When I roll up the Swishers, roll up the Swishers I’m rollin’ up Backwoods Fill that Backwood with reefer, Backwood with reefer | “Swisher Sweets” and “Backwoods” are both brands that manufacturer cigars that are most commonly emptied and used to roll Marijuana in – a practice Sosa can be caught in at most ti | yes | 7624657 | 6 | accepted |
+| Young & Reckless | Yeah, thirty Glocks, Glocks, Rugers | Durk is no stranger when it comes to firearms, and he is always strapped with numerous types of pistols including Glocks and Rugers. | yes | 7624194 | 6 | accepted |
+| Young & Reckless | I’m OTF, but tell Sosa I need a Glo Man | OTF stands for “Only the Family”, and it is a movement started by Durk himself and couple more Black Disciple gang members, mostly out of Team 600.  Chief Keef and Lil Durk had a b | yes | 7623322 | 6 | accepted |
+| Young Black Bruce Lee | JuneBug, | A fallen member of MOB gang who died at 14. | yes | 31109523 | 0 | pending |
+| Young Black Bruce Lee | Try me, he gon’ get shot, never tell Almighty what he not | almighty as in bruce almighty and also sosa godly | yes | 29298040 | 0 | pending |
+| Young Black Bruce Lee | And Fathead now | a dead o51 member | yes | 7446557 | 1 | pending |
+| Young Black Bruce Lee | Tooka | A fallen gang member of a rival gang named Tooka. | yes | 5033888 | 0 | pending |
+| Young Black Bruce Lee | Aiki | A fallen member of a rival gang. | yes | 5033879 | 1 | pending |
+| Young Rambos | Let a bitch try to play me like GTA | Grand Theft Auto is a video game that you can play on a multitude of different consoles, the fifth instalment of that series was also released around the time Almighty So released  | yes | 29788543 | 0 | pending |
+| Yours | The fuck I look like Peter? The fuck, you look like Tinker | Peter Griffin | no | 32361480 | 0 | pending |
+| Yours | He say he got swag, but, me, I got ether | a reference to legendary NY rappers Jay Z & Nas. In 2001, both MC’s finally bumped heads on wax, resulting in 2 of the greatest diss tracks ever in “Takeover” & “Ether.” Jay Z clai | yes | 8031418 | 2 | pending |
+| Yours | He say he got Springfield, me, I got Lisa | This is a reference to the hit American sitcom The Simpsons by Matt Groening. Springfield is the town that the Simpsons family live in. Lisa is the eldest daughter of Homer Simpson | yes | 7616738 | 4 | accepted |
+| Zero to 250 | Boss shit, Ball fucked your bitch, boy that’s Ball bitch | Chief Keef disses Bosstop (O'Block 🅱️✡️) here, saying that Ballout (Lamron 🅱️✡️) was smashing Top’s bitch | yes | 40046715 | 0 | pending |
+| Zero to 250 | DP on the beat | This is the producer tag for Dreezy, one of the producers of this song. | yes | 33526043 | 0 | pending |
+| Zero to 250 | Got it tatted on me, but I’m Glo Gang, bitch, ayy | In this line, Chief Keef is referring to his O'Block tattoo which is across his neck.  At the time of recording this song, Sosa had recently fallen out with other members of O'Bloc | yes | 29818074 | 4 | pending |
+| Zero to 250 | Can you take 18 shots like you two 50's? Ayy | In 2000, rapper 50 cent was shot 9 times in a drive by. So 2 50’s would be 18 shots | yes | 23285302 | 4 | pending |
+| Zero to 250 | Gang | gay  PROPOSED SUGGESTION: I mean just look at it. It just says “gay”  AND THERE’S A SNIPPET WHERE SOSA SINGING WITH IT AND HE OBVIOUSLY SAY GAY | yes | 19439407 | 8 | pending |
+| Zero to 250 | Stole my daughter’s clothes, boy, your ass a fool with it | This was a straight diss to BossTop, who stole his chain and apparently KayKay clothes | yes | 17379075 | 8 | pending |
+| Zero to 250 | All that Stretch Gang denied, I brought you in it Ayy, 300 what? 300 tools with me | A diss to Bosstop and possibly all the other 300 niggas who have been hating on Sosa recently including T-Roy, LamronFresh, and Oj300. Stretch Gang was another name of the crew. Bo | yes | 4099447 | 13 | accepted |
+| Zero to 250 | 0 to 300 fast, bitch, boolin’ it, ayy | A quick reference to Lil Durk’s song “0 to 300.” Could be a diss, since when Chief Keef dropped this song they were beefing, but they’ve officially squashed it since then. | yes | 4044871 | 8 | accepted |
+| Zero to 250 | Just made a video, ain’t no hoes in it ’Cause they all in this shit, for the glory in shit | Unlike other rappers, many Chief Keef videos don’t have girls in them  See 1. I Don’t Like 2. Love Sosa  To Sosa, most of these women only appreciate him for his wealth, something  | yes | 4032230 | 11 | accepted |
+| Zero to 250 | Only The Family, huh? How the fuck these niggas crossin’? | Defiantly shots fired at Lil Durk and his squad OTF    Chief Keef and Durk have had some words exchanged over twitter after Keef posted Game and Tyga’s Chiraq Diss on Durk on insta | yes | 3914929 | 16 | accepted |
+| Round Da Rosey | Six my twenty-four, please | 6oz of syrup in his 24oz bottle of sprite | yes | 38157114 | 0 | pending |
+| Round Da Rosey | Turn up | ian done turnin up bitchhhh | yes | 38157100 | 0 | pending |
+| Round Da Rosey | They shinin’, these diamonds, they cost more than your house | He’s saying his diamonds in his earrings cost more than your house rent mortgage and etc | yes | 22054157 | -1 | pending |
+| Round Da Rosey | Blast him, blast him, they all fallin’ down (You already know, man) | They’re killing opps | yes | 1903302 | 8 | accepted |
+| Round Da Rosey | You know I’ma freak her when I flame up this reefer | After he smokes his weed he’s going to freak her in bed. | yes | 1880021 | 5 | accepted |
+| Round Da Rosey | Kobe, Kobe, I’m ballin’ like I’m Kobe | Kobe is a very rich and famous NBA player on the Lakers and hes balling out just like Kobe does on the court. | yes | 1879993 | 7 | accepted |
+| Round Da Rosey | I’m screamin’, ”Please dope me”, Swisher blunts my protein (Woo, woo) Ash it, ash it, we all smoking loud (Dope, dope, dope) | He likes to smoke loud (Weed). He’s referring to the blunt as “protein” because the weed is so strong, like the effect of ingesting enough protein. Or it literally makes him strong | yes | 1879970 | 7 | accepted |

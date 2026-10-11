@@ -1,8 +1,11 @@
-# Chat 7 · Confirmed Recheck & Wordplay Verifier
-updated: 2026-10-10 02:00 ET
-state: running
-doing: 15-min recurring review of sound_flip candidates & unconfirmed/unsure backlog
-progress: 2139 total reviewed (140 KEEP, 45 FIX, 1954 REJECT); 0 unconfirmed backlog left
-since last update: 0 KEEP, 0 FIX, 62 REJECT this period. Evaluated 62 candidate rows this period. Promoted Lil Yachty 'sense' -> 'cents' (back of the couch).
+# Chat 7 · Wordplay Line-by-Line Review
+updated: 2026-10-10 20:36 ET
+job: wordplay-index notes-queue.jsonl -> index-v2.jsonl manual review
+state: idle
+lines reviewed: 125
+KEEP: 98
+REJECT: 24
+UNSURE: 3
+next line to resume from: queue_line 126
+last update: 2026-10-10 20:36 ET
 problems: none
-needs Samuel: no

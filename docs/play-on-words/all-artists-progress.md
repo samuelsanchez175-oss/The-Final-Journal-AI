@@ -951,3 +951,202 @@
 | JAY-Z [chat6-jay-z] | 1023 | 0 -> 1023 | 357 | 5986 (746 both, 1976 filed, 3691 weak, 277 sound_flips) | 2026-10-10 02:05:12 |
 | Homixide Gang [lane2] (100/235) | 235 | 0 -> 0 | 100 | batch checkpoint | 2026-10-10 02:08:46 |
 | Don Toliver [chat2-don-toliver] | 674 | 0 -> 100 | 13 | 81 (17 both, 38 filed, 41 weak, 3 sound_flips) | 2026-10-10 02:14:10 |
+| Chief Keef | 1081 | 0 -> 1079 | 2 | 1042 (137 both, 619 filed, 710 weak) | 2026-10-10 02:15:48 |
+| Justin Bieber [chat8-justin-bieber] | 636 | 0 -> 550 | 97 | 591 (57 both, 223 filed, 419 weak, 17 sound_flips) | 2026-10-10 02:20:08 |
+| Homixide Gang [lane2] (150/235) | 235 | 0 -> 0 | 150 | batch checkpoint | 2026-10-10 02:25:07 |
+| Meek Mill [chat5-meek] | 874 | 0 -> 550 | 47 | 1629 (202 both, 767 filed, 830 weak, 54 sound_flips) | 2026-10-10 02:27:46 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 50 | 1 | 63 (17 both, 32 filed, 54 weak, 2 sound_flips) | 2026-10-10 02:30:26 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 150 | 21 | 120 (23 both, 58 filed, 70 weak, 4 sound_flips) | 2026-10-10 02:39:02 |
+| Homixide Gang [lane2] (200/235) | 235 | 0 -> 0 | 200 | batch checkpoint | 2026-10-10 02:42:27 |
+| Justin Bieber [chat8-justin-bieber] | 636 | 0 -> 600 | 102 | 683 (67 both, 251 filed, 482 weak, 23 sound_flips) | 2026-10-10 02:44:59 |
+| Meek Mill [chat5-meek] | 874 | 0 -> 600 | 55 | 1740 (209 both, 830 filed, 886 weak, 61 sound_flips) | 2026-10-10 02:51:56 |
+| Homixide Gang [lane2] | 235 | 0 -> 0 | 235 | completed | 2026-10-10 02:53:58 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 100 | 3 | 107 (25 both, 61 filed, 96 weak, 7 sound_flips) | 2026-10-10 02:55:37 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 200 | 28 | 167 (31 both, 80 filed, 97 weak, 4 sound_flips) | 2026-10-10 03:03:33 |
+| Meek Mill [chat5-meek] | 874 | 0 -> 650 | 61 | 1854 (217 both, 889 filed, 946 weak, 67 sound_flips) | 2026-10-10 03:16:27 |
+| Latto [lane2] (50/254) | 254 | 0 -> 47 | 3 | batch checkpoint | 2026-10-10 03:18:39 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 150 | 3 | 199 (35 both, 118 filed, 206 weak, 11 sound_flips) | 2026-10-10 03:21:13 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 50 | 0 | 130 (36 both, 71 filed, 64 weak, 5 sound_flips) | 2026-10-10 03:24:05 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 250 | 34 | 233 (43 both, 110 filed, 135 weak, 6 sound_flips) | 2026-10-10 03:28:56 |
+| Meek Mill [chat5-meek] | 874 | 0 -> 700 | 66 | 2022 (234 both, 975 filed, 1031 weak, 74 sound_flips) | 2026-10-10 03:41:19 |
+| Latto [lane2] (100/254) | 254 | 0 -> 91 | 9 | batch checkpoint | 2026-10-10 03:42:40 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 200 | 4 | 281 (52 both, 152 filed, 277 weak, 14 sound_flips) | 2026-10-10 03:46:30 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 100 | 0 | 199 (47 both, 110 filed, 107 weak, 6 sound_flips) | 2026-10-10 03:50:21 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 300 | 40 | 281 (53 both, 135 filed, 169 weak, 6 sound_flips) | 2026-10-10 03:53:48 |
+| Meek Mill [chat5-meek] | 874 | 0 -> 750 | 69 | 2179 (252 both, 1041 filed, 1116 weak, 82 sound_flips) | 2026-10-10 04:06:43 |
+| Latto [lane2] (150/254) | 254 | 0 -> 140 | 10 | batch checkpoint | 2026-10-10 04:07:41 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 250 | 5 | 342 (68 both, 182 filed, 344 weak, 17 sound_flips) | 2026-10-10 04:11:40 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 150 | 0 | 278 (66 both, 148 filed, 166 weak, 9 sound_flips) | 2026-10-10 04:16:37 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 350 | 43 | 345 (65 both, 167 filed, 205 weak, 10 sound_flips) | 2026-10-10 04:20:05 |
+| Latto [lane2] (200/254) | 254 | 0 -> 186 | 14 | batch checkpoint | 2026-10-10 04:32:04 |
+| Meek Mill [chat5-meek] | 874 | 0 -> 800 | 69 | 2358 (277 both, 1120 filed, 1209 weak, 88 sound_flips) | 2026-10-10 04:32:59 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 300 | 7 | 397 (94 both, 206 filed, 378 weak, 18 sound_flips) | 2026-10-10 04:37:00 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 200 | 0 | 330 (72 both, 177 filed, 211 weak, 10 sound_flips) | 2026-10-10 04:42:54 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 400 | 49 | 385 (69 both, 188 filed, 232 weak, 12 sound_flips) | 2026-10-10 04:44:56 |
+| Latto [lane2] (250/254) | 254 | 0 -> 230 | 20 | batch checkpoint | 2026-10-10 04:56:15 |
+| Meek Mill [chat5-meek] | 874 | 0 -> 850 | 75 | 2517 (299 both, 1194 filed, 1297 weak, 94 sound_flips) | 2026-10-10 04:57:31 |
+| Latto [lane2] | 254 | 0 -> 233 | 21 | completed | 2026-10-10 04:58:04 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 350 | 11 | 441 (100 both, 226 filed, 415 weak, 21 sound_flips) | 2026-10-10 05:02:01 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 450 | 60 | 416 (73 both, 207 filed, 256 weak, 14 sound_flips) | 2026-10-10 05:08:35 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 250 | 0 | 405 (88 both, 218 filed, 251 weak, 14 sound_flips) | 2026-10-10 05:09:10 |
+| Meek Mill [chat5-meek] | 874 | 0 -> 874 | 78 | 2635 (320 both, 1243 filed, 1359 weak, 100 sound_flips) | 2026-10-10 05:09:17 |
+| Future | 756 | 0 -> 751 | 5 | 1858 (270 both, 829 filed, 948 weak) | 2026-10-10 05:15:34 |
+| Roddy Ricch [lane2] (50/273) | 273 | 0 -> 48 | 2 | batch checkpoint | 2026-10-10 05:22:45 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 400 | 15 | 500 (110 both, 255 filed, 466 weak, 26 sound_flips) | 2026-10-10 05:27:02 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 500 | 67 | 459 (80 both, 236 filed, 276 weak, 17 sound_flips) | 2026-10-10 05:33:38 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 300 | 0 | 452 (98 both, 246 filed, 294 weak, 16 sound_flips) | 2026-10-10 05:35:31 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 50 | 4 | 23 (3 both, 11 filed, 26 weak, 2 sound_flips) | 2026-10-10 05:37:18 |
+| Roddy Ricch [lane2] (100/273) | 273 | 0 -> 93 | 7 | batch checkpoint | 2026-10-10 05:46:27 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 450 | 21 | 544 (120 both, 280 filed, 502 weak, 28 sound_flips) | 2026-10-10 05:51:43 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 550 | 70 | 492 (94 both, 247 filed, 292 weak, 19 sound_flips) | 2026-10-10 05:59:23 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 100 | 11 | 58 (12 both, 22 filed, 52 weak, 3 sound_flips) | 2026-10-10 06:01:17 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 350 | 0 | 499 (111 both, 271 filed, 326 weak, 19 sound_flips) | 2026-10-10 06:01:43 |
+| Roddy Ricch [lane2] (150/273) | 273 | 0 -> 137 | 13 | batch checkpoint | 2026-10-10 06:10:18 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 500 | 24 | 611 (136 both, 311 filed, 557 weak, 30 sound_flips) | 2026-10-10 06:16:33 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 600 | 76 | 526 (105 both, 263 filed, 311 weak, 19 sound_flips) | 2026-10-10 06:24:36 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 150 | 18 | 80 (16 both, 39 filed, 85 weak, 5 sound_flips) | 2026-10-10 06:25:28 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 400 | 0 | 558 (129 both, 319 filed, 355 weak, 20 sound_flips) | 2026-10-10 06:27:59 |
+| Roddy Ricch [lane2] (200/273) | 273 | 0 -> 182 | 18 | batch checkpoint | 2026-10-10 06:33:59 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 550 | 26 | 691 (145 both, 339 filed, 619 weak, 32 sound_flips) | 2026-10-10 06:41:54 |
+| Don Toliver [chat2-don-toliver] | 674 | 0 -> 650 | 81 | 599 (123 both, 312 filed, 339 weak, 25 sound_flips) | 2026-10-10 06:49:38 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 200 | 22 | 104 (23 both, 56 filed, 103 weak, 6 sound_flips) | 2026-10-10 06:50:40 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 450 | 0 | 635 (149 both, 350 filed, 411 weak, 22 sound_flips) | 2026-10-10 06:54:15 |
+| Roddy Ricch [lane2] (250/273) | 273 | 0 -> 229 | 21 | batch checkpoint | 2026-10-10 06:58:20 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 600 | 28 | 726 (151 both, 352 filed, 669 weak, 33 sound_flips) | 2026-10-10 07:06:54 |
+| Roddy Ricch [lane2] | 273 | 0 -> 251 | 22 | completed | 2026-10-10 07:09:31 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 250 | 27 | 184 (30 both, 94 filed, 167 weak, 11 sound_flips) | 2026-10-10 07:15:33 |
+| J. Cole | 637 | 0 -> 438 | 199 | 4131 (632 both, 1709 filed, 2166 weak) | 2026-10-10 07:16:01 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 500 | 0 | 744 (171 both, 404 filed, 466 weak, 26 sound_flips) | 2026-10-10 07:20:32 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 50 | 7 | 233 (39 both, 101 filed, 124 weak, 9 sound_flips) | 2026-10-10 07:29:14 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 650 | 31 | 783 (157 both, 387 filed, 725 weak, 33 sound_flips) | 2026-10-10 07:31:55 |
+| Blac Youngsta [lane2] (50/275) | 275 | 0 -> 45 | 5 | batch checkpoint | 2026-10-10 07:33:42 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 300 | 35 | 214 (34 both, 104 filed, 200 weak, 11 sound_flips) | 2026-10-10 07:40:04 |
+| Kodak Black [chat8-kodak-black] | 560 | 0 -> 550 | 0 | 786 (180 both, 427 filed, 503 weak, 26 sound_flips) | 2026-10-10 07:46:50 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 100 | 15 | 398 (66 both, 175 filed, 201 weak, 17 sound_flips) | 2026-10-10 07:53:55 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 700 | 32 | 825 (165 both, 415 filed, 762 weak, 35 sound_flips) | 2026-10-10 07:57:06 |
+| Blac Youngsta [lane2] (100/275) | 275 | 0 -> 92 | 8 | batch checkpoint | 2026-10-10 07:58:03 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 350 | 38 | 248 (35 both, 121 filed, 223 weak, 11 sound_flips) | 2026-10-10 08:05:38 |
+| Moneybagg Yo [chat8-moneybagg-yo] | 481 | 0 -> 50 | 8 | 30 (4 both, 21 filed, 18 weak, 1 sound_flips) | 2026-10-10 08:17:41 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 150 | 22 | 599 (95 both, 281 filed, 292 weak, 25 sound_flips) | 2026-10-10 08:18:37 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 750 | 37 | 876 (175 both, 435 filed, 799 weak, 35 sound_flips) | 2026-10-10 08:21:36 |
+| Blac Youngsta [lane2] (150/275) | 275 | 0 -> 142 | 8 | batch checkpoint | 2026-10-10 08:23:04 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 400 | 38 | 295 (42 both, 136 filed, 256 weak, 13 sound_flips) | 2026-10-10 08:31:54 |
+| Destroy Lonely [chat6-destroy-lonely] | 772 | 0 -> 772 | 38 | 886 (178 both, 440 filed, 812 weak, 36 sound_flips) | 2026-10-10 08:32:50 |
+| Moneybagg Yo [chat8-moneybagg-yo] | 481 | 0 -> 100 | 13 | 50 (11 both, 39 filed, 37 weak, 2 sound_flips) | 2026-10-10 08:43:04 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 200 | 30 | 826 (123 both, 380 filed, 425 weak, 34 sound_flips) | 2026-10-10 08:43:10 |
+| Blac Youngsta [lane2] (200/275) | 275 | 0 -> 188 | 12 | batch checkpoint | 2026-10-10 08:47:16 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 450 | 43 | 383 (58 both, 171 filed, 303 weak, 15 sound_flips) | 2026-10-10 08:56:47 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 250 | 35 | 1076 (156 both, 497 filed, 539 weak, 46 sound_flips) | 2026-10-10 09:08:15 |
+| Moneybagg Yo [chat8-moneybagg-yo] | 481 | 0 -> 150 | 16 | 123 (26 both, 77 filed, 84 weak, 4 sound_flips) | 2026-10-10 09:08:49 |
+| Blac Youngsta [lane2] (250/275) | 275 | 0 -> 234 | 16 | batch checkpoint | 2026-10-10 09:11:37 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 500 | 50 | 421 (61 both, 195 filed, 329 weak, 15 sound_flips) | 2026-10-10 09:20:46 |
+| Blac Youngsta [lane2] | 275 | 0 -> 257 | 18 | completed | 2026-10-10 09:23:38 |
+| Playboi Carti | 599 | 0 -> 592 | 7 | 1154 (207 both, 581 filed, 611 weak) | 2026-10-10 09:24:07 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 300 | 43 | 1267 (173 both, 589 filed, 647 weak, 58 sound_flips) | 2026-10-10 09:32:55 |
+| Moneybagg Yo [chat8-moneybagg-yo] | 481 | 0 -> 200 | 17 | 148 (33 both, 88 filed, 107 weak, 6 sound_flips) | 2026-10-10 09:34:55 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 550 | 55 | 500 (67 both, 233 filed, 375 weak, 22 sound_flips) | 2026-10-10 09:45:49 |
+| Lil Baby [lane2] (50/287) | 287 | 0 -> 50 | 0 | batch checkpoint | 2026-10-10 09:48:39 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 350 | 48 | 1405 (191 both, 666 filed, 725 weak, 64 sound_flips) | 2026-10-10 09:57:36 |
+| Moneybagg Yo [chat8-moneybagg-yo] | 481 | 0 -> 250 | 21 | 177 (36 both, 109 filed, 131 weak, 7 sound_flips) | 2026-10-10 10:00:40 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 600 | 63 | 530 (74 both, 250 filed, 397 weak, 23 sound_flips) | 2026-10-10 10:09:59 |
+| Lil Baby [lane2] (100/287) | 287 | 0 -> 100 | 0 | batch checkpoint | 2026-10-10 10:13:41 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 400 | 54 | 1578 (218 both, 760 filed, 824 weak, 74 sound_flips) | 2026-10-10 10:22:18 |
+| Moneybagg Yo [chat8-moneybagg-yo] | 481 | 0 -> 300 | 22 | 188 (40 both, 118 filed, 144 weak, 7 sound_flips) | 2026-10-10 10:26:46 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 650 | 69 | 567 (80 both, 270 filed, 424 weak, 24 sound_flips) | 2026-10-10 10:35:02 |
+| Lil Baby [lane2] (150/287) | 287 | 0 -> 150 | 0 | batch checkpoint | 2026-10-10 10:38:52 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 450 | 58 | 1744 (236 both, 861 filed, 905 weak, 82 sound_flips) | 2026-10-10 10:47:44 |
+| Moneybagg Yo [chat8-moneybagg-yo] | 481 | 0 -> 350 | 24 | 211 (43 both, 136 filed, 163 weak, 7 sound_flips) | 2026-10-10 10:52:41 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 700 | 72 | 607 (86 both, 294 filed, 443 weak, 24 sound_flips) | 2026-10-10 11:00:47 |
+| Lil Baby [lane2] (200/287) | 287 | 0 -> 200 | 0 | batch checkpoint | 2026-10-10 11:03:53 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 500 | 66 | 1941 (267 both, 945 filed, 1012 weak, 97 sound_flips) | 2026-10-10 11:12:37 |
+| Yo Gotti [chat5-yo-gotti] | 724 | 0 -> 724 | 73 | 653 (94 both, 313 filed, 474 weak, 25 sound_flips) | 2026-10-10 11:13:23 |
+| Moneybagg Yo [chat8-moneybagg-yo] | 481 | 0 -> 400 | 26 | 245 (49 both, 152 filed, 188 weak, 8 sound_flips) | 2026-10-10 11:18:37 |
+| Travis Scott | 588 | 0 -> 437 | 151 | 2118 (372 both, 896 filed, 1088 weak) | 2026-10-10 11:20:36 |
+| Lil Baby [lane2] (250/287) | 287 | 0 -> 250 | 0 | batch checkpoint | 2026-10-10 11:29:06 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 550 | 73 | 2122 (296 both, 1027 filed, 1103 weak, 102 sound_flips) | 2026-10-10 11:37:09 |
+| Lil Keed [chat5-lil-keed] | 478 | 0 -> 50 | 6 | 19 (6 both, 9 filed, 15 weak, 1 sound_flips) | 2026-10-10 11:40:22 |
+| Moneybagg Yo [chat8-moneybagg-yo] | 481 | 0 -> 450 | 32 | 268 (51 both, 163 filed, 210 weak, 10 sound_flips) | 2026-10-10 11:43:39 |
+| Lil Baby [lane2] | 287 | 0 -> 287 | 0 | completed | 2026-10-10 11:47:37 |
+| Big Sean [chat2-big-sean] | 601 | 0 -> 600 | 83 | 2360 (328 both, 1139 filed, 1226 weak, 119 sound_flips) | 2026-10-10 12:01:07 |
+| Lil Keed [chat5-lil-keed] | 478 | 0 -> 100 | 10 | 23 (7 both, 11 filed, 29 weak, 1 sound_flips) | 2026-10-10 12:06:05 |
+| Young Stoner Life | 525 | 0 -> 38 | 487 | 37 (7 both, 10 filed, 33 weak) | 2026-10-10 12:06:43 |
+| EST Gee [lane2] (50/292) | 292 | 0 -> 38 | 12 | batch checkpoint | 2026-10-10 12:10:57 |
+| Chance the Rapper [chat8-chance-the-rapper] | 465 | 0 -> 50 | 8 | 228 (28 both, 80 filed, 163 weak, 8 sound_flips) | 2026-10-10 12:25:11 |
+| Lil Keed [chat5-lil-keed] | 478 | 0 -> 150 | 19 | 40 (12 both, 16 filed, 45 weak, 1 sound_flips) | 2026-10-10 12:30:47 |
+| EST Gee [lane2] (100/292) | 292 | 0 -> 78 | 22 | batch checkpoint | 2026-10-10 12:34:18 |
+| Chance the Rapper [chat8-chance-the-rapper] | 465 | 0 -> 100 | 17 | 485 (69 both, 155 filed, 334 weak, 19 sound_flips) | 2026-10-10 12:49:10 |
+| Lil Keed [chat5-lil-keed] | 478 | 0 -> 200 | 25 | 53 (14 both, 23 filed, 59 weak, 2 sound_flips) | 2026-10-10 12:56:00 |
+| EST Gee [lane2] (150/292) | 292 | 0 -> 122 | 28 | batch checkpoint | 2026-10-10 12:58:18 |
+| Fivio Foreign [chat2-fivio-foreign] | 303 | 0 -> 50 | 12 | 23 (6 both, 11 filed, 17 weak, 2 sound_flips) | 2026-10-10 13:07:05 |
+| Frank Ocean [chat6-frank-ocean] | 324 | 0 -> 50 | 16 | 156 (20 both, 38 filed, 118 weak, 6 sound_flips) | 2026-10-10 13:07:24 |
+| Chance the Rapper [chat8-chance-the-rapper] | 465 | 0 -> 150 | 25 | 821 (117 both, 270 filed, 572 weak, 36 sound_flips) | 2026-10-10 13:13:21 |
+| Lil Keed [chat5-lil-keed] | 478 | 0 -> 250 | 32 | 64 (15 both, 33 filed, 67 weak, 2 sound_flips) | 2026-10-10 13:21:24 |
+| EST Gee [lane2] (200/292) | 292 | 0 -> 164 | 36 | batch checkpoint | 2026-10-10 13:22:00 |
+| Frank Ocean [chat6-frank-ocean] | 324 | 0 -> 100 | 23 | 314 (40 both, 95 filed, 223 weak, 16 sound_flips) | 2026-10-10 13:30:33 |
+| Fivio Foreign [chat2-fivio-foreign] | 303 | 0 -> 100 | 20 | 65 (12 both, 39 filed, 36 weak, 5 sound_flips) | 2026-10-10 13:32:07 |
+| Chance the Rapper [chat8-chance-the-rapper] | 465 | 0 -> 200 | 31 | 1129 (175 both, 366 filed, 755 weak, 45 sound_flips) | 2026-10-10 13:38:04 |
+| Money Man | 457 | 0 -> 457 | 0 | 118 (38 both, 119 filed, 203 weak) | 2026-10-10 13:43:51 |
+| EST Gee [lane2] (250/292) | 292 | 0 -> 205 | 45 | batch checkpoint | 2026-10-10 13:45:30 |
+| Lil Keed [chat5-lil-keed] | 478 | 0 -> 300 | 35 | 74 (15 both, 44 filed, 76 weak, 3 sound_flips) | 2026-10-10 13:47:08 |
+| Frank Ocean [chat6-frank-ocean] | 324 | 0 -> 150 | 36 | 452 (58 both, 131 filed, 313 weak, 25 sound_flips) | 2026-10-10 13:51:39 |
+| Fivio Foreign [chat2-fivio-foreign] | 303 | 0 -> 150 | 28 | 93 (16 both, 63 filed, 59 weak, 6 sound_flips) | 2026-10-10 13:56:59 |
+| Chance the Rapper [chat8-chance-the-rapper] | 465 | 0 -> 250 | 39 | 1404 (215 both, 445 filed, 937 weak, 53 sound_flips) | 2026-10-10 14:02:25 |
+| EST Gee [lane2] | 292 | 0 -> 240 | 52 | completed | 2026-10-10 14:05:11 |
+| Lil Keed [chat5-lil-keed] | 478 | 0 -> 350 | 36 | 88 (18 both, 49 filed, 90 weak, 3 sound_flips) | 2026-10-10 14:13:13 |
+| Frank Ocean [chat6-frank-ocean] | 324 | 0 -> 200 | 47 | 598 (75 both, 166 filed, 417 weak, 33 sound_flips) | 2026-10-10 14:13:25 |
+| Fivio Foreign [chat2-fivio-foreign] | 303 | 0 -> 200 | 36 | 115 (21 both, 74 filed, 70 weak, 7 sound_flips) | 2026-10-10 14:21:40 |
+| Chance the Rapper [chat8-chance-the-rapper] | 465 | 0 -> 300 | 43 | 1664 (242 both, 538 filed, 1097 weak, 63 sound_flips) | 2026-10-10 14:27:56 |
+| PARTYNEXTDOOR [lane2] (50/312) | 312 | 0 -> 44 | 6 | batch checkpoint | 2026-10-10 14:28:11 |
+| Frank Ocean [chat6-frank-ocean] | 324 | 0 -> 250 | 57 | 713 (85 both, 203 filed, 494 weak, 37 sound_flips) | 2026-10-10 14:35:53 |
+| Lil Keed [chat5-lil-keed] | 478 | 0 -> 400 | 40 | 98 (18 both, 53 filed, 104 weak, 5 sound_flips) | 2026-10-10 14:38:47 |
+| Fivio Foreign [chat2-fivio-foreign] | 303 | 0 -> 250 | 45 | 130 (24 both, 90 filed, 80 weak, 7 sound_flips) | 2026-10-10 14:46:32 |
+| PARTYNEXTDOOR [lane2] (100/312) | 312 | 0 -> 84 | 16 | batch checkpoint | 2026-10-10 14:50:15 |
+| Chance the Rapper [chat8-chance-the-rapper] | 465 | 0 -> 350 | 56 | 1882 (271 both, 602 filed, 1248 weak, 72 sound_flips) | 2026-10-10 14:50:33 |
+| Frank Ocean [chat6-frank-ocean] | 324 | 0 -> 300 | 69 | 856 (114 both, 240 filed, 580 weak, 44 sound_flips) | 2026-10-10 14:57:28 |
+| Lil Keed [chat5-lil-keed] | 478 | 0 -> 450 | 41 | 113 (22 both, 61 filed, 115 weak, 5 sound_flips) | 2026-10-10 15:04:52 |
+| Fivio Foreign [chat2-fivio-foreign] | 303 | 0 -> 300 | 70 | 149 (27 both, 97 filed, 95 weak, 7 sound_flips) | 2026-10-10 15:05:06 |
+| Frank Ocean [chat6-frank-ocean] | 324 | 0 -> 324 | 76 | 901 (120 both, 255 filed, 611 weak, 45 sound_flips) | 2026-10-10 15:07:20 |
+| 03 Greedo | 442 | 0 -> 367 | 75 | 75 (10 both, 34 filed, 79 weak) | 2026-10-10 15:10:09 |
+| PARTYNEXTDOOR [lane2] (150/312) | 312 | 0 -> 125 | 25 | batch checkpoint | 2026-10-10 15:12:43 |
+| Chance the Rapper [chat8-chance-the-rapper] | 465 | 0 -> 400 | 68 | 2134 (312 both, 690 filed, 1406 weak, 82 sound_flips) | 2026-10-10 15:13:46 |
+| Earl Sweatshirt [chat6-earl-sweatshirt] | 351 | 0 -> 50 | 15 | 260 (40 both, 71 filed, 182 weak, 16 sound_flips) | 2026-10-10 15:27:44 |
+| Young Nudy [chat2-young-nudy] | 320 | 0 -> 50 | 1 | 33 (6 both, 19 filed, 20 weak, 0 sound_flips) | 2026-10-10 15:32:57 |
+| PARTYNEXTDOOR [lane2] (200/312) | 312 | 0 -> 164 | 36 | batch checkpoint | 2026-10-10 15:34:34 |
+| Chance the Rapper [chat8-chance-the-rapper] | 465 | 0 -> 450 | 76 | 2387 (350 both, 777 filed, 1558 weak, 90 sound_flips) | 2026-10-10 15:38:08 |
+| Migos [box-migos] | 384 | 0 -> 100 | 0 | 412 (98 both, 181 filed, 168 weak, 1 sound_flips) | 2026-10-10 15:45:46 |
+| Earl Sweatshirt [chat6-earl-sweatshirt] | 351 | 0 -> 100 | 28 | 571 (84 both, 161 filed, 389 weak, 30 sound_flips) | 2026-10-10 15:49:21 |
+| PARTYNEXTDOOR [lane2] (250/312) | 312 | 0 -> 206 | 44 | batch checkpoint | 2026-10-10 15:57:36 |
+| Young Nudy [chat2-young-nudy] | 320 | 0 -> 100 | 3 | 66 (15 both, 41 filed, 32 weak, 1 sound_flips) | 2026-10-10 15:58:41 |
+| Earl Sweatshirt [chat6-earl-sweatshirt] | 351 | 0 -> 150 | 40 | 839 (128 both, 237 filed, 559 weak, 42 sound_flips) | 2026-10-10 16:11:29 |
+| PARTYNEXTDOOR [lane2] (300/312) | 312 | 0 -> 249 | 51 | batch checkpoint | 2026-10-10 16:20:17 |
+| Young Nudy [chat2-young-nudy] | 320 | 0 -> 150 | 5 | 93 (21 both, 63 filed, 45 weak, 1 sound_flips) | 2026-10-10 16:24:26 |
+| PARTYNEXTDOOR [lane2] | 312 | 0 -> 258 | 54 | completed | 2026-10-10 16:25:27 |
+| Earl Sweatshirt [chat6-earl-sweatshirt] | 351 | 0 -> 200 | 49 | 1078 (169 both, 287 filed, 752 weak, 50 sound_flips) | 2026-10-10 16:34:06 |
+| G Herbo | 440 | 0 -> 440 | 0 | 401 (43 both, 257 filed, 309 weak) | 2026-10-10 16:42:33 |
+| NAV [lane2] (50/356) | 356 | 0 -> 27 | 23 | batch checkpoint | 2026-10-10 16:44:18 |
+| Young Nudy [chat2-young-nudy] | 320 | 0 -> 200 | 9 | 117 (22 both, 83 filed, 62 weak, 2 sound_flips) | 2026-10-10 16:49:49 |
+| Earl Sweatshirt [chat6-earl-sweatshirt] | 351 | 0 -> 250 | 60 | 1348 (207 both, 350 filed, 970 weak, 68 sound_flips) | 2026-10-10 16:55:53 |
+| NAV [lane2] (100/356) | 356 | 0 -> 66 | 34 | batch checkpoint | 2026-10-10 17:07:10 |
+| Young Nudy [chat2-young-nudy] | 320 | 0 -> 250 | 10 | 166 (34 both, 118 filed, 102 weak, 4 sound_flips) | 2026-10-10 17:15:55 |
+| Earl Sweatshirt [chat6-earl-sweatshirt] | 351 | 0 -> 300 | 73 | 1653 (258 both, 432 filed, 1171 weak, 81 sound_flips) | 2026-10-10 17:16:59 |
+| NAV [lane2] (150/356) | 356 | 0 -> 105 | 45 | batch checkpoint | 2026-10-10 17:29:10 |
+| Earl Sweatshirt [chat6-earl-sweatshirt] | 351 | 0 -> 350 | 85 | 1922 (297 both, 501 filed, 1370 weak, 102 sound_flips) | 2026-10-10 17:38:57 |
+| Earl Sweatshirt [chat6-earl-sweatshirt] | 351 | 0 -> 351 | 85 | 1935 (299 both, 507 filed, 1375 weak, 103 sound_flips) | 2026-10-10 17:39:28 |
+| Young Nudy [chat2-young-nudy] | 320 | 0 -> 300 | 10 | 196 (37 both, 138 filed, 123 weak, 5 sound_flips) | 2026-10-10 17:42:22 |
+| NAV [lane2] (200/356) | 356 | 0 -> 150 | 50 | batch checkpoint | 2026-10-10 17:53:11 |
+| Ken Carson | 433 | 0 -> 381 | 52 | 998 (221 both, 324 filed, 722 weak) | 2026-10-10 18:10:15 |
+| NAV [lane2] (250/356) | 356 | 0 -> 193 | 57 | batch checkpoint | 2026-10-10 18:16:22 |
+| NAV [lane2] (300/356) | 356 | 0 -> 236 | 64 | batch checkpoint | 2026-10-10 18:40:23 |
+| NAV [lane2] (350/356) | 356 | 0 -> 270 | 80 | batch checkpoint | 2026-10-10 19:02:34 |
+| NAV [lane2] | 356 | 0 -> 276 | 80 | completed | 2026-10-10 19:05:34 |
+| Migos [box-migos] | 384 | 156 -> 200 | 0 | 776 (156 both, 366 filed, 338 weak, 4 sound_flips) | 2026-10-10 17:01:27 |
+| Migos [box-migos] | 384 | 156 -> 300 | 1 | 1077 (215 both, 519 filed, 468 weak, 5 sound_flips) | 2026-10-10 17:53:48 |
+| Migos [box-migos] | 384 | 156 -> 384 | 2 | 1438 (283 both, 704 filed, 629 weak, 6 sound_flips) | 2026-10-10 19:21:11 |
+| Key Glock | 392 | 0 -> 333 | 59 | 102 (16 both, 49 filed, 81 weak) | 2026-10-10 19:27:58 |
+| Cash Cobain [box-cash-cobain] | 364 | 0 -> 100 | 64 | 10 (2 both, 5 filed, 13 weak, 1 sound_flips) | 2026-10-10 19:54:09 |
+| Chief Keef | 1081 | 1079 -> 1080 | 2 | 1044 (137 both, 620 filed, 711 weak) | 2026-10-10 20:28:30 |
+| Quality Control | 1573 | 66 -> 66 | 1507 | 120 (28 both, 46 filed, 61 weak) | 2026-10-10 20:28:40 |
+| Tory Lanez | 1118 | 1029 -> 1029 | 89 | 1248 (203 both, 642 filed, 720 weak) | 2026-10-10 20:28:51 |
+| Cash Cobain [box-cash-cobain] | 364 | 0 -> 200 | 121 | 17 (8 both, 10 filed, 19 weak, 1 sound_flips) | 2026-10-10 20:28:52 |
+| Cash Cobain [box-cash-cobain] | 364 | 0 -> 300 | 181 | 20 (11 both, 12 filed, 20 weak, 1 sound_flips) | 2026-10-10 21:02:39 |
+| Cash Cobain [box-cash-cobain] | 364 | 0 -> 364 | 210 | 24 (12 both, 12 filed, 25 weak, 1 sound_flips) | 2026-10-10 21:26:38 |
