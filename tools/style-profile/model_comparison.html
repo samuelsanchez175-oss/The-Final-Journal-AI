@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Sparkler Models</title>
+<style>
+:root {
+  --bg: #f6f5f2; --panel: #ffffff; --ink: #1b1b1f; --muted: #6b6b74; --line: #e3e1dc;
+  --accent: #3d5afe; --pass: #1f8a4c; --fail: #c62828; --mark: #fff1a8; --mark-ink: #1b1b1f;
+  --badge-a: #e3ecff; --badge-b: #ffe9d6; --badge-c: #e8f6ea; --badge-d: #f6e6f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111114; --panel: #1a1a1f; --ink: #ececf1; --muted: #9a9aa6; --line: #2c2c34;
+    --accent: #8c9eff; --pass: #5fd18f; --fail: #ff7a7a; --mark: #5a4b00; --mark-ink: #fff6c8;
+    --badge-a: #26304d; --badge-b: #4a3320; --badge-c: #1f3b28; --badge-d: #3d2440;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111114; --panel: #1a1a1f; --ink: #ececf1; --muted: #9a9aa6; --line: #2c2c34;
+  --accent: #8c9eff; --pass: #5fd18f; --fail: #ff7a7a; --mark: #5a4b00; --mark-ink: #fff6c8;
+  --badge-a: #26304d; --badge-b: #4a3320; --badge-c: #1f3b28; --badge-d: #3d2440;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+.sub { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+.tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.tab { border: 1px solid var(--line); background: var(--panel); color: var(--ink); padding: 8px 16px; border-radius: 999px; cursor: pointer; font: 600 14px/1 inherit; display: flex; gap: 8px; align-items: center; }
+.tab[aria-selected="true"] { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--fail); }
+.dot.ok { background: var(--pass); }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.meta { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: 13px; margin-bottom: 12px; }
+.bar { display: grid; grid-template-columns: 28px 1fr auto; gap: 10px; align-items: baseline; padding: 10px 0; border-top: 1px solid var(--line); }
+.bar:first-of-type { border-top: 0; }
+.num { color: var(--muted); font-variant-numeric: tabular-nums; }
+.line { font-size: 17px; }
+.syl { font-size: 11px; color: var(--muted); font-weight: 600; vertical-align: super; margin-left: 2px; }
+.end { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+mark { background: var(--mark); color: var(--mark-ink); border-radius: 3px; padding: 0 2px; }
+.right { display: flex; gap: 6px; align-items: center; white-space: nowrap; }
+.letter { font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+.L-A { background: var(--badge-a); } .L-B { background: var(--badge-b); } .L-C { background: var(--badge-c); } .L-D { background: var(--badge-d); }
+.total { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.total.bad { color: var(--fail); font-weight: 600; }
+.checks { grid-column: 2 / 4; display: flex; gap: 10px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+.checks .x { color: var(--fail); }
+.problems { margin-top: 12px; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--line); font-size: 13px; }
+.problems.ok { color: var(--pass); }
+.problems ul { margin: 6px 0 0; padding-left: 18px; color: var(--fail); }
+details { margin-top: 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
+summary { cursor: pointer; font-weight: 600; }
+.ex { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 12px; }
+.ex div { font-size: 13px; white-space: pre-wrap; border-left: 3px solid var(--line); padding-left: 10px; }
+.ex b { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.attempts { font-size: 13px; color: var(--muted); }
+.attempts ol { padding-left: 18px; }
+.empty { color: var(--muted); padding: 24px 0; text-align: center; }
+@media (max-width: 560px) { .bar { grid-template-columns: 22px 1fr; } .right { grid-column: 2; } .checks { grid-column: 2; } .line { font-size: 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AI Sparkler: model comparison</h1>
+  <div class="sub" id="sub"></div>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div id="view"></div>
+  <details id="exemplars"><summary>Real lyrics given to every model</summary><div class="ex" id="exlist"></div></details>
+</div>
+<script>
+const DATA = /*DATA_START*/{"schema": "phase6.v2", "prompt_version": "verse.v3", "artist": "Gunna", "bars_requested": 4, "topic": "sex", "topic_brief": "women and sex", "scheme": "aabb", "syl_range": [12, 15], "seed": 7, "exemplars": [{"song": "AMG", "topic": "sex", "bars": ["She know I'm still gettin' it by the ton, so she gon' masturbate (She gon' masturbate)", "She say, \"You always call like 4 in the morning, you be callin' late\" (I be callin' late)", "She know I beat that pussy, wet in her dress, she be callin' me great (I'm great)", "And I take it right up out that pussy, bust it right in her face (Ew)", "She be gold digging, she says she let my bro hit it (My bro hit it)", "She let Rylo hit it, then she let NoCap hit it (NoCap hit it)", "Yeah, we all hit it, stack the blue hundreds, spend the small digits (Small digits)", "She said you three niggas be so fly, we called it big pimpin', yeah (Big pimpin')"]}, {"song": "A$$", "topic": "sex", "bars": ["Fuck a ho, we gon' have a lot of sex", "We gon' count a lot of checks", "Now the big booty bitch sucking my soul", "Still rocking Off-White, Mr. VLone", "Freaky lil' bitch tryna follow me home"]}, {"song": "3 Headed Snake", "topic": "sex", "bars": ["I fuck on your friends, I fuck on your bae", "I fucked her at Ross place", "I fucked her so good, I got her back right", "I fucked up the bank, bought a rose gold shank, yeah", "I got a thot, uh, I got a thot, hey", "I had her bent inside of the Wraith"]}, {"song": "Against Me", "topic": "sex", "bars": ["Go back to the spot, put the dick all inside of you", "You niggas be cuffin', hell, I know you can't hide it", "I know she gon' fuck cause I made a deposit", "We fuck to my music, she say I'm melodic"]}, {"song": "ARGENTINA", "topic": "sex", "bars": ["Been smokin' shit, loud, this noise (Noise)", "Me and Wheezy, we met some hoes from Argentina and California", "Said if I gave her a beep", "Stack a lot of funds, diamonds on my thumb, make her pussy cum (Make her pussy cum), yeah"]}, {"song": "A$$", "topic": "sex", "bars": ["She say she wanna fuck and suck me with no strings", "Leaning on the X tryna balance it with weed", "Think about flying to Belize", "Take a nigga bitch and I let her fly with me"]}, {"song": "Sticky (Remix)", "topic": null, "bars": ["Tell your ho, \"Come gеt it\" (Come get it)", "Tell her bring her friend with her", "Pussy good, I'll tip 'em", "I'm just tryna get richer (Get richer)"]}, {"song": "Good Day", "topic": null, "bars": ["Half a mill', I got the whole streets right", "I'm ridin' with my millions, my guys", "Take the top off and look in the sky", "See the same thing as the roof on the Wraith"]}, {"song": "Baby Birkin", "topic": null, "bars": ["I don't cherish, I know that they come and go (They come and go)", "I done came a long way from the Buckhurst (Yeah)", "I done left my ex, told her ain't comin' home (Nah)", "I go straight in the hole like a running back (Gone)"]}, {"song": "Came From The Bottom", "topic": null, "bars": ["Niggas be acting, these niggas ain't realer than me", "Ran that shit up, got my niggas with me", "Ride on your ass like I rode on the beat", "Leave your ass dead in the street"]}, {"song": "Pussy Lips", "topic": null, "bars": ["Versace robe on my ass, I don't need a towel (Versace)", "Fuck her pussy and her ass, then back in the shower (Shower)", "Gunna Wunna, gotta call me two times", "Nigga play with me, we end up doin' two crimes"]}, {"song": "Pink Sprite", "topic": null, "bars": ["Dior Homme and Dolce pinstripes (Pinstripes)", "I doubled up and got my kin right (Kin right)", "Left the haters, let 'em hitchhike (Hitchhike)", "Easter Day, I’m sippin' pink sprite (Ya)"]}], "models": {"haiku": {"model": "haiku", "bars": [{"text": "Blazing through her space, pace, left her shaking all on my face", "halves": [{"text": "Blazing through her space", "syl": 5}, {"text": "pace, left her shaking all on my face", "syl": 9}], "syllables": 14, "end_word": "face", "rhyme_letter": "A", "internal": [["blazing", "shaking"], ["space", "pace"], ["space", "face"], ["pace", "face"]], "checks": {"one_comma": false, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}, {"text": "Stroking at her frame, game, watch her quivering out of place", "halves": [{"text": "Stroking at her frame", "syl": 5}, {"text": "game, watch her quivering out of place", "syl": 9}], "syllables": 14, "end_word": "place", "rhyme_letter": "A", "internal": [["frame", "game"]], "checks": {"one_comma": false, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}, {"text": "Pulling from her mind, bind, got her eyes rolling through the night", "halves": [{"text": "Pulling from her mind", "syl": 5}, {"text": "bind, got her eyes rolling through the night", "syl": 9}], "syllables": 14, "end_word": "night", "rhyme_letter": "B", "internal": [["mind", "bind"]], "checks": {"one_comma": false, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}, {"text": "Pushing in so tight, sight, left her calling for the morning light", "halves": [{"text": "Pushing in so tight", "syl": 5}, {"text": "sight, left her calling for the morning light", "syl": 10}], "syllables": 15, "end_word": "light", "rhyme_letter": "B", "internal": [["tight", "sight"], ["tight", "light"], ["sight", "light"], ["calling", "morning"]], "checks": {"one_comma": false, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}], "problems": ["bar 1: has 2 commas, needs exactly 1", "bar 2: has 2 commas, needs exactly 1", "bar 3: has 2 commas, needs exactly 1", "bar 4: has 2 commas, needs exactly 1", "content words reused across bars: left, through"], "passed": false, "attempts": [{"attempt": 1, "bars": ["Blazing through her space, pace, left her shaking all on my face", "Stroking at her frame, game, watch her quivering out of place", "Pulling from her mind, bind, got her eyes rolling through the night", "Pushing in so tight, sight, left her calling for the morning light"], "problems": ["bar 1: has 2 commas, needs exactly 1", "bar 2: has 2 commas, needs exactly 1", "bar 3: has 2 commas, needs exactly 1", "bar 4: has 2 commas, needs exactly 1", "content words reused across bars: left, through"]}, {"attempt": 2, "error": "no usable JSON"}, {"attempt": 3, "error": "no usable JSON"}], "elapsed_s": 182.1, "generation_id": "5a2de2687e23402092309eda825e39e0"}, "sonnet": {"model": "sonnet", "bars": [{"text": "Birkin bag drag floor, she keep legs deep in the sheets", "halves": [{"text": "Birkin bag drag floor", "syl": 5}, {"text": "she keep legs deep in the sheets", "syl": 7}], "syllables": 12, "end_word": "sheets", "rhyme_letter": "A", "internal": [["bag", "drag"], ["keep", "deep"]], "checks": {"one_comma": true, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "block", "ref": "birkin", "category": "brands"}, {"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}, {"text": "Candy paint Rolls creep slow, soul wrapped in dark sheets", "halves": [{"text": "Candy paint Rolls creep slow", "syl": 6}, {"text": "soul wrapped in dark sheets", "syl": 5}], "syllables": 11, "end_word": "sheets", "rhyme_letter": "B", "internal": [], "checks": {"one_comma": true, "syllables": false, "internal_rhyme": false, "original": true}, "topic": "sex", "sources": [{"kind": "block", "ref": "candy paint", "category": "cars"}, {"kind": "block", "ref": "rolls", "category": "cars"}, {"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}, {"text": "Draco on nightstand black, pull her close to my back", "halves": [{"text": "Draco on nightstand black", "syl": 6}, {"text": "pull her close to my back", "syl": 6}], "syllables": 12, "end_word": "back", "rhyme_letter": "C", "internal": [["black", "back"]], "checks": {"one_comma": true, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "block", "ref": "pull", "category": "wordplay"}, {"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}, {"text": "Ferrari parked out back, count hundreds stacked on the rack", "halves": [{"text": "Ferrari parked out back", "syl": 6}, {"text": "count hundreds stacked on the rack", "syl": 7}], "syllables": 13, "end_word": "rack", "rhyme_letter": "C", "internal": [["out", "count"], ["back", "rack"]], "checks": {"one_comma": true, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "block", "ref": "hundreds", "category": "wordplay"}, {"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}], "problems": ["bar 2: 11 syllables (6 + 5), needs 12-15", "bar 2: no internal rhyme found between two words inside the bar", "bars 1 and 2 must end-rhyme for AABB: \"sheets\" / \"sheets\" repeats the same end word", "content words reused across bars: back, sheets"], "passed": false, "attempts": [{"attempt": 1, "bars": ["Birkin bag drag floor, she keep legs deep in the sheets", "Candy paint Rolls creep slow, soul wrapped in dark sheets", "Draco on nightstand black, pull her close to my back", "Ferrari parked out back, count hundreds stacked on the rack"], "problems": ["bar 2: 11 syllables (6 + 5), needs 12-15", "bar 2: no internal rhyme found between two words inside the bar", "bars 1 and 2 must end-rhyme for AABB: \"sheets\" / \"sheets\" repeats the same end word", "content words reused across bars: back, sheets"]}, {"attempt": 2, "bars": ["Birkin bag sway on her waist, lace panties catch the light", "Moonroof open on the drive, she strip down for the ride tonight", "Pull up quick in the Wraith, kiss her face then snap the chain", "Patek froze on my wrist, hold her close then watch it rain"], "problems": ["bar 1: no internal rhyme found between two words inside the bar", "bar 2: no internal rhyme found between two words inside the bar", "bar 3: no internal rhyme found between two words inside the bar", "bar 4: no internal rhyme found between two words inside the bar"]}, {"attempt": 3, "error": "no usable JSON"}], "elapsed_s": 123.2, "generation_id": "deb2142c26c94f1abee9d736bd19f8f0"}, "opus": {"model": "opus", "bars": [{"text": "Her nails in my chain, I poured her champagne 'til eight", "halves": [{"text": "Her nails in my chain", "syl": 5}, {"text": "I poured her champagne 'til eight", "syl": 7}], "syllables": 12, "end_word": "eight", "rhyme_letter": "A", "internal": [["chain", "champagne"]], "checks": {"one_comma": true, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "block", "ref": "her nails", "category": "nails"}, {"kind": "block", "ref": "nails", "category": "nails"}, {"kind": "block", "ref": "champagne", "category": "liquors"}, {"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}, {"text": "Pulled up in the Benz with a date, told her don't make me wait", "halves": [{"text": "Pulled up in the Benz with a date", "syl": 8}, {"text": "told her don't make me wait", "syl": 6}], "syllables": 14, "end_word": "wait", "rhyme_letter": "A", "internal": [["date", "wait"]], "checks": {"one_comma": true, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "block", "ref": "benz", "category": "cars"}, {"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}, {"text": "Rose gold on her toes in the loft, she ignoring her phone", "halves": [{"text": "Rose gold on her toes in the loft", "syl": 8}, {"text": "she ignoring her phone", "syl": 6}], "syllables": 14, "end_word": "phone", "rhyme_letter": "B", "internal": [["rose", "toes"]], "checks": {"one_comma": true, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "block", "ref": "rose", "category": "toys"}, {"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}, {"text": "Threw her two stacks in the zone, she rub on my cologne", "halves": [{"text": "Threw her two stacks in the zone", "syl": 7}, {"text": "she rub on my cologne", "syl": 6}], "syllables": 13, "end_word": "cologne", "rhyme_letter": "B", "internal": [["threw", "two"], ["zone", "cologne"]], "checks": {"one_comma": true, "syllables": true, "internal_rhyme": true, "original": true}, "topic": "sex", "sources": [{"kind": "catalog_bar", "ref": "AMG", "category": "sex"}, {"kind": "catalog_bar", "ref": "A$$", "category": "sex"}, {"kind": "catalog_bar", "ref": "3 Headed Snake", "category": "sex"}]}], "problems": [], "passed": true, "attempts": [{"attempt": 1, "bars": ["Hermès on her thighs in the suite, got the ice in her face", "Wet when she whispered my name, got her nails in my waist", "Dior cologne on the sheets, she won't answer her phone", "Slid her a bag from the salon, she grinded on chrome"], "problems": ["bar 1: no internal rhyme found between two words inside the bar", "bar 2: no internal rhyme found between two words inside the bar", "bar 4: no internal rhyme found between two words inside the bar"]}, {"attempt": 2, "bars": ["Her nails in my chain, I poured her champagne 'til eight", "Pulled up in the Benz with a date, told her don't make me wait", "Rose gold on her toes in the loft, she ignoring her phone", "Threw her two stacks in the zone, she rub on my cologne"], "problems": []}], "elapsed_s": 130.5, "generation_id": "769a9ef36e7a4fc6b4e64d241fd8ed7b"}}}/*DATA_END*/;
+const LABEL = { haiku: "Haiku", sonnet: "Sonnet", opus: "Opus" };
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function decorate(text, marks, endWord, isLastHalf) {
+  const parts = String(text).split(/([A-Za-z0-9'’]+)/);
+  let lastIdx = -1;
+  if (isLastHalf) for (let i = parts.length - 1; i >= 0; i--) if (/[A-Za-z0-9]/.test(parts[i])) { lastIdx = i; break; }
+  return parts.map((p, i) => {
+    if (!/[A-Za-z0-9]/.test(p)) return esc(p);
+    const w = p.toLowerCase().replace(/’/g, "'").replace(/^'+|'+$/g, "");
+    let h = marks.has(w) ? `<mark>${esc(p)}</mark>` : esc(p);
+    if (i === lastIdx && endWord && w === endWord) h = `<span class="end">${h}</span>`;
+    return h;
+  }).join("");
+}
+
+function barRow(b, i, range) {
+  const marks = new Set((b.internal || []).flat());
+  const halves = b.halves || [{ text: b.text, syl: b.syllables }];
+  const line = halves.map((h, k) =>
+    `${decorate(h.text, marks, b.end_word, k === halves.length - 1)}<span class="syl">${h.syl}</span>`
+  ).join(", ");
+  const c = b.checks || {};
+  const chk = (ok, label) => `<span class="${ok ? "" : "x"}">${ok ? "✓" : "✗"} ${label}</span>`;
+  const okSyl = b.syllables >= range[0] && b.syllables <= range[1];
+  return `<div class="bar">
+    <span class="num">${i + 1}</span>
+    <span class="line">${line}</span>
+    <span class="right"><span class="total ${okSyl ? "" : "bad"}">${b.syllables} syl</span><span class="letter L-${esc(b.rhyme_letter)}">${esc(b.rhyme_letter)}</span></span>
+    <span class="checks">${chk(c.one_comma, "one comma")}${chk(c.syllables, `${range[0]}–${range[1]} syl`)}${chk(c.internal_rhyme, "internal rhyme" + (b.internal && b.internal.length ? `: ${b.internal.map(p => p.join("/")).map(esc).join(", ")}` : ""))}${chk(c.original, "original")}</span>
+  </div>`;
+}
+
+function render(model) {
+  const r = DATA.models[model];
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.m === model));
+  try { localStorage.setItem("sparkler-tab", model); } catch (e) {}
+  if (!r || !r.bars || !r.bars.length) {
+    document.getElementById("view").innerHTML = `<div class="panel"><div class="empty">No usable output from ${esc(LABEL[model] || model)}.</div></div>`;
+    return;
+  }
+  const scheme = r.bars.map(b => b.rhyme_letter).join("");
+  const problems = r.problems.length
+    ? `<div class="problems">Still failing after ${r.attempts.length} attempt(s):<ul>${r.problems.map(p => `<li>${esc(p)}</li>`).join("")}</ul></div>`
+    : `<div class="problems ok">All checks pass (attempt ${r.attempts.length}).</div>`;
+  const tries = r.attempts.length > 1
+    ? `<details class="attempts"><summary>Earlier attempts</summary><ol>${r.attempts.slice(0, -1).map(a => `<li>${a.bars ? a.bars.map(esc).join("<br>") : esc(a.error)}${a.problems ? `<br><em>${a.problems.length} problems</em>` : ""}</li>`).join("")}</ol></details>`
+    : "";
+  document.getElementById("view").innerHTML = `<div class="panel" role="tabpanel">
+    <div class="meta"><span>Measured scheme: <b>${esc(scheme)}</b> (asked ${esc(DATA.scheme.toUpperCase())})</span><span>${r.elapsed_s}s</span><span>${r.attempts.length} attempt(s)</span></div>
+    ${r.bars.map((b, i) => barRow(b, i, DATA.syl_range)).join("")}
+    ${problems}${tries}
+  </div>`;
+}
+
+function init() {
+  if (!DATA) { document.getElementById("view").innerHTML = `<div class="empty">No data embedded yet. Run phase6_compare_models.py.</div>`; return; }
+  document.getElementById("sub").textContent =
+    `${DATA.artist} · ${DATA.bars_requested} bars · topic: ${DATA.topic_brief} · scheme ${DATA.scheme.toUpperCase()} · same prompt for every model. Highlighted = internal rhyme, underlined = end word, small numbers = syllables per half (CMUdict).`;
+  const models = Object.keys(DATA.models);
+  document.getElementById("tabs").innerHTML = models.map(m =>
+    `<button class="tab" role="tab" data-m="${esc(m)}"><span class="dot ${DATA.models[m].passed ? "ok" : ""}"></span>${esc(LABEL[m] || m)}</button>`).join("");
+  document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => render(t.dataset.m)));
+  document.getElementById("exlist").innerHTML = (DATA.exemplars || []).map(p =>
+    `<div><b>${esc(p.song)}${p.topic ? " · " + esc(p.topic) : ""}</b>${p.bars.map(esc).join("\n")}</div>`).join("");
+  let start = models[0];
+  try { const s = localStorage.getItem("sparkler-tab"); if (s && models.includes(s)) start = s; } catch (e) {}
+  render(start);
+}
+init();
+</script>
+</body>
+</html>
