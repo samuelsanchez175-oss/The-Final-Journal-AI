@@ -2768,13 +2768,28 @@
         "artist": "Veeze",
         "song": "4 MY",
         "bar": "I seen strange fruit, I\u2019ma take that nina through the trenches",
-        "setupSpans": [],
-        "playSpans": [],
+        "setupSpans": [
+            {
+                "text": "strange fruit",
+                "start": 7,
+                "end": 20
+            }
+        ],
+        "playSpans": [
+            {
+                "text": "nina",
+                "start": 37,
+                "end": 41
+            }
+        ],
         "heardAs": "Nina Simone / strange fruit ... nina",
-        "geniusURL": "",
+        "geniusURL": "https://genius.com/31190411",
         "image": "noun-artist-nina-simone",
         "imageDecision": "created",
-        "sourceLine": 55
+        "sourceLine": 55,
+        "tabs": [
+            "hidden_references"
+        ]
     },
     {
         "chip": "Loyal",
@@ -2794,13 +2809,34 @@
         "artist": "Veeze",
         "song": "Law N Order",
         "bar": "I swear yo' bitch think I'm all that, like I'm Keenan, Kel",
-        "setupSpans": [],
-        "playSpans": [],
+        "setupSpans": [
+            {
+                "text": "Keenan",
+                "start": 47,
+                "end": 53
+            },
+            {
+                "text": "Kel",
+                "start": 55,
+                "end": 58
+            }
+        ],
+        "playSpans": [
+            {
+                "text": "all that",
+                "start": 28,
+                "end": 36
+            }
+        ],
         "heardAs": "All That / all that ... Keenan, Kel",
-        "geniusURL": "",
+        "geniusURL": "https://genius.com/27879469",
         "image": "noun-show-all-that",
         "imageDecision": "created",
-        "sourceLine": 57
+        "sourceLine": 57,
+        "tabs": [
+            "hidden_references",
+            "double_meanings"
+        ]
     },
     {
         "chip": "not yours",
@@ -3482,8 +3518,8 @@
         "bar": "They should call me James, 'cause I'm goin' hard in this bitch",
         "setupSpans": [
             {
-                "text": "call me James",
-                "start": 12,
+                "text": "James",
+                "start": 20,
                 "end": 25
             }
         ],
@@ -3491,15 +3527,18 @@
             {
                 "text": "hard in",
                 "start": 44,
-                "end": 51,
-                "heard": "James Harden"
+                "end": 51
             }
         ],
         "heardAs": "James Harden",
-        "geniusURL": "https://genius.com/24874349",
+        "geniusURL": "https://genius.com/6349957",
         "image": "noun-celeb-harden",
         "imageDecision": "reused",
-        "sourceLine": 1100
+        "sourceLine": 1100,
+        "tabs": [
+            "sound_flips",
+            "punchline_setups"
+        ]
     },
     {
         "chip": "Andr\u00e9 3000",
@@ -3509,23 +3548,30 @@
         "setupSpans": [
             {
                 "text": "wrist",
-                "start": 15,
-                "end": 20
+                "start": 14,
+                "end": 19
             }
         ],
         "playSpans": [
             {
                 "text": "Three K",
                 "start": 0,
-                "end": 7,
-                "heard": "Andr\u00e9 3000"
+                "end": 7
+            },
+            {
+                "text": "Andr\u00e9",
+                "start": 25,
+                "end": 30
             }
         ],
         "heardAs": "Andr\u00e9 3000",
-        "geniusURL": "https://genius.com/24874349",
+        "geniusURL": "https://genius.com/20686220",
         "image": "noun-celeb-andre-3000",
         "imageDecision": "reused",
-        "sourceLine": 1100
+        "sourceLine": 1100,
+        "tabs": [
+            "split_names"
+        ]
     },
     {
         "chip": "Nike Air Max",
@@ -3534,24 +3580,31 @@
         "bar": "Fatty on the Max like some Nike Air",
         "setupSpans": [
             {
-                "text": "Nike Air",
-                "start": 27,
-                "end": 35
+                "text": "Fatty",
+                "start": 0,
+                "end": 5
             }
         ],
         "playSpans": [
             {
                 "text": "Max",
                 "start": 13,
-                "end": 16,
-                "heard": "Nike Air Max"
+                "end": 16
+            },
+            {
+                "text": "Nike Air",
+                "start": 27,
+                "end": 35
             }
         ],
         "heardAs": "Nike Air Max",
-        "geniusURL": "https://genius.com/24874349",
+        "geniusURL": "https://genius.com/28792562",
         "image": "noun-air-max",
         "imageDecision": "reused",
-        "sourceLine": 1100
+        "sourceLine": 1100,
+        "tabs": [
+            "split_names"
+        ]
     },
     {
         "chip": "Hilary Duff",
@@ -3567,17 +3620,24 @@
         ],
         "playSpans": [
             {
-                "text": "Duff ... Hillary",
+                "text": "Duff",
                 "start": 8,
-                "end": 42,
-                "heard": "Hilary Duff"
+                "end": 12
+            },
+            {
+                "text": "Hillary",
+                "start": 36,
+                "end": 43
             }
         ],
         "heardAs": "Hilary Duff",
-        "geniusURL": "https://genius.com/24874349",
+        "geniusURL": "https://genius.com/34343651",
         "image": "noun-celeb-hilary-duff",
         "imageDecision": "created",
-        "sourceLine": 1100
+        "sourceLine": 1100,
+        "tabs": [
+            "split_names"
+        ]
     },
     {
         "chip": "Nutty Buddy",
@@ -3587,23 +3647,26 @@
         "setupSpans": [
             {
                 "text": "buddy",
-                "start": 11,
-                "end": 16
+                "start": 12,
+                "end": 17
             }
         ],
         "playSpans": [
             {
                 "text": "Nutty Buddy",
                 "start": 75,
-                "end": 86,
-                "heard": "Nutty Buddy"
+                "end": 86
             }
         ],
         "heardAs": "Nutty Buddy",
-        "geniusURL": "https://genius.com/24874349",
+        "geniusURL": "https://genius.com/27039786",
         "image": "noun-food-nutty-buddy",
         "imageDecision": "created",
-        "sourceLine": 1100
+        "sourceLine": 1100,
+        "tabs": [
+            "double_meanings",
+            "punchline_setups"
+        ]
     },
     {
         "chip": "Maaly Raw",

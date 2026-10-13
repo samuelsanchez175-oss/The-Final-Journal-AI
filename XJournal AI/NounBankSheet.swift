@@ -102,6 +102,99 @@ struct NounBankSheet: View {
     @State private var query = ""
     @State private var linesHit: NounBankSearch.Hit?
     @State private var mentionCounts: [String: Int] = [:]
+    @State private var wordplayTab: WordplayTab? = nil
+    @State private var wordplaySubTab: WordplaySubTab? = nil
+    @State private var wordplaySubTabScrollID: WordplaySubTab? = nil
+
+
+    /// Formats integer counts with locale-aware number formatting
+    private var formattedCount: (Int) -> String { { count in
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.locale = .current
+        return formatter.string(from: NSNumber(value: count)) ?? "\(count)"
+    }}
+
+    /// The main tab row showing All and the 5 Blocks categories with live counters
+    private var wordplayTabRow: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                wordplayTabPill(title: "All", count: WordplayFlips.allEntryCount, selected: wordplayTab == nil) {
+                    selectWordplayTab(nil)
+                }
+                ForEach(WordplayTab.allCases) { tab in
+                    wordplayTabPill(
+                        title: tab.title,
+                        count: WordplayFlips.entryCount(for: tab),
+                        selected: wordplayTab == tab
+                    ) {
+                        selectWordplayTab(tab)
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.top, 10)
+            .padding(.bottom, 8)
+        }
+    }
+
+    /// The sub-tab row showing subcategories for the selected Blocks tab
+    private var wordplaySubTabRow: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                if let tab = wordplayTab {
+                    ForEach(tab.subTabs) { subTab in
+                        wordplaySubTabPill(
+                            title: subTab.title,
+                            count: WordplayFlips.entryCount(for: subTab, within: tab),
+                            selected: wordplaySubTab == subTab
+                        ) {
+                            selectWordplaySubTab(subTab)
+                        }
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.bottom, 8)
+        }
+    }
+
+    /// Reusable pill view for Blocks tabs and sub-tabs with count and selection state
+    private func wordplayTabPill(title: String, count: Int, selected: Bool,
+                               action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            VStack(alignment: .leading, spacing: 1) {
+                Text(title)
+                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                    .foregroundStyle(selected ? Momentum.contentPrimary : Momentum.contentSecondary)
+                    .lineLimit(1)
+                Text(formattedCount(count))
+                    .font(.system(size: 11, weight: .medium, design: .rounded))
+                    .foregroundStyle(selected ? Momentum.contentPrimary : Momentum.contentSecondary)
+                    .monospacedDigit()
+            }
+            .minimumScaleFactor(0.75)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 6)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                Capsule()
+                    .fill(selected ? Color(RhymeColorPalette.colors[1]).opacity(0.22) : Color.primary.opacity(0.04))
+                    .overlay(
+                        Capsule()
+                            .strokeBorder(selected ? Color(RhymeColorPalette.colors[1]) : Color.primary.opacity(0.12), lineWidth: 1)
+                    )
+            )
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("\(title), \(formattedCount(count)) entries, selected")
+    }
+
+    /// Reusable pill view for Blocks sub-tabs (same as tab pill but for consistency)
+    private func wordplaySubTabPill(title: String, count: Int, selected: Bool,
+                                  action: @escaping () -> Void) -> some View {
+        wordplayTabPill(title: title, count: count, selected: selected, action: action)
+    }
 
     private var needle: String {
         query.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -109,8 +202,13 @@ struct NounBankSheet: View {
 
     private var isSearching: Bool { !needle.isEmpty }
 
+    /// Whether Blocks (wordplay) browsing is currently active
+    private var showBlocks: Bool { wordplayTab != nil || wordplaySubTab != nil }
+
     private var hits: [NounBankSearch.Hit] {
-        NounBankSearch.hits(query: query, selected: category)
+        let hits = NounBankSearch.hits(query: query, selected: category)
+        guard !showBlocks else { return [] }
+        return hits
     }
 
     private var recentHits: [NounBankSearch.Hit] {
@@ -132,10 +230,48 @@ struct NounBankSheet: View {
         Array(repeating: GridItem(.flexible(minimum: 64), spacing: 8), count: 4)
     }
 
+    /// Result counter for search/filter — shows "Showing X of Y entries"
+    private var resultCounterText: String? {
+        guard showBlocks else { return nil }
+        let total: Int
+        if let subTab = wordplaySubTab, let tab = wordplayTab {
+            total = WordplayFlips.entryCount(for: subTab, within: tab)
+        } else if let tab = wordplayTab {
+            total = WordplayFlips.entryCount(for: tab)
+        } else {
+            total = WordplayFlips.allEntryCount
+        }
+        let showing = gridHits.count
+        guard showing != total else { return nil }
+        return "Showing \(formattedCount(showing)) of \(formattedCount(total)) entries"
+    }
+
+    /// Data completeness note — explains partial catalog data
+    private var dataCompletenessNote: Text? {
+        guard showBlocks else { return nil }
+        let assignedCount = WordplayFlips.entriesWithTabAssignment
+        let totalCount = WordplayFlips.allEntryCount
+        let unassignedCount = totalCount - assignedCount
+        if unassignedCount == 0 { return nil }
+        return Text("\(formattedCount(unassignedCount)) entries need review and appear only under All. \(formattedCount(assignedCount)) of \(formattedCount(totalCount)) entries have explicit tab membership.")
+    }
+
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
                 tabStrip
+                if let counter = resultCounterText {
+                    Text(counter)
+                        .font(.system(size: 12, weight: .medium, design: .rounded))
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 4)
+                        .accessibilityLabel(counter)
+                }
+                if let note = dataCompletenessNote {
+                    note
+                }
                 if showsFeelingNote {
                     feelingNote
                 }
@@ -208,6 +344,13 @@ struct NounBankSheet: View {
                 .padding(.bottom, 8)
             }
 
+            // Blocks sub-tab row (Wordplay category -> Blocks tabs)
+            if showBlocks {
+                wordplayTabRow
+                if wordplayTab != nil {
+                    wordplaySubTabRow
+                }
+            }
             if !showingRecents && !isSearching && group.categories.count > 1 {
                 ScrollView(.horizontal, showsIndicators: false) {
                     ScrollViewReader { proxy in
@@ -399,6 +542,25 @@ struct NounBankSheet: View {
         group = NounBankGroup.containing(cat)
         lastCategoryRaw = cat.rawValue
     }
+
+    private func selectWordplayTab(_ tab: WordplayTab?) {
+        withAnimation(.easeInOut(duration: 0.18)) {
+            wordplayTab = tab
+            wordplaySubTab = nil
+        }
+        NounBankRecents.record(word: tab.map { "Blocks: \($0.title)" } ?? "Blocks", category: .wordplay)
+    }
+
+    private func selectWordplaySubTab(_ subTab: WordplaySubTab) {
+        withAnimation(.easeInOut(duration: 0.18)) {
+            wordplaySubTab = subTab
+            wordplaySubTabScrollID = subTab
+        }
+    }
+
+
+
+
 
     private func openLines(_ hit: NounBankSearch.Hit) {
         NounBankRecents.record(word: hit.item.insertWord, category: hit.category)

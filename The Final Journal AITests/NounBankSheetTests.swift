@@ -4,6 +4,31 @@ import XCTest
 
 final class NounBankSheetTests: XCTestCase {
 
+    func testWordplayTabsUseReviewedMembershipAndKeepPunchlinesOverlapping() {
+        XCTAssertEqual(WordplayTab.allCases.count, 5)
+        XCTAssertTrue(WordplayFlips.contains("James Harden", in: .soundFlips))
+        XCTAssertTrue(WordplayFlips.contains("James Harden", in: .punchlineSetups))
+        XCTAssertTrue(WordplayFlips.contains("Nutty Buddy", in: .doubleMeanings))
+        XCTAssertTrue(WordplayFlips.contains("Nike Air Max", in: .splitNames))
+        XCTAssertTrue(WordplayFlips.contains("All That", in: .hiddenReferences))
+        XCTAssertFalse(WordplayFlips.contains("unreviewed chip", in: .soundFlips))
+        for tab in WordplayTab.allCases {
+            let hits = NounBankCatalog.items(for: .wordplay).filter {
+                WordplayFlips.contains($0.insertWord, in: tab)
+            }
+            XCTAssertFalse(hits.isEmpty, tab.title)
+            for hit in hits {
+                XCTAssertNotNil(NounMarkImage.uiImage(named: hit.icon), hit.insertWord)
+            }
+        }
+    }
+
+    func testReviewedWordplayLinksAreSpecificToTheirAnnotations() {
+        XCTAssertEqual(WordplayFlips.entry(for: "James Harden")?.geniusURL, "https://genius.com/6349957")
+        XCTAssertEqual(WordplayFlips.entry(for: "Nutty Buddy")?.geniusURL, "https://genius.com/27039786")
+        XCTAssertEqual(WordplayFlips.entry(for: "All That")?.geniusURL, "https://genius.com/27879469")
+    }
+
     override func setUp() {
         super.setUp()
         UserDefaults.standard.removeObject(forKey: NounBankRecents.defaultsKey)

@@ -1818,6 +1818,7 @@ enum NounBankCatalog {
     /// Heard word on Play on Words. The file is the hidden sense, so Akorn uses the acorn.
         private static let wordplayPictureIcons: [String: String] = [
         "06er": "noun-skyline",
+        "all that": "noun-show-all-that",
         "360 windmill": "noun-basketball",
         "a bride": "noun-a-bride",
         "a buzz": "noun-clippers",
