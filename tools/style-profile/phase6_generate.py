@@ -30,8 +30,8 @@ OUT = HERE / "out"
 ROOT = p1.ROOT
 
 SCHEMA_VERSION = "phase6.v1"
-MODEL = "haiku"
-PROMPT_VERSION = "bars.v1"
+MODEL_DEFAULT = "haiku"
+PROMPT_VERSION = "bars.v2"
 
 # ---------------------------------------------------------------- load data
 
@@ -72,42 +72,27 @@ def load_artist_chains(artist: str) -> dict | None:
 
 
 def generate_bar(artist: str, topic: str, style_card: dict, topic_blocks: dict,
-                 context_bars: list[str] = None, model: str = MODEL) -> str | None:
+                 context_bars: list[str] = None, model: str = MODEL_DEFAULT) -> str | None:
     """Generate one bar in the given topic, following artist's style."""
 
-    rules = style_card.get("rules", [])[:5]  # first 5 rules
-    top_blocks = []
-    if topic in topic_blocks.get("observed", {}):
-        top_blocks = [b["block"] for b in topic_blocks["observed"][topic].get("top_blocks", [])[:8]]
+    rules = style_card.get("rules", [])[:5]
 
-    prior_topics = topic_blocks.get("prior_category_to_topics", {})
-    block_categories = set()
-    for cat, topics in prior_topics.items():
-        if topic in topics:
-            block_categories.add(cat)
+    prompt = f"""Write a single bar as {artist} about {topic}.
 
-    context = ""
-    if context_bars:
-        context = f"Prior bars in this section:\n" + "\n".join(f"  - {b}" for b in context_bars[-2:])
-
-    prompt = f"""You write a single rap bar in the style of {artist} on the topic "{topic}".
-
-Artist style rules:
+Style:
 {chr(10).join(f"  - {r}" for r in rules)}
 
-Topic: {topic}
-Vocab blocks often used: {', '.join(top_blocks[:5]) if top_blocks else '(generic)'}
-Block categories (if relevant): {', '.join(sorted(block_categories)[:3]) if block_categories else 'n/a'}
+Bar format: 1 line, 1 comma, ~12-15 syllables. No filler words. Natural flow."""
 
-{context}
+    if context_bars:
+        prior_texts = [b["text"] if isinstance(b, dict) else b for b in context_bars[-2:]]
+        prompt += f"\n\nPrevious bars (for flow, not to copy):\n" + "\n".join(prior_texts)
 
-Write ONE bar (1-2 lines max). Rhyme, flow, vocabulary match the artist's style. Use vocabulary from the blocks list if it fits naturally.
-
-Reply with ONLY the bar text, no quotes or explanation:"""
+    prompt += f"\n\n{artist} bar:"
 
     cmd = ["claude", "-p", "--model", model, "--no-session-persistence"]
     try:
-        r = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=30)
+        r = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=60)
         if r.returncode == 0 and r.stdout.strip():
             return r.stdout.strip()
         elif r.stderr:
@@ -160,6 +145,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--artist", required=True, help="artist name")
     ap.add_argument("--bars", type=int, default=4, help="number of bars to generate")
+    ap.add_argument("--model", default=MODEL_DEFAULT, choices=["haiku", "sonnet"], help="model to use (haiku=faster, sonnet=better quality)")
     ap.add_argument("--db", type=Path, default=OUT / "feedback.db", help="feedback store DB path")
     args = ap.parse_args()
 
@@ -193,9 +179,9 @@ def main() -> int:
 
         # Generate bar
         context = generation_bars[-3:] if generation_bars else []
-        bar_text = generate_bar(args.artist, topic, style_card, topic_blocks, context)
+        bar_text = generate_bar(args.artist, topic, style_card, topic_blocks, context, model=args.model)
         if not bar_text:
-            print(f"generation failed for bar {i+1}")
+            print(f"generation failed for bar {i+1}", file=sys.stderr)
             continue
 
         # Find blocks in bar
@@ -217,8 +203,8 @@ def main() -> int:
     gid = store.log_generation(
         artist=args.artist,
         bars=generation_bars,
-        request={"bars_requested": args.bars, "prompt_version": PROMPT_VERSION},
-        model=MODEL,
+        request={"bars_requested": args.bars, "prompt_version": PROMPT_VERSION, "model": args.model},
+        model=args.model,
         prompt_version=PROMPT_VERSION
     )
 
