@@ -31,7 +31,7 @@ HERE = Path(__file__).resolve().parent
 OUT = HERE / "out"
 
 SCHEMA_VERSION = "phase6.v2"
-PROMPT_VERSION = "verse.v3"
+PROMPT_VERSION = "verse.v4"
 MODELS = ("haiku", "sonnet", "opus")
 MODEL_DEFAULT = "sonnet"
 SCHEMES = ("aabb", "abab")
@@ -85,8 +85,10 @@ class Corpus:
                 for i in range(run["start"], run["end"] + 1):
                     self.topic_of[(r["song"], i)] = run["topic"]
         self.ngrams: set[str] = set()
+        self.lines: set[str] = set()
         for _, bars in self.songs:
             for b in bars:
+                self.lines.add(p1.norm_line(b))
                 w = p1.norm_line(b).split()
                 for i in range(len(w) - COPY_NGRAM + 1):
                     self.ngrams.add(" ".join(w[i:i + COPY_NGRAM]))
@@ -124,7 +126,10 @@ class Corpus:
                 break
         return out
 
-    def copied(self, text: str) -> str | None:
+    def full_copy(self, text: str) -> bool:
+        return p1.norm_line(text) in self.lines
+
+    def borrowed(self, text: str) -> str | None:
         w = p1.norm_line(text).split()
         for i in range(len(w) - COPY_NGRAM + 1):
             g = " ".join(w[i:i + COPY_NGRAM])
@@ -183,7 +188,8 @@ def build_prompt(artist: str, n_bars: int, topic: str, scheme: str, exemplars: l
     parts = [
         f"You are ghostwriting {n_bars} bars in the voice of {artist}. Below are real {artist} lyrics. "
         f"Study them for vocabulary, slang, imagery, sentence shape and how the rhymes land, then write "
-        f"NEW bars that sound like they belong on his album. Never copy a line or reuse a 5-word run from them.",
+        f"bars that sound like they belong on his album. Borrowing his signature phrases and flips is fine; "
+        f"just don't paste a whole bar.",
     ]
     if on_topic:
         parts.append(f"REAL {artist.upper()} BARS ON THIS TOPIC ({topic}):\n\n" + "\n\n".join(block(p) for p in on_topic))
@@ -193,17 +199,24 @@ def build_prompt(artist: str, n_bars: int, topic: str, scheme: str, exemplars: l
         parts.append(f"MEASURED ON {artist.upper()}'S CATALOG:\n" + "\n".join(f"- {f}" for f in facts))
     parts.append(
         f"WRITE {n_bars} bars about: {TOPIC_BRIEF.get(topic, topic.replace('_', ' '))}.\n\n"
-        f"Every bar must follow all of these:\n"
-        f"1. One line with exactly one comma, splitting it into two halves.\n"
-        f"2. {SYL_MIN}-{SYL_MAX} syllables total, roughly balanced across the two halves.\n"
+        f"MOST IMPORTANT: it has to make sense read out loud. Each bar is a natural sentence {artist} would "
+        f"actually say, and the second half completes or flips the first half. The {n_bars} bars follow one "
+        f"thread (one scene, or one flex that builds), not {n_bars} unrelated boasts. Word salad that only "
+        f"exists to hit a rhyme is a failure even if every rule below passes.\n\n"
+        f"Then every bar must also follow these:\n"
+        f"1. One line with exactly one comma: a short setup before the comma, a longer payoff after it "
+        f"(setup about 4-6 syllables, payoff about 7-9).\n"
+        f"2. {SYL_MIN}-{SYL_MAX} syllables total.\n"
         f"3. An internal rhyme: a word in the first half rhymes (slant is fine) with a word in the second half.\n"
         f"4. End-rhyme scheme {scheme_rule}\n"
         f"5. Every bar starts with a different word. Don't repeat a content word anywhere in the verse.\n"
         f"6. Concrete images (brands, objects, places, actions, numbers) over abstract claims like "
         f"\"I'm the best\" or \"I got skill\". Never use the words: {', '.join(sorted(BANNED))}, or the topic label.\n"
         f"7. No ad-libs in parentheses.\n\n"
-        f"Plan the two end-rhyme sounds first, then write. Return only JSON, no commentary:\n"
-        f'{{"rhyme_sounds": {{"A": "...", "B": "..."}}, "bars": ["bar 1", "bar 2", ...]}}'
+        f"Plan the story and the two end-rhyme sounds first, then write. For each bar give a one-line "
+        f"plain-English meaning; if you can't state a clear meaning, rewrite the bar. Return only JSON:\n"
+        f'{{"plan": "...", "rhyme_sounds": {{"A": "...", "B": "..."}}, '
+        f'"bars": [{{"bar": "...", "meaning": "..."}}, ...]}}'
     )
     return "\n\n".join(parts)
 
@@ -258,7 +271,8 @@ def scheme_pairs(n: int, scheme: str) -> list[tuple[int, int]]:
     return pairs
 
 
-def analyze_verse(texts: list[str], scheme: str, corpus: Corpus) -> tuple[list[dict], list[str]]:
+def analyze_verse(texts: list[str], scheme: str, corpus: Corpus,
+                  meanings: list[str] | None = None) -> tuple[list[dict], list[str]]:
     lex = corpus.lex
     bars = [p1.Bar(t, lex) for t in texts]
     rows, problems = [], []
@@ -268,7 +282,8 @@ def analyze_verse(texts: list[str], scheme: str, corpus: Corpus) -> tuple[list[d
         halves = [h.strip() for h in t.split(",", 1)] if commas else [t.strip()]
         half_syl = [syl(h, lex) for h in halves]
         pairs = internal_pairs(b)
-        copy = corpus.copied(t)
+        copy = corpus.full_copy(t)
+        borrowed = corpus.borrowed(t)
         banned = sorted(set(b.words) & BANNED)
         letter = None
         for j in range(k - 1):
@@ -281,7 +296,8 @@ def analyze_verse(texts: list[str], scheme: str, corpus: Corpus) -> tuple[list[d
             "one_comma": commas == 1,
             "syllables": SYL_MIN <= b.syl <= SYL_MAX,
             "internal_rhyme": bool(pairs),
-            "original": copy is None,
+            "setup_shorter": len(half_syl) == 2 and half_syl[0] < half_syl[1],
+            "not_a_copy": not copy,
         }
         if commas != 1:
             problems.append(f"bar {k}: has {commas} commas, needs exactly 1")
@@ -290,7 +306,7 @@ def analyze_verse(texts: list[str], scheme: str, corpus: Corpus) -> tuple[list[d
         if not pairs:
             problems.append(f"bar {k}: no internal rhyme found between two words inside the bar")
         if copy:
-            problems.append(f"bar {k}: copies the real lyric run \"{copy}\"")
+            problems.append(f"bar {k}: is a word-for-word copy of a real {corpus.artist} bar")
         if banned:
             problems.append(f"bar {k}: uses banned word(s) {', '.join(banned)}")
         rows.append({
@@ -300,6 +316,8 @@ def analyze_verse(texts: list[str], scheme: str, corpus: Corpus) -> tuple[list[d
             "end_word": b.end_word,
             "rhyme_letter": letter,
             "internal": pairs,
+            "borrowed": borrowed,
+            "meaning": (meanings[k - 1] if meanings and k <= len(meanings) else ""),
             "checks": checks,
         })
 
@@ -310,6 +328,12 @@ def analyze_verse(texts: list[str], scheme: str, corpus: Corpus) -> tuple[list[d
             problems.append(f"bars {i + 1} and {j + 1} must end-rhyme for {scheme.upper()}: "
                             f"\"{bars[i].end_word}\" / \"{bars[j].end_word}\" {why}")
 
+    short_setup = [r["checks"]["setup_shorter"] for r in rows]
+    if sum(short_setup) < len(rows) - 1:
+        bad = [f"bar {k} ({r['halves'][0]['syl']} vs {r['halves'][-1]['syl']})"
+               for k, r in enumerate(rows, 1) if not r["checks"]["setup_shorter"]]
+        problems.append("setup before the comma should be shorter than the payoff after it in all but one bar; "
+                        "fix " + ", ".join(bad))
     openers = Counter(b.words[0] for b in bars if b.words)
     for w, c in openers.items():
         if c > 1:
@@ -341,31 +365,38 @@ def call_model(prompt: str, model: str) -> str | None:
     return r.stdout
 
 
-def parse_bars(raw: str | None, n: int) -> list[str] | None:
+def parse_bars(raw: str | None, n: int) -> tuple[list[str], list[str]] | None:
     if not raw:
         return None
     a, b = raw.find("{"), raw.rfind("}")
     if a < 0 or b <= a:
         return None
     try:
-        bars = json.loads(raw[a:b + 1]).get("bars")
+        items = json.loads(raw[a:b + 1]).get("bars")
     except json.JSONDecodeError:
         return None
-    if not isinstance(bars, list):
+    if not isinstance(items, list):
         return None
-    bars = [re.sub(r"\s+", " ", str(x)).strip() for x in bars if str(x).strip()]
-    return bars[:n] if len(bars) >= n else None
+    texts, meanings = [], []
+    for x in items:
+        text = x.get("bar", "") if isinstance(x, dict) else x
+        text = re.sub(r"\s+", " ", str(text)).strip()
+        if text:
+            texts.append(text)
+            meanings.append(str(x.get("meaning", "")).strip() if isinstance(x, dict) else "")
+    return (texts[:n], meanings[:n]) if len(texts) >= n else None
 
 
 def run_model(ctx: dict, model: str, corpus: Corpus) -> dict:
     t0 = time.time()
     prompt, best, attempts = ctx["prompt"], None, []
     for attempt in range(1, MAX_ATTEMPTS + 1):
-        texts = parse_bars(call_model(prompt, model), ctx["n_bars"])
-        if not texts:
+        parsed = parse_bars(call_model(prompt, model), ctx["n_bars"])
+        if not parsed:
             attempts.append({"attempt": attempt, "error": "no usable JSON"})
             continue
-        rows, problems = analyze_verse(texts, ctx["scheme"], corpus)
+        texts, meanings = parsed
+        rows, problems = analyze_verse(texts, ctx["scheme"], corpus, meanings)
         attempts.append({"attempt": attempt, "bars": texts, "problems": problems})
         if best is None or len(problems) < len(best[1]):
             best = (rows, problems)
