@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sparkler Rater</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #12110e;
+    --bg-raise: #1c1a16;
+    --ink: #f4efe6;
+    --muted: #a39888;
+    --faint: #6f675c;
+    --line: rgba(244, 239, 230, 0.12);
+    --accent: #e4a04a;
+    --accent-ink: #1a140c;
+    --up: #8fbf78;
+    --down: #e07a6a;
+    --star: #e4a04a;
+    --internal: rgba(228, 160, 74, 0.28);
+    --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+    --lyric-size: 22px;
+    --dock-h: 104px;
+    --font: "Avenir Next", "Segoe UI", sans-serif;
+    --serif: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      color-scheme: light;
+      --bg: #f6f1e8;
+      --bg-raise: #fffaf3;
+      --ink: #1c1814;
+      --muted: #5e564c;
+      --faint: #8a8174;
+      --line: rgba(28, 24, 20, 0.12);
+      --accent: #b86a12;
+      --accent-ink: #fffaf3;
+      --up: #2f7d32;
+      --down: #b42318;
+      --internal: rgba(184, 106, 18, 0.18);
+      --shadow: 0 16px 40px rgba(70, 48, 16, 0.08);
+    }
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #f6f1e8;
+    --bg-raise: #fffaf3;
+    --ink: #1c1814;
+    --muted: #5e564c;
+    --faint: #8a8174;
+    --line: rgba(28, 24, 20, 0.12);
+    --accent: #b86a12;
+    --accent-ink: #fffaf3;
+    --up: #2f7d32;
+    --down: #b42318;
+    --internal: rgba(184, 106, 18, 0.18);
+    --shadow: 0 16px 40px rgba(70, 48, 16, 0.08);
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #12110e;
+    --bg-raise: #1c1a16;
+    --ink: #f4efe6;
+    --muted: #a39888;
+    --faint: #6f675c;
+    --line: rgba(244, 239, 230, 0.12);
+    --accent: #e4a04a;
+    --accent-ink: #1a140c;
+    --up: #8fbf78;
+    --down: #e07a6a;
+    --internal: rgba(228, 160, 74, 0.28);
+    --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+  button, input { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px 8px;
+    padding-top: max(14px, env(safe-area-inset-top));
+  }
+  .brand {
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .brand span { color: var(--accent); }
+  .grow { flex: 1; }
+  .progress-label { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .timer { color: var(--faint); font-size: 12px; margin-left: 8px; }
+  .bar-track {
+    height: 3px;
+    margin: 0 18px 8px;
+    background: var(--line);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .bar-fill { height: 100%; width: 0; background: var(--accent); }
+  .icon-btn, .text-btn {
+    min-height: 40px;
+    border: 1px solid var(--line);
+    background: transparent;
+    border-radius: 999px;
+    padding: 0 12px;
+    color: var(--muted);
+  }
+  .icon-btn { min-width: 40px; padding: 0; }
+  .text-btn:hover, .icon-btn:hover { color: var(--ink); border-color: var(--muted); }
+  .menu { position: relative; }
+  .menu-pop {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    background: var(--bg-raise);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    min-width: 180px;
+    box-shadow: var(--shadow);
+    z-index: 20;
+    padding: 6px;
+  }
+  .menu.open .menu-pop { display: flex; flex-direction: column; }
+  .menu-pop button {
+    text-align: left;
+    background: transparent;
+    border: 0;
+    border-radius: 8px;
+    min-height: 44px;
+    padding: 0 10px;
+  }
+  .menu-pop button:hover { background: var(--line); }
+  .stage {
+    width: min(860px, 100%);
+    margin: 0 auto;
+    padding: 12px 18px calc(var(--dock-h) + 28px + env(safe-area-inset-bottom));
+  }
+  .drop {
+    margin-top: 8vh;
+    border: 1.5px dashed var(--line);
+    border-radius: 20px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-align: center;
+    padding: 28px;
+    color: var(--muted);
+  }
+  body.drag .drop, body.drag .stage { outline: 2px dashed var(--accent); }
+  .drop strong { color: var(--ink); font-size: 22px; font-weight: 550; letter-spacing: -0.02em; }
+  .primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+    border: 0;
+    border-radius: 999px;
+    min-height: 48px;
+    padding: 0 18px;
+    font-weight: 650;
+  }
+  .context {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    margin: 8px 0 18px;
+  }
+  .card-tools { display: flex; gap: 8px; margin-bottom: 10px; }
+  .chip {
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    border-radius: 999px;
+    min-height: 36px;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+  .chip.on { color: var(--ink); border-color: var(--accent); }
+  .bars { display: flex; flex-direction: column; gap: 14px; }
+  .bar-block { display: flex; flex-direction: column; gap: 6px; }
+  .bar-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 4px;
+    align-items: center;
+  }
+  .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 8px 4px;
+    border-radius: 12px;
+    background: transparent;
+    border: 0;
+    width: 100%;
+    text-align: left;
+  }
+  .bar-row.up .bar {
+    box-shadow: inset 4px 0 0 var(--up);
+    background: color-mix(in srgb, var(--up) 18%, transparent);
+  }
+  .bar-row.down .bar {
+    box-shadow: inset 4px 0 0 var(--down);
+    background: color-mix(in srgb, var(--down) 18%, transparent);
+  }
+  .vote-tag {
+    border-radius: 999px;
+    padding: 1px 7px;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .vote-tag.up { color: var(--up); }
+  .vote-tag.down { color: var(--down); }
+  .bar-actions { display: flex; flex-direction: column; align-items: center; }
+  .rewrite-btn {
+    min-width: 48px;
+    min-height: 48px;
+    padding: 0 10px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .rewrite-btn.on { color: var(--accent); border-color: var(--accent); }
+  .saved-line {
+    margin: 0 8px 4px 12px;
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .saved-label {
+    display: block;
+    font-family: var(--font);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 2px;
+  }
+  .rewrite-edit { display: flex; flex-direction: column; gap: 8px; margin: 0 4px 6px; }
+  .rewrite-edit p { margin: 0; color: var(--muted); font-size: 13px; }
+  .rewrite-edit textarea {
+    width: 100%;
+    min-height: 72px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: var(--bg-raise);
+    color: var(--ink);
+    padding: 10px 12px;
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.4;
+    resize: vertical;
+  }
+  .line-tally { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+  .stats-wrap { overflow-x: auto; }
+  .lyric {
+    font-family: var(--serif);
+    font-size: var(--lyric-size);
+    line-height: 1.45;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .end-word { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .internal { background: var(--internal); border-radius: 3px; }
+  .meta {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    color: var(--faint);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .rhyme {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    min-width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+  }
+  .star {
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--faint);
+    font-size: 20px;
+  }
+  .star.on { color: var(--star); }
+  .drawer, .details {
+    margin-top: 16px;
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .details .meaning { margin: 0 0 8px; }
+  .ex-song { color: var(--ink); margin: 12px 0 4px; font-size: 13px; }
+  .ex-bar { font-family: var(--serif); margin: 0 0 2px; }
+  .prior {
+    margin-top: 14px;
+    color: var(--faint);
+    font-size: 13px;
+  }
+  .dock {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--line);
+    z-index: 15;
+  }
+  .score {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: min(720px, 100%);
+  }
+  .score-end {
+    color: var(--faint);
+    font-size: 13px;
+    min-width: 1.4ch;
+  }
+  .score input[type="range"] {
+    flex: 1;
+    height: 48px;
+    margin: 0;
+    accent-color: var(--accent);
+  }
+  .score-num {
+    min-width: 2ch;
+    font-size: 28px;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  .reasons {
+    position: fixed;
+    left: 0; right: 0;
+    bottom: calc(var(--dock-h) + env(safe-area-inset-bottom));
+    z-index: 16;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    padding: 10px 12px;
+    background: var(--bg-raise);
+    border-top: 1px solid var(--line);
+  }
+  .reason {
+    min-height: 48px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: transparent;
+  }
+  .reason kbd {
+    color: var(--faint);
+    font-size: 11px;
+    margin-right: 6px;
+  }
+  .reason.on { background: var(--down); color: #1a100e; border-color: transparent; }
+  .reason.on kbd { color: inherit; }
+  .flash {
+    position: fixed;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    background: var(--ink);
+    color: var(--bg);
+    padding: 14px 22px;
+    border-radius: 999px;
+    font-size: 18px;
+    z-index: 30;
+    pointer-events: none;
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 40;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 16px;
+  }
+  .sheet {
+    width: min(520px, 100%);
+    max-height: min(82vh, 680px);
+    overflow: auto;
+    background: var(--bg-raise);
+    color: var(--ink);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+  .sheet.prompt-sheet { width: min(720px, 100%); }
+  .sheet h2 { margin: 0 0 10px; font-size: 18px; }
+  .sheet p { margin: 0 0 10px; color: var(--muted); font-size: 14px; }
+  .sheet textarea {
+    width: 100%;
+    min-height: 90px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    padding: 10px;
+    resize: vertical;
+  }
+  .sheet textarea.prompt {
+    min-height: 240px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  .sheet-row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 12px; }
+  .keys { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; font-size: 14px; }
+  .keys kbd { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 550; font-size: 12px; }
+  .done { text-align: center; margin-top: 12vh; }
+  .done h1 { font-family: var(--serif); font-weight: 550; font-size: 36px; margin-bottom: 8px; }
+  .err { color: var(--down); font-size: 13px; min-height: 1.2em; }
+  .foot {
+    position: fixed;
+    right: 12px;
+    bottom: calc(var(--dock-h) + 8px + env(safe-area-inset-bottom));
+    color: var(--faint);
+    font-size: 11px;
+    z-index: 5;
+    pointer-events: none;
+  }
+  body.no-dock .foot { bottom: 10px; }
+  body.no-dock .dock, body.no-dock .reasons { display: none; }
+  @media (max-width: 700px) {
+    :root { --lyric-size: 18px; }
+    .lyric { white-space: normal; overflow-x: visible; }
+    .top .timer { display: none; }
+    .hide-sm { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { scroll-behavior: auto !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Spark<span>ler</span></div>
+    <div class="grow"></div>
+    <div class="progress-label" id="progressLabel">0 / 0 rated</div>
+    <div class="timer" id="timer">0:00</div>
+    <button class="text-btn hide-sm" id="statsBtn" type="button">Stats</button>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle light and dark">◐</button>
+    <div class="menu" id="menu">
+      <button class="icon-btn" id="menuBtn" type="button" aria-label="More">•••</button>
+      <div class="menu-pop">
+        <button type="button" id="addBtn">Add files</button>
+        <button type="button" id="exportBtn">Copy ratings</button>
+        <button type="button" id="importBtn">Import ratings</button>
+        <button type="button" id="helpBtn">Shortcuts</button>
+        <button type="button" id="clearBtn">Clear all</button>
+      </div>
+    </div>
+  </header>
+  <div class="bar-track" aria-hidden="true"><div class="bar-fill" id="barFill"></div></div>
+  <main class="stage" id="stage"></main>
+  <div class="dock" id="dock" hidden>
+    <div class="score">
+      <span class="score-end">1</span>
+      <input id="scoreSlider" type="range" min="1" max="10" step="1" value="5" aria-label="Score from 1 to 10">
+      <span class="score-end">10</span>
+      <span class="score-num" id="scoreNum">5</span>
+    </div>
+  </div>
+  <div class="reasons" id="reasons" hidden></div>
+  <div class="flash" id="flash" hidden></div>
+  <div class="foot">Sparkler Rater v5</div>
+  <input id="fileInput" type="file" accept="application/json,.json" multiple hidden>
+  <input id="importInput" type="file" accept="application/json,.json" hidden>
+<script>
+(function () {
+  "use strict";
+
+  var PAGE_VERSION = "v5";
+  var STORAGE_KEY = "sparkler.rater.v1";
+  var REASONS = [
+    ["no_sense", "doesn't make sense", "Q"],
+    ["bad_rhyme", "bad rhyme", "W"],
+    ["off_flow", "off flow", "E"],
+    ["off_topic", "off topic", "A"],
+    ["too_copied", "too copied", "S"],
+    ["cringe", "cringe", "D"]
+  ];
+  var REASON_KEYS = { q: 0, w: 1, e: 2, a: 3, s: 4, d: 5 };
+  var FLASH_MS = 800;
+  var REASON_MS = 2500;
+
+  var state = {
+    cards: [],
+    cursor: 0,
+    ratings: {},
+    view: "rate",
+    details: false,
+    exemplars: false,
+    reasonOpen: false,
+    pendingReasons: [],
+    reasonTimer: 0,
+    flashTimer: 0,
+    busy: false,
+    chord: "",
+    chordTimer: 0,
+    help: false,
+    note: false,
+    confirm: false,
+    prompt: false,
+    promptText: "",
+    pendingScore: 0,
+    menu: false,
+    error: "",
+    undo: [],
+    shownAt: 0,
+    shownFor: "",
+    sessionStart: Date.now(),
+    ignoreBarClick: false,
+    rewriteId: "",
+    rewriteIndex: null
+  };
+
+  var stage = document.getElementById("stage");
+  var dock = document.getElementById("dock");
+  var reasonsEl = document.getElementById("reasons");
+  var flashEl = document.getElementById("flash");
+  var fileInput = document.getElementById("fileInput");
+  var importInput = document.getElementById("importInput");
+
+  function $(id) { return document.getElementById(id); }
+
+  function el(tag, props, kids) {
+    var node = document.createElement(tag);
+    props = props || {};
+    Object.keys(props).forEach(function (key) {
+      var value = props[key];
+      if (value == null || value === false) return;
+      if (key === "class") node.className = value;
+      else if (key === "text") node.textContent = String(value);
+      else node.setAttribute(key, value === true ? "" : String(value));
+    });
+    (kids || []).forEach(function (kid) {
+      if (kid == null) return;
+      node.appendChild(typeof kid === "string" ? document.createTextNode(kid) : kid);
+    });
+    return node;
+  }
+
+  function clear(node) {
+    while (node.firstChild) node.removeChild(node.firstChild);
+  }
+
+  function normWord(word) {
+    return String(word || "").toLowerCase().replace(/^[^a-z0-9']+|[^a-z0-9']+$/gi, "");
+  }
+
+  function titleModel(name) {
+    var text = String(name || "unknown");
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+
+  function shuffle(list) {
+    var copy = list.slice();
+    for (var i = copy.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = copy[i];
+      copy[i] = copy[j];
+      copy[j] = tmp;
+    }
+    return copy;
+  }
+
+  function modelOf(card) { return card ? card.model : ""; }
+
+  function repairAdjacent(list) {
+    for (var i = 1; i < list.length; i++) {
+      if (modelOf(list[i]) !== modelOf(list[i - 1])) continue;
+      for (var j = i + 1; j < list.length; j++) {
+        if (modelOf(list[j]) !== modelOf(list[i - 1])) {
+          var swap = list[i];
+          list[i] = list[j];
+          list[j] = swap;
+          break;
+        }
+      }
+    }
+    return list;
+  }
+
+  function loadStore() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      var data = JSON.parse(raw);
+      if (!data || typeof data !== "object") return;
+      state.cards = Array.isArray(data.cards) ? data.cards : [];
+      state.cursor = Number.isFinite(data.cursor) ? data.cursor : 0;
+      state.ratings = data.ratings && typeof data.ratings === "object" ? data.ratings : {};
+      state.details = !!data.details;
+      state.exemplars = !!data.exemplars;
+      if (data.theme === "light" || data.theme === "dark") {
+        document.documentElement.setAttribute("data-theme", data.theme);
+      }
+    } catch (err) {
+      state.error = "Saved ratings could not be read. They were left in place.";
+    }
+  }
+
+  function persist() {
+    var theme = document.documentElement.getAttribute("data-theme");
+    var payload = {
+      cards: state.cards,
+      cursor: state.cursor,
+      ratings: state.ratings,
+      details: state.details,
+      exemplars: state.exemplars,
+      theme: theme || ""
+    };
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+    } catch (err) {
+      state.error = "This browser would not store the ratings.";
+    }
+  }
+
+  function pushUndo() {
+    state.undo.push(JSON.stringify({
+      cursor: state.cursor,
+      ratings: state.ratings,
+      view: state.view
+    }));
+    if (state.undo.length > 40) state.undo.shift();
+  }
+
+  function undo() {
+    if (state.busy) return;
+    var raw = state.undo.pop();
+    if (!raw) return;
+    var data = JSON.parse(raw);
+    state.cursor = data.cursor;
+    state.ratings = data.ratings;
+    state.view = data.view || "rate";
+    state.rewriteId = "";
+    state.rewriteIndex = null;
+    closeReason(false);
+    persist();
+    render();
+  }
+
+  function currentCard() {
+    return state.cards[state.cursor] || null;
+  }
+
+  function ratingFor(id) {
+    if (!state.ratings[id]) {
+      state.ratings[id] = {
+        verse_vote: null,
+        verse_score: null,
+        verse_reasons: [],
+        note: "",
+        bars: {},
+        rated_at: "",
+        time_to_rate_ms: 0,
+        passed_checks: false,
+        model: "",
+        artist: "",
+        topic: "",
+        prompt_version: "",
+        skipped: false
+      };
+    }
+    return state.ratings[id];
+  }
+
+  function verseScore(row) {
+    if (!row || row.skipped) return null;
+    if (row.verse_score >= 1 && row.verse_score <= 10) return row.verse_score;
+    return null;
+  }
+
+  function hasVerseVote(row) {
+    if (!row || row.skipped) return false;
+    if (verseScore(row) != null) return true;
+    return row.verse_vote === 1 || row.verse_vote === -1;
+  }
+
+  function isRated(id) {
+    return hasVerseVote(state.ratings[id]);
+  }
+
+  function ratedCount() {
+    var n = 0;
+    state.cards.forEach(function (card) {
+      if (isRated(card.generation_id)) n += 1;
+    });
+    return n;
+  }
+
+  function parseFile(data) {
+    if (!data || typeof data !== "object" || Array.isArray(data)) {
+      throw new Error("Each file must be one comparison object.");
+    }
+    var models = data.models && typeof data.models === "object" ? data.models : {};
+    var cards = [];
+    Object.keys(models).forEach(function (key) {
+      var entry = models[key];
+      if (!entry || typeof entry !== "object") return;
+      var bars = Array.isArray(entry.bars) ? entry.bars : [];
+      if (!bars.length) return;
+      if (!entry.generation_id) return;
+      cards.push({
+        generation_id: String(entry.generation_id),
+        model: String(entry.model || key),
+        artist: String(data.artist || ""),
+        topic: String(data.topic || ""),
+        topic_brief: String(data.topic_brief || data.topic || ""),
+        scheme: String(data.scheme || ""),
+        prompt_version: String(data.prompt_version || ""),
+        passed: !!entry.passed,
+        exemplars: Array.isArray(data.exemplars) ? data.exemplars : [],
+        bars: bars.map(function (bar, index) {
+          return {
+            index: index,
+            text: String((bar && bar.text) || ""),
+            halves: Array.isArray(bar && bar.halves) ? bar.halves : [],
+            syllables: bar && bar.syllables != null ? bar.syllables : "",
+            end_word: String((bar && bar.end_word) || ""),
+            rhyme_letter: String((bar && bar.rhyme_letter) || ""),
+            internal: Array.isArray(bar && bar.internal) ? bar.internal : [],
+            meaning: String((bar && bar.meaning) || ""),
+            checks: bar && bar.checks && typeof bar.checks === "object" ? bar.checks : {}
+          };
+        })
+      });
+    });
+    return cards;
+  }
+
+  function addCards(incoming) {
+    var seen = {};
+    state.cards.forEach(function (card) { seen[card.generation_id] = true; });
+    var fresh = [];
+    incoming.forEach(function (card) {
+      if (seen[card.generation_id]) return;
+      seen[card.generation_id] = true;
+      fresh.push(card);
+    });
+    if (!fresh.length) return 0;
+    fresh = repairAdjacent(shuffle(fresh));
+    if (!state.cards.length) {
+      state.cards = fresh;
+      return fresh.length;
+    }
+    var last = modelOf(state.cards[state.cards.length - 1]);
+    if (fresh.length > 1 && modelOf(fresh[0]) === last) {
+      fresh.push(fresh.shift());
+      fresh = repairAdjacent(fresh);
+    }
+    state.cards = state.cards.concat(fresh);
+    return fresh.length;
+  }
+
+  function readFiles(fileList) {
+    var files = Array.prototype.slice.call(fileList || []);
+    if (!files.length) return;
+    var pending = files.length;
+    var found = [];
+    var errors = [];
+    files.forEach(function (file) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        try {
+          found = found.concat(parseFile(JSON.parse(String(reader.result || ""))));
+        } catch (err) {
+          errors.push(file.name + ": " + err.message);
+        }
+        pending -= 1;
+        if (pending === 0) finishRead(found, errors);
+      };
+      reader.onerror = function () {
+        errors.push(file.name + " could not be read.");
+        pending -= 1;
+        if (pending === 0) finishRead(found, errors);
+      };
+      reader.readAsText(file);
+    });
+  }
+
+  function finishRead(found, errors) {
+    pushUndo();
+    var added = addCards(found);
+    state.error = errors.join(" ");
+    if (!added && !errors.length) state.error = "Those verses are already loaded.";
+    if (added) {
+      var start = state.cards.length - added;
+      var onOldRated = state.cursor < start && isRated(state.cards[state.cursor].generation_id);
+      if (state.cursor >= start || onOldRated) {
+        var land = start;
+        for (var i = start; i < state.cards.length; i++) {
+          if (!isRated(state.cards[i].generation_id)) { land = i; break; }
+        }
+        state.cursor = land;
+      }
+    }
+    state.view = "rate";
+    persist();
+    render();
+  }
+
+  function firstOpen() {
+    for (var i = 0; i < state.cards.length; i++) {
+      if (!isRated(state.cards[i].generation_id)) return i;
+    }
+    return state.cards.length;
+  }
+
+  function markShown() {
+    state.shownAt = Date.now();
+  }
+
+  function lyricNode(bar) {
+    var end = normWord(bar.end_word);
+    var internals = {};
+    (bar.internal || []).forEach(function (pair) {
+      (Array.isArray(pair) ? pair : [pair]).forEach(function (word) {
+        var key = normWord(word);
+        if (key) internals[key] = true;
+      });
+    });
+    var wrap = el("div", { class: "lyric" });
+    String(bar.text || "").split(/(\s+)/).forEach(function (part) {
+      if (!part) return;
+      if (/^\s+$/.test(part)) {
+        wrap.appendChild(document.createTextNode(part));
+        return;
+      }
+      var key = normWord(part);
+      var classes = [];
+      if (key && key === end) classes.push("end-word");
+      if (key && internals[key]) classes.push("internal");
+      if (!classes.length) wrap.appendChild(document.createTextNode(part));
+      else wrap.appendChild(el("span", { class: classes.join(" "), text: part }));
+    });
+    return wrap;
+  }
+
+  function sylLabel(bar) {
+    var halves = Array.isArray(bar.halves) ? bar.halves : [];
+    var nums = halves.map(function (half) { return half && half.syl != null ? String(half.syl) : ""; }).filter(Boolean);
+    if (nums.length) return nums.join("+");
+    return bar.syllables != null && bar.syllables !== "" ? String(bar.syllables) : "";
+  }
+
+  function ensureBar(rating, index, text) {
+    var key = String(index);
+    if (!rating.bars[key]) rating.bars[key] = { vote: null, keeper: false, text: text || "", rewrite: "" };
+    if (text) rating.bars[key].text = text;
+    if (rating.bars[key].rewrite == null) rating.bars[key].rewrite = "";
+    return rating.bars[key];
+  }
+
+  function touchCard(card) {
+    var rating = ratingFor(card.generation_id);
+    rating.model = rating.model || card.model;
+    rating.artist = rating.artist || card.artist;
+    rating.topic = rating.topic || card.topic;
+    rating.prompt_version = rating.prompt_version || card.prompt_version;
+    rating.passed_checks = !!card.passed;
+    rating.skipped = false;
+    return rating;
+  }
+
+  function savedLine(mark) {
+    return mark && String(mark.rewrite || "").trim();
+  }
+
+  function lineTotals() {
+    var green = 0;
+    var red = 0;
+    var saved = 0;
+    Object.keys(state.ratings).forEach(function (id) {
+      var row = state.ratings[id];
+      if (!row || row.skipped) return;
+      Object.keys(row.bars || {}).forEach(function (key) {
+        var mark = row.bars[key];
+        if (!mark) return;
+        if (mark.vote === 1) green += 1;
+        if (mark.vote === -1) red += 1;
+        if (savedLine(mark)) saved += 1;
+      });
+    });
+    return { green: green, red: red, saved: saved };
+  }
+
+  function cardLineBits(rating) {
+    var green = 0;
+    var red = 0;
+    var saved = 0;
+    if (!rating) return "";
+    Object.keys(rating.bars || {}).forEach(function (key) {
+      var mark = rating.bars[key];
+      if (!mark) return;
+      if (mark.vote === 1) green += 1;
+      if (mark.vote === -1) red += 1;
+      if (savedLine(mark)) saved += 1;
+    });
+    var bits = [];
+    if (green || red) {
+      bits.push(green + " green");
+      bits.push(red + " red");
+    }
+    if (saved) bits.push(saved + " saved");
+    return bits.join(" · ");
+  }
+
+  function cycleBar(card, index) {
+    if (state.busy) return;
+    pushUndo();
+    var rating = touchCard(card);
+    var bar = ensureBar(rating, index, card.bars[index] ? card.bars[index].text : "");
+    bar.vote = bar.vote === null ? 1 : bar.vote === 1 ? -1 : null;
+    persist();
+    render();
+  }
+
+  function toggleKeeper(card, index) {
+    if (state.busy) return;
+    pushUndo();
+    var rating = touchCard(card);
+    var bar = ensureBar(rating, index, card.bars[index] ? card.bars[index].text : "");
+    bar.keeper = !bar.keeper;
+    persist();
+    render();
+  }
+
+  function openRewrite(card, index) {
+    if (!card || state.busy) return;
+    window.clearTimeout(state.reasonTimer);
+    state.rewriteId = card.generation_id;
+    state.rewriteIndex = index;
+    render();
+    var box = $("rewriteBox");
+    if (box) box.focus();
+  }
+
+  function closeRewrite() {
+    state.rewriteId = "";
+    state.rewriteIndex = null;
+    if (state.reasonOpen) armReasonTimer();
+    render();
+  }
+
+  function saveRewriteFromBox() {
+    var card = currentCard();
+    var box = $("rewriteBox");
+    if (!card || state.rewriteIndex == null || !box) return;
+    pushUndo();
+    var rating = touchCard(card);
+    var source = card.bars[state.rewriteIndex] ? card.bars[state.rewriteIndex].text : "";
+    var bar = ensureBar(rating, state.rewriteIndex, source);
+    bar.rewrite = box.value.replace(/\s+/g, " ").trim();
+    state.rewriteId = "";
+    state.rewriteIndex = null;
+    persist();
+    if (state.reasonOpen) armReasonTimer();
+    render();
+  }
+
+  function stampRating(card, score, reasons) {
+    var rating = ratingFor(card.generation_id);
+    var elapsed = Math.max(0, Date.now() - (state.shownAt || Date.now()));
+    rating.verse_score = score;
+    rating.verse_vote = score;
+    rating.verse_reasons = reasons.slice();
+    rating.skipped = false;
+    rating.rated_at = new Date().toISOString();
+    rating.time_to_rate_ms = elapsed;
+    rating.passed_checks = !!card.passed;
+    rating.model = card.model;
+    rating.artist = card.artist;
+    rating.topic = card.topic;
+    rating.prompt_version = card.prompt_version;
+    rating.text = card.bars.map(function (bar) { return bar.text; });
+    persist();
+  }
+
+  function closeReason(renderNow) {
+    state.reasonOpen = false;
+    state.pendingReasons = [];
+    window.clearTimeout(state.reasonTimer);
+    if (renderNow) render();
+  }
+
+  function advance() {
+    state.cursor += 1;
+    state.view = "rate";
+    persist();
+    render();
+  }
+
+  function flashThenAdvance(card) {
+    state.busy = true;
+    flashEl.hidden = false;
+    flashEl.textContent = "that was " + titleModel(card.model);
+    window.clearTimeout(state.flashTimer);
+    state.flashTimer = window.setTimeout(function () {
+      flashEl.hidden = true;
+      state.busy = false;
+      advance();
+    }, FLASH_MS);
+    render();
+  }
+
+  function commitScore(score) {
+    var card = currentCard();
+    if (!card || state.busy) return;
+    score = Math.max(1, Math.min(10, Number(score) || 1));
+    if (score <= 6) {
+      state.pendingScore = score;
+      if (!state.reasonOpen) {
+        var existing = state.ratings[card.generation_id];
+        state.pendingReasons = existing && hasVerseVote(existing) ? (existing.verse_reasons || []).slice() : [];
+      }
+      state.reasonOpen = true;
+      armReasonTimer();
+      render();
+      return;
+    }
+    pushUndo();
+    closeReason(false);
+    state.pendingScore = 0;
+    stampRating(card, score, []);
+    flashThenAdvance(card);
+  }
+
+  function nudgeScore(delta) {
+    var slider = $("scoreSlider");
+    if (!slider || state.busy || state.reasonOpen) return;
+    var next = Math.max(1, Math.min(10, Number(slider.value) + delta));
+    slider.value = String(next);
+    $("scoreNum").textContent = String(next);
+  }
+
+  function armReasonTimer() {
+    window.clearTimeout(state.reasonTimer);
+    state.reasonTimer = window.setTimeout(commitDown, REASON_MS);
+  }
+
+  function toggleReason(code) {
+    var idx = state.pendingReasons.indexOf(code);
+    if (idx === -1) state.pendingReasons.push(code);
+    else state.pendingReasons.splice(idx, 1);
+    armReasonTimer();
+    render();
+  }
+
+  function commitDown() {
+    var card = currentCard();
+    var score = state.pendingScore;
+    if (!card || !state.reasonOpen || state.busy) return;
+    if (!(score >= 1 && score <= 10)) return;
+    pushUndo();
+    var reasons = state.pendingReasons.filter(function (code) {
+      return REASONS.some(function (row) { return row[0] === code; });
+    });
+    closeReason(false);
+    state.pendingScore = 0;
+    stampRating(card, score, reasons);
+    flashThenAdvance(card);
+  }
+
+  function skip() {
+    var card = currentCard();
+    if (!card || state.busy || state.reasonOpen) return;
+    pushUndo();
+    var rating = ratingFor(card.generation_id);
+    rating.verse_vote = null;
+    rating.skipped = true;
+    rating.verse_reasons = [];
+    advance();
+  }
+
+  function back() {
+    if (state.busy) return;
+    closeReason(false);
+    if (state.cursor > 0) state.cursor -= 1;
+    state.view = "rate";
+    persist();
+    render();
+  }
+
+  function openNote() {
+    var card = currentCard();
+    if (!card) return;
+    window.clearTimeout(state.reasonTimer);
+    state.note = true;
+    render();
+    var box = $("noteBox");
+    if (box) box.focus();
+  }
+
+  function saveNote() {
+    var card = currentCard();
+    var box = $("noteBox");
+    if (card && box) {
+      pushUndo();
+      ratingFor(card.generation_id).note = box.value;
+      persist();
+    }
+    state.note = false;
+    if (state.reasonOpen) armReasonTimer();
+    render();
+  }
+
+  function exportRatings() {
+    var ratings = [];
+    Object.keys(state.ratings).forEach(function (id) {
+      var row = state.ratings[id];
+      if (row.skipped) return;
+      var card = state.cards.filter(function (item) { return item.generation_id === id; })[0];
+      var barVotes = [];
+      var sourceBars = card ? card.bars : [];
+      Object.keys(row.bars || {}).forEach(function (key) {
+        var mark = row.bars[key];
+        var index = Number(key);
+        var rewrite = savedLine(mark);
+        if (!mark || (mark.vote !== 1 && mark.vote !== -1 && !mark.keeper && !rewrite)) return;
+        var text = mark.text || (sourceBars[index] ? sourceBars[index].text : "");
+        barVotes.push({
+          bar_index: index,
+          bar_id: id + ":" + index,
+          text: text,
+          vote: mark.vote === 1 || mark.vote === -1 ? mark.vote : null,
+          keeper: !!mark.keeper,
+          reasons: [],
+          rewrite: rewrite || ""
+        });
+      });
+      if (!hasVerseVote(row) && !barVotes.length) return;
+      barVotes.sort(function (a, b) { return a.bar_index - b.bar_index; });
+      ratings.push({
+        generation_id: id,
+        model: row.model || (card ? card.model : ""),
+        artist: row.artist || (card ? card.artist : ""),
+        topic: row.topic || (card ? card.topic : ""),
+        prompt_version: row.prompt_version || (card ? card.prompt_version : ""),
+        passed_checks: card ? !!card.passed : !!row.passed_checks,
+        verse_score: verseScore(row),
+        verse_vote: verseScore(row) != null ? verseScore(row) : row.verse_vote,
+        verse_reasons: (row.verse_reasons || []).slice(),
+        note: row.note || "",
+        bar_votes: barVotes,
+        rated_at: row.rated_at || new Date().toISOString(),
+        time_to_rate_ms: row.time_to_rate_ms || 0
+      });
+    });
+    var now = new Date();
+    var body = {
+      schema: "sparkler.ratings.v1",
+      rater: "samuel",
+      exported_at: now.toISOString(),
+      ratings: ratings
+    };
+    state.promptText = "Here are my Sparkler ratings. Apply this export. The JSON is sparkler.ratings.v1. Do not rename fields.\n\n" + JSON.stringify(body, null, 2);
+    state.prompt = true;
+    state.menu = false;
+    render();
+    var box = $("promptBox");
+    if (box) {
+      box.focus();
+      box.select();
+    }
+  }
+
+  function copyPrompt() {
+    var box = $("promptBox");
+    var text = box ? box.value : state.promptText;
+    var mark = function () {
+      var button = $("copyPromptBtn");
+      if (button) button.textContent = "Copied";
+    };
+    var fallback = function () {
+      if (!box) return;
+      box.focus();
+      box.select();
+      try { document.execCommand("copy"); } catch (err) { /* the text stays selected */ }
+      mark();
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(mark, fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  function closePrompt() {
+    state.prompt = false;
+    render();
+  }
+
+  function importRatings(file) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      try {
+        var data = JSON.parse(String(reader.result || ""));
+        if (!data || data.schema !== "sparkler.ratings.v1" || !Array.isArray(data.ratings)) {
+          throw new Error("Expected a sparkler.ratings.v1 file.");
+        }
+        pushUndo();
+        data.ratings.forEach(function (row) {
+          if (!row || !row.generation_id) return;
+          var bars = {};
+          (row.bar_votes || []).forEach(function (bar) {
+            if (bar == null || bar.bar_index == null) return;
+            bars[String(bar.bar_index)] = {
+              vote: bar.vote === 1 || bar.vote === -1 ? bar.vote : null,
+              keeper: !!bar.keeper,
+              text: bar.text || "",
+              rewrite: bar.rewrite ? String(bar.rewrite) : ""
+            };
+          });
+          var score = row.verse_score >= 1 && row.verse_score <= 10 ? row.verse_score : null;
+          var vote = score != null ? score : row.verse_vote;
+          if (score == null && vote >= 2 && vote <= 10) score = vote;
+          var legacy = vote === 1 || vote === -1;
+          state.ratings[String(row.generation_id)] = {
+            verse_score: score,
+            verse_vote: score != null ? score : (legacy ? vote : null),
+            verse_reasons: Array.isArray(row.verse_reasons) ? row.verse_reasons : [],
+            note: row.note || "",
+            bars: bars,
+            rated_at: row.rated_at || "",
+            time_to_rate_ms: row.time_to_rate_ms || 0,
+            passed_checks: !!row.passed_checks,
+            model: row.model || "",
+            artist: row.artist || "",
+            topic: row.topic || "",
+            prompt_version: row.prompt_version || "",
+            skipped: false
+          };
+        });
+        state.cursor = firstOpen();
+        state.error = "";
+        persist();
+        render();
+      } catch (err) {
+        state.error = err.message;
+        render();
+      }
+    };
+    reader.readAsText(file);
+  }
+
+  function clearAll() {
+    state.confirm = false;
+    state.cards = [];
+    state.cursor = 0;
+    state.ratings = {};
+    state.undo = [];
+    state.view = "rate";
+    state.error = "";
+    closeReason(false);
+    try { localStorage.removeItem(STORAGE_KEY); } catch (err) { /* keep going */ }
+    render();
+  }
+
+  function toggleTheme() {
+    var root = document.documentElement;
+    var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+    if (!root.getAttribute("data-theme")) {
+      next = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "dark" : "light";
+    }
+    root.setAttribute("data-theme", next);
+    persist();
+  }
+
+  function toggleStats() {
+    state.view = state.view === "stats" ? "rate" : "stats";
+    render();
+  }
+
+  function armChord(letter) {
+    state.chord = letter;
+    window.clearTimeout(state.chordTimer);
+    state.chordTimer = window.setTimeout(function () {
+      state.chord = "";
+    }, 1500);
+  }
+
+  function onDigit(n) {
+    var card = currentCard();
+    if (!card || !state.chord) return false;
+    var index = n - 1;
+    if (index < 0 || index >= card.bars.length) {
+      state.chord = "";
+      return true;
+    }
+    if (state.chord === "b") cycleBar(card, index);
+    if (state.chord === "k") toggleKeeper(card, index);
+    if (state.chord === "l") openRewrite(card, index);
+    state.chord = "";
+    return true;
+  }
+
+  function isTyping(target) {
+    if (!target) return false;
+    if (target.isContentEditable) return true;
+    if (target.tagName === "TEXTAREA") return true;
+    return target.tagName === "INPUT" && target.type !== "range";
+  }
+
+  function onKey(event) {
+    if (event.repeat) return;
+    var key = event.key;
+    if ((event.metaKey || event.ctrlKey) && key.toLowerCase() === "z" && !event.shiftKey) {
+      if (isTyping(event.target)) return;
+      event.preventDefault();
+      undo();
+      return;
+    }
+    if (isTyping(event.target)) {
+      if (key === "Enter" && event.target.id === "rewriteBox" && !event.shiftKey) {
+        event.preventDefault();
+        saveRewriteFromBox();
+        return;
+      }
+      if (key === "Escape") {
+        if (state.prompt) closePrompt();
+        else if (event.target.id === "rewriteBox") closeRewrite();
+        else if (state.note) saveNote();
+      }
+      return;
+    }
+    if (state.prompt) {
+      if (key === "Escape") closePrompt();
+      return;
+    }
+    if (state.confirm) {
+      if (key === "Escape") { state.confirm = false; render(); }
+      return;
+    }
+    if (state.note) {
+      if (key === "Escape") saveNote();
+      return;
+    }
+    if (state.help) {
+      if (key === "Escape" || key === "?") { state.help = false; render(); }
+      return;
+    }
+    if (state.busy) return;
+
+    if (state.chord && /^[1-9]$/.test(key)) {
+      event.preventDefault();
+      onDigit(Number(key));
+      return;
+    }
+    state.chord = "";
+
+    if (state.reasonOpen && REASON_KEYS[key.toLowerCase()] != null && key.length === 1) {
+      event.preventDefault();
+      toggleReason(REASONS[REASON_KEYS[key.toLowerCase()]][0]);
+      return;
+    }
+    if (state.reasonOpen && key === "Enter") {
+      event.preventDefault();
+      commitDown();
+      return;
+    }
+    if (state.reasonOpen && key === "ArrowLeft") { event.preventDefault(); back(); return; }
+    if (state.reasonOpen && key.toLowerCase() === "u") { undo(); return; }
+    if (state.reasonOpen) return;
+    if (/^[1-9]$/.test(key)) { event.preventDefault(); commitScore(Number(key)); return; }
+    if (key === "0") { event.preventDefault(); commitScore(10); return; }
+    if (key === "ArrowUp") { event.preventDefault(); nudgeScore(1); return; }
+    if (key === "ArrowDown") { event.preventDefault(); nudgeScore(-1); return; }
+    if (key === "Enter") { event.preventDefault(); commitScore(Number($("scoreSlider").value)); return; }
+    if (key === "ArrowRight" || key === " ") { event.preventDefault(); skip(); return; }
+    if (key === "ArrowLeft") { event.preventDefault(); back(); return; }
+    if (key.toLowerCase() === "d" && !state.reasonOpen) { state.details = !state.details; persist(); render(); return; }
+    if (key.toLowerCase() === "r") { state.exemplars = !state.exemplars; persist(); render(); return; }
+    if (key.toLowerCase() === "n") { event.preventDefault(); openNote(); return; }
+    if (key.toLowerCase() === "u") { undo(); return; }
+    if (key.toLowerCase() === "t") { toggleStats(); return; }
+    if (key.toLowerCase() === "b") { armChord("b"); return; }
+    if (key.toLowerCase() === "k") { armChord("k"); return; }
+    if (key.toLowerCase() === "l") { armChord("l"); return; }
+    if (key === "?") { state.help = true; render(); }
+  }
+
+  function renderProgress() {
+    var total = state.cards.length;
+    var rated = ratedCount();
+    var lines = lineTotals();
+    var extra = [];
+    if (lines.green || lines.red) extra.push(lines.green + " green", lines.red + " red");
+    if (lines.saved) extra.push(lines.saved + " saved");
+    $("progressLabel").textContent = rated + " / " + total + " rated" + (extra.length ? " · " + extra.join(" · ") : "");
+    $("barFill").style.width = total ? Math.round((rated / total) * 100) + "%" : "0";
+    var secs = Math.floor((Date.now() - state.sessionStart) / 1000);
+    $("timer").textContent = Math.floor(secs / 60) + ":" + String(secs % 60).padStart(2, "0");
+  }
+
+  function renderEmpty() {
+    var drop = el("div", { class: "drop" }, [
+      el("strong", { text: "Drop model_comparison.json files here" }),
+      el("div", { text: "One verse at a time. The model stays hidden until you vote." }),
+      el("button", { class: "primary", type: "button", id: "emptyAdd", text: "Choose files" })
+    ]);
+    if (state.error) drop.appendChild(el("div", { class: "err", text: state.error }));
+    stage.appendChild(drop);
+    $("emptyAdd").addEventListener("click", function () { fileInput.click(); });
+  }
+
+  function renderDone() {
+    var rated = ratedCount();
+    var skipped = state.cards.length - rated;
+    var wrap = el("div", { class: "done" }, [
+      el("h1", { text: "That's the stack." }),
+      el("p", { text: rated + " rated" + (skipped ? " · " + skipped + " skipped" : "") + "." })
+    ]);
+    var row = el("div", { class: "sheet-row" });
+    if (skipped) {
+      var review = el("button", { class: "text-btn", type: "button", text: "Review skipped" });
+      review.addEventListener("click", function () {
+        state.cursor = firstOpen();
+        render();
+      });
+      row.appendChild(review);
+    }
+    var again = el("button", { class: "primary", type: "button", text: "Copy ratings" });
+    again.addEventListener("click", exportRatings);
+    row.appendChild(again);
+    wrap.appendChild(row);
+    if (state.error) wrap.appendChild(el("div", { class: "err", text: state.error }));
+    stage.appendChild(wrap);
+  }
+
+  function renderCard(card) {
+    var rating = state.ratings[card.generation_id];
+    var header = [card.artist, card.topic_brief, String(card.scheme || "").toUpperCase()].filter(Boolean).join(" · ");
+    stage.appendChild(el("div", { class: "context", text: header }));
+    var tools = el("div", { class: "card-tools" });
+    var detailBtn = el("button", { class: "chip" + (state.details ? " on" : ""), type: "button", text: "Details" });
+    var realBtn = el("button", { class: "chip" + (state.exemplars ? " on" : ""), type: "button", text: "Real lyrics" });
+    var noteBtn = el("button", { class: "chip", type: "button", text: "Note" });
+    detailBtn.addEventListener("click", function () { state.details = !state.details; persist(); render(); });
+    realBtn.addEventListener("click", function () { state.exemplars = !state.exemplars; persist(); render(); });
+    noteBtn.addEventListener("click", openNote);
+    tools.appendChild(detailBtn);
+    tools.appendChild(realBtn);
+    tools.appendChild(noteBtn);
+    stage.appendChild(tools);
+    var tally = cardLineBits(rating);
+    if (tally) stage.appendChild(el("div", { class: "line-tally", text: tally }));
+
+    var bars = el("div", { class: "bars" });
+    card.bars.forEach(function (bar) {
+      var mark = rating && rating.bars ? rating.bars[String(bar.index)] : null;
+      var voteClass = "";
+      if (mark && mark.vote === 1) voteClass = " up";
+      if (mark && mark.vote === -1) voteClass = " down";
+      var editing = state.rewriteId === card.generation_id && state.rewriteIndex === bar.index;
+      var block = el("div", { class: "bar-block" });
+      var row = el("div", { class: "bar-row" + voteClass });
+      var main = el("button", { class: "bar", type: "button", "aria-label": "Mark this line green, then red" });
+      main.appendChild(lyricNode(bar));
+      var meta = el("div", { class: "meta" });
+      var syl = sylLabel(bar);
+      if (syl) meta.appendChild(el("span", { text: syl }));
+      if (bar.rhyme_letter) meta.appendChild(el("span", { class: "rhyme", text: bar.rhyme_letter.toUpperCase() }));
+      if (mark && mark.vote === 1) meta.appendChild(el("span", { class: "vote-tag up", text: "green" }));
+      if (mark && mark.vote === -1) meta.appendChild(el("span", { class: "vote-tag down", text: "red" }));
+      main.appendChild(meta);
+      main.addEventListener("click", function () {
+        if (state.ignoreBarClick) { state.ignoreBarClick = false; return; }
+        if (editing) return;
+        cycleBar(card, bar.index);
+      });
+      var star = el("button", {
+        class: "star" + (mark && mark.keeper ? " on" : ""),
+        type: "button",
+        "aria-label": "Keeper",
+        text: "★"
+      });
+      star.addEventListener("click", function (event) {
+        event.stopPropagation();
+        toggleKeeper(card, bar.index);
+      });
+      var rewriteBtn = el("button", {
+        class: "rewrite-btn" + (savedLine(mark) ? " on" : ""),
+        type: "button",
+        text: savedLine(mark) ? "Edit" : "Rewrite"
+      });
+      rewriteBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        openRewrite(card, bar.index);
+      });
+      var press = 0;
+      main.addEventListener("touchstart", function () {
+        press = window.setTimeout(function () {
+          state.ignoreBarClick = true;
+          toggleKeeper(card, bar.index);
+        }, 450);
+      }, { passive: true });
+      main.addEventListener("touchend", function () { window.clearTimeout(press); });
+      main.addEventListener("touchmove", function () { window.clearTimeout(press); }, { passive: true });
+      var actions = el("div", { class: "bar-actions" });
+      actions.appendChild(star);
+      actions.appendChild(rewriteBtn);
+      row.appendChild(main);
+      row.appendChild(actions);
+      block.appendChild(row);
+      if (savedLine(mark) && !editing) {
+        var saved = el("p", { class: "saved-line" });
+        saved.appendChild(el("span", { class: "saved-label", text: "Your line" }));
+        saved.appendChild(document.createTextNode(savedLine(mark)));
+        block.appendChild(saved);
+      }
+      if (editing) {
+        var editor = el("div", { class: "rewrite-edit" });
+        editor.appendChild(el("p", { text: "Write the line that makes more sense." }));
+        var box = el("textarea", { id: "rewriteBox", "aria-label": "Your line" });
+        box.value = savedLine(mark) || bar.text || "";
+        editor.appendChild(box);
+        var editRow = el("div", { class: "sheet-row" });
+        var cancelLine = el("button", { class: "text-btn", type: "button", text: "Cancel" });
+        cancelLine.addEventListener("click", closeRewrite);
+        var saveLine = el("button", { class: "primary", type: "button", text: "Save line" });
+        saveLine.addEventListener("click", saveRewriteFromBox);
+        editRow.appendChild(cancelLine);
+        editRow.appendChild(saveLine);
+        editor.appendChild(editRow);
+        block.appendChild(editor);
+      }
+      bars.appendChild(block);
+      if (state.details) {
+        var detail = el("div", { class: "details" });
+        if (bar.meaning) detail.appendChild(el("p", { class: "meaning", text: bar.meaning }));
+        var bits = Object.keys(bar.checks || {}).map(function (key) {
+          return key.replace(/_/g, " ") + " " + (bar.checks[key] ? "yes" : "no");
+        });
+        if (bits.length) detail.appendChild(el("div", { text: bits.join(" · ") }));
+        bars.appendChild(detail);
+      }
+    });
+    stage.appendChild(bars);
+
+    if (state.exemplars) {
+      var drawer = el("div", { class: "drawer" });
+      drawer.appendChild(el("div", { text: "Real lyrics used" }));
+      (card.exemplars || []).forEach(function (ex) {
+        drawer.appendChild(el("div", { class: "ex-song", text: ex && ex.song ? String(ex.song) : "Untitled" }));
+        var lines = ex && Array.isArray(ex.bars) ? ex.bars : [];
+        lines.forEach(function (line) {
+          drawer.appendChild(el("p", { class: "ex-bar", text: String(line) }));
+        });
+      });
+      if (!(card.exemplars || []).length) drawer.appendChild(el("p", { text: "None in this file." }));
+      stage.appendChild(drawer);
+    }
+
+    if (rating && verseScore(rating) != null) stage.appendChild(el("div", { class: "prior", text: "You scored this " + verseScore(rating) + "." }));
+    else if (rating && rating.verse_vote === 1) stage.appendChild(el("div", { class: "prior", text: "You marked this up." }));
+    else if (rating && rating.verse_vote === -1 && !rating.skipped) stage.appendChild(el("div", { class: "prior", text: "You marked this down." }));
+    if (rating && rating.note) stage.appendChild(el("div", { class: "prior", text: rating.note }));
+    if (state.error) stage.appendChild(el("div", { class: "err", text: state.error }));
+    var shown = state.pendingScore >= 1 ? state.pendingScore : (verseScore(rating) || 5);
+    var slider = $("scoreSlider");
+    if (slider && document.activeElement !== slider) slider.value = String(shown);
+    $("scoreNum").textContent = slider ? slider.value : String(shown);
+    if (state.shownFor !== card.generation_id) {
+      state.shownFor = card.generation_id;
+      markShown();
+    }
+  }
+
+  function renderReasons() {
+    clear(reasonsEl);
+    reasonsEl.hidden = !state.reasonOpen;
+    if (!state.reasonOpen) return;
+    REASONS.forEach(function (row) {
+      var on = state.pendingReasons.indexOf(row[0]) !== -1;
+      var button = el("button", { class: "reason" + (on ? " on" : ""), type: "button" }, [
+        el("kbd", { text: row[2] }),
+        document.createTextNode(row[1])
+      ]);
+      button.addEventListener("click", function () { toggleReason(row[0]); });
+      reasonsEl.appendChild(button);
+    });
+    var next = el("button", { class: "reason", type: "button", text: "Next" });
+    next.addEventListener("click", commitDown);
+    reasonsEl.appendChild(next);
+  }
+
+  function renderStats() {
+    var byModel = {};
+    function bucket(name) {
+      var key = name || "unknown";
+      if (!byModel[key]) byModel[key] = { rated: 0, up: 0, scoreSum: 0, scoreN: 0, keepers: 0, green: 0, red: 0, saved: 0, reasons: {}, passUp: 0, passN: 0, failUp: 0, failN: 0 };
+      return byModel[key];
+    }
+    Object.keys(state.ratings).forEach(function (id) {
+      var row = state.ratings[id];
+      if (!row || row.skipped) return;
+      var item = bucket(row.model);
+      Object.keys(row.bars || {}).forEach(function (key) {
+        var mark = row.bars[key];
+        if (!mark) return;
+        if (mark.keeper) item.keepers += 1;
+        if (mark.vote === 1) item.green += 1;
+        if (mark.vote === -1) item.red += 1;
+        if (savedLine(mark)) item.saved += 1;
+      });
+      if (!hasVerseVote(row)) return;
+      item.rated += 1;
+      var liked = verseScore(row) != null ? verseScore(row) >= 7 : row.verse_vote === 1;
+      if (verseScore(row) != null) { item.scoreSum += verseScore(row); item.scoreN += 1; }
+      if (liked) item.up += 1;
+      (row.verse_reasons || []).forEach(function (code) {
+        item.reasons[code] = (item.reasons[code] || 0) + 1;
+      });
+      if (row.passed_checks) {
+        item.passN += 1;
+        if (liked) item.passUp += 1;
+      } else {
+        item.failN += 1;
+        if (liked) item.failUp += 1;
+      }
+    });
+    var wrap = el("div");
+    wrap.appendChild(el("h2", { text: "Stats" }));
+    var table = el("table");
+    table.appendChild(el("tr", {}, ["Model", "Rated", "Avg", "Up rate", "Green", "Red", "Line up", "Saved lines", "Down reasons", "Keepers", "Up if checks passed", "Up if checks failed"].map(function (label) {
+      return el("th", { text: label });
+    })));
+    var names = Object.keys(byModel).sort();
+    if (!names.length) wrap.appendChild(el("p", { text: "No votes yet." }));
+    names.forEach(function (name) {
+      var item = byModel[name];
+      var top = Object.keys(item.reasons).sort(function (a, b) { return item.reasons[b] - item.reasons[a]; })[0] || "—";
+      var avg = item.scoreN ? (Math.round((item.scoreSum / item.scoreN) * 10) / 10).toFixed(1) : "—";
+      var rate = item.rated ? Math.round((item.up / item.rated) * 100) + "%" : "—";
+      var pass = item.passN ? Math.round((item.passUp / item.passN) * 100) + "%" : "—";
+      var fail = item.failN ? Math.round((item.failUp / item.failN) * 100) + "%" : "—";
+      var lineN = item.green + item.red;
+      var lineUp = lineN ? Math.round((item.green / lineN) * 100) + "%" : "—";
+      table.appendChild(el("tr", {}, [
+        el("td", { text: titleModel(name) }),
+        el("td", { text: String(item.rated) }),
+        el("td", { text: avg }),
+        el("td", { text: rate }),
+        el("td", { text: String(item.green) }),
+        el("td", { text: String(item.red) }),
+        el("td", { text: lineUp }),
+        el("td", { text: String(item.saved) }),
+        el("td", { text: top }),
+        el("td", { text: String(item.keepers) }),
+        el("td", { text: pass }),
+        el("td", { text: fail })
+      ]));
+    });
+    var scroller = el("div", { class: "stats-wrap" });
+    scroller.appendChild(table);
+    wrap.appendChild(scroller);
+    var backBtn = el("button", { class: "text-btn", type: "button", text: "Back to verses" });
+    backBtn.addEventListener("click", function () { state.view = "rate"; render(); });
+    wrap.appendChild(el("div", { class: "sheet-row" }, [backBtn]));
+    stage.appendChild(wrap);
+  }
+
+  function renderOverlays() {
+    var old = $("overlay");
+    if (old) old.remove();
+    if (!state.help && !state.note && !state.confirm && !state.prompt) return;
+    var overlay = el("div", { class: "overlay", id: "overlay" });
+    var sheet = el("div", { class: "sheet" + (state.prompt ? " prompt-sheet" : "") });
+    if (state.help) {
+      sheet.appendChild(el("h2", { text: "Shortcuts" }));
+      var keys = el("div", { class: "keys" });
+      [
+        ["1–9", "score that number"],
+        ["0", "score 10"],
+        ["↑ ↓", "nudge the slider"],
+        ["Enter", "save the score"],
+        ["→ or Space", "skip"],
+        ["←", "previous verse"],
+        ["Q W E A S D", "reasons, while the row is open"],
+        ["Tap a line", "green, then red, then clear"],
+        ["Rewrite", "save the line that makes more sense"],
+        ["L then 1–9", "rewrite that line"],
+        ["B then 1–9", "green, then red, then clear on that bar"],
+        ["K then 1–9", "keeper star on that bar"],
+        ["D", "details"],
+        ["R", "real lyrics"],
+        ["N", "note"],
+        ["U or ⌘Z", "undo"],
+        ["T", "stats"],
+        ["?", "this list"]
+      ].forEach(function (pair) {
+        keys.appendChild(el("kbd", { text: pair[0] }));
+        keys.appendChild(el("span", { text: pair[1] }));
+      });
+      sheet.appendChild(keys);
+    } else if (state.note) {
+      sheet.appendChild(el("h2", { text: "Note" }));
+      var card = currentCard();
+      var existing = card && state.ratings[card.generation_id] ? state.ratings[card.generation_id].note : "";
+      var box = el("textarea", { id: "noteBox" });
+      box.value = existing || "";
+      sheet.appendChild(box);
+    } else if (state.prompt) {
+      sheet.appendChild(el("h2", { text: "Copy this back" }));
+      sheet.appendChild(el("p", { text: "Paste it into the chat. Nothing is downloaded." }));
+      var promptBox = el("textarea", { id: "promptBox", class: "prompt", readonly: "readonly" });
+      promptBox.value = state.promptText;
+      sheet.appendChild(promptBox);
+    } else if (state.confirm) {
+      sheet.appendChild(el("h2", { text: "Clear every rating?" }));
+      sheet.appendChild(el("p", { text: "This removes the loaded verses and the votes stored in this browser." }));
+    }
+    var row = el("div", { class: "sheet-row" });
+    var cancel = el("button", { class: "text-btn", type: "button", text: state.note ? "Save" : "Close" });
+    cancel.addEventListener("click", function () {
+      if (state.note) saveNote();
+      else { state.help = false; state.confirm = false; state.prompt = false; render(); }
+    });
+    row.appendChild(cancel);
+    if (state.prompt) {
+      var copy = el("button", { class: "primary", type: "button", id: "copyPromptBtn", text: "Copy" });
+      copy.addEventListener("click", copyPrompt);
+      row.appendChild(copy);
+    }
+    if (state.confirm) {
+      var yes = el("button", { class: "primary", type: "button", text: "Clear all" });
+      yes.addEventListener("click", clearAll);
+      row.appendChild(yes);
+    }
+    sheet.appendChild(row);
+    overlay.appendChild(sheet);
+    overlay.addEventListener("click", function (event) {
+      if (event.target === overlay) {
+        if (state.note) saveNote();
+        else { state.help = false; state.confirm = false; state.prompt = false; render(); }
+      }
+    });
+    document.body.appendChild(overlay);
+  }
+
+  function render() {
+    clear(stage);
+    renderProgress();
+    var showDock = state.view === "rate" && !!currentCard() && !state.busy;
+    dock.hidden = !showDock && !(state.view === "rate" && currentCard());
+    if (state.view === "rate" && currentCard()) dock.hidden = false;
+    document.body.classList.toggle("no-dock", dock.hidden);
+    if (state.view === "stats") {
+      dock.hidden = true;
+      document.body.classList.add("no-dock");
+      closeReason(false);
+      renderStats();
+    } else if (!state.cards.length) {
+      dock.hidden = true;
+      document.body.classList.add("no-dock");
+      renderEmpty();
+    } else if (!currentCard()) {
+      dock.hidden = true;
+      document.body.classList.add("no-dock");
+      renderDone();
+    } else {
+      renderCard(currentCard());
+    }
+    renderReasons();
+    renderOverlays();
+    $("menu").classList.toggle("open", state.menu);
+  }
+
+  document.addEventListener("keydown", onKey);
+  $("scoreSlider").addEventListener("input", function () {
+    $("scoreNum").textContent = $("scoreSlider").value;
+  });
+  $("scoreSlider").addEventListener("change", function () {
+    commitScore(Number($("scoreSlider").value));
+  });
+  $("themeBtn").addEventListener("click", toggleTheme);
+  $("statsBtn").addEventListener("click", toggleStats);
+  $("menuBtn").addEventListener("click", function () { state.menu = !state.menu; render(); });
+  $("addBtn").addEventListener("click", function () { state.menu = false; fileInput.click(); });
+  $("exportBtn").addEventListener("click", function () { state.menu = false; exportRatings(); });
+  $("importBtn").addEventListener("click", function () { state.menu = false; importInput.click(); });
+  $("helpBtn").addEventListener("click", function () { state.menu = false; state.help = true; render(); });
+  $("clearBtn").addEventListener("click", function () { state.menu = false; state.confirm = true; render(); });
+  fileInput.addEventListener("change", function () { readFiles(fileInput.files); fileInput.value = ""; });
+  importInput.addEventListener("change", function () {
+    if (importInput.files && importInput.files[0]) importRatings(importInput.files[0]);
+    importInput.value = "";
+  });
+
+  ["dragenter", "dragover"].forEach(function (name) {
+    document.addEventListener(name, function (event) {
+      event.preventDefault();
+      document.body.classList.add("drag");
+    });
+  });
+  ["dragleave", "drop"].forEach(function (name) {
+    document.addEventListener(name, function (event) {
+      event.preventDefault();
+      document.body.classList.remove("drag");
+    });
+  });
+  document.addEventListener("drop", function (event) {
+    event.preventDefault();
+    if (event.dataTransfer && event.dataTransfer.files) readFiles(event.dataTransfer.files);
+  });
+
+  window.setInterval(renderProgress, 1000);
+  loadStore();
+  render();
+})();
+</script>
+</body>
+</html>
