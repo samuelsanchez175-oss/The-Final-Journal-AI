@@ -31,11 +31,18 @@ HERE = Path(__file__).resolve().parent
 OUT = HERE / "out"
 
 SCHEMA_VERSION = "phase6.v2"
-PROMPT_VERSION = "verse.v4"
+PROMPT_VERSION = "verse.v5"
 MODELS = ("haiku", "sonnet", "opus")
 MODEL_DEFAULT = "sonnet"
 SCHEMES = ("aabb", "abab")
-SYL_MIN, SYL_MAX = 12, 15
+MODES = ("rewrite", "fresh")
+# Soft target from Gunna's catalog: per-song mean syllables p10 ~8, median ~10, p90 ~12.5.
+SYL_MIN, SYL_MAX = 8, 13
+RATINGS_DIR = HERE / "rater" / "exports"
+REASON_TEXT = {
+    "no_sense": "doesn't make sense", "bad_rhyme": "forced or bad rhyme", "off_flow": "off flow",
+    "off_topic": "off topic", "too_copied": "too copied", "cringe": "cringe",
+}
 COPY_NGRAM = 5
 MAX_ATTEMPTS = 3
 CALL_TIMEOUT = 300
@@ -138,6 +145,65 @@ class Corpus:
         return None
 
 
+def clean_text(bar: str) -> str:
+    return re.sub(r"\s+", " ", p1.ADLIB_RE.sub(" ", bar)).strip()
+
+
+def find_couplets(corpus: Corpus, topic: str | None, rng: random.Random, n: int = 8) -> list[dict]:
+    """Real back-to-back bar pairs that already end-rhyme, topic-matched first."""
+    on, off = [], []
+    for song, bars in corpus.songs:
+        parsed = [p1.Bar(b, corpus.lex) for b in bars]
+        for i in range(len(bars) - 1):
+            a, b = parsed[i], parsed[i + 1]
+            if not all(len(x.words) >= 4 and 6 <= x.syl <= 15 for x in (a, b)):
+                continue
+            if end_rhyme_kind(a, b) not in ("perfect", "slant"):
+                continue
+            item = {"song": song, "topic": corpus.topic_of.get((song, i + 1)),
+                    "bars": [clean_text(bars[i]), clean_text(bars[i + 1])]}
+            (on if topic and item["topic"] == topic else off).append(item)
+    rng.shuffle(on)
+    rng.shuffle(off)
+    picked, songs = [], set()
+    for c in on[:n - 3] + off:
+        if c["song"] in songs:
+            continue
+        songs.add(c["song"])
+        picked.append(c)
+        if len(picked) >= n:
+            break
+    return picked
+
+
+def load_taste(artist: str, limit: int = 20) -> dict:
+    """Bars Samuel starred / thumbed up and thumbed down in rater exports (auto-grader files skipped)."""
+    liked: dict[str, bool] = {}
+    disliked: dict[str, set[str]] = {}
+    for path in sorted(RATINGS_DIR.glob("sparkler_ratings_*.json")):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if data.get("schema") != "sparkler.ratings.v1" or data.get("rater") == "sparkler-grader":
+            continue
+        for r in data.get("ratings", []):
+            if r.get("artist") not in (None, artist):
+                continue
+            for b in r.get("bar_votes", []):
+                text = clean_text(b.get("text", ""))
+                if not text:
+                    continue
+                if b.get("keeper") or b.get("vote") == 1:
+                    liked[text] = liked.get(text, False) or bool(b.get("keeper"))
+                elif b.get("vote") == -1:
+                    disliked.setdefault(text, set()).update(b.get("reasons") or r.get("verse_reasons") or [])
+    for text in liked:
+        disliked.pop(text, None)
+    loved = sorted(liked, key=lambda t: not liked[t])[:limit]
+    return {"liked": loved, "disliked": [(t, sorted(rs)) for t, rs in list(disliked.items())[:limit]]}
+
+
 def load_style(artist: str) -> tuple[dict, dict, dict]:
     def find(path: Path) -> dict:
         for line in open(path, encoding="utf-8"):
@@ -159,64 +225,79 @@ def pick_topic(chains: dict, corpus: Corpus, rng: random.Random) -> str:
 
 
 def build_prompt(artist: str, n_bars: int, topic: str, scheme: str, exemplars: list[dict],
-                 grades: dict, rollup: dict) -> str:
+                 grades: dict, rollup: dict, mode: str = "rewrite", couplets: list[dict] | None = None,
+                 taste: dict | None = None) -> str:
     def block(p: dict) -> str:
-        lines = (re.sub(r"\s+", " ", p1.ADLIB_RE.sub(" ", b)).strip() for b in p["bars"])
+        lines = (clean_text(b) for b in p["bars"])
         return f'"{p["song"]}"\n' + "\n".join(l for l in lines if l)
 
-    on_topic = [p for p in exemplars if p["topic"]]
-    voice = [p for p in exemplars if not p["topic"]]
+    brief = TOPIC_BRIEF.get(topic, topic.replace("_", " "))
     m = rollup.get("metrics", {})
     syl_med = m.get("cadence.syl_per_bar_mean", {}).get("median")
     shares = grades.get("end_rhyme_scheme_share", {})
-    facts = list(grades.get("style_card", []))
+    facts = []
     if syl_med:
-        facts.append(f"Median bar length across {rollup.get('confident_songs', '?')} songs: {syl_med:.0f} syllables.")
+        facts.append(f"Typical bar: about {syl_med:.0f} syllables. Short, conversational lines.")
     if shares:
-        facts.append(f"End-rhyme partners: {shares.get('couplet', 0)}% back-to-back, "
-                     f"{shares.get('alternate', 0)}% alternating, {shares.get('far', 0)}% further apart.")
+        facts.append(f"End rhymes: {shares.get('couplet', 0)}% back-to-back couplets, "
+                     f"{shares.get('alternate', 0)}% alternating.")
+    facts.append("Internal rhymes are rare for him (a few percent of bars). Don't force them.")
 
     if scheme == "aabb":
-        scheme_rule = ("AABB: bars 1 and 2 end on the same sound (A), bars 3 and 4 end on a different "
-                       "shared sound (B).")
+        scheme_rule = "AABB: bars 1-2 share an end sound, bars 3-4 share a different end sound."
     else:
-        scheme_rule = ("ABAB: bars 1 and 3 end on the same sound (A), bars 2 and 4 end on a different "
-                       "shared sound (B).")
+        scheme_rule = "ABAB: bars 1 and 3 share an end sound, bars 2 and 4 share a different end sound."
     if n_bars != 4:
         scheme_rule += f" Repeat the pattern for every group of 4 bars ({n_bars} bars total)."
 
-    parts = [
-        f"You are ghostwriting {n_bars} bars in the voice of {artist}. Below are real {artist} lyrics. "
-        f"Study them for vocabulary, slang, imagery, sentence shape and how the rhymes land, then write "
-        f"bars that sound like they belong on his album. Borrowing his signature phrases and flips is fine; "
-        f"just don't paste a whole bar.",
-    ]
-    if on_topic:
-        parts.append(f"REAL {artist.upper()} BARS ON THIS TOPIC ({topic}):\n\n" + "\n\n".join(block(p) for p in on_topic))
+    parts = [f"You are ghostwriting {n_bars} bars in the voice of {artist}. Below are real {artist} lyrics."]
+    voice = [p for p in exemplars if p["bars"]]
     if voice:
-        parts.append(f"MORE REAL {artist.upper()} BARS (voice reference, any topic):\n\n" + "\n\n".join(block(p) for p in voice))
+        parts.append(f"REAL {artist.upper()} BARS (how he talks):\n\n" + "\n\n".join(block(p) for p in voice))
     if facts:
         parts.append(f"MEASURED ON {artist.upper()}'S CATALOG:\n" + "\n".join(f"- {f}" for f in facts))
+    if taste and taste.get("liked"):
+        parts.append("BARS THE USER LOVED. This is the target: plain speech, real places and people, "
+                     "a small story, nothing bent to fit a rhyme.\n" + "\n".join(f"+ {t}" for t in taste["liked"]))
+    if taste and taste.get("disliked"):
+        parts.append("BARS THE USER REJECTED. Never write like these:\n" + "\n".join(
+            f"- {t}  ({', '.join(REASON_TEXT.get(r, r) for r in rs) or 'rejected'})" for t, rs in taste["disliked"]))
+
+    if mode == "rewrite" and couplets:
+        pairs = n_bars // 2
+        order = ("Keep each couplet's two lines together (AABB)." if scheme == "aabb" else
+                 "Order the lines ABAB: couplet 1 line 1, couplet 2 line 1, couplet 1 line 2, couplet 2 line 2, "
+                 "and make sure it still reads naturally in that order.")
+        parts.append(f"SOURCE COUPLETS (real {artist}; each pair already rhymes):\n" + "\n".join(
+            f"{i}. {c['bars'][0]} / {c['bars'][1]}   (\"{c['song']}\")" for i, c in enumerate(couplets, 1)))
+        parts.append(
+            f"TASK: build {n_bars} bars about {brief} by REWRITING {pairs} of the source couplets. "
+            f"Pick the {pairs} whose shape fits best. For each line keep {artist}'s sentence shape, rhythm and "
+            f"roughly the same length; swap the specifics (cars, brands, places, people, numbers, actions) so the "
+            f"verse is about the topic and tells one small story. Keep the couplet's end-rhyme sound, or replace "
+            f"BOTH end words with a new pair that rhymes just as naturally. If a line already fits, keep most of it. "
+            f"{order}")
+    else:
+        parts.append(f"TASK: write {n_bars} bars about {brief} that sound like they belong on his album. "
+                     f"Borrowing his signature phrases is fine.")
+
     parts.append(
-        f"WRITE {n_bars} bars about: {TOPIC_BRIEF.get(topic, topic.replace('_', ' '))}.\n\n"
-        f"MOST IMPORTANT: it has to make sense read out loud. Each bar is a natural sentence {artist} would "
-        f"actually say, and the second half completes or flips the first half. The {n_bars} bars follow one "
-        f"thread (one scene, or one flex that builds), not {n_bars} unrelated boasts. Word salad that only "
-        f"exists to hit a rhyme is a failure even if every rule below passes.\n\n"
-        f"Then every bar must also follow these:\n"
-        f"1. One line with exactly one comma: a short setup before the comma, a longer payoff after it "
-        f"(setup about 4-6 syllables, payoff about 7-9).\n"
-        f"2. {SYL_MIN}-{SYL_MAX} syllables total.\n"
-        f"3. An internal rhyme: a word in the first half rhymes (slant is fine) with a word in the second half.\n"
-        f"4. End-rhyme scheme {scheme_rule}\n"
-        f"5. Every bar starts with a different word. Don't repeat a content word anywhere in the verse.\n"
-        f"6. Concrete images (brands, objects, places, actions, numbers) over abstract claims like "
-        f"\"I'm the best\" or \"I got skill\". Never use the words: {', '.join(sorted(BANNED))}, or the topic label.\n"
-        f"7. No ad-libs in parentheses.\n\n"
-        f"Plan the story and the two end-rhyme sounds first, then write. For each bar give a one-line "
-        f"plain-English meaning; if you can't state a clear meaning, rewrite the bar. Return only JSON:\n"
-        f'{{"plan": "...", "rhyme_sounds": {{"A": "...", "B": "..."}}, '
-        f'"bars": [{{"bar": "...", "meaning": "..."}}, ...]}}'
+        "MOST IMPORTANT: read every bar out loud. It must be a sentence he would actually say, and the verse "
+        "follows one thread. If a rhyme forces a weird word, change the rhyme, not the sense.\n\n"
+        "MUST:\n"
+        "1. One line per bar with exactly one comma (a setup, then the payoff).\n"
+        f"2. End-rhyme scheme {scheme_rule}\n"
+        "3. Every bar starts with a different word.\n"
+        "4. No ad-libs in parentheses, and never paste a source line unchanged.\n"
+        f"5. Never use the words: {', '.join(sorted(BANNED))}, or the topic label.\n\n"
+        "AIM FOR (don't sacrifice sense for these):\n"
+        f"- About {SYL_MIN}-{SYL_MAX} syllables per bar.\n"
+        "- The setup before the comma usually shorter than the payoff after it.\n"
+        "- Concrete images over abstract claims like \"I'm the best\".\n"
+        "- Don't repeat content words across bars.\n\n"
+        "For each bar give a one-line plain-English meaning; if you can't state a clear meaning, rewrite the "
+        "bar. Return only JSON:\n"
+        '{"plan": "...", "bars": [{"bar": "...", "meaning": "...", "source": <couplet number or null>}, ...]}'
     )
     return "\n\n".join(parts)
 
@@ -272,10 +353,11 @@ def scheme_pairs(n: int, scheme: str) -> list[tuple[int, int]]:
 
 
 def analyze_verse(texts: list[str], scheme: str, corpus: Corpus,
-                  meanings: list[str] | None = None) -> tuple[list[dict], list[str]]:
+                  meanings: list[str] | None = None) -> tuple[list[dict], list[str], list[str]]:
+    """Returns (rows, problems, notes). Problems break a MUST rule and trigger a retry; notes are soft targets."""
     lex = corpus.lex
     bars = [p1.Bar(t, lex) for t in texts]
-    rows, problems = [], []
+    rows, problems, notes = [], [], []
     letters: list[str] = []
     for k, (t, b) in enumerate(zip(texts, bars), 1):
         commas = t.count(",")
@@ -302,9 +384,7 @@ def analyze_verse(texts: list[str], scheme: str, corpus: Corpus,
         if commas != 1:
             problems.append(f"bar {k}: has {commas} commas, needs exactly 1")
         if not checks["syllables"]:
-            problems.append(f"bar {k}: {b.syl} syllables ({' + '.join(map(str, half_syl))}), needs {SYL_MIN}-{SYL_MAX}")
-        if not pairs:
-            problems.append(f"bar {k}: no internal rhyme found between two words inside the bar")
+            notes.append(f"bar {k}: {b.syl} syllables ({' + '.join(map(str, half_syl))}), target {SYL_MIN}-{SYL_MAX}")
         if copy:
             problems.append(f"bar {k}: is a word-for-word copy of a real {corpus.artist} bar")
         if banned:
@@ -332,8 +412,7 @@ def analyze_verse(texts: list[str], scheme: str, corpus: Corpus,
     if sum(short_setup) < len(rows) - 1:
         bad = [f"bar {k} ({r['halves'][0]['syl']} vs {r['halves'][-1]['syl']})"
                for k, r in enumerate(rows, 1) if not r["checks"]["setup_shorter"]]
-        problems.append("setup before the comma should be shorter than the payoff after it in all but one bar; "
-                        "fix " + ", ".join(bad))
+        notes.append("setup longer than payoff in " + ", ".join(bad))
     openers = Counter(b.words[0] for b in bars if b.words)
     for w, c in openers.items():
         if c > 1:
@@ -345,8 +424,8 @@ def analyze_verse(texts: list[str], scheme: str, corpus: Corpus,
                 seen[w].add(k)
     repeats = sorted(w for w, ks in seen.items() if len(ks) > 1)
     if repeats:
-        problems.append(f"content words reused across bars: {', '.join(repeats)}")
-    return rows, problems
+        notes.append(f"content words reused across bars: {', '.join(repeats)}")
+    return rows, problems, notes
 
 
 # ---------------------------------------------------------------- model call
@@ -396,21 +475,22 @@ def run_model(ctx: dict, model: str, corpus: Corpus) -> dict:
             attempts.append({"attempt": attempt, "error": "no usable JSON"})
             continue
         texts, meanings = parsed
-        rows, problems = analyze_verse(texts, ctx["scheme"], corpus, meanings)
-        attempts.append({"attempt": attempt, "bars": texts, "problems": problems})
-        if best is None or len(problems) < len(best[1]):
-            best = (rows, problems)
+        rows, problems, notes = analyze_verse(texts, ctx["scheme"], corpus, meanings)
+        attempts.append({"attempt": attempt, "bars": texts, "problems": problems, "notes": notes})
+        if best is None or (len(problems), len(notes)) < (len(best[1]), len(best[2])):
+            best = (rows, problems, notes)
         if not problems:
             break
         prompt = (ctx["prompt"] + "\n\nYOUR PREVIOUS ATTEMPT:\n" + "\n".join(f"{i}. {t}" for i, t in enumerate(texts, 1))
-                  + "\n\nPROBLEMS (syllables and rhymes measured with the CMU pronouncing dictionary):\n"
+                  + "\n\nMUST-FIX PROBLEMS (rhymes measured with the CMU pronouncing dictionary):\n"
                   + "\n".join(f"- {p}" for p in problems)
-                  + "\n\nRewrite the whole verse fixing every problem while keeping it sounding like the real lyrics above. "
-                    "Return only the JSON.")
-    rows, problems = best if best else ([], ["no usable output from model"])
+                  + ("\n\nNice to fix if it doesn't hurt the sense:\n" + "\n".join(f"- {n}" for n in notes) if notes else "")
+                  + "\n\nRewrite the whole verse fixing the must-fix problems. Sense comes first: read each bar out "
+                    "loud. Return only the JSON.")
+    rows, problems, notes = best if best else ([], ["no usable output from model"], [])
     for r in rows:
         r["topic"] = ctx["topic"]
-    return {"model": model, "bars": rows, "problems": problems, "passed": not problems and bool(rows),
+    return {"model": model, "bars": rows, "problems": problems, "notes": notes, "passed": not problems and bool(rows),
             "attempts": attempts, "elapsed_s": round(time.time() - t0, 1)}
 
 
@@ -418,17 +498,23 @@ def run_model(ctx: dict, model: str, corpus: Corpus) -> dict:
 
 
 def build_context(artist: str, n_bars: int, topic: str | None, scheme: str, seed: int | None,
-                  corpus: Corpus) -> dict:
+                  corpus: Corpus, mode: str = "rewrite") -> dict:
     rng = random.Random(seed)
     grades, rollup, chains = load_style(artist)
     topic = topic or pick_topic(chains, corpus, rng)
     on_topic = corpus.topic_passages(topic)
     rng.shuffle(on_topic)
-    exemplars = on_topic[:6] + corpus.voice_passages(rng, 10 if len(on_topic) < 3 else 6)
+    if mode == "rewrite":
+        exemplars = on_topic[:3] + corpus.voice_passages(rng, 4)
+        couplets = find_couplets(corpus, topic, rng, n=8)
+    else:
+        exemplars = on_topic[:6] + corpus.voice_passages(rng, 10 if len(on_topic) < 3 else 6)
+        couplets = []
+    taste = load_taste(artist)
     return {
-        "artist": artist, "n_bars": n_bars, "topic": topic, "scheme": scheme, "seed": seed,
-        "exemplars": exemplars,
-        "prompt": build_prompt(artist, n_bars, topic, scheme, exemplars, grades, rollup),
+        "artist": artist, "n_bars": n_bars, "topic": topic, "scheme": scheme, "seed": seed, "mode": mode,
+        "exemplars": exemplars, "couplets": couplets, "taste": taste,
+        "prompt": build_prompt(artist, n_bars, topic, scheme, exemplars, grades, rollup, mode, couplets, taste),
     }
 
 
@@ -459,7 +545,7 @@ def log_result(store: feedback_store.FeedbackStore, ctx: dict, result: dict, cat
             {"kind": "catalog_bar", "ref": f'{p["song"]}', "category": p["topic"] or "voice"} for p in ctx["exemplars"][:3]]
     return store.log_generation(
         artist=ctx["artist"], bars=result["bars"],
-        request={"bars_requested": ctx["n_bars"], "topic": ctx["topic"], "scheme": ctx["scheme"],
+        request={"bars_requested": ctx["n_bars"], "topic": ctx["topic"], "scheme": ctx["scheme"], "mode": ctx["mode"],
                  "seed": ctx["seed"], "problems": result["problems"]},
         model=result["model"], prompt_version=PROMPT_VERSION)
 
@@ -471,6 +557,8 @@ def main() -> int:
     ap.add_argument("--model", default=MODEL_DEFAULT, choices=MODELS)
     ap.add_argument("--topic", help="Phase 4 topic label, e.g. money_flex (default: sampled from the artist's mix)")
     ap.add_argument("--scheme", default="aabb", choices=SCHEMES)
+    ap.add_argument("--mode", default="rewrite", choices=MODES,
+                    help="rewrite = adapt real couplets (default); fresh = write from scratch")
     ap.add_argument("--seed", type=int)
     ap.add_argument("--db", type=Path, default=OUT / "feedback.db")
     ap.add_argument("--show-prompt", action="store_true", help="print the prompt to stderr")
@@ -478,7 +566,7 @@ def main() -> int:
 
     lex = p1.Lexicon(p1.load_cmudict(p1.DEFAULT_CMU))
     corpus = Corpus(args.artist, lex)
-    ctx = build_context(args.artist, args.bars, args.topic, args.scheme, args.seed, corpus)
+    ctx = build_context(args.artist, args.bars, args.topic, args.scheme, args.seed, corpus, args.mode)
     if args.show_prompt:
         print(ctx["prompt"], file=sys.stderr)
     result = run_model(ctx, args.model, corpus)

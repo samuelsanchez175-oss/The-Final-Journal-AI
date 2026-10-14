@@ -41,6 +41,7 @@ def main() -> int:
     ap.add_argument("--models", default=",".join(gen.MODELS))
     ap.add_argument("--topic")
     ap.add_argument("--scheme", default="aabb", choices=gen.SCHEMES)
+    ap.add_argument("--mode", default="rewrite", choices=gen.MODES)
     ap.add_argument("--seed", type=int)
     ap.add_argument("--out", type=Path, default=gen.OUT / "model_comparison.json")
     args = ap.parse_args()
@@ -48,9 +49,10 @@ def main() -> int:
 
     lex = p1.Lexicon(p1.load_cmudict(p1.DEFAULT_CMU))
     corpus = gen.Corpus(args.artist, lex)
-    ctx = gen.build_context(args.artist, args.bars, args.topic, args.scheme, args.seed, corpus)
+    ctx = gen.build_context(args.artist, args.bars, args.topic, args.scheme, args.seed, corpus, args.mode)
     print(f"{args.artist}: {args.bars} bars, topic={ctx['topic']}, scheme={ctx['scheme'].upper()}, "
-          f"{len(ctx['exemplars'])} real passages in prompt", file=sys.stderr)
+          f"mode={ctx['mode']}, {len(ctx['exemplars'])} real passages, {len(ctx['couplets'])} source couplets, "
+          f"{len(ctx['taste']['liked'])} liked / {len(ctx['taste']['disliked'])} rejected bars in prompt", file=sys.stderr)
 
     with ThreadPoolExecutor(len(models)) as pool:
         results = dict(zip(models, pool.map(lambda m: gen.run_model(ctx, m, corpus), models)))
@@ -66,8 +68,9 @@ def main() -> int:
         "schema": gen.SCHEMA_VERSION, "prompt_version": gen.PROMPT_VERSION,
         "artist": args.artist, "bars_requested": args.bars, "topic": ctx["topic"],
         "topic_brief": gen.TOPIC_BRIEF.get(ctx["topic"], ctx["topic"]), "scheme": ctx["scheme"],
-        "syl_range": [gen.SYL_MIN, gen.SYL_MAX], "seed": args.seed,
-        "exemplars": ctx["exemplars"], "models": results,
+        "syl_range": [gen.SYL_MIN, gen.SYL_MAX], "seed": args.seed, "mode": ctx["mode"],
+        "exemplars": [{**c, "topic": "source couplet"} for c in ctx["couplets"]] + ctx["exemplars"],
+        "couplets": ctx["couplets"], "models": results,
     }
     args.out.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     embed(PAGE, data)
