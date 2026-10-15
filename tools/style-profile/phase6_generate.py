@@ -69,6 +69,24 @@ OMNI_TIMEOUT = 90
 _CALLER = "claude"
 _OMNI_KEY: str | None = None
 _ANALYZE_LOCK = threading.Lock()
+MIMIC_LEVELS = ("rhyme", "inner", "double", "story")
+LEVEL_VERSION = {"rhyme": "verse.mimic.v2", "inner": "verse.mimic.v3", "double": "verse.mimic.v4",
+                 "story": "verse.mimic.v5"}
+# Spines are the real Gunna threads: a come-up arc, one recurring person, or his circle vs opps.
+SPINES = (
+    {"key": "come_up", "weight": 3,
+     "text": "SPINE = come-up arc. This verse is ONE small story of then -> now. Open on where he came from (a specific room, car, block, or hustle), return to the grind once in the middle, land on where he is now. Use real places and at least one named person. Do not drift into a list of unrelated flexes; every bar is a beat in that one story."},
+    {"key": "person", "weight": 3,
+     "text": "SPINE = one recurring person: {who}. The verse is a small story about them. Name them or speak to them in at least 3 bars, spread across the verse (not all at the start). Give them something concrete to do or want. The other bars are details of that same scene, not separate boasts."},
+    {"key": "circle", "weight": 2,
+     "text": "SPINE = loyalty. One thread about his circle versus the ones who turned: who stayed down from the start, who switched, what he does about it now. Keep it to that one thread across the whole verse, with real people and moments, not scattered flexes."},
+)
+SPINE_PEOPLE = ("his mama", "his brother", "his cousin", "the woman he's with", "his day-one partner")
+WORDPLAY_FILE = HERE.parents[1] / "docs" / "play-on-words" / "gunna-candidates.jsonl"
+# Run-level memory so a batch spreads across rhyme families, end words and subjects.
+_FAMILY_USE: Counter = Counter()
+_WORD_USE: Counter = Counter()
+_SUBJECT_USE: Counter = Counter()
 BANNED = {"braggadocio"}
 SKIP_TOPICS = {"filler_adlib", "other"}
 
@@ -605,6 +623,36 @@ def parse_bars(raw: str | None, n: int) -> tuple[list[str], list[str]] | None:
     return (texts[:n], meanings[:n]) if len(texts) >= n else None
 
 
+def parse_field(raw: str | None, field: str, n: int) -> list:
+    """Per-bar values of one JSON field (e.g. double_meaning); None where missing."""
+    if not raw:
+        return [None] * n
+    a, b = raw.find("{"), raw.rfind("}")
+    try:
+        items = json.loads(raw[a:b + 1]).get("bars") if a >= 0 and b > a else None
+    except json.JSONDecodeError:
+        items = None
+    values = []
+    for item in items or []:
+        if isinstance(item, dict):
+            text = re.sub(r"\s+", " ", str(item.get("bar", ""))).strip()
+            if text:
+                values.append(item.get(field))
+        else:
+            text = re.sub(r"\s+", " ", str(item)).strip()
+            if text:
+                values.append(None)
+    return (values + [None] * n)[:n]
+
+
+def valid_double(dm, text: str) -> bool:
+    if not isinstance(dm, dict):
+        return False
+    word = str(dm.get("word") or "").strip().lower()
+    m1, m2 = str(dm.get("meaning_1") or "").strip(), str(dm.get("meaning_2") or "").strip()
+    return bool(word) and word in text.lower() and bool(m1) and bool(m2) and m1.lower() != m2.lower()
+
+
 def run_model(ctx: dict, model: str, corpus: Corpus) -> dict:
     t0 = time.time()
     prompt, best, attempts = ctx["prompt"], None, []
@@ -721,15 +769,38 @@ def build_rhyme_bank(anchor_songs: list[dict], lex: p1.Lexicon) -> list[dict]:
     return bank
 
 
-def make_rhyme_plan(bank: list[dict], n_bars: int, rng: random.Random, profile: dict) -> dict:
+def _pick_family(bank: list[dict], rng: random.Random, used: set[str], size: int) -> dict | None:
+    """Weighted by how much he leans on the family, down-weighted by how often this run already used it."""
+    cands = [f for f in bank if f["key"] not in used and len(f["words"]) >= max(size, 3)]
+    cands = cands or [f for f in bank if f["key"] not in used and len(f["words"]) >= size]
+    if not cands:
+        return None
+    weights = [(1 + f["linked"] + 0.3 * f["uses"]) / (1 + _FAMILY_USE[f["key"]]) ** 2 for f in cands]
+    return rng.choices(cands, weights=weights)[0]
+
+
+def _pick_words(fam: dict, size: int, rng: random.Random) -> list[str]:
+    words = fam["words"][:8]
+    rng.shuffle(words)
+    return sorted(words, key=lambda w: _WORD_USE[w])[:size]
+
+
+def make_spine(rng: random.Random) -> dict:
+    spine = rng.choices(SPINES, weights=[x["weight"] for x in SPINES])[0]
+    who = rng.choice(SPINE_PEOPLE) if spine["key"] == "person" else None
+    text = spine["text"].format(who=who) if who else spine["text"]
+    return {"key": spine["key"], "who": who, "text": text}
+
+
+def make_rhyme_plan(bank: list[dict], n_bars: int, rng: random.Random, profile: dict,
+                    level: str = "rhyme", register: bool = True) -> dict:
     """Pick end words first, at the era's rhyme density: groups of 2 (or 3, at his run rate) consecutive
-    lines share a real Gunna rhyme family; every other line is free."""
+    lines share a real Gunna rhyme family; every other line is free. Level "inner" also plans inner
+    rhymes on about 1 line in 4; "double" adds the double-meaning quota."""
     rhyme = profile.get("rhyme") or {}
     rate = (rhyme.get("dist1_rate") or 0.3) + (rhyme.get("alt_rate") or 0.1)
     run3 = rhyme.get("run3_share") or 0.27
     target = max(1, round(rate * (n_bars - 1)))
-    pool = bank[:40]
-    rng.shuffle(pool)
     slots: list[dict | None] = [None] * n_bars
     groups: list[dict] = []
     used: set[str] = set()
@@ -738,18 +809,44 @@ def make_rhyme_plan(bank: list[dict], n_bars: int, rng: random.Random, profile: 
         size = 3 if target - links >= 2 and rng.random() < run3 else 2
         starts = [i for i in range(n_bars - size + 1)
                   if all(slots[j] is None for j in range(max(0, i - 1), min(n_bars, i + size + 1)))]
-        fam = next((f for f in pool if f["key"] not in used and len(f["words"]) >= size), None)
+        fam = _pick_family(bank, rng, used, size)
         if not starts or not fam:
             break
         used.add(fam["key"])
         start = rng.choice(starts)
-        words = rng.sample(fam["words"][:6], size)
+        words = _pick_words(fam, size, rng)
         for k in range(size):
             slots[start + k] = {"group": len(groups), "word": words[k]}
-        groups.append({"lines": list(range(start, start + size)), "words": words,
+        groups.append({"lines": list(range(start, start + size)), "words": words, "key": fam["key"],
                        "family": fam["words"][:6], "songs": fam["songs"]})
         links += size - 1
-    return {"slots": slots, "groups": groups}
+    inner: list[dict] = []
+    if level in ("inner", "double"):
+        want = max(1, n_bars // 4)
+        planned = [i for i, slot in enumerate(slots) if slot is not None]
+        free = [i for i, slot in enumerate(slots) if slot is None]
+        rng.shuffle(planned)
+        rng.shuffle(free)
+        for i in (planned[:max(1, want // 2)] + free + planned[max(1, want // 2):])[:want]:
+            if slots[i] is not None:
+                inner.append({"line": i, "type": "to_end"})
+                continue
+            fam = _pick_family(bank, rng, used, 2)
+            if fam:
+                used.add(fam["key"])
+                inner.append({"line": i, "type": "pair", "key": fam["key"], "family": fam["words"][:6]})
+        inner.sort(key=lambda x: x["line"])
+    spine = make_spine(rng) if level == "story" else None
+    if register:
+        with _ANALYZE_LOCK:
+            for g in groups:
+                _FAMILY_USE[g["key"]] += 1
+                _WORD_USE.update(g["words"])
+            for x in inner:
+                if x.get("key"):
+                    _FAMILY_USE[x["key"]] += 1
+    return {"level": level, "slots": slots, "groups": groups, "inner": inner,
+            "doubles": max(1, n_bars // 4) if level == "double" else 0, "spine": spine}
 
 
 def _plan_text(plan: dict) -> str:
@@ -762,6 +859,16 @@ def _plan_text(plan: dict) -> str:
         partners = [str(j + 1) for j in group["lines"] if j != i - 1]
         rows.append(f"line {i}: must end on \"{slot['word']}\" (or another word from: {', '.join(group['family'])})"
                     f", rhymes with line {' and '.join(partners)}")
+    inner_by_line = {x["line"]: x for x in plan.get("inner") or []}
+    for i, row in enumerate(rows):
+        x = inner_by_line.get(i)
+        if not x:
+            continue
+        if x["type"] == "to_end":
+            rows[i] = row + "; INNER RHYME: a word before the middle of this line rhymes with its end word"
+        else:
+            rows[i] = row + (f"; INNER RHYME: two words inside this line rhyme with each other "
+                             f"(sound like: {', '.join(x['family'])})")
     return ("RHYME PLAN. Gunna picks the rhyme first. Every end word below is from a rhyme family he actually "
             "ends lines on in these songs. For each planned line, start from the end word and write the line "
             "backwards so the sentence lands on it naturally, the way he would say it. If a planned word can't "
@@ -771,7 +878,15 @@ def _plan_text(plan: dict) -> str:
 
 def build_mimic_prompt(artist: str, n_bars: int, exemplars: list[dict], profile: dict,
                        closeness: float, taste: dict | None, plan: dict | None = None) -> str:
-    facts = profile.get("prompt_facts") or []
+    facts = list(profile.get("prompt_facts") or [])
+    if plan and plan.get("inner"):
+        facts = [
+            fact.replace(
+                " Do not force a rhyme inside the line.",
+                " Plan an inner rhyme only on a line marked INNER RHYME.",
+            )
+            for fact in facts
+        ]
     parts = [
         f"Write a new {n_bars}-bar verse that sounds like an unreleased outtake from these exact {artist} songs. "
         "A listener should think it was left off one of them.",
@@ -800,19 +915,46 @@ def build_mimic_prompt(artist: str, n_bars: int, exemplars: list[dict], profile:
             for text, reasons in taste["disliked"]))
     if plan and plan.get("groups"):
         parts.append(_plan_text(plan))
+    if plan and plan.get("inner") and plan.get("inner_examples"):
+        parts.append("HOW HE DOES INNER RHYMES (real lines from these songs; the rhyming words are in caps):\n"
+                     + "\n".join(f"- {line}" for line in plan["inner_examples"]))
+    if plan and plan.get("doubles"):
+        examples = plan.get("wordplay_examples") or []
+        parts.append(
+            f"DOUBLE MEANINGS: exactly {plan['doubles']} of the bars must carry a double meaning: one word or phrase "
+            "that reads two ways at once (a slang word with two senses, a homophone, a name that is also a thing, "
+            "an idiom taken literally). Both readings must make sense in the line and it must still sound like him, "
+            "not like a pun contest. For those bars fill \"double_meaning\" with the word and both meanings; "
+            "every other bar gets null."
+            + ("\nReal examples from his songs, with the two readings:\n" + "\n".join(f"- {e}" for e in examples)
+               if examples else ""))
+    if plan and plan.get("avoid"):
+        parts.append("ALREADY USED A LOT IN THIS BATCH. Pick different subjects, places and objects than: "
+                     + ", ".join(plan["avoid"]))
+    if plan and plan.get("spine"):
+        parts.append(plan["spine"]["text"] + "\n\nThe spine is what the verse is ABOUT; the rhyme plan below is "
+                     "only how the ends land. Serve the story first.")
     parts.append(
         "MOST IMPORTANT: read every bar out loud. It has to be a sentence he would actually say, "
-        "and the verse follows one thread. If a rhyme forces a weird word, change the rhyme, not the sense.\n\n"
+        + ("and the verse is one connected story along the spine above, not 8 separate flexes. "
+           if plan and plan.get("spine") else "and the verse follows one thread. ")
+        + "If a rhyme forces a weird word, change the rhyme, not the sense.\n\n"
         "MUST:\n"
         "1. One line per bar. No line may be identical to a real line of his, including the examples above.\n"
         + ("2. Follow the RHYME PLAN above: planned lines rhyme with their partners, free lines don't have to. "
            if plan and plan.get("groups") else
-           "2. Rhyme the way the measured facts describe. Do not force AABB or ABAB. ") +
-        "Do not force a comma into every line. Do not force a rhyme inside the line.\n"
+           "2. Rhyme the way the measured facts describe. Do not force AABB or ABAB. ")
+        + ("Follow the INNER RHYME note on each planned line. Lines without that note do not need a rhyme inside them. "
+           if plan and plan.get("inner") else
+           "Do not force a rhyme inside the line. ")
+        + "Do not force a comma into every line.\n"
         "3. Ad-libs in parentheses are allowed, at about the measured rate, usually at the end of the line.\n"
         "4. For each bar write a one-line plain-English meaning. If you cannot say what the bar means, rewrite it.\n\n"
         "Return only JSON:\n"
-        '{"plan": "...", "bars": [{"bar": "...", "meaning": "...", "source": null}, ...]}'
+        + ('{"plan": "...", "bars": [{"bar": "...", "meaning": "...", "double_meaning": '
+           '{"word": "...", "meaning_1": "...", "meaning_2": "..."} or null}, ...]}'
+           if plan and plan.get("doubles") else
+           '{"plan": "...", "bars": [{"bar": "...", "meaning": "...", "source": null}, ...]}')
     )
     return "\n\n".join(parts)
 
@@ -833,7 +975,8 @@ def _rhyme_links(bars: list[p1.Bar]) -> tuple[int, int]:
 
 def analyze_mimic(texts: list[str], corpus: Corpus, profile: dict,
                   meanings: list[str] | None = None,
-                  plan: dict | None = None) -> tuple[list[dict], list[str], list[str]]:
+                  plan: dict | None = None,
+                  doubles: list | None = None) -> tuple[list[dict], list[str], list[str]]:
     """Hard fails: a copied line, a bar too short to say, page-chrome, or rhyme behavior this era does not use.
 
     A 4-bar verse with no end rhyme is allowed, because this era rhymes the line before only about
@@ -891,6 +1034,23 @@ def analyze_mimic(texts: list[str], corpus: Corpus, profile: dict,
     if links >= 3 and identical == links and not identical_only_ok:
         problems.append("every rhyme link repeats the same end word; this era does not rhyme that way")
 
+    for x in (plan or {}).get("inner", []):
+        i = x["line"]
+        if i < len(bars) and not internal_pairs(bars[i]):
+            want = ("a word before the middle that rhymes with the end word" if x["type"] == "to_end"
+                    else f"two words inside the line that rhyme (sound like: {', '.join(x['family'])})")
+            problems.append(f"line {i + 1} was planned to have an inner rhyme ({want}) but no two words in it rhyme")
+    if (plan or {}).get("doubles"):
+        dms = (list(doubles or []) + [None] * len(rows))[:len(rows)]
+        good = 0
+        for row, dm in zip(rows, dms):
+            ok = valid_double(dm, row["text"])
+            row["double_meaning"] = dm if ok else None
+            row["checks"]["double_meaning"] = ok
+            good += ok
+        if good < plan["doubles"]:
+            problems.append(f"needs {plan['doubles']} double meaning(s), found {good}. Each needs the word as it "
+                            "appears in the bar plus two different readings that both make sense")
     for group in (plan or {}).get("groups", []):
         lines = [i for i in group["lines"] if i < len(bars)]
         for a, b in zip(lines, lines[1:]):
@@ -914,6 +1074,19 @@ def analyze_mimic(texts: list[str], corpus: Corpus, profile: dict,
         rate = sum(1 for text in texts if p1.ADLIB_RE.search(text)) / len(texts)
         if abs(rate - target_rate) > 0.35:
             notes.append(f"ad-lib rate {rate:.0%} vs the era's {target_rate:.0%}")
+    spine = (plan or {}).get("spine")
+    if spine and texts:
+        joined = " ".join(t.lower() for t in texts)
+        if spine["key"] == "come_up":
+            if not re.search(r"\b(now|used to|back then|'fore|before|remember|came from|started|first)\b", joined):
+                notes.append("spine is a come-up arc but no then/now words appear; the story should move from past to present")
+        elif spine["key"] == "person":
+            who = (spine.get("who") or "").split()[-1]
+            kin = {"mama": ["mama", "momma", "mother"], "brother": ["brother", "bro"], "cousin": ["cousin"],
+                   "with": ["she", "her", "shawty", "wife"], "partner": ["partner", "day-one", "nigga", "bro"]}.get(who, [who])
+            hits = sum(1 for t in texts if any(re.search(r"\b"+re.escape(k)+r"\b", t.lower()) for k in kin))
+            if hits < 2:
+                notes.append(f"spine is a recurring person ({spine.get('who')}) but they appear in {hits} bar(s); aim for 3 spread across the verse")
     return rows, problems, notes
 
 
@@ -937,13 +1110,15 @@ def _one_candidate(prompt: str, model: str, n_bars: int, corpus: Corpus, profile
     attempts = []
     best = None
     for attempt in range(1, MIMIC_ATTEMPTS + 1):
-        parsed = parse_bars(call_model(prompt, model), n_bars)
+        raw = call_model(prompt, model)
+        parsed = parse_bars(raw, n_bars)
         if not parsed:
             attempts.append({"attempt": attempt, "error": "no usable JSON"})
             continue
         texts, meanings = parsed
+        doubles = parse_field(raw, "double_meaning", n_bars) if plan and plan.get("doubles") else None
         with _ANALYZE_LOCK:
-            rows, problems, notes = analyze_mimic(texts, corpus, profile, meanings, plan)
+            rows, problems, notes = analyze_mimic(texts, corpus, profile, meanings, plan, doubles)
         attempts.append({"attempt": attempt, "bars": texts, "problems": problems, "notes": notes})
         if best is None or (len(problems), len(notes)) < (len(best[1]), len(best[2])):
             best = (rows, problems, notes, texts)
@@ -953,6 +1128,10 @@ def _one_candidate(prompt: str, model: str, n_bars: int, corpus: Corpus, profile
     if best is None:
         return {"bars": [], "problems": ["no usable output from model"], "notes": [], "passed": False, "attempts": attempts}
     rows, problems, notes, _texts = best
+    if not problems and rows:
+        with _ANALYZE_LOCK:
+            _SUBJECT_USE.update({w for row in rows for w in p1.Bar(row["text"], corpus.lex).words
+                                 if content(w) and len(w) > 3})
     return {"bars": rows, "problems": problems, "notes": notes, "passed": not problems and bool(rows), "attempts": attempts}
 
 
@@ -968,7 +1147,13 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
         child_seed = master.randrange(1 << 30) if base_seed is None else base_seed + index * 17
         rng = random.Random(child_seed)
         exemplars = pick_exemplars(ctx["bank"], rng, ctx["closeness"], index)
-        plan = make_rhyme_plan(ctx["rhyme_bank"], ctx["n_bars"], rng, profile) if ctx.get("rhyme_bank") else None
+        plan = make_rhyme_plan(ctx["rhyme_bank"], ctx["n_bars"], rng, profile, ctx.get("level", "rhyme"))
+        if plan["inner"] and ctx.get("inner_examples"):
+            plan["inner_examples"] = rng.sample(ctx["inner_examples"], min(5, len(ctx["inner_examples"])))
+        if plan["doubles"] and ctx.get("wordplay_examples"):
+            plan["wordplay_examples"] = rng.sample(ctx["wordplay_examples"], min(6, len(ctx["wordplay_examples"])))
+        with _ANALYZE_LOCK:
+            plan["avoid"] = [w for w, c in _SUBJECT_USE.most_common(14) if c >= 2]
         prompt = build_mimic_prompt(ctx["artist"], ctx["n_bars"], exemplars, profile, ctx["closeness"],
                                     ctx["taste"], plan)
         jobs.append((index, prompt, exemplars, plan))
@@ -976,7 +1161,7 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
     def _run_job(job: tuple) -> tuple:
         index, prompt, exemplars, plan = job
         one = _one_candidate(prompt, model, ctx["n_bars"], corpus, profile, plan)
-        one["rhyme_plan"] = plan
+        one["rhyme_plan"] = {k: v for k, v in plan.items() if k not in ("inner_examples", "wordplay_examples")}
         return index, one, exemplars
 
     if _CALLER == "omni" and n_candidates > 1:
@@ -1059,11 +1244,67 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
     }
 
 
+def anchor_inner_examples(anchor_songs: list[dict], lex: p1.Lexicon, limit: int = 60) -> list[str]:
+    """Real anchor-song lines with an inner rhyme, rhyming words in caps."""
+    out: list[str] = []
+    for song in anchor_songs:
+        info = anchor_lib.style_lines_for(song["lines"])
+        for verse in info["real_verses"] or info["style_verses"]:
+            for line in verse:
+                bar = p1.Bar(line, lex)
+                pairs = internal_pairs(bar)
+                if not pairs or len(bar.words) < 5:
+                    continue
+                marked = set(pairs[0])
+                text = " ".join(w.upper() if w.lower().strip("',.!?()") in marked else w for w in line.split())
+                out.append(text)
+    seen, uniq = set(), []
+    for text in out:
+        if text.lower() not in seen:
+            seen.add(text.lower())
+            uniq.append(text)
+    return uniq[:limit]
+
+
+def load_wordplay_examples() -> list[str]:
+    """Confirmed Gunna-song wordplay from Play-on-Words where both readings sit on the line."""
+    if not WORDPLAY_FILE.exists():
+        return []
+    strong = {"double_meaning", "pun", "homophone", "sound_flip", "idiom_flip"}
+    out, seen = [], set()
+    for line in open(WORDPLAY_FILE, encoding="utf-8"):
+        try:
+            r = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if not r.get("kept") or r.get("halves_class") != "BOTH_ON_LINE" or r.get("bar") in seen:
+            continue
+        note = (r.get("note_excerpt") or "").strip()
+        if r.get("signal_type") not in strong and not re.search(r"double|play on|pun|also (means|refers)|two meanings",
+                                                                 note.lower()):
+            continue
+        seen.add(r["bar"])
+        first = re.split(r"(?<=[.!?])\s", note, maxsplit=1)[0][:180]
+        out.append(f"\"{r['bar']}\": {r.get('partner') or ''}. {first}")
+    return out
+
+
+def _preview_plan(bank, n_bars, seed, profile, level, inner_examples, wordplay_examples) -> dict:
+    rng = random.Random(seed)
+    plan = make_rhyme_plan(bank, n_bars, rng, profile, level, register=False)
+    plan["inner_examples"] = inner_examples[:5]
+    plan["wordplay_examples"] = wordplay_examples[:6]
+    return plan
+
+
 def build_mimic_context(artist: str, n_bars: int, seed: int | None, closeness: float,
                         profile: dict, anchor_songs: list[dict], taste: dict | None = None,
-                        skip_keys: set[str] | None = None, lex: p1.Lexicon | None = None) -> dict:
+                        skip_keys: set[str] | None = None, lex: p1.Lexicon | None = None,
+                        level: str = "rhyme") -> dict:
     bank = anchor_verse_bank(anchor_songs, skip_keys)
-    rhyme_bank = build_rhyme_bank(anchor_songs, lex) if lex is not None else []
+    rhyme_bank = build_rhyme_bank(anchor_songs, lex)
+    inner_examples = anchor_inner_examples(anchor_songs, lex) if level in ("inner", "double") else []
+    wordplay_examples = load_wordplay_examples() if level == "double" else []
     if not bank:
         raise SystemExit("no 8-bar stretch in the anchor songs")
     taste = taste if taste is not None else load_taste(artist)
@@ -1079,11 +1320,16 @@ def build_mimic_context(artist: str, n_bars: int, seed: int | None, closeness: f
         "profile": profile,
         "bank": bank,
         "rhyme_bank": rhyme_bank,
+        "level": level,
+        "inner_examples": inner_examples,
+        "wordplay_examples": wordplay_examples,
         "taste": taste,
         "exemplars": sample,
         "couplets": [],
-        "prompt_version": MIMIC_PROMPT_VERSION if rhyme_bank else "verse.mimic.v1",
-        "prompt": build_mimic_prompt(artist, n_bars, sample, profile, closeness, taste),
+        "prompt_version": LEVEL_VERSION[level],
+        "prompt": build_mimic_prompt(artist, n_bars, sample, profile, closeness, taste,
+                                     _preview_plan(rhyme_bank, n_bars, seed, profile, level,
+                                                   inner_examples, wordplay_examples)),
     }
 
 
@@ -1267,6 +1513,52 @@ def _mimic_self_check() -> int:
         {banned},
     )
     assert filtered and all(banned not in [p1.norm_line(bar) for bar in item["bars"]] for item in filtered)
+    rhyme_bank = [{
+        "key": "ay", "words": ["night", "light", "right", "tight", "sight", "fight"],
+        "linked": 4, "uses": 3, "songs": ["Example"],
+    }]
+    rhyme_profile = {"rhyme": {"dist1_rate": 0.5, "alt_rate": 0.1, "run3_share": 0.2}}
+    rhyme_plan = make_rhyme_plan(rhyme_bank, 8, random.Random(1), rhyme_profile, "rhyme", register=False)
+    inner_plan = make_rhyme_plan(rhyme_bank, 8, random.Random(1), rhyme_profile, "inner", register=False)
+    double_plan = make_rhyme_plan(rhyme_bank, 8, random.Random(1), rhyme_profile, "double", register=False)
+    assert rhyme_plan["groups"] and not rhyme_plan["inner"] and rhyme_plan["doubles"] == 0
+    assert inner_plan["inner"] and inner_plan["doubles"] == 0
+    assert double_plan["doubles"] == 2 and double_plan["inner"]
+    taste = {"liked": ["a keeper line"], "keepers": ["a keeper line"], "disliked": [("a bad line", ["no_sense"])]}
+    inner_prompt = build_mimic_prompt("Gunna", 8, exemplars, profile, 0.7, taste, inner_plan)
+    rhyme_prompt = build_mimic_prompt("Gunna", 8, exemplars, profile, 0.7, taste, rhyme_plan)
+    double_prompt = build_mimic_prompt("Gunna", 8, exemplars, profile, 0.7, taste, {
+        **double_plan, "wordplay_examples": ['"ice": frozen water / jewelry'],
+    })
+    assert "INNER RHYME" in inner_prompt
+    assert "Do not force a rhyme inside the line" not in inner_prompt
+    assert "Do not force a rhyme inside the line" in rhyme_prompt
+    fact_profile = {
+        **profile,
+        "prompt_facts": ["Internal rhymes show up on 25% of lines. Do not force a rhyme inside the line."],
+    }
+    filtered = build_mimic_prompt("Gunna", 8, exemplars, fact_profile, 0.7, taste, inner_plan)
+    kept_fact = build_mimic_prompt("Gunna", 8, exemplars, fact_profile, 0.7, taste, rhyme_plan)
+    assert "Do not force a rhyme inside the line" not in filtered
+    assert "marked INNER RHYME" in filtered
+    assert "Do not force a rhyme inside the line" in kept_fact
+    assert "DOUBLE MEANINGS" in double_prompt and "double_meaning" in double_prompt
+    raw = json.dumps({"bars": [
+        {"bar": "  ", "double_meaning": {"word": "skip", "meaning_1": "a", "meaning_2": "b"}},
+        {"bar": fresh[0], "meaning": "a", "double_meaning": {
+            "word": "meter", "meaning_1": "a taxi meter", "meaning_2": "a measurement"}},
+    ]})
+    parsed = parse_field(raw, "double_meaning", 1)
+    assert valid_double(parsed[0], fresh[0]), parsed
+    missing, problems, _notes = analyze_mimic(fresh, corpus, profile, ["a", "b", "c", "d"], {"doubles": 1}, [None] * 4)
+    assert any("double meaning" in problem for problem in problems), problems
+    kept, problems, _notes = analyze_mimic(
+        fresh, corpus, profile, ["a", "b", "c", "d"], {"doubles": 1}, [parsed[0], None, None, None])
+    assert not any("double meaning" in problem for problem in problems), problems
+    assert kept[0]["checks"]["double_meaning"] is True
+    _rows, problems, _notes = analyze_mimic(
+        fresh, corpus, profile, ["a", "b", "c", "d"], {"inner": [{"line": 0, "type": "to_end"}]})
+    assert not any("inner rhyme" in problem for problem in problems), problems
     print("phase6 mimic self-check ok")
     return 0
 
@@ -1292,8 +1584,9 @@ def main() -> int:
                     help="mimic only. generate this many verses, keep the top 2 that pass the hard rules")
     ap.add_argument("--profile", type=Path, default=OUT / "anchor_profile_gunna.json")
     ap.add_argument("--seed", type=int)
-    ap.add_argument("--no-rhyme-first", action="store_true",
-                    help="mimic only. skip the end-word rhyme plan (v1 behavior) for A/B tests")
+    ap.add_argument("--level", default="rhyme", choices=MIMIC_LEVELS,
+                    help="mimic only. rhyme = rhyme-first end words; inner = + planned inner rhymes; "
+                         "double = + double meanings")
     ap.add_argument("--sets", type=int, default=1,
                     help="mimic only. write this many sets. seeds step by 1 from --seed (or from 1)")
     ap.add_argument("--out", type=Path, default=None,
@@ -1338,9 +1631,11 @@ def _write_one_mimic(args, profile: dict, matched: list[dict], corpus: Corpus,
                      skip: set[str], seed: int | None, out_path: Path, dump_stdout: bool) -> dict:
     ctx = build_mimic_context(
         args.artist, args.bars, seed, args.closeness, profile, matched, skip_keys=skip,
-        lex=None if args.no_rhyme_first else corpus.lex)
+        lex=corpus.lex, level=args.level)
     print(
-        f"SET_START seed {seed}  {len(ctx['bank'])} stretches, {len(ctx['rhyme_bank'])} rhyme families",
+        f"SET_START seed {seed} level {args.level}  {len(ctx['bank'])} stretches, "
+        f"{len(ctx['rhyme_bank'])} rhyme families, {len(ctx['inner_examples'])} inner examples, "
+        f"{len(ctx['wordplay_examples'])} wordplay examples",
         file=sys.stderr, flush=True,
     )
     if args.show_prompt:

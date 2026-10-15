@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Render two mimic batches side by side (e.g. rhyme-first v2 vs v1) into one HTML page.
+"""Render two or more mimic batches side by side into one HTML page.
 
 Usage:
-  python3 tools/style-profile/ab_side_by_side.py out/rater-batch-rhymefirst/v1 out/rater-batch-rhymefirst/v2 \
-      --labels "Old (no rhyme plan)" "Rhyme-first" --html tools/style-profile/ab_rhymefirst.html
+  python3 tools/style-profile/ab_side_by_side.py out/rater-batch-levels/inner out/rater-batch-levels/double \
+      --labels "Rhyme-first + inner" "+ double meanings" --html tools/style-profile/ab_levels.html
 """
 
 from __future__ import annotations
@@ -23,16 +23,24 @@ def verses(folder: Path) -> list[dict]:
         for key, model in sorted(doc.get("models", {}).items()):
             if model.get("bars"):
                 out.append({"seed": doc.get("seed"), "slot": key, "model": model.get("model", key),
-                            "bars": model["bars"], "plan": model.get("rhyme_plan"),
+                            "bars": model["bars"], "plan": model.get("rhyme_plan") or {},
+                            "spine": (model.get("rhyme_plan") or {}).get("spine"),
                             "problems": model.get("problems", []), "notes": model.get("notes", [])})
     return out
 
 
 def render_verse(v: dict) -> str:
     plan_slots = (v.get("plan") or {}).get("slots") or []
+    inner_lines = {x["line"] for x in (v.get("plan") or {}).get("inner") or []}
     rows = []
     for i, bar in enumerate(v["bars"]):
-        text = html.escape(bar["text"])
+        marks = {w.lower() for pair in bar.get("internal") or [] for w in pair}
+        words = []
+        for token in bar["text"].split():
+            core = token.lower().strip("',.!?()\"").replace("’", "'")
+            esc = html.escape(token)
+            words.append(f'<mark>{esc}</mark>' if core in marks else esc)
+        text = " ".join(words)
         end = bar.get("end_word") or ""
         if end:
             low = text.lower()
@@ -41,35 +49,44 @@ def render_verse(v: dict) -> str:
                 text = f'{text[:pos]}<b class="end">{text[pos:pos + len(end)]}</b>{text[pos + len(end):]}'
         slot = plan_slots[i] if i < len(plan_slots) else None
         planned = f'<span class="plan">planned “{html.escape(slot["word"])}”</span>' if slot else ""
+        if i in inner_lines:
+            planned += '<span class="plan">inner planned</span>'
+        dm = bar.get("double_meaning")
+        dm_html = (f'<div class="dm">double: <b>{html.escape(str(dm.get("word", "")))}</b> = '
+                   f'{html.escape(str(dm.get("meaning_1", "")))} / {html.escape(str(dm.get("meaning_2", "")))}</div>'
+                   if isinstance(dm, dict) else "")
         rows.append(f'<li><span class="txt">{text}</span><span class="meta"><span class="letter L{html.escape(bar.get("rhyme_letter") or "")}">'
-                    f'{html.escape(bar.get("rhyme_letter") or "")}</span>{planned}</span></li>')
+                    f'{html.escape(bar.get("rhyme_letter") or "")}</span>{planned}</span>{dm_html}</li>')
+    spine = v.get("spine")
+    spine_html = (f'<div class="spine">spine: <b>{html.escape(spine.get("key",""))}</b>'
+                  + (f' — {html.escape(str(spine.get("who")))}' if spine.get("who") else "") + '</div>') if spine else ""
     letters = "".join(b.get("rhyme_letter") or "?" for b in v["bars"])
     issues = v["problems"] + v["notes"]
     foot = f'<div class="foot">scheme {html.escape(letters)}' + (
         f' · {len(issues)} note(s)' if issues else '') + '</div>'
-    return f'<ol>{"".join(rows)}</ol>{foot}'
+    return f'{spine_html}<ol>{"".join(rows)}</ol>{foot}'
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("left", type=Path)
-    ap.add_argument("right", type=Path)
-    ap.add_argument("--labels", nargs=2, default=["Left", "Right"])
+    ap.add_argument("folders", type=Path, nargs="+")
+    ap.add_argument("--labels", nargs="+")
     ap.add_argument("--html", type=Path, required=True)
     args = ap.parse_args()
-    left, right = verses(args.left), verses(args.right)
+    labels = args.labels or [f.name for f in args.folders]
+    sides = [verses(f) for f in args.folders]
     pairs = []
-    for i in range(max(len(left), len(right))):
-        a = render_verse(left[i]) if i < len(left) else '<p class="none">no verse</p>'
-        b = render_verse(right[i]) if i < len(right) else '<p class="none">no verse</p>'
-        model = (right[i] if i < len(right) else left[i])["model"]
-        seed = (right[i] if i < len(right) else left[i])["seed"]
-        pairs.append(f'<section><h2>Verse {i + 1} <small>seed {seed} · {html.escape(str(model))}</small></h2>'
-                     f'<div class="cols"><div class="col"><h3>{html.escape(args.labels[0])}</h3>{a}</div>'
-                     f'<div class="col"><h3>{html.escape(args.labels[1])}</h3>{b}</div></div></section>')
+    for i in range(max(len(x) for x in sides)):
+        cols = []
+        ref = next(x[i] for x in sides if i < len(x))
+        for label, side in zip(labels, sides):
+            body = render_verse(side[i]) if i < len(side) else '<p class="none">no verse</p>'
+            cols.append(f'<div class="col"><h3>{html.escape(label)}</h3>{body}</div>')
+        pairs.append(f'<section><h2>Verse {i + 1} <small>seed {ref["seed"]} · {html.escape(str(ref["model"]))}</small></h2>'
+                     f'<div class="cols" style="grid-template-columns:repeat({len(sides)},1fr)">{"".join(cols)}</div></section>')
     page = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rhyme-First A/B</title>
+<title>Sparkler Level Compare</title>
 <style>
 :root {{ --bg:#f6f5f2; --panel:#fff; --ink:#1b1b1f; --muted:#6b6b74; --line:#e3e1dc; --accent:#3d5afe;
   --a:#e3ecff; --b:#ffe9d6; --c:#e8f6ea; --d:#f6e6f7; --e:#fff6c8; }}
@@ -93,12 +110,15 @@ li {{ display:list-item; }} .txt {{ font-size:16px; }}
 .LA {{ background:var(--a); }} .LB {{ background:var(--b); }} .LC {{ background:var(--c); }} .LD {{ background:var(--d); }} .LE {{ background:var(--e); }}
 .plan {{ font-size:11px; color:var(--muted); margin-left:6px; font-style:italic; }}
 .end {{ text-decoration:underline; text-underline-offset:3px; }}
+mark {{ background:var(--e); color:inherit; border-radius:3px; padding:0 2px; }}
+.dm {{ font-size:12px; color:var(--muted); margin:2px 0 4px; }}
+.spine {{ font-size:12px; color:var(--accent); margin:0 0 6px; }}
 .foot {{ font-size:12px; color:var(--muted); margin-top:6px; }} .none {{ color:var(--muted); }}
-@media (max-width:700px) {{ .cols {{ grid-template-columns:1fr; }} .meta {{ display:inline-block; margin-left:0; }} }}
+@media (max-width:700px) {{ .cols {{ grid-template-columns:1fr !important; }} .meta {{ display:inline-block; margin-left:0; }} }}
 </style></head><body><div class="wrap">
-<h1>Rhyme-first A/B</h1>
-<div class="sub">Same model, same seeds, same Gunna songs as examples. Left: {html.escape(args.labels[0])}. Right: {html.escape(args.labels[1])}.
-Letters show which lines end-rhyme with each other (same letter = rhyme). Underlined = end word. “planned” = the end word the rhyme plan asked for.</div>
+<h1>Sparkler level compare</h1>
+<div class="sub">Same model and seeds, columns: {html.escape(" | ".join(labels))}.
+Same letter = lines that end-rhyme. Underlined = end word. Highlighted = inner-rhyme words. “planned” = what the rhyme plan asked for. “double” = the double meaning the model claims.</div>
 {''.join(pairs)}
 </div></body></html>"""
     args.html.write_text(page, encoding="utf-8")
