@@ -545,6 +545,20 @@ struct DynamicIslandToolbarView: View {
             .accessibilityLabel("Expand toolbar")
             .accessibilityHint("Shows the wand, attach, nouns, and the rest of the island")
 
+            Button {
+                showSparklerSimSheet = true
+            } label: {
+                Text("Sparkler")
+                    .font(.system(size: 13, weight: .bold, design: .rounded))
+                    .foregroundStyle(toolbarTint)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
+                    .background(Capsule().fill(Color.primary.opacity(0.10)))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Sparkler")
+            .accessibilityHint("Opens the Gunna-style verses already written.")
+
             keyboardToggleButton(font: .title2.weight(.bold))
         }
         .padding(.horizontal, 10)
@@ -705,6 +719,20 @@ struct DynamicIslandToolbarView: View {
                         .accessibilityLabel("Blocks")
                         .accessibilityHint("Browse noun chips and the catalog lines that mention them")
                         .buttonStyle(.plain)
+
+                        Button {
+                            showSparklerSimSheet = true
+                        } label: {
+                            Text("Sparkler")
+                                .font(.system(size: 13, weight: .bold, design: .rounded))
+                                .foregroundStyle(toolbarTint)
+                                .padding(.horizontal, 10)
+                                .padding(.vertical, 6)
+                                .background(Capsule().fill(Color.primary.opacity(0.10)))
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Sparkler")
+                        .accessibilityHint("Opens the Gunna-style verses already written.")
 
                         Menu {
                             if canRecallLastSuggestions {

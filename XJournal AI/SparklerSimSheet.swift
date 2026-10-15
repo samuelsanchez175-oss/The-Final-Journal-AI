@@ -119,7 +119,7 @@ struct SparklerSimSheet: View {
             isWriting = board?.run.state == "running"
         } catch {
             if board == nil {
-                loadError = "Open Penwork from this Mac after the Sparkler helper is running, then try again."
+                loadError = "Start the Sparkler helper on this Mac, keep the phone on the same Wi-Fi, then try again."
             }
         }
     }
@@ -147,7 +147,13 @@ struct SparklerSimSheet: View {
 }
 
 private struct SparklerClient {
-    static let base = URL(string: "http://127.0.0.1:8766")!
+    static let base: URL = {
+        #if targetEnvironment(simulator)
+        return URL(string: "http://127.0.0.1:8766")!
+        #else
+        return URL(string: "http://Samuels-MacBook-Pro-3.local:8766")!
+        #endif
+    }()
 
     static func fetchBoard() async throws -> SparklerBoard {
         let (data, response) = try await URLSession.shared.data(from: base.appendingPathComponent("verses"))

@@ -2,7 +2,7 @@
 """Local helper for the Penwork Studios Sparkler screen.
 
 The iPhone app cannot run the Python generator itself. This process stays on
-the Mac, on 127.0.0.1 only, and the app reads verses from it.
+the Mac. The simulator uses 127.0.0.1. A phone on the same Wi-Fi uses the Mac name.
 
   python3 tools/style-profile/sparkler_sim_server.py
 
@@ -21,7 +21,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-HOST = "127.0.0.1"
+HOST = "0.0.0.0"
 PORT = 8766
 SAVED = {
     "inner": [ROOT / "out" / "rater-batch-levels" / "inner",
@@ -181,6 +181,7 @@ class Handler(BaseHTTPRequestHandler):
 def main() -> int:
     server = ThreadingHTTPServer((HOST, PORT), Handler)
     print(f"Sparkler helper on http://{HOST}:{PORT}", flush=True)
+    print("Phone on this Wi-Fi: http://Samuels-MacBook-Pro-3.local:8766", flush=True)
     server.serve_forever()
     return 0
 
