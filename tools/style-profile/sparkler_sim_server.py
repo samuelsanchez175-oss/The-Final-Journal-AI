@@ -24,16 +24,22 @@ ROOT = Path(__file__).resolve().parent
 HOST = "127.0.0.1"
 PORT = 8766
 SAVED = {
-    "inner": ROOT / "out" / "rater-batch-levels" / "v3",
-    "double": ROOT / "out" / "rater-batch-levels" / "v4",
+    "inner": [ROOT / "out" / "rater-batch-levels" / "inner",
+              ROOT / "out" / "rater-batch-levels" / "v3"],
+    "double": [ROOT / "out" / "rater-batch-levels" / "double",
+               ROOT / "out" / "rater-batch-levels" / "v4"],
+    "story": [ROOT / "out" / "rater-batch-story2" / "story",
+              ROOT / "out" / "rater-batch-story" / "story"],
 }
 TITLES = {
     "inner": "Inner rhyme",
     "double": "Double meanings",
+    "story": "Story spine",
 }
 HINTS = {
     "inner": "A rhyme inside the line, on about one line in four.",
     "double": "The same rhyme plan, plus two lines that each mean two things.",
+    "story": "One spine the whole verse serves: come-up arc, a recurring person, or circle vs opps.",
 }
 RUN_DIR = ROOT / "out" / "rater-batch-levels" / "app-run"
 PHASE6 = ROOT / "phase6_generate.py"
@@ -82,8 +88,10 @@ def board() -> dict:
         run = dict(_run)
     fresh = _verses_in(RUN_DIR, "new")
     levels = []
-    for level in ("inner", "double"):
-        verses = [verse for verse in _verses_in(SAVED[level], "saved") if verse["level"] == level]
+    for level in ("story", "inner", "double"):
+        verses = []
+        for folder in SAVED[level]:
+            verses += [verse for verse in _verses_in(folder, "saved") if verse["level"] == level]
         verses += [verse for verse in fresh if verse["level"] == level]
         levels.append({
             "id": level,
@@ -109,7 +117,7 @@ def start_run(level: str) -> dict:
     with _lock:
         if _run["state"] == "running":
             return {"ok": False, "error": "A verse is already being written.", "run": dict(_run)}
-        seed = 81 if level == "inner" else 82
+        seed = {"inner": 81, "double": 82, "story": 91}.get(level, 81)
         _run.update(state="running", level=level, seed=seed, message="Writing one verse. This can take a few minutes.")
     RUN_DIR.mkdir(parents=True, exist_ok=True)
     out = RUN_DIR / f"mimic_{seed}.json"

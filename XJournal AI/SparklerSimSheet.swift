@@ -6,7 +6,7 @@ struct SparklerSimSheet: View {
     let onDismiss: () -> Void
 
     @State private var board: SparklerBoard?
-    @State private var levelID = "inner"
+    @State private var levelID = "story"
     @State private var loadError: String?
     @State private var writeError: String?
     @State private var isLoading = false
@@ -52,6 +52,7 @@ struct SparklerSimSheet: View {
         List {
             Section {
                 Picker("Verse kind", selection: $levelID) {
+                    Text("Story spine").tag("story")
                     Text("Inner rhyme").tag("inner")
                     Text("Double meanings").tag("double")
                 }
