@@ -178,11 +178,30 @@ class Handler(BaseHTTPRequestHandler):
         self._send(200 if result.get("ok") else 409, result)
 
 
+def _advertise_bonjour() -> subprocess.Popen | None:
+    """macOS: register as _sparkler._tcp so iPhone can resolve the .local name without a static IP."""
+    try:
+        proc = subprocess.Popen(
+            ["dns-sd", "-R", "Sparkler", "_sparkler._tcp", ".", str(PORT)],
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+        )
+        print(f"Bonjour advertising _sparkler._tcp.{PORT} (pid {proc.pid})", flush=True)
+        return proc
+    except FileNotFoundError:
+        print("dns-sd not found; skipping Bonjour. The phone will need the Mac's LAN IP.", flush=True)
+        return None
+
+
 def main() -> int:
     server = ThreadingHTTPServer((HOST, PORT), Handler)
+    bonjour = _advertise_bonjour()
     print(f"Sparkler helper on http://{HOST}:{PORT}", flush=True)
     print("Phone on this Wi-Fi: http://Samuels-MacBook-Pro-3.local:8766", flush=True)
-    server.serve_forever()
+    try:
+        server.serve_forever()
+    finally:
+        if bonjour and bonjour.poll() is None:
+            bonjour.terminate()
     return 0
 
 
