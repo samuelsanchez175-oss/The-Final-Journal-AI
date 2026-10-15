@@ -102,6 +102,7 @@ struct DynamicIslandToolbarView: View {
     @Binding var showThemeExpansionSheet: Bool
     @Binding var showExportSheet: Bool
     @State private var showStyleTransferSheet: Bool = false
+    @State private var showSparklerSimSheet: Bool = false
     @State private var showModelPreferences: Bool = false
     @State private var showBeatVocalSheet: Bool = false
     @State private var showNeedAudioForFlow: Bool = false
@@ -758,6 +759,13 @@ struct DynamicIslandToolbarView: View {
                             }
 
                             Button {
+                                showSparklerSimSheet = true
+                            } label: {
+                                Label("Sparkler verse simulation", systemImage: "sparkles")
+                            }
+                            .accessibilityHint("Opens the Gunna-style verses already written, and can write one new verse on this Mac.")
+
+                            Button {
                                 showARCritiqueSheet = true
                             } label: {
                                 Label("Critic", systemImage: "text.bubble")
@@ -822,7 +830,7 @@ struct DynamicIslandToolbarView: View {
                         }
                         .disabled(rapSuggestionEngine.isLoading)
                         .accessibilityLabel("Suggest next lines with Model G")
-                        .accessibilityHint("Tap once to generate. Open the menu for last suggestions, flow lyrics, style, critic, or Model Preferences.")
+                        .accessibilityHint("Tap once to generate. Hold for last suggestions, flow lyrics, style, the Sparkler verse simulation, critic, or Model Preferences.")
                         .onChange(of: rapSuggestionEngine.isLoading) { oldValue, newValue in
                             if newValue {
                                 // Start rotating animation
@@ -1319,6 +1327,18 @@ struct DynamicIslandToolbarView: View {
                     showStyleTransferSheet = false
                 }
             )
+        }
+        .sheet(isPresented: $showSparklerSimSheet) {
+            SparklerSimSheet(
+                onUse: { suggestion in
+                    insertRapSuggestion(suggestion, true)
+                },
+                onDismiss: {
+                    showSparklerSimSheet = false
+                }
+            )
+            .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
         }
         .sheet(isPresented: $showModelPreferences) {
             ModelPreferencesView()
