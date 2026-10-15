@@ -744,6 +744,27 @@ def _closeness_text(closeness: float) -> str:
     return "Same voice, new lines. Do not reuse his phrases. Match the measured habits only."
 
 
+WEAK_END_WORDS = frozenset("""
+cake sake mall wall day days way ways play plays stay stays say says pay pays lay
+grind mind time line game name same fame place space face case chase wait late great
+state rate hate gate date plate eight weight way ride side wide hide guide slide tried
+cool fool pool school rule do too two true blue through knew view new crew
+go low slow flow know show grow throw bro though dough no toe
+see be free tea three key me we she he key degree
+down town crown clown around sound found ground
+right night light sight might fight tight bright white
+""".split())
+
+
+def end_rich(word: str, lex: p1.Lexicon) -> bool:
+    """A rich end word is multi-syllable, or a single-syllable word that is not on the lazy list."""
+    w = word.lower().strip("'")
+    if w in WEAK_END_WORDS:
+        return False
+    syl = lex.info(w)[0]
+    return syl >= 2 or len(w) >= 5
+
+
 def build_rhyme_bank(anchor_songs: list[dict], lex: p1.Lexicon) -> list[dict]:
     """End-word rhyme families Gunna actually lands bars on in the anchor songs, most-linked first."""
     family: dict[str, Counter] = defaultdict(Counter)
@@ -762,27 +783,41 @@ def build_rhyme_bank(anchor_songs: list[dict], lex: p1.Lexicon) -> list[dict]:
                 songs_of[key].add(song["title"])
                 if i and end_rhyme_kind(bars[i - 1], bar) in ("perfect", "slant"):
                     linked[key] += 1
-    bank = [{"key": key, "words": [w for w, _ in words.most_common(8)], "uses": sum(words.values()),
-             "linked": linked[key], "songs": sorted(songs_of[key])[:3]}
-            for key, words in family.items() if len(words) >= 2]
+    bank = []
+    for key, words in family.items():
+        if len(words) < 2:
+            continue
+        ranked = [w for w, _ in words.most_common(12)]
+        ranked.sort(key=lambda w: (not end_rich(w, lex), -words[w]))  # rich words first
+        rich = [w for w in ranked if end_rich(w, lex)]
+        bank.append({"key": key, "words": ranked[:8], "rich_words": rich[:8],
+                     "uses": sum(words.values()), "linked": linked[key], "songs": sorted(songs_of[key])[:3]})
     bank.sort(key=lambda f: (-(2 * f["linked"] + f["uses"]), f["key"]))
     return bank
 
 
 def _pick_family(bank: list[dict], rng: random.Random, used: set[str], size: int) -> dict | None:
     """Weighted by how much he leans on the family, down-weighted by how often this run already used it."""
-    cands = [f for f in bank if f["key"] not in used and len(f["words"]) >= max(size, 3)]
+    rich = [f for f in bank if f["key"] not in used and len(f.get("rich_words") or []) >= size]
+    cands = rich or [f for f in bank if f["key"] not in used and len(f["words"]) >= max(size, 3)]
     cands = cands or [f for f in bank if f["key"] not in used and len(f["words"]) >= size]
     if not cands:
         return None
-    weights = [(1 + f["linked"] + 0.3 * f["uses"]) / (1 + _FAMILY_USE[f["key"]]) ** 2 for f in cands]
+    weights = [(1 + f["linked"] + 0.3 * f["uses"]) * (1 + len(f.get("rich_words") or []))
+               / (1 + _FAMILY_USE[f["key"]]) ** 2 for f in cands]
     return rng.choices(cands, weights=weights)[0]
 
 
 def _pick_words(fam: dict, size: int, rng: random.Random) -> list[str]:
-    words = fam["words"][:8]
-    rng.shuffle(words)
-    return sorted(words, key=lambda w: _WORD_USE[w])[:size]
+    rich = list(fam.get("rich_words") or [])
+    rng.shuffle(rich)
+    rich.sort(key=lambda w: _WORD_USE[w])
+    picked = rich[:size]
+    if len(picked) < size:
+        rest = [w for w in fam["words"] if w not in picked]
+        rng.shuffle(rest)
+        picked += sorted(rest, key=lambda w: _WORD_USE[w])[:size - len(picked)]
+    return picked[:size]
 
 
 def make_spine(rng: random.Random) -> dict:
@@ -873,6 +908,8 @@ def _plan_text(plan: dict) -> str:
             "ends lines on in these songs. For each planned line, start from the end word and write the line "
             "backwards so the sentence lands on it naturally, the way he would say it. If a planned word can't "
             "land without sounding forced, swap it for another word from the same family, never for a weird word. "
+            "The plan already avoided lazy end words (cake, mall, days, way, place, grind, time, cool, right...). "
+            "Keep it that way: do not land a free line on one of those either; reach for a sharper or longer word. "
             "Free lines end however the sentence wants.\n" + "\n".join(rows))
 
 
@@ -1074,6 +1111,9 @@ def analyze_mimic(texts: list[str], corpus: Corpus, profile: dict,
         rate = sum(1 for text in texts if p1.ADLIB_RE.search(text)) / len(texts)
         if abs(rate - target_rate) > 0.35:
             notes.append(f"ad-lib rate {rate:.0%} vs the era's {target_rate:.0%}")
+    weak_hits = [i + 1 for i, b in enumerate(bars) if b.end_word and b.end_word.lower().strip("'") in WEAK_END_WORDS]
+    if len(weak_hits) >= max(2, len(bars) // 4):
+        notes.append(f"too many lazy end words on lines {', '.join(map(str, weak_hits))}; reach for sharper or multi-syllable rhymes")
     spine = (plan or {}).get("spine")
     if spine and texts:
         joined = " ".join(t.lower() for t in texts)
