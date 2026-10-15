@@ -1,0 +1,9 @@
+family_home  gemini/gemini-2.5-flash-lite  samuel 2  grader 1  delta -1  2/4 line marks  reasons - vs no_sense,bad_rhyme,cringe
+family_home  gemini/gemini-3.1-flash-lite  samuel 2  grader 1  delta -1  2/4 line marks  reasons no_sense,bad_rhyme,cringe vs no_sense,bad_rhyme,off_flow,cringe
+fame_industry  gemini/gemini-2.5-flash-lite  samuel 4  grader 1  delta -3  1/4 line marks  reasons - vs no_sense,off_flow,cringe
+fame_industry  gemini/gemini-3.1-flash-lite  samuel 2  grader 1  delta -1  4/4 line marks  reasons - vs no_sense,bad_rhyme,cringe
+violence_street  gemini/gemini-2.5-flash-lite  samuel 3  grader 1  delta -2  0/1 line marks  reasons bad_rhyme,off_flow vs no_sense,bad_rhyme,off_flow,cringe
+violence_street  gemini/gemini-3.1-flash-lite  samuel 2  grader 1  delta -1  4/4 line marks  reasons - vs no_sense,bad_rhyme,off_flow,cringe
+graded 6
+slider verses 6  exact 0/6  within 1 4/6  mean abs error 1.50
+line marks matched 13/21

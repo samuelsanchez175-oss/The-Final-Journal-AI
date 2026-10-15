@@ -1,0 +1,346 @@
+{
+  "schema": "sparkler.ratings.v1",
+  "rater": "sparkler-grader",
+  "exported_at": "2026-10-14T02:45:50.428421Z",
+  "ratings": [
+    {
+      "generation_id": "707f6231116e42e8b57af344caa0cfd9",
+      "model": "gemini/gemini-2.5-flash-lite",
+      "artist": "Gunna",
+      "topic": "family_home",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "707f6231116e42e8b57af344caa0cfd9:0",
+          "text": "Came from the concrete, yeah, that rough street felt the heat.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I came from the streets where the concrete felt the heat."
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "707f6231116e42e8b57af344caa0cfd9:1",
+          "text": "Mama told me stand up, son, you gotta stand up tall.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "My mama told me, 'Son, you gotta stand up tall.'"
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "707f6231116e42e8b57af344caa0cfd9:2",
+          "text": "Now the whole family good, yeah, they ain't gon' hit no wall.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Now my whole family's good, they won't hit no wall."
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "707f6231116e42e8b57af344caa0cfd9:3",
+          "text": "Built this empire solid, yeah, it's rise above it all.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I built this empire solid, gotta rise above it all."
+        }
+      ],
+      "rated_at": "2026-10-14T02:45:21.291956Z",
+      "time_to_rate_ms": 5683
+    },
+    {
+      "generation_id": "273ea35936ef40a08ff76347f5987102",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "family_home",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "off_flow",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "273ea35936ef40a08ff76347f5987102:0",
+          "text": "Mama, watch the kitchen drama when the silver pots start to shake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Mama, stir the stew in the kitchen while the pots shake on the stove."
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "273ea35936ef40a08ff76347f5987102:1",
+          "text": "Brother, keep the other brothers home until the sleepy neighbors wake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Brother, keep the younger brothers inside the house until morning."
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "273ea35936ef40a08ff76347f5987102:2",
+          "text": "Cousin, watch the Impala glide while the heavy steel will slide.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Cousin, watch the Impala drive down the street while the chrome glints."
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "273ea35936ef40a08ff76347f5987102:3",
+          "text": "Grandad, fix the rusty inside motor so the vintage cycles ride.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Grandad, fix the old motor so the vintage bike can ride."
+        }
+      ],
+      "rated_at": "2026-10-14T02:45:27.304430Z",
+      "time_to_rate_ms": 6011
+    },
+    {
+      "generation_id": "c4c05241998841d09b4807e37c7e7dc0",
+      "model": "gemini/gemini-2.5-flash-lite",
+      "artist": "Gunna",
+      "topic": "fame_industry",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "off_flow",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "c4c05241998841d09b4807e37c7e7dc0:0",
+          "text": "They want my name, but I'm just stayin' out the way.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "The A&R man wants my name, but I'm in my studio in Atlanta."
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "c4c05241998841d09b4807e37c7e7dc0:1",
+          "text": "This business pressure, man, it makes it hard to feel.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "The label pressure in LA makes my head hurt."
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "c4c05241998841d09b4807e37c7e7dc0:2",
+          "text": "Labels tryna sign me, but I'm already on my way.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "The label wants to sign me, but my tour bus is leaving New York."
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "c4c05241998841d09b4807e37c7e7dc0:3",
+          "text": "I rather take a jet, leave the drama on the wheel.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I'd rather take my private jet from Miami, leaving the drama behind."
+        }
+      ],
+      "rated_at": "2026-10-14T02:45:33.367898Z",
+      "time_to_rate_ms": 6063
+    },
+    {
+      "generation_id": "d8b7e1ca81e64f968861058ae5b3e29c",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "fame_industry",
+      "prompt_version": "verse.v4",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "d8b7e1ca81e64f968861058ae5b3e29c:0",
+          "text": "Upon the big stage, I gauge my verses on the legal page.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "On the big stage, I perform my lyrics for the fans."
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "d8b7e1ca81e64f968861058ae5b3e29c:1",
+          "text": "The new sound chart, I view the rhythm with a golden heart.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "On the new sound chart, my song is climbing."
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "d8b7e1ca81e64f968861058ae5b3e29c:2",
+          "text": "Inside a cold cage, I hold the echoes from the record wage.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "In this studio, I record my music for the label."
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "d8b7e1ca81e64f968861058ae5b3e29c:3",
+          "text": "Smart playing part, I start the session with a laser art.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I start the session with my producer in the booth."
+        }
+      ],
+      "rated_at": "2026-10-14T02:45:39.358999Z",
+      "time_to_rate_ms": 5990
+    },
+    {
+      "generation_id": "09d6df1ec7574cdc91c118d04c63af8c",
+      "model": "gemini/gemini-2.5-flash-lite",
+      "artist": "Gunna",
+      "topic": "violence_street",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "off_flow",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "09d6df1ec7574cdc91c118d04c63af8c:0",
+          "text": "See the foreigns creepin' low, make the pavement break.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I see the foreign cars creepin' low on the street."
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "09d6df1ec7574cdc91c118d04c63af8c:1",
+          "text": "We know them boys is comin', ready for whatever they take.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "We know them boys is comin', ready for the fight."
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "09d6df1ec7574cdc91c118d04c63af8c:2",
+          "text": "Now the street is empty, 'cause them boys had to hide.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "09d6df1ec7574cdc91c118d04c63af8c:3",
+          "text": "We just left the scene, watch the whip smoothly glide.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:45:44.530128Z",
+      "time_to_rate_ms": 5170
+    },
+    {
+      "generation_id": "9709d4209f8d49618d91743cfa1e42bf",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "violence_street",
+      "prompt_version": "verse.v4",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "off_flow",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "9709d4209f8d49618d91743cfa1e42bf:0",
+          "text": "Grabbing the heavy steel, feel the pavement start to shake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I grab the .45, I hit the block, the concrete starts to shake."
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "9709d4209f8d49618d91743cfa1e42bf:1",
+          "text": "Loading the clip, dip before the rivals ever wake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I load the Glock, I dip the block, before the rivals wake."
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "9709d4209f8d49618d91743cfa1e42bf:2",
+          "text": "Rolling the Benz, lens focused while the windows slide.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I roll the Benz, my lens is focused, while the windows slide."
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "9709d4209f8d49618d91743cfa1e42bf:3",
+          "text": "Pointing the pipe, type of mission where the bodies ride.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I point the pipe, it's time to strike, where the bodies ride."
+        }
+      ],
+      "rated_at": "2026-10-14T02:45:50.428358Z",
+      "time_to_rate_ms": 5898
+    }
+  ]
+}

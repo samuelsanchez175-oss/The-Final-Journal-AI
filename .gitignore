@@ -89,3 +89,7 @@ tools/bar-hits-catalog/*.sqlite.gz
 * [2-9].h
 * [2-9].m
 .gitignore [2-9]
+
+# AI Sparkler style profile: credentials and big outputs
+tools/style-profile/.env.spotify
+tools/style-profile/out/

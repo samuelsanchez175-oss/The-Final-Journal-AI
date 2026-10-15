@@ -1,0 +1,200 @@
+{
+  "schema": "sparkler.ratings.v1",
+  "rater": "samuel",
+  "exported_at": "2026-10-14T01:50:19.879Z",
+  "ratings": [
+    {
+      "generation_id": "74507890a71a4d3ba7c2a132bdabcaa0",
+      "model": "sonnet",
+      "artist": "Gunna",
+      "topic": "money_flex",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_vote": -1,
+      "verse_reasons": ["bad_rhyme", "off_flow", "no_sense"],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:36:39.464Z",
+      "time_to_rate_ms": 228066
+    },
+    {
+      "generation_id": "29c226965e2a4369a723012706978455",
+      "model": "haiku",
+      "artist": "Gunna",
+      "topic": "money_flex",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_vote": -1,
+      "verse_reasons": ["bad_rhyme", "off_flow", "too_copied", "off_topic"],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:37:29.286Z",
+      "time_to_rate_ms": 49009
+    },
+    {
+      "generation_id": "c01c4f1074c244e7887b5afb39587fc1",
+      "model": "opus",
+      "artist": "Gunna",
+      "topic": "money_flex",
+      "prompt_version": "verse.v4",
+      "passed_checks": true,
+      "verse_vote": -1,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "c01c4f1074c244e7887b5afb39587fc1:0",
+          "text": "Sacks on the table, I'm countin' the twenties in racks",
+          "vote": 1,
+          "keeper": false,
+          "reasons": []
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "c01c4f1074c244e7887b5afb39587fc1:3",
+          "text": "Side of the whip, got 'em filmin' the chain when I ride",
+          "vote": -1,
+          "keeper": false,
+          "reasons": []
+        }
+      ],
+      "rated_at": "2026-10-14T01:38:05.700Z",
+      "time_to_rate_ms": 35610
+    },
+    {
+      "generation_id": "deb2142c26c94f1abee9d736bd19f8f0",
+      "model": "sonnet",
+      "artist": "Gunna",
+      "topic": "sex",
+      "prompt_version": "verse.v3",
+      "passed_checks": false,
+      "verse_vote": -1,
+      "verse_reasons": ["no_sense", "cringe"],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:48:20.641Z",
+      "time_to_rate_ms": 199872
+    },
+    {
+      "generation_id": "5a2de2687e23402092309eda825e39e0",
+      "model": "haiku",
+      "artist": "Gunna",
+      "topic": "sex",
+      "prompt_version": "verse.v3",
+      "passed_checks": false,
+      "verse_vote": -1,
+      "verse_reasons": ["no_sense", "cringe"],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:48:32.950Z",
+      "time_to_rate_ms": 11506
+    },
+    {
+      "generation_id": "769a9ef36e7a4fc6b4e64d241fd8ed7b",
+      "model": "opus",
+      "artist": "Gunna",
+      "topic": "sex",
+      "prompt_version": "verse.v3",
+      "passed_checks": false,
+      "verse_vote": -1,
+      "verse_reasons": ["no_sense", "off_flow", "cringe"],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:48:45.291Z",
+      "time_to_rate_ms": 11537
+    },
+    {
+      "generation_id": "db6d08f3347d4a998db8971eca24e815",
+      "model": "sonnet",
+      "artist": "Gunna",
+      "topic": "come_up_hustle",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_vote": -1,
+      "verse_reasons": ["bad_rhyme", "off_flow", "cringe"],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:49:28.928Z",
+      "time_to_rate_ms": 42835
+    },
+    {
+      "generation_id": "5c76b9f955074d338421bffa19858b77",
+      "model": "haiku",
+      "artist": "Gunna",
+      "topic": "come_up_hustle",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_vote": -1,
+      "verse_reasons": ["no_sense", "off_topic"],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "5c76b9f955074d338421bffa19858b77:0",
+          "text": "Came hungry from the yard, now I'm solid, got my card",
+          "vote": 1,
+          "keeper": false,
+          "reasons": []
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "5c76b9f955074d338421bffa19858b77:1",
+          "text": "Jumped broke playing smart, now these bitches know I'm hard",
+          "vote": 1,
+          "keeper": false,
+          "reasons": []
+        }
+      ],
+      "rated_at": "2026-10-14T01:49:53.628Z",
+      "time_to_rate_ms": 23896
+    },
+    {
+      "generation_id": "6b1f42c96a9249e49e0a0fd84b564387",
+      "model": "opus",
+      "artist": "Gunna",
+      "topic": "come_up_hustle",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_vote": -1,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "6b1f42c96a9249e49e0a0fd84b564387:0",
+          "text": "Back of the Chevy, me and Nitty was sleep in the cold",
+          "vote": 1,
+          "keeper": false,
+          "reasons": []
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "6b1f42c96a9249e49e0a0fd84b564387:1",
+          "text": "Hustled that winter, every brick in the kitchen got sold",
+          "vote": 1,
+          "keeper": false,
+          "reasons": []
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "6b1f42c96a9249e49e0a0fd84b564387:2",
+          "text": "Woke up in Buckhead, my jeweler done flooded the chain",
+          "vote": 1,
+          "keeper": false,
+          "reasons": []
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "6b1f42c96a9249e49e0a0fd84b564387:3",
+          "text": "Swervin' down Peachtree, the Hellcat eatin' all the lane",
+          "vote": 1,
+          "keeper": false,
+          "reasons": []
+        }
+      ],
+      "rated_at": "2026-10-14T01:50:17.429Z",
+      "time_to_rate_ms": 22998
+    }
+  ]
+}

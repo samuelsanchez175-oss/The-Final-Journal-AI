@@ -1,5 +1,7 @@
 # ChatGPT BPM/Key Finder Prompt
 
+> Scope correction, 2026-10-13: the 1,062-song list below is an archived sample, not the whole catalog. The ground-truth catalog contains 42,647 songs across 785 artist labels. The active uncapped BPM queue is tools/style-profile/out/tempo_worklist.jsonl, initially 42,155 missing-tempo entries. Use every entry in that queue, including short songs and all artists; do not apply a 20-song cap. Preserve exact raw artist/song strings and use lookup_title only for searching. Prior attempts and held conflicts remain reviewable. Search completion is separate from verified BPM coverage; unavailable values stay null until a source or matching recording supports them.
+
 You are helping find BPM, key, and mode data for 1,062 hip-hop songs that automated tools couldn't match.
 
 ## Task

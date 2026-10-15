@@ -1,0 +1,2202 @@
+{
+  "schema": "sparkler.ratings.v1",
+  "rater": "samuel",
+  "exported_at": "2026-10-14T07:36:19.419Z",
+  "ratings": [
+    {
+      "generation_id": "74507890a71a4d3ba7c2a132bdabcaa0",
+      "model": "sonnet",
+      "artist": "Gunna",
+      "topic": "money_flex",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": null,
+      "verse_vote": -1,
+      "verse_reasons": [
+        "bad_rhyme",
+        "off_flow",
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:36:39.464Z",
+      "time_to_rate_ms": 228066
+    },
+    {
+      "generation_id": "29c226965e2a4369a723012706978455",
+      "model": "haiku",
+      "artist": "Gunna",
+      "topic": "money_flex",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": null,
+      "verse_vote": -1,
+      "verse_reasons": [
+        "bad_rhyme",
+        "off_flow",
+        "too_copied",
+        "off_topic"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:37:29.286Z",
+      "time_to_rate_ms": 49009
+    },
+    {
+      "generation_id": "c01c4f1074c244e7887b5afb39587fc1",
+      "model": "opus",
+      "artist": "Gunna",
+      "topic": "money_flex",
+      "prompt_version": "verse.v4",
+      "passed_checks": true,
+      "verse_score": null,
+      "verse_vote": -1,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "c01c4f1074c244e7887b5afb39587fc1:0",
+          "text": "Sacks on the table, I'm countin' the twenties in racks",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "c01c4f1074c244e7887b5afb39587fc1:3",
+          "text": "Side of the whip, got 'em filmin' the chain when I ride",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T01:38:05.700Z",
+      "time_to_rate_ms": 35610
+    },
+    {
+      "generation_id": "deb2142c26c94f1abee9d736bd19f8f0",
+      "model": "sonnet",
+      "artist": "Gunna",
+      "topic": "sex",
+      "prompt_version": "verse.v3",
+      "passed_checks": false,
+      "verse_score": null,
+      "verse_vote": -1,
+      "verse_reasons": [
+        "no_sense",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:48:20.641Z",
+      "time_to_rate_ms": 199872
+    },
+    {
+      "generation_id": "5a2de2687e23402092309eda825e39e0",
+      "model": "haiku",
+      "artist": "Gunna",
+      "topic": "sex",
+      "prompt_version": "verse.v3",
+      "passed_checks": false,
+      "verse_score": null,
+      "verse_vote": -1,
+      "verse_reasons": [
+        "no_sense",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:48:32.950Z",
+      "time_to_rate_ms": 11506
+    },
+    {
+      "generation_id": "769a9ef36e7a4fc6b4e64d241fd8ed7b",
+      "model": "opus",
+      "artist": "Gunna",
+      "topic": "sex",
+      "prompt_version": "verse.v3",
+      "passed_checks": false,
+      "verse_score": null,
+      "verse_vote": -1,
+      "verse_reasons": [
+        "no_sense",
+        "off_flow",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:48:45.291Z",
+      "time_to_rate_ms": 11537
+    },
+    {
+      "generation_id": "db6d08f3347d4a998db8971eca24e815",
+      "model": "sonnet",
+      "artist": "Gunna",
+      "topic": "come_up_hustle",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": null,
+      "verse_vote": -1,
+      "verse_reasons": [
+        "bad_rhyme",
+        "off_flow",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T01:49:28.928Z",
+      "time_to_rate_ms": 42835
+    },
+    {
+      "generation_id": "5c76b9f955074d338421bffa19858b77",
+      "model": "haiku",
+      "artist": "Gunna",
+      "topic": "come_up_hustle",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "no_sense",
+        "off_topic"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "5c76b9f955074d338421bffa19858b77:0",
+          "text": "Came hungry from the yard, now I'm solid, got my card",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "5c76b9f955074d338421bffa19858b77:1",
+          "text": "Jumped broke playing smart, now these bitches know I'm hard",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T01:59:05.960Z",
+      "time_to_rate_ms": 60155
+    },
+    {
+      "generation_id": "6b1f42c96a9249e49e0a0fd84b564387",
+      "model": "opus",
+      "artist": "Gunna",
+      "topic": "come_up_hustle",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "cringe",
+        "no_sense",
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "6b1f42c96a9249e49e0a0fd84b564387:0",
+          "text": "Back of the Chevy, me and Nitty was sleep in the cold",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "6b1f42c96a9249e49e0a0fd84b564387:1",
+          "text": "Hustled that winter, every brick in the kitchen got sold",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "6b1f42c96a9249e49e0a0fd84b564387:2",
+          "text": "Woke up in Buckhead, my jeweler done flooded the chain",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "6b1f42c96a9249e49e0a0fd84b564387:3",
+          "text": "Swervin' down Peachtree, the Hellcat eatin' all the lane",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T01:59:44.826Z",
+      "time_to_rate_ms": 38063
+    },
+    {
+      "generation_id": "600c2f5aa4cc4943820bfd8adefb1f62",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "betrayal_enemies",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "off_flow",
+        "off_topic",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "600c2f5aa4cc4943820bfd8adefb1f62:0",
+          "text": "Snakes on the yard, they watch me shake with a plastic fake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "600c2f5aa4cc4943820bfd8adefb1f62:1",
+          "text": "Foes start to brake, I stay awake while I dodge a lake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:16:29.645Z",
+      "time_to_rate_ms": 140152
+    },
+    {
+      "generation_id": "396d2b919c7a4ff489d2c9e0d9f9f3f2",
+      "model": "gemini/gemini-2.5-flash-lite",
+      "artist": "Gunna",
+      "topic": "betrayal_enemies",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "off_flow",
+        "off_topic",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "396d2b919c7a4ff489d2c9e0d9f9f3f2:0",
+          "text": "Seen them lurkin', puttin' on a fake face, but I know their whole case.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "396d2b919c7a4ff489d2c9e0d9f9f3f2:1",
+          "text": "Watchin' these fake friends, always tryna get in my space, tryna get a taste.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "396d2b919c7a4ff489d2c9e0d9f9f3f2:2",
+          "text": "They be schemin', wantin' the new Cullinan gleamin', like they really dreamin'.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "396d2b919c7a4ff489d2c9e0d9f9f3f2:3",
+          "text": "But I'm just leanin', on my own lane, the real deal, never intervenin'.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:17:16.360Z",
+      "time_to_rate_ms": 45912
+    },
+    {
+      "generation_id": "7d9418a3d91e45c1baa09acf670f1fe5",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "party_lifestyle",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "cringe",
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "7d9418a3d91e45c1baa09acf670f1fe5:0",
+          "text": "Bright neon sight, flashing on the white VVS iced out light",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "7d9418a3d91e45c1baa09acf670f1fe5:1",
+          "text": "Heavy bottles, flowing down the marble dance club floor",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "7d9418a3d91e45c1baa09acf670f1fe5:2",
+          "text": "Glittering night, posing for the camera at this grand light",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "7d9418a3d91e45c1baa09acf670f1fe5:3",
+          "text": "Custom motor, cruising past the velvet rope near the door",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:17:39.512Z",
+      "time_to_rate_ms": 22350
+    },
+    {
+      "generation_id": "d4ed7c2688584f34aec0820fe9fb4ab9",
+      "model": "gemini/gemini-2.5-flash-lite",
+      "artist": "Gunna",
+      "topic": "party_lifestyle",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "cringe",
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "d4ed7c2688584f34aec0820fe9fb4ab9:0",
+          "text": "Walked in the venue, the whole room bright, feelin' like it's midnight.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "d4ed7c2688584f34aec0820fe9fb4ab9:1",
+          "text": "Got Ace of Spades flowin', yeah, we puttin' on a show.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "d4ed7c2688584f34aec0820fe9fb4ab9:2",
+          "text": "Pulled up in the Wraith, the flashing lights so bright.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "d4ed7c2688584f34aec0820fe9fb4ab9:3",
+          "text": "Got the crystal pourin' low, ain't nobody gotta know.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:18:25.359Z",
+      "time_to_rate_ms": 45043
+    },
+    {
+      "generation_id": "273ea35936ef40a08ff76347f5987102",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "family_home",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "273ea35936ef40a08ff76347f5987102:0",
+          "text": "Mama, watch the kitchen drama when the silver pots start to shake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "mama washing the pots in the kitchen, im smoking the last of this shake"
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "273ea35936ef40a08ff76347f5987102:1",
+          "text": "Brother, keep the other brothers home until the sleepy neighbors wake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "273ea35936ef40a08ff76347f5987102:2",
+          "text": "Cousin, watch the Impala glide while the heavy steel will slide.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Cousin and i in the Impala ride while im gripping the pipe in the ride"
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "273ea35936ef40a08ff76347f5987102:3",
+          "text": "Grandad, fix the rusty inside motor so the vintage cycles ride.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:30:17.313Z",
+      "time_to_rate_ms": 137492
+    },
+    {
+      "generation_id": "c4c05241998841d09b4807e37c7e7dc0",
+      "model": "gemini/gemini-2.5-flash-lite",
+      "artist": "Gunna",
+      "topic": "fame_industry",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 4,
+      "verse_vote": 4,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "c4c05241998841d09b4807e37c7e7dc0:0",
+          "text": "They want my name, but I'm just stayin' out the way.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "c4c05241998841d09b4807e37c7e7dc0:1",
+          "text": "This business pressure, man, it makes it hard to feel.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "c4c05241998841d09b4807e37c7e7dc0:2",
+          "text": "Labels tryna sign me, but I'm already on my way.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "c4c05241998841d09b4807e37c7e7dc0:3",
+          "text": "I rather take a jet, leave the drama on the wheel.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:31:03.390Z",
+      "time_to_rate_ms": 45273
+    },
+    {
+      "generation_id": "9709d4209f8d49618d91743cfa1e42bf",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "violence_street",
+      "prompt_version": "verse.v4",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "9709d4209f8d49618d91743cfa1e42bf:0",
+          "text": "Grabbing the heavy steel, feel the pavement start to shake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "9709d4209f8d49618d91743cfa1e42bf:1",
+          "text": "Loading the clip, dip before the rivals ever wake.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "9709d4209f8d49618d91743cfa1e42bf:2",
+          "text": "Rolling the Benz, lens focused while the windows slide.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "9709d4209f8d49618d91743cfa1e42bf:3",
+          "text": "Pointing the pipe, type of mission where the bodies ride.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:31:29.287Z",
+      "time_to_rate_ms": 25093
+    },
+    {
+      "generation_id": "707f6231116e42e8b57af344caa0cfd9",
+      "model": "gemini/gemini-2.5-flash-lite",
+      "artist": "Gunna",
+      "topic": "family_home",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "707f6231116e42e8b57af344caa0cfd9:0",
+          "text": "Came from the concrete, yeah, that rough street felt the heat.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "707f6231116e42e8b57af344caa0cfd9:1",
+          "text": "Mama told me stand up, son, you gotta stand up tall.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "707f6231116e42e8b57af344caa0cfd9:2",
+          "text": "Now the whole family good, yeah, they ain't gon' hit no wall.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "707f6231116e42e8b57af344caa0cfd9:3",
+          "text": "Built this empire solid, yeah, it's rise above it all.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:32:18.305Z",
+      "time_to_rate_ms": 48211
+    },
+    {
+      "generation_id": "d8b7e1ca81e64f968861058ae5b3e29c",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "fame_industry",
+      "prompt_version": "verse.v4",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "d8b7e1ca81e64f968861058ae5b3e29c:0",
+          "text": "Upon the big stage, I gauge my verses on the legal page.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "d8b7e1ca81e64f968861058ae5b3e29c:1",
+          "text": "The new sound chart, I view the rhythm with a golden heart.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "d8b7e1ca81e64f968861058ae5b3e29c:2",
+          "text": "Inside a cold cage, I hold the echoes from the record wage.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "d8b7e1ca81e64f968861058ae5b3e29c:3",
+          "text": "Smart playing part, I start the session with a laser art.",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:33:00.818Z",
+      "time_to_rate_ms": 41710
+    },
+    {
+      "generation_id": "09d6df1ec7574cdc91c118d04c63af8c",
+      "model": "gemini/gemini-2.5-flash-lite",
+      "artist": "Gunna",
+      "topic": "violence_street",
+      "prompt_version": "verse.v4",
+      "passed_checks": false,
+      "verse_score": 3,
+      "verse_vote": 3,
+      "verse_reasons": [
+        "bad_rhyme",
+        "off_flow"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 2,
+          "bar_id": "09d6df1ec7574cdc91c118d04c63af8c:2",
+          "text": "Now the street is empty, 'cause them boys had to hide.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T02:33:27.326Z",
+      "time_to_rate_ms": 25705
+    },
+    {
+      "generation_id": "ee4bf144249344fdaacccdb9bf7207fb",
+      "model": "sonnet",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 7,
+      "verse_vote": 7,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "ee4bf144249344fdaacccdb9bf7207fb:0",
+          "text": "Grew up with nothing, now I'm pushin' a Maybach",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "ee4bf144249344fdaacccdb9bf7207fb:1",
+          "text": "Count the profit in the kitchen, keep the family paid (Yeah)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "ee4bf144249344fdaacccdb9bf7207fb:2",
+          "text": "I'm the one they slept on now these niggas scared",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "ee4bf144249344fdaacccdb9bf7207fb:3",
+          "text": "Chanel on my shoulders, Patek on my wrist (21)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 4,
+          "bar_id": "ee4bf144249344fdaacccdb9bf7207fb:4",
+          "text": "Used to split the bread thin now it's stacking for days",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 5,
+          "bar_id": "ee4bf144249344fdaacccdb9bf7207fb:5",
+          "text": "Servin' 'til the sun up, know the streets like my block (Uh)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 6,
+          "bar_id": "ee4bf144249344fdaacccdb9bf7207fb:6",
+          "text": "I write what I'm livin', ain't no actin' for the fame",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 7,
+          "bar_id": "ee4bf144249344fdaacccdb9bf7207fb:7",
+          "text": "Walked through all that risk and came out solid, not the same",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T06:20:21.355Z",
+      "time_to_rate_ms": 995966
+    },
+    {
+      "generation_id": "44de04c9b9184f93a02db668ad90d624",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 4,
+      "verse_vote": 4,
+      "verse_reasons": [
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "44de04c9b9184f93a02db668ad90d624:0",
+          "text": "I put the ice on my wrist just to stop the shake (Yeah)",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "44de04c9b9184f93a02db668ad90d624:1",
+          "text": "I'm in the hills, I don't even know when I wake (Uh-huh)",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "44de04c9b9184f93a02db668ad90d624:2",
+          "text": "She want a Patek, I told her wait on the store",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "44de04c9b9184f93a02db668ad90d624:3",
+          "text": "I'm servin' portions, I'm pushin' weight out the door",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 4,
+          "bar_id": "44de04c9b9184f93a02db668ad90d624:4",
+          "text": "My memory hazy, I'm drinkin' out of the cup",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 6,
+          "bar_id": "44de04c9b9184f93a02db668ad90d624:6",
+          "text": "I let the Wraith and the Cullinan pull to the side",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 7,
+          "bar_id": "44de04c9b9184f93a02db668ad90d624:7",
+          "text": "I got the top off, I'm ready to take a ride (Pussy)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:12:08.647Z",
+      "time_to_rate_ms": 493125
+    },
+    {
+      "generation_id": "9a63b021340d435c8f3a303e96ad0ce9",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 4,
+      "verse_vote": 4,
+      "verse_reasons": [
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "9a63b021340d435c8f3a303e96ad0ce9:0",
+          "text": "I'm switchin' lanes, I'm pushin' this new Maybach (Yeah)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 5,
+          "bar_id": "9a63b021340d435c8f3a303e96ad0ce9:5",
+          "text": "I'm countin' blue strips, yeah, I'm doin' it again",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:13:03.763Z",
+      "time_to_rate_ms": 54305
+    },
+    {
+      "generation_id": "bb24a81ff60c40b9a07d2b80a87ee392",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "off_flow"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "bb24a81ff60c40b9a07d2b80a87ee392:0",
+          "text": "I'm pushin' a Bentley, the ceiling lookin' like space (Yeah)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "bb24a81ff60c40b9a07d2b80a87ee392:2",
+          "text": "She want a Chanel, I'm servin' bags to the street",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:13:38.145Z",
+      "time_to_rate_ms": 33562
+    },
+    {
+      "generation_id": "7093294049c14451ac2016e7d141f07e",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "off_topic",
+        "off_flow",
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "7093294049c14451ac2016e7d141f07e:0",
+          "text": "I pulled the Cullinan out, it's parked in the rain (Skrrt).",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "7093294049c14451ac2016e7d141f07e:1",
+          "text": "I got the Patek, it’s freezing the chain.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:14:11.242Z",
+      "time_to_rate_ms": 32289
+    },
+    {
+      "generation_id": "cf745bb2b14f4b99b60718d4f93c7141",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "bad_rhyme",
+        "off_flow"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:14:25.601Z",
+      "time_to_rate_ms": 13545
+    },
+    {
+      "generation_id": "4d96e0564f6743f0ae40b2119e342bb5",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:14:39.414Z",
+      "time_to_rate_ms": 12999
+    },
+    {
+      "generation_id": "0ec43f78743c47089580bef348fbe54c",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "bad_rhyme",
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 1,
+          "bar_id": "0ec43f78743c47089580bef348fbe54c:1",
+          "text": "Servin' them plates, I remember the smell of the den",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "0ec43f78743c47089580bef348fbe54c:3",
+          "text": "I read the part, how they switched up and acted so thin (Pussy)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I played my part, how they switched up like pussys again"
+        },
+        {
+          "bar_index": 4,
+          "bar_id": "0ec43f78743c47089580bef348fbe54c:4",
+          "text": "I don't look back, I just focus on gettin' the guap",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "i dont look back, im heading to mars"
+        }
+      ],
+      "rated_at": "2026-10-14T07:16:26.025Z",
+      "time_to_rate_ms": 105801
+    },
+    {
+      "generation_id": "d04a314c62b34e97ab1f802221f8083e",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 3,
+      "verse_vote": 3,
+      "verse_reasons": [
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "d04a314c62b34e97ab1f802221f8083e:0",
+          "text": "Woke up in a Maybach, seats are soft (Yeah)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "im in a Maybach, seats are soft and they yellow"
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "d04a314c62b34e97ab1f802221f8083e:1",
+          "text": "Patek on my wrist time is moving slow",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Patek yellow dimaond they hitting together"
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "d04a314c62b34e97ab1f802221f8083e:2",
+          "text": "I'm pushin' weight, these hundreds gettin' tall",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "thats stake on my plate , i had nothing ate cheddar"
+        }
+      ],
+      "rated_at": "2026-10-14T07:18:11.893Z",
+      "time_to_rate_ms": 105057
+    },
+    {
+      "generation_id": "9afdf3e731ca4aea8aaa9622ccabd44d",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 3,
+      "verse_vote": 3,
+      "verse_reasons": [
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "9afdf3e731ca4aea8aaa9622ccabd44d:0",
+          "text": "I'm in the kitchen, watchin' the soda start to shake (Yeah)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I'm in the kitchen, pouring lean to the line"
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "9afdf3e731ca4aea8aaa9622ccabd44d:1",
+          "text": "We stayin' low, and I'm waitin' for the city to wake (Uh-huh)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "We stayin' low, dodging the hate as i fly by"
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "9afdf3e731ca4aea8aaa9622ccabd44d:2",
+          "text": "I saw the opps, they complain to the government",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "i seen the opps, bouta up the fye"
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "9afdf3e731ca4aea8aaa9622ccabd44d:3",
+          "text": "You know my drink, it's expensive like your new Patek",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "ya pussy stay drunk, thats how ya brother died"
+        }
+      ],
+      "rated_at": "2026-10-14T07:19:55.636Z",
+      "time_to_rate_ms": 102933
+    },
+    {
+      "generation_id": "8a6e251fc03b4d5c847e36e60cc72b43",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "bad_rhyme",
+        "off_flow",
+        "off_topic",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "8a6e251fc03b4d5c847e36e60cc72b43:0",
+          "text": "I'm in the kitchen, watch the heavy silver pots shake",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "8a6e251fc03b4d5c847e36e60cc72b43:2",
+          "text": "We let the Cullinan inside the parking lot slide",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:20:23.339Z",
+      "time_to_rate_ms": 26895
+    },
+    {
+      "generation_id": "60319e4eeeb64512919dc223256ddee6",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "60319e4eeeb64512919dc223256ddee6:0",
+          "text": "We pushin' heavy, check the balance on the stash (Yeah)",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "60319e4eeeb64512919dc223256ddee6:1",
+          "text": "I'm countin' profit seen the pressure in the glass",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 5,
+          "bar_id": "60319e4eeeb64512919dc223256ddee6:5",
+          "text": "She tell me secrets while we loading up the pump (Uh-huh)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "vioria secrets pantiies and she got on red pumps (Uh-huh)"
+        }
+      ],
+      "rated_at": "2026-10-14T07:21:27.295Z",
+      "time_to_rate_ms": 63145
+    },
+    {
+      "generation_id": "4a5ba876dfee4b2b973a37adb9afe45a",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:21:43.367Z",
+      "time_to_rate_ms": 15253
+    },
+    {
+      "generation_id": "4e332bf807b54aae8c2ce6e3b7ef28a7",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:21:59.350Z",
+      "time_to_rate_ms": 15173
+    },
+    {
+      "generation_id": "6e6ed4db68cb4e6ebfa32a91b6325ef8",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:22:11.899Z",
+      "time_to_rate_ms": 11734
+    },
+    {
+      "generation_id": "790e5f1f1d214d83950e52f6c57cca26",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:22:32.478Z",
+      "time_to_rate_ms": 19768
+    },
+    {
+      "generation_id": "bd8279f4b2464aed9d47dc22a9da277e",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 3,
+          "bar_id": "bd8279f4b2464aed9d47dc22a9da277e:3",
+          "text": "I bought a Patek, keep the time on me",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 6,
+          "bar_id": "bd8279f4b2464aed9d47dc22a9da277e:6",
+          "text": "The Cullinan parkin', lookin' like a tank (Uh-huh)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:22:48.761Z",
+      "time_to_rate_ms": 15473
+    },
+    {
+      "generation_id": "6b1d3d3ca4f140db845a5f0f7338f305",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "bad_rhyme",
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:23:03.666Z",
+      "time_to_rate_ms": 14099
+    },
+    {
+      "generation_id": "6adb8cbba9ec4ad793f807ea2f7b68ac",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "off_flow",
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:23:20.466Z",
+      "time_to_rate_ms": 15988
+    },
+    {
+      "generation_id": "2abb00c5552441e7a2b3f42e419aa7c0",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 3,
+      "verse_vote": 3,
+      "verse_reasons": [
+        "off_flow",
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:23:29.190Z",
+      "time_to_rate_ms": 7919
+    },
+    {
+      "generation_id": "c5eef101f4b847679de8ec1c056978f9",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "off_flow",
+        "bad_rhyme",
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:23:42.964Z",
+      "time_to_rate_ms": 12964
+    },
+    {
+      "generation_id": "47e9ae048d8243a7abed7e7e3db7279f",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "off_flow"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:23:56.266Z",
+      "time_to_rate_ms": 12490
+    },
+    {
+      "generation_id": "ee049cbbd79f4b99853c5c3572fa0a57",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "bad_rhyme",
+        "no_sense",
+        "off_flow"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 2,
+          "bar_id": "ee049cbbd79f4b99853c5c3572fa0a57:2",
+          "text": "She want a Patek I don't give it to her",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "ee049cbbd79f4b99853c5c3572fa0a57:3",
+          "text": "We stayin' solid never foldin' on my partners (Yeah)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "im gunna fly private then stick it too her"
+        }
+      ],
+      "rated_at": "2026-10-14T07:24:56.856Z",
+      "time_to_rate_ms": 59776
+    },
+    {
+      "generation_id": "c0db1c5b25f24452a3d35e6a4d7c8936",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme",
+        "off_flow",
+        "off_topic",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:25:12.248Z",
+      "time_to_rate_ms": 14579
+    },
+    {
+      "generation_id": "ddb49cacb2024be2b0ac21d2a2776bba",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 4,
+      "verse_vote": 4,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 2,
+          "bar_id": "ddb49cacb2024be2b0ac21d2a2776bba:2",
+          "text": "I got the Patek on it's shinin' in the dark",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "ddb49cacb2024be2b0ac21d2a2776bba:3",
+          "text": "I'm servin' hitters, keep it hidden in the park (Yeah)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I'm servin' hitters, knock em out the park (Yeah)"
+        },
+        {
+          "bar_index": 4,
+          "bar_id": "ddb49cacb2024be2b0ac21d2a2776bba:4",
+          "text": "We put them racks inside the vault we gotta slide",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "We put them racks inside the smart car (Yeah)"
+        },
+        {
+          "bar_index": 5,
+          "bar_id": "ddb49cacb2024be2b0ac21d2a2776bba:5",
+          "text": "I'm in the Bentley watch the city while I ride",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "100 percent it dont ever gotta charge"
+        },
+        {
+          "bar_index": 6,
+          "bar_id": "ddb49cacb2024be2b0ac21d2a2776bba:6",
+          "text": "You know I'm stayin' out the way, I'm focused on the gains",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "You know I'm stayin' out the way, I'm focused on the gains"
+        }
+      ],
+      "rated_at": "2026-10-14T07:26:28.677Z",
+      "time_to_rate_ms": 75623
+    },
+    {
+      "generation_id": "4f001208b1374159a302662bb906cc8c",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 3,
+      "verse_vote": 3,
+      "verse_reasons": [
+        "off_topic",
+        "no_sense",
+        "bad_rhyme",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:26:46.667Z",
+      "time_to_rate_ms": 17182
+    },
+    {
+      "generation_id": "9291e52969a84e2db7742255b3f8cd58",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "cringe",
+        "bad_rhyme",
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:27:10.886Z",
+      "time_to_rate_ms": 23401
+    },
+    {
+      "generation_id": "1cd3b27dc86d4cc28522472cf3d9d529",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "cringe",
+        "bad_rhyme",
+        "no_sense"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "1cd3b27dc86d4cc28522472cf3d9d529:0",
+          "text": "Used to sleep in the cold, now I'm countin' these racks (Yeah)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Used to sleep in the cold, i burn money in the flame (Yeah)"
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "1cd3b27dc86d4cc28522472cf3d9d529:1",
+          "text": "Servin' up parts, I don't look for the fame",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Servin' up parts, like im working on a cage (Yeah)"
+        }
+      ],
+      "rated_at": "2026-10-14T07:28:21.952Z",
+      "time_to_rate_ms": 70259
+    },
+    {
+      "generation_id": "528dd2f2dcde4a87bdbd14d76e31d6a7",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 3,
+      "verse_vote": 3,
+      "verse_reasons": [
+        "bad_rhyme",
+        "cringe"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "528dd2f2dcde4a87bdbd14d76e31d6a7:0",
+          "text": "Focus on the goal, I keep it quiet out the way.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Focus on the goal, I keep quiet, out the way."
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "528dd2f2dcde4a87bdbd14d76e31d6a7:2",
+          "text": "I seen a lot of niggas lose it over petty beef. (Yeah)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "528dd2f2dcde4a87bdbd14d76e31d6a7:3",
+          "text": "I don't look for fame, I let the money do the talk. (No)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "i got me 2 bad bitches so i keep it on discreet"
+        },
+        {
+          "bar_index": 4,
+          "bar_id": "528dd2f2dcde4a87bdbd14d76e31d6a7:4",
+          "text": "Labels want a signature, I'm readin' every part.",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "Labels want a signature told em meet me on the skreets"
+        }
+      ],
+      "rated_at": "2026-10-14T07:29:46.736Z",
+      "time_to_rate_ms": 83966
+    },
+    {
+      "generation_id": "148317e77b564363a76d76c60c2b40ef",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:30:03.901Z",
+      "time_to_rate_ms": 16352
+    },
+    {
+      "generation_id": "767abd584dbd42898ea1fd7331545768",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 4,
+      "verse_vote": 4,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 2,
+          "bar_id": "767abd584dbd42898ea1fd7331545768:2",
+          "text": "I see the opps lurkin' so I decide to fold",
+          "vote": -1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 5,
+          "bar_id": "767abd584dbd42898ea1fd7331545768:5",
+          "text": "I keep my business private, I don't talk about the plays",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "I keeping mines private, cant talk about the plays"
+        }
+      ],
+      "rated_at": "2026-10-14T07:31:06.689Z",
+      "time_to_rate_ms": 61980
+    },
+    {
+      "generation_id": "d6a8a465c8b6466b9ced51143a8af73f",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:31:26.314Z",
+      "time_to_rate_ms": 18816
+    },
+    {
+      "generation_id": "c9b8881b72864d50b52bd68585be7f86",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 3,
+      "verse_vote": 3,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 1,
+          "bar_id": "c9b8881b72864d50b52bd68585be7f86:1",
+          "text": "My circle is tight, and we never go out for the drama",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "c9b8881b72864d50b52bd68585be7f86:2",
+          "text": "Chanel on my jacket, I’m walkin' inside of the lobby",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "c9b8881b72864d50b52bd68585be7f86:3",
+          "text": "Used to be trappin', now music is more than a hobby (Uh-huh)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:31:47.905Z",
+      "time_to_rate_ms": 20774
+    },
+    {
+      "generation_id": "0db397981b314a3fb78ea1c8d052602f",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:31:55.815Z",
+      "time_to_rate_ms": 7100
+    },
+    {
+      "generation_id": "0495a5470d6a463897a3e24054e7eaac",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "0495a5470d6a463897a3e24054e7eaac:0",
+          "text": "I'm in the Maybach, watching the city go grey (Yeah)",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:32:10.016Z",
+      "time_to_rate_ms": 13387
+    },
+    {
+      "generation_id": "430ff775c03f48a5904ae7caa0e24e0c",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 3,
+      "verse_vote": 3,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 1,
+          "bar_id": "430ff775c03f48a5904ae7caa0e24e0c:1",
+          "text": "Bought a new Celine, I'm flyin' out to Tokyo",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:32:28.007Z",
+      "time_to_rate_ms": 17183
+    },
+    {
+      "generation_id": "6daf777ac92841098909daa66eea8883",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:32:36.407Z",
+      "time_to_rate_ms": 7586
+    },
+    {
+      "generation_id": "77090cf583a64282b6ee661e70fc159e",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:32:46.830Z",
+      "time_to_rate_ms": 9614
+    },
+    {
+      "generation_id": "4aea0758d16a45e6a08e6bcce4d98c27",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:32:58.868Z",
+      "time_to_rate_ms": 11229
+    },
+    {
+      "generation_id": "100cf110143c45e4b9d812404f2874cc",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [
+        "no_sense",
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:33:09.485Z",
+      "time_to_rate_ms": 9803
+    },
+    {
+      "generation_id": "2d804c16628641a4b6cd4a55ae7735e0",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 6,
+      "verse_vote": 6,
+      "verse_reasons": [
+        "bad_rhyme"
+      ],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 0,
+          "bar_id": "2d804c16628641a4b6cd4a55ae7735e0:0",
+          "text": "I'm pushin' weight counting hundreds in the basement (yeah)",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "i came a long way i got hundreds in the basement (yeah)"
+        },
+        {
+          "bar_index": 1,
+          "bar_id": "2d804c16628641a4b6cd4a55ae7735e0:1",
+          "text": "I'm pullin' up Maybach parked where the sun set",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "picture me with your wife riding out on a sunset"
+        },
+        {
+          "bar_index": 2,
+          "bar_id": "2d804c16628641a4b6cd4a55ae7735e0:2",
+          "text": "We servin' parts, gotta keep the circle tight",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "niggas aint right so im always clutching"
+        },
+        {
+          "bar_index": 3,
+          "bar_id": "2d804c16628641a4b6cd4a55ae7735e0:3",
+          "text": "She want the Chanel, I just told her take a flight",
+          "vote": null,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": "i catch a flight, ill see ya on sunday"
+        }
+      ],
+      "rated_at": "2026-10-14T07:34:32.818Z",
+      "time_to_rate_ms": 82524
+    },
+    {
+      "generation_id": "540519f78d724b259ad6999d36b62f6c",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:34:42.802Z",
+      "time_to_rate_ms": 9172
+    },
+    {
+      "generation_id": "5f30bbe4c7e443e4aabefba386d0f7e4",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 3,
+      "verse_vote": 3,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [
+        {
+          "bar_index": 3,
+          "bar_id": "5f30bbe4c7e443e4aabefba386d0f7e4:3",
+          "text": "You keep it honest, we keep it consistent.",
+          "vote": 1,
+          "keeper": false,
+          "reasons": [],
+          "rewrite": ""
+        }
+      ],
+      "rated_at": "2026-10-14T07:34:55.376Z",
+      "time_to_rate_ms": 11764
+    },
+    {
+      "generation_id": "65f076d5b42d449191f6afbf5692d422",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:35:01.835Z",
+      "time_to_rate_ms": 5645
+    },
+    {
+      "generation_id": "45e6e268074d41598a13f47928e795e4",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:35:09.651Z",
+      "time_to_rate_ms": 7007
+    },
+    {
+      "generation_id": "38b38aef1a59441ba90db033da6016de",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:35:23.515Z",
+      "time_to_rate_ms": 13057
+    },
+    {
+      "generation_id": "7bde72e705694c67a8f7bce3620adfac",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 2,
+      "verse_vote": 2,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:35:40.005Z",
+      "time_to_rate_ms": 15674
+    },
+    {
+      "generation_id": "87d2893747fc4539bf50961c5361eeb8",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:35:49.594Z",
+      "time_to_rate_ms": 8782
+    },
+    {
+      "generation_id": "6268d42b4f364e3696f2b326ff9eea1f",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:35:59.401Z",
+      "time_to_rate_ms": 8999
+    },
+    {
+      "generation_id": "ab6ab7a75e8a441db63126c52bc286ab",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:36:05.468Z",
+      "time_to_rate_ms": 5253
+    },
+    {
+      "generation_id": "face4e1c4d414911a6327e63f7509a44",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "artist": "Gunna",
+      "topic": "mimic",
+      "prompt_version": "verse.mimic.v1",
+      "passed_checks": true,
+      "verse_score": 1,
+      "verse_vote": 1,
+      "verse_reasons": [],
+      "note": "",
+      "bar_votes": [],
+      "rated_at": "2026-10-14T07:36:17.111Z",
+      "time_to_rate_ms": 10836
+    }
+  ]
+}
