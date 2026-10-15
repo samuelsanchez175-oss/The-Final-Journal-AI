@@ -693,7 +693,7 @@ struct DynamicIslandToolbarView: View {
                             HapticFeedbackManager.shared.selection()
                             onShowNounBank()
                         } label: {
-                            Text("Nouns")
+                            Text("Blocks")
                                 .font(.system(size: 12, weight: .bold, design: .rounded))
                                 .foregroundStyle(toolbarTint)
                                 .padding(.horizontal, 10)
@@ -702,7 +702,7 @@ struct DynamicIslandToolbarView: View {
                                     Capsule().fill(Color.primary.opacity(0.10))
                                 )
                         }
-                        .accessibilityLabel("Nouns")
+                        .accessibilityLabel("Blocks")
                         .accessibilityHint("Browse noun chips and the catalog lines that mention them")
                         .buttonStyle(.plain)
 
