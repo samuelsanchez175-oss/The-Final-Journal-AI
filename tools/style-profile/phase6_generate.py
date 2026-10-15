@@ -49,7 +49,7 @@ MODELS = ("haiku", "sonnet", "opus")
 MODEL_DEFAULT = "sonnet"
 SCHEMES = ("aabb", "abab")
 MODES = ("rewrite", "fresh", "mimic")
-MIMIC_PROMPT_VERSION = "verse.mimic.v1"
+MIMIC_PROMPT_VERSION = "verse.mimic.v2"  # v2: rhyme-first end-word plan (DeepRapper idea)
 MIMIC_BARS = (4, 8, 16)
 MIMIC_ATTEMPTS = 2
 # Soft target from Gunna's catalog: per-song mean syllables p10 ~8, median ~10, p90 ~12.5.
@@ -696,8 +696,81 @@ def _closeness_text(closeness: float) -> str:
     return "Same voice, new lines. Do not reuse his phrases. Match the measured habits only."
 
 
+def build_rhyme_bank(anchor_songs: list[dict], lex: p1.Lexicon) -> list[dict]:
+    """End-word rhyme families Gunna actually lands bars on in the anchor songs, most-linked first."""
+    family: dict[str, Counter] = defaultdict(Counter)
+    linked: Counter = Counter()
+    songs_of: dict[str, set] = defaultdict(set)
+    for song in anchor_songs:
+        info = anchor_lib.style_lines_for(song["lines"])
+        for verse in info["real_verses"] or info["style_verses"]:
+            bars = [p1.Bar(line, lex) for line in verse]
+            for i, bar in enumerate(bars):
+                word = bar.end_word
+                if not word or not bar.rime or not bar.rime[-1] or not content(word):
+                    continue
+                key = bar.rime[-1]
+                family[key][word] += 1
+                songs_of[key].add(song["title"])
+                if i and end_rhyme_kind(bars[i - 1], bar) in ("perfect", "slant"):
+                    linked[key] += 1
+    bank = [{"key": key, "words": [w for w, _ in words.most_common(8)], "uses": sum(words.values()),
+             "linked": linked[key], "songs": sorted(songs_of[key])[:3]}
+            for key, words in family.items() if len(words) >= 2]
+    bank.sort(key=lambda f: (-(2 * f["linked"] + f["uses"]), f["key"]))
+    return bank
+
+
+def make_rhyme_plan(bank: list[dict], n_bars: int, rng: random.Random, profile: dict) -> dict:
+    """Pick end words first, at the era's rhyme density: groups of 2 (or 3, at his run rate) consecutive
+    lines share a real Gunna rhyme family; every other line is free."""
+    rhyme = profile.get("rhyme") or {}
+    rate = (rhyme.get("dist1_rate") or 0.3) + (rhyme.get("alt_rate") or 0.1)
+    run3 = rhyme.get("run3_share") or 0.27
+    target = max(1, round(rate * (n_bars - 1)))
+    pool = bank[:40]
+    rng.shuffle(pool)
+    slots: list[dict | None] = [None] * n_bars
+    groups: list[dict] = []
+    used: set[str] = set()
+    links = 0
+    while links < target:
+        size = 3 if target - links >= 2 and rng.random() < run3 else 2
+        starts = [i for i in range(n_bars - size + 1)
+                  if all(slots[j] is None for j in range(max(0, i - 1), min(n_bars, i + size + 1)))]
+        fam = next((f for f in pool if f["key"] not in used and len(f["words"]) >= size), None)
+        if not starts or not fam:
+            break
+        used.add(fam["key"])
+        start = rng.choice(starts)
+        words = rng.sample(fam["words"][:6], size)
+        for k in range(size):
+            slots[start + k] = {"group": len(groups), "word": words[k]}
+        groups.append({"lines": list(range(start, start + size)), "words": words,
+                       "family": fam["words"][:6], "songs": fam["songs"]})
+        links += size - 1
+    return {"slots": slots, "groups": groups}
+
+
+def _plan_text(plan: dict) -> str:
+    rows = []
+    for i, slot in enumerate(plan["slots"], 1):
+        if slot is None:
+            rows.append(f"line {i}: free (end on any word; do not force a rhyme)")
+            continue
+        group = plan["groups"][slot["group"]]
+        partners = [str(j + 1) for j in group["lines"] if j != i - 1]
+        rows.append(f"line {i}: must end on \"{slot['word']}\" (or another word from: {', '.join(group['family'])})"
+                    f", rhymes with line {' and '.join(partners)}")
+    return ("RHYME PLAN. Gunna picks the rhyme first. Every end word below is from a rhyme family he actually "
+            "ends lines on in these songs. For each planned line, start from the end word and write the line "
+            "backwards so the sentence lands on it naturally, the way he would say it. If a planned word can't "
+            "land without sounding forced, swap it for another word from the same family, never for a weird word. "
+            "Free lines end however the sentence wants.\n" + "\n".join(rows))
+
+
 def build_mimic_prompt(artist: str, n_bars: int, exemplars: list[dict], profile: dict,
-                       closeness: float, taste: dict | None) -> str:
+                       closeness: float, taste: dict | None, plan: dict | None = None) -> str:
     facts = profile.get("prompt_facts") or []
     parts = [
         f"Write a new {n_bars}-bar verse that sounds like an unreleased outtake from these exact {artist} songs. "
@@ -725,12 +798,16 @@ def build_mimic_prompt(artist: str, n_bars: int, exemplars: list[dict], profile:
         parts.append("BARS THE USER REJECTED. Never write like these:\n" + "\n".join(
             f"- {text}  ({', '.join(REASON_TEXT.get(reason, reason) for reason in reasons) or 'rejected'})"
             for text, reasons in taste["disliked"]))
+    if plan and plan.get("groups"):
+        parts.append(_plan_text(plan))
     parts.append(
         "MOST IMPORTANT: read every bar out loud. It has to be a sentence he would actually say, "
         "and the verse follows one thread. If a rhyme forces a weird word, change the rhyme, not the sense.\n\n"
         "MUST:\n"
         "1. One line per bar. No line may be identical to a real line of his, including the examples above.\n"
-        "2. Rhyme the way the measured facts describe. Do not force AABB or ABAB. "
+        + ("2. Follow the RHYME PLAN above: planned lines rhyme with their partners, free lines don't have to. "
+           if plan and plan.get("groups") else
+           "2. Rhyme the way the measured facts describe. Do not force AABB or ABAB. ") +
         "Do not force a comma into every line. Do not force a rhyme inside the line.\n"
         "3. Ad-libs in parentheses are allowed, at about the measured rate, usually at the end of the line.\n"
         "4. For each bar write a one-line plain-English meaning. If you cannot say what the bar means, rewrite it.\n\n"
@@ -755,7 +832,8 @@ def _rhyme_links(bars: list[p1.Bar]) -> tuple[int, int]:
 
 
 def analyze_mimic(texts: list[str], corpus: Corpus, profile: dict,
-                  meanings: list[str] | None = None) -> tuple[list[dict], list[str], list[str]]:
+                  meanings: list[str] | None = None,
+                  plan: dict | None = None) -> tuple[list[dict], list[str], list[str]]:
     """Hard fails: a copied line, a bar too short to say, page-chrome, or rhyme behavior this era does not use.
 
     A 4-bar verse with no end rhyme is allowed, because this era rhymes the line before only about
@@ -813,6 +891,18 @@ def analyze_mimic(texts: list[str], corpus: Corpus, profile: dict,
     if links >= 3 and identical == links and not identical_only_ok:
         problems.append("every rhyme link repeats the same end word; this era does not rhyme that way")
 
+    for group in (plan or {}).get("groups", []):
+        lines = [i for i in group["lines"] if i < len(bars)]
+        for a, b in zip(lines, lines[1:]):
+            if end_rhyme_kind(bars[a], bars[b]) not in ("perfect", "slant"):
+                problems.append(
+                    f"lines {a + 1} and {b + 1} were planned to rhyme (family: {', '.join(group['family'])}) "
+                    f"but end on \"{bars[a].end_word}\" / \"{bars[b].end_word}\"")
+        for i, want in zip(lines, group["words"]):
+            got = bars[i].end_word
+            if got and got != want and got not in group["family"]:
+                notes.append(f"line {i + 1} ends on \"{got}\", not the planned \"{want}\"")
+
     cadence = profile.get("cadence") or {}
     low, high = cadence.get("syl_p10"), cadence.get("syl_p90")
     if low is not None and high is not None:
@@ -842,7 +932,8 @@ def _mimic_retry(prompt: str, texts: list[str], problems: list[str], notes: list
     )
 
 
-def _one_candidate(prompt: str, model: str, n_bars: int, corpus: Corpus, profile: dict) -> dict:
+def _one_candidate(prompt: str, model: str, n_bars: int, corpus: Corpus, profile: dict,
+                   plan: dict | None = None) -> dict:
     attempts = []
     best = None
     for attempt in range(1, MIMIC_ATTEMPTS + 1):
@@ -852,7 +943,7 @@ def _one_candidate(prompt: str, model: str, n_bars: int, corpus: Corpus, profile
             continue
         texts, meanings = parsed
         with _ANALYZE_LOCK:
-            rows, problems, notes = analyze_mimic(texts, corpus, profile, meanings)
+            rows, problems, notes = analyze_mimic(texts, corpus, profile, meanings, plan)
         attempts.append({"attempt": attempt, "bars": texts, "problems": problems, "notes": notes})
         if best is None or (len(problems), len(notes)) < (len(best[1]), len(best[2])):
             best = (rows, problems, notes, texts)
@@ -877,12 +968,15 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
         child_seed = master.randrange(1 << 30) if base_seed is None else base_seed + index * 17
         rng = random.Random(child_seed)
         exemplars = pick_exemplars(ctx["bank"], rng, ctx["closeness"], index)
-        prompt = build_mimic_prompt(ctx["artist"], ctx["n_bars"], exemplars, profile, ctx["closeness"], ctx["taste"])
-        jobs.append((index, prompt, exemplars))
+        plan = make_rhyme_plan(ctx["rhyme_bank"], ctx["n_bars"], rng, profile) if ctx.get("rhyme_bank") else None
+        prompt = build_mimic_prompt(ctx["artist"], ctx["n_bars"], exemplars, profile, ctx["closeness"],
+                                    ctx["taste"], plan)
+        jobs.append((index, prompt, exemplars, plan))
 
     def _run_job(job: tuple) -> tuple:
-        index, prompt, exemplars = job
-        one = _one_candidate(prompt, model, ctx["n_bars"], corpus, profile)
+        index, prompt, exemplars, plan = job
+        one = _one_candidate(prompt, model, ctx["n_bars"], corpus, profile, plan)
+        one["rhyme_plan"] = plan
         return index, one, exemplars
 
     if _CALLER == "omni" and n_candidates > 1:
@@ -918,7 +1012,8 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
         )
 
     viable = [row for row in candidates if row["passed_hard"]]
-    ranked = sorted(viable, key=lambda row: (-(row["gunna_score"] or 0), len(row["notes"]), row["candidate"]))
+    # gunna_score failed its own held-out test (AUC 0.47 vs peers), so it is recorded but never used to rank.
+    ranked = sorted(viable, key=lambda row: (len(row["notes"]), row["candidate"]))
     produced = [tuple(p1.norm_line(bar["text"]) for bar in row["bars"]) for row in candidates if row["bars"]]
     all_identical = len(produced) > 1 and len(set(produced)) == 1
     winner = ranked[0] if ranked else None
@@ -937,6 +1032,7 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
             "passed": True, "attempts": row["attempts"], "elapsed_s": elapsed,
             "gunna_score": row["gunna_score"], "score_parts": row["score_parts"],
             "exemplars": row["exemplars"], "exemplar_songs": row["exemplar_songs"],
+            "rhyme_plan": row.get("rhyme_plan"),
         }
 
     public = []
@@ -951,6 +1047,7 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
             "notes": row["notes"],
             "bars": [bar["text"] for bar in row["bars"]],
             "exemplar_songs": row["exemplar_songs"],
+            "rhyme_plan": row.get("rhyme_plan"),
         })
     return {
         "winner": pack(winner),
@@ -964,8 +1061,9 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
 
 def build_mimic_context(artist: str, n_bars: int, seed: int | None, closeness: float,
                         profile: dict, anchor_songs: list[dict], taste: dict | None = None,
-                        skip_keys: set[str] | None = None) -> dict:
+                        skip_keys: set[str] | None = None, lex: p1.Lexicon | None = None) -> dict:
     bank = anchor_verse_bank(anchor_songs, skip_keys)
+    rhyme_bank = build_rhyme_bank(anchor_songs, lex) if lex is not None else []
     if not bank:
         raise SystemExit("no 8-bar stretch in the anchor songs")
     taste = taste if taste is not None else load_taste(artist)
@@ -980,10 +1078,11 @@ def build_mimic_context(artist: str, n_bars: int, seed: int | None, closeness: f
         "closeness": closeness,
         "profile": profile,
         "bank": bank,
+        "rhyme_bank": rhyme_bank,
         "taste": taste,
         "exemplars": sample,
         "couplets": [],
-        "prompt_version": MIMIC_PROMPT_VERSION,
+        "prompt_version": MIMIC_PROMPT_VERSION if rhyme_bank else "verse.mimic.v1",
         "prompt": build_mimic_prompt(artist, n_bars, sample, profile, closeness, taste),
     }
 
@@ -1005,7 +1104,7 @@ def log_mimic_result(store: feedback_store.FeedbackStore, ctx: dict, result: dic
             "seed": ctx["seed"], "closeness": ctx["closeness"], "problems": result.get("problems"),
             "gunna_score": result.get("gunna_score"),
         },
-        model=result.get("model", ""), prompt_version=MIMIC_PROMPT_VERSION)
+        model=result.get("model", ""), prompt_version=ctx.get("prompt_version", MIMIC_PROMPT_VERSION))
 
 
 def mimic_document(ctx: dict, model: str, packed: dict, generation_ids: dict) -> dict:
@@ -1014,17 +1113,19 @@ def mimic_document(ctx: dict, model: str, packed: dict, generation_ids: dict) ->
     models = {}
     if winner["bars"]:
         models[model] = {**{key: winner[key] for key in (
-            "model", "bars", "problems", "notes", "passed", "attempts", "elapsed_s", "gunna_score", "score_parts")},
+            "model", "bars", "problems", "notes", "passed", "attempts", "elapsed_s", "gunna_score", "score_parts",
+            "rhyme_plan")},
             "generation_id": generation_ids.get("winner")}
     runner = packed["runner_up"]
     if runner and runner["bars"]:
         models[f"{model}_2"] = {**{key: runner[key] for key in (
-            "model", "bars", "problems", "notes", "passed", "attempts", "elapsed_s", "gunna_score", "score_parts")},
+            "model", "bars", "problems", "notes", "passed", "attempts", "elapsed_s", "gunna_score", "score_parts",
+            "rhyme_plan")},
             "generation_id": generation_ids.get("runner")}
     cadence = ctx["profile"].get("cadence") or {}
     return {
         "schema": SCHEMA_VERSION,
-        "prompt_version": MIMIC_PROMPT_VERSION,
+        "prompt_version": ctx.get("prompt_version", MIMIC_PROMPT_VERSION),
         "generation_id": generation_ids.get("winner"),
         "artist": ctx["artist"],
         "topic": "mimic",
@@ -1043,6 +1144,8 @@ def mimic_document(ctx: dict, model: str, packed: dict, generation_ids: dict) ->
         "elapsed_s": packed["elapsed_s"],
         "gunna_score": winner.get("gunna_score"),
         "score_parts": winner.get("score_parts") or {},
+        "rhyme_plan": winner.get("rhyme_plan"),
+        "rhyme_first": bool(ctx.get("rhyme_bank")),
         "candidates_requested": len(packed["candidates"]),
         "candidates_passed": packed["passed_n"],
         "all_identical": packed["all_identical"],
@@ -1189,6 +1292,8 @@ def main() -> int:
                     help="mimic only. generate this many verses, keep the top 2 that pass the hard rules")
     ap.add_argument("--profile", type=Path, default=OUT / "anchor_profile_gunna.json")
     ap.add_argument("--seed", type=int)
+    ap.add_argument("--no-rhyme-first", action="store_true",
+                    help="mimic only. skip the end-word rhyme plan (v1 behavior) for A/B tests")
     ap.add_argument("--sets", type=int, default=1,
                     help="mimic only. write this many sets. seeds step by 1 from --seed (or from 1)")
     ap.add_argument("--out", type=Path, default=None,
@@ -1232,9 +1337,10 @@ def _skipped_line_count(song: dict, skip: set[str]) -> int:
 def _write_one_mimic(args, profile: dict, matched: list[dict], corpus: Corpus,
                      skip: set[str], seed: int | None, out_path: Path, dump_stdout: bool) -> dict:
     ctx = build_mimic_context(
-        args.artist, args.bars, seed, args.closeness, profile, matched, skip_keys=skip)
+        args.artist, args.bars, seed, args.closeness, profile, matched, skip_keys=skip,
+        lex=None if args.no_rhyme_first else corpus.lex)
     print(
-        f"SET_START seed {seed}  {len(ctx['bank'])} stretches",
+        f"SET_START seed {seed}  {len(ctx['bank'])} stretches, {len(ctx['rhyme_bank'])} rhyme families",
         file=sys.stderr, flush=True,
     )
     if args.show_prompt:
