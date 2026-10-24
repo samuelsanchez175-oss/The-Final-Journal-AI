@@ -101,7 +101,8 @@ class FeedbackStore:
 
     def vote(self, bar_id: str, vote: int, target_kind: str = "bar", target_ref: str | None = None,
              reason: str | None = None, rater: str | None = None, ts: float | None = None,
-             reasons: list[str] | str | None = None) -> None:
+             reasons: list[str] | str | None = None, artist: str | None = None,
+             topic: str | None = None) -> None:
         if reason and reason not in REASONS:
             raise ValueError(f"reason must be one of {sorted(REASONS)}")
         reasons_str = json.dumps(reasons) if isinstance(reasons, list) else (str(reasons) if reasons else None)
@@ -110,11 +111,11 @@ class FeedbackStore:
         row = self.db.execute("""SELECT b.generation_id, b.topic, g.artist FROM generation_bars b
                                  JOIN generations g ON g.id = b.generation_id WHERE b.id = ?""", (bar_id,)).fetchone()
         if row:
-            gid, topic, artist = row
+            gid, t_topic, t_artist = row
+            topic = topic or t_topic
+            artist = artist or t_artist
         else:
             gid = bar_id.split(":")[0] if ":" in bar_id else bar_id
-            topic = None
-            artist = None
 
         ref = target_ref if target_kind != "bar" else bar_id
         blame = None

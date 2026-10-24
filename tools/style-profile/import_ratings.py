@@ -152,9 +152,18 @@ def import_ratings(
             file_had_eligible_ratings = True
             rater = str(row.get("rater") or file_rater).strip()
             ts = parse_iso_timestamp(rated_at_str)
+            artist = str(row.get("artist") or "").strip()
+            topic = str(row.get("topic") or "").strip()
+            model = str(row.get("model") or "").strip()
+            prompt_version = str(row.get("prompt_version") or "").strip()
 
-            # 1. Preserve rating card payload
+            # 1. Preserve rating card payload and generation record
             if not dry_run:
+                store.db.execute(
+                    "INSERT OR IGNORE INTO generations (id, created_at, artist, request_json, model, prompt_version) "
+                    "VALUES (?, ?, ?, ?, ?, ?)",
+                    (gid, ts, artist, "{}", model, prompt_version),
+                )
                 verse_reasons = [code for code in row.get("verse_reasons") or [] if code in REASONS]
                 clean = dict(row)
                 clean["verse_reasons"] = verse_reasons
@@ -195,6 +204,8 @@ def import_ratings(
                             rater=rater,
                             ts=ts,
                             reasons=verse_reasons_clean,
+                            artist=artist,
+                            topic=topic,
                         )
                     verse_votes_added += 1
 
@@ -205,6 +216,15 @@ def import_ratings(
                     continue
 
                 bar_id = bar.get("bar_id") or f"{gid}:{bar.get('bar_index')}"
+                bar_idx = bar.get("bar_index") if bar.get("bar_index") is not None else 0
+                bar_text = bar.get("text") or ""
+                if not dry_run and bar_text:
+                    store.db.execute(
+                        "INSERT OR IGNORE INTO generation_bars (id, generation_id, bar_index, text, topic) "
+                        "VALUES (?, ?, ?, ?, ?)",
+                        (bar_id, gid, bar_idx, bar_text, topic),
+                    )
+
                 bar_reasons_clean = [code for code in bar.get("reasons") or [] if code in REASONS]
 
                 # Dedupe check: (bar_id, rater, timestamp, vote)
@@ -227,6 +247,8 @@ def import_ratings(
                             rater=rater,
                             ts=ts,
                             reasons=bar_reasons_clean,
+                            artist=artist,
+                            topic=topic,
                         )
                     bar_votes_added += 1
 

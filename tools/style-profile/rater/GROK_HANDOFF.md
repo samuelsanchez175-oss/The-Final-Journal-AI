@@ -14,8 +14,8 @@ bottom of this file (newest last). Nothing else needs to be copied over.
 4. Answer anything under **Questions for Claude** and give Samuel a reply he can paste back to Grok.
 5. Pipeline side still to build (update this list as items land):
    - [x] `import_ratings.py`: export JSON → `feedback_store.vote()` rows (bar votes + verse votes)
-   - [ ] keeper / 👍 bars → few-shot examples in `phase6_generate.build_prompt`
-   - [ ] 👎 reasons → "avoid" notes in the prompt
+   - [x] keeper / 👍 bars → few-shot examples in `phase6_generate.build_prompt`
+   - [x] 👎 reasons → "avoid" notes in the prompt
    - [ ] batch generator so there are enough verses to rate
 
 ## Fixed facts (do not change without updating both sides)
@@ -75,3 +75,22 @@ files and a HANDOFF ENTRY.
 - **Unit Tests:** `tools/style-profile/test_import_ratings.py` with 7 comprehensive tests passing cleanly in 0.049s.
 - **Live Ingestion Run:** Ingested 4 real export files into `tools/style-profile/out/feedback.sqlite` (90 bar votes, 72 verse votes, 142 duplicates skipped). Subsequent re-run confirmed 0 new rows and 304 duplicates skipped. Verified `feedback_store.weight(kind="bar", ref=...)` returns 0.6 for thumbs-up and 0.4 for thumbs-down.
 - **Next Task:** Task B — Wire ratings into generator prompt (`tools/style-profile/phase6_generate.py`).
+
+### HANDOFF ENTRY: Task B Completed — Wire Ratings into Prompt (Taste Blocks) (2026-10-24, Antigravity)
+
+**Status:** Task B is complete and fully verified.
+- **Implemented:** `tools/style-profile/phase6_generate.py` updated to wire ratings and feedback reasons into prompt generation:
+  - `build_taste_prompt_blocks(artist, store, k_bars, k_reasons, taste_on)`: queries `feedback_store` for highest-weighted positive bars (`weight() > 0.5`) and maps top negative reason codes to human explanations (`REASON_AVOID_TEXT`).
+  - Added `WRITE LIKE THIS (keeper bars from this artist, rated by the writer):` block with top-K positive keeper bars.
+  - Added `AVOID (these problems hit before):` block mapping reason codes (e.g., `bad_rhyme` → `"weak or missing end rhyme"`, `no_sense` → `"lines that make no sense or have broken logic"`).
+  - Common code path: both `build_prompt` and `build_mimic_prompt` use `build_taste_prompt_blocks` identically.
+  - CLI flags: `--taste on|off` (default `on`), `--taste-k` (default `6`).
+  - Dominance guard: if fewer than 2 distinct keeper bars exist in store, falls back to existing exemplar logic.
+  - PII scrubbing: `scrub_bar_pii(text)` strips emails, phone numbers, URLs, and `@mentions` prior to prompt insertion.
+  - Backwards compatibility: `--taste off` produces a byte-identical prompt to the pre-change baseline (verified via snapshot test).
+- **Unit Tests:** `tools/style-profile/test_taste_blocks.py` contains 6 comprehensive tests covering `build_prompt`, `build_mimic_prompt`, snapshot byte-identity with `--taste off`, dominance fallback, PII scrubbing, and `--taste-k` limits. All pass in 0.014s.
+- **Full Suite Verification:**
+  - `python3 -m unittest discover tools/style-profile/ -p "test_*.py"`: 23/23 tests pass.
+  - `python3 tools/style-profile/phase6_generate.py self-check`: passes (`phase6 mimic self-check ok`).
+- **Live Output Check:** Verified against live `tools/style-profile/out/feedback.sqlite` with Gunna ratings (6 high-weight keeper bars and 4 avoid reasons formatted and rendered as expected).
+- **Next Task:** Task C — Replace `gunna_score.py` with a learned classifier (`tools/style-profile/style_scorer.py`).

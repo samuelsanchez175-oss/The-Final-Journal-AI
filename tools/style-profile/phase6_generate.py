@@ -291,12 +291,180 @@ def pick_topic(chains: dict, corpus: Corpus, rng: random.Random) -> str:
     return rng.choices(list(pool), weights=list(pool.values()))[0]
 
 
+# ---------------------------------------------------------------- taste blocks
+
+REASON_AVOID_TEXT = {
+    "bad_rhyme": "weak or missing end rhyme",
+    "no_sense": "lines that make no sense or have broken logic",
+    "off_flow": "off-flow or awkward syllable rhythm",
+    "off_topic": "drifting away from the topic",
+    "too_copied": "lines copied too closely from source lyrics",
+    "cringe": "forced clichés or unnatural phrasing",
+}
+REASONS = set(REASON_AVOID_TEXT.keys())
+
+
+def scrub_bar_pii(text: str) -> str:
+    """Removes emails, phone numbers, URLs, and social tags from a bar."""
+    text = re.sub(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+", "", text)
+    text = re.sub(r"\b(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b", "", text)
+    text = re.sub(r"https?://\S+|www\.\S+", "", text)
+    text = re.sub(r"@\w+", "", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def build_taste_prompt_blocks(
+    artist: str,
+    store: feedback_store.FeedbackStore | None = None,
+    k_bars: int = 6,
+    k_reasons: int = 4,
+    taste_on: bool = True,
+    fallback_taste: dict | None = None,
+) -> tuple[str | None, str | None]:
+    """Queries feedback_store for top keeper bars and top avoid reason codes for an artist.
+
+    Returns (keeper_block, avoid_block).
+    """
+    if not taste_on:
+        return None, None
+
+    if store is None:
+        if fallback_taste is not None:
+            return None, None
+        db_path = OUT / "feedback.sqlite"
+        if not db_path.exists() and (OUT / "feedback.db").exists():
+            db_path = OUT / "feedback.db"
+        if not db_path.exists():
+            return None, None
+        try:
+            store = feedback_store.FeedbackStore(str(db_path))
+        except Exception:
+            return None, None
+
+    # 1. Top K bars with highest positive weight()
+    cur = store.db.cursor()
+    cur.execute(
+        """
+        SELECT DISTINCT v.target_ref
+        FROM votes v
+        WHERE v.target_kind = 'bar' AND v.vote = 1 AND (v.artist = ? OR ? = '')
+        """,
+        (artist, artist),
+    )
+    bar_refs = [row[0] for row in cur.fetchall()]
+
+    weighted_bars = []
+    seen_texts = set()
+
+    for bid in bar_refs:
+        w = store.weight("bar", bid, artist=artist)
+        if w <= 0.5:
+            continue
+
+        # Look up bar text from generation_bars
+        cur.execute("SELECT text FROM generation_bars WHERE id = ?", (bid,))
+        row = cur.fetchone()
+        raw_text = row[0] if (row and row[0]) else ""
+
+        # Fallback to rating_cards payload if missing from generation_bars
+        if not raw_text:
+            gid = bid.split(":")[0] if ":" in bid else bid
+            cur.execute("SELECT payload FROM rating_cards WHERE generation_id = ?", (gid,))
+            p_row = cur.fetchone()
+            if p_row and p_row[0]:
+                try:
+                    payload = json.loads(p_row[0])
+                    for bv in payload.get("bar_votes", []):
+                        if (bv.get("bar_id") == bid or f"{gid}:{bv.get('bar_index')}" == bid) and bv.get("text"):
+                            raw_text = bv["text"]
+                            break
+                except Exception:
+                    pass
+
+        if not raw_text:
+            continue
+
+        clean_t = scrub_bar_pii(clean_text(raw_text))
+        if not clean_t:
+            continue
+
+        norm_key = re.sub(r"[^a-z0-9]", "", clean_t.lower())
+        if norm_key in seen_texts:
+            continue
+        seen_texts.add(norm_key)
+
+        weighted_bars.append((w, clean_t))
+
+    weighted_bars.sort(key=lambda item: (-item[0], item[1]))
+
+    keeper_block = None
+    # Pitfall check: Don't let one super-upvoted bar dominate — if top-K is <2, fall back
+    if len(weighted_bars) >= 2:
+        top_k_bars = [bar_text for _, bar_text in weighted_bars[:k_bars]]
+        keeper_block = (
+            "WRITE LIKE THIS (keeper bars from this artist, rated by the writer):\n"
+            + "\n".join(f"- {bar}" for bar in top_k_bars)
+        )
+
+    # 2. Top K reason codes among downvoted bars
+    cur.execute(
+        """
+        SELECT reasons, reason FROM votes
+        WHERE target_kind = 'bar' AND vote = -1 AND (artist = ? OR ? = '')
+        """,
+        (artist, artist),
+    )
+    reasons_counter = Counter()
+    for r_json, r_single in cur.fetchall():
+        if r_json:
+            try:
+                for c in json.loads(r_json):
+                    if c in REASONS:
+                        reasons_counter[c] += 1
+            except Exception:
+                pass
+        elif r_single and r_single in REASONS:
+            reasons_counter[r_single] += 1
+
+    # If bar votes didn't carry explicit reason tags, check verse-level downvote reasons for this artist
+    if not reasons_counter:
+        cur.execute(
+            """
+            SELECT reasons, reason FROM votes
+            WHERE target_kind = 'verse' AND (vote = -1 OR vote < 5) AND (artist = ? OR ? = '')
+            """,
+            (artist, artist),
+        )
+        for r_json, r_single in cur.fetchall():
+            if r_json:
+                try:
+                    for c in json.loads(r_json):
+                        if c in REASONS:
+                            reasons_counter[c] += 1
+                except Exception:
+                    pass
+            elif r_single and r_single in REASONS:
+                reasons_counter[r_single] += 1
+
+    avoid_block = None
+    if reasons_counter:
+        top_reasons = [code for code, _ in reasons_counter.most_common(k_reasons)]
+        mapped_reasons = [REASON_AVOID_TEXT.get(code, code.replace("_", " ")) for code in top_reasons]
+        avoid_block = (
+            "AVOID (these problems hit before):\n"
+            + "\n".join(f"- {exp}" for exp in mapped_reasons)
+        )
+
+    return keeper_block, avoid_block
+
+
 # ---------------------------------------------------------------- prompt
 
 
 def build_prompt(artist: str, n_bars: int, topic: str, scheme: str, exemplars: list[dict],
                  grades: dict, rollup: dict, mode: str = "rewrite", couplets: list[dict] | None = None,
-                 taste: dict | None = None) -> str:
+                 taste: dict | None = None, taste_on: bool = True, taste_k: int = 6,
+                 store: feedback_store.FeedbackStore | None = None) -> str:
     def block(p: dict) -> str:
         lines = (clean_text(b) for b in p["bars"])
         return f'"{p["song"]}"\n' + "\n".join(l for l in lines if l)
@@ -326,10 +494,19 @@ def build_prompt(artist: str, n_bars: int, topic: str, scheme: str, exemplars: l
         parts.append(f"REAL {artist.upper()} BARS (how he talks):\n\n" + "\n\n".join(block(p) for p in voice))
     if facts:
         parts.append(f"MEASURED ON {artist.upper()}'S CATALOG:\n" + "\n".join(f"- {f}" for f in facts))
-    if taste and taste.get("liked"):
+
+    keeper_block, avoid_block = build_taste_prompt_blocks(
+        artist, store=store, k_bars=taste_k, k_reasons=4, taste_on=taste_on, fallback_taste=taste,
+    )
+    if keeper_block:
+        parts.append(keeper_block)
+    elif taste and taste.get("liked"):
         parts.append("BARS THE USER LOVED. This is the target: plain speech, real places and people, "
                      "a small story, nothing bent to fit a rhyme.\n" + "\n".join(f"+ {t}" for t in taste["liked"]))
-    if taste and taste.get("disliked"):
+
+    if avoid_block:
+        parts.append(avoid_block)
+    elif taste and taste.get("disliked"):
         parts.append("BARS THE USER REJECTED. Never write like these:\n" + "\n".join(
             f"- {t}  ({', '.join(REASON_TEXT.get(r, r) for r in rs) or 'rejected'})" for t, rs in taste["disliked"]))
 
@@ -914,7 +1091,9 @@ def _plan_text(plan: dict) -> str:
 
 
 def build_mimic_prompt(artist: str, n_bars: int, exemplars: list[dict], profile: dict,
-                       closeness: float, taste: dict | None, plan: dict | None = None) -> str:
+                       closeness: float, taste: dict | None = None, plan: dict | None = None,
+                       taste_on: bool = True, taste_k: int = 6,
+                       store: feedback_store.FeedbackStore | None = None) -> str:
     facts = list(profile.get("prompt_facts") or [])
     if plan and plan.get("inner"):
         facts = [
@@ -941,12 +1120,21 @@ def build_mimic_prompt(artist: str, n_bars: int, exemplars: list[dict], profile:
             "Match the flow across the whole verse, not one couplet. Parentheses are his ad-libs; leave that habit.\n\n"
             + "\n\n".join(blocks)
         )
-    if taste and taste.get("liked"):
+
+    keeper_block, avoid_block = build_taste_prompt_blocks(
+        artist, store=store, k_bars=taste_k, k_reasons=4, taste_on=taste_on, fallback_taste=taste,
+    )
+    if keeper_block:
+        parts.append(keeper_block)
+    elif taste and taste.get("liked"):
         keepers = set(taste.get("keepers") or [])
         lines = [f"+ {text}" + ("  KEEPER" if text in keepers else "") for text in taste["liked"]]
         parts.append("BARS THE USER LOVED. This is the target: plain speech, a real place or object, "
                      "a line that makes sense out loud.\n" + "\n".join(lines))
-    if taste and taste.get("disliked"):
+
+    if avoid_block:
+        parts.append(avoid_block)
+    elif taste and taste.get("disliked"):
         parts.append("BARS THE USER REJECTED. Never write like these:\n" + "\n".join(
             f"- {text}  ({', '.join(REASON_TEXT.get(reason, reason) for reason in reasons) or 'rejected'})"
             for text, reasons in taste["disliked"]))
@@ -1194,8 +1382,13 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
             plan["wordplay_examples"] = rng.sample(ctx["wordplay_examples"], min(6, len(ctx["wordplay_examples"])))
         with _ANALYZE_LOCK:
             plan["avoid"] = [w for w, c in _SUBJECT_USE.most_common(14) if c >= 2]
-        prompt = build_mimic_prompt(ctx["artist"], ctx["n_bars"], exemplars, profile, ctx["closeness"],
-                                    ctx["taste"], plan)
+        prompt = build_mimic_prompt(
+            ctx["artist"], ctx["n_bars"], exemplars, profile, ctx["closeness"],
+            ctx.get("taste"), plan,
+            taste_on=ctx.get("taste_on", True),
+            taste_k=ctx.get("taste_k", 6),
+            store=ctx.get("store"),
+        )
         jobs.append((index, prompt, exemplars, plan))
 
     def _run_job(job: tuple) -> tuple:
@@ -1340,7 +1533,8 @@ def _preview_plan(bank, n_bars, seed, profile, level, inner_examples, wordplay_e
 def build_mimic_context(artist: str, n_bars: int, seed: int | None, closeness: float,
                         profile: dict, anchor_songs: list[dict], taste: dict | None = None,
                         skip_keys: set[str] | None = None, lex: p1.Lexicon | None = None,
-                        level: str = "rhyme") -> dict:
+                        level: str = "rhyme", taste_on: bool = True, taste_k: int = 6,
+                        store: feedback_store.FeedbackStore | None = None) -> dict:
     bank = anchor_verse_bank(anchor_songs, skip_keys)
     rhyme_bank = build_rhyme_bank(anchor_songs, lex)
     inner_examples = anchor_inner_examples(anchor_songs, lex) if level in ("inner", "double") else []
@@ -1364,12 +1558,16 @@ def build_mimic_context(artist: str, n_bars: int, seed: int | None, closeness: f
         "inner_examples": inner_examples,
         "wordplay_examples": wordplay_examples,
         "taste": taste,
+        "taste_on": taste_on,
+        "taste_k": taste_k,
+        "store": store,
         "exemplars": sample,
         "couplets": [],
         "prompt_version": LEVEL_VERSION[level],
         "prompt": build_mimic_prompt(artist, n_bars, sample, profile, closeness, taste,
                                      _preview_plan(rhyme_bank, n_bars, seed, profile, level,
-                                                   inner_examples, wordplay_examples)),
+                                                   inner_examples, wordplay_examples),
+                                     taste_on=taste_on, taste_k=taste_k, store=store),
     }
 
 
@@ -1448,7 +1646,9 @@ def mimic_document(ctx: dict, model: str, packed: dict, generation_ids: dict) ->
 
 def build_context(artist: str, n_bars: int, topic: str | None, scheme: str, seed: int | None,
                   corpus: Corpus, mode: str = "rewrite", closeness: float = 0.7,
-                  profile: dict | None = None, n_candidates: int = 8) -> dict:
+                  profile: dict | None = None, n_candidates: int = 8,
+                  taste_on: bool = True, taste_k: int = 6,
+                  store: feedback_store.FeedbackStore | None = None) -> dict:
     if mode == "mimic":
         raise SystemExit("mimic mode uses build_mimic_context(), not build_context()")
     rng = random.Random(seed)
@@ -1466,7 +1666,9 @@ def build_context(artist: str, n_bars: int, topic: str | None, scheme: str, seed
     return {
         "artist": artist, "n_bars": n_bars, "topic": topic, "scheme": scheme, "seed": seed, "mode": mode,
         "exemplars": exemplars, "couplets": couplets, "taste": taste,
-        "prompt": build_prompt(artist, n_bars, topic, scheme, exemplars, grades, rollup, mode, couplets, taste),
+        "taste_on": taste_on, "taste_k": taste_k, "store": store,
+        "prompt": build_prompt(artist, n_bars, topic, scheme, exemplars, grades, rollup, mode, couplets, taste,
+                               taste_on=taste_on, taste_k=taste_k, store=store),
     }
 
 
@@ -1631,7 +1833,11 @@ def main() -> int:
                     help="mimic only. write this many sets. seeds step by 1 from --seed (or from 1)")
     ap.add_argument("--out", type=Path, default=None,
                     help="mimic only. one set writes this file. several sets write mimic_01.json inside this directory")
-    ap.add_argument("--db", type=Path, default=OUT / "feedback.db")
+    ap.add_argument("--taste", choices=("on", "off"), default="on",
+                    help="feed keeper bars and avoid notes from feedback_store (default: on)")
+    ap.add_argument("--taste-k", type=int, default=6,
+                    help="number of keeper bars to include in prompt (default: 6)")
+    ap.add_argument("--db", type=Path, default=OUT / "feedback.sqlite" if (OUT / "feedback.sqlite").exists() else OUT / "feedback.db")
     ap.add_argument("--show-prompt", action="store_true", help="print the prompt to stderr")
     args = ap.parse_args()
 
@@ -1644,11 +1850,13 @@ def main() -> int:
 
     lex = p1.Lexicon(p1.load_cmudict(p1.DEFAULT_CMU))
     corpus = Corpus(args.artist, lex)
-    ctx = build_context(args.artist, args.bars, args.topic, args.scheme, args.seed, corpus, args.mode)
+    store = feedback_store.FeedbackStore(str(args.db))
+    ctx = build_context(args.artist, args.bars, args.topic, args.scheme, args.seed, corpus, args.mode,
+                        taste_on=(args.taste == "on"), taste_k=args.taste_k, store=store)
     if args.show_prompt:
         print(ctx["prompt"], file=sys.stderr)
     result = run_model(ctx, args.model, corpus)
-    gid = log_result(feedback_store.FeedbackStore(str(args.db)), ctx, result, load_blocks_catalog())
+    gid = log_result(store, ctx, result, load_blocks_catalog())
     print(json.dumps({"schema": SCHEMA_VERSION, "generation_id": gid, "artist": args.artist,
                       "topic": ctx["topic"], "scheme": ctx["scheme"], **result}, ensure_ascii=False, indent=1))
     return 0
@@ -1668,10 +1876,14 @@ def _skipped_line_count(song: dict, skip: set[str]) -> int:
 
 
 def _write_one_mimic(args, profile: dict, matched: list[dict], corpus: Corpus,
-                     skip: set[str], seed: int | None, out_path: Path, dump_stdout: bool) -> dict:
+                     skip: set[str], seed: int | None, out_path: Path, dump_stdout: bool,
+                     store: feedback_store.FeedbackStore | None = None) -> dict:
+    if store is None:
+        store = feedback_store.FeedbackStore(str(args.db))
     ctx = build_mimic_context(
         args.artist, args.bars, seed, args.closeness, profile, matched, skip_keys=skip,
-        lex=corpus.lex, level=args.level)
+        lex=corpus.lex, level=args.level,
+        taste_on=(args.taste == "on"), taste_k=args.taste_k, store=store)
     print(
         f"SET_START seed {seed} level {args.level}  {len(ctx['bank'])} stretches, "
         f"{len(ctx['rhyme_bank'])} rhyme families, {len(ctx['inner_examples'])} inner examples, "
@@ -1688,7 +1900,6 @@ def _write_one_mimic(args, profile: dict, matched: list[dict], corpus: Corpus,
         raise SystemExit(
             f"BATCH_FAILED seed {seed}: model returned no verses. not writing {out_path.name}"
         )
-    store = feedback_store.FeedbackStore(str(args.db))
     ids = {
         "winner": log_mimic_result(store, ctx, packed["winner"]),
         "runner": log_mimic_result(store, ctx, packed["runner_up"]) if packed["runner_up"] else None,
@@ -1762,9 +1973,10 @@ def _main_mimic(args) -> int:
             )
     lex = p1.Lexicon(p1.load_cmudict(p1.DEFAULT_CMU))
     corpus = Corpus(args.artist, lex, songs=anchor_lib.copy_songs(gunna))
+    store = feedback_store.FeedbackStore(str(args.db))
     if args.sets == 1:
         out_path = args.out or (OUT / "mimic_comparison.json")
-        _write_one_mimic(args, profile, matched, corpus, skip, args.seed, out_path, True)
+        _write_one_mimic(args, profile, matched, corpus, skip, args.seed, out_path, True, store=store)
         print(f"wrote {out_path}  (drop this on the rating page; top 2 are under models)", file=sys.stderr, flush=True)
         return 0
     dest = args.out or (OUT / "rater-batch")
@@ -1777,7 +1989,7 @@ def _main_mimic(args) -> int:
         seed = base + index
         out_path = dest / f"mimic_{seed:02d}.json"
         manifest.append(_write_one_mimic(
-            args, profile, matched, corpus, skip, seed, out_path, False))
+            args, profile, matched, corpus, skip, seed, out_path, False, store=store))
     manifest_path = dest / "mimic_manifest.json"
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"BATCH_DONE {len(manifest)} sets, manifest {manifest_path}", file=sys.stderr, flush=True)
