@@ -47,6 +47,7 @@ from catalog_retriever import (
 )
 from lyriclib import end_rime, normalize, tempo_line_syllables, tokenize
 from telemetry import check_punch_demoted, write_verse_telemetry
+from prompt_cache import canonical_cache_params, compute_cache_key, get_cached_verse, save_cached_verse
 
 try:
     from style_scorer import score_verse
@@ -266,6 +267,7 @@ def generate_v4(
     taste_k: int = 6,
     candidates: int = 1,
     generation_id: str = "",
+    use_cache: bool = True,
     call_fn: Optional[Callable[[str, str], str]] = None,
 ) -> dict:
     """Master entry point for Frontier V4 Two-Pass Generation with Grid Verification & Style Scoring."""
@@ -273,10 +275,36 @@ def generate_v4(
     generation_id = generation_id or f"v4_{int(time.time())}_{uuid.uuid4().hex[:8]}"
     clock_bpm, halftime_bpm, tempo_label = polish.normalize_trap_tempo(bpm)
     effective_syl = target_syl if target_syl else max(15, tempo_line_syllables(clock_bpm) + 2)
+    user_albums = chosen_albums or DEFAULT_CHOSEN_ALBUMS.get(voice, [])
+
+    # Task L: Prompt & Params Cache Lookup
+    cache_params = canonical_cache_params(
+        engine="v4",
+        voice=voice,
+        blend=blend,
+        mix=mix,
+        bpm=clock_bpm,
+        scale=scale,
+        section_mode=section_mode,
+        chosen_albums=user_albums,
+        seed_line=seed_line,
+        scratchpad=scratchpad_bars,
+        topic_hint=topic_hint,
+        remix_ratio=remix_ratio,
+        bars_count=bars_count,
+        target_syl=effective_syl,
+        taste_on=taste_on,
+        taste_k=taste_k,
+    )
+    cache_key = compute_cache_key(cache_params)
+
+    if use_cache:
+        cached_result = get_cached_verse(cache_key)
+        if cached_result is not None:
+            return cached_result
+
     cmu = polish._get_cmu()
     dna = polish._get_voice_dna()
-
-    user_albums = chosen_albums or DEFAULT_CHOSEN_ALBUMS.get(voice, [])
 
     # Pass 0: Reasoning Planner Backbone
     plan = planner.plan_v4(
@@ -517,10 +545,12 @@ def generate_v4(
 
     elapsed = round(time.time() - t0, 2)
 
-    return {
+    result_dict = {
         "ok": True,
         "version": "v4",
         "generation_id": generation_id,
+        "cached": False,
+        "cache_key": cache_key,
         "provider": f"frontier_v4 ({best_take['draft_model']} -> {best_take['polish_model']})",
         "voice": voice,
         "blend": blend,
@@ -536,6 +566,7 @@ def generate_v4(
         "grid_gate": best_take["grid_gate"],
         "grid_pass_rate": best_take["grid_pass_rate"],
         "grid_retries": best_take["grid_retries"],
+        "grid_retries_total": best_take["grid_retries"],
         "style_score": best_take["style_score"],
         "candidates_count": num_takes,
         "candidates": take_candidates,
@@ -546,6 +577,21 @@ def generate_v4(
         "elapsed_sec": elapsed,
         "raw_text": "\n".join(final_bars),
     }
+
+    # Task L: Save generated verse to prompt & params cache
+    if use_cache:
+        try:
+            save_cached_verse(
+                cache_key=cache_key,
+                params=cache_params,
+                result=result_dict,
+                retrieved_catalog_bars=retrieved_catalog_bars,
+                plan=plan,
+            )
+        except Exception as exc:
+            print(f"[Frontier V4] Failed to save prompt cache: {exc}", file=sys.stderr)
+
+    return result_dict
 
 
 def main():
@@ -561,6 +607,7 @@ def main():
     parser.add_argument("--candidates", type=int, default=1, help="Number of candidate takes to generate and rank")
     parser.add_argument("--taste", choices=["on", "off"], default="on", help="Wire rater feedback taste blocks")
     parser.add_argument("--taste-k", type=int, default=6, help="Top K keeper bars")
+    parser.add_argument("--no-cache", dest="use_cache", action="store_false", default=True, help="Bypass prompt and params cache")
     args = parser.parse_args()
 
     res = generate_v4(
@@ -575,6 +622,7 @@ def main():
         candidates=args.candidates,
         taste_on=(args.taste == "on"),
         taste_k=args.taste_k,
+        use_cache=args.use_cache,
     )
 
     print(f"\n[Penwork Studios Frontier V4] {res['voice']} ({res['blend']} {res['mix']}%) @ {res['bpm']} BPM")

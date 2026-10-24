@@ -267,3 +267,24 @@ files and a HANDOFF ENTRY.
 - **Full V4 Suite Status:**
   - 32/32 tests passing across all 6 test suites (`test_grid_gate.py`, `test_taste_blocks_v4.py`, `test_v4_planner.py`, `test_frontier_v4.py`, `test_catalog_retriever_v2.py`, `test_v4_telemetry.py`).
 - **Next Frontier v4 Tasks:** Task L (Prompt + params cache: `tools/lyric-llm/out/cache/<hash>.json`) -> Task M (Spotify popularity ingest: `tools/lyric-llm/spotify_popularity.py` reading `.env.spotify`).
+
+### HANDOFF ENTRY: Frontier v4 Task L Completed — Prompt & Params Cache (2026-10-24, Antigravity)
+
+**Status:** Task L (Prompt & Params Cache) is live and verified across 38/38 tests in the Frontier v4 suite.
+- **Component Changes (`tools/lyric-llm/prompt_cache.py`):**
+  - Implemented deterministic canonical hashing over inputs:
+    `(engine, voice, blend, mix, bpm, scale, section_mode, chosen_albums, seed_line, scratchpad, topic_hint, remix_ratio, bars_count, target_syl, taste_on, taste_k)`.
+  - Normalizes casing, sorts album lists, rounds BPM to 1 decimal place, and outputs 64-character SHA-256 hex digest keys.
+  - Implemented `get_cached_verse()`, `save_cached_verse()`, `clear_cache()`, and `get_cache_stats()` with atomic temp-file replace writing to `tools/lyric-llm/out/cache/<hash>.json`.
+  - Caches both retrieved catalog blocks and complete candidate verses, tagging hits with `"cached": True` and `"cache_key": <hash>`.
+- **Pipeline Integration (`frontier_v4.py`, `polish.py`, `desk.py`):**
+  - Added `use_cache` parameter (default `True`) and `--no-cache` CLI flag.
+  - Cache hits return instantly with zero LLM API calls.
+  - Differentiated pipeline engines (`engine="v4"` vs `engine="v3"`) to prevent cross-version key collision while providing backward-compatible `grid_retries` / `grid_retries_total` keys.
+  - Added `/api/cache` and `/api/cache/clear` endpoints to `desk.py` and included `cache_stats` in `/api/state`.
+- **Unit Tests (`tools/lyric-llm/test_prompt_cache.py`):**
+  - 6/6 tests passed in 1.99s covering canonical parameter determinism, SHA-256 uniqueness, atomic save/read roundtrip, expiration, stats/clear, and `generate_v4` cache hits + `--no-cache` bypass.
+- **Full V4 Suite Status:**
+  - **38/38 tests passing** across all 7 test suites:
+    `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6).
+- **Next Frontier v4 Tasks:** Task M (Spotify popularity ingest: `tools/lyric-llm/spotify_popularity.py` reading `.env.spotify`).

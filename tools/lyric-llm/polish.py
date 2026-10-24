@@ -978,15 +978,13 @@ def generate_frontier_bars_v2(
     taste_store: Any = None,
     plan: dict = None,
     generation_id: str = "",
+    use_cache: bool = True,
 ) -> dict:
     """Full V2/V3 generation pipeline: executes Retrieve & Remix over authentic catalog lines with dynamic edit cap."""
     t0 = time.time()
     generation_id = generation_id or f"v3_{int(time.time())}_{uuid.uuid4().hex[:8]}"
     clock_bpm, halftime_bpm, tempo_label = normalize_trap_tempo(bpm)
     effective_syl = target_syl if target_syl else max(15, tempo_line_syllables(clock_bpm) + 2)
-    dna = _get_voice_dna()
-    cmu = _get_cmu()
-
     from catalog_retriever import (
         DEFAULT_CHOSEN_ALBUMS,
         calculate_edit_distance_ratio,
@@ -996,9 +994,38 @@ def generate_frontier_bars_v2(
         retrieve_matching_catalog_lines,
         verify_remix_compliance,
     )
-
     user_albums = chosen_albums or DEFAULT_CHOSEN_ALBUMS.get(voice, [])
     blend_albums = DEFAULT_CHOSEN_ALBUMS.get(blend, []) if blend else []
+
+    # Task L: Prompt & Params Cache Lookup
+    from prompt_cache import canonical_cache_params, compute_cache_key, get_cached_verse, save_cached_verse
+    cache_params = canonical_cache_params(
+        engine="v3",
+        voice=voice,
+        blend=blend,
+        mix=mix,
+        bpm=clock_bpm,
+        scale=scale,
+        section_mode=section_mode,
+        chosen_albums=user_albums,
+        seed_line=seed_line,
+        scratchpad=scratchpad_bars,
+        topic_hint=topic_hint,
+        remix_ratio=remix_ratio,
+        bars_count=bars_count,
+        target_syl=effective_syl,
+        taste_on=taste_on,
+        taste_k=taste_k,
+    )
+    cache_key = compute_cache_key(cache_params)
+
+    if use_cache:
+        cached_result = get_cached_verse(cache_key)
+        if cached_result is not None:
+            return cached_result
+
+    dna = _get_voice_dna()
+    cmu = _get_cmu()
 
     # Task J: Frontier Reasoning Planner Backbone
     if plan is None:
@@ -1634,10 +1661,12 @@ def generate_frontier_bars_v2(
 
     bag_metrics = get_artist_bag_metrics(voice=voice, scale=scale, bpm=clock_bpm)
 
-    return {
+    res = {
         "ok": True,
         "version": "v3",
         "generation_id": generation_id,
+        "cached": False,
+        "cache_key": cache_key,
         "provider": provider,
         "voice": voice,
         "blend": blend,
@@ -1663,6 +1692,7 @@ def generate_frontier_bars_v2(
         "taste_k": taste_k,
         "grid_gate": final_grid_eval,
         "grid_pass_rate": final_grid_eval["pass_rate"],
+        "grid_retries": total_retries_done,
         "grid_retries_total": total_retries_done,
         "retrieved_sources": [
             {
@@ -1681,6 +1711,21 @@ def generate_frontier_bars_v2(
         "elapsed_sec": elapsed,
         "raw_text": "\n".join(final_bars),
     }
+
+    # Task L: Save generated verse to prompt & params cache
+    if use_cache:
+        try:
+            save_cached_verse(
+                cache_key=cache_key,
+                params=cache_params,
+                result=res,
+                retrieved_catalog_bars=retrieved_catalog_bars,
+                plan=plan,
+            )
+        except Exception:
+            pass
+
+    return res
 
 
 def polish_lyrics(

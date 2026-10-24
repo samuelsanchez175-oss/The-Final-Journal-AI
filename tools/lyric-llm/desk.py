@@ -1202,6 +1202,14 @@ def _telemetry_summary(root: Path) -> dict:
         return {}
 
 
+def _cache_summary(root: Path) -> dict:
+    try:
+        import prompt_cache
+        return prompt_cache.get_cache_stats()
+    except Exception:
+        return {}
+
+
 def collect_studio_state(root: Path, grades_path: Path = None) -> dict:
     base_metrics = collect_metrics(root, grades_path=grades_path)
     voice_inv = _voice_inventory(root)
@@ -1229,6 +1237,7 @@ def collect_studio_state(root: Path, grades_path: Path = None) -> dict:
         "syllable_curve": syllable_curve,
         "recent_takes": _recent_takes(root),
         "v4_telemetry": _telemetry_summary(root),
+        "cache_stats": _cache_summary(root),
         "decisions": decisions,
         "corpus_summary": {
             "source_rows": 1793548,
@@ -1338,6 +1347,9 @@ def run_live_generation(root: Path, params: dict) -> dict:
         taste_on_val = True if taste_param is None or str(taste_param).lower() in ("1", "true", "on") else False
         taste_k_val = int(params.get("taste_k") or 6)
 
+        # Task L: Prompt & Params Cache control
+        use_cache_val = not bool(params.get("no_cache")) if "no_cache" in params else bool(params.get("use_cache", True))
+
         # FRONTIER V4 TWO-PASS RETRIEVE & REMIX (REASONING PLANNER + FAST DRAFT + FRONTIER POLISH)
         if adapter_choice in ("v4", "frontier_v4"):
             import frontier_v4
@@ -1360,6 +1372,7 @@ def run_live_generation(root: Path, params: dict) -> dict:
                 taste_on=taste_on_val,
                 taste_k=taste_k_val,
                 candidates=candidates_val,
+                use_cache=use_cache_val,
             )
             return res
 
@@ -1391,6 +1404,7 @@ def run_live_generation(root: Path, params: dict) -> dict:
             remix_ratio=remix_ratio_val,
             taste_on=taste_on_val,
             taste_k=taste_k_val,
+            use_cache=use_cache_val,
         )
         return res
 
@@ -1624,6 +1638,18 @@ def make_handler(root: Path, grades_path: Path):
                 stats = telemetry.get_telemetry_stats()
                 recent = telemetry.read_telemetry(limit=32)
                 body = json.dumps({"ok": True, "stats": stats, "recent": recent}).encode("utf-8")
+                self._send(200, "application/json; charset=utf-8", body)
+                return
+            if path == "/api/cache":
+                import prompt_cache
+                stats = prompt_cache.get_cache_stats()
+                body = json.dumps({"ok": True, "stats": stats}).encode("utf-8")
+                self._send(200, "application/json; charset=utf-8", body)
+                return
+            if path == "/api/cache/clear":
+                import prompt_cache
+                cleared = prompt_cache.clear_cache()
+                body = json.dumps({"ok": True, "cleared_entries": cleared}).encode("utf-8")
                 self._send(200, "application/json; charset=utf-8", body)
                 return
             if path == "/api/artist_albums":
