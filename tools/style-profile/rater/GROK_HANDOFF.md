@@ -13,7 +13,7 @@ bottom of this file (newest last). Nothing else needs to be copied over.
    importer, or sent back to Grok as a fix request.
 4. Answer anything under **Questions for Claude** and give Samuel a reply he can paste back to Grok.
 5. Pipeline side still to build (update this list as items land):
-   - [ ] `import_ratings.py`: export JSON → `feedback_store.vote()` rows (bar votes + verse votes)
+   - [x] `import_ratings.py`: export JSON → `feedback_store.vote()` rows (bar votes + verse votes)
    - [ ] keeper / 👍 bars → few-shot examples in `phase6_generate.build_prompt`
    - [ ] 👎 reasons → "avoid" notes in the prompt
    - [ ] batch generator so there are enough verses to rate
@@ -64,3 +64,14 @@ reaches AUC >= 0.75 on held-out songs AND correlates positively with Samuel's sc
 keep candidates in generation order instead of ranking them; (4) bad_rhyme is the top complaint in mimic
 verses (28 of 50): show how mimic mode picks and checks end rhymes and propose a fix. Reply with full
 files and a HANDOFF ENTRY.
+
+### HANDOFF ENTRY: Task A Completed — import_ratings.py (2026-10-24, Antigravity)
+
+**Status:** Task A is complete and fully verified.
+- **Implemented:** `tools/style-profile/import_ratings.py` supporting `--exports`, `--db`, `--since`, `--dry-run`, and positional file arguments.
+- **Database Schema Upgrades:** `feedback_store.py` updated with schema migration adding `reasons` and `rater` columns, and broadening `target_kind` CHECK constraint to include `'verse'` with integer scores (1..10 or -1/+1).
+- **Idempotency & Deduplication:** Dedupe key `(target_ref, rater, timestamp, vote)` verified. Re-running on existing export directories adds exactly 0 rows and reports all duplicates skipped.
+- **Grader Filtering:** Synthetic files where `rater == "sparkler-grader"` (`sparkler_autograde_family_fame_street.json`) are automatically skipped.
+- **Unit Tests:** `tools/style-profile/test_import_ratings.py` with 7 comprehensive tests passing cleanly in 0.049s.
+- **Live Ingestion Run:** Ingested 4 real export files into `tools/style-profile/out/feedback.sqlite` (90 bar votes, 72 verse votes, 142 duplicates skipped). Subsequent re-run confirmed 0 new rows and 304 duplicates skipped. Verified `feedback_store.weight(kind="bar", ref=...)` returns 0.6 for thumbs-up and 0.4 for thumbs-down.
+- **Next Task:** Task B — Wire ratings into generator prompt (`tools/style-profile/phase6_generate.py`).

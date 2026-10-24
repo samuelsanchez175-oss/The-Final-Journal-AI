@@ -32,8 +32,9 @@ CREATE TABLE IF NOT EXISTS bar_sources (
   ref TEXT, category TEXT);
 CREATE TABLE IF NOT EXISTS votes (
   id INTEGER PRIMARY KEY AUTOINCREMENT, ts REAL, generation_id TEXT, bar_id TEXT,
-  target_kind TEXT CHECK(target_kind IN ('bar','block','catalog_bar')), target_ref TEXT,
-  vote INTEGER CHECK(vote IN (-1, 1)), reason TEXT, topic TEXT, artist TEXT, blame TEXT);
+  target_kind TEXT CHECK(target_kind IN ('bar','block','catalog_bar','verse')), target_ref TEXT,
+  vote INTEGER, reason TEXT, topic TEXT, artist TEXT, blame TEXT,
+  reasons TEXT, rater TEXT);
 CREATE INDEX IF NOT EXISTS votes_target ON votes(target_kind, target_ref, topic, artist);
 """
 
@@ -44,6 +45,44 @@ class FeedbackStore:
     def __init__(self, path: str = ":memory:"):
         self.db = sqlite3.connect(path)
         self.db.executescript(SCHEMA)
+        self._ensure_schema()
+
+    def _ensure_schema(self) -> None:
+        """Idempotent migration: add reasons, rater, and support verse target_kind."""
+        cur = self.db.cursor()
+        cur.execute("PRAGMA table_info(votes);")
+        cols = {row[1] for row in cur.fetchall()}
+        if not cols:
+            return
+        if "reasons" not in cols:
+            self.db.execute("ALTER TABLE votes ADD COLUMN reasons TEXT;")
+        if "rater" not in cols:
+            self.db.execute("ALTER TABLE votes ADD COLUMN rater TEXT;")
+
+        # Check if target_kind CHECK constraint allows 'verse'
+        cur.execute("SELECT sql FROM sqlite_master WHERE type='table' AND name='votes';")
+        res = cur.fetchone()
+        if res and res[0] and "CHECK" in res[0] and "'verse'" not in res[0]:
+            self.db.execute("PRAGMA foreign_keys=OFF;")
+            self.db.execute("""
+                CREATE TABLE votes_migrated (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT, ts REAL, generation_id TEXT, bar_id TEXT,
+                    target_kind TEXT CHECK(target_kind IN ('bar','block','catalog_bar','verse')), target_ref TEXT,
+                    vote INTEGER, reason TEXT, topic TEXT, artist TEXT, blame TEXT,
+                    reasons TEXT, rater TEXT
+                );
+            """)
+            self.db.execute("""
+                INSERT INTO votes_migrated (id, ts, generation_id, bar_id, target_kind, target_ref, vote, reason, topic, artist, blame, reasons, rater)
+                SELECT id, ts, generation_id, bar_id, target_kind, target_ref, vote, reason, topic, artist, blame,
+                       COALESCE(reasons, ''), COALESCE(rater, '')
+                FROM votes;
+            """)
+            self.db.execute("DROP TABLE votes;")
+            self.db.execute("ALTER TABLE votes_migrated RENAME TO votes;")
+            self.db.execute("CREATE INDEX IF NOT EXISTS votes_target ON votes(target_kind, target_ref, topic, artist);")
+            self.db.execute("PRAGMA foreign_keys=ON;")
+        self.db.commit()
 
     # ---- logging
     def log_generation(self, artist: str, bars: list[dict], request: dict | None = None,
@@ -61,20 +100,29 @@ class FeedbackStore:
         return gid
 
     def vote(self, bar_id: str, vote: int, target_kind: str = "bar", target_ref: str | None = None,
-             reason: str | None = None) -> None:
+             reason: str | None = None, rater: str | None = None, ts: float | None = None,
+             reasons: list[str] | str | None = None) -> None:
         if reason and reason not in REASONS:
             raise ValueError(f"reason must be one of {sorted(REASONS)}")
+        reasons_str = json.dumps(reasons) if isinstance(reasons, list) else (str(reasons) if reasons else None)
+        ts_val = time.time() if ts is None else float(ts)
+
         row = self.db.execute("""SELECT b.generation_id, b.topic, g.artist FROM generation_bars b
                                  JOIN generations g ON g.id = b.generation_id WHERE b.id = ?""", (bar_id,)).fetchone()
-        if not row:
-            raise KeyError(bar_id)
-        gid, topic, artist = row
+        if row:
+            gid, topic, artist = row
+        else:
+            gid = bar_id.split(":")[0] if ":" in bar_id else bar_id
+            topic = None
+            artist = None
+
         ref = target_ref if target_kind != "bar" else bar_id
         blame = None
         if target_kind == "bar" and vote == -1:
             blame = self._blame(bar_id)
-        self.db.execute("INSERT INTO votes (ts,generation_id,bar_id,target_kind,target_ref,vote,reason,topic,artist,blame)"
-                        " VALUES (?,?,?,?,?,?,?,?,?,?)", (time.time(), gid, bar_id, target_kind, ref, vote, reason, topic, artist, blame))
+        self.db.execute("INSERT INTO votes (ts,generation_id,bar_id,target_kind,target_ref,vote,reason,topic,artist,blame,reasons,rater)"
+                        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+                        (ts_val, gid, bar_id, target_kind, ref, vote, reason, topic, artist, blame, reasons_str, rater))
         self.db.commit()
 
     def _blame(self, bar_id: str) -> str:
