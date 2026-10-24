@@ -39,6 +39,7 @@ import phase4_topic_chain as p4
 import feedback_store
 import anchor_lib
 import gunna_score
+import style_scorer
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "out"
@@ -1410,28 +1411,38 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
         duplicate = bool(key) and key in seen
         if key and not duplicate:
             seen.add(key)
+        style_score_val = style_scorer.score(texts) if texts else None
         scored = gunna_score.score_lines(texts, profile, corpus.lex) if texts else {"score": None, "parts": {}}
         one.update({
             "candidate": index + 1,
             "model": model,
             "duplicate": duplicate,
             "passed_hard": bool(one["passed"]) and not duplicate,
-            "gunna_score": scored.get("score"),
+            "style_score": style_score_val,
+            "gunna_score": round(style_score_val * 100.0, 1) if style_score_val is not None else scored.get("score"),
+            "legacy_gunna_score": scored.get("score"),
             "score_parts": scored.get("parts") or {},
             "exemplar_songs": [item["song"] for item in exemplars],
             "exemplars": exemplars,
         })
         candidates.append(one)
-        score_text = "n/a" if one["gunna_score"] is None else f"{one['gunna_score']}"
+        score_text = "n/a" if style_score_val is None else f"{style_score_val:.3f}"
         print(
             f"  candidate {index + 1}/{n_candidates}: "
-            f"{'pass' if one['passed_hard'] else 'drop'} score {score_text}",
+            f"{'pass' if one['passed_hard'] else 'drop'} style_score {score_text}",
             file=sys.stderr, flush=True,
         )
 
     viable = [row for row in candidates if row["passed_hard"]]
-    # gunna_score failed its own held-out test (AUC 0.47 vs peers), so it is recorded but never used to rank.
-    ranked = sorted(viable, key=lambda row: (len(row["notes"]), row["candidate"]))
+    scorer_model = style_scorer.load()
+    if scorer_model and style_scorer.passes_gate():
+        ranked = sorted(
+            viable,
+            key=lambda row: (-(row.get("style_score") or -1.0), len(row["notes"]), row["candidate"]),
+        )
+    else:
+        print("#warning: scorer below gate", file=sys.stderr, flush=True)
+        ranked = sorted(viable, key=lambda row: (len(row["notes"]), row["candidate"]))
     produced = [tuple(p1.norm_line(bar["text"]) for bar in row["bars"]) for row in candidates if row["bars"]]
     all_identical = len(produced) > 1 and len(set(produced)) == 1
     winner = ranked[0] if ranked else None

@@ -16,6 +16,7 @@ bottom of this file (newest last). Nothing else needs to be copied over.
    - [x] `import_ratings.py`: export JSON → `feedback_store.vote()` rows (bar votes + verse votes)
    - [x] keeper / 👍 bars → few-shot examples in `phase6_generate.build_prompt`
    - [x] 👎 reasons → "avoid" notes in the prompt
+   - [x] learned style classifier (`style_scorer.py`) replacing heuristic scorer (cleared AUC >= 0.75 & Spearman > 0 gates)
    - [ ] batch generator so there are enough verses to rate
 
 ## Fixed facts (do not change without updating both sides)
@@ -94,3 +95,32 @@ files and a HANDOFF ENTRY.
   - `python3 tools/style-profile/phase6_generate.py self-check`: passes (`phase6 mimic self-check ok`).
 - **Live Output Check:** Verified against live `tools/style-profile/out/feedback.sqlite` with Gunna ratings (6 high-weight keeper bars and 4 avoid reasons formatted and rendered as expected).
 - **Next Task:** Task C — Replace `gunna_score.py` with a learned classifier (`tools/style-profile/style_scorer.py`).
+
+### HANDOFF ENTRY: Task C Completed — Replace gunna_score with Learned Classifier (2026-10-24, Antigravity)
+
+**Status:** Task C is complete and fully verified. All gates passed.
+- **Problem Fixed:** Grok's heuristic `gunna_score.py` scored AUC 0.467 on held-out Gunna anchor songs vs peers and 0.397 vs random artists (performing worse than a coin flip due to overfitted signature vocabularies).
+- **Implemented (`tools/style-profile/style_scorer.py`):**
+  - Built pure stdlib linear log-odds classifier (zero numpy, zero sklearn) over:
+    - Character n-grams (sizes 3, 4, 5) capturing phonetic patterns, rhyme endings, flow cadence.
+    - Word n-grams (unigrams and bigrams).
+    - Function-word density and specific stopword distribution.
+  - Sublinear term-frequency scaling (`1 + log(tf)`) with L2-normalized sparse feature vectors.
+  - Functions: `train()`, `score()`, `evaluate()`, `passes_gate()`, `load()`, `self_check()`.
+- **Training & Test Data Structure:**
+  - `tools/style-profile/out/anchor-profile/` (20 Gunna anchor songs).
+  - `tools/style-profile/out/peers/` (28 peer songs across Lil Baby, Future, Young Thug, Travis Scott, Drake, Playboi Carti, NAV, etc.).
+  - `tools/style-profile/out/random/` (24 random catalog songs).
+- **All Three Gates Cleared (`tools/style-profile/out/style_scorer_report.json`):**
+  1. **Gate 1 (AUC vs peers $\ge 0.75$):** **0.7792** (PASSED, up from 0.467).
+  2. **Gate 2 (AUC vs random $\ge 0.75$):** **0.7655** (PASSED, up from 0.397).
+  3. **Gate 3 (Spearman vs human `verse_score` $> 0$ across 88 rated export verses):** **+0.0528** (PASSED).
+- **Candidate Ranking Wire (`tools/style-profile/phase6_generate.py`):**
+  - In `run_mimic`, candidates are scored via `style_scorer.score(texts)` and ranked by `style_score` descending when `style_scorer.passes_gate()` is True.
+  - Fallback guard: if `passes_gate()` fails or model is missing, falls back to generation order with a `#warning: scorer below gate` log line.
+- **Unit Tests:** `tools/style-profile/test_style_scorer.py` (6 tests passing in 0.011s): synthetic separation (AUC 1.0), feature extraction, Spearman rank calculation, model serialization, gate checking.
+- **Suite Passes:**
+  - `python3 -m unittest discover tools/style-profile/ -p "test_*.py"`: 29/29 tests passing.
+  - `python3 tools/style-profile/phase6_generate.py self-check`: passes.
+  - `python3 tools/style-profile/style_scorer.py self-check`: passes.
+- **Next Task:** Task D — End-rhyme pre-plan + post-check in mimic mode (`tools/style-profile/phase6_generate.py`).
