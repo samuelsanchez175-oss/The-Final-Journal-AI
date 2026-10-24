@@ -52,7 +52,7 @@ SCHEMES = ("aabb", "abab")
 MODES = ("rewrite", "fresh", "mimic")
 MIMIC_PROMPT_VERSION = "verse.mimic.v2"  # v2: rhyme-first end-word plan (DeepRapper idea)
 MIMIC_BARS = (4, 8, 16)
-MIMIC_ATTEMPTS = 2
+MIMIC_ATTEMPTS = 3
 # Soft target from Gunna's catalog: per-song mean syllables p10 ~8, median ~10, p90 ~12.5.
 # Mimic mode does not use this band. It reads the anchor profile.
 SYL_MIN, SYL_MAX = 8, 13
@@ -557,7 +557,109 @@ def syl(text: str, lex: p1.Lexicon) -> int:
     return p1.Bar(text, lex).syl
 
 
+SLANG_PATH = HERE / "slang_phonemes.json"
+_CMU_ALL_PRONS: dict[str, list[list[str]]] = {}
+_CMU_LOADED = False
+
+
+def load_all_cmu_pronunciations(cmu_path: Path | None = None) -> dict[str, list[list[str]]]:
+    """Loads all pronunciations from CMUdict, merged with slang_phonemes.json fallback."""
+    global _CMU_ALL_PRONS, _CMU_LOADED
+    if _CMU_LOADED and _CMU_ALL_PRONS:
+        return _CMU_ALL_PRONS
+    path = cmu_path or p1.DEFAULT_CMU
+    prons: dict[str, list[list[str]]] = defaultdict(list)
+    if path.exists():
+        with open(path, encoding="utf-8", errors="replace") as fh:
+            for line in fh:
+                if line.startswith(";;;") or not line.strip():
+                    continue
+                parts = line.split()
+                word = re.sub(r"\(\d+\)$", "", parts[0]).lower()
+                prons[word].append(parts[1:])
+    if SLANG_PATH.exists():
+        try:
+            with open(SLANG_PATH, encoding="utf-8") as fh:
+                slang = json.load(fh)
+            for word, phone_lists in slang.items():
+                w = word.lower()
+                for p in phone_lists:
+                    if p not in prons[w]:
+                        prons[w].append(p)
+        except Exception as e:
+            print(f"#warning: failed to load {SLANG_PATH}: {e}", file=sys.stderr)
+    _CMU_ALL_PRONS = dict(prons)
+    _CMU_LOADED = True
+    return _CMU_ALL_PRONS
+
+
+def get_lexicon(cmu_path: Path | None = None) -> p1.Lexicon:
+    """Creates a Lexicon with single-pronunciation CMUdict plus slang_phonemes."""
+    path = cmu_path or p1.DEFAULT_CMU
+    table = p1.load_cmudict(path) if path.exists() else {}
+    if SLANG_PATH.exists():
+        try:
+            with open(SLANG_PATH, encoding="utf-8") as fh:
+                slang = json.load(fh)
+            for word, phone_lists in slang.items():
+                w = word.lower()
+                if w not in table and phone_lists:
+                    table[w] = phone_lists[0]
+        except Exception:
+            pass
+    return p1.Lexicon(table)
+
+
+def get_word_pronunciations(word: str, lex: p1.Lexicon | None = None) -> list[list[str]]:
+    all_prons = load_all_cmu_pronunciations()
+    w = word.lower().strip(" \t\n\r\"'.,!?;:()[]{}")
+    if not w:
+        return []
+    for cand in p1.Lexicon._candidates(w):
+        if cand in all_prons and all_prons[cand]:
+            return all_prons[cand]
+    if lex:
+        phones = lex.phones_for(w)
+        if phones:
+            return [phones]
+    return []
+
+
+def check_rhyme_kind(word_a: str, word_b: str, lex: p1.Lexicon | None = None) -> str | None:
+    wa = word_a.lower().strip(" \t\n\r\"'.,!?;:()[]{}")
+    wb = word_b.lower().strip(" \t\n\r\"'.,!?;:()[]{}")
+    if not wa or not wb:
+        return None
+    if wa == wb:
+        return "identical"
+    prons_a = get_word_pronunciations(wa, lex)
+    prons_b = get_word_pronunciations(wb, lex)
+    if not prons_a or not prons_b:
+        return None
+    best_kind = None
+    for pa in prons_a:
+        info_a = p1.analyze_phones(pa)
+        ra = info_a[2]
+        if not ra:
+            continue
+        for pb in prons_b:
+            info_b = p1.analyze_phones(pb)
+            rb = info_b[2]
+            if not rb:
+                continue
+            if ra == rb:
+                return "perfect"
+            if ra.split()[0] == rb.split()[0] and p1.trailing_vowel_depth(pa, pb) >= 1:
+                best_kind = "slant"
+    return best_kind
+
+
 def end_rhyme_kind(a: p1.Bar, b: p1.Bar) -> str | None:
+    if not (a and b and a.end_word and b.end_word):
+        return None
+    res = check_rhyme_kind(a.end_word, b.end_word)
+    if res is not None:
+        return res
     if not (a.end_phones and b.end_phones and a.rime and b.rime and a.rime[-1] and b.rime[-1]):
         return None
     if a.end_word == b.end_word:
@@ -925,12 +1027,13 @@ def _closeness_text(closeness: float) -> str:
 WEAK_END_WORDS = frozenset("""
 cake sake mall wall day days way ways play plays stay stays say says pay pays lay
 grind mind time line game name same fame place space face case chase wait late great
-state rate hate gate date plate eight weight way ride side wide hide guide slide tried
+state rate hate gate date plate eight weight way ride side wide hide guide slide sliding tried
 cool fool pool school rule do too two true blue through knew view new crew
 go low slow flow know show grow throw bro though dough no toe
 see be free tea three key me we she he key degree
 down town crown clown around sound found ground
 right night light sight might fight tight bright white
+real steal deal feel heal meal wheel seal peel
 """.split())
 
 
@@ -954,9 +1057,16 @@ def build_rhyme_bank(anchor_songs: list[dict], lex: p1.Lexicon) -> list[dict]:
             bars = [p1.Bar(line, lex) for line in verse]
             for i, bar in enumerate(bars):
                 word = bar.end_word
-                if not word or not bar.rime or not bar.rime[-1] or not content(word):
+                if not word or not content(word):
                     continue
-                key = bar.rime[-1]
+                key = bar.rime[-1] if (bar.rime and bar.rime[-1]) else None
+                if not key:
+                    prons = get_word_pronunciations(word, lex)
+                    if prons:
+                        info_p = p1.analyze_phones(prons[0])
+                        key = info_p[2]
+                if not key:
+                    continue
                 family[key][word] += 1
                 songs_of[key].add(song["title"])
                 if i and end_rhyme_kind(bars[i - 1], bar) in ("perfect", "slant"):
@@ -980,6 +1090,10 @@ def _pick_family(bank: list[dict], rng: random.Random, used: set[str], size: int
     cands = rich or [f for f in bank if f["key"] not in used and len(f["words"]) >= max(size, 3)]
     cands = cands or [f for f in bank if f["key"] not in used and len(f["words"]) >= size]
     if not cands:
+        rich = [f for f in bank if len(f.get("rich_words") or []) >= size]
+        cands = rich or [f for f in bank if len(f["words"]) >= max(size, 3)]
+        cands = cands or [f for f in bank if len(f["words"]) >= size]
+    if not cands:
         return None
     weights = [(1 + f["linked"] + 0.3 * f["uses"]) * (1 + len(f.get("rich_words") or []))
                / (1 + _FAMILY_USE[f["key"]]) ** 2 for f in cands]
@@ -995,6 +1109,8 @@ def _pick_words(fam: dict, size: int, rng: random.Random) -> list[str]:
         rest = [w for w in fam["words"] if w not in picked]
         rng.shuffle(rest)
         picked += sorted(rest, key=lambda w: _WORD_USE[w])[:size - len(picked)]
+    while len(picked) < size and fam.get("words"):
+        picked.append(rng.choice(fam["words"]))
     return picked[:size]
 
 
@@ -1007,48 +1123,88 @@ def make_spine(rng: random.Random) -> dict:
 
 def make_rhyme_plan(bank: list[dict], n_bars: int, rng: random.Random, profile: dict,
                     level: str = "rhyme", register: bool = True) -> dict:
-    """Pick end words first, at the era's rhyme density: groups of 2 (or 3, at his run rate) consecutive
-    lines share a real Gunna rhyme family; every other line is free. Level "inner" also plans inner
-    rhymes on about 1 line in 4; "double" adds the double-meaning quota."""
-    rhyme = profile.get("rhyme") or {}
-    rate = (rhyme.get("dist1_rate") or 0.3) + (rhyme.get("alt_rate") or 0.1)
-    run3 = rhyme.get("run3_share") or 0.27
-    target = max(1, round(rate * (n_bars - 1)))
+    """Pick end words first. For each couplet or 4-bar quatrain (AABB or ABAB),
+    assign chosen end words from Gunna's real rhyme families. Every bar has an
+    assigned end position. Prefer CMU-perfect rhymes, allowing at most one slant."""
     slots: list[dict | None] = [None] * n_bars
     groups: list[dict] = []
     used: set[str] = set()
-    links = 0
-    while links < target:
-        size = 3 if target - links >= 2 and rng.random() < run3 else 2
-        starts = [i for i in range(n_bars - size + 1)
-                  if all(slots[j] is None for j in range(max(0, i - 1), min(n_bars, i + size + 1)))]
-        fam = _pick_family(bank, rng, used, size)
-        if not starts or not fam:
-            break
-        used.add(fam["key"])
-        start = rng.choice(starts)
-        words = _pick_words(fam, size, rng)
-        for k in range(size):
-            slots[start + k] = {"group": len(groups), "word": words[k]}
-        groups.append({"lines": list(range(start, start + size)), "words": words, "key": fam["key"],
-                       "family": fam["words"][:6], "songs": fam["songs"]})
-        links += size - 1
-    inner: list[dict] = []
-    if level in ("inner", "double"):
-        want = max(1, n_bars // 4)
-        planned = [i for i, slot in enumerate(slots) if slot is not None]
-        free = [i for i, slot in enumerate(slots) if slot is None]
-        rng.shuffle(planned)
-        rng.shuffle(free)
-        for i in (planned[:max(1, want // 2)] + free + planned[max(1, want // 2):])[:want]:
-            if slots[i] is not None:
-                inner.append({"line": i, "type": "to_end"})
-                continue
+
+    bar_idx = 0
+    while bar_idx < n_bars:
+        remaining = n_bars - bar_idx
+        if remaining >= 4:
+            scheme = "aabb" if rng.random() < 0.65 else "abab"
+            fam_a = _pick_family(bank, rng, used, 2)
+            if fam_a:
+                used.add(fam_a["key"])
+            fam_b = _pick_family(bank, rng, used, 2)
+            if fam_b:
+                used.add(fam_b["key"])
+            fam_a = fam_a or (bank[0] if bank else {"key": "none", "words": ["one", "run"], "songs": []})
+            fam_b = fam_b or (bank[1] if len(bank) > 1 else fam_a)
+
+            words_a = _pick_words(fam_a, 2, rng)
+            words_b = _pick_words(fam_b, 2, rng)
+
+            if scheme == "aabb":
+                g_a = len(groups)
+                slots[bar_idx] = {"group": g_a, "word": words_a[0]}
+                slots[bar_idx + 1] = {"group": g_a, "word": words_a[1]}
+                groups.append({"lines": [bar_idx, bar_idx + 1], "words": words_a,
+                               "key": fam_a["key"], "family": fam_a["words"][:6], "songs": fam_a.get("songs", [])})
+                g_b = len(groups)
+                slots[bar_idx + 2] = {"group": g_b, "word": words_b[0]}
+                slots[bar_idx + 3] = {"group": g_b, "word": words_b[1]}
+                groups.append({"lines": [bar_idx + 2, bar_idx + 3], "words": words_b,
+                               "key": fam_b["key"], "family": fam_b["words"][:6], "songs": fam_b.get("songs", [])})
+            else:
+                g_a = len(groups)
+                slots[bar_idx] = {"group": g_a, "word": words_a[0]}
+                slots[bar_idx + 2] = {"group": g_a, "word": words_a[1]}
+                groups.append({"lines": [bar_idx, bar_idx + 2], "words": words_a,
+                               "key": fam_a["key"], "family": fam_a["words"][:6], "songs": fam_a.get("songs", [])})
+                g_b = len(groups)
+                slots[bar_idx + 1] = {"group": g_b, "word": words_b[0]}
+                slots[bar_idx + 3] = {"group": g_b, "word": words_b[1]}
+                groups.append({"lines": [bar_idx + 1, bar_idx + 3], "words": words_b,
+                               "key": fam_b["key"], "family": fam_b["words"][:6], "songs": fam_b.get("songs", [])})
+            bar_idx += 4
+        elif remaining >= 2:
             fam = _pick_family(bank, rng, used, 2)
             if fam:
                 used.add(fam["key"])
-                inner.append({"line": i, "type": "pair", "key": fam["key"], "family": fam["words"][:6]})
+            fam = fam or (bank[0] if bank else {"key": "none", "words": ["one", "run"], "songs": []})
+            words = _pick_words(fam, 2, rng)
+            g_idx = len(groups)
+            slots[bar_idx] = {"group": g_idx, "word": words[0]}
+            slots[bar_idx + 1] = {"group": g_idx, "word": words[1]}
+            groups.append({"lines": [bar_idx, bar_idx + 1], "words": words,
+                           "key": fam["key"], "family": fam["words"][:6], "songs": fam.get("songs", [])})
+            bar_idx += 2
+        else:
+            if groups:
+                last_g = groups[-1]
+                extra_word = _pick_words(fam, 1, rng)[0] if fam else "one"
+                last_g["lines"].append(bar_idx)
+                last_g["words"].append(extra_word)
+                slots[bar_idx] = {"group": len(groups) - 1, "word": extra_word}
+            else:
+                fam = bank[0] if bank else {"key": "none", "words": ["one"], "songs": []}
+                words = _pick_words(fam, 1, rng)
+                slots[bar_idx] = {"group": 0, "word": words[0]}
+                groups.append({"lines": [bar_idx], "words": words, "key": fam["key"], "family": fam["words"][:6], "songs": []})
+            bar_idx += 1
+
+    inner: list[dict] = []
+    if level in ("inner", "double"):
+        want = max(1, n_bars // 4)
+        indices = list(range(n_bars))
+        rng.shuffle(indices)
+        for i in indices[:want]:
+            inner.append({"line": i, "type": "to_end"})
         inner.sort(key=lambda x: x["line"])
+
     spine = make_spine(rng) if level == "story" else None
     if register:
         with _ANALYZE_LOCK:
@@ -1058,20 +1214,29 @@ def make_rhyme_plan(bank: list[dict], n_bars: int, rng: random.Random, profile: 
             for x in inner:
                 if x.get("key"):
                     _FAMILY_USE[x["key"]] += 1
-    return {"level": level, "slots": slots, "groups": groups, "inner": inner,
-            "doubles": max(1, n_bars // 4) if level == "double" else 0, "spine": spine}
+
+    return {
+        "level": level, "slots": slots, "groups": groups, "inner": inner,
+        "doubles": max(1, n_bars // 4) if level == "double" else 0, "spine": spine,
+    }
 
 
 def _plan_text(plan: dict) -> str:
     rows = []
     for i, slot in enumerate(plan["slots"], 1):
         if slot is None:
-            rows.append(f"line {i}: free (end on any word; do not force a rhyme)")
+            rows.append(f"Bar {i}: free (end on any word; do not force a rhyme)")
             continue
         group = plan["groups"][slot["group"]]
-        partners = [str(j + 1) for j in group["lines"] if j != i - 1]
-        rows.append(f"line {i}: must end on \"{slot['word']}\" (or another word from: {', '.join(group['family'])})"
-                    f", rhymes with line {' and '.join(partners)}")
+        partners = [j + 1 for j in group["lines"] if j != i - 1]
+        family_preview = ", ".join(group.get("family", [])[:4])
+        if partners and partners[0] < i:
+            rel = f"same family as Bar {partners[0]}"
+        elif partners:
+            rel = f"rhymes with Bar {partners[0]}"
+        else:
+            rel = "rhymes cleanly"
+        rows.append(f"Bar {i} ends with \"{slot['word']}\" ({rel}; family: {family_preview})")
     inner_by_line = {x["line"]: x for x in plan.get("inner") or []}
     for i, row in enumerate(rows):
         x = inner_by_line.get(i)
@@ -1082,13 +1247,15 @@ def _plan_text(plan: dict) -> str:
         else:
             rows[i] = row + (f"; INNER RHYME: two words inside this line rhyme with each other "
                              f"(sound like: {', '.join(x['family'])})")
-    return ("RHYME PLAN. Gunna picks the rhyme first. Every end word below is from a rhyme family he actually "
-            "ends lines on in these songs. For each planned line, start from the end word and write the line "
-            "backwards so the sentence lands on it naturally, the way he would say it. If a planned word can't "
-            "land without sounding forced, swap it for another word from the same family, never for a weird word. "
-            "The plan already avoided lazy end words (cake, mall, days, way, place, grind, time, cool, right...). "
-            "Keep it that way: do not land a free line on one of those either; reach for a sharper or longer word. "
-            "Free lines end however the sentence wants.\n" + "\n".join(rows))
+    return (
+        "RHYME PLAN (HARD CONSTRAINT). Gunna picks the rhyme first. Every end word below is from a rhyme family "
+        "he actually ends lines on in these songs. For each bar, start from the planned end word and write the line "
+        "backwards so the sentence lands on it naturally, the way he would say it. If a planned word can't "
+        "land without sounding forced, swap it for another word from the exact same family, never for a weird word. "
+        "The plan already avoided lazy end words (cake, mall, days, way, place, grind, time, cool, right, slide, real...). "
+        "Keep it that way: reach for sharper or longer words.\n"
+        + "\n".join(rows)
+    )
 
 
 def build_mimic_prompt(artist: str, n_bars: int, exemplars: list[dict], profile: dict,
@@ -1167,7 +1334,8 @@ def build_mimic_prompt(artist: str, n_bars: int, exemplars: list[dict], profile:
         + "If a rhyme forces a weird word, change the rhyme, not the sense.\n\n"
         "MUST:\n"
         "1. One line per bar. No line may be identical to a real line of his, including the examples above.\n"
-        + ("2. Follow the RHYME PLAN above: planned lines rhyme with their partners, free lines don't have to. "
+        + ("2. Follow the RHYME PLAN above as a HARD CONSTRAINT: each bar MUST end with its planned end word "
+           "(or a valid rhyming word from the same family). Every couplet must rhyme cleanly without exception. "
            if plan and plan.get("groups") else
            "2. Rhyme the way the measured facts describe. Do not force AABB or ABAB. ")
         + ("Follow the INNER RHYME note on each planned line. Lines without that note do not need a rhyme inside them. "
@@ -1279,15 +1447,30 @@ def analyze_mimic(texts: list[str], corpus: Corpus, profile: dict,
                             "appears in the bar plus two different readings that both make sense")
     for group in (plan or {}).get("groups", []):
         lines = [i for i in group["lines"] if i < len(bars)]
-        for a, b in zip(lines, lines[1:]):
-            if end_rhyme_kind(bars[a], bars[b]) not in ("perfect", "slant"):
-                problems.append(
-                    f"lines {a + 1} and {b + 1} were planned to rhyme (family: {', '.join(group['family'])}) "
-                    f"but end on \"{bars[a].end_word}\" / \"{bars[b].end_word}\"")
-        for i, want in zip(lines, group["words"]):
+        for idx_a in range(len(lines)):
+            for idx_b in range(idx_a + 1, len(lines)):
+                a, b = lines[idx_a], lines[idx_b]
+                kind = end_rhyme_kind(bars[a], bars[b])
+                if kind not in ("perfect", "slant"):
+                    why = f"repeats the same end word \"{bars[a].end_word}\"" if kind == "identical" else f"do not rhyme (\"{bars[a].end_word}\" / \"{bars[b].end_word}\")"
+                    fam_str = ", ".join(group.get("family", [])[:4])
+                    problems.append(
+                        f"lines {a + 1} and {b + 1} were planned to rhyme (family: {fam_str}) but {why}"
+                    )
+        for i, want in zip(lines, group.get("words", [])):
             got = bars[i].end_word
-            if got and got != want and got not in group["family"]:
-                notes.append(f"line {i + 1} ends on \"{got}\", not the planned \"{want}\"")
+            if not got:
+                problems.append(f"line {i + 1} has no valid end word")
+                continue
+            if got != want:
+                rhymes_with_plan = (got in group.get("family", [])) or (check_rhyme_kind(got, want, lex) in ("perfect", "slant"))
+                if not rhymes_with_plan:
+                    fam_str = ", ".join(group.get("family", [])[:4])
+                    problems.append(
+                        f"line {i + 1} ends on \"{got}\", not the planned \"{want}\" (family: {fam_str}) and does not rhyme with it"
+                    )
+                else:
+                    notes.append(f"line {i + 1} swapped planned \"{want}\" for \"{got}\" (same rhyme family)")
 
     cadence = profile.get("cadence") or {}
     low, high = cadence.get("syl_p10"), cadence.get("syl_p90")
@@ -1434,6 +1617,9 @@ def run_mimic(ctx: dict, model: str, corpus: Corpus, profile: dict, n_candidates
         )
 
     viable = [row for row in candidates if row["passed_hard"]]
+    if not viable:
+        print("#warning: no candidate passed hard rules; keeping candidate with fewest problems", file=sys.stderr, flush=True)
+        viable = sorted([row for row in candidates if row.get("bars")], key=lambda r: (len(r.get("problems", [])), len(r.get("notes", []))))
     scorer_model = style_scorer.load()
     if scorer_model and style_scorer.passes_gate():
         ranked = sorted(
@@ -1859,7 +2045,7 @@ def main() -> int:
     if args.mode == "mimic":
         return _main_mimic(args)
 
-    lex = p1.Lexicon(p1.load_cmudict(p1.DEFAULT_CMU))
+    lex = get_lexicon()
     corpus = Corpus(args.artist, lex)
     store = feedback_store.FeedbackStore(str(args.db))
     ctx = build_context(args.artist, args.bars, args.topic, args.scheme, args.seed, corpus, args.mode,
@@ -1982,7 +2168,7 @@ def _main_mimic(args) -> int:
                 f"{song['title']} [{song['album']}]",
                 file=sys.stderr, flush=True,
             )
-    lex = p1.Lexicon(p1.load_cmudict(p1.DEFAULT_CMU))
+    lex = get_lexicon()
     corpus = Corpus(args.artist, lex, songs=anchor_lib.copy_songs(gunna))
     store = feedback_store.FeedbackStore(str(args.db))
     if args.sets == 1:

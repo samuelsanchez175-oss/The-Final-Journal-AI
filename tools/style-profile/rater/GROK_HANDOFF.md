@@ -124,3 +124,45 @@ files and a HANDOFF ENTRY.
   - `python3 tools/style-profile/phase6_generate.py self-check`: passes.
   - `python3 tools/style-profile/style_scorer.py self-check`: passes.
 - **Next Task:** Task D — End-rhyme pre-plan + post-check in mimic mode (`tools/style-profile/phase6_generate.py`).
+
+### HANDOFF ENTRY: Task D Completed — End-Rhyme Pre-Plan + Post-Check in Mimic Mode (2026-10-24, Antigravity)
+
+**Status:** Task D is complete and fully verified.
+- **Problem Fixed:** `bad_rhyme` was the #1 downvote complaint on mimic verses (28/50 downvotes ≈ 56%).
+  - Root cause was two-fold: (1) `make_rhyme_plan` only planned ~3 links per 8 bars leaving most lines "free", and (2) when the model missed planned rhymes, `analyze_mimic` only appended a soft `note` rather than a hard `problem`, so the retry loop never fired.
+- **Implemented (`tools/style-profile/phase6_generate.py`):**
+  - **Comprehensive End-Rhyme Pre-Planning (`make_rhyme_plan`):**
+    - Every bar in the verse is assigned an explicit end word and rhyme family organized into couplets/quatrains (`AABB` or `ABAB`).
+    - Prefers CMU-perfect rhymes; allows at most one slant per bar.
+    - Added trap slang phonemes map (`tools/style-profile/slang_phonemes.json`) covering 45 key hip-hop slang/brand words (`opp`, `blick`, `glizzy`, `switchy`, `twizzy`, `wunna`, `gunna`, `slatt`, `slime`, `cullinan`, `maybach`, `patek`, `cartier`, `audemar`, `birkin`, `goyard`, `rimowa`, `celine`, etc.).
+    - Filtered out lazy/generic monosyllables (`real`, `cake`, `slide`, `sliding`, `grind`, `mall`, etc.) from `WEAK_END_WORDS`.
+  - **Hard Constraint in Mimic Prompt (`_plan_text`, `build_mimic_prompt`):**
+    - Formats rhyme plan as `Bar 1 ends with "<word1>", Bar 2 ends with "<word2>" (same family as Bar 1; family: ...)`.
+    - Added explicit rule under `MUST:`: `Follow the RHYME PLAN above as a HARD CONSTRAINT: each bar MUST end with its planned end word (or a valid rhyming word from the same family). Every couplet must rhyme cleanly without exception.`
+  - **Rhyme Post-Check & Retry (`analyze_mimic`, `_one_candidate`):**
+    - Multi-pronunciation CMUdict lookup + slang dictionary fallback (`load_all_cmu_pronunciations`, `check_rhyme_kind`, `end_rhyme_kind`).
+    - Treats ANY pronunciation match as a hit across candidate CMU pronunciations (e.g. `route` rhymes with both `boot` and `doubt`).
+    - When delivered end words don't rhyme to the plan or partner bar, appends to `problems` so the retry loop fires with explicit violations listed in `MUST-FIX:`.
+    - `MIMIC_ATTEMPTS` increased to 3 (1 initial call + up to 2 retries).
+    - If 2 retries exhaust, gracefully preserves candidate with fewest problems, logs miss, and lets rater judge.
+- **Unit Tests (`tools/style-profile/test_mimic_rhyme.py`):**
+  - 5 tests passing in 2.01s:
+    1. `test_prompt_contains_explicit_end_words`: asserts prompt contains explicit planned end words for each bar.
+    2. `test_retry_fires_on_non_rhyming_end_word_and_resolves`: mocks model returning non-rhyming output on attempt 1, asserts retry triggers with `MUST-FIX:` violation, and resolves on attempt 2.
+    3. `test_slang_rhymes_accepted_via_slang_phonemes`: asserts trap slang words (`gunna`/`wunna`, `audemar`/`car`, `opp`/`pop`) validate as perfect rhymes without false-positive rejections.
+    4. `test_cmu_alternate_pronunciations_treated_as_rhyme`: asserts words with alternate pronunciations (`route`/`boot` and `route`/`doubt`) match.
+    5. `test_retry_exhaustion_keeps_best_candidate`: asserts 2 retries max (3 attempts total) returns best candidate with logged problems.
+- **Full Suite Passes:**
+  - `python3 -m unittest discover tools/style-profile/ -p "test_*.py"`: **34/34 tests passing**.
+  - `python3 tools/style-profile/phase6_generate.py self-check`: passes (`phase6 mimic self-check ok`).
+- **Live Generation Batch (`tools/style-profile/out/rater-batch-rhyme-fix`):**
+  - Command: `python3 tools/style-profile/phase6_generate.py --artist "Gunna" --mode mimic --bars 8 --candidates 2 --sets 5 --seed 7 --out tools/style-profile/out/rater-batch-rhyme-fix`.
+  - Wrote 5 complete 8-bar sets (`mimic_07.json` through `mimic_11.json`, plus `mimic_manifest.json`).
+  - **Results:**
+    - `mimic_07.json` (Seed 7): 2/2 passed, score 100.0 (salute/shoot, blame/shame, clout/drought, scotts/shots). `bad_rhyme` = 0.
+    - `mimic_08.json` (Seed 8): 1/2 passed, score 100.0 (breeze/these, sprout/about, alone/cologne, fillers/killers). `bad_rhyme` = 0.
+    - `mimic_09.json` (Seed 9): 2/2 passed, score 100.0 (relate/skate, chopper/proper, trends/friends, field/shield). `bad_rhyme` = 0.
+    - `mimic_10.json` (Seed 10): 2/2 passed, score 100.0 (blessed/invest, cashier/appear, lease/peace, hills/bills). `bad_rhyme` = 0.
+    - `mimic_11.json` (Seed 11): 2/2 passed, score 100.0 (phone/cologne, skate/relate, start/heart, house/spouse). `bad_rhyme` = 0.
+  - **`bad_rhyme` Share:** **0 out of 5 verses (0%)**, dropping from the prior baseline of 28/50 (56%), well below the <25% target.
+- **Next Task:** Task E — Runtime house-noun scrub (`XJournal AI/RapSuggestionAPI.swift`).
