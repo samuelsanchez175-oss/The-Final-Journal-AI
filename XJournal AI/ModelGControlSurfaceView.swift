@@ -40,6 +40,7 @@ struct ModelGControlSurfaceView: View {
     @State private var youUsePeople = true
     @State private var youUseBottle = true
     @State private var youStreetOnly = false
+    @ObservedObject private var brainStore = ArtistBrainStore.shared
     @State private var gunnaWrap = true
     @State private var wrapPocket: WrapPocket = .behind
     @State private var wrapBpmSource: WrapBpmSource = .note
@@ -137,6 +138,7 @@ struct ModelGControlSurfaceView: View {
                 lineCount = 4
                 let savedRhyme = UserDefaults.standard.object(forKey: "suggestion_default_end_rhyme_lines") as? Int ?? 2
                 endRhymeLines = [2, 4, 6, 8].contains(savedRhyme) ? savedRhyme : 2
+                loadYouSettings(for: brainStore.activeBrainID)
             }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -149,6 +151,7 @@ struct ModelGControlSurfaceView: View {
     // Fixed footer — square PrimaryActionButton with a coral CounterPill (# tones selected).
     private var generateFooter: some View {
         Button {
+            saveYouSettings(for: brainStore.activeBrainID)
             onGenerate(params, rhymeGroupsByID)
             dismiss()
         } label: {
@@ -181,7 +184,10 @@ struct ModelGControlSurfaceView: View {
     private var formContent: some View {
         VStack(alignment: .leading, spacing: 20) {
             modelPickerSection
-            if selectedModel == .modelYou { youFilterSection }
+            if selectedModel == .modelYou {
+                brainPickerSection
+                youFilterSection
+            }
             wrapSection
             syllableCountSection
             schemeChipsSection
@@ -296,18 +302,79 @@ struct ModelGControlSurfaceView: View {
         }
     }
 
+    private var brainPickerSection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            MomentumSectionHeader(title: "Artist Voice")
+            let summaries = brainStore.allBrainSummaries()
+            if summaries.count > 1 {
+                Picker("Voice", selection: Binding(
+                    get: { brainStore.activeBrainID },
+                    set: { newID in
+                        saveYouSettings(for: brainStore.activeBrainID)
+                        brainStore.switchBrain(to: newID)
+                        loadYouSettings(for: newID)
+                    }
+                )) {
+                    ForEach(summaries) { summary in
+                        Text("\(summary.displayName) (\(summary.barCount) bars, \(summary.confirmedCardCount) cards)")
+                            .tag(summary.id)
+                    }
+                }
+                .pickerStyle(.menu)
+            } else if let only = summaries.first {
+                Text("\(only.displayName) • \(only.barCount) bars, \(only.confirmedCardCount) cards")
+                    .font(.subheadline)
+                    .foregroundStyle(Momentum.contentSecondary)
+            }
+        }
+    }
+
     private var youFilterSection: some View {
         VStack(alignment: .leading, spacing: 10) {
             MomentumSectionHeader(title: "This verse")
-            Toggle("Use people", isOn: $youUsePeople)
-                .disabled(youStreetOnly)
-            Toggle("Use the bottle", isOn: $youUseBottle)
-                .disabled(youStreetOnly)
-            Toggle("Street only", isOn: $youStreetOnly)
+            Toggle("Use people", isOn: Binding(
+                get: { youUsePeople },
+                set: {
+                    youUsePeople = $0
+                    saveYouSettings(for: brainStore.activeBrainID)
+                }
+            ))
+            .disabled(youStreetOnly)
+            Toggle("Use the bottle", isOn: Binding(
+                get: { youUseBottle },
+                set: {
+                    youUseBottle = $0
+                    saveYouSettings(for: brainStore.activeBrainID)
+                }
+            ))
+            .disabled(youStreetOnly)
+            Toggle("Street only", isOn: Binding(
+                get: { youStreetOnly },
+                set: {
+                    youStreetOnly = $0
+                    saveYouSettings(for: brainStore.activeBrainID)
+                }
+            ))
             Text("Filters retrieve. They are not a new model.")
                 .font(.caption)
                 .foregroundStyle(Momentum.contentSecondary)
         }
+    }
+
+    private func loadYouSettings(for brainID: String) {
+        let settings = ModelYouSettings.load(for: brainID)
+        youUsePeople = settings.usePeople
+        youUseBottle = settings.useBottle
+        youStreetOnly = settings.streetOnly
+    }
+
+    private func saveYouSettings(for brainID: String) {
+        let settings = ModelYouSettings(
+            usePeople: youUsePeople,
+            useBottle: youUseBottle,
+            streetOnly: youStreetOnly
+        )
+        settings.save(for: brainID)
     }
 
     private var wrapSection: some View {

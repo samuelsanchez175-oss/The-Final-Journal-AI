@@ -25,13 +25,62 @@ struct ModelYouVerseFilters: Equatable {
     }
 }
 
+/// Dedicated per-brain settings: modelYou_settings_<brainID>
+struct ModelYouSettings: Codable, Equatable {
+    var usePeople: Bool
+    var useBottle: Bool
+    var streetOnly: Bool
+
+    init(usePeople: Bool = true, useBottle: Bool = true, streetOnly: Bool = false) {
+        self.usePeople = usePeople
+        self.useBottle = useBottle
+        self.streetOnly = streetOnly
+    }
+
+    init(filters: ModelYouVerseFilters) {
+        self.usePeople = filters.usePeople
+        self.useBottle = filters.useBottle
+        self.streetOnly = filters.streetOnly
+    }
+
+    var filters: ModelYouVerseFilters {
+        ModelYouVerseFilters(usePeople: usePeople, useBottle: useBottle, streetOnly: streetOnly)
+    }
+
+    static func key(for brainID: String) -> String {
+        "modelYou_settings_\(brainID)"
+    }
+
+    static func load(for brainID: String, userDefaults: UserDefaults = .standard) -> ModelYouSettings {
+        guard let data = userDefaults.data(forKey: key(for: brainID)),
+              let decoded = try? JSONDecoder().decode(ModelYouSettings.self, from: data) else {
+            return ModelYouSettings()
+        }
+        return decoded
+    }
+
+    func save(for brainID: String, userDefaults: UserDefaults = .standard) {
+        if let data = try? JSONEncoder().encode(self) {
+            userDefaults.set(data, forKey: Self.key(for: brainID))
+        }
+    }
+}
+
 /// Phase 4: Model You is a writer seat, not a prompt rename of G.
 enum ModelYouWriterPolicy {
     static let settingsKey = "modelYou_settings"
 
-    static func settingsKey(for model: SuggestionModel) -> String {
+    static func settingsKey(for brainID: String) -> String {
+        ModelYouSettings.key(for: brainID)
+    }
+
+    static func settingsKey(for model: SuggestionModel, brainID: String? = nil) -> String {
         switch model {
-        case .modelYou: return settingsKey
+        case .modelYou:
+            if let brainID {
+                return settingsKey(for: brainID)
+            }
+            return settingsKey
         case .modelY: return "modelY_settings"
         case .modelG, .modelGv3, .modelGv4_1, .geminiLight:
             return "modelGv3_settings"

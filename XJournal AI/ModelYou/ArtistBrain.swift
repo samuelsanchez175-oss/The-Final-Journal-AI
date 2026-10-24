@@ -247,7 +247,8 @@ nonisolated struct ArtistBrainCard: Codable, Identifiable, Equatable {
     }
 }
 
-nonisolated struct ArtistBrain: Codable, Equatable {
+nonisolated struct ArtistBrain: Codable, Equatable, Identifiable {
+    var id: String = "default"
     var artistName: String = ""
     var spotifyURL: String = ""
     var appleMusicURL: String = ""
@@ -270,10 +271,13 @@ nonisolated struct ArtistBrain: Codable, Equatable {
     var identitySketch: ArtistIdentitySketch = ArtistIdentitySketch()
     var ingestProgress: ArtistIngestProgress = ArtistIngestProgress()
 
-    init() {}
+    init(id: String = "default") {
+        self.id = id
+    }
 
     init(from decoder: Decoder) throws {
         let c = try decoder.container(keyedBy: CodingKeys.self)
+        id = try c.decodeIfPresent(String.self, forKey: .id) ?? "default"
         artistName = try c.decodeIfPresent(String.self, forKey: .artistName) ?? ""
         spotifyURL = try c.decodeIfPresent(String.self, forKey: .spotifyURL) ?? ""
         appleMusicURL = try c.decodeIfPresent(String.self, forKey: .appleMusicURL) ?? ""

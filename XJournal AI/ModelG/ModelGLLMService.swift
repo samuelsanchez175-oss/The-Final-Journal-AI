@@ -28,6 +28,15 @@ class ModelGLLMService {
 
     /// Generate N bar candidates in one request. Returns raw line strings.
     func generateBarCandidates(count: Int, context: GenerationContext) async throws -> [String] {
+        if ModelGEnvironment.useLocalMLXAdapter {
+            if let localBars = try? await generateLocalMLXBars(
+                sectionMode: context.isHook ? "hook" : "verse",
+                bars: max(4, min(16, count)),
+                context: context
+            ), !localBars.isEmpty {
+                return Array(localBars.prefix(count))
+            }
+        }
         let prompt = buildBarCandidatesPrompt(count: count, context: context)
         let text = try await postChat(
             system: "You are Model G. Output ONLY the requested number of bar options, one per line. No numbering, labels, or explanations.",
@@ -42,6 +51,15 @@ class ModelGLLMService {
 
     /// Generate a hook.
     func generateHook(context: GenerationContext) async throws -> String {
+        if ModelGEnvironment.useLocalMLXAdapter {
+            if let localBars = try? await generateLocalMLXBars(
+                sectionMode: "hook",
+                bars: 4,
+                context: context
+            ), !localBars.isEmpty {
+                return localBars.prefix(4).joined(separator: "\n")
+            }
+        }
         let params = context.directedParams
         let layer = context.luxuryLayer ?? .empty
         let signalBlock = context.signalAxes.map { "\n" + signalDirective($0) } ?? ""
@@ -67,6 +85,66 @@ class ModelGLLMService {
             system: "You are Model G. Output only the hook lines.",
             user: prompt, maxTokens: 80, temperature: 0.7, jsonMode: false
         )).trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    /// Calls the local Apple Silicon MLX QLoRA bridge (`POST /api/penwork/generate` on `desk.py`).
+    func generateLocalMLXBars(
+        sectionMode: String,
+        bars: Int,
+        context: GenerationContext
+    ) async throws -> [String] {
+        let base = ModelGEnvironment.localMLXBaseURL.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard let url = URL(string: "\(base)/api/penwork/generate") else {
+            throw ModelGLLMError.requestFailed
+        }
+        let bpm: Int = {
+            if let b = context.musicalBPM { return b }
+            if let d = context.beatFingerprint?.bpm { return Int(d.rounded()) }
+            return 140
+        }()
+        let scale: String = {
+            if let k = context.musicalKey, !k.isEmpty {
+                if let s = context.musicalScale, !s.isEmpty { return "\(k) \(s)" }
+                return k
+            }
+            return "F minor"
+        }()
+        let seedLine = context.existingBars.last(where: { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }) ?? ""
+        let payload: [String: Any] = [
+            "adapter": "full",
+            "voice": ModelGEnvironment.localMLXVoice,
+            "bpm": bpm,
+            "scale": scale,
+            "section_mode": sectionMode,
+            "bars": bars,
+            "seed_line": seedLine,
+            "topic": context.intent.theme,
+            "temperature": 0.85,
+            "top_p": 0.95
+        ]
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.timeoutInterval = 30
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try JSONSerialization.data(withJSONObject: payload)
+
+        let (data, response) = try await URLSession.shared.data(for: request)
+        guard let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) else {
+            throw ModelGLLMError.requestFailed
+        }
+        guard let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+              (json["ok"] as? Bool) == true else {
+            throw ModelGLLMError.requestFailed
+        }
+        if let lines = json["lines"] as? [String], !lines.isEmpty {
+            return lines
+        }
+        if let raw = json["raw"] as? String {
+            return raw.components(separatedBy: .newlines)
+                .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+                .filter { !$0.isEmpty }
+        }
+        return []
     }
 
     // MARK: - Model G v3 — planned single-call verse
