@@ -1194,6 +1194,14 @@ def _recent_takes(root: Path, limit: int = 12) -> list:
     return takes
 
 
+def _telemetry_summary(root: Path) -> dict:
+    try:
+        import telemetry
+        return telemetry.get_telemetry_stats()
+    except Exception:
+        return {}
+
+
 def collect_studio_state(root: Path, grades_path: Path = None) -> dict:
     base_metrics = collect_metrics(root, grades_path=grades_path)
     voice_inv = _voice_inventory(root)
@@ -1220,6 +1228,7 @@ def collect_studio_state(root: Path, grades_path: Path = None) -> dict:
         "voice_inventory": voice_inv,
         "syllable_curve": syllable_curve,
         "recent_takes": _recent_takes(root),
+        "v4_telemetry": _telemetry_summary(root),
         "decisions": decisions,
         "corpus_summary": {
             "source_rows": 1793548,
@@ -1609,6 +1618,13 @@ def make_handler(root: Path, grades_path: Path):
                 b = float((qs.get("bpm") or ["130"])[0])
                 metrics = polish.get_artist_bag_metrics(voice=v, scale=s, bpm=b)
                 self._send(200, "application/json; charset=utf-8", json.dumps(metrics).encode("utf-8"))
+                return
+            if path == "/api/telemetry":
+                import telemetry
+                stats = telemetry.get_telemetry_stats()
+                recent = telemetry.read_telemetry(limit=32)
+                body = json.dumps({"ok": True, "stats": stats, "recent": recent}).encode("utf-8")
+                self._send(200, "application/json; charset=utf-8", body)
                 return
             if path == "/api/artist_albums":
                 from urllib.parse import parse_qs

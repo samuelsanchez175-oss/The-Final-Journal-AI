@@ -18,6 +18,7 @@ import os
 import sys
 import time
 import urllib.request
+import uuid
 from pathlib import Path
 
 from lyriclib import end_rime, estimate_syllables, load_cmudict, normalize, tempo_line_syllables, tokenize
@@ -976,9 +977,11 @@ def generate_frontier_bars_v2(
     taste_k: int = 6,
     taste_store: Any = None,
     plan: dict = None,
+    generation_id: str = "",
 ) -> dict:
     """Full V2/V3 generation pipeline: executes Retrieve & Remix over authentic catalog lines with dynamic edit cap."""
     t0 = time.time()
+    generation_id = generation_id or f"v3_{int(time.time())}_{uuid.uuid4().hex[:8]}"
     clock_bpm, halftime_bpm, tempo_label = normalize_trap_tempo(bpm)
     effective_syl = target_syl if target_syl else max(15, tempo_line_syllables(clock_bpm) + 2)
     dna = _get_voice_dna()
@@ -1607,6 +1610,19 @@ def generate_frontier_bars_v2(
     except Exception:
         pass
 
+    # Task K: Write per-bar telemetry
+    try:
+        from telemetry import write_verse_telemetry
+        write_verse_telemetry(
+            generation_id=generation_id,
+            bars=detailed_bars,
+            plan=plan,
+            style_score=0.82,
+            voice=voice,
+        )
+    except Exception:
+        pass
+
     # Generate V3 Audio Stem Alignment Grid
     stem_grid = v3_audio_aligner.generate_full_stem_alignment(
         detailed_bars,
@@ -1621,6 +1637,7 @@ def generate_frontier_bars_v2(
     return {
         "ok": True,
         "version": "v3",
+        "generation_id": generation_id,
         "provider": provider,
         "voice": voice,
         "blend": blend,

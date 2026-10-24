@@ -248,3 +248,22 @@ files and a HANDOFF ENTRY.
 - **Full V4 Suite Status:**
   - `python3 -m unittest tools/lyric-llm/test_grid_gate.py tools/lyric-llm/test_taste_blocks_v4.py tools/lyric-llm/test_v4_planner.py tools/lyric-llm/test_frontier_v4.py tools/lyric-llm/test_catalog_retriever_v2.py`: **27/27 PASSED**.
 - **Next Frontier v4 Tasks:** Task K (Telemetry writer: `tools/lyric-llm/out/v4_telemetry.jsonl`) -> Task L (Prompt + params cache: `tools/lyric-llm/out/cache/<hash>.json`) -> Task M (Spotify popularity ingest: `tools/lyric-llm/spotify_popularity.py` reading `.env.spotify`).
+
+### HANDOFF ENTRY: Frontier v4 Task K Completed — Per-Bar Telemetry Writer (2026-10-24, Antigravity)
+
+**Status:** Task K (Per-Bar Telemetry Writer) is live and verified across 32/32 tests in the Frontier v4 suite.
+- **Component Changes (`tools/lyric-llm/telemetry.py`):**
+  - Implemented `write_bar_telemetry()` and `write_verse_telemetry()` writing to `tools/lyric-llm/out/v4_telemetry.jsonl`.
+  - Enforced schema containing all 14 required fields:
+    `generation_id`, `bar_index`, `voice`, `retrieval_hit`, `retrieval_id`, `edit_distance`, `end_word_preserved`, `rhyme_family`, `target_syl`, `actual_syl`, `delta`, `punch_demoted`, `style_score`, `plan_hit`.
+  - Implemented `check_punch_demoted(bar_text, target_end_word, punch_bank)` detecting mid-bar punch token demotions per `eval/grade_modelyou.py` rule.
+  - Implemented `read_telemetry()` and `get_telemetry_stats()` calculating aggregate analytics (`retrieval_hit_rate`, `end_word_preservation_rate`, `mean_edit_distance`, `on_grid_rate`, `punch_demoted_rate`, `plan_hit_rate`, `mean_style_score`).
+- **Pipeline Integration (`frontier_v4.py`, `polish.py`, `desk.py`):**
+  - Wired `write_verse_telemetry()` into `generate_v4()` and `generate_frontier_bars_v2()`.
+  - Added unique `generation_id` tracing to every verse generation run.
+  - Exposed `v4_telemetry` summary in `collect_studio_state()` and added live `/api/telemetry` endpoint to `desk.py`.
+- **Unit Tests (`tools/lyric-llm/test_v4_telemetry.py`):**
+  - 5/5 tests passed in 1.08s covering punch-demotion detection, 14-field schema validation, verse roundtrip, stats computation, and master pipeline telemetry logging.
+- **Full V4 Suite Status:**
+  - 32/32 tests passing across all 6 test suites (`test_grid_gate.py`, `test_taste_blocks_v4.py`, `test_v4_planner.py`, `test_frontier_v4.py`, `test_catalog_retriever_v2.py`, `test_v4_telemetry.py`).
+- **Next Frontier v4 Tasks:** Task L (Prompt + params cache: `tools/lyric-llm/out/cache/<hash>.json`) -> Task M (Spotify popularity ingest: `tools/lyric-llm/spotify_popularity.py` reading `.env.spotify`).

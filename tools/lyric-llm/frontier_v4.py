@@ -23,6 +23,7 @@ import re
 import sys
 import time
 import urllib.request
+import uuid
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional
 
@@ -45,6 +46,7 @@ from catalog_retriever import (
     verify_remix_compliance,
 )
 from lyriclib import end_rime, normalize, tempo_line_syllables, tokenize
+from telemetry import check_punch_demoted, write_verse_telemetry
 
 try:
     from style_scorer import score_verse
@@ -263,10 +265,12 @@ def generate_v4(
     taste_on: bool = True,
     taste_k: int = 6,
     candidates: int = 1,
+    generation_id: str = "",
     call_fn: Optional[Callable[[str, str], str]] = None,
 ) -> dict:
     """Master entry point for Frontier V4 Two-Pass Generation with Grid Verification & Style Scoring."""
     t0 = time.time()
+    generation_id = generation_id or f"v4_{int(time.time())}_{uuid.uuid4().hex[:8]}"
     clock_bpm, halftime_bpm, tempo_label = polish.normalize_trap_tempo(bpm)
     effective_syl = target_syl if target_syl else max(15, tempo_line_syllables(clock_bpm) + 2)
     cmu = polish._get_cmu()
@@ -452,6 +456,8 @@ def generate_v4(
             "end_word_preserved": True,
         }
         bar_grid = best_take["grid_gate"]["bar_results"][idx] if idx < len(best_take["grid_gate"]["bar_results"]) else {}
+        cat_id = cat_match.get("id") if cat_match else None
+        p_demoted = check_punch_demoted(ln, target_end_word=target_word)
 
         detailed_bars.append({
             "index": idx + 1,
@@ -471,12 +477,14 @@ def generate_v4(
             "rhyme_family": plan["rhyme_families"][couplet_idx % len(plan["rhyme_families"])] if plan.get("rhyme_families") else "",
             "motif": plan["motif_chain"][couplet_idx % len(plan["motif_chain"])].replace("_", " ").title() if plan.get("motif_chain") else "Motif",
             "couplet_num": couplet_idx + 1,
+            "source_catalog_id": cat_id,
             "source_catalog_text": cat_match["text"] if cat_match else "",
             "source_catalog_song": cat_match["song"] if cat_match else "",
             "source_catalog_album": cat_match["album"] if cat_match else "",
             "edit_distance_ratio": compliance["edit_distance_ratio"],
             "remix_compliant": compliance["is_compliant"],
             "end_word_preserved": compliance["end_word_preserved"],
+            "punch_demoted": p_demoted,
             "grid_passed": bar_grid.get("passed", True),
             "grid_violations": bar_grid.get("off_grid_beats", []),
         })
@@ -486,6 +494,18 @@ def generate_v4(
         record_used_end_words([b["end_word"] for b in detailed_bars])
     except Exception:
         pass
+
+    # Task K: Write per-bar telemetry to tools/lyric-llm/out/v4_telemetry.jsonl
+    try:
+        write_verse_telemetry(
+            generation_id=generation_id,
+            bars=detailed_bars,
+            plan=plan,
+            style_score=best_take["style_score"],
+            voice=voice,
+        )
+    except Exception as exc:
+        print(f"[Frontier V4] Telemetry write failed: {exc}", file=sys.stderr)
 
     # Audio Stem Alignment Grid
     stem_grid = v3_audio_aligner.generate_full_stem_alignment(
@@ -500,6 +520,7 @@ def generate_v4(
     return {
         "ok": True,
         "version": "v4",
+        "generation_id": generation_id,
         "provider": f"frontier_v4 ({best_take['draft_model']} -> {best_take['polish_model']})",
         "voice": voice,
         "blend": blend,
