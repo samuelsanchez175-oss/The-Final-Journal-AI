@@ -1,0 +1,2 @@
+# Training and inference only. Prep and the corpus report use the standard library.
+mlx-lm[train]>=0.26

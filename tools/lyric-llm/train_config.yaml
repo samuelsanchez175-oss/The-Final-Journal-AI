@@ -1,0 +1,64 @@
+# QLoRA on this Mac (M1 Pro, 16GB). The base checkpoint is already 4-bit.
+# LoRA on that base is MLX's QLoRA path. Train with train.py, which reads the
+# leak-checked song files out/train.jsonl, out/val.jsonl, and out/test.jsonl,
+# windows them eight lines at a time, and writes out/train_config.run.yaml.
+# A direct `mlx_lm lora --config train_config.yaml` uses this file as-is.
+# Do not fuse the adapter and do not upload it.
+#
+# Voice conditioning is text on the user turn, learned by this LoRA.
+# The assistant turn is that artist's lines. mask_prompt puts the loss there.
+#   <voice:Artist> <bpm:140> <scale:A minor> <syl:11>
+# <bpm> and <scale> are written only when the song has them. Nothing is invented.
+
+model: mlx-community/Qwen2.5-3B-Instruct-4bit
+train: true
+fine_tune_type: lora
+optimizer: adamw
+# Full-run windows. --smoke rewrites this to out/smoke in the run file.
+data: out/mlx_songs
+seed: 7
+# The last 8 layers are the ones the voice prefix has to steer.
+num_layers: 8
+# One sequence keeps the 3B activations inside 16GB.
+batch_size: 1
+# Placeholder only. train.py writes ceil(windows / batch_size * epochs) into the run file.
+iters: 1
+val_batches: 10
+# Low enough that a 3B adapter keeps base fluency while picking up voice and cadence.
+# The schedule below is what MLX uses; its first argument is this same peak.
+learning_rate: 2.0e-5
+# One means every micro-step reports loss, which is what training_log.csv records.
+steps_per_report: 1
+steps_per_eval: 500
+# Eight micro-steps per optimizer update give an effective batch of 8; MLX counts each micro-step as one iter.
+grad_accumulation_steps: 8
+# A checkpoint is written every 500 steps, and MLX also saves the final adapter when the run ends.
+save_every: 500
+adapter_path: adapters
+# Eight-line windows plus the voice prefix fit in 384 tokens and keep 3B activations inside 16GB.
+max_seq_length: 384
+grad_checkpoint: true
+# Loss is on the lyrics that follow the voice token, which is how a typed
+# voice name at generation time pulls that artist's writing.
+mask_prompt: true
+test: false
+# One pass over the windows is the full run; a second pass mostly memorizes hooks.
+epochs: 1
+
+# The first steps climb from 1.0e-7 so a fresh adapter does not kick the 4-bit weights.
+# arguments are [peak, decay_steps, end]. train.py sets decay_steps to the real iter count.
+lr_schedule:
+  name: cosine_decay
+  warmup: 100
+  warmup_init: 1.0e-7
+  arguments: [2.0e-5, 200000, 1.0e-7]
+
+lora_parameters:
+  # These two projections are what learn each <voice:...> string. A new
+  # embedding row per artist does not fit beside this 3B model on 16GB.
+  keys: ["self_attn.q_proj", "self_attn.v_proj"]
+  # Rank 8 is enough for voice and cadence on this 3B model while staying inside 16GB.
+  rank: 8
+  # LoRA alpha is 160, and MLX applies it as scale 20 (160/8), the absolute adapter multiplier.
+  scale: 20.0
+  dropout: 0.05

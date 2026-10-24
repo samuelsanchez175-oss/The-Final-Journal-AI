@@ -93,3 +93,16 @@ tools/bar-hits-catalog/*.sqlite.gz
 # AI Sparkler style profile: credentials and big outputs
 tools/style-profile/.env.spotify
 tools/style-profile/out/
+
+# Lyric LLM: private corpus exports, adapters, and the local env.
+# Do not commit lyrics or fine-tuned weights.
+tools/lyric-llm/out/
+tools/lyric-llm/adapters/
+tools/lyric-llm/adapters_gold/
+tools/lyric-llm/adapters_pilot_*/
+tools/lyric-llm/adapters_smoke/
+tools/lyric-llm/adapters.replaced-*/
+tools/lyric-llm/adapters_smoke.replaced-*/
+tools/lyric-llm/.venv/
+tools/lyric-llm/*.log
+tools/lyric-llm/**/__pycache__/

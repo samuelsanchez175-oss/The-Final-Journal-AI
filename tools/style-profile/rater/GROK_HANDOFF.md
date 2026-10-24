@@ -191,3 +191,34 @@ files and a HANDOFF ENTRY.
   - `ModelYouPromptTests`: 10/10 PASSED.
   - `ArtistIdentityIngestTests`: 7/7 PASSED.
   - **Total 27/27 Model You tests passed on iOS Simulator (iPhone 18 Pro) with 0 failures.**
+
+### HANDOFF ENTRY: Frontier v4 Tasks G, B', J, O Completed — Two-Pass Frontier Engine (2026-10-24, Antigravity)
+
+**Status:** Frontier v4 pivot is live with Tasks G, B', J, and O complete and verified across 20 unit tests.
+- **Context & Architecture Pivot:**
+  - Shelved local QLoRA / MLX / Qwen 3B (inferior quality vs frontier retrieve-and-remix).
+  - Frontier v4 is 100% frontier-model calls via OmniRoute (`claude-opus-4-7`, `auto/best-reasoning`, `gh/gpt-4o`, `gh/gpt-4o-mini`).
+  - Zero Swift edits; all work localized to `tools/lyric-llm/` and `tools/style-profile/`.
+- **Task G — Grid-Aware Syllable Gate & Targeted Retries (`polish.py`):**
+  - Implemented `verify_grid_landings(bars, bpm, effective_syl, cmu) -> dict`: verifies 4x4 Quadrasonic meter (exactly 3 commas, 4 beats of target syllables [min_syl, max_syl]).
+  - A bar fails if >= 2 beats fall outside the ±1 margin or phrase count != 4.
+  - Implemented `rewrite_off_grid_bar(...)`: fires focused single-bar rewrite preserving target catalog end-words on Beat 4 up to 2 retries per bar (capped globally).
+  - Tests: `tools/lyric-llm/test_grid_gate.py` (7/7 passed in 1.4s).
+- **Task B' — Retarget Rater Taste Blocks at `polish.py`:**
+  - Injected `build_taste_prompt_blocks(artist, store, taste_k)` directly into `build_v2_system_prompt`:
+    - Top-K keeper bars -> `WRITE LIKE THIS (keeper bars from this artist, rated by the writer):`
+    - Top-K downvoted reasons -> `AVOID (these problems hit before):`
+  - CLI and API flags `--taste on|off` (default `on`), `--taste-k` (default `6`).
+  - Tests: `tools/lyric-llm/test_taste_blocks_v4.py` (5/5 passed in 1.8s).
+- **Task J — Reasoning Planner Backbone (`tools/lyric-llm/planner.py`):**
+  - Added `plan_v4(voice, bpm, bars, topic_hint, chosen_albums, blend, mix) -> dict`: calls OmniRoute reasoning models (`auto/claude-opus`, `auto/best-reasoning`, `gh/gpt-4o`) to return structured JSON blueprint (`motif_chain`, `couplet_voices`, `end_words`, `rhyme_families`, `couplet_narratives`).
+  - Enforces catalog presence and generic nursery-rhyme blacklist filtering on all planned end words.
+  - Tests: `tools/lyric-llm/test_v4_planner.py` (4/4 passed in 0.9s).
+- **Task O — Multi-Pass Frontier Polish Orchestrator (`tools/lyric-llm/frontier_v4.py`):**
+  - Orchestrates Pass 0 (Planner) -> Pass 1 (`draft_scaffold` via `gpt-4o-mini`) -> Pass 2 (`polish_scaffold` via `gpt-4o`/`Opus`) -> Pass 3 (`verify_grid_landings` & retries) -> Pass 4 (Style Scorer candidate ranking).
+  - Wired `adapter=v4` / `frontier_v4` directly into `tools/lyric-llm/desk.py`.
+  - Tests: `tools/lyric-llm/test_frontier_v4.py` (4/4 passed in 3.1s).
+- **Verification Results:**
+  - Full v4 suite: `python3 -m unittest tools/lyric-llm/test_grid_gate.py tools/lyric-llm/test_taste_blocks_v4.py tools/lyric-llm/test_v4_planner.py tools/lyric-llm/test_frontier_v4.py`: **20/20 PASSED**.
+  - Style-profile suite: **34/34 PASSED**.
+- **Next Frontier v4 Tasks:** Task H (Catalog retriever v2) -> Task K (Telemetry writer) -> Task L (Prompt/params cache) -> Task M (Spotify popularity ingest).
