@@ -166,3 +166,28 @@ files and a HANDOFF ENTRY.
     - `mimic_11.json` (Seed 11): 2/2 passed, score 100.0 (phone/cologne, skate/relate, start/heart, house/spouse). `bad_rhyme` = 0.
   - **`bad_rhyme` Share:** **0 out of 5 verses (0%)**, dropping from the prior baseline of 28/50 (56%), well below the <25% target.
 - **Next Task:** Task E — Runtime house-noun scrub (`XJournal AI/RapSuggestionAPI.swift`).
+
+### HANDOFF ENTRY: Task F Completed — Multi-Brain Store (2026-10-24, Antigravity)
+
+**Status:** Task F is complete and fully verified.
+- **Implemented:**
+  - **Identifiable ArtistBrain (`XJournal AI/ModelYou/ArtistBrain.swift`):** Added `id: String = "default"` with backward-compatible decoding fallback.
+  - **Multi-Brain Store (`XJournal AI/ModelYou/ArtistBrainStore.swift`):**
+    - File persistence under `ModelYouBrains/<id>.json` in the app's document directory.
+    - Idempotent migration (`migrateLegacyBrainIfNeeded()`): migrates legacy brain from `UserDefaults` (`model_you_artist_brain`) to `default.json` with zero data loss.
+    - Multi-brain management: `load(id:)`, `save(brain:)`, `delete(id:)`, `switchBrain(to id:)`, and `allBrainSummaries() -> [ArtistBrainSummary]`.
+    - Maintained full backward compatibility with `.shared`, `@MainActor`, `reload()`, and legacy mirrors.
+  - **Per-Brain Settings Segregation (`XJournal AI/ModelYou/ModelYouWriterPolicy.swift`):**
+    - Created `ModelYouSettings` struct encapsulating `usePeople`, `useBottle`, `streetOnly`.
+    - Keys segregated per brain: `modelYou_settings_<brainID>` with `key(for:)`, `load(for:)`, `save(for:)`.
+  - **Brain Picker in UI (`XJournal AI/ModelGControlSurfaceView.swift`):**
+    - Added `brainPickerSection` when `selectedModel == .modelYou`.
+    - Switches active brain and synchronizes per-brain settings without cross-brain collision.
+  - **Full Test Suite (`The Final Journal AITests/ModelYouMultiBrainTests.swift`):**
+    - Created 5 unit tests verifying migration, brain creation & switching, settings segregation, brain deletion, and sparkle picker integrity.
+- **Verification Results:**
+  - `ModelYouMultiBrainTests`: 5/5 PASSED.
+  - `ModelYouWiringTests`: 5/5 PASSED.
+  - `ModelYouPromptTests`: 10/10 PASSED.
+  - `ArtistIdentityIngestTests`: 7/7 PASSED.
+  - **Total 27/27 Model You tests passed on iOS Simulator (iPhone 18 Pro) with 0 failures.**
