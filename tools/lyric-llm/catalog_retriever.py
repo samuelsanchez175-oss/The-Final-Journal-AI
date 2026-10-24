@@ -26,11 +26,34 @@ from typing import Any, Dict, List, Optional, Tuple
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent.parent
 OUT = HERE / "out"
+STYLE_PROFILE_DIR = HERE.parent / "style-profile"
 DB_PATH = OUT / "catalog_index.sqlite"
 CMU_PATH = REPO_ROOT / "XJournal AI" / "cmudict.txt"
 TRAIN_JSONL = OUT / "train.jsonl"
 GROUND_TRUTH_CSV = REPO_ROOT / "XJournal AI" / "ground_truth_rap_bars_MODEL_G.csv"
 GENIUS_CLICKS_DIR = REPO_ROOT / "docs" / "play-on-words" / "genius-clicks"
+END_WORD_HISTORY_PATH = OUT / "end_word_history.json"
+
+# Global Cross-Generation End-Word Dedupe Window
+_GLOBAL_END_WORD_WINDOW: list[str] = []
+_TOPIC_CHAIN_CACHE: dict[tuple[str, str, int], str] | None = None
+_SONG_DOMINANT_TOPIC_CACHE: dict[tuple[str, str], str] | None = None
+
+# Mapping between ADHD / Frontier motifs and Phase 4 authentic catalog topic labels
+MOTIF_TO_TOPIC_ALIASES = {
+    "lavishness_money": {"money_flex", "luxury_brands", "party_lifestyle"},
+    "romance_women": {"women_romance", "sex"},
+    "street_defiance": {"violence_street", "loyalty_friends", "street_life"},
+    "boss_authority": {"braggadocio_skill", "fame_industry"},
+    "spiritual_faith": {"faith_hope", "spiritual", "other"},
+    "pain_betrayal": {"pain_struggle", "come_up_hustle", "violence_street"},
+    "money_flex": {"money_flex", "luxury_brands"},
+    "luxury_brands": {"luxury_brands", "money_flex"},
+    "women_romance": {"women_romance", "sex"},
+    "violence_street": {"violence_street"},
+    "faith_hope": {"faith_hope", "spiritual"},
+    "come_up_hustle": {"come_up_hustle", "pain_struggle"},
+}
 
 from lyriclib import (
     ADLIB_TRAILING_RE,
@@ -240,6 +263,159 @@ def load_song_album_map() -> dict[tuple[str, str], str]:
     return album_map
 
 
+def load_topic_chain_map() -> tuple[dict[tuple[str, str, int], str], dict[tuple[str, str], str]]:
+    """Loads bar-level topic mappings and song-level dominant topics from style-profile topic cache (Task H)."""
+    global _TOPIC_CHAIN_CACHE, _SONG_DOMINANT_TOPIC_CACHE
+    if _TOPIC_CHAIN_CACHE is not None and _SONG_DOMINANT_TOPIC_CACHE is not None:
+        return _TOPIC_CHAIN_CACHE, _SONG_DOMINANT_TOPIC_CACHE
+
+    bar_topics: dict[tuple[str, str, int], str] = {}
+    song_topics: dict[tuple[str, str], str] = {}
+    from collections import Counter
+
+    topic_files = [
+        OUT / "topic_chain.jsonl",
+        STYLE_PROFILE_DIR / "out" / "topic_cache.jsonl",
+        STYLE_PROFILE_DIR / "out" / "topic_chain_songs.jsonl",
+        STYLE_PROFILE_DIR / "out" / "topic_chain_artists.jsonl",
+    ]
+
+    for tf in topic_files:
+        if not tf.exists():
+            continue
+        try:
+            with tf.open("r", encoding="utf-8") as f:
+                for line in f:
+                    try:
+                        obj = json.loads(line)
+                        art = (obj.get("artist") or "").strip().lower()
+                        song = (obj.get("song") or "").strip().lower()
+                        if not art or not song:
+                            continue
+                        chain = obj.get("chain") or []
+                        if chain and (art, song) not in song_topics:
+                            counts = Counter(chain)
+                            song_topics[(art, song)] = counts.most_common(1)[0][0]
+
+                        for r in obj.get("runs", []):
+                            top = r.get("topic") or "other"
+                            s = r.get("start", 1)
+                            e = r.get("end", 1)
+                            for b in range(s, e + 1):
+                                bar_topics[(art, song, b)] = top
+                    except Exception:
+                        continue
+        except Exception:
+            continue
+
+    _TOPIC_CHAIN_CACHE = bar_topics
+    _SONG_DOMINANT_TOPIC_CACHE = song_topics
+    return _TOPIC_CHAIN_CACHE, _SONG_DOMINANT_TOPIC_CACHE
+
+
+def get_topic_for_bar(artist: str, song: str, line_seq: int, text: str = "") -> str:
+    """Returns the authentic topic label for a bar, with song-level and keyword fallback."""
+    bar_map, song_map = load_topic_chain_map()
+    art_low = (artist or "").strip().lower()
+    song_low = (song or "").strip().lower()
+    t = bar_map.get((art_low, song_low, line_seq))
+    if t:
+        return t
+    t = song_map.get((art_low, song_low))
+    if t:
+        return t
+    if text:
+        text_low = text.lower()
+        KEYWORD_TOPICS = {
+            "money_flex": ["patek", "maybach", "racks", "bands", "cash", "million", "billion", "rich", "bank", "check", "goyard", "diamonds", "rollie", "audemars", "audamar", "dollars"],
+            "luxury_brands": ["celine", "chanel", "gucci", "prada", "louis", "ferragamo", "amiri", "vetements", "balenciaga", "designer", "drip"],
+            "women_romance": ["she", "her", "girl", "bitch", "shawty", "lady", "love", "heart", "date", "stylist"],
+            "violence_street": ["glock", "switch", "steel", "trigger", "shoot", "body", "opp", "smoke", "bullet", "draco", "gun", "chopper"],
+            "loyalty_friends": ["brother", "slime", "gang", "solid", "loyalty", "trust", "snitch", "inmate", "prison", "homie"],
+            "come_up_hustle": ["ditch", "corner", "block", "hustle", "starve", "cold", "trap", "kitchen", "work"],
+        }
+        for top_name, kws in KEYWORD_TOPICS.items():
+            if any(k in text_low for k in kws):
+                return top_name
+    return "other"
+
+
+def get_end_word_history(window_size: int = 16, history_path: Path = END_WORD_HISTORY_PATH) -> list[str]:
+    """Retrieves recently used end-words across generations to enforce cross-generation deduplication (Task H)."""
+    global _GLOBAL_END_WORD_WINDOW
+    if not _GLOBAL_END_WORD_WINDOW and history_path.exists():
+        try:
+            with history_path.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    _GLOBAL_END_WORD_WINDOW = [str(w).lower() for w in data]
+        except Exception:
+            _GLOBAL_END_WORD_WINDOW = []
+    return _GLOBAL_END_WORD_WINDOW[-window_size:] if _GLOBAL_END_WORD_WINDOW else []
+
+
+def record_used_end_words(words: list[str], max_history: int = 64, history_path: Path = END_WORD_HISTORY_PATH) -> list[str]:
+    """Appends newly generated end-words to the persistent cross-generation dedupe window (Task H)."""
+    global _GLOBAL_END_WORD_WINDOW
+    clean_words = [re.sub(r"[^a-zA-Z0-9']", "", str(w).strip().lower()) for w in words if w]
+    clean_words = [w for w in clean_words if w and w not in GENERIC_END_RHYME_BLACKLIST]
+
+    get_end_word_history(max_history, history_path)
+    _GLOBAL_END_WORD_WINDOW.extend(clean_words)
+    _GLOBAL_END_WORD_WINDOW = _GLOBAL_END_WORD_WINDOW[-max_history:]
+
+    try:
+        history_path.parent.mkdir(parents=True, exist_ok=True)
+        with history_path.open("w", encoding="utf-8") as f:
+            json.dump(_GLOBAL_END_WORD_WINDOW, f)
+    except Exception:
+        pass
+    return _GLOBAL_END_WORD_WINDOW
+
+
+def clear_end_word_history(history_path: Path = END_WORD_HISTORY_PATH) -> None:
+    """Clears the persistent cross-generation dedupe window."""
+    global _GLOBAL_END_WORD_WINDOW
+    _GLOBAL_END_WORD_WINDOW = []
+    if history_path.exists():
+        try:
+            history_path.unlink()
+        except Exception:
+            pass
+
+
+def normalize_vowel_class(v: str) -> str:
+    """Normalizes vowel phoneme or class alias (e.g. 'V_aa', 'AA', 'V_broad') to standard RAP_VOWEL_CLASSES label."""
+    if not v:
+        return ""
+    v_clean = str(v).strip()
+    if v_clean in RAP_VOWEL_CLASSES.values():
+        return v_clean
+    upper = v_clean.upper()
+    if upper.startswith("V_"):
+        upper = upper[2:]
+    if upper in RAP_VOWEL_CLASSES:
+        return RAP_VOWEL_CLASSES[upper]
+    PHONEME_TO_CLASS = {
+        "AA": "V_broad",
+        "AO": "V_broad",
+        "AW": "V_broad",
+        "AE": "V_front_open",
+        "EH": "V_front_open",
+        "IY": "V_front_high",
+        "IH": "V_weak",
+        "AH": "V_weak",
+        "EY": "V_front_mid",
+        "AY": "V_front_low",
+        "OW": "V_round_mid",
+        "UW": "V_round_high",
+        "UH": "V_round_mid",
+        "OY": "V_round_dip",
+        "ER": "V_rhot",
+    }
+    return PHONEME_TO_CLASS.get(upper, v_clean)
+
+
 def init_catalog_db(db_path: Path = DB_PATH) -> sqlite3.Connection:
     """Creates the SQLite schema if not already present."""
     db_path.parent.mkdir(parents=True, exist_ok=True)
@@ -268,7 +444,9 @@ def init_catalog_db(db_path: Path = DB_PATH) -> sqlite3.Connection:
             chronological_arc TEXT DEFAULT 'verse_build',
             next_bar_text TEXT DEFAULT '',
             next_bar_end_word TEXT DEFAULT '',
-            is_iconic_anthem INTEGER DEFAULT 0
+            is_iconic_anthem INTEGER DEFAULT 0,
+            topic TEXT DEFAULT '',
+            inner_vowel_class TEXT DEFAULT ''
         );
     """)
     conn.execute("CREATE INDEX IF NOT EXISTS idx_artist_rime ON catalog_bars(artist, end_rime, syllables);")
@@ -277,6 +455,18 @@ def init_catalog_db(db_path: Path = DB_PATH) -> sqlite3.Connection:
     conn.execute("CREATE INDEX IF NOT EXISTS idx_artist_pos ON catalog_bars(artist, relative_pos);")
     conn.execute("CREATE INDEX IF NOT EXISTS idx_artist_song_seq ON catalog_bars(artist, song, line_seq);")
     conn.execute("CREATE INDEX IF NOT EXISTS idx_popularity ON catalog_bars(popularity_score);")
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_artist_topic ON catalog_bars(artist, topic);")
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_artist_inner_vowel ON catalog_bars(artist, inner_vowel_class);")
+
+    # Migrate existing tables if columns missing
+    cur = conn.cursor()
+    cur.execute("PRAGMA table_info(catalog_bars);")
+    cols = {c[1] for c in cur.fetchall()}
+    if "topic" not in cols:
+        conn.execute("ALTER TABLE catalog_bars ADD COLUMN topic TEXT DEFAULT '';")
+    if "inner_vowel_class" not in cols:
+        conn.execute("ALTER TABLE catalog_bars ADD COLUMN inner_vowel_class TEXT DEFAULT '';")
+
     conn.commit()
     return conn
 
@@ -399,6 +589,8 @@ def build_catalog_index(
 
                         inner_matches = detect_inner_rhymes(clean_line, cmu)
                         inner_json = json.dumps(inner_matches[:8])
+                        inner_vclass = inner_matches[0]["v_class"] if inner_matches else ""
+                        bar_topic = get_topic_for_bar(art, song_title, line_seq, clean_line)
 
                         batch.append((
                             art,
@@ -421,6 +613,8 @@ def build_catalog_index(
                             next_text,
                             next_end,
                             is_anthem,
+                            bar_topic,
+                            inner_vclass,
                         ))
 
                         if len(batch) >= 5000:
@@ -430,8 +624,9 @@ def build_catalog_index(
                                     vowel_class, syllables, inner_rhymes_json,
                                     inner_rhyme_count, popularity_score, is_generic,
                                     line_seq, total_lines, relative_pos, chronological_arc,
-                                    next_bar_text, next_bar_end_word, is_iconic_anthem
-                                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+                                    next_bar_text, next_bar_end_word, is_iconic_anthem,
+                                    topic, inner_vowel_class
+                                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
                             """, batch)
                             conn.commit()
                             inserted += len(batch)
@@ -494,6 +689,8 @@ def build_catalog_index(
 
                     inner_matches = detect_inner_rhymes(clean_line, cmu)
                     inner_json = json.dumps(inner_matches[:8])
+                    inner_vclass = inner_matches[0]["v_class"] if inner_matches else ""
+                    bar_topic = get_topic_for_bar(art, song_title, b_idx, clean_line)
 
                     batch.append((
                         art,
@@ -516,6 +713,8 @@ def build_catalog_index(
                         "",
                         "",
                         is_anthem,
+                        bar_topic,
+                        inner_vclass,
                     ))
 
                     if len(batch) >= 5000:
@@ -525,8 +724,9 @@ def build_catalog_index(
                                 vowel_class, syllables, inner_rhymes_json,
                                 inner_rhyme_count, popularity_score, is_generic,
                                 line_seq, total_lines, relative_pos, chronological_arc,
-                                next_bar_text, next_bar_end_word, is_iconic_anthem
-                            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+                                next_bar_text, next_bar_end_word, is_iconic_anthem,
+                                topic, inner_vowel_class
+                            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
                         """, batch)
                         conn.commit()
                         inserted += len(batch)
@@ -541,8 +741,9 @@ def build_catalog_index(
                 vowel_class, syllables, inner_rhymes_json,
                 inner_rhyme_count, popularity_score, is_generic,
                 line_seq, total_lines, relative_pos, chronological_arc,
-                next_bar_text, next_bar_end_word, is_iconic_anthem
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+                next_bar_text, next_bar_end_word, is_iconic_anthem,
+                topic, inner_vowel_class
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
         """, batch)
         conn.commit()
         inserted += len(batch)
@@ -550,8 +751,6 @@ def build_catalog_index(
     conn.close()
     elapsed = round(time.time() - t0, 2)
     print(f"[CatalogRetriever] Indexed {inserted} high-quality chronological bars in {elapsed}s.")
-    return inserted
-    print(f"[CatalogRetriever] Indexed {inserted} high-quality authentic bars in {elapsed}s.")
     return inserted
 
 
@@ -572,6 +771,7 @@ def extract_seed_pattern(seed_lines: list[str], cmu: dict[str, list[str]], bpm: 
         v_class = RAP_VOWEL_CLASSES.get(v_str, "V_other") if v_str else "V_other"
         syl = estimate_syllables(clean)
         inner = detect_inner_rhymes(clean, cmu)
+        inner_vclass = inner[0]["v_class"] if inner else ""
         is_generic = end_w in GENERIC_END_RHYME_BLACKLIST
         # Respect user's explicit syllable density (Task 4)
         line_target_syl = max(base_target, syl) if syl >= 14 else base_target
@@ -584,6 +784,7 @@ def extract_seed_pattern(seed_lines: list[str], cmu: dict[str, list[str]], bpm: 
             "end_word": end_w,
             "end_rime": rime_str,
             "vowel_class": v_class,
+            "inner_vowel_class": inner_vclass,
             "syllables": syl,
             "target_syllables": line_target_syl,
             "inner_rhymes": inner,
@@ -600,6 +801,10 @@ def retrieve_matching_catalog_lines(
     limit: int = 8,
     bar_number: int = 1,
     previous_retrieved_line: dict[str, Any] = None,
+    topic_hint: str = "",
+    target_inner_vowel: str = "",
+    recent_end_words: list[str] | set[str] = None,
+    end_word_dedupe_window: int = 16,
     db_path: Path = DB_PATH,
 ) -> list[dict[str, Any]]:
     """Retrieves real catalog lines matching the pattern with chronological ordering, couplet chaining, popularity, and artist tier weighting."""
@@ -615,6 +820,27 @@ def retrieve_matching_catalog_lines(
     target_word = (pattern.get("end_word") or "").lower()
     target_syl = pattern.get("target_syllables") or pattern.get("syllables") or 16
     user_albums = set(a.lower() for a in (chosen_albums or DEFAULT_CHOSEN_ALBUMS.get(artist, [])))
+
+    # Task H: Resolve Topic-Chain Aliases
+    target_topic = (topic_hint or pattern.get("topic") or "").strip().lower()
+    target_topics: set[str] = set()
+    if target_topic:
+        target_topics.add(target_topic)
+        target_topics.update(MOTIF_TO_TOPIC_ALIASES.get(target_topic, []))
+        for k, aliases in MOTIF_TO_TOPIC_ALIASES.items():
+            if k in target_topic or target_topic in k:
+                target_topics.add(k)
+                target_topics.update(aliases)
+    primary_topic = list(target_topics)[0] if target_topics else target_topic
+
+    # Task H: Resolve Inner-Rhyme Target Vowel Class
+    raw_inner = target_inner_vowel or pattern.get("inner_vowel_class") or pattern.get("target_inner_vowel") or ""
+    norm_inner_vowel = normalize_vowel_class(raw_inner)
+
+    # Task H: Resolve Cross-Generation End-Word Dedupe Window
+    if recent_end_words is None:
+        recent_end_words = get_end_word_history(window_size=end_word_dedupe_window)
+    recent_list = [str(w).lower() for w in recent_end_words if w]
 
     # Chronological Arc & Position Map for 8-bar structures
     target_arc_map = {
@@ -642,7 +868,7 @@ def retrieve_matching_catalog_lines(
                 SELECT id, artist, song, album, text, end_word, end_rime,
                        vowel_class, syllables, inner_rhyme_count, popularity_score,
                        line_seq, total_lines, relative_pos, chronological_arc,
-                       next_bar_text, is_iconic_anthem
+                       next_bar_text, is_iconic_anthem, topic, inner_vowel_class
                 FROM catalog_bars
                 WHERE artist = ? AND song = ? AND line_seq IN (?, ?) AND is_generic = 0;
             """, (artist, prev_song, prev_seq + 1, prev_seq + 2))
@@ -667,28 +893,38 @@ def retrieve_matching_catalog_lines(
                         # Massive continuity score for authentic consecutive chronological lines
                         cr["match_score"] = 99999.0
                         cr["is_consecutive_couplet"] = True
+                        cr["topic_match"] = bool(target_topics and cr.get("topic") in target_topics)
+                        cr["inner_vowel_match"] = bool(norm_inner_vowel and cr.get("inner_vowel_class") == norm_inner_vowel)
+                        cr["dedupe_penalty"] = 0.0
                         scored_candidates.append(cr)
                         break
 
     rime_last = target_rime.split()[-1] if target_rime else ""
     rime_like = f"% {rime_last}" if rime_last else "%"
 
-    # Composite SQL retrieval ranking combining exact end-word, exact rime, suffix rime, vowel class, popularity, and anthems
+    # Composite SQL retrieval ranking combining exact end-word, exact rime, suffix rime, vowel class, popularity, anthems, topic, and inner vowel
     sql = """
         SELECT id, artist, song, album, text, end_word, end_rime,
                vowel_class, syllables, inner_rhyme_count, popularity_score,
                line_seq, total_lines, relative_pos, chronological_arc,
-               next_bar_text, is_iconic_anthem,
+               next_bar_text, is_iconic_anthem, topic, inner_vowel_class,
                (CASE 
                     WHEN lower(end_word) = ? OR (lower(?) = 'audamar' AND lower(end_word) = 'audemars') THEN 300
                     WHEN end_rime = ? THEN 150
                     WHEN end_rime LIKE ? THEN 80
                     WHEN vowel_class = ? THEN 40
                     ELSE 10 
-                END) + (popularity_score * 2.5) + (is_iconic_anthem * 150) as retrieval_rank
+                END) + (popularity_score * 2.5) + (is_iconic_anthem * 150)
+                + (CASE WHEN topic != '' AND ? != '' AND topic = ? THEN 60 ELSE 0 END)
+                + (CASE WHEN inner_vowel_class != '' AND ? != '' AND inner_vowel_class = ? THEN 50 ELSE 0 END) as retrieval_rank
         FROM catalog_bars
         WHERE artist = ? AND is_generic = 0
-          AND (lower(end_word) = ? OR (lower(?) = 'audamar' AND lower(end_word) = 'audemars') OR end_rime = ? OR end_rime LIKE ? OR vowel_class = ?)
+          AND (
+            lower(end_word) = ? OR (lower(?) = 'audamar' AND lower(end_word) = 'audemars')
+            OR end_rime = ? OR end_rime LIKE ? OR vowel_class = ?
+            OR (topic != '' AND ? != '' AND topic = ?)
+            OR (inner_vowel_class != '' AND ? != '' AND inner_vowel_class = ?)
+          )
           AND ABS(syllables - ?) <= 6
         ORDER BY retrieval_rank DESC
         LIMIT 60;
@@ -702,24 +938,32 @@ def retrieve_matching_catalog_lines(
             target_rime,
             rime_like,
             target_vowel,
+            primary_topic,
+            primary_topic,
+            norm_inner_vowel,
+            norm_inner_vowel,
             artist,
             target_word,
             target_word,
             target_rime,
             rime_like,
             target_vowel,
+            primary_topic,
+            primary_topic,
+            norm_inner_vowel,
+            norm_inner_vowel,
             target_syl,
         ),
     )
     rows = cur.fetchall()
 
-    # Fallback to general artist pool if no strict phoneme match found
+    # Fallback to general artist pool if no strict match found
     if not rows and not scored_candidates:
         sql_fallback = """
             SELECT id, artist, song, album, text, end_word, end_rime,
                    vowel_class, syllables, inner_rhyme_count, popularity_score,
                    line_seq, total_lines, relative_pos, chronological_arc,
-                   next_bar_text, is_iconic_anthem
+                   next_bar_text, is_iconic_anthem, topic, inner_vowel_class
             FROM catalog_bars
             WHERE artist = ? AND is_generic = 0
               AND ABS(syllables - ?) <= 4
@@ -753,6 +997,23 @@ def retrieve_matching_catalog_lines(
         # 3. Inner Rhymes (Task 5 - High Priority)
         score += min(40.0, row_dict["inner_rhyme_count"] * 7.0)
 
+        # Task H: Inner-Rhyme-Indexed Retrieval (+65.0 boost)
+        row_inner = row_dict.get("inner_vowel_class") or ""
+        is_inner_match = False
+        if norm_inner_vowel and row_inner and (row_inner == norm_inner_vowel):
+            is_inner_match = True
+            score += 65.0
+        row_dict["inner_vowel_match"] = is_inner_match
+
+        # Task H: Topic-Chain Binding (+75.0 boost)
+        row_top = (row_dict.get("topic") or "").lower()
+        is_topic_match = False
+        if target_topics and row_top:
+            if row_top in target_topics or any(tt in row_top for tt in target_topics) or (target_topic and target_topic in row_top):
+                is_topic_match = True
+                score += 75.0
+        row_dict["topic_match"] = is_topic_match
+
         # 4. Popularity Score (Task 6 & 8)
         score += (row_dict.get("popularity_score") or 0.0) * 2.5
 
@@ -779,8 +1040,26 @@ def retrieve_matching_catalog_lines(
         artist_mult = ARTIST_TIER_MULTIPLIERS.get(artist, 1.0)
         score *= artist_mult
 
+        # Task H: Cross-Generation End-Word Dedupe Window
+        # Waived if user/caller explicitly seeded this end_word
+        dedupe_penalty = 0.0
+        if not (target_word and (row_end == target_word or (target_word == "audamar" and row_end == "audemars"))):
+            if recent_list and row_end:
+                last_4 = recent_list[-4:] if len(recent_list) >= 4 else recent_list
+                if row_end in last_4:
+                    dedupe_penalty = -160.0
+                elif row_end in recent_list[-16:]:
+                    dedupe_penalty = -80.0
+        if dedupe_penalty != 0.0:
+            score += dedupe_penalty
+        row_dict["dedupe_penalty"] = dedupe_penalty
+
         row_dict["match_score"] = round(score, 2)
         scored_candidates.append(row_dict)
+
+    conn.close()
+    scored_candidates.sort(key=lambda x: x["match_score"], reverse=True)
+    return scored_candidates[:limit]
 
     conn.close()
     scored_candidates.sort(key=lambda x: x["match_score"], reverse=True)

@@ -39,6 +39,8 @@ import v3_rhyme_stack
 from catalog_retriever import (
     DEFAULT_CHOSEN_ALBUMS,
     extract_seed_pattern,
+    get_end_word_history,
+    record_used_end_words,
     retrieve_matching_catalog_lines,
     verify_remix_compliance,
 )
@@ -284,19 +286,27 @@ def generate_v4(
         call_fn=call_fn,
     )
 
-    # Retrieve authentic catalog lines matching the plan's end words
+    # Retrieve authentic catalog lines matching the plan's end words (Task H: topic-chain binding + dedupe window)
     bar_artists = [plan["couplet_voices"][i // 2] for i in range(bars_count)] if plan.get("couplet_voices") else [voice] * bars_count
     retrieved_catalog_bars = []
     used_line_ids = set()
+    recent_ends = get_end_word_history(window_size=16)
 
     for i in range(bars_count):
         target_artist = bar_artists[i]
         tw = plan["end_words"][i] if i < len(plan["end_words"]) else "audamar"
+        couplet_idx = i // 2
+        bar_motif = (
+            plan["motif_chain"][couplet_idx % len(plan["motif_chain"])]
+            if (plan.get("motif_chain") and len(plan["motif_chain"]) > 0)
+            else topic_hint
+        )
         p = {
             "end_word": tw,
             "end_rime": " ".join(end_rime(tw, cmu) or ()),
             "vowel_class": "V_other",
             "target_syllables": effective_syl,
+            "topic": bar_motif,
         }
         target_albs = (chosen_albums if target_artist == voice else None) or DEFAULT_CHOSEN_ALBUMS.get(target_artist, [])
         prev_line = retrieved_catalog_bars[-1] if retrieved_catalog_bars else None
@@ -307,6 +317,8 @@ def generate_v4(
             limit=12,
             bar_number=i + 1,
             previous_retrieved_line=prev_line,
+            topic_hint=bar_motif,
+            recent_end_words=recent_ends,
         )
         chosen = None
         for m in matches:
@@ -468,6 +480,12 @@ def generate_v4(
             "grid_passed": bar_grid.get("passed", True),
             "grid_violations": bar_grid.get("off_grid_beats", []),
         })
+
+    # Task H: Record newly generated end words to dedupe history
+    try:
+        record_used_end_words([b["end_word"] for b in detailed_bars])
+    except Exception:
+        pass
 
     # Audio Stem Alignment Grid
     stem_grid = v3_audio_aligner.generate_full_stem_alignment(

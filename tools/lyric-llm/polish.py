@@ -988,6 +988,8 @@ def generate_frontier_bars_v2(
         DEFAULT_CHOSEN_ALBUMS,
         calculate_edit_distance_ratio,
         extract_seed_pattern,
+        get_end_word_history,
+        record_used_end_words,
         retrieve_matching_catalog_lines,
         verify_remix_compliance,
     )
@@ -1043,11 +1045,12 @@ def generate_frontier_bars_v2(
     chain = _resolve_adhd_chain(adhd_chain, scale=scale, bpm=bpm, voice=voice)
     catalog_banks = ARTIST_CATALOG_RHYME_BANKS.get(voice) or ARTIST_CATALOG_RHYME_BANKS.get("Gunna")
 
-    # RETRIEVE AUTHENTIC CATALOG LINES MATCHING USER SEED OR MOTIFS (UNIQUE PER BAR)
+    # RETRIEVE AUTHENTIC CATALOG LINES MATCHING USER SEED OR MOTIFS (UNIQUE PER BAR - Task H)
     retrieved_catalog_bars = []
     user_albums = chosen_albums or DEFAULT_CHOSEN_ALBUMS.get(voice, [])
     blend_albums = DEFAULT_CHOSEN_ALBUMS.get(blend, []) if blend else []
     used_line_ids = set()
+    recent_ends = get_end_word_history(window_size=16)
 
     if scratchpad_bars:
         seed_raw_lines = [l.strip() for l in scratchpad_bars.splitlines() if l.strip()]
@@ -1055,12 +1058,13 @@ def generate_frontier_bars_v2(
         for i in range(bars_count):
             target_artist = bar_artists[i]
             target_albs = (chosen_albums if target_artist == voice else None) or DEFAULT_CHOSEN_ALBUMS.get(target_artist, [])
+            couplet_idx = i // 2
+            bar_topic = (plan["motif_chain"][couplet_idx % len(plan["motif_chain"])] if (plan and plan.get("motif_chain")) else topic_hint)
             if i < len(patterns):
                 p = patterns[i]
             else:
                 # Advance beyond user seed bars into fresh authentic artist couplet banks
                 target_banks = ARTIST_CATALOG_RHYME_BANKS.get(target_artist) or ARTIST_CATALOG_RHYME_BANKS.get("Gunna")
-                couplet_idx = i // 2
                 c_bank = target_banks[couplet_idx % len(target_banks)]
                 tw = c_bank["pair"][i % 2]
                 p = {
@@ -1077,6 +1081,8 @@ def generate_frontier_bars_v2(
                 limit=12,
                 bar_number=i + 1,
                 previous_retrieved_line=prev_line,
+                topic_hint=bar_topic,
+                recent_end_words=recent_ends,
             )
             chosen = None
             for m in matches:
@@ -1094,6 +1100,7 @@ def generate_frontier_bars_v2(
             couplet_idx = i // 2
             c_bank = target_banks[couplet_idx % len(target_banks)]
             tw = (plan["end_words"][i] if (plan and plan.get("end_words") and i < len(plan["end_words"])) else c_bank["pair"][i % 2])
+            bar_topic = (plan["motif_chain"][couplet_idx % len(plan["motif_chain"])] if (plan and plan.get("motif_chain")) else topic_hint)
             p = {
                 "end_word": tw,
                 "end_rime": " ".join(end_rime(tw, cmu) or ()),
@@ -1109,6 +1116,8 @@ def generate_frontier_bars_v2(
                 limit=12,
                 bar_number=i + 1,
                 previous_retrieved_line=prev_line,
+                topic_hint=bar_topic,
+                recent_end_words=recent_ends,
             )
             chosen = None
             for m in matches:
@@ -1591,6 +1600,12 @@ def generate_frontier_bars_v2(
         b1["multisyllabic_type"] = m_stack["type"]
         b2["multisyllabic_depth"] = m_stack["depth"]
         b2["multisyllabic_type"] = m_stack["type"]
+
+    # Task H: Record newly generated end words to dedupe history
+    try:
+        record_used_end_words([b["end_word"] for b in detailed_bars])
+    except Exception:
+        pass
 
     # Generate V3 Audio Stem Alignment Grid
     stem_grid = v3_audio_aligner.generate_full_stem_alignment(

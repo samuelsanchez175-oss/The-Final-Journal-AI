@@ -222,3 +222,29 @@ files and a HANDOFF ENTRY.
   - Full v4 suite: `python3 -m unittest tools/lyric-llm/test_grid_gate.py tools/lyric-llm/test_taste_blocks_v4.py tools/lyric-llm/test_v4_planner.py tools/lyric-llm/test_frontier_v4.py`: **20/20 PASSED**.
   - Style-profile suite: **34/34 PASSED**.
 - **Next Frontier v4 Tasks:** Task H (Catalog retriever v2) -> Task K (Telemetry writer) -> Task L (Prompt/params cache) -> Task M (Spotify popularity ingest).
+
+### HANDOFF ENTRY: Frontier v4 Task H Completed — Catalog Retriever v2 (2026-10-24, Antigravity)
+
+**Status:** Task H (Catalog Retriever v2) is live and verified across 7/7 new tests, with 27/27 total v4 unit tests passing.
+- **Component Changes (`tools/lyric-llm/catalog_retriever.py`):**
+  1. **Topic-Chain Binding**:
+     - Bound authentic catalog annotations from `topic_cache.jsonl` and `topic_chain_songs.jsonl` (44,556 bar topic labels across 1,042+ songs) directly into catalog index and retrieval scoring.
+     - Implemented `MOTIF_TO_TOPIC_ALIASES` mapping ADHD/planner motifs (`lavishness_money`, `romance_women`, `street_defiance`, etc.) to authentic Phase 4 catalog labels (`money_flex`, `luxury_brands`, `women_romance`, `violence_street`, etc.).
+     - Matching lines are awarded +75.0 points with `topic_match=True`.
+  2. **Inner-Rhyme-Indexed Retrieval**:
+     - Added `inner_vowel_class` column to `catalog_bars` schema and indexed via `idx_artist_inner_vowel`.
+     - Populated `inner_vowel_class` across catalog lines (144k+ lines indexed).
+     - Added `normalize_vowel_class(v)` mapping CMU phonemes (`V_aa` -> `V_broad`, `V_ae` -> `V_front_open`, `V_iy` -> `V_front_high`, etc.).
+     - Pattern extraction (`extract_seed_pattern`) and retrieval queries now index and prioritize internal assonance matching `target_inner_vowel`, awarding +65.0 points with `inner_vowel_match=True`.
+  3. **Cross-Generation End-Word Dedupe Window**:
+     - Implemented persistent circular history window `OUT / "end_word_history.json"` (default window size 16, max 64) via `get_end_word_history()`, `record_used_end_words()`, and `clear_end_word_history()`.
+     - Progressive penalties applied to candidates in unconstrained retrieval: -160.0 if used in the last 4 generated lines; -80.0 if used in the last 16.
+     - Waived penalty (`dedupe_penalty = 0.0`) when the caller/user explicitly seeds or plans that target end word.
+- **Pipeline Integration (`frontier_v4.py` & `polish.py`):**
+  - Wired `topic_hint` from the reasoning planner's `motif_chain` and `recent_end_words` into retrieval loops.
+  - Automatically records generated end words via `record_used_end_words` at completion of `generate_v4` and `generate_frontier_bars_v2`.
+- **Unit Tests (`tools/lyric-llm/test_catalog_retriever_v2.py`):**
+  - 7/7 tests passed in 0.75s: `test_vowel_normalization`, `test_extract_seed_pattern_inner_vowel`, `test_topic_chain_boost`, `test_inner_rhyme_indexed_retrieval`, `test_end_word_dedupe_window_penalty`, `test_explicit_target_overrides_dedupe`, `test_record_and_clear_history`.
+- **Full V4 Suite Status:**
+  - `python3 -m unittest tools/lyric-llm/test_grid_gate.py tools/lyric-llm/test_taste_blocks_v4.py tools/lyric-llm/test_v4_planner.py tools/lyric-llm/test_frontier_v4.py tools/lyric-llm/test_catalog_retriever_v2.py`: **27/27 PASSED**.
+- **Next Frontier v4 Tasks:** Task K (Telemetry writer: `tools/lyric-llm/out/v4_telemetry.jsonl`) -> Task L (Prompt + params cache: `tools/lyric-llm/out/cache/<hash>.json`) -> Task M (Spotify popularity ingest: `tools/lyric-llm/spotify_popularity.py` reading `.env.spotify`).
