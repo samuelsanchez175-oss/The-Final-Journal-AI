@@ -973,6 +973,7 @@ def generate_frontier_bars_v2(
     scratchpad_bars: str = "",
     chosen_albums: list[str] = None,
     remix_ratio: int = 25,
+    base_cap: float = 0.30,
     taste_on: bool = True,
     taste_k: int = 6,
     taste_store: Any = None,
@@ -989,6 +990,7 @@ def generate_frontier_bars_v2(
         DEFAULT_CHOSEN_ALBUMS,
         calculate_edit_distance_ratio,
         extract_seed_pattern,
+        get_dynamic_cap,
         get_end_word_history,
         record_used_end_words,
         retrieve_matching_catalog_lines,
@@ -1012,6 +1014,7 @@ def generate_frontier_bars_v2(
         scratchpad=scratchpad_bars,
         topic_hint=topic_hint,
         remix_ratio=remix_ratio,
+        base_cap=base_cap,
         bars_count=bars_count,
         target_syl=effective_syl,
         taste_on=taste_on,
@@ -1166,8 +1169,10 @@ def generate_frontier_bars_v2(
             arc_info = f" [Arc: {cat.get('chronological_arc', 'verse_build')} · Bar {cat.get('line_seq', 1)}/{cat.get('total_lines', 32)}]"
             couplet_tag = " 🔗 [Couplet Chain]" if cat.get("is_consecutive_couplet") else ""
             anthem_tag = " 🏆 [Anthem]" if cat.get("is_iconic_anthem") else ""
+            bar_cap = get_dynamic_cap(cat, base_cap=base_cap)
+            cap_tag = f" 🔒 [Cap: {int(bar_cap*100)}% Max Edit]"
             retrieval_text_blocks.append(
-                f"Bar {i+1:02d} [{target_artist}]: [{cat['album']} | {cat['song']}]{arc_info}{couplet_tag}{anthem_tag} \"{cat['text']}\" -> Exact End-Word to Preserve: '{cat['end_word']}' (Syllables: {cat['syllables']})"
+                f"Bar {i+1:02d} [{target_artist}]: [{cat['album']} | {cat['song']}]{arc_info}{couplet_tag}{anthem_tag}{cap_tag} \"{cat['text']}\" -> Exact End-Word to Preserve: '{cat['end_word']}' (Syllables: {cat['syllables']})"
             )
         else:
             couplet_idx = i // 2
@@ -1592,11 +1597,13 @@ def generate_frontier_bars_v2(
             catalog_words.add(b["pair"][1].lower())
         is_catalog_hit = (end_w.lower() in catalog_words) and not is_generic
 
-        # Retrieve and Remix Compliance Metrics (Task 9)
+        # Retrieve and Remix Compliance Metrics with Dynamic Cap (Task R)
         cat_match = retrieved_catalog_bars[idx] if idx < len(retrieved_catalog_bars) else None
-        compliance = verify_remix_compliance(cat_match["text"], ln) if cat_match else {
+        bar_cap = get_dynamic_cap(cat_match, base_cap=base_cap)
+        compliance = verify_remix_compliance(cat_match["text"], ln, cap=bar_cap, cmu=cmu) if cat_match else {
             "is_compliant": True,
             "edit_distance_ratio": 0.25,
+            "cap": bar_cap,
             "end_word_preserved": True,
         }
 
@@ -1632,6 +1639,7 @@ def generate_frontier_bars_v2(
             "source_is_anthem": bool(cat_match.get("is_iconic_anthem")) if cat_match else False,
             "is_consecutive_couplet": bool(cat_match.get("is_consecutive_couplet")) if cat_match else False,
             "edit_distance_ratio": compliance["edit_distance_ratio"],
+            "edit_distance_cap": compliance["cap"],
             "remix_compliant": compliance["is_compliant"],
             "end_word_preserved": compliance["end_word_preserved"],
             "grid_passed": bar_grid.get("passed", True),
@@ -1719,6 +1727,7 @@ def generate_frontier_bars_v2(
         "catalog_end_rhymes_used": v_catalog["top_end_words"][:8],
         "retrieve_and_remix_mode": True,
         "remix_ratio": remix_ratio,
+        "base_cap": base_cap,
         "chosen_albums": user_albums,
         "plan": plan,
         "taste_on": taste_on,
@@ -1806,6 +1815,7 @@ def main():
     parser.add_argument("--seed-line", default="", help="Opening seed bar")
     parser.add_argument("--taste", choices=["on", "off"], default="on", help="Wire rater feedback taste blocks (on/off)")
     parser.add_argument("--taste-k", type=int, default=6, help="Top K keeper bars for taste block")
+    parser.add_argument("--base-cap", type=float, default=0.30, help="Base remix edit-distance cap (default: 0.30)")
     args = parser.parse_args()
 
     res = generate_frontier_bars_v2(
@@ -1819,6 +1829,7 @@ def main():
         rhyme_technique=args.technique,
         bars_count=args.bars,
         seed_line=args.seed_line,
+        base_cap=args.base_cap,
         taste_on=(args.taste == "on"),
         taste_k=args.taste_k,
     )

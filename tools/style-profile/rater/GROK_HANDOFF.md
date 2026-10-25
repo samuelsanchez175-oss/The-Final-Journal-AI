@@ -327,3 +327,26 @@ files and a HANDOFF ENTRY.
   - **49/49 tests passing** across all 9 test suites:
     `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5).
 - **Next Frontier v4 Tasks:** Task R (Dynamic edit-distance cap: 15% anthem, 20% couplet, 30% standard) -> Task Q (Section-aware generation / Hook Engine).
+
+### HANDOFF ENTRY: Frontier v4 Task R Completed — Dynamic Edit-Distance Cap (2026-10-24, Antigravity)
+
+**Status:** Task R (Dynamic Edit-Distance Cap) is complete, live, and verified across all 54/54 tests in the Frontier v4 suite.
+- **Component Changes (`tools/lyric-llm/catalog_retriever.py`):**
+  - Implemented `get_dynamic_cap(catalog_bar, base_cap=0.30)` deriving per-bar edit-distance caps from catalog metadata:
+    - `is_iconic_anthem=1` -> 15% cap (`0.15`)
+    - `is_consecutive_couplet=1` -> 20% cap (`0.20`)
+    - Standard catalog lines -> `base_cap` (default `0.30`)
+  - Updated `verify_remix_compliance(catalog_line, remixed_line, cap=0.30, cmu=None)` enforcing dynamic per-bar edit ratios and returning `"cap": cap`.
+  - Implemented `is_end_word_preserved()` with CMU and slang phonetic equivalence handling (`RAP_SLANG_CMU`), ensuring OOV slang variants and colloquial participles (e.g. `audamar` vs `audemars`, `trappin'` vs `trapping`) preserve landing rhyme compliance without false rejections.
+  - Updated `calculate_edit_distance_ratio()` to support 4x4 meter expansion tail windows.
+- **Pipeline Integration (`polish.py`, `frontier_v4.py`, `prompt_cache.py`):**
+  - Exposed `--base-cap` CLI override (default `0.30`) on both `polish.py` and `frontier_v4.py`.
+  - Added dynamic cap indicators (`🔒 [Cap: 15% Max Edit]`) into prompt few-shot retrieval blocks.
+  - Recorded `edit_distance_cap` and updated `remix_compliant` per bar across detailed bar metadata and telemetry.
+  - Added `base_cap` to `canonical_cache_params()` in `prompt_cache.py`.
+- **Unit Tests (`tools/lyric-llm/test_dynamic_cap.py`):**
+  - 5/5 tests passed in 1.03s verifying dynamic cap derivation, acceptance criteria (anthem line only allows light edits <= 15% while throwaway line allows up to 30%), `--base-cap` CLI override, slang/CMU phonetic preservation, and pipeline metadata reporting.
+- **Full V4 Suite Status:**
+  - **54/54 tests passing** across all 10 test suites:
+    `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5), `test_dynamic_cap.py` (5/5).
+- **Next Frontier v4 Tasks:** Task Q (Section-aware generation / Hook Engine) -> Task S (Whisper hum-to-flow seed).

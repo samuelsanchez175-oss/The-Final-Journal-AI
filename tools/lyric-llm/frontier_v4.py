@@ -40,6 +40,7 @@ import v3_rhyme_stack
 from catalog_retriever import (
     DEFAULT_CHOSEN_ALBUMS,
     extract_seed_pattern,
+    get_dynamic_cap,
     get_end_word_history,
     record_used_end_words,
     retrieve_matching_catalog_lines,
@@ -263,6 +264,7 @@ def generate_v4(
     scratchpad_bars: str = "",
     chosen_albums: list[str] = None,
     remix_ratio: int = 25,
+    base_cap: float = 0.30,
     taste_on: bool = True,
     taste_k: int = 6,
     candidates: int = 1,
@@ -291,6 +293,7 @@ def generate_v4(
         scratchpad=scratchpad_bars,
         topic_hint=topic_hint,
         remix_ratio=remix_ratio,
+        base_cap=base_cap,
         bars_count=bars_count,
         target_syl=effective_syl,
         taste_on=taste_on,
@@ -512,9 +515,11 @@ def generate_v4(
         toks = tokenize(normalize(ln))
         end_w = toks[-1] if toks else target_word
 
-        compliance = verify_remix_compliance(cat_match["text"], ln) if cat_match else {
+        bar_cap = get_dynamic_cap(cat_match, base_cap=base_cap)
+        compliance = verify_remix_compliance(cat_match["text"], ln, cap=bar_cap, cmu=cmu) if cat_match else {
             "is_compliant": True,
             "edit_distance_ratio": 0.25,
+            "cap": bar_cap,
             "end_word_preserved": True,
         }
         bar_grid = best_take["grid_gate"]["bar_results"][idx] if idx < len(best_take["grid_gate"]["bar_results"]) else {}
@@ -544,6 +549,7 @@ def generate_v4(
             "source_catalog_song": cat_match["song"] if cat_match else "",
             "source_catalog_album": cat_match["album"] if cat_match else "",
             "edit_distance_ratio": compliance["edit_distance_ratio"],
+            "edit_distance_cap": compliance["cap"],
             "remix_compliant": compliance["is_compliant"],
             "end_word_preserved": compliance["end_word_preserved"],
             "punch_demoted": p_demoted,
@@ -594,6 +600,7 @@ def generate_v4(
         "clock_bpm": clock_bpm,
         "scale": scale,
         "target_syllables": effective_syl,
+        "base_cap": base_cap,
         "plan": plan,
         "draft_bars": best_take["draft_bars"],
         "polished_bars": best_take["polished_bars"],
@@ -643,6 +650,7 @@ def main():
     parser.add_argument("--candidates", type=int, default=1, help="Number of candidate takes to generate and rank")
     parser.add_argument("--taste", choices=["on", "off"], default="on", help="Wire rater feedback taste blocks")
     parser.add_argument("--taste-k", type=int, default=6, help="Top K keeper bars")
+    parser.add_argument("--base-cap", type=float, default=0.30, help="Base remix edit-distance cap (default: 0.30)")
     parser.add_argument("--no-cache", dest="use_cache", action="store_false", default=True, help="Bypass prompt and params cache")
     args = parser.parse_args()
 
@@ -656,6 +664,7 @@ def main():
         bars_count=args.bars,
         topic_hint=args.topic,
         candidates=args.candidates,
+        base_cap=args.base_cap,
         taste_on=(args.taste == "on"),
         taste_k=args.taste_k,
         use_cache=args.use_cache,

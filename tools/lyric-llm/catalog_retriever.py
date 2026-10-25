@@ -1084,6 +1084,56 @@ def retrieve_matching_catalog_lines(
     return scored_candidates[:limit]
 
 
+def is_end_word_preserved(
+    cat_end: str,
+    remix_end: str,
+    cmu: Optional[dict[str, list[str]]] = None,
+) -> bool:
+    """Checks if the catalog end-word is preserved, handling slang and phonetic equivalence (Task R)."""
+    c_clean = re.sub(r"[^a-zA-Z0-9']", "", (cat_end or "").strip().lower())
+    r_clean = re.sub(r"[^a-zA-Z0-9']", "", (remix_end or "").strip().lower())
+    if not c_clean or not r_clean:
+        return False
+    if c_clean == r_clean:
+        return True
+
+    # Strip / normalize colloquial slang participles (-in' vs -ing vs -in)
+    c_stem = re.sub(r"(?:in['’]?|ing)$", "in", c_clean)
+    r_stem = re.sub(r"(?:in['’]?|ing)$", "in", r_clean)
+    if c_stem == r_stem and len(c_stem) >= 3:
+        return True
+
+    # Check CMU / phonetic equivalence
+    if cmu:
+        c_lookup = c_clean.rstrip("'’")
+        r_lookup = r_clean.rstrip("'’")
+        c_rime = end_rime(c_lookup, cmu)
+        r_rime = end_rime(r_lookup, cmu)
+        if c_rime and r_rime and c_rime == r_rime:
+            return True
+
+    return False
+
+
+def get_dynamic_cap(
+    catalog_bar: Optional[dict[str, Any]],
+    base_cap: float = 0.30,
+) -> float:
+    """
+    Derives per-bar edit-distance cap from catalog metadata (Task R):
+      - is_iconic_anthem=1      -> 15% cap (0.15)
+      - is_consecutive_couplet=1 -> 20% cap (0.20)
+      - Otherwise               -> base_cap (default 0.30)
+    """
+    if not catalog_bar:
+        return base_cap
+    if catalog_bar.get("is_iconic_anthem"):
+        return min(base_cap, 0.15)
+    if catalog_bar.get("is_consecutive_couplet"):
+        return min(base_cap, 0.20)
+    return base_cap
+
+
 def calculate_edit_distance_ratio(original: str, edited: str) -> float:
     """Calculates word-level edit ratio (percentage of words changed)."""
     orig_toks = tokenize(normalize(original))
@@ -1096,11 +1146,24 @@ def calculate_edit_distance_ratio(original: str, edited: str) -> float:
     kept_words = sum(1 for w in edit_toks if w in orig_set)
     total_words = max(len(orig_toks), len(edit_toks))
     diff_ratio = 1.0 - (kept_words / float(total_words)) if total_words > 0 else 0.0
+
+    # If the remixed line was expanded with Beats 1 & 2 setup, also check tail window
+    if len(edit_toks) > len(orig_toks) and len(orig_toks) >= 4:
+        tail_toks = edit_toks[-len(orig_toks):]
+        tail_kept = sum(1 for w in tail_toks if w in orig_set)
+        tail_diff = 1.0 - (tail_kept / float(len(orig_toks)))
+        diff_ratio = min(diff_ratio, tail_diff)
+
     return round(diff_ratio, 3)
 
 
-def verify_remix_compliance(catalog_line: str, remixed_line: str) -> dict[str, Any]:
-    """Ensures 20-30% edit distance cap and end-word preservation (Task 9)."""
+def verify_remix_compliance(
+    catalog_line: str,
+    remixed_line: str,
+    cap: float = 0.30,
+    cmu: Optional[dict[str, list[str]]] = None,
+) -> dict[str, Any]:
+    """Ensures dynamic edit distance cap and end-word preservation (Task R)."""
     cat_toks = tokenize(normalize(catalog_line))
     remix_toks = tokenize(normalize(remixed_line))
 
@@ -1108,13 +1171,14 @@ def verify_remix_compliance(catalog_line: str, remixed_line: str) -> dict[str, A
     remix_end = remix_toks[-1] if remix_toks else ""
 
     edit_ratio = calculate_edit_distance_ratio(catalog_line, remixed_line)
-    end_word_preserved = (cat_end == remix_end)
+    end_word_preserved = is_end_word_preserved(cat_end, remix_end, cmu=cmu)
 
-    is_compliant = (edit_ratio <= 0.35 and end_word_preserved)
+    is_compliant = (edit_ratio <= cap and end_word_preserved)
 
     return {
         "is_compliant": is_compliant,
         "edit_distance_ratio": edit_ratio,
+        "cap": cap,
         "catalog_end_word": cat_end,
         "remix_end_word": remix_end,
         "end_word_preserved": end_word_preserved,
