@@ -1631,6 +1631,18 @@ def make_handler(root: Path, grades_path: Path):
                 body = render_page(payload).encode("utf-8")
                 self._send(200, "text/html; charset=utf-8", body)
                 return
+            if path in ("/rater", "/rater/", "/rater/index.html", "/sparkler-rater"):
+                rater_path = root.parent / "style-profile" / "rater" / "index.html"
+                if rater_path.is_file():
+                    body = rater_path.read_bytes()
+                    self._send(200, "text/html; charset=utf-8", body)
+                    return
+            if path in ("/rater/model_comparison.json", "/api/rater/model_comparison.json"):
+                comp_path = root.parent / "style-profile" / "out" / "model_comparison.json"
+                if comp_path.is_file():
+                    body = comp_path.read_bytes()
+                    self._send(200, "application/json; charset=utf-8", body)
+                    return
             if path == "/metrics.json":
                 payload = collect_metrics(root, grades_path=grades_path)
                 self._send(200, "application/json; charset=utf-8", metrics_json(payload))

@@ -730,8 +730,19 @@
   }
 
   function parseFile(data) {
-    if (!data || typeof data !== "object" || Array.isArray(data)) {
-      throw new Error("Each file must be one comparison object.");
+    if (!data || typeof data !== "object") {
+      throw new Error("Each file must be a valid JSON comparison object or array.");
+    }
+    if (Array.isArray(data)) {
+      var allCards = [];
+      data.forEach(function (item) {
+        if (item && typeof item === "object") {
+          try {
+            allCards = allCards.concat(parseFile(item));
+          } catch (e) {}
+        }
+      });
+      return allCards;
     }
     var models = data.models && typeof data.models === "object" ? data.models : {};
     var cards = [];
@@ -744,10 +755,10 @@
       cards.push({
         generation_id: String(entry.generation_id),
         model: String(entry.model || key),
-        artist: String(data.artist || ""),
-        topic: String(data.topic || ""),
-        topic_brief: String(data.topic_brief || data.topic || ""),
-        scheme: String(data.scheme || ""),
+        artist: String(data.artist || entry.artist || ""),
+        topic: String(data.topic || entry.topic || ""),
+        topic_brief: String(data.topic_brief || entry.topic_brief || data.topic || ""),
+        scheme: String(data.scheme || entry.scheme || ""),
         prompt_version: String(data.prompt_version || ""),
         passed: !!entry.passed,
         exemplars: Array.isArray(data.exemplars) ? data.exemplars : [],
@@ -1437,11 +1448,29 @@
     var drop = el("div", { class: "drop" }, [
       el("strong", { text: "Drop model_comparison.json files here" }),
       el("div", { text: "One verse at a time. The model stays hidden until you vote." }),
-      el("button", { class: "primary", type: "button", id: "emptyAdd", text: "Choose files" })
+      el("div", { style: "display: flex; gap: 8px; justify-content: center; margin-top: 12px;" }, [
+        el("button", { class: "primary", type: "button", id: "emptyAdd", text: "Choose files" }),
+        el("button", { class: "text-btn", type: "button", id: "emptyLoadV4", text: "⚡ Load Frontier v4 Verses" })
+      ])
     ]);
     if (state.error) drop.appendChild(el("div", { class: "err", text: state.error }));
     stage.appendChild(drop);
     $("emptyAdd").addEventListener("click", function () { fileInput.click(); });
+    $("emptyLoadV4").addEventListener("click", function () {
+      fetch("/rater/model_comparison.json")
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          var found = parseFile(data);
+          if (found && found.length) {
+            addCards(found);
+            render();
+          }
+        })
+        .catch(function (err) {
+          state.error = "Could not auto-fetch /rater/model_comparison.json (" + err.message + "). Please use 'Choose files'.";
+          render();
+        });
+    });
   }
 
   function renderDone() {
@@ -1847,6 +1876,18 @@
 
   window.setInterval(renderProgress, 1000);
   loadStore();
+  if (location.protocol.startsWith("http") && (!state.cards || state.cards.length === 0)) {
+    fetch("/rater/model_comparison.json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var found = parseFile(data);
+        if (found && found.length) {
+          addCards(found);
+          render();
+        }
+      })
+      .catch(function () {});
+  }
   render();
 })();
 </script>
