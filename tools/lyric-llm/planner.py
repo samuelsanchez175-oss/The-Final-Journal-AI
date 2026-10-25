@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import os
+import random
 import re
 import sys
 import urllib.request
@@ -92,29 +93,66 @@ def _fallback_plan(
     bars: int,
     topic_hint: str = "",
 ) -> dict:
-    """Deterministic structural plan derived from authentic catalog banks."""
+    """Authentic catalog bank plan with stochastic diversity and topic matching."""
     couplet_count = max(1, bars // 2)
     try:
         from polish import ARTIST_CATALOG_RHYME_BANKS, allocate_bar_artists
-        banks = ARTIST_CATALOG_RHYME_BANKS.get(voice) or ARTIST_CATALOG_RHYME_BANKS.get("Gunna", [])
+        from catalog_retriever import get_end_word_history
+        banks = list(ARTIST_CATALOG_RHYME_BANKS.get(voice) or ARTIST_CATALOG_RHYME_BANKS.get("Gunna", []))
         bar_artists = allocate_bar_artists(voice=voice, blend=blend, mix=70, bars_count=bars)
         couplet_voices = [bar_artists[i * 2] for i in range(couplet_count)]
+        recent_ends = set(w.lower() for w in get_end_word_history(window_size=16) if w)
     except Exception:
         banks = [
-            {"pair": ("audamar", "car"), "family": "/ɑːr/", "theme": "Penthouse Luxury & Exotic Cars"},
-            {"pair": ("mercedes", "crazy"), "family": "/eɪzi/", "theme": "High-Speed Highway"},
-            {"pair": ("maybach", "payback"), "family": "/eɪbæk/", "theme": "Executive Vengeance"},
-            {"pair": ("toronto", "pronto"), "family": "/ɒntoʊ/", "theme": "Cross-Border Business"},
+            {"pair": ("audamar", "car"), "family": "/ɑːr/", "theme": "Penthouse Luxury & Exotic Cars", "bag": "luxury_drip"},
+            {"pair": ("mercedes", "crazy"), "family": "/eɪzi/", "theme": "High-Speed Highway", "bag": "luxury_drip"},
+            {"pair": ("maybach", "payback"), "family": "/eɪbæk/", "theme": "Executive Vengeance", "bag": "pain_ditch_betrayal"},
+            {"pair": ("toronto", "pronto"), "family": "/ɒntoʊ/", "theme": "Cross-Border Business", "bag": "fast_pocket"},
         ]
         couplet_voices = [voice] * couplet_count
+        recent_ends = set()
+
+    seed_env = os.environ.get("V4_SEED")
+    rng = random.Random(int(seed_env)) if seed_env else random.Random()
+
+    # Filter out recently used end-words to prevent duplicate consecutive verses
+    candidate_banks = [
+        b for b in banks
+        if not any(w.lower() in recent_ends for w in b.get("pair", ()))
+    ]
+    if len(candidate_banks) < couplet_count:
+        candidate_banks = list(banks)
+
+    # Score candidates by topic match
+    topic_clean = topic_hint.lower().replace("_", " ")
+    topic_words = [t for t in topic_clean.split() if len(t) >= 3]
+    pool = []
+    for b in candidate_banks:
+        weight = 1.0
+        theme = (b.get("theme") or "").lower()
+        bag = (b.get("bag") or "").lower()
+        if any(tw in theme or tw in bag for tw in topic_words):
+            weight += 4.0
+        pool.append((b, weight))
+
+    chosen_banks = []
+    pool_copy = list(pool)
+    for _ in range(min(couplet_count, len(pool_copy))):
+        weights = [p[1] for p in pool_copy]
+        pick = rng.choices(pool_copy, weights=weights, k=1)[0]
+        chosen_banks.append(pick[0])
+        pool_copy.remove(pick)
+
+    # If still short, cycle remaining
+    while len(chosen_banks) < couplet_count:
+        chosen_banks.append(banks[len(chosen_banks) % len(banks)])
 
     motif_chain = [VALID_MOTIF_KEYS[i % len(VALID_MOTIF_KEYS)] for i in range(couplet_count)]
     end_words = []
     rhyme_families = []
     couplet_narratives = []
 
-    for c_i in range(couplet_count):
-        b = banks[c_i % len(banks)]
+    for c_i, b in enumerate(chosen_banks):
         p1, p2 = b.get("pair", ("audamar", "car"))
         end_words.extend([p1, p2])
         rhyme_families.append(b.get("family", "/ɑːr/"))

@@ -170,20 +170,24 @@ def draft_scaffold(
             if clean and not clean.startswith("[") and not clean.startswith("```"):
                 draft_lines.append(clean)
 
-    # Fallback if draft failed
+    # Fallback if draft failed - prioritize authentic catalog lines retrieved for this verse
     if len(draft_lines) < bars_count:
-        fallback_bars = [
-            "Penthouse is large, gotta fast car, maximum withdraws, blue audamar",
-            "She is a stylist, date has been lavish, we caught up and pop shit, over a lobster",
-            "Penthouse is spacious, lifestyle is gracious, switchin' lanes in traffic, double M Mercedes",
-            "Drippin' in designer, pull up in a foreign, private jet in Paris, paid a dime to squeeze",
-            "Bought me a Maybach, plannin' the payback, runnin' through static, Patek automatic",
-            "Keepin' the steel, never will heal, scars in the ditch, waitin' for the payback",
-            "Celine on my collar, stackin' the dollar, wired up a million, straight to Toronto",
-            "Fly to Atlanta, ride in a Phantom, pourin' up a soda, pack it up pronto",
-        ]
-        draft_lines = fallback_bars[:bars_count]
-        used_model = "heuristic_scaffold_fallback"
+        if retrieved_bars and len(retrieved_bars) >= bars_count and all(rb and isinstance(rb, dict) and rb.get("text") for rb in retrieved_bars[:bars_count]):
+            draft_lines = [rb["text"] for rb in retrieved_bars[:bars_count]]
+            used_model = "catalog_retrieval_scaffold"
+        else:
+            fallback_bars = [
+                "Penthouse is large, gotta fast car, maximum withdraws, blue audamar",
+                "She is a stylist, date has been lavish, we caught up and pop shit, over a collar",
+                "Penthouse is spacious, lifestyle is gracious, switchin' lanes in traffic, double M Mercedes",
+                "Drippin' in designer, pull up in a foreign, private jet in Paris, paid a dime to squeeze",
+                "Bought me a Maybach, plannin' the payback, runnin' through static, Patek automatic",
+                "Keepin' the steel, never will heal, scars in the ditch, waitin' for the payback",
+                "Celine on my collar, stackin' the dollar, wired up a million, straight to Toronto",
+                "Fly to Atlanta, ride in a Phantom, pourin' up a soda, pack it up pronto",
+            ]
+            draft_lines = fallback_bars[:bars_count]
+            used_model = "heuristic_scaffold_fallback"
 
     return draft_lines[:bars_count], used_model
 
