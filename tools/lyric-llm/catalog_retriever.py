@@ -1352,6 +1352,25 @@ def get_dynamic_cap(
     return base_cap
 
 
+def token_levenshtein_distance(seq1: list[str], seq2: list[str]) -> int:
+    """Computes token-level Levenshtein edit distance between two token sequences (Move 5)."""
+    n, m = len(seq1), len(seq2)
+    if n == 0:
+        return m
+    if m == 0:
+        return n
+    dp = [[0] * (m + 1) for _ in range(n + 1)]
+    for i in range(n + 1):
+        dp[i][0] = i
+    for j in range(m + 1):
+        dp[0][j] = j
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            cost = 0 if seq1[i - 1] == seq2[j - 1] else 1
+            dp[i][j] = min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost)
+    return dp[n][m]
+
+
 def calculate_edit_distance_ratio(original: str, edited: str) -> float:
     """Calculates word-level edit ratio (percentage of words changed)."""
     orig_toks = tokenize(normalize(original))
@@ -1381,7 +1400,7 @@ def verify_remix_compliance(
     cap: float = 0.30,
     cmu: Optional[dict[str, list[str]]] = None,
 ) -> dict[str, Any]:
-    """Ensures dynamic edit distance cap and end-word preservation (Task R)."""
+    """Ensures dynamic edit distance cap, token-Levenshtein cap, and end-word preservation (Task R & Move 5)."""
     cat_toks = tokenize(normalize(catalog_line))
     remix_toks = tokenize(normalize(remixed_line))
 
@@ -1389,13 +1408,17 @@ def verify_remix_compliance(
     remix_end = remix_toks[-1] if remix_toks else ""
 
     edit_ratio = calculate_edit_distance_ratio(catalog_line, remixed_line)
+    lev_dist = token_levenshtein_distance(cat_toks, remix_toks)
+    lev_cap = max(2, int(len(cat_toks) * cap))
     end_word_preserved = is_end_word_preserved(cat_end, remix_end, cmu=cmu)
 
-    is_compliant = (edit_ratio <= cap and end_word_preserved)
+    is_compliant = (edit_ratio <= cap and lev_dist <= lev_cap and end_word_preserved)
 
     return {
         "is_compliant": is_compliant,
         "edit_distance_ratio": edit_ratio,
+        "token_levenshtein": lev_dist,
+        "token_levenshtein_cap": lev_cap,
         "cap": cap,
         "catalog_end_word": cat_end,
         "remix_end_word": remix_end,

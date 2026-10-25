@@ -855,16 +855,20 @@ Whenever NoCap is selected or blended:
 - Weave in brilliant homophones and double meanings (e.g. steel/steal, piece/peace, plain/plane, cell/sell, rows/rose, knight/night, bank/chase).
 - Ensure the setup naturally activates both senses.
 {taste_section}
-=== 8. STRICT GENERATION RULES ===
+=== 8. STRICT GENERATION RULES (MOVE 5 EDIT-THIS-LINE MANDATES) ===
 1. Exact Bar Count: Output EXACTLY {bars_count} lines of lyrics, one bar per line.
-2. Comma-Segmented Cadence: EVERY single line MUST have about 4 COMMAS (4 to 5 distinct comma-delimited pockets).
-3. Sustained 4-5 Syllable Pockets: Each comma segment MUST be 4 to 5 syllables. If you start with 4 or 5 syllables per comma, CONTINUE that exact count across the entire line (e.g. 4+4+4+4 or 5+5+5+5). Never jump erratically between long and short clauses!
-4. ABAB Inner Rhyme Level:
+2. EDIT THIS LINE, DO NOT REWRITE: You are assigned authentic catalog foundation lines. You must edit them lightly (swap AT MOST 1 to 3 words, under 20-30% of words). 80%+ of the line MUST remain the artist's original vocabulary and rhythm.
+3. PRESERVE THE EXACT END-WORD: Keep the end word of each foundation line exactly. Never substitute generic filler words.
+4. PRESERVE RHYTHM & COMMAS: Preserve the exact comma cadence and syllable count (±1) of each foundation line.
+5. PRESERVE INTERNAL RHYMES: Keep all internal rhymes, vowel assonances, and rhythmic pockets intact.
+6. RETURN UNCHANGED IF UNABLE TO FIT: If you cannot fit the user's theme without breaking these rules, return the catalog foundation line completely UNCHANGED. The catalog line is the quality floor.
+7. Sustained Comma-Segmented Cadence: When generating lines, maintain distinct comma-delimited pockets with consistent syllable counts per pocket (e.g. 4+4+4+4 or 5+5+5+5).
+8. ABAB Inner Rhyme Level:
    - Segment 1 ends on Rhyme A,
    - Segment 2 ends on Rhyme B,
    - Segment 3 ends on Rhyme A (rhymes with Segment 1),
    - Segment 4 ends on Rhyme B (rhymes with Segment 2 and lands on designated end-word).
-5. User Gold Benchmarks to Emulate (Target Pocket Pacing & Rhyme Craft):
+9. User Gold Benchmarks to Emulate (Target Pocket Pacing & Rhyme Craft):
    - 'on the block, stackin' them knots, pushin' the weight, in the mercedes' (3s, 5s, 4s, 5s)
    - 'drilling these streets, fearless with moves, watch is two tone, man it go crazy' (5s, 5s, 4s, 5s)
    - 'stackin' some chips, fliping the script, in it then dip, fly overseas' (5s, 5s, 4s, 4s)
@@ -876,16 +880,10 @@ Whenever NoCap is selected or blended:
    - Drake: 'Late night in the city, called up on the phone, pity for the pretty, sittin' on the throne' (5s, 5s, 5s, 5s | ABAB)
    - Young Thug: 'Drippin' in the green, ridin' in the whip, ice on my Celine, let the thirty clip' (5s, 5s, 5s, 5s | ABAB)
    - NoCap: 'Sittin' in the cell, lookin' at the sky, ringin' out the bell, wonderin' on why' (4s, 4s, 4s, 4s | ABAB)
-6. Setup-to-Punchline Balance (2:2): Beats 1-2 build the setup; Beats 3-4 deliver the escalation and landing rhyme.
-7. Couplet Rhyme Scheme:
-   - Bar 1 & Bar 2 MUST end in the assigned Couplet 1 rhyme sound with 2+ syllable slant match.
-   - Bar 3 & Bar 4 MUST end in the assigned Couplet 2 rhyme sound with 2+ syllable slant match.
-   - Bar 5 & Bar 6 MUST end in the assigned Couplet 3 rhyme sound with 2+ syllable slant match.
-   - Bar 7 & Bar 8 MUST end in the assigned Couplet 4 rhyme sound with 2+ syllable slant match.
-8. Zero Word Duplication: NEVER end multiple lines on the exact same word or stem (e.g. NEVER rhyme 'Mercedes' with 'mercedes', NEVER repeat 'overseas'). Every rhyme must land on distinct vocabulary!
-9. No Corny / Forced Slant Rhymes: Strictly avoid robotic words that make no sense in street rap (e.g. 'hospital', 'optical', 'obstacle', 'impossible', 'lobster').
-10. REWORKING & INTERPOLATION (10–20% ORIGINALITY / REWORKED CATALOG FLOWS WELCOME): You do NOT need 100% original lines! You are explicitly encouraged to interpolate, rework, and flip classic catalog motifs, signature punchlines, and double meanings (e.g. Gunna's 'think he the one, but he really the two', NoCap's homophones, Patek/Maybach flips, or user's own scratchpad notes). It is completely acceptable and preferred to take real iconic bars or the user's provided lines and rework, twist, or modernize them into fresh couplets with new slant rhymes!
-10. Clean Studio Format: Output ONLY the {bars_count} lyric lines. No line numbers, no markdown code blocks, no beat labels, no intro explanations."""
+10. Couplet Rhyme Scheme:
+   - Couplets must resolve on the assigned authentic catalog pair or 2+ syllable slant match.
+   - Zero Word Duplication: NEVER end multiple lines on the exact same word or stem (e.g. NEVER rhyme 'Mercedes' with 'mercedes', NEVER repeat 'overseas'). Every rhyme must land on distinct vocabulary!
+11. Clean Studio Format: Output ONLY the {bars_count} lyric lines. No line numbers, no markdown code blocks, no beat labels, no intro explanations."""
 
     return prompt
 
@@ -972,6 +970,7 @@ def generate_frontier_bars_v2(
         get_end_word_history,
         record_used_end_words,
         retrieve_matching_catalog_lines,
+        token_levenshtein_distance,
         verify_remix_compliance,
     )
     user_albums = chosen_albums or DEFAULT_CHOSEN_ALBUMS.get(voice, [])
@@ -1097,9 +1096,10 @@ def generate_frontier_bars_v2(
             )
             chosen = None
             for m in matches:
-                if m["id"] not in used_line_ids:
+                m_id = m.get("id") or m.get("text")
+                if m_id not in used_line_ids:
                     chosen = m
-                    used_line_ids.add(m["id"])
+                    used_line_ids.add(m_id)
                     break
             if not chosen and matches:
                 chosen = matches[0]
@@ -1132,9 +1132,10 @@ def generate_frontier_bars_v2(
             )
             chosen = None
             for m in matches:
-                if m["id"] not in used_line_ids:
+                m_id = m.get("id") or m.get("text")
+                if m_id not in used_line_ids:
                     chosen = m
-                    used_line_ids.add(m["id"])
+                    used_line_ids.add(m_id)
                     break
             if not chosen and matches:
                 chosen = matches[0]
@@ -1144,13 +1145,22 @@ def generate_frontier_bars_v2(
     for i, cat in enumerate(retrieved_catalog_bars):
         target_artist = bar_artists[i]
         if cat:
-            arc_info = f" [Arc: {cat.get('chronological_arc', 'verse_build')} · Bar {cat.get('line_seq', 1)}/{cat.get('total_lines', 32)}]"
-            couplet_tag = " 🔗 [Couplet Chain]" if cat.get("is_consecutive_couplet") else ""
-            anthem_tag = " 🏆 [Anthem]" if cat.get("is_iconic_anthem") else ""
             bar_cap = get_dynamic_cap(cat, base_cap=base_cap)
-            cap_tag = f" 🔒 [Cap: {int(bar_cap*100)}% Max Edit]"
+            cat_toks = tokenize(normalize(cat["text"]))
+            cap_percent = int(bar_cap * 100)
+            cap_tokens = max(2, int(len(cat_toks) * bar_cap))
+            comma_count = cat["text"].count(",")
+            inner_matches = cat.get("inner_rhymes") or []
+            inner_desc = f"positions: {inner_matches}" if inner_matches else "all internal assonance"
             retrieval_text_blocks.append(
-                f"Bar {i+1:02d} [{target_artist}]: [{cat['album']} | {cat['song']}]{arc_info}{couplet_tag}{anthem_tag}{cap_tag} \"{cat['text']}\" -> Exact End-Word to Preserve: '{cat['end_word']}' (Syllables: {cat['syllables']})"
+                f"Bar {i+1:02d} [{target_artist}] — EDIT THIS LINE, do not rewrite:\n"
+                f"\"{cat['text']}\"\n"
+                f"Rules:\n"
+                f"  • Keep the end word \"{cat['end_word']}\" exactly.\n"
+                f"  • You may change AT MOST {cap_tokens} words ({cap_percent}%).\n"
+                f"  • Preserve the rhythm — same comma count ({comma_count}), same syllable count ±1 ({cat['syllables']}).\n"
+                f"  • Preserve any internal rhyme ({inner_desc}).\n"
+                f"  • If you can't fit the user's theme without breaking these rules, return the catalog line unchanged."
             )
         else:
             couplet_idx = i // 2
@@ -1158,23 +1168,27 @@ def generate_frontier_bars_v2(
             c_bank = target_banks[couplet_idx % len(target_banks)]
             tw = c_bank["pair"][i % 2]
             retrieval_text_blocks.append(
-                f"Bar {i+1:02d} [{target_artist}]: Authentic {target_artist} Couplet Bank -> End-Word: '{tw}'"
+                f"Bar {i+1:02d} [{target_artist}] — FALLBACK LINE:\n"
+                f"Rules:\n"
+                f"  • End on '{tw}' in Beat 4.\n"
+                f"  • Target syllable count: {effective_syl} ±1."
             )
 
     user_instructions.append(
-        f"=== CORE CONCEPT: RETRIEVE AND REMIX (MANDATORY 20% TO 30% EDIT DISTANCE CAP) ===\n"
+        f"=== CORE MANDATE: EDIT THIS LINE, DO NOT REWRITE (MOVE 5) ===\n"
         f"The model MUST NOT write original lines from scratch. Every phrase, rhythm, and flow must be grounded in {voice}'s catalog ({', '.join(user_albums)})"
         + (f" and {blend}'s catalog ({', '.join(blend_albums)})" if blend else "")
-        + ".\n"
-        f"Authentic Catalog Lines Retrieved for this Take:\n"
-        + "\n".join(retrieval_text_blocks)
+        + ".\n\n"
+        f"Assigned Catalog Foundation Lines:\n"
+        + "\n\n".join(retrieval_text_blocks)
         + "\n\n"
-        f"CRITICAL REMIX MANDATES (TASK 1 - 9 ENFORCEMENT):\n"
-        f"1. LIGHT EDITS ONLY ({remix_ratio}% MAXIMUM CHANGE): Swap only 1 to 3 words from each retrieved catalog line so it fits the user's seed ideas/theme. {100 - remix_ratio}% of the line must remain the artist's authentic vocabulary and rhythm.\n"
-        f"2. PRESERVE THE EXACT CATALOG END-WORD: You must end strictly on the authentic catalog end-word provided above for each bar. NEVER substitute generic filler like 'real', 'cake', 'slide', 'light', 'tight', 'pain', 'rain'.\n"
-        f"3. WRITE BACKWARDS FROM THE PUNCH: Anchor the authentic catalog end-rhyme word first, and build the cadence backwards.\n"
-        f"4. PRESERVE CADENCE & INNER RHYMES: Keep the flow, rhythm, and internal rhyme structures completely intact.\n"
-        f"5. NO LINES FROM SCRATCH: Every line must be a direct light remix of its assigned catalog foundation bar."
+        f"CRITICAL REMIX MANDATES:\n"
+        f"1. EDIT THIS LINE, DO NOT REWRITE: You may swap AT MOST 1 to 3 words from each foundation line to touch upon the user's theme. 80% to 90% of the line MUST remain the artist's authentic original vocabulary and rhythm.\n"
+        f"2. KEEP END-WORD EXACTLY: Preserve the assigned end word exactly for each bar. NEVER substitute generic filler words.\n"
+        f"3. PRESERVE RHYTHM & COMMAS: Preserve the exact comma count and syllable count (±1 syllable) of each foundation line.\n"
+        f"4. PRESERVE INTERNAL RHYMES: Keep all internal assonances and internal rhyme positions intact.\n"
+        f"5. RETURN UNCHANGED IF UNABLE TO FIT: If you cannot incorporate the theme within the word change cap, return the catalog foundation line completely UNCHANGED. The catalog line is the absolute quality floor.\n"
+        f"6. NO ESSAYS OR EXPANSIONS: Do not add extra setup phrases or expand foundation lines."
     )
 
     if scratchpad_bars:
@@ -1188,27 +1202,24 @@ def generate_frontier_bars_v2(
         user_instructions.append(f"Custom Studio Theme/Mood: {topic_hint}")
 
     user_instructions.append(
-        "=== FEW-SHOT DEMONSTRATIONS: THE AUDAMAR / LOBSTER 4x4 CADENCE (STUDY THESE CAREFULLY) ===\n"
-        "Here is exactly how a master platinum ghostwriter remixes a base catalog line into the Audamar/Lobster 4x4 meter:\n\n"
-        "CRITICAL EXPANSION RULE FOR SHORT CATALOG LINES:\n"
-        "If a base catalog line is short (under 12 syllables), NEVER chop it up with commas into tiny 2-word pieces! That ruins the cadence!\n"
-        "Instead, write a fresh 8-to-10-syllable luxury setup for Beats 1 & 2 (with an internal rhyme connecting them), then use the catalog line (remixed) as Beats 3 & 4!\n\n"
-        "Example 1:\n"
-        "- Base Catalog Line: \"Went and got a Rollie, Audemars\" (Gunna - only 8 syllables)\n"
-        "- Remixed 4x4 Output: Penthouse is large, gotta fast car, maximum withdraws, blue audamar\n"
-        "  (Notice: Beats 1 & 2 'Penthouse is large, gotta fast car' are a fresh 8s setup with large/car internal rhyme. Beats 3 & 4 'maximum withdraws, blue audamar' deliver the escalation and catalog landing! Exactly 3 commas!)\n\n"
-        "Example 2:\n"
-        "- Base Catalog Line: \"On my plate I got lobster\" (Gunna - only 6 syllables)\n"
-        "- Remixed 4x4 Output: She is a stylist, date has been lavish, we caught up and pop shit, over a lobster\n"
-        "  (Notice: Beats 1 & 2 'She is a stylist, date has been lavish' are a fresh 10s setup with stylist/lavish slant rhyme. Beats 3 & 4 'we caught up and pop shit, over a lobster' deliver the dining punchline! Exactly 3 commas!)\n\n"
-        "Example 3:\n"
-        "- Base Catalog Line: \"Put a big double M on my Mercedes\" (Gunna - only 10 syllables)\n"
-        "- Remixed 4x4 Output: Penthouse is spacious, lifestyle is gracious, switchin' lanes in traffic, double M Mercedes\n"
-        "  (Notice: Beats 1 & 2 'spacious' / 'gracious' rhyme. Beats 3 & 4 deliver 'switchin' lanes in traffic, double M Mercedes' ending on Mercedes! Exactly 3 commas, 19 syllables!)\n\n"
-        "Example 4:\n"
-        "- Base Catalog Line: \"I heard you paid a dime just to squeeze\" (Gunna - only 9 syllables)\n"
-        "- Remixed 4x4 Output: Drippin' in designer, pull up in a foreign, private jet in Paris, paid a dime to squeeze\n"
-        "  (Notice: Beats 1 & 2 'designer' / 'foreign' slant. Beats 3 & 4 deliver the catalog punchline ending on 'squeeze'! Exactly 3 commas, 20 syllables!)\n"
+        "=== FEW-SHOT DEMONSTRATIONS: LIGHT EDITING OF CATALOG LINES (MOVE 5) ===\n"
+        "Study these demonstrations carefully. Notice how AT MOST 1 to 2 words are swapped to fit the user's theme, while the rhythm, comma structure, syllable count, and exact end word are strictly preserved:\n\n"
+        "Demonstration 1 (Theme: 'late night studio work'):\n"
+        "- Foundation Line: \"on the block, stackin' knots, pushin' weight, in the mercedes\"\n"
+        "- Light-Edited Output: in the lab, stackin' knots, mixin' tracks, in the mercedes\n"
+        "  (Notice: swapped 2 words 'on the block' -> 'in the lab' and 'pushin' weight' -> 'mixin' tracks'. Exact comma count preserved (3 commas), identical syllable count, end word 'mercedes' kept exactly!)\n\n"
+        "Demonstration 2 (Theme: 'loyalty and trust'):\n"
+        "- Foundation Line: \"im on my grind, standin' so tall, against the odds, wont drop to my knees\"\n"
+        "- Light-Edited Output: im with my team, standin' so tall, against the odds, wont drop to my knees\n"
+        "  (Notice: swapped 1 word 'grind' -> 'team'. The entire rhythm, internal rhymes, and landing word 'knees' are preserved!)\n\n"
+        "Demonstration 3 (Theme: 'private jet travel'):\n"
+        "- Foundation Line: \"stackin' some chips, fliping the script, in it then dip, fly overseas\"\n"
+        "- Light-Edited Output: countin' some chips, fliping the script, in it then dip, fly overseas\n"
+        "  (Notice: swapped 1 word 'stackin'' -> 'countin''. Cadence and rhymes identical!)\n\n"
+        "Demonstration 4 (Theme does not fit without breaking rhythm/rhyme):\n"
+        "- Foundation Line: \"rollin 10 deep, tinted and creep, aint catching no sleep, audi it beeps\"\n"
+        "- Light-Edited Output: rollin 10 deep, tinted and creep, aint catching no sleep, audi it beeps\n"
+        "  (Notice: returned completely UNCHANGED. The catalog foundation line is the quality floor!)\n"
     )
 
     couplet_guidance = []
@@ -1227,48 +1238,43 @@ def generate_frontier_bars_v2(
         w1 = cat1["end_word"] if cat1 else tw1
         w2 = cat2["end_word"] if cat2 else tw2
         if cat1:
+            cat1_toks = tokenize(normalize(cat1["text"]))
+            cap1 = max(2, int(len(cat1_toks) * get_dynamic_cap(cat1, base_cap=base_cap)))
             couplet_guidance.append(
-                f"Bar {b_start:02d} [{a1}]: REMIX FOUNDATION ({a1}): \"{cat1['text']}\" (Landing Rhyme: '{w1}').\n"
-                f"   Build {a1}'s Audamar/Lobster 4x4 bar that lands on '{w1}' in Beat 4:\n"
-                f"   [Beat 1 (Sound A Setup)] 4-5s, [Beat 2 (Sound A Rhyme)] 4-5s, [Beat 3 Kinetic Action] 4-5s, [Beat 4 Punchline on '{w1}'] 4-5s.\n"
-                f"   CRITICAL: DO NOT repeat '{w1}' in Beat 1 or 2! '{w1}' belongs ONLY at the end of Beat 4! Total line must be 17-21 syllables."
+                f"Bar {b_start:02d} [{a1}]: EDIT THIS LINE: \"{cat1['text']}\"\n"
+                f"   • Keep end word \"{w1}\" exactly.\n"
+                f"   • Swap AT MOST {cap1} words to touch user's theme.\n"
+                f"   • Preserve comma count ({cat1['text'].count(',')}) and syllable count ±1 ({cat1['syllables']}).\n"
+                f"   • Preserve internal rhymes. If unable to fit theme without violating rules, return line unchanged."
             )
         else:
             couplet_guidance.append(
-                f"Bar {b_start:02d} [{a1} - {m_name}]: EXACTLY 3 COMMAS (4 PHRASES, 17-21 syl total):\n"
-                f"   [Beat 1 (Sound A Setup)] 4-5s, [Beat 2 (Sound A Rhyme)] 4-5s, [Beat 3 Kinetic Turn] 4-5s, [Beat 4 Punchline on '{w1}'] 4-5s."
+                f"Bar {b_start:02d} [{a1} - {m_name}]: Fallback couplet bar ending on '{w1}'."
             )
         if cat2:
+            cat2_toks = tokenize(normalize(cat2["text"]))
+            cap2 = max(2, int(len(cat2_toks) * get_dynamic_cap(cat2, base_cap=base_cap)))
             couplet_guidance.append(
-                f"Bar {b_end:02d} [{a2}]: REMIX FOUNDATION ({a2}): \"{cat2['text']}\" (Landing Rhyme: '{w2}').\n"
-                f"   Build {a2}'s Audamar/Lobster 4x4 bar that lands on '{w2}' in Beat 4:\n"
-                f"   [Beat 1 (Sound B Setup)] 4-5s, [Beat 2 (Sound B Rhyme)] 4-5s, [Beat 3 Kinetic Action] 4-5s, [Beat 4 Punchline on '{w2}'] 4-5s.\n"
-                f"   CRITICAL: DO NOT repeat '{w2}' in Beat 1 or 2! '{w2}' belongs ONLY at the end of Beat 4! Total line must be 17-21 syllables."
+                f"Bar {b_end:02d} [{a2}]: EDIT THIS LINE: \"{cat2['text']}\"\n"
+                f"   • Keep end word \"{w2}\" exactly.\n"
+                f"   • Swap AT MOST {cap2} words to touch user's theme.\n"
+                f"   • Preserve comma count ({cat2['text'].count(',')}) and syllable count ±1 ({cat2['syllables']}).\n"
+                f"   • Preserve internal rhymes. If unable to fit theme without violating rules, return line unchanged."
             )
         else:
             couplet_guidance.append(
-                f"Bar {b_end:02d} [{a2} - {m_name}]: EXACTLY 3 COMMAS (4 PHRASES, 17-21 syl total):\n"
-                f"   [Beat 1 (Sound B Setup)] 4-5s, [Beat 2 (Sound B Rhyme)] 4-5s, [Beat 3 Kinetic Turn] 4-5s, [Beat 4 Punchline on '{w2}'] 4-5s."
+                f"Bar {b_end:02d} [{a2} - {m_name}]: Fallback couplet bar ending on '{w2}'."
             )
 
     user_instructions.append(f"Write ALL {bars_count} BARS line by line (DO NOT STOP AT 4 BARS):\n" + "\n".join(couplet_guidance[:bars_count]))
     user_instructions.append(
-        "CRITICAL QUADRASONIC CADENCE & CATALOG RHYME MANDATES:\n"
-        "1. STRICT CATALOG END-RHYMES ONLY: Every couplet must resolve strictly on the assigned authentic catalog pair! NEVER substitute generic nursery rhymes like 'real', 'cake', 'slide', 'light', 'tight', 'pain', 'rain'.\n"
-        "2. AUDAMAR/LOBSTER 4x4 METER (EXACTLY 3 COMMAS PER LINE): Every single line MUST have EXACTLY THREE COMMAS separating 4 substantive phrases of 4 to 5 syllables each (total 17-21 syllables). NEVER output a line with only 1 or 2 commas!\n"
-        "3. BEAT 1 & BEAT 2 INTERNAL RHYME CHAIN: Beat 1 and Beat 2 MUST interlock with an internal rhyme or strong slant vowel match (e.g. large/car, stylist/lavish, maybach/payback, celine/green, collar/dollar)!\n"
-        "4. BEAT 3 KINETIC ACTION / BEAT 4 PUNCHLINE: Beat 3 gives financial/street momentum (e.g. maximum withdraws, pop shit, switchin' lanes), Beat 4 lands the concrete luxury status punchline item.\n"
-        "5. ZERO CONVERSATIONAL FILLERS OR ORPHANS: NEVER write words like 'yeah,', 'man,', 'look,', 'uh,', 'said,', 'rich,' as a separate phrase! NEVER output a single-word beat!\n"
-        "6. NO DUPLICATE RHYME INTRUSIONS: NEVER glue rhyming words together in a phrase like 'reveal deal' or 'flow glow' or 'low though'. The rhyme landing belongs ONLY at the end of Beat 4.\n"
-        "7. GOLDEN BENCHMARKS TO EMULATE:\n"
-        "   - Gunna: 'Penthouse is large, gotta fast car, maximum withdraws, blue audamar' (4s, 4s, 5s, 4s = 17s)\n"
-        "   - Gunna: 'She is a stylist, date has been lavish, we caught up and pop shit, over a lobster' (5s, 5s, 6s, 5s = 21s)\n"
-        "   - Drake: 'Late night in the city, pity for the pretty, caught up on the phone line, flight to New York City' (5s, 5s, 5s, 5s = 20s)\n"
-        "   - Drake: 'Table at the Carbone, sitting in a dark tone, check was thirty thousand, dialed on the smart phone' (5s, 5s, 5s, 5s = 20s)\n"
-        "   - Lil Wayne: 'Light flick in the dark, fire on the spark, running through the jungle, swimming with the shark' (5s, 5s, 5s, 5s = 20s)\n"
-        "   - NoCap: 'Sitting in a cold cell, stories that I won't tell, scars across my body, ringing out the church bell' (5s, 5s, 5s, 5s = 20s)\n"
-        "   - Gunna: 'Bought me a Maybach, plannin' the payback, runnin' through static, Patek automatic' (5s, 5s, 6s, 6s = 22s)\n"
-        "8. OUTPUT FORMAT: Output ONLY the raw lyric lines, 1 bar per line, no Bar labels, no quotes."
+        "CRITICAL MOVE 5 MANDATES:\n"
+        "1. EDIT THIS LINE, DO NOT REWRITE: You may swap AT MOST 1 to 3 words from each foundation line. 80%+ of the line MUST remain the artist's authentic original vocabulary and rhythm.\n"
+        "2. PRESERVE EXACT END-WORD: Every bar must resolve strictly on the assigned end-word!\n"
+        "3. PRESERVE RHYTHM & COMMAS: Preserve the exact comma count and syllable count (±1) of each foundation line.\n"
+        "4. PRESERVE INTERNAL RHYMES: Keep all internal assonances and rhyme positions intact.\n"
+        "5. RETURN UNCHANGED IF UNABLE TO FIT: If you cannot incorporate the theme within the word change cap, return the catalog foundation line completely UNCHANGED.\n"
+        "6. OUTPUT FORMAT: Output ONLY the raw lyric lines, 1 bar per line, no Bar labels, no quotes."
     )
 
     user_content = "\n\n".join(user_instructions)
@@ -1310,22 +1316,22 @@ def generate_frontier_bars_v2(
                 if l_clean:
                     parsed.append(l_clean)
 
-                if len(parsed) < bars_count:
-                    expanded = []
-                    for p in parsed:
-                        p_commas = [part.strip() for part in p.split(",") if part.strip()]
-                        if len(p_commas) >= 6:
-                            mid = len(p_commas) // 2
-                            expanded.append(", ".join(p_commas[:mid]))
-                            expanded.append(", ".join(p_commas[mid:]))
-                        else:
-                            expanded.append(p)
-                    parsed = expanded
+            if len(parsed) < bars_count:
+                expanded = []
+                for p in parsed:
+                    p_commas = [part.strip() for part in p.split(",") if part.strip()]
+                    if len(p_commas) >= 6:
+                        mid = len(p_commas) // 2
+                        expanded.append(", ".join(p_commas[:mid]))
+                        expanded.append(", ".join(p_commas[mid:]))
+                    else:
+                        expanded.append(p)
+                parsed = expanded
 
-                if len(parsed) >= 4:
-                    raw_lines = parsed
-                    provider = f"frontier_ghostwriter_v3 ({model_name})"
-                    break
+            if len(parsed) >= 4:
+                raw_lines = parsed
+                provider = f"frontier_ghostwriter_v3 ({model_name})"
+                break
         except Exception as exc:
             print(f"[Ghostwriter V3] Attempt with {model_name} failed: {exc}", file=sys.stderr)
             continue
@@ -1362,6 +1368,25 @@ def generate_frontier_bars_v2(
             ]
 
     final_bars = raw_lines[:bars_count]
+    while len(final_bars) < bars_count:
+        idx = len(final_bars)
+        cat = retrieved_catalog_bars[idx] if idx < len(retrieved_catalog_bars) else None
+        final_bars.append(cat["text"] if cat else "stackin' the cash, ridin' the wave")
+
+    # Move 5: Post-generation Token Levenshtein Hard Check & Catalog Floor Enforcement
+    for i in range(len(final_bars)):
+        cat = retrieved_catalog_bars[i] if i < len(retrieved_catalog_bars) else None
+        if cat and cat.get("text"):
+            cat_toks = tokenize(normalize(cat["text"]))
+            remix_toks = tokenize(normalize(final_bars[i]))
+            bar_cap = get_dynamic_cap(cat, base_cap=base_cap)
+            cap_tokens = max(2, int(len(cat_toks) * bar_cap))
+            dist = token_levenshtein_distance(cat_toks, remix_toks)
+            target_w = cat.get("end_word", "").lower()
+            remix_end = remix_toks[-1].lower() if remix_toks else ""
+            if dist > cap_tokens or (target_w and remix_end != target_w):
+                final_bars[i] = cat["text"]
+
     elapsed = round(time.time() - t0, 2)
 
     cmu = _get_cmu()
@@ -1438,6 +1463,9 @@ def generate_frontier_bars_v2(
 
             bar_res = grid_eval_initial["bar_results"][failed_idx]
             cat_match = retrieved_catalog_bars[failed_idx] if failed_idx < len(retrieved_catalog_bars) else None
+            if cat_match:
+                # Move 5: Catalog foundation lines serve as cadence and quality floor; do not overwrite with generic grid rewrites
+                continue
             couplet_idx = failed_idx // 2
             c_bank = catalog_banks[couplet_idx % len(catalog_banks)]
             target_word = cat_match["end_word"] if (cat_match and cat_match.get("end_word")) else c_bank["pair"][failed_idx % 2]
@@ -1569,6 +1597,21 @@ def generate_frontier_bars_v2(
             ln = beat_info["quad_formatted"]
             toks = tokenize(normalize(ln))
 
+        # Move 5: Final Catalog Floor & Token-Levenshtein Hard Cap Check
+        if cat_match and cat_match.get("text"):
+            cat_toks = tokenize(normalize(cat_match["text"]))
+            remix_toks = tokenize(normalize(ln))
+            bar_cap = get_dynamic_cap(cat_match, base_cap=base_cap)
+            cap_tokens = max(2, int(len(cat_toks) * bar_cap))
+            dist = token_levenshtein_distance(cat_toks, remix_toks)
+            target_w = cat_match.get("end_word", "").lower()
+            remix_end = remix_toks[-1].lower() if remix_toks else ""
+            if dist > cap_tokens or (target_w and remix_end != target_w):
+                ln = cat_match["text"]
+                toks = tokenize(normalize(ln))
+                end_w = toks[-1] if toks else target_w
+                beat_info = parse_beat_groups(ln, cmu)
+
         beat_info["beat_syllables"] = [count_cmu_syllables(g, cmu) if g else 0 for g in beat_info["groups"]]
         beat_info["total_syllables"] = sum(beat_info["beat_syllables"])
 
@@ -1664,6 +1707,8 @@ def generate_frontier_bars_v2(
             "is_consecutive_couplet": bool(cat_match.get("is_consecutive_couplet")) if cat_match else False,
             "edit_distance_ratio": compliance["edit_distance_ratio"],
             "edit_distance_cap": compliance["cap"],
+            "token_levenshtein": compliance.get("token_levenshtein", 0),
+            "token_levenshtein_cap": compliance.get("token_levenshtein_cap", 2),
             "remix_compliant": compliance["is_compliant"],
             "end_word_preserved": compliance["end_word_preserved"],
             "grid_passed": bar_grid.get("passed", True),
