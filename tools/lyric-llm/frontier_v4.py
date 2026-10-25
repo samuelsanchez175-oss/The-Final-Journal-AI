@@ -276,7 +276,9 @@ def generate_v4(
     t0 = time.time()
     generation_id = generation_id or f"v4_{int(time.time())}_{uuid.uuid4().hex[:8]}"
     clock_bpm, halftime_bpm, tempo_label = polish.normalize_trap_tempo(bpm)
-    effective_syl = target_syl if target_syl else max(15, tempo_line_syllables(clock_bpm) + 2)
+    from hook_engine import get_section_cadence_rules, verify_section_structure
+    sec_rules = get_section_cadence_rules(section_mode)
+    effective_syl = target_syl if target_syl else (sec_rules["target_syl"] if section_mode != "verse" else max(15, tempo_line_syllables(clock_bpm) + 2))
     user_albums = chosen_albums or DEFAULT_CHOSEN_ALBUMS.get(voice, [])
 
     # Task L: Prompt & Params Cache Lookup
@@ -601,6 +603,8 @@ def generate_v4(
         "scale": scale,
         "target_syllables": effective_syl,
         "base_cap": base_cap,
+        "section_mode": section_mode,
+        "section_structure": verify_section_structure(final_bars, section_mode=section_mode, cmu=cmu),
         "plan": plan,
         "draft_bars": best_take["draft_bars"],
         "polished_bars": best_take["polished_bars"],

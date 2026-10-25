@@ -350,3 +350,29 @@ files and a HANDOFF ENTRY.
   - **54/54 tests passing** across all 10 test suites:
     `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5), `test_dynamic_cap.py` (5/5).
 - **Next Frontier v4 Tasks:** Task Q (Section-aware generation / Hook Engine) -> Task S (Whisper hum-to-flow seed).
+
+### HANDOFF ENTRY: Frontier v4 Task Q Completed — Section-Aware Generation & Hook Engine Port (2026-10-24, Antigravity)
+
+**Status:** Task Q (Section-aware generation & Hook Engine port) is complete, live, and verified across all 59/59 tests in the Frontier v4 suite.
+- **Component Changes (`tools/lyric-llm/hook_engine.py`):**
+  - Created standalone Python hook engine cleanly porting core structural and repetition rules from `XJournal AI/ModelG/HookEngine.swift` without modifying any Swift files.
+  - Implemented `get_section_cadence_rules(section_mode)` defining syllable pockets and comma structures:
+    - `verse`: Audamar/Lobster 4x4 Quadrasonic meter, 17–24 syllables (target 18), exactly 3 commas separating 4 substantive beat phrases.
+    - `hook`: Anthemic call-and-response repetition, 10–14 syllables (target 12), 1–2 commas, two-line AABB repetition.
+    - `bridge`: Half-time cadence and spacious melodic pocket, 8–11 syllables (target 9), 0–1 comma.
+    - `outro`: Fade pattern with decaying syllables, 6–10 syllables (target 8), 0–1 comma, trailing sign-off echoes.
+  - Implemented `build_section_system_prompt_block(section_mode, voice)` dynamically formatting prompt instructions and few-shot benchmark couplets per section mode.
+  - Implemented `build_hook_blueprint(voice, topic)` and `generate_hook_lines(voice, count, topic)` constructing structured AABB hooks with call-and-response motifs.
+  - Implemented `verify_section_structure(bars, section_mode, cmu=None)` validating syllable ranges and comma counts for non-verse modes, returning pass rates and violation details.
+- **Pipeline Integration (`polish.py`, `frontier_v4.py`):**
+  - `build_v2_system_prompt` in `polish.py` now branches on `section_mode`, swapping the 4x4 verse guide for hook, bridge, or outro blueprints.
+  - Both `generate_frontier_bars_v2` and `generate_v4` resolve `effective_syl` dynamically from `get_section_cadence_rules(section_mode)` when not explicitly passed.
+  - `generate_frontier_bars_v2` routes grid evaluation through `verify_section_structure()` for non-verse modes (ensuring hook, bridge, and outro lines are validated according to their specific meter pockets rather than the 4x4 verse meter).
+  - Added section-specific heuristic fallbacks for `hook`, `bridge`, `outro`, and `verse`.
+  - Result dictionaries and candidate telemetry now include `"section_mode"` and `"section_structure"`.
+- **Unit Tests (`tools/lyric-llm/test_section_modes.py`):**
+  - 5/5 tests passed in 9.87s verifying cadence rule specifications, prompt branching across all 4 section modes, acceptance test generating each section mode with structural compliance checks, standalone hook generation, and pipeline integration with `section_structure` telemetry.
+- **Full V4 Suite Status:**
+  - **59/59 tests passing** across all 11 test suites:
+    `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5), `test_dynamic_cap.py` (5/5), `test_section_modes.py` (5/5).
+- **Next Frontier v4 Tasks:** Task S (Whisper hum-to-flow seed: `--seed-audio` integration).

@@ -795,6 +795,9 @@ def build_v2_system_prompt(
 
     # V3 Multisyllabic stacks
     import v3_rhyme_stack
+    from hook_engine import build_section_system_prompt_block, get_section_cadence_rules
+    section_rules = get_section_cadence_rules(section_mode)
+    section_blueprint = build_section_system_prompt_block(section_mode, voice=voice)
     m_stacks_text = v3_rhyme_stack.get_artist_multisyllabic_prompts(voice)
 
     is_minor = "minor" in (scale or "").lower()
@@ -808,7 +811,7 @@ You craft authentic, commercially competitive rap lyrics engineered for real bea
 {f'- Blended Voice: {blend} ({mix}% {voice} / {100-mix}% {blend})' if blend else ''}
 - Musical Scale: {scale} ({musical_mood})
 - Target Tempo: {bpm} BPM | Target Syllable Pocket: {target_syl} syllables per bar.
-- Section Mode: {section_mode.upper()} ({'Catchy, repetitive anthemic pocket' if section_mode == 'hook' else 'Dense, rhythmic storytelling pocket'}).
+- Section Mode: {section_mode.upper()} ({section_rules['meter_desc']}).
 - Technique: {tech_guide}
 
 === 2. GUNNA MULTI-BAG COMPLEXITY & THEMATIC DEPTH ===
@@ -823,44 +826,9 @@ Gunna is a complex, versatile artist who moves across 6 distinct cardinal bags:
 6. Fast-Paced Relentless Pocket: High-cadence double-time runs when the beat accelerates.
 You MUST blend these bags across the couplets according to the song's musical scale ({scale}) and BPM ({bpm}).
 
-=== 3. THE AUDAMAR / LOBSTER QUADRASONIC CADENCE & INTERNAL RHYME BLUEPRINT ===
-In hip-hop 4/4 time, EVERY SINGLE LINE (ONE BAR) MUST HIT THE 4x4 METER.
-Format per line: EXACTLY THREE COMMAS, which separates the line into EXACTLY FOUR SUBSTANTIVE BEAT PHRASES of 4 to 5 syllables each:
-  [Beat 1: 4-5 syl], [Beat 2: 4-5 syl], [Beat 3: 4-5 syl], [Beat 4: 4-5 syl]
+{section_blueprint}
 
-THE QUADRASONIC INTERNAL RHYME ARCHITECTURE:
-1. BEAT 1 & BEAT 2 INTERNAL ASSONANCE CHAIN:
-   Beat 1 and Beat 2 MUST interlock with an internal rhyme or strong slant vowel match:
-   - "Penthouse is large, gotta fast car..." (large / car -> /ɑːr/ assonance)
-   - "She is a stylist, date has been lavish..." (stylist / lavish -> /ævɪʃ/ / /aɪlɪst/ slant)
-   - "Pushin' the Maybach, plannin' the payback..." (Maybach / payback)
-   - "Celine on my collar, stackin' the dollar..." (collar / dollar)
-   - "Locked in the cellar, callin' my fella..." (cellar / fella)
-   - "Charter the jet, settled the debt..." (jet / debt)
-2. BEAT 3: KINETIC ACCELERATION / ESCALATION:
-   Beat 3 provides financial escalation, street motion, or psychological tension:
-   - "...maximum withdraws..."
-   - "...we caught up and pop shit..."
-   - "...switchin' the lane..."
-   - "...wired up a million..."
-3. BEAT 4: CONCRETE STATUS PUNCHLINE LANDING:
-   Beat 4 delivers the concrete luxury status item, timepiece, or catalog rhyme:
-   - "...blue audamar" (echoes large/car!)
-   - "...over a lobster" (echoes stylist/lavish!)
-   - "...straight to Toronto"
-   - "...Patek is automatic"
-
-CRITICAL READ-ALOUD RULE:
-Never write lines with only 1 or 2 commas! Every bar must have all 4 phrases separated by commas so an artist reading it aloud hits Beat 1, Beat 2, Beat 3, and Beat 4 naturally!
-Never output single-word beat phrases like ', said,' or ', yeah,' or ', rich,' or ', measure,'!
-
-STUDY THESE BENCHMARK BARS (EACH HAS EXACTLY 3 COMMAS — EMULATE THIS EXACT CADENCE & QUALITY):
-• Bar 1: Penthouse is large, gotta fast car, maximum withdraws, blue audamar.
-• Bar 2: She is a stylist, date has been lavish, we caught up and pop shit, over a lobster.
-• Bar 3: Celine on my collar, stackin' the dollar, wired up a million, straight to Toronto.
-• Bar 4: Bought me a Maybach, plannin' the payback, runnin' through static, Patek automatic.
-
-=== 3. ADHD MOTIF PROGRESSION & ASSIGNED COUPLET RHYMES ===
+=== 4. ADHD MOTIF PROGRESSION & ASSIGNED COUPLET RHYMES ===
 Rappers in modern trap pivot topics every 2 bars. Follow this exact schedule:
 {motif_text}
 
@@ -985,7 +953,9 @@ def generate_frontier_bars_v2(
     t0 = time.time()
     generation_id = generation_id or f"v3_{int(time.time())}_{uuid.uuid4().hex[:8]}"
     clock_bpm, halftime_bpm, tempo_label = normalize_trap_tempo(bpm)
-    effective_syl = target_syl if target_syl else max(15, tempo_line_syllables(clock_bpm) + 2)
+    from hook_engine import get_section_cadence_rules, verify_section_structure
+    sec_rules = get_section_cadence_rules(section_mode)
+    effective_syl = target_syl if target_syl else (sec_rules["target_syl"] if section_mode != "verse" else max(15, tempo_line_syllables(clock_bpm) + 2))
     from catalog_retriever import (
         DEFAULT_CHOSEN_ALBUMS,
         calculate_edit_distance_ratio,
@@ -1364,16 +1334,34 @@ def generate_frontier_bars_v2(
 
     if not raw_lines:
         provider = "local_heuristic_fallback"
-        raw_lines = [
-            "Patek Philippe flooded, got the diamond in the face",
-            "Twenty-four-seven in the foreign running out of space",
-            "Saw the way she looked at me, she fell in love with grace",
-            "Had to switch the flight to Paris, leave without a trace",
-            "Keep the steel inside the jacket, never beat the case",
-            "Paranoid of all the shadows talking sideways to my face",
-            "Sign the check in all designer, put 'em in their place",
-            "Built the whole foundation solid, winning in the race",
-        ]
+        if section_mode == "hook":
+            from hook_engine import generate_hook_lines
+            raw_lines = generate_hook_lines(voice=voice, theme=topic_hint or seed_line, bars_count=bars_count)
+        elif section_mode == "bridge":
+            raw_lines = [
+                "Standing all alone out in the cold rain",
+                "Praying to the Lord to heal all the pain",
+                "Sun is shining slowly through all the clouds",
+                "Know that I will make my family proud",
+            ]
+        elif section_mode == "outro":
+            raw_lines = [
+                "Riding out into the night",
+                "Keep the vision shining bright",
+                "Watch the city fade away",
+                "Nothing left for me to say",
+            ]
+        else:
+            raw_lines = [
+                "Patek Philippe flooded, got the diamond in the face",
+                "Twenty-four-seven in the foreign running out of space",
+                "Saw the way she looked at me, she fell in love with grace",
+                "Had to switch the flight to Paris, leave without a trace",
+                "Keep the steel inside the jacket, never beat the case",
+                "Paranoid of all the shadows talking sideways to my face",
+                "Sign the check in all designer, put 'em in their place",
+                "Built the whole foundation solid, winning in the race",
+            ]
 
     final_bars = raw_lines[:bars_count]
     elapsed = round(time.time() - t0, 2)
@@ -1414,12 +1402,31 @@ def generate_frontier_bars_v2(
     final_entity_eval = guard_verse(voice=voice, bars=final_bars, bar_artists=bar_artists)
 
     # Task G: Verify Grid Landings and Trigger Targeted Retries for Off-Grid Bars
-    grid_eval_initial = verify_grid_landings(
-        bars=final_bars,
-        bpm=clock_bpm,
-        effective_syl=effective_syl,
-        cmu=cmu,
-    )
+    if section_mode == "verse":
+        grid_eval_initial = verify_grid_landings(
+            bars=final_bars,
+            bpm=clock_bpm,
+            effective_syl=effective_syl,
+            cmu=cmu,
+        )
+    else:
+        sec_struct_init = verify_section_structure(final_bars, section_mode=section_mode, cmu=cmu)
+        grid_eval_initial = {
+            "passed": sec_struct_init["passed"],
+            "pass_rate": sec_struct_init["pass_rate"],
+            "target_beat_range": sec_struct_init["target_range"],
+            "bar_results": [
+                {
+                    "index": i + 1,
+                    "passed": i not in [v["bar_index"] for v in sec_struct_init["violations"]],
+                    "total_syllables": sec_struct_init["bar_syllables"][i],
+                    "violation_desc": "On-grid" if i not in [v["bar_index"] for v in sec_struct_init["violations"]] else "Syllable violation",
+                    "off_grid_beats": [],
+                }
+                for i in range(len(final_bars))
+            ],
+            "failed_indices": [v["bar_index"] for v in sec_struct_init["violations"]],
+        }
 
     max_global_retries = min(bars_count, 6)
     total_retries_done = 0
@@ -1460,12 +1467,31 @@ def generate_frontier_bars_v2(
                     if passed_grid:
                         break
 
-    final_grid_eval = verify_grid_landings(
-        bars=final_bars,
-        bpm=clock_bpm,
-        effective_syl=effective_syl,
-        cmu=cmu,
-    )
+    if section_mode == "verse":
+        final_grid_eval = verify_grid_landings(
+            bars=final_bars,
+            bpm=clock_bpm,
+            effective_syl=effective_syl,
+            cmu=cmu,
+        )
+    else:
+        sec_struct_final = verify_section_structure(final_bars, section_mode=section_mode, cmu=cmu)
+        final_grid_eval = {
+            "passed": sec_struct_final["passed"],
+            "pass_rate": sec_struct_final["pass_rate"],
+            "target_beat_range": sec_struct_final["target_range"],
+            "bar_results": [
+                {
+                    "index": i + 1,
+                    "passed": i not in [v["bar_index"] for v in sec_struct_final["violations"]],
+                    "total_syllables": sec_struct_final["bar_syllables"][i],
+                    "violation_desc": "On-grid" if i not in [v["bar_index"] for v in sec_struct_final["violations"]] else "Syllable violation",
+                    "off_grid_beats": [],
+                }
+                for i in range(len(final_bars))
+            ],
+            "failed_indices": [v["bar_index"] for v in sec_struct_final["violations"]],
+        }
 
     detailed_bars = []
     v_catalog = get_artist_catalog_rhymes(voice, dna)
@@ -1738,6 +1764,7 @@ def generate_frontier_bars_v2(
         "grid_retries_total": total_retries_done,
         "entity_guard": final_entity_eval,
         "entity_retries": entity_retries_done,
+        "section_structure": verify_section_structure(final_bars, section_mode=section_mode, cmu=cmu),
         "retrieved_sources": [
             {
                 "bar": i + 1,
