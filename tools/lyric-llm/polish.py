@@ -862,6 +862,16 @@ Whenever NoCap is selected or blended:
 4. PRESERVE RHYTHM & COMMAS: Preserve the exact comma cadence and syllable count (±1) of each foundation line.
 5. PRESERVE INTERNAL RHYMES: Keep all internal rhymes, vowel assonances, and rhythmic pockets intact.
 6. RETURN UNCHANGED IF UNABLE TO FIT: If you cannot fit the user's theme without breaking these rules, return the catalog foundation line completely UNCHANGED. The catalog line is the quality floor.
+
+=== 8B. MOVE 6 INNER-RHYME & STRUCTURAL MANDATES (PER BAR) ===
+• Every single bar MUST contain at least 2 distinct inner rhymes BEFORE the end word.
+• An inner rhyme = two distinct content words in the bar whose stressed vowel class or rime matches (CMU standard).
+• Example (Beat 1 setup / Beat 2 same-vowel rhyme): "Penthouse is large, gotta fast car" — large/car.
+• Example (Beat 1 / Beat 3): "She is a stylist, date has been lavish" — stylist/lavish (slant).
+• Cap at 4 inner rhymes to prevent tongue-twister runaway while preserving natural trap bounce.
+• Comma Count: Must equal the retrieved anchor's comma count (or exactly 3 commas for 4x4 meter).
+• Syllables: Must be within ±1 of target syllable count.
+
 7. Sustained Comma-Segmented Cadence: When generating lines, maintain distinct comma-delimited pockets with consistent syllable counts per pocket (e.g. 4+4+4+4 or 5+5+5+5).
 8. ABAB Inner Rhyme Level:
    - Segment 1 ends on Rhyme A,
@@ -1268,11 +1278,11 @@ def generate_frontier_bars_v2(
 
     user_instructions.append(f"Write ALL {bars_count} BARS line by line (DO NOT STOP AT 4 BARS):\n" + "\n".join(couplet_guidance[:bars_count]))
     user_instructions.append(
-        "CRITICAL MOVE 5 MANDATES:\n"
+        "CRITICAL MOVE 5 & 6 MANDATES:\n"
         "1. EDIT THIS LINE, DO NOT REWRITE: You may swap AT MOST 1 to 3 words from each foundation line. 80%+ of the line MUST remain the artist's authentic original vocabulary and rhythm.\n"
         "2. PRESERVE EXACT END-WORD: Every bar must resolve strictly on the assigned end-word!\n"
         "3. PRESERVE RHYTHM & COMMAS: Preserve the exact comma count and syllable count (±1) of each foundation line.\n"
-        "4. PRESERVE INTERNAL RHYMES: Keep all internal assonances and rhyme positions intact.\n"
+        "4. AT LEAST 2 INNER RHYMES PER BAR: Every single bar MUST contain at least 2 internal rhyming content words (same-vowel assonance or slant rhyme) before the end word.\n"
         "5. RETURN UNCHANGED IF UNABLE TO FIT: If you cannot incorporate the theme within the word change cap, return the catalog foundation line completely UNCHANGED.\n"
         "6. OUTPUT FORMAT: Output ONLY the raw lyric lines, 1 bar per line, no Bar labels, no quotes."
     )
@@ -1492,6 +1502,52 @@ def generate_frontier_bars_v2(
                     final_bars[failed_idx] = rewritten_line
                     if passed_grid:
                         break
+
+    # Move 6: Inner-Rhyme, Comma, and Syllable Structural Post-Check (Task Move 6)
+    from inner_rhyme_check import audit_bar_structure, rewrite_structurally_failed_bar
+    structure_audits = []
+    structure_retries_done = 0
+
+    for i in range(len(final_bars)):
+        cat_match = retrieved_catalog_bars[i] if i < len(retrieved_catalog_bars) else None
+        anchor_txt = cat_match["text"] if cat_match else ""
+        couplet_idx = i // 2
+        c_bank = catalog_banks[couplet_idx % len(catalog_banks)]
+        target_w = cat_match["end_word"] if (cat_match and cat_match.get("end_word")) else c_bank["pair"][i % 2]
+        target_artist = bar_artists[i] if i < len(bar_artists) else voice
+
+        audit = audit_bar_structure(
+            bar_text=final_bars[i],
+            anchor_text=anchor_txt,
+            target_syl=effective_syl,
+            cmu=cmu,
+        )
+
+        if not audit["passed"] and total_retries_done < max_global_retries:
+            total_retries_done += 1
+            structure_retries_done += 1
+            bar_retry_counts[i] += 1
+            rewritten_bar, passed_struct = rewrite_structurally_failed_bar(
+                bar_text=final_bars[i],
+                anchor_dict=cat_match,
+                target_word=target_w,
+                audit=audit,
+                bar_index=i + 1,
+                voice=target_artist,
+                cmu=cmu,
+                call_fn=chat,
+                base_cap=base_cap,
+            )
+            if rewritten_bar:
+                final_bars[i] = rewritten_bar
+                audit = audit_bar_structure(
+                    bar_text=final_bars[i],
+                    anchor_text=anchor_txt,
+                    target_syl=effective_syl,
+                    cmu=cmu,
+                )
+
+        structure_audits.append(audit)
 
     if section_mode == "verse":
         final_grid_eval = verify_grid_landings(
@@ -1715,6 +1771,17 @@ def generate_frontier_bars_v2(
             "grid_violations": bar_grid.get("off_grid_beats", []),
             "grid_violation_desc": bar_grid.get("violation_desc", "On-grid"),
             "grid_retries": bar_retry_counts[idx] if idx < len(bar_retry_counts) else 0,
+            "inner_rhyme_count": structure_audits[idx]["inner_rhyme_count"] if idx < len(structure_audits) else len(inner_rhymes_list),
+            "inner_passed": structure_audits[idx]["inner_passed"] if idx < len(structure_audits) else True,
+            "comma_count": structure_audits[idx]["comma_count"] if idx < len(structure_audits) else ln.count(","),
+            "expected_commas": structure_audits[idx]["expected_commas"] if idx < len(structure_audits) else 3,
+            "comma_matched": structure_audits[idx]["comma_passed"] if idx < len(structure_audits) else True,
+            "syllable_count": syl,
+            "target_syllables": structure_audits[idx]["target_syllables"] if idx < len(structure_audits) else effective_syl,
+            "syl_delta": structure_audits[idx]["syl_delta"] if idx < len(structure_audits) else abs(syl - effective_syl),
+            "syl_passed": structure_audits[idx]["syl_passed"] if idx < len(structure_audits) else (abs(syl - effective_syl) <= 1),
+            "structure_passed": structure_audits[idx]["passed"] if idx < len(structure_audits) else True,
+            "structure_violations": structure_audits[idx]["violations"] if idx < len(structure_audits) else [],
         })
 
     # Couplet rhyming evaluation using CMU phonetic matching and V3 Multisyllabic Stacks
@@ -1809,6 +1876,11 @@ def generate_frontier_bars_v2(
         "fallback_count": sum(1 for c in retrieved_catalog_bars if c is None),
         "entity_guard": final_entity_eval,
         "entity_retries": entity_retries_done,
+        "structure_pass_rate": round(sum(1 for a in structure_audits if a.get("passed")) / max(1, len(structure_audits)), 3) if structure_audits else 1.0,
+        "mean_inner_rhymes": round(sum(a.get("inner_rhyme_count", 0) for a in structure_audits) / max(1, len(structure_audits)), 2) if structure_audits else 0.0,
+        "comma_match_rate": round(sum(1 for a in structure_audits if a.get("comma_passed")) / max(1, len(structure_audits)), 3) if structure_audits else 1.0,
+        "syl_tolerance_rate": round(sum(1 for a in structure_audits if a.get("syl_passed")) / max(1, len(structure_audits)), 3) if structure_audits else 1.0,
+        "structure_retries": structure_retries_done,
         "section_structure": verify_section_structure(final_bars, section_mode=section_mode, cmu=cmu),
         "retrieved_sources": [
             {
