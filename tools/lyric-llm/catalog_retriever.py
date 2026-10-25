@@ -934,7 +934,8 @@ def retrieve_matching_catalog_lines(
                     ELSE 10 
                 END) + (popularity_score * 2.5) + (is_iconic_anthem * 150)
                 + (CASE WHEN topic != '' AND ? != '' AND topic = ? THEN 60 ELSE 0 END)
-                + (CASE WHEN inner_vowel_class != '' AND ? != '' AND inner_vowel_class = ? THEN 50 ELSE 0 END) as retrieval_rank
+                + (CASE WHEN inner_vowel_class != '' AND ? != '' AND inner_vowel_class = ? THEN 200 ELSE 0 END)
+                + (inner_rhyme_count * 15) as retrieval_rank
         FROM catalog_bars
         WHERE artist = ? AND is_generic = 0
           AND (
@@ -1012,15 +1013,15 @@ def retrieve_matching_catalog_lines(
         syl_diff = abs(row_dict["syllables"] - target_syl)
         score += max(0.0, 35.0 - (syl_diff * 4.0))
 
-        # 3. Inner Rhymes (Task 5 - High Priority)
-        score += min(40.0, row_dict["inner_rhyme_count"] * 7.0)
+        # 3. Inner Rhymes (Move 3: High Priority inner rhyme boost)
+        score += (row_dict.get("inner_rhyme_count") or 0) * 15.0
 
-        # Task H: Inner-Rhyme-Indexed Retrieval (+65.0 boost)
+        # Task H / Move 3: Inner-Rhyme-Indexed Retrieval (+200.0 boost)
         row_inner = row_dict.get("inner_vowel_class") or ""
         is_inner_match = False
         if norm_inner_vowel and row_inner and (row_inner == norm_inner_vowel):
             is_inner_match = True
-            score += 65.0
+            score += 200.0
         row_dict["inner_vowel_match"] = is_inner_match
 
         # Task H: Topic-Chain Binding (+75.0 boost)
@@ -1074,10 +1075,6 @@ def retrieve_matching_catalog_lines(
 
         row_dict["match_score"] = round(score, 2)
         scored_candidates.append(row_dict)
-
-    conn.close()
-    scored_candidates.sort(key=lambda x: x["match_score"], reverse=True)
-    return scored_candidates[:limit]
 
     conn.close()
     scored_candidates.sort(key=lambda x: x["match_score"], reverse=True)
