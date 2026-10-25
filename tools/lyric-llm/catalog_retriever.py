@@ -35,6 +35,7 @@ TRAIN_JSONL = OUT / "train.jsonl"
 GROUND_TRUTH_CSV = REPO_ROOT / "XJournal AI" / "ground_truth_rap_bars_MODEL_G.csv"
 GENIUS_CLICKS_DIR = REPO_ROOT / "docs" / "play-on-words" / "genius-clicks"
 END_WORD_HISTORY_PATH = OUT / "end_word_history.json"
+END_WORD_HISTORY_JSONL = OUT / "end_word_history.jsonl"
 SPOTIFY_POPULARITY_JSON = OUT / "spotify_popularity.json"
 
 try:
@@ -354,46 +355,86 @@ def get_topic_for_bar(artist: str, song: str, line_seq: int, text: str = "") -> 
     return "other"
 
 
-def get_end_word_history(window_size: int = 16, history_path: Path = END_WORD_HISTORY_PATH) -> list[str]:
-    """Retrieves recently used end-words across generations to enforce cross-generation deduplication (Task H)."""
+def get_end_word_history(window_size: int = 16, history_path: Optional[Path] = None) -> list[str]:
+    """Retrieves recently used end-words across generations to enforce cross-generation deduplication (Task H & Move 4)."""
     global _GLOBAL_END_WORD_WINDOW
-    if not _GLOBAL_END_WORD_WINDOW and history_path.exists():
+    target_path = history_path or (END_WORD_HISTORY_JSONL if END_WORD_HISTORY_JSONL.exists() else END_WORD_HISTORY_PATH)
+    if not _GLOBAL_END_WORD_WINDOW and target_path.exists():
         try:
-            with history_path.open("r", encoding="utf-8") as f:
-                data = json.load(f)
-                if isinstance(data, list):
-                    _GLOBAL_END_WORD_WINDOW = [str(w).lower() for w in data]
+            if str(target_path).endswith(".jsonl"):
+                words = []
+                with target_path.open("r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        try:
+                            item = json.loads(line)
+                            if isinstance(item, dict):
+                                if "end_words" in item and isinstance(item["end_words"], list):
+                                    words.extend([str(w).lower() for w in item["end_words"] if w])
+                                elif "end_word" in item and item["end_word"]:
+                                    words.append(str(item["end_word"]).lower())
+                            elif isinstance(item, list):
+                                words.extend([str(w).lower() for w in item if w])
+                        except Exception:
+                            pass
+                if words:
+                    _GLOBAL_END_WORD_WINDOW = words[-64:]
+            else:
+                with target_path.open("r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    if isinstance(data, list):
+                        _GLOBAL_END_WORD_WINDOW = [str(w).lower() for w in data]
         except Exception:
             _GLOBAL_END_WORD_WINDOW = []
     return _GLOBAL_END_WORD_WINDOW[-window_size:] if _GLOBAL_END_WORD_WINDOW else []
 
 
-def record_used_end_words(words: list[str], max_history: int = 64, history_path: Path = END_WORD_HISTORY_PATH) -> list[str]:
-    """Appends newly generated end-words to the persistent cross-generation dedupe window (Task H)."""
+def record_used_end_words(words: list[str], max_history: int = 64, history_path: Optional[Path] = None) -> list[str]:
+    """Appends newly generated end-words to the persistent cross-generation dedupe window (Task H & Move 4)."""
     global _GLOBAL_END_WORD_WINDOW
     clean_words = [re.sub(r"[^a-zA-Z0-9']", "", str(w).strip().lower()) for w in words if w]
     clean_words = [w for w in clean_words if w and w not in GENERIC_END_RHYME_BLACKLIST]
 
-    get_end_word_history(max_history, history_path)
+    target_path = history_path or END_WORD_HISTORY_PATH
+    get_end_word_history(max_history, target_path)
     _GLOBAL_END_WORD_WINDOW.extend(clean_words)
     _GLOBAL_END_WORD_WINDOW = _GLOBAL_END_WORD_WINDOW[-max_history:]
 
     try:
-        history_path.parent.mkdir(parents=True, exist_ok=True)
-        with history_path.open("w", encoding="utf-8") as f:
-            json.dump(_GLOBAL_END_WORD_WINDOW, f)
+        target_path.parent.mkdir(parents=True, exist_ok=True)
+        if str(target_path).endswith(".jsonl"):
+            with target_path.open("a", encoding="utf-8") as f:
+                f.write(json.dumps({"timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(), "end_words": clean_words}) + "\n")
+        else:
+            with target_path.open("w", encoding="utf-8") as f:
+                json.dump(_GLOBAL_END_WORD_WINDOW, f)
+            # Also append to end_word_history.jsonl if writing to default END_WORD_HISTORY_PATH
+            if target_path == END_WORD_HISTORY_PATH:
+                try:
+                    with END_WORD_HISTORY_JSONL.open("a", encoding="utf-8") as jf:
+                        jf.write(json.dumps({"timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(), "end_words": clean_words}) + "\n")
+                except Exception:
+                    pass
     except Exception:
         pass
     return _GLOBAL_END_WORD_WINDOW
 
 
-def clear_end_word_history(history_path: Path = END_WORD_HISTORY_PATH) -> None:
+def clear_end_word_history(history_path: Optional[Path] = None) -> None:
     """Clears the persistent cross-generation dedupe window."""
     global _GLOBAL_END_WORD_WINDOW
     _GLOBAL_END_WORD_WINDOW = []
-    if history_path.exists():
+    target_path = history_path or END_WORD_HISTORY_PATH
+    if target_path.exists():
         try:
-            history_path.unlink()
+            target_path.unlink()
+        except Exception:
+            pass
+    if history_path is None and END_WORD_HISTORY_JSONL.exists():
+        try:
+            END_WORD_HISTORY_JSONL.unlink()
         except Exception:
             pass
 
@@ -907,10 +948,29 @@ def retrieve_matching_catalog_lines(
     raw_inner = target_inner_vowel or pattern.get("inner_vowel_class") or pattern.get("target_inner_vowel") or ""
     norm_inner_vowel = normalize_vowel_class(raw_inner)
 
-    # Task H: Resolve Cross-Generation End-Word Dedupe Window
+    # Task H / Move 4: Resolve Cross-Generation End-Word Dedupe Window
     if recent_end_words is None:
         recent_end_words = get_end_word_history(window_size=end_word_dedupe_window)
-    recent_list = [str(w).lower() for w in recent_end_words if w]
+    recent_list = [re.sub(r"[^a-zA-Z0-9']", "", str(w).strip().lower()) for w in recent_end_words if w]
+    recent_list = [w for w in recent_list if w and w not in GENERIC_END_RHYME_BLACKLIST]
+
+    # Move 4: Build SQL deduplication filter
+    # If caller explicitly seeded a target_word, waive dedupe for that specific target_word
+    active_recent = [w for w in recent_list if w != target_word] if target_word else list(recent_list)
+    deduped_recent = []
+    seen_recent = set()
+    for w in active_recent:
+        if w not in seen_recent:
+            seen_recent.add(w)
+            deduped_recent.append(w)
+
+    if deduped_recent:
+        placeholders = ",".join("?" for _ in deduped_recent)
+        end_word_filter = f" AND lower(end_word) NOT IN ({placeholders})"
+        end_word_params = deduped_recent
+    else:
+        end_word_filter = ""
+        end_word_params = []
 
     # Chronological Arc & Position Map for 8-bar structures
     target_arc_map = {
@@ -999,6 +1059,7 @@ def retrieve_matching_catalog_lines(
         FROM catalog_bars
         WHERE artist = ? AND is_generic = 0
           {album_filter}
+          {end_word_filter}
           AND (
             lower(end_word) = ? OR (lower(?) = 'audamar' AND lower(end_word) = 'audemars')
             OR end_rime = ? OR end_rime LIKE ?
@@ -1019,7 +1080,7 @@ def retrieve_matching_catalog_lines(
         norm_inner_vowel,
         norm_inner_vowel,
         artist,
-    ] + album_params + [
+    ] + album_params + end_word_params + [
         target_word,
         target_word,
         target_rime,
@@ -1031,9 +1092,9 @@ def retrieve_matching_catalog_lines(
     cur.execute(sql_tier_a, tuple(tier_a_args))
     rows = cur.fetchall()
 
-    # Move 2 Tier B: drop album filter, keep rhyme matching
+    # Move 2 / Move 4 Tier B: drop album filter, keep rhyme matching
     if not rows and not scored_candidates:
-        sql_tier_b = """
+        sql_tier_b = f"""
             SELECT id, artist, song, album, text, end_word, end_rime,
                    vowel_class, syllables, inner_rhyme_count, popularity_score,
                    line_seq, total_lines, relative_pos, chronological_arc,
@@ -1048,6 +1109,7 @@ def retrieve_matching_catalog_lines(
                     + (inner_rhyme_count * 15) as retrieval_rank
             FROM catalog_bars
             WHERE artist = ? AND is_generic = 0
+              {end_word_filter}
               AND (lower(end_word) = ? OR end_rime = ? OR end_rime LIKE ?)
               AND ABS(syllables - ?) <= 6
             ORDER BY retrieval_rank DESC
@@ -1055,15 +1117,17 @@ def retrieve_matching_catalog_lines(
         """
         cur.execute(
             sql_tier_b,
-            (target_word, target_rime, rime_like, target_vowel, artist, target_word, target_rime, rime_like, target_syl),
+            (target_word, target_rime, rime_like, target_vowel, artist)
+            + tuple(end_word_params)
+            + (target_word, target_rime, rime_like, target_syl),
         )
         rows = cur.fetchall()
         if rows:
             tier_used = "B"
 
-    # Move 2 Tier C: drop rhyme, keep vowel class only
+    # Move 2 / Move 4 Tier C: drop rhyme, keep vowel class only
     if not rows and not scored_candidates:
-        sql_tier_c = """
+        sql_tier_c = f"""
             SELECT id, artist, song, album, text, end_word, end_rime,
                    vowel_class, syllables, inner_rhyme_count, popularity_score,
                    line_seq, total_lines, relative_pos, chronological_arc,
@@ -1075,19 +1139,23 @@ def retrieve_matching_catalog_lines(
                     + (inner_rhyme_count * 15) as retrieval_rank
             FROM catalog_bars
             WHERE artist = ? AND is_generic = 0
+              {end_word_filter}
               AND vowel_class = ?
               AND ABS(syllables - ?) <= 6
             ORDER BY retrieval_rank DESC
             LIMIT 60;
         """
-        cur.execute(sql_tier_c, (target_vowel, artist, target_vowel, target_syl))
+        cur.execute(
+            sql_tier_c,
+            (target_vowel, artist) + tuple(end_word_params) + (target_vowel, target_syl),
+        )
         rows = cur.fetchall()
         if rows:
             tier_used = "C"
 
-    # Move 2 Tier D: drop vowel class, keep syllable count ±4
+    # Move 2 / Move 4 Tier D: drop vowel class, keep syllable count ±4
     if not rows and not scored_candidates:
-        sql_tier_d = """
+        sql_tier_d = f"""
             SELECT id, artist, song, album, text, end_word, end_rime,
                    vowel_class, syllables, inner_rhyme_count, popularity_score,
                    line_seq, total_lines, relative_pos, chronological_arc,
@@ -1096,14 +1164,44 @@ def retrieve_matching_catalog_lines(
                    + (inner_rhyme_count * 15) as retrieval_rank
             FROM catalog_bars
             WHERE artist = ? AND is_generic = 0
+              {end_word_filter}
               AND ABS(syllables - ?) <= 4
             ORDER BY is_iconic_anthem DESC, popularity_score DESC, inner_rhyme_count DESC
             LIMIT 40;
         """
-        cur.execute(sql_tier_d, (artist, target_syl))
+        cur.execute(sql_tier_d, (artist,) + tuple(end_word_params) + (target_syl,))
         rows = cur.fetchall()
         if rows:
             tier_used = "D"
+
+    # Move 4 Safety Net: if all tiers missed with end_word_filter active, retry Tier B/C without dedupe filter
+    if not rows and not scored_candidates and end_word_params:
+        sql_relax = """
+            SELECT id, artist, song, album, text, end_word, end_rime,
+                   vowel_class, syllables, inner_rhyme_count, popularity_score,
+                   line_seq, total_lines, relative_pos, chronological_arc,
+                   next_bar_text, is_iconic_anthem, topic, inner_vowel_class,
+                   (CASE
+                        WHEN end_rime = ? THEN 150
+                        WHEN end_rime LIKE ? THEN 80
+                        WHEN vowel_class = ? THEN 40
+                        ELSE 10
+                    END) + (popularity_score * 2.5) + (is_iconic_anthem * 150)
+                    + (inner_rhyme_count * 15) as retrieval_rank
+            FROM catalog_bars
+            WHERE artist = ? AND is_generic = 0
+              AND (end_rime = ? OR end_rime LIKE ? OR vowel_class = ?)
+              AND ABS(syllables - ?) <= 6
+            ORDER BY retrieval_rank DESC
+            LIMIT 40;
+        """
+        cur.execute(
+            sql_relax,
+            (target_rime, rime_like, target_vowel, artist, target_rime, rime_like, target_vowel, target_syl),
+        )
+        rows = cur.fetchall()
+        if rows:
+            tier_used = "B"
 
     # Apply Move 1: softmax sampling to rows from whichever Tier matched
     if rows:
