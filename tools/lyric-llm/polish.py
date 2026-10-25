@@ -978,6 +978,7 @@ def generate_frontier_bars_v2(
         extract_seed_pattern,
         get_dynamic_cap,
         get_end_word_history,
+        normalize_vowel_class,
         record_used_end_words,
         retrieve_matching_catalog_lines,
         token_levenshtein_distance,
@@ -1122,10 +1123,12 @@ def generate_frontier_bars_v2(
             c_bank = target_banks[couplet_idx % len(target_banks)]
             tw = (plan["end_words"][i] if (plan and plan.get("end_words") and i < len(plan["end_words"])) else c_bank["pair"][i % 2])
             bar_topic = (plan["motif_chain"][couplet_idx % len(plan["motif_chain"])] if (plan and plan.get("motif_chain")) else topic_hint)
+            tw_rime = end_rime(tw, cmu) or ()
+            tw_vowel = normalize_vowel_class(tw_rime[0].rstrip("012")) if tw_rime else "V_other"
             p = {
                 "end_word": tw,
-                "end_rime": " ".join(end_rime(tw, cmu) or ()),
-                "vowel_class": "V_other",
+                "end_rime": " ".join(tw_rime),
+                "vowel_class": tw_vowel,
                 "target_syllables": effective_syl,
             }
             target_albs = (chosen_albums if target_artist == voice else None) or DEFAULT_CHOSEN_ALBUMS.get(target_artist, [])

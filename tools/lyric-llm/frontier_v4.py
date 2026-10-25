@@ -396,9 +396,10 @@ def generate_v4(
         )
         chosen = None
         for m in matches:
-            if m["id"] not in used_line_ids:
+            m_id = m.get("id") or m.get("text")
+            if m_id not in used_line_ids:
                 chosen = m
-                used_line_ids.add(m["id"])
+                used_line_ids.add(m_id)
                 break
         if not chosen and matches:
             chosen = matches[0]

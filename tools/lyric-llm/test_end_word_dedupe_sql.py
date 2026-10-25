@@ -38,6 +38,7 @@ class TestEndWordDedupeSQL(unittest.TestCase):
         self._orig_seed = os.environ.get("V4_SEED")
         os.environ["V4_SEED"] = "42"
         clear_end_word_history(TEST_DEDUPE_HISTORY)
+        clear_end_word_history()
 
     def tearDown(self):
         if self._orig_seed is None:
@@ -45,6 +46,7 @@ class TestEndWordDedupeSQL(unittest.TestCase):
         else:
             os.environ["V4_SEED"] = self._orig_seed
         clear_end_word_history(TEST_DEDUPE_HISTORY)
+        clear_end_word_history()
 
     def test_sql_not_in_exclusion(self):
         """Verify that words in recent_end_words are excluded from SQL query results."""

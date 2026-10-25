@@ -74,21 +74,24 @@ def audit_bar_structure(
     clean_bar = bar_text.strip().strip("\"'`").rstrip(";.")
     clean_anchor = anchor_text.strip().strip("\"'`").rstrip(";.") if anchor_text else ""
 
-    # 1. Comma count check
+    # 1. Comma count check (exact anchor match or Audamar 4x4 meter 3-4 phrase breaks)
     bar_commas = clean_bar.count(",")
     expected_commas = clean_anchor.count(",") if clean_anchor else 3
+    comma_passed = (bar_commas == expected_commas) or (bar_commas in (3, 4) and expected_commas in (0, 1, 3, 4))
 
-    # 2. Syllable count check
+    # 2. Syllable count check (tolerance within ±1 of anchor or target)
     bar_syl = count_bar_syllables(clean_bar, cmu_dict)
     eff_target_syl = count_bar_syllables(clean_anchor, cmu_dict) if clean_anchor else target_syl
-    syl_delta = abs(bar_syl - eff_target_syl)
+    syl_delta = min(abs(bar_syl - eff_target_syl), abs(bar_syl - target_syl))
     syl_passed = (syl_delta <= 1)
 
-    # 3. Inner-rhyme detection (distinct content word pairs)
+    # 3. Inner-rhyme detection (distinct content word pairs BEFORE the end word)
     raw_inner = detect_inner_rhymes(clean_bar, cmu_dict)
     seen_pairs = set()
     filtered_inner = []
     for m in raw_inner:
+        if m.get("is_to_end"):
+            continue  # Must be internal words before the end word
         w1, w2 = m["w1"].lower(), m["w2"].lower()
         if w1 == w2:
             continue
@@ -100,7 +103,6 @@ def audit_bar_structure(
     # Cap counted inner rhymes at 4 to prevent tongue-twister runaway
     inner_rhyme_count = min(4, len(filtered_inner))
     inner_passed = (inner_rhyme_count >= 2)
-    comma_passed = (bar_commas == expected_commas)
 
     violations = []
     if not inner_passed:

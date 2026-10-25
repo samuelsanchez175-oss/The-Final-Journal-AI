@@ -111,6 +111,29 @@ ARTIST_TIER_MULTIPLIERS: dict[str, float] = {
     "Young Thug": 2.2,
 }
 
+KNOWN_CATALOG_ARTISTS: set[str] = {
+    "gunna", "drake", "nocap", "lil wayne", "lil baby", "young thug"
+}
+
+# Stylistic twins for artists not in the local 231k catalog index
+VOICE_CATALOG_TWINS: dict[str, str] = {
+    "future": "Gunna",
+    "21 savage": "Lil Baby",
+    "chief keef": "Lil Wayne",
+    "tory lanez": "Drake",
+    "playboi carti": "Young Thug",
+    "rylo rodriguez": "NoCap",
+    "roddy ricch": "Gunna",
+    "travis scott": "Young Thug",
+    "kendrick lamar": "Lil Wayne",
+    "j. cole": "Drake",
+    "moneybagg yo": "Lil Baby",
+    "big 30": "Lil Baby",
+    "pooh shiesty": "Lil Baby",
+    "young nudy": "Lil Baby",
+    "baby keem": "Drake",
+}
+
 # Certified Platinum Hits & Iconic Anthems (Highest Priority Retrieval)
 ICONIC_ANTHEMS: dict[str, set[str]] = {
     "gunna": {
@@ -206,6 +229,18 @@ def detect_inner_rhymes(line: str, cmu: dict[str, list[str]]) -> list[dict[str, 
                 "vowel": v,
                 "v_class": v_class,
                 "rime": " ".join(r) if r else "",
+                "tail": w[-3:] if len(w) >= 3 else w,
+                "is_end": (idx == len(toks) - 1),
+            })
+        elif len(w) >= 3:
+            # OOV slang word fallback (Move 6 pitfall prevention: tail matching)
+            words_info.append({
+                "word": w,
+                "pos": idx,
+                "vowel": "",
+                "v_class": f"OOV_{w[-2:]}",
+                "rime": "",
+                "tail": w[-3:],
                 "is_end": (idx == len(toks) - 1),
             })
 
@@ -214,17 +249,20 @@ def detect_inner_rhymes(line: str, cmu: dict[str, list[str]]) -> list[dict[str, 
         for j in range(i + 1, len(words_info)):
             w1 = words_info[i]
             w2 = words_info[j]
-            # Match if rime is equal or stressed vowel class matches
-            if (w1["rime"] and w1["rime"] == w2["rime"]) or (w1["v_class"] == w2["v_class"] and w1["vowel"] == w2["vowel"]):
+            # Match if rime is equal, stressed rap vowel class matches, or OOV slang tail matches
+            is_rime_match = bool(w1["rime"] and w1["rime"] == w2["rime"])
+            is_vowel_match = bool(w1["v_class"] and w1["v_class"] == w2["v_class"])
+            is_tail_match = bool(w1.get("tail") and len(w1["tail"]) >= 3 and w1.get("tail") == w2.get("tail"))
+            if is_rime_match or is_vowel_match or is_tail_match:
                 inner_matches.append({
                     "w1": w1["word"],
                     "pos1": w1["pos"],
                     "w2": w2["word"],
                     "pos2": w2["pos"],
-                    "vowel": w1["vowel"],
-                    "v_class": w1["v_class"],
+                    "vowel": w1["vowel"] or w2["vowel"],
+                    "v_class": w1["v_class"] or w2["v_class"],
                     "is_to_end": w2["is_end"],
-                    "exact_rime": bool(w1["rime"] and w1["rime"] == w2["rime"]),
+                    "exact_rime": is_rime_match,
                 })
     return inner_matches
 
@@ -926,11 +964,15 @@ def retrieve_matching_catalog_lines(
     conn.row_factory = sqlite3.Row
     cur = conn.cursor()
 
+    req_artist = (artist or "").strip()
+    catalog_artist = req_artist if req_artist.lower() in KNOWN_CATALOG_ARTISTS else VOICE_CATALOG_TWINS.get(req_artist.lower(), "Gunna")
+    query_artist = catalog_artist
+
     target_rime = pattern.get("end_rime", "")
     target_vowel = pattern.get("vowel_class", "")
     target_word = (pattern.get("end_word") or "").lower()
     target_syl = pattern.get("target_syllables") or pattern.get("syllables") or 16
-    user_albums = set(a.lower() for a in (chosen_albums or DEFAULT_CHOSEN_ALBUMS.get(artist, [])))
+    user_albums = set(a.lower() for a in (chosen_albums or DEFAULT_CHOSEN_ALBUMS.get(query_artist, [])))
 
     # Task H: Resolve Topic-Chain Aliases
     target_topic = (topic_hint or pattern.get("topic") or "").strip().lower()
@@ -1055,7 +1097,7 @@ def retrieve_matching_catalog_lines(
                 END) + (popularity_score * 2.5) + (is_iconic_anthem * 150)
                 + (CASE WHEN topic != '' AND ? != '' AND topic = ? THEN 60 ELSE 0 END)
                 + (CASE WHEN inner_vowel_class != '' AND ? != '' AND inner_vowel_class = ? THEN 200 ELSE 0 END)
-                + (inner_rhyme_count * 15) as retrieval_rank
+                + (CASE WHEN inner_rhyme_count >= 2 THEN 120 ELSE 0 END) + (MIN(inner_rhyme_count, 4) * 35) as retrieval_rank
         FROM catalog_bars
         WHERE artist = ? AND is_generic = 0
           {album_filter}
@@ -1079,7 +1121,7 @@ def retrieve_matching_catalog_lines(
         primary_topic,
         norm_inner_vowel,
         norm_inner_vowel,
-        artist,
+        query_artist,
     ] + album_params + end_word_params + [
         target_word,
         target_word,
@@ -1106,7 +1148,7 @@ def retrieve_matching_catalog_lines(
                         WHEN vowel_class = ? THEN 40
                         ELSE 10
                     END) + (popularity_score * 2.5) + (is_iconic_anthem * 150)
-                    + (inner_rhyme_count * 15) as retrieval_rank
+                    + (CASE WHEN inner_rhyme_count >= 2 THEN 120 ELSE 0 END) + (MIN(inner_rhyme_count, 4) * 35) as retrieval_rank
             FROM catalog_bars
             WHERE artist = ? AND is_generic = 0
               {end_word_filter}
@@ -1117,7 +1159,7 @@ def retrieve_matching_catalog_lines(
         """
         cur.execute(
             sql_tier_b,
-            (target_word, target_rime, rime_like, target_vowel, artist)
+            (target_word, target_rime, rime_like, target_vowel, query_artist)
             + tuple(end_word_params)
             + (target_word, target_rime, rime_like, target_syl),
         )
@@ -1136,7 +1178,7 @@ def retrieve_matching_catalog_lines(
                         WHEN vowel_class = ? THEN 80
                         ELSE 10
                     END) + (popularity_score * 2.5) + (is_iconic_anthem * 150)
-                    + (inner_rhyme_count * 15) as retrieval_rank
+                    + (CASE WHEN inner_rhyme_count >= 2 THEN 120 ELSE 0 END) + (MIN(inner_rhyme_count, 4) * 35) as retrieval_rank
             FROM catalog_bars
             WHERE artist = ? AND is_generic = 0
               {end_word_filter}
@@ -1147,7 +1189,7 @@ def retrieve_matching_catalog_lines(
         """
         cur.execute(
             sql_tier_c,
-            (target_vowel, artist) + tuple(end_word_params) + (target_vowel, target_syl),
+            (target_vowel, query_artist) + tuple(end_word_params) + (target_vowel, target_syl),
         )
         rows = cur.fetchall()
         if rows:
@@ -1161,15 +1203,15 @@ def retrieve_matching_catalog_lines(
                    line_seq, total_lines, relative_pos, chronological_arc,
                    next_bar_text, is_iconic_anthem, topic, inner_vowel_class,
                    (popularity_score * 2.5) + (is_iconic_anthem * 150)
-                   + (inner_rhyme_count * 15) as retrieval_rank
+                   + (CASE WHEN inner_rhyme_count >= 2 THEN 120 ELSE 0 END) + (MIN(inner_rhyme_count, 4) * 35) as retrieval_rank
             FROM catalog_bars
             WHERE artist = ? AND is_generic = 0
               {end_word_filter}
               AND ABS(syllables - ?) <= 4
-            ORDER BY is_iconic_anthem DESC, popularity_score DESC, inner_rhyme_count DESC
+            ORDER BY is_iconic_anthem DESC, inner_rhyme_count DESC, popularity_score DESC
             LIMIT 40;
         """
-        cur.execute(sql_tier_d, (artist,) + tuple(end_word_params) + (target_syl,))
+        cur.execute(sql_tier_d, (query_artist,) + tuple(end_word_params) + (target_syl,))
         rows = cur.fetchall()
         if rows:
             tier_used = "D"
@@ -1187,7 +1229,7 @@ def retrieve_matching_catalog_lines(
                         WHEN vowel_class = ? THEN 40
                         ELSE 10
                     END) + (popularity_score * 2.5) + (is_iconic_anthem * 150)
-                    + (inner_rhyme_count * 15) as retrieval_rank
+                    + (CASE WHEN inner_rhyme_count >= 2 THEN 120 ELSE 0 END) + (MIN(inner_rhyme_count, 4) * 35) as retrieval_rank
             FROM catalog_bars
             WHERE artist = ? AND is_generic = 0
               AND (end_rime = ? OR end_rime LIKE ? OR vowel_class = ?)
@@ -1197,11 +1239,36 @@ def retrieve_matching_catalog_lines(
         """
         cur.execute(
             sql_relax,
-            (target_rime, rime_like, target_vowel, artist, target_rime, rime_like, target_vowel, target_syl),
+            (target_rime, rime_like, target_vowel, query_artist, target_rime, rime_like, target_vowel, target_syl),
         )
         rows = cur.fetchall()
         if rows:
             tier_used = "B"
+
+    # Move 2 / Move 4 Tier E: Relax artist filter across entire catalog if all artist-constrained tiers missed
+    if not rows and not scored_candidates:
+        tier_e_where = ["is_generic = 0", "ABS(syllables - ?) <= 5"]
+        tier_e_params = [target_syl]
+        if end_word_filter:
+            tier_e_where.append(end_word_filter.lstrip(" AND "))
+            tier_e_params = list(end_word_params) + tier_e_params
+
+        sql_tier_e = f"""
+            SELECT id, artist, song, album, text, end_word, end_rime,
+                   vowel_class, syllables, inner_rhyme_count, popularity_score,
+                   line_seq, total_lines, relative_pos, chronological_arc,
+                   next_bar_text, is_iconic_anthem, topic, inner_vowel_class,
+                   (popularity_score * 2.5) + (is_iconic_anthem * 150)
+                   + (CASE WHEN inner_rhyme_count >= 2 THEN 120 ELSE 0 END) + (MIN(inner_rhyme_count, 4) * 35) as retrieval_rank
+            FROM catalog_bars
+            WHERE {" AND ".join(tier_e_where)}
+            ORDER BY is_iconic_anthem DESC, inner_rhyme_count DESC, popularity_score DESC
+            LIMIT 40;
+        """
+        cur.execute(sql_tier_e, tuple(tier_e_params))
+        rows = cur.fetchall()
+        if rows:
+            tier_used = "E"
 
     # Apply Move 1: softmax sampling to rows from whichever Tier matched
     if rows:
@@ -1234,8 +1301,9 @@ def retrieve_matching_catalog_lines(
         syl_diff = abs(row_dict["syllables"] - target_syl)
         score += max(0.0, 35.0 - (syl_diff * 4.0))
 
-        # 3. Inner Rhymes (Move 3: High Priority inner rhyme boost)
-        score += (row_dict.get("inner_rhyme_count") or 0) * 15.0
+        # 3. Inner Rhymes (Move 3 & Move 6: High Priority inner rhyme boost)
+        in_cnt = row_dict.get("inner_rhyme_count") or 0
+        score += (120.0 if in_cnt >= 2 else 0.0) + min(4, in_cnt) * 35.0
 
         # Task H / Move 3: Inner-Rhyme-Indexed Retrieval (+200.0 boost)
         row_inner = row_dict.get("inner_vowel_class") or ""
