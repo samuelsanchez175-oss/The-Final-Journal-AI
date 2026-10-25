@@ -14,18 +14,22 @@ public final class BYOKServiceBridge {
     public static let shared = BYOKServiceBridge()
 
     public let router: BYOKRequestRouter
+    public let freeTierProxy: BYOKFreeTierProxy
     public let userDefaults: UserDefaults
 
     public init(
         router: BYOKRequestRouter = BYOKRequestRouter(),
+        freeTierProxy: BYOKFreeTierProxy = BYOKFreeTierProxy(),
         userDefaults: UserDefaults = .standard
     ) {
         self.router = router
+        self.freeTierProxy = freeTierProxy
         self.userDefaults = userDefaults
     }
 
     /// Primary entry point for text generation across Planner, Polish, and Sparkle tasks.
-    /// Routes directly to frontier providers via BYOKRequestRouter when in .ownKey mode.
+    /// Routes directly to frontier providers via BYOKRequestRouter when user has configured key or selected own_key.
+    /// Falls back to rate-limited free tier proxy (OmniRoute) when in free tier mode with no own key.
     public func generate(
         prompt: String,
         systemPrompt: String? = nil,
@@ -47,7 +51,16 @@ public final class BYOKServiceBridge {
             feature: feature
         )
 
-        return try await router.send(request: request)
+        let bypassFree = BYOKFreeTierProxy.shouldBypass(
+            userDefaults: userDefaults,
+            hasConfiguredKey: hasConfiguredKey()
+        )
+
+        if bypassFree {
+            return try await router.send(request: request)
+        } else {
+            return try await freeTierProxy.generate(request: request)
+        }
     }
 
     /// Convenience overload returning generated text directly.
