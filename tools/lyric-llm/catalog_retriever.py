@@ -16,6 +16,7 @@ import glob
 import json
 import math
 import os
+import random
 import re
 import sqlite3
 import sys
@@ -812,6 +813,35 @@ def extract_seed_pattern(seed_lines: list[str], cmu: dict[str, list[str]], bpm: 
     return patterns
 
 
+def softmax_sample_rows(rows: list, limit: int = 1) -> list:
+    """Softmax-sample limit rows without replacement based on retrieval_rank (Move 1)."""
+    if not rows:
+        return []
+    scores = [
+        r["retrieval_rank"] if (isinstance(r, dict) or (hasattr(r, "keys") and "retrieval_rank" in r.keys())) else 1.0
+        for r in rows
+    ]
+    max_score = max(scores) if scores else 1.0
+    if max_score <= 0:
+        max_score = 1.0
+    temp = float(os.environ.get("V4_RETRIEVAL_TEMP", "2.0"))
+    if temp <= 0:
+        temp = 2.0
+    exp_scores = [math.exp(s / (max_score * temp)) for s in scores]
+    total = sum(exp_scores)
+    probs = [e / total for e in exp_scores] if total > 0 else [1.0 / len(exp_scores)] * len(exp_scores)
+    seed_env = os.environ.get("V4_SEED")
+    rng = random.Random(int(seed_env)) if seed_env else random.Random()
+    pool = list(zip(rows, probs))
+    sampled = []
+    for _ in range(min(limit, len(pool))):
+        weights = [p[1] for p in pool]
+        pick = rng.choices(pool, weights=weights, k=1)[0]
+        sampled.append(pick[0])
+        pool.remove(pick)
+    return sampled
+
+
 def retrieve_matching_catalog_lines(
     artist: str,
     pattern: dict[str, Any],
@@ -974,6 +1004,8 @@ def retrieve_matching_catalog_lines(
         ),
     )
     rows = cur.fetchall()
+    if rows:
+        rows = softmax_sample_rows(rows, limit=limit)
 
     # Fallback to general artist pool if no strict match found
     if not rows and not scored_candidates:
@@ -990,6 +1022,8 @@ def retrieve_matching_catalog_lines(
         """
         cur.execute(sql_fallback, (artist, target_syl))
         rows = cur.fetchall()
+        if rows:
+            rows = softmax_sample_rows(rows, limit=limit)
 
     for r in rows:
         row_dict = dict(r)
