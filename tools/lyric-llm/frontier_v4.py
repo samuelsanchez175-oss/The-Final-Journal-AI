@@ -253,7 +253,7 @@ def generate_v4(
     voice: str = "Gunna",
     blend: str = "",
     mix: int = 70,
-    bpm: float = 130.0,
+    bpm: Optional[float] = None,
     scale: str = "F minor",
     target_syl: int = None,
     section_mode: str = "verse",
@@ -271,10 +271,33 @@ def generate_v4(
     generation_id: str = "",
     use_cache: bool = True,
     call_fn: Optional[Callable[[str, str], str]] = None,
+    seed_audio: Optional[str] = None,
+    audio_flow_override: Optional[dict] = None,
 ) -> dict:
     """Master entry point for Frontier V4 Two-Pass Generation with Grid Verification & Style Scoring."""
     t0 = time.time()
     generation_id = generation_id or f"v4_{int(time.time())}_{uuid.uuid4().hex[:8]}"
+
+    # Task S: Whisper Hum-to-Flow Seed Audio Ingestion
+    audio_flow = None
+    if audio_flow_override is not None:
+        audio_flow = audio_flow_override
+    elif seed_audio:
+        try:
+            from whisper_seed import transcribe_and_extract_flow
+            audio_flow = transcribe_and_extract_flow(seed_audio)
+        except Exception as exc:
+            print(f"[Frontier V4] whisper_seed warning: {exc}", file=sys.stderr)
+
+    if audio_flow:
+        if bpm is None:
+            bpm = float(audio_flow.get("bpm_estimate", 130))
+        if target_syl is None or target_syl == 0:
+            target_syl = int(audio_flow.get("median_syl_per_line", 18))
+        if not seed_line and audio_flow.get("text"):
+            seed_line = audio_flow["text"]
+
+    bpm = 130.0 if bpm is None else float(bpm)
     clock_bpm, halftime_bpm, tempo_label = polish.normalize_trap_tempo(bpm)
     from hook_engine import get_section_cadence_rules, verify_section_structure
     sec_rules = get_section_cadence_rules(section_mode)
@@ -300,6 +323,7 @@ def generate_v4(
         target_syl=effective_syl,
         taste_on=taste_on,
         taste_k=taste_k,
+        seed_audio=seed_audio,
     )
     cache_key = compute_cache_key(cache_params)
 
@@ -605,6 +629,8 @@ def generate_v4(
         "base_cap": base_cap,
         "section_mode": section_mode,
         "section_structure": verify_section_structure(final_bars, section_mode=section_mode, cmu=cmu),
+        "seed_audio": seed_audio,
+        "audio_flow": audio_flow,
         "plan": plan,
         "draft_bars": best_take["draft_bars"],
         "polished_bars": best_take["polished_bars"],
@@ -646,15 +672,16 @@ def main():
     parser.add_argument("--voice", default="Gunna", help="Artist pocket")
     parser.add_argument("--blend", default="NoCap", help="Secondary voice blend")
     parser.add_argument("--mix", type=int, default=70, help="Blend mix %")
-    parser.add_argument("--bpm", type=float, default=130.0, help="Tempo BPM")
+    parser.add_argument("--bpm", type=float, default=None, help="Tempo BPM (defaults to 130 or audio seed estimate)")
     parser.add_argument("--scale", default="F minor", help="Musical scale")
-    parser.add_argument("--syl", type=int, default=18, help="Target syllable budget")
+    parser.add_argument("--syl", type=int, default=None, help="Target syllable budget (defaults to 18 or audio seed estimate)")
     parser.add_argument("--bars", type=int, default=8, help="Number of bars")
     parser.add_argument("--topic", default="", help="Studio theme or topic hint")
     parser.add_argument("--candidates", type=int, default=1, help="Number of candidate takes to generate and rank")
     parser.add_argument("--taste", choices=["on", "off"], default="on", help="Wire rater feedback taste blocks")
     parser.add_argument("--taste-k", type=int, default=6, help="Top K keeper bars")
     parser.add_argument("--base-cap", type=float, default=0.30, help="Base remix edit-distance cap (default: 0.30)")
+    parser.add_argument("--seed-audio", default=None, help="Path to vocal audio file (.m4a/.wav) for Whisper hum-to-flow seed")
     parser.add_argument("--no-cache", dest="use_cache", action="store_false", default=True, help="Bypass prompt and params cache")
     args = parser.parse_args()
 
@@ -672,6 +699,7 @@ def main():
         taste_on=(args.taste == "on"),
         taste_k=args.taste_k,
         use_cache=args.use_cache,
+        seed_audio=args.seed_audio,
     )
 
     print(f"\n[Penwork Studios Frontier V4] {res['voice']} ({res['blend']} {res['mix']}%) @ {res['bpm']} BPM")

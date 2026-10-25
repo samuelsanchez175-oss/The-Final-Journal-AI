@@ -1341,6 +1341,22 @@ def run_live_generation(root: Path, params: dict) -> dict:
     adapter_choice = str(params.get("adapter") or "frontier_v2").strip()
     target_syl = int(params.get("target_syl") or 15)
 
+    # Task S: Whisper Hum-to-Flow Seed Audio Ingestion
+    seed_audio_arg = params.get("seed_audio") or params.get("audio_path")
+    if seed_audio_arg:
+        try:
+            import whisper_seed
+            flow_data = whisper_seed.transcribe_and_extract_flow(seed_audio_arg)
+            if not params.get("bpm"):
+                bpm = float(flow_data["bpm_estimate"])
+                effective_bpm = bpm
+            if not params.get("target_syl"):
+                target_syl = int(flow_data["median_syl_per_line"])
+            if not seed_line and flow_data.get("text"):
+                seed_line = flow_data["text"]
+        except Exception as exc:
+            print(f"[desk.py] whisper_seed warning: {exc}", file=sys.stderr)
+
     # DEFAULT TO FRONTIER GHOSTWRITER V2/V3/V4 UNLESS LOCAL MLX EXPLICITLY REQUESTED
     if adapter_choice not in ("local", "local_mlx", "adapters_gold", "smoke"):
         taste_param = params.get("taste")
@@ -1373,6 +1389,7 @@ def run_live_generation(root: Path, params: dict) -> dict:
                 taste_k=taste_k_val,
                 candidates=candidates_val,
                 use_cache=use_cache_val,
+                seed_audio=seed_audio_arg,
             )
             return res
 
@@ -1747,6 +1764,23 @@ def make_handler(root: Path, grades_path: Path):
                 self._send(status, "application/json; charset=utf-8", json.dumps(result).encode("utf-8"))
                 return
 
+            if path in ("/api/seed_audio", "/api/penwork/seed_audio"):
+                import whisper_seed
+                try:
+                    audio_val = params.get("seed_audio") or params.get("audio_path")
+                    if not audio_val:
+                        res = {"ok": False, "error": "Missing seed_audio parameter"}
+                        status = 400
+                    else:
+                        flow = whisper_seed.transcribe_and_extract_flow(audio_val)
+                        res = {"ok": True, "flow": flow}
+                        status = 200
+                except Exception as exc:
+                    res = {"ok": False, "error": str(exc)}
+                    status = 500
+                self._send(status, "application/json; charset=utf-8", json.dumps(res).encode("utf-8"))
+                return
+
             if path in ("/api/polish", "/api/penwork/polish"):
                 import polish
                 try:
@@ -1886,10 +1920,27 @@ def serve(root: Path = None, grades_path: Path = None, host: str = HOST, port: i
 
 
 def main(argv=None):
+    import argparse
+    parser = argparse.ArgumentParser(description="Lyric Desk & Interactive Studio Server")
+    parser.add_argument("--host", default=HOST, help=f"Host interface (default: {HOST})")
+    parser.add_argument("--port", type=int, default=PORT, help=f"Listen port (default: {PORT})")
+    parser.add_argument("--no-browser", action="store_true", help="Don't open browser")
+    parser.add_argument("--seed-audio", default=None, help="Vocal audio file for Whisper hum-to-flow extraction")
+    args = parser.parse_args(argv)
+
+    if args.seed_audio:
+        try:
+            import whisper_seed
+            print(f"[desk.py] Ingesting seed audio: {args.seed_audio}", flush=True)
+            flow = whisper_seed.transcribe_and_extract_flow(args.seed_audio)
+            print(f"[desk.py] Seed Audio flow extracted: {flow.get('bpm_estimate')} BPM, {flow.get('median_syl_per_line')} syl/line: \"{flow.get('text')}\"", flush=True)
+        except Exception as exc:
+            print(f"[desk.py] Seed audio ingestion error: {exc}", file=sys.stderr)
+
     try:
-        serve()
+        serve(host=args.host, port=args.port)
     except OSError as exc:
-        print("The lyric desk could not listen on http://%s:%s/ (%s)." % (HOST, PORT, exc), file=sys.stderr)
+        print("The lyric desk could not listen on http://%s:%s/ (%s)." % (args.host, args.port, exc), file=sys.stderr)
         return 1
     return 0
 

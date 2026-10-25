@@ -42,6 +42,7 @@ def canonical_cache_params(
     taste_on: bool = True,
     taste_k: int = 6,
     engine: str = "v4",
+    seed_audio: Optional[str] = None,
     **kwargs: Any,
 ) -> dict[str, Any]:
     """Returns a deterministic, normalized dictionary of generation parameters for hashing."""
@@ -65,6 +66,7 @@ def canonical_cache_params(
         "target_syl": int(target_syl) if target_syl else None,
         "taste_on": bool(taste_on),
         "taste_k": int(taste_k),
+        "seed_audio": (seed_audio or "").strip() if seed_audio else None,
     }
 
 

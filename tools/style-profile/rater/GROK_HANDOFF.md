@@ -376,3 +376,27 @@ files and a HANDOFF ENTRY.
   - **59/59 tests passing** across all 11 test suites:
     `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5), `test_dynamic_cap.py` (5/5), `test_section_modes.py` (5/5).
 - **Next Frontier v4 Tasks:** Task S (Whisper hum-to-flow seed: `--seed-audio` integration).
+
+### HANDOFF ENTRY: Frontier v4 Task S Completed — Whisper Hum-to-Flow Seed Audio Ingestion (2026-10-24, Antigravity)
+
+**Status:** Task S (Whisper Hum-to-Flow Seed Audio Ingestion) is complete, live, and verified across all 68/68 tests in the Frontier v4 suite.
+- **Component Changes (`tools/lyric-llm/whisper_seed.py`):**
+  - Implemented `build_multipart_payload()` for standard-library multipart/form-data encoding without third-party dependencies.
+  - Implemented `transcribe_audio()` calling OpenAI Whisper REST API (`POST https://api.openai.com/v1/audio/transcriptions` with `model=whisper-1`, `response_format=verbose_json`, `timestamp_granularities[]=["word", "segment"]`).
+  - Implemented `estimate_bpm_from_timestamps()` calculating word syllable onsets via CMU and measuring the median inter-syllable interval:
+    $$\text{BPM}_{\text{raw}} = \frac{60}{\text{median\_syllable\_interval}}$$
+    Normalizes halftime hums (e.g., 65–85 BPM -> 130–170 Clock BPM) and double-time eighth/sixteenth note hums (e.g., 260–280 BPM -> 130–140 Clock BPM) through `resolve_flow_bpm()`.
+  - Implemented `estimate_median_syllables_per_line()` segmenting audio flows via Whisper native segments or breath gaps ($\ge 0.55$s), counting line syllables, and deriving the median cadence budget bounded to $[6, 26]$.
+  - Implemented `transcribe_and_extract_flow()` returning `{text, bpm_estimate, raw_bpm, median_syl_per_line, line_syllables, lines, median_syllable_interval, words, segments, duration}`.
+- **Pipeline & Server Integration (`frontier_v4.py`, `desk.py`, `prompt_cache.py`):**
+  - Exposed `--seed-audio` CLI parameter on both `frontier_v4.py` and `desk.py`.
+  - In `frontier_v4.generate_v4()`, when `--seed-audio` is passed, `bpm_estimate` and `median_syl_per_line` automatically become the default BPM and target syllable budget if not explicitly overridden, and `audio_flow["text"]` seeds `seed_line`. Recorded in result dictionary and cache params.
+  - In `desk.py`, `run_live_generation()` consumes `seed_audio`, derives tempo/syllable defaults, and routes to `frontier_v4`.
+  - Added `/api/seed_audio` and `/api/penwork/seed_audio` POST endpoints in `desk.py`.
+  - Added CLI argument parsing in `desk.py` supporting `--host`, `--port`, `--no-browser`, and `--seed-audio`.
+- **Unit Tests (`tools/lyric-llm/test_whisper_seed.py`):**
+  - 9/9 tests passed in 2.02s covering multipart payload encoding, resolve flow BPM, 140 BPM derivation, halftime normalization, syllable estimation across segments, breath-gap clustering, end-to-end mock flow extraction, `frontier_v4` seed audio integration, and `desk.py` live generation routing.
+- **Full V4 Suite Status:**
+  - **68/68 tests passing** across all 12 test suites:
+    `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5), `test_dynamic_cap.py` (5/5), `test_section_modes.py` (5/5), `test_whisper_seed.py` (9/9).
+- **Next Frontier v4 Milestone:** Full Frontier v4 suite is live. Next is live batch generation & Sparkler Rater evaluation (20 verses, mean `verse_score` target $\ge 6/10$).
