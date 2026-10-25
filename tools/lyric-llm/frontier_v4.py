@@ -397,6 +397,38 @@ def generate_v4(
             call_fn=call_fn,
         )
 
+        # Pass 2.5: Named-Entity Leak Guard Verification & Auto-Retry (Task P)
+        from entity_guard import guard_verse, rewrite_leaked_entity_bar
+        entity_eval = guard_verse(voice=voice, bars=polished_lines, bar_artists=bar_artists)
+        entity_retries_done = 0
+
+        if not entity_eval["passed"]:
+            for failed_i in entity_eval["failed_indices"]:
+                b_res = entity_eval["bar_results"][failed_i]
+                target_word = plan["end_words"][failed_i] if failed_i < len(plan["end_words"]) else "audamar"
+                cat_item = retrieved_catalog_bars[failed_i] if failed_i < len(retrieved_catalog_bars) else None
+                cat_txt = cat_item["text"] if cat_item else ""
+                artist_i = bar_artists[failed_i]
+                offending = b_res["offending_tokens"]
+
+                for _ in range(2):
+                    entity_retries_done += 1
+                    rewritten, passed = rewrite_leaked_entity_bar(
+                        bar_text=polished_lines[failed_i],
+                        target_word=target_word,
+                        offending_tokens=offending,
+                        voice=artist_i,
+                        source_catalog_text=cat_txt,
+                        cmu=cmu,
+                        call_fn=call_fn,
+                    )
+                    if rewritten:
+                        polished_lines[failed_i] = rewritten
+                        if passed:
+                            break
+
+        final_entity_eval = guard_verse(voice=voice, bars=polished_lines, bar_artists=bar_artists)
+
         # Pass 3: Grid Syllable Verification & Single-Bar Targeted Retries
         grid_eval = polish.verify_grid_landings(
             bars=polished_lines,
@@ -460,6 +492,8 @@ def generate_v4(
             "grid_gate": final_grid,
             "grid_pass_rate": final_grid["pass_rate"],
             "grid_retries": retries_done,
+            "entity_guard": final_entity_eval,
+            "entity_retries": entity_retries_done,
             "style_score": style_score_val,
         })
 
@@ -567,6 +601,8 @@ def generate_v4(
         "grid_pass_rate": best_take["grid_pass_rate"],
         "grid_retries": best_take["grid_retries"],
         "grid_retries_total": best_take["grid_retries"],
+        "entity_guard": best_take.get("entity_guard", {"passed": True, "offending_tokens": []}),
+        "entity_retries": best_take.get("entity_retries", 0),
         "style_score": best_take["style_score"],
         "candidates_count": num_takes,
         "candidates": take_candidates,

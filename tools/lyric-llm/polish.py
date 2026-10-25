@@ -1375,6 +1375,39 @@ def generate_frontier_bars_v2(
 
     cmu = _get_cmu()
 
+    # Task P: Named-Entity Leak Guard Verification & Auto-Retry
+    from entity_guard import guard_verse, rewrite_leaked_entity_bar
+    entity_eval_initial = guard_verse(voice=voice, bars=final_bars, bar_artists=bar_artists)
+    entity_retries_done = 0
+
+    if not entity_eval_initial["passed"]:
+        for failed_idx in entity_eval_initial["failed_indices"]:
+            b_res = entity_eval_initial["bar_results"][failed_idx]
+            cat_match = retrieved_catalog_bars[failed_idx] if failed_idx < len(retrieved_catalog_bars) else None
+            couplet_idx = failed_idx // 2
+            c_bank = catalog_banks[couplet_idx % len(catalog_banks)]
+            target_word = cat_match["end_word"] if (cat_match and cat_match.get("end_word")) else c_bank["pair"][failed_idx % 2]
+            target_artist = bar_artists[failed_idx] if failed_idx < len(bar_artists) else voice
+            offending = b_res["offending_tokens"]
+
+            # Auto-retry up to 2 times with the offending token listed
+            for _ in range(2):
+                entity_retries_done += 1
+                rewritten_line, passed_guard = rewrite_leaked_entity_bar(
+                    bar_text=final_bars[failed_idx],
+                    target_word=target_word,
+                    offending_tokens=offending,
+                    voice=target_artist,
+                    source_catalog_text=cat_match["text"] if cat_match else "",
+                    cmu=cmu,
+                )
+                if rewritten_line:
+                    final_bars[failed_idx] = rewritten_line
+                    if passed_guard:
+                        break
+
+    final_entity_eval = guard_verse(voice=voice, bars=final_bars, bar_artists=bar_artists)
+
     # Task G: Verify Grid Landings and Trigger Targeted Retries for Off-Grid Bars
     grid_eval_initial = verify_grid_landings(
         bars=final_bars,
@@ -1694,6 +1727,8 @@ def generate_frontier_bars_v2(
         "grid_pass_rate": final_grid_eval["pass_rate"],
         "grid_retries": total_retries_done,
         "grid_retries_total": total_retries_done,
+        "entity_guard": final_entity_eval,
+        "entity_retries": entity_retries_done,
         "retrieved_sources": [
             {
                 "bar": i + 1,

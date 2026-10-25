@@ -458,7 +458,8 @@ def init_catalog_db(db_path: Path = DB_PATH) -> sqlite3.Connection:
             next_bar_end_word TEXT DEFAULT '',
             is_iconic_anthem INTEGER DEFAULT 0,
             topic TEXT DEFAULT '',
-            inner_vowel_class TEXT DEFAULT ''
+            inner_vowel_class TEXT DEFAULT '',
+            is_proper_noun INTEGER DEFAULT 0
         );
     """)
     conn.execute("CREATE INDEX IF NOT EXISTS idx_artist_rime ON catalog_bars(artist, end_rime, syllables);")

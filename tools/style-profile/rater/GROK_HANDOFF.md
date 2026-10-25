@@ -308,3 +308,22 @@ files and a HANDOFF ENTRY.
   - **44/44 tests passing** across all 8 test suites:
     `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6).
 - **Next Frontier v4 Tasks:** Task P / N (Named-entity leak guard & dynamic edit-distance cap) -> Task Q (Section-aware generation / Hook Engine).
+
+### HANDOFF ENTRY: Frontier v4 Task P Completed — Named-Entity Leak Guard (2026-10-24, Antigravity)
+
+**Status:** Task P (Named-Entity Leak Guard) is complete, live, and verified across all 49/49 tests in the Frontier v4 suite.
+- **Component Changes (`tools/lyric-llm/entity_guard.py`):**
+  - Implemented `build_voice_whitelist()` and `get_voice_whitelist()` compiling proper-noun whitelists per artist voice. Whitelists combine universal luxury/horology/automotive/travel proper nouns (Maybach, Bentley, Patek, Rolex, Paris, etc.) with artist-specific core personas and crew affiliations (YSL, Thugger, Wunna, Tunechi, OVO, Chubbs, 4PF, Bakaveeli).
+  - Implemented `extract_candidate_entities()` isolating multi-word and single-word rap named entities while filtering out standard vocabulary and line-start capitalized words.
+  - Implemented `guard(voice, bar)` and `guard_verse(voice, bars, bar_artists)` returning `{"ok": bool, "offending_tokens": list[str]}` when off-voice entities leak into a bar (e.g., 'Thugger' in a Lil Wayne verse or 'Tunechi' in a Gunna verse).
+  - Implemented `rewrite_leaked_entity_bar()` providing targeted auto-retry up to 2 times with offending tokens listed in the prompt instructions to cleanly eliminate off-voice proper nouns while keeping 4x4 meter and end-words intact.
+  - Added `is_proper_noun` column to `catalog_bars` table in `catalog_index.sqlite` and tagged 5,289 proper noun bars.
+- **Pipeline Integration (`polish.py`, `frontier_v4.py`):**
+  - Wired `guard_verse()` and `rewrite_leaked_entity_bar()` into `generate_frontier_bars_v2` and `generate_v4` (Pass 2.5).
+  - Added `entity_guard` and `entity_retries` metadata to returned result dictionaries and candidate telemetry.
+- **Unit Tests (`tools/lyric-llm/test_entity_guard.py`):**
+  - 5/5 tests passed in 1.57s covering candidate entity extraction, per-voice whitelists, Gunna whitelist vs Lil-Wayne-voiced bar containing 'Thugger' acceptance failure + retry firing, multi-voice couplet guard evaluation, and master pipeline auto-retry integration.
+- **Full V4 Suite Status:**
+  - **49/49 tests passing** across all 9 test suites:
+    `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5).
+- **Next Frontier v4 Tasks:** Task R (Dynamic edit-distance cap: 15% anthem, 20% couplet, 30% standard) -> Task Q (Section-aware generation / Hook Engine).
