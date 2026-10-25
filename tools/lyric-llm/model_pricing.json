@@ -1,0 +1,76 @@
+{
+  "version": "1.0",
+  "providers": {
+    "anthropic": {
+      "default_model": "claude-opus-4-7",
+      "models": [
+        {
+          "id": "claude-opus-4-7",
+          "name": "Claude Opus 4.7 (Highest Quality)",
+          "tier": "best",
+          "estimated_cost_per_verse": "~$0.03/verse",
+          "description": "Flagship creative model. Deepest slang nuances and multi-cadence inner rhyming."
+        },
+        {
+          "id": "claude-sonnet-5-5",
+          "name": "Claude Sonnet 5.5 (Fast & Good)",
+          "tier": "cheap-and-good",
+          "estimated_cost_per_verse": "~$0.008/verse",
+          "description": "Balanced high-speed model with great rhythmic fidelity."
+        }
+      ]
+    },
+    "openai": {
+      "default_model": "gpt-5",
+      "models": [
+        {
+          "id": "gpt-5",
+          "name": "GPT-5 (Flagship)",
+          "tier": "best",
+          "estimated_cost_per_verse": "~$0.025/verse",
+          "description": "Next-gen frontier foundation model for diverse wordplay."
+        },
+        {
+          "id": "gpt-5-reasoning",
+          "name": "GPT-5 Reasoning",
+          "tier": "reasoning",
+          "estimated_cost_per_verse": "~$0.035/verse",
+          "description": "Deep chain-of-thought structural planner."
+        },
+        {
+          "id": "gpt-4o",
+          "name": "GPT-4o",
+          "tier": "cheap-and-good",
+          "estimated_cost_per_verse": "~$0.01/verse",
+          "description": "Solid baseline frontier model."
+        },
+        {
+          "id": "gpt-4o-mini",
+          "name": "GPT-4o Mini",
+          "tier": "fast",
+          "estimated_cost_per_verse": "~$0.001/verse",
+          "description": "Ultra-lightweight fast drafting model."
+        }
+      ]
+    },
+    "google": {
+      "default_model": "gemini-2.5-pro",
+      "models": [
+        {
+          "id": "gemini-2.5-pro",
+          "name": "Gemini 2.5 Pro",
+          "tier": "best",
+          "estimated_cost_per_verse": "~$0.015/verse",
+          "description": "Google flagship multimodal & creative intelligence."
+        },
+        {
+          "id": "gemini-2.5-flash",
+          "name": "Gemini 2.5 Flash",
+          "tier": "fast",
+          "estimated_cost_per_verse": "~$0.002/verse",
+          "description": "Sub-second turnaround and low cost."
+        }
+      ]
+    }
+  }
+}
