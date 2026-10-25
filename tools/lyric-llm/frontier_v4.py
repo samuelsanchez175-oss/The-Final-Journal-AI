@@ -123,12 +123,19 @@ def draft_scaffold(
     """Pass 1: Fast scaffold draft generating initial 4x4 rhythmic structures."""
     system_prompt = (
         f"You are Penwork Studios' Rapid Scaffold Drafter (Frontier V4 Pass 1).\n"
-        f"Your task is to draft exactly {bars_count} raw lyric lines adhering strictly to the 4x4 Audamar/Lobster cadence.\n\n"
-        f"RULES:\n"
-        f"1. EXACTLY 3 COMMAS PER LINE (4 substantive phrases, ~4-5 syllables each, total {effective_syl}s).\n"
-        f"2. Every bar MUST land on its designated authentic catalog end-word in Beat 4.\n"
-        f"3. Internal rhyme or strong assonance between Beat 1 and Beat 2.\n"
-        f"4. Output ONLY the {bars_count} lyric lines, no explanations, no quotes, no bar labels."
+        f"Your task is to draft exactly {bars_count} raw lyric lines adhering strictly to the 4-comma / 4-pocket isochronous rap cadence with ABAB inner rhymes.\n\n"
+        f"MANDATORY RHYTHMIC RULES:\n"
+        f"1. EACH BAR MUST HAVE ABOUT 4 COMMAS (4 to 5 distinct comma-delimited segments).\n"
+        f"2. SUSTAINED 4-5 SYLLABLES PER COMMA: If you start with 4 or 5 syllables per comma segment, continue that exact count out across every segment in the bar (e.g. 4+4+4+4 or 5+5+5+5).\n"
+        f"3. ABAB INNER-RHYME LEVEL: Segment 1 ends on Rhyme A, Segment 2 ends on Rhyme B, Segment 3 ends on Rhyme A (rhyming with Segment 1), Segment 4 ends on Rhyme B (rhyming with Segment 2 and designated end-word).\n"
+        f"4. GOLDEN BENCHMARKS TO EMULATE:\n"
+        f"   - Gunna: 'Stackin' the cash, ridin' the wave, grabbin' the bag, diggin' the grave' (4s, 4s, 4s, 4s = 16s, ABAB)\n"
+        f"   - Lil Wayne: 'Fire in the spark, swirvin' in the night, swimmin' with the shark, lookin' for the light' (5s, 5s, 5s, 5s = 20s, ABAB)\n"
+        f"   - Drake: 'Late night in the city, called up on the phone, pity for the pretty, sittin' on the throne' (5s, 5s, 5s, 5s = 20s, ABAB)\n"
+        f"   - Young Thug: 'Drippin' in the green, ridin' in the whip, ice on my Celine, let the thirty clip' (5s, 5s, 5s, 5s = 20s, ABAB)\n"
+        f"   - NoCap: 'Sittin' in the cell, lookin' at the sky, ringin' out the bell, wonderin' on why' (4s, 4s, 4s, 4s = 16s, ABAB)\n"
+        f"5. Every bar MUST land on its designated authentic catalog end-word in the final segment.\n"
+        f"6. Output ONLY the {bars_count} lyric lines, no explanations, no quotes, no bar labels."
     )
 
     guidance = []
@@ -214,8 +221,9 @@ def polish_scaffold(
         f"REFINEMENT MANDATES:\n"
         f"1. RETRIEVE & REMIX: Keep 70-80% of the authentic catalog rhythm and wording; change only 1 to 3 words to fit the theme.\n"
         f"2. PRESERVE EXACT END-WORDS: Every line MUST strictly conclude on its designated catalog end-word in Beat 4.\n"
-        f"3. QUADRASONIC CADENCE (EXACTLY 3 COMMAS): Four distinct beat phrases (4-5s each, total {effective_syl}s).\n"
-        f"4. INTERNAL ASSONANCE: Lock Beat 1 and Beat 2 with an internal rhyme or strong slant vowel match.\n\n"
+        f"3. 4-COMMA ISOCHRONOUS CADENCE: About 4 commas per line (4 to 5 distinct rhythmic pockets, 4-5 syllables each, total {effective_syl}s).\n"
+        f"4. SUSTAIN SYLLABLE COUNTS: If a line starts with 4 or 5 syllables per comma segment, continue that exact count out across every segment (e.g. 4+4+4+4 or 5+5+5+5).\n"
+        f"5. ABAB INNER-RHYME LEVEL: Segment 1 rhymes with Segment 3 (Rhyme A), Segment 2 rhymes with Segment 4 (Rhyme B).\n\n"
         f"Catalog Foundations & Draft Scaffold Bars to Polish:"
     ]
 
@@ -533,11 +541,13 @@ def generate_v4(
 
     # Assemble detailed bar metadata
     detailed_bars = []
+    from cadence_analyzer import analyze_bar_cadence
+
     for idx, ln in enumerate(final_bars):
         couplet_idx = idx // 2
         cat_match = retrieved_catalog_bars[idx] if idx < len(retrieved_catalog_bars) else None
         target_word = plan["end_words"][idx] if idx < len(plan["end_words"]) else "audamar"
-        beat_info = polish.parse_beat_groups(ln, cmu)
+        cad = analyze_bar_cadence(ln, cmu=cmu)
         toks = tokenize(normalize(ln))
         end_w = toks[-1] if toks else target_word
 
@@ -555,17 +565,26 @@ def generate_v4(
         detailed_bars.append({
             "index": idx + 1,
             "artist": bar_artists[idx],
-            "text": beat_info.get("quad_formatted", ln),
+            "text": cad["formatted_line"],
             "raw_text": ln,
-            "quad_formatted": beat_info.get("quad_formatted", ln),
-            "beat_groups": beat_info["groups"],
-            "beat_syllables": beat_info["beat_syllables"],
-            "is_quadrasonic": beat_info["is_quadrasonic"],
-            "setup": beat_info["setup"],
-            "punchline": beat_info["punchline"],
-            "syllables": beat_info["total_syllables"],
+            "quad_formatted": cad["formatted_line"],
+            "beat_groups": [s["text"] for s in cad["segments"]],
+            "beat_syllables": [s["syllables"] for s in cad["segments"]],
+            "segments": cad["segments"],
+            "halves": [{"text": s["text"], "syl": s["syllables"]} for s in cad["segments"]],
+            "syllable_pattern": cad["syl_pattern"],
+            "is_isochronous": cad["is_isochronous"],
+            "is_quadrasonic": len(cad["segments"]) >= 4,
+            "abab_detected": cad["abab_detected"],
+            "aabb_detected": cad["aabb_detected"],
+            "rhyme_type": cad["rhyme_type"],
+            "internal": cad["internal_pairs"],
+            "cadence_score": cad["cadence_score"],
+            "setup": ", ".join(s["text"] for s in cad["segments"][:2]),
+            "punchline": ", ".join(s["text"] for s in cad["segments"][2:]),
+            "syllables": cad["total_syllables"],
             "target_syllables": effective_syl,
-            "delta": beat_info["total_syllables"] - effective_syl,
+            "delta": cad["total_syllables"] - effective_syl,
             "end_word": end_w,
             "rhyme_family": plan["rhyme_families"][couplet_idx % len(plan["rhyme_families"])] if plan.get("rhyme_families") else "",
             "motif": plan["motif_chain"][couplet_idx % len(plan["motif_chain"])].replace("_", " ").title() if plan.get("motif_chain") else "Motif",

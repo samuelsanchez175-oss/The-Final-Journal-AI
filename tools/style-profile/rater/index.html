@@ -866,7 +866,7 @@
       cards.push({
         generation_id: String(entry.generation_id),
         model: String(entry.model || key),
-        artist: String(data.artist || entry.artist || ""),
+        artist: String(data.artist || entry.artist || (entry.model ? entry.model.replace(/^take_\d+_/, "") : "") || ""),
         topic: String(data.topic || entry.topic || ""),
         topic_brief: String(data.topic_brief || entry.topic_brief || data.topic || ""),
         scheme: String(data.scheme || entry.scheme || ""),

@@ -329,26 +329,21 @@ def run_batch():
         cfg = r["config"]
         card_bars = []
         for b in r["bars"]:
-            # Format half bars
-            text = b["text"]
-            parts = [p.strip() for p in text.split(",") if p.strip()]
-            halves = []
-            if len(parts) >= 4:
-                h1 = ", ".join(parts[:2])
-                h2 = ", ".join(parts[2:])
-                halves = [{"text": h1, "syl": b["syllables"] // 2}, {"text": h2, "syl": b["syllables"] - (b["syllables"] // 2)}]
-            else:
-                halves = [{"text": text, "syl": b["syllables"]}]
+            # Format segment halves with exact comma pocket syllable counts & ABAB inner rhymes
+            from cadence_analyzer import analyze_bar_cadence
+            cad = analyze_bar_cadence(b["text"])
+            halves = [{"text": s["text"], "syl": s["syllables"]} for s in cad["segments"]]
+            internal_pairs = cad["internal_pairs"]
 
             card_bars.append({
-                "text": b["text"],
+                "text": cad["formatted_line"],
                 "halves": halves,
-                "syllables": b["syllables"],
+                "syllables": cad["total_syllables"],
                 "end_word": b["end_word"],
                 "rhyme_letter": chr(65 + (b["couplet_num"] % 4)),
-                "internal": [],
+                "internal": internal_pairs,
                 "borrowed": None,
-                "meaning": f"Bar {b['index']} by {b['artist']} in {cfg['section_mode']}",
+                "meaning": f"Bar {b['index']} by {b['artist']} in {cfg['section_mode']} [{cad['syl_pattern']} · {cad['rhyme_type']}]",
                 "checks": {
                     "grid_passed": b["grid_passed"],
                     "remix_compliant": b["remix_compliant"],
@@ -384,7 +379,9 @@ def run_batch():
 
     comparison_file = rater_out_dir / "model_comparison_v4_20verses.json"
     comparison_file.write_text(json.dumps(comparison_cards, indent=2), encoding="utf-8")
-    print(f"[✓] Saved Sparkler Rater export: {comparison_file} ({len(comparison_cards)} verse cards)")
+    unified_file = rater_out_dir / "model_comparison.json"
+    unified_file.write_text(json.dumps(comparison_cards, indent=2), encoding="utf-8")
+    print(f"[✓] Saved Sparkler Rater export: {comparison_file} and {unified_file} ({len(comparison_cards)} verse cards)")
 
     # 2. Build Markdown Anthology
     md_lines = [

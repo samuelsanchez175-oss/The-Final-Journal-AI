@@ -867,17 +867,28 @@ Whenever NoCap is selected or blended:
 {taste_section}
 === 8. STRICT GENERATION RULES ===
 1. Exact Bar Count: Output EXACTLY {bars_count} lines of lyrics, one bar per line.
-2. Quadrasonic Cadence: EVERY single line MUST have EXACTLY 3 COMMAS separating 4 distinct beat phrases.
-3. Substantive Beat Groups: Each beat phrase must be 3 to 4 syllables. Never write single-word or filler fragments like 'yeah,', 'uh,', or 'look,' as a standalone beat phrase.
-4. Setup-to-Punchline Balance (2:2): Beats 1-2 build the setup; Beats 3-4 deliver the escalation and landing rhyme.
-5. Couplet Rhyme Scheme:
+2. Comma-Segmented Cadence: EVERY single line MUST have about 4 COMMAS (4 to 5 distinct comma-delimited pockets).
+3. Sustained 4-5 Syllable Pockets: Each comma segment MUST be 4 to 5 syllables. If you start with 4 or 5 syllables per comma, CONTINUE that exact count across the entire line (e.g. 4+4+4+4 or 5+5+5+5). Never jump erratically between long and short clauses!
+4. ABAB Inner Rhyme Level:
+   - Segment 1 ends on Rhyme A,
+   - Segment 2 ends on Rhyme B,
+   - Segment 3 ends on Rhyme A (rhymes with Segment 1),
+   - Segment 4 ends on Rhyme B (rhymes with Segment 2 and lands on designated end-word).
+5. Golden Benchmarks to Emulate:
+   - Gunna: 'Stackin' the cash, ridin' the wave, grabbin' the bag, diggin' the grave' (4s, 4s, 4s, 4s | ABAB)
+   - Lil Wayne: 'Fire in the spark, swirvin' in the night, swimmin' with the shark, lookin' for the light' (5s, 5s, 5s, 5s | ABAB)
+   - Drake: 'Late night in the city, called up on the phone, pity for the pretty, sittin' on the throne' (5s, 5s, 5s, 5s | ABAB)
+   - Young Thug: 'Drippin' in the green, ridin' in the whip, ice on my Celine, let the thirty clip' (5s, 5s, 5s, 5s | ABAB)
+   - NoCap: 'Sittin' in the cell, lookin' at the sky, ringin' out the bell, wonderin' on why' (4s, 4s, 4s, 4s | ABAB)
+6. Setup-to-Punchline Balance (2:2): Beats 1-2 build the setup; Beats 3-4 deliver the escalation and landing rhyme.
+7. Couplet Rhyme Scheme:
    - Bar 1 & Bar 2 MUST end in the assigned Couplet 1 rhyme sound with 2+ syllable slant match.
    - Bar 3 & Bar 4 MUST end in the assigned Couplet 2 rhyme sound with 2+ syllable slant match.
    - Bar 5 & Bar 6 MUST end in the assigned Couplet 3 rhyme sound with 2+ syllable slant match.
    - Bar 7 & Bar 8 MUST end in the assigned Couplet 4 rhyme sound with 2+ syllable slant match.
-6. No Word Duplication: Never end both bars of a couplet on the exact same word.
-7. REWORKING & INTERPOLATION (10–20% ORIGINALITY / REWORKED CATALOG FLOWS WELCOME): You do NOT need 100% original lines! You are explicitly encouraged to interpolate, rework, and flip classic catalog motifs, signature punchlines, and double meanings (e.g. Gunna's 'think he the one, but he really the two', NoCap's homophones, Patek/Maybach flips, or user's own scratchpad notes). It is completely acceptable and preferred to take real iconic bars or the user's provided lines and rework, twist, or modernize them into fresh couplets with new slant rhymes!
-8. Clean Studio Format: Output ONLY the {bars_count} lyric lines. No line numbers, no markdown code blocks, no beat labels, no intro explanations."""
+8. No Word Duplication: Never end both bars of a couplet on the exact same word.
+9. REWORKING & INTERPOLATION (10–20% ORIGINALITY / REWORKED CATALOG FLOWS WELCOME): You do NOT need 100% original lines! You are explicitly encouraged to interpolate, rework, and flip classic catalog motifs, signature punchlines, and double meanings (e.g. Gunna's 'think he the one, but he really the two', NoCap's homophones, Patek/Maybach flips, or user's own scratchpad notes). It is completely acceptable and preferred to take real iconic bars or the user's provided lines and rework, twist, or modernize them into fresh couplets with new slant rhymes!
+10. Clean Studio Format: Output ONLY the {bars_count} lyric lines. No line numbers, no markdown code blocks, no beat labels, no intro explanations."""
 
     return prompt
 
