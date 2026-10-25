@@ -670,6 +670,8 @@ def generate_v4(
         "grid_pass_rate": best_take["grid_pass_rate"],
         "grid_retries": best_take["grid_retries"],
         "grid_retries_total": best_take["grid_retries"],
+        "fallback_used": (sum(1 for c in retrieved_catalog_bars if c is None) > 0),
+        "fallback_count": sum(1 for c in retrieved_catalog_bars if c is None),
         "entity_guard": best_take.get("entity_guard", {"passed": True, "offending_tokens": []}),
         "entity_retries": best_take.get("entity_retries", 0),
         "style_score": best_take["style_score"],

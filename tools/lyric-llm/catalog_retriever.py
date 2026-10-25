@@ -12,6 +12,7 @@ Core Principles:
 from __future__ import annotations
 
 import csv
+import datetime
 import glob
 import json
 import math
@@ -395,6 +396,27 @@ def clear_end_word_history(history_path: Path = END_WORD_HISTORY_PATH) -> None:
             history_path.unlink()
         except Exception:
             pass
+
+
+def record_retrieval_fallback(artist: str, bar_number: int, tier: str, telemetry_path: Optional[Path] = None) -> None:
+    """Appends retrieval tier telemetry row to tools/lyric-llm/out/v4_telemetry.jsonl (Move 2).
+    Schema: {"timestamp": "...", "event": "retrieval_fallback", "artist": "Gunna", "bar": 3, "tier": "A|B|C|D|bank"}
+    """
+    path = telemetry_path or (OUT / "v4_telemetry.jsonl")
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
+        row = {
+            "timestamp": now_iso,
+            "event": "retrieval_fallback",
+            "artist": artist,
+            "bar": bar_number,
+            "tier": tier,
+        }
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(row) + "\n")
+    except Exception as exc:
+        print(f"[telemetry] Failed to record retrieval fallback: {exc}", file=sys.stderr)
 
 
 def normalize_vowel_class(v: str) -> str:
@@ -950,8 +972,16 @@ def retrieve_matching_catalog_lines(
     rime_last = target_rime.split()[-1] if target_rime else ""
     rime_like = f"% {rime_last}" if rime_last else "%"
 
-    # Composite SQL retrieval ranking combining exact end-word, exact rime, suffix rime, vowel class, popularity, anthems, topic, and inner vowel
-    sql = """
+    # Move 2: 3-Tier Filter Relaxation
+    # Tier A: Strict match (user album filter if provided, plus exact end-word or rhyme matching)
+    album_filter = ""
+    album_params = []
+    if user_albums:
+        placeholders = ",".join("?" for _ in user_albums)
+        album_filter = f" AND lower(album) IN ({placeholders})"
+        album_params = [a.lower() for a in user_albums]
+
+    sql_tier_a = f"""
         SELECT id, artist, song, album, text, end_word, end_rime,
                vowel_class, syllables, inner_rhyme_count, popularity_score,
                line_seq, total_lines, relative_pos, chronological_arc,
@@ -968,63 +998,122 @@ def retrieve_matching_catalog_lines(
                 + (inner_rhyme_count * 15) as retrieval_rank
         FROM catalog_bars
         WHERE artist = ? AND is_generic = 0
+          {album_filter}
           AND (
             lower(end_word) = ? OR (lower(?) = 'audamar' AND lower(end_word) = 'audemars')
-            OR end_rime = ? OR end_rime LIKE ? OR vowel_class = ?
-            OR (topic != '' AND ? != '' AND topic = ?)
-            OR (inner_vowel_class != '' AND ? != '' AND inner_vowel_class = ?)
+            OR end_rime = ? OR end_rime LIKE ?
           )
           AND ABS(syllables - ?) <= 6
         ORDER BY retrieval_rank DESC
         LIMIT 60;
     """
 
-    cur.execute(
-        sql,
-        (
-            target_word,
-            target_word,
-            target_rime,
-            rime_like,
-            target_vowel,
-            primary_topic,
-            primary_topic,
-            norm_inner_vowel,
-            norm_inner_vowel,
-            artist,
-            target_word,
-            target_word,
-            target_rime,
-            rime_like,
-            target_vowel,
-            primary_topic,
-            primary_topic,
-            norm_inner_vowel,
-            norm_inner_vowel,
-            target_syl,
-        ),
-    )
-    rows = cur.fetchall()
-    if rows:
-        rows = softmax_sample_rows(rows, limit=limit)
+    tier_a_args = [
+        target_word,
+        target_word,
+        target_rime,
+        rime_like,
+        target_vowel,
+        primary_topic,
+        primary_topic,
+        norm_inner_vowel,
+        norm_inner_vowel,
+        artist,
+    ] + album_params + [
+        target_word,
+        target_word,
+        target_rime,
+        rime_like,
+        target_syl,
+    ]
 
-    # Fallback to general artist pool if no strict match found
+    tier_used = "A"
+    cur.execute(sql_tier_a, tuple(tier_a_args))
+    rows = cur.fetchall()
+
+    # Move 2 Tier B: drop album filter, keep rhyme matching
     if not rows and not scored_candidates:
-        sql_fallback = """
+        sql_tier_b = """
             SELECT id, artist, song, album, text, end_word, end_rime,
                    vowel_class, syllables, inner_rhyme_count, popularity_score,
                    line_seq, total_lines, relative_pos, chronological_arc,
-                   next_bar_text, is_iconic_anthem, topic, inner_vowel_class
+                   next_bar_text, is_iconic_anthem, topic, inner_vowel_class,
+                   (CASE
+                        WHEN lower(end_word) = ? THEN 250
+                        WHEN end_rime = ? THEN 150
+                        WHEN end_rime LIKE ? THEN 80
+                        WHEN vowel_class = ? THEN 40
+                        ELSE 10
+                    END) + (popularity_score * 2.5) + (is_iconic_anthem * 150)
+                    + (inner_rhyme_count * 15) as retrieval_rank
+            FROM catalog_bars
+            WHERE artist = ? AND is_generic = 0
+              AND (lower(end_word) = ? OR end_rime = ? OR end_rime LIKE ?)
+              AND ABS(syllables - ?) <= 6
+            ORDER BY retrieval_rank DESC
+            LIMIT 60;
+        """
+        cur.execute(
+            sql_tier_b,
+            (target_word, target_rime, rime_like, target_vowel, artist, target_word, target_rime, rime_like, target_syl),
+        )
+        rows = cur.fetchall()
+        if rows:
+            tier_used = "B"
+
+    # Move 2 Tier C: drop rhyme, keep vowel class only
+    if not rows and not scored_candidates:
+        sql_tier_c = """
+            SELECT id, artist, song, album, text, end_word, end_rime,
+                   vowel_class, syllables, inner_rhyme_count, popularity_score,
+                   line_seq, total_lines, relative_pos, chronological_arc,
+                   next_bar_text, is_iconic_anthem, topic, inner_vowel_class,
+                   (CASE
+                        WHEN vowel_class = ? THEN 80
+                        ELSE 10
+                    END) + (popularity_score * 2.5) + (is_iconic_anthem * 150)
+                    + (inner_rhyme_count * 15) as retrieval_rank
+            FROM catalog_bars
+            WHERE artist = ? AND is_generic = 0
+              AND vowel_class = ?
+              AND ABS(syllables - ?) <= 6
+            ORDER BY retrieval_rank DESC
+            LIMIT 60;
+        """
+        cur.execute(sql_tier_c, (target_vowel, artist, target_vowel, target_syl))
+        rows = cur.fetchall()
+        if rows:
+            tier_used = "C"
+
+    # Move 2 Tier D: drop vowel class, keep syllable count ±4
+    if not rows and not scored_candidates:
+        sql_tier_d = """
+            SELECT id, artist, song, album, text, end_word, end_rime,
+                   vowel_class, syllables, inner_rhyme_count, popularity_score,
+                   line_seq, total_lines, relative_pos, chronological_arc,
+                   next_bar_text, is_iconic_anthem, topic, inner_vowel_class,
+                   (popularity_score * 2.5) + (is_iconic_anthem * 150)
+                   + (inner_rhyme_count * 15) as retrieval_rank
             FROM catalog_bars
             WHERE artist = ? AND is_generic = 0
               AND ABS(syllables - ?) <= 4
             ORDER BY is_iconic_anthem DESC, popularity_score DESC, inner_rhyme_count DESC
             LIMIT 40;
         """
-        cur.execute(sql_fallback, (artist, target_syl))
+        cur.execute(sql_tier_d, (artist, target_syl))
         rows = cur.fetchall()
         if rows:
-            rows = softmax_sample_rows(rows, limit=limit)
+            tier_used = "D"
+
+    # Apply Move 1: softmax sampling to rows from whichever Tier matched
+    if rows:
+        rows = softmax_sample_rows(rows, limit=limit)
+        record_retrieval_fallback(artist=artist, bar_number=bar_number, tier=tier_used)
+    elif not scored_candidates:
+        # All tiers missed! Return empty and record telemetry with tier="bank"
+        record_retrieval_fallback(artist=artist, bar_number=bar_number, tier="bank")
+        conn.close()
+        return []
 
     for r in rows:
         row_dict = dict(r)
