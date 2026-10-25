@@ -21,8 +21,8 @@ class TestV4Planner(unittest.TestCase):
         valid_mock_json = {
             "motif_chain": ["lavishness_money", "romance_women", "street_defiance", "boss_authority"],
             "couplet_voices": ["Gunna", "Gunna", "Gunna", "Gunna"],
-            "end_words": ["audamar", "lobster", "mercedes", "squeeze", "maybach", "payback", "toronto", "pronto"],
-            "rhyme_families": ["/ɑːr/ - /ɒbstər/", "/iːz/", "/eɪbæk/", "/ɒntoʊ/"],
+            "end_words": ["audamar", "car", "mercedes", "crazy", "maybach", "payback", "toronto", "pronto"],
+            "rhyme_families": ["/ɑːr/", "/eɪzi/", "/eɪbæk/", "/ɒntoʊ/"],
             "couplet_narratives": [
                 "Penthouse luxury and dining",
                 "High speed traffic and lavish living",
@@ -48,7 +48,7 @@ class TestV4Planner(unittest.TestCase):
         self.assertEqual(len(plan["couplet_voices"]), 4)
         self.assertEqual(len(plan["motif_chain"]), 4)
         self.assertEqual(plan["end_words"][0], "audamar")
-        self.assertEqual(plan["end_words"][1], "lobster")
+        self.assertEqual(plan["end_words"][1], "car")
 
     def test_plan_v4_oov_and_generic_blacklist_substitution(self):
         # Plan contains "real" and "cake" (in GENERIC_END_RHYME_BLACKLIST) and "randomgibberish123" (OOV)

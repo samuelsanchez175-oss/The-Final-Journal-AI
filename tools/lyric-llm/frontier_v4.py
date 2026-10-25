@@ -124,18 +124,21 @@ def draft_scaffold(
     system_prompt = (
         f"You are Penwork Studios' Rapid Scaffold Drafter (Frontier V4 Pass 1).\n"
         f"Your task is to draft exactly {bars_count} raw lyric lines adhering strictly to the 4-comma / 4-pocket isochronous rap cadence with ABAB inner rhymes.\n\n"
-        f"MANDATORY RHYTHMIC RULES:\n"
+        f"MANDATORY RHYTHMIC & VOCABULARY RULES:\n"
         f"1. EACH BAR MUST HAVE ABOUT 4 COMMAS (4 to 5 distinct comma-delimited segments).\n"
         f"2. SUSTAINED 4-5 SYLLABLES PER COMMA: If you start with 4 or 5 syllables per comma segment, continue that exact count out across every segment in the bar (e.g. 4+4+4+4 or 5+5+5+5).\n"
         f"3. ABAB INNER-RHYME LEVEL: Segment 1 ends on Rhyme A, Segment 2 ends on Rhyme B, Segment 3 ends on Rhyme A (rhyming with Segment 1), Segment 4 ends on Rhyme B (rhyming with Segment 2 and designated end-word).\n"
-        f"4. GOLDEN BENCHMARKS TO EMULATE:\n"
-        f"   - Gunna: 'Stackin' the cash, ridin' the wave, grabbin' the bag, diggin' the grave' (4s, 4s, 4s, 4s = 16s, ABAB)\n"
-        f"   - Lil Wayne: 'Fire in the spark, swirvin' in the night, swimmin' with the shark, lookin' for the light' (5s, 5s, 5s, 5s = 20s, ABAB)\n"
-        f"   - Drake: 'Late night in the city, called up on the phone, pity for the pretty, sittin' on the throne' (5s, 5s, 5s, 5s = 20s, ABAB)\n"
-        f"   - Young Thug: 'Drippin' in the green, ridin' in the whip, ice on my Celine, let the thirty clip' (5s, 5s, 5s, 5s = 20s, ABAB)\n"
-        f"   - NoCap: 'Sittin' in the cell, lookin' at the sky, ringin' out the bell, wonderin' on why' (4s, 4s, 4s, 4s = 16s, ABAB)\n"
-        f"5. Every bar MUST land on its designated authentic catalog end-word in the final segment.\n"
-        f"6. Output ONLY the {bars_count} lyric lines, no explanations, no quotes, no bar labels."
+        f"4. ZERO REPEATED TERMINAL WORDS: Never end multiple lines on the same word or identical root (e.g. NEVER rhyme 'Mercedes' with 'mercedes', NEVER repeat 'overseas'). Every rhyme must land on distinct vocabulary.\n"
+        f"5. NO CORNY / FORCED MULTISYLLABIC SLANTS: Strictly avoid unnatural words like 'hospital', 'optical', 'obstacle', 'impossible', 'lobster'. Rhymes must sound like authentic rap speech.\n"
+        f"6. USER GROUND TRUTH GOLD BENCHMARKS (EMULATE THIS NATURAL PACING & SLANT CRAFT):\n"
+        f"   - 'on the block, stackin' them knots, pushin' the weight, in the mercedes' (3s, 5s, 4s, 5s)\n"
+        f"   - 'drilling these streets, fearless with moves, watch is two tone, man it go crazy' (5s, 5s, 4s, 5s)\n"
+        f"   - 'stackin' some chips, fliping the script, in it then dip, fly overseas' (5s, 5s, 4s, 4s)\n"
+        f"   - 'im on my grind, standin' so tall, against the odds, wont drop to my knees' (4s, 5s, 4s, 5s)\n"
+        f"   - 'rollin 10 deep, tinted and creep, aint catching no sleep, audi it beeps' (4s, 5s, 5s, 4s)\n"
+        f"   - 'open' the roof, im catching a breeze, blessings surround, im blessed when i sneeze' (4s, 5s, 4s, 5s)\n"
+        f"7. Every bar MUST land on its designated authentic catalog end-word in the final segment.\n"
+        f"8. Output ONLY the {bars_count} lyric lines, no explanations, no quotes, no bar labels."
     )
 
     guidance = []
@@ -223,7 +226,10 @@ def polish_scaffold(
         f"2. PRESERVE EXACT END-WORDS: Every line MUST strictly conclude on its designated catalog end-word in Beat 4.\n"
         f"3. 4-COMMA ISOCHRONOUS CADENCE: About 4 commas per line (4 to 5 distinct rhythmic pockets, 4-5 syllables each, total {effective_syl}s).\n"
         f"4. SUSTAIN SYLLABLE COUNTS: If a line starts with 4 or 5 syllables per comma segment, continue that exact count out across every segment (e.g. 4+4+4+4 or 5+5+5+5).\n"
-        f"5. ABAB INNER-RHYME LEVEL: Segment 1 rhymes with Segment 3 (Rhyme A), Segment 2 rhymes with Segment 4 (Rhyme B).\n\n"
+        f"5. ABAB INNER-RHYME LEVEL: Segment 1 rhymes with Segment 3 (Rhyme A), Segment 2 rhymes with Segment 4 (Rhyme B).\n"
+        f"6. ZERO REPEATED TERMINAL WORDS: Never end multiple bars on the same word or identical root (e.g. NEVER rhyme 'Mercedes' with 'mercedes', NEVER repeat 'overseas').\n"
+        f"7. NO CORNY / FORCED SLANTS: Strictly reject unnatural words ('hospital', 'optical', 'obstacle', 'impossible', 'lobster').\n"
+        f"8. USER GOLD BENCHMARKS: Emulate natural pocket bounce like 'drilling these streets, fearless with moves, watch is two tone, man it go crazy' and 'open' the roof, im catching a breeze, blessings surround, im blessed when i sneeze'.\n\n"
         f"Catalog Foundations & Draft Scaffold Bars to Polish:"
     ]
 
@@ -520,6 +526,12 @@ def generate_v4(
             except Exception:
                 style_score_val = 0.85
 
+        # Pass 3.5: Comprehensive Cadence & Anti-Repetition Audit
+        from cadence_analyzer import audit_verse_cadence_and_rhymes
+        cadence_audit = audit_verse_cadence_and_rhymes(polished_lines, cmu=cmu)
+        cadence_penalty = (len(cadence_audit["duplicate_end_words"]) * 0.25) + (len(cadence_audit["corny_words_found"]) * 0.30)
+        effective_cadence_score = max(0.0, cadence_audit["overall_score"] - cadence_penalty)
+
         take_candidates.append({
             "candidate_index": c_idx + 1,
             "draft_bars": draft_lines,
@@ -531,11 +543,13 @@ def generate_v4(
             "grid_retries": retries_done,
             "entity_guard": final_entity_eval,
             "entity_retries": entity_retries_done,
+            "cadence_audit": cadence_audit,
+            "effective_cadence_score": round(effective_cadence_score, 3),
             "style_score": style_score_val,
         })
 
-    # Pick best candidate based on (grid_pass_rate, style_score)
-    take_candidates.sort(key=lambda t: (t["grid_pass_rate"], t["style_score"]), reverse=True)
+    # Pick best candidate based on (grid_pass_rate, effective_cadence_score, style_score)
+    take_candidates.sort(key=lambda t: (t["grid_pass_rate"], t["effective_cadence_score"], t["style_score"]), reverse=True)
     best_take = take_candidates[0]
     final_bars = best_take["polished_bars"]
 

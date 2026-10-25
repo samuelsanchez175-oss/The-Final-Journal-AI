@@ -33,6 +33,11 @@ class TestCadenceABAB(unittest.TestCase):
         self.assertFalse(cadence_analyzer.is_hiphop_rhyme("cash", "phone"))
         self.assertFalse(cadence_analyzer.is_hiphop_rhyme("car", "bottle"))
 
+        # Identity rhymes / self-repetition are STRICTLY forbidden in hip-hop
+        self.assertFalse(cadence_analyzer.is_hiphop_rhyme("mercedes", "mercedes"))
+        self.assertFalse(cadence_analyzer.is_hiphop_rhyme("overseas", "overseas"))
+        self.assertFalse(cadence_analyzer.is_hiphop_rhyme("roll", "rollin'"))
+
     def test_gunna_abab_cadence(self):
         line = "Stackin' the cash, ridin' the wave, grabbin' the bag, diggin' the grave"
         res = cadence_analyzer.analyze_bar_cadence(line)
@@ -106,6 +111,38 @@ class TestCadenceABAB(unittest.TestCase):
         self.assertEqual(len(res["segments"]), 4)
         self.assertTrue(res["is_isochronous"])
         self.assertTrue(res["abab_detected"])
+
+    def test_audit_verse_catches_duplicate_terminal_words(self):
+        bars = [
+            "Put a big M, on my Mercedes, flying through lanes, in the mercedes",
+            "Got me some millions, stackin' up paper, livin' it wild, in the mercedes",
+        ]
+        audit = cadence_analyzer.audit_verse_cadence_and_rhymes(bars)
+        self.assertFalse(audit["passed"])
+        self.assertIn("mercedes", audit["duplicate_end_words"])
+        self.assertTrue(any("Identity rhyme defect" in d for d in audit["defects"]))
+
+    def test_audit_verse_catches_corny_words(self):
+        bars = [
+            "Young Gunna Wunna, drippin' in gold, livin' like mobsters, they got the lobster",
+            "Poppin' them bottles, feelin' the shock, runnin' through cities, feelin' hospital",
+        ]
+        audit = cadence_analyzer.audit_verse_cadence_and_rhymes(bars)
+        self.assertFalse(audit["passed"])
+        self.assertIn("lobster", audit["corny_words_found"])
+        self.assertIn("hospital", audit["corny_words_found"])
+
+    def test_audit_verse_passes_clean_gold_bars(self):
+        bars = [
+            "on the block, stackin' them knots, pushin' the weight, in the mercedes",
+            "drilling these streets, fearless with moves, watch is two tone, man it go crazy",
+            "stackin' some chips, fliping the script, in it then dip, fly overseas",
+            "im on my grind, standin' so tall, against the odds, wont drop to my knees",
+        ]
+        audit = cadence_analyzer.audit_verse_cadence_and_rhymes(bars)
+        self.assertEqual(len(audit["duplicate_end_words"]), 0)
+        self.assertEqual(len(audit["corny_words_found"]), 0)
+        self.assertTrue(all(b["is_isochronous"] for b in audit["bar_cadences"]))
 
 
 if __name__ == "__main__":

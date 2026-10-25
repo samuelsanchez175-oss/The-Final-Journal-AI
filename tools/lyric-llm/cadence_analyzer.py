@@ -42,8 +42,11 @@ def is_hiphop_rhyme(w1: str, w2: str, cmu: Optional[dict] = None) -> bool:
     n2 = normalize_slang_word(w2)
     if not n1 or not n2:
         return False
+    # CRITICAL: A word cannot rhyme with itself in hip-hop (identity rhyme defect)
     if n1 == n2:
-        return True
+        return False
+    if len(n1) >= 4 and len(n2) >= 4 and (n1.startswith(n2) or n2.startswith(n1)):
+        return False
 
     r1 = polish.end_rime(n1, cmu)
     r2 = polish.end_rime(n2, cmu)
@@ -236,4 +239,90 @@ def analyze_bar_cadence(line: str, cmu: Optional[dict] = None) -> dict:
         "rhyme_type": rhyme_type,
         "internal_pairs": internal_pairs,
         "cadence_score": round(score, 3),
+    }
+
+
+FORBIDDEN_CORNY_WORDS = {"hospital", "optical", "obstacle", "impossible", "lobster"}
+
+
+def audit_verse_cadence_and_rhymes(bars: list[str], cmu: Optional[dict] = None) -> dict:
+    """Audits an entire verse for cadence uniformity, ABAB inner rhymes, terminal duplicate words,
+    and corny/robotic slant rhymes.
+    """
+    if cmu is None:
+        cmu = polish._get_cmu()
+
+    bar_cadences = []
+    end_words = []
+    norm_end_words = []
+    defects = []
+    corny_found = []
+
+    for i, bar in enumerate(bars):
+        c_res = analyze_bar_cadence(bar, cmu)
+        bar_cadences.append(c_res)
+        toks = [t for t in re.findall(r"[a-zA-Z0-9']+", bar) if t]
+        ew = toks[-1] if toks else ""
+        norm_ew = normalize_slang_word(ew)
+        end_words.append(ew)
+        norm_end_words.append(norm_ew)
+
+        # Check corny words anywhere in the bar
+        for t in toks:
+            t_norm = normalize_slang_word(t)
+            if t_norm in FORBIDDEN_CORNY_WORDS:
+                defects.append(f"Bar {i+1}: Forbidden/corny word '{t}' detected")
+                if t_norm not in corny_found:
+                    corny_found.append(t_norm)
+
+    # Check terminal end-word duplicates across the verse
+    duplicate_end_words = []
+    seen_ends = {}
+    for i, norm_w in enumerate(norm_end_words):
+        if not norm_w:
+            continue
+        if norm_w in seen_ends:
+            prev_i = seen_ends[norm_w]
+            dup_msg = f"Duplicate terminal word '{norm_w}' on Bar {prev_i+1} and Bar {i+1}"
+            defects.append(dup_msg)
+            if norm_w not in duplicate_end_words:
+                duplicate_end_words.append(norm_w)
+        else:
+            seen_ends[norm_w] = i
+
+    # Check couplet rhyme connectivity
+    couplet_rhymes = []
+    couplet_count = len(bars) // 2
+    for c_idx in range(couplet_count):
+        i1 = c_idx * 2
+        i2 = i1 + 1
+        w1 = end_words[i1]
+        w2 = end_words[i2]
+        is_rhyme = is_hiphop_rhyme(w1, w2, cmu)
+        is_identical = (norm_end_words[i1] == norm_end_words[i2])
+        if is_identical:
+            defects.append(f"Couplet {c_idx+1} (Bars {i1+1}-{i2+1}): Identity rhyme defect ('{w1}' rhymed with '{w2}')")
+        elif not is_rhyme:
+            defects.append(f"Couplet {c_idx+1} (Bars {i1+1}-{i2+1}): Non-rhyming pair ('{w1}' and '{w2}')")
+
+        couplet_rhymes.append({
+            "couplet_index": c_idx,
+            "bars": [i1, i2],
+            "pair": [w1, w2],
+            "rhymes": is_rhyme and not is_identical,
+            "is_identical": is_identical,
+        })
+
+    avg_score = (sum(b["cadence_score"] for b in bar_cadences) / len(bar_cadences)) if bar_cadences else 0.0
+    passed = len(defects) == 0 and all(b["is_isochronous"] for b in bar_cadences)
+
+    return {
+        "passed": passed,
+        "defects": defects,
+        "bar_cadences": bar_cadences,
+        "end_words": end_words,
+        "duplicate_end_words": duplicate_end_words,
+        "corny_words_found": corny_found,
+        "couplet_rhymes": couplet_rhymes,
+        "overall_score": round(avg_score, 3),
     }

@@ -689,8 +689,8 @@ ARTIST_CATALOG_RHYME_BANKS = {
     ],
     "Lil Wayne": [
         {"pair": ("forever", "together"), "family": "-ev-er", "theme": "Loyalty & Longevity", "bag": "faith_hope"},
-        {"pair": ("hospital", "optical"), "family": "-i-kul", "theme": "Lyrical Violence & Vision", "bag": "punchlines_metaphors"},
-        {"pair": ("impossible", "obstacle"), "family": "-i-bul", "theme": "Defying Gravity & Doubters", "bag": "punchlines_metaphors"},
+        {"pair": ("spark", "shark"), "family": "-ark", "theme": "Fire in the Booth & Street Sharks", "bag": "punchlines_metaphors"},
+        {"pair": ("night", "light"), "family": "-ite", "theme": "Late Night Hustle & Shining Bright", "bag": "punchlines_metaphors"},
         {"pair": ("pharmaceutical", "beautiful"), "family": "-yoo-tik-ul", "theme": "Surreal Syzurp Metaphors", "bag": "punchlines_metaphors"},
         {"pair": ("oxygen", "toxic"), "family": "-ik-sun", "theme": "Suffocating Competition", "bag": "punchlines_metaphors"},
         {"pair": ("extraordinary", "dictionary"), "family": "-ar-ee", "theme": "Lyrical Dominance & Vocabulary", "bag": "punchlines_metaphors"},
@@ -874,7 +874,13 @@ Whenever NoCap is selected or blended:
    - Segment 2 ends on Rhyme B,
    - Segment 3 ends on Rhyme A (rhymes with Segment 1),
    - Segment 4 ends on Rhyme B (rhymes with Segment 2 and lands on designated end-word).
-5. Golden Benchmarks to Emulate:
+5. User Gold Benchmarks to Emulate (Target Pocket Pacing & Rhyme Craft):
+   - 'on the block, stackin' them knots, pushin' the weight, in the mercedes' (3s, 5s, 4s, 5s)
+   - 'drilling these streets, fearless with moves, watch is two tone, man it go crazy' (5s, 5s, 4s, 5s)
+   - 'stackin' some chips, fliping the script, in it then dip, fly overseas' (5s, 5s, 4s, 4s)
+   - 'im on my grind, standin' so tall, against the odds, wont drop to my knees' (4s, 5s, 4s, 5s)
+   - 'rollin 10 deep, tinted and creep, aint catching no sleep, audi it beeps' (4s, 5s, 5s, 4s)
+   - 'open' the roof, im catching a breeze, blessings surround, im blessed when i sneeze' (4s, 5s, 4s, 5s)
    - Gunna: 'Stackin' the cash, ridin' the wave, grabbin' the bag, diggin' the grave' (4s, 4s, 4s, 4s | ABAB)
    - Lil Wayne: 'Fire in the spark, swirvin' in the night, swimmin' with the shark, lookin' for the light' (5s, 5s, 5s, 5s | ABAB)
    - Drake: 'Late night in the city, called up on the phone, pity for the pretty, sittin' on the throne' (5s, 5s, 5s, 5s | ABAB)
@@ -886,8 +892,9 @@ Whenever NoCap is selected or blended:
    - Bar 3 & Bar 4 MUST end in the assigned Couplet 2 rhyme sound with 2+ syllable slant match.
    - Bar 5 & Bar 6 MUST end in the assigned Couplet 3 rhyme sound with 2+ syllable slant match.
    - Bar 7 & Bar 8 MUST end in the assigned Couplet 4 rhyme sound with 2+ syllable slant match.
-8. No Word Duplication: Never end both bars of a couplet on the exact same word.
-9. REWORKING & INTERPOLATION (10–20% ORIGINALITY / REWORKED CATALOG FLOWS WELCOME): You do NOT need 100% original lines! You are explicitly encouraged to interpolate, rework, and flip classic catalog motifs, signature punchlines, and double meanings (e.g. Gunna's 'think he the one, but he really the two', NoCap's homophones, Patek/Maybach flips, or user's own scratchpad notes). It is completely acceptable and preferred to take real iconic bars or the user's provided lines and rework, twist, or modernize them into fresh couplets with new slant rhymes!
+8. Zero Word Duplication: NEVER end multiple lines on the exact same word or stem (e.g. NEVER rhyme 'Mercedes' with 'mercedes', NEVER repeat 'overseas'). Every rhyme must land on distinct vocabulary!
+9. No Corny / Forced Slant Rhymes: Strictly avoid robotic words that make no sense in street rap (e.g. 'hospital', 'optical', 'obstacle', 'impossible', 'lobster').
+10. REWORKING & INTERPOLATION (10–20% ORIGINALITY / REWORKED CATALOG FLOWS WELCOME): You do NOT need 100% original lines! You are explicitly encouraged to interpolate, rework, and flip classic catalog motifs, signature punchlines, and double meanings (e.g. Gunna's 'think he the one, but he really the two', NoCap's homophones, Patek/Maybach flips, or user's own scratchpad notes). It is completely acceptable and preferred to take real iconic bars or the user's provided lines and rework, twist, or modernize them into fresh couplets with new slant rhymes!
 10. Clean Studio Format: Output ONLY the {bars_count} lyric lines. No line numbers, no markdown code blocks, no beat labels, no intro explanations."""
 
     return prompt

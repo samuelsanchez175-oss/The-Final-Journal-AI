@@ -57,7 +57,7 @@ GENERIC_END_RHYME_BLACKLIST = {
 def _get_catalog_end_words(voice: str, blend: str = "") -> set[str]:
     """Retrieve all known authentic catalog end-words and rhyme pairs for validation."""
     SIGNATURE_BENCHMARK_WORDS = {
-        "audamar", "audemars", "lobster", "mercedes", "squeeze", "toronto", "pronto",
+        "audamar", "audemars", "car", "mercedes", "crazy", "squeeze", "toronto", "pronto",
         "patek", "maybach", "collar", "dollar", "paris", "cellar", "fella", "payback",
         "franklins", "ankles", "celine", "listerine", "carbone",
     }
@@ -102,8 +102,8 @@ def _fallback_plan(
         couplet_voices = [bar_artists[i * 2] for i in range(couplet_count)]
     except Exception:
         banks = [
-            {"pair": ("audamar", "lobster"), "family": "/ɑːr/ - /ɒbstər/", "theme": "Penthouse Dining"},
-            {"pair": ("mercedes", "squeeze"), "family": "/iːz/", "theme": "High-Speed Highway"},
+            {"pair": ("audamar", "car"), "family": "/ɑːr/", "theme": "Penthouse Luxury & Exotic Cars"},
+            {"pair": ("mercedes", "crazy"), "family": "/eɪzi/", "theme": "High-Speed Highway"},
             {"pair": ("maybach", "payback"), "family": "/eɪbæk/", "theme": "Executive Vengeance"},
             {"pair": ("toronto", "pronto"), "family": "/ɒntoʊ/", "theme": "Cross-Border Business"},
         ]
@@ -116,7 +116,7 @@ def _fallback_plan(
 
     for c_i in range(couplet_count):
         b = banks[c_i % len(banks)]
-        p1, p2 = b.get("pair", ("audamar", "lobster"))
+        p1, p2 = b.get("pair", ("audamar", "car"))
         end_words.extend([p1, p2])
         rhyme_families.append(b.get("family", "/ɑːr/"))
         couplet_narratives.append(f"{couplet_voices[c_i]} establishes {motif_chain[c_i].replace('_', ' ')}")
@@ -164,7 +164,7 @@ def plan_v4(
         "Your role is to return a strict JSON blueprint defining the overarching motifs, couplet voice distribution, "
         "and authentic catalog rhyme anchors for a rap verse. You do NOT write full verses; you design the architectural plan.\n\n"
         "CRITICAL PLANNING MANDATES:\n"
-        "1. STRICT CATALOG END-WORDS: Every couplet must resolve on authentic artist catalog words (e.g. audamar, lobster, mercedes, squeeze, patek, maybach, celine, cellar).\n"
+        "1. STRICT CATALOG END-WORDS: Every couplet must resolve on authentic artist catalog words (e.g. audamar, car, mercedes, crazy, patek, maybach, celine, cellar).\n"
         "2. ZERO GENERIC NURSERY RHYMES: NEVER use words like real, cake, slide, plate, light, tight, day, way, pain, rain, cash, trap.\n"
         "3. ADHD MOTIF JUMPS: Modern rap pivots thematic focus every 2 bars (couplet). Select motif keys from: lavishness_money, romance_women, street_defiance, boss_authority, spiritual_faith, pain_betrayal.\n"
         "4. OUTPUT FORMAT: Return ONLY valid JSON with no markdown wrapping, no commentary."
