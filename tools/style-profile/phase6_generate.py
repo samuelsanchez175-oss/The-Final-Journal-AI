@@ -362,10 +362,17 @@ def build_taste_prompt_blocks(
         if w <= 0.5:
             continue
 
-        # Look up bar text from generation_bars
-        cur.execute("SELECT text FROM generation_bars WHERE id = ?", (bid,))
-        row = cur.fetchone()
-        raw_text = row[0] if (row and row[0]) else ""
+        # Look up bar text (preferring user rewrite if present) from generation_bars
+        cur.execute("PRAGMA table_info(generation_bars);")
+        gb_cols = {r[1] for r in cur.fetchall()}
+        if "rewrite" in gb_cols:
+            cur.execute("SELECT text, rewrite FROM generation_bars WHERE id = ?", (bid,))
+            row = cur.fetchone()
+            raw_text = (row[1] if (row and len(row) > 1 and row[1]) else (row[0] if (row and row[0]) else ""))
+        else:
+            cur.execute("SELECT text FROM generation_bars WHERE id = ?", (bid,))
+            row = cur.fetchone()
+            raw_text = row[0] if (row and row[0]) else ""
 
         # Fallback to rating_cards payload if missing from generation_bars
         if not raw_text:
@@ -376,9 +383,10 @@ def build_taste_prompt_blocks(
                 try:
                     payload = json.loads(p_row[0])
                     for bv in payload.get("bar_votes", []):
-                        if (bv.get("bar_id") == bid or f"{gid}:{bv.get('bar_index')}" == bid) and bv.get("text"):
-                            raw_text = bv["text"]
-                            break
+                        if (bv.get("bar_id") == bid or f"{gid}:{bv.get('bar_index')}" == bid):
+                            raw_text = bv.get("rewrite") or bv.get("text") or ""
+                            if raw_text:
+                                break
                 except Exception:
                     pass
 

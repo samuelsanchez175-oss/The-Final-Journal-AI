@@ -26,7 +26,7 @@ SCHEMA = """
 CREATE TABLE IF NOT EXISTS generations (
   id TEXT PRIMARY KEY, created_at REAL, artist TEXT, request_json TEXT, model TEXT, prompt_version TEXT);
 CREATE TABLE IF NOT EXISTS generation_bars (
-  id TEXT PRIMARY KEY, generation_id TEXT REFERENCES generations(id), bar_index INTEGER, text TEXT, topic TEXT);
+  id TEXT PRIMARY KEY, generation_id TEXT REFERENCES generations(id), bar_index INTEGER, text TEXT, topic TEXT, rewrite TEXT);
 CREATE TABLE IF NOT EXISTS bar_sources (
   bar_id TEXT REFERENCES generation_bars(id), kind TEXT CHECK(kind IN ('block','catalog_bar')),
   ref TEXT, category TEXT);
@@ -58,6 +58,11 @@ class FeedbackStore:
             self.db.execute("ALTER TABLE votes ADD COLUMN reasons TEXT;")
         if "rater" not in cols:
             self.db.execute("ALTER TABLE votes ADD COLUMN rater TEXT;")
+
+        cur.execute("PRAGMA table_info(generation_bars);")
+        gb_cols = {row[1] for row in cur.fetchall()}
+        if gb_cols and "rewrite" not in gb_cols:
+            self.db.execute("ALTER TABLE generation_bars ADD COLUMN rewrite TEXT;")
 
         # Check if target_kind CHECK constraint allows 'verse'
         cur.execute("SELECT sql FROM sqlite_master WHERE type='table' AND name='votes';")
@@ -93,7 +98,7 @@ class FeedbackStore:
                         (gid, time.time(), artist, json.dumps(request or {}), model, prompt_version))
         for i, b in enumerate(bars):
             bid = f"{gid}:{i}"
-            self.db.execute("INSERT INTO generation_bars VALUES (?,?,?,?,?)", (bid, gid, i, b["text"], b.get("topic")))
+            self.db.execute("INSERT INTO generation_bars (id, generation_id, bar_index, text, topic, rewrite) VALUES (?,?,?,?,?,?)", (bid, gid, i, b["text"], b.get("topic"), b.get("rewrite", "")))
             for s in b.get("sources", []):
                 self.db.execute("INSERT INTO bar_sources VALUES (?,?,?,?)", (bid, s["kind"], s["ref"], s.get("category")))
         self.db.commit()

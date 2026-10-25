@@ -50,6 +50,11 @@ def ensure_schema(db) -> None:
     if "rater" not in cols:
         db.execute("ALTER TABLE votes ADD COLUMN rater TEXT;")
 
+    cur.execute("PRAGMA table_info(generation_bars);")
+    gb_cols = {row[1] for row in cur.fetchall()}
+    if gb_cols and "rewrite" not in gb_cols:
+        db.execute("ALTER TABLE generation_bars ADD COLUMN rewrite TEXT;")
+
     cur.execute("SELECT sql FROM sqlite_master WHERE type='table' AND name='votes';")
     res = cur.fetchone()
     if res and res[0] and "CHECK" in res[0] and "'verse'" not in res[0]:
@@ -209,21 +214,24 @@ def import_ratings(
                         )
                     verse_votes_added += 1
 
-            # 3. Bar Votes
+            # 3. Bar Votes & Rewrites
             for bar in row.get("bar_votes") or []:
-                b_vote = bar.get("vote")
-                if b_vote not in (1, -1):
-                    continue
-
                 bar_id = bar.get("bar_id") or f"{gid}:{bar.get('bar_index')}"
                 bar_idx = bar.get("bar_index") if bar.get("bar_index") is not None else 0
                 bar_text = bar.get("text") or ""
-                if not dry_run and bar_text:
+                bar_rewrite = bar.get("rewrite") or ""
+
+                if not dry_run and (bar_text or bar_rewrite):
                     store.db.execute(
-                        "INSERT OR IGNORE INTO generation_bars (id, generation_id, bar_index, text, topic) "
-                        "VALUES (?, ?, ?, ?, ?)",
-                        (bar_id, gid, bar_idx, bar_text, topic),
+                        "INSERT INTO generation_bars (id, generation_id, bar_index, text, topic, rewrite) "
+                        "VALUES (?, ?, ?, ?, ?, ?) "
+                        "ON CONFLICT(id) DO UPDATE SET rewrite=excluded.rewrite, text=excluded.text",
+                        (bar_id, gid, bar_idx, bar_text, topic, bar_rewrite),
                     )
+
+                b_vote = bar.get("vote")
+                if b_vote not in (1, -1):
+                    continue
 
                 bar_reasons_clean = [code for code in bar.get("reasons") or [] if code in REASONS]
 
