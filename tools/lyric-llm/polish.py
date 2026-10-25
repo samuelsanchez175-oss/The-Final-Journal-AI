@@ -1760,6 +1760,8 @@ def generate_frontier_bars_v2(
         "grid_pass_rate": final_grid_eval["pass_rate"],
         "grid_retries": total_retries_done,
         "grid_retries_total": total_retries_done,
+        "fallback_used": (sum(1 for c in retrieved_catalog_bars if c is None) > 0),
+        "fallback_count": sum(1 for c in retrieved_catalog_bars if c is None),
         "entity_guard": final_entity_eval,
         "entity_retries": entity_retries_done,
         "section_structure": verify_section_structure(final_bars, section_mode=section_mode, cmu=cmu),
