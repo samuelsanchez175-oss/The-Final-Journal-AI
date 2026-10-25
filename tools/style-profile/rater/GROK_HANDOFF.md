@@ -288,3 +288,23 @@ files and a HANDOFF ENTRY.
   - **38/38 tests passing** across all 7 test suites:
     `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6).
 - **Next Frontier v4 Tasks:** Task M (Spotify popularity ingest: `tools/lyric-llm/spotify_popularity.py` reading `.env.spotify`).
+
+### HANDOFF ENTRY: Frontier v4 Task M Completed — Spotify Popularity Ingest (2026-10-24, Antigravity)
+
+**Status:** Task M (Spotify Popularity Ingest) is complete, live, and verified across all 44/44 tests in the Frontier v4 suite.
+- **Component Changes (`tools/lyric-llm/spotify_popularity.py`):**
+  - Reads Spotify client credentials from `tools/style-profile/.env.spotify` (`SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`) using OAuth2 Client Credentials flow with rate limit backoff (HTTP 429 Retry-After).
+  - Implemented `normalize_song_title()` stripping featuring clauses (`(feat. ...)`, `[feat. ...]`, `(with ...)`), remix/deluxe suffixes, and punctuation.
+  - Implemented `SEED_SPOTIFY_POPULARITY` baseline mapping 0–100 track popularity for 86 signature hits across Gunna, Drake, NoCap, Lil Wayne, Lil Baby, and Young Thug.
+  - Implemented `load_spotify_popularity_map()` and `save_spotify_popularity_map()` persisting to `tools/lyric-llm/out/spotify_popularity.json` (currently populated with 186 track entries).
+  - Implemented `sync_spotify_popularity_to_db()` executing batch SQLite updates on `catalog_index.sqlite` (`catalog_bars.popularity_score = MAX(popularity_score, spotify_pop * 0.8)`), syncing 7,499 bars.
+- **Retriever Wire-In (`tools/lyric-llm/catalog_retriever.py`):**
+  - Exposed `load_spotify_popularity_map` and wired it into `build_catalog_index()`.
+  - Merged Genius community clicks/votes with Spotify streaming popularity using Task M rule:
+    `popularity_score = max(genius_pop_score, round(spotify_pop * 0.8, 2))` with `ICONIC_ANTHEMS` floor of `45.0`.
+- **Unit Tests (`tools/lyric-llm/test_spotify_popularity.py`):**
+  - 6/6 tests passed covering title normalization, `.env.spotify` credential loading, mock search, map persistence, merge formula verification, and SQLite database syncing.
+- **Full V4 Suite Status:**
+  - **44/44 tests passing** across all 8 test suites:
+    `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6).
+- **Next Frontier v4 Tasks:** Task P / N (Named-entity leak guard & dynamic edit-distance cap) -> Task Q (Section-aware generation / Hook Engine).

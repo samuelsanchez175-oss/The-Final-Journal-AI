@@ -33,6 +33,18 @@ TRAIN_JSONL = OUT / "train.jsonl"
 GROUND_TRUTH_CSV = REPO_ROOT / "XJournal AI" / "ground_truth_rap_bars_MODEL_G.csv"
 GENIUS_CLICKS_DIR = REPO_ROOT / "docs" / "play-on-words" / "genius-clicks"
 END_WORD_HISTORY_PATH = OUT / "end_word_history.json"
+SPOTIFY_POPULARITY_JSON = OUT / "spotify_popularity.json"
+
+try:
+    from spotify_popularity import load_spotify_popularity_map, sync_spotify_popularity_to_db
+except ImportError:
+    try:
+        from .spotify_popularity import load_spotify_popularity_map, sync_spotify_popularity_to_db
+    except ImportError:
+        def load_spotify_popularity_map(json_path=SPOTIFY_POPULARITY_JSON):
+            return {}
+        def sync_spotify_popularity_to_db(pop_map, db_path=DB_PATH):
+            return 0
 
 # Global Cross-Generation End-Word Dedupe Window
 _GLOBAL_END_WORD_WINDOW: list[str] = []
@@ -515,6 +527,7 @@ def build_catalog_index(
     t0 = time.time()
     cmu = load_cmudict(CMU_PATH)
     pop_map = load_genius_popularity_map()
+    spotify_map = load_spotify_popularity_map()
     album_map = load_song_album_map()
     song_metadata = load_song_metadata_cache()
 
@@ -538,7 +551,9 @@ def build_catalog_index(
 
                     is_anthem = 1 if song_title.lower() in ICONIC_ANTHEMS.get(art.lower(), set()) else 0
                     pop_votes = pop_map.get((art.lower(), song_title.lower()), 0)
-                    pop_score = round(math.log10(1 + max(0, pop_votes)) * 10.0, 2)
+                    genius_pop_score = round(math.log10(1 + max(0, pop_votes)) * 10.0, 2)
+                    s_pop = spotify_map.get((art.lower(), song_title.lower()), 0)
+                    pop_score = max(genius_pop_score, round(float(s_pop) * 0.8, 2))
                     if is_anthem:
                         pop_score = max(pop_score, 45.0)
 
@@ -683,7 +698,9 @@ def build_catalog_index(
 
                     is_anthem = 1 if song_title.lower() in ICONIC_ANTHEMS.get(art.lower(), set()) else 0
                     pop_votes = pop_map.get((art.lower(), song_title.lower()), 0)
-                    pop_score = round(math.log10(1 + max(0, pop_votes)) * 10.0, 2)
+                    genius_pop_score = round(math.log10(1 + max(0, pop_votes)) * 10.0, 2)
+                    s_pop = spotify_map.get((art.lower(), song_title.lower()), 0)
+                    pop_score = max(genius_pop_score, round(float(s_pop) * 0.8, 2))
                     if is_anthem:
                         pop_score = max(pop_score, 45.0)
 

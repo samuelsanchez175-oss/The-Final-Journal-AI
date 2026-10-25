@@ -104,6 +104,7 @@ class TestTasteBlocksV4(unittest.TestCase):
                 bars_count=4,
                 taste_on=True,
                 taste_k=3,
+                use_cache=False,
             )
 
         self.assertTrue(res_on["ok"])
@@ -127,6 +128,7 @@ class TestTasteBlocksV4(unittest.TestCase):
                 voice="Gunna",
                 bars_count=4,
                 taste_on=False,
+                use_cache=False,
             )
 
         self.assertFalse(res_off["taste_on"])
