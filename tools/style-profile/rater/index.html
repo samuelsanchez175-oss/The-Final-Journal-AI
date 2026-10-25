@@ -20,9 +20,9 @@
     --star: #e4a04a;
     --internal: rgba(228, 160, 74, 0.28);
     --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
-    --lyric-size: 22px;
-    --dock-h: 104px;
-    --font: "Avenir Next", "Segoe UI", sans-serif;
+    --lyric-size: clamp(16px, 1.25vw + 11px, 22px);
+    --dock-h: 96px;
+    --font: "Avenir Next", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
     --serif: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
   }
   @media (prefers-color-scheme: light) {
@@ -86,9 +86,12 @@
   .top {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 14px 18px 8px;
-    padding-top: max(14px, env(safe-area-inset-top));
+    gap: 8px 12px;
+    padding: 12px 14px 8px;
+    padding-top: max(12px, env(safe-area-inset-top));
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 100%;
   }
   .brand {
     font-weight: 650;
@@ -97,12 +100,12 @@
     font-size: 12px;
   }
   .brand span { color: var(--accent); }
-  .grow { flex: 1; }
-  .progress-label { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
-  .timer { color: var(--faint); font-size: 12px; margin-left: 8px; }
+  .grow { flex: 1; min-width: 10px; }
+  .progress-label { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .timer { color: var(--faint); font-size: 12px; margin-left: 4px; white-space: nowrap; }
   .bar-track {
     height: 3px;
-    margin: 0 18px 8px;
+    margin: 0 14px 8px;
     background: var(--line);
     border-radius: 99px;
     overflow: hidden;
@@ -144,8 +147,11 @@
   .menu-pop button:hover { background: var(--line); }
   .stage {
     width: min(860px, 100%);
+    max-width: 100%;
     margin: 0 auto;
     padding: 12px 18px calc(var(--dock-h) + 28px + env(safe-area-inset-bottom));
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
   .drop {
     margin-top: 8vh;
@@ -176,38 +182,54 @@
     color: var(--muted);
     font-size: 13px;
     letter-spacing: 0.01em;
-    margin: 8px 0 18px;
+    margin: 6px 0 14px;
+    line-height: 1.45;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
   }
-  .card-tools { display: flex; gap: 8px; margin-bottom: 10px; }
+  .card-tools { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; max-width: 100%; }
   .chip {
     border: 1px solid var(--line);
     background: transparent;
     color: var(--muted);
     border-radius: 999px;
-    min-height: 36px;
-    padding: 0 12px;
-    font-size: 13px;
+    min-height: 34px;
+    padding: 0 10px;
+    font-size: 12px;
+    white-space: nowrap;
   }
   .chip.on { color: var(--ink); border-color: var(--accent); }
-  .bars { display: flex; flex-direction: column; gap: 14px; }
-  .bar-block { display: flex; flex-direction: column; gap: 6px; }
+  .bars { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 100%; }
+  .bar-block { display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: 100%; }
   .bar-row {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 4px;
+    gap: 6px;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
   }
   .bar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
-    padding: 8px 4px;
+    padding: 8px 6px;
     border-radius: 12px;
     background: transparent;
     border: 0;
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
     text-align: left;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    box-sizing: border-box;
   }
   .bar-row.up .bar {
     box-shadow: inset 4px 0 0 var(--up);
@@ -226,23 +248,32 @@
   }
   .vote-tag.up { color: var(--up); }
   .vote-tag.down { color: var(--down); }
-  .bar-actions { display: flex; flex-direction: column; align-items: center; }
+  .bar-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 2px;
+  }
   .rewrite-btn {
-    min-width: 48px;
-    min-height: 48px;
-    padding: 0 10px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0 8px;
     border-radius: 999px;
     border: 1px solid var(--line);
     background: transparent;
     color: var(--muted);
-    font-size: 12px;
+    font-size: 11px;
   }
   .rewrite-btn.on { color: var(--accent); border-color: var(--accent); }
   .saved-line {
     margin: 0 8px 4px 12px;
     font-family: var(--serif);
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
   }
   .saved-label {
     display: block;
@@ -253,10 +284,11 @@
     color: var(--accent);
     margin-bottom: 2px;
   }
-  .rewrite-edit { display: flex; flex-direction: column; gap: 8px; margin: 0 4px 6px; }
+  .rewrite-edit { display: flex; flex-direction: column; gap: 8px; margin: 0 4px 6px; width: 100%; max-width: 100%; box-sizing: border-box; }
   .rewrite-edit p { margin: 0; color: var(--muted); font-size: 13px; }
   .rewrite-edit textarea {
     width: 100%;
+    max-width: 100%;
     min-height: 72px;
     border-radius: 12px;
     border: 1px solid var(--line);
@@ -264,30 +296,41 @@
     color: var(--ink);
     padding: 10px 12px;
     font-family: var(--serif);
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.4;
     resize: vertical;
+    box-sizing: border-box;
   }
   .line-tally { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
-  .stats-wrap { overflow-x: auto; }
+  .stats-wrap { overflow-x: auto; width: 100%; max-width: 100%; }
   .lyric {
     font-family: var(--serif);
     font-size: var(--lyric-size);
-    line-height: 1.45;
-    white-space: nowrap;
-    overflow-x: auto;
+    line-height: 1.5;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: normal;
+    overflow-x: visible;
     padding-bottom: 2px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    display: block;
   }
-  .end-word { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-  .internal { background: var(--internal); border-radius: 3px; }
+  .end-word { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; display: inline; word-wrap: break-word; overflow-wrap: break-word; }
+  .internal { background: var(--internal); border-radius: 3px; display: inline; word-wrap: break-word; overflow-wrap: break-word; }
   .meta {
     display: flex;
     gap: 6px;
     align-items: center;
+    flex-wrap: wrap;
     color: var(--faint);
     font-size: 12px;
     font-variant-numeric: tabular-nums;
-    white-space: nowrap;
+    white-space: normal;
+    max-width: 100%;
   }
   .rhyme {
     border: 1px solid var(--line);
@@ -301,28 +344,35 @@
     letter-spacing: 0.04em;
   }
   .star {
-    min-width: 48px;
-    min-height: 48px;
+    min-width: 44px;
+    min-height: 44px;
     border-radius: 999px;
     border: 1px solid transparent;
     background: transparent;
     color: var(--faint);
-    font-size: 20px;
+    font-size: 19px;
   }
   .star.on { color: var(--star); }
   .drawer, .details {
-    margin-top: 16px;
+    margin-top: 14px;
     border-top: 1px solid var(--line);
-    padding-top: 12px;
+    padding-top: 10px;
     color: var(--muted);
-    font-size: 14px;
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
   }
-  .details .meaning { margin: 0 0 8px; }
-  .ex-song { color: var(--ink); margin: 12px 0 4px; font-size: 13px; }
-  .ex-bar { font-family: var(--serif); margin: 0 0 2px; }
+  .details .meaning { margin: 0 0 6px; line-height: 1.4; word-wrap: break-word; overflow-wrap: break-word; }
+  .ex-song { color: var(--ink); margin: 10px 0 4px; font-size: 13px; word-wrap: break-word; overflow-wrap: break-word; }
+  .ex-bar { font-family: var(--serif); margin: 0 0 2px; word-wrap: break-word; overflow-wrap: break-word; }
   .prior {
     margin-top: 14px;
     color: var(--faint);
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
     font-size: 13px;
   }
   .dock {
@@ -459,11 +509,68 @@
   }
   body.no-dock .foot { bottom: 10px; }
   body.no-dock .dock, body.no-dock .reasons { display: none; }
+  @media (max-width: 950px) {
+    .stage {
+      padding: 10px 14px calc(var(--dock-h) + 24px + env(safe-area-inset-bottom));
+    }
+    .top {
+      padding: 10px 14px 6px;
+    }
+    .star {
+      min-width: 38px;
+      min-height: 38px;
+      font-size: 18px;
+    }
+    .rewrite-btn {
+      min-width: 38px;
+      min-height: 38px;
+      padding: 0 8px;
+      font-size: 11px;
+    }
+    .reason {
+      min-height: 40px;
+      padding: 0 10px;
+      font-size: 12px;
+    }
+    .card-tools {
+      flex-wrap: wrap;
+    }
+  }
   @media (max-width: 700px) {
-    :root { --lyric-size: 18px; }
-    .lyric { white-space: normal; overflow-x: visible; }
+    :root {
+      --lyric-size: clamp(15px, 1.1vw + 12px, 18px);
+      --dock-h: 92px;
+    }
     .top .timer { display: none; }
     .hide-sm { display: none; }
+    .bar-row { gap: 4px; }
+    .score { gap: 6px; }
+    .score-num { font-size: 24px; min-width: 1.8ch; }
+  }
+  @media (max-width: 500px) {
+    :root {
+      --lyric-size: 15px;
+      --dock-h: 88px;
+    }
+    .top {
+      padding: 6px 10px 4px;
+      gap: 6px;
+    }
+    .brand { font-size: 11px; }
+    .progress-label { font-size: 12px; }
+    .score-end { display: none; }
+    .score input[type="range"] { min-width: 50px; }
+    .score-num { font-size: 20px; min-width: 1.6ch; }
+    .primary#rateSubmitBtn {
+      padding: 0 10px;
+      font-size: 12px;
+      min-height: 34px;
+    }
+    .dock button.icon-btn {
+      min-width: 32px;
+      min-height: 32px;
+      font-size: 14px;
+    }
   }
   @media (prefers-reduced-motion: reduce) {
     * { scroll-behavior: auto !important; transition: none !important; }
@@ -481,6 +588,7 @@
     <div class="menu" id="menu">
       <button class="icon-btn" id="menuBtn" type="button" aria-label="More">•••</button>
       <div class="menu-pop">
+        <button type="button" id="reloadV4Btn">⚡ Reload 20 Verses</button>
         <button type="button" id="addBtn">Add files</button>
         <button type="button" id="exportBtn">Copy ratings</button>
         <button type="button" id="importBtn">Import ratings</button>
@@ -493,10 +601,13 @@
   <main class="stage" id="stage"></main>
   <div class="dock" id="dock" hidden>
     <div class="score">
+      <button class="icon-btn" id="dockDownBtn" type="button" aria-label="Thumbs Down" style="color: var(--down); font-size: 16px; border-color: rgba(224,122,106,0.3); min-width: 36px; min-height: 36px;">👎</button>
       <span class="score-end">1</span>
       <input id="scoreSlider" type="range" min="1" max="10" step="1" value="5" aria-label="Score from 1 to 10">
       <span class="score-end">10</span>
       <span class="score-num" id="scoreNum">5</span>
+      <button class="icon-btn" id="dockUpBtn" type="button" aria-label="Thumbs Up" style="color: var(--up); font-size: 16px; border-color: rgba(143,191,120,0.3); min-width: 36px; min-height: 36px;">👍</button>
+      <button class="primary" id="rateSubmitBtn" type="button" style="min-height: 36px; padding: 0 14px; font-size: 13px; margin-left: 4px; white-space: nowrap;">Vote</button>
     </div>
   </div>
   <div class="reasons" id="reasons" hidden></div>
@@ -1457,19 +1568,7 @@
     stage.appendChild(drop);
     $("emptyAdd").addEventListener("click", function () { fileInput.click(); });
     $("emptyLoadV4").addEventListener("click", function () {
-      fetch("/rater/model_comparison.json")
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          var found = parseFile(data);
-          if (found && found.length) {
-            addCards(found);
-            render();
-          }
-        })
-        .catch(function (err) {
-          state.error = "Could not auto-fetch /rater/model_comparison.json (" + err.message + "). Please use 'Choose files'.";
-          render();
-        });
+      reloadV4(true);
     });
   }
 
@@ -1505,12 +1604,18 @@
     var detailBtn = el("button", { class: "chip" + (state.details ? " on" : ""), type: "button", text: "Details" });
     var realBtn = el("button", { class: "chip" + (state.exemplars ? " on" : ""), type: "button", text: "Real lyrics" });
     var noteBtn = el("button", { class: "chip", type: "button", text: "Note" });
+    var upBtn = el("button", { class: "chip", type: "button", style: "color: var(--up); font-weight: 600;", text: "👍 Keeper (8)" });
+    var downBtn = el("button", { class: "chip", type: "button", style: "color: var(--down); font-weight: 600;", text: "👎 Reject (4)" });
     detailBtn.addEventListener("click", function () { state.details = !state.details; persist(); render(); });
     realBtn.addEventListener("click", function () { state.exemplars = !state.exemplars; persist(); render(); });
     noteBtn.addEventListener("click", openNote);
+    upBtn.addEventListener("click", function () { commitScore(8); });
+    downBtn.addEventListener("click", function () { commitScore(4); });
     tools.appendChild(detailBtn);
     tools.appendChild(realBtn);
     tools.appendChild(noteBtn);
+    tools.appendChild(upBtn);
+    tools.appendChild(downBtn);
     stage.appendChild(tools);
     var tally = cardLineBits(rating);
     if (tally) stage.appendChild(el("div", { class: "line-tally", text: tally }));
@@ -1843,9 +1948,60 @@
   $("scoreSlider").addEventListener("change", function () {
     commitScore(Number($("scoreSlider").value));
   });
+  if ($("dockUpBtn")) {
+    $("dockUpBtn").addEventListener("click", function () {
+      commitScore(8);
+    });
+  }
+  if ($("dockDownBtn")) {
+    $("dockDownBtn").addEventListener("click", function () {
+      commitScore(4);
+    });
+  }
+  if ($("rateSubmitBtn")) {
+    $("rateSubmitBtn").addEventListener("click", function () {
+      commitScore(Number($("scoreSlider").value));
+    });
+  }
+  function reloadV4(alertUser) {
+    state.menu = false;
+    fetch("/rater/model_comparison.json")
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        var found = parseFile(data);
+        if (found && found.length) {
+          addCards(found);
+          state.cursor = 0;
+          state.error = "";
+          persist();
+          render();
+          if (alertUser) {
+            flashEl.hidden = false;
+            flashEl.textContent = "Loaded " + found.length + " verses";
+            window.clearTimeout(state.flashTimer);
+            state.flashTimer = window.setTimeout(function () {
+              flashEl.hidden = true;
+            }, 1200);
+          }
+        }
+      })
+      .catch(function (err) {
+        state.error = "Could not load verses: " + err.message;
+        render();
+      });
+  }
+
   $("themeBtn").addEventListener("click", toggleTheme);
   $("statsBtn").addEventListener("click", toggleStats);
   $("menuBtn").addEventListener("click", function () { state.menu = !state.menu; render(); });
+  if ($("reloadV4Btn")) {
+    $("reloadV4Btn").addEventListener("click", function () {
+      reloadV4(true);
+    });
+  }
   $("addBtn").addEventListener("click", function () { state.menu = false; fileInput.click(); });
   $("exportBtn").addEventListener("click", function () { state.menu = false; exportRatings(); });
   $("importBtn").addEventListener("click", function () { state.menu = false; importInput.click(); });
@@ -1877,16 +2033,7 @@
   window.setInterval(renderProgress, 1000);
   loadStore();
   if (location.protocol.startsWith("http") && (!state.cards || state.cards.length === 0)) {
-    fetch("/rater/model_comparison.json")
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        var found = parseFile(data);
-        if (found && found.length) {
-          addCards(found);
-          render();
-        }
-      })
-      .catch(function () {});
+    reloadV4(false);
   }
   render();
 })();
