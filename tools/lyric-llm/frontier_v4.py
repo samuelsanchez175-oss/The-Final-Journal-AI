@@ -55,11 +55,20 @@ try:
 except Exception:
     score_verse = None
 
-OMNIROUTE_URL = os.environ.get("OMNIROUTE_BASE_URL", "http://127.0.0.1:20128/v1/chat/completions")
-OMNIROUTE_KEY = os.environ.get("OMNIROUTE_API_KEY", "sk-c27997f110d15f31-e0f196-a8b70f1e")
+from llm_client import chat
 
-DRAFT_MODELS = ["gh/gpt-4o-mini", "auto/fast", "auto/best-fast"]
-POLISH_MODELS = ["gh/gpt-4o", "auto/claude-opus", "auto/pro-coding", "auto/best-coding", "gh/gpt-4o-mini"]
+DRAFT_MODELS = [
+    os.environ.get("V4_DRAFT_MODEL", "claude-sonnet-5-5"),
+    "claude-3-5-sonnet-20241022",
+    "gpt-4o-mini",
+    "gpt-4o",
+]
+POLISH_MODELS = [
+    os.environ.get("V4_POLISH_MODEL", "claude-opus-4-7"),
+    "claude-3-5-sonnet-20241022",
+    "gpt-4o",
+    "gpt-4o-mini",
+]
 
 
 def _call_model(
@@ -70,7 +79,7 @@ def _call_model(
     max_tokens: int = 800,
     call_fn: Optional[Callable[[str, str], str]] = None,
 ) -> tuple[str, str]:
-    """Helper to dispatch prompt through call_fn or OmniRoute candidate models."""
+    """Helper to dispatch prompt through call_fn or direct SDK candidate models."""
     if call_fn is not None:
         try:
             return call_fn(system_prompt, user_prompt), "custom_call_fn"
@@ -79,30 +88,16 @@ def _call_model(
             return "", "error"
 
     for model_name in candidate_models:
-        payload = {
-            "model": model_name,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
-            "temperature": temperature,
-            "max_tokens": max_tokens,
-        }
-        req = urllib.request.Request(
-            OMNIROUTE_URL,
-            data=json.dumps(payload).encode("utf-8"),
-            headers={
-                "Authorization": f"Bearer {OMNIROUTE_KEY}",
-                "Content-Type": "application/json",
-            },
-        )
         try:
-            with urllib.request.urlopen(req, timeout=25) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                msg = data.get("choices", [{}])[0].get("message", {})
-                content = (msg.get("content") or msg.get("reasoning_content") or "").strip()
-                if content:
-                    return content, model_name
+            content = chat(
+                model=model_name,
+                system=system_prompt,
+                user=user_prompt,
+                temperature=temperature,
+                max_tokens=max_tokens,
+            )
+            if content and content.strip():
+                return content.strip(), model_name
         except Exception as exc:
             continue
     return "", "fallback"

@@ -201,9 +201,9 @@ def transcribe_audio(
     if not p.is_file():
         raise FileNotFoundError(f"Seed audio file not found: {p}")
 
-    api_key = api_key or os.environ.get("OPENAI_API_KEY") or os.environ.get("OMNIROUTE_API_KEY")
+    api_key = api_key or os.environ.get("OPENAI_API_KEY")
     if not api_key:
-        raise ValueError("OPENAI_API_KEY or OMNIROUTE_API_KEY required for Whisper audio transcription.")
+        raise ValueError("OPENAI_API_KEY required for Whisper audio transcription.")
 
     api_base = (api_base or os.environ.get("OPENAI_API_BASE") or "https://api.openai.com/v1").rstrip("/")
     url = f"{api_base}/audio/transcriptions"

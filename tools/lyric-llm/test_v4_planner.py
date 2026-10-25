@@ -79,7 +79,7 @@ class TestV4Planner(unittest.TestCase):
 
     def test_plan_v4_fallback_on_error(self):
         def broken_call(sys_prompt, user_prompt):
-            raise RuntimeError("OmniRoute 503 Service Unavailable")
+            raise RuntimeError("LLM Dispatch 503 Service Unavailable")
 
         plan = planner.plan_v4(
             voice="Gunna",

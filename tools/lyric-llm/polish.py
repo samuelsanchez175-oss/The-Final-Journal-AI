@@ -37,8 +37,7 @@ try:
 except Exception:
     build_taste_prompt_blocks = None
 
-OMNIROUTE_URL = os.environ.get("OMNIROUTE_BASE_URL", "http://127.0.0.1:20128/v1/chat/completions")
-OMNIROUTE_KEY = os.environ.get("OMNIROUTE_API_KEY", "sk-c27997f110d15f31-e0f196-a8b70f1e")
+from llm_client import chat
 
 # Curated Motif Definitions for ADHD Associative Leaps & Multi-Bag Personas
 MOTIF_DEFINITIONS = {
@@ -511,33 +510,24 @@ def rewrite_off_grid_bar(
         except Exception as exc:
             print(f"[rewrite_off_grid_bar] call_fn error: {exc}", file=sys.stderr)
     else:
-        CANDIDATE_MODELS = ["gh/gpt-4o-mini", "auto/fast", "auto/best-fast"]
+        CANDIDATE_MODELS = [
+            os.environ.get("V4_REWRITE_MODEL", "claude-sonnet-5-5"),
+            "claude-3-5-sonnet-20241022",
+            "gpt-4o-mini",
+            "gpt-4o",
+        ]
         for model_name in CANDIDATE_MODELS:
-            payload = {
-                "model": model_name,
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],
-                "temperature": 0.65,
-                "max_tokens": 120,
-            }
-            req = urllib.request.Request(
-                OMNIROUTE_URL,
-                data=json.dumps(payload).encode("utf-8"),
-                headers={
-                    "Authorization": f"Bearer {OMNIROUTE_KEY}",
-                    "Content-Type": "application/json",
-                },
-            )
             try:
-                with urllib.request.urlopen(req, timeout=15) as resp:
-                    data = json.loads(resp.read().decode("utf-8"))
-                    msg = data.get("choices", [{}])[0].get("message", {})
-                    content = (msg.get("content") or msg.get("reasoning_content") or "").strip()
-                    if content:
-                        candidate_text = content
-                        break
+                content = chat(
+                    model=model_name,
+                    system=system_prompt,
+                    user=user_prompt,
+                    temperature=0.65,
+                    max_tokens=120,
+                )
+                if content and content.strip():
+                    candidate_text = content.strip()
+                    break
             except Exception as exc:
                 continue
 
@@ -1283,52 +1273,42 @@ def generate_frontier_bars_v2(
 
     user_content = "\n\n".join(user_instructions)
 
-    CANDIDATE_MODELS = ["gh/gpt-4o-mini", "auto/fast", "auto/best-fast"]
+    CANDIDATE_MODELS = [
+        os.environ.get("V4_POLISH_MODEL", "claude-opus-4-7"),
+        "claude-3-5-sonnet-20241022",
+        "gpt-4o",
+        "gpt-4o-mini",
+    ]
     raw_lines = []
     provider = "frontier_ghostwriter_v3"
     import re
 
     for model_name in CANDIDATE_MODELS:
-        payload = {
-            "model": model_name,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_content},
-            ],
-            "temperature": 0.72,
-            "max_tokens": 1200,
-        }
-
-        req = urllib.request.Request(
-            OMNIROUTE_URL,
-            data=json.dumps(payload).encode("utf-8"),
-            headers={
-                "Authorization": f"Bearer {OMNIROUTE_KEY}",
-                "Content-Type": "application/json",
-            },
-        )
-
         try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                msg = data.get("choices", [{}])[0].get("message", {})
-                content = (msg.get("content") or "").strip()
-                if not content and (msg.get("reasoning_content") or msg.get("reasoning")):
-                    content = (msg.get("reasoning_content") or msg.get("reasoning") or "").strip()
-                if content.startswith("```"):
-                    content_lines = content.splitlines()
-                    content = "\n".join([l for l in content_lines if not l.startswith("```")])
-                lines = [l.strip() for l in content.splitlines() if l.strip()]
-                parsed = []
-                for l in lines:
-                    l_clean = re.sub(r"^(?:Bar\s*\d+[\s:.-]*|\d+[\s:.-]+)", "", l, flags=re.IGNORECASE).strip().strip("\"'")
-                    if l_clean.startswith("[") and l_clean.endswith("]"):
-                        continue
-                    if l_clean.lower().startswith("couplet"):
-                        continue
-                    l_clean = re.sub(r"\s*\(\d+\)\s*$", "", l_clean).strip()
-                    if l_clean:
-                        parsed.append(l_clean)
+            content = chat(
+                model=model_name,
+                system=system_prompt,
+                user=user_content,
+                max_tokens=1200,
+                temperature=0.72,
+            )
+            if not content or not content.strip():
+                continue
+            content = content.strip()
+            if content.startswith("```"):
+                content_lines = content.splitlines()
+                content = "\n".join([l for l in content_lines if not l.startswith("```")])
+            lines = [l.strip() for l in content.splitlines() if l.strip()]
+            parsed = []
+            for l in lines:
+                l_clean = re.sub(r"^(?:Bar\s*\d+[\s:.-]*|\d+[\s:.-]+)", "", l, flags=re.IGNORECASE).strip().strip("\"'")
+                if l_clean.startswith("[") and l_clean.endswith("]"):
+                    continue
+                if l_clean.lower().startswith("couplet"):
+                    continue
+                l_clean = re.sub(r"\s*\(\d+\)\s*$", "", l_clean).strip()
+                if l_clean:
+                    parsed.append(l_clean)
 
                 if len(parsed) < bars_count:
                     expanded = []

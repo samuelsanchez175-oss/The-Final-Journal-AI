@@ -20,16 +20,15 @@ import urllib.request
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional
 
+from llm_client import chat
+
 HERE = Path(__file__).resolve().parent
-OMNIROUTE_URL = os.environ.get("OMNIROUTE_BASE_URL", "http://127.0.0.1:20128/v1/chat/completions")
-OMNIROUTE_KEY = os.environ.get("OMNIROUTE_API_KEY", "sk-c27997f110d15f31-e0f196-a8b70f1e")
 
 REASONING_MODELS = [
-    "auto/claude-opus",
-    "auto/best-reasoning",
-    "auto/pro-reasoning",
-    "gh/gpt-4o",
-    "auto/fast",
+    os.environ.get("V4_PLAN_MODEL", "claude-opus-4-7"),
+    "claude-3-5-sonnet-20241022",
+    "gpt-4o",
+    "gpt-4o-mini",
 ]
 
 # Motif keys supported across ADHD progression
@@ -199,32 +198,18 @@ def plan_v4(
             print(f"[plan_v4] call_fn error: {exc}", file=sys.stderr)
     else:
         for model_name in REASONING_MODELS:
-            payload = {
-                "model": model_name,
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],
-                "temperature": 0.5,
-                "max_tokens": 600,
-            }
-            req = urllib.request.Request(
-                OMNIROUTE_URL,
-                data=json.dumps(payload).encode("utf-8"),
-                headers={
-                    "Authorization": f"Bearer {OMNIROUTE_KEY}",
-                    "Content-Type": "application/json",
-                },
-            )
             try:
-                with urllib.request.urlopen(req, timeout=20) as resp:
-                    data = json.loads(resp.read().decode("utf-8"))
-                    msg = data.get("choices", [{}])[0].get("message", {})
-                    content = (msg.get("content") or msg.get("reasoning_content") or "").strip()
-                    if content:
-                        response_text = content
-                        used_model = model_name
-                        break
+                content = chat(
+                    model=model_name,
+                    system=system_prompt,
+                    user=user_prompt,
+                    max_tokens=600,
+                    temperature=0.5,
+                )
+                if content and content.strip():
+                    response_text = content.strip()
+                    used_model = model_name
+                    break
             except Exception as exc:
                 continue
 
