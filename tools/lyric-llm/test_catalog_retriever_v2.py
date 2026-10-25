@@ -44,9 +44,15 @@ class TestCatalogRetrieverV2(unittest.TestCase):
         cls.cmu = load_cmudict(cmu_path)
 
     def setUp(self):
+        self._orig_seed = os.environ.get("V4_SEED")
+        os.environ["V4_SEED"] = "42"
         clear_end_word_history(TEST_HISTORY_PATH)
 
     def tearDown(self):
+        if self._orig_seed is None:
+            os.environ.pop("V4_SEED", None)
+        else:
+            os.environ["V4_SEED"] = self._orig_seed
         clear_end_word_history(TEST_HISTORY_PATH)
 
     def test_vowel_normalization(self):
