@@ -3,6 +3,8 @@
 
   python3 base_train/build_dataset.py --mode 50k_sample --out out/train_50k.jsonl
   python3 base_train/build_dataset.py --mode full       --out out/train_full.jsonl
+  python3 base_train/build_dataset.py --mode 50k_sample --fim 0.2 --out out/train_50k_fim.jsonl
+  python3 base_train/build_dataset.py --mode full       --fim 0.2 --out out/train_full_fim.jsonl
 
 The train file is the 95% song split. Sibling files are val_<stem>.jsonl (3%)
 and test_<stem>.jsonl (2%). A song is one artist + title. The catalog song_id
@@ -15,8 +17,9 @@ inside a voice. The split seed stays 7, matching lyriclib.split_song_ids.
 The live catalog has no is_junk column. Junk bars are dropped with
 lyriclib.is_junk_line. A table that does have is_junk drops is_junk=1 too.
 
---variant or --fim hands the run to voice_dataset.py. Plain D1 commands
-do not use those flags.
+--fim 0.2 reshapes that share of bars that have a following line. The same
+bar stays fill-in-the-middle in the 50k file and the full file. --variant
+hands the run to voice_dataset.py. Plain D1 commands pass neither flag.
 """
 
 from __future__ import annotations
@@ -48,6 +51,7 @@ SYSTEM_PROMPT = (
     "Write bars like <voice>. Keep the artist's slang, syllable count, "
     "and rhyme pattern. Preserve the end word if given."
 )
+FIM_SYSTEM = "Write the missing bar. Context above and below is from the same song."
 
 # chronological_arc is the only section-like column. The chat template
 # asks for a section name such as "verse", not the arc label.
@@ -100,8 +104,12 @@ def load_rows(db_path: Path) -> list[dict]:
             junk_sql = "COALESCE(is_junk, 0) AS is_junk"
         else:
             junk_sql = "0 AS is_junk"
+        if "song_id" in cols:
+            song_sql = "song_id"
+        else:
+            song_sql = "''"
         sql = f"""
-            SELECT id, artist, song, text, end_word, syllables,
+            SELECT id, artist, song, {song_sql} AS song_id, text, end_word, syllables,
                    popularity_score, is_generic, line_seq, total_lines,
                    chronological_arc, topic, is_iconic_anthem, {junk_sql}
             FROM catalog_bars
@@ -122,6 +130,7 @@ def load_rows(db_path: Path) -> list[dict]:
                     "artist": artist,
                     "song": song,
                     "song_key": key,
+                    "song_id": raw["song_id"] or "",
                     "text": raw["text"] or "",
                     "end_word": raw["end_word"] or "",
                     "syllables": int(raw["syllables"] or 0),
@@ -180,7 +189,14 @@ def build_examples(rows: list[dict]) -> tuple[list[dict], Counter]:
                 drops["dropped_junk_line"] += 1
                 continue
             text = one_line(row["text"])
-            prev_text = one_line(group[index - 1]["text"])
+            prev = group[index - 1]
+            prev_text = one_line(prev["text"])
+            next_text = ""
+            next_song_id = ""
+            if index + 1 < width:
+                nxt = group[index + 1]
+                next_text = one_line(nxt["text"])
+                next_song_id = nxt.get("song_id") or ""
             if not text or not prev_text:
                 drops["dropped_blank"] += 1
                 continue
@@ -194,8 +210,12 @@ def build_examples(rows: list[dict]) -> tuple[list[dict], Counter]:
                     "artist": row["artist"],
                     "song": row["song"],
                     "song_key": key,
+                    "song_id": row.get("song_id") or "",
                     "text": text,
                     "prev_text": prev_text,
+                    "prev_song_id": prev.get("song_id") or "",
+                    "next_text": next_text,
+                    "next_song_id": next_song_id,
                     "end_word": row["end_word"],
                     "syllables": row["syllables"],
                     "line_seq": row["line_seq"],
@@ -308,11 +328,43 @@ def user_content(ex: dict) -> str:
     )
 
 
+def fim_user_content(ex: dict) -> str:
+    return (
+        f"<voice: {ex['artist']}>\n"
+        f"ABOVE: {ex['prev_text']}\n"
+        f"BELOW: {ex['next_text']}\n"
+        f"END_WORD: {ex['end_word']}\n"
+        f"SYLLABLES: {ex['syllables']}"
+    )
+
+
+def fim_unit(seed: str, ex: dict) -> float:
+    """Stable 0..1 draw. The same bar gets the same draw in every file."""
+    digest = hashlib.blake2s(
+        f"{seed}|fim|{ex['song_key']}|{ex['line_seq']}|{ex['id']}".encode("utf-8")
+    ).digest()
+    return int.from_bytes(digest[:8], "big") / float(2**64)
+
+
+def apply_fim(examples: list[dict], rate: float, seed: str) -> None:
+    """Mark bars that have a following line when their draw falls under rate."""
+    if rate < 0 or rate > 1:
+        raise ValueError(f"fim rate must be from 0 to 1, got {rate}")
+    for ex in examples:
+        ex["fim"] = bool(ex.get("next_text")) and rate > 0 and fim_unit(seed, ex) < rate
+
+
 def render(ex: dict) -> str:
+    if ex.get("fim"):
+        system = FIM_SYSTEM
+        user = fim_user_content(ex)
+    else:
+        system = SYSTEM_PROMPT
+        user = user_content(ex)
     record = {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_content(ex)},
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
             {"role": "assistant", "content": ex["text"]},
         ]
     }
@@ -336,12 +388,17 @@ def song_keys_of(examples: list[dict]) -> set[str]:
     return {ex["song_key"] for ex in examples}
 
 
+def fim_count(examples: list[dict]) -> int:
+    return sum(1 for ex in examples if ex.get("fim"))
+
+
 def build_dataset(
     mode: str,
     out_path: Path,
     db_path: Path = DEFAULT_DB,
     sample_target: int = SAMPLE_TARGET,
     split_seed: int = SPLIT_SEED,
+    fim_rate: float = 0.0,
 ) -> dict:
     if mode not in ("50k_sample", "full"):
         raise ValueError(f"unknown mode: {mode}")
@@ -361,6 +418,10 @@ def build_dataset(
     else:
         train_rows = splits["train"]
 
+    apply_fim(train_rows, fim_rate, seed)
+    apply_fim(splits["valid"], fim_rate, seed)
+    apply_fim(splits["test"], fim_rate, seed)
+
     train_bytes = write_jsonl(out_path, train_rows)
     val_bytes = write_jsonl(val_path, splits["valid"])
     test_bytes = write_jsonl(test_path, splits["test"])
@@ -370,6 +431,12 @@ def build_dataset(
         "sample_seed": seed,
         "split_seed": split_seed,
         "sample_target": sample_target if mode == "50k_sample" else None,
+        "fim_rate": fim_rate,
+        "fim_counts": {
+            "train": fim_count(train_rows),
+            "val": fim_count(splits["valid"]),
+            "test": fim_count(splits["test"]),
+        },
         "targets": targets,
         "paths": {"train": out_path, "val": val_path, "test": test_path},
         "bytes": {"train": train_bytes, "val": val_bytes, "test": test_bytes},
@@ -412,6 +479,12 @@ def format_report(result: dict) -> str:
         f"sample_seed: {result['sample_seed']}",
         f"split_seed: {result['split_seed']}",
         f"sample_target: {result['sample_target']}",
+        f"fim_rate: {result.get('fim_rate', 0)}",
+        (
+            f"fim_train: {result.get('fim_counts', {}).get('train', 0)} "
+            f"fim_val: {result.get('fim_counts', {}).get('val', 0)} "
+            f"fim_test: {result.get('fim_counts', {}).get('test', 0)}"
+        ),
     ]
     for split_name in ("train", "val", "test"):
         path = result["paths"][split_name]
@@ -439,9 +512,23 @@ def format_report(result: dict) -> str:
         if ex["artist"] in shown:
             continue
         shown.add(ex["artist"])
+        user = fim_user_content(ex) if ex.get("fim") else user_content(ex)
         lines.append(f"  VOICE {ex['artist']}")
-        lines.append("  USER " + user_content(ex).replace("\n", " | "))
+        lines.append("  USER " + user.replace("\n", " | "))
         lines.append("  ASSISTANT " + ex["text"])
+    spots = [ex for ex in result["train_examples"] if ex.get("fim")][:3]
+    if spots:
+        lines.append("fim_spots:")
+        for ex in spots:
+            lines.append(
+                f"  song_key={ex['song_key']} song_id={ex.get('song_id') or '(blank)'} "
+                f"prev_song_id={ex.get('prev_song_id') or '(blank)'} "
+                f"next_song_id={ex.get('next_song_id') or '(blank)'}"
+            )
+            lines.append(f"  artist={ex['artist']} song={ex['song']}")
+            lines.append(f"  ABOVE {ex['prev_text']}")
+            lines.append(f"  BELOW {ex['next_text']}")
+            lines.append(f"  ASSISTANT {ex['text']}")
     return "\n".join(lines) + "\n"
 
 
@@ -484,7 +571,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--variant", default="")
     parser.add_argument("--seed", type=int, default=None)
     args = parser.parse_args(argv)
-    if args.variant or args.fim:
+    if args.variant:
         try:
             return _run_voice_cli(args)
         except (FileNotFoundError, ValueError) as exc:
@@ -494,7 +581,7 @@ def main(argv: list[str] | None = None) -> int:
         os.environ["SAMPLE_SEED"] = str(args.seed)
     db = args.db or args.catalog or str(DEFAULT_DB)
     try:
-        result = build_dataset(args.mode, Path(args.out), Path(db))
+        result = build_dataset(args.mode, Path(args.out), Path(db), fim_rate=args.fim)
     except (FileNotFoundError, ValueError) as exc:
         print(str(exc), file=sys.stderr)
         return 2

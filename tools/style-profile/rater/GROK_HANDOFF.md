@@ -483,3 +483,60 @@ Full assistants:
 4. Which remote base should the D1 pull request use?
 
 **Next:** D2 waits for Samuel's ok.
+
+### GROK#1
+
+### HANDOFF ENTRY: Phase D2 fill-in-the-middle (2026-10-26 13:31 EDT)
+
+**Status:** D2 is on branch `grok/base-llm-dataset-size`, parent `9616ec83`. Samuel said "complete D1 then continue to D2". D1 stays at that commit. The pull request is still not opened. D3 has not started. No OpenAI call was made.
+
+**D1 left as built.** Samuel's continue left these in place:
+- Section stays `intro` or `verse`. A blank topic stays `unknown`.
+- The 50k file still draws 50,000 bars from 1,160 songs.
+- Val and test stay beside the train file. This phase did not write `out/val.jsonl` or `out/test.jsonl`.
+
+**Code:**
+- `tools/lyric-llm/base_train/build_dataset.py`
+- `tools/lyric-llm/base_train/test_dataset.py`
+- `--fim` without `--variant` stays on this builder. `--variant` still calls `voice_dataset.py` when that file is present. That file is not in this commit.
+- A bar is fill-in-the-middle when it has a following line and `blake2s(SAMPLE_SEED|fim|song_key|line_seq|id)` falls under the rate. The same bar gets the same decision in the 50k file and the full file. The last bar of a song stays in the D1 prefix shape.
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode 50k_sample --fim 0.2 --out out/train_50k_fim.jsonl`
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode full --fim 0.2 --out out/train_full_fim.jsonl`
+- The D1 files were not overwritten. `out/train_50k.jsonl` is still 21,616,103 bytes. `out/train_full.jsonl` is still 71,984,164 bytes. `out/val_50k.jsonl` and `out/val_full.jsonl` are still 2,262,005 bytes. `out/test_50k.jsonl` and `out/test_full.jsonl` are still 1,460,273 bytes.
+
+**FIM counts.** Counted by scanning the written files for the fill-in-the-middle system line.
+
+| File | Lines | FIM examples | Rate | Bytes |
+| --- | ---: | ---: | ---: | ---: |
+| `out/train_50k_fim.jsonl` | 50000 | 9844 | 0.196880 | 21139984 |
+| `out/train_full_fim.jsonl` | 167014 | 32942 | 0.197241 | 70374277 |
+| `out/val_50k_fim.jsonl` and `out/val_full_fim.jsonl` | 5231 | 1043 | 0.199388 | 2211740, byte-identical |
+| `out/test_50k_fim.jsonl` and `out/test_full_fim.jsonl` | 3388 | 702 | 0.207202 | 1426492, byte-identical |
+
+Every line of `train_50k_fim.jsonl` is in `train_full_fim.jsonl`. The full file has 167,014 lines and 167,014 unique lines. `out/` is gitignored. The JSONL is not in the commit.
+
+**Spot check** against `catalog_index.sqlite`. ABOVE, the assistant bar, and BELOW are the previous, current, and next rows of that artist and title, ordered by `line_seq` then `id`.
+
+50k file:
+- Drake, Rich Flex, line_seq 21 / 22 / 23. Catalog `song_id` `1919515b5e55b6142aba169d89ce3a8f26029985` on all three, and that is the song key. ABOVE: All my exes ain't nothin', them hoes busted. Assistant: If my opps ain't rappin', they ass duckin'. BELOW: You ain't ready to pull the trigger, don't clutch it.
+- Gunna, fukumean, line_seq 25 / 26 / 27. Catalog `song_id` is blank on all three. The title is the same. Song key `a8bbf65ce1589a926a5f2b6fe981b7d3cc27187b`. ABOVE: And I ain't smokin' no sherm. Assistant: I'm in this bitch with P Liity. BELOW: QP, QP-ski.
+- Lil Baby, Drip Too Hard, line_seq 29 / 30 / 31. Catalog `song_id` `e310eeff393bde8ce394cdf2833f32ff100d6e7c` on all three. ABOVE: Drip too hard (Too hard), charge it to the card. Assistant: Designer to the ground, I can barely spell the names. BELOW: Drip too hard, caution on the floor.
+
+Full file:
+- Drake, Truffle Butter, line_seq 1 / 2 / 3. Catalog `song_id` `0001e99eefd9b020e57239223ab162d23ceed15f` on all three. ABOVE: You know, yeah. Assistant: Uh, thinkin' out loud. BELOW: I must have a quarter million on me right now.
+- Gunna, YK Where It’s Goin, line_seq 4 / 5 / 6. Catalog `song_id` `0147056350ed018f99b59c9ffc33c3894f5bf981` on all three. ABOVE: Girl, I know it ain't nothin' to floor it. Assistant: Damn it, her panties done fell on the floor. BELOW: I done turned this lil' bitch to a whore.
+- Lil Baby, Please, line_seq 4 / 5 / 6. Catalog `song_id` `00584f37a83bbeb798735fd0590e37f42328fcb4` on all three. ABOVE: I can't fuck with all of y'all, I'm tightenin' up my game. Assistant: I'm too far for me to complain. BELOW: No one came as hard as I done came, fasho.
+
+A spread of 24 other FIM lines, 13 from the 50k file and 11 from the full file, also matched a neighbor triple. Zero misses. Three of those 24 had a blank catalog `song_id` on the triple.
+
+**Tests:** from `tools/lyric-llm`, `python3 -m unittest base_train.test_dataset base_train.voice_test_one_hot` — 21 tests, OK. That is 10 dataset tests, the D1 seven plus three FIM tests, and 11 voice tests. The dataset tests build a tiny sqlite. The builder source has no OpenAI client and no API key.
+
+**PR:** Not opened, and the branch was not pushed. D1 question 4 is still open. A pull request into `origin/main` would publish the 81 local commits that are not on `origin/main`.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. D3 names `out/val.jsonl`. D2 wrote `out/val_full_fim.jsonl`, byte-identical to `out/val_50k_fim.jsonl`. Which file should the fine-tune upload?
+2. Which remote base should the D1 and D2 pull requests use?
+
+**Next:** D3 waits for Samuel's ok.

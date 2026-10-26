@@ -146,6 +146,12 @@ def _catalog_of_songs() -> list[dict]:
     return rows
 
 
+def _song_name(text: str, song: str) -> str:
+    if "|bar-" in text:
+        return text.split("|", 1)[0]
+    return song
+
+
 def _read_lines(path: Path) -> list[str]:
     text = path.read_text(encoding="utf-8")
     if not text:
@@ -177,12 +183,13 @@ class DatasetTests(unittest.TestCase):
             os.environ["SAMPLE_SEED"] = self._prior_seed
         self._tmpdir.cleanup()
 
-    def _build(self, mode: str, name: str, sample_target: int = 30) -> dict:
+    def _build(self, mode: str, name: str, sample_target: int = 30, fim_rate: float = 0.0) -> dict:
         return build_dataset.build_dataset(
             mode,
             self.root / name,
             self.db,
             sample_target=sample_target,
+            fim_rate=fim_rate,
         )
 
     def test_split_songs_do_not_cross(self) -> None:
@@ -366,6 +373,88 @@ class DatasetTests(unittest.TestCase):
         self.assertIn("mode: full", completed.stdout)
         self.assertNotIn("sk-", completed.stdout)
         self.assertNotIn("sk-", completed.stderr)
+
+    def test_fim_keeps_above_and_below_on_the_same_song(self) -> None:
+        result = self._build("full", "train_fim.jsonl", fim_rate=1.0)
+        rows = result["train_examples"] + result["val_examples"] + result["test_examples"]
+        fim_rows = [ex for ex in rows if ex["fim"]]
+        plain_rows = [ex for ex in rows if not ex["fim"]]
+        self.assertTrue(fim_rows)
+        self.assertTrue(any("|bar-3" in ex["text"] for ex in plain_rows))
+        for ex in plain_rows:
+            self.assertFalse(ex.get("next_text"))
+        for ex in fim_rows:
+            self.assertEqual(_song_name(ex["prev_text"], ex["song"]), ex["song"])
+            self.assertEqual(_song_name(ex["next_text"], ex["song"]), ex["song"])
+            self.assertEqual(_song_name(ex["text"], ex["song"]), ex["song"])
+            record = json.loads(build_dataset.render(ex))
+            messages = record["messages"]
+            self.assertEqual(messages[0]["content"], build_dataset.FIM_SYSTEM)
+            user = messages[1]["content"]
+            self.assertEqual(
+                user,
+                f"<voice: {ex['artist']}>\n"
+                f"ABOVE: {ex['prev_text']}\n"
+                f"BELOW: {ex['next_text']}\n"
+                f"END_WORD: {ex['end_word']}\n"
+                f"SYLLABLES: {ex['syllables']}",
+            )
+            self.assertNotIn("<section:", user)
+            self.assertEqual(messages[2]["content"], ex["text"])
+
+    def test_fim_sample_is_a_subset_and_the_rate_is_near_20(self) -> None:
+        full = self._build("full", "train_full_fim.jsonl", fim_rate=0.2)
+        sample = self._build("50k_sample", "train_50k_fim.jsonl", sample_target=30, fim_rate=0.2)
+        full_lines = _read_lines(full["paths"]["train"])
+        sample_lines = _read_lines(sample["paths"]["train"])
+        full_counts = Counter(full_lines)
+        for line, count in Counter(sample_lines).items():
+            self.assertLessEqual(count, full_counts[line])
+        again = self._build("50k_sample", "train_50k_fim_again.jsonl", sample_target=30, fim_rate=0.2)
+        self.assertEqual(sample_lines, _read_lines(again["paths"]["train"]))
+        train_n = full["counts"]["train"]
+        fim_n = full["fim_counts"]["train"]
+        self.assertGreater(fim_n, 0)
+        self.assertLess(fim_n, train_n)
+        self.assertAlmostEqual(fim_n / train_n, 0.2, delta=0.12)
+        zero = self._build("full", "train_nofim.jsonl", fim_rate=0.0)
+        self.assertEqual(zero["fim_counts"]["train"], 0)
+
+    def test_cli_fim_stays_on_the_base_builder(self) -> None:
+        out = self.root / "train_cli_fim.jsonl"
+        env = os.environ.copy()
+        env["SAMPLE_SEED"] = "11"
+        completed = subprocess.run(
+            [
+                sys.executable,
+                str(HERE / "build_dataset.py"),
+                "--mode",
+                "full",
+                "--fim",
+                "0.2",
+                "--out",
+                str(out),
+                "--db",
+                str(self.db),
+            ],
+            check=False,
+            capture_output=True,
+            text=True,
+            env=env,
+        )
+        self.assertEqual(completed.returncode, 0, completed.stderr)
+        self.assertIn("mode: full", completed.stdout)
+        self.assertIn("fim_train:", completed.stdout)
+        self.assertNotIn("variant=", completed.stdout)
+        fim_lines = [
+            line
+            for line in _read_lines(out)
+            if build_dataset.FIM_SYSTEM in line
+        ]
+        self.assertTrue(fim_lines)
+        record = json.loads(fim_lines[0])
+        self.assertIn("\nABOVE: ", record["messages"][1]["content"])
+        self.assertIn("\nBELOW: ", record["messages"][1]["content"])
 
     def _eligible(self, rows: list[dict]) -> list[dict]:
         examples, _drops = build_dataset.build_examples(rows)
