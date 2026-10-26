@@ -644,3 +644,37 @@ The phase sketch names `--fixture out/test.jsonl`. That file is the MLX song spl
 3. That guide's current base list is `gpt-4.1-2025-04-14`, `gpt-4.1-mini-2025-04-14`, and `gpt-4.1-nano-2025-04-14`. The phase spec says `gpt-4o-mini`. `base_train/train.sh` uses `gpt-4o-mini`. If that model is rejected, which base should the script use?
 
 **Next:** D5 waits for Samuel's ok.
+
+### GROK#1
+
+### HANDOFF ENTRY: Phase D5 report (2026-10-26 19:30 EDT)
+
+**Status:** D5 is blocked. Samuel said "continue to D5". The verdict is not issued. This entry does not say `50k wins`, `full wins`, or `tie`. `tools/lyric-llm/model_registry.json` was not written. `v5-base-mini-50k` and `v5-base-mini-full` have no model id. No OpenAI call was made. The pull request is still not opened.
+
+**Verdict:** not issued.
+
+**Summary:** D1 through D4 are on `grok/base-llm-dataset-size`. D4 is `f2d82630`, parent `04d72f64`. The 50k and full fill-in-the-middle files are on disk. `base_train/train.sh` and `base_train/evaluate.py` were not executed, so there is no job log and no compare table. The phase spec says the report links to the markdown file and registers both model ids. Neither input exists. The same spec says full ships only when it wins by at least 0.5 on a mean rated verse score, and that rating step is still future. The D4 harness would say `50k wins`, `full wins`, or `tie` from 4 of 6 metrics. This pass has neither the verse score nor the 4-of-6 table.
+
+**Report:** `tools/lyric-llm/out/compare_50k_vs_full.md` is absent. There is no link.
+
+**Opened this pass:**
+- `tools/lyric-llm/model_registry.json`. Absent. `git check-ignore` does not ignore it. `git log --all` has no commit for that path.
+- `tools/lyric-llm/out/compare_50k_vs_full.md`. Absent.
+- `tools/lyric-llm/out/finetune_50k_log.jsonl`. Absent.
+- `tools/lyric-llm/out/finetune_full_log.jsonl`. Absent.
+- Repo-root `.env.openai` and `tools/lyric-llm/.env.openai`. Both absent. The `openai` CLI is not on PATH.
+- D4 handoff on `f2d82630`. It says the harness was not run.
+
+**Registry:** not written. No `openai_id`, no `status`, and no `shared.sample_seed` were stored.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. D5 needs `out/compare_50k_vs_full.md` and the two `fine_tuned_model` ids from the job logs. All three are absent because the train script and the eval harness were not run. Should the verdict wait until those runs exist?
+2. The phase spec says full ships only when it wins by at least 0.5 on a mean rated verse score, and that rating step is future. The D4 harness says `50k wins`, `full wins`, or `tie` from 4 of 6 metrics. Which sentence is the D5 verdict when both results exist?
+3. Which remote base should the D1 through D5 pull requests use? A pull request into `origin/main` would publish the 81 local commits that are not on `origin/main`.
+4. OpenAI's supervised fine-tuning guide says the platform is closed to new users. Existing customers can create jobs until January 6, 2027. This account was not checked. The guide's current bases are the gpt-4.1 snapshots. `base_train/train.sh` uses `gpt-4o-mini`. If that model is rejected, which base should the script use?
+
+**Next:** D5 stays blocked until the compare file and the two model ids exist.
