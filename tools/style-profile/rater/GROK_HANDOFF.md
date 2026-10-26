@@ -400,3 +400,383 @@ files and a HANDOFF ENTRY.
   - **68/68 tests passing** across all 12 test suites:
     `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5), `test_dynamic_cap.py` (5/5), `test_section_modes.py` (5/5), `test_whisper_seed.py` (9/9).
 - **Next Frontier v4 Milestone:** Full Frontier v4 suite is live. Next is live batch generation & Sparkler Rater evaluation (20 verses, mean `verse_score` target $\ge 6/10$).
+
+### HANDOFF ENTRY: Appendix B Task C gate is Spearman >= 0.2 (2026-10-25)
+
+**Status:** The learned scorer stays off the ranker.
+- The 2026-10-24 entry cleared Gate 3 at Spearman > 0. Appendix B requires Spearman >= 0.2 before `style_scorer` replaces `gunna_score`.
+- `tools/style-profile/out/style_scorer_report.json` still shows AUC vs peers 0.7792, AUC vs random 0.7655, Spearman vs `verse_score` 0.0528 across 88 rated verses.
+- `passes_gate()` now reads those numbers. The old `all_gates_cleared: true` flag does not open the gate.
+- `phase6_generate.run_mimic` keeps `gunna_score` as the reported score and ranks in generation order while the gate is closed. It logs `#warning: scorer below gate`.
+- `frontier_v4` still stores the learned score on the take. That score does not pick the winning take until the gate opens.
+
+### HANDOFF ENTRY: Technique list on each verse (2026-10-26)
+
+**Status:** Sparkler Rater v6. Export schema unchanged.
+- Each open verse has a Techniques panel beside the lines (under the lines when the window is under 700px).
+- Each row says `used` or `not on this verse` for inner rhyme, double meaning, imagery, end rhyme, setup and punch, commas, syllables, not a copy, and different first word.
+- Counts come from `rater/radar_data.json` except imagery, which is marked on the page from picture words in the line.
+- Gold highlight is an inner-rhyme word. Green highlight is a picture word. A real end-rhyme word keeps the underline and turns that underline green.
+- Checked on the debug Chrome at `http://127.0.0.1:8766/rater`. NoCap Cuban Links showed imagery used (street, clips, microphone, gold, chains, neck, pills) and inner rhyme, double meaning, end rhyme, setup and punch, and commas not on that verse. NoCap Very Special showed inner rhyme used (`hitter / twitter`). Lil Wayne John showed end rhyme used (`attack / back`, `attack / pack`, `back / pack`). Drake Rich Flex showed setup and punch and commas used, 2 of 4. The window was put back on the done screen, cursor 50.
+- **Contract changes:** none.
+- **Questions for Claude:** none.
+
+### HANDOFF ENTRY: Frontier v4 ask list under the radar (2026-10-26)
+
+**Status:** Sparkler Rater v7. Export schema unchanged.
+- Under the two radar charts, a section titled Frontier v4 asks lists 14 craft lines and 14 pipeline lines.
+- Checked on the done screen in the debug Chrome. The section starts below the radar row. Cursor stayed at 50.
+- **Contract changes:** none.
+- **Questions for Claude:** none.
+
+### HANDOFF ENTRY: Frontier v4 order chart (2026-10-26)
+
+**Status:** Sparkler Rater v8. Export schema unchanged.
+- The two ask columns under the radar are now one 25-row chart. Each row says what that step changes and what the next step keeps.
+- Rows 1–9 and 21–25 follow `frontier_v4.generate_v4`. Rows 10–20 are the polish locks in the order that stops a later lock from erasing an earlier one.
+- Checked on the done screen. The chart starts below the radar. Inner rhyme is row 15, after New ending at row 13. Cursor stayed at 50. No sideways scroll at 998px or 375px.
+- **Contract changes:** none.
+- **Questions for Claude:** none.
+
+### HANDOFF ENTRY: Frontier v5 two pipelines (2026-10-26)
+
+**Status:** Sparkler Rater v9. Export schema unchanged.
+- The 25-row Frontier v4 order chart under the radars is now two groups: Catalog build (C1 Ingest through C5 Validate) and Generation (Cache, then Shape, Plan, Retrieve, Edit, Verify, Select, Record).
+- Plan says double-meaning slots are open to any voice, including NoCap and Lil Wayne. ABAB inside the line is named as not a stage. Spotify popularity sits in Enrich, not in the per-verse run.
+- Checked on the done screen in the debug Chrome at `http://127.0.0.1:8766/rater`. Heading was Frontier v5. Stages on screen were C1–C5, Pre, 1–7. Footer was Sparkler Rater v9. Cursor stayed at 50. No sideways scroll at 1050px or 375px. The window was put back to 1050px wide.
+- **Contract changes:** none.
+- **Questions for Claude:** none.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V1 — Voice-brief corpus (2026-10-26)
+
+**Status:** V1 is written. V2 has not started. Waiting on Samuel before the next phase.
+
+**Branch:** `grok/base-llm-voice-conditioning`, cut from local `main` at `25dde855`.
+
+**What was opened:**
+- `tools/lyric-llm/out/catalog_index.sqlite`. 231,278 rows. 6 artist strings. Every one of them has at least 500 lines.
+- `export_genius_to_jsonl.py` at the repo root. 340 lines. The OpenAI JSONL shape is there (system, user, assistant). The path `tools/lyric-llm/export_genius_to_jsonl.py` is not in this tree.
+- `tools/lyric-llm/base_train/` did not exist before this phase. `build_dataset.py` is not on disk. This handoff file has no Grok #1 D1 seed.
+- `tools/lyric-llm/out/catalog_index.v5.sqlite` was not opened. The briefs use the live index named in the task.
+
+**Artists covered: 6 of 6.**
+- Lil Wayne — 122,057 lines, median 11 syllables
+- Drake — 53,675 lines, median 11
+- Gunna — 31,070 lines, median 11
+- Lil Baby — 12,688 lines, median 12
+- NoCap — 10,057 lines, median 13
+- Young Thug — 1,731 lines, 35 songs, median 10
+
+**File written:** `tools/lyric-llm/base_train/voice_briefs.json`. Each `brief` is 93–99 words. Slang and signature rhymes are tokens and end-pairs that the sqlite counts actually repeat. Roley is one Gunna line, so it is not in the slang array. Henny is six Gunna lines and is in the array, with the brief saying to use it sparingly. The sample pairs mercedes/crazy, audi/rowdy, and stylist/polished do not repeat as consecutive end rhymes here. Gunna does end 23 lines on mercedes and 7 on audi.
+
+**Gunna (94 words):** Atlanta melodic trap with a short pocket. In this catalog the median bar is 11 syllables, about half the lines sit at 10-14, and the 15-19 stretch is the minority. Designer flex and a quieter pain line share the verse. Keep Wunna, drip, YSL, Patek, VVS, Dior, biscotti, and slatt when they fit. Henny is uncommon, so use it sparingly. End words lean on it, yeah, and me. Pairs that repeat are ride/slide, choice/voice, and check/neck. Songs that mark the voice here are WUNNA, fukumean, pushin P, one of wun, and Drip Too Hard.
+
+**Lil Baby (93 words):** Atlanta street rap with a longer bar. The median is 12 syllables, a quarter of the lines run 15-19, and the upper band reaches about 17. The verse stays on the trenches, the plug, the bros, and a plain claim of being real, with romance when that topic is tagged. House words are brodie, 4PF, dawg, racks, hundred, trenches, and plug. Woah is the ad-lib. End rhymes stay plain: day/way, good/hood, all/ball, and deal/real. Anthems in this index are Woah, Yes Indeed, Drip Too Hard, The Bigger Picture, Close Friends, and My Dawg.
+
+**Drake (99 words):** Toronto talk-rap. The median bar is 11 syllables, with a wide middle from 8 to 14. Romance is the biggest tagged topic. The line sounds like someone moving through the night, and the end words pile up on me, you, yeah, time, and know. House tags are Drizzy, OVO, 6ix, Toronto, and Issa. Guest names in a collab row stay guests. Pairs that repeat are face/place, alone/phone, and feel/real. Anthems in this index are Rich Flex, First Person Shooter, Passionfruit, Jimmy Cooks, Laugh Now Cry Later, and Nonstop. Long battle-rap transcripts under this artist string are not the voice.
+
+**PR:** Not opened. Local `main` is 81 commits ahead of `origin/main` and 56 behind. A pull request from this branch against `origin/main` would publish those 81 commits. The V1 commit is local only until Samuel says which base the PR should use.
+
+**QUESTIONS FOR CLAUDE:**
+1. Drake's longest songs in this index are battle-rap transcripts. Dizaster vs. DNA is 903 lines at popularity 0. Should the shared dataset drop those songs before the voice runs?
+2. Where is Grok #1's `build_dataset.py`, and what seed did the D1 entry publish? Neither is in this tree or in this handoff file. V2 imports that builder. It does not re-implement it.
+3. Young Stoner Life is not an artist string in `catalog_index.sqlite`. The Young Thug brief stays on the 1,731-line credit. Gunna rows contain the token ysl on 106 lines. Confirm that split.
+
+**Next:** V2 (one_hot variant) waits for Samuel's ok, and for Grok #1's builder.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V2 — one_hot voice token (2026-10-26)
+
+**Status:** V1 stands at commit `87894c56`. Samuel said to finish V1 and continue. V2 has been run. V3 has not started.
+
+**Command run:**
+`python3 base_train/build_dataset.py --mode 50k_sample --fim 0.2 --variant one_hot --out out/train_voice_a.jsonl`
+from `tools/lyric-llm`. Seed 7 (`SAMPLE_SEED` was unset; Grok #1 has no D1 entry). `out/` is gitignored, so the JSONL is not in the commit.
+
+**File:** `tools/lyric-llm/out/train_voice_a.jsonl`. 19,856,397 bytes. 50,000 lines. 10,000 of those are fill-in-the-middle (20%). A full pass of the file found 0 records with a bad role order, an empty assistant line, or a voice token that disagreed with the system line.
+
+**Counts:** Lil Wayne 26,552. Drake 11,151. Gunna 7,005. Lil Baby 2,691. NoCap 2,212. Young Thug 389.
+
+**Shape.** Non-FIM system is `Write bars like <artist>. Keep the artist's slang, syllable count, and rhyme pattern.` The user turn starts `<voice: Artist> <section: ...> <bar N of M>`. FIM system is `Write the missing bar. Context above and below is from the same song.` The FIM user turn keeps `<voice: Artist>` and has ABOVE and BELOW. No section tag on the FIM user turn.
+
+**Gunna, not FIM:**
+```json
+{"messages":[{"role":"system","content":"Write bars like Gunna. Keep the artist's slang, syllable count, and rhyme pattern."},{"role":"user","content":"<voice: Gunna> <section: intro> <bar 2 of 53>\nPREV_BAR: Told you we was gon' be rich\nTOPIC: untagged\nEND_WORD: chips\nSYLLABLES: 4"},{"role":"assistant","content":"And stack my chips"}]}
+```
+
+**Lil Baby, not FIM:**
+```json
+{"messages":[{"role":"system","content":"Write bars like Lil Baby. Keep the artist's slang, syllable count, and rhyme pattern."},{"role":"user","content":"<voice: Lil Baby> <section: intro> <bar 6 of 66>\nPREV_BAR: I'm too far for me to complain\nTOPIC: untagged\nEND_WORD: fasho\nSYLLABLES: 15"},{"role":"assistant","content":"No one came as hard as I done came, fasho"}]}
+```
+
+**Drake, FIM:**
+```json
+{"messages":[{"role":"system","content":"Write the missing bar. Context above and below is from the same song."},{"role":"user","content":"<voice: Drake>\nABOVE: And you're comin' to the house, are we clear right now, huh?\nBELOW: Cop cars with the loose change\nEND_WORD: things\nSYLLABLES: 9"},{"role":"assistant","content":"You see the fleet of all the new things"}]}
+```
+
+**Code:** `base_train/build_dataset.py` is the shared command. Sampling is `base_train/voice_dataset.py`. The one_hot strings are `base_train/voice_variant.py`. `systembrief` raises, so V3 is not silently aliased to one_hot. `base_train/voice_test_one_hot.py`: 8 tests passed on Python 3.9. They use a temp sqlite. They do not import OpenAI and do not read an API key.
+
+**Filters:** `is_generic=1` dropped (52,131 bars in the catalog check). There is no `is_junk` column. The first bar of each song is dropped. 956 of the 50,000 kept rows still print `<bar 1 of N>` because that song stored two rows with `line_seq` 1, and only the earliest row was dropped. Song split is 95/3/2 at song level. The 50k draw is train songs only, stratified by artist, weighted toward iconic and high `popularity_score`.
+
+**PR:** Still not opened. Local `main` is 81 commits ahead of `origin/main` and 56 behind. Pushing this branch would publish those 81 commits.
+
+**QUESTIONS FOR CLAUDE:**
+1. Seed 7 is the stand-in. If D1 publishes a different `SAMPLE_SEED`, V2 should be rebuilt before V4 compares runs.
+2. If Grok #1 replaces `build_dataset.py`, keep `--variant one_hot` and call `voice_variant.render_messages`. The voice strings stay in `voice_variant.py`.
+
+**Next:** V3 waits for Samuel.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V3 — system-prompt brief (2026-10-26)
+
+**Status:** V2 stands. `out/train_voice_a.jsonl` is still 19,856,397 bytes and 50,000 lines. V3 is written. V4 has not started.
+
+**Command run:**
+`python3 base_train/build_dataset.py --mode 50k_sample --fim 0.2 --variant systembrief --seed 7 --out out/train_voice_b.jsonl`
+from `tools/lyric-llm`. Same seed as V2.
+
+**File:** `tools/lyric-llm/out/train_voice_b.jsonl`. 42,490,983 bytes. 50,000 lines. 10,000 fill-in-the-middle. Gitignored.
+
+**Same bars as one_hot.** All 50,000 assistant lines match `train_voice_a.jsonl` in order. Counts are unchanged: Lil Wayne 26,552, Drake 11,151, Gunna 7,005, Lil Baby 2,691, NoCap 2,212, Young Thug 389.
+
+**Shape.** System is `voice_briefs.json[artist].brief` with no added words, including on fill-in-the-middle rows. The fill-in task stays on the user turn (`ABOVE` / `BELOW`) so the brief is not replaced by the fill-in system sentence. The user turn has no `<voice:` token. Non-FIM user starts `<section: ...> <bar N of M>`.
+
+**Check.** Every one of the 50,000 system strings equals exactly one brief in `voice_briefs.json`. Zero user turns contain `<voice:`. A seeded sample of 12 rows (indices 3164, 3801, 4747, 6168, 9886, 21222, 23965, 25875, 33255, 35119, 38193, 42659) matched the same way: Drake rows carry the 99-word Drake brief, Lil Wayne rows carry the 99-word Lil Wayne brief.
+
+**Gunna, same bar as V2, system is the Gunna brief:**
+```json
+{"role":"user","content":"<section: intro> <bar 2 of 53>\nPREV_BAR: Told you we was gon' be rich\nTOPIC: untagged\nEND_WORD: chips\nSYLLABLES: 4"}
+{"role":"assistant","content":"And stack my chips"}
+```
+
+**Lil Baby, same bar as V2:**
+```json
+{"role":"user","content":"<section: intro> <bar 6 of 66>\nPREV_BAR: I'm too far for me to complain\nTOPIC: untagged\nEND_WORD: fasho\nSYLLABLES: 15"}
+{"role":"assistant","content":"No one came as hard as I done came, fasho"}
+```
+
+**Drake, fill-in-the-middle, system is the Drake brief:**
+```json
+{"role":"user","content":"ABOVE: Cause I listen to them and I don't call it come BACK\nBELOW: Considering I'm the one that you aim to displace\nEND_WORD: disgrace\nSYLLABLES: 12"}
+{"role":"assistant","content":"It's more like a shame or disgrace"}
+```
+
+**Tests:** `base_train/voice_test_one_hot.py`, 11 passed on Python 3.9. No OpenAI call.
+
+**Left alone:** the uncommitted `base_train/build_dataset.py` rewrite and `base_train/test_dataset.py` (dataset-size work). The live command already forwards `--variant` into `voice_dataset.py`. This commit does not take that rewrite.
+
+**PR:** Still not opened. Local `main` is 81 commits ahead of `origin/main` and 56 behind, and `GROK_HANDOFF.md` is not in `origin/main`.
+
+**Next:** V4 waits for Samuel.
+
+### GROK#1
+
+### HANDOFF ENTRY: Phase D1 dataset build scripts (2026-10-26)
+
+**Status:** D1 is on branch `grok/base-llm-dataset-size`, from local `main` at `25dde855`. The JSONL is under `tools/lyric-llm/out/`. D2 has not started. No OpenAI call was made.
+
+**Code:**
+- `tools/lyric-llm/base_train/build_dataset.py`
+- `tools/lyric-llm/base_train/test_dataset.py`
+- A voice CLI had replaced `build_dataset.py` with a wrapper that said this builder was not on disk. The D1 builder is restored. `--variant` or `--fim` calls `voice_dataset.py` when that file is present. That file stays on `grok/base-llm-voice-conditioning` and is not in the D1 commit. Plain D1 commands do not use those flags.
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode 50k_sample --out out/train_50k.jsonl`
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode full --out out/train_full.jsonl`
+
+**Catalog filters** on `tools/lyric-llm/out/catalog_index.sqlite` (231,278 rows, 4,763 songs, 6 artists):
+- First bar of each song dropped: 4,763
+- `is_generic=1` dropped after that: 50,882
+- Kept: 175,633
+- The table has no `is_junk` column. `lyriclib.is_junk_line` dropped 0 rows.
+- 5 songs had no bar left, so those songs are in no split.
+
+**Split:** SHA1 of artist, a NUL byte, and title. Same recipe as `clean_split.song_id_for`. Seed 7. Songs that still have a kept bar: train 4,520, val 142, test 96. `catalog_index.sqlite` has `song_id` blank on 24,431 rows, so that column is not the split key.
+
+**50k_sample** uses `SAMPLE_SEED=7`. The 50,000 train rows keep each voice's share of the 175,633 kept bars. Inside a voice, iconic anthems come first, then higher song popularity. Val and test are the full held-out songs for both modes.
+
+| Voice | 50k train | full train | val | test |
+| --- | ---: | ---: | ---: | ---: |
+| Drake | 11161 | 36770 | 1358 | 1078 |
+| Gunna | 7001 | 23598 | 439 | 554 |
+| Lil Baby | 2680 | 8710 | 438 | 266 |
+| Lil Wayne | 26602 | 89571 | 2691 | 1183 |
+| NoCap | 2172 | 7090 | 305 | 234 |
+| Young Thug | 384 | 1275 | 0 | 73 |
+| Total | 50000 | 167014 | 5231 | 3388 |
+
+The 50k train file holds bars from 1,160 songs. The train split has 4,520 songs. The iconic and popularity preference is why the sample sits in fewer songs.
+
+**Bytes, checked with `ls` and `wc -l`:**
+- `out/train_50k.jsonl` — 50,000 lines, 21,616,103 bytes
+- `out/train_full.jsonl` — 167,014 lines, 71,984,164 bytes
+- `out/val_50k.jsonl` and `out/val_full.jsonl` — 5,231 lines, 2,262,005 bytes, byte-identical
+- `out/test_50k.jsonl` and `out/test_full.jsonl` — 3,388 lines, 1,460,273 bytes, byte-identical
+
+On-disk check: every line in `train_50k.jsonl` is in `train_full.jsonl`, and the full file is longer (50,000 vs 167,014). `out/` is gitignored. The JSONL is not in the commit.
+
+**First row of each voice in the written train file.** 50k shows that voice's top-ranked bar. Full shows catalog order, so those rows are early bars.
+
+50k assistants:
+- Drake: It's a Slaughter Gang CEO
+- Gunna: Keep me a stick if they purge
+- Lil Baby: Every other night, another dollar gettin' made
+- Lil Wayne: You pop 'em 'cause we pop 'em like Orville Redenbacher
+- NoCap: All that free time got 'em lyin', but I'm too busy being honest
+- Young Thug: Half a million, I just did a warm-up for half a million, uh, uh, mmm
+
+Full assistants:
+- Drake: Uh, thinkin' out loud
+- Gunna: Say you 'bout it for me, is you sure?
+- Lil Baby: Tryna make a dollar when I only had some change
+- Lil Wayne: Ain't afraid to die, I'm just afraid to die sober
+- NoCap: I ain't just rappin like this, at night before I go to sleep I really pray for my n*ggas
+- Young Thug: You talkin' all that shit, you cross the street, get hit
+
+**Tests:** from `tools/lyric-llm`, `python3 -m unittest base_train.test_dataset` — 7 tests, OK. The tests build a tiny sqlite. The builder source has no OpenAI client and no API key. `base_train.voice_test_one_hot` also passed (10 tests), including the `--variant one_hot --fim 0.2` command.
+
+**Choices:**
+- `tools/lyric-llm/export_genius_to_jsonl.py` is not in the tree. The message shape is the shape in the phase spec.
+- Section is `intro` or `verse`. `chronological_arc` maps intro to intro, and verse_build, verse_turn, and climax_punch to verse.
+- A blank topic is `unknown`.
+- Val and test paths are `out/val_50k.jsonl`, `out/test_50k.jsonl`, `out/val_full.jsonl`, and `out/test_full.jsonl`. `out/val.jsonl` and `out/test.jsonl` are the existing MLX song split, and this phase left those files alone.
+- Long songs stayed in, including Drake battle-rap transcripts. There is no length cap in D1.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind. `origin/main` has no `tools/lyric-llm/lyriclib.py`. A pull request into `origin/main` would publish those 81 commits.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. Keep the section map (`intro` or `verse`) and `TOPIC: unknown` for D2?
+2. D3 names `out/val.jsonl`. D1 wrote `out/val_full.jsonl`, byte-identical to `out/val_50k.jsonl`. Which file should the fine-tune upload?
+3. The 50k iconic/popularity preference puts 50,000 bars in 1,160 songs. Keep that, or draw more widely inside each voice?
+4. Which remote base should the D1 pull request use?
+
+**Next:** D2 waits for Samuel's ok.
+
+### GROK#1
+
+### HANDOFF ENTRY: Phase D2 fill-in-the-middle (2026-10-26 13:31 EDT)
+
+**Status:** D2 is on branch `grok/base-llm-dataset-size`, parent `9616ec83`. Samuel said "complete D1 then continue to D2". D1 stays at that commit. The pull request is still not opened. D3 has not started. No OpenAI call was made.
+
+**D1 left as built.** Samuel's continue left these in place:
+- Section stays `intro` or `verse`. A blank topic stays `unknown`.
+- The 50k file still draws 50,000 bars from 1,160 songs.
+- Val and test stay beside the train file. This phase did not write `out/val.jsonl` or `out/test.jsonl`.
+
+**Code:**
+- `tools/lyric-llm/base_train/build_dataset.py`
+- `tools/lyric-llm/base_train/test_dataset.py`
+- `--fim` without `--variant` stays on this builder. `--variant` still calls `voice_dataset.py` when that file is present. That file is not in this commit.
+- A bar is fill-in-the-middle when it has a following line and `blake2s(SAMPLE_SEED|fim|song_key|line_seq|id)` falls under the rate. The same bar gets the same decision in the 50k file and the full file. The last bar of a song stays in the D1 prefix shape.
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode 50k_sample --fim 0.2 --out out/train_50k_fim.jsonl`
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode full --fim 0.2 --out out/train_full_fim.jsonl`
+- The D1 files were not overwritten. `out/train_50k.jsonl` is still 21,616,103 bytes. `out/train_full.jsonl` is still 71,984,164 bytes. `out/val_50k.jsonl` and `out/val_full.jsonl` are still 2,262,005 bytes. `out/test_50k.jsonl` and `out/test_full.jsonl` are still 1,460,273 bytes.
+
+**FIM counts.** Counted by scanning the written files for the fill-in-the-middle system line.
+
+| File | Lines | FIM examples | Rate | Bytes |
+| --- | ---: | ---: | ---: | ---: |
+| `out/train_50k_fim.jsonl` | 50000 | 9844 | 0.196880 | 21139984 |
+| `out/train_full_fim.jsonl` | 167014 | 32942 | 0.197241 | 70374277 |
+| `out/val_50k_fim.jsonl` and `out/val_full_fim.jsonl` | 5231 | 1043 | 0.199388 | 2211740, byte-identical |
+| `out/test_50k_fim.jsonl` and `out/test_full_fim.jsonl` | 3388 | 702 | 0.207202 | 1426492, byte-identical |
+
+Every line of `train_50k_fim.jsonl` is in `train_full_fim.jsonl`. The full file has 167,014 lines and 167,014 unique lines. `out/` is gitignored. The JSONL is not in the commit.
+
+**Spot check** against `catalog_index.sqlite`. ABOVE, the assistant bar, and BELOW are the previous, current, and next rows of that artist and title, ordered by `line_seq` then `id`.
+
+50k file:
+- Drake, Rich Flex, line_seq 21 / 22 / 23. Catalog `song_id` `1919515b5e55b6142aba169d89ce3a8f26029985` on all three, and that is the song key. ABOVE: All my exes ain't nothin', them hoes busted. Assistant: If my opps ain't rappin', they ass duckin'. BELOW: You ain't ready to pull the trigger, don't clutch it.
+- Gunna, fukumean, line_seq 25 / 26 / 27. Catalog `song_id` is blank on all three. The title is the same. Song key `a8bbf65ce1589a926a5f2b6fe981b7d3cc27187b`. ABOVE: And I ain't smokin' no sherm. Assistant: I'm in this bitch with P Liity. BELOW: QP, QP-ski.
+- Lil Baby, Drip Too Hard, line_seq 29 / 30 / 31. Catalog `song_id` `e310eeff393bde8ce394cdf2833f32ff100d6e7c` on all three. ABOVE: Drip too hard (Too hard), charge it to the card. Assistant: Designer to the ground, I can barely spell the names. BELOW: Drip too hard, caution on the floor.
+
+Full file:
+- Drake, Truffle Butter, line_seq 1 / 2 / 3. Catalog `song_id` `0001e99eefd9b020e57239223ab162d23ceed15f` on all three. ABOVE: You know, yeah. Assistant: Uh, thinkin' out loud. BELOW: I must have a quarter million on me right now.
+- Gunna, YK Where It’s Goin, line_seq 4 / 5 / 6. Catalog `song_id` `0147056350ed018f99b59c9ffc33c3894f5bf981` on all three. ABOVE: Girl, I know it ain't nothin' to floor it. Assistant: Damn it, her panties done fell on the floor. BELOW: I done turned this lil' bitch to a whore.
+- Lil Baby, Please, line_seq 4 / 5 / 6. Catalog `song_id` `00584f37a83bbeb798735fd0590e37f42328fcb4` on all three. ABOVE: I can't fuck with all of y'all, I'm tightenin' up my game. Assistant: I'm too far for me to complain. BELOW: No one came as hard as I done came, fasho.
+
+A spread of 24 other FIM lines, 13 from the 50k file and 11 from the full file, also matched a neighbor triple. Zero misses. Three of those 24 had a blank catalog `song_id` on the triple.
+
+**Tests:** from `tools/lyric-llm`, `python3 -m unittest base_train.test_dataset base_train.voice_test_one_hot` — 21 tests, OK. That is 10 dataset tests, the D1 seven plus three FIM tests, and 11 voice tests. The dataset tests build a tiny sqlite. The builder source has no OpenAI client and no API key.
+
+**PR:** Not opened, and the branch was not pushed. D1 question 4 is still open. A pull request into `origin/main` would publish the 81 local commits that are not on `origin/main`.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. D3 names `out/val.jsonl`. D2 wrote `out/val_full_fim.jsonl`, byte-identical to `out/val_50k_fim.jsonl`. Which file should the fine-tune upload?
+2. Which remote base should the D1 and D2 pull requests use?
+
+**Next:** D3 waits for Samuel's ok.
+
+### GROK#3
+
+### HANDOFF ENTRY: Phase C1 — Verify prerequisites (2026-10-26 13:37 EDT)
+
+**Status:** C1 is blocked. C2 has not started. Waiting on Samuel.
+
+**Verdict winner summary:** `dataset=unset, conditioning=unset`
+
+**Target base model:** `gpt-4o` (planned). Account fine-tune access was not checked.
+
+**Branch:** `grok/base-llm-combined-production`, cut from local `main` at `25dde855`. The shared Penwork checkout stayed on `grok/base-llm-voice-conditioning` at `4bdcb169`. That checkout has unrelated dirty files. This entry is in the working copy of this handoff file.
+
+**What was opened:**
+- `tools/lyric-llm/model_registry.json`. The file is absent. A tree search found no copy. `git log --all` has no commit for that path. `git check-ignore` does not ignore it. There is no `shared.sample_seed`, no `shared.schema_version`, and no experiment entry with `status`.
+- This handoff, from the Frontier v5 entry through the D2 entry above.
+- Grok #1's last entry is Phase D2 (2026-10-26 13:31 EDT) on `grok/base-llm-dataset-size` at `5ae90548`. That entry says D3 has not started. There is no D4 entry.
+- Grok #2's last entry is Phase V3 (2026-10-26) on `grok/base-llm-voice-conditioning` at `4bdcb169`. That entry says V4 has not started. There is no V5 entry.
+- Every `out/train_*.jsonl`, `out/val_*.jsonl`, and `out/test_*.jsonl` for the 50k and full builds, counted in this pass.
+- `.env.openai` at the repo root and at `tools/lyric-llm/`. Both absent. `OPENAI_API_KEY` is unset in this shell. The `openai` CLI is not on PATH.
+
+**Training files on disk.** Both dataset candidates are present, because no winner is recorded. Counts are newline counts from this pass.
+
+| File | Lines | Bytes |
+| --- | ---: | ---: |
+| `out/train_50k.jsonl` | 50000 | 21616103 |
+| `out/val_50k.jsonl` | 5231 | 2262005 |
+| `out/test_50k.jsonl` | 3388 | 1460273 |
+| `out/train_full.jsonl` | 167014 | 71984164 |
+| `out/val_full.jsonl` | 5231 | 2262005 |
+| `out/test_full.jsonl` | 3388 | 1460273 |
+| `out/train_50k_fim.jsonl` | 50000 | 21139984 |
+| `out/val_50k_fim.jsonl` | 5231 | 2211740 |
+| `out/test_50k_fim.jsonl` | 3388 | 1426492 |
+| `out/train_full_fim.jsonl` | 167014 | 70374277 |
+| `out/val_full_fim.jsonl` | 5231 | 2211740 |
+| `out/test_full_fim.jsonl` | 3388 | 1426492 |
+
+Voice train files from V2 and V3 are also on disk:
+- `out/train_voice_a.jsonl` (one_hot) — 50,000 lines, 19,856,397 bytes
+- `out/train_voice_b.jsonl` (systembrief) — 50,000 lines, 42,490,983 bytes
+
+These voice val and test files are absent: `out/val_voice_a.jsonl`, `out/test_voice_a.jsonl`, `out/val_voice_b.jsonl`, `out/test_voice_b.jsonl`.
+
+Combined files are absent: `out/train_combined.jsonl`, `out/val_combined.jsonl`, `out/test_combined.jsonl`.
+
+**Baseline numbers to beat:** none. The D4 report is not on disk. The V5 report is not on disk. `base_train/evaluate.py` is not on disk. Perplexity, end-word match, syllable precision, voice match, inner rhyme density, and cost have no D4 or V5 column. `out/eval_report.md` was opened. It is the local lyric-model corpus report (1,593,882 kept lines). It is not a D4 or V5 fine-tune comparison, so its scores are not the baseline for this run.
+
+**Blockers:**
+1. No registry, so neither experiment has `status: "winner"`.
+2. Grok #1 stopped at D2. D3 and D4 have not been written.
+3. Grok #2 stopped at V3. V4 and V5 have not been written.
+4. The D4 and V5 baseline columns are empty.
+5. `.env.openai` is absent and `OPENAI_API_KEY` is unset, so `gpt-4o`, `gpt-4o-mini`, and `gpt-5-mini` fine-tune access was not confirmed.
+6. The pull request was not opened. Local `main` is 81 commits ahead of `origin/main` and 56 behind. A pull request from this branch would publish those 81 commits.
+
+**Not opened:** four Cursor worktrees (`aps`, `duy`, `nhh`, `pyc`). `catalog_index.sqlite` was not re-opened. The OpenAI API was not called. No `base_train/combined_*` file was written.
+
+**PR:** Not opened, and the branch was not pushed.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. C2 needs a dataset winner and a conditioning winner, each with `status: "winner"` in `tools/lyric-llm/model_registry.json`. D4 and V5 are the phases that write those entries. Is the winner recorded somewhere outside this tree?
+2. The C3 script reads `.env.openai`. That file is absent. Where should the OpenAI key live for the access check?
+3. Which remote base should the C1 pull request use? `origin/main` would publish the 81 local commits that are not on `origin/main`.
+
+**Next:** C2 waits for Samuel. No combined dataset was built. No training script was written.
