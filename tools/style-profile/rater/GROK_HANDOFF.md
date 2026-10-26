@@ -669,3 +669,66 @@ If the job also bills the validation file, add one_hot $4.52 (502,143 overhead t
 3. Which remote base should the V4 pull request use?
 
 **Next:** V5 waits for Samuel.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V5 — voice evaluation harness (2026-10-26)
+
+**Status:** V4 stands. The train and val files were not rewritten. `out/train_voice_a.jsonl` is still 19,856,397 bytes. `out/train_voice_b.jsonl` is still 42,490,983 bytes. The harness is written. It was not executed. No OpenAI call was made. There is no scored table, no verdict, and no eval spend. V6 has not started.
+
+**Command Samuel pastes,** from `tools/lyric-llm`, after the V4 jobs have real model ids:
+
+```
+python3 base_train/voice_evaluate.py \
+    --baseline gpt-4o-mini \
+    --model-a ft:gpt-4o-mini:...:voice_a:... \
+    --model-b ft:gpt-4o-mini:...:voice_b:... \
+    --fixture out/test_voice_a.jsonl \
+    --voice-eval \
+    --out out/compare_voice_a_vs_b.md
+```
+
+**Test fixture.** Same seed-7 split as V2–V4. Written this phase. All 3,211 rows parsed.
+
+| File | Lines | FIM | Bytes |
+| --- | ---: | ---: | ---: |
+| `out/test_voice_a.jsonl` | 3211 | 642 | 1275636 |
+| `out/test_voice_b.jsonl` | 3211 | 642 | 2737655 |
+
+Counts, both files: Drake 836, Gunna 334, Lil Baby 51, Lil Wayne 1,759, NoCap 183, Young Thug 48. The command scores `test_voice_a.jsonl`. systembrief prompts are rendered from those same bars. Gitignored.
+
+**Table.** Eight metrics. A variant lifts when it beats its own baseline on at least 5 of 8. If both lift, the one that wins at least 5 of 8 head-to-head wins. If only one lifts, that one wins. If neither lifts, the verdict line is `DATASET OR BASE INSUFFICIENT — do not ship`. A tie is a tie.
+
+The Base column is the base model on the one_hot prompts. systembrief is scored on the brief prompts. `base_brief` is the base model on those same brief prompts, and that is the baseline systembrief has to beat. The report prints both.
+
+| Metric | Better |
+| --- | --- |
+| perplexity | lower |
+| end_word_match | higher |
+| syllable_precision | higher |
+| voice_match | higher |
+| inner_rhyme | higher |
+| cost_per_1000 | lower |
+| voice_flip | higher |
+| cross_voice_leakage | lower |
+
+Voice-flip is the character edit distance between a Gunna completion and a Lil Baby completion of the same bar. Default 20 contexts. Higher wins. Voice-match generates up to 100 Gunna bars and 100 Lil Baby bars with `END_WORD` left off, then Spearman against that artist's held-out end words in the test file. Lil Baby has 51 held-out rows. The generation request stays 100. Leakage is the count of those Gunna bars that contain another artist's house noun. House nouns are the names, not shared slang: Gunna wunna/ysl, Lil Baby brodie/4pf, Drake drizzy/ovo/6ix, Lil Wayne weezy/tunechi/hollygrove/wayne/tha carter, NoCap nocap, Young Thug thugger/slime. Thugger and Wayne are the nouns named in the phase.
+
+**Calls.** Default flags on this fixture plan 13,804 calls: 3,211 bars × 4 prompt pairs, plus 160 flip calls, plus 800 voice-match calls. Workers default to 4. A 429 waits 1s, 2s, 4s, up to 60s, six tries. The script prints the call count before the first request. Perplexity uses the logprobs on the generated tokens. It is `n/a` when the API sends none. Inner rhymes use `catalog_retriever.detect_inner_rhymes`. `XJournal AI/cmudict.txt` is present, 3,618,488 bytes, and the real run loads it.
+
+**Cost and duration.** Not run, so there is no spend and no duration. The script writes both from the token counts the API returns and the wall clock. Prices used for `cost_per_1000` are the 2026-10-26 page: base gpt-4o-mini $0.15 / $0.60 per 1M, fine-tune `gpt-4o-mini-2024-07-18` $0.30 / $1.20 per 1M.
+
+**Code.** `base_train/voice_evaluate.py` and `base_train/voice_test_evaluate.py`. `base_train/evaluate.py` is Grok #1's D4 file and is not on this branch. This command is `voice_evaluate.py` with the same flags, including mandatory `--voice-eval`.
+
+**Key.** The script reads `OPENAI_API_KEY` or `.env.openai` at the repo root. That file is absent. The `openai` Python package is not installed. The script does not print the key. It was not imported during the tests.
+
+**Tests:** `python3 -m unittest base_train.voice_test_evaluate base_train.voice_test_one_hot` — 26 tests, OK, on Python 3.9. That is 11 eval tests and the 15 voice tests. A fake client writes the eight-row table. No OpenAI call.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind.
+
+**QUESTIONS FOR CLAUDE:**
+1. Keep `voice_evaluate.py`, or fold it into `base_train/evaluate.py` once Grok #1's D4 lands?
+2. The V4 jobs have not been run, so there are no fine-tune ids to score. The live table waits on those ids.
+3. Which remote base should the V5 pull request use?
+
+**Next:** V6 waits for Samuel.
