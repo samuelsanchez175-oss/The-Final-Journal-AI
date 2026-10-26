@@ -540,3 +540,53 @@ A spread of 24 other FIM lines, 13 from the 50k file and 11 from the full file, 
 2. Which remote base should the D1 and D2 pull requests use?
 
 **Next:** D3 waits for Samuel's ok.
+
+### GROK#1
+
+### HANDOFF ENTRY: Phase D3 training runbook (2026-10-26 16:22 EDT)
+
+**Status:** D3 is on branch `grok/base-llm-dataset-size`, parent `5ae90548`. Samuel said "continue to D3". The script is written. It was not executed. No OpenAI call was made. D4 has not started. The pull request is still not opened.
+
+**Command** from `tools/lyric-llm`:
+
+```
+bash base_train/train.sh 50k
+bash base_train/train.sh full
+```
+
+**Files:**
+- `tools/lyric-llm/base_train/train.sh`
+- `tools/lyric-llm/base_train/test_train.py`
+- 50k uploads `out/train_50k_fim.jsonl` and `out/val_50k_fim.jsonl`. Log: `out/finetune_50k_log.jsonl`. Suffix: `v5-base-mini-50k`.
+- full uploads `out/train_full_fim.jsonl` and `out/val_full_fim.jsonl`. Log: `out/finetune_full_log.jsonl`. Suffix: `v5-base-mini-full`.
+- `out/val.jsonl` is the MLX song split. The script does not upload it. Samuel's continue left the D2 val files as the upload. Those two val files are byte-identical, sha256 `3ca875a6a4a675cd5a955b6c2ed979c5e49a28871a62519bcf62e304fa3ba312`, 5,231 lines.
+- The sketch's `openai fine_tunes.create` is the old command. This script uses `openai api fine_tuning.jobs.create -m gpt-4o-mini --hyperparameters '{"n_epochs": 3}'`, the same CLI form as the voice runbooks.
+- The script reads `.env.openai` in `tools/lyric-llm` or at the repo root. It exports the key and does not echo it. Each status poll is appended to the log. The log stores file ids, the job id, status, `estimated_finish`, and `fine_tuned_model`. Registration in `model_registry.json` is D5.
+
+**Cost.** OpenAI's pricing page lists `gpt-4o-mini-2024-07-18` training at $3.00 per 1M tokens. Tokens were counted locally with tiktoken `o200k_base`: each message role and content, plus 3 tokens per message and 3 for the reply primer. This is an estimate. The job's `trained_tokens` is the bill. Counted on 2026-10-26 from the D2 files.
+
+| Run | Content tokens | With chat overhead | × 3 epochs | Estimate |
+| --- | ---: | ---: | ---: | ---: |
+| 50k train | 4,492,884 | 5,092,884 | 15,278,652 | $45.84 |
+| full train | 14,948,646 | 16,952,814 | 50,858,442 | $152.58 |
+| val, either file | 469,245 | 532,017 | 1,596,051 | $4.79 |
+| Both trains | | | | $198.41 |
+
+Content tokens only, same epochs and price: 50k $40.44, full $134.54, val $4.22. If the job also bills the validation file, 50k train plus val is $50.62 and full train plus val is $157.36. Both trains plus both val uploads are $207.99.
+
+**Duration.** OpenAI does not publish a clock time for a job of this size. The job payload has `estimated_finish`. The script prints status every 30 seconds and writes that field into the log. These jobs were not started, so there is no duration quote.
+
+**Key and CLI.** Repo-root `.env.openai` is absent. `tools/lyric-llm/.env.openai` is absent. The `openai` CLI is not on PATH. `jq` is at `/usr/bin/jq`. The script was not invoked against the API.
+
+**Tests:** from `tools/lyric-llm`, `python3 -m unittest base_train.test_train` — 6 tests, OK. A fake `openai` binary is placed on PATH. The tests check the 50k and full commands, the log rows, a failed job, a missing file, and a missing key file. The fake key does not appear in stdout, stderr, or the log. `bash -n base_train/train.sh` passed. `base_train.test_dataset` — 10 tests, OK. `base_train.voice_test_one_hot` — 15 tests, OK. No OpenAI call.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. Which remote base should the D1, D2, and D3 pull requests use? A pull request into `origin/main` would publish the 81 local commits that are not on `origin/main`.
+2. OpenAI's supervised fine-tuning guide says the platform is closed to new users. Existing customers can create jobs until January 6, 2027, unless the base model shuts down earlier. This account was not checked.
+3. That guide's current base list is `gpt-4.1-2025-04-14`, `gpt-4.1-mini-2025-04-14`, and `gpt-4.1-nano-2025-04-14`. The phase spec says `gpt-4o-mini`, and the pricing page still lists `gpt-4o-mini-2024-07-18` training at $3.00 per 1M tokens. The script uses `gpt-4o-mini`. If that model is rejected, which base should the script use?
+
+**Next:** D4 waits for Samuel's ok.
