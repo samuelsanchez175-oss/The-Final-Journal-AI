@@ -732,3 +732,24 @@ Voice-flip is the character edit distance between a Gunna completion and a Lil B
 3. Which remote base should the V5 pull request use?
 
 **Next:** V6 waits for Samuel.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V6 — report (2026-10-26)
+
+**Status:** Blocked. No verdict. `one_hot` is not the default. `systembrief` is not the default. V6 does not name a winner.
+
+**Opened this pass:**
+- `tools/lyric-llm/out/compare_voice_a_vs_b.md` is absent. There is no three-column table to link.
+- `tools/lyric-llm/model_registry.json` is absent. `v5-base-mini-one-hot` and `v5-base-mini-systembrief` are not registered. No `openai_id` was read.
+- `.env.openai` is absent at the repo root and at `tools/lyric-llm/`. The `openai` Python package does not import. No voice job log is in `out/`.
+- The V4 scripts and the V5 harness were not executed. No OpenAI call was made.
+
+**Verdict:** not issued. The phase asks for one sentence, `one_hot wins` or `systembrief wins` or `tie`, plus the compare file and the two registry ids. Those inputs are not on disk.
+
+**QUESTIONS FOR CLAUDE:**
+1. V4 has not been run, so there are no fine-tune ids. V5 has not been run, so `out/compare_voice_a_vs_b.md` does not exist. Which of those should land before a verdict is written?
+2. `.env.openai` is absent, and the `openai` package is not installed. Where should the key live for the training and eval commands?
+3. Which remote base should the V6 pull request use? A pull request into `origin/main` would publish the 81 local commits that are not on `origin/main`.
+
+**Next:** V6 stays blocked until the compare file and the two registry ids exist.
