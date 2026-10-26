@@ -439,3 +439,46 @@ files and a HANDOFF ENTRY.
 3. Young Stoner Life is not an artist string in `catalog_index.sqlite`. The Young Thug brief stays on the 1,731-line credit. Gunna rows contain the token ysl on 106 lines. Confirm that split.
 
 **Next:** V2 (one_hot variant) waits for Samuel's ok, and for Grok #1's builder.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V2 — one_hot voice token (2026-10-26)
+
+**Status:** V1 stands at commit `87894c56`. Samuel said to finish V1 and continue. V2 has been run. V3 has not started.
+
+**Command run:**
+`python3 base_train/build_dataset.py --mode 50k_sample --fim 0.2 --variant one_hot --out out/train_voice_a.jsonl`
+from `tools/lyric-llm`. Seed 7 (`SAMPLE_SEED` was unset; Grok #1 has no D1 entry). `out/` is gitignored, so the JSONL is not in the commit.
+
+**File:** `tools/lyric-llm/out/train_voice_a.jsonl`. 19,856,397 bytes. 50,000 lines. 10,000 of those are fill-in-the-middle (20%). A full pass of the file found 0 records with a bad role order, an empty assistant line, or a voice token that disagreed with the system line.
+
+**Counts:** Lil Wayne 26,552. Drake 11,151. Gunna 7,005. Lil Baby 2,691. NoCap 2,212. Young Thug 389.
+
+**Shape.** Non-FIM system is `Write bars like <artist>. Keep the artist's slang, syllable count, and rhyme pattern.` The user turn starts `<voice: Artist> <section: ...> <bar N of M>`. FIM system is `Write the missing bar. Context above and below is from the same song.` The FIM user turn keeps `<voice: Artist>` and has ABOVE and BELOW. No section tag on the FIM user turn.
+
+**Gunna, not FIM:**
+```json
+{"messages":[{"role":"system","content":"Write bars like Gunna. Keep the artist's slang, syllable count, and rhyme pattern."},{"role":"user","content":"<voice: Gunna> <section: intro> <bar 2 of 53>\nPREV_BAR: Told you we was gon' be rich\nTOPIC: untagged\nEND_WORD: chips\nSYLLABLES: 4"},{"role":"assistant","content":"And stack my chips"}]}
+```
+
+**Lil Baby, not FIM:**
+```json
+{"messages":[{"role":"system","content":"Write bars like Lil Baby. Keep the artist's slang, syllable count, and rhyme pattern."},{"role":"user","content":"<voice: Lil Baby> <section: intro> <bar 6 of 66>\nPREV_BAR: I'm too far for me to complain\nTOPIC: untagged\nEND_WORD: fasho\nSYLLABLES: 15"},{"role":"assistant","content":"No one came as hard as I done came, fasho"}]}
+```
+
+**Drake, FIM:**
+```json
+{"messages":[{"role":"system","content":"Write the missing bar. Context above and below is from the same song."},{"role":"user","content":"<voice: Drake>\nABOVE: And you're comin' to the house, are we clear right now, huh?\nBELOW: Cop cars with the loose change\nEND_WORD: things\nSYLLABLES: 9"},{"role":"assistant","content":"You see the fleet of all the new things"}]}
+```
+
+**Code:** `base_train/build_dataset.py` is the shared command. Sampling is `base_train/voice_dataset.py`. The one_hot strings are `base_train/voice_variant.py`. `systembrief` raises, so V3 is not silently aliased to one_hot. `base_train/voice_test_one_hot.py`: 8 tests passed on Python 3.9. They use a temp sqlite. They do not import OpenAI and do not read an API key.
+
+**Filters:** `is_generic=1` dropped (52,131 bars in the catalog check). There is no `is_junk` column. The first bar of each song is dropped. 956 of the 50,000 kept rows still print `<bar 1 of N>` because that song stored two rows with `line_seq` 1, and only the earliest row was dropped. Song split is 95/3/2 at song level. The 50k draw is train songs only, stratified by artist, weighted toward iconic and high `popularity_score`.
+
+**PR:** Still not opened. Local `main` is 81 commits ahead of `origin/main` and 56 behind. Pushing this branch would publish those 81 commits.
+
+**QUESTIONS FOR CLAUDE:**
+1. Seed 7 is the stand-in. If D1 publishes a different `SAMPLE_SEED`, V2 should be rebuilt before V4 compares runs.
+2. If Grok #1 replaces `build_dataset.py`, keep `--variant one_hot` and call `voice_variant.render_messages`. The voice strings stay in `voice_variant.py`.
+
+**Next:** V3 waits for Samuel.
