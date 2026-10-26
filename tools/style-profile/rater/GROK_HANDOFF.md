@@ -590,3 +590,57 @@ Content tokens only, same epochs and price: 50k $40.44, full $134.54, val $4.22.
 3. That guide's current base list is `gpt-4.1-2025-04-14`, `gpt-4.1-mini-2025-04-14`, and `gpt-4.1-nano-2025-04-14`. The phase spec says `gpt-4o-mini`, and the pricing page still lists `gpt-4o-mini-2024-07-18` training at $3.00 per 1M tokens. The script uses `gpt-4o-mini`. If that model is rejected, which base should the script use?
 
 **Next:** D4 waits for Samuel's ok.
+
+### GROK#1
+
+### HANDOFF ENTRY: Phase D4 evaluation harness (2026-10-26 16:45 EDT)
+
+**Status:** D4 is on branch `grok/base-llm-dataset-size`, parent `04d72f64`. Samuel said "continue to D4". The harness is written. It was not executed. No OpenAI call was made. `out/compare_50k_vs_full.md` was not written. There are no fine-tune model ids, because `base_train/train.sh` was not run. D5 has not started. The pull request is still not opened.
+
+**Command** from `tools/lyric-llm`:
+
+```
+python3 base_train/evaluate.py \
+    --model-a ft:gpt-4o-mini:...:50k:... \
+    --model-b ft:gpt-4o-mini:...:full:... \
+    --fixture out/test_50k_fim.jsonl \
+    --out out/compare_50k_vs_full.md
+```
+
+The phase sketch names `--fixture out/test.jsonl`. That file is the MLX song split (keys `artist`, `bpm`, `scale`, `song_id`, `text`, 1,532,788 bytes). The harness exits 2 on it and names `out/test_50k_fim.jsonl`.
+
+**Files:**
+- `tools/lyric-llm/base_train/evaluate.py`
+- `tools/lyric-llm/base_train/test_evaluate.py`
+- Held-out chat file: `out/test_50k_fim.jsonl`. Byte-identical to `out/test_full_fim.jsonl`. sha256 `cd8f6930324d4917094db1146174e4f92da67d2998591f25330830184408cac5`. 3,388 lines. 1,426,492 bytes. 0 rows skipped.
+- The harness scores 400 of those 3,388 bars. Seed 7. The same 400 indexes go to both models. If the file has fewer than 400 bars, it scores every bar and says so.
+
+**400-bar draw** (counted 2026-10-26, no API call): Drake 129, Gunna 60, Lil Baby 36, Lil Wayne 148, NoCap 22, Young Thug 5.
+
+**Voice-match:** 100 Gunna bars and 100 Lil Baby bars, drawn from the full fixture, seed 7. Gunna pool 554. Lil Baby pool 266. Both pools can supply 100. The prompt is the D1 system line plus `<voice: Artist> <section: verse>`, `PREV_BAR`, and `TOPIC`. It drops `END_WORD` and `SYLLABLES`. The catalog is the last word of that artist's assistant bars in the full fixture. The score is the mean of the two Spearman correlations. Temperature is 0. The contexts differ, so the 100 bars are not one repeated prompt.
+
+**Calls:** 600 per model (400 held-out plus 200 voice-match), 1,200 total, one after another. This was not run.
+
+**Metrics.** A tie on a metric, or a missing value, gives the point to neither model. `50k wins` when `--model-a` takes at least 4 metrics and more than `--model-b`. `full wins` when `--model-b` takes at least 4 and more than `--model-a`. Otherwise `tie`. `--model-a` is the 50k slot. `--model-b` is the full slot.
+
+| Metric | Better | What is counted |
+| --- | --- | --- |
+| perplexity | lower | exp(mean negative logprob) of the completion tokens returned for the 400 held-out prompts. This is not gold-bar next-token loss. It is n/a when logprobs are missing, and neither model wins that metric. |
+| end_word_match | higher | Share of the 400 generations whose last word matches `END_WORD`. |
+| syllable_precision | higher | Share of the 400 within ±1 of `SYLLABLES`, counted with CMU and a vowel-group fallback. |
+| voice_match | higher | Mean Spearman of the Gunna and Lil Baby end-word distributions, above. |
+| inner_rhyme | higher | Mean `detect_inner_rhymes` count on the 400 held-out generations. |
+| cost_per_1000 | lower | (input tokens × price + output tokens × price) / bars × 1000. Ids that start with `ft:` use $0.30 per 1M input tokens and $1.20 per 1M output tokens. Other ids use $0.15 and $0.60. The bar count is every generation for that model, the 400 and the 200. |
+
+**Tests:** from `tools/lyric-llm`, `python3 -m unittest base_train.test_evaluate base_train.test_dataset base_train.test_train base_train.voice_test_one_hot` — 45 tests, OK. `base_train.test_evaluate` is 14 of those. The fake client gives the 50k slot four metric wins and the full slot two, and the report says `50k wins`. An identical fake is `tie`. An MLX-shaped file exits 2. A 401-row file scores 400. A missing key exits 1 with `missing .env.openai` and does not print the key. No OpenAI call.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. Which remote base should the D1, D2, D3, and D4 pull requests use? A pull request into `origin/main` would publish the 81 local commits that are not on `origin/main`.
+2. OpenAI's supervised fine-tuning guide says the platform is closed to new users. Existing customers can create jobs until January 6, 2027, unless the base model shuts down earlier. This account was not checked.
+3. That guide's current base list is `gpt-4.1-2025-04-14`, `gpt-4.1-mini-2025-04-14`, and `gpt-4.1-nano-2025-04-14`. The phase spec says `gpt-4o-mini`. `base_train/train.sh` uses `gpt-4o-mini`. If that model is rejected, which base should the script use?
+
+**Next:** D5 waits for Samuel's ok.
