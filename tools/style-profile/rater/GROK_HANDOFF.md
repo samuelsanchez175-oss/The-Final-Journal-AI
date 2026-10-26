@@ -780,3 +780,231 @@ Combined files are absent: `out/train_combined.jsonl`, `out/val_combined.jsonl`,
 3. Which remote base should the C1 pull request use? `origin/main` would publish the 81 local commits that are not on `origin/main`.
 
 **Next:** C2 waits for Samuel. No combined dataset was built. No training script was written.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V4 — training runbook (2026-10-26)
+
+**Status:** V3 stands. The train files were not rewritten. `out/train_voice_a.jsonl` is still 19,856,397 bytes and 50,000 lines. `out/train_voice_b.jsonl` is still 42,490,983 bytes and 50,000 lines. The runbooks are written. They were not executed. No OpenAI call was made. V5 has not started.
+
+**Commands Samuel pastes,** from `tools/lyric-llm`:
+
+```
+bash base_train/train_voice_a.sh
+bash base_train/train_voice_b.sh
+```
+
+**Same seed.** Both scripts run `python3 base_train/voice_register.py --check-seed 7` before any upload. Both train files were built with `--seed 7` and `--fim 0.2`. Grok #1's D1 and D2 handoff commands also use `SAMPLE_SEED=7`. `tools/lyric-llm/model_registry.json` is not in the tree, so `shared.sample_seed` was not read from a file. If that field appears later and is not 7, both scripts exit before upload.
+
+**Shape.** Both jobs use `gpt-4o-mini`, `--hyperparameters '{"n_epochs": 3}'`, and a validation file. `train_voice_a.sh` uploads `out/train_voice_a.jsonl` and `out/val_voice_a.jsonl`, suffix `v5-base-voice-a`, alias `v5-base-mini-one-hot`. `train_voice_b.sh` uploads `out/train_voice_b.jsonl` and `out/val_voice_b.jsonl`, suffix `v5-base-voice-b`, alias `v5-base-mini-systembrief`. The watch loop prints status every 30 seconds and registers the model only after status `succeeded`.
+
+**Val files written this phase.** Same seed-7 song split as the train files. 5,031 song keys: train 4,779, val 151, test 101. Kept val bars do not share a song key and line number with kept train bars. Every 50k train identity is inside the train split. Young Thug has 0 kept val bars.
+
+| File | Lines | FIM | Bytes |
+| --- | ---: | ---: | ---: |
+| `out/val_voice_a.jsonl` | 5339 | 1068 | 2123607 |
+| `out/val_voice_b.jsonl` | 5339 | 1068 | 4534573 |
+
+Val counts, both files: Drake 1,106, Gunna 865, Lil Baby 375, Lil Wayne 2,935, NoCap 58, Young Thug 0. `val_voice_a` is one_hot, so every user turn has `<voice:`. `val_voice_b` is the brief verbatim and has 0 `<voice:` tokens. A Drake fill-in row is the same bar in both files. Assistant: `Drowning in compliments, pool in the backyard that look like Metropolis`. The files are gitignored.
+
+**Cost.** OpenAI's pricing page lists `gpt-4o-mini-2024-07-18` training at $3.00 per 1M tokens. The brief's formula is training tokens × epochs × that rate. Tokens were counted locally with tiktoken `o200k_base` on each message, plus 3 tokens per message and 3 for the reply primer. This is an estimate. The job's trained-token count is the bill. The script passes `-m gpt-4o-mini`.
+
+| Run | Content tokens | With chat overhead | × 3 epochs | Estimate |
+| --- | ---: | ---: | ---: | ---: |
+| one_hot train | 4,095,258 | 4,695,258 | 14,085,774 | $42.26 |
+| systembrief train | 10,171,101 | 10,771,101 | 32,313,303 | $96.94 |
+| Both trains | | | | $139.20 |
+
+Content tokens only, same epochs and price: one_hot $36.86, systembrief $91.54, total $128.40. systembrief is higher because the brief is the system turn on every row.
+
+If the job also bills the validation file, add one_hot $4.52 (502,143 overhead tokens × 3) and systembrief $10.37 (1,152,017 × 3). Train plus val is then $46.78 and $107.31, together $154.09.
+
+**Duration.** OpenAI quotes training time on the job. These scripts were not started, so there is no duration quote. The script prints status every 30 seconds.
+
+**Code:**
+- `base_train/train_voice_a.sh`
+- `base_train/train_voice_b.sh`
+- `base_train/voice_register.py` appends the alias. It does not set `shared.sample_seed`. A dry run in the unit test wrote a fake id into a temp registry and left `shared.sample_seed` at 7. A second write with a different model id exits.
+- `base_train/voice_dataset.py` `build_role` writes val or test. It does not rewrite the train JSONL.
+- The brief names `base_train/register_model.py`. That file is Grok #1's D3 script and is not on this branch. `train_50k.sh` is not on this branch either. These scripts call `voice_register.py`.
+
+**Key.** Each script reads `.env.openai` at the repo root (`../../.env.openai` from `tools/lyric-llm`). That file is absent. The script exits when it is missing. It does not echo the key. The `openai` CLI is not on PATH in this shell. It was not invoked.
+
+**Tests:** `python3 -m unittest base_train.voice_test_one_hot` — 15 tests, OK, on Python 3.9. No OpenAI call. `bash -n` passed on both scripts.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind. `GROK_HANDOFF.md` is not on `origin/main`.
+
+**QUESTIONS FOR CLAUDE:**
+1. OpenAI's pricing page says the fine-tune platform is closed to new users. Existing users can still create jobs for the coming months. This account's fine-tune access was not checked.
+2. Keep `voice_register.py`, or switch these scripts to `register_model.py` once Grok #1's D3 lands?
+3. Which remote base should the V4 pull request use?
+
+**Next:** V5 waits for Samuel.
+
+### GROK#1
+
+### HANDOFF ENTRY: Phase D3 training runbook (2026-10-26 16:22 EDT)
+
+**Status:** D3 is on branch `grok/base-llm-dataset-size`, parent `5ae90548`. Samuel said "continue to D3". The script is written. It was not executed. No OpenAI call was made. D4 has not started. The pull request is still not opened.
+
+**Command** from `tools/lyric-llm`:
+
+```
+bash base_train/train.sh 50k
+bash base_train/train.sh full
+```
+
+**Files:**
+- `tools/lyric-llm/base_train/train.sh`
+- `tools/lyric-llm/base_train/test_train.py`
+- 50k uploads `out/train_50k_fim.jsonl` and `out/val_50k_fim.jsonl`. Log: `out/finetune_50k_log.jsonl`. Suffix: `v5-base-mini-50k`.
+- full uploads `out/train_full_fim.jsonl` and `out/val_full_fim.jsonl`. Log: `out/finetune_full_log.jsonl`. Suffix: `v5-base-mini-full`.
+- `out/val.jsonl` is the MLX song split. The script does not upload it. Samuel's continue left the D2 val files as the upload. Those two val files are byte-identical, sha256 `3ca875a6a4a675cd5a955b6c2ed979c5e49a28871a62519bcf62e304fa3ba312`, 5,231 lines.
+- The sketch's `openai fine_tunes.create` is the old command. This script uses `openai api fine_tuning.jobs.create -m gpt-4o-mini --hyperparameters '{"n_epochs": 3}'`, the same CLI form as the voice runbooks.
+- The script reads `.env.openai` in `tools/lyric-llm` or at the repo root. It exports the key and does not echo it. Each status poll is appended to the log. The log stores file ids, the job id, status, `estimated_finish`, and `fine_tuned_model`. Registration in `model_registry.json` is D5.
+
+**Cost.** OpenAI's pricing page lists `gpt-4o-mini-2024-07-18` training at $3.00 per 1M tokens. Tokens were counted locally with tiktoken `o200k_base`: each message role and content, plus 3 tokens per message and 3 for the reply primer. This is an estimate. The job's `trained_tokens` is the bill. Counted on 2026-10-26 from the D2 files.
+
+| Run | Content tokens | With chat overhead | × 3 epochs | Estimate |
+| --- | ---: | ---: | ---: | ---: |
+| 50k train | 4,492,884 | 5,092,884 | 15,278,652 | $45.84 |
+| full train | 14,948,646 | 16,952,814 | 50,858,442 | $152.58 |
+| val, either file | 469,245 | 532,017 | 1,596,051 | $4.79 |
+| Both trains | | | | $198.41 |
+
+Content tokens only, same epochs and price: 50k $40.44, full $134.54, val $4.22. If the job also bills the validation file, 50k train plus val is $50.62 and full train plus val is $157.36. Both trains plus both val uploads are $207.99.
+
+**Duration.** OpenAI does not publish a clock time for a job of this size. The job payload has `estimated_finish`. The script prints status every 30 seconds and writes that field into the log. These jobs were not started, so there is no duration quote.
+
+**Key and CLI.** Repo-root `.env.openai` is absent. `tools/lyric-llm/.env.openai` is absent. The `openai` CLI is not on PATH. `jq` is at `/usr/bin/jq`. The script was not invoked against the API.
+
+**Tests:** from `tools/lyric-llm`, `python3 -m unittest base_train.test_train` — 6 tests, OK. A fake `openai` binary is placed on PATH. The tests check the 50k and full commands, the log rows, a failed job, a missing file, and a missing key file. The fake key does not appear in stdout, stderr, or the log. `bash -n base_train/train.sh` passed. `base_train.test_dataset` — 10 tests, OK. `base_train.voice_test_one_hot` — 15 tests, OK. No OpenAI call.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. Which remote base should the D1, D2, and D3 pull requests use? A pull request into `origin/main` would publish the 81 local commits that are not on `origin/main`.
+2. OpenAI's supervised fine-tuning guide says the platform is closed to new users. Existing customers can create jobs until January 6, 2027, unless the base model shuts down earlier. This account was not checked.
+3. That guide's current base list is `gpt-4.1-2025-04-14`, `gpt-4.1-mini-2025-04-14`, and `gpt-4.1-nano-2025-04-14`. The phase spec says `gpt-4o-mini`, and the pricing page still lists `gpt-4o-mini-2024-07-18` training at $3.00 per 1M tokens. The script uses `gpt-4o-mini`. If that model is rejected, which base should the script use?
+
+**Next:** D4 waits for Samuel's ok.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V5 — voice evaluation harness (2026-10-26)
+
+**Status:** V4 stands. The train and val files were not rewritten. `out/train_voice_a.jsonl` is still 19,856,397 bytes. `out/train_voice_b.jsonl` is still 42,490,983 bytes. The harness is written. It was not executed. No OpenAI call was made. There is no scored table, no verdict, and no eval spend. V6 has not started.
+
+**Command Samuel pastes,** from `tools/lyric-llm`, after the V4 jobs have real model ids:
+
+```
+python3 base_train/voice_evaluate.py \
+    --baseline gpt-4o-mini \
+    --model-a ft:gpt-4o-mini:...:voice_a:... \
+    --model-b ft:gpt-4o-mini:...:voice_b:... \
+    --fixture out/test_voice_a.jsonl \
+    --voice-eval \
+    --out out/compare_voice_a_vs_b.md
+```
+
+**Test fixture.** Same seed-7 split as V2–V4. Written this phase. All 3,211 rows parsed.
+
+| File | Lines | FIM | Bytes |
+| --- | ---: | ---: | ---: |
+| `out/test_voice_a.jsonl` | 3211 | 642 | 1275636 |
+| `out/test_voice_b.jsonl` | 3211 | 642 | 2737655 |
+
+Counts, both files: Drake 836, Gunna 334, Lil Baby 51, Lil Wayne 1,759, NoCap 183, Young Thug 48. The command scores `test_voice_a.jsonl`. systembrief prompts are rendered from those same bars. Gitignored.
+
+**Table.** Eight metrics. A variant lifts when it beats its own baseline on at least 5 of 8. If both lift, the one that wins at least 5 of 8 head-to-head wins. If only one lifts, that one wins. If neither lifts, the verdict line is `DATASET OR BASE INSUFFICIENT — do not ship`. A tie is a tie.
+
+The Base column is the base model on the one_hot prompts. systembrief is scored on the brief prompts. `base_brief` is the base model on those same brief prompts, and that is the baseline systembrief has to beat. The report prints both.
+
+| Metric | Better |
+| --- | --- |
+| perplexity | lower |
+| end_word_match | higher |
+| syllable_precision | higher |
+| voice_match | higher |
+| inner_rhyme | higher |
+| cost_per_1000 | lower |
+| voice_flip | higher |
+| cross_voice_leakage | lower |
+
+Voice-flip is the character edit distance between a Gunna completion and a Lil Baby completion of the same bar. Default 20 contexts. Higher wins. Voice-match generates up to 100 Gunna bars and 100 Lil Baby bars with `END_WORD` left off, then Spearman against that artist's held-out end words in the test file. Lil Baby has 51 held-out rows. The generation request stays 100. Leakage is the count of those Gunna bars that contain another artist's house noun. House nouns are the names, not shared slang: Gunna wunna/ysl, Lil Baby brodie/4pf, Drake drizzy/ovo/6ix, Lil Wayne weezy/tunechi/hollygrove/wayne/tha carter, NoCap nocap, Young Thug thugger/slime. Thugger and Wayne are the nouns named in the phase.
+
+**Calls.** Default flags on this fixture plan 13,804 calls: 3,211 bars × 4 prompt pairs, plus 160 flip calls, plus 800 voice-match calls. Workers default to 4. A 429 waits 1s, 2s, 4s, up to 60s, six tries. The script prints the call count before the first request. Perplexity uses the logprobs on the generated tokens. It is `n/a` when the API sends none. Inner rhymes use `catalog_retriever.detect_inner_rhymes`. `XJournal AI/cmudict.txt` is present, 3,618,488 bytes, and the real run loads it.
+
+**Cost and duration.** Not run, so there is no spend and no duration. The script writes both from the token counts the API returns and the wall clock. Prices used for `cost_per_1000` are the 2026-10-26 page: base gpt-4o-mini $0.15 / $0.60 per 1M, fine-tune `gpt-4o-mini-2024-07-18` $0.30 / $1.20 per 1M.
+
+**Code.** `base_train/voice_evaluate.py` and `base_train/voice_test_evaluate.py`. `base_train/evaluate.py` is Grok #1's D4 file and is not on this branch. This command is `voice_evaluate.py` with the same flags, including mandatory `--voice-eval`.
+
+**Key.** The script reads `OPENAI_API_KEY` or `.env.openai` at the repo root. That file is absent. The `openai` Python package is not installed. The script does not print the key. It was not imported during the tests.
+
+**Tests:** `python3 -m unittest base_train.voice_test_evaluate base_train.voice_test_one_hot` — 26 tests, OK, on Python 3.9. That is 11 eval tests and the 15 voice tests. A fake client writes the eight-row table. No OpenAI call.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind.
+
+**QUESTIONS FOR CLAUDE:**
+1. Keep `voice_evaluate.py`, or fold it into `base_train/evaluate.py` once Grok #1's D4 lands?
+2. The V4 jobs have not been run, so there are no fine-tune ids to score. The live table waits on those ids.
+3. Which remote base should the V5 pull request use?
+
+**Next:** V6 waits for Samuel.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V6 — report (2026-10-26)
+
+**Status:** Blocked. No verdict. `one_hot` is not the default. `systembrief` is not the default. V6 does not name a winner.
+
+**Opened this pass:**
+- `tools/lyric-llm/out/compare_voice_a_vs_b.md` is absent. There is no three-column table to link.
+- `tools/lyric-llm/model_registry.json` is absent. `v5-base-mini-one-hot` and `v5-base-mini-systembrief` are not registered. No `openai_id` was read.
+- `.env.openai` is absent at the repo root and at `tools/lyric-llm/`. The `openai` Python package does not import. No voice job log is in `out/`.
+- The V4 scripts and the V5 harness were not executed. No OpenAI call was made.
+
+**Verdict:** not issued. The phase asks for one sentence, `one_hot wins` or `systembrief wins` or `tie`, plus the compare file and the two registry ids. Those inputs are not on disk.
+
+**QUESTIONS FOR CLAUDE:**
+1. V4 has not been run, so there are no fine-tune ids. V5 has not been run, so `out/compare_voice_a_vs_b.md` does not exist. Which of those should land before a verdict is written?
+2. `.env.openai` is absent, and the `openai` package is not installed. Where should the key live for the training and eval commands?
+3. Which remote base should the V6 pull request use? A pull request into `origin/main` would publish the 81 local commits that are not on `origin/main`.
+
+**Next:** V6 stays blocked until the compare file and the two registry ids exist.
+
+### GROK#3
+
+### HANDOFF ENTRY: Phase C1 — gates re-checked after Claude (2026-10-26 16:35 EDT)
+
+**Status:** Still blocked. C2 has not started.
+
+**Claude's answers, applied:**
+1. The only verdict file is `tools/lyric-llm/model_registry.json`. Each model entry's `status` is `winner`, `candidate`, `regressed`, or `no_lift`. Grok #1's D5 writes the dataset winner. Grok #2's V6 writes the conditioning winner.
+2. The key file is repo-root `.env.openai`. Scripts use `export OPENAI_API_KEY="${OPENAI_API_KEY:-$(cat .env.openai)}"`. The key is not copied into this entry.
+3. `grok/base-llm-combined-production` stays cut from `main`. Current `main` is still `25dde855`. The branch was not rebased onto anything else.
+
+**Re-opened this pass:**
+- `tools/lyric-llm/model_registry.json`. Still absent. `git log --all` has no commit for that path.
+- This handoff through the V6 entry above.
+- Grok #1's last entry is Phase D3 (2026-10-26 16:22 EDT) on `grok/base-llm-dataset-size` at `04d72f64`. That entry says registration is D5 and D4 has not started. `base_train/evaluate.py`, `base_train/register_model.py`, and `out/finetune_50k_log.jsonl` are absent.
+- Grok #2's last entry is Phase V6 on `grok/base-llm-voice-conditioning` at `b350828d`. It says blocked, no verdict. `one_hot` is not the default. `systembrief` is not the default. `out/compare_voice_a_vs_b.md` is absent.
+- Repo-root `.env.openai` is absent. `tools/lyric-llm/.env.openai` is absent. `OPENAI_API_KEY` is unset. `.gitignore` lists `tools/style-profile/.env.spotify` and does not list `.env.openai`.
+
+**Gates:**
+- Dataset experiment: missing a winner. No alias is in the registry, so none has `status: "winner"`.
+- Conditioning experiment: missing a winner. No alias is in the registry, so none has `status: "winner"`.
+- Neither experiment has `status: "regressed"` or `status: "no_lift"`, because the entries are not there.
+
+**PR:** Still not opened, and the branch was not pushed.
+
+**Contract changes:** none.
+
+**QUESTIONS FOR CLAUDE:**
+1. The dataset experiment is missing a winner. `model_registry.json` is absent. Grok #1's last handoff is D3. D5 has not written `status: "winner"`.
+2. The conditioning experiment is missing a winner. V6 says there is no verdict. `v5-base-mini-one-hot` and `v5-base-mini-systembrief` are not registered.
+3. Root `.env.openai` is not in `.gitignore`. Only `tools/style-profile/.env.spotify` is. Should `.env.openai` be ignored before Samuel creates it?
+
+**Next:** C2 waits. No combined dataset was built. No training script was written.
