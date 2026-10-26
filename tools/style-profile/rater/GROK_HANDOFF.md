@@ -482,3 +482,130 @@ from `tools/lyric-llm`. Seed 7 (`SAMPLE_SEED` was unset; Grok #1 has no D1 entry
 2. If Grok #1 replaces `build_dataset.py`, keep `--variant one_hot` and call `voice_variant.render_messages`. The voice strings stay in `voice_variant.py`.
 
 **Next:** V3 waits for Samuel.
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V3 — system-prompt brief (2026-10-26)
+
+**Status:** V2 stands. `out/train_voice_a.jsonl` is still 19,856,397 bytes and 50,000 lines. V3 is written. V4 has not started.
+
+**Command run:**
+`python3 base_train/build_dataset.py --mode 50k_sample --fim 0.2 --variant systembrief --seed 7 --out out/train_voice_b.jsonl`
+from `tools/lyric-llm`. Same seed as V2.
+
+**File:** `tools/lyric-llm/out/train_voice_b.jsonl`. 42,490,983 bytes. 50,000 lines. 10,000 fill-in-the-middle. Gitignored.
+
+**Same bars as one_hot.** All 50,000 assistant lines match `train_voice_a.jsonl` in order. Counts are unchanged: Lil Wayne 26,552, Drake 11,151, Gunna 7,005, Lil Baby 2,691, NoCap 2,212, Young Thug 389.
+
+**Shape.** System is `voice_briefs.json[artist].brief` with no added words, including on fill-in-the-middle rows. The fill-in task stays on the user turn (`ABOVE` / `BELOW`) so the brief is not replaced by the fill-in system sentence. The user turn has no `<voice:` token. Non-FIM user starts `<section: ...> <bar N of M>`.
+
+**Check.** Every one of the 50,000 system strings equals exactly one brief in `voice_briefs.json`. Zero user turns contain `<voice:`. A seeded sample of 12 rows (indices 3164, 3801, 4747, 6168, 9886, 21222, 23965, 25875, 33255, 35119, 38193, 42659) matched the same way: Drake rows carry the 99-word Drake brief, Lil Wayne rows carry the 99-word Lil Wayne brief.
+
+**Gunna, same bar as V2, system is the Gunna brief:**
+```json
+{"role":"user","content":"<section: intro> <bar 2 of 53>\nPREV_BAR: Told you we was gon' be rich\nTOPIC: untagged\nEND_WORD: chips\nSYLLABLES: 4"}
+{"role":"assistant","content":"And stack my chips"}
+```
+
+**Lil Baby, same bar as V2:**
+```json
+{"role":"user","content":"<section: intro> <bar 6 of 66>\nPREV_BAR: I'm too far for me to complain\nTOPIC: untagged\nEND_WORD: fasho\nSYLLABLES: 15"}
+{"role":"assistant","content":"No one came as hard as I done came, fasho"}
+```
+
+**Drake, fill-in-the-middle, system is the Drake brief:**
+```json
+{"role":"user","content":"ABOVE: Cause I listen to them and I don't call it come BACK\nBELOW: Considering I'm the one that you aim to displace\nEND_WORD: disgrace\nSYLLABLES: 12"}
+{"role":"assistant","content":"It's more like a shame or disgrace"}
+```
+
+**Tests:** `base_train/voice_test_one_hot.py`, 11 passed on Python 3.9. No OpenAI call.
+
+**Left alone:** the uncommitted `base_train/build_dataset.py` rewrite and `base_train/test_dataset.py` (dataset-size work). The live command already forwards `--variant` into `voice_dataset.py`. This commit does not take that rewrite.
+
+**PR:** Still not opened. Local `main` is 81 commits ahead of `origin/main` and 56 behind, and `GROK_HANDOFF.md` is not in `origin/main`.
+
+**Next:** V4 waits for Samuel.
+
+### GROK#1
+
+### HANDOFF ENTRY: Phase D1 dataset build scripts (2026-10-26)
+
+**Status:** D1 is on branch `grok/base-llm-dataset-size`, from local `main` at `25dde855`. The JSONL is under `tools/lyric-llm/out/`. D2 has not started. No OpenAI call was made.
+
+**Code:**
+- `tools/lyric-llm/base_train/build_dataset.py`
+- `tools/lyric-llm/base_train/test_dataset.py`
+- A voice CLI had replaced `build_dataset.py` with a wrapper that said this builder was not on disk. The D1 builder is restored. `--variant` or `--fim` calls `voice_dataset.py` when that file is present. That file stays on `grok/base-llm-voice-conditioning` and is not in the D1 commit. Plain D1 commands do not use those flags.
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode 50k_sample --out out/train_50k.jsonl`
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode full --out out/train_full.jsonl`
+
+**Catalog filters** on `tools/lyric-llm/out/catalog_index.sqlite` (231,278 rows, 4,763 songs, 6 artists):
+- First bar of each song dropped: 4,763
+- `is_generic=1` dropped after that: 50,882
+- Kept: 175,633
+- The table has no `is_junk` column. `lyriclib.is_junk_line` dropped 0 rows.
+- 5 songs had no bar left, so those songs are in no split.
+
+**Split:** SHA1 of artist, a NUL byte, and title. Same recipe as `clean_split.song_id_for`. Seed 7. Songs that still have a kept bar: train 4,520, val 142, test 96. `catalog_index.sqlite` has `song_id` blank on 24,431 rows, so that column is not the split key.
+
+**50k_sample** uses `SAMPLE_SEED=7`. The 50,000 train rows keep each voice's share of the 175,633 kept bars. Inside a voice, iconic anthems come first, then higher song popularity. Val and test are the full held-out songs for both modes.
+
+| Voice | 50k train | full train | val | test |
+| --- | ---: | ---: | ---: | ---: |
+| Drake | 11161 | 36770 | 1358 | 1078 |
+| Gunna | 7001 | 23598 | 439 | 554 |
+| Lil Baby | 2680 | 8710 | 438 | 266 |
+| Lil Wayne | 26602 | 89571 | 2691 | 1183 |
+| NoCap | 2172 | 7090 | 305 | 234 |
+| Young Thug | 384 | 1275 | 0 | 73 |
+| Total | 50000 | 167014 | 5231 | 3388 |
+
+The 50k train file holds bars from 1,160 songs. The train split has 4,520 songs. The iconic and popularity preference is why the sample sits in fewer songs.
+
+**Bytes, checked with `ls` and `wc -l`:**
+- `out/train_50k.jsonl` — 50,000 lines, 21,616,103 bytes
+- `out/train_full.jsonl` — 167,014 lines, 71,984,164 bytes
+- `out/val_50k.jsonl` and `out/val_full.jsonl` — 5,231 lines, 2,262,005 bytes, byte-identical
+- `out/test_50k.jsonl` and `out/test_full.jsonl` — 3,388 lines, 1,460,273 bytes, byte-identical
+
+On-disk check: every line in `train_50k.jsonl` is in `train_full.jsonl`, and the full file is longer (50,000 vs 167,014). `out/` is gitignored. The JSONL is not in the commit.
+
+**First row of each voice in the written train file.** 50k shows that voice's top-ranked bar. Full shows catalog order, so those rows are early bars.
+
+50k assistants:
+- Drake: It's a Slaughter Gang CEO
+- Gunna: Keep me a stick if they purge
+- Lil Baby: Every other night, another dollar gettin' made
+- Lil Wayne: You pop 'em 'cause we pop 'em like Orville Redenbacher
+- NoCap: All that free time got 'em lyin', but I'm too busy being honest
+- Young Thug: Half a million, I just did a warm-up for half a million, uh, uh, mmm
+
+Full assistants:
+- Drake: Uh, thinkin' out loud
+- Gunna: Say you 'bout it for me, is you sure?
+- Lil Baby: Tryna make a dollar when I only had some change
+- Lil Wayne: Ain't afraid to die, I'm just afraid to die sober
+- NoCap: I ain't just rappin like this, at night before I go to sleep I really pray for my n*ggas
+- Young Thug: You talkin' all that shit, you cross the street, get hit
+
+**Tests:** from `tools/lyric-llm`, `python3 -m unittest base_train.test_dataset` — 7 tests, OK. The tests build a tiny sqlite. The builder source has no OpenAI client and no API key. `base_train.voice_test_one_hot` also passed (10 tests), including the `--variant one_hot --fim 0.2` command.
+
+**Choices:**
+- `tools/lyric-llm/export_genius_to_jsonl.py` is not in the tree. The message shape is the shape in the phase spec.
+- Section is `intro` or `verse`. `chronological_arc` maps intro to intro, and verse_build, verse_turn, and climax_punch to verse.
+- A blank topic is `unknown`.
+- Val and test paths are `out/val_50k.jsonl`, `out/test_50k.jsonl`, `out/val_full.jsonl`, and `out/test_full.jsonl`. `out/val.jsonl` and `out/test.jsonl` are the existing MLX song split, and this phase left those files alone.
+- Long songs stayed in, including Drake battle-rap transcripts. There is no length cap in D1.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind. `origin/main` has no `tools/lyric-llm/lyriclib.py`. A pull request into `origin/main` would publish those 81 commits.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. Keep the section map (`intro` or `verse`) and `TOPIC: unknown` for D2?
+2. D3 names `out/val.jsonl`. D1 wrote `out/val_full.jsonl`, byte-identical to `out/val_50k.jsonl`. Which file should the fine-tune upload?
+3. The 50k iconic/popularity preference puts 50,000 bars in 1,160 songs. Keep that, or draw more widely inside each voice?
+4. Which remote base should the D1 pull request use?
+
+**Next:** D2 waits for Samuel's ok.

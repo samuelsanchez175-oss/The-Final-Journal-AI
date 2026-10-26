@@ -17,7 +17,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import quote
 
-from voice_variant import render_messages, section_name, topic_name
+from voice_variant import load_briefs, render_messages, section_name, topic_name
 
 DEFAULT_SEED = 7
 SAMPLE_SIZE = 50_000
@@ -303,7 +303,8 @@ def build(
     examples = eligible_examples(bars, train_keys)
     picked = sample_examples(examples, mode, seed, sample_size)
     marked = assign_fim(picked, fim_rate, seed)
-    return [render_messages(row.as_dict(), variant) for row in marked]
+    briefs = load_briefs() if variant == "systembrief" else None
+    return [render_messages(row.as_dict(), variant, briefs) for row in marked]
 
 
 def identity_pairs(catalog: Path, mode: str, seed: int, sample_size: int) -> set[tuple[str, int]]:
@@ -332,14 +333,20 @@ def resolve_seed(cli_seed: int | None) -> int:
     return int(raw)
 
 
-def summarize(records: list[dict]) -> str:
+def summarize(records: list[dict], briefs: dict | None = None) -> str:
+    by_brief = {}
+    if briefs:
+        by_brief = {entry["brief"]: artist for artist, entry in briefs.items()}
     voices: dict[str, int] = {}
     fim = 0
     for record in records:
         system = record["messages"][0]["content"]
         user = record["messages"][1]["content"]
-        if system == "Write the missing bar. Context above and below is from the same song.":
+        if user.startswith("ABOVE: ") or "\nABOVE: " in user:
             fim += 1
+        if system in by_brief:
+            artist = by_brief[system]
+        elif system.startswith("Write the missing bar"):
             artist = user.split(">", 1)[0].replace("<voice: ", "")
         else:
             artist = system.split(".", 1)[0].replace("Write bars like ", "")

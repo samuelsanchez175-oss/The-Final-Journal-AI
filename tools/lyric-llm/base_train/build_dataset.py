@@ -28,7 +28,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build an OpenAI chat JSONL from the lyric catalog.")
     parser.add_argument("--mode", required=True, choices=("50k_sample", "full"))
     parser.add_argument("--fim", type=float, default=0.0)
-    parser.add_argument("--variant", default="one_hot", choices=("one_hot",))
+    parser.add_argument("--variant", default="one_hot", choices=("one_hot", "systembrief"))
     parser.add_argument("--out", required=True, type=Path)
     parser.add_argument("--catalog", type=Path, default=None)
     parser.add_argument("--seed", type=int, default=None)
@@ -48,9 +48,10 @@ def main(argv: list[str] | None = None) -> int:
     )
     voice_dataset.write_jsonl(records, args.out)
     size = args.out.stat().st_size
+    briefs = voice_dataset.load_briefs() if args.variant == "systembrief" else None
     print(
         f"mode={args.mode} variant={args.variant} seed={seed} "
-        f"bytes={size} {voice_dataset.summarize(records)}"
+        f"bytes={size} {voice_dataset.summarize(records, briefs)}"
     )
     print(args.out)
     return 0

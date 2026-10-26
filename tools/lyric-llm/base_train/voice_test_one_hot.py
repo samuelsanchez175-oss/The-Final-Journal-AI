@@ -165,9 +165,84 @@ class VoiceVariantTests(unittest.TestCase):
         self.assertNotIn("<section:", user)
         self.assertNotIn("<voice: Gunna>", user)
 
-    def test_systembrief_is_not_this_phase(self) -> None:
+    def test_systembrief_is_verbatim_and_has_no_voice_token(self) -> None:
+        briefs = voice_variant.load_briefs()
+        example = {
+            "artist": "Gunna",
+            "section": "verse",
+            "line_seq": 7,
+            "total_lines": 16,
+            "prev_text": "previous line",
+            "topic": "luxury_brands",
+            "end_word": "mercedes",
+            "syllables": 17,
+            "text": "the kept bar",
+            "next_text": "next line",
+            "fim": False,
+        }
+        record = voice_variant.render_messages(example, "systembrief", briefs)
+        messages = record["messages"]
+        self.assertEqual(messages[0]["content"], briefs["Gunna"]["brief"])
+        self.assertTrue(messages[1]["content"].startswith("<section: verse> <bar 7 of 16>"))
+        self.assertNotIn("<voice:", messages[1]["content"])
+        self.assertIn("PREV_BAR: previous line", messages[1]["content"])
+        self.assertEqual(messages[2]["content"], "the kept bar")
+
+    def test_systembrief_fim_keeps_the_brief(self) -> None:
+        briefs = voice_variant.load_briefs()
+        record = voice_variant.render_messages(
+            {
+                "artist": "Lil Baby",
+                "section": "verse",
+                "line_seq": 3,
+                "total_lines": 8,
+                "prev_text": "above bar",
+                "topic": "untagged",
+                "end_word": "hood",
+                "syllables": 12,
+                "text": "missing bar",
+                "next_text": "below bar",
+                "fim": True,
+            },
+            "systembrief",
+            briefs,
+        )
+        self.assertEqual(record["messages"][0]["content"], briefs["Lil Baby"]["brief"])
+        user = record["messages"][1]["content"]
+        self.assertTrue(user.startswith("ABOVE: above bar\nBELOW: below bar\n"))
+        self.assertNotIn("<voice:", user)
+        self.assertNotIn("<section:", user)
+
+    def test_summarize_counts_systembrief_fim(self) -> None:
+        briefs = voice_variant.load_briefs()
+        record = voice_variant.render_messages(
+            {
+                "artist": "Lil Baby",
+                "section": "verse",
+                "line_seq": 3,
+                "total_lines": 8,
+                "prev_text": "above bar",
+                "topic": "untagged",
+                "end_word": "hood",
+                "syllables": 12,
+                "text": "missing bar",
+                "next_text": "below bar",
+                "fim": True,
+            },
+            "systembrief",
+            briefs,
+        )
+        summary = voice_dataset.summarize([record], briefs)
+        self.assertIn("fim=1", summary)
+        self.assertIn("Lil Baby=1", summary)
+
+    def test_systembrief_missing_artist_raises(self) -> None:
         with self.assertRaises(ValueError):
-            voice_variant.render_messages({"artist": "Gunna", "fim": False}, "systembrief")
+            voice_variant.render_messages(
+                {"artist": "Nobody", "fim": False},
+                "systembrief",
+                {"Gunna": {"brief": "x"}},
+            )
 
     def test_section_map(self) -> None:
         self.assertEqual(voice_variant.section_name("intro"), "intro")
