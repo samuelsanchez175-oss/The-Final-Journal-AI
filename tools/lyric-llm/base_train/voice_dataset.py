@@ -9,6 +9,7 @@ bars. SAMPLE_SEED defaults to 7, the seed clean_split.py already uses.
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import random
@@ -307,6 +308,26 @@ def build(
     return [render_messages(row.as_dict(), variant, briefs) for row in marked]
 
 
+def build_role(
+    catalog: Path,
+    role: str,
+    variant: str,
+    fim_rate: float,
+    seed: int,
+) -> list[dict]:
+    """Every kept bar in the val or test songs. The 50k draw stays on train."""
+    if role not in {"val", "test"}:
+        raise ValueError(f"role {role!r} is not a held-out split")
+    bars = load_bars(catalog)
+    keys = sorted({bar.song_key for bar in bars})
+    roles = split_songs(keys, seed)
+    role_keys = {key for key, assigned in roles.items() if assigned == role}
+    examples = eligible_examples(bars, role_keys)
+    marked = assign_fim(examples, fim_rate, seed)
+    briefs = load_briefs() if variant == "systembrief" else None
+    return [render_messages(row.as_dict(), variant, briefs) for row in marked]
+
+
 def identity_pairs(catalog: Path, mode: str, seed: int, sample_size: int) -> set[tuple[str, int]]:
     """Song key and line number for each kept assistant bar, before rendering."""
     bars = load_bars(catalog)
@@ -353,3 +374,32 @@ def summarize(records: list[dict], briefs: dict | None = None) -> str:
         voices[artist] = voices.get(artist, 0) + 1
     parts = [f"{artist}={voices[artist]}" for artist in sorted(voices)]
     return f"examples={len(records)} fim={fim} " + " ".join(parts)
+
+
+def main(argv: list[str] | None = None) -> int:
+    """Write a val or test voice file. Does not rewrite the train JSONL."""
+    parser = argparse.ArgumentParser(description="Write a voice val or test JSONL.")
+    parser.add_argument("--role", choices=("val", "test"), required=True)
+    parser.add_argument("--variant", choices=("one_hot", "systembrief"), required=True)
+    parser.add_argument("--fim", type=float, default=0.2)
+    parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument("--catalog", type=Path, default=None)
+    parser.add_argument("--out", type=Path, required=True)
+    args = parser.parse_args(argv)
+    seed = resolve_seed(args.seed)
+    catalog = args.catalog or (
+        Path(__file__).resolve().parent.parent / "out" / "catalog_index.sqlite"
+    )
+    records = build_role(catalog, args.role, args.variant, args.fim, seed)
+    write_jsonl(records, args.out)
+    briefs = load_briefs() if args.variant == "systembrief" else None
+    size = args.out.stat().st_size
+    print(
+        f"role={args.role} variant={args.variant} seed={seed} "
+        f"bytes={size} {summarize(records, briefs)}"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

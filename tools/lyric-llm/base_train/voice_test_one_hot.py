@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import build_dataset  # noqa: E402
 import voice_dataset  # noqa: E402
+import voice_register  # noqa: E402
 import voice_variant  # noqa: E402
 
 
@@ -330,6 +331,116 @@ class SplitAndFilterTests(unittest.TestCase):
                 else:
                     self.assertIn("<section: ", user)
             self.assertEqual(fim, int(round(0.2 * len(lines))))
+
+
+class HeldOutAndRegisterTests(unittest.TestCase):
+    def test_val_is_disjoint_from_train_and_keeps_the_brief(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            catalog = Path(tmp) / "catalog.sqlite"
+            _write_catalog(catalog, _fixture_rows())
+            bars = voice_dataset.load_bars(catalog)
+            roles = voice_dataset.split_songs(sorted({bar.song_key for bar in bars}), 7)
+            train_keys = {key for key, role in roles.items() if role == "train"}
+            val_keys = {key for key, role in roles.items() if role == "val"}
+            self.assertTrue(val_keys)
+            self.assertFalse(train_keys & val_keys)
+            train_ids = {
+                (row.song_key, row.line_seq)
+                for row in voice_dataset.eligible_examples(bars, train_keys)
+            }
+            val_examples = voice_dataset.eligible_examples(bars, val_keys)
+            val_ids = {(row.song_key, row.line_seq) for row in val_examples}
+            self.assertTrue(val_ids)
+            self.assertFalse(train_ids & val_ids)
+            briefs = voice_variant.load_briefs()
+            records = voice_dataset.build_role(catalog, "val", "systembrief", 0.2, 7)
+            self.assertEqual(len(records), len(val_examples))
+            for record in records:
+                self.assertIn(record["messages"][0]["content"], {
+                    briefs["Gunna"]["brief"],
+                    briefs["Lil Baby"]["brief"],
+                })
+                self.assertNotIn("<voice:", record["messages"][1]["content"])
+            one_hot = voice_dataset.build_role(catalog, "val", "one_hot", 0.2, 7)
+            self.assertEqual(len(one_hot), len(records))
+            for record in one_hot:
+                self.assertIn("<voice:", record["messages"][1]["content"])
+
+    def test_register_appends_alias_and_leaves_shared_seed(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "model_registry.json"
+            path.write_text(
+                json.dumps({"models": {}, "shared": {"sample_seed": 7, "schema_version": 1}}),
+                encoding="utf-8",
+            )
+            voice_register.register(
+                path,
+                "v5-base-mini-one-hot",
+                "ft:gpt-4o-mini:pennworkstudios:v5-base-voice-a:test",
+                "ftjob-test",
+                "voice_conditioning",
+                "one_hot",
+                "out/train_voice_a.jsonl",
+                "out/val_voice_a.jsonl",
+                50000,
+                3,
+                7,
+                0.2,
+            )
+            data = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual(data["shared"]["sample_seed"], 7)
+            row = data["models"]["v5-base-mini-one-hot"]
+            self.assertEqual(row["variant"], "one_hot")
+            self.assertEqual(row["trained_by"], "grok#2")
+            self.assertEqual(row["n_epochs"], 3)
+            self.assertNotIn("OPENAI_API_KEY", path.read_text(encoding="utf-8"))
+            with self.assertRaises(SystemExit):
+                voice_register.register(
+                    path,
+                    "v5-base-mini-one-hot",
+                    "ft:gpt-4o-mini:pennworkstudios:other:test",
+                    "ftjob-other",
+                    "voice_conditioning",
+                    "one_hot",
+                    "out/train_voice_a.jsonl",
+                    "out/val_voice_a.jsonl",
+                    50000,
+                    3,
+                    7,
+                    0.2,
+                )
+            again = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual(len(again["models"]), 1)
+
+    def test_check_seed_stops_on_a_different_registry_seed(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "model_registry.json"
+            self.assertIn("absent", voice_register.check_shared_seed(path, 7))
+            path.write_text(json.dumps({"shared": {"sample_seed": 11}}), encoding="utf-8")
+            with self.assertRaises(SystemExit):
+                voice_register.check_shared_seed(path, 7)
+
+    def test_train_scripts_name_the_alias_and_do_not_echo_the_key(self) -> None:
+        root = Path(__file__).resolve().parent
+        one_hot = (root / "train_voice_a.sh").read_text(encoding="utf-8")
+        brief = (root / "train_voice_b.sh").read_text(encoding="utf-8")
+        for script in (one_hot, brief):
+            self.assertIn("set -euo pipefail", script)
+            self.assertIn("-m gpt-4o-mini", script)
+            self.assertIn('{"n_epochs": 3}', script)
+            self.assertIn("--check-seed 7", script)
+            self.assertIn("--fim-share 0.2", script)
+            self.assertNotIn("echo \"$OPENAI_API_KEY\"", script)
+            self.assertNotIn("echo $OPENAI_API_KEY", script)
+            self.assertNotIn("register_model.py", script)
+        self.assertIn("v5-base-mini-one-hot", one_hot)
+        self.assertIn("out/train_voice_a.jsonl", one_hot)
+        self.assertIn("v5-base-voice-a", one_hot)
+        self.assertNotIn("systembrief", one_hot)
+        self.assertIn("v5-base-mini-systembrief", brief)
+        self.assertIn("out/train_voice_b.jsonl", brief)
+        self.assertIn("v5-base-voice-b", brief)
+        self.assertNotIn("one_hot", brief)
 
 
 if __name__ == "__main__":
