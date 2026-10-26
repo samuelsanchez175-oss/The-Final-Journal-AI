@@ -400,3 +400,42 @@ files and a HANDOFF ENTRY.
   - **68/68 tests passing** across all 12 test suites:
     `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5), `test_dynamic_cap.py` (5/5), `test_section_modes.py` (5/5), `test_whisper_seed.py` (9/9).
 - **Next Frontier v4 Milestone:** Full Frontier v4 suite is live. Next is live batch generation & Sparkler Rater evaluation (20 verses, mean `verse_score` target $\ge 6/10$).
+
+### GROK#2
+
+### HANDOFF ENTRY: Phase V1 — Voice-brief corpus (2026-10-26)
+
+**Status:** V1 is written. V2 has not started. Waiting on Samuel before the next phase.
+
+**Branch:** `grok/base-llm-voice-conditioning`, cut from local `main` at `25dde855`.
+
+**What was opened:**
+- `tools/lyric-llm/out/catalog_index.sqlite`. 231,278 rows. 6 artist strings. Every one of them has at least 500 lines.
+- `export_genius_to_jsonl.py` at the repo root. 340 lines. The OpenAI JSONL shape is there (system, user, assistant). The path `tools/lyric-llm/export_genius_to_jsonl.py` is not in this tree.
+- `tools/lyric-llm/base_train/` did not exist before this phase. `build_dataset.py` is not on disk. This handoff file has no Grok #1 D1 seed.
+- `tools/lyric-llm/out/catalog_index.v5.sqlite` was not opened. The briefs use the live index named in the task.
+
+**Artists covered: 6 of 6.**
+- Lil Wayne — 122,057 lines, median 11 syllables
+- Drake — 53,675 lines, median 11
+- Gunna — 31,070 lines, median 11
+- Lil Baby — 12,688 lines, median 12
+- NoCap — 10,057 lines, median 13
+- Young Thug — 1,731 lines, 35 songs, median 10
+
+**File written:** `tools/lyric-llm/base_train/voice_briefs.json`. Each `brief` is 93–99 words. Slang and signature rhymes are tokens and end-pairs that the sqlite counts actually repeat. Roley is one Gunna line, so it is not in the slang array. Henny is six Gunna lines and is in the array, with the brief saying to use it sparingly. The sample pairs mercedes/crazy, audi/rowdy, and stylist/polished do not repeat as consecutive end rhymes here. Gunna does end 23 lines on mercedes and 7 on audi.
+
+**Gunna (94 words):** Atlanta melodic trap with a short pocket. In this catalog the median bar is 11 syllables, about half the lines sit at 10-14, and the 15-19 stretch is the minority. Designer flex and a quieter pain line share the verse. Keep Wunna, drip, YSL, Patek, VVS, Dior, biscotti, and slatt when they fit. Henny is uncommon, so use it sparingly. End words lean on it, yeah, and me. Pairs that repeat are ride/slide, choice/voice, and check/neck. Songs that mark the voice here are WUNNA, fukumean, pushin P, one of wun, and Drip Too Hard.
+
+**Lil Baby (93 words):** Atlanta street rap with a longer bar. The median is 12 syllables, a quarter of the lines run 15-19, and the upper band reaches about 17. The verse stays on the trenches, the plug, the bros, and a plain claim of being real, with romance when that topic is tagged. House words are brodie, 4PF, dawg, racks, hundred, trenches, and plug. Woah is the ad-lib. End rhymes stay plain: day/way, good/hood, all/ball, and deal/real. Anthems in this index are Woah, Yes Indeed, Drip Too Hard, The Bigger Picture, Close Friends, and My Dawg.
+
+**Drake (99 words):** Toronto talk-rap. The median bar is 11 syllables, with a wide middle from 8 to 14. Romance is the biggest tagged topic. The line sounds like someone moving through the night, and the end words pile up on me, you, yeah, time, and know. House tags are Drizzy, OVO, 6ix, Toronto, and Issa. Guest names in a collab row stay guests. Pairs that repeat are face/place, alone/phone, and feel/real. Anthems in this index are Rich Flex, First Person Shooter, Passionfruit, Jimmy Cooks, Laugh Now Cry Later, and Nonstop. Long battle-rap transcripts under this artist string are not the voice.
+
+**PR:** Not opened. Local `main` is 81 commits ahead of `origin/main` and 56 behind. A pull request from this branch against `origin/main` would publish those 81 commits. The V1 commit is local only until Samuel says which base the PR should use.
+
+**QUESTIONS FOR CLAUDE:**
+1. Drake's longest songs in this index are battle-rap transcripts. Dizaster vs. DNA is 903 lines at popularity 0. Should the shared dataset drop those songs before the voice runs?
+2. Where is Grok #1's `build_dataset.py`, and what seed did the D1 entry publish? Neither is in this tree or in this handoff file. V2 imports that builder. It does not re-implement it.
+3. Young Stoner Life is not an artist string in `catalog_index.sqlite`. The Young Thug brief stays on the 1,731-line credit. Gunna rows contain the token ysl on 106 lines. Confirm that split.
+
+**Next:** V2 (one_hot variant) waits for Samuel's ok, and for Grok #1's builder.
