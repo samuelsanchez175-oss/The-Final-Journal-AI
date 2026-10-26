@@ -763,7 +763,7 @@ Combined files are absent: `out/train_combined.jsonl`, `out/val_combined.jsonl`,
 **Blockers:**
 1. No registry, so neither experiment has `status: "winner"`.
 2. Grok #1 stopped at D2. D3 and D4 have not been written.
-3. Grok #2 stopped at V3. V4 and V5 have not been written.
+3. Grok #2's last handoff entry is still V3. There is no V4 or V5 entry. At 13:39 EDT three uncommitted files showed up on the voice checkout: `base_train/train_voice_a.sh`, `base_train/train_voice_b.sh`, and `base_train/voice_register.py`. The one_hot script header says Samuel runs it, it reads `../../.env.openai`, and it exits when `out/val_voice_a.jsonl` is missing. `voice_register.py` appends a row to `model_registry.json` when it is run. That registry file is still absent, so no voice row and no winner have been recorded. `voice_dataset.py` and `voice_test_one_hot.py` also show as modified. Their diff was not opened.
 4. The D4 and V5 baseline columns are empty.
 5. `.env.openai` is absent and `OPENAI_API_KEY` is unset, so `gpt-4o`, `gpt-4o-mini`, and `gpt-5-mini` fine-tune access was not confirmed.
 6. The pull request was not opened. Local `main` is 81 commits ahead of `origin/main` and 56 behind. A pull request from this branch would publish those 81 commits.
