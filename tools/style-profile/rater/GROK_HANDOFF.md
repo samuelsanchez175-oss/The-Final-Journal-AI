@@ -400,3 +400,86 @@ files and a HANDOFF ENTRY.
   - **68/68 tests passing** across all 12 test suites:
     `test_grid_gate.py` (7/7), `test_taste_blocks_v4.py` (5/5), `test_v4_planner.py` (4/4), `test_frontier_v4.py` (4/4), `test_catalog_retriever_v2.py` (7/7), `test_v4_telemetry.py` (5/5), `test_prompt_cache.py` (6/6), `test_spotify_popularity.py` (6/6), `test_entity_guard.py` (5/5), `test_dynamic_cap.py` (5/5), `test_section_modes.py` (5/5), `test_whisper_seed.py` (9/9).
 - **Next Frontier v4 Milestone:** Full Frontier v4 suite is live. Next is live batch generation & Sparkler Rater evaluation (20 verses, mean `verse_score` target $\ge 6/10$).
+
+### GROK#1
+
+### HANDOFF ENTRY: Phase D1 dataset build scripts (2026-10-26)
+
+**Status:** D1 is on branch `grok/base-llm-dataset-size`, from local `main` at `25dde855`. The JSONL is under `tools/lyric-llm/out/`. D2 has not started. No OpenAI call was made.
+
+**Code:**
+- `tools/lyric-llm/base_train/build_dataset.py`
+- `tools/lyric-llm/base_train/test_dataset.py`
+- A voice CLI had replaced `build_dataset.py` with a wrapper that said this builder was not on disk. The D1 builder is restored. `--variant` or `--fim` calls `voice_dataset.py` when that file is present. That file stays on `grok/base-llm-voice-conditioning` and is not in the D1 commit. Plain D1 commands do not use those flags.
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode 50k_sample --out out/train_50k.jsonl`
+- `SAMPLE_SEED=7 python3 base_train/build_dataset.py --mode full --out out/train_full.jsonl`
+
+**Catalog filters** on `tools/lyric-llm/out/catalog_index.sqlite` (231,278 rows, 4,763 songs, 6 artists):
+- First bar of each song dropped: 4,763
+- `is_generic=1` dropped after that: 50,882
+- Kept: 175,633
+- The table has no `is_junk` column. `lyriclib.is_junk_line` dropped 0 rows.
+- 5 songs had no bar left, so those songs are in no split.
+
+**Split:** SHA1 of artist, a NUL byte, and title. Same recipe as `clean_split.song_id_for`. Seed 7. Songs that still have a kept bar: train 4,520, val 142, test 96. `catalog_index.sqlite` has `song_id` blank on 24,431 rows, so that column is not the split key.
+
+**50k_sample** uses `SAMPLE_SEED=7`. The 50,000 train rows keep each voice's share of the 175,633 kept bars. Inside a voice, iconic anthems come first, then higher song popularity. Val and test are the full held-out songs for both modes.
+
+| Voice | 50k train | full train | val | test |
+| --- | ---: | ---: | ---: | ---: |
+| Drake | 11161 | 36770 | 1358 | 1078 |
+| Gunna | 7001 | 23598 | 439 | 554 |
+| Lil Baby | 2680 | 8710 | 438 | 266 |
+| Lil Wayne | 26602 | 89571 | 2691 | 1183 |
+| NoCap | 2172 | 7090 | 305 | 234 |
+| Young Thug | 384 | 1275 | 0 | 73 |
+| Total | 50000 | 167014 | 5231 | 3388 |
+
+The 50k train file holds bars from 1,160 songs. The train split has 4,520 songs. The iconic and popularity preference is why the sample sits in fewer songs.
+
+**Bytes, checked with `ls` and `wc -l`:**
+- `out/train_50k.jsonl` — 50,000 lines, 21,616,103 bytes
+- `out/train_full.jsonl` — 167,014 lines, 71,984,164 bytes
+- `out/val_50k.jsonl` and `out/val_full.jsonl` — 5,231 lines, 2,262,005 bytes, byte-identical
+- `out/test_50k.jsonl` and `out/test_full.jsonl` — 3,388 lines, 1,460,273 bytes, byte-identical
+
+On-disk check: every line in `train_50k.jsonl` is in `train_full.jsonl`, and the full file is longer (50,000 vs 167,014). `out/` is gitignored. The JSONL is not in the commit.
+
+**First row of each voice in the written train file.** 50k shows that voice's top-ranked bar. Full shows catalog order, so those rows are early bars.
+
+50k assistants:
+- Drake: It's a Slaughter Gang CEO
+- Gunna: Keep me a stick if they purge
+- Lil Baby: Every other night, another dollar gettin' made
+- Lil Wayne: You pop 'em 'cause we pop 'em like Orville Redenbacher
+- NoCap: All that free time got 'em lyin', but I'm too busy being honest
+- Young Thug: Half a million, I just did a warm-up for half a million, uh, uh, mmm
+
+Full assistants:
+- Drake: Uh, thinkin' out loud
+- Gunna: Say you 'bout it for me, is you sure?
+- Lil Baby: Tryna make a dollar when I only had some change
+- Lil Wayne: Ain't afraid to die, I'm just afraid to die sober
+- NoCap: I ain't just rappin like this, at night before I go to sleep I really pray for my n*ggas
+- Young Thug: You talkin' all that shit, you cross the street, get hit
+
+**Tests:** from `tools/lyric-llm`, `python3 -m unittest base_train.test_dataset` — 7 tests, OK. The tests build a tiny sqlite. The builder source has no OpenAI client and no API key. `base_train.voice_test_one_hot` also passed (10 tests), including the `--variant one_hot --fim 0.2` command.
+
+**Choices:**
+- `tools/lyric-llm/export_genius_to_jsonl.py` is not in the tree. The message shape is the shape in the phase spec.
+- Section is `intro` or `verse`. `chronological_arc` maps intro to intro, and verse_build, verse_turn, and climax_punch to verse.
+- A blank topic is `unknown`.
+- Val and test paths are `out/val_50k.jsonl`, `out/test_50k.jsonl`, `out/val_full.jsonl`, and `out/test_full.jsonl`. `out/val.jsonl` and `out/test.jsonl` are the existing MLX song split, and this phase left those files alone.
+- Long songs stayed in, including Drake battle-rap transcripts. There is no length cap in D1.
+
+**PR:** Not opened, and the branch was not pushed. Local `main` is 81 commits ahead of `origin/main` and 56 behind. `origin/main` has no `tools/lyric-llm/lyriclib.py`. A pull request into `origin/main` would publish those 81 commits.
+
+**Contract changes:** none for the rater.
+
+**QUESTIONS FOR CLAUDE:**
+1. Keep the section map (`intro` or `verse`) and `TOPIC: unknown` for D2?
+2. D3 names `out/val.jsonl`. D1 wrote `out/val_full.jsonl`, byte-identical to `out/val_50k.jsonl`. Which file should the fine-tune upload?
+3. The 50k iconic/popularity preference puts 50,000 bars in 1,160 songs. Keep that, or draw more widely inside each voice?
+4. Which remote base should the D1 pull request use?
+
+**Next:** D2 waits for Samuel's ok.
