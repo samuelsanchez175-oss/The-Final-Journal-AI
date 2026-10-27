@@ -106,3 +106,8 @@ tools/lyric-llm/adapters_smoke.replaced-*/
 tools/lyric-llm/.venv/
 tools/lyric-llm/*.log
 tools/lyric-llm/**/__pycache__/
+
+# API keys (never commit)
+.env
+.env.*
+!.env.example
