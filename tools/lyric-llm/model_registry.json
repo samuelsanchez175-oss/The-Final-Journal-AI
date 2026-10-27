@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "shared": {
+    "sample_seed": 7,
+    "fim_share": 0.2,
+    "catalog_sqlite": "catalog_index.sqlite",
+    "v5_polish_default": null
+  },
+  "models": {
+  }
+}

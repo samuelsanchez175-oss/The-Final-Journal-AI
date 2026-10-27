@@ -9,9 +9,26 @@ Zero key logging in all error and telemetry paths.
 
 from __future__ import annotations
 
+import json
 import os
+from pathlib import Path
 import re
 from typing import Any, Optional
+
+# Load ~/.env or repo root .env if present
+try:
+    for env_path in (Path(__file__).resolve().parent.parent.parent / ".env", Path.home() / ".env"):
+        if env_path.is_file():
+            with env_path.open("r", encoding="utf-8") as f:
+                for line in f:
+                    s_line = line.strip()
+                    if s_line and not s_line.startswith("#") and "=" in s_line:
+                        k, v = s_line.split("=", 1)
+                        k, v = k.strip(), v.strip().strip("\"'")
+                        if k not in os.environ and v:
+                            os.environ[k] = v
+except Exception:
+    pass
 
 try:
     import anthropic
@@ -37,6 +54,34 @@ MODEL_ALIASES: dict[str, str] = {
     "gh/gpt-4o-mini": "gpt-4o-mini",
     "gh/gpt-4o": "gpt-4o",
 }
+
+
+def _load_registry_aliases() -> None:
+    """Register fine-tune aliases from tools/lyric-llm/model_registry.json.
+
+    Each models.<alias>.openai_id is added to MODEL_ALIASES. Missing or
+    malformed file is silently skipped: the file is optional until the first
+    fine-tune lands.
+    """
+    try:
+        path = Path(__file__).resolve().parent / "model_registry.json"
+        if not path.is_file():
+            return
+        data = json.loads(path.read_text(encoding="utf-8"))
+        models = data.get("models") if isinstance(data, dict) else None
+        if not isinstance(models, dict):
+            return
+        for alias, meta in models.items():
+            if not isinstance(meta, dict):
+                continue
+            model_id = meta.get("openai_id")
+            if isinstance(model_id, str) and model_id:
+                MODEL_ALIASES.setdefault(alias, model_id)
+    except Exception:
+        return
+
+
+_load_registry_aliases()
 
 
 def resolve_model_name(model: str) -> str:
@@ -92,14 +137,15 @@ def chat(
             temperature=temperature,
         )
         if response and response.content:
-            return response.content[0].text or ""
-        return ""
+            return _finish(resolved, system, user, response.content[0].text or "", response)
+        return _finish(resolved, system, user, "", response)
 
-    # 2. OpenAI Provider (gpt-*, o1-*, o3-*, or default)
+    # 2. OpenAI Provider (gpt-*, o1-*, o3-*, ft:<base>:..., or default)
     if (
         resolved.startswith("gpt")
         or resolved.startswith("o1")
         or resolved.startswith("o3")
+        or resolved.startswith("ft:")
         or "openai" in resolved
     ):
         if openai_client is not None:
@@ -126,7 +172,15 @@ def chat(
 
         response = client.chat.completions.create(**kwargs)
         if response and response.choices:
-            return response.choices[0].message.content or ""
-        return ""
+            return _finish(resolved, system, user, response.choices[0].message.content or "", response)
+        return _finish(resolved, system, user, "", response)
 
     raise ValueError(f"Unsupported model provider for model '{model}'. Prefix must indicate claude or gpt.")
+
+
+def _finish(model: str, system: str, user: str, text: str, response: Any) -> str:
+    """Record tokens when a verse CostTracker is bound. A blown budget stays loud."""
+    from cost_tracker import note_chat
+
+    note_chat(model, system, user, text, response)
+    return text
