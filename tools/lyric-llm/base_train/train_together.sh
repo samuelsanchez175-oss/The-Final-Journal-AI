@@ -21,7 +21,7 @@ cd "${LYRIC_LLM_ROOT:-$LYRIC_LLM}"
 REPO_ROOT="$(cd ../.. && pwd)"
 
 MODE="${1:-}"
-BASE_MODEL="${TOGETHER_BASE_MODEL:-meta-llama/Meta-Llama-3.1-8B-Instruct-Reference}"
+BASE_MODEL="${TOGETHER_BASE_MODEL:-meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo}"
 POLL_SECONDS="${POLL_SECONDS:-60}"
 
 case "$MODE" in
@@ -67,24 +67,27 @@ case "$MODE" in
     ;;
 esac
 
-if [[ -n "${TOGETHER_ENV_FILE:-}" ]]; then
+if [[ -n "${TOGETHER_API_KEY:-}" ]]; then
+  : # already in env; use as-is
+elif [[ -n "${TOGETHER_ENV_FILE:-}" ]]; then
   ENV_FILE="$TOGETHER_ENV_FILE"
 elif [[ -s .env.together ]]; then
   ENV_FILE=".env.together"
 elif [[ -s "$REPO_ROOT/.env.together" ]]; then
   ENV_FILE="$REPO_ROOT/.env.together"
 else
-  echo "missing .env.together (one line: your Together.ai API key)" >&2
+  echo "missing TOGETHER_API_KEY env var or .env.together" >&2
   exit 1
 fi
 
-# Accept both KEY= and raw key formats
-RAW="$(tr -d '\r\n' < "$ENV_FILE")"
-case "$RAW" in
-  TOGETHER_API_KEY=*)  export TOGETHER_API_KEY="${RAW#TOGETHER_API_KEY=}" ;;
-  *)                    export TOGETHER_API_KEY="$RAW" ;;
-esac
-unset RAW
+if [[ -z "${TOGETHER_API_KEY:-}" ]]; then
+  RAW="$(tr -d '\r\n' < "$ENV_FILE")"
+  case "$RAW" in
+    TOGETHER_API_KEY=*)  export TOGETHER_API_KEY="${RAW#TOGETHER_API_KEY=}" ;;
+    *)                    export TOGETHER_API_KEY="$RAW" ;;
+  esac
+  unset RAW
+fi
 
 for f in "$TRAIN_FILE" "$VAL_FILE"; do
   [[ -s "$f" ]] || { echo "missing $f" >&2; exit 1; }
@@ -150,10 +153,10 @@ if [[ "$STATUS" != "completed" && "$STATUS" != "succeeded" ]]; then
   exit 1
 fi
 
-MODEL_ID="$(printf '%s' "$RESP" | jq -r '.output_name // .model_output_name // .fine_tuned_model // empty')"
+MODEL_ID="$(printf '%s' "$RESP" | jq -r '.api_model_object_name // .x_model_output_name // .output_name // .model_output_name // .fine_tuned_model // empty')"
 if [[ -z "$MODEL_ID" ]]; then
   RESP="$(shim api fine_tunes.retrieve "$JOB_ID")"
-  MODEL_ID="$(printf '%s' "$RESP" | jq -r '.output_name // .model_output_name // .fine_tuned_model // empty')"
+  MODEL_ID="$(printf '%s' "$RESP" | jq -r '.api_model_object_name // .x_model_output_name // .output_name // .model_output_name // .fine_tuned_model // empty')"
 fi
 if [[ -z "$MODEL_ID" ]]; then
   echo "job $JOB_ID has no output model id in response" >&2

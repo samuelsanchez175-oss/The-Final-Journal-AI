@@ -7,5 +7,25 @@
     "v5_polish_default": null
   },
   "models": {
+    "v5-base-50k": {
+      "model_id": "ft-a2211706-c2ae",
+      "provider": "together",
+      "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "trained_by": "grok#1",
+      "experiment": "dataset_size",
+      "variant": "50k_sample",
+      "status": "candidate",
+      "training_file": "out/train_50k_fim.jsonl",
+      "validation_file": "out/val_50k_fim.jsonl",
+      "n_examples": 50000,
+      "n_epochs": 3,
+      "sample_seed": 7,
+      "fim_share": 0.2,
+      "job_id": "ft-a2211706-c2ae",
+      "trained_at": "2026-10-27T07:42:36-04:00",
+      "cost_usd": null,
+      "eval_report": null,
+      "together_id": "ft-a2211706-c2ae"
+    }
   }
 }

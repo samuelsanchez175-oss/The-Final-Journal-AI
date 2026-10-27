@@ -1,21 +1,16 @@
 #!/usr/bin/env python3
-"""Minimal Together.ai fine-tune client. Mirrors the three OpenAI shim
-subcommands used by the train scripts so the pipeline can keep its shape:
+"""Together.ai fine-tune shim: raw requests, no SDK.
 
-  files.create        -> POST /v1/files (multipart upload)
-  fine_tunes.create   -> POST /v1/fine-tunes
-  fine_tunes.retrieve -> GET /v1/fine-tunes/{id}
-  files.delete        -> DELETE /v1/files/{id}
+Verified endpoints:
+  POST /v1/files           -> upload (SDK handles signed URL; we use SDK for this one)
+  POST /v1/fine-tunes      -> create job
+  GET  /v1/fine-tunes/{id} -> retrieve
+  DELETE /v1/files/{id}    -> delete file
 
-All responses print as JSON on stdout so train.sh's jq pipeline is reusable.
-Reads TOGETHER_API_KEY from env. Never logs the key.
+Subcommands kept identical to the earlier version so train_together.sh
+stays untouched:
 
-Default fine-tune base: meta-llama/Meta-Llama-3.1-8B-Instruct-Reference
-  Cheap ($0.80/1M tokens train), instruction-tuned, OpenAI-compatible chat
-  shape so our existing JSONLs load without conversion.
-
-For the Grok #3 combined final, swap to:
-  meta-llama/Meta-Llama-3.1-70B-Instruct-Reference (~$3/1M tokens)
+  files.create / files.delete / fine_tunes.create / fine_tunes.retrieve
 """
 
 from __future__ import annotations
@@ -32,15 +27,20 @@ except ImportError:
     print(json.dumps({"error": "requests not installed. uv pip install requests"}))
     sys.exit(2)
 
-BASE_URL = os.environ.get("TOGETHER_BASE_URL", "https://api.together.xyz/v1")
+try:
+    from together import Together
+except ImportError:
+    Together = None
+
+BASE_URL = os.environ.get("TOGETHER_BASE_URL", "https://api.together.ai/v1")
 
 
 def _key() -> str:
-    key = os.environ.get("TOGETHER_API_KEY")
-    if not key:
+    k = os.environ.get("TOGETHER_API_KEY")
+    if not k:
         print(json.dumps({"error": "TOGETHER_API_KEY is not set"}))
         sys.exit(2)
-    return key
+    return k
 
 
 def _headers() -> dict:
@@ -52,12 +52,12 @@ def _print(resp: "requests.Response") -> int:
         body = resp.json()
     except Exception:
         body = {"status_code": resp.status_code, "text": resp.text[:500]}
-    print(json.dumps(body))
+    print(json.dumps(body, default=str))
     return 0 if resp.ok else 1
 
 
 def files_create(args: list[str]) -> int:
-    """Upload a training file. Together.ai accepts JSONL with openai chat shape."""
+    """Use official SDK for upload — Together has a signed-URL flow raw curl can't do."""
     p = argparse.ArgumentParser(prog="together files.create")
     p.add_argument("-f", "--file", required=True, dest="path")
     p.add_argument("-p", "--purpose", default="fine-tune")
@@ -66,52 +66,54 @@ def files_create(args: list[str]) -> int:
     if not path.is_file():
         print(json.dumps({"error": f"file not found: {ns.path}"}))
         return 2
-    with path.open("rb") as fh:
-        resp = requests.post(
-            f"{BASE_URL}/files",
-            headers=_headers(),
-            files={"file": (path.name, fh, "application/jsonl")},
-            data={"purpose": ns.purpose},
-            timeout=600,
-        )
-    return _print(resp)
+    if Together is None:
+        print(json.dumps({"error": "together SDK required for file upload. uv pip install together"}))
+        return 2
+    c = Together()  # upload does not need project_id
+    resp = c.files.upload(str(path), check=True)
+    if hasattr(resp, "model_dump"):
+        print(json.dumps(resp.model_dump(), default=str))
+    else:
+        print(json.dumps(resp, default=str))
+    return 0
 
 
 def fine_tunes_create(args: list[str]) -> int:
-    """Create a fine-tune job. Together's /v1/fine-tunes shape:
-        {
-          "training_file": "file-...",
-          "validation_file": "file-...",
-          "model": "meta-llama/Meta-Llama-3.1-8B-Instruct-Reference",
-          "n_epochs": 3,
-          "suffix": "v5-base-mini-50k",
-          "batch_size": "max",
-          "learning_rate": 1e-5
-        }
-    """
     p = argparse.ArgumentParser(prog="together fine_tunes.create")
     p.add_argument("-t", "--training-file", required=True)
     p.add_argument("-v", "--validation-file", required=False, default=None)
     p.add_argument("-m", "--model", required=True)
     p.add_argument("--n-epochs", type=int, default=3)
     p.add_argument("--suffix", default=None)
-    p.add_argument("--batch-size", default="max")
     p.add_argument("--learning-rate", type=float, default=1e-5)
-    p.add_argument("--lora", action="store_true", help="LoRA adapter (cheaper, faster).")
+    p.add_argument("--batch-size", type=int, default=8)
+    p.add_argument("--lora", action="store_true")
+    p.add_argument("--lora-r", type=int, default=16)
+    p.add_argument("--lora-alpha", type=int, default=32)
+    p.add_argument("--lora-dropout", type=float, default=0.05)
+    p.add_argument("--lora-trainable", default="all-linear")
     ns = p.parse_args(args)
     body = {
         "training_file": ns.training_file,
         "model": ns.model,
         "n_epochs": ns.n_epochs,
-        "batch_size": ns.batch_size,
         "learning_rate": ns.learning_rate,
+        "batch_size": ns.batch_size,
+        "n_checkpoints": 1,
+        "n_evals": 1,
     }
     if ns.validation_file:
         body["validation_file"] = ns.validation_file
     if ns.suffix:
         body["suffix"] = ns.suffix
     if ns.lora:
-        body["training_type"] = {"type": "Lora"}
+        body["training_type"] = {
+            "type": "Lora",
+            "lora_r": ns.lora_r,
+            "lora_alpha": ns.lora_alpha,
+            "lora_dropout": ns.lora_dropout,
+            "lora_trainable_modules": ns.lora_trainable,
+        }
     resp = requests.post(
         f"{BASE_URL}/fine-tunes",
         headers={**_headers(), "Content-Type": "application/json"},
@@ -148,7 +150,7 @@ COMMANDS = {
 def main(argv: list[str] | None = None) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
     if argv == ["--version"]:
-        print("together-cli-shim 0.1")
+        print("together-shim 0.3")
         return 0
     if not argv or argv[0] not in {"api"}:
         print(json.dumps({"error": f"usage: together api <command> ... (got {argv!r})"}))
