@@ -67,8 +67,8 @@ def add(args) -> int:
         raise SystemExit(f"experiment must be one of {sorted(VALID_EXPERIMENTS)}")
     if not args.model_id:
         raise SystemExit("--model-id (or --openai-id for backward compat) is required")
-    if args.provider not in {"openai", "together", "anthropic"}:
-        raise SystemExit("--provider must be one of openai|together|anthropic")
+    if args.provider not in {"openai", "together", "anthropic", "xai"}:
+        raise SystemExit("--provider must be one of openai|together|anthropic|xai")
     data = load(args.registry)
     models = data["models"]
     if args.alias in models:
@@ -208,9 +208,9 @@ def main(argv: list[str] | None = None) -> int:
     pa.add_argument("--alias", required=True)
     pa.add_argument("--experiment", required=True)
     pa.add_argument("--variant", required=True)
-    pa.add_argument("--model-id", "--openai-id", "--together-id", dest="model_id",
+    pa.add_argument("--model-id", "--openai-id", "--together-id", "--xai-id", dest="model_id",
                     help="Provider-returned model identifier.")
-    pa.add_argument("--provider", default="together", choices=["openai", "together", "anthropic"])
+    pa.add_argument("--provider", default="together", choices=["openai", "together", "anthropic", "xai"])
     pa.add_argument("--job-id", required=True)
     pa.add_argument("--training-file", required=True)
     pa.add_argument("--validation-file", required=True)

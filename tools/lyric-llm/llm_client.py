@@ -57,10 +57,11 @@ MODEL_ALIASES: dict[str, str] = {
 
 # Resolved-model-id -> provider name. Populated from the registry so a
 # bare model id (ft:... or user/repo-ft-123) can tell dispatch which base
-# URL + key to use. Values: "openai", "together", "anthropic".
+# URL + key to use. Values: "openai", "together", "anthropic", "xai".
 MODEL_PROVIDERS: dict[str, str] = {}
 
 TOGETHER_BASE_URL = os.environ.get("TOGETHER_BASE_URL", "https://api.together.xyz/v1")
+XAI_BASE_URL = os.environ.get("XAI_BASE_URL", "https://api.x.ai/v1")
 
 
 def _load_registry_aliases() -> None:
@@ -91,12 +92,14 @@ def _load_registry_aliases() -> None:
                 continue
             MODEL_ALIASES.setdefault(alias, model_id)
             provider = meta.get("provider")
-            if provider in {"openai", "together", "anthropic"}:
+            if provider in {"openai", "together", "anthropic", "xai"}:
                 MODEL_PROVIDERS[model_id] = provider
             elif meta.get("together_id"):
                 MODEL_PROVIDERS[model_id] = "together"
             elif meta.get("openai_id"):
                 MODEL_PROVIDERS[model_id] = "openai"
+            elif meta.get("xai_id"):
+                MODEL_PROVIDERS[model_id] = "xai"
     except Exception:
         return
 
@@ -110,7 +113,8 @@ def _infer_provider(resolved: str) -> str:
         return MODEL_PROVIDERS[resolved]
     if resolved.startswith("together/"):
         return "together"
-    low = resolved.lower()
+    if resolved.startswith("xai/") or resolved.startswith("grok"):
+        return "xai"
     if resolved.startswith("claude") or "claude" in resolved:
         return "anthropic"
     if (
@@ -162,6 +166,8 @@ def chat(
     provider = _infer_provider(resolved)
     if resolved.startswith("together/"):
         resolved = resolved[len("together/") :]
+    if resolved.startswith("xai/"):
+        resolved = resolved[len("xai/") :]
 
     # 1. Anthropic Provider (claude-*)
     if provider == "anthropic":
@@ -186,8 +192,8 @@ def chat(
             return _finish(resolved, system, user, response.content[0].text or "", response)
         return _finish(resolved, system, user, "", response)
 
-    # 2. OpenAI-compatible provider (OpenAI itself, or Together.ai via base_url)
-    if provider in ("openai", "together"):
+    # 2. OpenAI-compatible provider (OpenAI itself, Together, xAI — all share the shape)
+    if provider in ("openai", "together", "xai"):
         if openai_client is not None:
             client = openai_client
         else:
@@ -198,6 +204,11 @@ def chat(
                 if not key:
                     raise ValueError("TOGETHER_API_KEY is not set. Together dispatch requires it.")
                 client = openai.OpenAI(api_key=key, base_url=TOGETHER_BASE_URL)
+            elif provider == "xai":
+                key = api_key or os.environ.get("XAI_API_KEY") or os.environ.get("GROK_API_KEY")
+                if not key:
+                    raise ValueError("XAI_API_KEY (or GROK_API_KEY) is not set. xAI dispatch requires it.")
+                client = openai.OpenAI(api_key=key, base_url=XAI_BASE_URL)
             else:
                 key = api_key or os.environ.get("OPENAI_API_KEY")
                 if not key:
