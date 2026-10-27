@@ -20,7 +20,17 @@ Already written by this session (shared, lives in `base_train/`):
 
 ## Step 1 — Launch the 4 fine-tune jobs (yours, ~$140 total)
 
-Prereq: `.env.openai` exists at repo root with your key, chmod 600, gitignored.
+Prereqs:
+- `.env.openai` at repo root, chmod 600, gitignored.
+- venv activated (`source tools/lyric-llm/.venv/bin/activate`); the venv ships
+  an `openai` shim at `.venv/bin/openai` because OpenAI killed the real CLI in
+  python-openai>=2.x. Bootstrap if missing:
+  ```bash
+  cd "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm"
+  ln -sf "$(pwd)/base_train/openai_cli_shim.py" .venv/bin/openai
+  chmod +x base_train/openai_cli_shim.py
+  ```
+- `jq` on PATH (preinstalled on macOS at `/usr/bin/jq`).
 
 ```bash
 # Voice jobs (current branch has train_voice_*.sh)
