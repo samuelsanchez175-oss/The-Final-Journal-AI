@@ -1,7 +1,18 @@
 # Base LLM Fine-Tune Runbook
 
-End-to-end: 4 OpenAI jobs → register winners → smoke test the catalog + fine-tune
-marriage → promote to v5. Your 4 bash commands are the only step that spends money.
+**Provider: Together.ai (was OpenAI).** On 2026-10-27 OpenAI returned 403
+PermissionDenied when creating a fine-tune job: "OpenAI is winding down the
+fine-tuning platform and your organization is no longer able to create new
+fine-tuning training jobs." The 4-job experiment pivoted to Together.ai with
+the same JSONLs and the same experiment matrix.
+
+End-to-end: 4 Together.ai jobs → register winners → smoke test the catalog +
+fine-tune marriage → promote to v5. Your 4 bash commands are the only step
+that spends money.
+
+Base model for first pass: `meta-llama/Meta-Llama-3.1-8B-Instruct-Reference`
+(LoRA fine-tune, ~$20–30 per job). Combined final (Grok #3) steps up to
+`meta-llama/Meta-Llama-3.1-70B-Instruct-Reference` (~$80–150).
 
 ## State of play
 
@@ -18,90 +29,71 @@ Already written by this session (shared, lives in `base_train/`):
 - `base_train/smoke_catalog_generator.py` — catalog → fine-tune one-shot test
 - `llm_client.py` — now auto-loads registry aliases + accepts `ft:` model IDs
 
-## Step 1 — Launch the 4 fine-tune jobs (yours, ~$140 total)
+## Step 1 — Launch the 4 fine-tune jobs on Together.ai (yours, ~$100–150)
 
 Prereqs:
-- `.env.openai` at repo root, chmod 600, gitignored.
-- venv activated (`source tools/lyric-llm/.venv/bin/activate`); the venv ships
-  an `openai` shim at `.venv/bin/openai` because OpenAI killed the real CLI in
-  python-openai>=2.x. Bootstrap if missing:
-  ```bash
-  cd "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm"
-  ln -sf "$(pwd)/base_train/openai_cli_shim.py" .venv/bin/openai
-  chmod +x base_train/openai_cli_shim.py
-  ```
+- `.env.together` at repo root, chmod 600, gitignored. One line: your
+  Together.ai API key (with or without the `TOGETHER_API_KEY=` prefix).
+- venv activated (`source tools/lyric-llm/.venv/bin/activate`); `requests` is
+  installed in the venv.
 - `jq` on PATH (preinstalled on macOS at `/usr/bin/jq`).
 
+Together.ai signup: https://api.together.ai — generate an API key, drop it in
+`.env.together` (plain key on one line is fine).
+
+Legacy OpenAI path (dead): the old `train.sh` and `openai_cli_shim.py` are kept
+for history but return 403 against the OpenAI fine-tune API. Do not run them.
+
 ```bash
-# Voice jobs (current branch has train_voice_*.sh)
 cd "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm"
-bash base_train/train_voice_a.sh
-bash base_train/train_voice_b.sh
+source .venv/bin/activate
+mkdir -p out/launch_logs
 
-# Dataset jobs — switch branches (voice is here; dataset lives on grok/base-llm-dataset-size)
-cd "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync"
-git stash -u    # safely park your dirty tree
-git checkout grok/base-llm-dataset-size
-cd tools/lyric-llm
-bash base_train/train.sh 50k
-bash base_train/train.sh full
-
-# Return
-cd "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync"
-git checkout grok/base-llm-voice-conditioning
-git stash pop
+# Launch all 4 (parallel). Together's queue handles concurrency.
+nohup bash base_train/train_together.sh 50k     > out/launch_logs/50k.log     2>&1 &
+nohup bash base_train/train_together.sh full    > out/launch_logs/full.log    2>&1 &
+nohup bash base_train/train_together.sh voice_a > out/launch_logs/voice_a.log 2>&1 &
+nohup bash base_train/train_together.sh voice_b > out/launch_logs/voice_b.log 2>&1 &
 ```
 
-Each `train.sh` logs job id + model id to `out/finetune_*_log.jsonl`. OpenAI
-side runs 30 min – 2 h per job; 4 jobs can queue in parallel.
+Each `train_together.sh` logs upload/job/status/done events to
+`out/together_logs/<mode>.jsonl`. ~30 min – 2 h per LoRA.
 
-## Step 2 — When OpenAI shows all 4 jobs `succeeded`
+**Fastest validation path:** if you don't want all 4 jobs at once, run just
+50k first (~$20–25). If it beats Path A's rating, scale to the full matrix.
 
-Collect model IDs from `out/finetune_*_log.jsonl` or the OpenAI dashboard.
-Expected shape: `ft:gpt-4o-mini:pennworkstudios:<suffix>:<id>`.
+```bash
+bash base_train/train_together.sh 50k
+```
+
+## Step 2 — When Together shows all 4 jobs `completed`
+
+Collect model IDs from `out/together_logs/<mode>.jsonl` — the `event: done`
+row carries `model_id`. Expected shape: `samuel/.../Llama-3.1-8B-...<suffix>`
+(Together's user-namespaced model id).
 
 ### 2a. Register each model as a candidate
 
 ```bash
 cd "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm"
 
-# Grok #1: dataset_size
+# Pull model_id out of each log
+jq -r 'select(.event=="done") | .alias + " " + .model_id + " " + .job_id' \
+    out/together_logs/*.jsonl
+
+# Then for each row, register (fill XXX with the real values)
 python3 base_train/register_model.py add \
-    --trained-by grok#1 --alias v5-base-mini-50k \
+    --trained-by grok#1 --alias v5-base-50k \
     --experiment dataset_size --variant 50k_sample \
-    --openai-id "ft:gpt-4o-mini:pennworkstudios:v5-base-mini-50k:XXX" \
-    --job-id "ftjob-XXX" \
+    --provider together \
+    --model-id "<Together model_id for 50k>" \
+    --job-id "<Together job id>" \
     --training-file out/train_50k_fim.jsonl \
     --validation-file out/val_50k_fim.jsonl \
-    --n-examples 50000 --fim-share 0.2
+    --n-examples 50000 --fim-share 0.2 \
+    --base-model "meta-llama/Meta-Llama-3.1-8B-Instruct-Reference"
 
-python3 base_train/register_model.py add \
-    --trained-by grok#1 --alias v5-base-mini-full \
-    --experiment dataset_size --variant full \
-    --openai-id "ft:gpt-4o-mini:pennworkstudios:v5-base-mini-full:XXX" \
-    --job-id "ftjob-XXX" \
-    --training-file out/train_full_fim.jsonl \
-    --validation-file out/val_full_fim.jsonl \
-    --n-examples 167014 --fim-share 0.2
-
-# Grok #2: voice_conditioning
-python3 base_train/register_model.py add \
-    --trained-by grok#2 --alias v5-base-mini-one-hot \
-    --experiment voice_conditioning --variant one_hot \
-    --openai-id "ft:gpt-4o-mini:pennworkstudios:v5-base-voice-a:XXX" \
-    --job-id "ftjob-XXX" \
-    --training-file out/train_voice_a.jsonl \
-    --validation-file out/val_voice_a.jsonl \
-    --n-examples 50000 --fim-share 0.2
-
-python3 base_train/register_model.py add \
-    --trained-by grok#2 --alias v5-base-mini-systembrief \
-    --experiment voice_conditioning --variant systembrief \
-    --openai-id "ft:gpt-4o-mini:pennworkstudios:v5-base-voice-b:XXX" \
-    --job-id "ftjob-XXX" \
-    --training-file out/train_voice_b.jsonl \
-    --validation-file out/val_voice_b.jsonl \
-    --n-examples 50000 --fim-share 0.2
+# Repeat for v5-base-full, v5-base-one-hot, v5-base-systembrief
 
 python3 base_train/register_model.py list    # 4 candidates expected
 ```
@@ -148,24 +140,31 @@ python3 base_train/register_model.py winners \
 
 ## Step 3 — Catalog + generator smoke (the "marriage")
 
-Isolated test. Pulls 3 catalog scaffolds, feeds each to the winning fine-tune,
-prints input/output pairs with syllable counts.
+Pulls 3 catalog scaffolds, feeds each to the winning Together.ai fine-tune.
 
 ```bash
 cd "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm"
-python3 base_train/smoke_catalog_generator.py --model v5-base-mini-50k --artist Gunna --n 3
+python3 base_train/smoke_catalog_generator.py --model v5-base-50k --artist Gunna --n 3
 ```
 
 Exit 0 = all 3 bars came back. Exit 1 = check network, key, or the alias.
+llm_client auto-detects Together.ai routing when the registry entry carries
+`provider: together` and `TOGETHER_API_KEY` is in env.
 
-## Step 4 — Full verse through v5 with the fine-tune
+## Step 4 — Full-verse batch for Sparkler rating
 
 ```bash
-V5_EDIT_MODEL=v5-base-mini-50k python3 desk.py --artist Gunna --section verse --n 1
+cd "/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm"
+TOGETHER_API_KEY="$(tr -d '\r\n' < ../../.env.together)" \
+V5_PLAN_MODEL=claude-opus-4-7 V5_EDIT_MODEL=v5-base-50k \
+python3 base_train/batch_generate_pathA.py --n 20 --bars 8 \
+    --out ../style-profile/out/model_comparison.json
 ```
 
-Generate 20–50 verses with the fine-tune, then 20–50 with the base. Rate blind
-in Sparkler. Winner by mean score ≥ +0.5.
+(Fallback for the plan stage: `V5_PLAN_MODEL=gpt-4o-mini` if no Anthropic key.)
+
+Then open the rater at http://127.0.0.1:8766/rater/ and rate. Compare the
+mean against Path A's base-model baseline. Fine-tune wins by ≥ +0.5 mean.
 
 ## Step 5 — Grok #3
 

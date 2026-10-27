@@ -55,13 +55,21 @@ MODEL_ALIASES: dict[str, str] = {
     "gh/gpt-4o": "gpt-4o",
 }
 
+# Resolved-model-id -> provider name. Populated from the registry so a
+# bare model id (ft:... or user/repo-ft-123) can tell dispatch which base
+# URL + key to use. Values: "openai", "together", "anthropic".
+MODEL_PROVIDERS: dict[str, str] = {}
+
+TOGETHER_BASE_URL = os.environ.get("TOGETHER_BASE_URL", "https://api.together.xyz/v1")
+
 
 def _load_registry_aliases() -> None:
     """Register fine-tune aliases from tools/lyric-llm/model_registry.json.
 
-    Each models.<alias>.openai_id is added to MODEL_ALIASES. Missing or
-    malformed file is silently skipped: the file is optional until the first
-    fine-tune lands.
+    Each models.<alias> may carry either openai_id (OpenAI fine-tune) or
+    together_id (Together.ai fine-tune) or model_id (provider-agnostic) plus
+    an optional "provider" field. Missing or malformed file is silently
+    skipped.
     """
     try:
         path = Path(__file__).resolve().parent / "model_registry.json"
@@ -74,14 +82,49 @@ def _load_registry_aliases() -> None:
         for alias, meta in models.items():
             if not isinstance(meta, dict):
                 continue
-            model_id = meta.get("openai_id")
-            if isinstance(model_id, str) and model_id:
-                MODEL_ALIASES.setdefault(alias, model_id)
+            model_id = (
+                meta.get("model_id")
+                or meta.get("openai_id")
+                or meta.get("together_id")
+            )
+            if not (isinstance(model_id, str) and model_id):
+                continue
+            MODEL_ALIASES.setdefault(alias, model_id)
+            provider = meta.get("provider")
+            if provider in {"openai", "together", "anthropic"}:
+                MODEL_PROVIDERS[model_id] = provider
+            elif meta.get("together_id"):
+                MODEL_PROVIDERS[model_id] = "together"
+            elif meta.get("openai_id"):
+                MODEL_PROVIDERS[model_id] = "openai"
     except Exception:
         return
 
 
 _load_registry_aliases()
+
+
+def _infer_provider(resolved: str) -> str:
+    """Fallback provider inference by model-id shape when registry is silent."""
+    if resolved in MODEL_PROVIDERS:
+        return MODEL_PROVIDERS[resolved]
+    if resolved.startswith("together/"):
+        return "together"
+    low = resolved.lower()
+    if resolved.startswith("claude") or "claude" in resolved:
+        return "anthropic"
+    if (
+        resolved.startswith("gpt")
+        or resolved.startswith("o1")
+        or resolved.startswith("o3")
+        or resolved.startswith("ft:")
+        or "openai" in resolved
+    ):
+        return "openai"
+    # Together namespace shapes: username/repo, meta-llama/*, Qwen/*, etc.
+    if "/" in resolved and not resolved.startswith("ft:"):
+        return "together"
+    return "openai"
 
 
 def resolve_model_name(model: str) -> str:
@@ -116,9 +159,12 @@ def chat(
         Generated text string.
     """
     resolved = resolve_model_name(model)
+    provider = _infer_provider(resolved)
+    if resolved.startswith("together/"):
+        resolved = resolved[len("together/") :]
 
     # 1. Anthropic Provider (claude-*)
-    if resolved.startswith("claude") or "claude" in resolved:
+    if provider == "anthropic":
         if anthropic_client is not None:
             client = anthropic_client
         else:
@@ -140,23 +186,23 @@ def chat(
             return _finish(resolved, system, user, response.content[0].text or "", response)
         return _finish(resolved, system, user, "", response)
 
-    # 2. OpenAI Provider (gpt-*, o1-*, o3-*, ft:<base>:..., or default)
-    if (
-        resolved.startswith("gpt")
-        or resolved.startswith("o1")
-        or resolved.startswith("o3")
-        or resolved.startswith("ft:")
-        or "openai" in resolved
-    ):
+    # 2. OpenAI-compatible provider (OpenAI itself, or Together.ai via base_url)
+    if provider in ("openai", "together"):
         if openai_client is not None:
             client = openai_client
         else:
             if openai is None:
                 raise RuntimeError("The 'openai' package is not installed. Install with: pip install openai")
-            key = api_key or os.environ.get("OPENAI_API_KEY")
-            if not key:
-                raise ValueError("OPENAI_API_KEY is not set. Direct OpenAI SDK dispatch requires a valid key.")
-            client = openai.OpenAI(api_key=key)
+            if provider == "together":
+                key = api_key or os.environ.get("TOGETHER_API_KEY")
+                if not key:
+                    raise ValueError("TOGETHER_API_KEY is not set. Together dispatch requires it.")
+                client = openai.OpenAI(api_key=key, base_url=TOGETHER_BASE_URL)
+            else:
+                key = api_key or os.environ.get("OPENAI_API_KEY")
+                if not key:
+                    raise ValueError("OPENAI_API_KEY is not set. Direct OpenAI SDK dispatch requires a valid key.")
+                client = openai.OpenAI(api_key=key)
 
         # Reasoning models (o1/o3) may not accept temperature
         kwargs: dict[str, Any] = {

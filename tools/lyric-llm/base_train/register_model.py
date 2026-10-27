@@ -65,18 +65,22 @@ def _now() -> str:
 def add(args) -> int:
     if args.experiment not in VALID_EXPERIMENTS:
         raise SystemExit(f"experiment must be one of {sorted(VALID_EXPERIMENTS)}")
+    if not args.model_id:
+        raise SystemExit("--model-id (or --openai-id for backward compat) is required")
+    if args.provider not in {"openai", "together", "anthropic"}:
+        raise SystemExit("--provider must be one of openai|together|anthropic")
     data = load(args.registry)
     models = data["models"]
     if args.alias in models:
         existing = models[args.alias]
-        if existing.get("openai_id") != args.openai_id:
-            raise SystemExit(
-                f"alias {args.alias} already maps to {existing.get('openai_id')!r}"
-            )
+        prior = existing.get("model_id") or existing.get("openai_id") or existing.get("together_id")
+        if prior != args.model_id:
+            raise SystemExit(f"alias {args.alias} already maps to {prior!r}")
         print(f"alias={args.alias} already present")
         return 0
-    models[args.alias] = {
-        "openai_id": args.openai_id,
+    row = {
+        "model_id": args.model_id,
+        "provider": args.provider,
         "base_model": args.base_model,
         "trained_by": args.trained_by,
         "experiment": args.experiment,
@@ -93,8 +97,14 @@ def add(args) -> int:
         "cost_usd": None,
         "eval_report": None,
     }
+    # Legacy field aliases kept for the earlier scripts
+    if args.provider == "openai":
+        row["openai_id"] = args.model_id
+    elif args.provider == "together":
+        row["together_id"] = args.model_id
+    models[args.alias] = row
     save(args.registry, data)
-    print(f"added alias={args.alias} status=candidate")
+    print(f"added alias={args.alias} provider={args.provider} status=candidate")
     return 0
 
 
@@ -198,7 +208,9 @@ def main(argv: list[str] | None = None) -> int:
     pa.add_argument("--alias", required=True)
     pa.add_argument("--experiment", required=True)
     pa.add_argument("--variant", required=True)
-    pa.add_argument("--openai-id", required=True)
+    pa.add_argument("--model-id", "--openai-id", "--together-id", dest="model_id",
+                    help="Provider-returned model identifier.")
+    pa.add_argument("--provider", default="together", choices=["openai", "together", "anthropic"])
     pa.add_argument("--job-id", required=True)
     pa.add_argument("--training-file", required=True)
     pa.add_argument("--validation-file", required=True)
@@ -206,7 +218,7 @@ def main(argv: list[str] | None = None) -> int:
     pa.add_argument("--n-epochs", type=int, default=3)
     pa.add_argument("--sample-seed", type=int, default=EXPECTED_SEED)
     pa.add_argument("--fim-share", type=float, required=True)
-    pa.add_argument("--base-model", default="gpt-4o-mini")
+    pa.add_argument("--base-model", default="meta-llama/Meta-Llama-3.1-8B-Instruct-Reference")
     pa.set_defaults(func=add)
 
     pw = sub.add_parser("mark-winner", help="Promote one alias to winner.")
