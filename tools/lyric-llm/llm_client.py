@@ -40,6 +40,28 @@ try:
 except ImportError:
     openai = None
 
+# llama-cpp-python is heavy to load; keep instances cached by (model_path, lora_path).
+_LLAMA_INSTANCES: dict[tuple, Any] = {}
+
+
+def _get_llama_cpp(model_path: str, lora_path: str | None, n_ctx: int = 2048):
+    key = (model_path, lora_path, n_ctx)
+    inst = _LLAMA_INSTANCES.get(key)
+    if inst is not None:
+        return inst
+    from llama_cpp import Llama  # noqa: WPS433
+    kwargs = {
+        "model_path": model_path,
+        "n_ctx": n_ctx,
+        "n_gpu_layers": -1,
+        "verbose": False,
+    }
+    if lora_path:
+        kwargs["lora_path"] = lora_path
+    inst = Llama(**kwargs)
+    _LLAMA_INSTANCES[key] = inst
+    return inst
+
 
 MODEL_ALIASES: dict[str, str] = {
     "claude-opus-4-7": os.environ.get("ANTHROPIC_OPUS_MODEL", "claude-3-opus-20240229"),
@@ -62,6 +84,7 @@ MODEL_PROVIDERS: dict[str, str] = {}
 
 TOGETHER_BASE_URL = os.environ.get("TOGETHER_BASE_URL", "https://api.together.xyz/v1")
 XAI_BASE_URL = os.environ.get("XAI_BASE_URL", "https://api.x.ai/v1")
+FIREWORKS_BASE_URL = os.environ.get("FIREWORKS_BASE_URL", "https://api.fireworks.ai/inference/v1")
 
 
 def _load_registry_aliases() -> None:
@@ -92,7 +115,7 @@ def _load_registry_aliases() -> None:
                 continue
             MODEL_ALIASES.setdefault(alias, model_id)
             provider = meta.get("provider")
-            if provider in {"openai", "together", "anthropic", "xai"}:
+            if provider in {"openai", "together", "anthropic", "xai", "fireworks"}:
                 MODEL_PROVIDERS[model_id] = provider
             elif meta.get("together_id"):
                 MODEL_PROVIDERS[model_id] = "together"
@@ -111,10 +134,14 @@ def _infer_provider(resolved: str) -> str:
     """Fallback provider inference by model-id shape when registry is silent."""
     if resolved in MODEL_PROVIDERS:
         return MODEL_PROVIDERS[resolved]
+    if resolved.startswith("local/") or resolved.startswith("llamacpp/"):
+        return "llamacpp"
     if resolved.startswith("together/"):
         return "together"
     if resolved.startswith("xai/") or resolved.startswith("grok"):
         return "xai"
+    if resolved.startswith("fireworks/") or resolved.startswith("accounts/fireworks/") or resolved.startswith("accounts/"):
+        return "fireworks"
     if resolved.startswith("claude") or "claude" in resolved:
         return "anthropic"
     if (
@@ -168,6 +195,28 @@ def chat(
         resolved = resolved[len("together/") :]
     if resolved.startswith("xai/"):
         resolved = resolved[len("xai/") :]
+    if resolved.startswith("fireworks/"):
+        resolved = resolved[len("fireworks/") :]
+    if resolved.startswith("local/") or resolved.startswith("llamacpp/"):
+        resolved = resolved.split("/", 1)[1]
+
+    # Local llama-cpp provider: alias resolves to "<base_gguf_path>|<lora_gguf_path>"
+    if provider == "llamacpp":
+        if "|" in resolved:
+            base_p, lora_p = resolved.split("|", 1)
+        else:
+            base_p, lora_p = resolved, None
+        llm = _get_llama_cpp(base_p, lora_p)
+        resp = llm.create_chat_completion(
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            max_tokens=max_tokens,
+            temperature=temperature,
+        )
+        text = resp["choices"][0]["message"]["content"] or ""
+        return _finish(resolved, system, user, text, resp)
 
     # 1. Anthropic Provider (claude-*)
     if provider == "anthropic":
@@ -192,8 +241,8 @@ def chat(
             return _finish(resolved, system, user, response.content[0].text or "", response)
         return _finish(resolved, system, user, "", response)
 
-    # 2. OpenAI-compatible provider (OpenAI itself, Together, xAI — all share the shape)
-    if provider in ("openai", "together", "xai"):
+    # 2. OpenAI-compatible provider (OpenAI itself, Together, xAI, Fireworks)
+    if provider in ("openai", "together", "xai", "fireworks"):
         if openai_client is not None:
             client = openai_client
         else:
@@ -209,6 +258,11 @@ def chat(
                 if not key:
                     raise ValueError("XAI_API_KEY (or GROK_API_KEY) is not set. xAI dispatch requires it.")
                 client = openai.OpenAI(api_key=key, base_url=XAI_BASE_URL)
+            elif provider == "fireworks":
+                key = api_key or os.environ.get("FIREWORKS_API_KEY")
+                if not key:
+                    raise ValueError("FIREWORKS_API_KEY is not set. Fireworks dispatch requires it.")
+                client = openai.OpenAI(api_key=key, base_url=FIREWORKS_BASE_URL)
             else:
                 key = api_key or os.environ.get("OPENAI_API_KEY")
                 if not key:

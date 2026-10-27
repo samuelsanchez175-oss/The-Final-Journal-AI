@@ -8,13 +8,13 @@
   },
   "models": {
     "v5-base-50k": {
-      "model_id": "ft-a2211706-c2ae",
+      "model_id": "samuelsanchez1_d926/Meta-Llama-3-8B-Instruct-v5-base-50k-e4f9c031",
       "provider": "together",
       "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
       "trained_by": "grok#1",
       "experiment": "dataset_size",
       "variant": "50k_sample",
-      "status": "candidate",
+      "status": "winner",
       "training_file": "out/train_50k_fim.jsonl",
       "validation_file": "out/val_50k_fim.jsonl",
       "n_examples": 50000,
@@ -25,7 +25,21 @@
       "trained_at": "2026-10-27T07:42:36-04:00",
       "cost_usd": null,
       "eval_report": null,
-      "together_id": "ft-a2211706-c2ae"
+      "together_id": "samuelsanchez1_d926/Meta-Llama-3-8B-Instruct-v5-base-50k-e4f9c031",
+      "winner_at": "2026-10-27T08:05:38-04:00",
+      "token_count": 5450034
+    },
+    "v5-base-50k-local": {
+      "model_id": "local//Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm/out/base_gguf/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf|/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm/out/lora_adapter.gguf",
+      "provider": "llamacpp",
+      "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "experiment": "dataset_size",
+      "variant": "50k_sample_local_gguf",
+      "status": "candidate",
+      "training_file": "out/train_50k_fim.jsonl",
+      "validation_file": "out/val_50k_fim.jsonl",
+      "n_examples": 50000,
+      "notes": "Together LoRA weights converted to GGUF via llama.cpp; served locally on Mac Metal."
     }
   }
 }
