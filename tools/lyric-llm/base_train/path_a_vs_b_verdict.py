@@ -138,23 +138,44 @@ def score_file(path: Path, model_key: str, profile=None, lex=None, artist_filter
             "scored_as": "voice_profile" if matches_profile and profile is not None else "generic",
             **s,
         })
-    scores = [e["score"] for e in per_entry if e.get("score") is not None]
-    aggregate = round(statistics.mean(scores), 4) if scores else 0.0
-    voice_only = [e["score"] for e in per_entry if e.get("scored_as") == "voice_profile"]
-    voice_mean = round(statistics.mean(voice_only), 4) if voice_only else None
+    voice_scores = [e["score"] for e in per_entry if e.get("scored_as") == "voice_profile" and e.get("score") is not None]
+    generic_scores = [e["score"] for e in per_entry if e.get("scored_as") == "generic" and e.get("score") is not None]
+    voice_mean = round(statistics.mean(voice_scores), 4) if voice_scores else None
+    generic_mean = round(statistics.mean(generic_scores), 4) if generic_scores else None
+    # Headline aggregate uses whichever scale is present. When both are present (mixed
+    # artist comparison without --artist-filter), the voice-profile mean is the honest
+    # headline — mixing 0-100 with 0-1 in one mean would dilute voice-score deltas by
+    # ~100x. Both means are also reported so downstream consumers see both scales.
+    if voice_mean is not None:
+        aggregate = voice_mean
+        aggregate_scale = "voice_profile"
+    elif generic_mean is not None:
+        aggregate = generic_mean
+        aggregate_scale = "generic"
+    else:
+        aggregate = 0.0
+        aggregate_scale = "none"
     return {
         "file": str(path),
         "model_key": model_key,
         "n_entries": len(per_entry),
         "aggregate_score": aggregate,
-        "gunna_only_mean": voice_mean,   # kept the key for backward-compat with existing JSON readers
+        "aggregate_scale": aggregate_scale,
         "voice_only_mean": voice_mean,
+        "generic_only_mean": generic_mean,
+        "gunna_only_mean": voice_mean,   # legacy alias kept for backward-compat
         "per_entry": per_entry,
     }
 
 
 def patch_registry(cost_usd: float, verdict_path: Path, verdict: dict) -> None:
     reg_path = LLM_ROOT / "model_registry.json"
+    if not reg_path.exists():
+        # On a fresh checkout the registry may not exist yet; skip the patch instead of
+        # crashing after we already wrote the verdict file. --no-patch-registry gives
+        # the explicit opt-out; this handles the implicit "nothing to patch" case.
+        print(f"skip registry patch (no {reg_path.name} on disk)", file=sys.stderr)
+        return
     reg = json.loads(reg_path.read_text(encoding="utf-8"))
     v5 = reg.get("models", {}).get("v5-base-50k", {})
     v5["cost_usd"] = round(cost_usd, 4)
@@ -202,8 +223,11 @@ def main() -> int:
     b = score_file(args.path_b, args.path_b_key, profile, lex, args.artist_filter, profile_artist)
 
     delta = round(b["aggregate_score"] - a["aggregate_score"], 4)
-    # gunna_score returns 0-100; generic score returns 0-1. Pick threshold accordingly.
-    threshold = 2.0 if max(abs(a["aggregate_score"]), abs(b["aggregate_score"])) > 2.0 else 0.02
+    # Verdict scale follows aggregate scale: voice-profile is 0-100 (2.0 threshold ~=
+    # 5% movement); generic is 0-1 (0.02 threshold ~= same relative movement). The
+    # scale is explicit from aggregate_scale so this is no longer a magnitude guess.
+    scale = a.get("aggregate_scale") or b.get("aggregate_scale") or "none"
+    threshold = 2.0 if scale == "voice_profile" else 0.02
     if delta > threshold:
         verdict = "path_b_wins"
     elif delta < -threshold:
