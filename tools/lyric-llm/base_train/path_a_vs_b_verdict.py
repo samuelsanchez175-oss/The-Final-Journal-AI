@@ -15,6 +15,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import datetime
 import json
 import re
 import statistics
@@ -116,9 +117,16 @@ def extract_bars(entry: dict, model_key: str) -> list[str]:
 
 
 def score_file(path: Path, model_key: str, profile=None, lex=None, artist_filter: str | None = None,
-               profile_artist: str | None = None) -> dict:
-    """Score each entry. If a voice profile is loaded, apply it to entries whose artist
-    matches `profile_artist` (defaults to the profile's own `artist` field, else "Gunna")."""
+               profile_artist: str | None = None, profiles_by_artist: dict | None = None) -> dict:
+    """Score each entry.
+
+    Two modes:
+      - single-profile (legacy): `profile` + `profile_artist`. Applies voice score only to
+        entries whose artist matches `profile_artist`; everything else falls back to generic.
+      - multi-profile: pass `profiles_by_artist` as {artist_lower: profile_dict}. Applies the
+        matching profile per row, falls back to generic for artists with no profile. Overrides
+        the single-profile path when provided.
+    """
     data = json.loads(path.read_text(encoding="utf-8"))
     if artist_filter:
         data = [e for e in data if e.get("artist", "").lower() == artist_filter.lower()]
@@ -126,16 +134,23 @@ def score_file(path: Path, model_key: str, profile=None, lex=None, artist_filter
     per_entry: list[dict] = []
     for entry in data:
         bars = extract_bars(entry, model_key)
-        matches_profile = (entry.get("artist", "").lower() == profile_artist_norm)
-        if matches_profile and profile is not None and lex is not None:
-            s = gunna_score_bars(bars, profile, lex)
+        artist_key = (entry.get("artist") or "").lower()
+        row_profile = None
+        if profiles_by_artist:
+            row_profile = profiles_by_artist.get(artist_key)
+        elif profile is not None and artist_key == profile_artist_norm:
+            row_profile = profile
+        if row_profile is not None and lex is not None and bars:
+            s = gunna_score_bars(bars, row_profile, lex)
+            scored_as = "voice_profile"
         else:
             s = generic_score(bars)
+            scored_as = "generic"
         per_entry.append({
             "artist": entry.get("artist"),
             "topic": entry.get("topic"),
             "model": model_key,
-            "scored_as": "voice_profile" if matches_profile and profile is not None else "generic",
+            "scored_as": scored_as,
             **s,
         })
     voice_scores = [e["score"] for e in per_entry if e.get("scored_as") == "voice_profile" and e.get("score") is not None]
@@ -163,7 +178,8 @@ def score_file(path: Path, model_key: str, profile=None, lex=None, artist_filter
         "aggregate_scale": aggregate_scale,
         "voice_only_mean": voice_mean,
         "generic_only_mean": generic_mean,
-        "gunna_only_mean": voice_mean,   # legacy alias kept for backward-compat
+        "voice_n": sum(1 for e in per_entry if e.get("scored_as") == "voice_profile"),
+        "generic_n": sum(1 for e in per_entry if e.get("scored_as") == "generic"),
         "per_entry": per_entry,
     }
 
@@ -200,7 +216,12 @@ def main() -> int:
     ap.add_argument("--path-b", type=Path, required=True)
     ap.add_argument("--path-a-key", default="v5_pathA")
     ap.add_argument("--path-b-key", default="v5_pathB_lora")
-    ap.add_argument("--profile", type=Path, default=STYLE_ROOT / "out" / "anchor_profile_gunna.json")
+    ap.add_argument("--profile", type=Path, default=STYLE_ROOT / "out" / "anchor_profile_gunna.json",
+                    help="Single-profile mode. Ignored when --profile-dir is passed.")
+    ap.add_argument("--profile-dir", type=Path, default=STYLE_ROOT / "out",
+                    help="Multi-profile mode: directory containing anchor_profile_*.json. "
+                         "Each row scores against its matching artist profile; artists with no "
+                         "profile fall back to generic. Pass '' to disable and use --profile.")
     ap.add_argument("--cmudict", type=Path, default=REPO_ROOT / "XJournal AI" / "cmudict.txt")
     ap.add_argument("--out", type=Path, default=LLM_ROOT / "out" / "path_a_vs_b_verdict.json")
     ap.add_argument("--cost-usd", type=float, default=8.1213,
@@ -211,16 +232,35 @@ def main() -> int:
 
     profile = None
     lex = None
-    if HAVE_GUNNA and args.profile.exists() and args.cmudict.exists():
+    profiles_by_artist: dict = {}
+    if HAVE_GUNNA and args.cmudict.exists():
         try:
-            profile = gunna_score.load_profile(args.profile)
             lex = p1.Lexicon(p1.load_cmudict(args.cmudict))
         except Exception as exc:
-            print(f"profile/lexicon load failed, generic scoring only: {exc}", file=sys.stderr)
+            print(f"lexicon load failed: {exc}", file=sys.stderr)
+    use_multi = bool(args.profile_dir) and args.profile_dir.exists()
+    if HAVE_GUNNA and use_multi and lex is not None:
+        for pf in sorted(args.profile_dir.glob("anchor_profile_*.json")):
+            try:
+                prof = gunna_score.load_profile(pf)
+            except Exception as exc:
+                print(f"skip {pf.name}: {exc}", file=sys.stderr)
+                continue
+            artist_key = (prof.get("artist") or pf.stem.replace("anchor_profile_", "")).lower()
+            profiles_by_artist[artist_key] = prof
+        print(f"loaded {len(profiles_by_artist)} voice profile(s): "
+              f"{sorted(profiles_by_artist.keys())}", file=sys.stderr)
+    elif HAVE_GUNNA and args.profile.exists() and lex is not None:
+        try:
+            profile = gunna_score.load_profile(args.profile)
+        except Exception as exc:
+            print(f"profile load failed, generic scoring only: {exc}", file=sys.stderr)
 
     profile_artist = (profile or {}).get("artist") if profile else None
-    a = score_file(args.path_a, args.path_a_key, profile, lex, args.artist_filter, profile_artist)
-    b = score_file(args.path_b, args.path_b_key, profile, lex, args.artist_filter, profile_artist)
+    a = score_file(args.path_a, args.path_a_key, profile, lex, args.artist_filter,
+                   profile_artist, profiles_by_artist or None)
+    b = score_file(args.path_b, args.path_b_key, profile, lex, args.artist_filter,
+                   profile_artist, profiles_by_artist or None)
 
     delta = round(b["aggregate_score"] - a["aggregate_score"], 4)
     # Verdict scale follows aggregate scale: voice-profile is 0-100 (2.0 threshold ~=
@@ -235,22 +275,68 @@ def main() -> int:
     else:
         verdict = "tie_within_threshold"
 
+    scored_as_summary = (
+        f"multi-profile ({len(profiles_by_artist)} artists)"
+        if profiles_by_artist else
+        f"single-profile ({profile_artist or 'none'})"
+    )
     out = {
-        "generated_at": "2026-10-27",
+        "generated_at": datetime.date.today().isoformat(),
         "job_id": "ft-a2211706-c2ae",
         "cost_usd": args.cost_usd,
+        "scoring": scored_as_summary,
         "path_a": {k: v for k, v in a.items() if k != "per_entry"},
         "path_b": {k: v for k, v in b.items() if k != "per_entry"},
         "delta": delta,
         "verdict": verdict,
-        "notes": "aggregate across generic + gunna-profile scored entries; gunna_only_mean apples-to-apples subset",
+        "notes": "Per-row voice score when the artist has a profile, else generic. "
+                 "Aggregate uses whichever scale dominates (voice_profile 0-100 or generic 0-1); "
+                 "see aggregate_scale. paired_prompts is the (artist, topic) intersection.",
     }
+    # Per-artist breakdown: whole-set means and the subset of same-prompt pairs.
+    def _by_artist(rows: list[dict]) -> dict:
+        out: dict = {}
+        for r in rows:
+            out.setdefault((r.get("artist") or "").lower(), []).append(r)
+        return out
+    a_by, b_by = _by_artist(a["per_entry"]), _by_artist(b["per_entry"])
+    per_artist: list[dict] = []
+    for art in sorted(set(a_by) | set(b_by)):
+        ar, br = a_by.get(art, []), b_by.get(art, [])
+        a_mean = round(statistics.mean(r["score"] for r in ar), 3) if ar else None
+        b_mean = round(statistics.mean(r["score"] for r in br), 3) if br else None
+        per_artist.append({
+            "artist": art,
+            "a_n": len(ar), "b_n": len(br),
+            "a_mean": a_mean, "b_mean": b_mean,
+            "delta_b_minus_a": (round(b_mean - a_mean, 3)
+                                 if (a_mean is not None and b_mean is not None) else None),
+            "scale": (ar[0]["scored_as"] if ar else br[0]["scored_as"]) if (ar or br) else "none",
+        })
+    out["per_artist"] = per_artist
+
+    pb_lookup = {(r.get("artist"), r.get("topic")): r for r in b["per_entry"]}
+    paired: list[dict] = []
+    for ra in a["per_entry"]:
+        rb = pb_lookup.get((ra.get("artist"), ra.get("topic")))
+        if rb is None or ra["scored_as"] != rb["scored_as"]:
+            continue
+        paired.append({
+            "artist": ra.get("artist"), "topic": ra.get("topic"),
+            "scored_as": ra["scored_as"],
+            "a_score": ra["score"], "b_score": rb["score"],
+            "delta_b_minus_a": round(rb["score"] - ra["score"], 3),
+        })
+    out["paired_prompts"] = paired
+    out["paired_n"] = len(paired)
     out["detail"] = {"path_a_per_entry": a["per_entry"], "path_b_per_entry": b["per_entry"]}
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Wrote {args.out}")
-    print(f"Path A aggregate: {a['aggregate_score']}  (gunna-only: {a['gunna_only_mean']})")
-    print(f"Path B aggregate: {b['aggregate_score']}  (gunna-only: {b['gunna_only_mean']})")
+    print(f"Path A aggregate: {a['aggregate_score']}  "
+          f"(voice n={a['voice_n']}, generic n={a['generic_n']})")
+    print(f"Path B aggregate: {b['aggregate_score']}  "
+          f"(voice n={b['voice_n']}, generic n={b['generic_n']})")
     print(f"Delta: {delta}  Verdict: {verdict}")
 
     if not args.no_patch_registry:
