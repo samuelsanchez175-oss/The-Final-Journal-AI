@@ -17,6 +17,40 @@ LLM_ROOT = HERE.parent
 DEFAULT_PATH = LLM_ROOT / "eval" / "chips.jsonl"
 TOPIC_MAP_PATH = LLM_ROOT / "eval" / "chips_topic_map.json"
 
+# Nouns you can point at. CHIP_BANK suggestions rank these ahead of slang.
+CONCRETE_CHIP_CATEGORIES = frozenset({
+    "brands", "cars", "jewelry", "jewelers", "places",
+})
+
+# Named generic slang, plus any chip whose last word is "shit".
+_GENERIC_SLANG_EXACT = frozenset({"dog shit", "opp shit", "cash out"})
+
+
+def _chip_key(chip: str) -> str:
+    text = (chip or "").lower().replace("\u2019", "'").replace("'", "")
+    return " ".join(text.split())
+
+
+def is_generic_slang_chip(chip: str) -> bool:
+    """True for generic slang such as dog shit, opp shit, and cash out."""
+    key = _chip_key(chip)
+    if not key or key in _GENERIC_SLANG_EXACT:
+        return bool(key)
+    return key.split()[-1] == "shit"
+
+
+def slang_chip_names(rows: list[dict]) -> list[str]:
+    """Chip strings the suggestion filter drops, in bank order."""
+    names: list[str] = []
+    seen: set[str] = set()
+    for row in rows:
+        chip = str(row.get("chip") or "").strip()
+        key = _chip_key(chip)
+        if chip and key not in seen and is_generic_slang_chip(chip):
+            seen.add(key)
+            names.append(chip)
+    return names
+
 
 class ChipIndex:
     def __init__(self, rows: list[dict], topic_map: dict[str, list[str]] | None = None):
@@ -53,15 +87,17 @@ class ChipIndex:
         target_rime = tuple(end_rime) if end_rime else ()
         target_cats = set(self.categories_for_topic(topic or ""))
 
-        def score(row: dict) -> tuple[int, int, int, int]:
+        def score(row: dict) -> tuple[int, int, int, int, int]:
             # higher is better in each slot
             rime_hit = 1 if (target_rime and tuple(row.get("end_rime") or ()) == target_rime) else 0
             cat_hit = 1 if row.get("category", "").lower() in target_cats else 0
+            concrete = 1 if row.get("category", "").lower() in CONCRETE_CHIP_CATEGORIES else 0
             freq = int(row.get("vault_count") or 0)
             short = -len((row.get("chip") or "").split())
-            return (rime_hit, cat_hit, freq, short)
+            return (rime_hit, cat_hit, concrete, freq, short)
 
-        return sorted(self.rows, key=score, reverse=True)[:max(0, int(k))]
+        pool = [row for row in self.rows if not is_generic_slang_chip(row.get("chip") or "")]
+        return sorted(pool, key=score, reverse=True)[:max(0, int(k))]
 
     def retrieve_many_rimes(self, topic: Optional[str], end_rimes: Iterable[Iterable[str]],
                             per_rime: int = 2, k: int = 8) -> list[dict]:
@@ -70,17 +106,25 @@ class ChipIndex:
         seen = set()
         out: list[dict] = []
         target_cats = set(self.categories_for_topic(topic or ""))
+
+        def _usable(index: int) -> bool:
+            return not is_generic_slang_chip(self.rows[index].get("chip") or "")
+
+        def sort_key(i):
+            row = self.rows[i]
+            category = row.get("category", "").lower()
+            return (
+                1 if category in CONCRETE_CHIP_CATEGORIES else 0,
+                1 if category in target_cats else 0,
+                int(row.get("vault_count") or 0),
+                -len((row.get("chip") or "").split()),
+            )
+
         for rime in end_rimes:
             rime = tuple(rime or ())
             if not rime:
                 continue
-            indices = self._by_rime.get(rime, [])
-            # Prefer category-matching, then frequency
-            def sort_key(i):
-                r = self.rows[i]
-                return (1 if r.get("category", "").lower() in target_cats else 0,
-                        int(r.get("vault_count") or 0),
-                        -len((r.get("chip") or "").split()))
+            indices = [i for i in self._by_rime.get(rime, []) if _usable(i)]
             for i in sorted(indices, key=sort_key, reverse=True)[:per_rime]:
                 if i in seen:
                     continue
@@ -88,13 +132,17 @@ class ChipIndex:
                 out.append(self.rows[i])
                 if len(out) >= k:
                     return out
-        # pad with topic-only matches if under k
-        if len(out) < k and target_cats:
-            for i, r in enumerate(self.rows):
-                if i in seen:
+        # Pad with concrete nouns, then the topic's other categories.
+        if len(out) < k:
+            rest = [i for i in range(len(self.rows)) if i not in seen and _usable(i)]
+            rest.sort(key=sort_key, reverse=True)
+            for i in rest:
+                row = self.rows[i]
+                category = row.get("category", "").lower()
+                if category not in CONCRETE_CHIP_CATEGORIES and category not in target_cats:
                     continue
-                if r.get("category", "").lower() in target_cats:
-                    out.append(r); seen.add(i)
-                    if len(out) >= k:
-                        break
+                out.append(row)
+                seen.add(i)
+                if len(out) >= k:
+                    break
         return out

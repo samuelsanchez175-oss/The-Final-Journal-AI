@@ -37,6 +37,32 @@ class TestChipIndex(unittest.TestCase):
                                             per_rime=2, k=4)
         self.assertLessEqual(len(hits), 4)
 
+    def test_generic_slang_is_not_suggested(self):
+        from taste.chips import ChipIndex, is_generic_slang_chip, slang_chip_names
+
+        dropped = [name.lower() for name in slang_chip_names(self.idx.rows)]
+        for name in ("dog shit", "opp shit", "cash out"):
+            self.assertIn(name, dropped)
+            self.assertTrue(is_generic_slang_chip(name))
+        self.assertFalse(is_generic_slang_chip("Sp5der"))
+        hits = self.idx.retrieve_many_rimes(
+            topic="come_up_hustle",
+            end_rimes=[["IH1", "T"], ["AW1", "T"]],
+            per_rime=4,
+            k=8,
+        )
+        got = {hit["chip"].lower() for hit in hits}
+        self.assertFalse(got & {"dog shit", "opp shit", "cash out"})
+        rows = [
+            {"chip": "dog shit", "category": "money", "end_rime": ["IH1", "T"], "vault_count": 9},
+            {"chip": "Patek", "category": "jewelry", "end_rime": ["IH1", "T"], "vault_count": 1},
+        ]
+        tiny = ChipIndex(rows, {})
+        picked = tiny.retrieve_many_rimes(
+            topic="money_flex", end_rimes=[["IH1", "T"]], per_rime=2, k=2,
+        )
+        self.assertEqual([row["chip"] for row in picked], ["Patek"])
+
     def test_rime_rank_beats_category(self):
         # a hit whose end_rime matches should rank ahead
         sample_row = next((r for r in self.idx.rows if r.get("end_rime")), None)

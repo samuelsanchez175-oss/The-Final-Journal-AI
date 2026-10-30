@@ -173,6 +173,7 @@ def chat(
     api_key: Optional[str] = None,
     anthropic_client: Optional[Any] = None,
     openai_client: Optional[Any] = None,
+    response_format: Optional[dict] = None,
 ) -> str:
     """Dispatches chat completions directly through Anthropic or OpenAI SDK.
 
@@ -284,6 +285,8 @@ def chat(
         }
         if not (resolved.startswith("o1") or resolved.startswith("o3")):
             kwargs["temperature"] = temperature
+        if response_format is not None and provider == "openai":
+            kwargs["response_format"] = response_format
 
         response = client.chat.completions.create(**kwargs)
         if response and response.choices:

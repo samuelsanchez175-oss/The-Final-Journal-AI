@@ -50,16 +50,9 @@ LOG_DIR = LLM_ROOT / "out"
 
 
 def _split_bars(raw: str) -> list[str]:
-    bars = []
-    for line in (raw or "").splitlines():
-        s = line.strip()
-        if not s:
-            continue
-        s = re.sub(r"^\d+\.\s*", "", s)
-        s = s.strip().strip('"').strip("'").strip()
-        if s:
-            bars.append(s)
-    return bars
+    from frontier_v5 import strip_bar_labels
+
+    return strip_bar_labels(raw)
 
 
 def _bar_entries(bars_text: list[str]) -> list[dict]:
@@ -82,6 +75,34 @@ def _random_id(rng: random.Random) -> str:
 DEFAULT_OPENAI_MODEL = "gpt-4o-mini"
 
 
+GATE_CODES = (
+    "scaffold",
+    "bank",
+    "end_word",
+    "vault_end",
+    "rhyme_family",
+    "commas",
+    "syllables",
+    "inner_rhyme",
+    "name_guard",
+    "punch",
+    "cliche",
+    "incomplete",
+)
+
+
+def _gate_hits(result: dict) -> dict[str, int]:
+    """Bars failing each verify code. A bar can fail more than one gate."""
+    counts: dict[str, int] = {}
+    for row in result.get("violations") or []:
+        if not isinstance(row, dict):
+            continue
+        for code in row.get("codes") or []:
+            name = str(code)
+            counts[name] = counts.get(name, 0) + 1
+    return counts
+
+
 def _print_arm_summary(stats: dict[str, list[dict]]) -> None:
     print("\n=== per-arm stats ===")
     print(f"{'arm':20s}{'n':>4s}{'pass':>8s}{'ndup':>8s}"
@@ -102,27 +123,92 @@ def _print_arm_summary(stats: dict[str, list[dict]]) -> None:
         chip_rate = statistics.mean([x["chip_rate"] for x in xs] or [0.0])
         print(f"{arm:20s}{n:>4d}{pass_rate:>8.2%}{ndup_rate:>8.2%}"
               f"{mean_5g:>10.3f}{mean_run:>10.2f}{chip_rate:>12.2%}")
+    rows = [row for xs in stats.values() for row in xs]
+    prompt_tokens = sum(int(row.get("prompt_tokens") or 0) for row in rows)
+    completion_tokens = sum(int(row.get("completion_tokens") or 0) for row in rows)
+    thinking_tokens = sum(int(row.get("thinking_tokens") or 0) for row in rows)
+    cost_usd = sum(float(row.get("cost_usd") or 0.0) for row in rows)
+    print(
+        f"prompt_tokens={prompt_tokens} completion_tokens={completion_tokens} "
+        f"thinking_tokens={thinking_tokens} cost_usd={cost_usd:.4f}"
+    )
+    arms = ("current", "bo8_novelty", "bo8_novelty_chips")
+    seen = []
+    for arm in arms:
+        for row in stats.get(arm) or []:
+            for code in (row.get("gates") or {}):
+                if code not in seen:
+                    seen.append(code)
+    ordered = list(GATE_CODES) + [code for code in seen if code not in GATE_CODES]
+    print("\n=== per-gate failures (bars) ===")
+    print(f"{'gate':16s}" + "".join(f"{arm:>22s}" for arm in arms))
+    for code in ordered:
+        cells = []
+        for arm in arms:
+            total = sum(int((row.get("gates") or {}).get(code) or 0) for row in (stats.get(arm) or []))
+            cells.append(f"{total:>22d}")
+        print(f"{code:16s}" + "".join(cells))
+    print("\n=== repeated end word (4-bar blocks) ===")
+    for arm in arms:
+        xs = stats.get(arm) or []
+        reps = sum(int(row.get("repeat_blocks") or 0) for row in xs)
+        blocks = sum(int(row.get("end_blocks") or 0) for row in xs)
+        rate = (reps / blocks) if blocks else 0.0
+        print(f"{arm:20s}{reps:>4d}/{blocks:<4d}{rate:>8.2%}")
+    print("\n=== plan fallbacks ===")
+    for arm in arms:
+        xs = stats.get(arm) or []
+        n = sum(1 for row in xs if row.get("planner_model") == "heuristic_fallback")
+        print(f"plan fallback {arm} {n}/{len(xs)}")
+    print("\n=== end words per verse ===")
+    for arm in arms:
+        for index, row in enumerate(stats.get(arm) or [], 1):
+            ends = " ".join(row.get("end_words") or [])
+            artist = row.get("artist") or ""
+            topic = row.get("topic") or ""
+            print(f"{arm} {index:>2d} {artist} | {topic} | {ends}")
+    print("\n=== rhyme family reuse ===")
+    from frontier_v5 import run_rhyme_family_report
+
+    family_rows = run_rhyme_family_report()
+    reused = [row for row in family_rows if int(row["count"]) > 1]
+    print(f"families {len(family_rows)}  reused {len(reused)}")
+    if reused:
+        for row in reused:
+            print(f"{int(row['count']):>3d}  {row['label']}")
+    else:
+        print("no family used more than once")
+    print(f"families used once: {len(family_rows) - len(reused)}")
 
 
 def _verse_arm_stats(bars_list: list[str], result: dict, chip_words: list[str]) -> dict:
+    from frontier_v5 import _word, chip_matches_bar, repeated_end_block_counts
+
     nv = result.get("novelty_report") or {}
+    repeat_blocks, end_blocks = repeated_end_block_counts(bars_list)
     per = nv.get("bars") or []
     overlap_vals = [b["best_match"]["fivegram_overlap"]
                     for b in per if b.get("best_match")]
     run_vals = [b["best_match"]["longest_run"] for b in per if b.get("best_match")]
-    chip_set = {c.lower() for c in chip_words if c}
     chip_hits = 0
-    for b in bars_list:
-        bl = b.lower()
-        if any(c in bl for c in chip_set):
+    for bar in bars_list:
+        if any(chip_matches_bar(chip, bar) for chip in chip_words if chip):
             chip_hits += 1
     return {
-        "passed": not result.get("judge_rejected", False) and bool(bars_list),
+        "passed": bool(result.get("verified")) and bool(bars_list),
         "n_bars": len(bars_list),
         "near_dup_bars": len(nv.get("near_dup_bar_indexes") or []),
         "mean_5g": statistics.mean(overlap_vals) if overlap_vals else None,
         "mean_run": statistics.mean(run_vals) if run_vals else None,
         "chip_rate": chip_hits / max(len(bars_list), 1),
+        "prompt_tokens": int(result.get("prompt_tokens") or 0),
+        "completion_tokens": int(result.get("completion_tokens") or 0),
+        "thinking_tokens": int(result.get("thinking_tokens") or 0),
+        "cost_usd": float(result.get("cost_usd") or 0.0),
+        "gates": _gate_hits(result),
+        "repeat_blocks": repeat_blocks,
+        "end_blocks": end_blocks,
+        "end_words": [_word(bar) for bar in bars_list],
     }
 
 
@@ -157,7 +243,34 @@ def main() -> int:
           f"V5_EDIT_MODEL={os.environ['V5_EDIT_MODEL']}  "
           f"smoke={args.smoke}")
 
-    from frontier_v5 import generate_v5, generate_judged
+    from frontier_v5 import (
+        enable_run_rhyme_once,
+        generate_judged,
+        generate_v5,
+        reset_run_rhyme_families,
+    )
+    from taste.chips import ChipIndex, slang_chip_names
+
+    chip_index = ChipIndex.load()
+    dropped_chips = slang_chip_names(chip_index.rows)
+    print("chip filter dropped: " + (", ".join(dropped_chips) if dropped_chips else "(none)"))
+    mercedes = next(
+        (
+            row for row in chip_index.rows
+            if (row.get("chip") or "") == "Mercedes" and (row.get("category") or "") == "cars"
+        ),
+        None,
+    )
+    if mercedes is not None:
+        print(f"chip reload: Mercedes cars syllables={mercedes.get('syllables')}")
+    # One exact end-rime family per run, across every arm. Tests leave this off.
+    enable_run_rhyme_once(True)
+    reset_run_rhyme_families()
+
+    # Syllables and inner rhyme are a score penalty on --smoke only.
+    # End rhyme, novelty, and name guard stay hard fails.
+    # A missing comma never fails. Greeting-card ends fail as vault_end.
+    soft_codes = {"syllables", "inner_rhyme"} if args.smoke else None
 
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     seed = 20261030
@@ -185,7 +298,8 @@ def main() -> int:
             try:
                 if arm == "current":
                     r = generate_v5(shape, voice=p["artist"],
-                                    topic_hint=p["topic"], use_cache=False)
+                                    topic_hint=p["topic"], use_cache=False,
+                                    soft_codes=soft_codes)
                     r_bars = _split_bars(r.get("raw_text") or "")
                     passed = bool(r.get("verified"))
                 elif arm == "bo8_novelty":
@@ -193,7 +307,8 @@ def main() -> int:
                                         topic_hint=p["topic"], candidates=8,
                                         use_wordplay_hints=True,
                                         use_chip_hints=False,
-                                        use_novelty=True, use_cache=False)
+                                        use_novelty=True, use_cache=False,
+                                        soft_codes=soft_codes)
                     r_bars = _split_bars(r.get("raw_text") or "")
                     passed = not r.get("judge_rejected", False)
                 else:
@@ -201,7 +316,8 @@ def main() -> int:
                                         topic_hint=p["topic"], candidates=8,
                                         use_wordplay_hints=True,
                                         use_chip_hints=True,
-                                        use_novelty=True, use_cache=False)
+                                        use_novelty=True, use_cache=False,
+                                        soft_codes=soft_codes)
                     r_bars = _split_bars(r.get("raw_text") or "")
                     passed = not r.get("judge_rejected", False)
             except Exception as exc:
@@ -220,7 +336,12 @@ def main() -> int:
             # record stats for this arm (chip words from result when present)
             chip_words_used = [c.get("chip", "") for c in
                                (r.get("chip_hints_shown") or []) if c.get("chip")]
-            arm_stats[arm].append(_verse_arm_stats(r_bars, r, chip_words_used))
+            stats_row = _verse_arm_stats(r_bars, r, chip_words_used)
+            plan_blob = r.get("plan") if isinstance(r, dict) else None
+            stats_row["planner_model"] = str((plan_blob or {}).get("planner_model") or "")
+            stats_row["artist"] = p["artist"]
+            stats_row["topic"] = p["topic"]
+            arm_stats[arm].append(stats_row)
         if drop:
             skipped.append({"artist": p["artist"], "topic": p["topic"],
                             "reasons": {a: {

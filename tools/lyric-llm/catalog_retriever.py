@@ -1033,6 +1033,21 @@ def extract_seed_pattern(seed_lines: list[str], cmu: dict[str, list[str]], bpm: 
     return patterns
 
 
+def resolve_catalog_artist(voice: str) -> str:
+    """Lowercase catalog_bars artist for this voice.
+
+    Known voices query themselves. A twin fills a voice the index does not
+    store (Chief Keef has no rows; retrieval already uses Lil Wayne).
+    """
+    low = (voice or "").strip().lower()
+    if low in KNOWN_CATALOG_ARTISTS:
+        return low
+    twin = VOICE_CATALOG_TWINS.get(low)
+    if twin:
+        return twin.strip().lower()
+    return low
+
+
 def sample_end_words(
     voice: str,
     count: int = 8,
@@ -1052,6 +1067,7 @@ def sample_end_words(
         recent = {word.lower() for word in get_end_word_history(window_size=dedupe_window) if word}
     else:
         recent = {word.lower() for word in supplied if word}
+    artist_key = resolve_catalog_artist(voice)
     conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
     try:
         rows = conn.execute(
@@ -1062,7 +1078,7 @@ def sample_end_words(
             GROUP BY end_word
             ORDER BY n DESC
             """,
-            (voice.strip().lower(),),
+            (artist_key,),
         ).fetchall()
     except sqlite3.Error:
         return []

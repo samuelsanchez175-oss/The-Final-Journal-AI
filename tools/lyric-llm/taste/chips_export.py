@@ -87,7 +87,7 @@ def _syllables(word: str, cmu: dict) -> int:
         return 0
     phones = cmu.get(w)
     if phones:
-        return sum(1 for ph in phones[0].split() if any(c.isdigit() for c in ph))
+        return sum(1 for ph in list(phones) if any(c.isdigit() for c in ph))
     # fallback: count vowel groups
     vowels = "aeiouy"
     count, prev = 0, False

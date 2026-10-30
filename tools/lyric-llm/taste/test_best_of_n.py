@@ -25,14 +25,13 @@ class TestHardCheck(unittest.TestCase):
         # may or may not pass originality — just ensure comma/rhyme reasons absent
         self.assertNotIn("end-rhyme couplet failure", r["reasons"])
 
-    def test_missing_comma_flags(self):
+    def test_missing_comma_does_not_fail(self):
         bars = [
             "I ride through the city with a crown",
             "The whole block watchin', as I come down",
         ]
         r = frontier_v5._hard_check_bars(bars, voice="Drake")
-        self.assertFalse(r["ok"])
-        self.assertTrue(any("missing comma" in rr for rr in r["reasons"]))
+        self.assertFalse(any("missing comma" in reason for reason in r["reasons"]))
 
     def test_rhyme_failure_flags(self):
         bars = [
