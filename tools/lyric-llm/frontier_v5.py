@@ -421,6 +421,7 @@ def plan_v5(
     chosen_albums: list[str] | None = None,
     call_fn: Callable[[str, str], str] | None = None,
     sample_fn: Callable[..., list[str]] | None = None,
+    wordplay_hints: list[dict] | None = None,
 ) -> Plan:
     """Stage 2. End words come from the catalog menu. The plan is not edited later."""
     sampler = sample_fn or sample_end_words
@@ -467,6 +468,25 @@ def plan_v5(
         "Rhyme rule: paired end_words at positions (0,1), (2,3), (4,5), (6,7) MUST share the same "
         "end-rime phonetically. If no two menu words rhyme, repeat the same word for both bars in the pair."
     )
+    if wordplay_hints:
+        shown = wordplay_hints[:5]
+        block_lines = ["", "WORDPLAY_EXAMPLES (Samuel-confirmed, use as PATTERNS not quotes):"]
+        for idx, ex in enumerate(shown, 1):
+            tab = ex.get("tab") or "?"
+            setup = ex.get("setup") or ""
+            play = ex.get("play") or ""
+            heard = ex.get("heard_as") or ""
+            block_lines.append(
+                f"  {idx}. [{tab}] by {ex.get('artist','?')}: {ex.get('line','')!r}"
+            )
+            if setup or play:
+                block_lines.append(f"     setup: {setup}  flip/play: {play}  heard_as: {heard}")
+        block_lines.append(
+            "Pick ONE example as a pattern. Plan a NEW line in this verse that "
+            "runs setup -> flip -> payoff, where the payoff word is the end word "
+            "of its bar and matches that bar's rhyme family. Never copy the example line."
+        )
+        user = user + "\n" + "\n".join(block_lines)
     model = "custom_call_fn" if call_fn else PLAN_MODEL
     for _attempt in range(2):
         try:
@@ -1115,6 +1135,7 @@ def generate_v5(
         chosen_albums=chosen_albums,
         call_fn=call_fn,
         sample_fn=sample_fn,
+        wordplay_hints=user.get("wordplay_hints"),
     )
     scaffold = retrieve_v5(
         plan,
@@ -1199,17 +1220,26 @@ def generate_judged(
     voice: str = "Gunna",
     candidates: int = 8,
     judge_weights_path: Path | None = None,
+    topic_hint: str = "",
+    use_wordplay_hints: bool = True,
     **kwargs,
 ) -> dict[str, Any]:
     """Best-of-N wrapper over generate_v5.
 
     Generates `candidates` drafts, ranks by the taste judge, and rejects any
     draft that fails hard checks (comma floor, couplet end-rhyme, originality).
+    When `use_wordplay_hints` is True, pulls 3-5 Samuel-approved confirmed
+    wordplay examples (biased to the voice artist) and injects them into the
+    planner prompt so the model composes a NEW line around one of them.
+
     Returns the normal generate_v5 result dict with:
       - `judge_score`: taste margin on the winner
       - `judge_rejected`: True if NO candidate passed hard checks
       - `judge_reasons`: hard-check failure reasons on the surfaced bars
-    When `judge_rejected` is True, `verified` is set to False so callers never
+      - `wordplay_pattern`: the chosen flip (tab, setup, play, heard_as,
+        source artist/song) OR None if no hints were available
+      - `wordplay_hints`: all 3-5 shown to the planner, for traceability
+    When `judge_rejected` is True, `verified` is False so callers never
     show the output; `raw_text` is still present for debugging.
     """
     try:
@@ -1218,6 +1248,23 @@ def generate_judged(
         judge = TasteJudge.load(wpath) if wpath.exists() else None
     except Exception:
         judge = None
+
+    hints: list[dict] = []
+    pattern: dict | None = None
+    if use_wordplay_hints:
+        try:
+            from taste.wordplay import WordplayIndex
+            w_idx = WordplayIndex.build()
+            hints = w_idx.retrieve(artist=voice, k=5)
+            if hints:
+                pattern = {k: hints[0].get(k) for k in
+                           ("tab", "artist", "song", "line", "setup", "play", "heard_as")}
+        except Exception as exc:
+            print(f"[frontier_v5] wordplay hints unavailable: {exc}", file=sys.stderr)
+
+    user_payload = dict(user_input or {})
+    if hints:
+        user_payload["wordplay_hints"] = hints
 
     def _score(text: str) -> float:
         bars = [ln.strip() for ln in text.splitlines() if ln.strip()]
@@ -1230,14 +1277,16 @@ def generate_judged(
 
     kwargs.setdefault("gate_open", True)
     result = generate_v5(
-        user_input, voice=voice, candidates=max(1, int(candidates)),
-        score_fn=_score, **kwargs,
+        user_payload, voice=voice, candidates=max(1, int(candidates)),
+        topic_hint=topic_hint, score_fn=_score, **kwargs,
     )
     bars = [ln.strip() for ln in (result.get("raw_text") or "").splitlines() if ln.strip()]
     hard = _hard_check_bars(bars, voice)
     result["judge_score"] = judge.score_verse(bars, voice=voice) if (judge and bars) else None
     result["judge_rejected"] = not hard["ok"]
     result["judge_reasons"] = hard["reasons"]
+    result["wordplay_pattern"] = pattern
+    result["wordplay_hints"] = hints
     if not hard["ok"]:
         result["verified"] = False
     return result
