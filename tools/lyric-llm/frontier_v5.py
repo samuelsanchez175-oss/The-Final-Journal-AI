@@ -422,6 +422,7 @@ def plan_v5(
     call_fn: Callable[[str, str], str] | None = None,
     sample_fn: Callable[..., list[str]] | None = None,
     wordplay_hints: list[dict] | None = None,
+    chip_hints: list[dict] | None = None,
 ) -> Plan:
     """Stage 2. End words come from the catalog menu. The plan is not edited later."""
     sampler = sample_fn or sample_end_words
@@ -487,6 +488,18 @@ def plan_v5(
             "of its bar and matches that bar's rhyme family. Never copy the example line."
         )
         user = user + "\n" + "\n".join(block_lines)
+    if chip_hints:
+        chip_block = ["", "CHIP_BANK (Samuel's noun bank — use 1-2 as end words or the punchline subject):"]
+        for idx, ch in enumerate(chip_hints[:10], 1):
+            rime_str = "-".join(ch.get("end_rime") or []) or "?"
+            chip_block.append(
+                f"  {idx}. '{ch.get('chip','?')}' [{ch.get('category','?')} / {ch.get('section','?')}] rime={rime_str}"
+            )
+        chip_block.append(
+            "Prefer these chips as end words whose rime matches the plan's end-word menu. "
+            "Keep concrete nouns from the bank; do not copy any example bar text."
+        )
+        user = user + "\n" + "\n".join(chip_block)
     model = "custom_call_fn" if call_fn else PLAN_MODEL
     for _attempt in range(2):
         try:
@@ -1136,6 +1149,7 @@ def generate_v5(
         call_fn=call_fn,
         sample_fn=sample_fn,
         wordplay_hints=user.get("wordplay_hints"),
+        chip_hints=user.get("chip_hints"),
     )
     scaffold = retrieve_v5(
         plan,
@@ -1186,13 +1200,25 @@ def generate_v5(
     )
 
 
-def _hard_check_bars(bars: list[str], voice: str, cmu: dict | None = None) -> dict:
-    """Return {'ok': bool, 'reasons': [str]}; a bar must have >=1 comma, every
-    couplet pair must phonetically rhyme, and the verse must not be too_copied.
+def _hard_check_bars(bars: list[str], voice: str, cmu: dict | None = None,
+                     chip_words: list[str] | None = None,
+                     shown_examples: list[str] | None = None,
+                     novelty_on: bool = True) -> dict:
+    """Return {'ok': bool, 'reasons': [str], 'novelty': {...}}.
+
+    Hard rules (any one trips rejection):
+      - any bar missing a comma
+      - couplet end-rhymes don't match phonetically
+      - novelty check (if `novelty_on`): any bar is a near-dup of a vault
+        line or a shown example (exact OR shared-run >= 6 words OR
+        5-gram overlap >= 0.40 OR Jaccard >= 0.70). Chip words supplied via
+        `chip_words` are excluded from the shared-run count so a shared
+        chip alone can't trip the detector.
     """
     reasons: list[str] = []
+    novelty_report: dict | None = None
     if not bars:
-        return {"ok": False, "reasons": ["empty verse"]}
+        return {"ok": False, "reasons": ["empty verse"], "novelty": None}
     # comma check
     for i, b in enumerate(bars):
         if b.count(",") < 1:
@@ -1204,15 +1230,18 @@ def _hard_check_bars(bars: list[str], voice: str, cmu: dict | None = None) -> di
             reasons.append("end-rhyme couplet failure")
     except Exception as exc:
         reasons.append(f"end-rhyme check error: {exc}")
-    # originality
-    try:
-        from taste.originality import verse_originality
-        orig = verse_originality(bars)
-        if orig["too_copied"]:
-            reasons.append("too_copied: " + "; ".join(orig["reasons"]))
-    except Exception as exc:
-        reasons.append(f"originality check error: {exc}")
-    return {"ok": not reasons, "reasons": reasons}
+    # novelty
+    if novelty_on:
+        try:
+            from taste.novelty import verse_novelty
+            novelty_report = verse_novelty(bars, chip_words=chip_words or [],
+                                           shown_examples=shown_examples or [])
+            if novelty_report["is_near_dup"]:
+                bad = novelty_report["near_dup_bar_indexes"]
+                reasons.append(f"novelty: near-duplicate bar(s) {bad}")
+        except Exception as exc:
+            reasons.append(f"novelty check error: {exc}")
+    return {"ok": not reasons, "reasons": reasons, "novelty": novelty_report}
 
 
 def generate_judged(
@@ -1222,25 +1251,23 @@ def generate_judged(
     judge_weights_path: Path | None = None,
     topic_hint: str = "",
     use_wordplay_hints: bool = True,
+    use_chip_hints: bool = True,
+    use_novelty: bool = True,
+    use_judge_ranker: bool = False,  # OFF by default; use deterministic tie-break
     **kwargs,
 ) -> dict[str, Any]:
     """Best-of-N wrapper over generate_v5.
 
-    Generates `candidates` drafts, ranks by the taste judge, and rejects any
-    draft that fails hard checks (comma floor, couplet end-rhyme, originality).
-    When `use_wordplay_hints` is True, pulls 3-5 Samuel-approved confirmed
-    wordplay examples (biased to the voice artist) and injects them into the
-    planner prompt so the model composes a NEW line around one of them.
+    Hard checks (any trips rejection, no candidate shown):
+      - every bar has >=1 comma
+      - couplet end-rhymes match phonetically
+      - novelty: no bar is a near-dup of a vault line or a shown example
 
-    Returns the normal generate_v5 result dict with:
-      - `judge_score`: taste margin on the winner
-      - `judge_rejected`: True if NO candidate passed hard checks
-      - `judge_reasons`: hard-check failure reasons on the surfaced bars
-      - `wordplay_pattern`: the chosen flip (tab, setup, play, heard_as,
-        source artist/song) OR None if no hints were available
-      - `wordplay_hints`: all 3-5 shown to the planner, for traceability
-    When `judge_rejected` is True, `verified` is False so callers never
-    show the output; `raw_text` is still present for debugging.
+    Ranking of surviving candidates:
+      - the learned taste judge is OFF by default (not yet proven via grouped
+        CV; see judge CV report). Opt in with use_judge_ranker=True.
+      - default tie-break (higher is better): end-rhyme hit rate,
+        -syl_variance, chip_used_at_end, chip_used, -novelty.max_fivegram_overlap.
     """
     try:
         from taste.judge import TasteJudge
@@ -1249,8 +1276,10 @@ def generate_judged(
     except Exception:
         judge = None
 
+    # Wordplay few-shot (Samuel-approved only)
     hints: list[dict] = []
     pattern: dict | None = None
+    shown_examples: list[str] = []
     if use_wordplay_hints:
         try:
             from taste.wordplay import WordplayIndex
@@ -1259,37 +1288,116 @@ def generate_judged(
             if hints:
                 pattern = {k: hints[0].get(k) for k in
                            ("tab", "artist", "song", "line", "setup", "play", "heard_as")}
+                shown_examples = [h.get("line", "") for h in hints if h.get("line")]
         except Exception as exc:
             print(f"[frontier_v5] wordplay hints unavailable: {exc}", file=sys.stderr)
+
+    # Chip retrieval: pre-sample menu to get end-rimes, then pull chips
+    chip_hints: list[dict] = []
+    planned_chips: list[dict] = []
+    chip_words: list[str] = []
+    if use_chip_hints:
+        try:
+            from taste.chips import ChipIndex
+            chips_idx = ChipIndex.load()
+            if len(chips_idx):
+                shape_preview = shape_v5(user_input or {})
+                menu = list(sample_end_words(voice, count=shape_preview.bar_count,
+                                             dedupe_window=16) or [])
+                menu_rimes = [list(_cmu_rime(_word(w))) for w in menu if _word(w)]
+                chip_hints = chips_idx.retrieve_many_rimes(
+                    topic=topic_hint, end_rimes=[r for r in menu_rimes if r],
+                    per_rime=2, k=10,
+                )
+                planned_chips = [{k: c.get(k) for k in ("chip", "category", "section",
+                                                        "end_rime", "syllables")}
+                                 for c in chip_hints[:4]]
+                chip_words = [c.get("chip", "") for c in chip_hints if c.get("chip")]
+        except Exception as exc:
+            print(f"[frontier_v5] chip hints unavailable: {exc}", file=sys.stderr)
 
     user_payload = dict(user_input or {})
     if hints:
         user_payload["wordplay_hints"] = hints
+    if chip_hints:
+        user_payload["chip_hints"] = chip_hints
+
+    def _tie_break(bars_list: list[str]) -> float:
+        # Determinstic: lightweight scalar that mirrors Samuel's priors.
+        if not bars_list:
+            return float("-inf")
+        try:
+            from taste.features import extract
+            f = extract(bars_list, voice=voice)
+            score = (10.0 * f["end_rhyme_hit_rate"]
+                     + 3.0 * f["multisyllable_rhyme"]
+                     - 0.3 * f["syl_variance"]
+                     - 1.5 * f["name_leak"])
+            # chip-usage bonus (soft)
+            text = " ".join(bars_list).lower()
+            end_words = {bars_list[i].rstrip(".,!?;:").split()[-1].lower()
+                         for i in range(len(bars_list)) if bars_list[i].strip()}
+            for ch in chip_words:
+                cl = ch.lower()
+                if cl in text:
+                    score += 0.4
+                if cl in end_words:
+                    score += 0.8
+            return score
+        except Exception:
+            return 0.0
 
     def _score(text: str) -> float:
-        bars = [ln.strip() for ln in text.splitlines() if ln.strip()]
-        hard = _hard_check_bars(bars, voice)
+        bars_list = [ln.strip() for ln in text.splitlines() if ln.strip()]
+        hard = _hard_check_bars(bars_list, voice,
+                                chip_words=chip_words,
+                                shown_examples=shown_examples,
+                                novelty_on=use_novelty)
         if not hard["ok"]:
             return float("-inf")
-        if judge is None:
-            return 0.0
-        return judge.score_verse(bars, voice=voice)
+        if use_judge_ranker and judge is not None:
+            return judge.score_verse(bars_list, voice=voice)
+        base = _tie_break(bars_list)
+        # subtract scaled novelty overlap so near-copying can't win a tie
+        nv = hard.get("novelty")
+        if nv:
+            base -= 2.0 * float(nv.get("max_fivegram_overlap") or 0.0)
+            base -= 0.2 * float(nv.get("max_longest_run") or 0.0)
+        return base
 
     kwargs.setdefault("gate_open", True)
     result = generate_v5(
         user_payload, voice=voice, candidates=max(1, int(candidates)),
         topic_hint=topic_hint, score_fn=_score, **kwargs,
     )
-    bars = [ln.strip() for ln in (result.get("raw_text") or "").splitlines() if ln.strip()]
-    hard = _hard_check_bars(bars, voice)
-    result["judge_score"] = judge.score_verse(bars, voice=voice) if (judge and bars) else None
+    bars_out = [ln.strip() for ln in (result.get("raw_text") or "").splitlines() if ln.strip()]
+    hard = _hard_check_bars(bars_out, voice,
+                            chip_words=chip_words,
+                            shown_examples=shown_examples,
+                            novelty_on=use_novelty)
+    result["judge_score"] = judge.score_verse(bars_out, voice=voice) if (judge and bars_out) else None
+    result["tie_break_score"] = _tie_break(bars_out) if bars_out else None
     result["judge_rejected"] = not hard["ok"]
     result["judge_reasons"] = hard["reasons"]
     result["wordplay_pattern"] = pattern
     result["wordplay_hints"] = hints
+    result["chip_hints_shown"] = chip_hints
+    result["planned_chips"] = planned_chips
+    result["novelty_report"] = hard.get("novelty")
     if not hard["ok"]:
         result["verified"] = False
     return result
+
+
+def _cmu_rime(word: str) -> tuple[str, ...]:
+    """End-rime of a single word; empty tuple on OOV."""
+    if not word:
+        return ()
+    cmu = _cmu()
+    if not cmu:
+        return ()
+    r = end_rime(word, cmu)
+    return tuple(r) if r else ()
 
 
 def main(argv: list[str] | None = None) -> int:
