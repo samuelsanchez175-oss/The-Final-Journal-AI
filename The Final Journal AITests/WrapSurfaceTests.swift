@@ -24,7 +24,7 @@ final class WrapSurfaceTests: XCTestCase {
     func testWrapOffDefaultStillTrueOnEmptyInit() {
         XCTAssertTrue(DirectedGenerationParams().gunnaWrap)
         XCTAssertEqual(DirectedGenerationParams().punchGrammar, .couplet)
-        XCTAssertEqual(DirectedGenerationParams().wrapPocket, .behind)
+        XCTAssertEqual(DirectedGenerationParams().wrapPocket, .onTop)
         XCTAssertEqual(DirectedGenerationParams().targetBarCount, 16)
     }
 

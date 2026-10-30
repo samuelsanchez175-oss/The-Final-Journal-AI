@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import PennWork_Studios
+@testable import XJournal_AI
 
 // MARK: - Mock URLSession for Router Testing
 

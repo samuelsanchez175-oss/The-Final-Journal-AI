@@ -8,19 +8,20 @@ final class Phase6ChipTests: XCTestCase {
         XCTAssertFalse(params.storyArc)
         XCTAssertFalse(params.lyricalPainting)
         XCTAssertFalse(params.breakTheRun)
-        XCTAssertFalse(params.scatFirst)
+        XCTAssertTrue(params.scatFirst)
         XCTAssertTrue(params.acrosticWord.isEmpty)
+        XCTAssertEqual(params.wrapPocket, .onTop)
         let block = params.schemeChipBlock()
         XCTAssertTrue(block.contains("SETUP-ONLY REFS"))
+        XCTAssertTrue(block.contains("RHYTHM FIRST"))
         XCTAssertFalse(block.contains("ACROSTIC"))
         XCTAssertFalse(block.contains("STORY ARC"))
         XCTAssertFalse(block.contains("DESCRIBE THE FLOW"))
         XCTAssertFalse(block.contains("BREAK THE RUN"))
-        XCTAssertFalse(block.contains("RHYTHM FIRST"))
     }
 
     func testSetupOnlyRefsCanTurnOff() {
-        let params = DirectedGenerationParams(setupOnlyRefs: false)
+        let params = DirectedGenerationParams(scatFirst: false, setupOnlyRefs: false)
         XCTAssertEqual(params.schemeChipBlock(), "")
     }
 
@@ -46,9 +47,10 @@ final class Phase6ChipTests: XCTestCase {
         let painting = DirectedGenerationParams(lyricalPainting: true, setupOnlyRefs: false)
         XCTAssertTrue(painting.schemeChipBlock().contains("DESCRIBE THE FLOW"))
 
-        let brk = DirectedGenerationParams(breakTheRun: true, setupOnlyRefs: false, minEndRhymeLines: 4)
+        let brk = DirectedGenerationParams(breakTheRun: true, scatFirst: false, setupOnlyRefs: false, minEndRhymeLines: 4)
         XCTAssertTrue(brk.schemeChipBlock().contains("BREAK THE RUN"))
-        XCTAssertTrue(brk.schemeChipBlock().contains("after 4 bars"))
+        XCTAssertTrue(brk.schemeChipBlock().contains("3–4 bars"))
+        XCTAssertFalse(brk.schemeChipBlock().contains("after 4 bars"))
 
         let scat = DirectedGenerationParams(scatFirst: true, setupOnlyRefs: false)
         XCTAssertTrue(scat.schemeChipBlock().contains("RHYTHM FIRST"))

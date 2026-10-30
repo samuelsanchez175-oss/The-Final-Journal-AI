@@ -585,7 +585,7 @@ class ModelGLLMService {
         let params = context.directedParams
         let layer = context.luxuryLayer ?? .empty
         let selectedTopics = params?.selectedTopics ?? []
-        let selectedTones = params?.selectedTones.map(\.rawValue) ?? []
+        let selectedTones = params?.promptToneNames ?? []
         let worldWords = params?.worldBuildingWords ?? []
         let mustUse = params?.mustUseTokens ?? []
         var cadenceBlock = ""
@@ -677,8 +677,8 @@ class ModelGLLMService {
         if !params.selectedTopics.isEmpty {
             lines.append("TOPICS: \(params.selectedTopics.joined(separator: ", "))")
         }
-        if !params.selectedTones.isEmpty {
-            lines.append("TONES: \(params.selectedTones.map(\.rawValue).joined(separator: ", "))")
+        if !params.promptToneNames.isEmpty {
+            lines.append("TONES: \(params.promptToneNames.joined(separator: ", "))")
         }
         if !params.worldBuildingWords.isEmpty {
             lines.append("WORLD-BUILDING (weave as imagery, not a list): \(params.worldBuildingWords.joined(separator: ", "))")

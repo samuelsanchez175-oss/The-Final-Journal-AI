@@ -106,6 +106,16 @@ public enum BYOKKeychain {
         }
     }
 
+    /// Name the request router already calls. Same read as `load(for:)`.
+    public static func loadKey(for provider: BYOKProvider) throws -> String? {
+        load(for: provider)
+    }
+
+    /// Name the router tests already call. Same delete as `delete(for:)`.
+    public static func deleteKey(for provider: BYOKProvider) throws {
+        try delete(for: provider)
+    }
+
     /// Loads the stored API key for the specified provider, or returns nil if absent.
     public static func load(for provider: BYOKProvider) -> String? {
         let account = provider.keychainKey

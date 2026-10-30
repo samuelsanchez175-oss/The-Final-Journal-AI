@@ -108,9 +108,38 @@ struct DirectedGenerationParams {
     var styleOverride: StyleProfile?
     /// Model You per-verse retrieve filters. Ignored on Model G.
     var youFilters: ModelYouVerseFilters
+    /// Vault tones chosen on Suggest next lines. The prompt uses these names.
+    var corpusTones: [CorpusTone]
+    /// Recording from Freestyle match. Analysis is not run.
+    /// TODO(freestyle-match): BeatAnalyzer plus the transcription/rhythm path should
+    /// read this file and set syllables per bar, pocket, and end sounds.
+    /// Do not invent those numbers from the path alone.
+    var freestyleMatchAudioPath: String?
 
     /// When userPrompt is empty, this fallback is used. No silent inference of direction from narrative.
     static let defaultUserPromptWhenEmpty = "Continue the draft in the same vein."
+
+    /// Direction for Suggest next lines. The sheet does not ask. An empty note stays on the neutral line.
+    static func directionFromOpenNote(noteText: String, transcript: String?) -> String {
+        let note = noteText.trimmingCharacters(in: .whitespacesAndNewlines)
+        let spoken = (transcript ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        if note.isEmpty && spoken.isEmpty {
+            return defaultUserPromptWhenEmpty
+        }
+        var parts = ["Continue the open note in the same vein."]
+        if !note.isEmpty {
+            parts.append("Written:\n\(clip(note, limit: 2000))")
+        }
+        if !spoken.isEmpty {
+            parts.append("Spoken on the attached audio:\n\(clip(spoken, limit: 2000))")
+        }
+        return parts.joined(separator: "\n\n")
+    }
+
+    private static func clip(_ text: String, limit: Int) -> String {
+        guard text.count > limit else { return text }
+        return String(text.prefix(limit)) + "…"
+    }
     static let emptyPlaceholder = "—"
 
     /// Spark mode: keep the wrap/pocket, swap the objects.
@@ -136,7 +165,7 @@ struct DirectedGenerationParams {
         copyLastFourRhythm: Bool = true,
         pastedFlowText: String = "",
         gunnaWrap: Bool = true,
-        wrapPocket: WrapPocket = .behind,
+        wrapPocket: WrapPocket = .onTop,
         wrapBpmSource: WrapBpmSource = .note,
         wrapBpmCustom: Int? = nil,
         targetBarCount: Int = 16,
@@ -146,7 +175,7 @@ struct DirectedGenerationParams {
         storyArc: Bool = false,
         lyricalPainting: Bool = false,
         breakTheRun: Bool = false,
-        scatFirst: Bool = false,
+        scatFirst: Bool = true,
         setupOnlyRefs: Bool = true,
         selectedTopics: [String] = [],
         selectedTones: [EmotionalTone] = [],
@@ -155,7 +184,9 @@ struct DirectedGenerationParams {
         syllableTolerance: Int = 2,
         minEndRhymeLines: Int? = nil,
         styleOverride: StyleProfile? = nil,
-        youFilters: ModelYouVerseFilters = .init()
+        youFilters: ModelYouVerseFilters = .init(),
+        corpusTones: [CorpusTone] = [],
+        freestyleMatchAudioPath: String? = nil
     ) {
         self.userPrompt = userPrompt
         self.selectedRhymeGroupIDs = selectedRhymeGroupIDs
@@ -182,13 +213,25 @@ struct DirectedGenerationParams {
         self.setupOnlyRefs = setupOnlyRefs
         self.targetBarCount = storyArc ? 16 : ((targetBarCount == 4) ? 4 : 16)
         self.selectedTopics = selectedTopics
-        self.selectedTones = selectedTones
+        if selectedTones.isEmpty, !corpusTones.isEmpty {
+            self.selectedTones = CorpusTone.emotionalTones(from: corpusTones)
+        } else {
+            self.selectedTones = selectedTones
+        }
         self.worldBuildingWords = worldBuildingWords
         self.lineCount = lineCount
         self.syllableTolerance = syllableTolerance
         self.minEndRhymeLines = minEndRhymeLines ?? max(1, lineCount / 2)
         self.styleOverride = styleOverride
         self.youFilters = youFilters
+        self.corpusTones = corpusTones
+        self.freestyleMatchAudioPath = freestyleMatchAudioPath
+    }
+
+    /// Names that go in the generation prompt. Corpus tones win over the mapped EmotionalTone list.
+    var promptToneNames: [String] {
+        if !corpusTones.isEmpty { return corpusTones.map(\.rawValue) }
+        return selectedTones.map(\.rawValue)
     }
 
     /// Recipe seed: explicit field, else a single must-use token is the seed (not a cage).
@@ -257,8 +300,7 @@ struct DirectedGenerationParams {
             lines.append("DESCRIBE THE FLOW: some bars describe the cadence itself, or teach a how-to inside the verse. Not five boasts that you rap well.")
         }
         if breakTheRun {
-            let n = max(2, minEndRhymeLines)
-            lines.append("BREAK THE RUN: after \(n) bars on one end-rime, switch the ending sound AND the cadence on purpose (new pocket, not just a new noun).")
+            lines.append("BREAK THE RUN: around every 3–4 bars, switch the ending sound AND the cadence on purpose (new pocket, not just a new noun). Do not hold one end sound for the full lines-per-rhyme count.")
         }
         if scatFirst {
             lines.append("RHYTHM FIRST: place the stresses first (yeah/uh on beats 3–4), then drop nouns into those slots. If a COPY-FLOW map is present, fill that map — do not invent a new rhythm.")
@@ -393,7 +435,7 @@ OUTPUT RULES:
         let highlightWordsStr = formatHighlightAnchors(params.highlightAnchors)
         let mustUseWordsStr = params.mustUseTokens.isEmpty ? DirectedGenerationParams.emptyPlaceholder : params.mustUseTokens.joined(separator: ", ")
         let selectedTopicsStr = params.selectedTopics.isEmpty ? DirectedGenerationParams.emptyPlaceholder : params.selectedTopics.joined(separator: ", ")
-        let selectedTonesStr = params.selectedTones.isEmpty ? DirectedGenerationParams.emptyPlaceholder : params.selectedTones.map(\.rawValue).joined(separator: ", ")
+        let selectedTonesStr = params.promptToneNames.isEmpty ? DirectedGenerationParams.emptyPlaceholder : params.promptToneNames.joined(separator: ", ")
         let worldBuildingStr = params.worldBuildingWords.isEmpty ? DirectedGenerationParams.emptyPlaceholder : params.worldBuildingWords.joined(separator: ", ")
 
         var s = userPromptTemplate

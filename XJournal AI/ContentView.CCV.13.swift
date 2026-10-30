@@ -72,13 +72,6 @@ struct NoteEditorView: View {
     @StateObject private var rhymeEngineState = RhymeEngineState()
     @State private var rhymePaintEpoch: Int = 0
 
-    @AppStorage("toolbar_ai_last_suggestion_model") private var lastToolbarSuggestionModelRaw: String = SuggestionModel.modelG.rawValue
-
-    /// Sparkle picker (G vs You). Model G still uses the Core coordinator; Model You injects ArtistBrain.
-    private var modelGControlSurfaceAPIModel: SuggestionModel {
-        SuggestionModel(rawValue: lastToolbarSuggestionModelRaw) ?? .modelG
-    }
-    
     // Onboarding splash screen state
     @ObservedObject private var splashManager = SplashScreenManager.shared
     @State private var showToolbarOverview: Bool = false
@@ -590,7 +583,9 @@ struct NoteEditorView: View {
             await rapSuggestionEngine.generateSuggestions(
                 text: currentText,
                 highlights: computedHighlights,
-                model: modelGControlSurfaceAPIModel,
+                // V6 is this call: Model G Core v4, generateFullVerse, then the chat provider for the key.
+                // frontier_v5.py is not on this route. V7 has no endpoint.
+                model: .modelG,
                 bpm: item.bpm,
                 key: item.key,
                 scale: item.scale,
@@ -911,6 +906,8 @@ struct NoteEditorView: View {
                 noteBPM: item.bpm,
                 noteKey: item.key,
                 noteScale: item.scale,
+                noteText: item.body,
+                noteTranscript: item.transcription,
                 syllableMin: $item.syllableMin,
                 syllableMax: $item.syllableMax
             ) { params, rhymeGroupsByID in
