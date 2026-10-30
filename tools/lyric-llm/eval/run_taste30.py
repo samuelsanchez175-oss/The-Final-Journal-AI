@@ -72,14 +72,26 @@ def _random_id(rng: random.Random) -> str:
     return "".join(rng.choice("0123456789abcdef") for _ in range(16))
 
 
+OPENAI_MODEL = os.environ.get("TASTE30_MODEL", "gpt-4o-mini")
+
+
 def main() -> int:
+    # frontier_v5 defaults PLAN_MODEL/EDIT_MODEL to claude-opus-4-7 which
+    # dispatches to Anthropic (needs ANTHROPIC_API_KEY). This runner is
+    # documented as needing OPENAI_API_KEY, so pin the models to an OpenAI
+    # model BEFORE importing frontier_v5 (the module reads env at import).
+    os.environ.setdefault("V5_PLAN_MODEL", OPENAI_MODEL)
+    os.environ.setdefault("V5_EDIT_MODEL", OPENAI_MODEL)
+
     if not os.environ.get("OPENAI_API_KEY"):
         print("ERROR: OPENAI_API_KEY not set. Export the key and re-run.", file=sys.stderr)
         print("  export OPENAI_API_KEY=sk-...", file=sys.stderr)
         return 2
 
     prompts = [json.loads(l) for l in TASTE30.read_text().splitlines() if l.strip()]
-    print(f"loaded {len(prompts)} prompts")
+    print(f"loaded {len(prompts)} prompts; "
+          f"V5_PLAN_MODEL={os.environ['V5_PLAN_MODEL']}  "
+          f"V5_EDIT_MODEL={os.environ['V5_EDIT_MODEL']}")
 
     from frontier_v5 import generate_v5, generate_judged
 
@@ -183,7 +195,7 @@ def main() -> int:
             }
             row["models"][key] = {
                 "generation_id": gid,
-                "model": "gpt-4o-mini",
+                "model": OPENAI_MODEL,
                 "artist": p["artist"], "topic": p["topic"],
                 "passed": True,
                 "bars": _bar_entries(data["bars"]),

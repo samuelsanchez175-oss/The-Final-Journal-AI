@@ -423,6 +423,7 @@ def plan_v5(
     sample_fn: Callable[..., list[str]] | None = None,
     wordplay_hints: list[dict] | None = None,
     chip_hints: list[dict] | None = None,
+    plan_extras: dict | None = None,
 ) -> Plan:
     """Stage 2. End words come from the catalog menu. The plan is not edited later."""
     sampler = sample_fn or sample_end_words
@@ -487,6 +488,12 @@ def plan_v5(
             "runs setup -> flip -> payoff, where the payoff word is the end word "
             "of its bar and matches that bar's rhyme family. Never copy the example line."
         )
+        block_lines.append(
+            "Add a JSON key `wordplay_hint_index` (int 1..N) naming which "
+            "example you chose, or null if you did not use any. Add a JSON key "
+            "`wordplay_bar_index` (0..bars-1) naming the bar that lands the "
+            "payoff, or null."
+        )
         user = user + "\n" + "\n".join(block_lines)
     if chip_hints:
         chip_block = ["", "CHIP_BANK (Samuel's noun bank — use 1-2 as end words or the punchline subject):"]
@@ -512,6 +519,13 @@ def plan_v5(
             continue
         plan = _plan_from_json(data, shape.bar_count, voice, blend, set(allowed), model)
         if plan is not None:
+            if plan_extras is not None:
+                raw_idx = data.get("wordplay_hint_index")
+                if isinstance(raw_idx, int) and wordplay_hints and 1 <= raw_idx <= len(wordplay_hints):
+                    plan_extras["wordplay_hint_index"] = raw_idx - 1  # convert to 0-based
+                raw_bar = data.get("wordplay_bar_index")
+                if isinstance(raw_bar, int) and 0 <= raw_bar < shape.bar_count:
+                    plan_extras["wordplay_bar_index"] = raw_bar
             return plan
     print("[frontier_v5] plan JSON failed twice; using the v3 motif fallback", file=sys.stderr)
     return _fallback_plan(shape, voice, blend, mix, topic_hint)
@@ -628,11 +642,14 @@ def _edit_prompt(
     taste: str,
     only_index: int | None,
     violations: list[str] | None,
+    wordplay_pick: dict | None = None,
+    wordplay_bar_index: int | None = None,
+    chip_hints: list[dict] | None = None,
 ) -> str:
     indexes = [only_index] if only_index is not None else list(range(len(scaffold)))
     blocks = []
     if only_index is not None:
-        blocks.append("retry this bar only")
+        blocks.append("retry this bar only — REWRITE it, do not reuse this phrasing")
         blocks.append("violations: " + ", ".join(violations or []))
     for index in indexes:
         line = scaffold[index]
@@ -649,8 +666,28 @@ def _edit_prompt(
             "  • Keep the picture — the object, place, or person named in the scaffold.\n"
             f"  • Voice: '{bar_voice}'. Use their slang bag '{bar_voice}'.\n"
             "  • Inner rhyme: 2–4 same-vowel-class content words before the end word.\n"
+            "  • The scaffold is a target to BEAT, not text to reuse — rewrite the wording,\n"
+            "    keep the end word and the picture. Returning the scaffold near-verbatim fails novelty.\n"
             "  • If you can't satisfy all rules, return the scaffold unchanged."
         )
+    if wordplay_pick:
+        tab = wordplay_pick.get("tab") or "?"
+        setup = wordplay_pick.get("setup") or ""
+        play = wordplay_pick.get("play") or ""
+        heard = wordplay_pick.get("heard_as") or ""
+        example_line = wordplay_pick.get("line") or ""
+        at_bar = (f" at bar {wordplay_bar_index + 1}" if wordplay_bar_index is not None else "")
+        blocks.append(
+            "Wordplay target (from the planner's choice; do NOT copy the example):\n"
+            f"  tab={tab}  setup={setup!r}  flip/play={play!r}  heard_as={heard!r}\n"
+            f"  example line (REFERENCE ONLY): {example_line!r}\n"
+            f"  Implement this setup → flip → payoff pattern{at_bar}; land the payoff on the planned end word."
+        )
+    if chip_hints:
+        chip_lines = ", ".join(
+            f"{c.get('chip','?')} ({c.get('category','?')})" for c in chip_hints[:6]
+        )
+        blocks.append(f"Chip targets (use 1-2 as concrete nouns or end words): {chip_lines}")
     if taste:
         blocks.append("Taste:\n" + taste)
     blocks.append("Return one line per bar, prefixed with its bar number.")
@@ -684,10 +721,18 @@ def edit_v5(
     only_index: int | None = None,
     violations: list[str] | None = None,
     verse: Verse | None = None,
+    wordplay_pick: dict | None = None,
+    wordplay_bar_index: int | None = None,
+    chip_hints: list[dict] | None = None,
 ) -> Verse:
     """Stage 4. One polish pass. A bar that comes back empty keeps its scaffold line."""
-    system = "You edit catalog lines into a new sentence. You do not throw away the line."
-    user = _edit_prompt(plan, scaffold, shape, voice, taste, only_index, violations)
+    system = ("You edit catalog lines into NEW sentences. Preserve the end word and "
+              "the picture, but rewrite the wording. Returning the scaffold near-"
+              "verbatim fails the novelty gate downstream.")
+    user = _edit_prompt(plan, scaffold, shape, voice, taste, only_index, violations,
+                       wordplay_pick=wordplay_pick,
+                       wordplay_bar_index=wordplay_bar_index,
+                       chip_hints=chip_hints)
     try:
         text = _call_model(call_fn, EDIT_MODEL, system, user)
     except Exception as exc:
@@ -1150,6 +1195,7 @@ def generate_v5(
         sample_fn=sample_fn,
         wordplay_hints=user.get("wordplay_hints"),
         chip_hints=user.get("chip_hints"),
+        plan_extras=user.get("plan_extras"),
     )
     scaffold = retrieve_v5(
         plan,
@@ -1163,8 +1209,24 @@ def generate_v5(
     taste = _load_taste(voice)
     verified_list = []
     takes = max(1, int(candidates))
+    # Pull the planner's chosen wordplay example (if any) so the editor and
+    # retry editor can target it. plan_extras is a mutable dict passed in by
+    # the caller (generate_judged) and populated by _plan_from_json.
+    plan_extras_in = user.get("plan_extras") or {}
+    wp_hints = user.get("wordplay_hints") or []
+    wp_idx = plan_extras_in.get("wordplay_hint_index")
+    wordplay_pick = (wp_hints[wp_idx] if isinstance(wp_idx, int)
+                     and 0 <= wp_idx < len(wp_hints) else None)
+    wordplay_bar_index = plan_extras_in.get("wordplay_bar_index")
+    chip_hints_in = user.get("chip_hints") or []
+
+    import functools as _ft
+    bound_edit = _ft.partial(edit_v5, wordplay_pick=wordplay_pick,
+                             wordplay_bar_index=wordplay_bar_index,
+                             chip_hints=chip_hints_in)
+
     for _take in range(takes):
-        draft = edit_v5(plan, scaffold, shape, voice, taste=taste, call_fn=call_fn)
+        draft = bound_edit(plan, scaffold, shape, voice, taste=taste, call_fn=call_fn)
         verified_list.append(verify_v5(
             draft,
             plan,
@@ -1173,6 +1235,7 @@ def generate_v5(
             voice,
             taste=taste,
             call_fn=call_fn,
+            edit_fn=bound_edit,
             max_retries=max_retries,
             cmu=cmu,
             syllable_fn=syllable_fn,
@@ -1254,6 +1317,7 @@ def generate_judged(
     use_chip_hints: bool = True,
     use_novelty: bool = True,
     use_judge_ranker: bool = False,  # OFF by default; use deterministic tie-break
+    use_cache: bool = False,  # judged ≠ baseline — don't return cached unjudged verse
     **kwargs,
 ) -> dict[str, Any]:
     """Best-of-N wrapper over generate_v5.
@@ -1321,6 +1385,10 @@ def generate_judged(
         user_payload["wordplay_hints"] = hints
     if chip_hints:
         user_payload["chip_hints"] = chip_hints
+    # plan_extras: shared dict so _plan_from_json can report the planner's
+    # wordplay pick back to us (edited in-place inside plan_v5).
+    plan_extras: dict = {}
+    user_payload["plan_extras"] = plan_extras
 
     def _tie_break(bars_list: list[str]) -> float:
         # Determinstic: lightweight scalar that mirrors Samuel's priors.
@@ -1368,8 +1436,17 @@ def generate_judged(
     kwargs.setdefault("gate_open", True)
     result = generate_v5(
         user_payload, voice=voice, candidates=max(1, int(candidates)),
-        topic_hint=topic_hint, score_fn=_score, **kwargs,
+        topic_hint=topic_hint, score_fn=_score, use_cache=use_cache, **kwargs,
     )
+    # The planner may have named one of the hints as its chosen pattern;
+    # surface that in the result (fall back to None, NOT hints[0]).
+    chosen_idx = plan_extras.get("wordplay_hint_index")
+    if isinstance(chosen_idx, int) and 0 <= chosen_idx < len(hints):
+        pattern = {k: hints[chosen_idx].get(k) for k in
+                   ("tab", "artist", "song", "line", "setup", "play", "heard_as")}
+        pattern["chosen_hint_index"] = chosen_idx
+    else:
+        pattern = None
     bars_out = [ln.strip() for ln in (result.get("raw_text") or "").splitlines() if ln.strip()]
     hard = _hard_check_bars(bars_out, voice,
                             chip_words=chip_words,

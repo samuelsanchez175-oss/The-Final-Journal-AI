@@ -33,31 +33,45 @@ def _ngrams(words: list[str], n: int) -> list[tuple[str, ...]]:
 _CONN: sqlite3.Connection | None = None
 
 
+class CatalogUnavailable(RuntimeError):
+    """Raised when the vault SQLite is missing / unreadable / lacks FTS."""
+
+
 def _conn() -> sqlite3.Connection:
+    """Open the vault SQLite read-only; fail CLOSED on error.
+
+    Silently treating a missing / unreadable catalog as "no matches" would
+    disable the originality hard check precisely when it cannot verify
+    copying. Callers must handle CatalogUnavailable (verse_originality does).
+    """
     global _CONN
-    if _CONN is None:
-        uri = f"file:{CATALOG}?mode=ro"
-        _CONN = sqlite3.connect(uri, uri=True, check_same_thread=False)
+    if _CONN is not None:
+        return _CONN
+    if not CATALOG.exists():
+        raise CatalogUnavailable(f"catalog not found at {CATALOG}")
+    try:
+        conn = sqlite3.connect(f"file:{CATALOG}?mode=ro", uri=True,
+                               check_same_thread=False)
+        conn.execute("SELECT count(*) FROM bars_fts LIMIT 1").fetchone()
+    except sqlite3.Error as exc:
+        raise CatalogUnavailable(f"catalog unreadable: {exc}") from exc
+    _CONN = conn
     return _CONN
 
 
 def _fts_phrase_hit(phrase: str) -> int:
-    """Return catalog hit count for a 5-word phrase. Short-circuits at 1."""
+    """Return catalog hit count for a 5-word phrase. Raises CatalogUnavailable."""
     sql = 'SELECT COUNT(*) FROM bars_fts WHERE bars_fts MATCH ?'
     quoted = '"' + phrase.replace('"', ' ') + '"'
     try:
         row = _conn().execute(sql, (quoted,)).fetchone()
         return int(row[0]) if row else 0
-    except sqlite3.Error:
-        return 0
+    except sqlite3.Error as exc:
+        raise CatalogUnavailable(f"FTS query failed: {exc}") from exc
 
 
 def _exact_line_hit(line: str) -> bool:
-    """Normalized exact match against the catalog.
-
-    Compares `_normalize(bar)` against FTS phrase hit (word-only form) then
-    confirms with word-tokenized equality on each candidate row.
-    """
+    """Normalized exact match against the catalog; raises CatalogUnavailable."""
     norm = _normalize(line)
     if not norm:
         return False
@@ -73,8 +87,8 @@ def _exact_line_hit(line: str) -> bool:
             if _normalize(candidate) == norm:
                 return True
         return False
-    except sqlite3.Error:
-        return False
+    except sqlite3.Error as exc:
+        raise CatalogUnavailable(f"exact-line check failed: {exc}") from exc
 
 
 def bar_overlap(bar: str, n: int = 5) -> dict:
@@ -102,17 +116,20 @@ def verse_originality(bars: Iterable[str], n: int = 5,
                       verse_threshold: float = 0.35) -> dict:
     """Score a whole verse.
 
-    Returns:
-      bars: per-bar overlap stats
-      verse_overlap: mean ngram_overlap across bars
-      too_copied: bool (True if any exact line hit, or mean overlap > verse_threshold,
-                  or any bar overlap > bar_threshold)
-      reasons: short strings explaining each flag
+    Fails CLOSED: if the catalog can't be queried, too_copied=True with a
+    "catalog unavailable" reason so the caller's hard gate rejects the verse
+    instead of silently passing a potential copy.
     """
     bar_list = [b for b in bars if b and b.strip()]
-    stats = [bar_overlap(b, n) for b in bar_list]
+    try:
+        stats = [bar_overlap(b, n) for b in bar_list]
+    except CatalogUnavailable as exc:
+        return {"bars": [], "verse_overlap": 0.0, "too_copied": True,
+                "reasons": [f"catalog unavailable: {exc}"],
+                "catalog_unavailable": True}
     if not stats:
-        return {"bars": [], "verse_overlap": 0.0, "too_copied": False, "reasons": []}
+        return {"bars": [], "verse_overlap": 0.0, "too_copied": False,
+                "reasons": [], "catalog_unavailable": False}
     reasons = []
     exact_bars = [i for i, s in enumerate(stats) if s["exact_hit"]]
     hot_bars = [i for i, s in enumerate(stats) if s["ngram_overlap"] >= bar_threshold]
@@ -130,4 +147,5 @@ def verse_originality(bars: Iterable[str], n: int = 5,
     return {
         "bars": stats, "verse_overlap": round(verse_overlap, 4),
         "too_copied": too_copied, "reasons": reasons,
+        "catalog_unavailable": False,
     }

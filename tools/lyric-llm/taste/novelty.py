@@ -69,18 +69,40 @@ def _jaccard(a: set[str], b: set[str]) -> float:
 _CONN: sqlite3.Connection | None = None
 
 
-def _conn() -> sqlite3.Connection | None:
+class CatalogUnavailable(RuntimeError):
+    """Raised when the vault SQLite is missing / unreadable / lacks FTS."""
+
+
+def _conn() -> sqlite3.Connection:
+    """Open the vault SQLite read-only. Raises CatalogUnavailable on failure.
+
+    FAILING CLOSED is deliberate: a silent no-rows return would disable the
+    novelty hard check precisely when it cannot verify copying.
+    """
     global _CONN
-    if _CONN is None and CATALOG.exists():
-        _CONN = sqlite3.connect(f"file:{CATALOG}?mode=ro", uri=True,
-                                check_same_thread=False)
+    if _CONN is not None:
+        return _CONN
+    if not CATALOG.exists():
+        raise CatalogUnavailable(f"catalog not found at {CATALOG}")
+    try:
+        conn = sqlite3.connect(f"file:{CATALOG}?mode=ro", uri=True,
+                               check_same_thread=False)
+        # verify the FTS table exists; otherwise phrase match returns no hits
+        # and we'd silently pass copies through.
+        conn.execute("SELECT count(*) FROM bars_fts LIMIT 1").fetchone()
+    except sqlite3.Error as exc:
+        raise CatalogUnavailable(f"catalog unreadable: {exc}") from exc
+    _CONN = conn
     return _CONN
 
 
 def _fts_candidates(bar_tokens: list[str], limit: int = 10) -> list[tuple[str, str, str]]:
-    """Fetch catalog bars that share a 5-gram with the input (fallback 4-gram)."""
+    """Fetch catalog bars that share a 5-gram with the input (fallback 4-gram).
+
+    Raises CatalogUnavailable if the DB cannot be queried.
+    """
     conn = _conn()
-    if conn is None or len(bar_tokens) < 4:
+    if len(bar_tokens) < 4:
         return []
     out: list[tuple[str, str, str]] = []
     for n in (5, 4):
@@ -96,8 +118,9 @@ def _fts_candidates(bar_tokens: list[str], limit: int = 10) -> list[tuple[str, s
                     "WHERE bars_fts MATCH ? LIMIT ?",
                     (phrase, limit),
                 ).fetchall()
-            except sqlite3.Error:
-                continue
+            except sqlite3.Error as exc:
+                # a corrupt query is a hard failure for the novelty check
+                raise CatalogUnavailable(f"FTS query failed: {exc}") from exc
             for r in rows:
                 out.append(r)
         if out:
@@ -130,19 +153,21 @@ def bar_novelty(bar: str, chip_words: Optional[Iterable[str]] = None,
     """Score a single bar's near-dup risk.
 
     Returns:
-      {bar, is_near_dup, reasons, best_match: {line, artist, song, ...stats}}
+      {bar, is_near_dup, reasons, best_match: {line, artist, song, ...stats},
+       catalog_unavailable: bool}
+    If the catalog cannot be queried, FAIL CLOSED: is_near_dup=True with a
+    "catalog unavailable" reason so the hard gate rejects the bar instead of
+    treating a failed query as evidence of originality.
     """
     bar_tokens = _tokens(bar)
     if not bar_tokens:
-        return {"bar": bar, "is_near_dup": False, "reasons": [], "best_match": None}
+        return {"bar": bar, "is_near_dup": False, "reasons": [],
+                "best_match": None, "catalog_unavailable": False}
 
     ignore_tokens: set[str] = set()
     for chip in chip_words or []:
         for t in _tokens(chip):
             ignore_tokens.add(t)
-    # also ignore stock "name" tokens by default — short all-letter capitalized
-    # words. We only have lowercased tokens here, so this just suppresses the
-    # chip words themselves.
 
     reasons: list[str] = []
     norm_bar = _normalize(bar)
@@ -151,8 +176,15 @@ def bar_novelty(bar: str, chip_words: Optional[Iterable[str]] = None,
     candidates: list[tuple[str, str, str]] = []
     for ex in shown_examples or []:
         candidates.append((ex, "", "shown-example"))
-    # Catalog candidates via FTS
-    candidates.extend(_fts_candidates(bar_tokens))
+    # Catalog candidates via FTS; fail closed if unreachable.
+    try:
+        candidates.extend(_fts_candidates(bar_tokens))
+    except CatalogUnavailable as exc:
+        return {
+            "bar": bar, "is_near_dup": True,
+            "reasons": [f"catalog unavailable: {exc}"],
+            "best_match": None, "catalog_unavailable": True,
+        }
 
     best: dict | None = None
     best_overlap = -1.0
@@ -180,7 +212,7 @@ def bar_novelty(bar: str, chip_words: Optional[Iterable[str]] = None,
     if exact_hit:
         reasons.append("exact normalized match")
         return {"bar": bar, "is_near_dup": True, "reasons": reasons,
-                "best_match": exact_hit}
+                "best_match": exact_hit, "catalog_unavailable": False}
 
     is_near_dup = False
     if best:
@@ -195,7 +227,8 @@ def bar_novelty(bar: str, chip_words: Optional[Iterable[str]] = None,
             reasons.append(f"Jaccard {best['jaccard']:.2f} >= 0.70")
 
     return {"bar": bar, "is_near_dup": is_near_dup, "reasons": reasons,
-            "best_match": best if is_near_dup else None}
+            "best_match": best if is_near_dup else None,
+            "catalog_unavailable": False}
 
 
 def verse_novelty(bars: Iterable[str], chip_words: Optional[Iterable[str]] = None,

@@ -76,5 +76,30 @@ class TestVerse(unittest.TestCase):
         self.assertFalse(v["is_near_dup"])
 
 
+class TestFailClosed(unittest.TestCase):
+    """If the catalog is unreachable, the novelty check must FAIL CLOSED
+    (treat every bar as a near-dup) so the hard gate rejects it instead of
+    silently passing a potential copy."""
+
+    def test_fail_closed_on_missing_catalog(self):
+        import taste.novelty as nv
+        # swap the module-level CATALOG path to a bogus one, reset the cached
+        # connection, run, then restore.
+        orig_catalog = nv.CATALOG
+        orig_conn = nv._CONN
+        nv._CONN = None
+        from pathlib import Path
+        nv.CATALOG = Path("/tmp/__does_not_exist_%%.sqlite")
+        try:
+            r = nv.bar_novelty("I ride the city with my crown held high today")
+            self.assertTrue(r["is_near_dup"])
+            self.assertTrue(r.get("catalog_unavailable"))
+            self.assertTrue(any("unavailable" in reason.lower()
+                                for reason in r["reasons"]))
+        finally:
+            nv.CATALOG = orig_catalog
+            nv._CONN = orig_conn
+
+
 if __name__ == "__main__":
     unittest.main()
