@@ -49,8 +49,13 @@ def _bars_from_bar_votes(bar_votes: list[dict]) -> list[str]:
     return [t for _, t in indexed]
 
 
-def iter_verse_rows() -> Iterator[dict]:
-    """Yield verse-level rated rows with features."""
+def iter_verse_rows(dedupe: bool = True) -> Iterator[dict]:
+    """Yield verse-level rated rows with features.
+
+    When `dedupe` is True (default), rows with the same (generation_id, artist,
+    topic) are deduplicated keeping the most recently rated one (max rated_at).
+    """
+    all_rows: list[dict] = []
     # sparkler files
     for p in sorted(RATINGS_DIR.glob("sparkler_ratings_*.json")):
         try:
@@ -67,7 +72,7 @@ def iter_verse_rows() -> Iterator[dict]:
             if not bars:
                 continue
             voice = r.get("artist") or ""
-            yield {
+            all_rows.append({
                 "source": p.name,
                 "generation_id": r.get("generation_id"),
                 "artist": voice,
@@ -76,8 +81,9 @@ def iter_verse_rows() -> Iterator[dict]:
                 "score": float(score),
                 "reasons": r.get("verse_reasons") or [],
                 "bars": bars,
+                "rated_at": r.get("rated_at") or "",
                 "features": extract(bars, voice=voice),
-            }
+            })
     # LOO19
     loo = RATINGS_DIR / "autograde_loo19.jsonl"
     if loo.exists():
@@ -92,7 +98,7 @@ def iter_verse_rows() -> Iterator[dict]:
             if not bars:
                 continue
             voice = r.get("artist") or ""
-            yield {
+            all_rows.append({
                 "source": loo.name,
                 "generation_id": r.get("generation_id"),
                 "artist": voice,
@@ -101,8 +107,31 @@ def iter_verse_rows() -> Iterator[dict]:
                 "score": float(score),
                 "reasons": r.get("samuel_reasons") or [],
                 "bars": bars,
+                "rated_at": "",
                 "features": extract(bars, voice=voice),
-            }
+            })
+
+    if not dedupe:
+        yield from all_rows
+        return
+    # dedupe by (generation_id, artist, topic); keep max rated_at
+    best: dict[tuple, dict] = {}
+    for r in all_rows:
+        key = (r.get("generation_id") or "", r.get("artist") or "", r.get("topic") or "")
+        prev = best.get(key)
+        if prev is None or (r.get("rated_at") or "") > (prev.get("rated_at") or ""):
+            best[key] = r
+    for r in best.values():
+        yield r
+
+
+def verse_group_key(row: dict) -> str:
+    """Group-identifier for a rated row: shared by a verse and its bar rewrites."""
+    gid = row.get("generation_id")
+    if gid:
+        return str(gid)
+    # fallback: hash of bar text joined
+    return "|".join((row.get("bars") or []))[:120]
 
 
 def iter_bar_rewrite_pairs() -> Iterator[dict]:
