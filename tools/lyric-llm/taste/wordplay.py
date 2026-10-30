@@ -163,7 +163,12 @@ def iter_confirmed() -> Iterator[dict]:
             "source": source,
         }
 
-    for p, label in ((INDEX, "index"), (INDEX_V2, "index-v2")):
+    # Only Samuel-authored rows count as confirmed:
+    #  - index.jsonl / index-v2.jsonl rows whose `by` starts with "samuel"
+    #  - recheck.jsonl rows whose `by` starts with "samuel"
+    # Antigravity KEEPs are UNCONFIRMED and never shown in the prompt;
+    # they are exported for Samuel's review via export_review_batches().
+    for p, label in ((INDEX, "index"), (INDEX_V2, "index-v2"), (RECHECK, "recheck")):
         if not p.exists():
             continue
         for raw in p.read_text().splitlines():
@@ -173,20 +178,10 @@ def iter_confirmed() -> Iterator[dict]:
                 entry = json.loads(raw)
             except json.JSONDecodeError:
                 continue
-            yield from push(entry, label)
-
-    if RECHECK.exists():
-        for raw in RECHECK.read_text().splitlines():
-            if not raw.strip():
-                continue
-            try:
-                entry = json.loads(raw)
-            except json.JSONDecodeError:
-                continue
             by = (entry.get("by") or "").lower()
             if not by.startswith("samuel"):
                 continue
-            yield from push(entry, "recheck-samuel")
+            yield from push(entry, label + "-samuel")
 
 
 # ---------- Retrieval index ----------

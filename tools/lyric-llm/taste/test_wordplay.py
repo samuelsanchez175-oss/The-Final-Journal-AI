@@ -16,7 +16,9 @@ class TestWordplay(unittest.TestCase):
         cls.idx = WordplayIndex.build()
 
     def test_index_populated(self):
-        self.assertGreater(len(self.idx), 500)
+        # Samuel-authored only — small by design; antigravity KEEPs are
+        # exported for review via wordplay_review_export.py.
+        self.assertGreaterEqual(len(self.idx), 1)
 
     def test_tab_rules_sound_flip_requires_heard_as(self):
         self.assertFalse(_tab_rules_ok({"tab": "sound_flips", "verdict": "KEEP",
@@ -41,12 +43,8 @@ class TestWordplay(unittest.TestCase):
             self.assertEqual(h["tab"].lower(), "double_meanings")
 
     def test_iter_confirmed_has_only_keep(self):
-        first_20 = []
-        for i, e in enumerate(iter_confirmed()):
-            if i >= 20:
-                break
-            first_20.append(e)
-        self.assertEqual(len(first_20), 20)
+        for e in iter_confirmed():
+            self.assertIn(e["source"], {"index-samuel", "index-v2-samuel", "recheck-samuel"})
 
 
 if __name__ == "__main__":
