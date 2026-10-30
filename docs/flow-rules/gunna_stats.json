@@ -1,0 +1,1219 @@
+{
+  "n_lines_total": 31508,
+  "n_lines_solo": 30553,
+  "n_songs": 739,
+  "cmudict_loaded": true,
+  "commas": {
+    "line_count": 31508,
+    "comma_counts": {
+      "1": 12832,
+      "2": 3554,
+      "0": 13875,
+      "3": 901,
+      "4": 251,
+      "5": 72,
+      "6": 17,
+      "8": 1,
+      "7": 3,
+      "9": 2
+    },
+    "0_1_2_3plus_rates": {
+      "0": 0.4404,
+      "1": 0.4073,
+      "2": 0.1128,
+      "3": 0.0396
+    },
+    "mean_commas_per_line": 0.767,
+    "word_index_distribution_quartiles": {
+      "n": 24156,
+      "p25": 3.0,
+      "median": 4.0,
+      "p75": 6.0,
+      "p90": 9.0
+    },
+    "syllable_index_distribution_quartiles": {
+      "n": 24156,
+      "p25": 4.0,
+      "median": 5.0,
+      "p75": 8.0,
+      "p90": 11.0
+    },
+    "relative_position_quartiles": {
+      "n": 24156,
+      "p25": 0.322,
+      "median": 0.45,
+      "p75": 0.592,
+      "p90": 0.8
+    }
+  },
+  "commas_solo": {
+    "line_count": 30553,
+    "comma_counts": {
+      "1": 12420,
+      "2": 3420,
+      "0": 13520,
+      "3": 873,
+      "4": 233,
+      "5": 66,
+      "6": 15,
+      "8": 1,
+      "7": 3,
+      "9": 2
+    },
+    "0_1_2_3plus_rates": {
+      "0": 0.4425,
+      "1": 0.4065,
+      "2": 0.1119,
+      "3": 0.039
+    },
+    "mean_commas_per_line": 0.762,
+    "word_index_distribution_quartiles": {
+      "n": 23278,
+      "p25": 3.0,
+      "median": 4.0,
+      "p75": 6.0,
+      "p90": 9.0
+    },
+    "syllable_index_distribution_quartiles": {
+      "n": 23278,
+      "p25": 4.0,
+      "median": 5.0,
+      "p75": 8.0,
+      "p90": 11.0
+    },
+    "relative_position_quartiles": {
+      "n": 23278,
+      "p25": 0.321,
+      "median": 0.45,
+      "p75": 0.592,
+      "p90": 0.8
+    }
+  },
+  "carry": {
+    "lines_examined": 28558,
+    "carry_count": 1626,
+    "carry_rate": 0.0569,
+    "length_hist": {
+      "2": 1398,
+      "4+": 67,
+      "3": 161
+    },
+    "top_carry_end_words": [
+      [
+        "yeah",
+        90
+      ],
+      [
+        "it",
+        36
+      ],
+      [
+        "me",
+        28
+      ],
+      [
+        "gunna",
+        24
+      ],
+      [
+        "up",
+        23
+      ],
+      [
+        "nah",
+        15
+      ],
+      [
+        "you",
+        13
+      ],
+      [
+        "out",
+        12
+      ],
+      [
+        "off",
+        11
+      ],
+      [
+        "down",
+        10
+      ],
+      [
+        "woo",
+        9
+      ],
+      [
+        "go",
+        9
+      ],
+      [
+        "oh",
+        9
+      ],
+      [
+        "like",
+        8
+      ],
+      [
+        "uh",
+        8
+      ]
+    ],
+    "top_close_end_words": [
+      [
+        "yeah",
+        1743
+      ],
+      [
+        "it",
+        668
+      ],
+      [
+        "me",
+        398
+      ],
+      [
+        "uh",
+        361
+      ],
+      [
+        "up",
+        281
+      ],
+      [
+        "nah",
+        196
+      ],
+      [
+        "ayy",
+        170
+      ],
+      [
+        "woah",
+        155
+      ],
+      [
+        "ooh",
+        146
+      ],
+      [
+        "oh",
+        144
+      ],
+      [
+        "huh",
+        135
+      ],
+      [
+        "skrrt",
+        134
+      ],
+      [
+        "go",
+        130
+      ],
+      [
+        "you",
+        125
+      ],
+      [
+        "no",
+        123
+      ]
+    ]
+  },
+  "carry_solo": {
+    "lines_examined": 27675,
+    "carry_count": 1573,
+    "carry_rate": 0.0568,
+    "length_hist": {
+      "2": 1356,
+      "4+": 65,
+      "3": 152
+    },
+    "top_carry_end_words": [
+      [
+        "yeah",
+        86
+      ],
+      [
+        "it",
+        35
+      ],
+      [
+        "me",
+        27
+      ],
+      [
+        "gunna",
+        22
+      ],
+      [
+        "up",
+        21
+      ],
+      [
+        "nah",
+        15
+      ],
+      [
+        "you",
+        12
+      ],
+      [
+        "out",
+        12
+      ],
+      [
+        "off",
+        11
+      ],
+      [
+        "down",
+        10
+      ],
+      [
+        "woo",
+        9
+      ],
+      [
+        "go",
+        9
+      ],
+      [
+        "uh",
+        8
+      ],
+      [
+        "bitch",
+        8
+      ],
+      [
+        "oh",
+        8
+      ]
+    ],
+    "top_close_end_words": [
+      [
+        "yeah",
+        1684
+      ],
+      [
+        "it",
+        642
+      ],
+      [
+        "me",
+        386
+      ],
+      [
+        "uh",
+        356
+      ],
+      [
+        "up",
+        264
+      ],
+      [
+        "nah",
+        193
+      ],
+      [
+        "ayy",
+        164
+      ],
+      [
+        "woah",
+        149
+      ],
+      [
+        "oh",
+        143
+      ],
+      [
+        "ooh",
+        138
+      ],
+      [
+        "huh",
+        133
+      ],
+      [
+        "skrrt",
+        126
+      ],
+      [
+        "go",
+        123
+      ],
+      [
+        "no",
+        123
+      ],
+      [
+        "you",
+        120
+      ]
+    ]
+  },
+  "triplets": {
+    "lines": 31508,
+    "triplet_flag_rate": 0.5327,
+    "repeated_stack_rate": 0.0097,
+    "density_rate": 0.0152,
+    "syllables_median_triplet": 12.0,
+    "syllables_median_normal": 9.0,
+    "sample_examples": [
+      {
+        "artist": "Gunna",
+        "song": "$$$ (dollar sign)",
+        "line": "I ain't gon' ask a nigga, I rather tryna get a loan from a bank"
+      },
+      {
+        "artist": "Gunna",
+        "song": "$$$ (dollar sign)",
+        "line": "I caterpillar all the way up and down the road for this cake"
+      },
+      {
+        "artist": "Gunna",
+        "song": "$$$ (dollar sign)",
+        "line": "It's cloudy all in my face, it's all shades of gray"
+      },
+      {
+        "artist": "Gunna",
+        "song": "$$$ (dollar sign)",
+        "line": "They all told me that life's a game of chess, shit, I guess"
+      },
+      {
+        "artist": "Gunna",
+        "song": "$$$ (dollar sign)",
+        "line": "Made some niggas upset and that's on God, I don't regret"
+      },
+      {
+        "artist": "Gunna",
+        "song": "$$$ (dollar sign)",
+        "line": "Ain't see it like this at first, but overall, I'm still blessed"
+      },
+      {
+        "artist": "Gunna",
+        "song": "$$$ (dollar sign)",
+        "line": "One of one, I'm Wun, bitch, I'm rare"
+      },
+      {
+        "artist": "Gunna",
+        "song": "$$$ (dollar sign)",
+        "line": "Fuck the ho, she cum, I'm a player"
+      }
+    ],
+    "ESTIMATE": true
+  },
+  "rhyme": {
+    "one_rime_4bar_rate": 0.0354,
+    "one_rime_4bar_n": 7592,
+    "consecutive_rime_hit_rate": 0.1333,
+    "consecutive_pairs_examined": 25299,
+    "repeated_end_word_rate": 0.0681,
+    "repeated_end_word_pairs": 30769,
+    "inner_rhyme_mean": 1.01,
+    "inner_rhyme_median": 1,
+    "multisyllable_rhyme_rate": 0.2924,
+    "multisyllable_rhyme_n": 9689,
+    "top_end_words": [
+      [
+        "yeah",
+        2012
+      ],
+      [
+        "it",
+        797
+      ],
+      [
+        "me",
+        480
+      ],
+      [
+        "uh",
+        398
+      ],
+      [
+        "up",
+        334
+      ],
+      [
+        "nah",
+        228
+      ],
+      [
+        "ayy",
+        188
+      ],
+      [
+        "oh",
+        173
+      ],
+      [
+        "woah",
+        173
+      ],
+      [
+        "ooh",
+        166
+      ],
+      [
+        "go",
+        158
+      ],
+      [
+        "huh",
+        155
+      ],
+      [
+        "you",
+        155
+      ],
+      [
+        "skrrt",
+        154
+      ],
+      [
+        "out",
+        147
+      ],
+      [
+        "no",
+        145
+      ],
+      [
+        "woo",
+        142
+      ],
+      [
+        "hey",
+        141
+      ],
+      [
+        "that",
+        130
+      ],
+      [
+        "on",
+        127
+      ],
+      [
+        "'em",
+        114
+      ],
+      [
+        "back",
+        112
+      ],
+      [
+        "bitch",
+        109
+      ],
+      [
+        "baby",
+        106
+      ],
+      [
+        "off",
+        100
+      ],
+      [
+        "gunna",
+        98
+      ],
+      [
+        "way",
+        98
+      ],
+      [
+        "shit",
+        95
+      ],
+      [
+        "in",
+        95
+      ],
+      [
+        "down",
+        94
+      ]
+    ],
+    "ESTIMATE_inner_and_multisyl": true
+  },
+  "rhyme_solo": {
+    "one_rime_4bar_rate": 0.0355,
+    "one_rime_4bar_n": 7360,
+    "consecutive_rime_hit_rate": 0.1351,
+    "consecutive_pairs_examined": 24544,
+    "repeated_end_word_rate": 0.0683,
+    "repeated_end_word_pairs": 29832,
+    "inner_rhyme_mean": 1.016,
+    "inner_rhyme_median": 1.0,
+    "multisyllable_rhyme_rate": 0.2973,
+    "multisyllable_rhyme_n": 9341,
+    "top_end_words": [
+      [
+        "yeah",
+        1944
+      ],
+      [
+        "it",
+        766
+      ],
+      [
+        "me",
+        467
+      ],
+      [
+        "uh",
+        393
+      ],
+      [
+        "up",
+        314
+      ],
+      [
+        "nah",
+        225
+      ],
+      [
+        "ayy",
+        182
+      ],
+      [
+        "oh",
+        171
+      ],
+      [
+        "woah",
+        166
+      ],
+      [
+        "ooh",
+        158
+      ],
+      [
+        "huh",
+        153
+      ],
+      [
+        "go",
+        151
+      ],
+      [
+        "you",
+        149
+      ],
+      [
+        "skrrt",
+        146
+      ],
+      [
+        "out",
+        146
+      ],
+      [
+        "no",
+        145
+      ],
+      [
+        "hey",
+        138
+      ],
+      [
+        "woo",
+        136
+      ],
+      [
+        "that",
+        130
+      ],
+      [
+        "on",
+        123
+      ],
+      [
+        "back",
+        111
+      ],
+      [
+        "bitch",
+        109
+      ],
+      [
+        "'em",
+        108
+      ],
+      [
+        "baby",
+        105
+      ],
+      [
+        "off",
+        97
+      ],
+      [
+        "way",
+        96
+      ],
+      [
+        "down",
+        93
+      ],
+      [
+        "in",
+        93
+      ],
+      [
+        "shit",
+        92
+      ],
+      [
+        "nigga",
+        91
+      ]
+    ],
+    "ESTIMATE_inner_and_multisyl": true
+  },
+  "pov_mood": {
+    "pov_rates": {
+      "none": 0.2348,
+      "i": 0.6267,
+      "they": 0.0675,
+      "you": 0.0709
+    },
+    "pov_counts": {
+      "none": 7399,
+      "i": 19746,
+      "they": 2128,
+      "you": 2235
+    },
+    "mood_counts": {
+      "flex_luxury": 1589,
+      "pain_loss": 358,
+      "love": 1198,
+      "threat_violence": 1288
+    },
+    "mood_rates": {
+      "flex_luxury": 0.0504,
+      "pain_loss": 0.0114,
+      "love": 0.038,
+      "threat_violence": 0.0409
+    },
+    "mood_lexicons": {
+      "flex_luxury": [
+        "ap",
+        "bands",
+        "bentley",
+        "chain",
+        "chanel",
+        "coupe",
+        "cuban",
+        "designer",
+        "diamond",
+        "fendi",
+        "ferrari",
+        "gucci",
+        "iced",
+        "jewelry",
+        "lambo",
+        "mil",
+        "mill",
+        "million",
+        "patek",
+        "racks",
+        "range",
+        "rolex",
+        "stacks",
+        "wock",
+        "wraith"
+      ],
+      "pain_loss": [
+        "alone",
+        "bleed",
+        "broken",
+        "cry",
+        "crying",
+        "fallen",
+        "funeral",
+        "grave",
+        "hurt",
+        "hurts",
+        "lonely",
+        "loss",
+        "lost",
+        "miss",
+        "pain",
+        "regret",
+        "tears"
+      ],
+      "love": [
+        "babe",
+        "baby",
+        "boo",
+        "forever",
+        "heart",
+        "husband",
+        "kiss",
+        "kissing",
+        "love",
+        "miss",
+        "shawty",
+        "soul",
+        "wife",
+        "wifey"
+      ],
+      "threat_violence": [
+        "ar",
+        "beam",
+        "blick",
+        "chopper",
+        "clip",
+        "drum",
+        "ex",
+        "glock",
+        "gun",
+        "hit",
+        "k",
+        "pistol",
+        "pop",
+        "rifle",
+        "shoot",
+        "shootin",
+        "slide",
+        "smoke",
+        "stick",
+        "trigger"
+      ]
+    },
+    "mood_examples": {
+      "flex_luxury": [
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Expensive designer, ain't never been worn"
+        },
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Coupe worth too much, valet can't even park it"
+        },
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "This is a Bentley, bitch, this not a Lexus (Skrrt)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH",
+          "line": "Throw the racks up"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH (Original)",
+          "line": "Throw the racks up, it look like a flood (Look like a flood)"
+        }
+      ],
+      "pain_loss": [
+        {
+          "artist": "Gunna",
+          "song": "$$$ (dollar sign)",
+          "line": "Made some niggas upset and that's on God, I don't regret"
+        },
+        {
+          "artist": "Gunna",
+          "song": "1:59",
+          "line": "When I get you alone"
+        },
+        {
+          "artist": "Gunna",
+          "song": "1:59",
+          "line": "Baby, help me heal the pain (Heal the pain)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "3 Headed Snake",
+          "line": "Hey, constantly dodging the grave"
+        },
+        {
+          "artist": "Gunna",
+          "song": "3 Headed Snake",
+          "line": "I lost some old friends, couldn't keep up the pace"
+        }
+      ],
+      "love": [
+        {
+          "artist": "Gunna",
+          "song": "$$$ (dollar sign)",
+          "line": "Heart of mine, hard to find, got three lines"
+        },
+        {
+          "artist": "Gunna",
+          "song": "1:59",
+          "line": "Fuckin', we made love to tunes, fuckin' shrooms"
+        },
+        {
+          "artist": "Gunna",
+          "song": "1:59",
+          "line": "This don't feel like lust and I feel love in my veins (Veins)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "1:59",
+          "line": "Who this for? Tell me, babe (Tell me, babe, who this for?)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "1:59",
+          "line": "We made love on just the chemistry, keep me sane"
+        }
+      ],
+      "threat_violence": [
+        {
+          "artist": "Gunna",
+          "song": "$$$ (dollar sign)",
+          "line": "Do gymnastics, flip her, hit her from the side"
+        },
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Sixty whole rounds in that mini-AR (Mini-AR)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "10 X Outta 10*",
+          "line": "Gun-Wunna pick up a bag on my own"
+        },
+        {
+          "artist": "Gunna",
+          "song": "10 X Outta 10*",
+          "line": "Gun-Wunna hostile up wealth so well, I make the plan look bigger"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH",
+          "line": "three K for the jeans (Uh)"
+        }
+      ]
+    },
+    "LEXICON_BASED": true
+  },
+  "subtopics": {
+    "line_count": 31508,
+    "counts": {
+      "brands": 580,
+      "cars": 584,
+      "jewelry": 732,
+      "women": 2097,
+      "drugs": 300,
+      "loyalty": 842,
+      "come_up": 537
+    },
+    "rates": {
+      "brands": 0.0184,
+      "cars": 0.0185,
+      "jewelry": 0.0232,
+      "women": 0.0666,
+      "drugs": 0.0095,
+      "loyalty": 0.0267,
+      "come_up": 0.017
+    },
+    "examples": {
+      "brands": [
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Cartier diamonds, the frame in my glasses"
+        },
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Come see the paint on my Christian Dior (Christian Dior)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH",
+          "line": "Louis V but my T-Shirt is tucked (Tucked)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH (Original)",
+          "line": "Louis V but my T-Shirt is tucked (Tucked), yeah"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH (Original)",
+          "line": "Louis bifocals, I can't see defeat"
+        }
+      ],
+      "cars": [
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Coupe worth too much, valet can't even park it"
+        },
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "This is a Bentley, bitch, this not a Lexus (Skrrt)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH",
+          "line": "911 Porsche and the trunk is a hood (Skrrt)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH (Original)",
+          "line": "Double R follow that Bentley Truck (Yeah)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "25k jacket",
+          "line": "Runnin' that coupe, yeah, the P a push-start"
+        }
+      ],
+      "jewelry": [
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Sky-Dweller watch cover half of my arm"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH",
+          "line": "bust on her spleen (Ooh)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH (Original)",
+          "line": "Fuck on her nakеd, bust on her spleen (Ooh)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "25k jacket",
+          "line": "AP on my wrist, ain't accepting apologies"
+        },
+        {
+          "artist": "Gunna",
+          "song": "25k jacket",
+          "line": "Upgrade my jewelry, my watch is up to par"
+        }
+      ],
+      "women": [
+        {
+          "artist": "Gunna",
+          "song": "$$$ (dollar sign)",
+          "line": "One of one, I'm Wun, bitch, I'm rare"
+        },
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Your bitch came to see me like five in the morning"
+        },
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "This is a Bentley, bitch, this not a Lexus (Skrrt)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "10 X Outta 10*",
+          "line": "Told her \"forget my sins\", put my bitch in cone"
+        },
+        {
+          "artist": "Gunna",
+          "song": "10 X Outta 10*",
+          "line": "I'm goin' Rick, match with my bitch"
+        }
+      ],
+      "drugs": [
+        {
+          "artist": "Gunna",
+          "song": "5 Star",
+          "line": "It's your boy Mr. EZ Wider right here on WEED"
+        },
+        {
+          "artist": "Gunna",
+          "song": "5 Star",
+          "line": "It's time to put your windows down and pass that weed around"
+        },
+        {
+          "artist": "Gunna",
+          "song": "5 Star",
+          "line": "She like to smoke weed every day"
+        },
+        {
+          "artist": "Gunna",
+          "song": "5 Star",
+          "line": "We could smoke weed all night, go back to the yacht and play my shit"
+        },
+        {
+          "artist": "Gunna",
+          "song": "99 Bandz (Remix)",
+          "line": "Ninety-nine bands and I could not pop the xan, ayy"
+        }
+      ],
+      "loyalty": [
+        {
+          "artist": "Gunna",
+          "song": "$$$ (dollar sign)",
+          "line": "Count cash and I ride, hear the sirens, I don't mind"
+        },
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Still ball with my crew like I play with the Hornets"
+        },
+        {
+          "artist": "Gunna",
+          "song": ".223",
+          "line": "Rage EDM like my bro DJ Carnage"
+        },
+        {
+          "artist": "Gunna",
+          "song": "10 X Outta 10*",
+          "line": "I'm grippin' the SIG, I'm thinkin' the day that my brother got killed"
+        },
+        {
+          "artist": "Gunna",
+          "song": "10 X Outta 10*",
+          "line": "She come to my place, she ride that D like a stripper pole"
+        }
+      ],
+      "come_up": [
+        {
+          "artist": "Gunna",
+          "song": "$$$ (dollar sign)",
+          "line": "Do gymnastics, flip her, hit her from the side"
+        },
+        {
+          "artist": "Gunna",
+          "song": "200 FOR LUNCH",
+          "line": "Neighborhood trap used to cap off a jug (Neighborhood)"
+        },
+        {
+          "artist": "Gunna",
+          "song": "99 Bandz (Remix)",
+          "line": "Niggas got it backwards, they ain't trap, they tried to ball first"
+        },
+        {
+          "artist": "Gunna",
+          "song": "99 Bandz (Remix)",
+          "line": "Trap cellphone ringin', all it do is dirt"
+        },
+        {
+          "artist": "Gunna",
+          "song": "99 Bandz (Remix)",
+          "line": "Chickens chickens, all it flip"
+        }
+      ]
+    },
+    "lexicons": {
+      "brands": [
+        "amiri",
+        "balenciaga",
+        "burberry",
+        "cartier",
+        "chanel",
+        "dior",
+        "fendi",
+        "gucci",
+        "hermes",
+        "hermès",
+        "louis",
+        "prada",
+        "versace",
+        "ysl"
+      ],
+      "cars": [
+        "bentley",
+        "benz",
+        "cadillac",
+        "chevy",
+        "corvette",
+        "coupe",
+        "ferrari",
+        "lambo",
+        "maserati",
+        "porsche",
+        "range",
+        "scat",
+        "wraith"
+      ],
+      "jewelry": [
+        "ap",
+        "bezel",
+        "bust",
+        "chain",
+        "cuban",
+        "diamond",
+        "flooded",
+        "iced",
+        "patek",
+        "pendant",
+        "rolex",
+        "vvs",
+        "watch"
+      ],
+      "women": [
+        "babe",
+        "baby",
+        "bitch",
+        "boo",
+        "ex",
+        "girl",
+        "ratchet",
+        "shawty",
+        "wife",
+        "wifey",
+        "woman"
+      ],
+      "drugs": [
+        "backwoods",
+        "lean",
+        "molly",
+        "perc",
+        "percocet",
+        "percs",
+        "runtz",
+        "swisher",
+        "weed",
+        "wock",
+        "xan",
+        "xans",
+        "zaza"
+      ],
+      "loyalty": [
+        "bro",
+        "brother",
+        "crew",
+        "day one",
+        "fam",
+        "family",
+        "gang",
+        "homie",
+        "loyal",
+        "ride",
+        "trust"
+      ],
+      "come_up": [
+        "block",
+        "corner",
+        "fiend",
+        "flip",
+        "grind",
+        "hustle",
+        "serve",
+        "started",
+        "struggle",
+        "trap",
+        "trenches",
+        "work"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "pairs_examined_old": 29754,
+  "pairs_examined_new_anchor": 29832,
+  "exact": {
+    "old": 0.1439,
+    "new": 0.1192,
+    "old_count": 4281,
+    "new_count": 3556
+  },
+  "slant": {
+    "old": 0.065,
+    "new": 0.0368,
+    "old_count": 1934,
+    "new_count": 1099
+  },
+  "assonance": {
+    "old": 0.2627,
+    "new": 0.2754,
+    "old_count": 7816,
+    "new_count": 8216
+  },
+  "none": {
+    "old": 0.5284,
+    "new": 0.5686,
+    "old_count": 15723,
+    "new_count": 16961
+  },
+  "four_bar_single_rime": {
+    "old_rate": 0.0311,
+    "new_rate": 0.0127,
+    "new_blocks": 7380
+  },
+  "examples_count": {
+    "exact": 3556,
+    "none": 16856,
+    "assonance": 8216,
+    "slant": 1099
+  }
+}
