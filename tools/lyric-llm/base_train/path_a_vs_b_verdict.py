@@ -28,6 +28,7 @@ LLM_ROOT = REPO_ROOT / "tools" / "lyric-llm"
 STYLE_ROOT = REPO_ROOT / "tools" / "style-profile"
 
 sys.path.insert(0, str(STYLE_ROOT))
+sys.path.insert(0, str(LLM_ROOT))
 
 try:
     import gunna_score  # type: ignore
@@ -36,6 +37,22 @@ try:
 except Exception as exc:  # pragma: no cover
     print(f"gunna_score unavailable: {exc}", file=sys.stderr)
     HAVE_GUNNA = False
+
+try:
+    from lyriclib import load_cmudict, end_rime  # type: ignore
+    _CMU_PATH = REPO_ROOT / "XJournal AI" / "cmudict.txt"
+    _CMU: dict[str, list[str]] | None = None
+    def _cmu() -> dict[str, list[str]]:
+        global _CMU
+        if _CMU is None:
+            _CMU = load_cmudict(_CMU_PATH) if _CMU_PATH.exists() else {}
+        return _CMU
+    HAVE_CMU = True
+except Exception as exc:  # pragma: no cover
+    print(f"cmudict unavailable, falling back to char-suffix rhyme: {exc}", file=sys.stderr)
+    HAVE_CMU = False
+    def _cmu() -> dict[str, list[str]]:
+        return {}
 
 
 _VOWELS = set("aeiou")
@@ -69,6 +86,14 @@ def end_word(line: str) -> str:
 def rhyme_hit(a: str, b: str) -> bool:
     if not a or not b:
         return False
+    if a == b:
+        return True
+    if HAVE_CMU:
+        cmu = _cmu()
+        ra = end_rime(a, cmu) if cmu else None
+        rb = end_rime(b, cmu) if cmu else None
+        if ra is not None and rb is not None:
+            return ra == rb
     return a[-2:] == b[-2:] or a[-3:] == b[-3:]
 
 
