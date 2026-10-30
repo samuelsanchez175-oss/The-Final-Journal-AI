@@ -394,8 +394,6 @@ struct DynamicIslandToolbarView: View {
             : "Opens the keyboard so you can keep writing.")
     }
 
-    private func sparkleToolbarSymbolName() -> String { "wand.and.stars" }
-    
     /// Shared API-key splash, subscription gate, usage limit, and analytics. Returns whether the caller should proceed.
     private func runAISparkleAccessGates() -> Bool {
         HapticFeedbackManager.shared.lightTap()
@@ -543,7 +541,7 @@ struct DynamicIslandToolbarView: View {
                     .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
             }
             .accessibilityLabel("Expand toolbar")
-            .accessibilityHint("Shows the wand, attach, nouns, and the rest of the island")
+            .accessibilityHint("Shows Verse, attach, nouns, and the rest of the island")
 
             Button {
                 showSparklerSimSheet = true
@@ -836,10 +834,12 @@ struct DynamicIslandToolbarView: View {
                                         .blur(radius: 4)
                                 }
                                 
-                                Image(systemName: sparkleToolbarSymbolName())
-                                    .font(.headline)
-                                    .frame(width: ToolbarConstants.contentHeight, height: ToolbarConstants.contentHeight)
+                                Text("Verse")
+                                    .font(.system(size: 13, weight: .bold, design: .rounded))
                                     .foregroundStyle(toolbarTint)
+                                    .padding(.horizontal, 10)
+                                    .padding(.vertical, 6)
+                                    .background(Capsule().fill(Color.primary.opacity(0.10)))
                             }
                             .overlay(alignment: .topTrailing) {
                                 if NoteSuggestionSessionStore.hasSession(on: item) || rapSuggestionEngine.hasRecallableSuggestions {
@@ -857,7 +857,7 @@ struct DynamicIslandToolbarView: View {
                             beginSuggestNextLinesFlow()
                         }
                         .disabled(rapSuggestionEngine.isLoading)
-                        .accessibilityLabel("Suggest next lines with Model G")
+                        .accessibilityLabel("Verse")
                         .accessibilityHint("Tap once to generate. Hold for last suggestions, flow lyrics, style, the Sparkler verse simulation, critic, or Model Preferences.")
                         .onChange(of: rapSuggestionEngine.isLoading) { oldValue, newValue in
                             if newValue {

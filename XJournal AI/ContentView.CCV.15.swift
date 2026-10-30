@@ -224,7 +224,7 @@ struct RhymeGroupListView: View {
                 perfectRhymes.append(capitalizedWord)
             case .near:
                 nearRhymes.append(capitalizedWord)
-            case .slant:
+            case .slant, .assonance:
                 continue
             }
             

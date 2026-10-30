@@ -2,6 +2,16 @@ import XCTest
 @testable import XJournal_AI
 
 final class RhymeGroupStrictnessTests: XCTestCase {
+    /// `phonemes(for:)` falls through to the letter heuristic before CMUDICT
+    /// finishes loading, so a nil check does not wait for the real vowel.
+    private func waitForDictionaryWord(_ word: String) {
+        preloadGlobalCMUDICTStore()
+        let start = Date()
+        while getGlobalCMUDICTStore()[word] == nil, Date().timeIntervalSince(start) < 20 {
+            RunLoop.current.run(until: Date().addingTimeInterval(0.05))
+        }
+    }
+
     func testSilentUsesPrimaryStressNotSchwa() {
         let sig = RhymeHighlighterEngine.extractSignature(from: ["S", "AY1", "L", "AH0", "N", "T"])
         XCTAssertEqual(sig?.stressedVowel, "AY1")
@@ -198,6 +208,9 @@ final class RhymeGroupStrictnessTests: XCTestCase {
     }
 
     func testRepeatedLineEndSomePaintsAsEndRhyme() async {
+        waitForDictionaryWord("cheat")
+        XCTAssertNotNil(getGlobalCMUDICTStore()["cheat"])
+        XCTAssertNotNil(getGlobalCMUDICTStore()["reach"])
         let text = "She wanted to cheat me some\nI hope you ain't reach in for some"
         let (groups, highlights) = await RhymeHighlighterEngine.computeAll(text: text)
         let somes = groups.filter { group in
@@ -245,15 +258,17 @@ final class RhymeGroupStrictnessTests: XCTestCase {
         )
         let go = RhymeHighlighterEngine.PhoneticSignature(stressedVowel: "OW1", coda: [])
         let goat = RhymeHighlighterEngine.PhoneticSignature(stressedVowel: "OW1", coda: ["T"])
-        XCTAssertNil(RhymeHighlighterEngine.rhymeScore(go, goat), "an empty coda is not this rhyme")
+        XCTAssertEqual(
+            RhymeHighlighterEngine.rhymeScore(go, goat),
+            .assonance,
+            "an empty coda is assonance, not the consonant-tail rhyme"
+        )
     }
 
     func testEightRhymesWithHateAndDate() async {
-        preloadGlobalCMUDICTStore()
-        let start = Date()
-        while RhymeHighlighterEngine.phonemes(for: "hate") == nil, Date().timeIntervalSince(start) < 20 {
-            RunLoop.current.run(until: Date().addingTimeInterval(0.05))
-        }
+        waitForDictionaryWord("hate")
+        XCTAssertNotNil(getGlobalCMUDICTStore()["hate"])
+        XCTAssertNotNil(getGlobalCMUDICTStore()["date"])
         let eight = RhymeHighlighterEngine.phonemes(for: "8")
         XCTAssertEqual(eight, RhymeHighlighterEngine.phonemes(for: "eight"))
         let text = "I date woman born after 9 8\nI can't switch out love for no dam hate"
@@ -263,16 +278,17 @@ final class RhymeGroupStrictnessTests: XCTestCase {
         }
         XCTAssertNotNil(color("8"), "8 must paint, groups \(groups.map { $0.words.map(\.word) })")
         XCTAssertEqual(color("8"), color("hate"))
-        XCTAssertEqual(color("date"), color("hate"))
+        XCTAssertEqual(
+            color("date"),
+            color("hate"),
+            "groups \(groups.map { ($0.words.map(\.word), $0.key, $0.strength) })"
+        )
         XCTAssertNotEqual(color("9"), color("hate"))
     }
 
     func testWorldAndGirlPaintAsAnInnerRhyme() async {
-        preloadGlobalCMUDICTStore()
-        let start = Date()
-        while RhymeHighlighterEngine.phonemes(for: "world") == nil, Date().timeIntervalSince(start) < 20 {
-            RunLoop.current.run(until: Date().addingTimeInterval(0.05))
-        }
+        waitForDictionaryWord("world")
+        XCTAssertNotNil(getGlobalCMUDICTStore()["world"])
         let text = "Money run the world took my girl out to Bombay"
         let (groups, _) = await RhymeHighlighterEngine.computeAll(text: text)
         let family = groups.first { group in

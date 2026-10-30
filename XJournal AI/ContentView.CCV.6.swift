@@ -500,6 +500,8 @@ struct RhymeHighlightTextView: UIViewRepresentable {
                         endOpacity = isDarkMode ? 0.40 : 0.22
                     case .slant:
                         endOpacity = isDarkMode ? 0.30 : 0.16
+                    case .assonance:
+                        endOpacity = isDarkMode ? 0.20 : 0.11
                     }
                     // Internals: same family color, ~60% of the end-rhyme wash, plus underline.
                     let opacity = isInternal ? endOpacity * 0.60 : endOpacity

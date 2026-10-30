@@ -14,6 +14,8 @@ nonisolated struct RhymeHighlighterEngine {
         case perfect = 1.0
         case near = 0.75
         case slant = 0.55
+        /// Same last stressed vowel, different final consonants. Lighter than an exact rhyme.
+        case assonance = 0.35
     }
     
     enum RhymeType {
@@ -32,7 +34,8 @@ nonisolated struct RhymeHighlighterEngine {
     /// Tiny function words must not paint a rhyme group. "a" is AH0, not a rime with silent.
     nonisolated static let rhymeStopwords: Set<String> = [
         "a", "an", "the", "of", "to", "in", "on", "and", "or", "but", "for", "with", "at", "by",
-        "as", "is", "it", "be", "we", "my", "me", "you", "i", "im", "i'm", "so", "if", "do", "no"
+        "as", "is", "it", "be", "we", "my", "me", "you", "i", "im", "i'm", "so", "if", "do", "no",
+        "it's", "its", "yeah", "yea", "got"
     ]
 
     struct PhoneticSignature {
@@ -389,7 +392,21 @@ nonisolated struct RhymeHighlighterEngine {
         if areVowelsSimilar(a.stressedVowel, b.stressedVowel) && areCodasSimilar(a.coda, b.coda) {
             return .slant
         }
+        // Assonance: the last stressed vowel matches and the codas are only consonants.
+        // dreams/scene, time/signs. An extra vowel is another syllable (man/manage) and stays dark.
+        // dreams/lanes do not match — IY is not EY.
+        if vowelA == vowelB, codaIsConsonantsOnly(a.coda), codaIsConsonantsOnly(b.coda) {
+            return .assonance
+        }
         return nil
+    }
+
+    /// No vowel phone after the stressed nucleus. Empty is fine (`go`). `manage` is not.
+    nonisolated static func codaIsConsonantsOnly(_ coda: [String]) -> Bool {
+        coda.allSatisfy { phone in
+            let bare = String(phone.filter { !$0.isNumber })
+            return !vowelPhones.contains(bare)
+        }
     }
 
     /// Words for rhyme paint. NLTokenizer skips the in-progress last word until a
@@ -609,7 +626,15 @@ nonisolated struct RhymeHighlighterEngine {
         let signatures = entries.map { $0.1 }
         let base = signatures[0]
         let scores = entries.map { rhymeScore(base, $0.1) }
-        let strength: RhymeStrength = scores.allSatisfy { $0 == .perfect } ? .perfect : .near
+        let others = scores.dropFirst()
+        let strength: RhymeStrength
+        if scores.allSatisfy({ $0 == .perfect }) {
+            strength = .perfect
+        } else if !others.isEmpty, others.allSatisfy({ $0 == .assonance }) {
+            strength = .assonance
+        } else {
+            strength = .near
+        }
         return RhymeGroup(
             id: UUID(),
             key: key,
@@ -630,9 +655,411 @@ nonisolated struct RhymeHighlighterEngine {
         )
     }
 
+    /// One stressed syllable inside a longer word. `maintained` → `tained`.
+    struct SyllableSlice {
+        let spelling: String
+        let startOffset: Int
+        let endOffset: Int
+        let signature: PhoneticSignature
+        let stress: Int
+        let wordLength: Int
+        var coversWholeWord: Bool { startOffset == 0 && endOffset == wordLength && wordLength > 0 }
+    }
+
+    /// CMUDICT or the slang table. The letter heuristic is not syllable data.
+    nonisolated static func dictionaryPhonemes(for word: String) -> [String]? {
+        let w = word.lowercased()
+        if let spoken = spokenDigitWords(w) {
+            var phones: [String] = []
+            for part in spoken {
+                guard part != w, let next = dictionaryPhonemes(for: part), !next.isEmpty else { return nil }
+                phones.append(contentsOf: next)
+            }
+            return phones.isEmpty ? nil : phones
+        }
+        if let p = getGlobalCMUDICTStore()[w], !p.isEmpty { return p }
+        if let p = FJCMUDICTStore.shared.phonemesByWord[w], !p.isEmpty { return p }
+        if let p = RapSlangPhonemes.phonemes(for: w), !p.isEmpty { return p }
+        return nil
+    }
+
+    /// Stressed syllables from CMU stress marks. Unknown words split on vowel groups.
+    nonisolated static func syllableSlices(of word: String) -> [SyllableSlice] {
+        let cleaned = word.lowercased()
+        guard !cleaned.isEmpty else { return [] }
+        if let phones = dictionaryPhonemes(for: cleaned), !phones.isEmpty {
+            let slices = slicesFromPhonemes(word: cleaned, phones: phones)
+            if !slices.isEmpty { return slices }
+        }
+        return slicesFromVowelGroups(word: cleaned)
+    }
+
+    nonisolated private static let syllableGraphemes: [String: [String]] = [
+        "AA": ["au", "aw", "oa", "a", "o"],
+        "AE": ["au", "a"],
+        "AH": ["ou", "oo", "a", "e", "i", "o", "u"],
+        "AO": ["augh", "ough", "au", "aw", "oa", "a", "o"],
+        "AW": ["ough", "ou", "ow", "au"],
+        "AY": ["igh", "aye", "ai", "ay", "ei", "ey", "ie", "i", "y"],
+        "EH": ["ea", "ai", "ie", "e", "a"],
+        "ER": ["ear", "ure", "er", "ir", "ur", "or", "ar"],
+        "EY": ["eigh", "ai", "ay", "ei", "ey", "ea", "a", "e"],
+        "IH": ["ui", "i", "y", "e", "u"],
+        "IY": ["ee", "ea", "ie", "ei", "ey", "i", "e", "y"],
+        "OW": ["ough", "ow", "ou", "oa", "oe", "o"],
+        "OY": ["oi", "oy"],
+        "UH": ["oo", "ou", "u", "o"],
+        "UW": ["ew", "ue", "oo", "ou", "u", "o"],
+        "B": ["bb", "b"],
+        "CH": ["tch", "ch", "t"],
+        "D": ["dd", "ed", "d"],
+        "DH": ["th"],
+        "F": ["ph", "ff", "gh", "f"],
+        "G": ["gg", "gu", "g"],
+        "HH": ["wh", "h"],
+        "JH": ["dge", "dg", "j", "g"],
+        "K": ["ck", "cc", "ch", "q", "k", "c"],
+        "L": ["ll", "l"],
+        "M": ["mm", "mb", "m"],
+        "N": ["nn", "kn", "gn", "n"],
+        "NG": ["ng", "n"],
+        "P": ["pp", "p"],
+        "R": ["rr", "wr", "r"],
+        "S": ["ss", "sc", "ce", "se", "s", "c"],
+        "SH": ["ti", "ci", "sh", "s", "ch"],
+        "T": ["tt", "ght", "ed", "t"],
+        "TH": ["th"],
+        "V": ["ve", "v"],
+        "W": ["wh", "w", "u"],
+        "Y": ["y", "i"],
+        "Z": ["zz", "se", "es", "s", "z"],
+        "ZH": ["si", "ge", "s", "z"]
+    ]
+
+    nonisolated private static let legalOnsets: Set<String> = [
+        "B", "BL", "BR", "CH", "D", "DR", "F", "FL", "FR", "G", "GL", "GR",
+        "HH", "JH", "K", "KL", "KR", "L", "M", "N", "P", "PL", "PR", "R",
+        "S", "SH", "SK", "SL", "SM", "SN", "SP", "ST", "STR", "SW",
+        "T", "TH", "TR", "TW", "V", "W", "Y", "Z"
+    ]
+
+    nonisolated private static func barePhone(_ phone: String) -> String {
+        String(phone.filter { !$0.isNumber })
+    }
+
+    nonisolated private static func phoneStress(_ phone: String) -> Int? {
+        guard let digit = phone.last, digit.isNumber else { return nil }
+        return Int(String(digit))
+    }
+
+    /// Letter spans for each phoneme. Offsets are into `word`.
+    nonisolated private static func alignPhonemes(_ word: String, phones: [String]) -> [(Int, Int)] {
+        let chars = Array(word)
+        var index = 0
+        var spans: [(Int, Int)] = []
+        for phone in phones {
+            let options = syllableGraphemes[barePhone(phone)] ?? []
+            var matched: (Int, Int)?
+            for skip in [0, 1] {
+                let start = index + skip
+                if start > chars.count { break }
+                for option in options where start + option.count <= chars.count {
+                    if String(chars[start..<(start + option.count)]) == option {
+                        matched = (start, start + option.count)
+                        break
+                    }
+                }
+                if matched != nil { break }
+            }
+            if matched == nil {
+                let end = min(index + 1, chars.count)
+                matched = (index, end)
+            }
+            spans.append(matched!)
+            index = matched!.1
+        }
+        if !spans.isEmpty, index < chars.count {
+            spans[spans.count - 1].1 = chars.count
+        }
+        return spans
+    }
+
+    nonisolated private static func slicesFromPhonemes(word: String, phones: [String]) -> [SyllableSlice] {
+        let vowelIndexes = phones.indices.filter { phoneStress(phones[$0]) != nil }
+        guard !vowelIndexes.isEmpty else { return [] }
+        let spans = alignPhonemes(word, phones: phones)
+        guard spans.count == phones.count else { return [] }
+
+        var pieces: [(start: Int, vowel: Int, end: Int)] = []
+        for (ordinal, vowel) in vowelIndexes.enumerated() {
+            let next = ordinal + 1 < vowelIndexes.count ? vowelIndexes[ordinal + 1] : phones.count
+            let start = ordinal == 0 ? 0 : vowelIndexes[ordinal - 1] + 1
+            pieces.append((start, vowel, next))
+        }
+        if pieces.count > 1 {
+            for index in 1..<pieces.count {
+                let consLo = pieces[index - 1].vowel + 1
+                let consHi = pieces[index - 1].end
+                var best = consHi
+                if consLo < consHi {
+                    for split in consLo..<consHi {
+                        let cluster = phones[split..<consHi].map { barePhone($0) }.joined()
+                        if legalOnsets.contains(cluster) {
+                            best = split
+                            break
+                        }
+                    }
+                }
+                pieces[index - 1].end = best
+                pieces[index].start = best
+            }
+        }
+        // A stressed vowel keeps one following consonant. "veil" stays veil, not vei-l.
+        if pieces.count > 1 {
+            for index in 0..<(pieces.count - 1) {
+                guard phoneStress(phones[pieces[index].vowel]) == 1
+                        || phoneStress(phones[pieces[index].vowel]) == 2 else { continue }
+                guard pieces[index].vowel + 1 == pieces[index].end else { continue }
+                let onsetCount = pieces[index + 1].vowel - pieces[index + 1].start
+                guard onsetCount == 1 else { continue }
+                pieces[index].end = pieces[index + 1].start + 1
+                pieces[index + 1].start += 1
+            }
+        }
+
+        struct Row {
+            var spelling: String
+            var stress: Int
+            var start: Int
+            var end: Int
+            var vowel: Int
+            var phoneEnd: Int
+        }
+        var raw: [Row] = []
+        for piece in pieces where piece.start < piece.end {
+            let letterStart = spans[piece.start].0
+            let letterEnd = spans[piece.end - 1].1
+            guard letterEnd > letterStart else { continue }
+            let spelling = String(word[word.index(word.startIndex, offsetBy: letterStart)..<word.index(word.startIndex, offsetBy: letterEnd)])
+            raw.append(Row(
+                spelling: spelling,
+                stress: phoneStress(phones[piece.vowel]) ?? 0,
+                start: letterStart,
+                end: letterEnd,
+                vowel: piece.vowel,
+                phoneEnd: piece.end
+            ))
+        }
+        if raw.count > 1 {
+            for index in 0..<(raw.count - 1) {
+                guard raw[index].end == raw[index + 1].start else { continue }
+                let spelling = raw[index].spelling
+                guard spelling.count >= 2 else { continue }
+                let lastIndex = spelling.index(before: spelling.endIndex)
+                let beforeIndex = spelling.index(before: lastIndex)
+                guard spelling[lastIndex] == spelling[beforeIndex] else { continue }
+                let trimmed = String(spelling.dropLast())
+                guard !trimmed.isEmpty else { continue }
+                raw[index].spelling = trimmed
+                raw[index].end -= 1
+                raw[index + 1].spelling = String(spelling[lastIndex]) + raw[index + 1].spelling
+                raw[index + 1].start -= 1
+            }
+        }
+
+        return raw.compactMap { item in
+            guard !item.spelling.isEmpty, item.end > item.start else { return nil }
+            let coda = Array(phones[(item.vowel + 1)..<item.phoneEnd])
+            return SyllableSlice(
+                spelling: item.spelling,
+                startOffset: item.start,
+                endOffset: item.end,
+                signature: PhoneticSignature(stressedVowel: phones[item.vowel], coda: coda),
+                stress: item.stress,
+                wordLength: word.count
+            )
+        }
+    }
+
+    /// Unknown words: one slice per vowel group. Every slice counts as stressed.
+    nonisolated private static func slicesFromVowelGroups(word: String) -> [SyllableSlice] {
+        let chars = Array(word)
+        guard !chars.isEmpty else { return [] }
+        func isVowel(_ index: Int) -> Bool {
+            let c = chars[index]
+            if c == "y" { return index > 0 }
+            return "aeiou".contains(c)
+        }
+        var groups: [(Int, Int)] = []
+        var index = 0
+        while index < chars.count {
+            if isVowel(index) {
+                let start = index
+                index += 1
+                while index < chars.count, isVowel(index) { index += 1 }
+                groups.append((start, index))
+            } else {
+                index += 1
+            }
+        }
+        if groups.count > 1,
+           let last = groups.last,
+           last.1 - last.0 == 1,
+           chars[last.0] == "e",
+           last.0 > 0,
+           !isVowel(last.0 - 1) {
+            groups.removeLast()
+        }
+        guard !groups.isEmpty else { return [] }
+        var bounds: [(Int, Int)] = []
+        for (ordinal, group) in groups.enumerated() {
+            let start: Int
+            if ordinal == 0 {
+                start = 0
+            } else {
+                let gapLo = groups[ordinal - 1].1
+                let gapHi = group.0
+                let gap = gapHi - gapLo
+                start = gap <= 1 ? gapLo : gapLo + 1
+            }
+            let end = ordinal + 1 < groups.count ? groups[ordinal + 1].0 : chars.count
+            // end is refined below once the next start is known
+            bounds.append((start, end))
+        }
+        if bounds.count > 1 {
+            for ordinal in 0..<(bounds.count - 1) {
+                bounds[ordinal].1 = bounds[ordinal + 1].0
+            }
+            bounds[bounds.count - 1].1 = chars.count
+        }
+        let vowelPhone: [Character: String] = [
+            "a": "AE", "e": "EH", "i": "IH", "o": "AA", "u": "AH", "y": "IY"
+        ]
+        let digraph: [String: String] = [
+            "ai": "EY", "ay": "EY", "ei": "EY", "ey": "EY",
+            "ee": "IY", "ea": "IY", "oo": "UW", "ou": "AW", "ow": "AW",
+            "oi": "OY", "oy": "OY"
+        ]
+        var slices: [SyllableSlice] = []
+        for (start, end) in bounds where end > start {
+            let spelling = String(chars[start..<end])
+            let local = Array(spelling)
+            guard let vowelAt = local.indices.first(where: { isVowelLetter(local[$0], atStart: $0 == 0 && start == 0) }) else { continue }
+            let pair = vowelAt + 1 < local.count ? String(local[vowelAt...vowelAt + 1]) : ""
+            let nucleus = digraph[pair] ?? vowelPhone[local[vowelAt]] ?? "AH"
+            var coda: [String] = []
+            var cursor = pair.count == 2 && digraph[pair] != nil ? vowelAt + 2 : vowelAt + 1
+            while cursor < local.count {
+                coda.append(String(local[cursor]).uppercased())
+                cursor += 1
+            }
+            slices.append(SyllableSlice(
+                spelling: spelling,
+                startOffset: start,
+                endOffset: end,
+                signature: PhoneticSignature(stressedVowel: nucleus + "1", coda: coda),
+                stress: 1,
+                wordLength: chars.count
+            ))
+        }
+        return slices
+    }
+
+    nonisolated private static func isVowelLetter(_ c: Character, atStart: Bool) -> Bool {
+        if c == "y" { return !atStart }
+        return "aeiou".contains(c)
+    }
+
+    /// Paint a stressed syllable that rhymes with a group, and leave the rest of the word dark.
+    /// A one-syllable exact rhyme is already the whole word, so its span stays.
+    nonisolated static func attachSyllableSlices(
+        tokens: [AnnotatedToken],
+        in text: String,
+        to groups: inout [RhymeGroup]
+    ) {
+        var covered = groups.flatMap { $0.words.map(\.range) }
+        for token in tokens {
+            for slice in syllableSlices(of: token.word) where slice.stress >= 1 && !slice.coversWholeWord {
+                guard let range = rangeInText(text, token: token, slice: slice) else { continue }
+                if covered.contains(where: { $0.lowerBound <= range.lowerBound && $0.upperBound >= range.upperBound }) {
+                    continue
+                }
+                let piece = RhymeGroupWord(
+                    word: slice.spelling,
+                    range: range,
+                    lineIndex: token.lineIndex,
+                    positionInLine: token.positionInLine,
+                    isLineEnd: token.isLineEnd && range.upperBound == token.range.upperBound
+                )
+                if let groupIndex = bestGroupIndex(for: slice.signature, in: groups) {
+                    let group = groups[groupIndex]
+                    groups[groupIndex] = RhymeGroup(
+                        id: group.id,
+                        key: group.key,
+                        strength: group.strength,
+                        colorIndex: group.colorIndex,
+                        words: group.words + [piece],
+                        rhymeType: group.rhymeType
+                    )
+                    covered.append(range)
+                    continue
+                }
+                // "veil" / "surveillance" has no whole-word group yet. A perfect
+                // syllable match seeds one. Near and assonance stay with groups
+                // that already exist, so a loose slice cannot open a new family.
+                guard let partner = tokens.first(where: { other in
+                    other.range != token.range
+                        && !covered.contains(where: { $0.lowerBound <= other.range.lowerBound && $0.upperBound >= other.range.upperBound })
+                        && rhymeScore(slice.signature, other.signature) == .perfect
+                }) else { continue }
+                let key = endGroupKey(for: partner.word, signature: partner.signature, isLineEnd: partner.isLineEnd)
+                groups.append(RhymeGroup(
+                    id: UUID(),
+                    key: key,
+                    strength: .perfect,
+                    colorIndex: 0,
+                    words: [groupWord(from: partner), piece],
+                    rhymeType: .internalRhyme
+                ))
+                covered.append(partner.range)
+                covered.append(range)
+            }
+        }
+    }
+
+    nonisolated private static func rangeInText(
+        _ text: String,
+        token: AnnotatedToken,
+        slice: SyllableSlice
+    ) -> Range<String.Index>? {
+        guard slice.endOffset > slice.startOffset else { return nil }
+        guard let start = text.index(token.range.lowerBound, offsetBy: slice.startOffset, limitedBy: token.range.upperBound),
+              let end = text.index(token.range.lowerBound, offsetBy: slice.endOffset, limitedBy: token.range.upperBound),
+              start < end else { return nil }
+        return start..<end
+    }
+
+    nonisolated private static func bestGroupIndex(
+        for signature: PhoneticSignature,
+        in groups: [RhymeGroup]
+    ) -> Int? {
+        var best: (index: Int, raw: Double)?
+        for (index, group) in groups.enumerated() {
+            for member in group.words {
+                guard let phones = dictionaryPhonemes(for: member.word),
+                      let memberSignature = extractSignature(from: phones),
+                      let score = rhymeScore(signature, memberSignature) else { continue }
+                if best == nil || score.rawValue > best!.raw {
+                    best = (index, score.rawValue)
+                }
+            }
+        }
+        return best?.index
+    }
+
     /// End rhymes from line-end landings. Internals from same-bar pairs, from mid words
     /// that share an end-group key, and from the same family across lines (`cheat` / `reach`).
-    nonisolated static func groupsFromAnnotatedTokens(_ tokens: [AnnotatedToken]) -> [RhymeGroup] {
+    nonisolated static func groupsFromAnnotatedTokens(_ tokens: [AnnotatedToken], in text: String) -> [RhymeGroup] {
         struct Coord: Hashable {
             let lineIndex: Int
             let positionInLine: Int
@@ -681,7 +1108,11 @@ nonisolated struct RhymeHighlighterEngine {
             for i in 0..<idxs.count {
                 for j in (i + 1)..<idxs.count {
                     let a = idxs[i], b = idxs[j]
-                    if rhymeScore(tokens[a].signature, tokens[b].signature) != nil {
+                    let score = rhymeScore(tokens[a].signature, tokens[b].signature)
+                    // Every rhyme in the bar joins, including assonance (time/nines).
+                    // The key chosen below stays on the specific family, so "she"
+                    // does not rename "cheat" off IY|TCH before reach can join it.
+                    if score != nil {
                         union(a, b)
                         hasSameLinePartner[a] = true
                         hasSameLinePartner[b] = true
@@ -714,7 +1145,10 @@ nonisolated struct RhymeHighlighterEngine {
         for members in componentMembers.values {
             let component = members.map { tokens[$0] }
             let keys = component.flatMap { groupingKeys(for: $0) }
-            let key = keys.first(where: { endGroupKeys.contains($0) })
+            // A first match must not keep the key. "decline" is AY|N and
+            // "nines" is AY|N-Z; the bar still shares one bucket. An end-family
+            // key outranks a bare vowel so "she" cannot claim "cheat".
+            let key = keys.max(by: { keyRank($0, endGroupKeys: endGroupKeys) < keyRank($1, endGroupKeys: endGroupKeys) })
                 ?? groupingKeys(for: component[0])[0]
             for token in component {
                 addInternal(token, key: key)
@@ -761,11 +1195,193 @@ nonisolated struct RhymeHighlighterEngine {
             result.append(makeRhymeGroup(key: key, entries: entries, rhymeType: .internalRhyme))
         }
 
+        var groupedTokenIndexes: Set<Int> = []
+        for (index, token) in tokens.enumerated() {
+            if endMemberCoords.contains(coord(token)) || internalCoords.contains(coord(token)) {
+                groupedTokenIndexes.insert(index)
+            }
+        }
+        appendAssonanceGroups(tokens: tokens, alreadyGrouped: groupedTokenIndexes, into: &result)
+        mergeSharedFinalConsonant(groups: &result)
+        attachSyllableSlices(tokens: tokens, in: text, to: &result)
+
         return result
     }
 
+    /// Higher rank wins the one key for a bar. End buckets and locked families
+    /// beat a bare vowel, so the first word in the bar does not name the group.
+    nonisolated private static func keyRank(_ key: String, endGroupKeys: Set<String>) -> Int {
+        var rank = endGroupKeys.contains(key) ? 50 : 0
+        if key.contains("ALVSTOP") || key.hasPrefix("LOCKED") { rank += 5 }
+        else if key.contains("|TCH") || key.contains("STOP-PBGK") || key.hasSuffix("|Y") { rank += 4 }
+        else if key.contains("|") { rank += 3 }
+        else { rank += 1 }
+        return rank
+    }
+
+    /// `nines`/`signs` are claimed under AY|N-Z before `decline` (AY|N) is seen.
+    /// The trailing Z is the same final N. Fold those groups together so the
+    /// first bucket cannot leave the other word dark.
+    nonisolated static func mergeSharedFinalConsonant(groups: inout [RhymeGroup]) {
+        guard groups.count > 1 else { return }
+        func profile(_ word: String) -> (vowel: String, last: String, signature: PhoneticSignature)? {
+            guard let phones = dictionaryPhonemes(for: word),
+                  let signature = extractSignature(from: phones),
+                  let last = strippedCoda(signature.coda).last else { return nil }
+            let vowel = String(signature.stressedVowel.filter { !$0.isNumber })
+            return (vowel, last, signature)
+        }
+        func locked(_ key: String) -> Bool {
+            key.contains("ALVSTOP") || key.contains("|TCH") || key.contains("STOP-PBGK")
+                || key.hasSuffix("|Y") || key.hasPrefix("LOCKED")
+        }
+        let profiles = groups.map { group in group.words.compactMap { profile($0.word) } }
+        var parent = Array(groups.indices)
+        func find(_ index: Int) -> Int {
+            var index = index
+            while parent[index] != index { index = parent[index] }
+            return index
+        }
+        func unite(_ a: Int, _ b: Int) {
+            let ra = find(a), rb = find(b)
+            if ra != rb { parent[rb] = ra }
+        }
+        for i in groups.indices {
+            for j in (i + 1)..<groups.count {
+                if groups[i].key != groups[j].key, locked(groups[i].key) || locked(groups[j].key) {
+                    continue
+                }
+                var linked = false
+                for left in profiles[i] {
+                    for right in profiles[j] where left.vowel == right.vowel && left.last == right.last {
+                        if rhymeScore(left.signature, right.signature) != nil {
+                            linked = true
+                            break
+                        }
+                    }
+                    if linked { break }
+                }
+                if linked { unite(i, j) }
+            }
+        }
+        var buckets: [Int: [Int]] = [:]
+        for index in groups.indices {
+            buckets[find(index), default: []].append(index)
+        }
+        var merged: [RhymeGroup] = []
+        var seenRoots: Set<Int> = []
+        for index in groups.indices {
+            let root = find(index)
+            if seenRoots.contains(root) { continue }
+            seenRoots.insert(root)
+            let memberIndexes = buckets[root] ?? [index]
+            if memberIndexes.count == 1 {
+                merged.append(groups[memberIndexes[0]])
+                continue
+            }
+            let memberGroups = memberIndexes.map { groups[$0] }
+            let keeper = memberGroups.max(by: { $0.strength.rawValue < $1.strength.rawValue }) ?? memberGroups[0]
+            var seen: Set<String> = []
+            var words: [RhymeGroupWord] = []
+            for group in memberGroups {
+                for word in group.words {
+                    let marker = "\(word.lineIndex)|\(word.positionInLine)|\(word.word)"
+                    if seen.contains(marker) { continue }
+                    seen.insert(marker)
+                    words.append(word)
+                }
+            }
+            let keepsEnd = memberGroups.contains { group in
+                if case .endRhyme = group.rhymeType { return true }
+                return false
+            }
+            merged.append(RhymeGroup(
+                id: keeper.id,
+                key: keeper.key,
+                strength: keeper.strength,
+                colorIndex: keeper.colorIndex,
+                words: words,
+                rhymeType: keepsEnd ? .endRhyme : keeper.rhymeType
+            ))
+        }
+        groups = merged
+    }
+
+    /// Words the stricter buckets missed, grouped by the last stressed vowel.
+    /// Exact groups stay as they are. These paint in that vowel's color, lighter.
+    nonisolated static func appendAssonanceGroups(
+        tokens: [AnnotatedToken],
+        alreadyGrouped: Set<Int>,
+        into result: inout [RhymeGroup]
+    ) {
+        func vowel(of token: AnnotatedToken) -> String {
+            String(token.signature.stressedVowel.filter { !$0.isNumber })
+        }
+
+        let free = tokens.indices.filter { !alreadyGrouped.contains($0) }
+        var byVowel: [String: [Int]] = [:]
+        for index in free {
+            byVowel[vowel(of: tokens[index]), default: []].append(index)
+        }
+
+        for (vowelSound, indexes) in byVowel {
+            var parent = [Int: Int]()
+            for index in indexes { parent[index] = index }
+            func find(_ x: Int) -> Int {
+                var x = x
+                while parent[x] != x {
+                    parent[x] = parent[parent[x]!]
+                    x = parent[x]!
+                }
+                return x
+            }
+            func union(_ a: Int, _ b: Int) {
+                let ra = find(a), rb = find(b)
+                if ra != rb { parent[rb] = ra }
+            }
+            for i in indexes.indices {
+                for j in (i + 1)..<indexes.count {
+                    let left = indexes[i], right = indexes[j]
+                    if rhymeScore(tokens[left].signature, tokens[right].signature) == .assonance {
+                        union(left, right)
+                    }
+                }
+            }
+            var members: [Int: [Int]] = [:]
+            for index in indexes {
+                let root = find(index)
+                let hasPartner = indexes.contains { other in
+                    other != index && find(other) == root
+                        && rhymeScore(tokens[index].signature, tokens[other].signature) == .assonance
+                }
+                if hasPartner { members[root, default: []].append(index) }
+            }
+            for groupIndexes in members.values {
+                let words = Set(groupIndexes.map { tokens[$0].word })
+                guard words.count >= 2 else { continue }
+                let colorKey = result.first { group in
+                    let head = group.key.split(separator: "|", maxSplits: 1).first.map(String.init) ?? group.key
+                    return head == vowelSound && group.strength != .assonance
+                }?.key ?? vowelSound
+                let entries = groupIndexes.map { index in
+                    (groupWord(from: tokens[index]), tokens[index].signature)
+                }
+                result.append(
+                    RhymeGroup(
+                        id: UUID(),
+                        key: colorKey,
+                        strength: .assonance,
+                        colorIndex: 0,
+                        words: entries.map(\.0),
+                        rhymeType: .endRhyme
+                    )
+                )
+            }
+        }
+    }
+
     nonisolated static func computeGroups(text: String) async -> [RhymeGroup] {
-        lockColorIndices(groupsFromAnnotatedTokens(annotatedTokens(in: text)))
+        lockColorIndices(groupsFromAnnotatedTokens(annotatedTokens(in: text), in: text))
     }
 
     /// Color index from phonetic rhyme-class id — stable across notes and relaunches.
@@ -806,7 +1422,7 @@ nonisolated struct RhymeHighlighterEngine {
         // Cache colors count to avoid main actor access
         let colorsCount = 6 // RhymeColorPalette.colors.count (hardcoded to avoid main actor isolation)
         let result = lockColorIndices(
-            groupsFromAnnotatedTokens(annotatedTokens(in: text, signatureCache: signatureCache)),
+            groupsFromAnnotatedTokens(annotatedTokens(in: text, signatureCache: signatureCache), in: text),
             paletteCount: colorsCount
         )
 
