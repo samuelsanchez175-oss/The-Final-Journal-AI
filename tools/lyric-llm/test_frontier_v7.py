@@ -7,9 +7,12 @@ Run: tools/lyric-llm/.venv/bin/python3 -m unittest test_frontier_v7
 from __future__ import annotations
 
 import json
+import os
+import re
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 HERE = Path(__file__).resolve().parent
 if str(HERE) not in sys.path:
@@ -390,13 +393,10 @@ class TestV6TwinTable(unittest.TestCase):
 class TestPerBarNovelty(unittest.TestCase):
     def test_per_bar_novelty_triggers_on_verbatim(self):
         """A verbatim catalog line should fail the per-bar novelty gate."""
-        import sqlite3
-        from pathlib import Path as _P
-        repo = _P(__file__).resolve().parents[2]
-        db = repo / "tools" / "bar-hits-catalog" / "BarHitsCatalog.sqlite"
-        if not db.exists():
+        db = fv7._catalog_db()
+        if not db.is_file():
             self.skipTest("catalog DB missing")
-        conn = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
+        conn = fv7._ro_connect(db)
         row = conn.execute(
             "SELECT line, end_word FROM bars WHERE lower(artist)='gunna' "
             "AND length(line) BETWEEN 40 AND 80 LIMIT 1").fetchone()
@@ -456,6 +456,247 @@ class TestFourBarVowelShare(unittest.TestCase):
                   for i, b in enumerate(bars)]
         v = fv7.score_verse(bars, grades, voice="Gunna")
         self.assertIn("four_bar_vowel_share_rate", v["components"])
+
+
+class TestStyleExamples(unittest.TestCase):
+    def test_topic_matches_fill_twenty_to_thirty(self):
+        jewelry = [f"Ice on the chain and the patek bar {i}" for i in range(25)]
+        other = [f"Just another line about the weather {i}" for i in range(20)]
+        picked = fv7.select_style_examples(jewelry + other, "jewelry", seed=3)
+        self.assertGreaterEqual(len(picked), 20)
+        self.assertLessEqual(len(picked), 30)
+        self.assertTrue(all("chain" in line or "patek" in line for line in picked[:20]))
+
+    def test_prompt_includes_examples_and_do_not_copy(self):
+        examples = [f"Ice on the chain bar {i}" for i in range(22)]
+        target = _bar("", 0, "crown", syl_target=9)
+        prompt = fv7._write_bar_prompt(target, "Gunna", "jewelry", [], [], examples)
+        self.assertIn("do not copy", prompt.lower())
+        self.assertIn(examples[0], prompt)
+        self.assertIn("End word must be exactly: 'crown'", prompt)
+
+    def test_shown_examples_reach_the_novelty_gate(self):
+        seen = {}
+
+        def fake(bar, chip_words=None, shown_examples=None):
+            seen["shown"] = list(shown_examples or [])
+            return {"is_near_dup": False, "reasons": []}
+
+        target = _bar("", 0, "crown", syl_target=9)
+        with patch("taste.novelty.bar_novelty", fake):
+            fv7.grade_bar("Marble turtles holding on my crown", target, [],
+                          check_vocab=False, shown_examples=["alpha example line"])
+        self.assertEqual(seen["shown"], ["alpha example line"])
+
+    def test_gunna_jewelry_retrieval_is_read_only_and_bounded(self):
+        if not fv7._catalog_db().is_file():
+            self.skipTest("catalog DB missing")
+        rows = fv7.retrieve_style_examples("Gunna", "jewelry", seed=20261031)
+        self.assertGreaterEqual(len(rows), 20)
+        self.assertLessEqual(len(rows), 30)
+        words = set(fv7._W.findall(rows[0].lower()))
+        needles = {"chain", "iced", "diamond", "rolex", "patek", "watch",
+                   "cuban", "pendant", "bezel", "vvs"}
+        self.assertTrue(words & needles)
+
+
+class TestFourBarRhymePlan(unittest.TestCase):
+    def _crown_family(self):
+        rime = tuple(fv7._cmu_rime("crown"))
+        words = [("crown", 40), ("down", 30), ("town", 20), ("gown", 10)]
+        for word, _count in words:
+            self.assertEqual(tuple(fv7._cmu_rime(word)), rime)
+        return rime, words
+
+    def test_one_family_per_block_and_no_invented_ends(self):
+        rime, words = self._crown_family()
+        shape = fv7.shape_v5({"bpm": 140, "bars": 4, "section_mode": "verse"})
+        with patch("frontier_v7._vault_family_weights", return_value=[(rime, words)]):
+            plan = fv7.plan_v7(shape, voice="Gunna", topic="jewelry", seed=1)
+        self.assertTrue(plan["complete"])
+        self.assertEqual(len(set(plan["end_words"])), 4)
+        self.assertEqual({tuple(target.block_rime) for target in plan["targets"]}, {rime})
+        self.assertTrue(set(plan["end_words"]) <= {"crown", "down", "town", "gown"})
+        with patch("frontier_v7._vault_family_weights", return_value=[]):
+            empty = fv7.plan_v7(shape, voice="Gunna", topic="jewelry", seed=1)
+        self.assertFalse(empty["complete"])
+        self.assertEqual(empty["end_words"], [])
+
+    def test_frequent_family_wins_the_weight(self):
+        heavy = tuple(fv7._cmu_rime("crown"))
+        light = tuple(fv7._cmu_rime("night"))
+        fams = [
+            (heavy, [("crown", 80), ("down", 70), ("town", 60), ("gown", 50)]),
+            (light, [("night", 1), ("light", 1), ("flight", 1), ("sight", 1)]),
+        ]
+        shape = fv7.shape_v5({"bpm": 140, "bars": 4, "section_mode": "verse"})
+        wins = 0
+        for seed in range(40):
+            with patch("frontier_v7._vault_family_weights", return_value=fams):
+                plan = fv7.plan_v7(shape, voice="Gunna", topic="", seed=seed)
+            if plan["end_words"] and plan["end_words"][0] in {"crown", "down", "town", "gown"}:
+                wins += 1
+        self.assertGreaterEqual(wins, 30)
+
+    def test_chip_rime_is_preferred(self):
+        heavy = tuple(fv7._cmu_rime("crown"))
+        light = tuple(fv7._cmu_rime("night"))
+        fams = [
+            (heavy, [("crown", 80), ("down", 70), ("town", 60), ("gown", 50)]),
+            (light, [("night", 1), ("light", 1), ("flight", 1), ("sight", 1)]),
+        ]
+        shape = fv7.shape_v5({"bpm": 140, "bars": 4, "section_mode": "verse"})
+        with patch("frontier_v7._vault_family_weights", return_value=fams):
+            plan = fv7.plan_v7(
+                shape, voice="Gunna", topic="", seed=1,
+                chip_hints=[{"chip": "night", "end_rime": light}],
+            )
+        self.assertTrue(set(plan["end_words"]) <= {"night", "light", "flight", "sight"})
+
+    def test_gunna_vault_plan_is_one_family_per_block(self):
+        if not fv7._catalog_db().is_file():
+            self.skipTest("catalog DB missing")
+        shape = fv7.shape_v5({"bpm": 140, "bars": 8, "section_mode": "verse"})
+        plan = fv7.plan_v7(shape, voice="Gunna", topic="jewelry", seed=20261031)
+        self.assertTrue(plan["complete"])
+        self.assertEqual(len(plan["end_words"]), 8)
+        self.assertEqual(plan["plan_model"], fv7.PLAN_MODEL_NAME)
+        for start in (0, 4):
+            chunk = plan["end_words"][start:start + 4]
+            self.assertEqual(len(set(chunk)), 4, chunk)
+            rimes = {tuple(fv7._cmu_rime(fv7._word(word))) for word in chunk}
+            self.assertEqual(rimes, {tuple(plan["targets"][start].block_rime)})
+        self.assertNotEqual(tuple(plan["targets"][0].block_rime),
+                            tuple(plan["targets"][4].block_rime))
+
+
+class TestVocabGate(unittest.TestCase):
+    def test_injected_vocab_rejects_domination_and_allows_digital(self):
+        bank = {"whole", "block", "comin", "down", "chain", "wrist", "money", "digital"}
+        bad = fv7._grade_vocab(
+            "Blockchain crypto wallet settlement digital", "Gunna", vocab=bank)
+        self.assertFalse(bad["ok"])
+        self.assertTrue(any("vocabulary hit" in reason for reason in bad["reasons"]))
+        good = fv7._grade_vocab("Whole block comin down on the chain", "Gunna", vocab=bank)
+        self.assertTrue(good["ok"], good)
+        allowed = fv7._grade_vocab("Digital chain on the wrist down", "Gunna", vocab=bank)
+        self.assertTrue(allowed["ok"], allowed)
+
+    def test_missing_vault_fails_closed(self):
+        fv7._VOCAB_CACHE.pop("missing voice", None)
+        with patch.object(fv7, "_voice_lines", return_value=[]):
+            grade = fv7._grade_vocab("Blockchain crypto wallet settlement", "Missing Voice")
+        self.assertFalse(grade["ok"])
+        self.assertTrue(any("could not be read" in reason for reason in grade["reasons"]))
+
+    def test_gunna_vault_has_digital_and_not_blockchain(self):
+        if not fv7._catalog_db().is_file():
+            self.skipTest("catalog DB missing")
+        bank = fv7.voice_vocab("Gunna")
+        self.assertNotIn("blockchain", bank)
+        self.assertNotIn("crypto", bank)
+        self.assertIn("digital", bank)
+        dominated = fv7._grade_vocab("The blockchain crypto wallet settlement", "Gunna")
+        self.assertFalse(dominated["ok"])
+
+
+class TestWriterModelAndShipGate(unittest.TestCase):
+    def _examples(self):
+        return [f"Style example line number {i} about the room" for i in range(22)]
+
+    def test_broken_block_retries_and_does_not_ship(self):
+        rime, words = tuple(fv7._cmu_rime("crown")), [
+            ("crown", 40), ("down", 30), ("town", 20), ("gown", 10)]
+        calls = {"n": 0}
+        ends = ["dog", "cat", "tree", "moon"]
+
+        def stub(system, user, model="gpt-4o-mini"):
+            calls["n"] += 1
+            end = ends[calls["n"] % 4]
+            return json.dumps({"bar": f"Marble turtles holding on my {end}"})
+
+        with patch("frontier_v7._vault_family_weights", return_value=[(rime, words)]):
+            result = fv7.generate_v7(
+                {"bpm": 140, "bars": 4, "section_mode": "verse"},
+                voice="Gunna", topic="jewelry", call_fn=stub,
+                style_examples=self._examples(), vocab={"marble", "turtles", "holding"},
+                retries_per_bar=0, block_retries=2, seed=5,
+            )
+        self.assertEqual(len(result.bars), 4)
+        self.assertGreater(calls["n"], 4)
+        self.assertFalse(result.shipped)
+        self.assertFalse(result.verified)
+        self.assertTrue(any("do not share" in item for item in result.violations_rolled_up))
+
+    def test_incomplete_plan_does_not_call_the_writer(self):
+        calls = {"n": 0}
+
+        def stub(system, user, model="gpt-4o-mini"):
+            calls["n"] += 1
+            return json.dumps({"bar": "Marble turtles holding on my crown"})
+
+        shape_prompt = {"bpm": 140, "bars": 4, "section_mode": "verse"}
+        with patch("frontier_v7._vault_family_weights", return_value=[]):
+            result = fv7.generate_v7(
+                shape_prompt, voice="Gunna", topic="jewelry", call_fn=stub,
+                style_examples=self._examples(),
+            )
+        self.assertEqual(calls["n"], 0)
+        self.assertFalse(result.shipped)
+        self.assertEqual(result.bars, [])
+
+    def test_writer_defaults_stronger_than_mini_and_block_can_ship(self):
+        self.assertEqual(fv7.PLAN_MODEL_NAME, os.environ.get("V7_PLAN_MODEL", "gpt-4o-mini"))
+        self.assertEqual(fv7.WRITER_MODEL_NAME, os.environ.get("V7_WRITER_MODEL", "gpt-4o"))
+        self.assertNotEqual(fv7.WRITER_MODEL_NAME, "gpt-4o-mini")
+        rime = tuple(fv7._cmu_rime("crown"))
+        words = [("crown", 40), ("down", 30), ("town", 20), ("gown", 10)]
+        models = []
+
+        def stub(system, user, model="gpt-4o-mini"):
+            models.append(model)
+            match = re.search(r"End word must be exactly: '([^']+)'", user)
+            end = match.group(1) if match else "crown"
+            return json.dumps({"bar": f"Marble turtles holding on my {end}"})
+
+        vocab = {"marble", "turtles", "holding", "crown", "down", "town", "gown"}
+        with patch("frontier_v7._vault_family_weights", return_value=[(rime, words)]):
+            result = fv7.generate_v7(
+                {"bpm": 140, "bars": 4, "section_mode": "verse"},
+                voice="Gunna", topic="jewelry", call_fn=stub,
+                style_examples=self._examples(), vocab=vocab,
+                retries_per_bar=0, block_retries=0, seed=3,
+            )
+        self.assertEqual(len(result.bars), 4)
+        self.assertTrue(models)
+        self.assertTrue(all(model == fv7.WRITER_MODEL_NAME for model in models))
+        self.assertEqual(result.plan["plan_model"], fv7.PLAN_MODEL_NAME)
+        self.assertEqual(result.plan["writer_model"], fv7.WRITER_MODEL_NAME)
+        self.assertEqual(result.plan["style_example_count"], 22)
+        self.assertTrue(fv7._block_shares_rime(result.bars, rime), result.bars)
+        self.assertTrue(result.shipped, result.violations_rolled_up)
+
+
+class TestRealGunnaSpans(unittest.TestCase):
+    def test_two_songs_eight_lines_numeric_order(self):
+        if not fv7._catalog_db().is_file():
+            self.skipTest("catalog DB missing")
+        spans = fv7.load_real_spans("Gunna", count=2, bars=8, seed=20261031)
+        self.assertEqual(len(spans), 2)
+        self.assertNotEqual(spans[0]["song"], spans[1]["song"])
+        conn = fv7._ro_connect(fv7._catalog_db())
+        try:
+            for span in spans:
+                self.assertEqual(len(span["lines"]), 8)
+                rows = conn.execute(
+                    "SELECT id, line FROM bars WHERE lower(artist)='gunna' AND song=?",
+                    (span["song"],),
+                ).fetchall()
+                rows.sort(key=lambda row: (fv7._line_number(row[0]), str(row[0])))
+                expect = [str(row[1]).strip() for row in rows if str(row[1]).strip()][:8]
+                self.assertEqual(span["lines"], expect)
+        finally:
+            conn.close()
 
 
 if __name__ == "__main__":
