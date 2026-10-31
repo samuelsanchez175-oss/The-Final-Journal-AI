@@ -366,6 +366,125 @@ def load_topic_chain_map() -> tuple[dict[tuple[str, str, int], str], dict[tuple[
     return _TOPIC_CHAIN_CACHE, _SONG_DOMINANT_TOPIC_CACHE
 
 
+def _topic_files() -> list[Path]:
+    return [
+        OUT / "topic_chain.jsonl",
+        STYLE_PROFILE_DIR / "out" / "topic_cache.jsonl",
+        STYLE_PROFILE_DIR / "out" / "topic_chain_songs.jsonl",
+        STYLE_PROFILE_DIR / "out" / "topic_chain_artists.jsonl",
+    ]
+
+
+def _parse_topic_files(files: list[Path]) -> tuple[dict[tuple[str, str, int], str], dict[tuple[str, str], str]]:
+    """Parse topic jsonl files into bar and song maps. A missing artist is simply absent."""
+    from collections import Counter
+
+    bar_topics: dict[tuple[str, str, int], str] = {}
+    song_topics: dict[tuple[str, str], str] = {}
+    for tf in files:
+        if not tf.exists():
+            continue
+        try:
+            with tf.open("r", encoding="utf-8") as handle:
+                for line in handle:
+                    try:
+                        obj = json.loads(line)
+                    except Exception:
+                        continue
+                    art = (obj.get("artist") or "").strip().lower()
+                    song = (obj.get("song") or "").strip().lower()
+                    if not art or not song:
+                        continue
+                    chain = obj.get("chain") or []
+                    if chain and (art, song) not in song_topics:
+                        counts = Counter(str(item) for item in chain if item)
+                        if counts:
+                            song_topics[(art, song)] = counts.most_common(1)[0][0]
+                    for run in obj.get("runs") or []:
+                        top = run.get("topic") or ""
+                        if not top:
+                            continue
+                        start = int(run.get("start", 1) or 1)
+                        end = int(run.get("end", start) or start)
+                        for bar_n in range(start, end + 1):
+                            bar_topics[(art, song, bar_n)] = str(top)
+        except Exception:
+            continue
+    return bar_topics, song_topics
+
+
+def load_topic_chain(artist: str, paths: Optional[list[Path]] = None) -> Optional[dict[str, Any]]:
+    """Return this artist's topic chain, or None when the file or the artist is absent.
+
+    Topic is a boost. A missing chain is not a filter and is not a penalty.
+    """
+    art = (artist or "").strip().lower()
+    if not art:
+        return None
+    if paths is None:
+        files = [path for path in _topic_files() if path.exists()]
+        if not files:
+            return None
+        bar_map, song_map = load_topic_chain_map()
+    else:
+        files = [Path(path) for path in paths if Path(path).exists()]
+        if not files:
+            return None
+        bar_map, song_map = _parse_topic_files(files)
+
+    line_topics: dict[str, str] = {}
+    song_topics: dict[str, str] = {}
+    topics: list[str] = []
+    for (owner, song, line_n), topic in bar_map.items():
+        if owner != art or not topic:
+            continue
+        line_topics[f"{song}|{line_n}"] = topic
+        if topic not in topics:
+            topics.append(topic)
+    for (owner, song), topic in song_map.items():
+        if owner != art or not topic:
+            continue
+        song_topics[song] = topic
+        if topic not in topics:
+            topics.append(topic)
+    if not line_topics and not song_topics:
+        return None
+    return {"topics": topics, "line_topics": line_topics, "song_topics": song_topics}
+
+
+def _chain_topic(chain: Optional[dict[str, Any]], song: str, line_seq: int) -> str:
+    if not chain:
+        return ""
+    song_l = (song or "").strip().lower()
+    line_topics = chain.get("line_topics") or {}
+    keyed = line_topics.get(f"{song_l}|{line_seq}")
+    if keyed:
+        return str(keyed).lower()
+    song_topics = chain.get("song_topics") or {}
+    if song_l in song_topics:
+        return str(song_topics[song_l]).lower()
+    return ""
+
+
+def topic_hit_points(
+    chain: Optional[dict[str, Any]],
+    song: str,
+    line_seq: int,
+    target_topic: str,
+    target_topics: set[str],
+) -> float:
+    """+15 when the chain exists and the song matches. 0 when the chain is missing."""
+    if not target_topic or chain is None:
+        return 0.0
+    chained = _chain_topic(chain, song, line_seq)
+    if not chained:
+        return 0.0
+    hints = {hint for hint in target_topics if hint}
+    if chained in hints or (target_topic and target_topic in chained) or any(hint in chained for hint in hints):
+        return 15.0
+    return 0.0
+
+
 def get_topic_for_bar(artist: str, song: str, line_seq: int, text: str = "") -> str:
     """Returns the authentic topic label for a bar, with song-level and keyword fallback."""
     bar_map, song_map = load_topic_chain_map()
@@ -914,6 +1033,68 @@ def extract_seed_pattern(seed_lines: list[str], cmu: dict[str, list[str]], bpm: 
     return patterns
 
 
+def resolve_catalog_artist(voice: str) -> str:
+    """Lowercase catalog_bars artist for this voice.
+
+    Known voices query themselves. A twin fills a voice the index does not
+    store (Chief Keef has no rows; retrieval already uses Lil Wayne).
+    """
+    low = (voice or "").strip().lower()
+    if low in KNOWN_CATALOG_ARTISTS:
+        return low
+    twin = VOICE_CATALOG_TWINS.get(low)
+    if twin:
+        return twin.strip().lower()
+    return low
+
+
+def sample_end_words(
+    voice: str,
+    count: int = 8,
+    dedupe_window: int = 16,
+    db_path: Path = DB_PATH,
+    history: Optional[list[str]] = None,
+    recent_end_words: Optional[list[str]] = None,
+) -> list[str]:
+    """Most-used catalog end words for this voice, skipping the recent window.
+
+    A missing index returns an empty list. This function does not create the sqlite.
+    """
+    if count <= 0 or not voice or not Path(db_path).exists():
+        return []
+    supplied = recent_end_words if recent_end_words is not None else history
+    if supplied is None:
+        recent = {word.lower() for word in get_end_word_history(window_size=dedupe_window) if word}
+    else:
+        recent = {word.lower() for word in supplied if word}
+    artist_key = resolve_catalog_artist(voice)
+    conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
+    try:
+        rows = conn.execute(
+            """
+            SELECT end_word, COUNT(*) AS n
+            FROM catalog_bars
+            WHERE lower(artist) = ? AND is_generic = 0 AND end_word != ''
+            GROUP BY end_word
+            ORDER BY n DESC
+            """,
+            (artist_key,),
+        ).fetchall()
+    except sqlite3.Error:
+        return []
+    finally:
+        conn.close()
+    picked: list[str] = []
+    for word, _count in rows:
+        token = str(word or "").strip().lower()
+        if not token or token in recent or token in GENERIC_END_RHYME_BLACKLIST:
+            continue
+        picked.append(token)
+        if len(picked) >= count:
+            break
+    return picked
+
+
 def softmax_sample_rows(rows: list, limit: int = 1) -> list:
     """Softmax-sample limit rows without replacement based on retrieval_rank (Move 1)."""
     if not rows:
@@ -958,7 +1139,12 @@ def retrieve_matching_catalog_lines(
 ) -> list[dict[str, Any]]:
     """Retrieves real catalog lines matching the pattern with chronological ordering, couplet chaining, popularity, and artist tier weighting."""
     if not db_path.exists():
-        build_catalog_index(target_artists=[artist], db_path=db_path)
+        print(
+            "[CatalogRetriever] No catalog index. Generation does not build it. "
+            "Run: python3 -m catalog_build --artists " + (artist or "Gunna"),
+            file=sys.stderr,
+        )
+        return []
 
     conn = sqlite3.connect(str(db_path))
     conn.row_factory = sqlite3.Row
@@ -1280,6 +1466,8 @@ def retrieve_matching_catalog_lines(
         conn.close()
         return []
 
+    topic_chain = load_topic_chain(artist)
+
     for r in rows:
         row_dict = dict(r)
         score = 0.0
@@ -1361,6 +1549,17 @@ def retrieve_matching_catalog_lines(
         if dedupe_penalty != 0.0:
             score += dedupe_penalty
         row_dict["dedupe_penalty"] = dedupe_penalty
+
+        # T4: topic chain is a flat +15 boost. Missing chain adds 0, never a filter.
+        topic_hit = topic_hit_points(
+            topic_chain,
+            row_dict.get("song") or "",
+            int(row_dict.get("line_seq") or 0),
+            target_topic,
+            target_topics,
+        )
+        row_dict["topic_hit"] = topic_hit
+        score += topic_hit
 
         row_dict["match_score"] = round(score, 2)
         scored_candidates.append(row_dict)

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "shared": {
+    "sample_seed": 7,
+    "fim_share": 0.2,
+    "catalog_sqlite": "catalog_index.sqlite",
+    "v5_polish_default": null
+  },
+  "models": {
+    "v5-base-50k": {
+      "model_id": "samuelsanchez1_d926/Meta-Llama-3-8B-Instruct-v5-base-50k-e4f9c031",
+      "provider": "together",
+      "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "trained_by": "grok#1",
+      "experiment": "dataset_size",
+      "variant": "50k_sample",
+      "status": "component_of_winner",
+      "training_file": "out/train_50k_fim.jsonl",
+      "validation_file": "out/val_50k_fim.jsonl",
+      "n_examples": 50000,
+      "n_epochs": 3,
+      "sample_seed": 7,
+      "fim_share": 0.2,
+      "job_id": "ft-a2211706-c2ae",
+      "trained_at": "2026-10-27T07:42:36-04:00",
+      "cost_usd": 8.1213,
+      "eval_report": "tools/lyric-llm/out/path_a_vs_b_verdict_gunna.json",
+      "together_id": "samuelsanchez1_d926/Meta-Llama-3-8B-Instruct-v5-base-50k-e4f9c031",
+      "winner_at": "2026-10-27T08:05:38-04:00",
+      "token_count": 5450034,
+      "eval_summary": {
+        "path_a_aggregate": 46.55,
+        "path_b_aggregate": 32.55,
+        "delta": -14.0,
+        "verdict": "path_a_wins_vs_bare_lora"
+      },
+      "notes": "Bare LoRA lost to Path A on Gunna profile. Combined with catalog exemplars (see v5-pathC-hybrid) it beats Path A."
+    },
+    "v5-base-50k-local": {
+      "model_id": "local//Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm/out/base_gguf/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf|/Users/samuel/Music/all xcode projects files/pennworkstudios.nosync/tools/lyric-llm/out/lora_adapter.gguf",
+      "provider": "llamacpp",
+      "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "experiment": "dataset_size",
+      "variant": "50k_sample_local_gguf",
+      "status": "component_of_winner",
+      "training_file": "out/train_50k_fim.jsonl",
+      "validation_file": "out/val_50k_fim.jsonl",
+      "n_examples": 50000,
+      "notes": "Together LoRA weights converted to GGUF via llama.cpp; served locally on Mac Metal. Used by v5-pathC-hybrid."
+    },
+    "v5-pathC-hybrid": {
+      "composition": "v5-base-50k-local + K=4 catalog exemplars in user prompt",
+      "generator": "tools/lyric-llm/base_train/batch_generate_pathB_lora.py --inject-exemplars 4",
+      "status": "winner",
+      "experiment": "retrieval_hybrid",
+      "variant": "lora_plus_exemplars_k4",
+      "winner_at": "2026-10-27",
+      "eval_report": "tools/lyric-llm/out/path_a_vs_c_hybrid_verdict_gunna.json",
+      "eval_summary": {
+        "path_a_aggregate": 46.55,
+        "path_c_aggregate": 50.75,
+        "delta": 4.2,
+        "verdict": "path_c_wins_vs_path_a",
+        "topics_won": ["come_up_hustle", "luxury_brands", "women_romance"],
+        "topics_lost": ["money_flex"]
+      },
+      "notes": "LoRA alone was starved for voice context. Injecting 4 retrieved Gunna lines as few-shot exemplars lifted score +18.2 points (32.55 -> 50.75) and beat Path A (gpt-4o-mini + catalog) by 4.2 on Gunna profile."
+    }
+  }
+}

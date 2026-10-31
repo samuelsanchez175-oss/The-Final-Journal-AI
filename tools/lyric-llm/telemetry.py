@@ -112,6 +112,8 @@ def write_bar_telemetry(row: dict[str, Any], telemetry_path: Path = TELEMETRY_PA
         "plan_hit": bool(row.get("plan_hit", False)),
         "timestamp": row.get("timestamp") or datetime.now(timezone.utc).isoformat(),
         "text": row.get("text", ""),
+        "retries_used": int(row.get("retries_used") or 0),
+        "retries_exhausted_at": list(row.get("retries_exhausted_at") or []),
     }
 
     telemetry_path.parent.mkdir(parents=True, exist_ok=True)
@@ -185,6 +187,8 @@ def write_verse_telemetry(
             "plan_hit": plan_hit,
             "timestamp": ts,
             "text": bar_text,
+            "retries_used": int(b.get("retries_used") or 0),
+            "retries_exhausted_at": list(b.get("retries_exhausted_at") or []),
         }
         written.append(write_bar_telemetry(row, telemetry_path=telemetry_path))
 
@@ -210,9 +214,21 @@ def read_telemetry(limit: int = 50, telemetry_path: Path = TELEMETRY_PATH) -> li
     return rows[-limit:] if limit > 0 else rows
 
 
+def bar_telemetry_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep formal per-bar rows. Retrieval-fallback events stay out of the rates."""
+    kept = []
+    for row in rows:
+        if row.get("event") == "retrieval_fallback":
+            continue
+        if "generation_id" not in row or "bar_index" not in row:
+            continue
+        kept.append(row)
+    return kept
+
+
 def get_telemetry_stats(telemetry_path: Path = TELEMETRY_PATH) -> dict[str, Any]:
-    """Computes aggregate analytics and gate metrics across all logged telemetry rows."""
-    rows = read_telemetry(limit=0, telemetry_path=telemetry_path)
+    """Computes aggregate analytics and gate metrics across formal per-bar rows."""
+    rows = bar_telemetry_rows(read_telemetry(limit=0, telemetry_path=telemetry_path))
     total_bars = len(rows)
     if total_bars == 0:
         return {

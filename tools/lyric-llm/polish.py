@@ -352,6 +352,8 @@ def verify_grid_landings(
     target_beat_syl = eff / 4.0
     target_min = max(1, int(math.floor(target_beat_syl) - 1))
     target_max = int(math.ceil(target_beat_syl) + 1)
+    # 9-19 is one line of a 4-line block. Commas are not a gate in that band.
+    block_line = 9 <= eff <= 19
 
     bar_results = []
     failed_indices = []
@@ -372,6 +374,26 @@ def verify_grid_landings(
             end_word = toks[-1] if toks else ""
 
         beat_syllables = [count_cmu_syllables(p, cmu) for p in raw_parts]
+        line_syl = count_cmu_syllables(clean_line, cmu)
+
+        if block_line:
+            in_band = 9 <= line_syl <= 19
+            bar_info = {
+                "index": idx + 1,
+                "text": text,
+                "end_word": end_word,
+                "phrase_count": len(raw_parts),
+                "beat_phrases": raw_parts,
+                "beat_syllables": beat_syllables,
+                "off_grid_beats": [],
+                "violation_count": 0 if in_band else 1,
+                "passed": in_band,
+                "violation_desc": "On-grid" if in_band else f"Line is {line_syl} syl, outside 9-19",
+            }
+            bar_results.append(bar_info)
+            if not in_band:
+                failed_indices.append(idx)
+            continue
 
         violations = []
         for k in range(4):
@@ -467,14 +489,15 @@ def rewrite_off_grid_bar(
 ) -> tuple[str, bool]:
     """Targeted single-bar rewrite to bring an off-grid bar onto the 4x4 Quadrasonic grid.
 
-    Enforces:
-      1. Exactly 3 commas (4 substantive beat phrases).
-      2. Each beat phrase between target_min and target_max syllables.
-      3. Strict preservation of target_word at the end of Beat 4.
+    On a 9-19 syllable block line, commas are optional and the line is returned as written.
+    The 4-comma rewrite applies only when effective_syl is outside that band.
 
     Returns (rewritten_line, passed_grid).
     """
     import re
+
+    if 9 <= int(effective_syl or 0) <= 19:
+        return bar_text, True
 
     if cmu is None:
         cmu = _get_cmu()
@@ -855,13 +878,13 @@ Whenever NoCap is selected or blended:
 - Weave in brilliant homophones and double meanings (e.g. steel/steal, piece/peace, plain/plane, cell/sell, rows/rose, knight/night, bank/chase).
 - Ensure the setup naturally activates both senses.
 {taste_section}
-=== 8. STRICT GENERATION RULES (MOVE 5 EDIT-THIS-LINE MANDATES) ===
+=== 8. STRICT GENERATION RULES (REWRITE THE LINE) ===
 1. Exact Bar Count: Output EXACTLY {bars_count} lines of lyrics, one bar per line.
-2. EDIT THIS LINE, DO NOT REWRITE: You are assigned authentic catalog foundation lines. You must edit them lightly (swap AT MOST 1 to 3 words, under 20-30% of words). 80%+ of the line MUST remain the artist's original vocabulary and rhythm.
-3. PRESERVE THE EXACT END-WORD: Keep the end word of each foundation line exactly. Never substitute generic filler words.
-4. PRESERVE RHYTHM & COMMAS: Preserve the exact comma cadence and syllable count (±1) of each foundation line.
-5. PRESERVE INTERNAL RHYMES: Keep all internal rhymes, vowel assonances, and rhythmic pockets intact.
-6. RETURN UNCHANGED IF UNABLE TO FIT: If you cannot fit the user's theme without breaking these rules, return the catalog foundation line completely UNCHANGED. The catalog line is the quality floor.
+2. REWRITE THE LINE: Write a new sentence in this artist's voice about the same situation. Do not keep the catalog sentence. Do not swap one to three words. The catalog line is a scene reference, not the lyric.
+3. NEW ENDING: End on the word the new sentence means. Do not keep the catalog end word just to match it.
+4. LINE LENGTH: Each line is 9-19 syllables. Commas are optional. Do not add commas to split a line. A line of 9-11 syllables stays one line.
+5. SAY A REAL THING: A plain sentence with a real object, place, or person. No slogan and no word salad.
+6. DO NOT RETURN THE CATALOG LINE: A copied line, or a line that only changes a synonym, is a failed rewrite. Write the new sentence.
 
 === 8B. MOVE 6 INNER-RHYME & STRUCTURAL MANDATES (PER BAR) ===
 • Every single bar MUST contain at least 2 distinct inner rhymes BEFORE the end word.
@@ -869,10 +892,10 @@ Whenever NoCap is selected or blended:
 • Example (Beat 1 setup / Beat 2 same-vowel rhyme): "Penthouse is large, gotta fast car" — large/car.
 • Example (Beat 1 / Beat 3): "She is a stylist, date has been lavish" — stylist/lavish (slant).
 • Cap at 4 inner rhymes to prevent tongue-twister runaway while preserving natural trap bounce.
-• Comma Count: Must equal the retrieved anchor's comma count (or exactly 3 commas for 4x4 meter).
-• Syllables: Must be within ±1 of target syllable count.
+• Commas are optional on a 9-19 syllable line. Do not fail or rewrite that line for a missing comma. A 9-11 syllable line stays whole.
+• Syllables: a block line is 9-19 syllables.
 
-7. Sustained Comma-Segmented Cadence: When generating lines, maintain distinct comma-delimited pockets with consistent syllable counts per pocket (e.g. 4+4+4+4 or 5+5+5+5).
+7. Do not force comma pockets on a line of 9-19 syllables. Keep a comma only when the source line already has it.
 8. ABAB Inner Rhyme Level:
    - Segment 1 ends on Rhyme A,
    - Segment 2 ends on Rhyme B,
@@ -964,6 +987,7 @@ def generate_frontier_bars_v2(
     plan: dict = None,
     generation_id: str = "",
     use_cache: bool = True,
+    max_retries: int = None,
 ) -> dict:
     """Full V2/V3 generation pipeline: executes Retrieve & Remix over authentic catalog lines with dynamic edit cap."""
     t0 = time.time()
@@ -988,7 +1012,9 @@ def generate_frontier_bars_v2(
     blend_albums = DEFAULT_CHOSEN_ALBUMS.get(blend, []) if blend else []
 
     # Task L: Prompt & Params Cache Lookup
-    from prompt_cache import canonical_cache_params, compute_cache_key, get_cached_verse, save_cached_verse
+    from prompt_cache import canonical_cache_params, compute_cache_key, eval_disables_cache, get_cached_verse, save_cached_verse
+    if eval_disables_cache():
+        use_cache = False
     cache_params = canonical_cache_params(
         engine="v3",
         voice=voice,
@@ -1158,22 +1184,14 @@ def generate_frontier_bars_v2(
     for i, cat in enumerate(retrieved_catalog_bars):
         target_artist = bar_artists[i]
         if cat:
-            bar_cap = get_dynamic_cap(cat, base_cap=base_cap)
-            cat_toks = tokenize(normalize(cat["text"]))
-            cap_percent = int(bar_cap * 100)
-            cap_tokens = max(2, int(len(cat_toks) * bar_cap))
-            comma_count = cat["text"].count(",")
-            inner_matches = cat.get("inner_rhymes") or []
-            inner_desc = f"positions: {inner_matches}" if inner_matches else "all internal assonance"
             retrieval_text_blocks.append(
-                f"Bar {i+1:02d} [{target_artist}] — EDIT THIS LINE, do not rewrite:\n"
-                f"\"{cat['text']}\"\n"
+                f"Bar {i+1:02d} [{target_artist}] — REWRITE THIS LINE:\n"
+                f"Scene reference, not the lyric: \"{cat['text']}\"\n"
                 f"Rules:\n"
-                f"  • Keep the end word \"{cat['end_word']}\" exactly.\n"
-                f"  • You may change AT MOST {cap_tokens} words ({cap_percent}%).\n"
-                f"  • Preserve the rhythm — same comma count ({comma_count}), same syllable count ±1 ({cat['syllables']}).\n"
-                f"  • Preserve any internal rhyme ({inner_desc}).\n"
-                f"  • If you can't fit the user's theme without breaking these rules, return the catalog line unchanged."
+                f"  • Write a new sentence. Do not keep this wording.\n"
+                f"  • Do not keep the end word \"{cat['end_word']}\" unless the new sentence needs that word.\n"
+                f"  • 9-19 syllables. Do not add commas to split the line.\n"
+                f"  • A copied line, or a one-word swap, is a failed rewrite."
             )
         else:
             couplet_idx = i // 2
@@ -1188,20 +1206,20 @@ def generate_frontier_bars_v2(
             )
 
     user_instructions.append(
-        f"=== CORE MANDATE: EDIT THIS LINE, DO NOT REWRITE (MOVE 5) ===\n"
-        f"The model MUST NOT write original lines from scratch. Every phrase, rhythm, and flow must be grounded in {voice}'s catalog ({', '.join(user_albums)})"
-        + (f" and {blend}'s catalog ({', '.join(blend_albums)})" if blend else "")
-        + ".\n\n"
-        f"Assigned Catalog Foundation Lines:\n"
+        f"=== CORE MANDATE: REWRITE THE LINE ===\n"
+        f"Write new sentences in {voice}'s voice"
+        + (f" and {blend}'s voice" if blend else "")
+        + f". The catalog lines below are the situation. They are not the lyric.\n\n"
+        f"Scene references:\n"
         + "\n\n".join(retrieval_text_blocks)
         + "\n\n"
-        f"CRITICAL REMIX MANDATES:\n"
-        f"1. EDIT THIS LINE, DO NOT REWRITE: You may swap AT MOST 1 to 3 words from each foundation line to touch upon the user's theme. 80% to 90% of the line MUST remain the artist's authentic original vocabulary and rhythm.\n"
-        f"2. KEEP END-WORD EXACTLY: Preserve the assigned end word exactly for each bar. NEVER substitute generic filler words.\n"
-        f"3. PRESERVE RHYTHM & COMMAS: Preserve the exact comma count and syllable count (±1 syllable) of each foundation line.\n"
-        f"4. PRESERVE INTERNAL RHYMES: Keep all internal assonances and internal rhyme positions intact.\n"
-        f"5. RETURN UNCHANGED IF UNABLE TO FIT: If you cannot incorporate the theme within the word change cap, return the catalog foundation line completely UNCHANGED. The catalog line is the absolute quality floor.\n"
-        f"6. NO ESSAYS OR EXPANSIONS: Do not add extra setup phrases or expand foundation lines."
+        f"CRITICAL REWRITE MANDATES:\n"
+        f"1. REWRITE THE LINE: A new sentence. Do not swap 1 to 3 words. Do not keep 80% of the catalog wording.\n"
+        f"2. NEW ENDING: End on the word the new sentence means.\n"
+        f"3. LINE LENGTH: 9-19 syllables. Commas are optional. Do not add commas to split a line.\n"
+        f"4. SAY A REAL THING: A plain sentence with a real object, place, or person.\n"
+        f"5. DO NOT RETURN THE CATALOG LINE: A copy or a synonym swap is a failed rewrite.\n"
+        f"6. ONE LINE: Do not turn one reference into a paragraph."
     )
 
     if scratchpad_bars:
@@ -1215,24 +1233,17 @@ def generate_frontier_bars_v2(
         user_instructions.append(f"Custom Studio Theme/Mood: {topic_hint}")
 
     user_instructions.append(
-        "=== FEW-SHOT DEMONSTRATIONS: LIGHT EDITING OF CATALOG LINES (MOVE 5) ===\n"
-        "Study these demonstrations carefully. Notice how AT MOST 1 to 2 words are swapped to fit the user's theme, while the rhythm, comma structure, syllable count, and exact end word are strictly preserved:\n\n"
-        "Demonstration 1 (Theme: 'late night studio work'):\n"
-        "- Foundation Line: \"on the block, stackin' knots, pushin' weight, in the mercedes\"\n"
-        "- Light-Edited Output: in the lab, stackin' knots, mixin' tracks, in the mercedes\n"
-        "  (Notice: swapped 2 words 'on the block' -> 'in the lab' and 'pushin' weight' -> 'mixin' tracks'. Exact comma count preserved (3 commas), identical syllable count, end word 'mercedes' kept exactly!)\n\n"
-        "Demonstration 2 (Theme: 'loyalty and trust'):\n"
-        "- Foundation Line: \"im on my grind, standin' so tall, against the odds, wont drop to my knees\"\n"
-        "- Light-Edited Output: im with my team, standin' so tall, against the odds, wont drop to my knees\n"
-        "  (Notice: swapped 1 word 'grind' -> 'team'. The entire rhythm, internal rhymes, and landing word 'knees' are preserved!)\n\n"
-        "Demonstration 3 (Theme: 'private jet travel'):\n"
-        "- Foundation Line: \"stackin' some chips, fliping the script, in it then dip, fly overseas\"\n"
-        "- Light-Edited Output: countin' some chips, fliping the script, in it then dip, fly overseas\n"
-        "  (Notice: swapped 1 word 'stackin'' -> 'countin''. Cadence and rhymes identical!)\n\n"
-        "Demonstration 4 (Theme does not fit without breaking rhythm/rhyme):\n"
-        "- Foundation Line: \"rollin 10 deep, tinted and creep, aint catching no sleep, audi it beeps\"\n"
-        "- Light-Edited Output: rollin 10 deep, tinted and creep, aint catching no sleep, audi it beeps\n"
-        "  (Notice: returned completely UNCHANGED. The catalog foundation line is the quality floor!)\n"
+        "=== FEW-SHOT DEMONSTRATIONS: REWRITE THE LINE ===\n"
+        "The reference is the situation. The output is a new sentence. A synonym swap is a miss.\n\n"
+        "Demonstration 1 (situation: late night studio):\n"
+        "- Scene reference: \"on the block, stackin' knots, pushin' weight, in the mercedes\"\n"
+        "- Rewrite: The booth light stayed on while the engineer ran the hook back\n\n"
+        "Demonstration 2 (situation: loyalty):\n"
+        "- Scene reference: \"im on my grind, standin' so tall, against the odds, wont drop to my knees\"\n"
+        "- Rewrite: My brother pulled up with the bail money before I called\n\n"
+        "Demonstration 3 (situation: a flight out):\n"
+        "- Scene reference: \"stackin' some chips, fliping the script, in it then dip, fly overseas\"\n"
+        "- Rewrite: Boarding pass said Paris and the bag was already in the trunk\n"
     )
 
     couplet_guidance = []
@@ -1251,28 +1262,20 @@ def generate_frontier_bars_v2(
         w1 = cat1["end_word"] if cat1 else tw1
         w2 = cat2["end_word"] if cat2 else tw2
         if cat1:
-            cat1_toks = tokenize(normalize(cat1["text"]))
-            cap1 = max(2, int(len(cat1_toks) * get_dynamic_cap(cat1, base_cap=base_cap)))
             couplet_guidance.append(
-                f"Bar {b_start:02d} [{a1}]: EDIT THIS LINE: \"{cat1['text']}\"\n"
-                f"   • Keep end word \"{w1}\" exactly.\n"
-                f"   • Swap AT MOST {cap1} words to touch user's theme.\n"
-                f"   • Preserve comma count ({cat1['text'].count(',')}) and syllable count ±1 ({cat1['syllables']}).\n"
-                f"   • Preserve internal rhymes. If unable to fit theme without violating rules, return line unchanged."
+                f"Bar {b_start:02d} [{a1}]: REWRITE THIS LINE. Scene only: \"{cat1['text']}\"\n"
+                f"   • New sentence. Do not keep the catalog wording or the end word \"{w1}\".\n"
+                f"   • 9-19 syllables. Do not add commas to split it."
             )
         else:
             couplet_guidance.append(
                 f"Bar {b_start:02d} [{a1} - {m_name}]: Fallback couplet bar ending on '{w1}'."
             )
         if cat2:
-            cat2_toks = tokenize(normalize(cat2["text"]))
-            cap2 = max(2, int(len(cat2_toks) * get_dynamic_cap(cat2, base_cap=base_cap)))
             couplet_guidance.append(
-                f"Bar {b_end:02d} [{a2}]: EDIT THIS LINE: \"{cat2['text']}\"\n"
-                f"   • Keep end word \"{w2}\" exactly.\n"
-                f"   • Swap AT MOST {cap2} words to touch user's theme.\n"
-                f"   • Preserve comma count ({cat2['text'].count(',')}) and syllable count ±1 ({cat2['syllables']}).\n"
-                f"   • Preserve internal rhymes. If unable to fit theme without violating rules, return line unchanged."
+                f"Bar {b_end:02d} [{a2}]: REWRITE THIS LINE. Scene only: \"{cat2['text']}\"\n"
+                f"   • New sentence. Do not keep the catalog wording or the end word \"{w2}\".\n"
+                f"   • 9-19 syllables. Do not add commas to split it."
             )
         else:
             couplet_guidance.append(
@@ -1281,12 +1284,12 @@ def generate_frontier_bars_v2(
 
     user_instructions.append(f"Write ALL {bars_count} BARS line by line (DO NOT STOP AT 4 BARS):\n" + "\n".join(couplet_guidance[:bars_count]))
     user_instructions.append(
-        "CRITICAL MOVE 5 & 6 MANDATES:\n"
-        "1. EDIT THIS LINE, DO NOT REWRITE: You may swap AT MOST 1 to 3 words from each foundation line. 80%+ of the line MUST remain the artist's authentic original vocabulary and rhythm.\n"
-        "2. PRESERVE EXACT END-WORD: Every bar must resolve strictly on the assigned end-word!\n"
-        "3. PRESERVE RHYTHM & COMMAS: Preserve the exact comma count and syllable count (±1) of each foundation line.\n"
-        "4. AT LEAST 2 INNER RHYMES PER BAR: Every single bar MUST contain at least 2 internal rhyming content words (same-vowel assonance or slant rhyme) before the end word.\n"
-        "5. RETURN UNCHANGED IF UNABLE TO FIT: If you cannot incorporate the theme within the word change cap, return the catalog foundation line completely UNCHANGED.\n"
+        "CRITICAL REWRITE MANDATES:\n"
+        "1. REWRITE THE LINE: A new sentence. Do not swap 1 to 3 words. Do not keep 80% of the catalog line.\n"
+        "2. NEW ENDING: End on the word the new sentence means.\n"
+        "3. LINE LENGTH: 9-19 syllables. Do not add commas to split a line.\n"
+        "4. SAY A REAL THING: A plain sentence with a real object, place, or person.\n"
+        "5. DO NOT RETURN THE CATALOG LINE: A copy or a synonym swap is a failed rewrite.\n"
         "6. OUTPUT FORMAT: Output ONLY the raw lyric lines, 1 bar per line, no Bar labels, no quotes."
     )
 
@@ -1386,19 +1389,7 @@ def generate_frontier_bars_v2(
         cat = retrieved_catalog_bars[idx] if idx < len(retrieved_catalog_bars) else None
         final_bars.append(cat["text"] if cat else "stackin' the cash, ridin' the wave")
 
-    # Move 5: Post-generation Token Levenshtein Hard Check & Catalog Floor Enforcement
-    for i in range(len(final_bars)):
-        cat = retrieved_catalog_bars[i] if i < len(retrieved_catalog_bars) else None
-        if cat and cat.get("text"):
-            cat_toks = tokenize(normalize(cat["text"]))
-            remix_toks = tokenize(normalize(final_bars[i]))
-            bar_cap = get_dynamic_cap(cat, base_cap=base_cap)
-            cap_tokens = max(2, int(len(cat_toks) * bar_cap))
-            dist = token_levenshtein_distance(cat_toks, remix_toks)
-            target_w = cat.get("end_word", "").lower()
-            remix_end = remix_toks[-1].lower() if remix_toks else ""
-            if dist > cap_tokens or (target_w and remix_end != target_w):
-                final_bars[i] = cat["text"]
+    # A rewrite stays. Do not paste the catalog sentence back over it.
 
     elapsed = round(time.time() - t0, 2)
 
@@ -1406,6 +1397,8 @@ def generate_frontier_bars_v2(
 
     # Task P: Named-Entity Leak Guard Verification & Auto-Retry
     from entity_guard import guard_verse, rewrite_leaked_entity_bar
+    from retry_budget import RetryBudget
+    retry_budget = RetryBudget(max_retries)
     entity_eval_initial = guard_verse(voice=voice, bars=final_bars, bar_artists=bar_artists)
     entity_retries_done = 0
 
@@ -1421,6 +1414,8 @@ def generate_frontier_bars_v2(
 
             # Auto-retry up to 2 times with the offending token listed
             for _ in range(2):
+                if not retry_budget.consume("entity", failed_idx + 1):
+                    break
                 entity_retries_done += 1
                 rewritten_line, passed_guard = rewrite_leaked_entity_bar(
                     bar_text=final_bars[failed_idx],
@@ -1487,6 +1482,8 @@ def generate_frontier_bars_v2(
             for _ in range(2):
                 if total_retries_done >= max_global_retries:
                     break
+                if not retry_budget.consume("grid", failed_idx + 1):
+                    break
                 total_retries_done += 1
                 bar_retry_counts[failed_idx] += 1
 
@@ -1526,7 +1523,11 @@ def generate_frontier_bars_v2(
             cmu=cmu,
         )
 
-        if not audit["passed"] and total_retries_done < max_global_retries:
+        if (
+            not audit["passed"]
+            and total_retries_done < max_global_retries
+            and retry_budget.consume("inner-rhyme", i + 1)
+        ):
             total_retries_done += 1
             structure_retries_done += 1
             bar_retry_counts[i] += 1
@@ -1598,8 +1599,9 @@ def generate_frontier_bars_v2(
         toks = tokenize(normalize(ln))
         end_w = toks[-1] if toks else ""
 
+        # Catalog end-word forcers only run when there is no catalog line to rewrite.
         # 1. If target catalog word is in Beat 3 instead of Beat 4, swap them so the landing rhyme hits Beat 4
-        if len(beat_info["groups"]) >= 4 and target_word.lower() in beat_info["groups"][2].lower() and target_word.lower() not in beat_info["groups"][3].lower():
+        if not cat_match and len(beat_info["groups"]) >= 4 and target_word.lower() in beat_info["groups"][2].lower() and target_word.lower() not in beat_info["groups"][3].lower():
             p3 = beat_info["groups"][2]
             p4 = beat_info["groups"][3]
             beat_info["groups"][2] = p4
@@ -1627,7 +1629,7 @@ def generate_frontier_bars_v2(
             target_word = cat_match["end_word"].lower()
 
         # 2. If end word is in generic blacklist OR not in artist catalog, enforce the authentic artist catalog end word
-        if (end_w.lower() in GENERIC_END_RHYME_BLACKLIST or (end_w.lower() not in catalog_words and end_w.lower() != target_word.lower()) or not end_w) and len(beat_info["groups"]) >= 4:
+        if not cat_match and (end_w.lower() in GENERIC_END_RHYME_BLACKLIST or (end_w.lower() not in catalog_words and end_w.lower() != target_word.lower()) or not end_w) and len(beat_info["groups"]) >= 4:
             b4_words = beat_info["groups"][3].split()
             if len(b4_words) >= 2:
                 prefix = " ".join(b4_words[:-1])
@@ -1645,7 +1647,7 @@ def generate_frontier_bars_v2(
             end_w = toks[-1] if toks else target_word
 
         # 3. Ensure Beat 4 is never a single orphan word
-        if len(beat_info["groups"]) >= 4 and len(beat_info["groups"][3].split()) <= 1 and end_w:
+        if not cat_match and len(beat_info["groups"]) >= 4 and len(beat_info["groups"][3].split()) <= 1 and end_w:
             cat_tokens = tokenize(normalize(cat_match["text"])) if cat_match else []
             if len(cat_tokens) >= 2 and cat_tokens[-1].lower() == end_w.lower():
                 beat_info["groups"][3] = f"{cat_tokens[-2]} {end_w}"
@@ -1656,20 +1658,7 @@ def generate_frontier_bars_v2(
             ln = beat_info["quad_formatted"]
             toks = tokenize(normalize(ln))
 
-        # Move 5: Final Catalog Floor & Token-Levenshtein Hard Cap Check
-        if cat_match and cat_match.get("text"):
-            cat_toks = tokenize(normalize(cat_match["text"]))
-            remix_toks = tokenize(normalize(ln))
-            bar_cap = get_dynamic_cap(cat_match, base_cap=base_cap)
-            cap_tokens = max(2, int(len(cat_toks) * bar_cap))
-            dist = token_levenshtein_distance(cat_toks, remix_toks)
-            target_w = cat_match.get("end_word", "").lower()
-            remix_end = remix_toks[-1].lower() if remix_toks else ""
-            if dist > cap_tokens or (target_w and remix_end != target_w):
-                ln = cat_match["text"]
-                toks = tokenize(normalize(ln))
-                end_w = toks[-1] if toks else target_w
-                beat_info = parse_beat_groups(ln, cmu)
+        # A line that moved stays. Never replace it with the catalog sentence.
 
         beat_info["beat_syllables"] = [count_cmu_syllables(g, cmu) if g else 0 for g in beat_info["groups"]]
         beat_info["total_syllables"] = sum(beat_info["beat_syllables"])
@@ -1901,6 +1890,8 @@ def generate_frontier_bars_v2(
         "stem_alignment": stem_grid,
         "elapsed_sec": elapsed,
         "raw_text": "\n".join(final_bars),
+        "retries_used": retry_budget.used,
+        "retries_exhausted_at": list(retry_budget.exhausted_at),
     }
 
     # Task L: Save generated verse to prompt & params cache

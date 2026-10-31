@@ -1,0 +1,6 @@
+# Generated locally — never commit training data, adapters, or fused models
+data/
+adapters/
+*-fused/
+*.gguf
+*.safetensors

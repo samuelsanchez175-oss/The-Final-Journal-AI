@@ -1,0 +1,173 @@
+{
+  "n_solo_lines": 30553,
+  "n_songs": 721,
+  "strict_hook_lines": 75,
+  "strict_hook_rate": 0.0025,
+  "fuzzy_hook_lines": 293,
+  "fuzzy_hook_rate": 0.0096,
+  "fuzzy_cluster_size_hist": {
+    "3": 71,
+    "4": 16,
+    "5": 2,
+    "6": 1
+  },
+  "songs_with_hook_strict": 19,
+  "songs_with_hook_fuzzy": 73,
+  "fuzzy_threshold": 0.8,
+  "sample_hook_clusters": [
+    {
+      "song": "1:59",
+      "cluster_size": 4,
+      "centroid_norm": "boy what you gon do with it",
+      "variant_lines": [
+        "Boy, what you gon' do with it? (Shh)",
+        "Boy, what you gon' do with it? Yeah",
+        "Boy, what you gon' do?",
+        "What you gon' do with it?"
+      ]
+    },
+    {
+      "song": "3 Headed Snake",
+      "cluster_size": 5,
+      "centroid_norm": "aimin at a date aimin at a wraith aimin at a gate mmh",
+      "variant_lines": [
+        "(Aimin' at a date, aimin' at a Wraith, aimin' at a gate, mmh",
+        "Aimin' at a Wraith, aimin' at a gate, mmh (Aimin' at a gate)",
+        "Aimin' at a date, aimin' at a Wraith, aimin' at a gate)",
+        "Aimin' at a date, aimin' at a Wraith, aimin' at a gate"
+      ]
+    },
+    {
+      "song": "BLINDFOLD",
+      "cluster_size": 3,
+      "centroid_norm": "gunnaaria label cover art for skybox by gunna",
+      "variant_lines": [
+        "| Gunnaaria-label: Cover art for SKYBOX by Gunna |",
+        "| Gunnaaria-label: Cover art for TOP FLOOR by Gunna |",
+        "| aria-label: Cover art for FAR by Gunna |"
+      ]
+    },
+    {
+      "song": "Bachelor",
+      "cluster_size": 3,
+      "centroid_norm": "we fuck then we break up",
+      "variant_lines": [
+        "We fuck, then, we break up",
+        "We fuck, then, we make up",
+        "We fuck, then, we break up and make up"
+      ]
+    },
+    {
+      "song": "Back and Forth",
+      "cluster_size": 3,
+      "centroid_norm": "ain t going back and forth with these hoes",
+      "variant_lines": [
+        "Ain't going back and forth with these hoes (Uh)",
+        "Go back and forth with these hoes (Back and forth)",
+        "I go back and forth with these shows (Ooh)"
+      ]
+    },
+    {
+      "song": "Banking On Me",
+      "cluster_size": 4,
+      "centroid_norm": "don t wanna get tired of you",
+      "variant_lines": [
+        "Don't wanna get tired of you (Ooh",
+        "I don't wanna get tired of you (Huh)",
+        "don't wanna get tired of you (Ooh)",
+        "don't wanna get tired of you)"
+      ]
+    },
+    {
+      "song": "Big",
+      "cluster_size": 3,
+      "centroid_norm": "blame it on the city how i m ballin",
+      "variant_lines": [
+        "Blame it on the city how I'm ballin' (How I'm ballin')",
+        "Bl-blame it on the city how I'm ballin' (How I'm ballin')",
+        "Blame it on the city how I'm ballin', yeah (How I'm ballin')"
+      ]
+    },
+    {
+      "song": "Big",
+      "cluster_size": 3,
+      "centroid_norm": "when we run through",
+      "variant_lines": [
+        "When we run through, yeah, yeah",
+        "The way we run through, yeah, yeah",
+        "W-when we run through, yeah, yeah"
+      ]
+    },
+    {
+      "song": "Bitch I’m Packin’",
+      "cluster_size": 4,
+      "centroid_norm": "got the jatt on me",
+      "variant_lines": [
+        "Got the jatt on me (Yeah)",
+        "Got the racks on me (Got the racks on me)",
+        "Got the stack on me (Got the stack on me)",
+        "Got the strap on me (Got the strap on me)"
+      ]
+    },
+    {
+      "song": "Cash War",
+      "cluster_size": 3,
+      "centroid_norm": "white range rover with the beige guts",
+      "variant_lines": [
+        "White Range Rover with the beige guts",
+        "White Range Rover with the beige guts (Beige)",
+        "White Range Rover with the beige guts (Range)"
+      ]
+    },
+    {
+      "song": "Chanel (Go Get It)",
+      "cluster_size": 3,
+      "centroid_norm": "anything she want she can get",
+      "variant_lines": [
+        "Anything she want, she can get",
+        "Oh, anything she want, she can get (She want, she can get it)",
+        "Anything she want, she can get it"
+      ]
+    },
+    {
+      "song": "Chanel (Go Get It)",
+      "cluster_size": 3,
+      "centroid_norm": "she want chanel go get it",
+      "variant_lines": [
+        "She want Chanel, go get it",
+        "She want a Birkin, go get it",
+        "She want Chanel, she can get it"
+      ]
+    },
+    {
+      "song": "Chanel (Go Get It)",
+      "cluster_size": 3,
+      "centroid_norm": "hop out the benz she gettin it",
+      "variant_lines": [
+        "Hop out the Benz, she gettin' it",
+        "Hop out the Lamb', she gettin' it",
+        "Hop out the coupe, she get it"
+      ]
+    },
+    {
+      "song": "Chrome heart Cross",
+      "cluster_size": 3,
+      "centroid_norm": "iced out cross with the shooters and the robbers",
+      "variant_lines": [
+        "Iced out cross, with the shooters and the robbers (Woo)",
+        "Iced out cross, with the shooters and thе robbers (Iced out cross)",
+        "Iced out cross on the shooters and the robbers"
+      ]
+    },
+    {
+      "song": "Clear Your Mind",
+      "cluster_size": 3,
+      "centroid_norm": "watch for the envy they smile and fake act like they wit it but trust me i know they ain t wit it",
+      "variant_lines": [
+        "Watch for the envy, they smile and fake act like they wit it, but trust me I know they ain't wit it",
+        "I spot an envy, that smile is fake, act like they wit it, but trust me I know they ain't wit it",
+        "Watch for the envy, that smile and fake act like they wit it, but trust me I know they ain't wit it"
+      ]
+    }
+  ]
+}

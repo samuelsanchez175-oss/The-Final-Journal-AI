@@ -19,6 +19,10 @@ struct RapDeckView: View {
     var criticError: String? = nil
     var onRetryCritic: () -> Void = {}
     var onTapLine: (RapSuggestion, Int) -> Void = { _, _ in }
+    /// Per-suggestion liked / disliked line indices (non-empty-line index space), so each
+    /// bar can render its like/dislike state. Keyed by suggestion id.
+    var likedLines: [UUID: Set<Int>] = [:]
+    var dislikedLines: [UUID: Set<Int>] = [:]
 
     var body: some View {
         VStack(spacing: 8) {
@@ -29,6 +33,17 @@ struct RapDeckView: View {
                 }
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
+            .onChange(of: index) { _, newIndex in
+                // Swiping onto a generation with a standout "Model G moment" gets a distinct
+                // sparkle; everything else gets the usual light page tick.
+                let hasMoment = generations.indices.contains(newIndex)
+                    && generations[newIndex].suggestions.contains { ($0.modelGMomentLineIndices?.isEmpty == false) }
+                if hasMoment {
+                    HapticFeedbackManager.shared.play(.sparkle)
+                } else {
+                    HapticFeedbackManager.shared.fire(.impact(.light))
+                }
+            }
 
             if generations.count > 1 {
                 pageIndicator
@@ -51,7 +66,9 @@ struct RapDeckView: View {
             criticLoading: isCurrent ? criticLoading : false,
             criticError: isCurrent ? criticError : nil,
             onRetryCritic: onRetryCritic,
-            onTapLine: onTapLine
+            onTapLine: onTapLine,
+            likedLines: likedLines,
+            dislikedLines: dislikedLines
         )
     }
 

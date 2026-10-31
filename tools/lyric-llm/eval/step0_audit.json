@@ -1,0 +1,69 @@
+{
+  "verses_total": 188,
+  "verses_scored": 158,
+  "verse_score_mean": 2.83,
+  "verse_score_dist": {
+    "1": 33,
+    "2": 66,
+    "3": 21,
+    "4": 11,
+    "5": 7,
+    "6": 5,
+    "7": 10,
+    "8": 5
+  },
+  "engines": {
+    "sonnet": 14,
+    "haiku": 12,
+    "opus": 12,
+    "gemini/gemini-3.1-flash-lite": 65,
+    "gemini/gemini-2.5-flash-lite": 15,
+    "frontier_v4": 20,
+    "catalog_block": 50
+  },
+  "engine_score_means": {
+    "haiku": 2.0,
+    "opus": 2.0,
+    "gemini/gemini-3.1-flash-lite": 2.06,
+    "gemini/gemini-2.5-flash-lite": 2.2,
+    "sonnet": 7.0,
+    "frontier_v4": 2.65,
+    "catalog_block": 4.02
+  },
+  "verse_tags": {
+    "bad_rhyme": 83,
+    "off_flow": 63,
+    "no_sense": 79,
+    "too_copied": 7,
+    "off_topic": 33,
+    "cringe": 52
+  },
+  "bars_total": 320,
+  "bar_rewrites": 72,
+  "bar_keepers": 0,
+  "bar_vote_dist": {
+    "1": 144,
+    "-1": 118,
+    "None": 58
+  },
+  "bar_tags": {},
+  "loo19": {
+    "rows": 19,
+    "engines": {
+      "gemini/gemini-2.5-flash-lite": 5,
+      "gemini/gemini-3.1-flash-lite": 5,
+      "haiku": 3,
+      "opus": 3,
+      "sonnet": 3
+    },
+    "tags": {
+      "no_sense": 11,
+      "bad_rhyme": 8,
+      "off_flow": 7,
+      "off_topic": 4,
+      "cringe": 10,
+      "too_copied": 1
+    },
+    "mean": 2.0
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "n_before": 30553,
+  "n_after": 30499,
+  "lines_dropped_empty_after_strip": 54,
+  "old_top_end_words": [
+    [
+      "yeah",
+      1944
+    ],
+    [
+      "it",
+      766
+    ],
+    [
+      "me",
+      467
+    ],
+    [
+      "uh",
+      393
+    ],
+    [
+      "up",
+      314
+    ],
+    [
+      "nah",
+      225
+    ],
+    [
+      "ayy",
+      182
+    ],
+    [
+      "oh",
+      171
+    ],
+    [
+      "woah",
+      166
+    ],
+    [
+      "ooh",
+      158
+    ],
+    [
+      "huh",
+      153
+    ],
+    [
+      "go",
+      151
+    ],
+    [
+      "you",
+      149
+    ],
+    [
+      "skrrt",
+      146
+    ],
+    [
+      "out",
+      146
+    ]
+  ],
+  "new_top_end_words": [
+    [
+      "it",
+      907
+    ],
+    [
+      "me",
+      592
+    ],
+    [
+      "up",
+      283
+    ],
+    [
+      "you",
+      187
+    ],
+    [
+      "out",
+      168
+    ],
+    [
+      "that",
+      145
+    ],
+    [
+      "back",
+      140
+    ],
+    [
+      "bitch",
+      127
+    ],
+    [
+      "baby",
+      127
+    ],
+    [
+      "'em",
+      118
+    ],
+    [
+      "in",
+      117
+    ],
+    [
+      "on",
+      113
+    ],
+    [
+      "off",
+      113
+    ],
+    [
+      "shit",
+      112
+    ],
+    [
+      "her",
+      109
+    ]
+  ],
+  "old_rhyme": {
+    "adjacent_rhyme_hit": 3315,
+    "adjacent_pairs": 24544,
+    "adjacent_rhyme_rate": 0.1351,
+    "one_rime_4bar": 261,
+    "four_bar_blocks": 7360,
+    "one_rime_4bar_rate": 0.0355
+  },
+  "new_rhyme": {
+    "adjacent_rhyme_hit": 3463,
+    "adjacent_pairs": 25148,
+    "adjacent_rhyme_rate": 0.1377,
+    "one_rime_4bar": 229,
+    "four_bar_blocks": 7354,
+    "one_rime_4bar_rate": 0.0311
+  }
+}

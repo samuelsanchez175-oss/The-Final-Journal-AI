@@ -74,16 +74,23 @@ def audit_bar_structure(
     clean_bar = bar_text.strip().strip("\"'`").rstrip(";.")
     clean_anchor = anchor_text.strip().strip("\"'`").rstrip(";.") if anchor_text else ""
 
-    # 1. Comma count check (exact anchor match or Audamar 4x4 meter 3-4 phrase breaks)
+    # 1. Comma count. Optional on a 9-19 syllable block line.
+    #    A 9-11 syllable line is never failed for missing commas.
     bar_commas = clean_bar.count(",")
     expected_commas = clean_anchor.count(",") if clean_anchor else 3
-    comma_passed = (bar_commas == expected_commas) or (bar_commas in (3, 4) and expected_commas in (0, 1, 3, 4))
-
-    # 2. Syllable count check (tolerance within ±1 of anchor or target)
     bar_syl = count_bar_syllables(clean_bar, cmu_dict)
+    comma_optional = 9 <= bar_syl <= 19
+    if comma_optional:
+        comma_passed = True
+    else:
+        comma_passed = (bar_commas == expected_commas) or (bar_commas in (3, 4) and expected_commas in (0, 1, 3, 4))
+
+    # 2. Syllable count. A block line passes when it sits in 9-19.
+    #    Longer bars still use ±1 of the target.
     eff_target_syl = count_bar_syllables(clean_anchor, cmu_dict) if clean_anchor else target_syl
     syl_delta = min(abs(bar_syl - eff_target_syl), abs(bar_syl - target_syl))
-    syl_passed = (syl_delta <= 1)
+    in_block_band = 9 <= bar_syl <= 19 and 9 <= int(target_syl or 0) <= 19
+    syl_passed = (syl_delta <= 1) or in_block_band
 
     # 3. Inner-rhyme detection (distinct content word pairs BEFORE the end word)
     raw_inner = detect_inner_rhymes(clean_bar, cmu_dict)
@@ -145,14 +152,20 @@ def format_structure_rewrite_instruction(
     exp_c = audit["expected_commas"]
     syl = audit["target_syllables"]
     viol_desc = "; ".join(audit["violations"])
+    if 9 <= int(syl or 0) <= 19:
+        comma_line = "  • Commas are optional. Do not insert commas to split a line of 9-19 syllables.\n"
+        syl_line = "  • Keep the line between 9 and 19 syllables.\n"
+    else:
+        comma_line = f"  • Target exactly {exp_c} commas dividing the bar into balanced rhythmic phrases.\n"
+        syl_line = f"  • Syllable count MUST be {syl} ±1.\n"
 
     return (
         f"Bar {bar_index} structural violation: {viol_desc}.\n"
         f"Original: \"{bar_text}\"\n"
         f"Rewrite mandate for {voice}:\n"
         f"  • Preserve the exact end word \"{target_word}\".\n"
-        f"  • Target exactly {exp_c} commas dividing the bar into balanced rhythmic phrases.\n"
-        f"  • Syllable count MUST be {syl} ±1.\n"
+        f"{comma_line}"
+        f"{syl_line}"
         f"  • Add at least {needed_inner} new internal rhymes / same-vowel assonance pairs before the end word.\n"
         f"  • Output ONLY the single rewritten bar."
     )
@@ -169,15 +182,12 @@ def rewrite_structurally_failed_bar(
     call_fn: Optional[Any] = None,
     base_cap: float = 0.30,
 ) -> tuple[str, bool]:
-    """Attempts targeted rewrite of a bar that failed structural audit.
-    If the rewrite satisfies the cap and improves structure, it is accepted.
-    If it breaches the cap or fails to preserve the end word, the anchor line is returned as the quality floor.
+    """Rewrite one bar that failed the structure check.
+
+    The rewritten sentence stays. The catalog line is not pasted back.
     """
     cmu_dict = get_cmu_dict(cmu)
     anchor_text = anchor_dict.get("text", "") if anchor_dict else ""
-    cat_toks = tokenize(normalize(anchor_text)) if anchor_text else []
-    bar_cap = get_dynamic_cap(anchor_dict, base_cap=base_cap) if anchor_dict else base_cap
-    cap_tokens = max(2, int(len(cat_toks) * bar_cap)) if cat_toks else 4
 
     instruction = format_structure_rewrite_instruction(
         bar_index=bar_index,
@@ -206,19 +216,7 @@ def rewrite_structurally_failed_bar(
             rewritten = None
 
     if not rewritten:
-        if anchor_text:
-            return anchor_text, False
         return bar_text, False
-
-    remix_toks = tokenize(normalize(rewritten))
-    remix_end = remix_toks[-1].lower() if remix_toks else ""
-    target_end = target_word.lower()
-
-    if cat_toks:
-        dist = token_levenshtein_distance(cat_toks, remix_toks)
-        # If rewrite breached token Levenshtein cap or changed end word, enforce anchor as floor
-        if dist > cap_tokens or (target_end and remix_end != target_end):
-            return anchor_text, False
 
     new_audit = audit_bar_structure(
         bar_text=rewritten,

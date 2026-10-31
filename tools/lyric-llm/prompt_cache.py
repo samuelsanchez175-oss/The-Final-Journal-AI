@@ -22,6 +22,55 @@ HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent.parent
 OUT = HERE / "out"
 CACHE_DIR = OUT / "cache"
+EVAL_SCRIPTS = {"grade_modelyou.py", "grade_verses.py", "grade_thousand.py"}
+STYLE_GATE = float(os.environ.get("V4_STYLE_GATE", "0.75"))
+
+
+def eval_disables_cache() -> bool:
+    """Eval entrypoints never read or write out/cache."""
+    if os.environ.get("V4_NO_CACHE") == "1":
+        return True
+    return Path(sys.argv[0]).name in EVAL_SCRIPTS
+
+
+def cache_skip_reason(result: Optional[dict[str, Any]]) -> Optional[str]:
+    """Return a skip reason when this verse must not be cached.
+
+    A retry that ran out, a demoted punch, a weak end-word rate, or a style
+    score under the gate keeps the verse out of the cache. Missing fields do
+    not count as a failure.
+    """
+    if not isinstance(result, dict):
+        return None
+    exhausted: list[Any] = list(result.get("retries_exhausted_at") or [])
+    bars = result.get("bars") or []
+    punches: list[float] = []
+    preserved: list[float] = []
+    for bar in bars:
+        if not isinstance(bar, dict):
+            continue
+        extra = bar.get("retries_exhausted_at") or []
+        if extra:
+            exhausted.extend(extra)
+        if "punch_demoted" in bar:
+            punches.append(1.0 if bar.get("punch_demoted") else 0.0)
+        if "end_word_preserved" in bar:
+            preserved.append(1.0 if bar.get("end_word_preserved") else 0.0)
+    if exhausted:
+        return "retry_exhausted"
+    if punches and (sum(punches) / len(punches)) > 0:
+        return "punch_demoted"
+    if preserved and (sum(preserved) / len(preserved)) < 0.9:
+        return "end_word_preserved"
+    if "style_score" in result and result.get("style_score") is not None:
+        try:
+            if float(result["style_score"]) < STYLE_GATE:
+                return "style_score"
+        except (TypeError, ValueError):
+            pass
+    if result.get("gates_failed"):
+        return "gate_failed"
+    return None
 
 
 def canonical_cache_params(
@@ -120,10 +169,18 @@ def save_cached_verse(
     retrieved_catalog_bars: Optional[list[Any]] = None,
     plan: Optional[dict[str, Any]] = None,
     cache_dir: Path = CACHE_DIR,
-) -> Path:
+) -> Optional[Path]:
     """
     Atomically writes the verse result, retrieved catalog bars, and plan to disk.
+    Returns None and logs [cache] skip when the quality gate refuses the verse.
     """
+    if eval_disables_cache():
+        print("[cache] skip reason=eval", file=sys.stderr)
+        return None
+    reason = cache_skip_reason(result)
+    if reason:
+        print(f"[cache] skip reason={reason}", file=sys.stderr)
+        return None
     cache_dir.mkdir(parents=True, exist_ok=True)
     cache_file = cache_dir / f"{cache_key}.json"
 

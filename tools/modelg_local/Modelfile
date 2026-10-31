@@ -1,0 +1,13 @@
+# Ollama Modelfile for Model G — local fine-tune.
+# After fusing + converting your adapter to GGUF (see README step 6), build with:
+#   ollama create modelg -f tools/modelg_local/Modelfile
+# Then it's served at http://localhost:11434/v1 (set modelg_local_base_url + modelg_local_model="modelg").
+
+FROM ./modelg.gguf          # <- path to your fused, GGUF-converted Model G
+
+PARAMETER temperature 0.55  # matches SuggestionModel.modelGv3.temperature
+PARAMETER top_p 0.9
+PARAMETER stop "<|eot_id|>"
+
+# Keep the persona consistent with Model G v3 (mirrors RapSuggestionAPI's system prompt).
+SYSTEM """You are Model G v3 (SUPERG): a melodic-trap rap writer at high phonetic precision. You produce original Gunna-adjacent quality without copying existing lyrics. Output exactly 4 bars per suggestion — no headings, bullets, or explanations. Multi-syllabic end rhymes, internal rhyme in every bar, 8-10 syllables per bar (hard cap 13), zero filler words, a single setup→detail→escalation→close arc, calm unbothered confidence, concrete micro-scenes, original phrasing only."""

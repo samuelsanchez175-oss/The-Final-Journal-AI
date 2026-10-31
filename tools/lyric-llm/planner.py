@@ -254,25 +254,24 @@ def plan_v4(
     if not response_text:
         return _fallback_plan(voice, blend, bpm, bars, topic_hint)
 
-    # Parse JSON from response
-    parsed_json = None
-    clean_text = response_text.strip()
-    if clean_text.startswith("```"):
-        lines = [l for l in clean_text.splitlines() if not l.startswith("```")]
-        clean_text = "\n".join(lines).strip()
+    # T2: tolerant parse, one JSON-only retry, then the motif-only plan.
+    from json_extract import extract_json_with_retry
 
-    try:
-        parsed_json = json.loads(clean_text)
-    except Exception:
-        # Try finding JSON object within response
-        match = re.search(r"\{.*\}", clean_text, re.DOTALL)
-        if match:
-            try:
-                parsed_json = json.loads(match.group(0))
-            except Exception:
-                parsed_json = None
+    def _reask(prompt: str) -> str:
+        if call_fn is not None:
+            return call_fn(system_prompt, prompt)
+        content = chat(
+            model=used_model if used_model != "custom_call_fn" else REASONING_MODELS[0],
+            system=system_prompt,
+            user=prompt,
+            max_tokens=600,
+            temperature=0.0,
+        )
+        return content or ""
 
+    parsed_json = extract_json_with_retry(response_text, _reask, max_retries=1)
     if not isinstance(parsed_json, dict):
+        print("[plan] fallback=motif_only", file=sys.stderr)
         return _fallback_plan(voice, blend, bpm, bars, topic_hint)
 
     # Validate and normalize parsed plan fields
