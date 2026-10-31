@@ -1,0 +1,34 @@
+{
+  "n_songs": 593,
+  "n_lines": 25361,
+  "pairs_total": 24768,
+  "adjacent_rhyme": {
+    "exact": {
+      "count": 3191,
+      "rate": 0.1288
+    },
+    "slant": {
+      "count": 998,
+      "rate": 0.0403
+    },
+    "assonance": {
+      "count": 7384,
+      "rate": 0.2981
+    },
+    "none": {
+      "count": 13195,
+      "rate": 0.5327
+    }
+  },
+  "four_bar_single_rime_anchor": 0.0139,
+  "four_bar_any_2_share_vowel": 0.9094,
+  "four_bar_blocks": 6126,
+  "carry_rate_grammar": 0.2754,
+  "carry_count": 5177,
+  "carry_pairs_examined": 18795,
+  "carry_lengths": {
+    "2": 4472,
+    "3": 533,
+    "4+": 172
+  }
+}

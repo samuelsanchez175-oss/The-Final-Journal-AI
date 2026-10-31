@@ -1,0 +1,90 @@
+[
+  {
+    "file": "model_comparison_v4_20verses.json",
+    "model_key": "frontier_v4",
+    "n_bars": 144,
+    "exact_rate": 0.0,
+    "near_dup_rate": 0.0347,
+    "mean_5gram_overlap": 0.1613,
+    "sd_5gram_overlap": 0.0629,
+    "mean_longest_run": 6.6,
+    "sd_longest_run": 0.8
+  },
+  {
+    "file": "model_comparison_v4_50verses.json",
+    "model_key": "frontier_v4",
+    "n_bars": 360,
+    "exact_rate": 0.275,
+    "near_dup_rate": 0.4389,
+    "mean_5gram_overlap": 0.9361,
+    "sd_5gram_overlap": 0.1721,
+    "mean_longest_run": 9.38,
+    "sd_longest_run": 2.46
+  },
+  {
+    "file": "model_comparison_v4_blocks50.json",
+    "model_key": "catalog_block",
+    "n_bars": 200,
+    "exact_rate": 0.0,
+    "near_dup_rate": 0.03,
+    "mean_5gram_overlap": 0.2712,
+    "sd_5gram_overlap": 0.0355,
+    "mean_longest_run": 6,
+    "sd_longest_run": 0.0
+  },
+  {
+    "file": "model_comparison_v4_phase6_final.json",
+    "model_key": "frontier_v4",
+    "n_bars": 364,
+    "exact_rate": 0.6786,
+    "near_dup_rate": 1.0,
+    "mean_5gram_overlap": 0.9286,
+    "sd_5gram_overlap": 0.2133,
+    "mean_longest_run": 9.96,
+    "sd_longest_run": 2.68
+  },
+  {
+    "file": "model_comparison_pathA_matched.json",
+    "model_key": "v5_pathA",
+    "n_bars": 160,
+    "exact_rate": 0.0187,
+    "near_dup_rate": 0.8313,
+    "mean_5gram_overlap": 0.5551,
+    "sd_5gram_overlap": 0.222,
+    "mean_longest_run": 7.98,
+    "sd_longest_run": 1.84
+  },
+  {
+    "file": "model_comparison_pathB_lora_v3.json",
+    "model_key": "v5_pathB_lora",
+    "n_bars": 160,
+    "exact_rate": 0.0,
+    "near_dup_rate": 0.1938,
+    "mean_5gram_overlap": 0.3317,
+    "sd_5gram_overlap": 0.1463,
+    "mean_longest_run": 6.03,
+    "sd_longest_run": 0.31
+  },
+  {
+    "file": "model_comparison_grok_expert.json",
+    "model_key": "v5_grok_expert",
+    "n_bars": 48,
+    "exact_rate": 0.0,
+    "near_dup_rate": 0.0208,
+    "mean_5gram_overlap": 0.2857,
+    "sd_5gram_overlap": 0.0,
+    "mean_longest_run": 6,
+    "sd_longest_run": 0.0
+  },
+  {
+    "file": "model_comparison_grok_hand.json",
+    "model_key": "v5_grok_hand",
+    "n_bars": 8,
+    "exact_rate": 0.0,
+    "near_dup_rate": 0.0,
+    "mean_5gram_overlap": 0.0,
+    "sd_5gram_overlap": 0.0,
+    "mean_longest_run": 0.0,
+    "sd_longest_run": 0.0
+  }
+]

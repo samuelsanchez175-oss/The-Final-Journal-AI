@@ -1,0 +1,112 @@
+{
+  "n_solo": 30553,
+  "n_hook": 75,
+  "n_verse": 30478,
+  "hook_rate": 0.0025,
+  "all": {
+    "n_lines": 30553,
+    "comma_mean_per_line": 0.762,
+    "comma_bucket_rates": {
+      "0": 0.4425,
+      "1": 0.4065,
+      "2": 0.1119,
+      "3": 0.039
+    },
+    "adjacent_rhyme_rate": 0.1378,
+    "adjacent_pairs": 25127,
+    "one_rime_4bar_rate": 0.0311,
+    "four_bar_blocks": 7364,
+    "repeated_end_pairs_rate": 0.0593,
+    "inner_rhyme_mean": 1.016,
+    "multisyllable_rhyme_rate": 0.2973,
+    "multisyllable_rhyme_n": 9341
+  },
+  "hook_only": {
+    "n_lines": 75,
+    "comma_mean_per_line": 0.973,
+    "comma_bucket_rates": {
+      "0": 0.44,
+      "1": 0.32,
+      "2": 0.12,
+      "3": 0.12
+    },
+    "adjacent_rhyme_rate": 0.9362,
+    "adjacent_pairs": 47,
+    "one_rime_4bar_rate": 0.625,
+    "four_bar_blocks": 8,
+    "repeated_end_pairs_rate": 1.1064,
+    "inner_rhyme_mean": 1.2,
+    "multisyllable_rhyme_rate": 0.4706,
+    "multisyllable_rhyme_n": 17
+  },
+  "verse_only": {
+    "n_lines": 30478,
+    "comma_mean_per_line": 0.761,
+    "comma_bucket_rates": {
+      "0": 0.4425,
+      "1": 0.4067,
+      "2": 0.1119,
+      "3": 0.0388
+    },
+    "adjacent_rhyme_rate": 0.1367,
+    "adjacent_pairs": 25065,
+    "one_rime_4bar_rate": 0.031,
+    "four_bar_blocks": 7346,
+    "repeated_end_pairs_rate": 0.0577,
+    "inner_rhyme_mean": 1.016,
+    "multisyllable_rhyme_rate": 0.297,
+    "multisyllable_rhyme_n": 9324
+  },
+  "hook_examples": [
+    {
+      "song": "Banking On Me",
+      "normalized": "don t wanna get tired of you",
+      "repetitions": 3
+    },
+    {
+      "song": "Cash War",
+      "normalized": "white range rover with the beige guts",
+      "repetitions": 3
+    },
+    {
+      "song": "FAM GOOD, WE GOOD",
+      "normalized": "long as the fam good fam good then we good",
+      "repetitions": 3
+    },
+    {
+      "song": "GIMMICK",
+      "normalized": "damn you fuckboys and you critics",
+      "repetitions": 3
+    },
+    {
+      "song": "GIMMICK",
+      "normalized": "this ain t no scrimmage",
+      "repetitions": 3
+    },
+    {
+      "song": "Monday Through Sunday",
+      "normalized": "monday through sunday",
+      "repetitions": 4
+    },
+    {
+      "song": "NASTY GIRL / ON CAMERA",
+      "normalized": "she wanna suck it on camera",
+      "repetitions": 4
+    },
+    {
+      "song": "ONE WATCH",
+      "normalized": "caterpillar lamborghini but the rari better",
+      "repetitions": 3
+    },
+    {
+      "song": "ONE WATCH",
+      "normalized": "i just chopped the chicken put it in a bezel",
+      "repetitions": 3
+    },
+    {
+      "song": "One Call",
+      "normalized": "workin hard we ain t havin no hope",
+      "repetitions": 3
+    }
+  ]
+}
