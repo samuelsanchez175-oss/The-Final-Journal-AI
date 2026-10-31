@@ -15,19 +15,7 @@ enum RhymeClusterEngine {
         }
         guard words.count >= 2 else { return [] }
         var clusters: [RhymeCluster] = []
-        var keyToWords: [String: [String]] = [:]
-        for w in words {
-            guard let sig = stressedVowelAndCoda(for: w) else { continue }
-            let key = "\(sig.vowel)-\(sig.coda.joined(separator: "-"))"
-            keyToWords[key, default: []].append(w)
-        }
-        for (_, group) in keyToWords where group.count >= 2 {
-            let parts = Array(Set(group)).sorted()
-            let density = Double(parts.count) / Double(words.count)
-            if parts.count >= 2 && parts.count <= 8 {
-                clusters.append(RhymeCluster(type: "internal", parts: parts, density: density))
-            }
-        }
+        clusters.append(contentsOf: internalClusters(in: words))
         let lastWords: [String] = lines.compactMap { line in
             guard let last = line.split(separator: " ").last else { return nil }
             let w = String(last).trimmingCharacters(in: .punctuationCharacters).lowercased()
@@ -47,6 +35,90 @@ enum RhymeClusterEngine {
         let vowelFamily = vowelFamilyCluster(words: words)
         if !vowelFamily.parts.isEmpty {
             clusters.append(vowelFamily)
+        }
+        return clusters
+    }
+
+    private struct RhymeUnit {
+        let label: String
+        let signature: RhymeHighlighterEngine.PhoneticSignature
+        let sourceWord: String
+        let isSlice: Bool
+    }
+
+    /// Internal clusters use the highlighter score and stressed slices.
+    /// "mattress" joins on "mat" (AE1), not the final schwa. End rhyme stays on stressedVowelAndCoda.
+    private static func internalClusters(in words: [String]) -> [RhymeCluster] {
+        let content = words.filter { !RhymeHighlighterEngine.rhymeStopwords.contains($0) }
+        var units: [RhymeUnit] = []
+        for word in content {
+            guard let phones = RhymeHighlighterEngine.dictionaryPhonemes(for: word),
+                  let signature = RhymeHighlighterEngine.extractSignature(from: phones) else { continue }
+            units.append(RhymeUnit(label: word, signature: signature, sourceWord: word, isSlice: false))
+            for slice in RhymeHighlighterEngine.syllableSlices(of: word) where slice.stress >= 1 && !slice.coversWholeWord {
+                units.append(RhymeUnit(
+                    label: slice.spelling,
+                    signature: slice.signature,
+                    sourceWord: word,
+                    isSlice: true
+                ))
+            }
+        }
+        guard units.count >= 2 else { return [] }
+
+        var parent = Array(units.indices)
+        func find(_ index: Int) -> Int {
+            var index = index
+            while parent[index] != index {
+                parent[index] = parent[parent[index]]
+                index = parent[index]
+            }
+            return index
+        }
+        func unite(_ left: Int, _ right: Int) {
+            let leftRoot = find(left)
+            let rightRoot = find(right)
+            if leftRoot != rightRoot { parent[rightRoot] = leftRoot }
+        }
+        for left in units.indices {
+            for right in (left + 1)..<units.count {
+                if units[left].sourceWord == units[right].sourceWord { continue }
+                if RhymeHighlighterEngine.rhymeScore(units[left].signature, units[right].signature) != nil {
+                    unite(left, right)
+                }
+            }
+        }
+
+        var members: [Int: [Int]] = [:]
+        for index in units.indices {
+            members[find(index), default: []].append(index)
+        }
+        var wholeWordsInClusters: Set<String> = []
+        for group in members.values {
+            let labels = Set(group.filter { !units[$0].isSlice }.map { units[$0].label })
+            if labels.count >= 2 {
+                wholeWordsInClusters.formUnion(labels)
+            }
+        }
+
+        var clusters: [RhymeCluster] = []
+        for group in members.values {
+            var seen: Set<String> = []
+            var labels: [String] = []
+            for index in group {
+                let unit = units[index]
+                if unit.isSlice && wholeWordsInClusters.contains(unit.sourceWord) { continue }
+                if seen.contains(unit.label) { continue }
+                seen.insert(unit.label)
+                labels.append(unit.label)
+            }
+            labels.sort()
+            guard labels.count >= 2, labels.count <= 8 else { continue }
+            clusters.append(RhymeCluster(
+                type: "internal",
+                parts: labels,
+                density: Double(labels.count) / Double(words.count)
+            ))
         }
         return clusters
     }

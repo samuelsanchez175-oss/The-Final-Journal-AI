@@ -15,7 +15,7 @@ struct FlowAnalyzerPanelView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             if let profile = profile {
-                flowMeters(profile: profile)
+                flowMeters(features: features, profile: profile)
             }
             if !bars.isEmpty {
                 barStripView
@@ -24,7 +24,7 @@ struct FlowAnalyzerPanelView: View {
         .padding()
     }
 
-    private func flowMeters(profile: CadenceProfile) -> some View {
+    private func flowMeters(features: FlowDNAFeatures?, profile: CadenceProfile) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Flow")
                 .font(.headline)
@@ -32,9 +32,15 @@ struct FlowAnalyzerPanelView: View {
                 meter(label: "Stress", value: profile.stressDensity)
                 meter(label: "Punch", value: profile.energyShape)
                 meter(label: "Rhyme Density", value: profile.internalRhyme)
+                meter(label: "Multisyllable", value: multisyllableText(features?.multisyllableRhymeRate))
                 meter(label: "Grid", value: profile.gridTightness)
             }
         }
+    }
+
+    private func multisyllableText(_ rate: Double?) -> String {
+        guard let rate else { return "—" }
+        return "\(Int((rate * 100).rounded()))%"
     }
 
     private func meter(label: String, value: String) -> some View {

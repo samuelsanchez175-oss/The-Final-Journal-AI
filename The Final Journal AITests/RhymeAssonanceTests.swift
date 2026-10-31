@@ -179,4 +179,96 @@ final class RhymeAssonanceTests: XCTestCase {
             XCTAssertTrue(highlights.contains { $0.utf16 == range }, "\(word) must highlight, groups \(groups.map { $0.words.map(\.word) })")
         }
     }
+
+    func testMattressStressedSliceIsMatAndTress() {
+        waitForDictionary()
+        XCTAssertNotNil(getGlobalCMUDICTStore()["mattress"])
+        let slices = RhymeHighlighterEngine.syllableSlices(of: "mattress")
+        XCTAssertEqual(slices.map(\.spelling), ["mat", "tress"], "slices \(slices.map(\.spelling))")
+        let firstCoda = slices.first?.signature.coda.map { String($0.filter { !$0.isNumber }) } ?? []
+        XCTAssertTrue(firstCoda.contains("T"), "coda \(firstCoda)")
+        XCTAssertEqual(slices.last?.stress, 0)
+    }
+
+    func testBadBitchThatsRichMattressPaintsTheStack() async {
+        waitForDictionary()
+        let text = "bad bitch, that's rich, mattress"
+        let (groups, _) = await RhymeHighlighterEngine.computeAll(text: text)
+        let described = groups.map { "\($0.strength) \($0.words.map(\.word))" }
+        let ae = groups.first { group in
+            let words = Set(group.words.map { $0.word.lowercased() })
+            return words.isSuperset(of: ["bad", "that's", "mat"])
+        }
+        XCTAssertNotNil(ae, "groups \(described)")
+        let aeWords = Set((ae?.words ?? []).map { $0.word.lowercased() })
+        XCTAssertFalse(aeWords.contains("tress"), "groups \(described)")
+        let ih = groups.first { group in
+            let words = Set(group.words.map { $0.word.lowercased() })
+            return words.isSuperset(of: ["bitch", "rich"])
+        }
+        XCTAssertEqual(ih?.strength, .perfect, "groups \(described)")
+    }
+
+    func testEngineInternalClusterUsesStressedSliceForMattress() {
+        waitForDictionary()
+        XCTAssertNotNil(getGlobalCMUDICTStore()["mattress"])
+        XCTAssertNotNil(getGlobalCMUDICTStore()["darkness"])
+        XCTAssertEqual(
+            RhymeHighlighterEngine.rhymeScore(
+                signature("IY1", ["M", "Z"]),
+                signature("IY1", ["N"])
+            ),
+            .assonance
+        )
+        let clusters = RhymeClusterEngine.detect(lines: ["bad bitch, that's rich, mattress"])
+        let described = clusters.map { "\($0.type):\($0.parts)" }
+        let stack = clusters.first { cluster in
+            cluster.type == "internal"
+                && Set(cluster.parts).isSuperset(of: ["bad", "that's", "mat"])
+        }
+        XCTAssertNotNil(stack, "clusters \(described)")
+        XCTAssertFalse(stack?.parts.contains("tress") ?? true, "clusters \(described)")
+        let stressed = RhymeHighlighterEngine.syllableSlices(of: "mattress")
+            .first { $0.stress >= 1 && !$0.coversWholeWord }
+        XCTAssertEqual(stressed?.spelling, "mat")
+        XCTAssertTrue(
+            stressed?.signature.stressedVowel.hasPrefix("AE") == true,
+            "vowel \(stressed?.signature.stressedVowel ?? "nil")"
+        )
+        let end = RhymeClusterEngine.detect(lines: ["on the mattress", "in the darkness"])
+        let endParts = end.first { $0.type == "end" }?.parts ?? []
+        XCTAssertTrue(
+            Set(endParts).isSuperset(of: ["mattress", "darkness"]),
+            "end \(end.map { "\($0.type):\($0.parts)" })"
+        )
+    }
+
+    func testHighlighterInternalGroupsComeFromTheEngine() async {
+        waitForDictionary()
+        let lines = ["dreams", "scene"]
+        let text = lines.joined(separator: "\n")
+        let engineParts = Set(
+            RhymeClusterEngine.detect(lines: lines)
+                .filter { $0.type == "internal" }
+                .flatMap(\.parts)
+        )
+        XCTAssertTrue(engineParts.isSuperset(of: ["dreams", "scene"]), "engine \(engineParts)")
+        let (groups, _) = await RhymeHighlighterEngine.computeAll(text: text)
+        let described = groups.map { "\($0.rhymeType) \($0.strength) \($0.words.map(\.word))" }
+        let dream = groups.first { $0.words.contains { $0.word.lowercased() == "dreams" } }
+        XCTAssertEqual(dream?.strength, .assonance, "groups \(described)")
+        let paintedInternal = Set(groups.flatMap { group -> [String] in
+            guard case .internalRhyme = group.rhymeType else { return [] }
+            return group.words.map { $0.word.lowercased() }
+        })
+        XCTAssertEqual(paintedInternal, engineParts, "groups \(described)")
+    }
+
+    func testMultisyllableRateIsMeasuredNotHardcoded() {
+        waitForDictionary()
+        let mono = FlowDNAEngine.analyze(verse: "the cat\nthe hat")
+        XCTAssertEqual(mono.1.multisyllableRhymeRate, 0, "mono \(mono.1.multisyllableRhymeRate)")
+        let multi = FlowDNAEngine.analyze(verse: "walking\ntalking")
+        XCTAssertEqual(multi.1.multisyllableRhymeRate, 1, "multi \(multi.1.multisyllableRhymeRate)")
+    }
 }

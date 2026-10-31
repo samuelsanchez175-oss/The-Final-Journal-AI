@@ -481,6 +481,9 @@ class ModelGLLMService {
             
         let punchlineBlock = punchlineMode ? "\n\nPUNCHLINE MODE (STRICT STRUCTURE):\n- Structure the entire 16-bar verse into 4-bar chunks.\n- Bars 1 and 2 MUST establish a premise or narrative.\n- Bar 3 MUST be a setup or misdirection.\n- Bar 4 MUST deliver a hard punchline/payoff.\n- This means bars 4, 8, 12, and 16 should be the strongest punchlines, set up by the preceding 3 bars." : ""
         let directedBlock = controlSurfaceBlock(context.directedParams)
+        let v7Block = context.directedParams?.suggestModel == .v7
+            ? "\n\(DirectedGenerationParams.v7WriterBlock)\n"
+            : ""
         let punchContentBlock = punchContentBlock(plan)
         let artistBrainBlock: String = {
             guard let prompt = context.artistBrainPrompt, !prompt.isEmpty else { return "" }
@@ -501,6 +504,7 @@ class ModelGLLMService {
         \(wrapBlock)
         \(copyFlow)
         \(directedBlock)
+        \(v7Block)
         \(punchContentBlock)
         Topic: \(context.intent.theme) (tone: \(context.intent.tone.rawValue))
         \(plan.promptText)
@@ -546,8 +550,11 @@ class ModelGLLMService {
             The bars array length equals \(barAsk).
             When you cannot keep the direction inside ±2 with a perfect or painter-family ending, return {"hook":"","bars":[]}. Leave the slot empty. Do not write a filler bar.
             """
+        let system = youSystem + (context.directedParams?.suggestModel == .v7
+            ? "\nThis request is V7. Obey the V7 WRITER block in the user message."
+            : "")
         let raw = try await postChat(
-            system: youSystem,
+            system: system,
             user: user, maxTokens: 1400, temperature: temperature, jsonMode: true
         )
         guard let data = raw.data(using: .utf8),

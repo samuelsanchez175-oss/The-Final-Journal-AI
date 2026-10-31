@@ -815,13 +815,14 @@ nonisolated struct RhymeHighlighterEngine {
             }
         }
         // A stressed vowel keeps one following consonant. "veil" stays veil, not vei-l.
+        // A cluster gives up only its first phone, so "mattress" is mat/tress, not ma/ttress.
         if pieces.count > 1 {
             for index in 0..<(pieces.count - 1) {
                 guard phoneStress(phones[pieces[index].vowel]) == 1
                         || phoneStress(phones[pieces[index].vowel]) == 2 else { continue }
                 guard pieces[index].vowel + 1 == pieces[index].end else { continue }
                 let onsetCount = pieces[index + 1].vowel - pieces[index + 1].start
-                guard onsetCount == 1 else { continue }
+                guard onsetCount >= 1 else { continue }
                 pieces[index].end = pieces[index + 1].start + 1
                 pieces[index + 1].start += 1
             }
@@ -1195,9 +1196,11 @@ nonisolated struct RhymeHighlighterEngine {
             result.append(makeRhymeGroup(key: key, entries: entries, rhymeType: .internalRhyme))
         }
 
+        let engineClaimed = appendEngineInternalGroups(tokens: tokens, in: text, into: &result)
+
         var groupedTokenIndexes: Set<Int> = []
         for (index, token) in tokens.enumerated() {
-            if endMemberCoords.contains(coord(token)) || internalCoords.contains(coord(token)) {
+            if endMemberCoords.contains(coord(token)) || internalCoords.contains(coord(token)) || engineClaimed.contains(index) {
                 groupedTokenIndexes.insert(index)
             }
         }
@@ -1206,6 +1209,96 @@ nonisolated struct RhymeHighlighterEngine {
         attachSyllableSlices(tokens: tokens, in: text, to: &result)
 
         return result
+    }
+
+    /// Internal paint for clusters the engine found and the end-rhyme pass did not already cover.
+    /// Strength is the weakest highlighter score in the cluster, so dreams/scene stay assonance.
+    nonisolated static func appendEngineInternalGroups(
+        tokens: [AnnotatedToken],
+        in text: String,
+        into result: inout [RhymeGroup]
+    ) -> Set<Int> {
+        let lines = text.components(separatedBy: "\n")
+        let clusters = RhymeClusterEngine.detect(lines: lines).filter { $0.type == "internal" }
+        var claimed: Set<Int> = []
+        var covered = result.flatMap { $0.words.map(\.range) }
+
+        for cluster in clusters {
+            var fresh: [(RhymeGroupWord, PhoneticSignature, Int)] = []
+            var usedTokens: Set<Int> = []
+            for part in cluster.parts {
+                guard let hit = locateEnginePart(
+                    part,
+                    tokens: tokens,
+                    text: text,
+                    usedTokens: &usedTokens,
+                    covered: covered
+                ) else { continue }
+                fresh.append(hit)
+            }
+            guard fresh.count >= 2 else { continue }
+            let signatures = fresh.map(\.1)
+            result.append(RhymeGroup(
+                id: UUID(),
+                key: endGroupKey(for: fresh[0].0.word, signature: fresh[0].1, isLineEnd: fresh[0].0.isLineEnd),
+                strength: weakestLink(signatures),
+                colorIndex: 0,
+                words: fresh.map(\.0),
+                rhymeType: .internalRhyme
+            ))
+            for hit in fresh {
+                covered.append(hit.0.range)
+                claimed.insert(hit.2)
+            }
+        }
+        return claimed
+    }
+
+    nonisolated private static func weakestLink(_ signatures: [PhoneticSignature]) -> RhymeStrength {
+        var worst = RhymeStrength.perfect
+        guard signatures.count >= 2 else { return worst }
+        for left in signatures.indices {
+            for right in (left + 1)..<signatures.count {
+                guard let score = rhymeScore(signatures[left], signatures[right]) else { continue }
+                if score.rawValue < worst.rawValue { worst = score }
+            }
+        }
+        return worst
+    }
+
+    nonisolated private static func locateEnginePart(
+        _ part: String,
+        tokens: [AnnotatedToken],
+        text: String,
+        usedTokens: inout Set<Int>,
+        covered: [Range<String.Index>]
+    ) -> (RhymeGroupWord, PhoneticSignature, Int)? {
+        func blocked(_ range: Range<String.Index>) -> Bool {
+            covered.contains { $0.overlaps(range) }
+        }
+        for (index, token) in tokens.enumerated() where token.word.lowercased() == part && !usedTokens.contains(index) {
+            if blocked(token.range) { continue }
+            usedTokens.insert(index)
+            return (groupWord(from: token), token.signature, index)
+        }
+        for (index, token) in tokens.enumerated() where !usedTokens.contains(index) {
+            for slice in syllableSlices(of: token.word) where slice.spelling == part && slice.stress >= 1 && !slice.coversWholeWord {
+                guard let range = rangeInText(text, token: token, slice: slice), !blocked(range) else { continue }
+                usedTokens.insert(index)
+                return (
+                    RhymeGroupWord(
+                        word: slice.spelling,
+                        range: range,
+                        lineIndex: token.lineIndex,
+                        positionInLine: token.positionInLine,
+                        isLineEnd: token.isLineEnd && range.upperBound == token.range.upperBound
+                    ),
+                    slice.signature,
+                    index
+                )
+            }
+        }
+        return nil
     }
 
     /// Higher rank wins the one key for a bar. End buckets and locked families

@@ -55,8 +55,8 @@ enum CorpusTone: String, Codable, CaseIterable, Identifiable {
     }
 }
 
-/// Suggest next lines model row. V7 is shown and not selectable.
-/// The live row is named for Model G Core v4 until a real V6 or V7 endpoint exists.
+/// Suggest next lines model row. Both rows generate in the app.
+/// V6 is Model G Core v4. V7 uses that same call plus the V7 writer rules.
 enum SuggestNextLinesModel: String, Codable, CaseIterable, Identifiable {
     case v6 = "V6"
     case v7 = "V7"
@@ -70,8 +70,8 @@ enum SuggestNextLinesModel: String, Codable, CaseIterable, Identifiable {
         }
     }
 
-    /// V7 has no app endpoint. The row stays disabled.
-    var isCallable: Bool { self == .v6 }
+    /// Both rows call the in-app verse writer. V7 adds its writer block.
+    var isCallable: Bool { true }
 }
 
 /// Syllable groups for the suggest sheet. Replaces the 6–16 count grid.

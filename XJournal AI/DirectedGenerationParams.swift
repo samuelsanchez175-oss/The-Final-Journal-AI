@@ -110,6 +110,8 @@ struct DirectedGenerationParams {
     var youFilters: ModelYouVerseFilters
     /// Vault tones chosen on Suggest next lines. The prompt uses these names.
     var corpusTones: [CorpusTone]
+    /// Suggest-sheet row. V6 is the current Model G v4 writer. V7 adds `v7WriterBlock`.
+    var suggestModel: SuggestNextLinesModel
     /// Recording from Freestyle match. Analysis is not run.
     /// TODO(freestyle-match): BeatAnalyzer plus the transcription/rhythm path should
     /// read this file and set syllables per bar, pocket, and end sounds.
@@ -186,7 +188,8 @@ struct DirectedGenerationParams {
         styleOverride: StyleProfile? = nil,
         youFilters: ModelYouVerseFilters = .init(),
         corpusTones: [CorpusTone] = [],
-        freestyleMatchAudioPath: String? = nil
+        freestyleMatchAudioPath: String? = nil,
+        suggestModel: SuggestNextLinesModel = .v6
     ) {
         self.userPrompt = userPrompt
         self.selectedRhymeGroupIDs = selectedRhymeGroupIDs
@@ -226,7 +229,23 @@ struct DirectedGenerationParams {
         self.youFilters = youFilters
         self.corpusTones = corpusTones
         self.freestyleMatchAudioPath = freestyleMatchAudioPath
+        self.suggestModel = suggestModel
     }
+
+    /// Rules from the V7 spec that the phone can apply on the Model G call.
+    /// The Mac script `frontier_v7.py` still grades one bar at a time. That loop is not in the app.
+    static let v7WriterBlock = """
+    V7 WRITER:
+    This request is V7. It is not the Current (Model G v4) row.
+    Stay inside the syllable band already given. The pocket is about 10–14 syllables. Do not write a 16-syllable bar with 3 or more commas.
+    In each group of 4 bars, at least 2 bars share the stressed vowel. Prefer an exact rhyme on bars 2 and 4 of that group. Do not lock all 4 bars to one vowel.
+    One internal echo in a bar is welcome when the line stays relaxed.
+    Mostly 0 or 1 comma per bar. Use 2 commas only on a boast bar.
+    Do not end a bar on an ad-lib: yeah, uh, ayy, ooh, woah, nah, hey.
+    Write in first person unless the direction says otherwise.
+    Do not use these filler phrases: chasing dreams, in the shadows, grinding hard, rise above, against all odds, reach for the stars, chasing the bag.
+    Do not copy 5 content words in a row from a reference bar.
+    """
 
     /// Names that go in the generation prompt. Corpus tones win over the mapped EmotionalTone list.
     var promptToneNames: [String] {
