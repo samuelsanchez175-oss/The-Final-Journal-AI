@@ -1408,6 +1408,7 @@ struct NoteEditorView: View {
         var onSurfaceTap: (() -> Void)? = nil
         @AppStorage(EditorChromeSettings.writingFontSizeKey) private var writingFontSize: Double = EditorChromeSettings.defaultWritingFontSize
         @AppStorage(EditorChromeSettings.writingLineGuidesKey) private var showWritingLines: Bool = true
+        @AppStorage(EditorChromeSettings.commaHintsKey) private var commaHintsOn: Bool = true
         @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
         /// In-app stepper size × iOS text size. Buttons and lyrics share this.
@@ -1621,6 +1622,12 @@ struct NoteEditorView: View {
                     .allowsHitTesting(true)
                     .accessibilityLabel("Syllable count buttons. Hold a count to highlight the bar, then let go to see similar bars.")
                 }
+            }
+            .overlay(alignment: .topLeading) {
+                CommaHintOverlay(text: text, enabled: commaHintsOn)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .allowsHitTesting(commaHintsOn)
+                    .accessibilityElement(children: .contain)
             }
         }
     }
