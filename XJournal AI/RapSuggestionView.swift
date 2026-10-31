@@ -373,9 +373,7 @@ struct RapSuggestionView: View {
                     let lines = suggestion.text.components(separatedBy: "\n")
                     toggleLineFeedback(suggestionId: suggestion.id, lineIndex: lineIndex,
                                        lineText: lineIndex < lines.count ? lines[lineIndex] : "")
-                },
-                likedLines: highlightedLines,
-                dislikedLines: dislikedLines
+                }
             )
             RapIslandToolbar(
                 rhymeOn: $rhymeOn,
@@ -1069,7 +1067,7 @@ struct RapSuggestionView: View {
                         )
                         UserBehaviorTracker.shared.trackSuggestionInteraction(action: .favorited, suggestionId: suggestion.id)
                     }
-                    HapticFeedbackManager.shared.play(.love)
+                    HapticFeedbackManager.shared.success()
                 } label: {
                     Image(systemName: favoriteSuggestions.contains(suggestion.id) ? "star.fill" : "star")
                         .font(.subheadline)
@@ -1385,7 +1383,7 @@ struct RapSuggestionView: View {
             dislikedSet.remove(lineIndex)
             likedSet.insert(lineIndex)
             CorpusFeedbackStore.shared.recordAcceptance(text: lineText, accepted: true)
-            HapticFeedbackManager.shared.play(.love)
+            HapticFeedbackManager.shared.success()
         } else {
             // Neutral, add to disliked
             dislikedSet.insert(lineIndex)

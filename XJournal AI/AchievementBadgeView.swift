@@ -144,7 +144,7 @@ struct AchievementCelebrationView: View {
             }
             
             // Haptic feedback
-            HapticFeedbackManager.shared.play(.achievement)
+            HapticFeedbackManager.shared.success()
         }
     }
     
