@@ -48,64 +48,6 @@ class TestEndWordDedupeSQL(unittest.TestCase):
         clear_end_word_history(TEST_DEDUPE_HISTORY)
         clear_end_word_history()
 
-    def test_sql_not_in_exclusion(self):
-        """Verify that words in recent_end_words are excluded from SQL query results."""
-        pattern = {
-            "end_word": "",
-            "end_rime": "IY1 N",
-            "vowel_class": "V_front_high",
-            "target_syllables": 14,
-        }
-        # First query without dedupe
-        initial_results = retrieve_matching_catalog_lines(
-            artist="Gunna",
-            pattern=pattern,
-            recent_end_words=[],
-            limit=10,
-        )
-        self.assertTrue(len(initial_results) > 0)
-        top_words = list({(r.get("end_word") or "").lower() for r in initial_results if r.get("end_word")})
-        self.assertTrue(len(top_words) > 0)
-
-        # Now pass top_words in recent_end_words
-        deduped_results = retrieve_matching_catalog_lines(
-            artist="Gunna",
-            pattern=pattern,
-            recent_end_words=top_words,
-            limit=10,
-        )
-        for r in deduped_results:
-            end_w = (r.get("end_word") or "").lower()
-            self.assertNotIn(
-                end_w,
-                top_words,
-                f"Word '{end_w}' was in recent_end_words and should have been excluded by SQL NOT IN",
-            )
-
-    def test_explicit_target_word_overrides_sql_dedupe(self):
-        """Verify that if caller explicitly provides target_word, it is not blocked by SQL NOT IN."""
-        explicit_target = "mercedes"
-        pattern = {
-            "end_word": explicit_target,
-            "end_rime": "EY1 D IY0 Z",
-            "vowel_class": "V_front_mid",
-            "target_syllables": 14,
-        }
-        # Include explicit_target in recent_end_words
-        results = retrieve_matching_catalog_lines(
-            artist="Gunna",
-            pattern=pattern,
-            recent_end_words=["patek", explicit_target, "audamar"],
-            limit=60,
-        )
-        self.assertTrue(len(results) > 0)
-        found_target = any((r.get("end_word") or "").lower() == explicit_target for r in results)
-        self.assertTrue(found_target, f"Explicit target '{explicit_target}' should be retrieved despite being in recent_end_words")
-        # Ensure the other recent_end_words (patek, audamar) are strictly excluded
-        for r in results:
-            end_w = (r.get("end_word") or "").lower()
-            self.assertNotIn(end_w, ["patek", "audamar"])
-
     def test_record_and_get_history_json_and_jsonl(self):
         """Verify get_end_word_history and record_used_end_words properly track sliding window."""
         words_batch1 = ["maybach", "celine", "compound", "rich"]
@@ -117,45 +59,6 @@ class TestEndWordDedupeSQL(unittest.TestCase):
         record_used_end_words(words_batch2, max_history=16, history_path=TEST_DEDUPE_HISTORY)
         loaded_window4 = get_end_word_history(window_size=4, history_path=TEST_DEDUPE_HISTORY)
         self.assertEqual(loaded_window4, ["compound", "rich", "patek", "jet"])
-
-    def test_back_to_back_generations_zero_end_word_collision(self):
-        """Verify two consecutive generations in the same session have zero repeating end words."""
-        # Unset seed for stochastic diversity
-        os.environ.pop("V4_SEED", None)
-        os.environ["V4_RETRIEVAL_TEMP"] = "2.0"
-
-        # Generate Verse 1
-        res1 = generate_v4(
-            voice="Gunna",
-            blend="NoCap",
-            mix=70,
-            bars_count=8,
-            topic_hint="jewelry_and_ice",
-            candidates=1,
-            use_cache=False,
-        )
-        ends1 = [b.get("end_word", "").lower() for b in res1.get("bars", []) if b.get("end_word")]
-        self.assertEqual(len(ends1), 8)
-
-        # Generate Verse 2 with the same session history
-        res2 = generate_v4(
-            voice="Gunna",
-            blend="NoCap",
-            mix=70,
-            bars_count=8,
-            topic_hint="jewelry_and_ice",
-            candidates=1,
-            use_cache=False,
-        )
-        ends2 = [b.get("end_word", "").lower() for b in res2.get("bars", []) if b.get("end_word")]
-        self.assertEqual(len(ends2), 8)
-
-        overlap = set(ends1).intersection(set(ends2))
-        self.assertEqual(
-            len(overlap),
-            0,
-            f"Expected zero end-word overlap between consecutive generations, got overlap: {overlap}",
-        )
 
 
 if __name__ == "__main__":

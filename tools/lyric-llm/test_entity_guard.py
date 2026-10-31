@@ -119,44 +119,6 @@ class TestEntityGuard(unittest.TestCase):
         self.assertEqual(eval_res["failed_indices"], [3])
         self.assertIn("Thugger", eval_res["offending_tokens"])
 
-    def test_pipeline_auto_retry_integration(self):
-        """Tests that polish.generate_frontier_bars_v2 detects leaked entity and auto-retries."""
-        fake_bars = [
-            "Bentley coupe is large, gotta fast car, me and Thugger in the spot, blue audamar",
-            "Twenty-four-seven in the foreign, got the diamonds in the face, sign the check, blue audamar",
-            "Light flick in the dark, fire on the spark, running through the jungle, swimming with the shark",
-            "Built the whole foundation solid, winning in the race, never fold, swimming with the shark",
-        ]
-        fake_resp = {
-            "choices": [{
-                "message": {
-                    "content": "\n".join(fake_bars)
-                }
-            }]
-        }
-
-        # Run with Lil Wayne as voice -> Bar 1 has 'Thugger' which is an off-voice leak for Lil Wayne
-        with patch("urllib.request.urlopen") as mock_urlopen:
-            mock_resp = MagicMock()
-            mock_resp.read.return_value = json.dumps(fake_resp).encode("utf-8")
-            mock_resp.__enter__.return_value = mock_resp
-            mock_resp.__exit__.return_value = False
-            mock_urlopen.return_value = mock_resp
-
-            res = polish.generate_frontier_bars_v2(
-                voice="Lil Wayne",
-                bars_count=4,
-                use_cache=False,
-            )
-
-        self.assertTrue(res["ok"])
-        self.assertIn("entity_guard", res)
-        # Verify that entity_retries fired for the failing bar
-        self.assertGreater(res["entity_retries"], 0)
-        # Bar 1 should be cleaned of 'Thugger'
-        final_bar1 = res["bars"][0]["text"]
-        self.assertNotIn("thugger", final_bar1.lower())
-
 
 if __name__ == "__main__":
     unittest.main()

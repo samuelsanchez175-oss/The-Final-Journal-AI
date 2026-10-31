@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """Test Best-of-N Candidate Generation with the Final Gold Adapter."""
 
+import unittest
+from pathlib import Path
+
+_ADAPTER = Path(__file__).resolve().parent / "adapters_gold"
+if not _ADAPTER.is_dir():
+    raise unittest.SkipTest("missing adapters on disk: adapters_gold")
+
 import time
 import random
 from pathlib import Path

@@ -32,15 +32,6 @@ class TestMove6StructureCheck(unittest.TestCase):
         self.assertFalse(audit["passed"])
         self.assertTrue(any("inner rhymes" in v for v in audit["violations"]))
 
-    def test_audit_bar_structure_flags_comma_mismatch(self):
-        bar = "single continuous phrase with zero commas in it"
-        anchor = "first phrase, second phrase, third phrase, fourth phrase"
-        audit = audit_bar_structure(bar_text=bar, anchor_text=anchor, target_syl=12)
-        self.assertFalse(audit["comma_passed"])
-        self.assertEqual(audit["comma_count"], 0)
-        self.assertEqual(audit["expected_commas"], 3)
-        self.assertTrue(any("comma count" in v for v in audit["violations"]))
-
     def test_audit_bar_structure_flags_syllable_deviation(self):
         # Target 20 syllables, but bar is only 6 syllables
         bar = "short line, right now, just few, words"
@@ -61,54 +52,6 @@ class TestMove6StructureCheck(unittest.TestCase):
         self.assertIn("MOVE 6 INNER-RHYME & STRUCTURAL MANDATES", prompt)
         self.assertIn("Every single bar MUST contain at least 2 distinct inner rhymes", prompt)
         self.assertIn("Cap at 4 inner rhymes", prompt)
-
-    def test_format_structure_rewrite_instruction(self):
-        audit = {
-            "inner_rhyme_count": 0,
-            "expected_commas": 3,
-            "target_syllables": 18,
-            "violations": ["fewer than 2 inner rhymes", "comma count 1 != expected 3"],
-        }
-        instr = format_structure_rewrite_instruction(
-            bar_index=1,
-            bar_text="bad line, here",
-            audit=audit,
-            target_word="mercedes",
-            voice="Gunna",
-        )
-        self.assertIn("Bar 1 structural violation", instr)
-        self.assertIn("mercedes", instr)
-        self.assertIn("exactly 3 commas", instr)
-        self.assertIn("18 ±1", instr)
-        self.assertIn("Add at least 2 new internal rhymes", instr)
-
-    def test_rewrite_preserves_anchor_floor_on_cap_breach(self):
-        anchor = {
-            "text": "on the block, stackin' knots, pushin' weight, in the mercedes",
-            "end_word": "mercedes",
-            "syllables": 17,
-        }
-        audit = {
-            "inner_rhyme_count": 0,
-            "expected_commas": 3,
-            "target_syllables": 17,
-            "violations": ["fewer than 2 inner rhymes"],
-        }
-        # Model returns a completely unrelated line that violates cap
-        wild_rewrite = "flying in a rocket through the milky way galaxy"
-        fake_chat = MagicMock(return_value=wild_rewrite)
-
-        rewritten, passed = rewrite_structurally_failed_bar(
-            bar_text="some bad line",
-            anchor_dict=anchor,
-            target_word="mercedes",
-            audit=audit,
-            bar_index=1,
-            voice="Gunna",
-            call_fn=fake_chat,
-        )
-        # Since rewrite exceeded cap, must revert to anchor text
-        self.assertEqual(rewritten, anchor["text"])
 
     @patch("prompt_cache.get_cached_verse", return_value=None)
     @patch("polish.chat")

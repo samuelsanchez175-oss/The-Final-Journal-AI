@@ -438,10 +438,16 @@ class GenerateScriptTests(unittest.TestCase):
         self.assertEqual(topic["opening"], "")
         self.assertEqual(topic["plan"]["temperature"], 1.2)
         self.assertEqual(topic["plan"]["top_p"], 0.99)
-        self.assertIn("Write bars about: rain on the windshield", topic["plan"]["left_prefix"])
+        prefix = topic["plan"]["left_prefix"]
+        self.assertTrue(prefix.startswith("<voice:Young Thug> <bpm:90> <scale:D minor> <syl:"))
+        self.assertTrue(prefix.endswith("\nrain on the windshield"))
+        self.assertNotIn("Write bars about:", prefix)
         self.assertEqual(generate.format_bars(["only the model line"]), "only the model line\n")
-        with self.assertRaises(generate.GenerateError):
-            generate.generation_request("Gunna", bpm=140, scale="A minor")
+        bare = generate.generation_request("Gunna", bpm=140, scale="A minor")
+        self.assertEqual(bare["opening"], "")
+        self.assertEqual(bare["plan"]["bars"], generate.DEFAULT_BARS)
+        self.assertTrue(bare["plan"]["left_prefix"].startswith("<voice:Gunna> <bpm:140> <scale:A minor>"))
+        self.assertNotIn("\n", bare["plan"]["left_prefix"])
         with self.assertRaises(generate.GenerateError):
             generate.generation_request(
                 "Gunna", blend="Gunna", mix="70", bpm=140, scale="A minor", topic="room"

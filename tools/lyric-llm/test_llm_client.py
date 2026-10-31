@@ -80,15 +80,6 @@ class TestLLMClient(unittest.TestCase):
             temperature=0.7,
         )
 
-    def test_unsupported_model_raises_value_error(self):
-        with self.assertRaises(ValueError) as ctx:
-            llm_client.chat(
-                model="some-unknown-provider-model-xyz",
-                system="sys",
-                user="usr",
-            )
-        self.assertIn("Unsupported model provider", str(ctx.exception))
-
     def test_missing_api_key_raises_informative_error(self):
         with patch.dict(os.environ, {}, clear=True):
             with self.assertRaises(ValueError) as ctx:

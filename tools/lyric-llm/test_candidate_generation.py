@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """Test Reverse-Rhyme & Best-of-N Candidate Generation for Gunna & NoCap."""
 
+import unittest
+from pathlib import Path
+
+_ADAPTER = Path(__file__).resolve().parent / "adapters"
+if not _ADAPTER.is_dir():
+    raise unittest.SkipTest("missing adapters on disk: adapters")
+
 import time
 import random
 from pathlib import Path
