@@ -70,8 +70,12 @@ enum SuggestNextLinesModel: String, Codable, CaseIterable, Identifiable {
         }
     }
 
-    /// V7 has no app endpoint. The row stays disabled.
-    var isCallable: Bool { self == .v6 }
+    /// V7 is now callable. Dispatch still shares the V6 Model G path until
+    /// the in-process Python + Bloom novelty bundle lands; the V7 row picks
+    /// up vault-median syllables / cliché avoidance via the shared prompt
+    /// builder. Full V7 sequential grader on-device is tracked in
+    /// docs/flow-rules/v7_app_enable_plan.md.
+    var isCallable: Bool { true }
 }
 
 /// Syllable groups for the suggest sheet. Replaces the 6–16 count grid.

@@ -128,10 +128,10 @@ struct ModelGControlSurfaceView: View {
         VStack(alignment: .leading, spacing: 8) {
             MomentumSectionHeader(title: "Model")
             HStack(spacing: 8) {
-                modelChoice(.v6, enabled: true)
-                modelChoice(.v7, enabled: false)
+                modelChoice(.v6, enabled: SuggestNextLinesModel.v6.isCallable)
+                modelChoice(.v7, enabled: SuggestNextLinesModel.v7.isCallable)
             }
-            Text("Current (Model G v4) is the verse writer already in the app. V7 is coming soon.")
+            Text("Current (Model G v4) is the verse writer already in the app. V7 shares the same path right now; the on-device V7 bundle is a later step.")
                 .font(.caption)
                 .foregroundStyle(Momentum.contentSecondary)
         }

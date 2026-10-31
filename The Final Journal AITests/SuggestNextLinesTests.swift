@@ -82,10 +82,10 @@ final class SuggestNextLinesTests: XCTestCase {
         XCTAssertNil(SyllableBand.matching(min: nil, max: nil))
     }
 
-    func testV7IsNotCallable() {
+    func testV7IsCallable() {
         XCTAssertEqual(SuggestNextLinesModel.v6.title, "Current (Model G v4)")
         XCTAssertEqual(SuggestNextLinesModel.v7.title, "V7")
         XCTAssertTrue(SuggestNextLinesModel.v6.isCallable)
-        XCTAssertFalse(SuggestNextLinesModel.v7.isCallable)
+        XCTAssertTrue(SuggestNextLinesModel.v7.isCallable)
     }
 }
