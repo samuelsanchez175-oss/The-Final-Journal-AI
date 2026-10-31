@@ -230,6 +230,10 @@ enum EditorChromeSettings {
 
     /// Ruled lines under each lyric bar. Syllable-count buttons sit on these lines. On by default.
     static let writingLineGuidesKey = "editor_writing_line_guides"
+
+    /// Faint comma before a clause starter. Tap inserts it. Off hides the marks.
+    /// On by default. A missing comma is not an error and does not change a score.
+    static let commaHintsKey = "editor_comma_hints"
 }
 
 /// Compact − / value / + stepper for the writing-area font size, shown in the Page 3
@@ -509,9 +513,21 @@ struct CoralAppearanceSection: View {
 struct EditorButtonsSection: View {
     @AppStorage(EditorChromeSettings.hideToolbarGlassKey) private var flatten: Bool = false
     @AppStorage(EditorChromeSettings.writingLineGuidesKey) private var showWritingLines: Bool = true
+    @AppStorage(EditorChromeSettings.commaHintsKey) private var commaHints: Bool = true
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
+            Toggle(isOn: $commaHints) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Comma hints").font(.momentumBody)
+                    Text("A faint comma before a clause break. Tap it to keep it. Leaving it does nothing.")
+                        .font(.momentumMetadata)
+                        .foregroundStyle(Momentum.contentSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            .accessibilityHint("On by default. Turn off to hide the faint commas. A missing comma is not an error.")
+
             Toggle(isOn: $showWritingLines) {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Writing lines").font(.momentumBody)
