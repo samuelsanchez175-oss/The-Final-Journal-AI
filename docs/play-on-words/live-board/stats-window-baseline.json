@@ -1,18 +1,16 @@
 {
-  "window_start": "2026-10-10T00:00:00-04:00",
-  "window_end": "2026-10-11T00:00:00-04:00",
+  "window_start": "2026-10-31T00:00:00-04:00",
+  "window_end": "2026-11-01T00:00:00-04:00",
   "tiles": {
-    "confirmed": 169,
-    "unconfirmed": 11,
+    "confirmed": 431,
+    "unconfirmed": 322,
     "unsure": 0,
-    "rejected": 1635,
-    "re_reviewed": 1036,
-    "pairs_both": 1041,
-    "lanes_running": 8,
-    "tab-sound": 0,
-    "tab-double": 0,
-    "tab-split": 0,
-    "tab-hidden": 0,
-    "tab-punch": 0
+    "rejected": 6832,
+    "re_reviewed": 2072,
+    "tab-sound": 1177,
+    "tab-double": 1798,
+    "tab-split": 40,
+    "tab-hidden": 132,
+    "tab-punch": 2381
   }
 }
