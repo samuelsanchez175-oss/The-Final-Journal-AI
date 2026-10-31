@@ -77,13 +77,23 @@ enum CadenceProfiler {
             pauseRatio: pauseRatio,
             internalRhymeDensity: internalDensity,
             endRhymeStrength: endStrength,
-            multisyllableRhymeRate: 0.29,
+            multisyllableRhymeRate: measuredMultisyllableRate(internalRhyme),
             burstiness: burstiness,
             barSpilloverRate: 0,
             frontloadScore: frontloadScore,
             midloadScore: midloadScore,
             endloadScore: endloadScore
         )
+    }
+
+    /// Share of internal clusters whose parts span two or more syllables. No clusters is 0.
+    private static func measuredMultisyllableRate(_ clusters: [RhymeCluster]) -> Double {
+        guard !clusters.isEmpty else { return 0 }
+        let multi = clusters.filter { cluster in
+            let counts = cluster.parts.map { RhymeHighlighterEngine.syllableSlices(of: $0).count }
+            return (counts.max() ?? 0) >= 2
+        }
+        return Double(multi.count) / Double(clusters.count)
     }
 
     private static func mapToProfile(features: FlowDNAFeatures, rhymeClusters: [RhymeCluster]) -> CadenceProfile {

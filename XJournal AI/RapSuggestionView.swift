@@ -1924,9 +1924,11 @@ class RapSuggestionEngine: ObservableObject {
             await MainActor.run {
                 loadingStep = model == .modelYou
                     ? "Model You"
+                    : (directedParams?.suggestModel == .v7
+                    ? "V7"
                     : (ModelGEnvironment.useModelGCore && model == .modelG
                     ? "Model G Core"
-                    : "Generating from signal constraints...")
+                    : "Generating from signal constraints..."))
             }
             #if DEBUG
             print("Model G: Calling generateSuggestions (useModelGCore=\(ModelGEnvironment.useModelGCore))...")

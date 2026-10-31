@@ -583,8 +583,8 @@ struct NoteEditorView: View {
             await rapSuggestionEngine.generateSuggestions(
                 text: currentText,
                 highlights: computedHighlights,
-                // V6 is this call: Model G Core v4, generateFullVerse, then the chat provider for the key.
-                // frontier_v5.py is not on this route. V7 has no endpoint.
+                // V6 and V7 both use this call: Model G Core v4, generateFullVerse, then the chat provider.
+                // V7 adds DirectedGenerationParams.v7WriterBlock. frontier_v7.py is not on this route.
                 model: .modelG,
                 bpm: item.bpm,
                 key: item.key,

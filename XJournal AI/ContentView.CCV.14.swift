@@ -102,7 +102,6 @@ struct DynamicIslandToolbarView: View {
     @Binding var showThemeExpansionSheet: Bool
     @Binding var showExportSheet: Bool
     @State private var showStyleTransferSheet: Bool = false
-    @State private var showSparklerSimSheet: Bool = false
     @State private var showModelPreferences: Bool = false
     @State private var showBeatVocalSheet: Bool = false
     @State private var showNeedAudioForFlow: Bool = false
@@ -543,20 +542,6 @@ struct DynamicIslandToolbarView: View {
             .accessibilityLabel("Expand toolbar")
             .accessibilityHint("Shows Verse, attach, nouns, and the rest of the island")
 
-            Button {
-                showSparklerSimSheet = true
-            } label: {
-                Text("Sparkler")
-                    .font(.system(size: 13, weight: .bold, design: .rounded))
-                    .foregroundStyle(toolbarTint)
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 6)
-                    .background(Capsule().fill(Color.primary.opacity(0.10)))
-            }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Sparkler")
-            .accessibilityHint("Opens the Gunna-style verses already written.")
-
             keyboardToggleButton(font: .title2.weight(.bold))
         }
         .padding(.horizontal, 10)
@@ -718,20 +703,6 @@ struct DynamicIslandToolbarView: View {
                         .accessibilityHint("Browse noun chips and the catalog lines that mention them")
                         .buttonStyle(.plain)
 
-                        Button {
-                            showSparklerSimSheet = true
-                        } label: {
-                            Text("Sparkler")
-                                .font(.system(size: 13, weight: .bold, design: .rounded))
-                                .foregroundStyle(toolbarTint)
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 6)
-                                .background(Capsule().fill(Color.primary.opacity(0.10)))
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel("Sparkler")
-                        .accessibilityHint("Opens the Gunna-style verses already written.")
-
                         Menu {
                             if canRecallLastSuggestions {
                                 Button {
@@ -783,13 +754,6 @@ struct DynamicIslandToolbarView: View {
                             } label: {
                                 Label("Rewrite in an artist’s style", systemImage: "paintbrush")
                             }
-
-                            Button {
-                                showSparklerSimSheet = true
-                            } label: {
-                                Label("Sparkler verse simulation", systemImage: "sparkles")
-                            }
-                            .accessibilityHint("Opens the Gunna-style verses already written, and can write one new verse on this Mac.")
 
                             Button {
                                 showARCritiqueSheet = true
@@ -858,7 +822,7 @@ struct DynamicIslandToolbarView: View {
                         }
                         .disabled(rapSuggestionEngine.isLoading)
                         .accessibilityLabel("Verse")
-                        .accessibilityHint("Tap once to generate. Hold for last suggestions, flow lyrics, style, the Sparkler verse simulation, critic, or Model Preferences.")
+                        .accessibilityHint("Tap once to generate. Hold for last suggestions, flow lyrics, style, critic, or Model Preferences.")
                         .onChange(of: rapSuggestionEngine.isLoading) { oldValue, newValue in
                             if newValue {
                                 // Start rotating animation
@@ -1355,18 +1319,6 @@ struct DynamicIslandToolbarView: View {
                     showStyleTransferSheet = false
                 }
             )
-        }
-        .sheet(isPresented: $showSparklerSimSheet) {
-            SparklerSimSheet(
-                onUse: { suggestion in
-                    insertRapSuggestion(suggestion, true)
-                },
-                onDismiss: {
-                    showSparklerSimSheet = false
-                }
-            )
-            .presentationDetents([.large])
-            .presentationDragIndicator(.visible)
         }
         .sheet(isPresented: $showModelPreferences) {
             ModelPreferencesView()

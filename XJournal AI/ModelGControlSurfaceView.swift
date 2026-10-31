@@ -52,7 +52,8 @@ struct ModelGControlSurfaceView: View {
             syllableTolerance: 2,
             minEndRhymeLines: endRhymeLines,
             corpusTones: corpusTones,
-            freestyleMatchAudioPath: freestyleAudioPath
+            freestyleMatchAudioPath: freestyleAudioPath,
+            suggestModel: lineModel
         )
     }
 
@@ -128,10 +129,12 @@ struct ModelGControlSurfaceView: View {
         VStack(alignment: .leading, spacing: 8) {
             MomentumSectionHeader(title: "Model")
             HStack(spacing: 8) {
-                modelChoice(.v6, enabled: true)
-                modelChoice(.v7, enabled: false)
+                modelChoice(.v6, enabled: SuggestNextLinesModel.v6.isCallable)
+                modelChoice(.v7, enabled: SuggestNextLinesModel.v7.isCallable)
             }
-            Text("Current (Model G v4) is the verse writer already in the app. V7 is coming soon.")
+            Text(lineModel == .v7
+                 ? "V7 uses the in-app writer plus the V7 rhyme, syllable, and cliché rules."
+                 : "Current (Model G v4) is the verse writer already in the app. V7 is selectable.")
                 .font(.caption)
                 .foregroundStyle(Momentum.contentSecondary)
         }
