@@ -933,7 +933,7 @@ private struct NounMentionLinesView: View {
 
     private var nounHeaderLead: some View {
         Group {
-            if leadBullets.isEmpty {
+            if leadBullets.isEmpty && leadSignature == nil {
                 Text(passageText)
                     .font(.system(.callout, design: .rounded))
                     .foregroundStyle(Momentum.contentPrimary)
@@ -942,6 +942,14 @@ private struct NounMentionLinesView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
             } else {
                 VStack(alignment: .leading, spacing: 7) {
+                    if let signature = leadSignature {
+                        Text("\"\(signature.line)\" — \(signature.artist) | \(signature.song)")
+                            .font(.system(.callout, design: .rounded))
+                            .foregroundStyle(Momentum.contentPrimary)
+                            .lineSpacing(4)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                     ForEach(Array(leadBullets.enumerated()), id: \.offset) { _, bullet in
                         HStack(alignment: .firstTextBaseline, spacing: 8) {
                             Text("•")
@@ -958,7 +966,7 @@ private struct NounMentionLinesView: View {
                     }
                 }
                 .accessibilityElement(children: .combine)
-                .accessibilityLabel(leadBullets.joined(separator: ", "))
+                .accessibilityLabel(leadSpoken)
             }
         }
     }
@@ -1124,8 +1132,21 @@ private struct NounMentionLinesView: View {
         return "Filter by artist"
     }
 
+    private var leadSignature: NounCharacteristics.Signature? {
+        NounCharacteristics.signature(category: hit.category, word: hit.item.insertWord)
+    }
+
     private var leadBullets: [String] {
         NounCharacteristics.bullets(category: hit.category, word: hit.item.insertWord)
+    }
+
+    private var leadSpoken: String {
+        var parts: [String] = []
+        if let signature = leadSignature {
+            parts.append("\(signature.line). \(signature.artist), \(signature.song)")
+        }
+        parts.append(contentsOf: leadBullets)
+        return parts.joined(separator: ", ")
     }
 
     private var passageText: String {
