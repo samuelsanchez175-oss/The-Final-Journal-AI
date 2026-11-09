@@ -1,0 +1,218 @@
+# New words review
+
+Mark each line. Y means file that word in the suggested section. N means leave it out. Nothing in this file was added to the chip bank.
+
+These are the proof words whose already_in_chip_bank cell is N. The first pass had 140. Pop Smoke's Dior (Remix) lines 1-40 were taken out of the Gunna count. Words that lived only on those lines are listed under Removed, not in the Y/N list. Nov 6 listens added the rest.
+
+Y/N words: 190
+
+## Y/N
+
+- [ ] Y  [ ] N | .30 | 1 | Guns, Parts and ammo | Young Wheezy | F.N. hold a .30, blue tips in the clip (Uh-huh)
+- [ ] Y  [ ] N | .44 | 1 | Guns, Parts and ammo | I’M ON SOME | He tried finesse, so I let that .44 go
+- [ ] Y  [ ] N | 20K | 1 | Money, Cash | Young Wheezy | Vegas, I spent 20K on the strip
+- [ ] Y  [ ] N | 2C | 1 | Drugs, Pills and powder | P power | Seein' HD off the 2C, my baby
+- [ ] Y  [ ] N | 3D | 1 | Wordplay | P power | You seein' 3D off a Perky, my baby
+- [ ] Y  [ ] N | 63 | 1 | Money, Cash | Our Year | Chauffeur from a 63 AMG Mercedes
+- [ ] Y  [ ] N | 911 | 1 | Cars, Porsche | Dior (Remix) | ZO6 'Vette slime green, ridin' 911 Porsche yellow (Skrrt)
+- [ ] Y  [ ] N | ain't right | 1 | Wordplay | alright | Dirt all on my name, say I'm wrong and I ain't right
+- [ ] Y  [ ] N | Arabics | 1 | Clothing | forever be mine | In public, she covered like Arabics
+- [ ] Y  [ ] N | Austin | 2 | Places, Other cities | Young Wheezy | In Texas like Austin, in L.A., we golfin'
+- [ ] Y  [ ] N | Aventador | 1 | Cars, Lamborghini | Dior (Remix) | I pull up Aventador ('Ador)
+- [ ] Y  [ ] N | bachelor | 2 | Wordplay | $$$ (dollar sign) | Bachelor in my prime 'til I resign, ain't got no bride
+- [ ] Y  [ ] N | bando | 1 | Trap life | too easy | I started off smashin' R&B stars right at the bando (Future)
+- [ ] Y  [ ] N | batter | 1 | Wordplay | Young Wheezy | I put pots on the stove and I whip up the batter (Yeah)
+- [ ] Y  [ ] N | Benji | 1 | Trap life | Bachelor | You know I got plenty of Benji's
+- [ ] Y  [ ] N | Bentley Bentayga | 1 | Cars, Bentley | Different Species | Bossin' her up, bought her Bentley Bentayga, then bought a boutique (Bought a boutique)
+- [ ] Y  [ ] N | Bentley Spur | 1 | Cars, Bentley | fukumean | Bentley Spur fly like a bird
+- [ ] Y  [ ] N | berg | 1 | Jewelry, Stones | fukumean | Ice, the berg, uh, shittin' on all you lil' turds
+- [ ] Y  [ ] N | birthstone | 1 | Jewelry, Stones | Happiness | Got your birthstone, you're an earth tone
+- [ ] Y  [ ] N | blitz | 1 | Trap life | ADDYS | we pull up and blitz (Yeah)
+- [ ] Y  [ ] N | blue guys | 1 | Trap life | $$$ (dollar sign) | Stackin' them blue guys by the dime, color blind
+- [ ] Y  [ ] N | blue tips | 1 | Guns, Parts and ammo | Young Wheezy | F.N. hold a .30, blue tips in the clip (Uh-huh)
+- [ ] Y  [ ] N | BM | 1 | Trap life | back to the moon | I let your BM do whatever I please, you know she do good on her knees
+- [ ] Y  [ ] N | Bojangle | 1 | Food | Bachelor | We fucked at Bojangle
+- [ ] Y  [ ] N | Boss | 1 | Brands, Other houses | Who You Foolin | Chanel, Boss my closet full of C's
+- [ ] Y  [ ] N | boutique | 1 | a shop word, not a city | Different Species | Bossin' her up, bought her Bentley Bentayga, then bought a boutique (Bought a boutique)
+- [ ] Y  [ ] N | BP | 1 | Trap life | back to the moon | In Miami, we BP the boat
+- [ ] Y  [ ] N | Brave A | 1 | Wordplay | paybach | Uh, Southside Mayday in a Brave A hat (A hat)
+- [ ] Y  [ ] N | brick | 2 | Trap life | ADDYS | Coupe is all white like a brick (Like a brick)
+- [ ] Y  [ ] N | bulletproof | 2 | Cars, The rest of the car | back to the moon | Put the bulletproof back on the road
+- [ ] Y  [ ] N | burned the bridge | 2 | Wordplay | idk nomore | We burned the bridge and cut the ties and forever apart
+- [ ] Y  [ ] N | butter | 1 | Money, Cash | one of wun | Wun get the cake and the butter
+- [ ] Y  [ ] N | C's | 1 | Brands, Chanel | Who You Foolin | Chanel, Boss my closet full of C's
+- [ ] Y  [ ] N | cake | 2 | Money, Cash | Young Wheezy | If I run into a problem with cake
+- [ ] Y  [ ] N | cap-a-thon | 1 | Wordplay | I’M ON SOME | They started a cap-a-thon
+- [ ] Y  [ ] N | casa | 1 | Places, The room | hakuna matata | Countin' up cash in the casa, eatin' sweet corn, not pasta (Casa none of that pasta)
+- [ ] Y  [ ] N | caterpillar | 1 | Wordplay | $$$ (dollar sign) | I caterpillar all the way up and down the road for this cake
+- [ ] Y  [ ] N | CC | 1 | Syrups, The cup | P power | We go CC, make her wanna go crazy
+- [ ] Y  [ ] N | chains | 1 | Wordplay | alright | They let me out the chains on a suspended sentence
+- [ ] Y  [ ] N | cheese | 1 | Wordplay | back to the moon | You talkin' at rats and you all with that cheese, we havin' some lemon squeeze
+- [ ] Y  [ ] N | CherryBerry | 1 | Food | I’M ON SOME | Swear this industry sweeter than CherryBerry (Yeah)
+- [ ] Y  [ ] N | Chinese | 1 | Wordplay | too easy | Started talkin' Chinese from all these sticks in the car
+- [ ] Y  [ ] N | chopper | 1 | Guns, Other guns | too easy | Stayed in the hood where the killers at, made my pillow a chopper
+- [ ] Y  [ ] N | city of finesse | 1 | Trap life | $$$ (dollar sign) | Young rich success from the city of finesse (Yeah)
+- [ ] Y  [ ] N | cleaners | 1 | Trap life | back to the moon | I'm sendin' the cleaners through
+- [ ] Y  [ ] N | clear port | 1 | Aviation, Planes | Our Year | Pulled the Bentley truck to the clear port, go and board the Lear
+- [ ] Y  [ ] N | code | 1 | Wordplay | idk nomore | I can't put my finger on it, I don't know the code
+- [ ] Y  [ ] N | ComplexCon | 1 | Events | I’M ON SOME | Exclusive shit only like ComplexCon (Con)
+- [ ] Y  [ ] N | coupe | 4 | Cars, The rest of the car | ADDYS | Coupe is all white like a brick (Like a brick)
+- [ ] Y  [ ] N | Cris' | 2 | Liquors, Champagne | hakuna matata | Still blow smoke like Shotta, I sit back drinkin' out the gold bottle (Cris')
+- [ ] Y  [ ] N | Crush | 1 | Liquors | Young Wheezy | Mixin' up Crush like it's juicе and the gin
+- [ ] Y  [ ] N | D-boy | 1 | Kingpin | P power | I'm giving her the D, I'm the D-boy, baby (I'm giving her the D, I'm the D-boy, baby)
+- [ ] Y  [ ] N | dairy | 1 | Wordplay | I’M ON SOME | Tryna milk me, ain't given 'em no dairy (No)
+- [ ] Y  [ ] N | Dapper Don | 1 | Celebs | I’M ON SOME | I put that shit on, I'm the Dapper Don (Dapper Don)
+- [ ] Y  [ ] N | diamonds | 3 | Jewelry, Stones | too easy | This ain't diamonds you lookin' at and we done updated the roster
+- [ ] Y  [ ] N | dime | 2 | Trap life | $$$ (dollar sign) | Stackin' them blue guys by the dime, color blind
+- [ ] Y  [ ] N | dimes | 1 | Trap life | Young Wheezy | Call up some vibes, I got nothin' but dimes
+- [ ] Y  [ ] N | Dior Croci | 1 | Brands, Dior | Different Species | Dior Croci with the white on her toe
+- [ ] Y  [ ] N | dollar sign | 4 | Trap life | $$$ (dollar sign) | Dollar sign, dollar sign
+- [ ] Y  [ ] N | don | 1 | Trap life | paybach | No remorses for my don, told my mom relax (Relax)
+- [ ] Y  [ ] N | drip | 4 | Trap life | I’M ON SOME | Stop sayin' "drip", you ain't havin' none (Nah)
+- [ ] Y  [ ] N | dris | 1 | Brands, Streetwear | Different Species | I'm dressin' her, new dris (Dris)
+- [ ] Y  [ ] N | drop-top coupe | 1 | Cars, The rest of the car | one of wun | Ride 'round the town in a drop-top coupe and the motor in the trunk
+- [ ] Y  [ ] N | F print | 1 | Brands, Fendi | Dior (Remix) | F print on the corduroys (Corduroys)
+- [ ] Y  [ ] N | F.N. | 1 | Guns, Other guns | Young Wheezy | F.N. hold a .30, blue tips in the clip (Uh-huh)
+- [ ] Y  [ ] N | fifty fifty | 1 | Money, Cash | I’M ON SOME | Look at my jacket, cost fifty, fifty (Fifty, fifty)
+- [ ] Y  [ ] N | finesse | 1 | Trap life | I’M ON SOME | He tried finesse, so I let that .44 go
+- [ ] Y  [ ] N | fitted | 1 | Wordplay | ADDYS | You niggas still cap like a fitted
+- [ ] Y  [ ] N | flex | 1 | Trap life | one of wun | I turn the drip to a flex (Flex)
+- [ ] Y  [ ] N | flossin' | 1 | Wordplay | Who You Foolin | I be flossin', ain't talkin' 'bout my teeth
+- [ ] Y  [ ] N | flour | 1 | Drugs, Cocaine | P power | She sniffin' that flour (Flour), we geekin' for hours (Skeet-skeet)
+- [ ] Y  [ ] N | foreign | 1 | Cars, The rest of the car | fukumean | Crank up the foreign, I swerve
+- [ ] Y  [ ] N | G's | 1 | Money, Cash | Different Species | A Tesla, few G's
+- [ ] Y  [ ] N | gin | 1 | Liquors | Young Wheezy | Mixin' up Crush like it's juicе and the gin
+- [ ] Y  [ ] N | Glockies | 1 | Guns, Glocks | P power | How can I worry 'bout blockin' with buttons when niggas is out here and Glockies is bussin'?
+- [ ] Y  [ ] N | GOAT | 1 | Trap life | Bachelor | When it come to that throat, she GOAT (She GOAT)
+- [ ] Y  [ ] N | govy | 1 | Trap life | P power | How can I not be the topic discussion when niggas got rich off of droppin' my govy?
+- [ ] Y  [ ] N | Greece | 1 | Places, The world | Different Species | Boardin' a jet and we goin' to Greece
+- [ ] Y  [ ] N | grip | 1 | Money, Cash | one of wun | I got all one of one pieces and all of 'em cost me a grip (Grip)
+- [ ] Y  [ ] N | Gulfstream | 1 | Aviation, Planes | forever be mine | We flyin' the Gulfstream with the bat on it
+- [ ] Y  [ ] N | Gunna Wunna | 3 | Artists | Young Wheezy | It's Young Gunna Wunna, young NAV, and Young Wheezy
+- [ ] Y  [ ] N | GunWunna | 1 | Artists | too easy | Young GunWunna, I'm spittin' it proper
+- [ ] Y  [ ] N | hakuna matata | 1 | Phrases | hakuna matata | Living hakuna matata, rockstar, role model (Hakuna matata, role model)
+- [ ] Y  [ ] N | hammer | 1 | Guns, Other guns | Young Wheezy | Still walkin' through the back door with my hammer (No cap)
+- [ ] Y  [ ] N | HB | 1 | Brands, Other houses | one of wun | HB on the tie
+- [ ] Y  [ ] N | Hedi Slimane | 1 | Brands, Other houses | Different Species | She got on Hedi Slimane
+- [ ] Y  [ ] N | Himalayan | 1 | Animals | Different Species | Himalayan cost a quarter, for sure
+- [ ] Y  [ ] N | holdin' nuts | 1 | Trap life | paybach | All you fuckin' suckers keep on holdin' nuts (Holdin' nuts)
+- [ ] Y  [ ] N | hundred plus | 1 | Money, Cash | paybach | Uh, staying down, countin' to hundred plus (Hundred plus)
+- [ ] Y  [ ] N | hunna | 1 | Money, Cash | back to the moon | I'm a real boss and I gotta be cautious 'cause niggas don't keep it a hunna
+- [ ] Y  [ ] N | hunnid G's | 1 | Money, Cash | conscience | I could splurge a hunnid G's, them cuties, I'm stayin' low
+- [ ] Y  [ ] N | hunnid K | 1 | Money, Cash | I’M ON SOME | I had two shows in a day, both one hunnid K (Hunnid K)
+- [ ] Y  [ ] N | Ice | 4 | Jewelry, Stones | fukumean | Ice, the berg, uh, shittin' on all you lil' turds
+- [ ] Y  [ ] N | IG | 1 | Apps | too easy | That lil' IG bitch ain't shit, fucked her in the car (Car)
+- [ ] Y  [ ] N | iron | 1 | Wordplay | Young Wheezy | And I never play golf, but I still keep my iron
+- [ ] Y  [ ] N | JF Kennedy | 1 | Places, Other cities | I’M ON SOME | Landin' in JF Kennedy, bring the whole city out (City out)
+- [ ] Y  [ ] N | juice | 1 | Syrups, The drink | Lemonade | Off the juice (Juice), codeine got me trippin' (Juice)
+- [ ] Y  [ ] N | K | 1 | Drugs, Pills and powder | conscience | K pop, pop a X, my bitch pourin' OJ, Moët
+- [ ] Y  [ ] N | L.A. | 1 | Places, Los Angeles | Young Wheezy | In Texas like Austin, in L.A., we golfin'
+- [ ] Y  [ ] N | Lamborghini | 1 | Cars, Lamborghini | too easy | Yeah, I'm gon' chop a brick like judo, snatch a Lamborghini (Chop it up)
+- [ ] Y  [ ] N | Larry | 1 | NBA | I’M ON SOME | They try me, I'ma shoot like I'm Larry, Larry (Yeah)
+- [ ] Y  [ ] N | Lauren | 1 | Brands, Other houses | hakuna matata | No, it ain't Lauren, it's Raf Simons, it's VETEMENTS steps (Lauren, it's Raf, VETEMENTS steps)
+- [ ] Y  [ ] N | Lear | 2 | Aviation, Planes | Our Year | Pulled the Bentley truck to the clear port, go and board the Lear
+- [ ] Y  [ ] N | lemon squeeze | 1 | Wordplay | back to the moon | You talkin' at rats and you all with that cheese, we havin' some lemon squeeze
+- [ ] Y  [ ] N | lick | 1 | Trap life | Young Wheezy | I done got rich, but I still ain't a lick
+- [ ] Y  [ ] N | lipo | 1 | Trap life | I’M ON SOME | Switched up her dress code, bought her lipo
+- [ ] Y  [ ] N | loco | 1 | Trap life | conscience | Told you I'm just bein' me, I'm a humble beast, but I go loco
+- [ ] Y  [ ] N | Louis Vuitton | 1 | Brands, Louis Vuitton | Our Year | Dressed like I'm sponsored by Louis Vuitton
+- [ ] Y  [ ] N | M | 1 | Money, Cash | Different Species | Put you down, I can show you how to count a M
+- [ ] Y  [ ] N | M-O | 1 | Money, Cash | back to the moon | At the show, and they know my M-O
+- [ ] Y  [ ] N | M's | 2 | Money, Cash | hakuna matata | I ice out the charm, my lil' bitch a model, she made a few M's off a follow (Off a follow)
+- [ ] Y  [ ] N | Madison | 1 | Events | I’M ON SOME | I drip at the Madison (Madison)
+- [ ] Y  [ ] N | Maison | 1 | Brands, Other houses | Our Year | 'Til I hit the mall and I fell in love with Maison
+- [ ] Y  [ ] N | Mansory | 1 | Cars, The rest of the car | one of wun | One-of-one Mansory kit (Kit)
+- [ ] Y  [ ] N | maple | 1 | Syrups, The drink | Bachelor | I slow it all down with the maple
+- [ ] Y  [ ] N | Marilyn Monroe | 1 | Celebs | Different Species | Panoramic with a Marilyn Monroe
+- [ ] Y  [ ] N | Martine Rose | 1 | Brands, Streetwear | Different Species | She rockin' Martine Rose, woah
+- [ ] Y  [ ] N | Maxfield | 1 | Brands, Other houses | Young Wheezy | Racks in, walk in, Maxfield and I'm splurgin' again
+- [ ] Y  [ ] N | Mayday | 1 | Artists | paybach | Uh, Southside Mayday in a Brave A hat (A hat)
+- [ ] Y  [ ] N | Mike Amiri | 1 | Brands, Amiri | Dior (Remix) | Brand new Mike Amiri denim (Denim)
+- [ ] Y  [ ] N | Mikimoto | 1 | Brands, Jewelry houses | Different Species | Mikimoto pearls, they come out the ocean
+- [ ] Y  [ ] N | mirror tint | 1 | Cars, The rest of the car | one of wun | I went and put mirror tint on the tint
+- [ ] Y  [ ] N | Mulsanne | 1 | Cars, Bentley | I’M ON SOME | All-white Mulsanne like it's Heaven-sent (Heaven-sent, yeah)
+- [ ] Y  [ ] N | nay nay | 1 | Trap life | ADDYS | we don't do the nay nay
+- [ ] Y  [ ] N | needle | 1 | Wordplay | back to the moon | When he ain't have nothin' and tried to make somethin', we lookin' through hay for a needle
+- [ ] Y  [ ] N | neighborhood blue | 1 | Trap life | Young Wheezy | Neighborhood blue on the 'Vette, that's for Nip'
+- [ ] Y  [ ] N | New Jersey City | 1 | Places, Other cities | I’M ON SOME | Drive 'cross the bridge, go to New Jersey City, yeah (City, yeah)
+- [ ] Y  [ ] N | New York | 1 | Places, New York | I’M ON SOME | Flew to New York, had to go and see Eliantte
+- [ ] Y  [ ] N | nine hundred racks | 1 | Money, Cash | made for this shit | Young Gunna wanna buy back 'least nine hundred racks to build my stage (Build my stage)
+- [ ] Y  [ ] N | Nip | 1 | Artists | Young Wheezy | Neighborhood blue on the 'Vette, that's for Nip'
+- [ ] Y  [ ] N | outer space | 3 | Places, The world | back to the moon | They sat me down like I went outerspace
+- [ ] Y  [ ] N | P Liity | 1 | Artists | fukumean | I'm in this bitch with P Liity
+- [ ] Y  [ ] N | Paterson | 1 | Places, Other cities | I’M ON SOME | I'm chillin' in Paterson
+- [ ] Y  [ ] N | period | 1 | Wordplay | paybach | Nigga ain't gon' touch me and that's period (Period)
+- [ ] Y  [ ] N | petty | 1 | Wordplay | I’M ON SOME | We copping Pateks, we never petty (Nah)
+- [ ] Y  [ ] N | piece of her mind | 1 | Wordplay | Young Wheezy | And she gave me some brain, I got piece of her mind (Yeah)
+- [ ] Y  [ ] N | Pooh | 1 | Artists | paybach | (Pooh, you a fool for this one)
+- [ ] Y  [ ] N | Portugal | 1 | Places, The world | Different Species | To Monaco, flew to Portugal
+- [ ] Y  [ ] N | pot | 1 | Trap life | ADDYS | Broke my wrist in the pot
+- [ ] Y  [ ] N | pound | 1 | Drugs, Weed | fukumean | Smoke out the pound when I'm chillin'
+- [ ] Y  [ ] N | Prince | 1 | Artists | Bachelor | She know I got hoes like I'm Prince
+- [ ] Y  [ ] N | purple | 1 | Syrups, The drink | paybach | Ain't sipped purple in so long, I don't wanna relapse
+- [ ] Y  [ ] N | Quattroporte | 1 | Cars, The rest of the car | Dior (Remix) | Hop out the Quattroporte
+- [ ] Y  [ ] N | rat race | 1 | Wordplay | conscience | I don't stat chase, but I rat race, hustle like in the '80s
+- [ ] Y  [ ] N | reverto | 1 | Cars, The rest of the car | made for this shit | Hoppin' out the reverto
+- [ ] Y  [ ] N | Ricky Owens | 1 | Brands, Rick Owens | Dior (Remix) | And these Ricky Owens denims (Denim)
+- [ ] Y  [ ] N | Rolls Phantom | 3 | Cars, Rolls-Royce | forever be mine | Rolls Phantom, I let her recline
+- [ ] Y  [ ] N | Rolls-Royce | 1 | Cars, The rest of the car | Young Wheezy | Widebody swervin', Rolls-Royce, that's for certain (Skrrt, skrrt)
+- [ ] Y  [ ] N | Ross | 1 | Brands, Other houses | Dior (Remix) | These broke niggas shoppin' at Ross (Ross)
+- [ ] Y  [ ] N | ruby | 1 | Jewelry, Stones | Different Species | Her color stone, ruby
+- [ ] Y  [ ] N | Saint-Tropez | 1 | Places, Resorts | forever be mine | Thinkin' 'bout you, if you missin' me too, well, I'm out in Saint-Tropez
+- [ ] Y  [ ] N | Saks Fifths | 1 | Brands, Other houses | Our Year | Everything came from Saks Fifths
+- [ ] Y  [ ] N | shoe box | 1 | Money, The stash | one of wun | I been had the shoe box of monеy all under my bed (My bed)
+- [ ] Y  [ ] N | sipper | 1 | Syrups, The drink | Who You Foolin | I'm a sipper, can tell when it's cut
+- [ ] Y  [ ] N | sixties | 1 | Drugs, Percs | Lemonade | Addy boys, got some sixties in my bag (Addy)
+- [ ] Y  [ ] N | Skittle | 1 | Drugs, Pills and powder | Dior (Remix) | This baddie wanna pop a Skittle (Skittle)
+- [ ] Y  [ ] N | smoke | 1 | Wordplay | Young Wheezy | Told these lil' boys that they don't want no smoke
+- [ ] Y  [ ] N | snow-bunny | 1 | Woman | one of wun | I'm having a snow-bunny hold up her legs (Legs)
+- [ ] Y  [ ] N | starstruck | 1 | Wordplay | Our Year | She got starstruck by the stars in the wraith, she know I ain't playin' though
+- [ ] Y  [ ] N | straight-eight | 1 | Cars, The rest of the car | forever be mine | Low-key when we slidin', the straight-eight
+- [ ] Y  [ ] N | strap | 1 | Guns, Other guns | Who You Foolin | Keep your strap 'cause these niggas play tough
+- [ ] Y  [ ] N | surface | 1 | Wordplay | paybach | And you thought I was on surface but I rose above (Ooh, woah)
+- [ ] Y  [ ] N | syrup | 3 | Syrups, The drink | idk nomore | Took months without no syrup, ain't no morе codeine in my liver
+- [ ] Y  [ ] N | the 'yo | 1 | Trap life | one of wun | Come to the 'yo
+- [ ] Y  [ ] N | the 80s | 1 | Money, Cash | Our Year | I was tryna grind like the 80s
+- [ ] Y  [ ] N | the dirty | 1 | Places, Sides | made for this shit | I came from the dirty
+- [ ] Y  [ ] N | the east | 1 | Places, Sides | back to the moon | Niggas still rollin', we back on the east
+- [ ] Y  [ ] N | the Met | 1 | Events | one of wun | I'm the best dressed at the Met (The Met)
+- [ ] Y  [ ] N | the moon | 3 | Places, The world | back to the moon | , now I gotta go back to the moon
+- [ ] Y  [ ] N | the north | 1 | Places, Sides | ADDYS | I jumped off the porch and I really went north
+- [ ] Y  [ ] N | the south | 1 | Places, Sides | ADDYS | I come from the south (Come from the south)
+- [ ] Y  [ ] N | the Worm | 1 | NBA | fukumean | Watch me go big likе the Worm
+- [ ] Y  [ ] N | thirty | 1 | Wordplay | Young Wheezy | Ring cost a thirty, I ain't even thirty (Uh-huh)
+- [ ] Y  [ ] N | Thirty-one gang | 1 | Opps, Gangs | P power | Thirty-one gang, it get spooky, my baby
+- [ ] Y  [ ] N | three lines | 1 | Drugs, Pills and powder | $$$ (dollar sign) | Heart of mine, hard to find, got three lines
+- [ ] Y  [ ] N | Toretto | 1 | Characters | Dior (Remix) | Speedin', whippin' like Toretto (Toretto)
+- [ ] Y  [ ] N | Travis | 1 | Artists | Young Wheezy | I went to Houston with Travis, I'm lit (It's lit)
+- [ ] Y  [ ] N | Valentino | 1 | Brands, Other houses | Dior (Remix) | I got Valentino denim (Denim)
+- [ ] Y  [ ] N | Vegas | 2 | Places, Other cities | Young Wheezy | Vegas, I spent 20K on the strip
+- [ ] Y  [ ] N | widebody | 1 | Cars, The rest of the car | Young Wheezy | Widebody swervin', Rolls-Royce, that's for certain (Skrrt, skrrt)
+- [ ] Y  [ ] N | Wun | 1 | Artists | $$$ (dollar sign) | One of one, I'm Wun, bitch, I'm rare
+- [ ] Y  [ ] N | Wun-Wunna | 1 | Artists | back to the moon | Yeah, I know y'all, Wun-Wunna put me on
+- [ ] Y  [ ] N | Wunna | 6 | Artists | idk nomore | Wanna know how Wunna feel? Then listen to my music
+- [ ] Y  [ ] N | X | 1 | Drugs, Pills and powder | conscience | K pop, pop a X, my bitch pourin' OJ, Moët
+- [ ] Y  [ ] N | yat | 1 | Trap life | Bachelor | That my lil' yat, I love fuckin' her face (Yeah)
+- [ ] Y  [ ] N | Young Gun' Wunna | 1 | Artists | conscience | Young Gun' Wunna comin' down Sunset, I'm rollin' in a Rolls
+- [ ] Y  [ ] N | Young Gunna | 7 | Artists | back to the moon | And Young Gunna didn't get a season, these niggas'll never put it on
+- [ ] Y  [ ] N | Young Gunna Wunna | 2 | Artists | fukumean | Young Gunna Wunna back, callin' me splurge
+- [ ] Y  [ ] N | Young Wheezy | 4 | Artists | Young Wheezy | Young Wheezy, Young Wheezy
+- [ ] Y  [ ] N | ZO6 | 1 | Cars, Chevy | Dior (Remix) | ZO6 'Vette slime green, ridin' 911 Porsche yellow (Skrrt)
+
+## Removed from the Gunna count
+
+These words were on the first pass and only on Pop Smoke's lines. They are not in the Y/N list.
+
+- .38
+- automatics
+- Billie Jean
+- BNB
+- corrections
+- D-Nice
+- face time
+- glizzy
+- Glock-30
+- Nappy Blue
+- the island
+- TNT
+
