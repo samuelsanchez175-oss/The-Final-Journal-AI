@@ -762,12 +762,28 @@ private struct NounMentionLinesView: View {
     var body: some View {
         List {
             Section {
-                Text(passageText)
-                    .font(.system(size: 12, weight: .regular, design: .rounded))
-                    .foregroundStyle(Momentum.contentPrimary)
+                if leadBullets.isEmpty {
+                    Text(passageText)
+                        .font(.system(size: 12, weight: .regular, design: .rounded))
+                        .foregroundStyle(Momentum.contentPrimary)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .listRowInsets(NounMentionLinesView.tightRow)
+                        .listRowBackground(Momentum.surfaceElevated)
+                } else {
+                    VStack(alignment: .leading, spacing: 3) {
+                        ForEach(Array(leadBullets.enumerated()), id: \.offset) { _, bullet in
+                            Text("• \(bullet)")
+                                .font(.system(size: 12, weight: .regular, design: .rounded))
+                                .foregroundStyle(Momentum.contentPrimary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                    }
                     .fixedSize(horizontal: false, vertical: true)
                     .listRowInsets(NounMentionLinesView.tightRow)
                     .listRowBackground(Momentum.surfaceElevated)
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel(leadBullets.joined(separator: ", "))
+                }
                 if let tally, !missingCatalog {
                     Text(tally.label)
                         .font(.system(size: 12, weight: .semibold, design: .rounded))
@@ -1015,6 +1031,10 @@ private struct NounMentionLinesView: View {
             return "Showing \(name)"
         }
         return "Filter by artist"
+    }
+
+    private var leadBullets: [String] {
+        NounCharacteristics.bullets(category: hit.category, word: hit.item.insertWord)
     }
 
     private var passageText: String {
