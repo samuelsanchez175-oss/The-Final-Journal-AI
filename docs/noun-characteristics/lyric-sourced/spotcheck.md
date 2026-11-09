@@ -1,207 +1,203 @@
 # Spot-check 25 HIGH lyric bullets
 
 Mark Y if the bullet is what the quoted bars say. Mark N if it is not.
-Pool of HIGH bullets: 534. Sample size: 25.
+Pool of HIGH bullets: 427. Sample size: 25. Seed: 20261110.
 
-1. [ ] Y  [ ] N  charm (Jewelry, worn piece) — iced out on it — GROUP — 3 bars, 3 artists
-   - G Herbo | Give It All | Gave your oldest a iced out 150 charm, I got him flossed up
-   - Lil Uzi Vert | Don’t Save Her | Iced charm, make my neck a little heavier (Uh, oh)
-   - Moneybagg Yo | Salty | Cuban link wit the iced out charm
+1. [ ] Y  [ ] N  VVS (Jewelry, stones) — comes in flooded — GROUP — 6 bars, 5 artists
+   - Future | Ice Attack | Fortieth anniversary, flooded VVS
+   - Money Man | Stay Down Freestyle | VVS diamonds they flooding my piece
+   - Rubi Rose | On Top | VVS diamonds so flooded, ooh
+   - Ty Dolla $ign | Don’t Judge Me | Rollie flood the VVS
+   - YoungBoy Never Broke Again | Come and Take a Ride | 50,000 on my pendant, flooded with them VVs
+   - YoungBoy Never Broke Again | No Luck | Flooded wit VVs I shot outa space I got loaded and landed on Saturn (uh)
 
-2. [ ] Y  [ ] N  codeine (Syrups, codeine drug) — comes by the pint — SPECIFIC — 10 bars, 7 artists
-   - Destroy Lonely | rose gold ice | Pourin' up pints of Codeine, and poppin' off Ecstasy (Ecstacy, yeah)
-   - Destroy Lonely | rose gold ice | Pourin' up pints of Codeine, and poppin' off Ecstasy (Swerve), man
-   - Future | How It Was | Pour a half a pint of codeine in a two liter
-   - Future | March Madness | Get a pint of codeine, pour it up, nigga (Pour it up, nigga)
-   - Lil Keed | Real Slime | Yes, I went to jail, I had pints of codeine
-   - Lil Yachty | Cry Me A River | All of these pints of codeine, I could fund a tuition, I'm runnin' a covenant (Cost me a [?])
-   - Lil Yachty | We Ball Forever | Twenty pints, codeine, three M's in ice inside my bank vault
-   - Quavo | Drop A Dime (Pick A Side) | I sip that sprite, whole pint, codeine
-   - +2 more bars on this bullet in review.md
+2. [ ] Y  [ ] N  Hummer (Cars, car part) — gets driven out — GROUP — 6 bars, 5 artists
+   - Chance the Rapper | Broad Shoulders | Since seven I been daydream, drivin' in a Hummer
+   - Don Toliver | Last Year | Tucked in summer (Yeah), baby, drive the Hummer (Uh huh)
+   - JAY-Z | Made in America | Ten years later, she driving a Hummer
+   - Lil Uzi Vert | Banned from TV | Driving in a Hummer, ayy (Skrrt)
+   - Lil Uzi Vert | Walk | Pull up right in a Hummer, do the drive-by in Hummer
+   - Lil Wayne | Steady Grinding | You could drive a Bentley, you could drive a Hummer (Look)
 
-3. [ ] Y  [ ] N  wine (Play on Words, sound flip) — comes out white — GROUP — 21 bars, 13 artists
-   - DaBaby | For the Night | She don't do the Henny, just white wine (What she do?)
-   - Drake | Girls Need Love (Remix) | White wine, weed smoke
-   - Drake | What’s My Name? | Good weed, white wine, uh
-   - Earl Sweatshirt | Huey | Grab a glass and pour some cold white wine in it
-   - JAY-Z | Break Up (That’s All We Do) | Marijuana, white wine, somewhere under the weather
-   - Juice WRLD | IDGAF (Remix) | Lately I've been in my feelings listening to “white wine“
-   - Justin Bieber | Wake Up Next To You | Genuine and some white wine
-   - Latto | Make Me | Tell him I'm on that white wine diet, it get me looser
-   - +13 more bars on this bullet in review.md
+3. [ ] Y  [ ] N  perc (Drugs, percocet) — they pop it — GROUP — 126 bars, 49 artists
+   - BIA | GEEKALEEK (Remix) | I just popped a Perc' 20, now my head spinnin' (Woah)
+   - BSlime | Keep Tryin’ | Poppin’ the perc keep me calm (Calm)
+   - BashfortheWorld | Cubin Links | I pop perc make the pain stop
+   - Cash Cobain | Body Party | Hold on, hold on let me pop my perc
+   - Cash Cobain | 󠁪dunk | Just popped a Perc', liquor got me slurrin'
+   - Destroy Lonely | Renegade To The South | I just popped a Perc', but I told my P.O, "It's no meds" (Shh, blatt)
+   - Destroy Lonely | different drugz | Pop this Perc', yeah, I'm not lazy, yeah, I'm booted like a missile
+   - Destroy Lonely | vvs valentine | I just pop Perc' pills, watch 'em spread out just like mayo
+   - +118 more bars on this bullet in review.md
 
-4. [ ] Y  [ ] N  Maybach (Cars, car: Mercedes) — comes out black — GROUP — 7 bars, 4 artists
-   - Blac Youngsta | Sleep | Maybach black, I recline my seats
-   - Gunna | Back to Back | Four door Maybach, black on black
-   - Gunna | Kodak Dat | Maybach black, play that back, throw that back, Kodak that
-   - Gunna | Kodak Dat | Yeah, yeah yeah, Maybach black, uh, look
-   - Gunna | WUNNA FLO | Live Maybach black so my life ain't a movie
-   - Playboi Carti | FUK OF IT | All-white Maybach, black curtains (Woo)
-   - Rick Ross | Make It Up As We Go (Remix) | Bank on shack, Maybach black
+4. [ ] Y  [ ] N  Bentley (Cars, car: Bentley) — gets driven out — GROUP — 35 bars, 21 artists
+   - 03 Greedo | Dope Boy (Remix) | Test drivin' Bentley trucks before they came out
+   - BIA | Like Yoga | Just drive a Bentley, not the Rover (Skrrt)
+   - Big Sean | PARTY FAVORS | I let her drive the Bentley once and told her she could keep it
+   - BossMan Dlow | Get In With Me | I'm drivin' the Bentley Bentayga like I don't love my life (Skrrt)
+   - Future | Mind Blown | Polo on my draws, Bentley in my drive way
+   - Gunna | Gang Gang | Drive the Bentley or the Range (Drive the Bentley or the Range)
+   - Gunna | podcast | Uh, they can hear the Bentley when I drive past (Skrrt-skrrt)
+   - JAY-Z | Don’t You Know | Push wigs back, push Bentley drops that's yellow
+   - +27 more bars on this bullet in review.md
 
-5. [ ] Y  [ ] N  swisher (Drugs, weed wrap) — gets sparked up — GROUP — 6 bars, 5 artists
-   - Lil Wayne | S.A.S.A.R.A.F. | Man light up that Swisher,
-   - PARTYNEXTDOOR | Clique’d Up | I handle the coke and get lit on that swisher
-   - Rick Ross | Accident Murderers | Vodka spills on the concrete, light a Swisher, we miss ya
-   - Tory Lanez | D.O.E / The Lights | But keep them lights under our swisher 'cause tonight we getting blown
-   - Tory Lanez | Out Of Center | I light the swisher like I light the picture
-   - Young Dolph | Flavor | I light up my swisher, [?] confedential
+5. [ ] Y  [ ] N  nails (Nails, nails) — comes out black — GROUP — 4 bars, 2 artists
+   - Destroy Lonely | NO WORRIES | Black nails, my bitch bad, baby villain
+   - Destroy Lonely | RAF tee | Most of my bitches got black nails, huh
+   - Destroy Lonely | mvp | And my bad bitch, she got black nails, she a vamp too, huh
+   - Travis Scott | Lords Never Worry | Gold grills, black nails, little niggas out of line, huh?
 
-6. [ ] Y  [ ] N  rose (Toys, sex toy) — comes out gold — SPECIFIC — 390 bars, 76 artists
-   - 03 Greedo | Voodoo | Blood money on my neck, bitch I made it rose gold
-   - 21 Savage | Still Serving | Bought a AP rose gold, AP yellow gold, nigga and I bought one plain
-   - BashfortheWorld | Bash Romo | So I need rose gold
-   - BashfortheWorld | Tequila & Champagne | Buy a bitch some rose gold, none of this here stainless
-   - Berner | Details | You ever see a .45, made of rose gold?
-   - Big Sean | Don’t Like.1 | Rose gold Jesus piece with the brown ice (Woah)
-   - Big Sean | First Chain | Platinum gold, rose gold, what you want?
-   - BigDawg Money | Coke Flow | AP, two-tone, rose gold
-   - +382 more bars on this bullet in review.md
+6. [ ] Y  [ ] N  roses (Flowers, flower) — comes out red — GROUP — 5 bars, 5 artists
+   - Lil Wayne | ID1 | Red roses, hangin’, over the gateway upside down
+   - Lil Yachty | Made of Glass | Red roses, gold skin with your hair
+   - Meek Mill | Walkin’ on Air | Bought a bitch a hundred acres, all red roses
+   - Moneybagg Yo | Out Of The Streets | Roses red, hundreds blue (True)
+   - Ty Dolla $ign | This Time | Hundred red roses on ya door step
 
-7. [ ] Y  [ ] N  rims (Cars, car part) — comes out red — GROUP — 4 bars, 4 artists
-   - Drake | Circo Loco | SF90 rims red like a poker chip (Pussy)
-   - Gunna | Woah Woah | Steve Harvey, Benz red, rims solid kill (Ayy)
-   - Meek Mill | Cypher | In my all red rims
-   - Rick Ross | That’s On My Momma | Red rims, red car
+7. [ ] Y  [ ] N  Urus (Cars, car: Lamborghini) — gets driven out — GROUP — 3 bars, 2 artists
+   - Gunna | ICE | So all my foreigns go fast, yeah, drive the Urus like Sunny
+   - Gunna | Picture Perfect | Drive this Lamborghini Urus, it's a motorsport, uh (Skrt, skrt)
+   - Lil Yachty | Made Martian | Drivin' a Urus on Florida sand
 
-8. [ ] Y  [ ] N  Cross (Jewelry, worn piece) — iced out on it — GROUP — 12 bars, 7 artists
-   - Curren$y | V12 Benz (Remix) | Iced out cross, ain’t nothin’ like Uzi
-   - Gunna | Chrome heart Cross | Iced out cross on the shooters and the robbers
-   - Gunna | Chrome heart Cross | Iced out cross on the shooters, okay
-   - Gunna | Chrome heart Cross | Iced out cross, with the shooters and the robbers (Woo)
-   - Gunna | Chrome heart Cross | Iced out cross, with the shooters and thе robbers (Iced out cross)
-   - Gunna | Chrome heart Cross | Yeah, yeah, iced out cross on the shooters, okay
-   - Gunna | Slam the Door | Iced out the cross like a reverend (Reverend)
-   - Juice WRLD | Christian Mingle | Iced-out my cross so I look like a rich-ass nigga from Christian Mingle (Amen)
-   - +4 more bars on this bullet in review.md
-
-9. [ ] Y  [ ] N  Cognac (Liquors, cognac) — gets sipped on — GROUP — 13 bars, 8 artists
-   - 03 Greedo | Move Pt. 2 | I'm right up the street from Coney Island, sippin' cognac
-   - Big Sean | Ol’ Skool Pontiac | Yeah, I'm in my ol’ skool Pontiac, sippin on that Cognac
-   - Future | Moment of Clarity | Lately I give 'em like a five, sip cognac
-   - J. Cole | Caged Bird | Drinking cognac I'm past grinning
-   - J. Cole | Give Nas Prop | That made me wanna sit back, relax, sip a cognac
-   - J. Cole | Jack | We drinkin' cognac, she high off contact
-   - J. Cole | Killers | I sip this cognac, though
-   - JAY-Z | Bounce Bitch | You drink, I'ma Cognac yo ass up
-   - +5 more bars on this bullet in review.md
-
-10. [ ] Y  [ ] N  wings (Play on Words, sound flip) — comes out red — GROUP — 4 bars, 4 artists
-   - Big Sean | 2010 BET Hip Hop Awards - Cypher 5 | Detroit’s Angel, I even got red wings
-   - Drake | Moment 4 Life | Shout out to the OVO, red wings and fatigues, oh
-   - Rick Ross | If They Knew | Black car, keep it flyer than them Red Wings
-   - Young Thug | Sup Mate | Red wings, red bottoms, I'm a fuckin' devil (Yeah, yeah )
-
-11. [ ] Y  [ ] N  deuce (Syrups, stacked cup) — poured up a four — SPECIFIC — 7 bars, 7 artists
-   - 03 Greedo | Scope | Sippin' Kobe, that's a four up in a deuce to get me poured
-   - Juice WRLD | Soldier (Full Session Edit) | I pour a four in a deuce, huh
-   - Ken Carson | Get Off | I pour a four in a deuce, I sip lean like it's water
-   - Lil Wayne | CivilTV Next Up Cypher | I chunk a deuce, pour a four all inside an eight ounce
-   - Meek Mill | Fuck & Smoke | I'ma pop the seal, and pour another four (Deuce)
-   - Moneybagg Yo | Pressin’ | Me and 30 poured up a four, deuce-deuce (Deuce)
-   - Trippie Redd | Crash | I pour a four in the deuce, ayy (Wock', yeah)
-
-12. [ ] Y  [ ] N  Margiela (Brands, house: Margiela) — comes out black — SPECIFIC — 3 bars, 3 artists
-   - Destroy Lonely | HEARTLESS | Fit black, Margiela seams
-   - Gunna | on one tonight | Dressed like a biker, rockin' black Margiela loafers, the one with the lace (Yeah, yeah)
-   - Migos | Can’t Believe It | Dressed in black Margiela, I'm the Grim Reaper
-
-13. [ ] Y  [ ] N  see (Play on Words, sound flip) — comes out green — GROUP — 13 bars, 9 artists
-   - Chief Keef | It’s More | All I see green, green, nothin' in between
-   - Chief Keef | It’s More | All I see green, no broccoli, I eat beans
-   - Chief Keef | It’s More | No brown, no white, all I see green
-   - Drake | Swagga Like Us | I can only see green now, happy St. Paddy's
-   - Drake | Swagger Like Us | I can only see green now happy St.Patty's
-   - Drake | Warriors | I Can Only See Green Now I Happy Saint Pattys
-   - Dreezy | Spar | It's a black/white world but I only see green
-   - Earl Sweatshirt | Square | I see green in the beast like Polly
-   - +5 more bars on this bullet in review.md
-
-14. [ ] Y  [ ] N  Bape (Brands, fashion name) — comes out black — GROUP — 3 bars, 3 artists
-   - Gunna | My Hood | And that Bape black, cost a dub, with a Caddy to match it
-   - Rick Ross | Lakers In The 80's | Argyle socks, black Bape jackets
-   - Tyler, the Creator | Burger | At a nude beach in Rome, in a black Bape spaghetti strap made of Ramen noodles
-
-15. [ ] Y  [ ] N  rims (Cars, car part) — comes out yellow — GROUP — 3 bars, 3 artists
-   - Lil Gnar | PB&J | All white rims, yellow F's like a duck face (Skrrt)
-   - Yo Gotti | They Be on It (Remix) | Lip stick oh shit Ice rims yellow bitch
-   - Young Stoner Life | Tezzus Mane La’Flair | Yellow rims, yellow big booty, yellow bones (Uh, bitch), huh, yellow
-
-16. [ ] Y  [ ] N  AP (Jewelry, wristwatch) — comes out white — GROUP — 3 bars, 3 artists
-   - 21 Savage | Brains | Bust down, skeleton, AP, white gold, ain't no rose (On God, on God)
-   - EST Gee | Jeffery’s Innocent | White AP, Lady Gaga (Ayy)
-   - Offset | CODE | White ceramic AP (White), black ceramic AP (Black)
-
-17. [ ] Y  [ ] N  Rolls (Cars, car: Rolls-Royce) — comes out red — GROUP — 3 bars, 3 artists
-   - Meek Mill | Talk To Me Nice | I pull up in a red Rolls, stop givin' flowers to niggas I'm better than
-   - Ty Dolla $ign | This Time | Red Rolls Royce, you deserve that
-   - Tyler, The Creator | RIDE AROUND (Version 2) | Rolls, red rim, dream, women will lie (Glee, glee)
-
-18. [ ] Y  [ ] N  Wraith (Cars, car: Rolls-Royce) — comes out red — GROUP — 13 bars, 10 artists
-   - Future | Patek Water | Chain give you headache, pull up in a red Wraith (Oh yeah)
-   - Lil Uzi Vert | Red Wraith | I just want a Red Wraith (I just want a Red Wraith)
-   - Lil Wayne | TAlk tO Me (Remix) | The Wraith red, Ben Frank, my friends dead (Yeah)
-   - Lil Yachty | Loaded Up | Give me a yam I'mma cop the red wraith, pull up with a gold machete
-   - Meek Mill | War Pain | I'm tryna turn my CLS into a red Wraith
-   - Migos | Crown the Kings | Riding in the red Wraith, row your boat (Boats)
-   - Moneybagg Yo | FEBRUARY | Pull up red Wraith, hurt they heart, February (crystal)
-   - Moneybagg Yo | Oh Fuck | Big red Wraith, I'm Santa Claus (Skrrt)
-   - +5 more bars on this bullet in review.md
-
-19. [ ] Y  [ ] N  rims (Cars, car part) — comes out black — GROUP — 9 bars, 6 artists
-   - Chance the Rapper | Black Santa | Black rims, black Phantom
-   - G Herbo | Ima Boss | With the black rims and the tan doors
-   - Justin Bieber | Otis (Freestyle) | Riding in an all-black Benz with the all-black rims
-   - Justin Bieber | The Intro | Black rims, black body
-   - Lil Wayne | Young Money Ballaz | Black tires, black rims, just to help 'em look good
-   - Meek Mill | Brush ’Em Off | White Benz black rims shit look like a domino
-   - Meek Mill | Raw | Ok, black Impalla, black rims, black tims, black ice
-   - Rick Ross | Get Away | All black black rims, call her Porscha
-   - +1 more bars on this bullet in review.md
-
-20. [ ] Y  [ ] N  panties (Lingerie, underwear) — comes out pink — GROUP — 5 bars, 4 artists
+8. [ ] Y  [ ] N  panties (Lingerie, underwear) — comes out pink — GROUP — 5 bars, 4 artists
    - 03 Greedo | Beat That Thang Down | No make up on, in her pink panties
    - Lil Wayne | Colors | Sippin' on pink panties in the stretched limousine
    - Lil Wayne | Colors | They takin' off pink panties when we hit the room please
    - Quality Control | Come On | The chain be Chanel, the panties pink Prada (Woo)
    - Tyler, the Creator | Seven | With some matching pink panties, lipstick from my granny
 
-21. [ ] Y  [ ] N  snake (Animals, snake) — comes out black — SPECIFIC — 3 bars, 3 artists
-   - Meek Mill | Walkin’ on Air | Slip a black snake in a nigga's sheets
-   - Tyler, the Creator | Commercial | This Black Snake Moan is somethin' to suck bitch
-   - Vic Mensa | XXL Freshmen 2014 Cypher - Part 1 | Black snake moan, tre-eight long as bone tissue
-
-22. [ ] Y  [ ] N  bandana (Clothing, headwear) — comes out black — GROUP — 10 bars, 10 artists
-   - Chance the Rapper | Black Santa | Black flag, black bandana
-   - DMX | Money Money Money (Original) | My president black, bandana is blue (You know what I'm sayin'?)
-   - Destroy Lonely | SYRUP SIPPIN | My bitch rockin' a black bandana (BLAKAMERIKA)
-   - Earl Sweatshirt | Post* | Black bandana sipping fanta blastin Bauhaus
-   - Key Glock | Actin | Black bandana 'round his face, 'cause the young nigga savage (Savage)
-   - Kodak Black | Slay Like Santa | Black bandana, it's tied 'round the Drac'
-   - Migos | Chapter 1 | Got a banana, black bandana hang off the handle (Grrah)
-   - Pop Smoke | Demeanor | My president black, bandana is blue (You know what I'm sayin'?)
+9. [ ] Y  [ ] N  tints (Cars, car part) — comes out black — GROUP — 10 bars, 9 artists
+   - Drake | Grammys | Black tints, low profile
+   - G Herbo | Break Yoself | Caddie truck with Kevlar and black tints, Obama whip
+   - J. Cole | Pinball II | Black SUV's, black tints would you look at that?
+   - JAY-Z | BLACK PARADE | Black tints (Yeah), matte black (Yeah, yeah)
+   - Juice WRLD | Newww (Snare) | New kicks, new wrist, new car, black tints
+   - Juice WRLD | She On Go (In The Moment) | I'm in a truck with the black tints, run up get left in the past tense
+   - Lil Bibby | Game Over | Real black tints, I just hide in the whip
+   - Lil Wayne | Dark Shades | Blood to bloodline, pearl white, black tints
    - +2 more bars on this bullet in review.md
 
-23. [ ] Y  [ ] N  flowers (Flowers, flower) — comes out red — GROUP — 3 bars, 3 artists
-   - Future | Hit My Line | Got the red flowers, nigga, yeah, yeah
-   - G Herbo | Slide (Remix) | 9-1-1, knock him down, Twin Towers, red showers, red flowers
-   - Quality Control | Red Flowers | Nigga, I want a hundred bands and some red flowers
+10. [ ] Y  [ ] N  bandana (Clothing, headwear) — comes out purple — SPECIFIC — 3 bars, 3 artists
+   - 03 Greedo | Big Grape | Purple bandana wrapped around my face, yeah
+   - Key Glock | Standin On Top Of Shit | Been flexin' on camera wit' big ass racks and a purple bandana (Gang)
+   - NLE Choppa | Chicago to Memphis | Purple bandana, purple outfit, purple rain, like I'm Prince (Crip, crip, crip, crip, crip, crip)
 
-24. [ ] Y  [ ] N  double cup (Syrups, stacked cup) — gets poured up — GROUP — 38 bars, 23 artists
-   - 21 Savage | Fuckin Niggaz Bitches | I'm pourin' syrup in my double cup, she asked to hit my cup
-   - 21 Savage | Woah | I take that double cup and then I pour a four (Mudd, mudd)
-   - BossMan Dlow | Boss Talk | Double cup, I'm pourin' Henny out the fifth, nigga (Nigga)
-   - Cash Cobain | GRIMEY | I'm toasting her, pouring up, double cup
-   - Fetty Wap | Change Your Life | ​Pour me up, double cup, have a drink (Huh)
-   - Future | Ion Wanna Die | Had a double cup poured all at recess
-   - Homixide Gang | HXG Bizness | Yeah, when I'm pouring mud, I double cup, I'm sippin'
-   - Juice WRLD | Cha-Ching Freestyle* | Uh, I'm pourin up Prince in the double cup, no purple rain
-   - +30 more bars on this bullet in review.md
+11. [ ] Y  [ ] N  Pendant (Jewelry, worn piece) — comes in flooded — GROUP — 7 bars, 4 artists
+   - Lil Keed | Relapse Game | Water on my neck, done flooded the pendant
+   - NAV | Taking Chances | Pendant flooded with rocks, I like it better when my neck is cold
+   - YoungBoy Never Broke Again | Life Support | Take you to Shyne and flood your pendant
+   - YoungBoy Never Broke Again | Loner Life | The pendant got floods in it
+   - YoungBoy Never Broke Again | McQueen | VVS diamonds, I flood out my pendant
+   - YoungBoy Never Broke Again | No Fun | Wooden chain, now my pendant is flooded
+   - diamond* | skys the limit | The sky really the limit, Baguettes, they flood my pendant
 
-25. [ ] Y  [ ] N  Gucci (Brands, house: Gucci) — comes out red — SPECIFIC — 5 bars, 5 artists
-   - 03 Greedo | Gucci Down Molly Up | Gucci scarf, it's blue and red (Gucci scarf, it's blue and red)
-   - Gunna | Freak N You | She got on leggings, them Gucci red-greens
-   - Lil Keed | Mozzarella | Green and red Gucci on me, feeling like the Joker (Woo)
-   - Lil Uzi Vert | Fresh | Red Gucci leather, yeah, Raf Simons sweater
-   - Rick Ross | King Boss | And red Gucci slippers she can ..get the soul
+12. [ ] Y  [ ] N  percy (Drugs, percocet) — they pop it — GROUP — 3 bars, 3 artists
+   - 2Pac | Write This Down (ft. Biggie, DMX, Eazy E, Ice Cube, Dr Dre, NWA, Nipsey, Snoop Dogg) | Pop a Percy, go retarded
+   - Juice WRLD | Make No Noise | Percy' pop, mix it with the syrup, don't do no Xans (No)
+   - Lil Keed | No Cap | Popped me a Percy and popped me an Addy
+
+13. [ ] Y  [ ] N  Double R (Cars, car: Rolls-Royce) — comes out black — GROUP — 7 bars, 5 artists
+   - Future | Off Dat | Jet black double R with a bunny (Brr), clockin' (Brr), cloak
+   - Lil Baby | Like A Pimp | I keep this scrap in the car, and a black Double R
+   - Meek Mill | Fly Rich | Black Double-R with your bitch, mane
+   - Meek Mill | Fly Rich | Black Double-R, back the fuck off
+   - Rick Ross | UH OH | In the black double R in this double park (Woah)
+   - YoungBoy Never Broke Again | I Got The Bag | You know that the double R black (D-Roc)
+   - YoungBoy Never Broke Again | MASA | Black Double R, me and Petey, nigga (Pablo)
+
+14. [ ] Y  [ ] N  charm (Jewelry, worn piece) — iced out on it — GROUP — 3 bars, 3 artists
+   - G Herbo | Give It All | Gave your oldest a iced out 150 charm, I got him flossed up
+   - Lil Uzi Vert | Don’t Save Her | Iced charm, make my neck a little heavier (Uh, oh)
+   - Moneybagg Yo | Salty | Cuban link wit the iced out charm
+
+15. [ ] Y  [ ] N  exotic (Drugs, weed) — gets rolled up — GROUP — 10 bars, 8 artists
+   - Destroy Lonely | Been Knew | I roll up an exotic blunt, I remember we was smokin' O's of the midget
+   - Destroy Lonely | Love the Feelin’ | Take exotic and roll it up (up)
+   - Future | Got Her Thirsty | Exotic rollin' exotic, feel the blue cheese
+   - Future | No Brainer | Rollin' up exotic ('Xotic), bands in all my pockets (Cash)
+   - Gunna | THUGBABY | Nigga, I be rolling on exotic, finna get me out my zone
+   - Ken Carson | Raver | And after we fuck, make her roll my exotic
+   - Lil Yachty | Found Myself (Remix) | I'm stuck up, I only roll exotic broccoli
+   - Trippie Redd | ZIAS Demon Time Reaction Freestyle | I fuckin' roll exotic in a cone
+   - +2 more bars on this bullet in review.md
+
+16. [ ] Y  [ ] N  blue (Play on Words, sound flip) — comes out black — GROUP — 18 bars, 10 artists
+   - G Herbo | Eastside Story | Fazo had one that was blue black
+   - GloRilla | Crazy Story (Remix) | Mask up, leave the ho blue, black
+   - JAY-Z | Hell Yeah (Remix) | Trying to beat me blue, black and orange
+   - Juice WRLD | Tim Westwood Freestyle | I'll leave your eye blue black
+   - Lil Uzi Vert | Changed My Phone | Diamonds, they white and blue, black
+   - Lil Uzi Vert | Free Smooth (Freestyle) | How you do that? Beat it blue, black
+   - Lil Uzi Vert | I KNOW | All my diamonds blue, black (Black)
+   - Lil Uzi Vert | I’m So Sorry | How you get your diamonds hitting on like blue black? (on like blue black?)
+   - +10 more bars on this bullet in review.md
+
+17. [ ] Y  [ ] N  Cullinan (Cars, car: Rolls-Royce) — gets driven out — GROUP — 4 bars, 4 artists
+   - Drake | Small Town Fame 2 | Used to drive the Cullinan in through all the winter sleep
+   - Lil Keed | No Reason | The Cullinan drive like a bitch (Skrrt)
+   - Lil Uzi Vert | Guts | I pulled up drivin' two lane Cullinan, no I don't give no fucks
+   - Lil Yachty | PAWG | I just drove a Cullinan just like an old Hummer (Damn)
+
+18. [ ] Y  [ ] N  Ghost (Cars, car: Rolls-Royce) — gets driven out — GROUP — 5 bars, 5 artists
+   - Chance the Rapper | Everything (Remix) | Seen dead bodies, everything, so I drove the Ghost (skrrt)
+   - DJ Khaled | KEEP GOING | My car haunted, I'm driving a Ghost
+   - G Herbo | Everything | Seen dead bodies, everything, so I drove the Ghost
+   - Migos | New Atlanta | I'm drivin' the Ghost, scarin' niggas like Michael Myers (Ahh)
+   - Money Man | Addictive | I went from a Neon to pushing a Ghost, she just wanna elope
+
+19. [ ] Y  [ ] N  belt (Clothing, bag or extra) — comes out black — GROUP — 8 bars, 6 artists
+   - Chief Keef | All I Care About | My gun know martial arts, need a black belt right now
+   - JAY-Z | Block Rock | My enemies is subdued, I'm a black belt
+   - Lil Wayne | Before Tune Gets Back | I be kicking girls out the condo, I got a black belt
+   - Lil Wayne | Real Shit (All On Me) | Under the Gucci' black belt
+   - Meek Mill | So Far To Go | 9th-degree black belt in the Art of Blow
+   - Tory Lanez | Been Getting Money | And I'm still kicking shit, bitch black belt
+   - Veeze | 6am Freestyle (Remix) | I got road rage, Johnny Cage, black belt, drop kick (Drop kick)
+   - Veeze | No Stars in Maybachs | It's a Glock with a hrr attached, this the black belt
+
+20. [ ] Y  [ ] N  Cullinan (Cars, car: Rolls-Royce) — comes out red — GROUP — 3 bars, 3 artists
+   - Lil Keed | Knocked Off | That Cullinan red and white look like some bev'
+   - Playboi Carti | PRADA* | Red Cullinan truck, red insides too (Uh)
+   - Sniper Gang | MILWAUKEE | Red, I see red, I see red, the Cullinan red pickin' up bread
+
+21. [ ] Y  [ ] N  Hi-Tech (Syrups, codeine syrup) — comes by the pint — GROUP — 12 bars, 8 artists
+   - 03 Greedo | Pourin | I just got a pint of Hi-Tech, I don't need no juice
+   - 03 Greedo | Pourin | I kept pourin' up that Hi-Tech pint
+   - 03 Greedo | Pourin | I stay pourin' up that Hi-Tech pint
+   - DY Krazy | Off Some Percs | Hi-Tech pints, let's match some fours
+   - EST Gee | Top Dolla | Pint of Hi-Tech red (Mud), gotta put that shit up on your head
+   - Gunna | Off White VLONE | Buy Hi-Tech pints by the case (By the case)
+   - Moneybagg Yo | Federal Fed | Hi-Tech red, he poured it by the pint (Hi-Tech)
+   - Moneybagg Yo | Homicide | I bought me a pint of that Hi-Tech, I crack it and pour it
+   - +4 more bars on this bullet in review.md
+
+22. [ ] Y  [ ] N  Nike (Brands, shoe) — comes out white — GROUP — 4 bars, 3 artists
+   - J. Cole | I Got It | You know powder blue suit, white Nike her
+   - JAY-Z | Take You Home With Me A.K.A. Body | Y'know, powder blue Rocawear suit, white Nike her
+   - JAY-Z | You Rock My World (Track Masters Remix) | The white Nike Airs, we call em' Wifey Airs
+   - Lil Wayne | Got Me A Model | Gucci tile, white Nike, Gucci's soul
+
+23. [ ] Y  [ ] N  owl (Animals, bird) — comes out white — SPECIFIC — 12 bars, 3 artists
+   - 03 Greedo | White Owl | Fly and I come alive at night, stalk the rat like a white owl
+   - 03 Greedo | White Owl | High, like a white owl in the sky
+   - 03 Greedo | White Owl | I'm getting high like a white owl, white owl, white owl
+   - 03 Greedo | White Owl | I'm goin' up like a white owl, white owl, white owl
+   - 03 Greedo | White Owl | I'm up all night like a white owl, white owl, white owl
+   - 03 Greedo | White Owl | Iced out like a white owl, white owl, white owl
+   - 03 Greedo | White Owl | Matter fact with a white owl, white owl, white owl
+   - 03 Greedo | White Owl | Right now, right now, goin' up like a white owl
+   - +4 more bars on this bullet in review.md
+
+24. [ ] Y  [ ] N  Hellcat (Cars, car: Dodge) — comes out red — GROUP — 3 bars, 3 artists
+   - 03 Greedo | About That | Give me cat in a red Hellcat
+   - Fivio Foreign | Switch Talk | Hellcat red key press, tires scream loud when I floor it (skrrt, gone)
+   - YoungBoy Never Broke Again | Step Out (Demo) | Maybach, Rolls Truck, Hellcat red
+
+25. [ ] Y  [ ] N  hollows (Guns, gun gear) — gets loaded up — GROUP — 6 bars, 6 artists
+   - Chief Keef | Tomorrow | I got a clip full of hollows
+   - Juice WRLD | AY YO!! (Purple Devil) | 30 in the .45, clip full of hollows
+   - Meek Mill | Cold Hearted | I was loading gold hollows in my little Glock-40
+   - Yo Gotti | Full Time | A clip full of hollows, a pocket full of cash
+   - Young Nudy | Umbrella | Clip full of hollows, I'ma bust 'em all (Pussy)
+   - YoungBoy Never Broke Again | Icy | Lightning, hollows in the clip don't do no fighting
 
