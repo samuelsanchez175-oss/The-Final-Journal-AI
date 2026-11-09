@@ -744,6 +744,7 @@ private struct NounMentionLinesView: View {
     @State private var tally: NounMentionTally?
     @State private var artistID: String?
     @State private var showingArtists = false
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     private var phrases: [String] {
         NounBankCatalog.mentionPhrases(for: hit.item, category: hit.category)
@@ -762,52 +763,33 @@ private struct NounMentionLinesView: View {
     var body: some View {
         List {
             Section {
-                if leadBullets.isEmpty {
-                    Text(passageText)
-                        .font(.system(size: 12, weight: .regular, design: .rounded))
-                        .foregroundStyle(Momentum.contentPrimary)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .listRowInsets(NounMentionLinesView.tightRow)
-                        .listRowBackground(Momentum.surfaceElevated)
-                } else {
-                    VStack(alignment: .leading, spacing: 3) {
-                        ForEach(Array(leadBullets.enumerated()), id: \.offset) { _, bullet in
-                            Text("• \(bullet)")
-                                .font(.system(size: 12, weight: .regular, design: .rounded))
-                                .foregroundStyle(Momentum.contentPrimary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                    }
-                    .fixedSize(horizontal: false, vertical: true)
-                    .listRowInsets(NounMentionLinesView.tightRow)
-                    .listRowBackground(Momentum.surfaceElevated)
-                    .accessibilityElement(children: .combine)
-                    .accessibilityLabel(leadBullets.joined(separator: ", "))
-                }
-                if let tally, !missingCatalog {
-                    Text(tally.label)
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                if !extraNames.isEmpty {
+                    Text("Also matches \(extraNames.joined(separator: ", "))")
+                        .font(.caption)
                         .foregroundStyle(Momentum.contentSecondary)
-                        .listRowInsets(NounMentionLinesView.tightRow)
-                        .listRowBackground(Momentum.surfaceElevated)
-                        .accessibilityLabel(tally.label)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .listRowInsets(EdgeInsets(top: 2, leading: 16, bottom: 6, trailing: 16))
+                        .listRowBackground(Color.clear)
+                        .listRowSeparator(.hidden)
+                        .accessibilityLabel("Also matches \(extraNames.joined(separator: ", "))")
                 }
+                nounHeaderCard
+                    .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 8, trailing: 16))
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
                 Button {
                     showingArtists = true
                 } label: {
                     Label(filterTitle, systemImage: "line.3.horizontal.decrease.circle")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .contentShape(Rectangle())
                 }
                 .disabled(artists.isEmpty)
-                .listRowInsets(NounMentionLinesView.tightRow)
+                .listRowInsets(EdgeInsets(top: 10, leading: 16, bottom: 10, trailing: 16))
                 .listRowBackground(Momentum.surfaceElevated)
                 .accessibilityHint("Opens a list of artists so the lines can be limited to one")
-                if !extraNames.isEmpty {
-                    Text("Also matches \(extraNames.joined(separator: ", "))")
-                        .font(.system(size: 12, weight: .regular, design: .rounded))
-                        .foregroundStyle(Momentum.contentSecondary)
-                        .listRowInsets(NounMentionLinesView.tightRow)
-                        .listRowBackground(Momentum.surfaceElevated)
-                }
                 if hit.category == .feelings {
                     Text(NounBankFeelingsNote.page)
                         .font(.system(size: 13, weight: .medium, design: .rounded))
@@ -903,6 +885,115 @@ private struct NounMentionLinesView: View {
             }
             loading = false
         }
+    }
+
+    private var showsHeaderStats: Bool {
+        tally != nil && !missingCatalog
+    }
+
+    private var headerStatsBesideLead: Bool {
+        showsHeaderStats && !dynamicTypeSize.isAccessibilitySize
+    }
+
+    private var nounHeaderCard: some View {
+        Group {
+            if headerStatsBesideLead {
+                HStack(alignment: .top, spacing: 12) {
+                    nounHeaderLead
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    nounHeaderStats(trailing: true)
+                        .frame(width: 90, alignment: .trailing)
+                }
+                .overlay(alignment: .trailing) {
+                    Rectangle()
+                        .fill(Momentum.hairline)
+                        .frame(width: 1)
+                        .padding(.vertical, 2)
+                        .padding(.trailing, 96)
+                        .accessibilityHidden(true)
+                        .allowsHitTesting(false)
+                }
+            } else {
+                VStack(alignment: .leading, spacing: 12) {
+                    nounHeaderLead
+                    if showsHeaderStats {
+                        nounHeaderStats(trailing: false)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+            }
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background {
+            RoundedRectangle(cornerRadius: Momentum.corner, style: .continuous)
+                .fill(Momentum.surfaceElevated)
+        }
+    }
+
+    private var nounHeaderLead: some View {
+        Group {
+            if leadBullets.isEmpty {
+                Text(passageText)
+                    .font(.system(.callout, design: .rounded))
+                    .foregroundStyle(Momentum.contentPrimary)
+                    .lineSpacing(4)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            } else {
+                VStack(alignment: .leading, spacing: 7) {
+                    ForEach(Array(leadBullets.enumerated()), id: \.offset) { _, bullet in
+                        HStack(alignment: .firstTextBaseline, spacing: 8) {
+                            Text("•")
+                                .font(.system(.callout, design: .rounded))
+                                .foregroundStyle(Momentum.contentPrimary)
+                                .accessibilityHidden(true)
+                            Text(bullet)
+                                .font(.system(.callout, design: .rounded))
+                                .foregroundStyle(Momentum.contentPrimary)
+                                .lineSpacing(4)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                    }
+                }
+                .accessibilityElement(children: .combine)
+                .accessibilityLabel(leadBullets.joined(separator: ", "))
+            }
+        }
+    }
+
+    private func nounHeaderStats(trailing: Bool) -> some View {
+        let alignment: HorizontalAlignment = trailing ? .trailing : .leading
+        return VStack(alignment: alignment, spacing: 8) {
+            nounHeaderStat(tally?.hits ?? 0, "hits", trailing: trailing)
+            nounHeaderStat(tally?.artists ?? 0, "artists", trailing: trailing)
+            nounHeaderStat(tally?.songs ?? 0, "songs", trailing: trailing)
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(headerStatsLabel)
+    }
+
+    private func nounHeaderStat(_ value: Int, _ name: String, trailing: Bool) -> some View {
+        VStack(alignment: trailing ? .trailing : .leading, spacing: 2) {
+            Text(value.formatted())
+                .font(.headline.bold())
+                .monospacedDigit()
+                .foregroundStyle(Momentum.contentPrimary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.65)
+            Text(name)
+                .font(.caption2)
+                .foregroundStyle(Momentum.contentSecondary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+        }
+        .frame(maxWidth: .infinity, alignment: trailing ? .trailing : .leading)
+    }
+
+    private var headerStatsLabel: String {
+        guard let tally else { return "" }
+        return "\(tally.hits.formatted()) hits, \(tally.artists.formatted()) artists, \(tally.songs.formatted()) songs"
     }
 
     private var feelingHint: String {
