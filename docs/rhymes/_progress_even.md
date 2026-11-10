@@ -18,6 +18,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 | 8 | j-cole | J. Cole | 637 | 33703 | 227851 | 29138 | 198713 | 223771 | 2026-11-10 01:24 ET |
 | 9 | future | Future | 756 | 30648 | 166786 | 27705 | 139081 | 164130 | 2026-11-10 01:25 ET |
 | 10 | young-dolph | Young Dolph | 632 | 25431 | 154359 | 26238 | 128121 | 152111 | 2026-11-10 01:26 ET |
+| 11 | young-stoner-life | Young Stoner Life | 544 | 23989 | 139607 | 27920 | 111687 | 137607 | 2026-11-10 01:27 ET |
 
 ## Failures
 
@@ -25,7 +26,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
 ## Status
 
-Finished 10/386: Young Dolph.
+Finished 11/386: Young Stoner Life.
 
 ## Final
 
