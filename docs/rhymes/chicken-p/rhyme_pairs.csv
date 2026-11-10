@@ -1,0 +1,806 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",enough,2,I only use the money counter 'cause of paper cuts,cuts,END,ASSONANCE,vowel,MED,Y
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",cool,2,I only use the money counter 'cause of paper cuts,use,INNER,SLANT,cmu,MED,Y
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",don't,2,I only use the money counter 'cause of paper cuts,only,INNER,SLANT,cmu,MED,Y
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",enough,2,I only use the money counter 'cause of paper cuts,money,INNER,SLANT,cmu,MED,Y
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",make,2,I only use the money counter 'cause of paper cuts,paper,INNER,SLANT,cmu,MED,Y
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",enough,3,It probably take me like thirty days to make a buck,buck,END,SLANT,cmu,MED,Y
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",like,3,It probably take me like thirty days to make a buck,like,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",make,3,It probably take me like thirty days to make a buck,days,INNER,SLANT,cmu,MED,Y
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",make,3,It probably take me like thirty days to make a buck,make,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",make,3,It probably take me like thirty days to make a buck,take,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,1,"I'm like, ""Nigga, is you cool?"" You don't make enough (Frrt, phew)",enough,4,"I'ma drive the coupe today, lil' brodie, take the truck",truck,END,SLANT,cmu,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,money,2,I only use the money counter 'cause of paper cuts,cuts,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,cuts,3,It probably take me like thirty days to make a buck,buck,END,ASSONANCE,vowel,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,money,3,It probably take me like thirty days to make a buck,buck,INNER,SLANT,cmu,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,paper,3,It probably take me like thirty days to make a buck,days,INNER,SLANT,cmu,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,paper,3,It probably take me like thirty days to make a buck,make,INNER,SLANT,cmu,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,paper,3,It probably take me like thirty days to make a buck,take,INNER,SLANT,cmu,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,cuts,4,"I'ma drive the coupe today, lil' brodie, take the truck",truck,END,ASSONANCE,vowel,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,money,4,"I'ma drive the coupe today, lil' brodie, take the truck",truck,INNER,SLANT,cmu,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,only,4,"I'ma drive the coupe today, lil' brodie, take the truck",brodie,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,paper,4,"I'ma drive the coupe today, lil' brodie, take the truck",take,INNER,SLANT,cmu,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,paper,4,"I'ma drive the coupe today, lil' brodie, take the truck",today,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,2,I only use the money counter 'cause of paper cuts,use,4,"I'ma drive the coupe today, lil' brodie, take the truck",coupe,INNER,SLANT,cmu,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,days,3,It probably take me like thirty days to make a buck,make,INNER,SLANT,cmu,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,probably,3,It probably take me like thirty days to make a buck,thirty,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,take,3,It probably take me like thirty days to make a buck,days,INNER,SLANT,cmu,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,take,3,It probably take me like thirty days to make a buck,make,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,buck,4,"I'ma drive the coupe today, lil' brodie, take the truck",truck,END,PERFECT,cmu,HIGH,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,days,4,"I'ma drive the coupe today, lil' brodie, take the truck",take,INNER,SLANT,cmu,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,days,4,"I'ma drive the coupe today, lil' brodie, take the truck",today,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,like,4,"I'ma drive the coupe today, lil' brodie, take the truck",drive,INNER,SLANT,cmu,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,make,4,"I'ma drive the coupe today, lil' brodie, take the truck",take,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,make,4,"I'ma drive the coupe today, lil' brodie, take the truck",today,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,take,4,"I'ma drive the coupe today, lil' brodie, take the truck",take,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,3,It probably take me like thirty days to make a buck,take,4,"I'ma drive the coupe today, lil' brodie, take the truck",today,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,like,5,Peter Piper packed a pack of pounds and he sealed 'em up,Piper,INNER,SLANT,cmu,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,probably,5,Peter Piper packed a pack of pounds and he sealed 'em up,Peter,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,probably,5,Peter Piper packed a pack of pounds and he sealed 'em up,sealed,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,thirty,5,Peter Piper packed a pack of pounds and he sealed 'em up,Peter,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,3,It probably take me like thirty days to make a buck,thirty,5,Peter Piper packed a pack of pounds and he sealed 'em up,sealed,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,4,"I'ma drive the coupe today, lil' brodie, take the truck",I'ma,4,"I'ma drive the coupe today, lil' brodie, take the truck",lil,INNER,SLANT,spelling,LOW,Y
+Peter Piper,4,"I'ma drive the coupe today, lil' brodie, take the truck",today,4,"I'ma drive the coupe today, lil' brodie, take the truck",take,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,4,"I'ma drive the coupe today, lil' brodie, take the truck",drive,5,Peter Piper packed a pack of pounds and he sealed 'em up,Piper,INNER,SLANT,cmu,MED,Y
+Peter Piper,4,"I'ma drive the coupe today, lil' brodie, take the truck",drive,6,I just cracked a pint of pie and I'm pourin' up,pie,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,4,"I'ma drive the coupe today, lil' brodie, take the truck",drive,6,I just cracked a pint of pie and I'm pourin' up,pint,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,5,Peter Piper packed a pack of pounds and he sealed 'em up,packed,5,Peter Piper packed a pack of pounds and he sealed 'em up,pack,INNER,SLANT,cmu,MED,Y
+Peter Piper,5,Peter Piper packed a pack of pounds and he sealed 'em up,Peter,5,Peter Piper packed a pack of pounds and he sealed 'em up,sealed,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,5,Peter Piper packed a pack of pounds and he sealed 'em up,pack,6,I just cracked a pint of pie and I'm pourin' up,cracked,INNER,SLANT,cmu,MED,Y
+Peter Piper,5,Peter Piper packed a pack of pounds and he sealed 'em up,packed,6,I just cracked a pint of pie and I'm pourin' up,cracked,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,5,Peter Piper packed a pack of pounds and he sealed 'em up,Piper,6,I just cracked a pint of pie and I'm pourin' up,pie,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,5,Peter Piper packed a pack of pounds and he sealed 'em up,Piper,6,I just cracked a pint of pie and I'm pourin' up,pint,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,5,Peter Piper packed a pack of pounds and he sealed 'em up,'em,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",'em,END,REPEAT,spelling,HIGH,N
+Peter Piper,6,I just cracked a pint of pie and I'm pourin' up,pint,6,I just cracked a pint of pie and I'm pourin' up,pie,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,6,I just cracked a pint of pie and I'm pourin' up,pourin,7,What the fuck wrong with my neck? This bitch glowin' up,wrong,INNER,SLANT,cmu,MED,Y
+Peter Piper,6,I just cracked a pint of pie and I'm pourin' up,cracked,8,"Front-end, back, back, back, and I'm showin' up",back,INNER,SLANT,cmu,MED,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,What,7,What the fuck wrong with my neck? This bitch glowin' up,fuck,INNER,SLANT,cmu,MED,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,glowin,8,"Front-end, back, back, back, and I'm showin' up",showin,END,MULTI,multi,HIGH,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,fuck,8,"Front-end, back, back, back, and I'm showin' up",Front,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,neck,8,"Front-end, back, back, back, and I'm showin' up",end,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,What,8,"Front-end, back, back, back, and I'm showin' up",Front,INNER,SLANT,cmu,MED,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,bitch,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",spin,INNER,SLANT,cmu,MED,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,fuck,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",front,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,neck,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",ends,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,What,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",front,INNER,SLANT,cmu,MED,Y
+Peter Piper,7,What the fuck wrong with my neck? This bitch glowin' up,wrong,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",all,INNER,SLANT,cmu,MED,Y
+Peter Piper,8,"Front-end, back, back, back, and I'm showin' up",back,8,"Front-end, back, back, back, and I'm showin' up",back,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,8,"Front-end, back, back, back, and I'm showin' up",back,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",back,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,8,"Front-end, back, back, back, and I'm showin' up",end,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",ends,INNER,SLANT,cmu,MED,Y
+Peter Piper,8,"Front-end, back, back, back, and I'm showin' up",Front,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",front,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,8,"Front-end, back, back, back, and I'm showin' up",Front,10,"If you could put more paper in your pockets, they ain't full enough",enough,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",book,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",put,INNER,SLANT,cmu,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",ends,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",ends,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",all,10,"If you could put more paper in your pockets, they ain't full enough",more,INNER,SLANT,cmu,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",book,10,"If you could put more paper in your pockets, they ain't full enough",could,INNER,SLANT,cmu,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",book,10,"If you could put more paper in your pockets, they ain't full enough",full,INNER,SLANT,cmu,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",book,10,"If you could put more paper in your pockets, they ain't full enough",put,INNER,SLANT,cmu,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",front,10,"If you could put more paper in your pockets, they ain't full enough",enough,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",put,10,"If you could put more paper in your pockets, they ain't full enough",could,INNER,SLANT,cmu,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",put,10,"If you could put more paper in your pockets, they ain't full enough",full,INNER,SLANT,cmu,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",put,10,"If you could put more paper in your pockets, they ain't full enough",put,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",all,11,"Gotta drop a lil' more in your soda, it ain't dark enough",more,INNER,SLANT,cmu,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",front,11,"Gotta drop a lil' more in your soda, it ain't dark enough",enough,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,9,"I'll spin the front-ends, book all the back-ends, I put 'em up",spin,11,"Gotta drop a lil' more in your soda, it ain't dark enough",lil,INNER,SLANT,cmu,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",could,10,"If you could put more paper in your pockets, they ain't full enough",full,INNER,SLANT,cmu,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",could,10,"If you could put more paper in your pockets, they ain't full enough",put,INNER,SLANT,cmu,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",paper,10,"If you could put more paper in your pockets, they ain't full enough",ain't,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",put,10,"If you could put more paper in your pockets, they ain't full enough",full,INNER,SLANT,cmu,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",enough,11,"Gotta drop a lil' more in your soda, it ain't dark enough",enough,END,REPEAT,spelling,HIGH,N
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",ain't,11,"Gotta drop a lil' more in your soda, it ain't dark enough",ain't,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",more,11,"Gotta drop a lil' more in your soda, it ain't dark enough",more,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",paper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",ain't,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",pockets,11,"Gotta drop a lil' more in your soda, it ain't dark enough",dark,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",pockets,11,"Gotta drop a lil' more in your soda, it ain't dark enough",drop,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",pockets,11,"Gotta drop a lil' more in your soda, it ain't dark enough",Gotta,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",enough,12,These lame-ass niggas gotta pour out they heart to fuck,fuck,END,SLANT,cmu,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",ain't,12,These lame-ass niggas gotta pour out they heart to fuck,lame,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",more,12,These lame-ass niggas gotta pour out they heart to fuck,pour,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",paper,12,These lame-ass niggas gotta pour out they heart to fuck,lame,INNER,SLANT,cmu,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",pockets,12,These lame-ass niggas gotta pour out they heart to fuck,gotta,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",pockets,12,These lame-ass niggas gotta pour out they heart to fuck,heart,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",enough,13,"All this fuckin' water on my neck, look like Noah's arc or what?",what,END,SLANT,cmu,MED,Y
+Peter Piper,10,"If you could put more paper in your pockets, they ain't full enough",enough,14,It sound like a lion fightin' every time I start the truck,truck,END,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",drop,11,"Gotta drop a lil' more in your soda, it ain't dark enough",dark,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",Gotta,11,"Gotta drop a lil' more in your soda, it ain't dark enough",dark,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",Gotta,11,"Gotta drop a lil' more in your soda, it ain't dark enough",drop,INNER,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",enough,12,These lame-ass niggas gotta pour out they heart to fuck,fuck,END,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",ain't,12,These lame-ass niggas gotta pour out they heart to fuck,lame,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",dark,12,These lame-ass niggas gotta pour out they heart to fuck,gotta,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",dark,12,These lame-ass niggas gotta pour out they heart to fuck,heart,INNER,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",drop,12,These lame-ass niggas gotta pour out they heart to fuck,gotta,INNER,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",drop,12,These lame-ass niggas gotta pour out they heart to fuck,heart,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",Gotta,12,These lame-ass niggas gotta pour out they heart to fuck,gotta,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",Gotta,12,These lame-ass niggas gotta pour out they heart to fuck,heart,INNER,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",more,12,These lame-ass niggas gotta pour out they heart to fuck,pour,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",enough,13,"All this fuckin' water on my neck, look like Noah's arc or what?",what,END,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",dark,13,"All this fuckin' water on my neck, look like Noah's arc or what?",arc,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",drop,13,"All this fuckin' water on my neck, look like Noah's arc or what?",arc,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",enough,13,"All this fuckin' water on my neck, look like Noah's arc or what?",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",Gotta,13,"All this fuckin' water on my neck, look like Noah's arc or what?",arc,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",more,13,"All this fuckin' water on my neck, look like Noah's arc or what?",All,INNER,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",more,13,"All this fuckin' water on my neck, look like Noah's arc or what?",water,INNER,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",soda,13,"All this fuckin' water on my neck, look like Noah's arc or what?",Noah's,INNER,SLANT,cmu,MED,Y
+Peter Piper,11,"Gotta drop a lil' more in your soda, it ain't dark enough",enough,14,It sound like a lion fightin' every time I start the truck,truck,END,SLANT,cmu,MED,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,gotta,12,These lame-ass niggas gotta pour out they heart to fuck,heart,INNER,SLANT,cmu,MED,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,fuck,13,"All this fuckin' water on my neck, look like Noah's arc or what?",what,END,SLANT,cmu,MED,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,fuck,13,"All this fuckin' water on my neck, look like Noah's arc or what?",fuckin,INNER,SLANT,cmu,MED,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,gotta,13,"All this fuckin' water on my neck, look like Noah's arc or what?",arc,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,heart,13,"All this fuckin' water on my neck, look like Noah's arc or what?",arc,INNER,SLANT,cmu,MED,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,pour,13,"All this fuckin' water on my neck, look like Noah's arc or what?",All,INNER,SLANT,cmu,MED,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,pour,13,"All this fuckin' water on my neck, look like Noah's arc or what?",water,INNER,SLANT,cmu,MED,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,fuck,14,It sound like a lion fightin' every time I start the truck,truck,END,PERFECT,cmu,HIGH,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,gotta,14,It sound like a lion fightin' every time I start the truck,start,INNER,SLANT,cmu,MED,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,heart,14,It sound like a lion fightin' every time I start the truck,start,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,12,These lame-ass niggas gotta pour out they heart to fuck,fuck,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",bus,END,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",All,13,"All this fuckin' water on my neck, look like Noah's arc or what?",water,INNER,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",fuckin,13,"All this fuckin' water on my neck, look like Noah's arc or what?",what,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",what,14,It sound like a lion fightin' every time I start the truck,truck,END,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",arc,14,It sound like a lion fightin' every time I start the truck,start,INNER,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",fuckin,14,It sound like a lion fightin' every time I start the truck,truck,INNER,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",like,14,It sound like a lion fightin' every time I start the truck,fightin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",like,14,It sound like a lion fightin' every time I start the truck,like,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",like,14,It sound like a lion fightin' every time I start the truck,lion,INNER,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",like,14,It sound like a lion fightin' every time I start the truck,time,INNER,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",neck,14,It sound like a lion fightin' every time I start the truck,every,INNER,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",arc,15,I don't think it'd be smart to start with us,smart,INNER,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",arc,15,I don't think it'd be smart to start with us,start,INNER,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",Noah's,15,I don't think it'd be smart to start with us,don't,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",what,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",bus,END,SLANT,cmu,MED,Y
+Peter Piper,13,"All this fuckin' water on my neck, look like Noah's arc or what?",what,17,"Big-ass bankroll on me, I can get you touched",touched,END,SLANT,cmu,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,fightin,14,It sound like a lion fightin' every time I start the truck,time,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,like,14,It sound like a lion fightin' every time I start the truck,fightin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,like,14,It sound like a lion fightin' every time I start the truck,lion,INNER,SLANT,cmu,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,like,14,It sound like a lion fightin' every time I start the truck,time,INNER,SLANT,cmu,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,lion,14,It sound like a lion fightin' every time I start the truck,fightin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,lion,14,It sound like a lion fightin' every time I start the truck,time,INNER,SLANT,cmu,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,start,15,I don't think it'd be smart to start with us,smart,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,start,15,I don't think it'd be smart to start with us,start,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,truck,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",bus,END,SLANT,cmu,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,every,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",ten,INNER,SLANT,cmu,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,start,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",park,INNER,SLANT,cmu,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,truck,17,"Big-ass bankroll on me, I can get you touched",touched,END,ASSONANCE,vowel,MED,Y
+Peter Piper,14,It sound like a lion fightin' every time I start the truck,truck,18,"Baby, I ain't with the roleplay, is we finna fuck?",fuck,END,PERFECT,cmu,HIGH,Y
+Peter Piper,15,I don't think it'd be smart to start with us,smart,15,I don't think it'd be smart to start with us,start,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,15,I don't think it'd be smart to start with us,think,15,I don't think it'd be smart to start with us,it'd,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,it'd,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",Big,INNER,SLANT,cmu,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,it'd,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",it'll,INNER,SLANT,cmu,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,it'd,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",milli,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,smart,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",park,INNER,SLANT,cmu,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,start,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",park,INNER,SLANT,cmu,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,think,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",Big,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,think,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",it'll,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,think,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",milli,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,don't,17,"Big-ass bankroll on me, I can get you touched",bankroll,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,it'd,17,"Big-ass bankroll on me, I can get you touched",Big,INNER,SLANT,cmu,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,think,17,"Big-ass bankroll on me, I can get you touched",Big,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,15,I don't think it'd be smart to start with us,start,19,I'm tryna run up a million dollars (A million dollars),dollars,END,ASSONANCE,vowel,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",Big,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",it'll,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",Big,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",milli,INNER,SLANT,cmu,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",milli,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",it'll,INNER,SLANT,cmu,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",bus,17,"Big-ass bankroll on me, I can get you touched",touched,END,ASSONANCE,vowel,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",ass,17,"Big-ass bankroll on me, I can get you touched",ass,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",ass,17,"Big-ass bankroll on me, I can get you touched",can,INNER,SLANT,cmu,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",Big,17,"Big-ass bankroll on me, I can get you touched",Big,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",it'll,17,"Big-ass bankroll on me, I can get you touched",Big,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",milli,17,"Big-ass bankroll on me, I can get you touched",Big,INNER,SLANT,cmu,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",ten,17,"Big-ass bankroll on me, I can get you touched",get,INNER,SLANT,cmu,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",bus,18,"Baby, I ain't with the roleplay, is we finna fuck?",fuck,END,SLANT,cmu,MED,Y
+Peter Piper,16,"Big-ass ten milli' on me, it'll park a bus (Hm)",bus,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Crush,END,SLANT,cmu,MED,Y
+Peter Piper,17,"Big-ass bankroll on me, I can get you touched",ass,17,"Big-ass bankroll on me, I can get you touched",can,INNER,SLANT,cmu,MED,Y
+Peter Piper,17,"Big-ass bankroll on me, I can get you touched",touched,18,"Baby, I ain't with the roleplay, is we finna fuck?",fuck,END,ASSONANCE,vowel,MED,Y
+Peter Piper,17,"Big-ass bankroll on me, I can get you touched",Big,19,I'm tryna run up a million dollars (A million dollars),million,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,17,"Big-ass bankroll on me, I can get you touched",touched,19,I'm tryna run up a million dollars (A million dollars),run,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,17,"Big-ass bankroll on me, I can get you touched",touched,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Crush,END,ASSONANCE,vowel,MED,Y
+Peter Piper,17,"Big-ass bankroll on me, I can get you touched",touched,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",crushed,END,SLANT,cmu,MED,Y
+Peter Piper,18,"Baby, I ain't with the roleplay, is we finna fuck?",Baby,18,"Baby, I ain't with the roleplay, is we finna fuck?",ain't,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,18,"Baby, I ain't with the roleplay, is we finna fuck?",fuck,19,I'm tryna run up a million dollars (A million dollars),run,INNER,SLANT,cmu,MED,Y
+Peter Piper,18,"Baby, I ain't with the roleplay, is we finna fuck?",fuck,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Crush,END,SLANT,cmu,MED,Y
+Peter Piper,18,"Baby, I ain't with the roleplay, is we finna fuck?",ain't,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",eight,INNER,SLANT,cmu,MED,Y
+Peter Piper,18,"Baby, I ain't with the roleplay, is we finna fuck?",Baby,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",eight,INNER,SLANT,cmu,MED,Y
+Peter Piper,18,"Baby, I ain't with the roleplay, is we finna fuck?",fuck,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",crushed,END,ASSONANCE,vowel,MED,Y
+Peter Piper,19,I'm tryna run up a million dollars (A million dollars),dollars,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Dropped,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,19,I'm tryna run up a million dollars (A million dollars),dollars,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Fanta,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,19,I'm tryna run up a million dollars (A million dollars),run,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Crush,INNER,SLANT,cmu,MED,Y
+Peter Piper,19,I'm tryna run up a million dollars (A million dollars),dollars,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",got,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,19,I'm tryna run up a million dollars (A million dollars),dollars,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",watch,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,19,I'm tryna run up a million dollars (A million dollars),run,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",crushed,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Dropped,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Fanta,INNER,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",four,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",four,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",poured,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",four,INNER,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Crush,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",crushed,END,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Dropped,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",got,INNER,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Dropped,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",watch,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Fanta,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",got,INNER,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Fanta,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",watch,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Crush,22,"All the butter in the pot, like, what you cookin' up? (Huh)",butter,INNER,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Crush,22,"All the butter in the pot, like, what you cookin' up? (Huh)",what,INNER,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Dropped,22,"All the butter in the pot, like, what you cookin' up? (Huh)",pot,INNER,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Fanta,22,"All the butter in the pot, like, what you cookin' up? (Huh)",pot,INNER,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",four,22,"All the butter in the pot, like, what you cookin' up? (Huh)",All,INNER,SLANT,cmu,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",poured,22,"All the butter in the pot, like, what you cookin' up? (Huh)",All,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,20,"Dropped the eight, poured a four and a Fanta, four in the Crush (Huh)",Crush,23,I'm finna hit her raw brick with a brick of cut (Huh),cut,END,SLANT,cmu,MED,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",got,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",watch,INNER,SLANT,cmu,MED,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",crushed,22,"All the butter in the pot, like, what you cookin' up? (Huh)",butter,INNER,SLANT,cmu,MED,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",crushed,22,"All the butter in the pot, like, what you cookin' up? (Huh)",what,INNER,SLANT,cmu,MED,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",got,22,"All the butter in the pot, like, what you cookin' up? (Huh)",pot,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",watch,22,"All the butter in the pot, like, what you cookin' up? (Huh)",pot,INNER,SLANT,cmu,MED,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",why,22,"All the butter in the pot, like, what you cookin' up? (Huh)",like,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",crushed,23,I'm finna hit her raw brick with a brick of cut (Huh),cut,END,SLANT,cmu,MED,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",got,23,I'm finna hit her raw brick with a brick of cut (Huh),raw,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",watch,23,I'm finna hit her raw brick with a brick of cut (Huh),raw,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,21,"I got pointers in my watch, why you get 'em crushed? (Huh)",crushed,25,"This food right here go in the blender, not in the oven",oven,END,ASSONANCE,vowel,MED,Y
+Peter Piper,22,"All the butter in the pot, like, what you cookin' up? (Huh)",butter,22,"All the butter in the pot, like, what you cookin' up? (Huh)",what,INNER,SLANT,cmu,MED,Y
+Peter Piper,22,"All the butter in the pot, like, what you cookin' up? (Huh)",butter,23,I'm finna hit her raw brick with a brick of cut (Huh),cut,INNER,SLANT,cmu,MED,Y
+Peter Piper,22,"All the butter in the pot, like, what you cookin' up? (Huh)",pot,23,I'm finna hit her raw brick with a brick of cut (Huh),raw,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,22,"All the butter in the pot, like, what you cookin' up? (Huh)",what,23,I'm finna hit her raw brick with a brick of cut (Huh),cut,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,22,"All the butter in the pot, like, what you cookin' up? (Huh)",All,24,"I can get you what you need, now tell me what you wanted",wanted,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,22,"All the butter in the pot, like, what you cookin' up? (Huh)",butter,24,"I can get you what you need, now tell me what you wanted",what,INNER,SLANT,cmu,MED,Y
+Peter Piper,22,"All the butter in the pot, like, what you cookin' up? (Huh)",what,24,"I can get you what you need, now tell me what you wanted",what,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,23,I'm finna hit her raw brick with a brick of cut (Huh),brick,23,I'm finna hit her raw brick with a brick of cut (Huh),brick,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,23,I'm finna hit her raw brick with a brick of cut (Huh),hit,23,I'm finna hit her raw brick with a brick of cut (Huh),brick,INNER,SLANT,cmu,MED,Y
+Peter Piper,23,I'm finna hit her raw brick with a brick of cut (Huh),cut,24,"I can get you what you need, now tell me what you wanted",what,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,23,I'm finna hit her raw brick with a brick of cut (Huh),cut,25,"This food right here go in the blender, not in the oven",oven,END,ASSONANCE,vowel,MED,Y
+Peter Piper,23,I'm finna hit her raw brick with a brick of cut (Huh),raw,25,"This food right here go in the blender, not in the oven",not,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,23,I'm finna hit her raw brick with a brick of cut (Huh),cut,26,"Made thirty two days in a row, that's a triple double",double,END,ASSONANCE,vowel,MED,Y
+Peter Piper,23,I'm finna hit her raw brick with a brick of cut (Huh),cut,27,"If you can get 'em to my door, I pay you for the troubles",troubles,END,ASSONANCE,vowel,MED,Y
+Peter Piper,24,"I can get you what you need, now tell me what you wanted",get,24,"I can get you what you need, now tell me what you wanted",tell,INNER,SLANT,cmu,MED,Y
+Peter Piper,24,"I can get you what you need, now tell me what you wanted",what,24,"I can get you what you need, now tell me what you wanted",what,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,24,"I can get you what you need, now tell me what you wanted",get,25,"This food right here go in the blender, not in the oven",blender,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,24,"I can get you what you need, now tell me what you wanted",need,25,"This food right here go in the blender, not in the oven",here,INNER,SLANT,cmu,MED,Y
+Peter Piper,24,"I can get you what you need, now tell me what you wanted",tell,25,"This food right here go in the blender, not in the oven",blender,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,24,"I can get you what you need, now tell me what you wanted",what,25,"This food right here go in the blender, not in the oven",oven,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,24,"I can get you what you need, now tell me what you wanted",need,26,"Made thirty two days in a row, that's a triple double",thirty,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,24,"I can get you what you need, now tell me what you wanted",what,26,"Made thirty two days in a row, that's a triple double",double,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,25,"This food right here go in the blender, not in the oven",oven,26,"Made thirty two days in a row, that's a triple double",double,END,ASSONANCE,vowel,MED,Y
+Peter Piper,25,"This food right here go in the blender, not in the oven",food,26,"Made thirty two days in a row, that's a triple double",two,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,25,"This food right here go in the blender, not in the oven",go,26,"Made thirty two days in a row, that's a triple double",row,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,25,"This food right here go in the blender, not in the oven",here,26,"Made thirty two days in a row, that's a triple double",thirty,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,25,"This food right here go in the blender, not in the oven",oven,27,"If you can get 'em to my door, I pay you for the troubles",troubles,END,ASSONANCE,vowel,MED,Y
+Peter Piper,25,"This food right here go in the blender, not in the oven",blender,27,"If you can get 'em to my door, I pay you for the troubles",get,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,26,"Made thirty two days in a row, that's a triple double",Made,26,"Made thirty two days in a row, that's a triple double",days,INNER,SLANT,cmu,MED,Y
+Peter Piper,26,"Made thirty two days in a row, that's a triple double",double,27,"If you can get 'em to my door, I pay you for the troubles",troubles,END,SLANT,cmu,MED,Y
+Peter Piper,26,"Made thirty two days in a row, that's a triple double",days,27,"If you can get 'em to my door, I pay you for the troubles",pay,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,26,"Made thirty two days in a row, that's a triple double",Made,27,"If you can get 'em to my door, I pay you for the troubles",pay,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,26,"Made thirty two days in a row, that's a triple double",days,28,"If you can get 'em to my door, I'll pay you for the travel",pay,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,26,"Made thirty two days in a row, that's a triple double",Made,28,"If you can get 'em to my door, I'll pay you for the travel",pay,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,27,"If you can get 'em to my door, I pay you for the troubles",'em,28,"If you can get 'em to my door, I'll pay you for the travel",'em,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,27,"If you can get 'em to my door, I pay you for the troubles",can,28,"If you can get 'em to my door, I'll pay you for the travel",can,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,27,"If you can get 'em to my door, I pay you for the troubles",can,28,"If you can get 'em to my door, I'll pay you for the travel",travel,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,27,"If you can get 'em to my door, I pay you for the troubles",door,28,"If you can get 'em to my door, I'll pay you for the travel",door,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,27,"If you can get 'em to my door, I pay you for the troubles",get,28,"If you can get 'em to my door, I'll pay you for the travel",get,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,27,"If you can get 'em to my door, I pay you for the troubles",pay,28,"If you can get 'em to my door, I'll pay you for the travel",pay,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,27,"If you can get 'em to my door, I pay you for the troubles",can,29,"I been down walked out with a ticket, like a fuckin' raffle",raffle,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,27,"If you can get 'em to my door, I pay you for the troubles",door,29,"I been down walked out with a ticket, like a fuckin' raffle",walked,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,27,"If you can get 'em to my door, I pay you for the troubles",troubles,29,"I been down walked out with a ticket, like a fuckin' raffle",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,28,"If you can get 'em to my door, I'll pay you for the travel",can,28,"If you can get 'em to my door, I'll pay you for the travel",travel,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,28,"If you can get 'em to my door, I'll pay you for the travel",travel,29,"I been down walked out with a ticket, like a fuckin' raffle",raffle,END,SLANT,cmu,MED,Y
+Peter Piper,28,"If you can get 'em to my door, I'll pay you for the travel",can,29,"I been down walked out with a ticket, like a fuckin' raffle",raffle,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,28,"If you can get 'em to my door, I'll pay you for the travel",door,29,"I been down walked out with a ticket, like a fuckin' raffle",walked,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,28,"If you can get 'em to my door, I'll pay you for the travel",I'll,29,"I been down walked out with a ticket, like a fuckin' raffle",like,INNER,SLANT,cmu,MED,Y
+Peter Piper,28,"If you can get 'em to my door, I'll pay you for the travel",travel,30,"All these motherfuckin' bricks, I could build a castle",castle,END,SLANT,cmu,MED,Y
+Peter Piper,28,"If you can get 'em to my door, I'll pay you for the travel",can,30,"All these motherfuckin' bricks, I could build a castle",castle,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,28,"If you can get 'em to my door, I'll pay you for the travel",door,30,"All these motherfuckin' bricks, I could build a castle",All,INNER,SLANT,cmu,MED,Y
+Peter Piper,28,"If you can get 'em to my door, I'll pay you for the travel",travel,31,I seen shit you thought wouldn't happen really happen,happen,END,ASSONANCE,vowel,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",raffle,30,"All these motherfuckin' bricks, I could build a castle",castle,END,SLANT,cmu,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",fuckin,30,"All these motherfuckin' bricks, I could build a castle",motherfuckin,INNER,SLANT,cmu,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",ticket,30,"All these motherfuckin' bricks, I could build a castle",bricks,INNER,SLANT,cmu,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",ticket,30,"All these motherfuckin' bricks, I could build a castle",build,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",walked,30,"All these motherfuckin' bricks, I could build a castle",All,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",raffle,31,I seen shit you thought wouldn't happen really happen,happen,END,ASSONANCE,vowel,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",raffle,31,I seen shit you thought wouldn't happen really happen,happen,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",ticket,31,I seen shit you thought wouldn't happen really happen,really,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",ticket,31,I seen shit you thought wouldn't happen really happen,shit,INNER,SLANT,cmu,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",walked,31,I seen shit you thought wouldn't happen really happen,thought,INNER,SLANT,cmu,MED,Y
+Peter Piper,29,"I been down walked out with a ticket, like a fuckin' raffle",raffle,33,You think you could do this shit like me? Take a stab at it,stab,END,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",bricks,30,"All these motherfuckin' bricks, I could build a castle",build,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",castle,31,I seen shit you thought wouldn't happen really happen,happen,END,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",All,31,I seen shit you thought wouldn't happen really happen,thought,INNER,SLANT,cmu,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",bricks,31,I seen shit you thought wouldn't happen really happen,really,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",bricks,31,I seen shit you thought wouldn't happen really happen,shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",build,31,I seen shit you thought wouldn't happen really happen,really,INNER,SLANT,cmu,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",build,31,I seen shit you thought wouldn't happen really happen,shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",castle,31,I seen shit you thought wouldn't happen really happen,happen,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",could,31,I seen shit you thought wouldn't happen really happen,wouldn't,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",these,31,I seen shit you thought wouldn't happen really happen,seen,INNER,SLANT,cmu,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",All,32,"All these niggas really jokes, I sit back and laugh at 'em",All,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",bricks,32,"All these niggas really jokes, I sit back and laugh at 'em",niggas,INNER,SLANT,spelling,LOW,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",bricks,32,"All these niggas really jokes, I sit back and laugh at 'em",really,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",bricks,32,"All these niggas really jokes, I sit back and laugh at 'em",sit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",build,32,"All these niggas really jokes, I sit back and laugh at 'em",really,INNER,SLANT,cmu,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",build,32,"All these niggas really jokes, I sit back and laugh at 'em",sit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",castle,32,"All these niggas really jokes, I sit back and laugh at 'em",back,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",castle,32,"All these niggas really jokes, I sit back and laugh at 'em",laugh,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",these,32,"All these niggas really jokes, I sit back and laugh at 'em",these,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",castle,33,You think you could do this shit like me? Take a stab at it,stab,END,ASSONANCE,vowel,MED,Y
+Peter Piper,30,"All these motherfuckin' bricks, I could build a castle",castle,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,END,ASSONANCE,vowel,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,happen,31,I seen shit you thought wouldn't happen really happen,happen,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,shit,31,I seen shit you thought wouldn't happen really happen,really,INNER,SLANT,cmu,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,happen,32,"All these niggas really jokes, I sit back and laugh at 'em",back,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,happen,32,"All these niggas really jokes, I sit back and laugh at 'em",laugh,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,really,32,"All these niggas really jokes, I sit back and laugh at 'em",really,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,really,32,"All these niggas really jokes, I sit back and laugh at 'em",sit,INNER,SLANT,cmu,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,seen,32,"All these niggas really jokes, I sit back and laugh at 'em",these,INNER,SLANT,cmu,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,shit,32,"All these niggas really jokes, I sit back and laugh at 'em",really,INNER,SLANT,cmu,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,shit,32,"All these niggas really jokes, I sit back and laugh at 'em",sit,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,thought,32,"All these niggas really jokes, I sit back and laugh at 'em",All,INNER,SLANT,cmu,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,happen,33,You think you could do this shit like me? Take a stab at it,stab,END,ASSONANCE,vowel,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,happen,33,You think you could do this shit like me? Take a stab at it,stab,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,really,33,You think you could do this shit like me? Take a stab at it,shit,INNER,SLANT,cmu,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,really,33,You think you could do this shit like me? Take a stab at it,think,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,shit,33,You think you could do this shit like me? Take a stab at it,shit,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,shit,33,You think you could do this shit like me? Take a stab at it,think,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,wouldn't,33,You think you could do this shit like me? Take a stab at it,could,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,31,I seen shit you thought wouldn't happen really happen,happen,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,END,ASSONANCE,vowel,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",back,32,"All these niggas really jokes, I sit back and laugh at 'em",laugh,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",really,32,"All these niggas really jokes, I sit back and laugh at 'em",sit,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",back,33,You think you could do this shit like me? Take a stab at it,stab,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",laugh,33,You think you could do this shit like me? Take a stab at it,stab,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",really,33,You think you could do this shit like me? Take a stab at it,shit,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",really,33,You think you could do this shit like me? Take a stab at it,think,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",sit,33,You think you could do this shit like me? Take a stab at it,shit,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",sit,33,You think you could do this shit like me? Take a stab at it,think,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",back,34,I'll put the switch on your ass like yo' granddaddy,ass,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",back,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",laugh,34,I'll put the switch on your ass like yo' granddaddy,ass,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",laugh,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",niggas,34,I'll put the switch on your ass like yo' granddaddy,ass,INNER,PERFECT,spelling,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",really,34,I'll put the switch on your ass like yo' granddaddy,switch,INNER,SLANT,cmu,MED,Y
+Peter Piper,32,"All these niggas really jokes, I sit back and laugh at 'em",sit,34,I'll put the switch on your ass like yo' granddaddy,switch,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,think,33,You think you could do this shit like me? Take a stab at it,shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,stab,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,END,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,could,34,I'll put the switch on your ass like yo' granddaddy,put,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,like,34,I'll put the switch on your ass like yo' granddaddy,I'll,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,like,34,I'll put the switch on your ass like yo' granddaddy,like,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,shit,34,I'll put the switch on your ass like yo' granddaddy,switch,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,stab,34,I'll put the switch on your ass like yo' granddaddy,ass,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,think,34,I'll put the switch on your ass like yo' granddaddy,switch,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,shit,35,"Bitch, I had a quarter brick back when we was wearin' ballies",Bitch,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,shit,35,"Bitch, I had a quarter brick back when we was wearin' ballies",brick,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,stab,35,"Bitch, I had a quarter brick back when we was wearin' ballies",back,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,stab,35,"Bitch, I had a quarter brick back when we was wearin' ballies",had,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,think,35,"Bitch, I had a quarter brick back when we was wearin' ballies",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,think,35,"Bitch, I had a quarter brick back when we was wearin' ballies",brick,INNER,SLANT,cmu,MED,Y
+Peter Piper,33,You think you could do this shit like me? Take a stab at it,stab,36,"I went half on the strike, me and bro was sharin' tallies",tallies,END,ASSONANCE,vowel,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,ass,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,I'll,34,I'll put the switch on your ass like yo' granddaddy,like,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,ass,35,"Bitch, I had a quarter brick back when we was wearin' ballies",back,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,ass,35,"Bitch, I had a quarter brick back when we was wearin' ballies",had,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,35,"Bitch, I had a quarter brick back when we was wearin' ballies",back,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,35,"Bitch, I had a quarter brick back when we was wearin' ballies",had,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,switch,35,"Bitch, I had a quarter brick back when we was wearin' ballies",Bitch,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,switch,35,"Bitch, I had a quarter brick back when we was wearin' ballies",brick,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,36,"I went half on the strike, me and bro was sharin' tallies",tallies,END,ASSONANCE,vowel,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,ass,36,"I went half on the strike, me and bro was sharin' tallies",half,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,ass,36,"I went half on the strike, me and bro was sharin' tallies",tallies,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,granddaddy,36,"I went half on the strike, me and bro was sharin' tallies",half,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,I'll,36,"I went half on the strike, me and bro was sharin' tallies",strike,INNER,SLANT,cmu,MED,Y
+Peter Piper,34,I'll put the switch on your ass like yo' granddaddy,like,36,"I went half on the strike, me and bro was sharin' tallies",strike,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",Bitch,35,"Bitch, I had a quarter brick back when we was wearin' ballies",brick,INNER,SLANT,cmu,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",had,35,"Bitch, I had a quarter brick back when we was wearin' ballies",back,INNER,SLANT,cmu,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",when,35,"Bitch, I had a quarter brick back when we was wearin' ballies",wearin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",ballies,36,"I went half on the strike, me and bro was sharin' tallies",tallies,END,PERFECT,spelling,HIGH,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",back,36,"I went half on the strike, me and bro was sharin' tallies",half,INNER,SLANT,cmu,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",back,36,"I went half on the strike, me and bro was sharin' tallies",tallies,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",had,36,"I went half on the strike, me and bro was sharin' tallies",half,INNER,SLANT,cmu,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",had,36,"I went half on the strike, me and bro was sharin' tallies",tallies,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",wearin,36,"I went half on the strike, me and bro was sharin' tallies",sharin,INNER,MULTI,multi,HIGH,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",wearin,36,"I went half on the strike, me and bro was sharin' tallies",went,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",when,36,"I went half on the strike, me and bro was sharin' tallies",sharin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",when,36,"I went half on the strike, me and bro was sharin' tallies",went,INNER,SLANT,cmu,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",when wearin,36,"I went half on the strike, me and bro was sharin' tallies",bro sharin,INNER,MULTI,multi,HIGH,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",back,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",racks,INNER,SLANT,cmu,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",had,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",racks,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",wearin,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",send,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,35,"Bitch, I had a quarter brick back when we was wearin' ballies",when,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",send,INNER,SLANT,cmu,MED,Y
+Peter Piper,36,"I went half on the strike, me and bro was sharin' tallies",half,36,"I went half on the strike, me and bro was sharin' tallies",tallies,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,36,"I went half on the strike, me and bro was sharin' tallies",went,36,"I went half on the strike, me and bro was sharin' tallies",sharin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,36,"I went half on the strike, me and bro was sharin' tallies",half,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",racks,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,36,"I went half on the strike, me and bro was sharin' tallies",sharin,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",send,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,36,"I went half on the strike, me and bro was sharin' tallies",tallies,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",racks,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,36,"I went half on the strike, me and bro was sharin' tallies",went,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",send,INNER,SLANT,cmu,MED,Y
+Peter Piper,36,"I went half on the strike, me and bro was sharin' tallies",sharin,38,"One-fifty in the front, another nick' when I pull up (Yeah)",when,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,36,"I went half on the strike, me and bro was sharin' tallies",went,38,"One-fifty in the front, another nick' when I pull up (Yeah)",when,INNER,SLANT,cmu,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",book,38,"One-fifty in the front, another nick' when I pull up (Yeah)",pull,INNER,SLANT,cmu,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",hundred,38,"One-fifty in the front, another nick' when I pull up (Yeah)",another,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",hundred,38,"One-fifty in the front, another nick' when I pull up (Yeah)",front,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",hundred,38,"One-fifty in the front, another nick' when I pull up (Yeah)",One,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",send,38,"One-fifty in the front, another nick' when I pull up (Yeah)",when,INNER,SLANT,cmu,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",book,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",pull,INNER,SLANT,cmu,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",hundred,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",jump,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",hundred,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",truck,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",racks,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",bad,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,37,"Wanna book me? You send a hundred racks, it's goin' up (It's goin' up)",send,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",when,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",fifty,38,"One-fifty in the front, another nick' when I pull up (Yeah)",nick,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",front,38,"One-fifty in the front, another nick' when I pull up (Yeah)",another,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",One,38,"One-fifty in the front, another nick' when I pull up (Yeah)",another,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",One,38,"One-fifty in the front, another nick' when I pull up (Yeah)",front,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",pull,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",pull,END,REPEAT,spelling,HIGH,N
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",another,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",jump,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",another,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",truck,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",fifty,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",bitches,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",fifty,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",dick,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",front,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",jump,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",front,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",truck,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",nick,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",bitches,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",nick,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",dick,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",One,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",jump,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",One,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",truck,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",when,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",when,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",another,40,"Grab her face, tell her open up, spit in her, she stuck",stuck,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",fifty,40,"Grab her face, tell her open up, spit in her, she stuck",spit,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",front,40,"Grab her face, tell her open up, spit in her, she stuck",stuck,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",nick,40,"Grab her face, tell her open up, spit in her, she stuck",spit,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",One,40,"Grab her face, tell her open up, spit in her, she stuck",stuck,INNER,SLANT,cmu,MED,Y
+Peter Piper,38,"One-fifty in the front, another nick' when I pull up (Yeah)",when,40,"Grab her face, tell her open up, spit in her, she stuck",tell,INNER,SLANT,cmu,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",bitches,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",dick,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",truck,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",jump,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",bad,40,"Grab her face, tell her open up, spit in her, she stuck",Grab,INNER,SLANT,cmu,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",bitches,40,"Grab her face, tell her open up, spit in her, she stuck",spit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",dick,40,"Grab her face, tell her open up, spit in her, she stuck",spit,INNER,SLANT,cmu,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",jump,40,"Grab her face, tell her open up, spit in her, she stuck",stuck,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",Rolls,40,"Grab her face, tell her open up, spit in her, she stuck",open,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",truck,40,"Grab her face, tell her open up, spit in her, she stuck",stuck,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",when,40,"Grab her face, tell her open up, spit in her, she stuck",tell,INNER,SLANT,cmu,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",bitches,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",bitches,41,"I get vicious when I'm on that Tris, sippin' out the cup",Tris,INNER,SLANT,spelling,LOW,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",bitches,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,INNER,SLANT,cmu,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",dick,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",dick,41,"I get vicious when I'm on that Tris, sippin' out the cup",Tris,INNER,SLANT,spelling,LOW,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",dick,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",jump,41,"I get vicious when I'm on that Tris, sippin' out the cup",cup,INNER,SLANT,cmu,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",truck,41,"I get vicious when I'm on that Tris, sippin' out the cup",cup,INNER,SLANT,cmu,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",when,41,"I get vicious when I'm on that Tris, sippin' out the cup",get,INNER,SLANT,cmu,MED,Y
+Peter Piper,39,"Rolls truck, bad bitches jump on dick when I pull up (When I pull up)",when,41,"I get vicious when I'm on that Tris, sippin' out the cup",when,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",stuck,41,"I get vicious when I'm on that Tris, sippin' out the cup",cup,END,SLANT,cmu,MED,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",spit,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",spit,41,"I get vicious when I'm on that Tris, sippin' out the cup",Tris,INNER,SLANT,spelling,LOW,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",spit,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",tell,41,"I get vicious when I'm on that Tris, sippin' out the cup",get,INNER,SLANT,cmu,MED,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",tell,41,"I get vicious when I'm on that Tris, sippin' out the cup",when,INNER,SLANT,cmu,MED,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",stuck,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",fuck,END,PERFECT,cmu,HIGH,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",spit,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",spit,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",spit,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,INNER,SLANT,cmu,MED,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",spit,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",spit,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",stuck,43,"Usually I be chasin' the bag, won't even make time for a nut",nut,END,SLANT,cmu,MED,Y
+Peter Piper,40,"Grab her face, tell her open up, spit in her, she stuck",stuck,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",rush,END,SLANT,cmu,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",get,41,"I get vicious when I'm on that Tris, sippin' out the cup",when,INNER,SLANT,cmu,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",Tris,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,INNER,ASSONANCE,vowel,LOW,N
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,41,"I get vicious when I'm on that Tris, sippin' out the cup",Tris,INNER,SLANT,spelling,LOW,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",cup,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",fuck,END,SLANT,cmu,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",sippin,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",Tris,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,INNER,ASSONANCE,vowel,LOW,N
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",Tris,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,INNER,SLANT,spelling,LOW,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",Tris,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,INNER,SLANT,spelling,LOW,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",Tris,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,INNER,SLANT,spelling,LOW,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,INNER,SLANT,cmu,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",vicious,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",cup,43,"Usually I be chasin' the bag, won't even make time for a nut",nut,END,SLANT,cmu,MED,Y
+Peter Piper,41,"I get vicious when I'm on that Tris, sippin' out the cup",cup,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",rush,END,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,INNER,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,INNER,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",tequila,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",tryna,INNER,SLANT,spelling,LOW,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",fuck,43,"Usually I be chasin' the bag, won't even make time for a nut",nut,END,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",tequila,43,"Usually I be chasin' the bag, won't even make time for a nut",even,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",tryna,43,"Usually I be chasin' the bag, won't even make time for a nut",even,INNER,SLANT,spelling,LOW,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",fuck,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",rush,END,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",Chicken,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",give,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",Drink,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",ticket,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",Chicken,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",give,INNER,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",hit,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",ticket,INNER,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",Chicken,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",give,INNER,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",lil,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",ticket,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",Chicken,INNER,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",give,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",mission,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",ticket,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",Chicken,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",give,INNER,SLANT,cmu,MED,Y
+Peter Piper,42,"Drink tequila on a mission, this lil' shit hit me, tryna fuck (Tryna fuck)",shit,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",ticket,INNER,SLANT,cmu,MED,Y
+Peter Piper,43,"Usually I be chasin' the bag, won't even make time for a nut",chasin,43,"Usually I be chasin' the bag, won't even make time for a nut",bag,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,43,"Usually I be chasin' the bag, won't even make time for a nut",nut,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",rush,END,SLANT,cmu,MED,Y
+Peter Piper,43,"Usually I be chasin' the bag, won't even make time for a nut",won't,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",told,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,43,"Usually I be chasin' the bag, won't even make time for a nut",bag,45,"I make money in my sleep, but I be barely catchin' Z's",catchin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,43,"Usually I be chasin' the bag, won't even make time for a nut",chasin,45,"I make money in my sleep, but I be barely catchin' Z's",catchin,INNER,SLANT,cmu,MED,Y
+Peter Piper,43,"Usually I be chasin' the bag, won't even make time for a nut",even,45,"I make money in my sleep, but I be barely catchin' Z's",sleep,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,43,"Usually I be chasin' the bag, won't even make time for a nut",even,45,"I make money in my sleep, but I be barely catchin' Z's",Z's,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,43,"Usually I be chasin' the bag, won't even make time for a nut",make,45,"I make money in my sleep, but I be barely catchin' Z's",make,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,43,"Usually I be chasin' the bag, won't even make time for a nut",nut,45,"I make money in my sleep, but I be barely catchin' Z's",money,INNER,SLANT,cmu,MED,Y
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",Chicken,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",chicken,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",Chicken,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",give,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",Chicken,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",ticket,INNER,SLANT,cmu,MED,Y
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",ticket,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",give,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",gettin,45,"I make money in my sleep, but I be barely catchin' Z's",barely,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",rush,45,"I make money in my sleep, but I be barely catchin' Z's",money,INNER,SLANT,cmu,MED,Y
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",gettin,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",'net,INNER,SLANT,cmu,MED,Y
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",gettin,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",never,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",gettin,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",when,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,44,"I told Chicken I'm gettin' this chicken, I count up a ticket, it give me a rush",told,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",trollin,INNER,SLANT,cmu,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",sleep,45,"I make money in my sleep, but I be barely catchin' Z's",Z's,INNER,SLANT,cmu,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",Z's,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",meet,END,SLANT,cmu,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",barely,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",'net,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",barely,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",never,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",barely,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",when,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",catchin,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",gangster,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",sleep,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",meet,INNER,SLANT,cmu,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",Z's,47,"I be solo like civilians, half a million last week",week,END,SLANT,cmu,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",catchin,47,"I be solo like civilians, half a million last week",half,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",catchin,47,"I be solo like civilians, half a million last week",last,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",sleep,47,"I be solo like civilians, half a million last week",week,INNER,SLANT,cmu,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",Z's,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",breathe,END,SLANT,cmu,MED,Y
+Peter Piper,45,"I make money in my sleep, but I be barely catchin' Z's",Z's,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,END,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",'net,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",never,INNER,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",'net,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",when,INNER,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",never,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",when,INNER,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",meet,47,"I be solo like civilians, half a million last week",week,END,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",gangster,47,"I be solo like civilians, half a million last week",half,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",gangster,47,"I be solo like civilians, half a million last week",last,INNER,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",trollin,47,"I be solo like civilians, half a million last week",solo,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",meet,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",breathe,END,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",'net,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Let,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",meet,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",B,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",never,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Let,INNER,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",Niggas,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",nigga,INNER,SLANT,spelling,LOW,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",trollin,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",told,INNER,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",when,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Let,INNER,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",meet,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,END,SLANT,cmu,MED,Y
+Peter Piper,46,"Niggas trollin' on the 'net, but never gangster when we meet (Pussy)",meet,50,Now I'm playin' with six figures every time I pack a seat,seat,END,PERFECT,cmu,HIGH,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",civilians,47,"I be solo like civilians, half a million last week",million,INNER,SLANT,cmu,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",half,47,"I be solo like civilians, half a million last week",last,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",week,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",breathe,END,SLANT,cmu,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",civilians,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",him,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",civilians,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Lil,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",million,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",him,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",million,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Lil,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",solo,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",told,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",week,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",B,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",week,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,END,REPEAT,spelling,HIGH,N
+Peter Piper,47,"I be solo like civilians, half a million last week",half,49,"I was broke sellin' weed, barely did a stack a week (Uh)",stack,INNER,SLANT,cmu,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",last,49,"I was broke sellin' weed, barely did a stack a week (Uh)",stack,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",solo,49,"I was broke sellin' weed, barely did a stack a week (Uh)",broke,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",week,49,"I was broke sellin' weed, barely did a stack a week (Uh)",weed,INNER,SLANT,cmu,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",week,50,Now I'm playin' with six figures every time I pack a seat,seat,END,SLANT,cmu,MED,Y
+Peter Piper,47,"I be solo like civilians, half a million last week",week,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,END,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",B,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",breathe,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",cuz,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",another,INNER,SLANT,spelling,LOW,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Lil,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",him,INNER,SLANT,cmu,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",breathe,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,END,SLANT,cmu,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",B,49,"I was broke sellin' weed, barely did a stack a week (Uh)",weed,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",B,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",breathe,49,"I was broke sellin' weed, barely did a stack a week (Uh)",weed,INNER,SLANT,cmu,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Let,49,"I was broke sellin' weed, barely did a stack a week (Uh)",barely,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Let,49,"I was broke sellin' weed, barely did a stack a week (Uh)",sellin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",told,49,"I was broke sellin' weed, barely did a stack a week (Uh)",broke,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",breathe,50,Now I'm playin' with six figures every time I pack a seat,seat,END,SLANT,cmu,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",B,50,Now I'm playin' with six figures every time I pack a seat,seat,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",him,50,Now I'm playin' with six figures every time I pack a seat,figures,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",him,50,Now I'm playin' with six figures every time I pack a seat,six,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Let,50,Now I'm playin' with six figures every time I pack a seat,every,INNER,SLANT,cmu,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Lil,50,Now I'm playin' with six figures every time I pack a seat,figures,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",Lil,50,Now I'm playin' with six figures every time I pack a seat,six,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",breathe,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,END,ASSONANCE,vowel,MED,Y
+Peter Piper,48,"Lil' cuz want another B, I told him ""Let that nigga breathe""",breathe,52,"Put me anywhere with gangsters, bet you I adapt with ease",ease,END,SLANT,cmu,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",sellin,49,"I was broke sellin' weed, barely did a stack a week (Uh)",barely,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",weed,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,INNER,SLANT,cmu,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,50,Now I'm playin' with six figures every time I pack a seat,seat,END,SLANT,cmu,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",barely,50,Now I'm playin' with six figures every time I pack a seat,every,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",sellin,50,Now I'm playin' with six figures every time I pack a seat,every,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",stack,50,Now I'm playin' with six figures every time I pack a seat,pack,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",weed,50,Now I'm playin' with six figures every time I pack a seat,seat,INNER,SLANT,cmu,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,END,ASSONANCE,vowel,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",broke,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",told,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",weed,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",weed,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",free,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",free,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,52,"Put me anywhere with gangsters, bet you I adapt with ease",ease,END,SLANT,cmu,MED,Y
+Peter Piper,49,"I was broke sellin' weed, barely did a stack a week (Uh)",week,53,"If they got them bails for the low, I'm bringin' back some P's",P's,END,SLANT,cmu,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,six,50,Now I'm playin' with six figures every time I pack a seat,figures,INNER,SLANT,cmu,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,seat,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,END,ASSONANCE,vowel,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,figures,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Til,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,figures,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",Give,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,seat,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",free,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,six,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Til,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,six,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",Give,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,seat,52,"Put me anywhere with gangsters, bet you I adapt with ease",ease,END,SLANT,cmu,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,every,52,"Put me anywhere with gangsters, bet you I adapt with ease",anywhere,INNER,SLANT,cmu,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,every,52,"Put me anywhere with gangsters, bet you I adapt with ease",bet,INNER,SLANT,cmu,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,pack,52,"Put me anywhere with gangsters, bet you I adapt with ease",adapt,INNER,SLANT,cmu,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,pack,52,"Put me anywhere with gangsters, bet you I adapt with ease",gangsters,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,seat,53,"If they got them bails for the low, I'm bringin' back some P's",P's,END,SLANT,cmu,MED,Y
+Peter Piper,50,Now I'm playin' with six figures every time I pack a seat,seat,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,END,SLANT,cmu,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Til,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",Give,INNER,SLANT,cmu,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",free,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,52,"Put me anywhere with gangsters, bet you I adapt with ease",ease,END,ASSONANCE,vowel,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",free,52,"Put me anywhere with gangsters, bet you I adapt with ease",ease,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,53,"If they got them bails for the low, I'm bringin' back some P's",P's,END,ASSONANCE,vowel,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'em,53,"If they got them bails for the low, I'm bringin' back some P's",some,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Til,53,"If they got them bails for the low, I'm bringin' back some P's",bringin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",free,53,"If they got them bails for the low, I'm bringin' back some P's",P's,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",Give,53,"If they got them bails for the low, I'm bringin' back some P's",bringin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",told,53,"If they got them bails for the low, I'm bringin' back some P's",low,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,END,ASSONANCE,vowel,MED,Y
+Peter Piper,51,"'Til my nigga Smurk free, I told 'em ""Give the 'Raq to me""",'Raq,55,"Got so many tennis chains, I need a racket, please",please,END,ASSONANCE,vowel,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",anywhere,52,"Put me anywhere with gangsters, bet you I adapt with ease",bet,INNER,SLANT,cmu,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",gangsters,52,"Put me anywhere with gangsters, bet you I adapt with ease",adapt,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",ease,53,"If they got them bails for the low, I'm bringin' back some P's",P's,END,PERFECT,cmu,HIGH,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",adapt,53,"If they got them bails for the low, I'm bringin' back some P's",back,INNER,SLANT,cmu,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",gangsters,53,"If they got them bails for the low, I'm bringin' back some P's",back,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",ease,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,END,SLANT,cmu,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",adapt,54,"God forbid this rap shit get slow, I'm in the trap asleep",rap,INNER,SLANT,cmu,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",adapt,54,"God forbid this rap shit get slow, I'm in the trap asleep",trap,INNER,SLANT,cmu,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",anywhere,54,"God forbid this rap shit get slow, I'm in the trap asleep",get,INNER,SLANT,cmu,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",bet,54,"God forbid this rap shit get slow, I'm in the trap asleep",get,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",gangsters,54,"God forbid this rap shit get slow, I'm in the trap asleep",rap,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",gangsters,54,"God forbid this rap shit get slow, I'm in the trap asleep",trap,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",ease,55,"Got so many tennis chains, I need a racket, please",please,END,PERFECT,cmu,HIGH,Y
+Peter Piper,52,"Put me anywhere with gangsters, bet you I adapt with ease",ease,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,END,SLANT,cmu,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",P's,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,END,SLANT,cmu,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",back,54,"God forbid this rap shit get slow, I'm in the trap asleep",rap,INNER,SLANT,cmu,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",back,54,"God forbid this rap shit get slow, I'm in the trap asleep",trap,INNER,SLANT,cmu,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",bringin,54,"God forbid this rap shit get slow, I'm in the trap asleep",forbid,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",bringin,54,"God forbid this rap shit get slow, I'm in the trap asleep",shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",got,54,"God forbid this rap shit get slow, I'm in the trap asleep",God,INNER,SLANT,cmu,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",low,54,"God forbid this rap shit get slow, I'm in the trap asleep",slow,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",P's,55,"Got so many tennis chains, I need a racket, please",please,END,PERFECT,cmu,HIGH,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",back,55,"Got so many tennis chains, I need a racket, please",racket,INNER,SLANT,cmu,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",bails,55,"Got so many tennis chains, I need a racket, please",chains,INNER,SLANT,cmu,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",got,55,"Got so many tennis chains, I need a racket, please",Got,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",P's,55,"Got so many tennis chains, I need a racket, please",need,INNER,SLANT,cmu,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",P's,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,END,SLANT,cmu,MED,Y
+Peter Piper,53,"If they got them bails for the low, I'm bringin' back some P's",P's,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,END,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",forbid,54,"God forbid this rap shit get slow, I'm in the trap asleep",shit,INNER,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",rap,54,"God forbid this rap shit get slow, I'm in the trap asleep",trap,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,55,"Got so many tennis chains, I need a racket, please",please,END,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,55,"Got so many tennis chains, I need a racket, please",need,INNER,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",get,55,"Got so many tennis chains, I need a racket, please",many,INNER,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",get,55,"Got so many tennis chains, I need a racket, please",tennis,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",God,55,"Got so many tennis chains, I need a racket, please",Got,INNER,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",rap,55,"Got so many tennis chains, I need a racket, please",racket,INNER,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",trap,55,"Got so many tennis chains, I need a racket, please",racket,INNER,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,END,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,56,"Got so many bracelets, they can't even wrap my sleeve",even,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",get,56,"Got so many bracelets, they can't even wrap my sleeve",many,INNER,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",God,56,"Got so many bracelets, they can't even wrap my sleeve",Got,INNER,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",rap,56,"Got so many bracelets, they can't even wrap my sleeve",can't,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",rap,56,"Got so many bracelets, they can't even wrap my sleeve",wrap,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",trap,56,"Got so many bracelets, they can't even wrap my sleeve",can't,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",trap,56,"Got so many bracelets, they can't even wrap my sleeve",wrap,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,END,SLANT,cmu,MED,Y
+Peter Piper,54,"God forbid this rap shit get slow, I'm in the trap asleep",asleep,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,END,ASSONANCE,vowel,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",many,55,"Got so many tennis chains, I need a racket, please",tennis,INNER,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",need,55,"Got so many tennis chains, I need a racket, please",please,INNER,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",please,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,END,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",chains,56,"Got so many bracelets, they can't even wrap my sleeve",bracelets,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",Got,56,"Got so many bracelets, they can't even wrap my sleeve",Got,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",many,56,"Got so many bracelets, they can't even wrap my sleeve",many,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",need,56,"Got so many bracelets, they can't even wrap my sleeve",even,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",need,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,INNER,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",please,56,"Got so many bracelets, they can't even wrap my sleeve",even,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",racket,56,"Got so many bracelets, they can't even wrap my sleeve",can't,INNER,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",racket,56,"Got so many bracelets, they can't even wrap my sleeve",wrap,INNER,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",tennis,56,"Got so many bracelets, they can't even wrap my sleeve",many,INNER,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",please,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,END,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",chains,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",bracelets,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",Got,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",Got,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",many,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",many,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",need,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",even,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",need,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,INNER,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",please,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",even,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",racket,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",can't,INNER,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",tennis,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",many,INNER,SLANT,cmu,MED,Y
+Peter Piper,55,"Got so many tennis chains, I need a racket, please",please,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,END,ASSONANCE,vowel,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",can't,56,"Got so many bracelets, they can't even wrap my sleeve",wrap,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",even,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,INNER,SLANT,cmu,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,END,REPEAT,spelling,HIGH,N
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",bracelets,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",bracelets,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",can't,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",can't,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",even,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",even,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",even,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,INNER,SLANT,cmu,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",Got,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",Got,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",many,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",many,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",even,INNER,SLANT,cmu,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",wrap,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",can't,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,END,ASSONANCE,vowel,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",can't,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",band,INNER,SLANT,cmu,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",even,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",many,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",Red,INNER,SLANT,cmu,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",wrap,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",band,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,56,"Got so many bracelets, they can't even wrap my sleeve",sleeve,60,"Ghost my fine shit 'cause when she fiend, she a demon",demon,END,ASSONANCE,vowel,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",even,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,INNER,SLANT,cmu,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,END,ASSONANCE,vowel,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",can't,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",band,INNER,SLANT,cmu,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",even,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",fit,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",Pristine,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",many,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",Red,INNER,SLANT,cmu,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",can't,59,"Feel like Allen Iverson, my earrings bling (Bling)",Allen,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",even,59,"Feel like Allen Iverson, my earrings bling (Bling)",Feel,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",fit,59,"Feel like Allen Iverson, my earrings bling (Bling)",bling,INNER,SLANT,spelling,LOW,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",fit,59,"Feel like Allen Iverson, my earrings bling (Bling)",earrings,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,59,"Feel like Allen Iverson, my earrings bling (Bling)",Feel,INNER,SLANT,cmu,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,60,"Ghost my fine shit 'cause when she fiend, she a demon",demon,END,ASSONANCE,vowel,MED,Y
+Peter Piper,57,"Got so many bracelets, they can't even fit my sleeve (Uh)",sleeve,61,"Every line in a nigga rhymes, I really seen it",seen,END,SLANT,cmu,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,59,"Feel like Allen Iverson, my earrings bling (Bling)",bling,END,PERFECT,spelling,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",band,59,"Feel like Allen Iverson, my earrings bling (Bling)",Allen,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,59,"Feel like Allen Iverson, my earrings bling (Bling)",Feel,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",Pristine,59,"Feel like Allen Iverson, my earrings bling (Bling)",earrings,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,60,"Ghost my fine shit 'cause when she fiend, she a demon",demon,END,ASSONANCE,vowel,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,60,"Ghost my fine shit 'cause when she fiend, she a demon",fiend,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",Pristine,60,"Ghost my fine shit 'cause when she fiend, she a demon",shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",Red,60,"Ghost my fine shit 'cause when she fiend, she a demon",when,INNER,SLANT,cmu,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,61,"Every line in a nigga rhymes, I really seen it",seen,END,ASSONANCE,vowel,MED,Y
+Peter Piper,58,"Red band on a Pristine, yeah, that's how I'm bleedin'",bleedin,62,"Seven-nine, that still mine and I mean it",mean,END,ASSONANCE,vowel,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",earrings,59,"Feel like Allen Iverson, my earrings bling (Bling)",bling,INNER,ASSONANCE,vowel,LOW,N
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",like,59,"Feel like Allen Iverson, my earrings bling (Bling)",Iverson,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",bling,60,"Ghost my fine shit 'cause when she fiend, she a demon",shit,INNER,SLANT,spelling,LOW,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",earrings,60,"Ghost my fine shit 'cause when she fiend, she a demon",shit,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",Feel,60,"Ghost my fine shit 'cause when she fiend, she a demon",demon,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",Feel,60,"Ghost my fine shit 'cause when she fiend, she a demon",fiend,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",Iverson,60,"Ghost my fine shit 'cause when she fiend, she a demon",fine,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",like,60,"Ghost my fine shit 'cause when she fiend, she a demon",fine,INNER,SLANT,cmu,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",bling,61,"Every line in a nigga rhymes, I really seen it",really,INNER,SLANT,spelling,LOW,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",earrings,61,"Every line in a nigga rhymes, I really seen it",really,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",Feel,61,"Every line in a nigga rhymes, I really seen it",seen,INNER,SLANT,cmu,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",Iverson,61,"Every line in a nigga rhymes, I really seen it",line,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",Iverson,61,"Every line in a nigga rhymes, I really seen it",rhymes,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",like,61,"Every line in a nigga rhymes, I really seen it",line,INNER,SLANT,cmu,MED,Y
+Peter Piper,59,"Feel like Allen Iverson, my earrings bling (Bling)",like,61,"Every line in a nigga rhymes, I really seen it",rhymes,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",fiend,60,"Ghost my fine shit 'cause when she fiend, she a demon",demon,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",demon,61,"Every line in a nigga rhymes, I really seen it",seen,END,SLANT,cmu,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",fiend,61,"Every line in a nigga rhymes, I really seen it",seen,INNER,SLANT,cmu,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",fine,61,"Every line in a nigga rhymes, I really seen it",line,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",fine,61,"Every line in a nigga rhymes, I really seen it",rhymes,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",shit,61,"Every line in a nigga rhymes, I really seen it",nigga,INNER,SLANT,spelling,LOW,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",shit,61,"Every line in a nigga rhymes, I really seen it",really,INNER,SLANT,cmu,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",when,61,"Every line in a nigga rhymes, I really seen it",Every,INNER,SLANT,cmu,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",demon,62,"Seven-nine, that still mine and I mean it",mean,END,SLANT,cmu,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",fiend,62,"Seven-nine, that still mine and I mean it",mean,INNER,SLANT,cmu,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",fine,62,"Seven-nine, that still mine and I mean it",mine,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",fine,62,"Seven-nine, that still mine and I mean it",nine,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",shit,62,"Seven-nine, that still mine and I mean it",still,INNER,SLANT,cmu,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",when,62,"Seven-nine, that still mine and I mean it",Seven,INNER,SLANT,cmu,MED,Y
+Peter Piper,60,"Ghost my fine shit 'cause when she fiend, she a demon",demon,63,"Every angle of my lifestyle, I was dreamin'",dreamin,END,SLANT,cmu,MED,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",line,61,"Every line in a nigga rhymes, I really seen it",rhymes,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",seen,62,"Seven-nine, that still mine and I mean it",mean,END,PERFECT,cmu,HIGH,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",Every,62,"Seven-nine, that still mine and I mean it",Seven,INNER,SLANT,cmu,MED,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",line,62,"Seven-nine, that still mine and I mean it",mine,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",line,62,"Seven-nine, that still mine and I mean it",nine,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",really,62,"Seven-nine, that still mine and I mean it",still,INNER,SLANT,cmu,MED,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",rhymes,62,"Seven-nine, that still mine and I mean it",mine,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",rhymes,62,"Seven-nine, that still mine and I mean it",nine,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",seen,63,"Every angle of my lifestyle, I was dreamin'",dreamin,END,SLANT,cmu,MED,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",Every,63,"Every angle of my lifestyle, I was dreamin'",Every,INNER,REPEAT,spelling,HIGH,N
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",line,63,"Every angle of my lifestyle, I was dreamin'",lifestyle,INNER,SLANT,cmu,MED,Y
+Peter Piper,61,"Every line in a nigga rhymes, I really seen it",rhymes,63,"Every angle of my lifestyle, I was dreamin'",lifestyle,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",nine,62,"Seven-nine, that still mine and I mean it",mine,INNER,PERFECT,cmu,HIGH,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",mean,63,"Every angle of my lifestyle, I was dreamin'",dreamin,END,SLANT,cmu,MED,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",mine,63,"Every angle of my lifestyle, I was dreamin'",lifestyle,INNER,SLANT,cmu,MED,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",nine,63,"Every angle of my lifestyle, I was dreamin'",lifestyle,INNER,SLANT,cmu,MED,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",Seven,63,"Every angle of my lifestyle, I was dreamin'",Every,INNER,SLANT,cmu,MED,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",mean,64,"Winnin' with my team, think you fuckin' with us, I'm like",team,INNER,SLANT,cmu,MED,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",mine,64,"Winnin' with my team, think you fuckin' with us, I'm like",like,INNER,SLANT,cmu,MED,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",nine,64,"Winnin' with my team, think you fuckin' with us, I'm like",like,INNER,SLANT,cmu,MED,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",still,64,"Winnin' with my team, think you fuckin' with us, I'm like",think,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,62,"Seven-nine, that still mine and I mean it",still,64,"Winnin' with my team, think you fuckin' with us, I'm like",Winnin,INNER,ASSONANCE,vowel,MED,Y
+Peter Piper,63,"Every angle of my lifestyle, I was dreamin'",dreamin,64,"Winnin' with my team, think you fuckin' with us, I'm like",team,INNER,SLANT,cmu,MED,Y
+Peter Piper,63,"Every angle of my lifestyle, I was dreamin'",lifestyle,64,"Winnin' with my team, think you fuckin' with us, I'm like",like,INNER,SLANT,cmu,MED,Y
+Peter Piper,64,"Winnin' with my team, think you fuckin' with us, I'm like",Winnin,64,"Winnin' with my team, think you fuckin' with us, I'm like",think,INNER,ASSONANCE,vowel,MED,Y

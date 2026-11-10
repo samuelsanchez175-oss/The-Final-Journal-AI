@@ -1,0 +1,511 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,broke,1,Can't call these niggas broke 'cause know my mommy gave me brothers,know,INNER,ASSONANCE,vowel,MED,Y
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,brothers,2,No sleepin' lion bitches 'cause they playin' under covers,covers,END,SLANT,cmu,MED,Y
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,'cause,2,No sleepin' lion bitches 'cause they playin' under covers,'cause,INNER,REPEAT,spelling,HIGH,N
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,broke,2,No sleepin' lion bitches 'cause they playin' under covers,No,INNER,ASSONANCE,vowel,MED,Y
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,brothers,2,No sleepin' lion bitches 'cause they playin' under covers,under,INNER,ASSONANCE,vowel,MED,Y
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,gave,2,No sleepin' lion bitches 'cause they playin' under covers,playin,INNER,SLANT,cmu,MED,Y
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,know,2,No sleepin' lion bitches 'cause they playin' under covers,No,INNER,PERFECT,cmu,HIGH,Y
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,these,2,No sleepin' lion bitches 'cause they playin' under covers,sleepin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,brothers,3,Fuck wrong with these fuck niggas?,Fuck,INNER,ASSONANCE,vowel,MED,Y
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,call,3,Fuck wrong with these fuck niggas?,wrong,INNER,SLANT,cmu,MED,Y
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,niggas,3,Fuck wrong with these fuck niggas?,niggas,INNER,REPEAT,spelling,HIGH,N
+Barry White,1,Can't call these niggas broke 'cause know my mommy gave me brothers,these,3,Fuck wrong with these fuck niggas?,these,INNER,REPEAT,spelling,HIGH,N
+Barry White,2,No sleepin' lion bitches 'cause they playin' under covers,under,2,No sleepin' lion bitches 'cause they playin' under covers,covers,INNER,ASSONANCE,vowel,MED,Y
+Barry White,2,No sleepin' lion bitches 'cause they playin' under covers,covers,3,Fuck wrong with these fuck niggas?,Fuck,INNER,ASSONANCE,vowel,MED,Y
+Barry White,2,No sleepin' lion bitches 'cause they playin' under covers,sleepin,3,Fuck wrong with these fuck niggas?,these,INNER,ASSONANCE,vowel,MED,Y
+Barry White,2,No sleepin' lion bitches 'cause they playin' under covers,under,3,Fuck wrong with these fuck niggas?,Fuck,INNER,ASSONANCE,vowel,MED,Y
+Barry White,2,No sleepin' lion bitches 'cause they playin' under covers,covers,4,Fact is I don't trust niggas,trust,INNER,ASSONANCE,vowel,MED,Y
+Barry White,2,No sleepin' lion bitches 'cause they playin' under covers,No,4,Fact is I don't trust niggas,don't,INNER,ASSONANCE,vowel,MED,Y
+Barry White,2,No sleepin' lion bitches 'cause they playin' under covers,under,4,Fact is I don't trust niggas,trust,INNER,ASSONANCE,vowel,MED,Y
+Barry White,3,Fuck wrong with these fuck niggas?,Fuck,3,Fuck wrong with these fuck niggas?,fuck,INNER,REPEAT,spelling,HIGH,N
+Barry White,3,Fuck wrong with these fuck niggas?,niggas,4,Fact is I don't trust niggas,niggas,END,REPEAT,spelling,HIGH,N
+Barry White,3,Fuck wrong with these fuck niggas?,Fuck,4,Fact is I don't trust niggas,trust,INNER,ASSONANCE,vowel,MED,Y
+Barry White,3,Fuck wrong with these fuck niggas?,niggas,5,Truth is I ain't bust niggas,niggas,END,REPEAT,spelling,HIGH,N
+Barry White,3,Fuck wrong with these fuck niggas?,Fuck,5,Truth is I ain't bust niggas,bust,INNER,ASSONANCE,vowel,MED,Y
+Barry White,3,Fuck wrong with these fuck niggas?,niggas,6,"My old heads, they crush niggas",niggas,END,REPEAT,spelling,HIGH,N
+Barry White,4,Fact is I don't trust niggas,niggas,5,Truth is I ain't bust niggas,niggas,END,REPEAT,spelling,HIGH,N
+Barry White,4,Fact is I don't trust niggas,trust,5,Truth is I ain't bust niggas,bust,INNER,PERFECT,cmu,HIGH,Y
+Barry White,4,Fact is I don't trust niggas,niggas,6,"My old heads, they crush niggas",niggas,END,REPEAT,spelling,HIGH,N
+Barry White,4,Fact is I don't trust niggas,don't,6,"My old heads, they crush niggas",old,INNER,ASSONANCE,vowel,MED,Y
+Barry White,4,Fact is I don't trust niggas,trust,6,"My old heads, they crush niggas",crush,INNER,ASSONANCE,vowel,MED,Y
+Barry White,5,Truth is I ain't bust niggas,niggas,6,"My old heads, they crush niggas",niggas,END,REPEAT,spelling,HIGH,N
+Barry White,5,Truth is I ain't bust niggas,bust,6,"My old heads, they crush niggas",crush,INNER,ASSONANCE,vowel,MED,Y
+Barry White,5,Truth is I ain't bust niggas,Truth,7,Louis King Rose and I'm back on my shit,Louis,INNER,SLANT,cmu,MED,Y
+Barry White,6,"My old heads, they crush niggas",old,7,Louis King Rose and I'm back on my shit,Rose,INNER,ASSONANCE,vowel,MED,Y
+Barry White,6,"My old heads, they crush niggas",niggas,10,"And she yellin' out, ""come"" like the nigga was 10",nigga,END,SLANT,spelling,LOW,Y
+Barry White,7,Louis King Rose and I'm back on my shit,King,7,Louis King Rose and I'm back on my shit,shit,INNER,SLANT,cmu,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,shit,8,Walk with a limp like a crack in my wrist,wrist,END,SLANT,cmu,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,back,8,Walk with a limp like a crack in my wrist,crack,INNER,PERFECT,cmu,HIGH,Y
+Barry White,7,Louis King Rose and I'm back on my shit,King,8,Walk with a limp like a crack in my wrist,limp,INNER,ASSONANCE,vowel,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,King,8,Walk with a limp like a crack in my wrist,wrist,INNER,ASSONANCE,vowel,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,shit,8,Walk with a limp like a crack in my wrist,limp,INNER,ASSONANCE,vowel,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,shit,9,When I'm mackin' your bitch in the back of the whip,whip,END,SLANT,cmu,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,back,9,When I'm mackin' your bitch in the back of the whip,back,INNER,REPEAT,spelling,HIGH,N
+Barry White,7,Louis King Rose and I'm back on my shit,back,9,When I'm mackin' your bitch in the back of the whip,mackin,INNER,SLANT,cmu,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,King,9,When I'm mackin' your bitch in the back of the whip,bitch,INNER,SLANT,cmu,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,King,9,When I'm mackin' your bitch in the back of the whip,whip,INNER,SLANT,cmu,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,shit,9,When I'm mackin' your bitch in the back of the whip,bitch,INNER,SLANT,cmu,MED,Y
+Barry White,7,Louis King Rose and I'm back on my shit,shit,10,"And she yellin' out, ""come"" like the nigga was 10",nigga,END,SLANT,spelling,LOW,Y
+Barry White,8,Walk with a limp like a crack in my wrist,limp,8,Walk with a limp like a crack in my wrist,wrist,INNER,ASSONANCE,vowel,MED,Y
+Barry White,8,Walk with a limp like a crack in my wrist,wrist,9,When I'm mackin' your bitch in the back of the whip,whip,END,ASSONANCE,vowel,MED,Y
+Barry White,8,Walk with a limp like a crack in my wrist,crack,9,When I'm mackin' your bitch in the back of the whip,back,INNER,PERFECT,cmu,HIGH,Y
+Barry White,8,Walk with a limp like a crack in my wrist,crack,9,When I'm mackin' your bitch in the back of the whip,mackin,INNER,SLANT,cmu,MED,Y
+Barry White,8,Walk with a limp like a crack in my wrist,limp,9,When I'm mackin' your bitch in the back of the whip,bitch,INNER,ASSONANCE,vowel,MED,Y
+Barry White,8,Walk with a limp like a crack in my wrist,limp,9,When I'm mackin' your bitch in the back of the whip,whip,INNER,SLANT,cmu,MED,Y
+Barry White,8,Walk with a limp like a crack in my wrist,wrist,9,When I'm mackin' your bitch in the back of the whip,bitch,INNER,ASSONANCE,vowel,MED,Y
+Barry White,8,Walk with a limp like a crack in my wrist,like,10,"And she yellin' out, ""come"" like the nigga was 10",like,INNER,REPEAT,spelling,HIGH,N
+Barry White,9,When I'm mackin' your bitch in the back of the whip,bitch,9,When I'm mackin' your bitch in the back of the whip,whip,INNER,SLANT,cmu,MED,Y
+Barry White,9,When I'm mackin' your bitch in the back of the whip,mackin,9,When I'm mackin' your bitch in the back of the whip,back,INNER,SLANT,cmu,MED,Y
+Barry White,9,When I'm mackin' your bitch in the back of the whip,whip,10,"And she yellin' out, ""come"" like the nigga was 10",nigga,END,SLANT,spelling,LOW,Y
+Barry White,9,When I'm mackin' your bitch in the back of the whip,When,10,"And she yellin' out, ""come"" like the nigga was 10",yellin,INNER,SLANT,cmu,MED,Y
+Barry White,9,When I'm mackin' your bitch in the back of the whip,back,11,"Let me bring that back, let me slow my flow",back,INNER,REPEAT,spelling,HIGH,N
+Barry White,9,When I'm mackin' your bitch in the back of the whip,bitch,11,"Let me bring that back, let me slow my flow",bring,INNER,SLANT,cmu,MED,Y
+Barry White,9,When I'm mackin' your bitch in the back of the whip,mackin,11,"Let me bring that back, let me slow my flow",back,INNER,SLANT,cmu,MED,Y
+Barry White,9,When I'm mackin' your bitch in the back of the whip,When,11,"Let me bring that back, let me slow my flow",Let,INNER,SLANT,cmu,MED,Y
+Barry White,9,When I'm mackin' your bitch in the back of the whip,whip,11,"Let me bring that back, let me slow my flow",bring,INNER,SLANT,cmu,MED,Y
+Barry White,10,"And she yellin' out, ""come"" like the nigga was 10",yellin,11,"Let me bring that back, let me slow my flow",Let,INNER,ASSONANCE,vowel,MED,Y
+Barry White,10,"And she yellin' out, ""come"" like the nigga was 10",nigga,12,"Hottest in the city, nigga, y'all ain't even know?",city,INNER,SLANT,spelling,LOW,Y
+Barry White,10,"And she yellin' out, ""come"" like the nigga was 10",nigga,12,"Hottest in the city, nigga, y'all ain't even know?",nigga,INNER,REPEAT,spelling,HIGH,N
+Barry White,11,"Let me bring that back, let me slow my flow",Let,11,"Let me bring that back, let me slow my flow",let,INNER,REPEAT,spelling,HIGH,N
+Barry White,11,"Let me bring that back, let me slow my flow",slow,11,"Let me bring that back, let me slow my flow",flow,INNER,PERFECT,cmu,HIGH,Y
+Barry White,11,"Let me bring that back, let me slow my flow",flow,12,"Hottest in the city, nigga, y'all ain't even know?",know,END,PERFECT,cmu,HIGH,Y
+Barry White,11,"Let me bring that back, let me slow my flow",bring,12,"Hottest in the city, nigga, y'all ain't even know?",city,INNER,SLANT,cmu,MED,Y
+Barry White,11,"Let me bring that back, let me slow my flow",slow,12,"Hottest in the city, nigga, y'all ain't even know?",know,INNER,PERFECT,cmu,HIGH,Y
+Barry White,11,"Let me bring that back, let me slow my flow",flow,13,Niggas broke and I own it and it ain't even yours,broke,INNER,ASSONANCE,vowel,MED,Y
+Barry White,11,"Let me bring that back, let me slow my flow",flow,13,Niggas broke and I own it and it ain't even yours,own,INNER,ASSONANCE,vowel,MED,Y
+Barry White,11,"Let me bring that back, let me slow my flow",slow,13,Niggas broke and I own it and it ain't even yours,broke,INNER,ASSONANCE,vowel,MED,Y
+Barry White,11,"Let me bring that back, let me slow my flow",slow,13,Niggas broke and I own it and it ain't even yours,own,INNER,ASSONANCE,vowel,MED,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",city,12,"Hottest in the city, nigga, y'all ain't even know?",nigga,INNER,SLANT,spelling,LOW,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",ain't,13,Niggas broke and I own it and it ain't even yours,ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",even,13,Niggas broke and I own it and it ain't even yours,even,INNER,REPEAT,spelling,HIGH,N
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",know,13,Niggas broke and I own it and it ain't even yours,broke,INNER,ASSONANCE,vowel,MED,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",know,13,Niggas broke and I own it and it ain't even yours,own,INNER,ASSONANCE,vowel,MED,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",nigga,13,Niggas broke and I own it and it ain't even yours,Niggas,INNER,SLANT,spelling,LOW,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",ain't,14,That Twitter beefin' shit I ain't got time for,ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",city,14,That Twitter beefin' shit I ain't got time for,shit,INNER,SLANT,cmu,MED,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",city,14,That Twitter beefin' shit I ain't got time for,Twitter,INNER,SLANT,cmu,MED,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",even,14,That Twitter beefin' shit I ain't got time for,beefin,INNER,SLANT,cmu,MED,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",Hottest,14,That Twitter beefin' shit I ain't got time for,got,INNER,ASSONANCE,vowel,MED,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",nigga,14,That Twitter beefin' shit I ain't got time for,shit,INNER,SLANT,spelling,LOW,Y
+Barry White,12,"Hottest in the city, nigga, y'all ain't even know?",nigga,14,That Twitter beefin' shit I ain't got time for,Twitter,INNER,SLANT,spelling,LOW,Y
+Barry White,13,Niggas broke and I own it and it ain't even yours,broke,13,Niggas broke and I own it and it ain't even yours,own,INNER,SLANT,cmu,MED,Y
+Barry White,13,Niggas broke and I own it and it ain't even yours,ain't,14,That Twitter beefin' shit I ain't got time for,ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,13,Niggas broke and I own it and it ain't even yours,even,14,That Twitter beefin' shit I ain't got time for,beefin,INNER,SLANT,cmu,MED,Y
+Barry White,13,Niggas broke and I own it and it ain't even yours,broke,15,"A broke ho, I never had a dime for her",broke,INNER,REPEAT,spelling,HIGH,N
+Barry White,13,Niggas broke and I own it and it ain't even yours,broke,15,"A broke ho, I never had a dime for her",ho,INNER,ASSONANCE,vowel,MED,Y
+Barry White,13,Niggas broke and I own it and it ain't even yours,own,15,"A broke ho, I never had a dime for her",broke,INNER,SLANT,cmu,MED,Y
+Barry White,13,Niggas broke and I own it and it ain't even yours,own,15,"A broke ho, I never had a dime for her",ho,INNER,ASSONANCE,vowel,MED,Y
+Barry White,14,That Twitter beefin' shit I ain't got time for,Twitter,14,That Twitter beefin' shit I ain't got time for,shit,INNER,SLANT,cmu,MED,Y
+Barry White,14,That Twitter beefin' shit I ain't got time for,time,15,"A broke ho, I never had a dime for her",dime,END,PERFECT,cmu,HIGH,Y
+Barry White,14,That Twitter beefin' shit I ain't got time for,time,16,I'm just on my grind tryna live my life,life,END,SLANT,cmu,MED,Y
+Barry White,14,That Twitter beefin' shit I ain't got time for,time,16,I'm just on my grind tryna live my life,grind,INNER,ASSONANCE,vowel,MED,Y
+Barry White,14,That Twitter beefin' shit I ain't got time for,time,16,I'm just on my grind tryna live my life,live,INNER,SLANT,cmu,MED,Y
+Barry White,15,"A broke ho, I never had a dime for her",broke,15,"A broke ho, I never had a dime for her",ho,INNER,ASSONANCE,vowel,MED,Y
+Barry White,15,"A broke ho, I never had a dime for her",dime,16,I'm just on my grind tryna live my life,life,END,SLANT,cmu,MED,Y
+Barry White,15,"A broke ho, I never had a dime for her",dime,16,I'm just on my grind tryna live my life,grind,INNER,ASSONANCE,vowel,MED,Y
+Barry White,15,"A broke ho, I never had a dime for her",dime,16,I'm just on my grind tryna live my life,live,INNER,SLANT,cmu,MED,Y
+Barry White,15,"A broke ho, I never had a dime for her",never,17,"I'm just tryna be a legend, nigga",legend,INNER,ASSONANCE,vowel,MED,Y
+Barry White,16,I'm just on my grind tryna live my life,grind,16,I'm just on my grind tryna live my life,life,INNER,ASSONANCE,vowel,MED,Y
+Barry White,16,I'm just on my grind tryna live my life,grind,16,I'm just on my grind tryna live my life,live,INNER,ASSONANCE,vowel,MED,Y
+Barry White,16,I'm just on my grind tryna live my life,live,16,I'm just on my grind tryna live my life,life,INNER,SLANT,cmu,MED,Y
+Barry White,16,I'm just on my grind tryna live my life,tryna,17,"I'm just tryna be a legend, nigga",tryna,INNER,REPEAT,spelling,HIGH,N
+Barry White,16,I'm just on my grind tryna live my life,tryna,18,These niggas ain't real,real,INNER,SLANT,spelling,LOW,Y
+Barry White,16,I'm just on my grind tryna live my life,tryna,18,These niggas ain't real,These,INNER,SLANT,spelling,LOW,Y
+Barry White,17,"I'm just tryna be a legend, nigga",nigga,18,These niggas ain't real,niggas,INNER,SLANT,spelling,LOW,Y
+Barry White,17,"I'm just tryna be a legend, nigga",tryna,18,These niggas ain't real,real,INNER,SLANT,spelling,LOW,Y
+Barry White,17,"I'm just tryna be a legend, nigga",tryna,18,These niggas ain't real,These,INNER,SLANT,spelling,LOW,Y
+Barry White,17,"I'm just tryna be a legend, nigga",tryna,19,"No, they ain't 'bout it, they ain't real",real,INNER,SLANT,spelling,LOW,Y
+Barry White,18,These niggas ain't real,These,18,These niggas ain't real,real,INNER,SLANT,cmu,MED,Y
+Barry White,18,These niggas ain't real,real,19,"No, they ain't 'bout it, they ain't real",real,END,REPEAT,spelling,HIGH,N
+Barry White,18,These niggas ain't real,ain't,19,"No, they ain't 'bout it, they ain't real",ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,18,These niggas ain't real,These,19,"No, they ain't 'bout it, they ain't real",real,INNER,SLANT,cmu,MED,Y
+Barry White,18,These niggas ain't real,ain't,20,"These niggas, they fake",fake,INNER,ASSONANCE,vowel,MED,Y
+Barry White,18,These niggas ain't real,niggas,20,"These niggas, they fake",niggas,INNER,REPEAT,spelling,HIGH,N
+Barry White,18,These niggas ain't real,real,20,"These niggas, they fake",These,INNER,SLANT,cmu,MED,Y
+Barry White,18,These niggas ain't real,These,20,"These niggas, they fake",These,INNER,REPEAT,spelling,HIGH,N
+Barry White,19,"No, they ain't 'bout it, they ain't real",ain't,19,"No, they ain't 'bout it, they ain't real",ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,19,"No, they ain't 'bout it, they ain't real",ain't,20,"These niggas, they fake",fake,INNER,ASSONANCE,vowel,MED,Y
+Barry White,19,"No, they ain't 'bout it, they ain't real",real,20,"These niggas, they fake",These,INNER,SLANT,cmu,MED,Y
+Barry White,19,"No, they ain't 'bout it, they ain't real",ain't,21,These niggas just hatin' for the thrill,hatin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,19,"No, they ain't 'bout it, they ain't real",real,21,These niggas just hatin' for the thrill,These,INNER,SLANT,cmu,MED,Y
+Barry White,20,"These niggas, they fake",fake,21,These niggas just hatin' for the thrill,hatin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,20,"These niggas, they fake",niggas,21,These niggas just hatin' for the thrill,niggas,INNER,REPEAT,spelling,HIGH,N
+Barry White,20,"These niggas, they fake",These,21,These niggas just hatin' for the thrill,These,INNER,REPEAT,spelling,HIGH,N
+Barry White,20,"These niggas, they fake",fake,22,"No, they ain't 'bout it, no",ain't,INNER,ASSONANCE,vowel,MED,Y
+Barry White,21,These niggas just hatin' for the thrill,hatin,22,"No, they ain't 'bout it, no",ain't,INNER,ASSONANCE,vowel,MED,Y
+Barry White,21,These niggas just hatin' for the thrill,thrill,23,"Said I don't pop molly, I pop bad bitches",bitches,END,ASSONANCE,vowel,MED,Y
+Barry White,22,"No, they ain't 'bout it, no",No,22,"No, they ain't 'bout it, no",no,INNER,REPEAT,spelling,HIGH,N
+Barry White,22,"No, they ain't 'bout it, no",No,23,"Said I don't pop molly, I pop bad bitches",don't,INNER,ASSONANCE,vowel,MED,Y
+Barry White,22,"No, they ain't 'bout it, no",No,24,"I don't pop pills, I pop tags, nigga",don't,INNER,ASSONANCE,vowel,MED,Y
+Barry White,23,"Said I don't pop molly, I pop bad bitches",molly,23,"Said I don't pop molly, I pop bad bitches",pop,INNER,SLANT,cmu,MED,Y
+Barry White,23,"Said I don't pop molly, I pop bad bitches",pop,23,"Said I don't pop molly, I pop bad bitches",molly,INNER,SLANT,cmu,MED,Y
+Barry White,23,"Said I don't pop molly, I pop bad bitches",pop,23,"Said I don't pop molly, I pop bad bitches",pop,INNER,REPEAT,spelling,HIGH,N
+Barry White,23,"Said I don't pop molly, I pop bad bitches",bad,24,"I don't pop pills, I pop tags, nigga",tags,INNER,ASSONANCE,vowel,MED,Y
+Barry White,23,"Said I don't pop molly, I pop bad bitches",bitches,24,"I don't pop pills, I pop tags, nigga",pills,INNER,SLANT,cmu,MED,Y
+Barry White,23,"Said I don't pop molly, I pop bad bitches",don't,24,"I don't pop pills, I pop tags, nigga",don't,INNER,REPEAT,spelling,HIGH,N
+Barry White,23,"Said I don't pop molly, I pop bad bitches",molly,24,"I don't pop pills, I pop tags, nigga",pop,INNER,SLANT,cmu,MED,Y
+Barry White,23,"Said I don't pop molly, I pop bad bitches",pop,24,"I don't pop pills, I pop tags, nigga",pop,INNER,REPEAT,spelling,HIGH,N
+Barry White,23,"Said I don't pop molly, I pop bad bitches",bad,25,"I'm just on my grind for what I had, nigga",had,INNER,PERFECT,cmu,HIGH,Y
+Barry White,24,"I don't pop pills, I pop tags, nigga",pop,24,"I don't pop pills, I pop tags, nigga",pop,INNER,REPEAT,spelling,HIGH,N
+Barry White,24,"I don't pop pills, I pop tags, nigga",nigga,25,"I'm just on my grind for what I had, nigga",nigga,END,REPEAT,spelling,HIGH,N
+Barry White,24,"I don't pop pills, I pop tags, nigga",tags,25,"I'm just on my grind for what I had, nigga",had,INNER,ASSONANCE,vowel,MED,Y
+Barry White,24,"I don't pop pills, I pop tags, nigga",nigga,26,"I'ma get it, you woulda, shoulda, mad, nigga",nigga,END,REPEAT,spelling,HIGH,N
+Barry White,24,"I don't pop pills, I pop tags, nigga",tags,26,"I'ma get it, you woulda, shoulda, mad, nigga",mad,INNER,ASSONANCE,vowel,MED,Y
+Barry White,25,"I'm just on my grind for what I had, nigga",nigga,26,"I'ma get it, you woulda, shoulda, mad, nigga",nigga,END,REPEAT,spelling,HIGH,N
+Barry White,25,"I'm just on my grind for what I had, nigga",had,26,"I'ma get it, you woulda, shoulda, mad, nigga",mad,INNER,PERFECT,cmu,HIGH,Y
+Barry White,25,"I'm just on my grind for what I had, nigga",nigga,27,E- e- every bitch suckin' dick now for Lil Uzi,dick,INNER,SLANT,spelling,LOW,Y
+Barry White,25,"I'm just on my grind for what I had, nigga",what,27,E- e- every bitch suckin' dick now for Lil Uzi,suckin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,26,"I'ma get it, you woulda, shoulda, mad, nigga",get woulda,26,"I'ma get it, you woulda, shoulda, mad, nigga",woulda shoulda,INNER,MULTI,multi,MED,Y
+Barry White,26,"I'ma get it, you woulda, shoulda, mad, nigga",woulda,26,"I'ma get it, you woulda, shoulda, mad, nigga",shoulda,INNER,MULTI,multi,MED,Y
+Barry White,26,"I'ma get it, you woulda, shoulda, mad, nigga",get,27,E- e- every bitch suckin' dick now for Lil Uzi,every,INNER,SLANT,cmu,MED,Y
+Barry White,26,"I'ma get it, you woulda, shoulda, mad, nigga",I'ma,27,E- e- every bitch suckin' dick now for Lil Uzi,bitch,INNER,SLANT,spelling,LOW,Y
+Barry White,26,"I'ma get it, you woulda, shoulda, mad, nigga",I'ma,27,E- e- every bitch suckin' dick now for Lil Uzi,dick,INNER,SLANT,spelling,LOW,Y
+Barry White,26,"I'ma get it, you woulda, shoulda, mad, nigga",I'ma,27,E- e- every bitch suckin' dick now for Lil Uzi,Lil,INNER,SLANT,spelling,LOW,Y
+Barry White,26,"I'ma get it, you woulda, shoulda, mad, nigga",nigga,27,E- e- every bitch suckin' dick now for Lil Uzi,dick,INNER,SLANT,spelling,LOW,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,bitch,27,E- e- every bitch suckin' dick now for Lil Uzi,dick,INNER,SLANT,cmu,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,bitch,27,E- e- every bitch suckin' dick now for Lil Uzi,Lil,INNER,SLANT,cmu,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,dick,27,E- e- every bitch suckin' dick now for Lil Uzi,Lil,INNER,SLANT,cmu,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,E,27,E- e- every bitch suckin' dick now for Lil Uzi,e,INNER,REPEAT,spelling,HIGH,N
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,E,28,Don't be surprised if you see me in that Audi two seat,seat,INNER,ASSONANCE,vowel,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,E,28,Don't be surprised if you see me in that Audi two seat,see,INNER,PERFECT,cmu,HIGH,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,Uzi,28,Don't be surprised if you see me in that Audi two seat,two,INNER,ASSONANCE,vowel,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,bitch,29,"He was whippin' in the kitchen with me, now he bookin'",kitchen,INNER,SLANT,cmu,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,bitch,29,"He was whippin' in the kitchen with me, now he bookin'",whippin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,dick,29,"He was whippin' in the kitchen with me, now he bookin'",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,dick,29,"He was whippin' in the kitchen with me, now he bookin'",whippin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,Lil,29,"He was whippin' in the kitchen with me, now he bookin'",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,Lil,29,"He was whippin' in the kitchen with me, now he bookin'",whippin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,now,29,"He was whippin' in the kitchen with me, now he bookin'",now,INNER,REPEAT,spelling,HIGH,N
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,Uzi,30,"Now he snitchin' to them cops, call him Ratatouille",Ratatouille,END,SLANT,cmu,MED,Y
+Barry White,27,E- e- every bitch suckin' dick now for Lil Uzi,Uzi,31,And for Ratatouille I just grabbed a fuckin' toolie,toolie,END,SLANT,spelling,LOW,Y
+Barry White,28,Don't be surprised if you see me in that Audi two seat,see,28,Don't be surprised if you see me in that Audi two seat,seat,INNER,ASSONANCE,vowel,MED,Y
+Barry White,28,Don't be surprised if you see me in that Audi two seat,Audi,30,"Now he snitchin' to them cops, call him Ratatouille",call,INNER,SLANT,cmu,MED,Y
+Barry White,28,Don't be surprised if you see me in that Audi two seat,two,30,"Now he snitchin' to them cops, call him Ratatouille",Ratatouille,INNER,ASSONANCE,vowel,MED,Y
+Barry White,29,"He was whippin' in the kitchen with me, now he bookin'",whippin,29,"He was whippin' in the kitchen with me, now he bookin'",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Barry White,29,"He was whippin' in the kitchen with me, now he bookin'",kitchen,30,"Now he snitchin' to them cops, call him Ratatouille",him,INNER,ASSONANCE,vowel,MED,Y
+Barry White,29,"He was whippin' in the kitchen with me, now he bookin'",kitchen,30,"Now he snitchin' to them cops, call him Ratatouille",snitchin,INNER,SLANT,cmu,MED,Y
+Barry White,29,"He was whippin' in the kitchen with me, now he bookin'",now,30,"Now he snitchin' to them cops, call him Ratatouille",Now,INNER,REPEAT,spelling,HIGH,N
+Barry White,29,"He was whippin' in the kitchen with me, now he bookin'",whippin,30,"Now he snitchin' to them cops, call him Ratatouille",him,INNER,ASSONANCE,vowel,MED,Y
+Barry White,29,"He was whippin' in the kitchen with me, now he bookin'",whippin,30,"Now he snitchin' to them cops, call him Ratatouille",snitchin,INNER,SLANT,cmu,MED,Y
+Barry White,30,"Now he snitchin' to them cops, call him Ratatouille",snitchin,30,"Now he snitchin' to them cops, call him Ratatouille",him,INNER,ASSONANCE,vowel,MED,Y
+Barry White,30,"Now he snitchin' to them cops, call him Ratatouille",Ratatouille,31,And for Ratatouille I just grabbed a fuckin' toolie,toolie,END,SLANT,spelling,LOW,Y
+Barry White,30,"Now he snitchin' to them cops, call him Ratatouille",Ratatouille,31,And for Ratatouille I just grabbed a fuckin' toolie,Ratatouille,INNER,REPEAT,spelling,HIGH,N
+Barry White,30,"Now he snitchin' to them cops, call him Ratatouille",Ratatouille,32,"Extended on the clip, bitch, like a fuckin' movie",movie,END,SLANT,cmu,MED,Y
+Barry White,30,"Now he snitchin' to them cops, call him Ratatouille",him,32,"Extended on the clip, bitch, like a fuckin' movie",bitch,INNER,SLANT,cmu,MED,Y
+Barry White,30,"Now he snitchin' to them cops, call him Ratatouille",him,32,"Extended on the clip, bitch, like a fuckin' movie",clip,INNER,SLANT,cmu,MED,Y
+Barry White,30,"Now he snitchin' to them cops, call him Ratatouille",snitchin,32,"Extended on the clip, bitch, like a fuckin' movie",bitch,INNER,SLANT,cmu,MED,Y
+Barry White,30,"Now he snitchin' to them cops, call him Ratatouille",snitchin,32,"Extended on the clip, bitch, like a fuckin' movie",clip,INNER,ASSONANCE,vowel,MED,Y
+Barry White,30,"Now he snitchin' to them cops, call him Ratatouille",Ratatouille,34,That's because everybody a fuckin' groupie,groupie,END,SLANT,cmu,MED,Y
+Barry White,31,And for Ratatouille I just grabbed a fuckin' toolie,Ratatouille,31,And for Ratatouille I just grabbed a fuckin' toolie,toolie,INNER,SLANT,spelling,LOW,Y
+Barry White,31,And for Ratatouille I just grabbed a fuckin' toolie,toolie,32,"Extended on the clip, bitch, like a fuckin' movie",movie,END,PERFECT,spelling,MED,Y
+Barry White,31,And for Ratatouille I just grabbed a fuckin' toolie,fuckin,32,"Extended on the clip, bitch, like a fuckin' movie",fuckin,INNER,REPEAT,spelling,HIGH,N
+Barry White,31,And for Ratatouille I just grabbed a fuckin' toolie,Ratatouille,32,"Extended on the clip, bitch, like a fuckin' movie",movie,INNER,SLANT,cmu,MED,Y
+Barry White,31,And for Ratatouille I just grabbed a fuckin' toolie,toolie,34,That's because everybody a fuckin' groupie,groupie,END,PERFECT,spelling,MED,Y
+Barry White,32,"Extended on the clip, bitch, like a fuckin' movie",clip,32,"Extended on the clip, bitch, like a fuckin' movie",bitch,INNER,SLANT,cmu,MED,Y
+Barry White,32,"Extended on the clip, bitch, like a fuckin' movie",bitch,33,"And they wasn't with it, now they all lit",lit,INNER,SLANT,cmu,MED,Y
+Barry White,32,"Extended on the clip, bitch, like a fuckin' movie",clip,33,"And they wasn't with it, now they all lit",lit,INNER,SLANT,cmu,MED,Y
+Barry White,32,"Extended on the clip, bitch, like a fuckin' movie",movie,34,That's because everybody a fuckin' groupie,groupie,END,SLANT,cmu,MED,Y
+Barry White,32,"Extended on the clip, bitch, like a fuckin' movie",fuckin,34,That's because everybody a fuckin' groupie,fuckin,INNER,REPEAT,spelling,HIGH,N
+Barry White,33,"And they wasn't with it, now they all lit",all,34,That's because everybody a fuckin' groupie,because,INNER,SLANT,cmu,MED,Y
+Barry White,33,"And they wasn't with it, now they all lit",wasn't,34,That's because everybody a fuckin' groupie,everybody,INNER,ASSONANCE,vowel,MED,Y
+Barry White,33,"And they wasn't with it, now they all lit",lit,35,"I'm into bitches that's sharin' bitches, that's fine dykes",bitches,INNER,ASSONANCE,vowel,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",bitches,35,"I'm into bitches that's sharin' bitches, that's fine dykes",bitches,INNER,REPEAT,spelling,HIGH,N
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",fine,35,"I'm into bitches that's sharin' bitches, that's fine dykes",dykes,INNER,ASSONANCE,vowel,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",dykes,36,She lick the dick then eat the white like a Klondike,Klondike,END,SLANT,cmu,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",bitches,36,She lick the dick then eat the white like a Klondike,dick,INNER,ASSONANCE,vowel,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",bitches,36,She lick the dick then eat the white like a Klondike,lick,INNER,ASSONANCE,vowel,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",dykes,36,She lick the dick then eat the white like a Klondike,like,INNER,SLANT,cmu,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",dykes,36,She lick the dick then eat the white like a Klondike,white,INNER,ASSONANCE,vowel,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",fine,36,She lick the dick then eat the white like a Klondike,Klondike,INNER,SLANT,cmu,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",fine,36,She lick the dick then eat the white like a Klondike,like,INNER,SLANT,cmu,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",fine,36,She lick the dick then eat the white like a Klondike,white,INNER,SLANT,cmu,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",dykes,37,"Difference between me and you, is the time, right?",right,END,ASSONANCE,vowel,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",bitches,37,"Difference between me and you, is the time, right?",Difference,INNER,ASSONANCE,vowel,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",dykes,37,"Difference between me and you, is the time, right?",time,INNER,ASSONANCE,vowel,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",fine,37,"Difference between me and you, is the time, right?",right,INNER,SLANT,cmu,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",fine,37,"Difference between me and you, is the time, right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",dykes,38,"Well, is my time right?",right,END,ASSONANCE,vowel,MED,Y
+Barry White,35,"I'm into bitches that's sharin' bitches, that's fine dykes",dykes,39,"Yeah, is my time right?",right,END,ASSONANCE,vowel,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,lick,36,She lick the dick then eat the white like a Klondike,dick,INNER,PERFECT,cmu,HIGH,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,like,36,She lick the dick then eat the white like a Klondike,Klondike,INNER,PERFECT,cmu,HIGH,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,white,36,She lick the dick then eat the white like a Klondike,Klondike,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,white,36,She lick the dick then eat the white like a Klondike,like,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,Klondike,37,"Difference between me and you, is the time, right?",right,END,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,dick,37,"Difference between me and you, is the time, right?",Difference,INNER,ASSONANCE,vowel,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,eat,37,"Difference between me and you, is the time, right?",between,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,Klondike,37,"Difference between me and you, is the time, right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,lick,37,"Difference between me and you, is the time, right?",Difference,INNER,ASSONANCE,vowel,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,like,37,"Difference between me and you, is the time, right?",right,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,like,37,"Difference between me and you, is the time, right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,white,37,"Difference between me and you, is the time, right?",right,INNER,PERFECT,cmu,HIGH,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,white,37,"Difference between me and you, is the time, right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,Klondike,38,"Well, is my time right?",right,END,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,Klondike,38,"Well, is my time right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,like,38,"Well, is my time right?",right,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,like,38,"Well, is my time right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,white,38,"Well, is my time right?",right,INNER,PERFECT,cmu,HIGH,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,white,38,"Well, is my time right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,Klondike,39,"Yeah, is my time right?",right,END,SLANT,cmu,MED,Y
+Barry White,36,She lick the dick then eat the white like a Klondike,Klondike,40,"And those ain't diamonds, I got diamonds with a shine like",like,END,PERFECT,cmu,HIGH,Y
+Barry White,37,"Difference between me and you, is the time, right?",time,37,"Difference between me and you, is the time, right?",right,INNER,SLANT,cmu,MED,Y
+Barry White,37,"Difference between me and you, is the time, right?",right,38,"Well, is my time right?",right,END,REPEAT,spelling,HIGH,N
+Barry White,37,"Difference between me and you, is the time, right?",right,38,"Well, is my time right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,37,"Difference between me and you, is the time, right?",time,38,"Well, is my time right?",right,INNER,SLANT,cmu,MED,Y
+Barry White,37,"Difference between me and you, is the time, right?",time,38,"Well, is my time right?",time,INNER,REPEAT,spelling,HIGH,N
+Barry White,37,"Difference between me and you, is the time, right?",right,39,"Yeah, is my time right?",right,END,REPEAT,spelling,HIGH,N
+Barry White,37,"Difference between me and you, is the time, right?",right,39,"Yeah, is my time right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,37,"Difference between me and you, is the time, right?",time,39,"Yeah, is my time right?",right,INNER,SLANT,cmu,MED,Y
+Barry White,37,"Difference between me and you, is the time, right?",time,39,"Yeah, is my time right?",time,INNER,REPEAT,spelling,HIGH,N
+Barry White,37,"Difference between me and you, is the time, right?",right,40,"And those ain't diamonds, I got diamonds with a shine like",like,END,SLANT,cmu,MED,Y
+Barry White,37,"Difference between me and you, is the time, right?",right,41,"I'm in the front, you in the back just like the highlights",highlights,END,SLANT,cmu,MED,Y
+Barry White,38,"Well, is my time right?",time,38,"Well, is my time right?",right,INNER,SLANT,cmu,MED,Y
+Barry White,38,"Well, is my time right?",right,39,"Yeah, is my time right?",right,END,REPEAT,spelling,HIGH,N
+Barry White,38,"Well, is my time right?",right,39,"Yeah, is my time right?",time,INNER,SLANT,cmu,MED,Y
+Barry White,38,"Well, is my time right?",time,39,"Yeah, is my time right?",right,INNER,SLANT,cmu,MED,Y
+Barry White,38,"Well, is my time right?",time,39,"Yeah, is my time right?",time,INNER,REPEAT,spelling,HIGH,N
+Barry White,38,"Well, is my time right?",right,40,"And those ain't diamonds, I got diamonds with a shine like",like,END,SLANT,cmu,MED,Y
+Barry White,38,"Well, is my time right?",right,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Barry White,38,"Well, is my time right?",right,40,"And those ain't diamonds, I got diamonds with a shine like",shine,INNER,SLANT,cmu,MED,Y
+Barry White,38,"Well, is my time right?",time,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Barry White,38,"Well, is my time right?",time,40,"And those ain't diamonds, I got diamonds with a shine like",like,INNER,SLANT,cmu,MED,Y
+Barry White,38,"Well, is my time right?",time,40,"And those ain't diamonds, I got diamonds with a shine like",shine,INNER,SLANT,cmu,MED,Y
+Barry White,38,"Well, is my time right?",right,41,"I'm in the front, you in the back just like the highlights",highlights,END,SLANT,cmu,MED,Y
+Barry White,38,"Well, is my time right?",right,42,"Her pussy lips and they on dick, and I mean real tight",tight,END,PERFECT,cmu,HIGH,Y
+Barry White,39,"Yeah, is my time right?",time,39,"Yeah, is my time right?",right,INNER,SLANT,cmu,MED,Y
+Barry White,39,"Yeah, is my time right?",right,40,"And those ain't diamonds, I got diamonds with a shine like",like,END,SLANT,cmu,MED,Y
+Barry White,39,"Yeah, is my time right?",right,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Barry White,39,"Yeah, is my time right?",right,40,"And those ain't diamonds, I got diamonds with a shine like",shine,INNER,SLANT,cmu,MED,Y
+Barry White,39,"Yeah, is my time right?",time,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Barry White,39,"Yeah, is my time right?",time,40,"And those ain't diamonds, I got diamonds with a shine like",like,INNER,SLANT,cmu,MED,Y
+Barry White,39,"Yeah, is my time right?",time,40,"And those ain't diamonds, I got diamonds with a shine like",shine,INNER,SLANT,cmu,MED,Y
+Barry White,39,"Yeah, is my time right?",right,41,"I'm in the front, you in the back just like the highlights",highlights,END,SLANT,cmu,MED,Y
+Barry White,39,"Yeah, is my time right?",right,41,"I'm in the front, you in the back just like the highlights",like,INNER,SLANT,cmu,MED,Y
+Barry White,39,"Yeah, is my time right?",time,41,"I'm in the front, you in the back just like the highlights",highlights,INNER,ASSONANCE,vowel,MED,Y
+Barry White,39,"Yeah, is my time right?",time,41,"I'm in the front, you in the back just like the highlights",like,INNER,SLANT,cmu,MED,Y
+Barry White,39,"Yeah, is my time right?",right,42,"Her pussy lips and they on dick, and I mean real tight",tight,END,PERFECT,cmu,HIGH,Y
+Barry White,39,"Yeah, is my time right?",right,43,I'm tryna be a damn legend just like Barry White,White,END,PERFECT,cmu,HIGH,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,INNER,REPEAT,spelling,HIGH,N
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,40,"And those ain't diamonds, I got diamonds with a shine like",like,INNER,ASSONANCE,vowel,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,40,"And those ain't diamonds, I got diamonds with a shine like",shine,INNER,ASSONANCE,vowel,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",shine,40,"And those ain't diamonds, I got diamonds with a shine like",like,INNER,SLANT,cmu,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",like,41,"I'm in the front, you in the back just like the highlights",highlights,END,ASSONANCE,vowel,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,41,"I'm in the front, you in the back just like the highlights",highlights,INNER,ASSONANCE,vowel,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,41,"I'm in the front, you in the back just like the highlights",like,INNER,ASSONANCE,vowel,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",like,41,"I'm in the front, you in the back just like the highlights",like,INNER,REPEAT,spelling,HIGH,N
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",shine,41,"I'm in the front, you in the back just like the highlights",highlights,INNER,ASSONANCE,vowel,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",shine,41,"I'm in the front, you in the back just like the highlights",like,INNER,SLANT,cmu,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",like,42,"Her pussy lips and they on dick, and I mean real tight",tight,END,SLANT,cmu,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",diamonds,42,"Her pussy lips and they on dick, and I mean real tight",tight,INNER,ASSONANCE,vowel,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",shine,42,"Her pussy lips and they on dick, and I mean real tight",tight,INNER,SLANT,cmu,MED,Y
+Barry White,40,"And those ain't diamonds, I got diamonds with a shine like",like,43,I'm tryna be a damn legend just like Barry White,White,END,SLANT,cmu,MED,Y
+Barry White,41,"I'm in the front, you in the back just like the highlights",like,41,"I'm in the front, you in the back just like the highlights",highlights,INNER,ASSONANCE,vowel,MED,Y
+Barry White,41,"I'm in the front, you in the back just like the highlights",highlights,42,"Her pussy lips and they on dick, and I mean real tight",tight,END,SLANT,cmu,MED,Y
+Barry White,41,"I'm in the front, you in the back just like the highlights",like,42,"Her pussy lips and they on dick, and I mean real tight",tight,INNER,SLANT,cmu,MED,Y
+Barry White,41,"I'm in the front, you in the back just like the highlights",highlights,43,I'm tryna be a damn legend just like Barry White,White,END,SLANT,cmu,MED,Y
+Barry White,41,"I'm in the front, you in the back just like the highlights",back,43,I'm tryna be a damn legend just like Barry White,Barry,INNER,SLANT,cmu,MED,Y
+Barry White,41,"I'm in the front, you in the back just like the highlights",back,43,I'm tryna be a damn legend just like Barry White,damn,INNER,SLANT,cmu,MED,Y
+Barry White,41,"I'm in the front, you in the back just like the highlights",highlights,43,I'm tryna be a damn legend just like Barry White,like,INNER,ASSONANCE,vowel,MED,Y
+Barry White,41,"I'm in the front, you in the back just like the highlights",like,43,I'm tryna be a damn legend just like Barry White,like,INNER,REPEAT,spelling,HIGH,N
+Barry White,41,"I'm in the front, you in the back just like the highlights",like,43,I'm tryna be a damn legend just like Barry White,White,INNER,SLANT,cmu,MED,Y
+Barry White,42,"Her pussy lips and they on dick, and I mean real tight",lips,42,"Her pussy lips and they on dick, and I mean real tight",dick,INNER,ASSONANCE,vowel,MED,Y
+Barry White,42,"Her pussy lips and they on dick, and I mean real tight",mean,42,"Her pussy lips and they on dick, and I mean real tight",real,INNER,SLANT,cmu,MED,Y
+Barry White,42,"Her pussy lips and they on dick, and I mean real tight",tight,43,I'm tryna be a damn legend just like Barry White,White,END,PERFECT,cmu,HIGH,Y
+Barry White,42,"Her pussy lips and they on dick, and I mean real tight",mean,43,I'm tryna be a damn legend just like Barry White,tryna,INNER,SLANT,spelling,LOW,Y
+Barry White,42,"Her pussy lips and they on dick, and I mean real tight",real,43,I'm tryna be a damn legend just like Barry White,tryna,INNER,SLANT,spelling,LOW,Y
+Barry White,42,"Her pussy lips and they on dick, and I mean real tight",tight,43,I'm tryna be a damn legend just like Barry White,like,INNER,SLANT,cmu,MED,Y
+Barry White,42,"Her pussy lips and they on dick, and I mean real tight",dick,44,Ain't got no picks,picks,INNER,SLANT,cmu,MED,Y
+Barry White,42,"Her pussy lips and they on dick, and I mean real tight",lips,44,Ain't got no picks,picks,INNER,SLANT,cmu,MED,Y
+Barry White,43,I'm tryna be a damn legend just like Barry White,damn,43,I'm tryna be a damn legend just like Barry White,Barry,INNER,SLANT,cmu,MED,Y
+Barry White,43,I'm tryna be a damn legend just like Barry White,like,43,I'm tryna be a damn legend just like Barry White,White,INNER,SLANT,cmu,MED,Y
+Barry White,44,Ain't got no picks,picks,45,"Niggas talk work, they ain't got no bricks",bricks,END,PERFECT,cmu,HIGH,Y
+Barry White,44,Ain't got no picks,Ain't,45,"Niggas talk work, they ain't got no bricks",ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,44,Ain't got no picks,got,45,"Niggas talk work, they ain't got no bricks",got,INNER,REPEAT,spelling,HIGH,N
+Barry White,44,Ain't got no picks,no,45,"Niggas talk work, they ain't got no bricks",no,INNER,REPEAT,spelling,HIGH,N
+Barry White,44,Ain't got no picks,picks,45,"Niggas talk work, they ain't got no bricks",Niggas,INNER,SLANT,spelling,LOW,Y
+Barry White,44,Ain't got no picks,picks,46,"Niggas talk chicks, they ain't got no bitch",bitch,END,ASSONANCE,vowel,MED,Y
+Barry White,44,Ain't got no picks,Ain't,46,"Niggas talk chicks, they ain't got no bitch",ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,44,Ain't got no picks,got,46,"Niggas talk chicks, they ain't got no bitch",got,INNER,REPEAT,spelling,HIGH,N
+Barry White,44,Ain't got no picks,no,46,"Niggas talk chicks, they ain't got no bitch",no,INNER,REPEAT,spelling,HIGH,N
+Barry White,44,Ain't got no picks,picks,46,"Niggas talk chicks, they ain't got no bitch",chicks,INNER,PERFECT,cmu,HIGH,Y
+Barry White,44,Ain't got no picks,picks,46,"Niggas talk chicks, they ain't got no bitch",Niggas,INNER,SLANT,spelling,LOW,Y
+Barry White,44,Ain't got no picks,picks,47,"That's big boy talk, that's macho shit",shit,END,ASSONANCE,vowel,MED,Y
+Barry White,44,Ain't got no picks,picks,48,"Third phrase, hold the future, niggas",niggas,END,SLANT,spelling,LOW,Y
+Barry White,45,"Niggas talk work, they ain't got no bricks",Niggas,45,"Niggas talk work, they ain't got no bricks",bricks,INNER,SLANT,spelling,LOW,Y
+Barry White,45,"Niggas talk work, they ain't got no bricks",bricks,46,"Niggas talk chicks, they ain't got no bitch",bitch,END,ASSONANCE,vowel,MED,Y
+Barry White,45,"Niggas talk work, they ain't got no bricks",ain't,46,"Niggas talk chicks, they ain't got no bitch",ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,45,"Niggas talk work, they ain't got no bricks",bricks,46,"Niggas talk chicks, they ain't got no bitch",chicks,INNER,PERFECT,cmu,HIGH,Y
+Barry White,45,"Niggas talk work, they ain't got no bricks",bricks,46,"Niggas talk chicks, they ain't got no bitch",Niggas,INNER,SLANT,spelling,LOW,Y
+Barry White,45,"Niggas talk work, they ain't got no bricks",got,46,"Niggas talk chicks, they ain't got no bitch",got,INNER,REPEAT,spelling,HIGH,N
+Barry White,45,"Niggas talk work, they ain't got no bricks",Niggas,46,"Niggas talk chicks, they ain't got no bitch",chicks,INNER,SLANT,spelling,LOW,Y
+Barry White,45,"Niggas talk work, they ain't got no bricks",Niggas,46,"Niggas talk chicks, they ain't got no bitch",Niggas,INNER,REPEAT,spelling,HIGH,N
+Barry White,45,"Niggas talk work, they ain't got no bricks",no,46,"Niggas talk chicks, they ain't got no bitch",no,INNER,REPEAT,spelling,HIGH,N
+Barry White,45,"Niggas talk work, they ain't got no bricks",talk,46,"Niggas talk chicks, they ain't got no bitch",talk,INNER,REPEAT,spelling,HIGH,N
+Barry White,45,"Niggas talk work, they ain't got no bricks",bricks,47,"That's big boy talk, that's macho shit",shit,END,ASSONANCE,vowel,MED,Y
+Barry White,45,"Niggas talk work, they ain't got no bricks",bricks,47,"That's big boy talk, that's macho shit",big,INNER,ASSONANCE,vowel,MED,Y
+Barry White,45,"Niggas talk work, they ain't got no bricks",got,47,"That's big boy talk, that's macho shit",macho,INNER,SLANT,cmu,MED,Y
+Barry White,45,"Niggas talk work, they ain't got no bricks",talk,47,"That's big boy talk, that's macho shit",talk,INNER,REPEAT,spelling,HIGH,N
+Barry White,45,"Niggas talk work, they ain't got no bricks",bricks,48,"Third phrase, hold the future, niggas",niggas,END,SLANT,spelling,LOW,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",chicks,46,"Niggas talk chicks, they ain't got no bitch",bitch,INNER,ASSONANCE,vowel,MED,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",Niggas,46,"Niggas talk chicks, they ain't got no bitch",chicks,INNER,SLANT,spelling,LOW,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",bitch,47,"That's big boy talk, that's macho shit",shit,END,SLANT,cmu,MED,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",bitch,47,"That's big boy talk, that's macho shit",big,INNER,SLANT,cmu,MED,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",chicks,47,"That's big boy talk, that's macho shit",big,INNER,ASSONANCE,vowel,MED,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",chicks,47,"That's big boy talk, that's macho shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",got,47,"That's big boy talk, that's macho shit",macho,INNER,SLANT,cmu,MED,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",talk,47,"That's big boy talk, that's macho shit",talk,INNER,REPEAT,spelling,HIGH,N
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",ain't,48,"Third phrase, hold the future, niggas",phrase,INNER,ASSONANCE,vowel,MED,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",chicks,48,"Third phrase, hold the future, niggas",niggas,INNER,SLANT,spelling,LOW,Y
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",Niggas,48,"Third phrase, hold the future, niggas",niggas,INNER,REPEAT,spelling,HIGH,N
+Barry White,46,"Niggas talk chicks, they ain't got no bitch",no,48,"Third phrase, hold the future, niggas",hold,INNER,ASSONANCE,vowel,MED,Y
+Barry White,47,"That's big boy talk, that's macho shit",big,47,"That's big boy talk, that's macho shit",shit,INNER,SLANT,cmu,MED,Y
+Barry White,47,"That's big boy talk, that's macho shit",shit,49,"Y'all played out, I'm the future, nigga",nigga,END,SLANT,spelling,LOW,Y
+Barry White,47,"That's big boy talk, that's macho shit",big,49,"Y'all played out, I'm the future, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Barry White,47,"That's big boy talk, that's macho shit",talk,49,"Y'all played out, I'm the future, nigga",Y'all,INNER,SLANT,cmu,MED,Y
+Barry White,47,"That's big boy talk, that's macho shit",shit,50,"My movement, get used to, nigga",nigga,END,SLANT,spelling,LOW,Y
+Barry White,48,"Third phrase, hold the future, niggas",niggas,49,"Y'all played out, I'm the future, nigga",nigga,END,SLANT,spelling,LOW,Y
+Barry White,48,"Third phrase, hold the future, niggas",future,49,"Y'all played out, I'm the future, nigga",future,INNER,REPEAT,spelling,HIGH,N
+Barry White,48,"Third phrase, hold the future, niggas",phrase,49,"Y'all played out, I'm the future, nigga",played,INNER,SLANT,cmu,MED,Y
+Barry White,48,"Third phrase, hold the future, niggas",niggas,50,"My movement, get used to, nigga",nigga,END,SLANT,spelling,LOW,Y
+Barry White,48,"Third phrase, hold the future, niggas",future,50,"My movement, get used to, nigga",movement,INNER,ASSONANCE,vowel,MED,Y
+Barry White,48,"Third phrase, hold the future, niggas",future,50,"My movement, get used to, nigga",used,INNER,ASSONANCE,vowel,MED,Y
+Barry White,48,"Third phrase, hold the future, niggas",niggas,51,I ain't never learn to get used to niggas,niggas,END,REPEAT,spelling,HIGH,N
+Barry White,48,"Third phrase, hold the future, niggas",niggas,52,"Y'all fags, man, scared to lose a nigga",nigga,END,SLANT,spelling,LOW,Y
+Barry White,49,"Y'all played out, I'm the future, nigga",nigga,50,"My movement, get used to, nigga",nigga,END,REPEAT,spelling,HIGH,N
+Barry White,49,"Y'all played out, I'm the future, nigga",future,50,"My movement, get used to, nigga",movement,INNER,ASSONANCE,vowel,MED,Y
+Barry White,49,"Y'all played out, I'm the future, nigga",future,50,"My movement, get used to, nigga",used,INNER,ASSONANCE,vowel,MED,Y
+Barry White,49,"Y'all played out, I'm the future, nigga",nigga,51,I ain't never learn to get used to niggas,niggas,END,SLANT,spelling,LOW,Y
+Barry White,49,"Y'all played out, I'm the future, nigga",future,51,I ain't never learn to get used to niggas,used,INNER,ASSONANCE,vowel,MED,Y
+Barry White,49,"Y'all played out, I'm the future, nigga",played,51,I ain't never learn to get used to niggas,ain't,INNER,ASSONANCE,vowel,MED,Y
+Barry White,49,"Y'all played out, I'm the future, nigga",nigga,52,"Y'all fags, man, scared to lose a nigga",nigga,END,REPEAT,spelling,HIGH,N
+Barry White,50,"My movement, get used to, nigga",movement,50,"My movement, get used to, nigga",used,INNER,ASSONANCE,vowel,MED,Y
+Barry White,50,"My movement, get used to, nigga",nigga,51,I ain't never learn to get used to niggas,niggas,END,SLANT,spelling,LOW,Y
+Barry White,50,"My movement, get used to, nigga",get,51,I ain't never learn to get used to niggas,get,INNER,REPEAT,spelling,HIGH,N
+Barry White,50,"My movement, get used to, nigga",get,51,I ain't never learn to get used to niggas,never,INNER,SLANT,cmu,MED,Y
+Barry White,50,"My movement, get used to, nigga",movement,51,I ain't never learn to get used to niggas,used,INNER,ASSONANCE,vowel,MED,Y
+Barry White,50,"My movement, get used to, nigga",used,51,I ain't never learn to get used to niggas,used,INNER,REPEAT,spelling,HIGH,N
+Barry White,50,"My movement, get used to, nigga",nigga,52,"Y'all fags, man, scared to lose a nigga",nigga,END,REPEAT,spelling,HIGH,N
+Barry White,50,"My movement, get used to, nigga",get,52,"Y'all fags, man, scared to lose a nigga",scared,INNER,ASSONANCE,vowel,MED,Y
+Barry White,50,"My movement, get used to, nigga",movement,52,"Y'all fags, man, scared to lose a nigga",lose,INNER,ASSONANCE,vowel,MED,Y
+Barry White,50,"My movement, get used to, nigga",used,52,"Y'all fags, man, scared to lose a nigga",lose,INNER,SLANT,cmu,MED,Y
+Barry White,51,I ain't never learn to get used to niggas,never,51,I ain't never learn to get used to niggas,get,INNER,SLANT,cmu,MED,Y
+Barry White,51,I ain't never learn to get used to niggas,niggas,52,"Y'all fags, man, scared to lose a nigga",nigga,END,SLANT,spelling,LOW,Y
+Barry White,51,I ain't never learn to get used to niggas,get,52,"Y'all fags, man, scared to lose a nigga",scared,INNER,ASSONANCE,vowel,MED,Y
+Barry White,51,I ain't never learn to get used to niggas,never,52,"Y'all fags, man, scared to lose a nigga",scared,INNER,ASSONANCE,vowel,MED,Y
+Barry White,51,I ain't never learn to get used to niggas,used,52,"Y'all fags, man, scared to lose a nigga",lose,INNER,SLANT,cmu,MED,Y
+Barry White,51,I ain't never learn to get used to niggas,ain't,53,Ain't scared to lose my bitch on me,Ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,51,I ain't never learn to get used to niggas,get,53,Ain't scared to lose my bitch on me,scared,INNER,ASSONANCE,vowel,MED,Y
+Barry White,51,I ain't never learn to get used to niggas,never,53,Ain't scared to lose my bitch on me,scared,INNER,ASSONANCE,vowel,MED,Y
+Barry White,51,I ain't never learn to get used to niggas,used,53,Ain't scared to lose my bitch on me,lose,INNER,SLANT,cmu,MED,Y
+Barry White,52,"Y'all fags, man, scared to lose a nigga",fags,52,"Y'all fags, man, scared to lose a nigga",man,INNER,ASSONANCE,vowel,MED,Y
+Barry White,52,"Y'all fags, man, scared to lose a nigga",lose,53,Ain't scared to lose my bitch on me,lose,INNER,REPEAT,spelling,HIGH,N
+Barry White,52,"Y'all fags, man, scared to lose a nigga",scared,53,Ain't scared to lose my bitch on me,scared,INNER,REPEAT,spelling,HIGH,N
+Barry White,52,"Y'all fags, man, scared to lose a nigga",nigga,54,"She friends with my dick, homie",dick,INNER,SLANT,spelling,LOW,Y
+Barry White,52,"Y'all fags, man, scared to lose a nigga",scared,54,"She friends with my dick, homie",friends,INNER,ASSONANCE,vowel,MED,Y
+Barry White,52,"Y'all fags, man, scared to lose a nigga",nigga,56,"That drink shit, yo' chick on it",chick,END,SLANT,spelling,LOW,Y
+Barry White,53,Ain't scared to lose my bitch on me,bitch,54,"She friends with my dick, homie",dick,INNER,SLANT,cmu,MED,Y
+Barry White,53,Ain't scared to lose my bitch on me,scared,54,"She friends with my dick, homie",friends,INNER,ASSONANCE,vowel,MED,Y
+Barry White,53,Ain't scared to lose my bitch on me,bitch,55,Ain't never lettin' no bitch on me,bitch,END,REPEAT,spelling,HIGH,N
+Barry White,53,Ain't scared to lose my bitch on me,Ain't,55,Ain't never lettin' no bitch on me,Ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,53,Ain't scared to lose my bitch on me,scared,55,Ain't never lettin' no bitch on me,lettin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,53,Ain't scared to lose my bitch on me,scared,55,Ain't never lettin' no bitch on me,never,INNER,ASSONANCE,vowel,MED,Y
+Barry White,53,Ain't scared to lose my bitch on me,bitch,56,"That drink shit, yo' chick on it",chick,END,SLANT,cmu,MED,Y
+Barry White,53,Ain't scared to lose my bitch on me,bitch,57,My dick hard and yo' chick on it like a beach chair when she sit on it,sit,END,SLANT,cmu,MED,Y
+Barry White,54,"She friends with my dick, homie",dick,55,Ain't never lettin' no bitch on me,bitch,INNER,SLANT,cmu,MED,Y
+Barry White,54,"She friends with my dick, homie",friends,55,Ain't never lettin' no bitch on me,lettin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,54,"She friends with my dick, homie",friends,55,Ain't never lettin' no bitch on me,never,INNER,ASSONANCE,vowel,MED,Y
+Barry White,54,"She friends with my dick, homie",dick,56,"That drink shit, yo' chick on it",chick,INNER,PERFECT,cmu,HIGH,Y
+Barry White,54,"She friends with my dick, homie",dick,56,"That drink shit, yo' chick on it",drink,INNER,SLANT,cmu,MED,Y
+Barry White,54,"She friends with my dick, homie",dick,56,"That drink shit, yo' chick on it",shit,INNER,SLANT,cmu,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,never,55,Ain't never lettin' no bitch on me,lettin,INNER,ASSONANCE,vowel,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,bitch,56,"That drink shit, yo' chick on it",chick,END,SLANT,cmu,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,bitch,56,"That drink shit, yo' chick on it",drink,INNER,ASSONANCE,vowel,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,bitch,56,"That drink shit, yo' chick on it",shit,INNER,SLANT,cmu,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,bitch,57,My dick hard and yo' chick on it like a beach chair when she sit on it,sit,END,SLANT,cmu,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,bitch,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chick,INNER,SLANT,cmu,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,bitch,57,My dick hard and yo' chick on it like a beach chair when she sit on it,dick,INNER,SLANT,cmu,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,lettin,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chair,INNER,ASSONANCE,vowel,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,lettin,57,My dick hard and yo' chick on it like a beach chair when she sit on it,when,INNER,ASSONANCE,vowel,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,never,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chair,INNER,SLANT,cmu,MED,Y
+Barry White,55,Ain't never lettin' no bitch on me,never,57,My dick hard and yo' chick on it like a beach chair when she sit on it,when,INNER,SLANT,cmu,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",drink,56,"That drink shit, yo' chick on it",chick,INNER,SLANT,cmu,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",drink,56,"That drink shit, yo' chick on it",shit,INNER,ASSONANCE,vowel,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",shit,56,"That drink shit, yo' chick on it",chick,INNER,SLANT,cmu,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",chick,57,My dick hard and yo' chick on it like a beach chair when she sit on it,sit,END,SLANT,cmu,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",chick,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chick,INNER,REPEAT,spelling,HIGH,N
+Barry White,56,"That drink shit, yo' chick on it",chick,57,My dick hard and yo' chick on it like a beach chair when she sit on it,dick,INNER,PERFECT,cmu,HIGH,Y
+Barry White,56,"That drink shit, yo' chick on it",drink,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chick,INNER,SLANT,cmu,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",drink,57,My dick hard and yo' chick on it like a beach chair when she sit on it,dick,INNER,SLANT,cmu,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",drink,57,My dick hard and yo' chick on it like a beach chair when she sit on it,sit,INNER,ASSONANCE,vowel,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",shit,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chick,INNER,SLANT,cmu,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",shit,57,My dick hard and yo' chick on it like a beach chair when she sit on it,dick,INNER,SLANT,cmu,MED,Y
+Barry White,56,"That drink shit, yo' chick on it",shit,57,My dick hard and yo' chick on it like a beach chair when she sit on it,sit,INNER,PERFECT,cmu,HIGH,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chair,57,My dick hard and yo' chick on it like a beach chair when she sit on it,when,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chick,57,My dick hard and yo' chick on it like a beach chair when she sit on it,sit,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,dick,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chick,INNER,PERFECT,cmu,HIGH,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,dick,57,My dick hard and yo' chick on it like a beach chair when she sit on it,sit,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chair,58,Respect that or check that,check,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chair,58,Respect that or check that,Respect,INNER,ASSONANCE,vowel,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,when,58,Respect that or check that,check,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,when,58,Respect that or check that,Respect,INNER,ASSONANCE,vowel,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chair,59,I put that thing where yo' neck at,neck,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chair,59,I put that thing where yo' neck at,where,INNER,PERFECT,cmu,HIGH,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,chick,59,I put that thing where yo' neck at,thing,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,dick,59,I put that thing where yo' neck at,thing,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,sit,59,I put that thing where yo' neck at,thing,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,when,59,I put that thing where yo' neck at,neck,INNER,SLANT,cmu,MED,Y
+Barry White,57,My dick hard and yo' chick on it like a beach chair when she sit on it,when,59,I put that thing where yo' neck at,where,INNER,SLANT,cmu,MED,Y
+Barry White,58,Respect that or check that,Respect,58,Respect that or check that,check,INNER,SLANT,cmu,MED,Y
+Barry White,58,Respect that or check that,check,59,I put that thing where yo' neck at,neck,END,PERFECT,cmu,HIGH,Y
+Barry White,58,Respect that or check that,check,59,I put that thing where yo' neck at,where,INNER,SLANT,cmu,MED,Y
+Barry White,58,Respect that or check that,Respect,59,I put that thing where yo' neck at,neck,INNER,SLANT,cmu,MED,Y
+Barry White,58,Respect that or check that,Respect,59,I put that thing where yo' neck at,where,INNER,ASSONANCE,vowel,MED,Y
+Barry White,58,Respect that or check that,check,60,Fuck her once and don't text back,text,INNER,ASSONANCE,vowel,MED,Y
+Barry White,58,Respect that or check that,Respect,60,Fuck her once and don't text back,text,INNER,SLANT,cmu,MED,Y
+Barry White,58,Respect that or check that,check,61,"Louie Rose, don't test that",test,END,ASSONANCE,vowel,MED,Y
+Barry White,59,I put that thing where yo' neck at,where,59,I put that thing where yo' neck at,neck,INNER,SLANT,cmu,MED,Y
+Barry White,59,I put that thing where yo' neck at,neck,60,Fuck her once and don't text back,text,INNER,ASSONANCE,vowel,MED,Y
+Barry White,59,I put that thing where yo' neck at,where,60,Fuck her once and don't text back,text,INNER,ASSONANCE,vowel,MED,Y
+Barry White,59,I put that thing where yo' neck at,neck,61,"Louie Rose, don't test that",test,END,ASSONANCE,vowel,MED,Y
+Barry White,59,I put that thing where yo' neck at,where,61,"Louie Rose, don't test that",test,INNER,ASSONANCE,vowel,MED,Y
+Barry White,60,Fuck her once and don't text back,Fuck,60,Fuck her once and don't text back,once,INNER,ASSONANCE,vowel,MED,Y
+Barry White,60,Fuck her once and don't text back,don't,61,"Louie Rose, don't test that",don't,INNER,REPEAT,spelling,HIGH,N
+Barry White,60,Fuck her once and don't text back,don't,61,"Louie Rose, don't test that",Rose,INNER,ASSONANCE,vowel,MED,Y
+Barry White,60,Fuck her once and don't text back,text,61,"Louie Rose, don't test that",test,INNER,SLANT,cmu,MED,Y
+Barry White,60,Fuck her once and don't text back,back,62,She fucked around and ain't passed,passed,END,ASSONANCE,vowel,MED,Y
+Barry White,60,Fuck her once and don't text back,Fuck,62,She fucked around and ain't passed,fucked,INNER,SLANT,cmu,MED,Y
+Barry White,60,Fuck her once and don't text back,once,62,She fucked around and ain't passed,fucked,INNER,ASSONANCE,vowel,MED,Y
+Barry White,60,Fuck her once and don't text back,back,63,"If you ain't first, then you last",last,END,ASSONANCE,vowel,MED,Y
+Barry White,61,"Louie Rose, don't test that",Rose,61,"Louie Rose, don't test that",don't,INNER,ASSONANCE,vowel,MED,Y
+Barry White,61,"Louie Rose, don't test that",test,64,They ain't naming me with a best at,best,END,PERFECT,cmu,HIGH,Y
+Barry White,62,She fucked around and ain't passed,passed,63,"If you ain't first, then you last",last,END,PERFECT,cmu,HIGH,Y
+Barry White,62,She fucked around and ain't passed,ain't,63,"If you ain't first, then you last",ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,62,She fucked around and ain't passed,ain't,64,They ain't naming me with a best at,ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,62,She fucked around and ain't passed,ain't,64,They ain't naming me with a best at,naming,INNER,ASSONANCE,vowel,MED,Y
+Barry White,62,She fucked around and ain't passed,passed,65,You fuck around and you mad,mad,END,ASSONANCE,vowel,MED,Y
+Barry White,63,"If you ain't first, then you last",ain't,64,They ain't naming me with a best at,ain't,INNER,REPEAT,spelling,HIGH,N
+Barry White,63,"If you ain't first, then you last",ain't,64,They ain't naming me with a best at,naming,INNER,ASSONANCE,vowel,MED,Y
+Barry White,63,"If you ain't first, then you last",last,65,You fuck around and you mad,mad,END,ASSONANCE,vowel,MED,Y
+Barry White,64,They ain't naming me with a best at,ain't,64,They ain't naming me with a best at,naming,INNER,ASSONANCE,vowel,MED,Y
+Barry White,64,They ain't naming me with a best at,ain't,66,The way I'm grinding make you feel some type of way,make,INNER,ASSONANCE,vowel,MED,Y
+Barry White,64,They ain't naming me with a best at,ain't,66,The way I'm grinding make you feel some type of way,way,INNER,ASSONANCE,vowel,MED,Y
+Barry White,64,They ain't naming me with a best at,naming,66,The way I'm grinding make you feel some type of way,make,INNER,ASSONANCE,vowel,MED,Y
+Barry White,64,They ain't naming me with a best at,naming,66,The way I'm grinding make you feel some type of way,way,INNER,ASSONANCE,vowel,MED,Y
+Barry White,65,You fuck around and you mad,fuck,66,The way I'm grinding make you feel some type of way,some,INNER,SLANT,cmu,MED,Y
+Barry White,65,You fuck around and you mad,mad,67,"The way I hustle make you think I put some Kanye, Kanye",Kanye,END,SLANT,spelling,LOW,Y
+Barry White,65,You fuck around and you mad,fuck,67,"The way I hustle make you think I put some Kanye, Kanye",hustle,INNER,ASSONANCE,vowel,MED,Y
+Barry White,65,You fuck around and you mad,fuck,67,"The way I hustle make you think I put some Kanye, Kanye",some,INNER,SLANT,cmu,MED,Y
+Barry White,65,You fuck around and you mad,mad,67,"The way I hustle make you think I put some Kanye, Kanye",Kanye,INNER,SLANT,spelling,LOW,Y
+Barry White,66,The way I'm grinding make you feel some type of way,grinding,66,The way I'm grinding make you feel some type of way,type,INNER,ASSONANCE,vowel,MED,Y
+Barry White,66,The way I'm grinding make you feel some type of way,make,66,The way I'm grinding make you feel some type of way,way,INNER,ASSONANCE,vowel,MED,Y
+Barry White,66,The way I'm grinding make you feel some type of way,way,66,The way I'm grinding make you feel some type of way,make,INNER,ASSONANCE,vowel,MED,Y
+Barry White,66,The way I'm grinding make you feel some type of way,way,66,The way I'm grinding make you feel some type of way,way,INNER,REPEAT,spelling,HIGH,N
+Barry White,66,The way I'm grinding make you feel some type of way,make,67,"The way I hustle make you think I put some Kanye, Kanye",make,INNER,REPEAT,spelling,HIGH,N
+Barry White,66,The way I'm grinding make you feel some type of way,make,67,"The way I hustle make you think I put some Kanye, Kanye",way,INNER,ASSONANCE,vowel,MED,Y
+Barry White,66,The way I'm grinding make you feel some type of way,some,67,"The way I hustle make you think I put some Kanye, Kanye",hustle,INNER,ASSONANCE,vowel,MED,Y
+Barry White,66,The way I'm grinding make you feel some type of way,some,67,"The way I hustle make you think I put some Kanye, Kanye",some,INNER,REPEAT,spelling,HIGH,N
+Barry White,66,The way I'm grinding make you feel some type of way,way,67,"The way I hustle make you think I put some Kanye, Kanye",make,INNER,ASSONANCE,vowel,MED,Y
+Barry White,66,The way I'm grinding make you feel some type of way,way,67,"The way I hustle make you think I put some Kanye, Kanye",way,INNER,REPEAT,spelling,HIGH,N
+Barry White,67,"The way I hustle make you think I put some Kanye, Kanye",hustle,67,"The way I hustle make you think I put some Kanye, Kanye",some,INNER,ASSONANCE,vowel,MED,Y
+Barry White,67,"The way I hustle make you think I put some Kanye, Kanye",Kanye,67,"The way I hustle make you think I put some Kanye, Kanye",Kanye,INNER,REPEAT,spelling,HIGH,N
+Barry White,67,"The way I hustle make you think I put some Kanye, Kanye",way,67,"The way I hustle make you think I put some Kanye, Kanye",make,INNER,ASSONANCE,vowel,MED,Y

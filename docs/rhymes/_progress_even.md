@@ -166,6 +166,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 154 | h-e-r | H.E.R. | 1 | 68 | 378 | 71 | 307 | 376 | 2026-11-10 13:20 ET |
 | 155 | king-combs | King Combs | 2 | 68 | 321 | 35 | 286 | 310 | 2026-11-10 13:20 ET |
 | 156 | anuel-aa | Anuel AA | 1 | 67 | 831 | 52 | 779 | 518 | 2026-11-10 13:20 ET |
+| 157 | faze-kaysan | FaZe Kaysan | 1 | 67 | 565 | 68 | 497 | 558 | 2026-11-10 13:20 ET |
+| 158 | louis-rose | Louis Rose | 1 | 67 | 422 | 75 | 347 | 422 | 2026-11-10 13:20 ET |
+| 159 | dy-krazy | DY Krazy | 1 | 66 | 387 | 98 | 289 | 377 | 2026-11-10 13:20 ET |
+| 160 | smokepurpp | Smokepurpp | 1 | 66 | 258 | 60 | 198 | 255 | 2026-11-10 13:20 ET |
+| 161 | cash-berry | Cash Berry | 1 | 65 | 505 | 76 | 429 | 500 | 2026-11-10 13:20 ET |
+| 162 | vedo | VEDO | 1 | 65 | 242 | 35 | 207 | 241 | 2026-11-10 13:20 ET |
+| 163 | chicken-p | Chicken P | 1 | 64 | 755 | 123 | 632 | 752 | 2026-11-10 13:21 ET |
+| 164 | goodbye-tomorrow | Goodbye Tomorrow | 1 | 64 | 397 | 56 | 341 | 394 | 2026-11-10 13:21 ET |
+| 165 | red-cafe | Red Cafe | 1 | 64 | 368 | 51 | 317 | 361 | 2026-11-10 13:21 ET |
+| 166 | turk | Turk | 1 | 64 | 315 | 69 | 246 | 315 | 2026-11-10 13:21 ET |
 
 ## Failures
 
@@ -173,7 +183,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 156/386: Anuel AA.
+Finished 166/386: Turk.
 
 ## Final
 

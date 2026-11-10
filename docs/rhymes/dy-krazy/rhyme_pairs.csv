@@ -1,0 +1,444 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Off Some Percs,1,That was a trick question,trick,2,"I'm in this bitch rollin' up right now, DY",bitch,INNER,SLANT,cmu,MED,Y
+Off Some Percs,1,That was a trick question,trick,3,"And Wopskino just called me to go to this bitch, on bro",bitch,INNER,SLANT,cmu,MED,Y
+Off Some Percs,2,"I'm in this bitch rollin' up right now, DY",bitch,3,"And Wopskino just called me to go to this bitch, on bro",bitch,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,3,"And Wopskino just called me to go to this bitch, on bro",go,3,"And Wopskino just called me to go to this bitch, on bro",bro,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,3,"And Wopskino just called me to go to this bitch, on bro",Wopskino,3,"And Wopskino just called me to go to this bitch, on bro",bro,INNER,ASSONANCE,vowel,LOW,N
+Off Some Percs,3,"And Wopskino just called me to go to this bitch, on bro",Wopskino,3,"And Wopskino just called me to go to this bitch, on bro",go,INNER,ASSONANCE,vowel,LOW,N
+Off Some Percs,3,"And Wopskino just called me to go to this bitch, on bro",bitch,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",thick,INNER,SLANT,cmu,MED,Y
+Off Some Percs,3,"And Wopskino just called me to go to this bitch, on bro",bro,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",over,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,3,"And Wopskino just called me to go to this bitch, on bro",go,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",over,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,4,I'm tryna get off some motherfuckin' Percs (Pop),some,4,I'm tryna get off some motherfuckin' Percs (Pop),motherfuckin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,4,I'm tryna get off some motherfuckin' Percs (Pop),Percs,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",skirt,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,4,I'm tryna get off some motherfuckin' Percs (Pop),get,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",bend,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,4,I'm tryna get off some motherfuckin' Percs (Pop),motherfuckin,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",fuck,INNER,SLANT,cmu,MED,Y
+Off Some Percs,4,I'm tryna get off some motherfuckin' Percs (Pop),some,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",fuck,INNER,SLANT,cmu,MED,Y
+Off Some Percs,4,I'm tryna get off some motherfuckin' Percs (Pop),Percs,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",shirt,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,4,I'm tryna get off some motherfuckin' Percs (Pop),tryna,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",keep,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,4,I'm tryna get off some motherfuckin' Percs (Pop),Percs,8,"All of this rain, go berserk, uh",berserk,END,SLANT,cmu,MED,Y
+Off Some Percs,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",skirt,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",shirt,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",over,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",though,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",thick,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",lift,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",thick,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",pistol,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",bend,7,"Bet I can make her twerk, uh",Bet,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",fuck,7,"Bet I can make her twerk, uh",twerk,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",skirt,8,"All of this rain, go berserk, uh",berserk,END,SLANT,cmu,MED,Y
+Off Some Percs,5,"Yeah, she thick as fuck, bend over, I'm up her skirt",skirt,9,"And them Maisons hurt, uh",hurt,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",pistol,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",lift,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",baby,7,"Bet I can make her twerk, uh",make,INNER,SLANT,cmu,MED,Y
+Off Some Percs,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",shirt,8,"All of this rain, go berserk, uh",berserk,END,SLANT,cmu,MED,Y
+Off Some Percs,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",baby,8,"All of this rain, go berserk, uh",rain,INNER,SLANT,cmu,MED,Y
+Off Some Percs,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",though,8,"All of this rain, go berserk, uh",go,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",shirt,9,"And them Maisons hurt, uh",hurt,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,6,"And I keep a pistol on me though, baby, lift up my shirt (Grrah), uh",shirt,10,"But these bitches get right with my shirt, uh",shirt,END,REPEAT,spelling,HIGH,N
+Off Some Percs,7,"Bet I can make her twerk, uh",twerk,8,"All of this rain, go berserk, uh",berserk,END,SLANT,spelling,LOW,Y
+Off Some Percs,7,"Bet I can make her twerk, uh",make,8,"All of this rain, go berserk, uh",rain,INNER,SLANT,cmu,MED,Y
+Off Some Percs,8,"All of this rain, go berserk, uh",berserk,9,"And them Maisons hurt, uh",hurt,END,SLANT,cmu,MED,Y
+Off Some Percs,8,"All of this rain, go berserk, uh",berserk,10,"But these bitches get right with my shirt, uh",shirt,END,SLANT,cmu,MED,Y
+Off Some Percs,8,"All of this rain, go berserk, uh",berserk,11,"We was broke on the first, uh",first,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,8,"All of this rain, go berserk, uh",berserk,12,Now I'm gettin' a Lambo' first (Skrrt),first,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,9,"And them Maisons hurt, uh",hurt,10,"But these bitches get right with my shirt, uh",shirt,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,9,"And them Maisons hurt, uh",hurt,11,"We was broke on the first, uh",first,END,SLANT,cmu,MED,Y
+Off Some Percs,9,"And them Maisons hurt, uh",hurt,12,Now I'm gettin' a Lambo' first (Skrrt),first,END,SLANT,cmu,MED,Y
+Off Some Percs,10,"But these bitches get right with my shirt, uh",shirt,11,"We was broke on the first, uh",first,END,SLANT,cmu,MED,Y
+Off Some Percs,10,"But these bitches get right with my shirt, uh",shirt,12,Now I'm gettin' a Lambo' first (Skrrt),first,END,SLANT,cmu,MED,Y
+Off Some Percs,10,"But these bitches get right with my shirt, uh",get,12,Now I'm gettin' a Lambo' first (Skrrt),gettin,INNER,SLANT,cmu,MED,Y
+Off Some Percs,11,"We was broke on the first, uh",first,12,Now I'm gettin' a Lambo' first (Skrrt),first,END,REPEAT,spelling,HIGH,N
+Off Some Percs,12,Now I'm gettin' a Lambo' first (Skrrt),gettin,14,Might as well say I did it,well,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,13,At least in my city,city,15,"If I want that bitch, I'ma get it",bitch,INNER,SLANT,cmu,MED,Y
+Off Some Percs,13,At least in my city,city,15,"If I want that bitch, I'ma get it",I'ma,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,13,At least in my city,city,16,"Might as well say I hit it, uh",hit,END,SLANT,cmu,MED,Y
+Off Some Percs,13,At least in my city,city,17,"Abuse my power, might as well say I'm fitted",fitted,END,SLANT,cmu,MED,Y
+Off Some Percs,14,Might as well say I did it,well,15,"If I want that bitch, I'ma get it",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,14,Might as well say I did it,Might,16,"Might as well say I hit it, uh",Might,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,14,Might as well say I did it,say,16,"Might as well say I hit it, uh",say,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,14,Might as well say I did it,well,16,"Might as well say I hit it, uh",well,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,15,"If I want that bitch, I'ma get it",bitch,15,"If I want that bitch, I'ma get it",I'ma,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,15,"If I want that bitch, I'ma get it",bitch,16,"Might as well say I hit it, uh",hit,INNER,SLANT,cmu,MED,Y
+Off Some Percs,15,"If I want that bitch, I'ma get it",get,16,"Might as well say I hit it, uh",well,INNER,SLANT,cmu,MED,Y
+Off Some Percs,15,"If I want that bitch, I'ma get it",I'ma,16,"Might as well say I hit it, uh",hit,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,15,"If I want that bitch, I'ma get it",bitch,17,"Abuse my power, might as well say I'm fitted",fitted,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,15,"If I want that bitch, I'ma get it",get,17,"Abuse my power, might as well say I'm fitted",well,INNER,SLANT,cmu,MED,Y
+Off Some Percs,15,"If I want that bitch, I'ma get it",get,18,"I'm mixin' Amiri with Fendi, uh",Fendi,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,16,"Might as well say I hit it, uh",hit,17,"Abuse my power, might as well say I'm fitted",fitted,END,SLANT,cmu,MED,Y
+Off Some Percs,16,"Might as well say I hit it, uh",Might,17,"Abuse my power, might as well say I'm fitted",might,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,16,"Might as well say I hit it, uh",say,17,"Abuse my power, might as well say I'm fitted",say,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,16,"Might as well say I hit it, uh",well,17,"Abuse my power, might as well say I'm fitted",well,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,16,"Might as well say I hit it, uh",hit,18,"I'm mixin' Amiri with Fendi, uh",Amiri,INNER,SLANT,cmu,MED,Y
+Off Some Percs,16,"Might as well say I hit it, uh",hit,18,"I'm mixin' Amiri with Fendi, uh",mixin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,16,"Might as well say I hit it, uh",well,18,"I'm mixin' Amiri with Fendi, uh",Fendi,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,16,"Might as well say I hit it, uh",hit,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",kidneys,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,17,"Abuse my power, might as well say I'm fitted",fitted,18,"I'm mixin' Amiri with Fendi, uh",Amiri,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,17,"Abuse my power, might as well say I'm fitted",fitted,18,"I'm mixin' Amiri with Fendi, uh",mixin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,17,"Abuse my power, might as well say I'm fitted",well,18,"I'm mixin' Amiri with Fendi, uh",Fendi,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,17,"Abuse my power, might as well say I'm fitted",fitted,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",kidneys,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,17,"Abuse my power, might as well say I'm fitted",fitted,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",Bhindi,END,SLANT,spelling,LOW,Y
+Off Some Percs,18,"I'm mixin' Amiri with Fendi, uh",mixin,18,"I'm mixin' Amiri with Fendi, uh",Amiri,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,18,"I'm mixin' Amiri with Fendi, uh",Fendi,19,Pull the Lam' truck to Wendys,Wendys,END,SLANT,spelling,LOW,Y
+Off Some Percs,18,"I'm mixin' Amiri with Fendi, uh",Amiri,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",bitch,INNER,SLANT,cmu,MED,Y
+Off Some Percs,18,"I'm mixin' Amiri with Fendi, uh",Amiri,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",kidneys,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,18,"I'm mixin' Amiri with Fendi, uh",Amiri,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",six,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,18,"I'm mixin' Amiri with Fendi, uh",Fendi,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",said,INNER,SLANT,cmu,MED,Y
+Off Some Percs,18,"I'm mixin' Amiri with Fendi, uh",mixin,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",bitch,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,18,"I'm mixin' Amiri with Fendi, uh",mixin,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",kidneys,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,18,"I'm mixin' Amiri with Fendi, uh",mixin,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",six,INNER,SLANT,cmu,MED,Y
+Off Some Percs,19,Pull the Lam' truck to Wendys,truck,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",fuck,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,19,Pull the Lam' truck to Wendys,truck,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",some,INNER,SLANT,cmu,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",bitch,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",kidneys,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",bitch,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",six,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",six,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",kidneys,INNER,SLANT,cmu,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",bitch,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",Bhindi,INNER,ASSONANCE,vowel,LOW,N
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",fuck,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",some,INNER,SLANT,cmu,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",said,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",Elliot,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",kidneys,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",city,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",bitch,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",city,INNER,SLANT,cmu,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",fuck,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",some,INNER,SLANT,cmu,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",said,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",Treasures,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",said,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",went,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",six,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",city,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",kidneys,23,"Still got a safe in the city, uh",city,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,20,"Just to feed a bitch, I'm pourin' a six like I said fuck my kidneys",kidneys,24,"500K in the inner city, uh",city,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",got,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",got,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",jewelry,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",jewelry,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",some,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",some,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",Elliot,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",Treasures,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",Elliot,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",went,INNER,SLANT,cmu,MED,Y
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",got,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",got,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",got,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",Icebox,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",jewelry,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",jewelry,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",some,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",some,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",Bhindi,23,"Still got a safe in the city, uh",Still,INNER,ASSONANCE,vowel,LOW,N
+Off Some Percs,21,"I got some jewelry from Elliot, I got some jewelry from Bhindi",got,23,"Still got a safe in the city, uh",got,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",got,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",Icebox,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",went,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",Treasures,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",city,23,"Still got a safe in the city, uh",city,END,REPEAT,spelling,HIGH,N
+Off Some Percs,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",city,23,"Still got a safe in the city, uh",Still,INNER,SLANT,cmu,MED,Y
+Off Some Percs,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",got,23,"Still got a safe in the city, uh",got,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",Icebox,23,"Still got a safe in the city, uh",got,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",city,24,"500K in the inner city, uh",city,END,REPEAT,spelling,HIGH,N
+Off Some Percs,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",city,24,"500K in the inner city, uh",inner,INNER,SLANT,cmu,MED,Y
+Off Some Percs,22,"I got some jewelry from Icebox, went to Treasures 'cause they from the city, uh",city,26,"'Cause I'm on frontline when it's nitty-gritty, uh",gritty,END,MULTI,multi,HIGH,Y
+Off Some Percs,23,"Still got a safe in the city, uh",Still,23,"Still got a safe in the city, uh",city,INNER,SLANT,cmu,MED,Y
+Off Some Percs,23,"Still got a safe in the city, uh",city,24,"500K in the inner city, uh",city,END,REPEAT,spelling,HIGH,N
+Off Some Percs,23,"Still got a safe in the city, uh",city,24,"500K in the inner city, uh",inner,INNER,SLANT,cmu,MED,Y
+Off Some Percs,23,"Still got a safe in the city, uh",Still,24,"500K in the inner city, uh",city,INNER,SLANT,cmu,MED,Y
+Off Some Percs,23,"Still got a safe in the city, uh",Still,24,"500K in the inner city, uh",inner,INNER,SLANT,cmu,MED,Y
+Off Some Percs,23,"Still got a safe in the city, uh",city,25,"I still got a K in the hoodie, uh",still,INNER,SLANT,cmu,MED,Y
+Off Some Percs,23,"Still got a safe in the city, uh",got,25,"I still got a K in the hoodie, uh",got,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,23,"Still got a safe in the city, uh",safe,25,"I still got a K in the hoodie, uh",K,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,23,"Still got a safe in the city, uh",Still,25,"I still got a K in the hoodie, uh",still,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,23,"Still got a safe in the city, uh",city,26,"'Cause I'm on frontline when it's nitty-gritty, uh",gritty,END,MULTI,multi,HIGH,Y
+Off Some Percs,23,"Still got a safe in the city, uh",city,27,And I got foenem really with me,really,END,SLANT,cmu,MED,Y
+Off Some Percs,24,"500K in the inner city, uh",inner,24,"500K in the inner city, uh",city,INNER,SLANT,cmu,MED,Y
+Off Some Percs,24,"500K in the inner city, uh",city,25,"I still got a K in the hoodie, uh",still,INNER,SLANT,cmu,MED,Y
+Off Some Percs,24,"500K in the inner city, uh",inner,25,"I still got a K in the hoodie, uh",still,INNER,SLANT,cmu,MED,Y
+Off Some Percs,24,"500K in the inner city, uh",city,26,"'Cause I'm on frontline when it's nitty-gritty, uh",gritty,END,MULTI,multi,HIGH,Y
+Off Some Percs,24,"500K in the inner city, uh",city,26,"'Cause I'm on frontline when it's nitty-gritty, uh",nitty,INNER,MULTI,multi,HIGH,Y
+Off Some Percs,24,"500K in the inner city, uh",inner,26,"'Cause I'm on frontline when it's nitty-gritty, uh",gritty,INNER,SLANT,cmu,MED,Y
+Off Some Percs,24,"500K in the inner city, uh",inner,26,"'Cause I'm on frontline when it's nitty-gritty, uh",nitty,INNER,SLANT,cmu,MED,Y
+Off Some Percs,24,"500K in the inner city, uh",inner city,26,"'Cause I'm on frontline when it's nitty-gritty, uh",when nitty,INNER,MULTI,multi,HIGH,Y
+Off Some Percs,24,"500K in the inner city, uh",city,27,And I got foenem really with me,really,END,SLANT,cmu,MED,Y
+Off Some Percs,25,"I still got a K in the hoodie, uh",still,26,"'Cause I'm on frontline when it's nitty-gritty, uh",gritty,INNER,SLANT,cmu,MED,Y
+Off Some Percs,25,"I still got a K in the hoodie, uh",still,26,"'Cause I'm on frontline when it's nitty-gritty, uh",nitty,INNER,SLANT,cmu,MED,Y
+Off Some Percs,25,"I still got a K in the hoodie, uh",got,27,And I got foenem really with me,got,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,25,"I still got a K in the hoodie, uh",still,27,And I got foenem really with me,really,INNER,SLANT,cmu,MED,Y
+Off Some Percs,26,"'Cause I'm on frontline when it's nitty-gritty, uh",nitty,26,"'Cause I'm on frontline when it's nitty-gritty, uh",gritty,INNER,MULTI,multi,HIGH,Y
+Off Some Percs,26,"'Cause I'm on frontline when it's nitty-gritty, uh",when nitty,26,"'Cause I'm on frontline when it's nitty-gritty, uh",nitty gritty,INNER,MULTI,multi,HIGH,Y
+Off Some Percs,26,"'Cause I'm on frontline when it's nitty-gritty, uh",gritty,27,And I got foenem really with me,really,END,SLANT,cmu,MED,Y
+Off Some Percs,26,"'Cause I'm on frontline when it's nitty-gritty, uh",nitty,27,And I got foenem really with me,really,INNER,SLANT,cmu,MED,Y
+Off Some Percs,26,"'Cause I'm on frontline when it's nitty-gritty, uh",gritty,29,And we been through all kind of sitchys,sitchys,END,ASSONANCE,vowel,LOW,N
+Off Some Percs,26,"'Cause I'm on frontline when it's nitty-gritty, uh",gritty,30,We gon' come through when it get sticky,sticky,END,SLANT,cmu,MED,Y
+Off Some Percs,27,And I got foenem really with me,foenem,28,They gon' pull up in that 650,gon,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,27,And I got foenem really with me,really,29,And we been through all kind of sitchys,sitchys,END,ASSONANCE,vowel,LOW,N
+Off Some Percs,27,And I got foenem really with me,really,30,We gon' come through when it get sticky,sticky,END,SLANT,cmu,MED,Y
+Off Some Percs,27,And I got foenem really with me,really,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",dizzy,END,SLANT,cmu,MED,Y
+Off Some Percs,28,They gon' pull up in that 650,gon,30,We gon' come through when it get sticky,gon,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,29,And we been through all kind of sitchys,sitchys,30,We gon' come through when it get sticky,sticky,END,ASSONANCE,vowel,LOW,N
+Off Some Percs,29,And we been through all kind of sitchys,through,30,We gon' come through when it get sticky,through,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,29,And we been through all kind of sitchys,sitchys,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",dizzy,END,SLANT,spelling,LOW,Y
+Off Some Percs,29,And we been through all kind of sitchys,kind,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",high,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,29,And we been through all kind of sitchys,sitchys,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",picky,END,ASSONANCE,vowel,LOW,N
+Off Some Percs,30,We gon' come through when it get sticky,when,30,We gon' come through when it get sticky,get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,sticky,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",dizzy,END,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,come,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",done,INNER,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,sticky,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",lil,INNER,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,sticky,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",still,INNER,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,sticky,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",whip,INNER,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,sticky,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",picky,END,MULTI,multi,HIGH,Y
+Off Some Percs,30,We gon' come through when it get sticky,come,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",truck,INNER,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,get,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",get,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,30,We gon' come through when it get sticky,get,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",less,INNER,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,gon,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",don't,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,30,We gon' come through when it get sticky,through,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",Usually,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,when,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,when,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",less,INNER,SLANT,cmu,MED,Y
+Off Some Percs,30,We gon' come through when it get sticky,sticky,33,"You'll get did like Ricky, woah",Ricky,END,MULTI,multi,HIGH,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",gotta,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",hop,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",lil,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",dizzy,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",lil,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",still,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",lil,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",whip,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",still,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",dizzy,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",whip,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",dizzy,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",whip,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",still,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",dizzy,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",picky,END,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",done,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",truck,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",gotta,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",nothin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",high,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",ride,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",high,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",time,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",hop,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",nothin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",lil,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",picky,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",smacked,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",black,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",still,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",picky,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",whip,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",picky,INNER,SLANT,cmu,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",high,33,"You'll get did like Ricky, woah",like,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,31,"We done smacked up a lil' whip on a high speed, gotta hop out, but I'm still dizzy",speed,33,"You'll get did like Ricky, woah",Ricky,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",less,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",ride,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",time,INNER,SLANT,cmu,MED,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",picky,33,"You'll get did like Ricky, woah",Ricky,END,MULTI,multi,HIGH,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",get,33,"You'll get did like Ricky, woah",get,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",less,33,"You'll get did like Ricky, woah",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",ride,33,"You'll get did like Ricky, woah",like,INNER,SLANT,cmu,MED,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",time,33,"You'll get did like Ricky, woah",like,INNER,SLANT,cmu,MED,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",ain't,34,May the Lord bless his soul,May,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",don't,34,May the Lord bless his soul,soul,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",get,34,May the Lord bless his soul,bless,INNER,SLANT,cmu,MED,Y
+Off Some Percs,32,"Usually I don't ride in nothin' less than a black truck, but ain't a good time to get picky",less,34,May the Lord bless his soul,bless,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,33,"You'll get did like Ricky, woah",get,34,May the Lord bless his soul,bless,INNER,SLANT,cmu,MED,Y
+Off Some Percs,33,"You'll get did like Ricky, woah",get,35,"I be quick to kill a nigga, so that boy best to know",best,INNER,SLANT,cmu,MED,Y
+Off Some Percs,34,May the Lord bless his soul,soul,35,"I be quick to kill a nigga, so that boy best to know",know,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,34,May the Lord bless his soul,bless,35,"I be quick to kill a nigga, so that boy best to know",best,INNER,SLANT,cmu,MED,Y
+Off Some Percs,34,May the Lord bless his soul,bless,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Fresh,INNER,SLANT,cmu,MED,Y
+Off Some Percs,34,May the Lord bless his soul,bless,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,34,May the Lord bless his soul,bless,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Texaco,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,34,May the Lord bless his soul,soul,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",go,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,34,May the Lord bless his soul,soul,37,"Them niggas really gettin' chicken, shout out them in Mexico",Mexico,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",quick,35,"I be quick to kill a nigga, so that boy best to know",kill,INNER,SLANT,cmu,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",quick,35,"I be quick to kill a nigga, so that boy best to know",nigga,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",best,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Fresh,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",best,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",best,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Texaco,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",kill,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",kit,INNER,SLANT,cmu,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",know,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",go,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",nigga,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",kit,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",quick,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",kit,INNER,SLANT,cmu,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",know,37,"Them niggas really gettin' chicken, shout out them in Mexico",Mexico,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",best,37,"Them niggas really gettin' chicken, shout out them in Mexico",gettin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",kill,37,"Them niggas really gettin' chicken, shout out them in Mexico",chicken,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",kill,37,"Them niggas really gettin' chicken, shout out them in Mexico",really,INNER,SLANT,cmu,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",nigga,37,"Them niggas really gettin' chicken, shout out them in Mexico",niggas,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",quick,37,"Them niggas really gettin' chicken, shout out them in Mexico",chicken,INNER,SLANT,cmu,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",quick,37,"Them niggas really gettin' chicken, shout out them in Mexico",really,INNER,SLANT,cmu,MED,Y
+Off Some Percs,35,"I be quick to kill a nigga, so that boy best to know",know,39,"Ain't no reason to stress, I know",know,END,REPEAT,spelling,HIGH,N
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Fresh,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Fresh,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Texaco,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",get,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Texaco,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Texaco,37,"Them niggas really gettin' chicken, shout out them in Mexico",Mexico,END,MULTI,multi,HIGH,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Fresh,37,"Them niggas really gettin' chicken, shout out them in Mexico",gettin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",get,37,"Them niggas really gettin' chicken, shout out them in Mexico",gettin,INNER,SLANT,cmu,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",go,37,"Them niggas really gettin' chicken, shout out them in Mexico",Mexico,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",kit,37,"Them niggas really gettin' chicken, shout out them in Mexico",chicken,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",kit,37,"Them niggas really gettin' chicken, shout out them in Mexico",really,INNER,SLANT,cmu,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Texaco,37,"Them niggas really gettin' chicken, shout out them in Mexico",gettin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Fresh,38,Young nigga livin' blessed for sure,blessed,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",fuck,38,Young nigga livin' blessed for sure,Young,INNER,SLANT,cmu,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",get,38,Young nigga livin' blessed for sure,blessed,INNER,SLANT,cmu,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",kit,38,Young nigga livin' blessed for sure,livin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",kit,38,Young nigga livin' blessed for sure,nigga,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,36,"Fresh as fuck, go and get the kit, I pop out at the Texaco",Texaco,38,Young nigga livin' blessed for sure,blessed,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,37,"Them niggas really gettin' chicken, shout out them in Mexico",really,37,"Them niggas really gettin' chicken, shout out them in Mexico",chicken,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,37,"Them niggas really gettin' chicken, shout out them in Mexico",chicken,38,Young nigga livin' blessed for sure,livin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,37,"Them niggas really gettin' chicken, shout out them in Mexico",gettin,38,Young nigga livin' blessed for sure,blessed,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,37,"Them niggas really gettin' chicken, shout out them in Mexico",niggas,38,Young nigga livin' blessed for sure,nigga,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,37,"Them niggas really gettin' chicken, shout out them in Mexico",really,38,Young nigga livin' blessed for sure,livin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,37,"Them niggas really gettin' chicken, shout out them in Mexico",Mexico,39,"Ain't no reason to stress, I know",know,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,37,"Them niggas really gettin' chicken, shout out them in Mexico",gettin,39,"Ain't no reason to stress, I know",stress,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,37,"Them niggas really gettin' chicken, shout out them in Mexico",Mexico,39,"Ain't no reason to stress, I know",no,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,37,"Them niggas really gettin' chicken, shout out them in Mexico",Mexico,41,"Nigga, fuck that shit, I let it go",go,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,38,Young nigga livin' blessed for sure,blessed,39,"Ain't no reason to stress, I know",stress,INNER,SLANT,cmu,MED,Y
+Off Some Percs,38,Young nigga livin' blessed for sure,livin,40,"Rich as fuck, you owe me somethin'",Rich,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,38,Young nigga livin' blessed for sure,Young,40,"Rich as fuck, you owe me somethin'",fuck,INNER,SLANT,cmu,MED,Y
+Off Some Percs,38,Young nigga livin' blessed for sure,Young,40,"Rich as fuck, you owe me somethin'",somethin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,39,"Ain't no reason to stress, I know",no,39,"Ain't no reason to stress, I know",know,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,39,"Ain't no reason to stress, I know",know,40,"Rich as fuck, you owe me somethin'",owe,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,39,"Ain't no reason to stress, I know",no,40,"Rich as fuck, you owe me somethin'",owe,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,39,"Ain't no reason to stress, I know",know,41,"Nigga, fuck that shit, I let it go",go,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,39,"Ain't no reason to stress, I know",no,41,"Nigga, fuck that shit, I let it go",go,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,39,"Ain't no reason to stress, I know",stress,41,"Nigga, fuck that shit, I let it go",let,INNER,SLANT,cmu,MED,Y
+Off Some Percs,39,"Ain't no reason to stress, I know",know,42,Still ain't too rich to let it blow,blow,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,39,"Ain't no reason to stress, I know",know,43,"Bah, let it blow",blow,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,40,"Rich as fuck, you owe me somethin'",fuck,40,"Rich as fuck, you owe me somethin'",somethin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,40,"Rich as fuck, you owe me somethin'",fuck,41,"Nigga, fuck that shit, I let it go",fuck,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,40,"Rich as fuck, you owe me somethin'",owe,41,"Nigga, fuck that shit, I let it go",go,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,40,"Rich as fuck, you owe me somethin'",Rich,41,"Nigga, fuck that shit, I let it go",shit,INNER,SLANT,cmu,MED,Y
+Off Some Percs,40,"Rich as fuck, you owe me somethin'",somethin,41,"Nigga, fuck that shit, I let it go",fuck,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,40,"Rich as fuck, you owe me somethin'",owe,42,Still ain't too rich to let it blow,blow,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,40,"Rich as fuck, you owe me somethin'",Rich,42,Still ain't too rich to let it blow,rich,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,40,"Rich as fuck, you owe me somethin'",Rich,42,Still ain't too rich to let it blow,Still,INNER,SLANT,cmu,MED,Y
+Off Some Percs,41,"Nigga, fuck that shit, I let it go",Nigga,41,"Nigga, fuck that shit, I let it go",shit,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,41,"Nigga, fuck that shit, I let it go",go,42,Still ain't too rich to let it blow,blow,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,41,"Nigga, fuck that shit, I let it go",let,42,Still ain't too rich to let it blow,let,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,41,"Nigga, fuck that shit, I let it go",shit,42,Still ain't too rich to let it blow,rich,INNER,SLANT,cmu,MED,Y
+Off Some Percs,41,"Nigga, fuck that shit, I let it go",shit,42,Still ain't too rich to let it blow,Still,INNER,SLANT,cmu,MED,Y
+Off Some Percs,41,"Nigga, fuck that shit, I let it go",go,43,"Bah, let it blow",blow,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,41,"Nigga, fuck that shit, I let it go",let,43,"Bah, let it blow",let,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,41,"Nigga, fuck that shit, I let it go",go,44,Ten racks take me no time to throw,throw,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,41,"Nigga, fuck that shit, I let it go",go,45,"Uh-uh, I just let it go",go,END,REPEAT,spelling,HIGH,N
+Off Some Percs,42,Still ain't too rich to let it blow,Still,42,Still ain't too rich to let it blow,rich,INNER,SLANT,cmu,MED,Y
+Off Some Percs,42,Still ain't too rich to let it blow,blow,43,"Bah, let it blow",blow,END,REPEAT,spelling,HIGH,N
+Off Some Percs,42,Still ain't too rich to let it blow,let,43,"Bah, let it blow",let,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,42,Still ain't too rich to let it blow,blow,44,Ten racks take me no time to throw,throw,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,42,Still ain't too rich to let it blow,ain't,44,Ten racks take me no time to throw,take,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,42,Still ain't too rich to let it blow,blow,44,Ten racks take me no time to throw,no,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,42,Still ain't too rich to let it blow,let,44,Ten racks take me no time to throw,Ten,INNER,SLANT,cmu,MED,Y
+Off Some Percs,42,Still ain't too rich to let it blow,blow,45,"Uh-uh, I just let it go",go,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,42,Still ain't too rich to let it blow,blow,46,"You wifin' it, but that's a ho",ho,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,43,"Bah, let it blow",blow,44,Ten racks take me no time to throw,throw,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,43,"Bah, let it blow",blow,44,Ten racks take me no time to throw,no,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,43,"Bah, let it blow",let,44,Ten racks take me no time to throw,Ten,INNER,SLANT,cmu,MED,Y
+Off Some Percs,43,"Bah, let it blow",blow,45,"Uh-uh, I just let it go",go,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,43,"Bah, let it blow",let,45,"Uh-uh, I just let it go",let,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,43,"Bah, let it blow",blow,46,"You wifin' it, but that's a ho",ho,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,43,"Bah, let it blow",blow,47,"Bustdown Rollie, this just for show",show,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,44,Ten racks take me no time to throw,no,44,Ten racks take me no time to throw,throw,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,44,Ten racks take me no time to throw,throw,45,"Uh-uh, I just let it go",go,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,44,Ten racks take me no time to throw,no,45,"Uh-uh, I just let it go",go,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,44,Ten racks take me no time to throw,Ten,45,"Uh-uh, I just let it go",let,INNER,SLANT,cmu,MED,Y
+Off Some Percs,44,Ten racks take me no time to throw,throw,46,"You wifin' it, but that's a ho",ho,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,44,Ten racks take me no time to throw,no,46,"You wifin' it, but that's a ho",ho,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,44,Ten racks take me no time to throw,throw,47,"Bustdown Rollie, this just for show",show,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,45,"Uh-uh, I just let it go",go,46,"You wifin' it, but that's a ho",ho,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,45,"Uh-uh, I just let it go",go,47,"Bustdown Rollie, this just for show",show,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,45,"Uh-uh, I just let it go",go,47,"Bustdown Rollie, this just for show",Rollie,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,45,"Uh-uh, I just let it go",go,49,This Cuban link set is just for show,show,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,46,"You wifin' it, but that's a ho",ho,47,"Bustdown Rollie, this just for show",show,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,46,"You wifin' it, but that's a ho",ho,47,"Bustdown Rollie, this just for show",Rollie,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,46,"You wifin' it, but that's a ho",ho,49,This Cuban link set is just for show,show,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,47,"Bustdown Rollie, this just for show",Rollie,47,"Bustdown Rollie, this just for show",show,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,47,"Bustdown Rollie, this just for show",show,49,This Cuban link set is just for show,show,END,REPEAT,spelling,HIGH,N
+Off Some Percs,47,"Bustdown Rollie, this just for show",Rollie,49,This Cuban link set is just for show,show,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,47,"Bustdown Rollie, this just for show",show,51,Tryna catch some poles,poles,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,48,All the jewelry I bought this year,jewelry,49,This Cuban link set is just for show,Cuban,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,48,All the jewelry I bought this year,year,49,This Cuban link set is just for show,link,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,48,All the jewelry I bought this year,All,50,Four-seven kickin' down Essex doors,doors,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,48,All the jewelry I bought this year,All,50,Four-seven kickin' down Essex doors,Four,INNER,SLANT,cmu,MED,Y
+Off Some Percs,48,All the jewelry I bought this year,year,50,Four-seven kickin' down Essex doors,kickin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,49,This Cuban link set is just for show,link,50,Four-seven kickin' down Essex doors,kickin,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,49,This Cuban link set is just for show,set,50,Four-seven kickin' down Essex doors,Essex,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,49,This Cuban link set is just for show,set,50,Four-seven kickin' down Essex doors,seven,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,49,This Cuban link set is just for show,show,51,Tryna catch some poles,poles,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,49,This Cuban link set is just for show,show,52,'Member we walked to the beach on 63rd just tryna catch some hoes,hoes,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,49,This Cuban link set is just for show,show,53,"Now I don't even message hoes, them lil' messy hoes",hoes,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,50,Four-seven kickin' down Essex doors,Four,50,Four-seven kickin' down Essex doors,doors,INNER,SLANT,cmu,MED,Y
+Off Some Percs,50,Four-seven kickin' down Essex doors,seven,50,Four-seven kickin' down Essex doors,Essex,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,50,Four-seven kickin' down Essex doors,doors,52,'Member we walked to the beach on 63rd just tryna catch some hoes,walked,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,50,Four-seven kickin' down Essex doors,Essex,52,'Member we walked to the beach on 63rd just tryna catch some hoes,'Member,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,50,Four-seven kickin' down Essex doors,Four,52,'Member we walked to the beach on 63rd just tryna catch some hoes,walked,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,50,Four-seven kickin' down Essex doors,seven,52,'Member we walked to the beach on 63rd just tryna catch some hoes,'Member,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,51,Tryna catch some poles,poles,52,'Member we walked to the beach on 63rd just tryna catch some hoes,hoes,END,SLANT,cmu,MED,Y
+Off Some Percs,51,Tryna catch some poles,catch,52,'Member we walked to the beach on 63rd just tryna catch some hoes,catch,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,51,Tryna catch some poles,some,52,'Member we walked to the beach on 63rd just tryna catch some hoes,some,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,51,Tryna catch some poles,Tryna,52,'Member we walked to the beach on 63rd just tryna catch some hoes,beach,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,51,Tryna catch some poles,Tryna,52,'Member we walked to the beach on 63rd just tryna catch some hoes,tryna,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,51,Tryna catch some poles,poles,53,"Now I don't even message hoes, them lil' messy hoes",hoes,END,SLANT,cmu,MED,Y
+Off Some Percs,51,Tryna catch some poles,poles,53,"Now I don't even message hoes, them lil' messy hoes",don't,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,51,Tryna catch some poles,poles,53,"Now I don't even message hoes, them lil' messy hoes",hoes,INNER,SLANT,cmu,MED,Y
+Off Some Percs,51,Tryna catch some poles,Tryna,53,"Now I don't even message hoes, them lil' messy hoes",even,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,51,Tryna catch some poles,poles,54,"Fuck them, buy some extra clothes",clothes,END,SLANT,cmu,MED,Y
+Off Some Percs,51,Tryna catch some poles,poles,55,I ain't had nothin' to match with those,those,END,SLANT,cmu,MED,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,beach,52,'Member we walked to the beach on 63rd just tryna catch some hoes,tryna,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,hoes,53,"Now I don't even message hoes, them lil' messy hoes",hoes,END,REPEAT,spelling,HIGH,N
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,'Member,53,"Now I don't even message hoes, them lil' messy hoes",message,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,'Member,53,"Now I don't even message hoes, them lil' messy hoes",messy,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,beach,53,"Now I don't even message hoes, them lil' messy hoes",even,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,hoes,53,"Now I don't even message hoes, them lil' messy hoes",don't,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,hoes,53,"Now I don't even message hoes, them lil' messy hoes",hoes,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,tryna,53,"Now I don't even message hoes, them lil' messy hoes",even,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,hoes,54,"Fuck them, buy some extra clothes",clothes,END,SLANT,cmu,MED,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,'Member,54,"Fuck them, buy some extra clothes",extra,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,some,54,"Fuck them, buy some extra clothes",Fuck,INNER,SLANT,cmu,MED,Y
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,some,54,"Fuck them, buy some extra clothes",some,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,52,'Member we walked to the beach on 63rd just tryna catch some hoes,hoes,55,I ain't had nothin' to match with those,those,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",don't,53,"Now I don't even message hoes, them lil' messy hoes",hoes,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",hoes,53,"Now I don't even message hoes, them lil' messy hoes",hoes,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",message,53,"Now I don't even message hoes, them lil' messy hoes",messy,INNER,SLANT,cmu,MED,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",hoes,54,"Fuck them, buy some extra clothes",clothes,END,SLANT,cmu,MED,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",don't,54,"Fuck them, buy some extra clothes",clothes,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",hoes,54,"Fuck them, buy some extra clothes",clothes,INNER,SLANT,cmu,MED,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",message,54,"Fuck them, buy some extra clothes",extra,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",messy,54,"Fuck them, buy some extra clothes",extra,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",hoes,55,I ain't had nothin' to match with those,those,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",don't,55,I ain't had nothin' to match with those,those,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,53,"Now I don't even message hoes, them lil' messy hoes",hoes,55,I ain't had nothin' to match with those,those,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,54,"Fuck them, buy some extra clothes",Fuck,54,"Fuck them, buy some extra clothes",some,INNER,SLANT,cmu,MED,Y
+Off Some Percs,54,"Fuck them, buy some extra clothes",clothes,55,I ain't had nothin' to match with those,those,END,SLANT,cmu,MED,Y
+Off Some Percs,54,"Fuck them, buy some extra clothes",buy,56,"Hi-Tech pints, let's match some fours",Hi,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,54,"Fuck them, buy some extra clothes",buy,56,"Hi-Tech pints, let's match some fours",pints,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,54,"Fuck them, buy some extra clothes",extra,56,"Hi-Tech pints, let's match some fours",let's,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,54,"Fuck them, buy some extra clothes",extra,56,"Hi-Tech pints, let's match some fours",Tech,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,54,"Fuck them, buy some extra clothes",Fuck,56,"Hi-Tech pints, let's match some fours",some,INNER,SLANT,cmu,MED,Y
+Off Some Percs,54,"Fuck them, buy some extra clothes",some,56,"Hi-Tech pints, let's match some fours",some,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,55,I ain't had nothin' to match with those,had,55,I ain't had nothin' to match with those,match,INNER,SLANT,cmu,MED,Y
+Off Some Percs,55,I ain't had nothin' to match with those,had,56,"Hi-Tech pints, let's match some fours",match,INNER,SLANT,cmu,MED,Y
+Off Some Percs,55,I ain't had nothin' to match with those,match,56,"Hi-Tech pints, let's match some fours",match,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,55,I ain't had nothin' to match with those,ain't,57,"Four-forty-eights, let's match some 'bows",eights,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,55,I ain't had nothin' to match with those,had,57,"Four-forty-eights, let's match some 'bows",match,INNER,SLANT,cmu,MED,Y
+Off Some Percs,55,I ain't had nothin' to match with those,match,57,"Four-forty-eights, let's match some 'bows",match,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,55,I ain't had nothin' to match with those,those,59,"Nigga, let's match some rolls (Come on)",rolls,END,SLANT,cmu,MED,Y
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",Hi,56,"Hi-Tech pints, let's match some fours",pints,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",Tech,56,"Hi-Tech pints, let's match some fours",let's,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",fours,57,"Four-forty-eights, let's match some 'bows",forty,INNER,SLANT,cmu,MED,Y
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",fours,57,"Four-forty-eights, let's match some 'bows",Four,INNER,SLANT,cmu,MED,Y
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",let's,57,"Four-forty-eights, let's match some 'bows",let's,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",match,57,"Four-forty-eights, let's match some 'bows",match,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",some,57,"Four-forty-eights, let's match some 'bows",some,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",Tech,57,"Four-forty-eights, let's match some 'bows",let's,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",let's,58,"Do you get money? Shit, we get money too",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",some,58,"Do you get money? Shit, we get money too",money,INNER,SLANT,cmu,MED,Y
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",Tech,58,"Do you get money? Shit, we get money too",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,56,"Hi-Tech pints, let's match some fours",fours,60,Hop out the Lambo' door,door,END,SLANT,cmu,MED,Y
+Off Some Percs,57,"Four-forty-eights, let's match some 'bows",Four,57,"Four-forty-eights, let's match some 'bows",forty,INNER,SLANT,cmu,MED,Y
+Off Some Percs,57,"Four-forty-eights, let's match some 'bows",let's,58,"Do you get money? Shit, we get money too",get,INNER,SLANT,cmu,MED,Y
+Off Some Percs,57,"Four-forty-eights, let's match some 'bows",some,58,"Do you get money? Shit, we get money too",money,INNER,SLANT,cmu,MED,Y
+Off Some Percs,57,"Four-forty-eights, let's match some 'bows",let's,59,"Nigga, let's match some rolls (Come on)",let's,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,57,"Four-forty-eights, let's match some 'bows",match,59,"Nigga, let's match some rolls (Come on)",match,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,57,"Four-forty-eights, let's match some 'bows",some,59,"Nigga, let's match some rolls (Come on)",some,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,58,"Do you get money? Shit, we get money too",get,58,"Do you get money? Shit, we get money too",get,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,58,"Do you get money? Shit, we get money too",money,58,"Do you get money? Shit, we get money too",money,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,58,"Do you get money? Shit, we get money too",get,59,"Nigga, let's match some rolls (Come on)",let's,INNER,SLANT,cmu,MED,Y
+Off Some Percs,58,"Do you get money? Shit, we get money too",money,59,"Nigga, let's match some rolls (Come on)",some,INNER,SLANT,cmu,MED,Y
+Off Some Percs,58,"Do you get money? Shit, we get money too",Shit,59,"Nigga, let's match some rolls (Come on)",Nigga,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,59,"Nigga, let's match some rolls (Come on)",rolls,61,"Fuck up the club, we gon' smash some hoes",hoes,END,SLANT,cmu,MED,Y
+Off Some Percs,59,"Nigga, let's match some rolls (Come on)",match,61,"Fuck up the club, we gon' smash some hoes",smash,INNER,SLANT,cmu,MED,Y
+Off Some Percs,59,"Nigga, let's match some rolls (Come on)",some,61,"Fuck up the club, we gon' smash some hoes",club,INNER,SLANT,cmu,MED,Y
+Off Some Percs,59,"Nigga, let's match some rolls (Come on)",some,61,"Fuck up the club, we gon' smash some hoes",Fuck,INNER,SLANT,cmu,MED,Y
+Off Some Percs,59,"Nigga, let's match some rolls (Come on)",some,61,"Fuck up the club, we gon' smash some hoes",some,INNER,REPEAT,spelling,HIGH,N
+Off Some Percs,59,"Nigga, let's match some rolls (Come on)",rolls,63,Think you finna sleep with me in my mansion? No,No,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,60,Hop out the Lambo' door,Hop,62,"Gotta get a room, lil' bitch",Gotta,INNER,SLANT,cmu,MED,Y
+Off Some Percs,61,"Fuck up the club, we gon' smash some hoes",club,61,"Fuck up the club, we gon' smash some hoes",some,INNER,SLANT,cmu,MED,Y
+Off Some Percs,61,"Fuck up the club, we gon' smash some hoes",Fuck,61,"Fuck up the club, we gon' smash some hoes",club,INNER,SLANT,cmu,MED,Y
+Off Some Percs,61,"Fuck up the club, we gon' smash some hoes",Fuck,61,"Fuck up the club, we gon' smash some hoes",some,INNER,SLANT,cmu,MED,Y
+Off Some Percs,61,"Fuck up the club, we gon' smash some hoes",gon,61,"Fuck up the club, we gon' smash some hoes",hoes,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,61,"Fuck up the club, we gon' smash some hoes",hoes,63,Think you finna sleep with me in my mansion? No,No,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,61,"Fuck up the club, we gon' smash some hoes",smash,63,Think you finna sleep with me in my mansion? No,mansion,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,61,"Fuck up the club, we gon' smash some hoes",hoes,64,"And I know my niggas gon' ride for me like a Banshee, though",though,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,61,"Fuck up the club, we gon' smash some hoes",hoes,65,"Nigga, you say you had me, that was your chance to blow",blow,END,ASSONANCE,vowel,MED,Y
+Off Some Percs,62,"Gotta get a room, lil' bitch",lil,62,"Gotta get a room, lil' bitch",bitch,INNER,SLANT,cmu,MED,Y
+Off Some Percs,62,"Gotta get a room, lil' bitch",bitch,63,Think you finna sleep with me in my mansion? No,Think,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,62,"Gotta get a room, lil' bitch",lil,63,Think you finna sleep with me in my mansion? No,Think,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,63,Think you finna sleep with me in my mansion? No,No,64,"And I know my niggas gon' ride for me like a Banshee, though",though,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,63,Think you finna sleep with me in my mansion? No,finna,64,"And I know my niggas gon' ride for me like a Banshee, though",niggas,INNER,ASSONANCE,vowel,LOW,N
+Off Some Percs,63,Think you finna sleep with me in my mansion? No,No,64,"And I know my niggas gon' ride for me like a Banshee, though",know,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,63,Think you finna sleep with me in my mansion? No,sleep,64,"And I know my niggas gon' ride for me like a Banshee, though",Banshee,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,63,Think you finna sleep with me in my mansion? No,No,65,"Nigga, you say you had me, that was your chance to blow",blow,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,63,Think you finna sleep with me in my mansion? No,finna,65,"Nigga, you say you had me, that was your chance to blow",Nigga,INNER,ASSONANCE,vowel,LOW,N
+Off Some Percs,63,Think you finna sleep with me in my mansion? No,mansion,65,"Nigga, you say you had me, that was your chance to blow",chance,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,63,Think you finna sleep with me in my mansion? No,mansion,65,"Nigga, you say you had me, that was your chance to blow",had,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,64,"And I know my niggas gon' ride for me like a Banshee, though",know,64,"And I know my niggas gon' ride for me like a Banshee, though",though,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,64,"And I know my niggas gon' ride for me like a Banshee, though",ride,64,"And I know my niggas gon' ride for me like a Banshee, though",like,INNER,SLANT,cmu,MED,Y
+Off Some Percs,64,"And I know my niggas gon' ride for me like a Banshee, though",though,65,"Nigga, you say you had me, that was your chance to blow",blow,END,PERFECT,cmu,HIGH,Y
+Off Some Percs,64,"And I know my niggas gon' ride for me like a Banshee, though",know,65,"Nigga, you say you had me, that was your chance to blow",blow,INNER,PERFECT,cmu,HIGH,Y
+Off Some Percs,64,"And I know my niggas gon' ride for me like a Banshee, though",niggas,65,"Nigga, you say you had me, that was your chance to blow",Nigga,INNER,SLANT,spelling,LOW,Y
+Off Some Percs,65,"Nigga, you say you had me, that was your chance to blow",had,65,"Nigga, you say you had me, that was your chance to blow",chance,INNER,ASSONANCE,vowel,MED,Y
+Off Some Percs,65,"Nigga, you say you had me, that was your chance to blow",chance,66,"Uh, bet I can make her twerk, uh",can,INNER,SLANT,cmu,MED,Y
+Off Some Percs,65,"Nigga, you say you had me, that was your chance to blow",had,66,"Uh, bet I can make her twerk, uh",can,INNER,SLANT,cmu,MED,Y
+Off Some Percs,65,"Nigga, you say you had me, that was your chance to blow",say,66,"Uh, bet I can make her twerk, uh",make,INNER,ASSONANCE,vowel,MED,Y

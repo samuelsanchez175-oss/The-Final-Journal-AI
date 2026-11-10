@@ -1,0 +1,469 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Gucci Everything,1,"Gucci everything, Gucci everything",everything,1,"Gucci everything, Gucci everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,1,"Gucci everything, Gucci everything",Gucci,1,"Gucci everything, Gucci everything",Gucci,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,1,"Gucci everything, Gucci everything",everything,2,"Gucci everything, Gucci-Gucci everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,1,"Gucci everything, Gucci everything",everything,2,"Gucci everything, Gucci-Gucci everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,1,"Gucci everything, Gucci everything",Gucci,2,"Gucci everything, Gucci-Gucci everything",Gucci,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,1,"Gucci everything, Gucci everything",everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",living,INNER,SLANT,cmu,MED,Y
+Gucci Everything,1,"Gucci everything, Gucci everything",everything,4,"I woke up this morning, hit the block and made a killin'",killin,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,2,"Gucci everything, Gucci-Gucci everything",everything,2,"Gucci everything, Gucci-Gucci everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,2,"Gucci everything, Gucci-Gucci everything",Gucci,2,"Gucci everything, Gucci-Gucci everything",Gucci,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,2,"Gucci everything, Gucci-Gucci everything",everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",living,INNER,SLANT,cmu,MED,Y
+Gucci Everything,2,"Gucci everything, Gucci-Gucci everything",everything,4,"I woke up this morning, hit the block and made a killin'",killin,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,2,"Gucci everything, Gucci-Gucci everything",everything,4,"I woke up this morning, hit the block and made a killin'",hit,INNER,SLANT,cmu,MED,Y
+Gucci Everything,2,"Gucci everything, Gucci-Gucci everything",everything,4,"I woke up this morning, hit the block and made a killin'",killin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",nigga,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",nigga,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",realest,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",realest,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",living,4,"I woke up this morning, hit the block and made a killin'",hit,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",living,4,"I woke up this morning, hit the block and made a killin'",killin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",nigga,4,"I woke up this morning, hit the block and made a killin'",hit,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",fuck,5,"Them ladies, y'all love it, my niggas be plugging",love,INNER,SLANT,cmu,MED,Y
+Gucci Everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",fuck,5,"Them ladies, y'all love it, my niggas be plugging",plugging,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,3,"Look, realest, realest, realest nigga living, fuck a nigga feelings",nigga,5,"Them ladies, y'all love it, my niggas be plugging",niggas,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,4,"I woke up this morning, hit the block and made a killin'",hit,4,"I woke up this morning, hit the block and made a killin'",killin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,4,"I woke up this morning, hit the block and made a killin'",made,5,"Them ladies, y'all love it, my niggas be plugging",ladies,INNER,SLANT,cmu,MED,Y
+Gucci Everything,4,"I woke up this morning, hit the block and made a killin'",morning,5,"Them ladies, y'all love it, my niggas be plugging",y'all,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,4,"I woke up this morning, hit the block and made a killin'",killin,6,Graduated college mama but I chose thuggin' (what up),thuggin,END,PERFECT,spelling,MED,Y
+Gucci Everything,4,"I woke up this morning, hit the block and made a killin'",block,6,Graduated college mama but I chose thuggin' (what up),college,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,4,"I woke up this morning, hit the block and made a killin'",block,6,Graduated college mama but I chose thuggin' (what up),mama,INNER,SLANT,cmu,MED,Y
+Gucci Everything,4,"I woke up this morning, hit the block and made a killin'",made,6,Graduated college mama but I chose thuggin' (what up),Graduated,INNER,SLANT,cmu,MED,Y
+Gucci Everything,4,"I woke up this morning, hit the block and made a killin'",woke,6,Graduated college mama but I chose thuggin' (what up),chose,INNER,SLANT,cmu,MED,Y
+Gucci Everything,5,"Them ladies, y'all love it, my niggas be plugging",love,5,"Them ladies, y'all love it, my niggas be plugging",plugging,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,5,"Them ladies, y'all love it, my niggas be plugging",plugging,6,Graduated college mama but I chose thuggin' (what up),thuggin,END,SLANT,spelling,LOW,Y
+Gucci Everything,5,"Them ladies, y'all love it, my niggas be plugging",ladies,6,Graduated college mama but I chose thuggin' (what up),Graduated,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,5,"Them ladies, y'all love it, my niggas be plugging",love,7,"We got all the money, if y'all was looking for it",money,INNER,SLANT,cmu,MED,Y
+Gucci Everything,5,"Them ladies, y'all love it, my niggas be plugging",plugging,7,"We got all the money, if y'all was looking for it",money,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,5,"Them ladies, y'all love it, my niggas be plugging",y'all,7,"We got all the money, if y'all was looking for it",all,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,5,"Them ladies, y'all love it, my niggas be plugging",y'all,7,"We got all the money, if y'all was looking for it",y'all,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,6,Graduated college mama but I chose thuggin' (what up),college,6,Graduated college mama but I chose thuggin' (what up),mama,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,6,Graduated college mama but I chose thuggin' (what up),college,7,"We got all the money, if y'all was looking for it",got,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,6,Graduated college mama but I chose thuggin' (what up),mama,7,"We got all the money, if y'all was looking for it",got,INNER,SLANT,cmu,MED,Y
+Gucci Everything,7,"We got all the money, if y'all was looking for it",all,7,"We got all the money, if y'all was looking for it",y'all,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,7,"We got all the money, if y'all was looking for it",all,8,"My life is a movie, my Gucci imported",imported,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,7,"We got all the money, if y'all was looking for it",y'all,8,"My life is a movie, my Gucci imported",imported,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,7,"We got all the money, if y'all was looking for it",got,9,I just do this shit for a hobby,hobby,INNER,SLANT,cmu,MED,Y
+Gucci Everything,8,"My life is a movie, my Gucci imported",movie,8,"My life is a movie, my Gucci imported",Gucci,INNER,SLANT,cmu,MED,Y
+Gucci Everything,8,"My life is a movie, my Gucci imported",Gucci,10,Wearin all this jewelry exciting the federalies,jewelry,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,8,"My life is a movie, my Gucci imported",imported,10,Wearin all this jewelry exciting the federalies,all,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,8,"My life is a movie, my Gucci imported",life,10,Wearin all this jewelry exciting the federalies,exciting,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,8,"My life is a movie, my Gucci imported",movie,10,Wearin all this jewelry exciting the federalies,jewelry,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,9,I just do this shit for a hobby,hobby,11,"All this Cavalli, Versace, and Gucci everything",Versace,INNER,SLANT,cmu,MED,Y
+Gucci Everything,9,I just do this shit for a hobby,shit,11,"All this Cavalli, Versace, and Gucci everything",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,10,Wearin all this jewelry exciting the federalies,all,11,"All this Cavalli, Versace, and Gucci everything",All,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,10,Wearin all this jewelry exciting the federalies,jewelry,11,"All this Cavalli, Versace, and Gucci everything",Gucci,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,11,"All this Cavalli, Versace, and Gucci everything",Cavalli,12,"I know I'm shallow but fuck it (Gucci, Gucci everything) yeah",shallow,INNER,SLANT,cmu,MED,Y
+Gucci Everything,11,"All this Cavalli, Versace, and Gucci everything",Cavalli,13,"She ain't got no titties, but she got hella ass",ass,INNER,SLANT,cmu,MED,Y
+Gucci Everything,11,"All this Cavalli, Versace, and Gucci everything",Versace,13,"She ain't got no titties, but she got hella ass",got,INNER,SLANT,cmu,MED,Y
+Gucci Everything,12,"I know I'm shallow but fuck it (Gucci, Gucci everything) yeah",know,13,"She ain't got no titties, but she got hella ass",no,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,12,"I know I'm shallow but fuck it (Gucci, Gucci everything) yeah",shallow,13,"She ain't got no titties, but she got hella ass",ass,INNER,SLANT,cmu,MED,Y
+Gucci Everything,12,"I know I'm shallow but fuck it (Gucci, Gucci everything) yeah",know,14,"I ain't got no credit, but I got hella cash",no,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,12,"I know I'm shallow but fuck it (Gucci, Gucci everything) yeah",shallow,14,"I ain't got no credit, but I got hella cash",cash,INNER,SLANT,cmu,MED,Y
+Gucci Everything,12,"I know I'm shallow but fuck it (Gucci, Gucci everything) yeah",fuck,15,"Cop it, cook it, whip it, package it and dump it",dump,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,13,"She ain't got no titties, but she got hella ass",got,13,"She ain't got no titties, but she got hella ass",got,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,13,"She ain't got no titties, but she got hella ass",ass,14,"I ain't got no credit, but I got hella cash",cash,END,SLANT,cmu,MED,Y
+Gucci Everything,13,"She ain't got no titties, but she got hella ass",ain't,14,"I ain't got no credit, but I got hella cash",ain't,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,13,"She ain't got no titties, but she got hella ass",got,14,"I ain't got no credit, but I got hella cash",got,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,13,"She ain't got no titties, but she got hella ass",hella,14,"I ain't got no credit, but I got hella cash",hella,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,13,"She ain't got no titties, but she got hella ass",no,14,"I ain't got no credit, but I got hella cash",no,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,13,"She ain't got no titties, but she got hella ass",ass,15,"Cop it, cook it, whip it, package it and dump it",package,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,13,"She ain't got no titties, but she got hella ass",got,15,"Cop it, cook it, whip it, package it and dump it",Cop,INNER,SLANT,cmu,MED,Y
+Gucci Everything,14,"I ain't got no credit, but I got hella cash",got,14,"I ain't got no credit, but I got hella cash",got,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,14,"I ain't got no credit, but I got hella cash",cash,15,"Cop it, cook it, whip it, package it and dump it",package,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,14,"I ain't got no credit, but I got hella cash",got,15,"Cop it, cook it, whip it, package it and dump it",Cop,INNER,SLANT,cmu,MED,Y
+Gucci Everything,15,"Cop it, cook it, whip it, package it and dump it",whip,16,"I'm the realest nigga living, 100",living,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,15,"Cop it, cook it, whip it, package it and dump it",whip,16,"I'm the realest nigga living, 100",nigga,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,16,"I'm the realest nigga living, 100",living,18,Real nigga till I die though,till,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,16,"I'm the realest nigga living, 100",nigga,18,Real nigga till I die though,nigga,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,16,"I'm the realest nigga living, 100",living,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",ring,END,SLANT,cmu,MED,Y
+Gucci Everything,16,"I'm the realest nigga living, 100",living,20,"To get married to this money, I swear it's my everything (Yeah)",everything,END,SLANT,cmu,MED,Y
+Gucci Everything,17,"Better learn, better learn",Better,17,"Better learn, better learn",better,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,17,"Better learn, better learn",learn,17,"Better learn, better learn",learn,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,17,"Better learn, better learn",Better,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",wedding,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,17,"Better learn, better learn",Better,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",Well,INNER,SLANT,cmu,MED,Y
+Gucci Everything,18,Real nigga till I die though,Real,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",need,INNER,SLANT,cmu,MED,Y
+Gucci Everything,18,Real nigga till I die though,till,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,18,Real nigga till I die though,till,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",I'ma,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,18,Real nigga till I die though,till,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",ring,INNER,SLANT,cmu,MED,Y
+Gucci Everything,18,Real nigga till I die though,till,20,"To get married to this money, I swear it's my everything (Yeah)",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",I'ma,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",ring,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",I'ma,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",ring,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",Well,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",wedding,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",ring,20,"To get married to this money, I swear it's my everything (Yeah)",everything,END,PERFECT,cmu,HIGH,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",everything,20,"To get married to this money, I swear it's my everything (Yeah)",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",I'ma,20,"To get married to this money, I swear it's my everything (Yeah)",everything,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",wedding,20,"To get married to this money, I swear it's my everything (Yeah)",get,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",wedding,20,"To get married to this money, I swear it's my everything (Yeah)",married,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",wedding,20,"To get married to this money, I swear it's my everything (Yeah)",swear,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",Well,20,"To get married to this money, I swear it's my everything (Yeah)",get,INNER,SLANT,cmu,MED,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",Well,20,"To get married to this money, I swear it's my everything (Yeah)",married,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",Well,20,"To get married to this money, I swear it's my everything (Yeah)",swear,INNER,SLANT,cmu,MED,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",ring,21,"I want everything (Yeah), I own everything (Yeah)",everything,END,PERFECT,cmu,HIGH,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",got,21,"I want everything (Yeah), I own everything (Yeah)",want,INNER,SLANT,cmu,MED,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",I'ma,21,"I want everything (Yeah), I own everything (Yeah)",everything,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",ring,21,"I want everything (Yeah), I own everything (Yeah)",everything,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",ring,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,END,PERFECT,cmu,HIGH,Y
+Gucci Everything,19,"Well, I got Gucci everything (Huh?), I'ma need a wedding ring (Yeah)",ring,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,20,"To get married to this money, I swear it's my everything (Yeah)",get,20,"To get married to this money, I swear it's my everything (Yeah)",married,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,20,"To get married to this money, I swear it's my everything (Yeah)",get,20,"To get married to this money, I swear it's my everything (Yeah)",swear,INNER,SLANT,cmu,MED,Y
+Gucci Everything,20,"To get married to this money, I swear it's my everything (Yeah)",married,20,"To get married to this money, I swear it's my everything (Yeah)",swear,INNER,SLANT,cmu,MED,Y
+Gucci Everything,20,"To get married to this money, I swear it's my everything (Yeah)",everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,20,"To get married to this money, I swear it's my everything (Yeah)",everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,20,"To get married to this money, I swear it's my everything (Yeah)",everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,20,"To get married to this money, I swear it's my everything (Yeah)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,20,"To get married to this money, I swear it's my everything (Yeah)",everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",chilling,INNER,SLANT,cmu,MED,Y
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",villain,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",wrist,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",want,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",got,INNER,SLANT,cmu,MED,Y
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,21,"I want everything (Yeah), I own everything (Yeah)",everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,END,MULTI,multi,HIGH,Y
+Gucci Everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",chilling,INNER,SLANT,cmu,MED,Y
+Gucci Everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",villain,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",wrist,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",Bitch,INNER,SLANT,cmu,MED,Y
+Gucci Everything,22,"My niggas on alert, yeah, they on everything (Bang bang)",everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,END,MULTI,multi,HIGH,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",chilling,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,INNER,SLANT,cmu,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",chilling,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",villain,INNER,SLANT,cmu,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",villain,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,INNER,SLANT,cmu,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",wrist,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",chilling,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",wrist,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",wrist,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",villain,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",chilling,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",chilling,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",villain,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",villain,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",wrist,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",wrist,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",chilling,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",chilling,25,"I'm doing everything (Yeah), you not doing anything (Nah)",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",got,25,"I'm doing everything (Yeah), you not doing anything (Nah)",not,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,25,"I'm doing everything (Yeah), you not doing anything (Nah)",everything,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",villain,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",villain,25,"I'm doing everything (Yeah), you not doing anything (Nah)",everything,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",wrist,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",wrist,25,"I'm doing everything (Yeah), you not doing anything (Nah)",everything,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,23,"My wrist got me chilling (Bling), the villain of the village (Yeah)",village,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",everything,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",Bitch,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",Bitch,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",Bitch,25,"I'm doing everything (Yeah), you not doing anything (Nah)",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,25,"I'm doing everything (Yeah), you not doing anything (Nah)",everything,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",stacking,26,"And my boys stay strapped, I just hope my enemies (Bang bang)",strapped,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",everything,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,24,"Bitch, I am the realest (O'Block), stacking up my millions (Beep)",millions,28,"Get Fredo off the cut, and you ruin everything (Bang)",everything,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",doing,25,"I'm doing everything (Yeah), you not doing anything (Nah)",doing,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",doing everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",doing anything,INNER,MULTI,multi,HIGH,Y
+Gucci Everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,INNER,MULTI,multi,HIGH,Y
+Gucci Everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",everything,END,MULTI,multi,HIGH,Y
+Gucci Everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",doing,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",shootin,INNER,SLANT,cmu,MED,Y
+Gucci Everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",not,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",Got,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,25,"I'm doing everything (Yeah), you not doing anything (Nah)",anything,28,"Get Fredo off the cut, and you ruin everything (Bang)",everything,END,MULTI,multi,HIGH,Y
+Gucci Everything,26,"And my boys stay strapped, I just hope my enemies (Bang bang)",enemies,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",better,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,26,"And my boys stay strapped, I just hope my enemies (Bang bang)",enemies,28,"Get Fredo off the cut, and you ruin everything (Bang)",Get,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",gun,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",run,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",everything,28,"Get Fredo off the cut, and you ruin everything (Bang)",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",better,28,"Get Fredo off the cut, and you ruin everything (Bang)",Get,INNER,SLANT,cmu,MED,Y
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",gun,28,"Get Fredo off the cut, and you ruin everything (Bang)",cut,INNER,SLANT,cmu,MED,Y
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",run,28,"Get Fredo off the cut, and you ruin everything (Bang)",cut,INNER,SLANT,cmu,MED,Y
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",shootin,28,"Get Fredo off the cut, and you ruin everything (Bang)",ruin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",Got,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",hard,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",Got,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",motto,INNER,SLANT,cmu,MED,Y
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",gun,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",Money,INNER,SLANT,cmu,MED,Y
+Gucci Everything,27,"Got they gun, better run, 'cause we shootin' everything (Grrah, bang)",run,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",Money,INNER,SLANT,cmu,MED,Y
+Gucci Everything,28,"Get Fredo off the cut, and you ruin everything (Bang)",cut,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",Money,INNER,SLANT,cmu,MED,Y
+Gucci Everything,28,"Get Fredo off the cut, and you ruin everything (Bang)",cut,30,"And bitch, I need my money, need my money, pronto (Bitch)",money,INNER,SLANT,cmu,MED,Y
+Gucci Everything,28,"Get Fredo off the cut, and you ruin everything (Bang)",everything,30,"And bitch, I need my money, need my money, pronto (Bitch)",bitch,INNER,SLANT,cmu,MED,Y
+Gucci Everything,28,"Get Fredo off the cut, and you ruin everything (Bang)",Fredo,30,"And bitch, I need my money, need my money, pronto (Bitch)",need,INNER,SLANT,cmu,MED,Y
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",Money motto,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",no lotto,INNER,MULTI,multi,HIGH,Y
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",motto,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",hard,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",motto,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",lotto,INNER,MULTI,multi,HIGH,Y
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",no,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",lotto,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",hard,30,"And bitch, I need my money, need my money, pronto (Bitch)",pronto,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",Money,30,"And bitch, I need my money, need my money, pronto (Bitch)",money,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",motto,30,"And bitch, I need my money, need my money, pronto (Bitch)",pronto,INNER,SLANT,cmu,MED,Y
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",lotto,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",convo,END,ASSONANCE,vowel,LOW,N
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",hard,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",condo,INNER,SLANT,cmu,MED,Y
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",motto,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",condo,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",motto,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",convo,INNER,ASSONANCE,vowel,LOW,N
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",no,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",convo,INNER,ASSONANCE,vowel,LOW,N
+Gucci Everything,29,"Money is the motto (Beep), I ball hard, no lotto (Nah)",lotto,32,We gon' bring everything and hit you with that combo (Grrah),combo,END,PERFECT,cmu,HIGH,Y
+Gucci Everything,30,"And bitch, I need my money, need my money, pronto (Bitch)",money,30,"And bitch, I need my money, need my money, pronto (Bitch)",money,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,30,"And bitch, I need my money, need my money, pronto (Bitch)",need,30,"And bitch, I need my money, need my money, pronto (Bitch)",need,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,30,"And bitch, I need my money, need my money, pronto (Bitch)",pronto,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",convo,END,ASSONANCE,vowel,LOW,N
+Gucci Everything,30,"And bitch, I need my money, need my money, pronto (Bitch)",pronto,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",condo,INNER,SLANT,cmu,MED,Y
+Gucci Everything,30,"And bitch, I need my money, need my money, pronto (Bitch)",bitch,32,We gon' bring everything and hit you with that combo (Grrah),bring,INNER,SLANT,cmu,MED,Y
+Gucci Everything,30,"And bitch, I need my money, need my money, pronto (Bitch)",bitch,32,We gon' bring everything and hit you with that combo (Grrah),everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,30,"And bitch, I need my money, need my money, pronto (Bitch)",bitch,32,We gon' bring everything and hit you with that combo (Grrah),hit,INNER,SLANT,cmu,MED,Y
+Gucci Everything,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",condo,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",convo,INNER,ASSONANCE,vowel,LOW,N
+Gucci Everything,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",convo,32,We gon' bring everything and hit you with that combo (Grrah),combo,END,ASSONANCE,vowel,LOW,N
+Gucci Everything,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",convo,32,We gon' bring everything and hit you with that combo (Grrah),gon,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",condo,33,"We stopping everything, Versace everything",stopping,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,31,"We shoot up your condo (Grrah), we ain't with the convo (Nah)",condo,33,"We stopping everything, Versace everything",Versace,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,32,We gon' bring everything and hit you with that combo (Grrah),bring,32,We gon' bring everything and hit you with that combo (Grrah),everything,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,32,We gon' bring everything and hit you with that combo (Grrah),bring,32,We gon' bring everything and hit you with that combo (Grrah),hit,INNER,SLANT,cmu,MED,Y
+Gucci Everything,32,We gon' bring everything and hit you with that combo (Grrah),everything,32,We gon' bring everything and hit you with that combo (Grrah),hit,INNER,SLANT,cmu,MED,Y
+Gucci Everything,32,We gon' bring everything and hit you with that combo (Grrah),bring,33,"We stopping everything, Versace everything",everything,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,32,We gon' bring everything and hit you with that combo (Grrah),everything,33,"We stopping everything, Versace everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,32,We gon' bring everything and hit you with that combo (Grrah),hit,33,"We stopping everything, Versace everything",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,32,We gon' bring everything and hit you with that combo (Grrah),bring,34,"We coppin everything, you niggas copying everything",everything,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,32,We gon' bring everything and hit you with that combo (Grrah),everything,34,"We coppin everything, you niggas copying everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,32,We gon' bring everything and hit you with that combo (Grrah),hit,34,"We coppin everything, you niggas copying everything",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",everything,33,"We stopping everything, Versace everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,33,"We stopping everything, Versace everything",stopping,33,"We stopping everything, Versace everything",Versace,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",everything,34,"We coppin everything, you niggas copying everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,33,"We stopping everything, Versace everything",everything,34,"We coppin everything, you niggas copying everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,33,"We stopping everything, Versace everything",stopping,34,"We coppin everything, you niggas copying everything",coppin,INNER,SLANT,cmu,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",stopping,34,"We coppin everything, you niggas copying everything",copying,INNER,SLANT,cmu,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",Versace,34,"We coppin everything, you niggas copying everything",coppin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",Versace,34,"We coppin everything, you niggas copying everything",copying,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,END,SLANT,spelling,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",everything,35,"Bitch, Louis everythang, Gucci everythang",Bitch,INNER,SLANT,cmu,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,INNER,SLANT,spelling,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",everything,36,That IMAX 3-D movie everythang,everythang,END,SLANT,spelling,MED,Y
+Gucci Everything,33,"We stopping everything, Versace everything",everything,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,END,SLANT,spelling,MED,Y
+Gucci Everything,34,"We coppin everything, you niggas copying everything",coppin,34,"We coppin everything, you niggas copying everything",copying,INNER,SLANT,cmu,MED,Y
+Gucci Everything,34,"We coppin everything, you niggas copying everything",everything,34,"We coppin everything, you niggas copying everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,34,"We coppin everything, you niggas copying everything",everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,END,SLANT,spelling,MED,Y
+Gucci Everything,34,"We coppin everything, you niggas copying everything",everything,35,"Bitch, Louis everythang, Gucci everythang",Bitch,INNER,SLANT,cmu,MED,Y
+Gucci Everything,34,"We coppin everything, you niggas copying everything",everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,INNER,SLANT,spelling,MED,Y
+Gucci Everything,34,"We coppin everything, you niggas copying everything",everything,36,That IMAX 3-D movie everythang,everythang,END,SLANT,spelling,MED,Y
+Gucci Everything,34,"We coppin everything, you niggas copying everything",everything,36,That IMAX 3-D movie everythang,everythang,INNER,SLANT,spelling,MED,Y
+Gucci Everything,34,"We coppin everything, you niggas copying everything",everything,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,END,SLANT,spelling,MED,Y
+Gucci Everything,34,"We coppin everything, you niggas copying everything",everything,38,"And when I fuck your main bitch, I put on everythang",everythang,END,SLANT,spelling,MED,Y
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,35,"Bitch, Louis everythang, Gucci everythang",everythang,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",Louis,35,"Bitch, Louis everythang, Gucci everythang",Gucci,INNER,SLANT,cmu,MED,Y
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,36,That IMAX 3-D movie everythang,everythang,END,REPEAT,spelling,HIGH,N
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,36,That IMAX 3-D movie everythang,everythang,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",Gucci,36,That IMAX 3-D movie everythang,movie,INNER,SLANT,cmu,MED,Y
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",Louis,36,That IMAX 3-D movie everythang,movie,INNER,SLANT,cmu,MED,Y
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,END,REPEAT,spelling,HIGH,N
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",Bitch,37,"Bitch I'm coupin everythang, we shootin everythang",Bitch,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",Gucci,37,"Bitch I'm coupin everythang, we shootin everythang",shootin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",Louis,37,"Bitch I'm coupin everythang, we shootin everythang",shootin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,35,"Bitch, Louis everythang, Gucci everythang",everythang,38,"And when I fuck your main bitch, I put on everythang",everythang,END,REPEAT,spelling,HIGH,N
+Gucci Everything,36,That IMAX 3-D movie everythang,everythang,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,END,REPEAT,spelling,HIGH,N
+Gucci Everything,36,That IMAX 3-D movie everythang,everythang,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,36,That IMAX 3-D movie everythang,movie,37,"Bitch I'm coupin everythang, we shootin everythang",shootin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,36,That IMAX 3-D movie everythang,everythang,38,"And when I fuck your main bitch, I put on everythang",everythang,END,REPEAT,spelling,HIGH,N
+Gucci Everything,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,38,"And when I fuck your main bitch, I put on everythang",everythang,END,REPEAT,spelling,HIGH,N
+Gucci Everything,37,"Bitch I'm coupin everythang, we shootin everythang",Bitch,38,"And when I fuck your main bitch, I put on everythang",bitch,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,37,"Bitch I'm coupin everythang, we shootin everythang",everythang,38,"And when I fuck your main bitch, I put on everythang",everythang,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,37,"Bitch I'm coupin everythang, we shootin everythang",Bitch,39,"Realest niggas livin', ballin' like a Piston",livin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,37,"Bitch I'm coupin everythang, we shootin everythang",Bitch,39,"Realest niggas livin', ballin' like a Piston",Piston,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,37,"Bitch I'm coupin everythang, we shootin everythang",coupin,39,"Realest niggas livin', ballin' like a Piston",ballin,INNER,PERFECT,spelling,MED,Y
+Gucci Everything,38,"And when I fuck your main bitch, I put on everythang",bitch,39,"Realest niggas livin', ballin' like a Piston",livin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,38,"And when I fuck your main bitch, I put on everythang",bitch,39,"Realest niggas livin', ballin' like a Piston",Piston,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,38,"And when I fuck your main bitch, I put on everythang",bitch,40,"Horse power, up powder everything we whipping",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,38,"And when I fuck your main bitch, I put on everythang",bitch,40,"Horse power, up powder everything we whipping",whipping,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,38,"And when I fuck your main bitch, I put on everythang",everythang,40,"Horse power, up powder everything we whipping",everything,INNER,SLANT,spelling,MED,Y
+Gucci Everything,39,"Realest niggas livin', ballin' like a Piston",livin,39,"Realest niggas livin', ballin' like a Piston",Piston,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,39,"Realest niggas livin', ballin' like a Piston",Piston,40,"Horse power, up powder everything we whipping",whipping,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,39,"Realest niggas livin', ballin' like a Piston",livin,40,"Horse power, up powder everything we whipping",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,39,"Realest niggas livin', ballin' like a Piston",livin,40,"Horse power, up powder everything we whipping",whipping,INNER,SLANT,cmu,MED,Y
+Gucci Everything,39,"Realest niggas livin', ballin' like a Piston",Piston,40,"Horse power, up powder everything we whipping",everything,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,39,"Realest niggas livin', ballin' like a Piston",like,41,J's on like I'm from the Chi nigga,Chi,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,39,"Realest niggas livin', ballin' like a Piston",like,41,J's on like I'm from the Chi nigga,like,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,39,"Realest niggas livin', ballin' like a Piston",niggas,41,J's on like I'm from the Chi nigga,nigga,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,40,"Horse power, up powder everything we whipping",everything,40,"Horse power, up powder everything we whipping",whipping,INNER,SLANT,cmu,MED,Y
+Gucci Everything,40,"Horse power, up powder everything we whipping",power,40,"Horse power, up powder everything we whipping",powder,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,41,J's on like I'm from the Chi nigga,like,41,J's on like I'm from the Chi nigga,Chi,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,41,J's on like I'm from the Chi nigga,nigga,42,"I go hard, Bed-Stuy nigga",nigga,END,REPEAT,spelling,HIGH,N
+Gucci Everything,41,J's on like I'm from the Chi nigga,nigga,43,"2 Chainz on, no lie nigga",nigga,END,REPEAT,spelling,HIGH,N
+Gucci Everything,41,J's on like I'm from the Chi nigga,Chi,43,"2 Chainz on, no lie nigga",lie,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,41,J's on like I'm from the Chi nigga,J's,43,"2 Chainz on, no lie nigga",Chainz,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,41,J's on like I'm from the Chi nigga,like,43,"2 Chainz on, no lie nigga",lie,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,42,"I go hard, Bed-Stuy nigga",nigga,43,"2 Chainz on, no lie nigga",nigga,END,REPEAT,spelling,HIGH,N
+Gucci Everything,42,"I go hard, Bed-Stuy nigga",go,43,"2 Chainz on, no lie nigga",no,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,42,"I go hard, Bed-Stuy nigga",Stuy,44,I walk in the Gucci store with them bandz,Gucci,INNER,ASSONANCE,vowel,LOW,N
+Gucci Everything,43,"2 Chainz on, no lie nigga",no,45,Holdin on my arm is something that's real tan,Holdin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,44,I walk in the Gucci store with them bandz,walk,44,I walk in the Gucci store with them bandz,store,INNER,SLANT,cmu,MED,Y
+Gucci Everything,44,I walk in the Gucci store with them bandz,store,46,Walk out the store with something that's real cold,store,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,44,I walk in the Gucci store with them bandz,store,46,Walk out the store with something that's real cold,Walk,INNER,SLANT,cmu,MED,Y
+Gucci Everything,44,I walk in the Gucci store with them bandz,walk,46,Walk out the store with something that's real cold,store,INNER,SLANT,cmu,MED,Y
+Gucci Everything,44,I walk in the Gucci store with them bandz,walk,46,Walk out the store with something that's real cold,Walk,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,45,Holdin on my arm is something that's real tan,Holdin,46,Walk out the store with something that's real cold,cold,INNER,SLANT,cmu,MED,Y
+Gucci Everything,45,Holdin on my arm is something that's real tan,real,46,Walk out the store with something that's real cold,real,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,45,Holdin on my arm is something that's real tan,something,46,Walk out the store with something that's real cold,something,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,45,Holdin on my arm is something that's real tan,arm,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",car,INNER,SLANT,cmu,MED,Y
+Gucci Everything,45,Holdin on my arm is something that's real tan,real,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",sleeves,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,45,Holdin on my arm is something that's real tan,tan,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",van,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,46,Walk out the store with something that's real cold,Walk,46,Walk out the store with something that's real cold,store,INNER,SLANT,cmu,MED,Y
+Gucci Everything,46,Walk out the store with something that's real cold,real,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",sleeves,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,46,Walk out the store with something that's real cold,cold,48,"Backpack like my hood, whole lotta fuckin G's",whole,INNER,SLANT,cmu,MED,Y
+Gucci Everything,46,Walk out the store with something that's real cold,real,48,"Backpack like my hood, whole lotta fuckin G's",G's,INNER,SLANT,cmu,MED,Y
+Gucci Everything,46,Walk out the store with something that's real cold,something,48,"Backpack like my hood, whole lotta fuckin G's",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",Gucci,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",Gucci,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",sleeves,48,"Backpack like my hood, whole lotta fuckin G's",G's,END,SLANT,cmu,MED,Y
+Gucci Everything,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",car,48,"Backpack like my hood, whole lotta fuckin G's",lotta,INNER,SLANT,cmu,MED,Y
+Gucci Everything,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",van,48,"Backpack like my hood, whole lotta fuckin G's",Backpack,INNER,SLANT,cmu,MED,Y
+Gucci Everything,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",Gucci,49,I been fuckin with Gucci since I was 17,Gucci,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,47,"Gucci car, Gucci van, Gucci shirt, Gucci sleeves",sleeves,50,"I'm a Blood, getting money, that's that red mixed with green",green,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,48,"Backpack like my hood, whole lotta fuckin G's",fuckin,49,I been fuckin with Gucci since I was 17,fuckin,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,48,"Backpack like my hood, whole lotta fuckin G's",G's,50,"I'm a Blood, getting money, that's that red mixed with green",green,END,SLANT,cmu,MED,Y
+Gucci Everything,48,"Backpack like my hood, whole lotta fuckin G's",fuckin,50,"I'm a Blood, getting money, that's that red mixed with green",Blood,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,48,"Backpack like my hood, whole lotta fuckin G's",fuckin,50,"I'm a Blood, getting money, that's that red mixed with green",money,INNER,SLANT,cmu,MED,Y
+Gucci Everything,48,"Backpack like my hood, whole lotta fuckin G's",hood,50,"I'm a Blood, getting money, that's that red mixed with green",Blood,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,49,I been fuckin with Gucci since I was 17,fuckin,50,"I'm a Blood, getting money, that's that red mixed with green",Blood,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,49,I been fuckin with Gucci since I was 17,fuckin,50,"I'm a Blood, getting money, that's that red mixed with green",money,INNER,SLANT,cmu,MED,Y
+Gucci Everything,49,I been fuckin with Gucci since I was 17,since,50,"I'm a Blood, getting money, that's that red mixed with green",mixed,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,49,I been fuckin with Gucci since I was 17,since,51,"Look at my closet (Gucci everything, Gucci everything",everything,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,49,I been fuckin with Gucci since I was 17,Gucci,51,"Look at my closet (Gucci everything, Gucci everything",Gucci,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,49,I been fuckin with Gucci since I was 17,since,51,"Look at my closet (Gucci everything, Gucci everything",everything,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,49,I been fuckin with Gucci since I was 17,since,52,"Married to this bitch, Gucci wedding ring",ring,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,49,I been fuckin with Gucci since I was 17,since,53,"I say money over hoes, I like to broaden everything",everything,END,ASSONANCE,vowel,MED,Y
+Gucci Everything,50,"I'm a Blood, getting money, that's that red mixed with green",Blood,50,"I'm a Blood, getting money, that's that red mixed with green",money,INNER,SLANT,cmu,MED,Y
+Gucci Everything,50,"I'm a Blood, getting money, that's that red mixed with green",getting,50,"I'm a Blood, getting money, that's that red mixed with green",red,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,50,"I'm a Blood, getting money, that's that red mixed with green",mixed,51,"Look at my closet (Gucci everything, Gucci everything",everything,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,50,"I'm a Blood, getting money, that's that red mixed with green",getting,52,"Married to this bitch, Gucci wedding ring",Married,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,50,"I'm a Blood, getting money, that's that red mixed with green",getting,52,"Married to this bitch, Gucci wedding ring",wedding,INNER,SLANT,cmu,MED,Y
+Gucci Everything,50,"I'm a Blood, getting money, that's that red mixed with green",mixed,52,"Married to this bitch, Gucci wedding ring",bitch,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,50,"I'm a Blood, getting money, that's that red mixed with green",mixed,52,"Married to this bitch, Gucci wedding ring",ring,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,50,"I'm a Blood, getting money, that's that red mixed with green",red,52,"Married to this bitch, Gucci wedding ring",Married,INNER,SLANT,cmu,MED,Y
+Gucci Everything,50,"I'm a Blood, getting money, that's that red mixed with green",red,52,"Married to this bitch, Gucci wedding ring",wedding,INNER,SLANT,cmu,MED,Y
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",everything,51,"Look at my closet (Gucci everything, Gucci everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",Gucci,51,"Look at my closet (Gucci everything, Gucci everything",Gucci,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",everything,52,"Married to this bitch, Gucci wedding ring",ring,END,PERFECT,cmu,HIGH,Y
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",everything,52,"Married to this bitch, Gucci wedding ring",bitch,INNER,SLANT,cmu,MED,Y
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",everything,52,"Married to this bitch, Gucci wedding ring",ring,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",Gucci,52,"Married to this bitch, Gucci wedding ring",Gucci,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",everything,53,"I say money over hoes, I like to broaden everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",everything,53,"I say money over hoes, I like to broaden everything",everything,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",everything,54,"They gotta accept it though, I swipe my card and everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,51,"Look at my closet (Gucci everything, Gucci everything",everything,55,"Let her rock the mic, she like recording everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",bitch,52,"Married to this bitch, Gucci wedding ring",ring,INNER,SLANT,cmu,MED,Y
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",Married,52,"Married to this bitch, Gucci wedding ring",wedding,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",ring,53,"I say money over hoes, I like to broaden everything",everything,END,PERFECT,cmu,HIGH,Y
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",bitch,53,"I say money over hoes, I like to broaden everything",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",ring,54,"They gotta accept it though, I swipe my card and everything",everything,END,PERFECT,cmu,HIGH,Y
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",bitch,54,"They gotta accept it though, I swipe my card and everything",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",Married,54,"They gotta accept it though, I swipe my card and everything",accept,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",wedding,54,"They gotta accept it though, I swipe my card and everything",accept,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",ring,55,"Let her rock the mic, she like recording everything",everything,END,PERFECT,cmu,HIGH,Y
+Gucci Everything,52,"Married to this bitch, Gucci wedding ring",ring,56,"Tongue out, legs open, Michael Jordan everything!",everything,END,PERFECT,cmu,HIGH,Y
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",over,53,"I say money over hoes, I like to broaden everything",hoes,INNER,SLANT,cmu,MED,Y
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",everything,54,"They gotta accept it though, I swipe my card and everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",hoes,54,"They gotta accept it though, I swipe my card and everything",though,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",like,54,"They gotta accept it though, I swipe my card and everything",swipe,INNER,SLANT,cmu,MED,Y
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",over,54,"They gotta accept it though, I swipe my card and everything",though,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",everything,55,"Let her rock the mic, she like recording everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",broaden,55,"Let her rock the mic, she like recording everything",recording,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",everything,55,"Let her rock the mic, she like recording everything",mic,INNER,SLANT,cmu,MED,Y
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",like,55,"Let her rock the mic, she like recording everything",like,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",everything,56,"Tongue out, legs open, Michael Jordan everything!",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,53,"I say money over hoes, I like to broaden everything",everything,57,"I be washing niggas up, they say I'm bathin everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",gotta,54,"They gotta accept it though, I swipe my card and everything",card,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",everything,55,"Let her rock the mic, she like recording everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",accept,55,"Let her rock the mic, she like recording everything",Let,INNER,SLANT,cmu,MED,Y
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",card,55,"Let her rock the mic, she like recording everything",rock,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",everything,55,"Let her rock the mic, she like recording everything",mic,INNER,SLANT,cmu,MED,Y
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",gotta,55,"Let her rock the mic, she like recording everything",rock,INNER,SLANT,cmu,MED,Y
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",swipe,55,"Let her rock the mic, she like recording everything",like,INNER,SLANT,cmu,MED,Y
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",everything,56,"Tongue out, legs open, Michael Jordan everything!",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",accept,56,"Tongue out, legs open, Michael Jordan everything!",legs,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",swipe,56,"Tongue out, legs open, Michael Jordan everything!",Michael,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",though,56,"Tongue out, legs open, Michael Jordan everything!",open,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",everything,57,"I be washing niggas up, they say I'm bathin everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,54,"They gotta accept it though, I swipe my card and everything",everything,58,"First they wouldn't give us none, than they gave us everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,55,"Let her rock the mic, she like recording everything",mic,55,"Let her rock the mic, she like recording everything",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,55,"Let her rock the mic, she like recording everything",everything,56,"Tongue out, legs open, Michael Jordan everything!",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,55,"Let her rock the mic, she like recording everything",Let,56,"Tongue out, legs open, Michael Jordan everything!",legs,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,55,"Let her rock the mic, she like recording everything",like,56,"Tongue out, legs open, Michael Jordan everything!",Michael,INNER,SLANT,cmu,MED,Y
+Gucci Everything,55,"Let her rock the mic, she like recording everything",mic,56,"Tongue out, legs open, Michael Jordan everything!",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,55,"Let her rock the mic, she like recording everything",recording,56,"Tongue out, legs open, Michael Jordan everything!",Jordan,INNER,SLANT,cmu,MED,Y
+Gucci Everything,55,"Let her rock the mic, she like recording everything",everything,57,"I be washing niggas up, they say I'm bathin everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,55,"Let her rock the mic, she like recording everything",everything,57,"I be washing niggas up, they say I'm bathin everything",washing,INNER,PERFECT,spelling,MED,Y
+Gucci Everything,55,"Let her rock the mic, she like recording everything",mic,57,"I be washing niggas up, they say I'm bathin everything",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,55,"Let her rock the mic, she like recording everything",rock,57,"I be washing niggas up, they say I'm bathin everything",washing,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,55,"Let her rock the mic, she like recording everything",everything,58,"First they wouldn't give us none, than they gave us everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,55,"Let her rock the mic, she like recording everything",everything,59,"When I got some paper, I bought my favorite everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,56,"Tongue out, legs open, Michael Jordan everything!",everything,57,"I be washing niggas up, they say I'm bathin everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,56,"Tongue out, legs open, Michael Jordan everything!",everything,57,"I be washing niggas up, they say I'm bathin everything",washing,INNER,PERFECT,spelling,MED,Y
+Gucci Everything,56,"Tongue out, legs open, Michael Jordan everything!",everything,58,"First they wouldn't give us none, than they gave us everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,56,"Tongue out, legs open, Michael Jordan everything!",everything,58,"First they wouldn't give us none, than they gave us everything",give,INNER,SLANT,cmu,MED,Y
+Gucci Everything,56,"Tongue out, legs open, Michael Jordan everything!",Tongue,58,"First they wouldn't give us none, than they gave us everything",none,INNER,SLANT,cmu,MED,Y
+Gucci Everything,56,"Tongue out, legs open, Michael Jordan everything!",everything,59,"When I got some paper, I bought my favorite everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,56,"Tongue out, legs open, Michael Jordan everything!",everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",say,57,"I be washing niggas up, they say I'm bathin everything",bathin,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",washing,57,"I be washing niggas up, they say I'm bathin everything",everything,INNER,PERFECT,spelling,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",everything,58,"First they wouldn't give us none, than they gave us everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",bathin,58,"First they wouldn't give us none, than they gave us everything",gave,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",everything,58,"First they wouldn't give us none, than they gave us everything",give,INNER,SLANT,cmu,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",say,58,"First they wouldn't give us none, than they gave us everything",gave,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",washing,58,"First they wouldn't give us none, than they gave us everything",everything,INNER,PERFECT,spelling,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",everything,59,"When I got some paper, I bought my favorite everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",bathin,59,"When I got some paper, I bought my favorite everything",favorite,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",bathin,59,"When I got some paper, I bought my favorite everything",paper,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",say,59,"When I got some paper, I bought my favorite everything",favorite,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",say,59,"When I got some paper, I bought my favorite everything",paper,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",washing,59,"When I got some paper, I bought my favorite everything",bought,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",washing,59,"When I got some paper, I bought my favorite everything",everything,INNER,PERFECT,spelling,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",washing,59,"When I got some paper, I bought my favorite everything",got,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,57,"I be washing niggas up, they say I'm bathin everything",everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,58,"First they wouldn't give us none, than they gave us everything",give,58,"First they wouldn't give us none, than they gave us everything",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,58,"First they wouldn't give us none, than they gave us everything",everything,59,"When I got some paper, I bought my favorite everything",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,58,"First they wouldn't give us none, than they gave us everything",gave,59,"When I got some paper, I bought my favorite everything",favorite,INNER,SLANT,cmu,MED,Y
+Gucci Everything,58,"First they wouldn't give us none, than they gave us everything",gave,59,"When I got some paper, I bought my favorite everything",paper,INNER,SLANT,cmu,MED,Y
+Gucci Everything,58,"First they wouldn't give us none, than they gave us everything",give,59,"When I got some paper, I bought my favorite everything",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,58,"First they wouldn't give us none, than they gave us everything",none,59,"When I got some paper, I bought my favorite everything",some,INNER,SLANT,cmu,MED,Y
+Gucci Everything,58,"First they wouldn't give us none, than they gave us everything",everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,58,"First they wouldn't give us none, than they gave us everything",gave,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",Davis,INNER,SLANT,cmu,MED,Y
+Gucci Everything,58,"First they wouldn't give us none, than they gave us everything",give,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",everything,INNER,SLANT,cmu,MED,Y
+Gucci Everything,59,"When I got some paper, I bought my favorite everything",got,59,"When I got some paper, I bought my favorite everything",bought,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,59,"When I got some paper, I bought my favorite everything",paper,59,"When I got some paper, I bought my favorite everything",favorite,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,59,"When I got some paper, I bought my favorite everything",everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",everything,END,REPEAT,spelling,HIGH,N
+Gucci Everything,59,"When I got some paper, I bought my favorite everything",favorite,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",Davis,INNER,SLANT,cmu,MED,Y
+Gucci Everything,59,"When I got some paper, I bought my favorite everything",paper,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",Davis,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",why,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",icy,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",icy,61,"Gucci, I roll up like sushi",like,INNER,SLANT,cmu,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",why,61,"Gucci, I roll up like sushi",like,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",everything,62,"I'm dipping in that white shit like with the wings, blue cheese",dipping,INNER,SLANT,cmu,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",everything,62,"I'm dipping in that white shit like with the wings, blue cheese",shit,INNER,SLANT,cmu,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",everything,62,"I'm dipping in that white shit like with the wings, blue cheese",wings,INNER,SLANT,cmu,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",icy,62,"I'm dipping in that white shit like with the wings, blue cheese",like,INNER,SLANT,cmu,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",icy,62,"I'm dipping in that white shit like with the wings, blue cheese",white,INNER,SLANT,cmu,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",why,62,"I'm dipping in that white shit like with the wings, blue cheese",like,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,60,"Thats why I'm so icy, Radric Davis everything (who dat?)",why,62,"I'm dipping in that white shit like with the wings, blue cheese",white,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,61,"Gucci, I roll up like sushi",Gucci,61,"Gucci, I roll up like sushi",sushi,INNER,SLANT,cmu,MED,Y
+Gucci Everything,61,"Gucci, I roll up like sushi",Gucci,62,"I'm dipping in that white shit like with the wings, blue cheese",blue,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,61,"Gucci, I roll up like sushi",like,62,"I'm dipping in that white shit like with the wings, blue cheese",like,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,61,"Gucci, I roll up like sushi",like,62,"I'm dipping in that white shit like with the wings, blue cheese",white,INNER,SLANT,cmu,MED,Y
+Gucci Everything,61,"Gucci, I roll up like sushi",sushi,62,"I'm dipping in that white shit like with the wings, blue cheese",blue,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",dipping,62,"I'm dipping in that white shit like with the wings, blue cheese",shit,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",dipping,62,"I'm dipping in that white shit like with the wings, blue cheese",wings,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",shit,62,"I'm dipping in that white shit like with the wings, blue cheese",wings,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",white,62,"I'm dipping in that white shit like with the wings, blue cheese",like,INNER,SLANT,cmu,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",cheese,63,"Green strip, red strip, green strip nigga",Green,INNER,SLANT,cmu,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",dipping,63,"Green strip, red strip, green strip nigga",strip,INNER,SLANT,cmu,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",shit,63,"Green strip, red strip, green strip nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",shit,63,"Green strip, red strip, green strip nigga",strip,INNER,SLANT,cmu,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",wings,63,"Green strip, red strip, green strip nigga",strip,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",cheese,64,"I can't miss, infrared beam type nigga",beam,INNER,SLANT,cmu,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",dipping,64,"I can't miss, infrared beam type nigga",miss,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",like,64,"I can't miss, infrared beam type nigga",type,INNER,SLANT,cmu,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",shit,64,"I can't miss, infrared beam type nigga",miss,INNER,SLANT,cmu,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",shit,64,"I can't miss, infrared beam type nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",white,64,"I can't miss, infrared beam type nigga",type,INNER,SLANT,cmu,MED,Y
+Gucci Everything,62,"I'm dipping in that white shit like with the wings, blue cheese",wings,64,"I can't miss, infrared beam type nigga",miss,INNER,ASSONANCE,vowel,MED,Y
+Gucci Everything,63,"Green strip, red strip, green strip nigga",Green,63,"Green strip, red strip, green strip nigga",green,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,63,"Green strip, red strip, green strip nigga",strip,63,"Green strip, red strip, green strip nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Gucci Everything,63,"Green strip, red strip, green strip nigga",strip,63,"Green strip, red strip, green strip nigga",strip,INNER,REPEAT,spelling,HIGH,N
+Gucci Everything,63,"Green strip, red strip, green strip nigga",nigga,64,"I can't miss, infrared beam type nigga",nigga,END,REPEAT,spelling,HIGH,N
+Gucci Everything,63,"Green strip, red strip, green strip nigga",Green,64,"I can't miss, infrared beam type nigga",beam,INNER,SLANT,cmu,MED,Y
+Gucci Everything,63,"Green strip, red strip, green strip nigga",red,64,"I can't miss, infrared beam type nigga",infrared,INNER,PERFECT,cmu,HIGH,Y
+Gucci Everything,63,"Green strip, red strip, green strip nigga",strip,64,"I can't miss, infrared beam type nigga",miss,INNER,SLANT,cmu,MED,Y
+Gucci Everything,63,"Green strip, red strip, green strip nigga",strip,64,"I can't miss, infrared beam type nigga",nigga,INNER,SLANT,spelling,LOW,Y

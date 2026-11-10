@@ -1,0 +1,658 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Plenty,1,All my opps Brad Pitts,All,3,"All these, all these niggas do is act gangster",All,INNER,REPEAT,spelling,HIGH,N
+Plenty,1,All my opps Brad Pitts,Brad,3,"All these, all these niggas do is act gangster",act,INNER,SLANT,cmu,MED,Y
+Plenty,1,All my opps Brad Pitts,Brad,3,"All these, all these niggas do is act gangster",gangster,INNER,ASSONANCE,vowel,MED,Y
+Plenty,1,All my opps Brad Pitts,Pitts,3,"All these, all these niggas do is act gangster",niggas,INNER,SLANT,spelling,LOW,Y
+Plenty,1,All my opps Brad Pitts,Pitts,5,"Plenty guns, we got plenty clips",clips,END,SLANT,cmu,MED,Y
+Plenty,2,Fuck out of here,here,3,"All these, all these niggas do is act gangster",these,INNER,SLANT,cmu,MED,Y
+Plenty,3,"All these, all these niggas do is act gangster",act,3,"All these, all these niggas do is act gangster",gangster,INNER,ASSONANCE,vowel,MED,Y
+Plenty,3,"All these, all these niggas do is act gangster",All,3,"All these, all these niggas do is act gangster",all,INNER,REPEAT,spelling,HIGH,N
+Plenty,3,"All these, all these niggas do is act gangster",these,3,"All these, all these niggas do is act gangster",these,INNER,REPEAT,spelling,HIGH,N
+Plenty,3,"All these, all these niggas do is act gangster",gangster,4,Them niggas ain't gangster,gangster,END,REPEAT,spelling,HIGH,N
+Plenty,3,"All these, all these niggas do is act gangster",act,4,Them niggas ain't gangster,gangster,INNER,ASSONANCE,vowel,MED,Y
+Plenty,3,"All these, all these niggas do is act gangster",niggas,4,Them niggas ain't gangster,niggas,INNER,REPEAT,spelling,HIGH,N
+Plenty,3,"All these, all these niggas do is act gangster",niggas,5,"Plenty guns, we got plenty clips",clips,INNER,SLANT,spelling,LOW,Y
+Plenty,4,Them niggas ain't gangster,niggas,5,"Plenty guns, we got plenty clips",clips,INNER,SLANT,spelling,LOW,Y
+Plenty,4,Them niggas ain't gangster,niggas,6,"We got plenty guns, we got plenty clips",clips,INNER,SLANT,spelling,LOW,Y
+Plenty,5,"Plenty guns, we got plenty clips",Plenty,5,"Plenty guns, we got plenty clips",plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",clips,6,"We got plenty guns, we got plenty clips",clips,END,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",got,6,"We got plenty guns, we got plenty clips",got,INNER,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",guns,6,"We got plenty guns, we got plenty clips",guns,INNER,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",Plenty,6,"We got plenty guns, we got plenty clips",plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",clips,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,END,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",clips,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,INNER,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",got,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",got,INNER,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",guns,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",guns,INNER,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,5,"Plenty guns, we got plenty clips",clips,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,END,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",got,6,"We got plenty guns, we got plenty clips",got,INNER,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",plenty,6,"We got plenty guns, we got plenty clips",plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",clips,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,END,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",clips,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,INNER,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",got,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",got,INNER,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",guns,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",guns,INNER,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",clips,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,END,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",clips,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,INNER,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",guns,8,"Plenty guns, plenty clips, plenty guns, plenty clips",guns,INNER,REPEAT,spelling,HIGH,N
+Plenty,6,"We got plenty guns, we got plenty clips",plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",Plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,INNER,REPEAT,spelling,HIGH,N
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",guns,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",guns,INNER,REPEAT,spelling,HIGH,N
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,END,REPEAT,spelling,HIGH,N
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,INNER,REPEAT,spelling,HIGH,N
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",guns,8,"Plenty guns, plenty clips, plenty guns, plenty clips",guns,INNER,REPEAT,spelling,HIGH,N
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",Plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",clips,INNER,REPEAT,spelling,HIGH,N
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",niggas,INNER,SLANT,spelling,LOW,Y
+Plenty,7,"We got plenty guns, plenty clips, plenty guns, plenty clips",clips,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",Since,INNER,SLANT,cmu,MED,Y
+Plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,INNER,REPEAT,spelling,HIGH,N
+Plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",guns,8,"Plenty guns, plenty clips, plenty guns, plenty clips",guns,INNER,REPEAT,spelling,HIGH,N
+Plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",Plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",clips,INNER,REPEAT,spelling,HIGH,N
+Plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",niggas,INNER,SLANT,spelling,LOW,Y
+Plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",Since,INNER,SLANT,cmu,MED,Y
+Plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",clips,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",shit,INNER,ASSONANCE,vowel,MED,Y
+Plenty,8,"Plenty guns, plenty clips, plenty guns, plenty clips",Plenty,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",Depend,INNER,SLANT,cmu,MED,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",niggas,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",clips,INNER,SLANT,spelling,LOW,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",shoot,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",movie,INNER,SLANT,cmu,MED,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",Since,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",clips,INNER,SLANT,cmu,MED,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",clips,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",shit,INNER,ASSONANCE,vowel,MED,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",pull,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",good,INNER,SLANT,cmu,MED,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",Since,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",shit,INNER,ASSONANCE,vowel,MED,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",movie,11,"Dependin' how good we do, might come out for a part two (Spin again)",two,END,ASSONANCE,vowel,MED,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",pull,11,"Dependin' how good we do, might come out for a part two (Spin again)",good,INNER,SLANT,cmu,MED,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",shoot,11,"Dependin' how good we do, might come out for a part two (Spin again)",two,INNER,ASSONANCE,vowel,MED,Y
+Plenty,9,"Since them niggas act, pull up with clips and shoot a movie (Shoot a movie)",movie,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",shoot,END,SLANT,cmu,MED,Y
+Plenty,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",Depend,11,"Dependin' how good we do, might come out for a part two (Spin again)",Dependin,INNER,SLANT,cmu,MED,Y
+Plenty,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",good,11,"Dependin' how good we do, might come out for a part two (Spin again)",good,INNER,REPEAT,spelling,HIGH,N
+Plenty,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",how,11,"Dependin' how good we do, might come out for a part two (Spin again)",how,INNER,REPEAT,spelling,HIGH,N
+Plenty,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",might,11,"Dependin' how good we do, might come out for a part two (Spin again)",might,INNER,REPEAT,spelling,HIGH,N
+Plenty,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",Depend,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",direct,INNER,ASSONANCE,vowel,MED,Y
+Plenty,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",good,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",Pull,INNER,SLANT,cmu,MED,Y
+Plenty,10,"Depend on how good we do, this shit might make the TV too (Shit might make the news)",TV,13,"Red alert, dead alert, what my brother see?",see,END,PERFECT,cmu,HIGH,Y
+Plenty,11,"Dependin' how good we do, might come out for a part two (Spin again)",two,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",shoot,END,ASSONANCE,vowel,MED,Y
+Plenty,11,"Dependin' how good we do, might come out for a part two (Spin again)",Dependin,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",direct,INNER,ASSONANCE,vowel,MED,Y
+Plenty,11,"Dependin' how good we do, might come out for a part two (Spin again)",good,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",Pull,INNER,SLANT,cmu,MED,Y
+Plenty,11,"Dependin' how good we do, might come out for a part two (Spin again)",come,13,"Red alert, dead alert, what my brother see?",brother,INNER,SLANT,cmu,MED,Y
+Plenty,11,"Dependin' how good we do, might come out for a part two (Spin again)",come,13,"Red alert, dead alert, what my brother see?",what,INNER,SLANT,cmu,MED,Y
+Plenty,11,"Dependin' how good we do, might come out for a part two (Spin again)",Dependin,13,"Red alert, dead alert, what my brother see?",dead,INNER,ASSONANCE,vowel,MED,Y
+Plenty,11,"Dependin' how good we do, might come out for a part two (Spin again)",Dependin,13,"Red alert, dead alert, what my brother see?",Red,INNER,ASSONANCE,vowel,MED,Y
+Plenty,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",bro,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",bro,INNER,REPEAT,spelling,HIGH,N
+Plenty,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",direct,13,"Red alert, dead alert, what my brother see?",dead,INNER,SLANT,cmu,MED,Y
+Plenty,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",direct,13,"Red alert, dead alert, what my brother see?",Red,INNER,SLANT,cmu,MED,Y
+Plenty,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",direct,14,A nigga just got put to bed alert (He got put asleep),bed,INNER,SLANT,cmu,MED,Y
+Plenty,12,"Pull up with cannons, bro-bro, you direct and I'm gon' shoot (Grrah, grahh, grahh)",Pull,14,A nigga just got put to bed alert (He got put asleep),put,INNER,SLANT,cmu,MED,Y
+Plenty,13,"Red alert, dead alert, what my brother see?",alert,13,"Red alert, dead alert, what my brother see?",alert,INNER,REPEAT,spelling,HIGH,N
+Plenty,13,"Red alert, dead alert, what my brother see?",Red,13,"Red alert, dead alert, what my brother see?",dead,INNER,PERFECT,cmu,HIGH,Y
+Plenty,13,"Red alert, dead alert, what my brother see?",what,13,"Red alert, dead alert, what my brother see?",brother,INNER,SLANT,cmu,MED,Y
+Plenty,13,"Red alert, dead alert, what my brother see?",alert,14,A nigga just got put to bed alert (He got put asleep),alert,INNER,REPEAT,spelling,HIGH,N
+Plenty,13,"Red alert, dead alert, what my brother see?",dead,14,A nigga just got put to bed alert (He got put asleep),bed,INNER,PERFECT,cmu,HIGH,Y
+Plenty,13,"Red alert, dead alert, what my brother see?",Red,14,A nigga just got put to bed alert (He got put asleep),bed,INNER,PERFECT,cmu,HIGH,Y
+Plenty,13,"Red alert, dead alert, what my brother see?",alert,15,"This a super charge, love to make it jerk (Vroom, vroom)",jerk,INNER,SLANT,cmu,MED,Y
+Plenty,13,"Red alert, dead alert, what my brother see?",brother,15,"This a super charge, love to make it jerk (Vroom, vroom)",love,INNER,SLANT,cmu,MED,Y
+Plenty,13,"Red alert, dead alert, what my brother see?",what,15,"This a super charge, love to make it jerk (Vroom, vroom)",love,INNER,SLANT,cmu,MED,Y
+Plenty,14,A nigga just got put to bed alert (He got put asleep),alert,15,"This a super charge, love to make it jerk (Vroom, vroom)",jerk,END,SLANT,cmu,MED,Y
+Plenty,14,A nigga just got put to bed alert (He got put asleep),got,15,"This a super charge, love to make it jerk (Vroom, vroom)",charge,INNER,ASSONANCE,vowel,MED,Y
+Plenty,14,A nigga just got put to bed alert (He got put asleep),alert,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",twerk,END,SLANT,spelling,LOW,Y
+Plenty,14,A nigga just got put to bed alert (He got put asleep),nigga,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",wicked,INNER,SLANT,spelling,LOW,Y
+Plenty,15,"This a super charge, love to make it jerk (Vroom, vroom)",jerk,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",twerk,END,PERFECT,spelling,HIGH,Y
+Plenty,15,"This a super charge, love to make it jerk (Vroom, vroom)",love,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",come,INNER,SLANT,cmu,MED,Y
+Plenty,15,"This a super charge, love to make it jerk (Vroom, vroom)",charge,17,Feel like Drizzy mama thirty years ago the way I carry Drac',mama,INNER,ASSONANCE,vowel,MED,Y
+Plenty,15,"This a super charge, love to make it jerk (Vroom, vroom)",make,17,Feel like Drizzy mama thirty years ago the way I carry Drac',way,INNER,ASSONANCE,vowel,MED,Y
+Plenty,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",ho,17,Feel like Drizzy mama thirty years ago the way I carry Drac',ago,INNER,PERFECT,cmu,HIGH,Y
+Plenty,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",wicked,17,Feel like Drizzy mama thirty years ago the way I carry Drac',years,INNER,ASSONANCE,vowel,MED,Y
+Plenty,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",come,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",bruh,INNER,SLANT,spelling,LOW,Y
+Plenty,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",come,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",run,INNER,SLANT,cmu,MED,Y
+Plenty,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",song,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",door,INNER,SLANT,cmu,MED,Y
+Plenty,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",wicked,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",Lil,INNER,ASSONANCE,vowel,MED,Y
+Plenty,16,"This a wicked ho, my song come on, she twerk (Yeah, yeah, yeah)",wicked,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",twist,INNER,ASSONANCE,vowel,MED,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',carry,17,Feel like Drizzy mama thirty years ago the way I carry Drac',Drac,INNER,SLANT,spelling,LOW,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',Drizzy,17,Feel like Drizzy mama thirty years ago the way I carry Drac',carry,INNER,ASSONANCE,vowel,LOW,N
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',Drizzy,17,Feel like Drizzy mama thirty years ago the way I carry Drac',thirty,INNER,ASSONANCE,vowel,LOW,N
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',Drizzy,17,Feel like Drizzy mama thirty years ago the way I carry Drac',years,INNER,SLANT,spelling,LOW,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',Feel,17,Feel like Drizzy mama thirty years ago the way I carry Drac',thirty,INNER,ASSONANCE,vowel,MED,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',mama,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",knob,INNER,SLANT,cmu,MED,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',mama,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",knock,INNER,SLANT,cmu,MED,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',way,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",shake,INNER,ASSONANCE,vowel,MED,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',years,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",Lil,INNER,ASSONANCE,vowel,MED,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',years,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",twist,INNER,ASSONANCE,vowel,MED,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',like,19,"My nigga tried to jump the fence, I heard he died on the gate",died,INNER,SLANT,cmu,MED,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',like,19,"My nigga tried to jump the fence, I heard he died on the gate",tried,INNER,SLANT,cmu,MED,Y
+Plenty,17,Feel like Drizzy mama thirty years ago the way I carry Drac',way,19,"My nigga tried to jump the fence, I heard he died on the gate",gate,INNER,ASSONANCE,vowel,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",bruh,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",run,INNER,SLANT,spelling,LOW,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",knock,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",knob,INNER,SLANT,cmu,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",Lil,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",twist,INNER,ASSONANCE,vowel,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",shake,19,"My nigga tried to jump the fence, I heard he died on the gate",gate,END,SLANT,cmu,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",bruh,19,"My nigga tried to jump the fence, I heard he died on the gate",jump,INNER,ASSONANCE,vowel,LOW,N
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",let,19,"My nigga tried to jump the fence, I heard he died on the gate",fence,INNER,ASSONANCE,vowel,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",run,19,"My nigga tried to jump the fence, I heard he died on the gate",jump,INNER,ASSONANCE,vowel,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",bruh,20,They say one nigga shot and missed 'em all,one,INNER,SLANT,spelling,LOW,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",door,20,They say one nigga shot and missed 'em all,all,INNER,SLANT,cmu,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",knob,20,They say one nigga shot and missed 'em all,shot,INNER,SLANT,cmu,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",knock,20,They say one nigga shot and missed 'em all,shot,INNER,SLANT,cmu,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",Lil,20,They say one nigga shot and missed 'em all,missed,INNER,ASSONANCE,vowel,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",run,20,They say one nigga shot and missed 'em all,one,INNER,PERFECT,cmu,HIGH,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",shake,20,They say one nigga shot and missed 'em all,say,INNER,ASSONANCE,vowel,MED,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",twist,20,They say one nigga shot and missed 'em all,missed,INNER,PERFECT,cmu,HIGH,Y
+Plenty,18,"Lil' bruh knock on the door and run, the knob twist, I let it shake",shake,21,"Hello? Bet, I just heard he got shot in his face",face,END,SLANT,cmu,MED,Y
+Plenty,19,"My nigga tried to jump the fence, I heard he died on the gate",tried,19,"My nigga tried to jump the fence, I heard he died on the gate",died,INNER,PERFECT,cmu,HIGH,Y
+Plenty,19,"My nigga tried to jump the fence, I heard he died on the gate",gate,20,They say one nigga shot and missed 'em all,say,INNER,ASSONANCE,vowel,MED,Y
+Plenty,19,"My nigga tried to jump the fence, I heard he died on the gate",jump,20,They say one nigga shot and missed 'em all,one,INNER,ASSONANCE,vowel,MED,Y
+Plenty,19,"My nigga tried to jump the fence, I heard he died on the gate",nigga,20,They say one nigga shot and missed 'em all,nigga,INNER,REPEAT,spelling,HIGH,N
+Plenty,19,"My nigga tried to jump the fence, I heard he died on the gate",gate,21,"Hello? Bet, I just heard he got shot in his face",face,END,SLANT,cmu,MED,Y
+Plenty,19,"My nigga tried to jump the fence, I heard he died on the gate",fence,21,"Hello? Bet, I just heard he got shot in his face",Bet,INNER,ASSONANCE,vowel,MED,Y
+Plenty,19,"My nigga tried to jump the fence, I heard he died on the gate",heard,21,"Hello? Bet, I just heard he got shot in his face",heard,INNER,REPEAT,spelling,HIGH,N
+Plenty,20,They say one nigga shot and missed 'em all,say,21,"Hello? Bet, I just heard he got shot in his face",face,INNER,ASSONANCE,vowel,MED,Y
+Plenty,20,They say one nigga shot and missed 'em all,shot,21,"Hello? Bet, I just heard he got shot in his face",got,INNER,PERFECT,cmu,HIGH,Y
+Plenty,20,They say one nigga shot and missed 'em all,shot,21,"Hello? Bet, I just heard he got shot in his face",shot,INNER,REPEAT,spelling,HIGH,N
+Plenty,20,They say one nigga shot and missed 'em all,missed,22,"Headshot, ain't no leg shots, bitch nigga",bitch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,20,They say one nigga shot and missed 'em all,nigga,22,"Headshot, ain't no leg shots, bitch nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Plenty,20,They say one nigga shot and missed 'em all,say,22,"Headshot, ain't no leg shots, bitch nigga",ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,20,They say one nigga shot and missed 'em all,shot,22,"Headshot, ain't no leg shots, bitch nigga",Headshot,INNER,PERFECT,cmu,HIGH,Y
+Plenty,20,They say one nigga shot and missed 'em all,shot,22,"Headshot, ain't no leg shots, bitch nigga",shots,INNER,SLANT,cmu,MED,Y
+Plenty,21,"Hello? Bet, I just heard he got shot in his face",got,21,"Hello? Bet, I just heard he got shot in his face",shot,INNER,PERFECT,cmu,HIGH,Y
+Plenty,21,"Hello? Bet, I just heard he got shot in his face",Bet,22,"Headshot, ain't no leg shots, bitch nigga",leg,INNER,SLANT,cmu,MED,Y
+Plenty,21,"Hello? Bet, I just heard he got shot in his face",face,22,"Headshot, ain't no leg shots, bitch nigga",ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,21,"Hello? Bet, I just heard he got shot in his face",got,22,"Headshot, ain't no leg shots, bitch nigga",Headshot,INNER,PERFECT,cmu,HIGH,Y
+Plenty,21,"Hello? Bet, I just heard he got shot in his face",got,22,"Headshot, ain't no leg shots, bitch nigga",shots,INNER,SLANT,cmu,MED,Y
+Plenty,21,"Hello? Bet, I just heard he got shot in his face",Hello,22,"Headshot, ain't no leg shots, bitch nigga",no,INNER,PERFECT,cmu,HIGH,Y
+Plenty,21,"Hello? Bet, I just heard he got shot in his face",shot,22,"Headshot, ain't no leg shots, bitch nigga",Headshot,INNER,PERFECT,cmu,HIGH,Y
+Plenty,21,"Hello? Bet, I just heard he got shot in his face",shot,22,"Headshot, ain't no leg shots, bitch nigga",shots,INNER,SLANT,cmu,MED,Y
+Plenty,21,"Hello? Bet, I just heard he got shot in his face",face,23,"Forty blast, we gon' take his ass off the list, nigga",take,INNER,SLANT,cmu,MED,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",Headshot,22,"Headshot, ain't no leg shots, bitch nigga",shots,INNER,SLANT,cmu,MED,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",nigga,23,"Forty blast, we gon' take his ass off the list, nigga",nigga,END,REPEAT,spelling,HIGH,N
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",ain't,23,"Forty blast, we gon' take his ass off the list, nigga",take,INNER,ASSONANCE,vowel,MED,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",bitch,23,"Forty blast, we gon' take his ass off the list, nigga",list,INNER,ASSONANCE,vowel,MED,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",nigga,24,"Breakin' glass, got him takin' ass when we blitz niggas",niggas,END,SLANT,spelling,LOW,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",ain't,24,"Breakin' glass, got him takin' ass when we blitz niggas",Breakin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",ain't,24,"Breakin' glass, got him takin' ass when we blitz niggas",takin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",bitch,24,"Breakin' glass, got him takin' ass when we blitz niggas",blitz,INNER,ASSONANCE,vowel,MED,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",bitch,24,"Breakin' glass, got him takin' ass when we blitz niggas",him,INNER,SLANT,cmu,MED,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",Headshot,24,"Breakin' glass, got him takin' ass when we blitz niggas",got,INNER,PERFECT,cmu,HIGH,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",leg,24,"Breakin' glass, got him takin' ass when we blitz niggas",when,INNER,SLANT,cmu,MED,Y
+Plenty,22,"Headshot, ain't no leg shots, bitch nigga",shots,24,"Breakin' glass, got him takin' ass when we blitz niggas",got,INNER,SLANT,cmu,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",blast,23,"Forty blast, we gon' take his ass off the list, nigga",ass,INNER,SLANT,cmu,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",nigga,24,"Breakin' glass, got him takin' ass when we blitz niggas",niggas,END,SLANT,spelling,LOW,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",ass,24,"Breakin' glass, got him takin' ass when we blitz niggas",ass,INNER,REPEAT,spelling,HIGH,N
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",ass,24,"Breakin' glass, got him takin' ass when we blitz niggas",glass,INNER,PERFECT,cmu,HIGH,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",blast,24,"Breakin' glass, got him takin' ass when we blitz niggas",ass,INNER,SLANT,cmu,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",blast,24,"Breakin' glass, got him takin' ass when we blitz niggas",glass,INNER,SLANT,cmu,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",list,24,"Breakin' glass, got him takin' ass when we blitz niggas",blitz,INNER,ASSONANCE,vowel,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",list,24,"Breakin' glass, got him takin' ass when we blitz niggas",him,INNER,ASSONANCE,vowel,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",take,24,"Breakin' glass, got him takin' ass when we blitz niggas",Breakin,INNER,SLANT,cmu,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",take,24,"Breakin' glass, got him takin' ass when we blitz niggas",takin,INNER,SLANT,cmu,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",ass,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",ass,INNER,REPEAT,spelling,HIGH,N
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",blast,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",ass,INNER,SLANT,cmu,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",list,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",lil,INNER,ASSONANCE,vowel,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",list,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",switch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",list,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",Think,INNER,ASSONANCE,vowel,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",list,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",whipped,INNER,SLANT,cmu,MED,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",nigga,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",whipped,INNER,SLANT,spelling,LOW,Y
+Plenty,23,"Forty blast, we gon' take his ass off the list, nigga",take,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",baby,INNER,SLANT,cmu,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",blitz,24,"Breakin' glass, got him takin' ass when we blitz niggas",niggas,INNER,SLANT,spelling,LOW,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",Breakin,24,"Breakin' glass, got him takin' ass when we blitz niggas",takin,INNER,MULTI,multi,HIGH,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",glass,24,"Breakin' glass, got him takin' ass when we blitz niggas",ass,INNER,PERFECT,cmu,HIGH,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",him,24,"Breakin' glass, got him takin' ass when we blitz niggas",blitz,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",ass,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",ass,INNER,REPEAT,spelling,HIGH,N
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",blitz,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",lil,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",blitz,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",switch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",blitz,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",Think,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",blitz,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",whipped,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",Breakin,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",baby,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",glass,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",ass,INNER,PERFECT,cmu,HIGH,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",him,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",lil,INNER,SLANT,cmu,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",him,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",switch,INNER,SLANT,cmu,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",him,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",Think,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",him,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",whipped,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",niggas,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",ass,INNER,PERFECT,spelling,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",takin,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",baby,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",Breakin,26,"Ayy, jump out, we don't play (Bah)",play,INNER,ASSONANCE,vowel,MED,Y
+Plenty,24,"Breakin' glass, got him takin' ass when we blitz niggas",takin,26,"Ayy, jump out, we don't play (Bah)",play,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",lil,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",switch,INNER,SLANT,cmu,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",lil,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",whipped,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",Think,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",lil,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",Think,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",switch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",Think,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",whipped,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",whipped,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",switch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",baby,26,"Ayy, jump out, we don't play (Bah)",play,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",bro,26,"Ayy, jump out, we don't play (Bah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",done,26,"Ayy, jump out, we don't play (Bah)",jump,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",baby,27,"Split up, went both ways",ways,INNER,SLANT,cmu,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",bro,27,"Split up, went both ways",both,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",lil,27,"Split up, went both ways",Split,INNER,SLANT,cmu,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",switch,27,"Split up, went both ways",Split,INNER,SLANT,cmu,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",Think,27,"Split up, went both ways",Split,INNER,ASSONANCE,vowel,MED,Y
+Plenty,25,"Think lil' bro done whipped a baby ass, keep that switch with 'em (Brrt)",whipped,27,"Split up, went both ways",Split,INNER,SLANT,cmu,MED,Y
+Plenty,26,"Ayy, jump out, we don't play (Bah)",play,27,"Split up, went both ways",ways,END,ASSONANCE,vowel,MED,Y
+Plenty,26,"Ayy, jump out, we don't play (Bah)",don't,27,"Split up, went both ways",both,INNER,ASSONANCE,vowel,MED,Y
+Plenty,26,"Ayy, jump out, we don't play (Bah)",play,28,"Shut up, we don't stay (Shut the fuck up)",stay,END,PERFECT,cmu,HIGH,Y
+Plenty,26,"Ayy, jump out, we don't play (Bah)",don't,28,"Shut up, we don't stay (Shut the fuck up)",don't,INNER,REPEAT,spelling,HIGH,N
+Plenty,26,"Ayy, jump out, we don't play (Bah)",jump,28,"Shut up, we don't stay (Shut the fuck up)",Shut,INNER,ASSONANCE,vowel,MED,Y
+Plenty,26,"Ayy, jump out, we don't play (Bah)",play,29,"Nothin', he in the way",way,END,PERFECT,cmu,HIGH,Y
+Plenty,26,"Ayy, jump out, we don't play (Bah)",play,30,"Get hit up, can't even get up, he hit in the face",face,END,ASSONANCE,vowel,MED,Y
+Plenty,27,"Split up, went both ways",ways,28,"Shut up, we don't stay (Shut the fuck up)",stay,END,ASSONANCE,vowel,MED,Y
+Plenty,27,"Split up, went both ways",both,28,"Shut up, we don't stay (Shut the fuck up)",don't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,27,"Split up, went both ways",ways,29,"Nothin', he in the way",way,END,ASSONANCE,vowel,MED,Y
+Plenty,27,"Split up, went both ways",ways,30,"Get hit up, can't even get up, he hit in the face",face,END,SLANT,cmu,MED,Y
+Plenty,27,"Split up, went both ways",ways,31,"And niggas that's livin', we can't even trace",trace,END,SLANT,cmu,MED,Y
+Plenty,28,"Shut up, we don't stay (Shut the fuck up)",stay,29,"Nothin', he in the way",way,END,PERFECT,cmu,HIGH,Y
+Plenty,28,"Shut up, we don't stay (Shut the fuck up)",stay,30,"Get hit up, can't even get up, he hit in the face",face,END,ASSONANCE,vowel,MED,Y
+Plenty,28,"Shut up, we don't stay (Shut the fuck up)",stay,31,"And niggas that's livin', we can't even trace",trace,END,ASSONANCE,vowel,MED,Y
+Plenty,29,"Nothin', he in the way",way,30,"Get hit up, can't even get up, he hit in the face",face,END,ASSONANCE,vowel,MED,Y
+Plenty,29,"Nothin', he in the way",way,31,"And niggas that's livin', we can't even trace",trace,END,ASSONANCE,vowel,MED,Y
+Plenty,30,"Get hit up, can't even get up, he hit in the face",Get,30,"Get hit up, can't even get up, he hit in the face",get,INNER,REPEAT,spelling,HIGH,N
+Plenty,30,"Get hit up, can't even get up, he hit in the face",hit,30,"Get hit up, can't even get up, he hit in the face",hit,INNER,REPEAT,spelling,HIGH,N
+Plenty,30,"Get hit up, can't even get up, he hit in the face",face,31,"And niggas that's livin', we can't even trace",trace,END,PERFECT,cmu,HIGH,Y
+Plenty,30,"Get hit up, can't even get up, he hit in the face",can't,31,"And niggas that's livin', we can't even trace",can't,INNER,REPEAT,spelling,HIGH,N
+Plenty,30,"Get hit up, can't even get up, he hit in the face",even,31,"And niggas that's livin', we can't even trace",even,INNER,REPEAT,spelling,HIGH,N
+Plenty,30,"Get hit up, can't even get up, he hit in the face",hit,31,"And niggas that's livin', we can't even trace",livin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,30,"Get hit up, can't even get up, he hit in the face",even,32,"They skipped the state, for real (They did)",real,INNER,ASSONANCE,vowel,MED,Y
+Plenty,30,"Get hit up, can't even get up, he hit in the face",face,32,"They skipped the state, for real (They did)",state,INNER,SLANT,cmu,MED,Y
+Plenty,30,"Get hit up, can't even get up, he hit in the face",hit,32,"They skipped the state, for real (They did)",skipped,INNER,SLANT,cmu,MED,Y
+Plenty,30,"Get hit up, can't even get up, he hit in the face",face,34,"Fuck the jakes, we gon' go on a chase",chase,END,PERFECT,cmu,HIGH,Y
+Plenty,31,"And niggas that's livin', we can't even trace",even,32,"They skipped the state, for real (They did)",real,INNER,ASSONANCE,vowel,MED,Y
+Plenty,31,"And niggas that's livin', we can't even trace",livin,32,"They skipped the state, for real (They did)",skipped,INNER,ASSONANCE,vowel,MED,Y
+Plenty,31,"And niggas that's livin', we can't even trace",trace,32,"They skipped the state, for real (They did)",state,INNER,SLANT,cmu,MED,Y
+Plenty,31,"And niggas that's livin', we can't even trace",can't,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",Trackhawk,INNER,ASSONANCE,vowel,LOW,N
+Plenty,31,"And niggas that's livin', we can't even trace",even,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",real,INNER,ASSONANCE,vowel,MED,Y
+Plenty,31,"And niggas that's livin', we can't even trace",livin,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",willin,INNER,SLANT,cmu,MED,Y
+Plenty,31,"And niggas that's livin', we can't even trace",trace,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",race,INNER,PERFECT,cmu,HIGH,Y
+Plenty,31,"And niggas that's livin', we can't even trace",trace,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",Range,INNER,ASSONANCE,vowel,MED,Y
+Plenty,31,"And niggas that's livin', we can't even trace",trace,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",straight,INNER,SLANT,cmu,MED,Y
+Plenty,31,"And niggas that's livin', we can't even trace",trace,34,"Fuck the jakes, we gon' go on a chase",chase,END,PERFECT,cmu,HIGH,Y
+Plenty,31,"And niggas that's livin', we can't even trace",trace,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,END,SLANT,cmu,MED,Y
+Plenty,32,"They skipped the state, for real (They did)",real,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",real,END,REPEAT,spelling,HIGH,N
+Plenty,32,"They skipped the state, for real (They did)",skipped,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",willin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,32,"They skipped the state, for real (They did)",state,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",race,INNER,SLANT,cmu,MED,Y
+Plenty,32,"They skipped the state, for real (They did)",state,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",Range,INNER,ASSONANCE,vowel,MED,Y
+Plenty,32,"They skipped the state, for real (They did)",state,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",straight,INNER,PERFECT,cmu,HIGH,Y
+Plenty,32,"They skipped the state, for real (They did)",state,34,"Fuck the jakes, we gon' go on a chase",chase,INNER,SLANT,cmu,MED,Y
+Plenty,32,"They skipped the state, for real (They did)",state,34,"Fuck the jakes, we gon' go on a chase",jakes,INNER,ASSONANCE,vowel,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",Range,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",race,INNER,ASSONANCE,vowel,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",Range,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",straight,INNER,ASSONANCE,vowel,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",straight,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",race,INNER,SLANT,cmu,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",race,34,"Fuck the jakes, we gon' go on a chase",chase,INNER,PERFECT,cmu,HIGH,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",race,34,"Fuck the jakes, we gon' go on a chase",jakes,INNER,SLANT,cmu,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",Range,34,"Fuck the jakes, we gon' go on a chase",chase,INNER,ASSONANCE,vowel,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",Range,34,"Fuck the jakes, we gon' go on a chase",jakes,INNER,ASSONANCE,vowel,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",straight,34,"Fuck the jakes, we gon' go on a chase",chase,INNER,SLANT,cmu,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",straight,34,"Fuck the jakes, we gon' go on a chase",jakes,INNER,ASSONANCE,vowel,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",race,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",race,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,INNER,SLANT,cmu,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",Range,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,INNER,SLANT,cmu,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",Range,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,INNER,ASSONANCE,vowel,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",real,35,Keep the foot on gas like it ain't no brakes (Skrrt),Keep,INNER,SLANT,cmu,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",straight,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,INNER,SLANT,cmu,MED,Y
+Plenty,33,"Range SVR, Trackhawk straight and we willin' to race (Willin' to race), for real",straight,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,INNER,ASSONANCE,vowel,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",jakes,34,"Fuck the jakes, we gon' go on a chase",chase,INNER,SLANT,cmu,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",chase,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,END,SLANT,cmu,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",chase,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",go,35,Keep the foot on gas like it ain't no brakes (Skrrt),no,INNER,PERFECT,cmu,HIGH,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",jakes,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",jakes,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,INNER,PERFECT,cmu,HIGH,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",chase,36,"We ain't giving no pass, give the chance to take it",take,END,SLANT,cmu,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",chase,36,"We ain't giving no pass, give the chance to take it",ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",go,36,"We ain't giving no pass, give the chance to take it",no,INNER,PERFECT,cmu,HIGH,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",jakes,36,"We ain't giving no pass, give the chance to take it",ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",jakes,36,"We ain't giving no pass, give the chance to take it",take,INNER,SLANT,cmu,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",chase,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",make,END,SLANT,cmu,MED,Y
+Plenty,34,"Fuck the jakes, we gon' go on a chase",chase,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hate,END,SLANT,cmu,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,INNER,ASSONANCE,vowel,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,36,"We ain't giving no pass, give the chance to take it",take,END,SLANT,cmu,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,36,"We ain't giving no pass, give the chance to take it",ain't,INNER,REPEAT,spelling,HIGH,N
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,36,"We ain't giving no pass, give the chance to take it",take,INNER,ASSONANCE,vowel,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,36,"We ain't giving no pass, give the chance to take it",ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),gas,36,"We ain't giving no pass, give the chance to take it",chance,INNER,SLANT,cmu,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),gas,36,"We ain't giving no pass, give the chance to take it",pass,INNER,PERFECT,cmu,HIGH,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),no,36,"We ain't giving no pass, give the chance to take it",no,INNER,REPEAT,spelling,HIGH,N
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",make,END,SLANT,cmu,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",ain't,INNER,REPEAT,spelling,HIGH,N
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",make,INNER,ASSONANCE,vowel,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),ain't,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",take,INNER,ASSONANCE,vowel,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",take,INNER,SLANT,cmu,MED,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),no,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",bro,INNER,PERFECT,cmu,HIGH,Y
+Plenty,35,Keep the foot on gas like it ain't no brakes (Skrrt),brakes,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hate,END,ASSONANCE,vowel,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",ain't,36,"We ain't giving no pass, give the chance to take it",take,INNER,ASSONANCE,vowel,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",giving,36,"We ain't giving no pass, give the chance to take it",give,INNER,SLANT,cmu,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",pass,36,"We ain't giving no pass, give the chance to take it",chance,INNER,SLANT,cmu,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",take,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",make,END,PERFECT,cmu,HIGH,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",ain't,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",ain't,INNER,REPEAT,spelling,HIGH,N
+Plenty,36,"We ain't giving no pass, give the chance to take it",ain't,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",make,INNER,ASSONANCE,vowel,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",ain't,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",take,INNER,ASSONANCE,vowel,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",no,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",bro,INNER,PERFECT,cmu,HIGH,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",take,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",take,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",take,INNER,REPEAT,spelling,HIGH,N
+Plenty,36,"We ain't giving no pass, give the chance to take it",take,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hate,END,SLANT,cmu,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",ain't,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hate,INNER,SLANT,cmu,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",ain't,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hatin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,36,"We ain't giving no pass, give the chance to take it",pass,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",gangbang,INNER,ASSONANCE,vowel,LOW,N
+Plenty,36,"We ain't giving no pass, give the chance to take it",take,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hatin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",ain't,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",make,INNER,ASSONANCE,vowel,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",gon,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",gon,INNER,REPEAT,spelling,HIGH,N
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",take,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",take,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",make,INNER,PERFECT,cmu,HIGH,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",make,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hate,END,SLANT,cmu,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",ain't,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hate,INNER,SLANT,cmu,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",ain't,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hatin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",gon,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",gon,INNER,REPEAT,spelling,HIGH,N
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",heard,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",Heard,INNER,REPEAT,spelling,HIGH,N
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",make,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hatin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",take,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hate,INNER,SLANT,cmu,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",take,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hatin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",bro,39,"Blrrd, ayy, ayy, I don't fuck with niggas",don't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,37,"We just gon' take it, shoutout your bro, heard he ain't gon' make it",gon,39,"Blrrd, ayy, ayy, I don't fuck with niggas",don't,INNER,SLANT,spelling,LOW,Y
+Plenty,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hatin,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",hate,INNER,SLANT,cmu,MED,Y
+Plenty,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",gon,39,"Blrrd, ayy, ayy, I don't fuck with niggas",don't,INNER,SLANT,spelling,LOW,Y
+Plenty,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",niggas,39,"Blrrd, ayy, ayy, I don't fuck with niggas",niggas,INNER,REPEAT,spelling,HIGH,N
+Plenty,38,"Heard niggas hatin' how I gangbang, well, they just gon' hate it",well,40,"Plenty Glocks up in this bitch, pop out with plenty killers",Plenty,INNER,ASSONANCE,vowel,MED,Y
+Plenty,39,"Blrrd, ayy, ayy, I don't fuck with niggas",don't,40,"Plenty Glocks up in this bitch, pop out with plenty killers",Glocks,INNER,ASSONANCE,vowel,LOW,N
+Plenty,39,"Blrrd, ayy, ayy, I don't fuck with niggas",niggas,42,"Got KD with me, my lil' nigga known to finish niggas",niggas,END,REPEAT,spelling,HIGH,N
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",bitch,40,"Plenty Glocks up in this bitch, pop out with plenty killers",killers,INNER,ASSONANCE,vowel,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",killers,41,"I swear we never stop the spinnin', got relentless killers",killers,END,REPEAT,spelling,HIGH,N
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",bitch,41,"I swear we never stop the spinnin', got relentless killers",killers,INNER,ASSONANCE,vowel,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",bitch,41,"I swear we never stop the spinnin', got relentless killers",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",killers,41,"I swear we never stop the spinnin', got relentless killers",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",Plenty,41,"I swear we never stop the spinnin', got relentless killers",never,INNER,ASSONANCE,vowel,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",Plenty,41,"I swear we never stop the spinnin', got relentless killers",relentless,INNER,ASSONANCE,vowel,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",Plenty,41,"I swear we never stop the spinnin', got relentless killers",swear,INNER,ASSONANCE,vowel,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",pop,41,"I swear we never stop the spinnin', got relentless killers",got,INNER,SLANT,cmu,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",pop,41,"I swear we never stop the spinnin', got relentless killers",stop,INNER,PERFECT,cmu,HIGH,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",bitch,42,"Got KD with me, my lil' nigga known to finish niggas",finish,INNER,ASSONANCE,vowel,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",bitch,42,"Got KD with me, my lil' nigga known to finish niggas",lil,INNER,SLANT,cmu,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",Glocks,42,"Got KD with me, my lil' nigga known to finish niggas",known,INNER,ASSONANCE,vowel,LOW,N
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",killers,42,"Got KD with me, my lil' nigga known to finish niggas",finish,INNER,ASSONANCE,vowel,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",killers,42,"Got KD with me, my lil' nigga known to finish niggas",lil,INNER,SLANT,cmu,MED,Y
+Plenty,40,"Plenty Glocks up in this bitch, pop out with plenty killers",pop,42,"Got KD with me, my lil' nigga known to finish niggas",Got,INNER,SLANT,cmu,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",never,41,"I swear we never stop the spinnin', got relentless killers",relentless,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",spinnin,41,"I swear we never stop the spinnin', got relentless killers",killers,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",stop,41,"I swear we never stop the spinnin', got relentless killers",got,INNER,SLANT,cmu,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",swear,41,"I swear we never stop the spinnin', got relentless killers",never,INNER,SLANT,cmu,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",swear,41,"I swear we never stop the spinnin', got relentless killers",relentless,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",got,42,"Got KD with me, my lil' nigga known to finish niggas",Got,INNER,REPEAT,spelling,HIGH,N
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",killers,42,"Got KD with me, my lil' nigga known to finish niggas",finish,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",killers,42,"Got KD with me, my lil' nigga known to finish niggas",lil,INNER,SLANT,cmu,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",spinnin,42,"Got KD with me, my lil' nigga known to finish niggas",finish,INNER,SLANT,cmu,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",spinnin,42,"Got KD with me, my lil' nigga known to finish niggas",lil,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",stop,42,"Got KD with me, my lil' nigga known to finish niggas",Got,INNER,SLANT,cmu,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",got,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",AR,INNER,SLANT,cmu,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",got,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",got,INNER,REPEAT,spelling,HIGH,N
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",killers,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",killers,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",pistols,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",never,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",plenty,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",relentless,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",plenty,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",spinnin,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",spinnin,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",pistols,INNER,ASSONANCE,vowel,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",stop,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",AR,INNER,SLANT,cmu,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",stop,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",got,INNER,SLANT,cmu,MED,Y
+Plenty,41,"I swear we never stop the spinnin', got relentless killers",swear,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",plenty,INNER,ASSONANCE,vowel,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",lil,42,"Got KD with me, my lil' nigga known to finish niggas",finish,INNER,ASSONANCE,vowel,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",nigga,42,"Got KD with me, my lil' nigga known to finish niggas",niggas,INNER,SLANT,spelling,LOW,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",finish,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",finish,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",pistols,INNER,ASSONANCE,vowel,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",Got,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",AR,INNER,SLANT,cmu,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",Got,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",got,INNER,REPEAT,spelling,HIGH,N
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",known,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",scope,INNER,SLANT,cmu,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",lil,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",Bitch,INNER,SLANT,cmu,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",lil,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",pistols,INNER,ASSONANCE,vowel,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",finish,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",bitch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",finish,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",dick,INNER,ASSONANCE,vowel,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",finish,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",Lil,INNER,ASSONANCE,vowel,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",Got,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",got,INNER,REPEAT,spelling,HIGH,N
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",known,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",boat,INNER,SLANT,cmu,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",known,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",no,INNER,ASSONANCE,vowel,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",lil,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",bitch,INNER,SLANT,cmu,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",lil,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",dick,INNER,SLANT,cmu,MED,Y
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",lil,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",Lil,INNER,REPEAT,spelling,HIGH,N
+Plenty,42,"Got KD with me, my lil' nigga known to finish niggas",nigga,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",dick,INNER,SLANT,spelling,LOW,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",Bitch,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",pistols,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",got,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",AR,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",scope,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",boat,END,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",AR,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",got,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",Bitch,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",bitch,INNER,REPEAT,spelling,HIGH,N
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",Bitch,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",dick,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",Bitch,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",Lil,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",came,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",ain't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",got,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",got,INNER,REPEAT,spelling,HIGH,N
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",pistols,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",bitch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",pistols,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",dick,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",pistols,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",Lil,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",scope,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",no,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",sniper,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",drive,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",sniper,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",license,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",sniper,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",while,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",AR,45,"We spin they block, four people shot, now look, don't play with me no more",block,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",AR,45,"We spin they block, four people shot, now look, don't play with me no more",shot,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",Bitch,45,"We spin they block, four people shot, now look, don't play with me no more",spin,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",came,45,"We spin they block, four people shot, now look, don't play with me no more",play,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",got,45,"We spin they block, four people shot, now look, don't play with me no more",block,INNER,SLANT,cmu,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",got,45,"We spin they block, four people shot, now look, don't play with me no more",shot,INNER,PERFECT,cmu,HIGH,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",pistols,45,"We spin they block, four people shot, now look, don't play with me no more",spin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",scope,45,"We spin they block, four people shot, now look, don't play with me no more",don't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,43,"Bitch, I got plenty pistols, my AR came with a sniper scope",scope,45,"We spin they block, four people shot, now look, don't play with me no more",no,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",bitch,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",dick,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",freaky,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",eat,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",license,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",drive,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",license,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",while,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",Lil,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",bitch,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",Lil,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",dick,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",no,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",boat,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",while,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",drive,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",ain't,45,"We spin they block, four people shot, now look, don't play with me no more",play,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",bitch,45,"We spin they block, four people shot, now look, don't play with me no more",spin,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",boat,45,"We spin they block, four people shot, now look, don't play with me no more",don't,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",boat,45,"We spin they block, four people shot, now look, don't play with me no more",no,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",dick,45,"We spin they block, four people shot, now look, don't play with me no more",spin,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",eat,45,"We spin they block, four people shot, now look, don't play with me no more",people,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",freaky,45,"We spin they block, four people shot, now look, don't play with me no more",people,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",got,45,"We spin they block, four people shot, now look, don't play with me no more",block,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",got,45,"We spin they block, four people shot, now look, don't play with me no more",shot,INNER,PERFECT,cmu,HIGH,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",Lil,45,"We spin they block, four people shot, now look, don't play with me no more",spin,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",no,45,"We spin they block, four people shot, now look, don't play with me no more",don't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",no,45,"We spin they block, four people shot, now look, don't play with me no more",no,INNER,REPEAT,spelling,HIGH,N
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",ain't,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",Draco,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",boat,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",O,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",eat,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",G,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",eat,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",T,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",freaky,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",G,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",freaky,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",T,INNER,ASSONANCE,vowel,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",got,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",Glock,INNER,SLANT,cmu,MED,Y
+Plenty,44,"Lil' freaky bitch ain't got no license, eat dick while she drive the boat",no,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",O,INNER,PERFECT,cmu,HIGH,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",block,45,"We spin they block, four people shot, now look, don't play with me no more",shot,INNER,SLANT,cmu,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",don't,45,"We spin they block, four people shot, now look, don't play with me no more",no,INNER,ASSONANCE,vowel,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",four,45,"We spin they block, four people shot, now look, don't play with me no more",more,INNER,PERFECT,cmu,HIGH,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",block,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",Glock,INNER,PERFECT,cmu,HIGH,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",don't,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",O,INNER,ASSONANCE,vowel,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",four,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",doggy,INNER,SLANT,cmu,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",more,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",doggy,INNER,SLANT,cmu,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",no,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",O,INNER,PERFECT,cmu,HIGH,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",people,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",G,INNER,ASSONANCE,vowel,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",people,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",T,INNER,ASSONANCE,vowel,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",play,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",Draco,INNER,ASSONANCE,vowel,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",shot,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",Glock,INNER,SLANT,cmu,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",people,47,"Big blrrd, I get shit out of here",here,INNER,ASSONANCE,vowel,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",spin,47,"Big blrrd, I get shit out of here",Big,INNER,SLANT,cmu,MED,Y
+Plenty,45,"We spin they block, four people shot, now look, don't play with me no more",spin,47,"Big blrrd, I get shit out of here",shit,INNER,SLANT,cmu,MED,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",G,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",T,INNER,PERFECT,cmu,HIGH,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",T,47,"Big blrrd, I get shit out of here",here,END,ASSONANCE,vowel,MED,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",G,47,"Big blrrd, I get shit out of here",here,INNER,ASSONANCE,vowel,MED,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",T,48,"Reach for my chain while at the show, get your shit splat in here",here,END,ASSONANCE,vowel,MED,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",Draco,48,"Reach for my chain while at the show, get your shit splat in here",chain,INNER,SLANT,cmu,MED,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",G,48,"Reach for my chain while at the show, get your shit splat in here",here,INNER,ASSONANCE,vowel,MED,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",G,48,"Reach for my chain while at the show, get your shit splat in here",Reach,INNER,ASSONANCE,vowel,MED,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",O,48,"Reach for my chain while at the show, get your shit splat in here",show,INNER,PERFECT,cmu,HIGH,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",T,48,"Reach for my chain while at the show, get your shit splat in here",Reach,INNER,ASSONANCE,vowel,MED,Y
+Plenty,46,"Ayy, I'm a doggy with this Glock, but with this Draco, I'm the G.O.A.T",T,49,"I'ma leave this bitch just how I came, I leave you flat in here",here,END,ASSONANCE,vowel,MED,Y
+Plenty,47,"Big blrrd, I get shit out of here",Big,47,"Big blrrd, I get shit out of here",shit,INNER,SLANT,cmu,MED,Y
+Plenty,47,"Big blrrd, I get shit out of here",here,48,"Reach for my chain while at the show, get your shit splat in here",here,END,REPEAT,spelling,HIGH,N
+Plenty,47,"Big blrrd, I get shit out of here",Big,48,"Reach for my chain while at the show, get your shit splat in here",shit,INNER,SLANT,cmu,MED,Y
+Plenty,47,"Big blrrd, I get shit out of here",get,48,"Reach for my chain while at the show, get your shit splat in here",get,INNER,REPEAT,spelling,HIGH,N
+Plenty,47,"Big blrrd, I get shit out of here",here,48,"Reach for my chain while at the show, get your shit splat in here",Reach,INNER,SLANT,cmu,MED,Y
+Plenty,47,"Big blrrd, I get shit out of here",shit,48,"Reach for my chain while at the show, get your shit splat in here",shit,INNER,REPEAT,spelling,HIGH,N
+Plenty,47,"Big blrrd, I get shit out of here",here,49,"I'ma leave this bitch just how I came, I leave you flat in here",here,END,REPEAT,spelling,HIGH,N
+Plenty,47,"Big blrrd, I get shit out of here",Big,49,"I'ma leave this bitch just how I came, I leave you flat in here",bitch,INNER,SLANT,cmu,MED,Y
+Plenty,47,"Big blrrd, I get shit out of here",Big,49,"I'ma leave this bitch just how I came, I leave you flat in here",I'ma,INNER,SLANT,spelling,LOW,Y
+Plenty,47,"Big blrrd, I get shit out of here",here,49,"I'ma leave this bitch just how I came, I leave you flat in here",leave,INNER,SLANT,cmu,MED,Y
+Plenty,47,"Big blrrd, I get shit out of here",shit,49,"I'ma leave this bitch just how I came, I leave you flat in here",bitch,INNER,SLANT,cmu,MED,Y
+Plenty,47,"Big blrrd, I get shit out of here",shit,49,"I'ma leave this bitch just how I came, I leave you flat in here",I'ma,INNER,SLANT,spelling,LOW,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",Reach,48,"Reach for my chain while at the show, get your shit splat in here",here,INNER,SLANT,cmu,MED,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",here,49,"I'ma leave this bitch just how I came, I leave you flat in here",here,END,REPEAT,spelling,HIGH,N
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",chain,49,"I'ma leave this bitch just how I came, I leave you flat in here",came,INNER,SLANT,cmu,MED,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",here,49,"I'ma leave this bitch just how I came, I leave you flat in here",leave,INNER,SLANT,cmu,MED,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",Reach,49,"I'ma leave this bitch just how I came, I leave you flat in here",here,INNER,SLANT,cmu,MED,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",Reach,49,"I'ma leave this bitch just how I came, I leave you flat in here",leave,INNER,SLANT,cmu,MED,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",shit,49,"I'ma leave this bitch just how I came, I leave you flat in here",bitch,INNER,SLANT,cmu,MED,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",shit,49,"I'ma leave this bitch just how I came, I leave you flat in here",I'ma,INNER,SLANT,spelling,LOW,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",splat,49,"I'ma leave this bitch just how I came, I leave you flat in here",flat,INNER,PERFECT,cmu,HIGH,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",shit,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",gear,INNER,SLANT,cmu,MED,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",show,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",Don't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",show,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",show,INNER,REPEAT,spelling,HIGH,N
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",show,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",throw,INNER,PERFECT,cmu,HIGH,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",splat,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",'Cat,INNER,PERFECT,cmu,HIGH,Y
+Plenty,48,"Reach for my chain while at the show, get your shit splat in here",while,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",drive,INNER,SLANT,cmu,MED,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",I'ma,49,"I'ma leave this bitch just how I came, I leave you flat in here",bitch,INNER,SLANT,spelling,LOW,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",leave,49,"I'ma leave this bitch just how I came, I leave you flat in here",here,INNER,SLANT,cmu,MED,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",leave,49,"I'ma leave this bitch just how I came, I leave you flat in here",leave,INNER,REPEAT,spelling,HIGH,N
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",bitch,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",gear,INNER,SLANT,cmu,MED,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",flat,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",'Cat,INNER,PERFECT,cmu,HIGH,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",I'ma,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",gear,INNER,SLANT,spelling,LOW,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",bitch,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",clips,INNER,ASSONANCE,vowel,MED,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",bitch,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",six,INNER,ASSONANCE,vowel,MED,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",here,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",thirty,INNER,ASSONANCE,vowel,MED,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",leave,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",thirty,INNER,ASSONANCE,vowel,MED,Y
+Plenty,49,"I'ma leave this bitch just how I came, I leave you flat in here",here,53,Foreign cars at the Clearport beach (Yeah),beach,END,SLANT,cmu,MED,Y
+Plenty,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",Don't,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",show,INNER,ASSONANCE,vowel,MED,Y
+Plenty,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",Don't,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",throw,INNER,ASSONANCE,vowel,MED,Y
+Plenty,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",show,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",throw,INNER,PERFECT,cmu,HIGH,Y
+Plenty,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",gear,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",six,END,ASSONANCE,vowel,MED,Y
+Plenty,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",Don't,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",no,INNER,ASSONANCE,vowel,MED,Y
+Plenty,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",gear,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",clips,INNER,ASSONANCE,vowel,MED,Y
+Plenty,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",show,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",no,INNER,PERFECT,cmu,HIGH,Y
+Plenty,50,"Don't drive Suburbans to my show, ayy, throw that 'Cat in gear (Blrrd)",throw,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",no,INNER,PERFECT,cmu,HIGH,Y
+Plenty,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",clips,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",six,INNER,SLANT,cmu,MED,Y
+Plenty,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",guns,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",ones,INNER,PERFECT,cmu,HIGH,Y
+Plenty,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",Plenty,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",plenty,INNER,REPEAT,spelling,HIGH,N
+Plenty,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",forty,53,Foreign cars at the Clearport beach (Yeah),Foreign,INNER,SLANT,cmu,MED,Y
+Plenty,51,"Plenty guns, plenty clips (Plenty), forty-ones, no thirty-six (Uh-uh)",thirty,53,Foreign cars at the Clearport beach (Yeah),beach,INNER,ASSONANCE,vowel,MED,Y
+Plenty,52,"Face mob, GTA (Face mob)",mob,53,Foreign cars at the Clearport beach (Yeah),cars,INNER,ASSONANCE,vowel,MED,Y
+Plenty,54,Really I'm laughin' (Laughin'),laughin,55,"'Cause niggas be lackin', laggin' (Lack)",laggin,END,SLANT,cmu,MED,Y
+Plenty,54,Really I'm laughin' (Laughin'),laughin,55,"'Cause niggas be lackin', laggin' (Lack)",lackin,INNER,SLANT,cmu,MED,Y
+Plenty,54,Really I'm laughin' (Laughin'),laughin,56,"Far behind, I passed it",passed,END,ASSONANCE,vowel,MED,Y
+Plenty,54,Really I'm laughin' (Laughin'),laughin,57,"My shorties be demons, lookin' for action",action,END,ASSONANCE,vowel,MED,Y
+Plenty,54,Really I'm laughin' (Laughin'),laughin,58,"Ask 'em, but say the wrong thing, they blastin'",blastin,END,ASSONANCE,vowel,MED,Y
+Plenty,55,"'Cause niggas be lackin', laggin' (Lack)",lackin,55,"'Cause niggas be lackin', laggin' (Lack)",laggin,INNER,SLANT,cmu,MED,Y
+Plenty,55,"'Cause niggas be lackin', laggin' (Lack)",laggin,56,"Far behind, I passed it",passed,END,ASSONANCE,vowel,MED,Y
+Plenty,55,"'Cause niggas be lackin', laggin' (Lack)",lackin,56,"Far behind, I passed it",passed,INNER,ASSONANCE,vowel,MED,Y
+Plenty,55,"'Cause niggas be lackin', laggin' (Lack)",laggin,57,"My shorties be demons, lookin' for action",action,END,SLANT,cmu,MED,Y
+Plenty,55,"'Cause niggas be lackin', laggin' (Lack)",lackin,57,"My shorties be demons, lookin' for action",action,INNER,SLANT,cmu,MED,Y
+Plenty,55,"'Cause niggas be lackin', laggin' (Lack)",lackin,57,"My shorties be demons, lookin' for action",lookin,INNER,SLANT,spelling,LOW,Y
+Plenty,55,"'Cause niggas be lackin', laggin' (Lack)",laggin,58,"Ask 'em, but say the wrong thing, they blastin'",blastin,END,ASSONANCE,vowel,MED,Y
+Plenty,56,"Far behind, I passed it",passed,57,"My shorties be demons, lookin' for action",action,END,ASSONANCE,vowel,MED,Y
+Plenty,56,"Far behind, I passed it",passed,58,"Ask 'em, but say the wrong thing, they blastin'",blastin,END,SLANT,cmu,MED,Y
+Plenty,56,"Far behind, I passed it",passed,58,"Ask 'em, but say the wrong thing, they blastin'",Ask,INNER,SLANT,cmu,MED,Y
+Plenty,57,"My shorties be demons, lookin' for action",action,58,"Ask 'em, but say the wrong thing, they blastin'",blastin,END,ASSONANCE,vowel,MED,Y
+Plenty,57,"My shorties be demons, lookin' for action",action,58,"Ask 'em, but say the wrong thing, they blastin'",Ask,INNER,ASSONANCE,vowel,MED,Y
+Plenty,57,"My shorties be demons, lookin' for action",action,59,"Take off like NASA, we got a problem, Houston",NASA,INNER,ASSONANCE,vowel,MED,Y
+Plenty,58,"Ask 'em, but say the wrong thing, they blastin'",Ask,58,"Ask 'em, but say the wrong thing, they blastin'",blastin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,58,"Ask 'em, but say the wrong thing, they blastin'",Ask,59,"Take off like NASA, we got a problem, Houston",NASA,INNER,SLANT,cmu,MED,Y
+Plenty,58,"Ask 'em, but say the wrong thing, they blastin'",blastin,59,"Take off like NASA, we got a problem, Houston",NASA,INNER,ASSONANCE,vowel,MED,Y
+Plenty,58,"Ask 'em, but say the wrong thing, they blastin'",say,59,"Take off like NASA, we got a problem, Houston",Take,INNER,ASSONANCE,vowel,MED,Y
+Plenty,58,"Ask 'em, but say the wrong thing, they blastin'",thing,60,"My youngin with me, got a quick draw like Curry",quick,INNER,SLANT,cmu,MED,Y
+Plenty,58,"Ask 'em, but say the wrong thing, they blastin'",wrong,60,"My youngin with me, got a quick draw like Curry",draw,INNER,ASSONANCE,vowel,MED,Y
+Plenty,59,"Take off like NASA, we got a problem, Houston",got,59,"Take off like NASA, we got a problem, Houston",problem,INNER,ASSONANCE,vowel,MED,Y
+Plenty,59,"Take off like NASA, we got a problem, Houston",got,60,"My youngin with me, got a quick draw like Curry",got,INNER,REPEAT,spelling,HIGH,N
+Plenty,59,"Take off like NASA, we got a problem, Houston",like,60,"My youngin with me, got a quick draw like Curry",like,INNER,REPEAT,spelling,HIGH,N
+Plenty,59,"Take off like NASA, we got a problem, Houston",problem,60,"My youngin with me, got a quick draw like Curry",got,INNER,ASSONANCE,vowel,MED,Y
+Plenty,59,"Take off like NASA, we got a problem, Houston",Houston,61,I know he get tired of shootin' (Creep down),shootin,END,ASSONANCE,vowel,MED,Y
+Plenty,59,"Take off like NASA, we got a problem, Houston",like,61,I know he get tired of shootin' (Creep down),tired,INNER,SLANT,cmu,MED,Y
+Plenty,59,"Take off like NASA, we got a problem, Houston",Houston,62,"All that actin', you a created player when you inside the booth (All that actin')",booth,END,ASSONANCE,vowel,MED,Y
+Plenty,59,"Take off like NASA, we got a problem, Houston",Houston,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",through,END,ASSONANCE,vowel,MED,Y
+Plenty,60,"My youngin with me, got a quick draw like Curry",like,61,I know he get tired of shootin' (Creep down),tired,INNER,SLANT,cmu,MED,Y
+Plenty,60,"My youngin with me, got a quick draw like Curry",draw,62,"All that actin', you a created player when you inside the booth (All that actin')",All,INNER,ASSONANCE,vowel,MED,Y
+Plenty,60,"My youngin with me, got a quick draw like Curry",like,62,"All that actin', you a created player when you inside the booth (All that actin')",inside,INNER,SLANT,cmu,MED,Y
+Plenty,61,I know he get tired of shootin' (Creep down),shootin,62,"All that actin', you a created player when you inside the booth (All that actin')",booth,END,ASSONANCE,vowel,MED,Y
+Plenty,61,I know he get tired of shootin' (Creep down),get,62,"All that actin', you a created player when you inside the booth (All that actin')",when,INNER,SLANT,cmu,MED,Y
+Plenty,61,I know he get tired of shootin' (Creep down),tired,62,"All that actin', you a created player when you inside the booth (All that actin')",inside,INNER,SLANT,cmu,MED,Y
+Plenty,61,I know he get tired of shootin' (Creep down),shootin,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",through,END,ASSONANCE,vowel,MED,Y
+Plenty,61,I know he get tired of shootin' (Creep down),tired,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",like,INNER,SLANT,cmu,MED,Y
+Plenty,61,I know he get tired of shootin' (Creep down),tired,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",slidin,INNER,SLANT,cmu,MED,Y
+Plenty,61,I know he get tired of shootin' (Creep down),shootin,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",juice,END,ASSONANCE,vowel,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",created,62,"All that actin', you a created player when you inside the booth (All that actin')",player,INNER,ASSONANCE,vowel,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",booth,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",through,END,ASSONANCE,vowel,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",actin,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",bat,INNER,ASSONANCE,vowel,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",All,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",baseball,INNER,PERFECT,cmu,HIGH,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",inside,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",like,INNER,SLANT,cmu,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",inside,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",slidin,INNER,SLANT,cmu,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",created,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",same,INNER,ASSONANCE,vowel,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",inside,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",player,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",same,INNER,ASSONANCE,vowel,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",when,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",neck,INNER,SLANT,cmu,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",booth,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",juice,END,SLANT,cmu,MED,Y
+Plenty,62,"All that actin', you a created player when you inside the booth (All that actin')",booth,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",roof,END,SLANT,cmu,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",Drac,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",bat,INNER,SLANT,spelling,LOW,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",like,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",slidin,INNER,ASSONANCE,vowel,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",Wood,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",look,INNER,SLANT,cmu,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",like,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",look,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",full,INNER,SLANT,cmu,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",slidin,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",Wood,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",full,INNER,SLANT,cmu,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",through,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",juice,END,ASSONANCE,vowel,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",bat,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",racks,INNER,ASSONANCE,vowel,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",Drac,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",racks,INNER,SLANT,spelling,LOW,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",like,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",find,INNER,ASSONANCE,vowel,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",slidin,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",find,INNER,ASSONANCE,vowel,MED,Y
+Plenty,63,"Wood on the Drac', it look like a baseball bat, my niggas slidin' through (Wood grain)",through,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",roof,END,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",bitch,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",wrist,INNER,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",lit,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",bitch,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",lit,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",thing,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",lit,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",wrist,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",thing,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",bitch,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",thing,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",wrist,INNER,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",bitch,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",Millions,INNER,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",bitch,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",sip,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",bitch,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",thing,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",diamonds,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",find,INNER,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",lit,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",Millions,INNER,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",lit,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",sip,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",lit,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",thing,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",neck,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",when,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",same,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",same,INNER,REPEAT,spelling,HIGH,N
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",thing,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",Millions,INNER,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",thing,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",sip,INNER,SLANT,cmu,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",thing,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",thing,INNER,REPEAT,spelling,HIGH,N
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",wrist,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",Millions,INNER,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",wrist,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",sip,INNER,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",wrist,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",thing,INNER,ASSONANCE,vowel,MED,Y
+Plenty,64,"My neck lit, did the same thing for bitch, wrist full of diamonds too (Nigga)",diamonds,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",find,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",Millions,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",sip,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",Millions,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",thing,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",thing,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",sip,INNER,SLANT,cmu,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",juice,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",roof,END,SLANT,cmu,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",find,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",find,INNER,REPEAT,spelling,HIGH,N
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",juice,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",blue,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",juice,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",two,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",racks,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",can't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",racks,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",MAC,INNER,SLANT,cmu,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",find,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",fine,INNER,SLANT,cmu,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",Millions,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",Millions,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",shit,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",racks,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",bad,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",racks,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",goddamn,INNER,ASSONANCE,vowel,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",sip,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",bitch,INNER,SLANT,cmu,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",sip,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",shit,INNER,SLANT,cmu,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",thing,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",bitch,INNER,SLANT,cmu,MED,Y
+Plenty,65,"Millions of racks, this the same thing when I sip, I'm tryna find the juice (Nigga)",thing,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",shit,INNER,SLANT,cmu,MED,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",blue,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",roof,INNER,ASSONANCE,vowel,MED,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",MAC,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",can't,INNER,ASSONANCE,vowel,MED,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",two,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",blue,INNER,PERFECT,cmu,HIGH,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",two,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",roof,INNER,ASSONANCE,vowel,MED,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",can't,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",bad,INNER,ASSONANCE,vowel,MED,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",can't,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",Count,INNER,SLANT,spelling,LOW,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",can't,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",goddamn,INNER,ASSONANCE,vowel,MED,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",find,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",fine,INNER,SLANT,cmu,MED,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",MAC,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",bad,INNER,SLANT,cmu,MED,Y
+Plenty,66,"M63, two-door, blue and this MAC, they can't find the roof (Boy)",MAC,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",goddamn,INNER,SLANT,cmu,MED,Y
+Plenty,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",bitch,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",shit,INNER,SLANT,cmu,MED,Y
+Plenty,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",goddamn,67,"Count my money, goddamn, you a bad bitch and she fine as shit (Yeah, yeah, yeah)",bad,INNER,SLANT,cmu,MED,Y

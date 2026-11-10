@@ -1,0 +1,311 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+I Don’t Know You,1,"Lil Purpp bless yo' trap (Fuh, fuh, fuh, fuh)",bless,2,"Huh, already know what I'm saying (Fuh, fuh, fuh, fuh, fuh, fuh, fuh)",already,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,1,"Lil Purpp bless yo' trap (Fuh, fuh, fuh, fuh)",Lil,3,"I don't know you, you know me, bitch (What?)",bitch,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,2,"Huh, already know what I'm saying (Fuh, fuh, fuh, fuh, fuh, fuh, fuh)",know,3,"I don't know you, you know me, bitch (What?)",don't,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,2,"Huh, already know what I'm saying (Fuh, fuh, fuh, fuh, fuh, fuh, fuh)",know,3,"I don't know you, you know me, bitch (What?)",know,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,2,"Huh, already know what I'm saying (Fuh, fuh, fuh, fuh, fuh, fuh, fuh)",what,4,"In the club with the heat, bitch (Bah, bah, bah)",club,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,3,"I don't know you, you know me, bitch (What?)",don't,3,"I don't know you, you know me, bitch (What?)",know,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,3,"I don't know you, you know me, bitch (What?)",know,3,"I don't know you, you know me, bitch (What?)",know,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,3,"I don't know you, you know me, bitch (What?)",bitch,4,"In the club with the heat, bitch (Bah, bah, bah)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,3,"I don't know you, you know me, bitch (What?)",bitch,5,"Niggas know I'm in the street, bitch",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,3,"I don't know you, you know me, bitch (What?)",don't,5,"Niggas know I'm in the street, bitch",know,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,3,"I don't know you, you know me, bitch (What?)",know,5,"Niggas know I'm in the street, bitch",know,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,3,"I don't know you, you know me, bitch (What?)",bitch,6,"Thirty niggas and we deep, bitch (Bitch)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,4,"In the club with the heat, bitch (Bah, bah, bah)",bitch,5,"Niggas know I'm in the street, bitch",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,4,"In the club with the heat, bitch (Bah, bah, bah)",heat,5,"Niggas know I'm in the street, bitch",street,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,4,"In the club with the heat, bitch (Bah, bah, bah)",bitch,6,"Thirty niggas and we deep, bitch (Bitch)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,4,"In the club with the heat, bitch (Bah, bah, bah)",heat,6,"Thirty niggas and we deep, bitch (Bitch)",deep,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,4,"In the club with the heat, bitch (Bah, bah, bah)",heat,6,"Thirty niggas and we deep, bitch (Bitch)",Thirty,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,5,"Niggas know I'm in the street, bitch",bitch,6,"Thirty niggas and we deep, bitch (Bitch)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,5,"Niggas know I'm in the street, bitch",Niggas,6,"Thirty niggas and we deep, bitch (Bitch)",niggas,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,5,"Niggas know I'm in the street, bitch",street,6,"Thirty niggas and we deep, bitch (Bitch)",deep,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,5,"Niggas know I'm in the street, bitch",street,6,"Thirty niggas and we deep, bitch (Bitch)",Thirty,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,6,"Thirty niggas and we deep, bitch (Bitch)",Thirty,6,"Thirty niggas and we deep, bitch (Bitch)",deep,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,6,"Thirty niggas and we deep, bitch (Bitch)",bitch,8,"I got twin Glocks, same daddy (Bah-bah)",twin,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,7,Snuck in the club with the ratchet (Bah),Snuck,7,Snuck in the club with the ratchet (Bah),club,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,7,Snuck in the club with the ratchet (Bah),ratchet,8,"I got twin Glocks, same daddy (Bah-bah)",daddy,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,7,Snuck in the club with the ratchet (Bah),ratchet,9,Let a pussy nigga have it (What?),have,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,7,Snuck in the club with the ratchet (Bah),ratchet,10,I'm Houdini with the magic,magic,END,SLANT,cmu,MED,Y
+I Don’t Know You,8,"I got twin Glocks, same daddy (Bah-bah)",daddy,9,Let a pussy nigga have it (What?),have,END,SLANT,cmu,MED,Y
+I Don’t Know You,8,"I got twin Glocks, same daddy (Bah-bah)",daddy,10,I'm Houdini with the magic,magic,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,9,Let a pussy nigga have it (What?),have,10,I'm Houdini with the magic,magic,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,9,Let a pussy nigga have it (What?),Let,11,Ten toes deep (Ah),Ten,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,10,I'm Houdini with the magic,Houdini,11,Ten toes deep (Ah),deep,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,11,Ten toes deep (Ah),deep,13,Backwood looking like a tree (Backwood),tree,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,11,Ten toes deep (Ah),deep,14,"Cookies on me, so I reek",reek,END,SLANT,cmu,MED,Y
+I Don’t Know You,12,Pussy nigga wanna fight me (What?),fight,13,Backwood looking like a tree (Backwood),like,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,12,Pussy nigga wanna fight me (What?),Pussy,13,Backwood looking like a tree (Backwood),looking,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,12,Pussy nigga wanna fight me (What?),Pussy,14,"Cookies on me, so I reek",Cookies,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,13,Backwood looking like a tree (Backwood),tree,14,"Cookies on me, so I reek",reek,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,13,Backwood looking like a tree (Backwood),looking,14,"Cookies on me, so I reek",Cookies,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,13,Backwood looking like a tree (Backwood),like,15,"Ride around pimping hoes, nigga",Ride,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,15,"Ride around pimping hoes, nigga",nigga,16,"All my hoes got pretty toes, nigga (What?)",nigga,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,15,"Ride around pimping hoes, nigga",hoes,16,"All my hoes got pretty toes, nigga (What?)",hoes,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,15,"Ride around pimping hoes, nigga",hoes,16,"All my hoes got pretty toes, nigga (What?)",toes,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,15,"Ride around pimping hoes, nigga",nigga,16,"All my hoes got pretty toes, nigga (What?)",pretty,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,15,"Ride around pimping hoes, nigga",pimping,16,"All my hoes got pretty toes, nigga (What?)",pretty,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,15,"Ride around pimping hoes, nigga",nigga,17,"Ruger on me, blow a nose, nigga (Bah)",nigga,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,15,"Ride around pimping hoes, nigga",hoes,17,"Ruger on me, blow a nose, nigga (Bah)",blow,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,15,"Ride around pimping hoes, nigga",hoes,17,"Ruger on me, blow a nose, nigga (Bah)",nose,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,15,"Ride around pimping hoes, nigga",nigga,18,"Lil Purpp'll take a soul, nigga (What?)",nigga,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",hoes,16,"All my hoes got pretty toes, nigga (What?)",toes,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",pretty,16,"All my hoes got pretty toes, nigga (What?)",nigga,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",nigga,17,"Ruger on me, blow a nose, nigga (Bah)",nigga,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",hoes,17,"Ruger on me, blow a nose, nigga (Bah)",blow,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",hoes,17,"Ruger on me, blow a nose, nigga (Bah)",nose,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",pretty,17,"Ruger on me, blow a nose, nigga (Bah)",nigga,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",toes,17,"Ruger on me, blow a nose, nigga (Bah)",blow,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",toes,17,"Ruger on me, blow a nose, nigga (Bah)",nose,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",nigga,18,"Lil Purpp'll take a soul, nigga (What?)",nigga,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",hoes,18,"Lil Purpp'll take a soul, nigga (What?)",soul,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",pretty,18,"Lil Purpp'll take a soul, nigga (What?)",Lil,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",pretty,18,"Lil Purpp'll take a soul, nigga (What?)",nigga,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,16,"All my hoes got pretty toes, nigga (What?)",toes,18,"Lil Purpp'll take a soul, nigga (What?)",soul,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,17,"Ruger on me, blow a nose, nigga (Bah)",blow,17,"Ruger on me, blow a nose, nigga (Bah)",nose,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,17,"Ruger on me, blow a nose, nigga (Bah)",nigga,18,"Lil Purpp'll take a soul, nigga (What?)",nigga,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,17,"Ruger on me, blow a nose, nigga (Bah)",blow,18,"Lil Purpp'll take a soul, nigga (What?)",soul,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,17,"Ruger on me, blow a nose, nigga (Bah)",nose,18,"Lil Purpp'll take a soul, nigga (What?)",soul,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,18,"Lil Purpp'll take a soul, nigga (What?)",Lil,19,"Bitch, I'm me (Huh?)",Bitch,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,18,"Lil Purpp'll take a soul, nigga (What?)",Lil,20,Lil Wayne '03 (Huh?),Lil,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,18,"Lil Purpp'll take a soul, nigga (What?)",take,20,Lil Wayne '03 (Huh?),Wayne,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,19,"Bitch, I'm me (Huh?)",Bitch,20,Lil Wayne '03 (Huh?),Lil,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,21,Michael Jordan '93 (What?),Michael,22,"Poppin' outchea like a creep (Bah, bah, bah)",like,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,23,Came in with yo' ho (What?),ho,24,Came in with a pole (Bah),pole,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,23,Came in with yo' ho (What?),Came,24,Came in with a pole (Bah),Came,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,23,Came in with yo' ho (What?),ho,25,Selling cocaine on the road (Coke),road,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,23,Came in with yo' ho (What?),Came,25,Selling cocaine on the road (Coke),cocaine,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,23,Came in with yo' ho (What?),ho,26,Serving cocaine through the road,road,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,24,Came in with a pole (Bah),pole,25,Selling cocaine on the road (Coke),road,END,SLANT,cmu,MED,Y
+I Don’t Know You,24,Came in with a pole (Bah),Came,25,Selling cocaine on the road (Coke),cocaine,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,24,Came in with a pole (Bah),pole,26,Serving cocaine through the road,road,END,SLANT,cmu,MED,Y
+I Don’t Know You,24,Came in with a pole (Bah),Came,26,Serving cocaine through the road,cocaine,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,25,Selling cocaine on the road (Coke),road,26,Serving cocaine through the road,road,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,25,Selling cocaine on the road (Coke),cocaine,26,Serving cocaine through the road,cocaine,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,25,Selling cocaine on the road (Coke),cocaine,27,"Ronny J on the beat, bitch (Bitch)",J,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,26,Serving cocaine through the road,cocaine,27,"Ronny J on the beat, bitch (Bitch)",J,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,27,"Ronny J on the beat, bitch (Bitch)",bitch,28,"I'm still balling like the Heat, bitch (Bitch)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,27,"Ronny J on the beat, bitch (Bitch)",beat,28,"I'm still balling like the Heat, bitch (Bitch)",Heat,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,27,"Ronny J on the beat, bitch (Bitch)",bitch,28,"I'm still balling like the Heat, bitch (Bitch)",still,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,27,"Ronny J on the beat, bitch (Bitch)",bitch,29,"Put a nigga in a seat, bitch (Brr)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,27,"Ronny J on the beat, bitch (Bitch)",beat,29,"Put a nigga in a seat, bitch (Brr)",seat,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,27,"Ronny J on the beat, bitch (Bitch)",bitch,30,"Make a mute nigga speak, bitch (Bah-bah)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,28,"I'm still balling like the Heat, bitch (Bitch)",still,28,"I'm still balling like the Heat, bitch (Bitch)",bitch,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,28,"I'm still balling like the Heat, bitch (Bitch)",bitch,29,"Put a nigga in a seat, bitch (Brr)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,28,"I'm still balling like the Heat, bitch (Bitch)",Heat,29,"Put a nigga in a seat, bitch (Brr)",seat,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,28,"I'm still balling like the Heat, bitch (Bitch)",still,29,"Put a nigga in a seat, bitch (Brr)",bitch,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,28,"I'm still balling like the Heat, bitch (Bitch)",bitch,30,"Make a mute nigga speak, bitch (Bah-bah)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,28,"I'm still balling like the Heat, bitch (Bitch)",Heat,30,"Make a mute nigga speak, bitch (Bah-bah)",speak,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,28,"I'm still balling like the Heat, bitch (Bitch)",still,30,"Make a mute nigga speak, bitch (Bah-bah)",bitch,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,29,"Put a nigga in a seat, bitch (Brr)",bitch,30,"Make a mute nigga speak, bitch (Bah-bah)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,29,"Put a nigga in a seat, bitch (Brr)",nigga,30,"Make a mute nigga speak, bitch (Bah-bah)",nigga,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,29,"Put a nigga in a seat, bitch (Brr)",seat,30,"Make a mute nigga speak, bitch (Bah-bah)",speak,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,30,"Make a mute nigga speak, bitch (Bah-bah)",Make,31,I came in with two hoes (Hoes),came,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,30,"Make a mute nigga speak, bitch (Bah-bah)",mute,31,I came in with two hoes (Hoes),two,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,30,"Make a mute nigga speak, bitch (Bah-bah)",bitch,32,"Bitch, I snuck the pole (Pole, huh, huh)",Bitch,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,31,I came in with two hoes (Hoes),hoes,32,"Bitch, I snuck the pole (Pole, huh, huh)",pole,END,SLANT,cmu,MED,Y
+I Don’t Know You,32,"Bitch, I snuck the pole (Pole, huh, huh)",Bitch,33,"Bitch, I'm in the club (I don't fuck with none of you niggas, man)",Bitch,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,32,"Bitch, I snuck the pole (Pole, huh, huh)",snuck,33,"Bitch, I'm in the club (I don't fuck with none of you niggas, man)",club,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,33,"Bitch, I'm in the club (I don't fuck with none of you niggas, man)",Bitch,35,"Vegetarian to the beef, bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,34,"Bah, bah, bah, bah, bah, bah, bah",Bah,34,"Bah, bah, bah, bah, bah, bah, bah",bah,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,34,"Bah, bah, bah, bah, bah, bah, bah",Bah,36,"Yo Gotti, I do street shit",Gotti,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,35,"Vegetarian to the beef, bitch",Vegetarian,35,"Vegetarian to the beef, bitch",beef,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,35,"Vegetarian to the beef, bitch",bitch,36,"Yo Gotti, I do street shit",shit,END,SLANT,cmu,MED,Y
+I Don’t Know You,35,"Vegetarian to the beef, bitch",beef,36,"Yo Gotti, I do street shit",street,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,35,"Vegetarian to the beef, bitch",Vegetarian,36,"Yo Gotti, I do street shit",street,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,35,"Vegetarian to the beef, bitch",bitch,37,"Yo Gotti, I do elite shit",shit,END,SLANT,cmu,MED,Y
+I Don’t Know You,35,"Vegetarian to the beef, bitch",beef,37,"Yo Gotti, I do elite shit",elite,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,35,"Vegetarian to the beef, bitch",Vegetarian,37,"Yo Gotti, I do elite shit",elite,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,35,"Vegetarian to the beef, bitch",bitch,38,"Versace flops in my suite, bitch",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,36,"Yo Gotti, I do street shit",shit,37,"Yo Gotti, I do elite shit",shit,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,36,"Yo Gotti, I do street shit",Gotti,37,"Yo Gotti, I do elite shit",Gotti,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,36,"Yo Gotti, I do street shit",street,37,"Yo Gotti, I do elite shit",elite,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,36,"Yo Gotti, I do street shit",shit,38,"Versace flops in my suite, bitch",bitch,END,SLANT,cmu,MED,Y
+I Don’t Know You,36,"Yo Gotti, I do street shit",Gotti,38,"Versace flops in my suite, bitch",flops,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,36,"Yo Gotti, I do street shit",Gotti,38,"Versace flops in my suite, bitch",Versace,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,36,"Yo Gotti, I do street shit",street,38,"Versace flops in my suite, bitch",suite,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,37,"Yo Gotti, I do elite shit",shit,38,"Versace flops in my suite, bitch",bitch,END,SLANT,cmu,MED,Y
+I Don’t Know You,37,"Yo Gotti, I do elite shit",elite,38,"Versace flops in my suite, bitch",suite,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,37,"Yo Gotti, I do elite shit",Gotti,38,"Versace flops in my suite, bitch",flops,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,37,"Yo Gotti, I do elite shit",Gotti,38,"Versace flops in my suite, bitch",Versace,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,37,"Yo Gotti, I do elite shit",elite,39,"Balenciaga on my feet, woo",feet,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,38,"Versace flops in my suite, bitch",Versace,38,"Versace flops in my suite, bitch",flops,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,38,"Versace flops in my suite, bitch",suite,39,"Balenciaga on my feet, woo",feet,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,38,"Versace flops in my suite, bitch",flops,40,"Blue Ferrari, drop the top, coupe",drop,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,38,"Versace flops in my suite, bitch",flops,40,"Blue Ferrari, drop the top, coupe",Ferrari,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,38,"Versace flops in my suite, bitch",flops,40,"Blue Ferrari, drop the top, coupe",top,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,38,"Versace flops in my suite, bitch",Versace,40,"Blue Ferrari, drop the top, coupe",drop,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,38,"Versace flops in my suite, bitch",Versace,40,"Blue Ferrari, drop the top, coupe",Ferrari,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,38,"Versace flops in my suite, bitch",Versace,40,"Blue Ferrari, drop the top, coupe",top,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",Blue,40,"Blue Ferrari, drop the top, coupe",coupe,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",drop,40,"Blue Ferrari, drop the top, coupe",top,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",Ferrari,40,"Blue Ferrari, drop the top, coupe",drop,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",Ferrari,40,"Blue Ferrari, drop the top, coupe",top,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",drop,41,"Red Ferrari, drop the top, ooh",drop,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",drop,41,"Red Ferrari, drop the top, ooh",Ferrari,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",drop,41,"Red Ferrari, drop the top, ooh",top,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",Ferrari,41,"Red Ferrari, drop the top, ooh",drop,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",Ferrari,41,"Red Ferrari, drop the top, ooh",Ferrari,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",Ferrari,41,"Red Ferrari, drop the top, ooh",top,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",top,41,"Red Ferrari, drop the top, ooh",drop,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",top,41,"Red Ferrari, drop the top, ooh",Ferrari,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",top,41,"Red Ferrari, drop the top, ooh",top,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",coupe,42,"I be still on the block, hoo",hoo,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",Blue,42,"I be still on the block, hoo",hoo,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",drop,42,"I be still on the block, hoo",block,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",Ferrari,42,"I be still on the block, hoo",block,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,40,"Blue Ferrari, drop the top, coupe",top,42,"I be still on the block, hoo",block,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,41,"Red Ferrari, drop the top, ooh",drop,41,"Red Ferrari, drop the top, ooh",top,INNER,PERFECT,cmu,HIGH,Y
+I Don’t Know You,41,"Red Ferrari, drop the top, ooh",Ferrari,41,"Red Ferrari, drop the top, ooh",drop,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,41,"Red Ferrari, drop the top, ooh",Ferrari,41,"Red Ferrari, drop the top, ooh",top,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,41,"Red Ferrari, drop the top, ooh",drop,42,"I be still on the block, hoo",block,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,41,"Red Ferrari, drop the top, ooh",Ferrari,42,"I be still on the block, hoo",block,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,41,"Red Ferrari, drop the top, ooh",top,42,"I be still on the block, hoo",block,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,41,"Red Ferrari, drop the top, ooh",drop,43,"Got the lean and the purple, bitch",Got,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,41,"Red Ferrari, drop the top, ooh",Ferrari,43,"Got the lean and the purple, bitch",Got,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,41,"Red Ferrari, drop the top, ooh",top,43,"Got the lean and the purple, bitch",Got,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,42,"I be still on the block, hoo",block,43,"Got the lean and the purple, bitch",Got,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,42,"I be still on the block, hoo",still,43,"Got the lean and the purple, bitch",bitch,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,42,"I be still on the block, hoo",block,44,"I got straps like I'm Urkel, bitch",got,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,42,"I be still on the block, hoo",still,44,"I got straps like I'm Urkel, bitch",bitch,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,43,"Got the lean and the purple, bitch",bitch,44,"I got straps like I'm Urkel, bitch",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,43,"Got the lean and the purple, bitch",Got,44,"I got straps like I'm Urkel, bitch",got,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,43,"Got the lean and the purple, bitch",purple,44,"I got straps like I'm Urkel, bitch",Urkel,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,43,"Got the lean and the purple, bitch",bitch,45,"Throw that ass in a circle, bitch",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,43,"Got the lean and the purple, bitch",purple,45,"Throw that ass in a circle, bitch",circle,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,44,"I got straps like I'm Urkel, bitch",bitch,45,"Throw that ass in a circle, bitch",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,44,"I got straps like I'm Urkel, bitch",like Urkel,45,"Throw that ass in a circle, bitch",ass circle,INNER,MULTI,multi,HIGH,Y
+I Don’t Know You,44,"I got straps like I'm Urkel, bitch",straps,45,"Throw that ass in a circle, bitch",ass,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,44,"I got straps like I'm Urkel, bitch",Urkel,45,"Throw that ass in a circle, bitch",circle,INNER,MULTI,multi,HIGH,Y
+I Don’t Know You,44,"I got straps like I'm Urkel, bitch",bitch,46,Mixed a Xan' with a Percocet,Mixed,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,44,"I got straps like I'm Urkel, bitch",got,46,Mixed a Xan' with a Percocet,Xan,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,44,"I got straps like I'm Urkel, bitch",Urkel,46,Mixed a Xan' with a Percocet,Percocet,INNER,ASSONANCE,vowel,LOW,N
+I Don’t Know You,45,"Throw that ass in a circle, bitch",bitch,46,Mixed a Xan' with a Percocet,Mixed,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,45,"Throw that ass in a circle, bitch",circle,46,Mixed a Xan' with a Percocet,Percocet,INNER,ASSONANCE,vowel,LOW,N
+I Don’t Know You,45,"Throw that ass in a circle, bitch",circle,47,Hermès belt with the Gucci set,Herm,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,45,"Throw that ass in a circle, bitch",bitch,49,"I don't know these niggas, bitch",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,46,Mixed a Xan' with a Percocet,Percocet,47,Hermès belt with the Gucci set,set,END,PERFECT,spelling,MED,Y
+I Don’t Know You,46,Mixed a Xan' with a Percocet,Percocet,47,Hermès belt with the Gucci set,Herm,INNER,ASSONANCE,vowel,LOW,N
+I Don’t Know You,47,Hermès belt with the Gucci set,belt,47,Hermès belt with the Gucci set,set,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,47,Hermès belt with the Gucci set,s,47,Hermès belt with the Gucci set,belt,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,47,Hermès belt with the Gucci set,s,47,Hermès belt with the Gucci set,set,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,48,"Fiji diamonds, yeah, they VVS",Fiji,49,"I don't know these niggas, bitch",these,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,48,"Fiji diamonds, yeah, they VVS",Fiji,50,"30 niggas and we deep, bitch (Bitch)",deep,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,49,"I don't know these niggas, bitch",don't,49,"I don't know these niggas, bitch",know,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,49,"I don't know these niggas, bitch",bitch,50,"30 niggas and we deep, bitch (Bitch)",bitch,END,REPEAT,spelling,HIGH,N
+I Don’t Know You,49,"I don't know these niggas, bitch",niggas,50,"30 niggas and we deep, bitch (Bitch)",niggas,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,49,"I don't know these niggas, bitch",these,50,"30 niggas and we deep, bitch (Bitch)",deep,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,51,I'm such a player with a bow tie,tie,52,Foe nem with me for the long ride (Yeah),ride,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,51,I'm such a player with a bow tie,tie,53,Yo' bitch pull up on me like roadside (Skrt),roadside,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,51,I'm such a player with a bow tie,tie,53,Yo' bitch pull up on me like roadside (Skrt),like,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,51,I'm such a player with a bow tie,tie,54,And make it very scary like Poltergeist (Scary),Poltergeist,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,51,I'm such a player with a bow tie,tie,55,48 what I'm gon' smoke tonight,tonight,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,52,Foe nem with me for the long ride (Yeah),ride,53,Yo' bitch pull up on me like roadside (Skrt),roadside,END,PERFECT,cmu,HIGH,Y
+I Don’t Know You,52,Foe nem with me for the long ride (Yeah),ride,53,Yo' bitch pull up on me like roadside (Skrt),like,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,52,Foe nem with me for the long ride (Yeah),ride,54,And make it very scary like Poltergeist (Scary),Poltergeist,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,52,Foe nem with me for the long ride (Yeah),nem,54,And make it very scary like Poltergeist (Scary),scary,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,52,Foe nem with me for the long ride (Yeah),nem,54,And make it very scary like Poltergeist (Scary),very,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,52,Foe nem with me for the long ride (Yeah),ride,54,And make it very scary like Poltergeist (Scary),like,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,52,Foe nem with me for the long ride (Yeah),ride,55,48 what I'm gon' smoke tonight,tonight,END,SLANT,cmu,MED,Y
+I Don’t Know You,52,Foe nem with me for the long ride (Yeah),ride,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",price,END,SLANT,cmu,MED,Y
+I Don’t Know You,53,Yo' bitch pull up on me like roadside (Skrt),like,53,Yo' bitch pull up on me like roadside (Skrt),roadside,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,53,Yo' bitch pull up on me like roadside (Skrt),roadside,54,And make it very scary like Poltergeist (Scary),Poltergeist,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,53,Yo' bitch pull up on me like roadside (Skrt),like,54,And make it very scary like Poltergeist (Scary),like,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,53,Yo' bitch pull up on me like roadside (Skrt),like,54,And make it very scary like Poltergeist (Scary),Poltergeist,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,53,Yo' bitch pull up on me like roadside (Skrt),roadside,54,And make it very scary like Poltergeist (Scary),like,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,53,Yo' bitch pull up on me like roadside (Skrt),roadside,55,48 what I'm gon' smoke tonight,tonight,END,SLANT,cmu,MED,Y
+I Don’t Know You,53,Yo' bitch pull up on me like roadside (Skrt),like,55,48 what I'm gon' smoke tonight,tonight,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,53,Yo' bitch pull up on me like roadside (Skrt),roadside,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",price,END,SLANT,cmu,MED,Y
+I Don’t Know You,53,Yo' bitch pull up on me like roadside (Skrt),roadside,57,"Gamble with your life, nigga, roll the dice (Yeah)",dice,END,SLANT,cmu,MED,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),like,54,And make it very scary like Poltergeist (Scary),Poltergeist,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),make very,54,And make it very scary like Poltergeist (Scary),very scary,INNER,MULTI,multi,HIGH,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),very,54,And make it very scary like Poltergeist (Scary),scary,INNER,MULTI,multi,HIGH,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),Poltergeist,55,48 what I'm gon' smoke tonight,tonight,END,SLANT,cmu,MED,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),like,55,48 what I'm gon' smoke tonight,tonight,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),Poltergeist,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",price,END,SLANT,cmu,MED,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),like,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",like,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),like,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",price,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),Poltergeist,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",like,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),Poltergeist,57,"Gamble with your life, nigga, roll the dice (Yeah)",dice,END,SLANT,cmu,MED,Y
+I Don’t Know You,54,And make it very scary like Poltergeist (Scary),Poltergeist,58,"All this bread, had to get a slice",slice,END,SLANT,cmu,MED,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,gon,55,48 what I'm gon' smoke tonight,smoke,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,tonight,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",price,END,SLANT,cmu,MED,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,gon,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",Sosa,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,smoke,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",lower,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,smoke,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",Sosa,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,tonight,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",like,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,tonight,57,"Gamble with your life, nigga, roll the dice (Yeah)",dice,END,SLANT,cmu,MED,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,gon,57,"Gamble with your life, nigga, roll the dice (Yeah)",roll,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,smoke,57,"Gamble with your life, nigga, roll the dice (Yeah)",roll,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,tonight,57,"Gamble with your life, nigga, roll the dice (Yeah)",life,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,55,48 what I'm gon' smoke tonight,tonight,58,"All this bread, had to get a slice",slice,END,SLANT,cmu,MED,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",like,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",price,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",Sosa,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",lower,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",price,57,"Gamble with your life, nigga, roll the dice (Yeah)",dice,END,PERFECT,cmu,HIGH,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",like,57,"Gamble with your life, nigga, roll the dice (Yeah)",dice,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",like,57,"Gamble with your life, nigga, roll the dice (Yeah)",life,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",lower,57,"Gamble with your life, nigga, roll the dice (Yeah)",roll,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",price,57,"Gamble with your life, nigga, roll the dice (Yeah)",life,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",Sosa,57,"Gamble with your life, nigga, roll the dice (Yeah)",roll,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",price,58,"All this bread, had to get a slice",slice,END,PERFECT,cmu,HIGH,Y
+I Don’t Know You,56,"They like ""Chief Sosa, could you lower the price?"" (Bitch)",like,58,"All this bread, had to get a slice",slice,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,57,"Gamble with your life, nigga, roll the dice (Yeah)",life,57,"Gamble with your life, nigga, roll the dice (Yeah)",dice,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,57,"Gamble with your life, nigga, roll the dice (Yeah)",dice,58,"All this bread, had to get a slice",slice,END,PERFECT,cmu,HIGH,Y
+I Don’t Know You,57,"Gamble with your life, nigga, roll the dice (Yeah)",Gamble,58,"All this bread, had to get a slice",had,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,57,"Gamble with your life, nigga, roll the dice (Yeah)",life,58,"All this bread, had to get a slice",slice,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,58,"All this bread, had to get a slice",bread,58,"All this bread, had to get a slice",get,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,58,"All this bread, had to get a slice",bread,60,"Nigga, you can get yo' ass dropped like a sunroof",get,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,58,"All this bread, had to get a slice",get,60,"Nigga, you can get yo' ass dropped like a sunroof",get,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,58,"All this bread, had to get a slice",had,60,"Nigga, you can get yo' ass dropped like a sunroof",ass,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,58,"All this bread, had to get a slice",had,60,"Nigga, you can get yo' ass dropped like a sunroof",can,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,58,"All this bread, had to get a slice",slice,60,"Nigga, you can get yo' ass dropped like a sunroof",like,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,59,"Bitch, I'm greedy, I started off humble (Yeah)",started,60,"Nigga, you can get yo' ass dropped like a sunroof",dropped,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,59,"Bitch, I'm greedy, I started off humble (Yeah)",humble,61,Feds tryna solve a young nigga like a puzzle (Huh),puzzle,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,59,"Bitch, I'm greedy, I started off humble (Yeah)",greedy,61,Feds tryna solve a young nigga like a puzzle (Huh),tryna,INNER,SLANT,spelling,LOW,Y
+I Don’t Know You,59,"Bitch, I'm greedy, I started off humble (Yeah)",humble,61,Feds tryna solve a young nigga like a puzzle (Huh),young,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,59,"Bitch, I'm greedy, I started off humble (Yeah)",started,61,Feds tryna solve a young nigga like a puzzle (Huh),solve,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,59,"Bitch, I'm greedy, I started off humble (Yeah)",humble,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",bubble,END,SLANT,cmu,MED,Y
+I Don’t Know You,59,"Bitch, I'm greedy, I started off humble (Yeah)",humble,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",trouble,END,SLANT,cmu,MED,Y
+I Don’t Know You,60,"Nigga, you can get yo' ass dropped like a sunroof",can,60,"Nigga, you can get yo' ass dropped like a sunroof",ass,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,60,"Nigga, you can get yo' ass dropped like a sunroof",dropped,61,Feds tryna solve a young nigga like a puzzle (Huh),solve,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,60,"Nigga, you can get yo' ass dropped like a sunroof",get,61,Feds tryna solve a young nigga like a puzzle (Huh),Feds,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,60,"Nigga, you can get yo' ass dropped like a sunroof",like,61,Feds tryna solve a young nigga like a puzzle (Huh),like,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,60,"Nigga, you can get yo' ass dropped like a sunroof",Nigga,61,Feds tryna solve a young nigga like a puzzle (Huh),nigga,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,60,"Nigga, you can get yo' ass dropped like a sunroof",ass,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",can,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,60,"Nigga, you can get yo' ass dropped like a sunroof",can,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",can,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,60,"Nigga, you can get yo' ass dropped like a sunroof",dropped,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",Cause,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,60,"Nigga, you can get yo' ass dropped like a sunroof",dropped,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",pop,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),young,61,Feds tryna solve a young nigga like a puzzle (Huh),puzzle,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),puzzle,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",bubble,END,SLANT,cmu,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),solve,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",Cause,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),solve,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",pop,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),young,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",bubble,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),puzzle,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",trouble,END,SLANT,cmu,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),puzzle,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",Fuck,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),young,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",Fuck,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),young,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",trouble,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),puzzle,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",tussle,END,SLANT,cmu,MED,Y
+I Don’t Know You,61,Feds tryna solve a young nigga like a puzzle (Huh),puzzle,65,Big bread on me and it's ready to crumble (Yeah),crumble,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",Cause,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",pop,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",go,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",won't,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",bubble,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",trouble,END,MULTI,multi,HIGH,Y
+I Don’t Know You,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",bubble,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",Fuck,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",bubble,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",tussle,END,SLANT,cmu,MED,Y
+I Don’t Know You,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",Cause,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",Got,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",pop,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",Got,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",bubble,65,Big bread on me and it's ready to crumble (Yeah),crumble,END,SLANT,cmu,MED,Y
+I Don’t Know You,62,"Cause it can go pop and it won't be a bubble (Bang, bang)",bubble,66,"Shorties hop out dressed up like plumbers (Bang, bang, bang)",plumbers,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",Fuck,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",trouble,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",trouble,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",tussle,END,SLANT,cmu,MED,Y
+I Don’t Know You,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",Fuck,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",tussle,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",wouldn't,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",wouldn't,INNER,REPEAT,spelling,HIGH,N
+I Don’t Know You,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",trouble,65,Big bread on me and it's ready to crumble (Yeah),crumble,END,SLANT,cmu,MED,Y
+I Don’t Know You,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",Fuck,65,Big bread on me and it's ready to crumble (Yeah),crumble,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,63,"Fuck changin' my identity, I wouldn't be in trouble (Nah)",trouble,66,"Shorties hop out dressed up like plumbers (Bang, bang, bang)",plumbers,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",tussle,65,Big bread on me and it's ready to crumble (Yeah),crumble,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",tussle,66,"Shorties hop out dressed up like plumbers (Bang, bang, bang)",plumbers,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",blickies,66,"Shorties hop out dressed up like plumbers (Bang, bang, bang)",Shorties,INNER,MULTI,multi,MED,Y
+I Don’t Know You,64,"Got the blickies on us, then it wouldn't be a tussle (Bang, bang)",Got,66,"Shorties hop out dressed up like plumbers (Bang, bang, bang)",hop,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,65,Big bread on me and it's ready to crumble (Yeah),bread,65,Big bread on me and it's ready to crumble (Yeah),ready,INNER,SLANT,cmu,MED,Y
+I Don’t Know You,65,Big bread on me and it's ready to crumble (Yeah),crumble,66,"Shorties hop out dressed up like plumbers (Bang, bang, bang)",plumbers,END,ASSONANCE,vowel,MED,Y
+I Don’t Know You,65,Big bread on me and it's ready to crumble (Yeah),bread,66,"Shorties hop out dressed up like plumbers (Bang, bang, bang)",dressed,INNER,ASSONANCE,vowel,MED,Y
+I Don’t Know You,65,Big bread on me and it's ready to crumble (Yeah),ready,66,"Shorties hop out dressed up like plumbers (Bang, bang, bang)",dressed,INNER,ASSONANCE,vowel,MED,Y
