@@ -1,0 +1,600 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Harriet Tubman,1,Like a runaway slave,runaway,1,Like a runaway slave,slave,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,1,Like a runaway slave,Like,2,"Like a runaway slave, better run or you get hung",Like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,1,Like a runaway slave,runaway,2,"Like a runaway slave, better run or you get hung",runaway,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,1,Like a runaway slave,runaway,2,"Like a runaway slave, better run or you get hung",slave,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,1,Like a runaway slave,slave,2,"Like a runaway slave, better run or you get hung",runaway,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,1,Like a runaway slave,slave,2,"Like a runaway slave, better run or you get hung",slave,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,1,Like a runaway slave,runaway,3,"I done walked 'way from some things, I'm a walk off with my son",'way,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,1,Like a runaway slave,slave,3,"I done walked 'way from some things, I'm a walk off with my son",'way,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",better,2,"Like a runaway slave, better run or you get hung",get,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",run,2,"Like a runaway slave, better run or you get hung",hung,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",runaway,2,"Like a runaway slave, better run or you get hung",slave,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",hung,3,"I done walked 'way from some things, I'm a walk off with my son",son,END,SLANT,cmu,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",hung,3,"I done walked 'way from some things, I'm a walk off with my son",done,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",hung,3,"I done walked 'way from some things, I'm a walk off with my son",some,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",run,3,"I done walked 'way from some things, I'm a walk off with my son",done,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",run,3,"I done walked 'way from some things, I'm a walk off with my son",some,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",run,3,"I done walked 'way from some things, I'm a walk off with my son",son,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",runaway,3,"I done walked 'way from some things, I'm a walk off with my son",'way,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",slave,3,"I done walked 'way from some things, I'm a walk off with my son",'way,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",hung,4,"Rather walk off with my son, on top of that he won",won,END,SLANT,cmu,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",hung,4,"Rather walk off with my son, on top of that he won",son,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",run,4,"Rather walk off with my son, on top of that he won",son,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",run,4,"Rather walk off with my son, on top of that he won",won,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",hung,5,"I don't talk I got a gun, If we fall off, bit' we done",done,END,SLANT,cmu,MED,Y
+Harriet Tubman,2,"Like a runaway slave, better run or you get hung",hung,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,END,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",done,3,"I done walked 'way from some things, I'm a walk off with my son",some,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",done,3,"I done walked 'way from some things, I'm a walk off with my son",son,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",some,3,"I done walked 'way from some things, I'm a walk off with my son",son,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",walked,3,"I done walked 'way from some things, I'm a walk off with my son",walk,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",son,4,"Rather walk off with my son, on top of that he won",won,END,PERFECT,cmu,HIGH,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",done,4,"Rather walk off with my son, on top of that he won",son,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",done,4,"Rather walk off with my son, on top of that he won",won,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",some,4,"Rather walk off with my son, on top of that he won",son,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",some,4,"Rather walk off with my son, on top of that he won",won,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",son,4,"Rather walk off with my son, on top of that he won",son,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",walk,4,"Rather walk off with my son, on top of that he won",walk,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",walked,4,"Rather walk off with my son, on top of that he won",walk,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",son,5,"I don't talk I got a gun, If we fall off, bit' we done",done,END,PERFECT,cmu,HIGH,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",done,5,"I don't talk I got a gun, If we fall off, bit' we done",done,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",done,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",some,5,"I don't talk I got a gun, If we fall off, bit' we done",done,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",some,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",son,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",things,5,"I don't talk I got a gun, If we fall off, bit' we done",bit,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",walk,5,"I don't talk I got a gun, If we fall off, bit' we done",fall,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",walk,5,"I don't talk I got a gun, If we fall off, bit' we done",talk,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",walked,5,"I don't talk I got a gun, If we fall off, bit' we done",fall,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",walked,5,"I don't talk I got a gun, If we fall off, bit' we done",talk,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",son,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,END,SLANT,cmu,MED,Y
+Harriet Tubman,3,"I done walked 'way from some things, I'm a walk off with my son",son,7,"Had to run away from my girl, she done ran up out of trust",trust,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",son,4,"Rather walk off with my son, on top of that he won",won,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",won,5,"I don't talk I got a gun, If we fall off, bit' we done",done,END,PERFECT,cmu,HIGH,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",son,5,"I don't talk I got a gun, If we fall off, bit' we done",done,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",son,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",top,5,"I don't talk I got a gun, If we fall off, bit' we done",got,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",walk,5,"I don't talk I got a gun, If we fall off, bit' we done",fall,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",walk,5,"I don't talk I got a gun, If we fall off, bit' we done",talk,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",won,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",won,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,END,SLANT,cmu,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",Rather,6,"Can't fall off, I got funds, I fall off then I'm dumb",Can't,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",son,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",son,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",top,6,"Can't fall off, I got funds, I fall off then I'm dumb",got,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",walk,6,"Can't fall off, I got funds, I fall off then I'm dumb",fall,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",won,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",won,7,"Had to run away from my girl, she done ran up out of trust",trust,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,4,"Rather walk off with my son, on top of that he won",won,8,I done ran up out of love,love,END,SLANT,cmu,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,5,"I don't talk I got a gun, If we fall off, bit' we done",done,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",talk,5,"I don't talk I got a gun, If we fall off, bit' we done",fall,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",done,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,END,SLANT,cmu,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",done,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",fall,6,"Can't fall off, I got funds, I fall off then I'm dumb",fall,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",got,6,"Can't fall off, I got funds, I fall off then I'm dumb",got,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",talk,6,"Can't fall off, I got funds, I fall off then I'm dumb",fall,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",done,7,"Had to run away from my girl, she done ran up out of trust",trust,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",done,7,"Had to run away from my girl, she done ran up out of trust",done,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",done,7,"Had to run away from my girl, she done ran up out of trust",run,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,7,"Had to run away from my girl, she done ran up out of trust",done,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,7,"Had to run away from my girl, she done ran up out of trust",run,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",gun,7,"Had to run away from my girl, she done ran up out of trust",trust,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",done,8,I done ran up out of love,love,END,SLANT,cmu,MED,Y
+Harriet Tubman,5,"I don't talk I got a gun, If we fall off, bit' we done",done,9,"You said you had enough, so I went out to the club",club,END,SLANT,cmu,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",fall,6,"Can't fall off, I got funds, I fall off then I'm dumb",fall,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,7,"Had to run away from my girl, she done ran up out of trust",trust,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",Can't,7,"Had to run away from my girl, she done ran up out of trust",Had,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",Can't,7,"Had to run away from my girl, she done ran up out of trust",ran,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,7,"Had to run away from my girl, she done ran up out of trust",done,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,7,"Had to run away from my girl, she done ran up out of trust",run,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,7,"Had to run away from my girl, she done ran up out of trust",done,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,7,"Had to run away from my girl, she done ran up out of trust",run,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,7,"Had to run away from my girl, she done ran up out of trust",trust,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,8,I done ran up out of love,love,END,SLANT,cmu,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",Can't,8,I done ran up out of love,ran,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,8,I done ran up out of love,done,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,8,I done ran up out of love,done,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",funds,8,I done ran up out of love,love,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,9,"You said you had enough, so I went out to the club",club,END,SLANT,cmu,MED,Y
+Harriet Tubman,6,"Can't fall off, I got funds, I fall off then I'm dumb",dumb,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",done,7,"Had to run away from my girl, she done ran up out of trust",trust,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",Had,7,"Had to run away from my girl, she done ran up out of trust",ran,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",run,7,"Had to run away from my girl, she done ran up out of trust",done,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",run,7,"Had to run away from my girl, she done ran up out of trust",trust,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",trust,8,I done ran up out of love,love,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",done,8,I done ran up out of love,done,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",done,8,I done ran up out of love,love,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",Had,8,I done ran up out of love,ran,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",ran,8,I done ran up out of love,ran,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",run,8,I done ran up out of love,done,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",run,8,I done ran up out of love,love,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",trust,8,I done ran up out of love,done,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",trust,9,"You said you had enough, so I went out to the club",club,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",done,9,"You said you had enough, so I went out to the club",club,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",done,9,"You said you had enough, so I went out to the club",enough,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",Had,9,"You said you had enough, so I went out to the club",had,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",ran,9,"You said you had enough, so I went out to the club",had,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",run,9,"You said you had enough, so I went out to the club",club,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",run,9,"You said you had enough, so I went out to the club",enough,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",trust,9,"You said you had enough, so I went out to the club",enough,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,7,"Had to run away from my girl, she done ran up out of trust",trust,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,8,I done ran up out of love,done,8,I done ran up out of love,love,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,8,I done ran up out of love,love,9,"You said you had enough, so I went out to the club",club,END,SLANT,cmu,MED,Y
+Harriet Tubman,8,I done ran up out of love,done,9,"You said you had enough, so I went out to the club",club,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,8,I done ran up out of love,done,9,"You said you had enough, so I went out to the club",enough,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,8,I done ran up out of love,love,9,"You said you had enough, so I went out to the club",enough,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,8,I done ran up out of love,ran,9,"You said you had enough, so I went out to the club",had,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,8,I done ran up out of love,love,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,8,I done ran up out of love,done,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,8,I done ran up out of love,done,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",young,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,8,I done ran up out of love,love,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",young,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,8,I done ran up out of love,ran,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",Can't,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",enough,9,"You said you had enough, so I went out to the club",club,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",said,9,"You said you had enough, so I went out to the club",went,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",club,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",club,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",young,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",enough,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",enough,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",young,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",had,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",Can't,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",said,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",getting,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",went,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",getting,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",club,11,"So motherfucking tired, been runnin' all my life",motherfucking,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",club,11,"So motherfucking tired, been runnin' all my life",runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",enough,11,"So motherfucking tired, been runnin' all my life",motherfucking,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,9,"You said you had enough, so I went out to the club",enough,11,"So motherfucking tired, been runnin' all my life",runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drink,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,INNER,SLANT,spelling,LOW,Y
+Harriet Tubman,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",young,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,11,"So motherfucking tired, been runnin' all my life",motherfucking,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,11,"So motherfucking tired, been runnin' all my life",runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",young,11,"So motherfucking tired, been runnin' all my life",motherfucking,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",young,11,"So motherfucking tired, been runnin' all my life",runnin,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",drunk,12,"Oh, I've been runnin' all my life",runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,10,"Can't drink 'cause I'm too young, but today I'm getting drunk",young,12,"Oh, I've been runnin' all my life",runnin,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",motherfucking,11,"So motherfucking tired, been runnin' all my life",runnin,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",tired,11,"So motherfucking tired, been runnin' all my life",life,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",life,12,"Oh, I've been runnin' all my life",life,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",all,12,"Oh, I've been runnin' all my life",all,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",motherfucking,12,"Oh, I've been runnin' all my life",runnin,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",runnin,12,"Oh, I've been runnin' all my life",runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",tired,12,"Oh, I've been runnin' all my life",life,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",life,13,Runnin' all my life,life,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",all,13,Runnin' all my life,all,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",motherfucking,13,Runnin' all my life,Runnin,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",runnin,13,Runnin' all my life,Runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",tired,13,Runnin' all my life,life,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",life,14,"Harriet Tubman, I've been runnin' all my life, ay",life,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,11,"So motherfucking tired, been runnin' all my life",life,15,I'm standin' at the stretch line,line,END,SLANT,cmu,MED,Y
+Harriet Tubman,12,"Oh, I've been runnin' all my life",life,13,Runnin' all my life,life,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,12,"Oh, I've been runnin' all my life",all,13,Runnin' all my life,all,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,12,"Oh, I've been runnin' all my life",runnin,13,Runnin' all my life,Runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,12,"Oh, I've been runnin' all my life",life,14,"Harriet Tubman, I've been runnin' all my life, ay",life,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,12,"Oh, I've been runnin' all my life",all,14,"Harriet Tubman, I've been runnin' all my life, ay",all,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,12,"Oh, I've been runnin' all my life",runnin,14,"Harriet Tubman, I've been runnin' all my life, ay",runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,12,"Oh, I've been runnin' all my life",runnin,14,"Harriet Tubman, I've been runnin' all my life, ay",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,12,"Oh, I've been runnin' all my life",life,15,I'm standin' at the stretch line,line,END,SLANT,cmu,MED,Y
+Harriet Tubman,12,"Oh, I've been runnin' all my life",life,16,"Kunta Kinte, all my life, I had to fight",fight,END,SLANT,cmu,MED,Y
+Harriet Tubman,13,Runnin' all my life,life,14,"Harriet Tubman, I've been runnin' all my life, ay",life,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,13,Runnin' all my life,all,14,"Harriet Tubman, I've been runnin' all my life, ay",all,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,13,Runnin' all my life,Runnin,14,"Harriet Tubman, I've been runnin' all my life, ay",runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,13,Runnin' all my life,Runnin,14,"Harriet Tubman, I've been runnin' all my life, ay",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,13,Runnin' all my life,life,15,I'm standin' at the stretch line,line,END,SLANT,cmu,MED,Y
+Harriet Tubman,13,Runnin' all my life,life,16,"Kunta Kinte, all my life, I had to fight",fight,END,SLANT,cmu,MED,Y
+Harriet Tubman,13,Runnin' all my life,life,17,"In the projects, all my life, I had to grind",grind,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",life,15,I'm standin' at the stretch line,line,END,SLANT,cmu,MED,Y
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",Harriet,15,I'm standin' at the stretch line,stretch,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",life,16,"Kunta Kinte, all my life, I had to fight",fight,END,SLANT,cmu,MED,Y
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",all,16,"Kunta Kinte, all my life, I had to fight",all,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",life,16,"Kunta Kinte, all my life, I had to fight",life,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",runnin,16,"Kunta Kinte, all my life, I had to fight",Kunta,INNER,SLANT,spelling,LOW,Y
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",Tubman,16,"Kunta Kinte, all my life, I had to fight",Kunta,INNER,ASSONANCE,vowel,LOW,N
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",life,17,"In the projects, all my life, I had to grind",grind,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,14,"Harriet Tubman, I've been runnin' all my life, ay",life,18,Young nigga had to hustle to survive,survive,END,SLANT,cmu,MED,Y
+Harriet Tubman,15,I'm standin' at the stretch line,line,16,"Kunta Kinte, all my life, I had to fight",fight,END,SLANT,cmu,MED,Y
+Harriet Tubman,15,I'm standin' at the stretch line,line,16,"Kunta Kinte, all my life, I had to fight",life,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,15,I'm standin' at the stretch line,standin,16,"Kunta Kinte, all my life, I had to fight",had,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,15,I'm standin' at the stretch line,line,17,"In the projects, all my life, I had to grind",grind,END,SLANT,cmu,MED,Y
+Harriet Tubman,15,I'm standin' at the stretch line,line,17,"In the projects, all my life, I had to grind",life,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,15,I'm standin' at the stretch line,standin,17,"In the projects, all my life, I had to grind",had,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,15,I'm standin' at the stretch line,line,18,Young nigga had to hustle to survive,survive,END,SLANT,cmu,MED,Y
+Harriet Tubman,15,I'm standin' at the stretch line,line,19,"'member I was underground, now everybody on my line",line,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",Kunta,16,"Kunta Kinte, all my life, I had to fight",Kinte,INNER,SLANT,spelling,LOW,Y
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",life,16,"Kunta Kinte, all my life, I had to fight",fight,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",fight,17,"In the projects, all my life, I had to grind",grind,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",all,17,"In the projects, all my life, I had to grind",all,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",fight,17,"In the projects, all my life, I had to grind",life,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",had,17,"In the projects, all my life, I had to grind",had,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",life,17,"In the projects, all my life, I had to grind",grind,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",life,17,"In the projects, all my life, I had to grind",life,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",fight,18,Young nigga had to hustle to survive,survive,END,SLANT,cmu,MED,Y
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",had,18,Young nigga had to hustle to survive,had,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",life,18,Young nigga had to hustle to survive,survive,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",fight,19,"'member I was underground, now everybody on my line",line,END,SLANT,cmu,MED,Y
+Harriet Tubman,16,"Kunta Kinte, all my life, I had to fight",fight,20,"Put the hood on TV, every day I'm on the rise",rise,END,SLANT,cmu,MED,Y
+Harriet Tubman,17,"In the projects, all my life, I had to grind",life,17,"In the projects, all my life, I had to grind",grind,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,17,"In the projects, all my life, I had to grind",grind,18,Young nigga had to hustle to survive,survive,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,17,"In the projects, all my life, I had to grind",had,18,Young nigga had to hustle to survive,had,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,17,"In the projects, all my life, I had to grind",life,18,Young nigga had to hustle to survive,survive,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,17,"In the projects, all my life, I had to grind",grind,19,"'member I was underground, now everybody on my line",line,END,SLANT,cmu,MED,Y
+Harriet Tubman,17,"In the projects, all my life, I had to grind",life,19,"'member I was underground, now everybody on my line",line,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,17,"In the projects, all my life, I had to grind",projects,19,"'member I was underground, now everybody on my line",everybody,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,17,"In the projects, all my life, I had to grind",grind,20,"Put the hood on TV, every day I'm on the rise",rise,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,17,"In the projects, all my life, I had to grind",grind,21,"And I rescued all my niggas, you ain't gotta slang that iron",iron,END,SLANT,cmu,MED,Y
+Harriet Tubman,18,Young nigga had to hustle to survive,Young,18,Young nigga had to hustle to survive,hustle,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,18,Young nigga had to hustle to survive,survive,19,"'member I was underground, now everybody on my line",line,END,SLANT,cmu,MED,Y
+Harriet Tubman,18,Young nigga had to hustle to survive,survive,20,"Put the hood on TV, every day I'm on the rise",rise,END,SLANT,cmu,MED,Y
+Harriet Tubman,18,Young nigga had to hustle to survive,survive,21,"And I rescued all my niggas, you ain't gotta slang that iron",iron,END,SLANT,cmu,MED,Y
+Harriet Tubman,18,Young nigga had to hustle to survive,survive,22,"They changed on a nigga, so I left they ass behind",behind,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,19,"'member I was underground, now everybody on my line",underground,19,"'member I was underground, now everybody on my line",now,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,19,"'member I was underground, now everybody on my line",line,20,"Put the hood on TV, every day I'm on the rise",rise,END,SLANT,cmu,MED,Y
+Harriet Tubman,19,"'member I was underground, now everybody on my line",'member,20,"Put the hood on TV, every day I'm on the rise",every,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,19,"'member I was underground, now everybody on my line",line,21,"And I rescued all my niggas, you ain't gotta slang that iron",iron,END,SLANT,cmu,MED,Y
+Harriet Tubman,19,"'member I was underground, now everybody on my line",'member,21,"And I rescued all my niggas, you ain't gotta slang that iron",rescued,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,19,"'member I was underground, now everybody on my line",everybody,21,"And I rescued all my niggas, you ain't gotta slang that iron",gotta,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,19,"'member I was underground, now everybody on my line",line,22,"They changed on a nigga, so I left they ass behind",behind,END,SLANT,cmu,MED,Y
+Harriet Tubman,20,"Put the hood on TV, every day I'm on the rise",Put,20,"Put the hood on TV, every day I'm on the rise",hood,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,20,"Put the hood on TV, every day I'm on the rise",rise,21,"And I rescued all my niggas, you ain't gotta slang that iron",iron,END,SLANT,cmu,MED,Y
+Harriet Tubman,20,"Put the hood on TV, every day I'm on the rise",day,21,"And I rescued all my niggas, you ain't gotta slang that iron",ain't,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,20,"Put the hood on TV, every day I'm on the rise",every,21,"And I rescued all my niggas, you ain't gotta slang that iron",rescued,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,20,"Put the hood on TV, every day I'm on the rise",rise,22,"They changed on a nigga, so I left they ass behind",behind,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,20,"Put the hood on TV, every day I'm on the rise",day,22,"They changed on a nigga, so I left they ass behind",changed,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,20,"Put the hood on TV, every day I'm on the rise",every,22,"They changed on a nigga, so I left they ass behind",left,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,21,"And I rescued all my niggas, you ain't gotta slang that iron",iron,22,"They changed on a nigga, so I left they ass behind",behind,END,SLANT,cmu,MED,Y
+Harriet Tubman,21,"And I rescued all my niggas, you ain't gotta slang that iron",ain't,22,"They changed on a nigga, so I left they ass behind",changed,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,21,"And I rescued all my niggas, you ain't gotta slang that iron",niggas,22,"They changed on a nigga, so I left they ass behind",ass,INNER,PERFECT,spelling,MED,Y
+Harriet Tubman,21,"And I rescued all my niggas, you ain't gotta slang that iron",niggas,22,"They changed on a nigga, so I left they ass behind",nigga,INNER,SLANT,spelling,LOW,Y
+Harriet Tubman,21,"And I rescued all my niggas, you ain't gotta slang that iron",rescued,22,"They changed on a nigga, so I left they ass behind",left,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,21,"And I rescued all my niggas, you ain't gotta slang that iron",slang,22,"They changed on a nigga, so I left they ass behind",ass,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,21,"And I rescued all my niggas, you ain't gotta slang that iron",iron,23,Feel like Harriet Tubman,like,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,21,"And I rescued all my niggas, you ain't gotta slang that iron",rescued,23,Feel like Harriet Tubman,Harriet,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,22,"They changed on a nigga, so I left they ass behind",behind,23,Feel like Harriet Tubman,like,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,22,"They changed on a nigga, so I left they ass behind",left,23,Feel like Harriet Tubman,Harriet,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,22,"They changed on a nigga, so I left they ass behind",ass,24,"I ain't stop, I kept runnin', they was actin' funny",actin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,22,"They changed on a nigga, so I left they ass behind",changed,24,"I ain't stop, I kept runnin', they was actin' funny",ain't,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,22,"They changed on a nigga, so I left they ass behind",left,24,"I ain't stop, I kept runnin', they was actin' funny",kept,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,23,Feel like Harriet Tubman,Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",funny,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,23,Feel like Harriet Tubman,Harriet,24,"I ain't stop, I kept runnin', they was actin' funny",kept,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,23,Feel like Harriet Tubman,Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,23,Feel like Harriet Tubman,Tubman,25,"I said the money train was coming, feel like Harriet Tubman",Tubman,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,23,Feel like Harriet Tubman,Feel,25,"I said the money train was coming, feel like Harriet Tubman",feel,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,23,Feel like Harriet Tubman,Harriet,25,"I said the money train was coming, feel like Harriet Tubman",Harriet,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,23,Feel like Harriet Tubman,Harriet,25,"I said the money train was coming, feel like Harriet Tubman",said,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,23,Feel like Harriet Tubman,like,25,"I said the money train was coming, feel like Harriet Tubman",like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,23,Feel like Harriet Tubman,Tubman,25,"I said the money train was coming, feel like Harriet Tubman",coming,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,23,Feel like Harriet Tubman,Tubman,25,"I said the money train was coming, feel like Harriet Tubman",money,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,23,Feel like Harriet Tubman,Tubman,27,Came back with some money,money,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",runnin,24,"I ain't stop, I kept runnin', they was actin' funny",funny,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",funny,25,"I said the money train was coming, feel like Harriet Tubman",Tubman,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",actin funny,25,"I said the money train was coming, feel like Harriet Tubman",said money,INNER,MULTI,multi,HIGH,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",ain't,25,"I said the money train was coming, feel like Harriet Tubman",train,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",funny,25,"I said the money train was coming, feel like Harriet Tubman",coming,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",funny,25,"I said the money train was coming, feel like Harriet Tubman",money,INNER,MULTI,multi,HIGH,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",kept,25,"I said the money train was coming, feel like Harriet Tubman",Harriet,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",kept,25,"I said the money train was coming, feel like Harriet Tubman",said,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",runnin,25,"I said the money train was coming, feel like Harriet Tubman",coming,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",runnin,25,"I said the money train was coming, feel like Harriet Tubman",money,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",runnin,25,"I said the money train was coming, feel like Harriet Tubman",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",actin,26,"I was posted on the ugly, I went cross the tracks",tracks,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",funny,26,"I was posted on the ugly, I went cross the tracks",ugly,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",kept,26,"I was posted on the ugly, I went cross the tracks",went,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",runnin,26,"I was posted on the ugly, I went cross the tracks",ugly,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,24,"I ain't stop, I kept runnin', they was actin' funny",funny,27,Came back with some money,money,END,MULTI,multi,HIGH,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",coming,25,"I said the money train was coming, feel like Harriet Tubman",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",money,25,"I said the money train was coming, feel like Harriet Tubman",coming,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",money,25,"I said the money train was coming, feel like Harriet Tubman",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",said,25,"I said the money train was coming, feel like Harriet Tubman",Harriet,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",coming,26,"I was posted on the ugly, I went cross the tracks",ugly,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",Harriet,26,"I was posted on the ugly, I went cross the tracks",went,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",money,26,"I was posted on the ugly, I went cross the tracks",ugly,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",said,26,"I was posted on the ugly, I went cross the tracks",went,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",Tubman,26,"I was posted on the ugly, I went cross the tracks",ugly,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",Tubman,27,Came back with some money,money,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",coming,27,Came back with some money,money,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",coming,27,Came back with some money,some,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",money,27,Came back with some money,money,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",money,27,Came back with some money,some,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",train,27,Came back with some money,Came,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,25,"I said the money train was coming, feel like Harriet Tubman",Tubman,27,Came back with some money,some,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,26,"I was posted on the ugly, I went cross the tracks",tracks,27,Came back with some money,back,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,26,"I was posted on the ugly, I went cross the tracks",ugly,27,Came back with some money,money,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,26,"I was posted on the ugly, I went cross the tracks",ugly,27,Came back with some money,some,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,26,"I was posted on the ugly, I went cross the tracks",went,28,Tryna do me like I'm Emmett Till,Emmett,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,27,Came back with some money,some,27,Came back with some money,money,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,27,Came back with some money,money,29,Runnin' like a fugitive,Runnin,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,27,Came back with some money,some,29,Runnin' like a fugitive,Runnin,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,28,Tryna do me like I'm Emmett Till,like,29,Runnin' like a fugitive,like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,28,Tryna do me like I'm Emmett Till,Emmett,30,"Jamestown, Virginia, slavery started and it's still there",there,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,28,Tryna do me like I'm Emmett Till,Till,30,"Jamestown, Virginia, slavery started and it's still there",still,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,28,Tryna do me like I'm Emmett Till,Till,30,"Jamestown, Virginia, slavery started and it's still there",Virginia,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,28,Tryna do me like I'm Emmett Till,Till,31,"2019, we'll be free after 400 years",years,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,30,"Jamestown, Virginia, slavery started and it's still there",Virginia,30,"Jamestown, Virginia, slavery started and it's still there",still,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,30,"Jamestown, Virginia, slavery started and it's still there",still,31,"2019, we'll be free after 400 years",years,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,30,"Jamestown, Virginia, slavery started and it's still there",Virginia,31,"2019, we'll be free after 400 years",years,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,30,"Jamestown, Virginia, slavery started and it's still there",started,32,I done got heartless,got,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,30,"Jamestown, Virginia, slavery started and it's still there",started,32,I done got heartless,heartless,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,30,"Jamestown, Virginia, slavery started and it's still there",there,34,Been so long I shed a tear,tear,END,PERFECT,cmu,HIGH,Y
+Harriet Tubman,31,"2019, we'll be free after 400 years",we'll,31,"2019, we'll be free after 400 years",free,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,31,"2019, we'll be free after 400 years",free,33,Street took my conscience,Street,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,31,"2019, we'll be free after 400 years",we'll,33,Street took my conscience,Street,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,32,I done got heartless,got,32,I done got heartless,heartless,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,32,I done got heartless,heartless,33,Street took my conscience,conscience,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,32,I done got heartless,got,33,Street took my conscience,conscience,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,shed,34,Been so long I shed a tear,tear,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,tear,35,"Blood, sweat in my vent",vent,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,shed,35,"Blood, sweat in my vent",sweat,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,shed,35,"Blood, sweat in my vent",vent,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,tear,35,"Blood, sweat in my vent",sweat,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,tear,36,Everything get a vent,vent,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,shed,36,Everything get a vent,get,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,shed,36,Everything get a vent,vent,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,tear,36,Everything get a vent,get,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,tear,37,I'm a need bloodshed,bloodshed,END,SLANT,cmu,MED,Y
+Harriet Tubman,34,Been so long I shed a tear,tear,38,Make ya' mama shed a tear,tear,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,35,"Blood, sweat in my vent",sweat,35,"Blood, sweat in my vent",vent,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,35,"Blood, sweat in my vent",vent,36,Everything get a vent,vent,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,35,"Blood, sweat in my vent",sweat,36,Everything get a vent,get,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,35,"Blood, sweat in my vent",sweat,36,Everything get a vent,vent,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,35,"Blood, sweat in my vent",vent,36,Everything get a vent,get,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,35,"Blood, sweat in my vent",vent,37,I'm a need bloodshed,bloodshed,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,35,"Blood, sweat in my vent",sweat,37,I'm a need bloodshed,bloodshed,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,35,"Blood, sweat in my vent",vent,38,Make ya' mama shed a tear,tear,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,36,Everything get a vent,get,36,Everything get a vent,vent,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,36,Everything get a vent,vent,37,I'm a need bloodshed,bloodshed,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,36,Everything get a vent,get,37,I'm a need bloodshed,bloodshed,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,36,Everything get a vent,vent,38,Make ya' mama shed a tear,tear,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,36,Everything get a vent,get,38,Make ya' mama shed a tear,shed,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,36,Everything get a vent,get,38,Make ya' mama shed a tear,tear,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,36,Everything get a vent,vent,38,Make ya' mama shed a tear,shed,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,37,I'm a need bloodshed,bloodshed,38,Make ya' mama shed a tear,tear,END,SLANT,cmu,MED,Y
+Harriet Tubman,37,I'm a need bloodshed,bloodshed,38,Make ya' mama shed a tear,shed,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,37,I'm a need bloodshed,bloodshed,39,You don't care 'bout how I feel,care,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,37,I'm a need bloodshed,need,39,You don't care 'bout how I feel,feel,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,38,Make ya' mama shed a tear,shed,38,Make ya' mama shed a tear,tear,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,38,Make ya' mama shed a tear,shed,39,You don't care 'bout how I feel,care,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,38,Make ya' mama shed a tear,tear,39,You don't care 'bout how I feel,care,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,38,Make ya' mama shed a tear,shed,40,What it took to get right here,get,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,38,Make ya' mama shed a tear,tear,40,What it took to get right here,get,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,39,You don't care 'bout how I feel,'bout,39,You don't care 'bout how I feel,how,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,39,You don't care 'bout how I feel,feel,40,What it took to get right here,here,END,SLANT,cmu,MED,Y
+Harriet Tubman,39,You don't care 'bout how I feel,care,40,What it took to get right here,get,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,39,You don't care 'bout how I feel,feel,42,Still I had to fight out here,here,END,SLANT,cmu,MED,Y
+Harriet Tubman,40,What it took to get right here,right,41,"Made a lot of sacrifices, yeah",sacrifices,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,40,What it took to get right here,here,42,Still I had to fight out here,here,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,40,What it took to get right here,right,42,Still I had to fight out here,fight,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,41,"Made a lot of sacrifices, yeah",sacrifices,42,Still I had to fight out here,fight,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,41,"Made a lot of sacrifices, yeah",Made,43,"Haitian revolutionary, but my lady from Syria",Haitian,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,41,"Made a lot of sacrifices, yeah",Made,43,"Haitian revolutionary, but my lady from Syria",lady,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,42,Still I had to fight out here,Still,43,"Haitian revolutionary, but my lady from Syria",Syria,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,42,Still I had to fight out here,fight,44,Standin' at the stretch line barefoot,line,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,42,Still I had to fight out here,had,44,Standin' at the stretch line barefoot,Standin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,43,"Haitian revolutionary, but my lady from Syria",Haitian,43,"Haitian revolutionary, but my lady from Syria",lady,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,43,"Haitian revolutionary, but my lady from Syria",revolutionary,44,Standin' at the stretch line barefoot,stretch,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,44,Standin' at the stretch line barefoot,line,45,"I feel like Toussaint, I feel like Boukman",like,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,44,Standin' at the stretch line barefoot,Standin,45,"I feel like Toussaint, I feel like Boukman",Toussaint,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,44,Standin' at the stretch line barefoot,barefoot,46,I'm standin' at the stretch line barefoot,barefoot,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,44,Standin' at the stretch line barefoot,line,46,I'm standin' at the stretch line barefoot,line,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,44,Standin' at the stretch line barefoot,Standin,46,I'm standin' at the stretch line barefoot,standin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,44,Standin' at the stretch line barefoot,stretch,46,I'm standin' at the stretch line barefoot,stretch,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,44,Standin' at the stretch line barefoot,barefoot,47,"They gave my dawg a long sentence, hit him with the textbook",textbook,END,SLANT,cmu,MED,Y
+Harriet Tubman,45,"I feel like Toussaint, I feel like Boukman",feel,45,"I feel like Toussaint, I feel like Boukman",feel,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,45,"I feel like Toussaint, I feel like Boukman",like,45,"I feel like Toussaint, I feel like Boukman",like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,45,"I feel like Toussaint, I feel like Boukman",like,46,I'm standin' at the stretch line barefoot,line,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,45,"I feel like Toussaint, I feel like Boukman",Toussaint,46,I'm standin' at the stretch line barefoot,standin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,46,I'm standin' at the stretch line barefoot,barefoot,47,"They gave my dawg a long sentence, hit him with the textbook",textbook,END,SLANT,cmu,MED,Y
+Harriet Tubman,46,I'm standin' at the stretch line barefoot,stretch,47,"They gave my dawg a long sentence, hit him with the textbook",sentence,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,46,I'm standin' at the stretch line barefoot,barefoot,48,"Hit him with the textbook, he can't even read",textbook,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,46,I'm standin' at the stretch line barefoot,standin,48,"Hit him with the textbook, he can't even read",can't,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,46,I'm standin' at the stretch line barefoot,stretch,48,"Hit him with the textbook, he can't even read",read,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",dawg,47,"They gave my dawg a long sentence, hit him with the textbook",long,INNER,SLANT,spelling,LOW,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",hit,47,"They gave my dawg a long sentence, hit him with the textbook",him,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",him,48,"Hit him with the textbook, he can't even read",him,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",him,48,"Hit him with the textbook, he can't even read",Hit,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",hit,48,"Hit him with the textbook, he can't even read",him,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",hit,48,"Hit him with the textbook, he can't even read",Hit,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",sentence,48,"Hit him with the textbook, he can't even read",read,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",textbook,48,"Hit him with the textbook, he can't even read",textbook,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",gave,49,"His family never finna go seem him, 'cause they sent him way up to Creek",way,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",him,49,"His family never finna go seem him, 'cause they sent him way up to Creek",finna,INNER,SLANT,spelling,LOW,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",him,49,"His family never finna go seem him, 'cause they sent him way up to Creek",him,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",hit,49,"His family never finna go seem him, 'cause they sent him way up to Creek",him,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",sentence,49,"His family never finna go seem him, 'cause they sent him way up to Creek",never,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,47,"They gave my dawg a long sentence, hit him with the textbook",sentence,49,"His family never finna go seem him, 'cause they sent him way up to Creek",sent,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,48,"Hit him with the textbook, he can't even read",Hit,48,"Hit him with the textbook, he can't even read",him,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,48,"Hit him with the textbook, he can't even read",can't,49,"His family never finna go seem him, 'cause they sent him way up to Creek",family,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,48,"Hit him with the textbook, he can't even read",even,49,"His family never finna go seem him, 'cause they sent him way up to Creek",Creek,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,48,"Hit him with the textbook, he can't even read",even,49,"His family never finna go seem him, 'cause they sent him way up to Creek",seem,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,48,"Hit him with the textbook, he can't even read",him,49,"His family never finna go seem him, 'cause they sent him way up to Creek",finna,INNER,SLANT,spelling,LOW,Y
+Harriet Tubman,48,"Hit him with the textbook, he can't even read",him,49,"His family never finna go seem him, 'cause they sent him way up to Creek",him,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,48,"Hit him with the textbook, he can't even read",Hit,49,"His family never finna go seem him, 'cause they sent him way up to Creek",him,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,48,"Hit him with the textbook, he can't even read",read,49,"His family never finna go seem him, 'cause they sent him way up to Creek",never,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,48,"Hit him with the textbook, he can't even read",read,49,"His family never finna go seem him, 'cause they sent him way up to Creek",sent,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",finna,49,"His family never finna go seem him, 'cause they sent him way up to Creek",him,INNER,SLANT,spelling,LOW,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",him,49,"His family never finna go seem him, 'cause they sent him way up to Creek",him,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",never,49,"His family never finna go seem him, 'cause they sent him way up to Creek",sent,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",seem,49,"His family never finna go seem him, 'cause they sent him way up to Creek",Creek,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",go,50,The society corrupted we going through modernized slavery,going,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",way,50,The society corrupted we going through modernized slavery,slavery,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",family,51,Sell a black male to a plantation,black,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",never,51,Sell a black male to a plantation,Sell,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",sent,51,Sell a black male to a plantation,Sell,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",way,51,Sell a black male to a plantation,male,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,49,"His family never finna go seem him, 'cause they sent him way up to Creek",way,51,Sell a black male to a plantation,plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,society,50,The society corrupted we going through modernized slavery,modernized,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,slavery,51,Sell a black male to a plantation,plantation,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,slavery,51,Sell a black male to a plantation,male,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,slavery,52,Like a slave master sell a black male to a plantation,plantation,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,modernized,52,Like a slave master sell a black male to a plantation,Like,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,slavery,52,Like a slave master sell a black male to a plantation,male,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,slavery,52,Like a slave master sell a black male to a plantation,slave,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,society,52,Like a slave master sell a black male to a plantation,Like,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,slavery,53,"Bust a lick, right on Plantation",Plantation,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,50,The society corrupted we going through modernized slavery,slavery,54,"Double back, hit a lick right on Plantation",Plantation,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,51,Sell a black male to a plantation,male,51,Sell a black male to a plantation,plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,51,Sell a black male to a plantation,plantation,52,Like a slave master sell a black male to a plantation,plantation,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,51,Sell a black male to a plantation,black,52,Like a slave master sell a black male to a plantation,black,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,51,Sell a black male to a plantation,black,52,Like a slave master sell a black male to a plantation,master,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,51,Sell a black male to a plantation,male,52,Like a slave master sell a black male to a plantation,male,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,51,Sell a black male to a plantation,male,52,Like a slave master sell a black male to a plantation,plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,51,Sell a black male to a plantation,male,52,Like a slave master sell a black male to a plantation,slave,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,51,Sell a black male to a plantation,plantation,52,Like a slave master sell a black male to a plantation,male,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,51,Sell a black male to a plantation,plantation,52,Like a slave master sell a black male to a plantation,slave,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,51,Sell a black male to a plantation,Sell,52,Like a slave master sell a black male to a plantation,sell,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,51,Sell a black male to a plantation,plantation,53,"Bust a lick, right on Plantation",Plantation,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,51,Sell a black male to a plantation,male,53,"Bust a lick, right on Plantation",Plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,51,Sell a black male to a plantation,plantation,54,"Double back, hit a lick right on Plantation",Plantation,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,51,Sell a black male to a plantation,plantation,55,What happened to salvation?,salvation,END,MULTI,multi,HIGH,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,male,52,Like a slave master sell a black male to a plantation,plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,master,52,Like a slave master sell a black male to a plantation,black,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,slave,52,Like a slave master sell a black male to a plantation,male,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,slave,52,Like a slave master sell a black male to a plantation,plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,plantation,53,"Bust a lick, right on Plantation",Plantation,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,Like,53,"Bust a lick, right on Plantation",right,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,male,53,"Bust a lick, right on Plantation",Plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,slave,53,"Bust a lick, right on Plantation",Plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,plantation,54,"Double back, hit a lick right on Plantation",Plantation,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,black,54,"Double back, hit a lick right on Plantation",back,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,Like,54,"Double back, hit a lick right on Plantation",right,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,male,54,"Double back, hit a lick right on Plantation",Plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,master,54,"Double back, hit a lick right on Plantation",back,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,slave,54,"Double back, hit a lick right on Plantation",Plantation,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,plantation,55,What happened to salvation?,salvation,END,MULTI,multi,HIGH,Y
+Harriet Tubman,52,Like a slave master sell a black male to a plantation,plantation,56,"Sniper Gang, I'm tryna build a foundation",foundation,END,MULTI,multi,HIGH,Y
+Harriet Tubman,53,"Bust a lick, right on Plantation",Plantation,54,"Double back, hit a lick right on Plantation",Plantation,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,53,"Bust a lick, right on Plantation",Bust,54,"Double back, hit a lick right on Plantation",Double,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,53,"Bust a lick, right on Plantation",lick,54,"Double back, hit a lick right on Plantation",hit,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,53,"Bust a lick, right on Plantation",lick,54,"Double back, hit a lick right on Plantation",lick,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,53,"Bust a lick, right on Plantation",right,54,"Double back, hit a lick right on Plantation",right,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,53,"Bust a lick, right on Plantation",Plantation,55,What happened to salvation?,salvation,END,MULTI,multi,HIGH,Y
+Harriet Tubman,53,"Bust a lick, right on Plantation",Bust,55,What happened to salvation?,What,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,53,"Bust a lick, right on Plantation",Plantation,56,"Sniper Gang, I'm tryna build a foundation",foundation,END,MULTI,multi,HIGH,Y
+Harriet Tubman,54,"Double back, hit a lick right on Plantation",hit,54,"Double back, hit a lick right on Plantation",lick,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,54,"Double back, hit a lick right on Plantation",Plantation,55,What happened to salvation?,salvation,END,MULTI,multi,HIGH,Y
+Harriet Tubman,54,"Double back, hit a lick right on Plantation",back,55,What happened to salvation?,happened,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,54,"Double back, hit a lick right on Plantation",Double,55,What happened to salvation?,What,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,54,"Double back, hit a lick right on Plantation",Plantation,56,"Sniper Gang, I'm tryna build a foundation",foundation,END,MULTI,multi,HIGH,Y
+Harriet Tubman,54,"Double back, hit a lick right on Plantation",back,56,"Sniper Gang, I'm tryna build a foundation",Gang,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,54,"Double back, hit a lick right on Plantation",hit,56,"Sniper Gang, I'm tryna build a foundation",build,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,54,"Double back, hit a lick right on Plantation",lick,56,"Sniper Gang, I'm tryna build a foundation",build,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,54,"Double back, hit a lick right on Plantation",right,56,"Sniper Gang, I'm tryna build a foundation",Sniper,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,55,What happened to salvation?,salvation,56,"Sniper Gang, I'm tryna build a foundation",foundation,END,MULTI,multi,HIGH,Y
+Harriet Tubman,55,What happened to salvation?,happened,56,"Sniper Gang, I'm tryna build a foundation",Gang,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,55,What happened to salvation?,What,57,And I'm runnin' like I'm Harriet Tubman,runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,55,What happened to salvation?,What,57,And I'm runnin' like I'm Harriet Tubman,Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,56,"Sniper Gang, I'm tryna build a foundation",Sniper,57,And I'm runnin' like I'm Harriet Tubman,like,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,56,"Sniper Gang, I'm tryna build a foundation",Sniper,58,I'm runnin' like I'm Harriet Tubman,like,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,runnin,57,And I'm runnin' like I'm Harriet Tubman,Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,Tubman,58,I'm runnin' like I'm Harriet Tubman,Tubman,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,Harriet,58,I'm runnin' like I'm Harriet Tubman,Harriet,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,like,58,I'm runnin' like I'm Harriet Tubman,like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,runnin,58,I'm runnin' like I'm Harriet Tubman,runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,runnin,58,I'm runnin' like I'm Harriet Tubman,Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,Tubman,58,I'm runnin' like I'm Harriet Tubman,runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Tubman,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,Harriet,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Harriet,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,like,59,"Yeah, I'm runnin' like I'm Harriet Tubman",like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,runnin,59,"Yeah, I'm runnin' like I'm Harriet Tubman",runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,runnin,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,57,And I'm runnin' like I'm Harriet Tubman,Tubman,60,Runnin' like I'm Harriet Tubman,Tubman,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,runnin,58,I'm runnin' like I'm Harriet Tubman,Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Tubman,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,Harriet,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Harriet,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,like,59,"Yeah, I'm runnin' like I'm Harriet Tubman",like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,runnin,59,"Yeah, I'm runnin' like I'm Harriet Tubman",runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,runnin,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,Tubman,60,Runnin' like I'm Harriet Tubman,Tubman,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,Harriet,60,Runnin' like I'm Harriet Tubman,Harriet,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,like,60,Runnin' like I'm Harriet Tubman,like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,runnin,60,Runnin' like I'm Harriet Tubman,Runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,runnin,60,Runnin' like I'm Harriet Tubman,Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,58,I'm runnin' like I'm Harriet Tubman,Tubman,60,Runnin' like I'm Harriet Tubman,Runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",runnin,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Tubman,60,Runnin' like I'm Harriet Tubman,Tubman,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Harriet,60,Runnin' like I'm Harriet Tubman,Harriet,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",like,60,Runnin' like I'm Harriet Tubman,like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",runnin,60,Runnin' like I'm Harriet Tubman,Runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",runnin,60,Runnin' like I'm Harriet Tubman,Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Tubman,60,Runnin' like I'm Harriet Tubman,Runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Harriet,61,Runnin' like I'm Jesse James,Jesse,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",like,61,Runnin' like I'm Jesse James,like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",runnin,61,Runnin' like I'm Jesse James,Runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,59,"Yeah, I'm runnin' like I'm Harriet Tubman",Tubman,61,Runnin' like I'm Jesse James,Runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,60,Runnin' like I'm Harriet Tubman,Runnin,60,Runnin' like I'm Harriet Tubman,Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,60,Runnin' like I'm Harriet Tubman,Harriet,61,Runnin' like I'm Jesse James,Jesse,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,60,Runnin' like I'm Harriet Tubman,like,61,Runnin' like I'm Jesse James,like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,60,Runnin' like I'm Harriet Tubman,Runnin,61,Runnin' like I'm Jesse James,Runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,60,Runnin' like I'm Harriet Tubman,Tubman,61,Runnin' like I'm Jesse James,Runnin,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,60,Runnin' like I'm Harriet Tubman,Harriet,62,Like I'm tryna get away,get,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,60,Runnin' like I'm Harriet Tubman,like,62,Like I'm tryna get away,Like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,61,Runnin' like I'm Jesse James,James,62,Like I'm tryna get away,away,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,61,Runnin' like I'm Jesse James,Jesse,62,Like I'm tryna get away,get,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,61,Runnin' like I'm Jesse James,like,62,Like I'm tryna get away,Like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,61,Runnin' like I'm Jesse James,James,63,Runnin' like a runaway slave,slave,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,61,Runnin' like I'm Jesse James,James,63,Runnin' like a runaway slave,runaway,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,61,Runnin' like I'm Jesse James,like,63,Runnin' like a runaway slave,like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,61,Runnin' like I'm Jesse James,Runnin,63,Runnin' like a runaway slave,Runnin,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,61,Runnin' like I'm Jesse James,James,64,I just wanna runaway,runaway,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,61,Runnin' like I'm Jesse James,James,65,"Ain't never ran before, so what's gonna make me run today?",today,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,62,Like I'm tryna get away,away,63,Runnin' like a runaway slave,slave,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,62,Like I'm tryna get away,away,63,Runnin' like a runaway slave,runaway,INNER,MULTI,multi,HIGH,Y
+Harriet Tubman,62,Like I'm tryna get away,get away,63,Runnin' like a runaway slave,like runaway,INNER,MULTI,multi,HIGH,Y
+Harriet Tubman,62,Like I'm tryna get away,Like,63,Runnin' like a runaway slave,like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,62,Like I'm tryna get away,away,64,I just wanna runaway,runaway,END,MULTI,multi,HIGH,Y
+Harriet Tubman,62,Like I'm tryna get away,away,65,"Ain't never ran before, so what's gonna make me run today?",today,END,PERFECT,cmu,HIGH,Y
+Harriet Tubman,63,Runnin' like a runaway slave,runaway,63,Runnin' like a runaway slave,slave,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,63,Runnin' like a runaway slave,slave,64,I just wanna runaway,runaway,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,63,Runnin' like a runaway slave,runaway,64,I just wanna runaway,runaway,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,63,Runnin' like a runaway slave,slave,65,"Ain't never ran before, so what's gonna make me run today?",today,END,ASSONANCE,vowel,MED,Y
+Harriet Tubman,63,Runnin' like a runaway slave,runaway,65,"Ain't never ran before, so what's gonna make me run today?",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,63,Runnin' like a runaway slave,runaway,65,"Ain't never ran before, so what's gonna make me run today?",make,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,63,Runnin' like a runaway slave,runaway,65,"Ain't never ran before, so what's gonna make me run today?",today,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,63,Runnin' like a runaway slave,Runnin,65,"Ain't never ran before, so what's gonna make me run today?",run,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,63,Runnin' like a runaway slave,Runnin,65,"Ain't never ran before, so what's gonna make me run today?",what's,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,63,Runnin' like a runaway slave,slave,65,"Ain't never ran before, so what's gonna make me run today?",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,63,Runnin' like a runaway slave,slave,65,"Ain't never ran before, so what's gonna make me run today?",make,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,64,I just wanna runaway,runaway,65,"Ain't never ran before, so what's gonna make me run today?",today,END,PERFECT,cmu,HIGH,Y
+Harriet Tubman,64,I just wanna runaway,runaway,65,"Ain't never ran before, so what's gonna make me run today?",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,64,I just wanna runaway,runaway,65,"Ain't never ran before, so what's gonna make me run today?",make,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,64,I just wanna runaway,wanna,65,"Ain't never ran before, so what's gonna make me run today?",gonna,INNER,MULTI,multi,HIGH,Y
+Harriet Tubman,64,I just wanna runaway,wanna,66,I just wanna to fly,wanna,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,64,I just wanna runaway,runaway,68,I just wanna to fly away-ay,away,END,MULTI,multi,HIGH,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",Ain't,65,"Ain't never ran before, so what's gonna make me run today?",make,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",Ain't,65,"Ain't never ran before, so what's gonna make me run today?",today,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",make,65,"Ain't never ran before, so what's gonna make me run today?",today,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",what's,65,"Ain't never ran before, so what's gonna make me run today?",run,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",gonna,66,I just wanna to fly,wanna,INNER,MULTI,multi,HIGH,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",Ain't,67,"I just wanna to fly away, I just wanna to fly",away,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",gonna,67,"I just wanna to fly away, I just wanna to fly",wanna,INNER,MULTI,multi,HIGH,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",make,67,"I just wanna to fly away, I just wanna to fly",away,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",today,67,"I just wanna to fly away, I just wanna to fly",away,INNER,PERFECT,cmu,HIGH,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",what's gonna,67,"I just wanna to fly away, I just wanna to fly",away wanna,INNER,MULTI,multi,HIGH,Y
+Harriet Tubman,65,"Ain't never ran before, so what's gonna make me run today?",today,68,I just wanna to fly away-ay,away,END,PERFECT,cmu,HIGH,Y
+Harriet Tubman,66,I just wanna to fly,fly,67,"I just wanna to fly away, I just wanna to fly",fly,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,66,I just wanna to fly,fly,67,"I just wanna to fly away, I just wanna to fly",fly,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,66,I just wanna to fly,wanna,67,"I just wanna to fly away, I just wanna to fly",wanna,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,66,I just wanna to fly,fly,68,I just wanna to fly away-ay,fly,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,66,I just wanna to fly,wanna,68,I just wanna to fly away-ay,wanna,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,67,"I just wanna to fly away, I just wanna to fly",fly,67,"I just wanna to fly away, I just wanna to fly",fly,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,67,"I just wanna to fly away, I just wanna to fly",wanna,67,"I just wanna to fly away, I just wanna to fly",wanna,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,67,"I just wanna to fly away, I just wanna to fly",away,68,I just wanna to fly away-ay,away,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,67,"I just wanna to fly away, I just wanna to fly",fly,68,I just wanna to fly away-ay,fly,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,67,"I just wanna to fly away, I just wanna to fly",wanna,68,I just wanna to fly away-ay,wanna,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,67,"I just wanna to fly away, I just wanna to fly",fly,69,I Feel like Harriet Tubman,like,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,68,I just wanna to fly away-ay,fly,69,I Feel like Harriet Tubman,like,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,68,I just wanna to fly away-ay,away,70,"I said the money train coming, I feel like Harriet Tubman",train,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,68,I just wanna to fly away-ay,fly,70,"I said the money train coming, I feel like Harriet Tubman",like,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,69,I Feel like Harriet Tubman,Tubman,70,"I said the money train coming, I feel like Harriet Tubman",Tubman,END,REPEAT,spelling,HIGH,N
+Harriet Tubman,69,I Feel like Harriet Tubman,Feel,70,"I said the money train coming, I feel like Harriet Tubman",feel,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,69,I Feel like Harriet Tubman,Harriet,70,"I said the money train coming, I feel like Harriet Tubman",Harriet,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,69,I Feel like Harriet Tubman,Harriet,70,"I said the money train coming, I feel like Harriet Tubman",said,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,69,I Feel like Harriet Tubman,like,70,"I said the money train coming, I feel like Harriet Tubman",like,INNER,REPEAT,spelling,HIGH,N
+Harriet Tubman,69,I Feel like Harriet Tubman,Tubman,70,"I said the money train coming, I feel like Harriet Tubman",coming,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,69,I Feel like Harriet Tubman,Tubman,70,"I said the money train coming, I feel like Harriet Tubman",money,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,70,"I said the money train coming, I feel like Harriet Tubman",coming,70,"I said the money train coming, I feel like Harriet Tubman",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,70,"I said the money train coming, I feel like Harriet Tubman",money,70,"I said the money train coming, I feel like Harriet Tubman",coming,INNER,SLANT,cmu,MED,Y
+Harriet Tubman,70,"I said the money train coming, I feel like Harriet Tubman",money,70,"I said the money train coming, I feel like Harriet Tubman",Tubman,INNER,ASSONANCE,vowel,MED,Y
+Harriet Tubman,70,"I said the money train coming, I feel like Harriet Tubman",said,70,"I said the money train coming, I feel like Harriet Tubman",Harriet,INNER,ASSONANCE,vowel,MED,Y

@@ -1,0 +1,498 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Deal,1,We be closin' deals like a Floyd fight,like,1,We be closin' deals like a Floyd fight,fight,INNER,SLANT,cmu,MED,Y
+Deal,1,We be closin' deals like a Floyd fight,fight,2,"We gon' look like Pacquiao, he got that white",white,END,PERFECT,cmu,HIGH,Y
+Deal,1,We be closin' deals like a Floyd fight,fight,2,"We gon' look like Pacquiao, he got that white",like,INNER,SLANT,cmu,MED,Y
+Deal,1,We be closin' deals like a Floyd fight,like,2,"We gon' look like Pacquiao, he got that white",like,INNER,REPEAT,spelling,HIGH,N
+Deal,1,We be closin' deals like a Floyd fight,like,2,"We gon' look like Pacquiao, he got that white",white,INNER,SLANT,cmu,MED,Y
+Deal,1,We be closin' deals like a Floyd fight,fight,3,"Richard Mille two fifty, got no diamonds in it",diamonds,END,ASSONANCE,vowel,MED,Y
+Deal,1,We be closin' deals like a Floyd fight,closin,3,"Richard Mille two fifty, got no diamonds in it",no,INNER,ASSONANCE,vowel,MED,Y
+Deal,1,We be closin' deals like a Floyd fight,like,3,"Richard Mille two fifty, got no diamonds in it",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Deal,2,"We gon' look like Pacquiao, he got that white",like,2,"We gon' look like Pacquiao, he got that white",white,INNER,SLANT,cmu,MED,Y
+Deal,2,"We gon' look like Pacquiao, he got that white",white,3,"Richard Mille two fifty, got no diamonds in it",diamonds,END,ASSONANCE,vowel,MED,Y
+Deal,2,"We gon' look like Pacquiao, he got that white",got,3,"Richard Mille two fifty, got no diamonds in it",got,INNER,REPEAT,spelling,HIGH,N
+Deal,2,"We gon' look like Pacquiao, he got that white",like,3,"Richard Mille two fifty, got no diamonds in it",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Deal,2,"We gon' look like Pacquiao, he got that white",Pacquiao,3,"Richard Mille two fifty, got no diamonds in it",no,INNER,ASSONANCE,vowel,LOW,N
+Deal,2,"We gon' look like Pacquiao, he got that white",got,4,"Bentley, it's not tinted, want you see me in it",not,INNER,PERFECT,cmu,HIGH,Y
+Deal,2,"We gon' look like Pacquiao, he got that white",got,4,"Bentley, it's not tinted, want you see me in it",want,INNER,SLANT,cmu,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",Mille,3,"Richard Mille two fifty, got no diamonds in it",fifty,INNER,ASSONANCE,vowel,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",Richard,3,"Richard Mille two fifty, got no diamonds in it",fifty,INNER,ASSONANCE,vowel,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",Richard,3,"Richard Mille two fifty, got no diamonds in it",Mille,INNER,ASSONANCE,vowel,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",fifty,4,"Bentley, it's not tinted, want you see me in it",tinted,INNER,ASSONANCE,vowel,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",got,4,"Bentley, it's not tinted, want you see me in it",not,INNER,PERFECT,cmu,HIGH,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",got,4,"Bentley, it's not tinted, want you see me in it",want,INNER,SLANT,cmu,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",Mille,4,"Bentley, it's not tinted, want you see me in it",tinted,INNER,ASSONANCE,vowel,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",Richard,4,"Bentley, it's not tinted, want you see me in it",tinted,INNER,ASSONANCE,vowel,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",fifty,5,I done fucked that many hoes at Magic City,City,INNER,SLANT,cmu,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",Mille,5,I done fucked that many hoes at Magic City,City,INNER,SLANT,cmu,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",no,5,I done fucked that many hoes at Magic City,hoes,INNER,ASSONANCE,vowel,MED,Y
+Deal,3,"Richard Mille two fifty, got no diamonds in it",Richard,5,I done fucked that many hoes at Magic City,City,INNER,ASSONANCE,vowel,MED,Y
+Deal,4,"Bentley, it's not tinted, want you see me in it",not,4,"Bentley, it's not tinted, want you see me in it",want,INNER,SLANT,cmu,MED,Y
+Deal,4,"Bentley, it's not tinted, want you see me in it",Bentley,5,I done fucked that many hoes at Magic City,many,INNER,ASSONANCE,vowel,MED,Y
+Deal,4,"Bentley, it's not tinted, want you see me in it",tinted,5,I done fucked that many hoes at Magic City,City,INNER,ASSONANCE,vowel,MED,Y
+Deal,4,"Bentley, it's not tinted, want you see me in it",tinted,6,"Verizon, my money up, my wifi lit",lit,INNER,ASSONANCE,vowel,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,done,5,I done fucked that many hoes at Magic City,fucked,INNER,ASSONANCE,vowel,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,City,6,"Verizon, my money up, my wifi lit",lit,END,SLANT,cmu,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,done,6,"Verizon, my money up, my wifi lit",money,INNER,SLANT,cmu,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,fucked,6,"Verizon, my money up, my wifi lit",money,INNER,ASSONANCE,vowel,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,City,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",lick,END,SLANT,cmu,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,City,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",hit,INNER,SLANT,cmu,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,City,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",thinkin,INNER,ASSONANCE,vowel,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,hoes,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",know,INNER,ASSONANCE,vowel,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,hoes,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",no,INNER,ASSONANCE,vowel,MED,Y
+Deal,5,I done fucked that many hoes at Magic City,City,9,I just dropped a whole bird on my wrist,wrist,END,SLANT,cmu,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",Verizon,6,"Verizon, my money up, my wifi lit",wifi,INNER,ASSONANCE,vowel,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",lit,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",lick,END,SLANT,cmu,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",lit,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",hit,INNER,PERFECT,cmu,HIGH,Y
+Deal,6,"Verizon, my money up, my wifi lit",lit,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",thinkin,INNER,ASSONANCE,vowel,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",Verizon,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",twice,INNER,ASSONANCE,vowel,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",wifi,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",twice,INNER,ASSONANCE,vowel,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",lit,8,I don't think nobody here can stunt like this,think,INNER,ASSONANCE,vowel,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",money,8,I don't think nobody here can stunt like this,stunt,INNER,SLANT,cmu,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",Verizon,8,I don't think nobody here can stunt like this,like,INNER,ASSONANCE,vowel,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",wifi,8,I don't think nobody here can stunt like this,like,INNER,ASSONANCE,vowel,MED,Y
+Deal,6,"Verizon, my money up, my wifi lit",lit,9,I just dropped a whole bird on my wrist,wrist,END,SLANT,cmu,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",hit,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",lick,INNER,SLANT,cmu,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",no,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",know,INNER,PERFECT,cmu,HIGH,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",thinkin,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",hit,INNER,ASSONANCE,vowel,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",thinkin,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",lick,INNER,ASSONANCE,vowel,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",hit,8,I don't think nobody here can stunt like this,think,INNER,ASSONANCE,vowel,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",know,8,I don't think nobody here can stunt like this,don't,INNER,ASSONANCE,vowel,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",lick,8,I don't think nobody here can stunt like this,think,INNER,SLANT,cmu,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",no,8,I don't think nobody here can stunt like this,don't,INNER,ASSONANCE,vowel,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",thinkin,8,I don't think nobody here can stunt like this,think,INNER,SLANT,cmu,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",twice,8,I don't think nobody here can stunt like this,like,INNER,SLANT,cmu,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",lick,9,I just dropped a whole bird on my wrist,wrist,END,ASSONANCE,vowel,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",hit,9,I just dropped a whole bird on my wrist,wrist,INNER,SLANT,cmu,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",know,9,I just dropped a whole bird on my wrist,whole,INNER,ASSONANCE,vowel,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",no,9,I just dropped a whole bird on my wrist,whole,INNER,ASSONANCE,vowel,MED,Y
+Deal,7,"Ain't no thinkin' twice, you know I hit the lick (Freebandz)",thinkin,9,I just dropped a whole bird on my wrist,wrist,INNER,ASSONANCE,vowel,MED,Y
+Deal,8,I don't think nobody here can stunt like this,nobody,8,I don't think nobody here can stunt like this,here,INNER,ASSONANCE,vowel,MED,Y
+Deal,8,I don't think nobody here can stunt like this,don't,9,I just dropped a whole bird on my wrist,whole,INNER,ASSONANCE,vowel,MED,Y
+Deal,8,I don't think nobody here can stunt like this,think,9,I just dropped a whole bird on my wrist,wrist,INNER,ASSONANCE,vowel,MED,Y
+Deal,8,I don't think nobody here can stunt like this,stunt,10,"Check my neck, I check my neck, the charm a hockey puck",puck,INNER,ASSONANCE,vowel,MED,Y
+Deal,9,I just dropped a whole bird on my wrist,dropped,10,"Check my neck, I check my neck, the charm a hockey puck",charm,INNER,ASSONANCE,vowel,MED,Y
+Deal,9,I just dropped a whole bird on my wrist,dropped,10,"Check my neck, I check my neck, the charm a hockey puck",hockey,INNER,SLANT,cmu,MED,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",charm,10,"Check my neck, I check my neck, the charm a hockey puck",hockey,INNER,ASSONANCE,vowel,MED,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",Check,10,"Check my neck, I check my neck, the charm a hockey puck",check,INNER,REPEAT,spelling,HIGH,N
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",Check,10,"Check my neck, I check my neck, the charm a hockey puck",neck,INNER,PERFECT,cmu,HIGH,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",neck,10,"Check my neck, I check my neck, the charm a hockey puck",check,INNER,PERFECT,cmu,HIGH,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",neck,10,"Check my neck, I check my neck, the charm a hockey puck",neck,INNER,REPEAT,spelling,HIGH,N
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",puck,11,I just ordered ten racks and once I throwed it up,throwed,END,SLANT,cmu,MED,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",Check,11,I just ordered ten racks and once I throwed it up,ten,INNER,SLANT,cmu,MED,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",neck,11,I just ordered ten racks and once I throwed it up,ten,INNER,SLANT,cmu,MED,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",puck,11,I just ordered ten racks and once I throwed it up,once,INNER,ASSONANCE,vowel,MED,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",Check,12,"Been ballin' for like ten summers, I'm still goin' up",ten,INNER,SLANT,cmu,MED,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",neck,12,"Been ballin' for like ten summers, I'm still goin' up",ten,INNER,SLANT,cmu,MED,Y
+Deal,10,"Check my neck, I check my neck, the charm a hockey puck",puck,12,"Been ballin' for like ten summers, I'm still goin' up",summers,INNER,ASSONANCE,vowel,MED,Y
+Deal,11,I just ordered ten racks and once I throwed it up,once,11,I just ordered ten racks and once I throwed it up,throwed,INNER,ASSONANCE,vowel,MED,Y
+Deal,11,I just ordered ten racks and once I throwed it up,once,12,"Been ballin' for like ten summers, I'm still goin' up",summers,INNER,SLANT,cmu,MED,Y
+Deal,11,I just ordered ten racks and once I throwed it up,racks,12,"Been ballin' for like ten summers, I'm still goin' up",ballin,INNER,ASSONANCE,vowel,MED,Y
+Deal,11,I just ordered ten racks and once I throwed it up,ten,12,"Been ballin' for like ten summers, I'm still goin' up",ten,INNER,REPEAT,spelling,HIGH,N
+Deal,11,I just ordered ten racks and once I throwed it up,throwed,12,"Been ballin' for like ten summers, I'm still goin' up",summers,INNER,ASSONANCE,vowel,MED,Y
+Deal,12,"Been ballin' for like ten summers, I'm still goin' up",still,13,I just showed a million on the ground without a deal,million,INNER,ASSONANCE,vowel,MED,Y
+Deal,12,"Been ballin' for like ten summers, I'm still goin' up",ballin,14,Three thousand dollar pants where them racks is,pants,INNER,ASSONANCE,vowel,MED,Y
+Deal,12,"Been ballin' for like ten summers, I'm still goin' up",ballin,14,Three thousand dollar pants where them racks is,racks,INNER,ASSONANCE,vowel,MED,Y
+Deal,12,"Been ballin' for like ten summers, I'm still goin' up",ten,14,Three thousand dollar pants where them racks is,where,INNER,SLANT,cmu,MED,Y
+Deal,13,I just showed a million on the ground without a deal,ground,13,I just showed a million on the ground without a deal,without,INNER,ASSONANCE,vowel,MED,Y
+Deal,13,I just showed a million on the ground without a deal,deal,14,Three thousand dollar pants where them racks is,Three,INNER,ASSONANCE,vowel,MED,Y
+Deal,13,I just showed a million on the ground without a deal,ground,14,Three thousand dollar pants where them racks is,thousand,INNER,SLANT,cmu,MED,Y
+Deal,13,I just showed a million on the ground without a deal,without,14,Three thousand dollar pants where them racks is,thousand,INNER,ASSONANCE,vowel,MED,Y
+Deal,13,I just showed a million on the ground without a deal,million,15,"You ought to kill yourself, you rockin' Giuseppes",kill,INNER,ASSONANCE,vowel,MED,Y
+Deal,14,Three thousand dollar pants where them racks is,pants,14,Three thousand dollar pants where them racks is,racks,INNER,ASSONANCE,vowel,MED,Y
+Deal,14,Three thousand dollar pants where them racks is,dollar,15,"You ought to kill yourself, you rockin' Giuseppes",rockin,INNER,ASSONANCE,vowel,MED,Y
+Deal,14,Three thousand dollar pants where them racks is,where,15,"You ought to kill yourself, you rockin' Giuseppes",yourself,INNER,ASSONANCE,vowel,MED,Y
+Deal,14,Three thousand dollar pants where them racks is,pants,16,Alexander McQueen when I'm steppin',Alexander,INNER,ASSONANCE,vowel,MED,Y
+Deal,14,Three thousand dollar pants where them racks is,racks,16,Alexander McQueen when I'm steppin',Alexander,INNER,ASSONANCE,vowel,MED,Y
+Deal,14,Three thousand dollar pants where them racks is,Three,16,Alexander McQueen when I'm steppin',McQueen,INNER,ASSONANCE,vowel,MED,Y
+Deal,14,Three thousand dollar pants where them racks is,where,16,Alexander McQueen when I'm steppin',steppin,INNER,ASSONANCE,vowel,MED,Y
+Deal,14,Three thousand dollar pants where them racks is,where,16,Alexander McQueen when I'm steppin',when,INNER,SLANT,cmu,MED,Y
+Deal,15,"You ought to kill yourself, you rockin' Giuseppes",yourself,16,Alexander McQueen when I'm steppin',steppin,INNER,ASSONANCE,vowel,MED,Y
+Deal,15,"You ought to kill yourself, you rockin' Giuseppes",yourself,16,Alexander McQueen when I'm steppin',when,INNER,ASSONANCE,vowel,MED,Y
+Deal,15,"You ought to kill yourself, you rockin' Giuseppes",yourself,17,"Balmain, Balmain, Balmain, steppin' the freshest",freshest,INNER,ASSONANCE,vowel,MED,Y
+Deal,15,"You ought to kill yourself, you rockin' Giuseppes",yourself,17,"Balmain, Balmain, Balmain, steppin' the freshest",steppin,INNER,ASSONANCE,vowel,MED,Y
+Deal,16,Alexander McQueen when I'm steppin',when,16,Alexander McQueen when I'm steppin',steppin,INNER,ASSONANCE,vowel,MED,Y
+Deal,16,Alexander McQueen when I'm steppin',steppin,17,"Balmain, Balmain, Balmain, steppin' the freshest",freshest,END,ASSONANCE,vowel,MED,Y
+Deal,16,Alexander McQueen when I'm steppin',steppin,17,"Balmain, Balmain, Balmain, steppin' the freshest",steppin,INNER,REPEAT,spelling,HIGH,N
+Deal,16,Alexander McQueen when I'm steppin',when,17,"Balmain, Balmain, Balmain, steppin' the freshest",freshest,INNER,ASSONANCE,vowel,MED,Y
+Deal,16,Alexander McQueen when I'm steppin',when,17,"Balmain, Balmain, Balmain, steppin' the freshest",steppin,INNER,ASSONANCE,vowel,MED,Y
+Deal,16,Alexander McQueen when I'm steppin',steppin,18,I'm rockin' three forty pointer diamond neck,neck,END,ASSONANCE,vowel,MED,Y
+Deal,16,Alexander McQueen when I'm steppin',McQueen,18,I'm rockin' three forty pointer diamond neck,three,INNER,ASSONANCE,vowel,MED,Y
+Deal,16,Alexander McQueen when I'm steppin',when,18,I'm rockin' three forty pointer diamond neck,neck,INNER,SLANT,cmu,MED,Y
+Deal,17,"Balmain, Balmain, Balmain, steppin' the freshest",Balmain,17,"Balmain, Balmain, Balmain, steppin' the freshest",Balmain,INNER,REPEAT,spelling,HIGH,N
+Deal,17,"Balmain, Balmain, Balmain, steppin' the freshest",steppin,17,"Balmain, Balmain, Balmain, steppin' the freshest",freshest,INNER,ASSONANCE,vowel,MED,Y
+Deal,17,"Balmain, Balmain, Balmain, steppin' the freshest",freshest,18,I'm rockin' three forty pointer diamond neck,neck,END,ASSONANCE,vowel,MED,Y
+Deal,17,"Balmain, Balmain, Balmain, steppin' the freshest",steppin,18,I'm rockin' three forty pointer diamond neck,neck,INNER,ASSONANCE,vowel,MED,Y
+Deal,18,I'm rockin' three forty pointer diamond neck,diamond,19,Sixty pointer diamond for a charm,diamond,INNER,REPEAT,spelling,HIGH,N
+Deal,18,I'm rockin' three forty pointer diamond neck,pointer,19,Sixty pointer diamond for a charm,pointer,INNER,REPEAT,spelling,HIGH,N
+Deal,18,I'm rockin' three forty pointer diamond neck,rockin,19,Sixty pointer diamond for a charm,charm,INNER,ASSONANCE,vowel,MED,Y
+Deal,18,I'm rockin' three forty pointer diamond neck,diamond,20,I'm lit up like a motherfuckin' stadium,like,INNER,ASSONANCE,vowel,MED,Y
+Deal,19,Sixty pointer diamond for a charm,diamond,20,I'm lit up like a motherfuckin' stadium,like,INNER,ASSONANCE,vowel,MED,Y
+Deal,19,Sixty pointer diamond for a charm,Sixty,20,I'm lit up like a motherfuckin' stadium,lit,INNER,ASSONANCE,vowel,MED,Y
+Deal,19,Sixty pointer diamond for a charm,charm,21,"RIchard Muir two fifty, got no diamonds in it",got,INNER,ASSONANCE,vowel,MED,Y
+Deal,19,Sixty pointer diamond for a charm,diamond,21,"RIchard Muir two fifty, got no diamonds in it",diamonds,INNER,SLANT,cmu,MED,Y
+Deal,19,Sixty pointer diamond for a charm,Sixty,21,"RIchard Muir two fifty, got no diamonds in it",fifty,INNER,ASSONANCE,vowel,MED,Y
+Deal,19,Sixty pointer diamond for a charm,Sixty,21,"RIchard Muir two fifty, got no diamonds in it",RIchard,INNER,ASSONANCE,vowel,MED,Y
+Deal,20,I'm lit up like a motherfuckin' stadium,like,21,"RIchard Muir two fifty, got no diamonds in it",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Deal,20,I'm lit up like a motherfuckin' stadium,lit,21,"RIchard Muir two fifty, got no diamonds in it",fifty,INNER,SLANT,cmu,MED,Y
+Deal,20,I'm lit up like a motherfuckin' stadium,lit,21,"RIchard Muir two fifty, got no diamonds in it",RIchard,INNER,ASSONANCE,vowel,MED,Y
+Deal,20,I'm lit up like a motherfuckin' stadium,motherfuckin,22,"AP skeleton, I got it bust down",bust,INNER,ASSONANCE,vowel,MED,Y
+Deal,21,"RIchard Muir two fifty, got no diamonds in it",RIchard,21,"RIchard Muir two fifty, got no diamonds in it",fifty,INNER,ASSONANCE,vowel,MED,Y
+Deal,21,"RIchard Muir two fifty, got no diamonds in it",got,22,"AP skeleton, I got it bust down",got,INNER,REPEAT,spelling,HIGH,N
+Deal,21,"RIchard Muir two fifty, got no diamonds in it",fifty,23,Bought my bitch a Patek and it's bust down,bitch,INNER,ASSONANCE,vowel,MED,Y
+Deal,21,"RIchard Muir two fifty, got no diamonds in it",got,23,Bought my bitch a Patek and it's bust down,Bought,INNER,PERFECT,cmu,HIGH,Y
+Deal,21,"RIchard Muir two fifty, got no diamonds in it",got,23,Bought my bitch a Patek and it's bust down,Patek,INNER,SLANT,cmu,MED,Y
+Deal,21,"RIchard Muir two fifty, got no diamonds in it",RIchard,23,Bought my bitch a Patek and it's bust down,bitch,INNER,SLANT,cmu,MED,Y
+Deal,22,"AP skeleton, I got it bust down",down,23,Bought my bitch a Patek and it's bust down,down,END,REPEAT,spelling,HIGH,N
+Deal,22,"AP skeleton, I got it bust down",bust,23,Bought my bitch a Patek and it's bust down,bust,INNER,REPEAT,spelling,HIGH,N
+Deal,22,"AP skeleton, I got it bust down",got,23,Bought my bitch a Patek and it's bust down,Bought,INNER,PERFECT,cmu,HIGH,Y
+Deal,22,"AP skeleton, I got it bust down",got,23,Bought my bitch a Patek and it's bust down,Patek,INNER,SLANT,cmu,MED,Y
+Deal,22,"AP skeleton, I got it bust down",down,24,Fuck around buy your bitch a Rollie if she bust down,down,END,REPEAT,spelling,HIGH,N
+Deal,22,"AP skeleton, I got it bust down",bust,24,Fuck around buy your bitch a Rollie if she bust down,bust,INNER,REPEAT,spelling,HIGH,N
+Deal,22,"AP skeleton, I got it bust down",bust,24,Fuck around buy your bitch a Rollie if she bust down,Fuck,INNER,ASSONANCE,vowel,MED,Y
+Deal,22,"AP skeleton, I got it bust down",down,24,Fuck around buy your bitch a Rollie if she bust down,around,INNER,SLANT,cmu,MED,Y
+Deal,22,"AP skeleton, I got it bust down",down,25,Every time I get a back end that's a touch down,down,END,REPEAT,spelling,HIGH,N
+Deal,23,Bought my bitch a Patek and it's bust down,Bought,23,Bought my bitch a Patek and it's bust down,Patek,INNER,SLANT,cmu,MED,Y
+Deal,23,Bought my bitch a Patek and it's bust down,down,24,Fuck around buy your bitch a Rollie if she bust down,down,END,REPEAT,spelling,HIGH,N
+Deal,23,Bought my bitch a Patek and it's bust down,bitch,24,Fuck around buy your bitch a Rollie if she bust down,bitch,INNER,REPEAT,spelling,HIGH,N
+Deal,23,Bought my bitch a Patek and it's bust down,bust,24,Fuck around buy your bitch a Rollie if she bust down,bust,INNER,REPEAT,spelling,HIGH,N
+Deal,23,Bought my bitch a Patek and it's bust down,bust,24,Fuck around buy your bitch a Rollie if she bust down,Fuck,INNER,ASSONANCE,vowel,MED,Y
+Deal,23,Bought my bitch a Patek and it's bust down,down,24,Fuck around buy your bitch a Rollie if she bust down,around,INNER,SLANT,cmu,MED,Y
+Deal,23,Bought my bitch a Patek and it's bust down,down,25,Every time I get a back end that's a touch down,down,END,REPEAT,spelling,HIGH,N
+Deal,23,Bought my bitch a Patek and it's bust down,bust,25,Every time I get a back end that's a touch down,touch,INNER,ASSONANCE,vowel,MED,Y
+Deal,24,Fuck around buy your bitch a Rollie if she bust down,around,24,Fuck around buy your bitch a Rollie if she bust down,down,INNER,SLANT,cmu,MED,Y
+Deal,24,Fuck around buy your bitch a Rollie if she bust down,Fuck,24,Fuck around buy your bitch a Rollie if she bust down,bust,INNER,ASSONANCE,vowel,MED,Y
+Deal,24,Fuck around buy your bitch a Rollie if she bust down,down,25,Every time I get a back end that's a touch down,down,END,REPEAT,spelling,HIGH,N
+Deal,24,Fuck around buy your bitch a Rollie if she bust down,around,25,Every time I get a back end that's a touch down,down,INNER,SLANT,cmu,MED,Y
+Deal,24,Fuck around buy your bitch a Rollie if she bust down,bust,25,Every time I get a back end that's a touch down,touch,INNER,ASSONANCE,vowel,MED,Y
+Deal,24,Fuck around buy your bitch a Rollie if she bust down,buy,25,Every time I get a back end that's a touch down,time,INNER,ASSONANCE,vowel,MED,Y
+Deal,24,Fuck around buy your bitch a Rollie if she bust down,Fuck,25,Every time I get a back end that's a touch down,touch,INNER,SLANT,cmu,MED,Y
+Deal,24,Fuck around buy your bitch a Rollie if she bust down,buy,26,"Ice on me check, yeah, benjis on me check, yeah",Ice,INNER,ASSONANCE,vowel,MED,Y
+Deal,25,Every time I get a back end that's a touch down,Every,25,Every time I get a back end that's a touch down,end,INNER,ASSONANCE,vowel,MED,Y
+Deal,25,Every time I get a back end that's a touch down,Every,25,Every time I get a back end that's a touch down,get,INNER,SLANT,cmu,MED,Y
+Deal,25,Every time I get a back end that's a touch down,get,25,Every time I get a back end that's a touch down,end,INNER,ASSONANCE,vowel,MED,Y
+Deal,25,Every time I get a back end that's a touch down,end,26,"Ice on me check, yeah, benjis on me check, yeah",check,INNER,ASSONANCE,vowel,MED,Y
+Deal,25,Every time I get a back end that's a touch down,Every,26,"Ice on me check, yeah, benjis on me check, yeah",check,INNER,SLANT,cmu,MED,Y
+Deal,25,Every time I get a back end that's a touch down,get,26,"Ice on me check, yeah, benjis on me check, yeah",check,INNER,SLANT,cmu,MED,Y
+Deal,25,Every time I get a back end that's a touch down,time,26,"Ice on me check, yeah, benjis on me check, yeah",Ice,INNER,SLANT,cmu,MED,Y
+Deal,25,Every time I get a back end that's a touch down,end,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,INNER,ASSONANCE,vowel,MED,Y
+Deal,25,Every time I get a back end that's a touch down,Every,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,INNER,SLANT,cmu,MED,Y
+Deal,25,Every time I get a back end that's a touch down,get,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,INNER,SLANT,cmu,MED,Y
+Deal,26,"Ice on me check, yeah, benjis on me check, yeah",check,26,"Ice on me check, yeah, benjis on me check, yeah",check,INNER,REPEAT,spelling,HIGH,N
+Deal,26,"Ice on me check, yeah, benjis on me check, yeah",check,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,END,PERFECT,cmu,HIGH,Y
+Deal,26,"Ice on me check, yeah, benjis on me check, yeah",check,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,INNER,PERFECT,cmu,HIGH,Y
+Deal,26,"Ice on me check, yeah, benjis on me check, yeah",check,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",wet,END,SLANT,cmu,MED,Y
+Deal,26,"Ice on me check, yeah, benjis on me check, yeah",check,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",wet,INNER,SLANT,cmu,MED,Y
+Deal,26,"Ice on me check, yeah, benjis on me check, yeah",Ice,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Deal,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",wet,END,SLANT,cmu,MED,Y
+Deal,27,"VVS's on me dawg, nigga look at my neck, yeah",dawg,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",All,INNER,SLANT,spelling,LOW,Y
+Deal,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,29,"Where you get that Gucci sweater, ain't come out 'til next year",get,INNER,SLANT,cmu,MED,Y
+Deal,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,29,"Where you get that Gucci sweater, ain't come out 'til next year",next,INNER,ASSONANCE,vowel,MED,Y
+Deal,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,29,"Where you get that Gucci sweater, ain't come out 'til next year",sweater,INNER,SLANT,cmu,MED,Y
+Deal,27,"VVS's on me dawg, nigga look at my neck, yeah",neck,29,"Where you get that Gucci sweater, ain't come out 'til next year",Where,INNER,SLANT,cmu,MED,Y
+Deal,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",cloudy,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",'round,INNER,SLANT,cmu,MED,Y
+Deal,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",everything,29,"Where you get that Gucci sweater, ain't come out 'til next year",'til,INNER,SLANT,cmu,MED,Y
+Deal,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",everything,29,"Where you get that Gucci sweater, ain't come out 'til next year",year,INNER,SLANT,cmu,MED,Y
+Deal,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",wet,29,"Where you get that Gucci sweater, ain't come out 'til next year",get,INNER,PERFECT,cmu,HIGH,Y
+Deal,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",wet,29,"Where you get that Gucci sweater, ain't come out 'til next year",next,INNER,ASSONANCE,vowel,MED,Y
+Deal,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",wet,29,"Where you get that Gucci sweater, ain't come out 'til next year",sweater,INNER,SLANT,cmu,MED,Y
+Deal,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",wet,29,"Where you get that Gucci sweater, ain't come out 'til next year",Where,INNER,SLANT,cmu,MED,Y
+Deal,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",'round,30,"I'm with Casino, 'bout to rob a casino (facts)",'bout,INNER,ASSONANCE,vowel,MED,Y
+Deal,28,"All your diamonds cloudy boy, everything 'round me wet, yeah",cloudy,30,"I'm with Casino, 'bout to rob a casino (facts)",'bout,INNER,SLANT,cmu,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",'til,29,"Where you get that Gucci sweater, ain't come out 'til next year",year,INNER,SLANT,cmu,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",get,29,"Where you get that Gucci sweater, ain't come out 'til next year",next,INNER,ASSONANCE,vowel,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",get,29,"Where you get that Gucci sweater, ain't come out 'til next year",sweater,INNER,SLANT,cmu,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",sweater,29,"Where you get that Gucci sweater, ain't come out 'til next year",next,INNER,ASSONANCE,vowel,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",Where,29,"Where you get that Gucci sweater, ain't come out 'til next year",get,INNER,SLANT,cmu,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",Where,29,"Where you get that Gucci sweater, ain't come out 'til next year",next,INNER,ASSONANCE,vowel,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",Where,29,"Where you get that Gucci sweater, ain't come out 'til next year",sweater,INNER,SLANT,cmu,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",'til,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",ticket,INNER,ASSONANCE,vowel,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",ain't,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",Made,INNER,ASSONANCE,vowel,MED,Y
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",Gucci,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",Cee,INNER,ASSONANCE,vowel,LOW,N
+Deal,29,"Where you get that Gucci sweater, ain't come out 'til next year",year,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",ticket,INNER,ASSONANCE,vowel,MED,Y
+Deal,30,"I'm with Casino, 'bout to rob a casino (facts)",Casino,30,"I'm with Casino, 'bout to rob a casino (facts)",casino,INNER,REPEAT,spelling,HIGH,N
+Deal,30,"I'm with Casino, 'bout to rob a casino (facts)",casino,32,I hit your main thing a gazebo (whack),gazebo,END,SLANT,cmu,MED,Y
+Deal,30,"I'm with Casino, 'bout to rob a casino (facts)",Casino,32,I hit your main thing a gazebo (whack),gazebo,INNER,SLANT,cmu,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",showin,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",Lo,INNER,ASSONANCE,vowel,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",ticket,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",nigga,INNER,SLANT,spelling,LOW,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",Made,32,I hit your main thing a gazebo (whack),main,INNER,SLANT,cmu,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",nigga,32,I hit your main thing a gazebo (whack),hit,INNER,SLANT,spelling,LOW,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",ticket,32,I hit your main thing a gazebo (whack),hit,INNER,SLANT,cmu,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",ticket,32,I hit your main thing a gazebo (whack),thing,INNER,ASSONANCE,vowel,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",Lo,33,"All these tennis chains, I no way I can be broke (check)",broke,END,ASSONANCE,vowel,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",half,33,"All these tennis chains, I no way I can be broke (check)",can,INNER,SLANT,cmu,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",Lo,33,"All these tennis chains, I no way I can be broke (check)",no,INNER,PERFECT,cmu,HIGH,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",Made,33,"All these tennis chains, I no way I can be broke (check)",chains,INNER,ASSONANCE,vowel,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",Made,33,"All these tennis chains, I no way I can be broke (check)",way,INNER,ASSONANCE,vowel,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",showin,33,"All these tennis chains, I no way I can be broke (check)",broke,INNER,SLANT,cmu,MED,Y
+Deal,31,"Made a half a ticket, nigga showin' Cee-Lo (racks)",showin,33,"All these tennis chains, I no way I can be broke (check)",no,INNER,ASSONANCE,vowel,MED,Y
+Deal,32,I hit your main thing a gazebo (whack),hit,32,I hit your main thing a gazebo (whack),thing,INNER,SLANT,cmu,MED,Y
+Deal,32,I hit your main thing a gazebo (whack),gazebo,33,"All these tennis chains, I no way I can be broke (check)",these,INNER,SLANT,cmu,MED,Y
+Deal,32,I hit your main thing a gazebo (whack),main,33,"All these tennis chains, I no way I can be broke (check)",chains,INNER,SLANT,cmu,MED,Y
+Deal,32,I hit your main thing a gazebo (whack),main,33,"All these tennis chains, I no way I can be broke (check)",way,INNER,ASSONANCE,vowel,MED,Y
+Deal,33,"All these tennis chains, I no way I can be broke (check)",chains,33,"All these tennis chains, I no way I can be broke (check)",way,INNER,ASSONANCE,vowel,MED,Y
+Deal,33,"All these tennis chains, I no way I can be broke (check)",no,33,"All these tennis chains, I no way I can be broke (check)",broke,INNER,ASSONANCE,vowel,MED,Y
+Problems,1,"Loud rolled on my hip, that's the extendo",extendo,2,"Got a book bag on, what's in it? a draco",draco,END,ASSONANCE,vowel,LOW,N
+Problems,1,"Loud rolled on my hip, that's the extendo",hip,3,"Major game, got them beams on them sticks",sticks,INNER,ASSONANCE,vowel,MED,Y
+Problems,2,"Got a book bag on, what's in it? a draco",draco,3,"Major game, got them beams on them sticks",game,INNER,SLANT,cmu,MED,Y
+Problems,2,"Got a book bag on, what's in it? a draco",draco,3,"Major game, got them beams on them sticks",Major,INNER,SLANT,cmu,MED,Y
+Problems,2,"Got a book bag on, what's in it? a draco",Got,3,"Major game, got them beams on them sticks",got,INNER,REPEAT,spelling,HIGH,N
+Problems,2,"Got a book bag on, what's in it? a draco",draco,4,"Keep a thirty-eight, I keep them shells with me",eight,INNER,SLANT,cmu,MED,Y
+Problems,3,"Major game, got them beams on them sticks",Major,3,"Major game, got them beams on them sticks",game,INNER,SLANT,cmu,MED,Y
+Problems,3,"Major game, got them beams on them sticks",beams,4,"Keep a thirty-eight, I keep them shells with me",Keep,INNER,ASSONANCE,vowel,MED,Y
+Problems,3,"Major game, got them beams on them sticks",beams,4,"Keep a thirty-eight, I keep them shells with me",thirty,INNER,ASSONANCE,vowel,MED,Y
+Problems,3,"Major game, got them beams on them sticks",game,4,"Keep a thirty-eight, I keep them shells with me",eight,INNER,SLANT,cmu,MED,Y
+Problems,3,"Major game, got them beams on them sticks",Major,4,"Keep a thirty-eight, I keep them shells with me",eight,INNER,SLANT,cmu,MED,Y
+Problems,3,"Major game, got them beams on them sticks",beams,5,"You don't want no problems, you don't want these problems",these,INNER,SLANT,cmu,MED,Y
+Problems,3,"Major game, got them beams on them sticks",got,5,"You don't want no problems, you don't want these problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Problems,3,"Major game, got them beams on them sticks",got,5,"You don't want no problems, you don't want these problems",want,INNER,SLANT,cmu,MED,Y
+Problems,4,"Keep a thirty-eight, I keep them shells with me",Keep,4,"Keep a thirty-eight, I keep them shells with me",keep,INNER,REPEAT,spelling,HIGH,N
+Problems,4,"Keep a thirty-eight, I keep them shells with me",Keep,4,"Keep a thirty-eight, I keep them shells with me",thirty,INNER,ASSONANCE,vowel,MED,Y
+Problems,4,"Keep a thirty-eight, I keep them shells with me",thirty,4,"Keep a thirty-eight, I keep them shells with me",keep,INNER,ASSONANCE,vowel,MED,Y
+Problems,4,"Keep a thirty-eight, I keep them shells with me",Keep,5,"You don't want no problems, you don't want these problems",these,INNER,SLANT,cmu,MED,Y
+Problems,4,"Keep a thirty-eight, I keep them shells with me",thirty,5,"You don't want no problems, you don't want these problems",these,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",don't,5,"You don't want no problems, you don't want these problems",don't,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",don't,5,"You don't want no problems, you don't want these problems",no,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",no,5,"You don't want no problems, you don't want these problems",don't,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",problems,5,"You don't want no problems, you don't want these problems",problems,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",problems,5,"You don't want no problems, you don't want these problems",want,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",want,5,"You don't want no problems, you don't want these problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",want,5,"You don't want no problems, you don't want these problems",want,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",problems,6,"You don't want no problems, you don't want no problems",problems,END,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",don't,6,"You don't want no problems, you don't want no problems",don't,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",don't,6,"You don't want no problems, you don't want no problems",no,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",no,6,"You don't want no problems, you don't want no problems",don't,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",no,6,"You don't want no problems, you don't want no problems",no,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",problems,6,"You don't want no problems, you don't want no problems",problems,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",problems,6,"You don't want no problems, you don't want no problems",want,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",want,6,"You don't want no problems, you don't want no problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",want,6,"You don't want no problems, you don't want no problems",want,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",problems,7,"You don't want these problems, you don't want no problems",problems,END,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",don't,7,"You don't want these problems, you don't want no problems",don't,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",don't,7,"You don't want these problems, you don't want no problems",no,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",no,7,"You don't want these problems, you don't want no problems",don't,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",no,7,"You don't want these problems, you don't want no problems",no,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",problems,7,"You don't want these problems, you don't want no problems",problems,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",problems,7,"You don't want these problems, you don't want no problems",want,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",these,7,"You don't want these problems, you don't want no problems",these,INNER,REPEAT,spelling,HIGH,N
+Problems,5,"You don't want no problems, you don't want these problems",want,7,"You don't want these problems, you don't want no problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Problems,5,"You don't want no problems, you don't want these problems",want,7,"You don't want these problems, you don't want no problems",want,INNER,REPEAT,spelling,HIGH,N
+Problems,6,"You don't want no problems, you don't want no problems",don't,6,"You don't want no problems, you don't want no problems",don't,INNER,REPEAT,spelling,HIGH,N
+Problems,6,"You don't want no problems, you don't want no problems",don't,6,"You don't want no problems, you don't want no problems",no,INNER,ASSONANCE,vowel,MED,Y
+Problems,6,"You don't want no problems, you don't want no problems",no,6,"You don't want no problems, you don't want no problems",don't,INNER,ASSONANCE,vowel,MED,Y
+Problems,6,"You don't want no problems, you don't want no problems",no,6,"You don't want no problems, you don't want no problems",no,INNER,REPEAT,spelling,HIGH,N
+Problems,6,"You don't want no problems, you don't want no problems",problems,6,"You don't want no problems, you don't want no problems",problems,INNER,REPEAT,spelling,HIGH,N
+Problems,6,"You don't want no problems, you don't want no problems",problems,6,"You don't want no problems, you don't want no problems",want,INNER,ASSONANCE,vowel,MED,Y
+Problems,6,"You don't want no problems, you don't want no problems",want,6,"You don't want no problems, you don't want no problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Problems,6,"You don't want no problems, you don't want no problems",want,6,"You don't want no problems, you don't want no problems",want,INNER,REPEAT,spelling,HIGH,N
+Problems,6,"You don't want no problems, you don't want no problems",problems,7,"You don't want these problems, you don't want no problems",problems,END,REPEAT,spelling,HIGH,N
+Problems,6,"You don't want no problems, you don't want no problems",don't,7,"You don't want these problems, you don't want no problems",don't,INNER,REPEAT,spelling,HIGH,N
+Problems,6,"You don't want no problems, you don't want no problems",don't,7,"You don't want these problems, you don't want no problems",no,INNER,ASSONANCE,vowel,MED,Y
+Problems,6,"You don't want no problems, you don't want no problems",no,7,"You don't want these problems, you don't want no problems",don't,INNER,ASSONANCE,vowel,MED,Y
+Problems,6,"You don't want no problems, you don't want no problems",no,7,"You don't want these problems, you don't want no problems",no,INNER,REPEAT,spelling,HIGH,N
+Problems,6,"You don't want no problems, you don't want no problems",problems,7,"You don't want these problems, you don't want no problems",problems,INNER,REPEAT,spelling,HIGH,N
+Problems,6,"You don't want no problems, you don't want no problems",problems,7,"You don't want these problems, you don't want no problems",want,INNER,ASSONANCE,vowel,MED,Y
+Problems,6,"You don't want no problems, you don't want no problems",want,7,"You don't want these problems, you don't want no problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Problems,6,"You don't want no problems, you don't want no problems",want,7,"You don't want these problems, you don't want no problems",want,INNER,REPEAT,spelling,HIGH,N
+Problems,7,"You don't want these problems, you don't want no problems",don't,7,"You don't want these problems, you don't want no problems",don't,INNER,REPEAT,spelling,HIGH,N
+Problems,7,"You don't want these problems, you don't want no problems",don't,7,"You don't want these problems, you don't want no problems",no,INNER,ASSONANCE,vowel,MED,Y
+Problems,7,"You don't want these problems, you don't want no problems",problems,7,"You don't want these problems, you don't want no problems",problems,INNER,REPEAT,spelling,HIGH,N
+Problems,7,"You don't want these problems, you don't want no problems",problems,7,"You don't want these problems, you don't want no problems",want,INNER,ASSONANCE,vowel,MED,Y
+Problems,7,"You don't want these problems, you don't want no problems",want,7,"You don't want these problems, you don't want no problems",problems,INNER,ASSONANCE,vowel,MED,Y
+Problems,7,"You don't want these problems, you don't want no problems",want,7,"You don't want these problems, you don't want no problems",want,INNER,REPEAT,spelling,HIGH,N
+Problems,7,"You don't want these problems, you don't want no problems",these,9,"Sweet move, I put my bitch on it",Sweet,INNER,SLANT,cmu,MED,Y
+Problems,8,Four-five with that dick on it,dick,9,"Sweet move, I put my bitch on it",bitch,END,SLANT,cmu,MED,Y
+Problems,8,Four-five with that dick on it,dick,10,Travel all around the world with that stick on me,stick,END,PERFECT,cmu,HIGH,Y
+Problems,8,Four-five with that dick on it,Four,10,Travel all around the world with that stick on me,all,INNER,SLANT,cmu,MED,Y
+Problems,9,"Sweet move, I put my bitch on it",bitch,10,Travel all around the world with that stick on me,stick,END,SLANT,cmu,MED,Y
+Problems,9,"Sweet move, I put my bitch on it",bitch,11,"Got a nigga life savings on my wrist, don't it",wrist,INNER,ASSONANCE,vowel,MED,Y
+Problems,10,Travel all around the world with that stick on me,stick,11,"Got a nigga life savings on my wrist, don't it",nigga,INNER,SLANT,spelling,LOW,Y
+Problems,10,Travel all around the world with that stick on me,stick,11,"Got a nigga life savings on my wrist, don't it",wrist,INNER,ASSONANCE,vowel,MED,Y
+Problems,11,"Got a nigga life savings on my wrist, don't it",don't,12,"Casino fucked your baby mama, hold up",hold,END,ASSONANCE,vowel,MED,Y
+Problems,11,"Got a nigga life savings on my wrist, don't it",Got,12,"Casino fucked your baby mama, hold up",mama,INNER,SLANT,cmu,MED,Y
+Problems,11,"Got a nigga life savings on my wrist, don't it",savings,12,"Casino fucked your baby mama, hold up",baby,INNER,ASSONANCE,vowel,MED,Y
+Problems,11,"Got a nigga life savings on my wrist, don't it",don't,13,"We don't play 'round with that drama, hold up",hold,END,ASSONANCE,vowel,MED,Y
+Problems,11,"Got a nigga life savings on my wrist, don't it",don't,13,"We don't play 'round with that drama, hold up",don't,INNER,REPEAT,spelling,HIGH,N
+Problems,11,"Got a nigga life savings on my wrist, don't it",Got,13,"We don't play 'round with that drama, hold up",drama,INNER,SLANT,cmu,MED,Y
+Problems,11,"Got a nigga life savings on my wrist, don't it",savings,13,"We don't play 'round with that drama, hold up",play,INNER,ASSONANCE,vowel,MED,Y
+Problems,11,"Got a nigga life savings on my wrist, don't it",don't,14,"My bank account it got them commas, hold up",hold,END,ASSONANCE,vowel,MED,Y
+Problems,11,"Got a nigga life savings on my wrist, don't it",don't,15,"I'm bombing shit like I'm Osama, hold up",hold,END,ASSONANCE,vowel,MED,Y
+Problems,12,"Casino fucked your baby mama, hold up",hold,13,"We don't play 'round with that drama, hold up",hold,END,REPEAT,spelling,HIGH,N
+Problems,12,"Casino fucked your baby mama, hold up",baby,13,"We don't play 'round with that drama, hold up",play,INNER,ASSONANCE,vowel,MED,Y
+Problems,12,"Casino fucked your baby mama, hold up",baby mama,13,"We don't play 'round with that drama, hold up",'round drama,INNER,MULTI,multi,HIGH,Y
+Problems,12,"Casino fucked your baby mama, hold up",hold,13,"We don't play 'round with that drama, hold up",don't,INNER,ASSONANCE,vowel,MED,Y
+Problems,12,"Casino fucked your baby mama, hold up",mama,13,"We don't play 'round with that drama, hold up",drama,INNER,MULTI,multi,HIGH,Y
+Problems,12,"Casino fucked your baby mama, hold up",hold,14,"My bank account it got them commas, hold up",hold,END,REPEAT,spelling,HIGH,N
+Problems,12,"Casino fucked your baby mama, hold up",mama,14,"My bank account it got them commas, hold up",commas,INNER,SLANT,cmu,MED,Y
+Problems,12,"Casino fucked your baby mama, hold up",mama,14,"My bank account it got them commas, hold up",got,INNER,SLANT,cmu,MED,Y
+Problems,12,"Casino fucked your baby mama, hold up",hold,15,"I'm bombing shit like I'm Osama, hold up",hold,END,REPEAT,spelling,HIGH,N
+Problems,13,"We don't play 'round with that drama, hold up",don't,13,"We don't play 'round with that drama, hold up",hold,INNER,ASSONANCE,vowel,MED,Y
+Problems,13,"We don't play 'round with that drama, hold up",hold,14,"My bank account it got them commas, hold up",hold,END,REPEAT,spelling,HIGH,N
+Problems,13,"We don't play 'round with that drama, hold up",'round,14,"My bank account it got them commas, hold up",account,INNER,SLANT,cmu,MED,Y
+Problems,13,"We don't play 'round with that drama, hold up",don't,14,"My bank account it got them commas, hold up",hold,INNER,ASSONANCE,vowel,MED,Y
+Problems,13,"We don't play 'round with that drama, hold up",drama,14,"My bank account it got them commas, hold up",commas,INNER,SLANT,cmu,MED,Y
+Problems,13,"We don't play 'round with that drama, hold up",drama,14,"My bank account it got them commas, hold up",got,INNER,SLANT,cmu,MED,Y
+Problems,13,"We don't play 'round with that drama, hold up",hold,15,"I'm bombing shit like I'm Osama, hold up",hold,END,REPEAT,spelling,HIGH,N
+Problems,13,"We don't play 'round with that drama, hold up",'round drama,15,"I'm bombing shit like I'm Osama, hold up",like Osama,INNER,MULTI,multi,HIGH,Y
+Problems,13,"We don't play 'round with that drama, hold up",don't,15,"I'm bombing shit like I'm Osama, hold up",hold,INNER,ASSONANCE,vowel,MED,Y
+Problems,13,"We don't play 'round with that drama, hold up",drama,15,"I'm bombing shit like I'm Osama, hold up",bombing,INNER,SLANT,cmu,MED,Y
+Problems,13,"We don't play 'round with that drama, hold up",drama,15,"I'm bombing shit like I'm Osama, hold up",Osama,INNER,MULTI,multi,HIGH,Y
+Problems,14,"My bank account it got them commas, hold up",got,14,"My bank account it got them commas, hold up",commas,INNER,ASSONANCE,vowel,MED,Y
+Problems,14,"My bank account it got them commas, hold up",hold,15,"I'm bombing shit like I'm Osama, hold up",hold,END,REPEAT,spelling,HIGH,N
+Problems,14,"My bank account it got them commas, hold up",commas,15,"I'm bombing shit like I'm Osama, hold up",bombing,INNER,SLANT,cmu,MED,Y
+Problems,14,"My bank account it got them commas, hold up",commas,15,"I'm bombing shit like I'm Osama, hold up",Osama,INNER,SLANT,cmu,MED,Y
+Problems,14,"My bank account it got them commas, hold up",got,15,"I'm bombing shit like I'm Osama, hold up",bombing,INNER,ASSONANCE,vowel,MED,Y
+Problems,14,"My bank account it got them commas, hold up",got,15,"I'm bombing shit like I'm Osama, hold up",Osama,INNER,SLANT,cmu,MED,Y
+Problems,14,"My bank account it got them commas, hold up",bank,16,Do the dash in this motherfucker,dash,INNER,ASSONANCE,vowel,MED,Y
+Problems,15,"I'm bombing shit like I'm Osama, hold up",bombing,15,"I'm bombing shit like I'm Osama, hold up",Osama,INNER,SLANT,cmu,MED,Y
+Problems,15,"I'm bombing shit like I'm Osama, hold up",shit,17,Fuck your bitch without a fuckin' rubber,bitch,INNER,SLANT,cmu,MED,Y
+Problems,16,Do the dash in this motherfucker,motherfucker,17,Fuck your bitch without a fuckin' rubber,rubber,END,SLANT,cmu,MED,Y
+Problems,16,Do the dash in this motherfucker,motherfucker,17,Fuck your bitch without a fuckin' rubber,Fuck,INNER,SLANT,cmu,MED,Y
+Problems,16,Do the dash in this motherfucker,motherfucker,17,Fuck your bitch without a fuckin' rubber,fuckin,INNER,SLANT,cmu,MED,Y
+Problems,16,Do the dash in this motherfucker,dash,18,I ran off with your work and you didn't get not strength,ran,INNER,SLANT,cmu,MED,Y
+Problems,17,Fuck your bitch without a fuckin' rubber,Fuck,17,Fuck your bitch without a fuckin' rubber,fuckin,INNER,SLANT,cmu,MED,Y
+Problems,17,Fuck your bitch without a fuckin' rubber,Fuck,17,Fuck your bitch without a fuckin' rubber,rubber,INNER,SLANT,cmu,MED,Y
+Problems,17,Fuck your bitch without a fuckin' rubber,fuckin,17,Fuck your bitch without a fuckin' rubber,rubber,INNER,ASSONANCE,vowel,MED,Y
+Problems,17,Fuck your bitch without a fuckin' rubber,bitch,18,I ran off with your work and you didn't get not strength,didn't,INNER,ASSONANCE,vowel,MED,Y
+Problems,17,Fuck your bitch without a fuckin' rubber,bitch,19,"I'm killin' like a Muslim, I don't eat no bacon",killin,INNER,ASSONANCE,vowel,MED,Y
+Problems,17,Fuck your bitch without a fuckin' rubber,Fuck,19,"I'm killin' like a Muslim, I don't eat no bacon",Muslim,INNER,ASSONANCE,vowel,MED,Y
+Problems,17,Fuck your bitch without a fuckin' rubber,fuckin,19,"I'm killin' like a Muslim, I don't eat no bacon",Muslim,INNER,ASSONANCE,vowel,MED,Y
+Problems,17,Fuck your bitch without a fuckin' rubber,rubber,19,"I'm killin' like a Muslim, I don't eat no bacon",Muslim,INNER,ASSONANCE,vowel,MED,Y
+Problems,18,I ran off with your work and you didn't get not strength,get,18,I ran off with your work and you didn't get not strength,strength,INNER,ASSONANCE,vowel,MED,Y
+Problems,18,I ran off with your work and you didn't get not strength,didn't,19,"I'm killin' like a Muslim, I don't eat no bacon",killin,INNER,ASSONANCE,vowel,MED,Y
+Problems,18,I ran off with your work and you didn't get not strength,get,20,"Red head, red pants, red shoes, rrrah",head,INNER,SLANT,cmu,MED,Y
+Problems,18,I ran off with your work and you didn't get not strength,get,20,"Red head, red pants, red shoes, rrrah",Red,INNER,SLANT,cmu,MED,Y
+Problems,18,I ran off with your work and you didn't get not strength,ran,20,"Red head, red pants, red shoes, rrrah",pants,INNER,ASSONANCE,vowel,MED,Y
+Problems,18,I ran off with your work and you didn't get not strength,ran,20,"Red head, red pants, red shoes, rrrah",rrrah,INNER,SLANT,spelling,LOW,Y
+Problems,18,I ran off with your work and you didn't get not strength,strength,20,"Red head, red pants, red shoes, rrrah",head,INNER,ASSONANCE,vowel,MED,Y
+Problems,18,I ran off with your work and you didn't get not strength,strength,20,"Red head, red pants, red shoes, rrrah",Red,INNER,ASSONANCE,vowel,MED,Y
+Problems,19,"I'm killin' like a Muslim, I don't eat no bacon",don't,19,"I'm killin' like a Muslim, I don't eat no bacon",no,INNER,ASSONANCE,vowel,MED,Y
+Problems,19,"I'm killin' like a Muslim, I don't eat no bacon",eat,21,"Red truck, red guns, red feet, slatt",feet,INNER,PERFECT,cmu,HIGH,Y
+Problems,19,"I'm killin' like a Muslim, I don't eat no bacon",Muslim,21,"Red truck, red guns, red feet, slatt",guns,INNER,ASSONANCE,vowel,MED,Y
+Problems,19,"I'm killin' like a Muslim, I don't eat no bacon",Muslim,21,"Red truck, red guns, red feet, slatt",truck,INNER,ASSONANCE,vowel,MED,Y
+Problems,19,"I'm killin' like a Muslim, I don't eat no bacon",bacon,23,AK lil nigga KB dot on the draco,draco,END,SLANT,cmu,MED,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",head,20,"Red head, red pants, red shoes, rrrah",red,INNER,PERFECT,cmu,HIGH,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",pants,20,"Red head, red pants, red shoes, rrrah",rrrah,INNER,ASSONANCE,vowel,LOW,N
+Problems,20,"Red head, red pants, red shoes, rrrah",Red,20,"Red head, red pants, red shoes, rrrah",head,INNER,PERFECT,cmu,HIGH,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",Red,20,"Red head, red pants, red shoes, rrrah",red,INNER,REPEAT,spelling,HIGH,N
+Problems,20,"Red head, red pants, red shoes, rrrah",rrrah,21,"Red truck, red guns, red feet, slatt",slatt,END,ASSONANCE,vowel,LOW,N
+Problems,20,"Red head, red pants, red shoes, rrrah",head,21,"Red truck, red guns, red feet, slatt",Red,INNER,PERFECT,cmu,HIGH,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",pants,21,"Red truck, red guns, red feet, slatt",slatt,INNER,ASSONANCE,vowel,LOW,N
+Problems,20,"Red head, red pants, red shoes, rrrah",Red,21,"Red truck, red guns, red feet, slatt",Red,INNER,REPEAT,spelling,HIGH,N
+Problems,20,"Red head, red pants, red shoes, rrrah",head,22,"I ain't worried a whole bunch of , I can get your ass whacked",get,INNER,SLANT,cmu,MED,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",pants,22,"I ain't worried a whole bunch of , I can get your ass whacked",ass,INNER,ASSONANCE,vowel,MED,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",pants,22,"I ain't worried a whole bunch of , I can get your ass whacked",can,INNER,ASSONANCE,vowel,MED,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",pants,22,"I ain't worried a whole bunch of , I can get your ass whacked",whacked,INNER,ASSONANCE,vowel,MED,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",Red,22,"I ain't worried a whole bunch of , I can get your ass whacked",get,INNER,SLANT,cmu,MED,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",rrrah,22,"I ain't worried a whole bunch of , I can get your ass whacked",ass,INNER,SLANT,spelling,LOW,Y
+Problems,20,"Red head, red pants, red shoes, rrrah",rrrah,22,"I ain't worried a whole bunch of , I can get your ass whacked",can,INNER,SLANT,spelling,LOW,Y
+Problems,21,"Red truck, red guns, red feet, slatt",Red,21,"Red truck, red guns, red feet, slatt",red,INNER,REPEAT,spelling,HIGH,N
+Problems,21,"Red truck, red guns, red feet, slatt",truck,21,"Red truck, red guns, red feet, slatt",guns,INNER,ASSONANCE,vowel,MED,Y
+Problems,21,"Red truck, red guns, red feet, slatt",slatt,22,"I ain't worried a whole bunch of , I can get your ass whacked",whacked,END,SLANT,spelling,LOW,Y
+Problems,21,"Red truck, red guns, red feet, slatt",guns,22,"I ain't worried a whole bunch of , I can get your ass whacked",bunch,INNER,SLANT,cmu,MED,Y
+Problems,21,"Red truck, red guns, red feet, slatt",Red,22,"I ain't worried a whole bunch of , I can get your ass whacked",get,INNER,SLANT,cmu,MED,Y
+Problems,21,"Red truck, red guns, red feet, slatt",truck,22,"I ain't worried a whole bunch of , I can get your ass whacked",bunch,INNER,ASSONANCE,vowel,MED,Y
+Problems,21,"Red truck, red guns, red feet, slatt",truck,23,AK lil nigga KB dot on the draco,draco,INNER,SLANT,spelling,LOW,Y
+Problems,22,"I ain't worried a whole bunch of , I can get your ass whacked",ass,22,"I ain't worried a whole bunch of , I can get your ass whacked",whacked,INNER,ASSONANCE,vowel,MED,Y
+Problems,22,"I ain't worried a whole bunch of , I can get your ass whacked",can,22,"I ain't worried a whole bunch of , I can get your ass whacked",ass,INNER,SLANT,cmu,MED,Y
+Problems,22,"I ain't worried a whole bunch of , I can get your ass whacked",can,22,"I ain't worried a whole bunch of , I can get your ass whacked",whacked,INNER,ASSONANCE,vowel,MED,Y
+Problems,22,"I ain't worried a whole bunch of , I can get your ass whacked",ain't,23,AK lil nigga KB dot on the draco,draco,INNER,ASSONANCE,vowel,MED,Y
+Problems,22,"I ain't worried a whole bunch of , I can get your ass whacked",ain't,24,"Five-fifty, dae dae, wanye Glock, that paper trail",dae,INNER,ASSONANCE,vowel,MED,Y
+Problems,22,"I ain't worried a whole bunch of , I can get your ass whacked",ain't,24,"Five-fifty, dae dae, wanye Glock, that paper trail",paper,INNER,ASSONANCE,vowel,MED,Y
+Problems,22,"I ain't worried a whole bunch of , I can get your ass whacked",ain't,24,"Five-fifty, dae dae, wanye Glock, that paper trail",trail,INNER,ASSONANCE,vowel,MED,Y
+Problems,22,"I ain't worried a whole bunch of , I can get your ass whacked",ass,24,"Five-fifty, dae dae, wanye Glock, that paper trail",wanye,INNER,SLANT,spelling,LOW,Y
+Problems,22,"I ain't worried a whole bunch of , I can get your ass whacked",can,24,"Five-fifty, dae dae, wanye Glock, that paper trail",wanye,INNER,SLANT,spelling,LOW,Y
+Problems,23,AK lil nigga KB dot on the draco,draco,24,"Five-fifty, dae dae, wanye Glock, that paper trail",trail,END,SLANT,cmu,MED,Y
+Problems,23,AK lil nigga KB dot on the draco,dot,24,"Five-fifty, dae dae, wanye Glock, that paper trail",Glock,INNER,SLANT,cmu,MED,Y
+Problems,23,AK lil nigga KB dot on the draco,draco,24,"Five-fifty, dae dae, wanye Glock, that paper trail",dae,INNER,ASSONANCE,vowel,MED,Y
+Problems,23,AK lil nigga KB dot on the draco,draco,24,"Five-fifty, dae dae, wanye Glock, that paper trail",paper,INNER,SLANT,cmu,MED,Y
+Problems,23,AK lil nigga KB dot on the draco,lil,24,"Five-fifty, dae dae, wanye Glock, that paper trail",fifty,INNER,ASSONANCE,vowel,MED,Y
+Problems,23,AK lil nigga KB dot on the draco,nigga,25,"One blood call a nigga, all them pull up, they with it",nigga,INNER,REPEAT,spelling,HIGH,N
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",dae,24,"Five-fifty, dae dae, wanye Glock, that paper trail",dae,INNER,REPEAT,spelling,HIGH,N
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",dae,24,"Five-fifty, dae dae, wanye Glock, that paper trail",paper,INNER,ASSONANCE,vowel,MED,Y
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",dae,24,"Five-fifty, dae dae, wanye Glock, that paper trail",trail,INNER,ASSONANCE,vowel,MED,Y
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",paper,24,"Five-fifty, dae dae, wanye Glock, that paper trail",trail,INNER,SLANT,cmu,MED,Y
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",dae,26,"Sticks on five-forty, loud around thirty-eight, shit bow",eight,INNER,ASSONANCE,vowel,MED,Y
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",fifty,26,"Sticks on five-forty, loud around thirty-eight, shit bow",shit,INNER,SLANT,cmu,MED,Y
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",fifty,26,"Sticks on five-forty, loud around thirty-eight, shit bow",Sticks,INNER,ASSONANCE,vowel,MED,Y
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",Five,26,"Sticks on five-forty, loud around thirty-eight, shit bow",five,INNER,REPEAT,spelling,HIGH,N
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",paper,26,"Sticks on five-forty, loud around thirty-eight, shit bow",eight,INNER,SLANT,cmu,MED,Y
+Problems,24,"Five-fifty, dae dae, wanye Glock, that paper trail",trail,26,"Sticks on five-forty, loud around thirty-eight, shit bow",eight,INNER,SLANT,cmu,MED,Y
+Problems,25,"One blood call a nigga, all them pull up, they with it",call,25,"One blood call a nigga, all them pull up, they with it",all,INNER,PERFECT,cmu,HIGH,Y
+Problems,25,"One blood call a nigga, all them pull up, they with it",One,25,"One blood call a nigga, all them pull up, they with it",blood,INNER,SLANT,cmu,MED,Y
+Problems,25,"One blood call a nigga, all them pull up, they with it",all,26,"Sticks on five-forty, loud around thirty-eight, shit bow",forty,INNER,ASSONANCE,vowel,MED,Y
+Problems,25,"One blood call a nigga, all them pull up, they with it",call,26,"Sticks on five-forty, loud around thirty-eight, shit bow",forty,INNER,ASSONANCE,vowel,MED,Y
+Problems,25,"One blood call a nigga, all them pull up, they with it",nigga,26,"Sticks on five-forty, loud around thirty-eight, shit bow",shit,INNER,SLANT,spelling,LOW,Y
+Problems,25,"One blood call a nigga, all them pull up, they with it",all,27,"Casino walk around, yeah he the real bossman, really now yeah",bossman,INNER,ASSONANCE,vowel,MED,Y
+Problems,25,"One blood call a nigga, all them pull up, they with it",all,27,"Casino walk around, yeah he the real bossman, really now yeah",walk,INNER,SLANT,cmu,MED,Y
+Problems,25,"One blood call a nigga, all them pull up, they with it",call,27,"Casino walk around, yeah he the real bossman, really now yeah",bossman,INNER,ASSONANCE,vowel,MED,Y
+Problems,25,"One blood call a nigga, all them pull up, they with it",call,27,"Casino walk around, yeah he the real bossman, really now yeah",walk,INNER,SLANT,cmu,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",around,26,"Sticks on five-forty, loud around thirty-eight, shit bow",bow,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",loud,26,"Sticks on five-forty, loud around thirty-eight, shit bow",around,INNER,SLANT,cmu,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",loud,26,"Sticks on five-forty, loud around thirty-eight, shit bow",bow,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",Sticks,26,"Sticks on five-forty, loud around thirty-eight, shit bow",shit,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",bow,27,"Casino walk around, yeah he the real bossman, really now yeah",now,END,PERFECT,cmu,HIGH,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",around,27,"Casino walk around, yeah he the real bossman, really now yeah",around,INNER,REPEAT,spelling,HIGH,N
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",around,27,"Casino walk around, yeah he the real bossman, really now yeah",now,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",bow,27,"Casino walk around, yeah he the real bossman, really now yeah",around,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",forty,27,"Casino walk around, yeah he the real bossman, really now yeah",bossman,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",forty,27,"Casino walk around, yeah he the real bossman, really now yeah",walk,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",loud,27,"Casino walk around, yeah he the real bossman, really now yeah",around,INNER,SLANT,cmu,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",loud,27,"Casino walk around, yeah he the real bossman, really now yeah",now,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",shit,27,"Casino walk around, yeah he the real bossman, really now yeah",really,INNER,SLANT,cmu,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",Sticks,27,"Casino walk around, yeah he the real bossman, really now yeah",really,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",thirty,27,"Casino walk around, yeah he the real bossman, really now yeah",Casino,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",thirty,27,"Casino walk around, yeah he the real bossman, really now yeah",real,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",eight,28,"Big chains on big swang, got the chain-ganging on lock",chain,INNER,SLANT,cmu,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",eight,28,"Big chains on big swang, got the chain-ganging on lock",chains,INNER,ASSONANCE,vowel,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",shit,28,"Big chains on big swang, got the chain-ganging on lock",Big,INNER,SLANT,cmu,MED,Y
+Problems,26,"Sticks on five-forty, loud around thirty-eight, shit bow",Sticks,28,"Big chains on big swang, got the chain-ganging on lock",Big,INNER,ASSONANCE,vowel,MED,Y
+Problems,27,"Casino walk around, yeah he the real bossman, really now yeah",around,27,"Casino walk around, yeah he the real bossman, really now yeah",now,INNER,ASSONANCE,vowel,MED,Y
+Problems,27,"Casino walk around, yeah he the real bossman, really now yeah",Casino,27,"Casino walk around, yeah he the real bossman, really now yeah",real,INNER,SLANT,cmu,MED,Y
+Problems,27,"Casino walk around, yeah he the real bossman, really now yeah",walk,27,"Casino walk around, yeah he the real bossman, really now yeah",bossman,INNER,ASSONANCE,vowel,MED,Y
+Problems,27,"Casino walk around, yeah he the real bossman, really now yeah",really,28,"Big chains on big swang, got the chain-ganging on lock",Big,INNER,SLANT,cmu,MED,Y
+Problems,27,"Casino walk around, yeah he the real bossman, really now yeah",bossman,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",gone,INNER,ASSONANCE,vowel,MED,Y
+Problems,27,"Casino walk around, yeah he the real bossman, really now yeah",Casino,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",Meech,INNER,SLANT,cmu,MED,Y
+Problems,27,"Casino walk around, yeah he the real bossman, really now yeah",real,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",Meech,INNER,SLANT,cmu,MED,Y
+Problems,27,"Casino walk around, yeah he the real bossman, really now yeah",walk,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",gone,INNER,SLANT,cmu,MED,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",Big,28,"Big chains on big swang, got the chain-ganging on lock",big,INNER,REPEAT,spelling,HIGH,N
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",chains,28,"Big chains on big swang, got the chain-ganging on lock",chain,INNER,SLANT,cmu,MED,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",got,28,"Big chains on big swang, got the chain-ganging on lock",lock,INNER,SLANT,cmu,MED,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",swang,28,"Big chains on big swang, got the chain-ganging on lock",ganging,INNER,SLANT,spelling,LOW,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",ganging,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",Rari,INNER,ASSONANCE,vowel,LOW,N
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",got,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",car,INNER,SLANT,cmu,MED,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",lock,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",car,INNER,SLANT,cmu,MED,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",swang,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",Rari,INNER,SLANT,spelling,LOW,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",chain,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",Balmain,INNER,PERFECT,spelling,HIGH,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",got,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",lot,INNER,PERFECT,cmu,HIGH,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",got,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",Watch,INNER,SLANT,cmu,MED,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",lock,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",lot,INNER,SLANT,cmu,MED,Y
+Problems,28,"Big chains on big swang, got the chain-ganging on lock",lock,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",Watch,INNER,SLANT,cmu,MED,Y
+Problems,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",car,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",lot,INNER,SLANT,cmu,MED,Y
+Problems,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",car,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",Watch,INNER,SLANT,cmu,MED,Y
+Problems,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",Meech,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",jeans,INNER,ASSONANCE,vowel,MED,Y
+Problems,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",gone,31,Keep a pistol on me January all the way to December,all,INNER,SLANT,cmu,MED,Y
+Problems,29,"Pullin' off in a Rari car, blue like Meech, skrrt, gone",Meech,31,Keep a pistol on me January all the way to December,Keep,INNER,SLANT,cmu,MED,Y
+Problems,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",Watch,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",lot,INNER,SLANT,cmu,MED,Y
+Problems,30,"Watch out, Balmain jeans on me with a whole lot of hundreds in 'em",jeans,31,Keep a pistol on me January all the way to December,Keep,INNER,ASSONANCE,vowel,MED,Y
+Problems,31,Keep a pistol on me January all the way to December,January,31,Keep a pistol on me January all the way to December,December,INNER,ASSONANCE,vowel,MED,Y
+Problems,31,Keep a pistol on me January all the way to December,December,32,And there you have it,there,INNER,ASSONANCE,vowel,MED,Y
+Problems,31,Keep a pistol on me January all the way to December,January,32,And there you have it,there,INNER,SLANT,cmu,MED,Y
+Problems,31,Keep a pistol on me January all the way to December,all,33,Two of Atlanta's most wanted bitch,wanted,INNER,ASSONANCE,vowel,MED,Y
+Problems,31,Keep a pistol on me January all the way to December,pistol,33,Two of Atlanta's most wanted bitch,bitch,INNER,ASSONANCE,vowel,MED,Y
+Problems,32,And there you have it,have,33,Two of Atlanta's most wanted bitch,Atlanta's,INNER,ASSONANCE,vowel,MED,Y
+Problems,33,Two of Atlanta's most wanted bitch,bitch,34,Y'all don't want no problems lil boy,lil,INNER,SLANT,cmu,MED,Y
+Problems,33,Two of Atlanta's most wanted bitch,most,34,Y'all don't want no problems lil boy,don't,INNER,SLANT,cmu,MED,Y
+Problems,33,Two of Atlanta's most wanted bitch,most,34,Y'all don't want no problems lil boy,no,INNER,ASSONANCE,vowel,MED,Y
+Problems,33,Two of Atlanta's most wanted bitch,wanted,34,Y'all don't want no problems lil boy,Y'all,INNER,ASSONANCE,vowel,MED,Y
+Problems,33,Two of Atlanta's most wanted bitch,Atlanta's,35,Sit your lil bitch ass down,ass,INNER,ASSONANCE,vowel,MED,Y
+Problems,33,Two of Atlanta's most wanted bitch,bitch,35,Sit your lil bitch ass down,bitch,INNER,REPEAT,spelling,HIGH,N
+Problems,33,Two of Atlanta's most wanted bitch,bitch,35,Sit your lil bitch ass down,lil,INNER,SLANT,cmu,MED,Y
+Problems,33,Two of Atlanta's most wanted bitch,bitch,35,Sit your lil bitch ass down,Sit,INNER,SLANT,cmu,MED,Y
+Problems,34,Y'all don't want no problems lil boy,don't,34,Y'all don't want no problems lil boy,no,INNER,ASSONANCE,vowel,MED,Y
+Problems,34,Y'all don't want no problems lil boy,want,34,Y'all don't want no problems lil boy,problems,INNER,ASSONANCE,vowel,MED,Y
+Problems,34,Y'all don't want no problems lil boy,lil,35,Sit your lil bitch ass down,bitch,INNER,SLANT,cmu,MED,Y
+Problems,34,Y'all don't want no problems lil boy,lil,35,Sit your lil bitch ass down,lil,INNER,REPEAT,spelling,HIGH,N
+Problems,34,Y'all don't want no problems lil boy,lil,35,Sit your lil bitch ass down,Sit,INNER,SLANT,cmu,MED,Y
+Problems,35,Sit your lil bitch ass down,lil,35,Sit your lil bitch ass down,bitch,INNER,SLANT,cmu,MED,Y
+Problems,35,Sit your lil bitch ass down,Sit,35,Sit your lil bitch ass down,bitch,INNER,SLANT,cmu,MED,Y
+Problems,35,Sit your lil bitch ass down,Sit,35,Sit your lil bitch ass down,lil,INNER,SLANT,cmu,MED,Y

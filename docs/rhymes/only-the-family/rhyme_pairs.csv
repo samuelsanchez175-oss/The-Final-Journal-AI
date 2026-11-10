@@ -1,0 +1,723 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Dirty Diana,2,"You'll never make me stay, so take the weight off of me",make,2,"You'll never make me stay, so take the weight off of me",stay,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,2,"You'll never make me stay, so take the weight off of me",make,2,"You'll never make me stay, so take the weight off of me",take,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,2,"You'll never make me stay, so take the weight off of me",make,2,"You'll never make me stay, so take the weight off of me",weight,INNER,SLANT,cmu,MED,Y
+Dirty Diana,2,"You'll never make me stay, so take the weight off of me",stay,2,"You'll never make me stay, so take the weight off of me",take,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,2,"You'll never make me stay, so take the weight off of me",stay,2,"You'll never make me stay, so take the weight off of me",weight,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,2,"You'll never make me stay, so take the weight off of me",take,2,"You'll never make me stay, so take the weight off of me",weight,INNER,SLANT,cmu,MED,Y
+Dirty Diana,2,"You'll never make me stay, so take the weight off of me",never,3,"I know your every move, so won't you just let me be",every,INNER,SLANT,cmu,MED,Y
+Dirty Diana,2,"You'll never make me stay, so take the weight off of me",never,3,"I know your every move, so won't you just let me be",let,INNER,SLANT,cmu,MED,Y
+Dirty Diana,3,"I know your every move, so won't you just let me be",every,3,"I know your every move, so won't you just let me be",let,INNER,SLANT,cmu,MED,Y
+Dirty Diana,3,"I know your every move, so won't you just let me be",know,3,"I know your every move, so won't you just let me be",won't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,3,"I know your every move, so won't you just let me be",every,5,"That you seduce every man, but ain't no seducing me, girl nah",every,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,3,"I know your every move, so won't you just let me be",know,5,"That you seduce every man, but ain't no seducing me, girl nah",no,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,3,"I know your every move, so won't you just let me be",let,5,"That you seduce every man, but ain't no seducing me, girl nah",every,INNER,SLANT,cmu,MED,Y
+Dirty Diana,3,"I know your every move, so won't you just let me be",move,5,"That you seduce every man, but ain't no seducing me, girl nah",seduce,INNER,SLANT,cmu,MED,Y
+Dirty Diana,3,"I know your every move, so won't you just let me be",move,5,"That you seduce every man, but ain't no seducing me, girl nah",seducing,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,3,"I know your every move, so won't you just let me be",won't,5,"That you seduce every man, but ain't no seducing me, girl nah",no,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,3,"I know your every move, so won't you just let me be",let,6,"I done had it all, but hell nah, I'm fed up",fed,END,SLANT,cmu,MED,Y
+Dirty Diana,4,"I been here times before, but I was too blind to see",here,4,"I been here times before, but I was too blind to see",see,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,4,"I been here times before, but I was too blind to see",times,4,"I been here times before, but I was too blind to see",blind,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,4,"I been here times before, but I was too blind to see",before,6,"I done had it all, but hell nah, I'm fed up",all,INNER,SLANT,cmu,MED,Y
+Dirty Diana,4,"I been here times before, but I was too blind to see",see,8,I just let 'em come between us,between,END,ASSONANCE,vowel,MED,Y
+Dirty Diana,5,"That you seduce every man, but ain't no seducing me, girl nah",seduce,5,"That you seduce every man, but ain't no seducing me, girl nah",seducing,INNER,SLANT,cmu,MED,Y
+Dirty Diana,5,"That you seduce every man, but ain't no seducing me, girl nah",every,6,"I done had it all, but hell nah, I'm fed up",fed,INNER,SLANT,cmu,MED,Y
+Dirty Diana,5,"That you seduce every man, but ain't no seducing me, girl nah",every,6,"I done had it all, but hell nah, I'm fed up",hell,INNER,SLANT,cmu,MED,Y
+Dirty Diana,5,"That you seduce every man, but ain't no seducing me, girl nah",man,6,"I done had it all, but hell nah, I'm fed up",had,INNER,SLANT,cmu,MED,Y
+Dirty Diana,5,"That you seduce every man, but ain't no seducing me, girl nah",every,7,Somebody tell me this can't be love,tell,INNER,SLANT,cmu,MED,Y
+Dirty Diana,5,"That you seduce every man, but ain't no seducing me, girl nah",man,7,Somebody tell me this can't be love,can't,INNER,SLANT,cmu,MED,Y
+Dirty Diana,6,"I done had it all, but hell nah, I'm fed up",hell,6,"I done had it all, but hell nah, I'm fed up",fed,INNER,SLANT,cmu,MED,Y
+Dirty Diana,6,"I done had it all, but hell nah, I'm fed up",done,7,Somebody tell me this can't be love,love,INNER,SLANT,cmu,MED,Y
+Dirty Diana,6,"I done had it all, but hell nah, I'm fed up",fed,7,Somebody tell me this can't be love,tell,INNER,SLANT,cmu,MED,Y
+Dirty Diana,6,"I done had it all, but hell nah, I'm fed up",had,7,Somebody tell me this can't be love,can't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,6,"I done had it all, but hell nah, I'm fed up",hell,7,Somebody tell me this can't be love,tell,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,6,"I done had it all, but hell nah, I'm fed up",done,8,I just let 'em come between us,come,INNER,SLANT,cmu,MED,Y
+Dirty Diana,6,"I done had it all, but hell nah, I'm fed up",fed,8,I just let 'em come between us,let,INNER,SLANT,cmu,MED,Y
+Dirty Diana,6,"I done had it all, but hell nah, I'm fed up",hell,8,I just let 'em come between us,let,INNER,SLANT,cmu,MED,Y
+Dirty Diana,6,"I done had it all, but hell nah, I'm fed up",fed,10,"The trenches done made me a monster, told her you with me accept it (yeah)",accept,END,SLANT,cmu,MED,Y
+Dirty Diana,7,Somebody tell me this can't be love,love,8,I just let 'em come between us,come,INNER,SLANT,cmu,MED,Y
+Dirty Diana,7,Somebody tell me this can't be love,tell,8,I just let 'em come between us,let,INNER,SLANT,cmu,MED,Y
+Dirty Diana,7,Somebody tell me this can't be love,can't,9,Bitches be actin' like niggas and niggas be actin' like bitches,actin,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,8,I just let 'em come between us,'em,8,I just let 'em come between us,come,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,8,I just let 'em come between us,come,10,"The trenches done made me a monster, told her you with me accept it (yeah)",done,INNER,SLANT,cmu,MED,Y
+Dirty Diana,8,I just let 'em come between us,let,10,"The trenches done made me a monster, told her you with me accept it (yeah)",accept,INNER,SLANT,cmu,MED,Y
+Dirty Diana,8,I just let 'em come between us,let,10,"The trenches done made me a monster, told her you with me accept it (yeah)",trenches,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,9,Bitches be actin' like niggas and niggas be actin' like bitches,actin,9,Bitches be actin' like niggas and niggas be actin' like bitches,actin,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,9,Bitches be actin' like niggas and niggas be actin' like bitches,Bitches,9,Bitches be actin' like niggas and niggas be actin' like bitches,bitches,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,9,Bitches be actin' like niggas and niggas be actin' like bitches,like,9,Bitches be actin' like niggas and niggas be actin' like bitches,like,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,9,Bitches be actin' like niggas and niggas be actin' like bitches,niggas,9,Bitches be actin' like niggas and niggas be actin' like bitches,niggas,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",trenches,10,"The trenches done made me a monster, told her you with me accept it (yeah)",accept,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",accept,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",neglected,END,SLANT,cmu,MED,Y
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",accept,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",friends,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",accept,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",left,INNER,SLANT,cmu,MED,Y
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",accept,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",wreckless,INNER,ASSONANCE,vowel,LOW,N
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",done,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",done,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",told,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",told,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",trenches,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",friends,INNER,SLANT,cmu,MED,Y
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",trenches,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",left,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",trenches,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",neglected,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",trenches,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",wreckless,INNER,ASSONANCE,vowel,LOW,N
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",accept,12,"Game with me 24/7, they killin' for me so respect it (grrat)",respect,END,SLANT,cmu,MED,Y
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",made,12,"Game with me 24/7, they killin' for me so respect it (grrat)",Game,INNER,SLANT,cmu,MED,Y
+Dirty Diana,10,"The trenches done made me a monster, told her you with me accept it (yeah)",trenches,12,"Game with me 24/7, they killin' for me so respect it (grrat)",respect,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",friends,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",left,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",friends,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",neglected,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",left,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",neglected,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",wreckless,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",left,INNER,ASSONANCE,vowel,LOW,N
+Dirty Diana,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",wreckless,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",neglected,INNER,ASSONANCE,vowel,LOW,N
+Dirty Diana,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",neglected,12,"Game with me 24/7, they killin' for me so respect it (grrat)",respect,END,SLANT,cmu,MED,Y
+Dirty Diana,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",friends,12,"Game with me 24/7, they killin' for me so respect it (grrat)",respect,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",left,12,"Game with me 24/7, they killin' for me so respect it (grrat)",respect,INNER,SLANT,cmu,MED,Y
+Dirty Diana,11,"Your friends done told you I'm wreckless, feelin' left out and neglected (yeah)",wreckless,12,"Game with me 24/7, they killin' for me so respect it (grrat)",respect,INNER,ASSONANCE,vowel,LOW,N
+Dirty Diana,12,"Game with me 24/7, they killin' for me so respect it (grrat)",killin,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",drippin,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,12,"Game with me 24/7, they killin' for me so respect it (grrat)",Game,14,"She say I'm a dog, lost in my feelings so where did you find 'em (bitch)",say,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,12,"Game with me 24/7, they killin' for me so respect it (grrat)",respect,14,"She say I'm a dog, lost in my feelings so where did you find 'em (bitch)",where,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",diamonds,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",designer,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",drippin,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",drippin,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",designer,14,"She say I'm a dog, lost in my feelings so where did you find 'em (bitch)",find,INNER,SLANT,cmu,MED,Y
+Dirty Diana,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",diamonds,14,"She say I'm a dog, lost in my feelings so where did you find 'em (bitch)",find,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",designer,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",why,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",diamonds,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",why,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",Diana,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",Family,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,13,"Dirty Diana, drippin' my diamonds, I'm drippin' designer (fashion)",drippin,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,14,"She say I'm a dog, lost in my feelings so where did you find 'em (bitch)",dog,14,"She say I'm a dog, lost in my feelings so where did you find 'em (bitch)",lost,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,14,"She say I'm a dog, lost in my feelings so where did you find 'em (bitch)",find,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",why,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,14,"She say I'm a dog, lost in my feelings so where did you find 'em (bitch)",where,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",When,INNER,SLANT,cmu,MED,Y
+Dirty Diana,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",clowned,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",clown,INNER,SLANT,spelling,LOW,Y
+Dirty Diana,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",clown,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",around,END,SLANT,cmu,MED,Y
+Dirty Diana,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",clown,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",down,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",clowned,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",around,INNER,SLANT,spelling,LOW,Y
+Dirty Diana,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",clowned,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",down,INNER,SLANT,spelling,LOW,Y
+Dirty Diana,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",Family,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",can't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",Only,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",broke,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,15,"Bitch it's Only The Family, I fucked up and you clowned me, why did you clown me",Only,17,"You weren't here for me, so you don't hear from me (let's get it)",don't,INNER,SLANT,cmu,MED,Y
+Dirty Diana,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",down,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",around,INNER,SLANT,cmu,MED,Y
+Dirty Diana,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",broke,17,"You weren't here for me, so you don't hear from me (let's get it)",don't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",weren't,17,"You weren't here for me, so you don't hear from me (let's get it)",weren't,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",broke,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",don't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",broke,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",no,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,16,"When I was broke you weren't down, so you can't be around me (yeah, yeah)",When,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",Seline,INNER,SLANT,spelling,LOW,Y
+Dirty Diana,17,"You weren't here for me, so you don't hear from me (let's get it)",here,17,"You weren't here for me, so you don't hear from me (let's get it)",hear,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,17,"You weren't here for me, so you don't hear from me (let's get it)",don't,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",don't,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,17,"You weren't here for me, so you don't hear from me (let's get it)",don't,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",no,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,17,"You weren't here for me, so you don't hear from me (let's get it)",hear,19,The street shit was meant for me (let's get it),street,INNER,SLANT,cmu,MED,Y
+Dirty Diana,17,"You weren't here for me, so you don't hear from me (let's get it)",here,19,The street shit was meant for me (let's get it),street,INNER,SLANT,cmu,MED,Y
+Dirty Diana,17,"You weren't here for me, so you don't hear from me (let's get it)",hear,20,"I been here time before, but I was too blind to see",see,END,ASSONANCE,vowel,MED,Y
+Dirty Diana,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",don't,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",no,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",Tiffany,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",sympathy,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",sympathy,19,The street shit was meant for me (let's get it),shit,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,18,"Fuck Seline, Tiffany, and I don't got no sympathy (yeah, yeah, yeah uh)",Tiffany,19,The street shit was meant for me (let's get it),shit,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,19,The street shit was meant for me (let's get it),street,20,"I been here time before, but I was too blind to see",here,INNER,SLANT,cmu,MED,Y
+Dirty Diana,19,The street shit was meant for me (let's get it),street,20,"I been here time before, but I was too blind to see",see,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,19,The street shit was meant for me (let's get it),street,21,"my face, see I ain't the one that you played",see,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,20,"I been here time before, but I was too blind to see",here,20,"I been here time before, but I was too blind to see",see,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,20,"I been here time before, but I was too blind to see",time,20,"I been here time before, but I was too blind to see",blind,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,20,"I been here time before, but I was too blind to see",here,21,"my face, see I ain't the one that you played",see,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,20,"I been here time before, but I was too blind to see",see,21,"my face, see I ain't the one that you played",see,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,20,"I been here time before, but I was too blind to see",blind,22,"Barely got time to waste, see, I ain't got time to play",time,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,20,"I been here time before, but I was too blind to see",here,22,"Barely got time to waste, see, I ain't got time to play",see,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,20,"I been here time before, but I was too blind to see",see,22,"Barely got time to waste, see, I ain't got time to play",see,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,20,"I been here time before, but I was too blind to see",time,22,"Barely got time to waste, see, I ain't got time to play",time,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,21,"my face, see I ain't the one that you played",ain't,21,"my face, see I ain't the one that you played",played,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",face,21,"my face, see I ain't the one that you played",ain't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",face,21,"my face, see I ain't the one that you played",played,INNER,SLANT,cmu,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",played,22,"Barely got time to waste, see, I ain't got time to play",play,END,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",ain't,22,"Barely got time to waste, see, I ain't got time to play",ain't,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,21,"my face, see I ain't the one that you played",ain't,22,"Barely got time to waste, see, I ain't got time to play",play,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",ain't,22,"Barely got time to waste, see, I ain't got time to play",waste,INNER,SLANT,cmu,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",face,22,"Barely got time to waste, see, I ain't got time to play",ain't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",face,22,"Barely got time to waste, see, I ain't got time to play",play,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",face,22,"Barely got time to waste, see, I ain't got time to play",waste,INNER,SLANT,cmu,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",played,22,"Barely got time to waste, see, I ain't got time to play",ain't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",played,22,"Barely got time to waste, see, I ain't got time to play",waste,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",see,22,"Barely got time to waste, see, I ain't got time to play",see,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,21,"my face, see I ain't the one that you played",played,23,"I ain't got time to date, know I got spots, but I ain't got space",space,END,SLANT,cmu,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",ain't,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,21,"my face, see I ain't the one that you played",ain't,23,"I ain't got time to date, know I got spots, but I ain't got space",date,INNER,SLANT,cmu,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",ain't,23,"I ain't got time to date, know I got spots, but I ain't got space",space,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",face,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",face,23,"I ain't got time to date, know I got spots, but I ain't got space",date,INNER,SLANT,cmu,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",face,23,"I ain't got time to date, know I got spots, but I ain't got space",space,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",played,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",played,23,"I ain't got time to date, know I got spots, but I ain't got space",date,INNER,SLANT,cmu,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",played,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,END,SLANT,cmu,MED,Y
+Dirty Diana,21,"my face, see I ain't the one that you played",played,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,END,SLANT,cmu,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",ain't,22,"Barely got time to waste, see, I ain't got time to play",play,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",got,22,"Barely got time to waste, see, I ain't got time to play",got,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",time,22,"Barely got time to waste, see, I ain't got time to play",time,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",waste,22,"Barely got time to waste, see, I ain't got time to play",ain't,INNER,SLANT,cmu,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",waste,22,"Barely got time to waste, see, I ain't got time to play",play,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",play,23,"I ain't got time to date, know I got spots, but I ain't got space",space,END,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",ain't,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",ain't,23,"I ain't got time to date, know I got spots, but I ain't got space",date,INNER,SLANT,cmu,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",ain't,23,"I ain't got time to date, know I got spots, but I ain't got space",space,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",got,23,"I ain't got time to date, know I got spots, but I ain't got space",got,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",got,23,"I ain't got time to date, know I got spots, but I ain't got space",spots,INNER,SLANT,cmu,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",play,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",play,23,"I ain't got time to date, know I got spots, but I ain't got space",date,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",time,23,"I ain't got time to date, know I got spots, but I ain't got space",time,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",waste,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,INNER,SLANT,cmu,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",waste,23,"I ain't got time to date, know I got spots, but I ain't got space",date,INNER,SLANT,cmu,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",waste,23,"I ain't got time to date, know I got spots, but I ain't got space",space,INNER,SLANT,cmu,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",play,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,END,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",ain't,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",ain't,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",ain't,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",Barely,24,"She want a lot, she tryna get paid, she always tryna get backstage",get,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",got,24,"She want a lot, she tryna get paid, she always tryna get backstage",lot,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",got,24,"She want a lot, she tryna get paid, she always tryna get backstage",want,INNER,SLANT,cmu,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",play,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",play,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",waste,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",waste,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",waste,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,22,"Barely got time to waste, see, I ain't got time to play",play,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,END,ASSONANCE,vowel,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,23,"I ain't got time to date, know I got spots, but I ain't got space",date,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,23,"I ain't got time to date, know I got spots, but I ain't got space",space,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",date,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",date,23,"I ain't got time to date, know I got spots, but I ain't got space",space,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",got,23,"I ain't got time to date, know I got spots, but I ain't got space",got,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",got,23,"I ain't got time to date, know I got spots, but I ain't got space",spots,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",spots,23,"I ain't got time to date, know I got spots, but I ain't got space",got,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",space,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,END,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",date,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",date,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",date,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",got,24,"She want a lot, she tryna get paid, she always tryna get backstage",lot,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",got,24,"She want a lot, she tryna get paid, she always tryna get backstage",want,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",space,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",space,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",spots,24,"She want a lot, she tryna get paid, she always tryna get backstage",lot,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",spots,24,"She want a lot, she tryna get paid, she always tryna get backstage",want,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",space,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,END,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,25,"She always tryna work the back page, a young nigga but my sack crazy",always,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",ain't,25,"She always tryna work the back page, a young nigga but my sack crazy",page,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",date,25,"She always tryna work the back page, a young nigga but my sack crazy",always,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",date,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",date,25,"She always tryna work the back page, a young nigga but my sack crazy",page,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",space,25,"She always tryna work the back page, a young nigga but my sack crazy",always,INNER,SLANT,cmu,MED,Y
+Dirty Diana,23,"I ain't got time to date, know I got spots, but I ain't got space",space,25,"She always tryna work the back page, a young nigga but my sack crazy",page,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",get,24,"She want a lot, she tryna get paid, she always tryna get backstage",get,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",tryna,24,"She want a lot, she tryna get paid, she always tryna get backstage",tryna,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",want,24,"She want a lot, she tryna get paid, she always tryna get backstage",lot,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,END,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,25,"She always tryna work the back page, a young nigga but my sack crazy",always,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,25,"She always tryna work the back page, a young nigga but my sack crazy",page,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,25,"She always tryna work the back page, a young nigga but my sack crazy",always,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,25,"She always tryna work the back page, a young nigga but my sack crazy",page,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,25,"She always tryna work the back page, a young nigga but my sack crazy",always,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,25,"She always tryna work the back page, a young nigga but my sack crazy",page,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",tryna,25,"She always tryna work the back page, a young nigga but my sack crazy",tryna,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",always,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",cave,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",cave,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",paid,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",cave,INNER,SLANT,cmu,MED,Y
+Dirty Diana,24,"She want a lot, she tryna get paid, she always tryna get backstage",backstage,28,And she know that I be there when no man ain't,ain't,END,ASSONANCE,vowel,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",always,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",always,25,"She always tryna work the back page, a young nigga but my sack crazy",page,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",back,25,"She always tryna work the back page, a young nigga but my sack crazy",sack,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",page,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",always,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",cave,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",back,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",bat,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",back,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",can,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",cave,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",page,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",cave,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",sack,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",bat,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",sack,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",can,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",young,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",duece,INNER,SLANT,spelling,LOW,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",back,27,And she know that I do shit that her man can't,can't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",back,27,And she know that I do shit that her man can't,man,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",nigga,27,And she know that I do shit that her man can't,shit,INNER,SLANT,spelling,LOW,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",sack,27,And she know that I do shit that her man can't,can't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",sack,27,And she know that I do shit that her man can't,man,INNER,SLANT,cmu,MED,Y
+Dirty Diana,25,"She always tryna work the back page, a young nigga but my sack crazy",crazy,28,And she know that I be there when no man ain't,ain't,END,ASSONANCE,vowel,MED,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",bat,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",can,INNER,SLANT,cmu,MED,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",bat,27,And she know that I do shit that her man can't,can't,INNER,SLANT,cmu,MED,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",bat,27,And she know that I do shit that her man can't,man,INNER,SLANT,cmu,MED,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",can,27,And she know that I do shit that her man can't,can't,INNER,SLANT,cmu,MED,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",can,27,And she know that I do shit that her man can't,man,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",drink,27,And she know that I do shit that her man can't,shit,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",bat,28,And she know that I be there when no man ain't,man,INNER,SLANT,cmu,MED,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",can,28,And she know that I be there when no man ain't,man,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",cave,28,And she know that I be there when no man ain't,ain't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,26,"Pulled the coupe out the bat cave, pour a duece in the can drink",drink,29,"Home, yeah, it's been a long year, she been roamin' a whole year",year,END,ASSONANCE,vowel,MED,Y
+Dirty Diana,27,And she know that I do shit that her man can't,man,27,And she know that I do shit that her man can't,can't,INNER,SLANT,cmu,MED,Y
+Dirty Diana,27,And she know that I do shit that her man can't,can't,28,And she know that I be there when no man ain't,man,INNER,SLANT,cmu,MED,Y
+Dirty Diana,27,And she know that I do shit that her man can't,know,28,And she know that I be there when no man ain't,know,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,27,And she know that I do shit that her man can't,know,28,And she know that I be there when no man ain't,no,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,27,And she know that I do shit that her man can't,man,28,And she know that I be there when no man ain't,man,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,27,And she know that I do shit that her man can't,know,29,"Home, yeah, it's been a long year, she been roamin' a whole year",Home,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,27,And she know that I do shit that her man can't,know,29,"Home, yeah, it's been a long year, she been roamin' a whole year",roamin,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,27,And she know that I do shit that her man can't,know,29,"Home, yeah, it's been a long year, she been roamin' a whole year",whole,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,27,And she know that I do shit that her man can't,shit,29,"Home, yeah, it's been a long year, she been roamin' a whole year",year,INNER,SLANT,cmu,MED,Y
+Dirty Diana,27,And she know that I do shit that her man can't,can't,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",Diana,END,SLANT,cmu,MED,Y
+Dirty Diana,28,And she know that I be there when no man ain't,know,28,And she know that I be there when no man ain't,no,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,28,And she know that I be there when no man ain't,there,28,And she know that I be there when no man ain't,when,INNER,SLANT,cmu,MED,Y
+Dirty Diana,28,And she know that I be there when no man ain't,know,29,"Home, yeah, it's been a long year, she been roamin' a whole year",Home,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,28,And she know that I be there when no man ain't,know,29,"Home, yeah, it's been a long year, she been roamin' a whole year",roamin,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,28,And she know that I be there when no man ain't,know,29,"Home, yeah, it's been a long year, she been roamin' a whole year",whole,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,28,And she know that I be there when no man ain't,no,29,"Home, yeah, it's been a long year, she been roamin' a whole year",Home,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,28,And she know that I be there when no man ain't,no,29,"Home, yeah, it's been a long year, she been roamin' a whole year",roamin,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,28,And she know that I be there when no man ain't,no,29,"Home, yeah, it's been a long year, she been roamin' a whole year",whole,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,28,And she know that I be there when no man ain't,there,30,"She did wrong, I wanna forget, she been gone, but I want her here",forget,INNER,SLANT,cmu,MED,Y
+Dirty Diana,28,And she know that I be there when no man ain't,when,30,"She did wrong, I wanna forget, she been gone, but I want her here",forget,INNER,SLANT,cmu,MED,Y
+Dirty Diana,29,"Home, yeah, it's been a long year, she been roamin' a whole year",Home,29,"Home, yeah, it's been a long year, she been roamin' a whole year",roamin,INNER,SLANT,cmu,MED,Y
+Dirty Diana,29,"Home, yeah, it's been a long year, she been roamin' a whole year",Home,29,"Home, yeah, it's been a long year, she been roamin' a whole year",whole,INNER,SLANT,cmu,MED,Y
+Dirty Diana,29,"Home, yeah, it's been a long year, she been roamin' a whole year",roamin,29,"Home, yeah, it's been a long year, she been roamin' a whole year",whole,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,29,"Home, yeah, it's been a long year, she been roamin' a whole year",year,29,"Home, yeah, it's been a long year, she been roamin' a whole year",year,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,29,"Home, yeah, it's been a long year, she been roamin' a whole year",long,30,"She did wrong, I wanna forget, she been gone, but I want her here",gone,INNER,SLANT,cmu,MED,Y
+Dirty Diana,29,"Home, yeah, it's been a long year, she been roamin' a whole year",long,30,"She did wrong, I wanna forget, she been gone, but I want her here",wrong,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,29,"Home, yeah, it's been a long year, she been roamin' a whole year",long,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",wrong,INNER,PERFECT,cmu,HIGH,Y
+Dirty Diana,29,"Home, yeah, it's been a long year, she been roamin' a whole year",year,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",kill,INNER,SLANT,cmu,MED,Y
+Dirty Diana,30,"She did wrong, I wanna forget, she been gone, but I want her here",wanna,30,"She did wrong, I wanna forget, she been gone, but I want her here",want,INNER,SLANT,cmu,MED,Y
+Dirty Diana,30,"She did wrong, I wanna forget, she been gone, but I want her here",wrong,30,"She did wrong, I wanna forget, she been gone, but I want her here",gone,INNER,SLANT,cmu,MED,Y
+Dirty Diana,30,"She did wrong, I wanna forget, she been gone, but I want her here",gone,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",wrong,INNER,SLANT,cmu,MED,Y
+Dirty Diana,30,"She did wrong, I wanna forget, she been gone, but I want her here",wanna,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",wanna,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,30,"She did wrong, I wanna forget, she been gone, but I want her here",want,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",wanna,INNER,SLANT,cmu,MED,Y
+Dirty Diana,30,"She did wrong, I wanna forget, she been gone, but I want her here",wrong,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",wrong,INNER,REPEAT,spelling,HIGH,N
+Dirty Diana,30,"She did wrong, I wanna forget, she been gone, but I want her here",forget,32,"Hey, I done had it all, fed up",fed,INNER,SLANT,cmu,MED,Y
+Dirty Diana,30,"She did wrong, I wanna forget, she been gone, but I want her here",gone,32,"Hey, I done had it all, fed up",all,INNER,SLANT,cmu,MED,Y
+Dirty Diana,30,"She did wrong, I wanna forget, she been gone, but I want her here",wrong,32,"Hey, I done had it all, fed up",all,INNER,SLANT,cmu,MED,Y
+Dirty Diana,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",Diana,32,"Hey, I done had it all, fed up",had,INNER,SLANT,cmu,MED,Y
+Dirty Diana,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",wrong,32,"Hey, I done had it all, fed up",all,INNER,SLANT,cmu,MED,Y
+Dirty Diana,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",Diana,33,"Yeah, can't be loved",can't,INNER,SLANT,cmu,MED,Y
+Dirty Diana,31,"She been wrong and I wanna kill her, Dirty Diana, yeah",Diana,34,"Yeah, uh huh, Dirty Diana, yeah, yeah uh huh",Diana,END,REPEAT,spelling,HIGH,N
+Dirty Diana,32,"Hey, I done had it all, fed up",done,33,"Yeah, can't be loved",loved,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,32,"Hey, I done had it all, fed up",had,33,"Yeah, can't be loved",can't,INNER,ASSONANCE,vowel,MED,Y
+Dirty Diana,32,"Hey, I done had it all, fed up",had,34,"Yeah, uh huh, Dirty Diana, yeah, yeah uh huh",Diana,INNER,SLANT,cmu,MED,Y
+Dirty Diana,33,"Yeah, can't be loved",can't,34,"Yeah, uh huh, Dirty Diana, yeah, yeah uh huh",Diana,INNER,SLANT,cmu,MED,Y
+Riot,1,"They started riots, they started riots again",riots,1,"They started riots, they started riots again",riots,INNER,REPEAT,spelling,HIGH,N
+Riot,1,"They started riots, they started riots again",started,1,"They started riots, they started riots again",started,INNER,REPEAT,spelling,HIGH,N
+Riot,1,"They started riots, they started riots again",again,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",again,END,REPEAT,spelling,HIGH,N
+Riot,1,"They started riots, they started riots again",again,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",tell,INNER,SLANT,cmu,MED,Y
+Riot,1,"They started riots, they started riots again",riots,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",riot,INNER,SLANT,cmu,MED,Y
+Riot,1,"They started riots, they started riots again",started,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",starting,INNER,SLANT,cmu,MED,Y
+Riot,1,"They started riots, they started riots again",again,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,END,REPEAT,spelling,HIGH,N
+Riot,1,"They started riots, they started riots again",again,3,"They coming around, they bringing them drugs, I'm starting to get high again",get,INNER,SLANT,cmu,MED,Y
+Riot,1,"They started riots, they started riots again",riots,3,"They coming around, they bringing them drugs, I'm starting to get high again",high,INNER,ASSONANCE,vowel,MED,Y
+Riot,1,"They started riots, they started riots again",started,3,"They coming around, they bringing them drugs, I'm starting to get high again",starting,INNER,SLANT,cmu,MED,Y
+Riot,1,"They started riots, they started riots again",again,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,END,REPEAT,spelling,HIGH,N
+Riot,1,"They started riots, they started riots again",again,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,END,REPEAT,spelling,HIGH,N
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",go,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",don't,INNER,ASSONANCE,vowel,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",tell,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",again,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",again,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,END,REPEAT,spelling,HIGH,N
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",again,3,"They coming around, they bringing them drugs, I'm starting to get high again",get,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",come,3,"They coming around, they bringing them drugs, I'm starting to get high again",coming,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",come,3,"They coming around, they bringing them drugs, I'm starting to get high again",drugs,INNER,ASSONANCE,vowel,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",high,INNER,ASSONANCE,vowel,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",starting,3,"They coming around, they bringing them drugs, I'm starting to get high again",starting,INNER,REPEAT,spelling,HIGH,N
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",tell,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",tell,3,"They coming around, they bringing them drugs, I'm starting to get high again",get,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",again,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,END,REPEAT,spelling,HIGH,N
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",again,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",again,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",back,4,"I fell on my back, I was tryna get up, but I had to go try it again",back,INNER,REPEAT,spelling,HIGH,N
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",back,4,"I fell on my back, I was tryna get up, but I had to go try it again",had,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",don't,4,"I fell on my back, I was tryna get up, but I had to go try it again",go,INNER,ASSONANCE,vowel,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",go,4,"I fell on my back, I was tryna get up, but I had to go try it again",go,INNER,REPEAT,spelling,HIGH,N
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",try,INNER,ASSONANCE,vowel,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",tell,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",tell,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,INNER,PERFECT,cmu,HIGH,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",tell,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,INNER,SLANT,cmu,MED,Y
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",again,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,END,REPEAT,spelling,HIGH,N
+Riot,2,"I go to the hood, they tell me don't come back, I'm starting a riot again",again,6,"He ain't accept when I said sorry, that's his pride again",again,END,REPEAT,spelling,HIGH,N
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",coming,3,"They coming around, they bringing them drugs, I'm starting to get high again",drugs,INNER,ASSONANCE,vowel,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",get,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,INNER,SLANT,cmu,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,END,REPEAT,spelling,HIGH,N
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,INNER,SLANT,cmu,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,INNER,SLANT,cmu,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",get,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,INNER,SLANT,cmu,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",get,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,INNER,SLANT,cmu,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",get,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,INNER,REPEAT,spelling,HIGH,N
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",high,4,"I fell on my back, I was tryna get up, but I had to go try it again",try,INNER,PERFECT,cmu,HIGH,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,END,REPEAT,spelling,HIGH,N
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,INNER,SLANT,cmu,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",get,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,INNER,SLANT,cmu,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",get,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,INNER,ASSONANCE,vowel,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",high,5,"I cheated on you and that is my confession, I'm sorry, I lied again",lied,INNER,ASSONANCE,vowel,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",starting,5,"I cheated on you and that is my confession, I'm sorry, I lied again",sorry,INNER,ASSONANCE,vowel,MED,Y
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,6,"He ain't accept when I said sorry, that's his pride again",again,END,REPEAT,spelling,HIGH,N
+Riot,3,"They coming around, they bringing them drugs, I'm starting to get high again",again,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,END,REPEAT,spelling,HIGH,N
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",back,4,"I fell on my back, I was tryna get up, but I had to go try it again",had,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,END,REPEAT,spelling,HIGH,N
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,INNER,ASSONANCE,vowel,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,INNER,ASSONANCE,vowel,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",try,5,"I cheated on you and that is my confession, I'm sorry, I lied again",lied,INNER,ASSONANCE,vowel,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,6,"He ain't accept when I said sorry, that's his pride again",again,END,REPEAT,spelling,HIGH,N
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,6,"He ain't accept when I said sorry, that's his pride again",accept,INNER,ASSONANCE,vowel,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,6,"He ain't accept when I said sorry, that's his pride again",said,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,6,"He ain't accept when I said sorry, that's his pride again",when,INNER,PERFECT,cmu,HIGH,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,6,"He ain't accept when I said sorry, that's his pride again",accept,INNER,ASSONANCE,vowel,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,6,"He ain't accept when I said sorry, that's his pride again",again,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,6,"He ain't accept when I said sorry, that's his pride again",said,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",fell,6,"He ain't accept when I said sorry, that's his pride again",when,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,6,"He ain't accept when I said sorry, that's his pride again",accept,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,6,"He ain't accept when I said sorry, that's his pride again",again,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,6,"He ain't accept when I said sorry, that's his pride again",said,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",get,6,"He ain't accept when I said sorry, that's his pride again",when,INNER,SLANT,cmu,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",try,6,"He ain't accept when I said sorry, that's his pride again",pride,INNER,ASSONANCE,vowel,MED,Y
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,END,REPEAT,spelling,HIGH,N
+Riot,4,"I fell on my back, I was tryna get up, but I had to go try it again",again,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,END,REPEAT,spelling,HIGH,N
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,INNER,SLANT,cmu,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,6,"He ain't accept when I said sorry, that's his pride again",again,END,REPEAT,spelling,HIGH,N
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,6,"He ain't accept when I said sorry, that's his pride again",accept,INNER,ASSONANCE,vowel,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,6,"He ain't accept when I said sorry, that's his pride again",said,INNER,SLANT,cmu,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,6,"He ain't accept when I said sorry, that's his pride again",when,INNER,PERFECT,cmu,HIGH,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,6,"He ain't accept when I said sorry, that's his pride again",accept,INNER,ASSONANCE,vowel,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,6,"He ain't accept when I said sorry, that's his pride again",again,INNER,SLANT,cmu,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,6,"He ain't accept when I said sorry, that's his pride again",said,INNER,ASSONANCE,vowel,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,6,"He ain't accept when I said sorry, that's his pride again",when,INNER,SLANT,cmu,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",lied,6,"He ain't accept when I said sorry, that's his pride again",pride,INNER,PERFECT,cmu,HIGH,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",sorry,6,"He ain't accept when I said sorry, that's his pride again",sorry,INNER,REPEAT,spelling,HIGH,N
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,END,REPEAT,spelling,HIGH,N
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,INNER,SLANT,cmu,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,INNER,SLANT,cmu,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",cheated,7,"This lawyer money steady stacking up, so his appeal won't get denied again",appeal,INNER,ASSONANCE,vowel,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,INNER,SLANT,cmu,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,INNER,ASSONANCE,vowel,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",confession,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,INNER,ASSONANCE,vowel,MED,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",lied,7,"This lawyer money steady stacking up, so his appeal won't get denied again",denied,INNER,PERFECT,cmu,HIGH,Y
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,END,REPEAT,spelling,HIGH,N
+Riot,5,"I cheated on you and that is my confession, I'm sorry, I lied again",again,9,"I know who sell phones and iPads, they tryna get by again",again,END,REPEAT,spelling,HIGH,N
+Riot,6,"He ain't accept when I said sorry, that's his pride again",accept,6,"He ain't accept when I said sorry, that's his pride again",again,INNER,ASSONANCE,vowel,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",accept,6,"He ain't accept when I said sorry, that's his pride again",said,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",accept,6,"He ain't accept when I said sorry, that's his pride again",when,INNER,ASSONANCE,vowel,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",said,6,"He ain't accept when I said sorry, that's his pride again",again,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",when,6,"He ain't accept when I said sorry, that's his pride again",again,INNER,PERFECT,cmu,HIGH,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",when,6,"He ain't accept when I said sorry, that's his pride again",said,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",again,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,END,REPEAT,spelling,HIGH,N
+Riot,6,"He ain't accept when I said sorry, that's his pride again",accept,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,INNER,ASSONANCE,vowel,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",accept,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",accept,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",again,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",again,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",pride,7,"This lawyer money steady stacking up, so his appeal won't get denied again",denied,INNER,PERFECT,cmu,HIGH,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",said,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",said,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",said,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",when,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,INNER,PERFECT,cmu,HIGH,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",when,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",when,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",again,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,END,REPEAT,spelling,HIGH,N
+Riot,6,"He ain't accept when I said sorry, that's his pride again",accept,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,INNER,ASSONANCE,vowel,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",pride,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,riots,INNER,ASSONANCE,vowel,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",pride,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,Why,INNER,ASSONANCE,vowel,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",said,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",sorry,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,start,INNER,SLANT,cmu,MED,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",when,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,INNER,PERFECT,cmu,HIGH,Y
+Riot,6,"He ain't accept when I said sorry, that's his pride again",again,9,"I know who sell phones and iPads, they tryna get by again",again,END,REPEAT,spelling,HIGH,N
+Riot,6,"He ain't accept when I said sorry, that's his pride again",again,10,Just keep Chicago in your prayer,prayer,END,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,END,REPEAT,spelling,HIGH,N
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",appeal,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,he'll,INNER,PERFECT,cmu,HIGH,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",denied,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,riots,INNER,ASSONANCE,vowel,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",denied,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,Why,INNER,ASSONANCE,vowel,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",stacking,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,can't,INNER,ASSONANCE,vowel,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",won't,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,shows,INNER,ASSONANCE,vowel,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,9,"I know who sell phones and iPads, they tryna get by again",again,END,REPEAT,spelling,HIGH,N
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,9,"I know who sell phones and iPads, they tryna get by again",get,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,9,"I know who sell phones and iPads, they tryna get by again",sell,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",appeal,9,"I know who sell phones and iPads, they tryna get by again",tryna,INNER,SLANT,spelling,LOW,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",denied,9,"I know who sell phones and iPads, they tryna get by again",by,INNER,ASSONANCE,vowel,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,9,"I know who sell phones and iPads, they tryna get by again",again,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,9,"I know who sell phones and iPads, they tryna get by again",get,INNER,REPEAT,spelling,HIGH,N
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",get,9,"I know who sell phones and iPads, they tryna get by again",sell,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",stacking,9,"I know who sell phones and iPads, they tryna get by again",iPads,INNER,ASSONANCE,vowel,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,9,"I know who sell phones and iPads, they tryna get by again",again,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,9,"I know who sell phones and iPads, they tryna get by again",get,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",steady,9,"I know who sell phones and iPads, they tryna get by again",sell,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",won't,9,"I know who sell phones and iPads, they tryna get by again",know,INNER,ASSONANCE,vowel,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",won't,9,"I know who sell phones and iPads, they tryna get by again",phones,INNER,SLANT,cmu,MED,Y
+Riot,7,"This lawyer money steady stacking up, so his appeal won't get denied again",again,10,Just keep Chicago in your prayer,prayer,END,SLANT,cmu,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,Why,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,riots,INNER,ASSONANCE,vowel,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,9,"I know who sell phones and iPads, they tryna get by again",again,END,REPEAT,spelling,HIGH,N
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,9,"I know who sell phones and iPads, they tryna get by again",get,INNER,SLANT,cmu,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,9,"I know who sell phones and iPads, they tryna get by again",sell,INNER,SLANT,cmu,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,can't,9,"I know who sell phones and iPads, they tryna get by again",iPads,INNER,ASSONANCE,vowel,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,he'll,9,"I know who sell phones and iPads, they tryna get by again",sell,INNER,SLANT,spelling,LOW,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,he'll,9,"I know who sell phones and iPads, they tryna get by again",tryna,INNER,SLANT,spelling,LOW,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,riots,9,"I know who sell phones and iPads, they tryna get by again",by,INNER,ASSONANCE,vowel,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,shows,9,"I know who sell phones and iPads, they tryna get by again",know,INNER,ASSONANCE,vowel,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,shows,9,"I know who sell phones and iPads, they tryna get by again",phones,INNER,SLANT,cmu,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,Why,9,"I know who sell phones and iPads, they tryna get by again",by,INNER,PERFECT,cmu,HIGH,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,10,Just keep Chicago in your prayer,prayer,END,SLANT,cmu,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,he'll,10,Just keep Chicago in your prayer,keep,INNER,SLANT,cmu,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,shows,10,Just keep Chicago in your prayer,Chicago,INNER,ASSONANCE,vowel,MED,Y
+Riot,8,Why Lil Durk can't do shows in Chiraq? 'Cause he'll start riots again,again,12,"I know that you thinking, I probably don't care",care,END,SLANT,cmu,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",get,9,"I know who sell phones and iPads, they tryna get by again",again,INNER,SLANT,cmu,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",know,9,"I know who sell phones and iPads, they tryna get by again",phones,INNER,ASSONANCE,vowel,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",sell,9,"I know who sell phones and iPads, they tryna get by again",again,INNER,SLANT,cmu,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",sell,9,"I know who sell phones and iPads, they tryna get by again",get,INNER,SLANT,cmu,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",again,10,Just keep Chicago in your prayer,prayer,END,SLANT,cmu,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",get,10,Just keep Chicago in your prayer,prayer,INNER,SLANT,cmu,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",know,10,Just keep Chicago in your prayer,Chicago,INNER,PERFECT,cmu,HIGH,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",phones,10,Just keep Chicago in your prayer,Chicago,INNER,ASSONANCE,vowel,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",sell,10,Just keep Chicago in your prayer,prayer,INNER,SLANT,cmu,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",tryna,10,Just keep Chicago in your prayer,keep,INNER,SLANT,spelling,LOW,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",know,11,Talk to the kids and you don't gotta pay us,don't,INNER,ASSONANCE,vowel,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",phones,11,Talk to the kids and you don't gotta pay us,don't,INNER,SLANT,cmu,MED,Y
+Riot,9,"I know who sell phones and iPads, they tryna get by again",again,12,"I know that you thinking, I probably don't care",care,END,SLANT,cmu,MED,Y
+Riot,10,Just keep Chicago in your prayer,Chicago,11,Talk to the kids and you don't gotta pay us,don't,INNER,ASSONANCE,vowel,MED,Y
+Riot,10,Just keep Chicago in your prayer,prayer,12,"I know that you thinking, I probably don't care",care,END,PERFECT,cmu,HIGH,Y
+Riot,10,Just keep Chicago in your prayer,Chicago,12,"I know that you thinking, I probably don't care",don't,INNER,ASSONANCE,vowel,MED,Y
+Riot,10,Just keep Chicago in your prayer,Chicago,12,"I know that you thinking, I probably don't care",know,INNER,PERFECT,cmu,HIGH,Y
+Riot,10,Just keep Chicago in your prayer,keep,12,"I know that you thinking, I probably don't care",probably,INNER,ASSONANCE,vowel,MED,Y
+Riot,10,Just keep Chicago in your prayer,prayer,14,"They go off my past, they don't treat me fair",fair,END,PERFECT,cmu,HIGH,Y
+Riot,11,Talk to the kids and you don't gotta pay us,don't,12,"I know that you thinking, I probably don't care",don't,INNER,REPEAT,spelling,HIGH,N
+Riot,11,Talk to the kids and you don't gotta pay us,don't,12,"I know that you thinking, I probably don't care",know,INNER,ASSONANCE,vowel,MED,Y
+Riot,11,Talk to the kids and you don't gotta pay us,kids,12,"I know that you thinking, I probably don't care",thinking,INNER,ASSONANCE,vowel,MED,Y
+Riot,11,Talk to the kids and you don't gotta pay us,pay,13,"I'm willing to change, can I talk to the mayor?",mayor,END,ASSONANCE,vowel,MED,Y
+Riot,11,Talk to the kids and you don't gotta pay us,kids,13,"I'm willing to change, can I talk to the mayor?",willing,INNER,ASSONANCE,vowel,MED,Y
+Riot,11,Talk to the kids and you don't gotta pay us,pay,13,"I'm willing to change, can I talk to the mayor?",change,INNER,ASSONANCE,vowel,MED,Y
+Riot,11,Talk to the kids and you don't gotta pay us,Talk,13,"I'm willing to change, can I talk to the mayor?",talk,INNER,REPEAT,spelling,HIGH,N
+Riot,12,"I know that you thinking, I probably don't care",know,12,"I know that you thinking, I probably don't care",don't,INNER,ASSONANCE,vowel,MED,Y
+Riot,12,"I know that you thinking, I probably don't care",thinking,13,"I'm willing to change, can I talk to the mayor?",willing,INNER,ASSONANCE,vowel,MED,Y
+Riot,12,"I know that you thinking, I probably don't care",care,14,"They go off my past, they don't treat me fair",fair,END,PERFECT,cmu,HIGH,Y
+Riot,12,"I know that you thinking, I probably don't care",don't,14,"They go off my past, they don't treat me fair",don't,INNER,REPEAT,spelling,HIGH,N
+Riot,12,"I know that you thinking, I probably don't care",don't,14,"They go off my past, they don't treat me fair",go,INNER,ASSONANCE,vowel,MED,Y
+Riot,12,"I know that you thinking, I probably don't care",know,14,"They go off my past, they don't treat me fair",don't,INNER,ASSONANCE,vowel,MED,Y
+Riot,12,"I know that you thinking, I probably don't care",know,14,"They go off my past, they don't treat me fair",go,INNER,PERFECT,cmu,HIGH,Y
+Riot,12,"I know that you thinking, I probably don't care",probably,14,"They go off my past, they don't treat me fair",treat,INNER,ASSONANCE,vowel,MED,Y
+Riot,12,"I know that you thinking, I probably don't care",care,15,Radio didn't play my songs on the air,air,END,PERFECT,cmu,HIGH,Y
+Riot,12,"I know that you thinking, I probably don't care",care,16,"I tried to go pop, but the lane wasn't there",there,END,PERFECT,cmu,HIGH,Y
+Riot,13,"I'm willing to change, can I talk to the mayor?",change,13,"I'm willing to change, can I talk to the mayor?",mayor,INNER,ASSONANCE,vowel,MED,Y
+Riot,13,"I'm willing to change, can I talk to the mayor?",can,14,"They go off my past, they don't treat me fair",past,INNER,ASSONANCE,vowel,MED,Y
+Riot,13,"I'm willing to change, can I talk to the mayor?",change,15,Radio didn't play my songs on the air,play,INNER,ASSONANCE,vowel,MED,Y
+Riot,13,"I'm willing to change, can I talk to the mayor?",mayor,15,Radio didn't play my songs on the air,play,INNER,ASSONANCE,vowel,MED,Y
+Riot,13,"I'm willing to change, can I talk to the mayor?",talk,15,Radio didn't play my songs on the air,songs,INNER,ASSONANCE,vowel,MED,Y
+Riot,13,"I'm willing to change, can I talk to the mayor?",willing,15,Radio didn't play my songs on the air,didn't,INNER,ASSONANCE,vowel,MED,Y
+Riot,14,"They go off my past, they don't treat me fair",go,14,"They go off my past, they don't treat me fair",don't,INNER,ASSONANCE,vowel,MED,Y
+Riot,14,"They go off my past, they don't treat me fair",fair,15,Radio didn't play my songs on the air,air,END,PERFECT,cmu,HIGH,Y
+Riot,14,"They go off my past, they don't treat me fair",don't,15,Radio didn't play my songs on the air,Radio,INNER,ASSONANCE,vowel,MED,Y
+Riot,14,"They go off my past, they don't treat me fair",go,15,Radio didn't play my songs on the air,Radio,INNER,PERFECT,cmu,HIGH,Y
+Riot,14,"They go off my past, they don't treat me fair",fair,16,"I tried to go pop, but the lane wasn't there",there,END,PERFECT,cmu,HIGH,Y
+Riot,14,"They go off my past, they don't treat me fair",don't,16,"I tried to go pop, but the lane wasn't there",go,INNER,ASSONANCE,vowel,MED,Y
+Riot,14,"They go off my past, they don't treat me fair",go,16,"I tried to go pop, but the lane wasn't there",go,INNER,REPEAT,spelling,HIGH,N
+Riot,14,"They go off my past, they don't treat me fair",treat,16,"I tried to go pop, but the lane wasn't there",tried,INNER,SLANT,spelling,LOW,Y
+Riot,14,"They go off my past, they don't treat me fair",fair,17,"I changed my music, they still didn't care",care,END,PERFECT,cmu,HIGH,Y
+Riot,15,Radio didn't play my songs on the air,air,16,"I tried to go pop, but the lane wasn't there",there,END,PERFECT,cmu,HIGH,Y
+Riot,15,Radio didn't play my songs on the air,play,16,"I tried to go pop, but the lane wasn't there",lane,INNER,ASSONANCE,vowel,MED,Y
+Riot,15,Radio didn't play my songs on the air,Radio,16,"I tried to go pop, but the lane wasn't there",go,INNER,PERFECT,cmu,HIGH,Y
+Riot,15,Radio didn't play my songs on the air,air,17,"I changed my music, they still didn't care",care,END,PERFECT,cmu,HIGH,Y
+Riot,15,Radio didn't play my songs on the air,didn't,17,"I changed my music, they still didn't care",didn't,INNER,REPEAT,spelling,HIGH,N
+Riot,15,Radio didn't play my songs on the air,didn't,17,"I changed my music, they still didn't care",still,INNER,ASSONANCE,vowel,MED,Y
+Riot,15,Radio didn't play my songs on the air,play,17,"I changed my music, they still didn't care",changed,INNER,ASSONANCE,vowel,MED,Y
+Riot,16,"I tried to go pop, but the lane wasn't there",pop,16,"I tried to go pop, but the lane wasn't there",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Riot,16,"I tried to go pop, but the lane wasn't there",there,17,"I changed my music, they still didn't care",care,END,PERFECT,cmu,HIGH,Y
+Riot,16,"I tried to go pop, but the lane wasn't there",lane,17,"I changed my music, they still didn't care",changed,INNER,ASSONANCE,vowel,MED,Y
+Riot,16,"I tried to go pop, but the lane wasn't there",lane,18,"I made the news, I visit schools",made,INNER,SLANT,cmu,MED,Y
+Riot,17,"I changed my music, they still didn't care",still,17,"I changed my music, they still didn't care",didn't,INNER,ASSONANCE,vowel,MED,Y
+Riot,17,"I changed my music, they still didn't care",changed,18,"I made the news, I visit schools",made,INNER,ASSONANCE,vowel,MED,Y
+Riot,17,"I changed my music, they still didn't care",didn't,18,"I made the news, I visit schools",visit,INNER,ASSONANCE,vowel,MED,Y
+Riot,17,"I changed my music, they still didn't care",music,18,"I made the news, I visit schools",news,INNER,SLANT,cmu,MED,Y
+Riot,17,"I changed my music, they still didn't care",music,18,"I made the news, I visit schools",schools,INNER,ASSONANCE,vowel,MED,Y
+Riot,17,"I changed my music, they still didn't care",still,18,"I made the news, I visit schools",visit,INNER,ASSONANCE,vowel,MED,Y
+Riot,17,"I changed my music, they still didn't care",didn't,19,"They still deny me for my show, I'm confused",still,INNER,ASSONANCE,vowel,MED,Y
+Riot,17,"I changed my music, they still didn't care",music,19,"They still deny me for my show, I'm confused",confused,INNER,SLANT,cmu,MED,Y
+Riot,17,"I changed my music, they still didn't care",still,19,"They still deny me for my show, I'm confused",still,INNER,REPEAT,spelling,HIGH,N
+Riot,17,"I changed my music, they still didn't care",care,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",scared,END,SLANT,cmu,MED,Y
+Riot,18,"I made the news, I visit schools",news,18,"I made the news, I visit schools",schools,INNER,SLANT,cmu,MED,Y
+Riot,18,"I made the news, I visit schools",schools,19,"They still deny me for my show, I'm confused",confused,END,ASSONANCE,vowel,MED,Y
+Riot,18,"I made the news, I visit schools",news,19,"They still deny me for my show, I'm confused",confused,INNER,SLANT,cmu,MED,Y
+Riot,18,"I made the news, I visit schools",visit,19,"They still deny me for my show, I'm confused",still,INNER,ASSONANCE,vowel,MED,Y
+Riot,18,"I made the news, I visit schools",made,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",mayor,INNER,ASSONANCE,vowel,MED,Y
+Riot,19,"They still deny me for my show, I'm confused",show,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",don't,INNER,ASSONANCE,vowel,MED,Y
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",alderman,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",talk,INNER,ASSONANCE,vowel,MED,Y
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",talk,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",alderman,INNER,ASSONANCE,vowel,MED,Y
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",talk,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",talk,INNER,REPEAT,spelling,HIGH,N
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",tryna,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",tryna,INNER,REPEAT,spelling,HIGH,N
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",alderman,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",talk,INNER,ASSONANCE,vowel,MED,Y
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",talk,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",talk,INNER,REPEAT,spelling,HIGH,N
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",tryna,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",chief,INNER,SLANT,spelling,LOW,Y
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",tryna,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",hear,INNER,SLANT,spelling,LOW,Y
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",tryna,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",police,INNER,SLANT,spelling,LOW,Y
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",tryna,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",tryna,INNER,REPEAT,spelling,HIGH,N
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",alderman,22,"All of my niggas savage, most of my niggas violent",All,INNER,ASSONANCE,vowel,MED,Y
+Riot,20,"I'm tryna talk to the alderman, I'm tryna talk to the mayor",talk,22,"All of my niggas savage, most of my niggas violent",All,INNER,SLANT,cmu,MED,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",chief,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",hear,INNER,SLANT,cmu,MED,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",chief,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",police,INNER,SLANT,cmu,MED,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",police,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",hear,INNER,SLANT,cmu,MED,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",tryna,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",chief,INNER,SLANT,spelling,LOW,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",tryna,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",hear,INNER,SLANT,spelling,LOW,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",tryna,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",police,INNER,SLANT,spelling,LOW,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",don't,22,"All of my niggas savage, most of my niggas violent",most,INNER,SLANT,cmu,MED,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",talk,22,"All of my niggas savage, most of my niggas violent",All,INNER,SLANT,cmu,MED,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",don't,23,"Know a couple niggas ratted, most of mine kept it silent",Know,INNER,ASSONANCE,vowel,MED,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",don't,23,"Know a couple niggas ratted, most of mine kept it silent",most,INNER,SLANT,cmu,MED,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",scared,23,"Know a couple niggas ratted, most of mine kept it silent",kept,INNER,ASSONANCE,vowel,MED,Y
+Riot,21,"I'm tryna talk to the chief of police, but they don't wanna hear it, they scared (They said)",scared,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",end,END,SLANT,cmu,MED,Y
+Riot,22,"All of my niggas savage, most of my niggas violent",niggas,22,"All of my niggas savage, most of my niggas violent",niggas,INNER,REPEAT,spelling,HIGH,N
+Riot,22,"All of my niggas savage, most of my niggas violent",violent,23,"Know a couple niggas ratted, most of mine kept it silent",silent,END,PERFECT,spelling,MED,Y
+Riot,22,"All of my niggas savage, most of my niggas violent",most,23,"Know a couple niggas ratted, most of mine kept it silent",Know,INNER,ASSONANCE,vowel,MED,Y
+Riot,22,"All of my niggas savage, most of my niggas violent",most,23,"Know a couple niggas ratted, most of mine kept it silent",most,INNER,REPEAT,spelling,HIGH,N
+Riot,22,"All of my niggas savage, most of my niggas violent",niggas,23,"Know a couple niggas ratted, most of mine kept it silent",niggas,INNER,REPEAT,spelling,HIGH,N
+Riot,22,"All of my niggas savage, most of my niggas violent",savage,23,"Know a couple niggas ratted, most of mine kept it silent",ratted,INNER,ASSONANCE,vowel,LOW,N
+Riot,22,"All of my niggas savage, most of my niggas violent",violent,23,"Know a couple niggas ratted, most of mine kept it silent",mine,INNER,ASSONANCE,vowel,MED,Y
+Riot,22,"All of my niggas savage, most of my niggas violent",most,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",told,INNER,ASSONANCE,vowel,MED,Y
+Riot,22,"All of my niggas savage, most of my niggas violent",violent,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",fighting,INNER,ASSONANCE,vowel,MED,Y
+Riot,22,"All of my niggas savage, most of my niggas violent",violent,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",trial,INNER,ASSONANCE,vowel,MED,Y
+Riot,22,"All of my niggas savage, most of my niggas violent",violent,25,"Half my city divided, if they can't get no money they sliding",sliding,END,ASSONANCE,vowel,MED,Y
+Riot,22,"All of my niggas savage, most of my niggas violent",violent,26,That's why all the young niggas wildin',wildin,END,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",Know,23,"Know a couple niggas ratted, most of mine kept it silent",most,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",mine,23,"Know a couple niggas ratted, most of mine kept it silent",silent,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",kept,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",end,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",Know,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",told,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",mine,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",fighting,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",mine,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",trial,INNER,SLANT,cmu,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",most,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",told,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",silent,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",fighting,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",silent,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",trial,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",silent,25,"Half my city divided, if they can't get no money they sliding",sliding,END,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",couple,25,"Half my city divided, if they can't get no money they sliding",money,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",kept,25,"Half my city divided, if they can't get no money they sliding",get,INNER,SLANT,cmu,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",Know,25,"Half my city divided, if they can't get no money they sliding",no,INNER,PERFECT,cmu,HIGH,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",mine,25,"Half my city divided, if they can't get no money they sliding",divided,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",mine,25,"Half my city divided, if they can't get no money they sliding",sliding,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",most,25,"Half my city divided, if they can't get no money they sliding",no,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",silent,25,"Half my city divided, if they can't get no money they sliding",divided,INNER,ASSONANCE,vowel,MED,Y
+Riot,23,"Know a couple niggas ratted, most of mine kept it silent",silent,26,That's why all the young niggas wildin',wildin,END,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",chill,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",'til,INNER,PERFECT,cmu,HIGH,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",fighting,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",trial,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",Little,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",'til,INNER,SLANT,cmu,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",Little,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",chill,INNER,SLANT,cmu,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",'til,25,"Half my city divided, if they can't get no money they sliding",city,INNER,SLANT,cmu,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",chill,25,"Half my city divided, if they can't get no money they sliding",city,INNER,SLANT,cmu,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",cuz,25,"Half my city divided, if they can't get no money they sliding",money,INNER,SLANT,spelling,LOW,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",end,25,"Half my city divided, if they can't get no money they sliding",get,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",fighting,25,"Half my city divided, if they can't get no money they sliding",divided,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",fighting,25,"Half my city divided, if they can't get no money they sliding",sliding,INNER,SLANT,cmu,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",Little,25,"Half my city divided, if they can't get no money they sliding",city,INNER,SLANT,cmu,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",told,25,"Half my city divided, if they can't get no money they sliding",no,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",trial,25,"Half my city divided, if they can't get no money they sliding",divided,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",trial,25,"Half my city divided, if they can't get no money they sliding",sliding,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",cuz,26,That's why all the young niggas wildin',young,INNER,SLANT,spelling,LOW,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",fighting,26,That's why all the young niggas wildin',why,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",fighting,26,That's why all the young niggas wildin',wildin,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",trial,26,That's why all the young niggas wildin',why,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",trial,26,That's why all the young niggas wildin',wildin,INNER,ASSONANCE,vowel,MED,Y
+Riot,24,"Little cuz fighting for murder, told 'em chill out gotta keep faith 'til the trial end",end,27,That's why they started them riots again,again,END,SLANT,cmu,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",divided,25,"Half my city divided, if they can't get no money they sliding",sliding,INNER,SLANT,cmu,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",Half,25,"Half my city divided, if they can't get no money they sliding",can't,INNER,ASSONANCE,vowel,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",sliding,26,That's why all the young niggas wildin',wildin,END,SLANT,cmu,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",divided,26,That's why all the young niggas wildin',why,INNER,ASSONANCE,vowel,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",divided,26,That's why all the young niggas wildin',wildin,INNER,ASSONANCE,vowel,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",money,26,That's why all the young niggas wildin',young,INNER,SLANT,cmu,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",sliding,26,That's why all the young niggas wildin',why,INNER,ASSONANCE,vowel,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",divided,27,That's why they started them riots again,riots,INNER,ASSONANCE,vowel,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",divided,27,That's why they started them riots again,why,INNER,ASSONANCE,vowel,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",get,27,That's why they started them riots again,again,INNER,SLANT,cmu,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",sliding,27,That's why they started them riots again,riots,INNER,ASSONANCE,vowel,MED,Y
+Riot,25,"Half my city divided, if they can't get no money they sliding",sliding,27,That's why they started them riots again,why,INNER,ASSONANCE,vowel,MED,Y
+Riot,26,That's why all the young niggas wildin',why,26,That's why all the young niggas wildin',wildin,INNER,ASSONANCE,vowel,MED,Y
+Riot,26,That's why all the young niggas wildin',why,27,That's why they started them riots again,riots,INNER,ASSONANCE,vowel,MED,Y
+Riot,26,That's why all the young niggas wildin',why,27,That's why they started them riots again,why,INNER,REPEAT,spelling,HIGH,N
+Riot,26,That's why all the young niggas wildin',wildin,27,That's why they started them riots again,riots,INNER,ASSONANCE,vowel,MED,Y
+Riot,26,That's why all the young niggas wildin',wildin,27,That's why they started them riots again,why,INNER,ASSONANCE,vowel,MED,Y
+Riot,26,That's why all the young niggas wildin',young,28,Police ain't doing nothing about it,nothing,INNER,SLANT,cmu,MED,Y
+Riot,27,That's why they started them riots again,why,27,That's why they started them riots again,riots,INNER,ASSONANCE,vowel,MED,Y
+Riot,27,That's why they started them riots again,again,29,"Violate our rights, tryna whack us again",again,END,REPEAT,spelling,HIGH,N
+Riot,27,That's why they started them riots again,riots,29,"Violate our rights, tryna whack us again",rights,INNER,SLANT,cmu,MED,Y
+Riot,27,That's why they started them riots again,riots,29,"Violate our rights, tryna whack us again",Violate,INNER,ASSONANCE,vowel,MED,Y
+Riot,27,That's why they started them riots again,why,29,"Violate our rights, tryna whack us again",rights,INNER,ASSONANCE,vowel,MED,Y
+Riot,27,That's why they started them riots again,why,29,"Violate our rights, tryna whack us again",Violate,INNER,ASSONANCE,vowel,MED,Y
+Riot,27,That's why they started them riots again,again,30,It was life or death for my best friends,friends,END,ASSONANCE,vowel,MED,Y
+Riot,28,Police ain't doing nothing about it,Police,29,"Violate our rights, tryna whack us again",tryna,INNER,SLANT,spelling,LOW,Y
+Riot,29,"Violate our rights, tryna whack us again",Violate,29,"Violate our rights, tryna whack us again",rights,INNER,ASSONANCE,vowel,MED,Y
+Riot,29,"Violate our rights, tryna whack us again",again,30,It was life or death for my best friends,friends,END,ASSONANCE,vowel,MED,Y
+Riot,29,"Violate our rights, tryna whack us again",again,30,It was life or death for my best friends,best,INNER,ASSONANCE,vowel,MED,Y
+Riot,29,"Violate our rights, tryna whack us again",again,30,It was life or death for my best friends,death,INNER,SLANT,cmu,MED,Y
+Riot,29,"Violate our rights, tryna whack us again",rights,30,It was life or death for my best friends,life,INNER,ASSONANCE,vowel,MED,Y
+Riot,29,"Violate our rights, tryna whack us again",Violate,30,It was life or death for my best friends,life,INNER,ASSONANCE,vowel,MED,Y
+Riot,29,"Violate our rights, tryna whack us again",again,32,I told the youngins be better than me,better,END,SLANT,cmu,MED,Y
+Riot,30,It was life or death for my best friends,best,30,It was life or death for my best friends,friends,INNER,ASSONANCE,vowel,MED,Y
+Riot,30,It was life or death for my best friends,death,30,It was life or death for my best friends,best,INNER,ASSONANCE,vowel,MED,Y
+Riot,30,It was life or death for my best friends,death,30,It was life or death for my best friends,friends,INNER,ASSONANCE,vowel,MED,Y
+Riot,30,It was life or death for my best friends,friends,32,I told the youngins be better than me,better,END,ASSONANCE,vowel,MED,Y
+Riot,30,It was life or death for my best friends,best,32,I told the youngins be better than me,better,INNER,SLANT,cmu,MED,Y
+Riot,30,It was life or death for my best friends,death,32,I told the youngins be better than me,better,INNER,SLANT,cmu,MED,Y
+Riot,31,"I don't want Glocks, all FN's",don't,31,"I don't want Glocks, all FN's",Glocks,INNER,ASSONANCE,vowel,LOW,N
+Riot,31,"I don't want Glocks, all FN's",don't,32,I told the youngins be better than me,told,INNER,ASSONANCE,vowel,MED,Y
+Riot,31,"I don't want Glocks, all FN's",Glocks,32,I told the youngins be better than me,told,INNER,ASSONANCE,vowel,LOW,N
+Riot,31,"I don't want Glocks, all FN's",don't,33,If I don't try and help 'em I'm less of a man,don't,INNER,REPEAT,spelling,HIGH,N
+Riot,31,"I don't want Glocks, all FN's",Glocks,33,If I don't try and help 'em I'm less of a man,don't,INNER,ASSONANCE,vowel,LOW,N
+Riot,32,I told the youngins be better than me,better,33,If I don't try and help 'em I'm less of a man,help,INNER,ASSONANCE,vowel,MED,Y
+Riot,32,I told the youngins be better than me,better,33,If I don't try and help 'em I'm less of a man,less,INNER,SLANT,cmu,MED,Y
+Riot,32,I told the youngins be better than me,told,33,If I don't try and help 'em I'm less of a man,don't,INNER,ASSONANCE,vowel,MED,Y
+Riot,32,I told the youngins be better than me,better,34,I can show you how to manage your money 'cause I took a lesser advance,lesser,INNER,SLANT,cmu,MED,Y
+Riot,32,I told the youngins be better than me,told,34,I can show you how to manage your money 'cause I took a lesser advance,show,INNER,ASSONANCE,vowel,MED,Y
+Riot,32,I told the youngins be better than me,better,35,"You in a position to be rich forever, but what about the rest of your friends?",friends,END,ASSONANCE,vowel,MED,Y
+Riot,32,I told the youngins be better than me,better,36,Know I changed 'cause I said things that I won't say again,again,END,SLANT,cmu,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,help,33,If I don't try and help 'em I'm less of a man,less,INNER,ASSONANCE,vowel,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,man,34,I can show you how to manage your money 'cause I took a lesser advance,advance,END,SLANT,cmu,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,don't,34,I can show you how to manage your money 'cause I took a lesser advance,show,INNER,ASSONANCE,vowel,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,help,34,I can show you how to manage your money 'cause I took a lesser advance,lesser,INNER,ASSONANCE,vowel,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,less,34,I can show you how to manage your money 'cause I took a lesser advance,lesser,INNER,SLANT,cmu,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,man,34,I can show you how to manage your money 'cause I took a lesser advance,can,INNER,PERFECT,cmu,HIGH,Y
+Riot,33,If I don't try and help 'em I'm less of a man,man,34,I can show you how to manage your money 'cause I took a lesser advance,manage,INNER,SLANT,cmu,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,help,35,"You in a position to be rich forever, but what about the rest of your friends?",forever,INNER,ASSONANCE,vowel,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,help,35,"You in a position to be rich forever, but what about the rest of your friends?",friends,INNER,ASSONANCE,vowel,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,help,35,"You in a position to be rich forever, but what about the rest of your friends?",rest,INNER,ASSONANCE,vowel,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,less,35,"You in a position to be rich forever, but what about the rest of your friends?",forever,INNER,SLANT,cmu,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,less,35,"You in a position to be rich forever, but what about the rest of your friends?",friends,INNER,ASSONANCE,vowel,MED,Y
+Riot,33,If I don't try and help 'em I'm less of a man,less,35,"You in a position to be rich forever, but what about the rest of your friends?",rest,INNER,SLANT,cmu,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,can,34,I can show you how to manage your money 'cause I took a lesser advance,advance,INNER,SLANT,cmu,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,can,34,I can show you how to manage your money 'cause I took a lesser advance,manage,INNER,SLANT,cmu,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,manage,34,I can show you how to manage your money 'cause I took a lesser advance,advance,INNER,SLANT,cmu,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,how,35,"You in a position to be rich forever, but what about the rest of your friends?",about,INNER,ASSONANCE,vowel,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,lesser,35,"You in a position to be rich forever, but what about the rest of your friends?",forever,INNER,SLANT,cmu,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,lesser,35,"You in a position to be rich forever, but what about the rest of your friends?",friends,INNER,ASSONANCE,vowel,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,lesser,35,"You in a position to be rich forever, but what about the rest of your friends?",rest,INNER,SLANT,cmu,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,money,35,"You in a position to be rich forever, but what about the rest of your friends?",what,INNER,SLANT,cmu,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,'cause,36,Know I changed 'cause I said things that I won't say again,'cause,INNER,REPEAT,spelling,HIGH,N
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,lesser,36,Know I changed 'cause I said things that I won't say again,again,INNER,SLANT,cmu,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,lesser,36,Know I changed 'cause I said things that I won't say again,said,INNER,SLANT,cmu,MED,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,show,36,Know I changed 'cause I said things that I won't say again,Know,INNER,PERFECT,cmu,HIGH,Y
+Riot,34,I can show you how to manage your money 'cause I took a lesser advance,show,36,Know I changed 'cause I said things that I won't say again,won't,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",forever,35,"You in a position to be rich forever, but what about the rest of your friends?",friends,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",forever,35,"You in a position to be rich forever, but what about the rest of your friends?",rest,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",position,35,"You in a position to be rich forever, but what about the rest of your friends?",rich,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",rest,35,"You in a position to be rich forever, but what about the rest of your friends?",friends,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",friends,36,Know I changed 'cause I said things that I won't say again,again,END,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",forever,36,Know I changed 'cause I said things that I won't say again,again,INNER,SLANT,cmu,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",forever,36,Know I changed 'cause I said things that I won't say again,said,INNER,SLANT,cmu,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",friends,36,Know I changed 'cause I said things that I won't say again,said,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",position,36,Know I changed 'cause I said things that I won't say again,things,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",rest,36,Know I changed 'cause I said things that I won't say again,again,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",rest,36,Know I changed 'cause I said things that I won't say again,said,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",rich,36,Know I changed 'cause I said things that I won't say again,things,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",friends,37,Got to embrace the streets so kids can come out and play again (They said),again,END,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",forever,37,Got to embrace the streets so kids can come out and play again (They said),again,INNER,SLANT,cmu,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",position,37,Got to embrace the streets so kids can come out and play again (They said),kids,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",rest,37,Got to embrace the streets so kids can come out and play again (They said),again,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",rich,37,Got to embrace the streets so kids can come out and play again (They said),kids,INNER,ASSONANCE,vowel,MED,Y
+Riot,35,"You in a position to be rich forever, but what about the rest of your friends?",what,37,Got to embrace the streets so kids can come out and play again (They said),come,INNER,SLANT,cmu,MED,Y
+Riot,36,Know I changed 'cause I said things that I won't say again,changed,36,Know I changed 'cause I said things that I won't say again,say,INNER,ASSONANCE,vowel,MED,Y
+Riot,36,Know I changed 'cause I said things that I won't say again,Know,36,Know I changed 'cause I said things that I won't say again,won't,INNER,ASSONANCE,vowel,MED,Y
+Riot,36,Know I changed 'cause I said things that I won't say again,said,36,Know I changed 'cause I said things that I won't say again,again,INNER,SLANT,cmu,MED,Y
+Riot,36,Know I changed 'cause I said things that I won't say again,again,37,Got to embrace the streets so kids can come out and play again (They said),again,END,REPEAT,spelling,HIGH,N
+Riot,36,Know I changed 'cause I said things that I won't say again,changed,37,Got to embrace the streets so kids can come out and play again (They said),embrace,INNER,ASSONANCE,vowel,MED,Y
+Riot,36,Know I changed 'cause I said things that I won't say again,changed,37,Got to embrace the streets so kids can come out and play again (They said),play,INNER,ASSONANCE,vowel,MED,Y
+Riot,36,Know I changed 'cause I said things that I won't say again,said,37,Got to embrace the streets so kids can come out and play again (They said),again,INNER,SLANT,cmu,MED,Y
+Riot,36,Know I changed 'cause I said things that I won't say again,say,37,Got to embrace the streets so kids can come out and play again (They said),embrace,INNER,ASSONANCE,vowel,MED,Y
+Riot,36,Know I changed 'cause I said things that I won't say again,say,37,Got to embrace the streets so kids can come out and play again (They said),play,INNER,PERFECT,cmu,HIGH,Y
+Riot,36,Know I changed 'cause I said things that I won't say again,things,37,Got to embrace the streets so kids can come out and play again (They said),kids,INNER,SLANT,cmu,MED,Y
+Riot,37,Got to embrace the streets so kids can come out and play again (They said),embrace,37,Got to embrace the streets so kids can come out and play again (They said),play,INNER,ASSONANCE,vowel,MED,Y

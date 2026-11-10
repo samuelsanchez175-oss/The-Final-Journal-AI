@@ -156,6 +156,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 144 | tsunami-j | Tsunami J | 1 | 73 | 425 | 62 | 363 | 417 | 2026-11-10 13:20 ET |
 | 145 | mudbaby-ru | Mudbaby Ru | 1 | 72 | 745 | 102 | 643 | 739 | 2026-11-10 13:20 ET |
 | 146 | yung-gravy | Yung Gravy | 2 | 72 | 343 | 70 | 273 | 328 | 2026-11-10 13:20 ET |
+| 147 | only-the-family | Only The Family | 2 | 71 | 637 | 59 | 578 | 628 | 2026-11-10 13:20 ET |
+| 148 | dj-showtime | DJ Showtime | 1 | 70 | 484 | 101 | 383 | 483 | 2026-11-10 13:20 ET |
+| 149 | s-dot-rapper | S.Dot (Rapper) | 1 | 70 | 299 | 73 | 226 | 296 | 2026-11-10 13:20 ET |
+| 150 | zaybang | ZayBang | 2 | 70 | 584 | 63 | 521 | 575 | 2026-11-10 13:20 ET |
+| 151 | lil-lonnie | Lil Lonnie | 1 | 69 | 367 | 74 | 293 | 362 | 2026-11-10 13:20 ET |
+| 152 | 1wayfrank | 1WayFrank | 1 | 68 | 331 | 81 | 250 | 320 | 2026-11-10 13:20 ET |
+| 153 | casino | Casino | 2 | 68 | 430 | 32 | 398 | 423 | 2026-11-10 13:20 ET |
+| 154 | h-e-r | H.E.R. | 1 | 68 | 378 | 71 | 307 | 376 | 2026-11-10 13:20 ET |
+| 155 | king-combs | King Combs | 2 | 68 | 321 | 35 | 286 | 310 | 2026-11-10 13:20 ET |
+| 156 | anuel-aa | Anuel AA | 1 | 67 | 831 | 52 | 779 | 518 | 2026-11-10 13:20 ET |
 
 ## Failures
 
@@ -163,7 +173,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 146/386: Yung Gravy.
+Finished 156/386: Anuel AA.
 
 ## Final
 

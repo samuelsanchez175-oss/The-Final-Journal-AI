@@ -1,0 +1,643 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",get,2,Tell them niggas come get up with me,get,END,REPEAT,spelling,HIGH,N
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",come,2,Tell them niggas come get up with me,come,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",get,2,Tell them niggas come get up with me,Tell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",Nigga,2,Tell them niggas come get up with me,niggas,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",come,3,"Niggas come and get up with me, nigga",come,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",get,3,"Niggas come and get up with me, nigga",get,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",Nigga,3,"Niggas come and get up with me, nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",Nigga,3,"Niggas come and get up with me, nigga",Niggas,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",get,4,Come get up with me,get,END,REPEAT,spelling,HIGH,N
+Get Up With Me,1,"Nigga, come get up with me (Nigga, huh?)",get,5,"Ayy, if you don't like who I'm around, come get up with me",get,END,REPEAT,spelling,HIGH,N
+Get Up With Me,2,Tell them niggas come get up with me,Tell,2,Tell them niggas come get up with me,get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,2,Tell them niggas come get up with me,come,3,"Niggas come and get up with me, nigga",come,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,2,Tell them niggas come get up with me,get,3,"Niggas come and get up with me, nigga",get,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,2,Tell them niggas come get up with me,niggas,3,"Niggas come and get up with me, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,2,Tell them niggas come get up with me,niggas,3,"Niggas come and get up with me, nigga",Niggas,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,2,Tell them niggas come get up with me,Tell,3,"Niggas come and get up with me, nigga",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,2,Tell them niggas come get up with me,get,4,Come get up with me,get,END,REPEAT,spelling,HIGH,N
+Get Up With Me,2,Tell them niggas come get up with me,come,4,Come get up with me,Come,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,2,Tell them niggas come get up with me,Tell,4,Come get up with me,get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,2,Tell them niggas come get up with me,get,5,"Ayy, if you don't like who I'm around, come get up with me",get,END,REPEAT,spelling,HIGH,N
+Get Up With Me,3,"Niggas come and get up with me, nigga",Niggas,3,"Niggas come and get up with me, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,3,"Niggas come and get up with me, nigga",come,4,Come get up with me,Come,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,3,"Niggas come and get up with me, nigga",get,4,Come get up with me,get,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,3,"Niggas come and get up with me, nigga",come,5,"Ayy, if you don't like who I'm around, come get up with me",come,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,3,"Niggas come and get up with me, nigga",get,5,"Ayy, if you don't like who I'm around, come get up with me",get,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,3,"Niggas come and get up with me, nigga",nigga,7,"And way before this pandemic, I was up sixty",sixty,END,SLANT,spelling,LOW,Y
+Get Up With Me,4,Come get up with me,get,5,"Ayy, if you don't like who I'm around, come get up with me",get,END,REPEAT,spelling,HIGH,N
+Get Up With Me,4,Come get up with me,Come,5,"Ayy, if you don't like who I'm around, come get up with me",come,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,4,Come get up with me,Come,6,"This Glock throwin' faceshots, fuck a buck-fifty",buck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,4,Come get up with me,Come,6,"This Glock throwin' faceshots, fuck a buck-fifty",fuck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,5,"Ayy, if you don't like who I'm around, come get up with me",come,6,"This Glock throwin' faceshots, fuck a buck-fifty",buck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,5,"Ayy, if you don't like who I'm around, come get up with me",come,6,"This Glock throwin' faceshots, fuck a buck-fifty",fuck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,5,"Ayy, if you don't like who I'm around, come get up with me",don't,6,"This Glock throwin' faceshots, fuck a buck-fifty",throwin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,5,"Ayy, if you don't like who I'm around, come get up with me",get,7,"And way before this pandemic, I was up sixty",pandemic,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,6,"This Glock throwin' faceshots, fuck a buck-fifty",fuck,6,"This Glock throwin' faceshots, fuck a buck-fifty",buck,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,6,"This Glock throwin' faceshots, fuck a buck-fifty",fifty,7,"And way before this pandemic, I was up sixty",sixty,END,ASSONANCE,vowel,MED,Y
+Get Up With Me,6,"This Glock throwin' faceshots, fuck a buck-fifty",fifty,8,"Two chops, eighty shots, that's a buck-sixty",sixty,END,ASSONANCE,vowel,MED,Y
+Get Up With Me,6,"This Glock throwin' faceshots, fuck a buck-fifty",buck,8,"Two chops, eighty shots, that's a buck-sixty",buck,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,6,"This Glock throwin' faceshots, fuck a buck-fifty",faceshots,8,"Two chops, eighty shots, that's a buck-sixty",shots,INNER,PERFECT,spelling,HIGH,Y
+Get Up With Me,6,"This Glock throwin' faceshots, fuck a buck-fifty",fuck,8,"Two chops, eighty shots, that's a buck-sixty",buck,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,6,"This Glock throwin' faceshots, fuck a buck-fifty",Glock,8,"Two chops, eighty shots, that's a buck-sixty",chops,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,6,"This Glock throwin' faceshots, fuck a buck-fifty",Glock,8,"Two chops, eighty shots, that's a buck-sixty",shots,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,7,"And way before this pandemic, I was up sixty",sixty,8,"Two chops, eighty shots, that's a buck-sixty",sixty,END,REPEAT,spelling,HIGH,N
+Get Up With Me,7,"And way before this pandemic, I was up sixty",way,8,"Two chops, eighty shots, that's a buck-sixty",eighty,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,7,"And way before this pandemic, I was up sixty",sixty,9,"This shit ain't nothin' to me, they can't fuck with me",shit,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,7,"And way before this pandemic, I was up sixty",way,9,"This shit ain't nothin' to me, they can't fuck with me",ain't,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,8,"Two chops, eighty shots, that's a buck-sixty",chops,8,"Two chops, eighty shots, that's a buck-sixty",shots,INNER,SLANT,cmu,MED,Y
+Get Up With Me,8,"Two chops, eighty shots, that's a buck-sixty",buck,9,"This shit ain't nothin' to me, they can't fuck with me",fuck,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,8,"Two chops, eighty shots, that's a buck-sixty",chops,9,"This shit ain't nothin' to me, they can't fuck with me",nothin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,8,"Two chops, eighty shots, that's a buck-sixty",eighty,9,"This shit ain't nothin' to me, they can't fuck with me",ain't,INNER,SLANT,cmu,MED,Y
+Get Up With Me,8,"Two chops, eighty shots, that's a buck-sixty",shots,9,"This shit ain't nothin' to me, they can't fuck with me",nothin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,8,"Two chops, eighty shots, that's a buck-sixty",sixty,9,"This shit ain't nothin' to me, they can't fuck with me",shit,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,8,"Two chops, eighty shots, that's a buck-sixty",buck,10,"And if you feel like it's a problem, come get up with me",come,INNER,SLANT,cmu,MED,Y
+Get Up With Me,8,"Two chops, eighty shots, that's a buck-sixty",chops,10,"And if you feel like it's a problem, come get up with me",problem,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,8,"Two chops, eighty shots, that's a buck-sixty",shots,10,"And if you feel like it's a problem, come get up with me",problem,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,9,"This shit ain't nothin' to me, they can't fuck with me",fuck,10,"And if you feel like it's a problem, come get up with me",come,INNER,SLANT,cmu,MED,Y
+Get Up With Me,9,"This shit ain't nothin' to me, they can't fuck with me",nothin,10,"And if you feel like it's a problem, come get up with me",problem,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,9,"This shit ain't nothin' to me, they can't fuck with me",fuck,11,"Bitch, I'll never leavе my gun like it's stuck with me",stuck,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,9,"This shit ain't nothin' to me, they can't fuck with me",fuck,11,"Bitch, I'll never leavе my gun like it's stuck with me",gun,INNER,SLANT,cmu,MED,Y
+Get Up With Me,9,"This shit ain't nothin' to me, they can't fuck with me",shit,11,"Bitch, I'll never leavе my gun like it's stuck with me",Bitch,INNER,SLANT,cmu,MED,Y
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",come,11,"Bitch, I'll never leavе my gun like it's stuck with me",gun,INNER,SLANT,cmu,MED,Y
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",come,11,"Bitch, I'll never leavе my gun like it's stuck with me",stuck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",feel,11,"Bitch, I'll never leavе my gun like it's stuck with me",leav,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",get,11,"Bitch, I'll never leavе my gun like it's stuck with me",never,INNER,SLANT,cmu,MED,Y
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",like,11,"Bitch, I'll never leavе my gun like it's stuck with me",I'll,INNER,SLANT,cmu,MED,Y
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",like,11,"Bitch, I'll never leavе my gun like it's stuck with me",like,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",get,12,"If you gon' tell a nigga somеthin', tell him get up with me",get,END,REPEAT,spelling,HIGH,N
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",get,12,"If you gon' tell a nigga somеthin', tell him get up with me",tell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",problem,12,"If you gon' tell a nigga somеthin', tell him get up with me",som,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,10,"And if you feel like it's a problem, come get up with me",get,13,My bitch made five hundred in the pandemic,pandemic,END,ASSONANCE,vowel,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",gun,11,"Bitch, I'll never leavе my gun like it's stuck with me",stuck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",I'll,11,"Bitch, I'll never leavе my gun like it's stuck with me",like,INNER,SLANT,cmu,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",Bitch,12,"If you gon' tell a nigga somеthin', tell him get up with me",him,INNER,SLANT,cmu,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",Bitch,12,"If you gon' tell a nigga somеthin', tell him get up with me",thin,INNER,SLANT,cmu,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",never,12,"If you gon' tell a nigga somеthin', tell him get up with me",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",never,12,"If you gon' tell a nigga somеthin', tell him get up with me",tell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",Bitch,13,My bitch made five hundred in the pandemic,bitch,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",gun,13,My bitch made five hundred in the pandemic,hundred,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",I'll,13,My bitch made five hundred in the pandemic,five,INNER,SLANT,cmu,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",like,13,My bitch made five hundred in the pandemic,five,INNER,SLANT,cmu,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",never,13,My bitch made five hundred in the pandemic,pandemic,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,11,"Bitch, I'll never leavе my gun like it's stuck with me",stuck,13,My bitch made five hundred in the pandemic,hundred,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",tell,12,"If you gon' tell a nigga somеthin', tell him get up with me",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",tell,12,"If you gon' tell a nigga somеthin', tell him get up with me",tell,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",thin,12,"If you gon' tell a nigga somеthin', tell him get up with me",him,INNER,SLANT,cmu,MED,Y
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",get,13,My bitch made five hundred in the pandemic,pandemic,END,ASSONANCE,vowel,MED,Y
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",him,13,My bitch made five hundred in the pandemic,bitch,INNER,SLANT,cmu,MED,Y
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",tell,13,My bitch made five hundred in the pandemic,pandemic,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",thin,13,My bitch made five hundred in the pandemic,bitch,INNER,SLANT,cmu,MED,Y
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",him,14,"I know they hate to see me winnin', niggas can't stand me",winnin,INNER,SLANT,cmu,MED,Y
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",nigga,14,"I know they hate to see me winnin', niggas can't stand me",niggas,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,12,"If you gon' tell a nigga somеthin', tell him get up with me",thin,14,"I know they hate to see me winnin', niggas can't stand me",winnin,INNER,SLANT,cmu,MED,Y
+Get Up With Me,13,My bitch made five hundred in the pandemic,bitch,14,"I know they hate to see me winnin', niggas can't stand me",winnin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,13,My bitch made five hundred in the pandemic,made,14,"I know they hate to see me winnin', niggas can't stand me",hate,INNER,SLANT,cmu,MED,Y
+Get Up With Me,13,My bitch made five hundred in the pandemic,bitch,15,"My first hundred off of rappin', I was still scammin'",still,INNER,SLANT,cmu,MED,Y
+Get Up With Me,13,My bitch made five hundred in the pandemic,hundred,15,"My first hundred off of rappin', I was still scammin'",hundred,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,14,"I know they hate to see me winnin', niggas can't stand me",can't,14,"I know they hate to see me winnin', niggas can't stand me",stand,INNER,SLANT,cmu,MED,Y
+Get Up With Me,14,"I know they hate to see me winnin', niggas can't stand me",can't,15,"My first hundred off of rappin', I was still scammin'",rappin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,14,"I know they hate to see me winnin', niggas can't stand me",stand,15,"My first hundred off of rappin', I was still scammin'",rappin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,14,"I know they hate to see me winnin', niggas can't stand me",winnin,15,"My first hundred off of rappin', I was still scammin'",still,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,14,"I know they hate to see me winnin', niggas can't stand me",stand,16,My brother came VS1 and they still dancin',dancin,END,ASSONANCE,vowel,MED,Y
+Get Up With Me,14,"I know they hate to see me winnin', niggas can't stand me",can't,16,My brother came VS1 and they still dancin',dancin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,14,"I know they hate to see me winnin', niggas can't stand me",hate,16,My brother came VS1 and they still dancin',came,INNER,SLANT,cmu,MED,Y
+Get Up With Me,14,"I know they hate to see me winnin', niggas can't stand me",winnin,16,My brother came VS1 and they still dancin',still,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,15,"My first hundred off of rappin', I was still scammin'",rappin,15,"My first hundred off of rappin', I was still scammin'",scammin,INNER,ASSONANCE,vowel,LOW,N
+Get Up With Me,15,"My first hundred off of rappin', I was still scammin'",scammin,16,My brother came VS1 and they still dancin',dancin,END,SLANT,spelling,LOW,Y
+Get Up With Me,15,"My first hundred off of rappin', I was still scammin'",hundred,16,My brother came VS1 and they still dancin',brother,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,15,"My first hundred off of rappin', I was still scammin'",rappin,16,My brother came VS1 and they still dancin',dancin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,15,"My first hundred off of rappin', I was still scammin'",still,16,My brother came VS1 and they still dancin',still,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,15,"My first hundred off of rappin', I was still scammin'",hundred,17,"I pulled two hundred out a bitch, nigga, ask Bner",hundred,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,15,"My first hundred off of rappin', I was still scammin'",rappin,17,"I pulled two hundred out a bitch, nigga, ask Bner",ask,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,15,"My first hundred off of rappin', I was still scammin'",still,17,"I pulled two hundred out a bitch, nigga, ask Bner",bitch,INNER,SLANT,cmu,MED,Y
+Get Up With Me,16,My brother came VS1 and they still dancin',brother,17,"I pulled two hundred out a bitch, nigga, ask Bner",hundred,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,16,My brother came VS1 and they still dancin',dancin,17,"I pulled two hundred out a bitch, nigga, ask Bner",ask,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,16,My brother came VS1 and they still dancin',still,17,"I pulled two hundred out a bitch, nigga, ask Bner",bitch,INNER,SLANT,cmu,MED,Y
+Get Up With Me,16,My brother came VS1 and they still dancin',came,18,I made her send me 5K before I ever seen her,made,INNER,SLANT,cmu,MED,Y
+Get Up With Me,17,"I pulled two hundred out a bitch, nigga, ask Bner",ask,19,"This shit cost, you gon' have to take it to the cleaners",have,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,17,"I pulled two hundred out a bitch, nigga, ask Bner",bitch,19,"This shit cost, you gon' have to take it to the cleaners",shit,INNER,SLANT,cmu,MED,Y
+Get Up With Me,17,"I pulled two hundred out a bitch, nigga, ask Bner",nigga,19,"This shit cost, you gon' have to take it to the cleaners",shit,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,18,I made her send me 5K before I ever seen her,send,18,I made her send me 5K before I ever seen her,ever,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,18,I made her send me 5K before I ever seen her,seen,19,"This shit cost, you gon' have to take it to the cleaners",cleaners,END,SLANT,cmu,MED,Y
+Get Up With Me,18,I made her send me 5K before I ever seen her,made,19,"This shit cost, you gon' have to take it to the cleaners",take,INNER,SLANT,cmu,MED,Y
+Get Up With Me,18,I made her send me 5K before I ever seen her,seen,20,"And I'm in love with my bitch, I call her Mamma Mia",Mia,END,ASSONANCE,vowel,MED,Y
+Get Up With Me,18,I made her send me 5K before I ever seen her,before,20,"And I'm in love with my bitch, I call her Mamma Mia",call,INNER,SLANT,cmu,MED,Y
+Get Up With Me,19,"This shit cost, you gon' have to take it to the cleaners",cleaners,20,"And I'm in love with my bitch, I call her Mamma Mia",Mia,END,ASSONANCE,vowel,MED,Y
+Get Up With Me,19,"This shit cost, you gon' have to take it to the cleaners",cost,20,"And I'm in love with my bitch, I call her Mamma Mia",Mamma,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,19,"This shit cost, you gon' have to take it to the cleaners",shit,20,"And I'm in love with my bitch, I call her Mamma Mia",bitch,INNER,SLANT,cmu,MED,Y
+Get Up With Me,19,"This shit cost, you gon' have to take it to the cleaners",take,21,"Ayy, say my name a couple times 'bout some red rum",name,INNER,SLANT,cmu,MED,Y
+Get Up With Me,19,"This shit cost, you gon' have to take it to the cleaners",take,21,"Ayy, say my name a couple times 'bout some red rum",say,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,20,"And I'm in love with my bitch, I call her Mamma Mia",love,21,"Ayy, say my name a couple times 'bout some red rum",couple,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,20,"And I'm in love with my bitch, I call her Mamma Mia",love,21,"Ayy, say my name a couple times 'bout some red rum",rum,INNER,SLANT,cmu,MED,Y
+Get Up With Me,20,"And I'm in love with my bitch, I call her Mamma Mia",love,21,"Ayy, say my name a couple times 'bout some red rum",some,INNER,SLANT,cmu,MED,Y
+Get Up With Me,20,"And I'm in love with my bitch, I call her Mamma Mia",love,22,"Pop a nigga and his brother, that's an and-one",brother,INNER,SLANT,cmu,MED,Y
+Get Up With Me,20,"And I'm in love with my bitch, I call her Mamma Mia",love,22,"Pop a nigga and his brother, that's an and-one",one,INNER,SLANT,cmu,MED,Y
+Get Up With Me,20,"And I'm in love with my bitch, I call her Mamma Mia",Mamma,22,"Pop a nigga and his brother, that's an and-one",Pop,INNER,SLANT,cmu,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",couple,21,"Ayy, say my name a couple times 'bout some red rum",rum,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",couple,21,"Ayy, say my name a couple times 'bout some red rum",some,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",say,21,"Ayy, say my name a couple times 'bout some red rum",name,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",some,21,"Ayy, say my name a couple times 'bout some red rum",rum,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",rum,22,"Pop a nigga and his brother, that's an and-one",one,END,SLANT,cmu,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",couple,22,"Pop a nigga and his brother, that's an and-one",brother,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",couple,22,"Pop a nigga and his brother, that's an and-one",one,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",rum,22,"Pop a nigga and his brother, that's an and-one",brother,INNER,SLANT,cmu,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",some,22,"Pop a nigga and his brother, that's an and-one",brother,INNER,SLANT,cmu,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",some,22,"Pop a nigga and his brother, that's an and-one",one,INNER,SLANT,cmu,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",rum,23,"Clown niggas takin' pics, why you showin' guns?",guns,END,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",'bout,23,"Clown niggas takin' pics, why you showin' guns?",Clown,INNER,SLANT,cmu,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",couple,23,"Clown niggas takin' pics, why you showin' guns?",guns,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",name,23,"Clown niggas takin' pics, why you showin' guns?",takin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",say,23,"Clown niggas takin' pics, why you showin' guns?",takin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",some,23,"Clown niggas takin' pics, why you showin' guns?",guns,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",times,23,"Clown niggas takin' pics, why you showin' guns?",why,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,21,"Ayy, say my name a couple times 'bout some red rum",rum,24,"This chopper really from the Bay, look how it's goin' dumb",dumb,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,22,"Pop a nigga and his brother, that's an and-one",brother,22,"Pop a nigga and his brother, that's an and-one",one,INNER,SLANT,cmu,MED,Y
+Get Up With Me,22,"Pop a nigga and his brother, that's an and-one",one,23,"Clown niggas takin' pics, why you showin' guns?",guns,END,SLANT,cmu,MED,Y
+Get Up With Me,22,"Pop a nigga and his brother, that's an and-one",brother,23,"Clown niggas takin' pics, why you showin' guns?",guns,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,22,"Pop a nigga and his brother, that's an and-one",nigga,23,"Clown niggas takin' pics, why you showin' guns?",niggas,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,22,"Pop a nigga and his brother, that's an and-one",one,24,"This chopper really from the Bay, look how it's goin' dumb",dumb,END,SLANT,cmu,MED,Y
+Get Up With Me,22,"Pop a nigga and his brother, that's an and-one",brother,24,"This chopper really from the Bay, look how it's goin' dumb",dumb,INNER,SLANT,cmu,MED,Y
+Get Up With Me,22,"Pop a nigga and his brother, that's an and-one",Pop,24,"This chopper really from the Bay, look how it's goin' dumb",chopper,INNER,SLANT,cmu,MED,Y
+Get Up With Me,23,"Clown niggas takin' pics, why you showin' guns?",niggas,23,"Clown niggas takin' pics, why you showin' guns?",pics,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,23,"Clown niggas takin' pics, why you showin' guns?",guns,24,"This chopper really from the Bay, look how it's goin' dumb",dumb,END,ASSONANCE,vowel,MED,Y
+Get Up With Me,23,"Clown niggas takin' pics, why you showin' guns?",Clown,24,"This chopper really from the Bay, look how it's goin' dumb",how,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,23,"Clown niggas takin' pics, why you showin' guns?",takin,24,"This chopper really from the Bay, look how it's goin' dumb",Bay,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,24,"This chopper really from the Bay, look how it's goin' dumb",really,26,"I swear when bitches hella broke, that's a pet peeve",bitches,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",probably,25,"They probably never see me out, I'm in a black sleeve",see,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",probably,25,"They probably never see me out, I'm in a black sleeve",sleeve,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",see,25,"They probably never see me out, I'm in a black sleeve",sleeve,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",sleeve,26,"I swear when bitches hella broke, that's a pet peeve",peeve,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",never,26,"I swear when bitches hella broke, that's a pet peeve",pet,INNER,SLANT,cmu,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",never,26,"I swear when bitches hella broke, that's a pet peeve",swear,INNER,SLANT,cmu,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",never,26,"I swear when bitches hella broke, that's a pet peeve",when,INNER,SLANT,cmu,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",probably,26,"I swear when bitches hella broke, that's a pet peeve",peeve,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",see,26,"I swear when bitches hella broke, that's a pet peeve",peeve,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",sleeve,27,I'm tryna live right off the water with some jet-skis,skis,END,SLANT,cmu,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",never,27,I'm tryna live right off the water with some jet-skis,jet,INNER,SLANT,cmu,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",probably,27,I'm tryna live right off the water with some jet-skis,skis,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",see,27,I'm tryna live right off the water with some jet-skis,skis,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",sleeve,27,I'm tryna live right off the water with some jet-skis,tryna,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,25,"They probably never see me out, I'm in a black sleeve",sleeve,28,"And I ain't even tryna fuck, just give me neck please",please,END,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",swear,26,"I swear when bitches hella broke, that's a pet peeve",hella,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",swear,26,"I swear when bitches hella broke, that's a pet peeve",pet,INNER,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",swear,26,"I swear when bitches hella broke, that's a pet peeve",when,INNER,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",when,26,"I swear when bitches hella broke, that's a pet peeve",pet,INNER,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",peeve,27,I'm tryna live right off the water with some jet-skis,skis,END,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",peeve,27,I'm tryna live right off the water with some jet-skis,tryna,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",pet,27,I'm tryna live right off the water with some jet-skis,jet,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",swear,27,I'm tryna live right off the water with some jet-skis,jet,INNER,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",when,27,I'm tryna live right off the water with some jet-skis,jet,INNER,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",peeve,28,"And I ain't even tryna fuck, just give me neck please",please,END,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",bitches,28,"And I ain't even tryna fuck, just give me neck please",give,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",peeve,28,"And I ain't even tryna fuck, just give me neck please",even,INNER,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",peeve,28,"And I ain't even tryna fuck, just give me neck please",tryna,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",pet,28,"And I ain't even tryna fuck, just give me neck please",neck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",swear,28,"And I ain't even tryna fuck, just give me neck please",neck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,26,"I swear when bitches hella broke, that's a pet peeve",when,28,"And I ain't even tryna fuck, just give me neck please",neck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,live,27,I'm tryna live right off the water with some jet-skis,right,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,tryna,27,I'm tryna live right off the water with some jet-skis,skis,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,skis,28,"And I ain't even tryna fuck, just give me neck please",please,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,jet,28,"And I ain't even tryna fuck, just give me neck please",neck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,skis,28,"And I ain't even tryna fuck, just give me neck please",even,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,skis,28,"And I ain't even tryna fuck, just give me neck please",tryna,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,some,28,"And I ain't even tryna fuck, just give me neck please",fuck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,tryna,28,"And I ain't even tryna fuck, just give me neck please",even,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,tryna,28,"And I ain't even tryna fuck, just give me neck please",please,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,tryna,28,"And I ain't even tryna fuck, just give me neck please",tryna,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,jet,29,"Bitch, I'll never leave my gun like it's stuck with me",never,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,live,29,"Bitch, I'll never leave my gun like it's stuck with me",I'll,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,live,29,"Bitch, I'll never leave my gun like it's stuck with me",like,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,right,29,"Bitch, I'll never leave my gun like it's stuck with me",I'll,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,right,29,"Bitch, I'll never leave my gun like it's stuck with me",like,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,skis,29,"Bitch, I'll never leave my gun like it's stuck with me",leave,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,some,29,"Bitch, I'll never leave my gun like it's stuck with me",gun,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,some,29,"Bitch, I'll never leave my gun like it's stuck with me",stuck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,27,I'm tryna live right off the water with some jet-skis,tryna,29,"Bitch, I'll never leave my gun like it's stuck with me",leave,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",even,28,"And I ain't even tryna fuck, just give me neck please",please,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",even,28,"And I ain't even tryna fuck, just give me neck please",tryna,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",tryna,28,"And I ain't even tryna fuck, just give me neck please",please,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",even,29,"Bitch, I'll never leave my gun like it's stuck with me",leave,INNER,SLANT,cmu,MED,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",fuck,29,"Bitch, I'll never leave my gun like it's stuck with me",gun,INNER,SLANT,cmu,MED,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",fuck,29,"Bitch, I'll never leave my gun like it's stuck with me",stuck,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",give,29,"Bitch, I'll never leave my gun like it's stuck with me",Bitch,INNER,SLANT,cmu,MED,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",neck,29,"Bitch, I'll never leave my gun like it's stuck with me",never,INNER,SLANT,cmu,MED,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",please,29,"Bitch, I'll never leave my gun like it's stuck with me",leave,INNER,SLANT,cmu,MED,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",tryna,29,"Bitch, I'll never leave my gun like it's stuck with me",leave,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",fuck,30,"If you gon' tell a nigga somethin', tell him get up with me",somethin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",give,30,"If you gon' tell a nigga somethin', tell him get up with me",him,INNER,SLANT,cmu,MED,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",neck,30,"If you gon' tell a nigga somethin', tell him get up with me",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,28,"And I ain't even tryna fuck, just give me neck please",neck,30,"If you gon' tell a nigga somethin', tell him get up with me",tell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,29,"Bitch, I'll never leave my gun like it's stuck with me",gun,29,"Bitch, I'll never leave my gun like it's stuck with me",stuck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,29,"Bitch, I'll never leave my gun like it's stuck with me",I'll,29,"Bitch, I'll never leave my gun like it's stuck with me",like,INNER,SLANT,cmu,MED,Y
+Get Up With Me,29,"Bitch, I'll never leave my gun like it's stuck with me",Bitch,30,"If you gon' tell a nigga somethin', tell him get up with me",him,INNER,SLANT,cmu,MED,Y
+Get Up With Me,29,"Bitch, I'll never leave my gun like it's stuck with me",gun,30,"If you gon' tell a nigga somethin', tell him get up with me",somethin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,29,"Bitch, I'll never leave my gun like it's stuck with me",never,30,"If you gon' tell a nigga somethin', tell him get up with me",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,29,"Bitch, I'll never leave my gun like it's stuck with me",never,30,"If you gon' tell a nigga somethin', tell him get up with me",tell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,29,"Bitch, I'll never leave my gun like it's stuck with me",stuck,30,"If you gon' tell a nigga somethin', tell him get up with me",somethin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,29,"Bitch, I'll never leave my gun like it's stuck with me",never,31,"My youngin always shoot that ARP, but he don't know how to spell",spell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",tell,30,"If you gon' tell a nigga somethin', tell him get up with me",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",tell,30,"If you gon' tell a nigga somethin', tell him get up with me",tell,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",get,31,"My youngin always shoot that ARP, but he don't know how to spell",spell,END,SLANT,cmu,MED,Y
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",gon,31,"My youngin always shoot that ARP, but he don't know how to spell",don't,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",tell,31,"My youngin always shoot that ARP, but he don't know how to spell",spell,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",get,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",smell,END,SLANT,cmu,MED,Y
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",gon,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",Macon,INNER,PERFECT,spelling,MED,Y
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",nigga,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",nigga,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",tell,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",smell,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,30,"If you gon' tell a nigga somethin', tell him get up with me",get,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",hell,END,SLANT,cmu,MED,Y
+Get Up With Me,31,"My youngin always shoot that ARP, but he don't know how to spell",don't,31,"My youngin always shoot that ARP, but he don't know how to spell",know,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,31,"My youngin always shoot that ARP, but he don't know how to spell",spell,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",smell,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,31,"My youngin always shoot that ARP, but he don't know how to spell",always,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",Macon,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,31,"My youngin always shoot that ARP, but he don't know how to spell",shoot,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",through,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,31,"My youngin always shoot that ARP, but he don't know how to spell",spell,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",hell,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,31,"My youngin always shoot that ARP, but he don't know how to spell",always,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",make,INNER,SLANT,cmu,MED,Y
+Get Up With Me,31,"My youngin always shoot that ARP, but he don't know how to spell",don't,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",gon,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,31,"My youngin always shoot that ARP, but he don't know how to spell",youngin,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",demon,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",pack,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",had,INNER,SLANT,cmu,MED,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",Ridin,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",hide,INNER,SLANT,cmu,MED,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",smell,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",hell,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",Macon,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",gon,INNER,PERFECT,spelling,MED,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",Macon,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",make,INNER,SLANT,cmu,MED,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",nigga,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",stick,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",hide,34,CC with high limit from institution when I check the mail,high,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",Macon,34,CC with high limit from institution when I check the mail,mail,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",Ridin,34,CC with high limit from institution when I check the mail,high,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",smell,34,CC with high limit from institution when I check the mail,check,INNER,SLANT,cmu,MED,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",smell,34,CC with high limit from institution when I check the mail,when,INNER,SLANT,cmu,MED,Y
+Get Up With Me,32,"Ridin' through Macon with that pack, a nigga had to hide the smell",through,34,CC with high limit from institution when I check the mail,institution,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",demon,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",gon,INNER,PERFECT,spelling,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",stick,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",him,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",think,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",him,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",think,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",stick,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",demon,34,CC with high limit from institution when I check the mail,CC,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",hell,34,CC with high limit from institution when I check the mail,check,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",hell,34,CC with high limit from institution when I check the mail,when,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",him,34,CC with high limit from institution when I check the mail,limit,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",make,34,CC with high limit from institution when I check the mail,mail,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",stick,34,CC with high limit from institution when I check the mail,limit,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",think,34,CC with high limit from institution when I check the mail,limit,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",demon,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",real,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",gon,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",holy,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",him,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",shit,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",make,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",grail,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",stick,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",shit,INNER,SLANT,cmu,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",think,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",shit,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,33,"Oh, he think that he a demon? The stick gon' make him burn in hell",hell,37,"I just hit a vibe at the Four Seasons, she was fine as hell",hell,END,REPEAT,spelling,HIGH,N
+Get Up With Me,34,CC with high limit from institution when I check the mail,when,34,CC with high limit from institution when I check the mail,check,INNER,SLANT,cmu,MED,Y
+Get Up With Me,34,CC with high limit from institution when I check the mail,mail,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",grail,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,34,CC with high limit from institution when I check the mail,CC,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",real,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,34,CC with high limit from institution when I check the mail,high,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",like,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,34,CC with high limit from institution when I check the mail,limit,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",shit,INNER,SLANT,cmu,MED,Y
+Get Up With Me,34,CC with high limit from institution when I check the mail,mail,36,"Might just take a vacay out to Frisco, I got bags for sale",sale,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,34,CC with high limit from institution when I check the mail,CC,36,"Might just take a vacay out to Frisco, I got bags for sale",Frisco,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,34,CC with high limit from institution when I check the mail,high,36,"Might just take a vacay out to Frisco, I got bags for sale",Might,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,34,CC with high limit from institution when I check the mail,mail,36,"Might just take a vacay out to Frisco, I got bags for sale",take,INNER,SLANT,cmu,MED,Y
+Get Up With Me,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",Found,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",'bout,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",grail,36,"Might just take a vacay out to Frisco, I got bags for sale",sale,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",grail,36,"Might just take a vacay out to Frisco, I got bags for sale",take,INNER,SLANT,cmu,MED,Y
+Get Up With Me,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",like,36,"Might just take a vacay out to Frisco, I got bags for sale",Might,INNER,SLANT,cmu,MED,Y
+Get Up With Me,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",real,36,"Might just take a vacay out to Frisco, I got bags for sale",Frisco,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",like,37,"I just hit a vibe at the Four Seasons, she was fine as hell",fine,INNER,SLANT,cmu,MED,Y
+Get Up With Me,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",like,37,"I just hit a vibe at the Four Seasons, she was fine as hell",vibe,INNER,SLANT,cmu,MED,Y
+Get Up With Me,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",real,37,"I just hit a vibe at the Four Seasons, she was fine as hell",Seasons,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,35,"Found out 'bout this scammin' shit for real, it's like the holy grail",shit,37,"I just hit a vibe at the Four Seasons, she was fine as hell",hit,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,36,"Might just take a vacay out to Frisco, I got bags for sale",take,36,"Might just take a vacay out to Frisco, I got bags for sale",sale,INNER,SLANT,cmu,MED,Y
+Get Up With Me,36,"Might just take a vacay out to Frisco, I got bags for sale",Frisco,37,"I just hit a vibe at the Four Seasons, she was fine as hell",Seasons,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,36,"Might just take a vacay out to Frisco, I got bags for sale",Might,37,"I just hit a vibe at the Four Seasons, she was fine as hell",fine,INNER,SLANT,cmu,MED,Y
+Get Up With Me,36,"Might just take a vacay out to Frisco, I got bags for sale",Might,37,"I just hit a vibe at the Four Seasons, she was fine as hell",vibe,INNER,SLANT,cmu,MED,Y
+Get Up With Me,36,"Might just take a vacay out to Frisco, I got bags for sale",bags,38,"I got two glicks on me at the moment, you can't even tell",can't,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,36,"Might just take a vacay out to Frisco, I got bags for sale",Frisco,38,"I got two glicks on me at the moment, you can't even tell",even,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,36,"Might just take a vacay out to Frisco, I got bags for sale",got,38,"I got two glicks on me at the moment, you can't even tell",got,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",vibe,37,"I just hit a vibe at the Four Seasons, she was fine as hell",fine,INNER,SLANT,cmu,MED,Y
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",hell,38,"I got two glicks on me at the moment, you can't even tell",tell,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",Seasons,38,"I got two glicks on me at the moment, you can't even tell",even,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",hell,39,"Told my plug to go get somethin' stronger, that shit weak as hell",hell,END,REPEAT,spelling,HIGH,N
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",Four,39,"Told my plug to go get somethin' stronger, that shit weak as hell",stronger,INNER,SLANT,cmu,MED,Y
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",hell,39,"Told my plug to go get somethin' stronger, that shit weak as hell",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",hit,39,"Told my plug to go get somethin' stronger, that shit weak as hell",shit,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",Seasons,39,"Told my plug to go get somethin' stronger, that shit weak as hell",weak,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",hell,40,I got fifty shots inside this rifle if they deep as hell,hell,END,REPEAT,spelling,HIGH,N
+Get Up With Me,37,"I just hit a vibe at the Four Seasons, she was fine as hell",hell,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",tell,39,"Told my plug to go get somethin' stronger, that shit weak as hell",hell,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",even,39,"Told my plug to go get somethin' stronger, that shit weak as hell",weak,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",glicks,39,"Told my plug to go get somethin' stronger, that shit weak as hell",shit,INNER,ASSONANCE,vowel,LOW,N
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",moment,39,"Told my plug to go get somethin' stronger, that shit weak as hell",go,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",moment,39,"Told my plug to go get somethin' stronger, that shit weak as hell",Told,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",tell,39,"Told my plug to go get somethin' stronger, that shit weak as hell",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",tell,40,I got fifty shots inside this rifle if they deep as hell,hell,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",even,40,I got fifty shots inside this rifle if they deep as hell,deep,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",got,40,I got fifty shots inside this rifle if they deep as hell,got,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",got,40,I got fifty shots inside this rifle if they deep as hell,shots,INNER,SLANT,cmu,MED,Y
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",tell,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,END,REPEAT,spelling,HIGH,N
+Get Up With Me,38,"I got two glicks on me at the moment, you can't even tell",tell,42,I'm just tryna get inside her mouth just like some oral gel,gel,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",get,39,"Told my plug to go get somethin' stronger, that shit weak as hell",hell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",plug,39,"Told my plug to go get somethin' stronger, that shit weak as hell",somethin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",Told,39,"Told my plug to go get somethin' stronger, that shit weak as hell",go,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",hell,40,I got fifty shots inside this rifle if they deep as hell,hell,END,REPEAT,spelling,HIGH,N
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",get,40,I got fifty shots inside this rifle if they deep as hell,hell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",shit,40,I got fifty shots inside this rifle if they deep as hell,fifty,INNER,SLANT,cmu,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",weak,40,I got fifty shots inside this rifle if they deep as hell,deep,INNER,SLANT,cmu,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",hell,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",get,41,"Nigga cross me now, I swear to God that he won't live to tell",swear,INNER,SLANT,cmu,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",get,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",go,41,"Nigga cross me now, I swear to God that he won't live to tell",won't,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",hell,41,"Nigga cross me now, I swear to God that he won't live to tell",swear,INNER,SLANT,cmu,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",shit,41,"Nigga cross me now, I swear to God that he won't live to tell",Nigga,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",stronger,41,"Nigga cross me now, I swear to God that he won't live to tell",cross,INNER,SLANT,cmu,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",Told,41,"Nigga cross me now, I swear to God that he won't live to tell",won't,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,39,"Told my plug to go get somethin' stronger, that shit weak as hell",hell,42,I'm just tryna get inside her mouth just like some oral gel,gel,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,got,40,I got fifty shots inside this rifle if they deep as hell,shots,INNER,SLANT,cmu,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,inside,40,I got fifty shots inside this rifle if they deep as hell,rifle,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,hell,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,got,41,"Nigga cross me now, I swear to God that he won't live to tell",God,INNER,SLANT,cmu,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,hell,41,"Nigga cross me now, I swear to God that he won't live to tell",swear,INNER,SLANT,cmu,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,inside,41,"Nigga cross me now, I swear to God that he won't live to tell",live,INNER,SLANT,cmu,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,rifle,41,"Nigga cross me now, I swear to God that he won't live to tell",live,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,shots,41,"Nigga cross me now, I swear to God that he won't live to tell",God,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,hell,42,I'm just tryna get inside her mouth just like some oral gel,gel,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,deep,42,I'm just tryna get inside her mouth just like some oral gel,tryna,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,hell,42,I'm just tryna get inside her mouth just like some oral gel,get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,inside,42,I'm just tryna get inside her mouth just like some oral gel,inside,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,inside,42,I'm just tryna get inside her mouth just like some oral gel,like,INNER,SLANT,cmu,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,rifle,42,I'm just tryna get inside her mouth just like some oral gel,inside,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,40,I got fifty shots inside this rifle if they deep as hell,rifle,42,I'm just tryna get inside her mouth just like some oral gel,like,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",swear,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,42,I'm just tryna get inside her mouth just like some oral gel,gel,END,PERFECT,cmu,HIGH,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",cross,42,I'm just tryna get inside her mouth just like some oral gel,oral,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",live,42,I'm just tryna get inside her mouth just like some oral gel,inside,INNER,SLANT,cmu,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",live,42,I'm just tryna get inside her mouth just like some oral gel,like,INNER,SLANT,cmu,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",now,42,I'm just tryna get inside her mouth just like some oral gel,mouth,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",swear,42,I'm just tryna get inside her mouth just like some oral gel,gel,INNER,SLANT,cmu,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",swear,42,I'm just tryna get inside her mouth just like some oral gel,get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,42,I'm just tryna get inside her mouth just like some oral gel,get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",Nigga,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",swear,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",swear,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",tell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",tell,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",tell,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,41,"Nigga cross me now, I swear to God that he won't live to tell",won't,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",gon,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,42,I'm just tryna get inside her mouth just like some oral gel,get,42,I'm just tryna get inside her mouth just like some oral gel,gel,INNER,SLANT,cmu,MED,Y
+Get Up With Me,42,I'm just tryna get inside her mouth just like some oral gel,inside,42,I'm just tryna get inside her mouth just like some oral gel,like,INNER,SLANT,cmu,MED,Y
+Get Up With Me,42,I'm just tryna get inside her mouth just like some oral gel,gel,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,42,I'm just tryna get inside her mouth just like some oral gel,gel,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",tell,INNER,PERFECT,cmu,HIGH,Y
+Get Up With Me,42,I'm just tryna get inside her mouth just like some oral gel,get,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",get,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,42,I'm just tryna get inside her mouth just like some oral gel,get,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",tell,INNER,SLANT,cmu,MED,Y
+Get Up With Me,42,I'm just tryna get inside her mouth just like some oral gel,some,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",somethin,INNER,ASSONANCE,vowel,MED,Y
+Get Up With Me,42,I'm just tryna get inside her mouth just like some oral gel,some,44,"Shit ain't nothin' to me, they can't fuck with me",fuck,INNER,SLANT,cmu,MED,Y
+Get Up With Me,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",nigga,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",tell,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",get,INNER,SLANT,cmu,MED,Y
+Get Up With Me,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",tell,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",tell,INNER,REPEAT,spelling,HIGH,N
+Get Up With Me,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",him,44,"Shit ain't nothin' to me, they can't fuck with me",Shit,INNER,SLANT,cmu,MED,Y
+Get Up With Me,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",nigga,44,"Shit ain't nothin' to me, they can't fuck with me",Shit,INNER,SLANT,spelling,LOW,Y
+Get Up With Me,43,"If you gon' tell a nigga somethin', tell him get up with me, nigga",somethin,44,"Shit ain't nothin' to me, they can't fuck with me",fuck,INNER,ASSONANCE,vowel,MED,Y
+Light Money,2,"On my momma, nigga",momma,3,"Told bro, ""Watch what niggas say, they be mic'd up""",Watch,INNER,SLANT,cmu,MED,Y
+Light Money,2,"On my momma, nigga",nigga,3,"Told bro, ""Watch what niggas say, they be mic'd up""",niggas,INNER,SLANT,spelling,LOW,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",Told,3,"Told bro, ""Watch what niggas say, they be mic'd up""",bro,INNER,ASSONANCE,vowel,MED,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",what,3,"Told bro, ""Watch what niggas say, they be mic'd up""",mic'd,INNER,SLANT,cmu,MED,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",bro,4,"Fuck nah, you can't ask about us, they don't like us",don't,INNER,ASSONANCE,vowel,MED,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",mic'd,4,"Fuck nah, you can't ask about us, they don't like us",Fuck,INNER,SLANT,cmu,MED,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",Told,4,"Fuck nah, you can't ask about us, they don't like us",don't,INNER,ASSONANCE,vowel,MED,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",what,4,"Fuck nah, you can't ask about us, they don't like us",Fuck,INNER,SLANT,cmu,MED,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",mic'd,5,"Got guns, you gon' let that Perky get you hyped up",guns,INNER,ASSONANCE,vowel,MED,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",Watch,5,"Got guns, you gon' let that Perky get you hyped up",Got,INNER,SLANT,cmu,MED,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",what,5,"Got guns, you gon' let that Perky get you hyped up",guns,INNER,ASSONANCE,vowel,MED,Y
+Light Money,3,"Told bro, ""Watch what niggas say, they be mic'd up""",mic'd,6,"Baby A, come with the attachments, we'll snipe somethin'",somethin,END,ASSONANCE,vowel,MED,Y
+Light Money,4,"Fuck nah, you can't ask about us, they don't like us",can't,4,"Fuck nah, you can't ask about us, they don't like us",ask,INNER,ASSONANCE,vowel,MED,Y
+Light Money,4,"Fuck nah, you can't ask about us, they don't like us",like,5,"Got guns, you gon' let that Perky get you hyped up",hyped,END,SLANT,cmu,MED,Y
+Light Money,4,"Fuck nah, you can't ask about us, they don't like us",don't,5,"Got guns, you gon' let that Perky get you hyped up",gon,INNER,SLANT,spelling,LOW,Y
+Light Money,4,"Fuck nah, you can't ask about us, they don't like us",Fuck,5,"Got guns, you gon' let that Perky get you hyped up",guns,INNER,ASSONANCE,vowel,MED,Y
+Light Money,4,"Fuck nah, you can't ask about us, they don't like us",ask,6,"Baby A, come with the attachments, we'll snipe somethin'",attachments,INNER,ASSONANCE,vowel,MED,Y
+Light Money,4,"Fuck nah, you can't ask about us, they don't like us",can't,6,"Baby A, come with the attachments, we'll snipe somethin'",attachments,INNER,ASSONANCE,vowel,MED,Y
+Light Money,4,"Fuck nah, you can't ask about us, they don't like us",Fuck,6,"Baby A, come with the attachments, we'll snipe somethin'",come,INNER,SLANT,cmu,MED,Y
+Light Money,4,"Fuck nah, you can't ask about us, they don't like us",Fuck,6,"Baby A, come with the attachments, we'll snipe somethin'",somethin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,4,"Fuck nah, you can't ask about us, they don't like us",like,6,"Baby A, come with the attachments, we'll snipe somethin'",snipe,INNER,SLANT,cmu,MED,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",let,5,"Got guns, you gon' let that Perky get you hyped up",get,INNER,PERFECT,cmu,HIGH,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",guns,6,"Baby A, come with the attachments, we'll snipe somethin'",come,INNER,ASSONANCE,vowel,MED,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",guns,6,"Baby A, come with the attachments, we'll snipe somethin'",somethin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",hyped,6,"Baby A, come with the attachments, we'll snipe somethin'",snipe,INNER,SLANT,cmu,MED,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",get,7,"Hope they let my brother out of prison, he don't like nothin'",let,INNER,PERFECT,cmu,HIGH,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",gon,7,"Hope they let my brother out of prison, he don't like nothin'",don't,INNER,SLANT,spelling,LOW,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",gon,7,"Hope they let my brother out of prison, he don't like nothin'",Hope,INNER,SLANT,spelling,LOW,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",gon,7,"Hope they let my brother out of prison, he don't like nothin'",prison,INNER,PERFECT,spelling,MED,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",Got,7,"Hope they let my brother out of prison, he don't like nothin'",nothin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",guns,7,"Hope they let my brother out of prison, he don't like nothin'",brother,INNER,ASSONANCE,vowel,MED,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",hyped,7,"Hope they let my brother out of prison, he don't like nothin'",like,INNER,SLANT,cmu,MED,Y
+Light Money,5,"Got guns, you gon' let that Perky get you hyped up",let,7,"Hope they let my brother out of prison, he don't like nothin'",let,INNER,REPEAT,spelling,HIGH,N
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",come,6,"Baby A, come with the attachments, we'll snipe somethin'",somethin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",come,7,"Hope they let my brother out of prison, he don't like nothin'",brother,INNER,SLANT,cmu,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",snipe,7,"Hope they let my brother out of prison, he don't like nothin'",like,INNER,SLANT,cmu,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",somethin,7,"Hope they let my brother out of prison, he don't like nothin'",brother,INNER,ASSONANCE,vowel,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",somethin,8,"I heard the suckers never got no whips, we going bike huntin'",huntin,END,SLANT,cmu,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",come,8,"I heard the suckers never got no whips, we going bike huntin'",huntin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",come,8,"I heard the suckers never got no whips, we going bike huntin'",suckers,INNER,ASSONANCE,vowel,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",snipe,8,"I heard the suckers never got no whips, we going bike huntin'",bike,INNER,SLANT,cmu,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",somethin,8,"I heard the suckers never got no whips, we going bike huntin'",suckers,INNER,ASSONANCE,vowel,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",somethin,9,"You ain't never got no real diamonds, that's some light money",money,END,ASSONANCE,vowel,MED,Y
+Light Money,6,"Baby A, come with the attachments, we'll snipe somethin'",somethin,10,I be tryna get some take a risk and catch a flight money,money,END,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",Hope,7,"Hope they let my brother out of prison, he don't like nothin'",don't,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",brother,8,"I heard the suckers never got no whips, we going bike huntin'",huntin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",brother,8,"I heard the suckers never got no whips, we going bike huntin'",suckers,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",don't,8,"I heard the suckers never got no whips, we going bike huntin'",going,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",don't,8,"I heard the suckers never got no whips, we going bike huntin'",no,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",Hope,8,"I heard the suckers never got no whips, we going bike huntin'",going,INNER,SLANT,cmu,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",Hope,8,"I heard the suckers never got no whips, we going bike huntin'",no,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",let,8,"I heard the suckers never got no whips, we going bike huntin'",never,INNER,SLANT,cmu,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",like,8,"I heard the suckers never got no whips, we going bike huntin'",bike,INNER,PERFECT,cmu,HIGH,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",nothin,8,"I heard the suckers never got no whips, we going bike huntin'",got,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",prison,8,"I heard the suckers never got no whips, we going bike huntin'",whips,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",brother,9,"You ain't never got no real diamonds, that's some light money",money,INNER,SLANT,cmu,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",brother,9,"You ain't never got no real diamonds, that's some light money",some,INNER,SLANT,cmu,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",don't,9,"You ain't never got no real diamonds, that's some light money",no,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",Hope,9,"You ain't never got no real diamonds, that's some light money",no,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",let,9,"You ain't never got no real diamonds, that's some light money",never,INNER,SLANT,cmu,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",like,9,"You ain't never got no real diamonds, that's some light money",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",like,9,"You ain't never got no real diamonds, that's some light money",light,INNER,SLANT,cmu,MED,Y
+Light Money,7,"Hope they let my brother out of prison, he don't like nothin'",nothin,9,"You ain't never got no real diamonds, that's some light money",got,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",no,8,"I heard the suckers never got no whips, we going bike huntin'",going,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",suckers,8,"I heard the suckers never got no whips, we going bike huntin'",huntin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",huntin,9,"You ain't never got no real diamonds, that's some light money",money,END,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",bike,9,"You ain't never got no real diamonds, that's some light money",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",bike,9,"You ain't never got no real diamonds, that's some light money",light,INNER,SLANT,cmu,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",going,9,"You ain't never got no real diamonds, that's some light money",no,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",got,9,"You ain't never got no real diamonds, that's some light money",got,INNER,REPEAT,spelling,HIGH,N
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",huntin,9,"You ain't never got no real diamonds, that's some light money",some,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",never,9,"You ain't never got no real diamonds, that's some light money",never,INNER,REPEAT,spelling,HIGH,N
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",no,9,"You ain't never got no real diamonds, that's some light money",no,INNER,REPEAT,spelling,HIGH,N
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",suckers,9,"You ain't never got no real diamonds, that's some light money",money,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",suckers,9,"You ain't never got no real diamonds, that's some light money",some,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",huntin,10,I be tryna get some take a risk and catch a flight money,money,END,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",bike,10,I be tryna get some take a risk and catch a flight money,flight,INNER,SLANT,cmu,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",huntin,10,I be tryna get some take a risk and catch a flight money,some,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",never,10,I be tryna get some take a risk and catch a flight money,get,INNER,SLANT,cmu,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",suckers,10,I be tryna get some take a risk and catch a flight money,money,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",suckers,10,I be tryna get some take a risk and catch a flight money,some,INNER,ASSONANCE,vowel,MED,Y
+Light Money,8,"I heard the suckers never got no whips, we going bike huntin'",whips,10,I be tryna get some take a risk and catch a flight money,risk,INNER,ASSONANCE,vowel,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",diamonds,9,"You ain't never got no real diamonds, that's some light money",light,INNER,ASSONANCE,vowel,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",some,9,"You ain't never got no real diamonds, that's some light money",money,INNER,SLANT,cmu,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",money,10,I be tryna get some take a risk and catch a flight money,money,END,REPEAT,spelling,HIGH,N
+Light Money,9,"You ain't never got no real diamonds, that's some light money",ain't,10,I be tryna get some take a risk and catch a flight money,take,INNER,ASSONANCE,vowel,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",diamonds,10,I be tryna get some take a risk and catch a flight money,flight,INNER,ASSONANCE,vowel,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",light,10,I be tryna get some take a risk and catch a flight money,flight,INNER,PERFECT,cmu,HIGH,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",money,10,I be tryna get some take a risk and catch a flight money,some,INNER,SLANT,cmu,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",never,10,I be tryna get some take a risk and catch a flight money,get,INNER,SLANT,cmu,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",real,10,I be tryna get some take a risk and catch a flight money,tryna,INNER,SLANT,spelling,LOW,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",some,10,I be tryna get some take a risk and catch a flight money,money,INNER,SLANT,cmu,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",some,10,I be tryna get some take a risk and catch a flight money,some,INNER,REPEAT,spelling,HIGH,N
+Light Money,9,"You ain't never got no real diamonds, that's some light money",money,11,I done sippеd about a 6 and I'm still sippin',done,INNER,SLANT,cmu,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",real,11,I done sippеd about a 6 and I'm still sippin',d,INNER,ASSONANCE,vowel,MED,Y
+Light Money,9,"You ain't never got no real diamonds, that's some light money",some,11,I done sippеd about a 6 and I'm still sippin',done,INNER,SLANT,cmu,MED,Y
+Light Money,10,I be tryna get some take a risk and catch a flight money,some,10,I be tryna get some take a risk and catch a flight money,money,INNER,SLANT,cmu,MED,Y
+Light Money,10,I be tryna get some take a risk and catch a flight money,money,11,I done sippеd about a 6 and I'm still sippin',done,INNER,SLANT,cmu,MED,Y
+Light Money,10,I be tryna get some take a risk and catch a flight money,risk,11,I done sippеd about a 6 and I'm still sippin',sipp,INNER,ASSONANCE,vowel,MED,Y
+Light Money,10,I be tryna get some take a risk and catch a flight money,risk,11,I done sippеd about a 6 and I'm still sippin',sippin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,10,I be tryna get some take a risk and catch a flight money,risk,11,I done sippеd about a 6 and I'm still sippin',still,INNER,ASSONANCE,vowel,MED,Y
+Light Money,10,I be tryna get some take a risk and catch a flight money,some,11,I done sippеd about a 6 and I'm still sippin',done,INNER,SLANT,cmu,MED,Y
+Light Money,10,I be tryna get some take a risk and catch a flight money,risk,12,"Niggas killed Duce in '08, and I'm still trippin'",killed,INNER,ASSONANCE,vowel,MED,Y
+Light Money,10,I be tryna get some take a risk and catch a flight money,risk,12,"Niggas killed Duce in '08, and I'm still trippin'",still,INNER,ASSONANCE,vowel,MED,Y
+Light Money,10,I be tryna get some take a risk and catch a flight money,risk,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sipp,11,I done sippеd about a 6 and I'm still sippin',sippin,INNER,SLANT,cmu,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sipp,11,I done sippеd about a 6 and I'm still sippin',still,INNER,SLANT,cmu,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',still,11,I done sippеd about a 6 and I'm still sippin',sippin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sippin,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,END,MULTI,multi,HIGH,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sipp,12,"Niggas killed Duce in '08, and I'm still trippin'",killed,INNER,ASSONANCE,vowel,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sipp,12,"Niggas killed Duce in '08, and I'm still trippin'",still,INNER,SLANT,cmu,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sipp,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,INNER,SLANT,cmu,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sippin,12,"Niggas killed Duce in '08, and I'm still trippin'",killed,INNER,ASSONANCE,vowel,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sippin,12,"Niggas killed Duce in '08, and I'm still trippin'",still,INNER,ASSONANCE,vowel,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',still,12,"Niggas killed Duce in '08, and I'm still trippin'",killed,INNER,SLANT,cmu,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',still,12,"Niggas killed Duce in '08, and I'm still trippin'",still,INNER,REPEAT,spelling,HIGH,N
+Light Money,11,I done sippеd about a 6 and I'm still sippin',still,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sippin,13,"Brother packеd a hundred out a safe, and he still bippin'",bippin,END,SLANT,spelling,LOW,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',d,13,"Brother packеd a hundred out a safe, and he still bippin'",d,INNER,REPEAT,spelling,HIGH,N
+Light Money,11,I done sippеd about a 6 and I'm still sippin',done,13,"Brother packеd a hundred out a safe, and he still bippin'",Brother,INNER,SLANT,cmu,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',done,13,"Brother packеd a hundred out a safe, and he still bippin'",hundred,INNER,ASSONANCE,vowel,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sipp,13,"Brother packеd a hundred out a safe, and he still bippin'",bippin,INNER,ASSONANCE,vowel,LOW,N
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sipp,13,"Brother packеd a hundred out a safe, and he still bippin'",still,INNER,SLANT,cmu,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',sippin,13,"Brother packеd a hundred out a safe, and he still bippin'",still,INNER,ASSONANCE,vowel,MED,Y
+Light Money,11,I done sippеd about a 6 and I'm still sippin',still,13,"Brother packеd a hundred out a safe, and he still bippin'",bippin,INNER,ASSONANCE,vowel,LOW,N
+Light Money,11,I done sippеd about a 6 and I'm still sippin',still,13,"Brother packеd a hundred out a safe, and he still bippin'",still,INNER,REPEAT,spelling,HIGH,N
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",killed,12,"Niggas killed Duce in '08, and I'm still trippin'",still,INNER,SLANT,cmu,MED,Y
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",killed,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",still,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,13,"Brother packеd a hundred out a safe, and he still bippin'",bippin,END,SLANT,spelling,LOW,Y
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",killed,13,"Brother packеd a hundred out a safe, and he still bippin'",still,INNER,SLANT,cmu,MED,Y
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",still,13,"Brother packеd a hundred out a safe, and he still bippin'",bippin,INNER,ASSONANCE,vowel,LOW,N
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",still,13,"Brother packеd a hundred out a safe, and he still bippin'",still,INNER,REPEAT,spelling,HIGH,N
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,13,"Brother packеd a hundred out a safe, and he still bippin'",still,INNER,ASSONANCE,vowel,MED,Y
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",killed,14,"Ain't no tryna tuck it out the way, you can still get it",still,INNER,SLANT,cmu,MED,Y
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",still,14,"Ain't no tryna tuck it out the way, you can still get it",still,INNER,REPEAT,spelling,HIGH,N
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,14,"Ain't no tryna tuck it out the way, you can still get it",still,INNER,ASSONANCE,vowel,MED,Y
+Light Money,12,"Niggas killed Duce in '08, and I'm still trippin'",trippin,16,"And I'm havin' sauce and all the cash, and they got low tickets",tickets,END,ASSONANCE,vowel,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",Brother,13,"Brother packеd a hundred out a safe, and he still bippin'",hundred,INNER,ASSONANCE,vowel,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",still,13,"Brother packеd a hundred out a safe, and he still bippin'",bippin,INNER,ASSONANCE,vowel,LOW,N
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",bippin,14,"Ain't no tryna tuck it out the way, you can still get it",still,INNER,ASSONANCE,vowel,LOW,N
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",Brother,14,"Ain't no tryna tuck it out the way, you can still get it",tuck,INNER,SLANT,cmu,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",hundred,14,"Ain't no tryna tuck it out the way, you can still get it",tuck,INNER,ASSONANCE,vowel,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",pack,14,"Ain't no tryna tuck it out the way, you can still get it",can,INNER,SLANT,cmu,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",safe,14,"Ain't no tryna tuck it out the way, you can still get it",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",safe,14,"Ain't no tryna tuck it out the way, you can still get it",way,INNER,ASSONANCE,vowel,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",still,14,"Ain't no tryna tuck it out the way, you can still get it",still,INNER,REPEAT,spelling,HIGH,N
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",bippin,15,"I just put some sherbert in this paper, this shit exquisite",shit,INNER,ASSONANCE,vowel,LOW,N
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",Brother,15,"I just put some sherbert in this paper, this shit exquisite",some,INNER,SLANT,cmu,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",hundred,15,"I just put some sherbert in this paper, this shit exquisite",some,INNER,ASSONANCE,vowel,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",safe,15,"I just put some sherbert in this paper, this shit exquisite",paper,INNER,SLANT,cmu,MED,Y
+Light Money,13,"Brother packеd a hundred out a safe, and he still bippin'",still,15,"I just put some sherbert in this paper, this shit exquisite",shit,INNER,SLANT,cmu,MED,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",Ain't,14,"Ain't no tryna tuck it out the way, you can still get it",way,INNER,ASSONANCE,vowel,MED,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",get,15,"I just put some sherbert in this paper, this shit exquisite",exquisite,END,ASSONANCE,vowel,MED,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",Ain't,15,"I just put some sherbert in this paper, this shit exquisite",paper,INNER,ASSONANCE,vowel,MED,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",still,15,"I just put some sherbert in this paper, this shit exquisite",shit,INNER,SLANT,cmu,MED,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",tuck,15,"I just put some sherbert in this paper, this shit exquisite",some,INNER,SLANT,cmu,MED,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",way,15,"I just put some sherbert in this paper, this shit exquisite",paper,INNER,ASSONANCE,vowel,MED,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",can,16,"And I'm havin' sauce and all the cash, and they got low tickets",cash,INNER,SLANT,cmu,MED,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",can,16,"And I'm havin' sauce and all the cash, and they got low tickets",havin,INNER,ASSONANCE,vowel,MED,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",no,16,"And I'm havin' sauce and all the cash, and they got low tickets",low,INNER,PERFECT,cmu,HIGH,Y
+Light Money,14,"Ain't no tryna tuck it out the way, you can still get it",still,16,"And I'm havin' sauce and all the cash, and they got low tickets",tickets,INNER,ASSONANCE,vowel,MED,Y
+Light Money,15,"I just put some sherbert in this paper, this shit exquisite",shit,16,"And I'm havin' sauce and all the cash, and they got low tickets",tickets,INNER,ASSONANCE,vowel,MED,Y
+Light Money,15,"I just put some sherbert in this paper, this shit exquisite",exquisite,17,"When I aim the FN 509, I swear I won't miss him",swear,INNER,ASSONANCE,vowel,MED,Y
+Light Money,15,"I just put some sherbert in this paper, this shit exquisite",exquisite,17,"When I aim the FN 509, I swear I won't miss him",When,INNER,ASSONANCE,vowel,MED,Y
+Light Money,15,"I just put some sherbert in this paper, this shit exquisite",paper,17,"When I aim the FN 509, I swear I won't miss him",aim,INNER,SLANT,cmu,MED,Y
+Light Money,15,"I just put some sherbert in this paper, this shit exquisite",shit,17,"When I aim the FN 509, I swear I won't miss him",him,INNER,SLANT,cmu,MED,Y
+Light Money,15,"I just put some sherbert in this paper, this shit exquisite",shit,17,"When I aim the FN 509, I swear I won't miss him",miss,INNER,SLANT,cmu,MED,Y
+Light Money,16,"And I'm havin' sauce and all the cash, and they got low tickets",havin,16,"And I'm havin' sauce and all the cash, and they got low tickets",cash,INNER,ASSONANCE,vowel,MED,Y
+Light Money,16,"And I'm havin' sauce and all the cash, and they got low tickets",sauce,16,"And I'm havin' sauce and all the cash, and they got low tickets",all,INNER,SLANT,cmu,MED,Y
+Light Money,16,"And I'm havin' sauce and all the cash, and they got low tickets",tickets,17,"When I aim the FN 509, I swear I won't miss him",him,END,ASSONANCE,vowel,MED,Y
+Light Money,16,"And I'm havin' sauce and all the cash, and they got low tickets",low,17,"When I aim the FN 509, I swear I won't miss him",won't,INNER,ASSONANCE,vowel,MED,Y
+Light Money,16,"And I'm havin' sauce and all the cash, and they got low tickets",tickets,17,"When I aim the FN 509, I swear I won't miss him",miss,INNER,ASSONANCE,vowel,MED,Y
+Light Money,16,"And I'm havin' sauce and all the cash, and they got low tickets",tickets,18,We gon' turn a nigga to a flavor that want no issues,issues,END,ASSONANCE,vowel,MED,Y
+Light Money,16,"And I'm havin' sauce and all the cash, and they got low tickets",got,18,We gon' turn a nigga to a flavor that want no issues,want,INNER,SLANT,cmu,MED,Y
+Light Money,16,"And I'm havin' sauce and all the cash, and they got low tickets",low,18,We gon' turn a nigga to a flavor that want no issues,no,INNER,PERFECT,cmu,HIGH,Y
+Light Money,17,"When I aim the FN 509, I swear I won't miss him",miss,17,"When I aim the FN 509, I swear I won't miss him",him,INNER,SLANT,cmu,MED,Y
+Light Money,17,"When I aim the FN 509, I swear I won't miss him",When,17,"When I aim the FN 509, I swear I won't miss him",swear,INNER,SLANT,cmu,MED,Y
+Light Money,17,"When I aim the FN 509, I swear I won't miss him",him,18,We gon' turn a nigga to a flavor that want no issues,issues,END,ASSONANCE,vowel,MED,Y
+Light Money,17,"When I aim the FN 509, I swear I won't miss him",aim,18,We gon' turn a nigga to a flavor that want no issues,flavor,INNER,SLANT,cmu,MED,Y
+Light Money,17,"When I aim the FN 509, I swear I won't miss him",miss,18,We gon' turn a nigga to a flavor that want no issues,issues,INNER,SLANT,cmu,MED,Y
+Light Money,17,"When I aim the FN 509, I swear I won't miss him",won't,18,We gon' turn a nigga to a flavor that want no issues,gon,INNER,SLANT,spelling,LOW,Y
+Light Money,17,"When I aim the FN 509, I swear I won't miss him",won't,18,We gon' turn a nigga to a flavor that want no issues,no,INNER,ASSONANCE,vowel,MED,Y
+Light Money,17,"When I aim the FN 509, I swear I won't miss him",won't,18,We gon' turn a nigga to a flavor that want no issues,want,INNER,SLANT,spelling,LOW,Y
+Light Money,17,"When I aim the FN 509, I swear I won't miss him",won't,19,"We got Glocks and we got Springfields, they dirty, some clean",Glocks,INNER,ASSONANCE,vowel,LOW,N
+Light Money,18,We gon' turn a nigga to a flavor that want no issues,turn,19,"We got Glocks and we got Springfields, they dirty, some clean",dirty,INNER,SLANT,cmu,MED,Y
+Light Money,18,We gon' turn a nigga to a flavor that want no issues,want,19,"We got Glocks and we got Springfields, they dirty, some clean",got,INNER,SLANT,cmu,MED,Y
+Light Money,18,We gon' turn a nigga to a flavor that want no issues,issues,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,Amiri,INNER,ASSONANCE,vowel,MED,Y
+Light Money,18,We gon' turn a nigga to a flavor that want no issues,issues,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,Bit,INNER,ASSONANCE,vowel,MED,Y
+Light Money,18,We gon' turn a nigga to a flavor that want no issues,issues,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,fit,INNER,ASSONANCE,vowel,MED,Y
+Light Money,18,We gon' turn a nigga to a flavor that want no issues,nigga,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,Bit,INNER,SLANT,spelling,LOW,Y
+Light Money,18,We gon' turn a nigga to a flavor that want no issues,nigga,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,fit,INNER,SLANT,spelling,LOW,Y
+Light Money,18,We gon' turn a nigga to a flavor that want no issues,no,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,dough,INNER,PERFECT,cmu,HIGH,Y
+Light Money,18,We gon' turn a nigga to a flavor that want no issues,want,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,hard,INNER,ASSONANCE,vowel,MED,Y
+Light Money,19,"We got Glocks and we got Springfields, they dirty, some clean",got,19,"We got Glocks and we got Springfields, they dirty, some clean",got,INNER,REPEAT,spelling,HIGH,N
+Light Money,19,"We got Glocks and we got Springfields, they dirty, some clean",clean,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,jeans,END,SLANT,cmu,MED,Y
+Light Money,19,"We got Glocks and we got Springfields, they dirty, some clean",Glocks,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,racks,INNER,SLANT,spelling,LOW,Y
+Light Money,19,"We got Glocks and we got Springfields, they dirty, some clean",got,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,hard,INNER,ASSONANCE,vowel,MED,Y
+Light Money,19,"We got Glocks and we got Springfields, they dirty, some clean",some,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,hundred,INNER,ASSONANCE,vowel,MED,Y
+Light Money,19,"We got Glocks and we got Springfields, they dirty, some clean",got,21,"I just went and copped a brand new, DOB '23",copped,INNER,SLANT,cmu,MED,Y
+Light Money,19,"We got Glocks and we got Springfields, they dirty, some clean",got,21,"I just went and copped a brand new, DOB '23",DOB,INNER,SLANT,cmu,MED,Y
+Light Money,19,"We got Glocks and we got Springfields, they dirty, some clean",clean,23,"Black brown white hoodie, and it made by D&G",G,END,ASSONANCE,vowel,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,Bit,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,Amiri,INNER,SLANT,cmu,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,Bit,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,fit,INNER,PERFECT,cmu,HIGH,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,fit,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,Amiri,INNER,SLANT,cmu,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,hard,21,"I just went and copped a brand new, DOB '23",copped,INNER,ASSONANCE,vowel,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,hard,21,"I just went and copped a brand new, DOB '23",DOB,INNER,ASSONANCE,vowel,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,racks,21,"I just went and copped a brand new, DOB '23",brand,INNER,ASSONANCE,vowel,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,inside,22,Had to overnight a plastic to an AirBnb,overnight,INNER,SLANT,cmu,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,racks,22,Had to overnight a plastic to an AirBnb,Had,INNER,ASSONANCE,vowel,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,racks,22,Had to overnight a plastic to an AirBnb,plastic,INNER,ASSONANCE,vowel,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,jeans,23,"Black brown white hoodie, and it made by D&G",G,END,ASSONANCE,vowel,MED,Y
+Light Money,20,Bit hard to fit a hundred racks of dough inside Amiri jeans,jeans,24,"I can bring the Za and flood your city, I need a travel fee",fee,END,ASSONANCE,vowel,MED,Y
+Light Money,21,"I just went and copped a brand new, DOB '23",copped,21,"I just went and copped a brand new, DOB '23",DOB,INNER,SLANT,cmu,MED,Y
+Light Money,21,"I just went and copped a brand new, DOB '23",brand,22,Had to overnight a plastic to an AirBnb,Had,INNER,SLANT,cmu,MED,Y
+Light Money,21,"I just went and copped a brand new, DOB '23",brand,22,Had to overnight a plastic to an AirBnb,plastic,INNER,ASSONANCE,vowel,MED,Y
+Light Money,21,"I just went and copped a brand new, DOB '23",brand,23,"Black brown white hoodie, and it made by D&G",Black,INNER,ASSONANCE,vowel,MED,Y
+Light Money,22,Had to overnight a plastic to an AirBnb,Had,22,Had to overnight a plastic to an AirBnb,plastic,INNER,ASSONANCE,vowel,MED,Y
+Light Money,22,Had to overnight a plastic to an AirBnb,Had,23,"Black brown white hoodie, and it made by D&G",Black,INNER,SLANT,cmu,MED,Y
+Light Money,22,Had to overnight a plastic to an AirBnb,overnight,23,"Black brown white hoodie, and it made by D&G",by,INNER,ASSONANCE,vowel,MED,Y
+Light Money,22,Had to overnight a plastic to an AirBnb,overnight,23,"Black brown white hoodie, and it made by D&G",white,INNER,PERFECT,cmu,HIGH,Y
+Light Money,22,Had to overnight a plastic to an AirBnb,plastic,23,"Black brown white hoodie, and it made by D&G",Black,INNER,ASSONANCE,vowel,MED,Y
+Light Money,22,Had to overnight a plastic to an AirBnb,Had,24,"I can bring the Za and flood your city, I need a travel fee",can,INNER,SLANT,cmu,MED,Y
+Light Money,22,Had to overnight a plastic to an AirBnb,Had,24,"I can bring the Za and flood your city, I need a travel fee",travel,INNER,ASSONANCE,vowel,MED,Y
+Light Money,22,Had to overnight a plastic to an AirBnb,plastic,24,"I can bring the Za and flood your city, I need a travel fee",can,INNER,ASSONANCE,vowel,MED,Y
+Light Money,22,Had to overnight a plastic to an AirBnb,plastic,24,"I can bring the Za and flood your city, I need a travel fee",travel,INNER,ASSONANCE,vowel,MED,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",D,23,"Black brown white hoodie, and it made by D&G",G,INNER,PERFECT,cmu,HIGH,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",white,23,"Black brown white hoodie, and it made by D&G",by,INNER,ASSONANCE,vowel,MED,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",G,24,"I can bring the Za and flood your city, I need a travel fee",fee,END,PERFECT,cmu,HIGH,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",Black,24,"I can bring the Za and flood your city, I need a travel fee",can,INNER,SLANT,cmu,MED,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",Black,24,"I can bring the Za and flood your city, I need a travel fee",travel,INNER,ASSONANCE,vowel,MED,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",D,24,"I can bring the Za and flood your city, I need a travel fee",fee,INNER,PERFECT,cmu,HIGH,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",D,24,"I can bring the Za and flood your city, I need a travel fee",need,INNER,ASSONANCE,vowel,MED,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",G,24,"I can bring the Za and flood your city, I need a travel fee",need,INNER,ASSONANCE,vowel,MED,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",Black,25,"All we do is splurge and get 'em trolled, that's why they mad at me",mad,INNER,SLANT,cmu,MED,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",by,25,"All we do is splurge and get 'em trolled, that's why they mad at me",why,INNER,PERFECT,cmu,HIGH,Y
+Light Money,23,"Black brown white hoodie, and it made by D&G",white,25,"All we do is splurge and get 'em trolled, that's why they mad at me",why,INNER,ASSONANCE,vowel,MED,Y
+Light Money,24,"I can bring the Za and flood your city, I need a travel fee",bring,24,"I can bring the Za and flood your city, I need a travel fee",city,INNER,SLANT,cmu,MED,Y
+Light Money,24,"I can bring the Za and flood your city, I need a travel fee",can,24,"I can bring the Za and flood your city, I need a travel fee",travel,INNER,ASSONANCE,vowel,MED,Y
+Light Money,24,"I can bring the Za and flood your city, I need a travel fee",need,24,"I can bring the Za and flood your city, I need a travel fee",fee,INNER,ASSONANCE,vowel,MED,Y
+Light Money,24,"I can bring the Za and flood your city, I need a travel fee",can,25,"All we do is splurge and get 'em trolled, that's why they mad at me",mad,INNER,SLANT,cmu,MED,Y
+Light Money,24,"I can bring the Za and flood your city, I need a travel fee",travel,25,"All we do is splurge and get 'em trolled, that's why they mad at me",mad,INNER,ASSONANCE,vowel,MED,Y
+Light Money,24,"I can bring the Za and flood your city, I need a travel fee",can,26,I can make a call and they gon' show up with the cavalry,can,INNER,REPEAT,spelling,HIGH,N
+Light Money,24,"I can bring the Za and flood your city, I need a travel fee",can,26,I can make a call and they gon' show up with the cavalry,cavalry,INNER,ASSONANCE,vowel,MED,Y
+Light Money,24,"I can bring the Za and flood your city, I need a travel fee",travel,26,I can make a call and they gon' show up with the cavalry,can,INNER,ASSONANCE,vowel,MED,Y
+Light Money,24,"I can bring the Za and flood your city, I need a travel fee",travel,26,I can make a call and they gon' show up with the cavalry,cavalry,INNER,SLANT,cmu,MED,Y
+Light Money,25,"All we do is splurge and get 'em trolled, that's why they mad at me",mad,26,I can make a call and they gon' show up with the cavalry,cavalry,END,ASSONANCE,vowel,MED,Y
+Light Money,25,"All we do is splurge and get 'em trolled, that's why they mad at me",All,26,I can make a call and they gon' show up with the cavalry,call,INNER,PERFECT,cmu,HIGH,Y
+Light Money,25,"All we do is splurge and get 'em trolled, that's why they mad at me",mad,26,I can make a call and they gon' show up with the cavalry,can,INNER,SLANT,cmu,MED,Y
+Light Money,26,I can make a call and they gon' show up with the cavalry,can,26,I can make a call and they gon' show up with the cavalry,cavalry,INNER,ASSONANCE,vowel,MED,Y
