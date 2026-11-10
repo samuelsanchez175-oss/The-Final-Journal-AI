@@ -1,0 +1,231 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+By Chance,1,"We just pulled up on 'em, we just got 'em by chance",'em,1,"We just pulled up on 'em, we just got 'em by chance",'em,INNER,REPEAT,spelling,HIGH,N
+By Chance,1,"We just pulled up on 'em, we just got 'em by chance",by,2,"Thought he was a general, we got his five stars",five,INNER,ASSONANCE,vowel,MED,Y
+By Chance,1,"We just pulled up on 'em, we just got 'em by chance",got,2,"Thought he was a general, we got his five stars",got,INNER,REPEAT,spelling,HIGH,N
+By Chance,1,"We just pulled up on 'em, we just got 'em by chance",got,2,"Thought he was a general, we got his five stars",stars,INNER,ASSONANCE,vowel,MED,Y
+By Chance,1,"We just pulled up on 'em, we just got 'em by chance",by,3,I could not be winnin' and then let my guys starve,guys,INNER,ASSONANCE,vowel,MED,Y
+By Chance,1,"We just pulled up on 'em, we just got 'em by chance",got,3,I could not be winnin' and then let my guys starve,not,INNER,PERFECT,cmu,HIGH,Y
+By Chance,1,"We just pulled up on 'em, we just got 'em by chance",got,3,I could not be winnin' and then let my guys starve,starve,INNER,ASSONANCE,vowel,MED,Y
+By Chance,1,"We just pulled up on 'em, we just got 'em by chance",pulled,3,I could not be winnin' and then let my guys starve,could,INNER,SLANT,cmu,MED,Y
+By Chance,1,"We just pulled up on 'em, we just got 'em by chance",chance,5,Ran up in your office and we terrified staff (Haha),staff,END,ASSONANCE,vowel,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",got,2,"Thought he was a general, we got his five stars",stars,INNER,ASSONANCE,vowel,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",stars,3,I could not be winnin' and then let my guys starve,starve,END,SLANT,cmu,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",five,3,I could not be winnin' and then let my guys starve,guys,INNER,SLANT,cmu,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",general,3,I could not be winnin' and then let my guys starve,let,INNER,ASSONANCE,vowel,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",got,3,I could not be winnin' and then let my guys starve,not,INNER,PERFECT,cmu,HIGH,Y
+By Chance,2,"Thought he was a general, we got his five stars",got,3,I could not be winnin' and then let my guys starve,starve,INNER,ASSONANCE,vowel,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",stars,3,I could not be winnin' and then let my guys starve,not,INNER,ASSONANCE,vowel,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",stars,4,"Extended clip, twenty-five sparks",sparks,END,SLANT,cmu,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",five,4,"Extended clip, twenty-five sparks",five,INNER,REPEAT,spelling,HIGH,N
+By Chance,2,"Thought he was a general, we got his five stars",general,4,"Extended clip, twenty-five sparks",Extended,INNER,ASSONANCE,vowel,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",general,4,"Extended clip, twenty-five sparks",twenty,INNER,SLANT,cmu,MED,Y
+By Chance,2,"Thought he was a general, we got his five stars",got,4,"Extended clip, twenty-five sparks",sparks,INNER,ASSONANCE,vowel,MED,Y
+By Chance,3,I could not be winnin' and then let my guys starve,not,3,I could not be winnin' and then let my guys starve,starve,INNER,ASSONANCE,vowel,MED,Y
+By Chance,3,I could not be winnin' and then let my guys starve,starve,4,"Extended clip, twenty-five sparks",sparks,END,ASSONANCE,vowel,MED,Y
+By Chance,3,I could not be winnin' and then let my guys starve,guys,4,"Extended clip, twenty-five sparks",five,INNER,SLANT,cmu,MED,Y
+By Chance,3,I could not be winnin' and then let my guys starve,let,4,"Extended clip, twenty-five sparks",Extended,INNER,ASSONANCE,vowel,MED,Y
+By Chance,3,I could not be winnin' and then let my guys starve,let,4,"Extended clip, twenty-five sparks",twenty,INNER,SLANT,cmu,MED,Y
+By Chance,3,I could not be winnin' and then let my guys starve,not,4,"Extended clip, twenty-five sparks",sparks,INNER,ASSONANCE,vowel,MED,Y
+By Chance,3,I could not be winnin' and then let my guys starve,winnin,4,"Extended clip, twenty-five sparks",clip,INNER,ASSONANCE,vowel,MED,Y
+By Chance,3,I could not be winnin' and then let my guys starve,guys,5,Ran up in your office and we terrified staff (Haha),terrified,INNER,SLANT,cmu,MED,Y
+By Chance,3,I could not be winnin' and then let my guys starve,starve,7,"Tell me 'bout no numbers, give a fuck about charts",charts,END,ASSONANCE,vowel,MED,Y
+By Chance,4,"Extended clip, twenty-five sparks",Extended,4,"Extended clip, twenty-five sparks",twenty,INNER,SLANT,cmu,MED,Y
+By Chance,4,"Extended clip, twenty-five sparks",five,5,Ran up in your office and we terrified staff (Haha),terrified,INNER,SLANT,cmu,MED,Y
+By Chance,4,"Extended clip, twenty-five sparks",clip,6,Thought it was a joke until we got the last laugh (Last laugh),until,INNER,SLANT,cmu,MED,Y
+By Chance,4,"Extended clip, twenty-five sparks",sparks,6,Thought it was a joke until we got the last laugh (Last laugh),got,INNER,ASSONANCE,vowel,MED,Y
+By Chance,4,"Extended clip, twenty-five sparks",sparks,7,"Tell me 'bout no numbers, give a fuck about charts",charts,END,SLANT,cmu,MED,Y
+By Chance,4,"Extended clip, twenty-five sparks",sparks,8,These niggas fake and they just play parts (Haha),parts,END,SLANT,cmu,MED,Y
+By Chance,5,Ran up in your office and we terrified staff (Haha),Ran,5,Ran up in your office and we terrified staff (Haha),staff,INNER,SLANT,cmu,MED,Y
+By Chance,5,Ran up in your office and we terrified staff (Haha),staff,6,Thought it was a joke until we got the last laugh (Last laugh),laugh,END,PERFECT,cmu,HIGH,Y
+By Chance,5,Ran up in your office and we terrified staff (Haha),office,6,Thought it was a joke until we got the last laugh (Last laugh),Thought,INNER,ASSONANCE,vowel,MED,Y
+By Chance,5,Ran up in your office and we terrified staff (Haha),Ran,6,Thought it was a joke until we got the last laugh (Last laugh),last,INNER,ASSONANCE,vowel,MED,Y
+By Chance,5,Ran up in your office and we terrified staff (Haha),Ran,6,Thought it was a joke until we got the last laugh (Last laugh),laugh,INNER,SLANT,cmu,MED,Y
+By Chance,5,Ran up in your office and we terrified staff (Haha),staff,6,Thought it was a joke until we got the last laugh (Last laugh),last,INNER,ASSONANCE,vowel,MED,Y
+By Chance,6,Thought it was a joke until we got the last laugh (Last laugh),last,6,Thought it was a joke until we got the last laugh (Last laugh),laugh,INNER,ASSONANCE,vowel,MED,Y
+By Chance,6,Thought it was a joke until we got the last laugh (Last laugh),got,7,"Tell me 'bout no numbers, give a fuck about charts",charts,INNER,ASSONANCE,vowel,MED,Y
+By Chance,6,Thought it was a joke until we got the last laugh (Last laugh),joke,7,"Tell me 'bout no numbers, give a fuck about charts",no,INNER,ASSONANCE,vowel,MED,Y
+By Chance,6,Thought it was a joke until we got the last laugh (Last laugh),until,7,"Tell me 'bout no numbers, give a fuck about charts",give,INNER,SLANT,cmu,MED,Y
+By Chance,6,Thought it was a joke until we got the last laugh (Last laugh),got,8,These niggas fake and they just play parts (Haha),parts,INNER,ASSONANCE,vowel,MED,Y
+By Chance,7,"Tell me 'bout no numbers, give a fuck about charts",'bout,7,"Tell me 'bout no numbers, give a fuck about charts",about,INNER,PERFECT,cmu,HIGH,Y
+By Chance,7,"Tell me 'bout no numbers, give a fuck about charts",numbers,7,"Tell me 'bout no numbers, give a fuck about charts",fuck,INNER,ASSONANCE,vowel,MED,Y
+By Chance,7,"Tell me 'bout no numbers, give a fuck about charts",charts,8,These niggas fake and they just play parts (Haha),parts,END,PERFECT,cmu,HIGH,Y
+By Chance,7,"Tell me 'bout no numbers, give a fuck about charts",fuck,9,"I don't trust 'em, we fell out",trust,INNER,ASSONANCE,vowel,MED,Y
+By Chance,7,"Tell me 'bout no numbers, give a fuck about charts",no,9,"I don't trust 'em, we fell out",don't,INNER,ASSONANCE,vowel,MED,Y
+By Chance,7,"Tell me 'bout no numbers, give a fuck about charts",numbers,9,"I don't trust 'em, we fell out",trust,INNER,ASSONANCE,vowel,MED,Y
+By Chance,7,"Tell me 'bout no numbers, give a fuck about charts",Tell,9,"I don't trust 'em, we fell out",fell,INNER,PERFECT,cmu,HIGH,Y
+By Chance,8,These niggas fake and they just play parts (Haha),fake,8,These niggas fake and they just play parts (Haha),play,INNER,ASSONANCE,vowel,MED,Y
+By Chance,8,These niggas fake and they just play parts (Haha),fake,10,He would say we left him out (Haha),say,INNER,ASSONANCE,vowel,MED,Y
+By Chance,8,These niggas fake and they just play parts (Haha),play,10,He would say we left him out (Haha),say,INNER,PERFECT,cmu,HIGH,Y
+By Chance,9,"I don't trust 'em, we fell out",fell,10,He would say we left him out (Haha),left,INNER,ASSONANCE,vowel,MED,Y
+By Chance,9,"I don't trust 'em, we fell out",fell,11,I'm in there with Double S,S,END,SLANT,cmu,MED,Y
+By Chance,9,"I don't trust 'em, we fell out",fell,11,I'm in there with Double S,there,INNER,SLANT,cmu,MED,Y
+By Chance,9,"I don't trust 'em, we fell out",trust,11,I'm in there with Double S,Double,INNER,ASSONANCE,vowel,MED,Y
+By Chance,10,He would say we left him out (Haha),left,11,I'm in there with Double S,S,INNER,ASSONANCE,vowel,MED,Y
+By Chance,10,He would say we left him out (Haha),left,11,I'm in there with Double S,there,INNER,ASSONANCE,vowel,MED,Y
+By Chance,11,I'm in there with Double S,there,11,I'm in there with Double S,S,INNER,SLANT,cmu,MED,Y
+By Chance,11,I'm in there with Double S,Double,13,They on some pretentious vibes,some,INNER,ASSONANCE,vowel,MED,Y
+By Chance,11,I'm in there with Double S,S,13,They on some pretentious vibes,pretentious,INNER,ASSONANCE,vowel,MED,Y
+By Chance,11,I'm in there with Double S,there,13,They on some pretentious vibes,pretentious,INNER,ASSONANCE,vowel,MED,Y
+By Chance,13,They on some pretentious vibes,vibes,14,"But me, I'm from that mental side",side,END,ASSONANCE,vowel,MED,Y
+By Chance,13,They on some pretentious vibes,pretentious,14,"But me, I'm from that mental side",mental,INNER,ASSONANCE,vowel,MED,Y
+By Chance,13,They on some pretentious vibes,vibes,15,Where you pull up unidentified,unidentified,END,ASSONANCE,vowel,MED,Y
+By Chance,13,They on some pretentious vibes,pretentious,15,Where you pull up unidentified,Where,INNER,ASSONANCE,vowel,MED,Y
+By Chance,13,They on some pretentious vibes,vibes,16,Ain't that how you're meant to slide?,slide,END,ASSONANCE,vowel,MED,Y
+By Chance,14,"But me, I'm from that mental side",side,15,Where you pull up unidentified,unidentified,END,PERFECT,cmu,HIGH,Y
+By Chance,14,"But me, I'm from that mental side",mental,15,Where you pull up unidentified,Where,INNER,ASSONANCE,vowel,MED,Y
+By Chance,14,"But me, I'm from that mental side",side,16,Ain't that how you're meant to slide?,slide,END,PERFECT,cmu,HIGH,Y
+By Chance,14,"But me, I'm from that mental side",mental,16,Ain't that how you're meant to slide?,meant,INNER,SLANT,cmu,MED,Y
+By Chance,15,Where you pull up unidentified,unidentified,16,Ain't that how you're meant to slide?,slide,END,PERFECT,cmu,HIGH,Y
+By Chance,15,Where you pull up unidentified,Where,16,Ain't that how you're meant to slide?,meant,INNER,ASSONANCE,vowel,MED,Y
+By Chance,15,Where you pull up unidentified,unidentified,17,"Touch my little bro, it's gonna cost your right arm",right,INNER,SLANT,cmu,MED,Y
+By Chance,16,Ain't that how you're meant to slide?,slide,17,"Touch my little bro, it's gonna cost your right arm",right,INNER,SLANT,cmu,MED,Y
+By Chance,17,"Touch my little bro, it's gonna cost your right arm",cost,17,"Touch my little bro, it's gonna cost your right arm",arm,INNER,ASSONANCE,vowel,MED,Y
+By Chance,17,"Touch my little bro, it's gonna cost your right arm",gonna,17,"Touch my little bro, it's gonna cost your right arm",arm,INNER,ASSONANCE,vowel,MED,Y
+By Chance,17,"Touch my little bro, it's gonna cost your right arm",gonna,17,"Touch my little bro, it's gonna cost your right arm",cost,INNER,ASSONANCE,vowel,MED,Y
+By Chance,17,"Touch my little bro, it's gonna cost your right arm",bro,18,"See all of these niggas, oh yeah, those are my dawgs",those,INNER,ASSONANCE,vowel,MED,Y
+By Chance,17,"Touch my little bro, it's gonna cost your right arm",bro,19,"I'm just doin' me, so please don't cross on my path",don't,INNER,ASSONANCE,vowel,MED,Y
+By Chance,17,"Touch my little bro, it's gonna cost your right arm",arm,20,"Dubai I'm layin' low, don't stay on Five Palm",Palm,END,SLANT,cmu,MED,Y
+By Chance,18,"See all of these niggas, oh yeah, those are my dawgs",See,18,"See all of these niggas, oh yeah, those are my dawgs",these,INNER,ASSONANCE,vowel,MED,Y
+By Chance,18,"See all of these niggas, oh yeah, those are my dawgs",all,19,"I'm just doin' me, so please don't cross on my path",cross,INNER,SLANT,cmu,MED,Y
+By Chance,18,"See all of these niggas, oh yeah, those are my dawgs",dawgs,19,"I'm just doin' me, so please don't cross on my path",cross,INNER,SLANT,spelling,LOW,Y
+By Chance,18,"See all of these niggas, oh yeah, those are my dawgs",See,19,"I'm just doin' me, so please don't cross on my path",please,INNER,ASSONANCE,vowel,MED,Y
+By Chance,18,"See all of these niggas, oh yeah, those are my dawgs",these,19,"I'm just doin' me, so please don't cross on my path",please,INNER,PERFECT,cmu,HIGH,Y
+By Chance,18,"See all of these niggas, oh yeah, those are my dawgs",those,19,"I'm just doin' me, so please don't cross on my path",don't,INNER,ASSONANCE,vowel,MED,Y
+By Chance,18,"See all of these niggas, oh yeah, those are my dawgs",those,20,"Dubai I'm layin' low, don't stay on Five Palm",don't,INNER,ASSONANCE,vowel,MED,Y
+By Chance,18,"See all of these niggas, oh yeah, those are my dawgs",those,20,"Dubai I'm layin' low, don't stay on Five Palm",low,INNER,ASSONANCE,vowel,MED,Y
+By Chance,19,"I'm just doin' me, so please don't cross on my path",don't,20,"Dubai I'm layin' low, don't stay on Five Palm",don't,INNER,REPEAT,spelling,HIGH,N
+By Chance,19,"I'm just doin' me, so please don't cross on my path",don't,20,"Dubai I'm layin' low, don't stay on Five Palm",low,INNER,ASSONANCE,vowel,MED,Y
+By Chance,19,"I'm just doin' me, so please don't cross on my path",path,21,"Move it over there, that isn't me, I might pass",pass,END,SLANT,cmu,MED,Y
+By Chance,19,"I'm just doin' me, so please don't cross on my path",don't,21,"Move it over there, that isn't me, I might pass",over,INNER,ASSONANCE,vowel,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",Dubai,20,"Dubai I'm layin' low, don't stay on Five Palm",Five,INNER,ASSONANCE,vowel,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",layin,20,"Dubai I'm layin' low, don't stay on Five Palm",stay,INNER,ASSONANCE,vowel,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",low,20,"Dubai I'm layin' low, don't stay on Five Palm",don't,INNER,ASSONANCE,vowel,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",don't,21,"Move it over there, that isn't me, I might pass",over,INNER,ASSONANCE,vowel,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",Dubai,21,"Move it over there, that isn't me, I might pass",might,INNER,ASSONANCE,vowel,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",Five,21,"Move it over there, that isn't me, I might pass",might,INNER,SLANT,cmu,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",low,21,"Move it over there, that isn't me, I might pass",over,INNER,ASSONANCE,vowel,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",Dubai,22,"Diss me once before and then again I'm like, ""Nah""",like,INNER,ASSONANCE,vowel,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",Five,22,"Diss me once before and then again I'm like, ""Nah""",like,INNER,SLANT,cmu,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",Palm,23,"Got him while he's drivin', nigga hit a parked car",car,END,SLANT,cmu,MED,Y
+By Chance,20,"Dubai I'm layin' low, don't stay on Five Palm",Palm,24,They talk a good game but niggas half-heart,heart,END,ASSONANCE,vowel,MED,Y
+By Chance,21,"Move it over there, that isn't me, I might pass",isn't,22,"Diss me once before and then again I'm like, ""Nah""",Diss,INNER,ASSONANCE,vowel,MED,Y
+By Chance,21,"Move it over there, that isn't me, I might pass",might,22,"Diss me once before and then again I'm like, ""Nah""",like,INNER,SLANT,cmu,MED,Y
+By Chance,21,"Move it over there, that isn't me, I might pass",there,22,"Diss me once before and then again I'm like, ""Nah""",again,INNER,SLANT,cmu,MED,Y
+By Chance,21,"Move it over there, that isn't me, I might pass",isn't,23,"Got him while he's drivin', nigga hit a parked car",him,INNER,ASSONANCE,vowel,MED,Y
+By Chance,21,"Move it over there, that isn't me, I might pass",isn't,23,"Got him while he's drivin', nigga hit a parked car",hit,INNER,ASSONANCE,vowel,MED,Y
+By Chance,21,"Move it over there, that isn't me, I might pass",might,23,"Got him while he's drivin', nigga hit a parked car",drivin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,21,"Move it over there, that isn't me, I might pass",might,23,"Got him while he's drivin', nigga hit a parked car",while,INNER,SLANT,cmu,MED,Y
+By Chance,22,"Diss me once before and then again I'm like, ""Nah""",Diss,23,"Got him while he's drivin', nigga hit a parked car",him,INNER,SLANT,cmu,MED,Y
+By Chance,22,"Diss me once before and then again I'm like, ""Nah""",Diss,23,"Got him while he's drivin', nigga hit a parked car",hit,INNER,SLANT,cmu,MED,Y
+By Chance,22,"Diss me once before and then again I'm like, ""Nah""",like,23,"Got him while he's drivin', nigga hit a parked car",drivin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,22,"Diss me once before and then again I'm like, ""Nah""",like,23,"Got him while he's drivin', nigga hit a parked car",while,INNER,SLANT,cmu,MED,Y
+By Chance,22,"Diss me once before and then again I'm like, ""Nah""",before,24,They talk a good game but niggas half-heart,talk,INNER,SLANT,cmu,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",Got,23,"Got him while he's drivin', nigga hit a parked car",car,INNER,SLANT,cmu,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",Got,23,"Got him while he's drivin', nigga hit a parked car",parked,INNER,ASSONANCE,vowel,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",him,23,"Got him while he's drivin', nigga hit a parked car",hit,INNER,SLANT,cmu,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",nigga,23,"Got him while he's drivin', nigga hit a parked car",hit,INNER,SLANT,spelling,LOW,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",parked,23,"Got him while he's drivin', nigga hit a parked car",car,INNER,ASSONANCE,vowel,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",while,23,"Got him while he's drivin', nigga hit a parked car",drivin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",car,24,They talk a good game but niggas half-heart,heart,END,SLANT,cmu,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",Got,24,They talk a good game but niggas half-heart,heart,INNER,SLANT,cmu,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",nigga,24,They talk a good game but niggas half-heart,niggas,INNER,SLANT,spelling,LOW,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",parked,24,They talk a good game but niggas half-heart,heart,INNER,SLANT,cmu,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",car,25,Then we smack the entourage,entourage,END,SLANT,cmu,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",Got,25,Then we smack the entourage,entourage,INNER,SLANT,cmu,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",parked,25,Then we smack the entourage,entourage,INNER,ASSONANCE,vowel,MED,Y
+By Chance,23,"Got him while he's drivin', nigga hit a parked car",car,27,I got on my camouflage,camouflage,END,SLANT,cmu,MED,Y
+By Chance,24,They talk a good game but niggas half-heart,heart,25,Then we smack the entourage,entourage,END,ASSONANCE,vowel,MED,Y
+By Chance,24,They talk a good game but niggas half-heart,half,25,Then we smack the entourage,smack,INNER,SLANT,cmu,MED,Y
+By Chance,24,They talk a good game but niggas half-heart,game,26,Layin' in your bushes (21),Layin,INNER,SLANT,cmu,MED,Y
+By Chance,24,They talk a good game but niggas half-heart,good,26,Layin' in your bushes (21),bushes,INNER,ASSONANCE,vowel,MED,Y
+By Chance,24,They talk a good game but niggas half-heart,heart,27,I got on my camouflage,camouflage,END,ASSONANCE,vowel,MED,Y
+By Chance,25,Then we smack the entourage,entourage,27,I got on my camouflage,camouflage,END,PERFECT,cmu,HIGH,Y
+By Chance,25,Then we smack the entourage,entourage,27,I got on my camouflage,got,INNER,SLANT,cmu,MED,Y
+By Chance,25,Then we smack the entourage,entourage,29,I just gave 'em ass shots,shots,END,ASSONANCE,vowel,MED,Y
+By Chance,27,I got on my camouflage,got,27,I got on my camouflage,camouflage,INNER,SLANT,cmu,MED,Y
+By Chance,27,I got on my camouflage,camouflage,29,I just gave 'em ass shots,shots,END,ASSONANCE,vowel,MED,Y
+By Chance,27,I got on my camouflage,got,29,I just gave 'em ass shots,shots,INNER,SLANT,cmu,MED,Y
+By Chance,27,I got on my camouflage,camouflage,31,Then we spray the mascots,mascots,END,ASSONANCE,vowel,MED,Y
+By Chance,28,Runnin' from the stick (21),stick,30,Spray a nigga team (Pussy),nigga,INNER,SLANT,spelling,LOW,Y
+By Chance,29,I just gave 'em ass shots,gave,30,Spray a nigga team (Pussy),Spray,INNER,ASSONANCE,vowel,MED,Y
+By Chance,29,I just gave 'em ass shots,shots,31,Then we spray the mascots,mascots,END,PERFECT,cmu,HIGH,Y
+By Chance,29,I just gave 'em ass shots,gave,31,Then we spray the mascots,spray,INNER,ASSONANCE,vowel,MED,Y
+By Chance,30,Spray a nigga team (Pussy),Spray,31,Then we spray the mascots,spray,INNER,REPEAT,spelling,HIGH,N
+By Chance,31,Then we spray the mascots,mascots,32,I got mad pulls on 6 to London (On God),got,INNER,SLANT,cmu,MED,Y
+By Chance,32,I got mad pulls on 6 to London (On God),London,33,"Fuck the metal detector, I still brought my gun in (On God)",gun,END,ASSONANCE,vowel,MED,Y
+By Chance,32,I got mad pulls on 6 to London (On God),London,33,"Fuck the metal detector, I still brought my gun in (On God)",Fuck,INNER,ASSONANCE,vowel,MED,Y
+By Chance,32,I got mad pulls on 6 to London (On God),London,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",thumb,END,ASSONANCE,vowel,MED,Y
+By Chance,32,I got mad pulls on 6 to London (On God),mad,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",back,INNER,SLANT,cmu,MED,Y
+By Chance,32,I got mad pulls on 6 to London (On God),London,35,I heard you got questions and your ass start hummin' (Pussy),hummin,END,SLANT,cmu,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",Fuck,33,"Fuck the metal detector, I still brought my gun in (On God)",gun,INNER,SLANT,cmu,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",metal,33,"Fuck the metal detector, I still brought my gun in (On God)",detector,INNER,ASSONANCE,vowel,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",gun,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",thumb,END,SLANT,cmu,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",Fuck,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",thumb,INNER,SLANT,cmu,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",still,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",Hit,INNER,SLANT,cmu,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",still,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",stickin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",gun,35,I heard you got questions and your ass start hummin' (Pussy),hummin,END,SLANT,cmu,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",detector,35,I heard you got questions and your ass start hummin' (Pussy),questions,INNER,ASSONANCE,vowel,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",Fuck,35,I heard you got questions and your ass start hummin' (Pussy),hummin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",metal,35,I heard you got questions and your ass start hummin' (Pussy),questions,INNER,ASSONANCE,vowel,MED,Y
+By Chance,33,"Fuck the metal detector, I still brought my gun in (On God)",gun,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",somethin,END,ASSONANCE,vowel,MED,Y
+By Chance,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",Hit,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",stickin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",thumb,35,I heard you got questions and your ass start hummin' (Pussy),hummin,END,SLANT,cmu,MED,Y
+By Chance,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",back,35,I heard you got questions and your ass start hummin' (Pussy),ass,INNER,SLANT,cmu,MED,Y
+By Chance,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",thumb,36,"We don't do no arguin', we bun 'em",'em,END,PERFECT,cmu,HIGH,Y
+By Chance,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",know,36,"We don't do no arguin', we bun 'em",don't,INNER,ASSONANCE,vowel,MED,Y
+By Chance,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",know,36,"We don't do no arguin', we bun 'em",no,INNER,PERFECT,cmu,HIGH,Y
+By Chance,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",thumb,36,"We don't do no arguin', we bun 'em",bun,INNER,SLANT,cmu,MED,Y
+By Chance,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",thumb,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",somethin,END,ASSONANCE,vowel,MED,Y
+By Chance,34,"Hit her from the back, you know I'm stickin' my thumb in (21)",thumb,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",comin,END,SLANT,cmu,MED,Y
+By Chance,35,I heard you got questions and your ass start hummin' (Pussy),got,35,I heard you got questions and your ass start hummin' (Pussy),start,INNER,SLANT,cmu,MED,Y
+By Chance,35,I heard you got questions and your ass start hummin' (Pussy),got,36,"We don't do no arguin', we bun 'em",arguin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,35,I heard you got questions and your ass start hummin' (Pussy),hummin,36,"We don't do no arguin', we bun 'em",bun,INNER,SLANT,cmu,MED,Y
+By Chance,35,I heard you got questions and your ass start hummin' (Pussy),start,36,"We don't do no arguin', we bun 'em",arguin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,35,I heard you got questions and your ass start hummin' (Pussy),hummin,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",somethin,END,SLANT,cmu,MED,Y
+By Chance,35,I heard you got questions and your ass start hummin' (Pussy),ass,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",ass,INNER,REPEAT,spelling,HIGH,N
+By Chance,35,I heard you got questions and your ass start hummin' (Pussy),questions,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",gettin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,35,I heard you got questions and your ass start hummin' (Pussy),hummin,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",comin,END,MULTI,multi,HIGH,Y
+By Chance,35,I heard you got questions and your ass start hummin' (Pussy),hummin,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",drummin,END,MULTI,multi,HIGH,Y
+By Chance,36,"We don't do no arguin', we bun 'em",don't,36,"We don't do no arguin', we bun 'em",no,INNER,ASSONANCE,vowel,MED,Y
+By Chance,36,"We don't do no arguin', we bun 'em",bun,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",somethin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,36,"We don't do no arguin', we bun 'em",don't,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",know,INNER,ASSONANCE,vowel,MED,Y
+By Chance,36,"We don't do no arguin', we bun 'em",no,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",know,INNER,PERFECT,cmu,HIGH,Y
+By Chance,36,"We don't do no arguin', we bun 'em",bun,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",comin,INNER,SLANT,cmu,MED,Y
+By Chance,36,"We don't do no arguin', we bun 'em",don't,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",lovin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,36,"We don't do no arguin', we bun 'em",no,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",lovin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",somethin,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",comin,END,SLANT,cmu,MED,Y
+By Chance,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",gettin,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",when,INNER,ASSONANCE,vowel,MED,Y
+By Chance,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",know,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",lovin,INNER,ASSONANCE,vowel,MED,Y
+By Chance,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",somethin,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",drummin,END,SLANT,cmu,MED,Y
+By Chance,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",gettin,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",get,INNER,SLANT,cmu,MED,Y
+By Chance,37,"If you cross that line, you know your ass is gettin' somethin' (Facts)",line,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",might,INNER,SLANT,cmu,MED,Y
+By Chance,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",see,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",leave,INNER,ASSONANCE,vowel,MED,Y
+By Chance,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",comin,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",drummin,END,MULTI,multi,HIGH,Y
+By Chance,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",when,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",get,INNER,SLANT,cmu,MED,Y
+By Chance,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",leave,40,Wanna see me? Book me (21),see,INNER,ASSONANCE,vowel,MED,Y
+By Chance,38,"Hate to see her leave, but I be lovin' when she comin' (On God)",see,40,Wanna see me? Book me (21),see,INNER,REPEAT,spelling,HIGH,N
+By Chance,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",Fifty,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",switch,INNER,ASSONANCE,vowel,MED,Y
+By Chance,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",Fifty,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",trip,INNER,ASSONANCE,vowel,MED,Y
+By Chance,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",switch,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",trip,INNER,SLANT,cmu,MED,Y
+By Chance,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",Fifty,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",give,INNER,ASSONANCE,vowel,MED,Y
+By Chance,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",Fifty,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",wifey,INNER,SLANT,spelling,LOW,Y
+By Chance,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",switch,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",give,INNER,SLANT,cmu,MED,Y
+By Chance,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",switch,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",wifey,INNER,SLANT,spelling,LOW,Y
+By Chance,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",trip,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",give,INNER,SLANT,cmu,MED,Y
+By Chance,39,"Fifty on the switch, I might trip out and get to drummin' (Grrt)",trip,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",wifey,INNER,SLANT,spelling,LOW,Y
+By Chance,40,Wanna see me? Book me (21),Book,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",cookie,END,SLANT,cmu,MED,Y
+By Chance,40,Wanna see me? Book me (21),Wanna,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",wanna,INNER,REPEAT,spelling,HIGH,N
+By Chance,40,Wanna see me? Book me (21),see,42,"When I get my green card, I'm goin' straight to Brixton (On God)",green,INNER,ASSONANCE,vowel,MED,Y
+By Chance,40,Wanna see me? Book me (21),Wanna,42,"When I get my green card, I'm goin' straight to Brixton (On God)",card,INNER,ASSONANCE,vowel,MED,Y
+By Chance,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",wifey,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",give,INNER,SLANT,spelling,LOW,Y
+By Chance,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",wanna,42,"When I get my green card, I'm goin' straight to Brixton (On God)",card,INNER,ASSONANCE,vowel,MED,Y
+By Chance,41,"You mad 'cause your wifey choosin', wanna give me cookie (21)",wanna,43,"I don't do no hair, but all my Glocks got extensions (21)",got,INNER,SLANT,cmu,MED,Y
+By Chance,42,"When I get my green card, I'm goin' straight to Brixton (On God)",When,42,"When I get my green card, I'm goin' straight to Brixton (On God)",get,INNER,SLANT,cmu,MED,Y
+By Chance,42,"When I get my green card, I'm goin' straight to Brixton (On God)",card,43,"I don't do no hair, but all my Glocks got extensions (21)",got,INNER,ASSONANCE,vowel,MED,Y
+By Chance,42,"When I get my green card, I'm goin' straight to Brixton (On God)",get,43,"I don't do no hair, but all my Glocks got extensions (21)",extensions,INNER,ASSONANCE,vowel,MED,Y
+By Chance,42,"When I get my green card, I'm goin' straight to Brixton (On God)",get,43,"I don't do no hair, but all my Glocks got extensions (21)",hair,INNER,SLANT,cmu,MED,Y
+By Chance,42,"When I get my green card, I'm goin' straight to Brixton (On God)",When,43,"I don't do no hair, but all my Glocks got extensions (21)",extensions,INNER,ASSONANCE,vowel,MED,Y
+By Chance,42,"When I get my green card, I'm goin' straight to Brixton (On God)",When,43,"I don't do no hair, but all my Glocks got extensions (21)",hair,INNER,SLANT,cmu,MED,Y
+By Chance,43,"I don't do no hair, but all my Glocks got extensions (21)",don't,43,"I don't do no hair, but all my Glocks got extensions (21)",Glocks,INNER,ASSONANCE,vowel,LOW,N
+By Chance,43,"I don't do no hair, but all my Glocks got extensions (21)",don't,43,"I don't do no hair, but all my Glocks got extensions (21)",no,INNER,ASSONANCE,vowel,MED,Y
+By Chance,43,"I don't do no hair, but all my Glocks got extensions (21)",hair,43,"I don't do no hair, but all my Glocks got extensions (21)",extensions,INNER,ASSONANCE,vowel,MED,Y

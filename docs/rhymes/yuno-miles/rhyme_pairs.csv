@@ -1,0 +1,306 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+20 Min Remix,1,"I said, “Girl, why you keep callin’?”",callin,2,"I said, “Girl, why you keep callin’?”, yeah",callin,END,REPEAT,spelling,HIGH,N
+20 Min Remix,1,"I said, “Girl, why you keep callin’?”",Girl,2,"I said, “Girl, why you keep callin’?”, yeah",Girl,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,1,"I said, “Girl, why you keep callin’?”",keep,2,"I said, “Girl, why you keep callin’?”, yeah",keep,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,1,"I said, “Girl, why you keep callin’?”",said,2,"I said, “Girl, why you keep callin’?”, yeah",said,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,1,"I said, “Girl, why you keep callin’?”",why,2,"I said, “Girl, why you keep callin’?”, yeah",why,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,1,"I said, “Girl, why you keep callin’?”",keep,3,"She said, “I need a new whip, yeah",need,INNER,SLANT,cmu,MED,Y
+20 Min Remix,1,"I said, “Girl, why you keep callin’?”",said,3,"She said, “I need a new whip, yeah",said,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,2,"I said, “Girl, why you keep callin’?”, yeah",keep,3,"She said, “I need a new whip, yeah",need,INNER,SLANT,cmu,MED,Y
+20 Min Remix,2,"I said, “Girl, why you keep callin’?”, yeah",said,3,"She said, “I need a new whip, yeah",said,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,2,"I said, “Girl, why you keep callin’?”, yeah",callin,6,So I bought that girl a DeLorean,DeLorean,END,SLANT,cmu,MED,Y
+20 Min Remix,3,"She said, “I need a new whip, yeah",whip,4,Cuz I know that you still ballin’”,still,INNER,SLANT,cmu,MED,Y
+20 Min Remix,3,"She said, “I need a new whip, yeah",new,5,She just wanna go back to the future,future,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,4,Cuz I know that you still ballin’”,ballin,5,She just wanna go back to the future,back,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,4,Cuz I know that you still ballin’”,know,5,She just wanna go back to the future,go,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,5,She just wanna go back to the future,wanna,6,So I bought that girl a DeLorean,bought,INNER,SLANT,cmu,MED,Y
+20 Min Remix,5,She just wanna go back to the future,go,7,Twenty more minutes until I gotta go,go,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,5,She just wanna go back to the future,wanna,7,Twenty more minutes until I gotta go,gotta,INNER,SLANT,cmu,MED,Y
+20 Min Remix,6,So I bought that girl a DeLorean,bought,7,Twenty more minutes until I gotta go,gotta,INNER,SLANT,cmu,MED,Y
+20 Min Remix,6,So I bought that girl a DeLorean,DeLorean,7,Twenty more minutes until I gotta go,more,INNER,SLANT,cmu,MED,Y
+20 Min Remix,6,So I bought that girl a DeLorean,DeLorean,8,"So I told that girl, “I'm gonna slaughter it”",slaughter,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,6,So I bought that girl a DeLorean,bought,8,"So I told that girl, “I'm gonna slaughter it”",gonna,INNER,SLANT,cmu,MED,Y
+20 Min Remix,6,So I bought that girl a DeLorean,girl,8,"So I told that girl, “I'm gonna slaughter it”",girl,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,6,So I bought that girl a DeLorean,DeLorean,10,Left her man in the crowd on the floor,floor,END,SLANT,cmu,MED,Y
+20 Min Remix,7,Twenty more minutes until I gotta go,minutes,7,Twenty more minutes until I gotta go,until,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,7,Twenty more minutes until I gotta go,go,8,"So I told that girl, “I'm gonna slaughter it”",told,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,7,Twenty more minutes until I gotta go,gotta,8,"So I told that girl, “I'm gonna slaughter it”",gonna,INNER,SLANT,cmu,MED,Y
+20 Min Remix,7,Twenty more minutes until I gotta go,more,8,"So I told that girl, “I'm gonna slaughter it”",slaughter,INNER,SLANT,cmu,MED,Y
+20 Min Remix,7,Twenty more minutes until I gotta go,go,9,I met that girl right up at my show,show,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,7,Twenty more minutes until I gotta go,Twenty,9,I met that girl right up at my show,met,INNER,SLANT,cmu,MED,Y
+20 Min Remix,8,"So I told that girl, “I'm gonna slaughter it”",girl,9,I met that girl right up at my show,girl,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,8,"So I told that girl, “I'm gonna slaughter it”",told,9,I met that girl right up at my show,show,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,8,"So I told that girl, “I'm gonna slaughter it”",slaughter,10,Left her man in the crowd on the floor,floor,END,SLANT,cmu,MED,Y
+20 Min Remix,8,"So I told that girl, “I'm gonna slaughter it”",slaughter,11,"Out of town, never saw her before",before,END,SLANT,cmu,MED,Y
+20 Min Remix,8,"So I told that girl, “I'm gonna slaughter it”",slaughter,12,"Told her, “Baby, we don't got that long”",long,END,SLANT,cmu,MED,Y
+20 Min Remix,9,I met that girl right up at my show,met,10,Left her man in the crowd on the floor,Left,INNER,SLANT,cmu,MED,Y
+20 Min Remix,9,I met that girl right up at my show,met,11,"Out of town, never saw her before",never,INNER,SLANT,cmu,MED,Y
+20 Min Remix,9,I met that girl right up at my show,show,13,"Listen, this not my city show",show,END,REPEAT,spelling,HIGH,N
+20 Min Remix,10,Left her man in the crowd on the floor,floor,11,"Out of town, never saw her before",before,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,10,Left her man in the crowd on the floor,crowd,11,"Out of town, never saw her before",town,INNER,SLANT,cmu,MED,Y
+20 Min Remix,10,Left her man in the crowd on the floor,floor,11,"Out of town, never saw her before",saw,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,10,Left her man in the crowd on the floor,Left,11,"Out of town, never saw her before",never,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,10,Left her man in the crowd on the floor,floor,12,"Told her, “Baby, we don't got that long”",long,END,SLANT,cmu,MED,Y
+20 Min Remix,11,"Out of town, never saw her before",saw,11,"Out of town, never saw her before",before,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,11,"Out of town, never saw her before",before,12,"Told her, “Baby, we don't got that long”",long,END,SLANT,cmu,MED,Y
+20 Min Remix,11,"Out of town, never saw her before",saw,12,"Told her, “Baby, we don't got that long”",long,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,11,"Out of town, never saw her before",before,15,Twenty more minutes and twenty more,more,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,12,"Told her, “Baby, we don't got that long”",Told,12,"Told her, “Baby, we don't got that long”",don't,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,12,"Told her, “Baby, we don't got that long”",don't,13,"Listen, this not my city show",show,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,12,"Told her, “Baby, we don't got that long”",got,13,"Listen, this not my city show",not,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,12,"Told her, “Baby, we don't got that long”",Told,13,"Listen, this not my city show",show,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,12,"Told her, “Baby, we don't got that long”",don't,14,But I treat it like my city show,show,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,12,"Told her, “Baby, we don't got that long”",Told,14,But I treat it like my city show,show,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,12,"Told her, “Baby, we don't got that long”",long,15,Twenty more minutes and twenty more,more,END,SLANT,cmu,MED,Y
+20 Min Remix,12,"Told her, “Baby, we don't got that long”",long,16,Twenty more minutes and twenty morе,mor,END,SLANT,cmu,MED,Y
+20 Min Remix,13,"Listen, this not my city show",Listen,13,"Listen, this not my city show",city,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,13,"Listen, this not my city show",show,14,But I treat it like my city show,show,END,REPEAT,spelling,HIGH,N
+20 Min Remix,13,"Listen, this not my city show",city,14,But I treat it like my city show,city,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,13,"Listen, this not my city show",Listen,14,But I treat it like my city show,city,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,13,"Listen, this not my city show",city,15,Twenty more minutes and twenty more,minutes,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,13,"Listen, this not my city show",Listen,15,Twenty more minutes and twenty more,minutes,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,14,But I treat it like my city show,city,15,Twenty more minutes and twenty more,minutes,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,14,But I treat it like my city show,city,16,Twenty more minutes and twenty morе,minutes,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,15,Twenty more minutes and twenty more,more,15,Twenty more minutes and twenty more,more,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,15,Twenty more minutes and twenty more,Twenty,15,Twenty more minutes and twenty more,twenty,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,15,Twenty more minutes and twenty more,twenty more,16,Twenty more minutes and twenty morе,twenty mor,END,MULTI,multi,HIGH,Y
+20 Min Remix,15,Twenty more minutes and twenty more,minutes,16,Twenty more minutes and twenty morе,minutes,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,15,Twenty more minutes and twenty more,more,16,Twenty more minutes and twenty morе,mor,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,15,Twenty more minutes and twenty more,more,16,Twenty more minutes and twenty morе,more,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,15,Twenty more minutes and twenty more,Twenty,16,Twenty more minutes and twenty morе,Twenty,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,15,Twenty more minutes and twenty more,Twenty more,16,Twenty more minutes and twenty morе,twenty mor,INNER,MULTI,multi,HIGH,Y
+20 Min Remix,15,Twenty more minutes and twenty more,more,17,Twenty more minutes and twеnty more,more,END,REPEAT,spelling,HIGH,N
+20 Min Remix,15,Twenty more minutes and twenty more,minutes,17,Twenty more minutes and twеnty more,minutes,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,15,Twenty more minutes and twenty more,more,17,Twenty more minutes and twеnty more,more,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,15,Twenty more minutes and twenty more,Twenty,17,Twenty more minutes and twеnty more,nty,INNER,ASSONANCE,vowel,LOW,N
+20 Min Remix,15,Twenty more minutes and twenty more,Twenty,17,Twenty more minutes and twеnty more,Twenty,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,16,Twenty more minutes and twenty morе,more,16,Twenty more minutes and twenty morе,mor,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,16,Twenty more minutes and twenty morе,Twenty,16,Twenty more minutes and twenty morе,twenty,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,16,Twenty more minutes and twenty morе,Twenty more,16,Twenty more minutes and twenty morе,twenty mor,INNER,MULTI,multi,HIGH,Y
+20 Min Remix,16,Twenty more minutes and twenty morе,twenty mor,17,Twenty more minutes and twеnty more,nty more,END,MULTI,multi,MED,Y
+20 Min Remix,16,Twenty more minutes and twenty morе,minutes,17,Twenty more minutes and twеnty more,minutes,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,16,Twenty more minutes and twenty morе,mor,17,Twenty more minutes and twеnty more,more,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,16,Twenty more minutes and twenty morе,more,17,Twenty more minutes and twеnty more,more,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,16,Twenty more minutes and twenty morе,Twenty,17,Twenty more minutes and twеnty more,nty,INNER,ASSONANCE,vowel,LOW,N
+20 Min Remix,16,Twenty more minutes and twenty morе,Twenty,17,Twenty more minutes and twеnty more,Twenty,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,16,Twenty more minutes and twenty morе,twenty mor,17,Twenty more minutes and twеnty more,Twenty more,INNER,MULTI,multi,HIGH,Y
+20 Min Remix,16,Twenty more minutes and twenty morе,Twenty,18,"Yeah, I am not twelve",twelve,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,17,Twenty more minutes and twеnty more,more,17,Twenty more minutes and twеnty more,more,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,17,Twenty more minutes and twеnty more,Twenty,17,Twenty more minutes and twеnty more,nty,INNER,ASSONANCE,vowel,LOW,N
+20 Min Remix,17,Twenty more minutes and twеnty more,Twenty,18,"Yeah, I am not twelve",twelve,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,18,"Yeah, I am not twelve",not,19,These girls don’t want me cuz I got the dough,got,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,18,"Yeah, I am not twelve",not,19,These girls don’t want me cuz I got the dough,want,INNER,SLANT,cmu,MED,Y
+20 Min Remix,19,These girls don’t want me cuz I got the dough,don’t,19,These girls don’t want me cuz I got the dough,dough,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,19,These girls don’t want me cuz I got the dough,want,19,These girls don’t want me cuz I got the dough,got,INNER,SLANT,cmu,MED,Y
+20 Min Remix,19,These girls don’t want me cuz I got the dough,dough,20,Pass that girl right on my free carry go,go,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,19,These girls don’t want me cuz I got the dough,don’t,20,Pass that girl right on my free carry go,go,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,19,These girls don’t want me cuz I got the dough,girls,20,Pass that girl right on my free carry go,girl,INNER,SLANT,cmu,MED,Y
+20 Min Remix,19,These girls don’t want me cuz I got the dough,These,20,Pass that girl right on my free carry go,free,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,19,These girls don’t want me cuz I got the dough,dough,21,"He pass me her friend, so they switchin' roles",roles,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,19,These girls don’t want me cuz I got the dough,don’t,21,"He pass me her friend, so they switchin' roles",roles,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,19,These girls don’t want me cuz I got the dough,dough,23,"Yeah, I hit it slow",slow,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,20,Pass that girl right on my free carry go,Pass,20,Pass that girl right on my free carry go,carry,INNER,SLANT,cmu,MED,Y
+20 Min Remix,20,Pass that girl right on my free carry go,go,21,"He pass me her friend, so they switchin' roles",roles,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,20,Pass that girl right on my free carry go,carry,21,"He pass me her friend, so they switchin' roles",pass,INNER,SLANT,cmu,MED,Y
+20 Min Remix,20,Pass that girl right on my free carry go,Pass,21,"He pass me her friend, so they switchin' roles",pass,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,20,Pass that girl right on my free carry go,carry,22,What? I hit it fast,fast,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,20,Pass that girl right on my free carry go,Pass,22,What? I hit it fast,fast,INNER,SLANT,cmu,MED,Y
+20 Min Remix,20,Pass that girl right on my free carry go,go,23,"Yeah, I hit it slow",slow,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,20,Pass that girl right on my free carry go,go,24,"Right by the morning, girl, I gotta go",go,END,REPEAT,spelling,HIGH,N
+20 Min Remix,21,"He pass me her friend, so they switchin' roles",pass,22,What? I hit it fast,fast,INNER,SLANT,cmu,MED,Y
+20 Min Remix,21,"He pass me her friend, so they switchin' roles",switchin,22,What? I hit it fast,hit,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,21,"He pass me her friend, so they switchin' roles",roles,23,"Yeah, I hit it slow",slow,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,21,"He pass me her friend, so they switchin' roles",switchin,23,"Yeah, I hit it slow",hit,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,21,"He pass me her friend, so they switchin' roles",roles,24,"Right by the morning, girl, I gotta go",go,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,21,"He pass me her friend, so they switchin' roles",roles,25,"Gotta get ready, tonight is my show",show,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,22,What? I hit it fast,hit,23,"Yeah, I hit it slow",hit,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,23,"Yeah, I hit it slow",slow,24,"Right by the morning, girl, I gotta go",go,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,23,"Yeah, I hit it slow",slow,25,"Gotta get ready, tonight is my show",show,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,23,"Yeah, I hit it slow",slow,26,"If you okay, you might open my show",show,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,23,"Yeah, I hit it slow",slow,27,Got the big pointers right under my nose,nose,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",Right,24,"Right by the morning, girl, I gotta go",by,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",go,25,"Gotta get ready, tonight is my show",show,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",by,25,"Gotta get ready, tonight is my show",tonight,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",gotta,25,"Gotta get ready, tonight is my show",Gotta,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,24,"Right by the morning, girl, I gotta go",Right,25,"Gotta get ready, tonight is my show",tonight,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",go,26,"If you okay, you might open my show",show,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",by,26,"If you okay, you might open my show",might,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",go,26,"If you okay, you might open my show",open,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",Right,26,"If you okay, you might open my show",might,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",go,27,Got the big pointers right under my nose,nose,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,24,"Right by the morning, girl, I gotta go",go,28,These n^^^as mad cuz I got all the dough,dough,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,25,"Gotta get ready, tonight is my show",get,25,"Gotta get ready, tonight is my show",ready,INNER,SLANT,cmu,MED,Y
+20 Min Remix,25,"Gotta get ready, tonight is my show",show,26,"If you okay, you might open my show",show,END,REPEAT,spelling,HIGH,N
+20 Min Remix,25,"Gotta get ready, tonight is my show",show,26,"If you okay, you might open my show",open,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,25,"Gotta get ready, tonight is my show",tonight,26,"If you okay, you might open my show",might,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,25,"Gotta get ready, tonight is my show",show,27,Got the big pointers right under my nose,nose,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,25,"Gotta get ready, tonight is my show",Gotta,27,Got the big pointers right under my nose,Got,INNER,SLANT,cmu,MED,Y
+20 Min Remix,25,"Gotta get ready, tonight is my show",tonight,27,Got the big pointers right under my nose,right,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,25,"Gotta get ready, tonight is my show",show,28,These n^^^as mad cuz I got all the dough,dough,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,25,"Gotta get ready, tonight is my show",show,29,Changing my style cuz I got every flow,flow,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,26,"If you okay, you might open my show",open,26,"If you okay, you might open my show",show,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,26,"If you okay, you might open my show",show,27,Got the big pointers right under my nose,nose,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,26,"If you okay, you might open my show",might,27,Got the big pointers right under my nose,right,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,26,"If you okay, you might open my show",open,27,Got the big pointers right under my nose,nose,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,26,"If you okay, you might open my show",show,28,These n^^^as mad cuz I got all the dough,dough,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,26,"If you okay, you might open my show",open,28,These n^^^as mad cuz I got all the dough,dough,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,26,"If you okay, you might open my show",show,29,Changing my style cuz I got every flow,flow,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,26,"If you okay, you might open my show",show,30,"Got every girl, ain't no toppin’ my hoes",hoes,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,27,Got the big pointers right under my nose,nose,28,These n^^^as mad cuz I got all the dough,dough,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,27,Got the big pointers right under my nose,Got,28,These n^^^as mad cuz I got all the dough,got,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,27,Got the big pointers right under my nose,nose,29,Changing my style cuz I got every flow,flow,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,27,Got the big pointers right under my nose,Got,29,Changing my style cuz I got every flow,got,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,27,Got the big pointers right under my nose,right,29,Changing my style cuz I got every flow,style,INNER,SLANT,cmu,MED,Y
+20 Min Remix,27,Got the big pointers right under my nose,nose,30,"Got every girl, ain't no toppin’ my hoes",hoes,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,27,Got the big pointers right under my nose,nose,31,"I understand that is your girlfriend, bro",bro,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,dough,29,Changing my style cuz I got every flow,flow,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,cuz,29,Changing my style cuz I got every flow,cuz,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,got,29,Changing my style cuz I got every flow,got,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,n,29,Changing my style cuz I got every flow,every,INNER,SLANT,cmu,MED,Y
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,dough,30,"Got every girl, ain't no toppin’ my hoes",hoes,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,dough,30,"Got every girl, ain't no toppin’ my hoes",no,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,got,30,"Got every girl, ain't no toppin’ my hoes",Got,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,got,30,"Got every girl, ain't no toppin’ my hoes",toppin,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,n,30,"Got every girl, ain't no toppin’ my hoes",every,INNER,SLANT,cmu,MED,Y
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,dough,31,"I understand that is your girlfriend, bro",bro,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,28,These n^^^as mad cuz I got all the dough,dough,32,But you know I gotta keep her close,close,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,29,Changing my style cuz I got every flow,flow,30,"Got every girl, ain't no toppin’ my hoes",hoes,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,29,Changing my style cuz I got every flow,Changing,30,"Got every girl, ain't no toppin’ my hoes",ain't,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,29,Changing my style cuz I got every flow,every,30,"Got every girl, ain't no toppin’ my hoes",every,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,29,Changing my style cuz I got every flow,flow,30,"Got every girl, ain't no toppin’ my hoes",no,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,29,Changing my style cuz I got every flow,got,30,"Got every girl, ain't no toppin’ my hoes",Got,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,29,Changing my style cuz I got every flow,got,30,"Got every girl, ain't no toppin’ my hoes",toppin,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,29,Changing my style cuz I got every flow,flow,31,"I understand that is your girlfriend, bro",bro,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,29,Changing my style cuz I got every flow,every,31,"I understand that is your girlfriend, bro",girlfriend,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,29,Changing my style cuz I got every flow,flow,32,But you know I gotta keep her close,close,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,29,Changing my style cuz I got every flow,flow,33,Open your legs and I keep ‘em closed,closed,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",Got,30,"Got every girl, ain't no toppin’ my hoes",toppin,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",no,30,"Got every girl, ain't no toppin’ my hoes",hoes,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",hoes,31,"I understand that is your girlfriend, bro",bro,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",every,31,"I understand that is your girlfriend, bro",girlfriend,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",no,31,"I understand that is your girlfriend, bro",bro,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",hoes,32,But you know I gotta keep her close,close,END,SLANT,cmu,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",Got,32,But you know I gotta keep her close,gotta,INNER,SLANT,cmu,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",hoes,32,But you know I gotta keep her close,know,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",no,32,But you know I gotta keep her close,close,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",no,32,But you know I gotta keep her close,know,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",toppin,32,But you know I gotta keep her close,gotta,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",hoes,33,Open your legs and I keep ‘em closed,closed,END,SLANT,cmu,MED,Y
+20 Min Remix,30,"Got every girl, ain't no toppin’ my hoes",hoes,34,"Livin’ life on the edge, on a tightrope",tightrope,END,SLANT,cmu,MED,Y
+20 Min Remix,31,"I understand that is your girlfriend, bro",bro,32,But you know I gotta keep her close,close,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,31,"I understand that is your girlfriend, bro",bro,32,But you know I gotta keep her close,know,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,31,"I understand that is your girlfriend, bro",bro,33,Open your legs and I keep ‘em closed,closed,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,31,"I understand that is your girlfriend, bro",bro,33,Open your legs and I keep ‘em closed,Open,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,31,"I understand that is your girlfriend, bro",girlfriend,33,Open your legs and I keep ‘em closed,em,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,31,"I understand that is your girlfriend, bro",girlfriend,33,Open your legs and I keep ‘em closed,legs,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,31,"I understand that is your girlfriend, bro",bro,34,"Livin’ life on the edge, on a tightrope",tightrope,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,31,"I understand that is your girlfriend, bro",bro,35,"I am so clean, I might start movin’ soap",soap,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,32,But you know I gotta keep her close,know,32,But you know I gotta keep her close,close,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,32,But you know I gotta keep her close,close,33,Open your legs and I keep ‘em closed,closed,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,32,But you know I gotta keep her close,close,33,Open your legs and I keep ‘em closed,Open,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,32,But you know I gotta keep her close,keep,33,Open your legs and I keep ‘em closed,keep,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,32,But you know I gotta keep her close,know,33,Open your legs and I keep ‘em closed,closed,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,32,But you know I gotta keep her close,know,33,Open your legs and I keep ‘em closed,Open,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,32,But you know I gotta keep her close,close,34,"Livin’ life on the edge, on a tightrope",tightrope,END,SLANT,cmu,MED,Y
+20 Min Remix,32,But you know I gotta keep her close,know,34,"Livin’ life on the edge, on a tightrope",tightrope,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,32,But you know I gotta keep her close,close,35,"I am so clean, I might start movin’ soap",soap,END,SLANT,cmu,MED,Y
+20 Min Remix,32,But you know I gotta keep her close,close,36,"Drive a new ‘Rari, I don't need a note",note,END,SLANT,cmu,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,legs,33,Open your legs and I keep ‘em closed,em,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,Open,33,Open your legs and I keep ‘em closed,closed,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,closed,34,"Livin’ life on the edge, on a tightrope",tightrope,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,em,34,"Livin’ life on the edge, on a tightrope",edge,INNER,SLANT,cmu,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,legs,34,"Livin’ life on the edge, on a tightrope",edge,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,Open,34,"Livin’ life on the edge, on a tightrope",tightrope,INNER,SLANT,cmu,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,closed,35,"I am so clean, I might start movin’ soap",soap,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,keep,35,"I am so clean, I might start movin’ soap",clean,INNER,SLANT,cmu,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,Open,35,"I am so clean, I might start movin’ soap",soap,INNER,SLANT,cmu,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,closed,36,"Drive a new ‘Rari, I don't need a note",note,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,33,Open your legs and I keep ‘em closed,closed,37,Drive a Ferrari like it's a Volvo,Volvo,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,34,"Livin’ life on the edge, on a tightrope",tightrope,35,"I am so clean, I might start movin’ soap",soap,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,34,"Livin’ life on the edge, on a tightrope",life,35,"I am so clean, I might start movin’ soap",might,INNER,SLANT,cmu,MED,Y
+20 Min Remix,34,"Livin’ life on the edge, on a tightrope",tightrope,36,"Drive a new ‘Rari, I don't need a note",note,END,SLANT,cmu,MED,Y
+20 Min Remix,34,"Livin’ life on the edge, on a tightrope",life,36,"Drive a new ‘Rari, I don't need a note",Drive,INNER,SLANT,cmu,MED,Y
+20 Min Remix,34,"Livin’ life on the edge, on a tightrope",tightrope,36,"Drive a new ‘Rari, I don't need a note",don't,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,34,"Livin’ life on the edge, on a tightrope",tightrope,37,Drive a Ferrari like it's a Volvo,Volvo,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,34,"Livin’ life on the edge, on a tightrope",tightrope,38,I hit your girl and you already know,know,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",soap,36,"Drive a new ‘Rari, I don't need a note",note,END,SLANT,cmu,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",clean,36,"Drive a new ‘Rari, I don't need a note",need,INNER,SLANT,cmu,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",might,36,"Drive a new ‘Rari, I don't need a note",Drive,INNER,SLANT,cmu,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",movin,36,"Drive a new ‘Rari, I don't need a note",new,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",soap,36,"Drive a new ‘Rari, I don't need a note",don't,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",soap,37,Drive a Ferrari like it's a Volvo,Volvo,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",might,37,Drive a Ferrari like it's a Volvo,Drive,INNER,SLANT,cmu,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",might,37,Drive a Ferrari like it's a Volvo,like,INNER,SLANT,cmu,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",start,37,Drive a Ferrari like it's a Volvo,Ferrari,INNER,SLANT,cmu,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",soap,38,I hit your girl and you already know,know,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,35,"I am so clean, I might start movin’ soap",soap,39,"Don’t really like her, we friends for the most",most,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,36,"Drive a new ‘Rari, I don't need a note",don't,36,"Drive a new ‘Rari, I don't need a note",note,INNER,SLANT,cmu,MED,Y
+20 Min Remix,36,"Drive a new ‘Rari, I don't need a note",note,37,Drive a Ferrari like it's a Volvo,Volvo,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,36,"Drive a new ‘Rari, I don't need a note",don't,37,Drive a Ferrari like it's a Volvo,Volvo,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,36,"Drive a new ‘Rari, I don't need a note",Drive,37,Drive a Ferrari like it's a Volvo,Drive,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,36,"Drive a new ‘Rari, I don't need a note",Drive,37,Drive a Ferrari like it's a Volvo,like,INNER,SLANT,cmu,MED,Y
+20 Min Remix,36,"Drive a new ‘Rari, I don't need a note",note,38,I hit your girl and you already know,know,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,36,"Drive a new ‘Rari, I don't need a note",don't,38,I hit your girl and you already know,know,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,36,"Drive a new ‘Rari, I don't need a note",note,39,"Don’t really like her, we friends for the most",most,END,SLANT,cmu,MED,Y
+20 Min Remix,36,"Drive a new ‘Rari, I don't need a note",note,40,"Cuban link tri-color, all on my choase",choase,END,SLANT,spelling,LOW,Y
+20 Min Remix,37,Drive a Ferrari like it's a Volvo,Drive,37,Drive a Ferrari like it's a Volvo,like,INNER,SLANT,cmu,MED,Y
+20 Min Remix,37,Drive a Ferrari like it's a Volvo,Volvo,38,I hit your girl and you already know,know,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,37,Drive a Ferrari like it's a Volvo,Volvo,39,"Don’t really like her, we friends for the most",most,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,37,Drive a Ferrari like it's a Volvo,Drive,39,"Don’t really like her, we friends for the most",like,INNER,SLANT,cmu,MED,Y
+20 Min Remix,37,Drive a Ferrari like it's a Volvo,like,39,"Don’t really like her, we friends for the most",like,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,37,Drive a Ferrari like it's a Volvo,Volvo,39,"Don’t really like her, we friends for the most",Don’t,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,37,Drive a Ferrari like it's a Volvo,Volvo,41,"Don't leave the crumb, I got the bread on the toast",toast,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,38,I hit your girl and you already know,know,39,"Don’t really like her, we friends for the most",most,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,38,I hit your girl and you already know,already,39,"Don’t really like her, we friends for the most",friends,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,38,I hit your girl and you already know,hit,39,"Don’t really like her, we friends for the most",really,INNER,SLANT,cmu,MED,Y
+20 Min Remix,38,I hit your girl and you already know,know,39,"Don’t really like her, we friends for the most",Don’t,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,38,I hit your girl and you already know,hit,40,"Cuban link tri-color, all on my choase",link,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,38,I hit your girl and you already know,know,41,"Don't leave the crumb, I got the bread on the toast",toast,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,38,I hit your girl and you already know,know,42,"If you not touching my gun, got no ho",ho,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",Don’t,39,"Don’t really like her, we friends for the most",most,INNER,SLANT,cmu,MED,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",most,40,"Cuban link tri-color, all on my choase",choase,END,SLANT,spelling,LOW,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",like,40,"Cuban link tri-color, all on my choase",tri,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",really,40,"Cuban link tri-color, all on my choase",link,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",most,41,"Don't leave the crumb, I got the bread on the toast",toast,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",Don’t,41,"Don't leave the crumb, I got the bread on the toast",Don't,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,39,"Don’t really like her, we friends for the most",Don’t,41,"Don't leave the crumb, I got the bread on the toast",toast,INNER,SLANT,cmu,MED,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",friends,41,"Don't leave the crumb, I got the bread on the toast",bread,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",most,41,"Don't leave the crumb, I got the bread on the toast",Don't,INNER,SLANT,cmu,MED,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",most,42,"If you not touching my gun, got no ho",ho,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,39,"Don’t really like her, we friends for the most",most,43,I put a coat on top of my coat,coat,END,SLANT,cmu,MED,Y
+20 Min Remix,40,"Cuban link tri-color, all on my choase",choase,41,"Don't leave the crumb, I got the bread on the toast",toast,END,SLANT,spelling,LOW,Y
+20 Min Remix,40,"Cuban link tri-color, all on my choase",color,41,"Don't leave the crumb, I got the bread on the toast",crumb,INNER,SLANT,cmu,MED,Y
+20 Min Remix,40,"Cuban link tri-color, all on my choase",color,42,"If you not touching my gun, got no ho",gun,INNER,SLANT,cmu,MED,Y
+20 Min Remix,40,"Cuban link tri-color, all on my choase",color,42,"If you not touching my gun, got no ho",touching,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,40,"Cuban link tri-color, all on my choase",choase,43,I put a coat on top of my coat,coat,END,SLANT,spelling,LOW,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",Don't,41,"Don't leave the crumb, I got the bread on the toast",toast,INNER,SLANT,cmu,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",toast,42,"If you not touching my gun, got no ho",ho,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",crumb,42,"If you not touching my gun, got no ho",gun,INNER,SLANT,cmu,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",crumb,42,"If you not touching my gun, got no ho",touching,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",Don't,42,"If you not touching my gun, got no ho",ho,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",Don't,42,"If you not touching my gun, got no ho",no,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",got,42,"If you not touching my gun, got no ho",got,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",got,42,"If you not touching my gun, got no ho",not,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",toast,42,"If you not touching my gun, got no ho",no,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",toast,43,I put a coat on top of my coat,coat,END,SLANT,cmu,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",Don't,43,I put a coat on top of my coat,coat,INNER,SLANT,cmu,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",got,43,I put a coat on top of my coat,top,INNER,SLANT,cmu,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",toast,43,I put a coat on top of my coat,coat,INNER,SLANT,cmu,MED,Y
+20 Min Remix,41,"Don't leave the crumb, I got the bread on the toast",toast,44,Only twenty minutes before the show,show,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",no,42,"If you not touching my gun, got no ho",ho,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",not,42,"If you not touching my gun, got no ho",got,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",touching,42,"If you not touching my gun, got no ho",gun,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",ho,43,I put a coat on top of my coat,coat,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",got,43,I put a coat on top of my coat,top,INNER,SLANT,cmu,MED,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",ho,43,I put a coat on top of my coat,coat,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",no,43,I put a coat on top of my coat,coat,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",not,43,I put a coat on top of my coat,top,INNER,SLANT,cmu,MED,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",ho,44,Only twenty minutes before the show,show,END,PERFECT,cmu,HIGH,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",ho,44,Only twenty minutes before the show,Only,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",no,44,Only twenty minutes before the show,Only,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,42,"If you not touching my gun, got no ho",no,44,Only twenty minutes before the show,show,INNER,PERFECT,cmu,HIGH,Y
+20 Min Remix,43,I put a coat on top of my coat,coat,43,I put a coat on top of my coat,coat,INNER,REPEAT,spelling,HIGH,N
+20 Min Remix,43,I put a coat on top of my coat,coat,44,Only twenty minutes before the show,show,END,ASSONANCE,vowel,MED,Y
+20 Min Remix,43,I put a coat on top of my coat,coat,44,Only twenty minutes before the show,Only,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,43,I put a coat on top of my coat,coat,44,Only twenty minutes before the show,show,INNER,ASSONANCE,vowel,MED,Y
+20 Min Remix,44,Only twenty minutes before the show,Only,44,Only twenty minutes before the show,show,INNER,ASSONANCE,vowel,MED,Y

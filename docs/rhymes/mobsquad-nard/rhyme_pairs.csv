@@ -1,0 +1,248 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Did Dat,1,Turn me up.... Turn me up.... Turn me up,Turn,1,Turn me up.... Turn me up.... Turn me up,Turn,INNER,REPEAT,spelling,HIGH,N
+Did Dat,1,Turn me up.... Turn me up.... Turn me up,Turn,2,Turn me up... Trurn me up,Trurn,END,SLANT,spelling,LOW,Y
+Did Dat,1,Turn me up.... Turn me up.... Turn me up,Turn,2,Turn me up... Trurn me up,Trurn,INNER,SLANT,spelling,LOW,Y
+Did Dat,1,Turn me up.... Turn me up.... Turn me up,Turn,2,Turn me up... Trurn me up,Turn,INNER,REPEAT,spelling,HIGH,N
+Did Dat,2,Turn me up... Trurn me up,Turn,2,Turn me up... Trurn me up,Trurn,INNER,SLANT,spelling,LOW,Y
+Did Dat,2,Turn me up... Trurn me up,Trurn,4,Get it out da mud n keep it clean,mud,INNER,SLANT,cmu,MED,Y
+Did Dat,3,Nigga i did dat,dat,5,Yea i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,3,Nigga i did dat,dat,7,Hoe i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,4,Get it out da mud n keep it clean,Get,4,Get it out da mud n keep it clean,n,INNER,SLANT,cmu,MED,Y
+Did Dat,4,Get it out da mud n keep it clean,keep,4,Get it out da mud n keep it clean,clean,INNER,SLANT,cmu,MED,Y
+Did Dat,4,Get it out da mud n keep it clean,clean,6,Money good fuck a nigga mean?,mean,END,PERFECT,cmu,HIGH,Y
+Did Dat,4,Get it out da mud n keep it clean,keep,6,Money good fuck a nigga mean?,mean,INNER,SLANT,cmu,MED,Y
+Did Dat,4,Get it out da mud n keep it clean,mud,6,Money good fuck a nigga mean?,fuck,INNER,SLANT,cmu,MED,Y
+Did Dat,4,Get it out da mud n keep it clean,mud,6,Money good fuck a nigga mean?,Money,INNER,SLANT,cmu,MED,Y
+Did Dat,4,Get it out da mud n keep it clean,clean,8,I go on dem missions for da green,green,END,PERFECT,cmu,HIGH,Y
+Did Dat,5,Yea i did dat,dat,7,Hoe i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,6,Money good fuck a nigga mean?,Money,6,Money good fuck a nigga mean?,fuck,INNER,SLANT,cmu,MED,Y
+Did Dat,6,Money good fuck a nigga mean?,mean,8,I go on dem missions for da green,green,END,PERFECT,cmu,HIGH,Y
+Did Dat,6,Money good fuck a nigga mean?,mean,9,Tell me watchu mean,mean,END,REPEAT,spelling,HIGH,N
+Did Dat,7,Hoe i did dat,Hoe,8,I go on dem missions for da green,go,INNER,PERFECT,cmu,HIGH,Y
+Did Dat,7,Hoe i did dat,dat,9,Tell me watchu mean,watchu,INNER,SLANT,spelling,LOW,Y
+Did Dat,7,Hoe i did dat,dat,10,When u hollin bout u did dat...,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,7,Hoe i did dat,dat,11,Like me how i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,8,I go on dem missions for da green,green,9,Tell me watchu mean,mean,END,PERFECT,cmu,HIGH,Y
+Did Dat,8,I go on dem missions for da green,dem,9,Tell me watchu mean,Tell,INNER,SLANT,spelling,LOW,Y
+Did Dat,8,I go on dem missions for da green,da,10,When u hollin bout u did dat...,hollin,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,8,I go on dem missions for da green,dem,10,When u hollin bout u did dat...,When,INNER,SLANT,spelling,LOW,Y
+Did Dat,9,Tell me watchu mean,Tell,10,When u hollin bout u did dat...,When,INNER,SLANT,cmu,MED,Y
+Did Dat,9,Tell me watchu mean,watchu,10,When u hollin bout u did dat...,dat,INNER,SLANT,spelling,LOW,Y
+Did Dat,9,Tell me watchu mean,watchu,11,Like me how i did dat,dat,INNER,SLANT,spelling,LOW,Y
+Did Dat,10,When u hollin bout u did dat...,u,10,When u hollin bout u did dat...,u,INNER,REPEAT,spelling,HIGH,N
+Did Dat,10,When u hollin bout u did dat...,dat,11,Like me how i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,10,When u hollin bout u did dat...,bout,11,Like me how i did dat,how,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,10,When u hollin bout u did dat...,dat,12,Ask why i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,10,When u hollin bout u did dat...,dat,12,Ask why i did dat,Ask,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,10,When u hollin bout u did dat...,dat,13,Dont like how i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,10,When u hollin bout u did dat...,dat,14,Word round town dey in dey feelings hi we did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,11,Like me how i did dat,dat,12,Ask why i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,11,Like me how i did dat,dat,12,Ask why i did dat,Ask,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,11,Like me how i did dat,Like,12,Ask why i did dat,why,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,11,Like me how i did dat,dat,13,Dont like how i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,11,Like me how i did dat,how,13,Dont like how i did dat,how,INNER,REPEAT,spelling,HIGH,N
+Did Dat,11,Like me how i did dat,Like,13,Dont like how i did dat,like,INNER,REPEAT,spelling,HIGH,N
+Did Dat,11,Like me how i did dat,dat,14,Word round town dey in dey feelings hi we did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,12,Ask why i did dat,Ask,12,Ask why i did dat,dat,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,12,Ask why i did dat,dat,13,Dont like how i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,12,Ask why i did dat,Ask,13,Dont like how i did dat,dat,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,12,Ask why i did dat,why,13,Dont like how i did dat,like,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,12,Ask why i did dat,dat,14,Word round town dey in dey feelings hi we did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,12,Ask why i did dat,Ask,14,Word round town dey in dey feelings hi we did dat,dat,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,12,Ask why i did dat,why,14,Word round town dey in dey feelings hi we did dat,hi,INNER,PERFECT,cmu,HIGH,Y
+Did Dat,13,Dont like how i did dat,dat,14,Word round town dey in dey feelings hi we did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,13,Dont like how i did dat,how,14,Word round town dey in dey feelings hi we did dat,round,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,13,Dont like how i did dat,how,14,Word round town dey in dey feelings hi we did dat,town,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,13,Dont like how i did dat,like,14,Word round town dey in dey feelings hi we did dat,hi,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,13,Dont like how i did dat,like,15,Come threw in da nick of time,time,INNER,SLANT,cmu,MED,Y
+Did Dat,14,Word round town dey in dey feelings hi we did dat,dey,14,Word round town dey in dey feelings hi we did dat,dey,INNER,REPEAT,spelling,HIGH,N
+Did Dat,14,Word round town dey in dey feelings hi we did dat,round,14,Word round town dey in dey feelings hi we did dat,town,INNER,SLANT,cmu,MED,Y
+Did Dat,14,Word round town dey in dey feelings hi we did dat,hi,15,Come threw in da nick of time,time,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,14,Word round town dey in dey feelings hi we did dat,hi,16,Look who in that bitch im flying,flying,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,15,Come threw in da nick of time,time,16,Look who in that bitch im flying,flying,END,SLANT,cmu,MED,Y
+Did Dat,15,Come threw in da nick of time,nick,16,Look who in that bitch im flying,bitch,INNER,SLANT,cmu,MED,Y
+Did Dat,15,Come threw in da nick of time,threw,16,Look who in that bitch im flying,who,INNER,PERFECT,cmu,HIGH,Y
+Did Dat,15,Come threw in da nick of time,time,17,Dey love nickels and dimes,dimes,END,SLANT,cmu,MED,Y
+Did Dat,15,Come threw in da nick of time,Come,17,Dey love nickels and dimes,love,INNER,SLANT,cmu,MED,Y
+Did Dat,15,Come threw in da nick of time,nick,17,Dey love nickels and dimes,nickels,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,15,Come threw in da nick of time,time,18,Dey young niggas supplying,supplying,END,SLANT,cmu,MED,Y
+Did Dat,16,Look who in that bitch im flying,flying,17,Dey love nickels and dimes,dimes,END,ASSONANCE,vowel,MED,Y
+Did Dat,16,Look who in that bitch im flying,bitch,17,Dey love nickels and dimes,nickels,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,16,Look who in that bitch im flying,flying,18,Dey young niggas supplying,supplying,END,MULTI,multi,HIGH,Y
+Did Dat,17,Dey love nickels and dimes,dimes,18,Dey young niggas supplying,supplying,END,ASSONANCE,vowel,MED,Y
+Did Dat,17,Dey love nickels and dimes,Dey,18,Dey young niggas supplying,Dey,INNER,REPEAT,spelling,HIGH,N
+Did Dat,17,Dey love nickels and dimes,love,18,Dey young niggas supplying,young,INNER,SLANT,cmu,MED,Y
+Did Dat,17,Dey love nickels and dimes,nickels,18,Dey young niggas supplying,niggas,INNER,SLANT,spelling,LOW,Y
+Did Dat,17,Dey love nickels and dimes,Dey,19,Dey wonna see a nigga stuck in da slums kill me fareel,Dey,INNER,REPEAT,spelling,HIGH,N
+Did Dat,17,Dey love nickels and dimes,love,19,Dey wonna see a nigga stuck in da slums kill me fareel,slums,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,17,Dey love nickels and dimes,love,19,Dey wonna see a nigga stuck in da slums kill me fareel,stuck,INNER,SLANT,cmu,MED,Y
+Did Dat,17,Dey love nickels and dimes,nickels,19,Dey wonna see a nigga stuck in da slums kill me fareel,kill,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,18,Dey young niggas supplying,Dey,19,Dey wonna see a nigga stuck in da slums kill me fareel,Dey,INNER,REPEAT,spelling,HIGH,N
+Did Dat,18,Dey young niggas supplying,niggas,19,Dey wonna see a nigga stuck in da slums kill me fareel,nigga,INNER,SLANT,spelling,LOW,Y
+Did Dat,18,Dey young niggas supplying,young,19,Dey wonna see a nigga stuck in da slums kill me fareel,slums,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,18,Dey young niggas supplying,young,19,Dey wonna see a nigga stuck in da slums kill me fareel,stuck,INNER,SLANT,cmu,MED,Y
+Did Dat,18,Dey young niggas supplying,supplying,20,No nooo im ridin vert in dat bullet proof on a pill,ridin,INNER,SLANT,cmu,MED,Y
+Did Dat,19,Dey wonna see a nigga stuck in da slums kill me fareel,stuck,19,Dey wonna see a nigga stuck in da slums kill me fareel,slums,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,19,Dey wonna see a nigga stuck in da slums kill me fareel,kill,20,No nooo im ridin vert in dat bullet proof on a pill,pill,INNER,PERFECT,cmu,HIGH,Y
+Did Dat,19,Dey wonna see a nigga stuck in da slums kill me fareel,da,21,I see my niggas in heaven datz when i look in da mirror,da,INNER,REPEAT,spelling,HIGH,N
+Did Dat,19,Dey wonna see a nigga stuck in da slums kill me fareel,kill,21,I see my niggas in heaven datz when i look in da mirror,mirror,INNER,SLANT,cmu,MED,Y
+Did Dat,19,Dey wonna see a nigga stuck in da slums kill me fareel,nigga,21,I see my niggas in heaven datz when i look in da mirror,niggas,INNER,SLANT,spelling,LOW,Y
+Did Dat,19,Dey wonna see a nigga stuck in da slums kill me fareel,see,21,I see my niggas in heaven datz when i look in da mirror,see,INNER,REPEAT,spelling,HIGH,N
+Did Dat,20,No nooo im ridin vert in dat bullet proof on a pill,pill,21,I see my niggas in heaven datz when i look in da mirror,mirror,END,SLANT,cmu,MED,Y
+Did Dat,20,No nooo im ridin vert in dat bullet proof on a pill,bullet,21,I see my niggas in heaven datz when i look in da mirror,look,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,20,No nooo im ridin vert in dat bullet proof on a pill,dat,21,I see my niggas in heaven datz when i look in da mirror,datz,INNER,SLANT,cmu,MED,Y
+Did Dat,20,No nooo im ridin vert in dat bullet proof on a pill,dat,22,I see my niggas in Jessie was hann nigga got dem deals,hann,INNER,SLANT,cmu,MED,Y
+Did Dat,20,No nooo im ridin vert in dat bullet proof on a pill,pill,23,"I pull up, doors at da crib",crib,END,SLANT,cmu,MED,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,heaven,21,I see my niggas in heaven datz when i look in da mirror,when,INNER,SLANT,cmu,MED,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,da,22,I see my niggas in Jessie was hann nigga got dem deals,got,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,datz,22,I see my niggas in Jessie was hann nigga got dem deals,hann,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,heaven,22,I see my niggas in Jessie was hann nigga got dem deals,Jessie,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,niggas,22,I see my niggas in Jessie was hann nigga got dem deals,nigga,INNER,SLANT,spelling,LOW,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,niggas,22,I see my niggas in Jessie was hann nigga got dem deals,niggas,INNER,REPEAT,spelling,HIGH,N
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,see,22,I see my niggas in Jessie was hann nigga got dem deals,deals,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,see,22,I see my niggas in Jessie was hann nigga got dem deals,see,INNER,REPEAT,spelling,HIGH,N
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,when,22,I see my niggas in Jessie was hann nigga got dem deals,dem,INNER,SLANT,spelling,LOW,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,when,22,I see my niggas in Jessie was hann nigga got dem deals,Jessie,INNER,SLANT,cmu,MED,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,mirror,23,"I pull up, doors at da crib",crib,END,SLANT,cmu,MED,Y
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,da,23,"I pull up, doors at da crib",da,INNER,REPEAT,spelling,HIGH,N
+Did Dat,21,I see my niggas in heaven datz when i look in da mirror,look,23,"I pull up, doors at da crib",pull,INNER,SLANT,cmu,MED,Y
+Did Dat,22,I see my niggas in Jessie was hann nigga got dem deals,Jessie,22,I see my niggas in Jessie was hann nigga got dem deals,dem,INNER,SLANT,spelling,LOW,Y
+Did Dat,22,I see my niggas in Jessie was hann nigga got dem deals,niggas,22,I see my niggas in Jessie was hann nigga got dem deals,nigga,INNER,SLANT,spelling,LOW,Y
+Did Dat,22,I see my niggas in Jessie was hann nigga got dem deals,see,22,I see my niggas in Jessie was hann nigga got dem deals,deals,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,22,I see my niggas in Jessie was hann nigga got dem deals,got,23,"I pull up, doors at da crib",da,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,22,I see my niggas in Jessie was hann nigga got dem deals,nigga,23,"I pull up, doors at da crib",crib,INNER,SLANT,spelling,LOW,Y
+Did Dat,22,I see my niggas in Jessie was hann nigga got dem deals,deals,24,Look at da wheels,wheels,END,PERFECT,cmu,HIGH,Y
+Did Dat,22,I see my niggas in Jessie was hann nigga got dem deals,got,24,Look at da wheels,da,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,22,I see my niggas in Jessie was hann nigga got dem deals,see,24,Look at da wheels,wheels,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,23,"I pull up, doors at da crib",da,24,Look at da wheels,da,INNER,REPEAT,spelling,HIGH,N
+Did Dat,23,"I pull up, doors at da crib",pull,24,Look at da wheels,Look,INNER,SLANT,cmu,MED,Y
+Did Dat,23,"I pull up, doors at da crib",crib,25,Bitch i did dat,Bitch,INNER,SLANT,cmu,MED,Y
+Did Dat,25,Bitch i did dat,dat,26,Gansta shit i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,25,Bitch i did dat,Bitch,26,Gansta shit i did dat,shit,INNER,SLANT,cmu,MED,Y
+Did Dat,25,Bitch i did dat,dat,27,N hatin shit or fakin just ain't da shit i did man,man,END,SLANT,cmu,MED,Y
+Did Dat,25,Bitch i did dat,Bitch,27,N hatin shit or fakin just ain't da shit i did man,shit,INNER,SLANT,cmu,MED,Y
+Did Dat,25,Bitch i did dat,dat,29,And i came to shake da click back,back,END,SLANT,cmu,MED,Y
+Did Dat,26,Gansta shit i did dat,dat,27,N hatin shit or fakin just ain't da shit i did man,man,END,SLANT,cmu,MED,Y
+Did Dat,26,Gansta shit i did dat,shit,27,N hatin shit or fakin just ain't da shit i did man,shit,INNER,REPEAT,spelling,HIGH,N
+Did Dat,26,Gansta shit i did dat,shit,28,I bussed down wit da team in a drought where homeboys get killed,killed,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,26,Gansta shit i did dat,shit,28,I bussed down wit da team in a drought where homeboys get killed,wit,INNER,PERFECT,cmu,HIGH,Y
+Did Dat,26,Gansta shit i did dat,dat,29,And i came to shake da click back,back,END,SLANT,cmu,MED,Y
+Did Dat,26,Gansta shit i did dat,dat,30,Dey hate me how i did dat but fuckem cuz i did dat,dat,END,REPEAT,spelling,HIGH,N
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,fakin,27,N hatin shit or fakin just ain't da shit i did man,ain't,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,hatin,27,N hatin shit or fakin just ain't da shit i did man,ain't,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,hatin,27,N hatin shit or fakin just ain't da shit i did man,fakin,INNER,SLANT,cmu,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,shit,27,N hatin shit or fakin just ain't da shit i did man,shit,INNER,REPEAT,spelling,HIGH,N
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,da,28,I bussed down wit da team in a drought where homeboys get killed,da,INNER,REPEAT,spelling,HIGH,N
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,N,28,I bussed down wit da team in a drought where homeboys get killed,get,INNER,SLANT,cmu,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,N,28,I bussed down wit da team in a drought where homeboys get killed,where,INNER,SLANT,cmu,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,shit,28,I bussed down wit da team in a drought where homeboys get killed,killed,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,shit,28,I bussed down wit da team in a drought where homeboys get killed,wit,INNER,PERFECT,cmu,HIGH,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,man,29,And i came to shake da click back,back,END,SLANT,cmu,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,ain't,29,And i came to shake da click back,came,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,ain't,29,And i came to shake da click back,shake,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,da,29,And i came to shake da click back,da,INNER,REPEAT,spelling,HIGH,N
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,fakin,29,And i came to shake da click back,came,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,fakin,29,And i came to shake da click back,shake,INNER,SLANT,cmu,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,hatin,29,And i came to shake da click back,came,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,hatin,29,And i came to shake da click back,shake,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,shit,29,And i came to shake da click back,click,INNER,SLANT,cmu,MED,Y
+Did Dat,27,N hatin shit or fakin just ain't da shit i did man,man,30,Dey hate me how i did dat but fuckem cuz i did dat,dat,END,SLANT,cmu,MED,Y
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,down,28,I bussed down wit da team in a drought where homeboys get killed,drought,INNER,SLANT,cmu,MED,Y
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,where,28,I bussed down wit da team in a drought where homeboys get killed,get,INNER,SLANT,cmu,MED,Y
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,wit,28,I bussed down wit da team in a drought where homeboys get killed,killed,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,da,29,And i came to shake da click back,da,INNER,REPEAT,spelling,HIGH,N
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,killed,29,And i came to shake da click back,click,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,wit,29,And i came to shake da click back,click,INNER,SLANT,cmu,MED,Y
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,bussed,30,Dey hate me how i did dat but fuckem cuz i did dat,fuckem,INNER,ASSONANCE,vowel,LOW,N
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,down,30,Dey hate me how i did dat but fuckem cuz i did dat,how,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,drought,30,Dey hate me how i did dat but fuckem cuz i did dat,how,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,28,I bussed down wit da team in a drought where homeboys get killed,killed,32,"Young Savage hit some bullets right there, where your wig at",wig,END,ASSONANCE,vowel,MED,Y
+Did Dat,29,And i came to shake da click back,came,29,And i came to shake da click back,shake,INNER,SLANT,cmu,MED,Y
+Did Dat,29,And i came to shake da click back,back,30,Dey hate me how i did dat but fuckem cuz i did dat,dat,END,SLANT,cmu,MED,Y
+Did Dat,29,And i came to shake da click back,back,30,Dey hate me how i did dat but fuckem cuz i did dat,dat,INNER,SLANT,cmu,MED,Y
+Did Dat,29,And i came to shake da click back,came,30,Dey hate me how i did dat but fuckem cuz i did dat,Dey,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,29,And i came to shake da click back,came,30,Dey hate me how i did dat but fuckem cuz i did dat,hate,INNER,SLANT,cmu,MED,Y
+Did Dat,29,And i came to shake da click back,shake,30,Dey hate me how i did dat but fuckem cuz i did dat,Dey,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,29,And i came to shake da click back,shake,30,Dey hate me how i did dat but fuckem cuz i did dat,hate,INNER,SLANT,cmu,MED,Y
+Did Dat,29,And i came to shake da click back,click,31,"Bitch, you know I did that",Bitch,INNER,SLANT,cmu,MED,Y
+Did Dat,29,And i came to shake da click back,back,33,Right through your fitted cap,cap,END,SLANT,cmu,MED,Y
+Did Dat,30,Dey hate me how i did dat but fuckem cuz i did dat,dat,30,Dey hate me how i did dat but fuckem cuz i did dat,dat,INNER,REPEAT,spelling,HIGH,N
+Did Dat,30,Dey hate me how i did dat but fuckem cuz i did dat,Dey,30,Dey hate me how i did dat but fuckem cuz i did dat,hate,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,30,Dey hate me how i did dat but fuckem cuz i did dat,cuz,32,"Young Savage hit some bullets right there, where your wig at",some,INNER,SLANT,spelling,LOW,Y
+Did Dat,30,Dey hate me how i did dat but fuckem cuz i did dat,cuz,32,"Young Savage hit some bullets right there, where your wig at",Young,INNER,SLANT,spelling,LOW,Y
+Did Dat,30,Dey hate me how i did dat but fuckem cuz i did dat,dat,32,"Young Savage hit some bullets right there, where your wig at",Savage,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,30,Dey hate me how i did dat but fuckem cuz i did dat,fuckem,32,"Young Savage hit some bullets right there, where your wig at",some,INNER,SLANT,spelling,LOW,Y
+Did Dat,30,Dey hate me how i did dat but fuckem cuz i did dat,dat,33,Right through your fitted cap,cap,END,SLANT,cmu,MED,Y
+Did Dat,31,"Bitch, you know I did that",Bitch,32,"Young Savage hit some bullets right there, where your wig at",hit,INNER,SLANT,cmu,MED,Y
+Did Dat,31,"Bitch, you know I did that",Bitch,32,"Young Savage hit some bullets right there, where your wig at",wig,INNER,SLANT,cmu,MED,Y
+Did Dat,31,"Bitch, you know I did that",Bitch,33,Right through your fitted cap,fitted,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",hit,32,"Young Savage hit some bullets right there, where your wig at",wig,INNER,SLANT,cmu,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",there,32,"Young Savage hit some bullets right there, where your wig at",where,INNER,PERFECT,cmu,HIGH,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",Young,32,"Young Savage hit some bullets right there, where your wig at",some,INNER,SLANT,cmu,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",hit,33,Right through your fitted cap,fitted,INNER,SLANT,cmu,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",right,33,Right through your fitted cap,Right,INNER,REPEAT,spelling,HIGH,N
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",Savage,33,Right through your fitted cap,cap,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",wig,33,Right through your fitted cap,fitted,INNER,SLANT,cmu,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",hit,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",Bitch,INNER,SLANT,cmu,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",hit,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",right,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",like,INNER,SLANT,cmu,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",Savage,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",damn,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",there,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",chef,INNER,SLANT,cmu,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",where,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",chef,INNER,SLANT,cmu,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",wig,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",Bitch,INNER,SLANT,cmu,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",wig,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,32,"Young Savage hit some bullets right there, where your wig at",wig,36,"Baby mama did that, side bitch did that",bitch,END,SLANT,cmu,MED,Y
+Did Dat,33,Right through your fitted cap,cap,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",damn,INNER,SLANT,cmu,MED,Y
+Did Dat,33,Right through your fitted cap,fitted,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,33,Right through your fitted cap,fitted,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,33,Right through your fitted cap,Right,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",like,INNER,SLANT,cmu,MED,Y
+Did Dat,33,Right through your fitted cap,cap,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Gang,INNER,SLANT,cmu,MED,Y
+Did Dat,33,Right through your fitted cap,fitted,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,33,Right through your fitted cap,Right,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",stripes,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,33,Right through your fitted cap,cap,37,"Fucked your main bitch in the trap, nigga, I did that",nigga,END,SLANT,cmu,MED,Y
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",Bitch,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",kitchen,INNER,SLANT,cmu,MED,Y
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",chef,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",ref,END,PERFECT,cmu,HIGH,Y
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",Bitch,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Bitch,INNER,REPEAT,spelling,HIGH,N
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",damn,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Gang,INNER,SLANT,cmu,MED,Y
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",kitchen,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Bitch,INNER,SLANT,cmu,MED,Y
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",like,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",stripes,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",Bitch,36,"Baby mama did that, side bitch did that",bitch,INNER,REPEAT,spelling,HIGH,N
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",kitchen,36,"Baby mama did that, side bitch did that",bitch,INNER,SLANT,cmu,MED,Y
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",like,36,"Baby mama did that, side bitch did that",side,INNER,SLANT,cmu,MED,Y
+Did Dat,34,"Bitch, I scrape the boll in the kitchen, like a damn chef",scrape,36,"Baby mama did that, side bitch did that",Baby,INNER,SLANT,cmu,MED,Y
+Did Dat,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Slaughter,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",more,INNER,SLANT,cmu,MED,Y
+Did Dat,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Bitch,36,"Baby mama did that, side bitch did that",bitch,INNER,REPEAT,spelling,HIGH,N
+Did Dat,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",got,36,"Baby mama did that, side bitch did that",mama,INNER,SLANT,cmu,MED,Y
+Did Dat,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",stripes,36,"Baby mama did that, side bitch did that",side,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Bitch,37,"Fucked your main bitch in the trap, nigga, I did that",bitch,INNER,REPEAT,spelling,HIGH,N
+Did Dat,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",fucking,37,"Fucked your main bitch in the trap, nigga, I did that",Fucked,INNER,SLANT,cmu,MED,Y
+Did Dat,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Gang,37,"Fucked your main bitch in the trap, nigga, I did that",nigga,INNER,SLANT,cmu,MED,Y
+Did Dat,35,"Bitch, I'm Slaughter Gang, I got more stripes than a fucking ref",Gang,37,"Fucked your main bitch in the trap, nigga, I did that",trap,INNER,SLANT,cmu,MED,Y
+Did Dat,36,"Baby mama did that, side bitch did that",Baby,37,"Fucked your main bitch in the trap, nigga, I did that",main,INNER,SLANT,cmu,MED,Y
+Did Dat,36,"Baby mama did that, side bitch did that",bitch,37,"Fucked your main bitch in the trap, nigga, I did that",bitch,INNER,REPEAT,spelling,HIGH,N
+Did Dat,36,"Baby mama did that, side bitch did that",Baby,38,Niggas running like a field day,day,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,36,"Baby mama did that, side bitch did that",side,38,Niggas running like a field day,like,INNER,SLANT,cmu,MED,Y
+Did Dat,37,"Fucked your main bitch in the trap, nigga, I did that",trap,37,"Fucked your main bitch in the trap, nigga, I did that",nigga,INNER,SLANT,cmu,MED,Y
+Did Dat,37,"Fucked your main bitch in the trap, nigga, I did that",Fucked,38,Niggas running like a field day,running,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,37,"Fucked your main bitch in the trap, nigga, I did that",main,38,Niggas running like a field day,day,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,37,"Fucked your main bitch in the trap, nigga, I did that",bitch,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",Bitch,INNER,REPEAT,spelling,HIGH,N
+Did Dat,37,"Fucked your main bitch in the trap, nigga, I did that",bitch,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",pill,INNER,SLANT,cmu,MED,Y
+Did Dat,37,"Fucked your main bitch in the trap, nigga, I did that",main,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",day,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,37,"Fucked your main bitch in the trap, nigga, I did that",main,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",day's,INNER,SLANT,cmu,MED,Y
+Did Dat,38,Niggas running like a field day,day,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",day,END,REPEAT,spelling,HIGH,N
+Did Dat,38,Niggas running like a field day,day,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",day's,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,38,Niggas running like a field day,like,40,"They like ""21, how you do that?",like,INNER,REPEAT,spelling,HIGH,N
+Did Dat,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",Bitch,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",pill,INNER,SLANT,cmu,MED,Y
+Did Dat,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",day's,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",day,INNER,ASSONANCE,vowel,MED,Y
+Did Dat,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",where,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",every,INNER,SLANT,cmu,MED,Y
+Did Dat,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",every,41,"How you put your trunk where your hood at?""",where,INNER,SLANT,cmu,MED,Y
+Did Dat,39,"Bitch, I'm from Zone 6, where every day's a poppin pill day",where,41,"How you put your trunk where your hood at?""",where,INNER,REPEAT,spelling,HIGH,N
+Did Dat,40,"They like ""21, how you do that?",how,41,"How you put your trunk where your hood at?""",How,INNER,REPEAT,spelling,HIGH,N
+Did Dat,41,"How you put your trunk where your hood at?""",put,41,"How you put your trunk where your hood at?""",hood,INNER,SLANT,cmu,MED,Y
+Did Dat,41,"How you put your trunk where your hood at?""",hood,42,"You say you from the street, but where your hood at?",hood,END,REPEAT,spelling,HIGH,N
+Did Dat,41,"How you put your trunk where your hood at?""",put,42,"You say you from the street, but where your hood at?",hood,INNER,SLANT,cmu,MED,Y
+Did Dat,41,"How you put your trunk where your hood at?""",where,42,"You say you from the street, but where your hood at?",where,INNER,REPEAT,spelling,HIGH,N
+Did Dat,41,"How you put your trunk where your hood at?""",hood,43,"Nigga, all I know is trap, because I'm good at it",good,END,PERFECT,cmu,HIGH,Y
+Did Dat,41,"How you put your trunk where your hood at?""",put,43,"Nigga, all I know is trap, because I'm good at it",good,INNER,SLANT,cmu,MED,Y
+Did Dat,42,"You say you from the street, but where your hood at?",hood,43,"Nigga, all I know is trap, because I'm good at it",good,END,PERFECT,cmu,HIGH,Y
+Did Dat,43,"Nigga, all I know is trap, because I'm good at it",all,43,"Nigga, all I know is trap, because I'm good at it",because,INNER,SLANT,cmu,MED,Y

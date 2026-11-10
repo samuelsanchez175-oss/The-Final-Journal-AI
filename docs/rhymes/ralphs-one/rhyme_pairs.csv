@@ -1,0 +1,202 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Carolina,1,"Gang in this bitch, nigga",Gang,2,Ain't no Ralph though,Ralph,INNER,ASSONANCE,vowel,MED,Y
+Carolina,1,"Gang in this bitch, nigga",bitch,3,I pull up smokin' stinky marijuana,stinky,INNER,ASSONANCE,vowel,MED,Y
+Carolina,2,Ain't no Ralph though,no,2,Ain't no Ralph though,though,INNER,PERFECT,cmu,HIGH,Y
+Carolina,2,Ain't no Ralph though,no,3,I pull up smokin' stinky marijuana,smokin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,2,Ain't no Ralph though,though,3,I pull up smokin' stinky marijuana,smokin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,2,Ain't no Ralph though,no,4,"All the hoes jocking, niggas lookin' dumb",hoes,INNER,ASSONANCE,vowel,MED,Y
+Carolina,2,Ain't no Ralph though,though,4,"All the hoes jocking, niggas lookin' dumb",hoes,INNER,ASSONANCE,vowel,MED,Y
+Carolina,3,I pull up smokin' stinky marijuana,pull,4,"All the hoes jocking, niggas lookin' dumb",lookin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,3,I pull up smokin' stinky marijuana,pull smokin,4,"All the hoes jocking, niggas lookin' dumb",hoes jocking,INNER,MULTI,multi,MED,Y
+Carolina,3,I pull up smokin' stinky marijuana,smokin,4,"All the hoes jocking, niggas lookin' dumb",hoes,INNER,ASSONANCE,vowel,MED,Y
+Carolina,3,I pull up smokin' stinky marijuana,smokin,4,"All the hoes jocking, niggas lookin' dumb",jocking,INNER,MULTI,multi,MED,Y
+Carolina,3,I pull up smokin' stinky marijuana,marijuana,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",lot,INNER,SLANT,cmu,MED,Y
+Carolina,3,I pull up smokin' stinky marijuana,marijuana,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",parkin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,3,I pull up smokin' stinky marijuana,pull,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",Pulled,INNER,SLANT,cmu,MED,Y
+Carolina,3,I pull up smokin' stinky marijuana,stinky,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",pimpin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,4,"All the hoes jocking, niggas lookin' dumb",jocking,4,"All the hoes jocking, niggas lookin' dumb",lookin,INNER,PERFECT,spelling,MED,Y
+Carolina,4,"All the hoes jocking, niggas lookin' dumb",All,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",Jordan,INNER,ASSONANCE,vowel,MED,Y
+Carolina,4,"All the hoes jocking, niggas lookin' dumb",jocking,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",pimpin,INNER,PERFECT,spelling,MED,Y
+Carolina,4,"All the hoes jocking, niggas lookin' dumb",lookin,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",Pulled,INNER,ASSONANCE,vowel,MED,Y
+Carolina,4,"All the hoes jocking, niggas lookin' dumb",All,6,Choppas wavin' in the air like I'm from North Carolina,North,INNER,ASSONANCE,vowel,MED,Y
+Carolina,4,"All the hoes jocking, niggas lookin' dumb",jocking,6,Choppas wavin' in the air like I'm from North Carolina,wavin,INNER,PERFECT,spelling,MED,Y
+Carolina,4,"All the hoes jocking, niggas lookin' dumb",niggas,6,Choppas wavin' in the air like I'm from North Carolina,Choppas,INNER,PERFECT,spelling,MED,Y
+Carolina,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",parkin,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",lot,INNER,ASSONANCE,vowel,MED,Y
+Carolina,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",Jordan,6,Choppas wavin' in the air like I'm from North Carolina,North,INNER,ASSONANCE,vowel,MED,Y
+Carolina,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",like,6,Choppas wavin' in the air like I'm from North Carolina,Carolina,INNER,SLANT,cmu,MED,Y
+Carolina,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",like,6,Choppas wavin' in the air like I'm from North Carolina,like,INNER,REPEAT,spelling,HIGH,N
+Carolina,5,"Pulled up parkin' lot, pimpin' like I play with Jordan",play,6,Choppas wavin' in the air like I'm from North Carolina,wavin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,6,Choppas wavin' in the air like I'm from North Carolina,like,6,Choppas wavin' in the air like I'm from North Carolina,Carolina,INNER,SLANT,cmu,MED,Y
+Carolina,6,Choppas wavin' in the air like I'm from North Carolina,Choppas,7,"Chief Sosa be smokin' ganja, ayy",Sosa,INNER,ASSONANCE,vowel,LOW,N
+Carolina,6,Choppas wavin' in the air like I'm from North Carolina,Choppas,8,"Chief Sosa can fuck your mama, ayy",Sosa,INNER,ASSONANCE,vowel,LOW,N
+Carolina,7,"Chief Sosa be smokin' ganja, ayy",Sosa,7,"Chief Sosa be smokin' ganja, ayy",smokin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,7,"Chief Sosa be smokin' ganja, ayy",Chief,8,"Chief Sosa can fuck your mama, ayy",Chief,INNER,REPEAT,spelling,HIGH,N
+Carolina,7,"Chief Sosa be smokin' ganja, ayy",ganja,8,"Chief Sosa can fuck your mama, ayy",can,INNER,SLANT,spelling,LOW,Y
+Carolina,7,"Chief Sosa be smokin' ganja, ayy",smokin,8,"Chief Sosa can fuck your mama, ayy",Sosa,INNER,ASSONANCE,vowel,MED,Y
+Carolina,7,"Chief Sosa be smokin' ganja, ayy",Sosa,8,"Chief Sosa can fuck your mama, ayy",Sosa,INNER,REPEAT,spelling,HIGH,N
+Carolina,7,"Chief Sosa be smokin' ganja, ayy",Chief,9,Chief Sosa ride Rangers and ride Hummers,Chief,INNER,REPEAT,spelling,HIGH,N
+Carolina,7,"Chief Sosa be smokin' ganja, ayy",smokin,9,Chief Sosa ride Rangers and ride Hummers,Sosa,INNER,ASSONANCE,vowel,MED,Y
+Carolina,7,"Chief Sosa be smokin' ganja, ayy",Sosa,9,Chief Sosa ride Rangers and ride Hummers,Sosa,INNER,REPEAT,spelling,HIGH,N
+Carolina,8,"Chief Sosa can fuck your mama, ayy",Chief,9,Chief Sosa ride Rangers and ride Hummers,Chief,INNER,REPEAT,spelling,HIGH,N
+Carolina,8,"Chief Sosa can fuck your mama, ayy",Sosa,9,Chief Sosa ride Rangers and ride Hummers,Sosa,INNER,REPEAT,spelling,HIGH,N
+Carolina,8,"Chief Sosa can fuck your mama, ayy",Chief,10,Chief Sosa bought a beemer for the summer,beemer,INNER,SLANT,cmu,MED,Y
+Carolina,8,"Chief Sosa can fuck your mama, ayy",Chief,10,Chief Sosa bought a beemer for the summer,Chief,INNER,REPEAT,spelling,HIGH,N
+Carolina,8,"Chief Sosa can fuck your mama, ayy",fuck,10,Chief Sosa bought a beemer for the summer,summer,INNER,SLANT,cmu,MED,Y
+Carolina,8,"Chief Sosa can fuck your mama, ayy",mama,10,Chief Sosa bought a beemer for the summer,bought,INNER,SLANT,cmu,MED,Y
+Carolina,8,"Chief Sosa can fuck your mama, ayy",Sosa,10,Chief Sosa bought a beemer for the summer,Sosa,INNER,REPEAT,spelling,HIGH,N
+Carolina,9,Chief Sosa ride Rangers and ride Hummers,Rangers,9,Chief Sosa ride Rangers and ride Hummers,Hummers,INNER,PERFECT,spelling,MED,Y
+Carolina,9,Chief Sosa ride Rangers and ride Hummers,ride,9,Chief Sosa ride Rangers and ride Hummers,ride,INNER,REPEAT,spelling,HIGH,N
+Carolina,9,Chief Sosa ride Rangers and ride Hummers,Hummers,10,Chief Sosa bought a beemer for the summer,summer,END,ASSONANCE,vowel,LOW,N
+Carolina,9,Chief Sosa ride Rangers and ride Hummers,Chief,10,Chief Sosa bought a beemer for the summer,beemer,INNER,SLANT,cmu,MED,Y
+Carolina,9,Chief Sosa ride Rangers and ride Hummers,Chief,10,Chief Sosa bought a beemer for the summer,Chief,INNER,REPEAT,spelling,HIGH,N
+Carolina,9,Chief Sosa ride Rangers and ride Hummers,Sosa,10,Chief Sosa bought a beemer for the summer,Sosa,INNER,REPEAT,spelling,HIGH,N
+Carolina,9,Chief Sosa ride Rangers and ride Hummers,Hummers,11,"Bought twenty Monclers for the winter, ayy",Monclers,INNER,PERFECT,spelling,MED,Y
+Carolina,9,Chief Sosa ride Rangers and ride Hummers,Rangers,11,"Bought twenty Monclers for the winter, ayy",Monclers,INNER,PERFECT,spelling,MED,Y
+Carolina,10,Chief Sosa bought a beemer for the summer,Chief,10,Chief Sosa bought a beemer for the summer,beemer,INNER,SLANT,cmu,MED,Y
+Carolina,10,Chief Sosa bought a beemer for the summer,bought,11,"Bought twenty Monclers for the winter, ayy",Bought,INNER,REPEAT,spelling,HIGH,N
+Carolina,10,Chief Sosa bought a beemer for the summer,Sosa,12,Two hundred choppas for all of my enemies,choppas,INNER,ASSONANCE,vowel,LOW,N
+Carolina,10,Chief Sosa bought a beemer for the summer,summer,12,Two hundred choppas for all of my enemies,hundred,INNER,ASSONANCE,vowel,MED,Y
+Carolina,11,"Bought twenty Monclers for the winter, ayy",twenty,12,Two hundred choppas for all of my enemies,enemies,INNER,ASSONANCE,vowel,MED,Y
+Carolina,11,"Bought twenty Monclers for the winter, ayy",winter,13,"He think it's sweet, it's chips, this choppa finna lay",chips,INNER,ASSONANCE,vowel,MED,Y
+Carolina,11,"Bought twenty Monclers for the winter, ayy",winter,13,"He think it's sweet, it's chips, this choppa finna lay",finna,INNER,SLANT,spelling,LOW,Y
+Carolina,11,"Bought twenty Monclers for the winter, ayy",winter,13,"He think it's sweet, it's chips, this choppa finna lay",think,INNER,SLANT,cmu,MED,Y
+Carolina,12,Two hundred choppas for all of my enemies,choppas,13,"He think it's sweet, it's chips, this choppa finna lay",chips,INNER,SLANT,spelling,LOW,Y
+Carolina,12,Two hundred choppas for all of my enemies,choppas,13,"He think it's sweet, it's chips, this choppa finna lay",choppa,INNER,SLANT,spelling,LOW,Y
+Carolina,12,Two hundred choppas for all of my enemies,choppas,14,"That nigga try to run, this choppa finna spray",choppa,INNER,SLANT,spelling,LOW,Y
+Carolina,12,Two hundred choppas for all of my enemies,hundred,14,"That nigga try to run, this choppa finna spray",run,INNER,ASSONANCE,vowel,MED,Y
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",think,13,"He think it's sweet, it's chips, this choppa finna lay",chips,INNER,ASSONANCE,vowel,MED,Y
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",lay,14,"That nigga try to run, this choppa finna spray",spray,END,PERFECT,cmu,HIGH,Y
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",choppa,14,"That nigga try to run, this choppa finna spray",choppa,INNER,REPEAT,spelling,HIGH,N
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",finna,14,"That nigga try to run, this choppa finna spray",finna,INNER,REPEAT,spelling,HIGH,N
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",finna,14,"That nigga try to run, this choppa finna spray",nigga,INNER,ASSONANCE,vowel,LOW,N
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",lay,15,Sig on me cause that's how I feel today,today,END,PERFECT,cmu,HIGH,Y
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",chips,15,Sig on me cause that's how I feel today,Sig,INNER,ASSONANCE,vowel,MED,Y
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",sweet,15,Sig on me cause that's how I feel today,feel,INNER,SLANT,cmu,MED,Y
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",think,15,Sig on me cause that's how I feel today,Sig,INNER,ASSONANCE,vowel,MED,Y
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",lay,16,"I got money, don't care 'bout a damn old case",case,END,ASSONANCE,vowel,MED,Y
+Carolina,13,"He think it's sweet, it's chips, this choppa finna lay",lay,17,"Got lead and pen on me, blood I'm finna paint",paint,END,ASSONANCE,vowel,MED,Y
+Carolina,14,"That nigga try to run, this choppa finna spray",nigga,14,"That nigga try to run, this choppa finna spray",finna,INNER,ASSONANCE,vowel,LOW,N
+Carolina,14,"That nigga try to run, this choppa finna spray",spray,15,Sig on me cause that's how I feel today,today,END,PERFECT,cmu,HIGH,Y
+Carolina,14,"That nigga try to run, this choppa finna spray",nigga,15,Sig on me cause that's how I feel today,Sig,INNER,SLANT,spelling,LOW,Y
+Carolina,14,"That nigga try to run, this choppa finna spray",spray,16,"I got money, don't care 'bout a damn old case",case,END,ASSONANCE,vowel,MED,Y
+Carolina,14,"That nigga try to run, this choppa finna spray",run,16,"I got money, don't care 'bout a damn old case",money,INNER,SLANT,cmu,MED,Y
+Carolina,14,"That nigga try to run, this choppa finna spray",spray,17,"Got lead and pen on me, blood I'm finna paint",paint,END,ASSONANCE,vowel,MED,Y
+Carolina,14,"That nigga try to run, this choppa finna spray",spray,18,"I found some money, took it on a dinner date",date,END,ASSONANCE,vowel,MED,Y
+Carolina,15,Sig on me cause that's how I feel today,today,16,"I got money, don't care 'bout a damn old case",case,END,ASSONANCE,vowel,MED,Y
+Carolina,15,Sig on me cause that's how I feel today,cause,16,"I got money, don't care 'bout a damn old case",got,INNER,SLANT,cmu,MED,Y
+Carolina,15,Sig on me cause that's how I feel today,how,16,"I got money, don't care 'bout a damn old case",'bout,INNER,ASSONANCE,vowel,MED,Y
+Carolina,15,Sig on me cause that's how I feel today,today,17,"Got lead and pen on me, blood I'm finna paint",paint,END,ASSONANCE,vowel,MED,Y
+Carolina,15,Sig on me cause that's how I feel today,cause,17,"Got lead and pen on me, blood I'm finna paint",Got,INNER,SLANT,cmu,MED,Y
+Carolina,15,Sig on me cause that's how I feel today,today,18,"I found some money, took it on a dinner date",date,END,ASSONANCE,vowel,MED,Y
+Carolina,16,"I got money, don't care 'bout a damn old case",don't,16,"I got money, don't care 'bout a damn old case",old,INNER,ASSONANCE,vowel,MED,Y
+Carolina,16,"I got money, don't care 'bout a damn old case",case,17,"Got lead and pen on me, blood I'm finna paint",paint,END,ASSONANCE,vowel,MED,Y
+Carolina,16,"I got money, don't care 'bout a damn old case",care,17,"Got lead and pen on me, blood I'm finna paint",lead,INNER,SLANT,cmu,MED,Y
+Carolina,16,"I got money, don't care 'bout a damn old case",care,17,"Got lead and pen on me, blood I'm finna paint",pen,INNER,SLANT,cmu,MED,Y
+Carolina,16,"I got money, don't care 'bout a damn old case",got,17,"Got lead and pen on me, blood I'm finna paint",Got,INNER,REPEAT,spelling,HIGH,N
+Carolina,16,"I got money, don't care 'bout a damn old case",money,17,"Got lead and pen on me, blood I'm finna paint",blood,INNER,SLANT,cmu,MED,Y
+Carolina,16,"I got money, don't care 'bout a damn old case",case,18,"I found some money, took it on a dinner date",date,END,SLANT,cmu,MED,Y
+Carolina,16,"I got money, don't care 'bout a damn old case",'bout,18,"I found some money, took it on a dinner date",found,INNER,ASSONANCE,vowel,MED,Y
+Carolina,16,"I got money, don't care 'bout a damn old case",money,18,"I found some money, took it on a dinner date",money,INNER,REPEAT,spelling,HIGH,N
+Carolina,16,"I got money, don't care 'bout a damn old case",money,18,"I found some money, took it on a dinner date",some,INNER,SLANT,cmu,MED,Y
+Carolina,16,"I got money, don't care 'bout a damn old case",case,20,"In the truck, Lil Wayne",Wayne,END,SLANT,cmu,MED,Y
+Carolina,17,"Got lead and pen on me, blood I'm finna paint",lead,17,"Got lead and pen on me, blood I'm finna paint",pen,INNER,SLANT,cmu,MED,Y
+Carolina,17,"Got lead and pen on me, blood I'm finna paint",paint,18,"I found some money, took it on a dinner date",date,END,SLANT,cmu,MED,Y
+Carolina,17,"Got lead and pen on me, blood I'm finna paint",blood,18,"I found some money, took it on a dinner date",money,INNER,SLANT,cmu,MED,Y
+Carolina,17,"Got lead and pen on me, blood I'm finna paint",blood,18,"I found some money, took it on a dinner date",some,INNER,SLANT,cmu,MED,Y
+Carolina,17,"Got lead and pen on me, blood I'm finna paint",finna,18,"I found some money, took it on a dinner date",dinner,INNER,SLANT,spelling,LOW,Y
+Carolina,17,"Got lead and pen on me, blood I'm finna paint",finna,19,Pull up in that thing,thing,INNER,SLANT,spelling,LOW,Y
+Carolina,17,"Got lead and pen on me, blood I'm finna paint",paint,20,"In the truck, Lil Wayne",Wayne,END,SLANT,cmu,MED,Y
+Carolina,17,"Got lead and pen on me, blood I'm finna paint",paint,21,"Hop out, smoke a stain",stain,END,SLANT,cmu,MED,Y
+Carolina,18,"I found some money, took it on a dinner date",some,18,"I found some money, took it on a dinner date",money,INNER,SLANT,cmu,MED,Y
+Carolina,18,"I found some money, took it on a dinner date",dinner,19,Pull up in that thing,thing,INNER,SLANT,cmu,MED,Y
+Carolina,18,"I found some money, took it on a dinner date",took,19,Pull up in that thing,Pull,INNER,SLANT,cmu,MED,Y
+Carolina,18,"I found some money, took it on a dinner date",date,20,"In the truck, Lil Wayne",Wayne,END,SLANT,cmu,MED,Y
+Carolina,18,"I found some money, took it on a dinner date",dinner,20,"In the truck, Lil Wayne",Lil,INNER,SLANT,cmu,MED,Y
+Carolina,18,"I found some money, took it on a dinner date",money,20,"In the truck, Lil Wayne",truck,INNER,SLANT,cmu,MED,Y
+Carolina,18,"I found some money, took it on a dinner date",some,20,"In the truck, Lil Wayne",truck,INNER,SLANT,cmu,MED,Y
+Carolina,18,"I found some money, took it on a dinner date",date,21,"Hop out, smoke a stain",stain,END,SLANT,cmu,MED,Y
+Carolina,19,Pull up in that thing,thing,20,"In the truck, Lil Wayne",Lil,INNER,SLANT,cmu,MED,Y
+Carolina,20,"In the truck, Lil Wayne",Wayne,21,"Hop out, smoke a stain",stain,END,PERFECT,cmu,HIGH,Y
+Carolina,21,"Hop out, smoke a stain",Hop,22,In my pocket bang,pocket,INNER,SLANT,cmu,MED,Y
+Carolina,21,"Hop out, smoke a stain",Hop,23,In my Johnny Dang,Johnny,INNER,SLANT,cmu,MED,Y
+Carolina,22,In my pocket bang,bang,23,In my Johnny Dang,Dang,END,PERFECT,cmu,HIGH,Y
+Carolina,22,In my pocket bang,pocket,23,In my Johnny Dang,Johnny,INNER,ASSONANCE,vowel,MED,Y
+Carolina,22,In my pocket bang,pocket,24,"It's a lot of bling, aye bling",lot,INNER,SLANT,cmu,MED,Y
+Carolina,23,In my Johnny Dang,Johnny,24,"It's a lot of bling, aye bling",lot,INNER,SLANT,cmu,MED,Y
+Carolina,23,In my Johnny Dang,Dang,25,"Lil Llari put a drop on my guapa, ayy, whoa",Llari,INNER,SLANT,spelling,LOW,Y
+Carolina,23,In my Johnny Dang,Johnny,25,"Lil Llari put a drop on my guapa, ayy, whoa",drop,INNER,SLANT,cmu,MED,Y
+Carolina,24,"It's a lot of bling, aye bling",bling,24,"It's a lot of bling, aye bling",bling,INNER,REPEAT,spelling,HIGH,N
+Carolina,24,"It's a lot of bling, aye bling",bling,25,"Lil Llari put a drop on my guapa, ayy, whoa",Lil,INNER,SLANT,spelling,LOW,Y
+Carolina,24,"It's a lot of bling, aye bling",lot,25,"Lil Llari put a drop on my guapa, ayy, whoa",drop,INNER,SLANT,cmu,MED,Y
+Carolina,25,"Lil Llari put a drop on my guapa, ayy, whoa",guapa,26,"Can't fuck with these niggas, they imposters, ayy, whoa",imposters,END,PERFECT,cmu,HIGH,Y
+Carolina,25,"Lil Llari put a drop on my guapa, ayy, whoa",drop,27,"Don't fuck with no oppers, no coppers, ayy, whoa",coppers,INNER,SLANT,cmu,MED,Y
+Carolina,25,"Lil Llari put a drop on my guapa, ayy, whoa",guapa,27,"Don't fuck with no oppers, no coppers, ayy, whoa",Don't,INNER,ASSONANCE,vowel,MED,Y
+Carolina,25,"Lil Llari put a drop on my guapa, ayy, whoa",guapa,27,"Don't fuck with no oppers, no coppers, ayy, whoa",no,INNER,PERFECT,cmu,HIGH,Y
+Carolina,26,"Can't fuck with these niggas, they imposters, ayy, whoa",fuck,27,"Don't fuck with no oppers, no coppers, ayy, whoa",fuck,INNER,REPEAT,spelling,HIGH,N
+Carolina,26,"Can't fuck with these niggas, they imposters, ayy, whoa",imposters,27,"Don't fuck with no oppers, no coppers, ayy, whoa",Don't,INNER,ASSONANCE,vowel,MED,Y
+Carolina,26,"Can't fuck with these niggas, they imposters, ayy, whoa",imposters,27,"Don't fuck with no oppers, no coppers, ayy, whoa",no,INNER,PERFECT,cmu,HIGH,Y
+Carolina,26,"Can't fuck with these niggas, they imposters, ayy, whoa",imposters,27,"Don't fuck with no oppers, no coppers, ayy, whoa",oppers,INNER,ASSONANCE,vowel,LOW,N
+Carolina,27,"Don't fuck with no oppers, no coppers, ayy, whoa",Don't,27,"Don't fuck with no oppers, no coppers, ayy, whoa",no,INNER,ASSONANCE,vowel,MED,Y
+Carolina,27,"Don't fuck with no oppers, no coppers, ayy, whoa",no,27,"Don't fuck with no oppers, no coppers, ayy, whoa",no,INNER,REPEAT,spelling,HIGH,N
+Carolina,27,"Don't fuck with no oppers, no coppers, ayy, whoa",oppers,27,"Don't fuck with no oppers, no coppers, ayy, whoa",coppers,INNER,PERFECT,spelling,MED,Y
+Carolina,27,"Don't fuck with no oppers, no coppers, ayy, whoa",coppers,28,"LeBron James, just hit 'em with the chopper like woah",chopper,INNER,SLANT,cmu,MED,Y
+Carolina,28,"LeBron James, just hit 'em with the chopper like woah",James,29,"I get the cash, that's for days, yeah",days,INNER,SLANT,cmu,MED,Y
+Carolina,28,"LeBron James, just hit 'em with the chopper like woah",LeBron,29,"I get the cash, that's for days, yeah",get,INNER,ASSONANCE,vowel,MED,Y
+Carolina,28,"LeBron James, just hit 'em with the chopper like woah",chopper,30,"Issey Miyake my ways, yeah",Miyake,INNER,SLANT,cmu,MED,Y
+Carolina,28,"LeBron James, just hit 'em with the chopper like woah",James,30,"Issey Miyake my ways, yeah",ways,INNER,SLANT,cmu,MED,Y
+Carolina,29,"I get the cash, that's for days, yeah",days,30,"Issey Miyake my ways, yeah",ways,END,PERFECT,cmu,HIGH,Y
+Carolina,29,"I get the cash, that's for days, yeah",days,31,"You's a lil' bitch, out my face, yeah",face,END,SLANT,cmu,MED,Y
+Carolina,29,"I get the cash, that's for days, yeah",days,32,"Put that lil' bitch in her place, yeah",place,END,SLANT,cmu,MED,Y
+Carolina,30,"Issey Miyake my ways, yeah",Issey,30,"Issey Miyake my ways, yeah",Miyake,INNER,ASSONANCE,vowel,LOW,N
+Carolina,30,"Issey Miyake my ways, yeah",ways,31,"You's a lil' bitch, out my face, yeah",face,END,SLANT,cmu,MED,Y
+Carolina,30,"Issey Miyake my ways, yeah",Issey,31,"You's a lil' bitch, out my face, yeah",bitch,INNER,SLANT,spelling,LOW,Y
+Carolina,30,"Issey Miyake my ways, yeah",ways,32,"Put that lil' bitch in her place, yeah",place,END,SLANT,cmu,MED,Y
+Carolina,30,"Issey Miyake my ways, yeah",Issey,32,"Put that lil' bitch in her place, yeah",bitch,INNER,SLANT,spelling,LOW,Y
+Carolina,31,"You's a lil' bitch, out my face, yeah",lil,31,"You's a lil' bitch, out my face, yeah",bitch,INNER,SLANT,cmu,MED,Y
+Carolina,31,"You's a lil' bitch, out my face, yeah",face,32,"Put that lil' bitch in her place, yeah",place,END,PERFECT,cmu,HIGH,Y
+Carolina,31,"You's a lil' bitch, out my face, yeah",bitch,32,"Put that lil' bitch in her place, yeah",bitch,INNER,REPEAT,spelling,HIGH,N
+Carolina,31,"You's a lil' bitch, out my face, yeah",bitch,32,"Put that lil' bitch in her place, yeah",lil,INNER,SLANT,cmu,MED,Y
+Carolina,31,"You's a lil' bitch, out my face, yeah",lil,32,"Put that lil' bitch in her place, yeah",bitch,INNER,SLANT,cmu,MED,Y
+Carolina,31,"You's a lil' bitch, out my face, yeah",lil,32,"Put that lil' bitch in her place, yeah",lil,INNER,REPEAT,spelling,HIGH,N
+Carolina,31,"You's a lil' bitch, out my face, yeah",bitch,33,"Bitch, I'm your, bitch, I'm your father, yeah",Bitch,INNER,REPEAT,spelling,HIGH,N
+Carolina,31,"You's a lil' bitch, out my face, yeah",lil,33,"Bitch, I'm your, bitch, I'm your father, yeah",Bitch,INNER,SLANT,cmu,MED,Y
+Carolina,32,"Put that lil' bitch in her place, yeah",lil,32,"Put that lil' bitch in her place, yeah",bitch,INNER,SLANT,cmu,MED,Y
+Carolina,32,"Put that lil' bitch in her place, yeah",bitch,33,"Bitch, I'm your, bitch, I'm your father, yeah",Bitch,INNER,REPEAT,spelling,HIGH,N
+Carolina,32,"Put that lil' bitch in her place, yeah",lil,33,"Bitch, I'm your, bitch, I'm your father, yeah",Bitch,INNER,SLANT,cmu,MED,Y
+Carolina,32,"Put that lil' bitch in her place, yeah",bitch,34,"Fuck on your sister, your daughter, yeah",sister,INNER,ASSONANCE,vowel,MED,Y
+Carolina,32,"Put that lil' bitch in her place, yeah",lil,34,"Fuck on your sister, your daughter, yeah",sister,INNER,ASSONANCE,vowel,MED,Y
+Carolina,33,"Bitch, I'm your, bitch, I'm your father, yeah",Bitch,33,"Bitch, I'm your, bitch, I'm your father, yeah",bitch,INNER,REPEAT,spelling,HIGH,N
+Carolina,33,"Bitch, I'm your, bitch, I'm your father, yeah",Bitch,34,"Fuck on your sister, your daughter, yeah",sister,INNER,ASSONANCE,vowel,MED,Y
+Carolina,33,"Bitch, I'm your, bitch, I'm your father, yeah",Bitch,35,"Your bitch comin' over, don't call her, yeah",bitch,INNER,REPEAT,spelling,HIGH,N
+Carolina,33,"Bitch, I'm your, bitch, I'm your father, yeah",father,36,"She give me brain like a scholar, yeah",scholar,END,SLANT,cmu,MED,Y
+Carolina,34,"Fuck on your sister, your daughter, yeah",daughter,35,"Your bitch comin' over, don't call her, yeah",call,END,SLANT,cmu,MED,Y
+Carolina,34,"Fuck on your sister, your daughter, yeah",Fuck,35,"Your bitch comin' over, don't call her, yeah",comin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,34,"Fuck on your sister, your daughter, yeah",sister,35,"Your bitch comin' over, don't call her, yeah",bitch,INNER,ASSONANCE,vowel,MED,Y
+Carolina,34,"Fuck on your sister, your daughter, yeah",sister,36,"She give me brain like a scholar, yeah",give,INNER,ASSONANCE,vowel,MED,Y
+Carolina,35,"Your bitch comin' over, don't call her, yeah",over,35,"Your bitch comin' over, don't call her, yeah",don't,INNER,ASSONANCE,vowel,MED,Y
+Carolina,35,"Your bitch comin' over, don't call her, yeah",bitch,36,"She give me brain like a scholar, yeah",give,INNER,SLANT,cmu,MED,Y
+Carolina,35,"Your bitch comin' over, don't call her, yeah",comin,37,"Run it up, run it up, run it up, yeah",Run,INNER,SLANT,cmu,MED,Y
+Carolina,36,"She give me brain like a scholar, yeah",like,38,"Hot like a hundred degrees, yeah",like,INNER,REPEAT,spelling,HIGH,N
+Carolina,36,"She give me brain like a scholar, yeah",scholar,38,"Hot like a hundred degrees, yeah",Hot,INNER,SLANT,cmu,MED,Y
+Carolina,37,"Run it up, run it up, run it up, yeah",Run,37,"Run it up, run it up, run it up, yeah",run,INNER,REPEAT,spelling,HIGH,N
+Carolina,37,"Run it up, run it up, run it up, yeah",Run,38,"Hot like a hundred degrees, yeah",hundred,INNER,ASSONANCE,vowel,MED,Y
+Carolina,38,"Hot like a hundred degrees, yeah",degrees,39,"Fendi, Riccardo my sleeve, yeah",sleeve,END,SLANT,cmu,MED,Y
+Carolina,38,"Hot like a hundred degrees, yeah",Hot,39,"Fendi, Riccardo my sleeve, yeah",Riccardo,INNER,ASSONANCE,vowel,MED,Y
+Carolina,38,"Hot like a hundred degrees, yeah",degrees,40,"I hit the bitch and I leave, yeah",leave,END,SLANT,cmu,MED,Y
+Carolina,39,"Fendi, Riccardo my sleeve, yeah",sleeve,40,"I hit the bitch and I leave, yeah",leave,END,PERFECT,cmu,HIGH,Y
+Carolina,40,"I hit the bitch and I leave, yeah",hit,40,"I hit the bitch and I leave, yeah",bitch,INNER,SLANT,cmu,MED,Y
+Carolina,40,"I hit the bitch and I leave, yeah",bitch,41,"Flippin' that work on the stove, ooh",Flippin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,40,"I hit the bitch and I leave, yeah",hit,41,"Flippin' that work on the stove, ooh",Flippin,INNER,ASSONANCE,vowel,MED,Y
+Carolina,40,"I hit the bitch and I leave, yeah",bitch,42,"I got my wrist out the boat, ooh",wrist,INNER,ASSONANCE,vowel,MED,Y
+Carolina,40,"I hit the bitch and I leave, yeah",hit,42,"I got my wrist out the boat, ooh",wrist,INNER,SLANT,cmu,MED,Y
+Carolina,41,"Flippin' that work on the stove, ooh",stove,42,"I got my wrist out the boat, ooh",boat,END,SLANT,cmu,MED,Y
+Carolina,41,"Flippin' that work on the stove, ooh",Flippin,42,"I got my wrist out the boat, ooh",wrist,INNER,ASSONANCE,vowel,MED,Y
+Carolina,41,"Flippin' that work on the stove, ooh",stove,43,"Still got to play with these hoes, ooh",hoes,END,SLANT,cmu,MED,Y
+Carolina,41,"Flippin' that work on the stove, ooh",Flippin,43,"Still got to play with these hoes, ooh",Still,INNER,ASSONANCE,vowel,MED,Y
+Carolina,41,"Flippin' that work on the stove, ooh",stove,44,Maison Margiela my toe,toe,END,ASSONANCE,vowel,MED,Y
+Carolina,42,"I got my wrist out the boat, ooh",boat,43,"Still got to play with these hoes, ooh",hoes,END,SLANT,cmu,MED,Y
+Carolina,42,"I got my wrist out the boat, ooh",got,43,"Still got to play with these hoes, ooh",got,INNER,REPEAT,spelling,HIGH,N
+Carolina,42,"I got my wrist out the boat, ooh",wrist,43,"Still got to play with these hoes, ooh",Still,INNER,ASSONANCE,vowel,MED,Y
+Carolina,42,"I got my wrist out the boat, ooh",boat,44,Maison Margiela my toe,toe,END,ASSONANCE,vowel,MED,Y
+Carolina,43,"Still got to play with these hoes, ooh",hoes,44,Maison Margiela my toe,toe,END,ASSONANCE,vowel,MED,Y
+Carolina,43,"Still got to play with these hoes, ooh",play,44,Maison Margiela my toe,Maison,INNER,ASSONANCE,vowel,MED,Y

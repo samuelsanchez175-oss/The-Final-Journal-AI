@@ -256,6 +256,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 244 | suav-corleone | Suav Corleone | 1 | 45 | 157 | 29 | 128 | 154 | 2026-11-10 13:23 ET |
 | 245 | dj-kash | DJ Kash | 1 | 44 | 335 | 78 | 257 | 331 | 2026-11-10 13:23 ET |
 | 246 | ksoo | Ksoo | 1 | 44 | 159 | 34 | 125 | 157 | 2026-11-10 13:23 ET |
+| 247 | major-nine | Major Nine | 1 | 44 | 246 | 20 | 226 | 226 | 2026-11-10 13:23 ET |
+| 248 | ralphs-one | Ralph’s One | 1 | 44 | 172 | 40 | 132 | 164 | 2026-11-10 13:23 ET |
+| 249 | thf-lil-law | THF LIL LAW | 1 | 44 | 455 | 49 | 406 | 451 | 2026-11-10 13:23 ET |
+| 250 | vl-deck | VL Deck | 1 | 44 | 357 | 43 | 314 | 353 | 2026-11-10 13:24 ET |
+| 251 | yuno-miles | Yuno Miles | 1 | 44 | 260 | 96 | 164 | 257 | 2026-11-10 13:24 ET |
+| 252 | dj-nick | DJ Nick | 1 | 43 | 167 | 42 | 125 | 163 | 2026-11-10 13:24 ET |
+| 253 | giggs | Giggs | 1 | 43 | 222 | 47 | 175 | 221 | 2026-11-10 13:24 ET |
+| 254 | j-stone | J. Stone | 1 | 43 | 349 | 69 | 280 | 345 | 2026-11-10 13:24 ET |
+| 255 | jimbo-world | Jimbo World | 1 | 43 | 275 | 51 | 224 | 273 | 2026-11-10 13:24 ET |
+| 256 | mobsquad-nard | MobSquad Nard | 1 | 43 | 195 | 30 | 165 | 194 | 2026-11-10 13:24 ET |
 
 ## Failures
 
@@ -263,7 +273,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 246/386: Ksoo.
+Finished 256/386: MobSquad Nard.
 
 ## Final
 
