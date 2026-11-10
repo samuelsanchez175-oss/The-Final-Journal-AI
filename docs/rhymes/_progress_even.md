@@ -76,6 +76,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 64 | pnb-rock | PnB Rock | 6 | 197 | 1199 | 165 | 1034 | 1182 | 2026-11-10 13:17 ET |
 | 65 | kanye-west | Kanye West | 4 | 194 | 1113 | 268 | 845 | 1100 | 2026-11-10 13:17 ET |
 | 66 | hotblock-jmoe | HotBlock Jmoe | 4 | 192 | 1649 | 262 | 1387 | 1605 | 2026-11-10 13:17 ET |
+| 67 | trae-tha-truth | Trae tha Truth | 2 | 188 | 1124 | 173 | 951 | 1117 | 2026-11-10 13:17 ET |
+| 68 | the-game | The Game | 3 | 185 | 1317 | 196 | 1121 | 1299 | 2026-11-10 13:17 ET |
+| 69 | dj-drama | DJ Drama | 3 | 178 | 1079 | 170 | 909 | 1072 | 2026-11-10 13:17 ET |
+| 70 | dj-pharris | DJ Pharris | 3 | 174 | 1036 | 244 | 792 | 1016 | 2026-11-10 13:17 ET |
+| 71 | pgf-nuk | PGF Nuk | 3 | 163 | 1107 | 205 | 902 | 1095 | 2026-11-10 13:17 ET |
+| 72 | rundown-zay | Rundown Zay | 3 | 153 | 1055 | 129 | 926 | 1031 | 2026-11-10 13:17 ET |
+| 73 | dj-holiday | DJ Holiday | 3 | 151 | 705 | 178 | 527 | 696 | 2026-11-10 13:17 ET |
+| 74 | big-opp | Big Opp | 3 | 146 | 1499 | 236 | 1263 | 1487 | 2026-11-10 13:17 ET |
+| 75 | sosamann | Sosamann | 2 | 143 | 782 | 201 | 581 | 758 | 2026-11-10 13:17 ET |
+| 76 | coi-leray | Coi Leray | 3 | 140 | 919 | 207 | 712 | 907 | 2026-11-10 13:18 ET |
 
 ## Failures
 
@@ -83,7 +93,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 66/386: HotBlock Jmoe.
+Finished 76/386: Coi Leray.
 
 ## Final
 

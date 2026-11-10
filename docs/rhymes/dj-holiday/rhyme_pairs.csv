@@ -1,0 +1,818 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+2 Seater,1,"They be playin' with this shit, man",playin,2,Y'all niggas playin' with the money,playin,INNER,REPEAT,spelling,HIGH,N
+2 Seater,1,"They be playin' with this shit, man",shit,3,Y'all don't even know what the fuck to do with this shit,shit,INNER,REPEAT,spelling,HIGH,N
+2 Seater,2,Y'all niggas playin' with the money,money,3,Y'all don't even know what the fuck to do with this shit,fuck,INNER,SLANT,cmu,MED,Y
+2 Seater,2,Y'all niggas playin' with the money,money,3,Y'all don't even know what the fuck to do with this shit,what,INNER,SLANT,cmu,MED,Y
+2 Seater,2,Y'all niggas playin' with the money,Y'all,3,Y'all don't even know what the fuck to do with this shit,Y'all,INNER,REPEAT,spelling,HIGH,N
+2 Seater,2,Y'all niggas playin' with the money,niggas,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+2 Seater,2,Y'all niggas playin' with the money,niggas,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",niggas,INNER,REPEAT,spelling,HIGH,N
+2 Seater,2,Y'all niggas playin' with the money,playin,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",ain't,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,2,Y'all niggas playin' with the money,Y'all,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",Y'all,INNER,REPEAT,spelling,HIGH,N
+2 Seater,3,Y'all don't even know what the fuck to do with this shit,don't,3,Y'all don't even know what the fuck to do with this shit,know,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,3,Y'all don't even know what the fuck to do with this shit,what,3,Y'all don't even know what the fuck to do with this shit,fuck,INNER,SLANT,cmu,MED,Y
+2 Seater,3,Y'all don't even know what the fuck to do with this shit,shit,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",nigga,END,SLANT,spelling,LOW,Y
+2 Seater,3,Y'all don't even know what the fuck to do with this shit,even,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",even,INNER,REPEAT,spelling,HIGH,N
+2 Seater,3,Y'all don't even know what the fuck to do with this shit,shit,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",shit,INNER,REPEAT,spelling,HIGH,N
+2 Seater,3,Y'all don't even know what the fuck to do with this shit,Y'all,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",Y'all,INNER,REPEAT,spelling,HIGH,N
+2 Seater,3,Y'all don't even know what the fuck to do with this shit,even,5,I pour an eight in a liter (ayy),liter,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,3,Y'all don't even know what the fuck to do with this shit,Y'all,5,I pour an eight in a liter (ayy),pour,INNER,SLANT,cmu,MED,Y
+2 Seater,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",niggas,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+2 Seater,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",shit,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+2 Seater,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",Y'all,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",y'all,INNER,REPEAT,spelling,HIGH,N
+2 Seater,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",ain't,5,I pour an eight in a liter (ayy),eight,INNER,SLANT,cmu,MED,Y
+2 Seater,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",even,5,I pour an eight in a liter (ayy),liter,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",Y'all,5,I pour an eight in a liter (ayy),pour,INNER,SLANT,cmu,MED,Y
+2 Seater,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",even,6,We trendin' the web like PETA (we trendin'),PETA,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,4,"Y'all niggas act like y'all ain't even used to this shit, nigga",like,6,We trendin' the web like PETA (we trendin'),like,INNER,REPEAT,spelling,HIGH,N
+2 Seater,5,I pour an eight in a liter (ayy),liter,6,We trendin' the web like PETA (we trendin'),PETA,END,SLANT,cmu,MED,Y
+2 Seater,5,I pour an eight in a liter (ayy),liter,7,I'm an OG like Adidas (OG!),Adidas,END,ASSONANCE,vowel,MED,Y
+2 Seater,5,I pour an eight in a liter (ayy),liter,8,"Two-seater, two-seater, two-seater (skrrt)",seater,END,MULTI,multi,HIGH,Y
+2 Seater,5,I pour an eight in a liter (ayy),liter,9,I got an iPhone and beeper (brrt),beeper,END,SLANT,cmu,MED,Y
+2 Seater,6,We trendin' the web like PETA (we trendin'),trendin,6,We trendin' the web like PETA (we trendin'),web,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,6,We trendin' the web like PETA (we trendin'),PETA,7,I'm an OG like Adidas (OG!),Adidas,END,ASSONANCE,vowel,MED,Y
+2 Seater,6,We trendin' the web like PETA (we trendin'),like,7,I'm an OG like Adidas (OG!),like,INNER,REPEAT,spelling,HIGH,N
+2 Seater,6,We trendin' the web like PETA (we trendin'),PETA,8,"Two-seater, two-seater, two-seater (skrrt)",seater,END,SLANT,cmu,MED,Y
+2 Seater,6,We trendin' the web like PETA (we trendin'),PETA,8,"Two-seater, two-seater, two-seater (skrrt)",seater,INNER,SLANT,cmu,MED,Y
+2 Seater,6,We trendin' the web like PETA (we trendin'),PETA,9,I got an iPhone and beeper (brrt),beeper,END,SLANT,cmu,MED,Y
+2 Seater,6,We trendin' the web like PETA (we trendin'),PETA,10,"Look at your ho, she a cheater (look at her)",cheater,END,SLANT,cmu,MED,Y
+2 Seater,7,I'm an OG like Adidas (OG!),Adidas,8,"Two-seater, two-seater, two-seater (skrrt)",seater,END,ASSONANCE,vowel,MED,Y
+2 Seater,7,I'm an OG like Adidas (OG!),Adidas,8,"Two-seater, two-seater, two-seater (skrrt)",seater,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,7,I'm an OG like Adidas (OG!),Adidas,9,I got an iPhone and beeper (brrt),beeper,END,ASSONANCE,vowel,MED,Y
+2 Seater,7,I'm an OG like Adidas (OG!),OG,9,I got an iPhone and beeper (brrt),got,INNER,SLANT,cmu,MED,Y
+2 Seater,7,I'm an OG like Adidas (OG!),Adidas,10,"Look at your ho, she a cheater (look at her)",cheater,END,ASSONANCE,vowel,MED,Y
+2 Seater,7,I'm an OG like Adidas (OG!),Adidas,11,And you still want to keep her (ew),keep,END,ASSONANCE,vowel,MED,Y
+2 Seater,8,"Two-seater, two-seater, two-seater (skrrt)",seater,8,"Two-seater, two-seater, two-seater (skrrt)",seater,INNER,REPEAT,spelling,HIGH,N
+2 Seater,8,"Two-seater, two-seater, two-seater (skrrt)",Two,8,"Two-seater, two-seater, two-seater (skrrt)",two,INNER,REPEAT,spelling,HIGH,N
+2 Seater,8,"Two-seater, two-seater, two-seater (skrrt)",seater,9,I got an iPhone and beeper (brrt),beeper,END,SLANT,cmu,MED,Y
+2 Seater,8,"Two-seater, two-seater, two-seater (skrrt)",seater,9,I got an iPhone and beeper (brrt),beeper,INNER,SLANT,cmu,MED,Y
+2 Seater,8,"Two-seater, two-seater, two-seater (skrrt)",seater,10,"Look at your ho, she a cheater (look at her)",cheater,END,MULTI,multi,HIGH,Y
+2 Seater,8,"Two-seater, two-seater, two-seater (skrrt)",seater,10,"Look at your ho, she a cheater (look at her)",cheater,INNER,MULTI,multi,HIGH,Y
+2 Seater,8,"Two-seater, two-seater, two-seater (skrrt)",Two seater,10,"Look at your ho, she a cheater (look at her)",ho cheater,INNER,MULTI,multi,HIGH,Y
+2 Seater,8,"Two-seater, two-seater, two-seater (skrrt)",seater,11,And you still want to keep her (ew),keep,END,SLANT,cmu,MED,Y
+2 Seater,8,"Two-seater, two-seater, two-seater (skrrt)",seater,12,"I just Michael Jackson, beat her (beat it)",beat,END,SLANT,cmu,MED,Y
+2 Seater,9,I got an iPhone and beeper (brrt),beeper,10,"Look at your ho, she a cheater (look at her)",cheater,END,SLANT,cmu,MED,Y
+2 Seater,9,I got an iPhone and beeper (brrt),iPhone,10,"Look at your ho, she a cheater (look at her)",ho,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,9,I got an iPhone and beeper (brrt),beeper,11,And you still want to keep her (ew),keep,END,SLANT,cmu,MED,Y
+2 Seater,9,I got an iPhone and beeper (brrt),got,11,And you still want to keep her (ew),want,INNER,SLANT,cmu,MED,Y
+2 Seater,9,I got an iPhone and beeper (brrt),beeper,12,"I just Michael Jackson, beat her (beat it)",beat,END,SLANT,cmu,MED,Y
+2 Seater,10,"Look at your ho, she a cheater (look at her)",cheater,11,And you still want to keep her (ew),keep,END,SLANT,cmu,MED,Y
+2 Seater,10,"Look at your ho, she a cheater (look at her)",cheater,12,"I just Michael Jackson, beat her (beat it)",beat,END,SLANT,cmu,MED,Y
+2 Seater,11,And you still want to keep her (ew),keep,12,"I just Michael Jackson, beat her (beat it)",beat,END,SLANT,cmu,MED,Y
+2 Seater,12,"I just Michael Jackson, beat her (beat it)",Jackson,13,"Don't talk about swag, I'm dabbin' (I'm dabbin')",dabbin,INNER,SLANT,cmu,MED,Y
+2 Seater,12,"I just Michael Jackson, beat her (beat it)",Jackson,14,I read up on all new assassins (pow),assassins,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,13,"Don't talk about swag, I'm dabbin' (I'm dabbin')",dabbin,14,I read up on all new assassins (pow),assassins,END,ASSONANCE,vowel,MED,Y
+2 Seater,13,"Don't talk about swag, I'm dabbin' (I'm dabbin')",talk,14,I read up on all new assassins (pow),all,INNER,SLANT,cmu,MED,Y
+2 Seater,13,"Don't talk about swag, I'm dabbin' (I'm dabbin')",dabbin,15,I'm movin' in orderly fashion,fashion,END,ASSONANCE,vowel,MED,Y
+2 Seater,13,"Don't talk about swag, I'm dabbin' (I'm dabbin')",talk,15,I'm movin' in orderly fashion,orderly,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,13,"Don't talk about swag, I'm dabbin' (I'm dabbin')",dabbin,17,My niggas playing with plastic (plastic),plastic,END,ASSONANCE,vowel,MED,Y
+2 Seater,14,I read up on all new assassins (pow),assassins,15,I'm movin' in orderly fashion,fashion,END,ASSONANCE,vowel,MED,Y
+2 Seater,14,I read up on all new assassins (pow),all,15,I'm movin' in orderly fashion,orderly,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,14,I read up on all new assassins (pow),new,15,I'm movin' in orderly fashion,movin,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,14,I read up on all new assassins (pow),new,16,"We gotta move like Obama, Obama, Obama",move,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,14,I read up on all new assassins (pow),assassins,17,My niggas playing with plastic (plastic),plastic,END,ASSONANCE,vowel,MED,Y
+2 Seater,14,I read up on all new assassins (pow),assassins,18,My life a real scare tactic (scary),tactic,END,ASSONANCE,vowel,MED,Y
+2 Seater,15,I'm movin' in orderly fashion,movin,16,"We gotta move like Obama, Obama, Obama",move,INNER,SLANT,cmu,MED,Y
+2 Seater,15,I'm movin' in orderly fashion,fashion,17,My niggas playing with plastic (plastic),plastic,END,ASSONANCE,vowel,MED,Y
+2 Seater,15,I'm movin' in orderly fashion,fashion,18,My life a real scare tactic (scary),tactic,END,ASSONANCE,vowel,MED,Y
+2 Seater,15,I'm movin' in orderly fashion,fashion,19,You niggas drinkin' molasses,molasses,END,ASSONANCE,vowel,MED,Y
+2 Seater,16,"We gotta move like Obama, Obama, Obama",gotta,16,"We gotta move like Obama, Obama, Obama",Obama,INNER,SLANT,cmu,MED,Y
+2 Seater,16,"We gotta move like Obama, Obama, Obama",Obama,16,"We gotta move like Obama, Obama, Obama",Obama,INNER,REPEAT,spelling,HIGH,N
+2 Seater,16,"We gotta move like Obama, Obama, Obama",like,18,My life a real scare tactic (scary),life,INNER,SLANT,cmu,MED,Y
+2 Seater,17,My niggas playing with plastic (plastic),plastic,18,My life a real scare tactic (scary),tactic,END,SLANT,cmu,MED,Y
+2 Seater,17,My niggas playing with plastic (plastic),plastic,19,You niggas drinkin' molasses,molasses,END,ASSONANCE,vowel,MED,Y
+2 Seater,17,My niggas playing with plastic (plastic),niggas,19,You niggas drinkin' molasses,niggas,INNER,REPEAT,spelling,HIGH,N
+2 Seater,18,My life a real scare tactic (scary),tactic,19,You niggas drinkin' molasses,molasses,END,ASSONANCE,vowel,MED,Y
+2 Seater,19,You niggas drinkin' molasses,drinkin,20,What is you drinkin'?,drinkin,INNER,REPEAT,spelling,HIGH,N
+2 Seater,19,You niggas drinkin' molasses,drinkin,21,Why did you buy that and drink it?,drink,INNER,SLANT,cmu,MED,Y
+2 Seater,20,What is you drinkin'?,drinkin,21,Why did you buy that and drink it?,drink,END,SLANT,cmu,MED,Y
+2 Seater,21,Why did you buy that and drink it?,Why,21,Why did you buy that and drink it?,buy,INNER,PERFECT,cmu,HIGH,Y
+2 Seater,21,Why did you buy that and drink it?,buy,23,Dancin' with the work like I'm James Brown (ow),like,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,21,Why did you buy that and drink it?,Why,23,Dancin' with the work like I'm James Brown (ow),like,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",pound,22,"When I first got my pound, I broke it down (ayy)",down,INNER,SLANT,cmu,MED,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",down,23,Dancin' with the work like I'm James Brown (ow),Brown,END,PERFECT,cmu,HIGH,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",first,23,Dancin' with the work like I'm James Brown (ow),work,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",pound,23,Dancin' with the work like I'm James Brown (ow),Brown,INNER,SLANT,cmu,MED,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",down,24,Young nigga havin' fame 'round town,town,END,PERFECT,cmu,HIGH,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",down,24,Young nigga havin' fame 'round town,'round,INNER,SLANT,cmu,MED,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",pound,24,Young nigga havin' fame 'round town,'round,INNER,PERFECT,cmu,HIGH,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",pound,24,Young nigga havin' fame 'round town,town,INNER,SLANT,cmu,MED,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",down,25,Then we got rich off of verbs and nouns,nouns,END,SLANT,cmu,MED,Y
+2 Seater,22,"When I first got my pound, I broke it down (ayy)",down,26,"Never been a sucker, never been a clown",clown,END,PERFECT,cmu,HIGH,Y
+2 Seater,23,Dancin' with the work like I'm James Brown (ow),Brown,24,Young nigga havin' fame 'round town,town,END,PERFECT,cmu,HIGH,Y
+2 Seater,23,Dancin' with the work like I'm James Brown (ow),Brown,24,Young nigga havin' fame 'round town,'round,INNER,SLANT,cmu,MED,Y
+2 Seater,23,Dancin' with the work like I'm James Brown (ow),Dancin,24,Young nigga havin' fame 'round town,havin,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,23,Dancin' with the work like I'm James Brown (ow),James,24,Young nigga havin' fame 'round town,fame,INNER,SLANT,cmu,MED,Y
+2 Seater,23,Dancin' with the work like I'm James Brown (ow),Brown,25,Then we got rich off of verbs and nouns,nouns,END,SLANT,cmu,MED,Y
+2 Seater,23,Dancin' with the work like I'm James Brown (ow),work,25,Then we got rich off of verbs and nouns,verbs,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,23,Dancin' with the work like I'm James Brown (ow),Brown,26,"Never been a sucker, never been a clown",clown,END,PERFECT,cmu,HIGH,Y
+2 Seater,23,Dancin' with the work like I'm James Brown (ow),Brown,27,"Cash out a four-four check, then watch it bounce",bounce,END,SLANT,cmu,MED,Y
+2 Seater,24,Young nigga havin' fame 'round town,'round,24,Young nigga havin' fame 'round town,town,INNER,SLANT,cmu,MED,Y
+2 Seater,24,Young nigga havin' fame 'round town,town,25,Then we got rich off of verbs and nouns,nouns,END,SLANT,cmu,MED,Y
+2 Seater,24,Young nigga havin' fame 'round town,'round,25,Then we got rich off of verbs and nouns,nouns,INNER,SLANT,cmu,MED,Y
+2 Seater,24,Young nigga havin' fame 'round town,town,26,"Never been a sucker, never been a clown",clown,END,PERFECT,cmu,HIGH,Y
+2 Seater,24,Young nigga havin' fame 'round town,'round,26,"Never been a sucker, never been a clown",clown,INNER,SLANT,cmu,MED,Y
+2 Seater,24,Young nigga havin' fame 'round town,Young,26,"Never been a sucker, never been a clown",sucker,INNER,SLANT,cmu,MED,Y
+2 Seater,24,Young nigga havin' fame 'round town,town,27,"Cash out a four-four check, then watch it bounce",bounce,END,SLANT,cmu,MED,Y
+2 Seater,24,Young nigga havin' fame 'round town,town,28,"Trap out the bando, trap out the ounce",ounce,END,SLANT,cmu,MED,Y
+2 Seater,25,Then we got rich off of verbs and nouns,nouns,26,"Never been a sucker, never been a clown",clown,END,SLANT,cmu,MED,Y
+2 Seater,25,Then we got rich off of verbs and nouns,nouns,27,"Cash out a four-four check, then watch it bounce",bounce,END,SLANT,cmu,MED,Y
+2 Seater,25,Then we got rich off of verbs and nouns,got,27,"Cash out a four-four check, then watch it bounce",watch,INNER,SLANT,cmu,MED,Y
+2 Seater,25,Then we got rich off of verbs and nouns,nouns,28,"Trap out the bando, trap out the ounce",ounce,END,SLANT,cmu,MED,Y
+2 Seater,25,Then we got rich off of verbs and nouns,nouns,29,Finesse the plug 'cause he keeps changin' amounts (go),amounts,END,SLANT,cmu,MED,Y
+2 Seater,26,"Never been a sucker, never been a clown",Never,26,"Never been a sucker, never been a clown",never,INNER,REPEAT,spelling,HIGH,N
+2 Seater,26,"Never been a sucker, never been a clown",clown,27,"Cash out a four-four check, then watch it bounce",bounce,END,SLANT,cmu,MED,Y
+2 Seater,26,"Never been a sucker, never been a clown",Never,27,"Cash out a four-four check, then watch it bounce",check,INNER,SLANT,cmu,MED,Y
+2 Seater,26,"Never been a sucker, never been a clown",clown,28,"Trap out the bando, trap out the ounce",ounce,END,SLANT,cmu,MED,Y
+2 Seater,26,"Never been a sucker, never been a clown",clown,29,Finesse the plug 'cause he keeps changin' amounts (go),amounts,END,ASSONANCE,vowel,MED,Y
+2 Seater,26,"Never been a sucker, never been a clown",clown,30,"Thirty in my hand, pump on the couch",couch,END,SLANT,cmu,MED,Y
+2 Seater,27,"Cash out a four-four check, then watch it bounce",four,27,"Cash out a four-four check, then watch it bounce",four,INNER,REPEAT,spelling,HIGH,N
+2 Seater,27,"Cash out a four-four check, then watch it bounce",bounce,28,"Trap out the bando, trap out the ounce",ounce,END,PERFECT,cmu,HIGH,Y
+2 Seater,27,"Cash out a four-four check, then watch it bounce",Cash,28,"Trap out the bando, trap out the ounce",Trap,INNER,SLANT,cmu,MED,Y
+2 Seater,27,"Cash out a four-four check, then watch it bounce",bounce,29,Finesse the plug 'cause he keeps changin' amounts (go),amounts,END,SLANT,cmu,MED,Y
+2 Seater,27,"Cash out a four-four check, then watch it bounce",check,29,Finesse the plug 'cause he keeps changin' amounts (go),Finesse,INNER,SLANT,cmu,MED,Y
+2 Seater,27,"Cash out a four-four check, then watch it bounce",bounce,30,"Thirty in my hand, pump on the couch",couch,END,ASSONANCE,vowel,MED,Y
+2 Seater,27,"Cash out a four-four check, then watch it bounce",bounce,31,'Cause a nigga paranoid now (paranoid),now,END,ASSONANCE,vowel,MED,Y
+2 Seater,28,"Trap out the bando, trap out the ounce",Trap,28,"Trap out the bando, trap out the ounce",trap,INNER,REPEAT,spelling,HIGH,N
+2 Seater,28,"Trap out the bando, trap out the ounce",ounce,29,Finesse the plug 'cause he keeps changin' amounts (go),amounts,END,SLANT,cmu,MED,Y
+2 Seater,28,"Trap out the bando, trap out the ounce",ounce,30,"Thirty in my hand, pump on the couch",couch,END,ASSONANCE,vowel,MED,Y
+2 Seater,28,"Trap out the bando, trap out the ounce",bando,30,"Thirty in my hand, pump on the couch",hand,INNER,SLANT,spelling,LOW,Y
+2 Seater,28,"Trap out the bando, trap out the ounce",Trap,30,"Thirty in my hand, pump on the couch",hand,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,28,"Trap out the bando, trap out the ounce",ounce,31,'Cause a nigga paranoid now (paranoid),now,END,ASSONANCE,vowel,MED,Y
+2 Seater,29,Finesse the plug 'cause he keeps changin' amounts (go),amounts,30,"Thirty in my hand, pump on the couch",couch,END,ASSONANCE,vowel,MED,Y
+2 Seater,29,Finesse the plug 'cause he keeps changin' amounts (go),keeps,30,"Thirty in my hand, pump on the couch",Thirty,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,29,Finesse the plug 'cause he keeps changin' amounts (go),plug,30,"Thirty in my hand, pump on the couch",pump,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,29,Finesse the plug 'cause he keeps changin' amounts (go),amounts,31,'Cause a nigga paranoid now (paranoid),now,END,ASSONANCE,vowel,MED,Y
+2 Seater,29,Finesse the plug 'cause he keeps changin' amounts (go),'cause,31,'Cause a nigga paranoid now (paranoid),'Cause,INNER,REPEAT,spelling,HIGH,N
+2 Seater,30,"Thirty in my hand, pump on the couch",couch,31,'Cause a nigga paranoid now (paranoid),now,END,ASSONANCE,vowel,MED,Y
+2 Seater,30,"Thirty in my hand, pump on the couch",hand,32,"If you come up, don't abandon your hood (naw)",abandon,INNER,SLANT,cmu,MED,Y
+2 Seater,30,"Thirty in my hand, pump on the couch",pump,32,"If you come up, don't abandon your hood (naw)",come,INNER,SLANT,cmu,MED,Y
+2 Seater,32,"If you come up, don't abandon your hood (naw)",come,33,They'll be the first to punch you right out,punch,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,32,"If you come up, don't abandon your hood (naw)",hood,34,My life is lookin' amazin' (ooh),lookin,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,33,They'll be the first to punch you right out,right,34,My life is lookin' amazin' (ooh),life,INNER,SLANT,cmu,MED,Y
+2 Seater,33,They'll be the first to punch you right out,They'll,34,My life is lookin' amazin' (ooh),amazin,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,33,They'll be the first to punch you right out,punch,35,"If I send you rice, it come with the gravy",come,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,33,They'll be the first to punch you right out,right,35,"If I send you rice, it come with the gravy",rice,INNER,SLANT,cmu,MED,Y
+2 Seater,33,They'll be the first to punch you right out,They'll,35,"If I send you rice, it come with the gravy",gravy,INNER,SLANT,cmu,MED,Y
+2 Seater,34,My life is lookin' amazin' (ooh),amazin,35,"If I send you rice, it come with the gravy",gravy,END,ASSONANCE,vowel,MED,Y
+2 Seater,34,My life is lookin' amazin' (ooh),life,35,"If I send you rice, it come with the gravy",rice,INNER,SLANT,cmu,MED,Y
+2 Seater,34,My life is lookin' amazin' (ooh),amazin,36,Think a nigga talkin' crazy (huh?),crazy,END,SLANT,cmu,MED,Y
+2 Seater,34,My life is lookin' amazin' (ooh),amazin,37,"Try it 'fore you buy it, I make you pay me (go!)",pay,END,ASSONANCE,vowel,MED,Y
+2 Seater,35,"If I send you rice, it come with the gravy",gravy,36,Think a nigga talkin' crazy (huh?),crazy,END,SLANT,cmu,MED,Y
+2 Seater,35,"If I send you rice, it come with the gravy",gravy,37,"Try it 'fore you buy it, I make you pay me (go!)",pay,END,ASSONANCE,vowel,MED,Y
+2 Seater,35,"If I send you rice, it come with the gravy",gravy,37,"Try it 'fore you buy it, I make you pay me (go!)",make,INNER,SLANT,cmu,MED,Y
+2 Seater,35,"If I send you rice, it come with the gravy",rice,37,"Try it 'fore you buy it, I make you pay me (go!)",buy,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,35,"If I send you rice, it come with the gravy",rice,37,"Try it 'fore you buy it, I make you pay me (go!)",Try,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,36,Think a nigga talkin' crazy (huh?),crazy,37,"Try it 'fore you buy it, I make you pay me (go!)",pay,END,ASSONANCE,vowel,MED,Y
+2 Seater,36,Think a nigga talkin' crazy (huh?),crazy,37,"Try it 'fore you buy it, I make you pay me (go!)",make,INNER,SLANT,cmu,MED,Y
+2 Seater,36,Think a nigga talkin' crazy (huh?),talkin,38,"I'm from Zone 6, lot of killin' and drugs (21)",lot,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,36,Think a nigga talkin' crazy (huh?),Think,38,"I'm from Zone 6, lot of killin' and drugs (21)",killin,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,37,"Try it 'fore you buy it, I make you pay me (go!)",make,37,"Try it 'fore you buy it, I make you pay me (go!)",pay,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,37,"Try it 'fore you buy it, I make you pay me (go!)",Try,37,"Try it 'fore you buy it, I make you pay me (go!)",buy,INNER,PERFECT,cmu,HIGH,Y
+2 Seater,38,"I'm from Zone 6, lot of killin' and drugs (21)",drugs,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",club,END,ASSONANCE,vowel,MED,Y
+2 Seater,38,"I'm from Zone 6, lot of killin' and drugs (21)",drugs,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",Fuck,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,38,"I'm from Zone 6, lot of killin' and drugs (21)",drugs,40,I grab my bitch's booty every time that we hug (21),hug,END,SLANT,cmu,MED,Y
+2 Seater,38,"I'm from Zone 6, lot of killin' and drugs (21)",killin,40,I grab my bitch's booty every time that we hug (21),bitch's,INNER,ASSONANCE,vowel,LOW,N
+2 Seater,38,"I'm from Zone 6, lot of killin' and drugs (21)",drugs,41,"She got ass shots, but I still fell in love (yeah)",love,END,ASSONANCE,vowel,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",autograph,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",strapped,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",Fuck,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",club,INNER,SLANT,cmu,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",club,40,I grab my bitch's booty every time that we hug (21),hug,END,SLANT,cmu,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",autograph,40,I grab my bitch's booty every time that we hug (21),grab,INNER,SLANT,cmu,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",Fuck,40,I grab my bitch's booty every time that we hug (21),hug,INNER,SLANT,cmu,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",strapped,40,I grab my bitch's booty every time that we hug (21),grab,INNER,SLANT,cmu,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",club,41,"She got ass shots, but I still fell in love (yeah)",love,END,SLANT,cmu,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",autograph,41,"She got ass shots, but I still fell in love (yeah)",ass,INNER,SLANT,cmu,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",Fuck,41,"She got ass shots, but I still fell in love (yeah)",love,INNER,SLANT,cmu,MED,Y
+2 Seater,39,"Fuck an autograph, nigga, I'm strapped in the club (pow, pow, pow, pow)",strapped,41,"She got ass shots, but I still fell in love (yeah)",ass,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,40,I grab my bitch's booty every time that we hug (21),hug,41,"She got ass shots, but I still fell in love (yeah)",love,END,SLANT,cmu,MED,Y
+2 Seater,40,I grab my bitch's booty every time that we hug (21),bitch's,41,"She got ass shots, but I still fell in love (yeah)",still,INNER,ASSONANCE,vowel,LOW,N
+2 Seater,40,I grab my bitch's booty every time that we hug (21),every,41,"She got ass shots, but I still fell in love (yeah)",fell,INNER,SLANT,cmu,MED,Y
+2 Seater,40,I grab my bitch's booty every time that we hug (21),grab,41,"She got ass shots, but I still fell in love (yeah)",ass,INNER,SLANT,cmu,MED,Y
+2 Seater,41,"She got ass shots, but I still fell in love (yeah)",got,41,"She got ass shots, but I still fell in love (yeah)",shots,INNER,SLANT,cmu,MED,Y
+2 Seater,41,"She got ass shots, but I still fell in love (yeah)",got,42,"Turn up the knob (21), Holiday, turn up the knob (21)",knob,INNER,SLANT,cmu,MED,Y
+2 Seater,41,"She got ass shots, but I still fell in love (yeah)",shots,42,"Turn up the knob (21), Holiday, turn up the knob (21)",knob,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,41,"She got ass shots, but I still fell in love (yeah)",ass,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",rappers,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,41,"She got ass shots, but I still fell in love (yeah)",fell,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",get,INNER,SLANT,cmu,MED,Y
+2 Seater,41,"She got ass shots, but I still fell in love (yeah)",got,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",job,INNER,SLANT,cmu,MED,Y
+2 Seater,41,"She got ass shots, but I still fell in love (yeah)",shots,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",job,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,42,"Turn up the knob (21), Holiday, turn up the knob (21)",knob,42,"Turn up the knob (21), Holiday, turn up the knob (21)",knob,INNER,REPEAT,spelling,HIGH,N
+2 Seater,42,"Turn up the knob (21), Holiday, turn up the knob (21)",Turn,42,"Turn up the knob (21), Holiday, turn up the knob (21)",turn,INNER,REPEAT,spelling,HIGH,N
+2 Seater,42,"Turn up the knob (21), Holiday, turn up the knob (21)",Holiday,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",fake,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,42,"Turn up the knob (21), Holiday, turn up the knob (21)",knob,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",job,INNER,PERFECT,cmu,HIGH,Y
+2 Seater,42,"Turn up the knob (21), Holiday, turn up the knob (21)",knob,44,Glock .40 with the Gucci jacket (21),Glock,INNER,SLANT,cmu,MED,Y
+2 Seater,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",job,44,Glock .40 with the Gucci jacket (21),Glock,INNER,SLANT,cmu,MED,Y
+2 Seater,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",rappers,44,Glock .40 with the Gucci jacket (21),jacket,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",broad,45,"Fuck a diss song, close his casket (21)",song,INNER,SLANT,cmu,MED,Y
+2 Seater,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",no,45,"Fuck a diss song, close his casket (21)",close,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",rappers,45,"Fuck a diss song, close his casket (21)",casket,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,43,"Street nigga, no job (ya dig), fake rappers get broad (straight up)",broad,46,Sold crack before I sold a record (I did),record,END,SLANT,cmu,MED,Y
+2 Seater,44,Glock .40 with the Gucci jacket (21),jacket,45,"Fuck a diss song, close his casket (21)",casket,END,SLANT,cmu,MED,Y
+2 Seater,44,Glock .40 with the Gucci jacket (21),jacket,46,Sold crack before I sold a record (I did),crack,INNER,SLANT,cmu,MED,Y
+2 Seater,45,"Fuck a diss song, close his casket (21)",casket,46,Sold crack before I sold a record (I did),crack,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,45,"Fuck a diss song, close his casket (21)",close,46,Sold crack before I sold a record (I did),Sold,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,45,"Fuck a diss song, close his casket (21)",song,46,Sold crack before I sold a record (I did),before,INNER,SLANT,cmu,MED,Y
+2 Seater,45,"Fuck a diss song, close his casket (21)",song,46,Sold crack before I sold a record (I did),record,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,46,Sold crack before I sold a record (I did),before,46,Sold crack before I sold a record (I did),record,INNER,SLANT,cmu,MED,Y
+2 Seater,46,Sold crack before I sold a record (I did),Sold,46,Sold crack before I sold a record (I did),sold,INNER,REPEAT,spelling,HIGH,N
+2 Seater,46,Sold crack before I sold a record (I did),Sold,48,"Hold up, nigga (21)",Hold,INNER,PERFECT,cmu,HIGH,Y
+2 Seater,47,"Glenwood, nigga, right at Checker's",nigga,48,"Hold up, nigga (21)",nigga,INNER,REPEAT,spelling,HIGH,N
+2 Seater,47,"Glenwood, nigga, right at Checker's",nigga,49,"I'll pour a four up, nigga (21)",nigga,INNER,REPEAT,spelling,HIGH,N
+2 Seater,47,"Glenwood, nigga, right at Checker's",right,49,"I'll pour a four up, nigga (21)",I'll,INNER,SLANT,cmu,MED,Y
+2 Seater,48,"Hold up, nigga (21)",nigga,49,"I'll pour a four up, nigga (21)",nigga,END,REPEAT,spelling,HIGH,N
+2 Seater,48,"Hold up, nigga (21)",nigga,50,"I'll pick your ho up, nigga (21)",nigga,END,REPEAT,spelling,HIGH,N
+2 Seater,48,"Hold up, nigga (21)",Hold,50,"I'll pick your ho up, nigga (21)",ho,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,48,"Hold up, nigga (21)",nigga,50,"I'll pick your ho up, nigga (21)",pick,INNER,SLANT,spelling,LOW,Y
+2 Seater,48,"Hold up, nigga (21)",nigga,51,"I'll beat her throat up, nigga (you dig?)",nigga,END,REPEAT,spelling,HIGH,N
+2 Seater,49,"I'll pour a four up, nigga (21)",pour,49,"I'll pour a four up, nigga (21)",four,INNER,PERFECT,cmu,HIGH,Y
+2 Seater,49,"I'll pour a four up, nigga (21)",nigga,50,"I'll pick your ho up, nigga (21)",nigga,END,REPEAT,spelling,HIGH,N
+2 Seater,49,"I'll pour a four up, nigga (21)",I'll,50,"I'll pick your ho up, nigga (21)",I'll,INNER,REPEAT,spelling,HIGH,N
+2 Seater,49,"I'll pour a four up, nigga (21)",nigga,50,"I'll pick your ho up, nigga (21)",pick,INNER,SLANT,spelling,LOW,Y
+2 Seater,49,"I'll pour a four up, nigga (21)",nigga,51,"I'll beat her throat up, nigga (you dig?)",nigga,END,REPEAT,spelling,HIGH,N
+2 Seater,49,"I'll pour a four up, nigga (21)",I'll,51,"I'll beat her throat up, nigga (you dig?)",I'll,INNER,REPEAT,spelling,HIGH,N
+2 Seater,50,"I'll pick your ho up, nigga (21)",pick,50,"I'll pick your ho up, nigga (21)",nigga,INNER,SLANT,spelling,LOW,Y
+2 Seater,50,"I'll pick your ho up, nigga (21)",nigga,51,"I'll beat her throat up, nigga (you dig?)",nigga,END,REPEAT,spelling,HIGH,N
+2 Seater,50,"I'll pick your ho up, nigga (21)",ho,51,"I'll beat her throat up, nigga (you dig?)",throat,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,50,"I'll pick your ho up, nigga (21)",I'll,51,"I'll beat her throat up, nigga (you dig?)",I'll,INNER,REPEAT,spelling,HIGH,N
+2 Seater,50,"I'll pick your ho up, nigga (21)",pick,51,"I'll beat her throat up, nigga (you dig?)",nigga,INNER,SLANT,spelling,LOW,Y
+2 Seater,50,"I'll pick your ho up, nigga (21)",ho,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",bowl,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,50,"I'll pick your ho up, nigga (21)",I'll,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",by,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,51,"I'll beat her throat up, nigga (you dig?)",I'll,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",by,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,51,"I'll beat her throat up, nigga (you dig?)",throat,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",bowl,INNER,SLANT,cmu,MED,Y
+2 Seater,51,"I'll beat her throat up, nigga (you dig?)",throat,53,Made a quarter million scrapin' the bowl (skrrt),bowl,INNER,SLANT,cmu,MED,Y
+2 Seater,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",bowl,53,Made a quarter million scrapin' the bowl (skrrt),bowl,END,REPEAT,spelling,HIGH,N
+2 Seater,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",scrapin,53,Made a quarter million scrapin' the bowl (skrrt),Made,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",scrapin,53,Made a quarter million scrapin' the bowl (skrrt),scrapin,INNER,REPEAT,spelling,HIGH,N
+2 Seater,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",bowl,54,Bust-down Rollie came out the bowl (skrrt),bowl,END,REPEAT,spelling,HIGH,N
+2 Seater,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",bowl,54,Bust-down Rollie came out the bowl (skrrt),Rollie,INNER,SLANT,cmu,MED,Y
+2 Seater,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",scrapin,54,Bust-down Rollie came out the bowl (skrrt),came,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,52,"Sponsored by Pyrex, I'm scrapin' the bowl (skrrt)",bowl,55,"VVS' on me, nigga, they cold",cold,END,SLANT,cmu,MED,Y
+2 Seater,53,Made a quarter million scrapin' the bowl (skrrt),Made,53,Made a quarter million scrapin' the bowl (skrrt),scrapin,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,53,Made a quarter million scrapin' the bowl (skrrt),bowl,54,Bust-down Rollie came out the bowl (skrrt),bowl,END,REPEAT,spelling,HIGH,N
+2 Seater,53,Made a quarter million scrapin' the bowl (skrrt),bowl,54,Bust-down Rollie came out the bowl (skrrt),Rollie,INNER,SLANT,cmu,MED,Y
+2 Seater,53,Made a quarter million scrapin' the bowl (skrrt),Made,54,Bust-down Rollie came out the bowl (skrrt),came,INNER,SLANT,cmu,MED,Y
+2 Seater,53,Made a quarter million scrapin' the bowl (skrrt),scrapin,54,Bust-down Rollie came out the bowl (skrrt),came,INNER,ASSONANCE,vowel,MED,Y
+2 Seater,53,Made a quarter million scrapin' the bowl (skrrt),bowl,55,"VVS' on me, nigga, they cold",cold,END,SLANT,cmu,MED,Y
+2 Seater,54,Bust-down Rollie came out the bowl (skrrt),Rollie,54,Bust-down Rollie came out the bowl (skrrt),bowl,INNER,SLANT,cmu,MED,Y
+2 Seater,54,Bust-down Rollie came out the bowl (skrrt),bowl,55,"VVS' on me, nigga, they cold",cold,END,SLANT,cmu,MED,Y
+2 Seater,54,Bust-down Rollie came out the bowl (skrrt),Rollie,55,"VVS' on me, nigga, they cold",cold,INNER,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",get,1,"On the road tryna get it, doing shows every city",every,INNER,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",road,1,"On the road tryna get it, doing shows every city",shows,INNER,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",city,2,"I ain’t slept in a minute, I’m in my zone tryna win it",win,END,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",city,2,"I ain’t slept in a minute, I’m in my zone tryna win it",minute,INNER,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",every,2,"I ain’t slept in a minute, I’m in my zone tryna win it",slept,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",get,2,"I ain’t slept in a minute, I’m in my zone tryna win it",slept,INNER,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",road,2,"I ain’t slept in a minute, I’m in my zone tryna win it",zone,INNER,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",shows,2,"I ain’t slept in a minute, I’m in my zone tryna win it",zone,INNER,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",tryna,2,"I ain’t slept in a minute, I’m in my zone tryna win it",tryna,INNER,REPEAT,spelling,HIGH,N
+In A Minute,1,"On the road tryna get it, doing shows every city",city,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,END,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",city,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,INNER,SLANT,cmu,MED,Y
+In A Minute,1,"On the road tryna get it, doing shows every city",city,5,"So many hoes different, that’s just why I’m acting different",different,END,ASSONANCE,vowel,MED,Y
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",win,INNER,SLANT,cmu,MED,Y
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",win,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,END,SLANT,cmu,MED,Y
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",ain’t,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",ain’t,INNER,REPEAT,spelling,HIGH,N
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,INNER,REPEAT,spelling,HIGH,N
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",win,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,INNER,SLANT,cmu,MED,Y
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",minute,4,"She all alone in the city, I’m on the road call it",city,INNER,SLANT,cmu,MED,Y
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",win,4,"She all alone in the city, I’m on the road call it",city,INNER,SLANT,cmu,MED,Y
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",zone,4,"She all alone in the city, I’m on the road call it",alone,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",zone,4,"She all alone in the city, I’m on the road call it",road,INNER,SLANT,cmu,MED,Y
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",win,5,"So many hoes different, that’s just why I’m acting different",different,END,ASSONANCE,vowel,MED,Y
+In A Minute,2,"I ain’t slept in a minute, I’m in my zone tryna win it",win,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,END,SLANT,cmu,MED,Y
+In A Minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",ain’t,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",ain’t,INNER,REPEAT,spelling,HIGH,N
+In A Minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",fucked,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",fucked,INNER,REPEAT,spelling,HIGH,N
+In A Minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,INNER,REPEAT,spelling,HIGH,N
+In A Minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,4,"She all alone in the city, I’m on the road call it",city,INNER,SLANT,cmu,MED,Y
+In A Minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,5,"So many hoes different, that’s just why I’m acting different",different,END,SLANT,cmu,MED,Y
+In A Minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,5,"So many hoes different, that’s just why I’m acting different",different,INNER,SLANT,cmu,MED,Y
+In A Minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,END,REPEAT,spelling,HIGH,N
+In A Minute,3,"I ain’t fucked in a minute, girl I ain’t fucked in a minute",minute,7,We on the road for the riches,riches,END,ASSONANCE,vowel,MED,Y
+In A Minute,4,"She all alone in the city, I’m on the road call it",all,4,"She all alone in the city, I’m on the road call it",call,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,4,"She all alone in the city, I’m on the road call it",alone,4,"She all alone in the city, I’m on the road call it",road,INNER,SLANT,cmu,MED,Y
+In A Minute,4,"She all alone in the city, I’m on the road call it",alone,5,"So many hoes different, that’s just why I’m acting different",hoes,INNER,SLANT,cmu,MED,Y
+In A Minute,4,"She all alone in the city, I’m on the road call it",city,5,"So many hoes different, that’s just why I’m acting different",different,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,4,"She all alone in the city, I’m on the road call it",road,5,"So many hoes different, that’s just why I’m acting different",hoes,INNER,SLANT,cmu,MED,Y
+In A Minute,4,"She all alone in the city, I’m on the road call it",city,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,INNER,SLANT,cmu,MED,Y
+In A Minute,5,"So many hoes different, that’s just why I’m acting different",different,5,"So many hoes different, that’s just why I’m acting different",different,INNER,REPEAT,spelling,HIGH,N
+In A Minute,5,"So many hoes different, that’s just why I’m acting different",different,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,END,SLANT,cmu,MED,Y
+In A Minute,5,"So many hoes different, that’s just why I’m acting different",different,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,INNER,SLANT,cmu,MED,Y
+In A Minute,5,"So many hoes different, that’s just why I’m acting different",different,7,We on the road for the riches,riches,END,ASSONANCE,vowel,MED,Y
+In A Minute,5,"So many hoes different, that’s just why I’m acting different",different,7,We on the road for the riches,riches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,5,"So many hoes different, that’s just why I’m acting different",hoes,7,We on the road for the riches,road,INNER,SLANT,cmu,MED,Y
+In A Minute,5,"So many hoes different, that’s just why I’m acting different",different,8,"Plenty hoes, plenty bitches",bitches,END,ASSONANCE,vowel,MED,Y
+In A Minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",ain’t,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",ain’t,INNER,REPEAT,spelling,HIGH,N
+In A Minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",fucked,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",fucked,INNER,REPEAT,spelling,HIGH,N
+In A Minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,INNER,REPEAT,spelling,HIGH,N
+In A Minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,7,We on the road for the riches,riches,END,ASSONANCE,vowel,MED,Y
+In A Minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,7,We on the road for the riches,riches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,8,"Plenty hoes, plenty bitches",bitches,END,ASSONANCE,vowel,MED,Y
+In A Minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,8,"Plenty hoes, plenty bitches",bitches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,6,"And I ain’t fucked her in a minute, I ain’t fucked her in a minute",minute,10,All alone with the millions,millions,END,ASSONANCE,vowel,MED,Y
+In A Minute,7,We on the road for the riches,riches,8,"Plenty hoes, plenty bitches",bitches,END,SLANT,cmu,MED,Y
+In A Minute,7,We on the road for the riches,road,8,"Plenty hoes, plenty bitches",hoes,INNER,SLANT,cmu,MED,Y
+In A Minute,7,We on the road for the riches,riches,10,All alone with the millions,millions,END,ASSONANCE,vowel,MED,Y
+In A Minute,8,"Plenty hoes, plenty bitches",Plenty,8,"Plenty hoes, plenty bitches",plenty,INNER,REPEAT,spelling,HIGH,N
+In A Minute,8,"Plenty hoes, plenty bitches",Plenty,9,Plenty walls and the trenches,Plenty,INNER,REPEAT,spelling,HIGH,N
+In A Minute,8,"Plenty hoes, plenty bitches",Plenty,9,Plenty walls and the trenches,trenches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,8,"Plenty hoes, plenty bitches",bitches,10,All alone with the millions,millions,END,ASSONANCE,vowel,MED,Y
+In A Minute,8,"Plenty hoes, plenty bitches",hoes,10,All alone with the millions,alone,INNER,SLANT,cmu,MED,Y
+In A Minute,9,Plenty walls and the trenches,Plenty,9,Plenty walls and the trenches,trenches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,9,Plenty walls and the trenches,walls,10,All alone with the millions,All,INNER,SLANT,cmu,MED,Y
+In A Minute,10,All alone with the millions,All,12,"Pouring up codeine, we ain’t running out of lean",Pouring,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,10,All alone with the millions,alone,12,"Pouring up codeine, we ain’t running out of lean",codeine,INNER,SLANT,spelling,LOW,Y
+In A Minute,11,"I been trying so , put away",away,12,"Pouring up codeine, we ain’t running out of lean",ain’t,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,11,"I been trying so , put away",away,13,"nigga say drink, it’s not what it seems",say,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,12,"Pouring up codeine, we ain’t running out of lean",lean,13,"nigga say drink, it’s not what it seems",seems,END,ASSONANCE,vowel,MED,Y
+In A Minute,12,"Pouring up codeine, we ain’t running out of lean",ain’t,13,"nigga say drink, it’s not what it seems",say,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,12,"Pouring up codeine, we ain’t running out of lean",running,13,"nigga say drink, it’s not what it seems",what,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,12,"Pouring up codeine, we ain’t running out of lean",lean,14,"Riding round with the thing, I’m the player on the scene",scene,END,PERFECT,cmu,HIGH,Y
+In A Minute,12,"Pouring up codeine, we ain’t running out of lean",ain’t,14,"Riding round with the thing, I’m the player on the scene",player,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,13,"nigga say drink, it’s not what it seems",seems,14,"Riding round with the thing, I’m the player on the scene",scene,END,ASSONANCE,vowel,MED,Y
+In A Minute,13,"nigga say drink, it’s not what it seems",drink,14,"Riding round with the thing, I’m the player on the scene",thing,INNER,SLANT,cmu,MED,Y
+In A Minute,13,"nigga say drink, it’s not what it seems",say,14,"Riding round with the thing, I’m the player on the scene",player,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,13,"nigga say drink, it’s not what it seems",drink,15,"Really tripping, nigga let it go",Really,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,13,"nigga say drink, it’s not what it seems",drink,15,"Really tripping, nigga let it go",tripping,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,13,"nigga say drink, it’s not what it seems",nigga,15,"Really tripping, nigga let it go",nigga,INNER,REPEAT,spelling,HIGH,N
+In A Minute,14,"Riding round with the thing, I’m the player on the scene",thing,15,"Really tripping, nigga let it go",Really,INNER,SLANT,cmu,MED,Y
+In A Minute,14,"Riding round with the thing, I’m the player on the scene",thing,15,"Really tripping, nigga let it go",tripping,INNER,SLANT,cmu,MED,Y
+In A Minute,14,"Riding round with the thing, I’m the player on the scene",thing,16,Said she love me but she really don’t,really,INNER,SLANT,cmu,MED,Y
+In A Minute,15,"Really tripping, nigga let it go",Really,15,"Really tripping, nigga let it go",tripping,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,15,"Really tripping, nigga let it go",go,16,Said she love me but she really don’t,don’t,END,ASSONANCE,vowel,MED,Y
+In A Minute,15,"Really tripping, nigga let it go",let,16,Said she love me but she really don’t,Said,INNER,SLANT,cmu,MED,Y
+In A Minute,15,"Really tripping, nigga let it go",Really,16,Said she love me but she really don’t,really,INNER,REPEAT,spelling,HIGH,N
+In A Minute,15,"Really tripping, nigga let it go",tripping,16,Said she love me but she really don’t,really,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,16,Said she love me but she really don’t,love,17,"I ain’t fucked her in a while, I ain’t seen her in a while",fucked,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,16,Said she love me but she really don’t,don’t,18,On the road with these bitches,road,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,16,Said she love me but she really don’t,really,18,On the road with these bitches,bitches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,16,Said she love me but she really don’t,don’t,20,"I stayed down, ten toes, ten toes, ten toes",toes,END,ASSONANCE,vowel,MED,Y
+In A Minute,17,"I ain’t fucked her in a while, I ain’t seen her in a while",ain’t,17,"I ain’t fucked her in a while, I ain’t seen her in a while",ain’t,INNER,REPEAT,spelling,HIGH,N
+In A Minute,17,"I ain’t fucked her in a while, I ain’t seen her in a while",while,17,"I ain’t fucked her in a while, I ain’t seen her in a while",while,INNER,REPEAT,spelling,HIGH,N
+In A Minute,17,"I ain’t fucked her in a while, I ain’t seen her in a while",seen,18,On the road with these bitches,these,INNER,SLANT,cmu,MED,Y
+In A Minute,17,"I ain’t fucked her in a while, I ain’t seen her in a while",ain’t,19,See pound told me stay consistent,stay,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,17,"I ain’t fucked her in a while, I ain’t seen her in a while",seen,19,See pound told me stay consistent,See,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,18,On the road with these bitches,bitches,19,See pound told me stay consistent,consistent,END,ASSONANCE,vowel,MED,Y
+In A Minute,18,On the road with these bitches,road,19,See pound told me stay consistent,told,INNER,SLANT,cmu,MED,Y
+In A Minute,18,On the road with these bitches,these,19,See pound told me stay consistent,See,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,18,On the road with these bitches,road,20,"I stayed down, ten toes, ten toes, ten toes",toes,INNER,SLANT,cmu,MED,Y
+In A Minute,19,See pound told me stay consistent,pound,20,"I stayed down, ten toes, ten toes, ten toes",down,INNER,SLANT,cmu,MED,Y
+In A Minute,19,See pound told me stay consistent,stay,20,"I stayed down, ten toes, ten toes, ten toes",stayed,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,19,See pound told me stay consistent,told,20,"I stayed down, ten toes, ten toes, ten toes",toes,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,19,See pound told me stay consistent,pound,21,When I touched down I bought a and I fucked a few hoes,down,INNER,SLANT,cmu,MED,Y
+In A Minute,19,See pound told me stay consistent,told,21,When I touched down I bought a and I fucked a few hoes,hoes,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,20,"I stayed down, ten toes, ten toes, ten toes",ten,20,"I stayed down, ten toes, ten toes, ten toes",ten,INNER,REPEAT,spelling,HIGH,N
+In A Minute,20,"I stayed down, ten toes, ten toes, ten toes",toes,20,"I stayed down, ten toes, ten toes, ten toes",toes,INNER,REPEAT,spelling,HIGH,N
+In A Minute,20,"I stayed down, ten toes, ten toes, ten toes",toes,21,When I touched down I bought a and I fucked a few hoes,hoes,END,PERFECT,cmu,HIGH,Y
+In A Minute,20,"I stayed down, ten toes, ten toes, ten toes",down,21,When I touched down I bought a and I fucked a few hoes,down,INNER,REPEAT,spelling,HIGH,N
+In A Minute,20,"I stayed down, ten toes, ten toes, ten toes",ten,21,When I touched down I bought a and I fucked a few hoes,When,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,20,"I stayed down, ten toes, ten toes, ten toes",toes,21,When I touched down I bought a and I fucked a few hoes,hoes,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,20,"I stayed down, ten toes, ten toes, ten toes",toes,22,"Rose gold my jeezy, rose gold nigga believe me",gold,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,20,"I stayed down, ten toes, ten toes, ten toes",toes,22,"Rose gold my jeezy, rose gold nigga believe me",Rose,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,21,When I touched down I bought a and I fucked a few hoes,touched,21,When I touched down I bought a and I fucked a few hoes,fucked,INNER,SLANT,cmu,MED,Y
+In A Minute,21,When I touched down I bought a and I fucked a few hoes,hoes,22,"Rose gold my jeezy, rose gold nigga believe me",gold,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,21,When I touched down I bought a and I fucked a few hoes,hoes,22,"Rose gold my jeezy, rose gold nigga believe me",Rose,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,21,When I touched down I bought a and I fucked a few hoes,few,23,"Thumbs up and they ganging, I came through that bitch speeding",through,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,21,When I touched down I bought a and I fucked a few hoes,fucked,23,"Thumbs up and they ganging, I came through that bitch speeding",Thumbs,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,21,When I touched down I bought a and I fucked a few hoes,touched,23,"Thumbs up and they ganging, I came through that bitch speeding",Thumbs,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,22,"Rose gold my jeezy, rose gold nigga believe me",gold,22,"Rose gold my jeezy, rose gold nigga believe me",gold,INNER,REPEAT,spelling,HIGH,N
+In A Minute,22,"Rose gold my jeezy, rose gold nigga believe me",gold,22,"Rose gold my jeezy, rose gold nigga believe me",rose,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,22,"Rose gold my jeezy, rose gold nigga believe me",jeezy,22,"Rose gold my jeezy, rose gold nigga believe me",believe,INNER,SLANT,spelling,LOW,Y
+In A Minute,22,"Rose gold my jeezy, rose gold nigga believe me",Rose,22,"Rose gold my jeezy, rose gold nigga believe me",gold,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,22,"Rose gold my jeezy, rose gold nigga believe me",Rose,22,"Rose gold my jeezy, rose gold nigga believe me",rose,INNER,REPEAT,spelling,HIGH,N
+In A Minute,22,"Rose gold my jeezy, rose gold nigga believe me",believe,23,"Thumbs up and they ganging, I came through that bitch speeding",speeding,END,ASSONANCE,vowel,MED,Y
+In A Minute,22,"Rose gold my jeezy, rose gold nigga believe me",believe,24,"Yeah I’m fly, nigga Louis V my attire",V,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,22,"Rose gold my jeezy, rose gold nigga believe me",jeezy,24,"Yeah I’m fly, nigga Louis V my attire",V,INNER,ASSONANCE,vowel,LOW,N
+In A Minute,22,"Rose gold my jeezy, rose gold nigga believe me",nigga,24,"Yeah I’m fly, nigga Louis V my attire",nigga,INNER,REPEAT,spelling,HIGH,N
+In A Minute,23,"Thumbs up and they ganging, I came through that bitch speeding",speeding,24,"Yeah I’m fly, nigga Louis V my attire",V,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,23,"Thumbs up and they ganging, I came through that bitch speeding",through,24,"Yeah I’m fly, nigga Louis V my attire",Louis,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,23,"Thumbs up and they ganging, I came through that bitch speeding",bitch,25,"Trying to build my power, set the streets on fire",build,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,23,"Thumbs up and they ganging, I came through that bitch speeding",speeding,25,"Trying to build my power, set the streets on fire",streets,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",fly,24,"Yeah I’m fly, nigga Louis V my attire",attire,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",attire,25,"Trying to build my power, set the streets on fire",fire,END,PERFECT,cmu,HIGH,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",attire,25,"Trying to build my power, set the streets on fire",Trying,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",fly,25,"Trying to build my power, set the streets on fire",fire,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",fly,25,"Trying to build my power, set the streets on fire",Trying,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",V,25,"Trying to build my power, set the streets on fire",streets,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",attire,26,"Couple mil is a desire, bad bitches I require",require,END,PERFECT,cmu,HIGH,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",attire,26,"Couple mil is a desire, bad bitches I require",desire,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",fly,26,"Couple mil is a desire, bad bitches I require",desire,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",fly,26,"Couple mil is a desire, bad bitches I require",require,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,24,"Yeah I’m fly, nigga Louis V my attire",attire,27,"I got rich before my idol, I got hits like Mark McGwire",McGwire,END,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",Trying,25,"Trying to build my power, set the streets on fire",fire,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",fire,26,"Couple mil is a desire, bad bitches I require",require,END,PERFECT,cmu,HIGH,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",build,26,"Couple mil is a desire, bad bitches I require",bitches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",build,26,"Couple mil is a desire, bad bitches I require",mil,INNER,SLANT,cmu,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",fire,26,"Couple mil is a desire, bad bitches I require",desire,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",Trying,26,"Couple mil is a desire, bad bitches I require",desire,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",Trying,26,"Couple mil is a desire, bad bitches I require",require,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",fire,27,"I got rich before my idol, I got hits like Mark McGwire",McGwire,END,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",build,27,"I got rich before my idol, I got hits like Mark McGwire",hits,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",build,27,"I got rich before my idol, I got hits like Mark McGwire",rich,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",fire,27,"I got rich before my idol, I got hits like Mark McGwire",idol,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",fire,27,"I got rich before my idol, I got hits like Mark McGwire",like,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",Trying,27,"I got rich before my idol, I got hits like Mark McGwire",idol,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",Trying,27,"I got rich before my idol, I got hits like Mark McGwire",like,INNER,SLANT,cmu,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",Trying,27,"I got rich before my idol, I got hits like Mark McGwire",McGwire,INNER,SLANT,cmu,MED,Y
+In A Minute,25,"Trying to build my power, set the streets on fire",fire,29,But I need me a one nighter,nighter,END,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",desire,26,"Couple mil is a desire, bad bitches I require",require,INNER,PERFECT,cmu,HIGH,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",mil,26,"Couple mil is a desire, bad bitches I require",bitches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",require,27,"I got rich before my idol, I got hits like Mark McGwire",McGwire,END,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",bitches,27,"I got rich before my idol, I got hits like Mark McGwire",hits,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",bitches,27,"I got rich before my idol, I got hits like Mark McGwire",rich,INNER,SLANT,cmu,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",desire,27,"I got rich before my idol, I got hits like Mark McGwire",idol,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",desire,27,"I got rich before my idol, I got hits like Mark McGwire",like,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",desire,27,"I got rich before my idol, I got hits like Mark McGwire",McGwire,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",mil,27,"I got rich before my idol, I got hits like Mark McGwire",hits,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",mil,27,"I got rich before my idol, I got hits like Mark McGwire",rich,INNER,SLANT,cmu,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",require,27,"I got rich before my idol, I got hits like Mark McGwire",idol,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",require,27,"I got rich before my idol, I got hits like Mark McGwire",like,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",bitches,28,"I got bitches, I got Benjis, I got friends, I got robbers",bitches,INNER,REPEAT,spelling,HIGH,N
+In A Minute,26,"Couple mil is a desire, bad bitches I require",mil,28,"I got bitches, I got Benjis, I got friends, I got robbers",bitches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,26,"Couple mil is a desire, bad bitches I require",require,29,But I need me a one nighter,nighter,END,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",got,27,"I got rich before my idol, I got hits like Mark McGwire",got,INNER,REPEAT,spelling,HIGH,N
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",got,27,"I got rich before my idol, I got hits like Mark McGwire",Mark,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",idol,27,"I got rich before my idol, I got hits like Mark McGwire",like,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",idol,27,"I got rich before my idol, I got hits like Mark McGwire",McGwire,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",like,27,"I got rich before my idol, I got hits like Mark McGwire",McGwire,INNER,SLANT,cmu,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",rich,27,"I got rich before my idol, I got hits like Mark McGwire",hits,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",got,28,"I got bitches, I got Benjis, I got friends, I got robbers",got,INNER,REPEAT,spelling,HIGH,N
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",got,28,"I got bitches, I got Benjis, I got friends, I got robbers",robbers,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",hits,28,"I got bitches, I got Benjis, I got friends, I got robbers",bitches,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",Mark,28,"I got bitches, I got Benjis, I got friends, I got robbers",got,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",Mark,28,"I got bitches, I got Benjis, I got friends, I got robbers",robbers,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",rich,28,"I got bitches, I got Benjis, I got friends, I got robbers",bitches,INNER,SLANT,cmu,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",McGwire,29,But I need me a one nighter,nighter,END,SLANT,cmu,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",idol,29,But I need me a one nighter,nighter,INNER,ASSONANCE,vowel,MED,Y
+In A Minute,27,"I got rich before my idol, I got hits like Mark McGwire",like,29,But I need me a one nighter,nighter,INNER,SLANT,cmu,MED,Y
+In A Minute,28,"I got bitches, I got Benjis, I got friends, I got robbers",Benjis,28,"I got bitches, I got Benjis, I got friends, I got robbers",friends,INNER,SLANT,spelling,LOW,Y
+In A Minute,28,"I got bitches, I got Benjis, I got friends, I got robbers",got,28,"I got bitches, I got Benjis, I got friends, I got robbers",got,INNER,REPEAT,spelling,HIGH,N
+In A Minute,28,"I got bitches, I got Benjis, I got friends, I got robbers",got,28,"I got bitches, I got Benjis, I got friends, I got robbers",robbers,INNER,ASSONANCE,vowel,MED,Y
+Trap House,1,I'm talking trap shit,talking,3,I don't wanna do a song with you,song,INNER,SLANT,cmu,MED,Y
+Trap House,2,"From now on, if you ain't been in that booth",now,4,"I roll up my weed, I'm smokin' that pound",pound,INNER,ASSONANCE,vowel,MED,Y
+Trap House,3,I don't wanna do a song with you,don't,4,"I roll up my weed, I'm smokin' that pound",roll,INNER,ASSONANCE,vowel,MED,Y
+Trap House,3,I don't wanna do a song with you,don't,4,"I roll up my weed, I'm smokin' that pound",smokin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,3,I don't wanna do a song with you,don't,5,"I'm up in the boat, I think it's a drought",boat,INNER,SLANT,cmu,MED,Y
+Trap House,4,"I roll up my weed, I'm smokin' that pound",roll,4,"I roll up my weed, I'm smokin' that pound",smokin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,4,"I roll up my weed, I'm smokin' that pound",pound,5,"I'm up in the boat, I think it's a drought",drought,END,ASSONANCE,vowel,MED,Y
+Trap House,4,"I roll up my weed, I'm smokin' that pound",roll,5,"I'm up in the boat, I think it's a drought",boat,INNER,SLANT,cmu,MED,Y
+Trap House,4,"I roll up my weed, I'm smokin' that pound",smokin,5,"I'm up in the boat, I think it's a drought",boat,INNER,ASSONANCE,vowel,MED,Y
+Trap House,4,"I roll up my weed, I'm smokin' that pound",pound,7,What else can I say? I love the trap house,house,END,ASSONANCE,vowel,MED,Y
+Trap House,4,"I roll up my weed, I'm smokin' that pound",pound,8,I love the trap house (x4),house,END,ASSONANCE,vowel,MED,Y
+Trap House,5,"I'm up in the boat, I think it's a drought",drought,7,What else can I say? I love the trap house,house,END,SLANT,cmu,MED,Y
+Trap House,5,"I'm up in the boat, I think it's a drought",drought,8,I love the trap house (x4),house,END,SLANT,cmu,MED,Y
+Trap House,6,"The car should pull out, the rest should pull out",pull,6,"The car should pull out, the rest should pull out",pull,INNER,REPEAT,spelling,HIGH,N
+Trap House,6,"The car should pull out, the rest should pull out",pull,6,"The car should pull out, the rest should pull out",should,INNER,SLANT,cmu,MED,Y
+Trap House,6,"The car should pull out, the rest should pull out",should,6,"The car should pull out, the rest should pull out",pull,INNER,SLANT,cmu,MED,Y
+Trap House,6,"The car should pull out, the rest should pull out",should,6,"The car should pull out, the rest should pull out",should,INNER,REPEAT,spelling,HIGH,N
+Trap House,6,"The car should pull out, the rest should pull out",rest,7,What else can I say? I love the trap house,else,INNER,ASSONANCE,vowel,MED,Y
+Trap House,7,What else can I say? I love the trap house,can,7,What else can I say? I love the trap house,trap,INNER,SLANT,cmu,MED,Y
+Trap House,7,What else can I say? I love the trap house,What,7,What else can I say? I love the trap house,love,INNER,SLANT,cmu,MED,Y
+Trap House,7,What else can I say? I love the trap house,house,8,I love the trap house (x4),house,END,REPEAT,spelling,HIGH,N
+Trap House,7,What else can I say? I love the trap house,can,8,I love the trap house (x4),trap,INNER,SLANT,cmu,MED,Y
+Trap House,7,What else can I say? I love the trap house,love,8,I love the trap house (x4),love,INNER,REPEAT,spelling,HIGH,N
+Trap House,7,What else can I say? I love the trap house,trap,8,I love the trap house (x4),trap,INNER,REPEAT,spelling,HIGH,N
+Trap House,7,What else can I say? I love the trap house,What,8,I love the trap house (x4),love,INNER,SLANT,cmu,MED,Y
+Trap House,9,"I'm up in the boat, I'm whippin' a fo'",boat,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",no,INNER,ASSONANCE,vowel,MED,Y
+Trap House,9,"I'm up in the boat, I'm whippin' a fo'",boat,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",Rollie,INNER,SLANT,cmu,MED,Y
+Trap House,9,"I'm up in the boat, I'm whippin' a fo'",whippin,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",whippin,INNER,REPEAT,spelling,HIGH,N
+Trap House,9,"I'm up in the boat, I'm whippin' a fo'",boat,11,"I'm doing my time if I do the crime, these niggas gon' tell",gon,INNER,SLANT,spelling,LOW,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",nine,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",time,INNER,SLANT,cmu,MED,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",Rollie,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",no,INNER,ASSONANCE,vowel,MED,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",time,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",time,INNER,REPEAT,spelling,HIGH,N
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",nine,11,"I'm doing my time if I do the crime, these niggas gon' tell",crime,INNER,SLANT,cmu,MED,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",nine,11,"I'm doing my time if I do the crime, these niggas gon' tell",time,INNER,SLANT,cmu,MED,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",Rollie,11,"I'm doing my time if I do the crime, these niggas gon' tell",gon,INNER,SLANT,spelling,LOW,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",time,11,"I'm doing my time if I do the crime, these niggas gon' tell",crime,INNER,PERFECT,cmu,HIGH,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",time,11,"I'm doing my time if I do the crime, these niggas gon' tell",time,INNER,REPEAT,spelling,HIGH,N
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",no,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",no,INNER,REPEAT,spelling,HIGH,N
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",Rollie,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",gon,INNER,SLANT,spelling,LOW,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",Rollie,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",no,INNER,ASSONANCE,vowel,MED,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",wastin,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",ain't,INNER,ASSONANCE,vowel,MED,Y
+Trap House,10,"I'm whippin' a nine, the Rollie my time, no wastin' my time",wastin,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",bail,INNER,ASSONANCE,vowel,MED,Y
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",time,11,"I'm doing my time if I do the crime, these niggas gon' tell",crime,INNER,PERFECT,cmu,HIGH,Y
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",tell,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",hell,END,PERFECT,cmu,HIGH,Y
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",gon,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",gon,INNER,REPEAT,spelling,HIGH,N
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",niggas,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",niggas,INNER,REPEAT,spelling,HIGH,N
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",tell,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",said,INNER,SLANT,cmu,MED,Y
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",tell,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",tell,INNER,REPEAT,spelling,HIGH,N
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",these,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",these,INNER,REPEAT,spelling,HIGH,N
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",crime,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",like,INNER,SLANT,cmu,MED,Y
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",these,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",Beamer,INNER,SLANT,cmu,MED,Y
+Trap House,11,"I'm doing my time if I do the crime, these niggas gon' tell",time,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",like,INNER,SLANT,cmu,MED,Y
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",ain't,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",bail,INNER,ASSONANCE,vowel,MED,Y
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",niggas,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",niggas,INNER,REPEAT,spelling,HIGH,N
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",said,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",hell,INNER,SLANT,cmu,MED,Y
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",said,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",tell,INNER,SLANT,cmu,MED,Y
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",tell,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",hell,INNER,PERFECT,cmu,HIGH,Y
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",these,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",these,INNER,REPEAT,spelling,HIGH,N
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",got,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",August,INNER,ASSONANCE,vowel,MED,Y
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",these,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",Beamer,INNER,SLANT,cmu,MED,Y
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",got,14,"These niggas, they plottin', these niggas, they schemin',",plottin,INNER,SLANT,cmu,MED,Y
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",niggas,14,"These niggas, they plottin', these niggas, they schemin',",niggas,INNER,REPEAT,spelling,HIGH,N
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",these,14,"These niggas, they plottin', these niggas, they schemin',",schemin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,12,"I said these niggas gon' tell, they ain't got no bail, these niggas is hell",these,14,"These niggas, they plottin', these niggas, they schemin',",These,INNER,REPEAT,spelling,HIGH,N
+Trap House,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",love,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",love,INNER,REPEAT,spelling,HIGH,N
+Trap House,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",Beamer,14,"These niggas, they plottin', these niggas, they schemin',",schemin,END,SLANT,cmu,MED,Y
+Trap House,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",August,14,"These niggas, they plottin', these niggas, they schemin',",plottin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",Beamer,14,"These niggas, they plottin', these niggas, they schemin',",These,INNER,SLANT,cmu,MED,Y
+Trap House,13,"I love it, I love it like August Alsina, I'm whippin' a Beamer",August,15,"Made everybody say ""Woo!""",everybody,INNER,ASSONANCE,vowel,MED,Y
+Trap House,14,"These niggas, they plottin', these niggas, they schemin',",niggas,14,"These niggas, they plottin', these niggas, they schemin',",niggas,INNER,REPEAT,spelling,HIGH,N
+Trap House,14,"These niggas, they plottin', these niggas, they schemin',",These,14,"These niggas, they plottin', these niggas, they schemin',",schemin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,14,"These niggas, they plottin', these niggas, they schemin',",These,14,"These niggas, they plottin', these niggas, they schemin',",these,INNER,REPEAT,spelling,HIGH,N
+Trap House,14,"These niggas, they plottin', these niggas, they schemin',",plottin,15,"Made everybody say ""Woo!""",everybody,INNER,ASSONANCE,vowel,MED,Y
+Trap House,14,"These niggas, they plottin', these niggas, they schemin',",schemin,16,"I'm up in the boat with Gambino, they say ""Woo!""",Gambino,INNER,SLANT,cmu,MED,Y
+Trap House,14,"These niggas, they plottin', these niggas, they schemin',",These,16,"I'm up in the boat with Gambino, they say ""Woo!""",Gambino,INNER,SLANT,cmu,MED,Y
+Trap House,15,"Made everybody say ""Woo!""",Made,15,"Made everybody say ""Woo!""",say,INNER,ASSONANCE,vowel,MED,Y
+Trap House,15,"Made everybody say ""Woo!""",say,16,"I'm up in the boat with Gambino, they say ""Woo!""",say,END,REPEAT,spelling,HIGH,N
+Trap House,15,"Made everybody say ""Woo!""",Made,16,"I'm up in the boat with Gambino, they say ""Woo!""",say,INNER,ASSONANCE,vowel,MED,Y
+Trap House,15,"Made everybody say ""Woo!""",everybody,17,"Her pussy got a little tang so I say ""Wu!""",got,INNER,SLANT,cmu,MED,Y
+Trap House,15,"Made everybody say ""Woo!""",Made,17,"Her pussy got a little tang so I say ""Wu!""",say,INNER,ASSONANCE,vowel,MED,Y
+Trap House,15,"Made everybody say ""Woo!""",say,17,"Her pussy got a little tang so I say ""Wu!""",say,INNER,REPEAT,spelling,HIGH,N
+Trap House,16,"I'm up in the boat with Gambino, they say ""Woo!""",say,17,"Her pussy got a little tang so I say ""Wu!""",say,INNER,REPEAT,spelling,HIGH,N
+Trap House,16,"I'm up in the boat with Gambino, they say ""Woo!""",boat,18,"Heh, heh, heh, don't crack me up",don't,INNER,SLANT,cmu,MED,Y
+Trap House,17,"Her pussy got a little tang so I say ""Wu!""",tang,18,"Heh, heh, heh, don't crack me up",crack,INNER,SLANT,cmu,MED,Y
+Trap House,17,"Her pussy got a little tang so I say ""Wu!""",tang,19,"Money, you know I stacked it up",stacked,INNER,ASSONANCE,vowel,MED,Y
+Trap House,17,"Her pussy got a little tang so I say ""Wu!""",Wu,20,"Six months then I packed it up, trap rules",rules,END,ASSONANCE,vowel,MED,Y
+Trap House,17,"Her pussy got a little tang so I say ""Wu!""",Wu,21,"Carry so much weight, shit, I gotta make the news",news,END,ASSONANCE,vowel,MED,Y
+Trap House,18,"Heh, heh, heh, don't crack me up",Heh,18,"Heh, heh, heh, don't crack me up",heh,INNER,REPEAT,spelling,HIGH,N
+Trap House,18,"Heh, heh, heh, don't crack me up",crack,19,"Money, you know I stacked it up",stacked,END,SLANT,cmu,MED,Y
+Trap House,18,"Heh, heh, heh, don't crack me up",don't,19,"Money, you know I stacked it up",know,INNER,ASSONANCE,vowel,MED,Y
+Trap House,18,"Heh, heh, heh, don't crack me up",crack,20,"Six months then I packed it up, trap rules",packed,INNER,SLANT,cmu,MED,Y
+Trap House,18,"Heh, heh, heh, don't crack me up",crack,20,"Six months then I packed it up, trap rules",trap,INNER,SLANT,cmu,MED,Y
+Trap House,19,"Money, you know I stacked it up",Money,20,"Six months then I packed it up, trap rules",months,INNER,ASSONANCE,vowel,MED,Y
+Trap House,19,"Money, you know I stacked it up",stacked,20,"Six months then I packed it up, trap rules",packed,INNER,PERFECT,cmu,HIGH,Y
+Trap House,19,"Money, you know I stacked it up",stacked,20,"Six months then I packed it up, trap rules",trap,INNER,SLANT,cmu,MED,Y
+Trap House,19,"Money, you know I stacked it up",Money,21,"Carry so much weight, shit, I gotta make the news",much,INNER,SLANT,cmu,MED,Y
+Trap House,19,"Money, you know I stacked it up",stacked,21,"Carry so much weight, shit, I gotta make the news",Carry,INNER,ASSONANCE,vowel,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",packed,20,"Six months then I packed it up, trap rules",trap,INNER,SLANT,cmu,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",rules,21,"Carry so much weight, shit, I gotta make the news",news,END,SLANT,cmu,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",months,21,"Carry so much weight, shit, I gotta make the news",much,INNER,ASSONANCE,vowel,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",packed,21,"Carry so much weight, shit, I gotta make the news",Carry,INNER,ASSONANCE,vowel,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",Six,21,"Carry so much weight, shit, I gotta make the news",shit,INNER,ASSONANCE,vowel,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",trap,21,"Carry so much weight, shit, I gotta make the news",Carry,INNER,SLANT,cmu,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",months,22,"What can I say? I love the bando, you don't need to be talking",love,INNER,ASSONANCE,vowel,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",months,22,"What can I say? I love the bando, you don't need to be talking",What,INNER,ASSONANCE,vowel,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",packed,22,"What can I say? I love the bando, you don't need to be talking",can,INNER,ASSONANCE,vowel,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",trap,22,"What can I say? I love the bando, you don't need to be talking",can,INNER,SLANT,cmu,MED,Y
+Trap House,20,"Six months then I packed it up, trap rules",rules,24,Papi know that I'mma shoot,shoot,END,ASSONANCE,vowel,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",weight,21,"Carry so much weight, shit, I gotta make the news",make,INNER,SLANT,cmu,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",Carry,22,"What can I say? I love the bando, you don't need to be talking",can,INNER,SLANT,cmu,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",make,22,"What can I say? I love the bando, you don't need to be talking",say,INNER,ASSONANCE,vowel,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",much,22,"What can I say? I love the bando, you don't need to be talking",love,INNER,SLANT,cmu,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",much,22,"What can I say? I love the bando, you don't need to be talking",What,INNER,SLANT,cmu,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",weight,22,"What can I say? I love the bando, you don't need to be talking",say,INNER,ASSONANCE,vowel,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",Carry,23,What can I say? The bando got a nigga Giuseppe-walking,can,INNER,SLANT,cmu,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",gotta,23,What can I say? The bando got a nigga Giuseppe-walking,got,INNER,SLANT,cmu,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",make,23,What can I say? The bando got a nigga Giuseppe-walking,say,INNER,ASSONANCE,vowel,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",much,23,What can I say? The bando got a nigga Giuseppe-walking,What,INNER,SLANT,cmu,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",shit,23,What can I say? The bando got a nigga Giuseppe-walking,nigga,INNER,SLANT,spelling,LOW,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",weight,23,What can I say? The bando got a nigga Giuseppe-walking,say,INNER,ASSONANCE,vowel,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",news,24,Papi know that I'mma shoot,shoot,END,SLANT,cmu,MED,Y
+Trap House,21,"Carry so much weight, shit, I gotta make the news",news,25,"If you try to take a deuce, lean or boot",boot,END,SLANT,cmu,MED,Y
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",can,22,"What can I say? I love the bando, you don't need to be talking",bando,INNER,SLANT,spelling,LOW,Y
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",What,22,"What can I say? I love the bando, you don't need to be talking",love,INNER,SLANT,cmu,MED,Y
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",talking,23,What can I say? The bando got a nigga Giuseppe-walking,walking,END,MULTI,multi,HIGH,Y
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",bando,23,What can I say? The bando got a nigga Giuseppe-walking,bando,INNER,REPEAT,spelling,HIGH,N
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",bando,23,What can I say? The bando got a nigga Giuseppe-walking,can,INNER,SLANT,spelling,LOW,Y
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",can,23,What can I say? The bando got a nigga Giuseppe-walking,bando,INNER,SLANT,spelling,LOW,Y
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",can,23,What can I say? The bando got a nigga Giuseppe-walking,can,INNER,REPEAT,spelling,HIGH,N
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",love,23,What can I say? The bando got a nigga Giuseppe-walking,What,INNER,SLANT,cmu,MED,Y
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",say,23,What can I say? The bando got a nigga Giuseppe-walking,say,INNER,REPEAT,spelling,HIGH,N
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",What,23,What can I say? The bando got a nigga Giuseppe-walking,What,INNER,REPEAT,spelling,HIGH,N
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",bando,24,Papi know that I'mma shoot,know,INNER,ASSONANCE,vowel,LOW,N
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",can,24,Papi know that I'mma shoot,Papi,INNER,SLANT,spelling,LOW,Y
+Trap House,22,"What can I say? I love the bando, you don't need to be talking",don't,24,Papi know that I'mma shoot,know,INNER,ASSONANCE,vowel,MED,Y
+Trap House,23,What can I say? The bando got a nigga Giuseppe-walking,can,23,What can I say? The bando got a nigga Giuseppe-walking,bando,INNER,SLANT,spelling,LOW,Y
+Trap House,23,What can I say? The bando got a nigga Giuseppe-walking,bando,24,Papi know that I'mma shoot,know,INNER,ASSONANCE,vowel,LOW,N
+Trap House,23,What can I say? The bando got a nigga Giuseppe-walking,can,24,Papi know that I'mma shoot,Papi,INNER,SLANT,spelling,LOW,Y
+Trap House,23,What can I say? The bando got a nigga Giuseppe-walking,nigga,24,Papi know that I'mma shoot,I'mma,INNER,ASSONANCE,vowel,LOW,N
+Trap House,23,What can I say? The bando got a nigga Giuseppe-walking,say,25,"If you try to take a deuce, lean or boot",take,INNER,ASSONANCE,vowel,MED,Y
+Trap House,24,Papi know that I'mma shoot,shoot,25,"If you try to take a deuce, lean or boot",boot,END,PERFECT,cmu,HIGH,Y
+Trap House,24,Papi know that I'mma shoot,shoot,25,"If you try to take a deuce, lean or boot",deuce,INNER,SLANT,cmu,MED,Y
+Trap House,24,Papi know that I'mma shoot,Papi,26,"She a bad bitch but I make her cook, now she mad at me",bad,INNER,SLANT,spelling,LOW,Y
+Trap House,24,Papi know that I'mma shoot,Papi,26,"She a bad bitch but I make her cook, now she mad at me",mad,INNER,SLANT,spelling,LOW,Y
+Trap House,25,"If you try to take a deuce, lean or boot",deuce,25,"If you try to take a deuce, lean or boot",boot,INNER,SLANT,cmu,MED,Y
+Trap House,25,"If you try to take a deuce, lean or boot",take,26,"She a bad bitch but I make her cook, now she mad at me",make,INNER,PERFECT,cmu,HIGH,Y
+Trap House,26,"She a bad bitch but I make her cook, now she mad at me",bad,26,"She a bad bitch but I make her cook, now she mad at me",mad,INNER,PERFECT,cmu,HIGH,Y
+Trap House,26,"She a bad bitch but I make her cook, now she mad at me",mad,27,She jingalin' them pockets out a papi,papi,END,SLANT,spelling,LOW,Y
+Trap House,26,"She a bad bitch but I make her cook, now she mad at me",bad,27,She jingalin' them pockets out a papi,papi,INNER,SLANT,spelling,LOW,Y
+Trap House,26,"She a bad bitch but I make her cook, now she mad at me",bitch,27,She jingalin' them pockets out a papi,jingalin,INNER,ASSONANCE,vowel,LOW,N
+Trap House,26,"She a bad bitch but I make her cook, now she mad at me",bad,28,"It ain't a trap house, you ain't got a shooter at the door",trap,INNER,SLANT,cmu,MED,Y
+Trap House,26,"She a bad bitch but I make her cook, now she mad at me",mad,28,"It ain't a trap house, you ain't got a shooter at the door",trap,INNER,SLANT,cmu,MED,Y
+Trap House,26,"She a bad bitch but I make her cook, now she mad at me",make,28,"It ain't a trap house, you ain't got a shooter at the door",ain't,INNER,ASSONANCE,vowel,MED,Y
+Trap House,26,"She a bad bitch but I make her cook, now she mad at me",now,28,"It ain't a trap house, you ain't got a shooter at the door",house,INNER,ASSONANCE,vowel,MED,Y
+Trap House,27,She jingalin' them pockets out a papi,papi,28,"It ain't a trap house, you ain't got a shooter at the door",trap,INNER,SLANT,spelling,LOW,Y
+Trap House,27,She jingalin' them pockets out a papi,pockets,28,"It ain't a trap house, you ain't got a shooter at the door",got,INNER,ASSONANCE,vowel,MED,Y
+Trap House,27,She jingalin' them pockets out a papi,papi,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",trap,INNER,SLANT,spelling,LOW,Y
+Trap House,27,She jingalin' them pockets out a papi,pockets,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",got,INNER,ASSONANCE,vowel,MED,Y
+Trap House,28,"It ain't a trap house, you ain't got a shooter at the door",ain't,28,"It ain't a trap house, you ain't got a shooter at the door",ain't,INNER,REPEAT,spelling,HIGH,N
+Trap House,28,"It ain't a trap house, you ain't got a shooter at the door",ain't,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",ain't,INNER,REPEAT,spelling,HIGH,N
+Trap House,28,"It ain't a trap house, you ain't got a shooter at the door",door,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",fork,INNER,SLANT,cmu,MED,Y
+Trap House,28,"It ain't a trap house, you ain't got a shooter at the door",got,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",got,INNER,REPEAT,spelling,HIGH,N
+Trap House,28,"It ain't a trap house, you ain't got a shooter at the door",house,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",house,INNER,REPEAT,spelling,HIGH,N
+Trap House,28,"It ain't a trap house, you ain't got a shooter at the door",trap,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",trap,INNER,REPEAT,spelling,HIGH,N
+Trap House,28,"It ain't a trap house, you ain't got a shooter at the door",trap,30,I can't get enough of the egg beater,can't,INNER,ASSONANCE,vowel,MED,Y
+Trap House,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",ain't,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",ain't,INNER,REPEAT,spelling,HIGH,N
+Trap House,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",no,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",bowl,INNER,ASSONANCE,vowel,MED,Y
+Trap House,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",Hell,30,I can't get enough of the egg beater,egg,INNER,SLANT,cmu,MED,Y
+Trap House,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",Hell,30,I can't get enough of the egg beater,get,INNER,SLANT,cmu,MED,Y
+Trap House,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",trap,30,I can't get enough of the egg beater,can't,INNER,ASSONANCE,vowel,MED,Y
+Trap House,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",bowl,31,Got my hand in the bowl whippin' jungle fever,bowl,INNER,REPEAT,spelling,HIGH,N
+Trap House,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",got,31,Got my hand in the bowl whippin' jungle fever,Got,INNER,REPEAT,spelling,HIGH,N
+Trap House,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",no,31,Got my hand in the bowl whippin' jungle fever,bowl,INNER,ASSONANCE,vowel,MED,Y
+Trap House,29,"Hell nah, it ain't no trap house, you ain't got a fork and a bowl",trap,31,Got my hand in the bowl whippin' jungle fever,hand,INNER,ASSONANCE,vowel,MED,Y
+Trap House,30,I can't get enough of the egg beater,get,30,I can't get enough of the egg beater,egg,INNER,SLANT,cmu,MED,Y
+Trap House,30,I can't get enough of the egg beater,beater,31,Got my hand in the bowl whippin' jungle fever,fever,END,SLANT,cmu,MED,Y
+Trap House,30,I can't get enough of the egg beater,can't,31,Got my hand in the bowl whippin' jungle fever,hand,INNER,SLANT,cmu,MED,Y
+Trap House,30,I can't get enough of the egg beater,enough,31,Got my hand in the bowl whippin' jungle fever,jungle,INNER,ASSONANCE,vowel,MED,Y
+Trap House,30,I can't get enough of the egg beater,beater,32,"Walk in my trap house, I'm selling that Justin Bieber",Bieber,END,SLANT,cmu,MED,Y
+Trap House,30,I can't get enough of the egg beater,can't,32,"Walk in my trap house, I'm selling that Justin Bieber",trap,INNER,ASSONANCE,vowel,MED,Y
+Trap House,30,I can't get enough of the egg beater,egg,32,"Walk in my trap house, I'm selling that Justin Bieber",selling,INNER,ASSONANCE,vowel,MED,Y
+Trap House,30,I can't get enough of the egg beater,enough,32,"Walk in my trap house, I'm selling that Justin Bieber",Justin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,30,I can't get enough of the egg beater,get,32,"Walk in my trap house, I'm selling that Justin Bieber",selling,INNER,ASSONANCE,vowel,MED,Y
+Trap House,30,I can't get enough of the egg beater,beater,33,"Trap nigga, using my strap for a heater",heater,END,MULTI,multi,HIGH,Y
+Trap House,30,I can't get enough of the egg beater,beater,34,"My diamonds on cold, they callin' me Freezer",Freezer,END,SLANT,cmu,MED,Y
+Trap House,31,Got my hand in the bowl whippin' jungle fever,fever,32,"Walk in my trap house, I'm selling that Justin Bieber",Bieber,END,SLANT,cmu,MED,Y
+Trap House,31,Got my hand in the bowl whippin' jungle fever,hand,32,"Walk in my trap house, I'm selling that Justin Bieber",trap,INNER,ASSONANCE,vowel,MED,Y
+Trap House,31,Got my hand in the bowl whippin' jungle fever,jungle,32,"Walk in my trap house, I'm selling that Justin Bieber",Justin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,31,Got my hand in the bowl whippin' jungle fever,fever,33,"Trap nigga, using my strap for a heater",heater,END,SLANT,cmu,MED,Y
+Trap House,31,Got my hand in the bowl whippin' jungle fever,hand,33,"Trap nigga, using my strap for a heater",strap,INNER,ASSONANCE,vowel,MED,Y
+Trap House,31,Got my hand in the bowl whippin' jungle fever,hand,33,"Trap nigga, using my strap for a heater",Trap,INNER,ASSONANCE,vowel,MED,Y
+Trap House,31,Got my hand in the bowl whippin' jungle fever,fever,34,"My diamonds on cold, they callin' me Freezer",Freezer,END,SLANT,cmu,MED,Y
+Trap House,32,"Walk in my trap house, I'm selling that Justin Bieber",Bieber,33,"Trap nigga, using my strap for a heater",heater,END,SLANT,cmu,MED,Y
+Trap House,32,"Walk in my trap house, I'm selling that Justin Bieber",trap,33,"Trap nigga, using my strap for a heater",strap,INNER,PERFECT,cmu,HIGH,Y
+Trap House,32,"Walk in my trap house, I'm selling that Justin Bieber",trap,33,"Trap nigga, using my strap for a heater",Trap,INNER,REPEAT,spelling,HIGH,N
+Trap House,32,"Walk in my trap house, I'm selling that Justin Bieber",Bieber,34,"My diamonds on cold, they callin' me Freezer",Freezer,END,SLANT,cmu,MED,Y
+Trap House,32,"Walk in my trap house, I'm selling that Justin Bieber",Walk,34,"My diamonds on cold, they callin' me Freezer",callin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,32,"Walk in my trap house, I'm selling that Justin Bieber",Bieber,36,A hundred thousand for a feature,feature,END,SLANT,cmu,MED,Y
+Trap House,33,"Trap nigga, using my strap for a heater",Trap,33,"Trap nigga, using my strap for a heater",strap,INNER,PERFECT,cmu,HIGH,Y
+Trap House,33,"Trap nigga, using my strap for a heater",heater,34,"My diamonds on cold, they callin' me Freezer",Freezer,END,SLANT,cmu,MED,Y
+Trap House,33,"Trap nigga, using my strap for a heater",nigga,35,"You pussy nigga, they call you Vegeta",nigga,INNER,REPEAT,spelling,HIGH,N
+Trap House,33,"Trap nigga, using my strap for a heater",heater,36,A hundred thousand for a feature,feature,END,SLANT,cmu,MED,Y
+Trap House,34,"My diamonds on cold, they callin' me Freezer",callin,35,"You pussy nigga, they call you Vegeta",call,INNER,SLANT,cmu,MED,Y
+Trap House,34,"My diamonds on cold, they callin' me Freezer",Freezer,36,A hundred thousand for a feature,feature,END,SLANT,cmu,MED,Y
+Trap House,36,A hundred thousand for a feature,thousand,37,Fifty thousand for a picture,thousand,INNER,REPEAT,spelling,HIGH,N
+Trap House,36,A hundred thousand for a feature,feature,39,"Gettin' in trouble, had to see the preacher",preacher,END,MULTI,multi,HIGH,Y
+Trap House,37,Fifty thousand for a picture,Fifty,37,Fifty thousand for a picture,picture,INNER,ASSONANCE,vowel,MED,Y
+Trap House,37,Fifty thousand for a picture,Fifty,38,Back then was I was a lil' nigga,lil,INNER,ASSONANCE,vowel,MED,Y
+Trap House,37,Fifty thousand for a picture,picture,38,Back then was I was a lil' nigga,lil,INNER,ASSONANCE,vowel,MED,Y
+Trap House,37,Fifty thousand for a picture,picture,40,Mama told me read the scripture,scripture,END,SLANT,cmu,MED,Y
+Trap House,38,Back then was I was a lil' nigga,Back,39,"Gettin' in trouble, had to see the preacher",had,INNER,SLANT,cmu,MED,Y
+Trap House,38,Back then was I was a lil' nigga,lil,40,Mama told me read the scripture,scripture,INNER,ASSONANCE,vowel,MED,Y
+Trap House,38,Back then was I was a lil' nigga,nigga,41,"""Put God first and you'll be a rich nigga""",nigga,END,REPEAT,spelling,HIGH,N
+Trap House,39,"Gettin' in trouble, had to see the preacher",see,39,"Gettin' in trouble, had to see the preacher",preacher,INNER,ASSONANCE,vowel,MED,Y
+Trap House,39,"Gettin' in trouble, had to see the preacher",Gettin,40,Mama told me read the scripture,read,INNER,ASSONANCE,vowel,MED,Y
+Trap House,40,Mama told me read the scripture,Mama,41,"""Put God first and you'll be a rich nigga""",God,INNER,SLANT,cmu,MED,Y
+Trap House,40,Mama told me read the scripture,scripture,41,"""Put God first and you'll be a rich nigga""",rich,INNER,SLANT,cmu,MED,Y
+Trap House,40,Mama told me read the scripture,Mama,42,Whippin' and whippin' and whippin' and whippin' that pot,pot,INNER,SLANT,cmu,MED,Y
+Trap House,40,Mama told me read the scripture,scripture,42,Whippin' and whippin' and whippin' and whippin' that pot,Whippin,INNER,SLANT,cmu,MED,Y
+Trap House,41,"""Put God first and you'll be a rich nigga""",God,42,Whippin' and whippin' and whippin' and whippin' that pot,pot,INNER,SLANT,cmu,MED,Y
+Trap House,41,"""Put God first and you'll be a rich nigga""",rich,42,Whippin' and whippin' and whippin' and whippin' that pot,Whippin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,41,"""Put God first and you'll be a rich nigga""",God,43,"(Whippin' it, whippin' it, whippin' it) Till my arms fall off",arms,INNER,ASSONANCE,vowel,MED,Y
+Trap House,41,"""Put God first and you'll be a rich nigga""",rich,43,"(Whippin' it, whippin' it, whippin' it) Till my arms fall off",Till,INNER,SLANT,cmu,MED,Y
+Trap House,42,Whippin' and whippin' and whippin' and whippin' that pot,Whippin,42,Whippin' and whippin' and whippin' and whippin' that pot,whippin,INNER,REPEAT,spelling,HIGH,N
+Trap House,42,Whippin' and whippin' and whippin' and whippin' that pot,pot,43,"(Whippin' it, whippin' it, whippin' it) Till my arms fall off",arms,INNER,ASSONANCE,vowel,MED,Y
+Trap House,42,Whippin' and whippin' and whippin' and whippin' that pot,Whippin,43,"(Whippin' it, whippin' it, whippin' it) Till my arms fall off",Till,INNER,ASSONANCE,vowel,MED,Y
+Trap House,42,Whippin' and whippin' and whippin' and whippin' that pot,pot,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",coppin,END,ASSONANCE,vowel,MED,Y
+Trap House,42,Whippin' and whippin' and whippin' and whippin' that pot,pot,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",Lot,INNER,PERFECT,cmu,HIGH,Y
+Trap House,43,"(Whippin' it, whippin' it, whippin' it) Till my arms fall off",arms,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",coppin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,43,"(Whippin' it, whippin' it, whippin' it) Till my arms fall off",arms,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",Lot,INNER,ASSONANCE,vowel,MED,Y
+Trap House,43,"(Whippin' it, whippin' it, whippin' it) Till my arms fall off",arms,45,"I love the trap house, got a brick on my couch",got,INNER,ASSONANCE,vowel,MED,Y
+Trap House,43,"(Whippin' it, whippin' it, whippin' it) Till my arms fall off",Till,45,"I love the trap house, got a brick on my couch",brick,INNER,SLANT,cmu,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",Lot,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",coppin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",ratchets,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",active,INNER,ASSONANCE,vowel,LOW,N
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",active,45,"I love the trap house, got a brick on my couch",trap,INNER,ASSONANCE,vowel,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",coppin,45,"I love the trap house, got a brick on my couch",got,INNER,ASSONANCE,vowel,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",how,45,"I love the trap house, got a brick on my couch",couch,INNER,ASSONANCE,vowel,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",how,45,"I love the trap house, got a brick on my couch",house,INNER,ASSONANCE,vowel,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",Lot,45,"I love the trap house, got a brick on my couch",got,INNER,PERFECT,cmu,HIGH,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",money,45,"I love the trap house, got a brick on my couch",love,INNER,SLANT,cmu,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",coppin,46,"Got a K on my couch, got yo' bitch in my house",Got,INNER,ASSONANCE,vowel,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",how,46,"Got a K on my couch, got yo' bitch in my house",couch,INNER,ASSONANCE,vowel,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",how,46,"Got a K on my couch, got yo' bitch in my house",house,INNER,ASSONANCE,vowel,MED,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",Lot,46,"Got a K on my couch, got yo' bitch in my house",Got,INNER,PERFECT,cmu,HIGH,Y
+Trap House,44,"Lot of ratchets, pacer active, money machine how I'm coppin' it",pacer,46,"Got a K on my couch, got yo' bitch in my house",K,INNER,ASSONANCE,vowel,MED,Y
+Trap House,45,"I love the trap house, got a brick on my couch",house,45,"I love the trap house, got a brick on my couch",couch,INNER,SLANT,cmu,MED,Y
+Trap House,45,"I love the trap house, got a brick on my couch",couch,46,"Got a K on my couch, got yo' bitch in my house",house,END,SLANT,cmu,MED,Y
+Trap House,45,"I love the trap house, got a brick on my couch",brick,46,"Got a K on my couch, got yo' bitch in my house",bitch,INNER,SLANT,cmu,MED,Y
+Trap House,45,"I love the trap house, got a brick on my couch",couch,46,"Got a K on my couch, got yo' bitch in my house",couch,INNER,REPEAT,spelling,HIGH,N
+Trap House,45,"I love the trap house, got a brick on my couch",got,46,"Got a K on my couch, got yo' bitch in my house",Got,INNER,REPEAT,spelling,HIGH,N
+Trap House,45,"I love the trap house, got a brick on my couch",house,46,"Got a K on my couch, got yo' bitch in my house",couch,INNER,SLANT,cmu,MED,Y
+Trap House,45,"I love the trap house, got a brick on my couch",house,46,"Got a K on my couch, got yo' bitch in my house",house,INNER,REPEAT,spelling,HIGH,N
+Trap House,45,"I love the trap house, got a brick on my couch",couch,47,"I built the empire, started with a ounce",ounce,END,ASSONANCE,vowel,MED,Y
+Trap House,45,"I love the trap house, got a brick on my couch",brick,47,"I built the empire, started with a ounce",built,INNER,ASSONANCE,vowel,MED,Y
+Trap House,45,"I love the trap house, got a brick on my couch",got,47,"I built the empire, started with a ounce",started,INNER,ASSONANCE,vowel,MED,Y
+Trap House,45,"I love the trap house, got a brick on my couch",house,47,"I built the empire, started with a ounce",ounce,INNER,SLANT,cmu,MED,Y
+Trap House,45,"I love the trap house, got a brick on my couch",couch,48,Stretching the nine cause every ground counts,counts,END,ASSONANCE,vowel,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",couch,46,"Got a K on my couch, got yo' bitch in my house",house,INNER,SLANT,cmu,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",Got,46,"Got a K on my couch, got yo' bitch in my house",got,INNER,REPEAT,spelling,HIGH,N
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",house,47,"I built the empire, started with a ounce",ounce,END,SLANT,cmu,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",bitch,47,"I built the empire, started with a ounce",built,INNER,ASSONANCE,vowel,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",couch,47,"I built the empire, started with a ounce",ounce,INNER,ASSONANCE,vowel,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",Got,47,"I built the empire, started with a ounce",started,INNER,ASSONANCE,vowel,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",house,48,Stretching the nine cause every ground counts,counts,END,ASSONANCE,vowel,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",couch,48,Stretching the nine cause every ground counts,counts,INNER,ASSONANCE,vowel,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",couch,48,Stretching the nine cause every ground counts,ground,INNER,ASSONANCE,vowel,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",Got,48,Stretching the nine cause every ground counts,cause,INNER,SLANT,cmu,MED,Y
+Trap House,46,"Got a K on my couch, got yo' bitch in my house",house,48,Stretching the nine cause every ground counts,ground,INNER,ASSONANCE,vowel,MED,Y
+Trap House,47,"I built the empire, started with a ounce",ounce,48,Stretching the nine cause every ground counts,counts,END,SLANT,cmu,MED,Y
+Trap House,47,"I built the empire, started with a ounce",empire,48,Stretching the nine cause every ground counts,every,INNER,ASSONANCE,vowel,MED,Y
+Trap House,47,"I built the empire, started with a ounce",empire,48,Stretching the nine cause every ground counts,Stretching,INNER,ASSONANCE,vowel,MED,Y
+Trap House,47,"I built the empire, started with a ounce",ounce,48,Stretching the nine cause every ground counts,ground,INNER,SLANT,cmu,MED,Y
+Trap House,47,"I built the empire, started with a ounce",started,48,Stretching the nine cause every ground counts,cause,INNER,ASSONANCE,vowel,MED,Y
+Trap House,48,Stretching the nine cause every ground counts,ground,48,Stretching the nine cause every ground counts,counts,INNER,ASSONANCE,vowel,MED,Y
+Trap House,48,Stretching the nine cause every ground counts,Stretching,48,Stretching the nine cause every ground counts,every,INNER,ASSONANCE,vowel,MED,Y
+Trap House,48,Stretching the nine cause every ground counts,nine,49,"Trap out the bando, just like I'm Rambo",like,INNER,SLANT,cmu,MED,Y
+Trap House,48,Stretching the nine cause every ground counts,every,50,It's just surveillance when I change the channel,when,INNER,SLANT,cmu,MED,Y
+Trap House,48,Stretching the nine cause every ground counts,Stretching,50,It's just surveillance when I change the channel,when,INNER,ASSONANCE,vowel,MED,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",bando,49,"Trap out the bando, just like I'm Rambo",Rambo,INNER,SLANT,spelling,LOW,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",Trap,49,"Trap out the bando, just like I'm Rambo",Rambo,INNER,ASSONANCE,vowel,MED,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",Rambo,50,It's just surveillance when I change the channel,channel,END,ASSONANCE,vowel,MED,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",bando,50,It's just surveillance when I change the channel,channel,INNER,SLANT,spelling,LOW,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",Trap,50,It's just surveillance when I change the channel,channel,INNER,ASSONANCE,vowel,MED,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",Rambo,51,Trappin' and cappin' bought me a new Phantom,Phantom,END,ASSONANCE,vowel,MED,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",bando,51,Trappin' and cappin' bought me a new Phantom,Phantom,INNER,ASSONANCE,vowel,LOW,N
+Trap House,49,"Trap out the bando, just like I'm Rambo",Rambo,51,Trappin' and cappin' bought me a new Phantom,cappin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",Rambo,51,Trappin' and cappin' bought me a new Phantom,Trappin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",Trap,51,Trappin' and cappin' bought me a new Phantom,cappin,INNER,SLANT,cmu,MED,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",Trap,51,Trappin' and cappin' bought me a new Phantom,Phantom,INNER,ASSONANCE,vowel,MED,Y
+Trap House,49,"Trap out the bando, just like I'm Rambo",Trap,51,Trappin' and cappin' bought me a new Phantom,Trappin,INNER,SLANT,cmu,MED,Y
+Trap House,50,It's just surveillance when I change the channel,surveillance,50,It's just surveillance when I change the channel,change,INNER,ASSONANCE,vowel,MED,Y
+Trap House,50,It's just surveillance when I change the channel,channel,51,Trappin' and cappin' bought me a new Phantom,Phantom,END,ASSONANCE,vowel,MED,Y
+Trap House,50,It's just surveillance when I change the channel,channel,51,Trappin' and cappin' bought me a new Phantom,cappin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,50,It's just surveillance when I change the channel,channel,51,Trappin' and cappin' bought me a new Phantom,Trappin,INNER,ASSONANCE,vowel,MED,Y
+Trap House,50,It's just surveillance when I change the channel,change,52,"I paid my dues, I dropped outta school",paid,INNER,ASSONANCE,vowel,MED,Y
+Trap House,50,It's just surveillance when I change the channel,surveillance,52,"I paid my dues, I dropped outta school",paid,INNER,ASSONANCE,vowel,MED,Y
+Trap House,51,Trappin' and cappin' bought me a new Phantom,cappin,51,Trappin' and cappin' bought me a new Phantom,Phantom,INNER,ASSONANCE,vowel,MED,Y
+Trap House,51,Trappin' and cappin' bought me a new Phantom,Trappin,51,Trappin' and cappin' bought me a new Phantom,cappin,INNER,MULTI,multi,HIGH,Y
+Trap House,51,Trappin' and cappin' bought me a new Phantom,Trappin,51,Trappin' and cappin' bought me a new Phantom,Phantom,INNER,ASSONANCE,vowel,MED,Y
+Trap House,51,Trappin' and cappin' bought me a new Phantom,bought,52,"I paid my dues, I dropped outta school",dropped,INNER,SLANT,cmu,MED,Y
+Trap House,51,Trappin' and cappin' bought me a new Phantom,new,52,"I paid my dues, I dropped outta school",dues,INNER,ASSONANCE,vowel,MED,Y
+Trap House,51,Trappin' and cappin' bought me a new Phantom,new,52,"I paid my dues, I dropped outta school",outta,INNER,ASSONANCE,vowel,MED,Y
+Trap House,51,Trappin' and cappin' bought me a new Phantom,new,52,"I paid my dues, I dropped outta school",school,INNER,ASSONANCE,vowel,MED,Y
+Trap House,51,Trappin' and cappin' bought me a new Phantom,new,53,"They say I'm a fool, I'm whippin' the deuce",deuce,INNER,ASSONANCE,vowel,MED,Y
+Trap House,51,Trappin' and cappin' bought me a new Phantom,new,53,"They say I'm a fool, I'm whippin' the deuce",fool,INNER,ASSONANCE,vowel,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",dues,52,"I paid my dues, I dropped outta school",outta,INNER,SLANT,cmu,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",dues,52,"I paid my dues, I dropped outta school",school,INNER,SLANT,cmu,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",outta,52,"I paid my dues, I dropped outta school",school,INNER,SLANT,cmu,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",school,53,"They say I'm a fool, I'm whippin' the deuce",deuce,END,SLANT,cmu,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",dues,53,"They say I'm a fool, I'm whippin' the deuce",deuce,INNER,SLANT,cmu,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",dues,53,"They say I'm a fool, I'm whippin' the deuce",fool,INNER,SLANT,cmu,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",outta,53,"They say I'm a fool, I'm whippin' the deuce",deuce,INNER,SLANT,cmu,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",outta,53,"They say I'm a fool, I'm whippin' the deuce",fool,INNER,SLANT,cmu,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",paid,53,"They say I'm a fool, I'm whippin' the deuce",say,INNER,ASSONANCE,vowel,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",school,53,"They say I'm a fool, I'm whippin' the deuce",fool,INNER,PERFECT,cmu,HIGH,Y
+Trap House,52,"I paid my dues, I dropped outta school",school,54,I never fold cause I don't have a clue,clue,END,ASSONANCE,vowel,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",dropped,54,I never fold cause I don't have a clue,cause,INNER,ASSONANCE,vowel,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",dues,54,I never fold cause I don't have a clue,clue,INNER,ASSONANCE,vowel,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",outta,54,I never fold cause I don't have a clue,clue,INNER,ASSONANCE,vowel,MED,Y
+Trap House,52,"I paid my dues, I dropped outta school",school,55,Touch down on a pussy like dog food,food,END,SLANT,cmu,MED,Y
+Trap House,53,"They say I'm a fool, I'm whippin' the deuce",fool,53,"They say I'm a fool, I'm whippin' the deuce",deuce,INNER,SLANT,cmu,MED,Y
+Trap House,53,"They say I'm a fool, I'm whippin' the deuce",deuce,54,I never fold cause I don't have a clue,clue,END,ASSONANCE,vowel,MED,Y
+Trap House,53,"They say I'm a fool, I'm whippin' the deuce",fool,54,I never fold cause I don't have a clue,clue,INNER,ASSONANCE,vowel,MED,Y
+Trap House,53,"They say I'm a fool, I'm whippin' the deuce",deuce,55,Touch down on a pussy like dog food,food,END,SLANT,cmu,MED,Y
+Trap House,53,"They say I'm a fool, I'm whippin' the deuce",fool,55,Touch down on a pussy like dog food,food,INNER,SLANT,cmu,MED,Y
+Trap House,54,I never fold cause I don't have a clue,fold,54,I never fold cause I don't have a clue,don't,INNER,ASSONANCE,vowel,MED,Y
+Trap House,54,I never fold cause I don't have a clue,clue,55,Touch down on a pussy like dog food,food,END,ASSONANCE,vowel,MED,Y
+Trap House,54,I never fold cause I don't have a clue,never,56,Distributing work with intentions,intentions,INNER,ASSONANCE,vowel,MED,Y
+Trap House,56,Distributing work with intentions,intentions,57,"I'm the teacher, yo' bitch in detention",detention,END,ASSONANCE,vowel,MED,Y
+Trap House,56,Distributing work with intentions,Distributing,57,"I'm the teacher, yo' bitch in detention",bitch,INNER,ASSONANCE,vowel,MED,Y
+Trap House,56,Distributing work with intentions,Distributing,58,Fifty bricks all outta quantity,bricks,INNER,ASSONANCE,vowel,MED,Y
+Trap House,56,Distributing work with intentions,Distributing,58,Fifty bricks all outta quantity,Fifty,INNER,ASSONANCE,vowel,MED,Y
+Trap House,57,"I'm the teacher, yo' bitch in detention",bitch,58,Fifty bricks all outta quantity,bricks,INNER,ASSONANCE,vowel,MED,Y
+Trap House,57,"I'm the teacher, yo' bitch in detention",bitch,58,Fifty bricks all outta quantity,Fifty,INNER,ASSONANCE,vowel,MED,Y
+Trap House,58,Fifty bricks all outta quantity,Fifty,58,Fifty bricks all outta quantity,bricks,INNER,ASSONANCE,vowel,MED,Y
+Trap House,58,Fifty bricks all outta quantity,quantity,59,"Controllin' the flour, good quality",quality,END,MULTI,multi,HIGH,Y
+Trap House,59,"Controllin' the flour, good quality",Controllin,60,(Woop woop) There go 12!,go,INNER,ASSONANCE,vowel,MED,Y
+Trap House,59,"Controllin' the flour, good quality",Controllin,61,"Go in the house, we can't go to jail!",Go,INNER,ASSONANCE,vowel,MED,Y
+Trap House,59,"Controllin' the flour, good quality",flour,61,"Go in the house, we can't go to jail!",house,INNER,ASSONANCE,vowel,MED,Y
+Trap House,60,(Woop woop) There go 12!,go,61,"Go in the house, we can't go to jail!",Go,INNER,REPEAT,spelling,HIGH,N
+Trap House,60,(Woop woop) There go 12!,go,62,"No T.I., I'm on a paper trail",No,INNER,PERFECT,cmu,HIGH,Y
+Trap House,61,"Go in the house, we can't go to jail!",Go,61,"Go in the house, we can't go to jail!",go,INNER,REPEAT,spelling,HIGH,N
+Trap House,61,"Go in the house, we can't go to jail!",jail,62,"No T.I., I'm on a paper trail",trail,END,PERFECT,cmu,HIGH,Y
+Trap House,61,"Go in the house, we can't go to jail!",Go,62,"No T.I., I'm on a paper trail",No,INNER,PERFECT,cmu,HIGH,Y
+Trap House,61,"Go in the house, we can't go to jail!",jail,62,"No T.I., I'm on a paper trail",paper,INNER,SLANT,cmu,MED,Y
+Trap House,61,"Go in the house, we can't go to jail!",jail,63,Enchilada for sale like Taco Bell,sale,INNER,PERFECT,cmu,HIGH,Y
+Trap House,62,"No T.I., I'm on a paper trail",paper,62,"No T.I., I'm on a paper trail",trail,INNER,SLANT,cmu,MED,Y
+Trap House,62,"No T.I., I'm on a paper trail",paper,63,Enchilada for sale like Taco Bell,sale,INNER,SLANT,cmu,MED,Y
+Trap House,62,"No T.I., I'm on a paper trail",trail,63,Enchilada for sale like Taco Bell,sale,INNER,PERFECT,cmu,HIGH,Y
+Trap House,63,Enchilada for sale like Taco Bell,Enchilada,63,Enchilada for sale like Taco Bell,Taco,INNER,SLANT,cmu,MED,Y
+Trap House,63,Enchilada for sale like Taco Bell,Bell,64,"Indian, trap with the cartel",cartel,END,PERFECT,cmu,HIGH,Y
+Trap House,63,Enchilada for sale like Taco Bell,Bell,65,"Cook in the kitchen, Offset a chef",chef,END,SLANT,cmu,MED,Y
+Trap House,63,Enchilada for sale like Taco Bell,Bell,65,"Cook in the kitchen, Offset a chef",Offset,INNER,SLANT,cmu,MED,Y
+Trap House,63,Enchilada for sale like Taco Bell,Bell,66,My fork swim in water like Michael Phelps,Phelps,END,ASSONANCE,vowel,MED,Y
+Trap House,63,Enchilada for sale like Taco Bell,Bell,67,I made a million in the trap with no help!,help,END,SLANT,cmu,MED,Y
+Trap House,64,"Indian, trap with the cartel",cartel,65,"Cook in the kitchen, Offset a chef",chef,END,SLANT,cmu,MED,Y
+Trap House,64,"Indian, trap with the cartel",cartel,65,"Cook in the kitchen, Offset a chef",Offset,INNER,SLANT,cmu,MED,Y
+Trap House,64,"Indian, trap with the cartel",Indian,65,"Cook in the kitchen, Offset a chef",kitchen,INNER,ASSONANCE,vowel,MED,Y
+Trap House,64,"Indian, trap with the cartel",cartel,66,My fork swim in water like Michael Phelps,Phelps,END,ASSONANCE,vowel,MED,Y
+Trap House,64,"Indian, trap with the cartel",Indian,66,My fork swim in water like Michael Phelps,swim,INNER,ASSONANCE,vowel,MED,Y
+Trap House,64,"Indian, trap with the cartel",cartel,67,I made a million in the trap with no help!,help,END,SLANT,cmu,MED,Y
+Trap House,65,"Cook in the kitchen, Offset a chef",Offset,65,"Cook in the kitchen, Offset a chef",chef,INNER,SLANT,cmu,MED,Y
+Trap House,65,"Cook in the kitchen, Offset a chef",chef,66,My fork swim in water like Michael Phelps,Phelps,END,ASSONANCE,vowel,MED,Y
+Trap House,65,"Cook in the kitchen, Offset a chef",kitchen,66,My fork swim in water like Michael Phelps,swim,INNER,ASSONANCE,vowel,MED,Y
+Trap House,65,"Cook in the kitchen, Offset a chef",Offset,66,My fork swim in water like Michael Phelps,Phelps,INNER,ASSONANCE,vowel,MED,Y
+Trap House,65,"Cook in the kitchen, Offset a chef",chef,67,I made a million in the trap with no help!,help,END,ASSONANCE,vowel,MED,Y
+Trap House,65,"Cook in the kitchen, Offset a chef",kitchen,67,I made a million in the trap with no help!,million,INNER,ASSONANCE,vowel,MED,Y
+Trap House,65,"Cook in the kitchen, Offset a chef",Offset,67,I made a million in the trap with no help!,help,INNER,ASSONANCE,vowel,MED,Y
+Trap House,66,My fork swim in water like Michael Phelps,fork,66,My fork swim in water like Michael Phelps,water,INNER,ASSONANCE,vowel,MED,Y
+Trap House,66,My fork swim in water like Michael Phelps,like,66,My fork swim in water like Michael Phelps,Michael,INNER,SLANT,cmu,MED,Y
+Trap House,66,My fork swim in water like Michael Phelps,Phelps,67,I made a million in the trap with no help!,help,END,SLANT,cmu,MED,Y
+Trap House,66,My fork swim in water like Michael Phelps,swim,67,I made a million in the trap with no help!,million,INNER,ASSONANCE,vowel,MED,Y
