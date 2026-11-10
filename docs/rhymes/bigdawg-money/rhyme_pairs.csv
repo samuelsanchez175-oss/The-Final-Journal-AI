@@ -1,0 +1,389 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coca,1,And I sold more Coke and Coca-Cola,Cola,INNER,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coke,1,And I sold more Coke and Coca-Cola,Coca,INNER,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coke,1,And I sold more Coke and Coca-Cola,Cola,INNER,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,sold,1,And I sold more Coke and Coca-Cola,Coca,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,sold,1,And I sold more Coke and Coca-Cola,Coke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,sold,1,And I sold more Coke and Coca-Cola,Cola,INNER,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Cola,2,"Light on my toe, hold on these hoe",hoe,END,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coca,2,"Light on my toe, hold on these hoe",hoe,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coca,2,"Light on my toe, hold on these hoe",hold,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coca,2,"Light on my toe, hold on these hoe",toe,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coke,2,"Light on my toe, hold on these hoe",hoe,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coke,2,"Light on my toe, hold on these hoe",hold,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coke,2,"Light on my toe, hold on these hoe",toe,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Cola,2,"Light on my toe, hold on these hoe",hold,INNER,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Cola,2,"Light on my toe, hold on these hoe",toe,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,sold,2,"Light on my toe, hold on these hoe",hoe,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,sold,2,"Light on my toe, hold on these hoe",hold,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,sold,2,"Light on my toe, hold on these hoe",toe,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Cola,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,END,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coca,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,INNER,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Coke,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,INNER,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,more,3,"Still pourin' 6's and 4's, I'm gettin' throat",pourin,INNER,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,sold,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Cola,4,Still havin' bitches in every area code,code,END,SLANT,cmu,MED,Y
+Coke Flow,1,And I sold more Coke and Coca-Cola,Cola,5,"I know the street dirty, but not more than my soda",soda,END,SLANT,cmu,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",hold,2,"Light on my toe, hold on these hoe",hoe,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",toe,2,"Light on my toe, hold on these hoe",hoe,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",toe,2,"Light on my toe, hold on these hoe",hold,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",hoe,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,END,ASSONANCE,vowel,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",hold,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",toe,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",hoe,4,Still havin' bitches in every area code,code,END,ASSONANCE,vowel,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",hold,4,Still havin' bitches in every area code,code,INNER,SLANT,cmu,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",toe,4,Still havin' bitches in every area code,code,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",hoe,5,"I know the street dirty, but not more than my soda",soda,END,ASSONANCE,vowel,MED,Y
+Coke Flow,2,"Light on my toe, hold on these hoe",hoe,6,We done sold more Coke than Coca-Cola,Cola,END,ASSONANCE,vowel,MED,Y
+Coke Flow,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,4,Still havin' bitches in every area code,code,END,SLANT,cmu,MED,Y
+Coke Flow,3,"Still pourin' 6's and 4's, I'm gettin' throat",gettin,4,Still havin' bitches in every area code,area,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,3,"Still pourin' 6's and 4's, I'm gettin' throat",gettin,4,Still havin' bitches in every area code,every,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,3,"Still pourin' 6's and 4's, I'm gettin' throat",Still,4,Still havin' bitches in every area code,bitches,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,3,"Still pourin' 6's and 4's, I'm gettin' throat",Still,4,Still havin' bitches in every area code,Still,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,5,"I know the street dirty, but not more than my soda",soda,END,SLANT,cmu,MED,Y
+Coke Flow,3,"Still pourin' 6's and 4's, I'm gettin' throat",pourin,5,"I know the street dirty, but not more than my soda",more,INNER,SLANT,cmu,MED,Y
+Coke Flow,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,5,"I know the street dirty, but not more than my soda",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,3,"Still pourin' 6's and 4's, I'm gettin' throat",throat,6,We done sold more Coke than Coca-Cola,Cola,END,SLANT,cmu,MED,Y
+Coke Flow,4,Still havin' bitches in every area code,every,4,Still havin' bitches in every area code,area,INNER,SLANT,cmu,MED,Y
+Coke Flow,4,Still havin' bitches in every area code,Still,4,Still havin' bitches in every area code,bitches,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,4,Still havin' bitches in every area code,code,5,"I know the street dirty, but not more than my soda",soda,END,SLANT,cmu,MED,Y
+Coke Flow,4,Still havin' bitches in every area code,code,5,"I know the street dirty, but not more than my soda",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,4,Still havin' bitches in every area code,code,6,We done sold more Coke than Coca-Cola,Cola,END,SLANT,cmu,MED,Y
+Coke Flow,4,Still havin' bitches in every area code,code,6,We done sold more Coke than Coca-Cola,Coca,INNER,SLANT,cmu,MED,Y
+Coke Flow,4,Still havin' bitches in every area code,code,6,We done sold more Coke than Coca-Cola,Coke,INNER,SLANT,cmu,MED,Y
+Coke Flow,4,Still havin' bitches in every area code,code,6,We done sold more Coke than Coca-Cola,sold,INNER,SLANT,cmu,MED,Y
+Coke Flow,4,Still havin' bitches in every area code,code,8,"Don't be talkin' like you want smoke, we'll roll you",roll,END,SLANT,cmu,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",know,5,"I know the street dirty, but not more than my soda",soda,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",soda,6,We done sold more Coke than Coca-Cola,Cola,END,SLANT,cmu,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",know,6,We done sold more Coke than Coca-Cola,Coca,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",know,6,We done sold more Coke than Coca-Cola,Coke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",know,6,We done sold more Coke than Coca-Cola,Cola,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",know,6,We done sold more Coke than Coca-Cola,sold,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",more,6,We done sold more Coke than Coca-Cola,more,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,5,"I know the street dirty, but not more than my soda",soda,6,We done sold more Coke than Coca-Cola,Coca,INNER,SLANT,cmu,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",soda,6,We done sold more Coke than Coca-Cola,Coke,INNER,SLANT,cmu,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",soda,6,We done sold more Coke than Coca-Cola,sold,INNER,SLANT,cmu,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",dirty,7,"Playin' with that white girl, I'm all on 'em",girl,INNER,SLANT,cmu,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",more,7,"Playin' with that white girl, I'm all on 'em",all,INNER,SLANT,cmu,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",soda,8,"Don't be talkin' like you want smoke, we'll roll you",roll,END,SLANT,cmu,MED,Y
+Coke Flow,5,"I know the street dirty, but not more than my soda",soda,9,"You better know we pushin' up, nigga, no stroller",stroller,END,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Coca,6,We done sold more Coke than Coca-Cola,Cola,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Coke,6,We done sold more Coke than Coca-Cola,Coca,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Coke,6,We done sold more Coke than Coca-Cola,Cola,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,sold,6,We done sold more Coke than Coca-Cola,Coca,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,sold,6,We done sold more Coke than Coca-Cola,Coke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,sold,6,We done sold more Coke than Coca-Cola,Cola,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,more,7,"Playin' with that white girl, I'm all on 'em",all,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Cola,8,"Don't be talkin' like you want smoke, we'll roll you",roll,END,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Coca,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Coca,8,"Don't be talkin' like you want smoke, we'll roll you",roll,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Coca,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Coke,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Coke,8,"Don't be talkin' like you want smoke, we'll roll you",roll,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Coke,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Cola,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Cola,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,sold,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,sold,8,"Don't be talkin' like you want smoke, we'll roll you",roll,INNER,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,sold,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Cola,9,"You better know we pushin' up, nigga, no stroller",stroller,END,SLANT,cmu,MED,Y
+Coke Flow,6,We done sold more Coke than Coca-Cola,Cola,10,"And I stay with two pole, like I'm bipolar",bipolar,END,SLANT,cmu,MED,Y
+Coke Flow,7,"Playin' with that white girl, I'm all on 'em",white,8,"Don't be talkin' like you want smoke, we'll roll you",like,INNER,SLANT,cmu,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,8,"Don't be talkin' like you want smoke, we'll roll you",roll,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,8,"Don't be talkin' like you want smoke, we'll roll you",roll,INNER,SLANT,cmu,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",talkin,8,"Don't be talkin' like you want smoke, we'll roll you",want,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",roll,9,"You better know we pushin' up, nigga, no stroller",stroller,END,SLANT,cmu,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,9,"You better know we pushin' up, nigga, no stroller",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,9,"You better know we pushin' up, nigga, no stroller",no,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,9,"You better know we pushin' up, nigga, no stroller",stroller,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",roll,9,"You better know we pushin' up, nigga, no stroller",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",roll,9,"You better know we pushin' up, nigga, no stroller",no,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,9,"You better know we pushin' up, nigga, no stroller",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,9,"You better know we pushin' up, nigga, no stroller",no,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,9,"You better know we pushin' up, nigga, no stroller",stroller,INNER,SLANT,cmu,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",roll,10,"And I stay with two pole, like I'm bipolar",bipolar,END,SLANT,cmu,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,10,"And I stay with two pole, like I'm bipolar",bipolar,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",Don't,10,"And I stay with two pole, like I'm bipolar",pole,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",like,10,"And I stay with two pole, like I'm bipolar",like,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",roll,10,"And I stay with two pole, like I'm bipolar",pole,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,10,"And I stay with two pole, like I'm bipolar",bipolar,INNER,SLANT,cmu,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",smoke,10,"And I stay with two pole, like I'm bipolar",pole,INNER,SLANT,cmu,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",roll,11,The only time I ever fall is in October,October,END,SLANT,cmu,MED,Y
+Coke Flow,8,"Don't be talkin' like you want smoke, we'll roll you",roll,12,"Might fuck around and hit it raw, when I'm not sober",sober,END,SLANT,cmu,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",know,9,"You better know we pushin' up, nigga, no stroller",no,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",know,9,"You better know we pushin' up, nigga, no stroller",stroller,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",no,9,"You better know we pushin' up, nigga, no stroller",stroller,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",stroller,10,"And I stay with two pole, like I'm bipolar",bipolar,END,MULTI,multi,HIGH,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",know,10,"And I stay with two pole, like I'm bipolar",bipolar,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",know,10,"And I stay with two pole, like I'm bipolar",pole,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",no,10,"And I stay with two pole, like I'm bipolar",bipolar,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",no,10,"And I stay with two pole, like I'm bipolar",pole,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",stroller,10,"And I stay with two pole, like I'm bipolar",pole,INNER,SLANT,cmu,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",stroller,11,The only time I ever fall is in October,October,END,SLANT,cmu,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",better,11,The only time I ever fall is in October,ever,INNER,SLANT,cmu,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",know,11,The only time I ever fall is in October,October,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",know,11,The only time I ever fall is in October,only,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",no,11,The only time I ever fall is in October,October,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",no,11,The only time I ever fall is in October,only,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",stroller,11,The only time I ever fall is in October,only,INNER,SLANT,cmu,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",stroller,12,"Might fuck around and hit it raw, when I'm not sober",sober,END,SLANT,cmu,MED,Y
+Coke Flow,9,"You better know we pushin' up, nigga, no stroller",stroller,13,"I'm just tryna get that jaw, beforе I been over",over,END,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",pole,10,"And I stay with two pole, like I'm bipolar",bipolar,INNER,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",bipolar,11,The only time I ever fall is in October,October,END,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",bipolar,11,The only time I ever fall is in October,only,INNER,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",like,11,The only time I ever fall is in October,time,INNER,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",pole,11,The only time I ever fall is in October,October,INNER,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",pole,11,The only time I ever fall is in October,only,INNER,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",bipolar,12,"Might fuck around and hit it raw, when I'm not sober",sober,END,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",like,12,"Might fuck around and hit it raw, when I'm not sober",Might,INNER,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",pole,12,"Might fuck around and hit it raw, when I'm not sober",sober,INNER,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",bipolar,13,"I'm just tryna get that jaw, beforе I been over",over,END,SLANT,cmu,MED,Y
+Coke Flow,10,"And I stay with two pole, like I'm bipolar",bipolar,14,Ain't gon' lie all thesе diamonds on Minnesota,Minnesota,END,SLANT,cmu,MED,Y
+Coke Flow,11,The only time I ever fall is in October,only,11,The only time I ever fall is in October,October,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,11,The only time I ever fall is in October,October,12,"Might fuck around and hit it raw, when I'm not sober",sober,END,MULTI,multi,HIGH,Y
+Coke Flow,11,The only time I ever fall is in October,ever,12,"Might fuck around and hit it raw, when I'm not sober",when,INNER,SLANT,cmu,MED,Y
+Coke Flow,11,The only time I ever fall is in October,only,12,"Might fuck around and hit it raw, when I'm not sober",sober,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,11,The only time I ever fall is in October,time,12,"Might fuck around and hit it raw, when I'm not sober",Might,INNER,SLANT,cmu,MED,Y
+Coke Flow,11,The only time I ever fall is in October,October,13,"I'm just tryna get that jaw, beforе I been over",over,END,SLANT,cmu,MED,Y
+Coke Flow,11,The only time I ever fall is in October,ever,13,"I'm just tryna get that jaw, beforе I been over",get,INNER,SLANT,cmu,MED,Y
+Coke Flow,11,The only time I ever fall is in October,fall,13,"I'm just tryna get that jaw, beforе I been over",jaw,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,11,The only time I ever fall is in October,only,13,"I'm just tryna get that jaw, beforе I been over",over,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,11,The only time I ever fall is in October,October,14,Ain't gon' lie all thesе diamonds on Minnesota,Minnesota,END,SLANT,cmu,MED,Y
+Coke Flow,11,The only time I ever fall is in October,October,15,"Money threw it down, we was up in spoken",spoken,END,ASSONANCE,vowel,MED,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",raw,12,"Might fuck around and hit it raw, when I'm not sober",not,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",sober,13,"I'm just tryna get that jaw, beforе I been over",over,END,SLANT,cmu,MED,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",when,13,"I'm just tryna get that jaw, beforе I been over",get,INNER,SLANT,cmu,MED,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",sober,14,Ain't gon' lie all thesе diamonds on Minnesota,Minnesota,END,SLANT,cmu,MED,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",Might,14,Ain't gon' lie all thesе diamonds on Minnesota,diamonds,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",Might,14,Ain't gon' lie all thesе diamonds on Minnesota,lie,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",sober,14,Ain't gon' lie all thesе diamonds on Minnesota,gon,INNER,SLANT,spelling,LOW,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",when,14,Ain't gon' lie all thesе diamonds on Minnesota,thes,INNER,SLANT,spelling,LOW,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",sober,15,"Money threw it down, we was up in spoken",spoken,END,ASSONANCE,vowel,MED,Y
+Coke Flow,12,"Might fuck around and hit it raw, when I'm not sober",sober,16,How the fuck you got robbed? And you had your toaster,toaster,END,ASSONANCE,vowel,MED,Y
+Coke Flow,13,"I'm just tryna get that jaw, beforе I been over",over,14,Ain't gon' lie all thesе diamonds on Minnesota,Minnesota,END,SLANT,cmu,MED,Y
+Coke Flow,13,"I'm just tryna get that jaw, beforе I been over",get,14,Ain't gon' lie all thesе diamonds on Minnesota,thes,INNER,SLANT,spelling,LOW,Y
+Coke Flow,13,"I'm just tryna get that jaw, beforе I been over",jaw,14,Ain't gon' lie all thesе diamonds on Minnesota,all,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,13,"I'm just tryna get that jaw, beforе I been over",over,14,Ain't gon' lie all thesе diamonds on Minnesota,gon,INNER,SLANT,spelling,LOW,Y
+Coke Flow,13,"I'm just tryna get that jaw, beforе I been over",over,15,"Money threw it down, we was up in spoken",spoken,END,ASSONANCE,vowel,MED,Y
+Coke Flow,13,"I'm just tryna get that jaw, beforе I been over",over,16,How the fuck you got robbed? And you had your toaster,toaster,END,ASSONANCE,vowel,MED,Y
+Coke Flow,14,Ain't gon' lie all thesе diamonds on Minnesota,gon,14,Ain't gon' lie all thesе diamonds on Minnesota,Minnesota,INNER,SLANT,spelling,LOW,Y
+Coke Flow,14,Ain't gon' lie all thesе diamonds on Minnesota,lie,14,Ain't gon' lie all thesе diamonds on Minnesota,diamonds,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,14,Ain't gon' lie all thesе diamonds on Minnesota,Minnesota,15,"Money threw it down, we was up in spoken",spoken,END,ASSONANCE,vowel,MED,Y
+Coke Flow,14,Ain't gon' lie all thesе diamonds on Minnesota,gon,15,"Money threw it down, we was up in spoken",spoken,INNER,SLANT,spelling,LOW,Y
+Coke Flow,14,Ain't gon' lie all thesе diamonds on Minnesota,Minnesota,16,How the fuck you got robbed? And you had your toaster,toaster,END,SLANT,cmu,MED,Y
+Coke Flow,15,"Money threw it down, we was up in spoken",spoken,16,How the fuck you got robbed? And you had your toaster,toaster,END,ASSONANCE,vowel,MED,Y
+Coke Flow,15,"Money threw it down, we was up in spoken",down,16,How the fuck you got robbed? And you had your toaster,How,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,15,"Money threw it down, we was up in spoken",Money,16,How the fuck you got robbed? And you had your toaster,fuck,INNER,SLANT,cmu,MED,Y
+Coke Flow,15,"Money threw it down, we was up in spoken",spoken,17,"Look, I'm just bein' me, I ain't never been a broke boy",broke,INNER,SLANT,cmu,MED,Y
+Coke Flow,16,How the fuck you got robbed? And you had your toaster,got,16,How the fuck you got robbed? And you had your toaster,robbed,INNER,SLANT,cmu,MED,Y
+Coke Flow,16,How the fuck you got robbed? And you had your toaster,toaster,17,"Look, I'm just bein' me, I ain't never been a broke boy",broke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",boy,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",boy,END,REPEAT,spelling,HIGH,N
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",bein,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",jeans,INNER,SLANT,cmu,MED,Y
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",never,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",spend,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",boy,19,"I went Louis V' the hoes, weak I'ma dope boy",boy,END,REPEAT,spelling,HIGH,N
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",bein,19,"I went Louis V' the hoes, weak I'ma dope boy",V,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",bein,19,"I went Louis V' the hoes, weak I'ma dope boy",weak,INNER,SLANT,cmu,MED,Y
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",broke,19,"I went Louis V' the hoes, weak I'ma dope boy",dope,INNER,SLANT,cmu,MED,Y
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",broke,19,"I went Louis V' the hoes, weak I'ma dope boy",hoes,INNER,SLANT,cmu,MED,Y
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",never,19,"I went Louis V' the hoes, weak I'ma dope boy",went,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",boy,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Royce,END,ASSONANCE,vowel,MED,Y
+Coke Flow,17,"Look, I'm just bein' me, I ain't never been a broke boy",boy,21,"I'm just bein' me, I ain't never been a broke boy",boy,END,REPEAT,spelling,HIGH,N
+Coke Flow,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",boy,19,"I went Louis V' the hoes, weak I'ma dope boy",boy,END,REPEAT,spelling,HIGH,N
+Coke Flow,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",I'ma,19,"I went Louis V' the hoes, weak I'ma dope boy",I'ma,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",jeans,19,"I went Louis V' the hoes, weak I'ma dope boy",V,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",jeans,19,"I went Louis V' the hoes, weak I'ma dope boy",weak,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",spend,19,"I went Louis V' the hoes, weak I'ma dope boy",went,INNER,SLANT,cmu,MED,Y
+Coke Flow,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",boy,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Royce,END,ASSONANCE,vowel,MED,Y
+Coke Flow,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",fort,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Ball,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",jeans,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Z,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,18,"Hunnid' in my jeans, I'ma spend it on a fort boy",boy,21,"I'm just bein' me, I ain't never been a broke boy",boy,END,REPEAT,spelling,HIGH,N
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",hoes,19,"I went Louis V' the hoes, weak I'ma dope boy",dope,INNER,SLANT,cmu,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",V,19,"I went Louis V' the hoes, weak I'ma dope boy",weak,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",boy,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Royce,END,ASSONANCE,vowel,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",dope,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",no,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",dope,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",hoes,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",no,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",hoes,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Rolls,INNER,SLANT,cmu,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",V,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Z,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",weak,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Z,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",went,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",want,INNER,SLANT,spelling,LOW,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",boy,21,"I'm just bein' me, I ain't never been a broke boy",boy,END,REPEAT,spelling,HIGH,N
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",dope,21,"I'm just bein' me, I ain't never been a broke boy",broke,INNER,SLANT,cmu,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",hoes,21,"I'm just bein' me, I ain't never been a broke boy",broke,INNER,SLANT,cmu,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",V,21,"I'm just bein' me, I ain't never been a broke boy",bein,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",weak,21,"I'm just bein' me, I ain't never been a broke boy",bein,INNER,SLANT,cmu,MED,Y
+Coke Flow,19,"I went Louis V' the hoes, weak I'ma dope boy",went,21,"I'm just bein' me, I ain't never been a broke boy",never,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",no,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",want,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",want,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Royce,21,"I'm just bein' me, I ain't never been a broke boy",boy,END,ASSONANCE,vowel,MED,Y
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",ain't,21,"I'm just bein' me, I ain't never been a broke boy",ain't,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",no,21,"I'm just bein' me, I ain't never been a broke boy",broke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Rolls,21,"I'm just bein' me, I ain't never been a broke boy",broke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Z,21,"I'm just bein' me, I ain't never been a broke boy",bein,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Ball,22,"Ayy, real nigga, bitch, I'm wanted though",wanted,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",no,22,"Ayy, real nigga, bitch, I'm wanted though",though,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Rolls,22,"Ayy, real nigga, bitch, I'm wanted though",though,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,20,"I ain't want no Dragon Ball Z, I want a Rolls-Royce",Z,22,"Ayy, real nigga, bitch, I'm wanted though",real,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,21,"I'm just bein' me, I ain't never been a broke boy",bein,22,"Ayy, real nigga, bitch, I'm wanted though",real,INNER,SLANT,cmu,MED,Y
+Coke Flow,21,"I'm just bein' me, I ain't never been a broke boy",broke,22,"Ayy, real nigga, bitch, I'm wanted though",though,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,21,"I'm just bein' me, I ain't never been a broke boy",broke,23,"I come from the jungle, no roots, so anything go",go,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,21,"I'm just bein' me, I ain't never been a broke boy",broke,23,"I come from the jungle, no roots, so anything go",no,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,22,"Ayy, real nigga, bitch, I'm wanted though",though,23,"I come from the jungle, no roots, so anything go",go,END,PERFECT,cmu,HIGH,Y
+Coke Flow,22,"Ayy, real nigga, bitch, I'm wanted though",bitch,23,"I come from the jungle, no roots, so anything go",anything,INNER,SLANT,cmu,MED,Y
+Coke Flow,22,"Ayy, real nigga, bitch, I'm wanted though",though,23,"I come from the jungle, no roots, so anything go",no,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,22,"Ayy, real nigga, bitch, I'm wanted though",though,24,"We was on the block with a dream, just like the movie blow",blow,END,PERFECT,cmu,HIGH,Y
+Coke Flow,22,"Ayy, real nigga, bitch, I'm wanted though",real,24,"We was on the block with a dream, just like the movie blow",dream,INNER,SLANT,cmu,MED,Y
+Coke Flow,22,"Ayy, real nigga, bitch, I'm wanted though",though,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,END,PERFECT,cmu,HIGH,Y
+Coke Flow,22,"Ayy, real nigga, bitch, I'm wanted though",though,26,"Rose from the bottom, and still tryna go up some mo'",mo,END,PERFECT,cmu,HIGH,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",come,23,"I come from the jungle, no roots, so anything go",jungle,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",no,23,"I come from the jungle, no roots, so anything go",go,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",go,24,"We was on the block with a dream, just like the movie blow",blow,END,PERFECT,cmu,HIGH,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",no,24,"We was on the block with a dream, just like the movie blow",blow,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",roots,24,"We was on the block with a dream, just like the movie blow",movie,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",go,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,END,PERFECT,cmu,HIGH,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",come,25,"Always had a way to go get it, I'm talkin' hustle flow",hustle,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",go,25,"Always had a way to go get it, I'm talkin' hustle flow",go,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,23,"I come from the jungle, no roots, so anything go",jungle,25,"Always had a way to go get it, I'm talkin' hustle flow",hustle,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",no,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",no,25,"Always had a way to go get it, I'm talkin' hustle flow",go,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",go,26,"Rose from the bottom, and still tryna go up some mo'",mo,END,PERFECT,cmu,HIGH,Y
+Coke Flow,23,"I come from the jungle, no roots, so anything go",go,27,"I be with them niggas outside, who tryna take a soul",soul,END,ASSONANCE,vowel,MED,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",blow,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,END,PERFECT,cmu,HIGH,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",block,25,"Always had a way to go get it, I'm talkin' hustle flow",talkin,INNER,SLANT,cmu,MED,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",blow,25,"Always had a way to go get it, I'm talkin' hustle flow",go,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",blow,26,"Rose from the bottom, and still tryna go up some mo'",mo,END,PERFECT,cmu,HIGH,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",block,26,"Rose from the bottom, and still tryna go up some mo'",bottom,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",blow,26,"Rose from the bottom, and still tryna go up some mo'",go,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",blow,26,"Rose from the bottom, and still tryna go up some mo'",Rose,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",dream,26,"Rose from the bottom, and still tryna go up some mo'",tryna,INNER,SLANT,spelling,LOW,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",blow,27,"I be with them niggas outside, who tryna take a soul",soul,END,ASSONANCE,vowel,MED,Y
+Coke Flow,24,"We was on the block with a dream, just like the movie blow",blow,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,END,ASSONANCE,vowel,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",Always,25,"Always had a way to go get it, I'm talkin' hustle flow",way,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",go,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,26,"Rose from the bottom, and still tryna go up some mo'",mo,END,PERFECT,cmu,HIGH,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,26,"Rose from the bottom, and still tryna go up some mo'",go,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,26,"Rose from the bottom, and still tryna go up some mo'",Rose,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",go,26,"Rose from the bottom, and still tryna go up some mo'",go,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",go,26,"Rose from the bottom, and still tryna go up some mo'",mo,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",go,26,"Rose from the bottom, and still tryna go up some mo'",Rose,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",hustle,26,"Rose from the bottom, and still tryna go up some mo'",some,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",talkin,26,"Rose from the bottom, and still tryna go up some mo'",bottom,INNER,SLANT,cmu,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,27,"I be with them niggas outside, who tryna take a soul",soul,END,ASSONANCE,vowel,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",Always,27,"I be with them niggas outside, who tryna take a soul",take,INNER,SLANT,cmu,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",go,27,"I be with them niggas outside, who tryna take a soul",soul,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",way,27,"I be with them niggas outside, who tryna take a soul",take,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,END,ASSONANCE,vowel,MED,Y
+Coke Flow,25,"Always had a way to go get it, I'm talkin' hustle flow",flow,29,"AP, two-tone, rose gold",gold,END,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",go,26,"Rose from the bottom, and still tryna go up some mo'",mo,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",Rose,26,"Rose from the bottom, and still tryna go up some mo'",go,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",Rose,26,"Rose from the bottom, and still tryna go up some mo'",mo,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",mo,27,"I be with them niggas outside, who tryna take a soul",soul,END,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",go,27,"I be with them niggas outside, who tryna take a soul",soul,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",Rose,27,"I be with them niggas outside, who tryna take a soul",soul,INNER,SLANT,cmu,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",tryna,27,"I be with them niggas outside, who tryna take a soul",tryna,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",mo,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,END,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",go,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",go,28,"Allergic to that broke shit, addicted to the bankroll",broke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",mo,28,"Allergic to that broke shit, addicted to the bankroll",broke,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",Rose,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,INNER,SLANT,cmu,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",Rose,28,"Allergic to that broke shit, addicted to the bankroll",broke,INNER,SLANT,cmu,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",still,28,"Allergic to that broke shit, addicted to the bankroll",addicted,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",still,28,"Allergic to that broke shit, addicted to the bankroll",shit,INNER,SLANT,cmu,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",mo,29,"AP, two-tone, rose gold",gold,END,ASSONANCE,vowel,MED,Y
+Coke Flow,26,"Rose from the bottom, and still tryna go up some mo'",mo,30,"See I know how the gang go, grindin' and get mo'",mo,END,REPEAT,spelling,HIGH,N
+Coke Flow,27,"I be with them niggas outside, who tryna take a soul",soul,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,END,PERFECT,cmu,HIGH,Y
+Coke Flow,27,"I be with them niggas outside, who tryna take a soul",soul,28,"Allergic to that broke shit, addicted to the bankroll",broke,INNER,SLANT,cmu,MED,Y
+Coke Flow,27,"I be with them niggas outside, who tryna take a soul",soul,29,"AP, two-tone, rose gold",gold,END,SLANT,cmu,MED,Y
+Coke Flow,27,"I be with them niggas outside, who tryna take a soul",soul,29,"AP, two-tone, rose gold",rose,INNER,SLANT,cmu,MED,Y
+Coke Flow,27,"I be with them niggas outside, who tryna take a soul",soul,29,"AP, two-tone, rose gold",tone,INNER,SLANT,cmu,MED,Y
+Coke Flow,27,"I be with them niggas outside, who tryna take a soul",who,29,"AP, two-tone, rose gold",two,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,27,"I be with them niggas outside, who tryna take a soul",soul,30,"See I know how the gang go, grindin' and get mo'",mo,END,ASSONANCE,vowel,MED,Y
+Coke Flow,27,"I be with them niggas outside, who tryna take a soul",soul,31,"can't get his life up for you, and be in the same boat",boat,END,SLANT,cmu,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",broke,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,INNER,SLANT,cmu,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",shit,28,"Allergic to that broke shit, addicted to the bankroll",addicted,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,29,"AP, two-tone, rose gold",gold,END,SLANT,cmu,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,29,"AP, two-tone, rose gold",rose,INNER,SLANT,cmu,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,29,"AP, two-tone, rose gold",tone,INNER,SLANT,cmu,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",broke,29,"AP, two-tone, rose gold",gold,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",broke,29,"AP, two-tone, rose gold",rose,INNER,SLANT,cmu,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",broke,29,"AP, two-tone, rose gold",tone,INNER,SLANT,cmu,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,30,"See I know how the gang go, grindin' and get mo'",mo,END,ASSONANCE,vowel,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,30,"See I know how the gang go, grindin' and get mo'",go,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,30,"See I know how the gang go, grindin' and get mo'",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",broke,30,"See I know how the gang go, grindin' and get mo'",go,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",broke,30,"See I know how the gang go, grindin' and get mo'",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",broke,30,"See I know how the gang go, grindin' and get mo'",mo,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,28,"Allergic to that broke shit, addicted to the bankroll",bankroll,31,"can't get his life up for you, and be in the same boat",boat,END,SLANT,cmu,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",rose,29,"AP, two-tone, rose gold",gold,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",tone,29,"AP, two-tone, rose gold",gold,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",tone,29,"AP, two-tone, rose gold",rose,INNER,SLANT,cmu,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",gold,30,"See I know how the gang go, grindin' and get mo'",mo,END,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",AP,30,"See I know how the gang go, grindin' and get mo'",See,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,29,"AP, two-tone, rose gold",gold,30,"See I know how the gang go, grindin' and get mo'",go,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",gold,30,"See I know how the gang go, grindin' and get mo'",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",rose,30,"See I know how the gang go, grindin' and get mo'",go,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",rose,30,"See I know how the gang go, grindin' and get mo'",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",rose,30,"See I know how the gang go, grindin' and get mo'",mo,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",tone,30,"See I know how the gang go, grindin' and get mo'",go,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",tone,30,"See I know how the gang go, grindin' and get mo'",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",tone,30,"See I know how the gang go, grindin' and get mo'",mo,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",gold,31,"can't get his life up for you, and be in the same boat",boat,END,ASSONANCE,vowel,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",rose,31,"can't get his life up for you, and be in the same boat",boat,INNER,SLANT,cmu,MED,Y
+Coke Flow,29,"AP, two-tone, rose gold",tone,31,"can't get his life up for you, and be in the same boat",boat,INNER,SLANT,cmu,MED,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",go,30,"See I know how the gang go, grindin' and get mo'",mo,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",know,30,"See I know how the gang go, grindin' and get mo'",go,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",know,30,"See I know how the gang go, grindin' and get mo'",mo,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",mo,31,"can't get his life up for you, and be in the same boat",boat,END,ASSONANCE,vowel,MED,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",gang,31,"can't get his life up for you, and be in the same boat",can't,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",get,31,"can't get his life up for you, and be in the same boat",get,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",go,31,"can't get his life up for you, and be in the same boat",boat,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",grindin,31,"can't get his life up for you, and be in the same boat",life,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",know,31,"can't get his life up for you, and be in the same boat",boat,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",go,32,"You know I ain't lie, ain't money gon' do a thing",know,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",grindin,32,"You know I ain't lie, ain't money gon' do a thing",lie,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",know,32,"You know I ain't lie, ain't money gon' do a thing",know,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,30,"See I know how the gang go, grindin' and get mo'",mo,32,"You know I ain't lie, ain't money gon' do a thing",know,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,31,"can't get his life up for you, and be in the same boat",boat,32,"You know I ain't lie, ain't money gon' do a thing",gon,INNER,SLANT,spelling,LOW,Y
+Coke Flow,31,"can't get his life up for you, and be in the same boat",boat,32,"You know I ain't lie, ain't money gon' do a thing",know,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,31,"can't get his life up for you, and be in the same boat",life,32,"You know I ain't lie, ain't money gon' do a thing",lie,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,31,"can't get his life up for you, and be in the same boat",same,32,"You know I ain't lie, ain't money gon' do a thing",ain't,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,31,"can't get his life up for you, and be in the same boat",same,33,"Real good big body, takin' two lames",takin,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,32,"You know I ain't lie, ain't money gon' do a thing",ain't,32,"You know I ain't lie, ain't money gon' do a thing",ain't,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,32,"You know I ain't lie, ain't money gon' do a thing",ain't,33,"Real good big body, takin' two lames",takin,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,32,"You know I ain't lie, ain't money gon' do a thing",thing,33,"Real good big body, takin' two lames",big,INNER,SLANT,cmu,MED,Y
+Coke Flow,32,"You know I ain't lie, ain't money gon' do a thing",ain't,34,The way I keep my gang'll blow a young bitch brain,brain,INNER,SLANT,cmu,MED,Y
+Coke Flow,32,"You know I ain't lie, ain't money gon' do a thing",ain't,34,The way I keep my gang'll blow a young bitch brain,way,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,32,"You know I ain't lie, ain't money gon' do a thing",know,34,The way I keep my gang'll blow a young bitch brain,blow,INNER,PERFECT,cmu,HIGH,Y
+Coke Flow,32,"You know I ain't lie, ain't money gon' do a thing",money,34,The way I keep my gang'll blow a young bitch brain,young,INNER,SLANT,cmu,MED,Y
+Coke Flow,32,"You know I ain't lie, ain't money gon' do a thing",thing,34,The way I keep my gang'll blow a young bitch brain,bitch,INNER,SLANT,cmu,MED,Y
+Coke Flow,33,"Real good big body, takin' two lames",big,34,The way I keep my gang'll blow a young bitch brain,bitch,INNER,SLANT,cmu,MED,Y
+Coke Flow,33,"Real good big body, takin' two lames",Real,34,The way I keep my gang'll blow a young bitch brain,keep,INNER,SLANT,cmu,MED,Y
+Coke Flow,33,"Real good big body, takin' two lames",takin,34,The way I keep my gang'll blow a young bitch brain,brain,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,33,"Real good big body, takin' two lames",takin,34,The way I keep my gang'll blow a young bitch brain,way,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,33,"Real good big body, takin' two lames",takin,35,"Five thousand bubble coat, Louis and a planes",planes,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,33,"Real good big body, takin' two lames",two,35,"Five thousand bubble coat, Louis and a planes",Louis,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,way,34,The way I keep my gang'll blow a young bitch brain,brain,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,brain,35,"Five thousand bubble coat, Louis and a planes",planes,END,SLANT,cmu,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,blow,35,"Five thousand bubble coat, Louis and a planes",coat,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,way,35,"Five thousand bubble coat, Louis and a planes",planes,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,young,35,"Five thousand bubble coat, Louis and a planes",bubble,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,bitch,36,"See that shit hurt, these niggas feelin' when they can't hang",shit,INNER,SLANT,cmu,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,gang'll,36,"See that shit hurt, these niggas feelin' when they can't hang",can't,INNER,ASSONANCE,vowel,LOW,N
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,gang'll,36,"See that shit hurt, these niggas feelin' when they can't hang",hang,INNER,ASSONANCE,vowel,LOW,N
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,keep,36,"See that shit hurt, these niggas feelin' when they can't hang",feelin,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,keep,36,"See that shit hurt, these niggas feelin' when they can't hang",See,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,keep,36,"See that shit hurt, these niggas feelin' when they can't hang",these,INNER,SLANT,cmu,MED,Y
+Coke Flow,34,The way I keep my gang'll blow a young bitch brain,brain,37,"Then they go to hang, man that shit be insane",insane,END,PERFECT,cmu,HIGH,Y
+Coke Flow,35,"Five thousand bubble coat, Louis and a planes",planes,37,"Then they go to hang, man that shit be insane",insane,END,SLANT,cmu,MED,Y
+Coke Flow,35,"Five thousand bubble coat, Louis and a planes",coat,37,"Then they go to hang, man that shit be insane",go,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,36,"See that shit hurt, these niggas feelin' when they can't hang",can't,36,"See that shit hurt, these niggas feelin' when they can't hang",hang,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,36,"See that shit hurt, these niggas feelin' when they can't hang",See,36,"See that shit hurt, these niggas feelin' when they can't hang",feelin,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,36,"See that shit hurt, these niggas feelin' when they can't hang",See,36,"See that shit hurt, these niggas feelin' when they can't hang",these,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,36,"See that shit hurt, these niggas feelin' when they can't hang",these,36,"See that shit hurt, these niggas feelin' when they can't hang",feelin,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,36,"See that shit hurt, these niggas feelin' when they can't hang",can't,37,"Then they go to hang, man that shit be insane",hang,INNER,ASSONANCE,vowel,MED,Y
+Coke Flow,36,"See that shit hurt, these niggas feelin' when they can't hang",can't,37,"Then they go to hang, man that shit be insane",man,INNER,SLANT,cmu,MED,Y
+Coke Flow,36,"See that shit hurt, these niggas feelin' when they can't hang",hang,37,"Then they go to hang, man that shit be insane",hang,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,36,"See that shit hurt, these niggas feelin' when they can't hang",hang,37,"Then they go to hang, man that shit be insane",man,INNER,SLANT,cmu,MED,Y
+Coke Flow,36,"See that shit hurt, these niggas feelin' when they can't hang",shit,37,"Then they go to hang, man that shit be insane",shit,INNER,REPEAT,spelling,HIGH,N
+Coke Flow,37,"Then they go to hang, man that shit be insane",hang,37,"Then they go to hang, man that shit be insane",man,INNER,SLANT,cmu,MED,Y

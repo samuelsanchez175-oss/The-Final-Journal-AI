@@ -1,0 +1,210 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Chicken Soup,1,"Go to the- while I'm doin' that, like start over",Go,1,"Go to the- while I'm doin' that, like start over",over,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,1,"Go to the- while I'm doin' that, like start over",while,1,"Go to the- while I'm doin' that, like start over",like,INNER,SLANT,cmu,MED,Y
+Chicken Soup,1,"Go to the- while I'm doin' that, like start over",Go,2,"Money make the world go round, yeah (Go 'round)",go,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,1,"Go to the- while I'm doin' that, like start over",over,2,"Money make the world go round, yeah (Go 'round)",go,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,1,"Go to the- while I'm doin' that, like start over",start,3,"I just wanna be rich and make my mama so proud, yeah",mama,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,1,"Go to the- while I'm doin' that, like start over",start,3,"I just wanna be rich and make my mama so proud, yeah",wanna,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,1,"Go to the- while I'm doin' that, like start over",over,5,"Panoramic roof, open it, let the smoke out",smoke,END,SLANT,cmu,MED,Y
+Chicken Soup,2,"Money make the world go round, yeah (Go 'round)",round,3,"I just wanna be rich and make my mama so proud, yeah",proud,END,SLANT,cmu,MED,Y
+Chicken Soup,2,"Money make the world go round, yeah (Go 'round)",make,3,"I just wanna be rich and make my mama so proud, yeah",make,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,2,"Money make the world go round, yeah (Go 'round)",round,4,"Hot like chicken soup, oh, you want a bowl now?",now,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,2,"Money make the world go round, yeah (Go 'round)",go,4,"Hot like chicken soup, oh, you want a bowl now?",bowl,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,3,"I just wanna be rich and make my mama so proud, yeah",wanna,3,"I just wanna be rich and make my mama so proud, yeah",mama,INNER,SLANT,cmu,MED,Y
+Chicken Soup,3,"I just wanna be rich and make my mama so proud, yeah",proud,4,"Hot like chicken soup, oh, you want a bowl now?",now,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,3,"I just wanna be rich and make my mama so proud, yeah",mama,4,"Hot like chicken soup, oh, you want a bowl now?",Hot,INNER,SLANT,cmu,MED,Y
+Chicken Soup,3,"I just wanna be rich and make my mama so proud, yeah",mama,4,"Hot like chicken soup, oh, you want a bowl now?",want,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,3,"I just wanna be rich and make my mama so proud, yeah",rich,4,"Hot like chicken soup, oh, you want a bowl now?",chicken,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,3,"I just wanna be rich and make my mama so proud, yeah",wanna,4,"Hot like chicken soup, oh, you want a bowl now?",Hot,INNER,SLANT,cmu,MED,Y
+Chicken Soup,3,"I just wanna be rich and make my mama so proud, yeah",wanna,4,"Hot like chicken soup, oh, you want a bowl now?",want,INNER,SLANT,cmu,MED,Y
+Chicken Soup,4,"Hot like chicken soup, oh, you want a bowl now?",Hot,4,"Hot like chicken soup, oh, you want a bowl now?",want,INNER,SLANT,cmu,MED,Y
+Chicken Soup,4,"Hot like chicken soup, oh, you want a bowl now?",bowl,5,"Panoramic roof, open it, let the smoke out",open,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,4,"Hot like chicken soup, oh, you want a bowl now?",bowl,5,"Panoramic roof, open it, let the smoke out",smoke,INNER,SLANT,cmu,MED,Y
+Chicken Soup,4,"Hot like chicken soup, oh, you want a bowl now?",soup,5,"Panoramic roof, open it, let the smoke out",roof,INNER,SLANT,cmu,MED,Y
+Chicken Soup,4,"Hot like chicken soup, oh, you want a bowl now?",bowl,6,"You can only glance at these diamonds, they hit too hard",only,INNER,SLANT,cmu,MED,Y
+Chicken Soup,4,"Hot like chicken soup, oh, you want a bowl now?",chicken,6,"You can only glance at these diamonds, they hit too hard",hit,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,4,"Hot like chicken soup, oh, you want a bowl now?",Hot,6,"You can only glance at these diamonds, they hit too hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,4,"Hot like chicken soup, oh, you want a bowl now?",like,6,"You can only glance at these diamonds, they hit too hard",diamonds,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,4,"Hot like chicken soup, oh, you want a bowl now?",want,6,"You can only glance at these diamonds, they hit too hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,5,"Panoramic roof, open it, let the smoke out",open,5,"Panoramic roof, open it, let the smoke out",smoke,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,5,"Panoramic roof, open it, let the smoke out",open,6,"You can only glance at these diamonds, they hit too hard",only,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,5,"Panoramic roof, open it, let the smoke out",Panoramic,6,"You can only glance at these diamonds, they hit too hard",can,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,5,"Panoramic roof, open it, let the smoke out",Panoramic,6,"You can only glance at these diamonds, they hit too hard",glance,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,5,"Panoramic roof, open it, let the smoke out",smoke,6,"You can only glance at these diamonds, they hit too hard",only,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,5,"Panoramic roof, open it, let the smoke out",let,7,"Thousand dollar pants, so just guess how much the shoes are",guess,INNER,SLANT,cmu,MED,Y
+Chicken Soup,5,"Panoramic roof, open it, let the smoke out",Panoramic,7,"Thousand dollar pants, so just guess how much the shoes are",pants,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,5,"Panoramic roof, open it, let the smoke out",roof,7,"Thousand dollar pants, so just guess how much the shoes are",shoes,INNER,SLANT,cmu,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",can,6,"You can only glance at these diamonds, they hit too hard",glance,INNER,SLANT,cmu,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",can,7,"Thousand dollar pants, so just guess how much the shoes are",pants,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",glance,7,"Thousand dollar pants, so just guess how much the shoes are",pants,INNER,SLANT,cmu,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",hard,7,"Thousand dollar pants, so just guess how much the shoes are",dollar,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",can,8,I can't shake your hand because I don't know who you are (Who you are),can't,INNER,SLANT,cmu,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",can,8,I can't shake your hand because I don't know who you are (Who you are),hand,INNER,SLANT,cmu,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",glance,8,I can't shake your hand because I don't know who you are (Who you are),can't,INNER,SLANT,cmu,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",glance,8,I can't shake your hand because I don't know who you are (Who you are),hand,INNER,SLANT,cmu,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",only,8,I can't shake your hand because I don't know who you are (Who you are),don't,INNER,SLANT,cmu,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",only,8,I can't shake your hand because I don't know who you are (Who you are),know,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,6,"You can only glance at these diamonds, they hit too hard",hard,9,Hope you understand that I came too far (Too far),far,END,SLANT,cmu,MED,Y
+Chicken Soup,7,"Thousand dollar pants, so just guess how much the shoes are",Thousand,7,"Thousand dollar pants, so just guess how much the shoes are",how,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,7,"Thousand dollar pants, so just guess how much the shoes are",shoes,8,I can't shake your hand because I don't know who you are (Who you are),who,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,7,"Thousand dollar pants, so just guess how much the shoes are",pants,8,I can't shake your hand because I don't know who you are (Who you are),can't,INNER,SLANT,cmu,MED,Y
+Chicken Soup,7,"Thousand dollar pants, so just guess how much the shoes are",pants,8,I can't shake your hand because I don't know who you are (Who you are),hand,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,7,"Thousand dollar pants, so just guess how much the shoes are",Thousand,8,I can't shake your hand because I don't know who you are (Who you are),hand,INNER,SLANT,spelling,LOW,Y
+Chicken Soup,7,"Thousand dollar pants, so just guess how much the shoes are",dollar,9,Hope you understand that I came too far (Too far),far,INNER,SLANT,cmu,MED,Y
+Chicken Soup,7,"Thousand dollar pants, so just guess how much the shoes are",pants,9,Hope you understand that I came too far (Too far),understand,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,7,"Thousand dollar pants, so just guess how much the shoes are",Thousand,9,Hope you understand that I came too far (Too far),understand,INNER,SLANT,spelling,LOW,Y
+Chicken Soup,8,I can't shake your hand because I don't know who you are (Who you are),can't,8,I can't shake your hand because I don't know who you are (Who you are),hand,INNER,SLANT,cmu,MED,Y
+Chicken Soup,8,I can't shake your hand because I don't know who you are (Who you are),don't,8,I can't shake your hand because I don't know who you are (Who you are),know,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,8,I can't shake your hand because I don't know who you are (Who you are),can't,9,Hope you understand that I came too far (Too far),understand,INNER,SLANT,cmu,MED,Y
+Chicken Soup,8,I can't shake your hand because I don't know who you are (Who you are),don't,9,Hope you understand that I came too far (Too far),Hope,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,8,I can't shake your hand because I don't know who you are (Who you are),hand,9,Hope you understand that I came too far (Too far),understand,INNER,PERFECT,cmu,HIGH,Y
+Chicken Soup,8,I can't shake your hand because I don't know who you are (Who you are),know,9,Hope you understand that I came too far (Too far),Hope,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,8,I can't shake your hand because I don't know who you are (Who you are),shake,9,Hope you understand that I came too far (Too far),came,INNER,SLANT,cmu,MED,Y
+Chicken Soup,8,I can't shake your hand because I don't know who you are (Who you are),shake,10,Why these niggas feel some type of way? (Why?),way,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,9,Hope you understand that I came too far (Too far),came,10,Why these niggas feel some type of way? (Why?),way,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,9,Hope you understand that I came too far (Too far),came,11,I think it's all these racks that we be blowing in they face,face,INNER,SLANT,cmu,MED,Y
+Chicken Soup,9,Hope you understand that I came too far (Too far),Hope,11,I think it's all these racks that we be blowing in they face,blowing,INNER,SLANT,cmu,MED,Y
+Chicken Soup,9,Hope you understand that I came too far (Too far),understand,11,I think it's all these racks that we be blowing in they face,racks,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,10,Why these niggas feel some type of way? (Why?),these,10,Why these niggas feel some type of way? (Why?),feel,INNER,SLANT,cmu,MED,Y
+Chicken Soup,10,Why these niggas feel some type of way? (Why?),Why,10,Why these niggas feel some type of way? (Why?),type,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,10,Why these niggas feel some type of way? (Why?),way,11,I think it's all these racks that we be blowing in they face,face,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,10,Why these niggas feel some type of way? (Why?),feel,11,I think it's all these racks that we be blowing in they face,these,INNER,SLANT,cmu,MED,Y
+Chicken Soup,10,Why these niggas feel some type of way? (Why?),these,11,I think it's all these racks that we be blowing in they face,these,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,10,Why these niggas feel some type of way? (Why?),way,12,"Fendi on my shoe, I think I got expensive taste (Yeah)",taste,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,10,Why these niggas feel some type of way? (Why?),way,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",face,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,11,I think it's all these racks that we be blowing in they face,face,12,"Fendi on my shoe, I think I got expensive taste (Yeah)",taste,END,SLANT,cmu,MED,Y
+Chicken Soup,11,I think it's all these racks that we be blowing in they face,think,12,"Fendi on my shoe, I think I got expensive taste (Yeah)",think,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,11,I think it's all these racks that we be blowing in they face,face,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",face,END,REPEAT,spelling,HIGH,N
+Chicken Soup,11,I think it's all these racks that we be blowing in they face,all,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",All,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,11,I think it's all these racks that we be blowing in they face,blowing,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",hoes,INNER,SLANT,cmu,MED,Y
+Chicken Soup,11,I think it's all these racks that we be blowing in they face,these,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",keep,INNER,SLANT,cmu,MED,Y
+Chicken Soup,12,"Fendi on my shoe, I think I got expensive taste (Yeah)",Fendi,12,"Fendi on my shoe, I think I got expensive taste (Yeah)",expensive,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,12,"Fendi on my shoe, I think I got expensive taste (Yeah)",taste,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",face,END,SLANT,cmu,MED,Y
+Chicken Soup,12,"Fendi on my shoe, I think I got expensive taste (Yeah)",shoe,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",blue,INNER,PERFECT,cmu,HIGH,Y
+Chicken Soup,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",hundreds,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",makeup,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",hundreds,14,"Kiki, do you love me? (Hold up)",love,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",keep,14,"Kiki, do you love me? (Hold up)",Kiki,INNER,SLANT,cmu,MED,Y
+Chicken Soup,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",makeup,14,"Kiki, do you love me? (Hold up)",love,INNER,SLANT,cmu,MED,Y
+Chicken Soup,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",hoes,15,"I don't care, it's not bitches over money",don't,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",hoes,15,"I don't care, it's not bitches over money",over,INNER,SLANT,cmu,MED,Y
+Chicken Soup,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",hundreds,15,"I don't care, it's not bitches over money",money,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,13,"All my hundreds blue, my hoes keep makeup on their face (Let go, let go)",makeup,15,"I don't care, it's not bitches over money",money,INNER,SLANT,cmu,MED,Y
+Chicken Soup,14,"Kiki, do you love me? (Hold up)",love,15,"I don't care, it's not bitches over money",money,END,SLANT,cmu,MED,Y
+Chicken Soup,14,"Kiki, do you love me? (Hold up)",love,16,"Life ain't easy, so don't judge me",judge,END,SLANT,cmu,MED,Y
+Chicken Soup,14,"Kiki, do you love me? (Hold up)",Kiki,16,"Life ain't easy, so don't judge me",easy,INNER,SLANT,cmu,MED,Y
+Chicken Soup,15,"I don't care, it's not bitches over money",don't,15,"I don't care, it's not bitches over money",over,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,15,"I don't care, it's not bitches over money",money,16,"Life ain't easy, so don't judge me",judge,END,SLANT,cmu,MED,Y
+Chicken Soup,15,"I don't care, it's not bitches over money",don't,16,"Life ain't easy, so don't judge me",don't,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,15,"I don't care, it's not bitches over money",over,16,"Life ain't easy, so don't judge me",don't,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,15,"I don't care, it's not bitches over money",money,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",hundred,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,15,"I don't care, it's not bitches over money",money,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",mud,INNER,SLANT,cmu,MED,Y
+Chicken Soup,15,"I don't care, it's not bitches over money",not,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",got,INNER,PERFECT,cmu,HIGH,Y
+Chicken Soup,16,"Life ain't easy, so don't judge me",judge,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",hundred,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,16,"Life ain't easy, so don't judge me",judge,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",mud,INNER,SLANT,cmu,MED,Y
+Chicken Soup,16,"Life ain't easy, so don't judge me",ain't,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",ain't,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,16,"Life ain't easy, so don't judge me",don't,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",ho,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,16,"Life ain't easy, so don't judge me",judge,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",fucked,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",mud,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",hundred,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",bands,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",thank,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",hundred,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",fucked,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",mud,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",fucked,INNER,SLANT,cmu,MED,Y
+Chicken Soup,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",hundred,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,17,"Okay, I got it out the mud, now I'm a hundred bands up, yeah",mud,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",bitch,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",I'ma,INNER,SLANT,spelling,LOW,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",bitch,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",shit,INNER,SLANT,cmu,MED,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",I'ma,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",shit,INNER,SLANT,spelling,LOW,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",shit,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",shit,END,REPEAT,spelling,HIGH,N
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",ain't,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",ain't,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",ain't,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",anyway,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",bitch,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",shit,INNER,SLANT,cmu,MED,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",fucked,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",fuckin,INNER,SLANT,cmu,MED,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",ho,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",know,INNER,PERFECT,cmu,HIGH,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",I'ma,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",shit,INNER,SLANT,spelling,LOW,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",shit,20,"Ferragamo briefs 'round my waist, I got designer dick",dick,END,SLANT,cmu,MED,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",ain't,20,"Ferragamo briefs 'round my waist, I got designer dick",waist,INNER,SLANT,cmu,MED,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",bitch,20,"Ferragamo briefs 'round my waist, I got designer dick",dick,INNER,SLANT,cmu,MED,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",ho,20,"Ferragamo briefs 'round my waist, I got designer dick",Ferragamo,INNER,ASSONANCE,vowel,LOW,N
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",I'ma,20,"Ferragamo briefs 'round my waist, I got designer dick",dick,INNER,SLANT,spelling,LOW,Y
+Chicken Soup,18,"If you fucked my bitch, then I'ma thank you 'cause that ho ain't shit",shit,21,"Hundred-twenty down the freeway, I'm on some rock star shit",shit,END,REPEAT,spelling,HIGH,N
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",anyway,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",ain't,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",shit,20,"Ferragamo briefs 'round my waist, I got designer dick",dick,END,SLANT,cmu,MED,Y
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",ain't,20,"Ferragamo briefs 'round my waist, I got designer dick",waist,INNER,SLANT,cmu,MED,Y
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",anyway,20,"Ferragamo briefs 'round my waist, I got designer dick",waist,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",know,20,"Ferragamo briefs 'round my waist, I got designer dick",Ferragamo,INNER,ASSONANCE,vowel,LOW,N
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",shit,21,"Hundred-twenty down the freeway, I'm on some rock star shit",shit,END,REPEAT,spelling,HIGH,N
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",ain't,21,"Hundred-twenty down the freeway, I'm on some rock star shit",freeway,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",anyway,21,"Hundred-twenty down the freeway, I'm on some rock star shit",freeway,INNER,MULTI,multi,HIGH,Y
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",friend,21,"Hundred-twenty down the freeway, I'm on some rock star shit",twenty,INNER,SLANT,cmu,MED,Y
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",friend anyway,21,"Hundred-twenty down the freeway, I'm on some rock star shit",down freeway,INNER,MULTI,multi,HIGH,Y
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",fuckin,21,"Hundred-twenty down the freeway, I'm on some rock star shit",Hundred,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,19,"I was fuckin' her friend, anyway, you know niggas ain't shit",fuckin,21,"Hundred-twenty down the freeway, I'm on some rock star shit",some,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,20,"Ferragamo briefs 'round my waist, I got designer dick",dick,21,"Hundred-twenty down the freeway, I'm on some rock star shit",shit,END,SLANT,cmu,MED,Y
+Chicken Soup,20,"Ferragamo briefs 'round my waist, I got designer dick",'round,21,"Hundred-twenty down the freeway, I'm on some rock star shit",down,INNER,SLANT,cmu,MED,Y
+Chicken Soup,20,"Ferragamo briefs 'round my waist, I got designer dick",got,21,"Hundred-twenty down the freeway, I'm on some rock star shit",rock,INNER,SLANT,cmu,MED,Y
+Chicken Soup,20,"Ferragamo briefs 'round my waist, I got designer dick",got,21,"Hundred-twenty down the freeway, I'm on some rock star shit",star,INNER,SLANT,cmu,MED,Y
+Chicken Soup,20,"Ferragamo briefs 'round my waist, I got designer dick",waist,21,"Hundred-twenty down the freeway, I'm on some rock star shit",freeway,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,20,"Ferragamo briefs 'round my waist, I got designer dick",waist,22,"It's Sosa, baby (Bang)",baby,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,21,"Hundred-twenty down the freeway, I'm on some rock star shit",Hundred,21,"Hundred-twenty down the freeway, I'm on some rock star shit",some,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,21,"Hundred-twenty down the freeway, I'm on some rock star shit",rock,21,"Hundred-twenty down the freeway, I'm on some rock star shit",star,INNER,SLANT,cmu,MED,Y
+Chicken Soup,21,"Hundred-twenty down the freeway, I'm on some rock star shit",freeway,22,"It's Sosa, baby (Bang)",baby,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,21,"Hundred-twenty down the freeway, I'm on some rock star shit",freeway,23,Hit you? You crazy (Huh?),crazy,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,21,"Hundred-twenty down the freeway, I'm on some rock star shit",shit,23,Hit you? You crazy (Huh?),Hit,INNER,PERFECT,cmu,HIGH,Y
+Chicken Soup,22,"It's Sosa, baby (Bang)",baby,23,Hit you? You crazy (Huh?),crazy,END,SLANT,cmu,MED,Y
+Chicken Soup,22,"It's Sosa, baby (Bang)",baby,24,Do I like you? Maybe (No),Maybe,END,MULTI,multi,HIGH,Y
+Chicken Soup,23,Hit you? You crazy (Huh?),crazy,24,Do I like you? Maybe (No),Maybe,END,SLANT,cmu,MED,Y
+Chicken Soup,24,Do I like you? Maybe (No),like,25,Money tall like KD,like,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,24,Do I like you? Maybe (No),like,26,Backyard like LaVine's (Yeah),like,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,25,Money tall like KD,like,26,Backyard like LaVine's (Yeah),like,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,26,Backyard like LaVine's (Yeah),Backyard,28,Blue cheese and broccoli (Yeah),broccoli,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,27,And I'm smokin' on good green (Yeah),green,28,Blue cheese and broccoli (Yeah),cheese,INNER,SLANT,cmu,MED,Y
+Chicken Soup,27,And I'm smokin' on good green (Yeah),smokin,29,"No, it ain't no stoppin' me (Bang)",No,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,27,And I'm smokin' on good green (Yeah),green,30,"Kick the door down, fuck yo' key (Fuck yo' key)",key,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,28,Blue cheese and broccoli (Yeah),broccoli,29,"No, it ain't no stoppin' me (Bang)",stoppin,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,28,Blue cheese and broccoli (Yeah),cheese,30,"Kick the door down, fuck yo' key (Fuck yo' key)",key,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,29,"No, it ain't no stoppin' me (Bang)",No,29,"No, it ain't no stoppin' me (Bang)",no,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,29,"No, it ain't no stoppin' me (Bang)",ain't,31,Came to my house lookin' for some dick,Came,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,30,"Kick the door down, fuck yo' key (Fuck yo' key)",down,31,Came to my house lookin' for some dick,house,INNER,SLANT,cmu,MED,Y
+Chicken Soup,30,"Kick the door down, fuck yo' key (Fuck yo' key)",fuck,31,Came to my house lookin' for some dick,some,INNER,SLANT,cmu,MED,Y
+Chicken Soup,30,"Kick the door down, fuck yo' key (Fuck yo' key)",Kick,31,Came to my house lookin' for some dick,dick,INNER,PERFECT,cmu,HIGH,Y
+Chicken Soup,30,"Kick the door down, fuck yo' key (Fuck yo' key)",key,32,Like she went to the dope man for some weed (Weed),weed,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,30,"Kick the door down, fuck yo' key (Fuck yo' key)",fuck,32,Like she went to the dope man for some weed (Weed),some,INNER,SLANT,cmu,MED,Y
+Chicken Soup,30,"Kick the door down, fuck yo' key (Fuck yo' key)",key,33,Pull the wide body up like E (E),E,END,PERFECT,cmu,HIGH,Y
+Chicken Soup,30,"Kick the door down, fuck yo' key (Fuck yo' key)",key,34,"Cameras at the house, lil' nigga, say ""Cheese""",Cheese,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,31,Came to my house lookin' for some dick,some,32,Like she went to the dope man for some weed (Weed),some,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,31,Came to my house lookin' for some dick,lookin,33,Pull the wide body up like E (E),Pull,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,32,Like she went to the dope man for some weed (Weed),weed,33,Pull the wide body up like E (E),E,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,32,Like she went to the dope man for some weed (Weed),Like,33,Pull the wide body up like E (E),like,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,32,Like she went to the dope man for some weed (Weed),Like,33,Pull the wide body up like E (E),wide,INNER,SLANT,cmu,MED,Y
+Chicken Soup,32,Like she went to the dope man for some weed (Weed),weed,34,"Cameras at the house, lil' nigga, say ""Cheese""",Cheese,END,SLANT,cmu,MED,Y
+Chicken Soup,32,Like she went to the dope man for some weed (Weed),man,34,"Cameras at the house, lil' nigga, say ""Cheese""",Cameras,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,32,Like she went to the dope man for some weed (Weed),weed,35,"Said she wanna link with me, say, ""Please""",Please,END,SLANT,cmu,MED,Y
+Chicken Soup,33,Pull the wide body up like E (E),wide,33,Pull the wide body up like E (E),like,INNER,SLANT,cmu,MED,Y
+Chicken Soup,33,Pull the wide body up like E (E),E,34,"Cameras at the house, lil' nigga, say ""Cheese""",Cheese,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,33,Pull the wide body up like E (E),E,35,"Said she wanna link with me, say, ""Please""",Please,END,ASSONANCE,vowel,MED,Y
+Chicken Soup,33,Pull the wide body up like E (E),body,35,"Said she wanna link with me, say, ""Please""",wanna,INNER,SLANT,cmu,MED,Y
+Chicken Soup,34,"Cameras at the house, lil' nigga, say ""Cheese""",Cheese,35,"Said she wanna link with me, say, ""Please""",Please,END,PERFECT,cmu,HIGH,Y
+Chicken Soup,34,"Cameras at the house, lil' nigga, say ""Cheese""",lil,35,"Said she wanna link with me, say, ""Please""",link,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,34,"Cameras at the house, lil' nigga, say ""Cheese""",say,35,"Said she wanna link with me, say, ""Please""",say,INNER,REPEAT,spelling,HIGH,N
+Chicken Soup,34,"Cameras at the house, lil' nigga, say ""Cheese""",Cameras,36,Cookin' dope in the lab like Breaking Bad (Ah),Bad,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,34,"Cameras at the house, lil' nigga, say ""Cheese""",Cameras,36,Cookin' dope in the lab like Breaking Bad (Ah),lab,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,34,"Cameras at the house, lil' nigga, say ""Cheese""",say,36,Cookin' dope in the lab like Breaking Bad (Ah),Breaking,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,35,"Said she wanna link with me, say, ""Please""",say,36,Cookin' dope in the lab like Breaking Bad (Ah),Breaking,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,35,"Said she wanna link with me, say, ""Please""",link,37,"I'm up in the hood, might make him mad (Huh), ayy",him,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,35,"Said she wanna link with me, say, ""Please""",say,37,"I'm up in the hood, might make him mad (Huh), ayy",make,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),lab,36,Cookin' dope in the lab like Breaking Bad (Ah),Bad,INNER,SLANT,cmu,MED,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),Bad,37,"I'm up in the hood, might make him mad (Huh), ayy",mad,END,PERFECT,cmu,HIGH,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),Breaking,37,"I'm up in the hood, might make him mad (Huh), ayy",make,INNER,SLANT,cmu,MED,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),Cookin,37,"I'm up in the hood, might make him mad (Huh), ayy",hood,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),lab,37,"I'm up in the hood, might make him mad (Huh), ayy",mad,INNER,SLANT,cmu,MED,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),like,37,"I'm up in the hood, might make him mad (Huh), ayy",might,INNER,SLANT,cmu,MED,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),Bad,38,"Bitch, you don't love me, take it back (No)",back,END,SLANT,cmu,MED,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),Breaking,38,"Bitch, you don't love me, take it back (No)",take,INNER,SLANT,cmu,MED,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),dope,38,"Bitch, you don't love me, take it back (No)",don't,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,36,Cookin' dope in the lab like Breaking Bad (Ah),lab,38,"Bitch, you don't love me, take it back (No)",back,INNER,SLANT,cmu,MED,Y
+Chicken Soup,37,"I'm up in the hood, might make him mad (Huh), ayy",mad,38,"Bitch, you don't love me, take it back (No)",back,END,SLANT,cmu,MED,Y
+Chicken Soup,37,"I'm up in the hood, might make him mad (Huh), ayy",him,38,"Bitch, you don't love me, take it back (No)",Bitch,INNER,SLANT,cmu,MED,Y
+Chicken Soup,37,"I'm up in the hood, might make him mad (Huh), ayy",make,38,"Bitch, you don't love me, take it back (No)",take,INNER,PERFECT,cmu,HIGH,Y
+Chicken Soup,37,"I'm up in the hood, might make him mad (Huh), ayy",make,39,"No, no, no more fakers there (No)",fakers,INNER,SLANT,cmu,MED,Y
+Chicken Soup,38,"Bitch, you don't love me, take it back (No)",don't,39,"No, no, no more fakers there (No)",No,INNER,ASSONANCE,vowel,MED,Y
+Chicken Soup,38,"Bitch, you don't love me, take it back (No)",take,39,"No, no, no more fakers there (No)",fakers,INNER,SLANT,cmu,MED,Y
+Chicken Soup,39,"No, no, no more fakers there (No)",No,39,"No, no, no more fakers there (No)",no,INNER,REPEAT,spelling,HIGH,N

@@ -1,0 +1,243 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",like,1,"Humble nigga, but I like to tote that four five",five,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",five,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",five,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",five,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",like,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",five,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",try,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",four,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",four,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",like,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",five,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",like,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",like,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",like,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",try,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",nigga,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",Nigga,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",tote,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",gon,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",tote,3,"1500 block, everybody tote a pistol",tote,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),1,"Humble nigga, but I like to tote that four five",five,5,"Nigga, fuck your set or whoever ridin' with you",ridin,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",like,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",five,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",try,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",five,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",try,2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",like,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",gon,3,"1500 block, everybody tote a pistol",tote,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",rob,3,"1500 block, everybody tote a pistol",block,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",rob,3,"1500 block, everybody tote a pistol",everybody,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),2,"Nigga try and rob me, he gon' need like four or five niggas, yeah",niggas,4,"Yeah, pussy you can get your issue, yeah",can,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),3,"1500 block, everybody tote a pistol",block,3,"1500 block, everybody tote a pistol",everybody,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),3,"1500 block, everybody tote a pistol",pistol,4,"Yeah, pussy you can get your issue, yeah",issue,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),3,"1500 block, everybody tote a pistol",pistol,7,"Nigga, you can get your issue",issue,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),4,"Yeah, pussy you can get your issue, yeah",get,5,"Nigga, fuck your set or whoever ridin' with you",set,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),4,"Yeah, pussy you can get your issue, yeah",get,5,"Nigga, fuck your set or whoever ridin' with you",whoever,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),4,"Yeah, pussy you can get your issue, yeah",issue,6,"Know I keep that stick, you know them niggas dyin' with you",stick,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),4,"Yeah, pussy you can get your issue, yeah",issue,7,"Nigga, you can get your issue",issue,END,REPEAT,spelling,HIGH,N
+4 5 (Remix),4,"Yeah, pussy you can get your issue, yeah",issue,8,"See that chopper flash, nigga, you ain't takin' pictures",pictures,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),5,"Nigga, fuck your set or whoever ridin' with you",set,5,"Nigga, fuck your set or whoever ridin' with you",whoever,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),5,"Nigga, fuck your set or whoever ridin' with you",Nigga,6,"Know I keep that stick, you know them niggas dyin' with you",niggas,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),5,"Nigga, fuck your set or whoever ridin' with you",Nigga,6,"Know I keep that stick, you know them niggas dyin' with you",stick,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),5,"Nigga, fuck your set or whoever ridin' with you",Nigga,7,"Nigga, you can get your issue",Nigga,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),5,"Nigga, fuck your set or whoever ridin' with you",set,7,"Nigga, you can get your issue",get,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),5,"Nigga, fuck your set or whoever ridin' with you",whoever,7,"Nigga, you can get your issue",get,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),6,"Know I keep that stick, you know them niggas dyin' with you",Know,6,"Know I keep that stick, you know them niggas dyin' with you",know,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),6,"Know I keep that stick, you know them niggas dyin' with you",niggas,7,"Nigga, you can get your issue",Nigga,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),6,"Know I keep that stick, you know them niggas dyin' with you",stick,7,"Nigga, you can get your issue",issue,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),6,"Know I keep that stick, you know them niggas dyin' with you",stick,7,"Nigga, you can get your issue",Nigga,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),6,"Know I keep that stick, you know them niggas dyin' with you",keep,8,"See that chopper flash, nigga, you ain't takin' pictures",See,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),6,"Know I keep that stick, you know them niggas dyin' with you",niggas,8,"See that chopper flash, nigga, you ain't takin' pictures",nigga,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),6,"Know I keep that stick, you know them niggas dyin' with you",niggas,8,"See that chopper flash, nigga, you ain't takin' pictures",pictures,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),6,"Know I keep that stick, you know them niggas dyin' with you",stick,8,"See that chopper flash, nigga, you ain't takin' pictures",nigga,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),6,"Know I keep that stick, you know them niggas dyin' with you",stick,8,"See that chopper flash, nigga, you ain't takin' pictures",pictures,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),7,"Nigga, you can get your issue",issue,8,"See that chopper flash, nigga, you ain't takin' pictures",pictures,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),7,"Nigga, you can get your issue",can,8,"See that chopper flash, nigga, you ain't takin' pictures",flash,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),7,"Nigga, you can get your issue",Nigga,8,"See that chopper flash, nigga, you ain't takin' pictures",nigga,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),7,"Nigga, you can get your issue",issue,9,"Huh, shoot it up like Brian Nichols",Nichols,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),8,"See that chopper flash, nigga, you ain't takin' pictures",ain't,8,"See that chopper flash, nigga, you ain't takin' pictures",takin,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),8,"See that chopper flash, nigga, you ain't takin' pictures",pictures,9,"Huh, shoot it up like Brian Nichols",Nichols,END,SLANT,cmu,MED,Y
+4 5 (Remix),8,"See that chopper flash, nigga, you ain't takin' pictures",pictures,10,"Yeah, you gon' need like nine niggas",niggas,END,SLANT,spelling,LOW,Y
+4 5 (Remix),8,"See that chopper flash, nigga, you ain't takin' pictures",nigga,10,"Yeah, you gon' need like nine niggas",niggas,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),8,"See that chopper flash, nigga, you ain't takin' pictures",See,10,"Yeah, you gon' need like nine niggas",need,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),9,"Huh, shoot it up like Brian Nichols",like,9,"Huh, shoot it up like Brian Nichols",Brian,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),9,"Huh, shoot it up like Brian Nichols",Nichols,10,"Yeah, you gon' need like nine niggas",niggas,END,SLANT,spelling,LOW,Y
+4 5 (Remix),9,"Huh, shoot it up like Brian Nichols",Brian,10,"Yeah, you gon' need like nine niggas",like,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),9,"Huh, shoot it up like Brian Nichols",Brian,10,"Yeah, you gon' need like nine niggas",nine,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),9,"Huh, shoot it up like Brian Nichols",like,10,"Yeah, you gon' need like nine niggas",like,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),9,"Huh, shoot it up like Brian Nichols",like,10,"Yeah, you gon' need like nine niggas",nine,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),9,"Huh, shoot it up like Brian Nichols",Brian,11,"Put that check on your head, fuck whoever ridin' with you",ridin,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),9,"Huh, shoot it up like Brian Nichols",like,11,"Put that check on your head, fuck whoever ridin' with you",ridin,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),9,"Huh, shoot it up like Brian Nichols",Nichols,13,"Surround myself around some killers, yeah",killers,END,SLANT,cmu,MED,Y
+4 5 (Remix),10,"Yeah, you gon' need like nine niggas",like,10,"Yeah, you gon' need like nine niggas",nine,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),10,"Yeah, you gon' need like nine niggas",like,11,"Put that check on your head, fuck whoever ridin' with you",ridin,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),10,"Yeah, you gon' need like nine niggas",nine,11,"Put that check on your head, fuck whoever ridin' with you",ridin,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),10,"Yeah, you gon' need like nine niggas",like,12,"Put that check on your head, now ain't nobody ridin' with you",ridin,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),10,"Yeah, you gon' need like nine niggas",need,12,"Put that check on your head, now ain't nobody ridin' with you",nobody,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),10,"Yeah, you gon' need like nine niggas",nine,12,"Put that check on your head, now ain't nobody ridin' with you",ridin,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",check,11,"Put that check on your head, fuck whoever ridin' with you",head,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",check,11,"Put that check on your head, fuck whoever ridin' with you",whoever,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",head,11,"Put that check on your head, fuck whoever ridin' with you",whoever,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",ridin,12,"Put that check on your head, now ain't nobody ridin' with you",ridin,END,REPEAT,spelling,HIGH,N
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",check,12,"Put that check on your head, now ain't nobody ridin' with you",check,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",check,12,"Put that check on your head, now ain't nobody ridin' with you",head,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",head,12,"Put that check on your head, now ain't nobody ridin' with you",check,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",head,12,"Put that check on your head, now ain't nobody ridin' with you",head,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",Put,12,"Put that check on your head, now ain't nobody ridin' with you",Put,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",whoever,12,"Put that check on your head, now ain't nobody ridin' with you",check,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",whoever,12,"Put that check on your head, now ain't nobody ridin' with you",head,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",check,13,"Surround myself around some killers, yeah",myself,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",fuck,13,"Surround myself around some killers, yeah",some,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",head,13,"Surround myself around some killers, yeah",myself,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),11,"Put that check on your head, fuck whoever ridin' with you",whoever,13,"Surround myself around some killers, yeah",myself,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),12,"Put that check on your head, now ain't nobody ridin' with you",check,12,"Put that check on your head, now ain't nobody ridin' with you",head,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),12,"Put that check on your head, now ain't nobody ridin' with you",check,13,"Surround myself around some killers, yeah",myself,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),12,"Put that check on your head, now ain't nobody ridin' with you",head,13,"Surround myself around some killers, yeah",myself,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),12,"Put that check on your head, now ain't nobody ridin' with you",now,13,"Surround myself around some killers, yeah",around,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),12,"Put that check on your head, now ain't nobody ridin' with you",now,13,"Surround myself around some killers, yeah",Surround,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),12,"Put that check on your head, now ain't nobody ridin' with you",nobody,14,"And everybody tote a pistol, yeah",everybody,INNER,MULTI,multi,HIGH,Y
+4 5 (Remix),13,"Surround myself around some killers, yeah",Surround,13,"Surround myself around some killers, yeah",around,INNER,MULTI,multi,HIGH,Y
+4 5 (Remix),13,"Surround myself around some killers, yeah",killers,14,"And everybody tote a pistol, yeah",pistol,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),13,"Surround myself around some killers, yeah",killers,15,"My nigga Sammy gone, that shit had drove me crazy",shit,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),14,"And everybody tote a pistol, yeah",pistol,15,"My nigga Sammy gone, that shit had drove me crazy",shit,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),14,"And everybody tote a pistol, yeah",tote,15,"My nigga Sammy gone, that shit had drove me crazy",drove,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),14,"And everybody tote a pistol, yeah",pistol,16,I think about it on the daily,think,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),15,"My nigga Sammy gone, that shit had drove me crazy",nigga,15,"My nigga Sammy gone, that shit had drove me crazy",shit,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),15,"My nigga Sammy gone, that shit had drove me crazy",Sammy,15,"My nigga Sammy gone, that shit had drove me crazy",had,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),15,"My nigga Sammy gone, that shit had drove me crazy",crazy,16,I think about it on the daily,daily,END,SLANT,cmu,MED,Y
+4 5 (Remix),15,"My nigga Sammy gone, that shit had drove me crazy",shit,16,I think about it on the daily,think,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),15,"My nigga Sammy gone, that shit had drove me crazy",crazy,17,I keep it if you try and play me,play,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),15,"My nigga Sammy gone, that shit had drove me crazy",crazy,18,"Uh, I can't let no nigga take me",take,END,SLANT,cmu,MED,Y
+4 5 (Remix),16,I think about it on the daily,daily,17,I keep it if you try and play me,play,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),16,I think about it on the daily,daily,18,"Uh, I can't let no nigga take me",take,END,SLANT,cmu,MED,Y
+4 5 (Remix),17,I keep it if you try and play me,play,18,"Uh, I can't let no nigga take me",take,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),17,I keep it if you try and play me,keep,19,Nigga tryna rob me (21),tryna,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),18,"Uh, I can't let no nigga take me",nigga,19,Nigga tryna rob me (21),Nigga,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),18,"Uh, I can't let no nigga take me",no,20,You gon' need the whole hood with me (on God),whole,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),19,Nigga tryna rob me (21),tryna,20,You gon' need the whole hood with me (on God),need,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),20,You gon' need the whole hood with me (on God),gon,20,You gon' need the whole hood with me (on God),whole,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),20,You gon' need the whole hood with me (on God),gon,21,You can ask the whole East (on God),whole,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),20,You gon' need the whole hood with me (on God),need,21,You can ask the whole East (on God),East,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),20,You gon' need the whole hood with me (on God),whole,21,You can ask the whole East (on God),whole,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),20,You gon' need the whole hood with me (on God),need,22,Savage keep a long ass pistol (21),keep,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),21,You can ask the whole East (on God),can,21,You can ask the whole East (on God),ask,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),21,You can ask the whole East (on God),ask,22,Savage keep a long ass pistol (21),ass,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),21,You can ask the whole East (on God),ask,22,Savage keep a long ass pistol (21),Savage,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),21,You can ask the whole East (on God),can,22,Savage keep a long ass pistol (21),ass,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),21,You can ask the whole East (on God),can,22,Savage keep a long ass pistol (21),Savage,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),21,You can ask the whole East (on God),East,22,Savage keep a long ass pistol (21),keep,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),21,You can ask the whole East (on God),East,23,Nigga she a whole freak (what?),freak,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),21,You can ask the whole East (on God),whole,23,Nigga she a whole freak (what?),whole,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),22,Savage keep a long ass pistol (21),Savage,22,Savage keep a long ass pistol (21),ass,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),22,Savage keep a long ass pistol (21),keep,23,Nigga she a whole freak (what?),freak,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),22,Savage keep a long ass pistol (21),pistol,24,She just wanna lick my pickle (say what?),pickle,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),22,Savage keep a long ass pistol (21),pistol,24,She just wanna lick my pickle (say what?),lick,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),22,Savage keep a long ass pistol (21),pistol,25,Fuckin' on her five years (yeah),years,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),22,Savage keep a long ass pistol (21),pistol,26,On God I ain't never kissed her (on God),kissed,END,SLANT,cmu,MED,Y
+4 5 (Remix),23,Nigga she a whole freak (what?),Nigga,24,She just wanna lick my pickle (say what?),lick,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),24,She just wanna lick my pickle (say what?),lick,24,She just wanna lick my pickle (say what?),pickle,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),24,She just wanna lick my pickle (say what?),pickle,25,Fuckin' on her five years (yeah),years,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),24,She just wanna lick my pickle (say what?),lick,25,Fuckin' on her five years (yeah),years,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),24,She just wanna lick my pickle (say what?),pickle,26,On God I ain't never kissed her (on God),kissed,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),24,She just wanna lick my pickle (say what?),lick,26,On God I ain't never kissed her (on God),kissed,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),24,She just wanna lick my pickle (say what?),wanna,26,On God I ain't never kissed her (on God),God,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),25,Fuckin' on her five years (yeah),years,26,On God I ain't never kissed her (on God),kissed,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),25,Fuckin' on her five years (yeah),years,27,I keep that stick on me lil ho,lil,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),25,Fuckin' on her five years (yeah),years,27,I keep that stick on me lil ho,stick,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),26,On God I ain't never kissed her (on God),kissed,27,I keep that stick on me lil ho,lil,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),26,On God I ain't never kissed her (on God),kissed,27,I keep that stick on me lil ho,stick,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),26,On God I ain't never kissed her (on God),kissed,28,You know that shit on me lil ho (21),lil,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),26,On God I ain't never kissed her (on God),kissed,28,You know that shit on me lil ho (21),shit,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),27,I keep that stick on me lil ho,stick,27,I keep that stick on me lil ho,lil,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),27,I keep that stick on me lil ho,ho,28,You know that shit on me lil ho (21),ho,END,REPEAT,spelling,HIGH,N
+4 5 (Remix),27,I keep that stick on me lil ho,ho,28,You know that shit on me lil ho (21),know,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),27,I keep that stick on me lil ho,lil,28,You know that shit on me lil ho (21),lil,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),27,I keep that stick on me lil ho,lil,28,You know that shit on me lil ho (21),shit,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),27,I keep that stick on me lil ho,stick,28,You know that shit on me lil ho (21),lil,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),27,I keep that stick on me lil ho,stick,28,You know that shit on me lil ho (21),shit,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),27,I keep that stick on me lil ho,ho,29,All this drip on me lil ho,ho,END,REPEAT,spelling,HIGH,N
+4 5 (Remix),27,I keep that stick on me lil ho,lil,29,All this drip on me lil ho,drip,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),27,I keep that stick on me lil ho,lil,29,All this drip on me lil ho,lil,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),27,I keep that stick on me lil ho,stick,29,All this drip on me lil ho,drip,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),27,I keep that stick on me lil ho,stick,29,All this drip on me lil ho,lil,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),27,I keep that stick on me lil ho,ho,30,Fuck around and slip on me lil ho (21),ho,END,REPEAT,spelling,HIGH,N
+4 5 (Remix),28,You know that shit on me lil ho (21),know,28,You know that shit on me lil ho (21),ho,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),28,You know that shit on me lil ho (21),shit,28,You know that shit on me lil ho (21),lil,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),28,You know that shit on me lil ho (21),ho,29,All this drip on me lil ho,ho,END,REPEAT,spelling,HIGH,N
+4 5 (Remix),28,You know that shit on me lil ho (21),know,29,All this drip on me lil ho,ho,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),28,You know that shit on me lil ho (21),lil,29,All this drip on me lil ho,drip,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),28,You know that shit on me lil ho (21),lil,29,All this drip on me lil ho,lil,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),28,You know that shit on me lil ho (21),shit,29,All this drip on me lil ho,drip,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),28,You know that shit on me lil ho (21),shit,29,All this drip on me lil ho,lil,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),28,You know that shit on me lil ho (21),ho,30,Fuck around and slip on me lil ho (21),ho,END,REPEAT,spelling,HIGH,N
+4 5 (Remix),28,You know that shit on me lil ho (21),know,30,Fuck around and slip on me lil ho (21),ho,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),28,You know that shit on me lil ho (21),lil,30,Fuck around and slip on me lil ho (21),lil,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),28,You know that shit on me lil ho (21),lil,30,Fuck around and slip on me lil ho (21),slip,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),28,You know that shit on me lil ho (21),shit,30,Fuck around and slip on me lil ho (21),lil,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),28,You know that shit on me lil ho (21),shit,30,Fuck around and slip on me lil ho (21),slip,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),29,All this drip on me lil ho,drip,29,All this drip on me lil ho,lil,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),29,All this drip on me lil ho,ho,30,Fuck around and slip on me lil ho (21),ho,END,REPEAT,spelling,HIGH,N
+4 5 (Remix),29,All this drip on me lil ho,drip,30,Fuck around and slip on me lil ho (21),lil,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),29,All this drip on me lil ho,drip,30,Fuck around and slip on me lil ho (21),slip,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),29,All this drip on me lil ho,lil,30,Fuck around and slip on me lil ho (21),lil,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),29,All this drip on me lil ho,lil,30,Fuck around and slip on me lil ho (21),slip,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),29,All this drip on me lil ho,All,31,All my shit go plat-plat (21),All,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),29,All this drip on me lil ho,drip,31,All my shit go plat-plat (21),shit,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),29,All this drip on me lil ho,ho,31,All my shit go plat-plat (21),go,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),29,All this drip on me lil ho,lil,31,All my shit go plat-plat (21),shit,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),30,Fuck around and slip on me lil ho (21),slip,30,Fuck around and slip on me lil ho (21),lil,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),30,Fuck around and slip on me lil ho (21),ho,31,All my shit go plat-plat (21),go,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),30,Fuck around and slip on me lil ho (21),lil,31,All my shit go plat-plat (21),shit,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),30,Fuck around and slip on me lil ho (21),slip,31,All my shit go plat-plat (21),shit,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),30,Fuck around and slip on me lil ho (21),Fuck,32,Savage still fuckin' on a nat nat (on God),fuckin,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),30,Fuck around and slip on me lil ho (21),lil,32,Savage still fuckin' on a nat nat (on God),still,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),30,Fuck around and slip on me lil ho (21),slip,32,Savage still fuckin' on a nat nat (on God),still,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),31,All my shit go plat-plat (21),plat,31,All my shit go plat-plat (21),plat,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),31,All my shit go plat-plat (21),plat,32,Savage still fuckin' on a nat nat (on God),nat,END,PERFECT,spelling,MED,Y
+4 5 (Remix),31,All my shit go plat-plat (21),plat,32,Savage still fuckin' on a nat nat (on God),nat,INNER,PERFECT,spelling,MED,Y
+4 5 (Remix),31,All my shit go plat-plat (21),shit,32,Savage still fuckin' on a nat nat (on God),still,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),31,All my shit go plat-plat (21),plat,33,Put a hundred round drum on your scatpack (21),scatpack,END,ASSONANCE,vowel,LOW,N
+4 5 (Remix),31,All my shit go plat-plat (21),plat,33,Put a hundred round drum on your scatpack (21),scatpack,INNER,ASSONANCE,vowel,LOW,N
+4 5 (Remix),31,All my shit go plat-plat (21),plat,34,Y'all niggas hang around rat-rats (bitch),rats,END,SLANT,spelling,LOW,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),nat,32,Savage still fuckin' on a nat nat (on God),nat,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),Savage,32,Savage still fuckin' on a nat nat (on God),nat,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),fuckin,33,Put a hundred round drum on your scatpack (21),drum,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),fuckin,33,Put a hundred round drum on your scatpack (21),hundred,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),nat,34,Y'all niggas hang around rat-rats (bitch),rats,END,SLANT,cmu,MED,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),nat,34,Y'all niggas hang around rat-rats (bitch),hang,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),nat,34,Y'all niggas hang around rat-rats (bitch),rat,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),nat,34,Y'all niggas hang around rat-rats (bitch),rats,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),Savage,34,Y'all niggas hang around rat-rats (bitch),hang,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),Savage,34,Y'all niggas hang around rat-rats (bitch),rat,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),32,Savage still fuckin' on a nat nat (on God),Savage,34,Y'all niggas hang around rat-rats (bitch),rats,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),33,Put a hundred round drum on your scatpack (21),hundred,33,Put a hundred round drum on your scatpack (21),drum,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),33,Put a hundred round drum on your scatpack (21),scatpack,34,Y'all niggas hang around rat-rats (bitch),rats,END,ASSONANCE,vowel,LOW,N
+4 5 (Remix),33,Put a hundred round drum on your scatpack (21),round,34,Y'all niggas hang around rat-rats (bitch),around,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),33,Put a hundred round drum on your scatpack (21),scatpack,34,Y'all niggas hang around rat-rats (bitch),hang,INNER,ASSONANCE,vowel,LOW,N
+4 5 (Remix),33,Put a hundred round drum on your scatpack (21),drum,35,"Humble nigga, but I still keep the four five",Humble,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),33,Put a hundred round drum on your scatpack (21),hundred,35,"Humble nigga, but I still keep the four five",Humble,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),34,Y'all niggas hang around rat-rats (bitch),hang,34,Y'all niggas hang around rat-rats (bitch),rat,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),34,Y'all niggas hang around rat-rats (bitch),hang,34,Y'all niggas hang around rat-rats (bitch),rats,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),34,Y'all niggas hang around rat-rats (bitch),rat,34,Y'all niggas hang around rat-rats (bitch),rats,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),34,Y'all niggas hang around rat-rats (bitch),niggas,35,"Humble nigga, but I still keep the four five",nigga,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),34,Y'all niggas hang around rat-rats (bitch),Y'all,35,"Humble nigga, but I still keep the four five",four,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),34,Y'all niggas hang around rat-rats (bitch),niggas,36,"Nigga tryna rob me, he got shot by four five niggas (21)",Nigga,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),34,Y'all niggas hang around rat-rats (bitch),niggas,36,"Nigga tryna rob me, he got shot by four five niggas (21)",niggas,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),34,Y'all niggas hang around rat-rats (bitch),Y'all,36,"Nigga tryna rob me, he got shot by four five niggas (21)",four,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),35,"Humble nigga, but I still keep the four five",five,36,"Nigga tryna rob me, he got shot by four five niggas (21)",by,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),35,"Humble nigga, but I still keep the four five",five,36,"Nigga tryna rob me, he got shot by four five niggas (21)",five,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),35,"Humble nigga, but I still keep the four five",four,36,"Nigga tryna rob me, he got shot by four five niggas (21)",four,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),35,"Humble nigga, but I still keep the four five",keep,36,"Nigga tryna rob me, he got shot by four five niggas (21)",tryna,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),35,"Humble nigga, but I still keep the four five",nigga,36,"Nigga tryna rob me, he got shot by four five niggas (21)",Nigga,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),35,"Humble nigga, but I still keep the four five",nigga,36,"Nigga tryna rob me, he got shot by four five niggas (21)",niggas,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),35,"Humble nigga, but I still keep the four five",keep,37,"4L Gang, everybody keep a missile (gang)",keep,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),35,"Humble nigga, but I still keep the four five",still,37,"4L Gang, everybody keep a missile (gang)",missile,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",by,36,"Nigga tryna rob me, he got shot by four five niggas (21)",five,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",got,36,"Nigga tryna rob me, he got shot by four five niggas (21)",shot,INNER,PERFECT,cmu,HIGH,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",Nigga,36,"Nigga tryna rob me, he got shot by four five niggas (21)",niggas,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",rob,36,"Nigga tryna rob me, he got shot by four five niggas (21)",got,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",rob,36,"Nigga tryna rob me, he got shot by four five niggas (21)",shot,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",got,37,"4L Gang, everybody keep a missile (gang)",everybody,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",rob,37,"4L Gang, everybody keep a missile (gang)",everybody,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",shot,37,"4L Gang, everybody keep a missile (gang)",everybody,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",tryna,37,"4L Gang, everybody keep a missile (gang)",keep,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",by,38,"Broad day, red light, fuck nigga we'll hit you (21)",light,INNER,ASSONANCE,vowel,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",five,38,"Broad day, red light, fuck nigga we'll hit you (21)",light,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",four,38,"Broad day, red light, fuck nigga we'll hit you (21)",Broad,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",Nigga,38,"Broad day, red light, fuck nigga we'll hit you (21)",hit,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",Nigga,38,"Broad day, red light, fuck nigga we'll hit you (21)",nigga,INNER,REPEAT,spelling,HIGH,N
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",niggas,38,"Broad day, red light, fuck nigga we'll hit you (21)",nigga,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),36,"Nigga tryna rob me, he got shot by four five niggas (21)",tryna,38,"Broad day, red light, fuck nigga we'll hit you (21)",we'll,INNER,SLANT,spelling,LOW,Y
+4 5 (Remix),37,"4L Gang, everybody keep a missile (gang)",missile,38,"Broad day, red light, fuck nigga we'll hit you (21)",hit,END,ASSONANCE,vowel,MED,Y
+4 5 (Remix),37,"4L Gang, everybody keep a missile (gang)",keep,38,"Broad day, red light, fuck nigga we'll hit you (21)",we'll,INNER,SLANT,cmu,MED,Y
+4 5 (Remix),38,"Broad day, red light, fuck nigga we'll hit you (21)",nigga,38,"Broad day, red light, fuck nigga we'll hit you (21)",hit,INNER,SLANT,spelling,LOW,Y

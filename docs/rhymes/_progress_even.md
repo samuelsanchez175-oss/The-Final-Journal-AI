@@ -296,6 +296,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 284 | yung-jaroc | Yung Jaroc | 1 | 40 | 191 | 21 | 170 | 186 | 2026-11-10 13:25 ET |
 | 285 | belly-gang-kushington | Belly Gang Kushington | 1 | 39 | 312 | 26 | 286 | 304 | 2026-11-10 13:25 ET |
 | 286 | elijah-james | Elijah James | 1 | 39 | 170 | 31 | 139 | 170 | 2026-11-10 13:25 ET |
+| 287 | jim-jones | Jim Jones | 1 | 39 | 281 | 38 | 243 | 272 | 2026-11-10 13:25 ET |
+| 288 | lil-tracy | Lil Tracy | 1 | 39 | 189 | 34 | 155 | 187 | 2026-11-10 13:25 ET |
+| 289 | mariah-the-scientist | Mariah the Scientist | 1 | 39 | 166 | 23 | 143 | 164 | 2026-11-10 13:25 ET |
+| 290 | quicktrip | Quicktrip | 1 | 39 | 191 | 37 | 154 | 184 | 2026-11-10 13:25 ET |
+| 291 | top5 | Top5 | 1 | 39 | 336 | 40 | 296 | 309 | 2026-11-10 13:25 ET |
+| 292 | bankroll-freddie | Bankroll Freddie | 1 | 38 | 209 | 61 | 148 | 203 | 2026-11-10 13:25 ET |
+| 293 | don-ace | Don Ace | 1 | 38 | 205 | 30 | 175 | 201 | 2026-11-10 13:25 ET |
+| 294 | skooly | Skooly | 1 | 38 | 251 | 38 | 213 | 250 | 2026-11-10 13:25 ET |
+| 295 | young-teetee | Young TeeTee | 1 | 38 | 207 | 47 | 160 | 207 | 2026-11-10 13:25 ET |
+| 296 | bigdawg-money | BigDawg Money | 1 | 37 | 367 | 82 | 285 | 365 | 2026-11-10 13:25 ET |
 
 ## Failures
 
@@ -303,7 +313,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 286/386: Elijah James.
+Finished 296/386: BigDawg Money.
 
 ## Final
 

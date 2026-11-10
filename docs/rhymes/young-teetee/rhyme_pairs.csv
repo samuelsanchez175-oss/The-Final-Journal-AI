@@ -1,0 +1,242 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+You Ain’t 100,1,"I can see you, you ain't 100",can,2,"I can see you (I can see you), I can see you (I can see you)",can,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,1,"I can see you, you ain't 100",see,2,"I can see you (I can see you), I can see you (I can see you)",see,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,1,"I can see you, you ain't 100",can,3,"I can see 'em, I can see 'em",can,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,1,"I can see you, you ain't 100",see,3,"I can see 'em, I can see 'em",see,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,1,"I can see you, you ain't 100",ain't,4,"I can tell, he ain't a 100 (Nah nah)",ain't,END,REPEAT,spelling,HIGH,N
+You Ain’t 100,2,"I can see you (I can see you), I can see you (I can see you)",can,2,"I can see you (I can see you), I can see you (I can see you)",can,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,2,"I can see you (I can see you), I can see you (I can see you)",see,2,"I can see you (I can see you), I can see you (I can see you)",see,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,2,"I can see you (I can see you), I can see you (I can see you)",can,3,"I can see 'em, I can see 'em",can,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,2,"I can see you (I can see you), I can see you (I can see you)",see,3,"I can see 'em, I can see 'em",see,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,2,"I can see you (I can see you), I can see you (I can see you)",can,4,"I can tell, he ain't a 100 (Nah nah)",can,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,2,"I can see you (I can see you), I can see you (I can see you)",see,5,"Just because he money, that don't mean that he a 100 (Nah nah)",mean,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,2,"I can see you (I can see you), I can see you (I can see you)",see,6,"Even if he gettin' money, still don't mean that he a 100",mean,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,3,"I can see 'em, I can see 'em",'em,3,"I can see 'em, I can see 'em",'em,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,3,"I can see 'em, I can see 'em",can,3,"I can see 'em, I can see 'em",can,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,3,"I can see 'em, I can see 'em",see,3,"I can see 'em, I can see 'em",see,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,3,"I can see 'em, I can see 'em",can,4,"I can tell, he ain't a 100 (Nah nah)",can,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,3,"I can see 'em, I can see 'em",see,5,"Just because he money, that don't mean that he a 100 (Nah nah)",mean,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,4,"I can tell, he ain't a 100 (Nah nah)",tell,6,"Even if he gettin' money, still don't mean that he a 100",gettin,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,5,"Just because he money, that don't mean that he a 100 (Nah nah)",mean,6,"Even if he gettin' money, still don't mean that he a 100",mean,END,REPEAT,spelling,HIGH,N
+You Ain’t 100,5,"Just because he money, that don't mean that he a 100 (Nah nah)",don't,6,"Even if he gettin' money, still don't mean that he a 100",don't,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,5,"Just because he money, that don't mean that he a 100 (Nah nah)",mean,6,"Even if he gettin' money, still don't mean that he a 100",Even,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,5,"Just because he money, that don't mean that he a 100 (Nah nah)",money,6,"Even if he gettin' money, still don't mean that he a 100",money,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,5,"Just because he money, that don't mean that he a 100 (Nah nah)",because,7,"All that work that he done sold, nigga, probably gettin'",All,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,5,"Just because he money, that don't mean that he a 100 (Nah nah)",don't,7,"All that work that he done sold, nigga, probably gettin'",sold,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,5,"Just because he money, that don't mean that he a 100 (Nah nah)",mean,7,"All that work that he done sold, nigga, probably gettin'",probably,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,5,"Just because he money, that don't mean that he a 100 (Nah nah)",money,7,"All that work that he done sold, nigga, probably gettin'",done,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,6,"Even if he gettin' money, still don't mean that he a 100",Even,6,"Even if he gettin' money, still don't mean that he a 100",mean,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,6,"Even if he gettin' money, still don't mean that he a 100",don't,7,"All that work that he done sold, nigga, probably gettin'",sold,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,6,"Even if he gettin' money, still don't mean that he a 100",Even,7,"All that work that he done sold, nigga, probably gettin'",probably,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,6,"Even if he gettin' money, still don't mean that he a 100",gettin,7,"All that work that he done sold, nigga, probably gettin'",gettin,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,6,"Even if he gettin' money, still don't mean that he a 100",mean,7,"All that work that he done sold, nigga, probably gettin'",probably,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,6,"Even if he gettin' money, still don't mean that he a 100",money,7,"All that work that he done sold, nigga, probably gettin'",done,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,6,"Even if he gettin' money, still don't mean that he a 100",Even,8,"Fuck them bottles in the club, bag stuntin'",stuntin,INNER,PERFECT,spelling,MED,Y
+You Ain’t 100,6,"Even if he gettin' money, still don't mean that he a 100",money,8,"Fuck them bottles in the club, bag stuntin'",club,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,6,"Even if he gettin' money, still don't mean that he a 100",money,8,"Fuck them bottles in the club, bag stuntin'",Fuck,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,7,"All that work that he done sold, nigga, probably gettin'",done,8,"Fuck them bottles in the club, bag stuntin'",club,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,7,"All that work that he done sold, nigga, probably gettin'",done,8,"Fuck them bottles in the club, bag stuntin'",Fuck,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,7,"All that work that he done sold, nigga, probably gettin'",All,9,"Nigga coulda had a 100, all that faking, all that fronting",all,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,7,"All that work that he done sold, nigga, probably gettin'",done,9,"Nigga coulda had a 100, all that faking, all that fronting",fronting,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,7,"All that work that he done sold, nigga, probably gettin'",nigga,9,"Nigga coulda had a 100, all that faking, all that fronting",Nigga,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,8,"Fuck them bottles in the club, bag stuntin'",Fuck,8,"Fuck them bottles in the club, bag stuntin'",club,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,8,"Fuck them bottles in the club, bag stuntin'",stuntin,9,"Nigga coulda had a 100, all that faking, all that fronting",fronting,END,SLANT,spelling,LOW,Y
+You Ain’t 100,8,"Fuck them bottles in the club, bag stuntin'",bag,9,"Nigga coulda had a 100, all that faking, all that fronting",had,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,8,"Fuck them bottles in the club, bag stuntin'",club,9,"Nigga coulda had a 100, all that faking, all that fronting",fronting,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,8,"Fuck them bottles in the club, bag stuntin'",Fuck,9,"Nigga coulda had a 100, all that faking, all that fronting",fronting,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,8,"Fuck them bottles in the club, bag stuntin'",bag,10,"Shoulda stacked and still be cracking, woulda been up on your shit",cracking,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,8,"Fuck them bottles in the club, bag stuntin'",bag,10,"Shoulda stacked and still be cracking, woulda been up on your shit",stacked,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",all,9,"Nigga coulda had a 100, all that faking, all that fronting",all,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",coulda,10,"Shoulda stacked and still be cracking, woulda been up on your shit",Shoulda,INNER,MULTI,multi,MED,Y
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",coulda,10,"Shoulda stacked and still be cracking, woulda been up on your shit",woulda,INNER,MULTI,multi,MED,Y
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",faking,10,"Shoulda stacked and still be cracking, woulda been up on your shit",cracking,INNER,PERFECT,spelling,MED,Y
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",had,10,"Shoulda stacked and still be cracking, woulda been up on your shit",cracking,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",had,10,"Shoulda stacked and still be cracking, woulda been up on your shit",stacked,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",Nigga,10,"Shoulda stacked and still be cracking, woulda been up on your shit",shit,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",Nigga coulda,10,"Shoulda stacked and still be cracking, woulda been up on your shit",cracking woulda,INNER,MULTI,multi,MED,Y
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",all,11,"All them nonsense, all them quarters, nigga, bitch",All,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",all,11,"All them nonsense, all them quarters, nigga, bitch",quarters,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,9,"Nigga coulda had a 100, all that faking, all that fronting",Nigga,11,"All them nonsense, all them quarters, nigga, bitch",nigga,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",Shoulda,10,"Shoulda stacked and still be cracking, woulda been up on your shit",woulda,INNER,MULTI,multi,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",stacked,10,"Shoulda stacked and still be cracking, woulda been up on your shit",cracking,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",still,10,"Shoulda stacked and still be cracking, woulda been up on your shit",shit,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",shit,11,"All them nonsense, all them quarters, nigga, bitch",bitch,END,SLANT,cmu,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",shit,11,"All them nonsense, all them quarters, nigga, bitch",nigga,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",still,11,"All them nonsense, all them quarters, nigga, bitch",bitch,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",shit,12,"Nigga young, nigga kid, nigga ballin' like a bitch",bitch,END,SLANT,cmu,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",cracking,12,"Nigga young, nigga kid, nigga ballin' like a bitch",ballin,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",shit,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",shit,12,"Nigga young, nigga kid, nigga ballin' like a bitch",Nigga,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",stacked,12,"Nigga young, nigga kid, nigga ballin' like a bitch",ballin,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",still,12,"Nigga young, nigga kid, nigga ballin' like a bitch",bitch,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",still,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",shit,13,You could tell that I'm a 100 when I step up out my whip,whip,END,SLANT,cmu,MED,Y
+You Ain’t 100,10,"Shoulda stacked and still be cracking, woulda been up on your shit",shit,14,on my neck just to get a nigga sick,sick,END,SLANT,cmu,MED,Y
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",All,11,"All them nonsense, all them quarters, nigga, bitch",all,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",All,11,"All them nonsense, all them quarters, nigga, bitch",quarters,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",bitch,12,"Nigga young, nigga kid, nigga ballin' like a bitch",bitch,END,REPEAT,spelling,HIGH,N
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",bitch,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",nigga,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",nigga,12,"Nigga young, nigga kid, nigga ballin' like a bitch",Nigga,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",bitch,13,You could tell that I'm a 100 when I step up out my whip,whip,END,SLANT,cmu,MED,Y
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",nigga,13,You could tell that I'm a 100 when I step up out my whip,whip,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",bitch,14,on my neck just to get a nigga sick,sick,END,SLANT,cmu,MED,Y
+You Ain’t 100,11,"All them nonsense, all them quarters, nigga, bitch",bitch,15,"summer coming up, watch what I put up on my wrist",wrist,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,12,"Nigga young, nigga kid, nigga ballin' like a bitch",bitch,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,12,"Nigga young, nigga kid, nigga ballin' like a bitch",nigga,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",Nigga,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",Nigga,12,"Nigga young, nigga kid, nigga ballin' like a bitch",nigga,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",bitch,13,You could tell that I'm a 100 when I step up out my whip,whip,END,SLANT,cmu,MED,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,13,You could tell that I'm a 100 when I step up out my whip,whip,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",Nigga,13,You could tell that I'm a 100 when I step up out my whip,whip,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",bitch,14,on my neck just to get a nigga sick,sick,END,SLANT,cmu,MED,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,14,on my neck just to get a nigga sick,nigga,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",kid,14,on my neck just to get a nigga sick,sick,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",Nigga,14,on my neck just to get a nigga sick,nigga,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",Nigga,14,on my neck just to get a nigga sick,sick,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",bitch,15,"summer coming up, watch what I put up on my wrist",wrist,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,12,"Nigga young, nigga kid, nigga ballin' like a bitch",bitch,16,"I'm savage, bitch I'm 300 (Bang bang)",bitch,END,REPEAT,spelling,HIGH,N
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,tell,13,You could tell that I'm a 100 when I step up out my whip,step,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,tell,13,You could tell that I'm a 100 when I step up out my whip,when,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,when,13,You could tell that I'm a 100 when I step up out my whip,step,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,whip,14,on my neck just to get a nigga sick,sick,END,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,step,14,on my neck just to get a nigga sick,get,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,step,14,on my neck just to get a nigga sick,neck,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,tell,14,on my neck just to get a nigga sick,get,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,tell,14,on my neck just to get a nigga sick,neck,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,when,14,on my neck just to get a nigga sick,get,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,when,14,on my neck just to get a nigga sick,neck,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,whip,14,on my neck just to get a nigga sick,nigga,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,whip,15,"summer coming up, watch what I put up on my wrist",wrist,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,could,15,"summer coming up, watch what I put up on my wrist",put,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,13,You could tell that I'm a 100 when I step up out my whip,whip,16,"I'm savage, bitch I'm 300 (Bang bang)",bitch,END,SLANT,cmu,MED,Y
+You Ain’t 100,14,on my neck just to get a nigga sick,neck,14,on my neck just to get a nigga sick,get,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,14,on my neck just to get a nigga sick,nigga,14,on my neck just to get a nigga sick,sick,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,14,on my neck just to get a nigga sick,sick,15,"summer coming up, watch what I put up on my wrist",wrist,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,14,on my neck just to get a nigga sick,sick,16,"I'm savage, bitch I'm 300 (Bang bang)",bitch,END,SLANT,cmu,MED,Y
+You Ain’t 100,15,"summer coming up, watch what I put up on my wrist",coming,15,"summer coming up, watch what I put up on my wrist",what,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,15,"summer coming up, watch what I put up on my wrist",summer,15,"summer coming up, watch what I put up on my wrist",coming,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,15,"summer coming up, watch what I put up on my wrist",summer,15,"summer coming up, watch what I put up on my wrist",what,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,15,"summer coming up, watch what I put up on my wrist",wrist,16,"I'm savage, bitch I'm 300 (Bang bang)",bitch,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,15,"summer coming up, watch what I put up on my wrist",coming,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",money,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,15,"summer coming up, watch what I put up on my wrist",summer,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",money,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,15,"summer coming up, watch what I put up on my wrist",what,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",money,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,15,"summer coming up, watch what I put up on my wrist",wrist,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",bitch,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,16,"I'm savage, bitch I'm 300 (Bang bang)",bitch,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",bitch,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,16,"I'm savage, bitch I'm 300 (Bang bang)",savage,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",cashed,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",money,18,We be fuckin' all on yo honey,honey,END,MULTI,multi,HIGH,Y
+You Ain’t 100,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",money,18,We be fuckin' all on yo honey,fuckin,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",money,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",coming,END,SLANT,cmu,MED,Y
+You Ain’t 100,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",bitch,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",twitter,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",getting,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",gettin,INNER,MULTI,multi,HIGH,Y
+You Ain’t 100,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",money,20,Niggas runnin' 'cause we clappin' guns (Bang bang),guns,END,SLANT,cmu,MED,Y
+You Ain’t 100,17,"And I'm cashed out bitch, I'm getting money (Nah, nah)",money,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",nothing,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,18,We be fuckin' all on yo honey,fuckin,18,We be fuckin' all on yo honey,honey,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,18,We be fuckin' all on yo honey,honey,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",coming,END,SLANT,cmu,MED,Y
+You Ain’t 100,18,We be fuckin' all on yo honey,fuckin,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",coming,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,18,We be fuckin' all on yo honey,honey,20,Niggas runnin' 'cause we clappin' guns (Bang bang),guns,END,SLANT,cmu,MED,Y
+You Ain’t 100,18,We be fuckin' all on yo honey,fuckin,20,Niggas runnin' 'cause we clappin' guns (Bang bang),guns,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,18,We be fuckin' all on yo honey,fuckin,20,Niggas runnin' 'cause we clappin' guns (Bang bang),runnin,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,18,We be fuckin' all on yo honey,honey,20,Niggas runnin' 'cause we clappin' guns (Bang bang),runnin,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,18,We be fuckin' all on yo honey,honey,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",nothing,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,18,We be fuckin' all on yo honey,honey,22,I got this FN then I'm dumpin' (Rrrrah),dumpin,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",beef,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",real,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",coming,20,Niggas runnin' 'cause we clappin' guns (Bang bang),guns,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",coming,20,Niggas runnin' 'cause we clappin' guns (Bang bang),runnin,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",coming,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",nothing,END,SLANT,cmu,MED,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",gettin,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",never,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",life,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",wife,INNER,PERFECT,cmu,HIGH,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",twitter,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",bitch,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",twitter,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",will,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",coming,22,I got this FN then I'm dumpin' (Rrrrah),dumpin,END,SLANT,cmu,MED,Y
+You Ain’t 100,19,"We gettin' them twitter beef, but in real life we coming (Peep, peep)",coming,23,Watch these 223s runnin' to your stomach (),stomach,END,SLANT,cmu,MED,Y
+You Ain’t 100,20,Niggas runnin' 'cause we clappin' guns (Bang bang),runnin,20,Niggas runnin' 'cause we clappin' guns (Bang bang),guns,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,20,Niggas runnin' 'cause we clappin' guns (Bang bang),guns,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",nothing,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,20,Niggas runnin' 'cause we clappin' guns (Bang bang),runnin,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",nothing,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,20,Niggas runnin' 'cause we clappin' guns (Bang bang),guns,22,I got this FN then I'm dumpin' (Rrrrah),dumpin,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,20,Niggas runnin' 'cause we clappin' guns (Bang bang),runnin,22,I got this FN then I'm dumpin' (Rrrrah),dumpin,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,20,Niggas runnin' 'cause we clappin' guns (Bang bang),guns,23,Watch these 223s runnin' to your stomach (),stomach,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",will,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",bitch,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",nothing,22,I got this FN then I'm dumpin' (Rrrrah),dumpin,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",nothing,23,Watch these 223s runnin' to your stomach (),stomach,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,21,"I will never wife a bitch for nothing (Bang, bang, bang bang)",nothing,23,Watch these 223s runnin' to your stomach (),runnin,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,22,I got this FN then I'm dumpin' (Rrrrah),dumpin,23,Watch these 223s runnin' to your stomach (),stomach,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,22,I got this FN then I'm dumpin' (Rrrrah),dumpin,23,Watch these 223s runnin' to your stomach (),runnin,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,22,I got this FN then I'm dumpin' (Rrrrah),got,23,Watch these 223s runnin' to your stomach (),Watch,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,22,I got this FN then I'm dumpin' (Rrrrah),dumpin,24,"Hella kush blunts (Bang bang), I be smoking (Rrrrrah)",blunts,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,23,Watch these 223s runnin' to your stomach (),runnin,23,Watch these 223s runnin' to your stomach (),stomach,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,23,Watch these 223s runnin' to your stomach (),runnin,24,"Hella kush blunts (Bang bang), I be smoking (Rrrrrah)",blunts,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,23,Watch these 223s runnin' to your stomach (),stomach,24,"Hella kush blunts (Bang bang), I be smoking (Rrrrrah)",blunts,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,23,Watch these 223s runnin' to your stomach (),runnin,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",one,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,23,Watch these 223s runnin' to your stomach (),stomach,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",one,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,23,Watch these 223s runnin' to your stomach (),stomach,27,And bitch I'm O block or nothing (),nothing,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,24,"Hella kush blunts (Bang bang), I be smoking (Rrrrrah)",smoking,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",chokin,END,MULTI,multi,HIGH,Y
+You Ain’t 100,24,"Hella kush blunts (Bang bang), I be smoking (Rrrrrah)",blunts,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",one,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,24,"Hella kush blunts (Bang bang), I be smoking (Rrrrrah)",smoking,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",blow,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,24,"Hella kush blunts (Bang bang), I be smoking (Rrrrrah)",smoking,26,Because I'm smokin' on 100 (Dope),smokin,END,MULTI,multi,HIGH,Y
+You Ain’t 100,24,"Hella kush blunts (Bang bang), I be smoking (Rrrrrah)",smoking,28,"Big ass choppa, long clip, hold 100 (Who want it?)",hold,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",blow,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",chokin,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",chokin,26,Because I'm smokin' on 100 (Dope),smokin,END,MULTI,multi,HIGH,Y
+You Ain’t 100,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",blow,26,Because I'm smokin' on 100 (Dope),smokin,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",blow,27,And bitch I'm O block or nothing (),O,INNER,PERFECT,cmu,HIGH,Y
+You Ain’t 100,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",chokin,27,And bitch I'm O block or nothing (),O,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",Hit,27,And bitch I'm O block or nothing (),bitch,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",one,27,And bitch I'm O block or nothing (),nothing,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,25,"Hit this blow one time and then you chokin' (Bang, bang, rrrrah)",chokin,28,"Big ass choppa, long clip, hold 100 (Who want it?)",hold,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,26,Because I'm smokin' on 100 (Dope),smokin,27,And bitch I'm O block or nothing (),O,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,26,Because I'm smokin' on 100 (Dope),smokin,28,"Big ass choppa, long clip, hold 100 (Who want it?)",hold,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,26,Because I'm smokin' on 100 (Dope),Because,28,"Big ass choppa, long clip, hold 100 (Who want it?)",long,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,27,And bitch I'm O block or nothing (),bitch,28,"Big ass choppa, long clip, hold 100 (Who want it?)",Big,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,27,And bitch I'm O block or nothing (),bitch,28,"Big ass choppa, long clip, hold 100 (Who want it?)",clip,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,27,And bitch I'm O block or nothing (),O,28,"Big ass choppa, long clip, hold 100 (Who want it?)",hold,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,27,And bitch I'm O block or nothing (),nothing,29,I smoke this thousand blunts but been 300,blunts,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,27,And bitch I'm O block or nothing (),O,29,I smoke this thousand blunts but been 300,smoke,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,28,"Big ass choppa, long clip, hold 100 (Who want it?)",Big,28,"Big ass choppa, long clip, hold 100 (Who want it?)",clip,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,28,"Big ass choppa, long clip, hold 100 (Who want it?)",choppa,29,I smoke this thousand blunts but been 300,smoke,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,28,"Big ass choppa, long clip, hold 100 (Who want it?)",hold,29,I smoke this thousand blunts but been 300,smoke,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,28,"Big ass choppa, long clip, hold 100 (Who want it?)",Big,30,"I know you pour the four, you ever sip the 12? (No)",sip,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,28,"Big ass choppa, long clip, hold 100 (Who want it?)",clip,30,"I know you pour the four, you ever sip the 12? (No)",sip,INNER,PERFECT,cmu,HIGH,Y
+You Ain’t 100,28,"Big ass choppa, long clip, hold 100 (Who want it?)",hold,30,"I know you pour the four, you ever sip the 12? (No)",know,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,28,"Big ass choppa, long clip, hold 100 (Who want it?)",long,30,"I know you pour the four, you ever sip the 12? (No)",four,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,28,"Big ass choppa, long clip, hold 100 (Who want it?)",long,30,"I know you pour the four, you ever sip the 12? (No)",pour,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,29,I smoke this thousand blunts but been 300,smoke,30,"I know you pour the four, you ever sip the 12? (No)",know,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,30,"I know you pour the four, you ever sip the 12? (No)",pour,30,"I know you pour the four, you ever sip the 12? (No)",four,INNER,PERFECT,cmu,HIGH,Y
+You Ain’t 100,30,"I know you pour the four, you ever sip the 12? (No)",ever,31,"You ever made a 100, and then you live to tell (Nah)",ever,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,30,"I know you pour the four, you ever sip the 12? (No)",ever,31,"You ever made a 100, and then you live to tell (Nah)",tell,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,30,"I know you pour the four, you ever sip the 12? (No)",ever,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",get,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,30,"I know you pour the four, you ever sip the 12? (No)",know,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",go,INNER,PERFECT,cmu,HIGH,Y
+You Ain’t 100,30,"I know you pour the four, you ever sip the 12? (No)",know,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",most,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,30,"I know you pour the four, you ever sip the 12? (No)",sip,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",killed,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,31,"You ever made a 100, and then you live to tell (Nah)",ever,31,"You ever made a 100, and then you live to tell (Nah)",tell,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,31,"You ever made a 100, and then you live to tell (Nah)",ever,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",get,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,31,"You ever made a 100, and then you live to tell (Nah)",live,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",guys,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,31,"You ever made a 100, and then you live to tell (Nah)",made,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",jail,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,31,"You ever made a 100, and then you live to tell (Nah)",tell,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",get,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",most,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",go,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",killed,33,"I'm talkin' real shit (Real), bitch you 'bout ()",bitch,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",killed,33,"I'm talkin' real shit (Real), bitch you 'bout ()",shit,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",killed,34,"Bitch I'm building up, from the ground up (tough made)",Bitch,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,32,"Some of yo guys get killed, and most of them go to jail (Dumb)",killed,34,"Bitch I'm building up, from the ground up (tough made)",building,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,33,"I'm talkin' real shit (Real), bitch you 'bout ()",shit,33,"I'm talkin' real shit (Real), bitch you 'bout ()",bitch,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,33,"I'm talkin' real shit (Real), bitch you 'bout ()",'bout,34,"Bitch I'm building up, from the ground up (tough made)",ground,END,ASSONANCE,vowel,MED,Y
+You Ain’t 100,33,"I'm talkin' real shit (Real), bitch you 'bout ()",bitch,34,"Bitch I'm building up, from the ground up (tough made)",Bitch,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,33,"I'm talkin' real shit (Real), bitch you 'bout ()",bitch,34,"Bitch I'm building up, from the ground up (tough made)",building,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,33,"I'm talkin' real shit (Real), bitch you 'bout ()",shit,34,"Bitch I'm building up, from the ground up (tough made)",Bitch,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,33,"I'm talkin' real shit (Real), bitch you 'bout ()",shit,34,"Bitch I'm building up, from the ground up (tough made)",building,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,33,"I'm talkin' real shit (Real), bitch you 'bout ()",real,35,"And foe nem goin' crazy (They crazy), I keep a",keep,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,34,"Bitch I'm building up, from the ground up (tough made)",Bitch,34,"Bitch I'm building up, from the ground up (tough made)",building,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,34,"Bitch I'm building up, from the ground up (tough made)",Bitch,36,"I don't know what I'ma do, I'ma keep on fucking them up",I'ma,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,35,"And foe nem goin' crazy (They crazy), I keep a",foe,36,"I don't know what I'ma do, I'ma keep on fucking them up",don't,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,35,"And foe nem goin' crazy (They crazy), I keep a",foe,36,"I don't know what I'ma do, I'ma keep on fucking them up",know,INNER,PERFECT,cmu,HIGH,Y
+You Ain’t 100,35,"And foe nem goin' crazy (They crazy), I keep a",keep,36,"I don't know what I'ma do, I'ma keep on fucking them up",keep,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,35,"And foe nem goin' crazy (They crazy), I keep a",nem,37,"Up in the pen and shit, I want this life ()",pen,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,36,"I don't know what I'ma do, I'ma keep on fucking them up",don't,36,"I don't know what I'ma do, I'ma keep on fucking them up",know,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,36,"I don't know what I'ma do, I'ma keep on fucking them up",I'ma,36,"I don't know what I'ma do, I'ma keep on fucking them up",I'ma,INNER,REPEAT,spelling,HIGH,N
+You Ain’t 100,36,"I don't know what I'ma do, I'ma keep on fucking them up",what,36,"I don't know what I'ma do, I'ma keep on fucking them up",fucking,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,36,"I don't know what I'ma do, I'ma keep on fucking them up",I'ma,37,"Up in the pen and shit, I want this life ()",shit,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,36,"I don't know what I'ma do, I'ma keep on fucking them up",don't,38,"You take my money, on my momma, you gon' pay the price",gon,INNER,SLANT,spelling,LOW,Y
+You Ain’t 100,36,"I don't know what I'ma do, I'ma keep on fucking them up",fucking,38,"You take my money, on my momma, you gon' pay the price",money,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,36,"I don't know what I'ma do, I'ma keep on fucking them up",what,38,"You take my money, on my momma, you gon' pay the price",money,INNER,SLANT,cmu,MED,Y
+You Ain’t 100,37,"Up in the pen and shit, I want this life ()",life,38,"You take my money, on my momma, you gon' pay the price",price,END,SLANT,cmu,MED,Y
+You Ain’t 100,37,"Up in the pen and shit, I want this life ()",want,38,"You take my money, on my momma, you gon' pay the price",momma,INNER,ASSONANCE,vowel,MED,Y
+You Ain’t 100,38,"You take my money, on my momma, you gon' pay the price",take,38,"You take my money, on my momma, you gon' pay the price",pay,INNER,ASSONANCE,vowel,MED,Y
