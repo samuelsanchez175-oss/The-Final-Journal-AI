@@ -1,0 +1,630 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+JEEZU,1,"Jeezu, protect my soul",protect,2,Wash my sin and let me fly,let,INNER,SLANT,cmu,MED,Y
+JEEZU,1,"Jeezu, protect my soul",protect,3,Wash my sin and let me shine,let,INNER,SLANT,cmu,MED,Y
+JEEZU,1,"Jeezu, protect my soul",soul,4,"Mama, I have made my lay, no",no,END,ASSONANCE,vowel,MED,Y
+JEEZU,2,Wash my sin and let me fly,fly,3,Wash my sin and let me shine,shine,END,ASSONANCE,vowel,MED,Y
+JEEZU,2,Wash my sin and let me fly,let,3,Wash my sin and let me shine,let,INNER,REPEAT,spelling,HIGH,N
+JEEZU,2,Wash my sin and let me fly,sin,3,Wash my sin and let me shine,sin,INNER,REPEAT,spelling,HIGH,N
+JEEZU,2,Wash my sin and let me fly,Wash,3,Wash my sin and let me shine,Wash,INNER,REPEAT,spelling,HIGH,N
+JEEZU,2,Wash my sin and let me fly,Wash,4,"Mama, I have made my lay, no",Mama,INNER,SLANT,cmu,MED,Y
+JEEZU,3,Wash my sin and let me shine,Wash,4,"Mama, I have made my lay, no",Mama,INNER,SLANT,cmu,MED,Y
+JEEZU,3,Wash my sin and let me shine,sin,5,"Papa, they will know you name, oh",will,INNER,SLANT,cmu,MED,Y
+JEEZU,4,"Mama, I have made my lay, no",made,4,"Mama, I have made my lay, no",lay,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,4,"Mama, I have made my lay, no",lay,5,"Papa, they will know you name, oh",name,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,4,"Mama, I have made my lay, no",made,5,"Papa, they will know you name, oh",name,INNER,SLANT,cmu,MED,Y
+JEEZU,4,"Mama, I have made my lay, no",no,5,"Papa, they will know you name, oh",know,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,4,"Mama, I have made my lay, no",lay,6,"Easy my road, navigatin' the pain and the struggle",navigatin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,4,"Mama, I have made my lay, no",lay,6,"Easy my road, navigatin' the pain and the struggle",pain,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,4,"Mama, I have made my lay, no",made,6,"Easy my road, navigatin' the pain and the struggle",navigatin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,4,"Mama, I have made my lay, no",made,6,"Easy my road, navigatin' the pain and the struggle",pain,INNER,SLANT,cmu,MED,Y
+JEEZU,4,"Mama, I have made my lay, no",no,6,"Easy my road, navigatin' the pain and the struggle",road,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,5,"Papa, they will know you name, oh",know,6,"Easy my road, navigatin' the pain and the struggle",road,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,5,"Papa, they will know you name, oh",name,6,"Easy my road, navigatin' the pain and the struggle",navigatin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,5,"Papa, they will know you name, oh",name,6,"Easy my road, navigatin' the pain and the struggle",pain,INNER,SLANT,cmu,MED,Y
+JEEZU,5,"Papa, they will know you name, oh",Papa,6,"Easy my road, navigatin' the pain and the struggle",struggle,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,5,"Papa, they will know you name, oh",know,7,"Tears overflow, in the ghetto ain't nothin' but trouble",overflow,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,5,"Papa, they will know you name, oh",name,7,"Tears overflow, in the ghetto ain't nothin' but trouble",ain't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,5,"Papa, they will know you name, oh",Papa,7,"Tears overflow, in the ghetto ain't nothin' but trouble",trouble,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,6,"Easy my road, navigatin' the pain and the struggle",navigatin,6,"Easy my road, navigatin' the pain and the struggle",pain,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,6,"Easy my road, navigatin' the pain and the struggle",struggle,7,"Tears overflow, in the ghetto ain't nothin' but trouble",trouble,END,SLANT,cmu,MED,Y
+JEEZU,6,"Easy my road, navigatin' the pain and the struggle",navigatin,7,"Tears overflow, in the ghetto ain't nothin' but trouble",ain't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,6,"Easy my road, navigatin' the pain and the struggle",pain,7,"Tears overflow, in the ghetto ain't nothin' but trouble",ain't,INNER,SLANT,cmu,MED,Y
+JEEZU,6,"Easy my road, navigatin' the pain and the struggle",road,7,"Tears overflow, in the ghetto ain't nothin' but trouble",overflow,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,6,"Easy my road, navigatin' the pain and the struggle",struggle,8,Where shall I go? In the fire we burn or we hustle,hustle,END,SLANT,cmu,MED,Y
+JEEZU,6,"Easy my road, navigatin' the pain and the struggle",road,8,Where shall I go? In the fire we burn or we hustle,go,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,7,"Tears overflow, in the ghetto ain't nothin' but trouble",Tears,7,"Tears overflow, in the ghetto ain't nothin' but trouble",ghetto,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,7,"Tears overflow, in the ghetto ain't nothin' but trouble",trouble,8,Where shall I go? In the fire we burn or we hustle,hustle,END,SLANT,cmu,MED,Y
+JEEZU,7,"Tears overflow, in the ghetto ain't nothin' but trouble",ghetto,8,Where shall I go? In the fire we burn or we hustle,Where,INNER,SLANT,cmu,MED,Y
+JEEZU,7,"Tears overflow, in the ghetto ain't nothin' but trouble",overflow,8,Where shall I go? In the fire we burn or we hustle,go,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,7,"Tears overflow, in the ghetto ain't nothin' but trouble",Tears,8,Where shall I go? In the fire we burn or we hustle,Where,INNER,SLANT,cmu,MED,Y
+JEEZU,7,"Tears overflow, in the ghetto ain't nothin' but trouble",nothin,9,"Findin' my glow, but the light, you won't see what it cost you",cost,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,7,"Tears overflow, in the ghetto ain't nothin' but trouble",overflow,9,"Findin' my glow, but the light, you won't see what it cost you",glow,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,7,"Tears overflow, in the ghetto ain't nothin' but trouble",overflow,9,"Findin' my glow, but the light, you won't see what it cost you",won't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,7,"Tears overflow, in the ghetto ain't nothin' but trouble",trouble,9,"Findin' my glow, but the light, you won't see what it cost you",what,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,8,Where shall I go? In the fire we burn or we hustle,fire,9,"Findin' my glow, but the light, you won't see what it cost you",Findin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,8,Where shall I go? In the fire we burn or we hustle,fire,9,"Findin' my glow, but the light, you won't see what it cost you",light,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,8,Where shall I go? In the fire we burn or we hustle,go,9,"Findin' my glow, but the light, you won't see what it cost you",glow,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,8,Where shall I go? In the fire we burn or we hustle,go,9,"Findin' my glow, but the light, you won't see what it cost you",won't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,8,Where shall I go? In the fire we burn or we hustle,hustle,9,"Findin' my glow, but the light, you won't see what it cost you",what,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,8,Where shall I go? In the fire we burn or we hustle,burn,10,"I murder many men, but I ain't proud of my sins",murder,INNER,SLANT,cmu,MED,Y
+JEEZU,8,Where shall I go? In the fire we burn or we hustle,Where,10,"I murder many men, but I ain't proud of my sins",many,INNER,SLANT,cmu,MED,Y
+JEEZU,8,Where shall I go? In the fire we burn or we hustle,Where,10,"I murder many men, but I ain't proud of my sins",men,INNER,SLANT,cmu,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",Findin,9,"Findin' my glow, but the light, you won't see what it cost you",light,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",glow,9,"Findin' my glow, but the light, you won't see what it cost you",won't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",Findin,11,"We don't even like each other, for real, you know the deal, play pretеnd",like,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",glow,11,"We don't even like each other, for real, you know the deal, play pretеnd",don't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",glow,11,"We don't even like each other, for real, you know the deal, play pretеnd",know,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",light,11,"We don't even like each other, for real, you know the deal, play pretеnd",like,INNER,SLANT,cmu,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",see,11,"We don't even like each other, for real, you know the deal, play pretеnd",deal,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",see,11,"We don't even like each other, for real, you know the deal, play pretеnd",each,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",see,11,"We don't even like each other, for real, you know the deal, play pretеnd",even,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",see,11,"We don't even like each other, for real, you know the deal, play pretеnd",real,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",what,11,"We don't even like each other, for real, you know the deal, play pretеnd",other,INNER,SLANT,cmu,MED,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",won't,11,"We don't even like each other, for real, you know the deal, play pretеnd",don't,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,9,"Findin' my glow, but the light, you won't see what it cost you",won't,11,"We don't even like each other, for real, you know the deal, play pretеnd",know,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,10,"I murder many men, but I ain't proud of my sins",many,10,"I murder many men, but I ain't proud of my sins",men,INNER,SLANT,cmu,MED,Y
+JEEZU,10,"I murder many men, but I ain't proud of my sins",ain't,11,"We don't even like each other, for real, you know the deal, play pretеnd",play,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,10,"I murder many men, but I ain't proud of my sins",many,11,"We don't even like each other, for real, you know the deal, play pretеnd",pret,INNER,SLANT,cmu,MED,Y
+JEEZU,10,"I murder many men, but I ain't proud of my sins",men,11,"We don't even like each other, for real, you know the deal, play pretеnd",pret,INNER,SLANT,cmu,MED,Y
+JEEZU,10,"I murder many men, but I ain't proud of my sins",proud,11,"We don't even like each other, for real, you know the deal, play pretеnd",pret,INNER,SLANT,spelling,LOW,Y
+JEEZU,10,"I murder many men, but I ain't proud of my sins",ain't,12,"With all this money made, I thought it wouldn't be a tragеdy",made,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",don't,11,"We don't even like each other, for real, you know the deal, play pretеnd",know,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",each,11,"We don't even like each other, for real, you know the deal, play pretеnd",deal,INNER,SLANT,cmu,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",each,11,"We don't even like each other, for real, you know the deal, play pretеnd",real,INNER,SLANT,cmu,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",even,11,"We don't even like each other, for real, you know the deal, play pretеnd",deal,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",even,11,"We don't even like each other, for real, you know the deal, play pretеnd",each,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",even,11,"We don't even like each other, for real, you know the deal, play pretеnd",real,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",real,11,"We don't even like each other, for real, you know the deal, play pretеnd",deal,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",other,12,"With all this money made, I thought it wouldn't be a tragеdy",money,INNER,SLANT,cmu,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",play,12,"With all this money made, I thought it wouldn't be a tragеdy",made,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",like,13,Now I realize my happiness all depend,realize,INNER,SLANT,cmu,MED,Y
+JEEZU,11,"We don't even like each other, for real, you know the deal, play pretеnd",pret,13,Now I realize my happiness all depend,depend,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,12,"With all this money made, I thought it wouldn't be a tragеdy",all,12,"With all this money made, I thought it wouldn't be a tragеdy",thought,INNER,SLANT,cmu,MED,Y
+JEEZU,12,"With all this money made, I thought it wouldn't be a tragеdy",all,13,Now I realize my happiness all depend,all,INNER,REPEAT,spelling,HIGH,N
+JEEZU,12,"With all this money made, I thought it wouldn't be a tragеdy",thought,13,Now I realize my happiness all depend,all,INNER,SLANT,cmu,MED,Y
+JEEZU,12,"With all this money made, I thought it wouldn't be a tragеdy",money,14,"I am at these niggas neck, I had enough time to rest and self-reflect",enough,INNER,SLANT,cmu,MED,Y
+JEEZU,12,"With all this money made, I thought it wouldn't be a tragеdy",trag,14,"I am at these niggas neck, I had enough time to rest and self-reflect",had,INNER,SLANT,spelling,LOW,Y
+JEEZU,13,Now I realize my happiness all depend,depend,14,"I am at these niggas neck, I had enough time to rest and self-reflect",reflect,END,ASSONANCE,vowel,MED,Y
+JEEZU,13,Now I realize my happiness all depend,depend,14,"I am at these niggas neck, I had enough time to rest and self-reflect",neck,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,13,Now I realize my happiness all depend,depend,14,"I am at these niggas neck, I had enough time to rest and self-reflect",rest,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,13,Now I realize my happiness all depend,depend,14,"I am at these niggas neck, I had enough time to rest and self-reflect",self,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,13,Now I realize my happiness all depend,happiness,14,"I am at these niggas neck, I had enough time to rest and self-reflect",had,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,13,Now I realize my happiness all depend,realize,14,"I am at these niggas neck, I had enough time to rest and self-reflect",time,INNER,SLANT,cmu,MED,Y
+JEEZU,13,Now I realize my happiness all depend,depend,15,I did enough for my writing in a pen,pen,END,SLANT,cmu,MED,Y
+JEEZU,13,Now I realize my happiness all depend,realize,15,I did enough for my writing in a pen,writing,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",neck,14,"I am at these niggas neck, I had enough time to rest and self-reflect",reflect,INNER,SLANT,cmu,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",neck,14,"I am at these niggas neck, I had enough time to rest and self-reflect",rest,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",neck,14,"I am at these niggas neck, I had enough time to rest and self-reflect",self,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",rest,14,"I am at these niggas neck, I had enough time to rest and self-reflect",reflect,INNER,SLANT,cmu,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",rest,14,"I am at these niggas neck, I had enough time to rest and self-reflect",self,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",self,14,"I am at these niggas neck, I had enough time to rest and self-reflect",reflect,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",reflect,15,I did enough for my writing in a pen,pen,END,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",enough,15,I did enough for my writing in a pen,enough,INNER,REPEAT,spelling,HIGH,N
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",neck,15,I did enough for my writing in a pen,pen,INNER,SLANT,cmu,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",rest,15,I did enough for my writing in a pen,pen,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",self,15,I did enough for my writing in a pen,pen,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",time,15,I did enough for my writing in a pen,writing,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",neck,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",nightmare,INNER,SLANT,cmu,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",reflect,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",nightmare,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",rest,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",nightmare,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",self,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",nightmare,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,14,"I am at these niggas neck, I had enough time to rest and self-reflect",time,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",like,INNER,SLANT,cmu,MED,Y
+JEEZU,15,I did enough for my writing in a pen,pen,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",nightmare,INNER,SLANT,cmu,MED,Y
+JEEZU,15,I did enough for my writing in a pen,writing,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",like,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,15,I did enough for my writing in a pen,enough,17,They say I should be the one to dream big,one,INNER,SLANT,cmu,MED,Y
+JEEZU,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",baby,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",crazy,INNER,SLANT,cmu,MED,Y
+JEEZU,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",Haiti,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",baby,INNER,SLANT,cmu,MED,Y
+JEEZU,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",Haiti,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",crazy,INNER,SLANT,cmu,MED,Y
+JEEZU,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",soul,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",glow,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",baby,17,They say I should be the one to dream big,say,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",crazy,17,They say I should be the one to dream big,say,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",Haiti,17,They say I should be the one to dream big,say,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",nightmare,18,Said a prayer for my relationship with my third kid,prayer,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,16,"My soul glow like Haiti, I'm a nightmare, baby, so crazy",nightmare,18,Said a prayer for my relationship with my third kid,Said,INNER,SLANT,cmu,MED,Y
+JEEZU,17,They say I should be the one to dream big,big,18,Said a prayer for my relationship with my third kid,kid,END,SLANT,cmu,MED,Y
+JEEZU,17,They say I should be the one to dream big,big,18,Said a prayer for my relationship with my third kid,relationship,INNER,SLANT,cmu,MED,Y
+JEEZU,17,They say I should be the one to dream big,big,19,When he look at me like she can sense all the shit I did,shit,END,SLANT,cmu,MED,Y
+JEEZU,17,They say I should be the one to dream big,should,19,When he look at me like she can sense all the shit I did,look,INNER,SLANT,cmu,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,relationship,18,Said a prayer for my relationship with my third kid,kid,INNER,SLANT,cmu,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,Said,18,Said a prayer for my relationship with my third kid,prayer,INNER,SLANT,cmu,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,kid,19,When he look at me like she can sense all the shit I did,shit,END,SLANT,cmu,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,prayer,19,When he look at me like she can sense all the shit I did,sense,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,prayer,19,When he look at me like she can sense all the shit I did,When,INNER,SLANT,cmu,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,relationship,19,When he look at me like she can sense all the shit I did,shit,INNER,SLANT,cmu,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,Said,19,When he look at me like she can sense all the shit I did,sense,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,Said,19,When he look at me like she can sense all the shit I did,When,INNER,SLANT,cmu,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,prayer,20,"Fresh off the bed, I ain't jumped off rappin'",bed,INNER,SLANT,cmu,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,prayer,20,"Fresh off the bed, I ain't jumped off rappin'",Fresh,INNER,SLANT,cmu,MED,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,Said,20,"Fresh off the bed, I ain't jumped off rappin'",bed,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,18,Said a prayer for my relationship with my third kid,Said,20,"Fresh off the bed, I ain't jumped off rappin'",Fresh,INNER,SLANT,cmu,MED,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,When,19,When he look at me like she can sense all the shit I did,sense,INNER,SLANT,cmu,MED,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,can,20,"Fresh off the bed, I ain't jumped off rappin'",rappin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,sense,20,"Fresh off the bed, I ain't jumped off rappin'",bed,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,sense,20,"Fresh off the bed, I ain't jumped off rappin'",Fresh,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,When,20,"Fresh off the bed, I ain't jumped off rappin'",bed,INNER,SLANT,cmu,MED,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,When,20,"Fresh off the bed, I ain't jumped off rappin'",Fresh,INNER,SLANT,cmu,MED,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,can,21,Came home to the family with the fam like fuck Instagram,fam,INNER,SLANT,spelling,LOW,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,can,21,Came home to the family with the fam like fuck Instagram,family,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,can,21,Came home to the family with the fam like fuck Instagram,Instagram,INNER,SLANT,cmu,MED,Y
+JEEZU,19,When he look at me like she can sense all the shit I did,like,21,Came home to the family with the fam like fuck Instagram,like,INNER,REPEAT,spelling,HIGH,N
+JEEZU,20,"Fresh off the bed, I ain't jumped off rappin'",Fresh,20,"Fresh off the bed, I ain't jumped off rappin'",bed,INNER,SLANT,cmu,MED,Y
+JEEZU,20,"Fresh off the bed, I ain't jumped off rappin'",rappin,21,Came home to the family with the fam like fuck Instagram,Instagram,END,ASSONANCE,vowel,MED,Y
+JEEZU,20,"Fresh off the bed, I ain't jumped off rappin'",ain't,21,Came home to the family with the fam like fuck Instagram,Came,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,20,"Fresh off the bed, I ain't jumped off rappin'",jumped,21,Came home to the family with the fam like fuck Instagram,fuck,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,20,"Fresh off the bed, I ain't jumped off rappin'",rappin,21,Came home to the family with the fam like fuck Instagram,family,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,20,"Fresh off the bed, I ain't jumped off rappin'",ain't,22,"Locked up in the box, you in jail, in the jail",jail,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,20,"Fresh off the bed, I ain't jumped off rappin'",rappin,23,"Know that feeling people got your ass behind the door, scram",scram,END,ASSONANCE,vowel,MED,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,fam,21,Came home to the family with the fam like fuck Instagram,Instagram,INNER,PERFECT,spelling,MED,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,family,21,Came home to the family with the fam like fuck Instagram,fam,INNER,SLANT,spelling,LOW,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,family,21,Came home to the family with the fam like fuck Instagram,Instagram,INNER,SLANT,cmu,MED,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,Came,22,"Locked up in the box, you in jail, in the jail",jail,INNER,SLANT,cmu,MED,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,Instagram,23,"Know that feeling people got your ass behind the door, scram",scram,END,PERFECT,cmu,HIGH,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,fam,23,"Know that feeling people got your ass behind the door, scram",ass,INNER,SLANT,spelling,LOW,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,fam,23,"Know that feeling people got your ass behind the door, scram",scram,INNER,PERFECT,spelling,MED,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,family,23,"Know that feeling people got your ass behind the door, scram",ass,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,family,23,"Know that feeling people got your ass behind the door, scram",scram,INNER,SLANT,cmu,MED,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,home,23,"Know that feeling people got your ass behind the door, scram",Know,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,Instagram,23,"Know that feeling people got your ass behind the door, scram",ass,INNER,SLANT,cmu,MED,Y
+JEEZU,21,Came home to the family with the fam like fuck Instagram,like,23,"Know that feeling people got your ass behind the door, scram",behind,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,22,"Locked up in the box, you in jail, in the jail",jail,22,"Locked up in the box, you in jail, in the jail",jail,INNER,REPEAT,spelling,HIGH,N
+JEEZU,22,"Locked up in the box, you in jail, in the jail",Locked,22,"Locked up in the box, you in jail, in the jail",box,INNER,SLANT,cmu,MED,Y
+JEEZU,22,"Locked up in the box, you in jail, in the jail",box,23,"Know that feeling people got your ass behind the door, scram",got,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,22,"Locked up in the box, you in jail, in the jail",Locked,23,"Know that feeling people got your ass behind the door, scram",got,INNER,SLANT,cmu,MED,Y
+JEEZU,22,"Locked up in the box, you in jail, in the jail",box,24,From the project to a sale to a mansion to a cell again,project,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,22,"Locked up in the box, you in jail, in the jail",jail,24,From the project to a sale to a mansion to a cell again,sale,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,22,"Locked up in the box, you in jail, in the jail",Locked,24,From the project to a sale to a mansion to a cell again,project,INNER,SLANT,cmu,MED,Y
+JEEZU,23,"Know that feeling people got your ass behind the door, scram",ass,23,"Know that feeling people got your ass behind the door, scram",scram,INNER,SLANT,cmu,MED,Y
+JEEZU,23,"Know that feeling people got your ass behind the door, scram",feeling,23,"Know that feeling people got your ass behind the door, scram",people,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,23,"Know that feeling people got your ass behind the door, scram",ass,24,From the project to a sale to a mansion to a cell again,mansion,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,23,"Know that feeling people got your ass behind the door, scram",got,24,From the project to a sale to a mansion to a cell again,project,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,23,"Know that feeling people got your ass behind the door, scram",scram,24,From the project to a sale to a mansion to a cell again,mansion,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,23,"Know that feeling people got your ass behind the door, scram",ass,25,"Like, goddamn, could a young nigga live?",goddamn,INNER,SLANT,cmu,MED,Y
+JEEZU,23,"Know that feeling people got your ass behind the door, scram",behind,25,"Like, goddamn, could a young nigga live?",Like,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,23,"Know that feeling people got your ass behind the door, scram",behind,25,"Like, goddamn, could a young nigga live?",live,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,23,"Know that feeling people got your ass behind the door, scram",scram,25,"Like, goddamn, could a young nigga live?",goddamn,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,24,From the project to a sale to a mansion to a cell again,cell,24,From the project to a sale to a mansion to a cell again,again,INNER,SLANT,cmu,MED,Y
+JEEZU,24,From the project to a sale to a mansion to a cell again,mansion,25,"Like, goddamn, could a young nigga live?",goddamn,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,24,From the project to a sale to a mansion to a cell again,project,26,"I'm fightin' police, sayin' he ain't got my mill",got,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,24,From the project to a sale to a mansion to a cell again,sale,26,"I'm fightin' police, sayin' he ain't got my mill",ain't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,24,From the project to a sale to a mansion to a cell again,sale,26,"I'm fightin' police, sayin' he ain't got my mill",sayin,INNER,SLANT,cmu,MED,Y
+JEEZU,24,From the project to a sale to a mansion to a cell again,again,28,Shittin' where you eat and where you lay your head at,head,END,SLANT,cmu,MED,Y
+JEEZU,25,"Like, goddamn, could a young nigga live?",Like,25,"Like, goddamn, could a young nigga live?",live,INNER,SLANT,cmu,MED,Y
+JEEZU,25,"Like, goddamn, could a young nigga live?",Like,26,"I'm fightin' police, sayin' he ain't got my mill",fightin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,25,"Like, goddamn, could a young nigga live?",live,26,"I'm fightin' police, sayin' he ain't got my mill",fightin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,25,"Like, goddamn, could a young nigga live?",could,27,Cold ass sale got a nigga turned pink been through the sink,Cold,INNER,SLANT,spelling,LOW,Y
+JEEZU,25,"Like, goddamn, could a young nigga live?",goddamn,27,Cold ass sale got a nigga turned pink been through the sink,ass,INNER,SLANT,cmu,MED,Y
+JEEZU,25,"Like, goddamn, could a young nigga live?",nigga,27,Cold ass sale got a nigga turned pink been through the sink,nigga,INNER,REPEAT,spelling,HIGH,N
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",sayin,26,"I'm fightin' police, sayin' he ain't got my mill",ain't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",mill,27,Cold ass sale got a nigga turned pink been through the sink,sink,END,ASSONANCE,vowel,MED,Y
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",ain't,27,Cold ass sale got a nigga turned pink been through the sink,sale,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",got,27,Cold ass sale got a nigga turned pink been through the sink,got,INNER,REPEAT,spelling,HIGH,N
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",mill,27,Cold ass sale got a nigga turned pink been through the sink,pink,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",sayin,27,Cold ass sale got a nigga turned pink been through the sink,sale,INNER,SLANT,cmu,MED,Y
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",ain't,28,Shittin' where you eat and where you lay your head at,lay,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",mill,28,Shittin' where you eat and where you lay your head at,Shittin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",police,28,Shittin' where you eat and where you lay your head at,eat,INNER,SLANT,cmu,MED,Y
+JEEZU,26,"I'm fightin' police, sayin' he ain't got my mill",sayin,28,Shittin' where you eat and where you lay your head at,lay,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,27,Cold ass sale got a nigga turned pink been through the sink,pink,27,Cold ass sale got a nigga turned pink been through the sink,sink,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,27,Cold ass sale got a nigga turned pink been through the sink,pink,28,Shittin' where you eat and where you lay your head at,Shittin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,27,Cold ass sale got a nigga turned pink been through the sink,sale,28,Shittin' where you eat and where you lay your head at,lay,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,27,Cold ass sale got a nigga turned pink been through the sink,sink,28,Shittin' where you eat and where you lay your head at,Shittin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,27,Cold ass sale got a nigga turned pink been through the sink,Cold,29,But it's the only time you sleep,only,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,28,Shittin' where you eat and where you lay your head at,where,28,Shittin' where you eat and where you lay your head at,head,INNER,SLANT,cmu,MED,Y
+JEEZU,28,Shittin' where you eat and where you lay your head at,where,28,Shittin' where you eat and where you lay your head at,where,INNER,REPEAT,spelling,HIGH,N
+JEEZU,28,Shittin' where you eat and where you lay your head at,eat,29,But it's the only time you sleep,sleep,INNER,SLANT,cmu,MED,Y
+JEEZU,28,Shittin' where you eat and where you lay your head at,head,30,"My daddy was a Rolling Stone, but he's still a legend",legend,END,ASSONANCE,vowel,MED,Y
+JEEZU,28,Shittin' where you eat and where you lay your head at,eat,30,"My daddy was a Rolling Stone, but he's still a legend",he's,INNER,SLANT,cmu,MED,Y
+JEEZU,28,Shittin' where you eat and where you lay your head at,Shittin,30,"My daddy was a Rolling Stone, but he's still a legend",still,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,28,Shittin' where you eat and where you lay your head at,where,30,"My daddy was a Rolling Stone, but he's still a legend",legend,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,28,Shittin' where you eat and where you lay your head at,head,31,Wondering if a nigga like me can go to Heaven,Heaven,END,ASSONANCE,vowel,MED,Y
+JEEZU,29,But it's the only time you sleep,only,30,"My daddy was a Rolling Stone, but he's still a legend",Rolling,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,29,But it's the only time you sleep,only,30,"My daddy was a Rolling Stone, but he's still a legend",Stone,INNER,SLANT,cmu,MED,Y
+JEEZU,29,But it's the only time you sleep,sleep,30,"My daddy was a Rolling Stone, but he's still a legend",he's,INNER,SLANT,cmu,MED,Y
+JEEZU,29,But it's the only time you sleep,only,31,Wondering if a nigga like me can go to Heaven,go,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,29,But it's the only time you sleep,time,31,Wondering if a nigga like me can go to Heaven,like,INNER,SLANT,cmu,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",Rolling,30,"My daddy was a Rolling Stone, but he's still a legend",Stone,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",legend,31,Wondering if a nigga like me can go to Heaven,Heaven,END,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",daddy,31,Wondering if a nigga like me can go to Heaven,can,INNER,SLANT,cmu,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",Rolling,31,Wondering if a nigga like me can go to Heaven,go,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",Stone,31,Wondering if a nigga like me can go to Heaven,go,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",legend,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",guess,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",legend,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",never,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",legend,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",second,INNER,SLANT,cmu,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",Rolling,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",no,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",Rolling,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",though,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",Stone,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",no,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",Stone,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",though,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,30,"My daddy was a Rolling Stone, but he's still a legend",legend,33,"My daddy said ""If we can't beat him, get a weapon""",weapon,END,ASSONANCE,vowel,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,go,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",no,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,go,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",though,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,Heaven,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",guess,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,Heaven,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",never,INNER,SLANT,cmu,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,Heaven,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",second,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,like,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",life,INNER,SLANT,cmu,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,like,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",snipe,INNER,SLANT,cmu,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,Heaven,33,"My daddy said ""If we can't beat him, get a weapon""",weapon,END,SLANT,cmu,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,can,33,"My daddy said ""If we can't beat him, get a weapon""",can't,INNER,SLANT,cmu,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,can,33,"My daddy said ""If we can't beat him, get a weapon""",daddy,INNER,SLANT,cmu,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,Heaven,33,"My daddy said ""If we can't beat him, get a weapon""",get,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,31,Wondering if a nigga like me can go to Heaven,Heaven,33,"My daddy said ""If we can't beat him, get a weapon""",said,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",ain't,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",ain't,INNER,REPEAT,spelling,HIGH,N
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",ain't,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",baby,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",never,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",guess,INNER,SLANT,cmu,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",never,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",second,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",second,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",guess,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",snipe,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",life,INNER,SLANT,cmu,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",though,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",no,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",guess,33,"My daddy said ""If we can't beat him, get a weapon""",get,INNER,SLANT,cmu,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",guess,33,"My daddy said ""If we can't beat him, get a weapon""",said,INNER,SLANT,cmu,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",guess,33,"My daddy said ""If we can't beat him, get a weapon""",weapon,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",never,33,"My daddy said ""If we can't beat him, get a weapon""",get,INNER,SLANT,cmu,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",never,33,"My daddy said ""If we can't beat him, get a weapon""",said,INNER,SLANT,cmu,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",never,33,"My daddy said ""If we can't beat him, get a weapon""",weapon,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",second,33,"My daddy said ""If we can't beat him, get a weapon""",get,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",second,33,"My daddy said ""If we can't beat him, get a weapon""",said,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",second,33,"My daddy said ""If we can't beat him, get a weapon""",weapon,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",no,34,"Prison reform, no prison deform",no,INNER,REPEAT,spelling,HIGH,N
+JEEZU,32,"I ain't snipe for life though, he ain't never gotta second guess, no hood baby",though,34,"Prison reform, no prison deform",no,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",daddy,33,"My daddy said ""If we can't beat him, get a weapon""",can't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",get,33,"My daddy said ""If we can't beat him, get a weapon""",weapon,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",said,33,"My daddy said ""If we can't beat him, get a weapon""",get,INNER,SLANT,cmu,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",said,33,"My daddy said ""If we can't beat him, get a weapon""",weapon,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",him,34,"Prison reform, no prison deform",Prison,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",beat,35,Why he always gotta leave a dang stain everywhere he go?,leave,INNER,SLANT,cmu,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",can't,35,Why he always gotta leave a dang stain everywhere he go?,dang,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",daddy,35,Why he always gotta leave a dang stain everywhere he go?,dang,INNER,SLANT,cmu,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",get,35,Why he always gotta leave a dang stain everywhere he go?,everywhere,INNER,SLANT,cmu,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",said,35,Why he always gotta leave a dang stain everywhere he go?,everywhere,INNER,SLANT,cmu,MED,Y
+JEEZU,33,"My daddy said ""If we can't beat him, get a weapon""",weapon,35,Why he always gotta leave a dang stain everywhere he go?,everywhere,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,34,"Prison reform, no prison deform",Prison,34,"Prison reform, no prison deform",prison,INNER,REPEAT,spelling,HIGH,N
+JEEZU,34,"Prison reform, no prison deform",reform,34,"Prison reform, no prison deform",deform,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,34,"Prison reform, no prison deform",no,35,Why he always gotta leave a dang stain everywhere he go?,go,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,34,"Prison reform, no prison deform",deform,36,Nigga got my name in the kiosk machine,kiosk,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,34,"Prison reform, no prison deform",reform,36,Nigga got my name in the kiosk machine,kiosk,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,always,35,Why he always gotta leave a dang stain everywhere he go?,stain,INNER,SLANT,cmu,MED,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,always,36,Nigga got my name in the kiosk machine,name,INNER,SLANT,cmu,MED,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,gotta,36,Nigga got my name in the kiosk machine,got,INNER,SLANT,cmu,MED,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,leave,36,Nigga got my name in the kiosk machine,machine,INNER,SLANT,cmu,MED,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,stain,36,Nigga got my name in the kiosk machine,name,INNER,SLANT,cmu,MED,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,go,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",CO,END,PERFECT,cmu,HIGH,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,dang,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",can,INNER,SLANT,cmu,MED,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,everywhere,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",get,INNER,SLANT,cmu,MED,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,leave,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",Tryna,INNER,SLANT,spelling,LOW,Y
+JEEZU,35,Why he always gotta leave a dang stain everywhere he go?,go,39,"They believed me in me, they knew my lil' badass was gon' blow",blow,END,PERFECT,cmu,HIGH,Y
+JEEZU,36,Nigga got my name in the kiosk machine,kiosk,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",dorm,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,36,Nigga got my name in the kiosk machine,machine,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",Tryna,INNER,SLANT,spelling,LOW,Y
+JEEZU,36,Nigga got my name in the kiosk machine,Nigga,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",kicked,INNER,SLANT,spelling,LOW,Y
+JEEZU,36,Nigga got my name in the kiosk machine,machine,38,Z told AD to keep me out of trouble,keep,INNER,SLANT,cmu,MED,Y
+JEEZU,36,Nigga got my name in the kiosk machine,machine,38,Z told AD to keep me out of trouble,Z,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",can,38,Z told AD to keep me out of trouble,AD,INNER,SLANT,cmu,MED,Y
+JEEZU,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",CO,38,Z told AD to keep me out of trouble,told,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",Tryna,38,Z told AD to keep me out of trouble,keep,INNER,SLANT,spelling,LOW,Y
+JEEZU,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",CO,39,"They believed me in me, they knew my lil' badass was gon' blow",blow,END,PERFECT,cmu,HIGH,Y
+JEEZU,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",can,39,"They believed me in me, they knew my lil' badass was gon' blow",badass,INNER,SLANT,cmu,MED,Y
+JEEZU,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",kicked,39,"They believed me in me, they knew my lil' badass was gon' blow",lil,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",outta,39,"They believed me in me, they knew my lil' badass was gon' blow",knew,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,37,"Tryna get me kicked outta the dorm, so they can flirt with the CO",CO,41,"I've been wantin' to cry, the Bible say it'll clean my soul",soul,END,ASSONANCE,vowel,MED,Y
+JEEZU,38,Z told AD to keep me out of trouble,Z,38,Z told AD to keep me out of trouble,keep,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,38,Z told AD to keep me out of trouble,AD,39,"They believed me in me, they knew my lil' badass was gon' blow",badass,INNER,SLANT,cmu,MED,Y
+JEEZU,38,Z told AD to keep me out of trouble,keep,39,"They believed me in me, they knew my lil' badass was gon' blow",believed,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,38,Z told AD to keep me out of trouble,told,39,"They believed me in me, they knew my lil' badass was gon' blow",blow,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,38,Z told AD to keep me out of trouble,Z,39,"They believed me in me, they knew my lil' badass was gon' blow",believed,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,38,Z told AD to keep me out of trouble,told,40,"I've been on this road thuggin', runnin' for a long time",road,INNER,SLANT,cmu,MED,Y
+JEEZU,38,Z told AD to keep me out of trouble,trouble,40,"I've been on this road thuggin', runnin' for a long time",runnin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,39,"They believed me in me, they knew my lil' badass was gon' blow",blow,40,"I've been on this road thuggin', runnin' for a long time",road,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,39,"They believed me in me, they knew my lil' badass was gon' blow",gon,40,"I've been on this road thuggin', runnin' for a long time",road,INNER,SLANT,spelling,LOW,Y
+JEEZU,39,"They believed me in me, they knew my lil' badass was gon' blow",blow,41,"I've been wantin' to cry, the Bible say it'll clean my soul",soul,END,ASSONANCE,vowel,MED,Y
+JEEZU,39,"They believed me in me, they knew my lil' badass was gon' blow",believed,41,"I've been wantin' to cry, the Bible say it'll clean my soul",clean,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,39,"They believed me in me, they knew my lil' badass was gon' blow",gon,41,"I've been wantin' to cry, the Bible say it'll clean my soul",soul,INNER,SLANT,spelling,LOW,Y
+JEEZU,39,"They believed me in me, they knew my lil' badass was gon' blow",lil,41,"I've been wantin' to cry, the Bible say it'll clean my soul",it'll,INNER,SLANT,cmu,MED,Y
+JEEZU,40,"I've been on this road thuggin', runnin' for a long time",thuggin,40,"I've been on this road thuggin', runnin' for a long time",runnin,INNER,ASSONANCE,vowel,LOW,N
+JEEZU,40,"I've been on this road thuggin', runnin' for a long time",road,41,"I've been wantin' to cry, the Bible say it'll clean my soul",soul,INNER,SLANT,cmu,MED,Y
+JEEZU,40,"I've been on this road thuggin', runnin' for a long time",time,41,"I've been wantin' to cry, the Bible say it'll clean my soul",Bible,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,40,"I've been on this road thuggin', runnin' for a long time",time,41,"I've been wantin' to cry, the Bible say it'll clean my soul",cry,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,40,"I've been on this road thuggin', runnin' for a long time",long,42,"Yup, y'all ain't know me back then",y'all,INNER,SLANT,cmu,MED,Y
+JEEZU,40,"I've been on this road thuggin', runnin' for a long time",road,42,"Yup, y'all ain't know me back then",know,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,40,"I've been on this road thuggin', runnin' for a long time",runnin,42,"Yup, y'all ain't know me back then",Yup,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,41,"I've been wantin' to cry, the Bible say it'll clean my soul",cry,41,"I've been wantin' to cry, the Bible say it'll clean my soul",Bible,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,41,"I've been wantin' to cry, the Bible say it'll clean my soul",say,42,"Yup, y'all ain't know me back then",ain't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,41,"I've been wantin' to cry, the Bible say it'll clean my soul",soul,42,"Yup, y'all ain't know me back then",know,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,42,"Yup, y'all ain't know me back then",back,43,"I was tapped in corners, I was backed in",backed,END,SLANT,cmu,MED,Y
+JEEZU,42,"Yup, y'all ain't know me back then",back,43,"I was tapped in corners, I was backed in",tapped,INNER,SLANT,cmu,MED,Y
+JEEZU,42,"Yup, y'all ain't know me back then",y'all,43,"I was tapped in corners, I was backed in",corners,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,42,"Yup, y'all ain't know me back then",back,44,They gon' judge me only based upon the fashion,fashion,END,ASSONANCE,vowel,MED,Y
+JEEZU,42,"Yup, y'all ain't know me back then",ain't,44,They gon' judge me only based upon the fashion,based,INNER,SLANT,cmu,MED,Y
+JEEZU,42,"Yup, y'all ain't know me back then",know,44,They gon' judge me only based upon the fashion,only,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,42,"Yup, y'all ain't know me back then",Yup,44,They gon' judge me only based upon the fashion,judge,INNER,SLANT,cmu,MED,Y
+JEEZU,42,"Yup, y'all ain't know me back then",back,45,Mama taught me only judge 'em from they actions,actions,END,ASSONANCE,vowel,MED,Y
+JEEZU,43,"I was tapped in corners, I was backed in",tapped,43,"I was tapped in corners, I was backed in",backed,INNER,SLANT,cmu,MED,Y
+JEEZU,43,"I was tapped in corners, I was backed in",backed,44,They gon' judge me only based upon the fashion,fashion,END,ASSONANCE,vowel,MED,Y
+JEEZU,43,"I was tapped in corners, I was backed in",tapped,44,They gon' judge me only based upon the fashion,fashion,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,43,"I was tapped in corners, I was backed in",backed,45,Mama taught me only judge 'em from they actions,actions,END,ASSONANCE,vowel,MED,Y
+JEEZU,43,"I was tapped in corners, I was backed in",corners,45,Mama taught me only judge 'em from they actions,taught,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,43,"I was tapped in corners, I was backed in",tapped,45,Mama taught me only judge 'em from they actions,actions,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,44,They gon' judge me only based upon the fashion,gon,44,They gon' judge me only based upon the fashion,only,INNER,SLANT,spelling,LOW,Y
+JEEZU,44,They gon' judge me only based upon the fashion,gon,44,They gon' judge me only based upon the fashion,upon,INNER,PERFECT,spelling,MED,Y
+JEEZU,44,They gon' judge me only based upon the fashion,fashion,45,Mama taught me only judge 'em from they actions,actions,END,ASSONANCE,vowel,MED,Y
+JEEZU,44,They gon' judge me only based upon the fashion,gon,45,Mama taught me only judge 'em from they actions,only,INNER,SLANT,spelling,LOW,Y
+JEEZU,44,They gon' judge me only based upon the fashion,judge,45,Mama taught me only judge 'em from they actions,judge,INNER,REPEAT,spelling,HIGH,N
+JEEZU,44,They gon' judge me only based upon the fashion,only,45,Mama taught me only judge 'em from they actions,only,INNER,REPEAT,spelling,HIGH,N
+JEEZU,44,They gon' judge me only based upon the fashion,upon,45,Mama taught me only judge 'em from they actions,Mama,INNER,SLANT,cmu,MED,Y
+JEEZU,44,They gon' judge me only based upon the fashion,fashion,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",lackin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,44,They gon' judge me only based upon the fashion,only,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",know,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,44,They gon' judge me only based upon the fashion,upon,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",caught,INNER,SLANT,cmu,MED,Y
+JEEZU,44,They gon' judge me only based upon the fashion,upon,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",watchin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,45,Mama taught me only judge 'em from they actions,actions,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",lackin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,45,Mama taught me only judge 'em from they actions,Mama,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",caught,INNER,SLANT,cmu,MED,Y
+JEEZU,45,Mama taught me only judge 'em from they actions,Mama,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",watchin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,45,Mama taught me only judge 'em from they actions,only,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",know,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,45,Mama taught me only judge 'em from they actions,taught,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",because,INNER,SLANT,cmu,MED,Y
+JEEZU,45,Mama taught me only judge 'em from they actions,taught,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",caught,INNER,SLANT,spelling,LOW,Y
+JEEZU,45,Mama taught me only judge 'em from they actions,Mama,47,"When you got integrity, there's no room for apologies",got,INNER,SLANT,cmu,MED,Y
+JEEZU,45,Mama taught me only judge 'em from they actions,only,47,"When you got integrity, there's no room for apologies",no,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",caught,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",watchin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",caught,47,"When you got integrity, there's no room for apologies",got,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",Free,47,"When you got integrity, there's no room for apologies",apologies,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",know,47,"When you got integrity, there's no room for apologies",no,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",never,47,"When you got integrity, there's no room for apologies",integrity,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",never,47,"When you got integrity, there's no room for apologies",there's,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",never,47,"When you got integrity, there's no room for apologies",When,INNER,SLANT,cmu,MED,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",watchin,47,"When you got integrity, there's no room for apologies",got,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",watchin,48,Now they actin' kind to me 'cause I ain't in economy,economy,END,ASSONANCE,vowel,MED,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",caught,48,Now they actin' kind to me 'cause I ain't in economy,economy,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,46,"Free of guilt, because you never caught me lackin', I know they watchin' me",lackin,48,Now they actin' kind to me 'cause I ain't in economy,actin,INNER,SLANT,cmu,MED,Y
+JEEZU,47,"When you got integrity, there's no room for apologies",integrity,47,"When you got integrity, there's no room for apologies",there's,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,47,"When you got integrity, there's no room for apologies",When,47,"When you got integrity, there's no room for apologies",integrity,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,47,"When you got integrity, there's no room for apologies",When,47,"When you got integrity, there's no room for apologies",there's,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,47,"When you got integrity, there's no room for apologies",got,48,Now they actin' kind to me 'cause I ain't in economy,economy,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,47,"When you got integrity, there's no room for apologies",apologies,49,Cats dogmatic 'til they see I got the dog in me,see,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,47,"When you got integrity, there's no room for apologies",got,49,Cats dogmatic 'til they see I got the dog in me,got,INNER,REPEAT,spelling,HIGH,N
+JEEZU,48,Now they actin' kind to me 'cause I ain't in economy,actin,49,Cats dogmatic 'til they see I got the dog in me,Cats,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,48,Now they actin' kind to me 'cause I ain't in economy,actin,49,Cats dogmatic 'til they see I got the dog in me,dogmatic,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,48,Now they actin' kind to me 'cause I ain't in economy,economy,49,Cats dogmatic 'til they see I got the dog in me,got,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,48,Now they actin' kind to me 'cause I ain't in economy,actin,50,"Oh, you mad now? Oh, you hurtin'?",mad,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,48,Now they actin' kind to me 'cause I ain't in economy,Now,50,"Oh, you mad now? Oh, you hurtin'?",now,INNER,REPEAT,spelling,HIGH,N
+JEEZU,49,Cats dogmatic 'til they see I got the dog in me,Cats,49,Cats dogmatic 'til they see I got the dog in me,dogmatic,INNER,SLANT,cmu,MED,Y
+JEEZU,49,Cats dogmatic 'til they see I got the dog in me,Cats,50,"Oh, you mad now? Oh, you hurtin'?",mad,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,49,Cats dogmatic 'til they see I got the dog in me,dogmatic,50,"Oh, you mad now? Oh, you hurtin'?",mad,INNER,SLANT,cmu,MED,Y
+JEEZU,49,Cats dogmatic 'til they see I got the dog in me,'til,51,"Shawty need a signature, pass the Kirkland",signature,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,49,Cats dogmatic 'til they see I got the dog in me,Cats,51,"Shawty need a signature, pass the Kirkland",pass,INNER,SLANT,cmu,MED,Y
+JEEZU,49,Cats dogmatic 'til they see I got the dog in me,dog,51,"Shawty need a signature, pass the Kirkland",Shawty,INNER,SLANT,spelling,LOW,Y
+JEEZU,49,Cats dogmatic 'til they see I got the dog in me,dogmatic,51,"Shawty need a signature, pass the Kirkland",pass,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,49,Cats dogmatic 'til they see I got the dog in me,see,51,"Shawty need a signature, pass the Kirkland",need,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,49,Cats dogmatic 'til they see I got the dog in me,see,51,"Shawty need a signature, pass the Kirkland",Shawty,INNER,ASSONANCE,vowel,LOW,N
+JEEZU,50,"Oh, you mad now? Oh, you hurtin'?",hurtin,51,"Shawty need a signature, pass the Kirkland",Kirkland,END,ASSONANCE,vowel,MED,Y
+JEEZU,50,"Oh, you mad now? Oh, you hurtin'?",mad,51,"Shawty need a signature, pass the Kirkland",pass,INNER,SLANT,cmu,MED,Y
+JEEZU,50,"Oh, you mad now? Oh, you hurtin'?",hurtin,52,"I see she thirstin', see me and they nerd out",nerd,END,ASSONANCE,vowel,MED,Y
+JEEZU,50,"Oh, you mad now? Oh, you hurtin'?",hurtin,52,"I see she thirstin', see me and they nerd out",thirstin,INNER,SLANT,cmu,MED,Y
+JEEZU,50,"Oh, you mad now? Oh, you hurtin'?",hurtin,53,"I been doin God's work, haters got the word out",word,END,ASSONANCE,vowel,MED,Y
+JEEZU,50,"Oh, you mad now? Oh, you hurtin'?",hurtin,54,"Y'all got an agenda, but we'll see how that gon' turn out",turn,END,ASSONANCE,vowel,MED,Y
+JEEZU,51,"Shawty need a signature, pass the Kirkland",Kirkland,52,"I see she thirstin', see me and they nerd out",nerd,END,ASSONANCE,vowel,MED,Y
+JEEZU,51,"Shawty need a signature, pass the Kirkland",Kirkland,52,"I see she thirstin', see me and they nerd out",thirstin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,51,"Shawty need a signature, pass the Kirkland",need,52,"I see she thirstin', see me and they nerd out",see,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,51,"Shawty need a signature, pass the Kirkland",Shawty,52,"I see she thirstin', see me and they nerd out",see,INNER,ASSONANCE,vowel,LOW,N
+JEEZU,51,"Shawty need a signature, pass the Kirkland",Kirkland,53,"I been doin God's work, haters got the word out",word,END,ASSONANCE,vowel,MED,Y
+JEEZU,51,"Shawty need a signature, pass the Kirkland",Kirkland,53,"I been doin God's work, haters got the word out",work,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,51,"Shawty need a signature, pass the Kirkland",Kirkland,54,"Y'all got an agenda, but we'll see how that gon' turn out",turn,END,ASSONANCE,vowel,MED,Y
+JEEZU,52,"I see she thirstin', see me and they nerd out",see,52,"I see she thirstin', see me and they nerd out",see,INNER,REPEAT,spelling,HIGH,N
+JEEZU,52,"I see she thirstin', see me and they nerd out",thirstin,52,"I see she thirstin', see me and they nerd out",nerd,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,52,"I see she thirstin', see me and they nerd out",nerd,53,"I been doin God's work, haters got the word out",word,END,PERFECT,cmu,HIGH,Y
+JEEZU,52,"I see she thirstin', see me and they nerd out",nerd,53,"I been doin God's work, haters got the word out",work,INNER,SLANT,cmu,MED,Y
+JEEZU,52,"I see she thirstin', see me and they nerd out",thirstin,53,"I been doin God's work, haters got the word out",word,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,52,"I see she thirstin', see me and they nerd out",thirstin,53,"I been doin God's work, haters got the word out",work,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,52,"I see she thirstin', see me and they nerd out",nerd,54,"Y'all got an agenda, but we'll see how that gon' turn out",turn,END,SLANT,cmu,MED,Y
+JEEZU,52,"I see she thirstin', see me and they nerd out",see,54,"Y'all got an agenda, but we'll see how that gon' turn out",see,INNER,REPEAT,spelling,HIGH,N
+JEEZU,52,"I see she thirstin', see me and they nerd out",see,54,"Y'all got an agenda, but we'll see how that gon' turn out",we'll,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,52,"I see she thirstin', see me and they nerd out",thirstin,54,"Y'all got an agenda, but we'll see how that gon' turn out",turn,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,53,"I been doin God's work, haters got the word out",God's,53,"I been doin God's work, haters got the word out",got,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,53,"I been doin God's work, haters got the word out",work,53,"I been doin God's work, haters got the word out",word,INNER,SLANT,cmu,MED,Y
+JEEZU,53,"I been doin God's work, haters got the word out",word,54,"Y'all got an agenda, but we'll see how that gon' turn out",turn,END,SLANT,cmu,MED,Y
+JEEZU,53,"I been doin God's work, haters got the word out",God's,54,"Y'all got an agenda, but we'll see how that gon' turn out",got,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,53,"I been doin God's work, haters got the word out",got,54,"Y'all got an agenda, but we'll see how that gon' turn out",got,INNER,REPEAT,spelling,HIGH,N
+JEEZU,53,"I been doin God's work, haters got the word out",work,54,"Y'all got an agenda, but we'll see how that gon' turn out",turn,INNER,SLANT,cmu,MED,Y
+JEEZU,53,"I been doin God's work, haters got the word out",God's,55,Many false prophets leavin' brothers with a firm doubt,prophets,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,53,"I been doin God's work, haters got the word out",got,55,Many false prophets leavin' brothers with a firm doubt,prophets,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,53,"I been doin God's work, haters got the word out",word,55,Many false prophets leavin' brothers with a firm doubt,firm,INNER,SLANT,cmu,MED,Y
+JEEZU,53,"I been doin God's work, haters got the word out",work,55,Many false prophets leavin' brothers with a firm doubt,firm,INNER,SLANT,cmu,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",we'll,54,"Y'all got an agenda, but we'll see how that gon' turn out",see,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",agenda,55,Many false prophets leavin' brothers with a firm doubt,Many,INNER,SLANT,cmu,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",got,55,Many false prophets leavin' brothers with a firm doubt,prophets,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",how,55,Many false prophets leavin' brothers with a firm doubt,doubt,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",see,55,Many false prophets leavin' brothers with a firm doubt,leavin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",turn,55,Many false prophets leavin' brothers with a firm doubt,firm,INNER,SLANT,cmu,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",we'll,55,Many false prophets leavin' brothers with a firm doubt,leavin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",Y'all,55,Many false prophets leavin' brothers with a firm doubt,false,INNER,SLANT,cmu,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",got,56,"Father, please forgive me, for today, they finna learn now",Father,INNER,SLANT,cmu,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",how,56,"Father, please forgive me, for today, they finna learn now",now,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",see,56,"Father, please forgive me, for today, they finna learn now",please,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",turn,56,"Father, please forgive me, for today, they finna learn now",learn,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,54,"Y'all got an agenda, but we'll see how that gon' turn out",we'll,56,"Father, please forgive me, for today, they finna learn now",please,INNER,SLANT,cmu,MED,Y
+JEEZU,55,Many false prophets leavin' brothers with a firm doubt,doubt,56,"Father, please forgive me, for today, they finna learn now",now,END,ASSONANCE,vowel,MED,Y
+JEEZU,55,Many false prophets leavin' brothers with a firm doubt,firm,56,"Father, please forgive me, for today, they finna learn now",learn,INNER,SLANT,cmu,MED,Y
+JEEZU,55,Many false prophets leavin' brothers with a firm doubt,leavin,56,"Father, please forgive me, for today, they finna learn now",please,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,55,Many false prophets leavin' brothers with a firm doubt,prophets,56,"Father, please forgive me, for today, they finna learn now",Father,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,55,Many false prophets leavin' brothers with a firm doubt,firm,57,"Put me in the dirt, and you gon' see, I make it worthwhile",dirt,INNER,SLANT,cmu,MED,Y
+JEEZU,55,Many false prophets leavin' brothers with a firm doubt,leavin,57,"Put me in the dirt, and you gon' see, I make it worthwhile",see,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,56,"Father, please forgive me, for today, they finna learn now",learn,57,"Put me in the dirt, and you gon' see, I make it worthwhile",dirt,INNER,SLANT,cmu,MED,Y
+JEEZU,56,"Father, please forgive me, for today, they finna learn now",please,57,"Put me in the dirt, and you gon' see, I make it worthwhile",see,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,56,"Father, please forgive me, for today, they finna learn now",today,57,"Put me in the dirt, and you gon' see, I make it worthwhile",make,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,56,"Father, please forgive me, for today, they finna learn now",now,58,"Mandela Effect 'em now, they'll remember",now,INNER,REPEAT,spelling,HIGH,N
+JEEZU,56,"Father, please forgive me, for today, they finna learn now",today,58,"Mandela Effect 'em now, they'll remember",they'll,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,57,"Put me in the dirt, and you gon' see, I make it worthwhile",make,58,"Mandela Effect 'em now, they'll remember",they'll,INNER,SLANT,cmu,MED,Y
+JEEZU,57,"Put me in the dirt, and you gon' see, I make it worthwhile",make,59,"Back strokin' through my fan letters, I made the web fed up",made,INNER,SLANT,cmu,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",Effect,58,"Mandela Effect 'em now, they'll remember",remember,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",Mandela,58,"Mandela Effect 'em now, they'll remember",Effect,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",Mandela,58,"Mandela Effect 'em now, they'll remember",remember,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",remember,59,"Back strokin' through my fan letters, I made the web fed up",fed,END,ASSONANCE,vowel,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",Effect,59,"Back strokin' through my fan letters, I made the web fed up",fed,INNER,SLANT,cmu,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",Effect,59,"Back strokin' through my fan letters, I made the web fed up",letters,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",Effect,59,"Back strokin' through my fan letters, I made the web fed up",web,INNER,SLANT,cmu,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",Mandela,59,"Back strokin' through my fan letters, I made the web fed up",fed,INNER,SLANT,cmu,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",Mandela,59,"Back strokin' through my fan letters, I made the web fed up",letters,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",Mandela,59,"Back strokin' through my fan letters, I made the web fed up",web,INNER,SLANT,cmu,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",remember,59,"Back strokin' through my fan letters, I made the web fed up",letters,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",remember,59,"Back strokin' through my fan letters, I made the web fed up",web,INNER,SLANT,cmu,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",they'll,59,"Back strokin' through my fan letters, I made the web fed up",made,INNER,SLANT,cmu,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",'em,60,Turned a Charlotte to some pancetta,some,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",remember,61,"You up in arms 'cause I eat better, now be jealous",jealous,END,ASSONANCE,vowel,MED,Y
+JEEZU,58,"Mandela Effect 'em now, they'll remember",remember,62,I'll bring ya true colors front and center,center,END,SLANT,cmu,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",Back,59,"Back strokin' through my fan letters, I made the web fed up",fan,INNER,SLANT,cmu,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",letters,59,"Back strokin' through my fan letters, I made the web fed up",fed,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",letters,59,"Back strokin' through my fan letters, I made the web fed up",web,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",web,59,"Back strokin' through my fan letters, I made the web fed up",fed,INNER,SLANT,cmu,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",Back,60,Turned a Charlotte to some pancetta,pancetta,INNER,ASSONANCE,vowel,LOW,N
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",fed,61,"You up in arms 'cause I eat better, now be jealous",jealous,END,ASSONANCE,vowel,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",fed,61,"You up in arms 'cause I eat better, now be jealous",better,INNER,SLANT,cmu,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",letters,61,"You up in arms 'cause I eat better, now be jealous",better,INNER,SLANT,cmu,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",letters,61,"You up in arms 'cause I eat better, now be jealous",jealous,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",web,61,"You up in arms 'cause I eat better, now be jealous",better,INNER,SLANT,cmu,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",web,61,"You up in arms 'cause I eat better, now be jealous",jealous,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",fed,62,I'll bring ya true colors front and center,center,END,ASSONANCE,vowel,MED,Y
+JEEZU,59,"Back strokin' through my fan letters, I made the web fed up",fed,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,END,ASSONANCE,vowel,MED,Y
+JEEZU,60,Turned a Charlotte to some pancetta,Charlotte,61,"You up in arms 'cause I eat better, now be jealous",arms,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,60,Turned a Charlotte to some pancetta,some,62,I'll bring ya true colors front and center,colors,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,60,Turned a Charlotte to some pancetta,some,62,I'll bring ya true colors front and center,front,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",better,61,"You up in arms 'cause I eat better, now be jealous",jealous,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",jealous,62,I'll bring ya true colors front and center,center,END,ASSONANCE,vowel,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",better,62,I'll bring ya true colors front and center,center,INNER,SLANT,cmu,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",jealous,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,END,ASSONANCE,vowel,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",better,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",better,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",Get,INNER,SLANT,cmu,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",eat,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feelin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",eat,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",need,INNER,SLANT,cmu,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",jealous,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",Get,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",jealous,64,"I'm a legend, trust the process, you won't regret it",regret,END,ASSONANCE,vowel,MED,Y
+JEEZU,61,"You up in arms 'cause I eat better, now be jealous",jealous,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,END,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,colors,62,I'll bring ya true colors front and center,front,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,center,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,END,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,center,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",Get,INNER,SLANT,cmu,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,colors,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",wonderin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,front,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",don't,INNER,SLANT,spelling,LOW,Y
+JEEZU,62,I'll bring ya true colors front and center,front,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",wonderin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,I'll,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",fight,INNER,SLANT,cmu,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,I'll,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",flight,INNER,SLANT,cmu,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,I'll,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",why,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,center,64,"I'm a legend, trust the process, you won't regret it",regret,END,SLANT,cmu,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,center,64,"I'm a legend, trust the process, you won't regret it",legend,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,center,64,"I'm a legend, trust the process, you won't regret it",process,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,colors,64,"I'm a legend, trust the process, you won't regret it",trust,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,front,64,"I'm a legend, trust the process, you won't regret it",trust,INNER,SLANT,cmu,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,front,64,"I'm a legend, trust the process, you won't regret it",won't,INNER,SLANT,spelling,LOW,Y
+JEEZU,62,I'll bring ya true colors front and center,center,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,END,ASSONANCE,vowel,MED,Y
+JEEZU,62,I'll bring ya true colors front and center,center,66,"Ain't got no Fendi, so you offended",offended,END,SLANT,cmu,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feelin,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",need,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",fight,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",flight,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",fight,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",why,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",flight,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",why,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",Get,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,64,"I'm a legend, trust the process, you won't regret it",regret,END,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",don't,64,"I'm a legend, trust the process, you won't regret it",won't,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,64,"I'm a legend, trust the process, you won't regret it",legend,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,64,"I'm a legend, trust the process, you won't regret it",process,INNER,SLANT,cmu,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",Get,64,"I'm a legend, trust the process, you won't regret it",legend,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",Get,64,"I'm a legend, trust the process, you won't regret it",process,INNER,SLANT,cmu,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",Get,64,"I'm a legend, trust the process, you won't regret it",regret,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",wonderin,64,"I'm a legend, trust the process, you won't regret it",trust,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,END,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",don't,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",no,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",fight,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",like,INNER,SLANT,cmu,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",flight,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",like,INNER,SLANT,cmu,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",Get,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",why,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",like,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,66,"Ain't got no Fendi, so you offended",offended,END,ASSONANCE,vowel,MED,Y
+JEEZU,63,"Get you feelin' fight or flight, and wonderin' why you don't need feathers",feathers,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,END,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",legend,64,"I'm a legend, trust the process, you won't regret it",process,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",legend,64,"I'm a legend, trust the process, you won't regret it",regret,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",process,64,"I'm a legend, trust the process, you won't regret it",regret,INNER,SLANT,cmu,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",regret,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,END,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",legend,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",process,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",won't,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",no,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",regret,66,"Ain't got no Fendi, so you offended",offended,END,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",legend,66,"Ain't got no Fendi, so you offended",Fendi,INNER,SLANT,cmu,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",legend,66,"Ain't got no Fendi, so you offended",offended,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",process,66,"Ain't got no Fendi, so you offended",Fendi,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",process,66,"Ain't got no Fendi, so you offended",offended,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",regret,66,"Ain't got no Fendi, so you offended",Fendi,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",won't,66,"Ain't got no Fendi, so you offended",no,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",regret,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,END,ASSONANCE,vowel,MED,Y
+JEEZU,64,"I'm a legend, trust the process, you won't regret it",regret,68,"More aggression, so unaffected, you need affection",affection,END,ASSONANCE,vowel,MED,Y
+JEEZU,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",crack,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",hammer,INNER,SLANT,cmu,MED,Y
+JEEZU,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,66,"Ain't got no Fendi, so you offended",offended,END,ASSONANCE,vowel,MED,Y
+JEEZU,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",arm,66,"Ain't got no Fendi, so you offended",got,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,66,"Ain't got no Fendi, so you offended",Fendi,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",Make,66,"Ain't got no Fendi, so you offended",Ain't,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",no,66,"Ain't got no Fendi, so you offended",no,INNER,REPEAT,spelling,HIGH,N
+JEEZU,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,END,ASSONANCE,vowel,MED,Y
+JEEZU,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,68,"More aggression, so unaffected, you need affection",affection,END,SLANT,cmu,MED,Y
+JEEZU,65,"Make 'em crack, no arm and hammer, it's sorta like armageddon",armageddon,69,I'ma show you all the truth 'cause you gettin' too used to bendin',bendin,END,ASSONANCE,vowel,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",Fendi,66,"Ain't got no Fendi, so you offended",offended,INNER,SLANT,cmu,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",offended,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,END,ASSONANCE,vowel,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",Fendi,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",offended,68,"More aggression, so unaffected, you need affection",affection,END,ASSONANCE,vowel,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",Fendi,68,"More aggression, so unaffected, you need affection",affection,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",Fendi,68,"More aggression, so unaffected, you need affection",aggression,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",Fendi,68,"More aggression, so unaffected, you need affection",unaffected,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",offended,68,"More aggression, so unaffected, you need affection",aggression,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",offended,68,"More aggression, so unaffected, you need affection",unaffected,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,66,"Ain't got no Fendi, so you offended",offended,69,I'ma show you all the truth 'cause you gettin' too used to bendin',bendin,END,SLANT,cmu,MED,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",Baba,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",one,INNER,SLANT,cmu,MED,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",I'ma,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",kill,INNER,SLANT,spelling,LOW,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",kill,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",bitches,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",Yaga,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",these,INNER,SLANT,spelling,LOW,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,68,"More aggression, so unaffected, you need affection",affection,END,ASSONANCE,vowel,MED,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",all,68,"More aggression, so unaffected, you need affection",More,INNER,SLANT,cmu,MED,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,68,"More aggression, so unaffected, you need affection",aggression,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,68,"More aggression, so unaffected, you need affection",unaffected,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",these,68,"More aggression, so unaffected, you need affection",need,INNER,SLANT,cmu,MED,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",Yaga,68,"More aggression, so unaffected, you need affection",need,INNER,SLANT,spelling,LOW,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,69,I'ma show you all the truth 'cause you gettin' too used to bendin',bendin,END,ASSONANCE,vowel,MED,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",all,69,I'ma show you all the truth 'cause you gettin' too used to bendin',all,INNER,REPEAT,spelling,HIGH,N
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",I'ma,69,I'ma show you all the truth 'cause you gettin' too used to bendin',I'ma,INNER,REPEAT,spelling,HIGH,N
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",kill,69,I'ma show you all the truth 'cause you gettin' too used to bendin',I'ma,INNER,SLANT,spelling,LOW,Y
+JEEZU,67,"Baba Yaga, I'ma kill all you bitches with one these pencils",pencils,69,I'ma show you all the truth 'cause you gettin' too used to bendin',gettin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",aggression,68,"More aggression, so unaffected, you need affection",affection,INNER,PERFECT,spelling,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",aggression,68,"More aggression, so unaffected, you need affection",unaffected,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",unaffected,68,"More aggression, so unaffected, you need affection",affection,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",affection,69,I'ma show you all the truth 'cause you gettin' too used to bendin',bendin,END,ASSONANCE,vowel,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",affection,69,I'ma show you all the truth 'cause you gettin' too used to bendin',gettin,INNER,SLANT,cmu,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",aggression,69,I'ma show you all the truth 'cause you gettin' too used to bendin',bendin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",aggression,69,I'ma show you all the truth 'cause you gettin' too used to bendin',gettin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",More,69,I'ma show you all the truth 'cause you gettin' too used to bendin',all,INNER,SLANT,cmu,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",unaffected,69,I'ma show you all the truth 'cause you gettin' too used to bendin',bendin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,68,"More aggression, so unaffected, you need affection",unaffected,69,I'ma show you all the truth 'cause you gettin' too used to bendin',gettin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,69,I'ma show you all the truth 'cause you gettin' too used to bendin',gettin,69,I'ma show you all the truth 'cause you gettin' too used to bendin',bendin,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,69,I'ma show you all the truth 'cause you gettin' too used to bendin',truth,69,I'ma show you all the truth 'cause you gettin' too used to bendin',used,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,69,I'ma show you all the truth 'cause you gettin' too used to bendin','cause,70,"Over, Roger that 'cause I'm a soldier",'cause,INNER,REPEAT,spelling,HIGH,N
+JEEZU,69,I'ma show you all the truth 'cause you gettin' too used to bendin',show,70,"Over, Roger that 'cause I'm a soldier",Over,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,69,I'ma show you all the truth 'cause you gettin' too used to bendin',show,70,"Over, Roger that 'cause I'm a soldier",soldier,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,69,I'ma show you all the truth 'cause you gettin' too used to bendin',all,71,"Doja, all them cats, I'm your owner",all,INNER,REPEAT,spelling,HIGH,N
+JEEZU,69,I'ma show you all the truth 'cause you gettin' too used to bendin',show,71,"Doja, all them cats, I'm your owner",owner,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,70,"Over, Roger that 'cause I'm a soldier",Over,70,"Over, Roger that 'cause I'm a soldier",soldier,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,70,"Over, Roger that 'cause I'm a soldier",soldier,71,"Doja, all them cats, I'm your owner",owner,END,ASSONANCE,vowel,MED,Y
+JEEZU,70,"Over, Roger that 'cause I'm a soldier",Over,71,"Doja, all them cats, I'm your owner",Doja,INNER,SLANT,spelling,LOW,Y
+JEEZU,70,"Over, Roger that 'cause I'm a soldier",Over,71,"Doja, all them cats, I'm your owner",owner,INNER,SLANT,cmu,MED,Y
+JEEZU,70,"Over, Roger that 'cause I'm a soldier",soldier,71,"Doja, all them cats, I'm your owner",Doja,INNER,SLANT,spelling,LOW,Y
+JEEZU,70,"Over, Roger that 'cause I'm a soldier",Over,72,"Own 'em, all them bags, already stole 'em",Own,INNER,SLANT,cmu,MED,Y
+JEEZU,70,"Over, Roger that 'cause I'm a soldier",Over,72,"Own 'em, all them bags, already stole 'em",stole,INNER,SLANT,cmu,MED,Y
+JEEZU,70,"Over, Roger that 'cause I'm a soldier",soldier,72,"Own 'em, all them bags, already stole 'em",Own,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,70,"Over, Roger that 'cause I'm a soldier",soldier,72,"Own 'em, all them bags, already stole 'em",stole,INNER,SLANT,cmu,MED,Y
+JEEZU,71,"Doja, all them cats, I'm your owner",Doja,71,"Doja, all them cats, I'm your owner",owner,INNER,SLANT,spelling,LOW,Y
+JEEZU,71,"Doja, all them cats, I'm your owner",all,72,"Own 'em, all them bags, already stole 'em",all,INNER,REPEAT,spelling,HIGH,N
+JEEZU,71,"Doja, all them cats, I'm your owner",cats,72,"Own 'em, all them bags, already stole 'em",bags,INNER,SLANT,cmu,MED,Y
+JEEZU,71,"Doja, all them cats, I'm your owner",Doja,72,"Own 'em, all them bags, already stole 'em",Own,INNER,SLANT,spelling,LOW,Y
+JEEZU,71,"Doja, all them cats, I'm your owner",Doja,72,"Own 'em, all them bags, already stole 'em",stole,INNER,SLANT,spelling,LOW,Y
+JEEZU,71,"Doja, all them cats, I'm your owner",owner,72,"Own 'em, all them bags, already stole 'em",Own,INNER,SLANT,cmu,MED,Y
+JEEZU,71,"Doja, all them cats, I'm your owner",owner,72,"Own 'em, all them bags, already stole 'em",stole,INNER,SLANT,cmu,MED,Y
+JEEZU,71,"Doja, all them cats, I'm your owner",all,73,"Call Winona, if you talk to me nice, I might let you hold 'em",Call,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,71,"Doja, all them cats, I'm your owner",all,73,"Call Winona, if you talk to me nice, I might let you hold 'em",talk,INNER,SLANT,cmu,MED,Y
+JEEZU,71,"Doja, all them cats, I'm your owner",owner,73,"Call Winona, if you talk to me nice, I might let you hold 'em",hold,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,72,"Own 'em, all them bags, already stole 'em",'em,72,"Own 'em, all them bags, already stole 'em",'em,INNER,REPEAT,spelling,HIGH,N
+JEEZU,72,"Own 'em, all them bags, already stole 'em",Own,72,"Own 'em, all them bags, already stole 'em",stole,INNER,SLANT,cmu,MED,Y
+JEEZU,72,"Own 'em, all them bags, already stole 'em",'em,73,"Call Winona, if you talk to me nice, I might let you hold 'em",'em,END,REPEAT,spelling,HIGH,N
+JEEZU,72,"Own 'em, all them bags, already stole 'em",'em,73,"Call Winona, if you talk to me nice, I might let you hold 'em",'em,INNER,REPEAT,spelling,HIGH,N
+JEEZU,72,"Own 'em, all them bags, already stole 'em",all,73,"Call Winona, if you talk to me nice, I might let you hold 'em",Call,INNER,PERFECT,cmu,HIGH,Y
+JEEZU,72,"Own 'em, all them bags, already stole 'em",all,73,"Call Winona, if you talk to me nice, I might let you hold 'em",talk,INNER,SLANT,cmu,MED,Y
+JEEZU,72,"Own 'em, all them bags, already stole 'em",already,73,"Call Winona, if you talk to me nice, I might let you hold 'em",let,INNER,SLANT,cmu,MED,Y
+JEEZU,72,"Own 'em, all them bags, already stole 'em",Own,73,"Call Winona, if you talk to me nice, I might let you hold 'em",hold,INNER,ASSONANCE,vowel,MED,Y
+JEEZU,72,"Own 'em, all them bags, already stole 'em",stole,73,"Call Winona, if you talk to me nice, I might let you hold 'em",hold,INNER,SLANT,cmu,MED,Y
+JEEZU,73,"Call Winona, if you talk to me nice, I might let you hold 'em",Call,73,"Call Winona, if you talk to me nice, I might let you hold 'em",talk,INNER,SLANT,cmu,MED,Y
+JEEZU,73,"Call Winona, if you talk to me nice, I might let you hold 'em",nice,73,"Call Winona, if you talk to me nice, I might let you hold 'em",might,INNER,SLANT,cmu,MED,Y

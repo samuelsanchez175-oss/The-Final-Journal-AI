@@ -146,6 +146,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 134 | jnr-choi | JNR CHOI | 1 | 77 | 326 | 50 | 276 | 322 | 2026-11-10 13:20 ET |
 | 135 | dcg-brothers | DCG BROTHERS | 1 | 76 | 514 | 128 | 386 | 493 | 2026-11-10 13:20 ET |
 | 136 | paxquiao | Paxquiao | 2 | 76 | 405 | 71 | 334 | 397 | 2026-11-10 13:20 ET |
+| 137 | tec | TEC | 2 | 76 | 733 | 137 | 596 | 729 | 2026-11-10 13:20 ET |
+| 138 | babyface-ray | Babyface Ray | 2 | 75 | 699 | 116 | 583 | 690 | 2026-11-10 13:20 ET |
+| 139 | genius-t-rk-e-eviriler | Genius Türkçe Çeviriler | 2 | 75 | 510 | 23 | 487 | 420 | 2026-11-10 13:20 ET |
+| 140 | bloodhound-lil-jeff | Bloodhound Lil Jeff | 1 | 74 | 640 | 153 | 487 | 626 | 2026-11-10 13:20 ET |
+| 141 | saba | Saba | 1 | 74 | 483 | 66 | 417 | 481 | 2026-11-10 13:20 ET |
+| 142 | chuckyy | Chuckyy | 1 | 73 | 443 | 84 | 359 | 439 | 2026-11-10 13:20 ET |
+| 143 | jeymes-samuel | Jeymes Samuel | 1 | 73 | 599 | 77 | 522 | 595 | 2026-11-10 13:20 ET |
+| 144 | tsunami-j | Tsunami J | 1 | 73 | 425 | 62 | 363 | 417 | 2026-11-10 13:20 ET |
+| 145 | mudbaby-ru | Mudbaby Ru | 1 | 72 | 745 | 102 | 643 | 739 | 2026-11-10 13:20 ET |
+| 146 | yung-gravy | Yung Gravy | 2 | 72 | 343 | 70 | 273 | 328 | 2026-11-10 13:20 ET |
 
 ## Failures
 
@@ -153,7 +163,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 136/386: Paxquiao.
+Finished 146/386: Yung Gravy.
 
 ## Final
 

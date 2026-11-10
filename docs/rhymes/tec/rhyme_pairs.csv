@@ -1,0 +1,791 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Bad Guy,1,"Ayy, say ""Hello"" to the bad guy",guy,2,"Man, I ain't been the same since my man died, yeah",died,END,ASSONANCE,vowel,MED,Y
+Bad Guy,1,"Ayy, say ""Hello"" to the bad guy",bad,2,"Man, I ain't been the same since my man died, yeah",Man,INNER,SLANT,cmu,MED,Y
+Bad Guy,1,"Ayy, say ""Hello"" to the bad guy",say,2,"Man, I ain't been the same since my man died, yeah",ain't,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,1,"Ayy, say ""Hello"" to the bad guy",say,2,"Man, I ain't been the same since my man died, yeah",same,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,1,"Ayy, say ""Hello"" to the bad guy",guy,3,"Ayy, fuck the pain, I get mad high, mad high",high,END,PERFECT,cmu,HIGH,Y
+Bad Guy,1,"Ayy, say ""Hello"" to the bad guy",bad,3,"Ayy, fuck the pain, I get mad high, mad high",mad,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,1,"Ayy, say ""Hello"" to the bad guy",guy,3,"Ayy, fuck the pain, I get mad high, mad high",high,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,1,"Ayy, say ""Hello"" to the bad guy",say,3,"Ayy, fuck the pain, I get mad high, mad high",pain,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,1,"Ayy, say ""Hello"" to the bad guy",guy,4,"Ayy, how you fuck 'round with your man and you go and hide",hide,END,ASSONANCE,vowel,MED,Y
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",ain't,2,"Man, I ain't been the same since my man died, yeah",same,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",Man,2,"Man, I ain't been the same since my man died, yeah",man,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",died,3,"Ayy, fuck the pain, I get mad high, mad high",high,END,ASSONANCE,vowel,MED,Y
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",ain't,3,"Ayy, fuck the pain, I get mad high, mad high",pain,INNER,SLANT,cmu,MED,Y
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",died,3,"Ayy, fuck the pain, I get mad high, mad high",high,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",Man,3,"Ayy, fuck the pain, I get mad high, mad high",mad,INNER,SLANT,cmu,MED,Y
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",same,3,"Ayy, fuck the pain, I get mad high, mad high",pain,INNER,SLANT,cmu,MED,Y
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",died,4,"Ayy, how you fuck 'round with your man and you go and hide",hide,END,PERFECT,cmu,HIGH,Y
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",Man,4,"Ayy, how you fuck 'round with your man and you go and hide",man,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,2,"Man, I ain't been the same since my man died, yeah",died,6,"Ayy, when you cross up one of your mans then you 'posed to die",die,END,ASSONANCE,vowel,MED,Y
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",high,3,"Ayy, fuck the pain, I get mad high, mad high",high,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",mad,3,"Ayy, fuck the pain, I get mad high, mad high",mad,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",high,4,"Ayy, how you fuck 'round with your man and you go and hide",hide,END,ASSONANCE,vowel,MED,Y
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",fuck,4,"Ayy, how you fuck 'round with your man and you go and hide",fuck,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",high,4,"Ayy, how you fuck 'round with your man and you go and hide",hide,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",mad,4,"Ayy, how you fuck 'round with your man and you go and hide",man,INNER,SLANT,cmu,MED,Y
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",pain,5,Ain't the same way that I came in and how I'm goin' out,Ain't,INNER,SLANT,cmu,MED,Y
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",pain,5,Ain't the same way that I came in and how I'm goin' out,came,INNER,SLANT,cmu,MED,Y
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",pain,5,Ain't the same way that I came in and how I'm goin' out,same,INNER,SLANT,cmu,MED,Y
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",pain,5,Ain't the same way that I came in and how I'm goin' out,way,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,3,"Ayy, fuck the pain, I get mad high, mad high",high,6,"Ayy, when you cross up one of your mans then you 'posed to die",die,END,PERFECT,cmu,HIGH,Y
+Bad Guy,4,"Ayy, how you fuck 'round with your man and you go and hide",how,4,"Ayy, how you fuck 'round with your man and you go and hide",'round,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,4,"Ayy, how you fuck 'round with your man and you go and hide",'round,5,Ain't the same way that I came in and how I'm goin' out,how,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,4,"Ayy, how you fuck 'round with your man and you go and hide",how,5,Ain't the same way that I came in and how I'm goin' out,how,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,4,"Ayy, how you fuck 'round with your man and you go and hide",hide,6,"Ayy, when you cross up one of your mans then you 'posed to die",die,END,ASSONANCE,vowel,MED,Y
+Bad Guy,4,"Ayy, how you fuck 'round with your man and you go and hide",fuck,6,"Ayy, when you cross up one of your mans then you 'posed to die",one,INNER,SLANT,cmu,MED,Y
+Bad Guy,4,"Ayy, how you fuck 'round with your man and you go and hide",go,6,"Ayy, when you cross up one of your mans then you 'posed to die",'posed,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,4,"Ayy, how you fuck 'round with your man and you go and hide",man,6,"Ayy, when you cross up one of your mans then you 'posed to die",mans,INNER,SLANT,cmu,MED,Y
+Bad Guy,4,"Ayy, how you fuck 'round with your man and you go and hide",hide,8,"The bad guy, I'ma come lookin' for you every time",time,END,SLANT,cmu,MED,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,Ain't,5,Ain't the same way that I came in and how I'm goin' out,came,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,Ain't,5,Ain't the same way that I came in and how I'm goin' out,same,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,Ain't,5,Ain't the same way that I came in and how I'm goin' out,way,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,same,5,Ain't the same way that I came in and how I'm goin' out,came,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,same,5,Ain't the same way that I came in and how I'm goin' out,way,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,way,5,Ain't the same way that I came in and how I'm goin' out,came,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,Ain't,7,"Ayy, when you play with one of my mans just know I'm showin' out",play,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,came,7,"Ayy, when you play with one of my mans just know I'm showin' out",play,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,same,7,"Ayy, when you play with one of my mans just know I'm showin' out",play,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,5,Ain't the same way that I came in and how I'm goin' out,way,7,"Ayy, when you play with one of my mans just know I'm showin' out",play,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",'posed,7,"Ayy, when you play with one of my mans just know I'm showin' out",know,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",'posed,7,"Ayy, when you play with one of my mans just know I'm showin' out",showin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",mans,7,"Ayy, when you play with one of my mans just know I'm showin' out",mans,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",one,7,"Ayy, when you play with one of my mans just know I'm showin' out",one,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",when,7,"Ayy, when you play with one of my mans just know I'm showin' out",when,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",die,8,"The bad guy, I'ma come lookin' for you every time",time,END,ASSONANCE,vowel,MED,Y
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",die,8,"The bad guy, I'ma come lookin' for you every time",guy,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",mans,8,"The bad guy, I'ma come lookin' for you every time",bad,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",one,8,"The bad guy, I'ma come lookin' for you every time",come,INNER,SLANT,cmu,MED,Y
+Bad Guy,6,"Ayy, when you cross up one of your mans then you 'posed to die",when,8,"The bad guy, I'ma come lookin' for you every time",every,INNER,SLANT,cmu,MED,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",know,7,"Ayy, when you play with one of my mans just know I'm showin' out",showin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",mans,8,"The bad guy, I'ma come lookin' for you every time",bad,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",one,8,"The bad guy, I'ma come lookin' for you every time",come,INNER,SLANT,cmu,MED,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",when,8,"The bad guy, I'ma come lookin' for you every time",every,INNER,SLANT,cmu,MED,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",know,9,"Say ""Hello"" to the four five coke, two gone, I got five more",coke,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",know,9,"Say ""Hello"" to the four five coke, two gone, I got five more",Hello,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",play,9,"Say ""Hello"" to the four five coke, two gone, I got five more",Say,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",showin,9,"Say ""Hello"" to the four five coke, two gone, I got five more",coke,INNER,SLANT,cmu,MED,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",showin,9,"Say ""Hello"" to the four five coke, two gone, I got five more",Hello,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,7,"Ayy, when you play with one of my mans just know I'm showin' out",showin,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",slow,END,ASSONANCE,vowel,MED,Y
+Bad Guy,8,"The bad guy, I'ma come lookin' for you every time",guy,8,"The bad guy, I'ma come lookin' for you every time",time,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,8,"The bad guy, I'ma come lookin' for you every time",guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",five,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,8,"The bad guy, I'ma come lookin' for you every time",time,9,"Say ""Hello"" to the four five coke, two gone, I got five more",five,INNER,SLANT,cmu,MED,Y
+Bad Guy,8,"The bad guy, I'ma come lookin' for you every time",come,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",Fuck,INNER,SLANT,cmu,MED,Y
+Bad Guy,8,"The bad guy, I'ma come lookin' for you every time",guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",five,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,8,"The bad guy, I'ma come lookin' for you every time",I'ma,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",him,INNER,SLANT,spelling,LOW,Y
+Bad Guy,8,"The bad guy, I'ma come lookin' for you every time",I'ma,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",I'ma,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,8,"The bad guy, I'ma come lookin' for you every time",time,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",five,INNER,SLANT,cmu,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",five,9,"Say ""Hello"" to the four five coke, two gone, I got five more",five,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",four,9,"Say ""Hello"" to the four five coke, two gone, I got five more",gone,INNER,SLANT,cmu,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",four,9,"Say ""Hello"" to the four five coke, two gone, I got five more",more,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",gone,9,"Say ""Hello"" to the four five coke, two gone, I got five more",more,INNER,SLANT,cmu,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",Hello,9,"Say ""Hello"" to the four five coke, two gone, I got five more",coke,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",coke,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",o,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",coke,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",slow,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",five,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",five,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",four,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",dawg,INNER,SLANT,spelling,LOW,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",gone,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",dawg,INNER,SLANT,spelling,LOW,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",got,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",watch,INNER,SLANT,cmu,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",Hello,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",o,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",Hello,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",slow,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",more,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",dawg,INNER,SLANT,spelling,LOW,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",more,11,Mama want me to drop this head before the lean I pour,pour,END,PERFECT,cmu,HIGH,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",four,11,Mama want me to drop this head before the lean I pour,before,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",four,11,Mama want me to drop this head before the lean I pour,pour,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",gone,11,Mama want me to drop this head before the lean I pour,before,INNER,SLANT,cmu,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",gone,11,Mama want me to drop this head before the lean I pour,pour,INNER,SLANT,cmu,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",got,11,Mama want me to drop this head before the lean I pour,drop,INNER,SLANT,cmu,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",got,11,Mama want me to drop this head before the lean I pour,Mama,INNER,SLANT,cmu,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",got,11,Mama want me to drop this head before the lean I pour,want,INNER,SLANT,cmu,MED,Y
+Bad Guy,9,"Say ""Hello"" to the four five coke, two gone, I got five more",more,11,Mama want me to drop this head before the lean I pour,before,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",I'ma,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",him,INNER,SLANT,spelling,LOW,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",killed,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",him,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",o,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",slow,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",bleed,11,Mama want me to drop this head before the lean I pour,lean,INNER,SLANT,cmu,MED,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",dawg,11,Mama want me to drop this head before the lean I pour,before,INNER,SLANT,spelling,LOW,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",dawg,11,Mama want me to drop this head before the lean I pour,pour,INNER,SLANT,spelling,LOW,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",watch,11,Mama want me to drop this head before the lean I pour,drop,INNER,SLANT,cmu,MED,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",watch,11,Mama want me to drop this head before the lean I pour,Mama,INNER,SLANT,cmu,MED,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",watch,11,Mama want me to drop this head before the lean I pour,want,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",slow,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",know,END,PERFECT,cmu,HIGH,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",dawg,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",dawg,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",dawg,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",gone,INNER,SLANT,spelling,LOW,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",niggas,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",niggas,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",o,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",know,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",o,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",smoke,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,10,"Fuck five-o, niggas killed my dawg, I'ma watch him bleed out slow",slow,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",smoke,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,before,11,Mama want me to drop this head before the lean I pour,pour,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,Mama,11,Mama want me to drop this head before the lean I pour,drop,INNER,SLANT,cmu,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,Mama,11,Mama want me to drop this head before the lean I pour,want,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,want,11,Mama want me to drop this head before the lean I pour,drop,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,before,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",dawg,INNER,SLANT,spelling,LOW,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,before,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",gone,INNER,SLANT,cmu,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,head,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",tell,INNER,SLANT,cmu,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,pour,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",dawg,INNER,SLANT,spelling,LOW,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,pour,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",gone,INNER,SLANT,cmu,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,drop,13,"Hot ass heaters, they took bro, now we gettin' it",Hot,INNER,SLANT,cmu,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,head,13,"Hot ass heaters, they took bro, now we gettin' it",gettin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,lean,13,"Hot ass heaters, they took bro, now we gettin' it",heaters,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,Mama,13,"Hot ass heaters, they took bro, now we gettin' it",Hot,INNER,SLANT,cmu,MED,Y
+Bad Guy,11,Mama want me to drop this head before the lean I pour,want,13,"Hot ass heaters, they took bro, now we gettin' it",Hot,INNER,SLANT,cmu,MED,Y
+Bad Guy,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",dawg,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",gone,INNER,SLANT,spelling,LOW,Y
+Bad Guy,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",smoke,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",know,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",know,13,"Hot ass heaters, they took bro, now we gettin' it",bro,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",lookin,13,"Hot ass heaters, they took bro, now we gettin' it",took,INNER,SLANT,cmu,MED,Y
+Bad Guy,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",niggas,13,"Hot ass heaters, they took bro, now we gettin' it",ass,INNER,PERFECT,spelling,MED,Y
+Bad Guy,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",now,13,"Hot ass heaters, they took bro, now we gettin' it",now,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",smoke,13,"Hot ass heaters, they took bro, now we gettin' it",bro,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,12,"My dawg gone, now we lookin' for smoke, tell them niggas we know",tell,13,"Hot ass heaters, they took bro, now we gettin' it",gettin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,13,"Hot ass heaters, they took bro, now we gettin' it",ass,14,"Surviving is not an option, hammer or the meat cleavers",hammer,INNER,SLANT,cmu,MED,Y
+Bad Guy,13,"Hot ass heaters, they took bro, now we gettin' it",heaters,14,"Surviving is not an option, hammer or the meat cleavers",cleavers,INNER,PERFECT,spelling,MED,Y
+Bad Guy,13,"Hot ass heaters, they took bro, now we gettin' it",heaters,14,"Surviving is not an option, hammer or the meat cleavers",meat,INNER,SLANT,cmu,MED,Y
+Bad Guy,13,"Hot ass heaters, they took bro, now we gettin' it",Hot,14,"Surviving is not an option, hammer or the meat cleavers",not,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,13,"Hot ass heaters, they took bro, now we gettin' it",Hot,14,"Surviving is not an option, hammer or the meat cleavers",option,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,13,"Hot ass heaters, they took bro, now we gettin' it",heaters,15,"Spin their block, walk up on that opp, I'll take a deep breather",breather,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,13,"Hot ass heaters, they took bro, now we gettin' it",heaters,15,"Spin their block, walk up on that opp, I'll take a deep breather",deep,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,13,"Hot ass heaters, they took bro, now we gettin' it",Hot,15,"Spin their block, walk up on that opp, I'll take a deep breather",block,INNER,SLANT,cmu,MED,Y
+Bad Guy,13,"Hot ass heaters, they took bro, now we gettin' it",Hot,15,"Spin their block, walk up on that opp, I'll take a deep breather",opp,INNER,SLANT,cmu,MED,Y
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",not,14,"Surviving is not an option, hammer or the meat cleavers",option,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",cleavers,15,"Spin their block, walk up on that opp, I'll take a deep breather",breather,END,ASSONANCE,vowel,LOW,N
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",meat,15,"Spin their block, walk up on that opp, I'll take a deep breather",breather,INNER,SLANT,cmu,MED,Y
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",meat,15,"Spin their block, walk up on that opp, I'll take a deep breather",deep,INNER,SLANT,cmu,MED,Y
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",not,15,"Spin their block, walk up on that opp, I'll take a deep breather",block,INNER,SLANT,cmu,MED,Y
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",not,15,"Spin their block, walk up on that opp, I'll take a deep breather",opp,INNER,SLANT,cmu,MED,Y
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",option,15,"Spin their block, walk up on that opp, I'll take a deep breather",block,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",option,15,"Spin their block, walk up on that opp, I'll take a deep breather",opp,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",Surviving,15,"Spin their block, walk up on that opp, I'll take a deep breather",I'll,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",cleavers,16,Me introduce him to the Grim Reaper,Reaper,END,ASSONANCE,vowel,LOW,N
+Bad Guy,14,"Surviving is not an option, hammer or the meat cleavers",meat,16,Me introduce him to the Grim Reaper,Reaper,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",block,15,"Spin their block, walk up on that opp, I'll take a deep breather",opp,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",deep,15,"Spin their block, walk up on that opp, I'll take a deep breather",breather,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",breather,16,Me introduce him to the Grim Reaper,Reaper,END,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",deep,16,Me introduce him to the Grim Reaper,Reaper,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",Spin,16,Me introduce him to the Grim Reaper,Grim,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",Spin,16,Me introduce him to the Grim Reaper,him,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",block,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",Watch,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",breather,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",leave,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",breather,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",people,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",deep,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",leave,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",deep,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",people,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",I'll,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",eye,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",opp,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",Watch,INNER,SLANT,cmu,MED,Y
+Bad Guy,15,"Spin their block, walk up on that opp, I'll take a deep breather",Spin,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",him,INNER,SLANT,cmu,MED,Y
+Bad Guy,16,Me introduce him to the Grim Reaper,him,16,Me introduce him to the Grim Reaper,Grim,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,16,Me introduce him to the Grim Reaper,Grim,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",him,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,16,Me introduce him to the Grim Reaper,him,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",him,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,16,Me introduce him to the Grim Reaper,Reaper,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",leave,INNER,SLANT,cmu,MED,Y
+Bad Guy,16,Me introduce him to the Grim Reaper,Reaper,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",people,INNER,SLANT,cmu,MED,Y
+Bad Guy,16,Me introduce him to the Grim Reaper,introduce,18,"I'm who you should recognize, nigga, I'm the bad guy",who,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",eye,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",eye,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",him,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",him,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",leave,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",people,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",smoke,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",old,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",soul,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",old,INNER,SLANT,cmu,MED,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",soul,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",smoke,INNER,SLANT,cmu,MED,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",eye,18,"I'm who you should recognize, nigga, I'm the bad guy",guy,END,PERFECT,cmu,HIGH,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",eye,18,"I'm who you should recognize, nigga, I'm the bad guy",guy,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",eye,18,"I'm who you should recognize, nigga, I'm the bad guy",recognize,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",look,18,"I'm who you should recognize, nigga, I'm the bad guy",should,INNER,SLANT,cmu,MED,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",eye,19,"You ain't gotta ask why, you can ask God",why,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",Watch,19,"You ain't gotta ask why, you can ask God",God,INNER,SLANT,cmu,MED,Y
+Bad Guy,17,"Watch his soul leave him, smoke him front of old people, look 'em eye-to-eye",Watch,19,"You ain't gotta ask why, you can ask God",gotta,INNER,SLANT,cmu,MED,Y
+Bad Guy,18,"I'm who you should recognize, nigga, I'm the bad guy",recognize,18,"I'm who you should recognize, nigga, I'm the bad guy",guy,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,18,"I'm who you should recognize, nigga, I'm the bad guy",bad,19,"You ain't gotta ask why, you can ask God",ask,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,18,"I'm who you should recognize, nigga, I'm the bad guy",bad,19,"You ain't gotta ask why, you can ask God",can,INNER,SLANT,cmu,MED,Y
+Bad Guy,18,"I'm who you should recognize, nigga, I'm the bad guy",guy,19,"You ain't gotta ask why, you can ask God",why,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,18,"I'm who you should recognize, nigga, I'm the bad guy",recognize,19,"You ain't gotta ask why, you can ask God",why,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,18,"I'm who you should recognize, nigga, I'm the bad guy",nigga,20,I'm Mr. Pull Up With That Stick and let them missiles-,Stick,INNER,SLANT,spelling,LOW,Y
+Bad Guy,18,"I'm who you should recognize, nigga, I'm the bad guy",should,20,I'm Mr. Pull Up With That Stick and let them missiles-,Pull,INNER,SLANT,cmu,MED,Y
+Bad Guy,19,"You ain't gotta ask why, you can ask God",ask,19,"You ain't gotta ask why, you can ask God",ask,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,19,"You ain't gotta ask why, you can ask God",ask,19,"You ain't gotta ask why, you can ask God",can,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,19,"You ain't gotta ask why, you can ask God",can,19,"You ain't gotta ask why, you can ask God",ask,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,19,"You ain't gotta ask why, you can ask God",gotta,19,"You ain't gotta ask why, you can ask God",God,INNER,SLANT,cmu,MED,Y
+Bad Guy,19,"You ain't gotta ask why, you can ask God",ask,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Montana,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,19,"You ain't gotta ask why, you can ask God",ask,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",slammer,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,19,"You ain't gotta ask why, you can ask God",can,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Montana,INNER,SLANT,cmu,MED,Y
+Bad Guy,19,"You ain't gotta ask why, you can ask God",can,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",slammer,INNER,SLANT,cmu,MED,Y
+Bad Guy,19,"You ain't gotta ask why, you can ask God",God,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",narcotics,END,ASSONANCE,vowel,MED,Y
+Bad Guy,19,"You ain't gotta ask why, you can ask God",God,23,And how I'm trappin' but my jacket full of armed robberies,robberies,END,ASSONANCE,vowel,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,Mr,20,I'm Mr. Pull Up With That Stick and let them missiles-,missiles,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,Mr,20,I'm Mr. Pull Up With That Stick and let them missiles-,Stick,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,Stick,20,I'm Mr. Pull Up With That Stick and let them missiles-,missiles,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,let,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",said,INNER,SLANT,cmu,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,missiles,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,Mr,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,Stick,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Bitch,INNER,SLANT,cmu,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,let,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",gettin,INNER,SLANT,cmu,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,missiles,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",askin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,Mr,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",askin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,20,I'm Mr. Pull Up With That Stick and let them missiles-,Stick,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",askin,INNER,SLANT,cmu,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Montana,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",slammer,INNER,SLANT,cmu,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",belong,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",all,INNER,SLANT,cmu,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Bitch,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",askin,INNER,SLANT,cmu,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",fiends,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",keep,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Montana,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",answers,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",said,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",gettin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",slammer,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",answers,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Montana,23,And how I'm trappin' but my jacket full of armed robberies,jacket,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",Montana,23,And how I'm trappin' but my jacket full of armed robberies,trappin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",slammer,23,And how I'm trappin' but my jacket full of armed robberies,jacket,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,21,"Bitch I'm the new Tony Montana, the fiends said I belong in the slammer",slammer,23,And how I'm trappin' but my jacket full of armed robberies,trappin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",bodies,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",narcotics,INNER,SLANT,cmu,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",narcotics,23,And how I'm trappin' but my jacket full of armed robberies,robberies,END,SLANT,cmu,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",answers,23,And how I'm trappin' but my jacket full of armed robberies,jacket,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",answers,23,And how I'm trappin' but my jacket full of armed robberies,trappin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",bodies,23,And how I'm trappin' but my jacket full of armed robberies,armed,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",bodies,23,And how I'm trappin' but my jacket full of armed robberies,robberies,INNER,PERFECT,spelling,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",how,23,And how I'm trappin' but my jacket full of armed robberies,how,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",narcotics,23,And how I'm trappin' but my jacket full of armed robberies,armed,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",answers,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",bands,INNER,SLANT,cmu,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",bodies,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",Droppin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",bodies,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",shoppin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",gettin,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",there,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",narcotics,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",Droppin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",narcotics,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",shoppin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,22,"And they keep askin' for answers for all of the bodies, and how we gettin' narcotics",narcotics,25,Just another skeleton to put up in my closet (You know we slidin'),closet,END,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,armed,23,And how I'm trappin' but my jacket full of armed robberies,robberies,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,trappin,23,And how I'm trappin' but my jacket full of armed robberies,jacket,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,armed,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",Droppin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,armed,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",shoppin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,jacket,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",bands,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,robberies,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",Droppin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,robberies,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",shoppin,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,trappin,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",bands,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,trappin,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",Droppin,INNER,SLANT,spelling,LOW,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,robberies,25,Just another skeleton to put up in my closet (You know we slidin'),closet,END,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,armed,25,Just another skeleton to put up in my closet (You know we slidin'),closet,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,23,And how I'm trappin' but my jacket full of armed robberies,full,25,Just another skeleton to put up in my closet (You know we slidin'),put,INNER,SLANT,cmu,MED,Y
+Bad Guy,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",Droppin,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",shoppin,INNER,MULTI,multi,HIGH,Y
+Bad Guy,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",Droppin,25,Just another skeleton to put up in my closet (You know we slidin'),closet,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",shoppin,25,Just another skeleton to put up in my closet (You know we slidin'),closet,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",there,25,Just another skeleton to put up in my closet (You know we slidin'),skeleton,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",there,26,"No Halloween decorations shit, I'm on some yellow tape and shit",yellow,INNER,SLANT,cmu,MED,Y
+Bad Guy,24,"Droppin' bands, I been out there shoppin' but they hidin' (Them niggas hidin')",hidin,28,And now they label me the bad guy,guy,END,ASSONANCE,vowel,MED,Y
+Bad Guy,25,Just another skeleton to put up in my closet (You know we slidin'),another,26,"No Halloween decorations shit, I'm on some yellow tape and shit",some,INNER,SLANT,cmu,MED,Y
+Bad Guy,25,Just another skeleton to put up in my closet (You know we slidin'),skeleton,26,"No Halloween decorations shit, I'm on some yellow tape and shit",yellow,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,25,Just another skeleton to put up in my closet (You know we slidin'),another,27,"Walk up on him, face him, shit, that's some cases, shit",some,INNER,SLANT,cmu,MED,Y
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",decorations,26,"No Halloween decorations shit, I'm on some yellow tape and shit",tape,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",shit,26,"No Halloween decorations shit, I'm on some yellow tape and shit",shit,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",shit,27,"Walk up on him, face him, shit, that's some cases, shit",shit,END,REPEAT,spelling,HIGH,N
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",decorations,27,"Walk up on him, face him, shit, that's some cases, shit",cases,INNER,SLANT,cmu,MED,Y
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",decorations,27,"Walk up on him, face him, shit, that's some cases, shit",face,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",shit,27,"Walk up on him, face him, shit, that's some cases, shit",him,INNER,SLANT,cmu,MED,Y
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",shit,27,"Walk up on him, face him, shit, that's some cases, shit",shit,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",some,27,"Walk up on him, face him, shit, that's some cases, shit",some,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",tape,27,"Walk up on him, face him, shit, that's some cases, shit",cases,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",tape,27,"Walk up on him, face him, shit, that's some cases, shit",face,INNER,SLANT,cmu,MED,Y
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",decorations,28,And now they label me the bad guy,label,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,26,"No Halloween decorations shit, I'm on some yellow tape and shit",tape,28,And now they label me the bad guy,label,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",face,27,"Walk up on him, face him, shit, that's some cases, shit",cases,INNER,SLANT,cmu,MED,Y
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",him,27,"Walk up on him, face him, shit, that's some cases, shit",him,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",him,27,"Walk up on him, face him, shit, that's some cases, shit",shit,INNER,SLANT,cmu,MED,Y
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",shit,27,"Walk up on him, face him, shit, that's some cases, shit",shit,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",cases,28,And now they label me the bad guy,label,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",face,28,And now they label me the bad guy,label,INNER,ASSONANCE,vowel,MED,Y
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",him,29,Still gon' come get him if the bag right,him,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",him,29,Still gon' come get him if the bag right,Still,INNER,SLANT,cmu,MED,Y
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",shit,29,Still gon' come get him if the bag right,him,INNER,SLANT,cmu,MED,Y
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",shit,29,Still gon' come get him if the bag right,Still,INNER,SLANT,cmu,MED,Y
+Bad Guy,27,"Walk up on him, face him, shit, that's some cases, shit",some,29,Still gon' come get him if the bag right,come,INNER,PERFECT,cmu,HIGH,Y
+Bad Guy,28,And now they label me the bad guy,guy,29,Still gon' come get him if the bag right,right,END,ASSONANCE,vowel,MED,Y
+Bad Guy,28,And now they label me the bad guy,bad,29,Still gon' come get him if the bag right,bag,INNER,SLANT,cmu,MED,Y
+Bad Guy,28,And now they label me the bad guy,guy,30,"I seen a nigga cross his man, but it backfired",backfired,END,ASSONANCE,vowel,MED,Y
+Bad Guy,28,And now they label me the bad guy,bad,30,"I seen a nigga cross his man, but it backfired",man,INNER,SLANT,cmu,MED,Y
+Bad Guy,28,And now they label me the bad guy,guy,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",tight,END,ASSONANCE,vowel,MED,Y
+Bad Guy,29,Still gon' come get him if the bag right,Still,29,Still gon' come get him if the bag right,him,INNER,SLANT,cmu,MED,Y
+Bad Guy,29,Still gon' come get him if the bag right,right,30,"I seen a nigga cross his man, but it backfired",backfired,END,SLANT,cmu,MED,Y
+Bad Guy,29,Still gon' come get him if the bag right,bag,30,"I seen a nigga cross his man, but it backfired",man,INNER,SLANT,cmu,MED,Y
+Bad Guy,29,Still gon' come get him if the bag right,right,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",tight,END,PERFECT,cmu,HIGH,Y
+Bad Guy,29,Still gon' come get him if the bag right,bag,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",back,INNER,SLANT,cmu,MED,Y
+Bad Guy,29,Still gon' come get him if the bag right,get,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",check,INNER,SLANT,cmu,MED,Y
+Bad Guy,29,Still gon' come get him if the bag right,get,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",Tell,INNER,SLANT,cmu,MED,Y
+Bad Guy,29,Still gon' come get him if the bag right,him,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",him,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,29,Still gon' come get him if the bag right,right,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",ride,INNER,SLANT,cmu,MED,Y
+Bad Guy,29,Still gon' come get him if the bag right,Still,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",him,INNER,SLANT,cmu,MED,Y
+Bad Guy,30,"I seen a nigga cross his man, but it backfired",backfired,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",tight,END,SLANT,cmu,MED,Y
+Bad Guy,30,"I seen a nigga cross his man, but it backfired",backfired,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",ride,INNER,SLANT,cmu,MED,Y
+Bad Guy,30,"I seen a nigga cross his man, but it backfired",man,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",back,INNER,SLANT,cmu,MED,Y
+Bad Guy,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",him,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",him,INNER,REPEAT,spelling,HIGH,N
+Bad Guy,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",ride,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",tight,INNER,SLANT,cmu,MED,Y
+Bad Guy,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",Tell,31,"Tell him to ride, and told him to check the back tight (Booya, bitch)",check,INNER,SLANT,cmu,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",down,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",found,INNER,SLANT,cmu,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",ever,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",evidence,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",ever,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",get,INNER,SLANT,cmu,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",ever,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",let,INNER,SLANT,cmu,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",evidence,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",get,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",it'll,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",kill,INNER,SLANT,cmu,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",let,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",evidence,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",let,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",get,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",won't,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",no,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",found,2,Think I get high and wasn't nobody else around,around,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",down,2,Think I get high and wasn't nobody else around,around,INNER,SLANT,cmu,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",ever,2,Think I get high and wasn't nobody else around,else,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",ever,2,Think I get high and wasn't nobody else around,get,INNER,SLANT,cmu,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",evidence,2,Think I get high and wasn't nobody else around,else,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",evidence,2,Think I get high and wasn't nobody else around,get,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",get,2,Think I get high and wasn't nobody else around,else,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",get,2,Think I get high and wasn't nobody else around,get,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",inside,2,Think I get high and wasn't nobody else around,high,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",it'll,2,Think I get high and wasn't nobody else around,Think,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",kill,2,Think I get high and wasn't nobody else around,Think,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",let,2,Think I get high and wasn't nobody else around,else,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",let,2,Think I get high and wasn't nobody else around,get,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",found,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",down,END,SLANT,cmu,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",down,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",down,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",ever,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",get,INNER,SLANT,cmu,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",evidence,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",get,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",get,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",get,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",inside,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",high,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",let,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",get,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",no,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",don't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",no,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",hold,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",won't,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",don't,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,1,"If I ever let you down, it'll kill me inside and won't no evidence get found",won't,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",hold,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,2,Think I get high and wasn't nobody else around,get,2,Think I get high and wasn't nobody else around,else,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,2,Think I get high and wasn't nobody else around,around,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",down,END,SLANT,cmu,MED,Y
+Marley Vibez,2,Think I get high and wasn't nobody else around,else,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",get,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,2,Think I get high and wasn't nobody else around,get,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",get,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,2,Think I get high and wasn't nobody else around,high,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",high,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,2,Think I get high and wasn't nobody else around,nobody,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",nobody,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,2,Think I get high and wasn't nobody else around,else,4,I get such a feeling when I'm high,get,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,2,Think I get high and wasn't nobody else around,else,4,I get such a feeling when I'm high,when,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,2,Think I get high and wasn't nobody else around,get,4,I get such a feeling when I'm high,get,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,2,Think I get high and wasn't nobody else around,get,4,I get such a feeling when I'm high,when,INNER,SLANT,cmu,MED,Y
+Marley Vibez,2,Think I get high and wasn't nobody else around,high,4,I get such a feeling when I'm high,high,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,2,Think I get high and wasn't nobody else around,nobody,4,I get such a feeling when I'm high,feeling,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",don't,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",hold,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",get,4,I get such a feeling when I'm high,get,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",get,4,I get such a feeling when I'm high,when,INNER,SLANT,cmu,MED,Y
+Marley Vibez,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",high,4,I get such a feeling when I'm high,high,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",nobody,4,I get such a feeling when I'm high,feeling,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",get,5,Feel it in my energy and vibe,energy,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",high,5,Feel it in my energy and vibe,vibe,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,3,"'Cause I get so high and don't nobody hold me down, oh-oh-oh-oh-oh",nobody,5,Feel it in my energy and vibe,Feel,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,get,4,I get such a feeling when I'm high,when,INNER,SLANT,cmu,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,high,5,Feel it in my energy and vibe,vibe,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,feeling,5,Feel it in my energy and vibe,Feel,INNER,SLANT,cmu,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,get,5,Feel it in my energy and vibe,energy,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,when,5,Feel it in my energy and vibe,energy,INNER,SLANT,cmu,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,high,6,"I had to tell the reefer, ""I'ma keep you on my side""",side,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,feeling,6,"I had to tell the reefer, ""I'ma keep you on my side""",keep,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,feeling,6,"I had to tell the reefer, ""I'ma keep you on my side""",reefer,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,get,6,"I had to tell the reefer, ""I'ma keep you on my side""",tell,INNER,SLANT,cmu,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,when,6,"I had to tell the reefer, ""I'ma keep you on my side""",tell,INNER,SLANT,cmu,MED,Y
+Marley Vibez,4,I get such a feeling when I'm high,high,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",high,END,REPEAT,spelling,HIGH,N
+Marley Vibez,4,I get such a feeling when I'm high,high,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,vibe,6,"I had to tell the reefer, ""I'ma keep you on my side""",side,END,SLANT,cmu,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,energy,6,"I had to tell the reefer, ""I'ma keep you on my side""",tell,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,Feel,6,"I had to tell the reefer, ""I'ma keep you on my side""",keep,INNER,SLANT,cmu,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,Feel,6,"I had to tell the reefer, ""I'ma keep you on my side""",reefer,INNER,SLANT,cmu,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,vibe,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",high,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,Feel,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",feelin,INNER,SLANT,cmu,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,Feel,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",Khalifa,INNER,SLANT,cmu,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,Feel,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",peaceful,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,vibe,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,END,SLANT,cmu,MED,Y
+Marley Vibez,5,Feel it in my energy and vibe,vibe,9,"Inhaling too much smoke, might die like Bob Marley died",died,END,SLANT,cmu,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",reefer,6,"I had to tell the reefer, ""I'ma keep you on my side""",keep,INNER,SLANT,cmu,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",side,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",high,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",I'ma,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",Puffin,INNER,SLANT,spelling,LOW,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",I'ma,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",Wiz,INNER,SLANT,spelling,LOW,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",keep,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",feelin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",keep,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",Khalifa,INNER,SLANT,cmu,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",keep,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",peaceful,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",reefer,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",feelin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",reefer,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",Khalifa,INNER,SLANT,cmu,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",reefer,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",peaceful,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",side,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",side,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Cry,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,6,"I had to tell the reefer, ""I'ma keep you on my side""",side,9,"Inhaling too much smoke, might die like Bob Marley died",died,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",feelin,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",peaceful,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",Khalifa,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",feelin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",Khalifa,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",peaceful,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",Puffin,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",Wiz,INNER,SLANT,cmu,MED,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",high,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",high,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Cry,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",high,9,"Inhaling too much smoke, might die like Bob Marley died",died,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",high,9,"Inhaling too much smoke, might die like Bob Marley died",die,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",high,9,"Inhaling too much smoke, might die like Bob Marley died",like,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,7,"Puffin' Wiz Khalifa, feelin' peaceful and be high",high,9,"Inhaling too much smoke, might die like Bob Marley died",might,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Bob,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Marley,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Cry,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",No,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",No,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,9,"Inhaling too much smoke, might die like Bob Marley died",died,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Bob,9,"Inhaling too much smoke, might die like Bob Marley died",Bob,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Bob,9,"Inhaling too much smoke, might die like Bob Marley died",Marley,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Bumpin,9,"Inhaling too much smoke, might die like Bob Marley died",much,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Cry,9,"Inhaling too much smoke, might die like Bob Marley died",die,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Cry,9,"Inhaling too much smoke, might die like Bob Marley died",died,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Cry,9,"Inhaling too much smoke, might die like Bob Marley died",like,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Cry,9,"Inhaling too much smoke, might die like Bob Marley died",might,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Marley,9,"Inhaling too much smoke, might die like Bob Marley died",Bob,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Marley,9,"Inhaling too much smoke, might die like Bob Marley died",Marley,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",No,9,"Inhaling too much smoke, might die like Bob Marley died",smoke,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,9,"Inhaling too much smoke, might die like Bob Marley died",die,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,9,"Inhaling too much smoke, might die like Bob Marley died",like,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,9,"Inhaling too much smoke, might die like Bob Marley died",might,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Bob,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,rollin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Cry,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,like,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",Marley,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,rollin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",No,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,dope,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,8,"Bumpin' ""No Woman, No Cry,"" Bob Marley vibes",vibes,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,like,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Bob,9,"Inhaling too much smoke, might die like Bob Marley died",Marley,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",die,9,"Inhaling too much smoke, might die like Bob Marley died",died,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",die,9,"Inhaling too much smoke, might die like Bob Marley died",like,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",like,9,"Inhaling too much smoke, might die like Bob Marley died",died,INNER,SLANT,cmu,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",might,9,"Inhaling too much smoke, might die like Bob Marley died",die,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",might,9,"Inhaling too much smoke, might die like Bob Marley died",died,INNER,SLANT,cmu,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",might,9,"Inhaling too much smoke, might die like Bob Marley died",like,INNER,SLANT,cmu,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Bob,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,rollin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",die,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,like,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",died,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,like,INNER,SLANT,cmu,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",like,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,like,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Marley,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,rollin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",might,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,like,INNER,SLANT,cmu,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",smoke,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,dope,INNER,SLANT,cmu,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Bob,11,"Mama say it don't make sense, I ain't high, ain't got no patience",got,INNER,SLANT,cmu,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Bob,11,"Mama say it don't make sense, I ain't high, ain't got no patience",Mama,INNER,SLANT,cmu,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",die,11,"Mama say it don't make sense, I ain't high, ain't got no patience",high,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",died,11,"Mama say it don't make sense, I ain't high, ain't got no patience",high,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Inhaling,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Inhaling,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Inhaling,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Inhaling,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",like,11,"Mama say it don't make sense, I ain't high, ain't got no patience",high,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Marley,11,"Mama say it don't make sense, I ain't high, ain't got no patience",got,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",Marley,11,"Mama say it don't make sense, I ain't high, ain't got no patience",Mama,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",might,11,"Mama say it don't make sense, I ain't high, ain't got no patience",high,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",smoke,11,"Mama say it don't make sense, I ain't high, ain't got no patience",don't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,9,"Inhaling too much smoke, might die like Bob Marley died",smoke,11,"Mama say it don't make sense, I ain't high, ain't got no patience",no,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,Steady,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,m,INNER,SLANT,cmu,MED,Y
+Marley Vibez,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,dope,11,"Mama say it don't make sense, I ain't high, ain't got no patience",don't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,dope,11,"Mama say it don't make sense, I ain't high, ain't got no patience",no,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,like,11,"Mama say it don't make sense, I ain't high, ain't got no patience",high,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,m,11,"Mama say it don't make sense, I ain't high, ain't got no patience",sense,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,rollin,11,"Mama say it don't make sense, I ain't high, ain't got no patience",got,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,rollin,11,"Mama say it don't make sense, I ain't high, ain't got no patience",Mama,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,Steady,11,"Mama say it don't make sense, I ain't high, ain't got no patience",sense,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,10,Steady rollin' up dope and it's like 5:45 up in the a.m.,like,12,Like I'm on vacation in Jamaica how I blaze it,Like,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",don't,11,"Mama say it don't make sense, I ain't high, ain't got no patience",no,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",Mama,11,"Mama say it don't make sense, I ain't high, ain't got no patience",got,INNER,SLANT,cmu,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,12,Like I'm on vacation in Jamaica how I blaze it,blaze,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,12,Like I'm on vacation in Jamaica how I blaze it,blaze,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,12,Like I'm on vacation in Jamaica how I blaze it,vacation,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",high,12,Like I'm on vacation in Jamaica how I blaze it,Like,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,12,Like I'm on vacation in Jamaica how I blaze it,blaze,INNER,SLANT,cmu,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,INNER,SLANT,cmu,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,12,Like I'm on vacation in Jamaica how I blaze it,vacation,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,12,Like I'm on vacation in Jamaica how I blaze it,vacation,INNER,SLANT,cmu,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,12,Like I'm on vacation in Jamaica how I blaze it,blaze,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,12,Like I'm on vacation in Jamaica how I blaze it,vacation,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",ain't,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,INNER,SLANT,cmu,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",don't,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",don't,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",got,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",gotta,INNER,SLANT,cmu,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",got,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",rollin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",make,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",Mama,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",gotta,INNER,SLANT,cmu,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",Mama,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",rollin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",no,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",don't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",say,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,11,"Mama say it don't make sense, I ain't high, ain't got no patience",patience,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,12,Like I'm on vacation in Jamaica how I blaze it,blaze,INNER,SLANT,cmu,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,vacation,12,Like I'm on vacation in Jamaica how I blaze it,blaze,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,vacation,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,blaze,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,blaze,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,INNER,SLANT,cmu,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,blaze,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,INNER,SLANT,cmu,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,vacation,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,vacation,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,vacation,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,blaze,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,blaze,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,Jamaica,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,Like,14,"My weed heavy, high maintenance, I swear this every occasion",high,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,vacation,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,12,Like I'm on vacation in Jamaica how I blaze it,vacation,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,INNER,PERFECT,spelling,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,INNER,SLANT,cmu,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",rollin,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",gotta,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",don't,15,"My grower one of the greatest, I'm blowin' one of his latest strands",blowin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",don't,15,"My grower one of the greatest, I'm blowin' one of his latest strands",grower,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,15,"My grower one of the greatest, I'm blowin' one of his latest strands",greatest,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",flavors,15,"My grower one of the greatest, I'm blowin' one of his latest strands",latest,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,15,"My grower one of the greatest, I'm blowin' one of his latest strands",greatest,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",papers,15,"My grower one of the greatest, I'm blowin' one of his latest strands",latest,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,15,"My grower one of the greatest, I'm blowin' one of his latest strands",greatest,INNER,SLANT,cmu,MED,Y
+Marley Vibez,13,"Backwood, don't do papers, rollin' flavors, gotta taste it",taste,15,"My grower one of the greatest, I'm blowin' one of his latest strands",latest,INNER,SLANT,cmu,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",heavy,14,"My weed heavy, high maintenance, I swear this every occasion",every,INNER,SLANT,cmu,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",heavy,14,"My weed heavy, high maintenance, I swear this every occasion",swear,INNER,SLANT,cmu,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",swear,14,"My weed heavy, high maintenance, I swear this every occasion",every,INNER,SLANT,cmu,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,15,"My grower one of the greatest, I'm blowin' one of his latest strands",greatest,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,15,"My grower one of the greatest, I'm blowin' one of his latest strands",latest,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,15,"My grower one of the greatest, I'm blowin' one of his latest strands",greatest,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,15,"My grower one of the greatest, I'm blowin' one of his latest strands",latest,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",every,16,I could've bought a Mercedes Benz,Benz,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",heavy,16,I could've bought a Mercedes Benz,Benz,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",maintenance,16,I could've bought a Mercedes Benz,Mercedes,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",occasion,16,I could've bought a Mercedes Benz,Mercedes,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,14,"My weed heavy, high maintenance, I swear this every occasion",swear,16,I could've bought a Mercedes Benz,Benz,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,15,"My grower one of the greatest, I'm blowin' one of his latest strands",greatest,15,"My grower one of the greatest, I'm blowin' one of his latest strands",latest,INNER,MULTI,multi,HIGH,Y
+Marley Vibez,15,"My grower one of the greatest, I'm blowin' one of his latest strands",grower,15,"My grower one of the greatest, I'm blowin' one of his latest strands",blowin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,15,"My grower one of the greatest, I'm blowin' one of his latest strands",one,15,"My grower one of the greatest, I'm blowin' one of his latest strands",one,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,15,"My grower one of the greatest, I'm blowin' one of his latest strands",one greatest,15,"My grower one of the greatest, I'm blowin' one of his latest strands",one latest,INNER,MULTI,multi,HIGH,Y
+Marley Vibez,15,"My grower one of the greatest, I'm blowin' one of his latest strands",greatest,16,I could've bought a Mercedes Benz,Mercedes,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,15,"My grower one of the greatest, I'm blowin' one of his latest strands",latest,16,I could've bought a Mercedes Benz,Mercedes,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,15,"My grower one of the greatest, I'm blowin' one of his latest strands",one,17,But I went and copped like a hundred P's,hundred,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,16,I could've bought a Mercedes Benz,Benz,17,But I went and copped like a hundred P's,went,INNER,SLANT,cmu,MED,Y
+Marley Vibez,16,I could've bought a Mercedes Benz,bought,17,But I went and copped like a hundred P's,copped,INNER,SLANT,cmu,MED,Y
+Marley Vibez,17,But I went and copped like a hundred P's,hundred,18,Them bitches landed right in front of me,front,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,17,But I went and copped like a hundred P's,like,18,Them bitches landed right in front of me,right,INNER,SLANT,cmu,MED,Y
+Marley Vibez,17,But I went and copped like a hundred P's,hundred,19,Broke it down with every nigga under me,under,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,17,But I went and copped like a hundred P's,went,19,Broke it down with every nigga under me,every,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,17,But I went and copped like a hundred P's,P's,21,"We cut the ticket, now we run the streets",streets,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,18,Them bitches landed right in front of me,front,19,Broke it down with every nigga under me,under,END,SLANT,cmu,MED,Y
+Marley Vibez,18,Them bitches landed right in front of me,front,20,"Want 'em cheap, gotta come to me",come,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,19,Broke it down with every nigga under me,under,20,"Want 'em cheap, gotta come to me",come,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,19,Broke it down with every nigga under me,down,21,"We cut the ticket, now we run the streets",now,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,19,Broke it down with every nigga under me,nigga,21,"We cut the ticket, now we run the streets",ticket,INNER,SLANT,spelling,LOW,Y
+Marley Vibez,19,Broke it down with every nigga under me,under,21,"We cut the ticket, now we run the streets",cut,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,19,Broke it down with every nigga under me,under,21,"We cut the ticket, now we run the streets",run,INNER,SLANT,cmu,MED,Y
+Marley Vibez,20,"Want 'em cheap, gotta come to me",'em,20,"Want 'em cheap, gotta come to me",come,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,20,"Want 'em cheap, gotta come to me",Want,20,"Want 'em cheap, gotta come to me",gotta,INNER,SLANT,cmu,MED,Y
+Marley Vibez,20,"Want 'em cheap, gotta come to me",cheap,21,"We cut the ticket, now we run the streets",streets,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,20,"Want 'em cheap, gotta come to me",come,21,"We cut the ticket, now we run the streets",cut,INNER,SLANT,cmu,MED,Y
+Marley Vibez,20,"Want 'em cheap, gotta come to me",come,21,"We cut the ticket, now we run the streets",run,INNER,SLANT,cmu,MED,Y
+Marley Vibez,20,"Want 'em cheap, gotta come to me",cheap,22,"But my weed really mean somethin' to me, for real",mean,INNER,SLANT,cmu,MED,Y
+Marley Vibez,20,"Want 'em cheap, gotta come to me",cheap,22,"But my weed really mean somethin' to me, for real",real,INNER,SLANT,cmu,MED,Y
+Marley Vibez,20,"Want 'em cheap, gotta come to me",cheap,22,"But my weed really mean somethin' to me, for real",weed,INNER,SLANT,cmu,MED,Y
+Marley Vibez,20,"Want 'em cheap, gotta come to me",come,22,"But my weed really mean somethin' to me, for real",somethin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",cut,21,"We cut the ticket, now we run the streets",run,INNER,SLANT,cmu,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",streets,22,"But my weed really mean somethin' to me, for real",real,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",cut,22,"But my weed really mean somethin' to me, for real",somethin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",run,22,"But my weed really mean somethin' to me, for real",somethin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",streets,22,"But my weed really mean somethin' to me, for real",mean,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",streets,22,"But my weed really mean somethin' to me, for real",weed,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",ticket,22,"But my weed really mean somethin' to me, for real",really,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",streets,23,I'm burnin' a hybrid that you never seen,seen,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",streets,24,"This shit right here yellow, purple, and green",green,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,21,"We cut the ticket, now we run the streets",streets,25,"In Cali, I met me a plug of my dreams",dreams,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",mean,22,"But my weed really mean somethin' to me, for real",real,INNER,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",weed,22,"But my weed really mean somethin' to me, for real",mean,INNER,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",weed,22,"But my weed really mean somethin' to me, for real",real,INNER,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",real,23,I'm burnin' a hybrid that you never seen,seen,END,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",mean,23,I'm burnin' a hybrid that you never seen,seen,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",weed,23,I'm burnin' a hybrid that you never seen,seen,INNER,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",real,24,"This shit right here yellow, purple, and green",green,END,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",mean,24,"This shit right here yellow, purple, and green",green,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",mean,24,"This shit right here yellow, purple, and green",here,INNER,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",real,24,"This shit right here yellow, purple, and green",here,INNER,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",really,24,"This shit right here yellow, purple, and green",shit,INNER,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",weed,24,"This shit right here yellow, purple, and green",green,INNER,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",weed,24,"This shit right here yellow, purple, and green",here,INNER,SLANT,cmu,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",real,25,"In Cali, I met me a plug of my dreams",dreams,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,22,"But my weed really mean somethin' to me, for real",real,26,"Just bought a bale, that shit there for the team",team,END,SLANT,cmu,MED,Y
+Marley Vibez,23,I'm burnin' a hybrid that you never seen,seen,24,"This shit right here yellow, purple, and green",green,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,23,I'm burnin' a hybrid that you never seen,burnin,24,"This shit right here yellow, purple, and green",purple,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,23,I'm burnin' a hybrid that you never seen,hybrid,24,"This shit right here yellow, purple, and green",right,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,23,I'm burnin' a hybrid that you never seen,never,24,"This shit right here yellow, purple, and green",yellow,INNER,SLANT,cmu,MED,Y
+Marley Vibez,23,I'm burnin' a hybrid that you never seen,seen,24,"This shit right here yellow, purple, and green",here,INNER,SLANT,cmu,MED,Y
+Marley Vibez,23,I'm burnin' a hybrid that you never seen,seen,25,"In Cali, I met me a plug of my dreams",dreams,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,23,I'm burnin' a hybrid that you never seen,never,25,"In Cali, I met me a plug of my dreams",met,INNER,SLANT,cmu,MED,Y
+Marley Vibez,23,I'm burnin' a hybrid that you never seen,seen,26,"Just bought a bale, that shit there for the team",team,END,SLANT,cmu,MED,Y
+Marley Vibez,23,I'm burnin' a hybrid that you never seen,seen,27,"Vegan wraps, I do not do Russian Creams",Creams,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,24,"This shit right here yellow, purple, and green",here,24,"This shit right here yellow, purple, and green",green,INNER,SLANT,cmu,MED,Y
+Marley Vibez,24,"This shit right here yellow, purple, and green",green,25,"In Cali, I met me a plug of my dreams",dreams,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,24,"This shit right here yellow, purple, and green",here,25,"In Cali, I met me a plug of my dreams",dreams,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,24,"This shit right here yellow, purple, and green",yellow,25,"In Cali, I met me a plug of my dreams",met,INNER,SLANT,cmu,MED,Y
+Marley Vibez,24,"This shit right here yellow, purple, and green",green,26,"Just bought a bale, that shit there for the team",team,END,SLANT,cmu,MED,Y
+Marley Vibez,24,"This shit right here yellow, purple, and green",here,26,"Just bought a bale, that shit there for the team",team,INNER,SLANT,cmu,MED,Y
+Marley Vibez,24,"This shit right here yellow, purple, and green",shit,26,"Just bought a bale, that shit there for the team",shit,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,24,"This shit right here yellow, purple, and green",yellow,26,"Just bought a bale, that shit there for the team",there,INNER,SLANT,cmu,MED,Y
+Marley Vibez,24,"This shit right here yellow, purple, and green",green,27,"Vegan wraps, I do not do Russian Creams",Creams,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,24,"This shit right here yellow, purple, and green",green,28,"Organic OG, it's chemical-free",free,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,25,"In Cali, I met me a plug of my dreams",dreams,26,"Just bought a bale, that shit there for the team",team,END,SLANT,cmu,MED,Y
+Marley Vibez,25,"In Cali, I met me a plug of my dreams",Cali,26,"Just bought a bale, that shit there for the team",bought,INNER,SLANT,cmu,MED,Y
+Marley Vibez,25,"In Cali, I met me a plug of my dreams",met,26,"Just bought a bale, that shit there for the team",there,INNER,SLANT,cmu,MED,Y
+Marley Vibez,25,"In Cali, I met me a plug of my dreams",dreams,27,"Vegan wraps, I do not do Russian Creams",Creams,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,25,"In Cali, I met me a plug of my dreams",Cali,27,"Vegan wraps, I do not do Russian Creams",not,INNER,SLANT,cmu,MED,Y
+Marley Vibez,25,"In Cali, I met me a plug of my dreams",met,27,"Vegan wraps, I do not do Russian Creams",Vegan,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,25,"In Cali, I met me a plug of my dreams",plug,27,"Vegan wraps, I do not do Russian Creams",Russian,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,25,"In Cali, I met me a plug of my dreams",dreams,28,"Organic OG, it's chemical-free",free,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,25,"In Cali, I met me a plug of my dreams",dreams,29,Pitch to Luwhop for four thousand a P,P,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,26,"Just bought a bale, that shit there for the team",team,27,"Vegan wraps, I do not do Russian Creams",Creams,END,SLANT,cmu,MED,Y
+Marley Vibez,26,"Just bought a bale, that shit there for the team",bought,27,"Vegan wraps, I do not do Russian Creams",not,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,26,"Just bought a bale, that shit there for the team",there,27,"Vegan wraps, I do not do Russian Creams",Vegan,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,26,"Just bought a bale, that shit there for the team",team,28,"Organic OG, it's chemical-free",free,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,26,"Just bought a bale, that shit there for the team",bought,28,"Organic OG, it's chemical-free",OG,INNER,SLANT,cmu,MED,Y
+Marley Vibez,26,"Just bought a bale, that shit there for the team",there,28,"Organic OG, it's chemical-free",chemical,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,26,"Just bought a bale, that shit there for the team",team,29,Pitch to Luwhop for four thousand a P,P,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,26,"Just bought a bale, that shit there for the team",team,30,You can't hit this blunt 'cause this reefer ain't cheap,cheap,END,SLANT,cmu,MED,Y
+Marley Vibez,27,"Vegan wraps, I do not do Russian Creams",Creams,28,"Organic OG, it's chemical-free",free,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,27,"Vegan wraps, I do not do Russian Creams",not,28,"Organic OG, it's chemical-free",OG,INNER,SLANT,cmu,MED,Y
+Marley Vibez,27,"Vegan wraps, I do not do Russian Creams",Vegan,28,"Organic OG, it's chemical-free",chemical,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,27,"Vegan wraps, I do not do Russian Creams",wraps,28,"Organic OG, it's chemical-free",Organic,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,27,"Vegan wraps, I do not do Russian Creams",Creams,29,Pitch to Luwhop for four thousand a P,P,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,27,"Vegan wraps, I do not do Russian Creams",Creams,30,You can't hit this blunt 'cause this reefer ain't cheap,cheap,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,27,"Vegan wraps, I do not do Russian Creams",Creams,31,A bitch hit my blunt and it put her to sleep,sleep,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,28,"Organic OG, it's chemical-free",free,29,Pitch to Luwhop for four thousand a P,P,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,28,"Organic OG, it's chemical-free",free,30,You can't hit this blunt 'cause this reefer ain't cheap,cheap,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,28,"Organic OG, it's chemical-free",free,30,You can't hit this blunt 'cause this reefer ain't cheap,reefer,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,28,"Organic OG, it's chemical-free",Organic,30,You can't hit this blunt 'cause this reefer ain't cheap,can't,INNER,SLANT,cmu,MED,Y
+Marley Vibez,28,"Organic OG, it's chemical-free",free,31,A bitch hit my blunt and it put her to sleep,sleep,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,28,"Organic OG, it's chemical-free",free,32,"You know I stay chiefin', ain't talkin' 'bout Keef",Keef,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,29,Pitch to Luwhop for four thousand a P,P,30,You can't hit this blunt 'cause this reefer ain't cheap,cheap,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,29,Pitch to Luwhop for four thousand a P,P,30,You can't hit this blunt 'cause this reefer ain't cheap,reefer,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,29,Pitch to Luwhop for four thousand a P,Pitch,30,You can't hit this blunt 'cause this reefer ain't cheap,hit,INNER,SLANT,cmu,MED,Y
+Marley Vibez,29,Pitch to Luwhop for four thousand a P,P,31,A bitch hit my blunt and it put her to sleep,sleep,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,29,Pitch to Luwhop for four thousand a P,Pitch,31,A bitch hit my blunt and it put her to sleep,bitch,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,29,Pitch to Luwhop for four thousand a P,Pitch,31,A bitch hit my blunt and it put her to sleep,hit,INNER,SLANT,cmu,MED,Y
+Marley Vibez,29,Pitch to Luwhop for four thousand a P,P,32,"You know I stay chiefin', ain't talkin' 'bout Keef",Keef,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,29,Pitch to Luwhop for four thousand a P,P,33,"On the way to the A, got a load in the Jeep",Jeep,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,reefer,30,You can't hit this blunt 'cause this reefer ain't cheap,cheap,INNER,SLANT,cmu,MED,Y
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,cheap,31,A bitch hit my blunt and it put her to sleep,sleep,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,blunt,31,A bitch hit my blunt and it put her to sleep,blunt,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,hit,31,A bitch hit my blunt and it put her to sleep,bitch,INNER,SLANT,cmu,MED,Y
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,hit,31,A bitch hit my blunt and it put her to sleep,hit,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,reefer,31,A bitch hit my blunt and it put her to sleep,sleep,INNER,SLANT,cmu,MED,Y
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,cheap,32,"You know I stay chiefin', ain't talkin' 'bout Keef",Keef,END,SLANT,cmu,MED,Y
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,ain't,32,"You know I stay chiefin', ain't talkin' 'bout Keef",ain't,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,ain't,32,"You know I stay chiefin', ain't talkin' 'bout Keef",stay,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,reefer,32,"You know I stay chiefin', ain't talkin' 'bout Keef",Keef,INNER,SLANT,cmu,MED,Y
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,cheap,33,"On the way to the A, got a load in the Jeep",Jeep,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,30,You can't hit this blunt 'cause this reefer ain't cheap,cheap,34,"Had a whole ton of loud, that shit gone in a week",week,END,SLANT,cmu,MED,Y
+Marley Vibez,31,A bitch hit my blunt and it put her to sleep,bitch,31,A bitch hit my blunt and it put her to sleep,hit,INNER,SLANT,cmu,MED,Y
+Marley Vibez,31,A bitch hit my blunt and it put her to sleep,sleep,32,"You know I stay chiefin', ain't talkin' 'bout Keef",Keef,END,SLANT,cmu,MED,Y
+Marley Vibez,31,A bitch hit my blunt and it put her to sleep,bitch,32,"You know I stay chiefin', ain't talkin' 'bout Keef",chiefin,INNER,ASSONANCE,vowel,LOW,N
+Marley Vibez,31,A bitch hit my blunt and it put her to sleep,sleep,33,"On the way to the A, got a load in the Jeep",Jeep,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,31,A bitch hit my blunt and it put her to sleep,sleep,34,"Had a whole ton of loud, that shit gone in a week",week,END,SLANT,cmu,MED,Y
+Marley Vibez,31,A bitch hit my blunt and it put her to sleep,sleep,35,"Put that shit out you smokin', that strain there is weak",weak,END,SLANT,cmu,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",stay,32,"You know I stay chiefin', ain't talkin' 'bout Keef",ain't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",Keef,33,"On the way to the A, got a load in the Jeep",Jeep,END,SLANT,cmu,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",ain't,33,"On the way to the A, got a load in the Jeep",way,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",know,33,"On the way to the A, got a load in the Jeep",load,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",stay,33,"On the way to the A, got a load in the Jeep",way,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",talkin,33,"On the way to the A, got a load in the Jeep",got,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",Keef,34,"Had a whole ton of loud, that shit gone in a week",week,END,SLANT,cmu,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",'bout,34,"Had a whole ton of loud, that shit gone in a week",loud,INNER,SLANT,cmu,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",chiefin,34,"Had a whole ton of loud, that shit gone in a week",shit,INNER,ASSONANCE,vowel,LOW,N
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",know,34,"Had a whole ton of loud, that shit gone in a week",whole,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",Keef,35,"Put that shit out you smokin', that strain there is weak",weak,END,SLANT,cmu,MED,Y
+Marley Vibez,32,"You know I stay chiefin', ain't talkin' 'bout Keef",Keef,36,You smelled the three-five and then run down the street,street,END,SLANT,cmu,MED,Y
+Marley Vibez,33,"On the way to the A, got a load in the Jeep",Jeep,34,"Had a whole ton of loud, that shit gone in a week",week,END,SLANT,cmu,MED,Y
+Marley Vibez,33,"On the way to the A, got a load in the Jeep",load,34,"Had a whole ton of loud, that shit gone in a week",whole,INNER,SLANT,cmu,MED,Y
+Marley Vibez,33,"On the way to the A, got a load in the Jeep",Jeep,35,"Put that shit out you smokin', that strain there is weak",weak,END,SLANT,cmu,MED,Y
+Marley Vibez,33,"On the way to the A, got a load in the Jeep",load,35,"Put that shit out you smokin', that strain there is weak",smokin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,33,"On the way to the A, got a load in the Jeep",way,35,"Put that shit out you smokin', that strain there is weak",strain,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,33,"On the way to the A, got a load in the Jeep",Jeep,36,You smelled the three-five and then run down the street,street,END,SLANT,cmu,MED,Y
+Marley Vibez,33,"On the way to the A, got a load in the Jeep",Jeep,37,My ho pussy stay wet just like she a creep,creep,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,34,"Had a whole ton of loud, that shit gone in a week",week,35,"Put that shit out you smokin', that strain there is weak",weak,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,34,"Had a whole ton of loud, that shit gone in a week",shit,35,"Put that shit out you smokin', that strain there is weak",shit,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,34,"Had a whole ton of loud, that shit gone in a week",whole,35,"Put that shit out you smokin', that strain there is weak",smokin,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,34,"Had a whole ton of loud, that shit gone in a week",week,36,You smelled the three-five and then run down the street,street,END,SLANT,cmu,MED,Y
+Marley Vibez,34,"Had a whole ton of loud, that shit gone in a week",loud,36,You smelled the three-five and then run down the street,down,INNER,SLANT,cmu,MED,Y
+Marley Vibez,34,"Had a whole ton of loud, that shit gone in a week",ton,36,You smelled the three-five and then run down the street,run,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,34,"Had a whole ton of loud, that shit gone in a week",week,36,You smelled the three-five and then run down the street,three,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,34,"Had a whole ton of loud, that shit gone in a week",week,37,My ho pussy stay wet just like she a creep,creep,END,SLANT,cmu,MED,Y
+Marley Vibez,34,"Had a whole ton of loud, that shit gone in a week",week,38,"Took a hundred P's back, they had too many seeds",seeds,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",weak,36,You smelled the three-five and then run down the street,street,END,SLANT,cmu,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",there,36,You smelled the three-five and then run down the street,smelled,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",weak,36,You smelled the three-five and then run down the street,three,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",weak,37,My ho pussy stay wet just like she a creep,creep,END,SLANT,cmu,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",Put,37,My ho pussy stay wet just like she a creep,pussy,INNER,SLANT,cmu,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",smokin,37,My ho pussy stay wet just like she a creep,ho,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",strain,37,My ho pussy stay wet just like she a creep,stay,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",there,37,My ho pussy stay wet just like she a creep,wet,INNER,SLANT,cmu,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",weak,38,"Took a hundred P's back, they had too many seeds",seeds,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,35,"Put that shit out you smokin', that strain there is weak",weak,39,"Told my girl, ""Bae, I don't want you to leave""",leave,END,SLANT,cmu,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,three,36,You smelled the three-five and then run down the street,street,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,street,37,My ho pussy stay wet just like she a creep,creep,END,SLANT,cmu,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,five,37,My ho pussy stay wet just like she a creep,like,INNER,SLANT,cmu,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,smelled,37,My ho pussy stay wet just like she a creep,wet,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,three,37,My ho pussy stay wet just like she a creep,creep,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,street,38,"Took a hundred P's back, they had too many seeds",seeds,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,run,38,"Took a hundred P's back, they had too many seeds",hundred,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,smelled,38,"Took a hundred P's back, they had too many seeds",many,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,street,38,"Took a hundred P's back, they had too many seeds",P's,INNER,SLANT,cmu,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,three,38,"Took a hundred P's back, they had too many seeds",P's,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,three,38,"Took a hundred P's back, they had too many seeds",seeds,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,street,39,"Told my girl, ""Bae, I don't want you to leave""",leave,END,SLANT,cmu,MED,Y
+Marley Vibez,36,You smelled the three-five and then run down the street,street,40,Had to pray for a plug on my hands and my knees,knees,END,SLANT,cmu,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,creep,38,"Took a hundred P's back, they had too many seeds",seeds,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,creep,38,"Took a hundred P's back, they had too many seeds",P's,INNER,SLANT,cmu,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,pussy,38,"Took a hundred P's back, they had too many seeds",Took,INNER,SLANT,cmu,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,wet,38,"Took a hundred P's back, they had too many seeds",many,INNER,SLANT,cmu,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,creep,39,"Told my girl, ""Bae, I don't want you to leave""",leave,END,SLANT,cmu,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,ho,39,"Told my girl, ""Bae, I don't want you to leave""",don't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,ho,39,"Told my girl, ""Bae, I don't want you to leave""",Told,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,like,39,"Told my girl, ""Bae, I don't want you to leave""",Bae,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,creep,40,Had to pray for a plug on my hands and my knees,knees,END,SLANT,cmu,MED,Y
+Marley Vibez,37,My ho pussy stay wet just like she a creep,creep,41,"Thousand pounds on the truck, I'll load it with ease",ease,END,SLANT,cmu,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",back,38,"Took a hundred P's back, they had too many seeds",had,INNER,SLANT,cmu,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",P's,38,"Took a hundred P's back, they had too many seeds",seeds,INNER,SLANT,cmu,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",seeds,39,"Told my girl, ""Bae, I don't want you to leave""",leave,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",P's,39,"Told my girl, ""Bae, I don't want you to leave""",leave,INNER,SLANT,cmu,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",seeds,40,Had to pray for a plug on my hands and my knees,knees,END,SLANT,cmu,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",back,40,Had to pray for a plug on my hands and my knees,Had,INNER,SLANT,cmu,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",back,40,Had to pray for a plug on my hands and my knees,hands,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",had,40,Had to pray for a plug on my hands and my knees,Had,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",had,40,Had to pray for a plug on my hands and my knees,hands,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",hundred,40,Had to pray for a plug on my hands and my knees,plug,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",P's,40,Had to pray for a plug on my hands and my knees,knees,INNER,PERFECT,cmu,HIGH,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",seeds,41,"Thousand pounds on the truck, I'll load it with ease",ease,END,SLANT,cmu,MED,Y
+Marley Vibez,38,"Took a hundred P's back, they had too many seeds",seeds,42,"Ran off from a plug, he was Vietnamese",Vietnamese,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,39,"Told my girl, ""Bae, I don't want you to leave""",Told,39,"Told my girl, ""Bae, I don't want you to leave""",don't,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,39,"Told my girl, ""Bae, I don't want you to leave""",leave,40,Had to pray for a plug on my hands and my knees,knees,END,SLANT,cmu,MED,Y
+Marley Vibez,39,"Told my girl, ""Bae, I don't want you to leave""",leave,41,"Thousand pounds on the truck, I'll load it with ease",ease,END,SLANT,cmu,MED,Y
+Marley Vibez,39,"Told my girl, ""Bae, I don't want you to leave""",Bae,41,"Thousand pounds on the truck, I'll load it with ease",I'll,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,39,"Told my girl, ""Bae, I don't want you to leave""",don't,41,"Thousand pounds on the truck, I'll load it with ease",load,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,39,"Told my girl, ""Bae, I don't want you to leave""",Told,41,"Thousand pounds on the truck, I'll load it with ease",load,INNER,SLANT,cmu,MED,Y
+Marley Vibez,39,"Told my girl, ""Bae, I don't want you to leave""",leave,42,"Ran off from a plug, he was Vietnamese",Vietnamese,END,SLANT,cmu,MED,Y
+Marley Vibez,40,Had to pray for a plug on my hands and my knees,Had,40,Had to pray for a plug on my hands and my knees,hands,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,40,Had to pray for a plug on my hands and my knees,knees,41,"Thousand pounds on the truck, I'll load it with ease",ease,END,PERFECT,cmu,HIGH,Y
+Marley Vibez,40,Had to pray for a plug on my hands and my knees,plug,41,"Thousand pounds on the truck, I'll load it with ease",truck,INNER,SLANT,cmu,MED,Y
+Marley Vibez,40,Had to pray for a plug on my hands and my knees,knees,42,"Ran off from a plug, he was Vietnamese",Vietnamese,END,SLANT,cmu,MED,Y
+Marley Vibez,40,Had to pray for a plug on my hands and my knees,Had,42,"Ran off from a plug, he was Vietnamese",Ran,INNER,SLANT,cmu,MED,Y
+Marley Vibez,40,Had to pray for a plug on my hands and my knees,hands,42,"Ran off from a plug, he was Vietnamese",Ran,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,40,Had to pray for a plug on my hands and my knees,plug,42,"Ran off from a plug, he was Vietnamese",plug,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,40,Had to pray for a plug on my hands and my knees,knees,44,"If I go out, then I'ma go out like a G",G,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,41,"Thousand pounds on the truck, I'll load it with ease",Thousand,41,"Thousand pounds on the truck, I'll load it with ease",pounds,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,41,"Thousand pounds on the truck, I'll load it with ease",ease,42,"Ran off from a plug, he was Vietnamese",Vietnamese,END,SLANT,cmu,MED,Y
+Marley Vibez,41,"Thousand pounds on the truck, I'll load it with ease",truck,42,"Ran off from a plug, he was Vietnamese",plug,INNER,SLANT,cmu,MED,Y
+Marley Vibez,41,"Thousand pounds on the truck, I'll load it with ease",I'll,43,"To this day right now, he lookin' for me",right,INNER,SLANT,cmu,MED,Y
+Marley Vibez,41,"Thousand pounds on the truck, I'll load it with ease",pounds,43,"To this day right now, he lookin' for me",now,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,41,"Thousand pounds on the truck, I'll load it with ease",Thousand,43,"To this day right now, he lookin' for me",now,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,41,"Thousand pounds on the truck, I'll load it with ease",ease,44,"If I go out, then I'ma go out like a G",G,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,42,"Ran off from a plug, he was Vietnamese",Vietnamese,44,"If I go out, then I'ma go out like a G",G,END,ASSONANCE,vowel,MED,Y
+Marley Vibez,43,"To this day right now, he lookin' for me",right,44,"If I go out, then I'ma go out like a G",like,INNER,SLANT,cmu,MED,Y
+Marley Vibez,44,"If I go out, then I'ma go out like a G",go,44,"If I go out, then I'ma go out like a G",go,INNER,REPEAT,spelling,HIGH,N
+Marley Vibez,44,"If I go out, then I'ma go out like a G",G,45,"Man, roll that shit up, man, fuck these niggas, man",these,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,44,"If I go out, then I'ma go out like a G",go,45,"Man, roll that shit up, man, fuck these niggas, man",roll,INNER,ASSONANCE,vowel,MED,Y
+Marley Vibez,44,"If I go out, then I'ma go out like a G",I'ma,45,"Man, roll that shit up, man, fuck these niggas, man",shit,INNER,SLANT,spelling,LOW,Y
+Marley Vibez,45,"Man, roll that shit up, man, fuck these niggas, man",Man,45,"Man, roll that shit up, man, fuck these niggas, man",man,INNER,REPEAT,spelling,HIGH,N

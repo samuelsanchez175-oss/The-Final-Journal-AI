@@ -1,0 +1,516 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+All In*,1,"We goin' up, yeah (Huh)",goin,2,"We goin' up, yeah Cadillac, BP trucks, yeah (Woah)",goin,INNER,REPEAT,spelling,HIGH,N
+All In*,2,"We goin' up, yeah Cadillac, BP trucks, yeah (Woah)",trucks,3,"All my hoes got fat butts and they all don't give no fucks, nah",fucks,END,PERFECT,cmu,HIGH,Y
+All In*,2,"We goin' up, yeah Cadillac, BP trucks, yeah (Woah)",Cadillac,3,"All my hoes got fat butts and they all don't give no fucks, nah",fat,INNER,SLANT,cmu,MED,Y
+All In*,2,"We goin' up, yeah Cadillac, BP trucks, yeah (Woah)",trucks,3,"All my hoes got fat butts and they all don't give no fucks, nah",butts,INNER,SLANT,cmu,MED,Y
+All In*,2,"We goin' up, yeah Cadillac, BP trucks, yeah (Woah)",trucks,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",somethin,END,ASSONANCE,vowel,MED,Y
+All In*,2,"We goin' up, yeah Cadillac, BP trucks, yeah (Woah)",BP,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",need,INNER,ASSONANCE,vowel,MED,Y
+All In*,2,"We goin' up, yeah Cadillac, BP trucks, yeah (Woah)",trucks,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",crutch,INNER,ASSONANCE,vowel,MED,Y
+All In*,2,"We goin' up, yeah Cadillac, BP trucks, yeah (Woah)",trucks,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",cut,INNER,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",All,3,"All my hoes got fat butts and they all don't give no fucks, nah",all,INNER,REPEAT,spelling,HIGH,N
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",butts,3,"All my hoes got fat butts and they all don't give no fucks, nah",fucks,INNER,SLANT,cmu,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",don't,3,"All my hoes got fat butts and they all don't give no fucks, nah",no,INNER,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",hoes,3,"All my hoes got fat butts and they all don't give no fucks, nah",don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",hoes,3,"All my hoes got fat butts and they all don't give no fucks, nah",no,INNER,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",fucks,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",somethin,END,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",All,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",fall,INNER,PERFECT,cmu,HIGH,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",butts,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",crutch,INNER,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",butts,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",cut,INNER,SLANT,cmu,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",butts,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",somethin,INNER,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",fucks,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",crutch,INNER,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",fucks,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",cut,INNER,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",give,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",sippin,INNER,ASSONANCE,vowel,MED,Y
+All In*,3,"All my hoes got fat butts and they all don't give no fucks, nah",All,5,I said I'm all in (Yeah),all,INNER,REPEAT,spelling,HIGH,N
+All In*,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",crutch,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",somethin,INNER,ASSONANCE,vowel,MED,Y
+All In*,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",cut,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",crutch,INNER,SLANT,cmu,MED,Y
+All In*,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",cut,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",somethin,INNER,ASSONANCE,vowel,MED,Y
+All In*,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",like,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",might,INNER,SLANT,cmu,MED,Y
+All In*,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",fall,5,I said I'm all in (Yeah),all,INNER,PERFECT,cmu,HIGH,Y
+All In*,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",need,6,"Only thing to do is just keep ballin' (Oh, yeah)",keep,INNER,SLANT,cmu,MED,Y
+All In*,4,"I'm sippin' codeine like a cut, I might fall down, I need me a crutch or somethin', yeah",sippin,6,"Only thing to do is just keep ballin' (Oh, yeah)",thing,INNER,SLANT,cmu,MED,Y
+All In*,5,I said I'm all in (Yeah),all,7,"She told me that she don't usually keep callin' (Fuck, ayy)",callin,END,SLANT,cmu,MED,Y
+All In*,5,I said I'm all in (Yeah),all,8,She told me that she don't do this often,often,END,ASSONANCE,vowel,MED,Y
+All In*,6,"Only thing to do is just keep ballin' (Oh, yeah)",keep,7,"She told me that she don't usually keep callin' (Fuck, ayy)",keep,INNER,REPEAT,spelling,HIGH,N
+All In*,6,"Only thing to do is just keep ballin' (Oh, yeah)",Only,7,"She told me that she don't usually keep callin' (Fuck, ayy)",don't,INNER,SLANT,cmu,MED,Y
+All In*,6,"Only thing to do is just keep ballin' (Oh, yeah)",Only,7,"She told me that she don't usually keep callin' (Fuck, ayy)",told,INNER,ASSONANCE,vowel,MED,Y
+All In*,6,"Only thing to do is just keep ballin' (Oh, yeah)",Only,8,She told me that she don't do this often,don't,INNER,SLANT,cmu,MED,Y
+All In*,6,"Only thing to do is just keep ballin' (Oh, yeah)",Only,8,She told me that she don't do this often,told,INNER,ASSONANCE,vowel,MED,Y
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",told,7,"She told me that she don't usually keep callin' (Fuck, ayy)",don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",callin,8,She told me that she don't do this often,often,END,ASSONANCE,vowel,MED,Y
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",don't,8,She told me that she don't do this often,don't,INNER,REPEAT,spelling,HIGH,N
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",don't,8,She told me that she don't do this often,told,INNER,ASSONANCE,vowel,MED,Y
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",told,8,She told me that she don't do this often,don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",told,8,She told me that she don't do this often,told,INNER,REPEAT,spelling,HIGH,N
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",callin,9,"I know that you don't do this often, lil' baby",often,INNER,ASSONANCE,vowel,MED,Y
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",don't,9,"I know that you don't do this often, lil' baby",don't,INNER,REPEAT,spelling,HIGH,N
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",don't,9,"I know that you don't do this often, lil' baby",know,INNER,ASSONANCE,vowel,MED,Y
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",told,9,"I know that you don't do this often, lil' baby",don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,7,"She told me that she don't usually keep callin' (Fuck, ayy)",told,9,"I know that you don't do this often, lil' baby",know,INNER,ASSONANCE,vowel,MED,Y
+All In*,8,She told me that she don't do this often,told,8,She told me that she don't do this often,don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,8,She told me that she don't do this often,don't,9,"I know that you don't do this often, lil' baby",don't,INNER,REPEAT,spelling,HIGH,N
+All In*,8,She told me that she don't do this often,don't,9,"I know that you don't do this often, lil' baby",know,INNER,ASSONANCE,vowel,MED,Y
+All In*,8,She told me that she don't do this often,often,9,"I know that you don't do this often, lil' baby",often,INNER,REPEAT,spelling,HIGH,N
+All In*,8,She told me that she don't do this often,told,9,"I know that you don't do this often, lil' baby",don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,8,She told me that she don't do this often,told,9,"I know that you don't do this often, lil' baby",know,INNER,ASSONANCE,vowel,MED,Y
+All In*,9,"I know that you don't do this often, lil' baby",know,9,"I know that you don't do this often, lil' baby",don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,9,"I know that you don't do this often, lil' baby",baby,10,"I'm really not goin' with the talkin', lil' baby",baby,END,REPEAT,spelling,HIGH,N
+All In*,9,"I know that you don't do this often, lil' baby",lil,10,"I'm really not goin' with the talkin', lil' baby",lil,INNER,REPEAT,spelling,HIGH,N
+All In*,9,"I know that you don't do this often, lil' baby",lil,10,"I'm really not goin' with the talkin', lil' baby",really,INNER,SLANT,cmu,MED,Y
+All In*,9,"I know that you don't do this often, lil' baby",baby,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",baby,END,REPEAT,spelling,HIGH,N
+All In*,9,"I know that you don't do this often, lil' baby",don't,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",know,INNER,ASSONANCE,vowel,MED,Y
+All In*,9,"I know that you don't do this often, lil' baby",know,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",know,INNER,REPEAT,spelling,HIGH,N
+All In*,9,"I know that you don't do this often, lil' baby",lil,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",fin,INNER,SLANT,cmu,MED,Y
+All In*,9,"I know that you don't do this often, lil' baby",lil,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",lil,INNER,REPEAT,spelling,HIGH,N
+All In*,9,"I know that you don't do this often, lil' baby",baby,12,"That SUV fast as a 'Rari, lil' baby",baby,END,REPEAT,spelling,HIGH,N
+All In*,9,"I know that you don't do this often, lil' baby",baby,13,"Speakin' of baby, she ate me like pastry",pastry,END,ASSONANCE,vowel,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",not,10,"I'm really not goin' with the talkin', lil' baby",talkin,INNER,ASSONANCE,vowel,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",really,10,"I'm really not goin' with the talkin', lil' baby",lil,INNER,SLANT,cmu,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",baby,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",baby,END,REPEAT,spelling,HIGH,N
+All In*,10,"I'm really not goin' with the talkin', lil' baby",lil,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",fin,INNER,SLANT,cmu,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",lil,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",lil,INNER,REPEAT,spelling,HIGH,N
+All In*,10,"I'm really not goin' with the talkin', lil' baby",not,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",sharkin,INNER,ASSONANCE,vowel,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",really,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",fin,INNER,SLANT,cmu,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",really,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",lil,INNER,SLANT,cmu,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",talkin,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",sharkin,INNER,ASSONANCE,vowel,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",baby,12,"That SUV fast as a 'Rari, lil' baby",baby,END,REPEAT,spelling,HIGH,N
+All In*,10,"I'm really not goin' with the talkin', lil' baby",lil,12,"That SUV fast as a 'Rari, lil' baby",lil,INNER,REPEAT,spelling,HIGH,N
+All In*,10,"I'm really not goin' with the talkin', lil' baby",really,12,"That SUV fast as a 'Rari, lil' baby",lil,INNER,SLANT,cmu,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",baby,13,"Speakin' of baby, she ate me like pastry",pastry,END,ASSONANCE,vowel,MED,Y
+All In*,10,"I'm really not goin' with the talkin', lil' baby",baby,14,"So there's no need for no 'Rari, lil' baby (Woah)",baby,END,REPEAT,spelling,HIGH,N
+All In*,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",fin,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",lil,INNER,SLANT,cmu,MED,Y
+All In*,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",baby,12,"That SUV fast as a 'Rari, lil' baby",baby,END,REPEAT,spelling,HIGH,N
+All In*,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",fin,12,"That SUV fast as a 'Rari, lil' baby",lil,INNER,SLANT,cmu,MED,Y
+All In*,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",lil,12,"That SUV fast as a 'Rari, lil' baby",lil,INNER,REPEAT,spelling,HIGH,N
+All In*,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",baby,13,"Speakin' of baby, she ate me like pastry",pastry,END,ASSONANCE,vowel,MED,Y
+All In*,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",baby,13,"Speakin' of baby, she ate me like pastry",ate,INNER,SLANT,cmu,MED,Y
+All In*,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",baby,13,"Speakin' of baby, she ate me like pastry",baby,INNER,REPEAT,spelling,HIGH,N
+All In*,11,"The fin on me, know I be sharkin', lil' baby (Yeah)",baby,14,"So there's no need for no 'Rari, lil' baby (Woah)",baby,END,REPEAT,spelling,HIGH,N
+All In*,12,"That SUV fast as a 'Rari, lil' baby",baby,13,"Speakin' of baby, she ate me like pastry",pastry,END,ASSONANCE,vowel,MED,Y
+All In*,12,"That SUV fast as a 'Rari, lil' baby",baby,13,"Speakin' of baby, she ate me like pastry",ate,INNER,SLANT,cmu,MED,Y
+All In*,12,"That SUV fast as a 'Rari, lil' baby",baby,13,"Speakin' of baby, she ate me like pastry",baby,INNER,REPEAT,spelling,HIGH,N
+All In*,12,"That SUV fast as a 'Rari, lil' baby",SUV,13,"Speakin' of baby, she ate me like pastry",Speakin,INNER,ASSONANCE,vowel,MED,Y
+All In*,12,"That SUV fast as a 'Rari, lil' baby",baby,14,"So there's no need for no 'Rari, lil' baby (Woah)",baby,END,REPEAT,spelling,HIGH,N
+All In*,12,"That SUV fast as a 'Rari, lil' baby",'Rari,14,"So there's no need for no 'Rari, lil' baby (Woah)",'Rari,INNER,REPEAT,spelling,HIGH,N
+All In*,12,"That SUV fast as a 'Rari, lil' baby",lil,14,"So there's no need for no 'Rari, lil' baby (Woah)",lil,INNER,REPEAT,spelling,HIGH,N
+All In*,12,"That SUV fast as a 'Rari, lil' baby",SUV,14,"So there's no need for no 'Rari, lil' baby (Woah)",need,INNER,ASSONANCE,vowel,MED,Y
+All In*,13,"Speakin' of baby, she ate me like pastry",ate,13,"Speakin' of baby, she ate me like pastry",pastry,INNER,ASSONANCE,vowel,MED,Y
+All In*,13,"Speakin' of baby, she ate me like pastry",baby,13,"Speakin' of baby, she ate me like pastry",ate,INNER,SLANT,cmu,MED,Y
+All In*,13,"Speakin' of baby, she ate me like pastry",baby,13,"Speakin' of baby, she ate me like pastry",pastry,INNER,ASSONANCE,vowel,MED,Y
+All In*,13,"Speakin' of baby, she ate me like pastry",pastry,14,"So there's no need for no 'Rari, lil' baby (Woah)",baby,END,ASSONANCE,vowel,MED,Y
+All In*,13,"Speakin' of baby, she ate me like pastry",ate,14,"So there's no need for no 'Rari, lil' baby (Woah)",baby,INNER,SLANT,cmu,MED,Y
+All In*,13,"Speakin' of baby, she ate me like pastry",baby,14,"So there's no need for no 'Rari, lil' baby (Woah)",baby,INNER,REPEAT,spelling,HIGH,N
+All In*,13,"Speakin' of baby, she ate me like pastry",Speakin,14,"So there's no need for no 'Rari, lil' baby (Woah)",need,INNER,ASSONANCE,vowel,MED,Y
+All In*,13,"Speakin' of baby, she ate me like pastry",like,15,"Look at my neck, yеah, that shit like the '80s",like,INNER,REPEAT,spelling,HIGH,N
+All In*,13,"Speakin' of baby, she ate me like pastry",like,15,"Look at my neck, yеah, that shit like the '80s",y,INNER,ASSONANCE,vowel,MED,Y
+All In*,13,"Speakin' of baby, she ate me like pastry",pastry,17,"Two-four-six, I spend me an eighty (Yeah)",eighty,END,ASSONANCE,vowel,MED,Y
+All In*,14,"So there's no need for no 'Rari, lil' baby (Woah)",no,14,"So there's no need for no 'Rari, lil' baby (Woah)",no,INNER,REPEAT,spelling,HIGH,N
+All In*,14,"So there's no need for no 'Rari, lil' baby (Woah)",lil,15,"Look at my neck, yеah, that shit like the '80s",shit,INNER,SLANT,cmu,MED,Y
+All In*,14,"So there's no need for no 'Rari, lil' baby (Woah)",there's,15,"Look at my neck, yеah, that shit like the '80s",neck,INNER,ASSONANCE,vowel,MED,Y
+All In*,14,"So there's no need for no 'Rari, lil' baby (Woah)",baby,16,Tell mе why you say your life like the '80s?,say,INNER,ASSONANCE,vowel,MED,Y
+All In*,14,"So there's no need for no 'Rari, lil' baby (Woah)",there's,16,Tell mе why you say your life like the '80s?,m,INNER,ASSONANCE,vowel,MED,Y
+All In*,14,"So there's no need for no 'Rari, lil' baby (Woah)",there's,16,Tell mе why you say your life like the '80s?,Tell,INNER,ASSONANCE,vowel,MED,Y
+All In*,14,"So there's no need for no 'Rari, lil' baby (Woah)",baby,17,"Two-four-six, I spend me an eighty (Yeah)",eighty,END,SLANT,cmu,MED,Y
+All In*,14,"So there's no need for no 'Rari, lil' baby (Woah)",baby,18,Spittin' this shit like I really got rabies,rabies,END,SLANT,cmu,MED,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",y,15,"Look at my neck, yеah, that shit like the '80s",like,INNER,ASSONANCE,vowel,MED,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",80s,16,Tell mе why you say your life like the '80s?,80s,END,REPEAT,spelling,HIGH,N
+All In*,15,"Look at my neck, yеah, that shit like the '80s",like,16,Tell mе why you say your life like the '80s?,life,INNER,SLANT,cmu,MED,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",like,16,Tell mе why you say your life like the '80s?,like,INNER,REPEAT,spelling,HIGH,N
+All In*,15,"Look at my neck, yеah, that shit like the '80s",like,16,Tell mе why you say your life like the '80s?,why,INNER,ASSONANCE,vowel,MED,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",neck,16,Tell mе why you say your life like the '80s?,m,INNER,SLANT,cmu,MED,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",neck,16,Tell mе why you say your life like the '80s?,Tell,INNER,SLANT,cmu,MED,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",y,16,Tell mе why you say your life like the '80s?,life,INNER,ASSONANCE,vowel,MED,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",y,16,Tell mе why you say your life like the '80s?,like,INNER,ASSONANCE,vowel,MED,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",y,16,Tell mе why you say your life like the '80s?,why,INNER,PERFECT,cmu,HIGH,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",neck,17,"Two-four-six, I spend me an eighty (Yeah)",spend,INNER,ASSONANCE,vowel,MED,Y
+All In*,15,"Look at my neck, yеah, that shit like the '80s",shit,17,"Two-four-six, I spend me an eighty (Yeah)",six,INNER,ASSONANCE,vowel,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,life,16,Tell mе why you say your life like the '80s?,like,INNER,SLANT,cmu,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,Tell,16,Tell mе why you say your life like the '80s?,m,INNER,SLANT,cmu,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,why,16,Tell mе why you say your life like the '80s?,life,INNER,ASSONANCE,vowel,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,why,16,Tell mе why you say your life like the '80s?,like,INNER,ASSONANCE,vowel,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,m,17,"Two-four-six, I spend me an eighty (Yeah)",spend,INNER,ASSONANCE,vowel,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,say,17,"Two-four-six, I spend me an eighty (Yeah)",eighty,INNER,ASSONANCE,vowel,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,Tell,17,"Two-four-six, I spend me an eighty (Yeah)",spend,INNER,ASSONANCE,vowel,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,life,18,Spittin' this shit like I really got rabies,like,INNER,SLANT,cmu,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,like,18,Spittin' this shit like I really got rabies,like,INNER,REPEAT,spelling,HIGH,N
+All In*,16,Tell mе why you say your life like the '80s?,say,18,Spittin' this shit like I really got rabies,rabies,INNER,ASSONANCE,vowel,MED,Y
+All In*,16,Tell mе why you say your life like the '80s?,why,18,Spittin' this shit like I really got rabies,like,INNER,ASSONANCE,vowel,MED,Y
+All In*,17,"Two-four-six, I spend me an eighty (Yeah)",eighty,18,Spittin' this shit like I really got rabies,rabies,END,ASSONANCE,vowel,MED,Y
+All In*,17,"Two-four-six, I spend me an eighty (Yeah)",six,18,Spittin' this shit like I really got rabies,really,INNER,ASSONANCE,vowel,MED,Y
+All In*,17,"Two-four-six, I spend me an eighty (Yeah)",six,18,Spittin' this shit like I really got rabies,shit,INNER,ASSONANCE,vowel,MED,Y
+All In*,17,"Two-four-six, I spend me an eighty (Yeah)",six,18,Spittin' this shit like I really got rabies,Spittin,INNER,ASSONANCE,vowel,MED,Y
+All In*,17,"Two-four-six, I spend me an eighty (Yeah)",six,19,"Bitch, I got VV's, your diamonds so jiffy",Bitch,INNER,ASSONANCE,vowel,MED,Y
+All In*,17,"Two-four-six, I spend me an eighty (Yeah)",six,19,"Bitch, I got VV's, your diamonds so jiffy",jiffy,INNER,ASSONANCE,vowel,MED,Y
+All In*,17,"Two-four-six, I spend me an eighty (Yeah)",eighty,20,"Carousel, I don't know which side to go, maybe",maybe,END,SLANT,cmu,MED,Y
+All In*,17,"Two-four-six, I spend me an eighty (Yeah)",eighty,21,I can't even say these niggas be hatin' (Woah),hatin,END,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,shit,18,Spittin' this shit like I really got rabies,really,INNER,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,Spittin,18,Spittin' this shit like I really got rabies,really,INNER,ASSONANCE,vowel,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,Spittin,18,Spittin' this shit like I really got rabies,shit,INNER,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,got,19,"Bitch, I got VV's, your diamonds so jiffy",got,INNER,REPEAT,spelling,HIGH,N
+All In*,18,Spittin' this shit like I really got rabies,like,19,"Bitch, I got VV's, your diamonds so jiffy",diamonds,INNER,ASSONANCE,vowel,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,really,19,"Bitch, I got VV's, your diamonds so jiffy",Bitch,INNER,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,really,19,"Bitch, I got VV's, your diamonds so jiffy",jiffy,INNER,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,shit,19,"Bitch, I got VV's, your diamonds so jiffy",Bitch,INNER,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,shit,19,"Bitch, I got VV's, your diamonds so jiffy",jiffy,INNER,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,Spittin,19,"Bitch, I got VV's, your diamonds so jiffy",Bitch,INNER,ASSONANCE,vowel,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,Spittin,19,"Bitch, I got VV's, your diamonds so jiffy",jiffy,INNER,ASSONANCE,vowel,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,rabies,20,"Carousel, I don't know which side to go, maybe",maybe,END,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,like,20,"Carousel, I don't know which side to go, maybe",side,INNER,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,really,20,"Carousel, I don't know which side to go, maybe",which,INNER,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,shit,20,"Carousel, I don't know which side to go, maybe",which,INNER,SLANT,cmu,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,Spittin,20,"Carousel, I don't know which side to go, maybe",which,INNER,ASSONANCE,vowel,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,rabies,21,I can't even say these niggas be hatin' (Woah),hatin,END,ASSONANCE,vowel,MED,Y
+All In*,18,Spittin' this shit like I really got rabies,rabies,22,Most of the time these niggas not relatin',relatin,END,ASSONANCE,vowel,MED,Y
+All In*,19,"Bitch, I got VV's, your diamonds so jiffy",Bitch,19,"Bitch, I got VV's, your diamonds so jiffy",jiffy,INNER,SLANT,cmu,MED,Y
+All In*,19,"Bitch, I got VV's, your diamonds so jiffy",Bitch,20,"Carousel, I don't know which side to go, maybe",which,INNER,PERFECT,cmu,HIGH,Y
+All In*,19,"Bitch, I got VV's, your diamonds so jiffy",diamonds,20,"Carousel, I don't know which side to go, maybe",side,INNER,ASSONANCE,vowel,MED,Y
+All In*,19,"Bitch, I got VV's, your diamonds so jiffy",jiffy,20,"Carousel, I don't know which side to go, maybe",which,INNER,SLANT,cmu,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",don't,20,"Carousel, I don't know which side to go, maybe",go,INNER,ASSONANCE,vowel,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",don't,20,"Carousel, I don't know which side to go, maybe",know,INNER,ASSONANCE,vowel,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",know,20,"Carousel, I don't know which side to go, maybe",go,INNER,PERFECT,cmu,HIGH,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",maybe,21,I can't even say these niggas be hatin' (Woah),hatin,END,ASSONANCE,vowel,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",maybe,21,I can't even say these niggas be hatin' (Woah),say,INNER,ASSONANCE,vowel,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",maybe,22,Most of the time these niggas not relatin',relatin,END,ASSONANCE,vowel,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",don't,22,Most of the time these niggas not relatin',Most,INNER,SLANT,cmu,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",go,22,Most of the time these niggas not relatin',Most,INNER,ASSONANCE,vowel,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",know,22,Most of the time these niggas not relatin',Most,INNER,ASSONANCE,vowel,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",side,22,Most of the time these niggas not relatin',time,INNER,SLANT,cmu,MED,Y
+All In*,20,"Carousel, I don't know which side to go, maybe",maybe,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",relations,END,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),even,21,I can't even say these niggas be hatin' (Woah),these,INNER,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),say,21,I can't even say these niggas be hatin' (Woah),hatin,INNER,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),hatin,22,Most of the time these niggas not relatin',relatin,END,MULTI,multi,HIGH,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),even,22,Most of the time these niggas not relatin',these,INNER,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),niggas,22,Most of the time these niggas not relatin',niggas,INNER,REPEAT,spelling,HIGH,N
+All In*,21,I can't even say these niggas be hatin' (Woah),say,22,Most of the time these niggas not relatin',relatin,INNER,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),these,22,Most of the time these niggas not relatin',these,INNER,REPEAT,spelling,HIGH,N
+All In*,21,I can't even say these niggas be hatin' (Woah),hatin,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",relations,END,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),can't,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",had,INNER,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),even,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",Probably,INNER,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),even,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",see,INNER,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),say,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",relations,INNER,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),these,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",Probably,INNER,ASSONANCE,vowel,MED,Y
+All In*,21,I can't even say these niggas be hatin' (Woah),these,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",see,INNER,ASSONANCE,vowel,MED,Y
+All In*,22,Most of the time these niggas not relatin',relatin,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",relations,END,ASSONANCE,vowel,MED,Y
+All In*,22,Most of the time these niggas not relatin',these,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",Probably,INNER,ASSONANCE,vowel,MED,Y
+All In*,22,Most of the time these niggas not relatin',these,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",see,INNER,ASSONANCE,vowel,MED,Y
+All In*,22,Most of the time these niggas not relatin',time,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",like,INNER,SLANT,cmu,MED,Y
+All In*,22,Most of the time these niggas not relatin',time,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",nine,INNER,SLANT,cmu,MED,Y
+All In*,22,Most of the time these niggas not relatin',time,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",times,INNER,SLANT,cmu,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",like,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",nine,INNER,SLANT,cmu,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",like,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",times,INNER,ASSONANCE,vowel,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",nine,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",times,INNER,ASSONANCE,vowel,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",Probably,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",see,INNER,PERFECT,cmu,HIGH,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",had,24,"100K just left out the bank with it, yeah",bank,INNER,ASSONANCE,vowel,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",ten,24,"100K just left out the bank with it, yeah",left,INNER,ASSONANCE,vowel,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",bitch,25,Me and Tune ridin' in a spaceship,spaceship,INNER,SLANT,cmu,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",like,25,Me and Tune ridin' in a spaceship,ridin,INNER,ASSONANCE,vowel,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",nine,25,Me and Tune ridin' in a spaceship,ridin,INNER,ASSONANCE,vowel,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",times,25,Me and Tune ridin' in a spaceship,ridin,INNER,ASSONANCE,vowel,MED,Y
+All In*,23,"Probably like nine times out of ten you see me with a bitch, we had relations (Go, woah)",relations,27,Ain't none of this shit goin' tame us,tame,END,ASSONANCE,vowel,MED,Y
+All In*,24,"100K just left out the bank with it, yeah",left,26,"We don't give a fuck 'bout the law, we'll take it there",there,INNER,ASSONANCE,vowel,MED,Y
+All In*,25,Me and Tune ridin' in a spaceship,spaceship,26,"We don't give a fuck 'bout the law, we'll take it there",give,INNER,SLANT,cmu,MED,Y
+All In*,25,Me and Tune ridin' in a spaceship,spaceship,27,Ain't none of this shit goin' tame us,shit,INNER,SLANT,cmu,MED,Y
+All In*,26,"We don't give a fuck 'bout the law, we'll take it there",fuck,27,Ain't none of this shit goin' tame us,none,INNER,SLANT,cmu,MED,Y
+All In*,26,"We don't give a fuck 'bout the law, we'll take it there",give,27,Ain't none of this shit goin' tame us,shit,INNER,SLANT,cmu,MED,Y
+All In*,26,"We don't give a fuck 'bout the law, we'll take it there",take,27,Ain't none of this shit goin' tame us,Ain't,INNER,ASSONANCE,vowel,MED,Y
+All In*,26,"We don't give a fuck 'bout the law, we'll take it there",take,27,Ain't none of this shit goin' tame us,tame,INNER,SLANT,cmu,MED,Y
+All In*,26,"We don't give a fuck 'bout the law, we'll take it there",fuck,28,I got all these chains on at one time,one,INNER,SLANT,cmu,MED,Y
+All In*,26,"We don't give a fuck 'bout the law, we'll take it there",law,28,I got all these chains on at one time,all,INNER,ASSONANCE,vowel,MED,Y
+All In*,26,"We don't give a fuck 'bout the law, we'll take it there",take,28,I got all these chains on at one time,chains,INNER,ASSONANCE,vowel,MED,Y
+All In*,26,"We don't give a fuck 'bout the law, we'll take it there",we'll,28,I got all these chains on at one time,these,INNER,SLANT,cmu,MED,Y
+All In*,27,Ain't none of this shit goin' tame us,Ain't,27,Ain't none of this shit goin' tame us,tame,INNER,ASSONANCE,vowel,MED,Y
+All In*,27,Ain't none of this shit goin' tame us,Ain't,28,I got all these chains on at one time,chains,INNER,SLANT,cmu,MED,Y
+All In*,27,Ain't none of this shit goin' tame us,none,28,I got all these chains on at one time,one,INNER,PERFECT,cmu,HIGH,Y
+All In*,27,Ain't none of this shit goin' tame us,tame,28,I got all these chains on at one time,chains,INNER,ASSONANCE,vowel,MED,Y
+All In*,27,Ain't none of this shit goin' tame us,shit,29,Most of this shit gettin' tangled,shit,INNER,REPEAT,spelling,HIGH,N
+All In*,27,Ain't none of this shit goin' tame us,tame,31,"I rip it, this shit gettin' taped up",taped,END,ASSONANCE,vowel,MED,Y
+All In*,28,I got all these chains on at one time,chains,30,"Same thing with my money, can't fit in a pocket",Same,INNER,ASSONANCE,vowel,MED,Y
+All In*,28,I got all these chains on at one time,got,30,"Same thing with my money, can't fit in a pocket",pocket,INNER,SLANT,cmu,MED,Y
+All In*,28,I got all these chains on at one time,one,30,"Same thing with my money, can't fit in a pocket",money,INNER,SLANT,cmu,MED,Y
+All In*,29,Most of this shit gettin' tangled,shit,30,"Same thing with my money, can't fit in a pocket",fit,INNER,PERFECT,cmu,HIGH,Y
+All In*,29,Most of this shit gettin' tangled,shit,30,"Same thing with my money, can't fit in a pocket",thing,INNER,SLANT,cmu,MED,Y
+All In*,29,Most of this shit gettin' tangled,tangled,30,"Same thing with my money, can't fit in a pocket",can't,INNER,ASSONANCE,vowel,MED,Y
+All In*,29,Most of this shit gettin' tangled,gettin,31,"I rip it, this shit gettin' taped up",gettin,INNER,REPEAT,spelling,HIGH,N
+All In*,29,Most of this shit gettin' tangled,shit,31,"I rip it, this shit gettin' taped up",rip,INNER,SLANT,cmu,MED,Y
+All In*,29,Most of this shit gettin' tangled,shit,31,"I rip it, this shit gettin' taped up",shit,INNER,REPEAT,spelling,HIGH,N
+All In*,30,"Same thing with my money, can't fit in a pocket",thing,30,"Same thing with my money, can't fit in a pocket",fit,INNER,SLANT,cmu,MED,Y
+All In*,30,"Same thing with my money, can't fit in a pocket",fit,31,"I rip it, this shit gettin' taped up",rip,INNER,SLANT,cmu,MED,Y
+All In*,30,"Same thing with my money, can't fit in a pocket",fit,31,"I rip it, this shit gettin' taped up",shit,INNER,PERFECT,cmu,HIGH,Y
+All In*,30,"Same thing with my money, can't fit in a pocket",Same,31,"I rip it, this shit gettin' taped up",taped,INNER,ASSONANCE,vowel,MED,Y
+All In*,30,"Same thing with my money, can't fit in a pocket",thing,31,"I rip it, this shit gettin' taped up",rip,INNER,SLANT,cmu,MED,Y
+All In*,30,"Same thing with my money, can't fit in a pocket",thing,31,"I rip it, this shit gettin' taped up",shit,INNER,SLANT,cmu,MED,Y
+All In*,30,"Same thing with my money, can't fit in a pocket",Same,32,"30K, I make that on a wake up (Yeah)",make,INNER,SLANT,cmu,MED,Y
+All In*,30,"Same thing with my money, can't fit in a pocket",Same,32,"30K, I make that on a wake up (Yeah)",wake,INNER,SLANT,cmu,MED,Y
+All In*,31,"I rip it, this shit gettin' taped up",rip,31,"I rip it, this shit gettin' taped up",shit,INNER,SLANT,cmu,MED,Y
+All In*,31,"I rip it, this shit gettin' taped up",taped,32,"30K, I make that on a wake up (Yeah)",wake,END,SLANT,cmu,MED,Y
+All In*,31,"I rip it, this shit gettin' taped up",taped,32,"30K, I make that on a wake up (Yeah)",make,INNER,SLANT,cmu,MED,Y
+All In*,31,"I rip it, this shit gettin' taped up",gettin,33,"30K, I spend that by night time (Yeah)",spend,INNER,ASSONANCE,vowel,MED,Y
+All In*,32,"30K, I make that on a wake up (Yeah)",make,32,"30K, I make that on a wake up (Yeah)",wake,INNER,PERFECT,cmu,HIGH,Y
+All In*,32,"30K, I make that on a wake up (Yeah)",30K,33,"30K, I spend that by night time (Yeah)",30K,INNER,REPEAT,spelling,HIGH,N
+All In*,33,"30K, I spend that by night time (Yeah)",by,33,"30K, I spend that by night time (Yeah)",night,INNER,ASSONANCE,vowel,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",by,33,"30K, I spend that by night time (Yeah)",time,INNER,ASSONANCE,vowel,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",night,33,"30K, I spend that by night time (Yeah)",time,INNER,SLANT,cmu,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",time,34,"Yeah, I'm fuckin' with shawty, she light bright",bright,END,SLANT,cmu,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",by,34,"Yeah, I'm fuckin' with shawty, she light bright",bright,INNER,ASSONANCE,vowel,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",by,34,"Yeah, I'm fuckin' with shawty, she light bright",light,INNER,ASSONANCE,vowel,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",night,34,"Yeah, I'm fuckin' with shawty, she light bright",bright,INNER,PERFECT,cmu,HIGH,Y
+All In*,33,"30K, I spend that by night time (Yeah)",night,34,"Yeah, I'm fuckin' with shawty, she light bright",light,INNER,PERFECT,cmu,HIGH,Y
+All In*,33,"30K, I spend that by night time (Yeah)",time,34,"Yeah, I'm fuckin' with shawty, she light bright",light,INNER,SLANT,cmu,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",time,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",kind,END,ASSONANCE,vowel,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",by,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",kind,INNER,ASSONANCE,vowel,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",night,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",kind,INNER,ASSONANCE,vowel,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",time,36,Makin' money apart of my sunshine (Yeah),sunshine,END,SLANT,cmu,MED,Y
+All In*,33,"30K, I spend that by night time (Yeah)",time,37,"Get up every day, on the run grind (Yeah, yeah)",grind,END,ASSONANCE,vowel,MED,Y
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",light,34,"Yeah, I'm fuckin' with shawty, she light bright",bright,INNER,PERFECT,cmu,HIGH,Y
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",bright,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",kind,END,ASSONANCE,vowel,MED,Y
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",fuckin,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",fuckin,INNER,REPEAT,spelling,HIGH,N
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",light,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",kind,INNER,ASSONANCE,vowel,MED,Y
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",shawty,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",shawty,INNER,REPEAT,spelling,HIGH,N
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",bright,36,Makin' money apart of my sunshine (Yeah),sunshine,END,SLANT,cmu,MED,Y
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",fuckin,36,Makin' money apart of my sunshine (Yeah),money,INNER,SLANT,cmu,MED,Y
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",light,36,Makin' money apart of my sunshine (Yeah),sunshine,INNER,SLANT,cmu,MED,Y
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",shawty,36,Makin' money apart of my sunshine (Yeah),money,INNER,ASSONANCE,vowel,LOW,N
+All In*,34,"Yeah, I'm fuckin' with shawty, she light bright",bright,37,"Get up every day, on the run grind (Yeah, yeah)",grind,END,ASSONANCE,vowel,MED,Y
+All In*,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",kind,36,Makin' money apart of my sunshine (Yeah),sunshine,END,SLANT,cmu,MED,Y
+All In*,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",fuckin,36,Makin' money apart of my sunshine (Yeah),money,INNER,SLANT,cmu,MED,Y
+All In*,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",shawty,36,Makin' money apart of my sunshine (Yeah),money,INNER,ASSONANCE,vowel,LOW,N
+All In*,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",kind,37,"Get up every day, on the run grind (Yeah, yeah)",grind,END,PERFECT,cmu,HIGH,Y
+All In*,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",fuckin,37,"Get up every day, on the run grind (Yeah, yeah)",run,INNER,SLANT,cmu,MED,Y
+All In*,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",shawty,37,"Get up every day, on the run grind (Yeah, yeah)",every,INNER,ASSONANCE,vowel,LOW,N
+All In*,35,"Yeah, I'm fuckin' with shawty, she my kind (Trim)",kind,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",kind,END,REPEAT,spelling,HIGH,N
+All In*,36,Makin' money apart of my sunshine (Yeah),sunshine,37,"Get up every day, on the run grind (Yeah, yeah)",grind,END,SLANT,cmu,MED,Y
+All In*,36,Makin' money apart of my sunshine (Yeah),money,37,"Get up every day, on the run grind (Yeah, yeah)",run,INNER,SLANT,cmu,MED,Y
+All In*,36,Makin' money apart of my sunshine (Yeah),apart,38,Get up every day and you pop Percs (Yeah),pop,INNER,ASSONANCE,vowel,MED,Y
+All In*,36,Makin' money apart of my sunshine (Yeah),sunshine,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",kind,END,SLANT,cmu,MED,Y
+All In*,36,Makin' money apart of my sunshine (Yeah),sunshine,40,"In the field, Bloodbathh my startin' five",five,END,SLANT,cmu,MED,Y
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",Get,37,"Get up every day, on the run grind (Yeah, yeah)",every,INNER,SLANT,cmu,MED,Y
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",day,38,Get up every day and you pop Percs (Yeah),day,INNER,REPEAT,spelling,HIGH,N
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",every,38,Get up every day and you pop Percs (Yeah),every,INNER,REPEAT,spelling,HIGH,N
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",every,38,Get up every day and you pop Percs (Yeah),Get,INNER,SLANT,cmu,MED,Y
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",Get,38,Get up every day and you pop Percs (Yeah),every,INNER,SLANT,cmu,MED,Y
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",Get,38,Get up every day and you pop Percs (Yeah),Get,INNER,REPEAT,spelling,HIGH,N
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",grind,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",kind,END,PERFECT,cmu,HIGH,Y
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",run,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",fuck,INNER,SLANT,cmu,MED,Y
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",run,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",gut,INNER,SLANT,cmu,MED,Y
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",grind,40,"In the field, Bloodbathh my startin' five",five,END,ASSONANCE,vowel,MED,Y
+All In*,37,"Get up every day, on the run grind (Yeah, yeah)",grind,41,"He was once rappin', but now he a dead guy (Yeah)",guy,END,ASSONANCE,vowel,MED,Y
+All In*,38,Get up every day and you pop Percs (Yeah),Get,38,Get up every day and you pop Percs (Yeah),every,INNER,SLANT,cmu,MED,Y
+All In*,38,Get up every day and you pop Percs (Yeah),pop,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",wanna,INNER,SLANT,cmu,MED,Y
+All In*,38,Get up every day and you pop Percs (Yeah),pop,40,"In the field, Bloodbathh my startin' five",startin,INNER,ASSONANCE,vowel,MED,Y
+All In*,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",fuck,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",gut,INNER,SLANT,cmu,MED,Y
+All In*,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",kind,40,"In the field, Bloodbathh my startin' five",five,END,ASSONANCE,vowel,MED,Y
+All In*,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",wanna,40,"In the field, Bloodbathh my startin' five",startin,INNER,ASSONANCE,vowel,MED,Y
+All In*,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",kind,41,"He was once rappin', but now he a dead guy (Yeah)",guy,END,ASSONANCE,vowel,MED,Y
+All In*,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",fatty,41,"He was once rappin', but now he a dead guy (Yeah)",rappin,INNER,ASSONANCE,vowel,MED,Y
+All In*,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",fuck,41,"He was once rappin', but now he a dead guy (Yeah)",once,INNER,ASSONANCE,vowel,MED,Y
+All In*,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",gut,41,"He was once rappin', but now he a dead guy (Yeah)",once,INNER,ASSONANCE,vowel,MED,Y
+All In*,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",kind,42,"I got G2, shit got feds tired",tired,END,SLANT,cmu,MED,Y
+All In*,39,"And the fatty, wanna fuck up your gut kind (Woah, slatt)",kind,43,"Free Smurk, shit got my head fried",fried,END,SLANT,cmu,MED,Y
+All In*,40,"In the field, Bloodbathh my startin' five",five,41,"He was once rappin', but now he a dead guy (Yeah)",guy,END,ASSONANCE,vowel,MED,Y
+All In*,40,"In the field, Bloodbathh my startin' five",five,42,"I got G2, shit got feds tired",tired,END,SLANT,cmu,MED,Y
+All In*,40,"In the field, Bloodbathh my startin' five",startin,42,"I got G2, shit got feds tired",got,INNER,ASSONANCE,vowel,MED,Y
+All In*,40,"In the field, Bloodbathh my startin' five",five,43,"Free Smurk, shit got my head fried",fried,END,SLANT,cmu,MED,Y
+All In*,41,"He was once rappin', but now he a dead guy (Yeah)",guy,42,"I got G2, shit got feds tired",tired,END,ASSONANCE,vowel,MED,Y
+All In*,41,"He was once rappin', but now he a dead guy (Yeah)",dead,42,"I got G2, shit got feds tired",feds,INNER,SLANT,cmu,MED,Y
+All In*,41,"He was once rappin', but now he a dead guy (Yeah)",guy,43,"Free Smurk, shit got my head fried",fried,END,ASSONANCE,vowel,MED,Y
+All In*,41,"He was once rappin', but now he a dead guy (Yeah)",dead,43,"Free Smurk, shit got my head fried",head,INNER,PERFECT,cmu,HIGH,Y
+All In*,42,"I got G2, shit got feds tired",got,42,"I got G2, shit got feds tired",got,INNER,REPEAT,spelling,HIGH,N
+All In*,42,"I got G2, shit got feds tired",tired,43,"Free Smurk, shit got my head fried",fried,END,SLANT,cmu,MED,Y
+All In*,42,"I got G2, shit got feds tired",feds,43,"Free Smurk, shit got my head fried",head,INNER,SLANT,cmu,MED,Y
+All In*,42,"I got G2, shit got feds tired",got,43,"Free Smurk, shit got my head fried",got,INNER,REPEAT,spelling,HIGH,N
+All In*,42,"I got G2, shit got feds tired",shit,43,"Free Smurk, shit got my head fried",shit,INNER,REPEAT,spelling,HIGH,N
+All In*,42,"I got G2, shit got feds tired",got,44,"Dude on his shoulder, I don't wanna hear 'bout it",wanna,INNER,SLANT,cmu,MED,Y
+All In*,43,"Free Smurk, shit got my head fried",Free,44,"Dude on his shoulder, I don't wanna hear 'bout it",hear,INNER,ASSONANCE,vowel,MED,Y
+All In*,43,"Free Smurk, shit got my head fried",got,44,"Dude on his shoulder, I don't wanna hear 'bout it",wanna,INNER,SLANT,cmu,MED,Y
+All In*,43,"Free Smurk, shit got my head fried",got,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",got,INNER,REPEAT,spelling,HIGH,N
+All In*,43,"Free Smurk, shit got my head fried",got,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",lot,INNER,PERFECT,cmu,HIGH,Y
+All In*,43,"Free Smurk, shit got my head fried",got,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",sorry,INNER,SLANT,cmu,MED,Y
+All In*,43,"Free Smurk, shit got my head fried",got,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",wanna,INNER,SLANT,cmu,MED,Y
+All In*,43,"Free Smurk, shit got my head fried",shit,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",kill,INNER,SLANT,cmu,MED,Y
+All In*,43,"Free Smurk, shit got my head fried",shit,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",nigga,INNER,SLANT,spelling,LOW,Y
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",shoulder,44,"Dude on his shoulder, I don't wanna hear 'bout it",don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",don't,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",don't,INNER,REPEAT,spelling,HIGH,N
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",don't,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",hoes,INNER,ASSONANCE,vowel,MED,Y
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",shoulder,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",shoulder,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",hoes,INNER,ASSONANCE,vowel,MED,Y
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",wanna,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",got,INNER,SLANT,cmu,MED,Y
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",wanna,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",lot,INNER,SLANT,cmu,MED,Y
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",wanna,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",sorry,INNER,SLANT,cmu,MED,Y
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",wanna,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",wanna,INNER,REPEAT,spelling,HIGH,N
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",'bout,46,My main shooters don't talk 'bout killin' niggas,'bout,INNER,REPEAT,spelling,HIGH,N
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",don't,46,My main shooters don't talk 'bout killin' niggas,don't,INNER,REPEAT,spelling,HIGH,N
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",Dude,46,My main shooters don't talk 'bout killin' niggas,shooters,INNER,ASSONANCE,vowel,MED,Y
+All In*,44,"Dude on his shoulder, I don't wanna hear 'bout it",shoulder,46,My main shooters don't talk 'bout killin' niggas,don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",got,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",lot,INNER,PERFECT,cmu,HIGH,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",got,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",sorry,INNER,SLANT,cmu,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",hoes,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",lot,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",sorry,INNER,SLANT,cmu,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",wanna,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",got,INNER,SLANT,cmu,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",wanna,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",lot,INNER,SLANT,cmu,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",wanna,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",sorry,INNER,SLANT,cmu,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",don't,46,My main shooters don't talk 'bout killin' niggas,don't,INNER,REPEAT,spelling,HIGH,N
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",hoes,46,My main shooters don't talk 'bout killin' niggas,don't,INNER,ASSONANCE,vowel,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",kill,46,My main shooters don't talk 'bout killin' niggas,killin,INNER,SLANT,cmu,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",nigga,46,My main shooters don't talk 'bout killin' niggas,niggas,INNER,SLANT,spelling,LOW,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",don't,47,So that's how I know once these niggas lyin',know,INNER,ASSONANCE,vowel,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",hoes,47,So that's how I know once these niggas lyin',know,INNER,ASSONANCE,vowel,MED,Y
+All In*,45,"I wanna kill a nigga, got a lot of hoes sorry, don't you? (Oh, yeah)",nigga,47,So that's how I know once these niggas lyin',niggas,INNER,SLANT,spelling,LOW,Y
+All In*,46,My main shooters don't talk 'bout killin' niggas,'bout,47,So that's how I know once these niggas lyin',how,INNER,ASSONANCE,vowel,MED,Y
+All In*,46,My main shooters don't talk 'bout killin' niggas,don't,47,So that's how I know once these niggas lyin',know,INNER,ASSONANCE,vowel,MED,Y
+All In*,46,My main shooters don't talk 'bout killin' niggas,killin,47,So that's how I know once these niggas lyin',lyin,INNER,PERFECT,spelling,MED,Y
+All In*,46,My main shooters don't talk 'bout killin' niggas,niggas,47,So that's how I know once these niggas lyin',niggas,INNER,REPEAT,spelling,HIGH,N
+All In*,46,My main shooters don't talk 'bout killin' niggas,don't,48,"Fast car, no seatbelt, just vibin' (Yeah)",no,INNER,ASSONANCE,vowel,MED,Y
+All In*,46,My main shooters don't talk 'bout killin' niggas,killin,48,"Fast car, no seatbelt, just vibin' (Yeah)",vibin,INNER,PERFECT,spelling,MED,Y
+All In*,47,So that's how I know once these niggas lyin',these,47,So that's how I know once these niggas lyin',lyin,INNER,SLANT,spelling,LOW,Y
+All In*,47,So that's how I know once these niggas lyin',lyin,48,"Fast car, no seatbelt, just vibin' (Yeah)",vibin,END,PERFECT,spelling,MED,Y
+All In*,47,So that's how I know once these niggas lyin',know,48,"Fast car, no seatbelt, just vibin' (Yeah)",no,INNER,PERFECT,cmu,HIGH,Y
+All In*,47,So that's how I know once these niggas lyin',lyin,49,"Get your main freak, she ke-keep wildin'",freak,INNER,SLANT,spelling,LOW,Y
+All In*,47,So that's how I know once these niggas lyin',lyin,49,"Get your main freak, she ke-keep wildin'",keep,INNER,SLANT,spelling,LOW,Y
+All In*,47,So that's how I know once these niggas lyin',these,49,"Get your main freak, she ke-keep wildin'",freak,INNER,SLANT,cmu,MED,Y
+All In*,47,So that's how I know once these niggas lyin',these,49,"Get your main freak, she ke-keep wildin'",keep,INNER,SLANT,cmu,MED,Y
+All In*,48,"Fast car, no seatbelt, just vibin' (Yeah)",seatbelt,49,"Get your main freak, she ke-keep wildin'",Get,INNER,SLANT,cmu,MED,Y
+All In*,48,"Fast car, no seatbelt, just vibin' (Yeah)",seatbelt,49,"Get your main freak, she ke-keep wildin'",ke,INNER,ASSONANCE,vowel,MED,Y
+All In*,48,"Fast car, no seatbelt, just vibin' (Yeah)",car,50,Want me a fre-freak ho from the Island (Huh),Want,INNER,ASSONANCE,vowel,MED,Y
+All In*,48,"Fast car, no seatbelt, just vibin' (Yeah)",no,50,Want me a fre-freak ho from the Island (Huh),ho,INNER,PERFECT,cmu,HIGH,Y
+All In*,49,"Get your main freak, she ke-keep wildin'",freak,49,"Get your main freak, she ke-keep wildin'",keep,INNER,SLANT,cmu,MED,Y
+All In*,49,"Get your main freak, she ke-keep wildin'",Get,49,"Get your main freak, she ke-keep wildin'",ke,INNER,ASSONANCE,vowel,MED,Y
+All In*,49,"Get your main freak, she ke-keep wildin'",wildin,50,Want me a fre-freak ho from the Island (Huh),Island,END,ASSONANCE,vowel,MED,Y
+All In*,49,"Get your main freak, she ke-keep wildin'",freak,50,Want me a fre-freak ho from the Island (Huh),freak,INNER,REPEAT,spelling,HIGH,N
+All In*,49,"Get your main freak, she ke-keep wildin'",ke,50,Want me a fre-freak ho from the Island (Huh),fre,INNER,ASSONANCE,vowel,LOW,N
+All In*,49,"Get your main freak, she ke-keep wildin'",keep,50,Want me a fre-freak ho from the Island (Huh),freak,INNER,SLANT,cmu,MED,Y
+All In*,49,"Get your main freak, she ke-keep wildin'",wildin,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",stylin,END,SLANT,cmu,MED,Y
+All In*,49,"Get your main freak, she ke-keep wildin'",freak,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",cheat,INNER,SLANT,cmu,MED,Y
+All In*,49,"Get your main freak, she ke-keep wildin'",keep,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",cheat,INNER,SLANT,cmu,MED,Y
+All In*,49,"Get your main freak, she ke-keep wildin'",main,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",ain't,INNER,SLANT,cmu,MED,Y
+All In*,49,"Get your main freak, she ke-keep wildin'",wildin,53,"Too many clothes, I just keep on buyin'",buyin,END,ASSONANCE,vowel,MED,Y
+All In*,50,Want me a fre-freak ho from the Island (Huh),Island,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",stylin,END,ASSONANCE,vowel,MED,Y
+All In*,50,Want me a fre-freak ho from the Island (Huh),freak,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",cheat,INNER,SLANT,cmu,MED,Y
+All In*,50,Want me a fre-freak ho from the Island (Huh),ho,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",code,INNER,ASSONANCE,vowel,MED,Y
+All In*,50,Want me a fre-freak ho from the Island (Huh),ho,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",know,INNER,PERFECT,cmu,HIGH,Y
+All In*,50,Want me a fre-freak ho from the Island (Huh),Island,53,"Too many clothes, I just keep on buyin'",buyin,END,ASSONANCE,vowel,MED,Y
+All In*,50,Want me a fre-freak ho from the Island (Huh),Island,54,"Picked up the Tracks one time, so I'm a pilot",pilot,END,SLANT,cmu,MED,Y
+All In*,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",know,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",code,INNER,ASSONANCE,vowel,MED,Y
+All In*,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",ain't,52,"Now, put it on everyday, I was fucked up",everyday,INNER,ASSONANCE,vowel,MED,Y
+All In*,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",stylin,53,"Too many clothes, I just keep on buyin'",buyin,END,SLANT,cmu,MED,Y
+All In*,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",cheat,53,"Too many clothes, I just keep on buyin'",keep,INNER,SLANT,cmu,MED,Y
+All In*,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",code,53,"Too many clothes, I just keep on buyin'",clothes,INNER,ASSONANCE,vowel,MED,Y
+All In*,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",know,53,"Too many clothes, I just keep on buyin'",clothes,INNER,ASSONANCE,vowel,MED,Y
+All In*,51,"They ain't know I'm the cheat code, I'm stylin' (Uh)",stylin,54,"Picked up the Tracks one time, so I'm a pilot",pilot,END,SLANT,cmu,MED,Y
+All In*,52,"Now, put it on everyday, I was fucked up",fucked,54,"Picked up the Tracks one time, so I'm a pilot",one,INNER,ASSONANCE,vowel,MED,Y
+All In*,53,"Too many clothes, I just keep on buyin'",buyin,54,"Picked up the Tracks one time, so I'm a pilot",pilot,END,ASSONANCE,vowel,MED,Y
+All In*,53,"Too many clothes, I just keep on buyin'",buyin,54,"Picked up the Tracks one time, so I'm a pilot",time,INNER,SLANT,cmu,MED,Y
+All In*,53,"Too many clothes, I just keep on buyin'",buyin,57,"Margiela, no lace, you can't tie that (Yeah)",tie,END,ASSONANCE,vowel,MED,Y
+All In*,54,"Picked up the Tracks one time, so I'm a pilot",time,54,"Picked up the Tracks one time, so I'm a pilot",pilot,INNER,ASSONANCE,vowel,MED,Y
+All In*,54,"Picked up the Tracks one time, so I'm a pilot",pilot,56,"Get high like a jet, you should fly back (Huh)",fly,INNER,ASSONANCE,vowel,MED,Y
+All In*,54,"Picked up the Tracks one time, so I'm a pilot",pilot,56,"Get high like a jet, you should fly back (Huh)",high,INNER,ASSONANCE,vowel,MED,Y
+All In*,54,"Picked up the Tracks one time, so I'm a pilot",pilot,56,"Get high like a jet, you should fly back (Huh)",like,INNER,ASSONANCE,vowel,MED,Y
+All In*,54,"Picked up the Tracks one time, so I'm a pilot",time,56,"Get high like a jet, you should fly back (Huh)",fly,INNER,ASSONANCE,vowel,MED,Y
+All In*,54,"Picked up the Tracks one time, so I'm a pilot",time,56,"Get high like a jet, you should fly back (Huh)",high,INNER,ASSONANCE,vowel,MED,Y
+All In*,54,"Picked up the Tracks one time, so I'm a pilot",time,56,"Get high like a jet, you should fly back (Huh)",like,INNER,SLANT,cmu,MED,Y
+All In*,54,"Picked up the Tracks one time, so I'm a pilot",Tracks,56,"Get high like a jet, you should fly back (Huh)",back,INNER,SLANT,cmu,MED,Y
+All In*,54,"Picked up the Tracks one time, so I'm a pilot",pilot,57,"Margiela, no lace, you can't tie that (Yeah)",tie,END,ASSONANCE,vowel,MED,Y
+All In*,55,"Bailin' out on an opp, I did that (Yeah)",Bailin,57,"Margiela, no lace, you can't tie that (Yeah)",lace,INNER,ASSONANCE,vowel,MED,Y
+All In*,55,"Bailin' out on an opp, I did that (Yeah)",opp,59,"Fresh shot, hit a opp on his",opp,END,REPEAT,spelling,HIGH,N
+All In*,56,"Get high like a jet, you should fly back (Huh)",Get,56,"Get high like a jet, you should fly back (Huh)",jet,INNER,PERFECT,cmu,HIGH,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",high,56,"Get high like a jet, you should fly back (Huh)",fly,INNER,PERFECT,cmu,HIGH,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",high,56,"Get high like a jet, you should fly back (Huh)",like,INNER,ASSONANCE,vowel,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",like,56,"Get high like a jet, you should fly back (Huh)",fly,INNER,ASSONANCE,vowel,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",back,57,"Margiela, no lace, you can't tie that (Yeah)",can't,INNER,ASSONANCE,vowel,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",fly,57,"Margiela, no lace, you can't tie that (Yeah)",tie,INNER,PERFECT,cmu,HIGH,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",high,57,"Margiela, no lace, you can't tie that (Yeah)",tie,INNER,PERFECT,cmu,HIGH,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",like,57,"Margiela, no lace, you can't tie that (Yeah)",tie,INNER,ASSONANCE,vowel,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",back,58,My diamonds 3D like IMAX,IMAX,END,SLANT,cmu,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",fly,58,My diamonds 3D like IMAX,diamonds,INNER,ASSONANCE,vowel,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",fly,58,My diamonds 3D like IMAX,like,INNER,ASSONANCE,vowel,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",high,58,My diamonds 3D like IMAX,diamonds,INNER,ASSONANCE,vowel,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",high,58,My diamonds 3D like IMAX,like,INNER,ASSONANCE,vowel,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",like,58,My diamonds 3D like IMAX,diamonds,INNER,ASSONANCE,vowel,MED,Y
+All In*,56,"Get high like a jet, you should fly back (Huh)",like,58,My diamonds 3D like IMAX,like,INNER,REPEAT,spelling,HIGH,N
+All In*,56,"Get high like a jet, you should fly back (Huh)",back,60,Puttin' money on his head like a top hat,hat,END,SLANT,cmu,MED,Y
+All In*,57,"Margiela, no lace, you can't tie that (Yeah)",can't,58,My diamonds 3D like IMAX,IMAX,INNER,ASSONANCE,vowel,MED,Y
+All In*,57,"Margiela, no lace, you can't tie that (Yeah)",tie,58,My diamonds 3D like IMAX,diamonds,INNER,ASSONANCE,vowel,MED,Y
+All In*,57,"Margiela, no lace, you can't tie that (Yeah)",tie,58,My diamonds 3D like IMAX,like,INNER,ASSONANCE,vowel,MED,Y
+All In*,58,My diamonds 3D like IMAX,diamonds,58,My diamonds 3D like IMAX,like,INNER,ASSONANCE,vowel,MED,Y
+All In*,58,My diamonds 3D like IMAX,IMAX,60,Puttin' money on his head like a top hat,hat,END,ASSONANCE,vowel,MED,Y
+All In*,58,My diamonds 3D like IMAX,diamonds,60,Puttin' money on his head like a top hat,like,INNER,ASSONANCE,vowel,MED,Y
+All In*,58,My diamonds 3D like IMAX,like,60,Puttin' money on his head like a top hat,like,INNER,REPEAT,spelling,HIGH,N
+All In*,58,My diamonds 3D like IMAX,IMAX,62,"I don't sleep, yeah, I really got eye bags",bags,END,SLANT,cmu,MED,Y
+All In*,59,"Fresh shot, hit a opp on his",shot,59,"Fresh shot, hit a opp on his",opp,INNER,SLANT,cmu,MED,Y
+All In*,59,"Fresh shot, hit a opp on his",Fresh,60,Puttin' money on his head like a top hat,head,INNER,SLANT,cmu,MED,Y
+All In*,59,"Fresh shot, hit a opp on his",opp,60,Puttin' money on his head like a top hat,top,INNER,PERFECT,cmu,HIGH,Y
+All In*,59,"Fresh shot, hit a opp on his",shot,60,Puttin' money on his head like a top hat,top,INNER,SLANT,cmu,MED,Y
+All In*,59,"Fresh shot, hit a opp on his",Fresh,61,Puttin' money on his head like a toupee,head,INNER,SLANT,cmu,MED,Y
+All In*,60,Puttin' money on his head like a top hat,Puttin,60,Puttin' money on his head like a top hat,money,INNER,ASSONANCE,vowel,MED,Y
+All In*,60,Puttin' money on his head like a top hat,head,61,Puttin' money on his head like a toupee,head,INNER,REPEAT,spelling,HIGH,N
+All In*,60,Puttin' money on his head like a top hat,like,61,Puttin' money on his head like a toupee,like,INNER,REPEAT,spelling,HIGH,N
+All In*,60,Puttin' money on his head like a top hat,money,61,Puttin' money on his head like a toupee,money,INNER,REPEAT,spelling,HIGH,N
+All In*,60,Puttin' money on his head like a top hat,money,61,Puttin' money on his head like a toupee,Puttin,INNER,ASSONANCE,vowel,MED,Y
+All In*,60,Puttin' money on his head like a top hat,Puttin,61,Puttin' money on his head like a toupee,money,INNER,ASSONANCE,vowel,MED,Y
+All In*,60,Puttin' money on his head like a top hat,Puttin,61,Puttin' money on his head like a toupee,Puttin,INNER,REPEAT,spelling,HIGH,N
+All In*,60,Puttin' money on his head like a top hat,hat,62,"I don't sleep, yeah, I really got eye bags",bags,END,ASSONANCE,vowel,MED,Y
+All In*,60,Puttin' money on his head like a top hat,like,62,"I don't sleep, yeah, I really got eye bags",eye,INNER,ASSONANCE,vowel,MED,Y
+All In*,60,Puttin' money on his head like a top hat,top,62,"I don't sleep, yeah, I really got eye bags",got,INNER,SLANT,cmu,MED,Y
+All In*,61,Puttin' money on his head like a toupee,Puttin,61,Puttin' money on his head like a toupee,money,INNER,ASSONANCE,vowel,MED,Y
+All In*,61,Puttin' money on his head like a toupee,like,62,"I don't sleep, yeah, I really got eye bags",eye,INNER,ASSONANCE,vowel,MED,Y
+All In*,61,Puttin' money on his head like a toupee,toupee,63,Make sure that you get it done today,today,END,PERFECT,cmu,HIGH,Y
+All In*,61,Puttin' money on his head like a toupee,head,63,Make sure that you get it done today,get,INNER,SLANT,cmu,MED,Y
+All In*,61,Puttin' money on his head like a toupee,money,63,Make sure that you get it done today,done,INNER,SLANT,cmu,MED,Y
+All In*,61,Puttin' money on his head like a toupee,Puttin,63,Make sure that you get it done today,done,INNER,ASSONANCE,vowel,MED,Y
+All In*,61,Puttin' money on his head like a toupee,toupee,63,Make sure that you get it done today,Make,INNER,ASSONANCE,vowel,MED,Y
+All In*,61,Puttin' money on his head like a toupee,toupee,65,"She gave me a broke neck, that's two chains",chains,END,ASSONANCE,vowel,MED,Y
+All In*,62,"I don't sleep, yeah, I really got eye bags",bags,64,"Put the diamond in my hand, that's a moon ring",hand,INNER,ASSONANCE,vowel,MED,Y
+All In*,62,"I don't sleep, yeah, I really got eye bags",eye,64,"Put the diamond in my hand, that's a moon ring",diamond,INNER,ASSONANCE,vowel,MED,Y
+All In*,62,"I don't sleep, yeah, I really got eye bags",really,64,"Put the diamond in my hand, that's a moon ring",ring,INNER,SLANT,cmu,MED,Y
+All In*,63,Make sure that you get it done today,Make,63,Make sure that you get it done today,today,INNER,ASSONANCE,vowel,MED,Y
+All In*,63,Make sure that you get it done today,sure,64,"Put the diamond in my hand, that's a moon ring",Put,INNER,SLANT,cmu,MED,Y
+All In*,63,Make sure that you get it done today,today,65,"She gave me a broke neck, that's two chains",chains,END,ASSONANCE,vowel,MED,Y
+All In*,63,Make sure that you get it done today,get,65,"She gave me a broke neck, that's two chains",neck,INNER,SLANT,cmu,MED,Y
+All In*,63,Make sure that you get it done today,Make,65,"She gave me a broke neck, that's two chains",chains,INNER,ASSONANCE,vowel,MED,Y
+All In*,63,Make sure that you get it done today,Make,65,"She gave me a broke neck, that's two chains",gave,INNER,SLANT,cmu,MED,Y
+All In*,63,Make sure that you get it done today,today,65,"She gave me a broke neck, that's two chains",gave,INNER,ASSONANCE,vowel,MED,Y
+All In*,63,Make sure that you get it done today,today,67,"Too sick when I'm ballin', that's flu game",game,END,ASSONANCE,vowel,MED,Y
+All In*,64,"Put the diamond in my hand, that's a moon ring",moon,65,"She gave me a broke neck, that's two chains",two,INNER,ASSONANCE,vowel,MED,Y
+All In*,64,"Put the diamond in my hand, that's a moon ring",hand,66,"Stand on my money, taller than 2 Chainz",Stand,INNER,PERFECT,cmu,HIGH,Y
+All In*,65,"She gave me a broke neck, that's two chains",gave,65,"She gave me a broke neck, that's two chains",chains,INNER,ASSONANCE,vowel,MED,Y
+All In*,65,"She gave me a broke neck, that's two chains",chains,66,"Stand on my money, taller than 2 Chainz",Chainz,END,PERFECT,spelling,MED,Y
+All In*,65,"She gave me a broke neck, that's two chains",chains,67,"Too sick when I'm ballin', that's flu game",game,END,ASSONANCE,vowel,MED,Y
+All In*,65,"She gave me a broke neck, that's two chains",gave,67,"Too sick when I'm ballin', that's flu game",game,INNER,SLANT,cmu,MED,Y
+All In*,65,"She gave me a broke neck, that's two chains",neck,67,"Too sick when I'm ballin', that's flu game",when,INNER,SLANT,cmu,MED,Y
+All In*,65,"She gave me a broke neck, that's two chains",two,67,"Too sick when I'm ballin', that's flu game",flu,INNER,PERFECT,cmu,HIGH,Y
+All In*,65,"She gave me a broke neck, that's two chains",chains,68,"Take out the ballin', , yes, I got cool game",game,END,ASSONANCE,vowel,MED,Y
+All In*,66,"Stand on my money, taller than 2 Chainz",Stand,67,"Too sick when I'm ballin', that's flu game",ballin,INNER,ASSONANCE,vowel,MED,Y
+All In*,66,"Stand on my money, taller than 2 Chainz",Stand,68,"Take out the ballin', , yes, I got cool game",ballin,INNER,ASSONANCE,vowel,MED,Y
+All In*,66,"Stand on my money, taller than 2 Chainz",Chainz,70,Jet so big that it look like it's two planes,planes,END,PERFECT,spelling,MED,Y
+All In*,67,"Too sick when I'm ballin', that's flu game",game,68,"Take out the ballin', , yes, I got cool game",game,END,REPEAT,spelling,HIGH,N
+All In*,67,"Too sick when I'm ballin', that's flu game",ballin,68,"Take out the ballin', , yes, I got cool game",ballin,INNER,REPEAT,spelling,HIGH,N
+All In*,67,"Too sick when I'm ballin', that's flu game",flu,68,"Take out the ballin', , yes, I got cool game",cool,INNER,ASSONANCE,vowel,MED,Y
+All In*,67,"Too sick when I'm ballin', that's flu game",game,68,"Take out the ballin', , yes, I got cool game",Take,INNER,SLANT,cmu,MED,Y
+All In*,67,"Too sick when I'm ballin', that's flu game",when,68,"Take out the ballin', , yes, I got cool game",yes,INNER,SLANT,cmu,MED,Y
+All In*,67,"Too sick when I'm ballin', that's flu game",flu,69,"Bust on your wrist, and I pulled up with two rings",two,INNER,PERFECT,cmu,HIGH,Y
+All In*,67,"Too sick when I'm ballin', that's flu game",sick,69,"Bust on your wrist, and I pulled up with two rings",rings,INNER,ASSONANCE,vowel,MED,Y
+All In*,67,"Too sick when I'm ballin', that's flu game",sick,69,"Bust on your wrist, and I pulled up with two rings",wrist,INNER,ASSONANCE,vowel,MED,Y
+All In*,67,"Too sick when I'm ballin', that's flu game",game,70,Jet so big that it look like it's two planes,planes,END,ASSONANCE,vowel,MED,Y
+All In*,67,"Too sick when I'm ballin', that's flu game",game,71,"Foreign so good, I probably got two names",names,END,SLANT,cmu,MED,Y
+All In*,68,"Take out the ballin', , yes, I got cool game",Take,68,"Take out the ballin', , yes, I got cool game",game,INNER,SLANT,cmu,MED,Y
+All In*,68,"Take out the ballin', , yes, I got cool game",cool,69,"Bust on your wrist, and I pulled up with two rings",two,INNER,ASSONANCE,vowel,MED,Y
+All In*,68,"Take out the ballin', , yes, I got cool game",game,70,Jet so big that it look like it's two planes,planes,END,ASSONANCE,vowel,MED,Y
+All In*,68,"Take out the ballin', , yes, I got cool game",cool,70,Jet so big that it look like it's two planes,two,INNER,ASSONANCE,vowel,MED,Y
+All In*,68,"Take out the ballin', , yes, I got cool game",Take,70,Jet so big that it look like it's two planes,planes,INNER,ASSONANCE,vowel,MED,Y
+All In*,68,"Take out the ballin', , yes, I got cool game",yes,70,Jet so big that it look like it's two planes,Jet,INNER,SLANT,cmu,MED,Y
+All In*,68,"Take out the ballin', , yes, I got cool game",game,71,"Foreign so good, I probably got two names",names,END,SLANT,cmu,MED,Y
+All In*,69,"Bust on your wrist, and I pulled up with two rings",wrist,69,"Bust on your wrist, and I pulled up with two rings",rings,INNER,ASSONANCE,vowel,MED,Y
+All In*,69,"Bust on your wrist, and I pulled up with two rings",pulled,70,Jet so big that it look like it's two planes,look,INNER,ASSONANCE,vowel,MED,Y
+All In*,69,"Bust on your wrist, and I pulled up with two rings",rings,70,Jet so big that it look like it's two planes,big,INNER,ASSONANCE,vowel,MED,Y
+All In*,69,"Bust on your wrist, and I pulled up with two rings",two,70,Jet so big that it look like it's two planes,two,INNER,REPEAT,spelling,HIGH,N
+All In*,69,"Bust on your wrist, and I pulled up with two rings",wrist,70,Jet so big that it look like it's two planes,big,INNER,ASSONANCE,vowel,MED,Y
+All In*,69,"Bust on your wrist, and I pulled up with two rings",pulled,71,"Foreign so good, I probably got two names",good,INNER,SLANT,cmu,MED,Y
+All In*,69,"Bust on your wrist, and I pulled up with two rings",two,71,"Foreign so good, I probably got two names",two,INNER,REPEAT,spelling,HIGH,N
+All In*,70,Jet so big that it look like it's two planes,planes,71,"Foreign so good, I probably got two names",names,END,SLANT,cmu,MED,Y
+All In*,70,Jet so big that it look like it's two planes,look,71,"Foreign so good, I probably got two names",good,INNER,SLANT,cmu,MED,Y
+All In*,70,Jet so big that it look like it's two planes,two,71,"Foreign so good, I probably got two names",two,INNER,REPEAT,spelling,HIGH,N
+All In*,70,Jet so big that it look like it's two planes,big,72,"Lil Uzi, Lil Uzi, Lil Uzi (Ha, ha, ha)",Lil,INNER,SLANT,cmu,MED,Y
+All In*,70,Jet so big that it look like it's two planes,two,72,"Lil Uzi, Lil Uzi, Lil Uzi (Ha, ha, ha)",Uzi,INNER,ASSONANCE,vowel,MED,Y
+All In*,71,"Foreign so good, I probably got two names",two,72,"Lil Uzi, Lil Uzi, Lil Uzi (Ha, ha, ha)",Uzi,INNER,ASSONANCE,vowel,MED,Y
+All In*,72,"Lil Uzi, Lil Uzi, Lil Uzi (Ha, ha, ha)",Lil,72,"Lil Uzi, Lil Uzi, Lil Uzi (Ha, ha, ha)",Lil,INNER,REPEAT,spelling,HIGH,N
+All In*,72,"Lil Uzi, Lil Uzi, Lil Uzi (Ha, ha, ha)",Uzi,72,"Lil Uzi, Lil Uzi, Lil Uzi (Ha, ha, ha)",Uzi,INNER,REPEAT,spelling,HIGH,N
+All In*,72,"Lil Uzi, Lil Uzi, Lil Uzi (Ha, ha, ha)",Lil,73,"Uh, uh, I don't give no fucks, yeah",give,INNER,SLANT,cmu,MED,Y
+All In*,73,"Uh, uh, I don't give no fucks, yeah",don't,73,"Uh, uh, I don't give no fucks, yeah",no,INNER,ASSONANCE,vowel,MED,Y

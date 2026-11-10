@@ -1,0 +1,777 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+2 For 6,1,Who the hell is Carlo?,Carlo,2,Stick got a coolin' kit,got,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,1,Who the hell is Carlo?,Who,2,Stick got a coolin' kit,coolin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,1,Who the hell is Carlo?,hell,3,"Had to quit shootin' shit, know I'm too legit",legit,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,1,Who the hell is Carlo?,Who,3,"Had to quit shootin' shit, know I'm too legit",shootin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,2,Stick got a coolin' kit,Stick,2,Stick got a coolin' kit,kit,INNER,SLANT,cmu,MED,Y
+2 For 6,2,Stick got a coolin' kit,coolin,3,"Had to quit shootin' shit, know I'm too legit",shootin,INNER,SLANT,cmu,MED,Y
+2 For 6,2,Stick got a coolin' kit,kit,3,"Had to quit shootin' shit, know I'm too legit",quit,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,2,Stick got a coolin' kit,kit,3,"Had to quit shootin' shit, know I'm too legit",shit,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,2,Stick got a coolin' kit,Stick,3,"Had to quit shootin' shit, know I'm too legit",quit,INNER,SLANT,cmu,MED,Y
+2 For 6,2,Stick got a coolin' kit,Stick,3,"Had to quit shootin' shit, know I'm too legit",shit,INNER,SLANT,cmu,MED,Y
+2 For 6,2,Stick got a coolin' kit,kit,4,"Back and forth, forth, back, couldn't keep doin' it",doin,END,PERFECT,cmu,HIGH,Y
+2 For 6,2,Stick got a coolin' kit,Stick,4,"Back and forth, forth, back, couldn't keep doin' it",doin,INNER,SLANT,cmu,MED,Y
+2 For 6,2,Stick got a coolin' kit,kit,5,"Clear they block, had to show my opps who was rich",rich,END,SLANT,cmu,MED,Y
+2 For 6,2,Stick got a coolin' kit,kit,6,"Too much yellin', fussin', trippin', need a newer bitch",bitch,END,SLANT,cmu,MED,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",quit,3,"Had to quit shootin' shit, know I'm too legit",shit,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",Had,4,"Back and forth, forth, back, couldn't keep doin' it",Back,INNER,SLANT,cmu,MED,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",quit,4,"Back and forth, forth, back, couldn't keep doin' it",doin,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",shit,4,"Back and forth, forth, back, couldn't keep doin' it",doin,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",Had,5,"Clear they block, had to show my opps who was rich",had,INNER,REPEAT,spelling,HIGH,N
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",know,5,"Clear they block, had to show my opps who was rich",opps,INNER,ASSONANCE,vowel,LOW,N
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",know,5,"Clear they block, had to show my opps who was rich",show,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",quit,5,"Clear they block, had to show my opps who was rich",Clear,INNER,SLANT,cmu,MED,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",quit,5,"Clear they block, had to show my opps who was rich",rich,INNER,SLANT,cmu,MED,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",shit,5,"Clear they block, had to show my opps who was rich",Clear,INNER,SLANT,cmu,MED,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",shit,5,"Clear they block, had to show my opps who was rich",rich,INNER,SLANT,cmu,MED,Y
+2 For 6,3,"Had to quit shootin' shit, know I'm too legit",shootin,5,"Clear they block, had to show my opps who was rich",who,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,4,"Back and forth, forth, back, couldn't keep doin' it",Back,4,"Back and forth, forth, back, couldn't keep doin' it",back,INNER,REPEAT,spelling,HIGH,N
+2 For 6,4,"Back and forth, forth, back, couldn't keep doin' it",forth,4,"Back and forth, forth, back, couldn't keep doin' it",forth,INNER,REPEAT,spelling,HIGH,N
+2 For 6,4,"Back and forth, forth, back, couldn't keep doin' it",doin,5,"Clear they block, had to show my opps who was rich",rich,END,SLANT,cmu,MED,Y
+2 For 6,4,"Back and forth, forth, back, couldn't keep doin' it",Back,5,"Clear they block, had to show my opps who was rich",had,INNER,SLANT,cmu,MED,Y
+2 For 6,4,"Back and forth, forth, back, couldn't keep doin' it",doin,5,"Clear they block, had to show my opps who was rich",Clear,INNER,SLANT,cmu,MED,Y
+2 For 6,4,"Back and forth, forth, back, couldn't keep doin' it",doin,6,"Too much yellin', fussin', trippin', need a newer bitch",bitch,END,SLANT,cmu,MED,Y
+2 For 6,4,"Back and forth, forth, back, couldn't keep doin' it",doin,6,"Too much yellin', fussin', trippin', need a newer bitch",trippin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,4,"Back and forth, forth, back, couldn't keep doin' it",keep,6,"Too much yellin', fussin', trippin', need a newer bitch",need,INNER,SLANT,cmu,MED,Y
+2 For 6,4,"Back and forth, forth, back, couldn't keep doin' it",doin,7,"New Maybach three-fifty, I get two for six",six,END,ASSONANCE,vowel,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",Clear,5,"Clear they block, had to show my opps who was rich",rich,INNER,SLANT,cmu,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",show,5,"Clear they block, had to show my opps who was rich",opps,INNER,ASSONANCE,vowel,LOW,N
+2 For 6,5,"Clear they block, had to show my opps who was rich",rich,6,"Too much yellin', fussin', trippin', need a newer bitch",bitch,END,PERFECT,cmu,HIGH,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",Clear,6,"Too much yellin', fussin', trippin', need a newer bitch",bitch,INNER,SLANT,cmu,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",Clear,6,"Too much yellin', fussin', trippin', need a newer bitch",trippin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",rich,6,"Too much yellin', fussin', trippin', need a newer bitch",trippin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",who,6,"Too much yellin', fussin', trippin', need a newer bitch",newer,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",rich,7,"New Maybach three-fifty, I get two for six",six,END,ASSONANCE,vowel,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",Clear,7,"New Maybach three-fifty, I get two for six",fifty,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",Clear,7,"New Maybach three-fifty, I get two for six",six,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",rich,7,"New Maybach three-fifty, I get two for six",fifty,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",who,7,"New Maybach three-fifty, I get two for six",New,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,5,"Clear they block, had to show my opps who was rich",who,7,"New Maybach three-fifty, I get two for six",two,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",much,6,"Too much yellin', fussin', trippin', need a newer bitch",fussin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",trippin,6,"Too much yellin', fussin', trippin', need a newer bitch",bitch,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",bitch,7,"New Maybach three-fifty, I get two for six",six,END,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",bitch,7,"New Maybach three-fifty, I get two for six",fifty,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",need,7,"New Maybach three-fifty, I get two for six",three,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",newer,7,"New Maybach three-fifty, I get two for six",New,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",newer,7,"New Maybach three-fifty, I get two for six",two,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",trippin,7,"New Maybach three-fifty, I get two for six",fifty,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",trippin,7,"New Maybach three-fifty, I get two for six",six,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",yellin,7,"New Maybach three-fifty, I get two for six",get,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",need,8,"I ain't lyin' (I ain't lyin'), foreign ridin' (Skrrt, skrrt)",lyin,INNER,SLANT,spelling,LOW,Y
+2 For 6,6,"Too much yellin', fussin', trippin', need a newer bitch",yellin,8,"I ain't lyin' (I ain't lyin'), foreign ridin' (Skrrt, skrrt)",lyin,INNER,PERFECT,spelling,MED,Y
+2 For 6,7,"New Maybach three-fifty, I get two for six",fifty,7,"New Maybach three-fifty, I get two for six",six,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,7,"New Maybach three-fifty, I get two for six",New,7,"New Maybach three-fifty, I get two for six",two,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,8,"I ain't lyin' (I ain't lyin'), foreign ridin' (Skrrt, skrrt)",ridin,9,"Cashed out, but I'ma do that some more times",times,END,ASSONANCE,vowel,MED,Y
+2 For 6,8,"I ain't lyin' (I ain't lyin'), foreign ridin' (Skrrt, skrrt)",foreign,9,"Cashed out, but I'ma do that some more times",more,INNER,SLANT,cmu,MED,Y
+2 For 6,8,"I ain't lyin' (I ain't lyin'), foreign ridin' (Skrrt, skrrt)",ridin,10,"Spent a million on a crib, four times",times,END,ASSONANCE,vowel,MED,Y
+2 For 6,8,"I ain't lyin' (I ain't lyin'), foreign ridin' (Skrrt, skrrt)",foreign,10,"Spent a million on a crib, four times",four,INNER,SLANT,cmu,MED,Y
+2 For 6,8,"I ain't lyin' (I ain't lyin'), foreign ridin' (Skrrt, skrrt)",ridin,11,"Eighteen, was in my hood, Porsche flyin'",flyin,END,SLANT,cmu,MED,Y
+2 For 6,8,"I ain't lyin' (I ain't lyin'), foreign ridin' (Skrrt, skrrt)",ridin,12,"We too lit, ain't sellin' shit, endorse mine",mine,END,ASSONANCE,vowel,MED,Y
+2 For 6,9,"Cashed out, but I'ma do that some more times",times,10,"Spent a million on a crib, four times",times,END,REPEAT,spelling,HIGH,N
+2 For 6,9,"Cashed out, but I'ma do that some more times",I'ma,10,"Spent a million on a crib, four times",crib,INNER,SLANT,spelling,LOW,Y
+2 For 6,9,"Cashed out, but I'ma do that some more times",more,10,"Spent a million on a crib, four times",four,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,9,"Cashed out, but I'ma do that some more times",times,11,"Eighteen, was in my hood, Porsche flyin'",flyin,END,ASSONANCE,vowel,MED,Y
+2 For 6,9,"Cashed out, but I'ma do that some more times",more,11,"Eighteen, was in my hood, Porsche flyin'",Porsche,INNER,SLANT,cmu,MED,Y
+2 For 6,9,"Cashed out, but I'ma do that some more times",times,12,"We too lit, ain't sellin' shit, endorse mine",mine,END,ASSONANCE,vowel,MED,Y
+2 For 6,9,"Cashed out, but I'ma do that some more times",times,13,"You want advice? Of course, pussy boy, grind (Yeah)",grind,END,ASSONANCE,vowel,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",million,10,"Spent a million on a crib, four times",crib,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",times,11,"Eighteen, was in my hood, Porsche flyin'",flyin,END,ASSONANCE,vowel,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",four,11,"Eighteen, was in my hood, Porsche flyin'",Porsche,INNER,SLANT,cmu,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",times,12,"We too lit, ain't sellin' shit, endorse mine",mine,END,ASSONANCE,vowel,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",crib,12,"We too lit, ain't sellin' shit, endorse mine",lit,INNER,SLANT,cmu,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",crib,12,"We too lit, ain't sellin' shit, endorse mine",shit,INNER,SLANT,cmu,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",four,12,"We too lit, ain't sellin' shit, endorse mine",endorse,INNER,SLANT,cmu,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",million,12,"We too lit, ain't sellin' shit, endorse mine",lit,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",million,12,"We too lit, ain't sellin' shit, endorse mine",shit,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",Spent,12,"We too lit, ain't sellin' shit, endorse mine",sellin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,10,"Spent a million on a crib, four times",times,13,"You want advice? Of course, pussy boy, grind (Yeah)",grind,END,ASSONANCE,vowel,MED,Y
+2 For 6,11,"Eighteen, was in my hood, Porsche flyin'",flyin,12,"We too lit, ain't sellin' shit, endorse mine",mine,END,SLANT,cmu,MED,Y
+2 For 6,11,"Eighteen, was in my hood, Porsche flyin'",Porsche,12,"We too lit, ain't sellin' shit, endorse mine",endorse,INNER,SLANT,cmu,MED,Y
+2 For 6,11,"Eighteen, was in my hood, Porsche flyin'",flyin,13,"You want advice? Of course, pussy boy, grind (Yeah)",grind,END,ASSONANCE,vowel,MED,Y
+2 For 6,11,"Eighteen, was in my hood, Porsche flyin'",flyin,13,"You want advice? Of course, pussy boy, grind (Yeah)",advice,INNER,SLANT,cmu,MED,Y
+2 For 6,11,"Eighteen, was in my hood, Porsche flyin'",hood,13,"You want advice? Of course, pussy boy, grind (Yeah)",pussy,INNER,SLANT,cmu,MED,Y
+2 For 6,11,"Eighteen, was in my hood, Porsche flyin'",Porsche,13,"You want advice? Of course, pussy boy, grind (Yeah)",course,INNER,SLANT,cmu,MED,Y
+2 For 6,12,"We too lit, ain't sellin' shit, endorse mine",lit,12,"We too lit, ain't sellin' shit, endorse mine",shit,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,12,"We too lit, ain't sellin' shit, endorse mine",mine,13,"You want advice? Of course, pussy boy, grind (Yeah)",grind,END,SLANT,cmu,MED,Y
+2 For 6,12,"We too lit, ain't sellin' shit, endorse mine",endorse,13,"You want advice? Of course, pussy boy, grind (Yeah)",course,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,12,"We too lit, ain't sellin' shit, endorse mine",mine,13,"You want advice? Of course, pussy boy, grind (Yeah)",advice,INNER,SLANT,cmu,MED,Y
+2 For 6,12,"We too lit, ain't sellin' shit, endorse mine",endorse,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",flaw,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,12,"We too lit, ain't sellin' shit, endorse mine",endorse,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",law,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,12,"We too lit, ain't sellin' shit, endorse mine",lit,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",bitch,INNER,SLANT,cmu,MED,Y
+2 For 6,12,"We too lit, ain't sellin' shit, endorse mine",shit,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",bitch,INNER,SLANT,cmu,MED,Y
+2 For 6,13,"You want advice? Of course, pussy boy, grind (Yeah)",advice,13,"You want advice? Of course, pussy boy, grind (Yeah)",grind,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,13,"You want advice? Of course, pussy boy, grind (Yeah)",boy,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",loyalty,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,13,"You want advice? Of course, pussy boy, grind (Yeah)",course,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",flaw,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,13,"You want advice? Of course, pussy boy, grind (Yeah)",course,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",law,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,13,"You want advice? Of course, pussy boy, grind (Yeah)",want,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",can't,INNER,SLANT,spelling,LOW,Y
+2 For 6,13,"You want advice? Of course, pussy boy, grind (Yeah)",want,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",spot,INNER,SLANT,cmu,MED,Y
+2 For 6,13,"You want advice? Of course, pussy boy, grind (Yeah)",advice,15,"Stuntin' like my niggas, feed the fam like my Pop",like,INNER,SLANT,cmu,MED,Y
+2 For 6,13,"You want advice? Of course, pussy boy, grind (Yeah)",grind,15,"Stuntin' like my niggas, feed the fam like my Pop",like,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,13,"You want advice? Of course, pussy boy, grind (Yeah)",want,15,"Stuntin' like my niggas, feed the fam like my Pop",Pop,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",law,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",flaw,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",spot,15,"Stuntin' like my niggas, feed the fam like my Pop",Pop,INNER,SLANT,cmu,MED,Y
+2 For 6,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",flaw,16,"Fly high, nigga, boy, closet like the mall",mall,END,ASSONANCE,vowel,MED,Y
+2 For 6,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",law,16,"Fly high, nigga, boy, closet like the mall",mall,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",loyalty,16,"Fly high, nigga, boy, closet like the mall",boy,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,14,"Ayy, loyalty is law, can't spot a bitch with no flaw",spot,16,"Fly high, nigga, boy, closet like the mall",closet,INNER,SLANT,cmu,MED,Y
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",like,15,"Stuntin' like my niggas, feed the fam like my Pop",like,INNER,REPEAT,spelling,HIGH,N
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",like,16,"Fly high, nigga, boy, closet like the mall",Fly,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",like,16,"Fly high, nigga, boy, closet like the mall",high,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",like,16,"Fly high, nigga, boy, closet like the mall",like,INNER,REPEAT,spelling,HIGH,N
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",niggas,16,"Fly high, nigga, boy, closet like the mall",nigga,INNER,SLANT,spelling,LOW,Y
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",Pop,16,"Fly high, nigga, boy, closet like the mall",closet,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",Pop,17,"Boss who? Cut it out, we the ones in charge",charge,END,ASSONANCE,vowel,MED,Y
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",Pop,17,"Boss who? Cut it out, we the ones in charge",Boss,INNER,SLANT,cmu,MED,Y
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",Pop,18,You the type to get that shit and let your niggas starve,starve,END,ASSONANCE,vowel,MED,Y
+2 For 6,15,"Stuntin' like my niggas, feed the fam like my Pop",Pop,19,"They say ""Sky the limit"", in the Cullinan with stars",stars,END,ASSONANCE,vowel,MED,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",Fly,16,"Fly high, nigga, boy, closet like the mall",high,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",Fly,16,"Fly high, nigga, boy, closet like the mall",like,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",high,16,"Fly high, nigga, boy, closet like the mall",like,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",closet,17,"Boss who? Cut it out, we the ones in charge",Boss,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",closet,17,"Boss who? Cut it out, we the ones in charge",charge,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",closet,18,You the type to get that shit and let your niggas starve,starve,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",Fly,18,You the type to get that shit and let your niggas starve,type,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",high,18,You the type to get that shit and let your niggas starve,type,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",like,18,You the type to get that shit and let your niggas starve,type,INNER,SLANT,cmu,MED,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",nigga,18,You the type to get that shit and let your niggas starve,niggas,INNER,SLANT,spelling,LOW,Y
+2 For 6,16,"Fly high, nigga, boy, closet like the mall",nigga,18,You the type to get that shit and let your niggas starve,shit,INNER,SLANT,spelling,LOW,Y
+2 For 6,17,"Boss who? Cut it out, we the ones in charge",Boss,17,"Boss who? Cut it out, we the ones in charge",charge,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,17,"Boss who? Cut it out, we the ones in charge",Cut,17,"Boss who? Cut it out, we the ones in charge",ones,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,17,"Boss who? Cut it out, we the ones in charge",charge,18,You the type to get that shit and let your niggas starve,starve,END,SLANT,cmu,MED,Y
+2 For 6,17,"Boss who? Cut it out, we the ones in charge",Boss,18,You the type to get that shit and let your niggas starve,starve,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,17,"Boss who? Cut it out, we the ones in charge",charge,19,"They say ""Sky the limit"", in the Cullinan with stars",stars,END,SLANT,cmu,MED,Y
+2 For 6,17,"Boss who? Cut it out, we the ones in charge",Boss,19,"They say ""Sky the limit"", in the Cullinan with stars",stars,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,17,"Boss who? Cut it out, we the ones in charge",Cut,19,"They say ""Sky the limit"", in the Cullinan with stars",Cullinan,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,17,"Boss who? Cut it out, we the ones in charge",ones,19,"They say ""Sky the limit"", in the Cullinan with stars",Cullinan,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,18,You the type to get that shit and let your niggas starve,get,18,You the type to get that shit and let your niggas starve,let,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,18,You the type to get that shit and let your niggas starve,starve,19,"They say ""Sky the limit"", in the Cullinan with stars",stars,END,SLANT,cmu,MED,Y
+2 For 6,18,You the type to get that shit and let your niggas starve,shit,19,"They say ""Sky the limit"", in the Cullinan with stars",limit,INNER,SLANT,cmu,MED,Y
+2 For 6,18,You the type to get that shit and let your niggas starve,type,19,"They say ""Sky the limit"", in the Cullinan with stars",Sky,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,18,You the type to get that shit and let your niggas starve,get,20,"D to the 'Raq, you play, I get you whacked",get,INNER,REPEAT,spelling,HIGH,N
+2 For 6,18,You the type to get that shit and let your niggas starve,let,20,"D to the 'Raq, you play, I get you whacked",get,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,19,"They say ""Sky the limit"", in the Cullinan with stars",say,20,"D to the 'Raq, you play, I get you whacked",play,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,19,"They say ""Sky the limit"", in the Cullinan with stars",limit,21,"This shit like chess, you make a move, my boy know I'ma get you back",I'ma,INNER,SLANT,spelling,LOW,Y
+2 For 6,19,"They say ""Sky the limit"", in the Cullinan with stars",limit,21,"This shit like chess, you make a move, my boy know I'ma get you back",shit,INNER,SLANT,cmu,MED,Y
+2 For 6,19,"They say ""Sky the limit"", in the Cullinan with stars",say,21,"This shit like chess, you make a move, my boy know I'ma get you back",make,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,19,"They say ""Sky the limit"", in the Cullinan with stars",Sky,21,"This shit like chess, you make a move, my boy know I'ma get you back",like,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,20,"D to the 'Raq, you play, I get you whacked",'Raq,20,"D to the 'Raq, you play, I get you whacked",whacked,INNER,SLANT,spelling,LOW,Y
+2 For 6,20,"D to the 'Raq, you play, I get you whacked",whacked,21,"This shit like chess, you make a move, my boy know I'ma get you back",back,END,SLANT,cmu,MED,Y
+2 For 6,20,"D to the 'Raq, you play, I get you whacked",'Raq,21,"This shit like chess, you make a move, my boy know I'ma get you back",back,INNER,PERFECT,spelling,MED,Y
+2 For 6,20,"D to the 'Raq, you play, I get you whacked",get,21,"This shit like chess, you make a move, my boy know I'ma get you back",chess,INNER,SLANT,cmu,MED,Y
+2 For 6,20,"D to the 'Raq, you play, I get you whacked",get,21,"This shit like chess, you make a move, my boy know I'ma get you back",get,INNER,REPEAT,spelling,HIGH,N
+2 For 6,20,"D to the 'Raq, you play, I get you whacked",play,21,"This shit like chess, you make a move, my boy know I'ma get you back",make,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,20,"D to the 'Raq, you play, I get you whacked",whacked,22,"We outside, they might think I'm blind, got that stick attached",attached,END,SLANT,cmu,MED,Y
+2 For 6,20,"D to the 'Raq, you play, I get you whacked",whacked,23,"Off the bench, I'ma go for fifty, tryin' to get the max",max,END,SLANT,cmu,MED,Y
+2 For 6,20,"D to the 'Raq, you play, I get you whacked",whacked,24,"Off the hip, pop up in your city, tryin' to get them racks",racks,END,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",chess,21,"This shit like chess, you make a move, my boy know I'ma get you back",get,INNER,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",shit,21,"This shit like chess, you make a move, my boy know I'ma get you back",I'ma,INNER,SLANT,spelling,LOW,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",back,22,"We outside, they might think I'm blind, got that stick attached",attached,END,ASSONANCE,vowel,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",I'ma,22,"We outside, they might think I'm blind, got that stick attached",stick,INNER,SLANT,spelling,LOW,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",like,22,"We outside, they might think I'm blind, got that stick attached",blind,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",like,22,"We outside, they might think I'm blind, got that stick attached",might,INNER,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",like,22,"We outside, they might think I'm blind, got that stick attached",outside,INNER,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",shit,22,"We outside, they might think I'm blind, got that stick attached",stick,INNER,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",shit,22,"We outside, they might think I'm blind, got that stick attached",think,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",back,23,"Off the bench, I'ma go for fifty, tryin' to get the max",max,END,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",chess,23,"Off the bench, I'ma go for fifty, tryin' to get the max",bench,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",chess,23,"Off the bench, I'ma go for fifty, tryin' to get the max",get,INNER,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",get,23,"Off the bench, I'ma go for fifty, tryin' to get the max",bench,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",get,23,"Off the bench, I'ma go for fifty, tryin' to get the max",get,INNER,REPEAT,spelling,HIGH,N
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",I'ma,23,"Off the bench, I'ma go for fifty, tryin' to get the max",I'ma,INNER,REPEAT,spelling,HIGH,N
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",know,23,"Off the bench, I'ma go for fifty, tryin' to get the max",go,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",like,23,"Off the bench, I'ma go for fifty, tryin' to get the max",tryin,INNER,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",shit,23,"Off the bench, I'ma go for fifty, tryin' to get the max",fifty,INNER,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",shit,23,"Off the bench, I'ma go for fifty, tryin' to get the max",I'ma,INNER,SLANT,spelling,LOW,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",back,24,"Off the hip, pop up in your city, tryin' to get them racks",racks,END,SLANT,cmu,MED,Y
+2 For 6,21,"This shit like chess, you make a move, my boy know I'ma get you back",back,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hat,END,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",might,22,"We outside, they might think I'm blind, got that stick attached",blind,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",outside,22,"We outside, they might think I'm blind, got that stick attached",blind,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",outside,22,"We outside, they might think I'm blind, got that stick attached",might,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",think,22,"We outside, they might think I'm blind, got that stick attached",stick,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",attached,23,"Off the bench, I'ma go for fifty, tryin' to get the max",max,END,ASSONANCE,vowel,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",blind,23,"Off the bench, I'ma go for fifty, tryin' to get the max",tryin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",might,23,"Off the bench, I'ma go for fifty, tryin' to get the max",tryin,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",outside,23,"Off the bench, I'ma go for fifty, tryin' to get the max",tryin,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",stick,23,"Off the bench, I'ma go for fifty, tryin' to get the max",fifty,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",stick,23,"Off the bench, I'ma go for fifty, tryin' to get the max",I'ma,INNER,SLANT,spelling,LOW,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",think,23,"Off the bench, I'ma go for fifty, tryin' to get the max",fifty,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",attached,24,"Off the hip, pop up in your city, tryin' to get them racks",racks,END,ASSONANCE,vowel,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",blind,24,"Off the hip, pop up in your city, tryin' to get them racks",tryin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",got,24,"Off the hip, pop up in your city, tryin' to get them racks",pop,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",might,24,"Off the hip, pop up in your city, tryin' to get them racks",tryin,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",outside,24,"Off the hip, pop up in your city, tryin' to get them racks",tryin,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",stick,24,"Off the hip, pop up in your city, tryin' to get them racks",city,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",stick,24,"Off the hip, pop up in your city, tryin' to get them racks",hip,INNER,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",think,24,"Off the hip, pop up in your city, tryin' to get them racks",city,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",think,24,"Off the hip, pop up in your city, tryin' to get them racks",hip,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",attached,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hat,END,SLANT,cmu,MED,Y
+2 For 6,22,"We outside, they might think I'm blind, got that stick attached",attached,26,"We ain't even walk in the club yet, we in the back (Right here)",back,END,ASSONANCE,vowel,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",bench,23,"Off the bench, I'ma go for fifty, tryin' to get the max",get,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",max,24,"Off the hip, pop up in your city, tryin' to get them racks",racks,END,PERFECT,cmu,HIGH,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",bench,24,"Off the hip, pop up in your city, tryin' to get them racks",get,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",fifty,24,"Off the hip, pop up in your city, tryin' to get them racks",city,INNER,SLANT,cmu,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",fifty,24,"Off the hip, pop up in your city, tryin' to get them racks",hip,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",get,24,"Off the hip, pop up in your city, tryin' to get them racks",get,INNER,REPEAT,spelling,HIGH,N
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",I'ma,24,"Off the hip, pop up in your city, tryin' to get them racks",city,INNER,SLANT,spelling,LOW,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",I'ma,24,"Off the hip, pop up in your city, tryin' to get them racks",hip,INNER,SLANT,spelling,LOW,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",tryin,24,"Off the hip, pop up in your city, tryin' to get them racks",tryin,INNER,REPEAT,spelling,HIGH,N
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",max,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hat,END,ASSONANCE,vowel,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",bench,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",disrespect,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",fifty,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hit,INNER,SLANT,cmu,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",fifty,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",strip,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",get,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",disrespect,INNER,SLANT,cmu,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",I'ma,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hit,INNER,SLANT,spelling,LOW,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",I'ma,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",strip,INNER,SLANT,spelling,LOW,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",max,26,"We ain't even walk in the club yet, we in the back (Right here)",back,END,SLANT,cmu,MED,Y
+2 For 6,23,"Off the bench, I'ma go for fifty, tryin' to get the max",max,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,END,SLANT,spelling,LOW,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",hip,24,"Off the hip, pop up in your city, tryin' to get them racks",city,INNER,SLANT,cmu,MED,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",racks,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hat,END,ASSONANCE,vowel,MED,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",city,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hit,INNER,SLANT,cmu,MED,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",city,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",nigga,INNER,SLANT,spelling,LOW,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",city,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",strip,INNER,SLANT,cmu,MED,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",get,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",disrespect,INNER,SLANT,cmu,MED,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",hip,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hit,INNER,SLANT,cmu,MED,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",hip,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",nigga,INNER,SLANT,spelling,LOW,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",hip,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",strip,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",racks,26,"We ain't even walk in the club yet, we in the back (Right here)",back,END,SLANT,cmu,MED,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",get,26,"We ain't even walk in the club yet, we in the back (Right here)",yet,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",racks,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,END,SLANT,spelling,LOW,Y
+2 For 6,24,"Off the hip, pop up in your city, tryin' to get them racks",racks,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,END,SLANT,cmu,MED,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",nigga,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hit,INNER,SLANT,spelling,LOW,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",strip,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hit,INNER,SLANT,cmu,MED,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",strip,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",nigga,INNER,SLANT,spelling,LOW,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hat,26,"We ain't even walk in the club yet, we in the back (Right here)",back,END,SLANT,cmu,MED,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",disrespect,26,"We ain't even walk in the club yet, we in the back (Right here)",yet,INNER,SLANT,cmu,MED,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hat,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,END,SLANT,spelling,LOW,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",disrespect,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",Let,INNER,SLANT,cmu,MED,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hit,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",lil,INNER,SLANT,cmu,MED,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hit,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",whip,INNER,SLANT,cmu,MED,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",nigga,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",whip,INNER,SLANT,spelling,LOW,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",strip,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",lil,INNER,SLANT,cmu,MED,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",strip,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",whip,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hat,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,END,SLANT,cmu,MED,Y
+2 For 6,25,"Off the strip, disrespect me, nigga, they gon' hit your hat",hat,29,"Way, way back then, I had a fed mac' (Grr)",mac,END,SLANT,cmu,MED,Y
+2 For 6,26,"We ain't even walk in the club yet, we in the back (Right here)",back,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,END,PERFECT,spelling,MED,Y
+2 For 6,26,"We ain't even walk in the club yet, we in the back (Right here)",club,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",jump,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,26,"We ain't even walk in the club yet, we in the back (Right here)",club,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",Urus,INNER,ASSONANCE,vowel,LOW,N
+2 For 6,26,"We ain't even walk in the club yet, we in the back (Right here)",yet,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'nem,INNER,SLANT,spelling,LOW,Y
+2 For 6,26,"We ain't even walk in the club yet, we in the back (Right here)",yet,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",Let,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,26,"We ain't even walk in the club yet, we in the back (Right here)",back,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,END,PERFECT,cmu,HIGH,Y
+2 For 6,26,"We ain't even walk in the club yet, we in the back (Right here)",back,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",skat,INNER,SLANT,spelling,LOW,Y
+2 For 6,26,"We ain't even walk in the club yet, we in the back (Right here)",back,29,"Way, way back then, I had a fed mac' (Grr)",mac,END,PERFECT,cmu,HIGH,Y
+2 For 6,26,"We ain't even walk in the club yet, we in the back (Right here)",back,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,END,PERFECT,cmu,HIGH,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",Let,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'nem,INNER,SLANT,spelling,LOW,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",lil,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",whip,INNER,SLANT,cmu,MED,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",Urus,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",jump,INNER,ASSONANCE,vowel,LOW,N
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,END,PERFECT,spelling,MED,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",skat,INNER,SLANT,spelling,LOW,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",lil,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",shit,INNER,SLANT,cmu,MED,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",whip,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",shit,INNER,SLANT,cmu,MED,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,29,"Way, way back then, I had a fed mac' (Grr)",mac,END,PERFECT,spelling,MED,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,29,"Way, way back then, I had a fed mac' (Grr)",back,INNER,PERFECT,spelling,MED,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,29,"Way, way back then, I had a fed mac' (Grr)",had,INNER,SLANT,spelling,LOW,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'nem,29,"Way, way back then, I had a fed mac' (Grr)",fed,INNER,SLANT,spelling,LOW,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",Let,29,"Way, way back then, I had a fed mac' (Grr)",fed,INNER,SLANT,cmu,MED,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,END,PERFECT,spelling,MED,Y
+2 For 6,27,"Let lil' bro 'nem whip the Urus, I jump to the 'Llac (The 'Llac)",'Llac,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,END,SLANT,spelling,LOW,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",hot,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",hopped,INNER,SLANT,cmu,MED,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",skat,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,INNER,SLANT,spelling,LOW,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,29,"Way, way back then, I had a fed mac' (Grr)",mac,END,PERFECT,cmu,HIGH,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",skat,29,"Way, way back then, I had a fed mac' (Grr)",back,INNER,SLANT,spelling,LOW,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",skat,29,"Way, way back then, I had a fed mac' (Grr)",had,INNER,SLANT,spelling,LOW,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",skat,29,"Way, way back then, I had a fed mac' (Grr)",mac,INNER,SLANT,spelling,LOW,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,29,"Way, way back then, I had a fed mac' (Grr)",back,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,29,"Way, way back then, I had a fed mac' (Grr)",had,INNER,SLANT,cmu,MED,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,END,PERFECT,cmu,HIGH,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",Doin,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",goin,INNER,PERFECT,spelling,HIGH,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",skat,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,INNER,SLANT,spelling,LOW,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",skat,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,INNER,SLANT,spelling,LOW,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,END,SLANT,cmu,MED,Y
+2 For 6,28,"Doin' hot shit out the skat, then hopped in the track (Vroom)",track,32,"Pay-outs go out every month, that's like eighty racks (Phew)",racks,END,SLANT,cmu,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",back,29,"Way, way back then, I had a fed mac' (Grr)",had,INNER,SLANT,cmu,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",back,29,"Way, way back then, I had a fed mac' (Grr)",mac,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",had,29,"Way, way back then, I had a fed mac' (Grr)",mac,INNER,SLANT,cmu,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",Way,29,"Way, way back then, I had a fed mac' (Grr)",way,INNER,REPEAT,spelling,HIGH,N
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",mac,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,END,PERFECT,cmu,HIGH,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",back,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,INNER,REPEAT,spelling,HIGH,N
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",back,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",back,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",fed,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",never,INNER,SLANT,cmu,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",had,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,INNER,SLANT,cmu,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",had,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",had,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,INNER,SLANT,cmu,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",mac,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",mac,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",Way,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",ain't,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",mac,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,END,SLANT,cmu,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",back,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",back,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",back,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,INNER,SLANT,cmu,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",had,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,INNER,SLANT,cmu,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",had,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",had,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",mac,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",mac,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,29,"Way, way back then, I had a fed mac' (Grr)",mac,32,"Pay-outs go out every month, that's like eighty racks (Phew)",racks,END,SLANT,cmu,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,END,SLANT,cmu,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,INNER,SLANT,cmu,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,INNER,REPEAT,spelling,HIGH,N
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",sack,32,"Pay-outs go out every month, that's like eighty racks (Phew)",racks,END,SLANT,cmu,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",ain't,32,"Pay-outs go out every month, that's like eighty racks (Phew)",eighty,INNER,SLANT,cmu,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",ain't,32,"Pay-outs go out every month, that's like eighty racks (Phew)",Pay,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",back,32,"Pay-outs go out every month, that's like eighty racks (Phew)",racks,INNER,SLANT,cmu,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",havin,32,"Pay-outs go out every month, that's like eighty racks (Phew)",racks,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,30,"But I ain't never goin' back, 'cause I'm havin' sack (You know that)",never,32,"Pay-outs go out every month, that's like eighty racks (Phew)",every,INNER,SLANT,cmu,MED,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,INNER,SLANT,cmu,MED,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,INNER,REPEAT,spelling,HIGH,N
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",plaques,32,"Pay-outs go out every month, that's like eighty racks (Phew)",racks,END,PERFECT,cmu,HIGH,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",crack,32,"Pay-outs go out every month, that's like eighty racks (Phew)",racks,INNER,SLANT,cmu,MED,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",havin,32,"Pay-outs go out every month, that's like eighty racks (Phew)",racks,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",now,32,"Pay-outs go out every month, that's like eighty racks (Phew)",outs,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",Nigga,33,"That ain't shit, that's how I function, I'm okay with that",shit,INNER,SLANT,spelling,LOW,Y
+2 For 6,31,"Nigga, I was havin' crack, now I'm havin' plaques",now,33,"That ain't shit, that's how I function, I'm okay with that",how,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,32,"Pay-outs go out every month, that's like eighty racks (Phew)",Pay,32,"Pay-outs go out every month, that's like eighty racks (Phew)",eighty,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,32,"Pay-outs go out every month, that's like eighty racks (Phew)",eighty,33,"That ain't shit, that's how I function, I'm okay with that",ain't,INNER,SLANT,cmu,MED,Y
+2 For 6,32,"Pay-outs go out every month, that's like eighty racks (Phew)",month,33,"That ain't shit, that's how I function, I'm okay with that",function,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,32,"Pay-outs go out every month, that's like eighty racks (Phew)",outs,33,"That ain't shit, that's how I function, I'm okay with that",how,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,32,"Pay-outs go out every month, that's like eighty racks (Phew)",Pay,33,"That ain't shit, that's how I function, I'm okay with that",ain't,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,32,"Pay-outs go out every month, that's like eighty racks (Phew)",eighty,34,"Dreads got a Ghost Glock, put a K with that",K,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,32,"Pay-outs go out every month, that's like eighty racks (Phew)",every,34,"Dreads got a Ghost Glock, put a K with that",Dreads,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,32,"Pay-outs go out every month, that's like eighty racks (Phew)",go,34,"Dreads got a Ghost Glock, put a K with that",Ghost,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,32,"Pay-outs go out every month, that's like eighty racks (Phew)",Pay,34,"Dreads got a Ghost Glock, put a K with that",K,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,33,"That ain't shit, that's how I function, I'm okay with that",ain't,34,"Dreads got a Ghost Glock, put a K with that",K,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,33,"That ain't shit, that's how I function, I'm okay with that",ain't,35,"We ain't have to buy the stock, no, it came with that (Uh)",ain't,INNER,REPEAT,spelling,HIGH,N
+2 For 6,33,"That ain't shit, that's how I function, I'm okay with that",ain't,35,"We ain't have to buy the stock, no, it came with that (Uh)",came,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,34,"Dreads got a Ghost Glock, put a K with that",got,34,"Dreads got a Ghost Glock, put a K with that",Glock,INNER,SLANT,cmu,MED,Y
+2 For 6,34,"Dreads got a Ghost Glock, put a K with that",K,35,"We ain't have to buy the stock, no, it came with that (Uh)",came,END,ASSONANCE,vowel,MED,Y
+2 For 6,34,"Dreads got a Ghost Glock, put a K with that",Ghost,35,"We ain't have to buy the stock, no, it came with that (Uh)",no,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,34,"Dreads got a Ghost Glock, put a K with that",Glock,35,"We ain't have to buy the stock, no, it came with that (Uh)",stock,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,34,"Dreads got a Ghost Glock, put a K with that",got,35,"We ain't have to buy the stock, no, it came with that (Uh)",stock,INNER,SLANT,cmu,MED,Y
+2 For 6,34,"Dreads got a Ghost Glock, put a K with that",K,35,"We ain't have to buy the stock, no, it came with that (Uh)",ain't,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,34,"Dreads got a Ghost Glock, put a K with that",Dreads,36,Hit his top again (Bah),again,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,34,"Dreads got a Ghost Glock, put a K with that",Glock,36,Hit his top again (Bah),top,INNER,SLANT,cmu,MED,Y
+2 For 6,34,"Dreads got a Ghost Glock, put a K with that",got,36,Hit his top again (Bah),top,INNER,SLANT,cmu,MED,Y
+2 For 6,35,"We ain't have to buy the stock, no, it came with that (Uh)",ain't,35,"We ain't have to buy the stock, no, it came with that (Uh)",came,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,35,"We ain't have to buy the stock, no, it came with that (Uh)",stock,36,Hit his top again (Bah),top,INNER,SLANT,cmu,MED,Y
+2 For 6,35,"We ain't have to buy the stock, no, it came with that (Uh)",stock,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",drop,INNER,SLANT,cmu,MED,Y
+2 For 6,35,"We ain't have to buy the stock, no, it came with that (Uh)",stock,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",park,INNER,SLANT,cmu,MED,Y
+2 For 6,36,Hit his top again (Bah),again,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",again,END,REPEAT,spelling,HIGH,N
+2 For 6,36,Hit his top again (Bah),again,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",get,INNER,SLANT,cmu,MED,Y
+2 For 6,36,Hit his top again (Bah),Hit,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",Flip,INNER,SLANT,cmu,MED,Y
+2 For 6,36,Hit his top again (Bah),Hit,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",shit,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,36,Hit his top again (Bah),top,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",drop,INNER,PERFECT,cmu,HIGH,Y
+2 For 6,36,Hit his top again (Bah),top,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",park,INNER,ASSONANCE,vowel,MED,Y
+2 For 6,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",drop,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",drop,INNER,REPEAT,spelling,HIGH,N
+2 For 6,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",Flip,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",shit,INNER,SLANT,cmu,MED,Y
+2 For 6,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",get,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",again,INNER,SLANT,cmu,MED,Y
+2 For 6,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",park,37,"Flip his shit, park the drop, get in the drop again (Ayy, ayy, okay)",drop,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",overnight,2,"Nah, this shit ain't come overnight",overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",ain't,2,"Nah, this shit ain't come overnight",ain't,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",come,2,"Nah, this shit ain't come overnight",come,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",shit,2,"Nah, this shit ain't come overnight",shit,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",overnight,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",ain't,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",ain't,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",come,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",come,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",overnight,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",life,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",overnight,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",live,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",shit,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",shit,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",overnight,4,Shit ain't come overnight,overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,1,"Yeah, this shit ain't come overnight",overnight,5,This shit ain't come overnight,overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",overnight,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",ain't,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",ain't,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",come,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",come,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",overnight,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",life,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",overnight,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",live,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",shit,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",shit,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",overnight,4,Shit ain't come overnight,overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",ain't,4,Shit ain't come overnight,ain't,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",come,4,Shit ain't come overnight,come,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",shit,4,Shit ain't come overnight,Shit,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,2,"Nah, this shit ain't come overnight",overnight,5,This shit ain't come overnight,overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",hell,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",hell,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",life,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",overnight,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",live,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",life,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",live,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",overnight,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",overnight,4,Shit ain't come overnight,overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",ain't,4,Shit ain't come overnight,ain't,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",come,4,Shit ain't come overnight,come,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",life,4,Shit ain't come overnight,overnight,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",live,4,Shit ain't come overnight,overnight,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",shit,4,Shit ain't come overnight,Shit,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",overnight,5,This shit ain't come overnight,overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",ain't,5,This shit ain't come overnight,ain't,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",come,5,This shit ain't come overnight,come,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",life,5,This shit ain't come overnight,overnight,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",live,5,This shit ain't come overnight,overnight,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,3,"I had to go through hell to live this hell of a life, this shit ain't come overnight",shit,5,This shit ain't come overnight,shit,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,4,Shit ain't come overnight,overnight,5,This shit ain't come overnight,overnight,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,4,Shit ain't come overnight,ain't,5,This shit ain't come overnight,ain't,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,4,Shit ain't come overnight,come,5,This shit ain't come overnight,come,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,4,Shit ain't come overnight,Shit,5,This shit ain't come overnight,shit,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,5,This shit ain't come overnight,ain't,7,"I bumped my head, but I'm grateful, shit made me a dog",grateful,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,5,This shit ain't come overnight,ain't,7,"I bumped my head, but I'm grateful, shit made me a dog",made,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,5,This shit ain't come overnight,come,7,"I bumped my head, but I'm grateful, shit made me a dog",bumped,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,5,This shit ain't come overnight,shit,7,"I bumped my head, but I'm grateful, shit made me a dog",shit,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,6,I thought I knew it all from the start,thought,6,I thought I knew it all from the start,all,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,6,I thought I knew it all from the start,all,7,"I bumped my head, but I'm grateful, shit made me a dog",dog,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,6,I thought I knew it all from the start,thought,7,"I bumped my head, but I'm grateful, shit made me a dog",dog,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,6,I thought I knew it all from the start,all,8,"Reaching high, thought I was crazy, I ain't crazy at all",all,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,6,I thought I knew it all from the start,all,8,"Reaching high, thought I was crazy, I ain't crazy at all",thought,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,6,I thought I knew it all from the start,thought,8,"Reaching high, thought I was crazy, I ain't crazy at all",all,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,6,I thought I knew it all from the start,thought,8,"Reaching high, thought I was crazy, I ain't crazy at all",thought,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",grateful,7,"I bumped my head, but I'm grateful, shit made me a dog",made,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",dog,8,"Reaching high, thought I was crazy, I ain't crazy at all",all,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",dog,8,"Reaching high, thought I was crazy, I ain't crazy at all",thought,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",grateful,8,"Reaching high, thought I was crazy, I ain't crazy at all",ain't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",grateful,8,"Reaching high, thought I was crazy, I ain't crazy at all",crazy,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",made,8,"Reaching high, thought I was crazy, I ain't crazy at all",ain't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",made,8,"Reaching high, thought I was crazy, I ain't crazy at all",crazy,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",dog,9,"If you succeed past them, then they start praying you fall",fall,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",grateful,9,"If you succeed past them, then they start praying you fall",praying,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,7,"I bumped my head, but I'm grateful, shit made me a dog",made,9,"If you succeed past them, then they start praying you fall",praying,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",ain't,8,"Reaching high, thought I was crazy, I ain't crazy at all",crazy,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",crazy,8,"Reaching high, thought I was crazy, I ain't crazy at all",ain't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",crazy,8,"Reaching high, thought I was crazy, I ain't crazy at all",crazy,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",thought,8,"Reaching high, thought I was crazy, I ain't crazy at all",all,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",all,9,"If you succeed past them, then they start praying you fall",fall,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",ain't,9,"If you succeed past them, then they start praying you fall",praying,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",crazy,9,"If you succeed past them, then they start praying you fall",praying,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",Reaching,9,"If you succeed past them, then they start praying you fall",succeed,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",thought,9,"If you succeed past them, then they start praying you fall",fall,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",ain't,10,"Pray for my niggas, they still breaking the law, ridin' with guns",breaking,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",ain't,10,"Pray for my niggas, they still breaking the law, ridin' with guns",Pray,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",all,10,"Pray for my niggas, they still breaking the law, ridin' with guns",law,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",crazy,10,"Pray for my niggas, they still breaking the law, ridin' with guns",breaking,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",crazy,10,"Pray for my niggas, they still breaking the law, ridin' with guns",Pray,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",high,10,"Pray for my niggas, they still breaking the law, ridin' with guns",ridin,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,8,"Reaching high, thought I was crazy, I ain't crazy at all",thought,10,"Pray for my niggas, they still breaking the law, ridin' with guns",law,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,9,"If you succeed past them, then they start praying you fall",fall,10,"Pray for my niggas, they still breaking the law, ridin' with guns",law,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,9,"If you succeed past them, then they start praying you fall",praying,10,"Pray for my niggas, they still breaking the law, ridin' with guns",breaking,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,9,"If you succeed past them, then they start praying you fall",praying,10,"Pray for my niggas, they still breaking the law, ridin' with guns",Pray,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,9,"If you succeed past them, then they start praying you fall",start,11,"Mama still know that I'm in it, she hidin' the funds",Mama,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",Pray,10,"Pray for my niggas, they still breaking the law, ridin' with guns",breaking,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",guns,11,"Mama still know that I'm in it, she hidin' the funds",funds,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",law ridin,11,"Mama still know that I'm in it, she hidin' the funds",know hidin,INNER,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",ridin,11,"Mama still know that I'm in it, she hidin' the funds",hidin,INNER,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",still,11,"Mama still know that I'm in it, she hidin' the funds",still,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",guns,12,"Most niggas do it for somethin', mines from love",love,END,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",guns,12,"Most niggas do it for somethin', mines from love",somethin,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",niggas,12,"Most niggas do it for somethin', mines from love",niggas,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",ridin,12,"Most niggas do it for somethin', mines from love",mines,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,10,"Pray for my niggas, they still breaking the law, ridin' with guns",guns,13,"Nigga, I don't want shit back, just hope you bеcome",come,END,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,11,"Mama still know that I'm in it, she hidin' the funds",funds,12,"Most niggas do it for somethin', mines from love",love,END,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,11,"Mama still know that I'm in it, she hidin' the funds",funds,12,"Most niggas do it for somethin', mines from love",somethin,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,11,"Mama still know that I'm in it, she hidin' the funds",hidin,12,"Most niggas do it for somethin', mines from love",mines,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,11,"Mama still know that I'm in it, she hidin' the funds",know,12,"Most niggas do it for somethin', mines from love",Most,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,11,"Mama still know that I'm in it, she hidin' the funds",funds,13,"Nigga, I don't want shit back, just hope you bеcome",come,END,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,11,"Mama still know that I'm in it, she hidin' the funds",know,13,"Nigga, I don't want shit back, just hope you bеcome",don't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,11,"Mama still know that I'm in it, she hidin' the funds",know,13,"Nigga, I don't want shit back, just hope you bеcome",hope,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,11,"Mama still know that I'm in it, she hidin' the funds",Mama,13,"Nigga, I don't want shit back, just hope you bеcome",want,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,11,"Mama still know that I'm in it, she hidin' the funds",still,13,"Nigga, I don't want shit back, just hope you bеcome",shit,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,12,"Most niggas do it for somethin', mines from love",somethin,12,"Most niggas do it for somethin', mines from love",love,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,12,"Most niggas do it for somethin', mines from love",love,13,"Nigga, I don't want shit back, just hope you bеcome",come,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,12,"Most niggas do it for somethin', mines from love",Most,13,"Nigga, I don't want shit back, just hope you bеcome",don't,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,12,"Most niggas do it for somethin', mines from love",Most,13,"Nigga, I don't want shit back, just hope you bеcome",hope,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,12,"Most niggas do it for somethin', mines from love",niggas,13,"Nigga, I don't want shit back, just hope you bеcome",Nigga,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,12,"Most niggas do it for somethin', mines from love",somethin,13,"Nigga, I don't want shit back, just hope you bеcome",come,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,12,"Most niggas do it for somethin', mines from love",Most,14,"I get locked, niggas probably won't send letters to me",won't,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,12,"Most niggas do it for somethin', mines from love",niggas,14,"I get locked, niggas probably won't send letters to me",niggas,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",don't,13,"Nigga, I don't want shit back, just hope you bеcome",hope,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",Nigga,13,"Nigga, I don't want shit back, just hope you bеcome",shit,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",b,14,"I get locked, niggas probably won't send letters to me",probably,INNER,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",don't,14,"I get locked, niggas probably won't send letters to me",won't,INNER,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",hope,14,"I get locked, niggas probably won't send letters to me",won't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",Nigga,14,"I get locked, niggas probably won't send letters to me",niggas,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",want,14,"I get locked, niggas probably won't send letters to me",locked,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",want,14,"I get locked, niggas probably won't send letters to me",won't,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",b,15,"Peace and wealth for the fam, nigga, that's heaven for me",Peace,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",back,15,"Peace and wealth for the fam, nigga, that's heaven for me",fam,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",Nigga,15,"Peace and wealth for the fam, nigga, that's heaven for me",nigga,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,13,"Nigga, I don't want shit back, just hope you bеcome",shit,15,"Peace and wealth for the fam, nigga, that's heaven for me",nigga,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",get,14,"I get locked, niggas probably won't send letters to me",letters,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",get,14,"I get locked, niggas probably won't send letters to me",send,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",send,14,"I get locked, niggas probably won't send letters to me",letters,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",letters,15,"Peace and wealth for the fam, nigga, that's heaven for me",heaven,END,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",get,15,"Peace and wealth for the fam, nigga, that's heaven for me",heaven,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",get,15,"Peace and wealth for the fam, nigga, that's heaven for me",wealth,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",letters,15,"Peace and wealth for the fam, nigga, that's heaven for me",wealth,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",niggas,15,"Peace and wealth for the fam, nigga, that's heaven for me",nigga,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",probably,15,"Peace and wealth for the fam, nigga, that's heaven for me",Peace,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",send,15,"Peace and wealth for the fam, nigga, that's heaven for me",heaven,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",send,15,"Peace and wealth for the fam, nigga, that's heaven for me",wealth,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",letters,16,"I took risks, got my chips, then invested in me",invested,END,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",get,16,"I took risks, got my chips, then invested in me",invested,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",locked,16,"I took risks, got my chips, then invested in me",got,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",niggas,16,"I took risks, got my chips, then invested in me",chips,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,14,"I get locked, niggas probably won't send letters to me",send,16,"I took risks, got my chips, then invested in me",invested,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,15,"Peace and wealth for the fam, nigga, that's heaven for me",wealth,15,"Peace and wealth for the fam, nigga, that's heaven for me",heaven,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,15,"Peace and wealth for the fam, nigga, that's heaven for me",heaven,16,"I took risks, got my chips, then invested in me",invested,END,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,15,"Peace and wealth for the fam, nigga, that's heaven for me",wealth,16,"I took risks, got my chips, then invested in me",invested,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,15,"Peace and wealth for the fam, nigga, that's heaven for me",heaven,17,"Ones I loved started switching, still kept it G",kept,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,15,"Peace and wealth for the fam, nigga, that's heaven for me",Peace,17,"Ones I loved started switching, still kept it G",G,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,15,"Peace and wealth for the fam, nigga, that's heaven for me",wealth,17,"Ones I loved started switching, still kept it G",kept,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",risks,16,"I took risks, got my chips, then invested in me",chips,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",chips,17,"Ones I loved started switching, still kept it G",still,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",chips,17,"Ones I loved started switching, still kept it G",switching,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",got,17,"Ones I loved started switching, still kept it G",started,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",invested,17,"Ones I loved started switching, still kept it G",kept,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",risks,17,"Ones I loved started switching, still kept it G",still,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",risks,17,"Ones I loved started switching, still kept it G",switching,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",chips,18,"Stick to the script, get money, nigga",script,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",chips,18,"Stick to the script, get money, nigga",Stick,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",invested,18,"Stick to the script, get money, nigga",get,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",risks,18,"Stick to the script, get money, nigga",script,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,16,"I took risks, got my chips, then invested in me",risks,18,"Stick to the script, get money, nigga",Stick,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",Ones,17,"Ones I loved started switching, still kept it G",loved,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",switching,17,"Ones I loved started switching, still kept it G",still,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",kept,18,"Stick to the script, get money, nigga",get,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",loved,18,"Stick to the script, get money, nigga",money,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",Ones,18,"Stick to the script, get money, nigga",money,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",still,18,"Stick to the script, get money, nigga",script,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",still,18,"Stick to the script, get money, nigga",Stick,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",switching,18,"Stick to the script, get money, nigga",script,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",switching,18,"Stick to the script, get money, nigga",Stick,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",loved,19,"Stay focused, stay motivated, stay hungry, nigga",hungry,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,17,"Ones I loved started switching, still kept it G",Ones,19,"Stay focused, stay motivated, stay hungry, nigga",hungry,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",script,18,"Stick to the script, get money, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",Stick,18,"Stick to the script, get money, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",Stick,18,"Stick to the script, get money, nigga",script,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",nigga,19,"Stay focused, stay motivated, stay hungry, nigga",nigga,END,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",money,19,"Stay focused, stay motivated, stay hungry, nigga",hungry,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",script,19,"Stay focused, stay motivated, stay hungry, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",Stick,19,"Stay focused, stay motivated, stay hungry, nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",money,20,"Stayed down, now a nigga lit, still humble with it",humble,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",nigga,20,"Stayed down, now a nigga lit, still humble with it",lit,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",nigga,20,"Stayed down, now a nigga lit, still humble with it",nigga,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",script,20,"Stayed down, now a nigga lit, still humble with it",lit,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",script,20,"Stayed down, now a nigga lit, still humble with it",nigga,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",script,20,"Stayed down, now a nigga lit, still humble with it",still,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",Stick,20,"Stayed down, now a nigga lit, still humble with it",lit,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",Stick,20,"Stayed down, now a nigga lit, still humble with it",nigga,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,18,"Stick to the script, get money, nigga",Stick,20,"Stayed down, now a nigga lit, still humble with it",still,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",motivated,19,"Stay focused, stay motivated, stay hungry, nigga",stay,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",Stay,19,"Stay focused, stay motivated, stay hungry, nigga",motivated,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",Stay,19,"Stay focused, stay motivated, stay hungry, nigga",stay,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",hungry,20,"Stayed down, now a nigga lit, still humble with it",humble,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",motivated,20,"Stayed down, now a nigga lit, still humble with it",Stayed,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",nigga,20,"Stayed down, now a nigga lit, still humble with it",lit,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",nigga,20,"Stayed down, now a nigga lit, still humble with it",nigga,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",Stay,20,"Stayed down, now a nigga lit, still humble with it",Stayed,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",focused,21,"When that bag fall in your hands, don't fumble with it",don't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,19,"Stay focused, stay motivated, stay hungry, nigga",hungry,21,"When that bag fall in your hands, don't fumble with it",fumble,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,20,"Stayed down, now a nigga lit, still humble with it",down,20,"Stayed down, now a nigga lit, still humble with it",now,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,20,"Stayed down, now a nigga lit, still humble with it",lit,20,"Stayed down, now a nigga lit, still humble with it",still,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,20,"Stayed down, now a nigga lit, still humble with it",nigga,20,"Stayed down, now a nigga lit, still humble with it",lit,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,20,"Stayed down, now a nigga lit, still humble with it",humble,21,"When that bag fall in your hands, don't fumble with it",fumble,END,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,20,"Stayed down, now a nigga lit, still humble with it",lit,22,"Went broke, then switched it up to five gears (Switched gears)",gears,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,20,"Stayed down, now a nigga lit, still humble with it",lit,22,"Went broke, then switched it up to five gears (Switched gears)",switched,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,20,"Stayed down, now a nigga lit, still humble with it",still,22,"Went broke, then switched it up to five gears (Switched gears)",gears,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,20,"Stayed down, now a nigga lit, still humble with it",still,22,"Went broke, then switched it up to five gears (Switched gears)",switched,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,21,"When that bag fall in your hands, don't fumble with it",bag,21,"When that bag fall in your hands, don't fumble with it",hands,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,21,"When that bag fall in your hands, don't fumble with it",don't,22,"Went broke, then switched it up to five gears (Switched gears)",broke,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,21,"When that bag fall in your hands, don't fumble with it",When,22,"Went broke, then switched it up to five gears (Switched gears)",Went,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,21,"When that bag fall in your hands, don't fumble with it",don't,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",smoke,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,21,"When that bag fall in your hands, don't fumble with it",don't,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",smoked,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,21,"When that bag fall in your hands, don't fumble with it",When,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",Head,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",switched,22,"Went broke, then switched it up to five gears (Switched gears)",gears,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",gears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",fears,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",broke,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",smoke,INNER,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",broke,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",smoked,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",five,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",defyin,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",switched,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",fears,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",Went,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",Head,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",gears,24,Grandma caught me clutching my pistol and cried tears,tears,END,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",five,24,Grandma caught me clutching my pistol and cried tears,cried,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",gears,24,Grandma caught me clutching my pistol and cried tears,pistol,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",switched,24,Grandma caught me clutching my pistol and cried tears,pistol,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",Went,24,Grandma caught me clutching my pistol and cried tears,tears,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,22,"Went broke, then switched it up to five gears (Switched gears)",gears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",years,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",smoke,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",smoked,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",fears,24,Grandma caught me clutching my pistol and cried tears,tears,END,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",defyin,24,Grandma caught me clutching my pistol and cried tears,cried,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",fears,24,Grandma caught me clutching my pistol and cried tears,pistol,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",got,24,Grandma caught me clutching my pistol and cried tears,caught,INNER,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",Head,24,Grandma caught me clutching my pistol and cried tears,tears,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",fears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",years,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",defyin,25,"Shit wasn't overnight, I been rapping like nine years (For real)",like,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",defyin,25,"Shit wasn't overnight, I been rapping like nine years (For real)",nine,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",defyin,25,"Shit wasn't overnight, I been rapping like nine years (For real)",overnight,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",fears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",Shit,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,23,"Head smoke, got niggas smoked, defyin' fears (No fears)",got,25,"Shit wasn't overnight, I been rapping like nine years (For real)",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,24,Grandma caught me clutching my pistol and cried tears,caught,25,"Shit wasn't overnight, I been rapping like nine years (For real)",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,24,Grandma caught me clutching my pistol and cried tears,cried,25,"Shit wasn't overnight, I been rapping like nine years (For real)",like,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,24,Grandma caught me clutching my pistol and cried tears,cried,25,"Shit wasn't overnight, I been rapping like nine years (For real)",nine,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,24,Grandma caught me clutching my pistol and cried tears,cried,25,"Shit wasn't overnight, I been rapping like nine years (For real)",overnight,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,24,Grandma caught me clutching my pistol and cried tears,Grandma,25,"Shit wasn't overnight, I been rapping like nine years (For real)",rapping,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,24,Grandma caught me clutching my pistol and cried tears,pistol,25,"Shit wasn't overnight, I been rapping like nine years (For real)",Shit,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,24,Grandma caught me clutching my pistol and cried tears,pistol,25,"Shit wasn't overnight, I been rapping like nine years (For real)",years,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,24,Grandma caught me clutching my pistol and cried tears,caught,26,"First P, my first B, I got it with cuz",got,INNER,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",like,25,"Shit wasn't overnight, I been rapping like nine years (For real)",nine,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",overnight,25,"Shit wasn't overnight, I been rapping like nine years (For real)",like,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",overnight,25,"Shit wasn't overnight, I been rapping like nine years (For real)",nine,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",Shit,25,"Shit wasn't overnight, I been rapping like nine years (For real)",years,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",wasn't,26,"First P, my first B, I got it with cuz",got,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",rapping,27,"Went half, thirty apiece and I got it for love",half,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,25,"Shit wasn't overnight, I been rapping like nine years (For real)",wasn't,27,"Went half, thirty apiece and I got it for love",got,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",First,26,"First P, my first B, I got it with cuz",first,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",P,26,"First P, my first B, I got it with cuz",B,INNER,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",cuz,27,"Went half, thirty apiece and I got it for love",love,END,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",B,27,"Went half, thirty apiece and I got it for love",apiece,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",B,27,"Went half, thirty apiece and I got it for love",thirty,INNER,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",got,27,"Went half, thirty apiece and I got it for love",got,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",P,27,"Went half, thirty apiece and I got it for love",apiece,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",P,27,"Went half, thirty apiece and I got it for love",thirty,INNER,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",cuz,28,"Wartime, said fuck work, wasn't touchin' the drugs",drugs,END,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",cuz,28,"Wartime, said fuck work, wasn't touchin' the drugs",fuck,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",First,28,"Wartime, said fuck work, wasn't touchin' the drugs",work,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",got,28,"Wartime, said fuck work, wasn't touchin' the drugs",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,26,"First P, my first B, I got it with cuz",cuz,29,"Way before Shiesty met Durk, we got it in blood",blood,END,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",thirty,27,"Went half, thirty apiece and I got it for love",apiece,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",love,28,"Wartime, said fuck work, wasn't touchin' the drugs",drugs,END,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",got,28,"Wartime, said fuck work, wasn't touchin' the drugs",wasn't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",love,28,"Wartime, said fuck work, wasn't touchin' the drugs",fuck,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",love,28,"Wartime, said fuck work, wasn't touchin' the drugs",touchin,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",Went,28,"Wartime, said fuck work, wasn't touchin' the drugs",said,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",love,29,"Way before Shiesty met Durk, we got it in blood",blood,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",got,29,"Way before Shiesty met Durk, we got it in blood",got,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",thirty,29,"Way before Shiesty met Durk, we got it in blood",Shiesty,INNER,ASSONANCE,vowel,LOW,N
+Blood Sweat & Tears,27,"Went half, thirty apiece and I got it for love",Went,29,"Way before Shiesty met Durk, we got it in blood",met,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",fuck,28,"Wartime, said fuck work, wasn't touchin' the drugs",drugs,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",fuck,28,"Wartime, said fuck work, wasn't touchin' the drugs",touchin,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",touchin,28,"Wartime, said fuck work, wasn't touchin' the drugs",drugs,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",drugs,29,"Way before Shiesty met Durk, we got it in blood",blood,END,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",drugs,29,"Way before Shiesty met Durk, we got it in blood",Durk,INNER,ASSONANCE,vowel,LOW,N
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",fuck,29,"Way before Shiesty met Durk, we got it in blood",blood,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",fuck,29,"Way before Shiesty met Durk, we got it in blood",Durk,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",said,29,"Way before Shiesty met Durk, we got it in blood",met,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",touchin,29,"Way before Shiesty met Durk, we got it in blood",blood,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",wasn't,29,"Way before Shiesty met Durk, we got it in blood",got,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",said,30,"On two for tens, ran up a ten, I really could trap",ten,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,28,"Wartime, said fuck work, wasn't touchin' the drugs",said,30,"On two for tens, ran up a ten, I really could trap",tens,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,29,"Way before Shiesty met Durk, we got it in blood",met,30,"On two for tens, ran up a ten, I really could trap",ten,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,29,"Way before Shiesty met Durk, we got it in blood",met,30,"On two for tens, ran up a ten, I really could trap",tens,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,29,"Way before Shiesty met Durk, we got it in blood",Shiesty,30,"On two for tens, ran up a ten, I really could trap",really,INNER,ASSONANCE,vowel,LOW,N
+Blood Sweat & Tears,29,"Way before Shiesty met Durk, we got it in blood",blood,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",one,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,29,"Way before Shiesty met Durk, we got it in blood",met,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",Ten,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,29,"Way before Shiesty met Durk, we got it in blood",Shiesty,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",milli,INNER,ASSONANCE,vowel,LOW,N
+Blood Sweat & Tears,29,"Way before Shiesty met Durk, we got it in blood",Shiesty,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",really,INNER,ASSONANCE,vowel,LOW,N
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",ran,30,"On two for tens, ran up a ten, I really could trap",trap,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",tens,30,"On two for tens, ran up a ten, I really could trap",ten,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",trap,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",clap,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",could,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",could,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",ran,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",clap,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",ran,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",hand,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",really,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",milli,INNER,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",really,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",really,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",ten,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",Ten,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",ten really,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",Ten milli,INNER,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",tens,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",Ten,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",trap,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",hand,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",two,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",shoot,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",trap,32,"Went up M's with no advance, I really could rap",rap,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",could,32,"Went up M's with no advance, I really could rap",could,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",ran,32,"Went up M's with no advance, I really could rap",advance,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",ran,32,"Went up M's with no advance, I really could rap",rap,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",really,32,"Went up M's with no advance, I really could rap",really,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",ten,32,"Went up M's with no advance, I really could rap",M's,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",ten,32,"Went up M's with no advance, I really could rap",Went,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",tens,32,"Went up M's with no advance, I really could rap",M's,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",tens,32,"Went up M's with no advance, I really could rap",Went,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",trap,32,"Went up M's with no advance, I really could rap",advance,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",trap,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,30,"On two for tens, ran up a ten, I really could trap",trap,34,That's no bap (No bap),bap,END,PERFECT,spelling,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",hand,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",clap,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",milli,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",really,INNER,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",Ten milli,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",hand really,INNER,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",clap,32,"Went up M's with no advance, I really could rap",rap,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",clap,32,"Went up M's with no advance, I really could rap",advance,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",could,32,"Went up M's with no advance, I really could rap",could,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",hand,32,"Went up M's with no advance, I really could rap",advance,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",hand,32,"Went up M's with no advance, I really could rap",rap,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",milli,32,"Went up M's with no advance, I really could rap",really,INNER,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",really,32,"Went up M's with no advance, I really could rap",really,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",Ten,32,"Went up M's with no advance, I really could rap",M's,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",Ten,32,"Went up M's with no advance, I really could rap",Went,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",Ten milli,32,"Went up M's with no advance, I really could rap",advance really,INNER,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",clap,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",clap,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",whacked,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",hand,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",hand,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",whacked,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",milli,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",fingers,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",milli,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",really,INNER,MULTI,multi,HIGH,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",really,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",fingers,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",really,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",really,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",Ten,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",get,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",clap,34,That's no bap (No bap),bap,END,PERFECT,spelling,MED,Y
+Blood Sweat & Tears,31,"Ten milli, shoot with one hand, I really could clap (Ayy)",clap,35,"Real massacres, we don't cap",cap,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",advance,32,"Went up M's with no advance, I really could rap",rap,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",Went,32,"Went up M's with no advance, I really could rap",M's,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",rap,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",advance,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",advance,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",whacked,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",M's,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",get,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",rap,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",whacked,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",really,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",fingers,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",really,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",really,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",Went,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",get,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",rap,34,That's no bap (No bap),bap,END,PERFECT,spelling,MED,Y
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",no,34,That's no bap (No bap),no,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,32,"Went up M's with no advance, I really could rap",rap,35,"Real massacres, we don't cap",cap,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",really,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",fingers,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",whacked,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,34,That's no bap (No bap),bap,END,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",whacked,34,That's no bap (No bap),bap,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,35,"Real massacres, we don't cap",cap,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,35,"Real massacres, we don't cap",massacres,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",whacked,35,"Real massacres, we don't cap",cap,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",whacked,35,"Real massacres, we don't cap",massacres,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,33,"I'm really that, boy, I'll get you whacked if my fingers is snapped",snapped,37,"2010, was four passengers, four straps",straps,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,34,That's no bap (No bap),bap,35,"Real massacres, we don't cap",cap,END,PERFECT,spelling,MED,Y
+Blood Sweat & Tears,34,That's no bap (No bap),no,35,"Real massacres, we don't cap",don't,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,34,That's no bap (No bap),bap,36,"Post hits, we drunk Act' and got smoked out",Act,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,34,That's no bap (No bap),no,36,"Post hits, we drunk Act' and got smoked out",Post,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,34,That's no bap (No bap),no,36,"Post hits, we drunk Act' and got smoked out",smoked,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,34,That's no bap (No bap),bap,37,"2010, was four passengers, four straps",straps,END,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,34,That's no bap (No bap),bap,38,"Fast forward, we lost a lot, but still on the map",map,END,PERFECT,spelling,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",massacres,35,"Real massacres, we don't cap",cap,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",cap,36,"Post hits, we drunk Act' and got smoked out",Act,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",don't,36,"Post hits, we drunk Act' and got smoked out",Post,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",don't,36,"Post hits, we drunk Act' and got smoked out",smoked,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",massacres,36,"Post hits, we drunk Act' and got smoked out",Act,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",cap,37,"2010, was four passengers, four straps",straps,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",cap,37,"2010, was four passengers, four straps",passengers,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",massacres,37,"2010, was four passengers, four straps",passengers,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",massacres,37,"2010, was four passengers, four straps",straps,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,35,"Real massacres, we don't cap",cap,38,"Fast forward, we lost a lot, but still on the map",map,END,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,36,"Post hits, we drunk Act' and got smoked out",Post,36,"Post hits, we drunk Act' and got smoked out",smoked,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,36,"Post hits, we drunk Act' and got smoked out",Act,37,"2010, was four passengers, four straps",passengers,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,36,"Post hits, we drunk Act' and got smoked out",Act,37,"2010, was four passengers, four straps",straps,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,36,"Post hits, we drunk Act' and got smoked out",Act,38,"Fast forward, we lost a lot, but still on the map",Fast,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,36,"Post hits, we drunk Act' and got smoked out",Act,38,"Fast forward, we lost a lot, but still on the map",map,INNER,SLANT,cmu,MED,Y
+Blood Sweat & Tears,36,"Post hits, we drunk Act' and got smoked out",got,38,"Fast forward, we lost a lot, but still on the map",lot,INNER,PERFECT,cmu,HIGH,Y
+Blood Sweat & Tears,36,"Post hits, we drunk Act' and got smoked out",hits,38,"Fast forward, we lost a lot, but still on the map",still,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,36,"Post hits, we drunk Act' and got smoked out",Post,38,"Fast forward, we lost a lot, but still on the map",lost,INNER,SLANT,spelling,LOW,Y
+Blood Sweat & Tears,37,"2010, was four passengers, four straps",four,37,"2010, was four passengers, four straps",four,INNER,REPEAT,spelling,HIGH,N
+Blood Sweat & Tears,37,"2010, was four passengers, four straps",passengers,37,"2010, was four passengers, four straps",straps,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,37,"2010, was four passengers, four straps",straps,38,"Fast forward, we lost a lot, but still on the map",map,END,SLANT,cmu,MED,Y
+Blood Sweat & Tears,37,"2010, was four passengers, four straps",four,38,"Fast forward, we lost a lot, but still on the map",forward,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,37,"2010, was four passengers, four straps",four,38,"Fast forward, we lost a lot, but still on the map",lost,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,37,"2010, was four passengers, four straps",passengers,38,"Fast forward, we lost a lot, but still on the map",Fast,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,37,"2010, was four passengers, four straps",passengers,38,"Fast forward, we lost a lot, but still on the map",map,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,37,"2010, was four passengers, four straps",straps,38,"Fast forward, we lost a lot, but still on the map",Fast,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,38,"Fast forward, we lost a lot, but still on the map",Fast,38,"Fast forward, we lost a lot, but still on the map",map,INNER,ASSONANCE,vowel,MED,Y
+Blood Sweat & Tears,38,"Fast forward, we lost a lot, but still on the map",forward,38,"Fast forward, we lost a lot, but still on the map",lost,INNER,ASSONANCE,vowel,MED,Y
