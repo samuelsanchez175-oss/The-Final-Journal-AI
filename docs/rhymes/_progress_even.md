@@ -13,6 +13,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 | 3 | lil-yachty | Lil Yachty | 1352 | 51844 | 302351 | 54743 | 247608 | 296941 | 2026-11-10 01:16 ET |
 | 4 | drake | Drake | 1211 | 51509 | 294853 | 46100 | 248753 | 289188 | 2026-11-10 01:18 ET |
 | 5 | ty-dolla-sign | Ty Dolla $ign | 1279 | 45467 | 215331 | 35797 | 179534 | 211904 | 2026-11-10 01:19 ET |
+| 6 | tory-lanez | Tory Lanez | 1118 | 44124 | 260713 | 36227 | 224486 | 254903 | 2026-11-10 01:21 ET |
 
 ## Failures
 
@@ -20,7 +21,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
 ## Status
 
-Finished 5/386: Ty Dolla $ign.
+Finished 6/386: Tory Lanez.
 
 ## Final
 
