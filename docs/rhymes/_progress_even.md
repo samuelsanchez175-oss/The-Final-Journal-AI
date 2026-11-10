@@ -8,6 +8,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
 | # | Slug | Artist | Songs | Bars | Pairs | End | Inner | Core | Finished (ET) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | quality-control | Quality Control | 1573 | 70597 | 436074 | 79494 | 356580 | 429149 | 2026-11-10 01:08 ET |
 
 ## Failures
 
@@ -15,7 +16,7 @@ Pairs exclude REPEAT. Core is the core=Y count. Times are America/New_York.
 
 ## Status
 
-Young Thug rerun committed. Even queue next.
+Finished 1/386: Quality Control.
 
 ## Final
 
