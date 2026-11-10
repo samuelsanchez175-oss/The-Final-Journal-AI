@@ -1,0 +1,266 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Wash My Hands,1,"Uh, huh, huh, flamin' this gas up",gas,2,"Pants, huh, huh, skrt",Pants,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,1,"Uh, huh, huh, flamin' this gas up",gas,3,"Flamin' this gas up, pullin' my pants up",pants,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,1,"Uh, huh, huh, flamin' this gas up",flamin,3,"Flamin' this gas up, pullin' my pants up",Flamin,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,1,"Uh, huh, huh, flamin' this gas up",gas,3,"Flamin' this gas up, pullin' my pants up",gas,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,1,"Uh, huh, huh, flamin' this gas up",gas,4,"Nigga you fanned up, runnin' them bands up",bands,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,2,"Pants, huh, huh, skrt",Pants,3,"Flamin' this gas up, pullin' my pants up",pants,END,REPEAT,spelling,HIGH,N
+Wash My Hands,2,"Pants, huh, huh, skrt",Pants,3,"Flamin' this gas up, pullin' my pants up",gas,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,2,"Pants, huh, huh, skrt",Pants,4,"Nigga you fanned up, runnin' them bands up",bands,END,SLANT,cmu,MED,Y
+Wash My Hands,2,"Pants, huh, huh, skrt",Pants,4,"Nigga you fanned up, runnin' them bands up",fanned,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,3,"Flamin' this gas up, pullin' my pants up",gas,3,"Flamin' this gas up, pullin' my pants up",pants,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,3,"Flamin' this gas up, pullin' my pants up",pants,4,"Nigga you fanned up, runnin' them bands up",bands,END,SLANT,cmu,MED,Y
+Wash My Hands,3,"Flamin' this gas up, pullin' my pants up",gas,4,"Nigga you fanned up, runnin' them bands up",bands,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,3,"Flamin' this gas up, pullin' my pants up",gas,4,"Nigga you fanned up, runnin' them bands up",fanned,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,3,"Flamin' this gas up, pullin' my pants up",pants,4,"Nigga you fanned up, runnin' them bands up",fanned,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,4,"Nigga you fanned up, runnin' them bands up",fanned,4,"Nigga you fanned up, runnin' them bands up",bands,INNER,SLANT,cmu,MED,Y
+Wash My Hands,4,"Nigga you fanned up, runnin' them bands up",Nigga,5,"Clip hold 30, give a lil nigga a whole chop",Clip,INNER,SLANT,spelling,LOW,Y
+Wash My Hands,4,"Nigga you fanned up, runnin' them bands up",Nigga,5,"Clip hold 30, give a lil nigga a whole chop",nigga,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,4,"Nigga you fanned up, runnin' them bands up",bands,6,Spend this cash faster than a friend turn foes,cash,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,4,"Nigga you fanned up, runnin' them bands up",bands,6,Spend this cash faster than a friend turn foes,faster,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,4,"Nigga you fanned up, runnin' them bands up",fanned,6,Spend this cash faster than a friend turn foes,cash,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,4,"Nigga you fanned up, runnin' them bands up",fanned,6,Spend this cash faster than a friend turn foes,faster,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",Clip,5,"Clip hold 30, give a lil nigga a whole chop",give,INNER,SLANT,cmu,MED,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",Clip,5,"Clip hold 30, give a lil nigga a whole chop",lil,INNER,SLANT,cmu,MED,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",Clip,5,"Clip hold 30, give a lil nigga a whole chop",nigga,INNER,SLANT,spelling,LOW,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",give,5,"Clip hold 30, give a lil nigga a whole chop",lil,INNER,SLANT,cmu,MED,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",hold,5,"Clip hold 30, give a lil nigga a whole chop",whole,INNER,SLANT,cmu,MED,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",hold,6,Spend this cash faster than a friend turn foes,foes,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",whole,6,Spend this cash faster than a friend turn foes,foes,INNER,SLANT,cmu,MED,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",chop,7,"As for the flame and the dope, watch the fire rise",watch,INNER,SLANT,cmu,MED,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",hold,7,"As for the flame and the dope, watch the fire rise",dope,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,5,"Clip hold 30, give a lil nigga a whole chop",whole,7,"As for the flame and the dope, watch the fire rise",dope,INNER,SLANT,cmu,MED,Y
+Wash My Hands,6,Spend this cash faster than a friend turn foes,cash,6,Spend this cash faster than a friend turn foes,faster,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,6,Spend this cash faster than a friend turn foes,Spend,6,Spend this cash faster than a friend turn foes,friend,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,6,Spend this cash faster than a friend turn foes,foes,7,"As for the flame and the dope, watch the fire rise",dope,INNER,SLANT,cmu,MED,Y
+Wash My Hands,6,Spend this cash faster than a friend turn foes,friend,8,"You wanna get some money, nigga likewise",get,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,6,Spend this cash faster than a friend turn foes,Spend,8,"You wanna get some money, nigga likewise",get,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,7,"As for the flame and the dope, watch the fire rise",fire,7,"As for the flame and the dope, watch the fire rise",rise,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,7,"As for the flame and the dope, watch the fire rise",rise,8,"You wanna get some money, nigga likewise",likewise,END,PERFECT,cmu,HIGH,Y
+Wash My Hands,7,"As for the flame and the dope, watch the fire rise",fire,8,"You wanna get some money, nigga likewise",likewise,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,7,"As for the flame and the dope, watch the fire rise",watch,8,"You wanna get some money, nigga likewise",wanna,INNER,SLANT,cmu,MED,Y
+Wash My Hands,7,"As for the flame and the dope, watch the fire rise",watch,9,I gotta wash my hands,gotta,INNER,SLANT,cmu,MED,Y
+Wash My Hands,7,"As for the flame and the dope, watch the fire rise",watch,9,I gotta wash my hands,wash,INNER,SLANT,cmu,MED,Y
+Wash My Hands,8,"You wanna get some money, nigga likewise",some,8,"You wanna get some money, nigga likewise",money,INNER,SLANT,cmu,MED,Y
+Wash My Hands,8,"You wanna get some money, nigga likewise",wanna,9,I gotta wash my hands,gotta,INNER,SLANT,cmu,MED,Y
+Wash My Hands,8,"You wanna get some money, nigga likewise",wanna,9,I gotta wash my hands,wash,INNER,SLANT,cmu,MED,Y
+Wash My Hands,9,I gotta wash my hands,gotta,9,I gotta wash my hands,wash,INNER,SLANT,cmu,MED,Y
+Wash My Hands,9,I gotta wash my hands,hands,10,Don't inform me if it ain't 'bout bands,bands,END,PERFECT,cmu,HIGH,Y
+Wash My Hands,9,I gotta wash my hands,hands,13,"Yessir, we gon' camp out",camp,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,10,Don't inform me if it ain't 'bout bands,Don't,11,"Kept up, smoking lettuce",smoking,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,10,Don't inform me if it ain't 'bout bands,Don't,12,"Gotta grind the dopey, every time I step out",dopey,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,10,Don't inform me if it ain't 'bout bands,bands,13,"Yessir, we gon' camp out",camp,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,11,"Kept up, smoking lettuce",Kept,11,"Kept up, smoking lettuce",lettuce,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,11,"Kept up, smoking lettuce",lettuce,12,"Gotta grind the dopey, every time I step out",step,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,11,"Kept up, smoking lettuce",Kept,12,"Gotta grind the dopey, every time I step out",every,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,11,"Kept up, smoking lettuce",Kept,12,"Gotta grind the dopey, every time I step out",step,INNER,SLANT,cmu,MED,Y
+Wash My Hands,11,"Kept up, smoking lettuce",lettuce,12,"Gotta grind the dopey, every time I step out",every,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,11,"Kept up, smoking lettuce",smoking,12,"Gotta grind the dopey, every time I step out",dopey,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,12,"Gotta grind the dopey, every time I step out",every,12,"Gotta grind the dopey, every time I step out",step,INNER,SLANT,cmu,MED,Y
+Wash My Hands,12,"Gotta grind the dopey, every time I step out",grind,12,"Gotta grind the dopey, every time I step out",time,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,12,"Gotta grind the dopey, every time I step out",dopey,13,"Yessir, we gon' camp out",gon,INNER,SLANT,spelling,LOW,Y
+Wash My Hands,12,"Gotta grind the dopey, every time I step out",Gotta,14,"Make them blocks wavy, like we goin' fishin'",blocks,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,12,"Gotta grind the dopey, every time I step out",grind,14,"Make them blocks wavy, like we goin' fishin'",like,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,12,"Gotta grind the dopey, every time I step out",time,14,"Make them blocks wavy, like we goin' fishin'",like,INNER,SLANT,cmu,MED,Y
+Wash My Hands,13,"Yessir, we gon' camp out",camp,15,Yo hoe up in my Rarri catchin' this vibe,catchin,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,14,"Make them blocks wavy, like we goin' fishin'",Make,14,"Make them blocks wavy, like we goin' fishin'",wavy,INNER,SLANT,cmu,MED,Y
+Wash My Hands,14,"Make them blocks wavy, like we goin' fishin'",like,15,Yo hoe up in my Rarri catchin' this vibe,vibe,INNER,SLANT,cmu,MED,Y
+Wash My Hands,14,"Make them blocks wavy, like we goin' fishin'",fishin,16,Me and my niggas never switch sides,switch,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,14,"Make them blocks wavy, like we goin' fishin'",like,16,Me and my niggas never switch sides,sides,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,15,Yo hoe up in my Rarri catchin' this vibe,vibe,16,Me and my niggas never switch sides,sides,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,15,Yo hoe up in my Rarri catchin' this vibe,hoe,17,"Big .45 I don't care, if you 6'5",don't,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,15,Yo hoe up in my Rarri catchin' this vibe,vibe,18,You ain't gotta know it's on me to get striped,striped,END,SLANT,cmu,MED,Y
+Wash My Hands,16,Me and my niggas never switch sides,never,17,"Big .45 I don't care, if you 6'5",care,INNER,SLANT,cmu,MED,Y
+Wash My Hands,16,Me and my niggas never switch sides,switch,17,"Big .45 I don't care, if you 6'5",Big,INNER,SLANT,cmu,MED,Y
+Wash My Hands,16,Me and my niggas never switch sides,sides,18,You ain't gotta know it's on me to get striped,striped,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,16,Me and my niggas never switch sides,never,18,You ain't gotta know it's on me to get striped,get,INNER,SLANT,cmu,MED,Y
+Wash My Hands,17,"Big .45 I don't care, if you 6'5",care,18,You ain't gotta know it's on me to get striped,get,INNER,SLANT,cmu,MED,Y
+Wash My Hands,17,"Big .45 I don't care, if you 6'5",don't,18,You ain't gotta know it's on me to get striped,know,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,17,"Big .45 I don't care, if you 6'5",care,19,"She feelin' lucky, she sendin' the charm",sendin,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,18,You ain't gotta know it's on me to get striped,get,19,"She feelin' lucky, she sendin' the charm",sendin,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,18,You ain't gotta know it's on me to get striped,gotta,19,"She feelin' lucky, she sendin' the charm",charm,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,18,You ain't gotta know it's on me to get striped,ain't,20,"A summer day, oh no, it's snowin'",day,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,18,You ain't gotta know it's on me to get striped,know,20,"A summer day, oh no, it's snowin'",no,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,18,You ain't gotta know it's on me to get striped,know,20,"A summer day, oh no, it's snowin'",snowin,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,19,"She feelin' lucky, she sendin' the charm",lucky,20,"A summer day, oh no, it's snowin'",summer,INNER,SLANT,cmu,MED,Y
+Wash My Hands,20,"A summer day, oh no, it's snowin'",no,20,"A summer day, oh no, it's snowin'",snowin,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,20,"A summer day, oh no, it's snowin'",no,21,"I'm in that turbo, oh no, it's foreign",no,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,20,"A summer day, oh no, it's snowin'",snowin,21,"I'm in that turbo, oh no, it's foreign",no,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,20,"A summer day, oh no, it's snowin'",day,22,"She came to the pad, oh no, she's drawn",came,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,20,"A summer day, oh no, it's snowin'",no,22,"She came to the pad, oh no, she's drawn",no,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,20,"A summer day, oh no, it's snowin'",snowin,22,"She came to the pad, oh no, she's drawn",no,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,21,"I'm in that turbo, oh no, it's foreign",foreign,22,"She came to the pad, oh no, she's drawn",drawn,END,SLANT,cmu,MED,Y
+Wash My Hands,21,"I'm in that turbo, oh no, it's foreign",no,22,"She came to the pad, oh no, she's drawn",no,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,21,"I'm in that turbo, oh no, it's foreign",no,23,"Uh, yeah, I don't use CashApp, uh, got my cash up, uh",don't,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,22,"She came to the pad, oh no, she's drawn",no,23,"Uh, yeah, I don't use CashApp, uh, got my cash up, uh",don't,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,22,"She came to the pad, oh no, she's drawn",pad,23,"Uh, yeah, I don't use CashApp, uh, got my cash up, uh",cash,INNER,SLANT,cmu,MED,Y
+Wash My Hands,23,"Uh, yeah, I don't use CashApp, uh, got my cash up, uh",CashApp,23,"Uh, yeah, I don't use CashApp, uh, got my cash up, uh",cash,INNER,ASSONANCE,vowel,LOW,N
+Wash My Hands,23,"Uh, yeah, I don't use CashApp, uh, got my cash up, uh",got,24,"My grandpa's a nice guy, I'm his grandson",grandpa's,INNER,SLANT,cmu,MED,Y
+Wash My Hands,23,"Uh, yeah, I don't use CashApp, uh, got my cash up, uh",don't,25,"Uh, fed up, yeah, no I ain't fed up",no,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,23,"Uh, yeah, I don't use CashApp, uh, got my cash up, uh",cash,26,"I'm just gettin' that gravy, ok, come and catch up",catch,END,SLANT,cmu,MED,Y
+Wash My Hands,24,"My grandpa's a nice guy, I'm his grandson",nice,24,"My grandpa's a nice guy, I'm his grandson",guy,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,24,"My grandpa's a nice guy, I'm his grandson",grandson,26,"I'm just gettin' that gravy, ok, come and catch up",come,INNER,SLANT,cmu,MED,Y
+Wash My Hands,25,"Uh, fed up, yeah, no I ain't fed up",fed,25,"Uh, fed up, yeah, no I ain't fed up",fed,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,25,"Uh, fed up, yeah, no I ain't fed up",ain't,26,"I'm just gettin' that gravy, ok, come and catch up",gravy,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,25,"Uh, fed up, yeah, no I ain't fed up",fed,26,"I'm just gettin' that gravy, ok, come and catch up",gettin,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,25,"Uh, fed up, yeah, no I ain't fed up",fed,27,"I blow tooka like it's hookah, but I'm not from Lebanon",Lebanon,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,25,"Uh, fed up, yeah, no I ain't fed up",fed,27,"I blow tooka like it's hookah, but I'm not from Lebanon",Lebanon,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,25,"Uh, fed up, yeah, no I ain't fed up",no,27,"I blow tooka like it's hookah, but I'm not from Lebanon",blow,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,26,"I'm just gettin' that gravy, ok, come and catch up",gettin,27,"I blow tooka like it's hookah, but I'm not from Lebanon",Lebanon,INNER,SLANT,cmu,MED,Y
+Wash My Hands,27,"I blow tooka like it's hookah, but I'm not from Lebanon",tooka,27,"I blow tooka like it's hookah, but I'm not from Lebanon",hookah,INNER,SLANT,spelling,LOW,Y
+Wash My Hands,27,"I blow tooka like it's hookah, but I'm not from Lebanon",blow,28,"I just pulled up in that old school drop top, 1991",old,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,27,"I blow tooka like it's hookah, but I'm not from Lebanon",not,28,"I just pulled up in that old school drop top, 1991",drop,INNER,SLANT,cmu,MED,Y
+Wash My Hands,27,"I blow tooka like it's hookah, but I'm not from Lebanon",not,28,"I just pulled up in that old school drop top, 1991",top,INNER,SLANT,cmu,MED,Y
+Wash My Hands,27,"I blow tooka like it's hookah, but I'm not from Lebanon",tooka,28,"I just pulled up in that old school drop top, 1991",school,INNER,SLANT,spelling,LOW,Y
+Wash My Hands,27,"I blow tooka like it's hookah, but I'm not from Lebanon",blow,29,"And I gave you my whole heart, but I'm not the only one",only,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,27,"I blow tooka like it's hookah, but I'm not from Lebanon",blow,29,"And I gave you my whole heart, but I'm not the only one",whole,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,27,"I blow tooka like it's hookah, but I'm not from Lebanon",not,29,"And I gave you my whole heart, but I'm not the only one",heart,INNER,SLANT,cmu,MED,Y
+Wash My Hands,27,"I blow tooka like it's hookah, but I'm not from Lebanon",not,29,"And I gave you my whole heart, but I'm not the only one",not,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,28,"I just pulled up in that old school drop top, 1991",drop,28,"I just pulled up in that old school drop top, 1991",top,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,28,"I just pulled up in that old school drop top, 1991",drop,29,"And I gave you my whole heart, but I'm not the only one",heart,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,28,"I just pulled up in that old school drop top, 1991",drop,29,"And I gave you my whole heart, but I'm not the only one",not,INNER,SLANT,cmu,MED,Y
+Wash My Hands,28,"I just pulled up in that old school drop top, 1991",old,29,"And I gave you my whole heart, but I'm not the only one",only,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,28,"I just pulled up in that old school drop top, 1991",old,29,"And I gave you my whole heart, but I'm not the only one",whole,INNER,SLANT,cmu,MED,Y
+Wash My Hands,28,"I just pulled up in that old school drop top, 1991",top,29,"And I gave you my whole heart, but I'm not the only one",heart,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,28,"I just pulled up in that old school drop top, 1991",top,29,"And I gave you my whole heart, but I'm not the only one",not,INNER,SLANT,cmu,MED,Y
+Wash My Hands,28,"I just pulled up in that old school drop top, 1991",drop,30,"Praise that fire to forget, watch it rise like the sun",watch,INNER,SLANT,cmu,MED,Y
+Wash My Hands,28,"I just pulled up in that old school drop top, 1991",top,30,"Praise that fire to forget, watch it rise like the sun",watch,INNER,SLANT,cmu,MED,Y
+Wash My Hands,29,"And I gave you my whole heart, but I'm not the only one",heart,29,"And I gave you my whole heart, but I'm not the only one",not,INNER,SLANT,cmu,MED,Y
+Wash My Hands,29,"And I gave you my whole heart, but I'm not the only one",whole,29,"And I gave you my whole heart, but I'm not the only one",only,INNER,SLANT,cmu,MED,Y
+Wash My Hands,29,"And I gave you my whole heart, but I'm not the only one",one,30,"Praise that fire to forget, watch it rise like the sun",sun,END,PERFECT,cmu,HIGH,Y
+Wash My Hands,29,"And I gave you my whole heart, but I'm not the only one",gave,30,"Praise that fire to forget, watch it rise like the sun",Praise,INNER,SLANT,cmu,MED,Y
+Wash My Hands,29,"And I gave you my whole heart, but I'm not the only one",heart,30,"Praise that fire to forget, watch it rise like the sun",watch,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,29,"And I gave you my whole heart, but I'm not the only one",not,30,"Praise that fire to forget, watch it rise like the sun",watch,INNER,SLANT,cmu,MED,Y
+Wash My Hands,29,"And I gave you my whole heart, but I'm not the only one",whole,31,"Now I'm Charmander, lit up like jack o'lantern",o'lantern,INNER,ASSONANCE,vowel,LOW,N
+Wash My Hands,30,"Praise that fire to forget, watch it rise like the sun",fire,30,"Praise that fire to forget, watch it rise like the sun",like,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,30,"Praise that fire to forget, watch it rise like the sun",fire,30,"Praise that fire to forget, watch it rise like the sun",rise,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,30,"Praise that fire to forget, watch it rise like the sun",rise,30,"Praise that fire to forget, watch it rise like the sun",like,INNER,SLANT,cmu,MED,Y
+Wash My Hands,30,"Praise that fire to forget, watch it rise like the sun",fire,31,"Now I'm Charmander, lit up like jack o'lantern",like,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,30,"Praise that fire to forget, watch it rise like the sun",like,31,"Now I'm Charmander, lit up like jack o'lantern",like,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,30,"Praise that fire to forget, watch it rise like the sun",rise,31,"Now I'm Charmander, lit up like jack o'lantern",like,INNER,SLANT,cmu,MED,Y
+Wash My Hands,30,"Praise that fire to forget, watch it rise like the sun",watch,32,"Oh, I have no fear, my heart's a chandelier",heart's,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,31,"Now I'm Charmander, lit up like jack o'lantern",jack,32,"Oh, I have no fear, my heart's a chandelier",have,INNER,SLANT,cmu,MED,Y
+Wash My Hands,31,"Now I'm Charmander, lit up like jack o'lantern",lit,32,"Oh, I have no fear, my heart's a chandelier",chandelier,INNER,SLANT,cmu,MED,Y
+Wash My Hands,31,"Now I'm Charmander, lit up like jack o'lantern",lit,32,"Oh, I have no fear, my heart's a chandelier",fear,INNER,SLANT,cmu,MED,Y
+Wash My Hands,31,"Now I'm Charmander, lit up like jack o'lantern",like,33,"You just tried to commandeer, but I still persevere",tried,INNER,SLANT,cmu,MED,Y
+Wash My Hands,31,"Now I'm Charmander, lit up like jack o'lantern",lit,33,"You just tried to commandeer, but I still persevere",commandeer,INNER,SLANT,cmu,MED,Y
+Wash My Hands,31,"Now I'm Charmander, lit up like jack o'lantern",lit,33,"You just tried to commandeer, but I still persevere",persevere,INNER,SLANT,cmu,MED,Y
+Wash My Hands,31,"Now I'm Charmander, lit up like jack o'lantern",lit,33,"You just tried to commandeer, but I still persevere",still,INNER,SLANT,cmu,MED,Y
+Wash My Hands,32,"Oh, I have no fear, my heart's a chandelier",fear,32,"Oh, I have no fear, my heart's a chandelier",chandelier,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,32,"Oh, I have no fear, my heart's a chandelier",chandelier,33,"You just tried to commandeer, but I still persevere",persevere,END,PERFECT,cmu,HIGH,Y
+Wash My Hands,32,"Oh, I have no fear, my heart's a chandelier",chandelier,33,"You just tried to commandeer, but I still persevere",commandeer,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,32,"Oh, I have no fear, my heart's a chandelier",chandelier,33,"You just tried to commandeer, but I still persevere",still,INNER,SLANT,cmu,MED,Y
+Wash My Hands,32,"Oh, I have no fear, my heart's a chandelier",fear,33,"You just tried to commandeer, but I still persevere",commandeer,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,32,"Oh, I have no fear, my heart's a chandelier",fear,33,"You just tried to commandeer, but I still persevere",persevere,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,32,"Oh, I have no fear, my heart's a chandelier",fear,33,"You just tried to commandeer, but I still persevere",still,INNER,SLANT,cmu,MED,Y
+Wash My Hands,32,"Oh, I have no fear, my heart's a chandelier",chandelier,36,"All this dirty money in my hands, I need to rinse them",rinse,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,33,"You just tried to commandeer, but I still persevere",commandeer,33,"You just tried to commandeer, but I still persevere",persevere,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,33,"You just tried to commandeer, but I still persevere",commandeer,33,"You just tried to commandeer, but I still persevere",still,INNER,SLANT,cmu,MED,Y
+Wash My Hands,33,"You just tried to commandeer, but I still persevere",still,33,"You just tried to commandeer, but I still persevere",persevere,INNER,SLANT,cmu,MED,Y
+Wash My Hands,33,"You just tried to commandeer, but I still persevere",still,34,"Keep that iron, I keep that steel",steel,INNER,SLANT,spelling,LOW,Y
+Wash My Hands,33,"You just tried to commandeer, but I still persevere",tried,34,"Keep that iron, I keep that steel",iron,INNER,SLANT,cmu,MED,Y
+Wash My Hands,33,"You just tried to commandeer, but I still persevere",commandeer,35,"That ain't beef, that shit's veal",shit's,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,33,"You just tried to commandeer, but I still persevere",persevere,35,"That ain't beef, that shit's veal",shit's,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,33,"You just tried to commandeer, but I still persevere",still,35,"That ain't beef, that shit's veal",shit's,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,33,"You just tried to commandeer, but I still persevere",persevere,36,"All this dirty money in my hands, I need to rinse them",rinse,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,34,"Keep that iron, I keep that steel",Keep,34,"Keep that iron, I keep that steel",keep,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,34,"Keep that iron, I keep that steel",Keep,34,"Keep that iron, I keep that steel",steel,INNER,SLANT,cmu,MED,Y
+Wash My Hands,34,"Keep that iron, I keep that steel",steel,35,"That ain't beef, that shit's veal",veal,END,PERFECT,cmu,HIGH,Y
+Wash My Hands,34,"Keep that iron, I keep that steel",Keep,35,"That ain't beef, that shit's veal",beef,INNER,SLANT,cmu,MED,Y
+Wash My Hands,34,"Keep that iron, I keep that steel",Keep,35,"That ain't beef, that shit's veal",veal,INNER,SLANT,cmu,MED,Y
+Wash My Hands,34,"Keep that iron, I keep that steel",steel,35,"That ain't beef, that shit's veal",beef,INNER,SLANT,cmu,MED,Y
+Wash My Hands,34,"Keep that iron, I keep that steel",Keep,36,"All this dirty money in my hands, I need to rinse them",need,INNER,SLANT,cmu,MED,Y
+Wash My Hands,34,"Keep that iron, I keep that steel",steel,36,"All this dirty money in my hands, I need to rinse them",need,INNER,SLANT,cmu,MED,Y
+Wash My Hands,35,"That ain't beef, that shit's veal",beef,35,"That ain't beef, that shit's veal",veal,INNER,SLANT,cmu,MED,Y
+Wash My Hands,35,"That ain't beef, that shit's veal",beef,36,"All this dirty money in my hands, I need to rinse them",need,INNER,SLANT,cmu,MED,Y
+Wash My Hands,35,"That ain't beef, that shit's veal",shit's,36,"All this dirty money in my hands, I need to rinse them",rinse,INNER,SLANT,cmu,MED,Y
+Wash My Hands,35,"That ain't beef, that shit's veal",veal,36,"All this dirty money in my hands, I need to rinse them",need,INNER,SLANT,cmu,MED,Y
+Wash My Hands,35,"That ain't beef, that shit's veal",shit's,37,"All this purple on me right now, I'm like a Prince fan",Prince,INNER,SLANT,cmu,MED,Y
+Wash My Hands,36,"All this dirty money in my hands, I need to rinse them",All,37,"All this purple on me right now, I'm like a Prince fan",All,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,36,"All this dirty money in my hands, I need to rinse them",dirty,37,"All this purple on me right now, I'm like a Prince fan",purple,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,36,"All this dirty money in my hands, I need to rinse them",hands,37,"All this purple on me right now, I'm like a Prince fan",fan,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,36,"All this dirty money in my hands, I need to rinse them",rinse,37,"All this purple on me right now, I'm like a Prince fan",Prince,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,36,"All this dirty money in my hands, I need to rinse them",dirty,38,"That girl gave me brains like a bird, she go hard like the Tinman",bird,INNER,SLANT,cmu,MED,Y
+Wash My Hands,36,"All this dirty money in my hands, I need to rinse them",dirty,38,"That girl gave me brains like a bird, she go hard like the Tinman",girl,INNER,SLANT,cmu,MED,Y
+Wash My Hands,36,"All this dirty money in my hands, I need to rinse them",hands,38,"That girl gave me brains like a bird, she go hard like the Tinman",Tinman,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,37,"All this purple on me right now, I'm like a Prince fan",right,37,"All this purple on me right now, I'm like a Prince fan",like,INNER,SLANT,cmu,MED,Y
+Wash My Hands,37,"All this purple on me right now, I'm like a Prince fan",fan,38,"That girl gave me brains like a bird, she go hard like the Tinman",Tinman,END,PERFECT,cmu,HIGH,Y
+Wash My Hands,37,"All this purple on me right now, I'm like a Prince fan",like,38,"That girl gave me brains like a bird, she go hard like the Tinman",like,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,37,"All this purple on me right now, I'm like a Prince fan",purple,38,"That girl gave me brains like a bird, she go hard like the Tinman",bird,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,37,"All this purple on me right now, I'm like a Prince fan",purple,38,"That girl gave me brains like a bird, she go hard like the Tinman",girl,INNER,SLANT,cmu,MED,Y
+Wash My Hands,37,"All this purple on me right now, I'm like a Prince fan",right,38,"That girl gave me brains like a bird, she go hard like the Tinman",like,INNER,SLANT,cmu,MED,Y
+Wash My Hands,37,"All this purple on me right now, I'm like a Prince fan",like,39,"I'm in, uh, outer space like I'm on The Jetsons",like,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,37,"All this purple on me right now, I'm like a Prince fan",now,39,"I'm in, uh, outer space like I'm on The Jetsons",outer,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,37,"All this purple on me right now, I'm like a Prince fan",right,39,"I'm in, uh, outer space like I'm on The Jetsons",like,INNER,SLANT,cmu,MED,Y
+Wash My Hands,38,"That girl gave me brains like a bird, she go hard like the Tinman",gave,38,"That girl gave me brains like a bird, she go hard like the Tinman",brains,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,38,"That girl gave me brains like a bird, she go hard like the Tinman",girl,38,"That girl gave me brains like a bird, she go hard like the Tinman",bird,INNER,SLANT,cmu,MED,Y
+Wash My Hands,38,"That girl gave me brains like a bird, she go hard like the Tinman",like,38,"That girl gave me brains like a bird, she go hard like the Tinman",like,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,38,"That girl gave me brains like a bird, she go hard like the Tinman",brains,39,"I'm in, uh, outer space like I'm on The Jetsons",space,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,38,"That girl gave me brains like a bird, she go hard like the Tinman",gave,39,"I'm in, uh, outer space like I'm on The Jetsons",space,INNER,SLANT,cmu,MED,Y
+Wash My Hands,38,"That girl gave me brains like a bird, she go hard like the Tinman",like,39,"I'm in, uh, outer space like I'm on The Jetsons",like,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,38,"That girl gave me brains like a bird, she go hard like the Tinman",brains,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",ain't,INNER,SLANT,cmu,MED,Y
+Wash My Hands,38,"That girl gave me brains like a bird, she go hard like the Tinman",gave,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",ain't,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,39,"I'm in, uh, outer space like I'm on The Jetsons",Jetsons,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",sons,END,SLANT,spelling,LOW,Y
+Wash My Hands,39,"I'm in, uh, outer space like I'm on The Jetsons",Jetsons,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",sons,INNER,SLANT,spelling,LOW,Y
+Wash My Hands,39,"I'm in, uh, outer space like I'm on The Jetsons",Jetsons,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",step,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,39,"I'm in, uh, outer space like I'm on The Jetsons",space,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",ain't,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,39,"I'm in, uh, outer space like I'm on The Jetsons",Jetsons,41,"Don't do nothin' foolish, take that L, learn that lesson",lesson,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,39,"I'm in, uh, outer space like I'm on The Jetsons",Jetsons,41,"Don't do nothin' foolish, take that L, learn that lesson",L,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,39,"I'm in, uh, outer space like I'm on The Jetsons",space,41,"Don't do nothin' foolish, take that L, learn that lesson",take,INNER,SLANT,cmu,MED,Y
+Wash My Hands,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",ain't,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",ain't,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",sons,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",sons,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",These,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",even,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",ain't,41,"Don't do nothin' foolish, take that L, learn that lesson",take,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",step,41,"Don't do nothin' foolish, take that L, learn that lesson",L,INNER,SLANT,cmu,MED,Y
+Wash My Hands,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",step,41,"Don't do nothin' foolish, take that L, learn that lesson",lesson,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,40,"These boys ain't my sons, ain't even my sons; They're my step-sons",step,42,"Yeah, I go arch-nemesis, turn to Megatron",nemesis,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",L,41,"Don't do nothin' foolish, take that L, learn that lesson",lesson,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",Don't,42,"Yeah, I go arch-nemesis, turn to Megatron",go,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",L,42,"Yeah, I go arch-nemesis, turn to Megatron",nemesis,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",learn,42,"Yeah, I go arch-nemesis, turn to Megatron",turn,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",lesson,42,"Yeah, I go arch-nemesis, turn to Megatron",nemesis,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",nothin,42,"Yeah, I go arch-nemesis, turn to Megatron",arch,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",nothin,42,"Yeah, I go arch-nemesis, turn to Megatron",Megatron,INNER,SLANT,cmu,MED,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",learn,43,That's your baby momma? Turn her crib to a traffic stop,Turn,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",nothin,43,That's your baby momma? Turn her crib to a traffic stop,momma,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",nothin,43,That's your baby momma? Turn her crib to a traffic stop,stop,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,41,"Don't do nothin' foolish, take that L, learn that lesson",take,43,That's your baby momma? Turn her crib to a traffic stop,baby,INNER,SLANT,cmu,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",arch,42,"Yeah, I go arch-nemesis, turn to Megatron",Megatron,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",Megatron,43,That's your baby momma? Turn her crib to a traffic stop,stop,END,SLANT,cmu,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",arch,43,That's your baby momma? Turn her crib to a traffic stop,momma,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",arch,43,That's your baby momma? Turn her crib to a traffic stop,stop,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",Megatron,43,That's your baby momma? Turn her crib to a traffic stop,momma,INNER,SLANT,cmu,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",turn,43,That's your baby momma? Turn her crib to a traffic stop,Turn,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",Megatron,44,I do what I want and I get what I want,want,END,SLANT,cmu,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",arch,44,I do what I want and I get what I want,want,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",Megatron,44,I do what I want and I get what I want,want,INNER,SLANT,cmu,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",nemesis,44,I do what I want and I get what I want,get,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",Megatron,45,"I need all the bread, I don't like bread, I like croissants",croissants,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,42,"Yeah, I go arch-nemesis, turn to Megatron",Megatron,46,"Hit the club and I'm Rain Man, idiot savant",savant,END,SLANT,cmu,MED,Y
+Wash My Hands,43,That's your baby momma? Turn her crib to a traffic stop,momma,43,That's your baby momma? Turn her crib to a traffic stop,stop,INNER,SLANT,cmu,MED,Y
+Wash My Hands,43,That's your baby momma? Turn her crib to a traffic stop,stop,44,I do what I want and I get what I want,want,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,43,That's your baby momma? Turn her crib to a traffic stop,momma,44,I do what I want and I get what I want,want,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,43,That's your baby momma? Turn her crib to a traffic stop,stop,44,I do what I want and I get what I want,want,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,43,That's your baby momma? Turn her crib to a traffic stop,stop,45,"I need all the bread, I don't like bread, I like croissants",croissants,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,43,That's your baby momma? Turn her crib to a traffic stop,momma,45,"I need all the bread, I don't like bread, I like croissants",croissants,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,43,That's your baby momma? Turn her crib to a traffic stop,stop,46,"Hit the club and I'm Rain Man, idiot savant",savant,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,43,That's your baby momma? Turn her crib to a traffic stop,stop,47,"In the cut, I'm in the spaceship smokin' mids with your mom",mom,END,SLANT,cmu,MED,Y
+Wash My Hands,44,I do what I want and I get what I want,want,44,I do what I want and I get what I want,want,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,44,I do what I want and I get what I want,what,44,I do what I want and I get what I want,what,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,44,I do what I want and I get what I want,want,45,"I need all the bread, I don't like bread, I like croissants",croissants,END,SLANT,cmu,MED,Y
+Wash My Hands,44,I do what I want and I get what I want,get,45,"I need all the bread, I don't like bread, I like croissants",bread,INNER,SLANT,cmu,MED,Y
+Wash My Hands,44,I do what I want and I get what I want,want,45,"I need all the bread, I don't like bread, I like croissants",croissants,INNER,SLANT,cmu,MED,Y
+Wash My Hands,44,I do what I want and I get what I want,want,46,"Hit the club and I'm Rain Man, idiot savant",savant,END,PERFECT,cmu,HIGH,Y
+Wash My Hands,44,I do what I want and I get what I want,want,46,"Hit the club and I'm Rain Man, idiot savant",savant,INNER,PERFECT,cmu,HIGH,Y
+Wash My Hands,44,I do what I want and I get what I want,what,46,"Hit the club and I'm Rain Man, idiot savant",club,INNER,SLANT,cmu,MED,Y
+Wash My Hands,44,I do what I want and I get what I want,want,47,"In the cut, I'm in the spaceship smokin' mids with your mom",mom,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,45,"I need all the bread, I don't like bread, I like croissants",bread,45,"I need all the bread, I don't like bread, I like croissants",bread,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,45,"I need all the bread, I don't like bread, I like croissants",like,45,"I need all the bread, I don't like bread, I like croissants",like,INNER,REPEAT,spelling,HIGH,N
+Wash My Hands,45,"I need all the bread, I don't like bread, I like croissants",croissants,46,"Hit the club and I'm Rain Man, idiot savant",savant,END,SLANT,cmu,MED,Y
+Wash My Hands,45,"I need all the bread, I don't like bread, I like croissants",need,46,"Hit the club and I'm Rain Man, idiot savant",idiot,INNER,SLANT,cmu,MED,Y
+Wash My Hands,45,"I need all the bread, I don't like bread, I like croissants",croissants,47,"In the cut, I'm in the spaceship smokin' mids with your mom",mom,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,45,"I need all the bread, I don't like bread, I like croissants",don't,47,"In the cut, I'm in the spaceship smokin' mids with your mom",smokin,INNER,ASSONANCE,vowel,MED,Y
+Wash My Hands,46,"Hit the club and I'm Rain Man, idiot savant",savant,47,"In the cut, I'm in the spaceship smokin' mids with your mom",mom,END,ASSONANCE,vowel,MED,Y
+Wash My Hands,46,"Hit the club and I'm Rain Man, idiot savant",club,47,"In the cut, I'm in the spaceship smokin' mids with your mom",cut,INNER,SLANT,cmu,MED,Y
+Wash My Hands,46,"Hit the club and I'm Rain Man, idiot savant",Hit,47,"In the cut, I'm in the spaceship smokin' mids with your mom",spaceship,INNER,SLANT,cmu,MED,Y
+Wash My Hands,47,"In the cut, I'm in the spaceship smokin' mids with your mom",spaceship,47,"In the cut, I'm in the spaceship smokin' mids with your mom",mids,INNER,ASSONANCE,vowel,LOW,N

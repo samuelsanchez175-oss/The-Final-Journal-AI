@@ -1,0 +1,479 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Witcha,2,"I'm that nigga, I'm that nigga, I'm that nigga",nigga,2,"I'm that nigga, I'm that nigga, I'm that nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,2,"I'm that nigga, I'm that nigga, I'm that nigga",nigga,3,"I'm that nigga, I'm that nigga, ayy",nigga,END,REPEAT,spelling,HIGH,N
+Witcha,2,"I'm that nigga, I'm that nigga, I'm that nigga",nigga,3,"I'm that nigga, I'm that nigga, ayy",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,2,"I'm that nigga, I'm that nigga, I'm that nigga",nigga,4,"I'm that nigga, I hang with killers and drug dealers",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,2,"I'm that nigga, I'm that nigga, I'm that nigga",nigga,6,"Four-five-four nigga, them bullets hit you",hit,END,SLANT,spelling,LOW,Y
+Witcha,3,"I'm that nigga, I'm that nigga, ayy",nigga,3,"I'm that nigga, I'm that nigga, ayy",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,3,"I'm that nigga, I'm that nigga, ayy",nigga,4,"I'm that nigga, I hang with killers and drug dealers",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,3,"I'm that nigga, I'm that nigga, ayy",nigga,5,"Pussy nigga don't make me get up with you, I come and get you",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,3,"I'm that nigga, I'm that nigga, ayy",nigga,6,"Four-five-four nigga, them bullets hit you",hit,END,SLANT,spelling,LOW,Y
+Witcha,3,"I'm that nigga, I'm that nigga, ayy",nigga,7,I hang around wig splitters who gun bigger,bigger,END,SLANT,spelling,LOW,Y
+Witcha,4,"I'm that nigga, I hang with killers and drug dealers",killers,4,"I'm that nigga, I hang with killers and drug dealers",dealers,INNER,PERFECT,spelling,MED,Y
+Witcha,4,"I'm that nigga, I hang with killers and drug dealers",drug,5,"Pussy nigga don't make me get up with you, I come and get you",come,INNER,SLANT,cmu,MED,Y
+Witcha,4,"I'm that nigga, I hang with killers and drug dealers",nigga,5,"Pussy nigga don't make me get up with you, I come and get you",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,4,"I'm that nigga, I hang with killers and drug dealers",killers,6,"Four-five-four nigga, them bullets hit you",hit,INNER,ASSONANCE,vowel,MED,Y
+Witcha,4,"I'm that nigga, I hang with killers and drug dealers",nigga,6,"Four-five-four nigga, them bullets hit you",hit,INNER,SLANT,spelling,LOW,Y
+Witcha,4,"I'm that nigga, I hang with killers and drug dealers",nigga,6,"Four-five-four nigga, them bullets hit you",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,4,"I'm that nigga, I hang with killers and drug dealers",dealers,8,"That nigga, I hang with killers and drug dealers",dealers,END,REPEAT,spelling,HIGH,N
+Witcha,5,"Pussy nigga don't make me get up with you, I come and get you",get,5,"Pussy nigga don't make me get up with you, I come and get you",get,INNER,REPEAT,spelling,HIGH,N
+Witcha,5,"Pussy nigga don't make me get up with you, I come and get you",nigga,6,"Four-five-four nigga, them bullets hit you",hit,INNER,SLANT,spelling,LOW,Y
+Witcha,5,"Pussy nigga don't make me get up with you, I come and get you",nigga,6,"Four-five-four nigga, them bullets hit you",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,5,"Pussy nigga don't make me get up with you, I come and get you",Pussy,6,"Four-five-four nigga, them bullets hit you",bullets,INNER,ASSONANCE,vowel,MED,Y
+Witcha,5,"Pussy nigga don't make me get up with you, I come and get you",come,7,I hang around wig splitters who gun bigger,gun,INNER,SLANT,cmu,MED,Y
+Witcha,5,"Pussy nigga don't make me get up with you, I come and get you",nigga,7,I hang around wig splitters who gun bigger,bigger,INNER,SLANT,spelling,LOW,Y
+Witcha,5,"Pussy nigga don't make me get up with you, I come and get you",nigga,7,I hang around wig splitters who gun bigger,wig,INNER,SLANT,spelling,LOW,Y
+Witcha,6,"Four-five-four nigga, them bullets hit you",Four,6,"Four-five-four nigga, them bullets hit you",four,INNER,REPEAT,spelling,HIGH,N
+Witcha,6,"Four-five-four nigga, them bullets hit you",nigga,6,"Four-five-four nigga, them bullets hit you",hit,INNER,SLANT,spelling,LOW,Y
+Witcha,6,"Four-five-four nigga, them bullets hit you",hit,7,I hang around wig splitters who gun bigger,bigger,END,SLANT,cmu,MED,Y
+Witcha,6,"Four-five-four nigga, them bullets hit you",hit,7,I hang around wig splitters who gun bigger,wig,INNER,SLANT,cmu,MED,Y
+Witcha,6,"Four-five-four nigga, them bullets hit you",nigga,7,I hang around wig splitters who gun bigger,bigger,INNER,SLANT,spelling,LOW,Y
+Witcha,6,"Four-five-four nigga, them bullets hit you",nigga,7,I hang around wig splitters who gun bigger,wig,INNER,SLANT,spelling,LOW,Y
+Witcha,6,"Four-five-four nigga, them bullets hit you",hit,8,"That nigga, I hang with killers and drug dealers",killers,INNER,ASSONANCE,vowel,MED,Y
+Witcha,6,"Four-five-four nigga, them bullets hit you",hit,8,"That nigga, I hang with killers and drug dealers",nigga,INNER,SLANT,spelling,LOW,Y
+Witcha,6,"Four-five-four nigga, them bullets hit you",nigga,8,"That nigga, I hang with killers and drug dealers",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,6,"Four-five-four nigga, them bullets hit you",hit,9,I hang around wig splitters who guns bigger,bigger,END,SLANT,cmu,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,splitters,7,I hang around wig splitters who gun bigger,bigger,INNER,ASSONANCE,vowel,LOW,N
+Witcha,7,I hang around wig splitters who gun bigger,wig,7,I hang around wig splitters who gun bigger,bigger,INNER,SLANT,cmu,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,bigger,8,"That nigga, I hang with killers and drug dealers",killers,INNER,ASSONANCE,vowel,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,bigger,8,"That nigga, I hang with killers and drug dealers",nigga,INNER,SLANT,spelling,LOW,Y
+Witcha,7,I hang around wig splitters who gun bigger,gun,8,"That nigga, I hang with killers and drug dealers",drug,INNER,SLANT,cmu,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,hang,8,"That nigga, I hang with killers and drug dealers",hang,INNER,REPEAT,spelling,HIGH,N
+Witcha,7,I hang around wig splitters who gun bigger,splitters,8,"That nigga, I hang with killers and drug dealers",dealers,INNER,PERFECT,spelling,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,splitters,8,"That nigga, I hang with killers and drug dealers",killers,INNER,PERFECT,spelling,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,wig,8,"That nigga, I hang with killers and drug dealers",killers,INNER,ASSONANCE,vowel,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,wig,8,"That nigga, I hang with killers and drug dealers",nigga,INNER,SLANT,spelling,LOW,Y
+Witcha,7,I hang around wig splitters who gun bigger,bigger,9,I hang around wig splitters who guns bigger,bigger,END,REPEAT,spelling,HIGH,N
+Witcha,7,I hang around wig splitters who gun bigger,around,9,I hang around wig splitters who guns bigger,around,INNER,REPEAT,spelling,HIGH,N
+Witcha,7,I hang around wig splitters who gun bigger,bigger,9,I hang around wig splitters who guns bigger,splitters,INNER,ASSONANCE,vowel,LOW,N
+Witcha,7,I hang around wig splitters who gun bigger,bigger,9,I hang around wig splitters who guns bigger,wig,INNER,SLANT,cmu,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,gun,9,I hang around wig splitters who guns bigger,guns,INNER,SLANT,cmu,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,hang,9,I hang around wig splitters who guns bigger,hang,INNER,REPEAT,spelling,HIGH,N
+Witcha,7,I hang around wig splitters who gun bigger,splitters,9,I hang around wig splitters who guns bigger,bigger,INNER,ASSONANCE,vowel,LOW,N
+Witcha,7,I hang around wig splitters who gun bigger,splitters,9,I hang around wig splitters who guns bigger,splitters,INNER,REPEAT,spelling,HIGH,N
+Witcha,7,I hang around wig splitters who gun bigger,who,9,I hang around wig splitters who guns bigger,who,INNER,REPEAT,spelling,HIGH,N
+Witcha,7,I hang around wig splitters who gun bigger,wig,9,I hang around wig splitters who guns bigger,bigger,INNER,SLANT,cmu,MED,Y
+Witcha,7,I hang around wig splitters who gun bigger,wig,9,I hang around wig splitters who guns bigger,wig,INNER,REPEAT,spelling,HIGH,N
+Witcha,8,"That nigga, I hang with killers and drug dealers",killers,8,"That nigga, I hang with killers and drug dealers",dealers,INNER,PERFECT,spelling,MED,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",dealers,9,I hang around wig splitters who guns bigger,splitters,INNER,PERFECT,spelling,MED,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",drug,9,I hang around wig splitters who guns bigger,guns,INNER,ASSONANCE,vowel,MED,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",hang,9,I hang around wig splitters who guns bigger,hang,INNER,REPEAT,spelling,HIGH,N
+Witcha,8,"That nigga, I hang with killers and drug dealers",killers,9,I hang around wig splitters who guns bigger,bigger,INNER,ASSONANCE,vowel,MED,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",killers,9,I hang around wig splitters who guns bigger,splitters,INNER,PERFECT,spelling,MED,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",killers,9,I hang around wig splitters who guns bigger,wig,INNER,ASSONANCE,vowel,MED,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",nigga,9,I hang around wig splitters who guns bigger,bigger,INNER,SLANT,spelling,LOW,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",nigga,9,I hang around wig splitters who guns bigger,wig,INNER,SLANT,spelling,LOW,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",dealers,10,"You see me in the club flexin', I bought all the ones",see,INNER,ASSONANCE,vowel,MED,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",drug,10,"You see me in the club flexin', I bought all the ones",club,INNER,SLANT,cmu,MED,Y
+Witcha,8,"That nigga, I hang with killers and drug dealers",drug,10,"You see me in the club flexin', I bought all the ones",ones,INNER,ASSONANCE,vowel,MED,Y
+Witcha,9,I hang around wig splitters who guns bigger,splitters,9,I hang around wig splitters who guns bigger,bigger,INNER,ASSONANCE,vowel,LOW,N
+Witcha,9,I hang around wig splitters who guns bigger,wig,9,I hang around wig splitters who guns bigger,bigger,INNER,SLANT,cmu,MED,Y
+Witcha,9,I hang around wig splitters who guns bigger,guns,10,"You see me in the club flexin', I bought all the ones",club,INNER,ASSONANCE,vowel,MED,Y
+Witcha,9,I hang around wig splitters who guns bigger,guns,10,"You see me in the club flexin', I bought all the ones",ones,INNER,PERFECT,cmu,HIGH,Y
+Witcha,9,I hang around wig splitters who guns bigger,guns,11,"US marshal, YSN, we got all the guns",guns,INNER,REPEAT,spelling,HIGH,N
+Witcha,10,"You see me in the club flexin', I bought all the ones",club,10,"You see me in the club flexin', I bought all the ones",ones,INNER,ASSONANCE,vowel,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",ones,11,"US marshal, YSN, we got all the guns",guns,END,PERFECT,cmu,HIGH,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",all,11,"US marshal, YSN, we got all the guns",all,INNER,REPEAT,spelling,HIGH,N
+Witcha,10,"You see me in the club flexin', I bought all the ones",bought,11,"US marshal, YSN, we got all the guns",got,INNER,PERFECT,cmu,HIGH,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",bought,11,"US marshal, YSN, we got all the guns",marshal,INNER,ASSONANCE,vowel,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",club,11,"US marshal, YSN, we got all the guns",guns,INNER,ASSONANCE,vowel,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",ones,12,"Fuck the plug, we rob him blind, we need all the funds",funds,END,SLANT,cmu,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",all,12,"Fuck the plug, we rob him blind, we need all the funds",all,INNER,REPEAT,spelling,HIGH,N
+Witcha,10,"You see me in the club flexin', I bought all the ones",bought,12,"Fuck the plug, we rob him blind, we need all the funds",rob,INNER,SLANT,cmu,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",club,12,"Fuck the plug, we rob him blind, we need all the funds",Fuck,INNER,SLANT,cmu,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",club,12,"Fuck the plug, we rob him blind, we need all the funds",funds,INNER,ASSONANCE,vowel,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",club,12,"Fuck the plug, we rob him blind, we need all the funds",plug,INNER,SLANT,cmu,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",ones,12,"Fuck the plug, we rob him blind, we need all the funds",Fuck,INNER,ASSONANCE,vowel,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",ones,12,"Fuck the plug, we rob him blind, we need all the funds",plug,INNER,ASSONANCE,vowel,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",see,12,"Fuck the plug, we rob him blind, we need all the funds",need,INNER,ASSONANCE,vowel,MED,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",ones,13,"My bitch a drug trafficker, she make all the runs",runs,END,PERFECT,cmu,HIGH,Y
+Witcha,10,"You see me in the club flexin', I bought all the ones",ones,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,END,ASSONANCE,vowel,MED,Y
+Witcha,11,"US marshal, YSN, we got all the guns",marshal,11,"US marshal, YSN, we got all the guns",got,INNER,ASSONANCE,vowel,MED,Y
+Witcha,11,"US marshal, YSN, we got all the guns",guns,12,"Fuck the plug, we rob him blind, we need all the funds",funds,END,SLANT,cmu,MED,Y
+Witcha,11,"US marshal, YSN, we got all the guns",all,12,"Fuck the plug, we rob him blind, we need all the funds",all,INNER,REPEAT,spelling,HIGH,N
+Witcha,11,"US marshal, YSN, we got all the guns",got,12,"Fuck the plug, we rob him blind, we need all the funds",rob,INNER,SLANT,cmu,MED,Y
+Witcha,11,"US marshal, YSN, we got all the guns",guns,12,"Fuck the plug, we rob him blind, we need all the funds",Fuck,INNER,ASSONANCE,vowel,MED,Y
+Witcha,11,"US marshal, YSN, we got all the guns",guns,12,"Fuck the plug, we rob him blind, we need all the funds",plug,INNER,ASSONANCE,vowel,MED,Y
+Witcha,11,"US marshal, YSN, we got all the guns",marshal,12,"Fuck the plug, we rob him blind, we need all the funds",rob,INNER,ASSONANCE,vowel,MED,Y
+Witcha,11,"US marshal, YSN, we got all the guns",guns,13,"My bitch a drug trafficker, she make all the runs",runs,END,PERFECT,cmu,HIGH,Y
+Witcha,11,"US marshal, YSN, we got all the guns",all,13,"My bitch a drug trafficker, she make all the runs",all,INNER,REPEAT,spelling,HIGH,N
+Witcha,11,"US marshal, YSN, we got all the guns",guns,13,"My bitch a drug trafficker, she make all the runs",drug,INNER,ASSONANCE,vowel,MED,Y
+Witcha,11,"US marshal, YSN, we got all the guns",guns,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,END,ASSONANCE,vowel,MED,Y
+Witcha,11,"US marshal, YSN, we got all the guns",guns,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,END,ASSONANCE,vowel,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",Fuck,12,"Fuck the plug, we rob him blind, we need all the funds",funds,INNER,ASSONANCE,vowel,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",Fuck,12,"Fuck the plug, we rob him blind, we need all the funds",plug,INNER,SLANT,cmu,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",plug,12,"Fuck the plug, we rob him blind, we need all the funds",funds,INNER,ASSONANCE,vowel,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",funds,13,"My bitch a drug trafficker, she make all the runs",runs,END,SLANT,cmu,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",all,13,"My bitch a drug trafficker, she make all the runs",all,INNER,REPEAT,spelling,HIGH,N
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",Fuck,13,"My bitch a drug trafficker, she make all the runs",drug,INNER,SLANT,cmu,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",Fuck,13,"My bitch a drug trafficker, she make all the runs",runs,INNER,ASSONANCE,vowel,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",funds,13,"My bitch a drug trafficker, she make all the runs",drug,INNER,ASSONANCE,vowel,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",him,13,"My bitch a drug trafficker, she make all the runs",bitch,INNER,SLANT,cmu,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",plug,13,"My bitch a drug trafficker, she make all the runs",drug,INNER,PERFECT,cmu,HIGH,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",plug,13,"My bitch a drug trafficker, she make all the runs",runs,INNER,ASSONANCE,vowel,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",funds,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,END,ASSONANCE,vowel,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",Fuck,14,"That bitch ain't bad then I won't fuck her, she out of lucker",fuck,INNER,REPEAT,spelling,HIGH,N
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",Fuck,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,INNER,SLANT,cmu,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",funds,14,"That bitch ain't bad then I won't fuck her, she out of lucker",fuck,INNER,ASSONANCE,vowel,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",him,14,"That bitch ain't bad then I won't fuck her, she out of lucker",bitch,INNER,SLANT,cmu,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",plug,14,"That bitch ain't bad then I won't fuck her, she out of lucker",fuck,INNER,SLANT,cmu,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",plug,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,INNER,SLANT,cmu,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",funds,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,END,ASSONANCE,vowel,MED,Y
+Witcha,12,"Fuck the plug, we rob him blind, we need all the funds",funds,16,"Put this dope right in my engine, it got the muscle",muscle,END,ASSONANCE,vowel,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",drug,13,"My bitch a drug trafficker, she make all the runs",runs,INNER,ASSONANCE,vowel,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",runs,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,END,ASSONANCE,vowel,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",bitch,14,"That bitch ain't bad then I won't fuck her, she out of lucker",bitch,INNER,REPEAT,spelling,HIGH,N
+Witcha,13,"My bitch a drug trafficker, she make all the runs",drug,14,"That bitch ain't bad then I won't fuck her, she out of lucker",fuck,INNER,SLANT,cmu,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",drug,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,INNER,SLANT,cmu,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",make,14,"That bitch ain't bad then I won't fuck her, she out of lucker",ain't,INNER,ASSONANCE,vowel,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",runs,14,"That bitch ain't bad then I won't fuck her, she out of lucker",fuck,INNER,ASSONANCE,vowel,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",trafficker,14,"That bitch ain't bad then I won't fuck her, she out of lucker",bad,INNER,ASSONANCE,vowel,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",runs,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,END,ASSONANCE,vowel,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",drug,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,INNER,SLANT,cmu,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",runs,16,"Put this dope right in my engine, it got the muscle",muscle,END,ASSONANCE,vowel,MED,Y
+Witcha,13,"My bitch a drug trafficker, she make all the runs",runs,17,"High speed, the police see us, they eat my dust up",dust,END,ASSONANCE,vowel,MED,Y
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",fuck,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,INNER,SLANT,cmu,MED,Y
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,END,MULTI,multi,HIGH,Y
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",fuck,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,INNER,SLANT,cmu,MED,Y
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,15,"I know she plottin' on my duffle, I'm not a sucker",duffle,INNER,ASSONANCE,vowel,LOW,N
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",won't,15,"I know she plottin' on my duffle, I'm not a sucker",know,INNER,ASSONANCE,vowel,MED,Y
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,16,"Put this dope right in my engine, it got the muscle",muscle,END,ASSONANCE,vowel,MED,Y
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",fuck,16,"Put this dope right in my engine, it got the muscle",muscle,INNER,ASSONANCE,vowel,MED,Y
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",won't,16,"Put this dope right in my engine, it got the muscle",dope,INNER,ASSONANCE,vowel,MED,Y
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,17,"High speed, the police see us, they eat my dust up",dust,END,ASSONANCE,vowel,MED,Y
+Witcha,14,"That bitch ain't bad then I won't fuck her, she out of lucker",lucker,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Russia,END,SLANT,cmu,MED,Y
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",duffle,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,INNER,ASSONANCE,vowel,LOW,N
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",plottin,15,"I know she plottin' on my duffle, I'm not a sucker",not,INNER,SLANT,cmu,MED,Y
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,16,"Put this dope right in my engine, it got the muscle",muscle,END,ASSONANCE,vowel,MED,Y
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",duffle,16,"Put this dope right in my engine, it got the muscle",muscle,INNER,ASSONANCE,vowel,LOW,N
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",know,16,"Put this dope right in my engine, it got the muscle",dope,INNER,ASSONANCE,vowel,MED,Y
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",not,16,"Put this dope right in my engine, it got the muscle",got,INNER,PERFECT,cmu,HIGH,Y
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",plottin,16,"Put this dope right in my engine, it got the muscle",got,INNER,SLANT,cmu,MED,Y
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,17,"High speed, the police see us, they eat my dust up",dust,END,ASSONANCE,vowel,MED,Y
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Russia,END,SLANT,cmu,MED,Y
+Witcha,15,"I know she plottin' on my duffle, I'm not a sucker",sucker,19,"She got ass, get it from her mother, I serve her brother",brother,END,SLANT,cmu,MED,Y
+Witcha,16,"Put this dope right in my engine, it got the muscle",muscle,17,"High speed, the police see us, they eat my dust up",dust,END,SLANT,cmu,MED,Y
+Witcha,16,"Put this dope right in my engine, it got the muscle",right,17,"High speed, the police see us, they eat my dust up",High,INNER,ASSONANCE,vowel,MED,Y
+Witcha,16,"Put this dope right in my engine, it got the muscle",muscle,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Russia,END,ASSONANCE,vowel,MED,Y
+Witcha,16,"Put this dope right in my engine, it got the muscle",engine,18,"Lethal weapon on me, Danny Glover, my chopper Russia",weapon,INNER,ASSONANCE,vowel,MED,Y
+Witcha,16,"Put this dope right in my engine, it got the muscle",got,18,"Lethal weapon on me, Danny Glover, my chopper Russia",chopper,INNER,SLANT,cmu,MED,Y
+Witcha,16,"Put this dope right in my engine, it got the muscle",muscle,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Glover,INNER,ASSONANCE,vowel,MED,Y
+Witcha,16,"Put this dope right in my engine, it got the muscle",muscle,19,"She got ass, get it from her mother, I serve her brother",brother,END,ASSONANCE,vowel,MED,Y
+Witcha,16,"Put this dope right in my engine, it got the muscle",muscle,20,"Eight balls off white, 'cause I'm a hustler",hustler,END,SLANT,cmu,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",police,17,"High speed, the police see us, they eat my dust up",eat,INNER,SLANT,cmu,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",police,17,"High speed, the police see us, they eat my dust up",see,INNER,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",see,17,"High speed, the police see us, they eat my dust up",eat,INNER,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",speed,17,"High speed, the police see us, they eat my dust up",eat,INNER,SLANT,cmu,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",speed,17,"High speed, the police see us, they eat my dust up",police,INNER,SLANT,cmu,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",speed,17,"High speed, the police see us, they eat my dust up",see,INNER,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",dust,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Russia,END,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",dust,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Glover,INNER,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",eat,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Lethal,INNER,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",police,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Lethal,INNER,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",see,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Lethal,INNER,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",speed,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Lethal,INNER,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",dust,19,"She got ass, get it from her mother, I serve her brother",brother,END,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",dust,19,"She got ass, get it from her mother, I serve her brother",mother,INNER,ASSONANCE,vowel,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",dust,20,"Eight balls off white, 'cause I'm a hustler",hustler,END,SLANT,cmu,MED,Y
+Witcha,17,"High speed, the police see us, they eat my dust up",dust,21,"My kilo saran-wrapped, my dope smothered",smothered,END,SLANT,cmu,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Glover,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Russia,INNER,SLANT,cmu,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Russia,19,"She got ass, get it from her mother, I serve her brother",brother,END,SLANT,cmu,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",chopper,19,"She got ass, get it from her mother, I serve her brother",got,INNER,SLANT,cmu,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Danny,19,"She got ass, get it from her mother, I serve her brother",ass,INNER,SLANT,cmu,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Glover,19,"She got ass, get it from her mother, I serve her brother",brother,INNER,SLANT,cmu,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Glover,19,"She got ass, get it from her mother, I serve her brother",mother,INNER,SLANT,cmu,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Russia,19,"She got ass, get it from her mother, I serve her brother",mother,INNER,SLANT,cmu,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",weapon,19,"She got ass, get it from her mother, I serve her brother",get,INNER,ASSONANCE,vowel,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Russia,20,"Eight balls off white, 'cause I'm a hustler",hustler,END,ASSONANCE,vowel,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Glover,20,"Eight balls off white, 'cause I'm a hustler",hustler,INNER,ASSONANCE,vowel,MED,Y
+Witcha,18,"Lethal weapon on me, Danny Glover, my chopper Russia",Russia,21,"My kilo saran-wrapped, my dope smothered",smothered,END,ASSONANCE,vowel,MED,Y
+Witcha,19,"She got ass, get it from her mother, I serve her brother",get mother,19,"She got ass, get it from her mother, I serve her brother",serve brother,INNER,MULTI,multi,HIGH,Y
+Witcha,19,"She got ass, get it from her mother, I serve her brother",mother,19,"She got ass, get it from her mother, I serve her brother",brother,INNER,MULTI,multi,HIGH,Y
+Witcha,19,"She got ass, get it from her mother, I serve her brother",brother,20,"Eight balls off white, 'cause I'm a hustler",hustler,END,ASSONANCE,vowel,MED,Y
+Witcha,19,"She got ass, get it from her mother, I serve her brother",mother,20,"Eight balls off white, 'cause I'm a hustler",hustler,INNER,ASSONANCE,vowel,MED,Y
+Witcha,19,"She got ass, get it from her mother, I serve her brother",brother,21,"My kilo saran-wrapped, my dope smothered",smothered,END,SLANT,cmu,MED,Y
+Witcha,19,"She got ass, get it from her mother, I serve her brother",ass,21,"My kilo saran-wrapped, my dope smothered",saran,INNER,SLANT,cmu,MED,Y
+Witcha,19,"She got ass, get it from her mother, I serve her brother",ass,21,"My kilo saran-wrapped, my dope smothered",wrapped,INNER,ASSONANCE,vowel,MED,Y
+Witcha,19,"She got ass, get it from her mother, I serve her brother",mother,21,"My kilo saran-wrapped, my dope smothered",smothered,INNER,SLANT,cmu,MED,Y
+Witcha,20,"Eight balls off white, 'cause I'm a hustler",hustler,21,"My kilo saran-wrapped, my dope smothered",smothered,END,ASSONANCE,vowel,MED,Y
+Witcha,20,"Eight balls off white, 'cause I'm a hustler",Eight,22,"In my trap I take catnaps, I'm no sleeper",take,INNER,SLANT,cmu,MED,Y
+Witcha,21,"My kilo saran-wrapped, my dope smothered",kilo,21,"My kilo saran-wrapped, my dope smothered",dope,INNER,ASSONANCE,vowel,MED,Y
+Witcha,21,"My kilo saran-wrapped, my dope smothered",saran,21,"My kilo saran-wrapped, my dope smothered",wrapped,INNER,ASSONANCE,vowel,MED,Y
+Witcha,21,"My kilo saran-wrapped, my dope smothered",dope,22,"In my trap I take catnaps, I'm no sleeper",no,INNER,ASSONANCE,vowel,MED,Y
+Witcha,21,"My kilo saran-wrapped, my dope smothered",kilo,22,"In my trap I take catnaps, I'm no sleeper",no,INNER,PERFECT,cmu,HIGH,Y
+Witcha,21,"My kilo saran-wrapped, my dope smothered",saran,22,"In my trap I take catnaps, I'm no sleeper",catnaps,INNER,ASSONANCE,vowel,LOW,N
+Witcha,21,"My kilo saran-wrapped, my dope smothered",saran,22,"In my trap I take catnaps, I'm no sleeper",trap,INNER,SLANT,cmu,MED,Y
+Witcha,21,"My kilo saran-wrapped, my dope smothered",wrapped,22,"In my trap I take catnaps, I'm no sleeper",trap,INNER,SLANT,cmu,MED,Y
+Witcha,21,"My kilo saran-wrapped, my dope smothered",smothered,23,"Nigga fuck your plug, shop with me, and get it cheaper",fuck,INNER,ASSONANCE,vowel,MED,Y
+Witcha,21,"My kilo saran-wrapped, my dope smothered",smothered,23,"Nigga fuck your plug, shop with me, and get it cheaper",plug,INNER,ASSONANCE,vowel,MED,Y
+Witcha,22,"In my trap I take catnaps, I'm no sleeper",trap,22,"In my trap I take catnaps, I'm no sleeper",catnaps,INNER,ASSONANCE,vowel,LOW,N
+Witcha,22,"In my trap I take catnaps, I'm no sleeper",sleeper,23,"Nigga fuck your plug, shop with me, and get it cheaper",cheaper,END,MULTI,multi,HIGH,Y
+Witcha,22,"In my trap I take catnaps, I'm no sleeper",catnaps,24,"Smokin' on some potent reefer, you smoke sativa",sativa,INNER,ASSONANCE,vowel,LOW,N
+Witcha,22,"In my trap I take catnaps, I'm no sleeper",no,24,"Smokin' on some potent reefer, you smoke sativa",potent,INNER,ASSONANCE,vowel,MED,Y
+Witcha,22,"In my trap I take catnaps, I'm no sleeper",no,24,"Smokin' on some potent reefer, you smoke sativa",smoke,INNER,ASSONANCE,vowel,MED,Y
+Witcha,22,"In my trap I take catnaps, I'm no sleeper",no,24,"Smokin' on some potent reefer, you smoke sativa",Smokin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,22,"In my trap I take catnaps, I'm no sleeper",sleeper,24,"Smokin' on some potent reefer, you smoke sativa",reefer,INNER,SLANT,cmu,MED,Y
+Witcha,22,"In my trap I take catnaps, I'm no sleeper",trap,24,"Smokin' on some potent reefer, you smoke sativa",sativa,INNER,ASSONANCE,vowel,LOW,N
+Witcha,22,"In my trap I take catnaps, I'm no sleeper",sleeper,25,"Bitch I'm ballin', fuckin' on the cheerleaders",cheerleaders,END,ASSONANCE,vowel,MED,Y
+Witcha,23,"Nigga fuck your plug, shop with me, and get it cheaper",fuck,23,"Nigga fuck your plug, shop with me, and get it cheaper",plug,INNER,SLANT,cmu,MED,Y
+Witcha,23,"Nigga fuck your plug, shop with me, and get it cheaper",cheaper,24,"Smokin' on some potent reefer, you smoke sativa",reefer,INNER,SLANT,cmu,MED,Y
+Witcha,23,"Nigga fuck your plug, shop with me, and get it cheaper",fuck,24,"Smokin' on some potent reefer, you smoke sativa",some,INNER,SLANT,cmu,MED,Y
+Witcha,23,"Nigga fuck your plug, shop with me, and get it cheaper",plug,24,"Smokin' on some potent reefer, you smoke sativa",some,INNER,SLANT,cmu,MED,Y
+Witcha,23,"Nigga fuck your plug, shop with me, and get it cheaper",cheaper,25,"Bitch I'm ballin', fuckin' on the cheerleaders",cheerleaders,END,ASSONANCE,vowel,MED,Y
+Witcha,23,"Nigga fuck your plug, shop with me, and get it cheaper",fuck,25,"Bitch I'm ballin', fuckin' on the cheerleaders",fuckin,INNER,SLANT,cmu,MED,Y
+Witcha,23,"Nigga fuck your plug, shop with me, and get it cheaper",plug,25,"Bitch I'm ballin', fuckin' on the cheerleaders",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,24,"Smokin' on some potent reefer, you smoke sativa",potent,24,"Smokin' on some potent reefer, you smoke sativa",smoke,INNER,ASSONANCE,vowel,MED,Y
+Witcha,24,"Smokin' on some potent reefer, you smoke sativa",Smokin,24,"Smokin' on some potent reefer, you smoke sativa",potent,INNER,ASSONANCE,vowel,MED,Y
+Witcha,24,"Smokin' on some potent reefer, you smoke sativa",Smokin,24,"Smokin' on some potent reefer, you smoke sativa",smoke,INNER,SLANT,cmu,MED,Y
+Witcha,24,"Smokin' on some potent reefer, you smoke sativa",reefer,25,"Bitch I'm ballin', fuckin' on the cheerleaders",cheerleaders,INNER,ASSONANCE,vowel,MED,Y
+Witcha,24,"Smokin' on some potent reefer, you smoke sativa",some,25,"Bitch I'm ballin', fuckin' on the cheerleaders",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,24,"Smokin' on some potent reefer, you smoke sativa",sativa,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",that'll,INNER,SLANT,spelling,LOW,Y
+Witcha,25,"Bitch I'm ballin', fuckin' on the cheerleaders",ballin,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",that'll,INNER,ASSONANCE,vowel,MED,Y
+Witcha,25,"Bitch I'm ballin', fuckin' on the cheerleaders",Bitch,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",decision,INNER,ASSONANCE,vowel,MED,Y
+Witcha,25,"Bitch I'm ballin', fuckin' on the cheerleaders",Bitch,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,INNER,SLANT,cmu,MED,Y
+Witcha,25,"Bitch I'm ballin', fuckin' on the cheerleaders",Bitch,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",'til,INNER,SLANT,cmu,MED,Y
+Witcha,25,"Bitch I'm ballin', fuckin' on the cheerleaders",Bitch,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,INNER,SLANT,cmu,MED,Y
+Witcha,25,"Bitch I'm ballin', fuckin' on the cheerleaders",Bitch,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",think,INNER,ASSONANCE,vowel,MED,Y
+Witcha,25,"Bitch I'm ballin', fuckin' on the cheerleaders",Bitch,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,INNER,SLANT,cmu,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",decision,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,INNER,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",make,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",say,INNER,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",nigga,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,INNER,SLANT,spelling,LOW,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,END,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",decision,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",'til,INNER,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",decision,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,INNER,SLANT,cmu,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",decision,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",think,INNER,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",decision,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,INNER,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",'til,INNER,SLANT,cmu,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",think,INNER,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,INNER,SLANT,cmu,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",make,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",nigga,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,INNER,SLANT,spelling,LOW,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",say,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,28,"Wake up, reel a nigga, go fishin'",fishin,END,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",decision,28,"Wake up, reel a nigga, go fishin'",fishin,INNER,SLANT,cmu,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,28,"Wake up, reel a nigga, go fishin'",nigga,INNER,SLANT,spelling,LOW,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",make,28,"Wake up, reel a nigga, go fishin'",Wake,INNER,PERFECT,cmu,HIGH,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",nigga,28,"Wake up, reel a nigga, go fishin'",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",say,28,"Wake up, reel a nigga, go fishin'",Wake,INNER,ASSONANCE,vowel,MED,Y
+Witcha,26,"I'm that nigga that'll make your life a decision, if I say, they hit you",hit,29,We gon' kill a nigga on prison,prison,END,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",'til,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",'til,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,INNER,SLANT,cmu,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",fo'nem,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",gon,INNER,SLANT,spelling,LOW,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",never,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",get,INNER,SLANT,cmu,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",think,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",'til,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",think,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",think,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,28,"Wake up, reel a nigga, go fishin'",fishin,END,SLANT,cmu,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",'til,28,"Wake up, reel a nigga, go fishin'",fishin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",ain't,28,"Wake up, reel a nigga, go fishin'",Wake,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",think,28,"Wake up, reel a nigga, go fishin'",fishin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,28,"Wake up, reel a nigga, go fishin'",fishin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,28,"Wake up, reel a nigga, go fishin'",nigga,INNER,SLANT,spelling,LOW,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,29,We gon' kill a nigga on prison,prison,END,SLANT,cmu,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",'til,29,We gon' kill a nigga on prison,kill,INNER,PERFECT,cmu,HIGH,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",'til,29,We gon' kill a nigga on prison,prison,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",fo'nem,29,We gon' kill a nigga on prison,gon,INNER,SLANT,spelling,LOW,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",gon,29,We gon' kill a nigga on prison,gon,INNER,REPEAT,spelling,HIGH,N
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",gon,29,We gon' kill a nigga on prison,prison,INNER,PERFECT,spelling,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,29,We gon' kill a nigga on prison,kill,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",think,29,We gon' kill a nigga on prison,kill,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",think,29,We gon' kill a nigga on prison,prison,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,29,We gon' kill a nigga on prison,kill,INNER,SLANT,cmu,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,29,We gon' kill a nigga on prison,nigga,INNER,SLANT,spelling,LOW,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",whip,29,We gon' kill a nigga on prison,prison,INNER,ASSONANCE,vowel,MED,Y
+Witcha,27,"You ain't never think fo'nem was gon' get up with you, 'til the whip up itchin'",itchin,31,So ain't gon' none of that shit be a mystery,mystery,END,ASSONANCE,vowel,MED,Y
+Witcha,28,"Wake up, reel a nigga, go fishin'",fishin,29,We gon' kill a nigga on prison,prison,END,SLANT,cmu,MED,Y
+Witcha,28,"Wake up, reel a nigga, go fishin'",fishin,29,We gon' kill a nigga on prison,kill,INNER,ASSONANCE,vowel,MED,Y
+Witcha,28,"Wake up, reel a nigga, go fishin'",nigga,29,We gon' kill a nigga on prison,nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,28,"Wake up, reel a nigga, go fishin'",fishin,30,But we got on gloves and shit when we get at you,shit,INNER,ASSONANCE,vowel,MED,Y
+Witcha,28,"Wake up, reel a nigga, go fishin'",nigga,30,But we got on gloves and shit when we get at you,shit,INNER,SLANT,spelling,LOW,Y
+Witcha,28,"Wake up, reel a nigga, go fishin'",fishin,31,So ain't gon' none of that shit be a mystery,mystery,END,ASSONANCE,vowel,MED,Y
+Witcha,29,We gon' kill a nigga on prison,gon,29,We gon' kill a nigga on prison,prison,INNER,PERFECT,spelling,MED,Y
+Witcha,29,We gon' kill a nigga on prison,kill,29,We gon' kill a nigga on prison,prison,INNER,ASSONANCE,vowel,MED,Y
+Witcha,29,We gon' kill a nigga on prison,kill,30,But we got on gloves and shit when we get at you,shit,INNER,SLANT,cmu,MED,Y
+Witcha,29,We gon' kill a nigga on prison,nigga,30,But we got on gloves and shit when we get at you,shit,INNER,SLANT,spelling,LOW,Y
+Witcha,29,We gon' kill a nigga on prison,prison,30,But we got on gloves and shit when we get at you,shit,INNER,ASSONANCE,vowel,MED,Y
+Witcha,29,We gon' kill a nigga on prison,prison,31,So ain't gon' none of that shit be a mystery,mystery,END,ASSONANCE,vowel,MED,Y
+Witcha,29,We gon' kill a nigga on prison,gon,31,So ain't gon' none of that shit be a mystery,gon,INNER,REPEAT,spelling,HIGH,N
+Witcha,29,We gon' kill a nigga on prison,kill,31,So ain't gon' none of that shit be a mystery,mystery,INNER,ASSONANCE,vowel,MED,Y
+Witcha,29,We gon' kill a nigga on prison,kill,31,So ain't gon' none of that shit be a mystery,shit,INNER,SLANT,cmu,MED,Y
+Witcha,29,We gon' kill a nigga on prison,nigga,31,So ain't gon' none of that shit be a mystery,shit,INNER,SLANT,spelling,LOW,Y
+Witcha,29,We gon' kill a nigga on prison,prison,31,So ain't gon' none of that shit be a mystery,gon,INNER,PERFECT,spelling,MED,Y
+Witcha,29,We gon' kill a nigga on prison,prison,31,So ain't gon' none of that shit be a mystery,shit,INNER,ASSONANCE,vowel,MED,Y
+Witcha,30,But we got on gloves and shit when we get at you,when,30,But we got on gloves and shit when we get at you,get,INNER,SLANT,cmu,MED,Y
+Witcha,30,But we got on gloves and shit when we get at you,gloves,31,So ain't gon' none of that shit be a mystery,none,INNER,ASSONANCE,vowel,MED,Y
+Witcha,30,But we got on gloves and shit when we get at you,shit,31,So ain't gon' none of that shit be a mystery,mystery,INNER,SLANT,cmu,MED,Y
+Witcha,30,But we got on gloves and shit when we get at you,shit,31,So ain't gon' none of that shit be a mystery,shit,INNER,REPEAT,spelling,HIGH,N
+Witcha,30,But we got on gloves and shit when we get at you,gloves,32,"On the block, 2010, we was hustlin', tastin' two",hustlin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,30,But we got on gloves and shit when we get at you,got,32,"On the block, 2010, we was hustlin', tastin' two",block,INNER,SLANT,cmu,MED,Y
+Witcha,31,So ain't gon' none of that shit be a mystery,shit,31,So ain't gon' none of that shit be a mystery,mystery,INNER,SLANT,cmu,MED,Y
+Witcha,31,So ain't gon' none of that shit be a mystery,ain't,32,"On the block, 2010, we was hustlin', tastin' two",tastin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,31,So ain't gon' none of that shit be a mystery,none,32,"On the block, 2010, we was hustlin', tastin' two",hustlin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,31,So ain't gon' none of that shit be a mystery,mystery,33,Yeah we was servin' that bitch like Mystikal,bitch,INNER,ASSONANCE,vowel,MED,Y
+Witcha,31,So ain't gon' none of that shit be a mystery,shit,33,Yeah we was servin' that bitch like Mystikal,bitch,INNER,SLANT,cmu,MED,Y
+Witcha,31,So ain't gon' none of that shit be a mystery,mystery,34,I was tryna tote that bitch like igloo,igloo,END,ASSONANCE,vowel,MED,Y
+Witcha,32,"On the block, 2010, we was hustlin', tastin' two",two,35,Ran up the sack and I bought a lil stick or two,two,END,REPEAT,spelling,HIGH,N
+Witcha,33,Yeah we was servin' that bitch like Mystikal,bitch,34,I was tryna tote that bitch like igloo,bitch,INNER,REPEAT,spelling,HIGH,N
+Witcha,33,Yeah we was servin' that bitch like Mystikal,bitch,34,I was tryna tote that bitch like igloo,igloo,INNER,ASSONANCE,vowel,MED,Y
+Witcha,33,Yeah we was servin' that bitch like Mystikal,like,34,I was tryna tote that bitch like igloo,like,INNER,REPEAT,spelling,HIGH,N
+Witcha,33,Yeah we was servin' that bitch like Mystikal,Mystikal,34,I was tryna tote that bitch like igloo,tryna,INNER,ASSONANCE,vowel,LOW,N
+Witcha,33,Yeah we was servin' that bitch like Mystikal,bitch,35,Ran up the sack and I bought a lil stick or two,lil,INNER,SLANT,cmu,MED,Y
+Witcha,33,Yeah we was servin' that bitch like Mystikal,bitch,35,Ran up the sack and I bought a lil stick or two,stick,INNER,SLANT,cmu,MED,Y
+Witcha,34,I was tryna tote that bitch like igloo,bitch,34,I was tryna tote that bitch like igloo,igloo,INNER,ASSONANCE,vowel,MED,Y
+Witcha,34,I was tryna tote that bitch like igloo,bitch,35,Ran up the sack and I bought a lil stick or two,lil,INNER,SLANT,cmu,MED,Y
+Witcha,34,I was tryna tote that bitch like igloo,bitch,35,Ran up the sack and I bought a lil stick or two,stick,INNER,SLANT,cmu,MED,Y
+Witcha,34,I was tryna tote that bitch like igloo,igloo,35,Ran up the sack and I bought a lil stick or two,lil,INNER,SLANT,cmu,MED,Y
+Witcha,34,I was tryna tote that bitch like igloo,igloo,35,Ran up the sack and I bought a lil stick or two,stick,INNER,ASSONANCE,vowel,MED,Y
+Witcha,34,I was tryna tote that bitch like igloo,bitch,36,Dope got the fiend eyes yellow like Pikachu,Pikachu,INNER,SLANT,spelling,LOW,Y
+Witcha,34,I was tryna tote that bitch like igloo,like,36,Dope got the fiend eyes yellow like Pikachu,eyes,INNER,SLANT,cmu,MED,Y
+Witcha,34,I was tryna tote that bitch like igloo,like,36,Dope got the fiend eyes yellow like Pikachu,like,INNER,REPEAT,spelling,HIGH,N
+Witcha,34,I was tryna tote that bitch like igloo,tote,36,Dope got the fiend eyes yellow like Pikachu,Dope,INNER,SLANT,cmu,MED,Y
+Witcha,34,I was tryna tote that bitch like igloo,tryna,36,Dope got the fiend eyes yellow like Pikachu,fiend,INNER,SLANT,spelling,LOW,Y
+Witcha,34,I was tryna tote that bitch like igloo,igloo,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",itchin,END,ASSONANCE,vowel,MED,Y
+Witcha,34,I was tryna tote that bitch like igloo,igloo,38,Done fucked on all you lil niggas' bitches too,bitches,END,ASSONANCE,vowel,MED,Y
+Witcha,35,Ran up the sack and I bought a lil stick or two,lil,35,Ran up the sack and I bought a lil stick or two,stick,INNER,SLANT,cmu,MED,Y
+Witcha,35,Ran up the sack and I bought a lil stick or two,Ran,35,Ran up the sack and I bought a lil stick or two,sack,INNER,SLANT,cmu,MED,Y
+Witcha,35,Ran up the sack and I bought a lil stick or two,bought,36,Dope got the fiend eyes yellow like Pikachu,got,INNER,PERFECT,cmu,HIGH,Y
+Witcha,35,Ran up the sack and I bought a lil stick or two,stick,36,Dope got the fiend eyes yellow like Pikachu,Pikachu,INNER,SLANT,spelling,LOW,Y
+Witcha,35,Ran up the sack and I bought a lil stick or two,bought,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",popped,INNER,SLANT,cmu,MED,Y
+Witcha,35,Ran up the sack and I bought a lil stick or two,lil,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",itchin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,35,Ran up the sack and I bought a lil stick or two,stick,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",itchin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,35,Ran up the sack and I bought a lil stick or two,two,39,And we'll shoot at all you niggas too,niggas,END,PERFECT,cmu,HIGH,Y
+Witcha,36,Dope got the fiend eyes yellow like Pikachu,eyes,36,Dope got the fiend eyes yellow like Pikachu,like,INNER,SLANT,cmu,MED,Y
+Witcha,36,Dope got the fiend eyes yellow like Pikachu,Dope,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",gon,INNER,SLANT,spelling,LOW,Y
+Witcha,36,Dope got the fiend eyes yellow like Pikachu,eyes,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",lie,INNER,ASSONANCE,vowel,MED,Y
+Witcha,36,Dope got the fiend eyes yellow like Pikachu,got,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",popped,INNER,SLANT,cmu,MED,Y
+Witcha,36,Dope got the fiend eyes yellow like Pikachu,like,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",lie,INNER,ASSONANCE,vowel,MED,Y
+Witcha,36,Dope got the fiend eyes yellow like Pikachu,Pikachu,38,Done fucked on all you lil niggas' bitches too,niggas,INNER,SLANT,spelling,LOW,Y
+Witcha,36,Dope got the fiend eyes yellow like Pikachu,Pikachu,40,"I'm that nigga, we been them niggas",niggas,END,SLANT,spelling,LOW,Y
+Witcha,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",itchin,38,Done fucked on all you lil niggas' bitches too,bitches,END,SLANT,cmu,MED,Y
+Witcha,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",itchin,38,Done fucked on all you lil niggas' bitches too,lil,INNER,ASSONANCE,vowel,MED,Y
+Witcha,37,"I ain't gon' lie, I popped a perc and I'm itchin' too",itchin,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,END,ASSONANCE,vowel,MED,Y
+Witcha,38,Done fucked on all you lil niggas' bitches too,Done,38,Done fucked on all you lil niggas' bitches too,fucked,INNER,ASSONANCE,vowel,MED,Y
+Witcha,38,Done fucked on all you lil niggas' bitches too,lil,38,Done fucked on all you lil niggas' bitches too,bitches,INNER,ASSONANCE,vowel,MED,Y
+Witcha,38,Done fucked on all you lil niggas' bitches too,all,39,And we'll shoot at all you niggas too,all,INNER,REPEAT,spelling,HIGH,N
+Witcha,38,Done fucked on all you lil niggas' bitches too,niggas,39,And we'll shoot at all you niggas too,niggas,INNER,REPEAT,spelling,HIGH,N
+Witcha,38,Done fucked on all you lil niggas' bitches too,niggas,40,"I'm that nigga, we been them niggas",nigga,INNER,SLANT,spelling,LOW,Y
+Witcha,38,Done fucked on all you lil niggas' bitches too,niggas,40,"I'm that nigga, we been them niggas",niggas,INNER,REPEAT,spelling,HIGH,N
+Witcha,38,Done fucked on all you lil niggas' bitches too,bitches,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,END,ASSONANCE,vowel,MED,Y
+Witcha,38,Done fucked on all you lil niggas' bitches too,bitches,42,"Big ass whips, we smokin' bumpers, used to be a swisher",swisher,END,SLANT,cmu,MED,Y
+Witcha,39,And we'll shoot at all you niggas too,shoot,39,And we'll shoot at all you niggas too,niggas,INNER,ASSONANCE,vowel,MED,Y
+Witcha,39,And we'll shoot at all you niggas too,niggas,40,"I'm that nigga, we been them niggas",niggas,END,REPEAT,spelling,HIGH,N
+Witcha,40,"I'm that nigga, we been them niggas",nigga,40,"I'm that nigga, we been them niggas",niggas,INNER,SLANT,spelling,LOW,Y
+Witcha,40,"I'm that nigga, we been them niggas",nigga,41,"Whack a nigga, roll that shit up, we finna get pit up",finna,INNER,ASSONANCE,vowel,LOW,N
+Witcha,40,"I'm that nigga, we been them niggas",nigga,41,"Whack a nigga, roll that shit up, we finna get pit up",nigga,INNER,REPEAT,spelling,HIGH,N
+Witcha,40,"I'm that nigga, we been them niggas",nigga,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,INNER,SLANT,spelling,LOW,Y
+Witcha,40,"I'm that nigga, we been them niggas",nigga,41,"Whack a nigga, roll that shit up, we finna get pit up",shit,INNER,SLANT,spelling,LOW,Y
+Witcha,40,"I'm that nigga, we been them niggas",niggas,41,"Whack a nigga, roll that shit up, we finna get pit up",finna,INNER,ASSONANCE,vowel,LOW,N
+Witcha,40,"I'm that nigga, we been them niggas",niggas,41,"Whack a nigga, roll that shit up, we finna get pit up",nigga,INNER,SLANT,spelling,LOW,Y
+Witcha,40,"I'm that nigga, we been them niggas",nigga,42,"Big ass whips, we smokin' bumpers, used to be a swisher",Big,INNER,SLANT,spelling,LOW,Y
+Witcha,40,"I'm that nigga, we been them niggas",niggas,42,"Big ass whips, we smokin' bumpers, used to be a swisher",ass,INNER,PERFECT,spelling,MED,Y
+Witcha,40,"I'm that nigga, we been them niggas",niggas,42,"Big ass whips, we smokin' bumpers, used to be a swisher",whips,INNER,SLANT,spelling,LOW,Y
+Witcha,40,"I'm that nigga, we been them niggas",niggas,44,"Everybody gon' miss you, now he just a picture",picture,END,SLANT,spelling,LOW,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",nigga,41,"Whack a nigga, roll that shit up, we finna get pit up",finna,INNER,ASSONANCE,vowel,LOW,N
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",nigga,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,INNER,SLANT,spelling,LOW,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",nigga,41,"Whack a nigga, roll that shit up, we finna get pit up",shit,INNER,SLANT,spelling,LOW,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",shit,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,INNER,PERFECT,cmu,HIGH,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,42,"Big ass whips, we smokin' bumpers, used to be a swisher",swisher,END,SLANT,cmu,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",nigga,42,"Big ass whips, we smokin' bumpers, used to be a swisher",Big,INNER,SLANT,spelling,LOW,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,42,"Big ass whips, we smokin' bumpers, used to be a swisher",Big,INNER,SLANT,cmu,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,42,"Big ass whips, we smokin' bumpers, used to be a swisher",whips,INNER,ASSONANCE,vowel,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",roll,42,"Big ass whips, we smokin' bumpers, used to be a swisher",smokin,INNER,ASSONANCE,vowel,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",shit,42,"Big ass whips, we smokin' bumpers, used to be a swisher",Big,INNER,SLANT,cmu,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",shit,42,"Big ass whips, we smokin' bumpers, used to be a swisher",swisher,INNER,SLANT,cmu,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",shit,42,"Big ass whips, we smokin' bumpers, used to be a swisher",whips,INNER,ASSONANCE,vowel,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",Whack,42,"Big ass whips, we smokin' bumpers, used to be a swisher",ass,INNER,SLANT,cmu,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",roll,43,You don't wanna see mask hop out that Hummer,don't,INNER,ASSONANCE,vowel,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",Whack,43,You don't wanna see mask hop out that Hummer,mask,INNER,SLANT,cmu,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,44,"Everybody gon' miss you, now he just a picture",picture,END,ASSONANCE,vowel,MED,Y
+Witcha,41,"Whack a nigga, roll that shit up, we finna get pit up",pit,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,END,SLANT,cmu,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",Big,42,"Big ass whips, we smokin' bumpers, used to be a swisher",swisher,INNER,SLANT,cmu,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",Big,42,"Big ass whips, we smokin' bumpers, used to be a swisher",whips,INNER,ASSONANCE,vowel,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",whips,42,"Big ass whips, we smokin' bumpers, used to be a swisher",swisher,INNER,ASSONANCE,vowel,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",ass,43,You don't wanna see mask hop out that Hummer,mask,INNER,SLANT,cmu,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",bumpers,43,You don't wanna see mask hop out that Hummer,Hummer,INNER,ASSONANCE,vowel,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",smokin,43,You don't wanna see mask hop out that Hummer,don't,INNER,ASSONANCE,vowel,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",swisher,44,"Everybody gon' miss you, now he just a picture",picture,END,ASSONANCE,vowel,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",Big,44,"Everybody gon' miss you, now he just a picture",miss,INNER,SLANT,cmu,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",Big,44,"Everybody gon' miss you, now he just a picture",picture,INNER,ASSONANCE,vowel,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",swisher,44,"Everybody gon' miss you, now he just a picture",miss,INNER,SLANT,cmu,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",whips,44,"Everybody gon' miss you, now he just a picture",miss,INNER,SLANT,cmu,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",whips,44,"Everybody gon' miss you, now he just a picture",picture,INNER,SLANT,cmu,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",swisher,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,END,ASSONANCE,vowel,MED,Y
+Witcha,42,"Big ass whips, we smokin' bumpers, used to be a swisher",swisher,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,END,ASSONANCE,vowel,MED,Y
+Witcha,43,You don't wanna see mask hop out that Hummer,wanna,43,You don't wanna see mask hop out that Hummer,hop,INNER,SLANT,cmu,MED,Y
+Witcha,43,You don't wanna see mask hop out that Hummer,don't,44,"Everybody gon' miss you, now he just a picture",gon,INNER,SLANT,spelling,LOW,Y
+Witcha,43,You don't wanna see mask hop out that Hummer,hop,44,"Everybody gon' miss you, now he just a picture",Everybody,INNER,SLANT,cmu,MED,Y
+Witcha,43,You don't wanna see mask hop out that Hummer,wanna,44,"Everybody gon' miss you, now he just a picture",Everybody,INNER,SLANT,cmu,MED,Y
+Witcha,43,You don't wanna see mask hop out that Hummer,don't,45,"Hop don't count, you was in the bounty, had to learn your literature",don't,INNER,REPEAT,spelling,HIGH,N
+Witcha,43,You don't wanna see mask hop out that Hummer,hop,45,"Hop don't count, you was in the bounty, had to learn your literature",Hop,INNER,REPEAT,spelling,HIGH,N
+Witcha,43,You don't wanna see mask hop out that Hummer,mask,45,"Hop don't count, you was in the bounty, had to learn your literature",had,INNER,ASSONANCE,vowel,MED,Y
+Witcha,43,You don't wanna see mask hop out that Hummer,wanna,45,"Hop don't count, you was in the bounty, had to learn your literature",Hop,INNER,SLANT,cmu,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",miss,44,"Everybody gon' miss you, now he just a picture",picture,INNER,ASSONANCE,vowel,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",picture,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,END,SLANT,cmu,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",Everybody,45,"Hop don't count, you was in the bounty, had to learn your literature",Hop,INNER,SLANT,cmu,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",gon,45,"Hop don't count, you was in the bounty, had to learn your literature",don't,INNER,SLANT,spelling,LOW,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",miss,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,INNER,ASSONANCE,vowel,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",now,45,"Hop don't count, you was in the bounty, had to learn your literature",bounty,INNER,ASSONANCE,vowel,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",now,45,"Hop don't count, you was in the bounty, had to learn your literature",count,INNER,ASSONANCE,vowel,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",picture,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,END,ASSONANCE,vowel,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",miss,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,INNER,SLANT,cmu,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",miss,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,INNER,SLANT,cmu,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",miss,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,INNER,SLANT,cmu,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",picture,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,INNER,SLANT,cmu,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",picture,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,INNER,SLANT,cmu,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",picture,47,"Tryna give me the bad ring, I'm not the mister",mister,END,ASSONANCE,vowel,MED,Y
+Witcha,44,"Everybody gon' miss you, now he just a picture",picture,48,"Made her put everything in her name, and it's mister tricked her",tricked,END,SLANT,cmu,MED,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",count,45,"Hop don't count, you was in the bounty, had to learn your literature",bounty,INNER,SLANT,cmu,MED,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,END,ASSONANCE,vowel,MED,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,INNER,SLANT,cmu,MED,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,INNER,ASSONANCE,vowel,MED,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,47,"Tryna give me the bad ring, I'm not the mister",mister,END,ASSONANCE,vowel,MED,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",had,47,"Tryna give me the bad ring, I'm not the mister",bad,INNER,PERFECT,cmu,HIGH,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",Hop,47,"Tryna give me the bad ring, I'm not the mister",not,INNER,SLANT,cmu,MED,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,47,"Tryna give me the bad ring, I'm not the mister",give,INNER,ASSONANCE,vowel,MED,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,47,"Tryna give me the bad ring, I'm not the mister",ring,INNER,ASSONANCE,vowel,MED,Y
+Witcha,45,"Hop don't count, you was in the bounty, had to learn your literature",literature,48,"Made her put everything in her name, and it's mister tricked her",tricked,END,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",here,46,"Your bitch was out here suckin' dick, she's a tongue twister",she's,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",suckin,46,"Your bitch was out here suckin' dick, she's a tongue twister",tongue,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,47,"Tryna give me the bad ring, I'm not the mister",mister,END,MULTI,multi,HIGH,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,47,"Tryna give me the bad ring, I'm not the mister",give,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,47,"Tryna give me the bad ring, I'm not the mister",mister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,47,"Tryna give me the bad ring, I'm not the mister",ring,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,47,"Tryna give me the bad ring, I'm not the mister",give,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,47,"Tryna give me the bad ring, I'm not the mister",mister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,47,"Tryna give me the bad ring, I'm not the mister",ring,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",here,47,"Tryna give me the bad ring, I'm not the mister",Tryna,INNER,SLANT,spelling,LOW,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",she's,47,"Tryna give me the bad ring, I'm not the mister",Tryna,INNER,SLANT,spelling,LOW,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,47,"Tryna give me the bad ring, I'm not the mister",give,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,47,"Tryna give me the bad ring, I'm not the mister",ring,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,48,"Made her put everything in her name, and it's mister tricked her",tricked,END,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,48,"Made her put everything in her name, and it's mister tricked her",everything,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,48,"Made her put everything in her name, and it's mister tricked her",mister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",bitch,48,"Made her put everything in her name, and it's mister tricked her",tricked,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,48,"Made her put everything in her name, and it's mister tricked her",everything,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,48,"Made her put everything in her name, and it's mister tricked her",mister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",dick,48,"Made her put everything in her name, and it's mister tricked her",tricked,INNER,SLANT,cmu,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",tongue twister,48,"Made her put everything in her name, and it's mister tricked her",name mister,INNER,MULTI,multi,HIGH,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,48,"Made her put everything in her name, and it's mister tricked her",everything,INNER,ASSONANCE,vowel,MED,Y
+Witcha,46,"Your bitch was out here suckin' dick, she's a tongue twister",twister,48,"Made her put everything in her name, and it's mister tricked her",mister,INNER,MULTI,multi,HIGH,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",give,47,"Tryna give me the bad ring, I'm not the mister",mister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",give,47,"Tryna give me the bad ring, I'm not the mister",ring,INNER,SLANT,cmu,MED,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",ring,47,"Tryna give me the bad ring, I'm not the mister",mister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",mister,48,"Made her put everything in her name, and it's mister tricked her",tricked,END,SLANT,cmu,MED,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",give,48,"Made her put everything in her name, and it's mister tricked her",everything,INNER,SLANT,cmu,MED,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",give,48,"Made her put everything in her name, and it's mister tricked her",mister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",give,48,"Made her put everything in her name, and it's mister tricked her",tricked,INNER,ASSONANCE,vowel,MED,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",mister,48,"Made her put everything in her name, and it's mister tricked her",everything,INNER,ASSONANCE,vowel,MED,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",mister,48,"Made her put everything in her name, and it's mister tricked her",mister,INNER,REPEAT,spelling,HIGH,N
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",ring,48,"Made her put everything in her name, and it's mister tricked her",everything,INNER,PERFECT,cmu,HIGH,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",ring,48,"Made her put everything in her name, and it's mister tricked her",mister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,47,"Tryna give me the bad ring, I'm not the mister",ring,48,"Made her put everything in her name, and it's mister tricked her",tricked,INNER,ASSONANCE,vowel,MED,Y
+Witcha,48,"Made her put everything in her name, and it's mister tricked her",everything,48,"Made her put everything in her name, and it's mister tricked her",mister,INNER,ASSONANCE,vowel,MED,Y
+Witcha,48,"Made her put everything in her name, and it's mister tricked her",everything,48,"Made her put everything in her name, and it's mister tricked her",tricked,INNER,ASSONANCE,vowel,MED,Y
+Witcha,48,"Made her put everything in her name, and it's mister tricked her",Made,48,"Made her put everything in her name, and it's mister tricked her",name,INNER,SLANT,cmu,MED,Y
+Witcha,48,"Made her put everything in her name, and it's mister tricked her",mister,48,"Made her put everything in her name, and it's mister tricked her",tricked,INNER,SLANT,cmu,MED,Y

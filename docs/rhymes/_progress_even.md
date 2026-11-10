@@ -226,6 +226,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 214 | quando-rondo | Quando Rondo | 1 | 50 | 331 | 55 | 276 | 326 | 2026-11-10 13:22 ET |
 | 215 | rema | Rema | 1 | 50 | 237 | 41 | 196 | 231 | 2026-11-10 13:22 ET |
 | 216 | tgut | TGUT | 1 | 50 | 319 | 68 | 251 | 319 | 2026-11-10 13:22 ET |
+| 217 | big-lean | Big Lean | 1 | 49 | 263 | 20 | 243 | 243 | 2026-11-10 13:22 ET |
+| 218 | nas | Nas | 1 | 49 | 383 | 78 | 305 | 381 | 2026-11-10 13:22 ET |
+| 219 | reese-laflare | Reese LAFLARE | 1 | 49 | 207 | 43 | 164 | 204 | 2026-11-10 13:22 ET |
+| 220 | trendy-boiiz | TRENDY BOIIZ | 1 | 49 | 243 | 77 | 166 | 240 | 2026-11-10 13:22 ET |
+| 221 | 2kdrae | 2KDrae | 1 | 48 | 324 | 39 | 285 | 317 | 2026-11-10 13:23 ET |
+| 222 | alan-awesome | Alan Awesome | 1 | 48 | 263 | 26 | 237 | 256 | 2026-11-10 13:23 ET |
+| 223 | fbg-duck | FBG Duck | 1 | 48 | 273 | 53 | 220 | 266 | 2026-11-10 13:23 ET |
+| 224 | lud-foe | Lud Foe | 1 | 48 | 431 | 81 | 350 | 416 | 2026-11-10 13:23 ET |
+| 225 | ye | Ye | 1 | 48 | 390 | 56 | 334 | 385 | 2026-11-10 13:23 ET |
+| 226 | bobby-raps | Bobby Raps | 1 | 47 | 242 | 38 | 204 | 239 | 2026-11-10 13:23 ET |
 
 ## Failures
 
@@ -233,7 +243,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 216/386: TGUT.
+Finished 226/386: Bobby Raps.
 
 ## Final
 

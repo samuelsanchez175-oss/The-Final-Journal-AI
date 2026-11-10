@@ -1,0 +1,403 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+"One Mic, One Gun",1,"Ain't no back and forth, ain’t no left or right (21, 21)",Ain't,1,"Ain't no back and forth, ain’t no left or right (21, 21)",ain’t,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",1,"Ain't no back and forth, ain’t no left or right (21, 21)",no,1,"Ain't no back and forth, ain’t no left or right (21, 21)",no,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",1,"Ain't no back and forth, ain’t no left or right (21, 21)",right,2,"I got King's Disease but I move like a knight (21, 21)",knight,END,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",1,"Ain't no back and forth, ain’t no left or right (21, 21)",right,2,"I got King's Disease but I move like a knight (21, 21)",like,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",1,"Ain't no back and forth, ain’t no left or right (21, 21)",right,3,"Rappers bandwagon tryna get some likes (21, 21)",likes,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",1,"Ain't no back and forth, ain’t no left or right (21, 21)",back,3,"Rappers bandwagon tryna get some likes (21, 21)",bandwagon,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",1,"Ain't no back and forth, ain’t no left or right (21, 21)",back,3,"Rappers bandwagon tryna get some likes (21, 21)",Rappers,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",1,"Ain't no back and forth, ain’t no left or right (21, 21)",left,3,"Rappers bandwagon tryna get some likes (21, 21)",get,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",1,"Ain't no back and forth, ain’t no left or right (21, 21)",right,4,"I do it for the fam', never for the hype (21, 21)",hype,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",2,"I got King's Disease but I move like a knight (21, 21)",like,2,"I got King's Disease but I move like a knight (21, 21)",knight,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",2,"I got King's Disease but I move like a knight (21, 21)",knight,3,"Rappers bandwagon tryna get some likes (21, 21)",likes,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",2,"I got King's Disease but I move like a knight (21, 21)",Disease,3,"Rappers bandwagon tryna get some likes (21, 21)",tryna,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",2,"I got King's Disease but I move like a knight (21, 21)",like,3,"Rappers bandwagon tryna get some likes (21, 21)",likes,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",2,"I got King's Disease but I move like a knight (21, 21)",knight,4,"I do it for the fam', never for the hype (21, 21)",hype,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",2,"I got King's Disease but I move like a knight (21, 21)",like,4,"I do it for the fam', never for the hype (21, 21)",hype,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",3,"Rappers bandwagon tryna get some likes (21, 21)",Rappers,3,"Rappers bandwagon tryna get some likes (21, 21)",bandwagon,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",3,"Rappers bandwagon tryna get some likes (21, 21)",likes,4,"I do it for the fam', never for the hype (21, 21)",hype,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",3,"Rappers bandwagon tryna get some likes (21, 21)",get,4,"I do it for the fam', never for the hype (21, 21)",never,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",3,"Rappers bandwagon tryna get some likes (21, 21)",get,5,"When you turn to legend, no such thing as relevance (21, 21)",legend,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",3,"Rappers bandwagon tryna get some likes (21, 21)",get,5,"When you turn to legend, no such thing as relevance (21, 21)",relevance,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",3,"Rappers bandwagon tryna get some likes (21, 21)",get,5,"When you turn to legend, no such thing as relevance (21, 21)",When,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",3,"Rappers bandwagon tryna get some likes (21, 21)",some,5,"When you turn to legend, no such thing as relevance (21, 21)",such,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",3,"Rappers bandwagon tryna get some likes (21, 21)",tryna,5,"When you turn to legend, no such thing as relevance (21, 21)",turn,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",4,"I do it for the fam', never for the hype (21, 21)",never,5,"When you turn to legend, no such thing as relevance (21, 21)",legend,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",4,"I do it for the fam', never for the hype (21, 21)",never,5,"When you turn to legend, no such thing as relevance (21, 21)",relevance,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",4,"I do it for the fam', never for the hype (21, 21)",never,5,"When you turn to legend, no such thing as relevance (21, 21)",When,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",4,"I do it for the fam', never for the hype (21, 21)",fam,6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",rapper,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",4,"I do it for the fam', never for the hype (21, 21)",never,6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",integrity,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",legend,5,"When you turn to legend, no such thing as relevance (21, 21)",relevance,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",When,5,"When you turn to legend, no such thing as relevance (21, 21)",legend,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",When,5,"When you turn to legend, no such thing as relevance (21, 21)",relevance,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",relevance,6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",integrity,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",legend,6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",integrity,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",such,6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",must’ve,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",When,6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",integrity,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",relevance,7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",care,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",legend,7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",care,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",no,7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",don't,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",When,7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",care,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",5,"When you turn to legend, no such thing as relevance (21, 21)",relevance,8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),ahead,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",forgot,6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",got,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",must’ve forgot,6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",rapper got,INNER,MULTI,multi,HIGH,Y
+"One Mic, One Gun",6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",integrity,7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",care,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",6,"They must’ve forgot that I'm a new rapper that got integrity (21, 21)",integrity,8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),ahead,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",All,7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",blogs,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",care,8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),ahead,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",don't,8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),Most,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",media,8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),these,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",place,8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),say,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",All,9,"No back and forth, I did it back then, I do it right now (Woo)",forth,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",blogs,9,"No back and forth, I did it back then, I do it right now (Woo)",forth,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",7,"All in the media and blogs, that's just a place I don't care to be (21, 21)",don't,9,"No back and forth, I did it back then, I do it right now (Woo)",No,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),Most,9,"No back and forth, I did it back then, I do it right now (Woo)",No,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),ahead,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",ed,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),ahead,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",era,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),Most,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",GOAT,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),Most,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",opened,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",8,Most of these niggas wouldn't say shit if they was ahead of me (Hit-Boy),say,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",lane,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",9,"No back and forth, I did it back then, I do it right now (Woo)",back,9,"No back and forth, I did it back then, I do it right now (Woo)",back,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",9,"No back and forth, I did it back then, I do it right now (Woo)",now,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",crown,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",9,"No back and forth, I did it back then, I do it right now (Woo)",back,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",gav,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",9,"No back and forth, I did it back then, I do it right now (Woo)",No,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",GOAT,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",9,"No back and forth, I did it back then, I do it right now (Woo)",No,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",opened,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",9,"No back and forth, I did it back then, I do it right now (Woo)",forth,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",all,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",9,"No back and forth, I did it back then, I do it right now (Woo)",No,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",GOAT,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",9,"No back and forth, I did it back then, I do it right now (Woo)",right,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",pile,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",9,"No back and forth, I did it back then, I do it right now (Woo)",now,13,"But look at me now, damn, y'all, look at me now",now,END,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",era,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",ed,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",opened,10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",GOAT,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",ed,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",negative,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",ed,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",press,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",ed,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",ss,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",era,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",negative,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",era,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",press,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",era,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",ss,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",GOAT,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",GOAT,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",opened,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",GOAT,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",gav,12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",Black,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",lane,12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",sayin,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",10,"I opened a lane for my era, I'm GOAT-ed, they gavе me the crown",crown,13,"But look at me now, damn, y'all, look at me now",now,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",negative,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",press,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",ss,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",negative,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",ss,11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",press,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",pile,12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",wipin,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",all,13,"But look at me now, damn, y'all, look at me now",y'all,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",11,"GOAT with all the succеss, the negative press, I'm watchin' it pile (Uh)",pile,14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",side,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",dyin,12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",sayin,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",sayin,12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",dyin,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",sayin,12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",sayin,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",Black,13,"But look at me now, damn, y'all, look at me now",damn,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",wipin,14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",side,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",dyin,14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",Queens,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",12,"They sayin’ that Black music dyin’, I'm sayin’ they wipin' us out",wipin,14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",Y,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",13,"But look at me now, damn, y'all, look at me now",look,13,"But look at me now, damn, y'all, look at me now",look,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",13,"But look at me now, damn, y'all, look at me now",now,13,"But look at me now, damn, y'all, look at me now",now,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",13,"But look at me now, damn, y'all, look at me now",look,15,"I shook up the town, I shook up the city, I shook up the state",shook,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",13,"But look at me now, damn, y'all, look at me now",now,15,"I shook up the town, I shook up the city, I shook up the state",town,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",keepin,14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",Queens,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",Whatever,14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",N,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",Y,14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",side,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",N,16,"I'm with 21 on my second run, this shit come with age",second,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",14,"Whatever I do is N.Y., I'm keepin’ it Queens 'cause that's my side (What up?)",Whatever,16,"I'm with 21 on my second run, this shit come with age",second,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",15,"I shook up the town, I shook up the city, I shook up the state",shook,15,"I shook up the town, I shook up the city, I shook up the state",shook,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",15,"I shook up the town, I shook up the city, I shook up the state",state,16,"I'm with 21 on my second run, this shit come with age",age,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",15,"I shook up the town, I shook up the city, I shook up the state",city,16,"I'm with 21 on my second run, this shit come with age",shit,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",15,"I shook up the town, I shook up the city, I shook up the state",state,17,"It's a conversation (Woo), it's determination (Yeah)",determination,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",15,"I shook up the town, I shook up the city, I shook up the state",state,17,"It's a conversation (Woo), it's determination (Yeah)",conversation,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",15,"I shook up the town, I shook up the city, I shook up the state",state,18,"Your interpretation, I just shocked the nation (Oh)",nation,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",15,"I shook up the town, I shook up the city, I shook up the state",state,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",16,"I'm with 21 on my second run, this shit come with age",run,16,"I'm with 21 on my second run, this shit come with age",come,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",16,"I'm with 21 on my second run, this shit come with age",age,17,"It's a conversation (Woo), it's determination (Yeah)",determination,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",16,"I'm with 21 on my second run, this shit come with age",age,17,"It's a conversation (Woo), it's determination (Yeah)",conversation,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",16,"I'm with 21 on my second run, this shit come with age",age,18,"Your interpretation, I just shocked the nation (Oh)",nation,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",16,"I'm with 21 on my second run, this shit come with age",age,18,"Your interpretation, I just shocked the nation (Oh)",interpretation,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",16,"I'm with 21 on my second run, this shit come with age",age,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",16,"I'm with 21 on my second run, this shit come with age",age,20,They just ran in one of my cribs and took what? I replaced it (Haha),replaced,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",conversation,17,"It's a conversation (Woo), it's determination (Yeah)",determination,INNER,MULTI,multi,HIGH,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",determination,18,"Your interpretation, I just shocked the nation (Oh)",nation,END,MULTI,multi,HIGH,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",conversation,18,"Your interpretation, I just shocked the nation (Oh)",interpretation,INNER,MULTI,multi,HIGH,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",conversation,18,"Your interpretation, I just shocked the nation (Oh)",nation,INNER,MULTI,multi,HIGH,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",determination,18,"Your interpretation, I just shocked the nation (Oh)",interpretation,INNER,MULTI,multi,HIGH,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",determination,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",conversation,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",came,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",conversation,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",determination,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",came,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",determination,20,They just ran in one of my cribs and took what? I replaced it (Haha),replaced,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",17,"It's a conversation (Woo), it's determination (Yeah)",determination,21,"Two Caucasians, saw part of they faces",faces,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",18,"Your interpretation, I just shocked the nation (Oh)",interpretation,18,"Your interpretation, I just shocked the nation (Oh)",nation,INNER,MULTI,multi,HIGH,Y
+"One Mic, One Gun",18,"Your interpretation, I just shocked the nation (Oh)",nation,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",18,"Your interpretation, I just shocked the nation (Oh)",interpretation,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",came,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",18,"Your interpretation, I just shocked the nation (Oh)",interpretation,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",18,"Your interpretation, I just shocked the nation (Oh)",nation,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",came,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",18,"Your interpretation, I just shocked the nation (Oh)",nation,20,They just ran in one of my cribs and took what? I replaced it (Haha),replaced,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",18,"Your interpretation, I just shocked the nation (Oh)",interpretation,20,They just ran in one of my cribs and took what? I replaced it (Haha),replaced,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",18,"Your interpretation, I just shocked the nation (Oh)",nation,21,"Two Caucasians, saw part of they faces",faces,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",18,"Your interpretation, I just shocked the nation (Oh)",nation,22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",exploitation,END,MULTI,multi,HIGH,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",came,19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,20,They just ran in one of my cribs and took what? I replaced it (Haha),replaced,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",back,20,They just ran in one of my cribs and took what? I replaced it (Haha),ran,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",came,20,They just ran in one of my cribs and took what? I replaced it (Haha),replaced,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",tour,20,They just ran in one of my cribs and took what? I replaced it (Haha),took,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,21,"Two Caucasians, saw part of they faces",faces,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",came,21,"Two Caucasians, saw part of they faces",Caucasians,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",came,21,"Two Caucasians, saw part of they faces",faces,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,21,"Two Caucasians, saw part of they faces",Caucasians,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",Wu,21,"Two Caucasians, saw part of they faces",Two,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",19,"Did my tour with The Wu, I came back and I set the pace (Woah)",pace,22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",exploitation,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",20,They just ran in one of my cribs and took what? I replaced it (Haha),one,20,They just ran in one of my cribs and took what? I replaced it (Haha),what,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",20,They just ran in one of my cribs and took what? I replaced it (Haha),replaced,21,"Two Caucasians, saw part of they faces",faces,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",20,They just ran in one of my cribs and took what? I replaced it (Haha),replaced,21,"Two Caucasians, saw part of they faces",Caucasians,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",20,They just ran in one of my cribs and took what? I replaced it (Haha),replaced,22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",exploitation,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",20,They just ran in one of my cribs and took what? I replaced it (Haha),ran,22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",Black,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",21,"Two Caucasians, saw part of they faces",Caucasians,21,"Two Caucasians, saw part of they faces",faces,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",21,"Two Caucasians, saw part of they faces",faces,22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",exploitation,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",21,"Two Caucasians, saw part of they faces",Caucasians,22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",exploitation,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",21,"Two Caucasians, saw part of they faces",saw,22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",y'all,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",21,"Two Caucasians, saw part of they faces",Two,22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",assumed,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",21,"Two Caucasians, saw part of they faces",Caucasians,23,"They ain't know that I see everything, invested in Ring",ain't,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",21,"Two Caucasians, saw part of they faces",faces,23,"They ain't know that I see everything, invested in Ring",ain't,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",exploitation,23,"They ain't know that I see everything, invested in Ring",ain't,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",Most,23,"They ain't know that I see everything, invested in Ring",know,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",assumed,24,"It's cool to be mainstream, I'd rather be timeless",cool,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",22,"Most of y'all assumed that they was Black, it's exploitation (Black Caesar)",Black,24,"It's cool to be mainstream, I'd rather be timeless",rather,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",23,"They ain't know that I see everything, invested in Ring",everything,23,"They ain't know that I see everything, invested in Ring",Ring,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",23,"They ain't know that I see everything, invested in Ring",see,24,"It's cool to be mainstream, I'd rather be timeless",mainstream,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",23,"They ain't know that I see everything, invested in Ring",see,25,"That's if we keepin' it P, 21 (21, 21)",keepin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",23,"They ain't know that I see everything, invested in Ring",see,25,"That's if we keepin' it P, 21 (21, 21)",P,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",24,"It's cool to be mainstream, I'd rather be timeless",mainstream,25,"That's if we keepin' it P, 21 (21, 21)",keepin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",24,"It's cool to be mainstream, I'd rather be timeless",mainstream,25,"That's if we keepin' it P, 21 (21, 21)",P,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",24,"It's cool to be mainstream, I'd rather be timeless",timeless,28,"Never controversial, I'm mad the fans expected less from me",less,END,SLANT,spelling,LOW,Y
+"One Mic, One Gun",25,"That's if we keepin' it P, 21 (21, 21)",keepin,25,"That's if we keepin' it P, 21 (21, 21)",P,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",26,I'm on that same trajectory,trajectory,27,"Bullet wounds and jail cells couldn't stop me, this my destiny",destiny,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",26,I'm on that same trajectory,same,27,"Bullet wounds and jail cells couldn't stop me, this my destiny",jail,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",26,I'm on that same trajectory,trajectory,27,"Bullet wounds and jail cells couldn't stop me, this my destiny",cells,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",26,I'm on that same trajectory,trajectory,28,"Never controversial, I'm mad the fans expected less from me",less,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",26,I'm on that same trajectory,trajectory,28,"Never controversial, I'm mad the fans expected less from me",expected,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",26,I'm on that same trajectory,trajectory,28,"Never controversial, I'm mad the fans expected less from me",Never,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",26,I'm on that same trajectory,trajectory,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",26,I'm on that same trajectory,trajectory,30,"Fuck the jewelry, I rather buy land and invest successfully",successfully,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",Bullet,27,"Bullet wounds and jail cells couldn't stop me, this my destiny",couldn't,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",cells,27,"Bullet wounds and jail cells couldn't stop me, this my destiny",destiny,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",destiny,28,"Never controversial, I'm mad the fans expected less from me",less,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",cells,28,"Never controversial, I'm mad the fans expected less from me",expected,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",cells,28,"Never controversial, I'm mad the fans expected less from me",less,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",cells,28,"Never controversial, I'm mad the fans expected less from me",Never,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",destiny,28,"Never controversial, I'm mad the fans expected less from me",expected,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",destiny,28,"Never controversial, I'm mad the fans expected less from me",Never,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",destiny,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",cells,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",cells,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",get,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",destiny,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",get,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",27,"Bullet wounds and jail cells couldn't stop me, this my destiny",destiny,30,"Fuck the jewelry, I rather buy land and invest successfully",successfully,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",expected,28,"Never controversial, I'm mad the fans expected less from me",less,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",mad,28,"Never controversial, I'm mad the fans expected less from me",fans,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",Never,28,"Never controversial, I'm mad the fans expected less from me",expected,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",Never,28,"Never controversial, I'm mad the fans expected less from me",less,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",less,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,END,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",expected,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",expected,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",get,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",less,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",get,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",Never,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",Never,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",get,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",less,30,"Fuck the jewelry, I rather buy land and invest successfully",successfully,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",expected,30,"Fuck the jewelry, I rather buy land and invest successfully",invest,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",expected,30,"Fuck the jewelry, I rather buy land and invest successfully",successfully,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",fans,30,"Fuck the jewelry, I rather buy land and invest successfully",land,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",fans,30,"Fuck the jewelry, I rather buy land and invest successfully",rather,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",less,30,"Fuck the jewelry, I rather buy land and invest successfully",invest,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",mad,30,"Fuck the jewelry, I rather buy land and invest successfully",land,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",mad,30,"Fuck the jewelry, I rather buy land and invest successfully",rather,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",Never,30,"Fuck the jewelry, I rather buy land and invest successfully",invest,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",28,"Never controversial, I'm mad the fans expected less from me",Never,30,"Fuck the jewelry, I rather buy land and invest successfully",successfully,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",get,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",nose,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",no,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",nose,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",won't,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",won't,29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",no,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,30,"Fuck the jewelry, I rather buy land and invest successfully",successfully,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,30,"Fuck the jewelry, I rather buy land and invest successfully",invest,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",get,30,"Fuck the jewelry, I rather buy land and invest successfully",invest,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",get,30,"Fuck the jewelry, I rather buy land and invest successfully",successfully,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",wipe,30,"Fuck the jewelry, I rather buy land and invest successfully",buy,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",bless,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",Kehinde,INNER,ASSONANCE,vowel,LOW,N
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",wipe,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",type,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",29,"Nigga sneeze around me, wipe his nose, won't get no bless from me",wipe,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",Wiley,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",30,"Fuck the jewelry, I rather buy land and invest successfully",invest,30,"Fuck the jewelry, I rather buy land and invest successfully",successfully,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",30,"Fuck the jewelry, I rather buy land and invest successfully",rather,30,"Fuck the jewelry, I rather buy land and invest successfully",land,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",30,"Fuck the jewelry, I rather buy land and invest successfully",buy,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",type,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",30,"Fuck the jewelry, I rather buy land and invest successfully",buy,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",Wiley,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",30,"Fuck the jewelry, I rather buy land and invest successfully",invest,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",Kehinde,INNER,ASSONANCE,vowel,LOW,N
+"One Mic, One Gun",30,"Fuck the jewelry, I rather buy land and invest successfully",Fuck,32,And I'ma pass it to my son,son,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",30,"Fuck the jewelry, I rather buy land and invest successfully",land,32,And I'ma pass it to my son,pass,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",30,"Fuck the jewelry, I rather buy land and invest successfully",rather,32,And I'ma pass it to my son,pass,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",all,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",wall,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",got,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",bonds,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",got,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",stocks,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",stocks,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",bonds,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",type,31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",Wiley,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",bonds,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",capo,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",bonds,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",don,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",bonds,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",Escobar,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",got,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",capo,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",got,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",don,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",got,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",Escobar,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",stocks,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",capo,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",stocks,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",don,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",stocks,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",Escobar,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",type,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",like,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",31,"I got all type of stocks and bonds, Kehinde Wiley on my wall",Wiley,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",like,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",32,And I'ma pass it to my son,son,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",gun,END,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",32,And I'ma pass it to my son,I'ma,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",mic,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",32,And I'ma pass it to my son,pass,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",Savage,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",32,And I'ma pass it to my son,son,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",one,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",capo,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",don,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",capo,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",Escobar,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",Escobar,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",don,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",one,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",gun,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",one,33,"If Savage like the capo that mean Escobar the don, one mic, one gun",one,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",like,34,"My net worth like eight figures, I'm workin' on gettin' me nine",like,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",like,34,"My net worth like eight figures, I'm workin' on gettin' me nine",nine,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",mic,34,"My net worth like eight figures, I'm workin' on gettin' me nine",figures,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",gun,35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",one,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",mean,35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",lyin,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",one,35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",one,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",33,"If Savage like the capo that mean Escobar the don, one mic, one gun",Savage,35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",cappin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",like,34,"My net worth like eight figures, I'm workin' on gettin' me nine",nine,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",net,34,"My net worth like eight figures, I'm workin' on gettin' me nine",gettin,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",worth,34,"My net worth like eight figures, I'm workin' on gettin' me nine",workin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",eight,35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",ain't,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",figures,35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",niggas,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",nine,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",tryin,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",like,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",hype,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",like,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",tryin,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",nine,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",hype,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",nine,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",line,END,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",34,"My net worth like eight figures, I'm workin' on gettin' me nine",nine,38,"They actin' like I just popped, I was Platinum before I signed",signed,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",know,35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",no,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",lyin,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",tryin,END,PERFECT,spelling,HIGH,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",cappin,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",chasin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",cappin,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",rappers,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",know,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",don't,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",lyin,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",chasin,INNER,PERFECT,spelling,MED,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",no,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",don't,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",ain't,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",ain't,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",doin,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",goin,INNER,PERFECT,spelling,HIGH,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",know,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",no,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",lyin,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",tryna,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",niggas,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",nigga,INNER,SLANT,spelling,LOW,Y
+"One Mic, One Gun",35,"You know that I'm one of them niggas, I ain't doin' no cappin' or lyin'",no,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",no,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",hype,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",tryin,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",rappers,36,"You rappers be chasin' the hype, I do it and I don't be tryin'",chasin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",tryin,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",line,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",don't,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",no,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",hype,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",line,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",tryin,38,"They actin' like I just popped, I was Platinum before I signed",signed,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",chasin,38,"They actin' like I just popped, I was Platinum before I signed",actin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",chasin,38,"They actin' like I just popped, I was Platinum before I signed",Platinum,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",hype,38,"They actin' like I just popped, I was Platinum before I signed",like,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",hype,38,"They actin' like I just popped, I was Platinum before I signed",signed,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",rappers,38,"They actin' like I just popped, I was Platinum before I signed",actin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",rappers,38,"They actin' like I just popped, I was Platinum before I signed",Platinum,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",tryin,38,"They actin' like I just popped, I was Platinum before I signed",like,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",tryin,39,"I went Platinum without no features, I put platinum on your mind",mind,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",36,"You rappers be chasin' the hype, I do it and I don't be tryin'",tryin,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",rhyme,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",against,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",legend,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",against,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",next,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",legend,37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",next,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",line,38,"They actin' like I just popped, I was Platinum before I signed",signed,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",line,38,"They actin' like I just popped, I was Platinum before I signed",like,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",line,39,"I went Platinum without no features, I put platinum on your mind",mind,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",against,39,"I went Platinum without no features, I put platinum on your mind",went,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",legend,39,"I went Platinum without no features, I put platinum on your mind",went,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",next,39,"I went Platinum without no features, I put platinum on your mind",went,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",no,39,"I went Platinum without no features, I put platinum on your mind",no,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",line,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",rhyme,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",37,"I ain't goin' against no legend, nigga, I'm tryna be next in line",line,41,They wanna see me fucked so they could deport me like I'm Shyne,Shyne,END,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",actin,38,"They actin' like I just popped, I was Platinum before I signed",Platinum,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",like,38,"They actin' like I just popped, I was Platinum before I signed",signed,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",signed,39,"I went Platinum without no features, I put platinum on your mind",mind,END,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",actin,39,"I went Platinum without no features, I put platinum on your mind",Platinum,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",like,39,"I went Platinum without no features, I put platinum on your mind",mind,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",Platinum,39,"I went Platinum without no features, I put platinum on your mind",Platinum,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",signed,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",rhyme,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",like,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",rhyme,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",popped,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",Glock,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",popped,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",got,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",signed,41,They wanna see me fucked so they could deport me like I'm Shyne,Shyne,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",38,"They actin' like I just popped, I was Platinum before I signed",signed,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",while,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",Platinum,39,"I went Platinum without no features, I put platinum on your mind",platinum,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",mind,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",rhyme,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",no,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",don't,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",no,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",no,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",no,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",tone,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",mind,41,They wanna see me fucked so they could deport me like I'm Shyne,Shyne,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",features,41,They wanna see me fucked so they could deport me like I'm Shyne,see,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",mind,41,They wanna see me fucked so they could deport me like I'm Shyne,like,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",put,41,They wanna see me fucked so they could deport me like I'm Shyne,could,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",mind,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",while,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",39,"I went Platinum without no features, I put platinum on your mind",mind,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",style,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",don't,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",no,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",Glock,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",got,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",tone,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",don't,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",tone,40,"This Glock I got two-tone, and this bitch don't bust no rhyme",no,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",rhyme,41,They wanna see me fucked so they could deport me like I'm Shyne,Shyne,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",bust,41,They wanna see me fucked so they could deport me like I'm Shyne,fucked,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",Glock,41,They wanna see me fucked so they could deport me like I'm Shyne,wanna,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",got,41,They wanna see me fucked so they could deport me like I'm Shyne,wanna,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",rhyme,41,They wanna see me fucked so they could deport me like I'm Shyne,like,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",rhyme,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",while,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",don't,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",O,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",no,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",O,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",tone,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",O,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",40,"This Glock I got two-tone, and this bitch don't bust no rhyme",rhyme,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",style,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",41,They wanna see me fucked so they could deport me like I'm Shyne,like,41,They wanna see me fucked so they could deport me like I'm Shyne,Shyne,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",41,They wanna see me fucked so they could deport me like I'm Shyne,Shyne,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",while,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",41,They wanna see me fucked so they could deport me like I'm Shyne,like,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",while,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",41,They wanna see me fucked so they could deport me like I'm Shyne,see,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",G,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",41,They wanna see me fucked so they could deport me like I'm Shyne,see,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",here,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",41,They wanna see me fucked so they could deport me like I'm Shyne,see,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",T,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",41,They wanna see me fucked so they could deport me like I'm Shyne,Shyne,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",style,END,SLANT,cmu,MED,Y
+"One Mic, One Gun",41,They wanna see me fucked so they could deport me like I'm Shyne,fucked,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",love,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",41,They wanna see me fucked so they could deport me like I'm Shyne,like,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",style,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",42,"They tellin' me that I'm the G-O-A-T, I been here for a while",G,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",here,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",42,"They tellin' me that I'm the G-O-A-T, I been here for a while",G,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",T,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",42,"They tellin' me that I'm the G-O-A-T, I been here for a while",T,42,"They tellin' me that I'm the G-O-A-T, I been here for a while",here,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",42,"They tellin' me that I'm the G-O-A-T, I been here for a while",while,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",style,END,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",42,"They tellin' me that I'm the G-O-A-T, I been here for a while",O,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",GOAT,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",42,"They tellin' me that I'm the G-O-A-T, I been here for a while",O,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",no,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",42,"They tellin' me that I'm the G-O-A-T, I been here for a while",O,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",tomorrow,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",42,"They tellin' me that I'm the G-O-A-T, I been here for a while",tellin,44,"21, Yak, y'all get together, be big for the South (The globe)",get,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",42,"They tellin' me that I'm the G-O-A-T, I been here for a while",tellin,44,"21, Yak, y'all get together, be big for the South (The globe)",together,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",43,"GOAT, love me today, hate me tomorrow, no switchin' my style",GOAT,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",no,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",43,"GOAT, love me today, hate me tomorrow, no switchin' my style",GOAT,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",tomorrow,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",43,"GOAT, love me today, hate me tomorrow, no switchin' my style",today,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",hate,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",43,"GOAT, love me today, hate me tomorrow, no switchin' my style",tomorrow,43,"GOAT, love me today, hate me tomorrow, no switchin' my style",no,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",43,"GOAT, love me today, hate me tomorrow, no switchin' my style",switchin,44,"21, Yak, y'all get together, be big for the South (The globe)",big,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",43,"GOAT, love me today, hate me tomorrow, no switchin' my style",switchin,45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",shit,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",44,"21, Yak, y'all get together, be big for the South (The globe)",get,44,"21, Yak, y'all get together, be big for the South (The globe)",together,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",44,"21, Yak, y'all get together, be big for the South (The globe)",South,45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",vowels,END,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",44,"21, Yak, y'all get together, be big for the South (The globe)",big,45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",shit,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",44,"21, Yak, y'all get together, be big for the South (The globe)",get,45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",Whatever,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",44,"21, Yak, y'all get together, be big for the South (The globe)",together,45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",Whatever,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",44,"21, Yak, y'all get together, be big for the South (The globe)",y'all,45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",all,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",44,"21, Yak, y'all get together, be big for the South (The globe)",y'all,45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",York,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",44,"21, Yak, y'all get together, be big for the South (The globe)",get,46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",second,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",44,"21, Yak, y'all get together, be big for the South (The globe)",together,46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",second,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",York,45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",all,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",New,46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",new,INNER,REPEAT,spelling,HIGH,N
+"One Mic, One Gun",45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",Whatever,46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",second,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",45,"Whatever I do is New York, you hear that shit all in my vowels (Grrt)",Whatever,47,We're sendin' love to the whole culture,sendin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",one,46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",ones,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",one,46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",run,INNER,PERFECT,cmu,HIGH,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",ones,46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",run,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",one,47,We're sendin' love to the whole culture,culture,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",one,47,We're sendin' love to the whole culture,love,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",ones,47,We're sendin' love to the whole culture,culture,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",ones,47,We're sendin' love to the whole culture,love,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",run,47,We're sendin' love to the whole culture,culture,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",run,47,We're sendin' love to the whole culture,love,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",46,"I'm one of them ones, on my second run, I'm on a new wave (Wave)",second,47,We're sendin' love to the whole culture,sendin,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",47,We're sendin' love to the whole culture,love,47,We're sendin' love to the whole culture,culture,INNER,ASSONANCE,vowel,MED,Y
+"One Mic, One Gun",48,"Mass Appeal, Slaughter Gang",Mass,48,"Mass Appeal, Slaughter Gang",Gang,INNER,SLANT,cmu,MED,Y
+"One Mic, One Gun",48,"Mass Appeal, Slaughter Gang",Appeal,49,"This shit too easy, yeah",easy,INNER,SLANT,cmu,MED,Y

@@ -1,0 +1,417 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+BULLETPROOF,1,"Been there, done that, messed around",there,1,"Been there, done that, messed around",messed,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,1,"Been there, done that, messed around",around,2,"I'm having fun, don't put me down",down,END,SLANT,cmu,MED,Y
+BULLETPROOF,1,"Been there, done that, messed around",done,2,"I'm having fun, don't put me down",fun,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,1,"Been there, done that, messed around",messed,3,I'll never let you sweep me off my feet,let,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,1,"Been there, done that, messed around",messed,3,I'll never let you sweep me off my feet,never,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,1,"Been there, done that, messed around",there,3,I'll never let you sweep me off my feet,let,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,1,"Been there, done that, messed around",there,3,I'll never let you sweep me off my feet,never,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,never,3,I'll never let you sweep me off my feet,let,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,sweep,3,I'll never let you sweep me off my feet,feet,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,feet,4,"Teflon Don, I'm feeling bulletproof",feeling,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,let,4,"Teflon Don, I'm feeling bulletproof",Teflon,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,never,4,"Teflon Don, I'm feeling bulletproof",Teflon,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,sweep,4,"Teflon Don, I'm feeling bulletproof",feeling,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,feet,5,"Kevlar Yeezy, I'm feeling bulletproof",feeling,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,feet,5,"Kevlar Yeezy, I'm feeling bulletproof",Yeezy,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,let,5,"Kevlar Yeezy, I'm feeling bulletproof",Kevlar,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,never,5,"Kevlar Yeezy, I'm feeling bulletproof",Kevlar,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,sweep,5,"Kevlar Yeezy, I'm feeling bulletproof",feeling,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,3,I'll never let you sweep me off my feet,sweep,5,"Kevlar Yeezy, I'm feeling bulletproof",Yeezy,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,4,"Teflon Don, I'm feeling bulletproof",bulletproof,5,"Kevlar Yeezy, I'm feeling bulletproof",bulletproof,END,REPEAT,spelling,HIGH,N
+BULLETPROOF,4,"Teflon Don, I'm feeling bulletproof",feeling,5,"Kevlar Yeezy, I'm feeling bulletproof",feeling,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,4,"Teflon Don, I'm feeling bulletproof",Teflon,5,"Kevlar Yeezy, I'm feeling bulletproof",Kevlar,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,4,"Teflon Don, I'm feeling bulletproof",bulletproof,6,"Saving the world, Superman to the booth",booth,END,SLANT,cmu,MED,Y
+BULLETPROOF,4,"Teflon Don, I'm feeling bulletproof",bulletproof,6,"Saving the world, Superman to the booth",Superman,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,4,"Teflon Don, I'm feeling bulletproof",bulletproof,7,"Look, it's a bird! It's a plane! Then the screws is loose",loose,END,SLANT,cmu,MED,Y
+BULLETPROOF,5,"Kevlar Yeezy, I'm feeling bulletproof",bulletproof,6,"Saving the world, Superman to the booth",booth,END,SLANT,cmu,MED,Y
+BULLETPROOF,5,"Kevlar Yeezy, I'm feeling bulletproof",bulletproof,6,"Saving the world, Superman to the booth",Superman,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,5,"Kevlar Yeezy, I'm feeling bulletproof",bulletproof,7,"Look, it's a bird! It's a plane! Then the screws is loose",loose,END,SLANT,cmu,MED,Y
+BULLETPROOF,5,"Kevlar Yeezy, I'm feeling bulletproof",bulletproof,7,"Look, it's a bird! It's a plane! Then the screws is loose",screws,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",Superman,6,"Saving the world, Superman to the booth",booth,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",booth,7,"Look, it's a bird! It's a plane! Then the screws is loose",loose,END,SLANT,cmu,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",booth,7,"Look, it's a bird! It's a plane! Then the screws is loose",screws,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",Saving,7,"Look, it's a bird! It's a plane! Then the screws is loose",plane,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",Superman,7,"Look, it's a bird! It's a plane! Then the screws is loose",loose,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",Superman,7,"Look, it's a bird! It's a plane! Then the screws is loose",screws,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",world,7,"Look, it's a bird! It's a plane! Then the screws is loose",bird,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",booth,8,Who asked you? This is that GOAT talk,Who,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",Superman,8,Who asked you? This is that GOAT talk,Who,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,6,"Saving the world, Superman to the booth",booth,10,"Empty the cell, they done let Hoover loose",loose,END,SLANT,cmu,MED,Y
+BULLETPROOF,7,"Look, it's a bird! It's a plane! Then the screws is loose",screws,7,"Look, it's a bird! It's a plane! Then the screws is loose",loose,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,7,"Look, it's a bird! It's a plane! Then the screws is loose",loose,8,Who asked you? This is that GOAT talk,Who,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,7,"Look, it's a bird! It's a plane! Then the screws is loose",screws,8,Who asked you? This is that GOAT talk,Who,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,7,"Look, it's a bird! It's a plane! Then the screws is loose",plane,9,This ain't got nothing to do with you,ain't,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,7,"Look, it's a bird! It's a plane! Then the screws is loose",loose,10,"Empty the cell, they done let Hoover loose",loose,END,REPEAT,spelling,HIGH,N
+BULLETPROOF,7,"Look, it's a bird! It's a plane! Then the screws is loose",loose,11,"Empty my closet, now I'm feeling bulletproof",bulletproof,END,SLANT,cmu,MED,Y
+BULLETPROOF,8,Who asked you? This is that GOAT talk,Who,10,"Empty the cell, they done let Hoover loose",Hoover,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,8,Who asked you? This is that GOAT talk,Who,10,"Empty the cell, they done let Hoover loose",loose,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,9,This ain't got nothing to do with you,nothing,10,"Empty the cell, they done let Hoover loose",done,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,9,This ain't got nothing to do with you,got,11,"Empty my closet, now I'm feeling bulletproof",closet,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",cell,10,"Empty the cell, they done let Hoover loose",let,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",Empty,10,"Empty the cell, they done let Hoover loose",cell,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",Empty,10,"Empty the cell, they done let Hoover loose",let,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",Hoover,10,"Empty the cell, they done let Hoover loose",loose,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",loose,11,"Empty my closet, now I'm feeling bulletproof",bulletproof,END,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",cell,11,"Empty my closet, now I'm feeling bulletproof",Empty,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",Empty,11,"Empty my closet, now I'm feeling bulletproof",Empty,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",Hoover,11,"Empty my closet, now I'm feeling bulletproof",bulletproof,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",let,11,"Empty my closet, now I'm feeling bulletproof",Empty,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",loose,12,Tell you the truth but you already knew the truth,truth,END,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",cell,12,Tell you the truth but you already knew the truth,already,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",cell,12,Tell you the truth but you already knew the truth,Tell,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",Empty,12,Tell you the truth but you already knew the truth,already,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",Empty,12,Tell you the truth but you already knew the truth,Tell,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",Hoover,12,Tell you the truth but you already knew the truth,knew,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",Hoover,12,Tell you the truth but you already knew the truth,truth,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",let,12,Tell you the truth but you already knew the truth,already,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",let,12,Tell you the truth but you already knew the truth,Tell,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",loose,12,Tell you the truth but you already knew the truth,knew,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",loose,12,Tell you the truth but you already knew the truth,truth,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",loose,13,"You know these fantasies dark, but they beautiful",beautiful,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,10,"Empty the cell, they done let Hoover loose",loose,14,Back from the future too,future,END,SLANT,cmu,MED,Y
+BULLETPROOF,11,"Empty my closet, now I'm feeling bulletproof",bulletproof,12,Tell you the truth but you already knew the truth,truth,END,SLANT,cmu,MED,Y
+BULLETPROOF,11,"Empty my closet, now I'm feeling bulletproof",bulletproof,12,Tell you the truth but you already knew the truth,knew,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,11,"Empty my closet, now I'm feeling bulletproof",bulletproof,12,Tell you the truth but you already knew the truth,truth,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,11,"Empty my closet, now I'm feeling bulletproof",Empty,12,Tell you the truth but you already knew the truth,already,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,11,"Empty my closet, now I'm feeling bulletproof",Empty,12,Tell you the truth but you already knew the truth,Tell,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,11,"Empty my closet, now I'm feeling bulletproof",bulletproof,13,"You know these fantasies dark, but they beautiful",beautiful,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,11,"Empty my closet, now I'm feeling bulletproof",closet,13,"You know these fantasies dark, but they beautiful",dark,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,11,"Empty my closet, now I'm feeling bulletproof",feeling,13,"You know these fantasies dark, but they beautiful",these,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,11,"Empty my closet, now I'm feeling bulletproof",bulletproof,14,Back from the future too,future,END,SLANT,cmu,MED,Y
+BULLETPROOF,12,Tell you the truth but you already knew the truth,knew,12,Tell you the truth but you already knew the truth,truth,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,12,Tell you the truth but you already knew the truth,Tell,12,Tell you the truth but you already knew the truth,already,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,12,Tell you the truth but you already knew the truth,truth,12,Tell you the truth but you already knew the truth,knew,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,12,Tell you the truth but you already knew the truth,truth,12,Tell you the truth but you already knew the truth,truth,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,12,Tell you the truth but you already knew the truth,truth,13,"You know these fantasies dark, but they beautiful",beautiful,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,12,Tell you the truth but you already knew the truth,knew,13,"You know these fantasies dark, but they beautiful",beautiful,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,12,Tell you the truth but you already knew the truth,truth,13,"You know these fantasies dark, but they beautiful",beautiful,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,12,Tell you the truth but you already knew the truth,truth,14,Back from the future too,future,END,SLANT,cmu,MED,Y
+BULLETPROOF,12,Tell you the truth but you already knew the truth,knew,14,Back from the future too,future,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,12,Tell you the truth but you already knew the truth,truth,14,Back from the future too,future,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,13,"You know these fantasies dark, but they beautiful",beautiful,14,Back from the future too,future,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,13,"You know these fantasies dark, but they beautiful",fantasies,14,Back from the future too,Back,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,13,"You know these fantasies dark, but they beautiful",know,15,Take on the world on my own,own,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,15,Take on the world on my own,Take,16,Sometimes I say something wrong,say,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,15,Take on the world on my own,own,17,"Last I've heard, I was cloned",cloned,END,SLANT,cmu,MED,Y
+BULLETPROOF,15,Take on the world on my own,world,17,"Last I've heard, I was cloned",heard,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,15,Take on the world on my own,own,19,"Put niggas on, should've never picked up my phone",phone,END,PERFECT,cmu,HIGH,Y
+BULLETPROOF,16,Sometimes I say something wrong,wrong,18,"Niggas can't fuck with my clone, fuck was y'all on?",y'all,END,SLANT,cmu,MED,Y
+BULLETPROOF,16,Sometimes I say something wrong,something,18,"Niggas can't fuck with my clone, fuck was y'all on?",fuck,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,17,"Last I've heard, I was cloned",cloned,18,"Niggas can't fuck with my clone, fuck was y'all on?",clone,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,17,"Last I've heard, I was cloned",Last,18,"Niggas can't fuck with my clone, fuck was y'all on?",can't,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,17,"Last I've heard, I was cloned",cloned,19,"Put niggas on, should've never picked up my phone",phone,END,SLANT,cmu,MED,Y
+BULLETPROOF,17,"Last I've heard, I was cloned",cloned,21,"Better watch your tone, oh, yeah",tone,END,SLANT,cmu,MED,Y
+BULLETPROOF,18,"Niggas can't fuck with my clone, fuck was y'all on?",fuck,18,"Niggas can't fuck with my clone, fuck was y'all on?",fuck,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,18,"Niggas can't fuck with my clone, fuck was y'all on?",clone,19,"Put niggas on, should've never picked up my phone",phone,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,18,"Niggas can't fuck with my clone, fuck was y'all on?",Niggas,19,"Put niggas on, should've never picked up my phone",niggas,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,18,"Niggas can't fuck with my clone, fuck was y'all on?",can't,20,"Niggas woke up a giant, now I can't sleep",can't,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,18,"Niggas can't fuck with my clone, fuck was y'all on?",clone,20,"Niggas woke up a giant, now I can't sleep",woke,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,18,"Niggas can't fuck with my clone, fuck was y'all on?",Niggas,20,"Niggas woke up a giant, now I can't sleep",Niggas,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,19,"Put niggas on, should've never picked up my phone",Put,19,"Put niggas on, should've never picked up my phone",should've,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,19,"Put niggas on, should've never picked up my phone",niggas,20,"Niggas woke up a giant, now I can't sleep",Niggas,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,19,"Put niggas on, should've never picked up my phone",phone,20,"Niggas woke up a giant, now I can't sleep",woke,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,19,"Put niggas on, should've never picked up my phone",phone,21,"Better watch your tone, oh, yeah",tone,END,PERFECT,cmu,HIGH,Y
+BULLETPROOF,19,"Put niggas on, should've never picked up my phone",never,21,"Better watch your tone, oh, yeah",Better,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,20,"Niggas woke up a giant, now I can't sleep",woke,21,"Better watch your tone, oh, yeah",tone,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,20,"Niggas woke up a giant, now I can't sleep",can't,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",fantasies,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,21,"Better watch your tone, oh, yeah",Better,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",hell,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,21,"Better watch your tone, oh, yeah",watch,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",dark,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,21,"Better watch your tone, oh, yeah",watch,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",Fox,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",twisted,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",still,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",beautiful,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",pharmaceuticals,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",beautiful,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",future,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",dark,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",Fox,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",fantasies,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",Back,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",beautiful,24,They was just planning my funeral,funeral,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",fantasies,24,They was just planning my funeral,planning,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",beautiful,25,Leave it to Ye to be late to the funeral,funeral,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,22,"My twisted fantasies still dark as hell, yeah, but they beautiful",beautiful,26,"They throwin' shots, them bitches went through the roof",roof,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",future,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",pharmaceuticals,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",pharmaceuticals,24,They was just planning my funeral,funeral,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",Back,24,They was just planning my funeral,planning,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",future,24,They was just planning my funeral,funeral,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",pharmaceuticals,25,Leave it to Ye to be late to the funeral,funeral,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",future,25,Leave it to Ye to be late to the funeral,funeral,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",pharmaceuticals,26,"They throwin' shots, them bitches went through the roof",roof,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,23,"Back from the future, I'm Michael Ye Fox on pharmaceuticals",pharmaceuticals,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",threw,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,24,They was just planning my funeral,funeral,25,Leave it to Ye to be late to the funeral,funeral,END,REPEAT,spelling,HIGH,N
+BULLETPROOF,24,They was just planning my funeral,funeral,26,"They throwin' shots, them bitches went through the roof",roof,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,24,They was just planning my funeral,funeral,26,"They throwin' shots, them bitches went through the roof",through,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,24,They was just planning my funeral,funeral,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",threw,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,25,Leave it to Ye to be late to the funeral,funeral,26,"They throwin' shots, them bitches went through the roof",roof,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,25,Leave it to Ye to be late to the funeral,funeral,26,"They throwin' shots, them bitches went through the roof",through,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,25,Leave it to Ye to be late to the funeral,funeral,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",threw,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,25,Leave it to Ye to be late to the funeral,late,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",ate,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,26,"They throwin' shots, them bitches went through the roof",through,26,"They throwin' shots, them bitches went through the roof",roof,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,26,"They throwin' shots, them bitches went through the roof",roof,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",threw,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,26,"They throwin' shots, them bitches went through the roof",through,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",threw,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,26,"They throwin' shots, them bitches went through the roof",went,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",every,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,26,"They throwin' shots, them bitches went through the roof",bitches,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",bitch,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,26,"They throwin' shots, them bitches went through the roof",shots,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",got,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",ate,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",ain't,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",ate,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",make,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",ate,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",pay,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,27,"I heard you ate every one that they threw at you (Oh, your ass shook)",every,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",heffer,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",cheap,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",eat,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",cheap,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",meat,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",eat,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",meat,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",I'ma,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",bitch,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",meat,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",free,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",ain't,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",make,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",ain't,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",pay,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",bitch,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",bitch,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",bitch,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",dick,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",bitch,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",I'ma,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",bitch,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",shit,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",cheap,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",free,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",eat,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",free,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",got,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",not,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",I'ma,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",bitch,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",I'ma,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",dick,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",I'ma,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",I'ma,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",I'ma,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",shit,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",time,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",time,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",meat,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",key,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",ain't,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",ain't,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",ain't,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",day,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",ain't,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",playin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",ain't,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",today,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",cheap,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",key,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",eat,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",key,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",got,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",Startin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",time,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",high,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",time,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",time,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",meat,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tee,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,28,"This time, I'ma be more cheap, we ain't goin' out to eat, bitch, I got meat",meat,32,"Life jack' on me, niggas step, I lean",lean,END,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",bitch,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",shit,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",dick,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",bitch,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",dick,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",shit,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",I'ma,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",bitch,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",I'ma,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",dick,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",I'ma,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",shit,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",make,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",pay,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",free,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",key,END,PERFECT,cmu,HIGH,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",make,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",ain't,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",make,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",day,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",make,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",playin,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",make,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",today,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",not,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",Startin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",pay,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",ain't,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",pay,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",day,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",pay,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",playin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",pay,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",today,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",time,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",high,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",time,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",time,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",free,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tee,END,PERFECT,cmu,HIGH,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",bitch,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,fit,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",bitch,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,slim,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",dick,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,fit,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",dick,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,slim,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",heffer,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,'jects,INNER,ASSONANCE,vowel,LOW,N
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",heffer,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,vest,INNER,ASSONANCE,vowel,LOW,N
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",I'ma,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,fit,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",I'ma,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,slim,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",make,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,made,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",make,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tailor,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",pay,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,made,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",pay,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tailor,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",shit,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,fit,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",shit,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,slim,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",time,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,right,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,29,"This time, I'ma make the heffer pay for dick, bitch, shit not free",free,32,"Life jack' on me, niggas step, I lean",lean,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",'bout,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",about,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",ain't,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",day,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",ain't,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",playin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",playin,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",day,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",time,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",high,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",today,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",ain't,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",today,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",day,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",today,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",playin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",key,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tee,END,PERFECT,cmu,HIGH,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",ain't,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,made,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",ain't,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tailor,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",day,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,made,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",day,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tailor,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",high,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,right,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",playin,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,made,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",playin,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tailor,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",time,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,right,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",today,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,made,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",today,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tailor,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",key,32,"Life jack' on me, niggas step, I lean",lean,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",high,32,"Life jack' on me, niggas step, I lean",Life,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,30,"Startin' today, ayy, I ain't playin' 'bout me, it's about day and time, high-key",time,32,"Life jack' on me, niggas step, I lean",Life,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,'jects,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,vest,INNER,ASSONANCE,vowel,LOW,N
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,slim,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,fit,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tailor,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,made,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,through,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,bulletproof,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tee,32,"Life jack' on me, niggas step, I lean",lean,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,'jects,32,"Life jack' on me, niggas step, I lean",step,INNER,ASSONANCE,vowel,LOW,N
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,right,32,"Life jack' on me, niggas step, I lean",Life,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,vest,32,"Life jack' on me, niggas step, I lean",step,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,'jects,33,"Hide TEC on me, Hi-Tech I drink",Tech,INNER,ASSONANCE,vowel,LOW,N
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,fit,33,"Hide TEC on me, Hi-Tech I drink",drink,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,right,33,"Hide TEC on me, Hi-Tech I drink",Hi,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,right,33,"Hide TEC on me, Hi-Tech I drink",Hide,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,slim,33,"Hide TEC on me, Hi-Tech I drink",drink,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,vest,33,"Hide TEC on me, Hi-Tech I drink",TEC,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,vest,33,"Hide TEC on me, Hi-Tech I drink",Tech,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,31,Walk through the 'jects with a slim-fit tailor-made bulletproof vest right under my tee,tee,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",pee,END,PERFECT,cmu,HIGH,Y
+BULLETPROOF,32,"Life jack' on me, niggas step, I lean",Life,33,"Hide TEC on me, Hi-Tech I drink",Hi,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,32,"Life jack' on me, niggas step, I lean",Life,33,"Hide TEC on me, Hi-Tech I drink",Hide,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,32,"Life jack' on me, niggas step, I lean",step,33,"Hide TEC on me, Hi-Tech I drink",TEC,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,32,"Life jack' on me, niggas step, I lean",step,33,"Hide TEC on me, Hi-Tech I drink",Tech,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,32,"Life jack' on me, niggas step, I lean",jack,34,"Ho play police game, she scream, she win, bitch can't smother dick again",can't,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,32,"Life jack' on me, niggas step, I lean",lean,34,"Ho play police game, she scream, she win, bitch can't smother dick again",police,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,32,"Life jack' on me, niggas step, I lean",lean,34,"Ho play police game, she scream, she win, bitch can't smother dick again",scream,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,32,"Life jack' on me, niggas step, I lean",step,34,"Ho play police game, she scream, she win, bitch can't smother dick again",again,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,32,"Life jack' on me, niggas step, I lean",lean,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",pee,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",Hide,33,"Hide TEC on me, Hi-Tech I drink",Hi,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",TEC,33,"Hide TEC on me, Hi-Tech I drink",Tech,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",drink,34,"Ho play police game, she scream, she win, bitch can't smother dick again",bitch,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",drink,34,"Ho play police game, she scream, she win, bitch can't smother dick again",dick,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",drink,34,"Ho play police game, she scream, she win, bitch can't smother dick again",win,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",TEC,34,"Ho play police game, she scream, she win, bitch can't smother dick again",again,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",Tech,34,"Ho play police game, she scream, she win, bitch can't smother dick again",again,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",Hi,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",fire,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",Hi,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",right,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",Hide,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",fire,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",Hide,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",right,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",TEC,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",Dead,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",Tech,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",Dead,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,33,"Hide TEC on me, Hi-Tech I drink",drink,36,Women empowerment got these hoes on retarded shit,shit,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",bitch,34,"Ho play police game, she scream, she win, bitch can't smother dick again",dick,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",play,34,"Ho play police game, she scream, she win, bitch can't smother dick again",game,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",police,34,"Ho play police game, she scream, she win, bitch can't smother dick again",scream,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",win,34,"Ho play police game, she scream, she win, bitch can't smother dick again",bitch,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",win,34,"Ho play police game, she scream, she win, bitch can't smother dick again",dick,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",again,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",Dead,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",Ho,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",over,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",police,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",even,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",police,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",freeze,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",police,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",pee,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",scream,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",even,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",scream,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",freeze,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",scream,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",pee,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",bitch,36,Women empowerment got these hoes on retarded shit,shit,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",bitch,36,Women empowerment got these hoes on retarded shit,Women,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",dick,36,Women empowerment got these hoes on retarded shit,shit,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",dick,36,Women empowerment got these hoes on retarded shit,Women,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",Ho,36,Women empowerment got these hoes on retarded shit,hoes,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",police,36,Women empowerment got these hoes on retarded shit,these,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",scream,36,Women empowerment got these hoes on retarded shit,these,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",win,36,Women empowerment got these hoes on retarded shit,shit,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,34,"Ho play police game, she scream, she win, bitch can't smother dick again",win,36,Women empowerment got these hoes on retarded shit,Women,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",could,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",wouldn't,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",even,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",pee,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",freeze,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",even,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",freeze,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",pee,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",right,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",fire,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",even,36,Women empowerment got these hoes on retarded shit,these,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",freeze,36,Women empowerment got these hoes on retarded shit,these,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",now,36,Women empowerment got these hoes on retarded shit,empowerment,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",over,36,Women empowerment got these hoes on retarded shit,hoes,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",pee,36,Women empowerment got these hoes on retarded shit,these,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",Dead,37,"Got a etch in her heart and shit, I ain't tryna be part of it",etch,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",even,37,"Got a etch in her heart and shit, I ain't tryna be part of it",tryna,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,35,"Dead right now, the world could freeze over and if you was on fire, I wouldn't even pee on you",freeze,37,"Got a etch in her heart and shit, I ain't tryna be part of it",tryna,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,got,36,Women empowerment got these hoes on retarded shit,retarded,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,Women,36,Women empowerment got these hoes on retarded shit,shit,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,got,37,"Got a etch in her heart and shit, I ain't tryna be part of it",Got,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,got,37,"Got a etch in her heart and shit, I ain't tryna be part of it",heart,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,got,37,"Got a etch in her heart and shit, I ain't tryna be part of it",part,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,retarded,37,"Got a etch in her heart and shit, I ain't tryna be part of it",Got,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,retarded,37,"Got a etch in her heart and shit, I ain't tryna be part of it",heart,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,retarded,37,"Got a etch in her heart and shit, I ain't tryna be part of it",part,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,shit,37,"Got a etch in her heart and shit, I ain't tryna be part of it",shit,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,these,37,"Got a etch in her heart and shit, I ain't tryna be part of it",tryna,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,Women,37,"Got a etch in her heart and shit, I ain't tryna be part of it",shit,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,empowerment,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",'bout,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,got,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",talkin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,hoes,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",don't,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,hoes,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",know,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,retarded,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",talkin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,these,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",cheaper,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,these,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",keep,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,36,Women empowerment got these hoes on retarded shit,shit,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",pimpin,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",Got,37,"Got a etch in her heart and shit, I ain't tryna be part of it",heart,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",Got,37,"Got a etch in her heart and shit, I ain't tryna be part of it",part,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",heart,37,"Got a etch in her heart and shit, I ain't tryna be part of it",part,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",etch,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",said,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",Got,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",talkin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",heart,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",talkin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",part,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",talkin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",tryna,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",cheaper,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",tryna,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",keep,INNER,SLANT,spelling,LOW,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",Got,39,"You owe me a few dollars, dog",dollars,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",heart,39,"You owe me a few dollars, dog",dollars,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,37,"Got a etch in her heart and shit, I ain't tryna be part of it",part,39,"You owe me a few dollars, dog",dollars,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",cheaper,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",keep,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",don't,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",know,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",don't,39,"You owe me a few dollars, dog",owe,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",know,39,"You owe me a few dollars, dog",owe,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",talkin,39,"You owe me a few dollars, dog",dollars,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",Who,39,"You owe me a few dollars, dog",few,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",cheaper,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",keep,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",cheaper,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",these,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",keep,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",keep,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,38,"Who said it's cheaper to keep her? Boy, you don't know what you talkin' 'bout",keep,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",these,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,39,"You owe me a few dollars, dog",dog,41,Boys go to Jupiter to get more stupider,more,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,39,"You owe me a few dollars, dog",few,41,Boys go to Jupiter to get more stupider,Jupiter,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,39,"You owe me a few dollars, dog",few,41,Boys go to Jupiter to get more stupider,stupider,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,39,"You owe me a few dollars, dog",owe,41,Boys go to Jupiter to get more stupider,go,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",bitches,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",pimpin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",can't,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",fallin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",keep,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",these,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",pimpin,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",bitches,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",pimpin,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",pimpin,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",thinkin,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",bitches,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",thinkin,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",pimpin,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",victim,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",bitches,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",victim,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",pimpin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",victim,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",thinkin,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,40,"I can't keep fallin' victim, thinkin' I'm pimpin' these bitches pimpin' me",pimpin,43,And we been through hella things,things,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,41,Boys go to Jupiter to get more stupider,Jupiter,41,Boys go to Jupiter to get more stupider,stupider,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,41,Boys go to Jupiter to get more stupider,get,42,Girls go to Mars to get more smart,get,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,41,Boys go to Jupiter to get more stupider,go,42,Girls go to Mars to get more smart,go,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,41,Boys go to Jupiter to get more stupider,more,42,Girls go to Mars to get more smart,more,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,41,Boys go to Jupiter to get more stupider,Jupiter,43,And we been through hella things,through,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,41,Boys go to Jupiter to get more stupider,stupider,43,And we been through hella things,through,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,42,Girls go to Mars to get more smart,Mars,42,Girls go to Mars to get more smart,smart,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,42,Girls go to Mars to get more smart,get,44,I know you think that I never change,never,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,42,Girls go to Mars to get more smart,go,44,I know you think that I never change,know,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,43,And we been through hella things,things,44,I know you think that I never change,think,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,43,And we been through hella things,things,45,But I never really meant to make you cry,really,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,44,I know you think that I never change,change,45,But I never really meant to make you cry,make,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,44,I know you think that I never change,never,45,But I never really meant to make you cry,meant,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,44,I know you think that I never change,never,45,But I never really meant to make you cry,never,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,44,I know you think that I never change,think,45,But I never really meant to make you cry,really,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,44,I know you think that I never change,change,46,I ain't saying that everyday,everyday,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,44,I know you think that I never change,change,46,I ain't saying that everyday,ain't,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,44,I know you think that I never change,change,46,I ain't saying that everyday,saying,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,44,I know you think that I never change,change,47,'Cause not every day gotta be this way,way,END,ASSONANCE,vowel,MED,Y
+BULLETPROOF,45,But I never really meant to make you cry,never,45,But I never really meant to make you cry,meant,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,45,But I never really meant to make you cry,make,46,I ain't saying that everyday,ain't,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,45,But I never really meant to make you cry,make,46,I ain't saying that everyday,everyday,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,45,But I never really meant to make you cry,make,46,I ain't saying that everyday,saying,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,45,But I never really meant to make you cry,make,47,'Cause not every day gotta be this way,day,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,45,But I never really meant to make you cry,make,47,'Cause not every day gotta be this way,way,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,45,But I never really meant to make you cry,meant,47,'Cause not every day gotta be this way,every,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,45,But I never really meant to make you cry,never,47,'Cause not every day gotta be this way,every,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,45,But I never really meant to make you cry,cry,48,"But sometimes, some of these niggas just gotta die",die,END,PERFECT,cmu,HIGH,Y
+BULLETPROOF,46,I ain't saying that everyday,ain't,46,I ain't saying that everyday,everyday,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,46,I ain't saying that everyday,ain't,46,I ain't saying that everyday,saying,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,46,I ain't saying that everyday,saying,46,I ain't saying that everyday,everyday,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,46,I ain't saying that everyday,everyday,47,'Cause not every day gotta be this way,way,END,PERFECT,cmu,HIGH,Y
+BULLETPROOF,46,I ain't saying that everyday,ain't,47,'Cause not every day gotta be this way,day,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,46,I ain't saying that everyday,ain't,47,'Cause not every day gotta be this way,way,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,46,I ain't saying that everyday,everyday,47,'Cause not every day gotta be this way,day,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,46,I ain't saying that everyday,saying,47,'Cause not every day gotta be this way,day,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,46,I ain't saying that everyday,saying,47,'Cause not every day gotta be this way,way,INNER,ASSONANCE,vowel,MED,Y
+BULLETPROOF,46,I ain't saying that everyday,saying everyday,47,'Cause not every day gotta be this way,every day,INNER,MULTI,multi,HIGH,Y
+BULLETPROOF,47,'Cause not every day gotta be this way,day,47,'Cause not every day gotta be this way,way,INNER,PERFECT,cmu,HIGH,Y
+BULLETPROOF,47,'Cause not every day gotta be this way,not,47,'Cause not every day gotta be this way,gotta,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,47,'Cause not every day gotta be this way,gotta,48,"But sometimes, some of these niggas just gotta die",gotta,INNER,REPEAT,spelling,HIGH,N
+BULLETPROOF,47,'Cause not every day gotta be this way,not,48,"But sometimes, some of these niggas just gotta die",gotta,INNER,SLANT,cmu,MED,Y
+BULLETPROOF,48,"But sometimes, some of these niggas just gotta die",sometimes,48,"But sometimes, some of these niggas just gotta die",die,INNER,ASSONANCE,vowel,MED,Y
