@@ -1,0 +1,19 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Did It Before,1,"Yeah, this shit my dawg did, I swear it'll be always right",shit,1,"Yeah, this shit my dawg did, I swear it'll be always right",it'll,INNER,SLANT,cmu,MED,Y
+Did It Before,1,"Yeah, this shit my dawg did, I swear it'll be always right",right,2,"Can't look in inside his eyes, nah",eyes,END,SLANT,cmu,MED,Y
+Did It Before,1,"Yeah, this shit my dawg did, I swear it'll be always right",right,2,"Can't look in inside his eyes, nah",inside,INNER,SLANT,cmu,MED,Y
+Did It Before,1,"Yeah, this shit my dawg did, I swear it'll be always right",right,3,"Make 'em sacrifice, all in one night",night,END,PERFECT,cmu,HIGH,Y
+Did It Before,1,"Yeah, this shit my dawg did, I swear it'll be always right",always,3,"Make 'em sacrifice, all in one night",Make,INNER,SLANT,cmu,MED,Y
+Did It Before,1,"Yeah, this shit my dawg did, I swear it'll be always right",dawg,3,"Make 'em sacrifice, all in one night",all,INNER,SLANT,spelling,LOW,Y
+Did It Before,1,"Yeah, this shit my dawg did, I swear it'll be always right",right,3,"Make 'em sacrifice, all in one night",sacrifice,INNER,SLANT,cmu,MED,Y
+Did It Before,2,"Can't look in inside his eyes, nah",inside,2,"Can't look in inside his eyes, nah",eyes,INNER,SLANT,cmu,MED,Y
+Did It Before,2,"Can't look in inside his eyes, nah",eyes,3,"Make 'em sacrifice, all in one night",night,END,SLANT,cmu,MED,Y
+Did It Before,2,"Can't look in inside his eyes, nah",eyes,3,"Make 'em sacrifice, all in one night",sacrifice,INNER,SLANT,cmu,MED,Y
+Did It Before,2,"Can't look in inside his eyes, nah",inside,3,"Make 'em sacrifice, all in one night",night,INNER,SLANT,cmu,MED,Y
+Did It Before,2,"Can't look in inside his eyes, nah",inside,3,"Make 'em sacrifice, all in one night",sacrifice,INNER,SLANT,cmu,MED,Y
+Did It Before,2,"Can't look in inside his eyes, nah",eyes,4,"Fuck it, we ride with folks and killers",ride,INNER,SLANT,cmu,MED,Y
+Did It Before,2,"Can't look in inside his eyes, nah",inside,4,"Fuck it, we ride with folks and killers",ride,INNER,PERFECT,cmu,HIGH,Y
+Did It Before,3,"Make 'em sacrifice, all in one night",sacrifice,3,"Make 'em sacrifice, all in one night",night,INNER,SLANT,cmu,MED,Y
+Did It Before,3,"Make 'em sacrifice, all in one night",night,4,"Fuck it, we ride with folks and killers",ride,INNER,SLANT,cmu,MED,Y
+Did It Before,3,"Make 'em sacrifice, all in one night",one,4,"Fuck it, we ride with folks and killers",Fuck,INNER,SLANT,cmu,MED,Y
+Did It Before,3,"Make 'em sacrifice, all in one night",sacrifice,4,"Fuck it, we ride with folks and killers",ride,INNER,SLANT,cmu,MED,Y

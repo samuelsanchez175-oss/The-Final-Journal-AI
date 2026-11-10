@@ -1,0 +1,40 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Muñequita Linda [Mixed],1,Y no lo cumplí,no,1,Y no lo cumplí,lo,INNER,PERFECT,cmu,HIGH,Y
+Muñequita Linda [Mixed],1,Y no lo cumplí,lo,2,Por mujer no lloro,lloro,INNER,ASSONANCE,vowel,LOW,N
+Muñequita Linda [Mixed],1,Y no lo cumplí,lo,2,Por mujer no lloro,no,INNER,PERFECT,cmu,HIGH,Y
+Muñequita Linda [Mixed],1,Y no lo cumplí,no,2,Por mujer no lloro,lloro,INNER,ASSONANCE,vowel,LOW,N
+Muñequita Linda [Mixed],1,Y no lo cumplí,no,2,Por mujer no lloro,no,INNER,REPEAT,spelling,HIGH,N
+Muñequita Linda [Mixed],1,Y no lo cumplí,Y,3,Y lloré por ti,Y,INNER,REPEAT,spelling,HIGH,N
+Muñequita Linda [Mixed],2,Por mujer no lloro,no,2,Por mujer no lloro,lloro,INNER,ASSONANCE,vowel,LOW,N
+Muñequita Linda [Mixed],2,Por mujer no lloro,Por,3,Y lloré por ti,llor,INNER,PERFECT,spelling,MED,Y
+Muñequita Linda [Mixed],2,Por mujer no lloro,Por,3,Y lloré por ti,por,INNER,REPEAT,spelling,HIGH,N
+Muñequita Linda [Mixed],2,Por mujer no lloro,lloro,5,Traiga la medicina para el dolor (Para el dolor),dolor,END,SLANT,spelling,LOW,Y
+Muñequita Linda [Mixed],3,Y lloré por ti,llor,3,Y lloré por ti,por,INNER,PERFECT,spelling,MED,Y
+Muñequita Linda [Mixed],3,Y lloré por ti,llor,4,Muchachita de mi amor (De mi amor),amor,INNER,PERFECT,spelling,MED,Y
+Muñequita Linda [Mixed],3,Y lloré por ti,ti,4,Muchachita de mi amor (De mi amor),de,INNER,PERFECT,cmu,HIGH,Y
+Muñequita Linda [Mixed],3,Y lloré por ti,ti,4,Muchachita de mi amor (De mi amor),mi,INNER,PERFECT,cmu,HIGH,Y
+Muñequita Linda [Mixed],3,Y lloré por ti,llor,5,Traiga la medicina para el dolor (Para el dolor),dolor,INNER,PERFECT,spelling,MED,Y
+Muñequita Linda [Mixed],3,Y lloré por ti,por,5,Traiga la medicina para el dolor (Para el dolor),dolor,INNER,PERFECT,spelling,MED,Y
+Muñequita Linda [Mixed],4,Muchachita de mi amor (De mi amor),de,4,Muchachita de mi amor (De mi amor),mi,INNER,PERFECT,cmu,HIGH,Y
+Muñequita Linda [Mixed],4,Muchachita de mi amor (De mi amor),amor,5,Traiga la medicina para el dolor (Para el dolor),dolor,END,PERFECT,spelling,MED,Y
+Muñequita Linda [Mixed],4,Muchachita de mi amor (De mi amor),amor,6,Con tus beso' y tu calor (Tu calor),calor,END,SLANT,cmu,MED,Y
+Muñequita Linda [Mixed],4,Muchachita de mi amor (De mi amor),amor,7,Curas la maldición de mi mal de amor,amor,END,REPEAT,spelling,HIGH,N
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),medicina,5,Traiga la medicina para el dolor (Para el dolor),para,INNER,ASSONANCE,vowel,LOW,N
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),para,5,Traiga la medicina para el dolor (Para el dolor),el,INNER,SLANT,cmu,MED,Y
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),dolor,6,Con tus beso' y tu calor (Tu calor),calor,END,PERFECT,spelling,MED,Y
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),el,6,Con tus beso' y tu calor (Tu calor),beso,INNER,SLANT,spelling,LOW,Y
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),la,6,Con tus beso' y tu calor (Tu calor),Con,INNER,ASSONANCE,vowel,MED,Y
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),para,6,Con tus beso' y tu calor (Tu calor),beso,INNER,SLANT,spelling,LOW,Y
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),dolor,7,Curas la maldición de mi mal de amor,amor,END,PERFECT,spelling,MED,Y
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),el,7,Curas la maldición de mi mal de amor,n,INNER,SLANT,cmu,MED,Y
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),la,7,Curas la maldición de mi mal de amor,la,INNER,REPEAT,spelling,HIGH,N
+Muñequita Linda [Mixed],5,Traiga la medicina para el dolor (Para el dolor),para,7,Curas la maldición de mi mal de amor,n,INNER,SLANT,cmu,MED,Y
+Muñequita Linda [Mixed],6,Con tus beso' y tu calor (Tu calor),calor,7,Curas la maldición de mi mal de amor,amor,END,SLANT,cmu,MED,Y
+Muñequita Linda [Mixed],6,Con tus beso' y tu calor (Tu calor),beso,7,Curas la maldición de mi mal de amor,n,INNER,SLANT,spelling,LOW,Y
+Muñequita Linda [Mixed],6,Con tus beso' y tu calor (Tu calor),calor,7,Curas la maldición de mi mal de amor,mal,INNER,SLANT,cmu,MED,Y
+Muñequita Linda [Mixed],6,Con tus beso' y tu calor (Tu calor),Con,7,Curas la maldición de mi mal de amor,la,INNER,ASSONANCE,vowel,MED,Y
+Muñequita Linda [Mixed],6,Con tus beso' y tu calor (Tu calor),tus,7,Curas la maldición de mi mal de amor,Curas,INNER,SLANT,spelling,LOW,Y
+Muñequita Linda [Mixed],7,Curas la maldición de mi mal de amor,de,7,Curas la maldición de mi mal de amor,de,INNER,REPEAT,spelling,HIGH,N
+Muñequita Linda [Mixed],7,Curas la maldición de mi mal de amor,de,7,Curas la maldición de mi mal de amor,mi,INNER,PERFECT,cmu,HIGH,Y
+Muñequita Linda [Mixed],7,Curas la maldición de mi mal de amor,mal,7,Curas la maldición de mi mal de amor,amor,INNER,SLANT,cmu,MED,Y
+Muñequita Linda [Mixed],7,Curas la maldición de mi mal de amor,mi,7,Curas la maldición de mi mal de amor,de,INNER,PERFECT,cmu,HIGH,Y

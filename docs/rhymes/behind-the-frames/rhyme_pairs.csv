@@ -1,0 +1,20 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Scrimmage,1,"Pull up with the stick, take them charge, I'm hockey player",charge,1,"Pull up with the stick, take them charge, I'm hockey player",hockey,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,1,"Pull up with the stick, take them charge, I'm hockey player",take,1,"Pull up with the stick, take them charge, I'm hockey player",player,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,1,"Pull up with the stick, take them charge, I'm hockey player",player,2,"Just name a time and a place nigga, I be there",name,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,1,"Pull up with the stick, take them charge, I'm hockey player",player,2,"Just name a time and a place nigga, I be there",place,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,1,"Pull up with the stick, take them charge, I'm hockey player",stick,2,"Just name a time and a place nigga, I be there",nigga,INNER,SLANT,spelling,LOW,Y
+Scrimmage,1,"Pull up with the stick, take them charge, I'm hockey player",take,2,"Just name a time and a place nigga, I be there",name,INNER,SLANT,cmu,MED,Y
+Scrimmage,1,"Pull up with the stick, take them charge, I'm hockey player",take,2,"Just name a time and a place nigga, I be there",place,INNER,SLANT,cmu,MED,Y
+Scrimmage,1,"Pull up with the stick, take them charge, I'm hockey player",charge,3,"All that tough talking, you softer than a",softer,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,1,"Pull up with the stick, take them charge, I'm hockey player",hockey,3,"All that tough talking, you softer than a",softer,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,2,"Just name a time and a place nigga, I be there",name,2,"Just name a time and a place nigga, I be there",place,INNER,SLANT,cmu,MED,Y
+Scrimmage,2,"Just name a time and a place nigga, I be there",there,4,And we waiting on ya' like we waiting on some welfare,welfare,END,PERFECT,cmu,HIGH,Y
+Scrimmage,2,"Just name a time and a place nigga, I be there",name,4,And we waiting on ya' like we waiting on some welfare,waiting,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,2,"Just name a time and a place nigga, I be there",place,4,And we waiting on ya' like we waiting on some welfare,waiting,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,2,"Just name a time and a place nigga, I be there",time,4,And we waiting on ya' like we waiting on some welfare,like,INNER,SLANT,cmu,MED,Y
+Scrimmage,3,"All that tough talking, you softer than a",All,3,"All that tough talking, you softer than a",talking,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,3,"All that tough talking, you softer than a",tough,4,And we waiting on ya' like we waiting on some welfare,some,INNER,SLANT,cmu,MED,Y
+Scrimmage,3,"All that tough talking, you softer than a",softer,5,"Glock .347, thirty five racks on me",Glock,INNER,ASSONANCE,vowel,MED,Y
+Scrimmage,4,And we waiting on ya' like we waiting on some welfare,waiting,4,And we waiting on ya' like we waiting on some welfare,waiting,INNER,REPEAT,spelling,HIGH,N
+Scrimmage,4,And we waiting on ya' like we waiting on some welfare,like,5,"Glock .347, thirty five racks on me",five,INNER,SLANT,cmu,MED,Y

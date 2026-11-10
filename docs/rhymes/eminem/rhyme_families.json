@@ -1,0 +1,46 @@
+[
+  {
+    "sound_key": "vow:EH",
+    "total": 3,
+    "end_count": 0,
+    "inner_count": 3,
+    "words": [
+      {
+        "word": "eminem",
+        "count": 2
+      },
+      {
+        "word": "emptied",
+        "count": 2
+      },
+      {
+        "word": "reverend",
+        "count": 2
+      }
+    ],
+    "examples": [
+      "Me and Eminem split the rubber bands",
+      "For the emptied clip call the reverend"
+    ]
+  },
+  {
+    "sound_key": "slant:IH:stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "split",
+        "count": 1
+      },
+      {
+        "word": "clip",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Me and Eminem split the rubber bands",
+      "For the emptied clip call the reverend"
+    ]
+  }
+]

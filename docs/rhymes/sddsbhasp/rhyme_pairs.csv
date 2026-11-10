@@ -1,0 +1,25 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Laced Lemurs,1,Wish we had the industry mandated 21 savage feature (21),had,1,Wish we had the industry mandated 21 savage feature (21),savage,INNER,ASSONANCE,vowel,MED,Y
+Laced Lemurs,1,Wish we had the industry mandated 21 savage feature (21),Wish,1,Wish we had the industry mandated 21 savage feature (21),industry,INNER,ASSONANCE,vowel,MED,Y
+Laced Lemurs,1,Wish we had the industry mandated 21 savage feature (21),feature,2,To eating his ass,eating,INNER,ASSONANCE,vowel,MED,Y
+Laced Lemurs,1,Wish we had the industry mandated 21 savage feature (21),had,2,To eating his ass,ass,INNER,SLANT,cmu,MED,Y
+Laced Lemurs,1,Wish we had the industry mandated 21 savage feature (21),savage,2,To eating his ass,ass,INNER,ASSONANCE,vowel,MED,Y
+Laced Lemurs,1,Wish we had the industry mandated 21 savage feature (21),feature,3,"Guys, can you hear mе?",hear,INNER,SLANT,cmu,MED,Y
+Laced Lemurs,1,Wish we had the industry mandated 21 savage feature (21),had,3,"Guys, can you hear mе?",can,INNER,SLANT,cmu,MED,Y
+Laced Lemurs,1,Wish we had the industry mandated 21 savage feature (21),savage,3,"Guys, can you hear mе?",can,INNER,ASSONANCE,vowel,MED,Y
+Laced Lemurs,1,Wish we had the industry mandated 21 savage feature (21),feature,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",hear,END,SLANT,cmu,MED,Y
+Laced Lemurs,2,To eating his ass,ass,3,"Guys, can you hear mе?",can,INNER,SLANT,cmu,MED,Y
+Laced Lemurs,2,To eating his ass,eating,3,"Guys, can you hear mе?",hear,INNER,ASSONANCE,vowel,MED,Y
+Laced Lemurs,2,To eating his ass,ass,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",can,INNER,SLANT,cmu,MED,Y
+Laced Lemurs,2,To eating his ass,eating,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",hear,INNER,ASSONANCE,vowel,MED,Y
+Laced Lemurs,3,"Guys, can you hear mе?",can,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",can,INNER,REPEAT,spelling,HIGH,N
+Laced Lemurs,3,"Guys, can you hear mе?",Guys,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",Guys,INNER,REPEAT,spelling,HIGH,N
+Laced Lemurs,3,"Guys, can you hear mе?",hear,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",hear,INNER,REPEAT,spelling,HIGH,N
+Laced Lemurs,3,"Guys, can you hear mе?",Guys,5,You guys are retarded!,guys,INNER,REPEAT,spelling,HIGH,N
+Laced Lemurs,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",Guys,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",guys,INNER,REPEAT,spelling,HIGH,N
+Laced Lemurs,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",Guys,5,You guys are retarded!,guys,INNER,REPEAT,spelling,HIGH,N
+Laced Lemurs,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",hear,6,Shut the fuck up Levi!,Levi,END,SLANT,cmu,MED,Y
+Laced Lemurs,4,"Guys, guys, guys, can you hear me? (Two turntables and a microphone)",hear,7,"Two turntables and a microphone (Guys, can you hear me?",hear,END,REPEAT,spelling,HIGH,N
+Laced Lemurs,5,You guys are retarded!,guys,7,"Two turntables and a microphone (Guys, can you hear me?",Guys,INNER,REPEAT,spelling,HIGH,N
+Laced Lemurs,6,Shut the fuck up Levi!,Shut,6,Shut the fuck up Levi!,fuck,INNER,SLANT,cmu,MED,Y
+Laced Lemurs,6,Shut the fuck up Levi!,Levi,7,"Two turntables and a microphone (Guys, can you hear me?",hear,END,SLANT,cmu,MED,Y

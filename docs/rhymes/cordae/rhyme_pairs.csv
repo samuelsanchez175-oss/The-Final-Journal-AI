@@ -1,0 +1,43 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Yesterday*,1,"I see niggas on their grind, I ain't never hate",ain't,1,"I see niggas on their grind, I ain't never hate",hate,INNER,SLANT,cmu,MED,Y
+Yesterday*,1,"I see niggas on their grind, I ain't never hate",grind,2,"When I got attention, I was right back on suspition",right,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,1,"I see niggas on their grind, I ain't never hate",never,2,"When I got attention, I was right back on suspition",attention,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,1,"I see niggas on their grind, I ain't never hate",never,2,"When I got attention, I was right back on suspition",When,INNER,SLANT,cmu,MED,Y
+Yesterday*,1,"I see niggas on their grind, I ain't never hate",ain't,3,"I ain't never listened, I was right back in them trenches",ain't,INNER,REPEAT,spelling,HIGH,N
+Yesterday*,1,"I see niggas on their grind, I ain't never hate",grind,3,"I ain't never listened, I was right back in them trenches",right,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,1,"I see niggas on their grind, I ain't never hate",hate,3,"I ain't never listened, I was right back in them trenches",ain't,INNER,SLANT,cmu,MED,Y
+Yesterday*,1,"I see niggas on their grind, I ain't never hate",never,3,"I ain't never listened, I was right back in them trenches",never,INNER,REPEAT,spelling,HIGH,N
+Yesterday*,1,"I see niggas on their grind, I ain't never hate",never,3,"I ain't never listened, I was right back in them trenches",trenches,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,2,"When I got attention, I was right back on suspition",attention,2,"When I got attention, I was right back on suspition",suspition,INNER,PERFECT,spelling,HIGH,Y
+Yesterday*,2,"When I got attention, I was right back on suspition",When,2,"When I got attention, I was right back on suspition",attention,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,2,"When I got attention, I was right back on suspition",attention,3,"I ain't never listened, I was right back in them trenches",never,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,2,"When I got attention, I was right back on suspition",attention,3,"I ain't never listened, I was right back in them trenches",trenches,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,2,"When I got attention, I was right back on suspition",back,3,"I ain't never listened, I was right back in them trenches",back,INNER,REPEAT,spelling,HIGH,N
+Yesterday*,2,"When I got attention, I was right back on suspition",right,3,"I ain't never listened, I was right back in them trenches",right,INNER,REPEAT,spelling,HIGH,N
+Yesterday*,2,"When I got attention, I was right back on suspition",When,3,"I ain't never listened, I was right back in them trenches",never,INNER,SLANT,cmu,MED,Y
+Yesterday*,2,"When I got attention, I was right back on suspition",When,3,"I ain't never listened, I was right back in them trenches",trenches,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,2,"When I got attention, I was right back on suspition",attention,4,Brought my Pops who's trynna send me out I think I see a mill',send,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,2,"When I got attention, I was right back on suspition",got,4,Brought my Pops who's trynna send me out I think I see a mill',Pops,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,2,"When I got attention, I was right back on suspition",When,4,Brought my Pops who's trynna send me out I think I see a mill',send,INNER,SLANT,cmu,MED,Y
+Yesterday*,3,"I ain't never listened, I was right back in them trenches",never,3,"I ain't never listened, I was right back in them trenches",trenches,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,3,"I ain't never listened, I was right back in them trenches",listened,4,Brought my Pops who's trynna send me out I think I see a mill',mill,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,3,"I ain't never listened, I was right back in them trenches",listened,4,Brought my Pops who's trynna send me out I think I see a mill',think,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,3,"I ain't never listened, I was right back in them trenches",never,4,Brought my Pops who's trynna send me out I think I see a mill',send,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,3,"I ain't never listened, I was right back in them trenches",trenches,4,Brought my Pops who's trynna send me out I think I see a mill',send,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,3,"I ain't never listened, I was right back in them trenches",listened,5,I turned down my first mill' on my first grill,grill,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,3,"I ain't never listened, I was right back in them trenches",listened,5,I turned down my first mill' on my first grill,mill,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,3,"I ain't never listened, I was right back in them trenches",trenches,7,Made a Maybach out of the Chevrolet dawg I am heavy,heavy,END,ASSONANCE,vowel,MED,Y
+Yesterday*,4,Brought my Pops who's trynna send me out I think I see a mill',think,4,Brought my Pops who's trynna send me out I think I see a mill',mill,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,4,Brought my Pops who's trynna send me out I think I see a mill',mill,5,I turned down my first mill' on my first grill,grill,END,PERFECT,cmu,HIGH,Y
+Yesterday*,4,Brought my Pops who's trynna send me out I think I see a mill',mill,5,I turned down my first mill' on my first grill,mill,INNER,REPEAT,spelling,HIGH,N
+Yesterday*,4,Brought my Pops who's trynna send me out I think I see a mill',think,5,I turned down my first mill' on my first grill,grill,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,4,Brought my Pops who's trynna send me out I think I see a mill',think,5,I turned down my first mill' on my first grill,mill,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,5,I turned down my first mill' on my first grill,first,5,I turned down my first mill' on my first grill,first,INNER,REPEAT,spelling,HIGH,N
+Yesterday*,5,I turned down my first mill' on my first grill,mill,5,I turned down my first mill' on my first grill,grill,INNER,PERFECT,cmu,HIGH,Y
+Yesterday*,5,I turned down my first mill' on my first grill,turned,5,I turned down my first mill' on my first grill,first,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,5,I turned down my first mill' on my first grill,down,6,"Yesterday, they was countin' me out without",countin,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,5,I turned down my first mill' on my first grill,down,6,"Yesterday, they was countin' me out without",without,INNER,SLANT,cmu,MED,Y
+Yesterday*,6,"Yesterday, they was countin' me out without",countin,6,"Yesterday, they was countin' me out without",without,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,6,"Yesterday, they was countin' me out without",Yesterday,7,Made a Maybach out of the Chevrolet dawg I am heavy,Chevrolet,INNER,PERFECT,cmu,HIGH,Y
+Yesterday*,6,"Yesterday, they was countin' me out without",Yesterday,7,Made a Maybach out of the Chevrolet dawg I am heavy,Made,INNER,ASSONANCE,vowel,MED,Y
+Yesterday*,7,Made a Maybach out of the Chevrolet dawg I am heavy,Made,7,Made a Maybach out of the Chevrolet dawg I am heavy,Chevrolet,INNER,ASSONANCE,vowel,MED,Y
