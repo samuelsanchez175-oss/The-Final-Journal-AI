@@ -1,0 +1,309 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+What It Is (Block Boy),1,"What it is, ho? What's up?",What,1,"What it is, ho? What's up?",What's,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),1,"What it is, ho? What's up?",What's,2,Every good girl needs a little thug,thug,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),1,"What it is, ho? What's up?",What,2,Every good girl needs a little thug,thug,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),1,"What it is, ho? What's up?",What's,3,Every block boy needs a little love,love,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),1,"What it is, ho? What's up?",What,3,Every block boy needs a little love,love,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),2,Every good girl needs a little thug,thug,3,Every block boy needs a little love,love,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),2,Every good girl needs a little thug,Every,3,Every block boy needs a little love,Every,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),2,Every good girl needs a little thug,little,3,Every block boy needs a little love,little,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),2,Every good girl needs a little thug,needs,3,Every block boy needs a little love,needs,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),2,Every good girl needs a little thug,good,4,"If you put it down, I'ma pick it up, up, up",put,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),2,Every good girl needs a little thug,little,4,"If you put it down, I'ma pick it up, up, up",pick,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),3,Every block boy needs a little love,little,4,"If you put it down, I'ma pick it up, up, up",pick,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),3,Every block boy needs a little love,needs,5,"Can't you just see, it's just me and you?",see,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),4,"If you put it down, I'ma pick it up, up, up",I'ma,4,"If you put it down, I'ma pick it up, up, up",pick,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy),5,"Can't you just see, it's just me and you?",Can't,6,"Panoramic view, that's my point of view, bae",Panoramic,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),6,"Panoramic view, that's my point of view, bae",view,6,"Panoramic view, that's my point of view, bae",view,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),7,"All about me, that's the energy",energy,8,"That's that lemon pepper thing, I'm a ten-piece, baby",lemon,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),7,"All about me, that's the energy",energy,8,"That's that lemon pepper thing, I'm a ten-piece, baby",pepper,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),7,"All about me, that's the energy",energy,8,"That's that lemon pepper thing, I'm a ten-piece, baby",ten,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),8,"That's that lemon pepper thing, I'm a ten-piece, baby",lemon,8,"That's that lemon pepper thing, I'm a ten-piece, baby",pepper,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),8,"That's that lemon pepper thing, I'm a ten-piece, baby",lemon,8,"That's that lemon pepper thing, I'm a ten-piece, baby",ten,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),8,"That's that lemon pepper thing, I'm a ten-piece, baby",pepper,8,"That's that lemon pepper thing, I'm a ten-piece, baby",ten,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),8,"That's that lemon pepper thing, I'm a ten-piece, baby",baby,10,"He gon' make it flip, do it with no handles",make,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),8,"That's that lemon pepper thing, I'm a ten-piece, baby",lemon,10,"He gon' make it flip, do it with no handles",gon,INNER,PERFECT,spelling,MED,Y
+What It Is (Block Boy),8,"That's that lemon pepper thing, I'm a ten-piece, baby",thing,10,"He gon' make it flip, do it with no handles",flip,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),9,Bedroom bully in the bando,bando,10,"He gon' make it flip, do it with no handles",no,INNER,ASSONANCE,vowel,LOW,N
+What It Is (Block Boy),9,Bedroom bully in the bando,bando,12,"Ooh, we go crazy like Rambo",Rambo,END,SLANT,spelling,LOW,Y
+What It Is (Block Boy),10,"He gon' make it flip, do it with no handles",handles,11,"Never switchin' sides, only switchin' angles",angles,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),10,"He gon' make it flip, do it with no handles",flip,11,"Never switchin' sides, only switchin' angles",switchin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),10,"He gon' make it flip, do it with no handles",gon,11,"Never switchin' sides, only switchin' angles",only,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy),10,"He gon' make it flip, do it with no handles",no,11,"Never switchin' sides, only switchin' angles",only,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),10,"He gon' make it flip, do it with no handles",handles,12,"Ooh, we go crazy like Rambo",Rambo,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),10,"He gon' make it flip, do it with no handles",make,12,"Ooh, we go crazy like Rambo",crazy,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),10,"He gon' make it flip, do it with no handles",no,12,"Ooh, we go crazy like Rambo",go,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),11,"Never switchin' sides, only switchin' angles",switchin,11,"Never switchin' sides, only switchin' angles",switchin,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),11,"Never switchin' sides, only switchin' angles",angles,12,"Ooh, we go crazy like Rambo",Rambo,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),11,"Never switchin' sides, only switchin' angles",only,12,"Ooh, we go crazy like Rambo",go,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),11,"Never switchin' sides, only switchin' angles",sides,12,"Ooh, we go crazy like Rambo",like,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),11,"Never switchin' sides, only switchin' angles",switchin,13,"Hit 'em up, hit 'em up",Hit,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),13,"Hit 'em up, hit 'em up",'em,13,"Hit 'em up, hit 'em up",'em,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),13,"Hit 'em up, hit 'em up",Hit,13,"Hit 'em up, hit 'em up",hit,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),14,"In the truck, got it tucked",truck,14,"In the truck, got it tucked",tucked,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),14,"In the truck, got it tucked",tucked,15,"He get it up, like it's stuck",stuck,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),14,"In the truck, got it tucked",truck,15,"He get it up, like it's stuck",stuck,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),15,"He get it up, like it's stuck",like,16,"All night, I like",like,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),15,"He get it up, like it's stuck",like,16,"All night, I like",night,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),15,"He get it up, like it's stuck",get,17,You ain't gotta say it when you know it's on site,when,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),15,"He get it up, like it's stuck",like,17,You ain't gotta say it when you know it's on site,site,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),16,"All night, I like",night,16,"All night, I like",like,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),16,"All night, I like",like,17,You ain't gotta say it when you know it's on site,site,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),16,"All night, I like",night,17,You ain't gotta say it when you know it's on site,site,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),16,"All night, I like",All,18,"She got everything he wanted, a nice body, ass fat",wanted,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),16,"All night, I like",like,18,"She got everything he wanted, a nice body, ass fat",nice,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),16,"All night, I like",night,18,"She got everything he wanted, a nice body, ass fat",nice,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),17,You ain't gotta say it when you know it's on site,ain't,17,You ain't gotta say it when you know it's on site,say,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),17,You ain't gotta say it when you know it's on site,gotta,18,"She got everything he wanted, a nice body, ass fat",body,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),17,You ain't gotta say it when you know it's on site,gotta,18,"She got everything he wanted, a nice body, ass fat",got,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),17,You ain't gotta say it when you know it's on site,site,18,"She got everything he wanted, a nice body, ass fat",nice,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),17,You ain't gotta say it when you know it's on site,gotta,19,"Behind every gangster, a shawty solid that got his back",got,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),17,You ain't gotta say it when you know it's on site,gotta,19,"Behind every gangster, a shawty solid that got his back",solid,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),17,You ain't gotta say it when you know it's on site,site,19,"Behind every gangster, a shawty solid that got his back",Behind,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),17,You ain't gotta say it when you know it's on site,when,19,"Behind every gangster, a shawty solid that got his back",every,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",ass,18,"She got everything he wanted, a nice body, ass fat",fat,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",got,18,"She got everything he wanted, a nice body, ass fat",body,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",fat,19,"Behind every gangster, a shawty solid that got his back",back,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",ass,19,"Behind every gangster, a shawty solid that got his back",back,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",ass,19,"Behind every gangster, a shawty solid that got his back",gangster,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",body,19,"Behind every gangster, a shawty solid that got his back",got,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",body,19,"Behind every gangster, a shawty solid that got his back",shawty,INNER,ASSONANCE,vowel,LOW,N
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",body,19,"Behind every gangster, a shawty solid that got his back",solid,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",fat,19,"Behind every gangster, a shawty solid that got his back",gangster,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",got,19,"Behind every gangster, a shawty solid that got his back",got,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",got,19,"Behind every gangster, a shawty solid that got his back",solid,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",nice,19,"Behind every gangster, a shawty solid that got his back",Behind,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",fat,20,He know who to come to every-time the world handlin' him bad,bad,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",ass,20,He know who to come to every-time the world handlin' him bad,bad,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",ass,20,He know who to come to every-time the world handlin' him bad,handlin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",everything,20,He know who to come to every-time the world handlin' him bad,him,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",fat,20,He know who to come to every-time the world handlin' him bad,handlin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",nice,20,He know who to come to every-time the world handlin' him bad,time,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",fat,21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),18,"She got everything he wanted, a nice body, ass fat",fat,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",every,19,"Behind every gangster, a shawty solid that got his back",shawty,INNER,ASSONANCE,vowel,LOW,N
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",gangster,19,"Behind every gangster, a shawty solid that got his back",back,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",solid,19,"Behind every gangster, a shawty solid that got his back",got,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",back,20,He know who to come to every-time the world handlin' him bad,bad,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",back,20,He know who to come to every-time the world handlin' him bad,handlin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",Behind,20,He know who to come to every-time the world handlin' him bad,time,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",every,20,He know who to come to every-time the world handlin' him bad,every,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",gangster,20,He know who to come to every-time the world handlin' him bad,bad,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",gangster,20,He know who to come to every-time the world handlin' him bad,handlin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",shawty,20,He know who to come to every-time the world handlin' him bad,every,INNER,ASSONANCE,vowel,LOW,N
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",back,21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",gangster,21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",shawty,21,"The one he call first, but still he always put her last (Always put her last, yeah)",call,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",back,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),19,"Behind every gangster, a shawty solid that got his back",back,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,handlin,20,He know who to come to every-time the world handlin' him bad,bad,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,bad,21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,come,21,"The one he call first, but still he always put her last (Always put her last, yeah)",one,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,handlin,21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,him,21,"The one he call first, but still he always put her last (Always put her last, yeah)",still,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,world,21,"The one he call first, but still he always put her last (Always put her last, yeah)",first,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,bad,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,bad,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",glass,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,handlin,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,handlin,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",glass,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,time,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",fightin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),20,He know who to come to every-time the world handlin' him bad,bad,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),21,"The one he call first, but still he always put her last (Always put her last, yeah)",call,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",pourin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",glass,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",pack,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),21,"The one he call first, but still he always put her last (Always put her last, yeah)",last,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",zaza,INNER,ASSONANCE,vowel,LOW,N
+What It Is (Block Boy),21,"The one he call first, but still he always put her last (Always put her last, yeah)",still,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",kickin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),21,"The one he call first, but still he always put her last (Always put her last, yeah)",still,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",kill,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",glass,22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,END,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",pack,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",zaza,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",glass,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",glass,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",pack,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",glass,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",zaza,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",body,24,"In the studio dosin', all I can keep from falling asleep",falling,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",gas,24,"In the studio dosin', all I can keep from falling asleep",can,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",glass,24,"In the studio dosin', all I can keep from falling asleep",can,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),22,"I'm pourin' out this glass, my body fightin' off that gas (Off that gas, yeah)",pourin,24,"In the studio dosin', all I can keep from falling asleep",all,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",don't,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",opps,INNER,ASSONANCE,vowel,LOW,N
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",don't,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",smoke,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",kill,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",kickin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",pack,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",zaza,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",zaza,23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",pack,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,24,"In the studio dosin', all I can keep from falling asleep",can,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",don't,24,"In the studio dosin', all I can keep from falling asleep",dosin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",don't,24,"In the studio dosin', all I can keep from falling asleep",studio,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",pack,24,"In the studio dosin', all I can keep from falling asleep",can,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",smoke,24,"In the studio dosin', all I can keep from falling asleep",dosin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",smoke,24,"In the studio dosin', all I can keep from falling asleep",studio,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",zaza,24,"In the studio dosin', all I can keep from falling asleep",can,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",don't,25,"I hate that for you niggas ain't got no bread, but trying to beef",no,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),23,"I don't smoke opps, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",smoke,25,"I hate that for you niggas ain't got no bread, but trying to beef",no,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",keep,24,"In the studio dosin', all I can keep from falling asleep",asleep,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",studio,24,"In the studio dosin', all I can keep from falling asleep",dosin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",asleep,25,"I hate that for you niggas ain't got no bread, but trying to beef",beef,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",dosin,25,"I hate that for you niggas ain't got no bread, but trying to beef",no,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",falling,25,"I hate that for you niggas ain't got no bread, but trying to beef",got,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",keep,25,"I hate that for you niggas ain't got no bread, but trying to beef",beef,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",studio,25,"I hate that for you niggas ain't got no bread, but trying to beef",no,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",asleep,26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",Bein,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",can,26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",Black,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",falling,26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",hardest,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),24,"In the studio dosin', all I can keep from falling asleep",keep,26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",Bein,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),25,"I hate that for you niggas ain't got no bread, but trying to beef",hate,25,"I hate that for you niggas ain't got no bread, but trying to beef",ain't,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),25,"I hate that for you niggas ain't got no bread, but trying to beef",beef,26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",Bein,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),25,"I hate that for you niggas ain't got no bread, but trying to beef",bread,26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",America,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),25,"I hate that for you niggas ain't got no bread, but trying to beef",got,26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",hardest,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),25,"I hate that for you niggas ain't got no bread, but trying to beef",ain't,27,"Every thug need a lil' love too, baby, how 'bout me?",baby,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),25,"I hate that for you niggas ain't got no bread, but trying to beef",beef,27,"Every thug need a lil' love too, baby, how 'bout me?",need,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),25,"I hate that for you niggas ain't got no bread, but trying to beef",bread,27,"Every thug need a lil' love too, baby, how 'bout me?",Every,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),25,"I hate that for you niggas ain't got no bread, but trying to beef",hate,27,"Every thug need a lil' love too, baby, how 'bout me?",baby,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),25,"I hate that for you niggas ain't got no bread, but trying to beef",beef,29,"I putting down the greatest babe, hold this here for me",here,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",America,27,"Every thug need a lil' love too, baby, how 'bout me?",Every,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",Bein,27,"Every thug need a lil' love too, baby, how 'bout me?",need,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",thing,27,"Every thug need a lil' love too, baby, how 'bout me?",lil,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",America,28,"Told her, ""Don't call me a stink 'cause I smell like money""",smell,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),26,"Bein' Black in America, is the hardest thing to be (Baby, tell me, yeah)",thing,28,"Told her, ""Don't call me a stink 'cause I smell like money""",stink,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",how,27,"Every thug need a lil' love too, baby, how 'bout me?",'bout,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",thug,27,"Every thug need a lil' love too, baby, how 'bout me?",love,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",Every,28,"Told her, ""Don't call me a stink 'cause I smell like money""",smell,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",lil,28,"Told her, ""Don't call me a stink 'cause I smell like money""",stink,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",love,28,"Told her, ""Don't call me a stink 'cause I smell like money""",money,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",thug,28,"Told her, ""Don't call me a stink 'cause I smell like money""",money,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",'bout,29,"I putting down the greatest babe, hold this here for me",down,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",baby,29,"I putting down the greatest babe, hold this here for me",babe,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",baby,29,"I putting down the greatest babe, hold this here for me",greatest,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",how,29,"I putting down the greatest babe, hold this here for me",down,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",love,29,"I putting down the greatest babe, hold this here for me",putting,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",need,29,"I putting down the greatest babe, hold this here for me",here,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),27,"Every thug need a lil' love too, baby, how 'bout me?",thug,29,"I putting down the greatest babe, hold this here for me",putting,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),28,"Told her, ""Don't call me a stink 'cause I smell like money""",Told,28,"Told her, ""Don't call me a stink 'cause I smell like money""",Don't,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),28,"Told her, ""Don't call me a stink 'cause I smell like money""",Don't,29,"I putting down the greatest babe, hold this here for me",hold,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),28,"Told her, ""Don't call me a stink 'cause I smell like money""",money,29,"I putting down the greatest babe, hold this here for me",putting,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),28,"Told her, ""Don't call me a stink 'cause I smell like money""",Told,29,"I putting down the greatest babe, hold this here for me",hold,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),28,"Told her, ""Don't call me a stink 'cause I smell like money""",money,30,"I took her from a nigga, we vibin', two weeks out of the country",country,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),28,"Told her, ""Don't call me a stink 'cause I smell like money""",stink,30,"I took her from a nigga, we vibin', two weeks out of the country",vibin,INNER,ASSONANCE,vowel,LOW,N
+What It Is (Block Boy),29,"I putting down the greatest babe, hold this here for me",greatest,29,"I putting down the greatest babe, hold this here for me",babe,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),29,"I putting down the greatest babe, hold this here for me",here,30,"I took her from a nigga, we vibin', two weeks out of the country",weeks,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),29,"I putting down the greatest babe, hold this here for me",putting,30,"I took her from a nigga, we vibin', two weeks out of the country",country,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),29,"I putting down the greatest babe, hold this here for me",babe,31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),29,"I putting down the greatest babe, hold this here for me",babe,31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",situation,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),29,"I putting down the greatest babe, hold this here for me",down,31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",'bout,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),29,"I putting down the greatest babe, hold this here for me",greatest,31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),29,"I putting down the greatest babe, hold this here for me",greatest,31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",situation,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),30,"I took her from a nigga, we vibin', two weeks out of the country",took,31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",could,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),30,"I took her from a nigga, we vibin', two weeks out of the country",vibin,31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",nothin,INNER,PERFECT,spelling,MED,Y
+What It Is (Block Boy),30,"I took her from a nigga, we vibin', two weeks out of the country",vibin,32,"Now me and her rappin', bitch",bitch,INNER,ASSONANCE,vowel,LOW,N
+What It Is (Block Boy),30,"I took her from a nigga, we vibin', two weeks out of the country",country,33,"She say, ""Don't hush me"", I say, ""Don't rush me""",rush,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),30,"I took her from a nigga, we vibin', two weeks out of the country",country,34,And I can tell how much she like a nigga by the way she suck it,suck,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",situation,31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",'bout,32,"Now me and her rappin', bitch",Now,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",had,32,"Now me and her rappin', bitch",rappin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",lil,32,"Now me and her rappin', bitch",bitch,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",ain't,33,"She say, ""Don't hush me"", I say, ""Don't rush me""",say,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),31,"So she had a lil' situation, but I could tell it ain't 'bout nothin'",situation,33,"She say, ""Don't hush me"", I say, ""Don't rush me""",say,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),32,"Now me and her rappin', bitch",Now,34,And I can tell how much she like a nigga by the way she suck it,how,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),32,"Now me and her rappin', bitch",rappin,34,And I can tell how much she like a nigga by the way she suck it,can,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",Don't,33,"She say, ""Don't hush me"", I say, ""Don't rush me""",Don't,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",hush,33,"She say, ""Don't hush me"", I say, ""Don't rush me""",rush,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",say,33,"She say, ""Don't hush me"", I say, ""Don't rush me""",say,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",rush,34,And I can tell how much she like a nigga by the way she suck it,suck,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",hush,34,And I can tell how much she like a nigga by the way she suck it,much,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",hush,34,And I can tell how much she like a nigga by the way she suck it,suck,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",rush,34,And I can tell how much she like a nigga by the way she suck it,much,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",say,34,And I can tell how much she like a nigga by the way she suck it,way,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",rush,35,"Ho, what it is?",what,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",Don't,35,"Ho, what it is?",Ho,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),33,"She say, ""Don't hush me"", I say, ""Don't rush me""",hush,35,"Ho, what it is?",what,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),34,And I can tell how much she like a nigga by the way she suck it,like,34,And I can tell how much she like a nigga by the way she suck it,by,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),34,And I can tell how much she like a nigga by the way she suck it,much,34,And I can tell how much she like a nigga by the way she suck it,suck,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),34,And I can tell how much she like a nigga by the way she suck it,suck,35,"Ho, what it is?",what,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),34,And I can tell how much she like a nigga by the way she suck it,much,35,"Ho, what it is?",what,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),34,And I can tell how much she like a nigga by the way she suck it,much,36,I don't care if you run the streets,run,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),34,And I can tell how much she like a nigga by the way she suck it,suck,36,I don't care if you run the streets,run,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),34,And I can tell how much she like a nigga by the way she suck it,tell,36,I don't care if you run the streets,care,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),35,"Ho, what it is?",Ho,36,I don't care if you run the streets,don't,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),35,"Ho, what it is?",what,36,I don't care if you run the streets,run,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),35,"Ho, what it is?",Ho,37,Long as you're comin' home to me,home,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),35,"Ho, what it is?",what,37,Long as you're comin' home to me,comin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),36,I don't care if you run the streets,don't,37,Long as you're comin' home to me,home,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),36,I don't care if you run the streets,run,37,Long as you're comin' home to me,comin,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),36,I don't care if you run the streets,streets,38,I love the way you walk and the way you speak,speak,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),36,I don't care if you run the streets,run,38,I love the way you walk and the way you speak,love,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),37,Long as you're comin' home to me,comin,38,I love the way you walk and the way you speak,love,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),37,Long as you're comin' home to me,Long,38,I love the way you walk and the way you speak,walk,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),37,Long as you're comin' home to me,home,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",gon,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy),38,I love the way you walk and the way you speak,way,38,I love the way you walk and the way you speak,way,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),38,I love the way you walk and the way you speak,speak,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",deal,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),38,I love the way you walk and the way you speak,speak,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",keep,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),38,I love the way you walk and the way you speak,speak,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",real,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),38,I love the way you walk and the way you speak,speak,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",reason,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),38,I love the way you walk and the way you speak,speak,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",speed,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),38,I love the way you walk and the way you speak,walk,40,I put that all on my name (All on my name),all,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),38,I love the way you walk and the way you speak,way,40,I put that all on my name (All on my name),name,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",deal,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",reason,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",deal,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",speed,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",down,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",down,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",gon,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",reason,INNER,PERFECT,spelling,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",keep,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",deal,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",keep,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",real,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",keep,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",reason,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",keep,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",speed,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",real,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",deal,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",real,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",reason,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",real,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",speed,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",reason,39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",speed,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",deal,41,"Yeah, that's an even exchange (Tell me what it is)",even,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",keep,41,"Yeah, that's an even exchange (Tell me what it is)",even,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",real,41,"Yeah, that's an even exchange (Tell me what it is)",even,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",reason,41,"Yeah, that's an even exchange (Tell me what it is)",even,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),39,"He gon' keep it real, that's the deal, that's the reason that I speed down, down (Down, down, down, down)",speed,41,"Yeah, that's an even exchange (Tell me what it is)",even,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),40,I put that all on my name (All on my name),name,41,"Yeah, that's an even exchange (Tell me what it is)",exchange,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),40,I put that all on my name (All on my name),name,42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",babe,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),40,I put that all on my name (All on my name),name,42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",Stay,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),41,"Yeah, that's an even exchange (Tell me what it is)",exchange,42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",babe,END,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),41,"Yeah, that's an even exchange (Tell me what it is)",even,42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",deal,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),41,"Yeah, that's an even exchange (Tell me what it is)",exchange,42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",Stay,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",'em,42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",'em,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",gon,42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",gon,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",Stay,42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",babe,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy),42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",tell,42,"Stay on your deal, we gon' tell 'em, we gon' tell 'em what, babe",tell,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),43,"Back it up and do, and do it like that, yeah (What it is? What's up?)",like,44,"Back it up and do it like that, yeah (Ho)",like,END,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),43,"Back it up and do, and do it like that, yeah (What it is? What's up?)",Back,44,"Back it up and do it like that, yeah (Ho)",Back,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),43,"Back it up and do, and do it like that, yeah (What it is? What's up?)",like,45,"Back it up, back it and do it like that, yeah",like,END,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),43,"Back it up and do, and do it like that, yeah (What it is? What's up?)",Back,45,"Back it up, back it and do it like that, yeah",Back,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),43,"Back it up and do, and do it like that, yeah (What it is? What's up?)",like,46,"Back it up gon' and do it like that, yeah (Woo)",like,END,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),44,"Back it up and do it like that, yeah (Ho)",like,45,"Back it up, back it and do it like that, yeah",like,END,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),44,"Back it up and do it like that, yeah (Ho)",Back,45,"Back it up, back it and do it like that, yeah",Back,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),44,"Back it up and do it like that, yeah (Ho)",like,46,"Back it up gon' and do it like that, yeah (Woo)",like,END,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),44,"Back it up and do it like that, yeah (Ho)",Back,46,"Back it up gon' and do it like that, yeah (Woo)",Back,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),44,"Back it up and do it like that, yeah (Ho)",like,48,"J. White Did It (Yup, yup)",White,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),45,"Back it up, back it and do it like that, yeah",Back,45,"Back it up, back it and do it like that, yeah",back,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),45,"Back it up, back it and do it like that, yeah",like,46,"Back it up gon' and do it like that, yeah (Woo)",like,END,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),45,"Back it up, back it and do it like that, yeah",Back,46,"Back it up gon' and do it like that, yeah (Woo)",Back,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy),45,"Back it up, back it and do it like that, yeah",like,48,"J. White Did It (Yup, yup)",White,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),46,"Back it up gon' and do it like that, yeah (Woo)",like,48,"J. White Did It (Yup, yup)",White,END,SLANT,cmu,MED,Y
+What It Is (Block Boy),47,"Hey, what it is? Hey, what's up?",what,47,"Hey, what it is? Hey, what's up?",what's,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),48,"J. White Did It (Yup, yup)",J,49,"More is on the way (Yup, yup, yeah)",way,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy),50,"We need a lil' love, you know what I mean? (Yeah, ayy-ayy, woo)",love,50,"We need a lil' love, you know what I mean? (Yeah, ayy-ayy, woo)",what,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy),50,"We need a lil' love, you know what I mean? (Yeah, ayy-ayy, woo)",need,50,"We need a lil' love, you know what I mean? (Yeah, ayy-ayy, woo)",mean,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy) [Sped Up],1,What It Is (Block Boy) Lyrics,Lyrics,2,"Hit 'еm up, hit 'em up",Hit,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy) [Sped Up],1,What It Is (Block Boy) Lyrics,What,3,"Hе get it up, like it's stuck",stuck,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy) [Sped Up],2,"Hit 'еm up, hit 'em up",Hit,2,"Hit 'еm up, hit 'em up",hit,INNER,REPEAT,spelling,HIGH,N
+What It Is (Block Boy) [Sped Up],2,"Hit 'еm up, hit 'em up",m,3,"Hе get it up, like it's stuck",get,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy) [Sped Up],2,"Hit 'еm up, hit 'em up",Hit,4,"The way he call first, but still he always put her last (Always put her last, yeah)",still,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy) [Sped Up],3,"Hе get it up, like it's stuck",H,4,"The way he call first, but still he always put her last (Always put her last, yeah)",always,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy) [Sped Up],3,"Hе get it up, like it's stuck",H,4,"The way he call first, but still he always put her last (Always put her last, yeah)",way,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy) [Sped Up],4,"The way he call first, but still he always put her last (Always put her last, yeah)",way,4,"The way he call first, but still he always put her last (Always put her last, yeah)",always,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy) [Sped Up],4,"The way he call first, but still he always put her last (Always put her last, yeah)",last,5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,END,SLANT,cmu,MED,Y
+What It Is (Block Boy) [Sped Up],4,"The way he call first, but still he always put her last (Always put her last, yeah)",last,5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",pack,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy) [Sped Up],4,"The way he call first, but still he always put her last (Always put her last, yeah)",last,5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",zaza,INNER,ASSONANCE,vowel,LOW,N
+What It Is (Block Boy) [Sped Up],4,"The way he call first, but still he always put her last (Always put her last, yeah)",still,5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",kickin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy) [Sped Up],4,"The way he call first, but still he always put her last (Always put her last, yeah)",still,5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",kill,INNER,PERFECT,cmu,HIGH,Y
+What It Is (Block Boy) [Sped Up],5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",kill,5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",kickin,INNER,ASSONANCE,vowel,MED,Y
+What It Is (Block Boy) [Sped Up],5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",pack,5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,INNER,SLANT,cmu,MED,Y
+What It Is (Block Boy) [Sped Up],5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",zaza,5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",ass,INNER,SLANT,spelling,LOW,Y
+What It Is (Block Boy) [Sped Up],5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",zaza,5,"On smoke box, I kill 'em, that zaza pack kickin' my ass (Kickin' my ass, yeah)",pack,INNER,SLANT,spelling,LOW,Y

@@ -1,0 +1,437 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+iSpy (Remix),1,I ain't been gettin' high...,high,2,"Well, maybe a little, baby, I don't wanna lie",lie,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),1,I ain't been gettin' high...,ain't,2,"Well, maybe a little, baby, I don't wanna lie",baby,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),1,I ain't been gettin' high...,ain't,2,"Well, maybe a little, baby, I don't wanna lie",maybe,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),1,I ain't been gettin' high...,gettin,2,"Well, maybe a little, baby, I don't wanna lie",Well,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),1,I ain't been gettin' high...,high,3,"I know when you text me girl, I don't always reply",reply,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),1,I ain't been gettin' high...,ain't,3,"I know when you text me girl, I don't always reply",always,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),1,I ain't been gettin' high...,gettin,3,"I know when you text me girl, I don't always reply",text,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),1,I ain't been gettin' high...,gettin,3,"I know when you text me girl, I don't always reply",when,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),1,I ain't been gettin' high...,high,4,"Well, you're not an angel either, you can't even fly",fly,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",maybe,2,"Well, maybe a little, baby, I don't wanna lie",baby,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",Well maybe,2,"Well, maybe a little, baby, I don't wanna lie",little baby,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",lie,3,"I know when you text me girl, I don't always reply",reply,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",baby,3,"I know when you text me girl, I don't always reply",always,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",don't,3,"I know when you text me girl, I don't always reply",don't,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",don't,3,"I know when you text me girl, I don't always reply",know,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",maybe,3,"I know when you text me girl, I don't always reply",always,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",Well,3,"I know when you text me girl, I don't always reply",text,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",Well,3,"I know when you text me girl, I don't always reply",when,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",lie,4,"Well, you're not an angel either, you can't even fly",fly,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",baby,4,"Well, you're not an angel either, you can't even fly",angel,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",maybe,4,"Well, you're not an angel either, you can't even fly",angel,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",wanna,4,"Well, you're not an angel either, you can't even fly",not,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),2,"Well, maybe a little, baby, I don't wanna lie",Well,4,"Well, you're not an angel either, you can't even fly",Well,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",know,3,"I know when you text me girl, I don't always reply",don't,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",when,3,"I know when you text me girl, I don't always reply",text,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",reply,4,"Well, you're not an angel either, you can't even fly",fly,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",always,4,"Well, you're not an angel either, you can't even fly",angel,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",text,4,"Well, you're not an angel either, you can't even fly",Well,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",when,4,"Well, you're not an angel either, you can't even fly",Well,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",don't,5,"I notice, you think that you know shit",know,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",don't,5,"I notice, you think that you know shit",notice,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",know,5,"I notice, you think that you know shit",know,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),3,"I know when you text me girl, I don't always reply",know,5,"I notice, you think that you know shit",notice,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),4,"Well, you're not an angel either, you can't even fly",either,4,"Well, you're not an angel either, you can't even fly",even,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),4,"Well, you're not an angel either, you can't even fly",angel,6,"All this shade that's coming at me, I wonder who throws it",shade,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),5,"I notice, you think that you know shit",notice,5,"I notice, you think that you know shit",know,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),5,"I notice, you think that you know shit",think,5,"I notice, you think that you know shit",shit,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),5,"I notice, you think that you know shit",know,6,"All this shade that's coming at me, I wonder who throws it",throws,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),5,"I notice, you think that you know shit",notice,6,"All this shade that's coming at me, I wonder who throws it",throws,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),5,"I notice, you think that you know shit",know,7,I got tunnel vision and these niggas out of focus,focus,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),5,"I notice, you think that you know shit",notice,7,I got tunnel vision and these niggas out of focus,focus,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),5,"I notice, you think that you know shit",shit,7,I got tunnel vision and these niggas out of focus,vision,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),5,"I notice, you think that you know shit",think,7,I got tunnel vision and these niggas out of focus,vision,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),5,"I notice, you think that you know shit",shit,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",shit,END,REPEAT,spelling,HIGH,N
+iSpy (Remix),6,"All this shade that's coming at me, I wonder who throws it",coming,6,"All this shade that's coming at me, I wonder who throws it",wonder,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),6,"All this shade that's coming at me, I wonder who throws it",throws,7,I got tunnel vision and these niggas out of focus,focus,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),6,"All this shade that's coming at me, I wonder who throws it",coming,7,I got tunnel vision and these niggas out of focus,tunnel,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),6,"All this shade that's coming at me, I wonder who throws it",wonder,7,I got tunnel vision and these niggas out of focus,tunnel,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),6,"All this shade that's coming at me, I wonder who throws it",throws,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",don't,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),6,"All this shade that's coming at me, I wonder who throws it",throws,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",scope,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),6,"All this shade that's coming at me, I wonder who throws it",who,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",Duper,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),6,"All this shade that's coming at me, I wonder who throws it",who,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",Super,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),7,I got tunnel vision and these niggas out of focus,focus,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",don't,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),7,I got tunnel vision and these niggas out of focus,focus,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",scope,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),7,I got tunnel vision and these niggas out of focus,vision,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",hit,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),7,I got tunnel vision and these niggas out of focus,vision,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",kid,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),7,I got tunnel vision and these niggas out of focus,vision,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",shit,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),7,I got tunnel vision and these niggas out of focus,focus,9,"Otay, pray them niggas go away",go,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),7,I got tunnel vision and these niggas out of focus,niggas,9,"Otay, pray them niggas go away",niggas,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",don't,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",scope,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",hit,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",kid,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",hit,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",shit,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",kid,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",shit,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",Super,8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",Duper,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",don't,9,"Otay, pray them niggas go away",go,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",don't,9,"Otay, pray them niggas go away",Otay,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",scope,9,"Otay, pray them niggas go away",go,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",scope,9,"Otay, pray them niggas go away",Otay,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",Duper,10,Always hella clowns around it look like Cirque Du Soleil,Du,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",Sniper,10,Always hella clowns around it look like Cirque Du Soleil,like,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),8,"Super Duper Sniper gang, don't get hit with the scope, kid, oh shit",Super,10,Always hella clowns around it look like Cirque Du Soleil,Du,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",Otay,9,"Otay, pray them niggas go away",away,INNER,PERFECT,spelling,MED,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",Otay,9,"Otay, pray them niggas go away",pray,INNER,PERFECT,spelling,MED,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",pray,9,"Otay, pray them niggas go away",away,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",away,10,Always hella clowns around it look like Cirque Du Soleil,Soleil,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",away,10,Always hella clowns around it look like Cirque Du Soleil,Always,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",pray,10,Always hella clowns around it look like Cirque Du Soleil,Always,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",pray,10,Always hella clowns around it look like Cirque Du Soleil,Soleil,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",away,11,"This went hella platinum, nigga, it was just a throwaway",throwaway,END,MULTI,multi,HIGH,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",niggas,11,"This went hella platinum, nigga, it was just a throwaway",nigga,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",Otay,11,"This went hella platinum, nigga, it was just a throwaway",throwaway,INNER,PERFECT,spelling,MED,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",pray,11,"This went hella platinum, nigga, it was just a throwaway",throwaway,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),9,"Otay, pray them niggas go away",away,12,"My album so cold when it drop, it's gonna be a motherfucking snow day",day,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),10,Always hella clowns around it look like Cirque Du Soleil,Always,10,Always hella clowns around it look like Cirque Du Soleil,Soleil,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),10,Always hella clowns around it look like Cirque Du Soleil,clowns,10,Always hella clowns around it look like Cirque Du Soleil,around,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),10,Always hella clowns around it look like Cirque Du Soleil,Soleil,11,"This went hella platinum, nigga, it was just a throwaway",throwaway,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),10,Always hella clowns around it look like Cirque Du Soleil,Always,11,"This went hella platinum, nigga, it was just a throwaway",throwaway,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),10,Always hella clowns around it look like Cirque Du Soleil,hella,11,"This went hella platinum, nigga, it was just a throwaway",hella,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),10,Always hella clowns around it look like Cirque Du Soleil,Soleil,12,"My album so cold when it drop, it's gonna be a motherfucking snow day",day,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),10,Always hella clowns around it look like Cirque Du Soleil,Always,12,"My album so cold when it drop, it's gonna be a motherfucking snow day",day,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),11,"This went hella platinum, nigga, it was just a throwaway",throwaway,12,"My album so cold when it drop, it's gonna be a motherfucking snow day",day,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),11,"This went hella platinum, nigga, it was just a throwaway",platinum,12,"My album so cold when it drop, it's gonna be a motherfucking snow day",album,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),11,"This went hella platinum, nigga, it was just a throwaway",went,12,"My album so cold when it drop, it's gonna be a motherfucking snow day",when,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),11,"This went hella platinum, nigga, it was just a throwaway",throwaway,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",say,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",cold,12,"My album so cold when it drop, it's gonna be a motherfucking snow day",snow,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",drop,12,"My album so cold when it drop, it's gonna be a motherfucking snow day",gonna,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",cold,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",don't,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",cold,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",knows,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",cold,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",shows,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",day,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",say,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",snow,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",don't,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",snow,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",knows,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",snow,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",shows,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",cold,14,"I'm just like DeRozan, if I shoot it, it goes in",goes,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),12,"My album so cold when it drop, it's gonna be a motherfucking snow day",snow,14,"I'm just like DeRozan, if I shoot it, it goes in",goes,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",don't,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",shows,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",knows,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",don't,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",knows,13,"Ayy, boy is good and he knows it, he don't say it, he shows it",shows,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",shows,14,"I'm just like DeRozan, if I shoot it, it goes in",goes,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",don't,14,"I'm just like DeRozan, if I shoot it, it goes in",goes,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",knows,14,"I'm just like DeRozan, if I shoot it, it goes in",goes,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",shows,15,"I'm in Cali just coastin', get 'em so wet they need coasters",coasters,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",don't,15,"I'm in Cali just coastin', get 'em so wet they need coasters",coasters,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",don't,15,"I'm in Cali just coastin', get 'em so wet they need coasters",coastin,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",knows,15,"I'm in Cali just coastin', get 'em so wet they need coasters",coasters,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",knows,15,"I'm in Cali just coastin', get 'em so wet they need coasters",coastin,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",shows,15,"I'm in Cali just coastin', get 'em so wet they need coasters",coastin,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),13,"Ayy, boy is good and he knows it, he don't say it, he shows it",shows,16,"I got a selfie with Oprah, but I still ain't gonna post it",post,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),14,"I'm just like DeRozan, if I shoot it, it goes in",goes,15,"I'm in Cali just coastin', get 'em so wet they need coasters",coasters,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),14,"I'm just like DeRozan, if I shoot it, it goes in",goes,15,"I'm in Cali just coastin', get 'em so wet they need coasters",coastin,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),14,"I'm just like DeRozan, if I shoot it, it goes in",goes,16,"I got a selfie with Oprah, but I still ain't gonna post it",post,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),14,"I'm just like DeRozan, if I shoot it, it goes in",goes,16,"I got a selfie with Oprah, but I still ain't gonna post it",Oprah,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",coastin,15,"I'm in Cali just coastin', get 'em so wet they need coasters",coasters,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",get,15,"I'm in Cali just coastin', get 'em so wet they need coasters",wet,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",coasters,16,"I got a selfie with Oprah, but I still ain't gonna post it",post,END,SLANT,cmu,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",Cali,16,"I got a selfie with Oprah, but I still ain't gonna post it",gonna,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",Cali,16,"I got a selfie with Oprah, but I still ain't gonna post it",got,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",coasters,16,"I got a selfie with Oprah, but I still ain't gonna post it",Oprah,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",coastin,16,"I got a selfie with Oprah, but I still ain't gonna post it",Oprah,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",coastin,16,"I got a selfie with Oprah, but I still ain't gonna post it",post,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",need,16,"I got a selfie with Oprah, but I still ain't gonna post it",selfie,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",coasters,17,"And I'm in my happy place posted, I ain't frown since '06",posted,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",coastin,17,"And I'm in my happy place posted, I ain't frown since '06",posted,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),15,"I'm in Cali just coastin', get 'em so wet they need coasters",coasters,19,"You can come back to mine though, your friend ain't cute, but it's fine though",though,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",got,16,"I got a selfie with Oprah, but I still ain't gonna post it",gonna,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",Oprah,16,"I got a selfie with Oprah, but I still ain't gonna post it",post,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",ain't,17,"And I'm in my happy place posted, I ain't frown since '06",ain't,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",ain't,17,"And I'm in my happy place posted, I ain't frown since '06",place,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",Oprah,17,"And I'm in my happy place posted, I ain't frown since '06",posted,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",post,17,"And I'm in my happy place posted, I ain't frown since '06",posted,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",still,17,"And I'm in my happy place posted, I ain't frown since '06",since,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",ain't,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",ain't,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",Oprah,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",throw,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",post,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",throw,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",selfie,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",freed,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",still,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",kids,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",still,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",Lil,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",still,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",since,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",post,19,"You can come back to mine though, your friend ain't cute, but it's fine though",though,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),16,"I got a selfie with Oprah, but I still ain't gonna post it",post,20,We gon' end on a high note,note,END,SLANT,cmu,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",place,17,"And I'm in my happy place posted, I ain't frown since '06",ain't,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",ain't,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",ain't,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",happy,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",back,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",happy,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",Kodak,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",place,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",ain't,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",posted,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",throw,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",since,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",kids,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",since,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",Lil,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",since,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",since,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",ain't,19,"You can come back to mine though, your friend ain't cute, but it's fine though",ain't,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",happy,19,"You can come back to mine though, your friend ain't cute, but it's fine though",back,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",happy,19,"You can come back to mine though, your friend ain't cute, but it's fine though",can,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",place,19,"You can come back to mine though, your friend ain't cute, but it's fine though",ain't,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),17,"And I'm in my happy place posted, I ain't frown since '06",posted,19,"You can come back to mine though, your friend ain't cute, but it's fine though",though,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",Kodak,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",back,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",Lil,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",kids,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",since,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",kids,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",since,18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",Lil,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",ain't,19,"You can come back to mine though, your friend ain't cute, but it's fine though",ain't,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",back,19,"You can come back to mine though, your friend ain't cute, but it's fine though",back,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",back,19,"You can come back to mine though, your friend ain't cute, but it's fine though",can,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",cried,19,"You can come back to mine though, your friend ain't cute, but it's fine though",fine,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",cried,19,"You can come back to mine though, your friend ain't cute, but it's fine though",mine,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",Kodak,19,"You can come back to mine though, your friend ain't cute, but it's fine though",back,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",Kodak,19,"You can come back to mine though, your friend ain't cute, but it's fine though",can,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",let's,19,"You can come back to mine though, your friend ain't cute, but it's fine though",friend,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",somethin,19,"You can come back to mine though, your friend ain't cute, but it's fine though",come,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",throw,19,"You can come back to mine though, your friend ain't cute, but it's fine though",though,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",cried,20,We gon' end on a high note,high,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",let's,20,We gon' end on a high note,end,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),18,"I ain't cried since '01, they freed Lil Kodak, the kids back let's throw somethin'",throw,20,We gon' end on a high note,note,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",can,19,"You can come back to mine though, your friend ain't cute, but it's fine though",back,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",mine,19,"You can come back to mine though, your friend ain't cute, but it's fine though",fine,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",though,19,"You can come back to mine though, your friend ain't cute, but it's fine though",though,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",though,20,We gon' end on a high note,note,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",fine,20,We gon' end on a high note,high,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",friend,20,We gon' end on a high note,end,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",mine,20,We gon' end on a high note,high,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",though,20,We gon' end on a high note,note,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",fine,21,I spy with my little eye,eye,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",fine,21,I spy with my little eye,spy,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",mine,21,I spy with my little eye,eye,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),19,"You can come back to mine though, your friend ain't cute, but it's fine though",mine,21,I spy with my little eye,spy,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),20,We gon' end on a high note,gon,20,We gon' end on a high note,note,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),20,We gon' end on a high note,high,21,I spy with my little eye,eye,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),20,We gon' end on a high note,high,21,I spy with my little eye,spy,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),20,We gon' end on a high note,end,22,A girlie I can get 'cause she don't get too many likes,get,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),20,We gon' end on a high note,end,22,A girlie I can get 'cause she don't get too many likes,many,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),20,We gon' end on a high note,gon,22,A girlie I can get 'cause she don't get too many likes,don't,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),20,We gon' end on a high note,high,22,A girlie I can get 'cause she don't get too many likes,likes,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),20,We gon' end on a high note,note,22,A girlie I can get 'cause she don't get too many likes,don't,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),21,I spy with my little eye,spy,21,I spy with my little eye,eye,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),21,I spy with my little eye,eye,22,A girlie I can get 'cause she don't get too many likes,likes,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),21,I spy with my little eye,spy,22,A girlie I can get 'cause she don't get too many likes,likes,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),21,I spy with my little eye,eye,23,A curly-headed cutie I can turn into my wife,wife,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),21,I spy with my little eye,spy,23,A curly-headed cutie I can turn into my wife,wife,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),21,I spy with my little eye,eye,24,"Wait, that means forever, ever, hold up, never mind",mind,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),21,I spy with my little eye,eye,25,"Oh, I...I spy with my little eye",eye,END,REPEAT,spelling,HIGH,N
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,get,22,A girlie I can get 'cause she don't get too many likes,get,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,get,22,A girlie I can get 'cause she don't get too many likes,many,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,likes,23,A curly-headed cutie I can turn into my wife,wife,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,can,23,A curly-headed cutie I can turn into my wife,can,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,get,23,A curly-headed cutie I can turn into my wife,headed,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,girlie,23,A curly-headed cutie I can turn into my wife,curly,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,girlie,23,A curly-headed cutie I can turn into my wife,turn,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,many,23,A curly-headed cutie I can turn into my wife,headed,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,likes,24,"Wait, that means forever, ever, hold up, never mind",mind,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,don't,24,"Wait, that means forever, ever, hold up, never mind",hold,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,get,24,"Wait, that means forever, ever, hold up, never mind",ever,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,get,24,"Wait, that means forever, ever, hold up, never mind",forever,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,get,24,"Wait, that means forever, ever, hold up, never mind",never,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,many,24,"Wait, that means forever, ever, hold up, never mind",ever,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,many,24,"Wait, that means forever, ever, hold up, never mind",forever,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,many,24,"Wait, that means forever, ever, hold up, never mind",never,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,likes,25,"Oh, I...I spy with my little eye",eye,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),22,A girlie I can get 'cause she don't get too many likes,likes,26,"I spy, I spy with my little eye",eye,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),23,A curly-headed cutie I can turn into my wife,curly,23,A curly-headed cutie I can turn into my wife,turn,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),23,A curly-headed cutie I can turn into my wife,wife,24,"Wait, that means forever, ever, hold up, never mind",mind,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),23,A curly-headed cutie I can turn into my wife,headed,24,"Wait, that means forever, ever, hold up, never mind",ever,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),23,A curly-headed cutie I can turn into my wife,headed,24,"Wait, that means forever, ever, hold up, never mind",forever,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),23,A curly-headed cutie I can turn into my wife,headed,24,"Wait, that means forever, ever, hold up, never mind",never,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),23,A curly-headed cutie I can turn into my wife,wife,25,"Oh, I...I spy with my little eye",eye,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),23,A curly-headed cutie I can turn into my wife,wife,25,"Oh, I...I spy with my little eye",spy,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),23,A curly-headed cutie I can turn into my wife,wife,26,"I spy, I spy with my little eye",eye,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",ever,24,"Wait, that means forever, ever, hold up, never mind",never,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",forever,24,"Wait, that means forever, ever, hold up, never mind",ever,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",forever,24,"Wait, that means forever, ever, hold up, never mind",never,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",forever ever,24,"Wait, that means forever, ever, hold up, never mind",hold never,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",means forever,24,"Wait, that means forever, ever, hold up, never mind",forever ever,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",means forever,24,"Wait, that means forever, ever, hold up, never mind",hold never,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",mind,25,"Oh, I...I spy with my little eye",eye,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",mind,25,"Oh, I...I spy with my little eye",spy,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",mind,26,"I spy, I spy with my little eye",eye,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),24,"Wait, that means forever, ever, hold up, never mind",mind,26,"I spy, I spy with my little eye",spy,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),25,"Oh, I...I spy with my little eye",spy,25,"Oh, I...I spy with my little eye",eye,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),25,"Oh, I...I spy with my little eye",eye,26,"I spy, I spy with my little eye",eye,END,REPEAT,spelling,HIGH,N
+iSpy (Remix),25,"Oh, I...I spy with my little eye",eye,26,"I spy, I spy with my little eye",spy,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),25,"Oh, I...I spy with my little eye",little,26,"I spy, I spy with my little eye",little,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),25,"Oh, I...I spy with my little eye",spy,26,"I spy, I spy with my little eye",eye,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),25,"Oh, I...I spy with my little eye",spy,26,"I spy, I spy with my little eye",spy,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),25,"Oh, I...I spy with my little eye",eye,27,"I could spot you from a hundred miles away, ayy",miles,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),25,"Oh, I...I spy with my little eye",spy,27,"I could spot you from a hundred miles away, ayy",miles,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),26,"I spy, I spy with my little eye",spy,26,"I spy, I spy with my little eye",eye,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),26,"I spy, I spy with my little eye",spy,26,"I spy, I spy with my little eye",spy,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),26,"I spy, I spy with my little eye",eye,27,"I could spot you from a hundred miles away, ayy",miles,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),26,"I spy, I spy with my little eye",spy,27,"I could spot you from a hundred miles away, ayy",miles,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),26,"I spy, I spy with my little eye",little,28,"I can see you through my Jim Maui shades, ayy",Jim,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),27,"I could spot you from a hundred miles away, ayy",away,28,"I can see you through my Jim Maui shades, ayy",shades,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),27,"I could spot you from a hundred miles away, ayy",could,29,"When I pull up, I’m in a black Audi A8, ayy",pull,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),27,"I could spot you from a hundred miles away, ayy",away,30,"Leave your man ‘cause he ain’t nothin’ like me, babe",babe,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),28,"I can see you through my Jim Maui shades, ayy",can,29,"When I pull up, I’m in a black Audi A8, ayy",black,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),28,"I can see you through my Jim Maui shades, ayy",shades,30,"Leave your man ‘cause he ain’t nothin’ like me, babe",babe,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),28,"I can see you through my Jim Maui shades, ayy",can,30,"Leave your man ‘cause he ain’t nothin’ like me, babe",man,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),28,"I can see you through my Jim Maui shades, ayy",see,30,"Leave your man ‘cause he ain’t nothin’ like me, babe",Leave,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),28,"I can see you through my Jim Maui shades, ayy",shades,30,"Leave your man ‘cause he ain’t nothin’ like me, babe",ain’t,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),29,"When I pull up, I’m in a black Audi A8, ayy",black,30,"Leave your man ‘cause he ain’t nothin’ like me, babe",man,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),29,"When I pull up, I’m in a black Audi A8, ayy",When,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,get,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),29,"When I pull up, I’m in a black Audi A8, ayy",When,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,never,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",ain’t,30,"Leave your man ‘cause he ain’t nothin’ like me, babe",babe,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",cause,30,"Leave your man ‘cause he ain’t nothin’ like me, babe",nothin,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",ain’t,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,ain’t,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",babe,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,ain’t,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",cause,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,cause,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",cause,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,wanting,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",like,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,trying,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",nothin,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,cause,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",nothin,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,wanting,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",cause,32,I don’t ever wanna be doing features,wanna,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",Leave,32,I don’t ever wanna be doing features,features,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),30,"Leave your man ‘cause he ain’t nothin’ like me, babe",nothin,32,I don’t ever wanna be doing features,wanna,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,cause,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,wanting,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,get,31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,never,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,ain’t never,32,I don’t ever wanna be doing features,don’t ever,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,cause,32,I don’t ever wanna be doing features,wanna,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,get,32,I don’t ever wanna be doing features,ever,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,never,32,I don’t ever wanna be doing features,ever,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,wanting,32,I don’t ever wanna be doing features,wanna,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,ain’t,33,I stay far away from these people,away,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,ain’t,33,I stay far away from these people,stay,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,cause,33,I stay far away from these people,far,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),31,I’ve been trying to get out my bubble ‘cause I ain’t never wanting to be linking up,wanting,33,I stay far away from these people,far,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),32,I don’t ever wanna be doing features,features,33,I stay far away from these people,people,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),32,I don’t ever wanna be doing features,features,33,I stay far away from these people,these,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),32,I don’t ever wanna be doing features,wanna,33,I stay far away from these people,far,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),32,I don’t ever wanna be doing features,features,34,"Said she love me, but I don’t believe her",believe,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),32,I don’t ever wanna be doing features,don’t,34,"Said she love me, but I don’t believe her",don’t,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),32,I don’t ever wanna be doing features,ever,34,"Said she love me, but I don’t believe her",Said,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),32,I don’t ever wanna be doing features,features,35,"Yeah I want you, but I don’t need ya",need,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),32,I don’t ever wanna be doing features,features,36,"Even when I ain't lookin’, I see ya",see,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),33,I stay far away from these people,stay,33,I stay far away from these people,away,INNER,PERFECT,cmu,HIGH,Y
+iSpy (Remix),33,I stay far away from these people,these,33,I stay far away from these people,people,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),33,I stay far away from these people,people,34,"Said she love me, but I don’t believe her",believe,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),33,I stay far away from these people,these,34,"Said she love me, but I don’t believe her",believe,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),33,I stay far away from these people,people,35,"Yeah I want you, but I don’t need ya",need,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),33,I stay far away from these people,far,35,"Yeah I want you, but I don’t need ya",want,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),33,I stay far away from these people,these,35,"Yeah I want you, but I don’t need ya",need,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),33,I stay far away from these people,people,36,"Even when I ain't lookin’, I see ya",see,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),33,I stay far away from these people,people,37,"You can’t even see me, but I see ya",see,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),34,"Said she love me, but I don’t believe her",believe,35,"Yeah I want you, but I don’t need ya",need,END,SLANT,cmu,MED,Y
+iSpy (Remix),34,"Said she love me, but I don’t believe her",don’t,35,"Yeah I want you, but I don’t need ya",don’t,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),34,"Said she love me, but I don’t believe her",believe,36,"Even when I ain't lookin’, I see ya",see,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),34,"Said she love me, but I don’t believe her",believe,36,"Even when I ain't lookin’, I see ya",Even,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),34,"Said she love me, but I don’t believe her",Said,36,"Even when I ain't lookin’, I see ya",when,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),34,"Said she love me, but I don’t believe her",believe,37,"You can’t even see me, but I see ya",see,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),34,"Said she love me, but I don’t believe her",believe,38,"I’m just chilling, smokin' reefer",reefer,END,SLANT,cmu,MED,Y
+iSpy (Remix),35,"Yeah I want you, but I don’t need ya",need,36,"Even when I ain't lookin’, I see ya",see,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),35,"Yeah I want you, but I don’t need ya",need,36,"Even when I ain't lookin’, I see ya",Even,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),35,"Yeah I want you, but I don’t need ya",need,37,"You can’t even see me, but I see ya",see,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),35,"Yeah I want you, but I don’t need ya",need,37,"You can’t even see me, but I see ya",even,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),35,"Yeah I want you, but I don’t need ya",need,37,"You can’t even see me, but I see ya",see,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),35,"Yeah I want you, but I don’t need ya",want,37,"You can’t even see me, but I see ya",can’t,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),35,"Yeah I want you, but I don’t need ya",need,38,"I’m just chilling, smokin' reefer",reefer,END,SLANT,cmu,MED,Y
+iSpy (Remix),35,"Yeah I want you, but I don’t need ya",need,39,Dropping codeine in a liter,liter,END,SLANT,cmu,MED,Y
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",Even,36,"Even when I ain't lookin’, I see ya",see,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",see,37,"You can’t even see me, but I see ya",see,END,REPEAT,spelling,HIGH,N
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",Even,37,"You can’t even see me, but I see ya",even,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",Even,37,"You can’t even see me, but I see ya",see,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",see,37,"You can’t even see me, but I see ya",even,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",see,37,"You can’t even see me, but I see ya",see,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",see,38,"I’m just chilling, smokin' reefer",reefer,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",Even,38,"I’m just chilling, smokin' reefer",reefer,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",see,39,Dropping codeine in a liter,liter,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),36,"Even when I ain't lookin’, I see ya",see,40,I got more stripes than a Zebra,Zebra,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),37,"You can’t even see me, but I see ya",even,37,"You can’t even see me, but I see ya",see,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),37,"You can’t even see me, but I see ya",see,37,"You can’t even see me, but I see ya",see,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),37,"You can’t even see me, but I see ya",see,38,"I’m just chilling, smokin' reefer",reefer,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),37,"You can’t even see me, but I see ya",even,38,"I’m just chilling, smokin' reefer",reefer,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),37,"You can’t even see me, but I see ya",see,38,"I’m just chilling, smokin' reefer",reefer,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),37,"You can’t even see me, but I see ya",see,39,Dropping codeine in a liter,liter,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),37,"You can’t even see me, but I see ya",even,39,Dropping codeine in a liter,liter,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),37,"You can’t even see me, but I see ya",see,39,Dropping codeine in a liter,liter,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),37,"You can’t even see me, but I see ya",see,40,I got more stripes than a Zebra,Zebra,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),37,"You can’t even see me, but I see ya",see,41,"I’m a Gemini, she’s a Libra",Libra,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),38,"I’m just chilling, smokin' reefer",reefer,39,Dropping codeine in a liter,liter,END,SLANT,cmu,MED,Y
+iSpy (Remix),38,"I’m just chilling, smokin' reefer",smokin,39,Dropping codeine in a liter,codeine,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),38,"I’m just chilling, smokin' reefer",reefer,40,I got more stripes than a Zebra,Zebra,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),38,"I’m just chilling, smokin' reefer",reefer,41,"I’m a Gemini, she’s a Libra",Libra,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),38,"I’m just chilling, smokin' reefer",reefer,42,Pulling stunts like Evel Knievel,Knievel,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),39,Dropping codeine in a liter,liter,40,I got more stripes than a Zebra,Zebra,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),39,Dropping codeine in a liter,Dropping,40,I got more stripes than a Zebra,got,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),39,Dropping codeine in a liter,liter,41,"I’m a Gemini, she’s a Libra",Libra,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),39,Dropping codeine in a liter,liter,41,"I’m a Gemini, she’s a Libra",she’s,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),39,Dropping codeine in a liter,liter,42,Pulling stunts like Evel Knievel,Knievel,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),39,Dropping codeine in a liter,liter,43,"Once I freak her, I’ma delete her",delete,END,SLANT,cmu,MED,Y
+iSpy (Remix),40,I got more stripes than a Zebra,Zebra,41,"I’m a Gemini, she’s a Libra",Libra,END,SLANT,cmu,MED,Y
+iSpy (Remix),40,I got more stripes than a Zebra,stripes,41,"I’m a Gemini, she’s a Libra",Gemini,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),40,I got more stripes than a Zebra,Zebra,41,"I’m a Gemini, she’s a Libra",she’s,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),40,I got more stripes than a Zebra,Zebra,42,Pulling stunts like Evel Knievel,Knievel,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),40,I got more stripes than a Zebra,stripes,42,Pulling stunts like Evel Knievel,like,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),40,I got more stripes than a Zebra,Zebra,43,"Once I freak her, I’ma delete her",delete,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),40,I got more stripes than a Zebra,Zebra,44,I was just talking to Auntie Rita,Rita,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",she’s,41,"I’m a Gemini, she’s a Libra",Libra,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",Libra,42,Pulling stunts like Evel Knievel,Knievel,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",Gemini,42,Pulling stunts like Evel Knievel,like,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",she’s,42,Pulling stunts like Evel Knievel,Knievel,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",Libra,43,"Once I freak her, I’ma delete her",delete,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",Libra,43,"Once I freak her, I’ma delete her",freak,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",she’s,43,"Once I freak her, I’ma delete her",delete,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",she’s,43,"Once I freak her, I’ma delete her",freak,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",Libra,44,I was just talking to Auntie Rita,Rita,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),41,"I’m a Gemini, she’s a Libra",Libra,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",need,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),42,Pulling stunts like Evel Knievel,Knievel,43,"Once I freak her, I’ma delete her",delete,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),42,Pulling stunts like Evel Knievel,Knievel,43,"Once I freak her, I’ma delete her",freak,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),42,Pulling stunts like Evel Knievel,stunts,43,"Once I freak her, I’ma delete her",Once,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),42,Pulling stunts like Evel Knievel,Knievel,44,I was just talking to Auntie Rita,Rita,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),42,Pulling stunts like Evel Knievel,Knievel,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",need,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),43,"Once I freak her, I’ma delete her",freak,43,"Once I freak her, I’ma delete her",delete,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),43,"Once I freak her, I’ma delete her",delete,44,I was just talking to Auntie Rita,Rita,END,SLANT,cmu,MED,Y
+iSpy (Remix),43,"Once I freak her, I’ma delete her",freak,44,I was just talking to Auntie Rita,Rita,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),43,"Once I freak her, I’ma delete her",delete,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",need,END,SLANT,cmu,MED,Y
+iSpy (Remix),43,"Once I freak her, I’ma delete her",delete,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",here,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),43,"Once I freak her, I’ma delete her",delete,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",Told,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),43,"Once I freak her, I’ma delete her",freak,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",here,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),43,"Once I freak her, I’ma delete her",freak,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",need,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),43,"Once I freak her, I’ma delete her",delete,47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",real,END,SLANT,cmu,MED,Y
+iSpy (Remix),44,I was just talking to Auntie Rita,Rita,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",need,END,SLANT,cmu,MED,Y
+iSpy (Remix),44,I was just talking to Auntie Rita,Rita,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",here,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),44,I was just talking to Auntie Rita,Auntie,46,"I ain’t stalking, but I see ya over there, yeah",ain’t,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),44,I was just talking to Auntie Rita,Rita,46,"I ain’t stalking, but I see ya over there, yeah",see,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),44,I was just talking to Auntie Rita,talking,46,"I ain’t stalking, but I see ya over there, yeah",stalking,INNER,MULTI,multi,HIGH,Y
+iSpy (Remix),44,I was just talking to Auntie Rita,Rita,47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",real,END,SLANT,cmu,MED,Y
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",here,45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",need,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",here,46,"I ain’t stalking, but I see ya over there, yeah",see,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",need,46,"I ain’t stalking, but I see ya over there, yeah",see,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",Stay,46,"I ain’t stalking, but I see ya over there, yeah",ain’t,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",Told,46,"I ain’t stalking, but I see ya over there, yeah",over,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",need,47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",real,END,SLANT,cmu,MED,Y
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",cause,47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",'cause,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",cause,47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",watching,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",here,47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",real,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),45,"Told her “Stay out here ‘cause we need ya”, ayy, ayy",need,49,"Don’t think I'm soft girl, I’m just showing you how I feel",feel,END,SLANT,cmu,MED,Y
+iSpy (Remix),46,"I ain’t stalking, but I see ya over there, yeah",see,47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",real,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),46,"I ain’t stalking, but I see ya over there, yeah",there,48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",dentist,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",Sniper,48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",diamonds,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",Sniper,48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",I’ll,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",real,49,"Don’t think I'm soft girl, I’m just showing you how I feel",feel,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",watching,49,"Don’t think I'm soft girl, I’m just showing you how I feel",soft,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),47,"Yeah, I’m watching 'cause this Sniper Gang for real, yeah",real,51,"Ayy, yeah, yeah, yeah, can see ya from over here",here,END,SLANT,cmu,MED,Y
+iSpy (Remix),48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",Hit,48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",grill,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",I’ll,48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",diamonds,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",I’ll,48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",grill,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",grill,49,"Don’t think I'm soft girl, I’m just showing you how I feel",think,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",Hit,49,"Don’t think I'm soft girl, I’m just showing you how I feel",think,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",grill,50,"Ayy, yeah, yeah, yeah, booted up on a pill",pill,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",Hit,50,"Ayy, yeah, yeah, yeah, booted up on a pill",pill,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",I’ll,50,"Ayy, yeah, yeah, yeah, booted up on a pill",pill,INNER,SLANT,spelling,LOW,Y
+iSpy (Remix),48,"Hit the dentist, and I’ll put diamonds in my grill, yeah",grill,52,"Ayy, yeah, baby girl, I can see you in a lift",lift,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),49,"Don’t think I'm soft girl, I’m just showing you how I feel",Don’t,49,"Don’t think I'm soft girl, I’m just showing you how I feel",showing,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),49,"Don’t think I'm soft girl, I’m just showing you how I feel",think,50,"Ayy, yeah, yeah, yeah, booted up on a pill",pill,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),49,"Don’t think I'm soft girl, I’m just showing you how I feel",feel,51,"Ayy, yeah, yeah, yeah, can see ya from over here",here,END,SLANT,cmu,MED,Y
+iSpy (Remix),49,"Don’t think I'm soft girl, I’m just showing you how I feel",Don’t,51,"Ayy, yeah, yeah, yeah, can see ya from over here",over,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),49,"Don’t think I'm soft girl, I’m just showing you how I feel",feel,51,"Ayy, yeah, yeah, yeah, can see ya from over here",see,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),49,"Don’t think I'm soft girl, I’m just showing you how I feel",showing,51,"Ayy, yeah, yeah, yeah, can see ya from over here",over,INNER,SLANT,cmu,MED,Y
+iSpy (Remix),50,"Ayy, yeah, yeah, yeah, booted up on a pill",pill,52,"Ayy, yeah, baby girl, I can see you in a lift",lift,END,ASSONANCE,vowel,MED,Y
+iSpy (Remix),50,"Ayy, yeah, yeah, yeah, booted up on a pill",pill,53,See you riding in a spliff,spliff,END,ASSONANCE,vowel,LOW,N
+iSpy (Remix),51,"Ayy, yeah, yeah, yeah, can see ya from over here",see,51,"Ayy, yeah, yeah, yeah, can see ya from over here",here,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),51,"Ayy, yeah, yeah, yeah, can see ya from over here",can,52,"Ayy, yeah, baby girl, I can see you in a lift",can,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),51,"Ayy, yeah, yeah, yeah, can see ya from over here",here,52,"Ayy, yeah, baby girl, I can see you in a lift",see,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),51,"Ayy, yeah, yeah, yeah, can see ya from over here",see,52,"Ayy, yeah, baby girl, I can see you in a lift",see,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),51,"Ayy, yeah, yeah, yeah, can see ya from over here",here,53,See you riding in a spliff,See,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),51,"Ayy, yeah, yeah, yeah, can see ya from over here",see,53,See you riding in a spliff,See,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),51,"Ayy, yeah, yeah, yeah, can see ya from over here",here,54,"I put VV’s on your ear, ayy",ear,END,PERFECT,cmu,HIGH,Y
+iSpy (Remix),52,"Ayy, yeah, baby girl, I can see you in a lift",lift,53,See you riding in a spliff,spliff,END,SLANT,spelling,LOW,Y
+iSpy (Remix),52,"Ayy, yeah, baby girl, I can see you in a lift",see,53,See you riding in a spliff,See,INNER,REPEAT,spelling,HIGH,N
+iSpy (Remix),52,"Ayy, yeah, baby girl, I can see you in a lift",see,54,"I put VV’s on your ear, ayy",ear,INNER,ASSONANCE,vowel,MED,Y
+iSpy (Remix),53,See you riding in a spliff,See,54,"I put VV’s on your ear, ayy",ear,INNER,ASSONANCE,vowel,MED,Y

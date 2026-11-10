@@ -1,0 +1,319 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Sunday Morning,2,"She gon get in my car, yeah (my car)",get,3,Only drink Act and Rem (Act),Rem,INNER,SLANT,cmu,MED,Y
+Sunday Morning,2,"She gon get in my car, yeah (my car)",gon,3,Only drink Act and Rem (Act),Only,INNER,SLANT,spelling,LOW,Y
+Sunday Morning,2,"She gon get in my car, yeah (my car)",car,4,I don't take bars (I don't take bars),bars,END,SLANT,cmu,MED,Y
+Sunday Morning,2,"She gon get in my car, yeah (my car)",gon,4,I don't take bars (I don't take bars),don't,INNER,SLANT,spelling,LOW,Y
+Sunday Morning,2,"She gon get in my car, yeah (my car)",car,6,And I can fuck on stars (fuck on stars),stars,END,SLANT,cmu,MED,Y
+Sunday Morning,3,Only drink Act and Rem (Act),Only,4,I don't take bars (I don't take bars),don't,INNER,SLANT,cmu,MED,Y
+Sunday Morning,3,Only drink Act and Rem (Act),Act,5,Bringing my stacks up,stacks,INNER,SLANT,cmu,MED,Y
+Sunday Morning,3,Only drink Act and Rem (Act),drink,5,Bringing my stacks up,Bringing,INNER,SLANT,cmu,MED,Y
+Sunday Morning,4,I don't take bars (I don't take bars),bars,6,And I can fuck on stars (fuck on stars),stars,END,PERFECT,cmu,HIGH,Y
+Sunday Morning,4,I don't take bars (I don't take bars),bars,8,I can go and switch your car (switch your car),car,END,SLANT,cmu,MED,Y
+Sunday Morning,5,Bringing my stacks up,stacks,6,And I can fuck on stars (fuck on stars),can,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,6,And I can fuck on stars (fuck on stars),stars,8,I can go and switch your car (switch your car),car,END,SLANT,cmu,MED,Y
+Sunday Morning,6,And I can fuck on stars (fuck on stars),can,8,I can go and switch your car (switch your car),can,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,7,Whenever my mood change,change,9,Came thru dripping like Sunday morning (Sunday morning),Came,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,7,Whenever my mood change,change,9,Came thru dripping like Sunday morning (Sunday morning),Sunday,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,7,Whenever my mood change,mood,9,Came thru dripping like Sunday morning (Sunday morning),thru,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,7,Whenever my mood change,change,10,I just been stacking patient,patient,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,8,I can go and switch your car (switch your car),switch,9,Came thru dripping like Sunday morning (Sunday morning),dripping,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,8,I can go and switch your car (switch your car),can,10,I just been stacking patient,stacking,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,9,Came thru dripping like Sunday morning (Sunday morning),Came,9,Came thru dripping like Sunday morning (Sunday morning),Sunday,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,9,Came thru dripping like Sunday morning (Sunday morning),Came,10,I just been stacking patient,patient,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,9,Came thru dripping like Sunday morning (Sunday morning),Sunday,10,I just been stacking patient,patient,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,9,Came thru dripping like Sunday morning (Sunday morning),morning,11,Miss your birthday probably buy me a foreign (buy me a foreign),foreign,END,SLANT,cmu,MED,Y
+Sunday Morning,9,Came thru dripping like Sunday morning (Sunday morning),Came,11,Miss your birthday probably buy me a foreign (buy me a foreign),birthday,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,9,Came thru dripping like Sunday morning (Sunday morning),dripping,11,Miss your birthday probably buy me a foreign (buy me a foreign),Miss,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,9,Came thru dripping like Sunday morning (Sunday morning),like,11,Miss your birthday probably buy me a foreign (buy me a foreign),buy,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,9,Came thru dripping like Sunday morning (Sunday morning),Sunday,11,Miss your birthday probably buy me a foreign (buy me a foreign),birthday,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,9,Came thru dripping like Sunday morning (Sunday morning),morning,12,Still balling hard like Jordan (Jordan),Jordan,END,SLANT,cmu,MED,Y
+Sunday Morning,10,I just been stacking patient,patient,11,Miss your birthday probably buy me a foreign (buy me a foreign),birthday,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,11,Miss your birthday probably buy me a foreign (buy me a foreign),foreign,12,Still balling hard like Jordan (Jordan),Jordan,END,SLANT,cmu,MED,Y
+Sunday Morning,11,Miss your birthday probably buy me a foreign (buy me a foreign),buy,12,Still balling hard like Jordan (Jordan),like,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,11,Miss your birthday probably buy me a foreign (buy me a foreign),foreign,12,Still balling hard like Jordan (Jordan),balling,INNER,SLANT,cmu,MED,Y
+Sunday Morning,11,Miss your birthday probably buy me a foreign (buy me a foreign),Miss,12,Still balling hard like Jordan (Jordan),Still,INNER,SLANT,cmu,MED,Y
+Sunday Morning,11,Miss your birthday probably buy me a foreign (buy me a foreign),foreign,13,Walk in the bank with my 40 (my 40),Walk,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,11,Miss your birthday probably buy me a foreign (buy me a foreign),foreign,14,Everywhere I go they recording (recording),recording,END,SLANT,cmu,MED,Y
+Sunday Morning,11,Miss your birthday probably buy me a foreign (buy me a foreign),foreign,15,Stay down now I'm important (yeah yeah yeah),important,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,12,Still balling hard like Jordan (Jordan),balling,12,Still balling hard like Jordan (Jordan),Jordan,INNER,SLANT,cmu,MED,Y
+Sunday Morning,12,Still balling hard like Jordan (Jordan),balling,13,Walk in the bank with my 40 (my 40),Walk,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,12,Still balling hard like Jordan (Jordan),Jordan,13,Walk in the bank with my 40 (my 40),Walk,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,12,Still balling hard like Jordan (Jordan),Jordan,14,Everywhere I go they recording (recording),recording,END,SLANT,cmu,MED,Y
+Sunday Morning,12,Still balling hard like Jordan (Jordan),balling,14,Everywhere I go they recording (recording),recording,INNER,SLANT,cmu,MED,Y
+Sunday Morning,12,Still balling hard like Jordan (Jordan),Jordan,15,Stay down now I'm important (yeah yeah yeah),important,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,13,Walk in the bank with my 40 (my 40),Walk,14,Everywhere I go they recording (recording),recording,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,13,Walk in the bank with my 40 (my 40),Walk,15,Stay down now I'm important (yeah yeah yeah),important,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,13,Walk in the bank with my 40 (my 40),bank,16,Whole lotta blue racks (racks),racks,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,14,Everywhere I go they recording (recording),recording,15,Stay down now I'm important (yeah yeah yeah),important,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,14,Everywhere I go they recording (recording),go,16,Whole lotta blue racks (racks),Whole,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,15,Stay down now I'm important (yeah yeah yeah),down,15,Stay down now I'm important (yeah yeah yeah),now,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,16,Whole lotta blue racks (racks),racks,17,Bitches know we having money (ooh),having,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,16,Whole lotta blue racks (racks),Whole,17,Bitches know we having money (ooh),know,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,17,Bitches know we having money (ooh),having,19,"Foreign coup, Chanel, we stunting",stunting,INNER,PERFECT,spelling,MED,Y
+Sunday Morning,19,"Foreign coup, Chanel, we stunting",coup,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),soon,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,19,"Foreign coup, Chanel, we stunting",Foreign,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),all,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,19,"Foreign coup, Chanel, we stunting",stunting,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),Smoking,INNER,PERFECT,spelling,MED,Y
+Sunday Morning,19,"Foreign coup, Chanel, we stunting",Foreign,21,A couple birdies in their Bentleys (brrr) screaming fours up (fours up),fours,INNER,SLANT,cmu,MED,Y
+Sunday Morning,19,"Foreign coup, Chanel, we stunting",stunting,21,A couple birdies in their Bentleys (brrr) screaming fours up (fours up),screaming,INNER,PERFECT,spelling,MED,Y
+Sunday Morning,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),gold,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),roll,INNER,SLANT,cmu,MED,Y
+Sunday Morning,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),Smoking,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),gold,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),Smoking,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),roll,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),all,21,A couple birdies in their Bentleys (brrr) screaming fours up (fours up),fours,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),fuck,21,A couple birdies in their Bentleys (brrr) screaming fours up (fours up),couple,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),gold,22,Ain't no jelly I do Margiela,no,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),roll,22,Ain't no jelly I do Margiela,no,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),Smoking,22,Ain't no jelly I do Margiela,no,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,20,Smoking all this gold as soon as fuck I wanna roll up (soon as fuck),wanna,22,Ain't no jelly I do Margiela,Margiela,INNER,ASSONANCE,vowel,LOW,N
+Sunday Morning,22,Ain't no jelly I do Margiela,jelly,23,Piss on you no R. Kelly,Kelly,INNER,MULTI,multi,HIGH,Y
+Sunday Morning,22,Ain't no jelly I do Margiela,no,23,Piss on you no R. Kelly,no,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,22,Ain't no jelly I do Margiela,no jelly,23,Piss on you no R. Kelly,R Kelly,INNER,MULTI,multi,HIGH,Y
+Sunday Morning,22,Ain't no jelly I do Margiela,jelly,24,Eating like a beast up in these streets I got a large belly,belly,INNER,MULTI,multi,HIGH,Y
+Sunday Morning,22,Ain't no jelly I do Margiela,no jelly,24,Eating like a beast up in these streets I got a large belly,large belly,INNER,MULTI,multi,HIGH,Y
+Sunday Morning,23,Piss on you no R. Kelly,Kelly,24,Eating like a beast up in these streets I got a large belly,belly,END,MULTI,multi,HIGH,Y
+Sunday Morning,23,Piss on you no R. Kelly,R,24,Eating like a beast up in these streets I got a large belly,got,INNER,SLANT,cmu,MED,Y
+Sunday Morning,23,Piss on you no R. Kelly,R,24,Eating like a beast up in these streets I got a large belly,large,INNER,SLANT,cmu,MED,Y
+Sunday Morning,23,Piss on you no R. Kelly,R,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",got,INNER,SLANT,cmu,MED,Y
+Sunday Morning,23,Piss on you no R. Kelly,R,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",want,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,beast,24,Eating like a beast up in these streets I got a large belly,streets,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,beast,24,Eating like a beast up in these streets I got a large belly,these,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,Eating,24,Eating like a beast up in these streets I got a large belly,beast,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,Eating,24,Eating like a beast up in these streets I got a large belly,streets,INNER,SLANT,cmu,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,Eating,24,Eating like a beast up in these streets I got a large belly,these,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,got,24,Eating like a beast up in these streets I got a large belly,large,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,these,24,Eating like a beast up in these streets I got a large belly,streets,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,got,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",got,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,got,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",want,INNER,SLANT,cmu,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,large,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",got,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,large,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",want,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,24,Eating like a beast up in these streets I got a large belly,like,26,Niggas they be mad they think I'm doing some kind of magic (why),kind,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",all,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",all,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",cash,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",swag,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",want,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",got,INNER,SLANT,cmu,MED,Y
+Sunday Morning,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",swag,26,Niggas they be mad they think I'm doing some kind of magic (why),magic,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",cash,26,Niggas they be mad they think I'm doing some kind of magic (why),mad,INNER,SLANT,cmu,MED,Y
+Sunday Morning,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",cash,26,Niggas they be mad they think I'm doing some kind of magic (why),magic,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,25,"I want all the cash and I got all of the swag yeah (yeah, yeah)",swag,26,Niggas they be mad they think I'm doing some kind of magic (why),mad,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,26,Niggas they be mad they think I'm doing some kind of magic (why),mad,26,Niggas they be mad they think I'm doing some kind of magic (why),magic,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,26,Niggas they be mad they think I'm doing some kind of magic (why),kind,27,"Ice on, when I hit that scene and shit the lights off",Ice,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,26,Niggas they be mad they think I'm doing some kind of magic (why),kind,27,"Ice on, when I hit that scene and shit the lights off",lights,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,26,Niggas they be mad they think I'm doing some kind of magic (why),think,27,"Ice on, when I hit that scene and shit the lights off",hit,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,26,Niggas they be mad they think I'm doing some kind of magic (why),think,27,"Ice on, when I hit that scene and shit the lights off",shit,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,26,Niggas they be mad they think I'm doing some kind of magic (why),kind,28,I'm piped up flyer than a kite I'm on a flight though,flight,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,26,Niggas they be mad they think I'm doing some kind of magic (why),kind,28,I'm piped up flyer than a kite I'm on a flight though,flyer,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,26,Niggas they be mad they think I'm doing some kind of magic (why),kind,28,I'm piped up flyer than a kite I'm on a flight though,kite,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,26,Niggas they be mad they think I'm doing some kind of magic (why),kind,28,I'm piped up flyer than a kite I'm on a flight though,piped,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",hit,27,"Ice on, when I hit that scene and shit the lights off",shit,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",Ice,27,"Ice on, when I hit that scene and shit the lights off",lights,INNER,SLANT,cmu,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",Ice,28,I'm piped up flyer than a kite I'm on a flight though,flight,INNER,SLANT,cmu,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",Ice,28,I'm piped up flyer than a kite I'm on a flight though,flyer,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",Ice,28,I'm piped up flyer than a kite I'm on a flight though,kite,INNER,SLANT,cmu,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",Ice,28,I'm piped up flyer than a kite I'm on a flight though,piped,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",lights,28,I'm piped up flyer than a kite I'm on a flight though,flight,INNER,SLANT,cmu,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",lights,28,I'm piped up flyer than a kite I'm on a flight though,flyer,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",lights,28,I'm piped up flyer than a kite I'm on a flight though,kite,INNER,SLANT,cmu,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",lights,28,I'm piped up flyer than a kite I'm on a flight though,piped,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",lights,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,END,REPEAT,spelling,HIGH,N
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",Ice,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,INNER,SLANT,cmu,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",Ice,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,INNER,SLANT,cmu,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",Ice,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,INNER,SLANT,cmu,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",lights,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",lights,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,27,"Ice on, when I hit that scene and shit the lights off",when,29,Gotta pipe down if you get too loud I'll knock your lights out,get,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flyer,28,I'm piped up flyer than a kite I'm on a flight though,flight,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flyer,28,I'm piped up flyer than a kite I'm on a flight though,kite,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,kite,28,I'm piped up flyer than a kite I'm on a flight though,flight,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,piped,28,I'm piped up flyer than a kite I'm on a flight though,flight,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,piped,28,I'm piped up flyer than a kite I'm on a flight though,flyer,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,piped,28,I'm piped up flyer than a kite I'm on a flight though,kite,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flight,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flight,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flight,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flyer,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flyer,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flyer,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,kite,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,kite,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,kite,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,piped,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,piped,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,piped,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,though,30,Wanna fight now I got some guys and they go *blow blow*,blow,END,PERFECT,cmu,HIGH,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flight,30,Wanna fight now I got some guys and they go *blow blow*,fight,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flight,30,Wanna fight now I got some guys and they go *blow blow*,guys,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flyer,30,Wanna fight now I got some guys and they go *blow blow*,fight,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,flyer,30,Wanna fight now I got some guys and they go *blow blow*,guys,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,kite,30,Wanna fight now I got some guys and they go *blow blow*,fight,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,kite,30,Wanna fight now I got some guys and they go *blow blow*,guys,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,piped,30,Wanna fight now I got some guys and they go *blow blow*,fight,INNER,SLANT,cmu,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,piped,30,Wanna fight now I got some guys and they go *blow blow*,guys,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,though,30,Wanna fight now I got some guys and they go *blow blow*,blow,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,though,30,Wanna fight now I got some guys and they go *blow blow*,go,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,28,I'm piped up flyer than a kite I'm on a flight though,though,32,Real street nigga I ain't fighting no,no,END,PERFECT,cmu,HIGH,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,down,29,Gotta pipe down if you get too loud I'll knock your lights out,loud,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,Gotta,29,Gotta pipe down if you get too loud I'll knock your lights out,knock,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,down,30,Wanna fight now I got some guys and they go *blow blow*,now,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,Gotta,30,Wanna fight now I got some guys and they go *blow blow*,got,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,Gotta,30,Wanna fight now I got some guys and they go *blow blow*,Wanna,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,30,Wanna fight now I got some guys and they go *blow blow*,fight,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,I'll,30,Wanna fight now I got some guys and they go *blow blow*,guys,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,knock,30,Wanna fight now I got some guys and they go *blow blow*,got,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,knock,30,Wanna fight now I got some guys and they go *blow blow*,Wanna,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,30,Wanna fight now I got some guys and they go *blow blow*,fight,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,lights,30,Wanna fight now I got some guys and they go *blow blow*,guys,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,loud,30,Wanna fight now I got some guys and they go *blow blow*,now,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,30,Wanna fight now I got some guys and they go *blow blow*,fight,INNER,SLANT,cmu,MED,Y
+Sunday Morning,29,Gotta pipe down if you get too loud I'll knock your lights out,pipe,30,Wanna fight now I got some guys and they go *blow blow*,guys,INNER,SLANT,cmu,MED,Y
+Sunday Morning,30,Wanna fight now I got some guys and they go *blow blow*,blow,30,Wanna fight now I got some guys and they go *blow blow*,blow,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,30,Wanna fight now I got some guys and they go *blow blow*,fight,30,Wanna fight now I got some guys and they go *blow blow*,guys,INNER,SLANT,cmu,MED,Y
+Sunday Morning,30,Wanna fight now I got some guys and they go *blow blow*,go,30,Wanna fight now I got some guys and they go *blow blow*,blow,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,30,Wanna fight now I got some guys and they go *blow blow*,Wanna,30,Wanna fight now I got some guys and they go *blow blow*,got,INNER,SLANT,cmu,MED,Y
+Sunday Morning,30,Wanna fight now I got some guys and they go *blow blow*,blow,32,Real street nigga I ain't fighting no,no,END,PERFECT,cmu,HIGH,Y
+Sunday Morning,30,Wanna fight now I got some guys and they go *blow blow*,blow,32,Real street nigga I ain't fighting no,no,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,30,Wanna fight now I got some guys and they go *blow blow*,fight,32,Real street nigga I ain't fighting no,fighting,INNER,SLANT,cmu,MED,Y
+Sunday Morning,30,Wanna fight now I got some guys and they go *blow blow*,go,32,Real street nigga I ain't fighting no,no,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,30,Wanna fight now I got some guys and they go *blow blow*,guys,32,Real street nigga I ain't fighting no,fighting,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,31,Ran my stacks up,Ran,31,Ran my stacks up,stacks,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,31,Ran my stacks up,stacks,34,Fuck you think we chances,chances,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,32,Real street nigga I ain't fighting no,Real,32,Real street nigga I ain't fighting no,street,INNER,SLANT,cmu,MED,Y
+Sunday Morning,32,Real street nigga I ain't fighting no,no,33,We don't do one on one (no),don't,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,33,We don't do one on one (no),one,33,We don't do one on one (no),one,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,33,We don't do one on one (no),one,34,Fuck you think we chances,Fuck,INNER,SLANT,cmu,MED,Y
+Sunday Morning,33,We don't do one on one (no),one,35,Riding with all these guns,guns,END,SLANT,cmu,MED,Y
+Sunday Morning,33,We don't do one on one (no),one,35,Riding with all these guns,guns,INNER,SLANT,cmu,MED,Y
+Sunday Morning,33,We don't do one on one (no),one,37,But I keep these mags and I got this drum yeah,drum,END,SLANT,cmu,MED,Y
+Sunday Morning,34,Fuck you think we chances,Fuck,35,Riding with all these guns,guns,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,35,Riding with all these guns,guns,37,But I keep these mags and I got this drum yeah,drum,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,35,Riding with all these guns,these,37,But I keep these mags and I got this drum yeah,keep,INNER,SLANT,cmu,MED,Y
+Sunday Morning,35,Riding with all these guns,these,37,But I keep these mags and I got this drum yeah,these,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,35,Riding with all these guns,guns,39,But he get a X pill he going dumb yeah,dumb,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,36,I ain't never played the flute,ain't,36,I ain't never played the flute,played,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,36,I ain't never played the flute,flute,38,Young nigga just finish high school,school,END,SLANT,cmu,MED,Y
+Sunday Morning,37,But I keep these mags and I got this drum yeah,keep,37,But I keep these mags and I got this drum yeah,these,INNER,SLANT,cmu,MED,Y
+Sunday Morning,37,But I keep these mags and I got this drum yeah,drum,38,Young nigga just finish high school,Young,INNER,SLANT,cmu,MED,Y
+Sunday Morning,37,But I keep these mags and I got this drum yeah,drum,39,But he get a X pill he going dumb yeah,dumb,END,PERFECT,cmu,HIGH,Y
+Sunday Morning,38,Young nigga just finish high school,finish,39,But he get a X pill he going dumb yeah,pill,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,38,Young nigga just finish high school,Young,39,But he get a X pill he going dumb yeah,dumb,INNER,SLANT,cmu,MED,Y
+Sunday Morning,38,Young nigga just finish high school,finish,40,I see him watching tryna get the recipe,him,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,get,39,But he get a X pill he going dumb yeah,X,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,get,40,I see him watching tryna get the recipe,get,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,39,But he get a X pill he going dumb yeah,get,40,I see him watching tryna get the recipe,recipe,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,pill,40,I see him watching tryna get the recipe,him,INNER,SLANT,cmu,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,X,40,I see him watching tryna get the recipe,get,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,X,40,I see him watching tryna get the recipe,recipe,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,get,41,I'll be god damned if I let him get the best of me,best,INNER,SLANT,cmu,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,get,41,I'll be god damned if I let him get the best of me,get,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,39,But he get a X pill he going dumb yeah,get,41,I'll be god damned if I let him get the best of me,let,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,pill,41,I'll be god damned if I let him get the best of me,him,INNER,SLANT,cmu,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,pill,41,I'll be god damned if I let him get the best of me,I'll,INNER,SLANT,spelling,LOW,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,X,41,I'll be god damned if I let him get the best of me,best,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,X,41,I'll be god damned if I let him get the best of me,get,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,39,But he get a X pill he going dumb yeah,X,41,I'll be god damned if I let him get the best of me,let,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,get,40,I see him watching tryna get the recipe,recipe,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,recipe,41,I'll be god damned if I let him get the best of me,best,END,SLANT,cmu,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,get,41,I'll be god damned if I let him get the best of me,best,INNER,SLANT,cmu,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,get,41,I'll be god damned if I let him get the best of me,get,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,40,I see him watching tryna get the recipe,get,41,I'll be god damned if I let him get the best of me,let,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,40,I see him watching tryna get the recipe,him,41,I'll be god damned if I let him get the best of me,him,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,40,I see him watching tryna get the recipe,recipe,41,I'll be god damned if I let him get the best of me,get,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,recipe,41,I'll be god damned if I let him get the best of me,let,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,watching,41,I'll be god damned if I let him get the best of me,god,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,recipe,42,Money on me no regular pedestrian,pedestrian,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,get,42,Money on me no regular pedestrian,pedestrian,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,get,42,Money on me no regular pedestrian,regular,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,recipe,42,Money on me no regular pedestrian,regular,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,40,I see him watching tryna get the recipe,recipe,43,I put that dope in pots and make it specialty,specialty,END,SLANT,cmu,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,get,41,I'll be god damned if I let him get the best of me,best,INNER,SLANT,cmu,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,let,41,I'll be god damned if I let him get the best of me,best,INNER,SLANT,cmu,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,let,41,I'll be god damned if I let him get the best of me,get,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,best,42,Money on me no regular pedestrian,pedestrian,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,best,42,Money on me no regular pedestrian,regular,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,get,42,Money on me no regular pedestrian,pedestrian,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,get,42,Money on me no regular pedestrian,regular,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,let,42,Money on me no regular pedestrian,pedestrian,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,let,42,Money on me no regular pedestrian,regular,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,best,43,I put that dope in pots and make it specialty,specialty,END,SLANT,cmu,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,get,43,I put that dope in pots and make it specialty,specialty,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,god,43,I put that dope in pots and make it specialty,pots,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,41,I'll be god damned if I let him get the best of me,let,43,I put that dope in pots and make it specialty,specialty,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,42,Money on me no regular pedestrian,regular,42,Money on me no regular pedestrian,pedestrian,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,42,Money on me no regular pedestrian,pedestrian,43,I put that dope in pots and make it specialty,specialty,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,42,Money on me no regular pedestrian,no,43,I put that dope in pots and make it specialty,dope,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,42,Money on me no regular pedestrian,regular,43,I put that dope in pots and make it specialty,specialty,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,42,Money on me no regular pedestrian,Money,44,I pay security ain't no touching me,touching,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,42,Money on me no regular pedestrian,no,44,I pay security ain't no touching me,no,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,43,I put that dope in pots and make it specialty,dope,44,I pay security ain't no touching me,no,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,43,I put that dope in pots and make it specialty,make,44,I pay security ain't no touching me,ain't,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,43,I put that dope in pots and make it specialty,make,44,I pay security ain't no touching me,pay,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,43,I put that dope in pots and make it specialty,put,44,I pay security ain't no touching me,security,INNER,SLANT,cmu,MED,Y
+Sunday Morning,43,I put that dope in pots and make it specialty,specialty,45,Everything guaranteed when you fucking me,when,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,44,I pay security ain't no touching me,pay,44,I pay security ain't no touching me,ain't,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,44,I pay security ain't no touching me,touching,45,Everything guaranteed when you fucking me,fucking,END,SLANT,cmu,MED,Y
+Sunday Morning,44,I pay security ain't no touching me,touching,45,Everything guaranteed when you fucking me,Everything,INNER,PERFECT,spelling,MED,Y
+Sunday Morning,44,I pay security ain't no touching me,touching,46,Everything overseas it's a luxury,luxury,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,44,I pay security ain't no touching me,touching,46,Everything overseas it's a luxury,Everything,INNER,PERFECT,spelling,MED,Y
+Sunday Morning,44,I pay security ain't no touching me,touching,47,She just mad because she ain't get no nut from me,nut,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,45,Everything guaranteed when you fucking me,fucking,46,Everything overseas it's a luxury,luxury,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,45,Everything guaranteed when you fucking me,Everything,46,Everything overseas it's a luxury,Everything,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,45,Everything guaranteed when you fucking me,guaranteed,46,Everything overseas it's a luxury,overseas,INNER,SLANT,cmu,MED,Y
+Sunday Morning,45,Everything guaranteed when you fucking me,fucking,47,She just mad because she ain't get no nut from me,nut,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,45,Everything guaranteed when you fucking me,when,47,She just mad because she ain't get no nut from me,get,INNER,SLANT,cmu,MED,Y
+Sunday Morning,45,Everything guaranteed when you fucking me,fucking,48,It ain't no IM team we on that fuckery,fuckery,END,SLANT,spelling,LOW,Y
+Sunday Morning,45,Everything guaranteed when you fucking me,fucking,49,Bitch I'm a meal ticket ain't no cooking me,cooking,END,PERFECT,spelling,MED,Y
+Sunday Morning,46,Everything overseas it's a luxury,luxury,47,She just mad because she ain't get no nut from me,nut,END,ASSONANCE,vowel,MED,Y
+Sunday Morning,46,Everything overseas it's a luxury,luxury,48,It ain't no IM team we on that fuckery,fuckery,END,ASSONANCE,vowel,LOW,N
+Sunday Morning,46,Everything overseas it's a luxury,overseas,48,It ain't no IM team we on that fuckery,team,INNER,SLANT,cmu,MED,Y
+Sunday Morning,47,She just mad because she ain't get no nut from me,ain't,48,It ain't no IM team we on that fuckery,ain't,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,47,She just mad because she ain't get no nut from me,no,48,It ain't no IM team we on that fuckery,no,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,47,She just mad because she ain't get no nut from me,ain't,49,Bitch I'm a meal ticket ain't no cooking me,ain't,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,47,She just mad because she ain't get no nut from me,no,49,Bitch I'm a meal ticket ain't no cooking me,no,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,48,It ain't no IM team we on that fuckery,ain't,49,Bitch I'm a meal ticket ain't no cooking me,ain't,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,48,It ain't no IM team we on that fuckery,no,49,Bitch I'm a meal ticket ain't no cooking me,no,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,48,It ain't no IM team we on that fuckery,team,49,Bitch I'm a meal ticket ain't no cooking me,meal,INNER,SLANT,cmu,MED,Y
+Sunday Morning,48,It ain't no IM team we on that fuckery,fuckery,50,Bitch you can't come with me it ain't no company,company,END,ASSONANCE,vowel,LOW,N
+Sunday Morning,48,It ain't no IM team we on that fuckery,ain't,50,Bitch you can't come with me it ain't no company,ain't,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,48,It ain't no IM team we on that fuckery,no,50,Bitch you can't come with me it ain't no company,no,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,48,It ain't no IM team we on that fuckery,team,50,Bitch you can't come with me it ain't no company,company,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,48,It ain't no IM team we on that fuckery,fuckery,51,How you a boss and you don't own a company,company,END,ASSONANCE,vowel,LOW,N
+Sunday Morning,49,Bitch I'm a meal ticket ain't no cooking me,Bitch,49,Bitch I'm a meal ticket ain't no cooking me,ticket,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,49,Bitch I'm a meal ticket ain't no cooking me,ain't,50,Bitch you can't come with me it ain't no company,ain't,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,49,Bitch I'm a meal ticket ain't no cooking me,Bitch,50,Bitch you can't come with me it ain't no company,Bitch,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,49,Bitch I'm a meal ticket ain't no cooking me,meal,50,Bitch you can't come with me it ain't no company,company,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,49,Bitch I'm a meal ticket ain't no cooking me,no,50,Bitch you can't come with me it ain't no company,no,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,49,Bitch I'm a meal ticket ain't no cooking me,ticket,50,Bitch you can't come with me it ain't no company,Bitch,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,49,Bitch I'm a meal ticket ain't no cooking me,meal,51,How you a boss and you don't own a company,company,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,49,Bitch I'm a meal ticket ain't no cooking me,no,51,How you a boss and you don't own a company,don't,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,49,Bitch I'm a meal ticket ain't no cooking me,no,51,How you a boss and you don't own a company,own,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,50,Bitch you can't come with me it ain't no company,company,51,How you a boss and you don't own a company,company,END,REPEAT,spelling,HIGH,N
+Sunday Morning,50,Bitch you can't come with me it ain't no company,no,51,How you a boss and you don't own a company,don't,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,50,Bitch you can't come with me it ain't no company,no,51,How you a boss and you don't own a company,own,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,50,Bitch you can't come with me it ain't no company,Bitch,52,"Pussy good, ass fat that shit come for me",shit,INNER,SLANT,cmu,MED,Y
+Sunday Morning,50,Bitch you can't come with me it ain't no company,can't,52,"Pussy good, ass fat that shit come for me",ass,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,50,Bitch you can't come with me it ain't no company,can't,52,"Pussy good, ass fat that shit come for me",fat,INNER,SLANT,cmu,MED,Y
+Sunday Morning,50,Bitch you can't come with me it ain't no company,come,52,"Pussy good, ass fat that shit come for me",come,INNER,REPEAT,spelling,HIGH,N
+Sunday Morning,50,Bitch you can't come with me it ain't no company,company,53,"Wish a nigga would, I ain't no rapper b",b,END,PERFECT,cmu,HIGH,Y
+Sunday Morning,51,How you a boss and you don't own a company,don't,51,How you a boss and you don't own a company,own,INNER,SLANT,cmu,MED,Y
+Sunday Morning,51,How you a boss and you don't own a company,company,53,"Wish a nigga would, I ain't no rapper b",b,END,PERFECT,cmu,HIGH,Y
+Sunday Morning,51,How you a boss and you don't own a company,don't,53,"Wish a nigga would, I ain't no rapper b",no,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,51,How you a boss and you don't own a company,own,53,"Wish a nigga would, I ain't no rapper b",no,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",ass,52,"Pussy good, ass fat that shit come for me",fat,INNER,SLANT,cmu,MED,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",Pussy,52,"Pussy good, ass fat that shit come for me",good,INNER,SLANT,cmu,MED,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",ass,53,"Wish a nigga would, I ain't no rapper b",rapper,INNER,SLANT,cmu,MED,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",fat,53,"Wish a nigga would, I ain't no rapper b",rapper,INNER,SLANT,cmu,MED,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",good,53,"Wish a nigga would, I ain't no rapper b",would,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",Pussy,53,"Wish a nigga would, I ain't no rapper b",would,INNER,SLANT,cmu,MED,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",shit,53,"Wish a nigga would, I ain't no rapper b",nigga,INNER,SLANT,spelling,LOW,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",shit,53,"Wish a nigga would, I ain't no rapper b",Wish,INNER,SLANT,cmu,MED,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",ass,54,I be in the hood where all them trappers be,trappers,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",fat,54,I be in the hood where all them trappers be,trappers,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",good,54,I be in the hood where all them trappers be,hood,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,52,"Pussy good, ass fat that shit come for me",Pussy,54,I be in the hood where all them trappers be,hood,INNER,SLANT,cmu,MED,Y
+Sunday Morning,53,"Wish a nigga would, I ain't no rapper b",rapper,54,I be in the hood where all them trappers be,trappers,INNER,SLANT,cmu,MED,Y
+Sunday Morning,53,"Wish a nigga would, I ain't no rapper b",would,54,I be in the hood where all them trappers be,hood,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,53,"Wish a nigga would, I ain't no rapper b",b,55,Everywhere I go I'm keeping that strap with me,keeping,INNER,ASSONANCE,vowel,MED,Y
+Sunday Morning,53,"Wish a nigga would, I ain't no rapper b",no,55,Everywhere I go I'm keeping that strap with me,go,INNER,PERFECT,cmu,HIGH,Y
+Sunday Morning,53,"Wish a nigga would, I ain't no rapper b",rapper,55,Everywhere I go I'm keeping that strap with me,strap,INNER,SLANT,cmu,MED,Y
+Sunday Morning,54,I be in the hood where all them trappers be,trappers,55,Everywhere I go I'm keeping that strap with me,strap,END,SLANT,cmu,MED,Y
+Sunday Morning,54,I be in the hood where all them trappers be,where,55,Everywhere I go I'm keeping that strap with me,Everywhere,INNER,PERFECT,cmu,HIGH,Y

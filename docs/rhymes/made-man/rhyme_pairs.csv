@@ -1,0 +1,230 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Big Money,1,"Come on, come on, come on",Come,1,"Come on, come on, come on",come,INNER,REPEAT,spelling,HIGH,N
+Big Money,1,"Come on, come on, come on",come,2,"I got—, I got big money",money,END,SLANT,cmu,MED,Y
+Big Money,1,"Come on, come on, come on",Come,2,"I got—, I got big money",money,INNER,SLANT,cmu,MED,Y
+Big Money,1,"Come on, come on, come on",come,5,"Big money, Big money (Racks)",money,END,SLANT,cmu,MED,Y
+Big Money,2,"I got—, I got big money",got,2,"I got—, I got big money",got,INNER,REPEAT,spelling,HIGH,N
+Big Money,2,"I got—, I got big money",big,4,Put that shit up,shit,INNER,SLANT,cmu,MED,Y
+Big Money,2,"I got—, I got big money",money,5,"Big money, Big money (Racks)",money,END,REPEAT,spelling,HIGH,N
+Big Money,4,Put that shit up,shit,5,"Big money, Big money (Racks)",Big,INNER,SLANT,cmu,MED,Y
+Big Money,4,Put that shit up,shit,6,Put that lil' shit up (Put that lil' shit up),shit,END,REPEAT,spelling,HIGH,N
+Big Money,4,Put that shit up,Put,6,Put that lil' shit up (Put that lil' shit up),Put,INNER,REPEAT,spelling,HIGH,N
+Big Money,4,Put that shit up,shit,6,Put that lil' shit up (Put that lil' shit up),lil,INNER,SLANT,cmu,MED,Y
+Big Money,5,"Big money, Big money (Racks)",Big,5,"Big money, Big money (Racks)",Big,INNER,REPEAT,spelling,HIGH,N
+Big Money,5,"Big money, Big money (Racks)",money,5,"Big money, Big money (Racks)",money,INNER,REPEAT,spelling,HIGH,N
+Big Money,5,"Big money, Big money (Racks)",Big,6,Put that lil' shit up (Put that lil' shit up),lil,INNER,SLANT,cmu,MED,Y
+Big Money,5,"Big money, Big money (Racks)",Big,6,Put that lil' shit up (Put that lil' shit up),shit,INNER,SLANT,cmu,MED,Y
+Big Money,5,"Big money, Big money (Racks)",money,7,"Uh, my diamonds they coming from Elliot (Avianne)",coming,INNER,SLANT,cmu,MED,Y
+Big Money,6,Put that lil' shit up (Put that lil' shit up),lil,6,Put that lil' shit up (Put that lil' shit up),shit,INNER,SLANT,cmu,MED,Y
+Big Money,6,Put that lil' shit up (Put that lil' shit up),shit,9,"Jumping in the 'Rarri, fishtailing it (Skrrt)",fishtailing,END,PERFECT,cmu,HIGH,Y
+Big Money,7,"Uh, my diamonds they coming from Elliot (Avianne)",coming,9,"Jumping in the 'Rarri, fishtailing it (Skrrt)",Jumping,INNER,SLANT,cmu,MED,Y
+Big Money,7,"Uh, my diamonds they coming from Elliot (Avianne)",Elliot,10,"Bricks, you know we be pedaling (Pedaling)",pedaling,END,ASSONANCE,vowel,MED,Y
+Big Money,7,"Uh, my diamonds they coming from Elliot (Avianne)",Elliot,11,All of my niggas sip medicine (Medicine),medicine,END,ASSONANCE,vowel,MED,Y
+Big Money,8,I trapped in the game and I'm nailing it (Nailing it),game,8,I trapped in the game and I'm nailing it (Nailing it),nailing,INNER,ASSONANCE,vowel,MED,Y
+Big Money,8,I trapped in the game and I'm nailing it (Nailing it),nailing,9,"Jumping in the 'Rarri, fishtailing it (Skrrt)",fishtailing,END,PERFECT,spelling,MED,Y
+Big Money,8,I trapped in the game and I'm nailing it (Nailing it),nailing,10,"Bricks, you know we be pedaling (Pedaling)",pedaling,END,PERFECT,spelling,MED,Y
+Big Money,9,"Jumping in the 'Rarri, fishtailing it (Skrrt)",fishtailing,10,"Bricks, you know we be pedaling (Pedaling)",pedaling,END,PERFECT,spelling,MED,Y
+Big Money,9,"Jumping in the 'Rarri, fishtailing it (Skrrt)",fishtailing,10,"Bricks, you know we be pedaling (Pedaling)",Bricks,INNER,ASSONANCE,vowel,MED,Y
+Big Money,9,"Jumping in the 'Rarri, fishtailing it (Skrrt)",fishtailing,11,All of my niggas sip medicine (Medicine),sip,INNER,SLANT,cmu,MED,Y
+Big Money,9,"Jumping in the 'Rarri, fishtailing it (Skrrt)",fishtailing,12,Thinking we came from Michigan,Michigan,END,ASSONANCE,vowel,MED,Y
+Big Money,10,"Bricks, you know we be pedaling (Pedaling)",pedaling,11,All of my niggas sip medicine (Medicine),medicine,END,SLANT,cmu,MED,Y
+Big Money,10,"Bricks, you know we be pedaling (Pedaling)",Bricks,11,All of my niggas sip medicine (Medicine),niggas,INNER,SLANT,spelling,LOW,Y
+Big Money,10,"Bricks, you know we be pedaling (Pedaling)",Bricks,11,All of my niggas sip medicine (Medicine),sip,INNER,ASSONANCE,vowel,MED,Y
+Big Money,10,"Bricks, you know we be pedaling (Pedaling)",Bricks,12,Thinking we came from Michigan,Michigan,INNER,ASSONANCE,vowel,MED,Y
+Big Money,10,"Bricks, you know we be pedaling (Pedaling)",Bricks,12,Thinking we came from Michigan,Thinking,INNER,ASSONANCE,vowel,MED,Y
+Big Money,10,"Bricks, you know we be pedaling (Pedaling)",pedaling,14,"Lost it, but got it, I'm back again (Back again)",again,END,ASSONANCE,vowel,MED,Y
+Big Money,11,All of my niggas sip medicine (Medicine),niggas,12,Thinking we came from Michigan,Michigan,INNER,ASSONANCE,vowel,LOW,N
+Big Money,11,All of my niggas sip medicine (Medicine),sip,12,Thinking we came from Michigan,Michigan,INNER,ASSONANCE,vowel,MED,Y
+Big Money,11,All of my niggas sip medicine (Medicine),sip,12,Thinking we came from Michigan,Thinking,INNER,ASSONANCE,vowel,MED,Y
+Big Money,11,All of my niggas sip medicine (Medicine),medicine,14,"Lost it, but got it, I'm back again (Back again)",again,END,ASSONANCE,vowel,MED,Y
+Big Money,11,All of my niggas sip medicine (Medicine),medicine,15,20k spent in the mall again (Yeah),again,END,ASSONANCE,vowel,MED,Y
+Big Money,12,Thinking we came from Michigan,Thinking,12,Thinking we came from Michigan,Michigan,INNER,ASSONANCE,vowel,MED,Y
+Big Money,12,Thinking we came from Michigan,Michigan,16,"Bigger the bag, the bigger the risk (Risk)",risk,END,ASSONANCE,vowel,MED,Y
+Big Money,13,"How the price comin' in, comin' in, comin' in, comin' in",comin,13,"How the price comin' in, comin' in, comin' in, comin' in",comin,INNER,REPEAT,spelling,HIGH,N
+Big Money,14,"Lost it, but got it, I'm back again (Back again)",again,15,20k spent in the mall again (Yeah),again,END,REPEAT,spelling,HIGH,N
+Big Money,14,"Lost it, but got it, I'm back again (Back again)",again,15,20k spent in the mall again (Yeah),spent,INNER,SLANT,cmu,MED,Y
+Big Money,14,"Lost it, but got it, I'm back again (Back again)",Lost,15,20k spent in the mall again (Yeah),mall,INNER,ASSONANCE,vowel,MED,Y
+Big Money,14,"Lost it, but got it, I'm back again (Back again)",back,16,"Bigger the bag, the bigger the risk (Risk)",bag,INNER,SLANT,cmu,MED,Y
+Big Money,15,20k spent in the mall again (Yeah),spent,15,20k spent in the mall again (Yeah),again,INNER,SLANT,cmu,MED,Y
+Big Money,16,"Bigger the bag, the bigger the risk (Risk)",Bigger,16,"Bigger the bag, the bigger the risk (Risk)",bigger,INNER,REPEAT,spelling,HIGH,N
+Big Money,16,"Bigger the bag, the bigger the risk (Risk)",Bigger,16,"Bigger the bag, the bigger the risk (Risk)",risk,INNER,ASSONANCE,vowel,MED,Y
+Big Money,16,"Bigger the bag, the bigger the risk (Risk)",risk,17,"She digging my style, I'm fucking your bitch (Bitch)",bitch,END,ASSONANCE,vowel,MED,Y
+Big Money,16,"Bigger the bag, the bigger the risk (Risk)",Bigger,17,"She digging my style, I'm fucking your bitch (Bitch)",bitch,INNER,SLANT,cmu,MED,Y
+Big Money,16,"Bigger the bag, the bigger the risk (Risk)",Bigger,17,"She digging my style, I'm fucking your bitch (Bitch)",digging,INNER,SLANT,cmu,MED,Y
+Big Money,16,"Bigger the bag, the bigger the risk (Risk)",risk,17,"She digging my style, I'm fucking your bitch (Bitch)",digging,INNER,ASSONANCE,vowel,MED,Y
+Big Money,16,"Bigger the bag, the bigger the risk (Risk)",risk,18,"You know that I'm on, she know that I'm rich",rich,END,ASSONANCE,vowel,MED,Y
+Big Money,16,"Bigger the bag, the bigger the risk (Risk)",Bigger,18,"You know that I'm on, she know that I'm rich",rich,INNER,SLANT,cmu,MED,Y
+Big Money,17,"She digging my style, I'm fucking your bitch (Bitch)",digging,17,"She digging my style, I'm fucking your bitch (Bitch)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Big Money,17,"She digging my style, I'm fucking your bitch (Bitch)",bitch,18,"You know that I'm on, she know that I'm rich",rich,END,PERFECT,cmu,HIGH,Y
+Big Money,17,"She digging my style, I'm fucking your bitch (Bitch)",digging,18,"You know that I'm on, she know that I'm rich",rich,INNER,ASSONANCE,vowel,MED,Y
+Big Money,17,"She digging my style, I'm fucking your bitch (Bitch)",bitch,19,"Call on my phone, Cali' flights, bitch, I'm gone",bitch,INNER,REPEAT,spelling,HIGH,N
+Big Money,17,"She digging my style, I'm fucking your bitch (Bitch)",digging,19,"Call on my phone, Cali' flights, bitch, I'm gone",bitch,INNER,ASSONANCE,vowel,MED,Y
+Big Money,17,"She digging my style, I'm fucking your bitch (Bitch)",style,19,"Call on my phone, Cali' flights, bitch, I'm gone",flights,INNER,ASSONANCE,vowel,MED,Y
+Big Money,18,"You know that I'm on, she know that I'm rich",know,18,"You know that I'm on, she know that I'm rich",know,INNER,REPEAT,spelling,HIGH,N
+Big Money,18,"You know that I'm on, she know that I'm rich",know,19,"Call on my phone, Cali' flights, bitch, I'm gone",phone,INNER,ASSONANCE,vowel,MED,Y
+Big Money,18,"You know that I'm on, she know that I'm rich",rich,19,"Call on my phone, Cali' flights, bitch, I'm gone",bitch,INNER,PERFECT,cmu,HIGH,Y
+Big Money,18,"You know that I'm on, she know that I'm rich",know,20,Money won't leave me 'lone,'lone,INNER,ASSONANCE,vowel,MED,Y
+Big Money,18,"You know that I'm on, she know that I'm rich",know,20,Money won't leave me 'lone,won't,INNER,ASSONANCE,vowel,MED,Y
+Big Money,19,"Call on my phone, Cali' flights, bitch, I'm gone",Call,19,"Call on my phone, Cali' flights, bitch, I'm gone",gone,INNER,SLANT,cmu,MED,Y
+Big Money,19,"Call on my phone, Cali' flights, bitch, I'm gone",phone,20,Money won't leave me 'lone,'lone,INNER,PERFECT,cmu,HIGH,Y
+Big Money,19,"Call on my phone, Cali' flights, bitch, I'm gone",phone,20,Money won't leave me 'lone,won't,INNER,SLANT,cmu,MED,Y
+Big Money,19,"Call on my phone, Cali' flights, bitch, I'm gone",gone,21,"Hatin', I'll do you wrong",wrong,END,SLANT,cmu,MED,Y
+Big Money,19,"Call on my phone, Cali' flights, bitch, I'm gone",Call,21,"Hatin', I'll do you wrong",wrong,INNER,SLANT,cmu,MED,Y
+Big Money,19,"Call on my phone, Cali' flights, bitch, I'm gone",flights,21,"Hatin', I'll do you wrong",I'll,INNER,ASSONANCE,vowel,MED,Y
+Big Money,20,Money won't leave me 'lone,won't,20,Money won't leave me 'lone,'lone,INNER,SLANT,cmu,MED,Y
+Big Money,20,Money won't leave me 'lone,'lone,22,Big bag coming home,home,END,SLANT,cmu,MED,Y
+Big Money,20,Money won't leave me 'lone,Money,22,Big bag coming home,coming,INNER,SLANT,cmu,MED,Y
+Big Money,20,Money won't leave me 'lone,won't,22,Big bag coming home,home,INNER,ASSONANCE,vowel,MED,Y
+Big Money,20,Money won't leave me 'lone,'lone,23,Nigga while on the phone (Yeah),phone,END,PERFECT,cmu,HIGH,Y
+Big Money,21,"Hatin', I'll do you wrong",I'll,23,Nigga while on the phone (Yeah),while,INNER,PERFECT,cmu,HIGH,Y
+Big Money,22,Big bag coming home,home,23,Nigga while on the phone (Yeah),phone,END,SLANT,cmu,MED,Y
+Big Money,22,Big bag coming home,Big,23,Nigga while on the phone (Yeah),Nigga,INNER,SLANT,spelling,LOW,Y
+Big Money,22,Big bag coming home,Big,24,Young rich nigga on,rich,INNER,SLANT,cmu,MED,Y
+Big Money,22,Big bag coming home,coming,24,Young rich nigga on,Young,INNER,SLANT,cmu,MED,Y
+Big Money,23,Nigga while on the phone (Yeah),Nigga,24,Young rich nigga on,nigga,INNER,REPEAT,spelling,HIGH,N
+Big Money,24,Young rich nigga on,Young,25,Monkey nuts on the Drac',Monkey,INNER,SLANT,cmu,MED,Y
+Big Money,24,Young rich nigga on,Young,25,Monkey nuts on the Drac',nuts,INNER,ASSONANCE,vowel,MED,Y
+Big Money,24,Young rich nigga on,Young,26,Hundred rounds to your face,Hundred,INNER,ASSONANCE,vowel,MED,Y
+Big Money,25,Monkey nuts on the Drac',Monkey,25,Monkey nuts on the Drac',nuts,INNER,ASSONANCE,vowel,MED,Y
+Big Money,25,Monkey nuts on the Drac',Monkey,26,Hundred rounds to your face,Hundred,INNER,ASSONANCE,vowel,MED,Y
+Big Money,25,Monkey nuts on the Drac',nuts,26,Hundred rounds to your face,Hundred,INNER,ASSONANCE,vowel,MED,Y
+Big Money,26,Hundred rounds to your face,face,27,Nigga been getting cake,cake,END,SLANT,cmu,MED,Y
+Big Money,26,Hundred rounds to your face,face,28,Grind on can't wait,wait,END,SLANT,cmu,MED,Y
+Big Money,26,Hundred rounds to your face,face,29,Copped the house with the lake,lake,END,SLANT,cmu,MED,Y
+Big Money,26,Hundred rounds to your face,face,30,Broke niggas can't relate,relate,END,SLANT,cmu,MED,Y
+Big Money,27,Nigga been getting cake,cake,28,Grind on can't wait,wait,END,SLANT,cmu,MED,Y
+Big Money,27,Nigga been getting cake,cake,29,Copped the house with the lake,lake,END,PERFECT,cmu,HIGH,Y
+Big Money,27,Nigga been getting cake,cake,30,Broke niggas can't relate,relate,END,SLANT,cmu,MED,Y
+Big Money,27,Nigga been getting cake,cake,31,"Bad bitches, paint their face",face,END,SLANT,cmu,MED,Y
+Big Money,28,Grind on can't wait,wait,29,Copped the house with the lake,lake,END,SLANT,cmu,MED,Y
+Big Money,28,Grind on can't wait,wait,30,Broke niggas can't relate,relate,END,PERFECT,cmu,HIGH,Y
+Big Money,28,Grind on can't wait,can't,30,Broke niggas can't relate,can't,INNER,REPEAT,spelling,HIGH,N
+Big Money,28,Grind on can't wait,wait,31,"Bad bitches, paint their face",face,END,SLANT,cmu,MED,Y
+Big Money,28,Grind on can't wait,wait,32,"Made Man been straight (Hey, hey)",straight,END,PERFECT,cmu,HIGH,Y
+Big Money,29,Copped the house with the lake,lake,30,Broke niggas can't relate,relate,END,SLANT,cmu,MED,Y
+Big Money,29,Copped the house with the lake,lake,31,"Bad bitches, paint their face",face,END,SLANT,cmu,MED,Y
+Big Money,29,Copped the house with the lake,lake,31,"Bad bitches, paint their face",paint,INNER,ASSONANCE,vowel,MED,Y
+Big Money,29,Copped the house with the lake,lake,32,"Made Man been straight (Hey, hey)",straight,END,SLANT,cmu,MED,Y
+Big Money,30,Broke niggas can't relate,relate,31,"Bad bitches, paint their face",face,END,SLANT,cmu,MED,Y
+Big Money,30,Broke niggas can't relate,can't,31,"Bad bitches, paint their face",Bad,INNER,ASSONANCE,vowel,MED,Y
+Big Money,30,Broke niggas can't relate,relate,31,"Bad bitches, paint their face",paint,INNER,SLANT,cmu,MED,Y
+Big Money,30,Broke niggas can't relate,relate,32,"Made Man been straight (Hey, hey)",straight,END,PERFECT,cmu,HIGH,Y
+Big Money,30,Broke niggas can't relate,can't,32,"Made Man been straight (Hey, hey)",Man,INNER,SLANT,cmu,MED,Y
+Big Money,30,Broke niggas can't relate,relate,32,"Made Man been straight (Hey, hey)",Made,INNER,SLANT,cmu,MED,Y
+Big Money,31,"Bad bitches, paint their face",paint,31,"Bad bitches, paint their face",face,INNER,ASSONANCE,vowel,MED,Y
+Big Money,31,"Bad bitches, paint their face",face,32,"Made Man been straight (Hey, hey)",straight,END,SLANT,cmu,MED,Y
+Big Money,31,"Bad bitches, paint their face",Bad,32,"Made Man been straight (Hey, hey)",Man,INNER,SLANT,cmu,MED,Y
+Big Money,31,"Bad bitches, paint their face",face,32,"Made Man been straight (Hey, hey)",Made,INNER,SLANT,cmu,MED,Y
+Big Money,31,"Bad bitches, paint their face",paint,32,"Made Man been straight (Hey, hey)",Made,INNER,ASSONANCE,vowel,MED,Y
+Big Money,31,"Bad bitches, paint their face",paint,32,"Made Man been straight (Hey, hey)",straight,INNER,SLANT,cmu,MED,Y
+Big Money,31,"Bad bitches, paint their face",Bad,33,"Yeah, I'm in the trap with the blue hundreds (Racks)",trap,INNER,SLANT,cmu,MED,Y
+Big Money,32,"Made Man been straight (Hey, hey)",Made,32,"Made Man been straight (Hey, hey)",straight,INNER,SLANT,cmu,MED,Y
+Big Money,32,"Made Man been straight (Hey, hey)",Man,33,"Yeah, I'm in the trap with the blue hundreds (Racks)",trap,INNER,SLANT,cmu,MED,Y
+Big Money,32,"Made Man been straight (Hey, hey)",Man,34,"Yeah, I've been ballin' for three summers (Ballin')",ballin,INNER,SLANT,cmu,MED,Y
+Big Money,33,"Yeah, I'm in the trap with the blue hundreds (Racks)",hundreds,34,"Yeah, I've been ballin' for three summers (Ballin')",summers,END,ASSONANCE,vowel,MED,Y
+Big Money,33,"Yeah, I'm in the trap with the blue hundreds (Racks)",trap,34,"Yeah, I've been ballin' for three summers (Ballin')",ballin,INNER,ASSONANCE,vowel,MED,Y
+Big Money,33,"Yeah, I'm in the trap with the blue hundreds (Racks)",trap,35,"No I can't fold, I don't dishonor (Fold)",can't,INNER,ASSONANCE,vowel,MED,Y
+Big Money,34,"Yeah, I've been ballin' for three summers (Ballin')",ballin,35,"No I can't fold, I don't dishonor (Fold)",can't,INNER,ASSONANCE,vowel,MED,Y
+Big Money,35,"No I can't fold, I don't dishonor (Fold)",fold,35,"No I can't fold, I don't dishonor (Fold)",don't,INNER,ASSONANCE,vowel,MED,Y
+Big Money,35,"No I can't fold, I don't dishonor (Fold)",No,35,"No I can't fold, I don't dishonor (Fold)",don't,INNER,ASSONANCE,vowel,MED,Y
+Big Money,35,"No I can't fold, I don't dishonor (Fold)",No,35,"No I can't fold, I don't dishonor (Fold)",fold,INNER,ASSONANCE,vowel,MED,Y
+Big Money,35,"No I can't fold, I don't dishonor (Fold)",dishonor,36,"Rocks on my wrist, I got big pointers (Rocks)",got,INNER,SLANT,cmu,MED,Y
+Big Money,35,"No I can't fold, I don't dishonor (Fold)",dishonor,36,"Rocks on my wrist, I got big pointers (Rocks)",Rocks,INNER,ASSONANCE,vowel,MED,Y
+Big Money,36,"Rocks on my wrist, I got big pointers (Rocks)",Rocks,36,"Rocks on my wrist, I got big pointers (Rocks)",got,INNER,ASSONANCE,vowel,MED,Y
+Big Money,36,"Rocks on my wrist, I got big pointers (Rocks)",wrist,36,"Rocks on my wrist, I got big pointers (Rocks)",big,INNER,ASSONANCE,vowel,MED,Y
+Big Money,36,"Rocks on my wrist, I got big pointers (Rocks)",big,37,"Fuck on your bitch, tape a brick on her (Thot)",bitch,INNER,SLANT,cmu,MED,Y
+Big Money,36,"Rocks on my wrist, I got big pointers (Rocks)",big,37,"Fuck on your bitch, tape a brick on her (Thot)",brick,INNER,SLANT,cmu,MED,Y
+Big Money,36,"Rocks on my wrist, I got big pointers (Rocks)",wrist,37,"Fuck on your bitch, tape a brick on her (Thot)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Big Money,36,"Rocks on my wrist, I got big pointers (Rocks)",wrist,37,"Fuck on your bitch, tape a brick on her (Thot)",brick,INNER,ASSONANCE,vowel,MED,Y
+Big Money,36,"Rocks on my wrist, I got big pointers (Rocks)",big,38,"Run with the pack, get a hit on you (Run)",hit,INNER,SLANT,cmu,MED,Y
+Big Money,36,"Rocks on my wrist, I got big pointers (Rocks)",wrist,38,"Run with the pack, get a hit on you (Run)",hit,INNER,SLANT,cmu,MED,Y
+Big Money,37,"Fuck on your bitch, tape a brick on her (Thot)",bitch,37,"Fuck on your bitch, tape a brick on her (Thot)",brick,INNER,SLANT,cmu,MED,Y
+Big Money,37,"Fuck on your bitch, tape a brick on her (Thot)",brick,38,"Run with the pack, get a hit on you (Run)",hit,END,SLANT,cmu,MED,Y
+Big Money,37,"Fuck on your bitch, tape a brick on her (Thot)",bitch,38,"Run with the pack, get a hit on you (Run)",hit,INNER,SLANT,cmu,MED,Y
+Big Money,37,"Fuck on your bitch, tape a brick on her (Thot)",Fuck,38,"Run with the pack, get a hit on you (Run)",Run,INNER,SLANT,cmu,MED,Y
+Big Money,37,"Fuck on your bitch, tape a brick on her (Thot)",bitch,39,Hop in the Wraith and I shit on 'em (Skrrt),shit,INNER,SLANT,cmu,MED,Y
+Big Money,37,"Fuck on your bitch, tape a brick on her (Thot)",brick,39,Hop in the Wraith and I shit on 'em (Skrrt),shit,INNER,SLANT,cmu,MED,Y
+Big Money,37,"Fuck on your bitch, tape a brick on her (Thot)",tape,39,Hop in the Wraith and I shit on 'em (Skrrt),Wraith,INNER,SLANT,spelling,LOW,Y
+Big Money,38,"Run with the pack, get a hit on you (Run)",hit,39,Hop in the Wraith and I shit on 'em (Skrrt),shit,INNER,PERFECT,cmu,HIGH,Y
+Big Money,38,"Run with the pack, get a hit on you (Run)",get,40,I do not respect your big homie (Uh),respect,INNER,SLANT,cmu,MED,Y
+Big Money,38,"Run with the pack, get a hit on you (Run)",hit,40,I do not respect your big homie (Uh),big,INNER,SLANT,cmu,MED,Y
+Big Money,38,"Run with the pack, get a hit on you (Run)",hit,42,"Kel-Tec, it got a dick on it (Bow)",dick,END,SLANT,cmu,MED,Y
+Big Money,39,Hop in the Wraith and I shit on 'em (Skrrt),Hop,40,I do not respect your big homie (Uh),not,INNER,SLANT,cmu,MED,Y
+Big Money,39,Hop in the Wraith and I shit on 'em (Skrrt),shit,40,I do not respect your big homie (Uh),big,INNER,SLANT,cmu,MED,Y
+Big Money,39,Hop in the Wraith and I shit on 'em (Skrrt),Hop,41,I got more racks than your big homie (Racks),got,INNER,SLANT,cmu,MED,Y
+Big Money,39,Hop in the Wraith and I shit on 'em (Skrrt),shit,41,I got more racks than your big homie (Racks),big,INNER,SLANT,cmu,MED,Y
+Big Money,40,I do not respect your big homie (Uh),homie,41,I got more racks than your big homie (Racks),homie,END,REPEAT,spelling,HIGH,N
+Big Money,40,I do not respect your big homie (Uh),big,41,I got more racks than your big homie (Racks),big,INNER,REPEAT,spelling,HIGH,N
+Big Money,40,I do not respect your big homie (Uh),not,41,I got more racks than your big homie (Racks),got,INNER,PERFECT,cmu,HIGH,Y
+Big Money,40,I do not respect your big homie (Uh),big,42,"Kel-Tec, it got a dick on it (Bow)",dick,INNER,SLANT,cmu,MED,Y
+Big Money,40,I do not respect your big homie (Uh),not,42,"Kel-Tec, it got a dick on it (Bow)",got,INNER,PERFECT,cmu,HIGH,Y
+Big Money,40,I do not respect your big homie (Uh),respect,42,"Kel-Tec, it got a dick on it (Bow)",Tec,INNER,SLANT,cmu,MED,Y
+Big Money,41,I got more racks than your big homie (Racks),big,42,"Kel-Tec, it got a dick on it (Bow)",dick,INNER,SLANT,cmu,MED,Y
+Big Money,41,I got more racks than your big homie (Racks),got,42,"Kel-Tec, it got a dick on it (Bow)",got,INNER,REPEAT,spelling,HIGH,N
+Big Money,41,I got more racks than your big homie (Racks),big,43,But it do not got no kick on it (Brrt),kick,INNER,SLANT,cmu,MED,Y
+Big Money,41,I got more racks than your big homie (Racks),got,43,But it do not got no kick on it (Brrt),got,INNER,REPEAT,spelling,HIGH,N
+Big Money,41,I got more racks than your big homie (Racks),got,43,But it do not got no kick on it (Brrt),not,INNER,PERFECT,cmu,HIGH,Y
+Big Money,42,"Kel-Tec, it got a dick on it (Bow)",Kel,42,"Kel-Tec, it got a dick on it (Bow)",Tec,INNER,SLANT,spelling,LOW,Y
+Big Money,42,"Kel-Tec, it got a dick on it (Bow)",dick,43,But it do not got no kick on it (Brrt),kick,END,PERFECT,cmu,HIGH,Y
+Big Money,42,"Kel-Tec, it got a dick on it (Bow)",got,43,But it do not got no kick on it (Brrt),got,INNER,REPEAT,spelling,HIGH,N
+Big Money,42,"Kel-Tec, it got a dick on it (Bow)",got,43,But it do not got no kick on it (Brrt),not,INNER,PERFECT,cmu,HIGH,Y
+Big Money,42,"Kel-Tec, it got a dick on it (Bow)",got,44,I do not play with the racks (No),not,INNER,PERFECT,cmu,HIGH,Y
+Big Money,43,But it do not got no kick on it (Brrt),not,43,But it do not got no kick on it (Brrt),got,INNER,PERFECT,cmu,HIGH,Y
+Big Money,43,But it do not got no kick on it (Brrt),got,44,I do not play with the racks (No),not,INNER,PERFECT,cmu,HIGH,Y
+Big Money,43,But it do not got no kick on it (Brrt),not,44,I do not play with the racks (No),not,INNER,REPEAT,spelling,HIGH,N
+Big Money,43,But it do not got no kick on it (Brrt),got,45,Take off the top and detatch (Skrrt),top,INNER,SLANT,cmu,MED,Y
+Big Money,43,But it do not got no kick on it (Brrt),not,45,Take off the top and detatch (Skrrt),top,INNER,SLANT,cmu,MED,Y
+Big Money,44,I do not play with the racks (No),not,45,Take off the top and detatch (Skrrt),top,INNER,SLANT,cmu,MED,Y
+Big Money,44,I do not play with the racks (No),play,45,Take off the top and detatch (Skrrt),Take,INNER,ASSONANCE,vowel,MED,Y
+Big Money,44,I do not play with the racks (No),racks,46,I bought her multiple bags (Huh?),bags,END,SLANT,cmu,MED,Y
+Big Money,44,I do not play with the racks (No),not,46,I bought her multiple bags (Huh?),bought,INNER,PERFECT,cmu,HIGH,Y
+Big Money,44,I do not play with the racks (No),racks,47,I spent me a thirty in Saks (Thirty),Saks,END,PERFECT,cmu,HIGH,Y
+Big Money,44,I do not play with the racks (No),racks,48,"I get a bag, I'm gon' tax it (Huh?)",tax,END,PERFECT,cmu,HIGH,Y
+Big Money,45,Take off the top and detatch (Skrrt),top,46,I bought her multiple bags (Huh?),bought,INNER,SLANT,cmu,MED,Y
+Big Money,46,I bought her multiple bags (Huh?),bags,47,I spent me a thirty in Saks (Thirty),Saks,END,SLANT,cmu,MED,Y
+Big Money,46,I bought her multiple bags (Huh?),bags,48,"I get a bag, I'm gon' tax it (Huh?)",tax,END,SLANT,cmu,MED,Y
+Big Money,46,I bought her multiple bags (Huh?),bags,48,"I get a bag, I'm gon' tax it (Huh?)",bag,INNER,SLANT,cmu,MED,Y
+Big Money,46,I bought her multiple bags (Huh?),bags,49,I'm bringing Gambino right back (Right back),back,END,ASSONANCE,vowel,MED,Y
+Big Money,46,I bought her multiple bags (Huh?),bags,50,I make a play in a taxi (Play),taxi,END,SLANT,cmu,MED,Y
+Big Money,47,I spent me a thirty in Saks (Thirty),Saks,48,"I get a bag, I'm gon' tax it (Huh?)",tax,END,PERFECT,cmu,HIGH,Y
+Big Money,47,I spent me a thirty in Saks (Thirty),Saks,48,"I get a bag, I'm gon' tax it (Huh?)",bag,INNER,ASSONANCE,vowel,MED,Y
+Big Money,47,I spent me a thirty in Saks (Thirty),spent,48,"I get a bag, I'm gon' tax it (Huh?)",get,INNER,SLANT,cmu,MED,Y
+Big Money,47,I spent me a thirty in Saks (Thirty),Saks,49,I'm bringing Gambino right back (Right back),back,END,SLANT,cmu,MED,Y
+Big Money,47,I spent me a thirty in Saks (Thirty),thirty,49,I'm bringing Gambino right back (Right back),Gambino,INNER,ASSONANCE,vowel,MED,Y
+Big Money,47,I spent me a thirty in Saks (Thirty),Saks,50,I make a play in a taxi (Play),taxi,END,SLANT,cmu,MED,Y
+Big Money,47,I spent me a thirty in Saks (Thirty),Saks,51,He didn't know the driver was strapped (Bow),strapped,END,ASSONANCE,vowel,MED,Y
+Big Money,48,"I get a bag, I'm gon' tax it (Huh?)",bag,48,"I get a bag, I'm gon' tax it (Huh?)",tax,INNER,ASSONANCE,vowel,MED,Y
+Big Money,48,"I get a bag, I'm gon' tax it (Huh?)",tax,49,I'm bringing Gambino right back (Right back),back,END,SLANT,cmu,MED,Y
+Big Money,48,"I get a bag, I'm gon' tax it (Huh?)",bag,49,I'm bringing Gambino right back (Right back),back,INNER,SLANT,cmu,MED,Y
+Big Money,48,"I get a bag, I'm gon' tax it (Huh?)",tax,50,I make a play in a taxi (Play),taxi,END,SLANT,cmu,MED,Y
+Big Money,48,"I get a bag, I'm gon' tax it (Huh?)",bag,50,I make a play in a taxi (Play),taxi,INNER,ASSONANCE,vowel,MED,Y
+Big Money,48,"I get a bag, I'm gon' tax it (Huh?)",tax,51,He didn't know the driver was strapped (Bow),strapped,END,ASSONANCE,vowel,MED,Y
+Big Money,49,I'm bringing Gambino right back (Right back),back,50,I make a play in a taxi (Play),taxi,END,SLANT,cmu,MED,Y
+Big Money,49,I'm bringing Gambino right back (Right back),back,51,He didn't know the driver was strapped (Bow),strapped,END,SLANT,cmu,MED,Y
+Big Money,49,I'm bringing Gambino right back (Right back),bringing,51,He didn't know the driver was strapped (Bow),didn't,INNER,ASSONANCE,vowel,MED,Y
+Big Money,49,I'm bringing Gambino right back (Right back),right,51,He didn't know the driver was strapped (Bow),driver,INNER,SLANT,cmu,MED,Y
+Big Money,49,I'm bringing Gambino right back (Right back),back,53,I had to see how it was mapped (Mapped),mapped,END,SLANT,cmu,MED,Y
+Big Money,50,I make a play in a taxi (Play),make,50,I make a play in a taxi (Play),play,INNER,ASSONANCE,vowel,MED,Y
+Big Money,50,I make a play in a taxi (Play),taxi,51,He didn't know the driver was strapped (Bow),strapped,END,ASSONANCE,vowel,MED,Y
+Big Money,50,I make a play in a taxi (Play),make,52,I run the game from the backseat (Game),game,INNER,SLANT,cmu,MED,Y
+Big Money,50,I make a play in a taxi (Play),play,52,I run the game from the backseat (Game),game,INNER,ASSONANCE,vowel,MED,Y
+Big Money,50,I make a play in a taxi (Play),taxi,53,I had to see how it was mapped (Mapped),mapped,END,ASSONANCE,vowel,MED,Y
+Big Money,50,I make a play in a taxi (Play),taxi,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",racks,END,SLANT,cmu,MED,Y
+Big Money,51,He didn't know the driver was strapped (Bow),strapped,53,I had to see how it was mapped (Mapped),mapped,END,PERFECT,cmu,HIGH,Y
+Big Money,51,He didn't know the driver was strapped (Bow),strapped,53,I had to see how it was mapped (Mapped),had,INNER,SLANT,cmu,MED,Y
+Big Money,51,He didn't know the driver was strapped (Bow),strapped,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",racks,END,ASSONANCE,vowel,MED,Y
+Big Money,52,I run the game from the backseat (Game),backseat,53,I had to see how it was mapped (Mapped),see,INNER,ASSONANCE,vowel,MED,Y
+Big Money,52,I run the game from the backseat (Game),game,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",Made,INNER,SLANT,cmu,MED,Y
+Big Money,52,I run the game from the backseat (Game),game,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",way,INNER,ASSONANCE,vowel,MED,Y
+Big Money,53,I had to see how it was mapped (Mapped),had,53,I had to see how it was mapped (Mapped),mapped,INNER,SLANT,cmu,MED,Y
+Big Money,53,I had to see how it was mapped (Mapped),mapped,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",racks,END,ASSONANCE,vowel,MED,Y
+Big Money,53,I had to see how it was mapped (Mapped),had,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",having,INNER,ASSONANCE,vowel,MED,Y
+Big Money,53,I had to see how it was mapped (Mapped),had,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",man,INNER,SLANT,cmu,MED,Y
+Big Money,53,I had to see how it was mapped (Mapped),had,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",racks,INNER,ASSONANCE,vowel,MED,Y
+Big Money,53,I had to see how it was mapped (Mapped),mapped,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",having,INNER,ASSONANCE,vowel,MED,Y
+Big Money,53,I had to see how it was mapped (Mapped),mapped,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",man,INNER,ASSONANCE,vowel,MED,Y
+Big Money,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",having,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",having,INNER,REPEAT,spelling,HIGH,N
+Big Money,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",having,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",racks,INNER,ASSONANCE,vowel,MED,Y
+Big Money,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",Made,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",way,INNER,ASSONANCE,vowel,MED,Y
+Big Money,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",man,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",having,INNER,ASSONANCE,vowel,MED,Y
+Big Money,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",man,54,"Made man, we having our way (Made man), yeah, we are having our racks (Racks)",racks,INNER,ASSONANCE,vowel,MED,Y

@@ -1,0 +1,300 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",night,1,"I be thuggin through the night, clutch on my pipe",pipe,INNER,SLANT,cmu,MED,Y
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",pipe,2,I take your life,life,END,SLANT,cmu,MED,Y
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",night,2,I take your life,life,INNER,SLANT,cmu,MED,Y
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",pipe,3,Thew some money kite,kite,END,SLANT,cmu,MED,Y
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",clutch,3,Thew some money kite,money,INNER,SLANT,cmu,MED,Y
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",clutch,3,Thew some money kite,some,INNER,SLANT,cmu,MED,Y
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",night,3,Thew some money kite,kite,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",through,3,Thew some money kite,Thew,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",pipe,4,Earned some stripes all out of spite,spite,END,SLANT,cmu,MED,Y
+In What Sport?,1,"I be thuggin through the night, clutch on my pipe",pipe,5,"They said I'm going fed, I might",might,END,SLANT,cmu,MED,Y
+In What Sport?,2,I take your life,life,3,Thew some money kite,kite,END,SLANT,cmu,MED,Y
+In What Sport?,2,I take your life,life,4,Earned some stripes all out of spite,spite,END,SLANT,cmu,MED,Y
+In What Sport?,2,I take your life,life,4,Earned some stripes all out of spite,stripes,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,2,I take your life,life,5,"They said I'm going fed, I might",might,END,SLANT,cmu,MED,Y
+In What Sport?,2,I take your life,life,6,them boddies at my hight,hight,END,SLANT,cmu,MED,Y
+In What Sport?,3,Thew some money kite,some,3,Thew some money kite,money,INNER,SLANT,cmu,MED,Y
+In What Sport?,3,Thew some money kite,kite,4,Earned some stripes all out of spite,spite,END,PERFECT,cmu,HIGH,Y
+In What Sport?,3,Thew some money kite,kite,4,Earned some stripes all out of spite,stripes,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,3,Thew some money kite,money,4,Earned some stripes all out of spite,some,INNER,SLANT,cmu,MED,Y
+In What Sport?,3,Thew some money kite,some,4,Earned some stripes all out of spite,some,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,3,Thew some money kite,kite,5,"They said I'm going fed, I might",might,END,PERFECT,cmu,HIGH,Y
+In What Sport?,3,Thew some money kite,kite,6,them boddies at my hight,hight,END,PERFECT,cmu,HIGH,Y
+In What Sport?,4,Earned some stripes all out of spite,stripes,4,Earned some stripes all out of spite,spite,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,4,Earned some stripes all out of spite,spite,5,"They said I'm going fed, I might",might,END,PERFECT,cmu,HIGH,Y
+In What Sport?,4,Earned some stripes all out of spite,stripes,5,"They said I'm going fed, I might",might,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,4,Earned some stripes all out of spite,spite,6,them boddies at my hight,hight,END,PERFECT,cmu,HIGH,Y
+In What Sport?,4,Earned some stripes all out of spite,stripes,6,them boddies at my hight,hight,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,5,"They said I'm going fed, I might",said,5,"They said I'm going fed, I might",fed,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,5,"They said I'm going fed, I might",might,6,them boddies at my hight,hight,END,PERFECT,cmu,HIGH,Y
+In What Sport?,5,"They said I'm going fed, I might",fed,7,"Selling white, that shit was bad",Selling,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,5,"They said I'm going fed, I might",might,7,"Selling white, that shit was bad",white,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,5,"They said I'm going fed, I might",said,7,"Selling white, that shit was bad",Selling,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,6,them boddies at my hight,hight,7,"Selling white, that shit was bad",white,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,6,them boddies at my hight,hight,8,Couldn't hustle like my dad,like,INNER,SLANT,cmu,MED,Y
+In What Sport?,7,"Selling white, that shit was bad",bad,8,Couldn't hustle like my dad,dad,END,PERFECT,cmu,HIGH,Y
+In What Sport?,7,"Selling white, that shit was bad",white,8,Couldn't hustle like my dad,like,INNER,SLANT,cmu,MED,Y
+In What Sport?,7,"Selling white, that shit was bad",shit,9,"I still got , they bay",still,INNER,SLANT,cmu,MED,Y
+In What Sport?,7,"Selling white, that shit was bad",bad,10,They went out sad,sad,END,PERFECT,cmu,HIGH,Y
+In What Sport?,7,"Selling white, that shit was bad",bad,11,"He lost all he had, talking to Vlad",Vlad,END,PERFECT,cmu,HIGH,Y
+In What Sport?,8,Couldn't hustle like my dad,dad,10,They went out sad,sad,END,PERFECT,cmu,HIGH,Y
+In What Sport?,8,Couldn't hustle like my dad,dad,11,"He lost all he had, talking to Vlad",Vlad,END,PERFECT,cmu,HIGH,Y
+In What Sport?,8,Couldn't hustle like my dad,dad,12,Niggas up for grabs,grabs,END,ASSONANCE,vowel,MED,Y
+In What Sport?,10,They went out sad,sad,11,"He lost all he had, talking to Vlad",Vlad,END,PERFECT,cmu,HIGH,Y
+In What Sport?,10,They went out sad,sad,11,"He lost all he had, talking to Vlad",had,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,10,They went out sad,sad,12,Niggas up for grabs,grabs,END,ASSONANCE,vowel,MED,Y
+In What Sport?,10,They went out sad,sad,13,"You ain't on your toes, you get it tagged",tagged,END,SLANT,cmu,MED,Y
+In What Sport?,11,"He lost all he had, talking to Vlad",all,11,"He lost all he had, talking to Vlad",talking,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,11,"He lost all he had, talking to Vlad",had,11,"He lost all he had, talking to Vlad",Vlad,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,11,"He lost all he had, talking to Vlad",lost,11,"He lost all he had, talking to Vlad",all,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,11,"He lost all he had, talking to Vlad",lost,11,"He lost all he had, talking to Vlad",talking,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,11,"He lost all he had, talking to Vlad",Vlad,12,Niggas up for grabs,grabs,END,ASSONANCE,vowel,MED,Y
+In What Sport?,11,"He lost all he had, talking to Vlad",had,12,Niggas up for grabs,grabs,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,11,"He lost all he had, talking to Vlad",Vlad,13,"You ain't on your toes, you get it tagged",tagged,END,SLANT,cmu,MED,Y
+In What Sport?,11,"He lost all he had, talking to Vlad",had,13,"You ain't on your toes, you get it tagged",tagged,INNER,SLANT,cmu,MED,Y
+In What Sport?,12,Niggas up for grabs,grabs,13,"You ain't on your toes, you get it tagged",tagged,END,ASSONANCE,vowel,MED,Y
+In What Sport?,13,"You ain't on your toes, you get it tagged",ain't,14,"Popping out that cut, who gave that drop? A slut",gave,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,13,"You ain't on your toes, you get it tagged",get,15,"Soon as that door shut, he get hit all in his gut",get,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",cut,14,"Popping out that cut, who gave that drop? A slut",slut,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",Popping,14,"Popping out that cut, who gave that drop? A slut",drop,INNER,SLANT,cmu,MED,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",slut,15,"Soon as that door shut, he get hit all in his gut",gut,END,PERFECT,cmu,HIGH,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",cut,15,"Soon as that door shut, he get hit all in his gut",gut,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",cut,15,"Soon as that door shut, he get hit all in his gut",shut,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",slut,15,"Soon as that door shut, he get hit all in his gut",shut,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",who,15,"Soon as that door shut, he get hit all in his gut",Soon,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",slut,16,"You bitch, and you a mutt",mutt,END,PERFECT,cmu,HIGH,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",cut,16,"You bitch, and you a mutt",mutt,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",slut,17,Them niggas up and what?,what,END,PERFECT,cmu,HIGH,Y
+In What Sport?,14,"Popping out that cut, who gave that drop? A slut",slut,18,"He get his nut, we get the drop, we go shoot up his hut",hut,END,PERFECT,cmu,HIGH,Y
+In What Sport?,15,"Soon as that door shut, he get hit all in his gut",door,15,"Soon as that door shut, he get hit all in his gut",all,INNER,SLANT,cmu,MED,Y
+In What Sport?,15,"Soon as that door shut, he get hit all in his gut",shut,15,"Soon as that door shut, he get hit all in his gut",gut,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,15,"Soon as that door shut, he get hit all in his gut",gut,16,"You bitch, and you a mutt",mutt,END,PERFECT,cmu,HIGH,Y
+In What Sport?,15,"Soon as that door shut, he get hit all in his gut",hit,16,"You bitch, and you a mutt",bitch,INNER,SLANT,cmu,MED,Y
+In What Sport?,15,"Soon as that door shut, he get hit all in his gut",shut,16,"You bitch, and you a mutt",mutt,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,15,"Soon as that door shut, he get hit all in his gut",gut,17,Them niggas up and what?,what,END,PERFECT,cmu,HIGH,Y
+In What Sport?,15,"Soon as that door shut, he get hit all in his gut",shut,17,Them niggas up and what?,what,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,15,"Soon as that door shut, he get hit all in his gut",gut,18,"He get his nut, we get the drop, we go shoot up his hut",hut,END,PERFECT,cmu,HIGH,Y
+In What Sport?,16,"You bitch, and you a mutt",mutt,17,Them niggas up and what?,what,END,PERFECT,cmu,HIGH,Y
+In What Sport?,16,"You bitch, and you a mutt",mutt,18,"He get his nut, we get the drop, we go shoot up his hut",hut,END,PERFECT,cmu,HIGH,Y
+In What Sport?,16,"You bitch, and you a mutt",mutt,18,"He get his nut, we get the drop, we go shoot up his hut",nut,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,17,Them niggas up and what?,what,18,"He get his nut, we get the drop, we go shoot up his hut",hut,END,PERFECT,cmu,HIGH,Y
+In What Sport?,17,Them niggas up and what?,what,18,"He get his nut, we get the drop, we go shoot up his hut",nut,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,18,"He get his nut, we get the drop, we go shoot up his hut",get,18,"He get his nut, we get the drop, we go shoot up his hut",get,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,18,"He get his nut, we get the drop, we go shoot up his hut",nut,18,"He get his nut, we get the drop, we go shoot up his hut",hut,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,18,"He get his nut, we get the drop, we go shoot up his hut",go,19,"Them killers on the road, they drive a day to bring the poles",poles,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,18,"He get his nut, we get the drop, we go shoot up his hut",go,19,"Them killers on the road, they drive a day to bring the poles",road,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,18,"He get his nut, we get the drop, we go shoot up his hut",drop,20,How you get caught on,caught,INNER,SLANT,cmu,MED,Y
+In What Sport?,18,"He get his nut, we get the drop, we go shoot up his hut",get,20,How you get caught on,get,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,19,"Them killers on the road, they drive a day to bring the poles",killers,19,"Them killers on the road, they drive a day to bring the poles",bring,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,19,"Them killers on the road, they drive a day to bring the poles",road,19,"Them killers on the road, they drive a day to bring the poles",poles,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,19,"Them killers on the road, they drive a day to bring the poles",poles,21,How the fuck you get caught washing clothes?,clothes,END,SLANT,cmu,MED,Y
+In What Sport?,19,"Them killers on the road, they drive a day to bring the poles",road,21,How the fuck you get caught washing clothes?,clothes,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,19,"Them killers on the road, they drive a day to bring the poles",poles,22,You know niggas known for snatching souls,souls,END,PERFECT,cmu,HIGH,Y
+In What Sport?,19,"Them killers on the road, they drive a day to bring the poles",poles,23,This the life we chose,chose,END,SLANT,cmu,MED,Y
+In What Sport?,20,How you get caught on,caught,21,How the fuck you get caught washing clothes?,caught,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,20,How you get caught on,caught,21,How the fuck you get caught washing clothes?,washing,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,20,How you get caught on,get,21,How the fuck you get caught washing clothes?,get,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,20,How you get caught on,How,21,How the fuck you get caught washing clothes?,How,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,21,How the fuck you get caught washing clothes?,caught,21,How the fuck you get caught washing clothes?,washing,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,21,How the fuck you get caught washing clothes?,clothes,22,You know niggas known for snatching souls,souls,END,SLANT,cmu,MED,Y
+In What Sport?,21,How the fuck you get caught washing clothes?,clothes,22,You know niggas known for snatching souls,know,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,21,How the fuck you get caught washing clothes?,clothes,22,You know niggas known for snatching souls,known,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,21,How the fuck you get caught washing clothes?,washing,22,You know niggas known for snatching souls,snatching,INNER,PERFECT,spelling,MED,Y
+In What Sport?,21,How the fuck you get caught washing clothes?,clothes,23,This the life we chose,chose,END,SLANT,cmu,MED,Y
+In What Sport?,21,How the fuck you get caught washing clothes?,clothes,24,Grab a tootsi roll,roll,END,ASSONANCE,vowel,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,know,22,You know niggas known for snatching souls,known,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,know,22,You know niggas known for snatching souls,souls,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,known,22,You know niggas known for snatching souls,souls,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,souls,23,This the life we chose,chose,END,SLANT,cmu,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,know,23,This the life we chose,chose,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,known,23,This the life we chose,chose,INNER,SLANT,cmu,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,souls,24,Grab a tootsi roll,roll,END,SLANT,cmu,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,know,24,Grab a tootsi roll,roll,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,known,24,Grab a tootsi roll,roll,INNER,SLANT,cmu,MED,Y
+In What Sport?,22,You know niggas known for snatching souls,snatching,24,Grab a tootsi roll,Grab,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,23,This the life we chose,chose,24,Grab a tootsi roll,roll,END,SLANT,cmu,MED,Y
+In What Sport?,23,This the life we chose,chose,25,"We wipe his nose, they say we",nose,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,23,This the life we chose,life,25,"We wipe his nose, they say we",wipe,INNER,SLANT,cmu,MED,Y
+In What Sport?,24,Grab a tootsi roll,roll,25,"We wipe his nose, they say we",nose,INNER,SLANT,cmu,MED,Y
+In What Sport?,25,"We wipe his nose, they say we",say,26,"Fucking hurt his state, they say that they upped the rate",rate,END,ASSONANCE,vowel,MED,Y
+In What Sport?,25,"We wipe his nose, they say we",say,26,"Fucking hurt his state, they say that they upped the rate",say,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,25,"We wipe his nose, they say we",say,26,"Fucking hurt his state, they say that they upped the rate",state,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,25,"We wipe his nose, they say we",say,27,"Check the score, make sure it's up to date",date,END,ASSONANCE,vowel,MED,Y
+In What Sport?,25,"We wipe his nose, they say we",say,27,"Check the score, make sure it's up to date",make,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,25,"We wipe his nose, they say we",say,28,My niggas doing great,great,END,ASSONANCE,vowel,MED,Y
+In What Sport?,25,"We wipe his nose, they say we",say,29,"You losing, and you I can't relate",relate,END,ASSONANCE,vowel,MED,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",Fucking,26,"Fucking hurt his state, they say that they upped the rate",upped,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",say,26,"Fucking hurt his state, they say that they upped the rate",rate,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",state,26,"Fucking hurt his state, they say that they upped the rate",rate,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",state,26,"Fucking hurt his state, they say that they upped the rate",say,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",rate,27,"Check the score, make sure it's up to date",date,END,PERFECT,cmu,HIGH,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",rate,27,"Check the score, make sure it's up to date",make,INNER,SLANT,cmu,MED,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",say,27,"Check the score, make sure it's up to date",date,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",say,27,"Check the score, make sure it's up to date",make,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",state,27,"Check the score, make sure it's up to date",date,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",state,27,"Check the score, make sure it's up to date",make,INNER,SLANT,cmu,MED,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",rate,28,My niggas doing great,great,END,PERFECT,cmu,HIGH,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",say,28,My niggas doing great,great,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",state,28,My niggas doing great,great,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",rate,29,"You losing, and you I can't relate",relate,END,PERFECT,cmu,HIGH,Y
+In What Sport?,26,"Fucking hurt his state, they say that they upped the rate",rate,30,"Sell a nigga fate, we just flip the plate",plate,END,PERFECT,cmu,HIGH,Y
+In What Sport?,27,"Check the score, make sure it's up to date",make,27,"Check the score, make sure it's up to date",date,INNER,SLANT,cmu,MED,Y
+In What Sport?,27,"Check the score, make sure it's up to date",date,28,My niggas doing great,great,END,PERFECT,cmu,HIGH,Y
+In What Sport?,27,"Check the score, make sure it's up to date",make,28,My niggas doing great,great,INNER,SLANT,cmu,MED,Y
+In What Sport?,27,"Check the score, make sure it's up to date",date,29,"You losing, and you I can't relate",relate,END,PERFECT,cmu,HIGH,Y
+In What Sport?,27,"Check the score, make sure it's up to date",make,29,"You losing, and you I can't relate",relate,INNER,SLANT,cmu,MED,Y
+In What Sport?,27,"Check the score, make sure it's up to date",date,30,"Sell a nigga fate, we just flip the plate",plate,END,PERFECT,cmu,HIGH,Y
+In What Sport?,28,My niggas doing great,great,29,"You losing, and you I can't relate",relate,END,PERFECT,cmu,HIGH,Y
+In What Sport?,28,My niggas doing great,doing,29,"You losing, and you I can't relate",losing,INNER,SLANT,cmu,MED,Y
+In What Sport?,28,My niggas doing great,great,30,"Sell a nigga fate, we just flip the plate",plate,END,PERFECT,cmu,HIGH,Y
+In What Sport?,28,My niggas doing great,great,30,"Sell a nigga fate, we just flip the plate",fate,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,28,My niggas doing great,niggas,30,"Sell a nigga fate, we just flip the plate",nigga,INNER,SLANT,spelling,LOW,Y
+In What Sport?,29,"You losing, and you I can't relate",relate,30,"Sell a nigga fate, we just flip the plate",plate,END,PERFECT,cmu,HIGH,Y
+In What Sport?,29,"You losing, and you I can't relate",relate,30,"Sell a nigga fate, we just flip the plate",fate,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,30,"Sell a nigga fate, we just flip the plate",fate,30,"Sell a nigga fate, we just flip the plate",plate,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,30,"Sell a nigga fate, we just flip the plate",nigga,30,"Sell a nigga fate, we just flip the plate",flip,INNER,SLANT,spelling,LOW,Y
+In What Sport?,30,"Sell a nigga fate, we just flip the plate",flip,31,"Hit a nigga right between his eyes, I decide",Hit,INNER,SLANT,cmu,MED,Y
+In What Sport?,30,"Sell a nigga fate, we just flip the plate",flip,31,"Hit a nigga right between his eyes, I decide",nigga,INNER,SLANT,spelling,LOW,Y
+In What Sport?,30,"Sell a nigga fate, we just flip the plate",nigga,31,"Hit a nigga right between his eyes, I decide",Hit,INNER,SLANT,spelling,LOW,Y
+In What Sport?,30,"Sell a nigga fate, we just flip the plate",nigga,31,"Hit a nigga right between his eyes, I decide",nigga,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,30,"Sell a nigga fate, we just flip the plate",flip,32,"Hundred fifty hollos by my side, how we sllide",fifty,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,30,"Sell a nigga fate, we just flip the plate",flip,32,"Hundred fifty hollos by my side, how we sllide",sllide,INNER,SLANT,spelling,LOW,Y
+In What Sport?,30,"Sell a nigga fate, we just flip the plate",nigga,32,"Hundred fifty hollos by my side, how we sllide",sllide,INNER,SLANT,spelling,LOW,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",eyes,31,"Hit a nigga right between his eyes, I decide",decide,INNER,SLANT,cmu,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",Hit,31,"Hit a nigga right between his eyes, I decide",nigga,INNER,SLANT,spelling,LOW,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",right,31,"Hit a nigga right between his eyes, I decide",decide,INNER,SLANT,cmu,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",right,31,"Hit a nigga right between his eyes, I decide",eyes,INNER,SLANT,cmu,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",decide,32,"Hundred fifty hollos by my side, how we sllide",by,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",decide,32,"Hundred fifty hollos by my side, how we sllide",side,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",eyes,32,"Hundred fifty hollos by my side, how we sllide",by,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",eyes,32,"Hundred fifty hollos by my side, how we sllide",side,INNER,SLANT,cmu,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",Hit,32,"Hundred fifty hollos by my side, how we sllide",fifty,INNER,SLANT,cmu,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",Hit,32,"Hundred fifty hollos by my side, how we sllide",sllide,INNER,SLANT,spelling,LOW,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",nigga,32,"Hundred fifty hollos by my side, how we sllide",sllide,INNER,SLANT,spelling,LOW,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",right,32,"Hundred fifty hollos by my side, how we sllide",by,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",right,32,"Hundred fifty hollos by my side, how we sllide",side,INNER,SLANT,cmu,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",decide,33,"Everybody with me having cake, cause I divide",divide,END,PERFECT,cmu,HIGH,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",eyes,33,"Everybody with me having cake, cause I divide",divide,INNER,SLANT,cmu,MED,Y
+In What Sport?,31,"Hit a nigga right between his eyes, I decide",right,33,"Everybody with me having cake, cause I divide",divide,INNER,SLANT,cmu,MED,Y
+In What Sport?,32,"Hundred fifty hollos by my side, how we sllide",by,32,"Hundred fifty hollos by my side, how we sllide",side,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,32,"Hundred fifty hollos by my side, how we sllide",by,33,"Everybody with me having cake, cause I divide",divide,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,32,"Hundred fifty hollos by my side, how we sllide",side,33,"Everybody with me having cake, cause I divide",divide,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,32,"Hundred fifty hollos by my side, how we sllide",by,34,"If a nigga diss me, show his face, I might get vilant",might,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,32,"Hundred fifty hollos by my side, how we sllide",fifty,34,"If a nigga diss me, show his face, I might get vilant",diss,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,32,"Hundred fifty hollos by my side, how we sllide",hollos,34,"If a nigga diss me, show his face, I might get vilant",show,INNER,ASSONANCE,vowel,LOW,N
+In What Sport?,32,"Hundred fifty hollos by my side, how we sllide",side,34,"If a nigga diss me, show his face, I might get vilant",might,INNER,SLANT,cmu,MED,Y
+In What Sport?,32,"Hundred fifty hollos by my side, how we sllide",sllide,34,"If a nigga diss me, show his face, I might get vilant",diss,INNER,SLANT,spelling,LOW,Y
+In What Sport?,32,"Hundred fifty hollos by my side, how we sllide",sllide,34,"If a nigga diss me, show his face, I might get vilant",nigga,INNER,SLANT,spelling,LOW,Y
+In What Sport?,33,"Everybody with me having cake, cause I divide",Everybody,33,"Everybody with me having cake, cause I divide",cause,INNER,SLANT,cmu,MED,Y
+In What Sport?,33,"Everybody with me having cake, cause I divide",cake,34,"If a nigga diss me, show his face, I might get vilant",face,INNER,SLANT,cmu,MED,Y
+In What Sport?,33,"Everybody with me having cake, cause I divide",divide,34,"If a nigga diss me, show his face, I might get vilant",might,INNER,SLANT,cmu,MED,Y
+In What Sport?,33,"Everybody with me having cake, cause I divide",cake,35,"40 Glocks and dracs, we play with those like they violins",play,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,33,"Everybody with me having cake, cause I divide",divide,35,"40 Glocks and dracs, we play with those like they violins",like,INNER,SLANT,cmu,MED,Y
+In What Sport?,33,"Everybody with me having cake, cause I divide",divide,37,"Plenty nights we got it on, look like Irish",Irish,END,ASSONANCE,vowel,MED,Y
+In What Sport?,34,"If a nigga diss me, show his face, I might get vilant",nigga,34,"If a nigga diss me, show his face, I might get vilant",vilant,INNER,ASSONANCE,vowel,LOW,N
+In What Sport?,34,"If a nigga diss me, show his face, I might get vilant",diss,35,"40 Glocks and dracs, we play with those like they violins",violins,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,34,"If a nigga diss me, show his face, I might get vilant",face,35,"40 Glocks and dracs, we play with those like they violins",play,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,34,"If a nigga diss me, show his face, I might get vilant",might,35,"40 Glocks and dracs, we play with those like they violins",like,INNER,SLANT,cmu,MED,Y
+In What Sport?,34,"If a nigga diss me, show his face, I might get vilant",show,35,"40 Glocks and dracs, we play with those like they violins",Glocks,INNER,ASSONANCE,vowel,LOW,N
+In What Sport?,34,"If a nigga diss me, show his face, I might get vilant",show,35,"40 Glocks and dracs, we play with those like they violins",those,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,34,"If a nigga diss me, show his face, I might get vilant",show,36,"Before I heard my voice on radios, I heard sirons",radios,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,35,"40 Glocks and dracs, we play with those like they violins",those,36,"Before I heard my voice on radios, I heard sirons",radios,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,35,"40 Glocks and dracs, we play with those like they violins",like,37,"Plenty nights we got it on, look like Irish",Irish,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,35,"40 Glocks and dracs, we play with those like they violins",like,37,"Plenty nights we got it on, look like Irish",like,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,35,"40 Glocks and dracs, we play with those like they violins",like,37,"Plenty nights we got it on, look like Irish",nights,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,36,"Before I heard my voice on radios, I heard sirons",heard,36,"Before I heard my voice on radios, I heard sirons",heard,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,36,"Before I heard my voice on radios, I heard sirons",Before,38,Now got a song with Miley Cyrus,song,INNER,SLANT,cmu,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",like,37,"Plenty nights we got it on, look like Irish",Irish,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",nights,37,"Plenty nights we got it on, look like Irish",Irish,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",nights,37,"Plenty nights we got it on, look like Irish",like,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",Irish,38,Now got a song with Miley Cyrus,Cyrus,END,SLANT,cmu,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",got,38,Now got a song with Miley Cyrus,got,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,37,"Plenty nights we got it on, look like Irish",Irish,38,Now got a song with Miley Cyrus,Miley,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",like,38,Now got a song with Miley Cyrus,Cyrus,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",like,38,Now got a song with Miley Cyrus,Miley,INNER,SLANT,cmu,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",nights,38,Now got a song with Miley Cyrus,Cyrus,INNER,SLANT,cmu,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",nights,38,Now got a song with Miley Cyrus,Miley,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",Irish,39,"Play the net, I'm at your home, I'm like a virus",virus,END,SLANT,cmu,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",Irish,39,"Play the net, I'm at your home, I'm like a virus",like,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",like,39,"Play the net, I'm at your home, I'm like a virus",like,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,37,"Plenty nights we got it on, look like Irish",like,39,"Play the net, I'm at your home, I'm like a virus",virus,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",nights,39,"Play the net, I'm at your home, I'm like a virus",like,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",nights,39,"Play the net, I'm at your home, I'm like a virus",virus,INNER,SLANT,cmu,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",Plenty,39,"Play the net, I'm at your home, I'm like a virus",net,INNER,SLANT,cmu,MED,Y
+In What Sport?,37,"Plenty nights we got it on, look like Irish",Irish,41,One day to an island,island,END,ASSONANCE,vowel,MED,Y
+In What Sport?,38,Now got a song with Miley Cyrus,Miley,38,Now got a song with Miley Cyrus,Cyrus,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,38,Now got a song with Miley Cyrus,Cyrus,39,"Play the net, I'm at your home, I'm like a virus",virus,END,MULTI,multi,HIGH,Y
+In What Sport?,38,Now got a song with Miley Cyrus,Cyrus,39,"Play the net, I'm at your home, I'm like a virus",like,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,38,Now got a song with Miley Cyrus,Miley,39,"Play the net, I'm at your home, I'm like a virus",like,INNER,SLANT,cmu,MED,Y
+In What Sport?,38,Now got a song with Miley Cyrus,Miley,39,"Play the net, I'm at your home, I'm like a virus",virus,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,38,Now got a song with Miley Cyrus,got,40,"Killer got me silant, I can't shut my eyelids",got,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,38,Now got a song with Miley Cyrus,Cyrus,41,One day to an island,island,END,ASSONANCE,vowel,MED,Y
+In What Sport?,38,Now got a song with Miley Cyrus,Cyrus,42,"Bitch, that's what the flight did",flight,END,ASSONANCE,vowel,MED,Y
+In What Sport?,39,"Play the net, I'm at your home, I'm like a virus",like,39,"Play the net, I'm at your home, I'm like a virus",virus,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,39,"Play the net, I'm at your home, I'm like a virus",virus,41,One day to an island,island,END,ASSONANCE,vowel,MED,Y
+In What Sport?,39,"Play the net, I'm at your home, I'm like a virus",like,41,One day to an island,island,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,39,"Play the net, I'm at your home, I'm like a virus",Play,41,One day to an island,day,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,39,"Play the net, I'm at your home, I'm like a virus",virus,42,"Bitch, that's what the flight did",flight,END,ASSONANCE,vowel,MED,Y
+In What Sport?,39,"Play the net, I'm at your home, I'm like a virus",virus,43,Told the feds I'm if I get a light,light,END,ASSONANCE,vowel,MED,Y
+In What Sport?,40,"Killer got me silant, I can't shut my eyelids",Killer,40,"Killer got me silant, I can't shut my eyelids",eyelids,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,40,"Killer got me silant, I can't shut my eyelids",silant,40,"Killer got me silant, I can't shut my eyelids",can't,INNER,PERFECT,spelling,HIGH,Y
+In What Sport?,40,"Killer got me silant, I can't shut my eyelids",shut,41,One day to an island,One,INNER,SLANT,cmu,MED,Y
+In What Sport?,40,"Killer got me silant, I can't shut my eyelids",eyelids,42,"Bitch, that's what the flight did",Bitch,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,40,"Killer got me silant, I can't shut my eyelids",Killer,42,"Bitch, that's what the flight did",Bitch,INNER,SLANT,cmu,MED,Y
+In What Sport?,40,"Killer got me silant, I can't shut my eyelids",shut,42,"Bitch, that's what the flight did",what,INNER,PERFECT,cmu,HIGH,Y
+In What Sport?,40,"Killer got me silant, I can't shut my eyelids",eyelids,44,That's why I can't take shit,shit,END,ASSONANCE,vowel,MED,Y
+In What Sport?,41,One day to an island,island,42,"Bitch, that's what the flight did",flight,END,ASSONANCE,vowel,MED,Y
+In What Sport?,41,One day to an island,One,42,"Bitch, that's what the flight did",what,INNER,SLANT,cmu,MED,Y
+In What Sport?,41,One day to an island,island,43,Told the feds I'm if I get a light,light,END,ASSONANCE,vowel,MED,Y
+In What Sport?,42,"Bitch, that's what the flight did",flight,43,Told the feds I'm if I get a light,light,END,PERFECT,cmu,HIGH,Y
+In What Sport?,42,"Bitch, that's what the flight did",Bitch,44,That's why I can't take shit,shit,INNER,SLANT,cmu,MED,Y
+In What Sport?,42,"Bitch, that's what the flight did",flight,44,That's why I can't take shit,why,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,43,Told the feds I'm if I get a light,feds,43,Told the feds I'm if I get a light,get,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,43,Told the feds I'm if I get a light,light,44,That's why I can't take shit,why,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,43,Told the feds I'm if I get a light,Told,45,No more living basic,No,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,44,That's why I can't take shit,shit,45,No more living basic,living,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,44,That's why I can't take shit,take,45,No more living basic,basic,INNER,SLANT,cmu,MED,Y
+In What Sport?,44,That's why I can't take shit,can't,46,I was being pationt,pationt,INNER,SLANT,spelling,LOW,Y
+In What Sport?,44,That's why I can't take shit,shit,47,Had to work my day shift,shift,END,SLANT,cmu,MED,Y
+In What Sport?,45,No more living basic,basic,47,Had to work my day shift,day,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,45,No more living basic,living,47,Had to work my day shift,shift,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,45,No more living basic,basic,48,Why the fuck they hating?,hating,END,ASSONANCE,vowel,MED,Y
+In What Sport?,45,No more living basic,basic,49,They act like we racing,racing,END,SLANT,cmu,MED,Y
+In What Sport?,47,Had to work my day shift,day,48,Why the fuck they hating?,hating,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,47,Had to work my day shift,day,49,They act like we racing,racing,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,47,Had to work my day shift,Had,49,They act like we racing,act,INNER,SLANT,cmu,MED,Y
+In What Sport?,48,Why the fuck they hating?,hating,49,They act like we racing,racing,END,SLANT,cmu,MED,Y
+In What Sport?,48,Why the fuck they hating?,Why,49,They act like we racing,like,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,48,Why the fuck they hating?,hating,50,Why the fuck they pasing?,pasing,END,SLANT,cmu,MED,Y
+In What Sport?,48,Why the fuck they hating?,fuck,50,Why the fuck they pasing?,fuck,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,48,Why the fuck they hating?,Why,50,Why the fuck they pasing?,Why,INNER,REPEAT,spelling,HIGH,N
+In What Sport?,48,Why the fuck they hating?,hating,51,"On the sprint, we chasing",chasing,END,SLANT,cmu,MED,Y
+In What Sport?,49,They act like we racing,racing,50,Why the fuck they pasing?,pasing,END,MULTI,multi,HIGH,Y
+In What Sport?,49,They act like we racing,like,50,Why the fuck they pasing?,Why,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,49,They act like we racing,racing,51,"On the sprint, we chasing",chasing,END,MULTI,multi,HIGH,Y
+In What Sport?,49,They act like we racing,racing,53,And my life gravy,gravy,END,ASSONANCE,vowel,MED,Y
+In What Sport?,50,Why the fuck they pasing?,pasing,51,"On the sprint, we chasing",chasing,END,MULTI,multi,HIGH,Y
+In What Sport?,50,Why the fuck they pasing?,pasing,52,"If you don't see no babies, hop out and face 'em",babies,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,50,Why the fuck they pasing?,pasing,52,"If you don't see no babies, hop out and face 'em",face,INNER,SLANT,cmu,MED,Y
+In What Sport?,50,Why the fuck they pasing?,pasing,53,And my life gravy,gravy,END,ASSONANCE,vowel,MED,Y
+In What Sport?,50,Why the fuck they pasing?,pasing,54,I couldn't even taste it,taste,END,SLANT,cmu,MED,Y
+In What Sport?,51,"On the sprint, we chasing",chasing,52,"If you don't see no babies, hop out and face 'em",babies,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,51,"On the sprint, we chasing",chasing,52,"If you don't see no babies, hop out and face 'em",face,INNER,SLANT,cmu,MED,Y
+In What Sport?,51,"On the sprint, we chasing",chasing,53,And my life gravy,gravy,END,ASSONANCE,vowel,MED,Y
+In What Sport?,51,"On the sprint, we chasing",chasing,54,I couldn't even taste it,taste,END,SLANT,cmu,MED,Y
+In What Sport?,51,"On the sprint, we chasing",chasing,55,I'm getting too much paper,paper,END,ASSONANCE,vowel,MED,Y
+In What Sport?,52,"If you don't see no babies, hop out and face 'em",babies,52,"If you don't see no babies, hop out and face 'em",face,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,52,"If you don't see no babies, hop out and face 'em",don't,52,"If you don't see no babies, hop out and face 'em",no,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,52,"If you don't see no babies, hop out and face 'em",babies,53,And my life gravy,gravy,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,52,"If you don't see no babies, hop out and face 'em",face,53,And my life gravy,gravy,INNER,SLANT,cmu,MED,Y
+In What Sport?,52,"If you don't see no babies, hop out and face 'em",babies,54,I couldn't even taste it,taste,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,52,"If you don't see no babies, hop out and face 'em",face,54,I couldn't even taste it,taste,INNER,SLANT,cmu,MED,Y
+In What Sport?,52,"If you don't see no babies, hop out and face 'em",see,54,I couldn't even taste it,even,INNER,ASSONANCE,vowel,MED,Y
+In What Sport?,53,And my life gravy,gravy,54,I couldn't even taste it,taste,END,ASSONANCE,vowel,MED,Y
+In What Sport?,53,And my life gravy,gravy,55,I'm getting too much paper,paper,END,SLANT,cmu,MED,Y
+In What Sport?,53,And my life gravy,gravy,56,We can't leave no traces,traces,END,ASSONANCE,vowel,MED,Y
+In What Sport?,54,I couldn't even taste it,taste,55,I'm getting too much paper,paper,END,ASSONANCE,vowel,MED,Y
+In What Sport?,54,I couldn't even taste it,taste,56,We can't leave no traces,traces,END,SLANT,cmu,MED,Y
+In What Sport?,54,I couldn't even taste it,even,56,We can't leave no traces,leave,INNER,SLANT,cmu,MED,Y
+In What Sport?,55,I'm getting too much paper,paper,56,We can't leave no traces,traces,END,ASSONANCE,vowel,MED,Y

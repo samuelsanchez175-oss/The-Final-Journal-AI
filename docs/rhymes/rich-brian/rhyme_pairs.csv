@@ -1,0 +1,369 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Crisis,1,"Yeah, wake up about, uh, 6",about,2,"Think 'bout money, then 'bout this",'bout,END,PERFECT,cmu,HIGH,Y
+Crisis,1,"Yeah, wake up about, uh, 6",about,2,"Think 'bout money, then 'bout this",'bout,INNER,PERFECT,cmu,HIGH,Y
+Crisis,1,"Yeah, wake up about, uh, 6",wake,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",take,INNER,PERFECT,cmu,HIGH,Y
+Crisis,2,"Think 'bout money, then 'bout this",'bout,2,"Think 'bout money, then 'bout this",'bout,INNER,REPEAT,spelling,HIGH,N
+Crisis,2,"Think 'bout money, then 'bout this",Think,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Crisis,2,"Think 'bout money, then 'bout this",Think,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",still,INNER,ASSONANCE,vowel,MED,Y
+Crisis,2,"Think 'bout money, then 'bout this",Think,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",wrist,INNER,ASSONANCE,vowel,MED,Y
+Crisis,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",got,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",I'll,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",still,INNER,SLANT,spelling,LOW,Y
+Crisis,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",still,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",bitch,INNER,SLANT,cmu,MED,Y
+Crisis,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",wrist,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Crisis,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",wrist,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",still,INNER,ASSONANCE,vowel,MED,Y
+Crisis,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",gladly,5,Got that ass on me,ass,INNER,ASSONANCE,vowel,MED,Y
+Crisis,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",got,5,Got that ass on me,Got,INNER,REPEAT,spelling,HIGH,N
+Crisis,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",nothin,5,Got that ass on me,Got,INNER,ASSONANCE,vowel,MED,Y
+Crisis,3,"I got nothin' on my wrist but I'll still gladly take your bitch (Ayy, ayy, ayy)",bitch,6,Sound like I'm from New York City,City,END,SLANT,cmu,MED,Y
+Crisis,4,"Who produced that beat? (Yeah, ayy, yuh)",Who,4,"Who produced that beat? (Yeah, ayy, yuh)",produced,INNER,ASSONANCE,vowel,MED,Y
+Crisis,4,"Who produced that beat? (Yeah, ayy, yuh)",produced,6,Sound like I'm from New York City,New,INNER,ASSONANCE,vowel,MED,Y
+Crisis,4,"Who produced that beat? (Yeah, ayy, yuh)",Who,6,Sound like I'm from New York City,New,INNER,PERFECT,cmu,HIGH,Y
+Crisis,6,Sound like I'm from New York City,New,8,She know that I do the music (Music),music,INNER,ASSONANCE,vowel,MED,Y
+Crisis,7,"Airbnb, gon' fuck in it",gon,9,"Always cook at home, I'm tryna save up",home,INNER,SLANT,spelling,LOW,Y
+Crisis,8,She know that I do the music (Music),know,9,"Always cook at home, I'm tryna save up",home,INNER,ASSONANCE,vowel,MED,Y
+Crisis,9,"Always cook at home, I'm tryna save up",Always,9,"Always cook at home, I'm tryna save up",save,INNER,SLANT,cmu,MED,Y
+Crisis,9,"Always cook at home, I'm tryna save up",save,10,Tryna do my friends some favors,favors,END,SLANT,cmu,MED,Y
+Crisis,9,"Always cook at home, I'm tryna save up",Always,10,Tryna do my friends some favors,favors,INNER,SLANT,cmu,MED,Y
+Crisis,9,"Always cook at home, I'm tryna save up",tryna,10,Tryna do my friends some favors,Tryna,INNER,REPEAT,spelling,HIGH,N
+Crisis,9,"Always cook at home, I'm tryna save up",Always,11,"Gave her head, she facin' backwards (Backwards, ayy)",facin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,9,"Always cook at home, I'm tryna save up",Always,11,"Gave her head, she facin' backwards (Backwards, ayy)",Gave,INNER,SLANT,cmu,MED,Y
+Crisis,9,"Always cook at home, I'm tryna save up",save,11,"Gave her head, she facin' backwards (Backwards, ayy)",facin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,9,"Always cook at home, I'm tryna save up",save,11,"Gave her head, she facin' backwards (Backwards, ayy)",Gave,INNER,PERFECT,cmu,HIGH,Y
+Crisis,10,Tryna do my friends some favors,favors,11,"Gave her head, she facin' backwards (Backwards, ayy)",facin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,10,Tryna do my friends some favors,favors,11,"Gave her head, she facin' backwards (Backwards, ayy)",Gave,INNER,SLANT,cmu,MED,Y
+Crisis,10,Tryna do my friends some favors,friends,11,"Gave her head, she facin' backwards (Backwards, ayy)",head,INNER,ASSONANCE,vowel,MED,Y
+Crisis,10,Tryna do my friends some favors,friends,12,"27 shows, I go through cities every now and then",every,INNER,ASSONANCE,vowel,MED,Y
+Crisis,11,"Gave her head, she facin' backwards (Backwards, ayy)",Gave,11,"Gave her head, she facin' backwards (Backwards, ayy)",facin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,11,"Gave her head, she facin' backwards (Backwards, ayy)",head,12,"27 shows, I go through cities every now and then",every,INNER,SLANT,cmu,MED,Y
+Crisis,12,"27 shows, I go through cities every now and then",shows,12,"27 shows, I go through cities every now and then",go,INNER,ASSONANCE,vowel,MED,Y
+Crisis,12,"27 shows, I go through cities every now and then",now,13,"I watch the crowd, they jumpin', watchin' me (Watchin' me)",crowd,INNER,ASSONANCE,vowel,MED,Y
+Crisis,12,"27 shows, I go through cities every now and then",go,14,"Cut, cut to days ago",ago,INNER,PERFECT,cmu,HIGH,Y
+Crisis,12,"27 shows, I go through cities every now and then",shows,14,"Cut, cut to days ago",ago,INNER,ASSONANCE,vowel,MED,Y
+Crisis,13,"I watch the crowd, they jumpin', watchin' me (Watchin' me)",watch,13,"I watch the crowd, they jumpin', watchin' me (Watchin' me)",watchin,INNER,SLANT,cmu,MED,Y
+Crisis,13,"I watch the crowd, they jumpin', watchin' me (Watchin' me)",jumpin,14,"Cut, cut to days ago",Cut,INNER,ASSONANCE,vowel,MED,Y
+Crisis,13,"I watch the crowd, they jumpin', watchin' me (Watchin' me)",jumpin,15,I'm just a kid not old enough to smoke a cig,enough,INNER,ASSONANCE,vowel,MED,Y
+Crisis,13,"I watch the crowd, they jumpin', watchin' me (Watchin' me)",watch,15,I'm just a kid not old enough to smoke a cig,not,INNER,SLANT,cmu,MED,Y
+Crisis,13,"I watch the crowd, they jumpin', watchin' me (Watchin' me)",watchin,15,I'm just a kid not old enough to smoke a cig,not,INNER,ASSONANCE,vowel,MED,Y
+Crisis,14,"Cut, cut to days ago",Cut,14,"Cut, cut to days ago",cut,INNER,REPEAT,spelling,HIGH,N
+Crisis,14,"Cut, cut to days ago",ago,15,I'm just a kid not old enough to smoke a cig,old,INNER,ASSONANCE,vowel,MED,Y
+Crisis,14,"Cut, cut to days ago",ago,15,I'm just a kid not old enough to smoke a cig,smoke,INNER,ASSONANCE,vowel,MED,Y
+Crisis,14,"Cut, cut to days ago",Cut,15,I'm just a kid not old enough to smoke a cig,enough,INNER,SLANT,cmu,MED,Y
+Crisis,14,"Cut, cut to days ago",Cut,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",What's,INNER,SLANT,cmu,MED,Y
+Crisis,14,"Cut, cut to days ago",Cut,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",wonder,INNER,ASSONANCE,vowel,MED,Y
+Crisis,14,"Cut, cut to days ago",ago,17,They want me to come home,home,END,ASSONANCE,vowel,MED,Y
+Crisis,14,"Cut, cut to days ago",ago,18,I can hear the drum roll,roll,END,ASSONANCE,vowel,MED,Y
+Crisis,15,I'm just a kid not old enough to smoke a cig,kid,15,I'm just a kid not old enough to smoke a cig,cig,INNER,SLANT,spelling,LOW,Y
+Crisis,15,I'm just a kid not old enough to smoke a cig,old,15,I'm just a kid not old enough to smoke a cig,smoke,INNER,ASSONANCE,vowel,MED,Y
+Crisis,15,I'm just a kid not old enough to smoke a cig,enough,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",What's,INNER,ASSONANCE,vowel,MED,Y
+Crisis,15,I'm just a kid not old enough to smoke a cig,enough,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",wonder,INNER,ASSONANCE,vowel,MED,Y
+Crisis,15,I'm just a kid not old enough to smoke a cig,enough,17,They want me to come home,come,INNER,SLANT,cmu,MED,Y
+Crisis,15,I'm just a kid not old enough to smoke a cig,not,17,They want me to come home,want,INNER,SLANT,cmu,MED,Y
+Crisis,15,I'm just a kid not old enough to smoke a cig,old,17,They want me to come home,home,INNER,ASSONANCE,vowel,MED,Y
+Crisis,15,I'm just a kid not old enough to smoke a cig,smoke,17,They want me to come home,home,INNER,SLANT,cmu,MED,Y
+Crisis,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",wonder,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",What's,INNER,ASSONANCE,vowel,MED,Y
+Crisis,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",What's,17,They want me to come home,come,INNER,ASSONANCE,vowel,MED,Y
+Crisis,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",wonder,17,They want me to come home,come,INNER,ASSONANCE,vowel,MED,Y
+Crisis,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",What's,18,I can hear the drum roll,drum,INNER,ASSONANCE,vowel,MED,Y
+Crisis,16,"They wonder, ""What's the recipe?"" (Ayy, recipe)",wonder,18,I can hear the drum roll,drum,INNER,ASSONANCE,vowel,MED,Y
+Crisis,17,They want me to come home,home,18,I can hear the drum roll,roll,END,SLANT,cmu,MED,Y
+Crisis,17,They want me to come home,come,18,I can hear the drum roll,drum,INNER,PERFECT,cmu,HIGH,Y
+Crisis,17,They want me to come home,home,20,Li-livin' in my own home,home,END,REPEAT,spelling,HIGH,N
+Crisis,17,They want me to come home,home,21,"Father miss me, I know",know,END,ASSONANCE,vowel,MED,Y
+Crisis,18,I can hear the drum roll,can,19,But understand I'm out here for a reason,understand,INNER,SLANT,cmu,MED,Y
+Crisis,18,I can hear the drum roll,hear,19,But understand I'm out here for a reason,here,INNER,PERFECT,cmu,HIGH,Y
+Crisis,18,I can hear the drum roll,hear,19,But understand I'm out here for a reason,reason,INNER,ASSONANCE,vowel,MED,Y
+Crisis,18,I can hear the drum roll,roll,20,Li-livin' in my own home,home,END,SLANT,cmu,MED,Y
+Crisis,18,I can hear the drum roll,hear,20,Li-livin' in my own home,Li,INNER,ASSONANCE,vowel,MED,Y
+Crisis,18,I can hear the drum roll,roll,20,Li-livin' in my own home,own,INNER,SLANT,cmu,MED,Y
+Crisis,18,I can hear the drum roll,roll,21,"Father miss me, I know",know,END,ASSONANCE,vowel,MED,Y
+Crisis,19,But understand I'm out here for a reason,here,19,But understand I'm out here for a reason,reason,INNER,ASSONANCE,vowel,MED,Y
+Crisis,19,But understand I'm out here for a reason,here,20,Li-livin' in my own home,Li,INNER,ASSONANCE,vowel,MED,Y
+Crisis,19,But understand I'm out here for a reason,reason,20,Li-livin' in my own home,Li,INNER,ASSONANCE,vowel,MED,Y
+Crisis,20,Li-livin' in my own home,own,20,Li-livin' in my own home,home,INNER,SLANT,cmu,MED,Y
+Crisis,20,Li-livin' in my own home,home,21,"Father miss me, I know",know,END,ASSONANCE,vowel,MED,Y
+Crisis,20,Li-livin' in my own home,livin,21,"Father miss me, I know",miss,INNER,ASSONANCE,vowel,MED,Y
+Crisis,20,Li-livin' in my own home,own,21,"Father miss me, I know",know,INNER,ASSONANCE,vowel,MED,Y
+Crisis,20,Li-livin' in my own home,home,22,But also he know that I'm on a mission (Mission),know,INNER,ASSONANCE,vowel,MED,Y
+Crisis,20,Li-livin' in my own home,livin,22,But also he know that I'm on a mission (Mission),mission,INNER,ASSONANCE,vowel,MED,Y
+Crisis,20,Li-livin' in my own home,own,22,But also he know that I'm on a mission (Mission),know,INNER,ASSONANCE,vowel,MED,Y
+Crisis,21,"Father miss me, I know",know,22,But also he know that I'm on a mission (Mission),know,INNER,REPEAT,spelling,HIGH,N
+Crisis,21,"Father miss me, I know",miss,22,But also he know that I'm on a mission (Mission),mission,INNER,ASSONANCE,vowel,MED,Y
+Crisis,21,"Father miss me, I know",Father,23,I got diamonds on my fist and shit,got,INNER,SLANT,cmu,MED,Y
+Crisis,21,"Father miss me, I know",miss,23,I got diamonds on my fist and shit,fist,INNER,SLANT,cmu,MED,Y
+Crisis,21,"Father miss me, I know",miss,23,I got diamonds on my fist and shit,shit,INNER,SLANT,cmu,MED,Y
+Crisis,22,But also he know that I'm on a mission (Mission),mission,23,I got diamonds on my fist and shit,shit,END,ASSONANCE,vowel,MED,Y
+Crisis,22,But also he know that I'm on a mission (Mission),mission,23,I got diamonds on my fist and shit,fist,INNER,ASSONANCE,vowel,MED,Y
+Crisis,22,But also he know that I'm on a mission (Mission),mission,24,Diamonds on my wrist and shit,shit,END,ASSONANCE,vowel,MED,Y
+Crisis,22,But also he know that I'm on a mission (Mission),mission,24,Diamonds on my wrist and shit,wrist,INNER,ASSONANCE,vowel,MED,Y
+Crisis,22,But also he know that I'm on a mission (Mission),mission,26,"My main bitch bitchin' (21), side bitch trippin'",trippin,END,ASSONANCE,vowel,MED,Y
+Crisis,23,I got diamonds on my fist and shit,fist,23,I got diamonds on my fist and shit,shit,INNER,SLANT,cmu,MED,Y
+Crisis,23,I got diamonds on my fist and shit,shit,24,Diamonds on my wrist and shit,shit,END,REPEAT,spelling,HIGH,N
+Crisis,23,I got diamonds on my fist and shit,diamonds,24,Diamonds on my wrist and shit,Diamonds,INNER,REPEAT,spelling,HIGH,N
+Crisis,23,I got diamonds on my fist and shit,fist,24,Diamonds on my wrist and shit,shit,INNER,SLANT,cmu,MED,Y
+Crisis,23,I got diamonds on my fist and shit,fist,24,Diamonds on my wrist and shit,wrist,INNER,PERFECT,cmu,HIGH,Y
+Crisis,23,I got diamonds on my fist and shit,shit,24,Diamonds on my wrist and shit,wrist,INNER,SLANT,cmu,MED,Y
+Crisis,23,I got diamonds on my fist and shit,diamonds,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",icy,INNER,ASSONANCE,vowel,MED,Y
+Crisis,23,I got diamonds on my fist and shit,fist,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Crisis,23,I got diamonds on my fist and shit,shit,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",bitch,INNER,SLANT,cmu,MED,Y
+Crisis,23,I got diamonds on my fist and shit,shit,26,"My main bitch bitchin' (21), side bitch trippin'",trippin,END,ASSONANCE,vowel,MED,Y
+Crisis,24,Diamonds on my wrist and shit,wrist,24,Diamonds on my wrist and shit,shit,INNER,SLANT,cmu,MED,Y
+Crisis,24,Diamonds on my wrist and shit,Diamonds,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",icy,INNER,ASSONANCE,vowel,MED,Y
+Crisis,24,Diamonds on my wrist and shit,shit,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",bitch,INNER,SLANT,cmu,MED,Y
+Crisis,24,Diamonds on my wrist and shit,wrist,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Crisis,24,Diamonds on my wrist and shit,shit,26,"My main bitch bitchin' (21), side bitch trippin'",trippin,END,ASSONANCE,vowel,MED,Y
+Crisis,24,Diamonds on my wrist and shit,Diamonds,26,"My main bitch bitchin' (21), side bitch trippin'",side,INNER,ASSONANCE,vowel,MED,Y
+Crisis,24,Diamonds on my wrist and shit,shit,26,"My main bitch bitchin' (21), side bitch trippin'",bitch,INNER,SLANT,cmu,MED,Y
+Crisis,24,Diamonds on my wrist and shit,shit,26,"My main bitch bitchin' (21), side bitch trippin'",bitchin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,24,Diamonds on my wrist and shit,wrist,26,"My main bitch bitchin' (21), side bitch trippin'",bitch,INNER,ASSONANCE,vowel,MED,Y
+Crisis,24,Diamonds on my wrist and shit,wrist,26,"My main bitch bitchin' (21), side bitch trippin'",bitchin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,24,Diamonds on my wrist and shit,wrist,26,"My main bitch bitchin' (21), side bitch trippin'",trippin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",bitch,26,"My main bitch bitchin' (21), side bitch trippin'",bitch,INNER,REPEAT,spelling,HIGH,N
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",bitch,26,"My main bitch bitchin' (21), side bitch trippin'",bitchin,INNER,SLANT,cmu,MED,Y
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",bitch,26,"My main bitch bitchin' (21), side bitch trippin'",trippin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",icy,26,"My main bitch bitchin' (21), side bitch trippin'",side,INNER,SLANT,cmu,MED,Y
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",freezer,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",keepers,END,SLANT,cmu,MED,Y
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",bitch,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",Bitch,INNER,REPEAT,spelling,HIGH,N
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",colder,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",both,INNER,ASSONANCE,vowel,MED,Y
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",colder,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",no,INNER,ASSONANCE,vowel,MED,Y
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",freezer,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Creepers,END,SLANT,spelling,LOW,Y
+Crisis,25,"So icy, bitch, I'm colder than a freezer (Bling-blaow)",freezer,29,Made a million dollars with Adidas (21),Adidas,END,ASSONANCE,vowel,MED,Y
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",bitch,26,"My main bitch bitchin' (21), side bitch trippin'",bitch,INNER,REPEAT,spelling,HIGH,N
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",bitch,26,"My main bitch bitchin' (21), side bitch trippin'",bitchin,INNER,SLANT,cmu,MED,Y
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",bitch,26,"My main bitch bitchin' (21), side bitch trippin'",trippin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",bitchin,26,"My main bitch bitchin' (21), side bitch trippin'",bitch,INNER,SLANT,cmu,MED,Y
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",bitchin,26,"My main bitch bitchin' (21), side bitch trippin'",trippin,INNER,SLANT,cmu,MED,Y
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",bitch,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",Bitch,INNER,REPEAT,spelling,HIGH,N
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",bitchin,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",Bitch,INNER,SLANT,cmu,MED,Y
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",main,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",ain't,INNER,SLANT,cmu,MED,Y
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",trippin,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",side,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",I'll,INNER,SLANT,cmu,MED,Y
+Crisis,26,"My main bitch bitchin' (21), side bitch trippin'",side,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",like,INNER,SLANT,cmu,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",both,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",no,INNER,ASSONANCE,vowel,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",love,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",none,INNER,SLANT,cmu,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",ya'll,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",y'all,INNER,REPEAT,spelling,HIGH,N
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",keepers,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Creepers,END,MULTI,multi,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",both,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",keepers,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Jeepers,INNER,MULTI,multi,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",keepers,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",leave,INNER,ASSONANCE,vowel,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",no,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",no keepers,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",like Jeepers,INNER,MULTI,multi,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",keepers,29,Made a million dollars with Adidas (21),Adidas,END,SLANT,cmu,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",ain't,29,Made a million dollars with Adidas (21),Made,INNER,ASSONANCE,vowel,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",Bitch,29,Made a million dollars with Adidas (21),million,INNER,ASSONANCE,vowel,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",ya'll,29,Made a million dollars with Adidas (21),dollars,INNER,SLANT,cmu,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",keepers,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,END,SLANT,cmu,MED,Y
+Crisis,27,"Bitch, I love ya'll both but none of y'all ain't no keepers",keepers,31,"Take this shit to trial, nigga, I'm gon' beat it",beat,END,ASSONANCE,vowel,MED,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",I'll,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",like,INNER,SLANT,cmu,MED,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Jeepers,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Creepers,INNER,MULTI,multi,MED,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",leave,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Creepers,INNER,ASSONANCE,vowel,LOW,N
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",leave,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Jeepers,INNER,ASSONANCE,vowel,LOW,N
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",like Jeepers,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Jeepers Creepers,INNER,MULTI,multi,MED,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Creepers,29,Made a million dollars with Adidas (21),Adidas,END,SLANT,spelling,LOW,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Creepers,29,Made a million dollars with Adidas (21),dollars,INNER,PERFECT,spelling,MED,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Jeepers,29,Made a million dollars with Adidas (21),Adidas,INNER,SLANT,spelling,LOW,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Jeepers,29,Made a million dollars with Adidas (21),dollars,INNER,PERFECT,spelling,MED,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",leave,29,Made a million dollars with Adidas (21),Adidas,INNER,ASSONANCE,vowel,MED,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Creepers,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,END,SLANT,spelling,LOW,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Jeepers,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,INNER,SLANT,spelling,LOW,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",leave,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,INNER,SLANT,cmu,MED,Y
+Crisis,28,"I'll leave ya, Rolls Royce look like Jeepers Creepers (21)",Creepers,32,"Spilt my lean, it got me heated",heated,END,ASSONANCE,vowel,LOW,N
+Crisis,29,Made a million dollars with Adidas (21),Adidas,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,END,ASSONANCE,vowel,MED,Y
+Crisis,29,Made a million dollars with Adidas (21),million,30,"Can't have a ticket, nigga, off my beeper (21)",ticket,INNER,ASSONANCE,vowel,MED,Y
+Crisis,29,Made a million dollars with Adidas (21),Adidas,31,"Take this shit to trial, nigga, I'm gon' beat it",beat,END,ASSONANCE,vowel,MED,Y
+Crisis,29,Made a million dollars with Adidas (21),Made,31,"Take this shit to trial, nigga, I'm gon' beat it",Take,INNER,SLANT,cmu,MED,Y
+Crisis,29,Made a million dollars with Adidas (21),million,31,"Take this shit to trial, nigga, I'm gon' beat it",shit,INNER,ASSONANCE,vowel,MED,Y
+Crisis,29,Made a million dollars with Adidas (21),Adidas,32,"Spilt my lean, it got me heated",heated,END,ASSONANCE,vowel,MED,Y
+Crisis,29,Made a million dollars with Adidas (21),Adidas,33,"Say it one time, I don't repeat it",repeat,END,ASSONANCE,vowel,MED,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",Can't,30,"Can't have a ticket, nigga, off my beeper (21)",have,INNER,ASSONANCE,vowel,MED,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",ticket,30,"Can't have a ticket, nigga, off my beeper (21)",nigga,INNER,SLANT,spelling,LOW,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,31,"Take this shit to trial, nigga, I'm gon' beat it",beat,END,SLANT,cmu,MED,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",nigga,31,"Take this shit to trial, nigga, I'm gon' beat it",nigga,INNER,REPEAT,spelling,HIGH,N
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",nigga,31,"Take this shit to trial, nigga, I'm gon' beat it",shit,INNER,SLANT,spelling,LOW,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",ticket,31,"Take this shit to trial, nigga, I'm gon' beat it",nigga,INNER,SLANT,spelling,LOW,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",ticket,31,"Take this shit to trial, nigga, I'm gon' beat it",shit,INNER,SLANT,cmu,MED,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,32,"Spilt my lean, it got me heated",heated,END,SLANT,cmu,MED,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,32,"Spilt my lean, it got me heated",lean,INNER,SLANT,cmu,MED,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",ticket,32,"Spilt my lean, it got me heated",Spilt,INNER,SLANT,cmu,MED,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,33,"Say it one time, I don't repeat it",repeat,END,SLANT,cmu,MED,Y
+Crisis,30,"Can't have a ticket, nigga, off my beeper (21)",beeper,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,END,SLANT,cmu,MED,Y
+Crisis,31,"Take this shit to trial, nigga, I'm gon' beat it",shit,31,"Take this shit to trial, nigga, I'm gon' beat it",nigga,INNER,SLANT,spelling,LOW,Y
+Crisis,31,"Take this shit to trial, nigga, I'm gon' beat it",beat,32,"Spilt my lean, it got me heated",heated,END,SLANT,cmu,MED,Y
+Crisis,31,"Take this shit to trial, nigga, I'm gon' beat it",beat,32,"Spilt my lean, it got me heated",lean,INNER,SLANT,cmu,MED,Y
+Crisis,31,"Take this shit to trial, nigga, I'm gon' beat it",shit,32,"Spilt my lean, it got me heated",Spilt,INNER,SLANT,cmu,MED,Y
+Crisis,31,"Take this shit to trial, nigga, I'm gon' beat it",beat,33,"Say it one time, I don't repeat it",repeat,END,PERFECT,cmu,HIGH,Y
+Crisis,31,"Take this shit to trial, nigga, I'm gon' beat it",gon,33,"Say it one time, I don't repeat it",don't,INNER,SLANT,spelling,LOW,Y
+Crisis,31,"Take this shit to trial, nigga, I'm gon' beat it",Take,33,"Say it one time, I don't repeat it",Say,INNER,ASSONANCE,vowel,MED,Y
+Crisis,31,"Take this shit to trial, nigga, I'm gon' beat it",trial,33,"Say it one time, I don't repeat it",time,INNER,SLANT,cmu,MED,Y
+Crisis,31,"Take this shit to trial, nigga, I'm gon' beat it",beat,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,END,PERFECT,cmu,HIGH,Y
+Crisis,32,"Spilt my lean, it got me heated",lean,32,"Spilt my lean, it got me heated",heated,INNER,ASSONANCE,vowel,MED,Y
+Crisis,32,"Spilt my lean, it got me heated",heated,33,"Say it one time, I don't repeat it",repeat,END,SLANT,cmu,MED,Y
+Crisis,32,"Spilt my lean, it got me heated",lean,33,"Say it one time, I don't repeat it",repeat,INNER,SLANT,cmu,MED,Y
+Crisis,32,"Spilt my lean, it got me heated",heated,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,END,SLANT,cmu,MED,Y
+Crisis,32,"Spilt my lean, it got me heated",heated,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,INNER,SLANT,cmu,MED,Y
+Crisis,32,"Spilt my lean, it got me heated",heated,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",knees,INNER,ASSONANCE,vowel,MED,Y
+Crisis,32,"Spilt my lean, it got me heated",lean,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,INNER,SLANT,cmu,MED,Y
+Crisis,32,"Spilt my lean, it got me heated",lean,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",knees,INNER,SLANT,cmu,MED,Y
+Crisis,33,"Say it one time, I don't repeat it",repeat,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,END,PERFECT,cmu,HIGH,Y
+Crisis,33,"Say it one time, I don't repeat it",repeat,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,INNER,PERFECT,cmu,HIGH,Y
+Crisis,33,"Say it one time, I don't repeat it",repeat,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",knees,INNER,SLANT,cmu,MED,Y
+Crisis,33,"Say it one time, I don't repeat it",Say,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",Baby,INNER,ASSONANCE,vowel,MED,Y
+Crisis,33,"Say it one time, I don't repeat it",repeat,35,Walking out of Louis V with the big box,V,INNER,ASSONANCE,vowel,MED,Y
+Crisis,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,INNER,REPEAT,spelling,HIGH,N
+Crisis,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",knees,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,INNER,SLANT,cmu,MED,Y
+Crisis,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",eat,35,Walking out of Louis V with the big box,V,INNER,ASSONANCE,vowel,MED,Y
+Crisis,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",knees,35,Walking out of Louis V with the big box,V,INNER,ASSONANCE,vowel,MED,Y
+Crisis,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",Baby,36,"Yeah, pulled up Saint Laurent, I made a pit stop",made,INNER,SLANT,cmu,MED,Y
+Crisis,34,"Baby, get down on your knees and eat it, (Wow) eat it, eat it",Baby,36,"Yeah, pulled up Saint Laurent, I made a pit stop",Saint,INNER,ASSONANCE,vowel,MED,Y
+Crisis,35,Walking out of Louis V with the big box,box,36,"Yeah, pulled up Saint Laurent, I made a pit stop",stop,END,ASSONANCE,vowel,MED,Y
+Crisis,35,Walking out of Louis V with the big box,big,36,"Yeah, pulled up Saint Laurent, I made a pit stop",pit,INNER,SLANT,cmu,MED,Y
+Crisis,35,Walking out of Louis V with the big box,Walking,36,"Yeah, pulled up Saint Laurent, I made a pit stop",Laurent,INNER,ASSONANCE,vowel,MED,Y
+Crisis,35,Walking out of Louis V with the big box,box,37,Young Savage walk around with the big Glock (21),Glock,END,SLANT,cmu,MED,Y
+Crisis,35,Walking out of Louis V with the big box,big,37,Young Savage walk around with the big Glock (21),big,INNER,REPEAT,spelling,HIGH,N
+Crisis,35,Walking out of Louis V with the big box,Walking,37,Young Savage walk around with the big Glock (21),walk,INNER,SLANT,cmu,MED,Y
+Crisis,35,Walking out of Louis V with the big box,box,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hop,END,ASSONANCE,vowel,MED,Y
+Crisis,35,Walking out of Louis V with the big box,box,39,"Car too fast, 12 can't stop me (Skrrt)",stop,END,ASSONANCE,vowel,MED,Y
+Crisis,36,"Yeah, pulled up Saint Laurent, I made a pit stop",Saint,36,"Yeah, pulled up Saint Laurent, I made a pit stop",made,INNER,ASSONANCE,vowel,MED,Y
+Crisis,36,"Yeah, pulled up Saint Laurent, I made a pit stop",stop,37,Young Savage walk around with the big Glock (21),Glock,END,SLANT,cmu,MED,Y
+Crisis,36,"Yeah, pulled up Saint Laurent, I made a pit stop",Laurent,37,Young Savage walk around with the big Glock (21),walk,INNER,ASSONANCE,vowel,MED,Y
+Crisis,36,"Yeah, pulled up Saint Laurent, I made a pit stop",pit,37,Young Savage walk around with the big Glock (21),big,INNER,SLANT,cmu,MED,Y
+Crisis,36,"Yeah, pulled up Saint Laurent, I made a pit stop",stop,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hop,END,PERFECT,cmu,HIGH,Y
+Crisis,36,"Yeah, pulled up Saint Laurent, I made a pit stop",pit,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hip,INNER,SLANT,cmu,MED,Y
+Crisis,36,"Yeah, pulled up Saint Laurent, I made a pit stop",pit,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",nigga,INNER,SLANT,spelling,LOW,Y
+Crisis,36,"Yeah, pulled up Saint Laurent, I made a pit stop",stop,39,"Car too fast, 12 can't stop me (Skrrt)",stop,END,REPEAT,spelling,HIGH,N
+Crisis,37,Young Savage walk around with the big Glock (21),Glock,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hop,END,SLANT,cmu,MED,Y
+Crisis,37,Young Savage walk around with the big Glock (21),big,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hip,INNER,SLANT,cmu,MED,Y
+Crisis,37,Young Savage walk around with the big Glock (21),big,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",nigga,INNER,SLANT,spelling,LOW,Y
+Crisis,37,Young Savage walk around with the big Glock (21),Savage,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hangin,INNER,ASSONANCE,vowel,MED,Y
+Crisis,37,Young Savage walk around with the big Glock (21),Glock,39,"Car too fast, 12 can't stop me (Skrrt)",stop,END,SLANT,cmu,MED,Y
+Crisis,37,Young Savage walk around with the big Glock (21),Glock,39,"Car too fast, 12 can't stop me (Skrrt)",Car,INNER,SLANT,cmu,MED,Y
+Crisis,37,Young Savage walk around with the big Glock (21),Savage,39,"Car too fast, 12 can't stop me (Skrrt)",can't,INNER,ASSONANCE,vowel,MED,Y
+Crisis,37,Young Savage walk around with the big Glock (21),Savage,39,"Car too fast, 12 can't stop me (Skrrt)",fast,INNER,ASSONANCE,vowel,MED,Y
+Crisis,37,Young Savage walk around with the big Glock (21),Glock,41,"You was running from the smoke, nigga, not me (On God)",not,END,SLANT,cmu,MED,Y
+Crisis,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",nigga,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hip,INNER,SLANT,spelling,LOW,Y
+Crisis,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hop,39,"Car too fast, 12 can't stop me (Skrrt)",stop,END,PERFECT,cmu,HIGH,Y
+Crisis,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hangin,39,"Car too fast, 12 can't stop me (Skrrt)",can't,INNER,ASSONANCE,vowel,MED,Y
+Crisis,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hangin,39,"Car too fast, 12 can't stop me (Skrrt)",fast,INNER,ASSONANCE,vowel,MED,Y
+Crisis,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hop,39,"Car too fast, 12 can't stop me (Skrrt)",Car,INNER,SLANT,cmu,MED,Y
+Crisis,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hangin,40,"Bitch too bad, hoes can't fuck me (21)",bad,INNER,ASSONANCE,vowel,MED,Y
+Crisis,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hangin,40,"Bitch too bad, hoes can't fuck me (21)",can't,INNER,ASSONANCE,vowel,MED,Y
+Crisis,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hip,40,"Bitch too bad, hoes can't fuck me (21)",Bitch,INNER,SLANT,cmu,MED,Y
+Crisis,38,"With that .30 hangin' out, nigga that's hip-hop (Facts)",hop,41,"You was running from the smoke, nigga, not me (On God)",not,END,SLANT,cmu,MED,Y
+Crisis,39,"Car too fast, 12 can't stop me (Skrrt)",Car,39,"Car too fast, 12 can't stop me (Skrrt)",stop,INNER,SLANT,cmu,MED,Y
+Crisis,39,"Car too fast, 12 can't stop me (Skrrt)",fast,39,"Car too fast, 12 can't stop me (Skrrt)",can't,INNER,SLANT,cmu,MED,Y
+Crisis,39,"Car too fast, 12 can't stop me (Skrrt)",can't,40,"Bitch too bad, hoes can't fuck me (21)",bad,INNER,ASSONANCE,vowel,MED,Y
+Crisis,39,"Car too fast, 12 can't stop me (Skrrt)",can't,40,"Bitch too bad, hoes can't fuck me (21)",can't,INNER,REPEAT,spelling,HIGH,N
+Crisis,39,"Car too fast, 12 can't stop me (Skrrt)",fast,40,"Bitch too bad, hoes can't fuck me (21)",bad,INNER,ASSONANCE,vowel,MED,Y
+Crisis,39,"Car too fast, 12 can't stop me (Skrrt)",fast,40,"Bitch too bad, hoes can't fuck me (21)",can't,INNER,SLANT,cmu,MED,Y
+Crisis,39,"Car too fast, 12 can't stop me (Skrrt)",stop,41,"You was running from the smoke, nigga, not me (On God)",not,END,SLANT,cmu,MED,Y
+Crisis,39,"Car too fast, 12 can't stop me (Skrrt)",Car,41,"You was running from the smoke, nigga, not me (On God)",not,INNER,SLANT,cmu,MED,Y
+Crisis,40,"Bitch too bad, hoes can't fuck me (21)",bad,40,"Bitch too bad, hoes can't fuck me (21)",can't,INNER,ASSONANCE,vowel,MED,Y
+Crisis,40,"Bitch too bad, hoes can't fuck me (21)",fuck,41,"You was running from the smoke, nigga, not me (On God)",running,INNER,ASSONANCE,vowel,MED,Y
+Crisis,40,"Bitch too bad, hoes can't fuck me (21)",hoes,41,"You was running from the smoke, nigga, not me (On God)",smoke,INNER,SLANT,cmu,MED,Y
+Crisis,40,"Bitch too bad, hoes can't fuck me (21)",bad,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",Savage,INNER,ASSONANCE,vowel,MED,Y
+Crisis,40,"Bitch too bad, hoes can't fuck me (21)",Bitch,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",Rich,INNER,PERFECT,cmu,HIGH,Y
+Crisis,40,"Bitch too bad, hoes can't fuck me (21)",can't,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",Savage,INNER,ASSONANCE,vowel,MED,Y
+Crisis,40,"Bitch too bad, hoes can't fuck me (21)",hoes,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",O,INNER,ASSONANCE,vowel,MED,Y
+Crisis,41,"You was running from the smoke, nigga, not me (On God)",nigga,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",Chigga,INNER,MULTI,multi,MED,Y
+Crisis,41,"You was running from the smoke, nigga, not me (On God)",smoke,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",O,INNER,ASSONANCE,vowel,MED,Y
+Crisis,41,"You was running from the smoke, nigga, not me (On God)",smoke nigga,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",Rich Chigga,INNER,MULTI,multi,MED,Y
+Crisis,41,"You was running from the smoke, nigga, not me (On God)",nigga,43,"She act like a bird, I wear shit made out of fur",shit,INNER,SLANT,spelling,LOW,Y
+Crisis,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",Chigga,43,"She act like a bird, I wear shit made out of fur",shit,INNER,SLANT,spelling,LOW,Y
+Crisis,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",Rich,43,"She act like a bird, I wear shit made out of fur",shit,INNER,SLANT,cmu,MED,Y
+Crisis,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",Savage,43,"She act like a bird, I wear shit made out of fur",act,INNER,ASSONANCE,vowel,MED,Y
+Crisis,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",D,44,"Your man say he getting money, claim that he's entrepreneur",he's,INNER,ASSONANCE,vowel,MED,Y
+Crisis,42,"Rich Chigga, 21 Savage, now it's O.D. (21)",Savage,44,"Your man say he getting money, claim that he's entrepreneur",man,INNER,ASSONANCE,vowel,MED,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",bird,43,"She act like a bird, I wear shit made out of fur",fur,INNER,ASSONANCE,vowel,MED,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",fur,44,"Your man say he getting money, claim that he's entrepreneur",entrepreneur,END,PERFECT,cmu,HIGH,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",act,44,"Your man say he getting money, claim that he's entrepreneur",man,INNER,ASSONANCE,vowel,MED,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",bird,44,"Your man say he getting money, claim that he's entrepreneur",entrepreneur,INNER,ASSONANCE,vowel,MED,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",made,44,"Your man say he getting money, claim that he's entrepreneur",claim,INNER,SLANT,cmu,MED,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",made,44,"Your man say he getting money, claim that he's entrepreneur",say,INNER,ASSONANCE,vowel,MED,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",wear,44,"Your man say he getting money, claim that he's entrepreneur",getting,INNER,ASSONANCE,vowel,MED,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",act,45,"Fast car like Fast & Furious, she throw it back, DeLorean",back,INNER,SLANT,cmu,MED,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",act,45,"Fast car like Fast & Furious, she throw it back, DeLorean",Fast,INNER,SLANT,cmu,MED,Y
+Crisis,43,"She act like a bird, I wear shit made out of fur",like,45,"Fast car like Fast & Furious, she throw it back, DeLorean",like,INNER,REPEAT,spelling,HIGH,N
+Crisis,44,"Your man say he getting money, claim that he's entrepreneur",say,44,"Your man say he getting money, claim that he's entrepreneur",claim,INNER,ASSONANCE,vowel,MED,Y
+Crisis,44,"Your man say he getting money, claim that he's entrepreneur",man,45,"Fast car like Fast & Furious, she throw it back, DeLorean",back,INNER,SLANT,cmu,MED,Y
+Crisis,44,"Your man say he getting money, claim that he's entrepreneur",man,45,"Fast car like Fast & Furious, she throw it back, DeLorean",Fast,INNER,ASSONANCE,vowel,MED,Y
+Crisis,44,"Your man say he getting money, claim that he's entrepreneur",money,46,I'm sittin' in somebody's BMW recordin' this,BMW,INNER,ASSONANCE,vowel,MED,Y
+Crisis,45,"Fast car like Fast & Furious, she throw it back, DeLorean",Fast,45,"Fast car like Fast & Furious, she throw it back, DeLorean",back,INNER,ASSONANCE,vowel,MED,Y
+Crisis,45,"Fast car like Fast & Furious, she throw it back, DeLorean",Fast,45,"Fast car like Fast & Furious, she throw it back, DeLorean",Fast,INNER,REPEAT,spelling,HIGH,N
+Crisis,45,"Fast car like Fast & Furious, she throw it back, DeLorean",DeLorean,46,I'm sittin' in somebody's BMW recordin' this,recordin,END,SLANT,cmu,MED,Y
+Crisis,45,"Fast car like Fast & Furious, she throw it back, DeLorean",car,46,I'm sittin' in somebody's BMW recordin' this,somebody's,INNER,ASSONANCE,vowel,MED,Y
+Crisis,45,"Fast car like Fast & Furious, she throw it back, DeLorean",back,47,"Not my whip, not my whip, rather walk or take a Lyft",rather,INNER,SLANT,cmu,MED,Y
+Crisis,45,"Fast car like Fast & Furious, she throw it back, DeLorean",car,47,"Not my whip, not my whip, rather walk or take a Lyft",Not,INNER,SLANT,cmu,MED,Y
+Crisis,45,"Fast car like Fast & Furious, she throw it back, DeLorean",DeLorean,47,"Not my whip, not my whip, rather walk or take a Lyft",walk,INNER,ASSONANCE,vowel,MED,Y
+Crisis,45,"Fast car like Fast & Furious, she throw it back, DeLorean",Fast,47,"Not my whip, not my whip, rather walk or take a Lyft",rather,INNER,ASSONANCE,vowel,MED,Y
+Crisis,46,I'm sittin' in somebody's BMW recordin' this,recordin,47,"Not my whip, not my whip, rather walk or take a Lyft",walk,INNER,ASSONANCE,vowel,MED,Y
+Crisis,46,I'm sittin' in somebody's BMW recordin' this,sittin,47,"Not my whip, not my whip, rather walk or take a Lyft",whip,INNER,ASSONANCE,vowel,MED,Y
+Crisis,46,I'm sittin' in somebody's BMW recordin' this,somebody's,47,"Not my whip, not my whip, rather walk or take a Lyft",Not,INNER,ASSONANCE,vowel,MED,Y
+Crisis,46,I'm sittin' in somebody's BMW recordin' this,sittin,48,"On a trip, I hit the strip, that made me sad and then I dip",dip,INNER,ASSONANCE,vowel,MED,Y
+Crisis,46,I'm sittin' in somebody's BMW recordin' this,sittin,48,"On a trip, I hit the strip, that made me sad and then I dip",hit,INNER,SLANT,cmu,MED,Y
+Crisis,46,I'm sittin' in somebody's BMW recordin' this,sittin,48,"On a trip, I hit the strip, that made me sad and then I dip",strip,INNER,ASSONANCE,vowel,MED,Y
+Crisis,46,I'm sittin' in somebody's BMW recordin' this,sittin,48,"On a trip, I hit the strip, that made me sad and then I dip",trip,INNER,ASSONANCE,vowel,MED,Y
+Crisis,47,"Not my whip, not my whip, rather walk or take a Lyft",Not,47,"Not my whip, not my whip, rather walk or take a Lyft",not,INNER,REPEAT,spelling,HIGH,N
+Crisis,47,"Not my whip, not my whip, rather walk or take a Lyft",whip,47,"Not my whip, not my whip, rather walk or take a Lyft",whip,INNER,REPEAT,spelling,HIGH,N
+Crisis,47,"Not my whip, not my whip, rather walk or take a Lyft",rather,48,"On a trip, I hit the strip, that made me sad and then I dip",sad,INNER,SLANT,cmu,MED,Y
+Crisis,47,"Not my whip, not my whip, rather walk or take a Lyft",take,48,"On a trip, I hit the strip, that made me sad and then I dip",made,INNER,SLANT,cmu,MED,Y
+Crisis,47,"Not my whip, not my whip, rather walk or take a Lyft",whip,48,"On a trip, I hit the strip, that made me sad and then I dip",dip,INNER,PERFECT,cmu,HIGH,Y
+Crisis,47,"Not my whip, not my whip, rather walk or take a Lyft",whip,48,"On a trip, I hit the strip, that made me sad and then I dip",hit,INNER,SLANT,cmu,MED,Y
+Crisis,47,"Not my whip, not my whip, rather walk or take a Lyft",whip,48,"On a trip, I hit the strip, that made me sad and then I dip",strip,INNER,PERFECT,cmu,HIGH,Y
+Crisis,47,"Not my whip, not my whip, rather walk or take a Lyft",whip,48,"On a trip, I hit the strip, that made me sad and then I dip",trip,INNER,PERFECT,cmu,HIGH,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",hit,48,"On a trip, I hit the strip, that made me sad and then I dip",dip,INNER,SLANT,cmu,MED,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",hit,48,"On a trip, I hit the strip, that made me sad and then I dip",strip,INNER,SLANT,cmu,MED,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",strip,48,"On a trip, I hit the strip, that made me sad and then I dip",dip,INNER,PERFECT,cmu,HIGH,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",trip,48,"On a trip, I hit the strip, that made me sad and then I dip",dip,INNER,PERFECT,cmu,HIGH,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",trip,48,"On a trip, I hit the strip, that made me sad and then I dip",hit,INNER,SLANT,cmu,MED,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",trip,48,"On a trip, I hit the strip, that made me sad and then I dip",strip,INNER,PERFECT,cmu,HIGH,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",dip,50,People 'round him go in circles,him,INNER,SLANT,cmu,MED,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",hit,50,People 'round him go in circles,him,INNER,SLANT,cmu,MED,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",strip,50,People 'round him go in circles,him,INNER,SLANT,cmu,MED,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",trip,50,People 'round him go in circles,him,INNER,SLANT,cmu,MED,Y
+Crisis,48,"On a trip, I hit the strip, that made me sad and then I dip",dip,51,Head is spinnin' with no fidget (Recipe),fidget,END,ASSONANCE,vowel,MED,Y
+Crisis,49,"Ayy, Brian learnin' how to live it (Damn)",Brian,49,"Ayy, Brian learnin' how to live it (Damn)",live,INNER,SLANT,cmu,MED,Y
+Crisis,49,"Ayy, Brian learnin' how to live it (Damn)",how,50,People 'round him go in circles,'round,INNER,ASSONANCE,vowel,MED,Y
+Crisis,49,"Ayy, Brian learnin' how to live it (Damn)",learnin,50,People 'round him go in circles,circles,INNER,ASSONANCE,vowel,MED,Y
+Crisis,50,People 'round him go in circles,go,51,Head is spinnin' with no fidget (Recipe),no,INNER,PERFECT,cmu,HIGH,Y
+Crisis,50,People 'round him go in circles,him,51,Head is spinnin' with no fidget (Recipe),fidget,INNER,ASSONANCE,vowel,MED,Y
+Crisis,50,People 'round him go in circles,him,51,Head is spinnin' with no fidget (Recipe),spinnin,INNER,SLANT,cmu,MED,Y
+Crisis,50,People 'round him go in circles,go,52,"Used to play the drums though, never liked it, no, no",no,INNER,PERFECT,cmu,HIGH,Y
+Crisis,50,People 'round him go in circles,go,52,"Used to play the drums though, never liked it, no, no",though,INNER,PERFECT,cmu,HIGH,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),spinnin,51,Head is spinnin' with no fidget (Recipe),fidget,INNER,ASSONANCE,vowel,MED,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),Head,52,"Used to play the drums though, never liked it, no, no",never,INNER,SLANT,cmu,MED,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),no,52,"Used to play the drums though, never liked it, no, no",no,INNER,REPEAT,spelling,HIGH,N
+Crisis,51,Head is spinnin' with no fidget (Recipe),no,52,"Used to play the drums though, never liked it, no, no",though,INNER,PERFECT,cmu,HIGH,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),fidget,53,Lil' Brian didn't see the bigger picture,picture,END,ASSONANCE,vowel,MED,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),fidget,53,Lil' Brian didn't see the bigger picture,bigger,INNER,ASSONANCE,vowel,MED,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),fidget,53,Lil' Brian didn't see the bigger picture,didn't,INNER,ASSONANCE,vowel,MED,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),fidget,53,Lil' Brian didn't see the bigger picture,Lil,INNER,ASSONANCE,vowel,MED,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),spinnin,53,Lil' Brian didn't see the bigger picture,bigger,INNER,ASSONANCE,vowel,MED,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),spinnin,53,Lil' Brian didn't see the bigger picture,didn't,INNER,ASSONANCE,vowel,MED,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),spinnin,53,Lil' Brian didn't see the bigger picture,Lil,INNER,ASSONANCE,vowel,MED,Y
+Crisis,51,Head is spinnin' with no fidget (Recipe),spinnin,53,Lil' Brian didn't see the bigger picture,picture,INNER,ASSONANCE,vowel,MED,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",no,52,"Used to play the drums though, never liked it, no, no",no,INNER,REPEAT,spelling,HIGH,N
+Crisis,52,"Used to play the drums though, never liked it, no, no",though,52,"Used to play the drums though, never liked it, no, no",no,INNER,PERFECT,cmu,HIGH,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",liked,53,Lil' Brian didn't see the bigger picture,Brian,INNER,ASSONANCE,vowel,MED,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",no,54,"Rap-rap on my own beats so, one hundred percent goes",goes,END,ASSONANCE,vowel,MED,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",drums,54,"Rap-rap on my own beats so, one hundred percent goes",hundred,INNER,ASSONANCE,vowel,MED,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",drums,54,"Rap-rap on my own beats so, one hundred percent goes",one,INNER,ASSONANCE,vowel,MED,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",never,54,"Rap-rap on my own beats so, one hundred percent goes",percent,INNER,ASSONANCE,vowel,MED,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",no,54,"Rap-rap on my own beats so, one hundred percent goes",goes,INNER,ASSONANCE,vowel,MED,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",no,54,"Rap-rap on my own beats so, one hundred percent goes",own,INNER,ASSONANCE,vowel,MED,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",though,54,"Rap-rap on my own beats so, one hundred percent goes",goes,INNER,ASSONANCE,vowel,MED,Y
+Crisis,52,"Used to play the drums though, never liked it, no, no",though,54,"Rap-rap on my own beats so, one hundred percent goes",own,INNER,ASSONANCE,vowel,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,bigger,53,Lil' Brian didn't see the bigger picture,picture,INNER,ASSONANCE,vowel,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,didn't,53,Lil' Brian didn't see the bigger picture,bigger,INNER,ASSONANCE,vowel,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,didn't,53,Lil' Brian didn't see the bigger picture,picture,INNER,ASSONANCE,vowel,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,Lil,53,Lil' Brian didn't see the bigger picture,bigger,INNER,SLANT,cmu,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,Lil,53,Lil' Brian didn't see the bigger picture,didn't,INNER,ASSONANCE,vowel,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,Lil,53,Lil' Brian didn't see the bigger picture,picture,INNER,ASSONANCE,vowel,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,see,54,"Rap-rap on my own beats so, one hundred percent goes",beats,INNER,ASSONANCE,vowel,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,bigger,55,Straight to my 'lil pockets and I keep it,'lil,INNER,SLANT,cmu,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,didn't,55,Straight to my 'lil pockets and I keep it,'lil,INNER,ASSONANCE,vowel,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,Lil,55,Straight to my 'lil pockets and I keep it,'lil,INNER,REPEAT,spelling,HIGH,N
+Crisis,53,Lil' Brian didn't see the bigger picture,picture,55,Straight to my 'lil pockets and I keep it,'lil,INNER,ASSONANCE,vowel,MED,Y
+Crisis,53,Lil' Brian didn't see the bigger picture,see,55,Straight to my 'lil pockets and I keep it,keep,INNER,ASSONANCE,vowel,MED,Y
+Crisis,54,"Rap-rap on my own beats so, one hundred percent goes",one,54,"Rap-rap on my own beats so, one hundred percent goes",hundred,INNER,ASSONANCE,vowel,MED,Y
+Crisis,54,"Rap-rap on my own beats so, one hundred percent goes",own,54,"Rap-rap on my own beats so, one hundred percent goes",goes,INNER,SLANT,cmu,MED,Y
+Crisis,54,"Rap-rap on my own beats so, one hundred percent goes",Rap,54,"Rap-rap on my own beats so, one hundred percent goes",rap,INNER,REPEAT,spelling,HIGH,N
+Crisis,54,"Rap-rap on my own beats so, one hundred percent goes",beats,55,Straight to my 'lil pockets and I keep it,keep,INNER,ASSONANCE,vowel,MED,Y

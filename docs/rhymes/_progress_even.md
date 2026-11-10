@@ -196,6 +196,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 184 | ray-vicks | Ray Vicks | 1 | 57 | 364 | 40 | 324 | 364 | 2026-11-10 13:21 ET |
 | 185 | b-lovee | B-Lovee | 1 | 56 | 307 | 52 | 255 | 301 | 2026-11-10 13:21 ET |
 | 186 | hxllywood | HXLLYWOOD | 1 | 56 | 236 | 37 | 199 | 235 | 2026-11-10 13:21 ET |
+| 187 | leaf-ward | Leaf Ward | 1 | 56 | 283 | 95 | 188 | 280 | 2026-11-10 13:21 ET |
+| 188 | trouble | Trouble | 2 | 56 | 466 | 30 | 436 | 462 | 2026-11-10 13:21 ET |
+| 189 | b-la-b | B La B | 1 | 55 | 291 | 47 | 244 | 287 | 2026-11-10 13:21 ET |
+| 190 | doechii | Doechii | 2 | 55 | 278 | 39 | 239 | 269 | 2026-11-10 13:21 ET |
+| 191 | rich-brian | Rich Brian | 1 | 55 | 342 | 56 | 286 | 339 | 2026-11-10 13:21 ET |
+| 192 | unotheactivist | UnoTheActivist | 1 | 55 | 268 | 51 | 217 | 267 | 2026-11-10 13:22 ET |
+| 193 | 1up-tee | 1Up Tee | 1 | 54 | 451 | 61 | 390 | 444 | 2026-11-10 13:22 ET |
+| 194 | farruko | Farruko | 1 | 54 | 437 | 37 | 400 | 392 | 2026-11-10 13:22 ET |
+| 195 | kyle | KYLE | 1 | 54 | 402 | 96 | 306 | 401 | 2026-11-10 13:22 ET |
+| 196 | made-man | Made Man | 1 | 54 | 208 | 66 | 142 | 207 | 2026-11-10 13:22 ET |
 
 ## Failures
 
@@ -203,7 +213,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 186/386: HXLLYWOOD.
+Finished 196/386: Made Man.
 
 ## Final
 
