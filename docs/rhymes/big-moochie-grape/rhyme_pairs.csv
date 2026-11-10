@@ -1,0 +1,621 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+I Made It,2,"Yeah, keep me a strap but I got me four felonies (Keep me four straps)",felonies,3,"East Haiti veteran, we serving that fentanyl (East Haiti)",veteran,INNER,ASSONANCE,vowel,MED,Y
+I Made It,2,"Yeah, keep me a strap but I got me four felonies (Keep me four straps)",keep,3,"East Haiti veteran, we serving that fentanyl (East Haiti)",East,INNER,ASSONANCE,vowel,MED,Y
+I Made It,2,"Yeah, keep me a strap but I got me four felonies (Keep me four straps)",got,4,Bumpin' this shit out the spot (Bumpin' it) and it jump like a trampoline (Jumpin' like),spot,INNER,PERFECT,cmu,HIGH,Y
+I Made It,2,"Yeah, keep me a strap but I got me four felonies (Keep me four straps)",keep,4,Bumpin' this shit out the spot (Bumpin' it) and it jump like a trampoline (Jumpin' like),trampoline,INNER,SLANT,cmu,MED,Y
+I Made It,3,"East Haiti veteran, we serving that fentanyl (East Haiti)",East,4,Bumpin' this shit out the spot (Bumpin' it) and it jump like a trampoline (Jumpin' like),trampoline,INNER,ASSONANCE,vowel,MED,Y
+I Made It,3,"East Haiti veteran, we serving that fentanyl (East Haiti)",East,5,"Never did read, but I fill up my magazine (My magazine)",magazine,INNER,ASSONANCE,vowel,MED,Y
+I Made It,3,"East Haiti veteran, we serving that fentanyl (East Haiti)",veteran,5,"Never did read, but I fill up my magazine (My magazine)",Never,INNER,ASSONANCE,vowel,MED,Y
+I Made It,3,"East Haiti veteran, we serving that fentanyl (East Haiti)",veteran,5,"Never did read, but I fill up my magazine (My magazine)",read,INNER,ASSONANCE,vowel,MED,Y
+I Made It,4,Bumpin' this shit out the spot (Bumpin' it) and it jump like a trampoline (Jumpin' like),Bumpin,4,Bumpin' this shit out the spot (Bumpin' it) and it jump like a trampoline (Jumpin' like),jump,INNER,SLANT,cmu,MED,Y
+I Made It,4,Bumpin' this shit out the spot (Bumpin' it) and it jump like a trampoline (Jumpin' like),trampoline,5,"Never did read, but I fill up my magazine (My magazine)",magazine,END,PERFECT,cmu,HIGH,Y
+I Made It,4,Bumpin' this shit out the spot (Bumpin' it) and it jump like a trampoline (Jumpin' like),shit,5,"Never did read, but I fill up my magazine (My magazine)",fill,INNER,SLANT,cmu,MED,Y
+I Made It,4,Bumpin' this shit out the spot (Bumpin' it) and it jump like a trampoline (Jumpin' like),trampoline,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",scene,END,PERFECT,cmu,HIGH,Y
+I Made It,5,"Never did read, but I fill up my magazine (My magazine)",Never,5,"Never did read, but I fill up my magazine (My magazine)",read,INNER,SLANT,cmu,MED,Y
+I Made It,5,"Never did read, but I fill up my magazine (My magazine)",fill,7,"A1, Dope Jay, then we made the millions (A1)",millions,INNER,ASSONANCE,vowel,MED,Y
+I Made It,5,"Never did read, but I fill up my magazine (My magazine)",magazine,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",scene,END,PERFECT,cmu,HIGH,Y
+I Made It,6,"Packin' 'em to the hood, don't to the tampering (No tampering)",Packin,6,"Packin' 'em to the hood, don't to the tampering (No tampering)",tampering,INNER,ASSONANCE,vowel,MED,Y
+I Made It,6,"Packin' 'em to the hood, don't to the tampering (No tampering)",don't,7,"A1, Dope Jay, then we made the millions (A1)",Dope,INNER,ASSONANCE,vowel,MED,Y
+I Made It,6,"Packin' 'em to the hood, don't to the tampering (No tampering)",hood,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",Pulling,INNER,ASSONANCE,vowel,MED,Y
+I Made It,7,"A1, Dope Jay, then we made the millions (A1)",Jay,7,"A1, Dope Jay, then we made the millions (A1)",made,INNER,ASSONANCE,vowel,MED,Y
+I Made It,7,"A1, Dope Jay, then we made the millions (A1)",millions,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",killing,INNER,ASSONANCE,vowel,MED,Y
+I Made It,7,"A1, Dope Jay, then we made the millions (A1)",Dope,9,"Yeah, yeah, I know my momma, she proud of me (She proud of me)",know,INNER,ASSONANCE,vowel,MED,Y
+I Made It,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",fuck,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",young,INNER,SLANT,cmu,MED,Y
+I Made It,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",Pulling,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",killing,INNER,PERFECT,spelling,MED,Y
+I Made It,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",fuck,10,Flooded with racks like I hit the lottery (Flooded with racks),Flooded,INNER,SLANT,cmu,MED,Y
+I Made It,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",killing,10,Flooded with racks like I hit the lottery (Flooded with racks),hit,INNER,ASSONANCE,vowel,MED,Y
+I Made It,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",nigga,10,Flooded with racks like I hit the lottery (Flooded with racks),hit,INNER,SLANT,spelling,LOW,Y
+I Made It,8,"Pulling up fresh as fuck, young nigga be killing the scene (Killing shit, dead)",young,10,Flooded with racks like I hit the lottery (Flooded with racks),Flooded,INNER,ASSONANCE,vowel,MED,Y
+I Made It,9,"Yeah, yeah, I know my momma, she proud of me (She proud of me)",momma,10,Flooded with racks like I hit the lottery (Flooded with racks),lottery,INNER,SLANT,cmu,MED,Y
+I Made It,9,"Yeah, yeah, I know my momma, she proud of me (She proud of me)",know,11,"Bring me the dope, serve it up just like pottery (Serve it up)",dope,INNER,ASSONANCE,vowel,MED,Y
+I Made It,9,"Yeah, yeah, I know my momma, she proud of me (She proud of me)",momma,11,"Bring me the dope, serve it up just like pottery (Serve it up)",pottery,INNER,SLANT,cmu,MED,Y
+I Made It,10,Flooded with racks like I hit the lottery (Flooded with racks),lottery,11,"Bring me the dope, serve it up just like pottery (Serve it up)",pottery,END,MULTI,multi,HIGH,Y
+I Made It,10,Flooded with racks like I hit the lottery (Flooded with racks),hit,11,"Bring me the dope, serve it up just like pottery (Serve it up)",Bring,INNER,SLANT,cmu,MED,Y
+I Made It,10,Flooded with racks like I hit the lottery (Flooded with racks),like,11,"Bring me the dope, serve it up just like pottery (Serve it up)",like,INNER,REPEAT,spelling,HIGH,N
+I Made It,10,Flooded with racks like I hit the lottery (Flooded with racks),lottery,12,"I was down bad broke, going through poverty (Down bad)",poverty,END,SLANT,cmu,MED,Y
+I Made It,10,Flooded with racks like I hit the lottery (Flooded with racks),racks,12,"I was down bad broke, going through poverty (Down bad)",bad,INNER,ASSONANCE,vowel,MED,Y
+I Made It,10,Flooded with racks like I hit the lottery (Flooded with racks),lottery,14,"Bands in my pants like I'm serving a colony (Racks, racks)",colony,END,ASSONANCE,vowel,MED,Y
+I Made It,11,"Bring me the dope, serve it up just like pottery (Serve it up)",pottery,12,"I was down bad broke, going through poverty (Down bad)",poverty,END,SLANT,cmu,MED,Y
+I Made It,11,"Bring me the dope, serve it up just like pottery (Serve it up)",dope,12,"I was down bad broke, going through poverty (Down bad)",broke,INNER,SLANT,cmu,MED,Y
+I Made It,11,"Bring me the dope, serve it up just like pottery (Serve it up)",dope,12,"I was down bad broke, going through poverty (Down bad)",going,INNER,SLANT,cmu,MED,Y
+I Made It,11,"Bring me the dope, serve it up just like pottery (Serve it up)",pottery,13,I'm at the top and the nigga can't spot a G (I'm at the top),spot,INNER,SLANT,cmu,MED,Y
+I Made It,11,"Bring me the dope, serve it up just like pottery (Serve it up)",pottery,13,I'm at the top and the nigga can't spot a G (I'm at the top),top,INNER,SLANT,cmu,MED,Y
+I Made It,11,"Bring me the dope, serve it up just like pottery (Serve it up)",pottery,14,"Bands in my pants like I'm serving a colony (Racks, racks)",colony,END,ASSONANCE,vowel,MED,Y
+I Made It,11,"Bring me the dope, serve it up just like pottery (Serve it up)",pottery,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",copying,END,ASSONANCE,vowel,MED,Y
+I Made It,12,"I was down bad broke, going through poverty (Down bad)",broke,12,"I was down bad broke, going through poverty (Down bad)",going,INNER,SLANT,cmu,MED,Y
+I Made It,12,"I was down bad broke, going through poverty (Down bad)",bad,13,I'm at the top and the nigga can't spot a G (I'm at the top),can't,INNER,ASSONANCE,vowel,MED,Y
+I Made It,12,"I was down bad broke, going through poverty (Down bad)",poverty,13,I'm at the top and the nigga can't spot a G (I'm at the top),spot,INNER,SLANT,cmu,MED,Y
+I Made It,12,"I was down bad broke, going through poverty (Down bad)",poverty,13,I'm at the top and the nigga can't spot a G (I'm at the top),top,INNER,ASSONANCE,vowel,MED,Y
+I Made It,12,"I was down bad broke, going through poverty (Down bad)",poverty,14,"Bands in my pants like I'm serving a colony (Racks, racks)",colony,END,ASSONANCE,vowel,MED,Y
+I Made It,12,"I was down bad broke, going through poverty (Down bad)",bad,14,"Bands in my pants like I'm serving a colony (Racks, racks)",Bands,INNER,ASSONANCE,vowel,MED,Y
+I Made It,12,"I was down bad broke, going through poverty (Down bad)",bad,14,"Bands in my pants like I'm serving a colony (Racks, racks)",pants,INNER,ASSONANCE,vowel,MED,Y
+I Made It,12,"I was down bad broke, going through poverty (Down bad)",poverty,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",copying,END,ASSONANCE,vowel,MED,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),top,13,I'm at the top and the nigga can't spot a G (I'm at the top),spot,INNER,SLANT,cmu,MED,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),can't,14,"Bands in my pants like I'm serving a colony (Racks, racks)",Bands,INNER,ASSONANCE,vowel,MED,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),can't,14,"Bands in my pants like I'm serving a colony (Racks, racks)",pants,INNER,SLANT,cmu,MED,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),spot,14,"Bands in my pants like I'm serving a colony (Racks, racks)",colony,INNER,ASSONANCE,vowel,MED,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),top,14,"Bands in my pants like I'm serving a colony (Racks, racks)",colony,INNER,ASSONANCE,vowel,MED,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),G,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",Stealing,INNER,ASSONANCE,vowel,MED,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),G,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",these,INNER,ASSONANCE,vowel,MED,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),nigga,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",lingo,INNER,SLANT,spelling,LOW,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),nigga,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",niggas,INNER,SLANT,spelling,LOW,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),spot,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",copying,INNER,ASSONANCE,vowel,MED,Y
+I Made It,13,I'm at the top and the nigga can't spot a G (I'm at the top),top,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",copying,INNER,SLANT,cmu,MED,Y
+I Made It,14,"Bands in my pants like I'm serving a colony (Racks, racks)",Bands,14,"Bands in my pants like I'm serving a colony (Racks, racks)",pants,INNER,SLANT,cmu,MED,Y
+I Made It,14,"Bands in my pants like I'm serving a colony (Racks, racks)",colony,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",copying,END,ASSONANCE,vowel,MED,Y
+I Made It,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",Stealing,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",these,INNER,ASSONANCE,vowel,MED,Y
+I Made It,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",copying,17,"Got on my shit, and these niggas, they hatin' (They hatin')",Got,INNER,ASSONANCE,vowel,MED,Y
+I Made It,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",lingo,17,"Got on my shit, and these niggas, they hatin' (They hatin')",shit,INNER,ASSONANCE,vowel,MED,Y
+I Made It,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",niggas,17,"Got on my shit, and these niggas, they hatin' (They hatin')",niggas,INNER,REPEAT,spelling,HIGH,N
+I Made It,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",Stealing,17,"Got on my shit, and these niggas, they hatin' (They hatin')",these,INNER,ASSONANCE,vowel,MED,Y
+I Made It,15,"Stealing my lingo, these niggas be copying me (Bitin'-ass niggas)",these,17,"Got on my shit, and these niggas, they hatin' (They hatin')",these,INNER,REPEAT,spelling,HIGH,N
+I Made It,16,"I made it, uh (I made it)",made,17,"Got on my shit, and these niggas, they hatin' (They hatin')",hatin,END,ASSONANCE,vowel,MED,Y
+I Made It,16,"I made it, uh (I made it)",made,18,Label me one of the greatest (The greatest),greatest,END,ASSONANCE,vowel,MED,Y
+I Made It,16,"I made it, uh (I made it)",made,18,Label me one of the greatest (The greatest),Label,INNER,ASSONANCE,vowel,MED,Y
+I Made It,16,"I made it, uh (I made it)",made,19,I was just going through some phases (Some phases),phases,END,ASSONANCE,vowel,MED,Y
+I Made It,16,"I made it, uh (I made it)",made,20,"I gotta thank God that I made it, uh (Yes, sir)",made,END,REPEAT,spelling,HIGH,N
+I Made It,17,"Got on my shit, and these niggas, they hatin' (They hatin')",hatin,18,Label me one of the greatest (The greatest),greatest,END,ASSONANCE,vowel,MED,Y
+I Made It,17,"Got on my shit, and these niggas, they hatin' (They hatin')",hatin,18,Label me one of the greatest (The greatest),Label,INNER,ASSONANCE,vowel,MED,Y
+I Made It,17,"Got on my shit, and these niggas, they hatin' (They hatin')",hatin,19,I was just going through some phases (Some phases),phases,END,ASSONANCE,vowel,MED,Y
+I Made It,17,"Got on my shit, and these niggas, they hatin' (They hatin')",hatin,20,"I gotta thank God that I made it, uh (Yes, sir)",made,END,ASSONANCE,vowel,MED,Y
+I Made It,17,"Got on my shit, and these niggas, they hatin' (They hatin')",hatin,21,I made it (I made it),made,END,ASSONANCE,vowel,MED,Y
+I Made It,18,Label me one of the greatest (The greatest),Label,18,Label me one of the greatest (The greatest),greatest,INNER,ASSONANCE,vowel,MED,Y
+I Made It,18,Label me one of the greatest (The greatest),greatest,19,I was just going through some phases (Some phases),phases,END,ASSONANCE,vowel,MED,Y
+I Made It,18,Label me one of the greatest (The greatest),Label,19,I was just going through some phases (Some phases),phases,INNER,ASSONANCE,vowel,MED,Y
+I Made It,18,Label me one of the greatest (The greatest),one,19,I was just going through some phases (Some phases),some,INNER,SLANT,cmu,MED,Y
+I Made It,18,Label me one of the greatest (The greatest),greatest,20,"I gotta thank God that I made it, uh (Yes, sir)",made,END,ASSONANCE,vowel,MED,Y
+I Made It,18,Label me one of the greatest (The greatest),Label,20,"I gotta thank God that I made it, uh (Yes, sir)",made,INNER,ASSONANCE,vowel,MED,Y
+I Made It,18,Label me one of the greatest (The greatest),greatest,21,I made it (I made it),made,END,ASSONANCE,vowel,MED,Y
+I Made It,18,Label me one of the greatest (The greatest),greatest,22,"Stuck with my niggas, we don't do the trading (My dawgs)",trading,END,ASSONANCE,vowel,MED,Y
+I Made It,19,I was just going through some phases (Some phases),phases,20,"I gotta thank God that I made it, uh (Yes, sir)",made,END,ASSONANCE,vowel,MED,Y
+I Made It,19,I was just going through some phases (Some phases),phases,21,I made it (I made it),made,END,ASSONANCE,vowel,MED,Y
+I Made It,19,I was just going through some phases (Some phases),phases,22,"Stuck with my niggas, we don't do the trading (My dawgs)",trading,END,ASSONANCE,vowel,MED,Y
+I Made It,19,I was just going through some phases (Some phases),phases,23,"Never had nothin', now I'm up, it's amazing (I'm up)",amazing,END,SLANT,cmu,MED,Y
+I Made It,20,"I gotta thank God that I made it, uh (Yes, sir)",gotta,20,"I gotta thank God that I made it, uh (Yes, sir)",God,INNER,SLANT,cmu,MED,Y
+I Made It,20,"I gotta thank God that I made it, uh (Yes, sir)",made,21,I made it (I made it),made,END,REPEAT,spelling,HIGH,N
+I Made It,20,"I gotta thank God that I made it, uh (Yes, sir)",made,22,"Stuck with my niggas, we don't do the trading (My dawgs)",trading,END,SLANT,cmu,MED,Y
+I Made It,20,"I gotta thank God that I made it, uh (Yes, sir)",made,23,"Never had nothin', now I'm up, it's amazing (I'm up)",amazing,END,ASSONANCE,vowel,MED,Y
+I Made It,20,"I gotta thank God that I made it, uh (Yes, sir)",made,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",blazing,END,ASSONANCE,vowel,MED,Y
+I Made It,21,I made it (I made it),made,22,"Stuck with my niggas, we don't do the trading (My dawgs)",trading,END,SLANT,cmu,MED,Y
+I Made It,21,I made it (I made it),made,23,"Never had nothin', now I'm up, it's amazing (I'm up)",amazing,END,ASSONANCE,vowel,MED,Y
+I Made It,21,I made it (I made it),made,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",blazing,END,ASSONANCE,vowel,MED,Y
+I Made It,22,"Stuck with my niggas, we don't do the trading (My dawgs)",trading,23,"Never had nothin', now I'm up, it's amazing (I'm up)",amazing,END,SLANT,cmu,MED,Y
+I Made It,22,"Stuck with my niggas, we don't do the trading (My dawgs)",trading,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",blazing,END,SLANT,cmu,MED,Y
+I Made It,22,"Stuck with my niggas, we don't do the trading (My dawgs)",niggas,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",nigga,INNER,SLANT,spelling,LOW,Y
+I Made It,22,"Stuck with my niggas, we don't do the trading (My dawgs)",Stuck,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",young,INNER,SLANT,cmu,MED,Y
+I Made It,23,"Never had nothin', now I'm up, it's amazing (I'm up)",amazing,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",blazing,END,MULTI,multi,HIGH,Y
+I Made It,23,"Never had nothin', now I'm up, it's amazing (I'm up)",nothin,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",hot,INNER,ASSONANCE,vowel,MED,Y
+I Made It,23,"Never had nothin', now I'm up, it's amazing (I'm up)",had,25,"Hopped out that motherfuckin' porch, I got balance",balance,INNER,ASSONANCE,vowel,MED,Y
+I Made It,23,"Never had nothin', now I'm up, it's amazing (I'm up)",nothin,25,"Hopped out that motherfuckin' porch, I got balance",got,INNER,ASSONANCE,vowel,MED,Y
+I Made It,23,"Never had nothin', now I'm up, it's amazing (I'm up)",nothin,25,"Hopped out that motherfuckin' porch, I got balance",Hopped,INNER,ASSONANCE,vowel,MED,Y
+I Made It,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",nigga,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",nigga,INNER,REPEAT,spelling,HIGH,N
+I Made It,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",young,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",young,INNER,REPEAT,spelling,HIGH,N
+I Made It,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",hot,25,"Hopped out that motherfuckin' porch, I got balance",got,INNER,PERFECT,cmu,HIGH,Y
+I Made It,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",hot,25,"Hopped out that motherfuckin' porch, I got balance",Hopped,INNER,SLANT,cmu,MED,Y
+I Made It,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",young,25,"Hopped out that motherfuckin' porch, I got balance",motherfuckin,INNER,SLANT,cmu,MED,Y
+I Made It,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",hot,26,Did a few shows and I went bought a Patek,bought,INNER,PERFECT,cmu,HIGH,Y
+I Made It,24,"This young nigga hot, yeah, this young nigga blazing (This young nigga blazing)",hot,26,Did a few shows and I went bought a Patek,Patek,INNER,SLANT,cmu,MED,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",Hopped,25,"Hopped out that motherfuckin' porch, I got balance",got,INNER,SLANT,cmu,MED,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",got,26,Did a few shows and I went bought a Patek,bought,INNER,PERFECT,cmu,HIGH,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",got,26,Did a few shows and I went bought a Patek,Patek,INNER,SLANT,cmu,MED,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",Hopped,26,Did a few shows and I went bought a Patek,bought,INNER,SLANT,cmu,MED,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",Hopped,26,Did a few shows and I went bought a Patek,Patek,INNER,SLANT,cmu,MED,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",balance,27,"Pop out with my new ho, I'm silent, I'm savage",savage,END,ASSONANCE,vowel,MED,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",got,27,"Pop out with my new ho, I'm silent, I'm savage",Pop,INNER,SLANT,cmu,MED,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",Hopped,27,"Pop out with my new ho, I'm silent, I'm savage",Pop,INNER,SLANT,cmu,MED,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",balance,28,"If she ain't fuckin', she sleep on the pallet",pallet,END,ASSONANCE,vowel,MED,Y
+I Made It,25,"Hopped out that motherfuckin' porch, I got balance",balance,29,"I fell asleep on that money, no padding",padding,END,ASSONANCE,vowel,MED,Y
+I Made It,26,Did a few shows and I went bought a Patek,bought,26,Did a few shows and I went bought a Patek,Patek,INNER,SLANT,cmu,MED,Y
+I Made It,26,Did a few shows and I went bought a Patek,bought,27,"Pop out with my new ho, I'm silent, I'm savage",Pop,INNER,SLANT,cmu,MED,Y
+I Made It,26,Did a few shows and I went bought a Patek,few,27,"Pop out with my new ho, I'm silent, I'm savage",new,INNER,PERFECT,cmu,HIGH,Y
+I Made It,26,Did a few shows and I went bought a Patek,Patek,27,"Pop out with my new ho, I'm silent, I'm savage",Pop,INNER,SLANT,cmu,MED,Y
+I Made It,26,Did a few shows and I went bought a Patek,shows,27,"Pop out with my new ho, I'm silent, I'm savage",ho,INNER,ASSONANCE,vowel,MED,Y
+I Made It,26,Did a few shows and I went bought a Patek,went,27,"Pop out with my new ho, I'm silent, I'm savage",silent,INNER,SLANT,spelling,LOW,Y
+I Made It,27,"Pop out with my new ho, I'm silent, I'm savage",savage,28,"If she ain't fuckin', she sleep on the pallet",pallet,END,ASSONANCE,vowel,MED,Y
+I Made It,27,"Pop out with my new ho, I'm silent, I'm savage",savage,29,"I fell asleep on that money, no padding",padding,END,ASSONANCE,vowel,MED,Y
+I Made It,27,"Pop out with my new ho, I'm silent, I'm savage",ho,29,"I fell asleep on that money, no padding",no,INNER,PERFECT,cmu,HIGH,Y
+I Made It,27,"Pop out with my new ho, I'm silent, I'm savage",savage,30,"Fuck her to sleep, I let her have it",have,END,SLANT,cmu,MED,Y
+I Made It,27,"Pop out with my new ho, I'm silent, I'm savage",savage,31,"The Lambo' key, I let her have it",have,END,SLANT,cmu,MED,Y
+I Made It,28,"If she ain't fuckin', she sleep on the pallet",pallet,29,"I fell asleep on that money, no padding",padding,END,ASSONANCE,vowel,MED,Y
+I Made It,28,"If she ain't fuckin', she sleep on the pallet",fuckin,29,"I fell asleep on that money, no padding",money,INNER,SLANT,cmu,MED,Y
+I Made It,28,"If she ain't fuckin', she sleep on the pallet",sleep,29,"I fell asleep on that money, no padding",asleep,INNER,PERFECT,cmu,HIGH,Y
+I Made It,28,"If she ain't fuckin', she sleep on the pallet",pallet,30,"Fuck her to sleep, I let her have it",have,END,ASSONANCE,vowel,MED,Y
+I Made It,28,"If she ain't fuckin', she sleep on the pallet",fuckin,30,"Fuck her to sleep, I let her have it",Fuck,INNER,SLANT,cmu,MED,Y
+I Made It,28,"If she ain't fuckin', she sleep on the pallet",sleep,30,"Fuck her to sleep, I let her have it",sleep,INNER,REPEAT,spelling,HIGH,N
+I Made It,28,"If she ain't fuckin', she sleep on the pallet",pallet,31,"The Lambo' key, I let her have it",have,END,ASSONANCE,vowel,MED,Y
+I Made It,28,"If she ain't fuckin', she sleep on the pallet",pallet,32,Put the Aventador in traffic,traffic,END,ASSONANCE,vowel,MED,Y
+I Made It,29,"I fell asleep on that money, no padding",padding,30,"Fuck her to sleep, I let her have it",have,END,ASSONANCE,vowel,MED,Y
+I Made It,29,"I fell asleep on that money, no padding",asleep,30,"Fuck her to sleep, I let her have it",sleep,INNER,PERFECT,cmu,HIGH,Y
+I Made It,29,"I fell asleep on that money, no padding",fell,30,"Fuck her to sleep, I let her have it",let,INNER,SLANT,cmu,MED,Y
+I Made It,29,"I fell asleep on that money, no padding",money,30,"Fuck her to sleep, I let her have it",Fuck,INNER,SLANT,cmu,MED,Y
+I Made It,29,"I fell asleep on that money, no padding",padding,31,"The Lambo' key, I let her have it",have,END,ASSONANCE,vowel,MED,Y
+I Made It,29,"I fell asleep on that money, no padding",asleep,31,"The Lambo' key, I let her have it",key,INNER,ASSONANCE,vowel,MED,Y
+I Made It,29,"I fell asleep on that money, no padding",fell,31,"The Lambo' key, I let her have it",let,INNER,SLANT,cmu,MED,Y
+I Made It,29,"I fell asleep on that money, no padding",no,31,"The Lambo' key, I let her have it",Lambo,INNER,ASSONANCE,vowel,LOW,N
+I Made It,29,"I fell asleep on that money, no padding",padding,32,Put the Aventador in traffic,traffic,END,ASSONANCE,vowel,MED,Y
+I Made It,29,"I fell asleep on that money, no padding",padding,33,We was gettin' money before the rapping,rapping,END,SLANT,cmu,MED,Y
+I Made It,30,"Fuck her to sleep, I let her have it",have,31,"The Lambo' key, I let her have it",have,END,REPEAT,spelling,HIGH,N
+I Made It,30,"Fuck her to sleep, I let her have it",let,31,"The Lambo' key, I let her have it",let,INNER,REPEAT,spelling,HIGH,N
+I Made It,30,"Fuck her to sleep, I let her have it",sleep,31,"The Lambo' key, I let her have it",key,INNER,ASSONANCE,vowel,MED,Y
+I Made It,30,"Fuck her to sleep, I let her have it",have,32,Put the Aventador in traffic,traffic,END,ASSONANCE,vowel,MED,Y
+I Made It,30,"Fuck her to sleep, I let her have it",have,33,We was gettin' money before the rapping,rapping,END,ASSONANCE,vowel,MED,Y
+I Made It,30,"Fuck her to sleep, I let her have it",have,34,"Butterfly door, let it soar in traffic",traffic,END,ASSONANCE,vowel,MED,Y
+I Made It,31,"The Lambo' key, I let her have it",have,32,Put the Aventador in traffic,traffic,END,ASSONANCE,vowel,MED,Y
+I Made It,31,"The Lambo' key, I let her have it",Lambo,32,Put the Aventador in traffic,Aventador,INNER,ASSONANCE,vowel,LOW,N
+I Made It,31,"The Lambo' key, I let her have it",have,33,We was gettin' money before the rapping,rapping,END,ASSONANCE,vowel,MED,Y
+I Made It,31,"The Lambo' key, I let her have it",let,33,We was gettin' money before the rapping,gettin,INNER,SLANT,cmu,MED,Y
+I Made It,31,"The Lambo' key, I let her have it",have,34,"Butterfly door, let it soar in traffic",traffic,END,ASSONANCE,vowel,MED,Y
+I Made It,31,"The Lambo' key, I let her have it",have,35,I'm looking for something more established,established,END,ASSONANCE,vowel,MED,Y
+I Made It,32,Put the Aventador in traffic,traffic,33,We was gettin' money before the rapping,rapping,END,ASSONANCE,vowel,MED,Y
+I Made It,32,Put the Aventador in traffic,Aventador,33,We was gettin' money before the rapping,before,INNER,PERFECT,spelling,MED,Y
+I Made It,32,Put the Aventador in traffic,traffic,34,"Butterfly door, let it soar in traffic",traffic,END,REPEAT,spelling,HIGH,N
+I Made It,32,Put the Aventador in traffic,Aventador,34,"Butterfly door, let it soar in traffic",door,INNER,PERFECT,spelling,MED,Y
+I Made It,32,Put the Aventador in traffic,Aventador,34,"Butterfly door, let it soar in traffic",soar,INNER,PERFECT,spelling,MED,Y
+I Made It,32,Put the Aventador in traffic,traffic,35,I'm looking for something more established,established,END,ASSONANCE,vowel,MED,Y
+I Made It,33,We was gettin' money before the rapping,rapping,34,"Butterfly door, let it soar in traffic",traffic,END,ASSONANCE,vowel,MED,Y
+I Made It,33,We was gettin' money before the rapping,before,34,"Butterfly door, let it soar in traffic",door,INNER,PERFECT,cmu,HIGH,Y
+I Made It,33,We was gettin' money before the rapping,before,34,"Butterfly door, let it soar in traffic",soar,INNER,PERFECT,cmu,HIGH,Y
+I Made It,33,We was gettin' money before the rapping,gettin,34,"Butterfly door, let it soar in traffic",let,INNER,SLANT,cmu,MED,Y
+I Made It,33,We was gettin' money before the rapping,rapping,35,I'm looking for something more established,established,END,ASSONANCE,vowel,MED,Y
+I Made It,33,We was gettin' money before the rapping,before,35,I'm looking for something more established,more,INNER,PERFECT,cmu,HIGH,Y
+I Made It,33,We was gettin' money before the rapping,money,35,I'm looking for something more established,something,INNER,ASSONANCE,vowel,MED,Y
+I Made It,34,"Butterfly door, let it soar in traffic",door,34,"Butterfly door, let it soar in traffic",soar,INNER,PERFECT,cmu,HIGH,Y
+I Made It,34,"Butterfly door, let it soar in traffic",traffic,35,I'm looking for something more established,established,END,ASSONANCE,vowel,MED,Y
+I Made It,34,"Butterfly door, let it soar in traffic",door,35,I'm looking for something more established,more,INNER,PERFECT,cmu,HIGH,Y
+I Made It,34,"Butterfly door, let it soar in traffic",soar,35,I'm looking for something more established,more,INNER,PERFECT,cmu,HIGH,Y
+I Made It,34,"Butterfly door, let it soar in traffic",Butterfly,36,Why is your ho keep throwing it at me?,Why,INNER,PERFECT,cmu,HIGH,Y
+I Made It,35,I'm looking for something more established,something,37,"Louboutin boots, peanut butter, no jelly",butter,INNER,ASSONANCE,vowel,MED,Y
+I Made It,36,Why is your ho keep throwing it at me?,ho,36,Why is your ho keep throwing it at me?,throwing,INNER,ASSONANCE,vowel,MED,Y
+I Made It,36,Why is your ho keep throwing it at me?,ho,37,"Louboutin boots, peanut butter, no jelly",no,INNER,PERFECT,cmu,HIGH,Y
+I Made It,36,Why is your ho keep throwing it at me?,keep,37,"Louboutin boots, peanut butter, no jelly",peanut,INNER,ASSONANCE,vowel,MED,Y
+I Made It,36,Why is your ho keep throwing it at me?,throwing,37,"Louboutin boots, peanut butter, no jelly",no,INNER,ASSONANCE,vowel,MED,Y
+I Made It,36,Why is your ho keep throwing it at me?,ho,38,"Yellow gold, looking like piss from R Kelly",gold,INNER,ASSONANCE,vowel,MED,Y
+I Made It,36,Why is your ho keep throwing it at me?,throwing,38,"Yellow gold, looking like piss from R Kelly",gold,INNER,ASSONANCE,vowel,MED,Y
+I Made It,36,Why is your ho keep throwing it at me?,Why,38,"Yellow gold, looking like piss from R Kelly",like,INNER,ASSONANCE,vowel,MED,Y
+I Made It,37,"Louboutin boots, peanut butter, no jelly",jelly,38,"Yellow gold, looking like piss from R Kelly",Kelly,END,MULTI,multi,HIGH,Y
+I Made It,37,"Louboutin boots, peanut butter, no jelly",jelly,38,"Yellow gold, looking like piss from R Kelly",Yellow,INNER,SLANT,cmu,MED,Y
+I Made It,37,"Louboutin boots, peanut butter, no jelly",no,38,"Yellow gold, looking like piss from R Kelly",gold,INNER,ASSONANCE,vowel,MED,Y
+I Made It,37,"Louboutin boots, peanut butter, no jelly",jelly,39,"Yellow bone, look like a brick of that smelly, hm",smelly,END,MULTI,multi,HIGH,Y
+I Made It,37,"Louboutin boots, peanut butter, no jelly",jelly,39,"Yellow bone, look like a brick of that smelly, hm",Yellow,INNER,SLANT,cmu,MED,Y
+I Made It,37,"Louboutin boots, peanut butter, no jelly",no,39,"Yellow bone, look like a brick of that smelly, hm",bone,INNER,ASSONANCE,vowel,MED,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",Yellow,38,"Yellow gold, looking like piss from R Kelly",Kelly,INNER,SLANT,cmu,MED,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",Kelly,39,"Yellow bone, look like a brick of that smelly, hm",smelly,END,MULTI,multi,HIGH,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",gold,39,"Yellow bone, look like a brick of that smelly, hm",bone,INNER,ASSONANCE,vowel,MED,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",Kelly,39,"Yellow bone, look like a brick of that smelly, hm",Yellow,INNER,SLANT,cmu,MED,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",like,39,"Yellow bone, look like a brick of that smelly, hm",like,INNER,REPEAT,spelling,HIGH,N
+I Made It,38,"Yellow gold, looking like piss from R Kelly",looking,39,"Yellow bone, look like a brick of that smelly, hm",look,INNER,SLANT,cmu,MED,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",piss,39,"Yellow bone, look like a brick of that smelly, hm",brick,INNER,SLANT,cmu,MED,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",Yellow,39,"Yellow bone, look like a brick of that smelly, hm",smelly,INNER,SLANT,cmu,MED,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",Yellow,39,"Yellow bone, look like a brick of that smelly, hm",Yellow,INNER,REPEAT,spelling,HIGH,N
+I Made It,38,"Yellow gold, looking like piss from R Kelly",Kelly,40,"Boy, you better not inhale it",better,INNER,SLANT,cmu,MED,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",R,40,"Boy, you better not inhale it",not,INNER,SLANT,cmu,MED,Y
+I Made It,38,"Yellow gold, looking like piss from R Kelly",Yellow,40,"Boy, you better not inhale it",better,INNER,SLANT,cmu,MED,Y
+I Made It,39,"Yellow bone, look like a brick of that smelly, hm",Yellow,39,"Yellow bone, look like a brick of that smelly, hm",smelly,INNER,SLANT,cmu,MED,Y
+I Made It,39,"Yellow bone, look like a brick of that smelly, hm",smelly,40,"Boy, you better not inhale it",better,INNER,SLANT,cmu,MED,Y
+I Made It,39,"Yellow bone, look like a brick of that smelly, hm",Yellow,40,"Boy, you better not inhale it",better,INNER,SLANT,cmu,MED,Y
+I Made It,39,"Yellow bone, look like a brick of that smelly, hm",brick,41,"This young nigga hot, this young nigga blazing (This young nigga blazing)",nigga,INNER,SLANT,spelling,LOW,Y
+I Made It,40,"Boy, you better not inhale it",inhale,41,"This young nigga hot, this young nigga blazing (This young nigga blazing)",blazing,END,ASSONANCE,vowel,MED,Y
+I Made It,40,"Boy, you better not inhale it",not,41,"This young nigga hot, this young nigga blazing (This young nigga blazing)",hot,INNER,PERFECT,cmu,HIGH,Y
+I Made It,41,"This young nigga hot, this young nigga blazing (This young nigga blazing)",nigga,41,"This young nigga hot, this young nigga blazing (This young nigga blazing)",nigga,INNER,REPEAT,spelling,HIGH,N
+I Made It,41,"This young nigga hot, this young nigga blazing (This young nigga blazing)",young,41,"This young nigga hot, this young nigga blazing (This young nigga blazing)",young,INNER,REPEAT,spelling,HIGH,N
+No Favors,1,"Big Gigantic, nigga, big humongous, Big Moochie",Big,1,"Big Gigantic, nigga, big humongous, Big Moochie",big,INNER,REPEAT,spelling,HIGH,N
+No Favors,1,"Big Gigantic, nigga, big humongous, Big Moochie",Big,1,"Big Gigantic, nigga, big humongous, Big Moochie",nigga,INNER,SLANT,spelling,LOW,Y
+No Favors,1,"Big Gigantic, nigga, big humongous, Big Moochie",nigga,1,"Big Gigantic, nigga, big humongous, Big Moochie",big,INNER,SLANT,spelling,LOW,Y
+No Favors,1,"Big Gigantic, nigga, big humongous, Big Moochie",nigga,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",niggas,INNER,SLANT,spelling,LOW,Y
+No Favors,1,"Big Gigantic, nigga, big humongous, Big Moochie",Big,3,"Go get the money, do the shit 'til my days up (My days up)",'til,INNER,SLANT,cmu,MED,Y
+No Favors,1,"Big Gigantic, nigga, big humongous, Big Moochie",Big,3,"Go get the money, do the shit 'til my days up (My days up)",shit,INNER,SLANT,cmu,MED,Y
+No Favors,1,"Big Gigantic, nigga, big humongous, Big Moochie",nigga,3,"Go get the money, do the shit 'til my days up (My days up)",shit,INNER,SLANT,spelling,LOW,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",fuck,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",none,INNER,SLANT,cmu,MED,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",made,3,"Go get the money, do the shit 'til my days up (My days up)",days,END,SLANT,cmu,MED,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",don't,3,"Go get the money, do the shit 'til my days up (My days up)",Go,INNER,ASSONANCE,vowel,MED,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",fuck,3,"Go get the money, do the shit 'til my days up (My days up)",money,INNER,SLANT,cmu,MED,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",none,3,"Go get the money, do the shit 'til my days up (My days up)",money,INNER,SLANT,cmu,MED,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",made,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",paid,END,PERFECT,cmu,HIGH,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",don't,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",ho,INNER,ASSONANCE,vowel,MED,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",fuck,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",ugly,INNER,ASSONANCE,vowel,MED,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",none,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",ugly,INNER,ASSONANCE,vowel,MED,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",made,5,Goin' hard just for the days I wasn't able (Uh-huh),able,END,ASSONANCE,vowel,MED,Y
+No Favors,2,"Yeah, don't fuck with none of these niggas, they made up (They made up)",made,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",razor,END,SLANT,cmu,MED,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",shit,3,"Go get the money, do the shit 'til my days up (My days up)",'til,INNER,SLANT,cmu,MED,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",days,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",paid,END,SLANT,cmu,MED,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",'til,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",lil,INNER,PERFECT,cmu,HIGH,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",get,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",said,INNER,SLANT,cmu,MED,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",Go,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",ho,INNER,PERFECT,cmu,HIGH,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",money,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",ugly,INNER,ASSONANCE,vowel,MED,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",shit,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",lil,INNER,SLANT,cmu,MED,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",days,5,Goin' hard just for the days I wasn't able (Uh-huh),able,END,ASSONANCE,vowel,MED,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",days,5,Goin' hard just for the days I wasn't able (Uh-huh),days,INNER,REPEAT,spelling,HIGH,N
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",days,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",razor,END,SLANT,cmu,MED,Y
+No Favors,3,"Go get the money, do the shit 'til my days up (My days up)",days,7,Glock 17 on my hip like a pager (Fah),pager,END,SLANT,cmu,MED,Y
+No Favors,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",said,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",paid,INNER,SLANT,spelling,LOW,Y
+No Favors,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",paid,5,Goin' hard just for the days I wasn't able (Uh-huh),able,END,ASSONANCE,vowel,MED,Y
+No Favors,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",paid,5,Goin' hard just for the days I wasn't able (Uh-huh),days,INNER,SLANT,cmu,MED,Y
+No Favors,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",paid,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",razor,END,SLANT,cmu,MED,Y
+No Favors,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",said,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",hell,INNER,SLANT,cmu,MED,Y
+No Favors,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",ugly,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",Young,INNER,ASSONANCE,vowel,MED,Y
+No Favors,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",paid,7,Glock 17 on my hip like a pager (Fah),pager,END,SLANT,cmu,MED,Y
+No Favors,4,"She said I'm ugly, but lil' ho, I'm paid up (What?)",paid,8,Big Moochie stuck to that money like staples (Big Moochie),staples,END,ASSONANCE,vowel,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),days,5,Goin' hard just for the days I wasn't able (Uh-huh),able,INNER,ASSONANCE,vowel,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),hard,5,Goin' hard just for the days I wasn't able (Uh-huh),wasn't,INNER,ASSONANCE,vowel,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),able,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",razor,END,ASSONANCE,vowel,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),days,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",razor,INNER,SLANT,cmu,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),hard,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",sharp,INNER,SLANT,cmu,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),wasn't,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",sharp,INNER,ASSONANCE,vowel,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),able,7,Glock 17 on my hip like a pager (Fah),pager,END,ASSONANCE,vowel,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),days,7,Glock 17 on my hip like a pager (Fah),pager,INNER,SLANT,cmu,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),hard,7,Glock 17 on my hip like a pager (Fah),Glock,INNER,ASSONANCE,vowel,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),wasn't,7,Glock 17 on my hip like a pager (Fah),Glock,INNER,ASSONANCE,vowel,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),able,8,Big Moochie stuck to that money like staples (Big Moochie),staples,END,ASSONANCE,vowel,MED,Y
+No Favors,5,Goin' hard just for the days I wasn't able (Uh-huh),able,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,END,ASSONANCE,vowel,MED,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",razor,7,Glock 17 on my hip like a pager (Fah),pager,END,SLANT,cmu,MED,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",like,7,Glock 17 on my hip like a pager (Fah),like,INNER,REPEAT,spelling,HIGH,N
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",nigga,7,Glock 17 on my hip like a pager (Fah),hip,INNER,SLANT,spelling,LOW,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",sharp,7,Glock 17 on my hip like a pager (Fah),Glock,INNER,ASSONANCE,vowel,MED,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",razor,8,Big Moochie stuck to that money like staples (Big Moochie),staples,END,ASSONANCE,vowel,MED,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",like,8,Big Moochie stuck to that money like staples (Big Moochie),like,INNER,REPEAT,spelling,HIGH,N
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",nigga,8,Big Moochie stuck to that money like staples (Big Moochie),Big,INNER,SLANT,spelling,LOW,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",smooth,8,Big Moochie stuck to that money like staples (Big Moochie),Moochie,INNER,SLANT,spelling,LOW,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",Young,8,Big Moochie stuck to that money like staples (Big Moochie),money,INNER,SLANT,cmu,MED,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",Young,8,Big Moochie stuck to that money like staples (Big Moochie),stuck,INNER,SLANT,cmu,MED,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",razor,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,END,SLANT,cmu,MED,Y
+No Favors,6,"Young nigga smooth as hell, sharp like a razor (Sharp)",razor,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,END,ASSONANCE,vowel,MED,Y
+No Favors,7,Glock 17 on my hip like a pager (Fah),pager,8,Big Moochie stuck to that money like staples (Big Moochie),staples,END,ASSONANCE,vowel,MED,Y
+No Favors,7,Glock 17 on my hip like a pager (Fah),hip,8,Big Moochie stuck to that money like staples (Big Moochie),Big,INNER,SLANT,cmu,MED,Y
+No Favors,7,Glock 17 on my hip like a pager (Fah),like,8,Big Moochie stuck to that money like staples (Big Moochie),like,INNER,REPEAT,spelling,HIGH,N
+No Favors,7,Glock 17 on my hip like a pager (Fah),pager,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,END,SLANT,cmu,MED,Y
+No Favors,7,Glock 17 on my hip like a pager (Fah),hip,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",rich,INNER,SLANT,cmu,MED,Y
+No Favors,7,Glock 17 on my hip like a pager (Fah),pager,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",stay,INNER,ASSONANCE,vowel,MED,Y
+No Favors,7,Glock 17 on my hip like a pager (Fah),pager,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,END,ASSONANCE,vowel,MED,Y
+No Favors,7,Glock 17 on my hip like a pager (Fah),pager,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,END,ASSONANCE,vowel,MED,Y
+No Favors,8,Big Moochie stuck to that money like staples (Big Moochie),stuck,8,Big Moochie stuck to that money like staples (Big Moochie),money,INNER,SLANT,cmu,MED,Y
+No Favors,8,Big Moochie stuck to that money like staples (Big Moochie),staples,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,END,ASSONANCE,vowel,MED,Y
+No Favors,8,Big Moochie stuck to that money like staples (Big Moochie),Big,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",rich,INNER,SLANT,cmu,MED,Y
+No Favors,8,Big Moochie stuck to that money like staples (Big Moochie),staples,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",stay,INNER,ASSONANCE,vowel,MED,Y
+No Favors,8,Big Moochie stuck to that money like staples (Big Moochie),staples,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,END,ASSONANCE,vowel,MED,Y
+No Favors,8,Big Moochie stuck to that money like staples (Big Moochie),staples,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Grape,INNER,ASSONANCE,vowel,MED,Y
+No Favors,8,Big Moochie stuck to that money like staples (Big Moochie),staples,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Haiti,INNER,ASSONANCE,vowel,MED,Y
+No Favors,8,Big Moochie stuck to that money like staples (Big Moochie),staples,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,END,ASSONANCE,vowel,MED,Y
+No Favors,8,Big Moochie stuck to that money like staples (Big Moochie),staples,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,END,SLANT,cmu,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",stay,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,INNER,ASSONANCE,vowel,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",When,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",get,INNER,SLANT,cmu,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,END,ASSONANCE,vowel,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Grape,INNER,SLANT,cmu,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Haiti,INNER,SLANT,cmu,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",stay,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Grape,INNER,ASSONANCE,vowel,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",stay,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Haiti,INNER,ASSONANCE,vowel,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",stay,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,INNER,ASSONANCE,vowel,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",these,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",East,INNER,ASSONANCE,vowel,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,END,ASSONANCE,vowel,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,11,"K with the knife, a lil' boot for a slayer (Fah)",K,INNER,ASSONANCE,vowel,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",rich,11,"K with the knife, a lil' boot for a slayer (Fah)",lil,INNER,SLANT,cmu,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",stay,11,"K with the knife, a lil' boot for a slayer (Fah)",K,INNER,PERFECT,cmu,HIGH,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",stay,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,INNER,ASSONANCE,vowel,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,END,SLANT,cmu,MED,Y
+No Favors,9,"When you stay down and get rich, these niggas gon' hate you (Yes, sir)",hate,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",take,END,SLANT,cmu,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Grape,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Haiti,INNER,SLANT,cmu,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Grape,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,INNER,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Haiti,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,INNER,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,END,PERFECT,cmu,HIGH,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Grape,11,"K with the knife, a lil' boot for a slayer (Fah)",K,INNER,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Grape,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,INNER,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Haiti,11,"K with the knife, a lil' boot for a slayer (Fah)",K,INNER,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Haiti,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,INNER,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,11,"K with the knife, a lil' boot for a slayer (Fah)",K,INNER,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,END,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Grape,12,Bought mе some new choppers just for thе traitors (New choppers),th,INNER,SLANT,cmu,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Grape,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,INNER,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Haiti,12,Bought mе some new choppers just for thе traitors (New choppers),th,INNER,SLANT,cmu,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",Haiti,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,INNER,SLANT,cmu,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,12,Bought mе some new choppers just for thе traitors (New choppers),th,INNER,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",take,END,ASSONANCE,vowel,MED,Y
+No Favors,10,"Gigantic Grape, I'm the East Haiti mayor (Yes, sir)",mayor,14,"Got on my shit, now a young nigga stable (Got on my shit)",stable,END,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",K,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,INNER,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,END,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",boot,12,Bought mе some new choppers just for thе traitors (New choppers),new,INNER,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",K,12,Bought mе some new choppers just for thе traitors (New choppers),th,INNER,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",K,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,INNER,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,12,Bought mе some new choppers just for thе traitors (New choppers),th,INNER,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",take,END,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",K,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",take,INNER,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",knife,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",Binary,INNER,SLANT,cmu,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",lil,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",triggers,INNER,ASSONANCE,vowel,MED,Y
+No Favors,11,"K with the knife, a lil' boot for a slayer (Fah)",slayer,14,"Got on my shit, now a young nigga stable (Got on my shit)",stable,END,ASSONANCE,vowel,MED,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),Bought,12,Bought mе some new choppers just for thе traitors (New choppers),choppers,INNER,ASSONANCE,vowel,MED,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),th,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,INNER,ASSONANCE,vowel,MED,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",take,END,ASSONANCE,vowel,MED,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),th,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",take,INNER,SLANT,cmu,MED,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,14,"Got on my shit, now a young nigga stable (Got on my shit)",stable,END,ASSONANCE,vowel,MED,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),Bought,14,"Got on my shit, now a young nigga stable (Got on my shit)",Got,INNER,PERFECT,cmu,HIGH,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),choppers,14,"Got on my shit, now a young nigga stable (Got on my shit)",Got,INNER,ASSONANCE,vowel,MED,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),some,14,"Got on my shit, now a young nigga stable (Got on my shit)",young,INNER,SLANT,cmu,MED,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),th,14,"Got on my shit, now a young nigga stable (Got on my shit)",stable,INNER,ASSONANCE,vowel,MED,Y
+No Favors,12,Bought mе some new choppers just for thе traitors (New choppers),traitors,16,Put a hole in your head the same size of a bagel (Hole in your head),bagel,END,ASSONANCE,vowel,MED,Y
+No Favors,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",take,14,"Got on my shit, now a young nigga stable (Got on my shit)",stable,END,ASSONANCE,vowel,MED,Y
+No Favors,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",niggas'll,14,"Got on my shit, now a young nigga stable (Got on my shit)",nigga,INNER,ASSONANCE,vowel,LOW,N
+No Favors,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",triggers,14,"Got on my shit, now a young nigga stable (Got on my shit)",nigga,INNER,SLANT,spelling,LOW,Y
+No Favors,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",triggers,14,"Got on my shit, now a young nigga stable (Got on my shit)",shit,INNER,ASSONANCE,vowel,MED,Y
+No Favors,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",take,16,Put a hole in your head the same size of a bagel (Hole in your head),bagel,END,ASSONANCE,vowel,MED,Y
+No Favors,13,"Binary triggers, yeah, niggas'll take it (They go and take it)",take,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",favors,END,ASSONANCE,vowel,MED,Y
+No Favors,14,"Got on my shit, now a young nigga stable (Got on my shit)",shit,14,"Got on my shit, now a young nigga stable (Got on my shit)",nigga,INNER,SLANT,spelling,LOW,Y
+No Favors,14,"Got on my shit, now a young nigga stable (Got on my shit)",young,15,Brought me some racks in the mall at Bottega (Brought me some racks),some,INNER,SLANT,cmu,MED,Y
+No Favors,14,"Got on my shit, now a young nigga stable (Got on my shit)",stable,16,Put a hole in your head the same size of a bagel (Hole in your head),bagel,END,SLANT,cmu,MED,Y
+No Favors,14,"Got on my shit, now a young nigga stable (Got on my shit)",stable,16,Put a hole in your head the same size of a bagel (Hole in your head),same,INNER,ASSONANCE,vowel,MED,Y
+No Favors,14,"Got on my shit, now a young nigga stable (Got on my shit)",stable,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",favors,END,ASSONANCE,vowel,MED,Y
+No Favors,15,Brought me some racks in the mall at Bottega (Brought me some racks),Brought,15,Brought me some racks in the mall at Bottega (Brought me some racks),mall,INNER,SLANT,cmu,MED,Y
+No Favors,15,Brought me some racks in the mall at Bottega (Brought me some racks),racks,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",ask,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),same,16,Put a hole in your head the same size of a bagel (Hole in your head),bagel,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),bagel,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",favors,END,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),bagel,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",ain't,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),hole,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",Don't,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),hole,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",no,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),same,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",ain't,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),same,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",favors,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),bagel,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",Grape,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),hole,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",know,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),hole,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",throw,INNER,ASSONANCE,vowel,MED,Y
+No Favors,16,Put a hole in your head the same size of a bagel (Hole in your head),same,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",Grape,INNER,SLANT,cmu,MED,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",ain't,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",favors,INNER,ASSONANCE,vowel,MED,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",Don't,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",no,INNER,ASSONANCE,vowel,MED,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",ain't,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",Grape,INNER,ASSONANCE,vowel,MED,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",Don't,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",know,INNER,ASSONANCE,vowel,MED,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",Don't,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",throw,INNER,ASSONANCE,vowel,MED,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",Grape,INNER,ASSONANCE,vowel,MED,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",no,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",know,INNER,PERFECT,cmu,HIGH,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",no,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",throw,INNER,PERFECT,cmu,HIGH,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",shit,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",bitch,INNER,SLANT,cmu,MED,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",shit,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",I'ma,INNER,SLANT,spelling,LOW,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",ask,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",pack,INNER,SLANT,cmu,MED,Y
+No Favors,17,"Don't ask me for shit, I ain't doin' no favors (Hell nah)",shit,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",hit,INNER,PERFECT,cmu,HIGH,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",I'ma,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",bitch,INNER,SLANT,spelling,LOW,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",know,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",throw,INNER,PERFECT,cmu,HIGH,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",bitch,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",hit,END,SLANT,cmu,MED,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",I'ma,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",hit,INNER,SLANT,spelling,LOW,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",Run,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",Bustin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",know,20,"Not talkin' money, I don't wanna hear none of it (None of it)",don't,INNER,ASSONANCE,vowel,MED,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",Run,20,"Not talkin' money, I don't wanna hear none of it (None of it)",money,INNER,SLANT,cmu,MED,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",Run,20,"Not talkin' money, I don't wanna hear none of it (None of it)",none,INNER,PERFECT,cmu,HIGH,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",throw,20,"Not talkin' money, I don't wanna hear none of it (None of it)",don't,INNER,ASSONANCE,vowel,MED,Y
+No Favors,18,"Run up on Grape, then you know I'ma throw that bitch (Grrt, fah)",bitch,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",shit,END,SLANT,cmu,MED,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",'fore,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",morning,INNER,ASSONANCE,vowel,MED,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",gone,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",'fore,INNER,SLANT,cmu,MED,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",gone,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",morning,INNER,ASSONANCE,vowel,MED,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",Bustin,20,"Not talkin' money, I don't wanna hear none of it (None of it)",money,INNER,ASSONANCE,vowel,MED,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",Bustin,20,"Not talkin' money, I don't wanna hear none of it (None of it)",none,INNER,ASSONANCE,vowel,MED,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",got,20,"Not talkin' money, I don't wanna hear none of it (None of it)",Not,INNER,PERFECT,cmu,HIGH,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",got,20,"Not talkin' money, I don't wanna hear none of it (None of it)",talkin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",got,20,"Not talkin' money, I don't wanna hear none of it (None of it)",wanna,INNER,SLANT,cmu,MED,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",hit,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",shit,END,PERFECT,cmu,HIGH,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",hit,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",I'ma,INNER,SLANT,spelling,LOW,Y
+No Favors,19,"Bustin' the pack, got it gone 'fore the morning hit (Get it gone)",pack,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",grass,INNER,SLANT,cmu,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",money,20,"Not talkin' money, I don't wanna hear none of it (None of it)",none,INNER,SLANT,cmu,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",Not,20,"Not talkin' money, I don't wanna hear none of it (None of it)",talkin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",Not,20,"Not talkin' money, I don't wanna hear none of it (None of it)",wanna,INNER,SLANT,cmu,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",talkin,20,"Not talkin' money, I don't wanna hear none of it (None of it)",wanna,INNER,SLANT,cmu,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",don't,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",know,INNER,ASSONANCE,vowel,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",don't,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",mow,INNER,ASSONANCE,vowel,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",hear,22,Ballin' real hard like I entered a tournament (Ball),real,INNER,SLANT,cmu,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",Not,22,Ballin' real hard like I entered a tournament (Ball),hard,INNER,ASSONANCE,vowel,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",talkin,22,Ballin' real hard like I entered a tournament (Ball),hard,INNER,ASSONANCE,vowel,MED,Y
+No Favors,20,"Not talkin' money, I don't wanna hear none of it (None of it)",wanna,22,Ballin' real hard like I entered a tournament (Ball),hard,INNER,ASSONANCE,vowel,MED,Y
+No Favors,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",I'ma,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",shit,INNER,SLANT,spelling,LOW,Y
+No Favors,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",know,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",mow,INNER,PERFECT,cmu,HIGH,Y
+No Favors,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",grass,22,Ballin' real hard like I entered a tournament (Ball),Ballin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",I'ma,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",Lit,INNER,SLANT,spelling,LOW,Y
+No Favors,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",shit,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",Christmas,INNER,ASSONANCE,vowel,MED,Y
+No Favors,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",shit,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",Lit,INNER,PERFECT,cmu,HIGH,Y
+No Favors,21,"Snakes in my grass, so you know I'ma mow this shit (Get 'em gone)",shit,24,"Turn to the Terminator, deadened the only hit (Deadened the only hit)",hit,END,PERFECT,cmu,HIGH,Y
+No Favors,22,Ballin' real hard like I entered a tournament (Ball),like,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",like,INNER,REPEAT,spelling,HIGH,N
+No Favors,22,Ballin' real hard like I entered a tournament (Ball),like,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",shine,INNER,SLANT,cmu,MED,Y
+No Favors,22,Ballin' real hard like I entered a tournament (Ball),real,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",tree,INNER,ASSONANCE,vowel,MED,Y
+No Favors,22,Ballin' real hard like I entered a tournament (Ball),tournament,25,"Up in the hood, they treat me like the government (No cap)",government,END,SLANT,spelling,LOW,Y
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",like,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",like,INNER,REPEAT,spelling,HIGH,N
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",like,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",shine,INNER,SLANT,cmu,MED,Y
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",Lit,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",Christmas,INNER,ASSONANCE,vowel,MED,Y
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",shine,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",like,INNER,SLANT,cmu,MED,Y
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",Christmas,24,"Turn to the Terminator, deadened the only hit (Deadened the only hit)",hit,INNER,ASSONANCE,vowel,MED,Y
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",Lit,24,"Turn to the Terminator, deadened the only hit (Deadened the only hit)",hit,INNER,PERFECT,cmu,HIGH,Y
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",like,25,"Up in the hood, they treat me like the government (No cap)",like,INNER,REPEAT,spelling,HIGH,N
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",shine,25,"Up in the hood, they treat me like the government (No cap)",like,INNER,SLANT,cmu,MED,Y
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",some,25,"Up in the hood, they treat me like the government (No cap)",government,INNER,ASSONANCE,vowel,MED,Y
+No Favors,23,"Lit like a Christmas tree, shine like some ornaments (Shine, yeah)",tree,25,"Up in the hood, they treat me like the government (No cap)",treat,INNER,ASSONANCE,vowel,MED,Y
+No Favors,24,"Turn to the Terminator, deadened the only hit (Deadened the only hit)",hit,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",sticks,END,ASSONANCE,vowel,MED,Y
+No Favors,24,"Turn to the Terminator, deadened the only hit (Deadened the only hit)",hit,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",wish,END,SLANT,cmu,MED,Y
+No Favors,24,"Turn to the Terminator, deadened the only hit (Deadened the only hit)",hit,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",shit,END,PERFECT,cmu,HIGH,Y
+No Favors,25,"Up in the hood, they treat me like the government (No cap)",like,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",Ridin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,25,"Up in the hood, they treat me like the government (No cap)",like,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",slide,INNER,SLANT,cmu,MED,Y
+No Favors,25,"Up in the hood, they treat me like the government (No cap)",treat,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",heat,INNER,PERFECT,cmu,HIGH,Y
+No Favors,25,"Up in the hood, they treat me like the government (No cap)",government,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",Fuckin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,25,"Up in the hood, they treat me like the government (No cap)",like,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",signin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",Ridin,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",slide,INNER,SLANT,cmu,MED,Y
+No Favors,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",sticks,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",wish,END,ASSONANCE,vowel,MED,Y
+No Favors,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",Ridin,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",signin,INNER,SLANT,cmu,MED,Y
+No Favors,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",slide,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",signin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",sticks,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",shit,END,ASSONANCE,vowel,MED,Y
+No Favors,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",sticks,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",shit,END,ASSONANCE,vowel,MED,Y
+No Favors,26,"Ridin' in a Maybach, we slide with them heat sticks (Maybach)",sticks,30,Even if a nigga was sleepin' on test shit (East Side),shit,END,ASSONANCE,vowel,MED,Y
+No Favors,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",wish,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",shit,END,SLANT,cmu,MED,Y
+No Favors,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",death,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",get,INNER,SLANT,cmu,MED,Y
+No Favors,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",death,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",wreck,INNER,SLANT,cmu,MED,Y
+No Favors,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",wish,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",shit,END,SLANT,cmu,MED,Y
+No Favors,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",death,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",best,INNER,ASSONANCE,vowel,MED,Y
+No Favors,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",Fuckin,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",Junkies,INNER,ASSONANCE,vowel,MED,Y
+No Favors,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",Fuckin,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",love,INNER,ASSONANCE,vowel,MED,Y
+No Favors,27,"Fuckin' with Moochie, you signin' your death wish (Signin' your death wish)",wish,30,Even if a nigga was sleepin' on test shit (East Side),shit,END,SLANT,cmu,MED,Y
+No Favors,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",get,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",wreck,INNER,SLANT,cmu,MED,Y
+No Favors,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",shit,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",shit,END,REPEAT,spelling,HIGH,N
+No Favors,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",get,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",best,INNER,SLANT,cmu,MED,Y
+No Favors,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",wreck,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",best,INNER,ASSONANCE,vowel,MED,Y
+No Favors,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",shit,30,Even if a nigga was sleepin' on test shit (East Side),shit,END,REPEAT,spelling,HIGH,N
+No Favors,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",get,30,Even if a nigga was sleepin' on test shit (East Side),test,INNER,SLANT,cmu,MED,Y
+No Favors,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",shit,30,Even if a nigga was sleepin' on test shit (East Side),nigga,INNER,SLANT,spelling,LOW,Y
+No Favors,28,"We get the drop, then we pull up and wreck shit (Pull up and wreck shit)",wreck,30,Even if a nigga was sleepin' on test shit (East Side),test,INNER,ASSONANCE,vowel,MED,Y
+No Favors,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",Junkies,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",love,INNER,ASSONANCE,vowel,MED,Y
+No Favors,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",shit,30,Even if a nigga was sleepin' on test shit (East Side),shit,END,REPEAT,spelling,HIGH,N
+No Favors,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",best,30,Even if a nigga was sleepin' on test shit (East Side),test,INNER,PERFECT,cmu,HIGH,Y
+No Favors,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",shit,30,Even if a nigga was sleepin' on test shit (East Side),nigga,INNER,SLANT,spelling,LOW,Y
+No Favors,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",best,31,"Shots fired, we sendin' niggas a message (Shots fired)",message,INNER,SLANT,cmu,MED,Y
+No Favors,29,"Junkies, they love us, we servin' the best shit (Uh-huh)",best,31,"Shots fired, we sendin' niggas a message (Shots fired)",sendin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,30,Even if a nigga was sleepin' on test shit (East Side),Even,30,Even if a nigga was sleepin' on test shit (East Side),sleepin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,30,Even if a nigga was sleepin' on test shit (East Side),nigga,30,Even if a nigga was sleepin' on test shit (East Side),shit,INNER,SLANT,spelling,LOW,Y
+No Favors,30,Even if a nigga was sleepin' on test shit (East Side),nigga,31,"Shots fired, we sendin' niggas a message (Shots fired)",niggas,INNER,SLANT,spelling,LOW,Y
+No Favors,30,Even if a nigga was sleepin' on test shit (East Side),test,31,"Shots fired, we sendin' niggas a message (Shots fired)",message,INNER,SLANT,cmu,MED,Y
+No Favors,30,Even if a nigga was sleepin' on test shit (East Side),test,31,"Shots fired, we sendin' niggas a message (Shots fired)",sendin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,30,Even if a nigga was sleepin' on test shit (East Side),test,32,"Exotic guns, I done got me a fetish (Uh-huh)",fetish,INNER,ASSONANCE,vowel,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",sendin,31,"Shots fired, we sendin' niggas a message (Shots fired)",message,INNER,ASSONANCE,vowel,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",message,32,"Exotic guns, I done got me a fetish (Uh-huh)",fetish,END,ASSONANCE,vowel,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",sendin,32,"Exotic guns, I done got me a fetish (Uh-huh)",fetish,INNER,ASSONANCE,vowel,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",Shots,32,"Exotic guns, I done got me a fetish (Uh-huh)",Exotic,INNER,SLANT,cmu,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",Shots,32,"Exotic guns, I done got me a fetish (Uh-huh)",got,INNER,SLANT,cmu,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",message,33,"Come out the trenches, so nah, l can't help it (Gigantic)",help,END,ASSONANCE,vowel,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",message,33,"Come out the trenches, so nah, l can't help it (Gigantic)",l,INNER,ASSONANCE,vowel,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",message,33,"Come out the trenches, so nah, l can't help it (Gigantic)",trenches,INNER,ASSONANCE,vowel,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",sendin,33,"Come out the trenches, so nah, l can't help it (Gigantic)",help,INNER,ASSONANCE,vowel,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",sendin,33,"Come out the trenches, so nah, l can't help it (Gigantic)",l,INNER,ASSONANCE,vowel,MED,Y
+No Favors,31,"Shots fired, we sendin' niggas a message (Shots fired)",sendin,33,"Come out the trenches, so nah, l can't help it (Gigantic)",trenches,INNER,ASSONANCE,vowel,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",Exotic,32,"Exotic guns, I done got me a fetish (Uh-huh)",got,INNER,SLANT,cmu,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",guns,32,"Exotic guns, I done got me a fetish (Uh-huh)",done,INNER,SLANT,cmu,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",fetish,33,"Come out the trenches, so nah, l can't help it (Gigantic)",help,END,ASSONANCE,vowel,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",done,33,"Come out the trenches, so nah, l can't help it (Gigantic)",Come,INNER,SLANT,cmu,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",fetish,33,"Come out the trenches, so nah, l can't help it (Gigantic)",l,INNER,ASSONANCE,vowel,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",fetish,33,"Come out the trenches, so nah, l can't help it (Gigantic)",trenches,INNER,ASSONANCE,vowel,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",guns,33,"Come out the trenches, so nah, l can't help it (Gigantic)",Come,INNER,ASSONANCE,vowel,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",done,34,Bought me some new choppers just for the traitors (New choppers),some,INNER,SLANT,cmu,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",Exotic,34,Bought me some new choppers just for the traitors (New choppers),Bought,INNER,SLANT,cmu,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",Exotic,34,Bought me some new choppers just for the traitors (New choppers),choppers,INNER,ASSONANCE,vowel,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",got,34,Bought me some new choppers just for the traitors (New choppers),Bought,INNER,PERFECT,cmu,HIGH,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",got,34,Bought me some new choppers just for the traitors (New choppers),choppers,INNER,ASSONANCE,vowel,MED,Y
+No Favors,32,"Exotic guns, I done got me a fetish (Uh-huh)",guns,34,Bought me some new choppers just for the traitors (New choppers),some,INNER,ASSONANCE,vowel,MED,Y
+No Favors,33,"Come out the trenches, so nah, l can't help it (Gigantic)",l,33,"Come out the trenches, so nah, l can't help it (Gigantic)",help,INNER,SLANT,cmu,MED,Y
+No Favors,33,"Come out the trenches, so nah, l can't help it (Gigantic)",trenches,33,"Come out the trenches, so nah, l can't help it (Gigantic)",help,INNER,ASSONANCE,vowel,MED,Y
+No Favors,33,"Come out the trenches, so nah, l can't help it (Gigantic)",trenches,33,"Come out the trenches, so nah, l can't help it (Gigantic)",l,INNER,ASSONANCE,vowel,MED,Y
+No Favors,33,"Come out the trenches, so nah, l can't help it (Gigantic)",Come,34,Bought me some new choppers just for the traitors (New choppers),some,INNER,PERFECT,cmu,HIGH,Y
+No Favors,34,Bought me some new choppers just for the traitors (New choppers),Bought,34,Bought me some new choppers just for the traitors (New choppers),choppers,INNER,ASSONANCE,vowel,MED,Y
+No Favors,34,Bought me some new choppers just for the traitors (New choppers),traitors,35,"Me and Big Moochie, we pushin' twin Maybach's",Maybach's,END,SLANT,spelling,LOW,Y
+No Favors,34,Bought me some new choppers just for the traitors (New choppers),new,36,"Me and two bitches on Louis, she's laid back (Yeah)",Louis,INNER,ASSONANCE,vowel,MED,Y
+No Favors,34,Bought me some new choppers just for the traitors (New choppers),new,36,"Me and two bitches on Louis, she's laid back (Yeah)",two,INNER,PERFECT,cmu,HIGH,Y
+No Favors,34,Bought me some new choppers just for the traitors (New choppers),traitors,36,"Me and two bitches on Louis, she's laid back (Yeah)",laid,INNER,ASSONANCE,vowel,MED,Y
+No Favors,35,"Me and Big Moochie, we pushin' twin Maybach's",Big,35,"Me and Big Moochie, we pushin' twin Maybach's",twin,INNER,SLANT,cmu,MED,Y
+No Favors,35,"Me and Big Moochie, we pushin' twin Maybach's",Big,36,"Me and two bitches on Louis, she's laid back (Yeah)",bitches,INNER,ASSONANCE,vowel,MED,Y
+No Favors,35,"Me and Big Moochie, we pushin' twin Maybach's",Moochie,36,"Me and two bitches on Louis, she's laid back (Yeah)",Louis,INNER,SLANT,spelling,LOW,Y
+No Favors,35,"Me and Big Moochie, we pushin' twin Maybach's",twin,36,"Me and two bitches on Louis, she's laid back (Yeah)",bitches,INNER,ASSONANCE,vowel,MED,Y
+No Favors,35,"Me and Big Moochie, we pushin' twin Maybach's",Big,37,"Take care of them bags, you'll get killed for a mishap",killed,INNER,ASSONANCE,vowel,MED,Y
+No Favors,35,"Me and Big Moochie, we pushin' twin Maybach's",twin,37,"Take care of them bags, you'll get killed for a mishap",killed,INNER,ASSONANCE,vowel,MED,Y
+No Favors,36,"Me and two bitches on Louis, she's laid back (Yeah)",two,36,"Me and two bitches on Louis, she's laid back (Yeah)",Louis,INNER,ASSONANCE,vowel,MED,Y
+No Favors,36,"Me and two bitches on Louis, she's laid back (Yeah)",back,37,"Take care of them bags, you'll get killed for a mishap",mishap,END,SLANT,cmu,MED,Y
+No Favors,36,"Me and two bitches on Louis, she's laid back (Yeah)",back,37,"Take care of them bags, you'll get killed for a mishap",bags,INNER,ASSONANCE,vowel,MED,Y
+No Favors,36,"Me and two bitches on Louis, she's laid back (Yeah)",bitches,37,"Take care of them bags, you'll get killed for a mishap",killed,INNER,ASSONANCE,vowel,MED,Y
+No Favors,36,"Me and two bitches on Louis, she's laid back (Yeah)",laid,37,"Take care of them bags, you'll get killed for a mishap",Take,INNER,SLANT,cmu,MED,Y
+No Favors,36,"Me and two bitches on Louis, she's laid back (Yeah)",bitches,38,"Overseas killers, I hit 'em on Westside",hit,INNER,ASSONANCE,vowel,MED,Y
+No Favors,36,"Me and two bitches on Louis, she's laid back (Yeah)",bitches,38,"Overseas killers, I hit 'em on Westside",killers,INNER,SLANT,cmu,MED,Y
+No Favors,36,"Me and two bitches on Louis, she's laid back (Yeah)",she's,38,"Overseas killers, I hit 'em on Westside",Overseas,INNER,PERFECT,cmu,HIGH,Y
+No Favors,37,"Take care of them bags, you'll get killed for a mishap",bags,37,"Take care of them bags, you'll get killed for a mishap",mishap,INNER,ASSONANCE,vowel,MED,Y
+No Favors,37,"Take care of them bags, you'll get killed for a mishap",care,37,"Take care of them bags, you'll get killed for a mishap",get,INNER,SLANT,cmu,MED,Y
+No Favors,37,"Take care of them bags, you'll get killed for a mishap",killed,38,"Overseas killers, I hit 'em on Westside",hit,INNER,ASSONANCE,vowel,MED,Y
+No Favors,37,"Take care of them bags, you'll get killed for a mishap",killed,38,"Overseas killers, I hit 'em on Westside",killers,INNER,SLANT,cmu,MED,Y
+No Favors,37,"Take care of them bags, you'll get killed for a mishap",killed,39,"Record while I'm shootin', my stick got a GoPro",stick,INNER,ASSONANCE,vowel,MED,Y
+No Favors,38,"Overseas killers, I hit 'em on Westside",killers,38,"Overseas killers, I hit 'em on Westside",hit,INNER,ASSONANCE,vowel,MED,Y
+No Favors,38,"Overseas killers, I hit 'em on Westside",hit,39,"Record while I'm shootin', my stick got a GoPro",stick,INNER,SLANT,cmu,MED,Y
+No Favors,38,"Overseas killers, I hit 'em on Westside",killers,39,"Record while I'm shootin', my stick got a GoPro",stick,INNER,ASSONANCE,vowel,MED,Y
+No Favors,38,"Overseas killers, I hit 'em on Westside",Westside,39,"Record while I'm shootin', my stick got a GoPro",while,INNER,SLANT,cmu,MED,Y
+No Favors,38,"Overseas killers, I hit 'em on Westside",'em,40,Duffel bag filled up with Ks and some Gumbo,some,INNER,PERFECT,cmu,HIGH,Y
+No Favors,38,"Overseas killers, I hit 'em on Westside",hit,40,Duffel bag filled up with Ks and some Gumbo,filled,INNER,ASSONANCE,vowel,MED,Y
+No Favors,38,"Overseas killers, I hit 'em on Westside",killers,40,Duffel bag filled up with Ks and some Gumbo,filled,INNER,SLANT,cmu,MED,Y
+No Favors,39,"Record while I'm shootin', my stick got a GoPro",stick,40,Duffel bag filled up with Ks and some Gumbo,filled,INNER,ASSONANCE,vowel,MED,Y
+No Favors,39,"Record while I'm shootin', my stick got a GoPro",got,41,"This shit is massin', my pockets on jumbo",pockets,INNER,ASSONANCE,vowel,MED,Y
+No Favors,39,"Record while I'm shootin', my stick got a GoPro",stick,41,"This shit is massin', my pockets on jumbo",shit,INNER,SLANT,cmu,MED,Y
+No Favors,39,"Record while I'm shootin', my stick got a GoPro",GoPro,42,"BC and P.R.E., you know we cutthroat",cutthroat,END,ASSONANCE,vowel,MED,Y
+No Favors,40,Duffel bag filled up with Ks and some Gumbo,Duffel,40,Duffel bag filled up with Ks and some Gumbo,Gumbo,INNER,ASSONANCE,vowel,MED,Y
+No Favors,40,Duffel bag filled up with Ks and some Gumbo,Duffel,40,Duffel bag filled up with Ks and some Gumbo,some,INNER,ASSONANCE,vowel,MED,Y
+No Favors,40,Duffel bag filled up with Ks and some Gumbo,some,40,Duffel bag filled up with Ks and some Gumbo,Gumbo,INNER,SLANT,cmu,MED,Y
+No Favors,40,Duffel bag filled up with Ks and some Gumbo,Gumbo,41,"This shit is massin', my pockets on jumbo",jumbo,END,MULTI,multi,HIGH,Y
+No Favors,40,Duffel bag filled up with Ks and some Gumbo,bag,41,"This shit is massin', my pockets on jumbo",massin,INNER,ASSONANCE,vowel,MED,Y
+No Favors,40,Duffel bag filled up with Ks and some Gumbo,Duffel,41,"This shit is massin', my pockets on jumbo",jumbo,INNER,ASSONANCE,vowel,MED,Y
+No Favors,40,Duffel bag filled up with Ks and some Gumbo,filled,41,"This shit is massin', my pockets on jumbo",shit,INNER,ASSONANCE,vowel,MED,Y
+No Favors,40,Duffel bag filled up with Ks and some Gumbo,some,41,"This shit is massin', my pockets on jumbo",jumbo,INNER,SLANT,cmu,MED,Y
+No Favors,41,"This shit is massin', my pockets on jumbo",pockets,42,"BC and P.R.E., you know we cutthroat",R,INNER,ASSONANCE,vowel,MED,Y
+No Favors,41,"This shit is massin', my pockets on jumbo",pockets,43,AR-15 with the rocket launcher,AR,INNER,ASSONANCE,vowel,MED,Y
+No Favors,41,"This shit is massin', my pockets on jumbo",pockets,43,AR-15 with the rocket launcher,rocket,INNER,SLANT,cmu,MED,Y
+No Favors,42,"BC and P.R.E., you know we cutthroat",BC,42,"BC and P.R.E., you know we cutthroat",E,INNER,PERFECT,cmu,HIGH,Y
+No Favors,42,"BC and P.R.E., you know we cutthroat",BC,42,"BC and P.R.E., you know we cutthroat",P,INNER,PERFECT,cmu,HIGH,Y
+No Favors,42,"BC and P.R.E., you know we cutthroat",know,42,"BC and P.R.E., you know we cutthroat",cutthroat,INNER,ASSONANCE,vowel,MED,Y
+No Favors,42,"BC and P.R.E., you know we cutthroat",P,42,"BC and P.R.E., you know we cutthroat",E,INNER,PERFECT,cmu,HIGH,Y
+No Favors,42,"BC and P.R.E., you know we cutthroat",R,43,AR-15 with the rocket launcher,AR,INNER,PERFECT,cmu,HIGH,Y
+No Favors,42,"BC and P.R.E., you know we cutthroat",R,43,AR-15 with the rocket launcher,rocket,INNER,ASSONANCE,vowel,MED,Y
+No Favors,42,"BC and P.R.E., you know we cutthroat",R,44,"When I crank up the TRX, it sound like a monster",monster,INNER,ASSONANCE,vowel,MED,Y
+No Favors,43,AR-15 with the rocket launcher,AR,43,AR-15 with the rocket launcher,rocket,INNER,ASSONANCE,vowel,MED,Y
+No Favors,43,AR-15 with the rocket launcher,AR,44,"When I crank up the TRX, it sound like a monster",monster,INNER,ASSONANCE,vowel,MED,Y
+No Favors,43,AR-15 with the rocket launcher,rocket,44,"When I crank up the TRX, it sound like a monster",monster,INNER,ASSONANCE,vowel,MED,Y
+No Favors,43,AR-15 with the rocket launcher,AR,45,"Get shot with a gen, I am not finna argue",argue,INNER,ASSONANCE,vowel,MED,Y
+No Favors,43,AR-15 with the rocket launcher,AR,45,"Get shot with a gen, I am not finna argue",not,INNER,SLANT,cmu,MED,Y
+No Favors,43,AR-15 with the rocket launcher,AR,45,"Get shot with a gen, I am not finna argue",shot,INNER,SLANT,cmu,MED,Y
+No Favors,43,AR-15 with the rocket launcher,rocket,45,"Get shot with a gen, I am not finna argue",argue,INNER,ASSONANCE,vowel,MED,Y
+No Favors,43,AR-15 with the rocket launcher,rocket,45,"Get shot with a gen, I am not finna argue",not,INNER,SLANT,cmu,MED,Y
+No Favors,43,AR-15 with the rocket launcher,rocket,45,"Get shot with a gen, I am not finna argue",shot,INNER,SLANT,cmu,MED,Y
+No Favors,44,"When I crank up the TRX, it sound like a monster",monster,45,"Get shot with a gen, I am not finna argue",argue,END,ASSONANCE,vowel,MED,Y
+No Favors,44,"When I crank up the TRX, it sound like a monster",monster,45,"Get shot with a gen, I am not finna argue",not,INNER,ASSONANCE,vowel,MED,Y
+No Favors,44,"When I crank up the TRX, it sound like a monster",monster,45,"Get shot with a gen, I am not finna argue",shot,INNER,ASSONANCE,vowel,MED,Y
+No Favors,44,"When I crank up the TRX, it sound like a monster",When,45,"Get shot with a gen, I am not finna argue",gen,INNER,PERFECT,cmu,HIGH,Y
+No Favors,44,"When I crank up the TRX, it sound like a monster",When,45,"Get shot with a gen, I am not finna argue",Get,INNER,SLANT,cmu,MED,Y
+No Favors,44,"When I crank up the TRX, it sound like a monster",monster,46,"Even with no light, my jewelry gon' sparkle",sparkle,END,ASSONANCE,vowel,MED,Y
+No Favors,44,"When I crank up the TRX, it sound like a monster",like,46,"Even with no light, my jewelry gon' sparkle",light,INNER,SLANT,cmu,MED,Y
+No Favors,44,"When I crank up the TRX, it sound like a monster",monster,47,"Factory Glock, but the trigger got the mark",mark,END,ASSONANCE,vowel,MED,Y
+No Favors,44,"When I crank up the TRX, it sound like a monster",monster,48,That shit shoot doubles whenever I spark it,spark,END,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",Get,45,"Get shot with a gen, I am not finna argue",gen,INNER,SLANT,cmu,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",not,45,"Get shot with a gen, I am not finna argue",argue,INNER,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",shot,45,"Get shot with a gen, I am not finna argue",argue,INNER,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",shot,45,"Get shot with a gen, I am not finna argue",not,INNER,PERFECT,cmu,HIGH,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",argue,46,"Even with no light, my jewelry gon' sparkle",sparkle,END,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",not,46,"Even with no light, my jewelry gon' sparkle",sparkle,INNER,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",shot,46,"Even with no light, my jewelry gon' sparkle",sparkle,INNER,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",argue,47,"Factory Glock, but the trigger got the mark",mark,END,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",argue,47,"Factory Glock, but the trigger got the mark",Glock,INNER,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",argue,47,"Factory Glock, but the trigger got the mark",got,INNER,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",not,47,"Factory Glock, but the trigger got the mark",Glock,INNER,SLANT,cmu,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",not,47,"Factory Glock, but the trigger got the mark",got,INNER,PERFECT,cmu,HIGH,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",not,47,"Factory Glock, but the trigger got the mark",mark,INNER,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",shot,47,"Factory Glock, but the trigger got the mark",Glock,INNER,SLANT,cmu,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",shot,47,"Factory Glock, but the trigger got the mark",got,INNER,PERFECT,cmu,HIGH,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",shot,47,"Factory Glock, but the trigger got the mark",mark,INNER,ASSONANCE,vowel,MED,Y
+No Favors,45,"Get shot with a gen, I am not finna argue",argue,48,That shit shoot doubles whenever I spark it,spark,END,ASSONANCE,vowel,MED,Y
+No Favors,46,"Even with no light, my jewelry gon' sparkle",sparkle,47,"Factory Glock, but the trigger got the mark",mark,END,SLANT,cmu,MED,Y
+No Favors,46,"Even with no light, my jewelry gon' sparkle",sparkle,47,"Factory Glock, but the trigger got the mark",Glock,INNER,ASSONANCE,vowel,MED,Y
+No Favors,46,"Even with no light, my jewelry gon' sparkle",sparkle,47,"Factory Glock, but the trigger got the mark",got,INNER,ASSONANCE,vowel,MED,Y
+No Favors,46,"Even with no light, my jewelry gon' sparkle",sparkle,48,That shit shoot doubles whenever I spark it,spark,END,SLANT,cmu,MED,Y
+No Favors,46,"Even with no light, my jewelry gon' sparkle",jewelry,48,That shit shoot doubles whenever I spark it,shoot,INNER,ASSONANCE,vowel,MED,Y
+No Favors,47,"Factory Glock, but the trigger got the mark",Glock,47,"Factory Glock, but the trigger got the mark",got,INNER,SLANT,cmu,MED,Y
+No Favors,47,"Factory Glock, but the trigger got the mark",Glock,47,"Factory Glock, but the trigger got the mark",mark,INNER,SLANT,cmu,MED,Y
+No Favors,47,"Factory Glock, but the trigger got the mark",got,47,"Factory Glock, but the trigger got the mark",mark,INNER,ASSONANCE,vowel,MED,Y
+No Favors,47,"Factory Glock, but the trigger got the mark",mark,48,That shit shoot doubles whenever I spark it,spark,END,PERFECT,cmu,HIGH,Y
+No Favors,47,"Factory Glock, but the trigger got the mark",Glock,48,That shit shoot doubles whenever I spark it,spark,INNER,SLANT,cmu,MED,Y
+No Favors,47,"Factory Glock, but the trigger got the mark",got,48,That shit shoot doubles whenever I spark it,spark,INNER,ASSONANCE,vowel,MED,Y
+No Favors,47,"Factory Glock, but the trigger got the mark",trigger,48,That shit shoot doubles whenever I spark it,shit,INNER,SLANT,cmu,MED,Y
+No Favors,48,That shit shoot doubles whenever I spark it,doubles,49,"Don't fuck with none of these niggas, they made up",fuck,INNER,ASSONANCE,vowel,MED,Y
+No Favors,48,That shit shoot doubles whenever I spark it,doubles,49,"Don't fuck with none of these niggas, they made up",none,INNER,ASSONANCE,vowel,MED,Y
+No Favors,48,That shit shoot doubles whenever I spark it,shit,50,"When that KSG hit him, his body gon' raise up",him,INNER,SLANT,cmu,MED,Y
+No Favors,48,That shit shoot doubles whenever I spark it,shit,50,"When that KSG hit him, his body gon' raise up",hit,INNER,PERFECT,cmu,HIGH,Y
+No Favors,48,That shit shoot doubles whenever I spark it,spark,50,"When that KSG hit him, his body gon' raise up",body,INNER,ASSONANCE,vowel,MED,Y
+No Favors,48,That shit shoot doubles whenever I spark it,whenever,50,"When that KSG hit him, his body gon' raise up",When,INNER,SLANT,cmu,MED,Y
+No Favors,49,"Don't fuck with none of these niggas, they made up",fuck,49,"Don't fuck with none of these niggas, they made up",none,INNER,SLANT,cmu,MED,Y
+No Favors,49,"Don't fuck with none of these niggas, they made up",made,50,"When that KSG hit him, his body gon' raise up",raise,END,SLANT,cmu,MED,Y
+No Favors,49,"Don't fuck with none of these niggas, they made up",Don't,50,"When that KSG hit him, his body gon' raise up",gon,INNER,SLANT,spelling,LOW,Y
+No Favors,50,"When that KSG hit him, his body gon' raise up",hit,50,"When that KSG hit him, his body gon' raise up",him,INNER,SLANT,cmu,MED,Y

@@ -116,6 +116,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 104 | the-weeknd | The Weeknd | 3 | 104 | 683 | 77 | 606 | 586 | 2026-11-10 13:18 ET |
 | 105 | reem-rap | Reem (Rap) | 1 | 102 | 801 | 145 | 656 | 790 | 2026-11-10 13:19 ET |
 | 106 | bizzy-banks | Bizzy Banks | 1 | 99 | 455 | 120 | 335 | 446 | 2026-11-10 13:19 ET |
+| 107 | sheff-g | Sheff G | 2 | 99 | 526 | 92 | 434 | 511 | 2026-11-10 13:19 ET |
+| 108 | godfather-of-harlem | Godfather of Harlem | 2 | 98 | 711 | 161 | 550 | 705 | 2026-11-10 13:19 ET |
+| 109 | pooh-shiesty | Pooh Shiesty | 3 | 96 | 980 | 141 | 839 | 946 | 2026-11-10 13:19 ET |
+| 110 | 1504-mutebaby | 1504 MuteBaby | 2 | 94 | 779 | 112 | 667 | 772 | 2026-11-10 13:19 ET |
+| 111 | teejay3k | TeeJay3k | 2 | 94 | 773 | 122 | 651 | 765 | 2026-11-10 13:19 ET |
+| 112 | jay-gwuapo | Jay Gwuapo | 4 | 92 | 578 | 108 | 470 | 567 | 2026-11-10 13:19 ET |
+| 113 | big-moochie-grape | Big Moochie Grape | 2 | 91 | 594 | 148 | 446 | 591 | 2026-11-10 13:19 ET |
+| 114 | ice-billion-berg | Ice Billion Berg | 2 | 90 | 548 | 126 | 422 | 543 | 2026-11-10 13:19 ET |
+| 115 | millyz | Millyz | 2 | 89 | 740 | 138 | 602 | 731 | 2026-11-10 13:19 ET |
+| 116 | loso-loaded | Loso Loaded | 2 | 88 | 467 | 86 | 381 | 465 | 2026-11-10 13:19 ET |
 
 ## Failures
 
@@ -123,7 +133,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 106/386: Bizzy Banks.
+Finished 116/386: Loso Loaded.
 
 ## Final
 

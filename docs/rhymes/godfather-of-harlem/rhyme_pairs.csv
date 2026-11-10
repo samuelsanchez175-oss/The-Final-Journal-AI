@@ -1,0 +1,784 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Everything’s For Sale,1,This what my momma told my sister,sister,2,Ain't no changin' him,him,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,1,This what my momma told my sister,told,2,Ain't no changin' him,no,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,1,This what my momma told my sister,sister,3,He's probably somewhere with a pistol,pistol,END,SLANT,cmu,MED,Y
+Everything’s For Sale,1,This what my momma told my sister,sister,4,Ain't no savin' him,him,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,2,Ain't no changin' him,Ain't,2,Ain't no changin' him,changin,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,2,Ain't no changin' him,him,3,He's probably somewhere with a pistol,pistol,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,2,Ain't no changin' him,him,4,Ain't no savin' him,him,END,REPEAT,spelling,HIGH,N
+Everything’s For Sale,2,Ain't no changin' him,Ain't,4,Ain't no savin' him,Ain't,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,2,Ain't no changin' him,changin,4,Ain't no savin' him,Ain't,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,2,Ain't no changin' him,no,4,Ain't no savin' him,no,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,3,He's probably somewhere with a pistol,He's,3,He's probably somewhere with a pistol,probably,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,3,He's probably somewhere with a pistol,pistol,4,Ain't no savin' him,him,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,3,He's probably somewhere with a pistol,pistol,5,"Everything's for sale, everything's for sale",Everything's,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,4,Ain't no savin' him,Ain't,5,"Everything's for sale, everything's for sale",sale,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,4,Ain't no savin' him,him,5,"Everything's for sale, everything's for sale",Everything's,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,5,"Everything's for sale, everything's for sale",Everything's,5,"Everything's for sale, everything's for sale",everything's,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,5,"Everything's for sale, everything's for sale",sale,5,"Everything's for sale, everything's for sale",sale,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,5,"Everything's for sale, everything's for sale",sale,7,"Everything's for sale, yeah, everything's for sale",sale,END,REPEAT,spelling,HIGH,N
+Everything’s For Sale,5,"Everything's for sale, everything's for sale",Everything's,7,"Everything's for sale, yeah, everything's for sale",Everything's,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,5,"Everything's for sale, everything's for sale",sale,7,"Everything's for sale, yeah, everything's for sale",sale,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,6,"But not my life, but not my life",life,6,"But not my life, but not my life",life,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,6,"But not my life, but not my life",not,6,"But not my life, but not my life",not,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,6,"But not my life, but not my life",life,8,Everything's for sale but my life,life,END,REPEAT,spelling,HIGH,N
+Everything’s For Sale,6,"But not my life, but not my life",life,8,Everything's for sale but my life,life,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,6,"But not my life, but not my life",life,9,"Still payin' for ya, somebody got swiped",swiped,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,6,"But not my life, but not my life",life,10,Know a young boy got his college degree twice,twice,END,SLANT,cmu,MED,Y
+Everything’s For Sale,7,"Everything's for sale, yeah, everything's for sale",Everything's,7,"Everything's for sale, yeah, everything's for sale",everything's,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,7,"Everything's for sale, yeah, everything's for sale",sale,7,"Everything's for sale, yeah, everything's for sale",sale,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,7,"Everything's for sale, yeah, everything's for sale",Everything's,8,Everything's for sale but my life,Everything's,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,7,"Everything's for sale, yeah, everything's for sale",sale,8,Everything's for sale but my life,sale,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,7,"Everything's for sale, yeah, everything's for sale",Everything's,9,"Still payin' for ya, somebody got swiped",Still,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,7,"Everything's for sale, yeah, everything's for sale",sale,9,"Still payin' for ya, somebody got swiped",payin,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,8,Everything's for sale but my life,life,9,"Still payin' for ya, somebody got swiped",swiped,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,8,Everything's for sale but my life,Everything's,9,"Still payin' for ya, somebody got swiped",Still,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,8,Everything's for sale but my life,sale,9,"Still payin' for ya, somebody got swiped",payin,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,8,Everything's for sale but my life,life,10,Know a young boy got his college degree twice,twice,END,SLANT,cmu,MED,Y
+Everything’s For Sale,8,Everything's for sale but my life,life,11,Lil' young niggas same age got life,life,END,REPEAT,spelling,HIGH,N
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",somebody,9,"Still payin' for ya, somebody got swiped",got,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",swiped,10,Know a young boy got his college degree twice,twice,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",got,10,Know a young boy got his college degree twice,college,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",got,10,Know a young boy got his college degree twice,got,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",somebody,10,Know a young boy got his college degree twice,college,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",somebody,10,Know a young boy got his college degree twice,got,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",swiped,11,Lil' young niggas same age got life,life,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",got,11,Lil' young niggas same age got life,got,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",payin,11,Lil' young niggas same age got life,age,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",payin,11,Lil' young niggas same age got life,same,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",somebody,11,Lil' young niggas same age got life,got,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",Still,11,Lil' young niggas same age got life,Lil,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,9,"Still payin' for ya, somebody got swiped",swiped,13,And the other mom outside workin' the pipe,pipe,END,SLANT,cmu,MED,Y
+Everything’s For Sale,10,Know a young boy got his college degree twice,got,10,Know a young boy got his college degree twice,college,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,10,Know a young boy got his college degree twice,twice,11,Lil' young niggas same age got life,life,END,SLANT,cmu,MED,Y
+Everything’s For Sale,10,Know a young boy got his college degree twice,college,11,Lil' young niggas same age got life,got,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,10,Know a young boy got his college degree twice,got,11,Lil' young niggas same age got life,got,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,10,Know a young boy got his college degree twice,young,11,Lil' young niggas same age got life,young,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,10,Know a young boy got his college degree twice,Know,12,"Only difference is, one mother workin' two shifts",Only,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,10,Know a young boy got his college degree twice,young,12,"Only difference is, one mother workin' two shifts",mother,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,10,Know a young boy got his college degree twice,young,12,"Only difference is, one mother workin' two shifts",one,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,10,Know a young boy got his college degree twice,twice,13,And the other mom outside workin' the pipe,pipe,END,SLANT,cmu,MED,Y
+Everything’s For Sale,10,Know a young boy got his college degree twice,twice,14,Everybody on the sidewalk and standin' all night,night,END,SLANT,cmu,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,same,11,Lil' young niggas same age got life,age,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,Lil,12,"Only difference is, one mother workin' two shifts",difference,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,Lil,12,"Only difference is, one mother workin' two shifts",shifts,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,young,12,"Only difference is, one mother workin' two shifts",mother,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,young,12,"Only difference is, one mother workin' two shifts",one,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,life,13,And the other mom outside workin' the pipe,pipe,END,SLANT,cmu,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,got,13,And the other mom outside workin' the pipe,mom,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,life,13,And the other mom outside workin' the pipe,outside,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,young,13,And the other mom outside workin' the pipe,other,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,life,14,Everybody on the sidewalk and standin' all night,night,END,SLANT,cmu,MED,Y
+Everything’s For Sale,11,Lil' young niggas same age got life,life,15,Like neighborhood goin' on strike,strike,END,SLANT,cmu,MED,Y
+Everything’s For Sale,12,"Only difference is, one mother workin' two shifts",difference,12,"Only difference is, one mother workin' two shifts",shifts,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,12,"Only difference is, one mother workin' two shifts",one,12,"Only difference is, one mother workin' two shifts",mother,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,12,"Only difference is, one mother workin' two shifts",mother,13,And the other mom outside workin' the pipe,other,INNER,MULTI,multi,HIGH,Y
+Everything’s For Sale,12,"Only difference is, one mother workin' two shifts",one,13,And the other mom outside workin' the pipe,other,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,12,"Only difference is, one mother workin' two shifts",workin,13,And the other mom outside workin' the pipe,workin,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,13,And the other mom outside workin' the pipe,outside,13,And the other mom outside workin' the pipe,pipe,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,13,And the other mom outside workin' the pipe,pipe,14,Everybody on the sidewalk and standin' all night,night,END,SLANT,cmu,MED,Y
+Everything’s For Sale,13,And the other mom outside workin' the pipe,mom,14,Everybody on the sidewalk and standin' all night,Everybody,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,13,And the other mom outside workin' the pipe,outside,14,Everybody on the sidewalk and standin' all night,night,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,13,And the other mom outside workin' the pipe,pipe,15,Like neighborhood goin' on strike,strike,END,SLANT,cmu,MED,Y
+Everything’s For Sale,13,And the other mom outside workin' the pipe,outside,15,Like neighborhood goin' on strike,Like,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,13,And the other mom outside workin' the pipe,outside,15,Like neighborhood goin' on strike,strike,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,13,And the other mom outside workin' the pipe,pipe,15,Like neighborhood goin' on strike,Like,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,13,And the other mom outside workin' the pipe,pipe,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",fights,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,13,And the other mom outside workin' the pipe,pipe,17,Now we boardin' flights,flights,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,14,Everybody on the sidewalk and standin' all night,sidewalk,14,Everybody on the sidewalk and standin' all night,all,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,14,Everybody on the sidewalk and standin' all night,night,15,Like neighborhood goin' on strike,strike,END,SLANT,cmu,MED,Y
+Everything’s For Sale,14,Everybody on the sidewalk and standin' all night,night,15,Like neighborhood goin' on strike,Like,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,14,Everybody on the sidewalk and standin' all night,night,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",fights,END,SLANT,cmu,MED,Y
+Everything’s For Sale,14,Everybody on the sidewalk and standin' all night,night,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",outside,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,14,Everybody on the sidewalk and standin' all night,standin,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",hang,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,14,Everybody on the sidewalk and standin' all night,standin,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",having,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,14,Everybody on the sidewalk and standin' all night,night,17,Now we boardin' flights,flights,END,SLANT,cmu,MED,Y
+Everything’s For Sale,15,Like neighborhood goin' on strike,Like,15,Like neighborhood goin' on strike,strike,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,15,Like neighborhood goin' on strike,strike,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",fights,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,15,Like neighborhood goin' on strike,Like,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",fights,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,15,Like neighborhood goin' on strike,Like,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",outside,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,15,Like neighborhood goin' on strike,strike,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",outside,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,15,Like neighborhood goin' on strike,strike,17,Now we boardin' flights,flights,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,15,Like neighborhood goin' on strike,Like,17,Now we boardin' flights,flights,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,15,Like neighborhood goin' on strike,strike,19,What love you got for me? Why would you lie to me?,lie,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",hang,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",having,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",outside,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",fights,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",fights,17,Now we boardin' flights,flights,END,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",outside,17,Now we boardin' flights,flights,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",fist,18,"I come from poverty, I ain't hit the lottery",hit,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",fights,19,What love you got for me? Why would you lie to me?,lie,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,16,"He don't hang with my homies, I was outside having' fist fights with (Yeah)",fights,20,"If you not guilty, then why would you cry to me?",cry,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,17,Now we boardin' flights,flights,19,What love you got for me? Why would you lie to me?,lie,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,17,Now we boardin' flights,flights,19,What love you got for me? Why would you lie to me?,Why,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,17,Now we boardin' flights,flights,20,"If you not guilty, then why would you cry to me?",cry,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,17,Now we boardin' flights,flights,21,I don't even want you to say you gon' ride for me (Uh),ride,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,18,"I come from poverty, I ain't hit the lottery",poverty,18,"I come from poverty, I ain't hit the lottery",lottery,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,18,"I come from poverty, I ain't hit the lottery",come,19,What love you got for me? Why would you lie to me?,love,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,18,"I come from poverty, I ain't hit the lottery",come,19,What love you got for me? Why would you lie to me?,What,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,18,"I come from poverty, I ain't hit the lottery",lottery,19,What love you got for me? Why would you lie to me?,got,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,18,"I come from poverty, I ain't hit the lottery",poverty,19,What love you got for me? Why would you lie to me?,got,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,18,"I come from poverty, I ain't hit the lottery",hit,20,"If you not guilty, then why would you cry to me?",guilty,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,18,"I come from poverty, I ain't hit the lottery",lottery,20,"If you not guilty, then why would you cry to me?",not,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,18,"I come from poverty, I ain't hit the lottery",poverty,20,"If you not guilty, then why would you cry to me?",not,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,What,19,What love you got for me? Why would you lie to me?,love,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,Why,19,What love you got for me? Why would you lie to me?,lie,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,lie,20,"If you not guilty, then why would you cry to me?",cry,END,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,got,20,"If you not guilty, then why would you cry to me?",not,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,lie,20,"If you not guilty, then why would you cry to me?",why,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,Why,20,"If you not guilty, then why would you cry to me?",cry,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,Why,20,"If you not guilty, then why would you cry to me?",why,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,would,20,"If you not guilty, then why would you cry to me?",would,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,lie,21,I don't even want you to say you gon' ride for me (Uh),ride,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,got,21,I don't even want you to say you gon' ride for me (Uh),want,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,Why,21,I don't even want you to say you gon' ride for me (Uh),ride,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,19,What love you got for me? Why would you lie to me?,lie,22,"Say you gon' die for me (Uh-uh), I'm tryna live",live,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,20,"If you not guilty, then why would you cry to me?",why,20,"If you not guilty, then why would you cry to me?",cry,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,20,"If you not guilty, then why would you cry to me?",cry,21,I don't even want you to say you gon' ride for me (Uh),ride,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,20,"If you not guilty, then why would you cry to me?",not,21,I don't even want you to say you gon' ride for me (Uh),want,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,20,"If you not guilty, then why would you cry to me?",why,21,I don't even want you to say you gon' ride for me (Uh),ride,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,20,"If you not guilty, then why would you cry to me?",cry,22,"Say you gon' die for me (Uh-uh), I'm tryna live",live,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,20,"If you not guilty, then why would you cry to me?",cry,22,"Say you gon' die for me (Uh-uh), I'm tryna live",die,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,20,"If you not guilty, then why would you cry to me?",why,22,"Say you gon' die for me (Uh-uh), I'm tryna live",die,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,20,"If you not guilty, then why would you cry to me?",why,22,"Say you gon' die for me (Uh-uh), I'm tryna live",live,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,21,I don't even want you to say you gon' ride for me (Uh),don't,21,I don't even want you to say you gon' ride for me (Uh),gon,INNER,SLANT,spelling,LOW,Y
+Everything’s For Sale,21,I don't even want you to say you gon' ride for me (Uh),ride,22,"Say you gon' die for me (Uh-uh), I'm tryna live",live,END,SLANT,cmu,MED,Y
+Everything’s For Sale,21,I don't even want you to say you gon' ride for me (Uh),don't,22,"Say you gon' die for me (Uh-uh), I'm tryna live",gon,INNER,SLANT,spelling,LOW,Y
+Everything’s For Sale,21,I don't even want you to say you gon' ride for me (Uh),even,22,"Say you gon' die for me (Uh-uh), I'm tryna live",tryna,INNER,SLANT,spelling,LOW,Y
+Everything’s For Sale,21,I don't even want you to say you gon' ride for me (Uh),gon,22,"Say you gon' die for me (Uh-uh), I'm tryna live",gon,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,21,I don't even want you to say you gon' ride for me (Uh),ride,22,"Say you gon' die for me (Uh-uh), I'm tryna live",die,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,21,I don't even want you to say you gon' ride for me (Uh),say,22,"Say you gon' die for me (Uh-uh), I'm tryna live",Say,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,22,"Say you gon' die for me (Uh-uh), I'm tryna live",die,22,"Say you gon' die for me (Uh-uh), I'm tryna live",live,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,22,"Say you gon' die for me (Uh-uh), I'm tryna live",gon,24,"Leeches be latched to me, THC the only thing relaxin' me",only,INNER,SLANT,spelling,LOW,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",attached,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",rats,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",rats,24,"Leeches be latched to me, THC the only thing relaxin' me",relaxin,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",attached,24,"Leeches be latched to me, THC the only thing relaxin' me",latched,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",attached,24,"Leeches be latched to me, THC the only thing relaxin' me",relaxin,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",rats,24,"Leeches be latched to me, THC the only thing relaxin' me",latched,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",rats,25,"Strugglin' to live, and like kings, imagine me",imagine,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",attached,25,"Strugglin' to live, and like kings, imagine me",imagine,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",son's,25,"Strugglin' to live, and like kings, imagine me",Strugglin,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",rats,26,"Pray for these things, watch 'em bring them magically",magically,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,23,"'Cause my son's attached to me (Uh-huh), you niggas rats to me (Uh-huh)",rats,27,"Diamonds and rings on me, bling, like majesty",majesty,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",latched,24,"Leeches be latched to me, THC the only thing relaxin' me",relaxin,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",relaxin,25,"Strugglin' to live, and like kings, imagine me",imagine,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",latched,25,"Strugglin' to live, and like kings, imagine me",imagine,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",thing,25,"Strugglin' to live, and like kings, imagine me",kings,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",relaxin,26,"Pray for these things, watch 'em bring them magically",magically,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",latched,26,"Pray for these things, watch 'em bring them magically",magically,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",Leeches,26,"Pray for these things, watch 'em bring them magically",these,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",thing,26,"Pray for these things, watch 'em bring them magically",bring,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",thing,26,"Pray for these things, watch 'em bring them magically",things,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",relaxin,27,"Diamonds and rings on me, bling, like majesty",majesty,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,24,"Leeches be latched to me, THC the only thing relaxin' me",relaxin,28,"I'm doin' my thing, now they mad at me",mad,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",live,25,"Strugglin' to live, and like kings, imagine me",like,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",imagine,26,"Pray for these things, watch 'em bring them magically",magically,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",kings,26,"Pray for these things, watch 'em bring them magically",bring,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",kings,26,"Pray for these things, watch 'em bring them magically",things,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",imagine,27,"Diamonds and rings on me, bling, like majesty",majesty,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",kings,27,"Diamonds and rings on me, bling, like majesty",bling,INNER,SLANT,spelling,LOW,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",kings,27,"Diamonds and rings on me, bling, like majesty",rings,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",like,27,"Diamonds and rings on me, bling, like majesty",Diamonds,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",like,27,"Diamonds and rings on me, bling, like majesty",like,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",live,27,"Diamonds and rings on me, bling, like majesty",Diamonds,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",live,27,"Diamonds and rings on me, bling, like majesty",like,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",Strugglin,27,"Diamonds and rings on me, bling, like majesty",bling,INNER,PERFECT,spelling,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",imagine,28,"I'm doin' my thing, now they mad at me",mad,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,25,"Strugglin' to live, and like kings, imagine me",imagine,29,"I wasn't doin' anything, they was happy",happy,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",things,26,"Pray for these things, watch 'em bring them magically",bring,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",magically,27,"Diamonds and rings on me, bling, like majesty",majesty,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",bring,27,"Diamonds and rings on me, bling, like majesty",bling,INNER,PERFECT,spelling,HIGH,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",bring,27,"Diamonds and rings on me, bling, like majesty",rings,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",things,27,"Diamonds and rings on me, bling, like majesty",bling,INNER,SLANT,spelling,LOW,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",things,27,"Diamonds and rings on me, bling, like majesty",rings,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",magically,28,"I'm doin' my thing, now they mad at me",mad,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",bring,28,"I'm doin' my thing, now they mad at me",thing,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",things,28,"I'm doin' my thing, now they mad at me",thing,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",magically,29,"I wasn't doin' anything, they was happy",happy,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,26,"Pray for these things, watch 'em bring them magically",magically,30,"And I could've gave up on my passion, they almost had me",had,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,27,"Diamonds and rings on me, bling, like majesty",Diamonds,27,"Diamonds and rings on me, bling, like majesty",like,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,27,"Diamonds and rings on me, bling, like majesty",rings,27,"Diamonds and rings on me, bling, like majesty",bling,INNER,SLANT,spelling,LOW,Y
+Everything’s For Sale,27,"Diamonds and rings on me, bling, like majesty",majesty,28,"I'm doin' my thing, now they mad at me",mad,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,27,"Diamonds and rings on me, bling, like majesty",bling,28,"I'm doin' my thing, now they mad at me",thing,INNER,PERFECT,spelling,HIGH,Y
+Everything’s For Sale,27,"Diamonds and rings on me, bling, like majesty",rings,28,"I'm doin' my thing, now they mad at me",thing,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,27,"Diamonds and rings on me, bling, like majesty",majesty,29,"I wasn't doin' anything, they was happy",happy,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,27,"Diamonds and rings on me, bling, like majesty",bling,29,"I wasn't doin' anything, they was happy",anything,INNER,PERFECT,spelling,HIGH,Y
+Everything’s For Sale,27,"Diamonds and rings on me, bling, like majesty",rings,29,"I wasn't doin' anything, they was happy",anything,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,27,"Diamonds and rings on me, bling, like majesty",majesty,30,"And I could've gave up on my passion, they almost had me",had,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,28,"I'm doin' my thing, now they mad at me",mad,29,"I wasn't doin' anything, they was happy",happy,END,SLANT,cmu,MED,Y
+Everything’s For Sale,28,"I'm doin' my thing, now they mad at me",doin,29,"I wasn't doin' anything, they was happy",doin,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,28,"I'm doin' my thing, now they mad at me",thing,29,"I wasn't doin' anything, they was happy",anything,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,28,"I'm doin' my thing, now they mad at me",mad,30,"And I could've gave up on my passion, they almost had me",had,END,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,28,"I'm doin' my thing, now they mad at me",mad,30,"And I could've gave up on my passion, they almost had me",passion,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,29,"I wasn't doin' anything, they was happy",happy,30,"And I could've gave up on my passion, they almost had me",had,END,SLANT,cmu,MED,Y
+Everything’s For Sale,29,"I wasn't doin' anything, they was happy",happy,30,"And I could've gave up on my passion, they almost had me",passion,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,29,"I wasn't doin' anything, they was happy",anything,31,"I ain't sellin' my soul, the glitter and gold",glitter,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,30,"And I could've gave up on my passion, they almost had me",passion,30,"And I could've gave up on my passion, they almost had me",had,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,30,"And I could've gave up on my passion, they almost had me",almost,31,"I ain't sellin' my soul, the glitter and gold",gold,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,30,"And I could've gave up on my passion, they almost had me",almost,31,"I ain't sellin' my soul, the glitter and gold",soul,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,30,"And I could've gave up on my passion, they almost had me",gave,31,"I ain't sellin' my soul, the glitter and gold",ain't,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,30,"And I could've gave up on my passion, they almost had me",almost,32,Niggas is hot and these bitches is cold,cold,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,31,"I ain't sellin' my soul, the glitter and gold",soul,31,"I ain't sellin' my soul, the glitter and gold",gold,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,31,"I ain't sellin' my soul, the glitter and gold",gold,32,Niggas is hot and these bitches is cold,cold,END,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,31,"I ain't sellin' my soul, the glitter and gold",glitter,32,Niggas is hot and these bitches is cold,bitches,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,31,"I ain't sellin' my soul, the glitter and gold",soul,32,Niggas is hot and these bitches is cold,cold,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,31,"I ain't sellin' my soul, the glitter and gold",ain't,33,"The Rollie was froze, but time ain't agree",ain't,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,31,"I ain't sellin' my soul, the glitter and gold",gold,33,"The Rollie was froze, but time ain't agree",froze,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,31,"I ain't sellin' my soul, the glitter and gold",gold,33,"The Rollie was froze, but time ain't agree",Rollie,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,31,"I ain't sellin' my soul, the glitter and gold",soul,33,"The Rollie was froze, but time ain't agree",froze,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,31,"I ain't sellin' my soul, the glitter and gold",soul,33,"The Rollie was froze, but time ain't agree",Rollie,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,32,Niggas is hot and these bitches is cold,cold,33,"The Rollie was froze, but time ain't agree",froze,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,32,Niggas is hot and these bitches is cold,cold,33,"The Rollie was froze, but time ain't agree",Rollie,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,32,Niggas is hot and these bitches is cold,these,33,"The Rollie was froze, but time ain't agree",agree,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,32,Niggas is hot and these bitches is cold,bitches,34,"My nigga went vegan, still died from a beef",still,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,32,Niggas is hot and these bitches is cold,Niggas,34,"My nigga went vegan, still died from a beef",nigga,INNER,SLANT,spelling,LOW,Y
+Everything’s For Sale,32,Niggas is hot and these bitches is cold,these,34,"My nigga went vegan, still died from a beef",beef,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,33,"The Rollie was froze, but time ain't agree",Rollie,33,"The Rollie was froze, but time ain't agree",froze,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,33,"The Rollie was froze, but time ain't agree",agree,34,"My nigga went vegan, still died from a beef",beef,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,33,"The Rollie was froze, but time ain't agree",time,34,"My nigga went vegan, still died from a beef",died,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,33,"The Rollie was froze, but time ain't agree",agree,35,With his ice on his sleeve and his mind on the street,street,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,33,"The Rollie was froze, but time ain't agree",agree,35,With his ice on his sleeve and his mind on the street,sleeve,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,33,"The Rollie was froze, but time ain't agree",time,35,With his ice on his sleeve and his mind on the street,ice,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,33,"The Rollie was froze, but time ain't agree",time,35,With his ice on his sleeve and his mind on the street,mind,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,34,"My nigga went vegan, still died from a beef",went,34,"My nigga went vegan, still died from a beef",vegan,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,34,"My nigga went vegan, still died from a beef",beef,35,With his ice on his sleeve and his mind on the street,street,END,SLANT,cmu,MED,Y
+Everything’s For Sale,34,"My nigga went vegan, still died from a beef",beef,35,With his ice on his sleeve and his mind on the street,sleeve,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,34,"My nigga went vegan, still died from a beef",died,35,With his ice on his sleeve and his mind on the street,ice,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,34,"My nigga went vegan, still died from a beef",died,35,With his ice on his sleeve and his mind on the street,mind,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,34,"My nigga went vegan, still died from a beef",still,36,"And his baby momma know how shot him, but she won't be talkin'",him,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,34,"My nigga went vegan, still died from a beef",went,36,"And his baby momma know how shot him, but she won't be talkin'",won't,INNER,SLANT,spelling,LOW,Y
+Everything’s For Sale,35,With his ice on his sleeve and his mind on the street,ice,35,With his ice on his sleeve and his mind on the street,mind,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,35,With his ice on his sleeve and his mind on the street,sleeve,35,With his ice on his sleeve and his mind on the street,street,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,36,"And his baby momma know how shot him, but she won't be talkin'",know,36,"And his baby momma know how shot him, but she won't be talkin'",won't,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,36,"And his baby momma know how shot him, but she won't be talkin'",momma,36,"And his baby momma know how shot him, but she won't be talkin'",shot,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,36,"And his baby momma know how shot him, but she won't be talkin'",momma,36,"And his baby momma know how shot him, but she won't be talkin'",talkin,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,36,"And his baby momma know how shot him, but she won't be talkin'",shot,36,"And his baby momma know how shot him, but she won't be talkin'",talkin,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,36,"And his baby momma know how shot him, but she won't be talkin'",baby,37,'Cause she said they tellin' ain't safe',ain't,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,36,"And his baby momma know how shot him, but she won't be talkin'",baby,37,'Cause she said they tellin' ain't safe',safe,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,36,"And his baby momma know how shot him, but she won't be talkin'",baby,38,Plus that's our funeral day,day,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,37,'Cause she said they tellin' ain't safe',ain't,37,'Cause she said they tellin' ain't safe',safe,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,37,'Cause she said they tellin' ain't safe',said,37,'Cause she said they tellin' ain't safe',tellin,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,37,'Cause she said they tellin' ain't safe',safe,38,Plus that's our funeral day,day,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,37,'Cause she said they tellin' ain't safe',ain't,38,Plus that's our funeral day,day,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,38,Plus that's our funeral day,Plus,39,"Plot twist, trust nothing",nothing,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,38,Plus that's our funeral day,Plus,39,"Plot twist, trust nothing",trust,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,39,"Plot twist, trust nothing",trust,39,"Plot twist, trust nothing",nothing,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,39,"Plot twist, trust nothing",nothing,40,Treat everything you hear like a stock tip,everything,INNER,PERFECT,spelling,MED,Y
+Everything’s For Sale,39,"Plot twist, trust nothing",Plot,40,Treat everything you hear like a stock tip,stock,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,39,"Plot twist, trust nothing",twist,40,Treat everything you hear like a stock tip,everything,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,39,"Plot twist, trust nothing",twist,40,Treat everything you hear like a stock tip,tip,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,39,"Plot twist, trust nothing",Plot,41,"See, America feeds off black gossip",gossip,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,everything,40,Treat everything you hear like a stock tip,tip,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,Treat,40,Treat everything you hear like a stock tip,hear,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,hear,41,"See, America feeds off black gossip",feeds,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,hear,41,"See, America feeds off black gossip",See,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,stock,41,"See, America feeds off black gossip",gossip,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,Treat,41,"See, America feeds off black gossip",feeds,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,Treat,41,"See, America feeds off black gossip",See,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,hear,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",Bleed,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,hear,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",we'd,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,like,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",die,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,like,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",try,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,stock,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",watch,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,Treat,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",Bleed,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,40,Treat everything you hear like a stock tip,Treat,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",we'd,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",See,41,"See, America feeds off black gossip",feeds,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",America,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",help,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",black,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",rather,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",feeds,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",Bleed,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",feeds,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",we'd,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",gossip,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",watch,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",See,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",Bleed,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",See,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",we'd,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",America,43,Nine out of ten of us need counseling,ten,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",feeds,43,Nine out of ten of us need counseling,need,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,41,"See, America feeds off black gossip",See,43,Nine out of ten of us need counseling,need,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",Bleed,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",we'd,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",die,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",try,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",Bleed,43,Nine out of ten of us need counseling,need,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",die,43,Nine out of ten of us need counseling,Nine,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",help,43,Nine out of ten of us need counseling,ten,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",try,43,Nine out of ten of us need counseling,Nine,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",we'd,43,Nine out of ten of us need counseling,need,INNER,PERFECT,cmu,HIGH,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",help,44,"But, fuck health doe",health,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",public,44,"But, fuck health doe",fuck,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,42,"Bleed out in public, we'd rather watch you die then try and help ya, uh",help,46,Ten out of ten don't stress twelve,twelve,END,SLANT,cmu,MED,Y
+Everything’s For Sale,43,Nine out of ten of us need counseling,ten,44,"But, fuck health doe",health,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,43,Nine out of ten of us need counseling,counseling,45,'Cause ten out of ten of us keep ounces,ounces,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,43,Nine out of ten of us need counseling,need,45,'Cause ten out of ten of us keep ounces,keep,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,43,Nine out of ten of us need counseling,ten,45,'Cause ten out of ten of us keep ounces,ten,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,43,Nine out of ten of us need counseling,counseling,47,'Cause too many of those ones birthdays stopped countin',countin,END,SLANT,cmu,MED,Y
+Everything’s For Sale,44,"But, fuck health doe",health,45,'Cause ten out of ten of us keep ounces,ten,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,44,"But, fuck health doe",doe,46,Ten out of ten don't stress twelve,don't,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,44,"But, fuck health doe",health,46,Ten out of ten don't stress twelve,stress,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,44,"But, fuck health doe",health,46,Ten out of ten don't stress twelve,Ten,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,44,"But, fuck health doe",health,46,Ten out of ten don't stress twelve,twelve,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,45,'Cause ten out of ten of us keep ounces,ten,45,'Cause ten out of ten of us keep ounces,ten,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,45,'Cause ten out of ten of us keep ounces,ten,46,Ten out of ten don't stress twelve,stress,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,45,'Cause ten out of ten of us keep ounces,ten,46,Ten out of ten don't stress twelve,Ten,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,45,'Cause ten out of ten of us keep ounces,ten,46,Ten out of ten don't stress twelve,twelve,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,45,'Cause ten out of ten of us keep ounces,ounces,47,'Cause too many of those ones birthdays stopped countin',countin,END,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,45,'Cause ten out of ten of us keep ounces,'Cause,47,'Cause too many of those ones birthdays stopped countin','Cause,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,45,'Cause ten out of ten of us keep ounces,ten,47,'Cause too many of those ones birthdays stopped countin',many,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,46,Ten out of ten don't stress twelve,stress,46,Ten out of ten don't stress twelve,twelve,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,46,Ten out of ten don't stress twelve,Ten,46,Ten out of ten don't stress twelve,stress,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,46,Ten out of ten don't stress twelve,Ten,46,Ten out of ten don't stress twelve,ten,INNER,REPEAT,spelling,HIGH,N
+Everything’s For Sale,46,Ten out of ten don't stress twelve,Ten,46,Ten out of ten don't stress twelve,twelve,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,46,Ten out of ten don't stress twelve,don't,47,'Cause too many of those ones birthdays stopped countin',those,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,46,Ten out of ten don't stress twelve,stress,47,'Cause too many of those ones birthdays stopped countin',many,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,46,Ten out of ten don't stress twelve,Ten,47,'Cause too many of those ones birthdays stopped countin',many,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,46,Ten out of ten don't stress twelve,twelve,47,'Cause too many of those ones birthdays stopped countin',many,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,47,'Cause too many of those ones birthdays stopped countin',countin,48,"Mike Brown and, Trayvon and",Brown,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,47,'Cause too many of those ones birthdays stopped countin',many,49,By the time I stop there'll be another one,there'll,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,47,'Cause too many of those ones birthdays stopped countin',ones,49,By the time I stop there'll be another one,another,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,47,'Cause too many of those ones birthdays stopped countin',ones,49,By the time I stop there'll be another one,one,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,47,'Cause too many of those ones birthdays stopped countin',stopped,49,By the time I stop there'll be another one,stop,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,48,"Mike Brown and, Trayvon and",Mike,49,By the time I stop there'll be another one,By,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,48,"Mike Brown and, Trayvon and",Mike,49,By the time I stop there'll be another one,time,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,49,By the time I stop there'll be another one,another,49,By the time I stop there'll be another one,one,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,49,By the time I stop there'll be another one,By,49,By the time I stop there'll be another one,time,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,49,By the time I stop there'll be another one,stop,50,You could have anything in this world that you want,want,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,49,By the time I stop there'll be another one,By,51,But not my life,life,INNER,ASSONANCE,vowel,MED,Y
+Everything’s For Sale,49,By the time I stop there'll be another one,stop,51,But not my life,not,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,49,By the time I stop there'll be another one,time,51,But not my life,life,INNER,SLANT,cmu,MED,Y
+Everything’s For Sale,50,You could have anything in this world that you want,want,51,But not my life,not,INNER,SLANT,cmu,MED,Y
+On the Inside,1,"You know, it took a lot of licks to get where we at now",get,1,"You know, it took a lot of licks to get where we at now",where,INNER,SLANT,cmu,MED,Y
+On the Inside,1,"You know, it took a lot of licks to get where we at now",lot,2,"I was down bad, ain't have a dollar to my name (Straight up)",dollar,INNER,SLANT,cmu,MED,Y
+On the Inside,1,"You know, it took a lot of licks to get where we at now",now,2,"I was down bad, ain't have a dollar to my name (Straight up)",down,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,1,"You know, it took a lot of licks to get where we at now",now,3,"I was down bad, just my family and my gang (Straight up)",down,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",ain't,2,"I was down bad, ain't have a dollar to my name (Straight up)",name,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",bad,2,"I was down bad, ain't have a dollar to my name (Straight up)",have,INNER,SLANT,cmu,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",bad,3,"I was down bad, just my family and my gang (Straight up)",bad,INNER,REPEAT,spelling,HIGH,N
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",bad,3,"I was down bad, just my family and my gang (Straight up)",family,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",bad,3,"I was down bad, just my family and my gang (Straight up)",gang,INNER,SLANT,cmu,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",down,3,"I was down bad, just my family and my gang (Straight up)",down,INNER,REPEAT,spelling,HIGH,N
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",have,3,"I was down bad, just my family and my gang (Straight up)",bad,INNER,SLANT,cmu,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",have,3,"I was down bad, just my family and my gang (Straight up)",family,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",have,3,"I was down bad, just my family and my gang (Straight up)",gang,INNER,SLANT,cmu,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",name,4,"Glock 23, I was prayin' to my flame (On od)",flame,END,PERFECT,cmu,HIGH,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",ain't,4,"Glock 23, I was prayin' to my flame (On od)",flame,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",ain't,4,"Glock 23, I was prayin' to my flame (On od)",prayin,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",dollar,4,"Glock 23, I was prayin' to my flame (On od)",Glock,INNER,SLANT,cmu,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",name,4,"Glock 23, I was prayin' to my flame (On od)",prayin,INNER,SLANT,cmu,MED,Y
+On the Inside,2,"I was down bad, ain't have a dollar to my name (Straight up)",name,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",chain,END,SLANT,cmu,MED,Y
+On the Inside,3,"I was down bad, just my family and my gang (Straight up)",bad,3,"I was down bad, just my family and my gang (Straight up)",family,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,3,"I was down bad, just my family and my gang (Straight up)",bad,3,"I was down bad, just my family and my gang (Straight up)",gang,INNER,SLANT,cmu,MED,Y
+On the Inside,3,"I was down bad, just my family and my gang (Straight up)",family,3,"I was down bad, just my family and my gang (Straight up)",gang,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,4,"Glock 23, I was prayin' to my flame (On od)",prayin,4,"Glock 23, I was prayin' to my flame (On od)",flame,INNER,SLANT,cmu,MED,Y
+On the Inside,4,"Glock 23, I was prayin' to my flame (On od)",flame,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",chain,END,SLANT,cmu,MED,Y
+On the Inside,4,"Glock 23, I was prayin' to my flame (On od)",Glock,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",gotta,INNER,SLANT,cmu,MED,Y
+On the Inside,4,"Glock 23, I was prayin' to my flame (On od)",prayin,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",chain,INNER,SLANT,cmu,MED,Y
+On the Inside,4,"Glock 23, I was prayin' to my flame (On od)",flame,6,"Moreland Ave. at the Checker's, 38 special (21)",Ave,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,4,"Glock 23, I was prayin' to my flame (On od)",prayin,6,"Moreland Ave. at the Checker's, 38 special (21)",Ave,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",Hit,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",kill,INNER,SLANT,cmu,MED,Y
+On the Inside,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",Hit,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",lick,INNER,SLANT,cmu,MED,Y
+On the Inside,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",hope,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",don't,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",lick,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",kill,INNER,SLANT,cmu,MED,Y
+On the Inside,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",chain,6,"Moreland Ave. at the Checker's, 38 special (21)",Ave,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",gotta,7,Last nigga tried to rob me? On a stretcher (Facts),rob,INNER,SLANT,cmu,MED,Y
+On the Inside,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",Hit,7,Last nigga tried to rob me? On a stretcher (Facts),nigga,INNER,SLANT,spelling,LOW,Y
+On the Inside,5,"Hit a lick, hope I don't gotta kill for this chain (On God)",lick,7,Last nigga tried to rob me? On a stretcher (Facts),nigga,INNER,SLANT,spelling,LOW,Y
+On the Inside,6,"Moreland Ave. at the Checker's, 38 special (21)",Checker's,6,"Moreland Ave. at the Checker's, 38 special (21)",special,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,6,"Moreland Ave. at the Checker's, 38 special (21)",special,7,Last nigga tried to rob me? On a stretcher (Facts),stretcher,END,ASSONANCE,vowel,MED,Y
+On the Inside,6,"Moreland Ave. at the Checker's, 38 special (21)",Checker's,7,Last nigga tried to rob me? On a stretcher (Facts),stretcher,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,6,"Moreland Ave. at the Checker's, 38 special (21)",Checker's,8,"I don't never have a plug, nigga, cause I ask him (21)",never,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,6,"Moreland Ave. at the Checker's, 38 special (21)",special,8,"I don't never have a plug, nigga, cause I ask him (21)",never,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,6,"Moreland Ave. at the Checker's, 38 special (21)",special,9,"Zone 6, get my cars washed on Gresham (On God)",Gresham,END,SLANT,cmu,MED,Y
+On the Inside,7,Last nigga tried to rob me? On a stretcher (Facts),Last,8,"I don't never have a plug, nigga, cause I ask him (21)",ask,INNER,SLANT,cmu,MED,Y
+On the Inside,7,Last nigga tried to rob me? On a stretcher (Facts),Last,8,"I don't never have a plug, nigga, cause I ask him (21)",have,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,7,Last nigga tried to rob me? On a stretcher (Facts),nigga,8,"I don't never have a plug, nigga, cause I ask him (21)",nigga,INNER,REPEAT,spelling,HIGH,N
+On the Inside,7,Last nigga tried to rob me? On a stretcher (Facts),rob,8,"I don't never have a plug, nigga, cause I ask him (21)",cause,INNER,SLANT,cmu,MED,Y
+On the Inside,7,Last nigga tried to rob me? On a stretcher (Facts),stretcher,8,"I don't never have a plug, nigga, cause I ask him (21)",never,INNER,SLANT,cmu,MED,Y
+On the Inside,7,Last nigga tried to rob me? On a stretcher (Facts),stretcher,9,"Zone 6, get my cars washed on Gresham (On God)",Gresham,END,ASSONANCE,vowel,MED,Y
+On the Inside,7,Last nigga tried to rob me? On a stretcher (Facts),rob,9,"Zone 6, get my cars washed on Gresham (On God)",cars,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,7,Last nigga tried to rob me? On a stretcher (Facts),rob,9,"Zone 6, get my cars washed on Gresham (On God)",washed,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,7,Last nigga tried to rob me? On a stretcher (Facts),stretcher,9,"Zone 6, get my cars washed on Gresham (On God)",get,INNER,SLANT,cmu,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",have,8,"I don't never have a plug, nigga, cause I ask him (21)",ask,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",cause,9,"Zone 6, get my cars washed on Gresham (On God)",cars,INNER,SLANT,cmu,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",cause,9,"Zone 6, get my cars washed on Gresham (On God)",washed,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",don't,9,"Zone 6, get my cars washed on Gresham (On God)",Zone,INNER,SLANT,cmu,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",never,9,"Zone 6, get my cars washed on Gresham (On God)",get,INNER,SLANT,cmu,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",never,9,"Zone 6, get my cars washed on Gresham (On God)",Gresham,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",ask,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",pack,INNER,SLANT,cmu,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",ask,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",Ran,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",cause,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",problems,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",cause,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",want,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",don't,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",don't,INNER,REPEAT,spelling,HIGH,N
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",don't,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",no,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",have,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",pack,INNER,SLANT,cmu,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",have,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",Ran,INNER,SLANT,cmu,MED,Y
+On the Inside,8,"I don't never have a plug, nigga, cause I ask him (21)",plug,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",buddy,INNER,SLANT,cmu,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",cars,9,"Zone 6, get my cars washed on Gresham (On God)",washed,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",get,9,"Zone 6, get my cars washed on Gresham (On God)",Gresham,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",cars,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",problems,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",cars,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",want,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",washed,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",problems,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",washed,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",want,INNER,SLANT,cmu,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",Zone,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",don't,INNER,SLANT,cmu,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",Zone,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",no,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",cars,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Dropper,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,9,"Zone 6, get my cars washed on Gresham (On God)",washed,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Dropper,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",don't,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",no,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",Ran,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",pack,INNER,SLANT,cmu,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",want,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",problems,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",problems,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Dropper,END,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",buddy,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Nut,INNER,SLANT,cmu,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",pack,11,"21 Savage, you can call me King Nut Dropper (Yeah)",can,INNER,SLANT,cmu,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",pack,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Savage,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",Ran,11,"21 Savage, you can call me King Nut Dropper (Yeah)",can,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",Ran,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Savage,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",want,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Dropper,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",problems,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",hopper,END,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",buddy,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",Jumpin,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",pack,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",rapper,INNER,SLANT,cmu,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",Ran,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",rapper,INNER,SLANT,cmu,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",want,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",hopper,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",problems,13,"Trappin' with this rifle, we don't need no door stopper",stopper,END,ASSONANCE,vowel,MED,Y
+On the Inside,10,"Ran off with your buddy pack, he don't want no problems (Lil' bih)",problems,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",hard,END,ASSONANCE,vowel,MED,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Savage,11,"21 Savage, you can call me King Nut Dropper (Yeah)",can,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Dropper,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",hopper,END,MULTI,multi,HIGH,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",can,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",rapper,INNER,SLANT,cmu,MED,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Nut,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",Jumpin,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Savage,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",rapper,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Dropper,13,"Trappin' with this rifle, we don't need no door stopper",stopper,END,MULTI,multi,HIGH,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",call,13,"Trappin' with this rifle, we don't need no door stopper",door,INNER,SLANT,cmu,MED,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",can,13,"Trappin' with this rifle, we don't need no door stopper",Trappin,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Savage,13,"Trappin' with this rifle, we don't need no door stopper",Trappin,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Dropper,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",hard,END,ASSONANCE,vowel,MED,Y
+On the Inside,11,"21 Savage, you can call me King Nut Dropper (Yeah)",Dropper,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",cob,END,SLANT,cmu,MED,Y
+On the Inside,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",crew,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",crew,INNER,REPEAT,spelling,HIGH,N
+On the Inside,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",hopper,13,"Trappin' with this rifle, we don't need no door stopper",stopper,END,MULTI,multi,HIGH,Y
+On the Inside,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",rapper,13,"Trappin' with this rifle, we don't need no door stopper",Trappin,INNER,SLANT,cmu,MED,Y
+On the Inside,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",hopper,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",hard,END,ASSONANCE,vowel,MED,Y
+On the Inside,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",hopper,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",cob,END,SLANT,cmu,MED,Y
+On the Inside,12,"Jumpin' crew to crew, your favorite rapper a hood hopper (Yeah)",hopper,16,"He an intern, ain't got no job (Yeah, yeah)",job,END,SLANT,cmu,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",don't,13,"Trappin' with this rifle, we don't need no door stopper",no,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",stopper,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",hard,END,ASSONANCE,vowel,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",don't,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",go,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",don't,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",Gold,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",door,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",dawg,INNER,SLANT,spelling,LOW,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",no,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",go,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",no,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",Gold,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",stopper,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",cob,END,SLANT,cmu,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",door,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",Corn,INNER,SLANT,cmu,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",stopper,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",soft,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",stopper,16,"He an intern, ain't got no job (Yeah, yeah)",job,END,SLANT,cmu,MED,Y
+On the Inside,13,"Trappin' with this rifle, we don't need no door stopper",stopper,17,"If this rap don't work, nigga, I'ma rob (On God)",rob,END,SLANT,cmu,MED,Y
+On the Inside,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",Gold,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",go,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",hard,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",cob,END,ASSONANCE,vowel,MED,Y
+On the Inside,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",hard,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",soft,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",hard,16,"He an intern, ain't got no job (Yeah, yeah)",job,END,ASSONANCE,vowel,MED,Y
+On the Inside,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",go,16,"He an intern, ain't got no job (Yeah, yeah)",no,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",Gold,16,"He an intern, ain't got no job (Yeah, yeah)",no,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",grill,16,"He an intern, ain't got no job (Yeah, yeah)",intern,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",hard,16,"He an intern, ain't got no job (Yeah, yeah)",got,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,14,"Gold grill, dawg (Dawg), I go hard (I go hard)",hard,17,"If this rap don't work, nigga, I'ma rob (On God)",rob,END,ASSONANCE,vowel,MED,Y
+On the Inside,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",soft,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",cob,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",cob,16,"He an intern, ain't got no job (Yeah, yeah)",job,END,PERFECT,cmu,HIGH,Y
+On the Inside,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",cob,16,"He an intern, ain't got no job (Yeah, yeah)",got,INNER,SLANT,cmu,MED,Y
+On the Inside,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",soft,16,"He an intern, ain't got no job (Yeah, yeah)",got,INNER,SLANT,cmu,MED,Y
+On the Inside,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",soft,16,"He an intern, ain't got no job (Yeah, yeah)",job,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",cob,17,"If this rap don't work, nigga, I'ma rob (On God)",rob,END,PERFECT,cmu,HIGH,Y
+On the Inside,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",niggas,17,"If this rap don't work, nigga, I'ma rob (On God)",nigga,INNER,SLANT,spelling,LOW,Y
+On the Inside,15,"Your niggas soft (Niggas soft), Corn on the cob (Corn on the cob)",soft,17,"If this rap don't work, nigga, I'ma rob (On God)",rob,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,16,"He an intern, ain't got no job (Yeah, yeah)",got,16,"He an intern, ain't got no job (Yeah, yeah)",job,INNER,SLANT,cmu,MED,Y
+On the Inside,16,"He an intern, ain't got no job (Yeah, yeah)",job,17,"If this rap don't work, nigga, I'ma rob (On God)",rob,END,PERFECT,cmu,HIGH,Y
+On the Inside,16,"He an intern, ain't got no job (Yeah, yeah)",got,17,"If this rap don't work, nigga, I'ma rob (On God)",rob,INNER,SLANT,cmu,MED,Y
+On the Inside,16,"He an intern, ain't got no job (Yeah, yeah)",no,17,"If this rap don't work, nigga, I'ma rob (On God)",don't,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,16,"He an intern, ain't got no job (Yeah, yeah)",got,18,"Yeah I'm shinin', but I'm dark on the inside",dark,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,16,"He an intern, ain't got no job (Yeah, yeah)",job,18,"Yeah I'm shinin', but I'm dark on the inside",dark,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,17,"If this rap don't work, nigga, I'ma rob (On God)",rob,18,"Yeah I'm shinin', but I'm dark on the inside",dark,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,17,"If this rap don't work, nigga, I'ma rob (On God)",rob,19,Some of my brothers lost they heart on the inside,heart,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",shinin,18,"Yeah I'm shinin', but I'm dark on the inside",inside,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",inside,19,Some of my brothers lost they heart on the inside,inside,END,REPEAT,spelling,HIGH,N
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",dark,19,Some of my brothers lost they heart on the inside,heart,INNER,SLANT,cmu,MED,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",shinin,19,Some of my brothers lost they heart on the inside,inside,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",inside,20,"I can't lie, it broke my heart when my friends died",died,END,PERFECT,cmu,HIGH,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",dark,20,"I can't lie, it broke my heart when my friends died",heart,INNER,SLANT,cmu,MED,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",inside,20,"I can't lie, it broke my heart when my friends died",lie,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",shinin,20,"I can't lie, it broke my heart when my friends died",died,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",shinin,20,"I can't lie, it broke my heart when my friends died",lie,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",inside,21,We gon' make that choppa spark 'til your friends cry,cry,END,ASSONANCE,vowel,MED,Y
+On the Inside,18,"Yeah I'm shinin', but I'm dark on the inside",inside,22,Spin the block 'til your friends cry,cry,END,ASSONANCE,vowel,MED,Y
+On the Inside,19,Some of my brothers lost they heart on the inside,Some,19,Some of my brothers lost they heart on the inside,brothers,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,19,Some of my brothers lost they heart on the inside,inside,20,"I can't lie, it broke my heart when my friends died",died,END,PERFECT,cmu,HIGH,Y
+On the Inside,19,Some of my brothers lost they heart on the inside,heart,20,"I can't lie, it broke my heart when my friends died",heart,INNER,REPEAT,spelling,HIGH,N
+On the Inside,19,Some of my brothers lost they heart on the inside,inside,20,"I can't lie, it broke my heart when my friends died",lie,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,19,Some of my brothers lost they heart on the inside,inside,21,We gon' make that choppa spark 'til your friends cry,cry,END,ASSONANCE,vowel,MED,Y
+On the Inside,19,Some of my brothers lost they heart on the inside,heart,21,We gon' make that choppa spark 'til your friends cry,spark,INNER,SLANT,cmu,MED,Y
+On the Inside,19,Some of my brothers lost they heart on the inside,inside,22,Spin the block 'til your friends cry,cry,END,ASSONANCE,vowel,MED,Y
+On the Inside,19,Some of my brothers lost they heart on the inside,inside,23,"Never question God, I'm a fearin' child",child,END,SLANT,cmu,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",lie,20,"I can't lie, it broke my heart when my friends died",died,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",when,20,"I can't lie, it broke my heart when my friends died",friends,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",died,21,We gon' make that choppa spark 'til your friends cry,cry,END,ASSONANCE,vowel,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",broke,21,We gon' make that choppa spark 'til your friends cry,choppa,INNER,SLANT,spelling,LOW,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",broke,21,We gon' make that choppa spark 'til your friends cry,gon,INNER,SLANT,spelling,LOW,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",friends,21,We gon' make that choppa spark 'til your friends cry,friends,INNER,REPEAT,spelling,HIGH,N
+On the Inside,20,"I can't lie, it broke my heart when my friends died",heart,21,We gon' make that choppa spark 'til your friends cry,spark,INNER,SLANT,cmu,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",lie,21,We gon' make that choppa spark 'til your friends cry,cry,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",when,21,We gon' make that choppa spark 'til your friends cry,friends,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",died,22,Spin the block 'til your friends cry,cry,END,ASSONANCE,vowel,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",friends,22,Spin the block 'til your friends cry,friends,INNER,REPEAT,spelling,HIGH,N
+On the Inside,20,"I can't lie, it broke my heart when my friends died",heart,22,Spin the block 'til your friends cry,block,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",lie,22,Spin the block 'til your friends cry,cry,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",when,22,Spin the block 'til your friends cry,friends,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",died,23,"Never question God, I'm a fearin' child",child,END,SLANT,cmu,MED,Y
+On the Inside,20,"I can't lie, it broke my heart when my friends died",died,24,I'ma ride for the gang 'til I'm not alive,alive,END,SLANT,cmu,MED,Y
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,cry,22,Spin the block 'til your friends cry,cry,END,REPEAT,spelling,HIGH,N
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,'til,22,Spin the block 'til your friends cry,'til,INNER,REPEAT,spelling,HIGH,N
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,'til,22,Spin the block 'til your friends cry,Spin,INNER,SLANT,cmu,MED,Y
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,friends,22,Spin the block 'til your friends cry,friends,INNER,REPEAT,spelling,HIGH,N
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,spark,22,Spin the block 'til your friends cry,block,INNER,SLANT,cmu,MED,Y
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,cry,23,"Never question God, I'm a fearin' child",child,END,ASSONANCE,vowel,MED,Y
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,'til,23,"Never question God, I'm a fearin' child",fearin,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,friends,23,"Never question God, I'm a fearin' child",Never,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,friends,23,"Never question God, I'm a fearin' child",question,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,spark,23,"Never question God, I'm a fearin' child",God,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,cry,24,I'ma ride for the gang 'til I'm not alive,alive,END,ASSONANCE,vowel,MED,Y
+On the Inside,21,We gon' make that choppa spark 'til your friends cry,cry,25,I'ma up and let it bang 'til I'm not alive,alive,END,ASSONANCE,vowel,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,Spin,22,Spin the block 'til your friends cry,'til,INNER,SLANT,cmu,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,cry,23,"Never question God, I'm a fearin' child",child,END,ASSONANCE,vowel,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,'til,23,"Never question God, I'm a fearin' child",fearin,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,block,23,"Never question God, I'm a fearin' child",God,INNER,SLANT,cmu,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,friends,23,"Never question God, I'm a fearin' child",Never,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,friends,23,"Never question God, I'm a fearin' child",question,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,Spin,23,"Never question God, I'm a fearin' child",fearin,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,cry,24,I'ma ride for the gang 'til I'm not alive,alive,END,ASSONANCE,vowel,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,'til,24,I'ma ride for the gang 'til I'm not alive,'til,INNER,REPEAT,spelling,HIGH,N
+On the Inside,22,Spin the block 'til your friends cry,'til,24,I'ma ride for the gang 'til I'm not alive,I'ma,INNER,SLANT,spelling,LOW,Y
+On the Inside,22,Spin the block 'til your friends cry,block,24,I'ma ride for the gang 'til I'm not alive,not,INNER,SLANT,cmu,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,cry,24,I'ma ride for the gang 'til I'm not alive,ride,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,Spin,24,I'ma ride for the gang 'til I'm not alive,'til,INNER,SLANT,cmu,MED,Y
+On the Inside,22,Spin the block 'til your friends cry,Spin,24,I'ma ride for the gang 'til I'm not alive,I'ma,INNER,SLANT,spelling,LOW,Y
+On the Inside,22,Spin the block 'til your friends cry,cry,25,I'ma up and let it bang 'til I'm not alive,alive,END,ASSONANCE,vowel,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",Never,23,"Never question God, I'm a fearin' child",question,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",child,24,I'ma ride for the gang 'til I'm not alive,alive,END,ASSONANCE,vowel,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",child,24,I'ma ride for the gang 'til I'm not alive,ride,INNER,SLANT,cmu,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",fearin,24,I'ma ride for the gang 'til I'm not alive,'til,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",God,24,I'ma ride for the gang 'til I'm not alive,not,INNER,SLANT,cmu,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",child,25,I'ma up and let it bang 'til I'm not alive,alive,END,ASSONANCE,vowel,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",fearin,25,I'ma up and let it bang 'til I'm not alive,'til,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",God,25,I'ma up and let it bang 'til I'm not alive,not,INNER,SLANT,cmu,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",Never,25,I'ma up and let it bang 'til I'm not alive,let,INNER,SLANT,cmu,MED,Y
+On the Inside,23,"Never question God, I'm a fearin' child",question,25,I'ma up and let it bang 'til I'm not alive,let,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,I'ma,24,I'ma ride for the gang 'til I'm not alive,'til,INNER,SLANT,spelling,LOW,Y
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,ride,24,I'ma ride for the gang 'til I'm not alive,alive,INNER,SLANT,cmu,MED,Y
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,alive,25,I'ma up and let it bang 'til I'm not alive,alive,END,REPEAT,spelling,HIGH,N
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,'til,25,I'ma up and let it bang 'til I'm not alive,'til,INNER,REPEAT,spelling,HIGH,N
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,'til,25,I'ma up and let it bang 'til I'm not alive,I'ma,INNER,SLANT,spelling,LOW,Y
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,gang,25,I'ma up and let it bang 'til I'm not alive,bang,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,I'ma,25,I'ma up and let it bang 'til I'm not alive,'til,INNER,SLANT,spelling,LOW,Y
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,I'ma,25,I'ma up and let it bang 'til I'm not alive,I'ma,INNER,REPEAT,spelling,HIGH,N
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,not,25,I'ma up and let it bang 'til I'm not alive,not,INNER,REPEAT,spelling,HIGH,N
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,ride,25,I'ma up and let it bang 'til I'm not alive,alive,INNER,SLANT,cmu,MED,Y
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,alive,26,"Nigga, I just bite, I don't bark (I don't bark, bro)",bite,INNER,SLANT,cmu,MED,Y
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,not,26,"Nigga, I just bite, I don't bark (I don't bark, bro)",bark,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,24,I'ma ride for the gang 'til I'm not alive,ride,26,"Nigga, I just bite, I don't bark (I don't bark, bro)",bite,INNER,SLANT,cmu,MED,Y
+On the Inside,25,I'ma up and let it bang 'til I'm not alive,I'ma,25,I'ma up and let it bang 'til I'm not alive,'til,INNER,SLANT,spelling,LOW,Y
+On the Inside,25,I'ma up and let it bang 'til I'm not alive,alive,26,"Nigga, I just bite, I don't bark (I don't bark, bro)",bite,INNER,SLANT,cmu,MED,Y
+On the Inside,25,I'ma up and let it bang 'til I'm not alive,not,26,"Nigga, I just bite, I don't bark (I don't bark, bro)",bark,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,25,I'ma up and let it bang 'til I'm not alive,'til,27,"I just send hits, I don't arc (Leave that to the hoes)",hits,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,25,I'ma up and let it bang 'til I'm not alive,let,27,"I just send hits, I don't arc (Leave that to the hoes)",send,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,25,I'ma up and let it bang 'til I'm not alive,not,27,"I just send hits, I don't arc (Leave that to the hoes)",arc,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,26,"Nigga, I just bite, I don't bark (I don't bark, bro)",bark,27,"I just send hits, I don't arc (Leave that to the hoes)",arc,END,PERFECT,cmu,HIGH,Y
+On the Inside,26,"Nigga, I just bite, I don't bark (I don't bark, bro)",don't,27,"I just send hits, I don't arc (Leave that to the hoes)",don't,INNER,REPEAT,spelling,HIGH,N
+On the Inside,26,"Nigga, I just bite, I don't bark (I don't bark, bro)",bark,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",Marvel,END,ASSONANCE,vowel,MED,Y
+On the Inside,26,"Nigga, I just bite, I don't bark (I don't bark, bro)",bark,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",hard,END,SLANT,cmu,MED,Y
+On the Inside,27,"I just send hits, I don't arc (Leave that to the hoes)",arc,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",Marvel,END,ASSONANCE,vowel,MED,Y
+On the Inside,27,"I just send hits, I don't arc (Leave that to the hoes)",hits,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",think,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,27,"I just send hits, I don't arc (Leave that to the hoes)",arc,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",hard,END,SLANT,cmu,MED,Y
+On the Inside,27,"I just send hits, I don't arc (Leave that to the hoes)",hits,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",hit,INNER,SLANT,cmu,MED,Y
+On the Inside,27,"I just send hits, I don't arc (Leave that to the hoes)",hits,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",shit,INNER,SLANT,cmu,MED,Y
+On the Inside,27,"I just send hits, I don't arc (Leave that to the hoes)",hits,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",thing,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",Marvel,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",hard,END,ASSONANCE,vowel,MED,Y
+On the Inside,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",ain't,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",main,INNER,SLANT,cmu,MED,Y
+On the Inside,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",think,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",hit,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",think,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",shit,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",think,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",thing,INNER,SLANT,cmu,MED,Y
+On the Inside,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",ain't,30,Got a girl named Keisha (Yeah),named,INNER,SLANT,cmu,MED,Y
+On the Inside,28,"You think that you the Hulk, but this ain't Marvel (This ain't Marvel, bro)",Marvel,30,Got a girl named Keisha (Yeah),Got,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",hit,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",shit,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",hit,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",thing,INNER,SLANT,cmu,MED,Y
+On the Inside,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",thing,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",shit,INNER,SLANT,cmu,MED,Y
+On the Inside,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",hard,30,Got a girl named Keisha (Yeah),Got,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",main,30,Got a girl named Keisha (Yeah),named,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",hard,31,Got a girl named Lisa (Yeah),Got,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,29,"I hit your main thing, that shit was hard (Shit was garbage, bro)",main,31,Got a girl named Lisa (Yeah),named,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,30,Got a girl named Keisha (Yeah),girl,31,Got a girl named Lisa (Yeah),girl,INNER,REPEAT,spelling,HIGH,N
+On the Inside,30,Got a girl named Keisha (Yeah),Got,31,Got a girl named Lisa (Yeah),Got,INNER,REPEAT,spelling,HIGH,N
+On the Inside,30,Got a girl named Keisha (Yeah),named,31,Got a girl named Lisa (Yeah),named,INNER,REPEAT,spelling,HIGH,N
+On the Inside,30,Got a girl named Keisha (Yeah),girl,32,"Girl named Britney, girl named Whitney (21)",Girl,INNER,REPEAT,spelling,HIGH,N
+On the Inside,30,Got a girl named Keisha (Yeah),named,32,"Girl named Britney, girl named Whitney (21)",named,INNER,REPEAT,spelling,HIGH,N
+On the Inside,31,Got a girl named Lisa (Yeah),girl,32,"Girl named Britney, girl named Whitney (21)",Girl,INNER,REPEAT,spelling,HIGH,N
+On the Inside,31,Got a girl named Lisa (Yeah),Lisa,32,"Girl named Britney, girl named Whitney (21)",Britney,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,31,Got a girl named Lisa (Yeah),named,32,"Girl named Britney, girl named Whitney (21)",named,INNER,REPEAT,spelling,HIGH,N
+On the Inside,31,Got a girl named Lisa (Yeah),girl,33,"Main girl crazy, don't you leave no hickeys (21)",girl,INNER,REPEAT,spelling,HIGH,N
+On the Inside,31,Got a girl named Lisa (Yeah),Lisa,33,"Main girl crazy, don't you leave no hickeys (21)",leave,INNER,SLANT,cmu,MED,Y
+On the Inside,31,Got a girl named Lisa (Yeah),named,33,"Main girl crazy, don't you leave no hickeys (21)",crazy,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,31,Got a girl named Lisa (Yeah),named,33,"Main girl crazy, don't you leave no hickeys (21)",Main,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",Girl,32,"Girl named Britney, girl named Whitney (21)",girl,INNER,REPEAT,spelling,HIGH,N
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",named,32,"Girl named Britney, girl named Whitney (21)",named,INNER,REPEAT,spelling,HIGH,N
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",Whitney,33,"Main girl crazy, don't you leave no hickeys (21)",hickeys,END,ASSONANCE,vowel,LOW,N
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",Britney,33,"Main girl crazy, don't you leave no hickeys (21)",leave,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",Girl,33,"Main girl crazy, don't you leave no hickeys (21)",girl,INNER,REPEAT,spelling,HIGH,N
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",named,33,"Main girl crazy, don't you leave no hickeys (21)",crazy,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",named,33,"Main girl crazy, don't you leave no hickeys (21)",Main,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",Whitney,34,I be in the strip club even when I'm sixty (Straight up),sixty,END,ASSONANCE,vowel,MED,Y
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",Britney,34,I be in the strip club even when I'm sixty (Straight up),even,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",Whitney,34,I be in the strip club even when I'm sixty (Straight up),strip,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",Whitney,35,I'ma tote a AK even when I'm fifty,fifty,END,ASSONANCE,vowel,MED,Y
+On the Inside,32,"Girl named Britney, girl named Whitney (21)",Whitney,36,"Let them niggas split the drum, both of them get fifty",fifty,END,ASSONANCE,vowel,MED,Y
+On the Inside,33,"Main girl crazy, don't you leave no hickeys (21)",don't,33,"Main girl crazy, don't you leave no hickeys (21)",no,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,33,"Main girl crazy, don't you leave no hickeys (21)",Main,33,"Main girl crazy, don't you leave no hickeys (21)",crazy,INNER,SLANT,cmu,MED,Y
+On the Inside,33,"Main girl crazy, don't you leave no hickeys (21)",hickeys,34,I be in the strip club even when I'm sixty (Straight up),sixty,END,SLANT,spelling,LOW,Y
+On the Inside,33,"Main girl crazy, don't you leave no hickeys (21)",leave,34,I be in the strip club even when I'm sixty (Straight up),even,INNER,SLANT,cmu,MED,Y
+On the Inside,33,"Main girl crazy, don't you leave no hickeys (21)",don't,35,I'ma tote a AK even when I'm fifty,tote,INNER,SLANT,cmu,MED,Y
+On the Inside,33,"Main girl crazy, don't you leave no hickeys (21)",leave,35,I'ma tote a AK even when I'm fifty,even,INNER,SLANT,cmu,MED,Y
+On the Inside,33,"Main girl crazy, don't you leave no hickeys (21)",no,35,I'ma tote a AK even when I'm fifty,tote,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,33,"Main girl crazy, don't you leave no hickeys (21)",hickeys,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,END,ASSONANCE,vowel,LOW,N
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),strip,34,I be in the strip club even when I'm sixty (Straight up),sixty,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),sixty,35,I'ma tote a AK even when I'm fifty,fifty,END,ASSONANCE,vowel,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),even,35,I'ma tote a AK even when I'm fifty,even,INNER,REPEAT,spelling,HIGH,N
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),strip,35,I'ma tote a AK even when I'm fifty,fifty,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),strip,35,I'ma tote a AK even when I'm fifty,I'ma,INNER,SLANT,spelling,LOW,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),when,35,I'ma tote a AK even when I'm fifty,when,INNER,REPEAT,spelling,HIGH,N
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),sixty,36,"Let them niggas split the drum, both of them get fifty",fifty,END,ASSONANCE,vowel,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),club,36,"Let them niggas split the drum, both of them get fifty",drum,INNER,SLANT,cmu,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),sixty,36,"Let them niggas split the drum, both of them get fifty",split,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),strip,36,"Let them niggas split the drum, both of them get fifty",fifty,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),strip,36,"Let them niggas split the drum, both of them get fifty",split,INNER,SLANT,cmu,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),when,36,"Let them niggas split the drum, both of them get fifty",get,INNER,SLANT,cmu,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),when,36,"Let them niggas split the drum, both of them get fifty",Let,INNER,SLANT,cmu,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),sixty,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,END,ASSONANCE,vowel,MED,Y
+On the Inside,34,I be in the strip club even when I'm sixty (Straight up),sixty,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",Blimpy,END,ASSONANCE,vowel,LOW,N
+On the Inside,35,I'ma tote a AK even when I'm fifty,fifty,36,"Let them niggas split the drum, both of them get fifty",fifty,END,REPEAT,spelling,HIGH,N
+On the Inside,35,I'ma tote a AK even when I'm fifty,fifty,36,"Let them niggas split the drum, both of them get fifty",split,INNER,SLANT,cmu,MED,Y
+On the Inside,35,I'ma tote a AK even when I'm fifty,I'ma,36,"Let them niggas split the drum, both of them get fifty",split,INNER,SLANT,spelling,LOW,Y
+On the Inside,35,I'ma tote a AK even when I'm fifty,tote,36,"Let them niggas split the drum, both of them get fifty",both,INNER,SLANT,cmu,MED,Y
+On the Inside,35,I'ma tote a AK even when I'm fifty,when,36,"Let them niggas split the drum, both of them get fifty",get,INNER,SLANT,cmu,MED,Y
+On the Inside,35,I'ma tote a AK even when I'm fifty,when,36,"Let them niggas split the drum, both of them get fifty",Let,INNER,SLANT,cmu,MED,Y
+On the Inside,35,I'ma tote a AK even when I'm fifty,fifty,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,END,ASSONANCE,vowel,MED,Y
+On the Inside,35,I'ma tote a AK even when I'm fifty,even,37,"You can get shot, believe it or not, nigga, this ain't Ripley",believe,INNER,SLANT,cmu,MED,Y
+On the Inside,35,I'ma tote a AK even when I'm fifty,when,37,"You can get shot, believe it or not, nigga, this ain't Ripley",get,INNER,SLANT,cmu,MED,Y
+On the Inside,35,I'ma tote a AK even when I'm fifty,fifty,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",Blimpy,END,ASSONANCE,vowel,LOW,N
+On the Inside,35,I'ma tote a AK even when I'm fifty,fifty,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,END,ASSONANCE,vowel,MED,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",Let,36,"Let them niggas split the drum, both of them get fifty",get,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",split,36,"Let them niggas split the drum, both of them get fifty",fifty,INNER,SLANT,cmu,MED,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",fifty,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,END,ASSONANCE,vowel,MED,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",get,37,"You can get shot, believe it or not, nigga, this ain't Ripley",get,INNER,REPEAT,spelling,HIGH,N
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",Let,37,"You can get shot, believe it or not, nigga, this ain't Ripley",get,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",niggas,37,"You can get shot, believe it or not, nigga, this ain't Ripley",nigga,INNER,SLANT,spelling,LOW,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",split,37,"You can get shot, believe it or not, nigga, this ain't Ripley",nigga,INNER,SLANT,spelling,LOW,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",split,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",fifty,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",Blimpy,END,ASSONANCE,vowel,LOW,N
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",fifty,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ding,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",fifty,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ling,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",split,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ding,INNER,SLANT,cmu,MED,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",split,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ling,INNER,SLANT,cmu,MED,Y
+On the Inside,36,"Let them niggas split the drum, both of them get fifty",fifty,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,END,ASSONANCE,vowel,MED,Y
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",shot,37,"You can get shot, believe it or not, nigga, this ain't Ripley",not,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",Blimpy,END,ASSONANCE,vowel,LOW,N
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ding,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ling,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,END,ASSONANCE,vowel,MED,Y
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",ain't,39,"Lil' boy, I'm a killer whale, you could never shrimp me",whale,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",get,39,"Lil' boy, I'm a killer whale, you could never shrimp me",never,INNER,SLANT,cmu,MED,Y
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,39,"Lil' boy, I'm a killer whale, you could never shrimp me",killer,INNER,SLANT,cmu,MED,Y
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,39,"Lil' boy, I'm a killer whale, you could never shrimp me",Lil,INNER,SLANT,cmu,MED,Y
+On the Inside,37,"You can get shot, believe it or not, nigga, this ain't Ripley",Ripley,41,"Whole pointer VVS's, got my neck rinsing",rinsing,END,ASSONANCE,vowel,MED,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ding,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ling,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",Blimpy,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,END,SLANT,spelling,LOW,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ding,39,"Lil' boy, I'm a killer whale, you could never shrimp me",killer,INNER,SLANT,cmu,MED,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ding,39,"Lil' boy, I'm a killer whale, you could never shrimp me",Lil,INNER,SLANT,cmu,MED,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ding,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ling,39,"Lil' boy, I'm a killer whale, you could never shrimp me",killer,INNER,SLANT,cmu,MED,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ling,39,"Lil' boy, I'm a killer whale, you could never shrimp me",Lil,INNER,SLANT,cmu,MED,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ling,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",Pulled,39,"Lil' boy, I'm a killer whale, you could never shrimp me",could,INNER,SLANT,cmu,MED,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ding,40,"Fronted me 300 bags, that shit there was tempting",shit,INNER,SLANT,cmu,MED,Y
+On the Inside,38,"Pulled my ding-a-ling out, she thought it was a Blimpy",ling,40,"Fronted me 300 bags, that shit there was tempting",shit,INNER,SLANT,cmu,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",killer,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",Lil,39,"Lil' boy, I'm a killer whale, you could never shrimp me",killer,INNER,SLANT,cmu,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",Lil,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",killer,40,"Fronted me 300 bags, that shit there was tempting",shit,INNER,SLANT,cmu,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",Lil,40,"Fronted me 300 bags, that shit there was tempting",shit,INNER,SLANT,cmu,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",never,40,"Fronted me 300 bags, that shit there was tempting",tempting,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",never,40,"Fronted me 300 bags, that shit there was tempting",there,INNER,SLANT,cmu,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,40,"Fronted me 300 bags, that shit there was tempting",shit,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,41,"Whole pointer VVS's, got my neck rinsing",rinsing,END,ASSONANCE,vowel,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",boy,41,"Whole pointer VVS's, got my neck rinsing",pointer,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",killer,41,"Whole pointer VVS's, got my neck rinsing",rinsing,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",Lil,41,"Whole pointer VVS's, got my neck rinsing",rinsing,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",never,41,"Whole pointer VVS's, got my neck rinsing",neck,INNER,SLANT,cmu,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,END,ASSONANCE,vowel,MED,Y
+On the Inside,39,"Lil' boy, I'm a killer whale, you could never shrimp me",shrimp,43,"Made a couple M's, spent a quarter on a ring-ring",ring,END,ASSONANCE,vowel,MED,Y
+On the Inside,40,"Fronted me 300 bags, that shit there was tempting",there,40,"Fronted me 300 bags, that shit there was tempting",tempting,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,40,"Fronted me 300 bags, that shit there was tempting",shit,41,"Whole pointer VVS's, got my neck rinsing",rinsing,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,40,"Fronted me 300 bags, that shit there was tempting",tempting,41,"Whole pointer VVS's, got my neck rinsing",neck,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,40,"Fronted me 300 bags, that shit there was tempting",there,41,"Whole pointer VVS's, got my neck rinsing",neck,INNER,SLANT,cmu,MED,Y
+On the Inside,40,"Fronted me 300 bags, that shit there was tempting",shit,42,"Chinese bitch, don't know her name, I just call her Ling Ling",bitch,INNER,SLANT,cmu,MED,Y
+On the Inside,40,"Fronted me 300 bags, that shit there was tempting",shit,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,INNER,SLANT,cmu,MED,Y
+On the Inside,40,"Fronted me 300 bags, that shit there was tempting",tempting,44,"Cash Money, '99, bitch, I got that bling-bling",bling,END,PERFECT,spelling,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",rinsing,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,END,ASSONANCE,vowel,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",rinsing,42,"Chinese bitch, don't know her name, I just call her Ling Ling",bitch,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",rinsing,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",Whole,42,"Chinese bitch, don't know her name, I just call her Ling Ling",don't,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",Whole,42,"Chinese bitch, don't know her name, I just call her Ling Ling",know,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",rinsing,43,"Made a couple M's, spent a quarter on a ring-ring",ring,END,ASSONANCE,vowel,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",neck,43,"Made a couple M's, spent a quarter on a ring-ring",M's,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",neck,43,"Made a couple M's, spent a quarter on a ring-ring",spent,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",rinsing,43,"Made a couple M's, spent a quarter on a ring-ring",ring,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",rinsing,44,"Cash Money, '99, bitch, I got that bling-bling",bling,END,PERFECT,spelling,MED,Y
+On the Inside,41,"Whole pointer VVS's, got my neck rinsing",rinsing,45,"Never was a kingpin, beat a couple drug stings",stings,END,ASSONANCE,vowel,MED,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",bitch,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,INNER,SLANT,cmu,MED,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",don't,42,"Chinese bitch, don't know her name, I just call her Ling Ling",know,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,INNER,REPEAT,spelling,HIGH,N
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,43,"Made a couple M's, spent a quarter on a ring-ring",ring,END,PERFECT,cmu,HIGH,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",bitch,43,"Made a couple M's, spent a quarter on a ring-ring",ring,INNER,SLANT,cmu,MED,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",call,43,"Made a couple M's, spent a quarter on a ring-ring",quarter,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,43,"Made a couple M's, spent a quarter on a ring-ring",ring,INNER,PERFECT,cmu,HIGH,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",name,43,"Made a couple M's, spent a quarter on a ring-ring",Made,INNER,SLANT,cmu,MED,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,44,"Cash Money, '99, bitch, I got that bling-bling",bling,END,PERFECT,spelling,HIGH,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",bitch,44,"Cash Money, '99, bitch, I got that bling-bling",bitch,INNER,REPEAT,spelling,HIGH,N
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",bitch,44,"Cash Money, '99, bitch, I got that bling-bling",bling,INNER,SLANT,spelling,LOW,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,44,"Cash Money, '99, bitch, I got that bling-bling",bitch,INNER,SLANT,cmu,MED,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,44,"Cash Money, '99, bitch, I got that bling-bling",bling,INNER,PERFECT,spelling,HIGH,Y
+On the Inside,42,"Chinese bitch, don't know her name, I just call her Ling Ling",Ling,45,"Never was a kingpin, beat a couple drug stings",stings,END,SLANT,cmu,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",M's,43,"Made a couple M's, spent a quarter on a ring-ring",spent,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",ring,43,"Made a couple M's, spent a quarter on a ring-ring",ring,INNER,REPEAT,spelling,HIGH,N
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",ring,44,"Cash Money, '99, bitch, I got that bling-bling",bling,END,PERFECT,spelling,HIGH,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",couple,44,"Cash Money, '99, bitch, I got that bling-bling",Money,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",ring,44,"Cash Money, '99, bitch, I got that bling-bling",bitch,INNER,SLANT,cmu,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",ring,44,"Cash Money, '99, bitch, I got that bling-bling",bling,INNER,PERFECT,spelling,HIGH,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",ring,45,"Never was a kingpin, beat a couple drug stings",stings,END,SLANT,cmu,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",couple,45,"Never was a kingpin, beat a couple drug stings",couple,INNER,REPEAT,spelling,HIGH,N
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",couple,45,"Never was a kingpin, beat a couple drug stings",drug,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",M's,45,"Never was a kingpin, beat a couple drug stings",Never,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",ring,45,"Never was a kingpin, beat a couple drug stings",kingpin,INNER,SLANT,cmu,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",ring,45,"Never was a kingpin, beat a couple drug stings",stings,INNER,SLANT,cmu,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",spent,45,"Never was a kingpin, beat a couple drug stings",Never,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,43,"Made a couple M's, spent a quarter on a ring-ring",ring,47,But she just a summer fling,fling,END,PERFECT,cmu,HIGH,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bitch,44,"Cash Money, '99, bitch, I got that bling-bling",bling,INNER,SLANT,spelling,LOW,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bling,44,"Cash Money, '99, bitch, I got that bling-bling",bling,INNER,REPEAT,spelling,HIGH,N
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bling,45,"Never was a kingpin, beat a couple drug stings",stings,END,SLANT,spelling,LOW,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bitch,45,"Never was a kingpin, beat a couple drug stings",kingpin,INNER,SLANT,cmu,MED,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bitch,45,"Never was a kingpin, beat a couple drug stings",stings,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bling,45,"Never was a kingpin, beat a couple drug stings",kingpin,INNER,SLANT,spelling,LOW,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bling,45,"Never was a kingpin, beat a couple drug stings",stings,INNER,SLANT,spelling,LOW,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",Money,45,"Never was a kingpin, beat a couple drug stings",couple,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",Money,45,"Never was a kingpin, beat a couple drug stings",drug,INNER,SLANT,cmu,MED,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bitch,46,She think she my one and only,think,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bling,46,She think she my one and only,think,INNER,SLANT,spelling,LOW,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",Money,46,She think she my one and only,one,INNER,SLANT,cmu,MED,Y
+On the Inside,44,"Cash Money, '99, bitch, I got that bling-bling",bling,47,But she just a summer fling,fling,END,PERFECT,spelling,HIGH,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",couple,45,"Never was a kingpin, beat a couple drug stings",drug,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",kingpin,45,"Never was a kingpin, beat a couple drug stings",stings,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",couple,46,She think she my one and only,one,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",drug,46,She think she my one and only,one,INNER,SLANT,cmu,MED,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",kingpin,46,She think she my one and only,think,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",stings,46,She think she my one and only,think,INNER,SLANT,cmu,MED,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",stings,47,But she just a summer fling,fling,END,SLANT,cmu,MED,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",couple,47,But she just a summer fling,summer,INNER,ASSONANCE,vowel,MED,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",drug,47,But she just a summer fling,summer,INNER,SLANT,cmu,MED,Y
+On the Inside,45,"Never was a kingpin, beat a couple drug stings",kingpin,47,But she just a summer fling,fling,INNER,SLANT,cmu,MED,Y
+On the Inside,46,She think she my one and only,one,47,But she just a summer fling,summer,INNER,SLANT,cmu,MED,Y
+On the Inside,46,She think she my one and only,think,47,But she just a summer fling,fling,INNER,SLANT,cmu,MED,Y

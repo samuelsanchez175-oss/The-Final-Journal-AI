@@ -1,0 +1,877 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Paper Soldiers,1,"Teejay, I'm trying to tell you",Teejay,2,Only the real can relate,real,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,2,Only the real can relate,relate,3,"And only the fake can hate, yeah",hate,END,PERFECT,cmu,HIGH,Y
+Paper Soldiers,2,Only the real can relate,can,3,"And only the fake can hate, yeah",can,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,2,Only the real can relate,Only,3,"And only the fake can hate, yeah",only,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,2,Only the real can relate,relate,3,"And only the fake can hate, yeah",fake,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,2,Only the real can relate,can,4,"Kodak, and you know that",Kodak,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,2,Only the real can relate,Only,4,"Kodak, and you know that",know,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,3,"And only the fake can hate, yeah",fake,3,"And only the fake can hate, yeah",hate,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,3,"And only the fake can hate, yeah",can,4,"Kodak, and you know that",Kodak,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,3,"And only the fake can hate, yeah",only,4,"Kodak, and you know that",know,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,3,"And only the fake can hate, yeah",can,5,Man I just want the money,Man,INNER,PERFECT,cmu,HIGH,Y
+Paper Soldiers,4,"Kodak, and you know that",Kodak,5,Man I just want the money,Man,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,5,Man I just want the money,money,6,"Yeah, I just want the money",money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,5,Man I just want the money,want,6,"Yeah, I just want the money",want,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,5,Man I just want the money,money,7,"Man I just want the money, yeah",money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,5,Man I just want the money,Man,7,"Man I just want the money, yeah",Man,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,5,Man I just want the money,want,7,"Man I just want the money, yeah",want,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,5,Man I just want the money,money,8,"I just want the money man, I just want the money, yeah",money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,6,"Yeah, I just want the money",money,7,"Man I just want the money, yeah",money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,6,"Yeah, I just want the money",want,7,"Man I just want the money, yeah",want,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,6,"Yeah, I just want the money",money,8,"I just want the money man, I just want the money, yeah",money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,6,"Yeah, I just want the money",money,8,"I just want the money man, I just want the money, yeah",money,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,6,"Yeah, I just want the money",want,8,"I just want the money man, I just want the money, yeah",want,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,7,"Man I just want the money, yeah",money,8,"I just want the money man, I just want the money, yeah",money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,7,"Man I just want the money, yeah",Man,8,"I just want the money man, I just want the money, yeah",man,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,7,"Man I just want the money, yeah",money,8,"I just want the money man, I just want the money, yeah",money,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,7,"Man I just want the money, yeah",want,8,"I just want the money man, I just want the money, yeah",want,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,7,"Man I just want the money, yeah",Man,9,"I'm so money hungry, feel it in my stomach, man",man,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,7,"Man I just want the money, yeah",money,9,"I'm so money hungry, feel it in my stomach, man",hungry,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,7,"Man I just want the money, yeah",money,9,"I'm so money hungry, feel it in my stomach, man",money,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,7,"Man I just want the money, yeah",money,9,"I'm so money hungry, feel it in my stomach, man",stomach,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,7,"Man I just want the money, yeah",money,11,I just want the money (paper soldier),money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",money,8,"I just want the money man, I just want the money, yeah",money,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",want,8,"I just want the money man, I just want the money, yeah",want,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",man,9,"I'm so money hungry, feel it in my stomach, man",man,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",money,9,"I'm so money hungry, feel it in my stomach, man",hungry,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",money,9,"I'm so money hungry, feel it in my stomach, man",money,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",money,9,"I'm so money hungry, feel it in my stomach, man",stomach,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",man,10,I'm just running up the bands,bands,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",money,10,I'm just running up the bands,running,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",money,11,I just want the money (paper soldier),money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,8,"I just want the money man, I just want the money, yeah",money,12,"That's all I ever wanted, man (Look), I just want the money, yeah",money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",hungry,9,"I'm so money hungry, feel it in my stomach, man",stomach,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",money,9,"I'm so money hungry, feel it in my stomach, man",hungry,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",money,9,"I'm so money hungry, feel it in my stomach, man",stomach,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",man,10,I'm just running up the bands,bands,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",hungry,10,I'm just running up the bands,running,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",money,10,I'm just running up the bands,running,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",stomach,10,I'm just running up the bands,running,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",hungry,11,I just want the money (paper soldier),money,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",money,11,I just want the money (paper soldier),money,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,9,"I'm so money hungry, feel it in my stomach, man",stomach,11,I just want the money (paper soldier),money,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,10,I'm just running up the bands,running,11,I just want the money (paper soldier),money,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,10,I'm just running up the bands,bands,12,"That's all I ever wanted, man (Look), I just want the money, yeah",man,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,10,I'm just running up the bands,running,12,"That's all I ever wanted, man (Look), I just want the money, yeah",money,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,11,I just want the money (paper soldier),money,12,"That's all I ever wanted, man (Look), I just want the money, yeah",money,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,11,I just want the money (paper soldier),want,12,"That's all I ever wanted, man (Look), I just want the money, yeah",want,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,11,I just want the money (paper soldier),money,13,"It's complicated, no conversatin', the money talk (It's complicated)",money,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,12,"That's all I ever wanted, man (Look), I just want the money, yeah",all,12,"That's all I ever wanted, man (Look), I just want the money, yeah",wanted,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,12,"That's all I ever wanted, man (Look), I just want the money, yeah",all,13,"It's complicated, no conversatin', the money talk (It's complicated)",talk,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,12,"That's all I ever wanted, man (Look), I just want the money, yeah",money,13,"It's complicated, no conversatin', the money talk (It's complicated)",money,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,12,"That's all I ever wanted, man (Look), I just want the money, yeah",wanted,13,"It's complicated, no conversatin', the money talk (It's complicated)",talk,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,12,"That's all I ever wanted, man (Look), I just want the money, yeah",all,14,Hustlin' all day just to break my mama off (Break my mama),all,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,12,"That's all I ever wanted, man (Look), I just want the money, yeah",money,14,Hustlin' all day just to break my mama off (Break my mama),Hustlin,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,12,"That's all I ever wanted, man (Look), I just want the money, yeah",want,14,Hustlin' all day just to break my mama off (Break my mama),mama,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,12,"That's all I ever wanted, man (Look), I just want the money, yeah",wanted,14,Hustlin' all day just to break my mama off (Break my mama),all,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,13,"It's complicated, no conversatin', the money talk (It's complicated)",complicated,14,Hustlin' all day just to break my mama off (Break my mama),break,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,13,"It's complicated, no conversatin', the money talk (It's complicated)",complicated,14,Hustlin' all day just to break my mama off (Break my mama),day,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,13,"It's complicated, no conversatin', the money talk (It's complicated)",money,14,Hustlin' all day just to break my mama off (Break my mama),Hustlin,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,13,"It's complicated, no conversatin', the money talk (It's complicated)",talk,14,Hustlin' all day just to break my mama off (Break my mama),all,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,13,"It's complicated, no conversatin', the money talk (It's complicated)",talk,15,"I seen the struggle, so for that, man, I want it all (I want all of it)",all,END,SLANT,cmu,MED,Y
+Paper Soldiers,13,"It's complicated, no conversatin', the money talk (It's complicated)",money,15,"I seen the struggle, so for that, man, I want it all (I want all of it)",struggle,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,13,"It's complicated, no conversatin', the money talk (It's complicated)",talk,16,"20's, 50's, 100's, I swear I love it all (I want the cash)",all,END,SLANT,cmu,MED,Y
+Paper Soldiers,14,Hustlin' all day just to break my mama off (Break my mama),day,14,Hustlin' all day just to break my mama off (Break my mama),break,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,14,Hustlin' all day just to break my mama off (Break my mama),all,15,"I seen the struggle, so for that, man, I want it all (I want all of it)",all,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,14,Hustlin' all day just to break my mama off (Break my mama),Hustlin,15,"I seen the struggle, so for that, man, I want it all (I want all of it)",struggle,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,14,Hustlin' all day just to break my mama off (Break my mama),mama,15,"I seen the struggle, so for that, man, I want it all (I want all of it)",want,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,14,Hustlin' all day just to break my mama off (Break my mama),all,16,"20's, 50's, 100's, I swear I love it all (I want the cash)",all,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,14,Hustlin' all day just to break my mama off (Break my mama),Hustlin,16,"20's, 50's, 100's, I swear I love it all (I want the cash)",love,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,15,"I seen the struggle, so for that, man, I want it all (I want all of it)",all,16,"20's, 50's, 100's, I swear I love it all (I want the cash)",all,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,15,"I seen the struggle, so for that, man, I want it all (I want all of it)",struggle,16,"20's, 50's, 100's, I swear I love it all (I want the cash)",love,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,15,"I seen the struggle, so for that, man, I want it all (I want all of it)",all,17,I'm talking big face hunnids (I'm going fast),talking,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,16,"20's, 50's, 100's, I swear I love it all (I want the cash)",all,17,I'm talking big face hunnids (I'm going fast),talking,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,16,"20's, 50's, 100's, I swear I love it all (I want the cash)",love,18,"Somebody test us as I'm comin' (Bitch, I'm on yo' ass)",comin,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,16,"20's, 50's, 100's, I swear I love it all (I want the cash)",swear,18,"Somebody test us as I'm comin' (Bitch, I'm on yo' ass)",test,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,17,I'm talking big face hunnids (I'm going fast),hunnids,18,"Somebody test us as I'm comin' (Bitch, I'm on yo' ass)",comin,END,ASSONANCE,vowel,LOW,N
+Paper Soldiers,17,I'm talking big face hunnids (I'm going fast),big,19,"If I see it then I want it, I'ma get it",I'ma,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,18,"Somebody test us as I'm comin' (Bitch, I'm on yo' ass)",Somebody,19,"If I see it then I want it, I'ma get it",want,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,18,"Somebody test us as I'm comin' (Bitch, I'm on yo' ass)",test,19,"If I see it then I want it, I'ma get it",get,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,18,"Somebody test us as I'm comin' (Bitch, I'm on yo' ass)",comin,20,No handouts I got it from the mud (From the mud),mud,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,18,"Somebody test us as I'm comin' (Bitch, I'm on yo' ass)",Somebody,20,No handouts I got it from the mud (From the mud),got,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,18,"Somebody test us as I'm comin' (Bitch, I'm on yo' ass)",comin,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",budge,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,18,"Somebody test us as I'm comin' (Bitch, I'm on yo' ass)",comin,22,"You niggas starvin', I'm too busy tryna grub (Tryna eat)",grub,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,19,"If I see it then I want it, I'ma get it",want,20,No handouts I got it from the mud (From the mud),got,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,19,"If I see it then I want it, I'ma get it",see,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",even,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,20,No handouts I got it from the mud (From the mud),mud,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",budge,END,SLANT,cmu,MED,Y
+Paper Soldiers,20,No handouts I got it from the mud (From the mud),mud,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",money,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,20,No handouts I got it from the mud (From the mud),No,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",don't,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,20,No handouts I got it from the mud (From the mud),mud,22,"You niggas starvin', I'm too busy tryna grub (Tryna eat)",grub,END,SLANT,cmu,MED,Y
+Paper Soldiers,20,No handouts I got it from the mud (From the mud),got,22,"You niggas starvin', I'm too busy tryna grub (Tryna eat)",starvin,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,20,No handouts I got it from the mud (From the mud),mud,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",love,END,SLANT,cmu,MED,Y
+Paper Soldiers,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",don't,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",don't,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",money,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",budge,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",budge,22,"You niggas starvin', I'm too busy tryna grub (Tryna eat)",grub,END,SLANT,cmu,MED,Y
+Paper Soldiers,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",even,22,"You niggas starvin', I'm too busy tryna grub (Tryna eat)",tryna,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",money,22,"You niggas starvin', I'm too busy tryna grub (Tryna eat)",grub,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",budge,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",love,END,SLANT,cmu,MED,Y
+Paper Soldiers,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",even,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",tryna,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,21,"And if the money don't move, then I don't even budge (I won't budge, nigga)",money,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",love,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,22,"You niggas starvin', I'm too busy tryna grub (Tryna eat)",grub,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",love,END,SLANT,cmu,MED,Y
+Paper Soldiers,22,"You niggas starvin', I'm too busy tryna grub (Tryna eat)",tryna,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",tryna,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,22,"You niggas starvin', I'm too busy tryna grub (Tryna eat)",starvin,24,"It ain't my birthday, but I got my cake up (Cake up)",got,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",ain't,24,"It ain't my birthday, but I got my cake up (Cake up)",ain't,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",ain't,24,"It ain't my birthday, but I got my cake up (Cake up)",birthday,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",ain't,24,"It ain't my birthday, but I got my cake up (Cake up)",cake,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",ain't,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",wake,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,23,"I'm tryna cash out, I ain't never fall in love (Never ever)",tryna,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",sleep,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,24,"It ain't my birthday, but I got my cake up (Cake up)",ain't,24,"It ain't my birthday, but I got my cake up (Cake up)",birthday,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,24,"It ain't my birthday, but I got my cake up (Cake up)",ain't,24,"It ain't my birthday, but I got my cake up (Cake up)",cake,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,24,"It ain't my birthday, but I got my cake up (Cake up)",birthday,24,"It ain't my birthday, but I got my cake up (Cake up)",cake,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,24,"It ain't my birthday, but I got my cake up (Cake up)",cake,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",wake,END,PERFECT,cmu,HIGH,Y
+Paper Soldiers,24,"It ain't my birthday, but I got my cake up (Cake up)",ain't,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",wake,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,24,"It ain't my birthday, but I got my cake up (Cake up)",birthday,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",wake,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,24,"It ain't my birthday, but I got my cake up (Cake up)",cake,26,"10 toes, 'bout my money, shoes laced up",laced,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,24,"It ain't my birthday, but I got my cake up (Cake up)",ain't,26,"10 toes, 'bout my money, shoes laced up",laced,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,24,"It ain't my birthday, but I got my cake up (Cake up)",birthday,26,"10 toes, 'bout my money, shoes laced up",laced,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",wake,26,"10 toes, 'bout my money, shoes laced up",laced,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",now,26,"10 toes, 'bout my money, shoes laced up",'bout,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",used,26,"10 toes, 'bout my money, shoes laced up",shoes,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",time,27,"And when I spread, I energize, time to crank up",energize,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,25,"They used to sleep on me, now it's time to wake up (Why you sleepin'?)",time,27,"And when I spread, I energize, time to crank up",time,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,26,"10 toes, 'bout my money, shoes laced up",toes,26,"10 toes, 'bout my money, shoes laced up",shoes,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,26,"10 toes, 'bout my money, shoes laced up",toes,28,All I ever wanted was the dope (Free bands),dope,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,26,"10 toes, 'bout my money, shoes laced up",laced,30,"If it's not the paper, I don't chase (I ain't chasin' it)",chase,END,SLANT,cmu,MED,Y
+Paper Soldiers,27,"And when I spread, I energize, time to crank up",energize,27,"And when I spread, I energize, time to crank up",time,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,27,"And when I spread, I energize, time to crank up",when,27,"And when I spread, I energize, time to crank up",spread,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,27,"And when I spread, I energize, time to crank up",spread,28,All I ever wanted was the dope (Free bands),ever,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,27,"And when I spread, I energize, time to crank up",when,28,All I ever wanted was the dope (Free bands),ever,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,28,All I ever wanted was the dope (Free bands),All,28,All I ever wanted was the dope (Free bands),wanted,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,28,All I ever wanted was the dope (Free bands),dope,29,I ain't even worry 'bout a ho (Fuck a bitch),ho,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,28,All I ever wanted was the dope (Free bands),dope,30,"If it's not the paper, I don't chase (I ain't chasin' it)",don't,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,29,I ain't even worry 'bout a ho (Fuck a bitch),ain't,30,"If it's not the paper, I don't chase (I ain't chasin' it)",chase,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,29,I ain't even worry 'bout a ho (Fuck a bitch),ain't,30,"If it's not the paper, I don't chase (I ain't chasin' it)",paper,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,29,I ain't even worry 'bout a ho (Fuck a bitch),ho,30,"If it's not the paper, I don't chase (I ain't chasin' it)",don't,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,29,I ain't even worry 'bout a ho (Fuck a bitch),ain't,31,I just want a mil' on my plate,plate,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,30,"If it's not the paper, I don't chase (I ain't chasin' it)",paper,30,"If it's not the paper, I don't chase (I ain't chasin' it)",chase,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,30,"If it's not the paper, I don't chase (I ain't chasin' it)",chase,31,I just want a mil' on my plate,plate,END,SLANT,cmu,MED,Y
+Paper Soldiers,30,"If it's not the paper, I don't chase (I ain't chasin' it)",not,31,I just want a mil' on my plate,want,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,30,"If it's not the paper, I don't chase (I ain't chasin' it)",paper,31,I just want a mil' on my plate,plate,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,30,"If it's not the paper, I don't chase (I ain't chasin' it)",chase,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",say,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,30,"If it's not the paper, I don't chase (I ain't chasin' it)",not,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",wanna,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,30,"If it's not the paper, I don't chase (I ain't chasin' it)",paper,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",say,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,31,I just want a mil' on my plate,plate,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",say,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,31,I just want a mil' on my plate,mil,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",I'ma,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,31,I just want a mil' on my plate,want,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",wanna,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",feel,33,Dirty money and my weed stank (And my weed stank),weed,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",young,33,Dirty money and my weed stank (And my weed stank),money,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",wanna,34,Turnt up in the coupe and I got that bank (And I got that bank),got,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,32,"I'm a young nigga, I just wanna feel, I'ma say it (I just wanna feel, I'ma say it)",say,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",face,END,ASSONANCE,vowel,MED,Y
+Paper Soldiers,33,Dirty money and my weed stank (And my weed stank),stank,34,Turnt up in the coupe and I got that bank (And I got that bank),bank,END,PERFECT,cmu,HIGH,Y
+Paper Soldiers,33,Dirty money and my weed stank (And my weed stank),money,35,Zo Boy comin' through and I'm with yo bae (And I'm with yo' bae),comin,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,34,Turnt up in the coupe and I got that bank (And I got that bank),coupe,35,Zo Boy comin' through and I'm with yo bae (And I'm with yo' bae),through,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,34,Turnt up in the coupe and I got that bank (And I got that bank),coupe,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",Ruger,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,34,Turnt up in the coupe and I got that bank (And I got that bank),coupe,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",shoota,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,35,Zo Boy comin' through and I'm with yo bae (And I'm with yo' bae),through,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",Ruger,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,35,Zo Boy comin' through and I'm with yo bae (And I'm with yo' bae),comin,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",jitterbug,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,35,Zo Boy comin' through and I'm with yo bae (And I'm with yo' bae),through,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",Hoover,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",shoota,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",Ruger,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",face,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",cake,END,SLANT,cmu,MED,Y
+Paper Soldiers,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",Ruger,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",Hoover,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",shoota,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",Hoover,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",face,38,"Getting to the mula, I be in and out the state (Go drop that bag)",state,END,SLANT,cmu,MED,Y
+Paper Soldiers,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",Ruger,38,"Getting to the mula, I be in and out the state (Go drop that bag)",mula,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",shoota,38,"Getting to the mula, I be in and out the state (Go drop that bag)",mula,INNER,SLANT,spelling,LOW,Y
+Paper Soldiers,36,"I'm my own shoota, put the Ruger to your face (Put it to your face)",face,39,"I was money hungry, I went on a dinner date (Ayy)",date,END,SLANT,cmu,MED,Y
+Paper Soldiers,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",cake,38,"Getting to the mula, I be in and out the state (Go drop that bag)",state,END,SLANT,cmu,MED,Y
+Paper Soldiers,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",Hoover,38,"Getting to the mula, I be in and out the state (Go drop that bag)",mula,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",Larry,38,"Getting to the mula, I be in and out the state (Go drop that bag)",Getting,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",cake,39,"I was money hungry, I went on a dinner date (Ayy)",date,END,SLANT,cmu,MED,Y
+Paper Soldiers,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",jitterbug,39,"I was money hungry, I went on a dinner date (Ayy)",hungry,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",jitterbug,39,"I was money hungry, I went on a dinner date (Ayy)",money,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,37,"Call me Larry Hoover, jitterbug 'bout that cake (Jitterbug 'bout that cake)",Larry,39,"I was money hungry, I went on a dinner date (Ayy)",went,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,38,"Getting to the mula, I be in and out the state (Go drop that bag)",state,39,"I was money hungry, I went on a dinner date (Ayy)",date,END,PERFECT,cmu,HIGH,Y
+Paper Soldiers,38,"Getting to the mula, I be in and out the state (Go drop that bag)",Getting,39,"I was money hungry, I went on a dinner date (Ayy)",went,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,39,"I was money hungry, I went on a dinner date (Ayy)",money,39,"I was money hungry, I went on a dinner date (Ayy)",hungry,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,39,"I was money hungry, I went on a dinner date (Ayy)",hungry,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",jumpin,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,39,"I was money hungry, I went on a dinner date (Ayy)",money,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",jumpin,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",boring,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",foreign,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",foreign,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",Lauren,END,MULTI,multi,HIGH,Y
+Paper Soldiers,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",boring,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",Lauren,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",Polo,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",glowin,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",foreign,42,"Baby, let me transform, yeah them niggas boring",boring,END,SLANT,cmu,MED,Y
+Paper Soldiers,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",boring,42,"Baby, let me transform, yeah them niggas boring",boring,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",boring,42,"Baby, let me transform, yeah them niggas boring",transform,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,40,"Polo jumpin' out the boring, and I'm ridin' foreign (Nigga)",foreign,42,"Baby, let me transform, yeah them niggas boring",transform,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",got,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",rockin,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",Lauren,42,"Baby, let me transform, yeah them niggas boring",boring,END,SLANT,cmu,MED,Y
+Paper Soldiers,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",Lauren,42,"Baby, let me transform, yeah them niggas boring",transform,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",glowin,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",going,INNER,MULTI,multi,HIGH,Y
+Paper Soldiers,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",got glowin,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",where going,INNER,MULTI,multi,HIGH,Y
+Paper Soldiers,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",Ralph,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",ass,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,41,"Jewelry on me, got me glowin', rockin' Ralph Lauren (Ralph Lauren)",Ralph,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",Kodak,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,42,"Baby, let me transform, yeah them niggas boring",transform,42,"Baby, let me transform, yeah them niggas boring",boring,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,42,"Baby, let me transform, yeah them niggas boring",Baby,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",Take,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,42,"Baby, let me transform, yeah them niggas boring",let,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",where,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,42,"Baby, let me transform, yeah them niggas boring",niggas,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",ass,INNER,PERFECT,spelling,MED,Y
+Paper Soldiers,42,"Baby, let me transform, yeah them niggas boring",Baby,44,"Look, fuck the haters, man, I just want the paper",haters,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,42,"Baby, let me transform, yeah them niggas boring",Baby,44,"Look, fuck the haters, man, I just want the paper",paper,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",ass,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",Kodak,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",ass,44,"Look, fuck the haters, man, I just want the paper",man,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",Kodak,44,"Look, fuck the haters, man, I just want the paper",man,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",Take,44,"Look, fuck the haters, man, I just want the paper",haters,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",Take,44,"Look, fuck the haters, man, I just want the paper",paper,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",ass,45,"Fuck the haters, man, I just want the paper",man,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",Kodak,45,"Fuck the haters, man, I just want the paper",man,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",Take,45,"Fuck the haters, man, I just want the paper",haters,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,43,"Take off on yo' ass, they like ""Kodak, where you going?"" (""Kodak where you going?"")",Take,45,"Fuck the haters, man, I just want the paper",paper,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",haters,44,"Look, fuck the haters, man, I just want the paper",paper,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",paper,45,"Fuck the haters, man, I just want the paper",paper,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",fuck,45,"Fuck the haters, man, I just want the paper",Fuck,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",haters,45,"Fuck the haters, man, I just want the paper",haters,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",haters,45,"Fuck the haters, man, I just want the paper",paper,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",man,45,"Fuck the haters, man, I just want the paper",man,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",paper,45,"Fuck the haters, man, I just want the paper",haters,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",want,45,"Fuck the haters, man, I just want the paper",want,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",paper,46,And they mad 'cause my shoes alligator,alligator,END,SLANT,cmu,MED,Y
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",haters,46,And they mad 'cause my shoes alligator,alligator,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",man,46,And they mad 'cause my shoes alligator,mad,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,44,"Look, fuck the haters, man, I just want the paper",paper,47,"Yeah, fuck the haters, man, I just want the paper",paper,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",haters,45,"Fuck the haters, man, I just want the paper",paper,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",paper,46,And they mad 'cause my shoes alligator,alligator,END,SLANT,cmu,MED,Y
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",haters,46,And they mad 'cause my shoes alligator,alligator,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",man,46,And they mad 'cause my shoes alligator,mad,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",paper,47,"Yeah, fuck the haters, man, I just want the paper",paper,END,REPEAT,spelling,HIGH,N
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",Fuck,47,"Yeah, fuck the haters, man, I just want the paper",fuck,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",haters,47,"Yeah, fuck the haters, man, I just want the paper",haters,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",haters,47,"Yeah, fuck the haters, man, I just want the paper",paper,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",man,47,"Yeah, fuck the haters, man, I just want the paper",man,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",paper,47,"Yeah, fuck the haters, man, I just want the paper",haters,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,45,"Fuck the haters, man, I just want the paper",want,47,"Yeah, fuck the haters, man, I just want the paper",want,INNER,REPEAT,spelling,HIGH,N
+Paper Soldiers,46,And they mad 'cause my shoes alligator,alligator,47,"Yeah, fuck the haters, man, I just want the paper",paper,END,SLANT,cmu,MED,Y
+Paper Soldiers,46,And they mad 'cause my shoes alligator,alligator,47,"Yeah, fuck the haters, man, I just want the paper",haters,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,46,And they mad 'cause my shoes alligator,mad,47,"Yeah, fuck the haters, man, I just want the paper",man,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,46,And they mad 'cause my shoes alligator,alligator,48,"And my money going up like elevators, nigga yeah",elevators,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,46,And they mad 'cause my shoes alligator,mad,48,"And my money going up like elevators, nigga yeah",nigga,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,47,"Yeah, fuck the haters, man, I just want the paper",haters,47,"Yeah, fuck the haters, man, I just want the paper",paper,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,47,"Yeah, fuck the haters, man, I just want the paper",fuck,48,"And my money going up like elevators, nigga yeah",money,INNER,SLANT,cmu,MED,Y
+Paper Soldiers,47,"Yeah, fuck the haters, man, I just want the paper",fuck haters,48,"And my money going up like elevators, nigga yeah",like elevators,INNER,MULTI,multi,HIGH,Y
+Paper Soldiers,47,"Yeah, fuck the haters, man, I just want the paper",haters,48,"And my money going up like elevators, nigga yeah",elevators,INNER,MULTI,multi,HIGH,Y
+Paper Soldiers,47,"Yeah, fuck the haters, man, I just want the paper",man,48,"And my money going up like elevators, nigga yeah",nigga,INNER,ASSONANCE,vowel,MED,Y
+Paper Soldiers,47,"Yeah, fuck the haters, man, I just want the paper",paper,48,"And my money going up like elevators, nigga yeah",elevators,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,1,"Gang gang, gang shit",Gang,1,"Gang gang, gang shit",gang,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,1,"Gang gang, gang shit",shit,2,"Gang, gang shit, no lame shit, yeah",shit,END,REPEAT,spelling,HIGH,N
+Pissy Hallways,1,"Gang gang, gang shit",Gang,2,"Gang, gang shit, no lame shit, yeah",Gang,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,1,"Gang gang, gang shit",shit,2,"Gang, gang shit, no lame shit, yeah",shit,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,1,"Gang gang, gang shit",shit,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",Gang,2,"Gang, gang shit, no lame shit, yeah",gang,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",shit,2,"Gang, gang shit, no lame shit, yeah",shit,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",lame,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",play,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",lame,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",way,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",no,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",know,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",no,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",won't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",shit,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",Gang,4,"Popped a half a yerky, I been trippin' damn near all day",damn,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",Gang,4,"Popped a half a yerky, I been trippin' damn near all day",half,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",lame,4,"Popped a half a yerky, I been trippin' damn near all day",day,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",shit,4,"Popped a half a yerky, I been trippin' damn near all day",near,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,2,"Gang, gang shit, no lame shit, yeah",shit,4,"Popped a half a yerky, I been trippin' damn near all day",trippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",bitch,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",know,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",won't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",way,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",play,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",play,4,"Popped a half a yerky, I been trippin' damn near all day",day,END,PERFECT,cmu,HIGH,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",bitch,4,"Popped a half a yerky, I been trippin' damn near all day",near,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",bitch,4,"Popped a half a yerky, I been trippin' damn near all day",trippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",way,4,"Popped a half a yerky, I been trippin' damn near all day",day,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",play,5,Reminiscin' on how we had came from pissy hallways,hallways,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",bitch,5,Reminiscin' on how we had came from pissy hallways,pissy,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",bitch,5,Reminiscin' on how we had came from pissy hallways,Reminiscin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",play,5,Reminiscin' on how we had came from pissy hallways,came,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",way,5,Reminiscin' on how we had came from pissy hallways,came,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",way,5,Reminiscin' on how we had came from pissy hallways,hallways,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,3,"Fuck a bitch and send her on her way, bitch, you know I won't play",play,6,"They ask me how much do I keep it on me, I say always",always,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",half,4,"Popped a half a yerky, I been trippin' damn near all day",damn,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",trippin,4,"Popped a half a yerky, I been trippin' damn near all day",near,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",day,5,Reminiscin' on how we had came from pissy hallways,hallways,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",damn,5,Reminiscin' on how we had came from pissy hallways,had,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",day,5,Reminiscin' on how we had came from pissy hallways,came,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",half,5,Reminiscin' on how we had came from pissy hallways,had,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",near,5,Reminiscin' on how we had came from pissy hallways,Reminiscin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",trippin,5,Reminiscin' on how we had came from pissy hallways,Reminiscin,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",yerky,5,Reminiscin' on how we had came from pissy hallways,pissy,INNER,ASSONANCE,vowel,LOW,N
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",day,6,"They ask me how much do I keep it on me, I say always",always,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",damn,6,"They ask me how much do I keep it on me, I say always",ask,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",day,6,"They ask me how much do I keep it on me, I say always",say,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",half,6,"They ask me how much do I keep it on me, I say always",ask,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,4,"Popped a half a yerky, I been trippin' damn near all day",yerky,6,"They ask me how much do I keep it on me, I say always",keep,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,came,5,Reminiscin' on how we had came from pissy hallways,hallways,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,Reminiscin,5,Reminiscin' on how we had came from pissy hallways,pissy,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,hallways,6,"They ask me how much do I keep it on me, I say always",always,END,MULTI,multi,HIGH,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,came,6,"They ask me how much do I keep it on me, I say always",always,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,came,6,"They ask me how much do I keep it on me, I say always",say,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,had,6,"They ask me how much do I keep it on me, I say always",ask,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,hallways,6,"They ask me how much do I keep it on me, I say always",say,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,how,6,"They ask me how much do I keep it on me, I say always",how,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,Reminiscin,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",'til,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,Reminiscin,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,Reminiscin,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,5,Reminiscin' on how we had came from pissy hallways,Reminiscin,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,6,"They ask me how much do I keep it on me, I say always",say,6,"They ask me how much do I keep it on me, I say always",always,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,6,"They ask me how much do I keep it on me, I say always",much,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",Fuck,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",'til,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",'til,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",Fuck,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",fuck,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",nigga,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",nigga,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",nigga,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",'til,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,END,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",'til,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",'til,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",nigga,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",nigga,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,END,PERFECT,cmu,HIGH,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",'til,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",'til,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",'til,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",finger,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",nigga,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",trigger,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,END,PERFECT,cmu,HIGH,Y
+Pissy Hallways,7,"Fuck a nigga, finger fuck the trigger 'til it click (What up?)",click,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,END,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,END,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",nigga,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,END,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",nigga,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",Pillow,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,8,"Pillow talkin' to a bitch, nigga, you a bitch (Come on)",bitch,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",link,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,END,PERFECT,cmu,HIGH,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",around,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",Doub,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,END,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",bitch,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",busy,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",can't,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",can't,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",can't,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",rather,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,9,"I can't play around, bitch, I get busy with the blick (Come on)",blick,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",link,END,SLANT,cmu,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",Doub,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",doub,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,END,SLANT,cmu,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",double,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",cuff,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",put,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",pull,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",link,END,SLANT,cmu,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",dick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",bitch,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",link,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",double,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",suckin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",put,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",pussy,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,10,"Doub-doub-double Ds, bitch, I put two titties on the stick (Raw)",stick,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",dick,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",bitch,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",can't,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",rather,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",link,END,REPEAT,spelling,HIGH,N
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",bitch,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",dick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",bitch,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",link,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",can't,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",can't,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",cuff,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",suckin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",dick,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",pull,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",pussy,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",rather,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",can't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",sneaky,13,"Finessed her out her draws, sorry, baby, that's the freak in me (Yeah)",freak,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,11,"I can't cuff a bitch, I'd rather pull up on a sneaky link (Nah)",link,15,I can't do no business if that business ain't legitimate (What up?),legitimate,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",dick,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",link,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",ain't,13,"Finessed her out her draws, sorry, baby, that's the freak in me (Yeah)",baby,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",poppin,13,"Finessed her out her draws, sorry, baby, that's the freak in me (Yeah)",sorry,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,12,"You ain't suckin' dick or poppin' pussy, you can't link with me (You can't link)",link,15,I can't do no business if that business ain't legitimate (What up?),legitimate,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,13,"Finessed her out her draws, sorry, baby, that's the freak in me (Yeah)",freak,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",deep,END,SLANT,cmu,MED,Y
+Pissy Hallways,13,"Finessed her out her draws, sorry, baby, that's the freak in me (Yeah)",Finessed,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",Legs,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,13,"Finessed her out her draws, sorry, baby, that's the freak in me (Yeah)",Finessed,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",neck,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,13,"Finessed her out her draws, sorry, baby, that's the freak in me (Yeah)",freak,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",Teejay,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,13,"Finessed her out her draws, sorry, baby, that's the freak in me (Yeah)",baby,15,I can't do no business if that business ain't legitimate (What up?),ain't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",behind,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",like,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",Legs,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",neck,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",Teejay,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",deep,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",Legs,16,I just popped a addy just to boost up my adrenaline (Come on),adrenaline,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,14,"Legs behind her neck, she like, ""Teejay, boy you deep in me"" (Yeah)",neck,16,I just popped a addy just to boost up my adrenaline (Come on),adrenaline,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,15,I can't do no business if that business ain't legitimate (What up?),business,15,I can't do no business if that business ain't legitimate (What up?),business,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,15,I can't do no business if that business ain't legitimate (What up?),business,15,I can't do no business if that business ain't legitimate (What up?),legitimate,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,15,I can't do no business if that business ain't legitimate (What up?),can't,16,I just popped a addy just to boost up my adrenaline (Come on),addy,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,15,I can't do no business if that business ain't legitimate (What up?),can't,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",want,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,15,I can't do no business if that business ain't legitimate (What up?),no,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",don't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,15,I can't do no business if that business ain't legitimate (What up?),no,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",no,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,15,I can't do no business if that business ain't legitimate (What up?),legitimate,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",literally,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,16,I just popped a addy just to boost up my adrenaline (Come on),adrenaline,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",Hennessy,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,16,I just popped a addy just to boost up my adrenaline (Come on),popped,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",want,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,16,I just popped a addy just to boost up my adrenaline (Come on),boost,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",two,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,16,I just popped a addy just to boost up my adrenaline (Come on),adrenaline,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",sendin,END,SLANT,cmu,MED,Y
+Pissy Hallways,16,I just popped a addy just to boost up my adrenaline (Come on),adrenaline,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",enemy,END,SLANT,cmu,MED,Y
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",don't,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",no,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",love,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",some,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",want,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",want,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",love,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",fucked,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",some,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",fucked,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",Hennessy,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",sendin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",Hennessy,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",gettin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",Hennessy,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",threats,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",Hennessy,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",enemy,END,SLANT,cmu,MED,Y
+Pissy Hallways,17,"I don't want no love, i just want pussy and some Hennessy (Come on)",Hennessy,21,"Niggas know, if you know, you know, bitch, I been a threat",threat,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",bitches,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",literally,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",twin,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",bitches,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",twin,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",literally,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",bitches,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",shit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",literally,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",nigga,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",niggas,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",nigga,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",shit,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,18,"I just fucked two twin bitches, I'm that nigga, literally (Come on)",twin,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",gettin,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",sendin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",gettin,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",threats,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",these,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",these,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",threats,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",sendin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",sendin,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",enemy,END,SLANT,cmu,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",crazy,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",gettin,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",enemy,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",threats,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",enemy,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",sendin,21,"Niggas know, if you know, you know, bitch, I been a threat",threat,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",gettin,21,"Niggas know, if you know, you know, bitch, I been a threat",threat,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",niggas,21,"Niggas know, if you know, you know, bitch, I been a threat",Niggas,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",shit,21,"Niggas know, if you know, you know, bitch, I been a threat",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",threats,21,"Niggas know, if you know, you know, bitch, I been a threat",threat,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,19,"This shit gettin' crazy, all these threats these niggas sendin' me (Down)",sendin,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",upset,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",got,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",got,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",enemy,21,"Niggas know, if you know, you know, bitch, I been a threat",threat,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",no,21,"Niggas know, if you know, you know, bitch, I been a threat",know,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",enemy,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",upset,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,20,"I ain't got no rap, I just got bullets for my enemy (Raw)",rap,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",mad,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,21,"Niggas know, if you know, you know, bitch, I been a threat",know,21,"Niggas know, if you know, you know, bitch, I been a threat",know,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,21,"Niggas know, if you know, you know, bitch, I been a threat",threat,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",upset,END,PERFECT,cmu,HIGH,Y
+Pissy Hallways,21,"Niggas know, if you know, you know, bitch, I been a threat",bitch,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,21,"Niggas know, if you know, you know, bitch, I been a threat",bitch,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",lil,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,21,"Niggas know, if you know, you know, bitch, I been a threat",Niggas,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",Niggas,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,21,"Niggas know, if you know, you know, bitch, I been a threat",know,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",only,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,21,"Niggas know, if you know, you know, bitch, I been a threat",threat,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",when,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",lil,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",upset,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",when,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",bitch,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",Hit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",bitch,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",I'ma,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",lil,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",Hit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,22,"Niggas mad 'cause they see me on, lil' bitch, you been upset (Yeah)",lil,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",I'ma,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",tuck,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",fuckin,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",fuckin,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",buck,END,SLANT,cmu,MED,Y
+Pissy Hallways,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",Chains,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",take,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",only,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",iPhone,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",tuck,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",buck,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",fuckin,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),sluggish,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",Chains,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Eight,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",tuck,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),sluggish,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,23,"Chains on, only time I tuck it, when I'm fuckin' (Sheesh)",fuckin,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",hustlin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",Hit,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",I'ma,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",buck,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),sluggish,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",charger,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),got,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",take,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Eight,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",take,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Faygo,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",buck,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",hustlin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",Hit,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",Hit,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",chitter,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",I'ma,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",bitch,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",I'ma,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",chitter,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",iPhone,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",no,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",take,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,24,"Hit her then I take her iPhone charger, I'ma buck it (Yeah)",buck,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bussin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Eight,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Faygo,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),sluggish,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",hustlin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Eight,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",Ain't,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Faygo,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",no,INNER,ASSONANCE,vowel,LOW,N
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Eight,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",ain't,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Eight,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",Babe,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Eight,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",pay,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Eight,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",say,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),Faygo,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",Babe,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),got,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),sluggish,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bussin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,25,Eight ounces in my Faygo got me movin' sluggish (Yeah),sluggish,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",cussin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",chitter,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",Ain't,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",ain't,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",Ain't,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",Babe,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",Ain't,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",pay,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",Ain't,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",say,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",bitch,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",chitter,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",hustlin,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bussin,END,SLANT,cmu,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",bitch,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bitches,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",chitter,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bitches,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",here,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",freaky,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",here,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",keep,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",here,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",these,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",hustlin,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",trust,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",no,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",hoes,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",hustlin,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",cussin,END,SLANT,cmu,MED,Y
+Pissy Hallways,26,"Ain't no time to chitter chat, bitch, I'm out here hustlin' (Bitch, i'm out here hustlin')",hustlin,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lustin,END,SLANT,cmu,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",Babe,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",Babe,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",pay,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",pay,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",say,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",say,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",Babe,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",say,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",pay,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",bitch,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bitches,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",ain't,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",always,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",Babe,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",always,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",bitch,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",bitch,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",nothin,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",argue,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",nothin,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",not,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",pay,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",always,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,27,"She say, ""Babe, pay for my BBL"", bitch, you ain't gettin' nothin' (Bitch)",say,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",always,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",freaky,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",these,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",keep,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",freaky,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",keep,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",these,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",trust,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bussin,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bussin,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",cussin,END,MULTI,multi,HIGH,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bitches,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",bitch,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",freaky,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",tryna,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",keep,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",tryna,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",these,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",tryna,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",trust,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",cussin,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bussin,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lustin,END,SLANT,cmu,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bussin,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",love,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",freaky,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lyin,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",hoes,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",told,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",keep,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lyin,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",these,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lyin,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",trust,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",love,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",trust,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lustin,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bussin,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",'Tussin,END,MULTI,multi,HIGH,Y
+Pissy Hallways,28,"All I keep around is freaky hoes, trust, these bitches bussin' (They bussin')",bussin,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",discussion,END,SLANT,cmu,MED,Y
+Pissy Hallways,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",not,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",argue,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",cussin,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lustin,END,SLANT,cmu,MED,Y
+Pissy Hallways,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",cussin,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",love,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",tryna,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lyin,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",cussin,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",'Tussin,END,MULTI,multi,HIGH,Y
+Pissy Hallways,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",bitch,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",drinkin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",why,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",like,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",cussin,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",discussion,END,SLANT,cmu,MED,Y
+Pissy Hallways,29,"I'm not tryna argue with you, bitch, why you always cussin'? (Always cussin')",cussin,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",disgustin,END,SLANT,cmu,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",love,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lustin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lustin,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",'Tussin,END,SLANT,cmu,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",love,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",'Tussin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",told,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",blow,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",told,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",slow,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lustin,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",discussion,END,SLANT,cmu,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",had,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",action,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",love,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",discussion,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",told,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",don't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",told,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",no,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,30,"I had told you that I love you, I was lyin', I was lustin' (Yeah)",lustin,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",disgustin,END,MULTI,multi,HIGH,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",blow,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",slow,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",down,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",down,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",'Tussin,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",discussion,END,SLANT,cmu,MED,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",blow,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",don't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",blow,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",no,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",down,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",'bout,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",slow,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",don't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",slow,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",no,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",'Tussin,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",disgustin,END,SLANT,cmu,MED,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",drinkin,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",whips,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",like,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",like,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,31,"Ayy, blow you down and slow you down like you drinkin' 'Tussin",like,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",Slime,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",action,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",discussion,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",don't,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",don't,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",don't,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",no,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",wanna,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",want,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",discussion,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",disgustin,END,SLANT,cmu,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",action,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",Lamb,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",talk,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",all,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",wanna,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",vomit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",want,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",vomit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",don't,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",don't,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",don't,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",ho,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",no,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",don't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",no,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",ho,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",wanna,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",nothin,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",wanna,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",top,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",wanna,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",wanna,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",want,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",want,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",top,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,32,"I'm 'bout action, I don't wanna talk, don't want no discussion",want,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",wanna,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",Slime,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",like,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",vomit,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",vomit,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",top,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",vomit,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",wanna,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",whips,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",give,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",whips,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",Pick,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",vomit,35,"Rims bent, I hit the curb, I got rich off flippin' work",got,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",whips,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",whips,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",whips,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,33,"Slime Lamb' seats look like vomit, all my whips disgustin' (Skrrt)",whips,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",ho,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",don't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",Pick,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",give,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",top,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",nothin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",wanna,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",nothin,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",wanna,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",top,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",give,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",give,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",give,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",give,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",nothin,35,"Rims bent, I hit the curb, I got rich off flippin' work",got,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",Pick,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",Pick,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",Pick,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",Pick,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",top,35,"Rims bent, I hit the curb, I got rich off flippin' work",got,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",wanna,35,"Rims bent, I hit the curb, I got rich off flippin' work",got,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",give,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",give,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",Pick,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",Pick,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",Pick,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,34,"Pick your ho up, she just wanna top it, I don't give her nothin' (No bap)",nothin,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",swervin,END,PERFECT,spelling,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",curb,35,"Rims bent, I hit the curb, I got rich off flippin' work",work,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",work,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",detergent,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",bent,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",detergent,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",bent,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fresh,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",curb,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",detergent,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",curb,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",nerds,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",flippin,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",hit,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",rich,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",Rims,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",work,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",nerds,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,35,"Rims bent, I hit the curb, I got rich off flippin' work",work,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",niggas,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",city,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",nigga,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,36,"I'm that nigga in the city, still that nigga in the 'burbs",still,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",nerds,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",detergent,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",detergent,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",splurgin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",nerds,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",splurgin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",niggas,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",niggas,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",detergent,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",fit,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",nerds,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",shit,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",detergent,40,Foenem think I'm still thuggin' so they call when shit get urgent,urgent,END,MULTI,multi,HIGH,Y
+Pissy Hallways,37,"Fan shit, you niggas nerds, I stay fresh, my fit detergent",detergent,41,"Really, I'm a different person, M's and shit, I'm really worth it",worth,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",swervin,INNER,PERFECT,spelling,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",splurgin,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",swervin,INNER,ASSONANCE,vowel,LOW,N
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",swervin,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,END,ASSONANCE,vowel,LOW,N
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",cars,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",stars,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",splurgin,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",Flippin,40,Foenem think I'm still thuggin' so they call when shit get urgent,thuggin,INNER,PERFECT,spelling,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",nigga,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",shit,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",six,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",splurgin,40,Foenem think I'm still thuggin' so they call when shit get urgent,urgent,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",swervin,40,Foenem think I'm still thuggin' so they call when shit get urgent,thuggin,INNER,PERFECT,spelling,MED,Y
+Pissy Hallways,38,"Flippin' shit, a nigga splurgin', five, six cars, a nigga swervin'",swervin,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",workin,END,ASSONANCE,vowel,LOW,N
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,40,Foenem think I'm still thuggin' so they call when shit get urgent,urgent,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,41,"Really, I'm a different person, M's and shit, I'm really worth it",worth,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,41,"Really, I'm a different person, M's and shit, I'm really worth it",person,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",still,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",strip,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",workin,END,SLANT,cmu,MED,Y
+Pissy Hallways,39,"From my strip to Hollywood, I'm with the stars, I'm still learnin'",learnin,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nervous,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,when,40,Foenem think I'm still thuggin' so they call when shit get urgent,get,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,urgent,41,"Really, I'm a different person, M's and shit, I'm really worth it",worth,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,get,41,"Really, I'm a different person, M's and shit, I'm really worth it",M's,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,urgent,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,urgent,41,"Really, I'm a different person, M's and shit, I'm really worth it",person,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,when,41,"Really, I'm a different person, M's and shit, I'm really worth it",M's,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,urgent,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",workin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,shit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,still,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,think,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,urgent,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nervous,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,40,Foenem think I'm still thuggin' so they call when shit get urgent,urgent,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',lurkin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,41,"Really, I'm a different person, M's and shit, I'm really worth it",really,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",person,41,"Really, I'm a different person, M's and shit, I'm really worth it",worth,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,41,"Really, I'm a different person, M's and shit, I'm really worth it",really,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,41,"Really, I'm a different person, M's and shit, I'm really worth it",really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",worth,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",workin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",person,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",workin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",worth,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nervous,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",different,43,"Know they listenin' 'cause I heard it, make a nigga nervous",listenin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",person,43,"Know they listenin' 'cause I heard it, make a nigga nervous",heard,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",person,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nervous,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",Really,43,"Know they listenin' 'cause I heard it, make a nigga nervous",listenin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,43,"Know they listenin' 'cause I heard it, make a nigga nervous",listenin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",shit,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",worth,43,"Know they listenin' 'cause I heard it, make a nigga nervous",heard,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,41,"Really, I'm a different person, M's and shit, I'm really worth it",worth,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',lurkin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",truth,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",booth,INNER,PERFECT,cmu,HIGH,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",workin,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nervous,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,43,"Know they listenin' 'cause I heard it, make a nigga nervous",listenin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",hit,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",really,43,"Know they listenin' 'cause I heard it, make a nigga nervous",listenin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,43,"Know they listenin' 'cause I heard it, make a nigga nervous",listenin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",spit,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nigga,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",still,43,"Know they listenin' 'cause I heard it, make a nigga nervous",listenin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",workin,43,"Know they listenin' 'cause I heard it, make a nigga nervous",heard,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",workin,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',lurkin,END,MULTI,multi,HIGH,Y
+Pissy Hallways,42,"Album's done, I spit the truth, still hit the booth, I'm really workin'",workin,46,"Herbo put that bag on his head, I got killers searchin'",searchin,END,SLANT,cmu,MED,Y
+Pissy Hallways,43,"Know they listenin' 'cause I heard it, make a nigga nervous",heard,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nervous,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nervous,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',lurkin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,43,"Know they listenin' 'cause I heard it, make a nigga nervous",'cause,44,I ain't in the streets but in the streets 'cause I got niggas lurkin','cause,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,43,"Know they listenin' 'cause I heard it, make a nigga nervous",heard,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',lurkin,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,43,"Know they listenin' 'cause I heard it, make a nigga nervous",make,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',ain't,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nigga,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',niggas,INNER,SLANT,spelling,LOW,Y
+Pissy Hallways,43,"Know they listenin' 'cause I heard it, make a nigga nervous",listenin,45,"Put like thirty cash on his head, that's my bitch, a Birkin",Birkin,INNER,ASSONANCE,vowel,LOW,N
+Pissy Hallways,43,"Know they listenin' 'cause I heard it, make a nigga nervous",listenin,45,"Put like thirty cash on his head, that's my bitch, a Birkin",bitch,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,43,"Know they listenin' 'cause I heard it, make a nigga nervous",nervous,46,"Herbo put that bag on his head, I got killers searchin'",searchin,END,ASSONANCE,vowel,MED,Y
+Pissy Hallways,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',streets,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',streets,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',streets,45,"Put like thirty cash on his head, that's my bitch, a Birkin",thirty,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',lurkin,46,"Herbo put that bag on his head, I got killers searchin'",searchin,END,SLANT,cmu,MED,Y
+Pissy Hallways,44,I ain't in the streets but in the streets 'cause I got niggas lurkin',got,46,"Herbo put that bag on his head, I got killers searchin'",got,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,45,"Put like thirty cash on his head, that's my bitch, a Birkin",bitch,45,"Put like thirty cash on his head, that's my bitch, a Birkin",Birkin,INNER,ASSONANCE,vowel,LOW,N
+Pissy Hallways,45,"Put like thirty cash on his head, that's my bitch, a Birkin",bitch,46,"Herbo put that bag on his head, I got killers searchin'",killers,INNER,ASSONANCE,vowel,MED,Y
+Pissy Hallways,45,"Put like thirty cash on his head, that's my bitch, a Birkin",cash,46,"Herbo put that bag on his head, I got killers searchin'",bag,INNER,SLANT,cmu,MED,Y
+Pissy Hallways,45,"Put like thirty cash on his head, that's my bitch, a Birkin",head,46,"Herbo put that bag on his head, I got killers searchin'",head,INNER,REPEAT,spelling,HIGH,N
+Pissy Hallways,45,"Put like thirty cash on his head, that's my bitch, a Birkin",Put,46,"Herbo put that bag on his head, I got killers searchin'",put,INNER,REPEAT,spelling,HIGH,N
