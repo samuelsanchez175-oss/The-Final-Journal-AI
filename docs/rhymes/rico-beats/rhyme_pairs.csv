@@ -1,0 +1,475 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Real Spill,1,"You know, it's like everythin' I do authentic",everythin,2,"Everythin' I do real, been real",Everythin,INNER,REPEAT,spelling,HIGH,N
+Real Spill,1,"You know, it's like everythin' I do authentic",everythin,3,"It's real spill, you know the drill (Ayy, uh)",drill,INNER,SLANT,cmu,MED,Y
+Real Spill,1,"You know, it's like everythin' I do authentic",everythin,3,"It's real spill, you know the drill (Ayy, uh)",spill,INNER,SLANT,cmu,MED,Y
+Real Spill,1,"You know, it's like everythin' I do authentic",know,3,"It's real spill, you know the drill (Ayy, uh)",know,INNER,REPEAT,spelling,HIGH,N
+Real Spill,2,"Everythin' I do real, been real",real,2,"Everythin' I do real, been real",real,INNER,REPEAT,spelling,HIGH,N
+Real Spill,2,"Everythin' I do real, been real",Everythin,3,"It's real spill, you know the drill (Ayy, uh)",drill,INNER,SLANT,cmu,MED,Y
+Real Spill,2,"Everythin' I do real, been real",Everythin,3,"It's real spill, you know the drill (Ayy, uh)",spill,INNER,SLANT,cmu,MED,Y
+Real Spill,2,"Everythin' I do real, been real",real,3,"It's real spill, you know the drill (Ayy, uh)",real,INNER,REPEAT,spelling,HIGH,N
+Real Spill,3,"It's real spill, you know the drill (Ayy, uh)",spill,3,"It's real spill, you know the drill (Ayy, uh)",drill,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,4,I'm just grateful I'm alive (Right now),alive,5,"Nights I could've died, I was outside with my guys (Gang)",guys,END,SLANT,cmu,MED,Y
+Real Spill,4,I'm just grateful I'm alive (Right now),alive,5,"Nights I could've died, I was outside with my guys (Gang)",died,INNER,SLANT,cmu,MED,Y
+Real Spill,4,I'm just grateful I'm alive (Right now),alive,5,"Nights I could've died, I was outside with my guys (Gang)",Nights,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,4,I'm just grateful I'm alive (Right now),alive,5,"Nights I could've died, I was outside with my guys (Gang)",outside,INNER,SLANT,cmu,MED,Y
+Real Spill,4,I'm just grateful I'm alive (Right now),alive,6,"Gotta get home to mine, so I be ridin' with that iron",iron,END,SLANT,cmu,MED,Y
+Real Spill,4,I'm just grateful I'm alive (Right now),alive,6,"Gotta get home to mine, so I be ridin' with that iron",mine,INNER,SLANT,cmu,MED,Y
+Real Spill,4,I'm just grateful I'm alive (Right now),alive,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,4,I'm just grateful I'm alive (Right now),alive,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,END,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",died,5,"Nights I could've died, I was outside with my guys (Gang)",guys,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",died,5,"Nights I could've died, I was outside with my guys (Gang)",outside,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",Nights,5,"Nights I could've died, I was outside with my guys (Gang)",died,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",Nights,5,"Nights I could've died, I was outside with my guys (Gang)",guys,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",Nights,5,"Nights I could've died, I was outside with my guys (Gang)",outside,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",outside,5,"Nights I could've died, I was outside with my guys (Gang)",guys,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",guys,6,"Gotta get home to mine, so I be ridin' with that iron",iron,END,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",died,6,"Gotta get home to mine, so I be ridin' with that iron",iron,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",died,6,"Gotta get home to mine, so I be ridin' with that iron",mine,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",died,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",guys,6,"Gotta get home to mine, so I be ridin' with that iron",mine,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",guys,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",Nights,6,"Gotta get home to mine, so I be ridin' with that iron",iron,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",Nights,6,"Gotta get home to mine, so I be ridin' with that iron",mine,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",Nights,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",outside,6,"Gotta get home to mine, so I be ridin' with that iron",iron,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",outside,6,"Gotta get home to mine, so I be ridin' with that iron",mine,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",outside,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",died,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",guys,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",Nights,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",outside,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,INNER,SLANT,cmu,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",guys,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,END,ASSONANCE,vowel,MED,Y
+Real Spill,5,"Nights I could've died, I was outside with my guys (Gang)",guys,9,"Me and mine was on front line, I fucked the bag up two, three times",times,END,SLANT,cmu,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",mine,6,"Gotta get home to mine, so I be ridin' with that iron",iron,INNER,SLANT,cmu,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",mine,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,6,"Gotta get home to mine, so I be ridin' with that iron",iron,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",get,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",myself,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",Gotta,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",wanna,INNER,SLANT,cmu,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",home,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",don't,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",home,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",told,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",iron,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,INNER,SLANT,cmu,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",mine,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",iron,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,END,SLANT,cmu,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",home,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",know,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",iron,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,INNER,SLANT,cmu,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",iron,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",lie,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",mine,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,INNER,SLANT,cmu,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",mine,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",lie,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",ridin,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",lie,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,6,"Gotta get home to mine, so I be ridin' with that iron",iron,9,"Me and mine was on front line, I fucked the bag up two, three times",times,END,ASSONANCE,vowel,MED,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",lyin,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",lyin,INNER,REPEAT,spelling,HIGH,N
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",told,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",don't,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",don't,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",know,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,INNER,SLANT,cmu,MED,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",lie,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",have,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",rappers,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",told,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",know,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",don't,9,"Me and mine was on front line, I fucked the bag up two, three times",front,INNER,SLANT,spelling,LOW,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,9,"Me and mine was on front line, I fucked the bag up two, three times",line,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,9,"Me and mine was on front line, I fucked the bag up two, three times",mine,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",fine,9,"Me and mine was on front line, I fucked the bag up two, three times",times,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",have,9,"Me and mine was on front line, I fucked the bag up two, three times",bag,INNER,SLANT,cmu,MED,Y
+Real Spill,7,"And I told myself, ""I don't wanna have views, that's fine,"" but I was lyin', I was lyin'",views,9,"Me and mine was on front line, I fucked the bag up two, three times",two,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,INNER,REPEAT,spelling,HIGH,N
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",lie,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,9,"Me and mine was on front line, I fucked the bag up two, three times",times,END,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,9,"Me and mine was on front line, I fucked the bag up two, three times",line,INNER,SLANT,cmu,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,9,"Me and mine was on front line, I fucked the bag up two, three times",mine,INNER,SLANT,cmu,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",kind,9,"Me and mine was on front line, I fucked the bag up two, three times",times,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",lie,9,"Me and mine was on front line, I fucked the bag up two, three times",line,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",lie,9,"Me and mine was on front line, I fucked the bag up two, three times",mine,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",lie,9,"Me and mine was on front line, I fucked the bag up two, three times",times,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",one,9,"Me and mine was on front line, I fucked the bag up two, three times",front,INNER,SLANT,cmu,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",one,9,"Me and mine was on front line, I fucked the bag up two, three times",fucked,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",rappers,9,"Me and mine was on front line, I fucked the bag up two, three times",bag,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",know,10,"G Herbo, I fucked the bag up, but I run up a bag",Herbo,INNER,ASSONANCE,vowel,LOW,N
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",one,10,"G Herbo, I fucked the bag up, but I run up a bag",fucked,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",one,10,"G Herbo, I fucked the bag up, but I run up a bag",run,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,8,"They say all rappers do is lie, I know my kind, I'm one of a kind",rappers,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",front,9,"Me and mine was on front line, I fucked the bag up two, three times",fucked,INNER,SLANT,cmu,MED,Y
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",line,9,"Me and mine was on front line, I fucked the bag up two, three times",times,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",mine,9,"Me and mine was on front line, I fucked the bag up two, three times",line,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",mine,9,"Me and mine was on front line, I fucked the bag up two, three times",times,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",bag,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,INNER,REPEAT,spelling,HIGH,N
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",front,10,"G Herbo, I fucked the bag up, but I run up a bag",fucked,INNER,SLANT,cmu,MED,Y
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",front,10,"G Herbo, I fucked the bag up, but I run up a bag",run,INNER,SLANT,cmu,MED,Y
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",fucked,10,"G Herbo, I fucked the bag up, but I run up a bag",fucked,INNER,REPEAT,spelling,HIGH,N
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",fucked,10,"G Herbo, I fucked the bag up, but I run up a bag",run,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",three,10,"G Herbo, I fucked the bag up, but I run up a bag",G,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,9,"Me and mine was on front line, I fucked the bag up two, three times",bag,11,"Stay on the go, I got jet lag",lag,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,INNER,REPEAT,spelling,HIGH,N
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",fucked,10,"G Herbo, I fucked the bag up, but I run up a bag",run,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,11,"Stay on the go, I got jet lag",lag,END,PERFECT,cmu,HIGH,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,11,"Stay on the go, I got jet lag",lag,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",Herbo,11,"Stay on the go, I got jet lag",go,INNER,ASSONANCE,vowel,LOW,N
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,END,PERFECT,spelling,MED,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Jag,INNER,PERFECT,spelling,MED,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,INNER,PERFECT,spelling,MED,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",fucked,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",some,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",G,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Seventeen,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",run,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",some,INNER,SLANT,cmu,MED,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,END,SLANT,cmu,MED,Y
+Real Spill,10,"G Herbo, I fucked the bag up, but I run up a bag",bag,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,END,SLANT,cmu,MED,Y
+Real Spill,11,"Stay on the go, I got jet lag",lag,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,END,PERFECT,spelling,MED,Y
+Real Spill,11,"Stay on the go, I got jet lag",jet,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",gettin,INNER,SLANT,cmu,MED,Y
+Real Spill,11,"Stay on the go, I got jet lag",lag,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Jag,INNER,PERFECT,spelling,MED,Y
+Real Spill,11,"Stay on the go, I got jet lag",lag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,END,SLANT,cmu,MED,Y
+Real Spill,11,"Stay on the go, I got jet lag",got,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",got,INNER,REPEAT,spelling,HIGH,N
+Real Spill,11,"Stay on the go, I got jet lag",lag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",cash,INNER,SLANT,cmu,MED,Y
+Real Spill,11,"Stay on the go, I got jet lag",lag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",havin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,11,"Stay on the go, I got jet lag",lag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",swag,INNER,PERFECT,spelling,MED,Y
+Real Spill,11,"Stay on the go, I got jet lag",Stay,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",th,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,11,"Stay on the go, I got jet lag",lag,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,END,SLANT,cmu,MED,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Jag,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,INNER,PERFECT,spelling,MED,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,END,SLANT,spelling,LOW,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Jag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",cash,INNER,SLANT,spelling,LOW,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Jag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",swag,INNER,PERFECT,spelling,MED,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Jag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,INNER,SLANT,spelling,LOW,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Seventeen whippin,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",mall rippin,INNER,MULTI,multi,HIGH,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",cash,INNER,SLANT,spelling,LOW,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",swag,INNER,REPEAT,spelling,HIGH,N
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",whippin,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",rippin,INNER,MULTI,multi,HIGH,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",whippin,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",still,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,END,SLANT,spelling,LOW,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Jag,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,INNER,SLANT,spelling,LOW,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",Seventeen,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",treatin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",some,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",'em,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fast,INNER,ASSONANCE,vowel,LOW,N
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",whippin,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",bitches,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",whippin,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fill,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,12,"Seventeen, I was whippin' a Jag' and gettin' some swag",swag,16,"Hittin' the bank, we not on our last",last,END,ASSONANCE,vowel,LOW,N
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",cash,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",havin,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",cash,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",havin,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",still,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",rippin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",swag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",cash,INNER,SLANT,spelling,LOW,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",swag,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,INNER,SLANT,spelling,LOW,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",walk,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",mall,INNER,SLANT,cmu,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,END,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",cash,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fast,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",cash,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,INNER,SLANT,cmu,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",got,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",cars,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",havin,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fast,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",havin,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",rippin,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",bitches,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",rippin,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fill,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",still,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",bitches,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",still,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fill,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",swag,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fast,INNER,ASSONANCE,vowel,LOW,N
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",swag,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,INNER,SLANT,spelling,LOW,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fast,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",got,15,"We runnin' it up, we runnin' in Chargers",Chargers,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,16,"Hittin' the bank, we not on our last",last,END,ASSONANCE,vowel,MED,Y
+Real Spill,13,"I still got swag, I'm havin' cash, I walk out thе mall, I'm rippin' the tags (Ayy)",tags,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",ass,END,ASSONANCE,vowel,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",bitches,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fill,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fast,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,INNER,SLANT,cmu,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",cars,15,"We runnin' it up, we runnin' in Chargers",Chargers,INNER,SLANT,cmu,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,16,"Hittin' the bank, we not on our last",last,END,SLANT,cmu,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",bitches,16,"Hittin' the bank, we not on our last",Hittin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",cars,16,"Hittin' the bank, we not on our last",not,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fast,16,"Hittin' the bank, we not on our last",bank,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fast,16,"Hittin' the bank, we not on our last",last,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",fill,16,"Hittin' the bank, we not on our last",Hittin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,16,"Hittin' the bank, we not on our last",bank,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,14,"I'm treatin' thesе bitches just like my cars, I pull out fast, I fill 'em with gas (Skrrt)",gas,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",ass,END,PERFECT,cmu,HIGH,Y
+Real Spill,15,"We runnin' it up, we runnin' in Chargers",runnin,15,"We runnin' it up, we runnin' in Chargers",runnin,INNER,REPEAT,spelling,HIGH,N
+Real Spill,15,"We runnin' it up, we runnin' in Chargers",Chargers,16,"Hittin' the bank, we not on our last",not,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,15,"We runnin' it up, we runnin' in Chargers",Chargers,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",Glock,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,15,"We runnin' it up, we runnin' in Chargers",Chargers,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",got,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,15,"We runnin' it up, we runnin' in Chargers",runnin,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",rubber,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,15,"We runnin' it up, we runnin' in Chargers",Chargers,19,"Hop in with me, is you ridin' or not? (What up?)",not,END,ASSONANCE,vowel,MED,Y
+Real Spill,16,"Hittin' the bank, we not on our last",bank,16,"Hittin' the bank, we not on our last",last,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,16,"Hittin' the bank, we not on our last",last,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",ass,END,SLANT,cmu,MED,Y
+Real Spill,16,"Hittin' the bank, we not on our last",bank,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",ass,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,16,"Hittin' the bank, we not on our last",Hittin,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",grip,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,16,"Hittin' the bank, we not on our last",not,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",Glock,INNER,SLANT,cmu,MED,Y
+Real Spill,16,"Hittin' the bank, we not on our last",not,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",got,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,16,"Hittin' the bank, we not on our last",not,18,"Hop in the V, is you slidin'? (Ayy)",Hop,INNER,SLANT,cmu,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",Glock,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",got,INNER,SLANT,cmu,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",got,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",Glock,INNER,SLANT,cmu,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",got,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",got,INNER,REPEAT,spelling,HIGH,N
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",grip,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",grip,INNER,REPEAT,spelling,HIGH,N
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",bae,18,"Hop in the V, is you slidin'? (Ayy)",slidin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",Glock,18,"Hop in the V, is you slidin'? (Ayy)",Hop,INNER,SLANT,cmu,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",got,18,"Hop in the V, is you slidin'? (Ayy)",Hop,INNER,SLANT,cmu,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",bae,19,"Hop in with me, is you ridin' or not? (What up?)",ridin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",Glock,19,"Hop in with me, is you ridin' or not? (What up?)",Hop,INNER,SLANT,cmu,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",Glock,19,"Hop in with me, is you ridin' or not? (What up?)",not,INNER,SLANT,cmu,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",got,19,"Hop in with me, is you ridin' or not? (What up?)",Hop,INNER,SLANT,cmu,MED,Y
+Real Spill,17,"Told bae I got a rubber grip on the Glock (Yeah, yeah), I got a grip on her ass",got,19,"Hop in with me, is you ridin' or not? (What up?)",not,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,18,"Hop in the V, is you slidin'? (Ayy)",Hop,19,"Hop in with me, is you ridin' or not? (What up?)",Hop,INNER,REPEAT,spelling,HIGH,N
+Real Spill,18,"Hop in the V, is you slidin'? (Ayy)",Hop,19,"Hop in with me, is you ridin' or not? (What up?)",not,INNER,SLANT,cmu,MED,Y
+Real Spill,18,"Hop in the V, is you slidin'? (Ayy)",slidin,19,"Hop in with me, is you ridin' or not? (What up?)",ridin,INNER,MULTI,multi,HIGH,Y
+Real Spill,18,"Hop in the V, is you slidin'? (Ayy)",V slidin,19,"Hop in with me, is you ridin' or not? (What up?)",Hop ridin,INNER,MULTI,multi,HIGH,Y
+Real Spill,18,"Hop in the V, is you slidin'? (Ayy)",Hop,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),lot,INNER,SLANT,cmu,MED,Y
+Real Spill,18,"Hop in the V, is you slidin'? (Ayy)",slidin,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),pride,INNER,SLANT,cmu,MED,Y
+Real Spill,18,"Hop in the V, is you slidin'? (Ayy)",slidin,22,"My life a movie, I ain't write it (For real)",write,END,ASSONANCE,vowel,MED,Y
+Real Spill,19,"Hop in with me, is you ridin' or not? (What up?)",Hop,19,"Hop in with me, is you ridin' or not? (What up?)",not,INNER,SLANT,cmu,MED,Y
+Real Spill,19,"Hop in with me, is you ridin' or not? (What up?)",not,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),lot,END,PERFECT,cmu,HIGH,Y
+Real Spill,19,"Hop in with me, is you ridin' or not? (What up?)",Hop,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),lot,INNER,SLANT,cmu,MED,Y
+Real Spill,19,"Hop in with me, is you ridin' or not? (What up?)",ridin,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),pride,INNER,SLANT,cmu,MED,Y
+Real Spill,19,"Hop in with me, is you ridin' or not? (What up?)",not,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hot,END,PERFECT,cmu,HIGH,Y
+Real Spill,19,"Hop in with me, is you ridin' or not? (What up?)",Hop,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hot,INNER,SLANT,cmu,MED,Y
+Real Spill,19,"Hop in with me, is you ridin' or not? (What up?)",ridin,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hide,INNER,SLANT,cmu,MED,Y
+Real Spill,19,"Hop in with me, is you ridin' or not? (What up?)",ridin,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",insides,INNER,SLANT,cmu,MED,Y
+Real Spill,19,"Hop in with me, is you ridin' or not? (What up?)",ridin,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",Stylist,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),bitch,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),lip,INNER,SLANT,cmu,MED,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),bitch,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),still,INNER,SLANT,cmu,MED,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),lip,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),still,INNER,SLANT,cmu,MED,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),lot,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hot,END,PERFECT,cmu,HIGH,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),pride,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hide,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),pride,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",insides,INNER,SLANT,cmu,MED,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),pride,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",Stylist,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),pride,22,"My life a movie, I ain't write it (For real)",life,INNER,SLANT,cmu,MED,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),pride,22,"My life a movie, I ain't write it (For real)",write,INNER,SLANT,cmu,MED,Y
+Real Spill,20,Take no bitch with too much lip 'cause I still work with pride a lot (A lot),Take,22,"My life a movie, I ain't write it (For real)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hide,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",insides,INNER,SLANT,cmu,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",Stylist,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hide,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",Stylist,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",insides,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",coupe,22,"My life a movie, I ain't write it (For real)",movie,INNER,SLANT,cmu,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hide,22,"My life a movie, I ain't write it (For real)",life,INNER,SLANT,cmu,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hide,22,"My life a movie, I ain't write it (For real)",write,INNER,SLANT,cmu,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",insides,22,"My life a movie, I ain't write it (For real)",life,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",insides,22,"My life a movie, I ain't write it (For real)",write,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",Stylist,22,"My life a movie, I ain't write it (For real)",life,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",Stylist,22,"My life a movie, I ain't write it (For real)",write,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",black,23,"I'm a star, I can't fight it (For real)",can't,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hide,23,"I'm a star, I can't fight it (For real)",fight,INNER,SLANT,cmu,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hot,23,"I'm a star, I can't fight it (For real)",star,INNER,SLANT,cmu,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",insides,23,"I'm a star, I can't fight it (For real)",fight,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",Stylist,23,"I'm a star, I can't fight it (For real)",fight,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,21,"Stylist when I hide out (Hide out), coupe black, insides hot (Insides hot)",hot,25,"Touch a charm, leave you harmed (For real)",harmed,END,ASSONANCE,vowel,MED,Y
+Real Spill,22,"My life a movie, I ain't write it (For real)",life,22,"My life a movie, I ain't write it (For real)",write,INNER,SLANT,cmu,MED,Y
+Real Spill,22,"My life a movie, I ain't write it (For real)",write,23,"I'm a star, I can't fight it (For real)",fight,END,PERFECT,cmu,HIGH,Y
+Real Spill,22,"My life a movie, I ain't write it (For real)",life,23,"I'm a star, I can't fight it (For real)",fight,INNER,SLANT,cmu,MED,Y
+Real Spill,22,"My life a movie, I ain't write it (For real)",write,24,"Hoes charmed, get excited (For real)",excited,END,SLANT,cmu,MED,Y
+Real Spill,22,"My life a movie, I ain't write it (For real)",life,24,"Hoes charmed, get excited (For real)",excited,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,23,"I'm a star, I can't fight it (For real)",fight,24,"Hoes charmed, get excited (For real)",excited,END,SLANT,cmu,MED,Y
+Real Spill,23,"I'm a star, I can't fight it (For real)",star,24,"Hoes charmed, get excited (For real)",charmed,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,23,"I'm a star, I can't fight it (For real)",star,25,"Touch a charm, leave you harmed (For real)",charm,INNER,SLANT,cmu,MED,Y
+Real Spill,23,"I'm a star, I can't fight it (For real)",star,25,"Touch a charm, leave you harmed (For real)",harmed,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,24,"Hoes charmed, get excited (For real)",charmed,25,"Touch a charm, leave you harmed (For real)",charm,INNER,SLANT,cmu,MED,Y
+Real Spill,24,"Hoes charmed, get excited (For real)",charmed,25,"Touch a charm, leave you harmed (For real)",harmed,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,24,"Hoes charmed, get excited (For real)",charmed,26,"Stay alarmed, hold the forty with one arm (Baow)",alarmed,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,24,"Hoes charmed, get excited (For real)",charmed,26,"Stay alarmed, hold the forty with one arm (Baow)",arm,INNER,SLANT,cmu,MED,Y
+Real Spill,24,"Hoes charmed, get excited (For real)",Hoes,26,"Stay alarmed, hold the forty with one arm (Baow)",hold,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",charm,25,"Touch a charm, leave you harmed (For real)",harmed,INNER,SLANT,cmu,MED,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",harmed,26,"Stay alarmed, hold the forty with one arm (Baow)",arm,END,SLANT,cmu,MED,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",charm,26,"Stay alarmed, hold the forty with one arm (Baow)",alarmed,INNER,SLANT,cmu,MED,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",charm,26,"Stay alarmed, hold the forty with one arm (Baow)",arm,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",harmed,26,"Stay alarmed, hold the forty with one arm (Baow)",alarmed,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",Touch,26,"Stay alarmed, hold the forty with one arm (Baow)",one,INNER,SLANT,cmu,MED,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",harmed,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",guard,END,SLANT,cmu,MED,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",charm,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",guard,INNER,SLANT,cmu,MED,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",leave,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",these,INNER,SLANT,cmu,MED,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",Touch,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",Fuck,INNER,SLANT,cmu,MED,Y
+Real Spill,25,"Touch a charm, leave you harmed (For real)",harmed,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",part,END,SLANT,cmu,MED,Y
+Real Spill,26,"Stay alarmed, hold the forty with one arm (Baow)",alarmed,26,"Stay alarmed, hold the forty with one arm (Baow)",arm,INNER,SLANT,cmu,MED,Y
+Real Spill,26,"Stay alarmed, hold the forty with one arm (Baow)",arm,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",guard,END,SLANT,cmu,MED,Y
+Real Spill,26,"Stay alarmed, hold the forty with one arm (Baow)",alarmed,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",guard,INNER,SLANT,cmu,MED,Y
+Real Spill,26,"Stay alarmed, hold the forty with one arm (Baow)",one,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",Fuck,INNER,SLANT,cmu,MED,Y
+Real Spill,26,"Stay alarmed, hold the forty with one arm (Baow)",Stay,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",stay,INNER,REPEAT,spelling,HIGH,N
+Real Spill,26,"Stay alarmed, hold the forty with one arm (Baow)",arm,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",part,END,SLANT,cmu,MED,Y
+Real Spill,26,"Stay alarmed, hold the forty with one arm (Baow)",alarmed,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",part,INNER,SLANT,cmu,MED,Y
+Real Spill,26,"Stay alarmed, hold the forty with one arm (Baow)",hold,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",Don't,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,26,"Stay alarmed, hold the forty with one arm (Baow)",Stay,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",play,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",Fuck,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",fuck,INNER,REPEAT,spelling,HIGH,N
+Real Spill,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",guard,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",part,END,SLANT,cmu,MED,Y
+Real Spill,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",stay,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",play,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",tell,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",tell,INNER,REPEAT,spelling,HIGH,N
+Real Spill,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",these,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",nobody,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",would,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",would,INNER,REPEAT,spelling,HIGH,N
+Real Spill,27,"My grandpops would tell me, ""Fuck these fuck niggas, stay on guard""",these,29,And that's real spill (That's real spill),real,INNER,SLANT,cmu,MED,Y
+Real Spill,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",nobody,29,And that's real spill (That's real spill),real,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",'bout,30,"Playin' with niggas for real, that's how niggas get killed",how,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",nobody,30,"Playin' with niggas for real, that's how niggas get killed",real,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",play,30,"Playin' with niggas for real, that's how niggas get killed",Playin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,28,"My grandma would tell me, ""Don't worry 'bout nobody, play your part""",tell,30,"Playin' with niggas for real, that's how niggas get killed",get,INNER,SLANT,cmu,MED,Y
+Real Spill,29,And that's real spill (That's real spill),spill,30,"Playin' with niggas for real, that's how niggas get killed",killed,END,SLANT,cmu,MED,Y
+Real Spill,29,And that's real spill (That's real spill),real,30,"Playin' with niggas for real, that's how niggas get killed",real,INNER,REPEAT,spelling,HIGH,N
+Real Spill,29,And that's real spill (That's real spill),real,31,"I was playin' with cap guns, goin' on drills on big wheels",wheels,INNER,SLANT,cmu,MED,Y
+Real Spill,29,And that's real spill (That's real spill),spill,31,"I was playin' with cap guns, goin' on drills on big wheels",big,INNER,SLANT,cmu,MED,Y
+Real Spill,29,And that's real spill (That's real spill),spill,31,"I was playin' with cap guns, goin' on drills on big wheels",drills,INNER,SLANT,cmu,MED,Y
+Real Spill,29,And that's real spill (That's real spill),spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,END,PERFECT,cmu,HIGH,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",niggas,30,"Playin' with niggas for real, that's how niggas get killed",niggas,INNER,REPEAT,spelling,HIGH,N
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",killed,31,"I was playin' with cap guns, goin' on drills on big wheels",big,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",killed,31,"I was playin' with cap guns, goin' on drills on big wheels",drills,INNER,SLANT,cmu,MED,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",Playin,31,"I was playin' with cap guns, goin' on drills on big wheels",playin,INNER,REPEAT,spelling,HIGH,N
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",real,31,"I was playin' with cap guns, goin' on drills on big wheels",wheels,INNER,SLANT,cmu,MED,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",killed,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,END,SLANT,cmu,MED,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",get,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",twenty,INNER,SLANT,cmu,MED,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",get,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",went,INNER,SLANT,cmu,MED,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",killed,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",big,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",killed,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,INNER,SLANT,cmu,MED,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",niggas,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,INNER,ASSONANCE,vowel,LOW,N
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",real,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",wheel,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,30,"Playin' with niggas for real, that's how niggas get killed",killed,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,END,SLANT,cmu,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",drills,31,"I was playin' with cap guns, goin' on drills on big wheels",big,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",big,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",big,INNER,REPEAT,spelling,HIGH,N
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",big,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,INNER,SLANT,cmu,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",big,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",drills,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",big,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",drills,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,INNER,SLANT,cmu,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",drills,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",goin,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Doin,INNER,PERFECT,spelling,HIGH,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",guns,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",one,INNER,SLANT,cmu,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",wheels,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",wheel,INNER,SLANT,cmu,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",wheels,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",feel,END,SLANT,cmu,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",big,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",clip,INNER,SLANT,cmu,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",big,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",drills,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",drills,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",clip,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",drills,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",drills,INNER,REPEAT,spelling,HIGH,N
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",goin,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",doin,INNER,PERFECT,spelling,HIGH,Y
+Real Spill,31,"I was playin' with cap guns, goin' on drills on big wheels",wheels,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",feel,END,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",big,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,INNER,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",big,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",twenty,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",went,INNER,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",big,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",clip,INNER,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",big,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",drills,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",bought,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",got,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Doin,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",doin,INNER,REPEAT,spelling,HIGH,N
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",clip,INNER,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",drills,INNER,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",clip,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",drills,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",twenty,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",temp,INNER,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",went,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",temp,INNER,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",wheel,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",feel,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,END,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",big,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",big,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",bought,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",got,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,INNER,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Richard,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",wheel,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",these,INNER,SLANT,cmu,MED,Y
+Real Spill,32,"Doin' one-twenty in a big wheel, should've just went and bought a Richard Mille (Ayy)",Mille,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",still,END,PERFECT,cmu,HIGH,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",drills,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",clip,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",folks,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",show,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",hoes,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",folks,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",hoes,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",show,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",now,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",how,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",clip,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",clip,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",drills,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",drills,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",feel,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",these,INNER,SLANT,cmu,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",folks,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",ho,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",folks,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",folks,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",told,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",got,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",got,INNER,REPEAT,spelling,HIGH,N
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",hoes,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",ho,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",hoes,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",hoes,INNER,REPEAT,spelling,HIGH,N
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",hoes,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",told,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",how,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",how,INNER,REPEAT,spelling,HIGH,N
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",now,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",how,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",show,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",ho,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",show,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",show,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",told,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",feel,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",feel,END,REPEAT,spelling,HIGH,N
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",clip,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",millions,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",drills,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",millions,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",feel,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",these,INNER,SLANT,cmu,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",folks,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",ho,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",folks,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",folks,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",got,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",got,INNER,REPEAT,spelling,HIGH,N
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",hoes,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",ho,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",hoes,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",hoes,INNER,REPEAT,spelling,HIGH,N
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",hoes,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",how,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",how,INNER,REPEAT,spelling,HIGH,N
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",now,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",how,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",show,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",ho,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",show,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",show,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",temp,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",let,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,33,"I got hoes doin' temp drills, now folks show you how a clip feel (Baow)",feel,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",wheel,END,PERFECT,cmu,HIGH,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",hoes,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",ho,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",hoes,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",told,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",told,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",ho,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",millions,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",got,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",got,INNER,REPEAT,spelling,HIGH,N
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",ho,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",ho,INNER,REPEAT,spelling,HIGH,N
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",ho,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",ho,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",hoes,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",ho,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",hoes,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",hoes,INNER,REPEAT,spelling,HIGH,N
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",hoes,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",how,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",how,INNER,REPEAT,spelling,HIGH,N
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",millions,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",these,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",feel,INNER,SLANT,cmu,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",these,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",these,INNER,REPEAT,spelling,HIGH,N
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",told,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",ho,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",told,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",told,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",still,END,SLANT,cmu,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",All,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",bored,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",chillin,INNER,SLANT,cmu,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",chills,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",got,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",Gotta,INNER,SLANT,cmu,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",high,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",grind,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",chillin,INNER,SLANT,cmu,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,34,"All these hoes high off pills, told that ho how she got chills (G Herbo)",pills,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",still,INNER,SLANT,cmu,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",ho,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",hoes,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",ho,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",hoes,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",ho,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",know,INNER,REPEAT,spelling,HIGH,N
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",these,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",feel,INNER,SLANT,cmu,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",got,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",Gotta,INNER,SLANT,cmu,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",millions,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",chillin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",millions,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",spinnin,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",millions,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",still,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",feel,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",wheel,END,PERFECT,cmu,HIGH,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",let,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",metal,INNER,SLANT,cmu,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",let,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",pedal,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",these,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",wheel,INNER,SLANT,cmu,MED,Y
+Real Spill,35,"And these hoes know I got millions, let that ho know how I feel (What up?)",feel,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",appeals,END,SLANT,cmu,MED,Y
+Real Spill,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",chillin,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",spinnin,INNER,SLANT,cmu,MED,Y
+Real Spill,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",chillin,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",still,INNER,SLANT,cmu,MED,Y
+Real Spill,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",spinnin,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",still,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",bored,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",Lord,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,36,"Gotta grind, just been chillin', I be bored, spinnin' still (Still)",bored,38,"I'm that nigga to the world, made Forbes, XXL",Forbes,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",pedal,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",metal,INNER,SLANT,cmu,MED,Y
+Real Spill,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",Lord,38,"I'm that nigga to the world, made Forbes, XXL",Forbes,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",take,38,"I'm that nigga to the world, made Forbes, XXL",made,INNER,SLANT,cmu,MED,Y
+Real Spill,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",wheel,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",appeals,END,SLANT,cmu,MED,Y
+Real Spill,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",metal,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",get,INNER,SLANT,cmu,MED,Y
+Real Spill,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",pedal,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",get,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",Put,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",yours,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,37,"Put that pedal to the metal, uh, Lord, take the wheel (Skrrt)",wheel,41,"But the label callin', tryna give me twenty for the deal",deal,END,PERFECT,cmu,HIGH,Y
+Real Spill,38,"I'm that nigga to the world, made Forbes, XXL",nigga,40,I still feel like I'm that nigga in that hoodie on the stairs,nigga,INNER,REPEAT,spelling,HIGH,N
+Real Spill,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",get,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",get,INNER,REPEAT,spelling,HIGH,N
+Real Spill,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",go,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",hope,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",appeals,40,I still feel like I'm that nigga in that hoodie on the stairs,feel,INNER,SLANT,cmu,MED,Y
+Real Spill,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",get,40,I still feel like I'm that nigga in that hoodie on the stairs,stairs,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",mine,40,I still feel like I'm that nigga in that hoodie on the stairs,like,INNER,SLANT,cmu,MED,Y
+Real Spill,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",appeals,41,"But the label callin', tryna give me twenty for the deal",deal,END,SLANT,cmu,MED,Y
+Real Spill,39,"I got mine, go get yours, hope them boys get appeals (Ayy)",get,41,"But the label callin', tryna give me twenty for the deal",twenty,INNER,SLANT,cmu,MED,Y
+Real Spill,40,I still feel like I'm that nigga in that hoodie on the stairs,feel,41,"But the label callin', tryna give me twenty for the deal",deal,INNER,PERFECT,cmu,HIGH,Y
+Real Spill,40,I still feel like I'm that nigga in that hoodie on the stairs,feel,41,"But the label callin', tryna give me twenty for the deal",tryna,INNER,SLANT,spelling,LOW,Y
+Real Spill,40,I still feel like I'm that nigga in that hoodie on the stairs,stairs,41,"But the label callin', tryna give me twenty for the deal",twenty,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,40,I still feel like I'm that nigga in that hoodie on the stairs,still,41,"But the label callin', tryna give me twenty for the deal",give,INNER,SLANT,cmu,MED,Y
+Real Spill,40,I still feel like I'm that nigga in that hoodie on the stairs,hoodie,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",rookie,INNER,PERFECT,spelling,MED,Y
+Real Spill,40,I still feel like I'm that nigga in that hoodie on the stairs,like,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",might,INNER,SLANT,cmu,MED,Y
+Real Spill,40,I still feel like I'm that nigga in that hoodie on the stairs,still,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",year,INNER,SLANT,cmu,MED,Y
+Real Spill,41,"But the label callin', tryna give me twenty for the deal",tryna,41,"But the label callin', tryna give me twenty for the deal",deal,INNER,SLANT,spelling,LOW,Y
+Real Spill,41,"But the label callin', tryna give me twenty for the deal",give,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",year,INNER,SLANT,cmu,MED,Y
+Real Spill,41,"But the label callin', tryna give me twenty for the deal",label,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",ain't,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,41,"But the label callin', tryna give me twenty for the deal",callin,43,"My respect top tier, all my checks got cleared",all,INNER,SLANT,cmu,MED,Y
+Real Spill,41,"But the label callin', tryna give me twenty for the deal",deal,43,"My respect top tier, all my checks got cleared",tier,INNER,SLANT,cmu,MED,Y
+Real Spill,41,"But the label callin', tryna give me twenty for the deal",give,43,"My respect top tier, all my checks got cleared",cleared,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,41,"But the label callin', tryna give me twenty for the deal",tryna,43,"My respect top tier, all my checks got cleared",tier,INNER,SLANT,spelling,LOW,Y
+Real Spill,41,"But the label callin', tryna give me twenty for the deal",twenty,43,"My respect top tier, all my checks got cleared",checks,INNER,ASSONANCE,vowel,MED,Y
+Real Spill,41,"But the label callin', tryna give me twenty for the deal",twenty,43,"My respect top tier, all my checks got cleared",respect,INNER,SLANT,cmu,MED,Y
+Real Spill,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",book,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",rookie,INNER,SLANT,cmu,MED,Y
+Real Spill,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",pull,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",book,INNER,SLANT,cmu,MED,Y
+Real Spill,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",pull,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",rookie,INNER,SLANT,cmu,MED,Y
+Real Spill,42,"And I might pull up if you book me, I ain't no rookie, but it's my year",year,43,"My respect top tier, all my checks got cleared",cleared,END,SLANT,cmu,MED,Y
+Real Spill,43,"My respect top tier, all my checks got cleared",respect,43,"My respect top tier, all my checks got cleared",checks,INNER,SLANT,cmu,MED,Y
+Real Spill,43,"My respect top tier, all my checks got cleared",top,43,"My respect top tier, all my checks got cleared",got,INNER,SLANT,cmu,MED,Y

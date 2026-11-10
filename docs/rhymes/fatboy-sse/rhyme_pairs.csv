@@ -1,0 +1,366 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+12 Days,1,"Gotta get paid, hey",paid,2,"Gotta get paid, I gotta get paid",paid,END,REPEAT,spelling,HIGH,N
+12 Days,1,"Gotta get paid, hey",get,2,"Gotta get paid, I gotta get paid",get,INNER,REPEAT,spelling,HIGH,N
+12 Days,1,"Gotta get paid, hey",Gotta,2,"Gotta get paid, I gotta get paid",Gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,1,"Gotta get paid, hey",paid,2,"Gotta get paid, I gotta get paid",paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,1,"Gotta get paid, hey",get,3,I got the chopper on my hip if you disrespect,disrespect,INNER,SLANT,cmu,MED,Y
+12 Days,1,"Gotta get paid, hey",Gotta,3,I got the chopper on my hip if you disrespect,chopper,INNER,SLANT,cmu,MED,Y
+12 Days,1,"Gotta get paid, hey",Gotta,3,I got the chopper on my hip if you disrespect,got,INNER,SLANT,cmu,MED,Y
+12 Days,2,"Gotta get paid, I gotta get paid",get,2,"Gotta get paid, I gotta get paid",get,INNER,REPEAT,spelling,HIGH,N
+12 Days,2,"Gotta get paid, I gotta get paid",Gotta,2,"Gotta get paid, I gotta get paid",gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,2,"Gotta get paid, I gotta get paid",paid,2,"Gotta get paid, I gotta get paid",paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,2,"Gotta get paid, I gotta get paid",get,3,I got the chopper on my hip if you disrespect,disrespect,INNER,SLANT,cmu,MED,Y
+12 Days,2,"Gotta get paid, I gotta get paid",Gotta,3,I got the chopper on my hip if you disrespect,chopper,INNER,SLANT,cmu,MED,Y
+12 Days,2,"Gotta get paid, I gotta get paid",Gotta,3,I got the chopper on my hip if you disrespect,got,INNER,SLANT,cmu,MED,Y
+12 Days,2,"Gotta get paid, I gotta get paid",get,4,I got that work up in the street if you want the pressure,pressure,INNER,SLANT,cmu,MED,Y
+12 Days,2,"Gotta get paid, I gotta get paid",Gotta,4,I got that work up in the street if you want the pressure,got,INNER,SLANT,cmu,MED,Y
+12 Days,2,"Gotta get paid, I gotta get paid",Gotta,4,I got that work up in the street if you want the pressure,want,INNER,SLANT,cmu,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,got,3,I got the chopper on my hip if you disrespect,chopper,INNER,SLANT,cmu,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,disrespect,4,I got that work up in the street if you want the pressure,pressure,END,ASSONANCE,vowel,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,chopper,4,I got that work up in the street if you want the pressure,got,INNER,SLANT,cmu,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,chopper,4,I got that work up in the street if you want the pressure,want,INNER,ASSONANCE,vowel,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,got,4,I got that work up in the street if you want the pressure,got,INNER,REPEAT,spelling,HIGH,N
+12 Days,3,I got the chopper on my hip if you disrespect,got,4,I got that work up in the street if you want the pressure,want,INNER,SLANT,cmu,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,chopper,5,"If you want the pressure, I might give it to you quick",want,INNER,ASSONANCE,vowel,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,disrespect,5,"If you want the pressure, I might give it to you quick",pressure,INNER,ASSONANCE,vowel,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,got,5,"If you want the pressure, I might give it to you quick",want,INNER,SLANT,cmu,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,hip,5,"If you want the pressure, I might give it to you quick",give,INNER,SLANT,cmu,MED,Y
+12 Days,3,I got the chopper on my hip if you disrespect,hip,5,"If you want the pressure, I might give it to you quick",quick,INNER,SLANT,cmu,MED,Y
+12 Days,4,I got that work up in the street if you want the pressure,got,4,I got that work up in the street if you want the pressure,want,INNER,SLANT,cmu,MED,Y
+12 Days,4,I got that work up in the street if you want the pressure,got,5,"If you want the pressure, I might give it to you quick",want,INNER,SLANT,cmu,MED,Y
+12 Days,4,I got that work up in the street if you want the pressure,pressure,5,"If you want the pressure, I might give it to you quick",pressure,INNER,REPEAT,spelling,HIGH,N
+12 Days,4,I got that work up in the street if you want the pressure,want,5,"If you want the pressure, I might give it to you quick",want,INNER,REPEAT,spelling,HIGH,N
+12 Days,4,I got that work up in the street if you want the pressure,pressure,6,And my gang know I will never ever switch (I love my niggas),ever,INNER,SLANT,cmu,MED,Y
+12 Days,4,I got that work up in the street if you want the pressure,pressure,6,And my gang know I will never ever switch (I love my niggas),never,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",give,5,"If you want the pressure, I might give it to you quick",quick,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",quick,6,And my gang know I will never ever switch (I love my niggas),switch,END,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",give,6,And my gang know I will never ever switch (I love my niggas),switch,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",give,6,And my gang know I will never ever switch (I love my niggas),will,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",pressure,6,And my gang know I will never ever switch (I love my niggas),ever,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",pressure,6,And my gang know I will never ever switch (I love my niggas),never,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",quick,6,And my gang know I will never ever switch (I love my niggas),will,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",give,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",bitch,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",pressure,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",never,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",pressure,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",ten,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",quick,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",bitch,INNER,SLANT,cmu,MED,Y
+12 Days,5,"If you want the pressure, I might give it to you quick",quick,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",bimbos,END,ASSONANCE,vowel,MED,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),never,6,And my gang know I will never ever switch (I love my niggas),ever,INNER,MULTI,multi,HIGH,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),will,6,And my gang know I will never ever switch (I love my niggas),switch,INNER,SLANT,cmu,MED,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),will never,6,And my gang know I will never ever switch (I love my niggas),never ever,INNER,MULTI,multi,HIGH,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),ever,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",never,INNER,MULTI,multi,HIGH,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),ever,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",ten,INNER,SLANT,cmu,MED,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),know,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",toes,INNER,ASSONANCE,vowel,MED,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),never,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",never,INNER,REPEAT,spelling,HIGH,N
+12 Days,6,And my gang know I will never ever switch (I love my niggas),never,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",ten,INNER,SLANT,cmu,MED,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),switch,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",bitch,INNER,PERFECT,cmu,HIGH,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),will,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",bitch,INNER,SLANT,cmu,MED,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),switch,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",bimbos,END,ASSONANCE,vowel,MED,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),know,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",hoes,INNER,ASSONANCE,vowel,MED,Y
+12 Days,6,And my gang know I will never ever switch (I love my niggas),will,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",bimbos,INNER,ASSONANCE,vowel,MED,Y
+12 Days,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",never,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",ten,INNER,SLANT,cmu,MED,Y
+12 Days,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",bitch,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",bimbos,INNER,ASSONANCE,vowel,MED,Y
+12 Days,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",toes,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",hoes,INNER,PERFECT,cmu,HIGH,Y
+12 Days,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",toes,9,I remember in the hood used to get low,low,END,ASSONANCE,vowel,MED,Y
+12 Days,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",never,9,I remember in the hood used to get low,get,INNER,SLANT,cmu,MED,Y
+12 Days,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",never,9,I remember in the hood used to get low,remember,INNER,ASSONANCE,vowel,MED,Y
+12 Days,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",ten,9,I remember in the hood used to get low,get,INNER,SLANT,cmu,MED,Y
+12 Days,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",ten,9,I remember in the hood used to get low,remember,INNER,ASSONANCE,vowel,MED,Y
+12 Days,7,"And I never been a bitch, stayed ten toes (Stayed ten toes)",toes,10,"Now we in LA, I swear I get dough (I swear I get it)",dough,END,ASSONANCE,vowel,MED,Y
+12 Days,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",hoes,9,I remember in the hood used to get low,low,INNER,ASSONANCE,vowel,MED,Y
+12 Days,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",Got,10,"Now we in LA, I swear I get dough (I swear I get it)",LA,INNER,ASSONANCE,vowel,MED,Y
+12 Days,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",hoes,10,"Now we in LA, I swear I get dough (I swear I get it)",dough,INNER,ASSONANCE,vowel,MED,Y
+12 Days,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",bimbos,11,"Wait, you can't guard this shit (You can't guard me)",shit,END,ASSONANCE,vowel,MED,Y
+12 Days,8,"Got hoes in my DM's, call 'em bimbos (Fuck with me)",bimbos,12,"I just took off like a rocket, James Harden, bitch",bitch,END,ASSONANCE,vowel,MED,Y
+12 Days,9,I remember in the hood used to get low,remember,9,I remember in the hood used to get low,get,INNER,ASSONANCE,vowel,MED,Y
+12 Days,9,I remember in the hood used to get low,low,10,"Now we in LA, I swear I get dough (I swear I get it)",dough,END,PERFECT,cmu,HIGH,Y
+12 Days,9,I remember in the hood used to get low,get,10,"Now we in LA, I swear I get dough (I swear I get it)",get,INNER,REPEAT,spelling,HIGH,N
+12 Days,9,I remember in the hood used to get low,get,10,"Now we in LA, I swear I get dough (I swear I get it)",swear,INNER,SLANT,cmu,MED,Y
+12 Days,9,I remember in the hood used to get low,remember,10,"Now we in LA, I swear I get dough (I swear I get it)",get,INNER,ASSONANCE,vowel,MED,Y
+12 Days,9,I remember in the hood used to get low,remember,10,"Now we in LA, I swear I get dough (I swear I get it)",swear,INNER,ASSONANCE,vowel,MED,Y
+12 Days,10,"Now we in LA, I swear I get dough (I swear I get it)",swear,10,"Now we in LA, I swear I get dough (I swear I get it)",get,INNER,SLANT,cmu,MED,Y
+12 Days,10,"Now we in LA, I swear I get dough (I swear I get it)",LA,11,"Wait, you can't guard this shit (You can't guard me)",guard,INNER,ASSONANCE,vowel,MED,Y
+12 Days,10,"Now we in LA, I swear I get dough (I swear I get it)",LA,12,"I just took off like a rocket, James Harden, bitch",Harden,INNER,ASSONANCE,vowel,MED,Y
+12 Days,10,"Now we in LA, I swear I get dough (I swear I get it)",LA,12,"I just took off like a rocket, James Harden, bitch",rocket,INNER,ASSONANCE,vowel,MED,Y
+12 Days,11,"Wait, you can't guard this shit (You can't guard me)",shit,12,"I just took off like a rocket, James Harden, bitch",bitch,END,SLANT,cmu,MED,Y
+12 Days,11,"Wait, you can't guard this shit (You can't guard me)",guard,12,"I just took off like a rocket, James Harden, bitch",Harden,INNER,SLANT,cmu,MED,Y
+12 Days,11,"Wait, you can't guard this shit (You can't guard me)",guard,12,"I just took off like a rocket, James Harden, bitch",rocket,INNER,ASSONANCE,vowel,MED,Y
+12 Days,11,"Wait, you can't guard this shit (You can't guard me)",Wait,12,"I just took off like a rocket, James Harden, bitch",James,INNER,ASSONANCE,vowel,MED,Y
+12 Days,11,"Wait, you can't guard this shit (You can't guard me)",shit,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",shit,END,REPEAT,spelling,HIGH,N
+12 Days,11,"Wait, you can't guard this shit (You can't guard me)",guard,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",hard,INNER,PERFECT,cmu,HIGH,Y
+12 Days,11,"Wait, you can't guard this shit (You can't guard me)",Wait,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",came,INNER,SLANT,cmu,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",rocket,12,"I just took off like a rocket, James Harden, bitch",Harden,INNER,ASSONANCE,vowel,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",bitch,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",shit,END,SLANT,cmu,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",Harden,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",hard,INNER,SLANT,cmu,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",James,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",came,INNER,SLANT,cmu,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",like,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",grind,INNER,ASSONANCE,vowel,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",rocket,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",hard,INNER,ASSONANCE,vowel,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",Harden,14,"And I blossom like a flower, I just harvest it (I just harvest it)",blossom,INNER,ASSONANCE,vowel,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",Harden,14,"And I blossom like a flower, I just harvest it (I just harvest it)",harvest,INNER,ASSONANCE,vowel,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",like,14,"And I blossom like a flower, I just harvest it (I just harvest it)",like,INNER,REPEAT,spelling,HIGH,N
+12 Days,12,"I just took off like a rocket, James Harden, bitch",rocket,14,"And I blossom like a flower, I just harvest it (I just harvest it)",blossom,INNER,ASSONANCE,vowel,MED,Y
+12 Days,12,"I just took off like a rocket, James Harden, bitch",rocket,14,"And I blossom like a flower, I just harvest it (I just harvest it)",harvest,INNER,ASSONANCE,vowel,MED,Y
+12 Days,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",grind,14,"And I blossom like a flower, I just harvest it (I just harvest it)",like,INNER,ASSONANCE,vowel,MED,Y
+12 Days,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",hard,14,"And I blossom like a flower, I just harvest it (I just harvest it)",blossom,INNER,ASSONANCE,vowel,MED,Y
+12 Days,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",hard,14,"And I blossom like a flower, I just harvest it (I just harvest it)",harvest,INNER,ASSONANCE,vowel,MED,Y
+12 Days,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",grind,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",fire,INNER,ASSONANCE,vowel,MED,Y
+12 Days,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",hard,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",arsonist,INNER,ASSONANCE,vowel,MED,Y
+12 Days,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",shit,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",nigga,INNER,SLANT,spelling,LOW,Y
+12 Days,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",shit,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",quick,INNER,SLANT,cmu,MED,Y
+12 Days,13,"And I came from the grind, that mean I'm hard as shit (I'm hard as ever)",shit,17,"All I care about is family, that's my heart and shit (I love 'em)",shit,END,REPEAT,spelling,HIGH,N
+12 Days,14,"And I blossom like a flower, I just harvest it (I just harvest it)",blossom,14,"And I blossom like a flower, I just harvest it (I just harvest it)",harvest,INNER,ASSONANCE,vowel,MED,Y
+12 Days,14,"And I blossom like a flower, I just harvest it (I just harvest it)",harvest,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",arsonist,END,SLANT,cmu,MED,Y
+12 Days,14,"And I blossom like a flower, I just harvest it (I just harvest it)",blossom,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",arsonist,INNER,ASSONANCE,vowel,MED,Y
+12 Days,14,"And I blossom like a flower, I just harvest it (I just harvest it)",like,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",fire,INNER,ASSONANCE,vowel,MED,Y
+12 Days,14,"And I blossom like a flower, I just harvest it (I just harvest it)",harvest,16,"I don't care about this Rollie, I might auction it (I might auction it)",auction,END,ASSONANCE,vowel,MED,Y
+12 Days,14,"And I blossom like a flower, I just harvest it (I just harvest it)",blossom,16,"I don't care about this Rollie, I might auction it (I might auction it)",auction,INNER,ASSONANCE,vowel,MED,Y
+12 Days,14,"And I blossom like a flower, I just harvest it (I just harvest it)",flower,16,"I don't care about this Rollie, I might auction it (I might auction it)",about,INNER,ASSONANCE,vowel,MED,Y
+12 Days,14,"And I blossom like a flower, I just harvest it (I just harvest it)",like,16,"I don't care about this Rollie, I might auction it (I might auction it)",might,INNER,SLANT,cmu,MED,Y
+12 Days,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",quick,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",nigga,INNER,SLANT,spelling,LOW,Y
+12 Days,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",arsonist,16,"I don't care about this Rollie, I might auction it (I might auction it)",auction,END,ASSONANCE,vowel,MED,Y
+12 Days,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",Blowin,16,"I don't care about this Rollie, I might auction it (I might auction it)",don't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",Blowin,16,"I don't care about this Rollie, I might auction it (I might auction it)",Rollie,INNER,SLANT,cmu,MED,Y
+12 Days,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",fire,16,"I don't care about this Rollie, I might auction it (I might auction it)",might,INNER,ASSONANCE,vowel,MED,Y
+12 Days,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",arsonist,17,"All I care about is family, that's my heart and shit (I love 'em)",heart,INNER,ASSONANCE,vowel,MED,Y
+12 Days,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",nigga,17,"All I care about is family, that's my heart and shit (I love 'em)",shit,INNER,SLANT,spelling,LOW,Y
+12 Days,15,"Blowin' fire quick, nigga I'm an arsonist (I'm an arsonist)",quick,17,"All I care about is family, that's my heart and shit (I love 'em)",shit,INNER,SLANT,cmu,MED,Y
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",don't,16,"I don't care about this Rollie, I might auction it (I might auction it)",Rollie,INNER,ASSONANCE,vowel,MED,Y
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",about,17,"All I care about is family, that's my heart and shit (I love 'em)",about,INNER,REPEAT,spelling,HIGH,N
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",auction,17,"All I care about is family, that's my heart and shit (I love 'em)",heart,INNER,ASSONANCE,vowel,MED,Y
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",care,17,"All I care about is family, that's my heart and shit (I love 'em)",care,INNER,REPEAT,spelling,HIGH,N
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",about,18,You don't know about the grind,about,INNER,REPEAT,spelling,HIGH,N
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",don't,18,You don't know about the grind,don't,INNER,REPEAT,spelling,HIGH,N
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",don't,18,You don't know about the grind,know,INNER,ASSONANCE,vowel,MED,Y
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",might,18,You don't know about the grind,grind,INNER,ASSONANCE,vowel,MED,Y
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",Rollie,18,You don't know about the grind,don't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,16,"I don't care about this Rollie, I might auction it (I might auction it)",Rollie,18,You don't know about the grind,know,INNER,ASSONANCE,vowel,MED,Y
+12 Days,17,"All I care about is family, that's my heart and shit (I love 'em)",about,18,You don't know about the grind,about,INNER,REPEAT,spelling,HIGH,N
+12 Days,17,"All I care about is family, that's my heart and shit (I love 'em)",shit,21,"You don't work like this, nigga (You ain't work like this)",nigga,END,SLANT,spelling,LOW,Y
+12 Days,18,You don't know about the grind,don't,18,You don't know about the grind,know,INNER,ASSONANCE,vowel,MED,Y
+12 Days,18,You don't know about the grind,grind,19,You ain't work like this (You ain't work like this),like,END,ASSONANCE,vowel,MED,Y
+12 Days,18,You don't know about the grind,grind,20,You don't work like this (You ain't work like this),like,END,ASSONANCE,vowel,MED,Y
+12 Days,18,You don't know about the grind,don't,20,You don't work like this (You ain't work like this),don't,INNER,REPEAT,spelling,HIGH,N
+12 Days,18,You don't know about the grind,know,20,You don't work like this (You ain't work like this),don't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,18,You don't know about the grind,grind,22,"I know I did, you ain't work like this",like,END,ASSONANCE,vowel,MED,Y
+12 Days,19,You ain't work like this (You ain't work like this),like,20,You don't work like this (You ain't work like this),like,END,REPEAT,spelling,HIGH,N
+12 Days,19,You ain't work like this (You ain't work like this),work,20,You don't work like this (You ain't work like this),work,INNER,REPEAT,spelling,HIGH,N
+12 Days,19,You ain't work like this (You ain't work like this),like,21,"You don't work like this, nigga (You ain't work like this)",like,INNER,REPEAT,spelling,HIGH,N
+12 Days,19,You ain't work like this (You ain't work like this),work,21,"You don't work like this, nigga (You ain't work like this)",work,INNER,REPEAT,spelling,HIGH,N
+12 Days,19,You ain't work like this (You ain't work like this),like,22,"I know I did, you ain't work like this",like,END,REPEAT,spelling,HIGH,N
+12 Days,20,You don't work like this (You ain't work like this),don't,21,"You don't work like this, nigga (You ain't work like this)",don't,INNER,REPEAT,spelling,HIGH,N
+12 Days,20,You don't work like this (You ain't work like this),like,21,"You don't work like this, nigga (You ain't work like this)",like,INNER,REPEAT,spelling,HIGH,N
+12 Days,20,You don't work like this (You ain't work like this),work,21,"You don't work like this, nigga (You ain't work like this)",work,INNER,REPEAT,spelling,HIGH,N
+12 Days,20,You don't work like this (You ain't work like this),like,22,"I know I did, you ain't work like this",like,END,REPEAT,spelling,HIGH,N
+12 Days,20,You don't work like this (You ain't work like this),don't,22,"I know I did, you ain't work like this",know,INNER,ASSONANCE,vowel,MED,Y
+12 Days,20,You don't work like this (You ain't work like this),work,22,"I know I did, you ain't work like this",work,INNER,REPEAT,spelling,HIGH,N
+12 Days,21,"You don't work like this, nigga (You ain't work like this)",don't,22,"I know I did, you ain't work like this",know,INNER,ASSONANCE,vowel,MED,Y
+12 Days,21,"You don't work like this, nigga (You ain't work like this)",like,22,"I know I did, you ain't work like this",like,INNER,REPEAT,spelling,HIGH,N
+12 Days,21,"You don't work like this, nigga (You ain't work like this)",work,22,"I know I did, you ain't work like this",work,INNER,REPEAT,spelling,HIGH,N
+12 Days,22,"I know I did, you ain't work like this",ain't,23,"I've been up for twelve days, gotta get paid",days,INNER,ASSONANCE,vowel,MED,Y
+12 Days,22,"I know I did, you ain't work like this",ain't,23,"I've been up for twelve days, gotta get paid",paid,INNER,ASSONANCE,vowel,MED,Y
+12 Days,22,"I know I did, you ain't work like this",ain't,24,Coolin' in the shade with a bad lil' bad mami (Mami),shade,INNER,ASSONANCE,vowel,MED,Y
+12 Days,23,"I've been up for twelve days, gotta get paid",days,23,"I've been up for twelve days, gotta get paid",paid,INNER,SLANT,cmu,MED,Y
+12 Days,23,"I've been up for twelve days, gotta get paid",twelve,23,"I've been up for twelve days, gotta get paid",get,INNER,ASSONANCE,vowel,MED,Y
+12 Days,23,"I've been up for twelve days, gotta get paid",days,24,Coolin' in the shade with a bad lil' bad mami (Mami),shade,INNER,SLANT,cmu,MED,Y
+12 Days,23,"I've been up for twelve days, gotta get paid",paid,24,Coolin' in the shade with a bad lil' bad mami (Mami),shade,INNER,PERFECT,cmu,HIGH,Y
+12 Days,23,"I've been up for twelve days, gotta get paid",paid,25,And you niggas sweet like some lemonade (Lemonade),lemonade,END,PERFECT,cmu,HIGH,Y
+12 Days,23,"I've been up for twelve days, gotta get paid",days,25,And you niggas sweet like some lemonade (Lemonade),lemonade,INNER,SLANT,cmu,MED,Y
+12 Days,23,"I've been up for twelve days, gotta get paid",paid,26,"I'm my own boss, I call my own raise (Own raise)",raise,END,SLANT,cmu,MED,Y
+12 Days,23,"I've been up for twelve days, gotta get paid",paid,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,END,REPEAT,spelling,HIGH,N
+12 Days,24,Coolin' in the shade with a bad lil' bad mami (Mami),bad,24,Coolin' in the shade with a bad lil' bad mami (Mami),bad,INNER,REPEAT,spelling,HIGH,N
+12 Days,24,Coolin' in the shade with a bad lil' bad mami (Mami),bad,24,Coolin' in the shade with a bad lil' bad mami (Mami),mami,INNER,SLANT,spelling,LOW,Y
+12 Days,24,Coolin' in the shade with a bad lil' bad mami (Mami),shade,25,And you niggas sweet like some lemonade (Lemonade),lemonade,INNER,PERFECT,cmu,HIGH,Y
+12 Days,24,Coolin' in the shade with a bad lil' bad mami (Mami),shade,26,"I'm my own boss, I call my own raise (Own raise)",raise,INNER,SLANT,cmu,MED,Y
+12 Days,25,And you niggas sweet like some lemonade (Lemonade),lemonade,26,"I'm my own boss, I call my own raise (Own raise)",raise,END,SLANT,cmu,MED,Y
+12 Days,25,And you niggas sweet like some lemonade (Lemonade),lemonade,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,END,PERFECT,cmu,HIGH,Y
+12 Days,25,And you niggas sweet like some lemonade (Lemonade),lemonade,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,INNER,PERFECT,cmu,HIGH,Y
+12 Days,25,And you niggas sweet like some lemonade (Lemonade),lemonade,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,END,PERFECT,cmu,HIGH,Y
+12 Days,25,And you niggas sweet like some lemonade (Lemonade),lemonade,29,"I gotta get paid, gotta get paid (Gotta get paid)",paid,END,PERFECT,cmu,HIGH,Y
+12 Days,26,"I'm my own boss, I call my own raise (Own raise)",own,26,"I'm my own boss, I call my own raise (Own raise)",own,INNER,REPEAT,spelling,HIGH,N
+12 Days,26,"I'm my own boss, I call my own raise (Own raise)",raise,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,END,SLANT,cmu,MED,Y
+12 Days,26,"I'm my own boss, I call my own raise (Own raise)",boss,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",Gotta,INNER,SLANT,cmu,MED,Y
+12 Days,26,"I'm my own boss, I call my own raise (Own raise)",raise,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,INNER,SLANT,cmu,MED,Y
+12 Days,26,"I'm my own boss, I call my own raise (Own raise)",raise,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,END,SLANT,cmu,MED,Y
+12 Days,26,"I'm my own boss, I call my own raise (Own raise)",boss,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",gotta,INNER,SLANT,cmu,MED,Y
+12 Days,26,"I'm my own boss, I call my own raise (Own raise)",raise,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,INNER,SLANT,cmu,MED,Y
+12 Days,26,"I'm my own boss, I call my own raise (Own raise)",raise,29,"I gotta get paid, gotta get paid (Gotta get paid)",paid,END,SLANT,cmu,MED,Y
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",get,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",get,INNER,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",Gotta,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,END,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",get,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",get,INNER,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",Gotta,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,29,"I gotta get paid, gotta get paid (Gotta get paid)",paid,END,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",get,29,"I gotta get paid, gotta get paid (Gotta get paid)",get,INNER,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",Gotta,29,"I gotta get paid, gotta get paid (Gotta get paid)",gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,27,"Gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,29,"I gotta get paid, gotta get paid (Gotta get paid)",paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",get,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",get,INNER,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",gotta,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,29,"I gotta get paid, gotta get paid (Gotta get paid)",paid,END,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",get,29,"I gotta get paid, gotta get paid (Gotta get paid)",get,INNER,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",gotta,29,"I gotta get paid, gotta get paid (Gotta get paid)",gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,29,"I gotta get paid, gotta get paid (Gotta get paid)",paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",get,30,I gotta get paid right,get,INNER,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",gotta,30,I gotta get paid right,gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,28,"I gotta get paid, gotta get paid, yeah (Gotta get paid)",paid,30,I gotta get paid right,paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,29,"I gotta get paid, gotta get paid (Gotta get paid)",get,29,"I gotta get paid, gotta get paid (Gotta get paid)",get,INNER,REPEAT,spelling,HIGH,N
+12 Days,29,"I gotta get paid, gotta get paid (Gotta get paid)",gotta,29,"I gotta get paid, gotta get paid (Gotta get paid)",gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,29,"I gotta get paid, gotta get paid (Gotta get paid)",paid,29,"I gotta get paid, gotta get paid (Gotta get paid)",paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,29,"I gotta get paid, gotta get paid (Gotta get paid)",get,30,I gotta get paid right,get,INNER,REPEAT,spelling,HIGH,N
+12 Days,29,"I gotta get paid, gotta get paid (Gotta get paid)",gotta,30,I gotta get paid right,gotta,INNER,REPEAT,spelling,HIGH,N
+12 Days,29,"I gotta get paid, gotta get paid (Gotta get paid)",paid,30,I gotta get paid right,paid,INNER,REPEAT,spelling,HIGH,N
+12 Days,29,"I gotta get paid, gotta get paid (Gotta get paid)",gotta,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",boss,INNER,SLANT,cmu,MED,Y
+12 Days,30,I gotta get paid right,right,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",Life,END,SLANT,cmu,MED,Y
+12 Days,30,I gotta get paid right,gotta,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",boss,INNER,SLANT,cmu,MED,Y
+12 Days,30,I gotta get paid right,right,32,"My shit official and I'm flyer than a plane, right",right,END,REPEAT,spelling,HIGH,N
+12 Days,30,I gotta get paid right,paid,32,"My shit official and I'm flyer than a plane, right",plane,INNER,SLANT,cmu,MED,Y
+12 Days,30,I gotta get paid right,right,32,"My shit official and I'm flyer than a plane, right",flyer,INNER,ASSONANCE,vowel,MED,Y
+12 Days,30,I gotta get paid right,right,33,"And I'm a hustler, I get dollars on a rainy night",night,END,PERFECT,cmu,HIGH,Y
+12 Days,30,I gotta get paid right,right,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,END,SLANT,cmu,MED,Y
+12 Days,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",stomach,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",Thug,INNER,ASSONANCE,vowel,MED,Y
+12 Days,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",Life,32,"My shit official and I'm flyer than a plane, right",right,END,SLANT,cmu,MED,Y
+12 Days,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",Life,32,"My shit official and I'm flyer than a plane, right",flyer,INNER,ASSONANCE,vowel,MED,Y
+12 Days,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",Life,33,"And I'm a hustler, I get dollars on a rainy night",night,END,SLANT,cmu,MED,Y
+12 Days,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",boss,33,"And I'm a hustler, I get dollars on a rainy night",dollars,INNER,ASSONANCE,vowel,MED,Y
+12 Days,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",stomach,33,"And I'm a hustler, I get dollars on a rainy night",hustler,INNER,ASSONANCE,vowel,MED,Y
+12 Days,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",Thug,33,"And I'm a hustler, I get dollars on a rainy night",hustler,INNER,ASSONANCE,vowel,MED,Y
+12 Days,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",Life,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,END,SLANT,cmu,MED,Y
+12 Days,31,"I'm a boss, on my stomach, I tatted, ""Thug Life,"" huh",Life,35,"I just hit him when they froze the ice, yeah",ice,END,SLANT,cmu,MED,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",flyer,32,"My shit official and I'm flyer than a plane, right",right,INNER,ASSONANCE,vowel,MED,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",shit,32,"My shit official and I'm flyer than a plane, right",official,INNER,ASSONANCE,vowel,MED,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",right,33,"And I'm a hustler, I get dollars on a rainy night",night,END,PERFECT,cmu,HIGH,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",flyer,33,"And I'm a hustler, I get dollars on a rainy night",night,INNER,ASSONANCE,vowel,MED,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",plane,33,"And I'm a hustler, I get dollars on a rainy night",rainy,INNER,SLANT,cmu,MED,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",right,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,END,SLANT,cmu,MED,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",flyer,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,INNER,ASSONANCE,vowel,MED,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",flyer,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",night,INNER,ASSONANCE,vowel,MED,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",right,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",night,INNER,PERFECT,cmu,HIGH,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",right,35,"I just hit him when they froze the ice, yeah",ice,END,SLANT,cmu,MED,Y
+12 Days,32,"My shit official and I'm flyer than a plane, right",right,36,"I seen my main man get rich, that's why I chose this life, yeah",life,END,SLANT,cmu,MED,Y
+12 Days,33,"And I'm a hustler, I get dollars on a rainy night",night,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,END,SLANT,cmu,MED,Y
+12 Days,33,"And I'm a hustler, I get dollars on a rainy night",hustler,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",one,INNER,ASSONANCE,vowel,MED,Y
+12 Days,33,"And I'm a hustler, I get dollars on a rainy night",night,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",night,INNER,REPEAT,spelling,HIGH,N
+12 Days,33,"And I'm a hustler, I get dollars on a rainy night",night,35,"I just hit him when they froze the ice, yeah",ice,END,SLANT,cmu,MED,Y
+12 Days,33,"And I'm a hustler, I get dollars on a rainy night",get,35,"I just hit him when they froze the ice, yeah",when,INNER,SLANT,cmu,MED,Y
+12 Days,33,"And I'm a hustler, I get dollars on a rainy night",night,36,"I seen my main man get rich, that's why I chose this life, yeah",life,END,SLANT,cmu,MED,Y
+12 Days,33,"And I'm a hustler, I get dollars on a rainy night",night,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",type,END,SLANT,cmu,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",coldest,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",go,INNER,ASSONANCE,vowel,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",coldest,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",roll,INNER,ASSONANCE,vowel,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",go,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",roll,INNER,ASSONANCE,vowel,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",night,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,INNER,SLANT,cmu,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,35,"I just hit him when they froze the ice, yeah",ice,END,PERFECT,cmu,HIGH,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",coldest,35,"I just hit him when they froze the ice, yeah",froze,INNER,ASSONANCE,vowel,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",go,35,"I just hit him when they froze the ice, yeah",froze,INNER,ASSONANCE,vowel,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",night,35,"I just hit him when they froze the ice, yeah",ice,INNER,SLANT,cmu,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",roll,35,"I just hit him when they froze the ice, yeah",froze,INNER,SLANT,cmu,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,36,"I seen my main man get rich, that's why I chose this life, yeah",life,END,SLANT,cmu,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",coldest,36,"I seen my main man get rich, that's why I chose this life, yeah",chose,INNER,ASSONANCE,vowel,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,36,"I seen my main man get rich, that's why I chose this life, yeah",why,INNER,ASSONANCE,vowel,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",go,36,"I seen my main man get rich, that's why I chose this life, yeah",chose,INNER,ASSONANCE,vowel,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",night,36,"I seen my main man get rich, that's why I chose this life, yeah",life,INNER,SLANT,cmu,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",night,36,"I seen my main man get rich, that's why I chose this life, yeah",why,INNER,ASSONANCE,vowel,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",roll,36,"I seen my main man get rich, that's why I chose this life, yeah",chose,INNER,SLANT,cmu,MED,Y
+12 Days,34,"I'm out in Jersey with FatBoy on one of they coldest night, go an' roll the dice",dice,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",type,END,SLANT,cmu,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",hit,35,"I just hit him when they froze the ice, yeah",him,INNER,SLANT,cmu,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",ice,36,"I seen my main man get rich, that's why I chose this life, yeah",life,END,SLANT,cmu,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",froze,36,"I seen my main man get rich, that's why I chose this life, yeah",chose,INNER,PERFECT,cmu,HIGH,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",him,36,"I seen my main man get rich, that's why I chose this life, yeah",rich,INNER,SLANT,cmu,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",hit,36,"I seen my main man get rich, that's why I chose this life, yeah",rich,INNER,SLANT,cmu,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",ice,36,"I seen my main man get rich, that's why I chose this life, yeah",why,INNER,ASSONANCE,vowel,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",when,36,"I seen my main man get rich, that's why I chose this life, yeah",get,INNER,SLANT,cmu,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",ice,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",type,END,SLANT,cmu,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",froze,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",know,INNER,ASSONANCE,vowel,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",him,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",bitch,INNER,SLANT,cmu,MED,Y
+12 Days,35,"I just hit him when they froze the ice, yeah",hit,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",bitch,INNER,SLANT,cmu,MED,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",why,36,"I seen my main man get rich, that's why I chose this life, yeah",life,INNER,ASSONANCE,vowel,MED,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",life,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",type,END,SLANT,cmu,MED,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",chose,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",know,INNER,ASSONANCE,vowel,MED,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",main,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",ain't,INNER,SLANT,cmu,MED,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",main,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",gave,INNER,SLANT,cmu,MED,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",main,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",jane,INNER,PERFECT,cmu,HIGH,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",main,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",plain,INNER,PERFECT,cmu,HIGH,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",rich,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",bitch,INNER,PERFECT,cmu,HIGH,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",why,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",type,INNER,ASSONANCE,vowel,MED,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",get,38,I been up twelve days,twelve,INNER,ASSONANCE,vowel,MED,Y
+12 Days,36,"I seen my main man get rich, that's why I chose this life, yeah",main,38,I been up twelve days,days,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",gave,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",ain't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",gave,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",jane,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",gave,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",plain,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",jane,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",ain't,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",plain,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",ain't,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",plain,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",jane,INNER,PERFECT,cmu,HIGH,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",ain't,38,I been up twelve days,days,INNER,ASSONANCE,vowel,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",gave,38,I been up twelve days,days,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",jane,38,I been up twelve days,days,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",plain,38,I been up twelve days,days,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",ain't,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,INNER,REPEAT,spelling,HIGH,N
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",ain't,39,"I ain't had sleep, I used to dream that I would end up paid",paid,INNER,ASSONANCE,vowel,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",gave,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",gave,39,"I ain't had sleep, I used to dream that I would end up paid",paid,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",jane,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",jane,39,"I ain't had sleep, I used to dream that I would end up paid",paid,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",plain,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,INNER,SLANT,cmu,MED,Y
+12 Days,37,"I gave a plain jane to a bitch and she ain't know the type, yeah",plain,39,"I ain't had sleep, I used to dream that I would end up paid",paid,INNER,SLANT,cmu,MED,Y
+12 Days,38,I been up twelve days,days,39,"I ain't had sleep, I used to dream that I would end up paid",paid,END,SLANT,cmu,MED,Y
+12 Days,38,I been up twelve days,days,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,38,I been up twelve days,twelve,39,"I ain't had sleep, I used to dream that I would end up paid",end,INNER,ASSONANCE,vowel,MED,Y
+12 Days,38,I been up twelve days,days,40,"I ain't had shit, I had a bitch and she had selfish ways",ways,END,PERFECT,cmu,HIGH,Y
+12 Days,38,I been up twelve days,days,40,"I ain't had shit, I had a bitch and she had selfish ways",ain't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,38,I been up twelve days,twelve,40,"I ain't had shit, I had a bitch and she had selfish ways",selfish,INNER,ASSONANCE,vowel,MED,Y
+12 Days,38,I been up twelve days,days,41,I ain't never care what no one else would say,say,END,ASSONANCE,vowel,MED,Y
+12 Days,38,I been up twelve days,days,42,I ain't have no problem when it come to gettin' paid,paid,END,SLANT,cmu,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,39,"I ain't had sleep, I used to dream that I would end up paid",paid,INNER,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",sleep,39,"I ain't had sleep, I used to dream that I would end up paid",dream,INNER,SLANT,cmu,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",paid,40,"I ain't had shit, I had a bitch and she had selfish ways",ways,END,SLANT,cmu,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,40,"I ain't had shit, I had a bitch and she had selfish ways",ain't,INNER,REPEAT,spelling,HIGH,N
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,40,"I ain't had shit, I had a bitch and she had selfish ways",ways,INNER,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",end,40,"I ain't had shit, I had a bitch and she had selfish ways",selfish,INNER,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",had,40,"I ain't had shit, I had a bitch and she had selfish ways",had,INNER,REPEAT,spelling,HIGH,N
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",paid,40,"I ain't had shit, I had a bitch and she had selfish ways",ain't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",paid,41,I ain't never care what no one else would say,say,END,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,41,I ain't never care what no one else would say,ain't,INNER,REPEAT,spelling,HIGH,N
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",ain't,41,I ain't never care what no one else would say,say,INNER,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",end,41,I ain't never care what no one else would say,care,INNER,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",end,41,I ain't never care what no one else would say,else,INNER,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",end,41,I ain't never care what no one else would say,never,INNER,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",paid,41,I ain't never care what no one else would say,ain't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",would,41,I ain't never care what no one else would say,would,INNER,REPEAT,spelling,HIGH,N
+12 Days,39,"I ain't had sleep, I used to dream that I would end up paid",paid,42,I ain't have no problem when it come to gettin' paid,paid,END,REPEAT,spelling,HIGH,N
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",ain't,40,"I ain't had shit, I had a bitch and she had selfish ways",ways,INNER,ASSONANCE,vowel,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",had,40,"I ain't had shit, I had a bitch and she had selfish ways",had,INNER,REPEAT,spelling,HIGH,N
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",shit,40,"I ain't had shit, I had a bitch and she had selfish ways",bitch,INNER,SLANT,cmu,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",ways,41,I ain't never care what no one else would say,say,END,ASSONANCE,vowel,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",ain't,41,I ain't never care what no one else would say,ain't,INNER,REPEAT,spelling,HIGH,N
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",ain't,41,I ain't never care what no one else would say,say,INNER,ASSONANCE,vowel,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",selfish,41,I ain't never care what no one else would say,care,INNER,ASSONANCE,vowel,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",selfish,41,I ain't never care what no one else would say,else,INNER,SLANT,cmu,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",selfish,41,I ain't never care what no one else would say,never,INNER,ASSONANCE,vowel,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",ways,41,I ain't never care what no one else would say,ain't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",ways,42,I ain't have no problem when it come to gettin' paid,paid,END,SLANT,cmu,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",ain't,42,I ain't have no problem when it come to gettin' paid,ain't,INNER,REPEAT,spelling,HIGH,N
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",ain't,42,I ain't have no problem when it come to gettin' paid,paid,INNER,ASSONANCE,vowel,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",had,42,I ain't have no problem when it come to gettin' paid,have,INNER,SLANT,cmu,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",selfish,42,I ain't have no problem when it come to gettin' paid,gettin,INNER,ASSONANCE,vowel,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",selfish,42,I ain't have no problem when it come to gettin' paid,when,INNER,ASSONANCE,vowel,MED,Y
+12 Days,40,"I ain't had shit, I had a bitch and she had selfish ways",ways,42,I ain't have no problem when it come to gettin' paid,ain't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,ain't,41,I ain't never care what no one else would say,say,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,care,41,I ain't never care what no one else would say,else,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,never,41,I ain't never care what no one else would say,care,INNER,SLANT,cmu,MED,Y
+12 Days,41,I ain't never care what no one else would say,never,41,I ain't never care what no one else would say,else,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,what,41,I ain't never care what no one else would say,one,INNER,SLANT,cmu,MED,Y
+12 Days,41,I ain't never care what no one else would say,say,42,I ain't have no problem when it come to gettin' paid,paid,END,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,ain't,42,I ain't have no problem when it come to gettin' paid,ain't,INNER,REPEAT,spelling,HIGH,N
+12 Days,41,I ain't never care what no one else would say,ain't,42,I ain't have no problem when it come to gettin' paid,paid,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,care,42,I ain't have no problem when it come to gettin' paid,gettin,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,care,42,I ain't have no problem when it come to gettin' paid,when,INNER,SLANT,cmu,MED,Y
+12 Days,41,I ain't never care what no one else would say,else,42,I ain't have no problem when it come to gettin' paid,gettin,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,else,42,I ain't have no problem when it come to gettin' paid,when,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,never,42,I ain't have no problem when it come to gettin' paid,gettin,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,never,42,I ain't have no problem when it come to gettin' paid,when,INNER,SLANT,cmu,MED,Y
+12 Days,41,I ain't never care what no one else would say,no,42,I ain't have no problem when it come to gettin' paid,no,INNER,REPEAT,spelling,HIGH,N
+12 Days,41,I ain't never care what no one else would say,one,42,I ain't have no problem when it come to gettin' paid,come,INNER,SLANT,cmu,MED,Y
+12 Days,41,I ain't never care what no one else would say,say,42,I ain't have no problem when it come to gettin' paid,ain't,INNER,ASSONANCE,vowel,MED,Y
+12 Days,41,I ain't never care what no one else would say,what,42,I ain't have no problem when it come to gettin' paid,come,INNER,SLANT,cmu,MED,Y
+12 Days,42,I ain't have no problem when it come to gettin' paid,ain't,42,I ain't have no problem when it come to gettin' paid,paid,INNER,ASSONANCE,vowel,MED,Y
+12 Days,42,I ain't have no problem when it come to gettin' paid,when,42,I ain't have no problem when it come to gettin' paid,gettin,INNER,ASSONANCE,vowel,MED,Y

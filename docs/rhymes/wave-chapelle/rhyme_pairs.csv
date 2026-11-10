@@ -1,0 +1,244 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Boss Up,1,"Okay, I just wanna see the millions (I do)",millions,2,"Yeah, get that money how you living",living,END,ASSONANCE,vowel,MED,Y
+Boss Up,1,"Okay, I just wanna see the millions (I do)",millions,3,"Okay, real niggas in the building",building,END,ASSONANCE,vowel,MED,Y
+Boss Up,1,"Okay, I just wanna see the millions (I do)",see,3,"Okay, real niggas in the building",real,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,1,"Okay, I just wanna see the millions (I do)",millions,4,"I call my own shots, I make my own decisions",decisions,END,PERFECT,spelling,MED,Y
+Boss Up,2,"Yeah, get that money how you living",living,3,"Okay, real niggas in the building",building,END,ASSONANCE,vowel,MED,Y
+Boss Up,2,"Yeah, get that money how you living",living,4,"I call my own shots, I make my own decisions",decisions,END,ASSONANCE,vowel,MED,Y
+Boss Up,3,"Okay, real niggas in the building",building,4,"I call my own shots, I make my own decisions",decisions,END,ASSONANCE,vowel,MED,Y
+Boss Up,3,"Okay, real niggas in the building",niggas,5,Young nigga boss up,nigga,INNER,SLANT,spelling,LOW,Y
+Boss Up,4,"I call my own shots, I make my own decisions",own,4,"I call my own shots, I make my own decisions",own,INNER,REPEAT,spelling,HIGH,N
+Boss Up,4,"I call my own shots, I make my own decisions",shots,5,Young nigga boss up,boss,INNER,SLANT,cmu,MED,Y
+Boss Up,4,"I call my own shots, I make my own decisions",call,6,Counting all my guap and I call my own shots,all,INNER,PERFECT,cmu,HIGH,Y
+Boss Up,4,"I call my own shots, I make my own decisions",call,6,Counting all my guap and I call my own shots,call,INNER,REPEAT,spelling,HIGH,N
+Boss Up,4,"I call my own shots, I make my own decisions",own,6,Counting all my guap and I call my own shots,own,INNER,REPEAT,spelling,HIGH,N
+Boss Up,4,"I call my own shots, I make my own decisions",shots,6,Counting all my guap and I call my own shots,shots,INNER,REPEAT,spelling,HIGH,N
+Boss Up,5,Young nigga boss up,boss,6,Counting all my guap and I call my own shots,shots,END,SLANT,cmu,MED,Y
+Boss Up,5,Young nigga boss up,Young,6,Counting all my guap and I call my own shots,guap,INNER,SLANT,spelling,LOW,Y
+Boss Up,5,Young nigga boss up,boss,7,"I swear I got no time to kick it, I'm too busy punching the clock",clock,END,SLANT,cmu,MED,Y
+Boss Up,5,Young nigga boss up,boss,7,"I swear I got no time to kick it, I'm too busy punching the clock",got,INNER,SLANT,cmu,MED,Y
+Boss Up,5,Young nigga boss up,nigga,7,"I swear I got no time to kick it, I'm too busy punching the clock",kick,INNER,SLANT,spelling,LOW,Y
+Boss Up,5,Young nigga boss up,Young,7,"I swear I got no time to kick it, I'm too busy punching the clock",punching,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,5,Young nigga boss up,boss,8,"I'm riding around and I'm gettin' it, crushing the block",block,END,SLANT,cmu,MED,Y
+Boss Up,5,Young nigga boss up,boss,9,"She see me stunting, she ask if I'm hustling or not",not,END,SLANT,cmu,MED,Y
+Boss Up,6,Counting all my guap and I call my own shots,all,6,Counting all my guap and I call my own shots,call,INNER,PERFECT,cmu,HIGH,Y
+Boss Up,6,Counting all my guap and I call my own shots,shots,7,"I swear I got no time to kick it, I'm too busy punching the clock",clock,END,ASSONANCE,vowel,MED,Y
+Boss Up,6,Counting all my guap and I call my own shots,own,7,"I swear I got no time to kick it, I'm too busy punching the clock",no,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,6,Counting all my guap and I call my own shots,shots,7,"I swear I got no time to kick it, I'm too busy punching the clock",got,INNER,SLANT,cmu,MED,Y
+Boss Up,6,Counting all my guap and I call my own shots,shots,8,"I'm riding around and I'm gettin' it, crushing the block",block,END,ASSONANCE,vowel,MED,Y
+Boss Up,6,Counting all my guap and I call my own shots,Counting,8,"I'm riding around and I'm gettin' it, crushing the block",around,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,6,Counting all my guap and I call my own shots,shots,9,"She see me stunting, she ask if I'm hustling or not",not,END,SLANT,cmu,MED,Y
+Boss Up,6,Counting all my guap and I call my own shots,shots,10,I'm like 'you fucking or not',not,END,SLANT,cmu,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",got,7,"I swear I got no time to kick it, I'm too busy punching the clock",clock,INNER,SLANT,cmu,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",kick,7,"I swear I got no time to kick it, I'm too busy punching the clock",busy,INNER,SLANT,cmu,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",clock,8,"I'm riding around and I'm gettin' it, crushing the block",block,END,PERFECT,cmu,HIGH,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",got,8,"I'm riding around and I'm gettin' it, crushing the block",block,INNER,SLANT,cmu,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",punching,8,"I'm riding around and I'm gettin' it, crushing the block",crushing,INNER,PERFECT,spelling,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",swear,8,"I'm riding around and I'm gettin' it, crushing the block",gettin,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",time,8,"I'm riding around and I'm gettin' it, crushing the block",riding,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",clock,9,"She see me stunting, she ask if I'm hustling or not",not,END,SLANT,cmu,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",got,9,"She see me stunting, she ask if I'm hustling or not",not,INNER,PERFECT,cmu,HIGH,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",punching,9,"She see me stunting, she ask if I'm hustling or not",hustling,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",punching,9,"She see me stunting, she ask if I'm hustling or not",stunting,INNER,PERFECT,spelling,MED,Y
+Boss Up,7,"I swear I got no time to kick it, I'm too busy punching the clock",clock,10,I'm like 'you fucking or not',not,END,SLANT,cmu,MED,Y
+Boss Up,8,"I'm riding around and I'm gettin' it, crushing the block",block,9,"She see me stunting, she ask if I'm hustling or not",not,END,SLANT,cmu,MED,Y
+Boss Up,8,"I'm riding around and I'm gettin' it, crushing the block",crushing,9,"She see me stunting, she ask if I'm hustling or not",hustling,INNER,SLANT,cmu,MED,Y
+Boss Up,8,"I'm riding around and I'm gettin' it, crushing the block",crushing,9,"She see me stunting, she ask if I'm hustling or not",stunting,INNER,PERFECT,spelling,MED,Y
+Boss Up,8,"I'm riding around and I'm gettin' it, crushing the block",gettin,9,"She see me stunting, she ask if I'm hustling or not",stunting,INNER,PERFECT,spelling,MED,Y
+Boss Up,8,"I'm riding around and I'm gettin' it, crushing the block",riding,9,"She see me stunting, she ask if I'm hustling or not",stunting,INNER,PERFECT,spelling,MED,Y
+Boss Up,8,"I'm riding around and I'm gettin' it, crushing the block",block,10,I'm like 'you fucking or not',not,END,SLANT,cmu,MED,Y
+Boss Up,8,"I'm riding around and I'm gettin' it, crushing the block",crushing,10,I'm like 'you fucking or not',fucking,INNER,SLANT,cmu,MED,Y
+Boss Up,8,"I'm riding around and I'm gettin' it, crushing the block",riding,10,I'm like 'you fucking or not',like,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,9,"She see me stunting, she ask if I'm hustling or not",stunting,9,"She see me stunting, she ask if I'm hustling or not",hustling,INNER,PERFECT,spelling,MED,Y
+Boss Up,9,"She see me stunting, she ask if I'm hustling or not",not,10,I'm like 'you fucking or not',not,END,REPEAT,spelling,HIGH,N
+Boss Up,9,"She see me stunting, she ask if I'm hustling or not",hustling,10,I'm like 'you fucking or not',fucking,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,9,"She see me stunting, she ask if I'm hustling or not",stunting,10,I'm like 'you fucking or not',fucking,INNER,PERFECT,spelling,MED,Y
+Boss Up,9,"She see me stunting, she ask if I'm hustling or not",hustling,11,You know I ain't cuffing no thots,cuffing,INNER,PERFECT,spelling,MED,Y
+Boss Up,9,"She see me stunting, she ask if I'm hustling or not",stunting,11,You know I ain't cuffing no thots,cuffing,INNER,PERFECT,spelling,MED,Y
+Boss Up,10,I'm like 'you fucking or not',fucking,11,You know I ain't cuffing no thots,cuffing,INNER,PERFECT,spelling,MED,Y
+Boss Up,10,I'm like 'you fucking or not',fucking,12,"Nigga, thats rule number one, nigga, thats rule number one",number,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,10,I'm like 'you fucking or not',fucking,12,"Nigga, thats rule number one, nigga, thats rule number one",one,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,11,You know I ain't cuffing no thots,know,11,You know I ain't cuffing no thots,no,INNER,PERFECT,cmu,HIGH,Y
+Boss Up,11,You know I ain't cuffing no thots,know,11,You know I ain't cuffing no thots,thots,INNER,ASSONANCE,vowel,LOW,N
+Boss Up,11,You know I ain't cuffing no thots,ain't,13,"Now I get paid for this raps, I used to do this for fun",paid,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",Nigga,12,"Nigga, thats rule number one, nigga, thats rule number one",nigga,INNER,REPEAT,spelling,HIGH,N
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",number,12,"Nigga, thats rule number one, nigga, thats rule number one",number,INNER,REPEAT,spelling,HIGH,N
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",number,12,"Nigga, thats rule number one, nigga, thats rule number one",one,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",one,12,"Nigga, thats rule number one, nigga, thats rule number one",number,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",one,12,"Nigga, thats rule number one, nigga, thats rule number one",one,INNER,REPEAT,spelling,HIGH,N
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",rule,12,"Nigga, thats rule number one, nigga, thats rule number one",rule,INNER,REPEAT,spelling,HIGH,N
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",one,13,"Now I get paid for this raps, I used to do this for fun",fun,END,PERFECT,cmu,HIGH,Y
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",number,13,"Now I get paid for this raps, I used to do this for fun",fun,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",one,13,"Now I get paid for this raps, I used to do this for fun",fun,INNER,PERFECT,cmu,HIGH,Y
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",rule,13,"Now I get paid for this raps, I used to do this for fun",used,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",one,14,They say I'm feeling myself but I just know that I'm the one,one,END,REPEAT,spelling,HIGH,N
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",number,14,They say I'm feeling myself but I just know that I'm the one,one,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",one,14,They say I'm feeling myself but I just know that I'm the one,one,INNER,REPEAT,spelling,HIGH,N
+Boss Up,12,"Nigga, thats rule number one, nigga, thats rule number one",one,16,"Nigga ain't nothing new, them boys don't know what to do",what,END,SLANT,cmu,MED,Y
+Boss Up,13,"Now I get paid for this raps, I used to do this for fun",fun,14,They say I'm feeling myself but I just know that I'm the one,one,END,PERFECT,cmu,HIGH,Y
+Boss Up,13,"Now I get paid for this raps, I used to do this for fun",get,14,They say I'm feeling myself but I just know that I'm the one,myself,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,13,"Now I get paid for this raps, I used to do this for fun",paid,14,They say I'm feeling myself but I just know that I'm the one,say,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,13,"Now I get paid for this raps, I used to do this for fun",get,15,"And I still rep the Northside, nigga you know where I'm from",rep,INNER,SLANT,cmu,MED,Y
+Boss Up,13,"Now I get paid for this raps, I used to do this for fun",get,15,"And I still rep the Northside, nigga you know where I'm from",where,INNER,SLANT,cmu,MED,Y
+Boss Up,13,"Now I get paid for this raps, I used to do this for fun",fun,16,"Nigga ain't nothing new, them boys don't know what to do",what,END,SLANT,cmu,MED,Y
+Boss Up,13,"Now I get paid for this raps, I used to do this for fun",fun,17,If you on your grind then I fuck with you,fuck,END,SLANT,cmu,MED,Y
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,know,15,"And I still rep the Northside, nigga you know where I'm from",know,INNER,REPEAT,spelling,HIGH,N
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,myself,15,"And I still rep the Northside, nigga you know where I'm from",rep,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,myself,15,"And I still rep the Northside, nigga you know where I'm from",where,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,one,16,"Nigga ain't nothing new, them boys don't know what to do",what,END,SLANT,cmu,MED,Y
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,know,16,"Nigga ain't nothing new, them boys don't know what to do",don't,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,know,16,"Nigga ain't nothing new, them boys don't know what to do",know,INNER,REPEAT,spelling,HIGH,N
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,one,16,"Nigga ain't nothing new, them boys don't know what to do",nothing,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,say,16,"Nigga ain't nothing new, them boys don't know what to do",ain't,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,one,17,If you on your grind then I fuck with you,fuck,END,SLANT,cmu,MED,Y
+Boss Up,14,They say I'm feeling myself but I just know that I'm the one,one,18,I'm grinding until I'm uncomfortable,uncomfortable,END,ASSONANCE,vowel,MED,Y
+Boss Up,15,"And I still rep the Northside, nigga you know where I'm from",rep,15,"And I still rep the Northside, nigga you know where I'm from",where,INNER,SLANT,cmu,MED,Y
+Boss Up,15,"And I still rep the Northside, nigga you know where I'm from",know,16,"Nigga ain't nothing new, them boys don't know what to do",don't,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,15,"And I still rep the Northside, nigga you know where I'm from",know,16,"Nigga ain't nothing new, them boys don't know what to do",know,INNER,REPEAT,spelling,HIGH,N
+Boss Up,15,"And I still rep the Northside, nigga you know where I'm from",nigga,16,"Nigga ain't nothing new, them boys don't know what to do",Nigga,INNER,REPEAT,spelling,HIGH,N
+Boss Up,16,"Nigga ain't nothing new, them boys don't know what to do",don't,16,"Nigga ain't nothing new, them boys don't know what to do",know,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,16,"Nigga ain't nothing new, them boys don't know what to do",nothing,16,"Nigga ain't nothing new, them boys don't know what to do",what,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,16,"Nigga ain't nothing new, them boys don't know what to do",what,17,If you on your grind then I fuck with you,fuck,END,SLANT,cmu,MED,Y
+Boss Up,16,"Nigga ain't nothing new, them boys don't know what to do",nothing,17,If you on your grind then I fuck with you,fuck,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,16,"Nigga ain't nothing new, them boys don't know what to do",what,18,I'm grinding until I'm uncomfortable,uncomfortable,END,ASSONANCE,vowel,MED,Y
+Boss Up,16,"Nigga ain't nothing new, them boys don't know what to do",nothing,18,I'm grinding until I'm uncomfortable,uncomfortable,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,17,If you on your grind then I fuck with you,fuck,18,I'm grinding until I'm uncomfortable,uncomfortable,END,ASSONANCE,vowel,MED,Y
+Boss Up,17,If you on your grind then I fuck with you,grind,18,I'm grinding until I'm uncomfortable,grinding,INNER,SLANT,cmu,MED,Y
+Boss Up,18,I'm grinding until I'm uncomfortable,grinding,20,"I'm feeling like Pac, man I got the juice",like,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,19,I'm balling I don't need a substitute,substitute,20,"I'm feeling like Pac, man I got the juice",juice,END,SLANT,cmu,MED,Y
+Boss Up,19,I'm balling I don't need a substitute,balling,20,"I'm feeling like Pac, man I got the juice",feeling,INNER,PERFECT,spelling,MED,Y
+Boss Up,19,I'm balling I don't need a substitute,need,20,"I'm feeling like Pac, man I got the juice",feeling,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,19,I'm balling I don't need a substitute,need,21,"Young niggas winning, I keep this shit wavey",keep,INNER,SLANT,cmu,MED,Y
+Boss Up,20,"I'm feeling like Pac, man I got the juice",Pac,20,"I'm feeling like Pac, man I got the juice",man,INNER,SLANT,cmu,MED,Y
+Boss Up,20,"I'm feeling like Pac, man I got the juice",feeling,21,"Young niggas winning, I keep this shit wavey",keep,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,20,"I'm feeling like Pac, man I got the juice",man,21,"Young niggas winning, I keep this shit wavey",wavey,INNER,SLANT,spelling,LOW,Y
+Boss Up,20,"I'm feeling like Pac, man I got the juice",Pac,21,"Young niggas winning, I keep this shit wavey",wavey,INNER,SLANT,spelling,LOW,Y
+Boss Up,20,"I'm feeling like Pac, man I got the juice",like,22,I'm stacking the veggies like my nigga Casey,like,INNER,REPEAT,spelling,HIGH,N
+Boss Up,20,"I'm feeling like Pac, man I got the juice",man,22,I'm stacking the veggies like my nigga Casey,stacking,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,20,"I'm feeling like Pac, man I got the juice",Pac,22,I'm stacking the veggies like my nigga Casey,stacking,INNER,SLANT,cmu,MED,Y
+Boss Up,20,"I'm feeling like Pac, man I got the juice",juice,24,And get the chicken with the soup,soup,END,SLANT,cmu,MED,Y
+Boss Up,21,"Young niggas winning, I keep this shit wavey",winning,21,"Young niggas winning, I keep this shit wavey",shit,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,21,"Young niggas winning, I keep this shit wavey",wavey,22,I'm stacking the veggies like my nigga Casey,Casey,END,PERFECT,spelling,MED,Y
+Boss Up,21,"Young niggas winning, I keep this shit wavey",niggas,22,I'm stacking the veggies like my nigga Casey,nigga,INNER,SLANT,spelling,LOW,Y
+Boss Up,21,"Young niggas winning, I keep this shit wavey",shit,22,I'm stacking the veggies like my nigga Casey,nigga,INNER,SLANT,spelling,LOW,Y
+Boss Up,21,"Young niggas winning, I keep this shit wavey",shit,23,Go to the kitchen and open the cabinet,kitchen,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,21,"Young niggas winning, I keep this shit wavey",winning,23,Go to the kitchen and open the cabinet,kitchen,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,22,I'm stacking the veggies like my nigga Casey,stacking,23,Go to the kitchen and open the cabinet,cabinet,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,22,I'm stacking the veggies like my nigga Casey,veggies,24,And get the chicken with the soup,get,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,23,Go to the kitchen and open the cabinet,Go,23,Go to the kitchen and open the cabinet,open,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,23,Go to the kitchen and open the cabinet,kitchen,24,And get the chicken with the soup,chicken,INNER,SLANT,cmu,MED,Y
+Boss Up,23,Go to the kitchen and open the cabinet,kitchen,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",chickens,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,23,Go to the kitchen and open the cabinet,kitchen,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",city,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,24,And get the chicken with the soup,soup,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",coupe,END,PERFECT,cmu,HIGH,Y
+Boss Up,24,And get the chicken with the soup,chicken,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",chickens,INNER,SLANT,cmu,MED,Y
+Boss Up,24,And get the chicken with the soup,chicken,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",city,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,24,And get the chicken with the soup,get,26,And I used to be scared of the block,scared,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,24,And get the chicken with the soup,soup,26,And I used to be scared of the block,used,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",city,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",chickens,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",Now,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",around,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",ride,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",side,INNER,PERFECT,cmu,HIGH,Y
+Boss Up,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",side,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",side,INNER,REPEAT,spelling,HIGH,N
+Boss Up,25,"Now, I ride around on your side and my side of the city with chickens in my coupe",coupe,26,And I used to be scared of the block,used,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,26,And I used to be scared of the block,block,27,"Taking shells off the pot, make it do what it do",pot,INNER,SLANT,cmu,MED,Y
+Boss Up,26,And I used to be scared of the block,scared,27,"Taking shells off the pot, make it do what it do",shells,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,27,"Taking shells off the pot, make it do what it do",Taking,27,"Taking shells off the pot, make it do what it do",make,INNER,SLANT,cmu,MED,Y
+Boss Up,28,"No lackin', we clappin'",lackin,28,"No lackin', we clappin'",clappin,INNER,SLANT,cmu,MED,Y
+Boss Up,28,"No lackin', we clappin'",clappin,29,Your captain is here to turn back on clip full 32,back,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,28,"No lackin', we clappin'",clappin,29,Your captain is here to turn back on clip full 32,captain,INNER,SLANT,cmu,MED,Y
+Boss Up,28,"No lackin', we clappin'",lackin,29,Your captain is here to turn back on clip full 32,back,INNER,SLANT,cmu,MED,Y
+Boss Up,28,"No lackin', we clappin'",lackin,29,Your captain is here to turn back on clip full 32,captain,INNER,SLANT,cmu,MED,Y
+Boss Up,28,"No lackin', we clappin'",clappin,30,"Young ratchets in Texas, it's sliders and actors",actors,END,ASSONANCE,vowel,MED,Y
+Boss Up,28,"No lackin', we clappin'",lackin,30,"Young ratchets in Texas, it's sliders and actors",actors,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,28,"No lackin', we clappin'",clappin,31,"Lil Uzi, that nigga be mackin'",mackin,END,SLANT,cmu,MED,Y
+Boss Up,28,"No lackin', we clappin'",clappin,32,"Take a xanny pill, nigga what's hapnin'?",hapnin,END,SLANT,spelling,LOW,Y
+Boss Up,29,Your captain is here to turn back on clip full 32,captain,29,Your captain is here to turn back on clip full 32,back,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,29,Your captain is here to turn back on clip full 32,back,30,"Young ratchets in Texas, it's sliders and actors",actors,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,29,Your captain is here to turn back on clip full 32,captain,30,"Young ratchets in Texas, it's sliders and actors",actors,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,29,Your captain is here to turn back on clip full 32,back,31,"Lil Uzi, that nigga be mackin'",mackin,INNER,SLANT,cmu,MED,Y
+Boss Up,29,Your captain is here to turn back on clip full 32,captain,31,"Lil Uzi, that nigga be mackin'",mackin,INNER,SLANT,cmu,MED,Y
+Boss Up,29,Your captain is here to turn back on clip full 32,clip,31,"Lil Uzi, that nigga be mackin'",Lil,INNER,SLANT,cmu,MED,Y
+Boss Up,29,Your captain is here to turn back on clip full 32,clip,31,"Lil Uzi, that nigga be mackin'",nigga,INNER,SLANT,spelling,LOW,Y
+Boss Up,30,"Young ratchets in Texas, it's sliders and actors",sliders,30,"Young ratchets in Texas, it's sliders and actors",actors,INNER,PERFECT,spelling,MED,Y
+Boss Up,30,"Young ratchets in Texas, it's sliders and actors",actors,31,"Lil Uzi, that nigga be mackin'",mackin,END,ASSONANCE,vowel,MED,Y
+Boss Up,30,"Young ratchets in Texas, it's sliders and actors",Young,32,"Take a xanny pill, nigga what's hapnin'?",what's,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,30,"Young ratchets in Texas, it's sliders and actors",actors,34,"The bitches they be showin' me titties, never thought this could happen",happen,END,ASSONANCE,vowel,MED,Y
+Boss Up,31,"Lil Uzi, that nigga be mackin'",mackin,32,"Take a xanny pill, nigga what's hapnin'?",hapnin,END,PERFECT,spelling,MED,Y
+Boss Up,31,"Lil Uzi, that nigga be mackin'",Lil,32,"Take a xanny pill, nigga what's hapnin'?",pill,INNER,PERFECT,cmu,HIGH,Y
+Boss Up,31,"Lil Uzi, that nigga be mackin'",mackin,32,"Take a xanny pill, nigga what's hapnin'?",xanny,INNER,SLANT,spelling,LOW,Y
+Boss Up,31,"Lil Uzi, that nigga be mackin'",nigga,32,"Take a xanny pill, nigga what's hapnin'?",nigga,INNER,REPEAT,spelling,HIGH,N
+Boss Up,31,"Lil Uzi, that nigga be mackin'",Uzi,32,"Take a xanny pill, nigga what's hapnin'?",xanny,INNER,ASSONANCE,vowel,LOW,N
+Boss Up,31,"Lil Uzi, that nigga be mackin'",Lil,33,On top of my city,city,INNER,SLANT,cmu,MED,Y
+Boss Up,31,"Lil Uzi, that nigga be mackin'",nigga,33,On top of my city,city,INNER,SLANT,spelling,LOW,Y
+Boss Up,31,"Lil Uzi, that nigga be mackin'",mackin,34,"The bitches they be showin' me titties, never thought this could happen",happen,END,SLANT,cmu,MED,Y
+Boss Up,31,"Lil Uzi, that nigga be mackin'",mackin,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",damage,END,ASSONANCE,vowel,MED,Y
+Boss Up,32,"Take a xanny pill, nigga what's hapnin'?",xanny,32,"Take a xanny pill, nigga what's hapnin'?",hapnin,INNER,SLANT,spelling,LOW,Y
+Boss Up,32,"Take a xanny pill, nigga what's hapnin'?",nigga,33,On top of my city,city,INNER,SLANT,spelling,LOW,Y
+Boss Up,32,"Take a xanny pill, nigga what's hapnin'?",pill,33,On top of my city,city,INNER,SLANT,cmu,MED,Y
+Boss Up,32,"Take a xanny pill, nigga what's hapnin'?",xanny,33,On top of my city,city,INNER,ASSONANCE,vowel,LOW,N
+Boss Up,32,"Take a xanny pill, nigga what's hapnin'?",hapnin,34,"The bitches they be showin' me titties, never thought this could happen",happen,END,SLANT,spelling,LOW,Y
+Boss Up,32,"Take a xanny pill, nigga what's hapnin'?",pill,34,"The bitches they be showin' me titties, never thought this could happen",bitches,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,32,"Take a xanny pill, nigga what's hapnin'?",xanny,34,"The bitches they be showin' me titties, never thought this could happen",happen,INNER,SLANT,spelling,LOW,Y
+Boss Up,33,On top of my city,city,34,"The bitches they be showin' me titties, never thought this could happen",bitches,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,33,On top of my city,city,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",him,INNER,SLANT,cmu,MED,Y
+Boss Up,33,On top of my city,city,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",nigga,INNER,SLANT,spelling,LOW,Y
+Boss Up,33,On top of my city,city,36,"And we makin' millions, yeah we makin' millions",millions,END,ASSONANCE,vowel,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",happen,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",damage,END,ASSONANCE,vowel,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",bitches,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",him,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",happen,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Atlanta,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",happen,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",family,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",happen,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Man,INNER,SLANT,cmu,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",never,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",eversince,INNER,ASSONANCE,vowel,LOW,N
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",never,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",get,INNER,SLANT,cmu,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",never,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",went,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",bitches,36,"And we makin' millions, yeah we makin' millions",millions,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",happen,36,"And we makin' millions, yeah we makin' millions",makin,INNER,SLANT,cmu,MED,Y
+Boss Up,34,"The bitches they be showin' me titties, never thought this could happen",happen,37,I swear it's still the way that we plan it,plan,END,SLANT,cmu,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Atlanta,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",damage,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Atlanta,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",family,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",family,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",damage,INNER,SLANT,cmu,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Man,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Atlanta,INNER,SLANT,cmu,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Man,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",damage,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Man,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",family,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",went,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",eversince,INNER,ASSONANCE,vowel,LOW,N
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",went,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",get,INNER,SLANT,cmu,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Atlanta,36,"And we makin' millions, yeah we makin' millions",makin,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",damage,36,"And we makin' millions, yeah we makin' millions",makin,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",family,36,"And we makin' millions, yeah we makin' millions",makin,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",him,36,"And we makin' millions, yeah we makin' millions",millions,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Man,36,"And we makin' millions, yeah we makin' millions",makin,INNER,SLANT,cmu,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",damage,37,I swear it's still the way that we plan it,plan,END,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Atlanta,37,I swear it's still the way that we plan it,plan,INNER,SLANT,cmu,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",family,37,I swear it's still the way that we plan it,plan,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",get,37,I swear it's still the way that we plan it,swear,INNER,SLANT,cmu,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",him,37,I swear it's still the way that we plan it,still,INNER,SLANT,cmu,MED,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",Man,37,I swear it's still the way that we plan it,plan,INNER,PERFECT,cmu,HIGH,Y
+Boss Up,35,"Man went down to Atlanta, and eversince then nigga family fuck with him get damage",went,37,I swear it's still the way that we plan it,swear,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,36,"And we makin' millions, yeah we makin' millions",makin,36,"And we makin' millions, yeah we makin' millions",makin,INNER,REPEAT,spelling,HIGH,N
+Boss Up,36,"And we makin' millions, yeah we makin' millions",millions,36,"And we makin' millions, yeah we makin' millions",millions,INNER,REPEAT,spelling,HIGH,N
+Boss Up,36,"And we makin' millions, yeah we makin' millions",makin,37,I swear it's still the way that we plan it,plan,INNER,SLANT,cmu,MED,Y
+Boss Up,36,"And we makin' millions, yeah we makin' millions",millions,37,I swear it's still the way that we plan it,still,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,37,I swear it's still the way that we plan it,still,39,"Try to kill me, I'm takin' you off",kill,INNER,PERFECT,cmu,HIGH,Y
+Boss Up,37,I swear it's still the way that we plan it,way,39,"Try to kill me, I'm takin' you off",takin,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,38,Bein' your own boss come with a cost,boss,38,Bein' your own boss come with a cost,cost,INNER,SLANT,cmu,MED,Y
+Boss Up,39,"Try to kill me, I'm takin' you off",Try,40,"This earth, I put you right in the dirt",right,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,39,"Try to kill me, I'm takin' you off",takin,41,"Take this pain away, takin' and percs",away,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,39,"Try to kill me, I'm takin' you off",takin,41,"Take this pain away, takin' and percs",pain,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,39,"Try to kill me, I'm takin' you off",takin,41,"Take this pain away, takin' and percs",Take,INNER,SLANT,cmu,MED,Y
+Boss Up,39,"Try to kill me, I'm takin' you off",takin,41,"Take this pain away, takin' and percs",takin,INNER,REPEAT,spelling,HIGH,N
+Boss Up,40,"This earth, I put you right in the dirt",earth,40,"This earth, I put you right in the dirt",dirt,INNER,SLANT,cmu,MED,Y
+Boss Up,40,"This earth, I put you right in the dirt",dirt,41,"Take this pain away, takin' and percs",percs,END,ASSONANCE,vowel,MED,Y
+Boss Up,40,"This earth, I put you right in the dirt",earth,41,"Take this pain away, takin' and percs",percs,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,40,"This earth, I put you right in the dirt",dirt,42,"I call my own shots, turn little bitch dead to alive",turn,INNER,SLANT,cmu,MED,Y
+Boss Up,40,"This earth, I put you right in the dirt",earth,42,"I call my own shots, turn little bitch dead to alive",turn,INNER,SLANT,cmu,MED,Y
+Boss Up,40,"This earth, I put you right in the dirt",right,42,"I call my own shots, turn little bitch dead to alive",alive,INNER,SLANT,cmu,MED,Y
+Boss Up,41,"Take this pain away, takin' and percs",away,41,"Take this pain away, takin' and percs",takin,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,41,"Take this pain away, takin' and percs",pain,41,"Take this pain away, takin' and percs",away,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,41,"Take this pain away, takin' and percs",pain,41,"Take this pain away, takin' and percs",takin,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,41,"Take this pain away, takin' and percs",Take,41,"Take this pain away, takin' and percs",away,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,41,"Take this pain away, takin' and percs",Take,41,"Take this pain away, takin' and percs",pain,INNER,SLANT,cmu,MED,Y
+Boss Up,41,"Take this pain away, takin' and percs",Take,41,"Take this pain away, takin' and percs",takin,INNER,SLANT,cmu,MED,Y
+Boss Up,41,"Take this pain away, takin' and percs",percs,42,"I call my own shots, turn little bitch dead to alive",turn,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,42,"I call my own shots, turn little bitch dead to alive",little,42,"I call my own shots, turn little bitch dead to alive",bitch,INNER,ASSONANCE,vowel,MED,Y
+Boss Up,42,"I call my own shots, turn little bitch dead to alive",bitch,43,"Lil Uzi, that nigga on top",Lil,INNER,SLANT,cmu,MED,Y
+Boss Up,42,"I call my own shots, turn little bitch dead to alive",little,43,"Lil Uzi, that nigga on top",Lil,INNER,SLANT,cmu,MED,Y
+Boss Up,42,"I call my own shots, turn little bitch dead to alive",shots,43,"Lil Uzi, that nigga on top",top,INNER,ASSONANCE,vowel,MED,Y

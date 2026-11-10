@@ -266,6 +266,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 254 | j-stone | J. Stone | 1 | 43 | 349 | 69 | 280 | 345 | 2026-11-10 13:24 ET |
 | 255 | jimbo-world | Jimbo World | 1 | 43 | 275 | 51 | 224 | 273 | 2026-11-10 13:24 ET |
 | 256 | mobsquad-nard | MobSquad Nard | 1 | 43 | 195 | 30 | 165 | 194 | 2026-11-10 13:24 ET |
+| 257 | poundside-pop | Poundside Pop | 1 | 43 | 144 | 36 | 108 | 144 | 2026-11-10 13:24 ET |
+| 258 | rico-beats | Rico Beats | 1 | 43 | 434 | 56 | 378 | 428 | 2026-11-10 13:24 ET |
+| 259 | wave-chapelle | Wave Chapelle | 1 | 43 | 222 | 48 | 174 | 217 | 2026-11-10 13:24 ET |
+| 260 | alcy | Alcy | 1 | 42 | 276 | 51 | 225 | 272 | 2026-11-10 13:24 ET |
+| 261 | dj-victoriouz | DJ Victoriouz | 1 | 42 | 128 | 27 | 101 | 127 | 2026-11-10 13:24 ET |
+| 262 | fatboy-sse | FatBoy SSE | 1 | 42 | 289 | 57 | 232 | 289 | 2026-11-10 13:24 ET |
+| 263 | g-t | G.T. | 1 | 42 | 338 | 49 | 289 | 333 | 2026-11-10 13:24 ET |
+| 264 | lil-pete | Lil Pete | 1 | 42 | 302 | 49 | 253 | 292 | 2026-11-10 13:24 ET |
+| 265 | octavian | Octavian | 1 | 42 | 210 | 42 | 168 | 183 | 2026-11-10 13:24 ET |
+| 266 | rah-swish | Rah Swish | 1 | 42 | 255 | 67 | 188 | 251 | 2026-11-10 13:24 ET |
 
 ## Failures
 
@@ -273,7 +283,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 256/386: MobSquad Nard.
+Finished 266/386: Rah Swish.
 
 ## Final
 

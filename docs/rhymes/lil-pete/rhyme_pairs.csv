@@ -1,0 +1,328 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Road Runnin’,1,"Ayy, ayy, ayy, ayy, ayy, that's probably Tago",Tago,2,"Gang, gang, gang, gang",gang,END,SLANT,spelling,LOW,Y
+Road Runnin’,1,"Ayy, ayy, ayy, ayy, ayy, that's probably Tago",Tago,2,"Gang, gang, gang, gang",Gang,INNER,SLANT,spelling,LOW,Y
+Road Runnin’,2,"Gang, gang, gang, gang",Gang,2,"Gang, gang, gang, gang",gang,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,3,Who are you to judge me?,judge,4,You was not around when I was down and it was ugly,ugly,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,3,Who are you to judge me?,judge,5,"All these 360 deals, labels tryna fuck me",fuck,END,SLANT,cmu,MED,Y
+Road Runnin’,3,Who are you to judge me?,judge,6,"Dawg lost trial, man, you know that shit touched me",touched,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,3,Who are you to judge me?,judge,7,"Cold hearted killers in the trenches, you get lucky",lucky,END,SLANT,cmu,MED,Y
+Road Runnin’,4,You was not around when I was down and it was ugly,around,4,You was not around when I was down and it was ugly,down,INNER,SLANT,cmu,MED,Y
+Road Runnin’,4,You was not around when I was down and it was ugly,ugly,5,"All these 360 deals, labels tryna fuck me",fuck,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,4,You was not around when I was down and it was ugly,ugly,6,"Dawg lost trial, man, you know that shit touched me",touched,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,4,You was not around when I was down and it was ugly,ugly,7,"Cold hearted killers in the trenches, you get lucky",lucky,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,5,"All these 360 deals, labels tryna fuck me",these,5,"All these 360 deals, labels tryna fuck me",deals,INNER,SLANT,cmu,MED,Y
+Road Runnin’,5,"All these 360 deals, labels tryna fuck me",these,5,"All these 360 deals, labels tryna fuck me",tryna,INNER,SLANT,spelling,LOW,Y
+Road Runnin’,5,"All these 360 deals, labels tryna fuck me",fuck,6,"Dawg lost trial, man, you know that shit touched me",touched,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,5,"All these 360 deals, labels tryna fuck me",All,6,"Dawg lost trial, man, you know that shit touched me",Dawg,INNER,SLANT,spelling,LOW,Y
+Road Runnin’,5,"All these 360 deals, labels tryna fuck me",All,6,"Dawg lost trial, man, you know that shit touched me",lost,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,5,"All these 360 deals, labels tryna fuck me",fuck,7,"Cold hearted killers in the trenches, you get lucky",lucky,END,SLANT,cmu,MED,Y
+Road Runnin’,6,"Dawg lost trial, man, you know that shit touched me",touched,7,"Cold hearted killers in the trenches, you get lucky",lucky,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,6,"Dawg lost trial, man, you know that shit touched me",know,7,"Cold hearted killers in the trenches, you get lucky",Cold,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,6,"Dawg lost trial, man, you know that shit touched me",shit,7,"Cold hearted killers in the trenches, you get lucky",killers,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,7,"Cold hearted killers in the trenches, you get lucky",trenches,7,"Cold hearted killers in the trenches, you get lucky",get,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,7,"Cold hearted killers in the trenches, you get lucky",get,9,Had to get a passport to see what life about,get,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,7,"Cold hearted killers in the trenches, you get lucky",lucky,9,Had to get a passport to see what life about,what,INNER,SLANT,cmu,MED,Y
+Road Runnin’,7,"Cold hearted killers in the trenches, you get lucky",trenches,9,Had to get a passport to see what life about,get,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,9,Had to get a passport to see what life about,get,10,"'Cause it can be a blessing, but it come with curses",blessing,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,9,Had to get a passport to see what life about,Had,10,"'Cause it can be a blessing, but it come with curses",can,INNER,SLANT,cmu,MED,Y
+Road Runnin’,9,Had to get a passport to see what life about,what,10,"'Cause it can be a blessing, but it come with curses",come,INNER,SLANT,cmu,MED,Y
+Road Runnin’,9,Had to get a passport to see what life about,about,11,Always keep it trill when I'm writing down these verses,down,INNER,SLANT,cmu,MED,Y
+Road Runnin’,9,Had to get a passport to see what life about,get,11,Always keep it trill when I'm writing down these verses,when,INNER,SLANT,cmu,MED,Y
+Road Runnin’,9,Had to get a passport to see what life about,life,11,Always keep it trill when I'm writing down these verses,writing,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,9,Had to get a passport to see what life about,see,11,Always keep it trill when I'm writing down these verses,keep,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,9,Had to get a passport to see what life about,see,11,Always keep it trill when I'm writing down these verses,these,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,10,"'Cause it can be a blessing, but it come with curses",curses,11,Always keep it trill when I'm writing down these verses,verses,END,SLANT,cmu,MED,Y
+Road Runnin’,10,"'Cause it can be a blessing, but it come with curses",blessing,11,Always keep it trill when I'm writing down these verses,when,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,10,"'Cause it can be a blessing, but it come with curses",curses,12,"Instagram cool, but she better in person",person,END,SLANT,cmu,MED,Y
+Road Runnin’,10,"'Cause it can be a blessing, but it come with curses",blessing,12,"Instagram cool, but she better in person",better,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,10,"'Cause it can be a blessing, but it come with curses",can,12,"Instagram cool, but she better in person",Instagram,INNER,SLANT,cmu,MED,Y
+Road Runnin’,10,"'Cause it can be a blessing, but it come with curses",curses,14,"I been sippin' slime, got me slow, so I'm Perc-in'",Perc,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,11,Always keep it trill when I'm writing down these verses,keep,11,Always keep it trill when I'm writing down these verses,these,INNER,SLANT,cmu,MED,Y
+Road Runnin’,11,Always keep it trill when I'm writing down these verses,verses,12,"Instagram cool, but she better in person",person,END,SLANT,cmu,MED,Y
+Road Runnin’,11,Always keep it trill when I'm writing down these verses,when,12,"Instagram cool, but she better in person",better,INNER,SLANT,cmu,MED,Y
+Road Runnin’,11,Always keep it trill when I'm writing down these verses,trill,13,I just wanna hit then buy that bitch a Birkin,Birkin,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,11,Always keep it trill when I'm writing down these verses,trill,13,I just wanna hit then buy that bitch a Birkin,bitch,INNER,SLANT,cmu,MED,Y
+Road Runnin’,11,Always keep it trill when I'm writing down these verses,trill,13,I just wanna hit then buy that bitch a Birkin,hit,INNER,SLANT,cmu,MED,Y
+Road Runnin’,11,Always keep it trill when I'm writing down these verses,writing,13,I just wanna hit then buy that bitch a Birkin,buy,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,11,Always keep it trill when I'm writing down these verses,verses,14,"I been sippin' slime, got me slow, so I'm Perc-in'",Perc,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,11,Always keep it trill when I'm writing down these verses,verses,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",lurkin,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,12,"Instagram cool, but she better in person",person,14,"I been sippin' slime, got me slow, so I'm Perc-in'",Perc,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,12,"Instagram cool, but she better in person",person,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",lurkin,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,bitch,13,I just wanna hit then buy that bitch a Birkin,Birkin,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,hit,13,I just wanna hit then buy that bitch a Birkin,bitch,INNER,SLANT,cmu,MED,Y
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,Birkin,14,"I been sippin' slime, got me slow, so I'm Perc-in'",sippin,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,bitch,14,"I been sippin' slime, got me slow, so I'm Perc-in'",sippin,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,buy,14,"I been sippin' slime, got me slow, so I'm Perc-in'",slime,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,hit,14,"I been sippin' slime, got me slow, so I'm Perc-in'",sippin,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,wanna,14,"I been sippin' slime, got me slow, so I'm Perc-in'",got,INNER,SLANT,cmu,MED,Y
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,Birkin,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",bitch,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,bitch,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",bitch,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,buy,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",Side,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,13,I just wanna hit then buy that bitch a Birkin,hit,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",bitch,INNER,SLANT,cmu,MED,Y
+Road Runnin’,14,"I been sippin' slime, got me slow, so I'm Perc-in'",Perc,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",lurkin,END,SLANT,cmu,MED,Y
+Road Runnin’,14,"I been sippin' slime, got me slow, so I'm Perc-in'",Perc,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",hurt,INNER,SLANT,cmu,MED,Y
+Road Runnin’,14,"I been sippin' slime, got me slow, so I'm Perc-in'",sippin,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",bitch,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,14,"I been sippin' slime, got me slow, so I'm Perc-in'",slime,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",Side,INNER,SLANT,cmu,MED,Y
+Road Runnin’,14,"I been sippin' slime, got me slow, so I'm Perc-in'",Perc,16,"Misinterpret the gang, you can meet your real rival",Misinterpret,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,14,"I been sippin' slime, got me slow, so I'm Perc-in'",slime,16,"Misinterpret the gang, you can meet your real rival",rival,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",hurt,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",lurkin,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",feelings,16,"Misinterpret the gang, you can meet your real rival",meet,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",feelings,16,"Misinterpret the gang, you can meet your real rival",real,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",hurt,16,"Misinterpret the gang, you can meet your real rival",Misinterpret,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",lurkin,16,"Misinterpret the gang, you can meet your real rival",Misinterpret,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",mad,16,"Misinterpret the gang, you can meet your real rival",can,INNER,SLANT,cmu,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",mad,16,"Misinterpret the gang, you can meet your real rival",gang,INNER,SLANT,cmu,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",Side,16,"Misinterpret the gang, you can meet your real rival",rival,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",Side,17,"I'm a legend in my hood, something like I'm Michael",like,INNER,SLANT,cmu,MED,Y
+Road Runnin’,15,"Side bitch mad, feelings hurt 'cause she was lurkin'",Side,17,"I'm a legend in my hood, something like I'm Michael",Michael,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,16,"Misinterpret the gang, you can meet your real rival",gang,16,"Misinterpret the gang, you can meet your real rival",can,INNER,SLANT,cmu,MED,Y
+Road Runnin’,16,"Misinterpret the gang, you can meet your real rival",meet,16,"Misinterpret the gang, you can meet your real rival",real,INNER,SLANT,cmu,MED,Y
+Road Runnin’,16,"Misinterpret the gang, you can meet your real rival",rival,17,"I'm a legend in my hood, something like I'm Michael",Michael,END,SLANT,cmu,MED,Y
+Road Runnin’,16,"Misinterpret the gang, you can meet your real rival",rival,17,"I'm a legend in my hood, something like I'm Michael",like,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,16,"Misinterpret the gang, you can meet your real rival",rival,18,"Pandora, Apple Music, streaming checks off Tidal",Tidal,END,SLANT,cmu,MED,Y
+Road Runnin’,16,"Misinterpret the gang, you can meet your real rival",can,18,"Pandora, Apple Music, streaming checks off Tidal",Apple,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,16,"Misinterpret the gang, you can meet your real rival",gang,18,"Pandora, Apple Music, streaming checks off Tidal",Apple,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,16,"Misinterpret the gang, you can meet your real rival",meet,18,"Pandora, Apple Music, streaming checks off Tidal",streaming,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,16,"Misinterpret the gang, you can meet your real rival",real,18,"Pandora, Apple Music, streaming checks off Tidal",streaming,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,17,"I'm a legend in my hood, something like I'm Michael",like,17,"I'm a legend in my hood, something like I'm Michael",Michael,INNER,SLANT,cmu,MED,Y
+Road Runnin’,17,"I'm a legend in my hood, something like I'm Michael",Michael,18,"Pandora, Apple Music, streaming checks off Tidal",Tidal,END,SLANT,cmu,MED,Y
+Road Runnin’,17,"I'm a legend in my hood, something like I'm Michael",legend,18,"Pandora, Apple Music, streaming checks off Tidal",checks,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,17,"I'm a legend in my hood, something like I'm Michael",like,18,"Pandora, Apple Music, streaming checks off Tidal",Tidal,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,17,"I'm a legend in my hood, something like I'm Michael",something,19,"I been road running, road running",running,INNER,SLANT,cmu,MED,Y
+Road Runnin’,19,"I been road running, road running",road,19,"I been road running, road running",road,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,19,"I been road running, road running",running,19,"I been road running, road running",running,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,19,"I been road running, road running",running,20,"Lately I been road running, I been road running",running,END,REPEAT,spelling,HIGH,N
+Road Runnin’,19,"I been road running, road running",road,20,"Lately I been road running, I been road running",road,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,19,"I been road running, road running",running,20,"Lately I been road running, I been road running",running,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,19,"I been road running, road running",running,21,"See the opps, they catch a whole hundred, who hundred",hundred,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,19,"I been road running, road running",road,21,"See the opps, they catch a whole hundred, who hundred",whole,INNER,SLANT,cmu,MED,Y
+Road Runnin’,19,"I been road running, road running",running,21,"See the opps, they catch a whole hundred, who hundred",hundred,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,20,"Lately I been road running, I been road running",road,20,"Lately I been road running, I been road running",road,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,20,"Lately I been road running, I been road running",running,20,"Lately I been road running, I been road running",running,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,20,"Lately I been road running, I been road running",running,21,"See the opps, they catch a whole hundred, who hundred",hundred,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,20,"Lately I been road running, I been road running",road,21,"See the opps, they catch a whole hundred, who hundred",whole,INNER,SLANT,cmu,MED,Y
+Road Runnin’,20,"Lately I been road running, I been road running",running,21,"See the opps, they catch a whole hundred, who hundred",hundred,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,20,"Lately I been road running, I been road running",road,22,"Everybody think they know somethin', they don't know nothin'",don't,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,20,"Lately I been road running, I been road running",road,22,"Everybody think they know somethin', they don't know nothin'",know,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,20,"Lately I been road running, I been road running",running,22,"Everybody think they know somethin', they don't know nothin'",somethin,INNER,SLANT,cmu,MED,Y
+Road Runnin’,21,"See the opps, they catch a whole hundred, who hundred",hundred,21,"See the opps, they catch a whole hundred, who hundred",hundred,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,21,"See the opps, they catch a whole hundred, who hundred",hundred,22,"Everybody think they know somethin', they don't know nothin'",somethin,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,21,"See the opps, they catch a whole hundred, who hundred",opps,22,"Everybody think they know somethin', they don't know nothin'",don't,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,21,"See the opps, they catch a whole hundred, who hundred",opps,22,"Everybody think they know somethin', they don't know nothin'",know,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,21,"See the opps, they catch a whole hundred, who hundred",whole,22,"Everybody think they know somethin', they don't know nothin'",don't,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,21,"See the opps, they catch a whole hundred, who hundred",whole,22,"Everybody think they know somethin', they don't know nothin'",know,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,21,"See the opps, they catch a whole hundred, who hundred",catch,23,My days consist of me gettin' to a bag,bag,INNER,SLANT,cmu,MED,Y
+Road Runnin’,22,"Everybody think they know somethin', they don't know nothin'",don't,22,"Everybody think they know somethin', they don't know nothin'",know,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,22,"Everybody think they know somethin', they don't know nothin'",Everybody,22,"Everybody think they know somethin', they don't know nothin'",nothin,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,22,"Everybody think they know somethin', they don't know nothin'",know,22,"Everybody think they know somethin', they don't know nothin'",don't,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,22,"Everybody think they know somethin', they don't know nothin'",know,22,"Everybody think they know somethin', they don't know nothin'",know,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,22,"Everybody think they know somethin', they don't know nothin'",think,23,My days consist of me gettin' to a bag,consist,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,23,My days consist of me gettin' to a bag,bag,24,"Loyal to the soil, can't forget about the past",past,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,23,My days consist of me gettin' to a bag,bag,24,"Loyal to the soil, can't forget about the past",can't,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,23,My days consist of me gettin' to a bag,gettin,24,"Loyal to the soil, can't forget about the past",forget,INNER,SLANT,cmu,MED,Y
+Road Runnin’,23,My days consist of me gettin' to a bag,bag,25,"Never in my feelings, I'm just always in a bag",bag,END,REPEAT,spelling,HIGH,N
+Road Runnin’,23,My days consist of me gettin' to a bag,days,25,"Never in my feelings, I'm just always in a bag",always,INNER,PERFECT,cmu,HIGH,Y
+Road Runnin’,23,My days consist of me gettin' to a bag,gettin,25,"Never in my feelings, I'm just always in a bag",Never,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,23,My days consist of me gettin' to a bag,bag,26,Get it how you live if it's good or it's bad,bad,END,SLANT,cmu,MED,Y
+Road Runnin’,24,"Loyal to the soil, can't forget about the past",can't,24,"Loyal to the soil, can't forget about the past",past,INNER,SLANT,cmu,MED,Y
+Road Runnin’,24,"Loyal to the soil, can't forget about the past",Loyal,24,"Loyal to the soil, can't forget about the past",soil,INNER,SLANT,cmu,MED,Y
+Road Runnin’,24,"Loyal to the soil, can't forget about the past",past,25,"Never in my feelings, I'm just always in a bag",bag,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,24,"Loyal to the soil, can't forget about the past",can't,25,"Never in my feelings, I'm just always in a bag",bag,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,24,"Loyal to the soil, can't forget about the past",forget,25,"Never in my feelings, I'm just always in a bag",Never,INNER,SLANT,cmu,MED,Y
+Road Runnin’,24,"Loyal to the soil, can't forget about the past",past,26,Get it how you live if it's good or it's bad,bad,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,24,"Loyal to the soil, can't forget about the past",about,26,Get it how you live if it's good or it's bad,how,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,24,"Loyal to the soil, can't forget about the past",can't,26,Get it how you live if it's good or it's bad,bad,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,24,"Loyal to the soil, can't forget about the past",forget,26,Get it how you live if it's good or it's bad,Get,INNER,PERFECT,cmu,HIGH,Y
+Road Runnin’,25,"Never in my feelings, I'm just always in a bag",bag,26,Get it how you live if it's good or it's bad,bad,END,SLANT,cmu,MED,Y
+Road Runnin’,25,"Never in my feelings, I'm just always in a bag",Never,26,Get it how you live if it's good or it's bad,Get,INNER,SLANT,cmu,MED,Y
+Road Runnin’,26,Get it how you live if it's good or it's bad,live,27,Who are you to judge me? She just wanna kick it like some rugby,like,INNER,SLANT,cmu,MED,Y
+Road Runnin’,26,Get it how you live if it's good or it's bad,Get,28,"She looked me in the face and said, ""I love it when you touch me""",said,INNER,SLANT,cmu,MED,Y
+Road Runnin’,26,Get it how you live if it's good or it's bad,Get,28,"She looked me in the face and said, ""I love it when you touch me""",when,INNER,SLANT,cmu,MED,Y
+Road Runnin’,26,Get it how you live if it's good or it's bad,good,28,"She looked me in the face and said, ""I love it when you touch me""",looked,INNER,SLANT,cmu,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,judge,27,Who are you to judge me? She just wanna kick it like some rugby,rugby,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,judge,27,Who are you to judge me? She just wanna kick it like some rugby,some,INNER,SLANT,cmu,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,some,27,Who are you to judge me? She just wanna kick it like some rugby,rugby,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,rugby,28,"She looked me in the face and said, ""I love it when you touch me""",touch,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,judge,28,"She looked me in the face and said, ""I love it when you touch me""",love,INNER,SLANT,cmu,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,judge,28,"She looked me in the face and said, ""I love it when you touch me""",touch,INNER,SLANT,cmu,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,rugby,28,"She looked me in the face and said, ""I love it when you touch me""",love,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,some,28,"She looked me in the face and said, ""I love it when you touch me""",love,INNER,SLANT,cmu,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,some,28,"She looked me in the face and said, ""I love it when you touch me""",touch,INNER,SLANT,cmu,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,rugby,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",fuck,END,SLANT,cmu,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,judge,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",fuck,INNER,SLANT,cmu,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,some,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",fuck,INNER,SLANT,cmu,MED,Y
+Road Runnin’,27,Who are you to judge me? She just wanna kick it like some rugby,rugby,30,"When I was growin' up, I felt alone like no one loved me",loved,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",love,28,"She looked me in the face and said, ""I love it when you touch me""",touch,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",said,28,"She looked me in the face and said, ""I love it when you touch me""",when,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",touch,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",fuck,END,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",face,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",hate,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",face,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",plays,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",love,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",fuck,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",said,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",when,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",when,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",when,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",touch,30,"When I was growin' up, I felt alone like no one loved me",loved,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",love,30,"When I was growin' up, I felt alone like no one loved me",loved,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",love,30,"When I was growin' up, I felt alone like no one loved me",one,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",said,30,"When I was growin' up, I felt alone like no one loved me",felt,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",said,30,"When I was growin' up, I felt alone like no one loved me",When,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",touch,30,"When I was growin' up, I felt alone like no one loved me",one,INNER,SLANT,cmu,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",when,30,"When I was growin' up, I felt alone like no one loved me",felt,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,28,"She looked me in the face and said, ""I love it when you touch me""",when,30,"When I was growin' up, I felt alone like no one loved me",When,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",plays,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",hate,INNER,SLANT,cmu,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",trap,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",catchin,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",fuck,30,"When I was growin' up, I felt alone like no one loved me",loved,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",fuck,30,"When I was growin' up, I felt alone like no one loved me",one,INNER,SLANT,cmu,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",when,30,"When I was growin' up, I felt alone like no one loved me",felt,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",when,30,"When I was growin' up, I felt alone like no one loved me",When,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",catchin,31,I took a hundred K I made from streaming and bought a hundred bags,bags,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",fuck,31,I took a hundred K I made from streaming and bought a hundred bags,hundred,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",hate,31,I took a hundred K I made from streaming and bought a hundred bags,K,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",hate,31,I took a hundred K I made from streaming and bought a hundred bags,made,INNER,SLANT,cmu,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",plays,31,I took a hundred K I made from streaming and bought a hundred bags,K,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",plays,31,I took a hundred K I made from streaming and bought a hundred bags,made,INNER,SLANT,cmu,MED,Y
+Road Runnin’,29,"I'm in the trap, I'm catchin' plays, I hate it when she fuck with me",trap,31,I took a hundred K I made from streaming and bought a hundred bags,bags,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",alone,30,"When I was growin' up, I felt alone like no one loved me",no,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",growin,30,"When I was growin' up, I felt alone like no one loved me",alone,INNER,SLANT,cmu,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",growin,30,"When I was growin' up, I felt alone like no one loved me",no,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",one,30,"When I was growin' up, I felt alone like no one loved me",loved,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",When,30,"When I was growin' up, I felt alone like no one loved me",felt,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",loved,31,I took a hundred K I made from streaming and bought a hundred bags,hundred,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",one,31,I took a hundred K I made from streaming and bought a hundred bags,hundred,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",loved,32,"I took another 50K from publishing, started a weed lab",another,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",loved,32,"I took another 50K from publishing, started a weed lab",publishing,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",one,32,"I took another 50K from publishing, started a weed lab",another,INNER,SLANT,cmu,MED,Y
+Road Runnin’,30,"When I was growin' up, I felt alone like no one loved me",one,32,"I took another 50K from publishing, started a weed lab",publishing,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,hundred,31,I took a hundred K I made from streaming and bought a hundred bags,hundred,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,K,31,I took a hundred K I made from streaming and bought a hundred bags,made,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,bags,32,"I took another 50K from publishing, started a weed lab",lab,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,bought,32,"I took another 50K from publishing, started a weed lab",started,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,hundred,32,"I took another 50K from publishing, started a weed lab",another,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,hundred,32,"I took another 50K from publishing, started a weed lab",publishing,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,streaming,32,"I took another 50K from publishing, started a weed lab",weed,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,took,32,"I took another 50K from publishing, started a weed lab",took,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,bought,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",mama,INNER,SLANT,cmu,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,hundred,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",Son,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,streaming,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",please,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,31,I took a hundred K I made from streaming and bought a hundred bags,streaming,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",these,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",another,32,"I took another 50K from publishing, started a weed lab",publishing,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",another,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",Son,INNER,SLANT,cmu,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",publishing,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",Son,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",started,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",mama,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",weed,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",please,INNER,SLANT,cmu,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",weed,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",these,INNER,SLANT,cmu,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",another,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",Son,INNER,SLANT,cmu,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",lab,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",daddy,INNER,SLANT,cmu,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",publishing,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",Son,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",weed,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",keep,INNER,SLANT,cmu,MED,Y
+Road Runnin’,32,"I took another 50K from publishing, started a weed lab",weed,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",leave,INNER,SLANT,cmu,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",careful,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",jealous,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",please,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",these,INNER,PERFECT,cmu,HIGH,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",jealous,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",weapon,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",careful,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",weapon,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",careful,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",when,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",jealous,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",when,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",please,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",keep,INNER,SLANT,cmu,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",please,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",leave,INNER,SLANT,cmu,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",Son,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",Son,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",these,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",keep,INNER,SLANT,cmu,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",these,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",leave,INNER,SLANT,cmu,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",told,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",told,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",jealous,35,"I send a pack through UPS, I think a worker intercepted it",intercepted,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",careful,35,"I send a pack through UPS, I think a worker intercepted it",intercepted,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",careful,35,"I send a pack through UPS, I think a worker intercepted it",send,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",jealous,35,"I send a pack through UPS, I think a worker intercepted it",send,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",Son,35,"I send a pack through UPS, I think a worker intercepted it",UPS,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,33,"My mama told me, ""Son, please be careful 'cause these niggas jealous""",jealous,37,"I'm burnin' on a brand new strain, I think the grower just invented it",invented,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",leave,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",keep,INNER,SLANT,cmu,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",when,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",weapon,INNER,SLANT,cmu,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",weapon,35,"I send a pack through UPS, I think a worker intercepted it",intercepted,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",daddy,35,"I send a pack through UPS, I think a worker intercepted it",pack,INNER,SLANT,cmu,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",Son,35,"I send a pack through UPS, I think a worker intercepted it",UPS,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",weapon,35,"I send a pack through UPS, I think a worker intercepted it",send,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",when,35,"I send a pack through UPS, I think a worker intercepted it",intercepted,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",when,35,"I send a pack through UPS, I think a worker intercepted it",send,INNER,SLANT,cmu,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",keep,36,"I like my girls with good heads on their shoulders, you know, real intellegent",real,INNER,SLANT,cmu,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",leave,36,"I like my girls with good heads on their shoulders, you know, real intellegent",real,INNER,SLANT,cmu,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",told,36,"I like my girls with good heads on their shoulders, you know, real intellegent",know,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",told,36,"I like my girls with good heads on their shoulders, you know, real intellegent",shoulders,INNER,SLANT,cmu,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",weapon,36,"I like my girls with good heads on their shoulders, you know, real intellegent",heads,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",when,36,"I like my girls with good heads on their shoulders, you know, real intellegent",heads,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",weapon,37,"I'm burnin' on a brand new strain, I think the grower just invented it",invented,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,34,"My daddy told me, ""Son, when you leave the house, keep a weapon""",weapon,38,My Carolina nigga text an addy so I quickly sent it,sent,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",send,35,"I send a pack through UPS, I think a worker intercepted it",intercepted,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",intercepted,36,"I like my girls with good heads on their shoulders, you know, real intellegent",heads,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",send,36,"I like my girls with good heads on their shoulders, you know, real intellegent",heads,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",worker,36,"I like my girls with good heads on their shoulders, you know, real intellegent",girls,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",intercepted,37,"I'm burnin' on a brand new strain, I think the grower just invented it",invented,END,SLANT,cmu,MED,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",pack,37,"I'm burnin' on a brand new strain, I think the grower just invented it",brand,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",send,37,"I'm burnin' on a brand new strain, I think the grower just invented it",invented,INNER,SLANT,cmu,MED,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",think,37,"I'm burnin' on a brand new strain, I think the grower just invented it",think,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",through,37,"I'm burnin' on a brand new strain, I think the grower just invented it",new,INNER,PERFECT,cmu,HIGH,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",worker,37,"I'm burnin' on a brand new strain, I think the grower just invented it",burnin,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,35,"I send a pack through UPS, I think a worker intercepted it",intercepted,38,My Carolina nigga text an addy so I quickly sent it,sent,END,ASSONANCE,vowel,MED,Y
+Road Runnin’,36,"I like my girls with good heads on their shoulders, you know, real intellegent",shoulders,36,"I like my girls with good heads on their shoulders, you know, real intellegent",know,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,36,"I like my girls with good heads on their shoulders, you know, real intellegent",girls,37,"I'm burnin' on a brand new strain, I think the grower just invented it",burnin,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,36,"I like my girls with good heads on their shoulders, you know, real intellegent",heads,37,"I'm burnin' on a brand new strain, I think the grower just invented it",invented,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,36,"I like my girls with good heads on their shoulders, you know, real intellegent",know,37,"I'm burnin' on a brand new strain, I think the grower just invented it",grower,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,36,"I like my girls with good heads on their shoulders, you know, real intellegent",shoulders,37,"I'm burnin' on a brand new strain, I think the grower just invented it",grower,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,36,"I like my girls with good heads on their shoulders, you know, real intellegent",intellegent,38,My Carolina nigga text an addy so I quickly sent it,sent,END,PERFECT,spelling,HIGH,Y
+Road Runnin’,36,"I like my girls with good heads on their shoulders, you know, real intellegent",heads,38,My Carolina nigga text an addy so I quickly sent it,sent,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,36,"I like my girls with good heads on their shoulders, you know, real intellegent",heads,38,My Carolina nigga text an addy so I quickly sent it,text,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,36,"I like my girls with good heads on their shoulders, you know, real intellegent",like,38,My Carolina nigga text an addy so I quickly sent it,Carolina,INNER,SLANT,cmu,MED,Y
+Road Runnin’,37,"I'm burnin' on a brand new strain, I think the grower just invented it",invented,38,My Carolina nigga text an addy so I quickly sent it,sent,END,SLANT,cmu,MED,Y
+Road Runnin’,37,"I'm burnin' on a brand new strain, I think the grower just invented it",brand,38,My Carolina nigga text an addy so I quickly sent it,addy,INNER,SLANT,cmu,MED,Y
+Road Runnin’,37,"I'm burnin' on a brand new strain, I think the grower just invented it",invented,38,My Carolina nigga text an addy so I quickly sent it,text,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,37,"I'm burnin' on a brand new strain, I think the grower just invented it",think,38,My Carolina nigga text an addy so I quickly sent it,quickly,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,37,"I'm burnin' on a brand new strain, I think the grower just invented it",burnin,39,"Niggas'll fail you every time, they always on some dirty shit",dirty,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,37,"I'm burnin' on a brand new strain, I think the grower just invented it",invented,39,"Niggas'll fail you every time, they always on some dirty shit",every,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,37,"I'm burnin' on a brand new strain, I think the grower just invented it",strain,39,"Niggas'll fail you every time, they always on some dirty shit",always,INNER,SLANT,cmu,MED,Y
+Road Runnin’,37,"I'm burnin' on a brand new strain, I think the grower just invented it",strain,39,"Niggas'll fail you every time, they always on some dirty shit",fail,INNER,SLANT,cmu,MED,Y
+Road Runnin’,37,"I'm burnin' on a brand new strain, I think the grower just invented it",think,39,"Niggas'll fail you every time, they always on some dirty shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,text,38,My Carolina nigga text an addy so I quickly sent it,sent,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,Carolina,39,"Niggas'll fail you every time, they always on some dirty shit",time,INNER,SLANT,cmu,MED,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,nigga,39,"Niggas'll fail you every time, they always on some dirty shit",Niggas'll,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,nigga,39,"Niggas'll fail you every time, they always on some dirty shit",shit,INNER,SLANT,spelling,LOW,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,quickly,39,"Niggas'll fail you every time, they always on some dirty shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,sent,39,"Niggas'll fail you every time, they always on some dirty shit",every,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,text,39,"Niggas'll fail you every time, they always on some dirty shit",every,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,addy,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",grass,INNER,SLANT,cmu,MED,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,Carolina,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",inside,INNER,SLANT,cmu,MED,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,nigga,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",Niggas,INNER,SLANT,spelling,LOW,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,nigga,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",shit,INNER,SLANT,spelling,LOW,Y
+Road Runnin’,38,My Carolina nigga text an addy so I quickly sent it,quickly,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",shit,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",fail,39,"Niggas'll fail you every time, they always on some dirty shit",always,INNER,SLANT,cmu,MED,Y
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",shit,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",shit,END,REPEAT,spelling,HIGH,N
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",always,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",snakes,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",dirty,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",lurkin,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",fail,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",snakes,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",Niggas'll,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",Niggas,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",some,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",some,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",time,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",inside,INNER,SLANT,cmu,MED,Y
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",always,41,I just bought a brand new Birkin just so I could catch some plays,plays,INNER,PERFECT,cmu,HIGH,Y
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",fail,41,I just bought a brand new Birkin just so I could catch some plays,plays,INNER,SLANT,cmu,MED,Y
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",shit,41,I just bought a brand new Birkin just so I could catch some plays,Birkin,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",some,41,I just bought a brand new Birkin just so I could catch some plays,some,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,39,"Niggas'll fail you every time, they always on some dirty shit",shit,42,And I pulled up and had served him fifty Gushers at the Days Inn,Inn,END,SLANT,cmu,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",Niggas,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",grass,INNER,PERFECT,spelling,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",grass,41,I just bought a brand new Birkin just so I could catch some plays,brand,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",grass,41,I just bought a brand new Birkin just so I could catch some plays,catch,INNER,SLANT,cmu,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",shit,41,I just bought a brand new Birkin just so I could catch some plays,Birkin,INNER,ASSONANCE,vowel,LOW,N
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",snakes,41,I just bought a brand new Birkin just so I could catch some plays,plays,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",some,41,I just bought a brand new Birkin just so I could catch some plays,some,INNER,REPEAT,spelling,HIGH,N
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",shit,42,And I pulled up and had served him fifty Gushers at the Days Inn,Inn,END,SLANT,cmu,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",grass,42,And I pulled up and had served him fifty Gushers at the Days Inn,had,INNER,SLANT,cmu,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",lurkin,42,And I pulled up and had served him fifty Gushers at the Days Inn,served,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",shit,42,And I pulled up and had served him fifty Gushers at the Days Inn,fifty,INNER,SLANT,cmu,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",shit,42,And I pulled up and had served him fifty Gushers at the Days Inn,him,INNER,SLANT,cmu,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",snakes,42,And I pulled up and had served him fifty Gushers at the Days Inn,Days,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,40,"Niggas snakes inside the grass, you know they on some lurkin' shit",some,42,And I pulled up and had served him fifty Gushers at the Days Inn,Gushers,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,41,I just bought a brand new Birkin just so I could catch some plays,brand,41,I just bought a brand new Birkin just so I could catch some plays,catch,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,41,I just bought a brand new Birkin just so I could catch some plays,Birkin,42,And I pulled up and had served him fifty Gushers at the Days Inn,Inn,INNER,PERFECT,spelling,MED,Y
+Road Runnin’,41,I just bought a brand new Birkin just so I could catch some plays,brand,42,And I pulled up and had served him fifty Gushers at the Days Inn,had,INNER,SLANT,cmu,MED,Y
+Road Runnin’,41,I just bought a brand new Birkin just so I could catch some plays,catch,42,And I pulled up and had served him fifty Gushers at the Days Inn,had,INNER,SLANT,cmu,MED,Y
+Road Runnin’,41,I just bought a brand new Birkin just so I could catch some plays,could,42,And I pulled up and had served him fifty Gushers at the Days Inn,pulled,INNER,SLANT,cmu,MED,Y
+Road Runnin’,41,I just bought a brand new Birkin just so I could catch some plays,plays,42,And I pulled up and had served him fifty Gushers at the Days Inn,Days,INNER,PERFECT,cmu,HIGH,Y
+Road Runnin’,41,I just bought a brand new Birkin just so I could catch some plays,some,42,And I pulled up and had served him fifty Gushers at the Days Inn,Gushers,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,42,And I pulled up and had served him fifty Gushers at the Days Inn,fifty,42,And I pulled up and had served him fifty Gushers at the Days Inn,Inn,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,42,And I pulled up and had served him fifty Gushers at the Days Inn,him,42,And I pulled up and had served him fifty Gushers at the Days Inn,fifty,INNER,ASSONANCE,vowel,MED,Y
+Road Runnin’,42,And I pulled up and had served him fifty Gushers at the Days Inn,him,42,And I pulled up and had served him fifty Gushers at the Days Inn,Inn,INNER,SLANT,cmu,MED,Y
