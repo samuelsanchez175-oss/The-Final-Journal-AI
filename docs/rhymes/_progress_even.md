@@ -246,6 +246,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 234 | finesse2tymes | Finesse2Tymes | 1 | 46 | 409 | 49 | 360 | 406 | 2026-11-10 13:23 ET |
 | 235 | mac-ty | Mac Ty | 1 | 46 | 265 | 81 | 184 | 261 | 2026-11-10 13:23 ET |
 | 236 | nba-kd | NBA KD | 1 | 46 | 252 | 64 | 188 | 250 | 2026-11-10 13:23 ET |
+| 237 | taylor-bennett | Taylor Bennett | 1 | 46 | 325 | 40 | 285 | 318 | 2026-11-10 13:23 ET |
+| 238 | valee | Valee | 1 | 46 | 385 | 64 | 321 | 378 | 2026-11-10 13:23 ET |
+| 239 | shang-rapper | $hang (Rapper) | 1 | 45 | 142 | 31 | 111 | 142 | 2026-11-10 13:23 ET |
+| 240 | beece-daytona | Beece Daytona | 1 | 45 | 277 | 64 | 213 | 272 | 2026-11-10 13:23 ET |
+| 241 | jackboys | JACKBOYS | 1 | 45 | 192 | 53 | 139 | 189 | 2026-11-10 13:23 ET |
+| 242 | lil-double-0 | Lil Double 0 | 1 | 45 | 559 | 42 | 517 | 555 | 2026-11-10 13:23 ET |
+| 243 | sbglol | SBGLol | 1 | 45 | 212 | 30 | 182 | 211 | 2026-11-10 13:23 ET |
+| 244 | suav-corleone | Suav Corleone | 1 | 45 | 157 | 29 | 128 | 154 | 2026-11-10 13:23 ET |
+| 245 | dj-kash | DJ Kash | 1 | 44 | 335 | 78 | 257 | 331 | 2026-11-10 13:23 ET |
+| 246 | ksoo | Ksoo | 1 | 44 | 159 | 34 | 125 | 157 | 2026-11-10 13:23 ET |
 
 ## Failures
 
@@ -253,7 +263,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 236/386: NBA KD.
+Finished 246/386: Ksoo.
 
 ## Final
 

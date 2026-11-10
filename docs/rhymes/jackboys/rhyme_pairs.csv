@@ -1,0 +1,206 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+GATTI,1,Tired of niggas cappin' (Tired of niggas cappin'),niggas,2,"Niggas frontin' their jewels (Yeah, this is a Melo beat)",Niggas,INNER,REPEAT,spelling,HIGH,N
+GATTI,2,"Niggas frontin' their jewels (Yeah, this is a Melo beat)",frontin,3,They ain't expectin' this one (That is not them),one,INNER,ASSONANCE,vowel,MED,Y
+GATTI,2,"Niggas frontin' their jewels (Yeah, this is a Melo beat)",frontin,4,"Facts, my bitch love coco (Haha)",love,INNER,ASSONANCE,vowel,MED,Y
+GATTI,3,They ain't expectin' this one (That is not them),one,4,"Facts, my bitch love coco (Haha)",love,INNER,SLANT,cmu,MED,Y
+GATTI,3,They ain't expectin' this one (That is not them),ain't,5,"Woo back, baby (Woo back, baby), woo (Haha, yeah)",baby,INNER,ASSONANCE,vowel,MED,Y
+GATTI,3,They ain't expectin' this one (That is not them),one,6,"Let me see some, okay, okay (I see you, shoutout bro), okay, okay (Don't fuck around)",some,END,SLANT,cmu,MED,Y
+GATTI,4,"Facts, my bitch love coco (Haha)",Facts,5,"Woo back, baby (Woo back, baby), woo (Haha, yeah)",back,INNER,ASSONANCE,vowel,MED,Y
+GATTI,4,"Facts, my bitch love coco (Haha)",love,6,"Let me see some, okay, okay (I see you, shoutout bro), okay, okay (Don't fuck around)",some,INNER,SLANT,cmu,MED,Y
+GATTI,4,"Facts, my bitch love coco (Haha)",coco,7,"Look, you cannot say Pop and forget the Smoke (Nah)",Smoke,END,ASSONANCE,vowel,MED,Y
+GATTI,4,"Facts, my bitch love coco (Haha)",coco,8,I'm from the Floss where niggas tote (Woo),tote,END,ASSONANCE,vowel,MED,Y
+GATTI,5,"Woo back, baby (Woo back, baby), woo (Haha, yeah)",baby,7,"Look, you cannot say Pop and forget the Smoke (Nah)",say,INNER,ASSONANCE,vowel,MED,Y
+GATTI,5,"Woo back, baby (Woo back, baby), woo (Haha, yeah)",back,7,"Look, you cannot say Pop and forget the Smoke (Nah)",cannot,INNER,ASSONANCE,vowel,MED,Y
+GATTI,6,"Let me see some, okay, okay (I see you, shoutout bro), okay, okay (Don't fuck around)",Let,7,"Look, you cannot say Pop and forget the Smoke (Nah)",forget,INNER,PERFECT,cmu,HIGH,Y
+GATTI,6,"Let me see some, okay, okay (I see you, shoutout bro), okay, okay (Don't fuck around)",Let,8,I'm from the Floss where niggas tote (Woo),where,INNER,SLANT,cmu,MED,Y
+GATTI,7,"Look, you cannot say Pop and forget the Smoke (Nah)",Smoke,8,I'm from the Floss where niggas tote (Woo),tote,END,SLANT,cmu,MED,Y
+GATTI,7,"Look, you cannot say Pop and forget the Smoke (Nah)",forget,8,I'm from the Floss where niggas tote (Woo),where,INNER,SLANT,cmu,MED,Y
+GATTI,7,"Look, you cannot say Pop and forget the Smoke (Nah)",Pop,8,I'm from the Floss where niggas tote (Woo),Floss,INNER,SLANT,cmu,MED,Y
+GATTI,7,"Look, you cannot say Pop and forget the Smoke (Nah)",Smoke,9,"They couldn't be Crip, so they turned Folk (Baow)",Folk,END,PERFECT,cmu,HIGH,Y
+GATTI,7,"Look, you cannot say Pop and forget the Smoke (Nah)",Look,9,"They couldn't be Crip, so they turned Folk (Baow)",couldn't,INNER,ASSONANCE,vowel,MED,Y
+GATTI,7,"Look, you cannot say Pop and forget the Smoke (Nah)",Smoke,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",Cho,END,ASSONANCE,vowel,MED,Y
+GATTI,7,"Look, you cannot say Pop and forget the Smoke (Nah)",Smoke,11,"I gotta laugh, 'cause these niggas jokes (Haha)",jokes,END,SLANT,cmu,MED,Y
+GATTI,8,I'm from the Floss where niggas tote (Woo),tote,9,"They couldn't be Crip, so they turned Folk (Baow)",Folk,END,SLANT,cmu,MED,Y
+GATTI,8,I'm from the Floss where niggas tote (Woo),tote,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",Cho,END,ASSONANCE,vowel,MED,Y
+GATTI,8,I'm from the Floss where niggas tote (Woo),Floss,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",droppin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,8,I'm from the Floss where niggas tote (Woo),tote,11,"I gotta laugh, 'cause these niggas jokes (Haha)",jokes,END,ASSONANCE,vowel,MED,Y
+GATTI,9,"They couldn't be Crip, so they turned Folk (Baow)",Folk,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",Cho,END,ASSONANCE,vowel,MED,Y
+GATTI,9,"They couldn't be Crip, so they turned Folk (Baow)",Crip,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",'Ville,INNER,SLANT,cmu,MED,Y
+GATTI,9,"They couldn't be Crip, so they turned Folk (Baow)",Folk,11,"I gotta laugh, 'cause these niggas jokes (Haha)",jokes,END,SLANT,cmu,MED,Y
+GATTI,9,"They couldn't be Crip, so they turned Folk (Baow)",Folk,13,"""I don't know"" (I don't know), but I'm on go (Woo)",go,END,ASSONANCE,vowel,MED,Y
+GATTI,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",Cho,11,"I gotta laugh, 'cause these niggas jokes (Haha)",jokes,END,ASSONANCE,vowel,MED,Y
+GATTI,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",droppin,11,"I gotta laugh, 'cause these niggas jokes (Haha)",gotta,INNER,ASSONANCE,vowel,MED,Y
+GATTI,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",Drivin,12,"Dread like, ""Who these niggas?"" (Who these niggas?)",like,INNER,ASSONANCE,vowel,MED,Y
+GATTI,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",through,12,"Dread like, ""Who these niggas?"" (Who these niggas?)",Who,INNER,PERFECT,cmu,HIGH,Y
+GATTI,10,"Drivin' through the 'Ville, droppin' a Cho (Grr)",Cho,13,"""I don't know"" (I don't know), but I'm on go (Woo)",go,END,PERFECT,cmu,HIGH,Y
+GATTI,11,"I gotta laugh, 'cause these niggas jokes (Haha)",niggas,12,"Dread like, ""Who these niggas?"" (Who these niggas?)",niggas,INNER,REPEAT,spelling,HIGH,N
+GATTI,11,"I gotta laugh, 'cause these niggas jokes (Haha)",these,12,"Dread like, ""Who these niggas?"" (Who these niggas?)",these,INNER,REPEAT,spelling,HIGH,N
+GATTI,11,"I gotta laugh, 'cause these niggas jokes (Haha)",jokes,13,"""I don't know"" (I don't know), but I'm on go (Woo)",go,END,ASSONANCE,vowel,MED,Y
+GATTI,11,"I gotta laugh, 'cause these niggas jokes (Haha)",jokes,13,"""I don't know"" (I don't know), but I'm on go (Woo)",don't,INNER,ASSONANCE,vowel,MED,Y
+GATTI,11,"I gotta laugh, 'cause these niggas jokes (Haha)",jokes,13,"""I don't know"" (I don't know), but I'm on go (Woo)",know,INNER,ASSONANCE,vowel,MED,Y
+GATTI,12,"Dread like, ""Who these niggas?"" (Who these niggas?)",Who,14,"And I'm in that Bugatti, movin' too hotty (Baow, baow)",movin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,13,"""I don't know"" (I don't know), but I'm on go (Woo)",don't,13,"""I don't know"" (I don't know), but I'm on go (Woo)",go,INNER,ASSONANCE,vowel,MED,Y
+GATTI,13,"""I don't know"" (I don't know), but I'm on go (Woo)",don't,13,"""I don't know"" (I don't know), but I'm on go (Woo)",know,INNER,ASSONANCE,vowel,MED,Y
+GATTI,13,"""I don't know"" (I don't know), but I'm on go (Woo)",know,13,"""I don't know"" (I don't know), but I'm on go (Woo)",go,INNER,PERFECT,cmu,HIGH,Y
+GATTI,13,"""I don't know"" (I don't know), but I'm on go (Woo)",don't,14,"And I'm in that Bugatti, movin' too hotty (Baow, baow)",hotty,INNER,SLANT,spelling,LOW,Y
+GATTI,14,"And I'm in that Bugatti, movin' too hotty (Baow, baow)",Bugatti,14,"And I'm in that Bugatti, movin' too hotty (Baow, baow)",hotty,INNER,ASSONANCE,vowel,LOW,N
+GATTI,14,"And I'm in that Bugatti, movin' too hotty (Baow, baow)",Bugatti,15,"Givin' Pacs like, ""Who shot ya?"" (Grr)",shot,INNER,SLANT,cmu,MED,Y
+GATTI,14,"And I'm in that Bugatti, movin' too hotty (Baow, baow)",movin,15,"Givin' Pacs like, ""Who shot ya?"" (Grr)",Who,INNER,ASSONANCE,vowel,MED,Y
+GATTI,14,"And I'm in that Bugatti, movin' too hotty (Baow, baow)",Bugatti,16,"Me and Trey, that's four choppers (Woo)",choppers,INNER,ASSONANCE,vowel,MED,Y
+GATTI,15,"Givin' Pacs like, ""Who shot ya?"" (Grr)",shot,16,"Me and Trey, that's four choppers (Woo)",choppers,END,ASSONANCE,vowel,MED,Y
+GATTI,15,"Givin' Pacs like, ""Who shot ya?"" (Grr)",shot,17,"Man down, woo, all you see is helicopters (Grr)",helicopters,END,ASSONANCE,vowel,MED,Y
+GATTI,15,"Givin' Pacs like, ""Who shot ya?"" (Grr)",Pacs,17,"Man down, woo, all you see is helicopters (Grr)",Man,INNER,ASSONANCE,vowel,MED,Y
+GATTI,15,"Givin' Pacs like, ""Who shot ya?"" (Grr)",shot,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",doctor,END,SLANT,cmu,MED,Y
+GATTI,16,"Me and Trey, that's four choppers (Woo)",choppers,17,"Man down, woo, all you see is helicopters (Grr)",helicopters,END,SLANT,cmu,MED,Y
+GATTI,16,"Me and Trey, that's four choppers (Woo)",four,17,"Man down, woo, all you see is helicopters (Grr)",all,INNER,SLANT,cmu,MED,Y
+GATTI,16,"Me and Trey, that's four choppers (Woo)",choppers,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",doctor,END,ASSONANCE,vowel,MED,Y
+GATTI,17,"Man down, woo, all you see is helicopters (Grr)",helicopters,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",doctor,END,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",him,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",him,INNER,REPEAT,spelling,HIGH,N
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",Paramedics,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",send,INNER,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",pick,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",him,INNER,SLANT,cmu,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",Paramedics,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",engine,INNER,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",Paramedics,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",revvin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",send,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",engine,INNER,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",send,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",revvin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",him,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",clearin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",Paramedics,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",checks,INNER,SLANT,cmu,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",Paramedics,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",pending,INNER,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",pick,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",clearin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",send,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",checks,INNER,ASSONANCE,vowel,MED,Y
+GATTI,18,"Paramedics pick him up, they gon' send him to the doctor (Get that nigga)",send,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",pending,INNER,SLANT,cmu,MED,Y
+GATTI,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",engine,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",revvin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",revvin,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",pending,END,ASSONANCE,vowel,MED,Y
+GATTI,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",engine,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",checks,INNER,ASSONANCE,vowel,MED,Y
+GATTI,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",engine,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",pending,INNER,SLANT,cmu,MED,Y
+GATTI,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",revvin,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",checks,INNER,ASSONANCE,vowel,MED,Y
+GATTI,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",engine,21,"And I got a couple gangstas, let me know (That's a fact)",let,INNER,ASSONANCE,vowel,MED,Y
+GATTI,19,"I'm in the hood like an engine, revvin' (Trey, get that nigga)",revvin,21,"And I got a couple gangstas, let me know (That's a fact)",let,INNER,ASSONANCE,vowel,MED,Y
+GATTI,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",checks,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",checks,INNER,REPEAT,spelling,HIGH,N
+GATTI,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",checks,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",pending,INNER,ASSONANCE,vowel,MED,Y
+GATTI,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",checks,21,"And I got a couple gangstas, let me know (That's a fact)",let,INNER,ASSONANCE,vowel,MED,Y
+GATTI,20,"My checks is clearin' (Woo, woo), your checks is pending (Woo, woo)",pending,21,"And I got a couple gangstas, let me know (That's a fact)",let,INNER,ASSONANCE,vowel,MED,Y
+GATTI,21,"And I got a couple gangstas, let me know (That's a fact)",know,22,If you want smoke (If you want smoke),smoke,END,ASSONANCE,vowel,MED,Y
+GATTI,21,"And I got a couple gangstas, let me know (That's a fact)",got,22,If you want smoke (If you want smoke),want,INNER,SLANT,cmu,MED,Y
+GATTI,21,"And I got a couple gangstas, let me know (That's a fact)",let,23,"'Cause, boy, I can send 'em ('Cause, boy, I can send 'em)",send,INNER,ASSONANCE,vowel,MED,Y
+GATTI,22,If you want smoke (If you want smoke),want,24,"And I got a bad bitch, ass up (Hahaha)",got,INNER,SLANT,cmu,MED,Y
+GATTI,22,If you want smoke (If you want smoke),smoke,25,"Face down (Face down), yeah, she love doggystyle (Uh-huh)",doggystyle,END,ASSONANCE,vowel,LOW,N
+GATTI,23,"'Cause, boy, I can send 'em ('Cause, boy, I can send 'em)",can,24,"And I got a bad bitch, ass up (Hahaha)",ass,INNER,SLANT,cmu,MED,Y
+GATTI,23,"'Cause, boy, I can send 'em ('Cause, boy, I can send 'em)",can,24,"And I got a bad bitch, ass up (Hahaha)",bad,INNER,SLANT,cmu,MED,Y
+GATTI,24,"And I got a bad bitch, ass up (Hahaha)",bad,24,"And I got a bad bitch, ass up (Hahaha)",ass,INNER,SLANT,cmu,MED,Y
+GATTI,24,"And I got a bad bitch, ass up (Hahaha)",ass,26,"And she got a Louis bag (Yeah), that hold the extendo (Woo, woo)",bag,INNER,SLANT,cmu,MED,Y
+GATTI,24,"And I got a bad bitch, ass up (Hahaha)",bad,26,"And she got a Louis bag (Yeah), that hold the extendo (Woo, woo)",bag,INNER,SLANT,cmu,MED,Y
+GATTI,24,"And I got a bad bitch, ass up (Hahaha)",got,26,"And she got a Louis bag (Yeah), that hold the extendo (Woo, woo)",got,INNER,REPEAT,spelling,HIGH,N
+GATTI,26,"And she got a Louis bag (Yeah), that hold the extendo (Woo, woo)",extendo,28,My bitch love coco (Haha),coco,END,ASSONANCE,vowel,LOW,N
+GATTI,26,"And she got a Louis bag (Yeah), that hold the extendo (Woo, woo)",hold,28,My bitch love coco (Haha),coco,INNER,ASSONANCE,vowel,MED,Y
+GATTI,28,My bitch love coco (Haha),love,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",jumpin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,28,My bitch love coco (Haha),love,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Young,INNER,SLANT,cmu,MED,Y
+GATTI,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",seein,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",seein,INNER,REPEAT,spelling,HIGH,N
+GATTI,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",zoo,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",blue,INNER,PERFECT,cmu,HIGH,Y
+GATTI,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",blue,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",moves,INNER,ASSONANCE,vowel,MED,Y
+GATTI,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",Got,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",La,INNER,ASSONANCE,vowel,MED,Y
+GATTI,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",Got,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Pop,INNER,SLANT,cmu,MED,Y
+GATTI,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",jumpin,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Young,INNER,ASSONANCE,vowel,MED,Y
+GATTI,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",red,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Flare,INNER,SLANT,cmu,MED,Y
+GATTI,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",zoo,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",moves,INNER,ASSONANCE,vowel,MED,Y
+GATTI,29,"Got it jumpin' out the zoo, seein' red, seein' blue (Yeah)",red,31,Braid my hair down 'til I hide my face,hair,INNER,SLANT,cmu,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",how,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",how,INNER,REPEAT,spelling,HIGH,N
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",La,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Pop,INNER,ASSONANCE,vowel,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Flame,31,Braid my hair down 'til I hide my face,Braid,INNER,SLANT,cmu,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Flame,31,Braid my hair down 'til I hide my face,face,INNER,SLANT,cmu,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Flare,31,Braid my hair down 'til I hide my face,hair,INNER,PERFECT,cmu,HIGH,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",how,31,Braid my hair down 'til I hide my face,down,INNER,ASSONANCE,vowel,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Flame,32,"Duck away, she wanna lay up and hibernate (Yeah)",away,INNER,ASSONANCE,vowel,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Flame,32,"Duck away, she wanna lay up and hibernate (Yeah)",hibernate,INNER,SLANT,cmu,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Flame,32,"Duck away, she wanna lay up and hibernate (Yeah)",lay,INNER,ASSONANCE,vowel,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",La,32,"Duck away, she wanna lay up and hibernate (Yeah)",wanna,INNER,ASSONANCE,vowel,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Pop,32,"Duck away, she wanna lay up and hibernate (Yeah)",wanna,INNER,SLANT,cmu,MED,Y
+GATTI,30,"Young La Flame, how it moves, Pop Flare how it— (Woo)",Young,32,"Duck away, she wanna lay up and hibernate (Yeah)",Duck,INNER,SLANT,cmu,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,Braid,31,Braid my hair down 'til I hide my face,face,INNER,SLANT,cmu,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,face,32,"Duck away, she wanna lay up and hibernate (Yeah)",hibernate,END,SLANT,cmu,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,Braid,32,"Duck away, she wanna lay up and hibernate (Yeah)",away,INNER,ASSONANCE,vowel,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,Braid,32,"Duck away, she wanna lay up and hibernate (Yeah)",hibernate,INNER,SLANT,cmu,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,Braid,32,"Duck away, she wanna lay up and hibernate (Yeah)",lay,INNER,ASSONANCE,vowel,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,face,32,"Duck away, she wanna lay up and hibernate (Yeah)",away,INNER,ASSONANCE,vowel,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,face,32,"Duck away, she wanna lay up and hibernate (Yeah)",lay,INNER,ASSONANCE,vowel,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,face,33,"I took a chance, it's a lot to take",take,END,SLANT,cmu,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,Braid,33,"I took a chance, it's a lot to take",take,INNER,SLANT,cmu,MED,Y
+GATTI,31,Braid my hair down 'til I hide my face,face,34,"I took a right, ended up right away (Straight up)",away,END,ASSONANCE,vowel,MED,Y
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",away,32,"Duck away, she wanna lay up and hibernate (Yeah)",hibernate,INNER,ASSONANCE,vowel,MED,Y
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",away,32,"Duck away, she wanna lay up and hibernate (Yeah)",lay,INNER,PERFECT,cmu,HIGH,Y
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",lay,32,"Duck away, she wanna lay up and hibernate (Yeah)",hibernate,INNER,ASSONANCE,vowel,MED,Y
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",hibernate,33,"I took a chance, it's a lot to take",take,END,SLANT,cmu,MED,Y
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",away,33,"I took a chance, it's a lot to take",take,INNER,ASSONANCE,vowel,MED,Y
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",lay,33,"I took a chance, it's a lot to take",take,INNER,ASSONANCE,vowel,MED,Y
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",wanna,33,"I took a chance, it's a lot to take",lot,INNER,SLANT,cmu,MED,Y
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",hibernate,34,"I took a right, ended up right away (Straight up)",away,END,ASSONANCE,vowel,MED,Y
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",away,34,"I took a right, ended up right away (Straight up)",away,INNER,REPEAT,spelling,HIGH,N
+GATTI,32,"Duck away, she wanna lay up and hibernate (Yeah)",lay,34,"I took a right, ended up right away (Straight up)",away,INNER,PERFECT,cmu,HIGH,Y
+GATTI,33,"I took a chance, it's a lot to take",take,34,"I took a right, ended up right away (Straight up)",away,END,ASSONANCE,vowel,MED,Y
+GATTI,33,"I took a chance, it's a lot to take",took,34,"I took a right, ended up right away (Straight up)",took,INNER,REPEAT,spelling,HIGH,N
+GATTI,33,"I took a chance, it's a lot to take",lot,35,"She need a chunk, not a piece (Alright)",not,INNER,PERFECT,cmu,HIGH,Y
+GATTI,34,"I took a right, ended up right away (Straight up)",right,34,"I took a right, ended up right away (Straight up)",right,INNER,REPEAT,spelling,HIGH,N
+GATTI,35,"She need a chunk, not a piece (Alright)",need,35,"She need a chunk, not a piece (Alright)",piece,INNER,SLANT,cmu,MED,Y
+GATTI,35,"She need a chunk, not a piece (Alright)",piece,36,It cost me three for the keys (Keys),keys,END,SLANT,cmu,MED,Y
+GATTI,35,"She need a chunk, not a piece (Alright)",need,36,It cost me three for the keys (Keys),keys,INNER,SLANT,cmu,MED,Y
+GATTI,35,"She need a chunk, not a piece (Alright)",need,36,It cost me three for the keys (Keys),three,INNER,ASSONANCE,vowel,MED,Y
+GATTI,35,"She need a chunk, not a piece (Alright)",not,36,It cost me three for the keys (Keys),cost,INNER,SLANT,cmu,MED,Y
+GATTI,35,"She need a chunk, not a piece (Alright)",piece,36,It cost me three for the keys (Keys),three,INNER,ASSONANCE,vowel,MED,Y
+GATTI,35,"She need a chunk, not a piece (Alright)",piece,37,"Not the work, but the V",V,END,ASSONANCE,vowel,MED,Y
+GATTI,35,"She need a chunk, not a piece (Alright)",need,37,"Not the work, but the V",V,INNER,ASSONANCE,vowel,MED,Y
+GATTI,35,"She need a chunk, not a piece (Alright)",not,37,"Not the work, but the V",Not,INNER,REPEAT,spelling,HIGH,N
+GATTI,35,"She need a chunk, not a piece (Alright)",piece,38,She let it twirl to the beat,beat,END,SLANT,cmu,MED,Y
+GATTI,35,"She need a chunk, not a piece (Alright)",piece,39,"I send the word, bet it reach (Reach)",reach,END,SLANT,cmu,MED,Y
+GATTI,36,It cost me three for the keys (Keys),three,36,It cost me three for the keys (Keys),keys,INNER,ASSONANCE,vowel,MED,Y
+GATTI,36,It cost me three for the keys (Keys),keys,37,"Not the work, but the V",V,END,ASSONANCE,vowel,MED,Y
+GATTI,36,It cost me three for the keys (Keys),cost,37,"Not the work, but the V",Not,INNER,SLANT,cmu,MED,Y
+GATTI,36,It cost me three for the keys (Keys),three,37,"Not the work, but the V",V,INNER,PERFECT,cmu,HIGH,Y
+GATTI,36,It cost me three for the keys (Keys),keys,38,She let it twirl to the beat,beat,END,SLANT,cmu,MED,Y
+GATTI,36,It cost me three for the keys (Keys),three,38,She let it twirl to the beat,beat,INNER,ASSONANCE,vowel,MED,Y
+GATTI,36,It cost me three for the keys (Keys),keys,39,"I send the word, bet it reach (Reach)",reach,END,SLANT,cmu,MED,Y
+GATTI,36,It cost me three for the keys (Keys),keys,40,"Wearin' pearls, expensive beads (Beads)",beads,END,SLANT,cmu,MED,Y
+GATTI,37,"Not the work, but the V",V,38,She let it twirl to the beat,beat,END,ASSONANCE,vowel,MED,Y
+GATTI,37,"Not the work, but the V",work,38,She let it twirl to the beat,twirl,INNER,SLANT,cmu,MED,Y
+GATTI,37,"Not the work, but the V",V,39,"I send the word, bet it reach (Reach)",reach,END,ASSONANCE,vowel,MED,Y
+GATTI,37,"Not the work, but the V",work,39,"I send the word, bet it reach (Reach)",word,INNER,SLANT,cmu,MED,Y
+GATTI,37,"Not the work, but the V",V,40,"Wearin' pearls, expensive beads (Beads)",beads,END,ASSONANCE,vowel,MED,Y
+GATTI,37,"Not the work, but the V",V,41,I only hurl at my peak (It's lit),peak,END,ASSONANCE,vowel,MED,Y
+GATTI,38,She let it twirl to the beat,beat,39,"I send the word, bet it reach (Reach)",reach,END,SLANT,cmu,MED,Y
+GATTI,38,She let it twirl to the beat,let,39,"I send the word, bet it reach (Reach)",bet,INNER,PERFECT,cmu,HIGH,Y
+GATTI,38,She let it twirl to the beat,let,39,"I send the word, bet it reach (Reach)",send,INNER,ASSONANCE,vowel,MED,Y
+GATTI,38,She let it twirl to the beat,twirl,39,"I send the word, bet it reach (Reach)",word,INNER,SLANT,cmu,MED,Y
+GATTI,38,She let it twirl to the beat,beat,40,"Wearin' pearls, expensive beads (Beads)",beads,END,ASSONANCE,vowel,MED,Y
+GATTI,38,She let it twirl to the beat,let,40,"Wearin' pearls, expensive beads (Beads)",expensive,INNER,ASSONANCE,vowel,MED,Y
+GATTI,38,She let it twirl to the beat,let,40,"Wearin' pearls, expensive beads (Beads)",Wearin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,38,She let it twirl to the beat,twirl,40,"Wearin' pearls, expensive beads (Beads)",pearls,INNER,SLANT,cmu,MED,Y
+GATTI,38,She let it twirl to the beat,beat,41,I only hurl at my peak (It's lit),peak,END,SLANT,cmu,MED,Y
+GATTI,39,"I send the word, bet it reach (Reach)",send,39,"I send the word, bet it reach (Reach)",bet,INNER,ASSONANCE,vowel,MED,Y
+GATTI,39,"I send the word, bet it reach (Reach)",reach,40,"Wearin' pearls, expensive beads (Beads)",beads,END,ASSONANCE,vowel,MED,Y
+GATTI,39,"I send the word, bet it reach (Reach)",bet,40,"Wearin' pearls, expensive beads (Beads)",expensive,INNER,ASSONANCE,vowel,MED,Y
+GATTI,39,"I send the word, bet it reach (Reach)",bet,40,"Wearin' pearls, expensive beads (Beads)",Wearin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,39,"I send the word, bet it reach (Reach)",send,40,"Wearin' pearls, expensive beads (Beads)",expensive,INNER,ASSONANCE,vowel,MED,Y
+GATTI,39,"I send the word, bet it reach (Reach)",send,40,"Wearin' pearls, expensive beads (Beads)",Wearin,INNER,ASSONANCE,vowel,MED,Y
+GATTI,39,"I send the word, bet it reach (Reach)",word,40,"Wearin' pearls, expensive beads (Beads)",pearls,INNER,ASSONANCE,vowel,MED,Y
+GATTI,39,"I send the word, bet it reach (Reach)",reach,41,I only hurl at my peak (It's lit),peak,END,SLANT,cmu,MED,Y
+GATTI,39,"I send the word, bet it reach (Reach)",word,41,I only hurl at my peak (It's lit),hurl,INNER,SLANT,cmu,MED,Y
+GATTI,40,"Wearin' pearls, expensive beads (Beads)",Wearin,40,"Wearin' pearls, expensive beads (Beads)",expensive,INNER,ASSONANCE,vowel,MED,Y
+GATTI,40,"Wearin' pearls, expensive beads (Beads)",beads,41,I only hurl at my peak (It's lit),peak,END,ASSONANCE,vowel,MED,Y
+GATTI,40,"Wearin' pearls, expensive beads (Beads)",pearls,41,I only hurl at my peak (It's lit),hurl,INNER,SLANT,cmu,MED,Y
+GATTI,42,"Cuts, diamond cuts out in public",Cuts,42,"Cuts, diamond cuts out in public",cuts,INNER,REPEAT,spelling,HIGH,N
+GATTI,42,"Cuts, diamond cuts out in public",Cuts,42,"Cuts, diamond cuts out in public",public,INNER,ASSONANCE,vowel,MED,Y
+GATTI,42,"Cuts, diamond cuts out in public",Cuts,43,"Two cups of the stuff, now I'm up",cups,INNER,SLANT,cmu,MED,Y
+GATTI,42,"Cuts, diamond cuts out in public",Cuts,43,"Two cups of the stuff, now I'm up",stuff,INNER,ASSONANCE,vowel,MED,Y
+GATTI,42,"Cuts, diamond cuts out in public",public,43,"Two cups of the stuff, now I'm up",cups,INNER,ASSONANCE,vowel,MED,Y
+GATTI,42,"Cuts, diamond cuts out in public",public,43,"Two cups of the stuff, now I'm up",stuff,INNER,ASSONANCE,vowel,MED,Y
+GATTI,42,"Cuts, diamond cuts out in public",public,44,Coco Chanel when she tuck it,tuck,END,ASSONANCE,vowel,MED,Y
+GATTI,42,"Cuts, diamond cuts out in public",Cuts,44,Coco Chanel when she tuck it,tuck,INNER,ASSONANCE,vowel,MED,Y
+GATTI,42,"Cuts, diamond cuts out in public",public,45,We both get enough (Nah-nah-nah-nah-nah),enough,END,ASSONANCE,vowel,MED,Y
+GATTI,43,"Two cups of the stuff, now I'm up",cups,43,"Two cups of the stuff, now I'm up",stuff,INNER,ASSONANCE,vowel,MED,Y
+GATTI,43,"Two cups of the stuff, now I'm up",cups,44,Coco Chanel when she tuck it,tuck,INNER,ASSONANCE,vowel,MED,Y
+GATTI,43,"Two cups of the stuff, now I'm up",stuff,44,Coco Chanel when she tuck it,tuck,INNER,SLANT,cmu,MED,Y
+GATTI,43,"Two cups of the stuff, now I'm up",cups,45,We both get enough (Nah-nah-nah-nah-nah),enough,INNER,ASSONANCE,vowel,MED,Y
+GATTI,43,"Two cups of the stuff, now I'm up",stuff,45,We both get enough (Nah-nah-nah-nah-nah),enough,INNER,PERFECT,cmu,HIGH,Y
+GATTI,44,Coco Chanel when she tuck it,Chanel,44,Coco Chanel when she tuck it,when,INNER,SLANT,cmu,MED,Y
+GATTI,44,Coco Chanel when she tuck it,tuck,45,We both get enough (Nah-nah-nah-nah-nah),enough,END,SLANT,cmu,MED,Y
+GATTI,44,Coco Chanel when she tuck it,Chanel,45,We both get enough (Nah-nah-nah-nah-nah),get,INNER,SLANT,cmu,MED,Y
+GATTI,44,Coco Chanel when she tuck it,Coco,45,We both get enough (Nah-nah-nah-nah-nah),both,INNER,ASSONANCE,vowel,MED,Y
+GATTI,44,Coco Chanel when she tuck it,when,45,We both get enough (Nah-nah-nah-nah-nah),get,INNER,SLANT,cmu,MED,Y

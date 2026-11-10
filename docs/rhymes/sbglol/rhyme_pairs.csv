@@ -1,0 +1,236 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Glo Limit 4,1,"Four years, man, what the fuck?",what,1,"Four years, man, what the fuck?",fuck,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,1,"Four years, man, what the fuck?",Four,2,Fuck wrong with you?,wrong,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,1,"Four years, man, what the fuck?",fuck,2,Fuck wrong with you?,Fuck,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,1,"Four years, man, what the fuck?",what,2,Fuck wrong with you?,Fuck,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,1,"Four years, man, what the fuck?",fuck,3,Y'all fucked up (Y'all fucked up),fucked,END,SLANT,cmu,MED,Y
+Glo Limit 4,1,"Four years, man, what the fuck?",Four,3,Y'all fucked up (Y'all fucked up),Y'all,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,1,"Four years, man, what the fuck?",what,3,Y'all fucked up (Y'all fucked up),fucked,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,2,Fuck wrong with you?,Fuck,3,Y'all fucked up (Y'all fucked up),fucked,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,2,Fuck wrong with you?,wrong,3,Y'all fucked up (Y'all fucked up),Y'all,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,2,Fuck wrong with you?,wrong,4,And I ain't finna fuck around with y'all no more (Nah),more,END,SLANT,cmu,MED,Y
+Glo Limit 4,2,Fuck wrong with you?,Fuck,4,And I ain't finna fuck around with y'all no more (Nah),fuck,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,2,Fuck wrong with you?,wrong,4,And I ain't finna fuck around with y'all no more (Nah),y'all,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,2,Fuck wrong with you?,wrong,5,I don't want nothin' to do with y'all no more (Get the fuck on),more,END,SLANT,cmu,MED,Y
+Glo Limit 4,3,Y'all fucked up (Y'all fucked up),fucked,4,And I ain't finna fuck around with y'all no more (Nah),fuck,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,3,Y'all fucked up (Y'all fucked up),Y'all,4,And I ain't finna fuck around with y'all no more (Nah),more,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,3,Y'all fucked up (Y'all fucked up),Y'all,4,And I ain't finna fuck around with y'all no more (Nah),y'all,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,3,Y'all fucked up (Y'all fucked up),Y'all,5,I don't want nothin' to do with y'all no more (Get the fuck on),more,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,3,Y'all fucked up (Y'all fucked up),Y'all,5,I don't want nothin' to do with y'all no more (Get the fuck on),y'all,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,3,Y'all fucked up (Y'all fucked up),fucked,7,Y'all was cool as fuck (Cool as fuck),fuck,END,SLANT,cmu,MED,Y
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),y'all,4,And I ain't finna fuck around with y'all no more (Nah),more,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),more,5,I don't want nothin' to do with y'all no more (Get the fuck on),more,END,REPEAT,spelling,HIGH,N
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),more,5,I don't want nothin' to do with y'all no more (Get the fuck on),y'all,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),no,5,I don't want nothin' to do with y'all no more (Get the fuck on),don't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),no,5,I don't want nothin' to do with y'all no more (Get the fuck on),no,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),y'all,5,I don't want nothin' to do with y'all no more (Get the fuck on),more,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),y'all,5,I don't want nothin' to do with y'all no more (Get the fuck on),y'all,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),ain't,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",fake,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),more,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",horses,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),no,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",don't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),no,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,4,And I ain't finna fuck around with y'all no more (Nah),y'all,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",horses,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),don't,5,I don't want nothin' to do with y'all no more (Get the fuck on),no,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),want,5,I don't want nothin' to do with y'all no more (Get the fuck on),nothin,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),y'all,5,I don't want nothin' to do with y'all no more (Get the fuck on),more,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),don't,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",don't,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),don't,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),more,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",horses,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),no,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",don't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),no,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),nothin,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",car,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),nothin,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",got,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),want,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",car,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),want,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",got,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),y'all,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",horses,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),more,7,Y'all was cool as fuck (Cool as fuck),Y'all,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,5,I don't want nothin' to do with y'all no more (Get the fuck on),y'all,7,Y'all was cool as fuck (Cool as fuck),Y'all,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",car,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",got,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",don't,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",horses,7,Y'all was cool as fuck (Cool as fuck),Y'all,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",hoes,8,But I ain't gonna let you go and break my soul (Nah),soul,END,SLANT,cmu,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",car,8,But I ain't gonna let you go and break my soul (Nah),gonna,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",don't,8,But I ain't gonna let you go and break my soul (Nah),go,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",don't,8,But I ain't gonna let you go and break my soul (Nah),soul,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",fake,8,But I ain't gonna let you go and break my soul (Nah),ain't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",fake,8,But I ain't gonna let you go and break my soul (Nah),break,INNER,PERFECT,cmu,HIGH,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",got,8,But I ain't gonna let you go and break my soul (Nah),gonna,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",hoes,8,But I ain't gonna let you go and break my soul (Nah),go,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",hoes,9,And the snakes come and go and take control,control,END,SLANT,cmu,MED,Y
+Glo Limit 4,6,"Ayy, car got the horses, I don't do fake hoes, yeah (Skrrt)",hoes,10,"Had to get up out and go find my soul, yeah",soul,END,SLANT,cmu,MED,Y
+Glo Limit 4,7,Y'all was cool as fuck (Cool as fuck),fuck,9,And the snakes come and go and take control,come,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),ain't,8,But I ain't gonna let you go and break my soul (Nah),break,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),go,8,But I ain't gonna let you go and break my soul (Nah),soul,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),soul,9,And the snakes come and go and take control,control,END,PERFECT,cmu,HIGH,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),ain't,9,And the snakes come and go and take control,snakes,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),ain't,9,And the snakes come and go and take control,take,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),break,9,And the snakes come and go and take control,snakes,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),break,9,And the snakes come and go and take control,take,INNER,PERFECT,cmu,HIGH,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),go,9,And the snakes come and go and take control,control,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),go,9,And the snakes come and go and take control,go,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),soul,9,And the snakes come and go and take control,go,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),soul,10,"Had to get up out and go find my soul, yeah",soul,END,REPEAT,spelling,HIGH,N
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),go,10,"Had to get up out and go find my soul, yeah",go,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),go,10,"Had to get up out and go find my soul, yeah",soul,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),let,10,"Had to get up out and go find my soul, yeah",get,INNER,PERFECT,cmu,HIGH,Y
+Glo Limit 4,8,But I ain't gonna let you go and break my soul (Nah),soul,10,"Had to get up out and go find my soul, yeah",go,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,9,And the snakes come and go and take control,go,9,And the snakes come and go and take control,control,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,9,And the snakes come and go and take control,snakes,9,And the snakes come and go and take control,take,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,9,And the snakes come and go and take control,control,10,"Had to get up out and go find my soul, yeah",soul,END,PERFECT,cmu,HIGH,Y
+Glo Limit 4,9,And the snakes come and go and take control,control,10,"Had to get up out and go find my soul, yeah",go,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,9,And the snakes come and go and take control,go,10,"Had to get up out and go find my soul, yeah",go,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,9,And the snakes come and go and take control,go,10,"Had to get up out and go find my soul, yeah",soul,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,10,"Had to get up out and go find my soul, yeah",go,10,"Had to get up out and go find my soul, yeah",soul,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,10,"Had to get up out and go find my soul, yeah",Had,11,"Had me on a leash, yeah, that shit was weak",Had,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,10,"Had to get up out and go find my soul, yeah",Had,12,"For four damn years, couldn't even speak (Speak!)",damn,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,11,"Had me on a leash, yeah, that shit was weak",leash,11,"Had me on a leash, yeah, that shit was weak",weak,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,11,"Had me on a leash, yeah, that shit was weak",weak,12,"For four damn years, couldn't even speak (Speak!)",speak,END,PERFECT,cmu,HIGH,Y
+Glo Limit 4,11,"Had me on a leash, yeah, that shit was weak",Had,12,"For four damn years, couldn't even speak (Speak!)",damn,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,11,"Had me on a leash, yeah, that shit was weak",leash,12,"For four damn years, couldn't even speak (Speak!)",even,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,11,"Had me on a leash, yeah, that shit was weak",leash,12,"For four damn years, couldn't even speak (Speak!)",speak,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,11,"Had me on a leash, yeah, that shit was weak",shit,12,"For four damn years, couldn't even speak (Speak!)",years,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,11,"Had me on a leash, yeah, that shit was weak",weak,12,"For four damn years, couldn't even speak (Speak!)",even,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,11,"Had me on a leash, yeah, that shit was weak",Had,13,"Mind full of your lies, had my thoughts on lock",had,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,12,"For four damn years, couldn't even speak (Speak!)",even,12,"For four damn years, couldn't even speak (Speak!)",speak,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,12,"For four damn years, couldn't even speak (Speak!)",couldn't,13,"Mind full of your lies, had my thoughts on lock",full,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,12,"For four damn years, couldn't even speak (Speak!)",damn,13,"Mind full of your lies, had my thoughts on lock",had,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,12,"For four damn years, couldn't even speak (Speak!)",four,13,"Mind full of your lies, had my thoughts on lock",thoughts,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,12,"For four damn years, couldn't even speak (Speak!)",couldn't,14,"Knew I had to leave, couldn't take the knock (Bang!)",couldn't,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,12,"For four damn years, couldn't even speak (Speak!)",damn,14,"Knew I had to leave, couldn't take the knock (Bang!)",had,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,12,"For four damn years, couldn't even speak (Speak!)",even,14,"Knew I had to leave, couldn't take the knock (Bang!)",leave,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,12,"For four damn years, couldn't even speak (Speak!)",speak,14,"Knew I had to leave, couldn't take the knock (Bang!)",leave,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,13,"Mind full of your lies, had my thoughts on lock",Mind,13,"Mind full of your lies, had my thoughts on lock",lies,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,13,"Mind full of your lies, had my thoughts on lock",lock,14,"Knew I had to leave, couldn't take the knock (Bang!)",knock,END,PERFECT,cmu,HIGH,Y
+Glo Limit 4,13,"Mind full of your lies, had my thoughts on lock",full,14,"Knew I had to leave, couldn't take the knock (Bang!)",couldn't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,13,"Mind full of your lies, had my thoughts on lock",had,14,"Knew I had to leave, couldn't take the knock (Bang!)",had,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,13,"Mind full of your lies, had my thoughts on lock",thoughts,15,"I just spent four years, yeah (Four years!)",four,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,14,"Knew I had to leave, couldn't take the knock (Bang!)",take,16,"In a fake friend truck (Skrrt, skrrt, skrrt)",fake,INNER,PERFECT,cmu,HIGH,Y
+Glo Limit 4,15,"I just spent four years, yeah (Four years!)",spent,16,"In a fake friend truck (Skrrt, skrrt, skrrt)",friend,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,15,"I just spent four years, yeah (Four years!)",four,17,"Wish I could see the real you before the time was up, yeah (Yeah, yeah, yeah)",before,INNER,PERFECT,cmu,HIGH,Y
+Glo Limit 4,15,"I just spent four years, yeah (Four years!)",years,17,"Wish I could see the real you before the time was up, yeah (Yeah, yeah, yeah)",Wish,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,15,"I just spent four years, yeah (Four years!)",years,19,For a nigga to get done thinkin' (Thinkin'),thinkin,END,ASSONANCE,vowel,MED,Y
+Glo Limit 4,16,"In a fake friend truck (Skrrt, skrrt, skrrt)",fake,18,They gon' wait outside in the rain (In the rain),rain,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,16,"In a fake friend truck (Skrrt, skrrt, skrrt)",fake,18,They gon' wait outside in the rain (In the rain),wait,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,17,"Wish I could see the real you before the time was up, yeah (Yeah, yeah, yeah)",see,17,"Wish I could see the real you before the time was up, yeah (Yeah, yeah, yeah)",real,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,17,"Wish I could see the real you before the time was up, yeah (Yeah, yeah, yeah)",time,18,They gon' wait outside in the rain (In the rain),outside,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,17,"Wish I could see the real you before the time was up, yeah (Yeah, yeah, yeah)",Wish,19,For a nigga to get done thinkin' (Thinkin'),thinkin,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,18,They gon' wait outside in the rain (In the rain),wait,18,They gon' wait outside in the rain (In the rain),rain,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,18,They gon' wait outside in the rain (In the rain),rain,20,They be wantin' to buy a nigga chains (Nigga chains),chains,END,SLANT,cmu,MED,Y
+Glo Limit 4,18,They gon' wait outside in the rain (In the rain),outside,20,They be wantin' to buy a nigga chains (Nigga chains),buy,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,18,They gon' wait outside in the rain (In the rain),wait,20,They be wantin' to buy a nigga chains (Nigga chains),chains,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,19,For a nigga to get done thinkin' (Thinkin'),nigga,20,They be wantin' to buy a nigga chains (Nigga chains),nigga,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,19,For a nigga to get done thinkin' (Thinkin'),thinkin,21,I ain't even give 'em nothin' (Nothin'),give,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,20,They be wantin' to buy a nigga chains (Nigga chains),chains,21,I ain't even give 'em nothin' (Nothin'),ain't,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,20,They be wantin' to buy a nigga chains (Nigga chains),wantin,21,I ain't even give 'em nothin' (Nothin'),nothin,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,21,I ain't even give 'em nothin' (Nothin'),give,23,So you can't really tell me nothing (So you can't really tell me nothing),really,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,23,So you can't really tell me nothing (So you can't really tell me nothing),nothing,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",nothing,END,REPEAT,spelling,HIGH,N
+Glo Limit 4,23,So you can't really tell me nothing (So you can't really tell me nothing),can't,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",can,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,23,So you can't really tell me nothing (So you can't really tell me nothing),nothing,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",love,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,23,So you can't really tell me nothing (So you can't really tell me nothing),nothing,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",bustin,END,SLANT,cmu,MED,Y
+Glo Limit 4,23,So you can't really tell me nothing (So you can't really tell me nothing),nothing,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",gun,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,23,So you can't really tell me nothing (So you can't really tell me nothing),nothing,27,So I'ma give it all or nothing (I'ma give it all or nothing),nothing,END,REPEAT,spelling,HIGH,N
+Glo Limit 4,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",love,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",nothing,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",nothing,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",bustin,END,SLANT,cmu,MED,Y
+Glo Limit 4,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",love,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",bustin,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",love,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",gun,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",nothing,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",gun,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",Y'all,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",cross,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,24,"Y'all can keep your fake love, it's nothing (Keep your fake love, it's nothing)",nothing,27,So I'ma give it all or nothing (I'ma give it all or nothing),nothing,END,REPEAT,spelling,HIGH,N
+Glo Limit 4,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",gun,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",bustin,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",try,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",line,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",bustin,27,So I'ma give it all or nothing (I'ma give it all or nothing),nothing,END,SLANT,cmu,MED,Y
+Glo Limit 4,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",cross,27,So I'ma give it all or nothing (I'ma give it all or nothing),all,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,25,"And if you try to cross my line, gun bustin' (Try to cross my line, gun bustin')",gun,27,So I'ma give it all or nothing (I'ma give it all or nothing),nothing,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,26,"Huh, no limits (No limits)",limits,27,So I'ma give it all or nothing (I'ma give it all or nothing),give,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,26,"Huh, no limits (No limits)",no,28,"Called my friend a pedo, now you're just a stalker",pedo,INNER,ASSONANCE,vowel,LOW,N
+Glo Limit 4,27,So I'ma give it all or nothing (I'ma give it all or nothing),I'ma,27,So I'ma give it all or nothing (I'ma give it all or nothing),give,INNER,SLANT,spelling,LOW,Y
+Glo Limit 4,27,So I'ma give it all or nothing (I'ma give it all or nothing),all,28,"Called my friend a pedo, now you're just a stalker",Called,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,27,So I'ma give it all or nothing (I'ma give it all or nothing),all,28,"Called my friend a pedo, now you're just a stalker",stalker,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,27,So I'ma give it all or nothing (I'ma give it all or nothing),all,29,"Hit you with the truth so hard, need a walker",walker,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,27,So I'ma give it all or nothing (I'ma give it all or nothing),give,29,"Hit you with the truth so hard, need a walker",Hit,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,27,So I'ma give it all or nothing (I'ma give it all or nothing),I'ma,29,"Hit you with the truth so hard, need a walker",Hit,INNER,SLANT,spelling,LOW,Y
+Glo Limit 4,28,"Called my friend a pedo, now you're just a stalker",Called,28,"Called my friend a pedo, now you're just a stalker",stalker,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,28,"Called my friend a pedo, now you're just a stalker",friend,28,"Called my friend a pedo, now you're just a stalker",pedo,INNER,SLANT,spelling,LOW,Y
+Glo Limit 4,28,"Called my friend a pedo, now you're just a stalker",stalker,29,"Hit you with the truth so hard, need a walker",walker,END,MULTI,multi,HIGH,Y
+Glo Limit 4,28,"Called my friend a pedo, now you're just a stalker",Called,29,"Hit you with the truth so hard, need a walker",walker,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,28,"Called my friend a pedo, now you're just a stalker",friend,30,"Rollin' up 'Woods, missin' my old self",self,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,29,"Hit you with the truth so hard, need a walker",hard,30,"Rollin' up 'Woods, missin' my old self",Rollin,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,29,"Hit you with the truth so hard, need a walker",Hit,30,"Rollin' up 'Woods, missin' my old self",missin,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,29,"Hit you with the truth so hard, need a walker",Hit,31,"I'm a giant in this bitch now, can't nobody help",bitch,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,29,"Hit you with the truth so hard, need a walker",need,31,"I'm a giant in this bitch now, can't nobody help",nobody,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,30,"Rollin' up 'Woods, missin' my old self",self,31,"I'm a giant in this bitch now, can't nobody help",help,END,SLANT,cmu,MED,Y
+Glo Limit 4,30,"Rollin' up 'Woods, missin' my old self",missin,31,"I'm a giant in this bitch now, can't nobody help",bitch,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,30,"Rollin' up 'Woods, missin' my old self",'Woods,32,"My niggas in my vicinity, what's good?",good,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,30,"Rollin' up 'Woods, missin' my old self",'Woods,32,"My niggas in my vicinity, what's good?",what's,INNER,SLANT,spelling,LOW,Y
+Glo Limit 4,30,"Rollin' up 'Woods, missin' my old self",missin,32,"My niggas in my vicinity, what's good?",vicinity,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,31,"I'm a giant in this bitch now, can't nobody help",bitch,32,"My niggas in my vicinity, what's good?",vicinity,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,31,"I'm a giant in this bitch now, can't nobody help",can't,33,"Fuck your clique and then I pass 'em, no love",pass,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,31,"I'm a giant in this bitch now, can't nobody help",nobody,33,"Fuck your clique and then I pass 'em, no love",clique,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,32,"My niggas in my vicinity, what's good?",niggas,33,"Fuck your clique and then I pass 'em, no love",pass,INNER,PERFECT,spelling,MED,Y
+Glo Limit 4,32,"My niggas in my vicinity, what's good?",what's,33,"Fuck your clique and then I pass 'em, no love",Fuck,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,32,"My niggas in my vicinity, what's good?",what's,33,"Fuck your clique and then I pass 'em, no love",love,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,33,"Fuck your clique and then I pass 'em, no love",Fuck,33,"Fuck your clique and then I pass 'em, no love",love,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,33,"Fuck your clique and then I pass 'em, no love",no,34,"Uh, everywhere I go, I make it rain (Make it rain)",go,INNER,PERFECT,cmu,HIGH,Y
+Glo Limit 4,33,"Fuck your clique and then I pass 'em, no love",clique,35,And I don't even like your games (Uh-uh),even,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,33,"Fuck your clique and then I pass 'em, no love",no,35,And I don't even like your games (Uh-uh),don't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,34,"Uh, everywhere I go, I make it rain (Make it rain)",make,34,"Uh, everywhere I go, I make it rain (Make it rain)",rain,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,34,"Uh, everywhere I go, I make it rain (Make it rain)",rain,35,And I don't even like your games (Uh-uh),games,END,ASSONANCE,vowel,MED,Y
+Glo Limit 4,34,"Uh, everywhere I go, I make it rain (Make it rain)",go,35,And I don't even like your games (Uh-uh),don't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,34,"Uh, everywhere I go, I make it rain (Make it rain)",make,35,And I don't even like your games (Uh-uh),games,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,34,"Uh, everywhere I go, I make it rain (Make it rain)",rain,36,I just can't count the days (The days),days,END,SLANT,cmu,MED,Y
+Glo Limit 4,34,"Uh, everywhere I go, I make it rain (Make it rain)",make,36,I just can't count the days (The days),days,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,34,"Uh, everywhere I go, I make it rain (Make it rain)",rain,37,"Ben Frank out the bank, no fakes",fakes,END,ASSONANCE,vowel,MED,Y
+Glo Limit 4,35,And I don't even like your games (Uh-uh),games,36,I just can't count the days (The days),days,END,SLANT,cmu,MED,Y
+Glo Limit 4,35,And I don't even like your games (Uh-uh),games,37,"Ben Frank out the bank, no fakes",fakes,END,ASSONANCE,vowel,MED,Y
+Glo Limit 4,35,And I don't even like your games (Uh-uh),don't,37,"Ben Frank out the bank, no fakes",no,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,36,I just can't count the days (The days),can't,36,I just can't count the days (The days),count,INNER,SLANT,spelling,LOW,Y
+Glo Limit 4,36,I just can't count the days (The days),days,37,"Ben Frank out the bank, no fakes",fakes,END,ASSONANCE,vowel,MED,Y
+Glo Limit 4,36,I just can't count the days (The days),can't,37,"Ben Frank out the bank, no fakes",bank,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,36,I just can't count the days (The days),can't,37,"Ben Frank out the bank, no fakes",Frank,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,36,I just can't count the days (The days),can't,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",past,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,37,"Ben Frank out the bank, no fakes",Frank,37,"Ben Frank out the bank, no fakes",bank,INNER,PERFECT,cmu,HIGH,Y
+Glo Limit 4,37,"Ben Frank out the bank, no fakes",bank,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",past,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,37,"Ben Frank out the bank, no fakes",Ben,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",dead,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,37,"Ben Frank out the bank, no fakes",Frank,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",past,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,37,"Ben Frank out the bank, no fakes",no,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",know,INNER,PERFECT,cmu,HIGH,Y
+Glo Limit 4,37,"Ben Frank out the bank, no fakes",bank,39,That's why your weak ass won't ever be strong (Never),ass,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,37,"Ben Frank out the bank, no fakes",Ben,39,That's why your weak ass won't ever be strong (Never),ever,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,37,"Ben Frank out the bank, no fakes",Frank,39,That's why your weak ass won't ever be strong (Never),ass,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,37,"Ben Frank out the bank, no fakes",no,39,That's why your weak ass won't ever be strong (Never),won't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",wrong,39,That's why your weak ass won't ever be strong (Never),strong,END,PERFECT,cmu,HIGH,Y
+Glo Limit 4,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",dead,39,That's why your weak ass won't ever be strong (Never),ever,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",know,39,That's why your weak ass won't ever be strong (Never),won't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",past,39,That's why your weak ass won't ever be strong (Never),ass,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",know,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",know,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",past,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",can't,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,38,"You runnin' from your past, you know you dead wrong (Dead wrong)",runnin,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",fucked,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,39,That's why your weak ass won't ever be strong (Never),ass,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",can't,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,39,That's why your weak ass won't ever be strong (Never),weak,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",sleep,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,39,That's why your weak ass won't ever be strong (Never),why,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",why,INNER,REPEAT,spelling,HIGH,N
+Glo Limit 4,39,That's why your weak ass won't ever be strong (Never),won't,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",know,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,39,That's why your weak ass won't ever be strong (Never),weak,41,"Living with the guilt, six feet deep (Six feet)",deep,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,39,That's why your weak ass won't ever be strong (Never),weak,41,"Living with the guilt, six feet deep (Six feet)",feet,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",sleep,41,"Living with the guilt, six feet deep (Six feet)",deep,END,PERFECT,cmu,HIGH,Y
+Glo Limit 4,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",sleep,41,"Living with the guilt, six feet deep (Six feet)",feet,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",know,42,"I see right through you, you a ghost to me (A ghost)",ghost,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",sleep,42,"I see right through you, you a ghost to me (A ghost)",see,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",why,42,"I see right through you, you a ghost to me (A ghost)",right,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,40,"Yeah, you know you fucked up, that's why you can't sleep (Can't sleep)",sleep,43,"Had me tied up, but now I'm finally free (Finally free)",free,END,ASSONANCE,vowel,MED,Y
+Glo Limit 4,41,"Living with the guilt, six feet deep (Six feet)",feet,41,"Living with the guilt, six feet deep (Six feet)",deep,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,41,"Living with the guilt, six feet deep (Six feet)",guilt,41,"Living with the guilt, six feet deep (Six feet)",six,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,41,"Living with the guilt, six feet deep (Six feet)",Living,41,"Living with the guilt, six feet deep (Six feet)",guilt,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,41,"Living with the guilt, six feet deep (Six feet)",Living,41,"Living with the guilt, six feet deep (Six feet)",six,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,41,"Living with the guilt, six feet deep (Six feet)",deep,42,"I see right through you, you a ghost to me (A ghost)",see,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,41,"Living with the guilt, six feet deep (Six feet)",feet,42,"I see right through you, you a ghost to me (A ghost)",see,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,41,"Living with the guilt, six feet deep (Six feet)",deep,43,"Had me tied up, but now I'm finally free (Finally free)",free,END,ASSONANCE,vowel,MED,Y
+Glo Limit 4,41,"Living with the guilt, six feet deep (Six feet)",feet,43,"Had me tied up, but now I'm finally free (Finally free)",free,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,41,"Living with the guilt, six feet deep (Six feet)",deep,45,For the fakest motherfuckers I ever did see (Ever did see),see,END,ASSONANCE,vowel,MED,Y
+Glo Limit 4,42,"I see right through you, you a ghost to me (A ghost)",right,43,"Had me tied up, but now I'm finally free (Finally free)",finally,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,42,"I see right through you, you a ghost to me (A ghost)",right,43,"Had me tied up, but now I'm finally free (Finally free)",tied,INNER,SLANT,cmu,MED,Y
+Glo Limit 4,42,"I see right through you, you a ghost to me (A ghost)",see,43,"Had me tied up, but now I'm finally free (Finally free)",free,INNER,PERFECT,cmu,HIGH,Y
+Glo Limit 4,42,"I see right through you, you a ghost to me (A ghost)",see,44,"This ain't even a diss, this a eulogy (R.I.P.)",even,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,42,"I see right through you, you a ghost to me (A ghost)",through,44,"This ain't even a diss, this a eulogy (R.I.P.)",eulogy,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,43,"Had me tied up, but now I'm finally free (Finally free)",tied,43,"Had me tied up, but now I'm finally free (Finally free)",finally,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,43,"Had me tied up, but now I'm finally free (Finally free)",free,44,"This ain't even a diss, this a eulogy (R.I.P.)",even,INNER,ASSONANCE,vowel,MED,Y
+Glo Limit 4,43,"Had me tied up, but now I'm finally free (Finally free)",free,45,For the fakest motherfuckers I ever did see (Ever did see),see,END,PERFECT,cmu,HIGH,Y
+Glo Limit 4,44,"This ain't even a diss, this a eulogy (R.I.P.)",even,45,For the fakest motherfuckers I ever did see (Ever did see),see,INNER,ASSONANCE,vowel,MED,Y

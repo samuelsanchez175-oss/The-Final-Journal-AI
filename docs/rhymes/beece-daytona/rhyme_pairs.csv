@@ -1,0 +1,323 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Boulevard,1,I got nothing but killas up in my squad,got,1,I got nothing but killas up in my squad,squad,INNER,SLANT,cmu,MED,Y
+Boulevard,1,I got nothing but killas up in my squad,squad,2,"We shoot the gun first, then we talk to god",god,END,PERFECT,cmu,HIGH,Y
+Boulevard,1,I got nothing but killas up in my squad,got,2,"We shoot the gun first, then we talk to god",god,INNER,SLANT,cmu,MED,Y
+Boulevard,1,I got nothing but killas up in my squad,nothing,2,"We shoot the gun first, then we talk to god",gun,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,1,I got nothing but killas up in my squad,squad,3,"Early morning move the soft, later move the hard",hard,END,SLANT,cmu,MED,Y
+Boulevard,1,I got nothing but killas up in my squad,got,3,"Early morning move the soft, later move the hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,1,I got nothing but killas up in my squad,got,3,"Early morning move the soft, later move the hard",soft,INNER,SLANT,cmu,MED,Y
+Boulevard,1,I got nothing but killas up in my squad,squad,3,"Early morning move the soft, later move the hard",soft,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,1,I got nothing but killas up in my squad,squad,4,This the life of stang city on the boulevard,boulevard,END,SLANT,cmu,MED,Y
+Boulevard,1,I got nothing but killas up in my squad,squad,5,"On the boulevard, we be going hard",hard,END,SLANT,cmu,MED,Y
+Boulevard,2,"We shoot the gun first, then we talk to god",god,3,"Early morning move the soft, later move the hard",hard,END,SLANT,cmu,MED,Y
+Boulevard,2,"We shoot the gun first, then we talk to god",first,3,"Early morning move the soft, later move the hard",Early,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,2,"We shoot the gun first, then we talk to god",god,3,"Early morning move the soft, later move the hard",soft,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,2,"We shoot the gun first, then we talk to god",shoot,3,"Early morning move the soft, later move the hard",move,INNER,SLANT,cmu,MED,Y
+Boulevard,2,"We shoot the gun first, then we talk to god",talk,3,"Early morning move the soft, later move the hard",morning,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,2,"We shoot the gun first, then we talk to god",god,4,This the life of stang city on the boulevard,boulevard,END,SLANT,cmu,MED,Y
+Boulevard,2,"We shoot the gun first, then we talk to god",god,5,"On the boulevard, we be going hard",hard,END,SLANT,cmu,MED,Y
+Boulevard,2,"We shoot the gun first, then we talk to god",god,6,"Early with the soft, later with the hard",hard,END,SLANT,cmu,MED,Y
+Boulevard,3,"Early morning move the soft, later move the hard",move,3,"Early morning move the soft, later move the hard",move,INNER,REPEAT,spelling,HIGH,N
+Boulevard,3,"Early morning move the soft, later move the hard",soft,3,"Early morning move the soft, later move the hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,3,"Early morning move the soft, later move the hard",hard,4,This the life of stang city on the boulevard,boulevard,END,PERFECT,cmu,HIGH,Y
+Boulevard,3,"Early morning move the soft, later move the hard",soft,4,This the life of stang city on the boulevard,boulevard,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,3,"Early morning move the soft, later move the hard",hard,5,"On the boulevard, we be going hard",hard,END,REPEAT,spelling,HIGH,N
+Boulevard,3,"Early morning move the soft, later move the hard",hard,5,"On the boulevard, we be going hard",boulevard,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,3,"Early morning move the soft, later move the hard",soft,5,"On the boulevard, we be going hard",boulevard,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,3,"Early morning move the soft, later move the hard",soft,5,"On the boulevard, we be going hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,3,"Early morning move the soft, later move the hard",hard,6,"Early with the soft, later with the hard",hard,END,REPEAT,spelling,HIGH,N
+Boulevard,3,"Early morning move the soft, later move the hard",hard,7,"Shoot the gun first, later talk to god",god,END,SLANT,cmu,MED,Y
+Boulevard,4,This the life of stang city on the boulevard,boulevard,5,"On the boulevard, we be going hard",hard,END,PERFECT,cmu,HIGH,Y
+Boulevard,4,This the life of stang city on the boulevard,boulevard,5,"On the boulevard, we be going hard",boulevard,INNER,REPEAT,spelling,HIGH,N
+Boulevard,4,This the life of stang city on the boulevard,boulevard,6,"Early with the soft, later with the hard",hard,END,PERFECT,cmu,HIGH,Y
+Boulevard,4,This the life of stang city on the boulevard,boulevard,6,"Early with the soft, later with the hard",soft,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,4,This the life of stang city on the boulevard,boulevard,7,"Shoot the gun first, later talk to god",god,END,SLANT,cmu,MED,Y
+Boulevard,4,This the life of stang city on the boulevard,boulevard,8,"I gots to get it, gots to get it so I go hard",hard,END,PERFECT,cmu,HIGH,Y
+Boulevard,5,"On the boulevard, we be going hard",boulevard,5,"On the boulevard, we be going hard",hard,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,5,"On the boulevard, we be going hard",hard,6,"Early with the soft, later with the hard",hard,END,REPEAT,spelling,HIGH,N
+Boulevard,5,"On the boulevard, we be going hard",boulevard,6,"Early with the soft, later with the hard",hard,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,5,"On the boulevard, we be going hard",boulevard,6,"Early with the soft, later with the hard",soft,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,5,"On the boulevard, we be going hard",hard,6,"Early with the soft, later with the hard",soft,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,5,"On the boulevard, we be going hard",hard,7,"Shoot the gun first, later talk to god",god,END,SLANT,cmu,MED,Y
+Boulevard,5,"On the boulevard, we be going hard",boulevard,7,"Shoot the gun first, later talk to god",god,INNER,SLANT,cmu,MED,Y
+Boulevard,5,"On the boulevard, we be going hard",hard,8,"I gots to get it, gots to get it so I go hard",hard,END,REPEAT,spelling,HIGH,N
+Boulevard,6,"Early with the soft, later with the hard",soft,6,"Early with the soft, later with the hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,6,"Early with the soft, later with the hard",hard,7,"Shoot the gun first, later talk to god",god,END,SLANT,cmu,MED,Y
+Boulevard,6,"Early with the soft, later with the hard",Early,7,"Shoot the gun first, later talk to god",first,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,6,"Early with the soft, later with the hard",later,7,"Shoot the gun first, later talk to god",later,INNER,REPEAT,spelling,HIGH,N
+Boulevard,6,"Early with the soft, later with the hard",soft,7,"Shoot the gun first, later talk to god",god,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,6,"Early with the soft, later with the hard",hard,8,"I gots to get it, gots to get it so I go hard",hard,END,REPEAT,spelling,HIGH,N
+Boulevard,6,"Early with the soft, later with the hard",soft,8,"I gots to get it, gots to get it so I go hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,7,"Shoot the gun first, later talk to god",god,8,"I gots to get it, gots to get it so I go hard",hard,END,SLANT,cmu,MED,Y
+Boulevard,7,"Shoot the gun first, later talk to god",god,9,You can call me James Bond cus I'm on a mission,Bond,INNER,SLANT,cmu,MED,Y
+Boulevard,7,"Shoot the gun first, later talk to god",gun,9,You can call me James Bond cus I'm on a mission,cus,INNER,SLANT,cmu,MED,Y
+Boulevard,7,"Shoot the gun first, later talk to god",later,9,You can call me James Bond cus I'm on a mission,James,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,7,"Shoot the gun first, later talk to god",talk,9,You can call me James Bond cus I'm on a mission,call,INNER,SLANT,cmu,MED,Y
+Boulevard,8,"I gots to get it, gots to get it so I go hard",get,8,"I gots to get it, gots to get it so I go hard",get,INNER,REPEAT,spelling,HIGH,N
+Boulevard,8,"I gots to get it, gots to get it so I go hard",gots,8,"I gots to get it, gots to get it so I go hard",gots,INNER,REPEAT,spelling,HIGH,N
+Boulevard,8,"I gots to get it, gots to get it so I go hard",hard,9,You can call me James Bond cus I'm on a mission,Bond,INNER,SLANT,cmu,MED,Y
+Boulevard,8,"I gots to get it, gots to get it so I go hard",hard,10,"Hit my trap, big garbage bags full of taped chickens",garbage,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,mission,10,"Hit my trap, big garbage bags full of taped chickens",chickens,END,ASSONANCE,vowel,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,Bond,10,"Hit my trap, big garbage bags full of taped chickens",garbage,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,can,10,"Hit my trap, big garbage bags full of taped chickens",bags,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,can,10,"Hit my trap, big garbage bags full of taped chickens",trap,INNER,SLANT,cmu,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,James,10,"Hit my trap, big garbage bags full of taped chickens",taped,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,mission,10,"Hit my trap, big garbage bags full of taped chickens",big,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,mission,10,"Hit my trap, big garbage bags full of taped chickens",Hit,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,mission,11,I got my hands full of water like I'm doing dishes,dishes,END,SLANT,cmu,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,Bond,11,I got my hands full of water like I'm doing dishes,got,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,call,11,I got my hands full of water like I'm doing dishes,water,INNER,SLANT,cmu,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,can,11,I got my hands full of water like I'm doing dishes,hands,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,mission,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,END,SLANT,cmu,MED,Y
+Boulevard,9,You can call me James Bond cus I'm on a mission,mission,13,"You say you don't care bout the town, but why you act suspicious?",suspicious,END,SLANT,cmu,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",big,10,"Hit my trap, big garbage bags full of taped chickens",chickens,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",Hit,10,"Hit my trap, big garbage bags full of taped chickens",big,INNER,SLANT,cmu,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",Hit,10,"Hit my trap, big garbage bags full of taped chickens",chickens,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",trap,10,"Hit my trap, big garbage bags full of taped chickens",bags,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",chickens,11,I got my hands full of water like I'm doing dishes,dishes,END,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",bags,11,I got my hands full of water like I'm doing dishes,hands,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",big,11,I got my hands full of water like I'm doing dishes,dishes,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",full,11,I got my hands full of water like I'm doing dishes,full,INNER,REPEAT,spelling,HIGH,N
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",garbage,11,I got my hands full of water like I'm doing dishes,got,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",Hit,11,I got my hands full of water like I'm doing dishes,dishes,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",trap,11,I got my hands full of water like I'm doing dishes,hands,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",chickens,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,END,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",big,12,"I give you niggas so much cake, it's like I'm giving wishes",give,INNER,SLANT,cmu,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",big,12,"I give you niggas so much cake, it's like I'm giving wishes",giving,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",big,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",chickens,12,"I give you niggas so much cake, it's like I'm giving wishes",give,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",chickens,12,"I give you niggas so much cake, it's like I'm giving wishes",giving,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",chickens,12,"I give you niggas so much cake, it's like I'm giving wishes",niggas,INNER,SLANT,spelling,LOW,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",Hit,12,"I give you niggas so much cake, it's like I'm giving wishes",give,INNER,SLANT,cmu,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",Hit,12,"I give you niggas so much cake, it's like I'm giving wishes",giving,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",Hit,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",taped,12,"I give you niggas so much cake, it's like I'm giving wishes",cake,INNER,SLANT,cmu,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",chickens,13,"You say you don't care bout the town, but why you act suspicious?",suspicious,END,ASSONANCE,vowel,MED,Y
+Boulevard,10,"Hit my trap, big garbage bags full of taped chickens",chickens,14,"You say you out here on your grind, well nigga hit me",hit,END,ASSONANCE,vowel,MED,Y
+Boulevard,11,I got my hands full of water like I'm doing dishes,dishes,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,END,SLANT,cmu,MED,Y
+Boulevard,11,I got my hands full of water like I'm doing dishes,dishes,12,"I give you niggas so much cake, it's like I'm giving wishes",give,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,11,I got my hands full of water like I'm doing dishes,dishes,12,"I give you niggas so much cake, it's like I'm giving wishes",giving,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,11,I got my hands full of water like I'm doing dishes,like,12,"I give you niggas so much cake, it's like I'm giving wishes",like,INNER,REPEAT,spelling,HIGH,N
+Boulevard,11,I got my hands full of water like I'm doing dishes,dishes,13,"You say you don't care bout the town, but why you act suspicious?",suspicious,END,SLANT,cmu,MED,Y
+Boulevard,11,I got my hands full of water like I'm doing dishes,hands,13,"You say you don't care bout the town, but why you act suspicious?",act,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,11,I got my hands full of water like I'm doing dishes,like,13,"You say you don't care bout the town, but why you act suspicious?",why,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,11,I got my hands full of water like I'm doing dishes,dishes,14,"You say you out here on your grind, well nigga hit me",hit,END,ASSONANCE,vowel,MED,Y
+Boulevard,11,I got my hands full of water like I'm doing dishes,dishes,15,"I gots to get it, gots to get it serve it strapped with digits",digits,END,SLANT,cmu,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",give,12,"I give you niggas so much cake, it's like I'm giving wishes",giving,INNER,SLANT,cmu,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",give,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",giving,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,13,"You say you don't care bout the town, but why you act suspicious?",suspicious,END,SLANT,cmu,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",cake,13,"You say you don't care bout the town, but why you act suspicious?",say,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",give,13,"You say you don't care bout the town, but why you act suspicious?",suspicious,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",giving,13,"You say you don't care bout the town, but why you act suspicious?",suspicious,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",like,13,"You say you don't care bout the town, but why you act suspicious?",why,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,14,"You say you out here on your grind, well nigga hit me",hit,END,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",cake,14,"You say you out here on your grind, well nigga hit me",say,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",give,14,"You say you out here on your grind, well nigga hit me",hit,INNER,SLANT,cmu,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",giving,14,"You say you out here on your grind, well nigga hit me",hit,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",like,14,"You say you out here on your grind, well nigga hit me",grind,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",niggas,14,"You say you out here on your grind, well nigga hit me",nigga,INNER,SLANT,spelling,LOW,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,15,"I gots to get it, gots to get it serve it strapped with digits",digits,END,SLANT,cmu,MED,Y
+Boulevard,12,"I give you niggas so much cake, it's like I'm giving wishes",wishes,16,"One thing about me, I won't let no bullshit slip me",slip,END,ASSONANCE,vowel,MED,Y
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",bout,13,"You say you don't care bout the town, but why you act suspicious?",town,INNER,SLANT,cmu,MED,Y
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",suspicious,14,"You say you out here on your grind, well nigga hit me",hit,END,ASSONANCE,vowel,MED,Y
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",care,14,"You say you out here on your grind, well nigga hit me",well,INNER,SLANT,cmu,MED,Y
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",say,14,"You say you out here on your grind, well nigga hit me",say,INNER,REPEAT,spelling,HIGH,N
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",why,14,"You say you out here on your grind, well nigga hit me",grind,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",suspicious,15,"I gots to get it, gots to get it serve it strapped with digits",digits,END,SLANT,cmu,MED,Y
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",act,15,"I gots to get it, gots to get it serve it strapped with digits",strapped,INNER,SLANT,cmu,MED,Y
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",care,15,"I gots to get it, gots to get it serve it strapped with digits",get,INNER,SLANT,cmu,MED,Y
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",don't,15,"I gots to get it, gots to get it serve it strapped with digits",gots,INNER,ASSONANCE,vowel,LOW,N
+Boulevard,13,"You say you don't care bout the town, but why you act suspicious?",suspicious,16,"One thing about me, I won't let no bullshit slip me",slip,END,ASSONANCE,vowel,MED,Y
+Boulevard,14,"You say you out here on your grind, well nigga hit me",nigga,14,"You say you out here on your grind, well nigga hit me",hit,INNER,SLANT,spelling,LOW,Y
+Boulevard,14,"You say you out here on your grind, well nigga hit me",hit,15,"I gots to get it, gots to get it serve it strapped with digits",digits,END,ASSONANCE,vowel,MED,Y
+Boulevard,14,"You say you out here on your grind, well nigga hit me",well,15,"I gots to get it, gots to get it serve it strapped with digits",get,INNER,SLANT,cmu,MED,Y
+Boulevard,14,"You say you out here on your grind, well nigga hit me",hit,16,"One thing about me, I won't let no bullshit slip me",slip,END,SLANT,cmu,MED,Y
+Boulevard,14,"You say you out here on your grind, well nigga hit me",hit,16,"One thing about me, I won't let no bullshit slip me",bullshit,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,14,"You say you out here on your grind, well nigga hit me",hit,16,"One thing about me, I won't let no bullshit slip me",thing,INNER,SLANT,cmu,MED,Y
+Boulevard,14,"You say you out here on your grind, well nigga hit me",nigga,16,"One thing about me, I won't let no bullshit slip me",bullshit,INNER,SLANT,spelling,LOW,Y
+Boulevard,14,"You say you out here on your grind, well nigga hit me",nigga,16,"One thing about me, I won't let no bullshit slip me",slip,INNER,SLANT,spelling,LOW,Y
+Boulevard,14,"You say you out here on your grind, well nigga hit me",well,16,"One thing about me, I won't let no bullshit slip me",let,INNER,SLANT,cmu,MED,Y
+Boulevard,15,"I gots to get it, gots to get it serve it strapped with digits",get,15,"I gots to get it, gots to get it serve it strapped with digits",get,INNER,REPEAT,spelling,HIGH,N
+Boulevard,15,"I gots to get it, gots to get it serve it strapped with digits",gots,15,"I gots to get it, gots to get it serve it strapped with digits",gots,INNER,REPEAT,spelling,HIGH,N
+Boulevard,15,"I gots to get it, gots to get it serve it strapped with digits",digits,16,"One thing about me, I won't let no bullshit slip me",slip,END,ASSONANCE,vowel,MED,Y
+Boulevard,15,"I gots to get it, gots to get it serve it strapped with digits",digits,16,"One thing about me, I won't let no bullshit slip me",bullshit,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,15,"I gots to get it, gots to get it serve it strapped with digits",digits,16,"One thing about me, I won't let no bullshit slip me",thing,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,15,"I gots to get it, gots to get it serve it strapped with digits",get,16,"One thing about me, I won't let no bullshit slip me",let,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,15,"I gots to get it, gots to get it serve it strapped with digits",gots,16,"One thing about me, I won't let no bullshit slip me",won't,INNER,ASSONANCE,vowel,LOW,N
+Boulevard,15,"I gots to get it, gots to get it serve it strapped with digits",digits,17,"I ain't slipping, I'm just plotting what I'm bout to do though",slipping,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",bullshit,16,"One thing about me, I won't let no bullshit slip me",slip,INNER,SLANT,cmu,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",thing,16,"One thing about me, I won't let no bullshit slip me",bullshit,INNER,SLANT,cmu,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",thing,16,"One thing about me, I won't let no bullshit slip me",slip,INNER,SLANT,cmu,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",won't,16,"One thing about me, I won't let no bullshit slip me",no,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",about,17,"I ain't slipping, I'm just plotting what I'm bout to do though",bout,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",bullshit,17,"I ain't slipping, I'm just plotting what I'm bout to do though",slipping,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",no,17,"I ain't slipping, I'm just plotting what I'm bout to do though",though,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",One,17,"I ain't slipping, I'm just plotting what I'm bout to do though",what,INNER,SLANT,cmu,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",slip,17,"I ain't slipping, I'm just plotting what I'm bout to do though",slipping,INNER,SLANT,cmu,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",thing,17,"I ain't slipping, I'm just plotting what I'm bout to do though",slipping,INNER,SLANT,cmu,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",won't,17,"I ain't slipping, I'm just plotting what I'm bout to do though",though,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",about,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",bout,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",One,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",bunched,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,16,"One thing about me, I won't let no bullshit slip me",One,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",one,INNER,REPEAT,spelling,HIGH,N
+Boulevard,17,"I ain't slipping, I'm just plotting what I'm bout to do though",ain't,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",make,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,17,"I ain't slipping, I'm just plotting what I'm bout to do though",bout,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",bout,INNER,REPEAT,spelling,HIGH,N
+Boulevard,17,"I ain't slipping, I'm just plotting what I'm bout to do though",what,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",bunched,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,17,"I ain't slipping, I'm just plotting what I'm bout to do though",what,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",one,INNER,SLANT,cmu,MED,Y
+Boulevard,17,"I ain't slipping, I'm just plotting what I'm bout to do though",though,19,Strapped with loaded Oozo's,loaded,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",Call,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",door,INNER,SLANT,cmu,MED,Y
+Boulevard,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",one,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",bunched,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,18,"I make one Call, I'll have bout 8 niggas bunched in the 2 door",have,19,Strapped with loaded Oozo's,Strapped,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,19,Strapped with loaded Oozo's,Oozo's,20,Send this bitch off to Pluto,Pluto,END,ASSONANCE,vowel,LOW,N
+Boulevard,19,Strapped with loaded Oozo's,Strapped,21,"The way my boulevard kick, you can call it ju-do",can,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,20,Send this bitch off to Pluto,Pluto,21,"The way my boulevard kick, you can call it ju-do",ju,END,ASSONANCE,vowel,MED,Y
+Boulevard,20,Send this bitch off to Pluto,bitch,21,"The way my boulevard kick, you can call it ju-do",kick,INNER,SLANT,cmu,MED,Y
+Boulevard,20,Send this bitch off to Pluto,Pluto,22,Say you can call it ju-do,ju,END,ASSONANCE,vowel,MED,Y
+Boulevard,20,Send this bitch off to Pluto,Pluto,23,Yea you can call it ju-do,ju,END,ASSONANCE,vowel,MED,Y
+Boulevard,21,"The way my boulevard kick, you can call it ju-do",ju,22,Say you can call it ju-do,ju,END,REPEAT,spelling,HIGH,N
+Boulevard,21,"The way my boulevard kick, you can call it ju-do",call,22,Say you can call it ju-do,call,INNER,REPEAT,spelling,HIGH,N
+Boulevard,21,"The way my boulevard kick, you can call it ju-do",can,22,Say you can call it ju-do,can,INNER,REPEAT,spelling,HIGH,N
+Boulevard,21,"The way my boulevard kick, you can call it ju-do",way,22,Say you can call it ju-do,Say,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,21,"The way my boulevard kick, you can call it ju-do",ju,23,Yea you can call it ju-do,ju,END,REPEAT,spelling,HIGH,N
+Boulevard,21,"The way my boulevard kick, you can call it ju-do",call,23,Yea you can call it ju-do,call,INNER,REPEAT,spelling,HIGH,N
+Boulevard,21,"The way my boulevard kick, you can call it ju-do",can,23,Yea you can call it ju-do,can,INNER,REPEAT,spelling,HIGH,N
+Boulevard,22,Say you can call it ju-do,ju,23,Yea you can call it ju-do,ju,END,REPEAT,spelling,HIGH,N
+Boulevard,22,Say you can call it ju-do,call,23,Yea you can call it ju-do,call,INNER,REPEAT,spelling,HIGH,N
+Boulevard,22,Say you can call it ju-do,can,23,Yea you can call it ju-do,can,INNER,REPEAT,spelling,HIGH,N
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",keep,24,"But quiet down, heard they listening, better keep it D-lo",D,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",lo,25,"Word around, I'm the one, like my nigga Dee-bo",bo,END,PERFECT,cmu,HIGH,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",D,25,"Word around, I'm the one, like my nigga Dee-bo",Dee,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",down,25,"Word around, I'm the one, like my nigga Dee-bo",around,INNER,SLANT,cmu,MED,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",heard,25,"Word around, I'm the one, like my nigga Dee-bo",Word,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",keep,25,"Word around, I'm the one, like my nigga Dee-bo",Dee,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",quiet,25,"Word around, I'm the one, like my nigga Dee-bo",like,INNER,SLANT,cmu,MED,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",lo,26,Probably cus how I whip the sea or how I make the D go,go,END,PERFECT,cmu,HIGH,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",D,26,Probably cus how I whip the sea or how I make the D go,D,INNER,REPEAT,spelling,HIGH,N
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",D,26,Probably cus how I whip the sea or how I make the D go,Probably,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",D,26,Probably cus how I whip the sea or how I make the D go,sea,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",down,26,Probably cus how I whip the sea or how I make the D go,how,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",keep,26,Probably cus how I whip the sea or how I make the D go,D,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",keep,26,Probably cus how I whip the sea or how I make the D go,Probably,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",keep,26,Probably cus how I whip the sea or how I make the D go,sea,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",listening,26,Probably cus how I whip the sea or how I make the D go,whip,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,24,"But quiet down, heard they listening, better keep it D-lo",lo,28,"Stain Gang, bitch, rob you for your coca",coca,END,ASSONANCE,vowel,MED,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",bo,26,Probably cus how I whip the sea or how I make the D go,go,END,PERFECT,cmu,HIGH,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",around,26,Probably cus how I whip the sea or how I make the D go,how,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",Dee,26,Probably cus how I whip the sea or how I make the D go,D,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",Dee,26,Probably cus how I whip the sea or how I make the D go,Probably,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",Dee,26,Probably cus how I whip the sea or how I make the D go,sea,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",nigga,26,Probably cus how I whip the sea or how I make the D go,whip,INNER,SLANT,spelling,LOW,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",one,26,Probably cus how I whip the sea or how I make the D go,cus,INNER,SLANT,cmu,MED,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",bo,27,"I go hard, bitch, so hard",go,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",bo,28,"Stain Gang, bitch, rob you for your coca",coca,END,ASSONANCE,vowel,MED,Y
+Boulevard,25,"Word around, I'm the one, like my nigga Dee-bo",bo,29,"My bitch mocha, I'ma choke her",choke,END,ASSONANCE,vowel,MED,Y
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,how,26,Probably cus how I whip the sea or how I make the D go,how,INNER,REPEAT,spelling,HIGH,N
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,Probably,26,Probably cus how I whip the sea or how I make the D go,D,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,Probably,26,Probably cus how I whip the sea or how I make the D go,sea,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,sea,26,Probably cus how I whip the sea or how I make the D go,D,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,go,27,"I go hard, bitch, so hard",go,INNER,REPEAT,spelling,HIGH,N
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,whip,27,"I go hard, bitch, so hard",bitch,INNER,SLANT,cmu,MED,Y
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,go,28,"Stain Gang, bitch, rob you for your coca",coca,END,ASSONANCE,vowel,MED,Y
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,make,28,"Stain Gang, bitch, rob you for your coca",Stain,INNER,SLANT,cmu,MED,Y
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,whip,28,"Stain Gang, bitch, rob you for your coca",bitch,INNER,SLANT,cmu,MED,Y
+Boulevard,26,Probably cus how I whip the sea or how I make the D go,go,29,"My bitch mocha, I'ma choke her",choke,END,ASSONANCE,vowel,MED,Y
+Boulevard,27,"I go hard, bitch, so hard",hard,27,"I go hard, bitch, so hard",hard,INNER,REPEAT,spelling,HIGH,N
+Boulevard,27,"I go hard, bitch, so hard",bitch,28,"Stain Gang, bitch, rob you for your coca",bitch,INNER,REPEAT,spelling,HIGH,N
+Boulevard,27,"I go hard, bitch, so hard",go,28,"Stain Gang, bitch, rob you for your coca",coca,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,27,"I go hard, bitch, so hard",hard,28,"Stain Gang, bitch, rob you for your coca",rob,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,27,"I go hard, bitch, so hard",bitch,29,"My bitch mocha, I'ma choke her",bitch,INNER,REPEAT,spelling,HIGH,N
+Boulevard,27,"I go hard, bitch, so hard",bitch,29,"My bitch mocha, I'ma choke her",I'ma,INNER,SLANT,spelling,LOW,Y
+Boulevard,27,"I go hard, bitch, so hard",go,29,"My bitch mocha, I'ma choke her",choke,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,27,"I go hard, bitch, so hard",go,29,"My bitch mocha, I'ma choke her",mocha,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,28,"Stain Gang, bitch, rob you for your coca",coca,29,"My bitch mocha, I'ma choke her",choke,END,SLANT,cmu,MED,Y
+Boulevard,28,"Stain Gang, bitch, rob you for your coca",bitch,29,"My bitch mocha, I'ma choke her",bitch,INNER,REPEAT,spelling,HIGH,N
+Boulevard,28,"Stain Gang, bitch, rob you for your coca",bitch,29,"My bitch mocha, I'ma choke her",I'ma,INNER,SLANT,spelling,LOW,Y
+Boulevard,28,"Stain Gang, bitch, rob you for your coca",coca,29,"My bitch mocha, I'ma choke her",mocha,INNER,MULTI,multi,HIGH,Y
+Boulevard,28,"Stain Gang, bitch, rob you for your coca",rob coca,29,"My bitch mocha, I'ma choke her",bitch mocha,INNER,MULTI,multi,HIGH,Y
+Boulevard,28,"Stain Gang, bitch, rob you for your coca",coca,30,"Not with my hands dog, with my stroker",stroker,END,SLANT,spelling,LOW,Y
+Boulevard,28,"Stain Gang, bitch, rob you for your coca",Gang,30,"Not with my hands dog, with my stroker",hands,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,28,"Stain Gang, bitch, rob you for your coca",rob,30,"Not with my hands dog, with my stroker",Not,INNER,SLANT,cmu,MED,Y
+Boulevard,28,"Stain Gang, bitch, rob you for your coca",coca,31,"We some tota's, bitch, I'm Sosa",Sosa,END,SLANT,cmu,MED,Y
+Boulevard,29,"My bitch mocha, I'ma choke her",bitch,29,"My bitch mocha, I'ma choke her",I'ma,INNER,SLANT,spelling,LOW,Y
+Boulevard,29,"My bitch mocha, I'ma choke her",mocha,29,"My bitch mocha, I'ma choke her",choke,INNER,SLANT,cmu,MED,Y
+Boulevard,29,"My bitch mocha, I'ma choke her",choke,30,"Not with my hands dog, with my stroker",stroker,END,SLANT,spelling,LOW,Y
+Boulevard,29,"My bitch mocha, I'ma choke her",mocha,30,"Not with my hands dog, with my stroker",stroker,INNER,SLANT,spelling,LOW,Y
+Boulevard,29,"My bitch mocha, I'ma choke her",choke,31,"We some tota's, bitch, I'm Sosa",Sosa,END,SLANT,cmu,MED,Y
+Boulevard,29,"My bitch mocha, I'ma choke her",bitch,31,"We some tota's, bitch, I'm Sosa",bitch,INNER,REPEAT,spelling,HIGH,N
+Boulevard,29,"My bitch mocha, I'ma choke her",I'ma,31,"We some tota's, bitch, I'm Sosa",bitch,INNER,SLANT,spelling,LOW,Y
+Boulevard,29,"My bitch mocha, I'ma choke her",mocha,31,"We some tota's, bitch, I'm Sosa",Sosa,INNER,SLANT,cmu,MED,Y
+Boulevard,29,"My bitch mocha, I'ma choke her",mocha,31,"We some tota's, bitch, I'm Sosa",tota's,INNER,ASSONANCE,vowel,LOW,N
+Boulevard,30,"Not with my hands dog, with my stroker",stroker,31,"We some tota's, bitch, I'm Sosa",Sosa,END,SLANT,spelling,LOW,Y
+Boulevard,30,"Not with my hands dog, with my stroker",Not,32,"That's King Beece, bitch, that's bro god",god,INNER,SLANT,cmu,MED,Y
+Boulevard,30,"Not with my hands dog, with my stroker",stroker,34,"3Hunna, bitch, you niggas hoeing",hoeing,END,SLANT,spelling,LOW,Y
+Boulevard,31,"We some tota's, bitch, I'm Sosa",tota's,31,"We some tota's, bitch, I'm Sosa",Sosa,INNER,SLANT,spelling,LOW,Y
+Boulevard,31,"We some tota's, bitch, I'm Sosa",bitch,32,"That's King Beece, bitch, that's bro god",bitch,INNER,REPEAT,spelling,HIGH,N
+Boulevard,31,"We some tota's, bitch, I'm Sosa",bitch,32,"That's King Beece, bitch, that's bro god",King,INNER,SLANT,cmu,MED,Y
+Boulevard,31,"We some tota's, bitch, I'm Sosa",Sosa,32,"That's King Beece, bitch, that's bro god",bro,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,31,"We some tota's, bitch, I'm Sosa",some,33,"Don't fuck with toasters, we'll explode y'all",fuck,INNER,SLANT,cmu,MED,Y
+Boulevard,31,"We some tota's, bitch, I'm Sosa",Sosa,33,"Don't fuck with toasters, we'll explode y'all",Don't,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,31,"We some tota's, bitch, I'm Sosa",Sosa,33,"Don't fuck with toasters, we'll explode y'all",explode,INNER,SLANT,cmu,MED,Y
+Boulevard,31,"We some tota's, bitch, I'm Sosa",Sosa,33,"Don't fuck with toasters, we'll explode y'all",toasters,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,31,"We some tota's, bitch, I'm Sosa",Sosa,34,"3Hunna, bitch, you niggas hoeing",hoeing,END,SLANT,cmu,MED,Y
+Boulevard,32,"That's King Beece, bitch, that's bro god",King,32,"That's King Beece, bitch, that's bro god",bitch,INNER,SLANT,cmu,MED,Y
+Boulevard,32,"That's King Beece, bitch, that's bro god",Beece,33,"Don't fuck with toasters, we'll explode y'all",we'll,INNER,SLANT,spelling,LOW,Y
+Boulevard,32,"That's King Beece, bitch, that's bro god",bro,33,"Don't fuck with toasters, we'll explode y'all",Don't,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,32,"That's King Beece, bitch, that's bro god",bro,33,"Don't fuck with toasters, we'll explode y'all",explode,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,32,"That's King Beece, bitch, that's bro god",bro,33,"Don't fuck with toasters, we'll explode y'all",toasters,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,32,"That's King Beece, bitch, that's bro god",bitch,34,"3Hunna, bitch, you niggas hoeing",bitch,INNER,REPEAT,spelling,HIGH,N
+Boulevard,32,"That's King Beece, bitch, that's bro god",bro,34,"3Hunna, bitch, you niggas hoeing",hoeing,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,32,"That's King Beece, bitch, that's bro god",King,34,"3Hunna, bitch, you niggas hoeing",bitch,INNER,SLANT,cmu,MED,Y
+Boulevard,33,"Don't fuck with toasters, we'll explode y'all",Don't,33,"Don't fuck with toasters, we'll explode y'all",explode,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,33,"Don't fuck with toasters, we'll explode y'all",Don't,33,"Don't fuck with toasters, we'll explode y'all",toasters,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,33,"Don't fuck with toasters, we'll explode y'all",toasters,33,"Don't fuck with toasters, we'll explode y'all",explode,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,33,"Don't fuck with toasters, we'll explode y'all",Don't,34,"3Hunna, bitch, you niggas hoeing",hoeing,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,33,"Don't fuck with toasters, we'll explode y'all",explode,34,"3Hunna, bitch, you niggas hoeing",hoeing,INNER,SLANT,cmu,MED,Y
+Boulevard,33,"Don't fuck with toasters, we'll explode y'all",toasters,34,"3Hunna, bitch, you niggas hoeing",hoeing,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,34,"3Hunna, bitch, you niggas hoeing",bitch,36,"Racks on me that and tool, bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+Boulevard,35,I'm riding 'round my side of town,'round,35,I'm riding 'round my side of town,town,INNER,SLANT,cmu,MED,Y
+Boulevard,35,I'm riding 'round my side of town,riding,35,I'm riding 'round my side of town,side,INNER,SLANT,cmu,MED,Y
+Boulevard,36,"Racks on me that and tool, bitch",bitch,37,Pop a pill then lose it,pill,INNER,SLANT,cmu,MED,Y
+Boulevard,36,"Racks on me that and tool, bitch",tool,37,Pop a pill then lose it,lose,INNER,SLANT,cmu,MED,Y
+Boulevard,36,"Racks on me that and tool, bitch",bitch,38,"Like Soulja Boy, shoot you, bitch",bitch,END,REPEAT,spelling,HIGH,N
+Boulevard,36,"Racks on me that and tool, bitch",tool,38,"Like Soulja Boy, shoot you, bitch",shoot,INNER,SLANT,cmu,MED,Y
+Boulevard,37,Pop a pill then lose it,lose,38,"Like Soulja Boy, shoot you, bitch",shoot,INNER,SLANT,cmu,MED,Y
+Boulevard,37,Pop a pill then lose it,pill,38,"Like Soulja Boy, shoot you, bitch",bitch,INNER,SLANT,cmu,MED,Y
+Boulevard,37,Pop a pill then lose it,pill,39,"Kush in my face, God forgive me, got robbers with me",forgive,INNER,SLANT,cmu,MED,Y
+Boulevard,37,Pop a pill then lose it,Pop,39,"Kush in my face, God forgive me, got robbers with me",God,INNER,SLANT,cmu,MED,Y
+Boulevard,37,Pop a pill then lose it,Pop,39,"Kush in my face, God forgive me, got robbers with me",got,INNER,SLANT,cmu,MED,Y
+Boulevard,37,Pop a pill then lose it,Pop,39,"Kush in my face, God forgive me, got robbers with me",robbers,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,38,"Like Soulja Boy, shoot you, bitch",bitch,39,"Kush in my face, God forgive me, got robbers with me",forgive,INNER,SLANT,cmu,MED,Y
+Boulevard,38,"Like Soulja Boy, shoot you, bitch",bitch,40,That's killing niggas and robbing with me,killing,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",God,39,"Kush in my face, God forgive me, got robbers with me",got,INNER,SLANT,cmu,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",God,39,"Kush in my face, God forgive me, got robbers with me",robbers,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",got,39,"Kush in my face, God forgive me, got robbers with me",robbers,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",robbers,40,That's killing niggas and robbing with me,robbing,END,SLANT,cmu,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",forgive,40,That's killing niggas and robbing with me,killing,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",God,40,That's killing niggas and robbing with me,robbing,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",got,40,That's killing niggas and robbing with me,robbing,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",God,41,"Off a lot of loud and a lot of Remy, ah",lot,INNER,SLANT,cmu,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",got,41,"Off a lot of loud and a lot of Remy, ah",lot,INNER,PERFECT,cmu,HIGH,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",robbers,41,"Off a lot of loud and a lot of Remy, ah",lot,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",robbers,42,"I'm from O'Block, 064 Block",Block,END,ASSONANCE,vowel,MED,Y
+Boulevard,39,"Kush in my face, God forgive me, got robbers with me",robbers,43,"GBE Block, we gon' blow block",block,END,ASSONANCE,vowel,MED,Y
+Boulevard,40,That's killing niggas and robbing with me,robbing,41,"Off a lot of loud and a lot of Remy, ah",lot,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,40,That's killing niggas and robbing with me,robbing,42,"I'm from O'Block, 064 Block",Block,END,ASSONANCE,vowel,MED,Y
+Boulevard,40,That's killing niggas and robbing with me,robbing,43,"GBE Block, we gon' blow block",block,END,ASSONANCE,vowel,MED,Y
+Boulevard,41,"Off a lot of loud and a lot of Remy, ah",lot,41,"Off a lot of loud and a lot of Remy, ah",lot,INNER,REPEAT,spelling,HIGH,N
+Boulevard,41,"Off a lot of loud and a lot of Remy, ah",lot,42,"I'm from O'Block, 064 Block",Block,INNER,SLANT,cmu,MED,Y
+Boulevard,41,"Off a lot of loud and a lot of Remy, ah",lot,43,"GBE Block, we gon' blow block",Block,INNER,SLANT,cmu,MED,Y
+Boulevard,42,"I'm from O'Block, 064 Block",O'Block,42,"I'm from O'Block, 064 Block",Block,INNER,PERFECT,spelling,HIGH,Y
+Boulevard,42,"I'm from O'Block, 064 Block",Block,43,"GBE Block, we gon' blow block",block,END,REPEAT,spelling,HIGH,N
+Boulevard,42,"I'm from O'Block, 064 Block",Block,43,"GBE Block, we gon' blow block",Block,INNER,REPEAT,spelling,HIGH,N
+Boulevard,42,"I'm from O'Block, 064 Block",O'Block,43,"GBE Block, we gon' blow block",Block,INNER,PERFECT,spelling,HIGH,Y
+Boulevard,42,"I'm from O'Block, 064 Block",O'Block,43,"GBE Block, we gon' blow block",blow,INNER,ASSONANCE,vowel,LOW,N
+Boulevard,42,"I'm from O'Block, 064 Block",Block,44,Got a felony and I'm a young nigga,Got,INNER,SLANT,cmu,MED,Y
+Boulevard,43,"GBE Block, we gon' blow block",Block,43,"GBE Block, we gon' blow block",block,INNER,REPEAT,spelling,HIGH,N
+Boulevard,43,"GBE Block, we gon' blow block",Block,44,Got a felony and I'm a young nigga,Got,INNER,SLANT,cmu,MED,Y
+Boulevard,44,Got a felony and I'm a young nigga,nigga,45,"Better run, nigga, we shooting guns, nigga",nigga,END,REPEAT,spelling,HIGH,N
+Boulevard,44,Got a felony and I'm a young nigga,felony,45,"Better run, nigga, we shooting guns, nigga",Better,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,44,Got a felony and I'm a young nigga,nigga,45,"Better run, nigga, we shooting guns, nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Boulevard,44,Got a felony and I'm a young nigga,young,45,"Better run, nigga, we shooting guns, nigga",guns,INNER,ASSONANCE,vowel,MED,Y
+Boulevard,44,Got a felony and I'm a young nigga,young,45,"Better run, nigga, we shooting guns, nigga",run,INNER,SLANT,cmu,MED,Y
+Boulevard,45,"Better run, nigga, we shooting guns, nigga",nigga,45,"Better run, nigga, we shooting guns, nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Boulevard,45,"Better run, nigga, we shooting guns, nigga",run,45,"Better run, nigga, we shooting guns, nigga",guns,INNER,SLANT,cmu,MED,Y

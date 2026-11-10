@@ -1,0 +1,185 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Faded,1,"I was born by myself, I'mma die by myself",by,1,"I was born by myself, I'mma die by myself",by,INNER,REPEAT,spelling,HIGH,N
+Faded,1,"I was born by myself, I'mma die by myself",by,1,"I was born by myself, I'mma die by myself",die,INNER,PERFECT,cmu,HIGH,Y
+Faded,1,"I was born by myself, I'mma die by myself",die,1,"I was born by myself, I'mma die by myself",by,INNER,PERFECT,cmu,HIGH,Y
+Faded,1,"I was born by myself, I'mma die by myself",myself,1,"I was born by myself, I'mma die by myself",myself,INNER,REPEAT,spelling,HIGH,N
+Faded,1,"I was born by myself, I'mma die by myself",myself,2,"I been runnin' up a check, so I'm flossin' with a chick",check,INNER,ASSONANCE,vowel,MED,Y
+Faded,1,"I was born by myself, I'mma die by myself",myself,3,I can't hear myself when I look in the mirror,myself,INNER,REPEAT,spelling,HIGH,N
+Faded,1,"I was born by myself, I'mma die by myself",myself,3,I can't hear myself when I look in the mirror,when,INNER,ASSONANCE,vowel,MED,Y
+Faded,2,"I been runnin' up a check, so I'm flossin' with a chick",chick,3,I can't hear myself when I look in the mirror,mirror,END,SLANT,cmu,MED,Y
+Faded,2,"I been runnin' up a check, so I'm flossin' with a chick",check,3,I can't hear myself when I look in the mirror,myself,INNER,ASSONANCE,vowel,MED,Y
+Faded,2,"I been runnin' up a check, so I'm flossin' with a chick",check,3,I can't hear myself when I look in the mirror,when,INNER,SLANT,cmu,MED,Y
+Faded,2,"I been runnin' up a check, so I'm flossin' with a chick",check,4,"I be askin' it questions, do you know who the trillest?",questions,INNER,ASSONANCE,vowel,MED,Y
+Faded,2,"I been runnin' up a check, so I'm flossin' with a chick",chick,4,"I be askin' it questions, do you know who the trillest?",askin,INNER,SLANT,cmu,MED,Y
+Faded,2,"I been runnin' up a check, so I'm flossin' with a chick",flossin,4,"I be askin' it questions, do you know who the trillest?",askin,INNER,PERFECT,spelling,MED,Y
+Faded,3,I can't hear myself when I look in the mirror,myself,3,I can't hear myself when I look in the mirror,when,INNER,ASSONANCE,vowel,MED,Y
+Faded,3,I can't hear myself when I look in the mirror,mirror,4,"I be askin' it questions, do you know who the trillest?",askin,INNER,SLANT,cmu,MED,Y
+Faded,3,I can't hear myself when I look in the mirror,myself,4,"I be askin' it questions, do you know who the trillest?",questions,INNER,ASSONANCE,vowel,MED,Y
+Faded,3,I can't hear myself when I look in the mirror,when,4,"I be askin' it questions, do you know who the trillest?",questions,INNER,ASSONANCE,vowel,MED,Y
+Faded,4,"I be askin' it questions, do you know who the trillest?",askin,6,Do you know this shit ain't free?,shit,INNER,SLANT,cmu,MED,Y
+Faded,4,"I be askin' it questions, do you know who the trillest?",know,6,Do you know this shit ain't free?,know,INNER,REPEAT,spelling,HIGH,N
+Faded,6,Do you know this shit ain't free?,know,7,Too damaged to be sold,sold,INNER,ASSONANCE,vowel,MED,Y
+Faded,6,Do you know this shit ain't free?,free,8,"Now I'm told, can't you see?",see,END,PERFECT,cmu,HIGH,Y
+Faded,6,Do you know this shit ain't free?,know,8,"Now I'm told, can't you see?",told,INNER,ASSONANCE,vowel,MED,Y
+Faded,6,Do you know this shit ain't free?,free,10,Ain't nothin' for free,free,END,REPEAT,spelling,HIGH,N
+Faded,7,Too damaged to be sold,damaged,8,"Now I'm told, can't you see?",can't,INNER,SLANT,cmu,MED,Y
+Faded,7,Too damaged to be sold,sold,8,"Now I'm told, can't you see?",told,INNER,PERFECT,cmu,HIGH,Y
+Faded,8,"Now I'm told, can't you see?",see,10,Ain't nothin' for free,free,END,PERFECT,cmu,HIGH,Y
+Faded,9,"I'm a boss, I'm a boss",boss,9,"I'm a boss, I'm a boss",boss,INNER,REPEAT,spelling,HIGH,N
+Faded,9,"I'm a boss, I'm a boss",boss,10,Ain't nothin' for free,nothin,INNER,ASSONANCE,vowel,MED,Y
+Faded,9,"I'm a boss, I'm a boss",boss,11,Don't you know you gotta get it,gotta,INNER,SLANT,cmu,MED,Y
+Faded,10,Ain't nothin' for free,nothin,11,Don't you know you gotta get it,gotta,INNER,ASSONANCE,vowel,MED,Y
+Faded,10,Ain't nothin' for free,free,13,"Yeah the game ain't guaranteed, yeah",guaranteed,END,ASSONANCE,vowel,MED,Y
+Faded,11,Don't you know you gotta get it,Don't,11,Don't you know you gotta get it,know,INNER,ASSONANCE,vowel,MED,Y
+Faded,11,Don't you know you gotta get it,get,12,Can't depend on me,depend,END,ASSONANCE,vowel,MED,Y
+Faded,13,"Yeah the game ain't guaranteed, yeah",game,13,"Yeah the game ain't guaranteed, yeah",ain't,INNER,ASSONANCE,vowel,MED,Y
+Faded,13,"Yeah the game ain't guaranteed, yeah",ain't,14,"Ain't no handouts for the niggas reachin', yeah, no",Ain't,INNER,REPEAT,spelling,HIGH,N
+Faded,13,"Yeah the game ain't guaranteed, yeah",game,14,"Ain't no handouts for the niggas reachin', yeah, no",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Faded,13,"Yeah the game ain't guaranteed, yeah",guaranteed,14,"Ain't no handouts for the niggas reachin', yeah, no",reachin,INNER,ASSONANCE,vowel,MED,Y
+Faded,13,"Yeah the game ain't guaranteed, yeah",guaranteed,15,"Practise what you preachin', yeah",preachin,END,ASSONANCE,vowel,MED,Y
+Faded,13,"Yeah the game ain't guaranteed, yeah",guaranteed,16,"Can make a milli while you sleepin', yeah",sleepin,END,ASSONANCE,vowel,MED,Y
+Faded,14,"Ain't no handouts for the niggas reachin', yeah, no",no,14,"Ain't no handouts for the niggas reachin', yeah, no",no,INNER,REPEAT,spelling,HIGH,N
+Faded,14,"Ain't no handouts for the niggas reachin', yeah, no",niggas reachin,15,"Practise what you preachin', yeah",what preachin,INNER,MULTI,multi,MED,Y
+Faded,14,"Ain't no handouts for the niggas reachin', yeah, no",reachin,15,"Practise what you preachin', yeah",preachin,INNER,MULTI,multi,HIGH,Y
+Faded,14,"Ain't no handouts for the niggas reachin', yeah, no",Ain't,16,"Can make a milli while you sleepin', yeah",make,INNER,ASSONANCE,vowel,MED,Y
+Faded,14,"Ain't no handouts for the niggas reachin', yeah, no",reachin,16,"Can make a milli while you sleepin', yeah",sleepin,INNER,SLANT,cmu,MED,Y
+Faded,15,"Practise what you preachin', yeah",preachin,16,"Can make a milli while you sleepin', yeah",sleepin,END,SLANT,cmu,MED,Y
+Faded,15,"Practise what you preachin', yeah",Practise,16,"Can make a milli while you sleepin', yeah",Can,INNER,ASSONANCE,vowel,MED,Y
+Faded,16,"Can make a milli while you sleepin', yeah",while,17,"But tonight's the night, tonight's the night",night,INNER,SLANT,cmu,MED,Y
+Faded,16,"Can make a milli while you sleepin', yeah",while,17,"But tonight's the night, tonight's the night",tonight's,INNER,ASSONANCE,vowel,MED,Y
+Faded,16,"Can make a milli while you sleepin', yeah",make,18,"Tonight's the night to get faded, yeah",faded,INNER,SLANT,cmu,MED,Y
+Faded,16,"Can make a milli while you sleepin', yeah",while,18,"Tonight's the night to get faded, yeah",night,INNER,SLANT,cmu,MED,Y
+Faded,16,"Can make a milli while you sleepin', yeah",while,18,"Tonight's the night to get faded, yeah",Tonight's,INNER,ASSONANCE,vowel,MED,Y
+Faded,17,"But tonight's the night, tonight's the night",night,17,"But tonight's the night, tonight's the night",night,INNER,REPEAT,spelling,HIGH,N
+Faded,17,"But tonight's the night, tonight's the night",night,17,"But tonight's the night, tonight's the night",tonight's,INNER,SLANT,cmu,MED,Y
+Faded,17,"But tonight's the night, tonight's the night",tonight's,17,"But tonight's the night, tonight's the night",night,INNER,SLANT,cmu,MED,Y
+Faded,17,"But tonight's the night, tonight's the night",tonight's,17,"But tonight's the night, tonight's the night",tonight's,INNER,REPEAT,spelling,HIGH,N
+Faded,17,"But tonight's the night, tonight's the night",night,18,"Tonight's the night to get faded, yeah",night,INNER,REPEAT,spelling,HIGH,N
+Faded,17,"But tonight's the night, tonight's the night",night,18,"Tonight's the night to get faded, yeah",Tonight's,INNER,SLANT,cmu,MED,Y
+Faded,17,"But tonight's the night, tonight's the night",tonight's,18,"Tonight's the night to get faded, yeah",night,INNER,SLANT,cmu,MED,Y
+Faded,17,"But tonight's the night, tonight's the night",tonight's,18,"Tonight's the night to get faded, yeah",Tonight's,INNER,REPEAT,spelling,HIGH,N
+Faded,17,"But tonight's the night, tonight's the night",night,19,"Tonight's the night, tonight's the night",night,END,REPEAT,spelling,HIGH,N
+Faded,17,"But tonight's the night, tonight's the night",night,19,"Tonight's the night, tonight's the night",night,INNER,REPEAT,spelling,HIGH,N
+Faded,17,"But tonight's the night, tonight's the night",night,19,"Tonight's the night, tonight's the night",Tonight's,INNER,SLANT,cmu,MED,Y
+Faded,17,"But tonight's the night, tonight's the night",tonight's,19,"Tonight's the night, tonight's the night",night,INNER,SLANT,cmu,MED,Y
+Faded,17,"But tonight's the night, tonight's the night",tonight's,19,"Tonight's the night, tonight's the night",Tonight's,INNER,REPEAT,spelling,HIGH,N
+Faded,18,"Tonight's the night to get faded, yeah",Tonight's,18,"Tonight's the night to get faded, yeah",night,INNER,SLANT,cmu,MED,Y
+Faded,18,"Tonight's the night to get faded, yeah",night,19,"Tonight's the night, tonight's the night",night,INNER,REPEAT,spelling,HIGH,N
+Faded,18,"Tonight's the night to get faded, yeah",night,19,"Tonight's the night, tonight's the night",Tonight's,INNER,SLANT,cmu,MED,Y
+Faded,18,"Tonight's the night to get faded, yeah",Tonight's,19,"Tonight's the night, tonight's the night",night,INNER,SLANT,cmu,MED,Y
+Faded,18,"Tonight's the night to get faded, yeah",Tonight's,19,"Tonight's the night, tonight's the night",Tonight's,INNER,REPEAT,spelling,HIGH,N
+Faded,18,"Tonight's the night to get faded, yeah",faded,20,"Tonight's the night to go, you know what I'm sayin'",sayin,END,ASSONANCE,vowel,MED,Y
+Faded,18,"Tonight's the night to get faded, yeah",night,20,"Tonight's the night to go, you know what I'm sayin'",night,INNER,REPEAT,spelling,HIGH,N
+Faded,18,"Tonight's the night to get faded, yeah",night,20,"Tonight's the night to go, you know what I'm sayin'",Tonight's,INNER,SLANT,cmu,MED,Y
+Faded,18,"Tonight's the night to get faded, yeah",Tonight's,20,"Tonight's the night to go, you know what I'm sayin'",night,INNER,SLANT,cmu,MED,Y
+Faded,18,"Tonight's the night to get faded, yeah",Tonight's,20,"Tonight's the night to go, you know what I'm sayin'",Tonight's,INNER,REPEAT,spelling,HIGH,N
+Faded,19,"Tonight's the night, tonight's the night",night,19,"Tonight's the night, tonight's the night",night,INNER,REPEAT,spelling,HIGH,N
+Faded,19,"Tonight's the night, tonight's the night",night,19,"Tonight's the night, tonight's the night",tonight's,INNER,SLANT,cmu,MED,Y
+Faded,19,"Tonight's the night, tonight's the night",Tonight's,19,"Tonight's the night, tonight's the night",night,INNER,SLANT,cmu,MED,Y
+Faded,19,"Tonight's the night, tonight's the night",Tonight's,19,"Tonight's the night, tonight's the night",tonight's,INNER,REPEAT,spelling,HIGH,N
+Faded,19,"Tonight's the night, tonight's the night",night,20,"Tonight's the night to go, you know what I'm sayin'",night,INNER,REPEAT,spelling,HIGH,N
+Faded,19,"Tonight's the night, tonight's the night",night,20,"Tonight's the night to go, you know what I'm sayin'",Tonight's,INNER,SLANT,cmu,MED,Y
+Faded,19,"Tonight's the night, tonight's the night",Tonight's,20,"Tonight's the night to go, you know what I'm sayin'",night,INNER,SLANT,cmu,MED,Y
+Faded,19,"Tonight's the night, tonight's the night",Tonight's,20,"Tonight's the night to go, you know what I'm sayin'",Tonight's,INNER,REPEAT,spelling,HIGH,N
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",go,20,"Tonight's the night to go, you know what I'm sayin'",know,INNER,PERFECT,cmu,HIGH,Y
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",Tonight's,20,"Tonight's the night to go, you know what I'm sayin'",night,INNER,SLANT,cmu,MED,Y
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",go,21,You know what I'm,know,INNER,PERFECT,cmu,HIGH,Y
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",know,21,You know what I'm,know,INNER,REPEAT,spelling,HIGH,N
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",what,21,You know what I'm,what,INNER,REPEAT,spelling,HIGH,N
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",go,22,"You know what I'm sayin', ain't no repeat",know,INNER,PERFECT,cmu,HIGH,Y
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",go,22,"You know what I'm sayin', ain't no repeat",no,INNER,PERFECT,cmu,HIGH,Y
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",know,22,"You know what I'm sayin', ain't no repeat",know,INNER,REPEAT,spelling,HIGH,N
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",know,22,"You know what I'm sayin', ain't no repeat",no,INNER,PERFECT,cmu,HIGH,Y
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",sayin,22,"You know what I'm sayin', ain't no repeat",ain't,INNER,ASSONANCE,vowel,MED,Y
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",sayin,22,"You know what I'm sayin', ain't no repeat",sayin,INNER,REPEAT,spelling,HIGH,N
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",what,22,"You know what I'm sayin', ain't no repeat",what,INNER,REPEAT,spelling,HIGH,N
+Faded,20,"Tonight's the night to go, you know what I'm sayin'",sayin,24,Poppin' them Percs got me faded,faded,END,ASSONANCE,vowel,MED,Y
+Faded,21,You know what I'm,know,22,"You know what I'm sayin', ain't no repeat",know,INNER,REPEAT,spelling,HIGH,N
+Faded,21,You know what I'm,know,22,"You know what I'm sayin', ain't no repeat",no,INNER,PERFECT,cmu,HIGH,Y
+Faded,21,You know what I'm,what,22,"You know what I'm sayin', ain't no repeat",what,INNER,REPEAT,spelling,HIGH,N
+Faded,22,"You know what I'm sayin', ain't no repeat",know,22,"You know what I'm sayin', ain't no repeat",no,INNER,PERFECT,cmu,HIGH,Y
+Faded,22,"You know what I'm sayin', ain't no repeat",sayin,22,"You know what I'm sayin', ain't no repeat",ain't,INNER,ASSONANCE,vowel,MED,Y
+Faded,22,"You know what I'm sayin', ain't no repeat",repeat,23,"Nigga think I'm playin', I keep it on me",keep,END,SLANT,cmu,MED,Y
+Faded,22,"You know what I'm sayin', ain't no repeat",ain't,23,"Nigga think I'm playin', I keep it on me",playin,INNER,ASSONANCE,vowel,MED,Y
+Faded,22,"You know what I'm sayin', ain't no repeat",sayin,23,"Nigga think I'm playin', I keep it on me",playin,INNER,MULTI,multi,HIGH,Y
+Faded,22,"You know what I'm sayin', ain't no repeat",what sayin,23,"Nigga think I'm playin', I keep it on me",think playin,INNER,MULTI,multi,HIGH,Y
+Faded,22,"You know what I'm sayin', ain't no repeat",ain't,24,Poppin' them Percs got me faded,faded,INNER,ASSONANCE,vowel,MED,Y
+Faded,22,"You know what I'm sayin', ain't no repeat",sayin,24,Poppin' them Percs got me faded,faded,INNER,ASSONANCE,vowel,MED,Y
+Faded,23,"Nigga think I'm playin', I keep it on me",playin,24,Poppin' them Percs got me faded,faded,INNER,ASSONANCE,vowel,MED,Y
+Faded,24,Poppin' them Percs got me faded,Poppin,24,Poppin' them Percs got me faded,got,INNER,ASSONANCE,vowel,MED,Y
+Faded,24,Poppin' them Percs got me faded,faded,26,And I get in that shit and go crazy,crazy,END,ASSONANCE,vowel,MED,Y
+Faded,24,Poppin' them Percs got me faded,faded,28,So I see the truth and go skatin',skatin,END,ASSONANCE,vowel,MED,Y
+Faded,25,I grab me a bowl and I grab me a fork,grab,25,I grab me a bowl and I grab me a fork,grab,INNER,REPEAT,spelling,HIGH,N
+Faded,25,I grab me a bowl and I grab me a fork,bowl,26,And I get in that shit and go crazy,go,INNER,ASSONANCE,vowel,MED,Y
+Faded,26,And I get in that shit and go crazy,crazy,28,So I see the truth and go skatin',skatin,END,ASSONANCE,vowel,MED,Y
+Faded,26,And I get in that shit and go crazy,go,28,So I see the truth and go skatin',go,INNER,REPEAT,spelling,HIGH,N
+Faded,26,And I get in that shit and go crazy,crazy,30,And I fucked me a nigga old lady,lady,END,SLANT,cmu,MED,Y
+Faded,27,"Them diamonds, they on me, they blangin', they blangin'",blangin,27,"Them diamonds, they on me, they blangin', they blangin'",blangin,INNER,REPEAT,spelling,HIGH,N
+Faded,28,So I see the truth and go skatin',skatin,30,And I fucked me a nigga old lady,lady,END,ASSONANCE,vowel,MED,Y
+Faded,28,So I see the truth and go skatin',go,30,And I fucked me a nigga old lady,old,INNER,ASSONANCE,vowel,MED,Y
+Faded,29,"Bitch on that savage, I fuck a big check",Bitch,29,"Bitch on that savage, I fuck a big check",big,INNER,SLANT,cmu,MED,Y
+Faded,29,"Bitch on that savage, I fuck a big check",big,30,And I fucked me a nigga old lady,nigga,INNER,SLANT,spelling,LOW,Y
+Faded,29,"Bitch on that savage, I fuck a big check",fuck,30,And I fucked me a nigga old lady,fucked,INNER,SLANT,cmu,MED,Y
+Faded,29,"Bitch on that savage, I fuck a big check",big,31,"Bitch I'm cold, I need a blanket",Bitch,INNER,SLANT,cmu,MED,Y
+Faded,29,"Bitch on that savage, I fuck a big check",Bitch,31,"Bitch I'm cold, I need a blanket",Bitch,INNER,REPEAT,spelling,HIGH,N
+Faded,29,"Bitch on that savage, I fuck a big check",savage,31,"Bitch I'm cold, I need a blanket",blanket,INNER,ASSONANCE,vowel,MED,Y
+Faded,30,And I fucked me a nigga old lady,old,31,"Bitch I'm cold, I need a blanket",cold,INNER,PERFECT,cmu,HIGH,Y
+Faded,31,"Bitch I'm cold, I need a blanket",Bitch,33,"Roll it 'fore it flood, come where I begin",begin,INNER,SLANT,cmu,MED,Y
+Faded,31,"Bitch I'm cold, I need a blanket",cold,33,"Roll it 'fore it flood, come where I begin",Roll,INNER,SLANT,cmu,MED,Y
+Faded,33,"Roll it 'fore it flood, come where I begin",flood,33,"Roll it 'fore it flood, come where I begin",come,INNER,SLANT,cmu,MED,Y
+Faded,33,"Roll it 'fore it flood, come where I begin",'fore,34,Broad niggas and I cheat on my ex,Broad,INNER,SLANT,cmu,MED,Y
+Faded,33,"Roll it 'fore it flood, come where I begin",where,34,Broad niggas and I cheat on my ex,ex,INNER,ASSONANCE,vowel,MED,Y
+Faded,33,"Roll it 'fore it flood, come where I begin",begin,35,"Pretty titties, I might skeet on her breasts",Pretty,INNER,SLANT,cmu,MED,Y
+Faded,33,"Roll it 'fore it flood, come where I begin",where,35,"Pretty titties, I might skeet on her breasts",breasts,INNER,ASSONANCE,vowel,MED,Y
+Faded,34,Broad niggas and I cheat on my ex,ex,35,"Pretty titties, I might skeet on her breasts",breasts,END,ASSONANCE,vowel,MED,Y
+Faded,34,Broad niggas and I cheat on my ex,cheat,35,"Pretty titties, I might skeet on her breasts",skeet,INNER,PERFECT,cmu,HIGH,Y
+Faded,34,Broad niggas and I cheat on my ex,niggas,35,"Pretty titties, I might skeet on her breasts",titties,INNER,SLANT,spelling,LOW,Y
+Faded,34,Broad niggas and I cheat on my ex,ex,36,Skeet on her breasts,breasts,END,ASSONANCE,vowel,MED,Y
+Faded,34,Broad niggas and I cheat on my ex,cheat,36,Skeet on her breasts,Skeet,INNER,PERFECT,cmu,HIGH,Y
+Faded,34,Broad niggas and I cheat on my ex,ex,37,"80 thousand, put that shit on my neck",neck,END,SLANT,cmu,MED,Y
+Faded,34,Broad niggas and I cheat on my ex,ex,38,"80 thousand, spent that shit on a vet",vet,END,ASSONANCE,vowel,MED,Y
+Faded,35,"Pretty titties, I might skeet on her breasts",breasts,36,Skeet on her breasts,breasts,END,REPEAT,spelling,HIGH,N
+Faded,35,"Pretty titties, I might skeet on her breasts",skeet,36,Skeet on her breasts,Skeet,INNER,REPEAT,spelling,HIGH,N
+Faded,35,"Pretty titties, I might skeet on her breasts",breasts,37,"80 thousand, put that shit on my neck",neck,END,ASSONANCE,vowel,MED,Y
+Faded,35,"Pretty titties, I might skeet on her breasts",Pretty,37,"80 thousand, put that shit on my neck",shit,INNER,SLANT,cmu,MED,Y
+Faded,35,"Pretty titties, I might skeet on her breasts",breasts,38,"80 thousand, spent that shit on a vet",vet,END,ASSONANCE,vowel,MED,Y
+Faded,35,"Pretty titties, I might skeet on her breasts",breasts,39,"One night stands, just I fuck and forget",forget,END,ASSONANCE,vowel,MED,Y
+Faded,36,Skeet on her breasts,breasts,37,"80 thousand, put that shit on my neck",neck,END,ASSONANCE,vowel,MED,Y
+Faded,36,Skeet on her breasts,breasts,38,"80 thousand, spent that shit on a vet",vet,END,ASSONANCE,vowel,MED,Y
+Faded,36,Skeet on her breasts,breasts,38,"80 thousand, spent that shit on a vet",spent,INNER,ASSONANCE,vowel,MED,Y
+Faded,36,Skeet on her breasts,breasts,39,"One night stands, just I fuck and forget",forget,END,ASSONANCE,vowel,MED,Y
+Faded,37,"80 thousand, put that shit on my neck",neck,38,"80 thousand, spent that shit on a vet",vet,END,SLANT,cmu,MED,Y
+Faded,37,"80 thousand, put that shit on my neck",neck,38,"80 thousand, spent that shit on a vet",spent,INNER,ASSONANCE,vowel,MED,Y
+Faded,37,"80 thousand, put that shit on my neck",shit,38,"80 thousand, spent that shit on a vet",shit,INNER,REPEAT,spelling,HIGH,N
+Faded,37,"80 thousand, put that shit on my neck",thousand,38,"80 thousand, spent that shit on a vet",thousand,INNER,REPEAT,spelling,HIGH,N
+Faded,37,"80 thousand, put that shit on my neck",neck,39,"One night stands, just I fuck and forget",forget,END,SLANT,cmu,MED,Y
+Faded,38,"80 thousand, spent that shit on a vet",spent,38,"80 thousand, spent that shit on a vet",vet,INNER,SLANT,cmu,MED,Y
+Faded,38,"80 thousand, spent that shit on a vet",vet,39,"One night stands, just I fuck and forget",forget,END,PERFECT,cmu,HIGH,Y
+Faded,38,"80 thousand, spent that shit on a vet",spent,39,"One night stands, just I fuck and forget",forget,INNER,SLANT,cmu,MED,Y
+Faded,39,"One night stands, just I fuck and forget",One,39,"One night stands, just I fuck and forget",fuck,INNER,SLANT,cmu,MED,Y
+Faded,39,"One night stands, just I fuck and forget",fuck,41,These bitches gon' fuck if I blink,fuck,INNER,REPEAT,spelling,HIGH,N
+Faded,39,"One night stands, just I fuck and forget",One,41,These bitches gon' fuck if I blink,fuck,INNER,SLANT,cmu,MED,Y
+Faded,40,Ciroc and Patron got me faded,Patron,40,Ciroc and Patron got me faded,faded,INNER,ASSONANCE,vowel,MED,Y
+Faded,40,Ciroc and Patron got me faded,Ciroc,41,These bitches gon' fuck if I blink,blink,INNER,SLANT,spelling,LOW,Y
+Faded,40,Ciroc and Patron got me faded,Patron,41,These bitches gon' fuck if I blink,gon,INNER,PERFECT,spelling,MED,Y
+Faded,41,These bitches gon' fuck if I blink,bitches,41,These bitches gon' fuck if I blink,blink,INNER,ASSONANCE,vowel,MED,Y
+Faded,41,These bitches gon' fuck if I blink,fuck,42,"I run through that money, you can't",money,INNER,SLANT,cmu,MED,Y
+Faded,41,These bitches gon' fuck if I blink,fuck,42,"I run through that money, you can't",run,INNER,SLANT,cmu,MED,Y
+Faded,41,These bitches gon' fuck if I blink,fuck,43,You faded and fuck up the bank,fuck,INNER,REPEAT,spelling,HIGH,N
+Faded,41,These bitches gon' fuck if I blink,blink,44,"Bitch I'm on drugs, I can't think",think,END,PERFECT,cmu,HIGH,Y
+Faded,42,"I run through that money, you can't",run,42,"I run through that money, you can't",money,INNER,SLANT,cmu,MED,Y
+Faded,42,"I run through that money, you can't",can't,43,You faded and fuck up the bank,bank,END,SLANT,cmu,MED,Y
+Faded,42,"I run through that money, you can't",money,43,You faded and fuck up the bank,fuck,INNER,SLANT,cmu,MED,Y
+Faded,42,"I run through that money, you can't",run,43,You faded and fuck up the bank,fuck,INNER,SLANT,cmu,MED,Y
+Faded,42,"I run through that money, you can't",can't,44,"Bitch I'm on drugs, I can't think",can't,INNER,REPEAT,spelling,HIGH,N
+Faded,42,"I run through that money, you can't",money,44,"Bitch I'm on drugs, I can't think",drugs,INNER,ASSONANCE,vowel,MED,Y
+Faded,42,"I run through that money, you can't",run,44,"Bitch I'm on drugs, I can't think",drugs,INNER,ASSONANCE,vowel,MED,Y
+Faded,43,You faded and fuck up the bank,bank,44,"Bitch I'm on drugs, I can't think",can't,INNER,SLANT,cmu,MED,Y
+Faded,43,You faded and fuck up the bank,fuck,44,"Bitch I'm on drugs, I can't think",drugs,INNER,ASSONANCE,vowel,MED,Y
+Faded,43,You faded and fuck up the bank,bank,45,You can't hang around if you ain't,can't,INNER,SLANT,cmu,MED,Y
+Faded,43,You faded and fuck up the bank,bank,45,You can't hang around if you ain't,hang,INNER,SLANT,cmu,MED,Y
+Faded,43,You faded and fuck up the bank,faded,45,You can't hang around if you ain't,ain't,INNER,ASSONANCE,vowel,MED,Y
+Faded,44,"Bitch I'm on drugs, I can't think",Bitch,44,"Bitch I'm on drugs, I can't think",think,INNER,ASSONANCE,vowel,MED,Y
+Faded,44,"Bitch I'm on drugs, I can't think",can't,45,You can't hang around if you ain't,can't,INNER,REPEAT,spelling,HIGH,N
+Faded,44,"Bitch I'm on drugs, I can't think",can't,45,You can't hang around if you ain't,hang,INNER,ASSONANCE,vowel,MED,Y
+Faded,45,You can't hang around if you ain't,can't,45,You can't hang around if you ain't,hang,INNER,ASSONANCE,vowel,MED,Y

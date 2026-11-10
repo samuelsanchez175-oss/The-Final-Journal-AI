@@ -1,0 +1,404 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Above Average,1,New Gucci slacks (New Gucci slacks),New,1,New Gucci slacks (New Gucci slacks),Gucci,INNER,ASSONANCE,vowel,MED,Y
+Above Average,1,New Gucci slacks (New Gucci slacks),slacks,2,I'ma pull up in the coupe and it's matte (And it's matte),matte,END,ASSONANCE,vowel,MED,Y
+Above Average,1,New Gucci slacks (New Gucci slacks),Gucci,2,I'ma pull up in the coupe and it's matte (And it's matte),coupe,INNER,SLANT,cmu,MED,Y
+Above Average,1,New Gucci slacks (New Gucci slacks),New,2,I'ma pull up in the coupe and it's matte (And it's matte),coupe,INNER,ASSONANCE,vowel,MED,Y
+Above Average,1,New Gucci slacks (New Gucci slacks),Gucci,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",two,INNER,ASSONANCE,vowel,MED,Y
+Above Average,1,New Gucci slacks (New Gucci slacks),New,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",two,INNER,PERFECT,cmu,HIGH,Y
+Above Average,1,New Gucci slacks (New Gucci slacks),slacks,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",mattress,INNER,SLANT,cmu,MED,Y
+Above Average,1,New Gucci slacks (New Gucci slacks),slacks,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",ran,INNER,ASSONANCE,vowel,MED,Y
+Above Average,2,I'ma pull up in the coupe and it's matte (And it's matte),coupe,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",two,INNER,ASSONANCE,vowel,MED,Y
+Above Average,2,I'ma pull up in the coupe and it's matte (And it's matte),matte,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",mattress,INNER,ASSONANCE,vowel,MED,Y
+Above Average,2,I'ma pull up in the coupe and it's matte (And it's matte),matte,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",ran,INNER,SLANT,cmu,MED,Y
+Above Average,2,I'ma pull up in the coupe and it's matte (And it's matte),coupe,4,"My bitch an actress, her bag got two C's (Bag got two C's)",two,INNER,ASSONANCE,vowel,MED,Y
+Above Average,2,I'ma pull up in the coupe and it's matte (And it's matte),I'ma,4,"My bitch an actress, her bag got two C's (Bag got two C's)",bitch,INNER,SLANT,spelling,LOW,Y
+Above Average,2,I'ma pull up in the coupe and it's matte (And it's matte),matte,4,"My bitch an actress, her bag got two C's (Bag got two C's)",actress,INNER,ASSONANCE,vowel,MED,Y
+Above Average,2,I'ma pull up in the coupe and it's matte (And it's matte),matte,4,"My bitch an actress, her bag got two C's (Bag got two C's)",bag,INNER,SLANT,cmu,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",mattress,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",ran,INNER,ASSONANCE,vowel,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",Sleepin,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",G's,INNER,ASSONANCE,vowel,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",G's,4,"My bitch an actress, her bag got two C's (Bag got two C's)",C's,END,PERFECT,cmu,HIGH,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",mattress,4,"My bitch an actress, her bag got two C's (Bag got two C's)",actress,INNER,PERFECT,spelling,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",mattress,4,"My bitch an actress, her bag got two C's (Bag got two C's)",bag,INNER,ASSONANCE,vowel,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",ran,4,"My bitch an actress, her bag got two C's (Bag got two C's)",actress,INNER,ASSONANCE,vowel,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",ran,4,"My bitch an actress, her bag got two C's (Bag got two C's)",bag,INNER,SLANT,cmu,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",Sleepin,4,"My bitch an actress, her bag got two C's (Bag got two C's)",C's,INNER,ASSONANCE,vowel,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",two,4,"My bitch an actress, her bag got two C's (Bag got two C's)",two,INNER,REPEAT,spelling,HIGH,N
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",G's,5,My bitch above average like a B-minus,B,INNER,ASSONANCE,vowel,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",mattress,5,My bitch above average like a B-minus,average,INNER,ASSONANCE,vowel,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",ran,5,My bitch above average like a B-minus,average,INNER,ASSONANCE,vowel,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",Sleepin,5,My bitch above average like a B-minus,B,INNER,ASSONANCE,vowel,MED,Y
+Above Average,3,"Sleepin' on my mattress, it ran me two G's (Ran me two G's)",G's,7,"I changed my exhaust pipes, sound like it's not legal",legal,END,ASSONANCE,vowel,MED,Y
+Above Average,4,"My bitch an actress, her bag got two C's (Bag got two C's)",actress,4,"My bitch an actress, her bag got two C's (Bag got two C's)",bag,INNER,ASSONANCE,vowel,MED,Y
+Above Average,4,"My bitch an actress, her bag got two C's (Bag got two C's)",actress,5,My bitch above average like a B-minus,average,INNER,ASSONANCE,vowel,MED,Y
+Above Average,4,"My bitch an actress, her bag got two C's (Bag got two C's)",bag,5,My bitch above average like a B-minus,average,INNER,ASSONANCE,vowel,MED,Y
+Above Average,4,"My bitch an actress, her bag got two C's (Bag got two C's)",bitch,5,My bitch above average like a B-minus,bitch,INNER,REPEAT,spelling,HIGH,N
+Above Average,4,"My bitch an actress, her bag got two C's (Bag got two C's)",C's,5,My bitch above average like a B-minus,B,INNER,ASSONANCE,vowel,MED,Y
+Above Average,4,"My bitch an actress, her bag got two C's (Bag got two C's)",got,6,I got a slut that I slide on in the projects,got,INNER,REPEAT,spelling,HIGH,N
+Above Average,4,"My bitch an actress, her bag got two C's (Bag got two C's)",got,6,I got a slut that I slide on in the projects,projects,INNER,ASSONANCE,vowel,MED,Y
+Above Average,4,"My bitch an actress, her bag got two C's (Bag got two C's)",C's,7,"I changed my exhaust pipes, sound like it's not legal",legal,END,ASSONANCE,vowel,MED,Y
+Above Average,4,"My bitch an actress, her bag got two C's (Bag got two C's)",C's,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",stealin,END,ASSONANCE,vowel,MED,Y
+Above Average,5,My bitch above average like a B-minus,like,5,My bitch above average like a B-minus,minus,INNER,ASSONANCE,vowel,MED,Y
+Above Average,5,My bitch above average like a B-minus,above,6,I got a slut that I slide on in the projects,slut,INNER,SLANT,cmu,MED,Y
+Above Average,5,My bitch above average like a B-minus,like,6,I got a slut that I slide on in the projects,slide,INNER,SLANT,cmu,MED,Y
+Above Average,5,My bitch above average like a B-minus,minus,6,I got a slut that I slide on in the projects,slide,INNER,ASSONANCE,vowel,MED,Y
+Above Average,5,My bitch above average like a B-minus,B,7,"I changed my exhaust pipes, sound like it's not legal",legal,INNER,ASSONANCE,vowel,MED,Y
+Above Average,5,My bitch above average like a B-minus,like,7,"I changed my exhaust pipes, sound like it's not legal",like,INNER,REPEAT,spelling,HIGH,N
+Above Average,5,My bitch above average like a B-minus,like,7,"I changed my exhaust pipes, sound like it's not legal",pipes,INNER,ASSONANCE,vowel,MED,Y
+Above Average,5,My bitch above average like a B-minus,minus,7,"I changed my exhaust pipes, sound like it's not legal",like,INNER,ASSONANCE,vowel,MED,Y
+Above Average,5,My bitch above average like a B-minus,minus,7,"I changed my exhaust pipes, sound like it's not legal",pipes,INNER,SLANT,cmu,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,got,6,I got a slut that I slide on in the projects,projects,INNER,ASSONANCE,vowel,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,slut,6,I got a slut that I slide on in the projects,slide,INNER,SLANT,spelling,LOW,Y
+Above Average,6,I got a slut that I slide on in the projects,got,7,"I changed my exhaust pipes, sound like it's not legal",not,INNER,PERFECT,cmu,HIGH,Y
+Above Average,6,I got a slut that I slide on in the projects,projects,7,"I changed my exhaust pipes, sound like it's not legal",not,INNER,ASSONANCE,vowel,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,slide,7,"I changed my exhaust pipes, sound like it's not legal",like,INNER,SLANT,cmu,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,slide,7,"I changed my exhaust pipes, sound like it's not legal",pipes,INNER,ASSONANCE,vowel,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,got,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",Got,INNER,REPEAT,spelling,HIGH,N
+Above Average,6,I got a slut that I slide on in the projects,got,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",knots,INNER,SLANT,cmu,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,got,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",pocket,INNER,SLANT,cmu,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,projects,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",Got,INNER,ASSONANCE,vowel,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,projects,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",knots,INNER,ASSONANCE,vowel,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,projects,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",pocket,INNER,ASSONANCE,vowel,MED,Y
+Above Average,6,I got a slut that I slide on in the projects,slide,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",like,INNER,SLANT,cmu,MED,Y
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",pipes,7,"I changed my exhaust pipes, sound like it's not legal",like,INNER,ASSONANCE,vowel,MED,Y
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",legal,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",stealin,END,ASSONANCE,vowel,MED,Y
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",like,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",like,INNER,REPEAT,spelling,HIGH,N
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",not,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",Got,INNER,PERFECT,cmu,HIGH,Y
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",not,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",knots,INNER,SLANT,cmu,MED,Y
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",not,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",pocket,INNER,SLANT,cmu,MED,Y
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",pipes,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",like,INNER,ASSONANCE,vowel,MED,Y
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",legal,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",wheelin,END,ASSONANCE,vowel,MED,Y
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",legal,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",nobody,INNER,ASSONANCE,vowel,MED,Y
+Above Average,7,"I changed my exhaust pipes, sound like it's not legal",legal,11,"Smokin' exotic, you already hear it (Hmm, you already hear it)",hear,END,ASSONANCE,vowel,MED,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",Got,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",knots,INNER,SLANT,cmu,MED,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",Got,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",pocket,INNER,SLANT,cmu,MED,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",knots,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",pocket,INNER,ASSONANCE,vowel,MED,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",stealin,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",wheelin,END,MULTI,multi,HIGH,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",stealin,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",nobody,INNER,ASSONANCE,vowel,MED,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",Got,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",not,INNER,PERFECT,cmu,HIGH,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",knots,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",not,INNER,SLANT,cmu,MED,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",pocket,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",not,INNER,SLANT,cmu,MED,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",pocket,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",Percocet,INNER,PERFECT,spelling,MED,Y
+Above Average,8,"Got knots in my pocket, look like I been stealin' (Ooh, ooh, ooh)",stealin,11,"Smokin' exotic, you already hear it (Hmm, you already hear it)",hear,END,ASSONANCE,vowel,MED,Y
+Above Average,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",nobody,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",wheelin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",bitches,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",hit,INNER,ASSONANCE,vowel,MED,Y
+Above Average,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",bitches,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",steerin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",wheelin,11,"Smokin' exotic, you already hear it (Hmm, you already hear it)",hear,END,ASSONANCE,vowel,MED,Y
+Above Average,9,"Two bitches with me, nobody third wheelin' (Nobody third wheelin')",nobody,11,"Smokin' exotic, you already hear it (Hmm, you already hear it)",hear,INNER,ASSONANCE,vowel,MED,Y
+Above Average,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",hit,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",steerin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",not,11,"Smokin' exotic, you already hear it (Hmm, you already hear it)",exotic,INNER,SLANT,cmu,MED,Y
+Above Average,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",hit,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",missin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",hit,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",rips,INNER,ASSONANCE,vowel,MED,Y
+Above Average,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",not,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",Got,INNER,PERFECT,cmu,HIGH,Y
+Above Average,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",steerin,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",missin,INNER,SLANT,cmu,MED,Y
+Above Average,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",steerin,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",rips,INNER,ASSONANCE,vowel,MED,Y
+Above Average,10,"Percocet hit me, I'm glad I'm not steerin' (I'm glad I'm not steerin')",steerin,14,I'm pickin' up racks and it's for an appearance,appearance,END,ASSONANCE,vowel,MED,Y
+Above Average,11,"Smokin' exotic, you already hear it (Hmm, you already hear it)",already,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",threads,INNER,SLANT,cmu,MED,Y
+Above Average,11,"Smokin' exotic, you already hear it (Hmm, you already hear it)",exotic,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",Got,INNER,SLANT,cmu,MED,Y
+Above Average,11,"Smokin' exotic, you already hear it (Hmm, you already hear it)",already,13,"Pull up in the vert, that bitch missin' a head",head,INNER,SLANT,cmu,MED,Y
+Above Average,11,"Smokin' exotic, you already hear it (Hmm, you already hear it)",hear,15,I'm sippin' Hi-Tech and I know I don't need it,need,END,SLANT,cmu,MED,Y
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",rips,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",missin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",threads,13,"Pull up in the vert, that bitch missin' a head",head,END,SLANT,cmu,MED,Y
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",missin,13,"Pull up in the vert, that bitch missin' a head",bitch,INNER,ASSONANCE,vowel,MED,Y
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",missin,13,"Pull up in the vert, that bitch missin' a head",missin,INNER,REPEAT,spelling,HIGH,N
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",rips,13,"Pull up in the vert, that bitch missin' a head",bitch,INNER,ASSONANCE,vowel,MED,Y
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",rips,13,"Pull up in the vert, that bitch missin' a head",missin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",missin,14,I'm pickin' up racks and it's for an appearance,appearance,INNER,ASSONANCE,vowel,MED,Y
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",missin,14,I'm pickin' up racks and it's for an appearance,pickin,INNER,SLANT,cmu,MED,Y
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",rips,14,I'm pickin' up racks and it's for an appearance,appearance,INNER,ASSONANCE,vowel,MED,Y
+Above Average,12,"Got rips in my Balmain, they missin' some threads (Hmm, missin' some threads)",rips,14,I'm pickin' up racks and it's for an appearance,pickin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,13,"Pull up in the vert, that bitch missin' a head",bitch,13,"Pull up in the vert, that bitch missin' a head",missin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,13,"Pull up in the vert, that bitch missin' a head",bitch,14,I'm pickin' up racks and it's for an appearance,appearance,INNER,ASSONANCE,vowel,MED,Y
+Above Average,13,"Pull up in the vert, that bitch missin' a head",bitch,14,I'm pickin' up racks and it's for an appearance,pickin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,13,"Pull up in the vert, that bitch missin' a head",missin,14,I'm pickin' up racks and it's for an appearance,appearance,INNER,ASSONANCE,vowel,MED,Y
+Above Average,13,"Pull up in the vert, that bitch missin' a head",missin,14,I'm pickin' up racks and it's for an appearance,pickin,INNER,SLANT,cmu,MED,Y
+Above Average,13,"Pull up in the vert, that bitch missin' a head",bitch,15,I'm sippin' Hi-Tech and I know I don't need it,sippin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,13,"Pull up in the vert, that bitch missin' a head",head,15,I'm sippin' Hi-Tech and I know I don't need it,Tech,INNER,SLANT,cmu,MED,Y
+Above Average,13,"Pull up in the vert, that bitch missin' a head",missin,15,I'm sippin' Hi-Tech and I know I don't need it,sippin,INNER,SLANT,cmu,MED,Y
+Above Average,14,I'm pickin' up racks and it's for an appearance,pickin,14,I'm pickin' up racks and it's for an appearance,appearance,INNER,ASSONANCE,vowel,MED,Y
+Above Average,14,I'm pickin' up racks and it's for an appearance,appearance,15,I'm sippin' Hi-Tech and I know I don't need it,sippin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,14,I'm pickin' up racks and it's for an appearance,pickin,15,I'm sippin' Hi-Tech and I know I don't need it,sippin,INNER,SLANT,cmu,MED,Y
+Above Average,14,I'm pickin' up racks and it's for an appearance,racks,16,"I got a straight A with no insurance, it's ninety racks on my Visa",racks,INNER,REPEAT,spelling,HIGH,N
+Above Average,15,I'm sippin' Hi-Tech and I know I don't need it,know,15,I'm sippin' Hi-Tech and I know I don't need it,don't,INNER,ASSONANCE,vowel,MED,Y
+Above Average,15,I'm sippin' Hi-Tech and I know I don't need it,need,16,"I got a straight A with no insurance, it's ninety racks on my Visa",Visa,END,SLANT,cmu,MED,Y
+Above Average,15,I'm sippin' Hi-Tech and I know I don't need it,don't,16,"I got a straight A with no insurance, it's ninety racks on my Visa",no,INNER,ASSONANCE,vowel,MED,Y
+Above Average,15,I'm sippin' Hi-Tech and I know I don't need it,Hi,16,"I got a straight A with no insurance, it's ninety racks on my Visa",ninety,INNER,ASSONANCE,vowel,MED,Y
+Above Average,15,I'm sippin' Hi-Tech and I know I don't need it,know,16,"I got a straight A with no insurance, it's ninety racks on my Visa",no,INNER,PERFECT,cmu,HIGH,Y
+Above Average,15,I'm sippin' Hi-Tech and I know I don't need it,don't,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),go,INNER,ASSONANCE,vowel,MED,Y
+Above Average,15,I'm sippin' Hi-Tech and I know I don't need it,know,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),go,INNER,PERFECT,cmu,HIGH,Y
+Above Average,15,I'm sippin' Hi-Tech and I know I don't need it,need,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Yves,INNER,SLANT,cmu,MED,Y
+Above Average,16,"I got a straight A with no insurance, it's ninety racks on my Visa",got,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),cop,INNER,SLANT,cmu,MED,Y
+Above Average,16,"I got a straight A with no insurance, it's ninety racks on my Visa",got,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),wanna,INNER,SLANT,cmu,MED,Y
+Above Average,16,"I got a straight A with no insurance, it's ninety racks on my Visa",ninety,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Valee,INNER,ASSONANCE,vowel,LOW,N
+Above Average,16,"I got a straight A with no insurance, it's ninety racks on my Visa",no,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),go,INNER,PERFECT,cmu,HIGH,Y
+Above Average,16,"I got a straight A with no insurance, it's ninety racks on my Visa",straight,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),made,INNER,SLANT,cmu,MED,Y
+Above Average,16,"I got a straight A with no insurance, it's ninety racks on my Visa",straight,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Saint,INNER,SLANT,cmu,MED,Y
+Above Average,16,"I got a straight A with no insurance, it's ninety racks on my Visa",Visa,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Yves,INNER,SLANT,cmu,MED,Y
+Above Average,16,"I got a straight A with no insurance, it's ninety racks on my Visa",straight,18,Two hundred bucks I at least make a month (Uh),make,INNER,SLANT,cmu,MED,Y
+Above Average,16,"I got a straight A with no insurance, it's ninety racks on my Visa",Visa,18,Two hundred bucks I at least make a month (Uh),least,INNER,ASSONANCE,vowel,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),made,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Saint,INNER,ASSONANCE,vowel,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),wanna,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),cop,INNER,SLANT,cmu,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Fuck,18,Two hundred bucks I at least make a month (Uh),bucks,INNER,SLANT,cmu,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Fuck,18,Two hundred bucks I at least make a month (Uh),hundred,INNER,ASSONANCE,vowel,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Fuck,18,Two hundred bucks I at least make a month (Uh),month,INNER,ASSONANCE,vowel,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),made,18,Two hundred bucks I at least make a month (Uh),make,INNER,SLANT,cmu,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Saint,18,Two hundred bucks I at least make a month (Uh),make,INNER,ASSONANCE,vowel,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Yves,18,Two hundred bucks I at least make a month (Uh),least,INNER,ASSONANCE,vowel,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),cop,19,"Fig get to rollin', let me face the blunt (Exotic)",rollin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Fuck,19,"Fig get to rollin', let me face the blunt (Exotic)",blunt,INNER,ASSONANCE,vowel,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),made,19,"Fig get to rollin', let me face the blunt (Exotic)",face,INNER,SLANT,cmu,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),Saint,19,"Fig get to rollin', let me face the blunt (Exotic)",face,INNER,ASSONANCE,vowel,MED,Y
+Above Average,17,Fuck 'round with Valee made me wanna go cop that Yves Saint Laurent (Uh),wanna,19,"Fig get to rollin', let me face the blunt (Exotic)",rollin,INNER,SLANT,cmu,MED,Y
+Above Average,18,Two hundred bucks I at least make a month (Uh),bucks,18,Two hundred bucks I at least make a month (Uh),month,INNER,ASSONANCE,vowel,MED,Y
+Above Average,18,Two hundred bucks I at least make a month (Uh),hundred,18,Two hundred bucks I at least make a month (Uh),bucks,INNER,ASSONANCE,vowel,MED,Y
+Above Average,18,Two hundred bucks I at least make a month (Uh),hundred,18,Two hundred bucks I at least make a month (Uh),month,INNER,ASSONANCE,vowel,MED,Y
+Above Average,18,Two hundred bucks I at least make a month (Uh),month,19,"Fig get to rollin', let me face the blunt (Exotic)",blunt,END,SLANT,cmu,MED,Y
+Above Average,18,Two hundred bucks I at least make a month (Uh),bucks,19,"Fig get to rollin', let me face the blunt (Exotic)",blunt,INNER,ASSONANCE,vowel,MED,Y
+Above Average,18,Two hundred bucks I at least make a month (Uh),hundred,19,"Fig get to rollin', let me face the blunt (Exotic)",blunt,INNER,ASSONANCE,vowel,MED,Y
+Above Average,18,Two hundred bucks I at least make a month (Uh),make,19,"Fig get to rollin', let me face the blunt (Exotic)",face,INNER,SLANT,cmu,MED,Y
+Above Average,18,Two hundred bucks I at least make a month (Uh),make,20,"Your ho always roll up, she know I don't want her, I play her, controller",always,INNER,SLANT,cmu,MED,Y
+Above Average,18,Two hundred bucks I at least make a month (Uh),make,20,"Your ho always roll up, she know I don't want her, I play her, controller",play,INNER,ASSONANCE,vowel,MED,Y
+Above Average,19,"Fig get to rollin', let me face the blunt (Exotic)",get,19,"Fig get to rollin', let me face the blunt (Exotic)",let,INNER,PERFECT,cmu,HIGH,Y
+Above Average,19,"Fig get to rollin', let me face the blunt (Exotic)",face,20,"Your ho always roll up, she know I don't want her, I play her, controller",always,INNER,SLANT,cmu,MED,Y
+Above Average,19,"Fig get to rollin', let me face the blunt (Exotic)",face,20,"Your ho always roll up, she know I don't want her, I play her, controller",play,INNER,ASSONANCE,vowel,MED,Y
+Above Average,19,"Fig get to rollin', let me face the blunt (Exotic)",rollin,20,"Your ho always roll up, she know I don't want her, I play her, controller",want,INNER,ASSONANCE,vowel,MED,Y
+Above Average,19,"Fig get to rollin', let me face the blunt (Exotic)",Fig,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",lil,INNER,SLANT,cmu,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",always,20,"Your ho always roll up, she know I don't want her, I play her, controller",play,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",don't,20,"Your ho always roll up, she know I don't want her, I play her, controller",controller,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",ho,20,"Your ho always roll up, she know I don't want her, I play her, controller",controller,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",ho,20,"Your ho always roll up, she know I don't want her, I play her, controller",don't,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",ho,20,"Your ho always roll up, she know I don't want her, I play her, controller",know,INNER,PERFECT,cmu,HIGH,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",ho,20,"Your ho always roll up, she know I don't want her, I play her, controller",roll,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",know,20,"Your ho always roll up, she know I don't want her, I play her, controller",controller,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",know,20,"Your ho always roll up, she know I don't want her, I play her, controller",don't,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",roll,20,"Your ho always roll up, she know I don't want her, I play her, controller",controller,INNER,SLANT,cmu,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",roll,20,"Your ho always roll up, she know I don't want her, I play her, controller",don't,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",roll,20,"Your ho always roll up, she know I don't want her, I play her, controller",know,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",controller,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,END,MULTI,multi,HIGH,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",controller,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,INNER,SLANT,cmu,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",don't,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",don't,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",ho,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",ho,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",know,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",know,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",roll,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,INNER,SLANT,cmu,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",roll,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,INNER,SLANT,cmu,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",controller,22,Flow sick like Ebola and keep some bandola,Ebola,INNER,SLANT,cmu,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",controller,22,Flow sick like Ebola and keep some bandola,Flow,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",don't,22,Flow sick like Ebola and keep some bandola,Ebola,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",don't,22,Flow sick like Ebola and keep some bandola,Flow,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",ho,22,Flow sick like Ebola and keep some bandola,Ebola,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",ho,22,Flow sick like Ebola and keep some bandola,Flow,INNER,PERFECT,cmu,HIGH,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",know,22,Flow sick like Ebola and keep some bandola,Ebola,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",know,22,Flow sick like Ebola and keep some bandola,Flow,INNER,PERFECT,cmu,HIGH,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",roll,22,Flow sick like Ebola and keep some bandola,Ebola,INNER,SLANT,cmu,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",roll,22,Flow sick like Ebola and keep some bandola,Flow,INNER,ASSONANCE,vowel,MED,Y
+Above Average,20,"Your ho always roll up, she know I don't want her, I play her, controller",controller,23,"Strapped up like Magnolia, this bitch always loaded",loaded,END,ASSONANCE,vowel,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,INNER,SLANT,cmu,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",lil,22,Flow sick like Ebola and keep some bandola,sick,INNER,SLANT,cmu,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,22,Flow sick like Ebola and keep some bandola,Ebola,INNER,SLANT,cmu,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,22,Flow sick like Ebola and keep some bandola,Flow,INNER,ASSONANCE,vowel,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,22,Flow sick like Ebola and keep some bandola,Ebola,INNER,SLANT,cmu,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,22,Flow sick like Ebola and keep some bandola,Flow,INNER,ASSONANCE,vowel,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,23,"Strapped up like Magnolia, this bitch always loaded",loaded,END,ASSONANCE,vowel,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",had,23,"Strapped up like Magnolia, this bitch always loaded",Strapped,INNER,SLANT,cmu,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",lil,23,"Strapped up like Magnolia, this bitch always loaded",bitch,INNER,SLANT,cmu,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,23,"Strapped up like Magnolia, this bitch always loaded",loaded,INNER,ASSONANCE,vowel,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",soldier,23,"Strapped up like Magnolia, this bitch always loaded",Magnolia,INNER,SLANT,cmu,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,23,"Strapped up like Magnolia, this bitch always loaded",Magnolia,INNER,SLANT,cmu,MED,Y
+Above Average,21,"Just had a lil' soldier, 2K for the stroller (Yeah)",stroller,25,"Shit be takin' all day, you'd think somebody froze it",froze,END,SLANT,cmu,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,Ebola,22,Flow sick like Ebola and keep some bandola,bandola,INNER,MULTI,multi,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,Flow,22,Flow sick like Ebola and keep some bandola,Ebola,INNER,ASSONANCE,vowel,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,like Ebola,22,Flow sick like Ebola and keep some bandola,some bandola,INNER,MULTI,multi,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,Ebola,23,"Strapped up like Magnolia, this bitch always loaded",loaded,INNER,ASSONANCE,vowel,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,Ebola,23,"Strapped up like Magnolia, this bitch always loaded",Magnolia,INNER,SLANT,cmu,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,Flow,23,"Strapped up like Magnolia, this bitch always loaded",loaded,INNER,ASSONANCE,vowel,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,Flow,23,"Strapped up like Magnolia, this bitch always loaded",Magnolia,INNER,ASSONANCE,vowel,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,like,23,"Strapped up like Magnolia, this bitch always loaded",like,INNER,REPEAT,spelling,HIGH,N
+Above Average,22,Flow sick like Ebola and keep some bandola,sick,23,"Strapped up like Magnolia, this bitch always loaded",bitch,INNER,SLANT,cmu,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,bandola,24,"Every time I go to the bank, make withdrawals",bank,INNER,ASSONANCE,vowel,LOW,N
+Above Average,22,Flow sick like Ebola and keep some bandola,Ebola,24,"Every time I go to the bank, make withdrawals",go,INNER,ASSONANCE,vowel,MED,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,Flow,24,"Every time I go to the bank, make withdrawals",go,INNER,PERFECT,cmu,HIGH,Y
+Above Average,22,Flow sick like Ebola and keep some bandola,like,24,"Every time I go to the bank, make withdrawals",time,INNER,SLANT,cmu,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",Magnolia,23,"Strapped up like Magnolia, this bitch always loaded",loaded,INNER,ASSONANCE,vowel,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",always,24,"Every time I go to the bank, make withdrawals",make,INNER,SLANT,cmu,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",like,24,"Every time I go to the bank, make withdrawals",time,INNER,SLANT,cmu,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",loaded,24,"Every time I go to the bank, make withdrawals",go,INNER,ASSONANCE,vowel,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",Magnolia,24,"Every time I go to the bank, make withdrawals",go,INNER,ASSONANCE,vowel,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",Strapped,24,"Every time I go to the bank, make withdrawals",bank,INNER,ASSONANCE,vowel,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",loaded,25,"Shit be takin' all day, you'd think somebody froze it",froze,END,ASSONANCE,vowel,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",always,25,"Shit be takin' all day, you'd think somebody froze it",day,INNER,ASSONANCE,vowel,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",always,25,"Shit be takin' all day, you'd think somebody froze it",takin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",bitch,25,"Shit be takin' all day, you'd think somebody froze it",Shit,INNER,SLANT,cmu,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",bitch,25,"Shit be takin' all day, you'd think somebody froze it",think,INNER,ASSONANCE,vowel,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",Magnolia,25,"Shit be takin' all day, you'd think somebody froze it",froze,INNER,ASSONANCE,vowel,MED,Y
+Above Average,23,"Strapped up like Magnolia, this bitch always loaded",loaded,27,"I was wild in the hood, seein' straps, let me hold it",hold,END,SLANT,cmu,MED,Y
+Above Average,24,"Every time I go to the bank, make withdrawals",go,25,"Shit be takin' all day, you'd think somebody froze it",froze,INNER,ASSONANCE,vowel,MED,Y
+Above Average,24,"Every time I go to the bank, make withdrawals",make,25,"Shit be takin' all day, you'd think somebody froze it",day,INNER,ASSONANCE,vowel,MED,Y
+Above Average,24,"Every time I go to the bank, make withdrawals",make,25,"Shit be takin' all day, you'd think somebody froze it",takin,INNER,SLANT,cmu,MED,Y
+Above Average,24,"Every time I go to the bank, make withdrawals",withdrawals,25,"Shit be takin' all day, you'd think somebody froze it",all,INNER,SLANT,cmu,MED,Y
+Above Average,24,"Every time I go to the bank, make withdrawals",bank,26,"Way 'fore I ran up that bank, froze my neck",bank,INNER,REPEAT,spelling,HIGH,N
+Above Average,24,"Every time I go to the bank, make withdrawals",bank,26,"Way 'fore I ran up that bank, froze my neck",ran,INNER,ASSONANCE,vowel,MED,Y
+Above Average,24,"Every time I go to the bank, make withdrawals",Every,26,"Way 'fore I ran up that bank, froze my neck",neck,INNER,SLANT,cmu,MED,Y
+Above Average,24,"Every time I go to the bank, make withdrawals",go,26,"Way 'fore I ran up that bank, froze my neck",froze,INNER,ASSONANCE,vowel,MED,Y
+Above Average,24,"Every time I go to the bank, make withdrawals",make,26,"Way 'fore I ran up that bank, froze my neck",Way,INNER,ASSONANCE,vowel,MED,Y
+Above Average,24,"Every time I go to the bank, make withdrawals",withdrawals,26,"Way 'fore I ran up that bank, froze my neck",'fore,INNER,ASSONANCE,vowel,MED,Y
+Above Average,25,"Shit be takin' all day, you'd think somebody froze it",Shit,25,"Shit be takin' all day, you'd think somebody froze it",think,INNER,ASSONANCE,vowel,MED,Y
+Above Average,25,"Shit be takin' all day, you'd think somebody froze it",takin,25,"Shit be takin' all day, you'd think somebody froze it",day,INNER,ASSONANCE,vowel,MED,Y
+Above Average,25,"Shit be takin' all day, you'd think somebody froze it",all,26,"Way 'fore I ran up that bank, froze my neck",'fore,INNER,SLANT,cmu,MED,Y
+Above Average,25,"Shit be takin' all day, you'd think somebody froze it",day,26,"Way 'fore I ran up that bank, froze my neck",Way,INNER,PERFECT,cmu,HIGH,Y
+Above Average,25,"Shit be takin' all day, you'd think somebody froze it",froze,26,"Way 'fore I ran up that bank, froze my neck",froze,INNER,REPEAT,spelling,HIGH,N
+Above Average,25,"Shit be takin' all day, you'd think somebody froze it",takin,26,"Way 'fore I ran up that bank, froze my neck",Way,INNER,ASSONANCE,vowel,MED,Y
+Above Average,25,"Shit be takin' all day, you'd think somebody froze it",froze,27,"I was wild in the hood, seein' straps, let me hold it",hold,END,ASSONANCE,vowel,MED,Y
+Above Average,25,"Shit be takin' all day, you'd think somebody froze it",froze,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",sold,END,ASSONANCE,vowel,MED,Y
+Above Average,25,"Shit be takin' all day, you'd think somebody froze it",froze,29,"Watch what we say, so we found out who told it",told,END,ASSONANCE,vowel,MED,Y
+Above Average,26,"Way 'fore I ran up that bank, froze my neck",ran,26,"Way 'fore I ran up that bank, froze my neck",bank,INNER,ASSONANCE,vowel,MED,Y
+Above Average,26,"Way 'fore I ran up that bank, froze my neck",bank,27,"I was wild in the hood, seein' straps, let me hold it",straps,INNER,ASSONANCE,vowel,MED,Y
+Above Average,26,"Way 'fore I ran up that bank, froze my neck",froze,27,"I was wild in the hood, seein' straps, let me hold it",hold,INNER,ASSONANCE,vowel,MED,Y
+Above Average,26,"Way 'fore I ran up that bank, froze my neck",neck,27,"I was wild in the hood, seein' straps, let me hold it",let,INNER,SLANT,cmu,MED,Y
+Above Average,26,"Way 'fore I ran up that bank, froze my neck",ran,27,"I was wild in the hood, seein' straps, let me hold it",straps,INNER,ASSONANCE,vowel,MED,Y
+Above Average,26,"Way 'fore I ran up that bank, froze my neck",froze,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",Coke,INNER,SLANT,cmu,MED,Y
+Above Average,26,"Way 'fore I ran up that bank, froze my neck",froze,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",sold,INNER,ASSONANCE,vowel,MED,Y
+Above Average,26,"Way 'fore I ran up that bank, froze my neck",neck,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",sellin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,26,"Way 'fore I ran up that bank, froze my neck",neck,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",whatever,INNER,SLANT,cmu,MED,Y
+Above Average,27,"I was wild in the hood, seein' straps, let me hold it",hold,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",sold,END,PERFECT,cmu,HIGH,Y
+Above Average,27,"I was wild in the hood, seein' straps, let me hold it",hold,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",Coke,INNER,ASSONANCE,vowel,MED,Y
+Above Average,27,"I was wild in the hood, seein' straps, let me hold it",let,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",sellin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,27,"I was wild in the hood, seein' straps, let me hold it",let,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",whatever,INNER,SLANT,cmu,MED,Y
+Above Average,27,"I was wild in the hood, seein' straps, let me hold it",hold,29,"Watch what we say, so we found out who told it",told,END,PERFECT,cmu,HIGH,Y
+Above Average,27,"I was wild in the hood, seein' straps, let me hold it",hold,30,"Before I got mama a house, bought a Rolex",Rolex,END,ASSONANCE,vowel,MED,Y
+Above Average,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",Coke,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",sold,INNER,ASSONANCE,vowel,MED,Y
+Above Average,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",whatever,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",sellin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",sold,29,"Watch what we say, so we found out who told it",told,END,PERFECT,cmu,HIGH,Y
+Above Average,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",Coke,29,"Watch what we say, so we found out who told it",told,INNER,ASSONANCE,vowel,MED,Y
+Above Average,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",sold,30,"Before I got mama a house, bought a Rolex",Rolex,END,ASSONANCE,vowel,MED,Y
+Above Average,28,"Coke and whatever was sellin', we sold it (Yeah, I sold that)",Coke,30,"Before I got mama a house, bought a Rolex",Rolex,INNER,ASSONANCE,vowel,MED,Y
+Above Average,29,"Watch what we say, so we found out who told it",told,30,"Before I got mama a house, bought a Rolex",Rolex,END,ASSONANCE,vowel,MED,Y
+Above Average,29,"Watch what we say, so we found out who told it",found,30,"Before I got mama a house, bought a Rolex",house,INNER,ASSONANCE,vowel,MED,Y
+Above Average,29,"Watch what we say, so we found out who told it",Watch,30,"Before I got mama a house, bought a Rolex",bought,INNER,SLANT,cmu,MED,Y
+Above Average,29,"Watch what we say, so we found out who told it",Watch,30,"Before I got mama a house, bought a Rolex",got,INNER,SLANT,cmu,MED,Y
+Above Average,29,"Watch what we say, so we found out who told it",Watch,30,"Before I got mama a house, bought a Rolex",mama,INNER,SLANT,cmu,MED,Y
+Above Average,29,"Watch what we say, so we found out who told it",say,31,"I was eighteen with that sack, I ain't know shit",ain't,INNER,ASSONANCE,vowel,MED,Y
+Above Average,29,"Watch what we say, so we found out who told it",told,31,"I was eighteen with that sack, I ain't know shit",know,INNER,ASSONANCE,vowel,MED,Y
+Above Average,30,"Before I got mama a house, bought a Rolex",got,30,"Before I got mama a house, bought a Rolex",bought,INNER,PERFECT,cmu,HIGH,Y
+Above Average,30,"Before I got mama a house, bought a Rolex",got,30,"Before I got mama a house, bought a Rolex",mama,INNER,SLANT,cmu,MED,Y
+Above Average,30,"Before I got mama a house, bought a Rolex",mama,30,"Before I got mama a house, bought a Rolex",bought,INNER,SLANT,cmu,MED,Y
+Above Average,30,"Before I got mama a house, bought a Rolex",Rolex,31,"I was eighteen with that sack, I ain't know shit",know,INNER,ASSONANCE,vowel,MED,Y
+Above Average,31,"I was eighteen with that sack, I ain't know shit",eighteen,32,Put on that drip in these Balenci' sneakers,sneakers,INNER,ASSONANCE,vowel,MED,Y
+Above Average,31,"I was eighteen with that sack, I ain't know shit",eighteen,32,Put on that drip in these Balenci' sneakers,these,INNER,SLANT,cmu,MED,Y
+Above Average,31,"I was eighteen with that sack, I ain't know shit",shit,32,Put on that drip in these Balenci' sneakers,drip,INNER,SLANT,cmu,MED,Y
+Above Average,31,"I was eighteen with that sack, I ain't know shit",ain't,33,"Paint up your t-shirt, no Mona Lisa",Paint,INNER,PERFECT,cmu,HIGH,Y
+Above Average,31,"I was eighteen with that sack, I ain't know shit",eighteen,33,"Paint up your t-shirt, no Mona Lisa",Lisa,INNER,SLANT,cmu,MED,Y
+Above Average,31,"I was eighteen with that sack, I ain't know shit",eighteen,33,"Paint up your t-shirt, no Mona Lisa",t,INNER,ASSONANCE,vowel,MED,Y
+Above Average,31,"I was eighteen with that sack, I ain't know shit",know,33,"Paint up your t-shirt, no Mona Lisa",Mona,INNER,ASSONANCE,vowel,MED,Y
+Above Average,31,"I was eighteen with that sack, I ain't know shit",know,33,"Paint up your t-shirt, no Mona Lisa",no,INNER,PERFECT,cmu,HIGH,Y
+Above Average,32,Put on that drip in these Balenci' sneakers,these,32,Put on that drip in these Balenci' sneakers,sneakers,INNER,SLANT,cmu,MED,Y
+Above Average,32,Put on that drip in these Balenci' sneakers,sneakers,33,"Paint up your t-shirt, no Mona Lisa",Lisa,END,ASSONANCE,vowel,MED,Y
+Above Average,32,Put on that drip in these Balenci' sneakers,sneakers,33,"Paint up your t-shirt, no Mona Lisa",t,INNER,ASSONANCE,vowel,MED,Y
+Above Average,32,Put on that drip in these Balenci' sneakers,these,33,"Paint up your t-shirt, no Mona Lisa",Lisa,INNER,SLANT,cmu,MED,Y
+Above Average,32,Put on that drip in these Balenci' sneakers,these,33,"Paint up your t-shirt, no Mona Lisa",t,INNER,ASSONANCE,vowel,MED,Y
+Above Average,32,Put on that drip in these Balenci' sneakers,sneakers,34,"I had on VLONE, now I'm rockin' a beater",beater,END,ASSONANCE,vowel,MED,Y
+Above Average,32,Put on that drip in these Balenci' sneakers,these,34,"I had on VLONE, now I'm rockin' a beater",beater,INNER,SLANT,cmu,MED,Y
+Above Average,32,Put on that drip in these Balenci' sneakers,sneakers,35,"Stick got Supersport, it's far from a beater",beater,END,ASSONANCE,vowel,MED,Y
+Above Average,32,Put on that drip in these Balenci' sneakers,sneakers,36,"Told her to throw it, she gon' throw it, I call her Jeter",Jeter,END,ASSONANCE,vowel,MED,Y
+Above Average,33,"Paint up your t-shirt, no Mona Lisa",no,33,"Paint up your t-shirt, no Mona Lisa",Mona,INNER,ASSONANCE,vowel,MED,Y
+Above Average,33,"Paint up your t-shirt, no Mona Lisa",t,33,"Paint up your t-shirt, no Mona Lisa",Lisa,INNER,ASSONANCE,vowel,MED,Y
+Above Average,33,"Paint up your t-shirt, no Mona Lisa",Lisa,34,"I had on VLONE, now I'm rockin' a beater",beater,END,SLANT,cmu,MED,Y
+Above Average,33,"Paint up your t-shirt, no Mona Lisa",Mona,34,"I had on VLONE, now I'm rockin' a beater",VLONE,INNER,SLANT,spelling,LOW,Y
+Above Average,33,"Paint up your t-shirt, no Mona Lisa",t,34,"I had on VLONE, now I'm rockin' a beater",beater,INNER,ASSONANCE,vowel,MED,Y
+Above Average,33,"Paint up your t-shirt, no Mona Lisa",Lisa,35,"Stick got Supersport, it's far from a beater",beater,END,SLANT,cmu,MED,Y
+Above Average,33,"Paint up your t-shirt, no Mona Lisa",t,35,"Stick got Supersport, it's far from a beater",beater,INNER,ASSONANCE,vowel,MED,Y
+Above Average,33,"Paint up your t-shirt, no Mona Lisa",Lisa,36,"Told her to throw it, she gon' throw it, I call her Jeter",Jeter,END,SLANT,cmu,MED,Y
+Above Average,33,"Paint up your t-shirt, no Mona Lisa",Lisa,37,"My car got no plates, I still pick up a eater",eater,END,SLANT,cmu,MED,Y
+Above Average,34,"I had on VLONE, now I'm rockin' a beater",beater,35,"Stick got Supersport, it's far from a beater",beater,END,REPEAT,spelling,HIGH,N
+Above Average,34,"I had on VLONE, now I'm rockin' a beater",rockin,35,"Stick got Supersport, it's far from a beater",far,INNER,ASSONANCE,vowel,MED,Y
+Above Average,34,"I had on VLONE, now I'm rockin' a beater",rockin,35,"Stick got Supersport, it's far from a beater",got,INNER,ASSONANCE,vowel,MED,Y
+Above Average,34,"I had on VLONE, now I'm rockin' a beater",beater,36,"Told her to throw it, she gon' throw it, I call her Jeter",Jeter,END,MULTI,multi,HIGH,Y
+Above Average,34,"I had on VLONE, now I'm rockin' a beater",VLONE,36,"Told her to throw it, she gon' throw it, I call her Jeter",gon,INNER,SLANT,spelling,LOW,Y
+Above Average,34,"I had on VLONE, now I'm rockin' a beater",beater,37,"My car got no plates, I still pick up a eater",eater,END,MULTI,multi,HIGH,Y
+Above Average,34,"I had on VLONE, now I'm rockin' a beater",beater,38,I pour codeine in the Faygo two-liter,liter,END,MULTI,multi,HIGH,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",got,35,"Stick got Supersport, it's far from a beater",far,INNER,SLANT,cmu,MED,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",beater,36,"Told her to throw it, she gon' throw it, I call her Jeter",Jeter,END,MULTI,multi,HIGH,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",beater,37,"My car got no plates, I still pick up a eater",eater,END,MULTI,multi,HIGH,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",far,37,"My car got no plates, I still pick up a eater",car,INNER,PERFECT,cmu,HIGH,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",far,37,"My car got no plates, I still pick up a eater",got,INNER,SLANT,cmu,MED,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",got,37,"My car got no plates, I still pick up a eater",car,INNER,SLANT,cmu,MED,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",got,37,"My car got no plates, I still pick up a eater",got,INNER,REPEAT,spelling,HIGH,N
+Above Average,35,"Stick got Supersport, it's far from a beater",Stick,37,"My car got no plates, I still pick up a eater",pick,INNER,PERFECT,cmu,HIGH,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",Stick,37,"My car got no plates, I still pick up a eater",still,INNER,SLANT,cmu,MED,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",beater,38,I pour codeine in the Faygo two-liter,liter,END,MULTI,multi,HIGH,Y
+Above Average,35,"Stick got Supersport, it's far from a beater",beater,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",fever,END,SLANT,cmu,MED,Y
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",throw,36,"Told her to throw it, she gon' throw it, I call her Jeter",throw,INNER,REPEAT,spelling,HIGH,N
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",Told,36,"Told her to throw it, she gon' throw it, I call her Jeter",throw,INNER,ASSONANCE,vowel,MED,Y
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",Jeter,37,"My car got no plates, I still pick up a eater",eater,END,MULTI,multi,HIGH,Y
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",throw,37,"My car got no plates, I still pick up a eater",no,INNER,PERFECT,cmu,HIGH,Y
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",Told,37,"My car got no plates, I still pick up a eater",no,INNER,ASSONANCE,vowel,MED,Y
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",Jeter,38,I pour codeine in the Faygo two-liter,liter,END,MULTI,multi,HIGH,Y
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",call,38,I pour codeine in the Faygo two-liter,pour,INNER,SLANT,cmu,MED,Y
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",gon,38,I pour codeine in the Faygo two-liter,codeine,INNER,SLANT,spelling,LOW,Y
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",throw,38,I pour codeine in the Faygo two-liter,Faygo,INNER,ASSONANCE,vowel,LOW,N
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",Jeter,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",fever,END,SLANT,cmu,MED,Y
+Above Average,36,"Told her to throw it, she gon' throw it, I call her Jeter",Jeter,40,Necklace gon' chill that bitch out like a Fiji,Fiji,END,SLANT,cmu,MED,Y
+Above Average,37,"My car got no plates, I still pick up a eater",car,37,"My car got no plates, I still pick up a eater",got,INNER,SLANT,cmu,MED,Y
+Above Average,37,"My car got no plates, I still pick up a eater",still,37,"My car got no plates, I still pick up a eater",pick,INNER,SLANT,cmu,MED,Y
+Above Average,37,"My car got no plates, I still pick up a eater",eater,38,I pour codeine in the Faygo two-liter,liter,END,MULTI,multi,HIGH,Y
+Above Average,37,"My car got no plates, I still pick up a eater",no,38,I pour codeine in the Faygo two-liter,Faygo,INNER,ASSONANCE,vowel,LOW,N
+Above Average,37,"My car got no plates, I still pick up a eater",eater,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",fever,END,SLANT,cmu,MED,Y
+Above Average,37,"My car got no plates, I still pick up a eater",car,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",hot,INNER,SLANT,cmu,MED,Y
+Above Average,37,"My car got no plates, I still pick up a eater",got,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",hot,INNER,PERFECT,cmu,HIGH,Y
+Above Average,37,"My car got no plates, I still pick up a eater",pick,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",bitch,INNER,SLANT,cmu,MED,Y
+Above Average,37,"My car got no plates, I still pick up a eater",still,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",bitch,INNER,SLANT,cmu,MED,Y
+Above Average,37,"My car got no plates, I still pick up a eater",eater,40,Necklace gon' chill that bitch out like a Fiji,Fiji,END,SLANT,cmu,MED,Y
+Above Average,38,I pour codeine in the Faygo two-liter,liter,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",fever,END,SLANT,cmu,MED,Y
+Above Average,38,I pour codeine in the Faygo two-liter,pour,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",Exhaust,INNER,ASSONANCE,vowel,MED,Y
+Above Average,38,I pour codeine in the Faygo two-liter,two,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",super,INNER,ASSONANCE,vowel,MED,Y
+Above Average,38,I pour codeine in the Faygo two-liter,liter,40,Necklace gon' chill that bitch out like a Fiji,Fiji,END,SLANT,cmu,MED,Y
+Above Average,38,I pour codeine in the Faygo two-liter,codeine,40,Necklace gon' chill that bitch out like a Fiji,gon,INNER,SLANT,spelling,LOW,Y
+Above Average,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",fever,40,Necklace gon' chill that bitch out like a Fiji,Fiji,END,SLANT,cmu,MED,Y
+Above Average,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",bitch,40,Necklace gon' chill that bitch out like a Fiji,bitch,INNER,REPEAT,spelling,HIGH,N
+Above Average,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",bitch,40,Necklace gon' chill that bitch out like a Fiji,chill,INNER,SLANT,cmu,MED,Y
+Above Average,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",bitch,41,"My bitch gettin' excited, I bought her some flats",bitch,INNER,REPEAT,spelling,HIGH,N
+Above Average,39,"Exhaust on that bitch super hot, ooh, fever (Woo)",hot,41,"My bitch gettin' excited, I bought her some flats",bought,INNER,PERFECT,cmu,HIGH,Y
+Above Average,40,Necklace gon' chill that bitch out like a Fiji,chill,40,Necklace gon' chill that bitch out like a Fiji,bitch,INNER,SLANT,cmu,MED,Y
+Above Average,40,Necklace gon' chill that bitch out like a Fiji,bitch,41,"My bitch gettin' excited, I bought her some flats",bitch,INNER,REPEAT,spelling,HIGH,N
+Above Average,40,Necklace gon' chill that bitch out like a Fiji,chill,41,"My bitch gettin' excited, I bought her some flats",bitch,INNER,SLANT,cmu,MED,Y
+Above Average,40,Necklace gon' chill that bitch out like a Fiji,like,41,"My bitch gettin' excited, I bought her some flats",excited,INNER,SLANT,cmu,MED,Y
+Above Average,40,Necklace gon' chill that bitch out like a Fiji,Necklace,41,"My bitch gettin' excited, I bought her some flats",gettin,INNER,ASSONANCE,vowel,MED,Y
+Above Average,40,Necklace gon' chill that bitch out like a Fiji,like,42,"I fuck from the side, not that much from the back",side,INNER,SLANT,cmu,MED,Y
+Above Average,41,"My bitch gettin' excited, I bought her some flats",flats,42,"I fuck from the side, not that much from the back",back,END,ASSONANCE,vowel,MED,Y
+Above Average,41,"My bitch gettin' excited, I bought her some flats",bought,42,"I fuck from the side, not that much from the back",not,INNER,PERFECT,cmu,HIGH,Y
+Above Average,41,"My bitch gettin' excited, I bought her some flats",excited,42,"I fuck from the side, not that much from the back",side,INNER,SLANT,cmu,MED,Y
+Above Average,41,"My bitch gettin' excited, I bought her some flats",some,42,"I fuck from the side, not that much from the back",fuck,INNER,SLANT,cmu,MED,Y
+Above Average,41,"My bitch gettin' excited, I bought her some flats",some,42,"I fuck from the side, not that much from the back",much,INNER,SLANT,cmu,MED,Y
+Above Average,41,"My bitch gettin' excited, I bought her some flats",flats,43,"I quit the codeine, I went out off the Act' (Act')",Act,END,ASSONANCE,vowel,MED,Y
+Above Average,41,"My bitch gettin' excited, I bought her some flats",bitch,43,"I quit the codeine, I went out off the Act' (Act')",quit,INNER,SLANT,cmu,MED,Y
+Above Average,41,"My bitch gettin' excited, I bought her some flats",gettin,43,"I quit the codeine, I went out off the Act' (Act')",went,INNER,ASSONANCE,vowel,MED,Y
+Above Average,42,"I fuck from the side, not that much from the back",fuck,42,"I fuck from the side, not that much from the back",much,INNER,SLANT,cmu,MED,Y
+Above Average,42,"I fuck from the side, not that much from the back",back,43,"I quit the codeine, I went out off the Act' (Act')",Act,END,SLANT,cmu,MED,Y
+Above Average,42,"I fuck from the side, not that much from the back",back,44,"Meek came home, told me get fuck out the 'Raq",'Raq,END,PERFECT,spelling,MED,Y
+Above Average,42,"I fuck from the side, not that much from the back",fuck,44,"Meek came home, told me get fuck out the 'Raq",fuck,INNER,REPEAT,spelling,HIGH,N
+Above Average,42,"I fuck from the side, not that much from the back",much,44,"Meek came home, told me get fuck out the 'Raq",fuck,INNER,SLANT,cmu,MED,Y
+Above Average,42,"I fuck from the side, not that much from the back",back,46,"I know he ain't cappin', the signs say ""No hat""",hat,END,SLANT,cmu,MED,Y
+Above Average,43,"I quit the codeine, I went out off the Act' (Act')",Act,44,"Meek came home, told me get fuck out the 'Raq",'Raq,END,SLANT,spelling,LOW,Y
+Above Average,43,"I quit the codeine, I went out off the Act' (Act')",codeine,44,"Meek came home, told me get fuck out the 'Raq",home,INNER,ASSONANCE,vowel,LOW,N
+Above Average,43,"I quit the codeine, I went out off the Act' (Act')",went,44,"Meek came home, told me get fuck out the 'Raq",get,INNER,SLANT,cmu,MED,Y
+Above Average,43,"I quit the codeine, I went out off the Act' (Act')",quit,45,"I'm askin' G Herbo like, ""Nigga, where at?""",askin,INNER,SLANT,cmu,MED,Y
+Above Average,43,"I quit the codeine, I went out off the Act' (Act')",quit,45,"I'm askin' G Herbo like, ""Nigga, where at?""",Nigga,INNER,SLANT,spelling,LOW,Y
+Above Average,43,"I quit the codeine, I went out off the Act' (Act')",went,45,"I'm askin' G Herbo like, ""Nigga, where at?""",where,INNER,ASSONANCE,vowel,MED,Y
+Above Average,43,"I quit the codeine, I went out off the Act' (Act')",Act,46,"I know he ain't cappin', the signs say ""No hat""",hat,END,SLANT,cmu,MED,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",home,44,"Meek came home, told me get fuck out the 'Raq",told,INNER,ASSONANCE,vowel,MED,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",get,45,"I'm askin' G Herbo like, ""Nigga, where at?""",where,INNER,SLANT,cmu,MED,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",Meek,45,"I'm askin' G Herbo like, ""Nigga, where at?""",G,INNER,ASSONANCE,vowel,MED,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",'Raq,46,"I know he ain't cappin', the signs say ""No hat""",hat,END,SLANT,spelling,LOW,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",came,46,"I know he ain't cappin', the signs say ""No hat""",ain't,INNER,ASSONANCE,vowel,MED,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",came,46,"I know he ain't cappin', the signs say ""No hat""",say,INNER,ASSONANCE,vowel,MED,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",home,46,"I know he ain't cappin', the signs say ""No hat""",know,INNER,ASSONANCE,vowel,MED,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",home,46,"I know he ain't cappin', the signs say ""No hat""",No,INNER,ASSONANCE,vowel,MED,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",told,46,"I know he ain't cappin', the signs say ""No hat""",know,INNER,ASSONANCE,vowel,MED,Y
+Above Average,44,"Meek came home, told me get fuck out the 'Raq",told,46,"I know he ain't cappin', the signs say ""No hat""",No,INNER,ASSONANCE,vowel,MED,Y
+Above Average,45,"I'm askin' G Herbo like, ""Nigga, where at?""",Herbo,46,"I know he ain't cappin', the signs say ""No hat""",know,INNER,ASSONANCE,vowel,LOW,N
+Above Average,45,"I'm askin' G Herbo like, ""Nigga, where at?""",Herbo,46,"I know he ain't cappin', the signs say ""No hat""",No,INNER,ASSONANCE,vowel,LOW,N
+Above Average,45,"I'm askin' G Herbo like, ""Nigga, where at?""",like,46,"I know he ain't cappin', the signs say ""No hat""",signs,INNER,ASSONANCE,vowel,MED,Y
+Above Average,46,"I know he ain't cappin', the signs say ""No hat""",ain't,46,"I know he ain't cappin', the signs say ""No hat""",say,INNER,ASSONANCE,vowel,MED,Y
+Above Average,46,"I know he ain't cappin', the signs say ""No hat""",cappin,46,"I know he ain't cappin', the signs say ""No hat""",hat,INNER,ASSONANCE,vowel,MED,Y
+Above Average,46,"I know he ain't cappin', the signs say ""No hat""",know,46,"I know he ain't cappin', the signs say ""No hat""",No,INNER,PERFECT,cmu,HIGH,Y
