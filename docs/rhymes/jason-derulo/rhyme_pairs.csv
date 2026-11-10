@@ -1,0 +1,526 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Last Night,1,"Last night (Uh), last night (Ma-Mally Mall)",Last,1,"Last night (Uh), last night (Ma-Mally Mall)",last,INNER,REPEAT,spelling,HIGH,N
+Last Night,1,"Last night (Uh), last night (Ma-Mally Mall)",night,1,"Last night (Uh), last night (Ma-Mally Mall)",night,INNER,REPEAT,spelling,HIGH,N
+Last Night,1,"Last night (Uh), last night (Ma-Mally Mall)",night,3,Last night felt like our first night (First night),night,END,REPEAT,spelling,HIGH,N
+Last Night,1,"Last night (Uh), last night (Ma-Mally Mall)",Last,3,Last night felt like our first night (First night),Last,INNER,REPEAT,spelling,HIGH,N
+Last Night,1,"Last night (Uh), last night (Ma-Mally Mall)",night,3,Last night felt like our first night (First night),like,INNER,SLANT,cmu,MED,Y
+Last Night,1,"Last night (Uh), last night (Ma-Mally Mall)",night,3,Last night felt like our first night (First night),night,INNER,REPEAT,spelling,HIGH,N
+Last Night,1,"Last night (Uh), last night (Ma-Mally Mall)",night,4,Back when you was 'bout that life (Yeah),life,END,SLANT,cmu,MED,Y
+Last Night,1,"Last night (Uh), last night (Ma-Mally Mall)",night,5,"Invite two friends, hit it three times (Three times)",times,END,ASSONANCE,vowel,MED,Y
+Last Night,3,Last night felt like our first night (First night),like,3,Last night felt like our first night (First night),night,INNER,SLANT,cmu,MED,Y
+Last Night,3,Last night felt like our first night (First night),night,3,Last night felt like our first night (First night),like,INNER,SLANT,cmu,MED,Y
+Last Night,3,Last night felt like our first night (First night),night,3,Last night felt like our first night (First night),night,INNER,REPEAT,spelling,HIGH,N
+Last Night,3,Last night felt like our first night (First night),night,4,Back when you was 'bout that life (Yeah),life,END,SLANT,cmu,MED,Y
+Last Night,3,Last night felt like our first night (First night),felt,4,Back when you was 'bout that life (Yeah),when,INNER,ASSONANCE,vowel,MED,Y
+Last Night,3,Last night felt like our first night (First night),Last,4,Back when you was 'bout that life (Yeah),Back,INNER,ASSONANCE,vowel,MED,Y
+Last Night,3,Last night felt like our first night (First night),like,4,Back when you was 'bout that life (Yeah),life,INNER,SLANT,cmu,MED,Y
+Last Night,3,Last night felt like our first night (First night),night,4,Back when you was 'bout that life (Yeah),life,INNER,SLANT,cmu,MED,Y
+Last Night,3,Last night felt like our first night (First night),night,5,"Invite two friends, hit it three times (Three times)",times,END,ASSONANCE,vowel,MED,Y
+Last Night,3,Last night felt like our first night (First night),felt,5,"Invite two friends, hit it three times (Three times)",friends,INNER,ASSONANCE,vowel,MED,Y
+Last Night,3,Last night felt like our first night (First night),like,5,"Invite two friends, hit it three times (Three times)",Invite,INNER,SLANT,cmu,MED,Y
+Last Night,3,Last night felt like our first night (First night),like,5,"Invite two friends, hit it three times (Three times)",times,INNER,ASSONANCE,vowel,MED,Y
+Last Night,3,Last night felt like our first night (First night),night,5,"Invite two friends, hit it three times (Three times)",Invite,INNER,PERFECT,cmu,HIGH,Y
+Last Night,3,Last night felt like our first night (First night),night,5,"Invite two friends, hit it three times (Three times)",times,INNER,ASSONANCE,vowel,MED,Y
+Last Night,4,Back when you was 'bout that life (Yeah),life,5,"Invite two friends, hit it three times (Three times)",times,END,ASSONANCE,vowel,MED,Y
+Last Night,4,Back when you was 'bout that life (Yeah),life,5,"Invite two friends, hit it three times (Three times)",Invite,INNER,SLANT,cmu,MED,Y
+Last Night,4,Back when you was 'bout that life (Yeah),when,5,"Invite two friends, hit it three times (Three times)",friends,INNER,ASSONANCE,vowel,MED,Y
+Last Night,4,Back when you was 'bout that life (Yeah),'bout,6,"You don't get jealous, I can see now",now,INNER,ASSONANCE,vowel,MED,Y
+Last Night,4,Back when you was 'bout that life (Yeah),Back,6,"You don't get jealous, I can see now",can,INNER,SLANT,cmu,MED,Y
+Last Night,4,Back when you was 'bout that life (Yeah),when,6,"You don't get jealous, I can see now",get,INNER,SLANT,cmu,MED,Y
+Last Night,4,Back when you was 'bout that life (Yeah),when,6,"You don't get jealous, I can see now",jealous,INNER,ASSONANCE,vowel,MED,Y
+Last Night,5,"Invite two friends, hit it three times (Three times)",Invite,5,"Invite two friends, hit it three times (Three times)",times,INNER,ASSONANCE,vowel,MED,Y
+Last Night,5,"Invite two friends, hit it three times (Three times)",friends,6,"You don't get jealous, I can see now",get,INNER,ASSONANCE,vowel,MED,Y
+Last Night,5,"Invite two friends, hit it three times (Three times)",friends,6,"You don't get jealous, I can see now",jealous,INNER,ASSONANCE,vowel,MED,Y
+Last Night,5,"Invite two friends, hit it three times (Three times)",three,6,"You don't get jealous, I can see now",see,INNER,PERFECT,cmu,HIGH,Y
+Last Night,5,"Invite two friends, hit it three times (Three times)",hit,7,"Yeah, I think we needed that space, uh (I think we needed that)",think,INNER,ASSONANCE,vowel,MED,Y
+Last Night,5,"Invite two friends, hit it three times (Three times)",three,7,"Yeah, I think we needed that space, uh (I think we needed that)",needed,INNER,ASSONANCE,vowel,MED,Y
+Last Night,6,"You don't get jealous, I can see now",get,6,"You don't get jealous, I can see now",jealous,INNER,ASSONANCE,vowel,MED,Y
+Last Night,6,"You don't get jealous, I can see now",see,7,"Yeah, I think we needed that space, uh (I think we needed that)",needed,INNER,ASSONANCE,vowel,MED,Y
+Last Night,6,"You don't get jealous, I can see now",don't,8,"You know them hoes gon' hurt (Git), hurt (Git)",gon,INNER,SLANT,spelling,LOW,Y
+Last Night,6,"You don't get jealous, I can see now",don't,8,"You know them hoes gon' hurt (Git), hurt (Git)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Last Night,6,"You don't get jealous, I can see now",don't,8,"You know them hoes gon' hurt (Git), hurt (Git)",know,INNER,ASSONANCE,vowel,MED,Y
+Last Night,8,"You know them hoes gon' hurt (Git), hurt (Git)",hoes,8,"You know them hoes gon' hurt (Git), hurt (Git)",gon,INNER,SLANT,spelling,LOW,Y
+Last Night,8,"You know them hoes gon' hurt (Git), hurt (Git)",hurt,8,"You know them hoes gon' hurt (Git), hurt (Git)",hurt,INNER,REPEAT,spelling,HIGH,N
+Last Night,8,"You know them hoes gon' hurt (Git), hurt (Git)",know,8,"You know them hoes gon' hurt (Git), hurt (Git)",hoes,INNER,ASSONANCE,vowel,MED,Y
+Last Night,8,"You know them hoes gon' hurt (Git), hurt (Git)",hurt,9,Mornin' turned into noon (Noon),turned,INNER,ASSONANCE,vowel,MED,Y
+Last Night,9,Mornin' turned into noon (Noon),noon,10,Off the Hen' and Goose (Goose),Goose,END,SLANT,cmu,MED,Y
+Last Night,9,Mornin' turned into noon (Noon),noon,11,"Didn't we stay, didn't we stay in the r-room? (Room)",room,END,SLANT,cmu,MED,Y
+Last Night,9,Mornin' turned into noon (Noon),noon,13,We both got things to lose (Yeah),lose,END,SLANT,cmu,MED,Y
+Last Night,10,Off the Hen' and Goose (Goose),Goose,11,"Didn't we stay, didn't we stay in the r-room? (Room)",room,END,SLANT,cmu,MED,Y
+Last Night,10,Off the Hen' and Goose (Goose),Goose,13,We both got things to lose (Yeah),lose,END,SLANT,cmu,MED,Y
+Last Night,11,"Didn't we stay, didn't we stay in the r-room? (Room)",Didn't,11,"Didn't we stay, didn't we stay in the r-room? (Room)",didn't,INNER,REPEAT,spelling,HIGH,N
+Last Night,11,"Didn't we stay, didn't we stay in the r-room? (Room)",stay,11,"Didn't we stay, didn't we stay in the r-room? (Room)",stay,INNER,REPEAT,spelling,HIGH,N
+Last Night,11,"Didn't we stay, didn't we stay in the r-room? (Room)",Didn't,12,We both have things to do,things,INNER,ASSONANCE,vowel,MED,Y
+Last Night,11,"Didn't we stay, didn't we stay in the r-room? (Room)",room,13,We both got things to lose (Yeah),lose,END,SLANT,cmu,MED,Y
+Last Night,11,"Didn't we stay, didn't we stay in the r-room? (Room)",Didn't,13,We both got things to lose (Yeah),things,INNER,ASSONANCE,vowel,MED,Y
+Last Night,11,"Didn't we stay, didn't we stay in the r-room? (Room)",r,13,We both got things to lose (Yeah),got,INNER,SLANT,cmu,MED,Y
+Last Night,12,We both have things to do,both,13,We both got things to lose (Yeah),both,INNER,REPEAT,spelling,HIGH,N
+Last Night,12,We both have things to do,things,13,We both got things to lose (Yeah),things,INNER,REPEAT,spelling,HIGH,N
+Last Night,13,We both got things to lose (Yeah),things,15,"Vampire (Yeah), big eruption (Yeah)",big,INNER,ASSONANCE,vowel,MED,Y
+Last Night,14,"Suction, gave me that",Suction,15,"Vampire (Yeah), big eruption (Yeah)",eruption,INNER,PERFECT,spelling,MED,Y
+Last Night,15,"Vampire (Yeah), big eruption (Yeah)",Vampire,17,"Long stroke, back stroke (Ooh)",back,INNER,ASSONANCE,vowel,MED,Y
+Last Night,16,I don't get tired (Ooh),don't,17,"Long stroke, back stroke (Ooh)",stroke,INNER,ASSONANCE,vowel,MED,Y
+Last Night,16,I don't get tired (Ooh),tired,18,"Kick back, that's mine",mine,END,SLANT,cmu,MED,Y
+Last Night,17,"Long stroke, back stroke (Ooh)",stroke,17,"Long stroke, back stroke (Ooh)",stroke,INNER,REPEAT,spelling,HIGH,N
+Last Night,17,"Long stroke, back stroke (Ooh)",back,18,"Kick back, that's mine",back,INNER,REPEAT,spelling,HIGH,N
+Last Night,18,"Kick back, that's mine",mine,22,You probably won't tell me what you told me last night,night,END,SLANT,cmu,MED,Y
+Last Night,19,"Pull up on me (Oh, baby), pull up on me (Yeah, skrrt, skrrt)",Pull,19,"Pull up on me (Oh, baby), pull up on me (Yeah, skrrt, skrrt)",pull,INNER,REPEAT,spelling,HIGH,N
+Last Night,19,"Pull up on me (Oh, baby), pull up on me (Yeah, skrrt, skrrt)",Pull,20,"Drop my top (Skrrt, skrrt), pull up on E (Ooh-ooh, skrrt, skrrt)",pull,INNER,REPEAT,spelling,HIGH,N
+Last Night,20,"Drop my top (Skrrt, skrrt), pull up on E (Ooh-ooh, skrrt, skrrt)",Drop,20,"Drop my top (Skrrt, skrrt), pull up on E (Ooh-ooh, skrrt, skrrt)",top,INNER,PERFECT,cmu,HIGH,Y
+Last Night,20,"Drop my top (Skrrt, skrrt), pull up on E (Ooh-ooh, skrrt, skrrt)",E,21,"You probably can't tell, my heart on E (My heart on E, yeah)",E,END,REPEAT,spelling,HIGH,N
+Last Night,20,"Drop my top (Skrrt, skrrt), pull up on E (Ooh-ooh, skrrt, skrrt)",Drop,21,"You probably can't tell, my heart on E (My heart on E, yeah)",heart,INNER,ASSONANCE,vowel,MED,Y
+Last Night,20,"Drop my top (Skrrt, skrrt), pull up on E (Ooh-ooh, skrrt, skrrt)",E,21,"You probably can't tell, my heart on E (My heart on E, yeah)",probably,INNER,PERFECT,cmu,HIGH,Y
+Last Night,20,"Drop my top (Skrrt, skrrt), pull up on E (Ooh-ooh, skrrt, skrrt)",top,21,"You probably can't tell, my heart on E (My heart on E, yeah)",heart,INNER,ASSONANCE,vowel,MED,Y
+Last Night,20,"Drop my top (Skrrt, skrrt), pull up on E (Ooh-ooh, skrrt, skrrt)",E,22,You probably won't tell me what you told me last night,probably,INNER,PERFECT,cmu,HIGH,Y
+Last Night,21,"You probably can't tell, my heart on E (My heart on E, yeah)",probably,21,"You probably can't tell, my heart on E (My heart on E, yeah)",E,INNER,PERFECT,cmu,HIGH,Y
+Last Night,21,"You probably can't tell, my heart on E (My heart on E, yeah)",can't,22,You probably won't tell me what you told me last night,last,INNER,SLANT,cmu,MED,Y
+Last Night,21,"You probably can't tell, my heart on E (My heart on E, yeah)",E,22,You probably won't tell me what you told me last night,probably,INNER,PERFECT,cmu,HIGH,Y
+Last Night,21,"You probably can't tell, my heart on E (My heart on E, yeah)",probably,22,You probably won't tell me what you told me last night,probably,INNER,REPEAT,spelling,HIGH,N
+Last Night,21,"You probably can't tell, my heart on E (My heart on E, yeah)",tell,22,You probably won't tell me what you told me last night,tell,INNER,REPEAT,spelling,HIGH,N
+Last Night,21,"You probably can't tell, my heart on E (My heart on E, yeah)",can't,23,"Oh, last night (You backed it up, last night, it's Gucci), last night (Oh, oh)",last,INNER,SLANT,cmu,MED,Y
+Last Night,22,You probably won't tell me what you told me last night,won't,22,You probably won't tell me what you told me last night,told,INNER,ASSONANCE,vowel,MED,Y
+Last Night,22,You probably won't tell me what you told me last night,night,23,"Oh, last night (You backed it up, last night, it's Gucci), last night (Oh, oh)",night,END,REPEAT,spelling,HIGH,N
+Last Night,22,You probably won't tell me what you told me last night,last,23,"Oh, last night (You backed it up, last night, it's Gucci), last night (Oh, oh)",last,INNER,REPEAT,spelling,HIGH,N
+Last Night,22,You probably won't tell me what you told me last night,night,23,"Oh, last night (You backed it up, last night, it's Gucci), last night (Oh, oh)",night,INNER,REPEAT,spelling,HIGH,N
+Last Night,22,You probably won't tell me what you told me last night,tell,24,Jason Derulo and Wop (Derulo),Derulo,INNER,SLANT,spelling,LOW,Y
+Last Night,23,"Oh, last night (You backed it up, last night, it's Gucci), last night (Oh, oh)",last,23,"Oh, last night (You backed it up, last night, it's Gucci), last night (Oh, oh)",last,INNER,REPEAT,spelling,HIGH,N
+Last Night,23,"Oh, last night (You backed it up, last night, it's Gucci), last night (Oh, oh)",night,23,"Oh, last night (You backed it up, last night, it's Gucci), last night (Oh, oh)",night,INNER,REPEAT,spelling,HIGH,N
+Last Night,24,Jason Derulo and Wop (Derulo),Wop,25,It's Jason Derulo and Wop (Yeah),Wop,END,REPEAT,spelling,HIGH,N
+Last Night,24,Jason Derulo and Wop (Derulo),Derulo,25,It's Jason Derulo and Wop (Yeah),Derulo,INNER,REPEAT,spelling,HIGH,N
+Last Night,24,Jason Derulo and Wop (Derulo),Jason,25,It's Jason Derulo and Wop (Yeah),Jason,INNER,REPEAT,spelling,HIGH,N
+Last Night,24,Jason Derulo and Wop (Derulo),Wop,26,I spent a mill' on a watch (Yee),watch,END,SLANT,cmu,MED,Y
+Last Night,24,Jason Derulo and Wop (Derulo),Wop,27,Hop out the drop like a Pop-Tart,Tart,END,ASSONANCE,vowel,MED,Y
+Last Night,24,Jason Derulo and Wop (Derulo),Wop,28,I'm Gucci Mane down to the socks (Burr),socks,END,ASSONANCE,vowel,MED,Y
+Last Night,25,It's Jason Derulo and Wop (Yeah),Wop,26,I spent a mill' on a watch (Yee),watch,END,SLANT,cmu,MED,Y
+Last Night,25,It's Jason Derulo and Wop (Yeah),Wop,27,Hop out the drop like a Pop-Tart,Tart,END,ASSONANCE,vowel,MED,Y
+Last Night,25,It's Jason Derulo and Wop (Yeah),Wop,27,Hop out the drop like a Pop-Tart,drop,INNER,PERFECT,cmu,HIGH,Y
+Last Night,25,It's Jason Derulo and Wop (Yeah),Wop,27,Hop out the drop like a Pop-Tart,Hop,INNER,PERFECT,cmu,HIGH,Y
+Last Night,25,It's Jason Derulo and Wop (Yeah),Wop,27,Hop out the drop like a Pop-Tart,Pop,INNER,PERFECT,cmu,HIGH,Y
+Last Night,25,It's Jason Derulo and Wop (Yeah),Wop,28,I'm Gucci Mane down to the socks (Burr),socks,END,ASSONANCE,vowel,MED,Y
+Last Night,25,It's Jason Derulo and Wop (Yeah),Wop,29,"Coachin', I call all the shots (Yeah, it's Gucci)",shots,END,ASSONANCE,vowel,MED,Y
+Last Night,26,I spent a mill' on a watch (Yee),watch,27,Hop out the drop like a Pop-Tart,Tart,END,ASSONANCE,vowel,MED,Y
+Last Night,26,I spent a mill' on a watch (Yee),watch,27,Hop out the drop like a Pop-Tart,drop,INNER,SLANT,cmu,MED,Y
+Last Night,26,I spent a mill' on a watch (Yee),watch,27,Hop out the drop like a Pop-Tart,Hop,INNER,SLANT,cmu,MED,Y
+Last Night,26,I spent a mill' on a watch (Yee),watch,27,Hop out the drop like a Pop-Tart,Pop,INNER,SLANT,cmu,MED,Y
+Last Night,26,I spent a mill' on a watch (Yee),watch,28,I'm Gucci Mane down to the socks (Burr),socks,END,ASSONANCE,vowel,MED,Y
+Last Night,26,I spent a mill' on a watch (Yee),watch,29,"Coachin', I call all the shots (Yeah, it's Gucci)",shots,END,ASSONANCE,vowel,MED,Y
+Last Night,26,I spent a mill' on a watch (Yee),watch,30,My AP is wet as a yacht (Burr),yacht,END,SLANT,cmu,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,drop,27,Hop out the drop like a Pop-Tart,Pop,INNER,PERFECT,cmu,HIGH,Y
+Last Night,27,Hop out the drop like a Pop-Tart,drop,27,Hop out the drop like a Pop-Tart,Tart,INNER,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Hop,27,Hop out the drop like a Pop-Tart,drop,INNER,PERFECT,cmu,HIGH,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Hop,27,Hop out the drop like a Pop-Tart,Pop,INNER,PERFECT,cmu,HIGH,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Hop,27,Hop out the drop like a Pop-Tart,Tart,INNER,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Pop,27,Hop out the drop like a Pop-Tart,Tart,INNER,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Tart,28,I'm Gucci Mane down to the socks (Burr),socks,END,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,drop,28,I'm Gucci Mane down to the socks (Burr),socks,INNER,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Hop,28,I'm Gucci Mane down to the socks (Burr),socks,INNER,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Pop,28,I'm Gucci Mane down to the socks (Burr),socks,INNER,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Tart,29,"Coachin', I call all the shots (Yeah, it's Gucci)",shots,END,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,drop,29,"Coachin', I call all the shots (Yeah, it's Gucci)",shots,INNER,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Hop,29,"Coachin', I call all the shots (Yeah, it's Gucci)",shots,INNER,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Pop,29,"Coachin', I call all the shots (Yeah, it's Gucci)",shots,INNER,ASSONANCE,vowel,MED,Y
+Last Night,27,Hop out the drop like a Pop-Tart,Tart,30,My AP is wet as a yacht (Burr),yacht,END,SLANT,cmu,MED,Y
+Last Night,28,I'm Gucci Mane down to the socks (Burr),socks,29,"Coachin', I call all the shots (Yeah, it's Gucci)",shots,END,SLANT,cmu,MED,Y
+Last Night,28,I'm Gucci Mane down to the socks (Burr),socks,30,My AP is wet as a yacht (Burr),yacht,END,ASSONANCE,vowel,MED,Y
+Last Night,28,I'm Gucci Mane down to the socks (Burr),socks,32,But now she act like she forgot (Damn),forgot,END,ASSONANCE,vowel,MED,Y
+Last Night,29,"Coachin', I call all the shots (Yeah, it's Gucci)",call,29,"Coachin', I call all the shots (Yeah, it's Gucci)",all,INNER,PERFECT,cmu,HIGH,Y
+Last Night,29,"Coachin', I call all the shots (Yeah, it's Gucci)",shots,30,My AP is wet as a yacht (Burr),yacht,END,SLANT,cmu,MED,Y
+Last Night,29,"Coachin', I call all the shots (Yeah, it's Gucci)",Coachin,31,"Last night, she told me she love me",told,INNER,ASSONANCE,vowel,MED,Y
+Last Night,29,"Coachin', I call all the shots (Yeah, it's Gucci)",shots,32,But now she act like she forgot (Damn),forgot,END,SLANT,cmu,MED,Y
+Last Night,30,My AP is wet as a yacht (Burr),yacht,32,But now she act like she forgot (Damn),forgot,END,PERFECT,cmu,HIGH,Y
+Last Night,31,"Last night, she told me she love me",Last,32,But now she act like she forgot (Damn),act,INNER,SLANT,cmu,MED,Y
+Last Night,31,"Last night, she told me she love me",night,32,But now she act like she forgot (Damn),like,INNER,SLANT,cmu,MED,Y
+Last Night,31,"Last night, she told me she love me",love,33,"Tonight is my night, so I'm fuckin' her twice",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Last Night,31,"Last night, she told me she love me",night,33,"Tonight is my night, so I'm fuckin' her twice",night,INNER,REPEAT,spelling,HIGH,N
+Last Night,31,"Last night, she told me she love me",night,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,INNER,PERFECT,cmu,HIGH,Y
+Last Night,31,"Last night, she told me she love me",night,33,"Tonight is my night, so I'm fuckin' her twice",twice,INNER,SLANT,cmu,MED,Y
+Last Night,32,But now she act like she forgot (Damn),like,33,"Tonight is my night, so I'm fuckin' her twice",night,INNER,SLANT,cmu,MED,Y
+Last Night,32,But now she act like she forgot (Damn),like,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,INNER,SLANT,cmu,MED,Y
+Last Night,32,But now she act like she forgot (Damn),like,33,"Tonight is my night, so I'm fuckin' her twice",twice,INNER,SLANT,cmu,MED,Y
+Last Night,32,But now she act like she forgot (Damn),act,34,Ballin' like it's the last night of my life,Ballin,INNER,ASSONANCE,vowel,MED,Y
+Last Night,32,But now she act like she forgot (Damn),act,34,Ballin' like it's the last night of my life,last,INNER,SLANT,cmu,MED,Y
+Last Night,32,But now she act like she forgot (Damn),like,34,Ballin' like it's the last night of my life,life,INNER,SLANT,cmu,MED,Y
+Last Night,32,But now she act like she forgot (Damn),like,34,Ballin' like it's the last night of my life,like,INNER,REPEAT,spelling,HIGH,N
+Last Night,32,But now she act like she forgot (Damn),like,34,Ballin' like it's the last night of my life,night,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",night,33,"Tonight is my night, so I'm fuckin' her twice",twice,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,33,"Tonight is my night, so I'm fuckin' her twice",night,INNER,PERFECT,cmu,HIGH,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,33,"Tonight is my night, so I'm fuckin' her twice",twice,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",twice,34,Ballin' like it's the last night of my life,life,END,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",night,34,Ballin' like it's the last night of my life,life,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",night,34,Ballin' like it's the last night of my life,like,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",night,34,Ballin' like it's the last night of my life,night,INNER,REPEAT,spelling,HIGH,N
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,34,Ballin' like it's the last night of my life,life,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,34,Ballin' like it's the last night of my life,like,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,34,Ballin' like it's the last night of my life,night,INNER,PERFECT,cmu,HIGH,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",twice,34,Ballin' like it's the last night of my life,like,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",twice,34,Ballin' like it's the last night of my life,night,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",twice,35,Big diamond crosses like Holy Christ,Christ,END,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",night,35,Big diamond crosses like Holy Christ,Christ,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",night,35,Big diamond crosses like Holy Christ,diamond,INNER,ASSONANCE,vowel,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",night,35,Big diamond crosses like Holy Christ,like,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,35,Big diamond crosses like Holy Christ,Christ,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,35,Big diamond crosses like Holy Christ,diamond,INNER,ASSONANCE,vowel,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",Tonight,35,Big diamond crosses like Holy Christ,like,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",twice,35,Big diamond crosses like Holy Christ,diamond,INNER,ASSONANCE,vowel,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",twice,35,Big diamond crosses like Holy Christ,like,INNER,SLANT,cmu,MED,Y
+Last Night,33,"Tonight is my night, so I'm fuckin' her twice",twice,36,We flyin' at night just to blow on my dice,dice,END,PERFECT,cmu,HIGH,Y
+Last Night,34,Ballin' like it's the last night of my life,Ballin,34,Ballin' like it's the last night of my life,last,INNER,ASSONANCE,vowel,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,like,34,Ballin' like it's the last night of my life,life,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,like,34,Ballin' like it's the last night of my life,night,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,night,34,Ballin' like it's the last night of my life,life,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,life,35,Big diamond crosses like Holy Christ,Christ,END,ASSONANCE,vowel,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,life,35,Big diamond crosses like Holy Christ,diamond,INNER,ASSONANCE,vowel,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,life,35,Big diamond crosses like Holy Christ,like,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,like,35,Big diamond crosses like Holy Christ,Christ,INNER,ASSONANCE,vowel,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,like,35,Big diamond crosses like Holy Christ,diamond,INNER,ASSONANCE,vowel,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,like,35,Big diamond crosses like Holy Christ,like,INNER,REPEAT,spelling,HIGH,N
+Last Night,34,Ballin' like it's the last night of my life,night,35,Big diamond crosses like Holy Christ,Christ,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,night,35,Big diamond crosses like Holy Christ,diamond,INNER,ASSONANCE,vowel,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,night,35,Big diamond crosses like Holy Christ,like,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,life,36,We flyin' at night just to blow on my dice,dice,END,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,life,36,We flyin' at night just to blow on my dice,flyin,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,life,36,We flyin' at night just to blow on my dice,night,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,like,36,We flyin' at night just to blow on my dice,dice,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,like,36,We flyin' at night just to blow on my dice,flyin,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,like,36,We flyin' at night just to blow on my dice,night,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,night,36,We flyin' at night just to blow on my dice,dice,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,night,36,We flyin' at night just to blow on my dice,flyin,INNER,SLANT,cmu,MED,Y
+Last Night,34,Ballin' like it's the last night of my life,night,36,We flyin' at night just to blow on my dice,night,INNER,REPEAT,spelling,HIGH,N
+Last Night,35,Big diamond crosses like Holy Christ,diamond,35,Big diamond crosses like Holy Christ,Christ,INNER,ASSONANCE,vowel,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,diamond,35,Big diamond crosses like Holy Christ,like,INNER,ASSONANCE,vowel,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,like,35,Big diamond crosses like Holy Christ,Christ,INNER,ASSONANCE,vowel,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,Christ,36,We flyin' at night just to blow on my dice,dice,END,SLANT,cmu,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,Christ,36,We flyin' at night just to blow on my dice,flyin,INNER,ASSONANCE,vowel,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,Christ,36,We flyin' at night just to blow on my dice,night,INNER,SLANT,cmu,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,diamond,36,We flyin' at night just to blow on my dice,dice,INNER,ASSONANCE,vowel,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,diamond,36,We flyin' at night just to blow on my dice,flyin,INNER,ASSONANCE,vowel,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,diamond,36,We flyin' at night just to blow on my dice,night,INNER,ASSONANCE,vowel,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,Holy,36,We flyin' at night just to blow on my dice,blow,INNER,ASSONANCE,vowel,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,like,36,We flyin' at night just to blow on my dice,dice,INNER,SLANT,cmu,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,like,36,We flyin' at night just to blow on my dice,flyin,INNER,SLANT,cmu,MED,Y
+Last Night,35,Big diamond crosses like Holy Christ,like,36,We flyin' at night just to blow on my dice,night,INNER,SLANT,cmu,MED,Y
+Last Night,36,We flyin' at night just to blow on my dice,flyin,36,We flyin' at night just to blow on my dice,dice,INNER,SLANT,cmu,MED,Y
+Last Night,36,We flyin' at night just to blow on my dice,flyin,36,We flyin' at night just to blow on my dice,night,INNER,SLANT,cmu,MED,Y
+Last Night,36,We flyin' at night just to blow on my dice,night,36,We flyin' at night just to blow on my dice,dice,INNER,SLANT,cmu,MED,Y
+Last Night,36,We flyin' at night just to blow on my dice,blow,37,"Huncho and Derulo, the car came with a umbrella (Wop)",Derulo,INNER,ASSONANCE,vowel,LOW,N
+Last Night,36,We flyin' at night just to blow on my dice,blow,37,"Huncho and Derulo, the car came with a umbrella (Wop)",Huncho,INNER,ASSONANCE,vowel,LOW,N
+Last Night,36,We flyin' at night just to blow on my dice,blow,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",Lambo,INNER,ASSONANCE,vowel,LOW,N
+Last Night,36,We flyin' at night just to blow on my dice,dice,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",bright,INNER,SLANT,cmu,MED,Y
+Last Night,36,We flyin' at night just to blow on my dice,dice,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",like,INNER,SLANT,cmu,MED,Y
+Last Night,36,We flyin' at night just to blow on my dice,flyin,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",bright,INNER,SLANT,cmu,MED,Y
+Last Night,36,We flyin' at night just to blow on my dice,flyin,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",like,INNER,SLANT,cmu,MED,Y
+Last Night,36,We flyin' at night just to blow on my dice,night,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",bright,INNER,PERFECT,cmu,HIGH,Y
+Last Night,36,We flyin' at night just to blow on my dice,night,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",like,INNER,SLANT,cmu,MED,Y
+Last Night,37,"Huncho and Derulo, the car came with a umbrella (Wop)",Derulo,37,"Huncho and Derulo, the car came with a umbrella (Wop)",umbrella,INNER,SLANT,spelling,LOW,Y
+Last Night,37,"Huncho and Derulo, the car came with a umbrella (Wop)",Huncho,37,"Huncho and Derulo, the car came with a umbrella (Wop)",Derulo,INNER,ASSONANCE,vowel,LOW,N
+Last Night,37,"Huncho and Derulo, the car came with a umbrella (Wop)",umbrella,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",yellow,END,SLANT,cmu,MED,Y
+Last Night,37,"Huncho and Derulo, the car came with a umbrella (Wop)",Derulo,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",Lambo,INNER,ASSONANCE,vowel,LOW,N
+Last Night,37,"Huncho and Derulo, the car came with a umbrella (Wop)",Derulo,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",yellow,INNER,SLANT,spelling,LOW,Y
+Last Night,37,"Huncho and Derulo, the car came with a umbrella (Wop)",Huncho,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",Lambo,INNER,ASSONANCE,vowel,LOW,N
+Last Night,37,"Huncho and Derulo, the car came with a umbrella (Wop)",Huncho,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",yellow,INNER,ASSONANCE,vowel,LOW,N
+Last Night,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",Lambo,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",yellow,INNER,ASSONANCE,vowel,LOW,N
+Last Night,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",like,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",bright,INNER,SLANT,cmu,MED,Y
+Last Night,38,"The Maybach seats like pillows and the Lambo truck bright yellow (Huh, Wop)",truck,39,"That's what you told me, this what you told me (Yeah, yeah)",what,INNER,SLANT,cmu,MED,Y
+Last Night,39,"That's what you told me, this what you told me (Yeah, yeah)",told,39,"That's what you told me, this what you told me (Yeah, yeah)",told,INNER,REPEAT,spelling,HIGH,N
+Last Night,39,"That's what you told me, this what you told me (Yeah, yeah)",what,39,"That's what you told me, this what you told me (Yeah, yeah)",what,INNER,REPEAT,spelling,HIGH,N
+Slidin’,1,"Slip, slip, slide in (Ayy)",Slip,1,"Slip, slip, slide in (Ayy)",slip,INNER,REPEAT,spelling,HIGH,N
+Slidin’,3,"Jason Derulo (Yeah, Kodak)",Derulo,4,"Check it, I can tell you got what I want",tell,INNER,SLANT,spelling,LOW,Y
+Slidin’,4,"Check it, I can tell you got what I want",Check,4,"Check it, I can tell you got what I want",tell,INNER,SLANT,cmu,MED,Y
+Slidin’,4,"Check it, I can tell you got what I want",got,4,"Check it, I can tell you got what I want",want,INNER,SLANT,cmu,MED,Y
+Slidin’,4,"Check it, I can tell you got what I want",can,5,"'Cause I can see that thing from the front (Oh, yeah)",can,INNER,REPEAT,spelling,HIGH,N
+Slidin’,4,"Check it, I can tell you got what I want",what,5,"'Cause I can see that thing from the front (Oh, yeah)",front,INNER,SLANT,cmu,MED,Y
+Slidin’,4,"Check it, I can tell you got what I want",Check,6,You the type to spend when they don't,spend,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,4,"Check it, I can tell you got what I want",Check,6,You the type to spend when they don't,when,INNER,SLANT,cmu,MED,Y
+Slidin’,4,"Check it, I can tell you got what I want",tell,6,You the type to spend when they don't,spend,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,4,"Check it, I can tell you got what I want",tell,6,You the type to spend when they don't,when,INNER,SLANT,cmu,MED,Y
+Slidin’,5,"'Cause I can see that thing from the front (Oh, yeah)",front,6,You the type to spend when they don't,don't,END,SLANT,spelling,LOW,Y
+Slidin’,6,You the type to spend when they don't,spend,6,You the type to spend when they don't,when,INNER,SLANT,cmu,MED,Y
+Slidin’,6,You the type to spend when they don't,don't,7,"Independent, baby, got your own (Oh, yeah)",own,END,SLANT,cmu,MED,Y
+Slidin’,6,You the type to spend when they don't,spend,7,"Independent, baby, got your own (Oh, yeah)",Independent,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,6,You the type to spend when they don't,when,7,"Independent, baby, got your own (Oh, yeah)",Independent,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,6,You the type to spend when they don't,type,8,"Like, ooh, can't nobody do it like you",Like,INNER,SLANT,cmu,MED,Y
+Slidin’,7,"Independent, baby, got your own (Oh, yeah)",baby,9,"So, baby, can you tell me what it do? Girl",baby,INNER,REPEAT,spelling,HIGH,N
+Slidin’,7,"Independent, baby, got your own (Oh, yeah)",Independent,9,"So, baby, can you tell me what it do? Girl",tell,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,8,"Like, ooh, can't nobody do it like you",Like,8,"Like, ooh, can't nobody do it like you",like,INNER,REPEAT,spelling,HIGH,N
+Slidin’,8,"Like, ooh, can't nobody do it like you",can't,9,"So, baby, can you tell me what it do? Girl",can,INNER,SLANT,cmu,MED,Y
+Slidin’,8,"Like, ooh, can't nobody do it like you",like,10,'Cause I'll be waitin' all night to,night,END,SLANT,cmu,MED,Y
+Slidin’,8,"Like, ooh, can't nobody do it like you",Like,10,'Cause I'll be waitin' all night to,I'll,INNER,SLANT,cmu,MED,Y
+Slidin’,8,"Like, ooh, can't nobody do it like you",Like,10,'Cause I'll be waitin' all night to,night,INNER,SLANT,cmu,MED,Y
+Slidin’,8,"Like, ooh, can't nobody do it like you",like,11,There's somethin' in the water worth tryin',tryin,END,SLANT,cmu,MED,Y
+Slidin’,8,"Like, ooh, can't nobody do it like you",like,12,"Let's dip, dip, dive in",dive,END,SLANT,cmu,MED,Y
+Slidin’,9,"So, baby, can you tell me what it do? Girl",baby,10,'Cause I'll be waitin' all night to,waitin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,9,"So, baby, can you tell me what it do? Girl",Girl,11,There's somethin' in the water worth tryin',worth,INNER,SLANT,cmu,MED,Y
+Slidin’,9,"So, baby, can you tell me what it do? Girl",tell,11,There's somethin' in the water worth tryin',There's,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,9,"So, baby, can you tell me what it do? Girl",what,11,There's somethin' in the water worth tryin',somethin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,10,'Cause I'll be waitin' all night to,I'll,10,'Cause I'll be waitin' all night to,night,INNER,SLANT,cmu,MED,Y
+Slidin’,10,'Cause I'll be waitin' all night to,night,11,There's somethin' in the water worth tryin',tryin,END,SLANT,cmu,MED,Y
+Slidin’,10,'Cause I'll be waitin' all night to,all,11,There's somethin' in the water worth tryin',water,INNER,SLANT,cmu,MED,Y
+Slidin’,10,'Cause I'll be waitin' all night to,I'll,11,There's somethin' in the water worth tryin',tryin,INNER,SLANT,cmu,MED,Y
+Slidin’,10,'Cause I'll be waitin' all night to,night,12,"Let's dip, dip, dive in",dive,END,SLANT,cmu,MED,Y
+Slidin’,10,'Cause I'll be waitin' all night to,I'll,12,"Let's dip, dip, dive in",dive,INNER,SLANT,cmu,MED,Y
+Slidin’,10,'Cause I'll be waitin' all night to,night,14,"I'ma slip, slip, slide in (Slip and slidе)",slide,END,SLANT,cmu,MED,Y
+Slidin’,11,There's somethin' in the water worth tryin',tryin,12,"Let's dip, dip, dive in",dive,END,SLANT,cmu,MED,Y
+Slidin’,11,There's somethin' in the water worth tryin',There's,12,"Let's dip, dip, dive in",Let's,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,11,There's somethin' in the water worth tryin',water,13,Don't make me wait so long,long,INNER,SLANT,cmu,MED,Y
+Slidin’,11,There's somethin' in the water worth tryin',tryin,14,"I'ma slip, slip, slide in (Slip and slidе)",slide,END,SLANT,cmu,MED,Y
+Slidin’,11,There's somethin' in the water worth tryin',tryin,15,You're lookin' like you really wanna try it,try,END,ASSONANCE,vowel,MED,Y
+Slidin’,12,"Let's dip, dip, dive in",dip,12,"Let's dip, dip, dive in",dip,INNER,REPEAT,spelling,HIGH,N
+Slidin’,12,"Let's dip, dip, dive in",dive,14,"I'ma slip, slip, slide in (Slip and slidе)",slide,END,SLANT,cmu,MED,Y
+Slidin’,12,"Let's dip, dip, dive in",dip,14,"I'ma slip, slip, slide in (Slip and slidе)",I'ma,INNER,SLANT,spelling,LOW,Y
+Slidin’,12,"Let's dip, dip, dive in",dip,14,"I'ma slip, slip, slide in (Slip and slidе)",slip,INNER,PERFECT,cmu,HIGH,Y
+Slidin’,12,"Let's dip, dip, dive in",dive,15,You're lookin' like you really wanna try it,try,END,ASSONANCE,vowel,MED,Y
+Slidin’,12,"Let's dip, dip, dive in",dive,16,"Lеt's dip, dip, dive in",dive,END,REPEAT,spelling,HIGH,N
+Slidin’,13,Don't make me wait so long,make,13,Don't make me wait so long,wait,INNER,SLANT,cmu,MED,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",I'ma,14,"I'ma slip, slip, slide in (Slip and slidе)",slip,INNER,SLANT,spelling,LOW,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",slip,14,"I'ma slip, slip, slide in (Slip and slidе)",slip,INNER,REPEAT,spelling,HIGH,N
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",slide,15,You're lookin' like you really wanna try it,try,END,ASSONANCE,vowel,MED,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",I'ma,15,You're lookin' like you really wanna try it,really,INNER,SLANT,spelling,LOW,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",slide,15,You're lookin' like you really wanna try it,like,INNER,SLANT,cmu,MED,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",slip,15,You're lookin' like you really wanna try it,really,INNER,SLANT,cmu,MED,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",slide,16,"Lеt's dip, dip, dive in",dive,END,SLANT,cmu,MED,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",I'ma,16,"Lеt's dip, dip, dive in",dip,INNER,SLANT,spelling,LOW,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",slip,16,"Lеt's dip, dip, dive in",dip,INNER,PERFECT,cmu,HIGH,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",slide,17,I will pick up all your calls on sight (On sight),sight,END,SLANT,cmu,MED,Y
+Slidin’,14,"I'ma slip, slip, slide in (Slip and slidе)",slide,18,We can fly to Acapulco for the night (Oh),night,END,SLANT,cmu,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,like,15,You're lookin' like you really wanna try it,try,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,try,16,"Lеt's dip, dip, dive in",dive,END,ASSONANCE,vowel,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,like,16,"Lеt's dip, dip, dive in",dive,INNER,SLANT,cmu,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,really,16,"Lеt's dip, dip, dive in",dip,INNER,SLANT,cmu,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,try,17,I will pick up all your calls on sight (On sight),sight,END,ASSONANCE,vowel,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,like,17,I will pick up all your calls on sight (On sight),sight,INNER,SLANT,cmu,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,really,17,I will pick up all your calls on sight (On sight),pick,INNER,SLANT,cmu,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,really,17,I will pick up all your calls on sight (On sight),will,INNER,SLANT,cmu,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,try,18,We can fly to Acapulco for the night (Oh),night,END,ASSONANCE,vowel,MED,Y
+Slidin’,15,You're lookin' like you really wanna try it,try,19,I can tell you on that boss shit I like,like,END,ASSONANCE,vowel,MED,Y
+Slidin’,16,"Lеt's dip, dip, dive in",dip,16,"Lеt's dip, dip, dive in",dip,INNER,REPEAT,spelling,HIGH,N
+Slidin’,16,"Lеt's dip, dip, dive in",dive,17,I will pick up all your calls on sight (On sight),sight,END,SLANT,cmu,MED,Y
+Slidin’,16,"Lеt's dip, dip, dive in",dip,17,I will pick up all your calls on sight (On sight),pick,INNER,SLANT,cmu,MED,Y
+Slidin’,16,"Lеt's dip, dip, dive in",dip,17,I will pick up all your calls on sight (On sight),will,INNER,SLANT,cmu,MED,Y
+Slidin’,16,"Lеt's dip, dip, dive in",dive,18,We can fly to Acapulco for the night (Oh),night,END,SLANT,cmu,MED,Y
+Slidin’,16,"Lеt's dip, dip, dive in",dive,18,We can fly to Acapulco for the night (Oh),fly,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,16,"Lеt's dip, dip, dive in",dive,19,I can tell you on that boss shit I like,like,END,SLANT,cmu,MED,Y
+Slidin’,16,"Lеt's dip, dip, dive in",dive,20,"Girl, when you said you'd pay the bill, had me singin' like",like,END,SLANT,cmu,MED,Y
+Slidin’,17,I will pick up all your calls on sight (On sight),all,17,I will pick up all your calls on sight (On sight),calls,INNER,SLANT,cmu,MED,Y
+Slidin’,17,I will pick up all your calls on sight (On sight),will,17,I will pick up all your calls on sight (On sight),pick,INNER,SLANT,cmu,MED,Y
+Slidin’,17,I will pick up all your calls on sight (On sight),sight,18,We can fly to Acapulco for the night (Oh),night,END,PERFECT,cmu,HIGH,Y
+Slidin’,17,I will pick up all your calls on sight (On sight),sight,18,We can fly to Acapulco for the night (Oh),fly,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,17,I will pick up all your calls on sight (On sight),sight,19,I can tell you on that boss shit I like,like,END,SLANT,cmu,MED,Y
+Slidin’,17,I will pick up all your calls on sight (On sight),pick,19,I can tell you on that boss shit I like,shit,INNER,SLANT,cmu,MED,Y
+Slidin’,17,I will pick up all your calls on sight (On sight),will,19,I can tell you on that boss shit I like,shit,INNER,SLANT,cmu,MED,Y
+Slidin’,17,I will pick up all your calls on sight (On sight),sight,20,"Girl, when you said you'd pay the bill, had me singin' like",like,END,SLANT,cmu,MED,Y
+Slidin’,17,I will pick up all your calls on sight (On sight),sight,21,"Ooh, can't nobody do it like you",like,END,SLANT,cmu,MED,Y
+Slidin’,18,We can fly to Acapulco for the night (Oh),fly,18,We can fly to Acapulco for the night (Oh),night,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,18,We can fly to Acapulco for the night (Oh),night,19,I can tell you on that boss shit I like,like,END,SLANT,cmu,MED,Y
+Slidin’,18,We can fly to Acapulco for the night (Oh),can,19,I can tell you on that boss shit I like,can,INNER,REPEAT,spelling,HIGH,N
+Slidin’,18,We can fly to Acapulco for the night (Oh),fly,19,I can tell you on that boss shit I like,like,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,18,We can fly to Acapulco for the night (Oh),night,20,"Girl, when you said you'd pay the bill, had me singin' like",like,END,SLANT,cmu,MED,Y
+Slidin’,18,We can fly to Acapulco for the night (Oh),can,20,"Girl, when you said you'd pay the bill, had me singin' like",had,INNER,SLANT,cmu,MED,Y
+Slidin’,18,We can fly to Acapulco for the night (Oh),fly,20,"Girl, when you said you'd pay the bill, had me singin' like",like,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,18,We can fly to Acapulco for the night (Oh),night,21,"Ooh, can't nobody do it like you",like,END,SLANT,cmu,MED,Y
+Slidin’,18,We can fly to Acapulco for the night (Oh),night,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,END,SLANT,cmu,MED,Y
+Slidin’,19,I can tell you on that boss shit I like,like,20,"Girl, when you said you'd pay the bill, had me singin' like",like,END,REPEAT,spelling,HIGH,N
+Slidin’,19,I can tell you on that boss shit I like,can,20,"Girl, when you said you'd pay the bill, had me singin' like",had,INNER,SLANT,cmu,MED,Y
+Slidin’,19,I can tell you on that boss shit I like,shit,20,"Girl, when you said you'd pay the bill, had me singin' like",bill,INNER,SLANT,cmu,MED,Y
+Slidin’,19,I can tell you on that boss shit I like,shit,20,"Girl, when you said you'd pay the bill, had me singin' like",singin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,19,I can tell you on that boss shit I like,tell,20,"Girl, when you said you'd pay the bill, had me singin' like",said,INNER,SLANT,cmu,MED,Y
+Slidin’,19,I can tell you on that boss shit I like,tell,20,"Girl, when you said you'd pay the bill, had me singin' like",when,INNER,SLANT,cmu,MED,Y
+Slidin’,19,I can tell you on that boss shit I like,like,21,"Ooh, can't nobody do it like you",like,END,REPEAT,spelling,HIGH,N
+Slidin’,19,I can tell you on that boss shit I like,can,21,"Ooh, can't nobody do it like you",can't,INNER,SLANT,cmu,MED,Y
+Slidin’,19,I can tell you on that boss shit I like,like,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,END,SLANT,cmu,MED,Y
+Slidin’,19,I can tell you on that boss shit I like,like,23,I'ma get behind and grip them thighs and slip and slide in it,slide,END,SLANT,cmu,MED,Y
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",bill,20,"Girl, when you said you'd pay the bill, had me singin' like",singin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",when,20,"Girl, when you said you'd pay the bill, had me singin' like",said,INNER,SLANT,cmu,MED,Y
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",like,21,"Ooh, can't nobody do it like you",like,END,REPEAT,spelling,HIGH,N
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",had,21,"Ooh, can't nobody do it like you",can't,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",like,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,END,SLANT,cmu,MED,Y
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",bill,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",until,INNER,PERFECT,cmu,HIGH,Y
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",like,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",like,INNER,REPEAT,spelling,HIGH,N
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",like,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,INNER,SLANT,cmu,MED,Y
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",singin,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",until,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",like,23,I'ma get behind and grip them thighs and slip and slide in it,slide,END,SLANT,cmu,MED,Y
+Slidin’,20,"Girl, when you said you'd pay the bill, had me singin' like",like,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,END,SLANT,cmu,MED,Y
+Slidin’,21,"Ooh, can't nobody do it like you",like,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,END,SLANT,cmu,MED,Y
+Slidin’,21,"Ooh, can't nobody do it like you",like,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",like,INNER,REPEAT,spelling,HIGH,N
+Slidin’,21,"Ooh, can't nobody do it like you",like,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,INNER,SLANT,cmu,MED,Y
+Slidin’,21,"Ooh, can't nobody do it like you",like,23,I'ma get behind and grip them thighs and slip and slide in it,slide,END,SLANT,cmu,MED,Y
+Slidin’,21,"Ooh, can't nobody do it like you",like,23,I'ma get behind and grip them thighs and slip and slide in it,behind,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,21,"Ooh, can't nobody do it like you",like,23,I'ma get behind and grip them thighs and slip and slide in it,thighs,INNER,SLANT,cmu,MED,Y
+Slidin’,21,"Ooh, can't nobody do it like you",like,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,END,SLANT,cmu,MED,Y
+Slidin’,21,"Ooh, can't nobody do it like you",like,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,END,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",don't,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",know,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",like,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,INNER,REPEAT,spelling,HIGH,N
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,23,I'ma get behind and grip them thighs and slip and slide in it,slide,END,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",like,23,I'ma get behind and grip them thighs and slip and slide in it,behind,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",like,23,I'ma get behind and grip them thighs and slip and slide in it,slide,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",like,23,I'ma get behind and grip them thighs and slip and slide in it,thighs,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",until,23,I'ma get behind and grip them thighs and slip and slide in it,grip,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",until,23,I'ma get behind and grip them thighs and slip and slide in it,I'ma,INNER,SLANT,spelling,LOW,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",until,23,I'ma get behind and grip them thighs and slip and slide in it,slip,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,23,I'ma get behind and grip them thighs and slip and slide in it,behind,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,23,I'ma get behind and grip them thighs and slip and slide in it,slide,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,23,I'ma get behind and grip them thighs and slip and slide in it,thighs,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,END,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",don't,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",know,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",Rolls,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",like,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",like,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",like,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,INNER,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,END,SLANT,cmu,MED,Y
+Slidin’,22,"Ayy, it look like it's a vibe, but I don't know until I vibe with it",vibe,26,I like to do things that make you smile (Yeah),smile,END,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,behind,23,I'ma get behind and grip them thighs and slip and slide in it,slide,INNER,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,behind,23,I'ma get behind and grip them thighs and slip and slide in it,thighs,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,grip,23,I'ma get behind and grip them thighs and slip and slide in it,slip,INNER,PERFECT,cmu,HIGH,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,I'ma,23,I'ma get behind and grip them thighs and slip and slide in it,grip,INNER,SLANT,spelling,LOW,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,I'ma,23,I'ma get behind and grip them thighs and slip and slide in it,slip,INNER,SLANT,spelling,LOW,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,thighs,23,I'ma get behind and grip them thighs and slip and slide in it,slide,INNER,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,slide,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,END,PERFECT,cmu,HIGH,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,behind,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,behind,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,behind,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,INNER,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,get,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",well,INNER,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,slide,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,slide,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,INNER,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,thighs,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,thighs,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,INNER,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,thighs,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,INNER,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,slide,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,END,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,behind,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,get,25,"She know once she dealt with me, she gon' have to let me dive in it",dealt,INNER,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,get,25,"She know once she dealt with me, she gon' have to let me dive in it",let,INNER,PERFECT,cmu,HIGH,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,thighs,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,INNER,SLANT,cmu,MED,Y
+Slidin’,23,I'ma get behind and grip them thighs and slip and slide in it,slide,26,I like to do things that make you smile (Yeah),smile,END,SLANT,cmu,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,INNER,SLANT,cmu,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,END,SLANT,cmu,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,INNER,SLANT,cmu,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",Rolls,25,"She know once she dealt with me, she gon' have to let me dive in it",know,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",well,25,"She know once she dealt with me, she gon' have to let me dive in it",dealt,INNER,SLANT,cmu,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",well,25,"She know once she dealt with me, she gon' have to let me dive in it",let,INNER,SLANT,cmu,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,26,I like to do things that make you smile (Yeah),smile,END,SLANT,cmu,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,26,I like to do things that make you smile (Yeah),like,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",bae,26,I like to do things that make you smile (Yeah),smile,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,26,I like to do things that make you smile (Yeah),like,INNER,SLANT,cmu,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",might,26,I like to do things that make you smile (Yeah),smile,INNER,SLANT,cmu,MED,Y
+Slidin’,24,"I got a Rolls Royce out the door, bae, you might as well just ride with it",ride,26,I like to do things that make you smile (Yeah),like,INNER,SLANT,cmu,MED,Y
+Slidin’,25,"She know once she dealt with me, she gon' have to let me dive in it",dealt,25,"She know once she dealt with me, she gon' have to let me dive in it",let,INNER,SLANT,cmu,MED,Y
+Slidin’,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,26,I like to do things that make you smile (Yeah),smile,END,SLANT,cmu,MED,Y
+Slidin’,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,26,I like to do things that make you smile (Yeah),like,INNER,SLANT,cmu,MED,Y
+Slidin’,25,"She know once she dealt with me, she gon' have to let me dive in it",dive,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,25,"She know once she dealt with me, she gon' have to let me dive in it",once,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,26,I like to do things that make you smile (Yeah),like,26,I like to do things that make you smile (Yeah),smile,INNER,SLANT,cmu,MED,Y
+Slidin’,26,I like to do things that make you smile (Yeah),like,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,26,I like to do things that make you smile (Yeah),make,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",say,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,26,I like to do things that make you smile (Yeah),smile,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,26,I like to do things that make you smile (Yeah),make,28,"You know, I take you out, I gotta take you down",take,INNER,PERFECT,cmu,HIGH,Y
+Slidin’,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",fuckin,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",fuckin,INNER,REPEAT,spelling,HIGH,N
+Slidin’,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",'round,28,"You know, I take you out, I gotta take you down",down,END,SLANT,cmu,MED,Y
+Slidin’,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",say,28,"You know, I take you out, I gotta take you down",take,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",stop,28,"You know, I take you out, I gotta take you down",gotta,INNER,SLANT,cmu,MED,Y
+Slidin’,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",bae,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",ride,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",bae,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",Tonight,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",say,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",take,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,27,"Just say you fuckin' with me, bae, I'ma stop fuckin' 'round (Yeah)",stop,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",gotta,INNER,SLANT,cmu,MED,Y
+Slidin’,28,"You know, I take you out, I gotta take you down",take,28,"You know, I take you out, I gotta take you down",take,INNER,REPEAT,spelling,HIGH,N
+Slidin’,28,"You know, I take you out, I gotta take you down",gotta,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",gotta,INNER,REPEAT,spelling,HIGH,N
+Slidin’,28,"You know, I take you out, I gotta take you down",take,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",take,INNER,REPEAT,spelling,HIGH,N
+Slidin’,28,"You know, I take you out, I gotta take you down",gotta,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wanna,INNER,SLANT,cmu,MED,Y
+Slidin’,28,"You know, I take you out, I gotta take you down",know,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",don't,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,28,"You know, I take you out, I gotta take you down",take,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",make,INNER,PERFECT,cmu,HIGH,Y
+Slidin’,28,"You know, I take you out, I gotta take you down",take,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",play,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,28,"You know, I take you out, I gotta take you down",take,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",player,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,28,"You know, I take you out, I gotta take you down",take,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wait,INNER,SLANT,cmu,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",Tonight,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",ride,INNER,SLANT,cmu,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",gotta,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wanna,INNER,SLANT,cmu,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",ride,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",Bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",take,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",make,INNER,PERFECT,cmu,HIGH,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",take,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",play,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",take,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",player,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",take,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wait,INNER,SLANT,cmu,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",Tonight,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",Bae,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",Tonight,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",don't,INNER,SLANT,spelling,LOW,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",ride,31,"And you be lookin' like the way you look, the way you taste",like,INNER,SLANT,cmu,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",sure,31,"And you be lookin' like the way you look, the way you taste",look,INNER,SLANT,cmu,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",sure,31,"And you be lookin' like the way you look, the way you taste",lookin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",take,31,"And you be lookin' like the way you look, the way you taste",taste,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",take,31,"And you be lookin' like the way you look, the way you taste",way,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,29,"Tonight, I gotta take her out before I ride, for sure (Tonight)",Tonight,31,"And you be lookin' like the way you look, the way you taste",like,INNER,SLANT,cmu,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",don't,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",don't,INNER,REPEAT,spelling,HIGH,N
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",make,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",play,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",make,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",player,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",make,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wait,INNER,SLANT,cmu,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",player,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",play,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wait,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",play,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wait,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",player,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",play,31,"And you be lookin' like the way you look, the way you taste",taste,END,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",Bae,31,"And you be lookin' like the way you look, the way you taste",like,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",make,31,"And you be lookin' like the way you look, the way you taste",taste,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",make,31,"And you be lookin' like the way you look, the way you taste",way,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",play,31,"And you be lookin' like the way you look, the way you taste",way,INNER,PERFECT,cmu,HIGH,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",player,31,"And you be lookin' like the way you look, the way you taste",taste,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",player,31,"And you be lookin' like the way you look, the way you taste",way,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wait,31,"And you be lookin' like the way you look, the way you taste",taste,INNER,SLANT,cmu,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wait,31,"And you be lookin' like the way you look, the way you taste",way,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",make,32,"And if it check out, then maybe I'ma bring a check out",maybe,INNER,SLANT,cmu,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",play,32,"And if it check out, then maybe I'ma bring a check out",maybe,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",player,32,"And if it check out, then maybe I'ma bring a check out",maybe,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",wait,32,"And if it check out, then maybe I'ma bring a check out",maybe,INNER,SLANT,cmu,MED,Y
+Slidin’,30,"Bae, don't make me wait, I'm a real player, I don't wanna play",play,34,"We should slide so you can so you can slip it off, baby",baby,END,ASSONANCE,vowel,MED,Y
+Slidin’,31,"And you be lookin' like the way you look, the way you taste",lookin,31,"And you be lookin' like the way you look, the way you taste",look,INNER,SLANT,cmu,MED,Y
+Slidin’,31,"And you be lookin' like the way you look, the way you taste",way,31,"And you be lookin' like the way you look, the way you taste",taste,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,31,"And you be lookin' like the way you look, the way you taste",way,31,"And you be lookin' like the way you look, the way you taste",way,INNER,REPEAT,spelling,HIGH,N
+Slidin’,31,"And you be lookin' like the way you look, the way you taste",taste,32,"And if it check out, then maybe I'ma bring a check out",maybe,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,31,"And you be lookin' like the way you look, the way you taste",way,32,"And if it check out, then maybe I'ma bring a check out",maybe,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,31,"And you be lookin' like the way you look, the way you taste",taste,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",Ain't,INNER,SLANT,cmu,MED,Y
+Slidin’,31,"And you be lookin' like the way you look, the way you taste",way,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,31,"And you be lookin' like the way you look, the way you taste",taste,34,"We should slide so you can so you can slip it off, baby",baby,END,ASSONANCE,vowel,MED,Y
+Slidin’,31,"And you be lookin' like the way you look, the way you taste",taste,35,"Don't waste this love, got me waitin' (No, no, no, no)",waitin,END,ASSONANCE,vowel,MED,Y
+Slidin’,32,"And if it check out, then maybe I'ma bring a check out",check,32,"And if it check out, then maybe I'ma bring a check out",check,INNER,REPEAT,spelling,HIGH,N
+Slidin’,32,"And if it check out, then maybe I'ma bring a check out",I'ma,32,"And if it check out, then maybe I'ma bring a check out",bring,INNER,SLANT,spelling,LOW,Y
+Slidin’,32,"And if it check out, then maybe I'ma bring a check out",maybe,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,32,"And if it check out, then maybe I'ma bring a check out",bring,34,"We should slide so you can so you can slip it off, baby",slip,INNER,SLANT,cmu,MED,Y
+Slidin’,32,"And if it check out, then maybe I'ma bring a check out",check maybe,34,"We should slide so you can so you can slip it off, baby",slip baby,INNER,MULTI,multi,HIGH,Y
+Slidin’,32,"And if it check out, then maybe I'ma bring a check out",I'ma,34,"We should slide so you can so you can slip it off, baby",slip,INNER,SLANT,spelling,LOW,Y
+Slidin’,32,"And if it check out, then maybe I'ma bring a check out",maybe,34,"We should slide so you can so you can slip it off, baby",baby,INNER,MULTI,multi,HIGH,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",buss,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",come,INNER,SLANT,cmu,MED,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",bussin,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",buss,INNER,SLANT,cmu,MED,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",bussin,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",come,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",Ain't,34,"We should slide so you can so you can slip it off, baby",baby,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",Ain't,35,"Don't waste this love, got me waitin' (No, no, no, no)",waitin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",Ain't,35,"Don't waste this love, got me waitin' (No, no, no, no)",waste,INNER,SLANT,cmu,MED,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",buss,35,"Don't waste this love, got me waitin' (No, no, no, no)",love,INNER,SLANT,cmu,MED,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",bussin,35,"Don't waste this love, got me waitin' (No, no, no, no)",love,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",come,35,"Don't waste this love, got me waitin' (No, no, no, no)",love,INNER,SLANT,cmu,MED,Y
+Slidin’,33,"Ain't bussin' that down, but I gotta buss before I come (Ooh, slide)",gotta,35,"Don't waste this love, got me waitin' (No, no, no, no)",got,INNER,SLANT,cmu,MED,Y
+Slidin’,34,"We should slide so you can so you can slip it off, baby",can,34,"We should slide so you can so you can slip it off, baby",can,INNER,REPEAT,spelling,HIGH,N
+Slidin’,34,"We should slide so you can so you can slip it off, baby",baby,35,"Don't waste this love, got me waitin' (No, no, no, no)",waitin,END,ASSONANCE,vowel,MED,Y
+Slidin’,34,"We should slide so you can so you can slip it off, baby",baby,35,"Don't waste this love, got me waitin' (No, no, no, no)",waste,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,34,"We should slide so you can so you can slip it off, baby",baby,36,"Slip it off, baby",baby,END,REPEAT,spelling,HIGH,N
+Slidin’,34,"We should slide so you can so you can slip it off, baby",slip,36,"Slip it off, baby",Slip,INNER,REPEAT,spelling,HIGH,N
+Slidin’,34,"We should slide so you can so you can slip it off, baby",baby,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",waitin,END,ASSONANCE,vowel,MED,Y
+Slidin’,35,"Don't waste this love, got me waitin' (No, no, no, no)",waste,35,"Don't waste this love, got me waitin' (No, no, no, no)",waitin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,35,"Don't waste this love, got me waitin' (No, no, no, no)",waitin,36,"Slip it off, baby",baby,END,ASSONANCE,vowel,MED,Y
+Slidin’,35,"Don't waste this love, got me waitin' (No, no, no, no)",waste,36,"Slip it off, baby",baby,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,35,"Don't waste this love, got me waitin' (No, no, no, no)",waitin,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",waitin,END,REPEAT,spelling,HIGH,N
+Slidin’,35,"Don't waste this love, got me waitin' (No, no, no, no)",Don't,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",Don't,INNER,REPEAT,spelling,HIGH,N
+Slidin’,35,"Don't waste this love, got me waitin' (No, no, no, no)",love,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",love,INNER,REPEAT,spelling,HIGH,N
+Slidin’,35,"Don't waste this love, got me waitin' (No, no, no, no)",waitin,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",waste,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,35,"Don't waste this love, got me waitin' (No, no, no, no)",waste,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",waitin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,35,"Don't waste this love, got me waitin' (No, no, no, no)",waste,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",waste,INNER,REPEAT,spelling,HIGH,N
+Slidin’,36,"Slip it off, baby",baby,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",waitin,END,ASSONANCE,vowel,MED,Y
+Slidin’,36,"Slip it off, baby",baby,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",waste,INNER,ASSONANCE,vowel,MED,Y
+Slidin’,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",waste,37,"Don't waste this love, I'm waitin' (Ooh, don't keep me waitin')",waitin,INNER,ASSONANCE,vowel,MED,Y
+Slidin’ (BADDIES ONLY Remix),1,I can tell you got what I want,got,1,I can tell you got what I want,want,INNER,SLANT,cmu,MED,Y
+Slidin’ (BADDIES ONLY Remix),2,"Waitin', waitin' all night",Waitin,2,"Waitin', waitin' all night",waitin,INNER,REPEAT,spelling,HIGH,N
+Slidin’ (BADDIES ONLY Remix),2,"Waitin', waitin' all night",night,3,"Waitin', waitin' all night, oh",night,END,REPEAT,spelling,HIGH,N
+Slidin’ (BADDIES ONLY Remix),2,"Waitin', waitin' all night",all,3,"Waitin', waitin' all night, oh",all,INNER,REPEAT,spelling,HIGH,N
+Slidin’ (BADDIES ONLY Remix),2,"Waitin', waitin' all night",Waitin,3,"Waitin', waitin' all night, oh",Waitin,INNER,REPEAT,spelling,HIGH,N
+Slidin’ (BADDIES ONLY Remix),2,"Waitin', waitin' all night",night,4,"Dip, dip, dive in (Slide)",dive,END,SLANT,cmu,MED,Y
+Slidin’ (BADDIES ONLY Remix),3,"Waitin', waitin' all night, oh",Waitin,3,"Waitin', waitin' all night, oh",waitin,INNER,REPEAT,spelling,HIGH,N
+Slidin’ (BADDIES ONLY Remix),3,"Waitin', waitin' all night, oh",night,4,"Dip, dip, dive in (Slide)",dive,END,SLANT,cmu,MED,Y
+Slidin’ (BADDIES ONLY Remix),4,"Dip, dip, dive in (Slide)",Dip,4,"Dip, dip, dive in (Slide)",dip,INNER,REPEAT,spelling,HIGH,N

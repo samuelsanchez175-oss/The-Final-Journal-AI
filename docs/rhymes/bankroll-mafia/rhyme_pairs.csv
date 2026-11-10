@@ -1,0 +1,538 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+I Want Her,1,"We got YSL in this mothafucka, Slime Boss",got,1,"We got YSL in this mothafucka, Slime Boss",Boss,INNER,SLANT,cmu,MED,Y
+I Want Her,1,"We got YSL in this mothafucka, Slime Boss",Boss,2,"We got Hustle Gang, I don't bang",got,INNER,SLANT,cmu,MED,Y
+I Want Her,1,"We got YSL in this mothafucka, Slime Boss",got,2,"We got Hustle Gang, I don't bang",got,INNER,REPEAT,spelling,HIGH,N
+I Want Her,1,"We got YSL in this mothafucka, Slime Boss",Boss,3,Got Bankroll mothafuckin' Mafia,Mafia,END,SLANT,cmu,MED,Y
+I Want Her,1,"We got YSL in this mothafucka, Slime Boss",Boss,3,Got Bankroll mothafuckin' Mafia,Got,INNER,SLANT,cmu,MED,Y
+I Want Her,1,"We got YSL in this mothafucka, Slime Boss",got,3,Got Bankroll mothafuckin' Mafia,Got,INNER,REPEAT,spelling,HIGH,N
+I Want Her,1,"We got YSL in this mothafucka, Slime Boss",got,3,Got Bankroll mothafuckin' Mafia,Mafia,INNER,SLANT,cmu,MED,Y
+I Want Her,1,"We got YSL in this mothafucka, Slime Boss",mothafucka,3,Got Bankroll mothafuckin' Mafia,mothafuckin,INNER,SLANT,spelling,LOW,Y
+I Want Her,1,"We got YSL in this mothafucka, Slime Boss",Boss,4,Bitch I'm a boss,boss,END,REPEAT,spelling,HIGH,N
+I Want Her,2,"We got Hustle Gang, I don't bang",Gang,2,"We got Hustle Gang, I don't bang",bang,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,2,"We got Hustle Gang, I don't bang",don't,3,Got Bankroll mothafuckin' Mafia,Bankroll,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,2,"We got Hustle Gang, I don't bang",got,3,Got Bankroll mothafuckin' Mafia,Got,INNER,REPEAT,spelling,HIGH,N
+I Want Her,2,"We got Hustle Gang, I don't bang",got,3,Got Bankroll mothafuckin' Mafia,Mafia,INNER,SLANT,cmu,MED,Y
+I Want Her,2,"We got Hustle Gang, I don't bang",got,4,Bitch I'm a boss,boss,INNER,SLANT,cmu,MED,Y
+I Want Her,3,Got Bankroll mothafuckin' Mafia,Got,3,Got Bankroll mothafuckin' Mafia,Mafia,INNER,SLANT,cmu,MED,Y
+I Want Her,3,Got Bankroll mothafuckin' Mafia,Mafia,4,Bitch I'm a boss,boss,END,SLANT,cmu,MED,Y
+I Want Her,3,Got Bankroll mothafuckin' Mafia,Got,4,Bitch I'm a boss,boss,INNER,SLANT,cmu,MED,Y
+I Want Her,4,Bitch I'm a boss,Bitch,5,She lick on the dick and then suck on the balls,dick,INNER,SLANT,cmu,MED,Y
+I Want Her,4,Bitch I'm a boss,Bitch,5,She lick on the dick and then suck on the balls,lick,INNER,SLANT,cmu,MED,Y
+I Want Her,4,Bitch I'm a boss,Bitch,6,"Bitch I'm Young Savage, got crack in my drawers",Bitch,INNER,REPEAT,spelling,HIGH,N
+I Want Her,4,Bitch I'm a boss,boss,6,"Bitch I'm Young Savage, got crack in my drawers",got,INNER,SLANT,cmu,MED,Y
+I Want Her,5,She lick on the dick and then suck on the balls,lick,5,She lick on the dick and then suck on the balls,dick,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,5,She lick on the dick and then suck on the balls,balls,6,"Bitch I'm Young Savage, got crack in my drawers",drawers,END,SLANT,cmu,MED,Y
+I Want Her,5,She lick on the dick and then suck on the balls,dick,6,"Bitch I'm Young Savage, got crack in my drawers",Bitch,INNER,SLANT,cmu,MED,Y
+I Want Her,5,She lick on the dick and then suck on the balls,lick,6,"Bitch I'm Young Savage, got crack in my drawers",Bitch,INNER,SLANT,cmu,MED,Y
+I Want Her,5,She lick on the dick and then suck on the balls,suck,6,"Bitch I'm Young Savage, got crack in my drawers",Young,INNER,SLANT,cmu,MED,Y
+I Want Her,5,She lick on the dick and then suck on the balls,balls,7,"Bitch I'm Young Savage, I nut on her blouse",blouse,END,SLANT,spelling,LOW,Y
+I Want Her,5,She lick on the dick and then suck on the balls,dick,7,"Bitch I'm Young Savage, I nut on her blouse",Bitch,INNER,SLANT,cmu,MED,Y
+I Want Her,5,She lick on the dick and then suck on the balls,lick,7,"Bitch I'm Young Savage, I nut on her blouse",Bitch,INNER,SLANT,cmu,MED,Y
+I Want Her,5,She lick on the dick and then suck on the balls,suck,7,"Bitch I'm Young Savage, I nut on her blouse",nut,INNER,SLANT,cmu,MED,Y
+I Want Her,5,She lick on the dick and then suck on the balls,suck,7,"Bitch I'm Young Savage, I nut on her blouse",Young,INNER,SLANT,cmu,MED,Y
+I Want Her,6,"Bitch I'm Young Savage, got crack in my drawers",Savage,6,"Bitch I'm Young Savage, got crack in my drawers",crack,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,6,"Bitch I'm Young Savage, got crack in my drawers",Bitch,7,"Bitch I'm Young Savage, I nut on her blouse",Bitch,INNER,REPEAT,spelling,HIGH,N
+I Want Her,6,"Bitch I'm Young Savage, got crack in my drawers",crack,7,"Bitch I'm Young Savage, I nut on her blouse",Savage,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,6,"Bitch I'm Young Savage, got crack in my drawers",Savage,7,"Bitch I'm Young Savage, I nut on her blouse",Savage,INNER,REPEAT,spelling,HIGH,N
+I Want Her,6,"Bitch I'm Young Savage, got crack in my drawers",Young,7,"Bitch I'm Young Savage, I nut on her blouse",nut,INNER,SLANT,cmu,MED,Y
+I Want Her,6,"Bitch I'm Young Savage, got crack in my drawers",Young,7,"Bitch I'm Young Savage, I nut on her blouse",Young,INNER,REPEAT,spelling,HIGH,N
+I Want Her,6,"Bitch I'm Young Savage, got crack in my drawers",Bitch,8,Niggas be snitchin' and actin' like mice,snitchin,INNER,SLANT,cmu,MED,Y
+I Want Her,6,"Bitch I'm Young Savage, got crack in my drawers",crack,8,Niggas be snitchin' and actin' like mice,actin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,6,"Bitch I'm Young Savage, got crack in my drawers",Savage,8,Niggas be snitchin' and actin' like mice,actin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,7,"Bitch I'm Young Savage, I nut on her blouse",Young,7,"Bitch I'm Young Savage, I nut on her blouse",nut,INNER,SLANT,cmu,MED,Y
+I Want Her,7,"Bitch I'm Young Savage, I nut on her blouse",Bitch,8,Niggas be snitchin' and actin' like mice,snitchin,INNER,SLANT,cmu,MED,Y
+I Want Her,7,"Bitch I'm Young Savage, I nut on her blouse",Savage,8,Niggas be snitchin' and actin' like mice,actin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,7,"Bitch I'm Young Savage, I nut on her blouse",nut,9,"Only 22, but I got some stripes",some,INNER,SLANT,cmu,MED,Y
+I Want Her,7,"Bitch I'm Young Savage, I nut on her blouse",Young,9,"Only 22, but I got some stripes",some,INNER,SLANT,cmu,MED,Y
+I Want Her,8,Niggas be snitchin' and actin' like mice,like,8,Niggas be snitchin' and actin' like mice,mice,INNER,SLANT,cmu,MED,Y
+I Want Her,8,Niggas be snitchin' and actin' like mice,mice,9,"Only 22, but I got some stripes",stripes,END,SLANT,cmu,MED,Y
+I Want Her,8,Niggas be snitchin' and actin' like mice,like,9,"Only 22, but I got some stripes",stripes,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,8,Niggas be snitchin' and actin' like mice,mice,10,Bitch I'ma ball like Jerry Rice,Rice,END,PERFECT,cmu,HIGH,Y
+I Want Her,8,Niggas be snitchin' and actin' like mice,like,10,Bitch I'ma ball like Jerry Rice,like,INNER,REPEAT,spelling,HIGH,N
+I Want Her,8,Niggas be snitchin' and actin' like mice,like,10,Bitch I'ma ball like Jerry Rice,Rice,INNER,SLANT,cmu,MED,Y
+I Want Her,8,Niggas be snitchin' and actin' like mice,mice,10,Bitch I'ma ball like Jerry Rice,like,INNER,SLANT,cmu,MED,Y
+I Want Her,8,Niggas be snitchin' and actin' like mice,snitchin,10,Bitch I'ma ball like Jerry Rice,Bitch,INNER,SLANT,cmu,MED,Y
+I Want Her,8,Niggas be snitchin' and actin' like mice,mice,11,"VVS diamonds, bitch I'm havin' ice",ice,END,PERFECT,cmu,HIGH,Y
+I Want Her,9,"Only 22, but I got some stripes",stripes,10,Bitch I'ma ball like Jerry Rice,Rice,END,SLANT,cmu,MED,Y
+I Want Her,9,"Only 22, but I got some stripes",stripes,10,Bitch I'ma ball like Jerry Rice,like,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,9,"Only 22, but I got some stripes",stripes,11,"VVS diamonds, bitch I'm havin' ice",ice,END,SLANT,cmu,MED,Y
+I Want Her,9,"Only 22, but I got some stripes",stripes,11,"VVS diamonds, bitch I'm havin' ice",diamonds,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,9,"Only 22, but I got some stripes",stripes,13,Niggas know that Savage stands for nothin' nice,nice,END,SLANT,cmu,MED,Y
+I Want Her,10,Bitch I'ma ball like Jerry Rice,Bitch,10,Bitch I'ma ball like Jerry Rice,I'ma,INNER,SLANT,spelling,LOW,Y
+I Want Her,10,Bitch I'ma ball like Jerry Rice,like,10,Bitch I'ma ball like Jerry Rice,Rice,INNER,SLANT,cmu,MED,Y
+I Want Her,10,Bitch I'ma ball like Jerry Rice,Rice,11,"VVS diamonds, bitch I'm havin' ice",ice,END,PERFECT,cmu,HIGH,Y
+I Want Her,10,Bitch I'ma ball like Jerry Rice,Bitch,11,"VVS diamonds, bitch I'm havin' ice",bitch,INNER,REPEAT,spelling,HIGH,N
+I Want Her,10,Bitch I'ma ball like Jerry Rice,I'ma,11,"VVS diamonds, bitch I'm havin' ice",bitch,INNER,SLANT,spelling,LOW,Y
+I Want Her,10,Bitch I'ma ball like Jerry Rice,like,11,"VVS diamonds, bitch I'm havin' ice",diamonds,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,10,Bitch I'ma ball like Jerry Rice,like,11,"VVS diamonds, bitch I'm havin' ice",ice,INNER,SLANT,cmu,MED,Y
+I Want Her,10,Bitch I'ma ball like Jerry Rice,Rice,11,"VVS diamonds, bitch I'm havin' ice",diamonds,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,10,Bitch I'ma ball like Jerry Rice,Rice,13,Niggas know that Savage stands for nothin' nice,nice,END,PERFECT,cmu,HIGH,Y
+I Want Her,11,"VVS diamonds, bitch I'm havin' ice",diamonds,11,"VVS diamonds, bitch I'm havin' ice",ice,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,11,"VVS diamonds, bitch I'm havin' ice",havin,12,"21 Savage, nigga, Randy Savage",Randy,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,11,"VVS diamonds, bitch I'm havin' ice",havin,12,"21 Savage, nigga, Randy Savage",Savage,INNER,SLANT,cmu,MED,Y
+I Want Her,11,"VVS diamonds, bitch I'm havin' ice",ice,13,Niggas know that Savage stands for nothin' nice,nice,END,PERFECT,cmu,HIGH,Y
+I Want Her,11,"VVS diamonds, bitch I'm havin' ice",diamonds,13,Niggas know that Savage stands for nothin' nice,nice,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,11,"VVS diamonds, bitch I'm havin' ice",havin,13,Niggas know that Savage stands for nothin' nice,Savage,INNER,SLANT,cmu,MED,Y
+I Want Her,11,"VVS diamonds, bitch I'm havin' ice",havin,13,Niggas know that Savage stands for nothin' nice,stands,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,11,"VVS diamonds, bitch I'm havin' ice",ice,15,Cause molly keeps me higher than a kite,kite,END,SLANT,cmu,MED,Y
+I Want Her,12,"21 Savage, nigga, Randy Savage",Randy,12,"21 Savage, nigga, Randy Savage",Savage,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,12,"21 Savage, nigga, Randy Savage",Savage,12,"21 Savage, nigga, Randy Savage",Randy,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,12,"21 Savage, nigga, Randy Savage",Savage,12,"21 Savage, nigga, Randy Savage",Savage,INNER,REPEAT,spelling,HIGH,N
+I Want Her,12,"21 Savage, nigga, Randy Savage",nigga,13,Niggas know that Savage stands for nothin' nice,Niggas,INNER,SLANT,spelling,LOW,Y
+I Want Her,12,"21 Savage, nigga, Randy Savage",Randy,13,Niggas know that Savage stands for nothin' nice,Savage,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,12,"21 Savage, nigga, Randy Savage",Randy,13,Niggas know that Savage stands for nothin' nice,stands,INNER,SLANT,cmu,MED,Y
+I Want Her,12,"21 Savage, nigga, Randy Savage",Savage,13,Niggas know that Savage stands for nothin' nice,Savage,INNER,REPEAT,spelling,HIGH,N
+I Want Her,12,"21 Savage, nigga, Randy Savage",Savage,13,Niggas know that Savage stands for nothin' nice,stands,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,13,Niggas know that Savage stands for nothin' nice,Savage,13,Niggas know that Savage stands for nothin' nice,stands,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,13,Niggas know that Savage stands for nothin' nice,nothin,14,"I'm on that molly, yes I'm on that molly, bitch",molly,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,13,Niggas know that Savage stands for nothin' nice,nice,15,Cause molly keeps me higher than a kite,kite,END,SLANT,cmu,MED,Y
+I Want Her,13,Niggas know that Savage stands for nothin' nice,nice,15,Cause molly keeps me higher than a kite,higher,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,13,Niggas know that Savage stands for nothin' nice,nothin,15,Cause molly keeps me higher than a kite,Cause,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,13,Niggas know that Savage stands for nothin' nice,nothin,15,Cause molly keeps me higher than a kite,molly,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,13,Niggas know that Savage stands for nothin' nice,nice,17,"Yes and all my niggas real, right",right,END,SLANT,cmu,MED,Y
+I Want Her,14,"I'm on that molly, yes I'm on that molly, bitch",molly,14,"I'm on that molly, yes I'm on that molly, bitch",molly,INNER,REPEAT,spelling,HIGH,N
+I Want Her,14,"I'm on that molly, yes I'm on that molly, bitch",molly,15,Cause molly keeps me higher than a kite,Cause,INNER,SLANT,cmu,MED,Y
+I Want Her,14,"I'm on that molly, yes I'm on that molly, bitch",molly,15,Cause molly keeps me higher than a kite,molly,INNER,REPEAT,spelling,HIGH,N
+I Want Her,14,"I'm on that molly, yes I'm on that molly, bitch",bitch,16,"I keep a red flag hangin', bitch I'm gangbangin'",bitch,INNER,REPEAT,spelling,HIGH,N
+I Want Her,14,"I'm on that molly, yes I'm on that molly, bitch",yes,16,"I keep a red flag hangin', bitch I'm gangbangin'",red,INNER,SLANT,cmu,MED,Y
+I Want Her,15,Cause molly keeps me higher than a kite,Cause,15,Cause molly keeps me higher than a kite,molly,INNER,SLANT,cmu,MED,Y
+I Want Her,15,Cause molly keeps me higher than a kite,higher,15,Cause molly keeps me higher than a kite,kite,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,15,Cause molly keeps me higher than a kite,keeps,16,"I keep a red flag hangin', bitch I'm gangbangin'",keep,INNER,SLANT,cmu,MED,Y
+I Want Her,15,Cause molly keeps me higher than a kite,kite,17,"Yes and all my niggas real, right",right,END,PERFECT,cmu,HIGH,Y
+I Want Her,15,Cause molly keeps me higher than a kite,higher,17,"Yes and all my niggas real, right",right,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,15,Cause molly keeps me higher than a kite,keeps,17,"Yes and all my niggas real, right",real,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,15,Cause molly keeps me higher than a kite,kite,19,"She gave me top, bottom, on the first night",night,END,PERFECT,cmu,HIGH,Y
+I Want Her,16,"I keep a red flag hangin', bitch I'm gangbangin'",flag,16,"I keep a red flag hangin', bitch I'm gangbangin'",hangin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,16,"I keep a red flag hangin', bitch I'm gangbangin'",hangin,16,"I keep a red flag hangin', bitch I'm gangbangin'",gangbangin,INNER,ASSONANCE,vowel,LOW,N
+I Want Her,16,"I keep a red flag hangin', bitch I'm gangbangin'",keep,17,"Yes and all my niggas real, right",real,INNER,SLANT,cmu,MED,Y
+I Want Her,16,"I keep a red flag hangin', bitch I'm gangbangin'",red,17,"Yes and all my niggas real, right",Yes,INNER,SLANT,cmu,MED,Y
+I Want Her,16,"I keep a red flag hangin', bitch I'm gangbangin'",flag,18,"You is a sucka, man, why would you cuff her?",man,INNER,SLANT,cmu,MED,Y
+I Want Her,16,"I keep a red flag hangin', bitch I'm gangbangin'",hangin,18,"You is a sucka, man, why would you cuff her?",man,INNER,SLANT,cmu,MED,Y
+I Want Her,17,"Yes and all my niggas real, right",right,18,"You is a sucka, man, why would you cuff her?",why,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,17,"Yes and all my niggas real, right",right,19,"She gave me top, bottom, on the first night",night,END,PERFECT,cmu,HIGH,Y
+I Want Her,18,"You is a sucka, man, why would you cuff her?",sucka,18,"You is a sucka, man, why would you cuff her?",cuff,INNER,SLANT,spelling,LOW,Y
+I Want Her,18,"You is a sucka, man, why would you cuff her?",why,19,"She gave me top, bottom, on the first night",night,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,18,"You is a sucka, man, why would you cuff her?",why,20,I pull up and spray you lil' roaches like Raid,like,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,18,"You is a sucka, man, why would you cuff her?",would,20,I pull up and spray you lil' roaches like Raid,pull,INNER,SLANT,cmu,MED,Y
+I Want Her,19,"She gave me top, bottom, on the first night",top,19,"She gave me top, bottom, on the first night",bottom,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,19,"She gave me top, bottom, on the first night",gave,20,I pull up and spray you lil' roaches like Raid,Raid,INNER,SLANT,cmu,MED,Y
+I Want Her,19,"She gave me top, bottom, on the first night",gave,20,I pull up and spray you lil' roaches like Raid,spray,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,19,"She gave me top, bottom, on the first night",night,20,I pull up and spray you lil' roaches like Raid,like,INNER,SLANT,cmu,MED,Y
+I Want Her,19,"She gave me top, bottom, on the first night",gave,21,"I'm stackin' chips, Lays",Lays,INNER,SLANT,cmu,MED,Y
+I Want Her,20,I pull up and spray you lil' roaches like Raid,spray,20,I pull up and spray you lil' roaches like Raid,Raid,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,20,I pull up and spray you lil' roaches like Raid,Raid,21,"I'm stackin' chips, Lays",Lays,END,SLANT,cmu,MED,Y
+I Want Her,20,I pull up and spray you lil' roaches like Raid,lil,21,"I'm stackin' chips, Lays",chips,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,20,I pull up and spray you lil' roaches like Raid,spray,21,"I'm stackin' chips, Lays",Lays,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,20,I pull up and spray you lil' roaches like Raid,Raid,22,"Die slow, huh, AIDS",AIDS,END,SLANT,cmu,MED,Y
+I Want Her,20,I pull up and spray you lil' roaches like Raid,like,22,"Die slow, huh, AIDS",Die,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,20,I pull up and spray you lil' roaches like Raid,roaches,22,"Die slow, huh, AIDS",slow,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,20,I pull up and spray you lil' roaches like Raid,spray,22,"Die slow, huh, AIDS",AIDS,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,20,I pull up and spray you lil' roaches like Raid,Raid,24,I get money million different ways,ways,END,SLANT,cmu,MED,Y
+I Want Her,21,"I'm stackin' chips, Lays",Lays,22,"Die slow, huh, AIDS",AIDS,END,SLANT,cmu,MED,Y
+I Want Her,21,"I'm stackin' chips, Lays",Lays,24,I get money million different ways,ways,END,PERFECT,cmu,HIGH,Y
+I Want Her,21,"I'm stackin' chips, Lays",Lays,25,"Bitch I'ma ball, ball like D-Wade",Wade,END,SLANT,cmu,MED,Y
+I Want Her,22,"Die slow, huh, AIDS",AIDS,24,I get money million different ways,ways,END,SLANT,cmu,MED,Y
+I Want Her,22,"Die slow, huh, AIDS",AIDS,25,"Bitch I'ma ball, ball like D-Wade",Wade,END,SLANT,cmu,MED,Y
+I Want Her,23,"We pullin' up, drawin' down, nigga, Ks",drawin,25,"Bitch I'ma ball, ball like D-Wade",ball,INNER,SLANT,cmu,MED,Y
+I Want Her,24,I get money million different ways,million,24,I get money million different ways,different,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,24,I get money million different ways,ways,25,"Bitch I'ma ball, ball like D-Wade",Wade,END,SLANT,cmu,MED,Y
+I Want Her,24,I get money million different ways,different,25,"Bitch I'ma ball, ball like D-Wade",Bitch,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,24,I get money million different ways,million,25,"Bitch I'ma ball, ball like D-Wade",Bitch,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,24,I get money million different ways,get,26,And I'ma ball whenever I wanna,whenever,INNER,SLANT,cmu,MED,Y
+I Want Her,25,"Bitch I'ma ball, ball like D-Wade",ball,25,"Bitch I'ma ball, ball like D-Wade",ball,INNER,REPEAT,spelling,HIGH,N
+I Want Her,25,"Bitch I'ma ball, ball like D-Wade",Bitch,25,"Bitch I'ma ball, ball like D-Wade",I'ma,INNER,SLANT,spelling,LOW,Y
+I Want Her,25,"Bitch I'ma ball, ball like D-Wade",ball,26,And I'ma ball whenever I wanna,ball,INNER,REPEAT,spelling,HIGH,N
+I Want Her,25,"Bitch I'ma ball, ball like D-Wade",Bitch,26,And I'ma ball whenever I wanna,I'ma,INNER,SLANT,spelling,LOW,Y
+I Want Her,25,"Bitch I'ma ball, ball like D-Wade",I'ma,26,And I'ma ball whenever I wanna,I'ma,INNER,REPEAT,spelling,HIGH,N
+I Want Her,25,"Bitch I'ma ball, ball like D-Wade",ball,27,And I'ma call whenever I want her,call,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,25,"Bitch I'ma ball, ball like D-Wade",Bitch,27,And I'ma call whenever I want her,I'ma,INNER,SLANT,spelling,LOW,Y
+I Want Her,25,"Bitch I'ma ball, ball like D-Wade",I'ma,27,And I'ma call whenever I want her,I'ma,INNER,REPEAT,spelling,HIGH,N
+I Want Her,26,And I'ma ball whenever I wanna,wanna,27,And I'ma call whenever I want her,want,END,SLANT,cmu,MED,Y
+I Want Her,26,And I'ma ball whenever I wanna,ball,27,And I'ma call whenever I want her,call,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,26,And I'ma ball whenever I wanna,I'ma,27,And I'ma call whenever I want her,I'ma,INNER,REPEAT,spelling,HIGH,N
+I Want Her,26,And I'ma ball whenever I wanna,whenever,27,And I'ma call whenever I want her,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,26,And I'ma ball whenever I wanna,wanna,28,And I'ma stall whenever I want her,want,END,SLANT,cmu,MED,Y
+I Want Her,26,And I'ma ball whenever I wanna,ball,28,And I'ma stall whenever I want her,stall,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,26,And I'ma ball whenever I wanna,I'ma,28,And I'ma stall whenever I want her,I'ma,INNER,REPEAT,spelling,HIGH,N
+I Want Her,26,And I'ma ball whenever I wanna,whenever,28,And I'ma stall whenever I want her,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,26,And I'ma ball whenever I wanna,wanna,29,And I'm a dog whenever I want her,want,END,SLANT,cmu,MED,Y
+I Want Her,26,And I'ma ball whenever I wanna,wanna,30,And she gon' ball whenever I wanna,wanna,END,REPEAT,spelling,HIGH,N
+I Want Her,27,And I'ma call whenever I want her,want,28,And I'ma stall whenever I want her,want,END,REPEAT,spelling,HIGH,N
+I Want Her,27,And I'ma call whenever I want her,call,28,And I'ma stall whenever I want her,stall,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,27,And I'ma call whenever I want her,I'ma,28,And I'ma stall whenever I want her,I'ma,INNER,REPEAT,spelling,HIGH,N
+I Want Her,27,And I'ma call whenever I want her,whenever,28,And I'ma stall whenever I want her,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,27,And I'ma call whenever I want her,want,29,And I'm a dog whenever I want her,want,END,REPEAT,spelling,HIGH,N
+I Want Her,27,And I'ma call whenever I want her,call,29,And I'm a dog whenever I want her,dog,INNER,SLANT,cmu,MED,Y
+I Want Her,27,And I'ma call whenever I want her,whenever,29,And I'm a dog whenever I want her,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,27,And I'ma call whenever I want her,want,30,And she gon' ball whenever I wanna,wanna,END,SLANT,cmu,MED,Y
+I Want Her,27,And I'ma call whenever I want her,want,31,And I'ma shoot whenever I wanna,wanna,END,SLANT,cmu,MED,Y
+I Want Her,28,And I'ma stall whenever I want her,want,29,And I'm a dog whenever I want her,want,END,REPEAT,spelling,HIGH,N
+I Want Her,28,And I'ma stall whenever I want her,stall,29,And I'm a dog whenever I want her,dog,INNER,SLANT,cmu,MED,Y
+I Want Her,28,And I'ma stall whenever I want her,whenever,29,And I'm a dog whenever I want her,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,28,And I'ma stall whenever I want her,want,30,And she gon' ball whenever I wanna,wanna,END,SLANT,cmu,MED,Y
+I Want Her,28,And I'ma stall whenever I want her,stall,30,And she gon' ball whenever I wanna,ball,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,28,And I'ma stall whenever I want her,whenever,30,And she gon' ball whenever I wanna,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,28,And I'ma stall whenever I want her,want,31,And I'ma shoot whenever I wanna,wanna,END,SLANT,cmu,MED,Y
+I Want Her,28,And I'ma stall whenever I want her,want,32,And I'm the truth whenever I wanna,wanna,END,SLANT,cmu,MED,Y
+I Want Her,29,And I'm a dog whenever I want her,want,30,And she gon' ball whenever I wanna,wanna,END,SLANT,cmu,MED,Y
+I Want Her,29,And I'm a dog whenever I want her,dog,30,And she gon' ball whenever I wanna,ball,INNER,SLANT,cmu,MED,Y
+I Want Her,29,And I'm a dog whenever I want her,whenever,30,And she gon' ball whenever I wanna,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,29,And I'm a dog whenever I want her,want,31,And I'ma shoot whenever I wanna,wanna,END,SLANT,cmu,MED,Y
+I Want Her,29,And I'm a dog whenever I want her,whenever,31,And I'ma shoot whenever I wanna,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,29,And I'm a dog whenever I want her,want,32,And I'm the truth whenever I wanna,wanna,END,SLANT,cmu,MED,Y
+I Want Her,30,And she gon' ball whenever I wanna,wanna,31,And I'ma shoot whenever I wanna,wanna,END,REPEAT,spelling,HIGH,N
+I Want Her,30,And she gon' ball whenever I wanna,whenever,31,And I'ma shoot whenever I wanna,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,30,And she gon' ball whenever I wanna,wanna,32,And I'm the truth whenever I wanna,wanna,END,REPEAT,spelling,HIGH,N
+I Want Her,30,And she gon' ball whenever I wanna,whenever,32,And I'm the truth whenever I wanna,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,30,And she gon' ball whenever I wanna,wanna,34,Nigga know I'm rollin' with the Mafia,Mafia,END,SLANT,cmu,MED,Y
+I Want Her,31,And I'ma shoot whenever I wanna,wanna,32,And I'm the truth whenever I wanna,wanna,END,REPEAT,spelling,HIGH,N
+I Want Her,31,And I'ma shoot whenever I wanna,shoot,32,And I'm the truth whenever I wanna,truth,INNER,SLANT,cmu,MED,Y
+I Want Her,31,And I'ma shoot whenever I wanna,whenever,32,And I'm the truth whenever I wanna,whenever,INNER,REPEAT,spelling,HIGH,N
+I Want Her,31,And I'ma shoot whenever I wanna,whenever,33,Nigga know I roll in the Bentley,Bentley,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,31,And I'ma shoot whenever I wanna,wanna,34,Nigga know I'm rollin' with the Mafia,Mafia,END,SLANT,cmu,MED,Y
+I Want Her,32,And I'm the truth whenever I wanna,whenever,33,Nigga know I roll in the Bentley,Bentley,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,32,And I'm the truth whenever I wanna,wanna,34,Nigga know I'm rollin' with the Mafia,Mafia,END,SLANT,cmu,MED,Y
+I Want Her,32,And I'm the truth whenever I wanna,wanna,34,Nigga know I'm rollin' with the Mafia,rollin,INNER,SLANT,cmu,MED,Y
+I Want Her,32,And I'm the truth whenever I wanna,wanna,36,"You niggas roll, I'm rollin' in problems",problems,END,ASSONANCE,vowel,MED,Y
+I Want Her,33,Nigga know I roll in the Bentley,know,33,Nigga know I roll in the Bentley,roll,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,33,Nigga know I roll in the Bentley,know,34,Nigga know I'm rollin' with the Mafia,know,INNER,REPEAT,spelling,HIGH,N
+I Want Her,33,Nigga know I roll in the Bentley,Nigga,34,Nigga know I'm rollin' with the Mafia,Nigga,INNER,REPEAT,spelling,HIGH,N
+I Want Her,33,Nigga know I roll in the Bentley,roll,34,Nigga know I'm rollin' with the Mafia,know,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,33,Nigga know I roll in the Bentley,know,35,You niggas know I'm rollin' with chickens,know,INNER,REPEAT,spelling,HIGH,N
+I Want Her,33,Nigga know I roll in the Bentley,Nigga,35,You niggas know I'm rollin' with chickens,niggas,INNER,SLANT,spelling,LOW,Y
+I Want Her,33,Nigga know I roll in the Bentley,roll,35,You niggas know I'm rollin' with chickens,know,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,rollin,34,Nigga know I'm rollin' with the Mafia,Mafia,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,know,35,You niggas know I'm rollin' with chickens,know,INNER,REPEAT,spelling,HIGH,N
+I Want Her,34,Nigga know I'm rollin' with the Mafia,Mafia,35,You niggas know I'm rollin' with chickens,rollin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,Nigga,35,You niggas know I'm rollin' with chickens,niggas,INNER,SLANT,spelling,LOW,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,rollin,35,You niggas know I'm rollin' with chickens,rollin,INNER,REPEAT,spelling,HIGH,N
+I Want Her,34,Nigga know I'm rollin' with the Mafia,Mafia,36,"You niggas roll, I'm rollin' in problems",problems,END,ASSONANCE,vowel,MED,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,know,36,"You niggas roll, I'm rollin' in problems",roll,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,Mafia,36,"You niggas roll, I'm rollin' in problems",rollin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,Nigga,36,"You niggas roll, I'm rollin' in problems",niggas,INNER,SLANT,spelling,LOW,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,rollin,36,"You niggas roll, I'm rollin' in problems",problems,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,rollin,36,"You niggas roll, I'm rollin' in problems",rollin,INNER,REPEAT,spelling,HIGH,N
+I Want Her,34,Nigga know I'm rollin' with the Mafia,Mafia,37,"And if she bad, baby, I want her",want,END,ASSONANCE,vowel,MED,Y
+I Want Her,34,Nigga know I'm rollin' with the Mafia,Mafia,38,"She bad, baby, I want her",want,END,ASSONANCE,vowel,MED,Y
+I Want Her,35,You niggas know I'm rollin' with chickens,niggas,35,You niggas know I'm rollin' with chickens,chickens,INNER,SLANT,spelling,LOW,Y
+I Want Her,35,You niggas know I'm rollin' with chickens,chickens,36,"You niggas roll, I'm rollin' in problems",niggas,INNER,SLANT,spelling,LOW,Y
+I Want Her,35,You niggas know I'm rollin' with chickens,know,36,"You niggas roll, I'm rollin' in problems",roll,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,35,You niggas know I'm rollin' with chickens,niggas,36,"You niggas roll, I'm rollin' in problems",niggas,INNER,REPEAT,spelling,HIGH,N
+I Want Her,35,You niggas know I'm rollin' with chickens,rollin,36,"You niggas roll, I'm rollin' in problems",problems,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,35,You niggas know I'm rollin' with chickens,rollin,36,"You niggas roll, I'm rollin' in problems",rollin,INNER,REPEAT,spelling,HIGH,N
+I Want Her,35,You niggas know I'm rollin' with chickens,rollin,37,"And if she bad, baby, I want her",want,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,36,"You niggas roll, I'm rollin' in problems",rollin,36,"You niggas roll, I'm rollin' in problems",problems,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,36,"You niggas roll, I'm rollin' in problems",problems,37,"And if she bad, baby, I want her",want,END,ASSONANCE,vowel,MED,Y
+I Want Her,36,"You niggas roll, I'm rollin' in problems",rollin,37,"And if she bad, baby, I want her",want,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,36,"You niggas roll, I'm rollin' in problems",problems,38,"She bad, baby, I want her",want,END,ASSONANCE,vowel,MED,Y
+I Want Her,36,"You niggas roll, I'm rollin' in problems",rollin,38,"She bad, baby, I want her",want,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,36,"You niggas roll, I'm rollin' in problems",problems,39,"And nigga, ball, ball, when I wanna",wanna,END,ASSONANCE,vowel,MED,Y
+I Want Her,36,"You niggas roll, I'm rollin' in problems",problems,40,"And nigga, ball, ball, when I want, ayy",want,END,ASSONANCE,vowel,MED,Y
+I Want Her,37,"And if she bad, baby, I want her",want,38,"She bad, baby, I want her",want,END,REPEAT,spelling,HIGH,N
+I Want Her,37,"And if she bad, baby, I want her",baby,38,"She bad, baby, I want her",baby,INNER,REPEAT,spelling,HIGH,N
+I Want Her,37,"And if she bad, baby, I want her",bad,38,"She bad, baby, I want her",bad,INNER,REPEAT,spelling,HIGH,N
+I Want Her,37,"And if she bad, baby, I want her",want,39,"And nigga, ball, ball, when I wanna",wanna,END,SLANT,cmu,MED,Y
+I Want Her,37,"And if she bad, baby, I want her",want,40,"And nigga, ball, ball, when I want, ayy",want,END,REPEAT,spelling,HIGH,N
+I Want Her,38,"She bad, baby, I want her",want,39,"And nigga, ball, ball, when I wanna",wanna,END,SLANT,cmu,MED,Y
+I Want Her,38,"She bad, baby, I want her",want,40,"And nigga, ball, ball, when I want, ayy",want,END,REPEAT,spelling,HIGH,N
+I Want Her,38,"She bad, baby, I want her",want,42,"You know they dyin' on me, ignant",ignant,END,PERFECT,spelling,HIGH,Y
+I Want Her,39,"And nigga, ball, ball, when I wanna",ball,39,"And nigga, ball, ball, when I wanna",ball,INNER,REPEAT,spelling,HIGH,N
+I Want Her,39,"And nigga, ball, ball, when I wanna",wanna,40,"And nigga, ball, ball, when I want, ayy",want,END,SLANT,cmu,MED,Y
+I Want Her,39,"And nigga, ball, ball, when I wanna",ball,40,"And nigga, ball, ball, when I want, ayy",ball,INNER,REPEAT,spelling,HIGH,N
+I Want Her,39,"And nigga, ball, ball, when I wanna",nigga,40,"And nigga, ball, ball, when I want, ayy",nigga,INNER,REPEAT,spelling,HIGH,N
+I Want Her,39,"And nigga, ball, ball, when I wanna",when,40,"And nigga, ball, ball, when I want, ayy",when,INNER,REPEAT,spelling,HIGH,N
+I Want Her,40,"And nigga, ball, ball, when I want, ayy",ball,40,"And nigga, ball, ball, when I want, ayy",ball,INNER,REPEAT,spelling,HIGH,N
+I Want Her,40,"And nigga, ball, ball, when I want, ayy",want,42,"You know they dyin' on me, ignant",ignant,END,PERFECT,spelling,HIGH,Y
+I Want Her,40,"And nigga, ball, ball, when I want, ayy",nigga,42,"You know they dyin' on me, ignant",ignant,INNER,ASSONANCE,vowel,LOW,N
+I Want Her,41,Lil' bitch I'm 'bout to go in it,Lil,41,Lil' bitch I'm 'bout to go in it,bitch,INNER,SLANT,cmu,MED,Y
+I Want Her,41,Lil' bitch I'm 'bout to go in it,go,42,"You know they dyin' on me, ignant",know,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,41,Lil' bitch I'm 'bout to go in it,bitch,43,Got a nigga aqua whippin' in the kitchen,kitchen,INNER,SLANT,cmu,MED,Y
+I Want Her,41,Lil' bitch I'm 'bout to go in it,bitch,43,Got a nigga aqua whippin' in the kitchen,whippin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,41,Lil' bitch I'm 'bout to go in it,Lil,43,Got a nigga aqua whippin' in the kitchen,kitchen,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,41,Lil' bitch I'm 'bout to go in it,Lil,43,Got a nigga aqua whippin' in the kitchen,whippin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,42,"You know they dyin' on me, ignant",ignant,43,Got a nigga aqua whippin' in the kitchen,nigga,INNER,ASSONANCE,vowel,LOW,N
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,whippin,43,Got a nigga aqua whippin' in the kitchen,kitchen,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,kitchen,44,Pint came in and made this shit my business,business,END,ASSONANCE,vowel,MED,Y
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,kitchen,44,Pint came in and made this shit my business,shit,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,nigga,44,Pint came in and made this shit my business,shit,INNER,SLANT,spelling,LOW,Y
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,whippin,44,Pint came in and made this shit my business,business,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,whippin,44,Pint came in and made this shit my business,shit,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,Got,45,"Water on my wrist, it caused ten tensions",caused,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,kitchen,45,"Water on my wrist, it caused ten tensions",wrist,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,whippin,45,"Water on my wrist, it caused ten tensions",wrist,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,43,Got a nigga aqua whippin' in the kitchen,kitchen,47,"If I catch your bitch, you know she goin' missin'",missin,END,SLANT,cmu,MED,Y
+I Want Her,44,Pint came in and made this shit my business,came,44,Pint came in and made this shit my business,made,INNER,SLANT,cmu,MED,Y
+I Want Her,44,Pint came in and made this shit my business,shit,44,Pint came in and made this shit my business,business,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,44,Pint came in and made this shit my business,business,45,"Water on my wrist, it caused ten tensions",wrist,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,44,Pint came in and made this shit my business,shit,45,"Water on my wrist, it caused ten tensions",wrist,INNER,SLANT,cmu,MED,Y
+I Want Her,44,Pint came in and made this shit my business,business,46,"God, put your wrist down, nigga you want attention",wrist,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,44,Pint came in and made this shit my business,shit,46,"God, put your wrist down, nigga you want attention",nigga,INNER,SLANT,spelling,LOW,Y
+I Want Her,44,Pint came in and made this shit my business,shit,46,"God, put your wrist down, nigga you want attention",wrist,INNER,SLANT,cmu,MED,Y
+I Want Her,44,Pint came in and made this shit my business,business,47,"If I catch your bitch, you know she goin' missin'",missin,END,ASSONANCE,vowel,MED,Y
+I Want Her,44,Pint came in and made this shit my business,business,48,She gon' leave a note and say she gone fishin',fishin,END,ASSONANCE,vowel,MED,Y
+I Want Her,45,"Water on my wrist, it caused ten tensions",ten,45,"Water on my wrist, it caused ten tensions",tensions,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,45,"Water on my wrist, it caused ten tensions",tensions,46,"God, put your wrist down, nigga you want attention",attention,END,ASSONANCE,vowel,MED,Y
+I Want Her,45,"Water on my wrist, it caused ten tensions",caused,46,"God, put your wrist down, nigga you want attention",God,INNER,SLANT,cmu,MED,Y
+I Want Her,45,"Water on my wrist, it caused ten tensions",caused,46,"God, put your wrist down, nigga you want attention",want,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,45,"Water on my wrist, it caused ten tensions",ten,46,"God, put your wrist down, nigga you want attention",attention,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,45,"Water on my wrist, it caused ten tensions",wrist,46,"God, put your wrist down, nigga you want attention",wrist,INNER,REPEAT,spelling,HIGH,N
+I Want Her,45,"Water on my wrist, it caused ten tensions",wrist,47,"If I catch your bitch, you know she goin' missin'",bitch,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,45,"Water on my wrist, it caused ten tensions",wrist,47,"If I catch your bitch, you know she goin' missin'",missin,INNER,SLANT,cmu,MED,Y
+I Want Her,46,"God, put your wrist down, nigga you want attention",God,46,"God, put your wrist down, nigga you want attention",want,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,46,"God, put your wrist down, nigga you want attention",wrist,47,"If I catch your bitch, you know she goin' missin'",bitch,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,46,"God, put your wrist down, nigga you want attention",wrist,47,"If I catch your bitch, you know she goin' missin'",missin,INNER,SLANT,cmu,MED,Y
+I Want Her,46,"God, put your wrist down, nigga you want attention",wrist,48,She gon' leave a note and say she gone fishin',fishin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",bitch,47,"If I catch your bitch, you know she goin' missin'",missin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",missin,48,She gon' leave a note and say she gone fishin',fishin,END,SLANT,cmu,MED,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",bitch,48,She gon' leave a note and say she gone fishin',fishin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",know,48,She gon' leave a note and say she gone fishin',note,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",missin,49,I'm sushi meat cause ho I spit some raw shit,shit,END,ASSONANCE,vowel,MED,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",bitch,49,I'm sushi meat cause ho I spit some raw shit,shit,INNER,SLANT,cmu,MED,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",bitch,49,I'm sushi meat cause ho I spit some raw shit,spit,INNER,SLANT,cmu,MED,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",know,49,I'm sushi meat cause ho I spit some raw shit,ho,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",missin,49,I'm sushi meat cause ho I spit some raw shit,spit,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,47,"If I catch your bitch, you know she goin' missin'",missin,50,'Fore I pull up on them junkies and sell some raw shit,shit,END,ASSONANCE,vowel,MED,Y
+I Want Her,48,She gon' leave a note and say she gone fishin',gon,48,She gon' leave a note and say she gone fishin',note,INNER,SLANT,spelling,LOW,Y
+I Want Her,48,She gon' leave a note and say she gone fishin',fishin,49,I'm sushi meat cause ho I spit some raw shit,shit,END,ASSONANCE,vowel,MED,Y
+I Want Her,48,She gon' leave a note and say she gone fishin',fishin,49,I'm sushi meat cause ho I spit some raw shit,spit,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,48,She gon' leave a note and say she gone fishin',leave,49,I'm sushi meat cause ho I spit some raw shit,meat,INNER,SLANT,cmu,MED,Y
+I Want Her,48,She gon' leave a note and say she gone fishin',note,49,I'm sushi meat cause ho I spit some raw shit,ho,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,48,She gon' leave a note and say she gone fishin',fishin,50,'Fore I pull up on them junkies and sell some raw shit,shit,END,ASSONANCE,vowel,MED,Y
+I Want Her,48,She gon' leave a note and say she gone fishin',gone,50,'Fore I pull up on them junkies and sell some raw shit,'Fore,INNER,SLANT,cmu,MED,Y
+I Want Her,48,She gon' leave a note and say she gone fishin',fishin,52,Cause they know I'm ridin' with the dick,dick,END,ASSONANCE,vowel,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,cause,49,I'm sushi meat cause ho I spit some raw shit,raw,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,spit,49,I'm sushi meat cause ho I spit some raw shit,shit,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,shit,50,'Fore I pull up on them junkies and sell some raw shit,shit,END,REPEAT,spelling,HIGH,N
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,cause,50,'Fore I pull up on them junkies and sell some raw shit,raw,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,raw,50,'Fore I pull up on them junkies and sell some raw shit,raw,INNER,REPEAT,spelling,HIGH,N
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,some,50,'Fore I pull up on them junkies and sell some raw shit,junkies,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,some,50,'Fore I pull up on them junkies and sell some raw shit,some,INNER,REPEAT,spelling,HIGH,N
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,spit,50,'Fore I pull up on them junkies and sell some raw shit,shit,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,cause,51,"Got that dope comin' through your roof, be cautious",Got,INNER,SLANT,cmu,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,ho,51,"Got that dope comin' through your roof, be cautious",dope,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,raw,51,"Got that dope comin' through your roof, be cautious",Got,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,some,51,"Got that dope comin' through your roof, be cautious",comin,INNER,SLANT,cmu,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,sushi,51,"Got that dope comin' through your roof, be cautious",roof,INNER,SLANT,cmu,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,sushi,51,"Got that dope comin' through your roof, be cautious",through,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,shit,52,Cause they know I'm ridin' with the dick,dick,END,SLANT,cmu,MED,Y
+I Want Her,49,I'm sushi meat cause ho I spit some raw shit,shit,53,"We not gon' play 'round with a bitch, ya dig",dig,END,SLANT,cmu,MED,Y
+I Want Her,50,'Fore I pull up on them junkies and sell some raw shit,junkies,50,'Fore I pull up on them junkies and sell some raw shit,some,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,50,'Fore I pull up on them junkies and sell some raw shit,'Fore,51,"Got that dope comin' through your roof, be cautious",cautious,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,50,'Fore I pull up on them junkies and sell some raw shit,junkies,51,"Got that dope comin' through your roof, be cautious",comin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,50,'Fore I pull up on them junkies and sell some raw shit,raw,51,"Got that dope comin' through your roof, be cautious",Got,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,50,'Fore I pull up on them junkies and sell some raw shit,some,51,"Got that dope comin' through your roof, be cautious",comin,INNER,SLANT,cmu,MED,Y
+I Want Her,50,'Fore I pull up on them junkies and sell some raw shit,shit,52,Cause they know I'm ridin' with the dick,dick,END,SLANT,cmu,MED,Y
+I Want Her,50,'Fore I pull up on them junkies and sell some raw shit,raw,52,Cause they know I'm ridin' with the dick,Cause,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,50,'Fore I pull up on them junkies and sell some raw shit,shit,53,"We not gon' play 'round with a bitch, ya dig",dig,END,SLANT,cmu,MED,Y
+I Want Her,50,'Fore I pull up on them junkies and sell some raw shit,shit,54,"You stick on me, this nigga rich",rich,END,SLANT,cmu,MED,Y
+I Want Her,51,"Got that dope comin' through your roof, be cautious",through,51,"Got that dope comin' through your roof, be cautious",roof,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,51,"Got that dope comin' through your roof, be cautious",dope,52,Cause they know I'm ridin' with the dick,know,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,51,"Got that dope comin' through your roof, be cautious",Got,52,Cause they know I'm ridin' with the dick,Cause,INNER,SLANT,cmu,MED,Y
+I Want Her,51,"Got that dope comin' through your roof, be cautious",dope,53,"We not gon' play 'round with a bitch, ya dig",gon,INNER,SLANT,spelling,LOW,Y
+I Want Her,51,"Got that dope comin' through your roof, be cautious",Got,53,"We not gon' play 'round with a bitch, ya dig",not,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,52,Cause they know I'm ridin' with the dick,dick,53,"We not gon' play 'round with a bitch, ya dig",dig,END,SLANT,cmu,MED,Y
+I Want Her,52,Cause they know I'm ridin' with the dick,Cause,53,"We not gon' play 'round with a bitch, ya dig",not,INNER,SLANT,cmu,MED,Y
+I Want Her,52,Cause they know I'm ridin' with the dick,dick,53,"We not gon' play 'round with a bitch, ya dig",bitch,INNER,SLANT,cmu,MED,Y
+I Want Her,52,Cause they know I'm ridin' with the dick,dick,54,"You stick on me, this nigga rich",rich,END,SLANT,cmu,MED,Y
+I Want Her,52,Cause they know I'm ridin' with the dick,dick,54,"You stick on me, this nigga rich",nigga,INNER,SLANT,spelling,LOW,Y
+I Want Her,52,Cause they know I'm ridin' with the dick,dick,54,"You stick on me, this nigga rich",stick,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,52,Cause they know I'm ridin' with the dick,dick,55,"Mils, got the package in it and the kick",kick,END,PERFECT,cmu,HIGH,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",bitch,53,"We not gon' play 'round with a bitch, ya dig",dig,INNER,SLANT,cmu,MED,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",dig,54,"You stick on me, this nigga rich",rich,END,SLANT,cmu,MED,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",bitch,54,"You stick on me, this nigga rich",rich,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",bitch,54,"You stick on me, this nigga rich",stick,INNER,SLANT,cmu,MED,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",dig,54,"You stick on me, this nigga rich",nigga,INNER,SLANT,spelling,LOW,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",dig,54,"You stick on me, this nigga rich",stick,INNER,SLANT,cmu,MED,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",dig,55,"Mils, got the package in it and the kick",kick,END,SLANT,cmu,MED,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",bitch,55,"Mils, got the package in it and the kick",kick,INNER,SLANT,cmu,MED,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",bitch,55,"Mils, got the package in it and the kick",Mils,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",dig,55,"Mils, got the package in it and the kick",Mils,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,53,"We not gon' play 'round with a bitch, ya dig",not,55,"Mils, got the package in it and the kick",got,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,54,"You stick on me, this nigga rich",stick,54,"You stick on me, this nigga rich",nigga,INNER,SLANT,spelling,LOW,Y
+I Want Her,54,"You stick on me, this nigga rich",stick,54,"You stick on me, this nigga rich",rich,INNER,SLANT,cmu,MED,Y
+I Want Her,54,"You stick on me, this nigga rich",rich,55,"Mils, got the package in it and the kick",kick,END,SLANT,cmu,MED,Y
+I Want Her,54,"You stick on me, this nigga rich",nigga,55,"Mils, got the package in it and the kick",kick,INNER,SLANT,spelling,LOW,Y
+I Want Her,54,"You stick on me, this nigga rich",rich,55,"Mils, got the package in it and the kick",Mils,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,54,"You stick on me, this nigga rich",stick,55,"Mils, got the package in it and the kick",kick,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,54,"You stick on me, this nigga rich",stick,55,"Mils, got the package in it and the kick",Mils,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,54,"You stick on me, this nigga rich",rich,56,My blunt got a filter like a cigarette,filter,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,54,"You stick on me, this nigga rich",stick,56,My blunt got a filter like a cigarette,filter,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,55,"Mils, got the package in it and the kick",Mils,55,"Mils, got the package in it and the kick",kick,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,55,"Mils, got the package in it and the kick",got,56,My blunt got a filter like a cigarette,got,INNER,REPEAT,spelling,HIGH,N
+I Want Her,55,"Mils, got the package in it and the kick",kick,56,My blunt got a filter like a cigarette,filter,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,55,"Mils, got the package in it and the kick",Mils,56,My blunt got a filter like a cigarette,filter,INNER,SLANT,cmu,MED,Y
+I Want Her,55,"Mils, got the package in it and the kick",kick,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",swimmin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,55,"Mils, got the package in it and the kick",Mils,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",swimmin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,56,My blunt got a filter like a cigarette,blunt,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",fuckin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,56,My blunt got a filter like a cigarette,filter,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",swimmin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,56,My blunt got a filter like a cigarette,blunt,58,Don't play 'round with my money cause it's not a joke,money,INNER,SLANT,cmu,MED,Y
+I Want Her,56,My blunt got a filter like a cigarette,got,58,Don't play 'round with my money cause it's not a joke,cause,INNER,SLANT,cmu,MED,Y
+I Want Her,56,My blunt got a filter like a cigarette,got,58,Don't play 'round with my money cause it's not a joke,not,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",hoes,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",stroke,INNER,SLANT,cmu,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",stroke,58,Don't play 'round with my money cause it's not a joke,joke,END,PERFECT,cmu,HIGH,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",fuckin,58,Don't play 'round with my money cause it's not a joke,money,INNER,SLANT,cmu,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",hoes,58,Don't play 'round with my money cause it's not a joke,Don't,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",hoes,58,Don't play 'round with my money cause it's not a joke,joke,INNER,SLANT,cmu,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",stroke,58,Don't play 'round with my money cause it's not a joke,Don't,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",stroke,59,"This shit can get Italian, we'll cut your throat",throat,END,SLANT,cmu,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",fuckin,59,"This shit can get Italian, we'll cut your throat",cut,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",hoes,59,"This shit can get Italian, we'll cut your throat",throat,INNER,SLANT,cmu,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",swimmin,59,"This shit can get Italian, we'll cut your throat",shit,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",these,59,"This shit can get Italian, we'll cut your throat",we'll,INNER,SLANT,cmu,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",stroke,60,"You know this shit different strokes, different folks",folks,END,SLANT,cmu,MED,Y
+I Want Her,57,"I'm swimmin' in these hoes, they fuckin' with the stroke",stroke,61,"Nigga went yellow gold, I went rose",rose,END,SLANT,cmu,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,cause,58,Don't play 'round with my money cause it's not a joke,not,INNER,SLANT,cmu,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,Don't,58,Don't play 'round with my money cause it's not a joke,joke,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,joke,59,"This shit can get Italian, we'll cut your throat",throat,END,SLANT,cmu,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,Don't,59,"This shit can get Italian, we'll cut your throat",throat,INNER,SLANT,cmu,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,money,59,"This shit can get Italian, we'll cut your throat",cut,INNER,SLANT,cmu,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,joke,60,"You know this shit different strokes, different folks",folks,END,SLANT,cmu,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,Don't,60,"You know this shit different strokes, different folks",folks,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,Don't,60,"You know this shit different strokes, different folks",know,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,Don't,60,"You know this shit different strokes, different folks",strokes,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,joke,60,"You know this shit different strokes, different folks",know,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,joke,60,"You know this shit different strokes, different folks",strokes,INNER,SLANT,cmu,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,joke,61,"Nigga went yellow gold, I went rose",rose,END,SLANT,cmu,MED,Y
+I Want Her,58,Don't play 'round with my money cause it's not a joke,joke,62,The camera caught him in the trenches in the ghost,ghost,END,ASSONANCE,vowel,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",can,59,"This shit can get Italian, we'll cut your throat",Italian,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",throat,60,"You know this shit different strokes, different folks",folks,END,ASSONANCE,vowel,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",shit,60,"You know this shit different strokes, different folks",different,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",shit,60,"You know this shit different strokes, different folks",shit,INNER,REPEAT,spelling,HIGH,N
+I Want Her,59,"This shit can get Italian, we'll cut your throat",throat,60,"You know this shit different strokes, different folks",know,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",throat,60,"You know this shit different strokes, different folks",strokes,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",throat,61,"Nigga went yellow gold, I went rose",rose,END,SLANT,cmu,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",get,61,"Nigga went yellow gold, I went rose",went,INNER,SLANT,cmu,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",get,61,"Nigga went yellow gold, I went rose",yellow,INNER,SLANT,cmu,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",shit,61,"Nigga went yellow gold, I went rose",Nigga,INNER,SLANT,spelling,LOW,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",throat,61,"Nigga went yellow gold, I went rose",gold,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",throat,62,The camera caught him in the trenches in the ghost,ghost,END,SLANT,cmu,MED,Y
+I Want Her,59,"This shit can get Italian, we'll cut your throat",throat,63,"My bitch, she got some other bitches ready to go",go,END,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",different,60,"You know this shit different strokes, different folks",different,INNER,REPEAT,spelling,HIGH,N
+I Want Her,60,"You know this shit different strokes, different folks",know,60,"You know this shit different strokes, different folks",folks,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",know,60,"You know this shit different strokes, different folks",strokes,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",shit,60,"You know this shit different strokes, different folks",different,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",strokes,60,"You know this shit different strokes, different folks",folks,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,60,"You know this shit different strokes, different folks",folks,61,"Nigga went yellow gold, I went rose",rose,END,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",different,61,"Nigga went yellow gold, I went rose",went,INNER,SLANT,spelling,LOW,Y
+I Want Her,60,"You know this shit different strokes, different folks",folks,61,"Nigga went yellow gold, I went rose",gold,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",know,61,"Nigga went yellow gold, I went rose",gold,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",know,61,"Nigga went yellow gold, I went rose",rose,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",shit,61,"Nigga went yellow gold, I went rose",Nigga,INNER,SLANT,spelling,LOW,Y
+I Want Her,60,"You know this shit different strokes, different folks",strokes,61,"Nigga went yellow gold, I went rose",gold,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",strokes,61,"Nigga went yellow gold, I went rose",rose,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",folks,62,The camera caught him in the trenches in the ghost,ghost,END,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",different,62,The camera caught him in the trenches in the ghost,him,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",know,62,The camera caught him in the trenches in the ghost,ghost,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",shit,62,The camera caught him in the trenches in the ghost,him,INNER,SLANT,cmu,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",strokes,62,The camera caught him in the trenches in the ghost,ghost,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,60,"You know this shit different strokes, different folks",folks,63,"My bitch, she got some other bitches ready to go",go,END,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",gold,61,"Nigga went yellow gold, I went rose",rose,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",went,61,"Nigga went yellow gold, I went rose",went,INNER,REPEAT,spelling,HIGH,N
+I Want Her,61,"Nigga went yellow gold, I went rose",went,61,"Nigga went yellow gold, I went rose",yellow,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",yellow,61,"Nigga went yellow gold, I went rose",went,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",rose,62,The camera caught him in the trenches in the ghost,ghost,END,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",gold,62,The camera caught him in the trenches in the ghost,ghost,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",went,62,The camera caught him in the trenches in the ghost,trenches,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",yellow,62,The camera caught him in the trenches in the ghost,trenches,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",rose,63,"My bitch, she got some other bitches ready to go",go,END,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",gold,63,"My bitch, she got some other bitches ready to go",go,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",went,63,"My bitch, she got some other bitches ready to go",ready,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,61,"Nigga went yellow gold, I went rose",yellow,63,"My bitch, she got some other bitches ready to go",ready,INNER,SLANT,cmu,MED,Y
+I Want Her,62,The camera caught him in the trenches in the ghost,ghost,63,"My bitch, she got some other bitches ready to go",go,END,ASSONANCE,vowel,MED,Y
+I Want Her,62,The camera caught him in the trenches in the ghost,caught,63,"My bitch, she got some other bitches ready to go",got,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,62,The camera caught him in the trenches in the ghost,him,63,"My bitch, she got some other bitches ready to go",bitch,INNER,SLANT,cmu,MED,Y
+I Want Her,62,The camera caught him in the trenches in the ghost,him,63,"My bitch, she got some other bitches ready to go",bitches,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,62,The camera caught him in the trenches in the ghost,trenches,63,"My bitch, she got some other bitches ready to go",ready,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,62,The camera caught him in the trenches in the ghost,trenches,64,I'm spendin' hundreds at the Texaco,spendin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,62,The camera caught him in the trenches in the ghost,trenches,64,I'm spendin' hundreds at the Texaco,Texaco,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,63,"My bitch, she got some other bitches ready to go",bitch,63,"My bitch, she got some other bitches ready to go",bitches,INNER,SLANT,cmu,MED,Y
+I Want Her,63,"My bitch, she got some other bitches ready to go",some,63,"My bitch, she got some other bitches ready to go",other,INNER,SLANT,cmu,MED,Y
+I Want Her,63,"My bitch, she got some other bitches ready to go",other,64,I'm spendin' hundreds at the Texaco,hundreds,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,63,"My bitch, she got some other bitches ready to go",ready,64,I'm spendin' hundreds at the Texaco,spendin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,63,"My bitch, she got some other bitches ready to go",ready,64,I'm spendin' hundreds at the Texaco,Texaco,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,63,"My bitch, she got some other bitches ready to go",some,64,I'm spendin' hundreds at the Texaco,hundreds,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,63,"My bitch, she got some other bitches ready to go",got,65,"I'm a real nigga, I ball when I wanna",wanna,INNER,SLANT,cmu,MED,Y
+I Want Her,63,"My bitch, she got some other bitches ready to go",ready,65,"I'm a real nigga, I ball when I wanna",when,INNER,SLANT,cmu,MED,Y
+I Want Her,63,"My bitch, she got some other bitches ready to go",go,67,"Get money, stay focused",focused,END,ASSONANCE,vowel,MED,Y
+I Want Her,64,I'm spendin' hundreds at the Texaco,spendin,64,I'm spendin' hundreds at the Texaco,Texaco,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,64,I'm spendin' hundreds at the Texaco,spendin,65,"I'm a real nigga, I ball when I wanna",when,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,64,I'm spendin' hundreds at the Texaco,Texaco,65,"I'm a real nigga, I ball when I wanna",when,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,65,"I'm a real nigga, I ball when I wanna",wanna,66,"I keep it a hunna, my niggas, they rollin'",rollin,END,SLANT,cmu,MED,Y
+I Want Her,65,"I'm a real nigga, I ball when I wanna",nigga,66,"I keep it a hunna, my niggas, they rollin'",niggas,INNER,SLANT,spelling,LOW,Y
+I Want Her,65,"I'm a real nigga, I ball when I wanna",real,66,"I keep it a hunna, my niggas, they rollin'",keep,INNER,SLANT,cmu,MED,Y
+I Want Her,65,"I'm a real nigga, I ball when I wanna",when,67,"Get money, stay focused",Get,INNER,SLANT,cmu,MED,Y
+I Want Her,66,"I keep it a hunna, my niggas, they rollin'",hunna,67,"Get money, stay focused",money,INNER,SLANT,spelling,LOW,Y
+I Want Her,67,"Get money, stay focused",focused,68,"Die before I go broke, bitch",broke,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,67,"Get money, stay focused",focused,68,"Die before I go broke, bitch",go,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,67,"Get money, stay focused",focused,69,"Ayy, you know it, you know it",know,END,ASSONANCE,vowel,MED,Y
+I Want Her,67,"Get money, stay focused",focused,69,"Ayy, you know it, you know it",know,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,68,"Die before I go broke, bitch",go,68,"Die before I go broke, bitch",broke,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,68,"Die before I go broke, bitch",broke,69,"Ayy, you know it, you know it",know,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,68,"Die before I go broke, bitch",go,69,"Ayy, you know it, you know it",know,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,68,"Die before I go broke, bitch",before,70,Your lady and shit hit that shit when I'm bored,bored,INNER,SLANT,cmu,MED,Y
+I Want Her,68,"Die before I go broke, bitch",bitch,70,Your lady and shit hit that shit when I'm bored,hit,INNER,SLANT,cmu,MED,Y
+I Want Her,68,"Die before I go broke, bitch",bitch,70,Your lady and shit hit that shit when I'm bored,shit,INNER,SLANT,cmu,MED,Y
+I Want Her,69,"Ayy, you know it, you know it",know,69,"Ayy, you know it, you know it",know,INNER,REPEAT,spelling,HIGH,N
+I Want Her,69,"Ayy, you know it, you know it",know,73,"Tints in my Rover, I don't want no lotus",lotus,END,ASSONANCE,vowel,MED,Y
+I Want Her,70,Your lady and shit hit that shit when I'm bored,hit,70,Your lady and shit hit that shit when I'm bored,shit,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,70,Your lady and shit hit that shit when I'm bored,shit,70,Your lady and shit hit that shit when I'm bored,hit,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,70,Your lady and shit hit that shit when I'm bored,shit,70,Your lady and shit hit that shit when I'm bored,shit,INNER,REPEAT,spelling,HIGH,N
+I Want Her,70,Your lady and shit hit that shit when I'm bored,bored,72,Hit that ho until 4 in the mornin',mornin,END,ASSONANCE,vowel,MED,Y
+I Want Her,70,Your lady and shit hit that shit when I'm bored,hit,72,Hit that ho until 4 in the mornin',Hit,INNER,REPEAT,spelling,HIGH,N
+I Want Her,70,Your lady and shit hit that shit when I'm bored,hit,72,Hit that ho until 4 in the mornin',until,INNER,SLANT,cmu,MED,Y
+I Want Her,70,Your lady and shit hit that shit when I'm bored,shit,72,Hit that ho until 4 in the mornin',Hit,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,70,Your lady and shit hit that shit when I'm bored,shit,72,Hit that ho until 4 in the mornin',until,INNER,SLANT,cmu,MED,Y
+I Want Her,71,I'm goin' and goin' and goin',goin,71,I'm goin' and goin' and goin',goin,INNER,REPEAT,spelling,HIGH,N
+I Want Her,72,Hit that ho until 4 in the mornin',Hit,72,Hit that ho until 4 in the mornin',until,INNER,SLANT,cmu,MED,Y
+I Want Her,72,Hit that ho until 4 in the mornin',Hit,73,"Tints in my Rover, I don't want no lotus",Tints,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,72,Hit that ho until 4 in the mornin',ho,73,"Tints in my Rover, I don't want no lotus",don't,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,72,Hit that ho until 4 in the mornin',ho,73,"Tints in my Rover, I don't want no lotus",lotus,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,72,Hit that ho until 4 in the mornin',ho,73,"Tints in my Rover, I don't want no lotus",no,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,72,Hit that ho until 4 in the mornin',ho,73,"Tints in my Rover, I don't want no lotus",Rover,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,72,Hit that ho until 4 in the mornin',until,73,"Tints in my Rover, I don't want no lotus",Tints,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,72,Hit that ho until 4 in the mornin',ho,74,"Bankroll Mob, YSL, yeah we loaded",Bankroll,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,72,Hit that ho until 4 in the mornin',ho,74,"Bankroll Mob, YSL, yeah we loaded",loaded,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",don't,73,"Tints in my Rover, I don't want no lotus",lotus,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",don't,73,"Tints in my Rover, I don't want no lotus",no,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",no,73,"Tints in my Rover, I don't want no lotus",lotus,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",Rover,73,"Tints in my Rover, I don't want no lotus",don't,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",Rover,73,"Tints in my Rover, I don't want no lotus",lotus,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",Rover,73,"Tints in my Rover, I don't want no lotus",no,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",lotus,74,"Bankroll Mob, YSL, yeah we loaded",loaded,END,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",don't,74,"Bankroll Mob, YSL, yeah we loaded",Bankroll,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",don't,74,"Bankroll Mob, YSL, yeah we loaded",loaded,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",lotus,74,"Bankroll Mob, YSL, yeah we loaded",Bankroll,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",no,74,"Bankroll Mob, YSL, yeah we loaded",Bankroll,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",no,74,"Bankroll Mob, YSL, yeah we loaded",loaded,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",Rover,74,"Bankroll Mob, YSL, yeah we loaded",Bankroll,INNER,SLANT,cmu,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",Rover,74,"Bankroll Mob, YSL, yeah we loaded",loaded,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,73,"Tints in my Rover, I don't want no lotus",want,74,"Bankroll Mob, YSL, yeah we loaded",Mob,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,74,"Bankroll Mob, YSL, yeah we loaded",Bankroll,74,"Bankroll Mob, YSL, yeah we loaded",loaded,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,75,"Next time you see me, have so many regrets",many,75,"Next time you see me, have so many regrets",regrets,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,75,"Next time you see me, have so many regrets",Next,75,"Next time you see me, have so many regrets",many,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,75,"Next time you see me, have so many regrets",Next,75,"Next time you see me, have so many regrets",regrets,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,75,"Next time you see me, have so many regrets",regrets,76,Have so many regrets,regrets,END,REPEAT,spelling,HIGH,N
+I Want Her,75,"Next time you see me, have so many regrets",have,76,Have so many regrets,Have,INNER,REPEAT,spelling,HIGH,N
+I Want Her,75,"Next time you see me, have so many regrets",many,76,Have so many regrets,many,INNER,REPEAT,spelling,HIGH,N
+I Want Her,75,"Next time you see me, have so many regrets",many,76,Have so many regrets,regrets,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,75,"Next time you see me, have so many regrets",Next,76,Have so many regrets,many,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,75,"Next time you see me, have so many regrets",Next,76,Have so many regrets,regrets,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,75,"Next time you see me, have so many regrets",regrets,76,Have so many regrets,many,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,75,"Next time you see me, have so many regrets",have,77,"In the mouth of the dragon, you throw me in that bitch",dragon,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,75,"Next time you see me, have so many regrets",regrets,79,"Don't ask if we're totin', you know where it's at",where,END,ASSONANCE,vowel,MED,Y
+I Want Her,76,Have so many regrets,many,76,Have so many regrets,regrets,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,76,Have so many regrets,Have,77,"In the mouth of the dragon, you throw me in that bitch",dragon,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,76,Have so many regrets,Have,78,And I'ma rear out like I'm mad,mad,INNER,SLANT,cmu,MED,Y
+I Want Her,76,Have so many regrets,regrets,79,"Don't ask if we're totin', you know where it's at",where,END,ASSONANCE,vowel,MED,Y
+I Want Her,77,"In the mouth of the dragon, you throw me in that bitch",bitch,78,And I'ma rear out like I'm mad,I'ma,INNER,SLANT,spelling,LOW,Y
+I Want Her,77,"In the mouth of the dragon, you throw me in that bitch",bitch,78,And I'ma rear out like I'm mad,rear,INNER,SLANT,cmu,MED,Y
+I Want Her,77,"In the mouth of the dragon, you throw me in that bitch",dragon,78,And I'ma rear out like I'm mad,mad,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,77,"In the mouth of the dragon, you throw me in that bitch",dragon,79,"Don't ask if we're totin', you know where it's at",ask,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,77,"In the mouth of the dragon, you throw me in that bitch",throw,79,"Don't ask if we're totin', you know where it's at",Don't,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,77,"In the mouth of the dragon, you throw me in that bitch",throw,79,"Don't ask if we're totin', you know where it's at",know,INNER,PERFECT,cmu,HIGH,Y
+I Want Her,77,"In the mouth of the dragon, you throw me in that bitch",throw,79,"Don't ask if we're totin', you know where it's at",totin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,78,And I'ma rear out like I'm mad,I'ma,78,And I'ma rear out like I'm mad,rear,INNER,SLANT,spelling,LOW,Y
+I Want Her,78,And I'ma rear out like I'm mad,mad,79,"Don't ask if we're totin', you know where it's at",ask,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,79,"Don't ask if we're totin', you know where it's at",Don't,79,"Don't ask if we're totin', you know where it's at",know,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,79,"Don't ask if we're totin', you know where it's at",Don't,79,"Don't ask if we're totin', you know where it's at",totin,INNER,ASSONANCE,vowel,MED,Y
+I Want Her,79,"Don't ask if we're totin', you know where it's at",totin,79,"Don't ask if we're totin', you know where it's at",know,INNER,ASSONANCE,vowel,MED,Y

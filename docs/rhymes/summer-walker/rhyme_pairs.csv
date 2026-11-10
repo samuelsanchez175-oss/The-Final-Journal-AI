@@ -1,0 +1,378 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Get Yo Boy,1,"You need it, you watch now",need,2,"You need to watch out for your friend, he's been callin' me",he's,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,1,"You need it, you watch now",need,2,"You need to watch out for your friend, he's been callin' me",need,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,1,"You need it, you watch now",watch,2,"You need to watch out for your friend, he's been callin' me",watch,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,1,"You need it, you watch now",need,3,"Tryna get my lo', he tryna come and see",see,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,1,"You need it, you watch now",need,3,"Tryna get my lo', he tryna come and see",Tryna,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,2,"You need to watch out for your friend, he's been callin' me",need,2,"You need to watch out for your friend, he's been callin' me",he's,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,2,"You need to watch out for your friend, he's been callin' me",friend,3,"Tryna get my lo', he tryna come and see",get,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,2,"You need to watch out for your friend, he's been callin' me",he's,3,"Tryna get my lo', he tryna come and see",see,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,2,"You need to watch out for your friend, he's been callin' me",he's,3,"Tryna get my lo', he tryna come and see",Tryna,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,2,"You need to watch out for your friend, he's been callin' me",need,3,"Tryna get my lo', he tryna come and see",see,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,2,"You need to watch out for your friend, he's been callin' me",need,3,"Tryna get my lo', he tryna come and see",Tryna,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,2,"You need to watch out for your friend, he's been callin' me",friend,4,You've been mighty comfortable when it comes to me,when,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,3,"Tryna get my lo', he tryna come and see",Tryna,3,"Tryna get my lo', he tryna come and see",tryna,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,3,"Tryna get my lo', he tryna come and see",come,4,You've been mighty comfortable when it comes to me,comes,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,3,"Tryna get my lo', he tryna come and see",come,4,You've been mighty comfortable when it comes to me,comfortable,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,3,"Tryna get my lo', he tryna come and see",get,4,You've been mighty comfortable when it comes to me,when,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,3,"Tryna get my lo', he tryna come and see",see,5,"I hate to see it, I hate to see it 'cause he been",see,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,4,You've been mighty comfortable when it comes to me,comfortable,4,You've been mighty comfortable when it comes to me,comes,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,4,You've been mighty comfortable when it comes to me,when,6,Better get your boy,Better,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,4,You've been mighty comfortable when it comes to me,when,6,Better get your boy,get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,5,"I hate to see it, I hate to see it 'cause he been",hate,5,"I hate to see it, I hate to see it 'cause he been",hate,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,5,"I hate to see it, I hate to see it 'cause he been",see,5,"I hate to see it, I hate to see it 'cause he been",see,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,6,Better get your boy,Better,6,Better get your boy,get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,6,Better get your boy,Better,7,He been thinkin' 'bout doin' me better,better,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,6,Better get your boy,get,7,He been thinkin' 'bout doin' me better,better,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,6,Better get your boy,boy,9,"See, you better get your boy",boy,END,REPEAT,spelling,HIGH,N
+Get Yo Boy,7,He been thinkin' 'bout doin' me better,better,9,"See, you better get your boy",better,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,7,He been thinkin' 'bout doin' me better,better,9,"See, you better get your boy",get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,8,He been plotting on me,plotting,11,And you don't want that,want,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,9,"See, you better get your boy",better,9,"See, you better get your boy",get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,11,And you don't want that,don't,12,"And you don't want that, no (Boy, boy, boy, boy, boy)",don't,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,11,And you don't want that,don't,12,"And you don't want that, no (Boy, boy, boy, boy, boy)",no,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,11,And you don't want that,want,12,"And you don't want that, no (Boy, boy, boy, boy, boy)",want,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,11,And you don't want that,don't,13,Leaves me alone with his wife,alone,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,12,"And you don't want that, no (Boy, boy, boy, boy, boy)",don't,12,"And you don't want that, no (Boy, boy, boy, boy, boy)",no,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,12,"And you don't want that, no (Boy, boy, boy, boy, boy)",don't,13,Leaves me alone with his wife,alone,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,12,"And you don't want that, no (Boy, boy, boy, boy, boy)",no,13,Leaves me alone with his wife,alone,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,13,Leaves me alone with his wife,alone,15,Your homie tellin' you exactly what he'd do (Do),homie,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,13,Leaves me alone with his wife,Leaves,15,Your homie tellin' you exactly what he'd do (Do),he'd,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,14,I wish he didn't—,wish,14,I wish he didn't—,didn't,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,14,I wish he didn't—,didn't,17,"He'd never let me slip, tight grip on these thighs and hips",hips,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,14,I wish he didn't—,didn't,18,He'd love if y'all would do a switch,switch,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,15,Your homie tellin' you exactly what he'd do (Do),exactly,16,If he had just one chance to be walkin' in your shoes,chance,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,15,Your homie tellin' you exactly what he'd do (Do),exactly,16,If he had just one chance to be walkin' in your shoes,had,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,15,Your homie tellin' you exactly what he'd do (Do),what,16,If he had just one chance to be walkin' in your shoes,one,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,15,Your homie tellin' you exactly what he'd do (Do),he'd,17,"He'd never let me slip, tight grip on these thighs and hips",He'd,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,15,Your homie tellin' you exactly what he'd do (Do),he'd,17,"He'd never let me slip, tight grip on these thighs and hips",these,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,15,Your homie tellin' you exactly what he'd do (Do),tellin,17,"He'd never let me slip, tight grip on these thighs and hips",let,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,15,Your homie tellin' you exactly what he'd do (Do),tellin,17,"He'd never let me slip, tight grip on these thighs and hips",never,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,16,If he had just one chance to be walkin' in your shoes,had,16,If he had just one chance to be walkin' in your shoes,chance,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,16,If he had just one chance to be walkin' in your shoes,one,18,He'd love if y'all would do a switch,love,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,16,If he had just one chance to be walkin' in your shoes,walkin,18,He'd love if y'all would do a switch,y'all,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",grip,17,"He'd never let me slip, tight grip on these thighs and hips",hips,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",He'd,17,"He'd never let me slip, tight grip on these thighs and hips",these,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",never,17,"He'd never let me slip, tight grip on these thighs and hips",let,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",slip,17,"He'd never let me slip, tight grip on these thighs and hips",grip,INNER,PERFECT,cmu,HIGH,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",slip,17,"He'd never let me slip, tight grip on these thighs and hips",hips,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",tight,17,"He'd never let me slip, tight grip on these thighs and hips",thighs,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",hips,18,He'd love if y'all would do a switch,switch,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",grip,18,He'd love if y'all would do a switch,switch,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",He'd,18,He'd love if y'all would do a switch,He'd,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",slip,18,He'd love if y'all would do a switch,switch,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",these,18,He'd love if y'all would do a switch,He'd,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",grip,19,He been picking up where you been fallin' short,picking,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",hips,19,He been picking up where you been fallin' short,picking,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",let,19,He been picking up where you been fallin' short,where,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",never,19,He been picking up where you been fallin' short,where,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,17,"He'd never let me slip, tight grip on these thighs and hips",slip,19,He been picking up where you been fallin' short,picking,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,18,He'd love if y'all would do a switch,switch,19,He been picking up where you been fallin' short,picking,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,18,He'd love if y'all would do a switch,y'all,19,He been picking up where you been fallin' short,short,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,18,He'd love if y'all would do a switch,switch,20,Offering a little bit more and more,bit,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,18,He'd love if y'all would do a switch,switch,20,Offering a little bit more and more,little,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,18,He'd love if y'all would do a switch,y'all,20,Offering a little bit more and more,more,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,18,He'd love if y'all would do a switch,y'all,20,Offering a little bit more and more,Offering,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,19,He been picking up where you been fallin' short,short,20,Offering a little bit more and more,more,END,SLANT,cmu,MED,Y
+Get Yo Boy,19,He been picking up where you been fallin' short,picking,20,Offering a little bit more and more,bit,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,19,He been picking up where you been fallin' short,picking,20,Offering a little bit more and more,little,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,19,He been picking up where you been fallin' short,short,20,Offering a little bit more and more,more,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,19,He been picking up where you been fallin' short,short,20,Offering a little bit more and more,Offering,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,19,He been picking up where you been fallin' short,short,21,Tryna put his foot up in the door,door,END,SLANT,cmu,MED,Y
+Get Yo Boy,20,Offering a little bit more and more,little,20,Offering a little bit more and more,bit,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,20,Offering a little bit more and more,more,20,Offering a little bit more and more,more,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,20,Offering a little bit more and more,Offering,20,Offering a little bit more and more,more,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,20,Offering a little bit more and more,more,21,Tryna put his foot up in the door,door,END,PERFECT,cmu,HIGH,Y
+Get Yo Boy,20,Offering a little bit more and more,more,21,Tryna put his foot up in the door,door,INNER,PERFECT,cmu,HIGH,Y
+Get Yo Boy,20,Offering a little bit more and more,Offering,21,Tryna put his foot up in the door,door,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,20,Offering a little bit more and more,bit,22,"Askin' me, ""Why you let him treat you like that?""",Askin,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,20,Offering a little bit more and more,bit,22,"Askin' me, ""Why you let him treat you like that?""",him,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,20,Offering a little bit more and more,little,22,"Askin' me, ""Why you let him treat you like that?""",Askin,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,20,Offering a little bit more and more,little,22,"Askin' me, ""Why you let him treat you like that?""",him,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,21,Tryna put his foot up in the door,put,21,Tryna put his foot up in the door,foot,INNER,PERFECT,cmu,HIGH,Y
+Get Yo Boy,21,Tryna put his foot up in the door,Tryna,22,"Askin' me, ""Why you let him treat you like that?""",treat,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,21,Tryna put his foot up in the door,Tryna,23,"Do as you please, and you swear that you'll right back",please,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,22,"Askin' me, ""Why you let him treat you like that?""",Askin,22,"Askin' me, ""Why you let him treat you like that?""",him,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,22,"Askin' me, ""Why you let him treat you like that?""",Why,22,"Askin' me, ""Why you let him treat you like that?""",like,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,22,"Askin' me, ""Why you let him treat you like that?""",let,23,"Do as you please, and you swear that you'll right back",swear,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,22,"Askin' me, ""Why you let him treat you like that?""",like,23,"Do as you please, and you swear that you'll right back",right,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,22,"Askin' me, ""Why you let him treat you like that?""",treat,23,"Do as you please, and you swear that you'll right back",please,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,22,"Askin' me, ""Why you let him treat you like that?""",Why,23,"Do as you please, and you swear that you'll right back",right,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,22,"Askin' me, ""Why you let him treat you like that?""",let,24,Better get yo' boy,Better,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,22,"Askin' me, ""Why you let him treat you like that?""",let,24,Better get yo' boy,get,INNER,PERFECT,cmu,HIGH,Y
+Get Yo Boy,23,"Do as you please, and you swear that you'll right back",swear,24,Better get yo' boy,Better,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,23,"Do as you please, and you swear that you'll right back",swear,24,Better get yo' boy,get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,23,"Do as you please, and you swear that you'll right back",please,25,"See, you better get your—",See,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,23,"Do as you please, and you swear that you'll right back",swear,25,"See, you better get your—",better,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,23,"Do as you please, and you swear that you'll right back",swear,25,"See, you better get your—",get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,24,Better get yo' boy,Better,24,Better get yo' boy,get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,24,Better get yo' boy,Better,25,"See, you better get your—",better,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,24,Better get yo' boy,Better,25,"See, you better get your—",get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,24,Better get yo' boy,get,25,"See, you better get your—",better,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,24,Better get yo' boy,get,25,"See, you better get your—",get,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,25,"See, you better get your—",better,25,"See, you better get your—",get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,26,"You crossin' the line, you roguish",crossin,27,You talkin' 'bout fuckin' my homies,talkin,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,27,You talkin' 'bout fuckin' my homies,homies,28,"If you do that, then he ain't my brodie",brodie,END,ASSONANCE,vowel,LOW,N
+Get Yo Boy,27,You talkin' 'bout fuckin' my homies,homies,30,I'ma turn on your street in a stolie,stolie,END,ASSONANCE,vowel,LOW,N
+Get Yo Boy,27,You talkin' 'bout fuckin' my homies,homies,31,"While we at it, bitch, give me that Rollie",Rollie,END,ASSONANCE,vowel,LOW,N
+Get Yo Boy,28,"If you do that, then he ain't my brodie",brodie,29,"If I catch you, then you know that it's OV",know,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,28,"If you do that, then he ain't my brodie",brodie,30,I'ma turn on your street in a stolie,stolie,END,PERFECT,spelling,MED,Y
+Get Yo Boy,28,"If you do that, then he ain't my brodie",brodie,31,"While we at it, bitch, give me that Rollie",Rollie,END,SLANT,cmu,MED,Y
+Get Yo Boy,28,"If you do that, then he ain't my brodie",brodie,32,Might let your bestie sit on my goatee,goatee,END,MULTI,multi,HIGH,Y
+Get Yo Boy,29,"If I catch you, then you know that it's OV",know,31,"While we at it, bitch, give me that Rollie",Rollie,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,30,I'ma turn on your street in a stolie,stolie,31,"While we at it, bitch, give me that Rollie",Rollie,END,PERFECT,spelling,MED,Y
+Get Yo Boy,30,I'ma turn on your street in a stolie,I'ma,31,"While we at it, bitch, give me that Rollie",bitch,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,30,I'ma turn on your street in a stolie,I'ma,31,"While we at it, bitch, give me that Rollie",give,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,30,I'ma turn on your street in a stolie,I'ma,32,Might let your bestie sit on my goatee,sit,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,30,I'ma turn on your street in a stolie,stolie,32,Might let your bestie sit on my goatee,bestie,INNER,PERFECT,spelling,MED,Y
+Get Yo Boy,30,I'ma turn on your street in a stolie,street,32,Might let your bestie sit on my goatee,goatee,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,31,"While we at it, bitch, give me that Rollie",bitch,31,"While we at it, bitch, give me that Rollie",give,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,31,"While we at it, bitch, give me that Rollie",bitch,32,Might let your bestie sit on my goatee,sit,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,31,"While we at it, bitch, give me that Rollie",give,32,Might let your bestie sit on my goatee,sit,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,31,"While we at it, bitch, give me that Rollie",Rollie,32,Might let your bestie sit on my goatee,bestie,INNER,PERFECT,spelling,MED,Y
+Get Yo Boy,31,"While we at it, bitch, give me that Rollie",While,32,Might let your bestie sit on my goatee,Might,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,32,Might let your bestie sit on my goatee,let,32,Might let your bestie sit on my goatee,bestie,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,32,Might let your bestie sit on my goatee,bestie,33,And all of y'all friends wanna fuck me,friends,INNER,ASSONANCE,vowel,LOW,N
+Get Yo Boy,32,Might let your bestie sit on my goatee,let,33,And all of y'all friends wanna fuck me,friends,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,32,Might let your bestie sit on my goatee,Might,34,"You fried, go move to Kentucky",fried,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,33,And all of y'all friends wanna fuck me,all,33,And all of y'all friends wanna fuck me,y'all,INNER,PERFECT,cmu,HIGH,Y
+Get Yo Boy,33,And all of y'all friends wanna fuck me,fuck,34,"You fried, go move to Kentucky",Kentucky,END,SLANT,cmu,MED,Y
+Get Yo Boy,33,And all of y'all friends wanna fuck me,fuck,35,"Heart cold, can't let a bitch crush me",crush,END,SLANT,cmu,MED,Y
+Get Yo Boy,33,And all of y'all friends wanna fuck me,friends,35,"Heart cold, can't let a bitch crush me",let,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,33,And all of y'all friends wanna fuck me,wanna,35,"Heart cold, can't let a bitch crush me",Heart,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,33,And all of y'all friends wanna fuck me,fuck,36,"Almost hit Brittany, but she was slick musty",musty,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,33,And all of y'all friends wanna fuck me,fuck,37,"I ain't perfect, but I'm close, just trust me",trust,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,34,"You fried, go move to Kentucky",Kentucky,35,"Heart cold, can't let a bitch crush me",crush,END,SLANT,cmu,MED,Y
+Get Yo Boy,34,"You fried, go move to Kentucky",go,35,"Heart cold, can't let a bitch crush me",cold,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,34,"You fried, go move to Kentucky",Kentucky,36,"Almost hit Brittany, but she was slick musty",musty,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,34,"You fried, go move to Kentucky",go,36,"Almost hit Brittany, but she was slick musty",Almost,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,34,"You fried, go move to Kentucky",Kentucky,37,"I ain't perfect, but I'm close, just trust me",trust,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,34,"You fried, go move to Kentucky",Kentucky,38,"I'm a player, I ain't never been dusty",dusty,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,35,"Heart cold, can't let a bitch crush me",crush,36,"Almost hit Brittany, but she was slick musty",musty,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,35,"Heart cold, can't let a bitch crush me",bitch,36,"Almost hit Brittany, but she was slick musty",Brittany,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,35,"Heart cold, can't let a bitch crush me",bitch,36,"Almost hit Brittany, but she was slick musty",hit,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,35,"Heart cold, can't let a bitch crush me",bitch,36,"Almost hit Brittany, but she was slick musty",slick,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,35,"Heart cold, can't let a bitch crush me",cold,36,"Almost hit Brittany, but she was slick musty",Almost,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,35,"Heart cold, can't let a bitch crush me",crush,37,"I ain't perfect, but I'm close, just trust me",trust,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,35,"Heart cold, can't let a bitch crush me",cold,37,"I ain't perfect, but I'm close, just trust me",close,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,35,"Heart cold, can't let a bitch crush me",let,37,"I ain't perfect, but I'm close, just trust me",perfect,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,35,"Heart cold, can't let a bitch crush me",crush,38,"I'm a player, I ain't never been dusty",dusty,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,36,"Almost hit Brittany, but she was slick musty",Brittany,36,"Almost hit Brittany, but she was slick musty",slick,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,36,"Almost hit Brittany, but she was slick musty",hit,36,"Almost hit Brittany, but she was slick musty",Brittany,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,36,"Almost hit Brittany, but she was slick musty",hit,36,"Almost hit Brittany, but she was slick musty",slick,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,36,"Almost hit Brittany, but she was slick musty",musty,37,"I ain't perfect, but I'm close, just trust me",trust,END,SLANT,cmu,MED,Y
+Get Yo Boy,36,"Almost hit Brittany, but she was slick musty",Almost,37,"I ain't perfect, but I'm close, just trust me",close,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,36,"Almost hit Brittany, but she was slick musty",musty,38,"I'm a player, I ain't never been dusty",dusty,END,MULTI,multi,HIGH,Y
+Get Yo Boy,36,"Almost hit Brittany, but she was slick musty",musty,40,"You fuck around, get sick if you touch me",touch,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,37,"I ain't perfect, but I'm close, just trust me",trust,38,"I'm a player, I ain't never been dusty",dusty,END,SLANT,cmu,MED,Y
+Get Yo Boy,37,"I ain't perfect, but I'm close, just trust me",ain't,38,"I'm a player, I ain't never been dusty",ain't,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,37,"I ain't perfect, but I'm close, just trust me",ain't,38,"I'm a player, I ain't never been dusty",player,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,37,"I ain't perfect, but I'm close, just trust me",perfect,38,"I'm a player, I ain't never been dusty",never,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,37,"I ain't perfect, but I'm close, just trust me",close,39,"I got motion on motion, it's grossin' on grossin'",grossin,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,37,"I ain't perfect, but I'm close, just trust me",close,39,"I got motion on motion, it's grossin' on grossin'",motion,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,37,"I ain't perfect, but I'm close, just trust me",trust,40,"You fuck around, get sick if you touch me",touch,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,38,"I'm a player, I ain't never been dusty",player,38,"I'm a player, I ain't never been dusty",ain't,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,38,"I'm a player, I ain't never been dusty",dusty,40,"You fuck around, get sick if you touch me",touch,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,38,"I'm a player, I ain't never been dusty",dusty,40,"You fuck around, get sick if you touch me",fuck,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,38,"I'm a player, I ain't never been dusty",never,40,"You fuck around, get sick if you touch me",get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,39,"I got motion on motion, it's grossin' on grossin'",grossin,39,"I got motion on motion, it's grossin' on grossin'",grossin,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,39,"I got motion on motion, it's grossin' on grossin'",motion,39,"I got motion on motion, it's grossin' on grossin'",grossin,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,39,"I got motion on motion, it's grossin' on grossin'",motion,39,"I got motion on motion, it's grossin' on grossin'",motion,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,40,"You fuck around, get sick if you touch me",fuck,40,"You fuck around, get sick if you touch me",touch,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,40,"You fuck around, get sick if you touch me",get,41,Kierra keep tryna get in,get,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,40,"You fuck around, get sick if you touch me",sick,41,Kierra keep tryna get in,Kierra,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,40,"You fuck around, get sick if you touch me",get,42,And Jessica flirtin' again,again,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,40,"You fuck around, get sick if you touch me",get,42,And Jessica flirtin' again,Jessica,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,41,Kierra keep tryna get in,keep,41,Kierra keep tryna get in,tryna,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,41,Kierra keep tryna get in,get,42,And Jessica flirtin' again,again,END,SLANT,cmu,MED,Y
+Get Yo Boy,41,Kierra keep tryna get in,get,42,And Jessica flirtin' again,Jessica,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,41,Kierra keep tryna get in,get,43,You already know about Tia,already,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,41,Kierra keep tryna get in,keep,43,You already know about Tia,Tia,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,41,Kierra keep tryna get in,get,44,"Keep playin', I'll fuck her again",again,END,SLANT,cmu,MED,Y
+Get Yo Boy,41,Kierra keep tryna get in,get,45,You fuck any one of my friends,friends,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,42,And Jessica flirtin' again,Jessica,42,And Jessica flirtin' again,again,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,42,And Jessica flirtin' again,again,43,You already know about Tia,already,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,42,And Jessica flirtin' again,Jessica,43,You already know about Tia,already,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,42,And Jessica flirtin' again,again,44,"Keep playin', I'll fuck her again",again,END,REPEAT,spelling,HIGH,N
+Get Yo Boy,42,And Jessica flirtin' again,Jessica,44,"Keep playin', I'll fuck her again",again,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,42,And Jessica flirtin' again,again,45,You fuck any one of my friends,friends,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,43,You already know about Tia,already,44,"Keep playin', I'll fuck her again",again,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,43,You already know about Tia,Tia,44,"Keep playin', I'll fuck her again",Keep,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,43,You already know about Tia,already,45,You fuck any one of my friends,any,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,43,You already know about Tia,already,45,You fuck any one of my friends,friends,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,44,"Keep playin', I'll fuck her again",again,45,You fuck any one of my friends,friends,END,ASSONANCE,vowel,MED,Y
+Get Yo Boy,44,"Keep playin', I'll fuck her again",again,45,You fuck any one of my friends,any,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,44,"Keep playin', I'll fuck her again",fuck,45,You fuck any one of my friends,fuck,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,44,"Keep playin', I'll fuck her again",fuck,45,You fuck any one of my friends,one,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,44,"Keep playin', I'll fuck her again",again,46,Your stylist gon' end up with twins,end,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,44,"Keep playin', I'll fuck her again",I'll,46,Your stylist gon' end up with twins,stylist,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,44,"Keep playin', I'll fuck her again",again,47,That bitch do your make up gon' get a new Benz,Benz,END,SLANT,cmu,MED,Y
+Get Yo Boy,45,You fuck any one of my friends,any,45,You fuck any one of my friends,friends,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,45,You fuck any one of my friends,fuck,45,You fuck any one of my friends,one,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,45,You fuck any one of my friends,any,46,Your stylist gon' end up with twins,end,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,45,You fuck any one of my friends,friends,46,Your stylist gon' end up with twins,end,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,45,You fuck any one of my friends,friends,47,That bitch do your make up gon' get a new Benz,Benz,END,SLANT,cmu,MED,Y
+Get Yo Boy,45,You fuck any one of my friends,any,47,That bitch do your make up gon' get a new Benz,Benz,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,45,You fuck any one of my friends,any,47,That bitch do your make up gon' get a new Benz,get,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,45,You fuck any one of my friends,friends,47,That bitch do your make up gon' get a new Benz,get,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,46,Your stylist gon' end up with twins,end,47,That bitch do your make up gon' get a new Benz,Benz,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,46,Your stylist gon' end up with twins,end,47,That bitch do your make up gon' get a new Benz,get,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,46,Your stylist gon' end up with twins,gon,47,That bitch do your make up gon' get a new Benz,gon,INNER,REPEAT,spelling,HIGH,N
+Get Yo Boy,46,Your stylist gon' end up with twins,twins,47,That bitch do your make up gon' get a new Benz,bitch,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,46,Your stylist gon' end up with twins,twins,48,"And that house that you just bought, I'ma pull up and spin (But he been)",spin,END,SLANT,cmu,MED,Y
+Get Yo Boy,47,That bitch do your make up gon' get a new Benz,get,47,That bitch do your make up gon' get a new Benz,Benz,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,47,That bitch do your make up gon' get a new Benz,bitch,48,"And that house that you just bought, I'ma pull up and spin (But he been)",I'ma,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,47,That bitch do your make up gon' get a new Benz,bitch,48,"And that house that you just bought, I'ma pull up and spin (But he been)",spin,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,47,That bitch do your make up gon' get a new Benz,Benz,49,"Oh, no, said, ""You don't want that""",said,INNER,ASSONANCE,vowel,MED,Y
+Get Yo Boy,47,That bitch do your make up gon' get a new Benz,get,49,"Oh, no, said, ""You don't want that""",said,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,47,That bitch do your make up gon' get a new Benz,gon,49,"Oh, no, said, ""You don't want that""",don't,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,48,"And that house that you just bought, I'ma pull up and spin (But he been)",I'ma,48,"And that house that you just bought, I'ma pull up and spin (But he been)",spin,INNER,SLANT,spelling,LOW,Y
+Get Yo Boy,48,"And that house that you just bought, I'ma pull up and spin (But he been)",bought,49,"Oh, no, said, ""You don't want that""",want,INNER,SLANT,cmu,MED,Y
+Get Yo Boy,49,"Oh, no, said, ""You don't want that""",no,49,"Oh, no, said, ""You don't want that""",don't,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),1,I hate that we didn't make it to forever,hate,1,I hate that we didn't make it to forever,make,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),1,I hate that we didn't make it to forever,forever,2,Probably ain't gettin' back together,together,END,SLANT,cmu,MED,Y
+Good Good (Mixed),1,I hate that we didn't make it to forever,forever,2,Probably ain't gettin' back together,gettin,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),1,I hate that we didn't make it to forever,hate,2,Probably ain't gettin' back together,ain't,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),1,I hate that we didn't make it to forever,make,2,Probably ain't gettin' back together,ain't,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),1,I hate that we didn't make it to forever,forever,3,But that don't mean that I can't wish you better,better,END,SLANT,cmu,MED,Y
+Good Good (Mixed),1,I hate that we didn't make it to forever,didn't,3,But that don't mean that I can't wish you better,wish,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),2,Probably ain't gettin' back together,gettin,2,Probably ain't gettin' back together,together,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),2,Probably ain't gettin' back together,together,3,But that don't mean that I can't wish you better,better,END,SLANT,cmu,MED,Y
+Good Good (Mixed),2,Probably ain't gettin' back together,back,3,But that don't mean that I can't wish you better,can't,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),2,Probably ain't gettin' back together,gettin,3,But that don't mean that I can't wish you better,better,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),2,Probably ain't gettin' back together,Probably,3,But that don't mean that I can't wish you better,mean,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),2,Probably ain't gettin' back together,ain't,4,"We ain't good good, but we still good",ain't,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),3,But that don't mean that I can't wish you better,wish,4,"We ain't good good, but we still good",still,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),3,But that don't mean that I can't wish you better,can't,5,I realize that I can't be your lover,can't,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),4,"We ain't good good, but we still good",good,4,"We ain't good good, but we still good",good,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),5,I realize that I can't be your lover,lover,6,Let's just keep it honest with each other,other,END,SLANT,cmu,MED,Y
+Good Good (Mixed),5,I realize that I can't be your lover,lover,7,I'll be happy for you when you find another,another,END,SLANT,cmu,MED,Y
+Good Good (Mixed),5,I realize that I can't be your lover,can't,7,I'll be happy for you when you find another,happy,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),5,I realize that I can't be your lover,realize,7,I'll be happy for you when you find another,find,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),5,I realize that I can't be your lover,realize,7,I'll be happy for you when you find another,I'll,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),6,Let's just keep it honest with each other,keep,6,Let's just keep it honest with each other,each,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),6,Let's just keep it honest with each other,other,7,I'll be happy for you when you find another,another,END,MULTI,multi,HIGH,Y
+Good Good (Mixed),6,Let's just keep it honest with each other,Let's,7,I'll be happy for you when you find another,when,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),7,I'll be happy for you when you find another,I'll,7,I'll be happy for you when you find another,find,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),7,I'll be happy for you when you find another,find,8,Who knew it'd be like this?,like,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),7,I'll be happy for you when you find another,I'll,8,Who knew it'd be like this?,like,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),7,I'll be happy for you when you find another,when,9,Usually my exes turn to enemies,enemies,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),7,I'll be happy for you when you find another,when,9,Usually my exes turn to enemies,exes,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),8,Who knew it'd be like this?,Who,8,Who knew it'd be like this?,knew,INNER,PERFECT,cmu,HIGH,Y
+Good Good (Mixed),8,Who knew it'd be like this?,knew,9,Usually my exes turn to enemies,Usually,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),8,Who knew it'd be like this?,Who,9,Usually my exes turn to enemies,Usually,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),8,Who knew it'd be like this?,it'd,10,But this is different,different,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),9,Usually my exes turn to enemies,exes,9,Usually my exes turn to enemies,enemies,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),9,Usually my exes turn to enemies,enemies,13,Ain't no way we gon' forget that,forget,END,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),11,'Cause we done got closer now that you ain't with me (Oh),done,12,All that love that wе had,love,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),11,'Cause we done got closer now that you ain't with me (Oh),done,12,All that love that wе had,w,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),11,'Cause we done got closer now that you ain't with me (Oh),ain't,13,Ain't no way we gon' forget that,Ain't,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),11,'Cause we done got closer now that you ain't with me (Oh),ain't,13,Ain't no way we gon' forget that,way,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),11,'Cause we done got closer now that you ain't with me (Oh),closer,13,Ain't no way we gon' forget that,gon,INNER,SLANT,spelling,LOW,Y
+Good Good (Mixed),11,'Cause we done got closer now that you ain't with me (Oh),closer,13,Ain't no way we gon' forget that,no,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),12,All that love that wе had,love,12,All that love that wе had,w,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),12,All that love that wе had,had,14,And your family love mе like I'm family,family,END,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),12,All that love that wе had,had,14,And your family love mе like I'm family,family,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),12,All that love that wе had,love,14,And your family love mе like I'm family,love,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),12,All that love that wе had,w,14,And your family love mе like I'm family,love,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),12,All that love that wе had,had,15,You know where you stand with me,stand,END,SLANT,cmu,MED,Y
+Good Good (Mixed),13,Ain't no way we gon' forget that,Ain't,13,Ain't no way we gon' forget that,way,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),13,Ain't no way we gon' forget that,forget,14,And your family love mе like I'm family,m,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),13,Ain't no way we gon' forget that,forget,15,You know where you stand with me,where,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),13,Ain't no way we gon' forget that,no,15,You know where you stand with me,know,INNER,PERFECT,cmu,HIGH,Y
+Good Good (Mixed),14,And your family love mе like I'm family,family,14,And your family love mе like I'm family,family,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),14,And your family love mе like I'm family,family,15,You know where you stand with me,stand,END,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),14,And your family love mе like I'm family,family,15,You know where you stand with me,stand,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),14,And your family love mе like I'm family,m,15,You know where you stand with me,where,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),14,And your family love mе like I'm family,family,16,"So when they ask, tell 'em",ask,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),14,And your family love mе like I'm family,m,16,"So when they ask, tell 'em",tell,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),14,And your family love mе like I'm family,m,16,"So when they ask, tell 'em",when,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),15,You know where you stand with me,stand,16,"So when they ask, tell 'em",ask,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),15,You know where you stand with me,where,16,"So when they ask, tell 'em",tell,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),15,You know where you stand with me,where,16,"So when they ask, tell 'em",when,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),16,"So when they ask, tell 'em",when,16,"So when they ask, tell 'em",tell,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),16,"So when they ask, tell 'em",ask,18,Can't say we didn't try,Can't,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),17,"Right one, right place, wrong time",Right,17,"Right one, right place, wrong time",right,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),17,"Right one, right place, wrong time",Right,17,"Right one, right place, wrong time",time,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),17,"Right one, right place, wrong time",time,18,Can't say we didn't try,try,END,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),17,"Right one, right place, wrong time",place,18,Can't say we didn't try,say,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),17,"Right one, right place, wrong time",Right,18,Can't say we didn't try,try,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),17,"Right one, right place, wrong time",one,19,But you always been a real one,one,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),17,"Right one, right place, wrong time",place,19,But you always been a real one,always,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),18,Can't say we didn't try,say,19,But you always been a real one,always,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),18,Can't say we didn't try,say,20,Even though we ain't together,ain't,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),19,But you always been a real one,always,20,Even though we ain't together,ain't,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),19,But you always been a real one,real,20,Even though we ain't together,Even,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),19,But you always been a real one,one,21,"It was real love, and baby, it's still love",love,END,SLANT,cmu,MED,Y
+Good Good (Mixed),19,But you always been a real one,always,21,"It was real love, and baby, it's still love",baby,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),19,But you always been a real one,one,21,"It was real love, and baby, it's still love",love,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),19,But you always been a real one,real,21,"It was real love, and baby, it's still love",real,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),20,Even though we ain't together,ain't,21,"It was real love, and baby, it's still love",baby,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),20,Even though we ain't together,Even,21,"It was real love, and baby, it's still love",real,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),20,Even though we ain't together,ain't,22,All them plans you made for me to be your missus,made,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),20,Even though we ain't together,together,23,All the stacks that you done spent on me at Lenox,Lenox,END,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),21,"It was real love, and baby, it's still love",love,21,"It was real love, and baby, it's still love",love,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),21,"It was real love, and baby, it's still love",baby,22,All them plans you made for me to be your missus,made,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),21,"It was real love, and baby, it's still love",still,22,All them plans you made for me to be your missus,missus,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),21,"It was real love, and baby, it's still love",love,23,All the stacks that you done spent on me at Lenox,done,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),22,All them plans you made for me to be your missus,All,23,All the stacks that you done spent on me at Lenox,All,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),22,All them plans you made for me to be your missus,plans,23,All the stacks that you done spent on me at Lenox,stacks,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),22,All them plans you made for me to be your missus,plans,24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",happier,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),23,All the stacks that you done spent on me at Lenox,spent,23,All the stacks that you done spent on me at Lenox,Lenox,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),23,All the stacks that you done spent on me at Lenox,stacks,24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",happier,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",apart,24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",locked,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",don't,24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",go,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",forgotten,24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",apart,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",forgotten,24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",locked,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",locked,25,"No smoke with me, I promise, boy, I don't do drama",drama,END,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",apart,25,"No smoke with me, I promise, boy, I don't do drama",drama,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",apart,25,"No smoke with me, I promise, boy, I don't do drama",promise,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",don't,25,"No smoke with me, I promise, boy, I don't do drama",don't,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",don't,25,"No smoke with me, I promise, boy, I don't do drama",No,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",don't,25,"No smoke with me, I promise, boy, I don't do drama",smoke,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",forgotten,25,"No smoke with me, I promise, boy, I don't do drama",drama,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",forgotten,25,"No smoke with me, I promise, boy, I don't do drama",promise,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",go,25,"No smoke with me, I promise, boy, I don't do drama",don't,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",go,25,"No smoke with me, I promise, boy, I don't do drama",No,INNER,PERFECT,cmu,HIGH,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",go,25,"No smoke with me, I promise, boy, I don't do drama",smoke,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",locked,25,"No smoke with me, I promise, boy, I don't do drama",promise,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",don't,26,"It didn't work, but I hope you find another",hope,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),24,"It don't go forgotten, but we're happier apart than locked in (Locked in)",go,26,"It didn't work, but I hope you find another",hope,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),25,"No smoke with me, I promise, boy, I don't do drama",No,25,"No smoke with me, I promise, boy, I don't do drama",don't,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),25,"No smoke with me, I promise, boy, I don't do drama",No,25,"No smoke with me, I promise, boy, I don't do drama",smoke,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),25,"No smoke with me, I promise, boy, I don't do drama",promise,25,"No smoke with me, I promise, boy, I don't do drama",drama,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),25,"No smoke with me, I promise, boy, I don't do drama",smoke,25,"No smoke with me, I promise, boy, I don't do drama",don't,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),25,"No smoke with me, I promise, boy, I don't do drama",don't,26,"It didn't work, but I hope you find another",hope,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),25,"No smoke with me, I promise, boy, I don't do drama",No,26,"It didn't work, but I hope you find another",hope,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),25,"No smoke with me, I promise, boy, I don't do drama",smoke,26,"It didn't work, but I hope you find another",hope,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),26,"It didn't work, but I hope you find another",didn't,27,"I wish you peace, I wish you good sex, and good sleep",wish,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),26,"It didn't work, but I hope you find another",find,28,Find the girl of your dreams,Find,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),26,"It didn't work, but I hope you find another",work,28,Find the girl of your dreams,girl,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),27,"I wish you peace, I wish you good sex, and good sleep",good,27,"I wish you peace, I wish you good sex, and good sleep",good,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),27,"I wish you peace, I wish you good sex, and good sleep",peace,27,"I wish you peace, I wish you good sex, and good sleep",sleep,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),27,"I wish you peace, I wish you good sex, and good sleep",wish,27,"I wish you peace, I wish you good sex, and good sleep",wish,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),27,"I wish you peace, I wish you good sex, and good sleep",sleep,28,Find the girl of your dreams,dreams,END,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),27,"I wish you peace, I wish you good sex, and good sleep",peace,28,Find the girl of your dreams,dreams,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),27,"I wish you peace, I wish you good sex, and good sleep",peace,29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),sleep,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),27,"I wish you peace, I wish you good sex, and good sleep",sex,29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),meant,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),27,"I wish you peace, I wish you good sex, and good sleep",sex,29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),well,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),27,"I wish you peace, I wish you good sex, and good sleep",sleep,29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),sleep,INNER,REPEAT,spelling,HIGH,N
+Good Good (Mixed),28,Find the girl of your dreams,dreams,29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),sleep,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),28,Find the girl of your dreams,Find,29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),night,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),well,29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),meant,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),meant,30,All good things come to an end,end,END,SLANT,cmu,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),well,30,All good things come to an end,end,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),meant,31,So let's just learn the lessons and find lovin' again,again,END,SLANT,cmu,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),knowin,31,So let's just learn the lessons and find lovin' again,lovin,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),meant,31,So let's just learn the lessons and find lovin' again,lessons,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),meant,31,So let's just learn the lessons and find lovin' again,let's,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),night,31,So let's just learn the lessons and find lovin' again,find,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),well,31,So let's just learn the lessons and find lovin' again,again,INNER,SLANT,cmu,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),well,31,So let's just learn the lessons and find lovin' again,lessons,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),29,'Cause I sleep well at night knowin' this ain't meant to be (Oh),well,31,So let's just learn the lessons and find lovin' again,let's,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),30,All good things come to an end,end,31,So let's just learn the lessons and find lovin' again,again,END,SLANT,cmu,MED,Y
+Good Good (Mixed),30,All good things come to an end,end,31,So let's just learn the lessons and find lovin' again,lessons,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),30,All good things come to an end,end,31,So let's just learn the lessons and find lovin' again,let's,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),31,So let's just learn the lessons and find lovin' again,lessons,31,So let's just learn the lessons and find lovin' again,again,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),31,So let's just learn the lessons and find lovin' again,let's,31,So let's just learn the lessons and find lovin' again,again,INNER,ASSONANCE,vowel,MED,Y
+Good Good (Mixed),31,So let's just learn the lessons and find lovin' again,let's,31,So let's just learn the lessons and find lovin' again,lessons,INNER,ASSONANCE,vowel,MED,Y

@@ -1,0 +1,549 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Stomp,1,"Uh, when that nigga move, boy, you better stomp, uh (Stomp)",when,1,"Uh, when that nigga move, boy, you better stomp, uh (Stomp)",better,INNER,SLANT,cmu,MED,Y
+Stomp,1,"Uh, when that nigga move, boy, you better stomp, uh (Stomp)",better,2,"Jump when I say, ""Jump"" (Jump)",when,INNER,SLANT,cmu,MED,Y
+Stomp,1,"Uh, when that nigga move, boy, you better stomp, uh (Stomp)",when,2,"Jump when I say, ""Jump"" (Jump)",when,INNER,REPEAT,spelling,HIGH,N
+Stomp,1,"Uh, when that nigga move, boy, you better stomp, uh (Stomp)",better,3,We stomp us a nigga and left out the front,left,INNER,SLANT,cmu,MED,Y
+Stomp,1,"Uh, when that nigga move, boy, you better stomp, uh (Stomp)",nigga,3,We stomp us a nigga and left out the front,nigga,INNER,REPEAT,spelling,HIGH,N
+Stomp,1,"Uh, when that nigga move, boy, you better stomp, uh (Stomp)",stomp,3,We stomp us a nigga and left out the front,stomp,INNER,REPEAT,spelling,HIGH,N
+Stomp,1,"Uh, when that nigga move, boy, you better stomp, uh (Stomp)",when,3,We stomp us a nigga and left out the front,left,INNER,ASSONANCE,vowel,MED,Y
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",Jump,2,"Jump when I say, ""Jump"" (Jump)",Jump,INNER,REPEAT,spelling,HIGH,N
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",Jump,3,We stomp us a nigga and left out the front,front,END,SLANT,cmu,MED,Y
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",Jump,3,We stomp us a nigga and left out the front,front,INNER,SLANT,cmu,MED,Y
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",when,3,We stomp us a nigga and left out the front,left,INNER,ASSONANCE,vowel,MED,Y
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",Jump,4,"My niggas gon' step whenever I stomp, jump",jump,END,REPEAT,spelling,HIGH,N
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",Jump,4,"My niggas gon' step whenever I stomp, jump",jump,INNER,REPEAT,spelling,HIGH,N
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",when,4,"My niggas gon' step whenever I stomp, jump",step,INNER,SLANT,cmu,MED,Y
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",when,4,"My niggas gon' step whenever I stomp, jump",whenever,INNER,SLANT,cmu,MED,Y
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",Jump,5,We stuff shit in a blunt,blunt,END,SLANT,cmu,MED,Y
+Stomp,2,"Jump when I say, ""Jump"" (Jump)",Jump,6,We kickin' his ass like we finna punt,punt,END,SLANT,cmu,MED,Y
+Stomp,3,We stomp us a nigga and left out the front,front,4,"My niggas gon' step whenever I stomp, jump",jump,END,SLANT,cmu,MED,Y
+Stomp,3,We stomp us a nigga and left out the front,left,4,"My niggas gon' step whenever I stomp, jump",step,INNER,ASSONANCE,vowel,MED,Y
+Stomp,3,We stomp us a nigga and left out the front,left,4,"My niggas gon' step whenever I stomp, jump",whenever,INNER,ASSONANCE,vowel,MED,Y
+Stomp,3,We stomp us a nigga and left out the front,nigga,4,"My niggas gon' step whenever I stomp, jump",niggas,INNER,SLANT,spelling,LOW,Y
+Stomp,3,We stomp us a nigga and left out the front,stomp,4,"My niggas gon' step whenever I stomp, jump",stomp,INNER,REPEAT,spelling,HIGH,N
+Stomp,3,We stomp us a nigga and left out the front,front,5,We stuff shit in a blunt,blunt,END,PERFECT,cmu,HIGH,Y
+Stomp,3,We stomp us a nigga and left out the front,front,5,We stuff shit in a blunt,stuff,INNER,ASSONANCE,vowel,MED,Y
+Stomp,3,We stomp us a nigga and left out the front,nigga,5,We stuff shit in a blunt,shit,INNER,SLANT,spelling,LOW,Y
+Stomp,3,We stomp us a nigga and left out the front,front,6,We kickin' his ass like we finna punt,punt,END,PERFECT,cmu,HIGH,Y
+Stomp,3,We stomp us a nigga and left out the front,front,7,My niggas get wild and they get crunk,crunk,END,SLANT,cmu,MED,Y
+Stomp,4,"My niggas gon' step whenever I stomp, jump",step,4,"My niggas gon' step whenever I stomp, jump",whenever,INNER,SLANT,cmu,MED,Y
+Stomp,4,"My niggas gon' step whenever I stomp, jump",jump,5,We stuff shit in a blunt,blunt,END,SLANT,cmu,MED,Y
+Stomp,4,"My niggas gon' step whenever I stomp, jump",jump,5,We stuff shit in a blunt,stuff,INNER,ASSONANCE,vowel,MED,Y
+Stomp,4,"My niggas gon' step whenever I stomp, jump",jump,6,We kickin' his ass like we finna punt,punt,END,SLANT,cmu,MED,Y
+Stomp,4,"My niggas gon' step whenever I stomp, jump",niggas,6,We kickin' his ass like we finna punt,ass,INNER,PERFECT,spelling,MED,Y
+Stomp,4,"My niggas gon' step whenever I stomp, jump",niggas,6,We kickin' his ass like we finna punt,finna,INNER,ASSONANCE,vowel,LOW,N
+Stomp,4,"My niggas gon' step whenever I stomp, jump",jump,7,My niggas get wild and they get crunk,crunk,END,SLANT,cmu,MED,Y
+Stomp,5,We stuff shit in a blunt,stuff,5,We stuff shit in a blunt,blunt,INNER,ASSONANCE,vowel,MED,Y
+Stomp,5,We stuff shit in a blunt,blunt,6,We kickin' his ass like we finna punt,punt,END,PERFECT,cmu,HIGH,Y
+Stomp,5,We stuff shit in a blunt,shit,6,We kickin' his ass like we finna punt,kickin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,5,We stuff shit in a blunt,stuff,6,We kickin' his ass like we finna punt,punt,INNER,ASSONANCE,vowel,MED,Y
+Stomp,5,We stuff shit in a blunt,blunt,7,My niggas get wild and they get crunk,crunk,END,SLANT,cmu,MED,Y
+Stomp,5,We stuff shit in a blunt,stuff,7,My niggas get wild and they get crunk,crunk,INNER,ASSONANCE,vowel,MED,Y
+Stomp,5,We stuff shit in a blunt,blunt,9,"Nigga, I feel like Trump, I get kicked out wherever I come",come,END,ASSONANCE,vowel,MED,Y
+Stomp,6,We kickin' his ass like we finna punt,punt,7,My niggas get wild and they get crunk,crunk,END,SLANT,cmu,MED,Y
+Stomp,6,We kickin' his ass like we finna punt,finna,7,My niggas get wild and they get crunk,niggas,INNER,ASSONANCE,vowel,LOW,N
+Stomp,6,We kickin' his ass like we finna punt,like,7,My niggas get wild and they get crunk,wild,INNER,ASSONANCE,vowel,MED,Y
+Stomp,6,We kickin' his ass like we finna punt,punt,8,"March on the opps, one bout, one gun, stomp",gun,INNER,SLANT,cmu,MED,Y
+Stomp,6,We kickin' his ass like we finna punt,punt,8,"March on the opps, one bout, one gun, stomp",one,INNER,SLANT,cmu,MED,Y
+Stomp,6,We kickin' his ass like we finna punt,punt,9,"Nigga, I feel like Trump, I get kicked out wherever I come",come,END,ASSONANCE,vowel,MED,Y
+Stomp,6,We kickin' his ass like we finna punt,punt,10,"I come to the hood, they call me the one",one,END,SLANT,cmu,MED,Y
+Stomp,7,My niggas get wild and they get crunk,get,7,My niggas get wild and they get crunk,get,INNER,REPEAT,spelling,HIGH,N
+Stomp,7,My niggas get wild and they get crunk,crunk,8,"March on the opps, one bout, one gun, stomp",gun,INNER,ASSONANCE,vowel,MED,Y
+Stomp,7,My niggas get wild and they get crunk,crunk,8,"March on the opps, one bout, one gun, stomp",one,INNER,ASSONANCE,vowel,MED,Y
+Stomp,7,My niggas get wild and they get crunk,crunk,9,"Nigga, I feel like Trump, I get kicked out wherever I come",come,END,ASSONANCE,vowel,MED,Y
+Stomp,7,My niggas get wild and they get crunk,crunk,9,"Nigga, I feel like Trump, I get kicked out wherever I come",Trump,INNER,SLANT,cmu,MED,Y
+Stomp,7,My niggas get wild and they get crunk,get,9,"Nigga, I feel like Trump, I get kicked out wherever I come",get,INNER,REPEAT,spelling,HIGH,N
+Stomp,7,My niggas get wild and they get crunk,get,9,"Nigga, I feel like Trump, I get kicked out wherever I come",wherever,INNER,SLANT,cmu,MED,Y
+Stomp,7,My niggas get wild and they get crunk,niggas,9,"Nigga, I feel like Trump, I get kicked out wherever I come",Nigga,INNER,SLANT,spelling,LOW,Y
+Stomp,7,My niggas get wild and they get crunk,wild,9,"Nigga, I feel like Trump, I get kicked out wherever I come",like,INNER,ASSONANCE,vowel,MED,Y
+Stomp,7,My niggas get wild and they get crunk,crunk,10,"I come to the hood, they call me the one",one,END,ASSONANCE,vowel,MED,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",March,8,"March on the opps, one bout, one gun, stomp",stomp,INNER,ASSONANCE,vowel,MED,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",one,8,"March on the opps, one bout, one gun, stomp",gun,INNER,PERFECT,cmu,HIGH,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",one,8,"March on the opps, one bout, one gun, stomp",one,INNER,REPEAT,spelling,HIGH,N
+Stomp,8,"March on the opps, one bout, one gun, stomp",gun,9,"Nigga, I feel like Trump, I get kicked out wherever I come",come,INNER,SLANT,cmu,MED,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",gun,9,"Nigga, I feel like Trump, I get kicked out wherever I come",Trump,INNER,ASSONANCE,vowel,MED,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",one,9,"Nigga, I feel like Trump, I get kicked out wherever I come",come,INNER,SLANT,cmu,MED,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",one,9,"Nigga, I feel like Trump, I get kicked out wherever I come",Trump,INNER,ASSONANCE,vowel,MED,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",gun,10,"I come to the hood, they call me the one",come,INNER,SLANT,cmu,MED,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",gun,10,"I come to the hood, they call me the one",one,INNER,PERFECT,cmu,HIGH,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",one,10,"I come to the hood, they call me the one",come,INNER,SLANT,cmu,MED,Y
+Stomp,8,"March on the opps, one bout, one gun, stomp",one,10,"I come to the hood, they call me the one",one,INNER,REPEAT,spelling,HIGH,N
+Stomp,8,"March on the opps, one bout, one gun, stomp",stomp,11,"Bitch, you better step like you 600, stomp",stomp,END,REPEAT,spelling,HIGH,N
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",get,9,"Nigga, I feel like Trump, I get kicked out wherever I come",wherever,INNER,SLANT,cmu,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",Nigga,9,"Nigga, I feel like Trump, I get kicked out wherever I come",kicked,INNER,SLANT,spelling,LOW,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",Trump,9,"Nigga, I feel like Trump, I get kicked out wherever I come",come,INNER,SLANT,cmu,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",come,10,"I come to the hood, they call me the one",one,END,SLANT,cmu,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",come,10,"I come to the hood, they call me the one",come,INNER,REPEAT,spelling,HIGH,N
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",Trump,10,"I come to the hood, they call me the one",come,INNER,SLANT,cmu,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",Trump,10,"I come to the hood, they call me the one",one,INNER,ASSONANCE,vowel,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",get,11,"Bitch, you better step like you 600, stomp",better,INNER,SLANT,cmu,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",get,11,"Bitch, you better step like you 600, stomp",step,INNER,SLANT,cmu,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",kicked,11,"Bitch, you better step like you 600, stomp",Bitch,INNER,ASSONANCE,vowel,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",like,11,"Bitch, you better step like you 600, stomp",like,INNER,REPEAT,spelling,HIGH,N
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",wherever,11,"Bitch, you better step like you 600, stomp",better,INNER,SLANT,cmu,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",wherever,11,"Bitch, you better step like you 600, stomp",step,INNER,SLANT,cmu,MED,Y
+Stomp,9,"Nigga, I feel like Trump, I get kicked out wherever I come",come,12,My niggas really be gunnin',gunnin,END,SLANT,cmu,MED,Y
+Stomp,10,"I come to the hood, they call me the one",come,10,"I come to the hood, they call me the one",one,INNER,SLANT,cmu,MED,Y
+Stomp,10,"I come to the hood, they call me the one",one,12,My niggas really be gunnin',gunnin,END,SLANT,cmu,MED,Y
+Stomp,10,"I come to the hood, they call me the one",come,12,My niggas really be gunnin',gunnin,INNER,SLANT,cmu,MED,Y
+Stomp,10,"I come to the hood, they call me the one",one,14,I fuckin' this bitch and stretchin' her button,button,END,SLANT,cmu,MED,Y
+Stomp,11,"Bitch, you better step like you 600, stomp",better,11,"Bitch, you better step like you 600, stomp",step,INNER,SLANT,cmu,MED,Y
+Stomp,11,"Bitch, you better step like you 600, stomp",Bitch,12,My niggas really be gunnin',really,INNER,SLANT,cmu,MED,Y
+Stomp,11,"Bitch, you better step like you 600, stomp",stomp,13,Screenshot picturеs of niggas in comments,comments,END,ASSONANCE,vowel,MED,Y
+Stomp,11,"Bitch, you better step like you 600, stomp",better,13,Screenshot picturеs of niggas in comments,s,INNER,SLANT,cmu,MED,Y
+Stomp,11,"Bitch, you better step like you 600, stomp",step,13,Screenshot picturеs of niggas in comments,s,INNER,SLANT,cmu,MED,Y
+Stomp,11,"Bitch, you better step like you 600, stomp",stomp,13,Screenshot picturеs of niggas in comments,Screenshot,INNER,ASSONANCE,vowel,MED,Y
+Stomp,12,My niggas really be gunnin',niggas,13,Screenshot picturеs of niggas in comments,niggas,INNER,REPEAT,spelling,HIGH,N
+Stomp,12,My niggas really be gunnin',gunnin,14,I fuckin' this bitch and stretchin' her button,button,END,ASSONANCE,vowel,MED,Y
+Stomp,12,My niggas really be gunnin',gunnin,14,I fuckin' this bitch and stretchin' her button,fuckin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,12,My niggas really be gunnin',really,14,I fuckin' this bitch and stretchin' her button,bitch,INNER,SLANT,cmu,MED,Y
+Stomp,12,My niggas really be gunnin',gunnin,15,"I'm makin' my way, lil' nigga, I'm comin', jump",jump,END,ASSONANCE,vowel,MED,Y
+Stomp,12,My niggas really be gunnin',gunnin,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,END,MULTI,multi,HIGH,Y
+Stomp,13,Screenshot picturеs of niggas in comments,Screenshot,13,Screenshot picturеs of niggas in comments,comments,INNER,ASSONANCE,vowel,MED,Y
+Stomp,13,Screenshot picturеs of niggas in comments,s,14,I fuckin' this bitch and stretchin' her button,stretchin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,13,Screenshot picturеs of niggas in comments,niggas,15,"I'm makin' my way, lil' nigga, I'm comin', jump",nigga,INNER,SLANT,spelling,LOW,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,fuckin,14,I fuckin' this bitch and stretchin' her button,button,INNER,SLANT,cmu,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,button,15,"I'm makin' my way, lil' nigga, I'm comin', jump",jump,END,ASSONANCE,vowel,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,bitch,15,"I'm makin' my way, lil' nigga, I'm comin', jump",lil,INNER,SLANT,cmu,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,button,15,"I'm makin' my way, lil' nigga, I'm comin', jump",comin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,fuckin,15,"I'm makin' my way, lil' nigga, I'm comin', jump",comin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,fuckin,15,"I'm makin' my way, lil' nigga, I'm comin', jump",jump,INNER,ASSONANCE,vowel,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,button,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,END,ASSONANCE,vowel,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,bitch,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bitch,INNER,REPEAT,spelling,HIGH,N
+Stomp,14,I fuckin' this bitch and stretchin' her button,button,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bust,INNER,ASSONANCE,vowel,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,button,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",gon,INNER,PERFECT,spelling,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,button,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",Hut,INNER,SLANT,cmu,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,fuckin,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bust,INNER,ASSONANCE,vowel,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,fuckin,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",Hut,INNER,ASSONANCE,vowel,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,fuckin,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,14,I fuckin' this bitch and stretchin' her button,button,17,"Whenever they call, they know I be comin'",comin,END,ASSONANCE,vowel,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",comin,15,"I'm makin' my way, lil' nigga, I'm comin', jump",jump,INNER,SLANT,cmu,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",jump,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,END,ASSONANCE,vowel,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",comin,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bust,INNER,ASSONANCE,vowel,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",comin,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",Hut,INNER,ASSONANCE,vowel,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",comin,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,INNER,SLANT,cmu,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",jump,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bust,INNER,ASSONANCE,vowel,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",jump,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",Hut,INNER,ASSONANCE,vowel,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",lil,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bitch,INNER,SLANT,cmu,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",way,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",h,INNER,ASSONANCE,vowel,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",jump,17,"Whenever they call, they know I be comin'",comin,END,SLANT,cmu,MED,Y
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",comin,17,"Whenever they call, they know I be comin'",comin,INNER,REPEAT,spelling,HIGH,N
+Stomp,15,"I'm makin' my way, lil' nigga, I'm comin', jump",jump,19,We leave niggas with assumptions,assumptions,END,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bust,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",Hut,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bust,INNER,SLANT,cmu,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",Hut,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,17,"Whenever they call, they know I be comin'",comin,END,SLANT,cmu,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bust,17,"Whenever they call, they know I be comin'",comin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",Hut,17,"Whenever they call, they know I be comin'",comin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bitch,18,"That Glock go flrr, that bitch got a button, stomp",bitch,INNER,REPEAT,spelling,HIGH,N
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",bust,18,"That Glock go flrr, that bitch got a button, stomp",button,INNER,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",gon,18,"That Glock go flrr, that bitch got a button, stomp",button,INNER,PERFECT,spelling,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",Hut,18,"That Glock go flrr, that bitch got a button, stomp",button,INNER,SLANT,cmu,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,18,"That Glock go flrr, that bitch got a button, stomp",button,INNER,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",start,18,"That Glock go flrr, that bitch got a button, stomp",Glock,INNER,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",start,18,"That Glock go flrr, that bitch got a button, stomp",got,INNER,SLANT,cmu,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",start,18,"That Glock go flrr, that bitch got a button, stomp",stomp,INNER,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,19,We leave niggas with assumptions,assumptions,END,ASSONANCE,vowel,MED,Y
+Stomp,16,"Soon as hе scream out, ""Hut,"" bitch, we gon' bust and they start runnin' (Bah, bah)",runnin,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",fumble,END,ASSONANCE,vowel,MED,Y
+Stomp,17,"Whenever they call, they know I be comin'",comin,18,"That Glock go flrr, that bitch got a button, stomp",button,INNER,ASSONANCE,vowel,MED,Y
+Stomp,17,"Whenever they call, they know I be comin'",know,18,"That Glock go flrr, that bitch got a button, stomp",go,INNER,PERFECT,cmu,HIGH,Y
+Stomp,17,"Whenever they call, they know I be comin'",comin,19,We leave niggas with assumptions,assumptions,END,ASSONANCE,vowel,MED,Y
+Stomp,17,"Whenever they call, they know I be comin'",comin,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",fumble,END,ASSONANCE,vowel,MED,Y
+Stomp,17,"Whenever they call, they know I be comin'",comin,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,END,SLANT,cmu,MED,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",Glock,18,"That Glock go flrr, that bitch got a button, stomp",got,INNER,SLANT,cmu,MED,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",Glock,18,"That Glock go flrr, that bitch got a button, stomp",stomp,INNER,ASSONANCE,vowel,MED,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",got,18,"That Glock go flrr, that bitch got a button, stomp",stomp,INNER,ASSONANCE,vowel,MED,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",button,19,We leave niggas with assumptions,assumptions,INNER,ASSONANCE,vowel,MED,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",button,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",fumble,INNER,ASSONANCE,vowel,MED,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",Glock,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",got,INNER,SLANT,cmu,MED,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",Glock,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",not,INNER,SLANT,cmu,MED,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",got,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",got,INNER,REPEAT,spelling,HIGH,N
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",got,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",not,INNER,PERFECT,cmu,HIGH,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",got,INNER,ASSONANCE,vowel,MED,Y
+Stomp,18,"That Glock go flrr, that bitch got a button, stomp",stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",not,INNER,ASSONANCE,vowel,MED,Y
+Stomp,19,We leave niggas with assumptions,assumptions,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",fumble,END,ASSONANCE,vowel,MED,Y
+Stomp,19,We leave niggas with assumptions,assumptions,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,END,ASSONANCE,vowel,MED,Y
+Stomp,19,We leave niggas with assumptions,assumptions,22,"I'll hit you, your cousin and brother, jump",jump,END,ASSONANCE,vowel,MED,Y
+Stomp,19,We leave niggas with assumptions,assumptions,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,END,ASSONANCE,vowel,MED,Y
+Stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",got,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",not,INNER,PERFECT,cmu,HIGH,Y
+Stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",fumble,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,END,ASSONANCE,vowel,MED,Y
+Stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",ball,21,"If you hit the floor, this bitch'll start stutterin'",floor,INNER,SLANT,cmu,MED,Y
+Stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",got,21,"If you hit the floor, this bitch'll start stutterin'",start,INNER,SLANT,cmu,MED,Y
+Stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",not,21,"If you hit the floor, this bitch'll start stutterin'",start,INNER,SLANT,cmu,MED,Y
+Stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",fumble,22,"I'll hit you, your cousin and brother, jump",jump,END,ASSONANCE,vowel,MED,Y
+Stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",fumble,22,"I'll hit you, your cousin and brother, jump",brother,INNER,ASSONANCE,vowel,MED,Y
+Stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",fumble,22,"I'll hit you, your cousin and brother, jump",cousin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,20,"You got the ball, boy, you better not fumble (Fumble, fumble)",fumble,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,END,ASSONANCE,vowel,MED,Y
+Stomp,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,22,"I'll hit you, your cousin and brother, jump",jump,END,ASSONANCE,vowel,MED,Y
+Stomp,21,"If you hit the floor, this bitch'll start stutterin'",hit,22,"I'll hit you, your cousin and brother, jump",hit,INNER,REPEAT,spelling,HIGH,N
+Stomp,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,22,"I'll hit you, your cousin and brother, jump",brother,INNER,ASSONANCE,vowel,MED,Y
+Stomp,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,22,"I'll hit you, your cousin and brother, jump",cousin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,END,SLANT,cmu,MED,Y
+Stomp,21,"If you hit the floor, this bitch'll start stutterin'",start,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",got,INNER,SLANT,cmu,MED,Y
+Stomp,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",gun,INNER,ASSONANCE,vowel,MED,Y
+Stomp,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,24,"Niggas be soft, talk and tustlin' (Soft and)",tustlin,END,ASSONANCE,vowel,LOW,N
+Stomp,21,"If you hit the floor, this bitch'll start stutterin'",stutterin,25,"I don't go outside, just know that I'm bustin it",bustin,END,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",brother,22,"I'll hit you, your cousin and brother, jump",jump,INNER,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",cousin,22,"I'll hit you, your cousin and brother, jump",brother,INNER,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",cousin,22,"I'll hit you, your cousin and brother, jump",jump,INNER,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",jump,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,END,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",brother,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",gun,INNER,SLANT,cmu,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",brother,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",cousin,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",gun,INNER,SLANT,cmu,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",cousin,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",I'll,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",why,INNER,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",jump,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",gun,INNER,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",cousin,24,"Niggas be soft, talk and tustlin' (Soft and)",tustlin,INNER,ASSONANCE,vowel,LOW,N
+Stomp,22,"I'll hit you, your cousin and brother, jump",jump,25,"I don't go outside, just know that I'm bustin it",bustin,END,ASSONANCE,vowel,MED,Y
+Stomp,22,"I'll hit you, your cousin and brother, jump",jump,26,"They thought it was funny, I kept on hustlin', uh",hustlin,END,ASSONANCE,vowel,MED,Y
+Stomp,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",gun,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,24,"Niggas be soft, talk and tustlin' (Soft and)",tustlin,END,ASSONANCE,vowel,LOW,N
+Stomp,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",got,24,"Niggas be soft, talk and tustlin' (Soft and)",soft,INNER,SLANT,cmu,MED,Y
+Stomp,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,25,"I don't go outside, just know that I'm bustin it",bustin,END,ASSONANCE,vowel,MED,Y
+Stomp,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",gun,25,"I don't go outside, just know that I'm bustin it",bustin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",why,25,"I don't go outside, just know that I'm bustin it",outside,INNER,ASSONANCE,vowel,MED,Y
+Stomp,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,26,"They thought it was funny, I kept on hustlin', uh",hustlin,END,ASSONANCE,vowel,MED,Y
+Stomp,23,"You got a gun, why you uppin' it? (Uppin' it, uppin' it)",uppin,27,I tryna hop in that Cullinan (Cullinan),Cullinan,END,ASSONANCE,vowel,MED,Y
+Stomp,24,"Niggas be soft, talk and tustlin' (Soft and)",tustlin,25,"I don't go outside, just know that I'm bustin it",bustin,END,PERFECT,spelling,MED,Y
+Stomp,24,"Niggas be soft, talk and tustlin' (Soft and)",tustlin,26,"They thought it was funny, I kept on hustlin', uh",hustlin,END,SLANT,spelling,LOW,Y
+Stomp,24,"Niggas be soft, talk and tustlin' (Soft and)",talk,26,"They thought it was funny, I kept on hustlin', uh",thought,INNER,SLANT,cmu,MED,Y
+Stomp,25,"I don't go outside, just know that I'm bustin it",don't,25,"I don't go outside, just know that I'm bustin it",go,INNER,ASSONANCE,vowel,MED,Y
+Stomp,25,"I don't go outside, just know that I'm bustin it",don't,25,"I don't go outside, just know that I'm bustin it",know,INNER,ASSONANCE,vowel,MED,Y
+Stomp,25,"I don't go outside, just know that I'm bustin it",go,25,"I don't go outside, just know that I'm bustin it",know,INNER,PERFECT,cmu,HIGH,Y
+Stomp,25,"I don't go outside, just know that I'm bustin it",bustin,26,"They thought it was funny, I kept on hustlin', uh",hustlin,END,SLANT,cmu,MED,Y
+Stomp,25,"I don't go outside, just know that I'm bustin it",bustin,26,"They thought it was funny, I kept on hustlin', uh",funny,INNER,ASSONANCE,vowel,MED,Y
+Stomp,25,"I don't go outside, just know that I'm bustin it",bustin,27,I tryna hop in that Cullinan (Cullinan),Cullinan,END,ASSONANCE,vowel,MED,Y
+Stomp,25,"I don't go outside, just know that I'm bustin it",bustin,28,I wanna fuck on you and your buddy (Your buddy),buddy,END,ASSONANCE,vowel,MED,Y
+Stomp,25,"I don't go outside, just know that I'm bustin it",bustin,29,Told her hop in and she start suckin' it,suckin,END,ASSONANCE,vowel,MED,Y
+Stomp,26,"They thought it was funny, I kept on hustlin', uh",funny,26,"They thought it was funny, I kept on hustlin', uh",hustlin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,26,"They thought it was funny, I kept on hustlin', uh",hustlin,27,I tryna hop in that Cullinan (Cullinan),Cullinan,END,ASSONANCE,vowel,MED,Y
+Stomp,26,"They thought it was funny, I kept on hustlin', uh",funny,27,I tryna hop in that Cullinan (Cullinan),Cullinan,INNER,ASSONANCE,vowel,MED,Y
+Stomp,26,"They thought it was funny, I kept on hustlin', uh",hustlin,28,I wanna fuck on you and your buddy (Your buddy),buddy,END,ASSONANCE,vowel,MED,Y
+Stomp,26,"They thought it was funny, I kept on hustlin', uh",funny,28,I wanna fuck on you and your buddy (Your buddy),buddy,INNER,SLANT,cmu,MED,Y
+Stomp,26,"They thought it was funny, I kept on hustlin', uh",funny,28,I wanna fuck on you and your buddy (Your buddy),fuck,INNER,SLANT,cmu,MED,Y
+Stomp,26,"They thought it was funny, I kept on hustlin', uh",hustlin,28,I wanna fuck on you and your buddy (Your buddy),fuck,INNER,ASSONANCE,vowel,MED,Y
+Stomp,26,"They thought it was funny, I kept on hustlin', uh",hustlin,29,Told her hop in and she start suckin' it,suckin,END,ASSONANCE,vowel,MED,Y
+Stomp,27,I tryna hop in that Cullinan (Cullinan),Cullinan,28,I wanna fuck on you and your buddy (Your buddy),buddy,END,ASSONANCE,vowel,MED,Y
+Stomp,27,I tryna hop in that Cullinan (Cullinan),Cullinan,28,I wanna fuck on you and your buddy (Your buddy),fuck,INNER,ASSONANCE,vowel,MED,Y
+Stomp,27,I tryna hop in that Cullinan (Cullinan),hop,28,I wanna fuck on you and your buddy (Your buddy),wanna,INNER,SLANT,cmu,MED,Y
+Stomp,27,I tryna hop in that Cullinan (Cullinan),Cullinan,29,Told her hop in and she start suckin' it,suckin,END,ASSONANCE,vowel,MED,Y
+Stomp,27,I tryna hop in that Cullinan (Cullinan),hop,29,Told her hop in and she start suckin' it,hop,INNER,REPEAT,spelling,HIGH,N
+Stomp,27,I tryna hop in that Cullinan (Cullinan),hop,29,Told her hop in and she start suckin' it,start,INNER,ASSONANCE,vowel,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),fuck,28,I wanna fuck on you and your buddy (Your buddy),buddy,INNER,SLANT,cmu,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),buddy,29,Told her hop in and she start suckin' it,suckin,END,ASSONANCE,vowel,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),fuck,29,Told her hop in and she start suckin' it,suckin,INNER,SLANT,cmu,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),wanna,29,Told her hop in and she start suckin' it,hop,INNER,SLANT,cmu,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),wanna,29,Told her hop in and she start suckin' it,start,INNER,ASSONANCE,vowel,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),buddy,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",money,INNER,SLANT,cmu,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),buddy,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",touchin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),fuck,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",money,INNER,SLANT,cmu,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),fuck,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",touchin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),wanna,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",stomp,INNER,ASSONANCE,vowel,MED,Y
+Stomp,28,I wanna fuck on you and your buddy (Your buddy),wanna,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",want,INNER,SLANT,cmu,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,hop,29,Told her hop in and she start suckin' it,start,INNER,ASSONANCE,vowel,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,hop,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",stomp,INNER,SLANT,cmu,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,hop,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",want,INNER,ASSONANCE,vowel,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,start,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",stomp,INNER,ASSONANCE,vowel,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,start,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",want,INNER,SLANT,cmu,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,suckin,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",money,INNER,ASSONANCE,vowel,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,suckin,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",touchin,INNER,SLANT,cmu,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,hop,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",gotta,INNER,SLANT,cmu,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,start,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",gotta,INNER,SLANT,cmu,MED,Y
+Stomp,29,Told her hop in and she start suckin' it,Told,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",roll,INNER,SLANT,cmu,MED,Y
+Stomp,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",money,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",touchin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",want,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",stomp,INNER,SLANT,cmu,MED,Y
+Stomp,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",bitch,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",lil,INNER,SLANT,cmu,MED,Y
+Stomp,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",gotta,INNER,ASSONANCE,vowel,MED,Y
+Stomp,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",want,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",gotta,INNER,SLANT,cmu,MED,Y
+Stomp,30,"If you want money, then, bitch, I ain't touchin' it, stomp (Woo, woo)",bitch,32,"Your ass a rookie, you brickin' from free throw",brickin,INNER,ASSONANCE,vowel,LOW,N
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",beat,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",B,INNER,ASSONANCE,vowel,MED,Y
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",get,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",ever,INNER,SLANT,cmu,MED,Y
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",roll,32,"Your ass a rookie, you brickin' from free throw",throw,END,ASSONANCE,vowel,MED,Y
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",B,32,"Your ass a rookie, you brickin' from free throw",free,INNER,PERFECT,cmu,HIGH,Y
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",beat,32,"Your ass a rookie, you brickin' from free throw",free,INNER,ASSONANCE,vowel,MED,Y
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",niggas,32,"Your ass a rookie, you brickin' from free throw",ass,INNER,PERFECT,spelling,MED,Y
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",roll,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",strokes,END,ASSONANCE,vowel,MED,Y
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",B,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",heat,INNER,ASSONANCE,vowel,MED,Y
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",beat,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",heat,INNER,PERFECT,cmu,HIGH,Y
+Stomp,31,"I gotta get this lil' beat on, you ever been shootin' at niggas like B-roll?",lil,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",givin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,32,"Your ass a rookie, you brickin' from free throw",throw,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",strokes,END,ASSONANCE,vowel,MED,Y
+Stomp,32,"Your ass a rookie, you brickin' from free throw",brickin,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",givin,INNER,ASSONANCE,vowel,LOW,N
+Stomp,32,"Your ass a rookie, you brickin' from free throw",free,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",heat,INNER,ASSONANCE,vowel,MED,Y
+Stomp,32,"Your ass a rookie, you brickin' from free throw",brickin,34,My homie 'nem still doin blue-fives (Okay),still,INNER,ASSONANCE,vowel,LOW,N
+Stomp,32,"Your ass a rookie, you brickin' from free throw",rookie,34,My homie 'nem still doin blue-fives (Okay),homie,INNER,PERFECT,spelling,MED,Y
+Stomp,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",givin,34,My homie 'nem still doin blue-fives (Okay),still,INNER,ASSONANCE,vowel,MED,Y
+Stomp,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",goin,34,My homie 'nem still doin blue-fives (Okay),doin,INNER,PERFECT,spelling,HIGH,Y
+Stomp,33,"I'm goin' up and it's givin' them heat strokes, uh (Ha, ha)",strokes,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Stomp,34,My homie 'nem still doin blue-fives (Okay),fives,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",mine,END,ASSONANCE,vowel,MED,Y
+Stomp,34,My homie 'nem still doin blue-fives (Okay),'nem,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",get,INNER,SLANT,spelling,LOW,Y
+Stomp,34,My homie 'nem still doin blue-fives (Okay),still,36,"Gunna and Drummer, they still in my top give",give,INNER,SLANT,cmu,MED,Y
+Stomp,34,My homie 'nem still doin blue-fives (Okay),still,36,"Gunna and Drummer, they still in my top give",still,INNER,REPEAT,spelling,HIGH,N
+Stomp,34,My homie 'nem still doin blue-fives (Okay),fives,38,We still walk in and swipin' at Best Buy (Yeah),Buy,END,ASSONANCE,vowel,MED,Y
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",gun,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",come,INNER,SLANT,cmu,MED,Y
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",come,36,"Gunna and Drummer, they still in my top give",Drummer,INNER,SLANT,cmu,MED,Y
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",come,36,"Gunna and Drummer, they still in my top give",Gunna,INNER,SLANT,spelling,LOW,Y
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",got,36,"Gunna and Drummer, they still in my top give",top,INNER,SLANT,cmu,MED,Y
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",gun,36,"Gunna and Drummer, they still in my top give",Drummer,INNER,SLANT,cmu,MED,Y
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",gun,36,"Gunna and Drummer, they still in my top give",Gunna,INNER,SLANT,spelling,LOW,Y
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",don't,37,"My opps faker than niggas with SI's (Bah, bah, bah)",opps,INNER,ASSONANCE,vowel,LOW,N
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",nigga,37,"My opps faker than niggas with SI's (Bah, bah, bah)",niggas,INNER,SLANT,spelling,LOW,Y
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",mine,38,We still walk in and swipin' at Best Buy (Yeah),Buy,END,ASSONANCE,vowel,MED,Y
+Stomp,35,"""I don't got a gun,"" my nigga, come get mine (Yeah)",mine,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",eye,END,ASSONANCE,vowel,MED,Y
+Stomp,36,"Gunna and Drummer, they still in my top give",Gunna,36,"Gunna and Drummer, they still in my top give",Drummer,INNER,SLANT,spelling,LOW,Y
+Stomp,36,"Gunna and Drummer, they still in my top give",still,36,"Gunna and Drummer, they still in my top give",give,INNER,SLANT,cmu,MED,Y
+Stomp,36,"Gunna and Drummer, they still in my top give",give,37,"My opps faker than niggas with SI's (Bah, bah, bah)",SI's,END,SLANT,cmu,MED,Y
+Stomp,36,"Gunna and Drummer, they still in my top give",still,37,"My opps faker than niggas with SI's (Bah, bah, bah)",SI's,INNER,SLANT,cmu,MED,Y
+Stomp,36,"Gunna and Drummer, they still in my top give",give,38,We still walk in and swipin' at Best Buy (Yeah),still,INNER,SLANT,cmu,MED,Y
+Stomp,36,"Gunna and Drummer, they still in my top give",still,38,We still walk in and swipin' at Best Buy (Yeah),still,INNER,REPEAT,spelling,HIGH,N
+Stomp,37,"My opps faker than niggas with SI's (Bah, bah, bah)",SI's,38,We still walk in and swipin' at Best Buy (Yeah),still,INNER,SLANT,cmu,MED,Y
+Stomp,37,"My opps faker than niggas with SI's (Bah, bah, bah)",SI's,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",fifty,INNER,ASSONANCE,vowel,MED,Y
+Stomp,38,We still walk in and swipin' at Best Buy (Yeah),swipin,38,We still walk in and swipin' at Best Buy (Yeah),Buy,INNER,ASSONANCE,vowel,MED,Y
+Stomp,38,We still walk in and swipin' at Best Buy (Yeah),Buy,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",eye,END,PERFECT,cmu,HIGH,Y
+Stomp,38,We still walk in and swipin' at Best Buy (Yeah),still,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",fifty,INNER,ASSONANCE,vowel,MED,Y
+Stomp,38,We still walk in and swipin' at Best Buy (Yeah),swipin,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",eye,INNER,ASSONANCE,vowel,MED,Y
+Stomp,38,We still walk in and swipin' at Best Buy (Yeah),Buy,40,"Spank be fresh, that's my lil' fat guy",guy,END,PERFECT,cmu,HIGH,Y
+Stomp,38,We still walk in and swipin' at Best Buy (Yeah),Best,40,"Spank be fresh, that's my lil' fat guy",fresh,INNER,ASSONANCE,vowel,MED,Y
+Stomp,38,We still walk in and swipin' at Best Buy (Yeah),still,40,"Spank be fresh, that's my lil' fat guy",lil,INNER,PERFECT,cmu,HIGH,Y
+Stomp,38,We still walk in and swipin' at Best Buy (Yeah),swipin,40,"Spank be fresh, that's my lil' fat guy",guy,INNER,ASSONANCE,vowel,MED,Y
+Stomp,38,We still walk in and swipin' at Best Buy (Yeah),Buy,41,"Almost died, good luck on the next try (Okay)",try,END,PERFECT,cmu,HIGH,Y
+Stomp,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",eye,40,"Spank be fresh, that's my lil' fat guy",guy,END,PERFECT,cmu,HIGH,Y
+Stomp,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",fifty,40,"Spank be fresh, that's my lil' fat guy",lil,INNER,ASSONANCE,vowel,MED,Y
+Stomp,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",eye,41,"Almost died, good luck on the next try (Okay)",try,END,PERFECT,cmu,HIGH,Y
+Stomp,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",eye,41,"Almost died, good luck on the next try (Okay)",died,INNER,ASSONANCE,vowel,MED,Y
+Stomp,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",one,41,"Almost died, good luck on the next try (Okay)",luck,INNER,SLANT,cmu,MED,Y
+Stomp,39,"6 be shootin' the fifty with one eye (Bah, bah, yeah)",eye,43,"No nine lives, bitch, even them cats die",die,END,PERFECT,cmu,HIGH,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",Spank,40,"Spank be fresh, that's my lil' fat guy",fat,INNER,ASSONANCE,vowel,MED,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",guy,41,"Almost died, good luck on the next try (Okay)",try,END,PERFECT,cmu,HIGH,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",fresh,41,"Almost died, good luck on the next try (Okay)",next,INNER,ASSONANCE,vowel,MED,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",guy,41,"Almost died, good luck on the next try (Okay)",died,INNER,ASSONANCE,vowel,MED,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",fat,42,I'm still gettin' pussy just off of my neck tat,tat,INNER,PERFECT,cmu,HIGH,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",fresh,42,I'm still gettin' pussy just off of my neck tat,gettin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",fresh,42,I'm still gettin' pussy just off of my neck tat,neck,INNER,SLANT,cmu,MED,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",lil,42,I'm still gettin' pussy just off of my neck tat,still,INNER,PERFECT,cmu,HIGH,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",Spank,42,I'm still gettin' pussy just off of my neck tat,tat,INNER,ASSONANCE,vowel,MED,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",guy,43,"No nine lives, bitch, even them cats die",die,END,PERFECT,cmu,HIGH,Y
+Stomp,40,"Spank be fresh, that's my lil' fat guy",guy,44,"I want the Track', but I wanna test drive",drive,END,ASSONANCE,vowel,MED,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",died,41,"Almost died, good luck on the next try (Okay)",try,INNER,ASSONANCE,vowel,MED,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",good,42,I'm still gettin' pussy just off of my neck tat,pussy,INNER,SLANT,cmu,MED,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",next,42,I'm still gettin' pussy just off of my neck tat,gettin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",next,42,I'm still gettin' pussy just off of my neck tat,neck,INNER,ASSONANCE,vowel,MED,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",try,43,"No nine lives, bitch, even them cats die",die,END,PERFECT,cmu,HIGH,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",Almost,43,"No nine lives, bitch, even them cats die",No,INNER,ASSONANCE,vowel,MED,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",died,43,"No nine lives, bitch, even them cats die",die,INNER,ASSONANCE,vowel,MED,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",died,43,"No nine lives, bitch, even them cats die",nine,INNER,SLANT,cmu,MED,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",try,43,"No nine lives, bitch, even them cats die",nine,INNER,ASSONANCE,vowel,MED,Y
+Stomp,41,"Almost died, good luck on the next try (Okay)",try,44,"I want the Track', but I wanna test drive",drive,END,ASSONANCE,vowel,MED,Y
+Stomp,42,I'm still gettin' pussy just off of my neck tat,gettin,42,I'm still gettin' pussy just off of my neck tat,neck,INNER,ASSONANCE,vowel,MED,Y
+Stomp,42,I'm still gettin' pussy just off of my neck tat,still,43,"No nine lives, bitch, even them cats die",bitch,INNER,SLANT,cmu,MED,Y
+Stomp,42,I'm still gettin' pussy just off of my neck tat,still,43,"No nine lives, bitch, even them cats die",lives,INNER,ASSONANCE,vowel,MED,Y
+Stomp,42,I'm still gettin' pussy just off of my neck tat,tat,43,"No nine lives, bitch, even them cats die",cats,INNER,SLANT,cmu,MED,Y
+Stomp,42,I'm still gettin' pussy just off of my neck tat,gettin,44,"I want the Track', but I wanna test drive",test,INNER,ASSONANCE,vowel,MED,Y
+Stomp,42,I'm still gettin' pussy just off of my neck tat,neck,44,"I want the Track', but I wanna test drive",test,INNER,ASSONANCE,vowel,MED,Y
+Stomp,42,I'm still gettin' pussy just off of my neck tat,tat,44,"I want the Track', but I wanna test drive",Track,INNER,SLANT,cmu,MED,Y
+Stomp,43,"No nine lives, bitch, even them cats die",lives,43,"No nine lives, bitch, even them cats die",bitch,INNER,ASSONANCE,vowel,MED,Y
+Stomp,43,"No nine lives, bitch, even them cats die",nine,43,"No nine lives, bitch, even them cats die",die,INNER,ASSONANCE,vowel,MED,Y
+Stomp,43,"No nine lives, bitch, even them cats die",die,44,"I want the Track', but I wanna test drive",drive,END,ASSONANCE,vowel,MED,Y
+Stomp,43,"No nine lives, bitch, even them cats die",cats,44,"I want the Track', but I wanna test drive",Track,INNER,ASSONANCE,vowel,MED,Y
+Stomp,43,"No nine lives, bitch, even them cats die",nine,44,"I want the Track', but I wanna test drive",drive,INNER,SLANT,cmu,MED,Y
+Stomp,43,"No nine lives, bitch, even them cats die",die,45,"I'm off the Percs, I'm lookin' like Lefteye (Yeah)",like,INNER,ASSONANCE,vowel,MED,Y
+Stomp,43,"No nine lives, bitch, even them cats die",nine,45,"I'm off the Percs, I'm lookin' like Lefteye (Yeah)",like,INNER,SLANT,cmu,MED,Y
+Stomp,44,"I want the Track', but I wanna test drive",want,44,"I want the Track', but I wanna test drive",wanna,INNER,SLANT,cmu,MED,Y
+Stomp,44,"I want the Track', but I wanna test drive",drive,45,"I'm off the Percs, I'm lookin' like Lefteye (Yeah)",like,INNER,SLANT,cmu,MED,Y
+Stomp,44,"I want the Track', but I wanna test drive",test,45,"I'm off the Percs, I'm lookin' like Lefteye (Yeah)",Lefteye,INNER,SLANT,spelling,LOW,Y
+Stomp,44,"I want the Track', but I wanna test drive",wanna,46,Screenshot pictures of niggas in comments,comments,INNER,ASSONANCE,vowel,MED,Y
+Stomp,44,"I want the Track', but I wanna test drive",wanna,46,Screenshot pictures of niggas in comments,Screenshot,INNER,SLANT,cmu,MED,Y
+Stomp,44,"I want the Track', but I wanna test drive",want,46,Screenshot pictures of niggas in comments,comments,INNER,ASSONANCE,vowel,MED,Y
+Stomp,44,"I want the Track', but I wanna test drive",want,46,Screenshot pictures of niggas in comments,Screenshot,INNER,SLANT,cmu,MED,Y
+Stomp,45,"I'm off the Percs, I'm lookin' like Lefteye (Yeah)",Lefteye,47,"They know they see us, better run",better,INNER,SLANT,spelling,LOW,Y
+Stomp,46,Screenshot pictures of niggas in comments,pictures,46,Screenshot pictures of niggas in comments,niggas,INNER,SLANT,spelling,LOW,Y
+Stomp,46,Screenshot pictures of niggas in comments,Screenshot,46,Screenshot pictures of niggas in comments,comments,INNER,ASSONANCE,vowel,MED,Y
+Stomp,46,Screenshot pictures of niggas in comments,comments,48,"That ain't no guitar, bitch, it's a drum (Brr)",guitar,INNER,ASSONANCE,vowel,MED,Y
+Stomp,46,Screenshot pictures of niggas in comments,pictures,48,"That ain't no guitar, bitch, it's a drum (Brr)",bitch,INNER,ASSONANCE,vowel,MED,Y
+Stomp,46,Screenshot pictures of niggas in comments,Screenshot,48,"That ain't no guitar, bitch, it's a drum (Brr)",guitar,INNER,SLANT,cmu,MED,Y
+Stomp,46,Screenshot pictures of niggas in comments,comments,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",locked,END,ASSONANCE,vowel,MED,Y
+Stomp,47,"They know they see us, better run",run,48,"That ain't no guitar, bitch, it's a drum (Brr)",drum,END,SLANT,cmu,MED,Y
+Stomp,47,"They know they see us, better run",know,48,"That ain't no guitar, bitch, it's a drum (Brr)",no,INNER,PERFECT,cmu,HIGH,Y
+Stomp,47,"They know they see us, better run",know,49,"Way before hip-hop, we use to flip opps",opps,INNER,ASSONANCE,vowel,LOW,N
+Stomp,48,"That ain't no guitar, bitch, it's a drum (Brr)",ain't,49,"Way before hip-hop, we use to flip opps",Way,INNER,ASSONANCE,vowel,MED,Y
+Stomp,48,"That ain't no guitar, bitch, it's a drum (Brr)",bitch,49,"Way before hip-hop, we use to flip opps",flip,INNER,SLANT,cmu,MED,Y
+Stomp,48,"That ain't no guitar, bitch, it's a drum (Brr)",bitch,49,"Way before hip-hop, we use to flip opps",hip,INNER,SLANT,cmu,MED,Y
+Stomp,48,"That ain't no guitar, bitch, it's a drum (Brr)",guitar,49,"Way before hip-hop, we use to flip opps",hop,INNER,SLANT,cmu,MED,Y
+Stomp,48,"That ain't no guitar, bitch, it's a drum (Brr)",bitch,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",lip,INNER,SLANT,cmu,MED,Y
+Stomp,48,"That ain't no guitar, bitch, it's a drum (Brr)",bitch,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",zip,INNER,SLANT,cmu,MED,Y
+Stomp,48,"That ain't no guitar, bitch, it's a drum (Brr)",guitar,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",box,INNER,ASSONANCE,vowel,MED,Y
+Stomp,48,"That ain't no guitar, bitch, it's a drum (Brr)",guitar,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",locked,INNER,ASSONANCE,vowel,MED,Y
+Stomp,48,"That ain't no guitar, bitch, it's a drum (Brr)",no,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",don't,INNER,ASSONANCE,vowel,MED,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",hip,49,"Way before hip-hop, we use to flip opps",flip,INNER,PERFECT,cmu,HIGH,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",flip,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",lip,INNER,PERFECT,cmu,HIGH,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",flip,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",zip,INNER,PERFECT,cmu,HIGH,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",hip,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",lip,INNER,PERFECT,cmu,HIGH,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",hip,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",zip,INNER,PERFECT,cmu,HIGH,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",hop,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",box,INNER,ASSONANCE,vowel,MED,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",hop,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",locked,INNER,SLANT,cmu,MED,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",opps,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",don't,INNER,ASSONANCE,vowel,LOW,N
+Stomp,49,"Way before hip-hop, we use to flip opps",flip,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flip,INNER,REPEAT,spelling,HIGH,N
+Stomp,49,"Way before hip-hop, we use to flip opps",hip,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flip,INNER,PERFECT,cmu,HIGH,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",hop,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flops,INNER,SLANT,cmu,MED,Y
+Stomp,49,"Way before hip-hop, we use to flip opps",hop,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",rockin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",box,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",locked,INNER,SLANT,cmu,MED,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",lip,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",zip,INNER,PERFECT,cmu,HIGH,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",locked,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flops,END,ASSONANCE,vowel,MED,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",box,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flops,INNER,SLANT,cmu,MED,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",box,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",rockin,INNER,SLANT,cmu,MED,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",get,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",trenches,INNER,ASSONANCE,vowel,MED,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",lip,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flip,INNER,PERFECT,cmu,HIGH,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",locked,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",rockin,INNER,SLANT,cmu,MED,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",zip,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flip,INNER,PERFECT,cmu,HIGH,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",don't,52,"Dash in the coupe with my ho, she on TikTok (Yeah)",ho,INNER,ASSONANCE,vowel,MED,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",locked,53,"Bitches love me, I love top, make her lips lock (Ayy)",lock,END,SLANT,cmu,MED,Y
+Stomp,50,"Swerv' don't lip box, you'll get zip locked (And you know that)",locked,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Roc,END,SLANT,cmu,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",rockin,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flops,INNER,ASSONANCE,vowel,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flops,53,"Bitches love me, I love top, make her lips lock (Ayy)",lock,END,ASSONANCE,vowel,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",comfortable,53,"Bitches love me, I love top, make her lips lock (Ayy)",love,INNER,ASSONANCE,vowel,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flip,53,"Bitches love me, I love top, make her lips lock (Ayy)",Bitches,INNER,ASSONANCE,vowel,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flip,53,"Bitches love me, I love top, make her lips lock (Ayy)",lips,INNER,SLANT,cmu,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flops,53,"Bitches love me, I love top, make her lips lock (Ayy)",top,INNER,SLANT,cmu,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",rockin,53,"Bitches love me, I love top, make her lips lock (Ayy)",lock,INNER,SLANT,cmu,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",rockin,53,"Bitches love me, I love top, make her lips lock (Ayy)",top,INNER,ASSONANCE,vowel,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flops,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Roc,END,ASSONANCE,vowel,MED,Y
+Stomp,51,"I'm in the trenches comfortable, rockin' flip-flops (Rockin' flip-flops)",flops,55,"Forty Glock, I step, stomp",stomp,END,ASSONANCE,vowel,MED,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",Bitches,53,"Bitches love me, I love top, make her lips lock (Ayy)",lips,INNER,ASSONANCE,vowel,MED,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",love,53,"Bitches love me, I love top, make her lips lock (Ayy)",love,INNER,REPEAT,spelling,HIGH,N
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",top,53,"Bitches love me, I love top, make her lips lock (Ayy)",lock,INNER,SLANT,cmu,MED,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",lock,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Roc,END,PERFECT,cmu,HIGH,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",lock,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",R,INNER,SLANT,cmu,MED,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",love,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",son,INNER,SLANT,cmu,MED,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",top,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",R,INNER,SLANT,cmu,MED,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",top,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Roc,INNER,SLANT,cmu,MED,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",lock,55,"Forty Glock, I step, stomp",stomp,END,ASSONANCE,vowel,MED,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",lock,55,"Forty Glock, I step, stomp",Glock,INNER,PERFECT,cmu,HIGH,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",top,55,"Forty Glock, I step, stomp",Glock,INNER,SLANT,cmu,MED,Y
+Stomp,53,"Bitches love me, I love top, make her lips lock (Ayy)",top,55,"Forty Glock, I step, stomp",stomp,INNER,SLANT,cmu,MED,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Blessed,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Essex,INNER,ASSONANCE,vowel,MED,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",R,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Roc,INNER,SLANT,cmu,MED,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Roc,55,"Forty Glock, I step, stomp",stomp,END,ASSONANCE,vowel,MED,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Blessed,55,"Forty Glock, I step, stomp",step,INNER,ASSONANCE,vowel,MED,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Essex,55,"Forty Glock, I step, stomp",step,INNER,ASSONANCE,vowel,MED,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",R,55,"Forty Glock, I step, stomp",Glock,INNER,SLANT,cmu,MED,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",R,55,"Forty Glock, I step, stomp",stomp,INNER,ASSONANCE,vowel,MED,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Roc,55,"Forty Glock, I step, stomp",Glock,INNER,PERFECT,cmu,HIGH,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Blessed,56,"Shoot this bitch like Steph, uh",Steph,INNER,ASSONANCE,vowel,MED,Y
+Stomp,54,"Blessed, so my son ""Essex,"" it's R.I.P. Roc, uh (Phew)",Essex,56,"Shoot this bitch like Steph, uh",Steph,INNER,ASSONANCE,vowel,MED,Y
+Stomp,55,"Forty Glock, I step, stomp",Glock,55,"Forty Glock, I step, stomp",stomp,INNER,ASSONANCE,vowel,MED,Y
+Stomp,55,"Forty Glock, I step, stomp",step,56,"Shoot this bitch like Steph, uh",Steph,INNER,SLANT,cmu,MED,Y
+Stomp,56,"Shoot this bitch like Steph, uh",like,57,"Treat my opps like photos, dump",like,INNER,REPEAT,spelling,HIGH,N
+Stomp,56,"Shoot this bitch like Steph, uh",Steph,58,"Pussy, where your bro go? Slumped",where,INNER,SLANT,cmu,MED,Y
+Stomp,57,"Treat my opps like photos, dump",opps,57,"Treat my opps like photos, dump",photos,INNER,ASSONANCE,vowel,LOW,N
+Stomp,57,"Treat my opps like photos, dump",dump,58,"Pussy, where your bro go? Slumped",Slumped,END,SLANT,cmu,MED,Y
+Stomp,57,"Treat my opps like photos, dump",photos,58,"Pussy, where your bro go? Slumped",bro,INNER,ASSONANCE,vowel,MED,Y
+Stomp,57,"Treat my opps like photos, dump",photos,58,"Pussy, where your bro go? Slumped",go,INNER,ASSONANCE,vowel,MED,Y
+Stomp,57,"Treat my opps like photos, dump",like,59,Iced out all my logos (G Herbo),Iced,INNER,ASSONANCE,vowel,MED,Y
+Stomp,57,"Treat my opps like photos, dump",opps,59,Iced out all my logos (G Herbo),logos,INNER,ASSONANCE,vowel,LOW,N
+Stomp,57,"Treat my opps like photos, dump",photos,59,Iced out all my logos (G Herbo),logos,INNER,PERFECT,cmu,HIGH,Y
+Stomp,58,"Pussy, where your bro go? Slumped",bro,58,"Pussy, where your bro go? Slumped",go,INNER,PERFECT,cmu,HIGH,Y
+Stomp,58,"Pussy, where your bro go? Slumped",bro,59,Iced out all my logos (G Herbo),logos,INNER,ASSONANCE,vowel,MED,Y
+Stomp,58,"Pussy, where your bro go? Slumped",go,59,Iced out all my logos (G Herbo),logos,INNER,ASSONANCE,vowel,MED,Y
+Stomp,58,"Pussy, where your bro go? Slumped",Slumped,60,Diamonds jump like pogos (Like pogos),jump,INNER,SLANT,cmu,MED,Y
+Stomp,59,Iced out all my logos (G Herbo),logos,60,Diamonds jump like pogos (Like pogos),pogos,END,PERFECT,spelling,MED,Y
+Stomp,59,Iced out all my logos (G Herbo),Iced,60,Diamonds jump like pogos (Like pogos),Diamonds,INNER,ASSONANCE,vowel,MED,Y
+Stomp,59,Iced out all my logos (G Herbo),Iced,60,Diamonds jump like pogos (Like pogos),like,INNER,ASSONANCE,vowel,MED,Y
+Stomp,59,Iced out all my logos (G Herbo),logos,61,I don't care where no ho go (Fuck her),go,END,ASSONANCE,vowel,MED,Y
+Stomp,59,Iced out all my logos (G Herbo),logos,61,I don't care where no ho go (Fuck her),don't,INNER,ASSONANCE,vowel,MED,Y
+Stomp,59,Iced out all my logos (G Herbo),logos,61,I don't care where no ho go (Fuck her),ho,INNER,ASSONANCE,vowel,MED,Y
+Stomp,59,Iced out all my logos (G Herbo),logos,61,I don't care where no ho go (Fuck her),no,INNER,ASSONANCE,vowel,MED,Y
+Stomp,59,Iced out all my logos (G Herbo),logos,62,"Blackout, just see roho (DY Krazy, bah)",roho,END,SLANT,spelling,LOW,Y
+Stomp,59,Iced out all my logos (G Herbo),logos,63,"I'm in L.A., I don't do no ho (Yeah)",ho,END,ASSONANCE,vowel,MED,Y
+Stomp,60,Diamonds jump like pogos (Like pogos),Diamonds,60,Diamonds jump like pogos (Like pogos),like,INNER,ASSONANCE,vowel,MED,Y
+Stomp,60,Diamonds jump like pogos (Like pogos),pogos,61,I don't care where no ho go (Fuck her),don't,INNER,ASSONANCE,vowel,LOW,N
+Stomp,60,Diamonds jump like pogos (Like pogos),pogos,62,"Blackout, just see roho (DY Krazy, bah)",roho,END,ASSONANCE,vowel,LOW,N
+Stomp,61,I don't care where no ho go (Fuck her),care,61,I don't care where no ho go (Fuck her),where,INNER,PERFECT,cmu,HIGH,Y
+Stomp,61,I don't care where no ho go (Fuck her),don't,61,I don't care where no ho go (Fuck her),go,INNER,ASSONANCE,vowel,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),don't,61,I don't care where no ho go (Fuck her),ho,INNER,ASSONANCE,vowel,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),don't,61,I don't care where no ho go (Fuck her),no,INNER,ASSONANCE,vowel,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),ho,61,I don't care where no ho go (Fuck her),go,INNER,PERFECT,cmu,HIGH,Y
+Stomp,61,I don't care where no ho go (Fuck her),no,61,I don't care where no ho go (Fuck her),go,INNER,PERFECT,cmu,HIGH,Y
+Stomp,61,I don't care where no ho go (Fuck her),no,61,I don't care where no ho go (Fuck her),ho,INNER,PERFECT,cmu,HIGH,Y
+Stomp,61,I don't care where no ho go (Fuck her),go,62,"Blackout, just see roho (DY Krazy, bah)",roho,END,ASSONANCE,vowel,LOW,N
+Stomp,61,I don't care where no ho go (Fuck her),don't,62,"Blackout, just see roho (DY Krazy, bah)",roho,INNER,ASSONANCE,vowel,LOW,N
+Stomp,61,I don't care where no ho go (Fuck her),ho,62,"Blackout, just see roho (DY Krazy, bah)",roho,INNER,ASSONANCE,vowel,LOW,N
+Stomp,61,I don't care where no ho go (Fuck her),no,62,"Blackout, just see roho (DY Krazy, bah)",roho,INNER,ASSONANCE,vowel,LOW,N
+Stomp,61,I don't care where no ho go (Fuck her),no ho,62,"Blackout, just see roho (DY Krazy, bah)",see roho,INNER,MULTI,multi,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),go,63,"I'm in L.A., I don't do no ho (Yeah)",ho,END,PERFECT,cmu,HIGH,Y
+Stomp,61,I don't care where no ho go (Fuck her),care,63,"I'm in L.A., I don't do no ho (Yeah)",L,INNER,SLANT,cmu,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),don't,63,"I'm in L.A., I don't do no ho (Yeah)",don't,INNER,REPEAT,spelling,HIGH,N
+Stomp,61,I don't care where no ho go (Fuck her),don't,63,"I'm in L.A., I don't do no ho (Yeah)",ho,INNER,ASSONANCE,vowel,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),don't,63,"I'm in L.A., I don't do no ho (Yeah)",no,INNER,ASSONANCE,vowel,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),go,63,"I'm in L.A., I don't do no ho (Yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),go,63,"I'm in L.A., I don't do no ho (Yeah)",no,INNER,PERFECT,cmu,HIGH,Y
+Stomp,61,I don't care where no ho go (Fuck her),ho,63,"I'm in L.A., I don't do no ho (Yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),ho,63,"I'm in L.A., I don't do no ho (Yeah)",ho,INNER,REPEAT,spelling,HIGH,N
+Stomp,61,I don't care where no ho go (Fuck her),ho,63,"I'm in L.A., I don't do no ho (Yeah)",no,INNER,PERFECT,cmu,HIGH,Y
+Stomp,61,I don't care where no ho go (Fuck her),no,63,"I'm in L.A., I don't do no ho (Yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+Stomp,61,I don't care where no ho go (Fuck her),no,63,"I'm in L.A., I don't do no ho (Yeah)",ho,INNER,PERFECT,cmu,HIGH,Y
+Stomp,61,I don't care where no ho go (Fuck her),no,63,"I'm in L.A., I don't do no ho (Yeah)",no,INNER,REPEAT,spelling,HIGH,N
+Stomp,61,I don't care where no ho go (Fuck her),where,63,"I'm in L.A., I don't do no ho (Yeah)",L,INNER,SLANT,cmu,MED,Y
+Stomp,62,"Blackout, just see roho (DY Krazy, bah)",see roho,63,"I'm in L.A., I don't do no ho (Yeah)",no ho,END,MULTI,multi,MED,Y
+Stomp,62,"Blackout, just see roho (DY Krazy, bah)",roho,63,"I'm in L.A., I don't do no ho (Yeah)",don't,INNER,ASSONANCE,vowel,LOW,N
+Stomp,62,"Blackout, just see roho (DY Krazy, bah)",roho,63,"I'm in L.A., I don't do no ho (Yeah)",no,INNER,ASSONANCE,vowel,LOW,N
+Stomp,63,"I'm in L.A., I don't do no ho (Yeah)",don't,63,"I'm in L.A., I don't do no ho (Yeah)",ho,INNER,ASSONANCE,vowel,MED,Y
+Stomp,63,"I'm in L.A., I don't do no ho (Yeah)",don't,63,"I'm in L.A., I don't do no ho (Yeah)",no,INNER,ASSONANCE,vowel,MED,Y
+Stomp,63,"I'm in L.A., I don't do no ho (Yeah)",no,63,"I'm in L.A., I don't do no ho (Yeah)",ho,INNER,PERFECT,cmu,HIGH,Y
+Stomp,63,"I'm in L.A., I don't do no ho (Yeah)",L,65,"Money pourin', shit get borin' (You know that)",get,INNER,SLANT,cmu,MED,Y
+Stomp,64,I buy foreigns and buy four more (You know that),buy,64,I buy foreigns and buy four more (You know that),buy,INNER,REPEAT,spelling,HIGH,N
+Stomp,64,I buy foreigns and buy four more (You know that),four,64,I buy foreigns and buy four more (You know that),more,INNER,PERFECT,cmu,HIGH,Y
+Stomp,64,I buy foreigns and buy four more (You know that),more,65,"Money pourin', shit get borin' (You know that)",borin,END,SLANT,cmu,MED,Y
+Stomp,64,I buy foreigns and buy four more (You know that),four,65,"Money pourin', shit get borin' (You know that)",borin,INNER,SLANT,cmu,MED,Y
+Stomp,64,I buy foreigns and buy four more (You know that),four,65,"Money pourin', shit get borin' (You know that)",pourin,INNER,SLANT,cmu,MED,Y
+Stomp,64,I buy foreigns and buy four more (You know that),more,65,"Money pourin', shit get borin' (You know that)",pourin,INNER,SLANT,cmu,MED,Y
+Stomp,64,I buy foreigns and buy four more (You know that),more,67,We be shootin' and we scorin',scorin,END,SLANT,cmu,MED,Y
+Stomp,64,I buy foreigns and buy four more (You know that),more,68,"I'm in Louis, Saint Laurent",Laurent,END,ASSONANCE,vowel,MED,Y
+Stomp,65,"Money pourin', shit get borin' (You know that)",pourin,65,"Money pourin', shit get borin' (You know that)",borin,INNER,SLANT,cmu,MED,Y
+Stomp,65,"Money pourin', shit get borin' (You know that)",Money,66,Couple mill' just off tourin' (You know that),Couple,INNER,ASSONANCE,vowel,MED,Y
+Stomp,65,"Money pourin', shit get borin' (You know that)",shit,66,Couple mill' just off tourin' (You know that),mill,INNER,SLANT,cmu,MED,Y
+Stomp,65,"Money pourin', shit get borin' (You know that)",borin,67,We be shootin' and we scorin',scorin,END,SLANT,cmu,MED,Y
+Stomp,65,"Money pourin', shit get borin' (You know that)",Money pourin,67,We be shootin' and we scorin',shootin scorin,INNER,MULTI,multi,HIGH,Y
+Stomp,65,"Money pourin', shit get borin' (You know that)",pourin,67,We be shootin' and we scorin',scorin,INNER,MULTI,multi,HIGH,Y
+Stomp,65,"Money pourin', shit get borin' (You know that)",borin,68,"I'm in Louis, Saint Laurent",Laurent,END,SLANT,cmu,MED,Y
+Stomp,65,"Money pourin', shit get borin' (You know that)",borin,69,I go up while you snorin',snorin,END,SLANT,cmu,MED,Y
+Stomp,67,We be shootin' and we scorin',scorin,68,"I'm in Louis, Saint Laurent",Laurent,END,ASSONANCE,vowel,MED,Y
+Stomp,67,We be shootin' and we scorin',shootin,68,"I'm in Louis, Saint Laurent",Louis,INNER,ASSONANCE,vowel,MED,Y
+Stomp,67,We be shootin' and we scorin',scorin,69,I go up while you snorin',snorin,END,MULTI,multi,HIGH,Y
+Stomp,67,We be shootin' and we scorin',scorin,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",torn,END,SLANT,cmu,MED,Y
+Stomp,68,"I'm in Louis, Saint Laurent",Laurent,69,I go up while you snorin',snorin,END,ASSONANCE,vowel,MED,Y
+Stomp,68,"I'm in Louis, Saint Laurent",Laurent,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",torn,END,SLANT,cmu,MED,Y
+Stomp,68,"I'm in Louis, Saint Laurent",Laurent,72,"If it's beef, niggas die, he alive, now he corn (A vegetable)",corn,END,SLANT,cmu,MED,Y
+Stomp,69,I go up while you snorin',go,70,We go up when we warin' (Ayy),go,INNER,REPEAT,spelling,HIGH,N
+Stomp,69,I go up while you snorin',snorin,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",torn,END,SLANT,cmu,MED,Y
+Stomp,69,I go up while you snorin',snorin,72,"If it's beef, niggas die, he alive, now he corn (A vegetable)",corn,END,SLANT,cmu,MED,Y
+Stomp,70,We go up when we warin' (Ayy),when,70,We go up when we warin' (Ayy),warin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,70,We go up when we warin' (Ayy),warin,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",get,INNER,ASSONANCE,vowel,MED,Y
+Stomp,70,We go up when we warin' (Ayy),when,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",get,INNER,SLANT,cmu,MED,Y
+Stomp,70,We go up when we warin' (Ayy),warin,73,"Call us elastic, bitch, we stretchin' you",stretchin,END,SLANT,cmu,MED,Y
+Stomp,70,We go up when we warin' (Ayy),warin,74,We smokin' your ass and whoever next to you,next,END,ASSONANCE,vowel,MED,Y
+Stomp,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",buck,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",fucked,INNER,SLANT,cmu,MED,Y
+Stomp,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",get,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",get,INNER,REPEAT,spelling,HIGH,N
+Stomp,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",torn,72,"If it's beef, niggas die, he alive, now he corn (A vegetable)",corn,END,PERFECT,cmu,HIGH,Y
+Stomp,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",now,72,"If it's beef, niggas die, he alive, now he corn (A vegetable)",now,INNER,REPEAT,spelling,HIGH,N
+Stomp,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",get,73,"Call us elastic, bitch, we stretchin' you",stretchin,INNER,ASSONANCE,vowel,MED,Y
+Stomp,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",ripped,73,"Call us elastic, bitch, we stretchin' you",bitch,INNER,ASSONANCE,vowel,MED,Y
+Stomp,71,"Shotty buck, get fucked up, get ripped up, now he torn (R.I.P.)",torn,73,"Call us elastic, bitch, we stretchin' you",Call,INNER,ASSONANCE,vowel,MED,Y
+Stomp,72,"If it's beef, niggas die, he alive, now he corn (A vegetable)",die,72,"If it's beef, niggas die, he alive, now he corn (A vegetable)",alive,INNER,ASSONANCE,vowel,MED,Y
+Stomp,72,"If it's beef, niggas die, he alive, now he corn (A vegetable)",corn,73,"Call us elastic, bitch, we stretchin' you",Call,INNER,ASSONANCE,vowel,MED,Y
+Stomp,72,"If it's beef, niggas die, he alive, now he corn (A vegetable)",niggas,74,We smokin' your ass and whoever next to you,ass,INNER,PERFECT,spelling,MED,Y
+Stomp,73,"Call us elastic, bitch, we stretchin' you",stretchin,74,We smokin' your ass and whoever next to you,next,END,ASSONANCE,vowel,MED,Y
+Stomp,73,"Call us elastic, bitch, we stretchin' you",elastic,74,We smokin' your ass and whoever next to you,ass,INNER,ASSONANCE,vowel,MED,Y
+Stomp,73,"Call us elastic, bitch, we stretchin' you",stretchin,74,We smokin' your ass and whoever next to you,whoever,INNER,ASSONANCE,vowel,MED,Y
+Stomp,73,"Call us elastic, bitch, we stretchin' you",bitch,75,We burn him alive and cut off his testicles,him,INNER,SLANT,cmu,MED,Y
+Stomp,73,"Call us elastic, bitch, we stretchin' you",bitch,75,We burn him alive and cut off his testicles,testicles,INNER,ASSONANCE,vowel,MED,Y
+Stomp,73,"Call us elastic, bitch, we stretchin' you",stretchin,76,"Bury him half, they couldn't find the rest of you",rest,END,ASSONANCE,vowel,MED,Y
+Stomp,74,We smokin' your ass and whoever next to you,whoever,74,We smokin' your ass and whoever next to you,next,INNER,ASSONANCE,vowel,MED,Y
+Stomp,74,We smokin' your ass and whoever next to you,next,76,"Bury him half, they couldn't find the rest of you",rest,END,SLANT,cmu,MED,Y
+Stomp,74,We smokin' your ass and whoever next to you,ass,76,"Bury him half, they couldn't find the rest of you",half,INNER,SLANT,cmu,MED,Y
+Stomp,74,We smokin' your ass and whoever next to you,next,76,"Bury him half, they couldn't find the rest of you",Bury,INNER,ASSONANCE,vowel,MED,Y
+Stomp,74,We smokin' your ass and whoever next to you,whoever,76,"Bury him half, they couldn't find the rest of you",Bury,INNER,SLANT,cmu,MED,Y
+Stomp,74,We smokin' your ass and whoever next to you,whoever,76,"Bury him half, they couldn't find the rest of you",rest,INNER,ASSONANCE,vowel,MED,Y
+Stomp,75,We burn him alive and cut off his testicles,him,75,We burn him alive and cut off his testicles,testicles,INNER,ASSONANCE,vowel,MED,Y
+Stomp,75,We burn him alive and cut off his testicles,alive,76,"Bury him half, they couldn't find the rest of you",find,INNER,ASSONANCE,vowel,MED,Y
+Stomp,75,We burn him alive and cut off his testicles,him,76,"Bury him half, they couldn't find the rest of you",him,INNER,REPEAT,spelling,HIGH,N
+Stomp,75,We burn him alive and cut off his testicles,testicles,76,"Bury him half, they couldn't find the rest of you",him,INNER,ASSONANCE,vowel,MED,Y
+Stomp,76,"Bury him half, they couldn't find the rest of you",Bury,76,"Bury him half, they couldn't find the rest of you",rest,INNER,ASSONANCE,vowel,MED,Y

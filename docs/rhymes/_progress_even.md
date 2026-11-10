@@ -136,6 +136,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 124 | hoodrich-pablo-juan | Hoodrich Pablo Juan | 2 | 82 | 462 | 127 | 335 | 448 | 2026-11-10 13:19 ET |
 | 125 | wam-spinthabin | Wam SpinThaBin | 2 | 82 | 585 | 94 | 491 | 578 | 2026-11-10 13:19 ET |
 | 126 | asap-rocky | A$AP Rocky | 2 | 81 | 478 | 65 | 413 | 477 | 2026-11-10 13:19 ET |
+| 127 | ann-marie | Ann Marie | 2 | 81 | 536 | 106 | 430 | 534 | 2026-11-10 13:19 ET |
+| 128 | jason-derulo | Jason Derulo | 3 | 80 | 457 | 103 | 354 | 449 | 2026-11-10 13:19 ET |
+| 129 | summer-walker | Summer Walker | 2 | 80 | 338 | 57 | 281 | 334 | 2026-11-10 13:19 ET |
+| 130 | bankroll-mafia | Bankroll Mafia | 1 | 79 | 464 | 103 | 361 | 461 | 2026-11-10 13:19 ET |
+| 131 | obasi-jackson | Obasi Jackson | 2 | 79 | 253 | 43 | 210 | 250 | 2026-11-10 13:19 ET |
+| 132 | sauce-walka | Sauce Walka | 2 | 78 | 562 | 116 | 446 | 559 | 2026-11-10 13:19 ET |
+| 133 | bop-menaxe | Bop Menaxe | 2 | 77 | 374 | 87 | 287 | 373 | 2026-11-10 13:19 ET |
+| 134 | jnr-choi | JNR CHOI | 1 | 77 | 326 | 50 | 276 | 322 | 2026-11-10 13:20 ET |
+| 135 | dcg-brothers | DCG BROTHERS | 1 | 76 | 514 | 128 | 386 | 493 | 2026-11-10 13:20 ET |
+| 136 | paxquiao | Paxquiao | 2 | 76 | 405 | 71 | 334 | 397 | 2026-11-10 13:20 ET |
 
 ## Failures
 
@@ -143,7 +153,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 126/386: A$AP Rocky.
+Finished 136/386: Paxquiao.
 
 ## Final
 
