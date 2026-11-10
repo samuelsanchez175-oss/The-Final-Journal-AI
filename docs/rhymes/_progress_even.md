@@ -403,8 +403,8 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 386/386: Eminem.
+Queue empty.
 
 ## Final
 
-Not finished.
+Artists done: 386. Failures: 0. Total pairs: 4694855. Total core: 4612004. Vault count: 1708472.
