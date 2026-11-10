@@ -1,0 +1,786 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+100 Round Choppers,1,"Choppa, choppa, choppa, choppa",Choppa,1,"Choppa, choppa, choppa, choppa",choppa,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,1,"Choppa, choppa, choppa, choppa",choppa,3,"Hunnid round choppas, my lil' niggas like shottas",shottas,END,ASSONANCE,vowel,LOW,N
+100 Round Choppers,1,"Choppa, choppa, choppa, choppa",Choppa,3,"Hunnid round choppas, my lil' niggas like shottas",choppas,INNER,SLANT,spelling,LOW,Y
+100 Round Choppers,1,"Choppa, choppa, choppa, choppa",Choppa,3,"Hunnid round choppas, my lil' niggas like shottas",shottas,INNER,ASSONANCE,vowel,LOW,N
+100 Round Choppers,2,"ATL Jacob, ATL Jacob",ATL,2,"ATL Jacob, ATL Jacob",ATL,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,2,"ATL Jacob, ATL Jacob",Jacob,2,"ATL Jacob, ATL Jacob",Jacob,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,3,"Hunnid round choppas, my lil' niggas like shottas",choppas,3,"Hunnid round choppas, my lil' niggas like shottas",niggas,INNER,PERFECT,spelling,MED,Y
+100 Round Choppers,3,"Hunnid round choppas, my lil' niggas like shottas",choppas,3,"Hunnid round choppas, my lil' niggas like shottas",shottas,INNER,PERFECT,spelling,MED,Y
+100 Round Choppers,3,"Hunnid round choppas, my lil' niggas like shottas",niggas,3,"Hunnid round choppas, my lil' niggas like shottas",shottas,INNER,PERFECT,spelling,MED,Y
+100 Round Choppers,3,"Hunnid round choppas, my lil' niggas like shottas",like,4,"Might sell ya father, we get plenty of dollars",Might,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,3,"Hunnid round choppas, my lil' niggas like shottas",lil,5,"Have a ménage, uh, with your bitch on my Charger",bitch,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",father,4,"Might sell ya father, we get plenty of dollars",dollars,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",get,4,"Might sell ya father, we get plenty of dollars",plenty,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",sell,4,"Might sell ya father, we get plenty of dollars",get,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",sell,4,"Might sell ya father, we get plenty of dollars",plenty,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",dollars,5,"Have a ménage, uh, with your bitch on my Charger",Charger,END,SLANT,cmu,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",father,5,"Have a ménage, uh, with your bitch on my Charger",Charger,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",get,5,"Have a ménage, uh, with your bitch on my Charger",m,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",plenty,5,"Have a ménage, uh, with your bitch on my Charger",m,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",sell,5,"Have a ménage, uh, with your bitch on my Charger",m,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",dollars,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,END,SLANT,cmu,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",dollars,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",bottom,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",dollars,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",got,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",father,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",bottom,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",father,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",got,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",father,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",dollars,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",dodge,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,4,"Might sell ya father, we get plenty of dollars",dollars,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",Have,5,"Have a ménage, uh, with your bitch on my Charger",nage,INNER,SLANT,spelling,LOW,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",Charger,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,END,MULTI,multi,HIGH,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",Charger,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",bottom,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",Charger,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",got,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",Charger,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",dodge,END,SLANT,cmu,MED,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",bitch,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",bitch,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",bitch,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",I'ma,INNER,SLANT,spelling,LOW,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",Charger,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",problems,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",Charger,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",want,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",Charger,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,5,"Have a ménage, uh, with your bitch on my Charger",Charger,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),bossed,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",bottom,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",got,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",bottom,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",got,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",dodge,END,SLANT,cmu,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",bottom,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",dodge,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",bottom,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",problems,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",bottom,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",want,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",got,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",dodge,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",got,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",problems,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",got,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",want,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",problems,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",want,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",bottom,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",got,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,6,"Was at the bottom now a nigga got larger (Yeah, yeah)",larger,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),bossed,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",bitch,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",I'ma,INNER,SLANT,spelling,LOW,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",Don't,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",no,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",problems,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",dodge,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",want,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",dodge,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",want,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",problems,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",dodge,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",Don't,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",coast,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",no,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",coast,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",problems,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",want,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",dodge,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),bossed,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",problems,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),bossed,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,7,"Don't want no problems with that bitch, I'ma dodge her (Yeah, yeah)",want,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),bossed,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),bossed,END,SLANT,cmu,MED,Y
+100 Round Choppers,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",eatin,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),mean,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",Miami,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),GRAMMY,INNER,MULTI,multi,HIGH,Y
+100 Round Choppers,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",coast,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",no,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",lobster,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",got,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",Miami,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",Can't,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,8,"I'm in Miami on the coast eatin' lobster (Woo, woo)",Miami,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",panties,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),bossed,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",got,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),GRAMMY,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",Can't,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),GRAMMY,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",panties,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),won,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",done,INNER,PERFECT,cmu,HIGH,Y
+100 Round Choppers,9,I won a GRAMMY just to mean that I'm bossed up (Yeah),GRAMMY,11,"Yes, I'm a bandit, uh",bandit,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",Can't,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",panties,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",Can't,11,"Yes, I'm a bandit, uh",bandit,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",panties,11,"Yes, I'm a bandit, uh",bandit,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",wear,11,"Yes, I'm a bandit, uh",Yes,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",Can't,12,"Came from the planet (Woo, woo)",planet,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,10,"Can't wear no panties, yeah, that chick done got tossed up (Slatt, slatt)",panties,12,"Came from the planet (Woo, woo)",planet,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,11,"Yes, I'm a bandit, uh",bandit,12,"Came from the planet (Woo, woo)",planet,END,SLANT,cmu,MED,Y
+100 Round Choppers,11,"Yes, I'm a bandit, uh",bandit,13,Fuck her then vanish (Yeah),vanish,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,12,"Came from the planet (Woo, woo)",planet,13,Fuck her then vanish (Yeah),vanish,END,SLANT,cmu,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",give,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",shit,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",stick,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",give,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",stick,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",shit,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",shit,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",glisten,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",give,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",glisten,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",give,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",wrist,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",shit,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",wrist,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",stick,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",glisten,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",stick,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",wrist,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",shit,16,"I just paid a rent (Rent), choppa came with tint (Woo)",tint,END,SLANT,cmu,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",don't,16,"I just paid a rent (Rent), choppa came with tint (Woo)",tint,INNER,SLANT,spelling,LOW,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",give,16,"I just paid a rent (Rent), choppa came with tint (Woo)",tint,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,14,"Walk in with the stick (Yeah), I don't give a shit (Yeah)",stick,16,"I just paid a rent (Rent), choppa came with tint (Woo)",tint,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",wrist,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",glisten,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",glisten,16,"I just paid a rent (Rent), choppa came with tint (Woo)",tint,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",ate,16,"I just paid a rent (Rent), choppa came with tint (Woo)",came,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",ate,16,"I just paid a rent (Rent), choppa came with tint (Woo)",paid,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",wrist,16,"I just paid a rent (Rent), choppa came with tint (Woo)",tint,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",ate,17,"I just fucked your bitch and gave her back like (Woo, woo)",gave,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",glisten,17,"I just fucked your bitch and gave her back like (Woo, woo)",bitch,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,15,"I just ate my wrist (Yeah), VVs, it glisten (Yeah)",wrist,17,"I just fucked your bitch and gave her back like (Woo, woo)",bitch,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,16,"I just paid a rent (Rent), choppa came with tint (Woo)",paid,16,"I just paid a rent (Rent), choppa came with tint (Woo)",came,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,16,"I just paid a rent (Rent), choppa came with tint (Woo)",came,17,"I just fucked your bitch and gave her back like (Woo, woo)",gave,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,16,"I just paid a rent (Rent), choppa came with tint (Woo)",paid,17,"I just fucked your bitch and gave her back like (Woo, woo)",gave,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,16,"I just paid a rent (Rent), choppa came with tint (Woo)",tint,17,"I just fucked your bitch and gave her back like (Woo, woo)",bitch,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,16,"I just paid a rent (Rent), choppa came with tint (Woo)",rent,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",get,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,16,"I just paid a rent (Rent), choppa came with tint (Woo)",rent,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",sent,INNER,PERFECT,cmu,HIGH,Y
+100 Round Choppers,16,"I just paid a rent (Rent), choppa came with tint (Woo)",tint,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",business,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,16,"I just paid a rent (Rent), choppa came with tint (Woo)",tint,20,I got a bad bitch,bitch,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,17,"I just fucked your bitch and gave her back like (Woo, woo)",back,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",man,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,17,"I just fucked your bitch and gave her back like (Woo, woo)",bitch,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",business,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,17,"I just fucked your bitch and gave her back like (Woo, woo)",back,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",extravagant,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,17,"I just fucked your bitch and gave her back like (Woo, woo)",back,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",makin,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,17,"I just fucked your bitch and gave her back like (Woo, woo)",bitch,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",hits,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",get,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",sent,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",business,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",hits,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",get,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",Every,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",keep,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",beat,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",man,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",extravagant,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",man,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",makin,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",sent,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",Every,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",business,20,I got a bad bitch,bitch,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",man,20,I got a bad bitch,bad,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,18,"Nigga keep on talkin', man, that business gon' get sent, yeah",talkin,20,I got a bad bitch,got,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",makin,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",extravagant,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",extravagant,20,I got a bad bitch,bad,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",hits,20,I got a bad bitch,bitch,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",makin,20,I got a bad bitch,bad,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",extravagant,21,Turn to a savage (Let's go),savage,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",makin,21,Turn to a savage (Let's go),savage,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",extravagant,22,"No, I'm not average (What?)",average,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,19,"Every beat I'm walkin', makin' hits extravagant (Yeah)",extravagant,23,Green like a cabbage,cabbage,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,20,I got a bad bitch,bad,21,Turn to a savage (Let's go),savage,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,20,I got a bad bitch,bad,22,"No, I'm not average (What?)",average,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,20,I got a bad bitch,got,22,"No, I'm not average (What?)",not,INNER,PERFECT,cmu,HIGH,Y
+100 Round Choppers,20,I got a bad bitch,bitch,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",kiss,END,SLANT,cmu,MED,Y
+100 Round Choppers,21,Turn to a savage (Let's go),savage,22,"No, I'm not average (What?)",average,END,SLANT,cmu,MED,Y
+100 Round Choppers,21,Turn to a savage (Let's go),savage,23,Green like a cabbage,cabbage,END,SLANT,cmu,MED,Y
+100 Round Choppers,22,"No, I'm not average (What?)",average,23,Green like a cabbage,cabbage,END,SLANT,cmu,MED,Y
+100 Round Choppers,22,"No, I'm not average (What?)",average,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",baddest,INNER,ASSONANCE,vowel,LOW,N
+100 Round Choppers,22,"No, I'm not average (What?)",average,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",bag,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,22,"No, I'm not average (What?)",No,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",don't,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,22,"No, I'm not average (What?)",No,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",no,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,23,Green like a cabbage,cabbage,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",baddest,INNER,ASSONANCE,vowel,LOW,N
+100 Round Choppers,23,Green like a cabbage,cabbage,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",bag,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",bitch,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",kiss,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",I'ma,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",bitch,INNER,SLANT,spelling,LOW,Y
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",I'ma,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",kiss,INNER,SLANT,spelling,LOW,Y
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",no,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",don't,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",kiss,25,"Yeah, I'm a Bourne with the Glock, I don't miss",miss,END,PERFECT,cmu,HIGH,Y
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",bitch,25,"Yeah, I'm a Bourne with the Glock, I don't miss",miss,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",don't,25,"Yeah, I'm a Bourne with the Glock, I don't miss",don't,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",I'ma,25,"Yeah, I'm a Bourne with the Glock, I don't miss",miss,INNER,SLANT,spelling,LOW,Y
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",no,25,"Yeah, I'm a Bourne with the Glock, I don't miss",don't,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,24,"I'ma bag bitch, fuck on the baddest but no, I don't kiss (Woo)",kiss,27,Went to New York with some ice on my wrist (Yeah),wrist,END,SLANT,cmu,MED,Y
+100 Round Choppers,25,"Yeah, I'm a Bourne with the Glock, I don't miss",Glock,26,I'm goin' straight to the top on my,top,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,25,"Yeah, I'm a Bourne with the Glock, I don't miss",miss,27,Went to New York with some ice on my wrist (Yeah),wrist,END,SLANT,cmu,MED,Y
+100 Round Choppers,25,"Yeah, I'm a Bourne with the Glock, I don't miss",Bourne,27,Went to New York with some ice on my wrist (Yeah),York,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,26,I'm goin' straight to the top on my,top,28,I'm fresh out the boat like I just got some,got,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,27,Went to New York with some ice on my wrist (Yeah),ice,28,I'm fresh out the boat like I just got some,like,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,27,Went to New York with some ice on my wrist (Yeah),some,28,I'm fresh out the boat like I just got some,some,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,27,Went to New York with some ice on my wrist (Yeah),Went,28,I'm fresh out the boat like I just got some,fresh,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,27,Went to New York with some ice on my wrist (Yeah),ice,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",sometime,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,27,Went to New York with some ice on my wrist (Yeah),some,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",one,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,27,Went to New York with some ice on my wrist (Yeah),Went,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",said,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,28,I'm fresh out the boat like I just got some,fresh,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",said,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,28,I'm fresh out the boat like I just got some,like,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",sometime,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,28,I'm fresh out the boat like I just got some,some,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",one,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,28,I'm fresh out the boat like I just got some,fresh,30,"Got some of ya niggas, they ready to line",ready,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,28,I'm fresh out the boat like I just got some,got,30,"Got some of ya niggas, they ready to line",Got,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,28,I'm fresh out the boat like I just got some,like,30,"Got some of ya niggas, they ready to line",line,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,28,I'm fresh out the boat like I just got some,some,30,"Got some of ya niggas, they ready to line",some,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",can,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",hang,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",Perc,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",Girl,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",sometime,30,"Got some of ya niggas, they ready to line",line,END,SLANT,cmu,MED,Y
+100 Round Choppers,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",one,30,"Got some of ya niggas, they ready to line",some,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",said,30,"Got some of ya niggas, they ready to line",ready,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",sometime,31,"All of this money, it blowin' my phone line",line,END,SLANT,cmu,MED,Y
+100 Round Choppers,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",one,31,"All of this money, it blowin' my phone line",money,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",sometime,32,"I know this shit, perfect time",time,END,PERFECT,cmu,HIGH,Y
+100 Round Choppers,29,"I gave her one Perc', I said, ""Girl, we can hang sometime""",sometime,33,I done made it off of rhymes,rhymes,END,SLANT,cmu,MED,Y
+100 Round Choppers,30,"Got some of ya niggas, they ready to line",line,31,"All of this money, it blowin' my phone line",line,END,REPEAT,spelling,HIGH,N
+100 Round Choppers,30,"Got some of ya niggas, they ready to line",some,31,"All of this money, it blowin' my phone line",money,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,30,"Got some of ya niggas, they ready to line",line,32,"I know this shit, perfect time",time,END,SLANT,cmu,MED,Y
+100 Round Choppers,30,"Got some of ya niggas, they ready to line",ready,32,"I know this shit, perfect time",perfect,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,30,"Got some of ya niggas, they ready to line",line,33,I done made it off of rhymes,rhymes,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,31,"All of this money, it blowin' my phone line",blowin,31,"All of this money, it blowin' my phone line",phone,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,31,"All of this money, it blowin' my phone line",line,32,"I know this shit, perfect time",time,END,SLANT,cmu,MED,Y
+100 Round Choppers,31,"All of this money, it blowin' my phone line",blowin,32,"I know this shit, perfect time",know,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,31,"All of this money, it blowin' my phone line",phone,32,"I know this shit, perfect time",know,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,31,"All of this money, it blowin' my phone line",line,33,I done made it off of rhymes,rhymes,END,ASSONANCE,vowel,MED,Y
+100 Round Choppers,31,"All of this money, it blowin' my phone line",money,33,I done made it off of rhymes,done,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,32,"I know this shit, perfect time",time,33,I done made it off of rhymes,rhymes,END,SLANT,cmu,MED,Y
+100 Round Choppers,32,"I know this shit, perfect time",perfect,34,You can't tell me I ain't—,tell,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,33,I done made it off of rhymes,made,34,You can't tell me I ain't—,ain't,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,34,You can't tell me I ain't—,tell,36,"Diamonds in her tongue so it's diamonds in her neck, yeah (Let's go)",neck,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,35,"SRT, I show you how to steer, yeah",show,37,"Diamonds on my belt, but this is not no",no,INNER,PERFECT,cmu,HIGH,Y
+100 Round Choppers,36,"Diamonds in her tongue so it's diamonds in her neck, yeah (Let's go)",Diamonds,36,"Diamonds in her tongue so it's diamonds in her neck, yeah (Let's go)",diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,36,"Diamonds in her tongue so it's diamonds in her neck, yeah (Let's go)",Diamonds,37,"Diamonds on my belt, but this is not no",Diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,36,"Diamonds in her tongue so it's diamonds in her neck, yeah (Let's go)",neck,37,"Diamonds on my belt, but this is not no",belt,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,36,"Diamonds in her tongue so it's diamonds in her neck, yeah (Let's go)",Diamonds,38,"Diamonds in my sex, I got diamonds in my",Diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,36,"Diamonds in her tongue so it's diamonds in her neck, yeah (Let's go)",neck,38,"Diamonds in my sex, I got diamonds in my",sex,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,36,"Diamonds in her tongue so it's diamonds in her neck, yeah (Let's go)",neck,39,"I pull up with a rich bitch, diamonds in her dress (Yeah)",dress,END,SLANT,cmu,MED,Y
+100 Round Choppers,37,"Diamonds on my belt, but this is not no",belt,38,"Diamonds in my sex, I got diamonds in my",sex,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,37,"Diamonds on my belt, but this is not no",Diamonds,38,"Diamonds in my sex, I got diamonds in my",Diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,37,"Diamonds on my belt, but this is not no",not,38,"Diamonds in my sex, I got diamonds in my",got,INNER,PERFECT,cmu,HIGH,Y
+100 Round Choppers,37,"Diamonds on my belt, but this is not no",belt,39,"I pull up with a rich bitch, diamonds in her dress (Yeah)",dress,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,37,"Diamonds on my belt, but this is not no",Diamonds,39,"I pull up with a rich bitch, diamonds in her dress (Yeah)",diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,38,"Diamonds in my sex, I got diamonds in my",Diamonds,38,"Diamonds in my sex, I got diamonds in my",diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,38,"Diamonds in my sex, I got diamonds in my",Diamonds,39,"I pull up with a rich bitch, diamonds in her dress (Yeah)",diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,38,"Diamonds in my sex, I got diamonds in my",sex,39,"I pull up with a rich bitch, diamonds in her dress (Yeah)",dress,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,38,"Diamonds in my sex, I got diamonds in my",Diamonds,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",Diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,38,"Diamonds in my sex, I got diamonds in my",got,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",got,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,39,"I pull up with a rich bitch, diamonds in her dress (Yeah)",rich,39,"I pull up with a rich bitch, diamonds in her dress (Yeah)",bitch,INNER,PERFECT,cmu,HIGH,Y
+100 Round Choppers,39,"I pull up with a rich bitch, diamonds in her dress (Yeah)",diamonds,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",Diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",Diamonds,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",diamonds,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",got,41,"Forgiato wheels, I don't want no BBS",want,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",no,41,"Forgiato wheels, I don't want no BBS",don't,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",no,41,"Forgiato wheels, I don't want no BBS",Forgiato,INNER,ASSONANCE,vowel,LOW,N
+100 Round Choppers,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",no,41,"Forgiato wheels, I don't want no BBS",no,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",VVs,42,"I got too much pull out by BackWoods, I CVS, yeah (Uh)",CVS,END,PERFECT,cmu,HIGH,Y
+100 Round Choppers,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",Diamonds,42,"I got too much pull out by BackWoods, I CVS, yeah (Uh)",by,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,40,"Diamonds got no flaws, diamonds stay on VVs, yeah",got,42,"I got too much pull out by BackWoods, I CVS, yeah (Uh)",got,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,41,"Forgiato wheels, I don't want no BBS",don't,41,"Forgiato wheels, I don't want no BBS",no,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,41,"Forgiato wheels, I don't want no BBS",Forgiato,41,"Forgiato wheels, I don't want no BBS",no,INNER,ASSONANCE,vowel,LOW,N
+100 Round Choppers,41,"Forgiato wheels, I don't want no BBS",want,42,"I got too much pull out by BackWoods, I CVS, yeah (Uh)",got,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,41,"Forgiato wheels, I don't want no BBS",want,43,"All brown, Tom Brown suit like UPS, yeah",Tom,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,42,"I got too much pull out by BackWoods, I CVS, yeah (Uh)",pull,42,"I got too much pull out by BackWoods, I CVS, yeah (Uh)",BackWoods,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,42,"I got too much pull out by BackWoods, I CVS, yeah (Uh)",by,43,"All brown, Tom Brown suit like UPS, yeah",like,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,42,"I got too much pull out by BackWoods, I CVS, yeah (Uh)",got,43,"All brown, Tom Brown suit like UPS, yeah",Tom,INNER,SLANT,cmu,MED,Y
+100 Round Choppers,42,"I got too much pull out by BackWoods, I CVS, yeah (Uh)",much,43,"All brown, Tom Brown suit like UPS, yeah",UPS,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,43,"All brown, Tom Brown suit like UPS, yeah",brown,43,"All brown, Tom Brown suit like UPS, yeah",Brown,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,43,"All brown, Tom Brown suit like UPS, yeah",like,45,Fin on my back like a shark,like,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,43,"All brown, Tom Brown suit like UPS, yeah",Tom,45,Fin on my back like a shark,shark,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,44,"These hoes for the streets, that's that THL finesse",These,44,"These hoes for the streets, that's that THL finesse",streets,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,44,"These hoes for the streets, that's that THL finesse",finesse,46,"Cleanin' up the mess, got the birds like a nest, yeah (Baow, baow)",nest,END,SLANT,cmu,MED,Y
+100 Round Choppers,44,"These hoes for the streets, that's that THL finesse",finesse,46,"Cleanin' up the mess, got the birds like a nest, yeah (Baow, baow)",mess,INNER,PERFECT,cmu,HIGH,Y
+100 Round Choppers,44,"These hoes for the streets, that's that THL finesse",streets,46,"Cleanin' up the mess, got the birds like a nest, yeah (Baow, baow)",Cleanin,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,44,"These hoes for the streets, that's that THL finesse",These,46,"Cleanin' up the mess, got the birds like a nest, yeah (Baow, baow)",Cleanin,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,45,Fin on my back like a shark,like,46,"Cleanin' up the mess, got the birds like a nest, yeah (Baow, baow)",like,INNER,REPEAT,spelling,HIGH,N
+100 Round Choppers,45,Fin on my back like a shark,shark,46,"Cleanin' up the mess, got the birds like a nest, yeah (Baow, baow)",got,INNER,ASSONANCE,vowel,MED,Y
+100 Round Choppers,46,"Cleanin' up the mess, got the birds like a nest, yeah (Baow, baow)",mess,46,"Cleanin' up the mess, got the birds like a nest, yeah (Baow, baow)",nest,INNER,SLANT,cmu,MED,Y
+Born In It,1,"Throw me the bag, I'ma catch it",bag,1,"Throw me the bag, I'ma catch it",catch,INNER,SLANT,cmu,MED,Y
+Born In It,1,"Throw me the bag, I'ma catch it",catch,2,"Bitch, I'm more near that I hatch it",hatch,END,PERFECT,cmu,HIGH,Y
+Born In It,1,"Throw me the bag, I'ma catch it",bag,2,"Bitch, I'm more near that I hatch it",hatch,INNER,SLANT,cmu,MED,Y
+Born In It,1,"Throw me the bag, I'ma catch it",I'ma,2,"Bitch, I'm more near that I hatch it",Bitch,INNER,SLANT,spelling,LOW,Y
+Born In It,1,"Throw me the bag, I'ma catch it",I'ma,2,"Bitch, I'm more near that I hatch it",near,INNER,SLANT,spelling,LOW,Y
+Born In It,1,"Throw me the bag, I'ma catch it",catch,3,I buy the pill by the batch,batch,END,PERFECT,cmu,HIGH,Y
+Born In It,1,"Throw me the bag, I'ma catch it",bag,3,I buy the pill by the batch,batch,INNER,SLANT,cmu,MED,Y
+Born In It,1,"Throw me the bag, I'ma catch it",I'ma,3,I buy the pill by the batch,pill,INNER,SLANT,spelling,LOW,Y
+Born In It,1,"Throw me the bag, I'ma catch it",catch,4,So many blue hundreds they match it,match,END,PERFECT,cmu,HIGH,Y
+Born In It,1,"Throw me the bag, I'ma catch it",catch,5,"My gang, we tight like a latch",latch,END,PERFECT,cmu,HIGH,Y
+Born In It,2,"Bitch, I'm more near that I hatch it",Bitch,2,"Bitch, I'm more near that I hatch it",near,INNER,SLANT,cmu,MED,Y
+Born In It,2,"Bitch, I'm more near that I hatch it",hatch,3,I buy the pill by the batch,batch,END,PERFECT,cmu,HIGH,Y
+Born In It,2,"Bitch, I'm more near that I hatch it",Bitch,3,I buy the pill by the batch,pill,INNER,SLANT,cmu,MED,Y
+Born In It,2,"Bitch, I'm more near that I hatch it",near,3,I buy the pill by the batch,pill,INNER,SLANT,cmu,MED,Y
+Born In It,2,"Bitch, I'm more near that I hatch it",hatch,4,So many blue hundreds they match it,match,END,PERFECT,cmu,HIGH,Y
+Born In It,2,"Bitch, I'm more near that I hatch it",hatch,5,"My gang, we tight like a latch",latch,END,PERFECT,cmu,HIGH,Y
+Born In It,2,"Bitch, I'm more near that I hatch it",hatch,6,"Look at my chain, its two-tone and match",match,END,PERFECT,cmu,HIGH,Y
+Born In It,3,I buy the pill by the batch,buy,3,I buy the pill by the batch,by,INNER,PERFECT,cmu,HIGH,Y
+Born In It,3,I buy the pill by the batch,batch,4,So many blue hundreds they match it,match,END,PERFECT,cmu,HIGH,Y
+Born In It,3,I buy the pill by the batch,batch,5,"My gang, we tight like a latch",latch,END,PERFECT,cmu,HIGH,Y
+Born In It,3,I buy the pill by the batch,batch,5,"My gang, we tight like a latch",gang,INNER,SLANT,cmu,MED,Y
+Born In It,3,I buy the pill by the batch,buy,5,"My gang, we tight like a latch",like,INNER,ASSONANCE,vowel,MED,Y
+Born In It,3,I buy the pill by the batch,buy,5,"My gang, we tight like a latch",tight,INNER,ASSONANCE,vowel,MED,Y
+Born In It,3,I buy the pill by the batch,by,5,"My gang, we tight like a latch",like,INNER,ASSONANCE,vowel,MED,Y
+Born In It,3,I buy the pill by the batch,by,5,"My gang, we tight like a latch",tight,INNER,ASSONANCE,vowel,MED,Y
+Born In It,3,I buy the pill by the batch,batch,6,"Look at my chain, its two-tone and match",match,END,PERFECT,cmu,HIGH,Y
+Born In It,3,I buy the pill by the batch,batch,7,"My fuck is so good, she attach it",attach,END,PERFECT,cmu,HIGH,Y
+Born In It,4,So many blue hundreds they match it,match,5,"My gang, we tight like a latch",latch,END,PERFECT,cmu,HIGH,Y
+Born In It,4,So many blue hundreds they match it,match,5,"My gang, we tight like a latch",gang,INNER,SLANT,cmu,MED,Y
+Born In It,4,So many blue hundreds they match it,match,6,"Look at my chain, its two-tone and match",match,END,REPEAT,spelling,HIGH,N
+Born In It,4,So many blue hundreds they match it,blue,6,"Look at my chain, its two-tone and match",two,INNER,PERFECT,cmu,HIGH,Y
+Born In It,4,So many blue hundreds they match it,match,7,"My fuck is so good, she attach it",attach,END,PERFECT,cmu,HIGH,Y
+Born In It,4,So many blue hundreds they match it,match,8,"Came in first place, they were last",last,END,ASSONANCE,vowel,MED,Y
+Born In It,5,"My gang, we tight like a latch",gang,5,"My gang, we tight like a latch",latch,INNER,SLANT,cmu,MED,Y
+Born In It,5,"My gang, we tight like a latch",tight,5,"My gang, we tight like a latch",like,INNER,SLANT,cmu,MED,Y
+Born In It,5,"My gang, we tight like a latch",latch,6,"Look at my chain, its two-tone and match",match,END,PERFECT,cmu,HIGH,Y
+Born In It,5,"My gang, we tight like a latch",gang,6,"Look at my chain, its two-tone and match",match,INNER,SLANT,cmu,MED,Y
+Born In It,5,"My gang, we tight like a latch",latch,7,"My fuck is so good, she attach it",attach,END,PERFECT,cmu,HIGH,Y
+Born In It,5,"My gang, we tight like a latch",gang,7,"My fuck is so good, she attach it",attach,INNER,SLANT,cmu,MED,Y
+Born In It,5,"My gang, we tight like a latch",latch,8,"Came in first place, they were last",last,END,ASSONANCE,vowel,MED,Y
+Born In It,5,"My gang, we tight like a latch",latch,9,Don't hop out with no mask,mask,END,ASSONANCE,vowel,MED,Y
+Born In It,6,"Look at my chain, its two-tone and match",match,7,"My fuck is so good, she attach it",attach,END,PERFECT,cmu,HIGH,Y
+Born In It,6,"Look at my chain, its two-tone and match",Look,7,"My fuck is so good, she attach it",good,INNER,SLANT,cmu,MED,Y
+Born In It,6,"Look at my chain, its two-tone and match",match,8,"Came in first place, they were last",last,END,ASSONANCE,vowel,MED,Y
+Born In It,6,"Look at my chain, its two-tone and match",chain,8,"Came in first place, they were last",Came,INNER,SLANT,cmu,MED,Y
+Born In It,6,"Look at my chain, its two-tone and match",chain,8,"Came in first place, they were last",place,INNER,SLANT,cmu,MED,Y
+Born In It,6,"Look at my chain, its two-tone and match",match,9,Don't hop out with no mask,mask,END,ASSONANCE,vowel,MED,Y
+Born In It,6,"Look at my chain, its two-tone and match",match,10,"Forget it, can't care about my past",past,END,ASSONANCE,vowel,MED,Y
+Born In It,7,"My fuck is so good, she attach it",attach,8,"Came in first place, they were last",last,END,ASSONANCE,vowel,MED,Y
+Born In It,7,"My fuck is so good, she attach it",attach,9,Don't hop out with no mask,mask,END,ASSONANCE,vowel,MED,Y
+Born In It,7,"My fuck is so good, she attach it",attach,10,"Forget it, can't care about my past",past,END,ASSONANCE,vowel,MED,Y
+Born In It,7,"My fuck is so good, she attach it",attach,11,The pussy get put in a casket,casket,END,ASSONANCE,vowel,MED,Y
+Born In It,8,"Came in first place, they were last",Came,8,"Came in first place, they were last",place,INNER,SLANT,cmu,MED,Y
+Born In It,8,"Came in first place, they were last",last,9,Don't hop out with no mask,mask,END,SLANT,cmu,MED,Y
+Born In It,8,"Came in first place, they were last",last,10,"Forget it, can't care about my past",past,END,PERFECT,cmu,HIGH,Y
+Born In It,8,"Came in first place, they were last",last,10,"Forget it, can't care about my past",can't,INNER,SLANT,cmu,MED,Y
+Born In It,8,"Came in first place, they were last",last,11,The pussy get put in a casket,casket,END,SLANT,cmu,MED,Y
+Born In It,8,"Came in first place, they were last",last,12,I'm in the club with this ratchet,ratchet,END,SLANT,cmu,MED,Y
+Born In It,9,Don't hop out with no mask,Don't,9,Don't hop out with no mask,no,INNER,ASSONANCE,vowel,MED,Y
+Born In It,9,Don't hop out with no mask,mask,10,"Forget it, can't care about my past",past,END,SLANT,cmu,MED,Y
+Born In It,9,Don't hop out with no mask,mask,10,"Forget it, can't care about my past",can't,INNER,ASSONANCE,vowel,MED,Y
+Born In It,9,Don't hop out with no mask,mask,11,The pussy get put in a casket,casket,END,SLANT,cmu,MED,Y
+Born In It,9,Don't hop out with no mask,mask,12,I'm in the club with this ratchet,ratchet,END,SLANT,cmu,MED,Y
+Born In It,9,Don't hop out with no mask,mask,13,"Niggas, they know that we having",having,END,ASSONANCE,vowel,MED,Y
+Born In It,10,"Forget it, can't care about my past",can't,10,"Forget it, can't care about my past",past,INNER,SLANT,cmu,MED,Y
+Born In It,10,"Forget it, can't care about my past",Forget,10,"Forget it, can't care about my past",care,INNER,SLANT,cmu,MED,Y
+Born In It,10,"Forget it, can't care about my past",past,11,The pussy get put in a casket,casket,END,SLANT,cmu,MED,Y
+Born In It,10,"Forget it, can't care about my past",can't,11,The pussy get put in a casket,casket,INNER,ASSONANCE,vowel,MED,Y
+Born In It,10,"Forget it, can't care about my past",care,11,The pussy get put in a casket,get,INNER,SLANT,cmu,MED,Y
+Born In It,10,"Forget it, can't care about my past",Forget,11,The pussy get put in a casket,get,INNER,PERFECT,cmu,HIGH,Y
+Born In It,10,"Forget it, can't care about my past",past,12,I'm in the club with this ratchet,ratchet,END,SLANT,cmu,MED,Y
+Born In It,10,"Forget it, can't care about my past",can't,12,I'm in the club with this ratchet,ratchet,INNER,SLANT,cmu,MED,Y
+Born In It,10,"Forget it, can't care about my past",past,13,"Niggas, they know that we having",having,END,ASSONANCE,vowel,MED,Y
+Born In It,10,"Forget it, can't care about my past",past,14,"Walking this beach, that's my passion",passion,END,ASSONANCE,vowel,MED,Y
+Born In It,11,The pussy get put in a casket,pussy,11,The pussy get put in a casket,put,INNER,SLANT,cmu,MED,Y
+Born In It,11,The pussy get put in a casket,casket,12,I'm in the club with this ratchet,ratchet,END,SLANT,cmu,MED,Y
+Born In It,11,The pussy get put in a casket,casket,13,"Niggas, they know that we having",having,END,ASSONANCE,vowel,MED,Y
+Born In It,11,The pussy get put in a casket,casket,14,"Walking this beach, that's my passion",passion,END,ASSONANCE,vowel,MED,Y
+Born In It,11,The pussy get put in a casket,casket,15,"My diamonds, they see through my glasses",glasses,END,ASSONANCE,vowel,MED,Y
+Born In It,12,I'm in the club with this ratchet,ratchet,13,"Niggas, they know that we having",having,END,ASSONANCE,vowel,MED,Y
+Born In It,12,I'm in the club with this ratchet,ratchet,14,"Walking this beach, that's my passion",passion,END,ASSONANCE,vowel,MED,Y
+Born In It,12,I'm in the club with this ratchet,ratchet,15,"My diamonds, they see through my glasses",glasses,END,ASSONANCE,vowel,MED,Y
+Born In It,12,I'm in the club with this ratchet,ratchet,16,Cover the key up in plastic,plastic,END,SLANT,cmu,MED,Y
+Born In It,13,"Niggas, they know that we having",having,14,"Walking this beach, that's my passion",passion,END,ASSONANCE,vowel,MED,Y
+Born In It,13,"Niggas, they know that we having",having,15,"My diamonds, they see through my glasses",glasses,END,ASSONANCE,vowel,MED,Y
+Born In It,13,"Niggas, they know that we having",having,16,Cover the key up in plastic,plastic,END,ASSONANCE,vowel,MED,Y
+Born In It,13,"Niggas, they know that we having",having,17,Riding with P's through traffic,traffic,END,ASSONANCE,vowel,MED,Y
+Born In It,14,"Walking this beach, that's my passion",passion,15,"My diamonds, they see through my glasses",glasses,END,ASSONANCE,vowel,MED,Y
+Born In It,14,"Walking this beach, that's my passion",beach,15,"My diamonds, they see through my glasses",see,INNER,ASSONANCE,vowel,MED,Y
+Born In It,14,"Walking this beach, that's my passion",passion,16,Cover the key up in plastic,plastic,END,ASSONANCE,vowel,MED,Y
+Born In It,14,"Walking this beach, that's my passion",beach,16,Cover the key up in plastic,key,INNER,ASSONANCE,vowel,MED,Y
+Born In It,14,"Walking this beach, that's my passion",passion,17,Riding with P's through traffic,traffic,END,ASSONANCE,vowel,MED,Y
+Born In It,14,"Walking this beach, that's my passion",passion,18,Taking this rap and it plastic,plastic,END,ASSONANCE,vowel,MED,Y
+Born In It,15,"My diamonds, they see through my glasses",glasses,16,Cover the key up in plastic,plastic,END,ASSONANCE,vowel,MED,Y
+Born In It,15,"My diamonds, they see through my glasses",see,16,Cover the key up in plastic,key,INNER,PERFECT,cmu,HIGH,Y
+Born In It,15,"My diamonds, they see through my glasses",glasses,17,Riding with P's through traffic,traffic,END,ASSONANCE,vowel,MED,Y
+Born In It,15,"My diamonds, they see through my glasses",diamonds,17,Riding with P's through traffic,Riding,INNER,ASSONANCE,vowel,MED,Y
+Born In It,15,"My diamonds, they see through my glasses",see,17,Riding with P's through traffic,P's,INNER,ASSONANCE,vowel,MED,Y
+Born In It,15,"My diamonds, they see through my glasses",through,17,Riding with P's through traffic,through,INNER,REPEAT,spelling,HIGH,N
+Born In It,15,"My diamonds, they see through my glasses",glasses,18,Taking this rap and it plastic,plastic,END,ASSONANCE,vowel,MED,Y
+Born In It,15,"My diamonds, they see through my glasses",glasses,19,"Smoking on blunt, screen that pass it",pass,END,SLANT,cmu,MED,Y
+Born In It,16,Cover the key up in plastic,plastic,17,Riding with P's through traffic,traffic,END,ASSONANCE,vowel,MED,Y
+Born In It,16,Cover the key up in plastic,key,17,Riding with P's through traffic,P's,INNER,ASSONANCE,vowel,MED,Y
+Born In It,16,Cover the key up in plastic,plastic,18,Taking this rap and it plastic,plastic,END,REPEAT,spelling,HIGH,N
+Born In It,16,Cover the key up in plastic,plastic,18,Taking this rap and it plastic,rap,INNER,ASSONANCE,vowel,MED,Y
+Born In It,16,Cover the key up in plastic,plastic,19,"Smoking on blunt, screen that pass it",pass,END,ASSONANCE,vowel,MED,Y
+Born In It,17,Riding with P's through traffic,traffic,18,Taking this rap and it plastic,plastic,END,ASSONANCE,vowel,MED,Y
+Born In It,17,Riding with P's through traffic,traffic,18,Taking this rap and it plastic,rap,INNER,ASSONANCE,vowel,MED,Y
+Born In It,17,Riding with P's through traffic,traffic,19,"Smoking on blunt, screen that pass it",pass,END,ASSONANCE,vowel,MED,Y
+Born In It,17,Riding with P's through traffic,P's,19,"Smoking on blunt, screen that pass it",screen,INNER,SLANT,cmu,MED,Y
+Born In It,17,Riding with P's through traffic,traffic,21,I just call up my twin and get nasty,nasty,END,ASSONANCE,vowel,MED,Y
+Born In It,18,Taking this rap and it plastic,rap,18,Taking this rap and it plastic,plastic,INNER,ASSONANCE,vowel,MED,Y
+Born In It,18,Taking this rap and it plastic,plastic,19,"Smoking on blunt, screen that pass it",pass,END,ASSONANCE,vowel,MED,Y
+Born In It,18,Taking this rap and it plastic,rap,19,"Smoking on blunt, screen that pass it",pass,INNER,SLANT,cmu,MED,Y
+Born In It,18,Taking this rap and it plastic,Taking,19,"Smoking on blunt, screen that pass it",Smoking,INNER,PERFECT,spelling,MED,Y
+Born In It,18,Taking this rap and it plastic,plastic,21,I just call up my twin and get nasty,nasty,END,SLANT,cmu,MED,Y
+Born In It,18,Taking this rap and it plastic,plastic,22,"Fuck me so good, she fantastic",fantastic,END,MULTI,multi,HIGH,Y
+Born In It,19,"Smoking on blunt, screen that pass it",pass,21,I just call up my twin and get nasty,nasty,END,SLANT,cmu,MED,Y
+Born In It,19,"Smoking on blunt, screen that pass it",pass,22,"Fuck me so good, she fantastic",fantastic,END,ASSONANCE,vowel,MED,Y
+Born In It,19,"Smoking on blunt, screen that pass it",pass,23,Bounce on this D like gymnastic,gymnastic,END,ASSONANCE,vowel,MED,Y
+Born In It,20,"I'm geeked up with my twin, I'm Macbeth-ing",twin,20,"I'm geeked up with my twin, I'm Macbeth-ing",ing,INNER,SLANT,cmu,MED,Y
+Born In It,20,"I'm geeked up with my twin, I'm Macbeth-ing",ing,21,I just call up my twin and get nasty,twin,INNER,SLANT,cmu,MED,Y
+Born In It,20,"I'm geeked up with my twin, I'm Macbeth-ing",Macbeth,21,I just call up my twin and get nasty,get,INNER,SLANT,cmu,MED,Y
+Born In It,20,"I'm geeked up with my twin, I'm Macbeth-ing",twin,21,I just call up my twin and get nasty,twin,INNER,REPEAT,spelling,HIGH,N
+Born In It,21,I just call up my twin and get nasty,nasty,22,"Fuck me so good, she fantastic",fantastic,END,SLANT,cmu,MED,Y
+Born In It,21,I just call up my twin and get nasty,nasty,23,Bounce on this D like gymnastic,gymnastic,END,SLANT,cmu,MED,Y
+Born In It,21,I just call up my twin and get nasty,nasty,24,Picking these hoes out the basket,basket,END,SLANT,cmu,MED,Y
+Born In It,22,"Fuck me so good, she fantastic",fantastic,23,Bounce on this D like gymnastic,gymnastic,END,MULTI,multi,HIGH,Y
+Born In It,22,"Fuck me so good, she fantastic",fantastic,24,Picking these hoes out the basket,basket,END,SLANT,cmu,MED,Y
+Born In It,22,"Fuck me so good, she fantastic",fantastic,26,"Hop out the Rolls, it's a pageant",pageant,END,SLANT,cmu,MED,Y
+Born In It,23,Bounce on this D like gymnastic,gymnastic,24,Picking these hoes out the basket,basket,END,SLANT,cmu,MED,Y
+Born In It,23,Bounce on this D like gymnastic,D,24,Picking these hoes out the basket,these,INNER,ASSONANCE,vowel,MED,Y
+Born In It,23,Bounce on this D like gymnastic,like,25,Like all my hoes attacted,Like,INNER,REPEAT,spelling,HIGH,N
+Born In It,23,Bounce on this D like gymnastic,gymnastic,26,"Hop out the Rolls, it's a pageant",pageant,END,SLANT,cmu,MED,Y
+Born In It,23,Bounce on this D like gymnastic,gymnastic,27,"Then I fuck up a ten, that bitch magic",magic,END,SLANT,cmu,MED,Y
+Born In It,24,Picking these hoes out the basket,basket,25,Like all my hoes attacted,attacted,END,ASSONANCE,vowel,LOW,N
+Born In It,24,Picking these hoes out the basket,hoes,25,Like all my hoes attacted,hoes,INNER,REPEAT,spelling,HIGH,N
+Born In It,24,Picking these hoes out the basket,basket,26,"Hop out the Rolls, it's a pageant",pageant,END,SLANT,cmu,MED,Y
+Born In It,24,Picking these hoes out the basket,hoes,26,"Hop out the Rolls, it's a pageant",Rolls,INNER,SLANT,cmu,MED,Y
+Born In It,24,Picking these hoes out the basket,basket,27,"Then I fuck up a ten, that bitch magic",magic,END,SLANT,cmu,MED,Y
+Born In It,25,Like all my hoes attacted,hoes,26,"Hop out the Rolls, it's a pageant",Rolls,INNER,SLANT,cmu,MED,Y
+Born In It,26,"Hop out the Rolls, it's a pageant",pageant,27,"Then I fuck up a ten, that bitch magic",magic,END,SLANT,cmu,MED,Y
+Born In It,26,"Hop out the Rolls, it's a pageant",Hop,28,"When I twist on the pill, not embarrassed",not,INNER,SLANT,cmu,MED,Y
+Born In It,27,"Then I fuck up a ten, that bitch magic",bitch,28,"When I twist on the pill, not embarrassed",pill,INNER,SLANT,cmu,MED,Y
+Born In It,27,"Then I fuck up a ten, that bitch magic",bitch,28,"When I twist on the pill, not embarrassed",twist,INNER,ASSONANCE,vowel,MED,Y
+Born In It,27,"Then I fuck up a ten, that bitch magic",ten,28,"When I twist on the pill, not embarrassed",embarrassed,INNER,ASSONANCE,vowel,MED,Y
+Born In It,27,"Then I fuck up a ten, that bitch magic",ten,28,"When I twist on the pill, not embarrassed",When,INNER,PERFECT,cmu,HIGH,Y
+Born In It,27,"Then I fuck up a ten, that bitch magic",ten,29,"Ice out my chain, check the carat",carat,INNER,ASSONANCE,vowel,MED,Y
+Born In It,27,"Then I fuck up a ten, that bitch magic",ten,29,"Ice out my chain, check the carat",check,INNER,SLANT,cmu,MED,Y
+Born In It,28,"When I twist on the pill, not embarrassed",twist,28,"When I twist on the pill, not embarrassed",pill,INNER,ASSONANCE,vowel,MED,Y
+Born In It,28,"When I twist on the pill, not embarrassed",When,28,"When I twist on the pill, not embarrassed",embarrassed,INNER,ASSONANCE,vowel,MED,Y
+Born In It,28,"When I twist on the pill, not embarrassed",embarrassed,29,"Ice out my chain, check the carat",carat,END,SLANT,cmu,MED,Y
+Born In It,28,"When I twist on the pill, not embarrassed",embarrassed,29,"Ice out my chain, check the carat",check,INNER,ASSONANCE,vowel,MED,Y
+Born In It,28,"When I twist on the pill, not embarrassed",When,29,"Ice out my chain, check the carat",carat,INNER,ASSONANCE,vowel,MED,Y
+Born In It,28,"When I twist on the pill, not embarrassed",When,29,"Ice out my chain, check the carat",check,INNER,SLANT,cmu,MED,Y
+Born In It,28,"When I twist on the pill, not embarrassed",embarrassed,30,"Copy the verse, you a parrot",parrot,END,SLANT,cmu,MED,Y
+Born In It,28,"When I twist on the pill, not embarrassed",not,30,"Copy the verse, you a parrot",Copy,INNER,SLANT,cmu,MED,Y
+Born In It,28,"When I twist on the pill, not embarrassed",When,30,"Copy the verse, you a parrot",parrot,INNER,ASSONANCE,vowel,MED,Y
+Born In It,29,"Ice out my chain, check the carat",check,29,"Ice out my chain, check the carat",carat,INNER,ASSONANCE,vowel,MED,Y
+Born In It,29,"Ice out my chain, check the carat",carat,30,"Copy the verse, you a parrot",parrot,END,MULTI,multi,HIGH,Y
+Born In It,29,"Ice out my chain, check the carat",check,30,"Copy the verse, you a parrot",parrot,INNER,ASSONANCE,vowel,MED,Y
+Born In It,30,"Copy the verse, you a parrot",Copy,32,"Hundreds of dogs, they race off the speakers",dogs,INNER,ASSONANCE,vowel,MED,Y
+Born In It,31,"I'm in that club, I'm having my heat up",heat,32,"Hundreds of dogs, they race off the speakers",speakers,END,ASSONANCE,vowel,MED,Y
+Born In It,31,"I'm in that club, I'm having my heat up",club,32,"Hundreds of dogs, they race off the speakers",Hundreds,INNER,ASSONANCE,vowel,MED,Y
+Born In It,31,"I'm in that club, I'm having my heat up",heat,33,"I done went up, I went off the meter",meter,END,SLANT,cmu,MED,Y
+Born In It,31,"I'm in that club, I'm having my heat up",club,33,"I done went up, I went off the meter",done,INNER,SLANT,cmu,MED,Y
+Born In It,31,"I'm in that club, I'm having my heat up",heat,34,"Pour that shit up, we pour out the liters",liters,END,SLANT,cmu,MED,Y
+Born In It,31,"I'm in that club, I'm having my heat up",heat,35,"Don't got no pass, we taking your heater",heater,END,SLANT,cmu,MED,Y
+Born In It,32,"Hundreds of dogs, they race off the speakers",speakers,33,"I done went up, I went off the meter",meter,END,ASSONANCE,vowel,MED,Y
+Born In It,32,"Hundreds of dogs, they race off the speakers",Hundreds,33,"I done went up, I went off the meter",done,INNER,ASSONANCE,vowel,MED,Y
+Born In It,32,"Hundreds of dogs, they race off the speakers",speakers,34,"Pour that shit up, we pour out the liters",liters,END,SLANT,cmu,MED,Y
+Born In It,32,"Hundreds of dogs, they race off the speakers",speakers,35,"Don't got no pass, we taking your heater",heater,END,ASSONANCE,vowel,MED,Y
+Born In It,32,"Hundreds of dogs, they race off the speakers",speakers,36,"Beat that boy ass, I been had them beaters",beaters,END,SLANT,cmu,MED,Y
+Born In It,33,"I done went up, I went off the meter",went,33,"I done went up, I went off the meter",went,INNER,REPEAT,spelling,HIGH,N
+Born In It,33,"I done went up, I went off the meter",meter,34,"Pour that shit up, we pour out the liters",liters,END,SLANT,cmu,MED,Y
+Born In It,33,"I done went up, I went off the meter",meter,35,"Don't got no pass, we taking your heater",heater,END,MULTI,multi,HIGH,Y
+Born In It,33,"I done went up, I went off the meter",meter,36,"Beat that boy ass, I been had them beaters",beaters,END,SLANT,cmu,MED,Y
+Born In It,34,"Pour that shit up, we pour out the liters",Pour,34,"Pour that shit up, we pour out the liters",pour,INNER,REPEAT,spelling,HIGH,N
+Born In It,34,"Pour that shit up, we pour out the liters",liters,35,"Don't got no pass, we taking your heater",heater,END,SLANT,cmu,MED,Y
+Born In It,34,"Pour that shit up, we pour out the liters",liters,36,"Beat that boy ass, I been had them beaters",beaters,END,MULTI,multi,HIGH,Y
+Born In It,34,"Pour that shit up, we pour out the liters",liters,36,"Beat that boy ass, I been had them beaters",Beat,INNER,SLANT,cmu,MED,Y
+Born In It,35,"Don't got no pass, we taking your heater",Don't,35,"Don't got no pass, we taking your heater",no,INNER,ASSONANCE,vowel,MED,Y
+Born In It,35,"Don't got no pass, we taking your heater",heater,36,"Beat that boy ass, I been had them beaters",beaters,END,SLANT,cmu,MED,Y
+Born In It,35,"Don't got no pass, we taking your heater",heater,36,"Beat that boy ass, I been had them beaters",Beat,INNER,SLANT,cmu,MED,Y
+Born In It,35,"Don't got no pass, we taking your heater",pass,36,"Beat that boy ass, I been had them beaters",ass,INNER,PERFECT,cmu,HIGH,Y
+Born In It,35,"Don't got no pass, we taking your heater",pass,36,"Beat that boy ass, I been had them beaters",had,INNER,SLANT,cmu,MED,Y
+Born In It,35,"Don't got no pass, we taking your heater",got,37,"Check out my stats, got scratch like a dink",got,INNER,REPEAT,spelling,HIGH,N
+Born In It,35,"Don't got no pass, we taking your heater",pass,37,"Check out my stats, got scratch like a dink",scratch,INNER,SLANT,cmu,MED,Y
+Born In It,35,"Don't got no pass, we taking your heater",pass,37,"Check out my stats, got scratch like a dink",stats,INNER,SLANT,cmu,MED,Y
+Born In It,35,"Don't got no pass, we taking your heater",heater,39,"Knew that these niggas were right, make 'em leave us",leave,END,SLANT,cmu,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",ass,36,"Beat that boy ass, I been had them beaters",had,INNER,SLANT,cmu,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",Beat,36,"Beat that boy ass, I been had them beaters",beaters,INNER,SLANT,cmu,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",ass,37,"Check out my stats, got scratch like a dink",scratch,INNER,SLANT,cmu,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",ass,37,"Check out my stats, got scratch like a dink",stats,INNER,SLANT,cmu,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",had,37,"Check out my stats, got scratch like a dink",scratch,INNER,SLANT,cmu,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",had,37,"Check out my stats, got scratch like a dink",stats,INNER,ASSONANCE,vowel,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",ass,38,Check at them banks wasn't right but we did us,banks,INNER,ASSONANCE,vowel,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",had,38,Check at them banks wasn't right but we did us,banks,INNER,ASSONANCE,vowel,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",beaters,39,"Knew that these niggas were right, make 'em leave us",leave,END,ASSONANCE,vowel,MED,Y
+Born In It,36,"Beat that boy ass, I been had them beaters",beaters,40,"Pop that little boy on sight, best believe us",believe,END,ASSONANCE,vowel,MED,Y
+Born In It,37,"Check out my stats, got scratch like a dink",stats,37,"Check out my stats, got scratch like a dink",scratch,INNER,ASSONANCE,vowel,MED,Y
+Born In It,37,"Check out my stats, got scratch like a dink",Check,38,Check at them banks wasn't right but we did us,Check,INNER,REPEAT,spelling,HIGH,N
+Born In It,37,"Check out my stats, got scratch like a dink",got,38,Check at them banks wasn't right but we did us,wasn't,INNER,ASSONANCE,vowel,MED,Y
+Born In It,37,"Check out my stats, got scratch like a dink",like,38,Check at them banks wasn't right but we did us,right,INNER,SLANT,cmu,MED,Y
+Born In It,37,"Check out my stats, got scratch like a dink",scratch,38,Check at them banks wasn't right but we did us,banks,INNER,ASSONANCE,vowel,MED,Y
+Born In It,37,"Check out my stats, got scratch like a dink",stats,38,Check at them banks wasn't right but we did us,banks,INNER,ASSONANCE,vowel,MED,Y
+Born In It,37,"Check out my stats, got scratch like a dink",like,39,"Knew that these niggas were right, make 'em leave us",right,INNER,SLANT,cmu,MED,Y
+Born In It,38,Check at them banks wasn't right but we did us,right,39,"Knew that these niggas were right, make 'em leave us",right,INNER,REPEAT,spelling,HIGH,N
+Born In It,38,Check at them banks wasn't right but we did us,Check,40,"Pop that little boy on sight, best believe us",best,INNER,ASSONANCE,vowel,MED,Y
+Born In It,38,Check at them banks wasn't right but we did us,right,40,"Pop that little boy on sight, best believe us",sight,INNER,PERFECT,cmu,HIGH,Y
+Born In It,38,Check at them banks wasn't right but we did us,wasn't,40,"Pop that little boy on sight, best believe us",Pop,INNER,ASSONANCE,vowel,MED,Y
+Born In It,39,"Knew that these niggas were right, make 'em leave us",these,39,"Knew that these niggas were right, make 'em leave us",leave,INNER,SLANT,cmu,MED,Y
+Born In It,39,"Knew that these niggas were right, make 'em leave us",leave,40,"Pop that little boy on sight, best believe us",believe,END,PERFECT,cmu,HIGH,Y
+Born In It,39,"Knew that these niggas were right, make 'em leave us",right,40,"Pop that little boy on sight, best believe us",sight,INNER,PERFECT,cmu,HIGH,Y
+Born In It,39,"Knew that these niggas were right, make 'em leave us",these,40,"Pop that little boy on sight, best believe us",believe,INNER,SLANT,cmu,MED,Y
+Born In It,39,"Knew that these niggas were right, make 'em leave us",Knew,41,"Look at my chain, its two-tone and match it",two,INNER,PERFECT,cmu,HIGH,Y
+Born In It,39,"Knew that these niggas were right, make 'em leave us",make,41,"Look at my chain, its two-tone and match it",chain,INNER,SLANT,cmu,MED,Y
+Born In It,41,"Look at my chain, its two-tone and match it",match,42,Fuck her so good she attach it,attach,END,PERFECT,cmu,HIGH,Y
+Born In It,41,"Look at my chain, its two-tone and match it",Look,42,Fuck her so good she attach it,good,INNER,SLANT,cmu,MED,Y
+Born In It,41,"Look at my chain, its two-tone and match it",match,43,"Been in Hellcat, they can't daddy",daddy,END,SLANT,cmu,MED,Y
+Born In It,41,"Look at my chain, its two-tone and match it",match,43,"Been in Hellcat, they can't daddy",can't,INNER,ASSONANCE,vowel,MED,Y
+Born In It,41,"Look at my chain, its two-tone and match it",match,44,CTX drop her off caddy,caddy,END,SLANT,cmu,MED,Y
+Born In It,41,"Look at my chain, its two-tone and match it",match,45,CVS lean in a baggy,baggy,END,SLANT,cmu,MED,Y
+Born In It,42,Fuck her so good she attach it,attach,43,"Been in Hellcat, they can't daddy",daddy,END,SLANT,cmu,MED,Y
+Born In It,42,Fuck her so good she attach it,attach,43,"Been in Hellcat, they can't daddy",can't,INNER,ASSONANCE,vowel,MED,Y
+Born In It,42,Fuck her so good she attach it,attach,44,CTX drop her off caddy,caddy,END,SLANT,cmu,MED,Y
+Born In It,42,Fuck her so good she attach it,attach,45,CVS lean in a baggy,baggy,END,SLANT,cmu,MED,Y
+Born In It,42,Fuck her so good she attach it,attach,46,Party in New York real flashy,flashy,END,SLANT,cmu,MED,Y
+Born In It,43,"Been in Hellcat, they can't daddy",can't,43,"Been in Hellcat, they can't daddy",daddy,INNER,ASSONANCE,vowel,MED,Y
+Born In It,43,"Been in Hellcat, they can't daddy",daddy,44,CTX drop her off caddy,caddy,END,MULTI,multi,HIGH,Y
+Born In It,43,"Been in Hellcat, they can't daddy",can't,44,CTX drop her off caddy,caddy,INNER,ASSONANCE,vowel,MED,Y
+Born In It,43,"Been in Hellcat, they can't daddy",daddy,45,CVS lean in a baggy,baggy,END,SLANT,cmu,MED,Y
+Born In It,43,"Been in Hellcat, they can't daddy",can't,45,CVS lean in a baggy,baggy,INNER,ASSONANCE,vowel,MED,Y
+Born In It,43,"Been in Hellcat, they can't daddy",daddy,46,Party in New York real flashy,flashy,END,SLANT,cmu,MED,Y
+Born In It,43,"Been in Hellcat, they can't daddy",daddy,47,They want the banks on no Ashley,Ashley,END,ASSONANCE,vowel,MED,Y
+Born In It,44,CTX drop her off caddy,caddy,45,CVS lean in a baggy,baggy,END,SLANT,cmu,MED,Y
+Born In It,44,CTX drop her off caddy,caddy,46,Party in New York real flashy,flashy,END,SLANT,cmu,MED,Y
+Born In It,44,CTX drop her off caddy,drop,46,Party in New York real flashy,Party,INNER,ASSONANCE,vowel,MED,Y
+Born In It,44,CTX drop her off caddy,caddy,47,They want the banks on no Ashley,Ashley,END,ASSONANCE,vowel,MED,Y
+Born In It,44,CTX drop her off caddy,caddy,48,I like my bitches get nasty,nasty,END,ASSONANCE,vowel,MED,Y
+Born In It,45,CVS lean in a baggy,baggy,46,Party in New York real flashy,flashy,END,SLANT,cmu,MED,Y
+Born In It,45,CVS lean in a baggy,lean,46,Party in New York real flashy,real,INNER,SLANT,cmu,MED,Y
+Born In It,45,CVS lean in a baggy,baggy,47,They want the banks on no Ashley,Ashley,END,ASSONANCE,vowel,MED,Y
+Born In It,45,CVS lean in a baggy,baggy,47,They want the banks on no Ashley,banks,INNER,ASSONANCE,vowel,MED,Y
+Born In It,45,CVS lean in a baggy,baggy,48,I like my bitches get nasty,nasty,END,ASSONANCE,vowel,MED,Y
+Born In It,46,Party in New York real flashy,flashy,47,They want the banks on no Ashley,Ashley,END,SLANT,cmu,MED,Y
+Born In It,46,Party in New York real flashy,flashy,47,They want the banks on no Ashley,banks,INNER,ASSONANCE,vowel,MED,Y
+Born In It,46,Party in New York real flashy,Party,47,They want the banks on no Ashley,want,INNER,SLANT,cmu,MED,Y
+Born In It,46,Party in New York real flashy,flashy,48,I like my bitches get nasty,nasty,END,ASSONANCE,vowel,MED,Y
+Born In It,47,They want the banks on no Ashley,banks,47,They want the banks on no Ashley,Ashley,INNER,ASSONANCE,vowel,MED,Y
+Born In It,47,They want the banks on no Ashley,Ashley,48,I like my bitches get nasty,nasty,END,ASSONANCE,vowel,MED,Y
+Born In It,47,They want the banks on no Ashley,banks,48,I like my bitches get nasty,nasty,INNER,ASSONANCE,vowel,MED,Y
+Born In It,47,They want the banks on no Ashley,want,49,"Put my arm in that bitch, put my leg in that bitch",arm,INNER,ASSONANCE,vowel,MED,Y
+Born In It,48,I like my bitches get nasty,bitches,49,"Put my arm in that bitch, put my leg in that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Born In It,48,I like my bitches get nasty,get,49,"Put my arm in that bitch, put my leg in that bitch",leg,INNER,SLANT,cmu,MED,Y
+Born In It,48,I like my bitches get nasty,bitches,50,"Keep addressing that bitch, got spaghetti in that bitch",bitch,INNER,SLANT,cmu,MED,Y
+Born In It,48,I like my bitches get nasty,get,50,"Keep addressing that bitch, got spaghetti in that bitch",addressing,INNER,ASSONANCE,vowel,MED,Y
+Born In It,48,I like my bitches get nasty,get,50,"Keep addressing that bitch, got spaghetti in that bitch",spaghetti,INNER,SLANT,cmu,MED,Y
+Born In It,48,I like my bitches get nasty,nasty,52,I'm on my way to the bank,bank,END,ASSONANCE,vowel,MED,Y
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",bitch,49,"Put my arm in that bitch, put my leg in that bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",Put,49,"Put my arm in that bitch, put my leg in that bitch",put,INNER,REPEAT,spelling,HIGH,N
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",bitch,50,"Keep addressing that bitch, got spaghetti in that bitch",bitch,END,REPEAT,spelling,HIGH,N
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",arm,50,"Keep addressing that bitch, got spaghetti in that bitch",got,INNER,ASSONANCE,vowel,MED,Y
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",bitch,50,"Keep addressing that bitch, got spaghetti in that bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",leg,50,"Keep addressing that bitch, got spaghetti in that bitch",addressing,INNER,ASSONANCE,vowel,MED,Y
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",leg,50,"Keep addressing that bitch, got spaghetti in that bitch",spaghetti,INNER,SLANT,cmu,MED,Y
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",bitch,51,Told me hips and some ass and a wait on my bitch,bitch,END,REPEAT,spelling,HIGH,N
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",bitch,51,Told me hips and some ass and a wait on my bitch,bitch,INNER,REPEAT,spelling,HIGH,N
+Born In It,49,"Put my arm in that bitch, put my leg in that bitch",bitch,51,Told me hips and some ass and a wait on my bitch,hips,INNER,ASSONANCE,vowel,MED,Y
+Born In It,50,"Keep addressing that bitch, got spaghetti in that bitch",addressing,50,"Keep addressing that bitch, got spaghetti in that bitch",spaghetti,INNER,ASSONANCE,vowel,MED,Y
+Born In It,50,"Keep addressing that bitch, got spaghetti in that bitch",bitch,50,"Keep addressing that bitch, got spaghetti in that bitch",bitch,INNER,REPEAT,spelling,HIGH,N
+Born In It,50,"Keep addressing that bitch, got spaghetti in that bitch",bitch,51,Told me hips and some ass and a wait on my bitch,bitch,END,REPEAT,spelling,HIGH,N
+Born In It,50,"Keep addressing that bitch, got spaghetti in that bitch",bitch,51,Told me hips and some ass and a wait on my bitch,bitch,INNER,REPEAT,spelling,HIGH,N
+Born In It,50,"Keep addressing that bitch, got spaghetti in that bitch",bitch,51,Told me hips and some ass and a wait on my bitch,hips,INNER,ASSONANCE,vowel,MED,Y
+Born In It,51,Told me hips and some ass and a wait on my bitch,hips,51,Told me hips and some ass and a wait on my bitch,bitch,INNER,ASSONANCE,vowel,MED,Y
+Born In It,51,Told me hips and some ass and a wait on my bitch,ass,52,I'm on my way to the bank,bank,INNER,ASSONANCE,vowel,MED,Y
+Born In It,51,Told me hips and some ass and a wait on my bitch,wait,52,I'm on my way to the bank,way,INNER,ASSONANCE,vowel,MED,Y
+Born In It,51,Told me hips and some ass and a wait on my bitch,ass,53,"Yellow Ferrari, no cabbie, hey",cabbie,INNER,SLANT,cmu,MED,Y
+Born In It,51,Told me hips and some ass and a wait on my bitch,Told,53,"Yellow Ferrari, no cabbie, hey",no,INNER,ASSONANCE,vowel,MED,Y
+Born In It,52,I'm on my way to the bank,bank,53,"Yellow Ferrari, no cabbie, hey",cabbie,END,ASSONANCE,vowel,MED,Y
+Born In It,52,I'm on my way to the bank,bank,54,I got a Draco that's half of a K,half,INNER,ASSONANCE,vowel,MED,Y
+Born In It,52,I'm on my way to the bank,way,54,I got a Draco that's half of a K,Draco,INNER,ASSONANCE,vowel,MED,Y
+Born In It,52,I'm on my way to the bank,way,54,I got a Draco that's half of a K,K,INNER,PERFECT,cmu,HIGH,Y
+Born In It,53,"Yellow Ferrari, no cabbie, hey",cabbie,54,I got a Draco that's half of a K,half,INNER,SLANT,cmu,MED,Y
+Born In It,53,"Yellow Ferrari, no cabbie, hey",Ferrari,54,I got a Draco that's half of a K,got,INNER,SLANT,cmu,MED,Y
+Born In It,53,"Yellow Ferrari, no cabbie, hey",Yellow,55,You do what I say every time we speak,every,INNER,SLANT,cmu,MED,Y
+Born In It,54,I got a Draco that's half of a K,Draco,54,I got a Draco that's half of a K,K,INNER,ASSONANCE,vowel,MED,Y
+Born In It,54,I got a Draco that's half of a K,Draco,55,You do what I say every time we speak,say,INNER,ASSONANCE,vowel,MED,Y
+Born In It,54,I got a Draco that's half of a K,K,55,You do what I say every time we speak,say,INNER,PERFECT,cmu,HIGH,Y
+Born In It,54,I got a Draco that's half of a K,K,56,They might burn it up just like a can of mace,mace,END,ASSONANCE,vowel,MED,Y
+Born In It,54,I got a Draco that's half of a K,Draco,56,They might burn it up just like a can of mace,mace,INNER,SLANT,cmu,MED,Y
+Born In It,54,I got a Draco that's half of a K,half,56,They might burn it up just like a can of mace,can,INNER,SLANT,cmu,MED,Y
+Born In It,54,I got a Draco that's half of a K,K,57,"These bitches keep bugging, need a can of raid",raid,END,ASSONANCE,vowel,MED,Y
+Born In It,55,You do what I say every time we speak,say,56,They might burn it up just like a can of mace,mace,INNER,ASSONANCE,vowel,MED,Y
+Born In It,55,You do what I say every time we speak,time,56,They might burn it up just like a can of mace,like,INNER,SLANT,cmu,MED,Y
+Born In It,55,You do what I say every time we speak,time,56,They might burn it up just like a can of mace,might,INNER,SLANT,cmu,MED,Y
+Born In It,55,You do what I say every time we speak,say,57,"These bitches keep bugging, need a can of raid",raid,INNER,ASSONANCE,vowel,MED,Y
+Born In It,55,You do what I say every time we speak,speak,57,"These bitches keep bugging, need a can of raid",keep,INNER,SLANT,cmu,MED,Y
+Born In It,55,You do what I say every time we speak,speak,57,"These bitches keep bugging, need a can of raid",need,INNER,SLANT,cmu,MED,Y
+Born In It,55,You do what I say every time we speak,speak,57,"These bitches keep bugging, need a can of raid",These,INNER,SLANT,cmu,MED,Y
+Born In It,55,You do what I say every time we speak,what,57,"These bitches keep bugging, need a can of raid",bugging,INNER,ASSONANCE,vowel,MED,Y
+Born In It,56,They might burn it up just like a can of mace,might,56,They might burn it up just like a can of mace,like,INNER,SLANT,cmu,MED,Y
+Born In It,56,They might burn it up just like a can of mace,mace,57,"These bitches keep bugging, need a can of raid",raid,END,SLANT,cmu,MED,Y
+Born In It,56,They might burn it up just like a can of mace,can,57,"These bitches keep bugging, need a can of raid",can,INNER,REPEAT,spelling,HIGH,N
+Born In It,56,They might burn it up just like a can of mace,can,58,Thought she was white but she look tan to me,tan,INNER,PERFECT,cmu,HIGH,Y
+Born In It,56,They might burn it up just like a can of mace,like,58,Thought she was white but she look tan to me,white,INNER,SLANT,cmu,MED,Y
+Born In It,56,They might burn it up just like a can of mace,might,58,Thought she was white but she look tan to me,white,INNER,PERFECT,cmu,HIGH,Y
+Born In It,56,They might burn it up just like a can of mace,mace,59,"I'm getting this cake, no need for anime",anime,END,ASSONANCE,vowel,MED,Y
+Born In It,57,"These bitches keep bugging, need a can of raid",keep,57,"These bitches keep bugging, need a can of raid",need,INNER,SLANT,cmu,MED,Y
+Born In It,57,"These bitches keep bugging, need a can of raid",These,57,"These bitches keep bugging, need a can of raid",keep,INNER,SLANT,cmu,MED,Y
+Born In It,57,"These bitches keep bugging, need a can of raid",These,57,"These bitches keep bugging, need a can of raid",need,INNER,SLANT,cmu,MED,Y
+Born In It,57,"These bitches keep bugging, need a can of raid",can,58,Thought she was white but she look tan to me,tan,INNER,PERFECT,cmu,HIGH,Y
+Born In It,57,"These bitches keep bugging, need a can of raid",raid,59,"I'm getting this cake, no need for anime",anime,END,ASSONANCE,vowel,MED,Y
+Born In It,57,"These bitches keep bugging, need a can of raid",keep,59,"I'm getting this cake, no need for anime",need,INNER,SLANT,cmu,MED,Y
+Born In It,57,"These bitches keep bugging, need a can of raid",need,59,"I'm getting this cake, no need for anime",need,INNER,REPEAT,spelling,HIGH,N
+Born In It,57,"These bitches keep bugging, need a can of raid",raid,59,"I'm getting this cake, no need for anime",cake,INNER,SLANT,cmu,MED,Y
+Born In It,57,"These bitches keep bugging, need a can of raid",These,59,"I'm getting this cake, no need for anime",need,INNER,SLANT,cmu,MED,Y
+Born In It,59,"I'm getting this cake, no need for anime",cake,59,"I'm getting this cake, no need for anime",anime,INNER,ASSONANCE,vowel,MED,Y
+Born In It,59,"I'm getting this cake, no need for anime",anime,60,The coupe is a 'ghini same color linguine,same,INNER,ASSONANCE,vowel,MED,Y
+Born In It,59,"I'm getting this cake, no need for anime",cake,60,The coupe is a 'ghini same color linguine,same,INNER,SLANT,cmu,MED,Y
+Born In It,59,"I'm getting this cake, no need for anime",need,60,The coupe is a 'ghini same color linguine,linguine,INNER,SLANT,cmu,MED,Y
+Born In It,59,"I'm getting this cake, no need for anime",anime,61,"Smoking Biscotti, this shit came from Venice",came,INNER,ASSONANCE,vowel,MED,Y
+Born In It,59,"I'm getting this cake, no need for anime",cake,61,"Smoking Biscotti, this shit came from Venice",came,INNER,SLANT,cmu,MED,Y
+Born In It,59,"I'm getting this cake, no need for anime",getting,61,"Smoking Biscotti, this shit came from Venice",Venice,INNER,ASSONANCE,vowel,MED,Y
+Born In It,59,"I'm getting this cake, no need for anime",no,61,"Smoking Biscotti, this shit came from Venice",Smoking,INNER,ASSONANCE,vowel,MED,Y
+Born In It,60,The coupe is a 'ghini same color linguine,'ghini,61,"Smoking Biscotti, this shit came from Venice",shit,INNER,SLANT,spelling,LOW,Y
+Born In It,60,The coupe is a 'ghini same color linguine,same,61,"Smoking Biscotti, this shit came from Venice",came,INNER,PERFECT,cmu,HIGH,Y
+Born In It,60,The coupe is a 'ghini same color linguine,linguine,62,"Diamonds they hit, don't know they need cleaning",cleaning,END,SLANT,cmu,MED,Y
+Born In It,60,The coupe is a 'ghini same color linguine,'ghini,62,"Diamonds they hit, don't know they need cleaning",hit,INNER,SLANT,spelling,LOW,Y
+Born In It,60,The coupe is a 'ghini same color linguine,linguine,62,"Diamonds they hit, don't know they need cleaning",need,INNER,SLANT,cmu,MED,Y
+Born In It,60,The coupe is a 'ghini same color linguine,linguine,63,"It's not a SRT, bitch, it's a demon",demon,END,SLANT,cmu,MED,Y
+Born In It,60,The coupe is a 'ghini same color linguine,linguine,64,Put my car right on 66 like it's leaning,leaning,END,SLANT,cmu,MED,Y
+Born In It,61,"Smoking Biscotti, this shit came from Venice",shit,62,"Diamonds they hit, don't know they need cleaning",hit,INNER,PERFECT,cmu,HIGH,Y
+Born In It,61,"Smoking Biscotti, this shit came from Venice",Smoking,62,"Diamonds they hit, don't know they need cleaning",don't,INNER,ASSONANCE,vowel,MED,Y
+Born In It,61,"Smoking Biscotti, this shit came from Venice",Smoking,62,"Diamonds they hit, don't know they need cleaning",know,INNER,ASSONANCE,vowel,MED,Y
+Born In It,61,"Smoking Biscotti, this shit came from Venice",shit,63,"It's not a SRT, bitch, it's a demon",bitch,INNER,SLANT,cmu,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",don't,62,"Diamonds they hit, don't know they need cleaning",know,INNER,ASSONANCE,vowel,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",need,62,"Diamonds they hit, don't know they need cleaning",cleaning,INNER,ASSONANCE,vowel,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",cleaning,63,"It's not a SRT, bitch, it's a demon",demon,END,SLANT,cmu,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",hit,63,"It's not a SRT, bitch, it's a demon",bitch,INNER,SLANT,cmu,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",need,63,"It's not a SRT, bitch, it's a demon",demon,INNER,ASSONANCE,vowel,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",cleaning,64,Put my car right on 66 like it's leaning,leaning,END,MULTI,multi,HIGH,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",Diamonds,64,Put my car right on 66 like it's leaning,like,INNER,ASSONANCE,vowel,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",Diamonds,64,Put my car right on 66 like it's leaning,right,INNER,ASSONANCE,vowel,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",need,64,Put my car right on 66 like it's leaning,leaning,INNER,ASSONANCE,vowel,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",cleaning,65,"Look at the ops, they be calling, they fiending",fiending,END,PERFECT,spelling,MED,Y
+Born In It,62,"Diamonds they hit, don't know they need cleaning",cleaning,66,"Monkey banana clips, we throwing lemurs",lemurs,END,ASSONANCE,vowel,MED,Y
+Born In It,63,"It's not a SRT, bitch, it's a demon",demon,64,Put my car right on 66 like it's leaning,leaning,END,SLANT,cmu,MED,Y
+Born In It,63,"It's not a SRT, bitch, it's a demon",not,64,Put my car right on 66 like it's leaning,car,INNER,SLANT,cmu,MED,Y
+Born In It,63,"It's not a SRT, bitch, it's a demon",bitch,65,"Look at the ops, they be calling, they fiending",fiending,INNER,ASSONANCE,vowel,LOW,N
+Born In It,63,"It's not a SRT, bitch, it's a demon",not,65,"Look at the ops, they be calling, they fiending",ops,INNER,ASSONANCE,vowel,MED,Y
+Born In It,63,"It's not a SRT, bitch, it's a demon",demon,66,"Monkey banana clips, we throwing lemurs",lemurs,END,SLANT,cmu,MED,Y
+Born In It,64,Put my car right on 66 like it's leaning,right,64,Put my car right on 66 like it's leaning,like,INNER,SLANT,cmu,MED,Y
+Born In It,64,Put my car right on 66 like it's leaning,leaning,65,"Look at the ops, they be calling, they fiending",fiending,END,PERFECT,spelling,MED,Y
+Born In It,64,Put my car right on 66 like it's leaning,car,65,"Look at the ops, they be calling, they fiending",ops,INNER,ASSONANCE,vowel,MED,Y
+Born In It,64,Put my car right on 66 like it's leaning,Put,65,"Look at the ops, they be calling, they fiending",Look,INNER,SLANT,cmu,MED,Y
+Born In It,64,Put my car right on 66 like it's leaning,leaning,66,"Monkey banana clips, we throwing lemurs",lemurs,END,ASSONANCE,vowel,MED,Y
+Born In It,65,"Look at the ops, they be calling, they fiending",calling,65,"Look at the ops, they be calling, they fiending",fiending,INNER,PERFECT,spelling,MED,Y
+Born In It,65,"Look at the ops, they be calling, they fiending",fiending,66,"Monkey banana clips, we throwing lemurs",clips,INNER,ASSONANCE,vowel,LOW,N
+Born In It,65,"Look at the ops, they be calling, they fiending",fiending,66,"Monkey banana clips, we throwing lemurs",throwing,INNER,PERFECT,spelling,MED,Y
+Break Da Pot,1,Break down the pot,pot,2,Then I break down the pot,pot,END,REPEAT,spelling,HIGH,N
+Break Da Pot,1,Break down the pot,Break,2,Then I break down the pot,break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,1,Break down the pot,down,2,Then I break down the pot,down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,2,Then I break down the pot,break,4,Met with the plug yeah break down the price,break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,2,Then I break down the pot,down,4,Met with the plug yeah break down the price,down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,3,"Met with the plug, met with the plug",Met,3,"Met with the plug, met with the plug",met,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,3,"Met with the plug, met with the plug",plug,3,"Met with the plug, met with the plug",plug,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,3,"Met with the plug, met with the plug",Met,4,Met with the plug yeah break down the price,Met,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,3,"Met with the plug, met with the plug",plug,4,Met with the plug yeah break down the price,plug,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,3,"Met with the plug, met with the plug",Met,5,I get the money these niggas they mad,get,INNER,PERFECT,cmu,HIGH,Y
+Break Da Pot,3,"Met with the plug, met with the plug",plug,5,I get the money these niggas they mad,money,INNER,SLANT,cmu,MED,Y
+Break Da Pot,4,Met with the plug yeah break down the price,Met,5,I get the money these niggas they mad,get,INNER,PERFECT,cmu,HIGH,Y
+Break Da Pot,4,Met with the plug yeah break down the price,plug,5,I get the money these niggas they mad,money,INNER,SLANT,cmu,MED,Y
+Break Da Pot,4,Met with the plug yeah break down the price,price,6,"These niggas ain't never do what I did twice, yeah",twice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot,4,Met with the plug yeah break down the price,break,6,"These niggas ain't never do what I did twice, yeah",ain't,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot,4,Met with the plug yeah break down the price,Met,6,"These niggas ain't never do what I did twice, yeah",never,INNER,SLANT,cmu,MED,Y
+Break Da Pot,4,Met with the plug yeah break down the price,plug,6,"These niggas ain't never do what I did twice, yeah",what,INNER,SLANT,cmu,MED,Y
+Break Da Pot,4,Met with the plug yeah break down the price,price,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",wife,END,SLANT,cmu,MED,Y
+Break Da Pot,4,Met with the plug yeah break down the price,price,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",ice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot,5,I get the money these niggas they mad,get,6,"These niggas ain't never do what I did twice, yeah",never,INNER,SLANT,cmu,MED,Y
+Break Da Pot,5,I get the money these niggas they mad,money,6,"These niggas ain't never do what I did twice, yeah",what,INNER,SLANT,cmu,MED,Y
+Break Da Pot,5,I get the money these niggas they mad,niggas,6,"These niggas ain't never do what I did twice, yeah",niggas,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,5,I get the money these niggas they mad,these,6,"These niggas ain't never do what I did twice, yeah",These,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,5,I get the money these niggas they mad,money,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",Fucked,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",twice,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",wife,END,SLANT,cmu,MED,Y
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",ain't,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",ain't,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",what,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",Fucked,INNER,SLANT,cmu,MED,Y
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",twice,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",ice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",niggas,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",nigga,INNER,SLANT,spelling,LOW,Y
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",twice,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",like,INNER,SLANT,cmu,MED,Y
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",what,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",flooded,INNER,SLANT,cmu,MED,Y
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",what,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",fuck,INNER,SLANT,cmu,MED,Y
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",twice,9,"Yeah she give me head like some fuckin' lice, yeah",lice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot,6,"These niggas ain't never do what I did twice, yeah",twice,10,Niggas they be rats they was born as mice,mice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",bitch,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",bitch,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",wife,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",ice,END,SLANT,cmu,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",cause,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",cause,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",cause,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",want,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",Fucked,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",flooded,INNER,SLANT,cmu,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",Fucked,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",fuck,INNER,SLANT,cmu,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",wife,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",like,INNER,SLANT,cmu,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",wife,9,"Yeah she give me head like some fuckin' lice, yeah",lice,END,SLANT,cmu,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",bitch,9,"Yeah she give me head like some fuckin' lice, yeah",give,INNER,SLANT,cmu,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",Fucked,9,"Yeah she give me head like some fuckin' lice, yeah",fuckin,INNER,SLANT,cmu,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",Fucked,9,"Yeah she give me head like some fuckin' lice, yeah",some,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",wife,9,"Yeah she give me head like some fuckin' lice, yeah",like,INNER,SLANT,cmu,MED,Y
+Break Da Pot,7,"Fucked on your bitch, your bitch ain't your bitch cause that bitch is your wife, yeah",wife,10,Niggas they be rats they was born as mice,mice,END,SLANT,cmu,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",fuck,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",flooded,INNER,SLANT,cmu,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",like,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",ice,INNER,SLANT,cmu,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",want,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",cause,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",ice,9,"Yeah she give me head like some fuckin' lice, yeah",lice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",flooded,9,"Yeah she give me head like some fuckin' lice, yeah",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",flooded,9,"Yeah she give me head like some fuckin' lice, yeah",some,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",fuck,9,"Yeah she give me head like some fuckin' lice, yeah",fuckin,INNER,SLANT,cmu,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",fuck,9,"Yeah she give me head like some fuckin' lice, yeah",some,INNER,SLANT,cmu,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",ice,9,"Yeah she give me head like some fuckin' lice, yeah",like,INNER,SLANT,cmu,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",like,9,"Yeah she give me head like some fuckin' lice, yeah",lice,INNER,SLANT,cmu,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",like,9,"Yeah she give me head like some fuckin' lice, yeah",like,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",ice,10,Niggas they be rats they was born as mice,mice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",like,10,Niggas they be rats they was born as mice,mice,INNER,SLANT,cmu,MED,Y
+Break Da Pot,8,"Yeah she want fuck with a nigga like me cause I am flooded in ice, yeah",nigga,10,Niggas they be rats they was born as mice,Niggas,INNER,SLANT,spelling,LOW,Y
+Break Da Pot,9,"Yeah she give me head like some fuckin' lice, yeah",like,9,"Yeah she give me head like some fuckin' lice, yeah",lice,INNER,SLANT,cmu,MED,Y
+Break Da Pot,9,"Yeah she give me head like some fuckin' lice, yeah",some,9,"Yeah she give me head like some fuckin' lice, yeah",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot,9,"Yeah she give me head like some fuckin' lice, yeah",lice,10,Niggas they be rats they was born as mice,mice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot,9,"Yeah she give me head like some fuckin' lice, yeah",like,10,Niggas they be rats they was born as mice,mice,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,Break,1,Break down the pot and I break down the pot and I break down the pot,break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,down,1,Break down the pot and I break down the pot and I break down the pot,down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,pot,1,Break down the pot and I break down the pot and I break down the pot,pot,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,pot,2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,pot,END,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,Break,2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,Break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,down,2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,pot,2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,pot,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,pot,3,"Yeah, break down the pot then I break down the pot",pot,END,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,Break,3,"Yeah, break down the pot then I break down the pot",break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,down,3,"Yeah, break down the pot then I break down the pot",down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,pot,3,"Yeah, break down the pot then I break down the pot",pot,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),1,Break down the pot and I break down the pot and I break down the pot,pot,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,pot,END,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,Break,2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,down,2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,pot,2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,pot,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,pot,3,"Yeah, break down the pot then I break down the pot",pot,END,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,Break,3,"Yeah, break down the pot then I break down the pot",break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,down,3,"Yeah, break down the pot then I break down the pot",down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,pot,3,"Yeah, break down the pot then I break down the pot",pot,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,pot,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,pot,END,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,Break,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,Break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,Break,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,th,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,down,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),2,Break down the pot and I break down the pot and I break down the pot and I break down the pot,pot,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,pot,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",break,3,"Yeah, break down the pot then I break down the pot",break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",down,3,"Yeah, break down the pot then I break down the pot",down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",pot,3,"Yeah, break down the pot then I break down the pot",pot,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",pot,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,pot,END,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",break,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,Break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",break,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,th,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",down,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",pot,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,pot,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",break,5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),3,"Yeah, break down the pot then I break down the pot",down,5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,Break,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,Break,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,th,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,down,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,pot,4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,pot,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,Break,5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,down,5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,th,5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",break,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,Break,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",ain't,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),4,Break down the pot then I break down the pot then I brеak down the pot then I break down thе pot,th,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",ain't,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",Met,5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",met,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",plug,5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",plug,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",price,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",twice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",break,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",ain't,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",Met,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",get,INNER,PERFECT,cmu,HIGH,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",Met,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",never,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",plug,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",money,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",plug,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",what,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",price,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",wife,END,SLANT,cmu,MED,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",break,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",plug,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",cuz,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",plug,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",fucked,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",price,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",ice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot (Original),5,"Met with the plug, met with the plug, met with the plug, yeah, he break down the price",price,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",lice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",get,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",never,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",money,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",what,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",niggas,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",niggas,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",these,6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",these,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",twice,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",wife,END,SLANT,cmu,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",ain't,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",ain't,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",money,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",cuz,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",money,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",fucked,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",what,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",cuz,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",what,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",fucked,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",twice,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",ice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",money,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",cuz,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",money,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",flooded,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",money,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",fuck,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",niggas,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",nigga,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",twice,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",like,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",what,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",cuz,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",what,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",flooded,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",what,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",fuck,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),6,"I get the money, these niggas they mad, these niggas ain't never do what I did twice",twice,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",lice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",bitch,7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",bitch,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",wife,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",ice,END,SLANT,cmu,MED,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",cuz,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",cuz,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",cuz,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",fuck,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",fucked,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",flooded,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",fucked,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",fuck,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",wife,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",like,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",wife,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",lice,END,SLANT,cmu,MED,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",ain't,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",gave,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",cuz,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",some,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",fucked,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",fuckin,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",fucked,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",some,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),7,"Yeah, fucked on yo bitch, yo bitch ain't yo bitch cuz that bitch is yo wife (Yeah)",wife,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",like,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",fuck,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",cuz,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",fuck,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",flooded,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",like,8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",ice,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",ice,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",lice,END,PERFECT,cmu,HIGH,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",cuz,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",some,INNER,SLANT,spelling,LOW,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",flooded,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",flooded,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",some,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",fuck,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",fuckin,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",fuck,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",some,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",ice,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",like,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",like,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",lice,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",like,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",like,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),8,"Yeah, she want fuck with a nigga like me cuz I'm flooded in ice (Yeah)",want,10,Break down the pot then I break down the pot then I break down the pot then I break down the pot,pot,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),9,"Yeah, she gave me head like some fuckin' lice (Yeah)",like,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",lice,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),9,"Yeah, she gave me head like some fuckin' lice (Yeah)",some,9,"Yeah, she gave me head like some fuckin' lice (Yeah)",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Break Da Pot (Original),9,"Yeah, she gave me head like some fuckin' lice (Yeah)",gave,10,Break down the pot then I break down the pot then I break down the pot then I break down the pot,Break,INNER,SLANT,cmu,MED,Y
+Break Da Pot (Original),10,Break down the pot then I break down the pot then I break down the pot then I break down the pot,Break,10,Break down the pot then I break down the pot then I break down the pot then I break down the pot,break,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),10,Break down the pot then I break down the pot then I break down the pot then I break down the pot,down,10,Break down the pot then I break down the pot then I break down the pot then I break down the pot,down,INNER,REPEAT,spelling,HIGH,N
+Break Da Pot (Original),10,Break down the pot then I break down the pot then I break down the pot then I break down the pot,pot,10,Break down the pot then I break down the pot then I break down the pot then I break down the pot,pot,INNER,REPEAT,spelling,HIGH,N

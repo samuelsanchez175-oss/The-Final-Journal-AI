@@ -1,0 +1,644 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+12.38,1,"Someone made a mess in my account (Someone sound like me, yes)",Someone,2,"Someone bought a Patek in a panic (Yes, yes)",Someone,INNER,REPEAT,spelling,HIGH,N
+12.38,1,"Someone made a mess in my account (Someone sound like me, yes)",mess,3,"Bode, Bentley addict, I go manic (Oh no)",Bentley,INNER,ASSONANCE,vowel,MED,Y
+12.38,2,"Someone bought a Patek in a panic (Yes, yes)",bought,2,"Someone bought a Patek in a panic (Yes, yes)",Patek,INNER,SLANT,cmu,MED,Y
+12.38,2,"Someone bought a Patek in a panic (Yes, yes)",panic,3,"Bode, Bentley addict, I go manic (Oh no)",manic,END,MULTI,multi,HIGH,Y
+12.38,2,"Someone bought a Patek in a panic (Yes, yes)",panic,4,"Hit the oochie-coochie 'til it's slanted, ooh",slanted,END,SLANT,cmu,MED,Y
+12.38,3,"Bode, Bentley addict, I go manic (Oh no)",Bode,3,"Bode, Bentley addict, I go manic (Oh no)",go,INNER,ASSONANCE,vowel,MED,Y
+12.38,3,"Bode, Bentley addict, I go manic (Oh no)",manic,4,"Hit the oochie-coochie 'til it's slanted, ooh",slanted,END,SLANT,cmu,MED,Y
+12.38,3,"Bode, Bentley addict, I go manic (Oh no)",addict,4,"Hit the oochie-coochie 'til it's slanted, ooh",'til,INNER,ASSONANCE,vowel,MED,Y
+12.38,3,"Bode, Bentley addict, I go manic (Oh no)",addict,4,"Hit the oochie-coochie 'til it's slanted, ooh",Hit,INNER,SLANT,cmu,MED,Y
+12.38,3,"Bode, Bentley addict, I go manic (Oh no)",Bode,5,"I'm gon' beat it up, ooh, lady",gon,INNER,SLANT,spelling,LOW,Y
+12.38,3,"Bode, Bentley addict, I go manic (Oh no)",manic,7,"Ayy, you the one who talkin' all that trash (You the one who talkin' all that trash)",trash,END,ASSONANCE,vowel,MED,Y
+12.38,4,"Hit the oochie-coochie 'til it's slanted, ooh",Hit,4,"Hit the oochie-coochie 'til it's slanted, ooh",'til,INNER,SLANT,cmu,MED,Y
+12.38,4,"Hit the oochie-coochie 'til it's slanted, ooh",oochie,4,"Hit the oochie-coochie 'til it's slanted, ooh",coochie,INNER,PERFECT,spelling,MED,Y
+12.38,4,"Hit the oochie-coochie 'til it's slanted, ooh",slanted,7,"Ayy, you the one who talkin' all that trash (You the one who talkin' all that trash)",trash,END,ASSONANCE,vowel,MED,Y
+12.38,4,"Hit the oochie-coochie 'til it's slanted, ooh",slanted,8,"Forty-five, I'll twenty-eight that ass (Ooh)",ass,END,ASSONANCE,vowel,MED,Y
+12.38,5,"I'm gon' beat it up, ooh, lady",lady,6,"I'm gon' make your dreams come, baby",baby,END,SLANT,cmu,MED,Y
+12.38,5,"I'm gon' beat it up, ooh, lady",beat,6,"I'm gon' make your dreams come, baby",dreams,INNER,ASSONANCE,vowel,MED,Y
+12.38,5,"I'm gon' beat it up, ooh, lady",gon,6,"I'm gon' make your dreams come, baby",gon,INNER,REPEAT,spelling,HIGH,N
+12.38,5,"I'm gon' beat it up, ooh, lady",lady,6,"I'm gon' make your dreams come, baby",make,INNER,SLANT,cmu,MED,Y
+12.38,6,"I'm gon' make your dreams come, baby",make,6,"I'm gon' make your dreams come, baby",baby,INNER,SLANT,cmu,MED,Y
+12.38,6,"I'm gon' make your dreams come, baby",come,7,"Ayy, you the one who talkin' all that trash (You the one who talkin' all that trash)",one,INNER,SLANT,cmu,MED,Y
+12.38,6,"I'm gon' make your dreams come, baby",baby,8,"Forty-five, I'll twenty-eight that ass (Ooh)",eight,INNER,SLANT,cmu,MED,Y
+12.38,6,"I'm gon' make your dreams come, baby",make,8,"Forty-five, I'll twenty-eight that ass (Ooh)",eight,INNER,SLANT,cmu,MED,Y
+12.38,7,"Ayy, you the one who talkin' all that trash (You the one who talkin' all that trash)",trash,8,"Forty-five, I'll twenty-eight that ass (Ooh)",ass,END,SLANT,cmu,MED,Y
+12.38,7,"Ayy, you the one who talkin' all that trash (You the one who talkin' all that trash)",all,8,"Forty-five, I'll twenty-eight that ass (Ooh)",Forty,INNER,ASSONANCE,vowel,MED,Y
+12.38,7,"Ayy, you the one who talkin' all that trash (You the one who talkin' all that trash)",trash,9,"You can set the snow on fire (Yeah, ooh)",can,INNER,SLANT,cmu,MED,Y
+12.38,7,"Ayy, you the one who talkin' all that trash (You the one who talkin' all that trash)",trash,11,"She said, ""Eat this psilocybin, I'ma be right back""",back,END,SLANT,cmu,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",five,8,"Forty-five, I'll twenty-eight that ass (Ooh)",I'll,INNER,SLANT,cmu,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",ass,9,"You can set the snow on fire (Yeah, ooh)",can,INNER,SLANT,cmu,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",five,9,"You can set the snow on fire (Yeah, ooh)",fire,INNER,ASSONANCE,vowel,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",I'll,9,"You can set the snow on fire (Yeah, ooh)",fire,INNER,ASSONANCE,vowel,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",twenty,9,"You can set the snow on fire (Yeah, ooh)",set,INNER,SLANT,cmu,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",five,10,You smell like a peach papaya,like,INNER,SLANT,cmu,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",five,10,You smell like a peach papaya,papaya,INNER,ASSONANCE,vowel,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",I'll,10,You smell like a peach papaya,like,INNER,SLANT,cmu,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",I'll,10,You smell like a peach papaya,papaya,INNER,ASSONANCE,vowel,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",twenty,10,You smell like a peach papaya,smell,INNER,ASSONANCE,vowel,MED,Y
+12.38,8,"Forty-five, I'll twenty-eight that ass (Ooh)",ass,11,"She said, ""Eat this psilocybin, I'ma be right back""",back,END,SLANT,cmu,MED,Y
+12.38,9,"You can set the snow on fire (Yeah, ooh)",fire,10,You smell like a peach papaya,papaya,END,ASSONANCE,vowel,MED,Y
+12.38,9,"You can set the snow on fire (Yeah, ooh)",fire,10,You smell like a peach papaya,like,INNER,ASSONANCE,vowel,MED,Y
+12.38,9,"You can set the snow on fire (Yeah, ooh)",set,10,You smell like a peach papaya,smell,INNER,SLANT,cmu,MED,Y
+12.38,9,"You can set the snow on fire (Yeah, ooh)",can,11,"She said, ""Eat this psilocybin, I'ma be right back""",back,INNER,SLANT,cmu,MED,Y
+12.38,9,"You can set the snow on fire (Yeah, ooh)",fire,11,"She said, ""Eat this psilocybin, I'ma be right back""",psilocybin,INNER,ASSONANCE,vowel,MED,Y
+12.38,9,"You can set the snow on fire (Yeah, ooh)",fire,11,"She said, ""Eat this psilocybin, I'ma be right back""",right,INNER,ASSONANCE,vowel,MED,Y
+12.38,9,"You can set the snow on fire (Yeah, ooh)",set,11,"She said, ""Eat this psilocybin, I'ma be right back""",said,INNER,SLANT,cmu,MED,Y
+12.38,9,"You can set the snow on fire (Yeah, ooh)",fire,13,"""Ayy, I don't know what psilocybin is"" (No)",psilocybin,END,ASSONANCE,vowel,MED,Y
+12.38,10,You smell like a peach papaya,like,10,You smell like a peach papaya,papaya,INNER,ASSONANCE,vowel,MED,Y
+12.38,10,You smell like a peach papaya,like,11,"She said, ""Eat this psilocybin, I'ma be right back""",psilocybin,INNER,ASSONANCE,vowel,MED,Y
+12.38,10,You smell like a peach papaya,like,11,"She said, ""Eat this psilocybin, I'ma be right back""",right,INNER,SLANT,cmu,MED,Y
+12.38,10,You smell like a peach papaya,papaya,11,"She said, ""Eat this psilocybin, I'ma be right back""",psilocybin,INNER,ASSONANCE,vowel,MED,Y
+12.38,10,You smell like a peach papaya,papaya,11,"She said, ""Eat this psilocybin, I'ma be right back""",right,INNER,ASSONANCE,vowel,MED,Y
+12.38,10,You smell like a peach papaya,peach,11,"She said, ""Eat this psilocybin, I'ma be right back""",Eat,INNER,SLANT,cmu,MED,Y
+12.38,10,You smell like a peach papaya,smell,11,"She said, ""Eat this psilocybin, I'ma be right back""",said,INNER,SLANT,cmu,MED,Y
+12.38,10,You smell like a peach papaya,like,12,"I'm like, ""Aight"" (Aight)",like,INNER,REPEAT,spelling,HIGH,N
+12.38,10,You smell like a peach papaya,papaya,12,"I'm like, ""Aight"" (Aight)",like,INNER,ASSONANCE,vowel,MED,Y
+12.38,10,You smell like a peach papaya,papaya,13,"""Ayy, I don't know what psilocybin is"" (No)",psilocybin,END,ASSONANCE,vowel,MED,Y
+12.38,11,"She said, ""Eat this psilocybin, I'ma be right back""",psilocybin,11,"She said, ""Eat this psilocybin, I'ma be right back""",right,INNER,ASSONANCE,vowel,MED,Y
+12.38,11,"She said, ""Eat this psilocybin, I'ma be right back""",psilocybin,12,"I'm like, ""Aight"" (Aight)",like,INNER,ASSONANCE,vowel,MED,Y
+12.38,11,"She said, ""Eat this psilocybin, I'ma be right back""",right,12,"I'm like, ""Aight"" (Aight)",Aight,INNER,SLANT,spelling,LOW,Y
+12.38,11,"She said, ""Eat this psilocybin, I'ma be right back""",right,12,"I'm like, ""Aight"" (Aight)",like,INNER,SLANT,cmu,MED,Y
+12.38,11,"She said, ""Eat this psilocybin, I'ma be right back""",psilocybin,13,"""Ayy, I don't know what psilocybin is"" (No)",psilocybin,INNER,REPEAT,spelling,HIGH,N
+12.38,11,"She said, ""Eat this psilocybin, I'ma be right back""",right,13,"""Ayy, I don't know what psilocybin is"" (No)",psilocybin,INNER,ASSONANCE,vowel,MED,Y
+12.38,12,"I'm like, ""Aight"" (Aight)",like,13,"""Ayy, I don't know what psilocybin is"" (No)",psilocybin,INNER,ASSONANCE,vowel,MED,Y
+12.38,13,"""Ayy, I don't know what psilocybin is"" (No)",don't,13,"""Ayy, I don't know what psilocybin is"" (No)",know,INNER,ASSONANCE,vowel,MED,Y
+12.38,13,"""Ayy, I don't know what psilocybin is"" (No)",don't,14,"""This better not be no molly""",no,INNER,ASSONANCE,vowel,MED,Y
+12.38,13,"""Ayy, I don't know what psilocybin is"" (No)",know,14,"""This better not be no molly""",no,INNER,PERFECT,cmu,HIGH,Y
+12.38,13,"""Ayy, I don't know what psilocybin is"" (No)",don't,15,She just laughed and closed the door,closed,INNER,ASSONANCE,vowel,MED,Y
+12.38,13,"""Ayy, I don't know what psilocybin is"" (No)",know,15,She just laughed and closed the door,closed,INNER,ASSONANCE,vowel,MED,Y
+12.38,13,"""Ayy, I don't know what psilocybin is"" (No)",psilocybin,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",night,END,ASSONANCE,vowel,MED,Y
+12.38,14,"""This better not be no molly""",not,14,"""This better not be no molly""",molly,INNER,SLANT,cmu,MED,Y
+12.38,14,"""This better not be no molly""",no,15,She just laughed and closed the door,closed,INNER,ASSONANCE,vowel,MED,Y
+12.38,14,"""This better not be no molly""",molly,16,"Dark chocolate, sea salt",Dark,INNER,ASSONANCE,vowel,MED,Y
+12.38,14,"""This better not be no molly""",not,16,"Dark chocolate, sea salt",Dark,INNER,ASSONANCE,vowel,MED,Y
+12.38,15,She just laughed and closed the door,door,16,"Dark chocolate, sea salt",salt,END,ASSONANCE,vowel,MED,Y
+12.38,15,She just laughed and closed the door,door,16,"Dark chocolate, sea salt",chocolate,INNER,ASSONANCE,vowel,MED,Y
+12.38,15,She just laughed and closed the door,laughed,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",have,INNER,ASSONANCE,vowel,MED,Y
+12.38,16,"Dark chocolate, sea salt",chocolate,16,"Dark chocolate, sea salt",salt,INNER,SLANT,cmu,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",said,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",special,INNER,ASSONANCE,vowel,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",said,18,"I said, ""Who you telling, girl? I know that""",said,INNER,REPEAT,spelling,HIGH,N
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",said,18,"I said, ""Who you telling, girl? I know that""",telling,INNER,ASSONANCE,vowel,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",special,18,"I said, ""Who you telling, girl? I know that""",said,INNER,ASSONANCE,vowel,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",special,18,"I said, ""Who you telling, girl? I know that""",telling,INNER,ASSONANCE,vowel,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",have,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",back,INNER,SLANT,cmu,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",have,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",Tracee,INNER,SLANT,spelling,LOW,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",said,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",Ellis,INNER,ASSONANCE,vowel,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",said,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",when,INNER,SLANT,cmu,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",special,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",Ellis,INNER,ASSONANCE,vowel,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",special,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",when,INNER,ASSONANCE,vowel,MED,Y
+12.38,17,"She said, ""We gon' have a special night"" (Ooh, ayy)",night,21,"Ooh, you're so divine (Yes, you are)",divine,END,SLANT,cmu,MED,Y
+12.38,18,"I said, ""Who you telling, girl? I know that""",said,18,"I said, ""Who you telling, girl? I know that""",telling,INNER,ASSONANCE,vowel,MED,Y
+12.38,18,"I said, ""Who you telling, girl? I know that""",know,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",throw,INNER,PERFECT,cmu,HIGH,Y
+12.38,18,"I said, ""Who you telling, girl? I know that""",said,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",Ellis,INNER,ASSONANCE,vowel,MED,Y
+12.38,18,"I said, ""Who you telling, girl? I know that""",said,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",when,INNER,SLANT,cmu,MED,Y
+12.38,18,"I said, ""Who you telling, girl? I know that""",telling,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",Ellis,INNER,SLANT,cmu,MED,Y
+12.38,18,"I said, ""Who you telling, girl? I know that""",telling,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",when,INNER,ASSONANCE,vowel,MED,Y
+12.38,18,"I said, ""Who you telling, girl? I know that""",girl,20,"Girl, I see your (Shadow move)",Girl,INNER,REPEAT,spelling,HIGH,N
+12.38,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",Ellis,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",when,INNER,ASSONANCE,vowel,MED,Y
+12.38,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",Tracee,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",back,INNER,SLANT,spelling,LOW,Y
+12.38,19,"Tracee Ellis with it when you throw back (Ooh, yeah)",Tracee,20,"Girl, I see your (Shadow move)",see,INNER,PERFECT,spelling,MED,Y
+12.38,21,"Ooh, you're so divine (Yes, you are)",divine,23,I'ma give you some privacy (Uh),privacy,END,ASSONANCE,vowel,MED,Y
+12.38,23,I'ma give you some privacy (Uh),I'ma,23,I'ma give you some privacy (Uh),give,INNER,SLANT,spelling,LOW,Y
+12.38,23,I'ma give you some privacy (Uh),give,24,Pictures with your stepsisters (Hmm),Pictures,INNER,ASSONANCE,vowel,MED,Y
+12.38,23,I'ma give you some privacy (Uh),give,24,Pictures with your stepsisters (Hmm),stepsisters,INNER,ASSONANCE,vowel,MED,Y
+12.38,23,I'ma give you some privacy (Uh),some,25,"N. K. Jemisin with you, uh",Jemisin,INNER,ASSONANCE,vowel,MED,Y
+12.38,24,Pictures with your stepsisters (Hmm),Pictures,24,Pictures with your stepsisters (Hmm),stepsisters,INNER,ASSONANCE,vowel,MED,Y
+12.38,25,"N. K. Jemisin with you, uh",Jemisin,26,"Got the All About Love, on some bell hooks",Love,INNER,ASSONANCE,vowel,MED,Y
+12.38,25,"N. K. Jemisin with you, uh",Jemisin,26,"Got the All About Love, on some bell hooks",some,INNER,ASSONANCE,vowel,MED,Y
+12.38,25,"N. K. Jemisin with you, uh",N,26,"Got the All About Love, on some bell hooks",bell,INNER,SLANT,cmu,MED,Y
+12.38,26,"Got the All About Love, on some bell hooks",Love,26,"Got the All About Love, on some bell hooks",some,INNER,SLANT,cmu,MED,Y
+12.38,26,"Got the All About Love, on some bell hooks",hooks,27,"Then I turned to a dirty look, uh (Meow)",look,END,SLANT,cmu,MED,Y
+12.38,26,"Got the All About Love, on some bell hooks",hooks,28,"Ayy, why your cat lookin' at me sideways?",lookin,INNER,SLANT,cmu,MED,Y
+12.38,27,"Then I turned to a dirty look, uh (Meow)",turned,27,"Then I turned to a dirty look, uh (Meow)",dirty,INNER,ASSONANCE,vowel,MED,Y
+12.38,27,"Then I turned to a dirty look, uh (Meow)",look,28,"Ayy, why your cat lookin' at me sideways?",lookin,INNER,SLANT,cmu,MED,Y
+12.38,27,"Then I turned to a dirty look, uh (Meow)",look,29,"I said, ""Nah, I'll put on the radio though""",put,INNER,SLANT,cmu,MED,Y
+12.38,28,"Ayy, why your cat lookin' at me sideways?",lookin,29,"I said, ""Nah, I'll put on the radio though""",put,INNER,ASSONANCE,vowel,MED,Y
+12.38,28,"Ayy, why your cat lookin' at me sideways?",why,29,"I said, ""Nah, I'll put on the radio though""",I'll,INNER,ASSONANCE,vowel,MED,Y
+12.38,28,"Ayy, why your cat lookin' at me sideways?",cat,30,"Lay back on my back (Uh), vibrate",back,INNER,SLANT,cmu,MED,Y
+12.38,28,"Ayy, why your cat lookin' at me sideways?",sideways,30,"Lay back on my back (Uh), vibrate",Lay,INNER,ASSONANCE,vowel,MED,Y
+12.38,28,"Ayy, why your cat lookin' at me sideways?",why,30,"Lay back on my back (Uh), vibrate",vibrate,INNER,ASSONANCE,vowel,MED,Y
+12.38,29,"I said, ""Nah, I'll put on the radio though""",radio,29,"I said, ""Nah, I'll put on the radio though""",though,INNER,PERFECT,cmu,HIGH,Y
+12.38,29,"I said, ""Nah, I'll put on the radio though""",I'll,30,"Lay back on my back (Uh), vibrate",vibrate,INNER,ASSONANCE,vowel,MED,Y
+12.38,29,"I said, ""Nah, I'll put on the radio though""",said,31,My ex on some BS,BS,INNER,SLANT,cmu,MED,Y
+12.38,29,"I said, ""Nah, I'll put on the radio though""",said,31,My ex on some BS,ex,INNER,ASSONANCE,vowel,MED,Y
+12.38,30,"Lay back on my back (Uh), vibrate",back,30,"Lay back on my back (Uh), vibrate",back,INNER,REPEAT,spelling,HIGH,N
+12.38,31,My ex on some BS,ex,31,My ex on some BS,BS,INNER,SLANT,cmu,MED,Y
+12.38,31,My ex on some BS,BS,33,"Girl, never write a check I can't deposit",check,INNER,SLANT,cmu,MED,Y
+12.38,31,My ex on some BS,BS,33,"Girl, never write a check I can't deposit",never,INNER,SLANT,cmu,MED,Y
+12.38,31,My ex on some BS,ex,33,"Girl, never write a check I can't deposit",check,INNER,SLANT,cmu,MED,Y
+12.38,31,My ex on some BS,ex,33,"Girl, never write a check I can't deposit",never,INNER,ASSONANCE,vowel,MED,Y
+12.38,32,She walked out the closet,closet,33,"Girl, never write a check I can't deposit",deposit,END,SLANT,cmu,MED,Y
+12.38,32,She walked out the closet,closet,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",stop,INNER,ASSONANCE,vowel,MED,Y
+12.38,32,She walked out the closet,walked,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",walkin,INNER,SLANT,cmu,MED,Y
+12.38,33,"Girl, never write a check I can't deposit",never,33,"Girl, never write a check I can't deposit",check,INNER,SLANT,cmu,MED,Y
+12.38,33,"Girl, never write a check I can't deposit",check,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",let's,INNER,ASSONANCE,vowel,MED,Y
+12.38,33,"Girl, never write a check I can't deposit",check,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",said,INNER,SLANT,cmu,MED,Y
+12.38,33,"Girl, never write a check I can't deposit",deposit,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",stop,INNER,ASSONANCE,vowel,MED,Y
+12.38,33,"Girl, never write a check I can't deposit",never,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",let's,INNER,ASSONANCE,vowel,MED,Y
+12.38,33,"Girl, never write a check I can't deposit",never,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",said,INNER,SLANT,cmu,MED,Y
+12.38,33,"Girl, never write a check I can't deposit",deposit,35,"""You wanna be outside for this""",wanna,INNER,ASSONANCE,vowel,MED,Y
+12.38,33,"Girl, never write a check I can't deposit",write,35,"""You wanna be outside for this""",outside,INNER,SLANT,cmu,MED,Y
+12.38,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",said,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",let's,INNER,ASSONANCE,vowel,MED,Y
+12.38,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",stop,35,"""You wanna be outside for this""",wanna,INNER,SLANT,cmu,MED,Y
+12.38,34,"She said, ""Boy, stop, let's go walkin'"" (Let's go walkin')",go,36,"Dogpark looking like a Trader Joe's (Roof, roof)",Joe's,INNER,ASSONANCE,vowel,MED,Y
+12.38,35,"""You wanna be outside for this""",outside,36,"Dogpark looking like a Trader Joe's (Roof, roof)",like,INNER,SLANT,cmu,MED,Y
+12.38,36,"Dogpark looking like a Trader Joe's (Roof, roof)",Joe's,37,"Papillon, mmh, thought you hated those",those,END,PERFECT,cmu,HIGH,Y
+12.38,36,"Dogpark looking like a Trader Joe's (Roof, roof)",Trader,37,"Papillon, mmh, thought you hated those",hated,INNER,SLANT,cmu,MED,Y
+12.38,36,"Dogpark looking like a Trader Joe's (Roof, roof)",Joe's,38,"Other girls, uh, let they shady show",show,END,ASSONANCE,vowel,MED,Y
+12.38,36,"Dogpark looking like a Trader Joe's (Roof, roof)",Trader,38,"Other girls, uh, let they shady show",shady,INNER,SLANT,cmu,MED,Y
+12.38,36,"Dogpark looking like a Trader Joe's (Roof, roof)",Joe's,40,"They say, ""How she gonna hold him down?"" No",No,END,ASSONANCE,vowel,MED,Y
+12.38,37,"Papillon, mmh, thought you hated those",those,38,"Other girls, uh, let they shady show",show,END,ASSONANCE,vowel,MED,Y
+12.38,37,"Papillon, mmh, thought you hated those",hated,38,"Other girls, uh, let they shady show",shady,INNER,SLANT,cmu,MED,Y
+12.38,37,"Papillon, mmh, thought you hated those",thought,39,Every time we walk around,walk,INNER,SLANT,cmu,MED,Y
+12.38,37,"Papillon, mmh, thought you hated those",those,40,"They say, ""How she gonna hold him down?"" No",No,END,ASSONANCE,vowel,MED,Y
+12.38,38,"Other girls, uh, let they shady show",let,39,Every time we walk around,Every,INNER,SLANT,cmu,MED,Y
+12.38,38,"Other girls, uh, let they shady show",show,40,"They say, ""How she gonna hold him down?"" No",No,END,PERFECT,cmu,HIGH,Y
+12.38,38,"Other girls, uh, let they shady show",shady,40,"They say, ""How she gonna hold him down?"" No",say,INNER,ASSONANCE,vowel,MED,Y
+12.38,38,"Other girls, uh, let they shady show",show,40,"They say, ""How she gonna hold him down?"" No",hold,INNER,ASSONANCE,vowel,MED,Y
+12.38,39,Every time we walk around,around,40,"They say, ""How she gonna hold him down?"" No",down,INNER,SLANT,cmu,MED,Y
+12.38,39,Every time we walk around,around,40,"They say, ""How she gonna hold him down?"" No",How,INNER,ASSONANCE,vowel,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",hold,40,"They say, ""How she gonna hold him down?"" No",No,INNER,ASSONANCE,vowel,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",How,40,"They say, ""How she gonna hold him down?"" No",down,INNER,ASSONANCE,vowel,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",him,41,They don't know what they missing,missing,INNER,ASSONANCE,vowel,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",hold,41,They don't know what they missing,don't,INNER,ASSONANCE,vowel,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",hold,41,They don't know what they missing,know,INNER,ASSONANCE,vowel,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",No,41,They don't know what they missing,don't,INNER,ASSONANCE,vowel,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",No,41,They don't know what they missing,know,INNER,PERFECT,cmu,HIGH,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",down,42,Most these niggas wanna run around with these SZAs (Yeah),around,INNER,SLANT,cmu,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",gonna,42,Most these niggas wanna run around with these SZAs (Yeah),wanna,INNER,MULTI,multi,HIGH,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",hold,42,Most these niggas wanna run around with these SZAs (Yeah),Most,INNER,ASSONANCE,vowel,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",How,42,Most these niggas wanna run around with these SZAs (Yeah),around,INNER,ASSONANCE,vowel,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",How gonna,42,Most these niggas wanna run around with these SZAs (Yeah),niggas wanna,INNER,MULTI,multi,MED,Y
+12.38,40,"They say, ""How she gonna hold him down?"" No",No,42,Most these niggas wanna run around with these SZAs (Yeah),Most,INNER,ASSONANCE,vowel,MED,Y
+12.38,41,They don't know what they missing,don't,41,They don't know what they missing,know,INNER,ASSONANCE,vowel,MED,Y
+12.38,41,They don't know what they missing,don't,42,Most these niggas wanna run around with these SZAs (Yeah),Most,INNER,SLANT,cmu,MED,Y
+12.38,41,They don't know what they missing,know,42,Most these niggas wanna run around with these SZAs (Yeah),Most,INNER,ASSONANCE,vowel,MED,Y
+12.38,41,They don't know what they missing,what,42,Most these niggas wanna run around with these SZAs (Yeah),run,INNER,SLANT,cmu,MED,Y
+12.38,41,They don't know what they missing,don't,43,I prefer to just stroll the park with this Chaka,stroll,INNER,ASSONANCE,vowel,MED,Y
+12.38,41,They don't know what they missing,know,43,I prefer to just stroll the park with this Chaka,stroll,INNER,ASSONANCE,vowel,MED,Y
+12.38,42,Most these niggas wanna run around with these SZAs (Yeah),niggas,42,Most these niggas wanna run around with these SZAs (Yeah),SZAs,INNER,PERFECT,spelling,MED,Y
+12.38,42,Most these niggas wanna run around with these SZAs (Yeah),these,42,Most these niggas wanna run around with these SZAs (Yeah),these,INNER,REPEAT,spelling,HIGH,N
+12.38,42,Most these niggas wanna run around with these SZAs (Yeah),SZAs,43,I prefer to just stroll the park with this Chaka,Chaka,END,SLANT,spelling,LOW,Y
+12.38,42,Most these niggas wanna run around with these SZAs (Yeah),Most,43,I prefer to just stroll the park with this Chaka,stroll,INNER,ASSONANCE,vowel,MED,Y
+12.38,42,Most these niggas wanna run around with these SZAs (Yeah),wanna,43,I prefer to just stroll the park with this Chaka,park,INNER,ASSONANCE,vowel,MED,Y
+12.38,42,Most these niggas wanna run around with these SZAs (Yeah),wanna,44,Baby girl was just diggin' all in my pockets (All in my pockets),pockets,INNER,ASSONANCE,vowel,MED,Y
+12.38,42,Most these niggas wanna run around with these SZAs (Yeah),SZAs,46,"We were holdin' hands, tried to make me understand (Yeah)",understand,END,ASSONANCE,vowel,LOW,N
+12.38,43,I prefer to just stroll the park with this Chaka,park,44,Baby girl was just diggin' all in my pockets (All in my pockets),pockets,INNER,ASSONANCE,vowel,MED,Y
+12.38,43,I prefer to just stroll the park with this Chaka,prefer,44,Baby girl was just diggin' all in my pockets (All in my pockets),girl,INNER,ASSONANCE,vowel,MED,Y
+12.38,43,I prefer to just stroll the park with this Chaka,park,45,I was going hard (By the magic hour),hard,INNER,SLANT,cmu,MED,Y
+12.38,43,I prefer to just stroll the park with this Chaka,stroll,45,I was going hard (By the magic hour),going,INNER,SLANT,cmu,MED,Y
+12.38,43,I prefer to just stroll the park with this Chaka,Chaka,46,"We were holdin' hands, tried to make me understand (Yeah)",understand,END,ASSONANCE,vowel,LOW,N
+12.38,44,Baby girl was just diggin' all in my pockets (All in my pockets),pockets,45,I was going hard (By the magic hour),hard,END,ASSONANCE,vowel,MED,Y
+12.38,44,Baby girl was just diggin' all in my pockets (All in my pockets),Baby,46,"We were holdin' hands, tried to make me understand (Yeah)",make,INNER,SLANT,cmu,MED,Y
+12.38,45,I was going hard (By the magic hour),going,46,"We were holdin' hands, tried to make me understand (Yeah)",holdin,INNER,ASSONANCE,vowel,MED,Y
+12.38,46,"We were holdin' hands, tried to make me understand (Yeah)",hands,46,"We were holdin' hands, tried to make me understand (Yeah)",understand,INNER,SLANT,cmu,MED,Y
+12.38,46,"We were holdin' hands, tried to make me understand (Yeah)",make,47,"Make girls fall in love, that's my (Magic power), yes",Make,INNER,REPEAT,spelling,HIGH,N
+12.38,46,"We were holdin' hands, tried to make me understand (Yeah)",holdin,48,Everybody's jealous I won't ease it with these colors,won't,INNER,ASSONANCE,vowel,MED,Y
+12.38,47,"Make girls fall in love, that's my (Magic power), yes",love,48,Everybody's jealous I won't ease it with these colors,colors,INNER,ASSONANCE,vowel,MED,Y
+12.38,47,"Make girls fall in love, that's my (Magic power), yes",yes,48,Everybody's jealous I won't ease it with these colors,jealous,INNER,SLANT,cmu,MED,Y
+12.38,48,Everybody's jealous I won't ease it with these colors,ease,48,Everybody's jealous I won't ease it with these colors,these,INNER,PERFECT,cmu,HIGH,Y
+12.38,48,Everybody's jealous I won't ease it with these colors,ease,49,"Ooh, I wanna see it in the moonlight",see,INNER,ASSONANCE,vowel,MED,Y
+12.38,48,Everybody's jealous I won't ease it with these colors,Everybody's,49,"Ooh, I wanna see it in the moonlight",wanna,INNER,ASSONANCE,vowel,MED,Y
+12.38,48,Everybody's jealous I won't ease it with these colors,these,49,"Ooh, I wanna see it in the moonlight",see,INNER,ASSONANCE,vowel,MED,Y
+12.38,48,Everybody's jealous I won't ease it with these colors,jealous,50,"Yellow, red, orange robe, askin' for donation (Ooh)",red,INNER,ASSONANCE,vowel,MED,Y
+12.38,48,Everybody's jealous I won't ease it with these colors,jealous,50,"Yellow, red, orange robe, askin' for donation (Ooh)",Yellow,INNER,SLANT,cmu,MED,Y
+12.38,48,Everybody's jealous I won't ease it with these colors,won't,50,"Yellow, red, orange robe, askin' for donation (Ooh)",robe,INNER,ASSONANCE,vowel,MED,Y
+12.38,50,"Yellow, red, orange robe, askin' for donation (Ooh)",Yellow,50,"Yellow, red, orange robe, askin' for donation (Ooh)",red,INNER,SLANT,cmu,MED,Y
+12.38,50,"Yellow, red, orange robe, askin' for donation (Ooh)",donation,51,"Goddamn, man, this girl goin' crazy on my Motorola",crazy,INNER,ASSONANCE,vowel,MED,Y
+12.38,50,"Yellow, red, orange robe, askin' for donation (Ooh)",robe,51,"Goddamn, man, this girl goin' crazy on my Motorola",Motorola,INNER,SLANT,cmu,MED,Y
+12.38,50,"Yellow, red, orange robe, askin' for donation (Ooh)",red,52,"She said, ""Let me answer it"" (Let me answer)",Let,INNER,SLANT,cmu,MED,Y
+12.38,50,"Yellow, red, orange robe, askin' for donation (Ooh)",red,52,"She said, ""Let me answer it"" (Let me answer)",said,INNER,PERFECT,cmu,HIGH,Y
+12.38,50,"Yellow, red, orange robe, askin' for donation (Ooh)",Yellow,52,"She said, ""Let me answer it"" (Let me answer)",Let,INNER,SLANT,cmu,MED,Y
+12.38,50,"Yellow, red, orange robe, askin' for donation (Ooh)",Yellow,52,"She said, ""Let me answer it"" (Let me answer)",said,INNER,SLANT,cmu,MED,Y
+12.38,51,"Goddamn, man, this girl goin' crazy on my Motorola",Goddamn,51,"Goddamn, man, this girl goin' crazy on my Motorola",man,INNER,SLANT,cmu,MED,Y
+12.38,51,"Goddamn, man, this girl goin' crazy on my Motorola",Goddamn,52,"She said, ""Let me answer it"" (Let me answer)",answer,INNER,ASSONANCE,vowel,MED,Y
+12.38,51,"Goddamn, man, this girl goin' crazy on my Motorola",man,52,"She said, ""Let me answer it"" (Let me answer)",answer,INNER,SLANT,cmu,MED,Y
+12.38,51,"Goddamn, man, this girl goin' crazy on my Motorola",Motorola,53,Then she'll know it's over (Ooh),over,END,SLANT,cmu,MED,Y
+12.38,51,"Goddamn, man, this girl goin' crazy on my Motorola",Motorola,53,Then she'll know it's over (Ooh),know,INNER,ASSONANCE,vowel,MED,Y
+12.38,52,"She said, ""Let me answer it"" (Let me answer)",said,52,"She said, ""Let me answer it"" (Let me answer)",Let,INNER,SLANT,cmu,MED,Y
+12.38,52,"She said, ""Let me answer it"" (Let me answer)",answer,54,"Girl, you cancerous, you gon' ruin my life",cancerous,INNER,SLANT,cmu,MED,Y
+12.38,53,Then she'll know it's over (Ooh),know,53,Then she'll know it's over (Ooh),over,INNER,ASSONANCE,vowel,MED,Y
+12.38,53,Then she'll know it's over (Ooh),over,54,"Girl, you cancerous, you gon' ruin my life",gon,INNER,SLANT,spelling,LOW,Y
+12.38,54,"Girl, you cancerous, you gon' ruin my life",life,55,"Let me get this paperweight, then come be my wife",wife,END,PERFECT,cmu,HIGH,Y
+12.38,54,"Girl, you cancerous, you gon' ruin my life",cancerous,56,She just laughed and touched my face (What you mean?),laughed,INNER,ASSONANCE,vowel,MED,Y
+12.38,54,"Girl, you cancerous, you gon' ruin my life",life,58,I ain't lookin' for another lifetime,lifetime,END,SLANT,cmu,MED,Y
+12.38,55,"Let me get this paperweight, then come be my wife",Let,55,"Let me get this paperweight, then come be my wife",get,INNER,PERFECT,cmu,HIGH,Y
+12.38,55,"Let me get this paperweight, then come be my wife",come,56,She just laughed and touched my face (What you mean?),touched,INNER,ASSONANCE,vowel,MED,Y
+12.38,55,"Let me get this paperweight, then come be my wife",paperweight,56,She just laughed and touched my face (What you mean?),face,INNER,SLANT,cmu,MED,Y
+12.38,55,"Let me get this paperweight, then come be my wife",come,57,"You don't understand what this is (Oh wait, wait, wait, wait)",what,INNER,SLANT,cmu,MED,Y
+12.38,55,"Let me get this paperweight, then come be my wife",wife,58,I ain't lookin' for another lifetime,lifetime,END,SLANT,cmu,MED,Y
+12.38,55,"Let me get this paperweight, then come be my wife",wife,59,Let's just stay here and enjoy the great design,design,END,SLANT,cmu,MED,Y
+12.38,56,She just laughed and touched my face (What you mean?),laughed,57,"You don't understand what this is (Oh wait, wait, wait, wait)",understand,INNER,ASSONANCE,vowel,MED,Y
+12.38,56,She just laughed and touched my face (What you mean?),touched,57,"You don't understand what this is (Oh wait, wait, wait, wait)",what,INNER,SLANT,cmu,MED,Y
+12.38,56,She just laughed and touched my face (What you mean?),face,58,I ain't lookin' for another lifetime,ain't,INNER,ASSONANCE,vowel,MED,Y
+12.38,56,She just laughed and touched my face (What you mean?),touched,58,I ain't lookin' for another lifetime,another,INNER,ASSONANCE,vowel,MED,Y
+12.38,56,She just laughed and touched my face (What you mean?),face,60,Had the iceberg tucked in my waist (Bling),waist,END,SLANT,cmu,MED,Y
+12.38,57,"You don't understand what this is (Oh wait, wait, wait, wait)",what,58,I ain't lookin' for another lifetime,another,INNER,SLANT,cmu,MED,Y
+12.38,58,I ain't lookin' for another lifetime,lifetime,59,Let's just stay here and enjoy the great design,design,END,SLANT,cmu,MED,Y
+12.38,58,I ain't lookin' for another lifetime,ain't,59,Let's just stay here and enjoy the great design,great,INNER,SLANT,cmu,MED,Y
+12.38,58,I ain't lookin' for another lifetime,ain't,59,Let's just stay here and enjoy the great design,stay,INNER,ASSONANCE,vowel,MED,Y
+12.38,58,I ain't lookin' for another lifetime,ain't,60,Had the iceberg tucked in my waist (Bling),waist,INNER,SLANT,cmu,MED,Y
+12.38,58,I ain't lookin' for another lifetime,another,60,Had the iceberg tucked in my waist (Bling),tucked,INNER,ASSONANCE,vowel,MED,Y
+12.38,58,I ain't lookin' for another lifetime,lifetime,60,Had the iceberg tucked in my waist (Bling),iceberg,INNER,ASSONANCE,vowel,MED,Y
+12.38,59,Let's just stay here and enjoy the great design,stay,59,Let's just stay here and enjoy the great design,great,INNER,ASSONANCE,vowel,MED,Y
+12.38,59,Let's just stay here and enjoy the great design,design,60,Had the iceberg tucked in my waist (Bling),iceberg,INNER,ASSONANCE,vowel,MED,Y
+12.38,59,Let's just stay here and enjoy the great design,great,60,Had the iceberg tucked in my waist (Bling),waist,INNER,SLANT,cmu,MED,Y
+12.38,59,Let's just stay here and enjoy the great design,stay,60,Had the iceberg tucked in my waist (Bling),waist,INNER,ASSONANCE,vowel,MED,Y
+12.38,59,Let's just stay here and enjoy the great design,great,61,"Fuck an omelet, you can eat off my face (No)",eat,INNER,SLANT,spelling,LOW,Y
+12.38,59,Let's just stay here and enjoy the great design,great,61,"Fuck an omelet, you can eat off my face (No)",face,INNER,SLANT,cmu,MED,Y
+12.38,59,Let's just stay here and enjoy the great design,here,61,"Fuck an omelet, you can eat off my face (No)",eat,INNER,SLANT,cmu,MED,Y
+12.38,59,Let's just stay here and enjoy the great design,stay,61,"Fuck an omelet, you can eat off my face (No)",face,INNER,ASSONANCE,vowel,MED,Y
+12.38,60,Had the iceberg tucked in my waist (Bling),waist,61,"Fuck an omelet, you can eat off my face (No)",face,END,SLANT,cmu,MED,Y
+12.38,60,Had the iceberg tucked in my waist (Bling),Had,61,"Fuck an omelet, you can eat off my face (No)",can,INNER,SLANT,cmu,MED,Y
+12.38,60,Had the iceberg tucked in my waist (Bling),tucked,61,"Fuck an omelet, you can eat off my face (No)",Fuck,INNER,SLANT,cmu,MED,Y
+12.38,61,"Fuck an omelet, you can eat off my face (No)",eat,63,"You don't love her, then you lyin'",lyin,INNER,SLANT,spelling,LOW,Y
+12.38,61,"Fuck an omelet, you can eat off my face (No)",Fuck,63,"You don't love her, then you lyin'",love,INNER,SLANT,cmu,MED,Y
+12.38,62,I just thought that we were vibin',vibin,63,"You don't love her, then you lyin'",lyin,END,PERFECT,spelling,MED,Y
+12.38,62,I just thought that we were vibin',vibin,65,Put a finger to my two lips (It's okay),lips,END,ASSONANCE,vowel,LOW,N
+12.38,63,"You don't love her, then you lyin'",don't,64,Come and go and you get tulips,go,INNER,ASSONANCE,vowel,MED,Y
+12.38,63,"You don't love her, then you lyin'",love,64,Come and go and you get tulips,Come,INNER,SLANT,cmu,MED,Y
+12.38,64,Come and go and you get tulips,tulips,65,Put a finger to my two lips (It's okay),lips,END,SLANT,spelling,LOW,Y
+12.38,64,Come and go and you get tulips,tulips,65,Put a finger to my two lips (It's okay),two,INNER,ASSONANCE,vowel,MED,Y
+12.38,64,Come and go and you get tulips,Come,66,"Ooh, you got it bad, just remember what we had",what,INNER,SLANT,cmu,MED,Y
+12.38,64,Come and go and you get tulips,get,66,"Ooh, you got it bad, just remember what we had",remember,INNER,ASSONANCE,vowel,MED,Y
+12.38,65,Put a finger to my two lips (It's okay),finger,65,Put a finger to my two lips (It's okay),lips,INNER,ASSONANCE,vowel,MED,Y
+12.38,66,"Ooh, you got it bad, just remember what we had",bad,66,"Ooh, you got it bad, just remember what we had",had,INNER,PERFECT,cmu,HIGH,Y
+12.38,66,"Ooh, you got it bad, just remember what we had",what,67,The reason that you suffer is desire (Huh),suffer,INNER,SLANT,cmu,MED,Y
+12.38,67,The reason that you suffer is desire (Huh),reason,68,The reason that I'm moving with this ooh-wee,reason,INNER,REPEAT,spelling,HIGH,N
+12.38,67,The reason that you suffer is desire (Huh),reason,68,The reason that I'm moving with this ooh-wee,wee,INNER,ASSONANCE,vowel,MED,Y
+12.38,67,The reason that you suffer is desire (Huh),desire,69,"I was lovin' life, I got too deep (I was too deep)",life,INNER,ASSONANCE,vowel,MED,Y
+12.38,67,The reason that you suffer is desire (Huh),reason,69,"I was lovin' life, I got too deep (I was too deep)",deep,INNER,ASSONANCE,vowel,MED,Y
+12.38,68,The reason that I'm moving with this ooh-wee,reason,68,The reason that I'm moving with this ooh-wee,wee,INNER,ASSONANCE,vowel,MED,Y
+12.38,68,The reason that I'm moving with this ooh-wee,wee,69,"I was lovin' life, I got too deep (I was too deep)",deep,END,ASSONANCE,vowel,MED,Y
+12.38,68,The reason that I'm moving with this ooh-wee,reason,69,"I was lovin' life, I got too deep (I was too deep)",deep,INNER,ASSONANCE,vowel,MED,Y
+12.38,68,The reason that I'm moving with this ooh-wee,moving,70,"Woke up in my room, she was long gone",room,INNER,ASSONANCE,vowel,MED,Y
+12.38,69,"I was lovin' life, I got too deep (I was too deep)",lovin,70,"Woke up in my room, she was long gone",Woke,INNER,ASSONANCE,vowel,MED,Y
+12.38,69,"I was lovin' life, I got too deep (I was too deep)",lovin,71,Toni singing me another sad song (Ooh),Toni,INNER,SLANT,cmu,MED,Y
+12.38,70,"Woke up in my room, she was long gone",long,70,"Woke up in my room, she was long gone",gone,INNER,SLANT,cmu,MED,Y
+12.38,70,"Woke up in my room, she was long gone",gone,71,Toni singing me another sad song (Ooh),song,END,SLANT,cmu,MED,Y
+12.38,70,"Woke up in my room, she was long gone",long,71,Toni singing me another sad song (Ooh),song,INNER,PERFECT,cmu,HIGH,Y
+12.38,70,"Woke up in my room, she was long gone",Woke,71,Toni singing me another sad song (Ooh),Toni,INNER,SLANT,cmu,MED,Y
+12.38,71,Toni singing me another sad song (Ooh),singing,72,"Oh, until we meet again",until,INNER,ASSONANCE,vowel,MED,Y
+12.38,71,Toni singing me another sad song (Ooh),another,73,"This ain't special, tell me what you want",what,INNER,SLANT,cmu,MED,Y
+12.38,72,"Oh, until we meet again",again,73,"This ain't special, tell me what you want",special,INNER,ASSONANCE,vowel,MED,Y
+12.38,72,"Oh, until we meet again",again,73,"This ain't special, tell me what you want",tell,INNER,SLANT,cmu,MED,Y
+12.38,72,"Oh, until we meet again",again,74,"This ain't special, baby, this is fun",special,INNER,ASSONANCE,vowel,MED,Y
+12.38,73,"This ain't special, tell me what you want",special,73,"This ain't special, tell me what you want",tell,INNER,SLANT,cmu,MED,Y
+12.38,73,"This ain't special, tell me what you want",ain't,74,"This ain't special, baby, this is fun",ain't,INNER,REPEAT,spelling,HIGH,N
+12.38,73,"This ain't special, tell me what you want",ain't,74,"This ain't special, baby, this is fun",baby,INNER,ASSONANCE,vowel,MED,Y
+12.38,73,"This ain't special, tell me what you want",special,74,"This ain't special, baby, this is fun",special,INNER,REPEAT,spelling,HIGH,N
+12.38,73,"This ain't special, tell me what you want",tell,74,"This ain't special, baby, this is fun",special,INNER,SLANT,cmu,MED,Y
+12.38,73,"This ain't special, tell me what you want",what,74,"This ain't special, baby, this is fun",fun,INNER,SLANT,cmu,MED,Y
+12.38,73,"This ain't special, tell me what you want",want,75,"Drop it off (21), let me see if your booty soft",soft,END,SLANT,cmu,MED,Y
+12.38,73,"This ain't special, tell me what you want",special,75,"Drop it off (21), let me see if your booty soft",let,INNER,ASSONANCE,vowel,MED,Y
+12.38,73,"This ain't special, tell me what you want",tell,75,"Drop it off (21), let me see if your booty soft",let,INNER,SLANT,cmu,MED,Y
+12.38,73,"This ain't special, tell me what you want",want,75,"Drop it off (21), let me see if your booty soft",Drop,INNER,ASSONANCE,vowel,MED,Y
+12.38,74,"This ain't special, baby, this is fun",ain't,74,"This ain't special, baby, this is fun",baby,INNER,ASSONANCE,vowel,MED,Y
+12.38,74,"This ain't special, baby, this is fun",special,75,"Drop it off (21), let me see if your booty soft",let,INNER,ASSONANCE,vowel,MED,Y
+12.38,74,"This ain't special, baby, this is fun",special,76,"Gold mouth (Hold up, hold up), yes, I'm from the Dirty South",yes,INNER,ASSONANCE,vowel,MED,Y
+12.38,75,"Drop it off (21), let me see if your booty soft",Drop,75,"Drop it off (21), let me see if your booty soft",soft,INNER,ASSONANCE,vowel,MED,Y
+12.38,75,"Drop it off (21), let me see if your booty soft",let,76,"Gold mouth (Hold up, hold up), yes, I'm from the Dirty South",yes,INNER,SLANT,cmu,MED,Y
+12.38,76,"Gold mouth (Hold up, hold up), yes, I'm from the Dirty South",mouth,76,"Gold mouth (Hold up, hold up), yes, I'm from the Dirty South",South,INNER,PERFECT,cmu,HIGH,Y
+12.38,76,"Gold mouth (Hold up, hold up), yes, I'm from the Dirty South",Gold,78,"Pipes out (On God), all my shooters came from Moscow",Moscow,INNER,ASSONANCE,vowel,MED,Y
+12.38,77,"Lights out (Straight up), summertime, I brought the ice out (21)",Lights,77,"Lights out (Straight up), summertime, I brought the ice out (21)",ice,INNER,SLANT,cmu,MED,Y
+12.38,77,"Lights out (Straight up), summertime, I brought the ice out (21)",Lights,77,"Lights out (Straight up), summertime, I brought the ice out (21)",summertime,INNER,ASSONANCE,vowel,MED,Y
+12.38,77,"Lights out (Straight up), summertime, I brought the ice out (21)",summertime,77,"Lights out (Straight up), summertime, I brought the ice out (21)",ice,INNER,SLANT,cmu,MED,Y
+12.38,77,"Lights out (Straight up), summertime, I brought the ice out (21)",brought,78,"Pipes out (On God), all my shooters came from Moscow",all,INNER,SLANT,cmu,MED,Y
+12.38,77,"Lights out (Straight up), summertime, I brought the ice out (21)",ice,78,"Pipes out (On God), all my shooters came from Moscow",Pipes,INNER,SLANT,cmu,MED,Y
+12.38,77,"Lights out (Straight up), summertime, I brought the ice out (21)",Lights,78,"Pipes out (On God), all my shooters came from Moscow",Pipes,INNER,SLANT,cmu,MED,Y
+12.38,77,"Lights out (Straight up), summertime, I brought the ice out (21)",summertime,78,"Pipes out (On God), all my shooters came from Moscow",Pipes,INNER,ASSONANCE,vowel,MED,Y
+12.38,77,"Lights out (Straight up), summertime, I brought the ice out (21)",brought,79,"Got a girl in Harvard, I talk proper when I call her (21)",call,INNER,SLANT,cmu,MED,Y
+12.38,77,"Lights out (Straight up), summertime, I brought the ice out (21)",brought,79,"Got a girl in Harvard, I talk proper when I call her (21)",talk,INNER,SLANT,cmu,MED,Y
+12.38,78,"Pipes out (On God), all my shooters came from Moscow",all,79,"Got a girl in Harvard, I talk proper when I call her (21)",call,INNER,PERFECT,cmu,HIGH,Y
+12.38,78,"Pipes out (On God), all my shooters came from Moscow",all,79,"Got a girl in Harvard, I talk proper when I call her (21)",talk,INNER,SLANT,cmu,MED,Y
+12.38,78,"Pipes out (On God), all my shooters came from Moscow",all,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",baller,INNER,SLANT,cmu,MED,Y
+12.38,78,"Pipes out (On God), all my shooters came from Moscow",came,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",ain't,INNER,ASSONANCE,vowel,MED,Y
+12.38,78,"Pipes out (On God), all my shooters came from Moscow",came,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",Baby,INNER,SLANT,cmu,MED,Y
+12.38,78,"Pipes out (On God), all my shooters came from Moscow",came,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",way,INNER,ASSONANCE,vowel,MED,Y
+12.38,78,"Pipes out (On God), all my shooters came from Moscow",Moscow,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",no,INNER,PERFECT,cmu,HIGH,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",Got,79,"Got a girl in Harvard, I talk proper when I call her (21)",Harvard,INNER,ASSONANCE,vowel,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",Got,79,"Got a girl in Harvard, I talk proper when I call her (21)",proper,INNER,SLANT,cmu,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",Harvard,79,"Got a girl in Harvard, I talk proper when I call her (21)",proper,INNER,ASSONANCE,vowel,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",talk,79,"Got a girl in Harvard, I talk proper when I call her (21)",call,INNER,SLANT,cmu,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",call,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",baller,INNER,SLANT,cmu,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",Got,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",raw,INNER,ASSONANCE,vowel,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",Harvard,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",raw,INNER,ASSONANCE,vowel,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",proper,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",raw,INNER,ASSONANCE,vowel,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",talk,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",baller,INNER,SLANT,cmu,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",Got,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",want,INNER,SLANT,cmu,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",Harvard,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",want,INNER,ASSONANCE,vowel,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",proper,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",want,INNER,ASSONANCE,vowel,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",when,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",Benz,INNER,SLANT,cmu,MED,Y
+12.38,79,"Got a girl in Harvard, I talk proper when I call her (21)",when,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",friends,INNER,ASSONANCE,vowel,MED,Y
+12.38,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",ain't,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",way,INNER,ASSONANCE,vowel,MED,Y
+12.38,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",Baby,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",ain't,INNER,ASSONANCE,vowel,MED,Y
+12.38,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",Baby,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",way,INNER,ASSONANCE,vowel,MED,Y
+12.38,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",no,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",don't,INNER,ASSONANCE,vowel,MED,Y
+12.38,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",no,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",no,INNER,REPEAT,spelling,HIGH,N
+12.38,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",raw,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",want,INNER,ASSONANCE,vowel,MED,Y
+12.38,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",can,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",damn,INNER,SLANT,cmu,MED,Y
+12.38,80,"Baby, I'm a baller, ain't no way that I can raw ya (Straight up)",can,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",Franklin,INNER,ASSONANCE,vowel,MED,Y
+12.38,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",don't,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",no,INNER,ASSONANCE,vowel,MED,Y
+12.38,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",friends,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",Benz,INNER,SLANT,cmu,MED,Y
+12.38,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",new,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",new,INNER,REPEAT,spelling,HIGH,N
+12.38,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",Benz,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",Ben,INNER,SLANT,cmu,MED,Y
+12.38,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",Benz,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",M's,INNER,SLANT,cmu,MED,Y
+12.38,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",friends,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",Ben,INNER,ASSONANCE,vowel,MED,Y
+12.38,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",friends,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",M's,INNER,SLANT,cmu,MED,Y
+12.38,81,"She don't want no new friends, she just tryna buy her a new Benz (On God)",buy,83,"Put my mind to it and I did it, them facts (21)",mind,INNER,ASSONANCE,vowel,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",Franklin,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",damn,INNER,ASSONANCE,vowel,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",M's,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",Ben,INNER,ASSONANCE,vowel,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",near,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",kin,INNER,SLANT,cmu,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",damn,83,"Put my mind to it and I did it, them facts (21)",facts,INNER,ASSONANCE,vowel,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",Franklin,83,"Put my mind to it and I did it, them facts (21)",facts,INNER,ASSONANCE,vowel,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",Ben,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",get,INNER,SLANT,cmu,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",counting,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",'bout,INNER,ASSONANCE,vowel,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",damn,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",wack,INNER,SLANT,cmu,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",Franklin,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",wack,INNER,ASSONANCE,vowel,MED,Y
+12.38,82,"I've been counting M's, me and Ben Franklin damn near kin (On God)",M's,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",get,INNER,ASSONANCE,vowel,MED,Y
+12.38,83,"Put my mind to it and I did it, them facts (21)",facts,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",wack,END,ASSONANCE,vowel,MED,Y
+12.38,83,"Put my mind to it and I did it, them facts (21)",Put,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",pussy,INNER,SLANT,cmu,MED,Y
+12.38,83,"Put my mind to it and I did it, them facts (21)",facts,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),black,END,ASSONANCE,vowel,MED,Y
+12.38,83,"Put my mind to it and I did it, them facts (21)",facts,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),harassin,INNER,ASSONANCE,vowel,MED,Y
+12.38,83,"Put my mind to it and I did it, them facts (21)",facts,86,They mad 'cause I made myself a boss without crack (On God),crack,END,ASSONANCE,vowel,MED,Y
+12.38,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",brother,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",some,INNER,SLANT,cmu,MED,Y
+12.38,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",wack,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),black,END,PERFECT,cmu,HIGH,Y
+12.38,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",wack,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),harassin,INNER,ASSONANCE,vowel,MED,Y
+12.38,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",wack,86,They mad 'cause I made myself a boss without crack (On God),crack,END,PERFECT,cmu,HIGH,Y
+12.38,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",'bout,86,They mad 'cause I made myself a boss without crack (On God),without,INNER,PERFECT,cmu,HIGH,Y
+12.38,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",get,86,They mad 'cause I made myself a boss without crack (On God),myself,INNER,ASSONANCE,vowel,MED,Y
+12.38,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",Talkin,86,They mad 'cause I made myself a boss without crack (On God),boss,INNER,ASSONANCE,vowel,MED,Y
+12.38,84,"Talkin' 'bout your brother to get some pussy, that's wack (Straight up)",wack,86,They mad 'cause I made myself a boss without crack (On God),mad,INNER,SLANT,cmu,MED,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),harassin,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),black,INNER,ASSONANCE,vowel,MED,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),police,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),keep,INNER,SLANT,cmu,MED,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),black,86,They mad 'cause I made myself a boss without crack (On God),crack,END,PERFECT,cmu,HIGH,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),'cause,86,They mad 'cause I made myself a boss without crack (On God),'cause,INNER,REPEAT,spelling,HIGH,N
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),black,86,They mad 'cause I made myself a boss without crack (On God),mad,INNER,SLANT,cmu,MED,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),harassin,86,They mad 'cause I made myself a boss without crack (On God),crack,INNER,ASSONANCE,vowel,MED,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),harassin,86,They mad 'cause I made myself a boss without crack (On God),mad,INNER,ASSONANCE,vowel,MED,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),keep,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",Lamborghini,INNER,SLANT,cmu,MED,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),police,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",Lamborghini,INNER,SLANT,cmu,MED,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),rich,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",trippin,INNER,ASSONANCE,vowel,MED,Y
+12.38,85,The police keep harassin' 'cause I'm rich and I'm black (Straight up),rich,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",whippin,INNER,ASSONANCE,vowel,MED,Y
+12.38,86,They mad 'cause I made myself a boss without crack (On God),mad,86,They mad 'cause I made myself a boss without crack (On God),crack,INNER,SLANT,cmu,MED,Y
+12.38,86,They mad 'cause I made myself a boss without crack (On God),made,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",ain't,INNER,ASSONANCE,vowel,MED,Y
+12.38,86,They mad 'cause I made myself a boss without crack (On God),made,88,"Straight up out the trenches, money made me ign'ant (It did)",made,INNER,REPEAT,spelling,HIGH,N
+12.38,86,They mad 'cause I made myself a boss without crack (On God),made,88,"Straight up out the trenches, money made me ign'ant (It did)",Straight,INNER,SLANT,cmu,MED,Y
+12.38,86,They mad 'cause I made myself a boss without crack (On God),myself,88,"Straight up out the trenches, money made me ign'ant (It did)",trenches,INNER,ASSONANCE,vowel,MED,Y
+12.38,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",ain't trippin,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",Lamborghini whippin,INNER,MULTI,multi,HIGH,Y
+12.38,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",trippin,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",whippin,INNER,MULTI,multi,HIGH,Y
+12.38,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",ain't,88,"Straight up out the trenches, money made me ign'ant (It did)",made,INNER,ASSONANCE,vowel,MED,Y
+12.38,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",ain't,88,"Straight up out the trenches, money made me ign'ant (It did)",Straight,INNER,SLANT,cmu,MED,Y
+12.38,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",whippin,89,I'm on a private jet eatin' Popeyes chicken (21),chicken,END,SLANT,cmu,MED,Y
+12.38,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",Lamborghini,89,I'm on a private jet eatin' Popeyes chicken (21),eatin,INNER,ASSONANCE,vowel,MED,Y
+12.38,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",trippin,89,I'm on a private jet eatin' Popeyes chicken (21),chicken,INNER,SLANT,cmu,MED,Y
+12.38,87,"I ain't trippin', boy, I'm Lamborghini whippin' (21, 21)",whippin,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",spinach,END,ASSONANCE,vowel,MED,Y
+12.38,88,"Straight up out the trenches, money made me ign'ant (It did)",Straight,88,"Straight up out the trenches, money made me ign'ant (It did)",made,INNER,SLANT,cmu,MED,Y
+12.38,88,"Straight up out the trenches, money made me ign'ant (It did)",trenches,89,I'm on a private jet eatin' Popeyes chicken (21),jet,INNER,ASSONANCE,vowel,MED,Y
+12.38,88,"Straight up out the trenches, money made me ign'ant (It did)",ign'ant,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",spinach,END,ASSONANCE,vowel,LOW,N
+12.38,88,"Straight up out the trenches, money made me ign'ant (It did)",trenches,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",flexin,INNER,ASSONANCE,vowel,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),private,89,I'm on a private jet eatin' Popeyes chicken (21),Popeyes,INNER,ASSONANCE,vowel,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),chicken,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",spinach,END,ASSONANCE,vowel,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),eatin,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",eatin,INNER,REPEAT,spelling,HIGH,N
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),jet,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",flexin,INNER,ASSONANCE,vowel,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),Popeyes,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",like,INNER,SLANT,cmu,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),Popeyes,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",Popeye's,INNER,REPEAT,spelling,HIGH,N
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),private,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",like,INNER,ASSONANCE,vowel,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),private,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",Popeye's,INNER,ASSONANCE,vowel,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),chicken,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",little,INNER,ASSONANCE,vowel,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),chicken,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",still,INNER,ASSONANCE,vowel,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),Popeyes,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",time,INNER,SLANT,cmu,MED,Y
+12.38,89,I'm on a private jet eatin' Popeyes chicken (21),private,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",time,INNER,ASSONANCE,vowel,MED,Y
+12.38,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",like,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",Popeye's,INNER,SLANT,cmu,MED,Y
+12.38,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",like,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",time,INNER,SLANT,cmu,MED,Y
+12.38,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",Popeye's,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",time,INNER,SLANT,cmu,MED,Y
+12.38,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",spinach,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",little,INNER,ASSONANCE,vowel,MED,Y
+12.38,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",spinach,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",still,INNER,ASSONANCE,vowel,MED,Y
+12.38,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",flexin,92,"Baby, I might let you go",let,INNER,ASSONANCE,vowel,MED,Y
+12.38,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",like,92,"Baby, I might let you go",might,INNER,SLANT,cmu,MED,Y
+12.38,90,"I be flexin' like I'm eatin' Popeye's spinach (21, 21, 21)",Popeye's,92,"Baby, I might let you go",might,INNER,SLANT,cmu,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",Percolating,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",Sunday,INNER,ASSONANCE,vowel,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",still,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",little,INNER,SLANT,cmu,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",Percolating,92,"Baby, I might let you go",Baby,INNER,ASSONANCE,vowel,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",Sunday,92,"Baby, I might let you go",Baby,INNER,ASSONANCE,vowel,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",time,92,"Baby, I might let you go",might,INNER,SLANT,cmu,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",have,93,"Babe, baby, no matter what",matter,INNER,SLANT,cmu,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",Percolating,93,"Babe, baby, no matter what",Babe,INNER,ASSONANCE,vowel,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",Percolating,93,"Babe, baby, no matter what",baby,INNER,ASSONANCE,vowel,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",Sunday,93,"Babe, baby, no matter what",Babe,INNER,ASSONANCE,vowel,MED,Y
+12.38,91,"Percolating, still have a little time for Sunday, ooh (So baby, let's take it back to the crib)",Sunday,93,"Babe, baby, no matter what",baby,INNER,ASSONANCE,vowel,MED,Y
+12.38,92,"Baby, I might let you go",Baby,93,"Babe, baby, no matter what",Babe,INNER,SLANT,cmu,MED,Y
+12.38,92,"Baby, I might let you go",Baby,93,"Babe, baby, no matter what",baby,INNER,REPEAT,spelling,HIGH,N
+12.38,92,"Baby, I might let you go",go,93,"Babe, baby, no matter what",no,INNER,PERFECT,cmu,HIGH,Y
+12.38,92,"Baby, I might let you go",might,94,And like I switch the other side of me,like,INNER,SLANT,cmu,MED,Y
+12.38,92,"Baby, I might let you go",might,94,And like I switch the other side of me,side,INNER,SLANT,cmu,MED,Y
+12.38,93,"Babe, baby, no matter what",Babe,93,"Babe, baby, no matter what",baby,INNER,SLANT,cmu,MED,Y
+12.38,93,"Babe, baby, no matter what",what,94,And like I switch the other side of me,other,INNER,SLANT,cmu,MED,Y
+12.38,93,"Babe, baby, no matter what",Babe,95,Baby got a whole lotta ride on me,Baby,INNER,SLANT,cmu,MED,Y
+12.38,93,"Babe, baby, no matter what",baby,95,Baby got a whole lotta ride on me,Baby,INNER,REPEAT,spelling,HIGH,N
+12.38,93,"Babe, baby, no matter what",no,95,Baby got a whole lotta ride on me,whole,INNER,ASSONANCE,vowel,MED,Y
+12.38,94,And like I switch the other side of me,like,94,And like I switch the other side of me,side,INNER,SLANT,cmu,MED,Y
+12.38,94,And like I switch the other side of me,side,95,Baby got a whole lotta ride on me,ride,END,PERFECT,cmu,HIGH,Y
+12.38,94,And like I switch the other side of me,like,95,Baby got a whole lotta ride on me,ride,INNER,SLANT,cmu,MED,Y
+12.38,94,And like I switch the other side of me,switch,96,"Babe, baby, let's take it back to crib",crib,INNER,SLANT,cmu,MED,Y
+12.38,95,Baby got a whole lotta ride on me,got,95,Baby got a whole lotta ride on me,lotta,INNER,SLANT,cmu,MED,Y
+12.38,95,Baby got a whole lotta ride on me,Baby,96,"Babe, baby, let's take it back to crib",Babe,INNER,SLANT,cmu,MED,Y
+12.38,95,Baby got a whole lotta ride on me,Baby,96,"Babe, baby, let's take it back to crib",baby,INNER,REPEAT,spelling,HIGH,N
+12.38,95,Baby got a whole lotta ride on me,Baby,96,"Babe, baby, let's take it back to crib",take,INNER,SLANT,cmu,MED,Y
+12.38,96,"Babe, baby, let's take it back to crib",Babe,96,"Babe, baby, let's take it back to crib",baby,INNER,SLANT,cmu,MED,Y
+12.38,96,"Babe, baby, let's take it back to crib",Babe,96,"Babe, baby, let's take it back to crib",take,INNER,SLANT,cmu,MED,Y
+12.38,96,"Babe, baby, let's take it back to crib",baby,96,"Babe, baby, let's take it back to crib",take,INNER,SLANT,cmu,MED,Y
+12.38,96,"Babe, baby, let's take it back to crib",crib,97,"Back, back to the crib",crib,END,REPEAT,spelling,HIGH,N
+12.38,96,"Babe, baby, let's take it back to crib",back,97,"Back, back to the crib",Back,INNER,REPEAT,spelling,HIGH,N
+12.38,96,"Babe, baby, let's take it back to crib",Babe,98,"Back, back to the, babe",babe,INNER,REPEAT,spelling,HIGH,N
+12.38,96,"Babe, baby, let's take it back to crib",baby,98,"Back, back to the, babe",babe,INNER,SLANT,cmu,MED,Y
+12.38,96,"Babe, baby, let's take it back to crib",back,98,"Back, back to the, babe",Back,INNER,REPEAT,spelling,HIGH,N
+12.38,96,"Babe, baby, let's take it back to crib",take,98,"Back, back to the, babe",babe,INNER,SLANT,cmu,MED,Y
+12.38,97,"Back, back to the crib",Back,97,"Back, back to the crib",back,INNER,REPEAT,spelling,HIGH,N
+12.38,97,"Back, back to the crib",Back,98,"Back, back to the, babe",Back,INNER,REPEAT,spelling,HIGH,N
+12.38,98,"Back, back to the, babe",Back,98,"Back, back to the, babe",back,INNER,REPEAT,spelling,HIGH,N
+12.38,98,"Back, back to the, babe",babe,100,"Baby, baby, no matter what",Baby,INNER,SLANT,cmu,MED,Y
+12.38,98,"Back, back to the, babe",Back,100,"Baby, baby, no matter what",matter,INNER,SLANT,cmu,MED,Y
+12.38,99,I might let you go,go,100,"Baby, baby, no matter what",no,INNER,PERFECT,cmu,HIGH,Y
+12.38,100,"Baby, baby, no matter what",Baby,100,"Baby, baby, no matter what",baby,INNER,REPEAT,spelling,HIGH,N
+12.38,100,"Baby, baby, no matter what",matter,101,"And I can, I can, I can, I can",can,INNER,SLANT,cmu,MED,Y
+12.38,100,"Baby, baby, no matter what",matter,102,"Back to the crib, back to the",Back,INNER,SLANT,cmu,MED,Y
+12.38,101,"And I can, I can, I can, I can",can,101,"And I can, I can, I can, I can",can,INNER,REPEAT,spelling,HIGH,N
+12.38,101,"And I can, I can, I can, I can",can,102,"Back to the crib, back to the",back,END,SLANT,cmu,MED,Y
+12.38,101,"And I can, I can, I can, I can",can,102,"Back to the crib, back to the",Back,INNER,SLANT,cmu,MED,Y
+12.38,102,"Back to the crib, back to the",Back,102,"Back to the crib, back to the",back,INNER,REPEAT,spelling,HIGH,N
+12.38,104,"Baby, I, baby, baby, I",Baby,104,"Baby, I, baby, baby, I",baby,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),time,1,Took time to realize I could really do whatever I want (Okay),realize,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),Took,1,Took time to realize I could really do whatever I want (Okay),could,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),want,2,"Said I could really do whatever I want (Okay, okay)",want,END,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),could,2,"Said I could really do whatever I want (Okay, okay)",could,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),really,2,"Said I could really do whatever I want (Okay, okay)",really,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),Took,2,"Said I could really do whatever I want (Okay, okay)",could,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),whatever,2,"Said I could really do whatever I want (Okay, okay)",Said,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),whatever,2,"Said I could really do whatever I want (Okay, okay)",whatever,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),want,3,Took time to realize you could really do whatever you want (You want),want,END,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),could,3,Took time to realize you could really do whatever you want (You want),could,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),could,3,Took time to realize you could really do whatever you want (You want),Took,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),realize,3,Took time to realize you could really do whatever you want (You want),realize,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),realize,3,Took time to realize you could really do whatever you want (You want),time,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),really,3,Took time to realize you could really do whatever you want (You want),really,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),time,3,Took time to realize you could really do whatever you want (You want),realize,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),time,3,Took time to realize you could really do whatever you want (You want),time,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),Took,3,Took time to realize you could really do whatever you want (You want),could,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),Took,3,Took time to realize you could really do whatever you want (You want),Took,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),whatever,3,Took time to realize you could really do whatever you want (You want),whatever,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,1,Took time to realize I could really do whatever I want (Okay),want,4,Said you could really do whatever you want,want,END,REPEAT,spelling,HIGH,N
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",Said,2,"Said I could really do whatever I want (Okay, okay)",whatever,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",want,3,Took time to realize you could really do whatever you want (You want),want,END,REPEAT,spelling,HIGH,N
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",could,3,Took time to realize you could really do whatever you want (You want),could,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",could,3,Took time to realize you could really do whatever you want (You want),Took,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",really,3,Took time to realize you could really do whatever you want (You want),really,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",Said,3,Took time to realize you could really do whatever you want (You want),whatever,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",whatever,3,Took time to realize you could really do whatever you want (You want),whatever,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",want,4,Said you could really do whatever you want,want,END,REPEAT,spelling,HIGH,N
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",could,4,Said you could really do whatever you want,could,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",really,4,Said you could really do whatever you want,really,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",Said,4,Said you could really do whatever you want,Said,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",Said,4,Said you could really do whatever you want,whatever,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",whatever,4,Said you could really do whatever you want,Said,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,2,"Said I could really do whatever I want (Okay, okay)",whatever,4,Said you could really do whatever you want,whatever,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),time,3,Took time to realize you could really do whatever you want (You want),realize,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),Took,3,Took time to realize you could really do whatever you want (You want),could,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),want,4,Said you could really do whatever you want,want,END,REPEAT,spelling,HIGH,N
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),could,4,Said you could really do whatever you want,could,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),really,4,Said you could really do whatever you want,really,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),Took,4,Said you could really do whatever you want,could,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),whatever,4,Said you could really do whatever you want,Said,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),whatever,4,Said you could really do whatever you want,whatever,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),really,5,Don't let all (Yeah) of this bring you down,bring,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,3,Took time to realize you could really do whatever you want (You want),whatever,5,Don't let all (Yeah) of this bring you down,let,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,4,Said you could really do whatever you want,Said,4,Said you could really do whatever you want,whatever,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,4,Said you could really do whatever you want,really,5,Don't let all (Yeah) of this bring you down,bring,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,4,Said you could really do whatever you want,Said,5,Don't let all (Yeah) of this bring you down,let,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,4,Said you could really do whatever you want,whatever,5,Don't let all (Yeah) of this bring you down,let,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,4,Said you could really do whatever you want,Said,6,"Peanut butter jelly is my favorite (Yum, woo, woo)",jelly,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,4,Said you could really do whatever you want,whatever,6,"Peanut butter jelly is my favorite (Yum, woo, woo)",jelly,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,5,Don't let all (Yeah) of this bring you down,let,6,"Peanut butter jelly is my favorite (Yum, woo, woo)",jelly,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,5,Don't let all (Yeah) of this bring you down,Don't,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",don't,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,5,Don't let all (Yeah) of this bring you down,let,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",mess,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,6,"Peanut butter jelly is my favorite (Yum, woo, woo)",favorite,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",dangerous,END,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,6,"Peanut butter jelly is my favorite (Yum, woo, woo)",jelly,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",mess,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,6,"Peanut butter jelly is my favorite (Yum, woo, woo)",Peanut,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",Pleas,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,6,"Peanut butter jelly is my favorite (Yum, woo, woo)",favorite,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",changin,END,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,6,"Peanut butter jelly is my favorite (Yum, woo, woo)",favorite,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",ain't,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,6,"Peanut butter jelly is my favorite (Yum, woo, woo)",jelly,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",Get,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",dangerous,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",changin,END,SLANT,cmu,MED,Y
+Do Whatever You Want,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",dangerous,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",don't,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",mon,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",family,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",black,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",family,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",man,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",mess,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",Get,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",don't,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",Los,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",family,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",Angeles,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,7,"Pleasе don't mess with family, that's too dangerous (Bow, ooh, mm)",mess,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",get,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",ain't,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",changin,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",black,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",man,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",black,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",Angeles,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",Get,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",get,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",man,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",Angeles,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",mon,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",Los,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",y,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",life,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",y,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",like,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",y,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",sunshine,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",ain't,10,"My life got two halos 'round my neck (Two, my life, woo)",halos,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",changin,10,"My life got two halos 'round my neck (Two, my life, woo)",halos,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",Get,10,"My life got two halos 'round my neck (Two, my life, woo)",neck,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,8,"""Get your monеy, black man, that ain't changin' us"" (Yeah, woo)",y,10,"My life got two halos 'round my neck (Two, my life, woo)",life,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",life,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",like,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",life,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",sunshine,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",sunshine,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",like,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",get,10,"My life got two halos 'round my neck (Two, my life, woo)",neck,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",life,10,"My life got two halos 'round my neck (Two, my life, woo)",life,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",like,10,"My life got two halos 'round my neck (Two, my life, woo)",life,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",sunshine,10,"My life got two halos 'round my neck (Two, my life, woo)",life,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",life,11,"My life got more halos than that chick (Yessir, woo)",life,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",like,11,"My life got more halos than that chick (Yessir, woo)",life,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,9,"My life get that sunshine like Los Angeles (Ah, yeah, ayy)",sunshine,11,"My life got more halos than that chick (Yessir, woo)",life,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,10,"My life got two halos 'round my neck (Two, my life, woo)",got,11,"My life got more halos than that chick (Yessir, woo)",got,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,10,"My life got two halos 'round my neck (Two, my life, woo)",halos,11,"My life got more halos than that chick (Yessir, woo)",halos,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,10,"My life got two halos 'round my neck (Two, my life, woo)",life,11,"My life got more halos than that chick (Yessir, woo)",life,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,10,"My life got two halos 'round my neck (Two, my life, woo)",halos,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,10,"My life got two halos 'round my neck (Two, my life, woo)",life,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",life,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,11,"My life got more halos than that chick (Yessir, woo)",halos,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,11,"My life got more halos than that chick (Yessir, woo)",life,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",life,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,11,"My life got more halos than that chick (Yessir, woo)",more,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",y'all,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,11,"My life got more halos than that chick (Yessir, woo)",halos,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,11,"My life got more halos than that chick (Yessir, woo)",life,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",Childish,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,11,"My life got more halos than that chick (Yessir, woo)",more,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",Y'all,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",own,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",clonin,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",ain't,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",ain't,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",clonin,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",grown,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",life,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",Childish,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",own,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",grown,INNER,PERFECT,cmu,HIGH,Y
+Do Whatever You Want,12,"My life on my own, y'all ain't clonin' this (Y'all ain't clonin' us)",y'all,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",Y'all,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",Y'all,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",y'all,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,13,"Y'all, Childish is here, y'all ain't grown enough (Woo, damn)",enough,14,"Shout-out to my brother, you the truth (You the truth, hey)",brother,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,14,"Shout-out to my brother, you the truth (You the truth, hey)",truth,15,"Shout-out to my sister, get that loot (Shawty)",loot,END,SLANT,cmu,MED,Y
+Do Whatever You Want,14,"Shout-out to my brother, you the truth (You the truth, hey)",Shout,15,"Shout-out to my sister, get that loot (Shawty)",Shout,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,16,"I'm on break on an island, I'm on break (Yessir, woo)",break,16,"I'm on break on an island, I'm on break (Yessir, woo)",break,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,16,"I'm on break on an island, I'm on break (Yessir, woo)",break,17,"This is great, momma cookin', this is great, ooh (Damn)",great,END,SLANT,cmu,MED,Y
+Do Whatever You Want,16,"I'm on break on an island, I'm on break (Yessir, woo)",break,17,"This is great, momma cookin', this is great, ooh (Damn)",great,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,17,"This is great, momma cookin', this is great, ooh (Damn)",great,17,"This is great, momma cookin', this is great, ooh (Damn)",great,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,17,"This is great, momma cookin', this is great, ooh (Damn)",cookin,18,"Look at my son, so little (Woo)",Look,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,17,"This is great, momma cookin', this is great, ooh (Damn)",momma,19,I got the team like pick-up (Swish),got,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,18,"Look at my son, so little (Woo)",little,19,I got the team like pick-up (Swish),pick,END,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,18,"Look at my son, so little (Woo)",son,20,I used to dream 'bout come up (Wait),come,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,19,I got the team like pick-up (Swish),team,20,I used to dream 'bout come up (Wait),dream,INNER,PERFECT,cmu,HIGH,Y
+Do Whatever You Want,19,I got the team like pick-up (Swish),like,21,"But now I'm feeling good, might shut up (Woo)",might,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,19,I got the team like pick-up (Swish),team,21,"But now I'm feeling good, might shut up (Woo)",feeling,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,20,I used to dream 'bout come up (Wait),come,21,"But now I'm feeling good, might shut up (Woo)",shut,END,SLANT,cmu,MED,Y
+Do Whatever You Want,20,I used to dream 'bout come up (Wait),'bout,21,"But now I'm feeling good, might shut up (Woo)",now,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,20,I used to dream 'bout come up (Wait),dream,21,"But now I'm feeling good, might shut up (Woo)",feeling,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,20,I used to dream 'bout come up (Wait),come,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",kumbaya,END,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,20,I used to dream 'bout come up (Wait),come,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",Someone,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,20,I used to dream 'bout come up (Wait),dream,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",sleeping,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,21,"But now I'm feeling good, might shut up (Woo)",shut,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",kumbaya,END,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,21,"But now I'm feeling good, might shut up (Woo)",feeling,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",sleeping,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,21,"But now I'm feeling good, might shut up (Woo)",shut,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",Someone,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,21,"But now I'm feeling good, might shut up (Woo)",feeling,23,"Used to sleep on floors, everyday (Yeah, ayy, yeah)",sleep,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",Someone,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",kumbaya,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",Lord,23,"Used to sleep on floors, everyday (Yeah, ayy, yeah)",floors,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",sleeping,23,"Used to sleep on floors, everyday (Yeah, ayy, yeah)",sleep,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,22,"Someone sleeping, Lord, kumbaya (Kumbaya)",Lord,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",baller,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,23,"Used to sleep on floors, everyday (Yeah, ayy, yeah)",everyday,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,23,"Used to sleep on floors, everyday (Yeah, ayy, yeah)",everyday,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",Baby,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,23,"Used to sleep on floors, everyday (Yeah, ayy, yeah)",everyday,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",way,INNER,PERFECT,cmu,HIGH,Y
+Do Whatever You Want,23,"Used to sleep on floors, everyday (Yeah, ayy, yeah)",floors,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",baller,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",ain't,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",way,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",Baby,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",ain't,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",Baby,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",way,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",can,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",damn,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",can,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",Franklin,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",can,26,"Put my mind to it and I did it, damn fact (21)",damn,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,24,"Baby, I'm a baller, ain't no way that I can rob you (Straight up)",can,26,"Put my mind to it and I did it, damn fact (21)",fact,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",Franklin,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",damn,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",M's,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",Ben,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",near,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",kin,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",damn,26,"Put my mind to it and I did it, damn fact (21)",damn,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",damn,26,"Put my mind to it and I did it, damn fact (21)",fact,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",Franklin,26,"Put my mind to it and I did it, damn fact (21)",damn,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",Franklin,26,"Put my mind to it and I did it, damn fact (21)",fact,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",kin,27,"Straight up out the trenches, money made me ignorant (Ya dig?)",ignorant,END,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",Ben,27,"Straight up out the trenches, money made me ignorant (Ya dig?)",trenches,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",M's,27,"Straight up out the trenches, money made me ignorant (Ya dig?)",trenches,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",near,27,"Straight up out the trenches, money made me ignorant (Ya dig?)",ignorant,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,25,"I been countin' M's, me and Ben Franklin damn near kin (On God)",kin,28,"I be flexin' like I'm eatin' Popeyes spinach (21, 21, 21)",spinach,END,SLANT,cmu,MED,Y
+Do Whatever You Want,26,"Put my mind to it and I did it, damn fact (21)",damn,26,"Put my mind to it and I did it, damn fact (21)",fact,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,26,"Put my mind to it and I did it, damn fact (21)",mind,28,"I be flexin' like I'm eatin' Popeyes spinach (21, 21, 21)",like,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,26,"Put my mind to it and I did it, damn fact (21)",mind,28,"I be flexin' like I'm eatin' Popeyes spinach (21, 21, 21)",Popeyes,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,27,"Straight up out the trenches, money made me ignorant (Ya dig?)",Straight,27,"Straight up out the trenches, money made me ignorant (Ya dig?)",made,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,27,"Straight up out the trenches, money made me ignorant (Ya dig?)",ignorant,28,"I be flexin' like I'm eatin' Popeyes spinach (21, 21, 21)",spinach,END,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,27,"Straight up out the trenches, money made me ignorant (Ya dig?)",trenches,28,"I be flexin' like I'm eatin' Popeyes spinach (21, 21, 21)",flexin,INNER,ASSONANCE,vowel,MED,Y
+Do Whatever You Want,27,"Straight up out the trenches, money made me ignorant (Ya dig?)",money,29,"Don't worry (Don't you worry), be the one (Yeah, oh)",one,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,28,"I be flexin' like I'm eatin' Popeyes spinach (21, 21, 21)",like,28,"I be flexin' like I'm eatin' Popeyes spinach (21, 21, 21)",Popeyes,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,29,"Don't worry (Don't you worry), be the one (Yeah, oh)",one,30,"Don't worry (Don't you worry now, now, now), have some fun (Yeah)",fun,END,PERFECT,cmu,HIGH,Y
+Do Whatever You Want,29,"Don't worry (Don't you worry), be the one (Yeah, oh)",Don't,30,"Don't worry (Don't you worry now, now, now), have some fun (Yeah)",Don't,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,29,"Don't worry (Don't you worry), be the one (Yeah, oh)",one,30,"Don't worry (Don't you worry now, now, now), have some fun (Yeah)",some,INNER,SLANT,cmu,MED,Y
+Do Whatever You Want,29,"Don't worry (Don't you worry), be the one (Yeah, oh)",worry,30,"Don't worry (Don't you worry now, now, now), have some fun (Yeah)",worry,INNER,REPEAT,spelling,HIGH,N
+Do Whatever You Want,30,"Don't worry (Don't you worry now, now, now), have some fun (Yeah)",some,30,"Don't worry (Don't you worry now, now, now), have some fun (Yeah)",fun,INNER,SLANT,cmu,MED,Y

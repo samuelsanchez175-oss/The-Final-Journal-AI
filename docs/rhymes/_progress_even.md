@@ -86,6 +86,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 74 | big-opp | Big Opp | 3 | 146 | 1499 | 236 | 1263 | 1487 | 2026-11-10 13:17 ET |
 | 75 | sosamann | Sosamann | 2 | 143 | 782 | 201 | 581 | 758 | 2026-11-10 13:17 ET |
 | 76 | coi-leray | Coi Leray | 3 | 140 | 919 | 207 | 712 | 907 | 2026-11-10 13:18 ET |
+| 77 | bandhunta-izzy | Bandhunta Izzy | 4 | 138 | 944 | 136 | 808 | 933 | 2026-11-10 13:18 ET |
+| 78 | bloody-jay | Bloody Jay | 3 | 136 | 665 | 88 | 577 | 646 | 2026-11-10 13:18 ET |
+| 79 | childish-gambino | Childish Gambino | 2 | 134 | 568 | 68 | 500 | 564 | 2026-11-10 13:18 ET |
+| 80 | yn-jay | YN Jay | 2 | 133 | 888 | 167 | 721 | 864 | 2026-11-10 13:18 ET |
+| 81 | guap-tarantino | Guap Tarantino | 4 | 132 | 674 | 211 | 463 | 665 | 2026-11-10 13:18 ET |
+| 82 | the-kid-laroi | The Kid LAROI | 4 | 131 | 1216 | 196 | 1020 | 1201 | 2026-11-10 13:18 ET |
+| 83 | sada-baby | Sada Baby | 2 | 130 | 1088 | 187 | 901 | 1056 | 2026-11-10 13:18 ET |
+| 84 | xxl | XXL | 2 | 129 | 695 | 132 | 563 | 686 | 2026-11-10 13:18 ET |
+| 85 | yungeen-ace | Yungeen Ace | 3 | 127 | 1072 | 126 | 946 | 1044 | 2026-11-10 13:18 ET |
+| 86 | peezy | Peezy | 3 | 126 | 1115 | 151 | 964 | 1093 | 2026-11-10 13:18 ET |
 
 ## Failures
 
@@ -93,7 +103,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 76/386: Coi Leray.
+Finished 86/386: Peezy.
 
 ## Final
 
