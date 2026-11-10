@@ -356,6 +356,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 344 | ralphsnightmare | Ralphsnightmare | 1 | 28 | 211 | 39 | 172 | 211 | 2026-11-10 13:27 ET |
 | 345 | yung-mazi | Yung Mazi | 1 | 28 | 158 | 32 | 126 | 156 | 2026-11-10 13:27 ET |
 | 346 | billie-eilish | Billie Eilish | 1 | 27 | 46 | 11 | 35 | 46 | 2026-11-10 13:27 ET |
+| 347 | internet-money | Internet Money | 1 | 27 | 146 | 19 | 127 | 146 | 2026-11-10 13:27 ET |
+| 348 | petho-burr | Petho Burr | 1 | 27 | 124 | 9 | 115 | 124 | 2026-11-10 13:27 ET |
+| 349 | charlie-sloth | Charlie Sloth | 1 | 26 | 278 | 48 | 230 | 276 | 2026-11-10 13:27 ET |
+| 350 | jt-the-bigga-figga | JT the Bigga Figga | 1 | 26 | 125 | 17 | 108 | 124 | 2026-11-10 13:27 ET |
+| 351 | mura-masa | Mura Masa | 1 | 26 | 131 | 20 | 111 | 131 | 2026-11-10 13:27 ET |
+| 352 | 310babii | 310Babii | 1 | 25 | 173 | 32 | 141 | 173 | 2026-11-10 13:27 ET |
+| 353 | calvin-harris | Calvin Harris | 1 | 25 | 211 | 21 | 190 | 209 | 2026-11-10 13:27 ET |
+| 354 | fred-again | Fred again.. | 1 | 25 | 74 | 8 | 66 | 74 | 2026-11-10 13:27 ET |
+| 355 | pinkpantheress | PinkPantheress | 1 | 25 | 142 | 26 | 116 | 142 | 2026-11-10 13:27 ET |
+| 356 | ripp-flamez | Ripp Flamez | 1 | 25 | 100 | 29 | 71 | 97 | 2026-11-10 13:27 ET |
 
 ## Failures
 
@@ -363,7 +373,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 346/386: Billie Eilish.
+Finished 356/386: Ripp Flamez.
 
 ## Final
 

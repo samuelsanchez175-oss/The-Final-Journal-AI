@@ -1,0 +1,153 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Money Talk,1,"She a gold digger, I got bigger",digger,1,"She a gold digger, I got bigger",bigger,INNER,MULTI,multi,HIGH,Y
+Money Talk,1,"She a gold digger, I got bigger",gold digger,1,"She a gold digger, I got bigger",got bigger,INNER,MULTI,multi,HIGH,Y
+Money Talk,1,"She a gold digger, I got bigger",bigger,2,"I got bigger figures, I got bigger figures",figures,END,ASSONANCE,vowel,MED,Y
+Money Talk,1,"She a gold digger, I got bigger",bigger,2,"I got bigger figures, I got bigger figures",bigger,INNER,REPEAT,spelling,HIGH,N
+Money Talk,1,"She a gold digger, I got bigger",bigger,2,"I got bigger figures, I got bigger figures",figures,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,1,"She a gold digger, I got bigger",digger,2,"I got bigger figures, I got bigger figures",bigger,INNER,MULTI,multi,HIGH,Y
+Money Talk,1,"She a gold digger, I got bigger",digger,2,"I got bigger figures, I got bigger figures",figures,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,1,"She a gold digger, I got bigger",gold digger,2,"I got bigger figures, I got bigger figures",got bigger,INNER,MULTI,multi,HIGH,Y
+Money Talk,1,"She a gold digger, I got bigger",got,2,"I got bigger figures, I got bigger figures",got,INNER,REPEAT,spelling,HIGH,N
+Money Talk,1,"She a gold digger, I got bigger",bigger,3,"I'm a street nigga, and a real killer",killer,END,SLANT,cmu,MED,Y
+Money Talk,1,"She a gold digger, I got bigger",bigger,3,"I'm a street nigga, and a real killer",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,1,"She a gold digger, I got bigger",digger,3,"I'm a street nigga, and a real killer",killer,INNER,SLANT,cmu,MED,Y
+Money Talk,1,"She a gold digger, I got bigger",digger,3,"I'm a street nigga, and a real killer",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,1,"She a gold digger, I got bigger",bigger,4,"I'm a street nigga, I got big",big,END,SLANT,cmu,MED,Y
+Money Talk,1,"She a gold digger, I got bigger",bigger,5,"Got that Pattec bust down, and that Roli nigga",nigga,END,SLANT,spelling,LOW,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",bigger,2,"I got bigger figures, I got bigger figures",bigger,INNER,REPEAT,spelling,HIGH,N
+Money Talk,2,"I got bigger figures, I got bigger figures",bigger,2,"I got bigger figures, I got bigger figures",figures,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",figures,2,"I got bigger figures, I got bigger figures",bigger,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",figures,2,"I got bigger figures, I got bigger figures",figures,INNER,REPEAT,spelling,HIGH,N
+Money Talk,2,"I got bigger figures, I got bigger figures",got,2,"I got bigger figures, I got bigger figures",got,INNER,REPEAT,spelling,HIGH,N
+Money Talk,2,"I got bigger figures, I got bigger figures",figures,3,"I'm a street nigga, and a real killer",killer,END,ASSONANCE,vowel,MED,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",bigger,3,"I'm a street nigga, and a real killer",killer,INNER,SLANT,cmu,MED,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",bigger,3,"I'm a street nigga, and a real killer",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",figures,3,"I'm a street nigga, and a real killer",killer,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",figures,4,"I'm a street nigga, I got big",big,END,ASSONANCE,vowel,MED,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",bigger,4,"I'm a street nigga, I got big",big,INNER,SLANT,cmu,MED,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",bigger,4,"I'm a street nigga, I got big",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",figures,4,"I'm a street nigga, I got big",big,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,2,"I got bigger figures, I got bigger figures",got,4,"I'm a street nigga, I got big",got,INNER,REPEAT,spelling,HIGH,N
+Money Talk,3,"I'm a street nigga, and a real killer",street,3,"I'm a street nigga, and a real killer",real,INNER,SLANT,cmu,MED,Y
+Money Talk,3,"I'm a street nigga, and a real killer",killer,4,"I'm a street nigga, I got big",big,END,SLANT,cmu,MED,Y
+Money Talk,3,"I'm a street nigga, and a real killer",nigga,4,"I'm a street nigga, I got big",big,INNER,SLANT,spelling,LOW,Y
+Money Talk,3,"I'm a street nigga, and a real killer",nigga,4,"I'm a street nigga, I got big",nigga,INNER,REPEAT,spelling,HIGH,N
+Money Talk,3,"I'm a street nigga, and a real killer",real,4,"I'm a street nigga, I got big",street,INNER,SLANT,cmu,MED,Y
+Money Talk,3,"I'm a street nigga, and a real killer",street,4,"I'm a street nigga, I got big",street,INNER,REPEAT,spelling,HIGH,N
+Money Talk,3,"I'm a street nigga, and a real killer",nigga,5,"Got that Pattec bust down, and that Roli nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Money Talk,4,"I'm a street nigga, I got big",nigga,4,"I'm a street nigga, I got big",big,INNER,SLANT,spelling,LOW,Y
+Money Talk,4,"I'm a street nigga, I got big",big,5,"Got that Pattec bust down, and that Roli nigga",nigga,END,SLANT,spelling,LOW,Y
+Money Talk,4,"I'm a street nigga, I got big",got,5,"Got that Pattec bust down, and that Roli nigga",Got,INNER,REPEAT,spelling,HIGH,N
+Money Talk,4,"I'm a street nigga, I got big",nigga,5,"Got that Pattec bust down, and that Roli nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Money Talk,4,"I'm a street nigga, I got big",big,6,"If the police pull me over, I don't know that nigga",nigga,END,SLANT,spelling,LOW,Y
+Money Talk,4,"I'm a street nigga, I got big",nigga,6,"If the police pull me over, I don't know that nigga",nigga,INNER,REPEAT,spelling,HIGH,N
+Money Talk,4,"I'm a street nigga, I got big",street,6,"If the police pull me over, I don't know that nigga",police,INNER,SLANT,cmu,MED,Y
+Money Talk,4,"I'm a street nigga, I got big",big,7,"I got a big dick, your bitch wanna hold it nigga",nigga,END,SLANT,spelling,LOW,Y
+Money Talk,4,"I'm a street nigga, I got big",big,8,"I be knocking niggas out, like nigga",nigga,END,SLANT,spelling,LOW,Y
+Money Talk,5,"Got that Pattec bust down, and that Roli nigga",nigga,6,"If the police pull me over, I don't know that nigga",nigga,END,REPEAT,spelling,HIGH,N
+Money Talk,5,"Got that Pattec bust down, and that Roli nigga",Roli,6,"If the police pull me over, I don't know that nigga",over,INNER,SLANT,spelling,LOW,Y
+Money Talk,5,"Got that Pattec bust down, and that Roli nigga",nigga,7,"I got a big dick, your bitch wanna hold it nigga",nigga,END,REPEAT,spelling,HIGH,N
+Money Talk,5,"Got that Pattec bust down, and that Roli nigga",Got,7,"I got a big dick, your bitch wanna hold it nigga",got,INNER,REPEAT,spelling,HIGH,N
+Money Talk,5,"Got that Pattec bust down, and that Roli nigga",Got,7,"I got a big dick, your bitch wanna hold it nigga",wanna,INNER,SLANT,cmu,MED,Y
+Money Talk,5,"Got that Pattec bust down, and that Roli nigga",nigga,7,"I got a big dick, your bitch wanna hold it nigga",big,INNER,SLANT,spelling,LOW,Y
+Money Talk,5,"Got that Pattec bust down, and that Roli nigga",nigga,7,"I got a big dick, your bitch wanna hold it nigga",dick,INNER,SLANT,spelling,LOW,Y
+Money Talk,5,"Got that Pattec bust down, and that Roli nigga",Roli,7,"I got a big dick, your bitch wanna hold it nigga",hold,INNER,SLANT,spelling,LOW,Y
+Money Talk,5,"Got that Pattec bust down, and that Roli nigga",nigga,8,"I be knocking niggas out, like nigga",nigga,END,REPEAT,spelling,HIGH,N
+Money Talk,6,"If the police pull me over, I don't know that nigga",don't,6,"If the police pull me over, I don't know that nigga",know,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,6,"If the police pull me over, I don't know that nigga",over,6,"If the police pull me over, I don't know that nigga",don't,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,6,"If the police pull me over, I don't know that nigga",over,6,"If the police pull me over, I don't know that nigga",know,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,6,"If the police pull me over, I don't know that nigga",nigga,7,"I got a big dick, your bitch wanna hold it nigga",nigga,END,REPEAT,spelling,HIGH,N
+Money Talk,6,"If the police pull me over, I don't know that nigga",don't,7,"I got a big dick, your bitch wanna hold it nigga",hold,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,6,"If the police pull me over, I don't know that nigga",know,7,"I got a big dick, your bitch wanna hold it nigga",hold,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,6,"If the police pull me over, I don't know that nigga",nigga,7,"I got a big dick, your bitch wanna hold it nigga",big,INNER,SLANT,spelling,LOW,Y
+Money Talk,6,"If the police pull me over, I don't know that nigga",nigga,7,"I got a big dick, your bitch wanna hold it nigga",dick,INNER,SLANT,spelling,LOW,Y
+Money Talk,6,"If the police pull me over, I don't know that nigga",over,7,"I got a big dick, your bitch wanna hold it nigga",hold,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,6,"If the police pull me over, I don't know that nigga",nigga,8,"I be knocking niggas out, like nigga",nigga,END,REPEAT,spelling,HIGH,N
+Money Talk,6,"If the police pull me over, I don't know that nigga",nigga,8,"I be knocking niggas out, like nigga",niggas,INNER,SLANT,spelling,LOW,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",big,7,"I got a big dick, your bitch wanna hold it nigga",bitch,INNER,SLANT,cmu,MED,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",big,7,"I got a big dick, your bitch wanna hold it nigga",dick,INNER,SLANT,cmu,MED,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",big,7,"I got a big dick, your bitch wanna hold it nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",dick,7,"I got a big dick, your bitch wanna hold it nigga",bitch,INNER,SLANT,cmu,MED,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",dick,7,"I got a big dick, your bitch wanna hold it nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",got,7,"I got a big dick, your bitch wanna hold it nigga",wanna,INNER,SLANT,cmu,MED,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",nigga,8,"I be knocking niggas out, like nigga",nigga,END,REPEAT,spelling,HIGH,N
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",big,8,"I be knocking niggas out, like nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",dick,8,"I be knocking niggas out, like nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",got,8,"I be knocking niggas out, like nigga",knocking,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",nigga,8,"I be knocking niggas out, like nigga",niggas,INNER,SLANT,spelling,LOW,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",wanna,8,"I be knocking niggas out, like nigga",knocking,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",got,9,"I be knocking niggas out, Mike Tyson",knocking,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",nigga,9,"I be knocking niggas out, Mike Tyson",niggas,INNER,SLANT,spelling,LOW,Y
+Money Talk,7,"I got a big dick, your bitch wanna hold it nigga",wanna,9,"I be knocking niggas out, Mike Tyson",knocking,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,8,"I be knocking niggas out, like nigga",niggas,8,"I be knocking niggas out, like nigga",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,8,"I be knocking niggas out, like nigga",knocking,9,"I be knocking niggas out, Mike Tyson",knocking,INNER,REPEAT,spelling,HIGH,N
+Money Talk,8,"I be knocking niggas out, like nigga",like,9,"I be knocking niggas out, Mike Tyson",Mike,INNER,PERFECT,cmu,HIGH,Y
+Money Talk,8,"I be knocking niggas out, like nigga",like,9,"I be knocking niggas out, Mike Tyson",Tyson,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,8,"I be knocking niggas out, like nigga",nigga,9,"I be knocking niggas out, Mike Tyson",niggas,INNER,SLANT,spelling,LOW,Y
+Money Talk,8,"I be knocking niggas out, like nigga",niggas,9,"I be knocking niggas out, Mike Tyson",niggas,INNER,REPEAT,spelling,HIGH,N
+Money Talk,8,"I be knocking niggas out, like nigga",knocking,10,"in the club, we not",not,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,9,"I be knocking niggas out, Mike Tyson",Mike,9,"I be knocking niggas out, Mike Tyson",Tyson,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,9,"I be knocking niggas out, Mike Tyson",knocking,10,"in the club, we not",not,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,9,"I be knocking niggas out, Mike Tyson",Tyson,11,I be smoking on that green like,like,END,ASSONANCE,vowel,MED,Y
+Money Talk,9,"I be knocking niggas out, Mike Tyson",knocking,11,I be smoking on that green like,smoking,INNER,PERFECT,spelling,MED,Y
+Money Talk,9,"I be knocking niggas out, Mike Tyson",Mike,11,I be smoking on that green like,like,INNER,PERFECT,cmu,HIGH,Y
+Money Talk,10,"in the club, we not",club,12,I got some real niggas on Slosin,some,INNER,SLANT,cmu,MED,Y
+Money Talk,10,"in the club, we not",not,12,I got some real niggas on Slosin,got,INNER,PERFECT,cmu,HIGH,Y
+Money Talk,11,I be smoking on that green like,green,12,I got some real niggas on Slosin,real,INNER,SLANT,cmu,MED,Y
+Money Talk,11,I be smoking on that green like,smoking,12,I got some real niggas on Slosin,Slosin,INNER,ASSONANCE,vowel,LOW,N
+Money Talk,11,I be smoking on that green like,like,13,"Slaughter Gang, white chalking",white,INNER,SLANT,cmu,MED,Y
+Money Talk,11,I be smoking on that green like,smoking,13,"Slaughter Gang, white chalking",chalking,INNER,PERFECT,spelling,MED,Y
+Money Talk,13,"Slaughter Gang, white chalking",Slaughter,13,"Slaughter Gang, white chalking",chalking,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,13,"Slaughter Gang, white chalking",chalking,14,"I can't shoot a freethrow, but I'm balling",balling,END,SLANT,cmu,MED,Y
+Money Talk,13,"Slaughter Gang, white chalking",Gang,14,"I can't shoot a freethrow, but I'm balling",can't,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,13,"Slaughter Gang, white chalking",Slaughter,14,"I can't shoot a freethrow, but I'm balling",balling,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,15,"I'm a real player baby, I don't really pay for sex",baby,15,"I'm a real player baby, I don't really pay for sex",pay,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,15,"I'm a real player baby, I don't really pay for sex",player,15,"I'm a real player baby, I don't really pay for sex",baby,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,15,"I'm a real player baby, I don't really pay for sex",player,15,"I'm a real player baby, I don't really pay for sex",pay,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,15,"I'm a real player baby, I don't really pay for sex",sex,16,"VVS's drippin on me, and they got her really wet",wet,END,ASSONANCE,vowel,MED,Y
+Money Talk,15,"I'm a real player baby, I don't really pay for sex",really,16,"VVS's drippin on me, and they got her really wet",drippin,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,15,"I'm a real player baby, I don't really pay for sex",really,16,"VVS's drippin on me, and they got her really wet",really,INNER,REPEAT,spelling,HIGH,N
+Money Talk,15,"I'm a real player baby, I don't really pay for sex",really,17,Got them killers with me,killers,INNER,SLANT,cmu,MED,Y
+Money Talk,16,"VVS's drippin on me, and they got her really wet",drippin,16,"VVS's drippin on me, and they got her really wet",really,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,16,"VVS's drippin on me, and they got her really wet",drippin,17,Got them killers with me,killers,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,16,"VVS's drippin on me, and they got her really wet",got,17,Got them killers with me,Got,INNER,REPEAT,spelling,HIGH,N
+Money Talk,16,"VVS's drippin on me, and they got her really wet",really,17,Got them killers with me,killers,INNER,SLANT,cmu,MED,Y
+Money Talk,17,Got them killers with me,killers,19,my big homie need bail money,big,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,18,"Zone one, I'm on one,",one,18,"Zone one, I'm on one,",one,INNER,REPEAT,spelling,HIGH,N
+Money Talk,18,"Zone one, I'm on one,",one,19,my big homie need bail money,money,END,SLANT,cmu,MED,Y
+Money Talk,18,"Zone one, I'm on one,",one,19,my big homie need bail money,money,INNER,SLANT,cmu,MED,Y
+Money Talk,18,"Zone one, I'm on one,",Zone,19,my big homie need bail money,homie,INNER,SLANT,spelling,LOW,Y
+Money Talk,19,my big homie need bail money,bail,20,"Seven days in the trap nigga, came back",came,INNER,SLANT,cmu,MED,Y
+Money Talk,19,my big homie need bail money,bail,20,"Seven days in the trap nigga, came back",days,INNER,SLANT,cmu,MED,Y
+Money Talk,19,my big homie need bail money,big,20,"Seven days in the trap nigga, came back",nigga,INNER,SLANT,spelling,LOW,Y
+Money Talk,19,my big homie need bail money,money,21,Fucked them racks up,Fucked,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,20,"Seven days in the trap nigga, came back",days,20,"Seven days in the trap nigga, came back",came,INNER,SLANT,cmu,MED,Y
+Money Talk,20,"Seven days in the trap nigga, came back",trap,20,"Seven days in the trap nigga, came back",back,INNER,SLANT,cmu,MED,Y
+Money Talk,20,"Seven days in the trap nigga, came back",back,21,Fucked them racks up,racks,END,SLANT,cmu,MED,Y
+Money Talk,20,"Seven days in the trap nigga, came back",trap,21,Fucked them racks up,racks,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,20,"Seven days in the trap nigga, came back",back,22,"Ran off on the team nigga,",Ran,INNER,SLANT,cmu,MED,Y
+Money Talk,20,"Seven days in the trap nigga, came back",nigga,22,"Ran off on the team nigga,",nigga,INNER,REPEAT,spelling,HIGH,N
+Money Talk,20,"Seven days in the trap nigga, came back",trap,22,"Ran off on the team nigga,",Ran,INNER,SLANT,cmu,MED,Y
+Money Talk,21,Fucked them racks up,racks,22,"Ran off on the team nigga,",Ran,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,21,Fucked them racks up,racks,23,"Ski mask, no nigga",mask,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,22,"Ran off on the team nigga,",nigga,23,"Ski mask, no nigga",nigga,END,REPEAT,spelling,HIGH,N
+Money Talk,22,"Ran off on the team nigga,",Ran,23,"Ski mask, no nigga",mask,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,22,"Ran off on the team nigga,",team,23,"Ski mask, no nigga",Ski,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,23,"Ski mask, no nigga",Ski,25,"In these streets, the game ain't played the same",streets,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,23,"Ski mask, no nigga",Ski,25,"In these streets, the game ain't played the same",these,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",ain't,25,"In these streets, the game ain't played the same",played,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",ain't,25,"In these streets, the game ain't played the same",same,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",game,25,"In these streets, the game ain't played the same",ain't,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",game,25,"In these streets, the game ain't played the same",played,INNER,SLANT,cmu,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",game,25,"In these streets, the game ain't played the same",same,INNER,PERFECT,cmu,HIGH,Y
+Money Talk,25,"In these streets, the game ain't played the same",played,25,"In these streets, the game ain't played the same",same,INNER,SLANT,cmu,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",these,25,"In these streets, the game ain't played the same",streets,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",same,26,You niggas ain't got no names,names,END,SLANT,cmu,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",ain't,26,You niggas ain't got no names,ain't,INNER,REPEAT,spelling,HIGH,N
+Money Talk,25,"In these streets, the game ain't played the same",ain't,26,You niggas ain't got no names,names,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",game,26,You niggas ain't got no names,ain't,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",game,26,You niggas ain't got no names,names,INNER,SLANT,cmu,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",played,26,You niggas ain't got no names,ain't,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",played,26,You niggas ain't got no names,names,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,25,"In these streets, the game ain't played the same",same,26,You niggas ain't got no names,ain't,INNER,ASSONANCE,vowel,MED,Y
+Money Talk,26,You niggas ain't got no names,ain't,26,You niggas ain't got no names,names,INNER,ASSONANCE,vowel,MED,Y

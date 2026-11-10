@@ -1,0 +1,193 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+do it right,1,I love a bad bitch that do it right,right,2,"Yeah, cougar bitch told me she'll change my life (Change my life)",life,END,SLANT,cmu,MED,Y
+do it right,1,I love a bad bitch that do it right,bitch,2,"Yeah, cougar bitch told me she'll change my life (Change my life)",bitch,INNER,REPEAT,spelling,HIGH,N
+do it right,1,I love a bad bitch that do it right,right,3,"She want a husband, but I'm too young for a wife (Like what?)",wife,END,SLANT,cmu,MED,Y
+do it right,1,I love a bad bitch that do it right,love,3,"She want a husband, but I'm too young for a wife (Like what?)",husband,INNER,ASSONANCE,vowel,MED,Y
+do it right,1,I love a bad bitch that do it right,love,3,"She want a husband, but I'm too young for a wife (Like what?)",young,INNER,SLANT,cmu,MED,Y
+do it right,1,I love a bad bitch that do it right,right,4,"She could be mine, I only want her for the night (One night)",night,END,PERFECT,cmu,HIGH,Y
+do it right,1,I love a bad bitch that do it right,right,5,"Eat me up, do it right, do it right (Eat me up)",right,END,REPEAT,spelling,HIGH,N
+do it right,2,"Yeah, cougar bitch told me she'll change my life (Change my life)",life,3,"She want a husband, but I'm too young for a wife (Like what?)",wife,END,PERFECT,cmu,HIGH,Y
+do it right,2,"Yeah, cougar bitch told me she'll change my life (Change my life)",life,4,"She could be mine, I only want her for the night (One night)",night,END,SLANT,cmu,MED,Y
+do it right,2,"Yeah, cougar bitch told me she'll change my life (Change my life)",life,4,"She could be mine, I only want her for the night (One night)",mine,INNER,SLANT,cmu,MED,Y
+do it right,2,"Yeah, cougar bitch told me she'll change my life (Change my life)",told,4,"She could be mine, I only want her for the night (One night)",only,INNER,ASSONANCE,vowel,MED,Y
+do it right,2,"Yeah, cougar bitch told me she'll change my life (Change my life)",life,5,"Eat me up, do it right, do it right (Eat me up)",right,END,SLANT,cmu,MED,Y
+do it right,2,"Yeah, cougar bitch told me she'll change my life (Change my life)",life,6,"You know just the way I like it, do it right, do it right",right,END,SLANT,cmu,MED,Y
+do it right,3,"She want a husband, but I'm too young for a wife (Like what?)",husband,3,"She want a husband, but I'm too young for a wife (Like what?)",young,INNER,ASSONANCE,vowel,MED,Y
+do it right,3,"She want a husband, but I'm too young for a wife (Like what?)",wife,4,"She could be mine, I only want her for the night (One night)",night,END,SLANT,cmu,MED,Y
+do it right,3,"She want a husband, but I'm too young for a wife (Like what?)",want,4,"She could be mine, I only want her for the night (One night)",want,INNER,REPEAT,spelling,HIGH,N
+do it right,3,"She want a husband, but I'm too young for a wife (Like what?)",wife,4,"She could be mine, I only want her for the night (One night)",mine,INNER,SLANT,cmu,MED,Y
+do it right,3,"She want a husband, but I'm too young for a wife (Like what?)",wife,5,"Eat me up, do it right, do it right (Eat me up)",right,END,SLANT,cmu,MED,Y
+do it right,3,"She want a husband, but I'm too young for a wife (Like what?)",wife,5,"Eat me up, do it right, do it right (Eat me up)",right,INNER,SLANT,cmu,MED,Y
+do it right,3,"She want a husband, but I'm too young for a wife (Like what?)",wife,6,"You know just the way I like it, do it right, do it right",right,END,SLANT,cmu,MED,Y
+do it right,3,"She want a husband, but I'm too young for a wife (Like what?)",wife,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,END,SLANT,cmu,MED,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",mine,4,"She could be mine, I only want her for the night (One night)",night,INNER,SLANT,cmu,MED,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",night,5,"Eat me up, do it right, do it right (Eat me up)",right,END,PERFECT,cmu,HIGH,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",mine,5,"Eat me up, do it right, do it right (Eat me up)",right,INNER,SLANT,cmu,MED,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",night,5,"Eat me up, do it right, do it right (Eat me up)",right,INNER,PERFECT,cmu,HIGH,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",night,6,"You know just the way I like it, do it right, do it right",right,END,PERFECT,cmu,HIGH,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",mine,6,"You know just the way I like it, do it right, do it right",like,INNER,SLANT,cmu,MED,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",mine,6,"You know just the way I like it, do it right, do it right",right,INNER,SLANT,cmu,MED,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",night,6,"You know just the way I like it, do it right, do it right",like,INNER,SLANT,cmu,MED,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",night,6,"You know just the way I like it, do it right, do it right",right,INNER,PERFECT,cmu,HIGH,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",only,6,"You know just the way I like it, do it right, do it right",know,INNER,ASSONANCE,vowel,MED,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",night,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,END,PERFECT,cmu,HIGH,Y
+do it right,4,"She could be mine, I only want her for the night (One night)",night,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",nice,END,SLANT,cmu,MED,Y
+do it right,5,"Eat me up, do it right, do it right (Eat me up)",right,5,"Eat me up, do it right, do it right (Eat me up)",right,INNER,REPEAT,spelling,HIGH,N
+do it right,5,"Eat me up, do it right, do it right (Eat me up)",right,6,"You know just the way I like it, do it right, do it right",right,END,REPEAT,spelling,HIGH,N
+do it right,5,"Eat me up, do it right, do it right (Eat me up)",right,6,"You know just the way I like it, do it right, do it right",like,INNER,SLANT,cmu,MED,Y
+do it right,5,"Eat me up, do it right, do it right (Eat me up)",right,6,"You know just the way I like it, do it right, do it right",right,INNER,REPEAT,spelling,HIGH,N
+do it right,5,"Eat me up, do it right, do it right (Eat me up)",right,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,END,REPEAT,spelling,HIGH,N
+do it right,5,"Eat me up, do it right, do it right (Eat me up)",Eat,7,"Left cheek, right cheek, do it right (Frrt, frrt)",cheek,INNER,SLANT,cmu,MED,Y
+do it right,5,"Eat me up, do it right, do it right (Eat me up)",right,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,INNER,REPEAT,spelling,HIGH,N
+do it right,5,"Eat me up, do it right, do it right (Eat me up)",right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",nice,END,SLANT,cmu,MED,Y
+do it right,6,"You know just the way I like it, do it right, do it right",like,6,"You know just the way I like it, do it right, do it right",right,INNER,SLANT,cmu,MED,Y
+do it right,6,"You know just the way I like it, do it right, do it right",right,6,"You know just the way I like it, do it right, do it right",right,INNER,REPEAT,spelling,HIGH,N
+do it right,6,"You know just the way I like it, do it right, do it right",right,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,END,REPEAT,spelling,HIGH,N
+do it right,6,"You know just the way I like it, do it right, do it right",like,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,INNER,SLANT,cmu,MED,Y
+do it right,6,"You know just the way I like it, do it right, do it right",right,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,INNER,REPEAT,spelling,HIGH,N
+do it right,6,"You know just the way I like it, do it right, do it right",right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",nice,END,SLANT,cmu,MED,Y
+do it right,6,"You know just the way I like it, do it right, do it right",like,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",nice,INNER,SLANT,cmu,MED,Y
+do it right,6,"You know just the way I like it, do it right, do it right",right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",nice,INNER,SLANT,cmu,MED,Y
+do it right,7,"Left cheek, right cheek, do it right (Frrt, frrt)",cheek,7,"Left cheek, right cheek, do it right (Frrt, frrt)",cheek,INNER,REPEAT,spelling,HIGH,N
+do it right,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,INNER,REPEAT,spelling,HIGH,N
+do it right,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",nice,END,SLANT,cmu,MED,Y
+do it right,7,"Left cheek, right cheek, do it right (Frrt, frrt)",right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",nice,INNER,SLANT,cmu,MED,Y
+do it right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",lil,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",bitch,INNER,SLANT,cmu,MED,Y
+do it right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",bitch,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",bitches,INNER,SLANT,cmu,MED,Y
+do it right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",bitch,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",rich,INNER,PERFECT,cmu,HIGH,Y
+do it right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",lil,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",bitches,INNER,ASSONANCE,vowel,MED,Y
+do it right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",lil,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",rich,INNER,SLANT,cmu,MED,Y
+do it right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",somethin,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",fuckin,INNER,ASSONANCE,vowel,MED,Y
+do it right,8,"And this lil' bitch super bad, she somethin' nice (Somethin' nice)",somethin,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",other,INNER,ASSONANCE,vowel,MED,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",over,9,"She came over to the spot (Spot), turned into a thot (Thot)",thot,INNER,SLANT,spelling,LOW,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",spot,9,"She came over to the spot (Spot), turned into a thot (Thot)",thot,INNER,PERFECT,spelling,MED,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",over,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",hoes,INNER,SLANT,cmu,MED,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",over,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",Only,INNER,ASSONANCE,vowel,MED,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",spot,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",dropped,INNER,SLANT,cmu,MED,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",thot,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",hoes,INNER,SLANT,spelling,LOW,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",came,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",make,INNER,SLANT,cmu,MED,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",over,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",post,INNER,ASSONANCE,vowel,MED,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",spot,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",cropped,INNER,SLANT,cmu,MED,Y
+do it right,9,"She came over to the spot (Spot), turned into a thot (Thot)",thot,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",post,INNER,SLANT,spelling,LOW,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",fuckin,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",other,INNER,ASSONANCE,vowel,MED,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",Only,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",hoes,INNER,ASSONANCE,vowel,MED,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",rich,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",bitches,INNER,SLANT,cmu,MED,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",dropped,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",cropped,END,PERFECT,cmu,HIGH,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",bitches,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",pic,INNER,ASSONANCE,vowel,MED,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",hoes,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",post,INNER,ASSONANCE,vowel,MED,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",Only,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",post,INNER,ASSONANCE,vowel,MED,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",rich,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",pic,INNER,SLANT,cmu,MED,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",dropped,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",blocked,END,SLANT,cmu,MED,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",hoes,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",gon,INNER,SLANT,spelling,LOW,Y
+do it right,10,"Only fuckin' rich bitches, other hoes dropped (Dropped)",Only,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",gon,INNER,SLANT,spelling,LOW,Y
+do it right,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",cropped,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",blocked,END,SLANT,cmu,MED,Y
+do it right,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",can,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",back,INNER,SLANT,cmu,MED,Y
+do it right,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",can,13,"These other niggas cap, that shit be make believe (Niggas lyin')",cap,INNER,SLANT,cmu,MED,Y
+do it right,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",make,13,"These other niggas cap, that shit be make believe (Niggas lyin')",make,INNER,REPEAT,spelling,HIGH,N
+do it right,11,"You can post a pic', but just make sure that I'm cropped (Yeah)",pic,13,"These other niggas cap, that shit be make believe (Niggas lyin')",shit,INNER,SLANT,cmu,MED,Y
+do it right,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",back,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",back,INNER,REPEAT,spelling,HIGH,N
+do it right,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",back,13,"These other niggas cap, that shit be make believe (Niggas lyin')",cap,INNER,SLANT,cmu,MED,Y
+do it right,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",Keep,13,"These other niggas cap, that shit be make believe (Niggas lyin')",believe,INNER,SLANT,cmu,MED,Y
+do it right,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",Keep,13,"These other niggas cap, that shit be make believe (Niggas lyin')",These,INNER,SLANT,cmu,MED,Y
+do it right,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",callin,14,"Before I hit your bitch, I make her say cheese (Make her smile)",Before,INNER,ASSONANCE,vowel,MED,Y
+do it right,12,"Keep callin' back-to-back, you gon' get blocked (Baow)",Keep,14,"Before I hit your bitch, I make her say cheese (Make her smile)",cheese,INNER,SLANT,cmu,MED,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",These,13,"These other niggas cap, that shit be make believe (Niggas lyin')",believe,INNER,SLANT,cmu,MED,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",believe,14,"Before I hit your bitch, I make her say cheese (Make her smile)",cheese,END,SLANT,cmu,MED,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",make,14,"Before I hit your bitch, I make her say cheese (Make her smile)",make,INNER,REPEAT,spelling,HIGH,N
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",make,14,"Before I hit your bitch, I make her say cheese (Make her smile)",say,INNER,ASSONANCE,vowel,MED,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",shit,14,"Before I hit your bitch, I make her say cheese (Make her smile)",bitch,INNER,SLANT,cmu,MED,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",shit,14,"Before I hit your bitch, I make her say cheese (Make her smile)",hit,INNER,PERFECT,cmu,HIGH,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",These,14,"Before I hit your bitch, I make her say cheese (Make her smile)",cheese,INNER,PERFECT,cmu,HIGH,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",believe,15,"In the booth, I got it hot, I need some AC (Phew)",AC,END,ASSONANCE,vowel,MED,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",believe,15,"In the booth, I got it hot, I need some AC (Phew)",need,INNER,SLANT,cmu,MED,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",other,15,"In the booth, I got it hot, I need some AC (Phew)",some,INNER,SLANT,cmu,MED,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",These,15,"In the booth, I got it hot, I need some AC (Phew)",AC,INNER,ASSONANCE,vowel,MED,Y
+do it right,13,"These other niggas cap, that shit be make believe (Niggas lyin')",These,15,"In the booth, I got it hot, I need some AC (Phew)",need,INNER,SLANT,cmu,MED,Y
+do it right,14,"Before I hit your bitch, I make her say cheese (Make her smile)",hit,14,"Before I hit your bitch, I make her say cheese (Make her smile)",bitch,INNER,SLANT,cmu,MED,Y
+do it right,14,"Before I hit your bitch, I make her say cheese (Make her smile)",make,14,"Before I hit your bitch, I make her say cheese (Make her smile)",say,INNER,ASSONANCE,vowel,MED,Y
+do it right,14,"Before I hit your bitch, I make her say cheese (Make her smile)",cheese,15,"In the booth, I got it hot, I need some AC (Phew)",AC,END,ASSONANCE,vowel,MED,Y
+do it right,14,"Before I hit your bitch, I make her say cheese (Make her smile)",cheese,15,"In the booth, I got it hot, I need some AC (Phew)",need,INNER,SLANT,cmu,MED,Y
+do it right,14,"Before I hit your bitch, I make her say cheese (Make her smile)",make,16,"Yeah, he rap cool, but he ain't me (He not me)",ain't,INNER,ASSONANCE,vowel,MED,Y
+do it right,14,"Before I hit your bitch, I make her say cheese (Make her smile)",say,16,"Yeah, he rap cool, but he ain't me (He not me)",ain't,INNER,ASSONANCE,vowel,MED,Y
+do it right,15,"In the booth, I got it hot, I need some AC (Phew)",got,15,"In the booth, I got it hot, I need some AC (Phew)",hot,INNER,PERFECT,cmu,HIGH,Y
+do it right,15,"In the booth, I got it hot, I need some AC (Phew)",need,15,"In the booth, I got it hot, I need some AC (Phew)",AC,INNER,ASSONANCE,vowel,MED,Y
+do it right,15,"In the booth, I got it hot, I need some AC (Phew)",booth,16,"Yeah, he rap cool, but he ain't me (He not me)",cool,INNER,SLANT,cmu,MED,Y
+do it right,15,"In the booth, I got it hot, I need some AC (Phew)",AC,17,"Eat it up, do it right, after that, she get the pipe",Eat,INNER,ASSONANCE,vowel,MED,Y
+do it right,15,"In the booth, I got it hot, I need some AC (Phew)",need,17,"Eat it up, do it right, after that, she get the pipe",Eat,INNER,SLANT,cmu,MED,Y
+do it right,16,"Yeah, he rap cool, but he ain't me (He not me)",rap,17,"Eat it up, do it right, after that, she get the pipe",after,INNER,ASSONANCE,vowel,MED,Y
+do it right,16,"Yeah, he rap cool, but he ain't me (He not me)",rap,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",have,INNER,SLANT,cmu,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",right,17,"Eat it up, do it right, after that, she get the pipe",pipe,INNER,SLANT,cmu,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",pipe,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",wife,END,SLANT,cmu,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",after,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",have,INNER,ASSONANCE,vowel,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",Eat,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",P,INNER,ASSONANCE,vowel,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",Eat,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",treat,INNER,PERFECT,cmu,HIGH,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",pipe,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",bae,INNER,ASSONANCE,vowel,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",pipe,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",nice,INNER,SLANT,cmu,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",bae,INNER,ASSONANCE,vowel,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",nice,INNER,SLANT,cmu,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",wife,INNER,SLANT,cmu,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",after,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",'Gram,INNER,ASSONANCE,vowel,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",get,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",ever,INNER,SLANT,cmu,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",pipe,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",inside,INNER,SLANT,cmu,MED,Y
+do it right,17,"Eat it up, do it right, after that, she get the pipe",right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",inside,INNER,SLANT,cmu,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",bae,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",nice,INNER,ASSONANCE,vowel,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",bae,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",wife,INNER,ASSONANCE,vowel,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",nice,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",wife,INNER,SLANT,cmu,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",treat,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",P,INNER,ASSONANCE,vowel,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",bae,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",inside,INNER,ASSONANCE,vowel,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",have,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",'Gram,INNER,SLANT,cmu,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",nice,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",inside,INNER,SLANT,cmu,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",wife,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",inside,INNER,SLANT,cmu,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",have,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",rather,INNER,SLANT,cmu,MED,Y
+do it right,18,"I'm a king, bae, treat me nice, I'm too P to have a wife",have,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",scam,INNER,SLANT,cmu,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",blow,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",don't,INNER,ASSONANCE,vowel,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",blow,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",post,INNER,ASSONANCE,vowel,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",don't,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",post,INNER,SLANT,cmu,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",down,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",lounge,INNER,SLANT,cmu,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",'Gram,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",scam,END,PERFECT,cmu,HIGH,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",'Gram,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",rather,INNER,SLANT,cmu,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",blow,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",go,INNER,PERFECT,cmu,HIGH,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",don't,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",go,INNER,ASSONANCE,vowel,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",ever,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",tell,INNER,SLANT,cmu,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",post,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",go,INNER,ASSONANCE,vowel,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",'Gram,21,"I'm convertin' when I pull up, get your fine ass in the truck",ass,INNER,SLANT,cmu,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",ever,21,"I'm convertin' when I pull up, get your fine ass in the truck",get,INNER,SLANT,cmu,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",ever,21,"I'm convertin' when I pull up, get your fine ass in the truck",when,INNER,SLANT,cmu,MED,Y
+do it right,19,"She blow me down inside the lounge, don't ever post me on the 'Gram",inside,21,"I'm convertin' when I pull up, get your fine ass in the truck",fine,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",cool,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",truth,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",rather,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",scam,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",pussy,21,"I'm convertin' when I pull up, get your fine ass in the truck",pull,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",rather,21,"I'm convertin' when I pull up, get your fine ass in the truck",ass,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",scam,21,"I'm convertin' when I pull up, get your fine ass in the truck",ass,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",tell,21,"I'm convertin' when I pull up, get your fine ass in the truck",get,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",tell,21,"I'm convertin' when I pull up, get your fine ass in the truck",when,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",rather,22,"I'm to G, whenever she talk too much, I tell her ass shut up",ass,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",scam,22,"I'm to G, whenever she talk too much, I tell her ass shut up",ass,INNER,SLANT,cmu,MED,Y
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",tell,22,"I'm to G, whenever she talk too much, I tell her ass shut up",tell,INNER,REPEAT,spelling,HIGH,N
+do it right,20,"Yeah, your pussy cool, but to tell the truth, I rather go and scam (Scam)",tell,22,"I'm to G, whenever she talk too much, I tell her ass shut up",whenever,INNER,SLANT,cmu,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",when,21,"I'm convertin' when I pull up, get your fine ass in the truck",get,INNER,SLANT,cmu,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",truck,22,"I'm to G, whenever she talk too much, I tell her ass shut up",shut,END,SLANT,cmu,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",ass,22,"I'm to G, whenever she talk too much, I tell her ass shut up",ass,INNER,REPEAT,spelling,HIGH,N
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",get,22,"I'm to G, whenever she talk too much, I tell her ass shut up",tell,INNER,SLANT,cmu,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",get,22,"I'm to G, whenever she talk too much, I tell her ass shut up",whenever,INNER,SLANT,cmu,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",truck,22,"I'm to G, whenever she talk too much, I tell her ass shut up",much,INNER,SLANT,cmu,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",when,22,"I'm to G, whenever she talk too much, I tell her ass shut up",tell,INNER,SLANT,cmu,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",when,22,"I'm to G, whenever she talk too much, I tell her ass shut up",whenever,INNER,SLANT,cmu,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",truck,23,"She on my social, likin' all my pics, she say I'm her crush",crush,END,SLANT,cmu,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",fine,23,"She on my social, likin' all my pics, she say I'm her crush",likin,INNER,ASSONANCE,vowel,MED,Y
+do it right,21,"I'm convertin' when I pull up, get your fine ass in the truck",truck,24,"When she arch it, I go deeper and then spontaneously combust",combust,END,ASSONANCE,vowel,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",much,22,"I'm to G, whenever she talk too much, I tell her ass shut up",shut,INNER,SLANT,cmu,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",whenever,22,"I'm to G, whenever she talk too much, I tell her ass shut up",tell,INNER,SLANT,cmu,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",shut,23,"She on my social, likin' all my pics, she say I'm her crush",crush,END,SLANT,cmu,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",much,23,"She on my social, likin' all my pics, she say I'm her crush",crush,INNER,SLANT,cmu,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",talk,23,"She on my social, likin' all my pics, she say I'm her crush",all,INNER,SLANT,cmu,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",shut,24,"When she arch it, I go deeper and then spontaneously combust",combust,END,SLANT,cmu,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",G,24,"When she arch it, I go deeper and then spontaneously combust",deeper,INNER,ASSONANCE,vowel,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",much,24,"When she arch it, I go deeper and then spontaneously combust",combust,INNER,ASSONANCE,vowel,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",tell,24,"When she arch it, I go deeper and then spontaneously combust",When,INNER,SLANT,cmu,MED,Y
+do it right,22,"I'm to G, whenever she talk too much, I tell her ass shut up",whenever,24,"When she arch it, I go deeper and then spontaneously combust",When,INNER,SLANT,cmu,MED,Y
+do it right,23,"She on my social, likin' all my pics, she say I'm her crush",crush,24,"When she arch it, I go deeper and then spontaneously combust",combust,END,ASSONANCE,vowel,MED,Y
+do it right,23,"She on my social, likin' all my pics, she say I'm her crush",say,24,"When she arch it, I go deeper and then spontaneously combust",spontaneously,INNER,ASSONANCE,vowel,MED,Y
+do it right,23,"She on my social, likin' all my pics, she say I'm her crush",social,24,"When she arch it, I go deeper and then spontaneously combust",go,INNER,ASSONANCE,vowel,MED,Y
+do it right,23,"She on my social, likin' all my pics, she say I'm her crush",likin,25,"Do it right, do it right",right,INNER,ASSONANCE,vowel,MED,Y
+do it right,25,"Do it right, do it right",right,25,"Do it right, do it right",right,INNER,REPEAT,spelling,HIGH,N

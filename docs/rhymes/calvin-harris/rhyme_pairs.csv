@@ -1,0 +1,224 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+New Money,1,"Gucci on me, check (21), Hermes, check (Check)",check,1,"Gucci on me, check (21), Hermes, check (Check)",check,INNER,REPEAT,spelling,HIGH,N
+New Money,1,"Gucci on me, check (21), Hermes, check (Check)",check,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,END,REPEAT,spelling,HIGH,N
+New Money,1,"Gucci on me, check (21), Hermes, check (Check)",check,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,INNER,REPEAT,spelling,HIGH,N
+New Money,1,"Gucci on me, check (21), Hermes, check (Check)",check,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",Fendi,INNER,ASSONANCE,vowel,MED,Y
+New Money,1,"Gucci on me, check (21), Hermes, check (Check)",Gucci,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",Louis,INNER,SLANT,cmu,MED,Y
+New Money,1,"Gucci on me, check (21), Hermes, check (Check)",check,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",wet,END,SLANT,cmu,MED,Y
+New Money,1,"Gucci on me, check (21), Hermes, check (Check)",check,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",neck,INNER,PERFECT,cmu,HIGH,Y
+New Money,1,"Gucci on me, check (21), Hermes, check (Check)",check,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",wet,INNER,SLANT,cmu,MED,Y
+New Money,1,"Gucci on me, check (21), Hermes, check (Check)",check,4,"Treat me like a king (Yeah), no disrespect (21)",disrespect,END,SLANT,cmu,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,INNER,REPEAT,spelling,HIGH,N
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",Fendi,INNER,ASSONANCE,vowel,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",Fendi,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,INNER,ASSONANCE,vowel,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",wet,END,SLANT,cmu,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",neck,INNER,PERFECT,cmu,HIGH,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",wet,INNER,SLANT,cmu,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",Fendi,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",neck,INNER,ASSONANCE,vowel,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",Fendi,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",wet,INNER,ASSONANCE,vowel,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,4,"Treat me like a king (Yeah), no disrespect (21)",disrespect,END,SLANT,cmu,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",check,4,"Treat me like a king (Yeah), no disrespect (21)",disrespect,INNER,SLANT,cmu,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",Fendi,4,"Treat me like a king (Yeah), no disrespect (21)",disrespect,INNER,ASSONANCE,vowel,MED,Y
+New Money,2,"Louis V, check, yeah, Fendi cost a check (Yeah)",V,4,"Treat me like a king (Yeah), no disrespect (21)",Treat,INNER,ASSONANCE,vowel,MED,Y
+New Money,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",neck,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",wet,INNER,SLANT,cmu,MED,Y
+New Money,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",wet,4,"Treat me like a king (Yeah), no disrespect (21)",disrespect,END,SLANT,cmu,MED,Y
+New Money,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",bitch,4,"Treat me like a king (Yeah), no disrespect (21)",king,INNER,SLANT,cmu,MED,Y
+New Money,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",Diamonds,4,"Treat me like a king (Yeah), no disrespect (21)",like,INNER,ASSONANCE,vowel,MED,Y
+New Money,3,"Diamonds on my neck (Yeah), I make your bitch wet (Yeah)",neck,4,"Treat me like a king (Yeah), no disrespect (21)",disrespect,INNER,SLANT,cmu,MED,Y
+New Money,4,"Treat me like a king (Yeah), no disrespect (21)",no,5,"Show you how to ball (Ball), meet me at the mall (Mall)",Show,INNER,PERFECT,cmu,HIGH,Y
+New Money,4,"Treat me like a king (Yeah), no disrespect (21)",Treat,5,"Show you how to ball (Ball), meet me at the mall (Mall)",meet,INNER,PERFECT,cmu,HIGH,Y
+New Money,4,"Treat me like a king (Yeah), no disrespect (21)",disrespect,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",said,INNER,SLANT,cmu,MED,Y
+New Money,4,"Treat me like a king (Yeah), no disrespect (21)",king,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",Bitch,INNER,SLANT,cmu,MED,Y
+New Money,4,"Treat me like a king (Yeah), no disrespect (21)",like,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",Why,INNER,ASSONANCE,vowel,MED,Y
+New Money,5,"Show you how to ball (Ball), meet me at the mall (Mall)",ball,5,"Show you how to ball (Ball), meet me at the mall (Mall)",mall,INNER,PERFECT,cmu,HIGH,Y
+New Money,5,"Show you how to ball (Ball), meet me at the mall (Mall)",mall,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",dog,END,SLANT,cmu,MED,Y
+New Money,5,"Show you how to ball (Ball), meet me at the mall (Mall)",ball,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",dog,INNER,SLANT,cmu,MED,Y
+New Money,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",bark,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",bought,INNER,ASSONANCE,vowel,MED,Y
+New Money,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",bark,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",parked,INNER,SLANT,cmu,MED,Y
+New Money,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",Bitch,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",shit,INNER,SLANT,cmu,MED,Y
+New Money,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",said,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",left,INNER,ASSONANCE,vowel,MED,Y
+New Money,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",said,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",Went,INNER,ASSONANCE,vowel,MED,Y
+New Money,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",bark,8,"I ain't with the Twitter shit, I let it spark (Fah)",spark,INNER,PERFECT,cmu,HIGH,Y
+New Money,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",Bitch,8,"I ain't with the Twitter shit, I let it spark (Fah)",shit,INNER,SLANT,cmu,MED,Y
+New Money,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",Bitch,8,"I ain't with the Twitter shit, I let it spark (Fah)",Twitter,INNER,SLANT,cmu,MED,Y
+New Money,6,"She said, ""Why you bark?"" Bitch, I'm a dog (Roof)",said,8,"I ain't with the Twitter shit, I let it spark (Fah)",let,INNER,SLANT,cmu,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",bought,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",parked,INNER,ASSONANCE,vowel,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",Went,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",left,INNER,SLANT,cmu,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",parked,8,"I ain't with the Twitter shit, I let it spark (Fah)",spark,END,SLANT,cmu,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",bought,8,"I ain't with the Twitter shit, I let it spark (Fah)",spark,INNER,ASSONANCE,vowel,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",left,8,"I ain't with the Twitter shit, I let it spark (Fah)",let,INNER,SLANT,cmu,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",shit,8,"I ain't with the Twitter shit, I let it spark (Fah)",shit,INNER,REPEAT,spelling,HIGH,N
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",shit,8,"I ain't with the Twitter shit, I let it spark (Fah)",Twitter,INNER,SLANT,cmu,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",Went,8,"I ain't with the Twitter shit, I let it spark (Fah)",let,INNER,SLANT,cmu,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",bought,9,"Gucci garments, kush smell like armpits",garments,INNER,ASSONANCE,vowel,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",left,9,"Gucci garments, kush smell like armpits",smell,INNER,ASSONANCE,vowel,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",parked,9,"Gucci garments, kush smell like armpits",garments,INNER,ASSONANCE,vowel,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",shit,9,"Gucci garments, kush smell like armpits",armpits,INNER,SLANT,cmu,MED,Y
+New Money,7,"Went and bought a 'Rari (21), left the shit parked (Parked)",Went,9,"Gucci garments, kush smell like armpits",smell,INNER,ASSONANCE,vowel,MED,Y
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",Twitter,8,"I ain't with the Twitter shit, I let it spark (Fah)",shit,INNER,SLANT,cmu,MED,Y
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",let,9,"Gucci garments, kush smell like armpits",smell,INNER,SLANT,cmu,MED,Y
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",shit,9,"Gucci garments, kush smell like armpits",armpits,INNER,SLANT,cmu,MED,Y
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",spark,9,"Gucci garments, kush smell like armpits",garments,INNER,ASSONANCE,vowel,MED,Y
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",Twitter,9,"Gucci garments, kush smell like armpits",armpits,INNER,SLANT,cmu,MED,Y
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",shit,10,"You domеstic, all I ride is foreign shit",shit,INNER,REPEAT,spelling,HIGH,N
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",shit,10,"You domеstic, all I ride is foreign shit",stic,INNER,SLANT,spelling,LOW,Y
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",spark,10,"You domеstic, all I ride is foreign shit",dom,INNER,ASSONANCE,vowel,MED,Y
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",Twitter,10,"You domеstic, all I ride is foreign shit",shit,INNER,SLANT,cmu,MED,Y
+New Money,8,"I ain't with the Twitter shit, I let it spark (Fah)",Twitter,10,"You domеstic, all I ride is foreign shit",stic,INNER,SLANT,spelling,LOW,Y
+New Money,9,"Gucci garments, kush smell like armpits",armpits,10,"You domеstic, all I ride is foreign shit",shit,END,SLANT,cmu,MED,Y
+New Money,9,"Gucci garments, kush smell like armpits",armpits,10,"You domеstic, all I ride is foreign shit",stic,INNER,ASSONANCE,vowel,LOW,N
+New Money,9,"Gucci garments, kush smell like armpits",garments,10,"You domеstic, all I ride is foreign shit",dom,INNER,ASSONANCE,vowel,MED,Y
+New Money,9,"Gucci garments, kush smell like armpits",like,10,"You domеstic, all I ride is foreign shit",ride,INNER,SLANT,cmu,MED,Y
+New Money,9,"Gucci garments, kush smell like armpits",armpits,11,Sippin' Hi-Tech and I got a hot TEC,Sippin,INNER,ASSONANCE,vowel,MED,Y
+New Money,9,"Gucci garments, kush smell like armpits",garments,11,Sippin' Hi-Tech and I got a hot TEC,got,INNER,ASSONANCE,vowel,MED,Y
+New Money,9,"Gucci garments, kush smell like armpits",garments,11,Sippin' Hi-Tech and I got a hot TEC,hot,INNER,ASSONANCE,vowel,MED,Y
+New Money,9,"Gucci garments, kush smell like armpits",like,11,Sippin' Hi-Tech and I got a hot TEC,Hi,INNER,ASSONANCE,vowel,MED,Y
+New Money,9,"Gucci garments, kush smell like armpits",smell,11,Sippin' Hi-Tech and I got a hot TEC,TEC,INNER,SLANT,cmu,MED,Y
+New Money,9,"Gucci garments, kush smell like armpits",smell,11,Sippin' Hi-Tech and I got a hot TEC,Tech,INNER,SLANT,cmu,MED,Y
+New Money,10,"You domеstic, all I ride is foreign shit",all,10,"You domеstic, all I ride is foreign shit",foreign,INNER,ASSONANCE,vowel,MED,Y
+New Money,10,"You domеstic, all I ride is foreign shit",stic,10,"You domеstic, all I ride is foreign shit",shit,INNER,SLANT,spelling,LOW,Y
+New Money,10,"You domеstic, all I ride is foreign shit",dom,11,Sippin' Hi-Tech and I got a hot TEC,got,INNER,SLANT,cmu,MED,Y
+New Money,10,"You domеstic, all I ride is foreign shit",dom,11,Sippin' Hi-Tech and I got a hot TEC,hot,INNER,SLANT,cmu,MED,Y
+New Money,10,"You domеstic, all I ride is foreign shit",ride,11,Sippin' Hi-Tech and I got a hot TEC,Hi,INNER,ASSONANCE,vowel,MED,Y
+New Money,10,"You domеstic, all I ride is foreign shit",shit,11,Sippin' Hi-Tech and I got a hot TEC,Sippin,INNER,ASSONANCE,vowel,MED,Y
+New Money,10,"You domеstic, all I ride is foreign shit",stic,11,Sippin' Hi-Tech and I got a hot TEC,Sippin,INNER,ASSONANCE,vowel,LOW,N
+New Money,10,"You domеstic, all I ride is foreign shit",dom,12,"I got nеw money, it ain't even out yet",got,INNER,SLANT,cmu,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,got,11,Sippin' Hi-Tech and I got a hot TEC,hot,INNER,PERFECT,cmu,HIGH,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,Tech,11,Sippin' Hi-Tech and I got a hot TEC,TEC,INNER,PERFECT,cmu,HIGH,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,TEC,12,"I got nеw money, it ain't even out yet",yet,END,SLANT,cmu,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,got,12,"I got nеw money, it ain't even out yet",got,INNER,REPEAT,spelling,HIGH,N
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,hot,12,"I got nеw money, it ain't even out yet",got,INNER,PERFECT,cmu,HIGH,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,TEC,12,"I got nеw money, it ain't even out yet",n,INNER,SLANT,cmu,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,Tech,12,"I got nеw money, it ain't even out yet",n,INNER,SLANT,cmu,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,Tech,12,"I got nеw money, it ain't even out yet",yet,INNER,SLANT,cmu,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,got,13,"You went bought a plane ticket, but I chartered it",bought,INNER,PERFECT,cmu,HIGH,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,got,13,"You went bought a plane ticket, but I chartered it",chartered,INNER,ASSONANCE,vowel,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,hot,13,"You went bought a plane ticket, but I chartered it",bought,INNER,PERFECT,cmu,HIGH,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,hot,13,"You went bought a plane ticket, but I chartered it",chartered,INNER,ASSONANCE,vowel,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,Sippin,13,"You went bought a plane ticket, but I chartered it",ticket,INNER,ASSONANCE,vowel,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,TEC,13,"You went bought a plane ticket, but I chartered it",went,INNER,ASSONANCE,vowel,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,Tech,13,"You went bought a plane ticket, but I chartered it",went,INNER,ASSONANCE,vowel,MED,Y
+New Money,11,Sippin' Hi-Tech and I got a hot TEC,TEC,15,"I got new money, it ain't even out yet",yet,END,SLANT,cmu,MED,Y
+New Money,12,"I got nеw money, it ain't even out yet",n,12,"I got nеw money, it ain't even out yet",yet,INNER,SLANT,cmu,MED,Y
+New Money,12,"I got nеw money, it ain't even out yet",w,12,"I got nеw money, it ain't even out yet",money,INNER,ASSONANCE,vowel,MED,Y
+New Money,12,"I got nеw money, it ain't even out yet",ain't,13,"You went bought a plane ticket, but I chartered it",plane,INNER,SLANT,cmu,MED,Y
+New Money,12,"I got nеw money, it ain't even out yet",got,13,"You went bought a plane ticket, but I chartered it",bought,INNER,PERFECT,cmu,HIGH,Y
+New Money,12,"I got nеw money, it ain't even out yet",got,13,"You went bought a plane ticket, but I chartered it",chartered,INNER,ASSONANCE,vowel,MED,Y
+New Money,12,"I got nеw money, it ain't even out yet",n,13,"You went bought a plane ticket, but I chartered it",went,INNER,SLANT,cmu,MED,Y
+New Money,12,"I got nеw money, it ain't even out yet",yet,13,"You went bought a plane ticket, but I chartered it",went,INNER,SLANT,cmu,MED,Y
+New Money,12,"I got nеw money, it ain't even out yet",ain't,14,"Tryna hit your main thing, let me borrow it",main,INNER,SLANT,cmu,MED,Y
+New Money,12,"I got nеw money, it ain't even out yet",even,14,"Tryna hit your main thing, let me borrow it",Tryna,INNER,SLANT,spelling,LOW,Y
+New Money,12,"I got nеw money, it ain't even out yet",n,14,"Tryna hit your main thing, let me borrow it",let,INNER,SLANT,cmu,MED,Y
+New Money,12,"I got nеw money, it ain't even out yet",yet,14,"Tryna hit your main thing, let me borrow it",let,INNER,PERFECT,cmu,HIGH,Y
+New Money,12,"I got nеw money, it ain't even out yet",yet,15,"I got new money, it ain't even out yet",yet,END,REPEAT,spelling,HIGH,N
+New Money,13,"You went bought a plane ticket, but I chartered it",bought,13,"You went bought a plane ticket, but I chartered it",chartered,INNER,ASSONANCE,vowel,MED,Y
+New Money,13,"You went bought a plane ticket, but I chartered it",plane,14,"Tryna hit your main thing, let me borrow it",main,INNER,PERFECT,cmu,HIGH,Y
+New Money,13,"You went bought a plane ticket, but I chartered it",ticket,14,"Tryna hit your main thing, let me borrow it",hit,INNER,SLANT,cmu,MED,Y
+New Money,13,"You went bought a plane ticket, but I chartered it",ticket,14,"Tryna hit your main thing, let me borrow it",thing,INNER,ASSONANCE,vowel,MED,Y
+New Money,13,"You went bought a plane ticket, but I chartered it",went,14,"Tryna hit your main thing, let me borrow it",let,INNER,SLANT,cmu,MED,Y
+New Money,13,"You went bought a plane ticket, but I chartered it",bought,15,"I got new money, it ain't even out yet",got,INNER,PERFECT,cmu,HIGH,Y
+New Money,13,"You went bought a plane ticket, but I chartered it",chartered,15,"I got new money, it ain't even out yet",got,INNER,ASSONANCE,vowel,MED,Y
+New Money,13,"You went bought a plane ticket, but I chartered it",plane,15,"I got new money, it ain't even out yet",ain't,INNER,SLANT,cmu,MED,Y
+New Money,13,"You went bought a plane ticket, but I chartered it",went,15,"I got new money, it ain't even out yet",yet,INNER,SLANT,cmu,MED,Y
+New Money,14,"Tryna hit your main thing, let me borrow it",hit,14,"Tryna hit your main thing, let me borrow it",thing,INNER,SLANT,cmu,MED,Y
+New Money,14,"Tryna hit your main thing, let me borrow it",let,15,"I got new money, it ain't even out yet",yet,INNER,PERFECT,cmu,HIGH,Y
+New Money,14,"Tryna hit your main thing, let me borrow it",main,15,"I got new money, it ain't even out yet",ain't,INNER,SLANT,cmu,MED,Y
+New Money,14,"Tryna hit your main thing, let me borrow it",Tryna,15,"I got new money, it ain't even out yet",even,INNER,SLANT,spelling,LOW,Y
+New Money,14,"Tryna hit your main thing, let me borrow it",Tryna,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",tryna,INNER,REPEAT,spelling,HIGH,N
+New Money,15,"I got new money, it ain't even out yet",even,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",tryna,INNER,SLANT,spelling,LOW,Y
+New Money,15,"I got new money, it ain't even out yet",new,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",coupe,INNER,ASSONANCE,vowel,MED,Y
+New Money,15,"I got new money, it ain't even out yet",new,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",route,INNER,ASSONANCE,vowel,MED,Y
+New Money,15,"I got new money, it ain't even out yet",ain't,17,Draco in the seat make you chicken noodle soup (Yeah),Draco,INNER,ASSONANCE,vowel,MED,Y
+New Money,15,"I got new money, it ain't even out yet",ain't,17,Draco in the seat make you chicken noodle soup (Yeah),make,INNER,ASSONANCE,vowel,MED,Y
+New Money,15,"I got new money, it ain't even out yet",even,17,Draco in the seat make you chicken noodle soup (Yeah),seat,INNER,ASSONANCE,vowel,MED,Y
+New Money,15,"I got new money, it ain't even out yet",new,17,Draco in the seat make you chicken noodle soup (Yeah),noodle,INNER,ASSONANCE,vowel,MED,Y
+New Money,15,"I got new money, it ain't even out yet",new,17,Draco in the seat make you chicken noodle soup (Yeah),soup,INNER,ASSONANCE,vowel,MED,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",coupe,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",route,INNER,SLANT,cmu,MED,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",Ridin,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",find,INNER,ASSONANCE,vowel,MED,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",route,17,Draco in the seat make you chicken noodle soup (Yeah),soup,END,SLANT,cmu,MED,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",coupe,17,Draco in the seat make you chicken noodle soup (Yeah),noodle,INNER,ASSONANCE,vowel,MED,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",coupe,17,Draco in the seat make you chicken noodle soup (Yeah),soup,INNER,PERFECT,cmu,HIGH,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",route,17,Draco in the seat make you chicken noodle soup (Yeah),noodle,INNER,ASSONANCE,vowel,MED,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",tryna,17,Draco in the seat make you chicken noodle soup (Yeah),seat,INNER,SLANT,spelling,LOW,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",route,18,"Jumped out the stu' (Yeah), never wore a suit (21)",suit,END,PERFECT,cmu,HIGH,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",coupe,18,"Jumped out the stu' (Yeah), never wore a suit (21)",stu,INNER,ASSONANCE,vowel,MED,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",coupe,18,"Jumped out the stu' (Yeah), never wore a suit (21)",suit,INNER,SLANT,cmu,MED,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",route,18,"Jumped out the stu' (Yeah), never wore a suit (21)",stu,INNER,ASSONANCE,vowel,MED,Y
+New Money,16,"Ridin' in a coupe (21), tryna find a route (Yeah)",route,19,"Rap niggas come around Savage, get screwed (On God)",screwed,END,SLANT,cmu,MED,Y
+New Money,17,Draco in the seat make you chicken noodle soup (Yeah),Draco,17,Draco in the seat make you chicken noodle soup (Yeah),make,INNER,SLANT,cmu,MED,Y
+New Money,17,Draco in the seat make you chicken noodle soup (Yeah),noodle,17,Draco in the seat make you chicken noodle soup (Yeah),soup,INNER,ASSONANCE,vowel,MED,Y
+New Money,17,Draco in the seat make you chicken noodle soup (Yeah),soup,18,"Jumped out the stu' (Yeah), never wore a suit (21)",suit,END,SLANT,cmu,MED,Y
+New Money,17,Draco in the seat make you chicken noodle soup (Yeah),noodle,18,"Jumped out the stu' (Yeah), never wore a suit (21)",stu,INNER,ASSONANCE,vowel,MED,Y
+New Money,17,Draco in the seat make you chicken noodle soup (Yeah),noodle,18,"Jumped out the stu' (Yeah), never wore a suit (21)",suit,INNER,ASSONANCE,vowel,MED,Y
+New Money,17,Draco in the seat make you chicken noodle soup (Yeah),soup,18,"Jumped out the stu' (Yeah), never wore a suit (21)",stu,INNER,ASSONANCE,vowel,MED,Y
+New Money,17,Draco in the seat make you chicken noodle soup (Yeah),soup,19,"Rap niggas come around Savage, get screwed (On God)",screwed,END,SLANT,cmu,MED,Y
+New Money,17,Draco in the seat make you chicken noodle soup (Yeah),noodle,19,"Rap niggas come around Savage, get screwed (On God)",screwed,INNER,SLANT,cmu,MED,Y
+New Money,18,"Jumped out the stu' (Yeah), never wore a suit (21)",stu,18,"Jumped out the stu' (Yeah), never wore a suit (21)",suit,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,"Jumped out the stu' (Yeah), never wore a suit (21)",suit,19,"Rap niggas come around Savage, get screwed (On God)",screwed,END,SLANT,cmu,MED,Y
+New Money,18,"Jumped out the stu' (Yeah), never wore a suit (21)",Jumped,19,"Rap niggas come around Savage, get screwed (On God)",come,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,"Jumped out the stu' (Yeah), never wore a suit (21)",never,19,"Rap niggas come around Savage, get screwed (On God)",get,INNER,SLANT,cmu,MED,Y
+New Money,18,"Jumped out the stu' (Yeah), never wore a suit (21)",stu,19,"Rap niggas come around Savage, get screwed (On God)",screwed,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,"Jumped out the stu' (Yeah), never wore a suit (21)",Jumped,20,"Fuck my best partner, make the bitch drop him (On God)",Fuck,INNER,ASSONANCE,vowel,MED,Y
+New Money,18,"Jumped out the stu' (Yeah), never wore a suit (21)",never,20,"Fuck my best partner, make the bitch drop him (On God)",best,INNER,ASSONANCE,vowel,MED,Y
+New Money,19,"Rap niggas come around Savage, get screwed (On God)",Rap,19,"Rap niggas come around Savage, get screwed (On God)",Savage,INNER,ASSONANCE,vowel,MED,Y
+New Money,19,"Rap niggas come around Savage, get screwed (On God)",come,20,"Fuck my best partner, make the bitch drop him (On God)",Fuck,INNER,SLANT,cmu,MED,Y
+New Money,19,"Rap niggas come around Savage, get screwed (On God)",get,20,"Fuck my best partner, make the bitch drop him (On God)",best,INNER,SLANT,cmu,MED,Y
+New Money,19,"Rap niggas come around Savage, get screwed (On God)",come,21,"Never sold drugs, nigga, I'm a robber (Yeah)",drugs,INNER,ASSONANCE,vowel,MED,Y
+New Money,19,"Rap niggas come around Savage, get screwed (On God)",get,21,"Never sold drugs, nigga, I'm a robber (Yeah)",Never,INNER,SLANT,cmu,MED,Y
+New Money,19,"Rap niggas come around Savage, get screwed (On God)",niggas,21,"Never sold drugs, nigga, I'm a robber (Yeah)",nigga,INNER,SLANT,spelling,LOW,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",bitch,20,"Fuck my best partner, make the bitch drop him (On God)",him,INNER,SLANT,cmu,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",partner,20,"Fuck my best partner, make the bitch drop him (On God)",drop,INNER,ASSONANCE,vowel,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",best,21,"Never sold drugs, nigga, I'm a robber (Yeah)",Never,INNER,ASSONANCE,vowel,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",drop,21,"Never sold drugs, nigga, I'm a robber (Yeah)",robber,INNER,SLANT,cmu,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",Fuck,21,"Never sold drugs, nigga, I'm a robber (Yeah)",drugs,INNER,ASSONANCE,vowel,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",partner,21,"Never sold drugs, nigga, I'm a robber (Yeah)",robber,INNER,ASSONANCE,vowel,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",bitch,22,"Lil' bitch bother, hit dawg, holler",bitch,INNER,REPEAT,spelling,HIGH,N
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",bitch,22,"Lil' bitch bother, hit dawg, holler",hit,INNER,SLANT,cmu,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",bitch,22,"Lil' bitch bother, hit dawg, holler",Lil,INNER,SLANT,cmu,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",drop,22,"Lil' bitch bother, hit dawg, holler",bother,INNER,SLANT,cmu,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",drop,22,"Lil' bitch bother, hit dawg, holler",holler,INNER,SLANT,cmu,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",him,22,"Lil' bitch bother, hit dawg, holler",bitch,INNER,SLANT,cmu,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",him,22,"Lil' bitch bother, hit dawg, holler",hit,INNER,SLANT,cmu,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",him,22,"Lil' bitch bother, hit dawg, holler",Lil,INNER,SLANT,cmu,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",partner,22,"Lil' bitch bother, hit dawg, holler",bother,INNER,ASSONANCE,vowel,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",partner,22,"Lil' bitch bother, hit dawg, holler",holler,INNER,ASSONANCE,vowel,MED,Y
+New Money,20,"Fuck my best partner, make the bitch drop him (On God)",him,24,"You domestic, all I ride is foreign shit",shit,END,SLANT,cmu,MED,Y
+New Money,21,"Never sold drugs, nigga, I'm a robber (Yeah)",robber,22,"Lil' bitch bother, hit dawg, holler",holler,END,SLANT,cmu,MED,Y
+New Money,21,"Never sold drugs, nigga, I'm a robber (Yeah)",nigga,22,"Lil' bitch bother, hit dawg, holler",hit,INNER,SLANT,spelling,LOW,Y
+New Money,21,"Never sold drugs, nigga, I'm a robber (Yeah)",robber,22,"Lil' bitch bother, hit dawg, holler",bother,INNER,SLANT,cmu,MED,Y
+New Money,21,"Never sold drugs, nigga, I'm a robber (Yeah)",robber,23,"Hit my first lick, went and bought a Marni collar (On God)",collar,END,SLANT,cmu,MED,Y
+New Money,21,"Never sold drugs, nigga, I'm a robber (Yeah)",Never,23,"Hit my first lick, went and bought a Marni collar (On God)",went,INNER,ASSONANCE,vowel,MED,Y
+New Money,21,"Never sold drugs, nigga, I'm a robber (Yeah)",nigga,23,"Hit my first lick, went and bought a Marni collar (On God)",Hit,INNER,SLANT,spelling,LOW,Y
+New Money,21,"Never sold drugs, nigga, I'm a robber (Yeah)",nigga,23,"Hit my first lick, went and bought a Marni collar (On God)",lick,INNER,SLANT,spelling,LOW,Y
+New Money,21,"Never sold drugs, nigga, I'm a robber (Yeah)",robber,23,"Hit my first lick, went and bought a Marni collar (On God)",bought,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",bitch,22,"Lil' bitch bother, hit dawg, holler",hit,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",bother,22,"Lil' bitch bother, hit dawg, holler",holler,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",Lil,22,"Lil' bitch bother, hit dawg, holler",bitch,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",Lil,22,"Lil' bitch bother, hit dawg, holler",hit,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",holler,23,"Hit my first lick, went and bought a Marni collar (On God)",collar,END,MULTI,multi,HIGH,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",bitch,23,"Hit my first lick, went and bought a Marni collar (On God)",Hit,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",bitch,23,"Hit my first lick, went and bought a Marni collar (On God)",lick,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",bother,23,"Hit my first lick, went and bought a Marni collar (On God)",bought,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",bother,23,"Hit my first lick, went and bought a Marni collar (On God)",collar,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",hit,23,"Hit my first lick, went and bought a Marni collar (On God)",Hit,INNER,REPEAT,spelling,HIGH,N
+New Money,22,"Lil' bitch bother, hit dawg, holler",hit,23,"Hit my first lick, went and bought a Marni collar (On God)",lick,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",holler,23,"Hit my first lick, went and bought a Marni collar (On God)",bought,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",Lil,23,"Hit my first lick, went and bought a Marni collar (On God)",Hit,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",Lil,23,"Hit my first lick, went and bought a Marni collar (On God)",lick,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",bitch,24,"You domestic, all I ride is foreign shit",shit,INNER,SLANT,cmu,MED,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",dawg,24,"You domestic, all I ride is foreign shit",all,INNER,SLANT,spelling,LOW,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",hit,24,"You domestic, all I ride is foreign shit",shit,INNER,PERFECT,cmu,HIGH,Y
+New Money,22,"Lil' bitch bother, hit dawg, holler",Lil,24,"You domestic, all I ride is foreign shit",shit,INNER,SLANT,cmu,MED,Y
+New Money,23,"Hit my first lick, went and bought a Marni collar (On God)",bought,23,"Hit my first lick, went and bought a Marni collar (On God)",collar,INNER,SLANT,cmu,MED,Y
+New Money,23,"Hit my first lick, went and bought a Marni collar (On God)",Hit,23,"Hit my first lick, went and bought a Marni collar (On God)",lick,INNER,SLANT,cmu,MED,Y
+New Money,23,"Hit my first lick, went and bought a Marni collar (On God)",Hit,24,"You domestic, all I ride is foreign shit",shit,INNER,PERFECT,cmu,HIGH,Y
+New Money,23,"Hit my first lick, went and bought a Marni collar (On God)",lick,24,"You domestic, all I ride is foreign shit",shit,INNER,SLANT,cmu,MED,Y
+New Money,23,"Hit my first lick, went and bought a Marni collar (On God)",went,24,"You domestic, all I ride is foreign shit",domestic,INNER,ASSONANCE,vowel,MED,Y
+New Money,23,"Hit my first lick, went and bought a Marni collar (On God)",Hit,25,Tryna hit your main thing,hit,INNER,REPEAT,spelling,HIGH,N
+New Money,23,"Hit my first lick, went and bought a Marni collar (On God)",Hit,25,Tryna hit your main thing,thing,INNER,SLANT,cmu,MED,Y
+New Money,23,"Hit my first lick, went and bought a Marni collar (On God)",lick,25,Tryna hit your main thing,hit,INNER,SLANT,cmu,MED,Y
+New Money,23,"Hit my first lick, went and bought a Marni collar (On God)",lick,25,Tryna hit your main thing,thing,INNER,SLANT,cmu,MED,Y
+New Money,24,"You domestic, all I ride is foreign shit",all,24,"You domestic, all I ride is foreign shit",foreign,INNER,ASSONANCE,vowel,MED,Y
+New Money,24,"You domestic, all I ride is foreign shit",shit,25,Tryna hit your main thing,thing,END,SLANT,cmu,MED,Y
+New Money,24,"You domestic, all I ride is foreign shit",shit,25,Tryna hit your main thing,hit,INNER,PERFECT,cmu,HIGH,Y
+New Money,25,Tryna hit your main thing,hit,25,Tryna hit your main thing,thing,INNER,SLANT,cmu,MED,Y

@@ -1,0 +1,146 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+bbycakes,1,"Babycakes, you just don't know, know",don't,1,"Babycakes, you just don't know, know",know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,1,"Babycakes, you just don't know, know",know,1,"Babycakes, you just don't know, know",know,INNER,REPEAT,spelling,HIGH,N
+bbycakes,1,"Babycakes, you just don't know, know",know,3,And I just want you to know that I think our love will grow,grow,END,PERFECT,cmu,HIGH,Y
+bbycakes,1,"Babycakes, you just don't know, know",don't,3,And I just want you to know that I think our love will grow,grow,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,1,"Babycakes, you just don't know, know",don't,3,And I just want you to know that I think our love will grow,know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,1,"Babycakes, you just don't know, know",know,3,And I just want you to know that I think our love will grow,grow,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,1,"Babycakes, you just don't know, know",know,3,And I just want you to know that I think our love will grow,know,INNER,REPEAT,spelling,HIGH,N
+bbycakes,1,"Babycakes, you just don't know, know",know,4,We'll take it step-by-step because I'm not somethin' you own,own,END,ASSONANCE,vowel,MED,Y
+bbycakes,2,"How I, I, I want you so, so",want,3,And I just want you to know that I think our love will grow,want,INNER,REPEAT,spelling,HIGH,N
+bbycakes,2,"How I, I, I want you so, so",want,4,We'll take it step-by-step because I'm not somethin' you own,not,INNER,SLANT,cmu,MED,Y
+bbycakes,3,And I just want you to know that I think our love will grow,know,3,And I just want you to know that I think our love will grow,grow,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,3,And I just want you to know that I think our love will grow,think,3,And I just want you to know that I think our love will grow,will,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,3,And I just want you to know that I think our love will grow,grow,4,We'll take it step-by-step because I'm not somethin' you own,own,END,ASSONANCE,vowel,MED,Y
+bbycakes,3,And I just want you to know that I think our love will grow,know,4,We'll take it step-by-step because I'm not somethin' you own,own,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,3,And I just want you to know that I think our love will grow,love,4,We'll take it step-by-step because I'm not somethin' you own,somethin,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,3,And I just want you to know that I think our love will grow,want,4,We'll take it step-by-step because I'm not somethin' you own,not,INNER,SLANT,cmu,MED,Y
+bbycakes,3,And I just want you to know that I think our love will grow,grow,5,I know sometimes (Sometimes) that things can get real bad (Bad),know,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,3,And I just want you to know that I think our love will grow,know,5,I know sometimes (Sometimes) that things can get real bad (Bad),know,INNER,REPEAT,spelling,HIGH,N
+bbycakes,3,And I just want you to know that I think our love will grow,think,5,I know sometimes (Sometimes) that things can get real bad (Bad),things,INNER,SLANT,cmu,MED,Y
+bbycakes,3,And I just want you to know that I think our love will grow,will,5,I know sometimes (Sometimes) that things can get real bad (Bad),things,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,4,We'll take it step-by-step because I'm not somethin' you own,step,4,We'll take it step-by-step because I'm not somethin' you own,step,INNER,REPEAT,spelling,HIGH,N
+bbycakes,4,We'll take it step-by-step because I'm not somethin' you own,by,5,I know sometimes (Sometimes) that things can get real bad (Bad),sometimes,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,4,We'll take it step-by-step because I'm not somethin' you own,own,5,I know sometimes (Sometimes) that things can get real bad (Bad),know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,4,We'll take it step-by-step because I'm not somethin' you own,step,5,I know sometimes (Sometimes) that things can get real bad (Bad),get,INNER,SLANT,cmu,MED,Y
+bbycakes,4,We'll take it step-by-step because I'm not somethin' you own,We'll,5,I know sometimes (Sometimes) that things can get real bad (Bad),real,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,4,We'll take it step-by-step because I'm not somethin' you own,not,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",part,INNER,SLANT,cmu,MED,Y
+bbycakes,4,We'll take it step-by-step because I'm not somethin' you own,own,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",most,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,4,We'll take it step-by-step because I'm not somethin' you own,step,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",best,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,4,We'll take it step-by-step because I'm not somethin' you own,take,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",make,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,5,I know sometimes (Sometimes) that things can get real bad (Bad),can,5,I know sometimes (Sometimes) that things can get real bad (Bad),bad,INNER,SLANT,cmu,MED,Y
+bbycakes,5,I know sometimes (Sometimes) that things can get real bad (Bad),bad,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",had,END,PERFECT,cmu,HIGH,Y
+bbycakes,5,I know sometimes (Sometimes) that things can get real bad (Bad),can,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",had,INNER,SLANT,cmu,MED,Y
+bbycakes,5,I know sometimes (Sometimes) that things can get real bad (Bad),get,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",best,INNER,SLANT,cmu,MED,Y
+bbycakes,5,I know sometimes (Sometimes) that things can get real bad (Bad),know,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",most,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,5,I know sometimes (Sometimes) that things can get real bad (Bad),know,7,Don't even start on to that stuff that you used to (Used to),Don't,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,5,I know sometimes (Sometimes) that things can get real bad (Bad),real,7,Don't even start on to that stuff that you used to (Used to),even,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",most,7,Don't even start on to that stuff that you used to (Used to),Don't,INNER,SLANT,cmu,MED,Y
+bbycakes,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",part,7,Don't even start on to that stuff that you used to (Used to),start,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",part,8,"Because I put you in this lifestyle, wasn't used to",wasn't,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,6,"But for the most part I'ma make sure I'm the best you had (Oh yeah, yeah, yeah)",sure,8,"Because I put you in this lifestyle, wasn't used to",put,INNER,SLANT,cmu,MED,Y
+bbycakes,7,Don't even start on to that stuff that you used to (Used to),used,8,"Because I put you in this lifestyle, wasn't used to",used,END,REPEAT,spelling,HIGH,N
+bbycakes,7,Don't even start on to that stuff that you used to (Used to),start,8,"Because I put you in this lifestyle, wasn't used to",wasn't,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,7,Don't even start on to that stuff that you used to (Used to),Don't,9,And don't even act like you don't even care (No),don't,INNER,REPEAT,spelling,HIGH,N
+bbycakes,7,Don't even start on to that stuff that you used to (Used to),even,9,And don't even act like you don't even care (No),even,INNER,REPEAT,spelling,HIGH,N
+bbycakes,8,"Because I put you in this lifestyle, wasn't used to",lifestyle,9,And don't even act like you don't even care (No),like,INNER,SLANT,cmu,MED,Y
+bbycakes,8,"Because I put you in this lifestyle, wasn't used to",lifestyle,10,"And if it's stuck, it's right there in the air (Woah)",right,INNER,SLANT,cmu,MED,Y
+bbycakes,9,And don't even act like you don't even care (No),don't,9,And don't even act like you don't even care (No),don't,INNER,REPEAT,spelling,HIGH,N
+bbycakes,9,And don't even act like you don't even care (No),even,9,And don't even act like you don't even care (No),even,INNER,REPEAT,spelling,HIGH,N
+bbycakes,9,And don't even act like you don't even care (No),care,10,"And if it's stuck, it's right there in the air (Woah)",air,END,PERFECT,cmu,HIGH,Y
+bbycakes,9,And don't even act like you don't even care (No),care,10,"And if it's stuck, it's right there in the air (Woah)",there,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,9,And don't even act like you don't even care (No),like,10,"And if it's stuck, it's right there in the air (Woah)",right,INNER,SLANT,cmu,MED,Y
+bbycakes,9,And don't even act like you don't even care (No),care,11,"And one for you and she get the same pair (No, no)",pair,END,PERFECT,cmu,HIGH,Y
+bbycakes,9,And don't even act like you don't even care (No),care,11,"And one for you and she get the same pair (No, no)",get,INNER,SLANT,cmu,MED,Y
+bbycakes,9,And don't even act like you don't even care (No),care,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",tears,END,SLANT,cmu,MED,Y
+bbycakes,10,"And if it's stuck, it's right there in the air (Woah)",there,10,"And if it's stuck, it's right there in the air (Woah)",air,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,10,"And if it's stuck, it's right there in the air (Woah)",air,11,"And one for you and she get the same pair (No, no)",pair,END,PERFECT,cmu,HIGH,Y
+bbycakes,10,"And if it's stuck, it's right there in the air (Woah)",air,11,"And one for you and she get the same pair (No, no)",get,INNER,SLANT,cmu,MED,Y
+bbycakes,10,"And if it's stuck, it's right there in the air (Woah)",stuck,11,"And one for you and she get the same pair (No, no)",one,INNER,SLANT,cmu,MED,Y
+bbycakes,10,"And if it's stuck, it's right there in the air (Woah)",there,11,"And one for you and she get the same pair (No, no)",get,INNER,SLANT,cmu,MED,Y
+bbycakes,10,"And if it's stuck, it's right there in the air (Woah)",there,11,"And one for you and she get the same pair (No, no)",pair,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,10,"And if it's stuck, it's right there in the air (Woah)",air,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",tears,END,SLANT,cmu,MED,Y
+bbycakes,10,"And if it's stuck, it's right there in the air (Woah)",right,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",cry,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,10,"And if it's stuck, it's right there in the air (Woah)",there,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",tears,INNER,SLANT,cmu,MED,Y
+bbycakes,11,"And one for you and she get the same pair (No, no)",get,11,"And one for you and she get the same pair (No, no)",pair,INNER,SLANT,cmu,MED,Y
+bbycakes,11,"And one for you and she get the same pair (No, no)",pair,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",tears,END,SLANT,cmu,MED,Y
+bbycakes,11,"And one for you and she get the same pair (No, no)",get,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",tears,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",no,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",no,INNER,REPEAT,spelling,HIGH,N
+bbycakes,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",no,13,"Babycakes, you just don't know (No, no, no, don't cry)",don't,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",no,13,"Babycakes, you just don't know (No, no, no, don't cry)",know,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",cry,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",time,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",no,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",almost,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,12,"And no, no cry 'cause you do you, no tears (No, no, no, no, no, don't cry)",no,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",go,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,13,"Babycakes, you just don't know (No, no, no, don't cry)",don't,13,"Babycakes, you just don't know (No, no, no, don't cry)",know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,13,"Babycakes, you just don't know (No, no, no, don't cry)",know,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",go,END,PERFECT,cmu,HIGH,Y
+bbycakes,13,"Babycakes, you just don't know (No, no, no, don't cry)",don't,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",almost,INNER,SLANT,cmu,MED,Y
+bbycakes,13,"Babycakes, you just don't know (No, no, no, don't cry)",don't,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",go,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,13,"Babycakes, you just don't know (No, no, no, don't cry)",know,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",almost,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,13,"Babycakes, you just don't know (No, no, no, don't cry)",know,15,"I had a different love, I met her on the road (No, no, no, don't cry)",road,END,ASSONANCE,vowel,MED,Y
+bbycakes,13,"Babycakes, you just don't know (No, no, no, don't cry)",don't,15,"I had a different love, I met her on the road (No, no, no, don't cry)",road,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,13,"Babycakes, you just don't know (No, no, no, don't cry)",know,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",froze,END,ASSONANCE,vowel,MED,Y
+bbycakes,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",almost,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",go,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",go,15,"I had a different love, I met her on the road (No, no, no, don't cry)",road,END,ASSONANCE,vowel,MED,Y
+bbycakes,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",almost,15,"I had a different love, I met her on the road (No, no, no, don't cry)",road,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",go,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",froze,END,ASSONANCE,vowel,MED,Y
+bbycakes,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",almost,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",froze,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",almost,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",told,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,14,"My time is almost up, and I just gotta go (No, no, no, don't cry)",go,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",told,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,15,"I had a different love, I met her on the road (No, no, no, don't cry)",road,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",froze,END,SLANT,cmu,MED,Y
+bbycakes,15,"I had a different love, I met her on the road (No, no, no, don't cry)",love,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",stuck,INNER,SLANT,cmu,MED,Y
+bbycakes,15,"I had a different love, I met her on the road (No, no, no, don't cry)",love,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",touch,INNER,SLANT,cmu,MED,Y
+bbycakes,15,"I had a different love, I met her on the road (No, no, no, don't cry)",road,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",told,INNER,SLANT,cmu,MED,Y
+bbycakes,15,"I had a different love, I met her on the road (No, no, no, don't cry)",met,17,I know that it's wrong that I don't want it to end,end,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,15,"I had a different love, I met her on the road (No, no, no, don't cry)",road,17,I know that it's wrong that I don't want it to end,don't,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,15,"I had a different love, I met her on the road (No, no, no, don't cry)",road,17,I know that it's wrong that I don't want it to end,know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",stuck,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",touch,INNER,SLANT,cmu,MED,Y
+bbycakes,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",told,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",froze,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",froze,17,I know that it's wrong that I don't want it to end,don't,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",froze,17,I know that it's wrong that I don't want it to end,know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",told,17,I know that it's wrong that I don't want it to end,don't,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",told,17,I know that it's wrong that I don't want it to end,know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",froze,18,I know I messed up when I was seeing your best friend,know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,16,"She told me that she stuck from my touch 'cause I'm froze (No, no, no, don't cry)",told,18,I know I messed up when I was seeing your best friend,know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,17,I know that it's wrong that I don't want it to end,know,17,I know that it's wrong that I don't want it to end,don't,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,17,I know that it's wrong that I don't want it to end,end,18,I know I messed up when I was seeing your best friend,friend,END,PERFECT,cmu,HIGH,Y
+bbycakes,17,I know that it's wrong that I don't want it to end,don't,18,I know I messed up when I was seeing your best friend,know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,17,I know that it's wrong that I don't want it to end,end,18,I know I messed up when I was seeing your best friend,best,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,17,I know that it's wrong that I don't want it to end,end,18,I know I messed up when I was seeing your best friend,messed,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,17,I know that it's wrong that I don't want it to end,end,18,I know I messed up when I was seeing your best friend,when,INNER,SLANT,cmu,MED,Y
+bbycakes,17,I know that it's wrong that I don't want it to end,know,18,I know I messed up when I was seeing your best friend,know,INNER,REPEAT,spelling,HIGH,N
+bbycakes,17,I know that it's wrong that I don't want it to end,end,19,But when we're fighting (Fighting),when,INNER,SLANT,cmu,MED,Y
+bbycakes,17,I know that it's wrong that I don't want it to end,end,20,You're not my boyfriend (Boyfriend),boyfriend,END,PERFECT,cmu,HIGH,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,best,18,I know I messed up when I was seeing your best friend,friend,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,messed,18,I know I messed up when I was seeing your best friend,best,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,messed,18,I know I messed up when I was seeing your best friend,friend,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,messed,18,I know I messed up when I was seeing your best friend,when,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,when,18,I know I messed up when I was seeing your best friend,best,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,when,18,I know I messed up when I was seeing your best friend,friend,INNER,SLANT,cmu,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,best,19,But when we're fighting (Fighting),when,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,friend,19,But when we're fighting (Fighting),when,INNER,SLANT,cmu,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,messed,19,But when we're fighting (Fighting),when,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,when,19,But when we're fighting (Fighting),when,INNER,REPEAT,spelling,HIGH,N
+bbycakes,18,I know I messed up when I was seeing your best friend,friend,20,You're not my boyfriend (Boyfriend),boyfriend,END,PERFECT,cmu,HIGH,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,best,20,You're not my boyfriend (Boyfriend),boyfriend,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,messed,20,You're not my boyfriend (Boyfriend),boyfriend,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,18,I know I messed up when I was seeing your best friend,when,20,You're not my boyfriend (Boyfriend),boyfriend,INNER,SLANT,cmu,MED,Y
+bbycakes,19,But when we're fighting (Fighting),when,20,You're not my boyfriend (Boyfriend),boyfriend,INNER,SLANT,cmu,MED,Y
+bbycakes,19,But when we're fighting (Fighting),fighting,21,"I can replace you, but I can't find another one",find,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,21,"I can replace you, but I can't find another one",another,21,"I can replace you, but I can't find another one",one,INNER,SLANT,cmu,MED,Y
+bbycakes,21,"I can replace you, but I can't find another one",can,21,"I can replace you, but I can't find another one",can't,INNER,SLANT,cmu,MED,Y
+bbycakes,21,"I can replace you, but I can't find another one",another,22,"And all my love it will go out to you (Oh, yeah-yeah)",love,INNER,SLANT,cmu,MED,Y
+bbycakes,21,"I can replace you, but I can't find another one",one,22,"And all my love it will go out to you (Oh, yeah-yeah)",love,INNER,SLANT,cmu,MED,Y
+bbycakes,21,"I can replace you, but I can't find another one",another,23,"And don't be shocked if I arrive with someone new (Oh, yeah-yeah)",someone,INNER,SLANT,cmu,MED,Y
+bbycakes,21,"I can replace you, but I can't find another one",find,23,"And don't be shocked if I arrive with someone new (Oh, yeah-yeah)",arrive,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,21,"I can replace you, but I can't find another one",one,23,"And don't be shocked if I arrive with someone new (Oh, yeah-yeah)",someone,INNER,PERFECT,cmu,HIGH,Y
+bbycakes,22,"And all my love it will go out to you (Oh, yeah-yeah)",go,23,"And don't be shocked if I arrive with someone new (Oh, yeah-yeah)",don't,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,22,"And all my love it will go out to you (Oh, yeah-yeah)",love,23,"And don't be shocked if I arrive with someone new (Oh, yeah-yeah)",someone,INNER,SLANT,cmu,MED,Y
+bbycakes,22,"And all my love it will go out to you (Oh, yeah-yeah)",go,24,"So, I called you here to tell you I'm with someone you know",know,END,PERFECT,cmu,HIGH,Y
+bbycakes,22,"And all my love it will go out to you (Oh, yeah-yeah)",all,24,"So, I called you here to tell you I'm with someone you know",called,INNER,SLANT,cmu,MED,Y
+bbycakes,22,"And all my love it will go out to you (Oh, yeah-yeah)",love,24,"So, I called you here to tell you I'm with someone you know",someone,INNER,SLANT,cmu,MED,Y
+bbycakes,23,"And don't be shocked if I arrive with someone new (Oh, yeah-yeah)",don't,24,"So, I called you here to tell you I'm with someone you know",know,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,23,"And don't be shocked if I arrive with someone new (Oh, yeah-yeah)",someone,24,"So, I called you here to tell you I'm with someone you know",someone,INNER,REPEAT,spelling,HIGH,N
+bbycakes,23,"And don't be shocked if I arrive with someone new (Oh, yeah-yeah)",arrive,25,"And if I said that I loved you, I lied (No, no, no, don't cry)",lied,INNER,SLANT,cmu,MED,Y
+bbycakes,23,"And don't be shocked if I arrive with someone new (Oh, yeah-yeah)",someone,25,"And if I said that I loved you, I lied (No, no, no, don't cry)",loved,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,24,"So, I called you here to tell you I'm with someone you know",someone,25,"And if I said that I loved you, I lied (No, no, no, don't cry)",loved,INNER,ASSONANCE,vowel,MED,Y
+bbycakes,24,"So, I called you here to tell you I'm with someone you know",tell,25,"And if I said that I loved you, I lied (No, no, no, don't cry)",said,INNER,SLANT,cmu,MED,Y

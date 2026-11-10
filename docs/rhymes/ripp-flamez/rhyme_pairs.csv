@@ -1,0 +1,121 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Reason,1,I hear a lot of niggas reachin',hear,1,I hear a lot of niggas reachin',reachin,INNER,ASSONANCE,vowel,MED,Y
+Reason,1,I hear a lot of niggas reachin',hear,2,I seen a lot of niggas tweetin' oh yeah,seen,INNER,SLANT,cmu,MED,Y
+Reason,1,I hear a lot of niggas reachin',lot,2,I seen a lot of niggas tweetin' oh yeah,lot,INNER,REPEAT,spelling,HIGH,N
+Reason,1,I hear a lot of niggas reachin',niggas,2,I seen a lot of niggas tweetin' oh yeah,niggas,INNER,REPEAT,spelling,HIGH,N
+Reason,1,I hear a lot of niggas reachin',reachin,2,I seen a lot of niggas tweetin' oh yeah,seen,INNER,ASSONANCE,vowel,MED,Y
+Reason,1,I hear a lot of niggas reachin',reachin,3,I hear a lot of niggas sneakin',sneakin,END,SLANT,cmu,MED,Y
+Reason,1,I hear a lot of niggas reachin',hear,3,I hear a lot of niggas sneakin',hear,INNER,REPEAT,spelling,HIGH,N
+Reason,1,I hear a lot of niggas reachin',hear,3,I hear a lot of niggas sneakin',sneakin,INNER,ASSONANCE,vowel,MED,Y
+Reason,1,I hear a lot of niggas reachin',lot,3,I hear a lot of niggas sneakin',lot,INNER,REPEAT,spelling,HIGH,N
+Reason,1,I hear a lot of niggas reachin',niggas,3,I hear a lot of niggas sneakin',niggas,INNER,REPEAT,spelling,HIGH,N
+Reason,1,I hear a lot of niggas reachin',reachin,3,I hear a lot of niggas sneakin',hear,INNER,ASSONANCE,vowel,MED,Y
+Reason,1,I hear a lot of niggas reachin',reachin,4,I know it gotta be the reason oh yeah,reason,END,SLANT,cmu,MED,Y
+Reason,2,I seen a lot of niggas tweetin' oh yeah,lot,3,I hear a lot of niggas sneakin',lot,INNER,REPEAT,spelling,HIGH,N
+Reason,2,I seen a lot of niggas tweetin' oh yeah,niggas,3,I hear a lot of niggas sneakin',niggas,INNER,REPEAT,spelling,HIGH,N
+Reason,2,I seen a lot of niggas tweetin' oh yeah,seen,3,I hear a lot of niggas sneakin',hear,INNER,SLANT,cmu,MED,Y
+Reason,2,I seen a lot of niggas tweetin' oh yeah,seen,3,I hear a lot of niggas sneakin',sneakin,INNER,ASSONANCE,vowel,MED,Y
+Reason,2,I seen a lot of niggas tweetin' oh yeah,lot,4,I know it gotta be the reason oh yeah,gotta,INNER,SLANT,cmu,MED,Y
+Reason,2,I seen a lot of niggas tweetin' oh yeah,seen,4,I know it gotta be the reason oh yeah,reason,INNER,SLANT,cmu,MED,Y
+Reason,3,I hear a lot of niggas sneakin',hear,3,I hear a lot of niggas sneakin',sneakin,INNER,ASSONANCE,vowel,MED,Y
+Reason,3,I hear a lot of niggas sneakin',sneakin,4,I know it gotta be the reason oh yeah,reason,END,ASSONANCE,vowel,MED,Y
+Reason,3,I hear a lot of niggas sneakin',hear,4,I know it gotta be the reason oh yeah,reason,INNER,ASSONANCE,vowel,MED,Y
+Reason,3,I hear a lot of niggas sneakin',lot,4,I know it gotta be the reason oh yeah,gotta,INNER,SLANT,cmu,MED,Y
+Reason,4,I know it gotta be the reason oh yeah,know,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",go,INNER,PERFECT,cmu,HIGH,Y
+Reason,4,I know it gotta be the reason oh yeah,reason,6,These niggas schemin' thinking that they slick,schemin,INNER,ASSONANCE,vowel,MED,Y
+Reason,4,I know it gotta be the reason oh yeah,reason,6,These niggas schemin' thinking that they slick,These,INNER,SLANT,cmu,MED,Y
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",go,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",go,INNER,REPEAT,spelling,HIGH,N
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",half,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",half,INNER,REPEAT,spelling,HIGH,N
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",tryin,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",tryin,INNER,REPEAT,spelling,HIGH,N
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",brick,6,These niggas schemin' thinking that they slick,slick,END,PERFECT,cmu,HIGH,Y
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",brick,6,These niggas schemin' thinking that they slick,thinking,INNER,ASSONANCE,vowel,MED,Y
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",brick,7,I had to empty out the whole clip,clip,END,SLANT,cmu,MED,Y
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",go,7,I had to empty out the whole clip,whole,INNER,ASSONANCE,vowel,MED,Y
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",half,7,I had to empty out the whole clip,had,INNER,SLANT,cmu,MED,Y
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",brick,8,These niggas taking shot but they missing,missing,END,ASSONANCE,vowel,MED,Y
+Reason,5,"She tryin' to go half on the bait, I'm tryin to go half on the brick",brick,9,I was just dodging the federal prison,prison,END,ASSONANCE,vowel,MED,Y
+Reason,6,These niggas schemin' thinking that they slick,These,6,These niggas schemin' thinking that they slick,schemin,INNER,ASSONANCE,vowel,MED,Y
+Reason,6,These niggas schemin' thinking that they slick,thinking,6,These niggas schemin' thinking that they slick,slick,INNER,ASSONANCE,vowel,MED,Y
+Reason,6,These niggas schemin' thinking that they slick,slick,7,I had to empty out the whole clip,clip,END,SLANT,cmu,MED,Y
+Reason,6,These niggas schemin' thinking that they slick,thinking,7,I had to empty out the whole clip,clip,INNER,ASSONANCE,vowel,MED,Y
+Reason,6,These niggas schemin' thinking that they slick,slick,8,These niggas taking shot but they missing,missing,END,ASSONANCE,vowel,MED,Y
+Reason,6,These niggas schemin' thinking that they slick,niggas,8,These niggas taking shot but they missing,niggas,INNER,REPEAT,spelling,HIGH,N
+Reason,6,These niggas schemin' thinking that they slick,schemin,8,These niggas taking shot but they missing,These,INNER,ASSONANCE,vowel,MED,Y
+Reason,6,These niggas schemin' thinking that they slick,These,8,These niggas taking shot but they missing,These,INNER,REPEAT,spelling,HIGH,N
+Reason,6,These niggas schemin' thinking that they slick,thinking,8,These niggas taking shot but they missing,missing,INNER,ASSONANCE,vowel,MED,Y
+Reason,6,These niggas schemin' thinking that they slick,thinking,8,These niggas taking shot but they missing,taking,INNER,PERFECT,spelling,MED,Y
+Reason,6,These niggas schemin' thinking that they slick,slick,9,I was just dodging the federal prison,prison,END,ASSONANCE,vowel,MED,Y
+Reason,7,I had to empty out the whole clip,clip,8,These niggas taking shot but they missing,missing,END,ASSONANCE,vowel,MED,Y
+Reason,7,I had to empty out the whole clip,clip,9,I was just dodging the federal prison,prison,END,ASSONANCE,vowel,MED,Y
+Reason,7,I had to empty out the whole clip,empty,9,I was just dodging the federal prison,federal,INNER,ASSONANCE,vowel,MED,Y
+Reason,8,These niggas taking shot but they missing,missing,9,I was just dodging the federal prison,prison,END,SLANT,cmu,MED,Y
+Reason,8,These niggas taking shot but they missing,shot,9,I was just dodging the federal prison,dodging,INNER,ASSONANCE,vowel,MED,Y
+Reason,8,These niggas taking shot but they missing,shot,10,I'm outta Colorado with the real,Colorado,INNER,SLANT,cmu,MED,Y
+Reason,8,These niggas taking shot but they missing,These,10,I'm outta Colorado with the real,real,INNER,SLANT,cmu,MED,Y
+Reason,9,I was just dodging the federal prison,dodging,10,I'm outta Colorado with the real,Colorado,INNER,ASSONANCE,vowel,MED,Y
+Reason,9,I was just dodging the federal prison,dodging,11,If you not 100 you won't feel us,not,INNER,ASSONANCE,vowel,MED,Y
+Reason,10,I'm outta Colorado with the real,real,11,If you not 100 you won't feel us,feel,END,PERFECT,cmu,HIGH,Y
+Reason,10,I'm outta Colorado with the real,Colorado,11,If you not 100 you won't feel us,not,INNER,SLANT,cmu,MED,Y
+Reason,10,I'm outta Colorado with the real,Colorado,12,If you not 100 you won't understand,not,INNER,SLANT,cmu,MED,Y
+Reason,11,If you not 100 you won't feel us,not,12,If you not 100 you won't understand,not,INNER,REPEAT,spelling,HIGH,N
+Reason,11,If you not 100 you won't feel us,won't,12,If you not 100 you won't understand,won't,INNER,REPEAT,spelling,HIGH,N
+Reason,12,If you not 100 you won't understand,understand,13,The shit i been through to be the man,man,END,SLANT,cmu,MED,Y
+Reason,13,The shit i been through to be the man,shit,14,Just spent a cool twelve on the kicks,kicks,INNER,ASSONANCE,vowel,MED,Y
+Reason,13,The shit i been through to be the man,through,14,Just spent a cool twelve on the kicks,cool,INNER,ASSONANCE,vowel,MED,Y
+Reason,13,The shit i been through to be the man,shit,15,I used to traffick bells in the whip,whip,INNER,SLANT,cmu,MED,Y
+Reason,13,The shit i been through to be the man,through,15,I used to traffick bells in the whip,used,INNER,ASSONANCE,vowel,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,spent,14,Just spent a cool twelve on the kicks,twelve,INNER,ASSONANCE,vowel,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,kicks,15,I used to traffick bells in the whip,whip,END,ASSONANCE,vowel,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,cool,15,I used to traffick bells in the whip,used,INNER,ASSONANCE,vowel,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,spent,15,I used to traffick bells in the whip,bells,INNER,ASSONANCE,vowel,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,twelve,15,I used to traffick bells in the whip,bells,INNER,SLANT,cmu,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,kicks,16,That's an extra charge {?] in the whip,whip,END,ASSONANCE,vowel,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,spent,16,That's an extra charge {?] in the whip,extra,INNER,ASSONANCE,vowel,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,twelve,16,That's an extra charge {?] in the whip,extra,INNER,ASSONANCE,vowel,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,kicks,17,Marijuana I be mailing the shit,shit,END,ASSONANCE,vowel,MED,Y
+Reason,14,Just spent a cool twelve on the kicks,kicks,18,I got a way we be sailing the shit,shit,END,ASSONANCE,vowel,MED,Y
+Reason,15,I used to traffick bells in the whip,whip,16,That's an extra charge {?] in the whip,whip,END,REPEAT,spelling,HIGH,N
+Reason,15,I used to traffick bells in the whip,bells,16,That's an extra charge {?] in the whip,extra,INNER,ASSONANCE,vowel,MED,Y
+Reason,15,I used to traffick bells in the whip,whip,17,Marijuana I be mailing the shit,shit,END,SLANT,cmu,MED,Y
+Reason,15,I used to traffick bells in the whip,whip,18,I got a way we be sailing the shit,shit,END,SLANT,cmu,MED,Y
+Reason,15,I used to traffick bells in the whip,whip,19,I just be winning {?} in this shit,shit,END,SLANT,cmu,MED,Y
+Reason,16,That's an extra charge {?] in the whip,whip,17,Marijuana I be mailing the shit,shit,END,SLANT,cmu,MED,Y
+Reason,16,That's an extra charge {?] in the whip,charge,17,Marijuana I be mailing the shit,Marijuana,INNER,ASSONANCE,vowel,MED,Y
+Reason,16,That's an extra charge {?] in the whip,whip,18,I got a way we be sailing the shit,shit,END,SLANT,cmu,MED,Y
+Reason,16,That's an extra charge {?] in the whip,charge,18,I got a way we be sailing the shit,got,INNER,ASSONANCE,vowel,MED,Y
+Reason,16,That's an extra charge {?] in the whip,whip,19,I just be winning {?} in this shit,shit,END,SLANT,cmu,MED,Y
+Reason,17,Marijuana I be mailing the shit,shit,18,I got a way we be sailing the shit,shit,END,REPEAT,spelling,HIGH,N
+Reason,17,Marijuana I be mailing the shit,mailing,18,I got a way we be sailing the shit,sailing,INNER,MULTI,multi,HIGH,Y
+Reason,17,Marijuana I be mailing the shit,mailing,18,I got a way we be sailing the shit,way,INNER,ASSONANCE,vowel,MED,Y
+Reason,17,Marijuana I be mailing the shit,Marijuana,18,I got a way we be sailing the shit,got,INNER,SLANT,cmu,MED,Y
+Reason,17,Marijuana I be mailing the shit,Marijuana mailing,18,I got a way we be sailing the shit,way sailing,INNER,MULTI,multi,HIGH,Y
+Reason,17,Marijuana I be mailing the shit,shit,19,I just be winning {?} in this shit,shit,END,REPEAT,spelling,HIGH,N
+Reason,17,Marijuana I be mailing the shit,shit,19,I just be winning {?} in this shit,winning,INNER,ASSONANCE,vowel,MED,Y
+Reason,18,I got a way we be sailing the shit,way,18,I got a way we be sailing the shit,sailing,INNER,ASSONANCE,vowel,MED,Y
+Reason,18,I got a way we be sailing the shit,shit,19,I just be winning {?} in this shit,shit,END,REPEAT,spelling,HIGH,N
+Reason,18,I got a way we be sailing the shit,shit,19,I just be winning {?} in this shit,winning,INNER,ASSONANCE,vowel,MED,Y
+Reason,18,I got a way we be sailing the shit,shit,20,Niggas {?} with subliminal lines,subliminal,INNER,ASSONANCE,vowel,MED,Y
+Reason,19,I just be winning {?} in this shit,winning,19,I just be winning {?} in this shit,shit,INNER,ASSONANCE,vowel,MED,Y
+Reason,19,I just be winning {?} in this shit,shit,20,Niggas {?} with subliminal lines,subliminal,INNER,ASSONANCE,vowel,MED,Y
+Reason,19,I just be winning {?} in this shit,winning,20,Niggas {?} with subliminal lines,subliminal,INNER,ASSONANCE,vowel,MED,Y
+Reason,19,I just be winning {?} in this shit,shit,21,I'ma burn a nigga everytime,I'ma,INNER,SLANT,spelling,LOW,Y
+Reason,19,I just be winning {?} in this shit,shit,21,I'ma burn a nigga everytime,nigga,INNER,SLANT,spelling,LOW,Y
+Reason,19,I just be winning {?} in this shit,winning,21,I'ma burn a nigga everytime,I'ma,INNER,SLANT,spelling,LOW,Y
+Reason,20,Niggas {?} with subliminal lines,Niggas,20,Niggas {?} with subliminal lines,subliminal,INNER,ASSONANCE,vowel,LOW,N
+Reason,20,Niggas {?} with subliminal lines,lines,21,I'ma burn a nigga everytime,everytime,END,ASSONANCE,vowel,MED,Y
+Reason,20,Niggas {?} with subliminal lines,Niggas,21,I'ma burn a nigga everytime,nigga,INNER,SLANT,spelling,LOW,Y
+Reason,20,Niggas {?} with subliminal lines,subliminal,21,I'ma burn a nigga everytime,nigga,INNER,ASSONANCE,vowel,LOW,N
+Reason,20,Niggas {?} with subliminal lines,lines,22,You hear the real nigga in every line,line,END,SLANT,cmu,MED,Y
+Reason,20,Niggas {?} with subliminal lines,Niggas,22,You hear the real nigga in every line,nigga,INNER,SLANT,spelling,LOW,Y
+Reason,20,Niggas {?} with subliminal lines,subliminal,22,You hear the real nigga in every line,nigga,INNER,ASSONANCE,vowel,LOW,N
+Reason,21,I'ma burn a nigga everytime,everytime,22,You hear the real nigga in every line,line,END,SLANT,cmu,MED,Y
+Reason,21,I'ma burn a nigga everytime,nigga,22,You hear the real nigga in every line,nigga,INNER,REPEAT,spelling,HIGH,N
+Reason,22,You hear the real nigga in every line,hear,22,You hear the real nigga in every line,real,INNER,SLANT,cmu,MED,Y
+Reason,22,You hear the real nigga in every line,every,24,You smell the THC on every track,every,INNER,REPEAT,spelling,HIGH,N
+Reason,22,You hear the real nigga in every line,every,24,You smell the THC on every track,smell,INNER,SLANT,cmu,MED,Y
+Reason,24,You smell the THC on every track,smell,24,You smell the THC on every track,every,INNER,SLANT,cmu,MED,Y
+Reason,24,You smell the THC on every track,track,25,They was rappin' we was sellin pack,pack,END,PERFECT,cmu,HIGH,Y
+Reason,24,You smell the THC on every track,every,25,They was rappin' we was sellin pack,sellin,INNER,ASSONANCE,vowel,MED,Y
+Reason,24,You smell the THC on every track,smell,25,They was rappin' we was sellin pack,sellin,INNER,SLANT,cmu,MED,Y
+Reason,24,You smell the THC on every track,track,25,They was rappin' we was sellin pack,rappin,INNER,ASSONANCE,vowel,MED,Y
+Reason,25,They was rappin' we was sellin pack,rappin,25,They was rappin' we was sellin pack,pack,INNER,ASSONANCE,vowel,MED,Y
