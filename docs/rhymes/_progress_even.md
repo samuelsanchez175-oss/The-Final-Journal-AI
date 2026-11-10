@@ -336,6 +336,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 324 | riko | Riko | 1 | 33 | 306 | 25 | 281 | 296 | 2026-11-10 13:26 ET |
 | 325 | tk-kravitz | TK Kravitz | 1 | 33 | 144 | 22 | 122 | 143 | 2026-11-10 13:26 ET |
 | 326 | wizdawizard | WizDaWizard | 1 | 33 | 247 | 39 | 208 | 244 | 2026-11-10 13:26 ET |
+| 327 | big-flock | Big Flock | 1 | 32 | 230 | 34 | 196 | 229 | 2026-11-10 13:26 ET |
+| 328 | central-cee | Central Cee | 1 | 32 | 348 | 35 | 313 | 343 | 2026-11-10 13:26 ET |
+| 329 | christhecooker | ChrisTheCooker | 1 | 32 | 82 | 17 | 65 | 82 | 2026-11-10 13:26 ET |
+| 330 | lil-nizzy | Lil Nizzy | 1 | 32 | 275 | 38 | 237 | 274 | 2026-11-10 13:26 ET |
+| 331 | arin-ray | Arin Ray | 1 | 31 | 112 | 15 | 97 | 109 | 2026-11-10 13:26 ET |
+| 332 | derez-deshon | Derez De’Shon | 1 | 31 | 269 | 33 | 236 | 266 | 2026-11-10 13:26 ET |
+| 333 | kaiba | KAIBA | 1 | 31 | 131 | 38 | 93 | 112 | 2026-11-10 13:26 ET |
+| 334 | real-recognize-rio | Real Recognize Rio | 1 | 31 | 245 | 42 | 203 | 238 | 2026-11-10 13:26 ET |
+| 335 | that-mexican-ot | That Mexican OT | 1 | 31 | 257 | 32 | 225 | 257 | 2026-11-10 13:26 ET |
+| 336 | d-flores | D.Flores | 1 | 30 | 230 | 65 | 165 | 216 | 2026-11-10 13:26 ET |
 
 ## Failures
 
@@ -343,7 +353,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 326/386: WizDaWizard.
+Finished 336/386: D.Flores.
 
 ## Final
 

@@ -1,0 +1,319 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Block Star,1,"Ayy, I been livin' like a, ayy",like,2,Livin' like a rockstar,like,INNER,REPEAT,spelling,HIGH,N
+Block Star,1,"Ayy, I been livin' like a, ayy",livin,2,Livin' like a rockstar,Livin,INNER,REPEAT,spelling,HIGH,N
+Block Star,1,"Ayy, I been livin' like a, ayy",like,3,"Livin' like a rockstar, you a pop star, yeah",like,INNER,REPEAT,spelling,HIGH,N
+Block Star,1,"Ayy, I been livin' like a, ayy",livin,3,"Livin' like a rockstar, you a pop star, yeah",Livin,INNER,REPEAT,spelling,HIGH,N
+Block Star,2,Livin' like a rockstar,rockstar,3,"Livin' like a rockstar, you a pop star, yeah",star,END,PERFECT,cmu,HIGH,Y
+Block Star,2,Livin' like a rockstar,like,3,"Livin' like a rockstar, you a pop star, yeah",like,INNER,REPEAT,spelling,HIGH,N
+Block Star,2,Livin' like a rockstar,Livin,3,"Livin' like a rockstar, you a pop star, yeah",Livin,INNER,REPEAT,spelling,HIGH,N
+Block Star,2,Livin' like a rockstar,rockstar,3,"Livin' like a rockstar, you a pop star, yeah",pop,INNER,SLANT,cmu,MED,Y
+Block Star,2,Livin' like a rockstar,rockstar,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,INNER,REPEAT,spelling,HIGH,N
+Block Star,2,Livin' like a rockstar,rockstar,4,"I'm a block star, skrrt on cop cars, yeah",cars,END,SLANT,cmu,MED,Y
+Block Star,2,Livin' like a rockstar,like rockstar,4,"I'm a block star, skrrt on cop cars, yeah",block star,INNER,MULTI,multi,HIGH,Y
+Block Star,2,Livin' like a rockstar,rockstar,4,"I'm a block star, skrrt on cop cars, yeah",block,INNER,SLANT,cmu,MED,Y
+Block Star,2,Livin' like a rockstar,rockstar,4,"I'm a block star, skrrt on cop cars, yeah",cop,INNER,SLANT,cmu,MED,Y
+Block Star,2,Livin' like a rockstar,rockstar,4,"I'm a block star, skrrt on cop cars, yeah",star,INNER,PERFECT,cmu,HIGH,Y
+Block Star,2,Livin' like a rockstar,rockstar,5,"I'm a rockstar, you a pop star, yeah",star,END,PERFECT,cmu,HIGH,Y
+Block Star,2,Livin' like a rockstar,rockstar,6,"You a pop star, said you is not hard",hard,END,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",pop,3,"Livin' like a rockstar, you a pop star, yeah",star,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,3,"Livin' like a rockstar, you a pop star, yeah",pop,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,3,"Livin' like a rockstar, you a pop star, yeah",star,INNER,PERFECT,cmu,HIGH,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",star,4,"I'm a block star, skrrt on cop cars, yeah",cars,END,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",like rockstar,4,"I'm a block star, skrrt on cop cars, yeah",block star,INNER,MULTI,multi,HIGH,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",pop,4,"I'm a block star, skrrt on cop cars, yeah",block,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",pop,4,"I'm a block star, skrrt on cop cars, yeah",cars,INNER,ASSONANCE,vowel,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",pop,4,"I'm a block star, skrrt on cop cars, yeah",cop,INNER,PERFECT,cmu,HIGH,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",pop,4,"I'm a block star, skrrt on cop cars, yeah",star,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,4,"I'm a block star, skrrt on cop cars, yeah",block,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,4,"I'm a block star, skrrt on cop cars, yeah",cars,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,4,"I'm a block star, skrrt on cop cars, yeah",cop,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,4,"I'm a block star, skrrt on cop cars, yeah",star,INNER,PERFECT,cmu,HIGH,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",star,4,"I'm a block star, skrrt on cop cars, yeah",block,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",star,4,"I'm a block star, skrrt on cop cars, yeah",cop,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",star,4,"I'm a block star, skrrt on cop cars, yeah",star,INNER,REPEAT,spelling,HIGH,N
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",star,5,"I'm a rockstar, you a pop star, yeah",star,END,REPEAT,spelling,HIGH,N
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",pop,5,"I'm a rockstar, you a pop star, yeah",pop,INNER,REPEAT,spelling,HIGH,N
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",pop,5,"I'm a rockstar, you a pop star, yeah",rockstar,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",pop,5,"I'm a rockstar, you a pop star, yeah",star,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,5,"I'm a rockstar, you a pop star, yeah",pop,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,5,"I'm a rockstar, you a pop star, yeah",rockstar,INNER,REPEAT,spelling,HIGH,N
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",rockstar,5,"I'm a rockstar, you a pop star, yeah",star,INNER,PERFECT,cmu,HIGH,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",star,5,"I'm a rockstar, you a pop star, yeah",pop,INNER,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",star,5,"I'm a rockstar, you a pop star, yeah",rockstar,INNER,PERFECT,cmu,HIGH,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",star,6,"You a pop star, said you is not hard",hard,END,SLANT,cmu,MED,Y
+Block Star,3,"Livin' like a rockstar, you a pop star, yeah",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,END,PERFECT,cmu,HIGH,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,4,"I'm a block star, skrrt on cop cars, yeah",cars,INNER,ASSONANCE,vowel,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,4,"I'm a block star, skrrt on cop cars, yeah",cop,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,4,"I'm a block star, skrrt on cop cars, yeah",star,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cop,4,"I'm a block star, skrrt on cop cars, yeah",cars,INNER,ASSONANCE,vowel,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",star,4,"I'm a block star, skrrt on cop cars, yeah",cars,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",star,4,"I'm a block star, skrrt on cop cars, yeah",cop,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cars,5,"I'm a rockstar, you a pop star, yeah",star,END,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,5,"I'm a rockstar, you a pop star, yeah",pop,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,5,"I'm a rockstar, you a pop star, yeah",rockstar,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,5,"I'm a rockstar, you a pop star, yeah",star,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cars,5,"I'm a rockstar, you a pop star, yeah",pop,INNER,ASSONANCE,vowel,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cars,5,"I'm a rockstar, you a pop star, yeah",rockstar,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cop,5,"I'm a rockstar, you a pop star, yeah",pop,INNER,PERFECT,cmu,HIGH,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cop,5,"I'm a rockstar, you a pop star, yeah",rockstar,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cop,5,"I'm a rockstar, you a pop star, yeah",star,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",star,5,"I'm a rockstar, you a pop star, yeah",pop,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",star,5,"I'm a rockstar, you a pop star, yeah",rockstar,INNER,PERFECT,cmu,HIGH,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",star,5,"I'm a rockstar, you a pop star, yeah",star,INNER,REPEAT,spelling,HIGH,N
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cars,6,"You a pop star, said you is not hard",hard,END,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,6,"You a pop star, said you is not hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,6,"You a pop star, said you is not hard",not,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,6,"You a pop star, said you is not hard",pop,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",block,6,"You a pop star, said you is not hard",star,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cars,6,"You a pop star, said you is not hard",not,INNER,ASSONANCE,vowel,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cars,6,"You a pop star, said you is not hard",pop,INNER,ASSONANCE,vowel,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cars,6,"You a pop star, said you is not hard",star,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cop,6,"You a pop star, said you is not hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cop,6,"You a pop star, said you is not hard",not,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cop,6,"You a pop star, said you is not hard",pop,INNER,PERFECT,cmu,HIGH,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cop,6,"You a pop star, said you is not hard",star,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",star,6,"You a pop star, said you is not hard",hard,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",star,6,"You a pop star, said you is not hard",not,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",star,6,"You a pop star, said you is not hard",pop,INNER,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",star,6,"You a pop star, said you is not hard",star,INNER,REPEAT,spelling,HIGH,N
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cars,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,END,SLANT,cmu,MED,Y
+Block Star,4,"I'm a block star, skrrt on cop cars, yeah",cars,8,"You a Poptart, knock your top off",top,END,ASSONANCE,vowel,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",pop,5,"I'm a rockstar, you a pop star, yeah",star,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,5,"I'm a rockstar, you a pop star, yeah",pop,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,5,"I'm a rockstar, you a pop star, yeah",star,INNER,PERFECT,cmu,HIGH,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,6,"You a pop star, said you is not hard",hard,END,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",pop,6,"You a pop star, said you is not hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",pop,6,"You a pop star, said you is not hard",not,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",pop,6,"You a pop star, said you is not hard",pop,INNER,REPEAT,spelling,HIGH,N
+Block Star,5,"I'm a rockstar, you a pop star, yeah",pop,6,"You a pop star, said you is not hard",star,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,6,"You a pop star, said you is not hard",hard,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,6,"You a pop star, said you is not hard",not,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,6,"You a pop star, said you is not hard",pop,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,6,"You a pop star, said you is not hard",star,INNER,PERFECT,cmu,HIGH,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,6,"You a pop star, said you is not hard",not,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,6,"You a pop star, said you is not hard",pop,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,6,"You a pop star, said you is not hard",star,INNER,REPEAT,spelling,HIGH,N
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,END,PERFECT,cmu,HIGH,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",pop,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",pop,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",pop,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,INNER,PERFECT,cmu,HIGH,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",pop,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,INNER,PERFECT,cmu,HIGH,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",rockstar,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,INNER,PERFECT,cmu,HIGH,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,INNER,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,INNER,REPEAT,spelling,HIGH,N
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,8,"You a Poptart, knock your top off",top,END,SLANT,cmu,MED,Y
+Block Star,5,"I'm a rockstar, you a pop star, yeah",star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",pop,END,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",not,6,"You a pop star, said you is not hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Block Star,6,"You a pop star, said you is not hard",pop,6,"You a pop star, said you is not hard",hard,INNER,ASSONANCE,vowel,MED,Y
+Block Star,6,"You a pop star, said you is not hard",pop,6,"You a pop star, said you is not hard",not,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",pop,6,"You a pop star, said you is not hard",star,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",star,6,"You a pop star, said you is not hard",hard,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",star,6,"You a pop star, said you is not hard",not,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",hard,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,END,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",hard,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,INNER,ASSONANCE,vowel,MED,Y
+Block Star,6,"You a pop star, said you is not hard",hard,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,INNER,ASSONANCE,vowel,MED,Y
+Block Star,6,"You a pop star, said you is not hard",hard,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",not,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",not,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",not,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",not,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",pop,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",pop,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",pop,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,INNER,PERFECT,cmu,HIGH,Y
+Block Star,6,"You a pop star, said you is not hard",pop,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,INNER,PERFECT,cmu,HIGH,Y
+Block Star,6,"You a pop star, said you is not hard",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,INNER,REPEAT,spelling,HIGH,N
+Block Star,6,"You a pop star, said you is not hard",hard,8,"You a Poptart, knock your top off",top,END,ASSONANCE,vowel,MED,Y
+Block Star,6,"You a pop star, said you is not hard",hard,8,"You a Poptart, knock your top off",knock,INNER,ASSONANCE,vowel,MED,Y
+Block Star,6,"You a pop star, said you is not hard",not,8,"You a Poptart, knock your top off",knock,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",not,8,"You a Poptart, knock your top off",top,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",pop,8,"You a Poptart, knock your top off",knock,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",pop,8,"You a Poptart, knock your top off",top,INNER,PERFECT,cmu,HIGH,Y
+Block Star,6,"You a pop star, said you is not hard",star,8,"You a Poptart, knock your top off",knock,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",star,8,"You a Poptart, knock your top off",top,INNER,SLANT,cmu,MED,Y
+Block Star,6,"You a pop star, said you is not hard",hard,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",pop,END,ASSONANCE,vowel,MED,Y
+Block Star,6,"You a pop star, said you is not hard",hard,10,"We drummin', for whoever who want it",want,END,ASSONANCE,vowel,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,INNER,PERFECT,cmu,HIGH,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,8,"You a Poptart, knock your top off",top,END,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,8,"You a Poptart, knock your top off",knock,INNER,PERFECT,cmu,HIGH,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,8,"You a Poptart, knock your top off",top,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,8,"You a Poptart, knock your top off",knock,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,8,"You a Poptart, knock your top off",knock,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,8,"You a Poptart, knock your top off",top,INNER,PERFECT,cmu,HIGH,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,8,"You a Poptart, knock your top off",knock,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,8,"You a Poptart, knock your top off",top,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",pop,END,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",block,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",pop,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",Nigga,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",nigga,INNER,REPEAT,spelling,HIGH,N
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",Nigga,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",shit,INNER,SLANT,spelling,LOW,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",opp,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",pop,INNER,PERFECT,cmu,HIGH,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",pop,INNER,SLANT,cmu,MED,Y
+Block Star,7,"Nigga I'm a block star, aimin' at the opp car, uh",car,10,"We drummin', for whoever who want it",want,END,ASSONANCE,vowel,MED,Y
+Block Star,8,"You a Poptart, knock your top off",knock,8,"You a Poptart, knock your top off",top,INNER,SLANT,cmu,MED,Y
+Block Star,8,"You a Poptart, knock your top off",top,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",pop,END,PERFECT,cmu,HIGH,Y
+Block Star,8,"You a Poptart, knock your top off",knock,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",pop,INNER,SLANT,cmu,MED,Y
+Block Star,8,"You a Poptart, knock your top off",top,10,"We drummin', for whoever who want it",want,END,ASSONANCE,vowel,MED,Y
+Block Star,8,"You a Poptart, knock your top off",knock,10,"We drummin', for whoever who want it",want,INNER,ASSONANCE,vowel,MED,Y
+Block Star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",shit,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",lil,INNER,SLANT,cmu,MED,Y
+Block Star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",shit,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",nigga,INNER,SLANT,spelling,LOW,Y
+Block Star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",pop,10,"We drummin', for whoever who want it",want,END,ASSONANCE,vowel,MED,Y
+Block Star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",dumb,10,"We drummin', for whoever who want it",drummin,INNER,SLANT,cmu,MED,Y
+Block Star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",dumb,11,"Niggas know how we comin, bitches know how we bomin', uh",bomin,INNER,ASSONANCE,vowel,MED,Y
+Block Star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",dumb,11,"Niggas know how we comin, bitches know how we bomin', uh",comin,INNER,SLANT,cmu,MED,Y
+Block Star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",lil,11,"Niggas know how we comin, bitches know how we bomin', uh",bitches,INNER,ASSONANCE,vowel,MED,Y
+Block Star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",nigga,11,"Niggas know how we comin, bitches know how we bomin', uh",Niggas,INNER,SLANT,spelling,LOW,Y
+Block Star,9,"We with all the dumb shit, lil nigga pop off, yeah yeah, uh",shit,11,"Niggas know how we comin, bitches know how we bomin', uh",bitches,INNER,ASSONANCE,vowel,MED,Y
+Block Star,10,"We drummin', for whoever who want it",drummin,11,"Niggas know how we comin, bitches know how we bomin', uh",bomin,INNER,ASSONANCE,vowel,MED,Y
+Block Star,10,"We drummin', for whoever who want it",drummin,11,"Niggas know how we comin, bitches know how we bomin', uh",comin,INNER,MULTI,multi,HIGH,Y
+Block Star,10,"We drummin', for whoever who want it",want,12,My niggas got smoke you niggas can't inhale boy,can't,INNER,SLANT,spelling,LOW,Y
+Block Star,10,"We drummin', for whoever who want it",want,12,My niggas got smoke you niggas can't inhale boy,got,INNER,SLANT,cmu,MED,Y
+Block Star,11,"Niggas know how we comin, bitches know how we bomin', uh",comin,11,"Niggas know how we comin, bitches know how we bomin', uh",bomin,INNER,ASSONANCE,vowel,MED,Y
+Block Star,11,"Niggas know how we comin, bitches know how we bomin', uh",how,11,"Niggas know how we comin, bitches know how we bomin', uh",how,INNER,REPEAT,spelling,HIGH,N
+Block Star,11,"Niggas know how we comin, bitches know how we bomin', uh",know,11,"Niggas know how we comin, bitches know how we bomin', uh",know,INNER,REPEAT,spelling,HIGH,N
+Block Star,11,"Niggas know how we comin, bitches know how we bomin', uh",know,12,My niggas got smoke you niggas can't inhale boy,smoke,INNER,ASSONANCE,vowel,MED,Y
+Block Star,11,"Niggas know how we comin, bitches know how we bomin', uh",Niggas,12,My niggas got smoke you niggas can't inhale boy,niggas,INNER,REPEAT,spelling,HIGH,N
+Block Star,11,"Niggas know how we comin, bitches know how we bomin', uh",Niggas,13,"Pop them stars at a boy, leave a nigga pale boy",nigga,INNER,SLANT,spelling,LOW,Y
+Block Star,12,My niggas got smoke you niggas can't inhale boy,niggas,12,My niggas got smoke you niggas can't inhale boy,niggas,INNER,REPEAT,spelling,HIGH,N
+Block Star,12,My niggas got smoke you niggas can't inhale boy,boy,13,"Pop them stars at a boy, leave a nigga pale boy",boy,END,REPEAT,spelling,HIGH,N
+Block Star,12,My niggas got smoke you niggas can't inhale boy,boy,13,"Pop them stars at a boy, leave a nigga pale boy",boy,INNER,REPEAT,spelling,HIGH,N
+Block Star,12,My niggas got smoke you niggas can't inhale boy,got,13,"Pop them stars at a boy, leave a nigga pale boy",Pop,INNER,SLANT,cmu,MED,Y
+Block Star,12,My niggas got smoke you niggas can't inhale boy,got,13,"Pop them stars at a boy, leave a nigga pale boy",stars,INNER,ASSONANCE,vowel,MED,Y
+Block Star,12,My niggas got smoke you niggas can't inhale boy,inhale,13,"Pop them stars at a boy, leave a nigga pale boy",pale,INNER,PERFECT,cmu,HIGH,Y
+Block Star,12,My niggas got smoke you niggas can't inhale boy,niggas,13,"Pop them stars at a boy, leave a nigga pale boy",nigga,INNER,SLANT,spelling,LOW,Y
+Block Star,12,My niggas got smoke you niggas can't inhale boy,boy,14,"Made a fire with my niggas, I won't ever tell boy",boy,END,REPEAT,spelling,HIGH,N
+Block Star,12,My niggas got smoke you niggas can't inhale boy,inhale,14,"Made a fire with my niggas, I won't ever tell boy",Made,INNER,SLANT,cmu,MED,Y
+Block Star,12,My niggas got smoke you niggas can't inhale boy,niggas,14,"Made a fire with my niggas, I won't ever tell boy",niggas,INNER,REPEAT,spelling,HIGH,N
+Block Star,12,My niggas got smoke you niggas can't inhale boy,smoke,14,"Made a fire with my niggas, I won't ever tell boy",won't,INNER,ASSONANCE,vowel,MED,Y
+Block Star,12,My niggas got smoke you niggas can't inhale boy,boy,15,"If he tellin' on a nigga, better wish him well boy, yeah",boy,END,REPEAT,spelling,HIGH,N
+Block Star,13,"Pop them stars at a boy, leave a nigga pale boy",boy,13,"Pop them stars at a boy, leave a nigga pale boy",boy,INNER,REPEAT,spelling,HIGH,N
+Block Star,13,"Pop them stars at a boy, leave a nigga pale boy",Pop,13,"Pop them stars at a boy, leave a nigga pale boy",stars,INNER,ASSONANCE,vowel,MED,Y
+Block Star,13,"Pop them stars at a boy, leave a nigga pale boy",boy,14,"Made a fire with my niggas, I won't ever tell boy",boy,END,REPEAT,spelling,HIGH,N
+Block Star,13,"Pop them stars at a boy, leave a nigga pale boy",boy,14,"Made a fire with my niggas, I won't ever tell boy",boy,INNER,REPEAT,spelling,HIGH,N
+Block Star,13,"Pop them stars at a boy, leave a nigga pale boy",nigga,14,"Made a fire with my niggas, I won't ever tell boy",niggas,INNER,SLANT,spelling,LOW,Y
+Block Star,13,"Pop them stars at a boy, leave a nigga pale boy",pale,14,"Made a fire with my niggas, I won't ever tell boy",Made,INNER,SLANT,cmu,MED,Y
+Block Star,13,"Pop them stars at a boy, leave a nigga pale boy",boy,15,"If he tellin' on a nigga, better wish him well boy, yeah",boy,END,REPEAT,spelling,HIGH,N
+Block Star,13,"Pop them stars at a boy, leave a nigga pale boy",boy,15,"If he tellin' on a nigga, better wish him well boy, yeah",boy,INNER,REPEAT,spelling,HIGH,N
+Block Star,13,"Pop them stars at a boy, leave a nigga pale boy",nigga,15,"If he tellin' on a nigga, better wish him well boy, yeah",nigga,INNER,REPEAT,spelling,HIGH,N
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",ever,14,"Made a fire with my niggas, I won't ever tell boy",tell,INNER,SLANT,cmu,MED,Y
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",boy,15,"If he tellin' on a nigga, better wish him well boy, yeah",boy,END,REPEAT,spelling,HIGH,N
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",ever,15,"If he tellin' on a nigga, better wish him well boy, yeah",better,INNER,SLANT,cmu,MED,Y
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",ever,15,"If he tellin' on a nigga, better wish him well boy, yeah",tellin,INNER,ASSONANCE,vowel,MED,Y
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",ever,15,"If he tellin' on a nigga, better wish him well boy, yeah",well,INNER,SLANT,cmu,MED,Y
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",niggas,15,"If he tellin' on a nigga, better wish him well boy, yeah",nigga,INNER,SLANT,spelling,LOW,Y
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",tell,15,"If he tellin' on a nigga, better wish him well boy, yeah",better,INNER,SLANT,cmu,MED,Y
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",tell,15,"If he tellin' on a nigga, better wish him well boy, yeah",tellin,INNER,SLANT,cmu,MED,Y
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",tell,15,"If he tellin' on a nigga, better wish him well boy, yeah",well,INNER,PERFECT,cmu,HIGH,Y
+Block Star,14,"Made a fire with my niggas, I won't ever tell boy",Made,16,"My seat way way up, my feet way way up",way,INNER,ASSONANCE,vowel,MED,Y
+Block Star,15,"If he tellin' on a nigga, better wish him well boy, yeah",better,15,"If he tellin' on a nigga, better wish him well boy, yeah",well,INNER,SLANT,cmu,MED,Y
+Block Star,15,"If he tellin' on a nigga, better wish him well boy, yeah",tellin,15,"If he tellin' on a nigga, better wish him well boy, yeah",better,INNER,ASSONANCE,vowel,MED,Y
+Block Star,15,"If he tellin' on a nigga, better wish him well boy, yeah",tellin,15,"If he tellin' on a nigga, better wish him well boy, yeah",well,INNER,SLANT,cmu,MED,Y
+Block Star,15,"If he tellin' on a nigga, better wish him well boy, yeah",wish,15,"If he tellin' on a nigga, better wish him well boy, yeah",him,INNER,SLANT,cmu,MED,Y
+Block Star,15,"If he tellin' on a nigga, better wish him well boy, yeah",nigga,17,"Niggas always showin' they gun, I can't show no fucks",Niggas,INNER,SLANT,spelling,LOW,Y
+Block Star,16,"My seat way way up, my feet way way up",seat,16,"My seat way way up, my feet way way up",feet,INNER,PERFECT,cmu,HIGH,Y
+Block Star,16,"My seat way way up, my feet way way up",way,16,"My seat way way up, my feet way way up",way,INNER,REPEAT,spelling,HIGH,N
+Block Star,16,"My seat way way up, my feet way way up",way,17,"Niggas always showin' they gun, I can't show no fucks",always,INNER,ASSONANCE,vowel,MED,Y
+Block Star,16,"My seat way way up, my feet way way up",way,18,Pour some liquor out and some champagne,champagne,END,ASSONANCE,vowel,MED,Y
+Block Star,16,"My seat way way up, my feet way way up",way,18,Pour some liquor out and some champagne,champagne,INNER,ASSONANCE,vowel,MED,Y
+Block Star,16,"My seat way way up, my feet way way up",way,19,"Ain't too many gon' feel my damn pain, yeah",pain,END,ASSONANCE,vowel,MED,Y
+Block Star,16,"My seat way way up, my feet way way up",way,20,"Bought that Rari so I could campaign, uh",campaign,END,ASSONANCE,vowel,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",gun,17,"Niggas always showin' they gun, I can't show no fucks",fucks,INNER,ASSONANCE,vowel,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",show,17,"Niggas always showin' they gun, I can't show no fucks",no,INNER,PERFECT,cmu,HIGH,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",showin,17,"Niggas always showin' they gun, I can't show no fucks",no,INNER,ASSONANCE,vowel,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",showin,17,"Niggas always showin' they gun, I can't show no fucks",show,INNER,ASSONANCE,vowel,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",always,18,Pour some liquor out and some champagne,champagne,INNER,SLANT,cmu,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",fucks,18,Pour some liquor out and some champagne,some,INNER,ASSONANCE,vowel,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",gun,18,Pour some liquor out and some champagne,some,INNER,SLANT,cmu,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",always,19,"Ain't too many gon' feel my damn pain, yeah",Ain't,INNER,ASSONANCE,vowel,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",always,19,"Ain't too many gon' feel my damn pain, yeah",pain,INNER,SLANT,cmu,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",can't,19,"Ain't too many gon' feel my damn pain, yeah",damn,INNER,ASSONANCE,vowel,MED,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",showin,19,"Ain't too many gon' feel my damn pain, yeah",gon,INNER,SLANT,spelling,LOW,Y
+Block Star,17,"Niggas always showin' they gun, I can't show no fucks",fucks,21,"Whole lot of money on me, yeah",money,END,ASSONANCE,vowel,MED,Y
+Block Star,18,Pour some liquor out and some champagne,some,18,Pour some liquor out and some champagne,some,INNER,REPEAT,spelling,HIGH,N
+Block Star,18,Pour some liquor out and some champagne,some champagne,19,"Ain't too many gon' feel my damn pain, yeah",damn pain,END,MULTI,multi,HIGH,Y
+Block Star,18,Pour some liquor out and some champagne,champagne,19,"Ain't too many gon' feel my damn pain, yeah",Ain't,INNER,SLANT,cmu,MED,Y
+Block Star,18,Pour some liquor out and some champagne,champagne,20,"Bought that Rari so I could campaign, uh",campaign,END,MULTI,multi,HIGH,Y
+Block Star,19,"Ain't too many gon' feel my damn pain, yeah",Ain't,19,"Ain't too many gon' feel my damn pain, yeah",pain,INNER,SLANT,cmu,MED,Y
+Block Star,19,"Ain't too many gon' feel my damn pain, yeah",damn pain,20,"Bought that Rari so I could campaign, uh",could campaign,END,MULTI,multi,HIGH,Y
+Block Star,19,"Ain't too many gon' feel my damn pain, yeah",Ain't,20,"Bought that Rari so I could campaign, uh",campaign,INNER,SLANT,cmu,MED,Y
+Block Star,19,"Ain't too many gon' feel my damn pain, yeah",damn,20,"Bought that Rari so I could campaign, uh",Rari,INNER,SLANT,spelling,LOW,Y
+Block Star,19,"Ain't too many gon' feel my damn pain, yeah",gon,21,"Whole lot of money on me, yeah",Whole,INNER,SLANT,spelling,LOW,Y
+Block Star,20,"Bought that Rari so I could campaign, uh",Bought,21,"Whole lot of money on me, yeah",lot,INNER,PERFECT,cmu,HIGH,Y
+Block Star,20,"Bought that Rari so I could campaign, uh",Bought,22,"Ayy the top is lonely, huh",top,INNER,SLANT,cmu,MED,Y
+Block Star,21,"Whole lot of money on me, yeah",lot,22,"Ayy the top is lonely, huh",top,INNER,SLANT,cmu,MED,Y
+Block Star,21,"Whole lot of money on me, yeah",Whole,22,"Ayy the top is lonely, huh",lonely,INNER,SLANT,cmu,MED,Y
+Block Star,21,"Whole lot of money on me, yeah",lot,23,"All this water I put on, or how she ain't gon' want me, yeah",want,INNER,SLANT,cmu,MED,Y
+Block Star,21,"Whole lot of money on me, yeah",Whole,23,"All this water I put on, or how she ain't gon' want me, yeah",gon,INNER,SLANT,spelling,LOW,Y
+Block Star,22,"Ayy the top is lonely, huh",lonely,23,"All this water I put on, or how she ain't gon' want me, yeah",gon,INNER,SLANT,spelling,LOW,Y
+Block Star,22,"Ayy the top is lonely, huh",top,23,"All this water I put on, or how she ain't gon' want me, yeah",want,INNER,ASSONANCE,vowel,MED,Y
+Block Star,23,"All this water I put on, or how she ain't gon' want me, yeah",All,23,"All this water I put on, or how she ain't gon' want me, yeah",water,INNER,SLANT,cmu,MED,Y
+Block Star,23,"All this water I put on, or how she ain't gon' want me, yeah",All,24,"I'm a stunner like Steve Austin, huh, yeah",Austin,INNER,ASSONANCE,vowel,MED,Y
+Block Star,23,"All this water I put on, or how she ain't gon' want me, yeah",water,24,"I'm a stunner like Steve Austin, huh, yeah",Austin,INNER,ASSONANCE,vowel,MED,Y
+Block Star,23,"All this water I put on, or how she ain't gon' want me, yeah",want,25,"I get that a lot lil bruh, yeah",lot,INNER,SLANT,cmu,MED,Y
+Block Star,23,"All this water I put on, or how she ain't gon' want me, yeah",want,27,"I'm a fuckin' boss, yeah",boss,END,ASSONANCE,vowel,MED,Y
+Block Star,24,"I'm a stunner like Steve Austin, huh, yeah",Austin,26,"I Givenchy all my stuff, yeah",all,INNER,ASSONANCE,vowel,MED,Y
+Block Star,24,"I'm a stunner like Steve Austin, huh, yeah",Steve,26,"I Givenchy all my stuff, yeah",stuff,INNER,SLANT,spelling,LOW,Y
+Block Star,24,"I'm a stunner like Steve Austin, huh, yeah",stunner,26,"I Givenchy all my stuff, yeah",stuff,INNER,SLANT,cmu,MED,Y
+Block Star,25,"I get that a lot lil bruh, yeah",get,26,"I Givenchy all my stuff, yeah",Givenchy,INNER,ASSONANCE,vowel,MED,Y
+Block Star,25,"I get that a lot lil bruh, yeah",lot,27,"I'm a fuckin' boss, yeah",boss,INNER,SLANT,cmu,MED,Y
+Block Star,25,"I get that a lot lil bruh, yeah",bruh,29,Rock what they can't rock bruh,bruh,END,REPEAT,spelling,HIGH,N
+Block Star,26,"I Givenchy all my stuff, yeah",stuff,27,"I'm a fuckin' boss, yeah",fuckin,INNER,ASSONANCE,vowel,MED,Y
+Block Star,26,"I Givenchy all my stuff, yeah",stuff,28,"I'm a block boy, I probably done fucked her",fucked,END,ASSONANCE,vowel,MED,Y
+Block Star,26,"I Givenchy all my stuff, yeah",stuff,28,"I'm a block boy, I probably done fucked her",done,INNER,SLANT,cmu,MED,Y
+Block Star,26,"I Givenchy all my stuff, yeah",stuff,29,Rock what they can't rock bruh,bruh,END,SLANT,spelling,LOW,Y
+Block Star,27,"I'm a fuckin' boss, yeah",boss,28,"I'm a block boy, I probably done fucked her",block,INNER,SLANT,cmu,MED,Y
+Block Star,27,"I'm a fuckin' boss, yeah",fuckin,28,"I'm a block boy, I probably done fucked her",done,INNER,SLANT,cmu,MED,Y
+Block Star,27,"I'm a fuckin' boss, yeah",fuckin,28,"I'm a block boy, I probably done fucked her",fucked,INNER,SLANT,cmu,MED,Y
+Block Star,27,"I'm a fuckin' boss, yeah",boss,29,Rock what they can't rock bruh,Rock,INNER,SLANT,cmu,MED,Y
+Block Star,27,"I'm a fuckin' boss, yeah",fuckin,29,Rock what they can't rock bruh,what,INNER,ASSONANCE,vowel,MED,Y
+Block Star,27,"I'm a fuckin' boss, yeah",boss,30,All of us some rap stars,stars,END,ASSONANCE,vowel,MED,Y
+Block Star,28,"I'm a block boy, I probably done fucked her",done,28,"I'm a block boy, I probably done fucked her",fucked,INNER,ASSONANCE,vowel,MED,Y
+Block Star,28,"I'm a block boy, I probably done fucked her",block,29,Rock what they can't rock bruh,Rock,INNER,PERFECT,cmu,HIGH,Y
+Block Star,28,"I'm a block boy, I probably done fucked her",done,29,Rock what they can't rock bruh,bruh,INNER,SLANT,spelling,LOW,Y
+Block Star,28,"I'm a block boy, I probably done fucked her",done,29,Rock what they can't rock bruh,what,INNER,SLANT,cmu,MED,Y
+Block Star,28,"I'm a block boy, I probably done fucked her",fucked,29,Rock what they can't rock bruh,what,INNER,SLANT,cmu,MED,Y
+Block Star,28,"I'm a block boy, I probably done fucked her",block,30,All of us some rap stars,stars,INNER,ASSONANCE,vowel,MED,Y
+Block Star,28,"I'm a block boy, I probably done fucked her",done,30,All of us some rap stars,some,INNER,SLANT,cmu,MED,Y
+Block Star,28,"I'm a block boy, I probably done fucked her",fucked,30,All of us some rap stars,some,INNER,ASSONANCE,vowel,MED,Y
+Block Star,28,"I'm a block boy, I probably done fucked her",fucked,32,"I'm really a hot boy, you know I done shot some', hey, uhh",some,END,ASSONANCE,vowel,MED,Y
+Block Star,29,Rock what they can't rock bruh,Rock,29,Rock what they can't rock bruh,rock,INNER,REPEAT,spelling,HIGH,N
+Block Star,29,Rock what they can't rock bruh,what,29,Rock what they can't rock bruh,bruh,INNER,SLANT,spelling,LOW,Y
+Block Star,29,Rock what they can't rock bruh,bruh,30,All of us some rap stars,some,INNER,SLANT,spelling,LOW,Y
+Block Star,29,Rock what they can't rock bruh,can't,30,All of us some rap stars,rap,INNER,ASSONANCE,vowel,MED,Y
+Block Star,29,Rock what they can't rock bruh,Rock,30,All of us some rap stars,stars,INNER,ASSONANCE,vowel,MED,Y
+Block Star,29,Rock what they can't rock bruh,what,30,All of us some rap stars,some,INNER,SLANT,cmu,MED,Y
+Block Star,29,Rock what they can't rock bruh,bruh,31,"We don't wear no rap stuff, we really some rastas",some,INNER,SLANT,spelling,LOW,Y
+Block Star,29,Rock what they can't rock bruh,bruh,31,"We don't wear no rap stuff, we really some rastas",stuff,INNER,SLANT,spelling,LOW,Y
+Block Star,29,Rock what they can't rock bruh,can't,31,"We don't wear no rap stuff, we really some rastas",rap,INNER,ASSONANCE,vowel,MED,Y
+Block Star,29,Rock what they can't rock bruh,can't,31,"We don't wear no rap stuff, we really some rastas",rastas,INNER,ASSONANCE,vowel,LOW,N
+Block Star,29,Rock what they can't rock bruh,what,31,"We don't wear no rap stuff, we really some rastas",some,INNER,SLANT,cmu,MED,Y
+Block Star,29,Rock what they can't rock bruh,what,31,"We don't wear no rap stuff, we really some rastas",stuff,INNER,SLANT,cmu,MED,Y
+Block Star,29,Rock what they can't rock bruh,bruh,32,"I'm really a hot boy, you know I done shot some', hey, uhh",some,END,SLANT,spelling,LOW,Y
+Block Star,30,All of us some rap stars,rap,31,"We don't wear no rap stuff, we really some rastas",rap,INNER,REPEAT,spelling,HIGH,N
+Block Star,30,All of us some rap stars,some,31,"We don't wear no rap stuff, we really some rastas",some,INNER,REPEAT,spelling,HIGH,N
+Block Star,30,All of us some rap stars,some,31,"We don't wear no rap stuff, we really some rastas",stuff,INNER,SLANT,cmu,MED,Y
+Block Star,30,All of us some rap stars,some,32,"I'm really a hot boy, you know I done shot some', hey, uhh",done,INNER,SLANT,cmu,MED,Y
+Block Star,30,All of us some rap stars,some,32,"I'm really a hot boy, you know I done shot some', hey, uhh",some,INNER,REPEAT,spelling,HIGH,N
+Block Star,30,All of us some rap stars,stars,32,"I'm really a hot boy, you know I done shot some', hey, uhh",hot,INNER,ASSONANCE,vowel,MED,Y
+Block Star,30,All of us some rap stars,stars,32,"I'm really a hot boy, you know I done shot some', hey, uhh",shot,INNER,ASSONANCE,vowel,MED,Y
+Block Star,31,"We don't wear no rap stuff, we really some rastas",don't,31,"We don't wear no rap stuff, we really some rastas",no,INNER,ASSONANCE,vowel,MED,Y
+Block Star,31,"We don't wear no rap stuff, we really some rastas",stuff,31,"We don't wear no rap stuff, we really some rastas",some,INNER,SLANT,cmu,MED,Y
+Block Star,31,"We don't wear no rap stuff, we really some rastas",don't,32,"I'm really a hot boy, you know I done shot some', hey, uhh",know,INNER,ASSONANCE,vowel,MED,Y
+Block Star,31,"We don't wear no rap stuff, we really some rastas",no,32,"I'm really a hot boy, you know I done shot some', hey, uhh",know,INNER,PERFECT,cmu,HIGH,Y
+Block Star,31,"We don't wear no rap stuff, we really some rastas",really,32,"I'm really a hot boy, you know I done shot some', hey, uhh",really,INNER,REPEAT,spelling,HIGH,N
+Block Star,31,"We don't wear no rap stuff, we really some rastas",some,32,"I'm really a hot boy, you know I done shot some', hey, uhh",done,INNER,SLANT,cmu,MED,Y
+Block Star,31,"We don't wear no rap stuff, we really some rastas",some,32,"I'm really a hot boy, you know I done shot some', hey, uhh",some,INNER,REPEAT,spelling,HIGH,N
+Block Star,31,"We don't wear no rap stuff, we really some rastas",stuff,32,"I'm really a hot boy, you know I done shot some', hey, uhh",done,INNER,SLANT,cmu,MED,Y
+Block Star,31,"We don't wear no rap stuff, we really some rastas",stuff,32,"I'm really a hot boy, you know I done shot some', hey, uhh",some,INNER,SLANT,cmu,MED,Y
+Block Star,32,"I'm really a hot boy, you know I done shot some', hey, uhh",done,32,"I'm really a hot boy, you know I done shot some', hey, uhh",some,INNER,SLANT,cmu,MED,Y
+Block Star,32,"I'm really a hot boy, you know I done shot some', hey, uhh",hot,32,"I'm really a hot boy, you know I done shot some', hey, uhh",shot,INNER,PERFECT,cmu,HIGH,Y

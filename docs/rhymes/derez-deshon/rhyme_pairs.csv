@@ -1,0 +1,300 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Beat The Odds,1,"I'm just tryna beat the odds, back against the wall",tryna,1,"I'm just tryna beat the odds, back against the wall",beat,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,1,"I'm just tryna beat the odds, back against the wall",wall,2,"Laced my boots and stood up tall, told my niggas I won't fall",fall,END,PERFECT,cmu,HIGH,Y
+Beat The Odds,1,"I'm just tryna beat the odds, back against the wall",wall,2,"Laced my boots and stood up tall, told my niggas I won't fall",tall,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,1,"I'm just tryna beat the odds, back against the wall",beat,3,"I'm just tryna beat the odds, yeah, yeah",beat,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,1,"I'm just tryna beat the odds, back against the wall",beat,3,"I'm just tryna beat the odds, yeah, yeah",tryna,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,1,"I'm just tryna beat the odds, back against the wall",odds,3,"I'm just tryna beat the odds, yeah, yeah",odds,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,1,"I'm just tryna beat the odds, back against the wall",tryna,3,"I'm just tryna beat the odds, yeah, yeah",beat,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,1,"I'm just tryna beat the odds, back against the wall",tryna,3,"I'm just tryna beat the odds, yeah, yeah",tryna,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,2,"Laced my boots and stood up tall, told my niggas I won't fall",tall,2,"Laced my boots and stood up tall, told my niggas I won't fall",fall,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,2,"Laced my boots and stood up tall, told my niggas I won't fall",told,2,"Laced my boots and stood up tall, told my niggas I won't fall",won't,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,3,"I'm just tryna beat the odds, yeah, yeah",tryna,3,"I'm just tryna beat the odds, yeah, yeah",beat,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,3,"I'm just tryna beat the odds, yeah, yeah",odds,4,"I'm just tryna beat the odds, hey",odds,END,REPEAT,spelling,HIGH,N
+Beat The Odds,3,"I'm just tryna beat the odds, yeah, yeah",beat,4,"I'm just tryna beat the odds, hey",beat,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,3,"I'm just tryna beat the odds, yeah, yeah",beat,4,"I'm just tryna beat the odds, hey",tryna,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,3,"I'm just tryna beat the odds, yeah, yeah",tryna,4,"I'm just tryna beat the odds, hey",beat,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,3,"I'm just tryna beat the odds, yeah, yeah",tryna,4,"I'm just tryna beat the odds, hey",tryna,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,3,"I'm just tryna beat the odds, yeah, yeah",odds,5,"Uh, look at the cards, I was dealt from the start",start,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,3,"I'm just tryna beat the odds, yeah, yeah",odds,5,"Uh, look at the cards, I was dealt from the start",cards,INNER,SLANT,cmu,MED,Y
+Beat The Odds,3,"I'm just tryna beat the odds, yeah, yeah",odds,6,I played 'em regardless (Yay),regardless,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,4,"I'm just tryna beat the odds, hey",tryna,4,"I'm just tryna beat the odds, hey",beat,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,4,"I'm just tryna beat the odds, hey",odds,5,"Uh, look at the cards, I was dealt from the start",start,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,4,"I'm just tryna beat the odds, hey",odds,5,"Uh, look at the cards, I was dealt from the start",cards,INNER,SLANT,cmu,MED,Y
+Beat The Odds,4,"I'm just tryna beat the odds, hey",odds,6,I played 'em regardless (Yay),regardless,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,5,"Uh, look at the cards, I was dealt from the start",cards,5,"Uh, look at the cards, I was dealt from the start",start,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,5,"Uh, look at the cards, I was dealt from the start",start,6,I played 'em regardless (Yay),regardless,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,5,"Uh, look at the cards, I was dealt from the start",cards,6,I played 'em regardless (Yay),regardless,INNER,SLANT,cmu,MED,Y
+Beat The Odds,6,I played 'em regardless (Yay),played,7,"I gave it my all, stayed down and I came up (Came up)",came,INNER,SLANT,cmu,MED,Y
+Beat The Odds,6,I played 'em regardless (Yay),played,7,"I gave it my all, stayed down and I came up (Came up)",gave,INNER,SLANT,cmu,MED,Y
+Beat The Odds,6,I played 'em regardless (Yay),played,7,"I gave it my all, stayed down and I came up (Came up)",stayed,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,6,I played 'em regardless (Yay),played,8,Never hated or changed up (Changed up),changed,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,6,I played 'em regardless (Yay),played,8,Never hated or changed up (Changed up),hated,INNER,SLANT,cmu,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",gave,7,"I gave it my all, stayed down and I came up (Came up)",came,INNER,SLANT,cmu,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",gave,7,"I gave it my all, stayed down and I came up (Came up)",stayed,INNER,SLANT,cmu,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",stayed,7,"I gave it my all, stayed down and I came up (Came up)",came,INNER,SLANT,cmu,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",came,8,Never hated or changed up (Changed up),changed,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",came,8,Never hated or changed up (Changed up),hated,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",gave,8,Never hated or changed up (Changed up),changed,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",gave,8,Never hated or changed up (Changed up),hated,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",stayed,8,Never hated or changed up (Changed up),changed,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",stayed,8,Never hated or changed up (Changed up),hated,INNER,SLANT,cmu,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",came,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",day,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",came,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",wake,INNER,SLANT,cmu,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",gave,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",day,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",gave,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",wake,INNER,SLANT,cmu,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",stayed,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",day,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,7,"I gave it my all, stayed down and I came up (Came up)",stayed,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",wake,INNER,SLANT,cmu,MED,Y
+Beat The Odds,8,Never hated or changed up (Changed up),hated,8,Never hated or changed up (Changed up),changed,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,8,Never hated or changed up (Changed up),changed,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",day,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,8,Never hated or changed up (Changed up),changed,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",wake,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,8,Never hated or changed up (Changed up),hated,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",day,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,8,Never hated or changed up (Changed up),hated,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",wake,INNER,SLANT,cmu,MED,Y
+Beat The Odds,8,Never hated or changed up (Changed up),Never,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",Every,INNER,SLANT,cmu,MED,Y
+Beat The Odds,8,Never hated or changed up (Changed up),Never,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",let,INNER,SLANT,cmu,MED,Y
+Beat The Odds,8,Never hated or changed up (Changed up),Never,10,'Cause I could've been dead or in prison,dead,INNER,SLANT,cmu,MED,Y
+Beat The Odds,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",day,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",wake,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",Every,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",let,INNER,SLANT,cmu,MED,Y
+Beat The Odds,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",Every,10,'Cause I could've been dead or in prison,dead,INNER,SLANT,cmu,MED,Y
+Beat The Odds,9,"Every day that I wake up (Wake up), I let God know I'm thankful (Thank the Lord)",let,10,'Cause I could've been dead or in prison,dead,INNER,SLANT,cmu,MED,Y
+Beat The Odds,10,'Cause I could've been dead or in prison,prison,11,"Free Drinkin' Juice, oh I miss him",him,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,10,'Cause I could've been dead or in prison,prison,11,"Free Drinkin' Juice, oh I miss him",Drinkin,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,10,'Cause I could've been dead or in prison,prison,11,"Free Drinkin' Juice, oh I miss him",miss,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,10,'Cause I could've been dead or in prison,prison,12,"Thoughts in my head got me trippin' (Yeah, yeah)",trippin,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,10,'Cause I could've been dead or in prison,dead,12,"Thoughts in my head got me trippin' (Yeah, yeah)",head,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,10,'Cause I could've been dead or in prison,prison,13,"I be poppin' these meds, no prescription (Yeah, yeah)",prescription,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,10,'Cause I could've been dead or in prison,prison,14,"All I see is head how I'm livin' (Yeah, yeah)",livin,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",Drinkin,11,"Free Drinkin' Juice, oh I miss him",him,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",Drinkin,11,"Free Drinkin' Juice, oh I miss him",miss,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",miss,11,"Free Drinkin' Juice, oh I miss him",him,INNER,SLANT,cmu,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",him,12,"Thoughts in my head got me trippin' (Yeah, yeah)",trippin,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",Drinkin,12,"Thoughts in my head got me trippin' (Yeah, yeah)",trippin,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",miss,12,"Thoughts in my head got me trippin' (Yeah, yeah)",trippin,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",him,13,"I be poppin' these meds, no prescription (Yeah, yeah)",prescription,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",Drinkin,13,"I be poppin' these meds, no prescription (Yeah, yeah)",prescription,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",Free,13,"I be poppin' these meds, no prescription (Yeah, yeah)",these,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",miss,13,"I be poppin' these meds, no prescription (Yeah, yeah)",prescription,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",him,14,"All I see is head how I'm livin' (Yeah, yeah)",livin,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,11,"Free Drinkin' Juice, oh I miss him",him,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",forgiveness,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,12,"Thoughts in my head got me trippin' (Yeah, yeah)",trippin,13,"I be poppin' these meds, no prescription (Yeah, yeah)",prescription,END,SLANT,cmu,MED,Y
+Beat The Odds,12,"Thoughts in my head got me trippin' (Yeah, yeah)",got,13,"I be poppin' these meds, no prescription (Yeah, yeah)",poppin,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,12,"Thoughts in my head got me trippin' (Yeah, yeah)",head,13,"I be poppin' these meds, no prescription (Yeah, yeah)",meds,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,12,"Thoughts in my head got me trippin' (Yeah, yeah)",trippin,14,"All I see is head how I'm livin' (Yeah, yeah)",livin,END,SLANT,cmu,MED,Y
+Beat The Odds,12,"Thoughts in my head got me trippin' (Yeah, yeah)",head,14,"All I see is head how I'm livin' (Yeah, yeah)",head,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,12,"Thoughts in my head got me trippin' (Yeah, yeah)",Thoughts,14,"All I see is head how I'm livin' (Yeah, yeah)",All,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,12,"Thoughts in my head got me trippin' (Yeah, yeah)",trippin,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",forgiveness,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,12,"Thoughts in my head got me trippin' (Yeah, yeah)",trippin,16,My bitch send me prayers out the scriptures,scriptures,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,13,"I be poppin' these meds, no prescription (Yeah, yeah)",prescription,14,"All I see is head how I'm livin' (Yeah, yeah)",livin,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,13,"I be poppin' these meds, no prescription (Yeah, yeah)",meds,14,"All I see is head how I'm livin' (Yeah, yeah)",head,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,13,"I be poppin' these meds, no prescription (Yeah, yeah)",these,14,"All I see is head how I'm livin' (Yeah, yeah)",see,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,13,"I be poppin' these meds, no prescription (Yeah, yeah)",prescription,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",forgiveness,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,13,"I be poppin' these meds, no prescription (Yeah, yeah)",prescription,16,My bitch send me prayers out the scriptures,scriptures,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,14,"All I see is head how I'm livin' (Yeah, yeah)",livin,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",forgiveness,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,14,"All I see is head how I'm livin' (Yeah, yeah)",All,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",All,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,14,"All I see is head how I'm livin' (Yeah, yeah)",head,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",prayers,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,14,"All I see is head how I'm livin' (Yeah, yeah)",how,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",'bout,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,14,"All I see is head how I'm livin' (Yeah, yeah)",livin,16,My bitch send me prayers out the scriptures,scriptures,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,14,"All I see is head how I'm livin' (Yeah, yeah)",head,16,My bitch send me prayers out the scriptures,prayers,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,14,"All I see is head how I'm livin' (Yeah, yeah)",head,16,My bitch send me prayers out the scriptures,send,INNER,SLANT,cmu,MED,Y
+Beat The Odds,14,"All I see is head how I'm livin' (Yeah, yeah)",livin,16,My bitch send me prayers out the scriptures,bitch,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",forgiveness,16,My bitch send me prayers out the scriptures,scriptures,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",forgiveness,16,My bitch send me prayers out the scriptures,bitch,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",prayers,16,My bitch send me prayers out the scriptures,prayers,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",prayers,16,My bitch send me prayers out the scriptures,send,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",forgiveness,17,"I swear I be scared when I miss 'em, ohh",miss,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",prayers,17,"I swear I be scared when I miss 'em, ohh",scared,INNER,SLANT,cmu,MED,Y
+Beat The Odds,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",prayers,17,"I swear I be scared when I miss 'em, ohh",swear,INNER,SLANT,cmu,MED,Y
+Beat The Odds,15,"All of my prayers 'bout forgiveness (Yeah, yeah)",prayers,17,"I swear I be scared when I miss 'em, ohh",when,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,bitch,16,My bitch send me prayers out the scriptures,scriptures,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,send,16,My bitch send me prayers out the scriptures,prayers,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,bitch,17,"I swear I be scared when I miss 'em, ohh",miss,INNER,SLANT,cmu,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,prayers,17,"I swear I be scared when I miss 'em, ohh",scared,INNER,SLANT,cmu,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,prayers,17,"I swear I be scared when I miss 'em, ohh",swear,INNER,SLANT,cmu,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,prayers,17,"I swear I be scared when I miss 'em, ohh",when,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,scriptures,17,"I swear I be scared when I miss 'em, ohh",miss,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,send,17,"I swear I be scared when I miss 'em, ohh",scared,INNER,SLANT,cmu,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,send,17,"I swear I be scared when I miss 'em, ohh",swear,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,send,17,"I swear I be scared when I miss 'em, ohh",when,INNER,SLANT,cmu,MED,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,prayers,18,"No one ask Derez how he feelin', ohh",Derez,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,16,My bitch send me prayers out the scriptures,send,18,"No one ask Derez how he feelin', ohh",Derez,INNER,ASSONANCE,vowel,LOW,N
+Beat The Odds,17,"I swear I be scared when I miss 'em, ohh",scared,17,"I swear I be scared when I miss 'em, ohh",when,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,17,"I swear I be scared when I miss 'em, ohh",swear,17,"I swear I be scared when I miss 'em, ohh",scared,INNER,SLANT,cmu,MED,Y
+Beat The Odds,17,"I swear I be scared when I miss 'em, ohh",swear,17,"I swear I be scared when I miss 'em, ohh",when,INNER,SLANT,cmu,MED,Y
+Beat The Odds,17,"I swear I be scared when I miss 'em, ohh",scared,18,"No one ask Derez how he feelin', ohh",Derez,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,17,"I swear I be scared when I miss 'em, ohh",swear,18,"No one ask Derez how he feelin', ohh",Derez,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,17,"I swear I be scared when I miss 'em, ohh",when,18,"No one ask Derez how he feelin', ohh",Derez,INNER,ASSONANCE,vowel,LOW,N
+Beat The Odds,17,"I swear I be scared when I miss 'em, ohh",scared,19,"Go hard for DJ and Chariot, ohh",Chariot,INNER,SLANT,cmu,MED,Y
+Beat The Odds,17,"I swear I be scared when I miss 'em, ohh",swear,19,"Go hard for DJ and Chariot, ohh",Chariot,INNER,SLANT,cmu,MED,Y
+Beat The Odds,17,"I swear I be scared when I miss 'em, ohh",when,19,"Go hard for DJ and Chariot, ohh",Chariot,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,18,"No one ask Derez how he feelin', ohh",Derez,19,"Go hard for DJ and Chariot, ohh",Chariot,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,18,"No one ask Derez how he feelin', ohh",No,19,"Go hard for DJ and Chariot, ohh",Go,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,18,"No one ask Derez how he feelin', ohh",Derez,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",buried,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,18,"No one ask Derez how he feelin', ohh",Derez,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",Derez,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,18,"No one ask Derez how he feelin', ohh",feelin,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",G,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,18,"No one ask Derez how he feelin', ohh",feelin,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",keep,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,19,"Go hard for DJ and Chariot, ohh",Chariot,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",De'Shon,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,19,"Go hard for DJ and Chariot, ohh",Chariot,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",buried,INNER,SLANT,cmu,MED,Y
+Beat The Odds,19,"Go hard for DJ and Chariot, ohh",Chariot,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",Derez,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,19,"Go hard for DJ and Chariot, ohh",hard,21,"Beat the odds, beat the charge, beat the streets apart",apart,INNER,SLANT,cmu,MED,Y
+Beat The Odds,19,"Go hard for DJ and Chariot, ohh",hard,21,"Beat the odds, beat the charge, beat the streets apart",charge,INNER,SLANT,cmu,MED,Y
+Beat The Odds,19,"Go hard for DJ and Chariot, ohh",hard,21,"Beat the odds, beat the charge, beat the streets apart",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",buried,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",De'Shon,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",buried,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",Derez,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",I'ma,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",'til,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",keep,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",G,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",G,21,"Beat the odds, beat the charge, beat the streets apart",Beat,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",G,21,"Beat the odds, beat the charge, beat the streets apart",streets,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",keep,21,"Beat the odds, beat the charge, beat the streets apart",Beat,INNER,SLANT,cmu,MED,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",keep,21,"Beat the odds, beat the charge, beat the streets apart",streets,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",buried,22,"Self-employed, I'm that boy, baby I'm that boy",Self,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",De'Shon,22,"Self-employed, I'm that boy, baby I'm that boy",Self,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,20,"I'ma keep it G 'til I'm buried, hey, Derez De'Shon",Derez,22,"Self-employed, I'm that boy, baby I'm that boy",Self,INNER,ASSONANCE,vowel,LOW,N
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",Beat,21,"Beat the odds, beat the charge, beat the streets apart",beat,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",Beat,21,"Beat the odds, beat the charge, beat the streets apart",streets,INNER,SLANT,cmu,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",charge,21,"Beat the odds, beat the charge, beat the streets apart",apart,INNER,SLANT,cmu,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",odds,21,"Beat the odds, beat the charge, beat the streets apart",apart,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",odds,21,"Beat the odds, beat the charge, beat the streets apart",charge,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",apart,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",apart,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,INNER,SLANT,cmu,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",apart,23,"My Audemar cost me eighty large, bitch I beat the odds",large,INNER,SLANT,cmu,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",Beat,23,"My Audemar cost me eighty large, bitch I beat the odds",beat,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",charge,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",charge,23,"My Audemar cost me eighty large, bitch I beat the odds",large,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",charge,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",odds,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",odds,23,"My Audemar cost me eighty large, bitch I beat the odds",large,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",odds,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",streets,23,"My Audemar cost me eighty large, bitch I beat the odds",beat,INNER,SLANT,cmu,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",apart,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,21,"Beat the odds, beat the charge, beat the streets apart",apart,25,"All these scars, bitch I had it hard, now I feel like God",God,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,22,"Self-employed, I'm that boy, baby I'm that boy",boy,22,"Self-employed, I'm that boy, baby I'm that boy",boy,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,22,"Self-employed, I'm that boy, baby I'm that boy",employed,22,"Self-employed, I'm that boy, baby I'm that boy",boy,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,22,"Self-employed, I'm that boy, baby I'm that boy",baby,23,"My Audemar cost me eighty large, bitch I beat the odds",eighty,INNER,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,23,"My Audemar cost me eighty large, bitch I beat the odds",large,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",large,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,END,REPEAT,spelling,HIGH,N
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",beat,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",beat,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",bitch,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",bitch,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",bitch,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",filled,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",large,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,INNER,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",large,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",large,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,INNER,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,INNER,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,25,"All these scars, bitch I had it hard, now I feel like God",God,END,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",beat,25,"All these scars, bitch I had it hard, now I feel like God",feel,INNER,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",beat,25,"All these scars, bitch I had it hard, now I feel like God",these,INNER,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",bitch,25,"All these scars, bitch I had it hard, now I feel like God",bitch,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,25,"All these scars, bitch I had it hard, now I feel like God",God,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,25,"All these scars, bitch I had it hard, now I feel like God",hard,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",cost,25,"All these scars, bitch I had it hard, now I feel like God",scars,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",large,25,"All these scars, bitch I had it hard, now I feel like God",God,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",large,25,"All these scars, bitch I had it hard, now I feel like God",hard,INNER,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",large,25,"All these scars, bitch I had it hard, now I feel like God",scars,INNER,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,25,"All these scars, bitch I had it hard, now I feel like God",hard,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,25,"All these scars, bitch I had it hard, now I feel like God",scars,INNER,SLANT,cmu,MED,Y
+Beat The Odds,23,"My Audemar cost me eighty large, bitch I beat the odds",odds,26,"All these broads wanna be with the boy, they tryna beat the odds",odds,END,REPEAT,spelling,HIGH,N
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",filled,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",bitch,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,25,"All these scars, bitch I had it hard, now I feel like God",God,END,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",beat,25,"All these scars, bitch I had it hard, now I feel like God",feel,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",beat,25,"All these scars, bitch I had it hard, now I feel like God",these,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",bitch,25,"All these scars, bitch I had it hard, now I feel like God",bitch,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,25,"All these scars, bitch I had it hard, now I feel like God",God,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,25,"All these scars, bitch I had it hard, now I feel like God",hard,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,25,"All these scars, bitch I had it hard, now I feel like God",scars,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",filled,25,"All these scars, bitch I had it hard, now I feel like God",bitch,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",foreign,25,"All these scars, bitch I had it hard, now I feel like God",All,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,25,"All these scars, bitch I had it hard, now I feel like God",hard,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,25,"All these scars, bitch I had it hard, now I feel like God",scars,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,25,"All these scars, bitch I had it hard, now I feel like God",God,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,25,"All these scars, bitch I had it hard, now I feel like God",hard,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,25,"All these scars, bitch I had it hard, now I feel like God",scars,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,26,"All these broads wanna be with the boy, they tryna beat the odds",odds,END,REPEAT,spelling,HIGH,N
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",beat,26,"All these broads wanna be with the boy, they tryna beat the odds",beat,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",beat,26,"All these broads wanna be with the boy, they tryna beat the odds",these,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",beat,26,"All these broads wanna be with the boy, they tryna beat the odds",tryna,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,26,"All these broads wanna be with the boy, they tryna beat the odds",odds,INNER,SLANT,cmu,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",cars,26,"All these broads wanna be with the boy, they tryna beat the odds",wanna,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",foreign,26,"All these broads wanna be with the boy, they tryna beat the odds",All,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",odds,26,"All these broads wanna be with the boy, they tryna beat the odds",wanna,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,26,"All these broads wanna be with the boy, they tryna beat the odds",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,24,"And my yard filled with foreign cars, bitch I beat the odds, yeah",yard,26,"All these broads wanna be with the boy, they tryna beat the odds",wanna,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",hard,25,"All these scars, bitch I had it hard, now I feel like God",God,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",scars,25,"All these scars, bitch I had it hard, now I feel like God",God,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",scars,25,"All these scars, bitch I had it hard, now I feel like God",hard,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",these,25,"All these scars, bitch I had it hard, now I feel like God",feel,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",God,26,"All these broads wanna be with the boy, they tryna beat the odds",odds,END,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",All,26,"All these broads wanna be with the boy, they tryna beat the odds",All,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",feel,26,"All these broads wanna be with the boy, they tryna beat the odds",beat,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",feel,26,"All these broads wanna be with the boy, they tryna beat the odds",these,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",feel,26,"All these broads wanna be with the boy, they tryna beat the odds",tryna,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",God,26,"All these broads wanna be with the boy, they tryna beat the odds",wanna,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",hard,26,"All these broads wanna be with the boy, they tryna beat the odds",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",hard,26,"All these broads wanna be with the boy, they tryna beat the odds",wanna,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",scars,26,"All these broads wanna be with the boy, they tryna beat the odds",odds,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",scars,26,"All these broads wanna be with the boy, they tryna beat the odds",wanna,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",these,26,"All these broads wanna be with the boy, they tryna beat the odds",beat,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",these,26,"All these broads wanna be with the boy, they tryna beat the odds",these,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",these,26,"All these broads wanna be with the boy, they tryna beat the odds",tryna,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",feel,27,"Can't believe I had to work a egg beater boy, yeah",beater,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",feel,27,"Can't believe I had to work a egg beater boy, yeah",believe,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",had,27,"Can't believe I had to work a egg beater boy, yeah",Can't,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",had,27,"Can't believe I had to work a egg beater boy, yeah",had,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",these,27,"Can't believe I had to work a egg beater boy, yeah",beater,INNER,SLANT,cmu,MED,Y
+Beat The Odds,25,"All these scars, bitch I had it hard, now I feel like God",these,27,"Can't believe I had to work a egg beater boy, yeah",believe,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",these,26,"All these broads wanna be with the boy, they tryna beat the odds",beat,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",these,26,"All these broads wanna be with the boy, they tryna beat the odds",tryna,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",tryna,26,"All these broads wanna be with the boy, they tryna beat the odds",beat,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",wanna,26,"All these broads wanna be with the boy, they tryna beat the odds",odds,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",beat,27,"Can't believe I had to work a egg beater boy, yeah",beater,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",beat,27,"Can't believe I had to work a egg beater boy, yeah",believe,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",boy,27,"Can't believe I had to work a egg beater boy, yeah",boy,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",these,27,"Can't believe I had to work a egg beater boy, yeah",beater,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",these,27,"Can't believe I had to work a egg beater boy, yeah",believe,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",tryna,27,"Can't believe I had to work a egg beater boy, yeah",beater,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",tryna,27,"Can't believe I had to work a egg beater boy, yeah",believe,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",beat,28,"Can't believe we used to weigh it in a beaker boy, yeah",beaker,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",beat,28,"Can't believe we used to weigh it in a beaker boy, yeah",believe,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",boy,28,"Can't believe we used to weigh it in a beaker boy, yeah",boy,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",these,28,"Can't believe we used to weigh it in a beaker boy, yeah",beaker,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",these,28,"Can't believe we used to weigh it in a beaker boy, yeah",believe,INNER,SLANT,cmu,MED,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",tryna,28,"Can't believe we used to weigh it in a beaker boy, yeah",beaker,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,26,"All these broads wanna be with the boy, they tryna beat the odds",tryna,28,"Can't believe we used to weigh it in a beaker boy, yeah",believe,INNER,SLANT,spelling,LOW,Y
+Beat The Odds,27,"Can't believe I had to work a egg beater boy, yeah",believe,27,"Can't believe I had to work a egg beater boy, yeah",beater,INNER,SLANT,cmu,MED,Y
+Beat The Odds,27,"Can't believe I had to work a egg beater boy, yeah",Can't,27,"Can't believe I had to work a egg beater boy, yeah",had,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,27,"Can't believe I had to work a egg beater boy, yeah",boy,28,"Can't believe we used to weigh it in a beaker boy, yeah",boy,END,REPEAT,spelling,HIGH,N
+Beat The Odds,27,"Can't believe I had to work a egg beater boy, yeah",beater,28,"Can't believe we used to weigh it in a beaker boy, yeah",beaker,INNER,SLANT,cmu,MED,Y
+Beat The Odds,27,"Can't believe I had to work a egg beater boy, yeah",beater,28,"Can't believe we used to weigh it in a beaker boy, yeah",believe,INNER,SLANT,cmu,MED,Y
+Beat The Odds,27,"Can't believe I had to work a egg beater boy, yeah",believe,28,"Can't believe we used to weigh it in a beaker boy, yeah",beaker,INNER,SLANT,cmu,MED,Y
+Beat The Odds,27,"Can't believe I had to work a egg beater boy, yeah",believe,28,"Can't believe we used to weigh it in a beaker boy, yeah",believe,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,27,"Can't believe I had to work a egg beater boy, yeah",Can't,28,"Can't believe we used to weigh it in a beaker boy, yeah",Can't,INNER,REPEAT,spelling,HIGH,N
+Beat The Odds,27,"Can't believe I had to work a egg beater boy, yeah",had,28,"Can't believe we used to weigh it in a beaker boy, yeah",Can't,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,28,"Can't believe we used to weigh it in a beaker boy, yeah",believe,28,"Can't believe we used to weigh it in a beaker boy, yeah",beaker,INNER,SLANT,cmu,MED,Y
+Beat The Odds,28,"Can't believe we used to weigh it in a beaker boy, yeah",weigh,29,"Uh, cocaine flow, propane smoke, what you came for?",came,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,28,"Can't believe we used to weigh it in a beaker boy, yeah",weigh,29,"Uh, cocaine flow, propane smoke, what you came for?",cocaine,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,28,"Can't believe we used to weigh it in a beaker boy, yeah",weigh,29,"Uh, cocaine flow, propane smoke, what you came for?",propane,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,28,"Can't believe we used to weigh it in a beaker boy, yeah",Can't,30,"Ayy, pimp a bitch, get a dollar out a stank ho",stank,INNER,SLANT,cmu,MED,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",cocaine,29,"Uh, cocaine flow, propane smoke, what you came for?",came,INNER,SLANT,cmu,MED,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",cocaine,29,"Uh, cocaine flow, propane smoke, what you came for?",propane,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",flow,29,"Uh, cocaine flow, propane smoke, what you came for?",smoke,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",propane,29,"Uh, cocaine flow, propane smoke, what you came for?",came,INNER,SLANT,cmu,MED,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",flow,30,"Ayy, pimp a bitch, get a dollar out a stank ho",ho,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",smoke,30,"Ayy, pimp a bitch, get a dollar out a stank ho",ho,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",flow,31,And don't never let a nigga count your bankroll,bankroll,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",flow,31,And don't never let a nigga count your bankroll,don't,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",smoke,31,And don't never let a nigga count your bankroll,bankroll,INNER,SLANT,cmu,MED,Y
+Beat The Odds,29,"Uh, cocaine flow, propane smoke, what you came for?",smoke,31,And don't never let a nigga count your bankroll,don't,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,30,"Ayy, pimp a bitch, get a dollar out a stank ho",pimp,30,"Ayy, pimp a bitch, get a dollar out a stank ho",bitch,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,30,"Ayy, pimp a bitch, get a dollar out a stank ho",ho,31,And don't never let a nigga count your bankroll,bankroll,END,ASSONANCE,vowel,MED,Y
+Beat The Odds,30,"Ayy, pimp a bitch, get a dollar out a stank ho",get,31,And don't never let a nigga count your bankroll,let,INNER,PERFECT,cmu,HIGH,Y
+Beat The Odds,30,"Ayy, pimp a bitch, get a dollar out a stank ho",get,31,And don't never let a nigga count your bankroll,never,INNER,SLANT,cmu,MED,Y
+Beat The Odds,30,"Ayy, pimp a bitch, get a dollar out a stank ho",ho,31,And don't never let a nigga count your bankroll,don't,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,31,And don't never let a nigga count your bankroll,don't,31,And don't never let a nigga count your bankroll,bankroll,INNER,ASSONANCE,vowel,MED,Y
+Beat The Odds,31,And don't never let a nigga count your bankroll,never,31,And don't never let a nigga count your bankroll,let,INNER,SLANT,cmu,MED,Y

@@ -1,0 +1,275 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Pressure,1,"Fuck you mean, you don't know DJ Marc B?",don't,1,"Fuck you mean, you don't know DJ Marc B?",know,INNER,ASSONANCE,vowel,MED,Y
+Pressure,1,"Fuck you mean, you don't know DJ Marc B?",mean,1,"Fuck you mean, you don't know DJ Marc B?",B,INNER,ASSONANCE,vowel,MED,Y
+Pressure,1,"Fuck you mean, you don't know DJ Marc B?",B,2,I'm feelin' this shit,feelin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,1,"Fuck you mean, you don't know DJ Marc B?",mean,2,I'm feelin' this shit,feelin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,1,"Fuck you mean, you don't know DJ Marc B?",B,3,"Yeah, yeah, I'm feelin' pressure",feelin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,1,"Fuck you mean, you don't know DJ Marc B?",mean,3,"Yeah, yeah, I'm feelin' pressure",feelin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,2,I'm feelin' this shit,feelin,3,"Yeah, yeah, I'm feelin' pressure",feelin,INNER,REPEAT,spelling,HIGH,N
+Pressure,2,I'm feelin' this shit,feelin,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",feelin,INNER,REPEAT,spelling,HIGH,N
+Pressure,2,I'm feelin' this shit,shit,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",bitch,INNER,SLANT,cmu,MED,Y
+Pressure,2,I'm feelin' this shit,shit,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",dip,INNER,SLANT,cmu,MED,Y
+Pressure,2,I'm feelin' this shit,shit,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",I'ma,INNER,SLANT,spelling,LOW,Y
+Pressure,2,I'm feelin' this shit,shit,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",lil,INNER,SLANT,cmu,MED,Y
+Pressure,2,I'm feelin' this shit,shit,6,"Tried to put him on, he crossed me out, now I can't help him",him,END,SLANT,cmu,MED,Y
+Pressure,3,"Yeah, yeah, I'm feelin' pressure",pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",let,END,SLANT,cmu,MED,Y
+Pressure,3,"Yeah, yeah, I'm feelin' pressure",feelin,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",feelin,INNER,REPEAT,spelling,HIGH,N
+Pressure,3,"Yeah, yeah, I'm feelin' pressure",pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",pressure,INNER,REPEAT,spelling,HIGH,N
+Pressure,3,"Yeah, yeah, I'm feelin' pressure",pressure,5,"Nigga ran off on me, know it's OV when I catch you",when,INNER,SLANT,cmu,MED,Y
+Pressure,3,"Yeah, yeah, I'm feelin' pressure",pressure,7,"Leave one nigga dead right in the street, he need a stretcher",stretcher,END,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",bitch,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",dip,INNER,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",bitch,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",I'ma,INNER,SLANT,spelling,LOW,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",dip,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",I'ma,INNER,SLANT,spelling,LOW,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",lil,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",bitch,INNER,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",lil,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",dip,INNER,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",lil,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",I'ma,INNER,SLANT,spelling,LOW,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",let,INNER,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",talkin,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",want,INNER,ASSONANCE,vowel,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",dip,5,"Nigga ran off on me, know it's OV when I catch you",Nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",let,5,"Nigga ran off on me, know it's OV when I catch you",when,INNER,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",pressure,5,"Nigga ran off on me, know it's OV when I catch you",when,INNER,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",bitch,6,"Tried to put him on, he crossed me out, now I can't help him",him,INNER,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",dip,6,"Tried to put him on, he crossed me out, now I can't help him",him,INNER,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",I'ma,6,"Tried to put him on, he crossed me out, now I can't help him",him,INNER,SLANT,spelling,LOW,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",let,6,"Tried to put him on, he crossed me out, now I can't help him",help,INNER,ASSONANCE,vowel,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",lil,6,"Tried to put him on, he crossed me out, now I can't help him",him,INNER,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",pressure,6,"Tried to put him on, he crossed me out, now I can't help him",help,INNER,ASSONANCE,vowel,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",want,6,"Tried to put him on, he crossed me out, now I can't help him",can't,INNER,SLANT,spelling,LOW,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",let,7,"Leave one nigga dead right in the street, he need a stretcher",stretcher,END,SLANT,cmu,MED,Y
+Pressure,4,"I'm feelin' pressure, lil' bitch talkin' crazy, want a dip, I'ma let ya'",let,8,Wake up everyday and grab the pistol out the dresser,dresser,END,SLANT,cmu,MED,Y
+Pressure,5,"Nigga ran off on me, know it's OV when I catch you",ran,5,"Nigga ran off on me, know it's OV when I catch you",catch,INNER,SLANT,cmu,MED,Y
+Pressure,5,"Nigga ran off on me, know it's OV when I catch you",catch,6,"Tried to put him on, he crossed me out, now I can't help him",can't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,5,"Nigga ran off on me, know it's OV when I catch you",ran,6,"Tried to put him on, he crossed me out, now I can't help him",can't,INNER,SLANT,cmu,MED,Y
+Pressure,5,"Nigga ran off on me, know it's OV when I catch you",when,6,"Tried to put him on, he crossed me out, now I can't help him",help,INNER,ASSONANCE,vowel,MED,Y
+Pressure,5,"Nigga ran off on me, know it's OV when I catch you",Nigga,7,"Leave one nigga dead right in the street, he need a stretcher",nigga,INNER,REPEAT,spelling,HIGH,N
+Pressure,5,"Nigga ran off on me, know it's OV when I catch you",when,7,"Leave one nigga dead right in the street, he need a stretcher",dead,INNER,SLANT,cmu,MED,Y
+Pressure,5,"Nigga ran off on me, know it's OV when I catch you",when,7,"Leave one nigga dead right in the street, he need a stretcher",stretcher,INNER,SLANT,cmu,MED,Y
+Pressure,6,"Tried to put him on, he crossed me out, now I can't help him",him,6,"Tried to put him on, he crossed me out, now I can't help him",him,INNER,REPEAT,spelling,HIGH,N
+Pressure,6,"Tried to put him on, he crossed me out, now I can't help him",help,7,"Leave one nigga dead right in the street, he need a stretcher",dead,INNER,ASSONANCE,vowel,MED,Y
+Pressure,6,"Tried to put him on, he crossed me out, now I can't help him",help,7,"Leave one nigga dead right in the street, he need a stretcher",stretcher,INNER,ASSONANCE,vowel,MED,Y
+Pressure,6,"Tried to put him on, he crossed me out, now I can't help him",Tried,7,"Leave one nigga dead right in the street, he need a stretcher",right,INNER,SLANT,cmu,MED,Y
+Pressure,6,"Tried to put him on, he crossed me out, now I can't help him",can't,8,Wake up everyday and grab the pistol out the dresser,grab,INNER,ASSONANCE,vowel,MED,Y
+Pressure,6,"Tried to put him on, he crossed me out, now I can't help him",help,8,Wake up everyday and grab the pistol out the dresser,dresser,INNER,ASSONANCE,vowel,MED,Y
+Pressure,6,"Tried to put him on, he crossed me out, now I can't help him",him,8,Wake up everyday and grab the pistol out the dresser,pistol,INNER,ASSONANCE,vowel,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",dead,7,"Leave one nigga dead right in the street, he need a stretcher",stretcher,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",Leave,7,"Leave one nigga dead right in the street, he need a stretcher",need,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",Leave,7,"Leave one nigga dead right in the street, he need a stretcher",street,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",street,7,"Leave one nigga dead right in the street, he need a stretcher",need,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",stretcher,8,Wake up everyday and grab the pistol out the dresser,dresser,END,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",dead,8,Wake up everyday and grab the pistol out the dresser,dresser,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",stretcher,9,"I just poured four sip, my cup is dark as Dr. Pepper",Pepper,END,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",dead,9,"I just poured four sip, my cup is dark as Dr. Pepper",Pepper,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",nigga,9,"I just poured four sip, my cup is dark as Dr. Pepper",sip,INNER,SLANT,spelling,LOW,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",one,9,"I just poured four sip, my cup is dark as Dr. Pepper",cup,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",right,9,"I just poured four sip, my cup is dark as Dr. Pepper",Dr,INNER,SLANT,cmu,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",stretcher,10,"I feel like Kurt Angle, I can't leave without the medal",medal,END,ASSONANCE,vowel,MED,Y
+Pressure,7,"Leave one nigga dead right in the street, he need a stretcher",stretcher,11,"I can't chase these bitches, I got money on my schedule",schedule,END,ASSONANCE,vowel,MED,Y
+Pressure,8,Wake up everyday and grab the pistol out the dresser,Wake,8,Wake up everyday and grab the pistol out the dresser,everyday,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,Wake up everyday and grab the pistol out the dresser,dresser,9,"I just poured four sip, my cup is dark as Dr. Pepper",Pepper,END,SLANT,cmu,MED,Y
+Pressure,8,Wake up everyday and grab the pistol out the dresser,pistol,9,"I just poured four sip, my cup is dark as Dr. Pepper",sip,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,Wake up everyday and grab the pistol out the dresser,dresser,10,"I feel like Kurt Angle, I can't leave without the medal",medal,END,ASSONANCE,vowel,MED,Y
+Pressure,8,Wake up everyday and grab the pistol out the dresser,grab,10,"I feel like Kurt Angle, I can't leave without the medal",Angle,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,Wake up everyday and grab the pistol out the dresser,grab,10,"I feel like Kurt Angle, I can't leave without the medal",can't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,8,Wake up everyday and grab the pistol out the dresser,dresser,11,"I can't chase these bitches, I got money on my schedule",schedule,END,ASSONANCE,vowel,MED,Y
+Pressure,8,Wake up everyday and grab the pistol out the dresser,dresser,12,"Workin' everyday, I swear I'm on another level",level,END,ASSONANCE,vowel,MED,Y
+Pressure,9,"I just poured four sip, my cup is dark as Dr. Pepper",poured,9,"I just poured four sip, my cup is dark as Dr. Pepper",four,INNER,SLANT,cmu,MED,Y
+Pressure,9,"I just poured four sip, my cup is dark as Dr. Pepper",Pepper,10,"I feel like Kurt Angle, I can't leave without the medal",medal,END,ASSONANCE,vowel,MED,Y
+Pressure,9,"I just poured four sip, my cup is dark as Dr. Pepper",Dr,10,"I feel like Kurt Angle, I can't leave without the medal",like,INNER,SLANT,cmu,MED,Y
+Pressure,9,"I just poured four sip, my cup is dark as Dr. Pepper",Pepper,11,"I can't chase these bitches, I got money on my schedule",schedule,END,ASSONANCE,vowel,MED,Y
+Pressure,9,"I just poured four sip, my cup is dark as Dr. Pepper",cup,11,"I can't chase these bitches, I got money on my schedule",money,INNER,SLANT,cmu,MED,Y
+Pressure,9,"I just poured four sip, my cup is dark as Dr. Pepper",dark,11,"I can't chase these bitches, I got money on my schedule",got,INNER,ASSONANCE,vowel,MED,Y
+Pressure,9,"I just poured four sip, my cup is dark as Dr. Pepper",sip,11,"I can't chase these bitches, I got money on my schedule",bitches,INNER,ASSONANCE,vowel,MED,Y
+Pressure,9,"I just poured four sip, my cup is dark as Dr. Pepper",Pepper,12,"Workin' everyday, I swear I'm on another level",level,END,ASSONANCE,vowel,MED,Y
+Pressure,9,"I just poured four sip, my cup is dark as Dr. Pepper",Pepper,13,"Triple R get hot, shit, get to close and I'ma melt ya",melt,END,ASSONANCE,vowel,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",Angle,10,"I feel like Kurt Angle, I can't leave without the medal",can't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",feel,10,"I feel like Kurt Angle, I can't leave without the medal",leave,INNER,SLANT,cmu,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",medal,11,"I can't chase these bitches, I got money on my schedule",schedule,END,SLANT,cmu,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",Angle,11,"I can't chase these bitches, I got money on my schedule",can't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",can't,11,"I can't chase these bitches, I got money on my schedule",can't,INNER,REPEAT,spelling,HIGH,N
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",feel,11,"I can't chase these bitches, I got money on my schedule",these,INNER,SLANT,cmu,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",leave,11,"I can't chase these bitches, I got money on my schedule",these,INNER,SLANT,cmu,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",medal,12,"Workin' everyday, I swear I'm on another level",level,END,SLANT,cmu,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",Kurt,12,"Workin' everyday, I swear I'm on another level",Workin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",medal,12,"Workin' everyday, I swear I'm on another level",swear,INNER,ASSONANCE,vowel,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",medal,13,"Triple R get hot, shit, get to close and I'ma melt ya",melt,END,ASSONANCE,vowel,MED,Y
+Pressure,10,"I feel like Kurt Angle, I can't leave without the medal",medal,14,"Niggas ain't know shit, these niggas smaller than a pebble",pebble,END,SLANT,cmu,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",schedule,12,"Workin' everyday, I swear I'm on another level",level,END,SLANT,cmu,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",chase,12,"Workin' everyday, I swear I'm on another level",everyday,INNER,ASSONANCE,vowel,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",money,12,"Workin' everyday, I swear I'm on another level",another,INNER,SLANT,cmu,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",schedule,12,"Workin' everyday, I swear I'm on another level",swear,INNER,ASSONANCE,vowel,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",schedule,13,"Triple R get hot, shit, get to close and I'ma melt ya",melt,END,ASSONANCE,vowel,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",bitches,13,"Triple R get hot, shit, get to close and I'ma melt ya",shit,INNER,ASSONANCE,vowel,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",bitches,13,"Triple R get hot, shit, get to close and I'ma melt ya",Triple,INNER,ASSONANCE,vowel,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",got,13,"Triple R get hot, shit, get to close and I'ma melt ya",hot,INNER,PERFECT,cmu,HIGH,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",got,13,"Triple R get hot, shit, get to close and I'ma melt ya",R,INNER,SLANT,cmu,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",schedule,13,"Triple R get hot, shit, get to close and I'ma melt ya",get,INNER,ASSONANCE,vowel,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",schedule,14,"Niggas ain't know shit, these niggas smaller than a pebble",pebble,END,SLANT,cmu,MED,Y
+Pressure,11,"I can't chase these bitches, I got money on my schedule",schedule,15,"I came off fu' shit, my pockets swoller than a wrestler",wrestler,END,SLANT,cmu,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",swear,12,"Workin' everyday, I swear I'm on another level",level,INNER,ASSONANCE,vowel,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",level,13,"Triple R get hot, shit, get to close and I'ma melt ya",melt,END,ASSONANCE,vowel,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",level,13,"Triple R get hot, shit, get to close and I'ma melt ya",get,INNER,ASSONANCE,vowel,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",swear,13,"Triple R get hot, shit, get to close and I'ma melt ya",get,INNER,SLANT,cmu,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",swear,13,"Triple R get hot, shit, get to close and I'ma melt ya",melt,INNER,ASSONANCE,vowel,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",level,14,"Niggas ain't know shit, these niggas smaller than a pebble",pebble,END,SLANT,cmu,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",everyday,14,"Niggas ain't know shit, these niggas smaller than a pebble",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",swear,14,"Niggas ain't know shit, these niggas smaller than a pebble",pebble,INNER,ASSONANCE,vowel,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",level,15,"I came off fu' shit, my pockets swoller than a wrestler",wrestler,END,SLANT,cmu,MED,Y
+Pressure,12,"Workin' everyday, I swear I'm on another level",level,16,Told lil' bae she fuckin' with a king like she Coretta,Coretta,END,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",get,13,"Triple R get hot, shit, get to close and I'ma melt ya",get,INNER,REPEAT,spelling,HIGH,N
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",get,13,"Triple R get hot, shit, get to close and I'ma melt ya",melt,INNER,SLANT,cmu,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",R,13,"Triple R get hot, shit, get to close and I'ma melt ya",hot,INNER,SLANT,cmu,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",shit,13,"Triple R get hot, shit, get to close and I'ma melt ya",I'ma,INNER,SLANT,spelling,LOW,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",Triple,13,"Triple R get hot, shit, get to close and I'ma melt ya",shit,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",melt,14,"Niggas ain't know shit, these niggas smaller than a pebble",pebble,END,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",close,14,"Niggas ain't know shit, these niggas smaller than a pebble",know,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",get,14,"Niggas ain't know shit, these niggas smaller than a pebble",pebble,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",I'ma,14,"Niggas ain't know shit, these niggas smaller than a pebble",shit,INNER,SLANT,spelling,LOW,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",shit,14,"Niggas ain't know shit, these niggas smaller than a pebble",shit,INNER,REPEAT,spelling,HIGH,N
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",Triple,14,"Niggas ain't know shit, these niggas smaller than a pebble",shit,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",melt,15,"I came off fu' shit, my pockets swoller than a wrestler",wrestler,END,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",close,15,"I came off fu' shit, my pockets swoller than a wrestler",swoller,INNER,ASSONANCE,vowel,LOW,N
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",get,15,"I came off fu' shit, my pockets swoller than a wrestler",wrestler,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",hot,15,"I came off fu' shit, my pockets swoller than a wrestler",pockets,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",I'ma,15,"I came off fu' shit, my pockets swoller than a wrestler",shit,INNER,SLANT,spelling,LOW,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",R,15,"I came off fu' shit, my pockets swoller than a wrestler",pockets,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",shit,15,"I came off fu' shit, my pockets swoller than a wrestler",shit,INNER,REPEAT,spelling,HIGH,N
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",Triple,15,"I came off fu' shit, my pockets swoller than a wrestler",shit,INNER,ASSONANCE,vowel,MED,Y
+Pressure,13,"Triple R get hot, shit, get to close and I'ma melt ya",melt,16,Told lil' bae she fuckin' with a king like she Coretta,Coretta,END,SLANT,cmu,MED,Y
+Pressure,14,"Niggas ain't know shit, these niggas smaller than a pebble",Niggas,14,"Niggas ain't know shit, these niggas smaller than a pebble",niggas,INNER,REPEAT,spelling,HIGH,N
+Pressure,14,"Niggas ain't know shit, these niggas smaller than a pebble",pebble,15,"I came off fu' shit, my pockets swoller than a wrestler",wrestler,END,SLANT,cmu,MED,Y
+Pressure,14,"Niggas ain't know shit, these niggas smaller than a pebble",ain't,15,"I came off fu' shit, my pockets swoller than a wrestler",came,INNER,ASSONANCE,vowel,MED,Y
+Pressure,14,"Niggas ain't know shit, these niggas smaller than a pebble",shit,15,"I came off fu' shit, my pockets swoller than a wrestler",shit,INNER,REPEAT,spelling,HIGH,N
+Pressure,14,"Niggas ain't know shit, these niggas smaller than a pebble",pebble,16,Told lil' bae she fuckin' with a king like she Coretta,Coretta,END,ASSONANCE,vowel,MED,Y
+Pressure,14,"Niggas ain't know shit, these niggas smaller than a pebble",know,16,Told lil' bae she fuckin' with a king like she Coretta,Told,INNER,ASSONANCE,vowel,MED,Y
+Pressure,14,"Niggas ain't know shit, these niggas smaller than a pebble",shit,16,Told lil' bae she fuckin' with a king like she Coretta,king,INNER,SLANT,cmu,MED,Y
+Pressure,14,"Niggas ain't know shit, these niggas smaller than a pebble",shit,16,Told lil' bae she fuckin' with a king like she Coretta,lil,INNER,SLANT,cmu,MED,Y
+Pressure,15,"I came off fu' shit, my pockets swoller than a wrestler",wrestler,16,Told lil' bae she fuckin' with a king like she Coretta,Coretta,END,ASSONANCE,vowel,MED,Y
+Pressure,15,"I came off fu' shit, my pockets swoller than a wrestler",shit,16,Told lil' bae she fuckin' with a king like she Coretta,king,INNER,SLANT,cmu,MED,Y
+Pressure,15,"I came off fu' shit, my pockets swoller than a wrestler",shit,16,Told lil' bae she fuckin' with a king like she Coretta,lil,INNER,SLANT,cmu,MED,Y
+Pressure,15,"I came off fu' shit, my pockets swoller than a wrestler",swoller,16,Told lil' bae she fuckin' with a king like she Coretta,Told,INNER,SLANT,spelling,LOW,Y
+Pressure,15,"I came off fu' shit, my pockets swoller than a wrestler",came,17,I know nigga who play with them blood like they Griselda,play,INNER,ASSONANCE,vowel,MED,Y
+Pressure,15,"I came off fu' shit, my pockets swoller than a wrestler",fu,17,I know nigga who play with them blood like they Griselda,who,INNER,PERFECT,cmu,HIGH,Y
+Pressure,15,"I came off fu' shit, my pockets swoller than a wrestler",shit,17,I know nigga who play with them blood like they Griselda,nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,16,Told lil' bae she fuckin' with a king like she Coretta,bae,16,Told lil' bae she fuckin' with a king like she Coretta,like,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,Told lil' bae she fuckin' with a king like she Coretta,lil,16,Told lil' bae she fuckin' with a king like she Coretta,king,INNER,SLANT,cmu,MED,Y
+Pressure,16,Told lil' bae she fuckin' with a king like she Coretta,bae,17,I know nigga who play with them blood like they Griselda,like,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,Told lil' bae she fuckin' with a king like she Coretta,fuckin,17,I know nigga who play with them blood like they Griselda,blood,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,Told lil' bae she fuckin' with a king like she Coretta,like,17,I know nigga who play with them blood like they Griselda,like,INNER,REPEAT,spelling,HIGH,N
+Pressure,16,Told lil' bae she fuckin' with a king like she Coretta,Told,17,I know nigga who play with them blood like they Griselda,know,INNER,ASSONANCE,vowel,MED,Y
+Pressure,16,Told lil' bae she fuckin' with a king like she Coretta,Coretta,18,"Shawty seen my neck and lost her breath, need an inhaler",breath,INNER,SLANT,cmu,MED,Y
+Pressure,16,Told lil' bae she fuckin' with a king like she Coretta,Coretta,18,"Shawty seen my neck and lost her breath, need an inhaler",neck,INNER,SLANT,cmu,MED,Y
+Pressure,17,I know nigga who play with them blood like they Griselda,nigga,17,I know nigga who play with them blood like they Griselda,Griselda,INNER,ASSONANCE,vowel,LOW,N
+Pressure,17,I know nigga who play with them blood like they Griselda,play,18,"Shawty seen my neck and lost her breath, need an inhaler",inhaler,INNER,ASSONANCE,vowel,MED,Y
+Pressure,17,I know nigga who play with them blood like they Griselda,know,19,"I might be trippin' but I ain't slippin', I just know-",know,INNER,REPEAT,spelling,HIGH,N
+Pressure,17,I know nigga who play with them blood like they Griselda,like,19,"I might be trippin' but I ain't slippin', I just know-",might,INNER,SLANT,cmu,MED,Y
+Pressure,17,I know nigga who play with them blood like they Griselda,play,19,"I might be trippin' but I ain't slippin', I just know-",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,17,I know nigga who play with them blood like they Griselda,Griselda,20,"I ain't chasin' none of you hoes, fuck all you niggas",niggas,END,ASSONANCE,vowel,LOW,N
+Pressure,17,I know nigga who play with them blood like they Griselda,Griselda,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",Jigga,END,ASSONANCE,vowel,LOW,N
+Pressure,18,"Shawty seen my neck and lost her breath, need an inhaler",neck,18,"Shawty seen my neck and lost her breath, need an inhaler",breath,INNER,SLANT,cmu,MED,Y
+Pressure,18,"Shawty seen my neck and lost her breath, need an inhaler",seen,18,"Shawty seen my neck and lost her breath, need an inhaler",need,INNER,SLANT,cmu,MED,Y
+Pressure,18,"Shawty seen my neck and lost her breath, need an inhaler",Shawty,18,"Shawty seen my neck and lost her breath, need an inhaler",lost,INNER,SLANT,spelling,LOW,Y
+Pressure,18,"Shawty seen my neck and lost her breath, need an inhaler",inhaler,19,"I might be trippin' but I ain't slippin', I just know-",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,18,"Shawty seen my neck and lost her breath, need an inhaler",inhaler,20,"I ain't chasin' none of you hoes, fuck all you niggas",ain't,INNER,ASSONANCE,vowel,MED,Y
+Pressure,18,"Shawty seen my neck and lost her breath, need an inhaler",lost,20,"I ain't chasin' none of you hoes, fuck all you niggas",all,INNER,ASSONANCE,vowel,MED,Y
+Pressure,18,"Shawty seen my neck and lost her breath, need an inhaler",Shawty,20,"I ain't chasin' none of you hoes, fuck all you niggas",all,INNER,SLANT,spelling,LOW,Y
+Pressure,19,"I might be trippin' but I ain't slippin', I just know-",might trippin,19,"I might be trippin' but I ain't slippin', I just know-",ain't slippin,INNER,MULTI,multi,HIGH,Y
+Pressure,19,"I might be trippin' but I ain't slippin', I just know-",trippin,19,"I might be trippin' but I ain't slippin', I just know-",slippin,INNER,MULTI,multi,HIGH,Y
+Pressure,19,"I might be trippin' but I ain't slippin', I just know-",ain't,20,"I ain't chasin' none of you hoes, fuck all you niggas",ain't,INNER,REPEAT,spelling,HIGH,N
+Pressure,19,"I might be trippin' but I ain't slippin', I just know-",know,20,"I ain't chasin' none of you hoes, fuck all you niggas",hoes,INNER,ASSONANCE,vowel,MED,Y
+Pressure,19,"I might be trippin' but I ain't slippin', I just know-",know,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",know,INNER,REPEAT,spelling,HIGH,N
+Pressure,19,"I might be trippin' but I ain't slippin', I just know-",might,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",like,INNER,SLANT,cmu,MED,Y
+Pressure,19,"I might be trippin' but I ain't slippin', I just know-",might,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",silent,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,"I ain't chasin' none of you hoes, fuck all you niggas",none,20,"I ain't chasin' none of you hoes, fuck all you niggas",fuck,INNER,SLANT,cmu,MED,Y
+Pressure,20,"I ain't chasin' none of you hoes, fuck all you niggas",niggas,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",Jigga,END,SLANT,spelling,LOW,Y
+Pressure,20,"I ain't chasin' none of you hoes, fuck all you niggas",fuck,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",comin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,"I ain't chasin' none of you hoes, fuck all you niggas",fuck,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",hustle,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,"I ain't chasin' none of you hoes, fuck all you niggas",hoes,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",know,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,"I ain't chasin' none of you hoes, fuck all you niggas",none,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",comin,INNER,SLANT,cmu,MED,Y
+Pressure,20,"I ain't chasin' none of you hoes, fuck all you niggas",none,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",hustle,INNER,ASSONANCE,vowel,MED,Y
+Pressure,20,"I ain't chasin' none of you hoes, fuck all you niggas",all,22,"Slept in the bando with tears, roaches on the floor",floor,INNER,SLANT,cmu,MED,Y
+Pressure,20,"I ain't chasin' none of you hoes, fuck all you niggas",hoes,22,"Slept in the bando with tears, roaches on the floor",roaches,INNER,SLANT,cmu,MED,Y
+Pressure,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",comin,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",hustle,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",like,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",like,INNER,REPEAT,spelling,HIGH,N
+Pressure,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",silent,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",like,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",know,22,"Slept in the bando with tears, roaches on the floor",bando,INNER,ASSONANCE,vowel,LOW,N
+Pressure,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",know,22,"Slept in the bando with tears, roaches on the floor",roaches,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",comin,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",Buzz,INNER,ASSONANCE,vowel,MED,Y
+Pressure,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",comin,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",thuggin,INNER,ASSONANCE,vowel,LOW,N
+Pressure,21,"You know how I'm comin', I'm silent like B's, I hustle like Jigga",hustle,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",Buzz,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,"Slept in the bando with tears, roaches on the floor",Slept,22,"Slept in the bando with tears, roaches on the floor",tears,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,"Slept in the bando with tears, roaches on the floor",Slept,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",bed,INNER,SLANT,cmu,MED,Y
+Pressure,22,"Slept in the bando with tears, roaches on the floor",Slept,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",swear,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,"Slept in the bando with tears, roaches on the floor",tears,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",bed,INNER,ASSONANCE,vowel,MED,Y
+Pressure,22,"Slept in the bando with tears, roaches on the floor",tears,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",swear,INNER,SLANT,cmu,MED,Y
+Pressure,22,"Slept in the bando with tears, roaches on the floor",floor,24,"Kick me out of school, I went to the hound way before the uniform change",before,INNER,PERFECT,cmu,HIGH,Y
+Pressure,22,"Slept in the bando with tears, roaches on the floor",floor,24,"Kick me out of school, I went to the hound way before the uniform change",uniform,INNER,SLANT,cmu,MED,Y
+Pressure,22,"Slept in the bando with tears, roaches on the floor",Slept,24,"Kick me out of school, I went to the hound way before the uniform change",went,INNER,SLANT,cmu,MED,Y
+Pressure,22,"Slept in the bando with tears, roaches on the floor",tears,24,"Kick me out of school, I went to the hound way before the uniform change",went,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",bed,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",swear,INNER,SLANT,cmu,MED,Y
+Pressure,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",bed,24,"Kick me out of school, I went to the hound way before the uniform change",went,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",pistol,24,"Kick me out of school, I went to the hound way before the uniform change",Kick,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",swear,24,"Kick me out of school, I went to the hound way before the uniform change",went,INNER,ASSONANCE,vowel,MED,Y
+Pressure,23,"Buzz in the bed, swear I was thuggin', it was me and my pistol",thuggin,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",robbin,INNER,PERFECT,spelling,MED,Y
+Pressure,24,"Kick me out of school, I went to the hound way before the uniform change",before,24,"Kick me out of school, I went to the hound way before the uniform change",uniform,INNER,SLANT,cmu,MED,Y
+Pressure,24,"Kick me out of school, I went to the hound way before the uniform change",way,24,"Kick me out of school, I went to the hound way before the uniform change",change,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Kick me out of school, I went to the hound way before the uniform change",change,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",game,END,ASSONANCE,vowel,MED,Y
+Pressure,24,"Kick me out of school, I went to the hound way before the uniform change",change,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",graduatin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Kick me out of school, I went to the hound way before the uniform change",school,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",shootin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Kick me out of school, I went to the hound way before the uniform change",way,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",game,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Kick me out of school, I went to the hound way before the uniform change",way,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",graduatin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,24,"Kick me out of school, I went to the hound way before the uniform change",went,26,"Pull up in a skrr-skrr, let it squirt, squirt, 21 gang, gang",let,INNER,SLANT,cmu,MED,Y
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",graduatin,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",game,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",robbin,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",robbin,INNER,REPEAT,spelling,HIGH,N
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",robbin,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",started,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",started,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",robbin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",First,26,"Pull up in a skrr-skrr, let it squirt, squirt, 21 gang, gang",squirt,INNER,SLANT,cmu,MED,Y
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",game,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",chain,INNER,SLANT,cmu,MED,Y
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",graduatin,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",chain,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",robbin,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",rockin,INNER,SLANT,cmu,MED,Y
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",shootin,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",crew,INNER,ASSONANCE,vowel,MED,Y
+Pressure,25,"First I was robbin', shootin' and graduatin', started robbin' dice game",started,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",rockin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,26,"Pull up in a skrr-skrr, let it squirt, squirt, 21 gang, gang",gang,26,"Pull up in a skrr-skrr, let it squirt, squirt, 21 gang, gang",gang,INNER,REPEAT,spelling,HIGH,N
+Pressure,26,"Pull up in a skrr-skrr, let it squirt, squirt, 21 gang, gang",squirt,26,"Pull up in a skrr-skrr, let it squirt, squirt, 21 gang, gang",squirt,INNER,REPEAT,spelling,HIGH,N
+Pressure,26,"Pull up in a skrr-skrr, let it squirt, squirt, 21 gang, gang",gang,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",gang,END,REPEAT,spelling,HIGH,N
+Pressure,26,"Pull up in a skrr-skrr, let it squirt, squirt, 21 gang, gang",gang,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",gang,INNER,REPEAT,spelling,HIGH,N
+Pressure,26,"Pull up in a skrr-skrr, let it squirt, squirt, 21 gang, gang",gang,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",Gang,INNER,REPEAT,spelling,HIGH,N
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",chain,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",chain,INNER,REPEAT,spelling,HIGH,N
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",gang,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",Gang,INNER,REPEAT,spelling,HIGH,N
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",nigga,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",niggas,INNER,SLANT,spelling,LOW,Y
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",real,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",free,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",real,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",screamin,INNER,ASSONANCE,vowel,MED,Y
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",rockin,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",lock,INNER,SLANT,cmu,MED,Y
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",Eliantte,29,"Fourth quarter, three seconds left, nigga you can put it all on me",left,INNER,ASSONANCE,vowel,LOW,N
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",gang,29,"Fourth quarter, three seconds left, nigga you can put it all on me",can,INNER,SLANT,cmu,MED,Y
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",nigga,29,"Fourth quarter, three seconds left, nigga you can put it all on me",nigga,INNER,REPEAT,spelling,HIGH,N
+Pressure,27,"Whole crew rockin' Eliantte, nigga we the real chain gang",real,29,"Fourth quarter, three seconds left, nigga you can put it all on me",three,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",Gang,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",gang,INNER,REPEAT,spelling,HIGH,N
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",screamin,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",free,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",Still,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",'til,INNER,PERFECT,cmu,HIGH,Y
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",free,29,"Fourth quarter, three seconds left, nigga you can put it all on me",three,INNER,PERFECT,cmu,HIGH,Y
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",Gang,29,"Fourth quarter, three seconds left, nigga you can put it all on me",can,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",niggas,29,"Fourth quarter, three seconds left, nigga you can put it all on me",nigga,INNER,SLANT,spelling,LOW,Y
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",screamin,29,"Fourth quarter, three seconds left, nigga you can put it all on me",three,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",'til,30,"How you let your problems build up, turn around and let 'em fall on me?",build,INNER,SLANT,cmu,MED,Y
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",lock,30,"How you let your problems build up, turn around and let 'em fall on me?",problems,INNER,ASSONANCE,vowel,MED,Y
+Pressure,28,"Still screamin' ""Gang, gang"" 'til they lock my niggas in the chain gang free",Still,30,"How you let your problems build up, turn around and let 'em fall on me?",build,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",Fourth,29,"Fourth quarter, three seconds left, nigga you can put it all on me",all,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",Fourth,29,"Fourth quarter, three seconds left, nigga you can put it all on me",quarter,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",quarter,29,"Fourth quarter, three seconds left, nigga you can put it all on me",all,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",seconds,29,"Fourth quarter, three seconds left, nigga you can put it all on me",left,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",all,30,"How you let your problems build up, turn around and let 'em fall on me?",fall,END,PERFECT,cmu,HIGH,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",Fourth,30,"How you let your problems build up, turn around and let 'em fall on me?",fall,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",left,30,"How you let your problems build up, turn around and let 'em fall on me?",let,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",quarter,30,"How you let your problems build up, turn around and let 'em fall on me?",fall,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",seconds,30,"How you let your problems build up, turn around and let 'em fall on me?",let,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",all,31,Takin' advantage 'cause I'm good hearted and you can call on me,call,END,PERFECT,cmu,HIGH,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",can,31,Takin' advantage 'cause I'm good hearted and you can call on me,advantage,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",can,31,Takin' advantage 'cause I'm good hearted and you can call on me,can,INNER,REPEAT,spelling,HIGH,N
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",Fourth,31,Takin' advantage 'cause I'm good hearted and you can call on me,call,INNER,ASSONANCE,vowel,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",put,31,Takin' advantage 'cause I'm good hearted and you can call on me,good,INNER,SLANT,cmu,MED,Y
+Pressure,29,"Fourth quarter, three seconds left, nigga you can put it all on me",quarter,31,Takin' advantage 'cause I'm good hearted and you can call on me,call,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"How you let your problems build up, turn around and let 'em fall on me?",How,30,"How you let your problems build up, turn around and let 'em fall on me?",around,INNER,ASSONANCE,vowel,MED,Y
+Pressure,30,"How you let your problems build up, turn around and let 'em fall on me?",let,30,"How you let your problems build up, turn around and let 'em fall on me?",let,INNER,REPEAT,spelling,HIGH,N
+Pressure,30,"How you let your problems build up, turn around and let 'em fall on me?",fall,31,Takin' advantage 'cause I'm good hearted and you can call on me,call,END,PERFECT,cmu,HIGH,Y
+Pressure,30,"How you let your problems build up, turn around and let 'em fall on me?",problems,31,Takin' advantage 'cause I'm good hearted and you can call on me,hearted,INNER,ASSONANCE,vowel,MED,Y
+Pressure,31,Takin' advantage 'cause I'm good hearted and you can call on me,advantage,31,Takin' advantage 'cause I'm good hearted and you can call on me,can,INNER,ASSONANCE,vowel,MED,Y

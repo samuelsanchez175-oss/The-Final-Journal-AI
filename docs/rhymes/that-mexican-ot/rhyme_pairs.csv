@@ -1,0 +1,286 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Business,1,"Yeah, yeah, y'all already know what the fuck goin' on, man (Money, ayy, ayy, ayy, ayy)",what,1,"Yeah, yeah, y'all already know what the fuck goin' on, man (Money, ayy, ayy, ayy, ayy)",fuck,INNER,SLANT,cmu,MED,Y
+Business,1,"Yeah, yeah, y'all already know what the fuck goin' on, man (Money, ayy, ayy, ayy, ayy)",fuck,2,"Money (Money, money, money, money)",Money,INNER,SLANT,cmu,MED,Y
+Business,1,"Yeah, yeah, y'all already know what the fuck goin' on, man (Money, ayy, ayy, ayy, ayy)",what,2,"Money (Money, money, money, money)",Money,INNER,SLANT,cmu,MED,Y
+Business,1,"Yeah, yeah, y'all already know what the fuck goin' on, man (Money, ayy, ayy, ayy, ayy)",fuck,3,"Money, money, money, money",Money,INNER,SLANT,cmu,MED,Y
+Business,1,"Yeah, yeah, y'all already know what the fuck goin' on, man (Money, ayy, ayy, ayy, ayy)",what,3,"Money, money, money, money",Money,INNER,SLANT,cmu,MED,Y
+Business,2,"Money (Money, money, money, money)",Money,3,"Money, money, money, money",money,END,REPEAT,spelling,HIGH,N
+Business,2,"Money (Money, money, money, money)",Money,3,"Money, money, money, money",Money,INNER,REPEAT,spelling,HIGH,N
+Business,2,"Money (Money, money, money, money)",Money,4,"Money, money, money, money, money, money, money (Ayo, is that That Mexican OT?)",money,END,REPEAT,spelling,HIGH,N
+Business,2,"Money (Money, money, money, money)",Money,4,"Money, money, money, money, money, money, money (Ayo, is that That Mexican OT?)",Money,INNER,REPEAT,spelling,HIGH,N
+Business,3,"Money, money, money, money",Money,3,"Money, money, money, money",money,INNER,REPEAT,spelling,HIGH,N
+Business,3,"Money, money, money, money",money,4,"Money, money, money, money, money, money, money (Ayo, is that That Mexican OT?)",money,END,REPEAT,spelling,HIGH,N
+Business,3,"Money, money, money, money",Money,4,"Money, money, money, money, money, money, money (Ayo, is that That Mexican OT?)",Money,INNER,REPEAT,spelling,HIGH,N
+Business,3,"Money, money, money, money",Money,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",fuck,INNER,SLANT,cmu,MED,Y
+Business,4,"Money, money, money, money, money, money, money (Ayo, is that That Mexican OT?)",Money,4,"Money, money, money, money, money, money, money (Ayo, is that That Mexican OT?)",money,INNER,REPEAT,spelling,HIGH,N
+Business,4,"Money, money, money, money, money, money, money (Ayo, is that That Mexican OT?)",Money,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",fuck,INNER,SLANT,cmu,MED,Y
+Business,4,"Money, money, money, money, money, money, money (Ayo, is that That Mexican OT?)",Money,6,"She sucked dick at the last show, but at this show, we banned the ho",sucked,INNER,ASSONANCE,vowel,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",jeans,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",mean,INNER,SLANT,cmu,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",lil,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",bitch,INNER,SLANT,cmu,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",these,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",jeans,INNER,SLANT,cmu,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",these,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",mean,INNER,SLANT,cmu,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",thirty,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",jeans,INNER,ASSONANCE,vowel,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",thirty,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",mean,INNER,ASSONANCE,vowel,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",thirty,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",these,INNER,ASSONANCE,vowel,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",broke,6,"She sucked dick at the last show, but at this show, we banned the ho",ho,END,ASSONANCE,vowel,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",bitch,6,"She sucked dick at the last show, but at this show, we banned the ho",dick,INNER,SLANT,cmu,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",broke,6,"She sucked dick at the last show, but at this show, we banned the ho",show,INNER,ASSONANCE,vowel,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",fuck,6,"She sucked dick at the last show, but at this show, we banned the ho",sucked,INNER,SLANT,cmu,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",lil,6,"She sucked dick at the last show, but at this show, we banned the ho",dick,INNER,SLANT,cmu,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",broke,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,ho,END,ASSONANCE,vowel,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",jeans,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,feel,INNER,ASSONANCE,vowel,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",mean,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,feel,INNER,SLANT,cmu,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",these,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,feel,INNER,SLANT,cmu,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",thirty,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,feel,INNER,ASSONANCE,vowel,MED,Y
+Business,5,"I got a thirty ball in these jeans, the fuck you mean, lil' bitch, I'm broke?",broke,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",cantaloupe,END,SLANT,cmu,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",last,6,"She sucked dick at the last show, but at this show, we banned the ho",banned,INNER,ASSONANCE,vowel,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",show,6,"She sucked dick at the last show, but at this show, we banned the ho",ho,INNER,PERFECT,cmu,HIGH,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",show,6,"She sucked dick at the last show, but at this show, we banned the ho",show,INNER,REPEAT,spelling,HIGH,N
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",ho,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,ho,END,REPEAT,spelling,HIGH,N
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",banned,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,can't,INNER,SLANT,cmu,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",banned,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,Dan,INNER,SLANT,cmu,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",banned,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,stand,INNER,PERFECT,cmu,HIGH,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",last,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,can't,INNER,SLANT,cmu,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",last,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,Dan,INNER,ASSONANCE,vowel,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",last,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,stand,INNER,ASSONANCE,vowel,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",show,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,ho,INNER,PERFECT,cmu,HIGH,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",ho,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",cantaloupe,END,ASSONANCE,vowel,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",dick,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",big,INNER,SLANT,cmu,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",ho,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",potato,INNER,PERFECT,cmu,HIGH,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",show,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",cantaloupe,INNER,ASSONANCE,vowel,MED,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",show,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",potato,INNER,PERFECT,cmu,HIGH,Y
+Business,6,"She sucked dick at the last show, but at this show, we banned the ho",sucked,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",gun,INNER,ASSONANCE,vowel,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,can't,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,stand,INNER,SLANT,cmu,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,Dan,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,can't,INNER,SLANT,cmu,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,Dan,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,stand,INNER,SLANT,cmu,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,Lieutenant,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,can't,INNER,SLANT,spelling,LOW,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,Sometimes,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,like,INNER,ASSONANCE,vowel,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,ho,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",cantaloupe,END,ASSONANCE,vowel,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,feel,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",need,INNER,SLANT,cmu,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,ho,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",potato,INNER,PERFECT,cmu,HIGH,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,can't,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",Cadillac,INNER,ASSONANCE,vowel,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,can't,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",saddle,INNER,ASSONANCE,vowel,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,Dan,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",Cadillac,INNER,SLANT,cmu,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,Dan,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",saddle,INNER,ASSONANCE,vowel,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,feel,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",seat,INNER,SLANT,cmu,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,stand,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",Cadillac,INNER,ASSONANCE,vowel,MED,Y
+Business,7,Sometimes I feel like Lieutenant Dan 'cause I just can't stand a ho,stand,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",saddle,INNER,ASSONANCE,vowel,MED,Y
+Business,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",potato,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",cantaloupe,INNER,ASSONANCE,vowel,MED,Y
+Business,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",big,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",lik,INNER,SLANT,spelling,LOW,Y
+Business,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",gun,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",front,INNER,SLANT,cmu,MED,Y
+Business,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",need,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",seat,INNER,SLANT,cmu,MED,Y
+Business,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",big,10,"I'm killin' snakes, make 'em into boots and a keychain with the rattle (Uh-huh, uh-huh)",killin,INNER,ASSONANCE,vowel,MED,Y
+Business,8,"This gun too big for a potato, I need me a cantaloupe (Pеw, pew)",cantaloupe,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",ho,END,ASSONANCE,vowel,MED,Y
+Business,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",Cadillac,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",saddle,INNER,ASSONANCE,vowel,MED,Y
+Business,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",saddle,10,"I'm killin' snakes, make 'em into boots and a keychain with the rattle (Uh-huh, uh-huh)",rattle,END,SLANT,cmu,MED,Y
+Business,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",Cadillac,10,"I'm killin' snakes, make 'em into boots and a keychain with the rattle (Uh-huh, uh-huh)",rattle,INNER,ASSONANCE,vowel,MED,Y
+Business,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",saddle,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",rattle,END,SLANT,cmu,MED,Y
+Business,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",Cadillac,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",rattle,INNER,ASSONANCE,vowel,MED,Y
+Business,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",front,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",somethin,INNER,ASSONANCE,vowel,MED,Y
+Business,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",front,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",thump,INNER,SLANT,cmu,MED,Y
+Business,9,"Uh, cowboy in the Cadillac, front seat look likе a saddle (Uh-huh)",front,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",trunk,INNER,SLANT,cmu,MED,Y
+Business,10,"I'm killin' snakes, make 'em into boots and a keychain with the rattle (Uh-huh, uh-huh)",snakes,10,"I'm killin' snakes, make 'em into boots and a keychain with the rattle (Uh-huh, uh-huh)",make,INNER,SLANT,cmu,MED,Y
+Business,10,"I'm killin' snakes, make 'em into boots and a keychain with the rattle (Uh-huh, uh-huh)",rattle,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",rattle,END,REPEAT,spelling,HIGH,N
+Business,10,"I'm killin' snakes, make 'em into boots and a keychain with the rattle (Uh-huh, uh-huh)",make,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",make,INNER,REPEAT,spelling,HIGH,N
+Business,10,"I'm killin' snakes, make 'em into boots and a keychain with the rattle (Uh-huh, uh-huh)",snakes,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",make,INNER,SLANT,cmu,MED,Y
+Business,10,"I'm killin' snakes, make 'em into boots and a keychain with the rattle (Uh-huh, uh-huh)",killin,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",bitch,INNER,ASSONANCE,vowel,MED,Y
+Business,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",somethin,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",thump,INNER,ASSONANCE,vowel,MED,Y
+Business,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",somethin,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",trunk,INNER,ASSONANCE,vowel,MED,Y
+Business,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",trunk,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",thump,INNER,SLANT,cmu,MED,Y
+Business,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",somethin,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",fuck,INNER,ASSONANCE,vowel,MED,Y
+Business,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",thump,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",fuck,INNER,ASSONANCE,vowel,MED,Y
+Business,11,"I got somethin' that's inside the trunk that thump and make it rattle (Uh-huh, uh-huh)",trunk,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",fuck,INNER,SLANT,cmu,MED,Y
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",Frrt,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",frrt,INNER,REPEAT,spelling,HIGH,N
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",ho,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",ho,END,REPEAT,spelling,HIGH,N
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",bitch,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Big,INNER,SLANT,cmu,MED,Y
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",bitch,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Crips,INNER,ASSONANCE,vowel,MED,Y
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",bitch,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",think,INNER,ASSONANCE,vowel,MED,Y
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",ho,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Zone,INNER,ASSONANCE,vowel,MED,Y
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",steppin,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",checkin,INNER,SLANT,cmu,MED,Y
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",steppin,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Seven,INNER,ASSONANCE,vowel,MED,Y
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",ho,14,"At age thirteen screamin', ""Fuck 12"" with a MAC-11, ho (Grrt)",ho,END,REPEAT,spelling,HIGH,N
+Business,12,"Frrt, frrt, frrt, frrt, bitch, that's how I'm steppin', ho",ho,15,I make them junkies beg for more when I hit 'em with that antidote,antidote,END,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Big,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Crips,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Big,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",think,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Crips,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",think,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Seven,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",checkin,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Zone,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",ho,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",ho,14,"At age thirteen screamin', ""Fuck 12"" with a MAC-11, ho (Grrt)",ho,END,REPEAT,spelling,HIGH,N
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",fuck,14,"At age thirteen screamin', ""Fuck 12"" with a MAC-11, ho (Grrt)",Fuck,INNER,REPEAT,spelling,HIGH,N
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Zone,14,"At age thirteen screamin', ""Fuck 12"" with a MAC-11, ho (Grrt)",ho,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",ho,15,I make them junkies beg for more when I hit 'em with that antidote,antidote,END,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Big,15,I make them junkies beg for more when I hit 'em with that antidote,hit,INNER,SLANT,cmu,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",checkin,15,I make them junkies beg for more when I hit 'em with that antidote,beg,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",checkin,15,I make them junkies beg for more when I hit 'em with that antidote,when,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Crips,15,I make them junkies beg for more when I hit 'em with that antidote,hit,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",fuck,15,I make them junkies beg for more when I hit 'em with that antidote,junkies,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Seven,15,I make them junkies beg for more when I hit 'em with that antidote,beg,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Seven,15,I make them junkies beg for more when I hit 'em with that antidote,when,INNER,SLANT,cmu,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",think,15,I make them junkies beg for more when I hit 'em with that antidote,hit,INNER,ASSONANCE,vowel,MED,Y
+Business,13,"Big Crips in Zone Seven, who the fuck you think you checkin', ho? (For real)",Zone,15,I make them junkies beg for more when I hit 'em with that antidote,antidote,INNER,SLANT,cmu,MED,Y
+Business,14,"At age thirteen screamin', ""Fuck 12"" with a MAC-11, ho (Grrt)",thirteen,14,"At age thirteen screamin', ""Fuck 12"" with a MAC-11, ho (Grrt)",screamin,INNER,SLANT,cmu,MED,Y
+Business,14,"At age thirteen screamin', ""Fuck 12"" with a MAC-11, ho (Grrt)",ho,15,I make them junkies beg for more when I hit 'em with that antidote,antidote,END,ASSONANCE,vowel,MED,Y
+Business,14,"At age thirteen screamin', ""Fuck 12"" with a MAC-11, ho (Grrt)",age,15,I make them junkies beg for more when I hit 'em with that antidote,make,INNER,SLANT,cmu,MED,Y
+Business,14,"At age thirteen screamin', ""Fuck 12"" with a MAC-11, ho (Grrt)",Fuck,15,I make them junkies beg for more when I hit 'em with that antidote,junkies,INNER,ASSONANCE,vowel,MED,Y
+Business,15,I make them junkies beg for more when I hit 'em with that antidote,beg,15,I make them junkies beg for more when I hit 'em with that antidote,when,INNER,SLANT,cmu,MED,Y
+Business,15,I make them junkies beg for more when I hit 'em with that antidote,'em,16,"Uh, uh, uh, uh, bitch, that's how I'm swaggin' on 'em",'em,INNER,REPEAT,spelling,HIGH,N
+Business,15,I make them junkies beg for more when I hit 'em with that antidote,hit,16,"Uh, uh, uh, uh, bitch, that's how I'm swaggin' on 'em",bitch,INNER,SLANT,cmu,MED,Y
+Business,15,I make them junkies beg for more when I hit 'em with that antidote,antidote,17,"Uh, uh, uh, uh, she gon' put that wagon on me",gon,INNER,SLANT,spelling,LOW,Y
+Business,16,"Uh, uh, uh, uh, bitch, that's how I'm swaggin' on 'em",swaggin,17,"Uh, uh, uh, uh, she gon' put that wagon on me",wagon,INNER,SLANT,spelling,LOW,Y
+Business,16,"Uh, uh, uh, uh, bitch, that's how I'm swaggin' on 'em",'em,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",'em,END,REPEAT,spelling,HIGH,N
+Business,16,"Uh, uh, uh, uh, bitch, that's how I'm swaggin' on 'em",bitch,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",ching,INNER,SLANT,cmu,MED,Y
+Business,17,"Uh, uh, uh, uh, she gon' put that wagon on me",gon,17,"Uh, uh, uh, uh, she gon' put that wagon on me",wagon,INNER,PERFECT,spelling,MED,Y
+Business,17,"Uh, uh, uh, uh, she gon' put that wagon on me",wagon,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",tags,INNER,SLANT,cmu,MED,Y
+Business,17,"Uh, uh, uh, uh, she gon' put that wagon on me",wagon,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",ass,INNER,ASSONANCE,vowel,MED,Y
+Business,17,"Uh, uh, uh, uh, she gon' put that wagon on me",wagon,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",stand,INNER,ASSONANCE,vowel,MED,Y
+Business,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",cha,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",poppin,INNER,ASSONANCE,vowel,MED,Y
+Business,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",ching,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",bitch,INNER,SLANT,cmu,MED,Y
+Business,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",ching,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",business,INNER,ASSONANCE,vowel,MED,Y
+Business,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",ching,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",him,INNER,SLANT,cmu,MED,Y
+Business,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",ching,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",I'ma,INNER,SLANT,spelling,LOW,Y
+Business,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",tags,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",ass,INNER,ASSONANCE,vowel,MED,Y
+Business,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",tags,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",stand,INNER,ASSONANCE,vowel,MED,Y
+Business,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",'em,20,"Please don't talk too much around me, cook some food and do them dishes",some,INNER,PERFECT,cmu,HIGH,Y
+Business,18,"Uh, uh, uh, uh, cha-ching, I'm poppin' tags up on 'em",ching,20,"Please don't talk too much around me, cook some food and do them dishes",dishes,INNER,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",ass,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",stand,INNER,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",bitch,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",business,INNER,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",bitch,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",him,INNER,SLANT,cmu,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",bitch,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",I'ma,INNER,SLANT,spelling,LOW,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",him,INNER,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",I'ma,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",him,INNER,SLANT,spelling,LOW,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",him,20,"Please don't talk too much around me, cook some food and do them dishes",dishes,END,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",bitch,20,"Please don't talk too much around me, cook some food and do them dishes",dishes,INNER,SLANT,cmu,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",business,20,"Please don't talk too much around me, cook some food and do them dishes",dishes,INNER,SLANT,cmu,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",go,20,"Please don't talk too much around me, cook some food and do them dishes",don't,INNER,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",Treat,20,"Please don't talk too much around me, cook some food and do them dishes",Please,INNER,SLANT,cmu,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",him,21,We gon' spray some shit for sure when we come through with blitz with switches,switches,END,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",bitch,21,We gon' spray some shit for sure when we come through with blitz with switches,blitz,INNER,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",bitch,21,We gon' spray some shit for sure when we come through with blitz with switches,shit,INNER,SLANT,cmu,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",bitch,21,We gon' spray some shit for sure when we come through with blitz with switches,switches,INNER,SLANT,cmu,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",business,21,We gon' spray some shit for sure when we come through with blitz with switches,blitz,INNER,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",business,21,We gon' spray some shit for sure when we come through with blitz with switches,shit,INNER,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",business,21,We gon' spray some shit for sure when we come through with blitz with switches,switches,INNER,SLANT,cmu,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",him,21,We gon' spray some shit for sure when we come through with blitz with switches,blitz,INNER,ASSONANCE,vowel,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",him,21,We gon' spray some shit for sure when we come through with blitz with switches,shit,INNER,SLANT,cmu,MED,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",I'ma,21,We gon' spray some shit for sure when we come through with blitz with switches,shit,INNER,SLANT,spelling,LOW,Y
+Business,19,"Treat his bitch ass just like business, I'ma go on and stand up on him",him,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",livin,END,ASSONANCE,vowel,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",much,20,"Please don't talk too much around me, cook some food and do them dishes",some,INNER,SLANT,cmu,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",dishes,21,We gon' spray some shit for sure when we come through with blitz with switches,switches,END,SLANT,cmu,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",cook,21,We gon' spray some shit for sure when we come through with blitz with switches,sure,INNER,SLANT,cmu,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",dishes,21,We gon' spray some shit for sure when we come through with blitz with switches,blitz,INNER,ASSONANCE,vowel,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",dishes,21,We gon' spray some shit for sure when we come through with blitz with switches,shit,INNER,ASSONANCE,vowel,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",don't,21,We gon' spray some shit for sure when we come through with blitz with switches,gon,INNER,SLANT,spelling,LOW,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",food,21,We gon' spray some shit for sure when we come through with blitz with switches,through,INNER,ASSONANCE,vowel,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",much,21,We gon' spray some shit for sure when we come through with blitz with switches,come,INNER,SLANT,cmu,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",much,21,We gon' spray some shit for sure when we come through with blitz with switches,some,INNER,SLANT,cmu,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",some,21,We gon' spray some shit for sure when we come through with blitz with switches,come,INNER,PERFECT,cmu,HIGH,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",some,21,We gon' spray some shit for sure when we come through with blitz with switches,some,INNER,REPEAT,spelling,HIGH,N
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",dishes,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",livin,END,ASSONANCE,vowel,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",around,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",how,INNER,ASSONANCE,vowel,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",much,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",come,INNER,SLANT,cmu,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",Please,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",see,INNER,ASSONANCE,vowel,MED,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",some,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",come,INNER,PERFECT,cmu,HIGH,Y
+Business,20,"Please don't talk too much around me, cook some food and do them dishes",dishes,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,Fitness,END,ASSONANCE,vowel,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,blitz,21,We gon' spray some shit for sure when we come through with blitz with switches,switches,INNER,ASSONANCE,vowel,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,shit,21,We gon' spray some shit for sure when we come through with blitz with switches,blitz,INNER,SLANT,cmu,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,shit,21,We gon' spray some shit for sure when we come through with blitz with switches,switches,INNER,ASSONANCE,vowel,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,some,21,We gon' spray some shit for sure when we come through with blitz with switches,come,INNER,PERFECT,cmu,HIGH,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,switches,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",livin,END,ASSONANCE,vowel,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,blitz,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",livin,INNER,ASSONANCE,vowel,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,come,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",come,INNER,REPEAT,spelling,HIGH,N
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,shit,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",livin,INNER,ASSONANCE,vowel,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,some,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",come,INNER,PERFECT,cmu,HIGH,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,when,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",Tes,INNER,SLANT,spelling,LOW,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,come,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",come,INNER,REPEAT,spelling,HIGH,N
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,some,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",come,INNER,PERFECT,cmu,HIGH,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,through,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",Louis,INNER,ASSONANCE,vowel,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,when,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",spendin,INNER,ASSONANCE,vowel,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,when,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",spent,INNER,SLANT,cmu,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,switches,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,Fitness,END,ASSONANCE,vowel,MED,Y
+Business,21,We gon' spray some shit for sure when we come through with blitz with switches,switches,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",finished,END,ASSONANCE,vowel,MED,Y
+Business,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",come,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",come,INNER,REPEAT,spelling,HIGH,N
+Business,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",how,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",how,INNER,REPEAT,spelling,HIGH,N
+Business,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",see,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",see,INNER,REPEAT,spelling,HIGH,N
+Business,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",livin,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,Fitness,END,ASSONANCE,vowel,MED,Y
+Business,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",bought,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,LA,INNER,ASSONANCE,vowel,MED,Y
+Business,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",Cyber,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,like,INNER,SLANT,cmu,MED,Y
+Business,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",livin,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",finished,END,ASSONANCE,vowel,MED,Y
+Business,22,"I just bought a matchin' Cyber Tes', come see how I'm livin'",livin,26,You hear that monster in my vehicle when I crank up my ignition,ignition,END,ASSONANCE,vowel,MED,Y
+Business,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",spent,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",spendin,INNER,ASSONANCE,vowel,MED,Y
+Business,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",walked,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",forty,INNER,SLANT,cmu,MED,Y
+Business,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",Louis,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,movin,INNER,ASSONANCE,vowel,MED,Y
+Business,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",come,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",cuddle,INNER,ASSONANCE,vowel,MED,Y
+Business,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",spendin,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",when,INNER,ASSONANCE,vowel,MED,Y
+Business,23,"I just walked in Louis and spent a forty, come see how I'm spendin'",spent,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",when,INNER,SLANT,cmu,MED,Y
+Business,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,Fitness,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",finished,END,ASSONANCE,vowel,MED,Y
+Business,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,Fitness,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",bitch,INNER,ASSONANCE,vowel,MED,Y
+Business,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,Fitness,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",kick,INNER,ASSONANCE,vowel,MED,Y
+Business,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,weight,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",ain't,INNER,SLANT,cmu,MED,Y
+Business,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,Fitness,26,You hear that monster in my vehicle when I crank up my ignition,ignition,END,ASSONANCE,vowel,MED,Y
+Business,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,LA,26,You hear that monster in my vehicle when I crank up my ignition,monster,INNER,ASSONANCE,vowel,MED,Y
+Business,24,Only workin' out I'm doin' is movin' this weight like LA Fitness,Fitness,27,"Got all my chains on in the band, I ain't have to get permission",permission,END,ASSONANCE,vowel,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",bitch,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",finished,INNER,ASSONANCE,vowel,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",I'ma,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",bitch,INNER,SLANT,spelling,LOW,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",I'ma,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",kick,INNER,SLANT,spelling,LOW,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",kick,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",bitch,INNER,SLANT,cmu,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",kick,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",finished,INNER,ASSONANCE,vowel,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",finished,26,You hear that monster in my vehicle when I crank up my ignition,ignition,END,ASSONANCE,vowel,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",bitch,26,You hear that monster in my vehicle when I crank up my ignition,ignition,INNER,ASSONANCE,vowel,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",kick,26,You hear that monster in my vehicle when I crank up my ignition,ignition,INNER,ASSONANCE,vowel,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",tryna,26,You hear that monster in my vehicle when I crank up my ignition,hear,INNER,SLANT,spelling,LOW,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",when,26,You hear that monster in my vehicle when I crank up my ignition,when,INNER,REPEAT,spelling,HIGH,N
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",finished,27,"Got all my chains on in the band, I ain't have to get permission",permission,END,ASSONANCE,vowel,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",ain't,27,"Got all my chains on in the band, I ain't have to get permission",ain't,INNER,REPEAT,spelling,HIGH,N
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",ain't,27,"Got all my chains on in the band, I ain't have to get permission",chains,INNER,SLANT,cmu,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",bitch,27,"Got all my chains on in the band, I ain't have to get permission",permission,INNER,ASSONANCE,vowel,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",kick,27,"Got all my chains on in the band, I ain't have to get permission",permission,INNER,ASSONANCE,vowel,MED,Y
+Business,25,"I ain't tryna cuddle, I'ma kick that bitch out when I'm finished",when,27,"Got all my chains on in the band, I ain't have to get permission",get,INNER,SLANT,cmu,MED,Y
+Business,26,You hear that monster in my vehicle when I crank up my ignition,hear,26,You hear that monster in my vehicle when I crank up my ignition,vehicle,INNER,ASSONANCE,vowel,MED,Y
+Business,26,You hear that monster in my vehicle when I crank up my ignition,ignition,27,"Got all my chains on in the band, I ain't have to get permission",permission,END,MULTI,multi,HIGH,Y
+Business,26,You hear that monster in my vehicle when I crank up my ignition,crank,27,"Got all my chains on in the band, I ain't have to get permission",band,INNER,SLANT,cmu,MED,Y
+Business,26,You hear that monster in my vehicle when I crank up my ignition,crank,27,"Got all my chains on in the band, I ain't have to get permission",have,INNER,ASSONANCE,vowel,MED,Y
+Business,26,You hear that monster in my vehicle when I crank up my ignition,monster,27,"Got all my chains on in the band, I ain't have to get permission",Got,INNER,ASSONANCE,vowel,MED,Y
+Business,26,You hear that monster in my vehicle when I crank up my ignition,when,27,"Got all my chains on in the band, I ain't have to get permission",get,INNER,SLANT,cmu,MED,Y
+Business,26,You hear that monster in my vehicle when I crank up my ignition,ignition,28,"Nigga, pussy boy, we took your shit and you ain't say a word",shit,INNER,ASSONANCE,vowel,MED,Y
+Business,26,You hear that monster in my vehicle when I crank up my ignition,ignition,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",blitz,END,ASSONANCE,vowel,MED,Y
+Business,27,"Got all my chains on in the band, I ain't have to get permission",band,27,"Got all my chains on in the band, I ain't have to get permission",have,INNER,ASSONANCE,vowel,MED,Y
+Business,27,"Got all my chains on in the band, I ain't have to get permission",chains,27,"Got all my chains on in the band, I ain't have to get permission",ain't,INNER,SLANT,cmu,MED,Y
+Business,27,"Got all my chains on in the band, I ain't have to get permission",ain't,28,"Nigga, pussy boy, we took your shit and you ain't say a word",ain't,INNER,REPEAT,spelling,HIGH,N
+Business,27,"Got all my chains on in the band, I ain't have to get permission",ain't,28,"Nigga, pussy boy, we took your shit and you ain't say a word",say,INNER,ASSONANCE,vowel,MED,Y
+Business,27,"Got all my chains on in the band, I ain't have to get permission",chains,28,"Nigga, pussy boy, we took your shit and you ain't say a word",ain't,INNER,SLANT,cmu,MED,Y
+Business,27,"Got all my chains on in the band, I ain't have to get permission",chains,28,"Nigga, pussy boy, we took your shit and you ain't say a word",say,INNER,ASSONANCE,vowel,MED,Y
+Business,27,"Got all my chains on in the band, I ain't have to get permission",permission,28,"Nigga, pussy boy, we took your shit and you ain't say a word",shit,INNER,ASSONANCE,vowel,MED,Y
+Business,27,"Got all my chains on in the band, I ain't have to get permission",get,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",swear,INNER,SLANT,cmu,MED,Y
+Business,27,"Got all my chains on in the band, I ain't have to get permission",Got,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",Casa,INNER,SLANT,cmu,MED,Y
+Business,27,"Got all my chains on in the band, I ain't have to get permission",permission,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",blitz,END,ASSONANCE,vowel,MED,Y
+Business,28,"Nigga, pussy boy, we took your shit and you ain't say a word",ain't,28,"Nigga, pussy boy, we took your shit and you ain't say a word",say,INNER,ASSONANCE,vowel,MED,Y
+Business,28,"Nigga, pussy boy, we took your shit and you ain't say a word",Nigga,28,"Nigga, pussy boy, we took your shit and you ain't say a word",shit,INNER,SLANT,spelling,LOW,Y
+Business,28,"Nigga, pussy boy, we took your shit and you ain't say a word",pussy,28,"Nigga, pussy boy, we took your shit and you ain't say a word",took,INNER,SLANT,cmu,MED,Y
+Business,28,"Nigga, pussy boy, we took your shit and you ain't say a word",word,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",blur,END,ASSONANCE,vowel,MED,Y
+Business,28,"Nigga, pussy boy, we took your shit and you ain't say a word",ain't,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",make,INNER,ASSONANCE,vowel,MED,Y
+Business,28,"Nigga, pussy boy, we took your shit and you ain't say a word",say,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",make,INNER,ASSONANCE,vowel,MED,Y
+Business,28,"Nigga, pussy boy, we took your shit and you ain't say a word",shit,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",blitz,INNER,SLANT,cmu,MED,Y
+Business,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",Casa,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",Got,INNER,SLANT,cmu,MED,Y
+Business,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",night,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",like,INNER,SLANT,cmu,MED,Y
+Business,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",swear,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",Melly,INNER,SLANT,cmu,MED,Y
+Business,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",swear,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",send,INNER,ASSONANCE,vowel,MED,Y
+Business,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",swear,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",steppin,INNER,ASSONANCE,vowel,MED,Y
+Business,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",swear,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",deadly,INNER,ASSONANCE,vowel,MED,Y
+Business,29,"On them 'shrooms and Casa Azul, I swear that night, it was a blur",swear,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",let's,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",Melly,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",send,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",steppin,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",Melly,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",steppin,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",send,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",blitz,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",built,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",blitz,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",shit,INNER,SLANT,cmu,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",don't,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",folks,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",don't,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",go,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",make,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",straight,INNER,SLANT,cmu,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",Melly,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",deadly,INNER,SLANT,cmu,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",Melly,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",let's,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",send,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",deadly,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",send,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",let's,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",steppin,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",deadly,INNER,ASSONANCE,vowel,MED,Y
+Business,30,"Got them youngin's steppin' like Melly and Von, don't make me send a blitz",steppin,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",let's,INNER,ASSONANCE,vowel,MED,Y
+Business,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",built,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",shit,INNER,SLANT,cmu,MED,Y
+Business,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",deadly,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",let's,INNER,ASSONANCE,vowel,MED,Y
+Business,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",folks,31,"I just built them folks straight from scratch, I'm deadly with this shit, let's go",go,INNER,ASSONANCE,vowel,MED,Y
