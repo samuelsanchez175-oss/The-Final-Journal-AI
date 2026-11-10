@@ -1,0 +1,341 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+30 Clip,1,Pull up on you with a dirty clip (Blaow-blaow),clip,2,"Better duck, I pull it off the hip (Off the hip)",hip,END,PERFECT,cmu,HIGH,Y
+30 Clip,1,Pull up on you with a dirty clip (Blaow-blaow),Pull,2,"Better duck, I pull it off the hip (Off the hip)",pull,INNER,REPEAT,spelling,HIGH,N
+30 Clip,1,Pull up on you with a dirty clip (Blaow-blaow),clip,3,"If I pull it, I'ma let it rip (Let it rip)",rip,END,PERFECT,cmu,HIGH,Y
+30 Clip,1,Pull up on you with a dirty clip (Blaow-blaow),clip,3,"If I pull it, I'ma let it rip (Let it rip)",I'ma,INNER,SLANT,spelling,LOW,Y
+30 Clip,1,Pull up on you with a dirty clip (Blaow-blaow),Pull,3,"If I pull it, I'ma let it rip (Let it rip)",pull,INNER,REPEAT,spelling,HIGH,N
+30 Clip,2,"Better duck, I pull it off the hip (Off the hip)",hip,3,"If I pull it, I'ma let it rip (Let it rip)",rip,END,PERFECT,cmu,HIGH,Y
+30 Clip,2,"Better duck, I pull it off the hip (Off the hip)",Better,3,"If I pull it, I'ma let it rip (Let it rip)",let,INNER,SLANT,cmu,MED,Y
+30 Clip,2,"Better duck, I pull it off the hip (Off the hip)",hip,3,"If I pull it, I'ma let it rip (Let it rip)",I'ma,INNER,SLANT,spelling,LOW,Y
+30 Clip,2,"Better duck, I pull it off the hip (Off the hip)",pull,3,"If I pull it, I'ma let it rip (Let it rip)",pull,INNER,REPEAT,spelling,HIGH,N
+30 Clip,3,"If I pull it, I'ma let it rip (Let it rip)",I'ma,3,"If I pull it, I'ma let it rip (Let it rip)",rip,INNER,SLANT,spelling,LOW,Y
+30 Clip,3,"If I pull it, I'ma let it rip (Let it rip)",pull,5,"I'm like a track star, bullets gonna fuckin' meet ya",bullets,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,4,"I got that thirty thang, nine millimeter",thirty,4,"I got that thirty thang, nine millimeter",millimeter,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,4,"I got that thirty thang, nine millimeter",millimeter,5,"I'm like a track star, bullets gonna fuckin' meet ya",meet,END,SLANT,cmu,MED,Y
+30 Clip,4,"I got that thirty thang, nine millimeter",got,5,"I'm like a track star, bullets gonna fuckin' meet ya",gonna,INNER,SLANT,cmu,MED,Y
+30 Clip,4,"I got that thirty thang, nine millimeter",got,5,"I'm like a track star, bullets gonna fuckin' meet ya",star,INNER,SLANT,cmu,MED,Y
+30 Clip,4,"I got that thirty thang, nine millimeter",nine,5,"I'm like a track star, bullets gonna fuckin' meet ya",like,INNER,SLANT,cmu,MED,Y
+30 Clip,4,"I got that thirty thang, nine millimeter",thang,5,"I'm like a track star, bullets gonna fuckin' meet ya",track,INNER,SLANT,cmu,MED,Y
+30 Clip,4,"I got that thirty thang, nine millimeter",thirty,5,"I'm like a track star, bullets gonna fuckin' meet ya",meet,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,4,"I got that thirty thang, nine millimeter",nine,6,"It's the ice king, price on your head (Head)",ice,INNER,SLANT,cmu,MED,Y
+30 Clip,4,"I got that thirty thang, nine millimeter",nine,6,"It's the ice king, price on your head (Head)",price,INNER,SLANT,cmu,MED,Y
+30 Clip,5,"I'm like a track star, bullets gonna fuckin' meet ya",star,5,"I'm like a track star, bullets gonna fuckin' meet ya",gonna,INNER,SLANT,cmu,MED,Y
+30 Clip,5,"I'm like a track star, bullets gonna fuckin' meet ya",like,6,"It's the ice king, price on your head (Head)",ice,INNER,SLANT,cmu,MED,Y
+30 Clip,5,"I'm like a track star, bullets gonna fuckin' meet ya",like,6,"It's the ice king, price on your head (Head)",price,INNER,SLANT,cmu,MED,Y
+30 Clip,5,"I'm like a track star, bullets gonna fuckin' meet ya",fuckin,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",funk,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,5,"I'm like a track star, bullets gonna fuckin' meet ya",track,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",have,INNER,SLANT,cmu,MED,Y
+30 Clip,6,"It's the ice king, price on your head (Head)",ice,6,"It's the ice king, price on your head (Head)",price,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,6,"It's the ice king, price on your head (Head)",head,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",dead,END,PERFECT,cmu,HIGH,Y
+30 Clip,6,"It's the ice king, price on your head (Head)",head,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",Ten,INNER,SLANT,cmu,MED,Y
+30 Clip,6,"It's the ice king, price on your head (Head)",head,8,"I got young niggas, yeah, I keep 'em fed",fed,END,PERFECT,cmu,HIGH,Y
+30 Clip,6,"It's the ice king, price on your head (Head)",head,9,"Street cred, have you bitch niggas fuckin' dead",dead,END,PERFECT,cmu,HIGH,Y
+30 Clip,6,"It's the ice king, price on your head (Head)",head,10,"Did three years, ice king, fuck the feds",feds,END,SLANT,cmu,MED,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",Ten,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",dead,INNER,SLANT,cmu,MED,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",dead,8,"I got young niggas, yeah, I keep 'em fed",fed,END,PERFECT,cmu,HIGH,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",funk,8,"I got young niggas, yeah, I keep 'em fed",young,INNER,SLANT,cmu,MED,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",nigga,8,"I got young niggas, yeah, I keep 'em fed",niggas,INNER,SLANT,spelling,LOW,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",Ten,8,"I got young niggas, yeah, I keep 'em fed",fed,INNER,SLANT,cmu,MED,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",dead,9,"Street cred, have you bitch niggas fuckin' dead",dead,END,REPEAT,spelling,HIGH,N
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",dead,9,"Street cred, have you bitch niggas fuckin' dead",cred,INNER,PERFECT,spelling,MED,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",funk,9,"Street cred, have you bitch niggas fuckin' dead",fuckin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",have,9,"Street cred, have you bitch niggas fuckin' dead",have,INNER,REPEAT,spelling,HIGH,N
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",nigga,9,"Street cred, have you bitch niggas fuckin' dead",niggas,INNER,SLANT,spelling,LOW,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",Ten,9,"Street cred, have you bitch niggas fuckin' dead",cred,INNER,SLANT,spelling,LOW,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",Ten,9,"Street cred, have you bitch niggas fuckin' dead",dead,INNER,SLANT,cmu,MED,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",dead,10,"Did three years, ice king, fuck the feds",feds,END,SLANT,cmu,MED,Y
+30 Clip,7,"Ten Gs, funk with me, nigga, have you dead (Dead)",dead,11,"Tell on me, fuck around and meet the lead",lead,END,PERFECT,cmu,HIGH,Y
+30 Clip,8,"I got young niggas, yeah, I keep 'em fed",fed,9,"Street cred, have you bitch niggas fuckin' dead",dead,END,PERFECT,cmu,HIGH,Y
+30 Clip,8,"I got young niggas, yeah, I keep 'em fed",fed,9,"Street cred, have you bitch niggas fuckin' dead",cred,INNER,PERFECT,spelling,MED,Y
+30 Clip,8,"I got young niggas, yeah, I keep 'em fed",keep,9,"Street cred, have you bitch niggas fuckin' dead",Street,INNER,SLANT,cmu,MED,Y
+30 Clip,8,"I got young niggas, yeah, I keep 'em fed",niggas,9,"Street cred, have you bitch niggas fuckin' dead",niggas,INNER,REPEAT,spelling,HIGH,N
+30 Clip,8,"I got young niggas, yeah, I keep 'em fed",young,9,"Street cred, have you bitch niggas fuckin' dead",fuckin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,8,"I got young niggas, yeah, I keep 'em fed",fed,10,"Did three years, ice king, fuck the feds",feds,END,SLANT,cmu,MED,Y
+30 Clip,8,"I got young niggas, yeah, I keep 'em fed",keep,10,"Did three years, ice king, fuck the feds",three,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,8,"I got young niggas, yeah, I keep 'em fed",young,10,"Did three years, ice king, fuck the feds",fuck,INNER,SLANT,cmu,MED,Y
+30 Clip,8,"I got young niggas, yeah, I keep 'em fed",fed,11,"Tell on me, fuck around and meet the lead",lead,END,PERFECT,cmu,HIGH,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",cred,9,"Street cred, have you bitch niggas fuckin' dead",dead,INNER,PERFECT,spelling,MED,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",dead,10,"Did three years, ice king, fuck the feds",feds,END,SLANT,cmu,MED,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",bitch,10,"Did three years, ice king, fuck the feds",king,INNER,SLANT,cmu,MED,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",bitch,10,"Did three years, ice king, fuck the feds",years,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",cred,10,"Did three years, ice king, fuck the feds",feds,INNER,SLANT,spelling,LOW,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",fuckin,10,"Did three years, ice king, fuck the feds",fuck,INNER,SLANT,cmu,MED,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",Street,10,"Did three years, ice king, fuck the feds",three,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",dead,11,"Tell on me, fuck around and meet the lead",lead,END,PERFECT,cmu,HIGH,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",cred,11,"Tell on me, fuck around and meet the lead",lead,INNER,PERFECT,spelling,MED,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",cred,11,"Tell on me, fuck around and meet the lead",Tell,INNER,SLANT,spelling,LOW,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",dead,11,"Tell on me, fuck around and meet the lead",Tell,INNER,SLANT,cmu,MED,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",fuckin,11,"Tell on me, fuck around and meet the lead",fuck,INNER,SLANT,cmu,MED,Y
+30 Clip,9,"Street cred, have you bitch niggas fuckin' dead",Street,11,"Tell on me, fuck around and meet the lead",meet,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",years,10,"Did three years, ice king, fuck the feds",king,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",feds,11,"Tell on me, fuck around and meet the lead",lead,END,SLANT,cmu,MED,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",feds,11,"Tell on me, fuck around and meet the lead",Tell,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",fuck,11,"Tell on me, fuck around and meet the lead",fuck,INNER,REPEAT,spelling,HIGH,N
+30 Clip,10,"Did three years, ice king, fuck the feds",three,11,"Tell on me, fuck around and meet the lead",meet,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",feds,12,"Steph Curry with the thirty, yeah, I shoot the shit",Steph,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",fuck,12,"Steph Curry with the thirty, yeah, I shoot the shit",Curry,INNER,SLANT,cmu,MED,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",king,12,"Steph Curry with the thirty, yeah, I shoot the shit",shit,INNER,SLANT,cmu,MED,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",three,12,"Steph Curry with the thirty, yeah, I shoot the shit",thirty,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",years,12,"Steph Curry with the thirty, yeah, I shoot the shit",shit,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,10,"Did three years, ice king, fuck the feds",feds,14,"Earn it like I want it, ain't no stoppin' ever",ever,END,ASSONANCE,vowel,MED,Y
+30 Clip,11,"Tell on me, fuck around and meet the lead",Tell,11,"Tell on me, fuck around and meet the lead",lead,INNER,SLANT,cmu,MED,Y
+30 Clip,11,"Tell on me, fuck around and meet the lead",fuck,12,"Steph Curry with the thirty, yeah, I shoot the shit",Curry,INNER,SLANT,cmu,MED,Y
+30 Clip,11,"Tell on me, fuck around and meet the lead",lead,12,"Steph Curry with the thirty, yeah, I shoot the shit",Steph,INNER,SLANT,cmu,MED,Y
+30 Clip,11,"Tell on me, fuck around and meet the lead",meet,12,"Steph Curry with the thirty, yeah, I shoot the shit",thirty,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,11,"Tell on me, fuck around and meet the lead",Tell,12,"Steph Curry with the thirty, yeah, I shoot the shit",Steph,INNER,SLANT,cmu,MED,Y
+30 Clip,11,"Tell on me, fuck around and meet the lead",lead,13,"Kunta shit, get on you and boom-boom your shit",get,INNER,SLANT,cmu,MED,Y
+30 Clip,11,"Tell on me, fuck around and meet the lead",Tell,13,"Kunta shit, get on you and boom-boom your shit",get,INNER,SLANT,cmu,MED,Y
+30 Clip,11,"Tell on me, fuck around and meet the lead",lead,14,"Earn it like I want it, ain't no stoppin' ever",ever,END,SLANT,cmu,MED,Y
+30 Clip,11,"Tell on me, fuck around and meet the lead",lead,15,"It took the props to get the bag, a plot together",together,END,SLANT,cmu,MED,Y
+30 Clip,12,"Steph Curry with the thirty, yeah, I shoot the shit",shit,13,"Kunta shit, get on you and boom-boom your shit",shit,END,REPEAT,spelling,HIGH,N
+30 Clip,12,"Steph Curry with the thirty, yeah, I shoot the shit",shit,13,"Kunta shit, get on you and boom-boom your shit",shit,INNER,REPEAT,spelling,HIGH,N
+30 Clip,12,"Steph Curry with the thirty, yeah, I shoot the shit",shoot,13,"Kunta shit, get on you and boom-boom your shit",boom,INNER,SLANT,cmu,MED,Y
+30 Clip,12,"Steph Curry with the thirty, yeah, I shoot the shit",Steph,13,"Kunta shit, get on you and boom-boom your shit",get,INNER,SLANT,cmu,MED,Y
+30 Clip,12,"Steph Curry with the thirty, yeah, I shoot the shit",Steph,14,"Earn it like I want it, ain't no stoppin' ever",ever,INNER,SLANT,cmu,MED,Y
+30 Clip,13,"Kunta shit, get on you and boom-boom your shit",boom,13,"Kunta shit, get on you and boom-boom your shit",boom,INNER,REPEAT,spelling,HIGH,N
+30 Clip,13,"Kunta shit, get on you and boom-boom your shit",shit,13,"Kunta shit, get on you and boom-boom your shit",shit,INNER,REPEAT,spelling,HIGH,N
+30 Clip,13,"Kunta shit, get on you and boom-boom your shit",get,14,"Earn it like I want it, ain't no stoppin' ever",ever,INNER,SLANT,cmu,MED,Y
+30 Clip,13,"Kunta shit, get on you and boom-boom your shit",get,15,"It took the props to get the bag, a plot together",get,INNER,REPEAT,spelling,HIGH,N
+30 Clip,13,"Kunta shit, get on you and boom-boom your shit",get,15,"It took the props to get the bag, a plot together",together,INNER,SLANT,cmu,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",want,14,"Earn it like I want it, ain't no stoppin' ever",stoppin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",ever,15,"It took the props to get the bag, a plot together",together,END,SLANT,cmu,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",ever,15,"It took the props to get the bag, a plot together",get,INNER,SLANT,cmu,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",stoppin,15,"It took the props to get the bag, a plot together",plot,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",stoppin,15,"It took the props to get the bag, a plot together",props,INNER,SLANT,cmu,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",want,15,"It took the props to get the bag, a plot together",plot,INNER,SLANT,cmu,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",want,15,"It took the props to get the bag, a plot together",props,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",no,16,"Our shit don't stop, have my son poppin'",don't,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",no stoppin,16,"Our shit don't stop, have my son poppin'",son poppin,INNER,MULTI,multi,HIGH,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",stoppin,16,"Our shit don't stop, have my son poppin'",poppin,INNER,MULTI,multi,HIGH,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",stoppin,16,"Our shit don't stop, have my son poppin'",stop,INNER,SLANT,cmu,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",want,16,"Our shit don't stop, have my son poppin'",poppin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,14,"Earn it like I want it, ain't no stoppin' ever",want,16,"Our shit don't stop, have my son poppin'",stop,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",get,15,"It took the props to get the bag, a plot together",together,INNER,SLANT,cmu,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",props,15,"It took the props to get the bag, a plot together",plot,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",bag,16,"Our shit don't stop, have my son poppin'",have,INNER,SLANT,cmu,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",plot,16,"Our shit don't stop, have my son poppin'",poppin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",plot,16,"Our shit don't stop, have my son poppin'",stop,INNER,SLANT,cmu,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",props,16,"Our shit don't stop, have my son poppin'",poppin,INNER,SLANT,cmu,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",props,16,"Our shit don't stop, have my son poppin'",stop,INNER,SLANT,cmu,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",plot,17,"Runnin' up on you, ooh-op, you done, opp",op,INNER,SLANT,cmu,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",plot,17,"Runnin' up on you, ooh-op, you done, opp",opp,INNER,SLANT,cmu,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",props,17,"Runnin' up on you, ooh-op, you done, opp",op,INNER,SLANT,cmu,MED,Y
+30 Clip,15,"It took the props to get the bag, a plot together",props,17,"Runnin' up on you, ooh-op, you done, opp",opp,INNER,SLANT,cmu,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",stop,16,"Our shit don't stop, have my son poppin'",poppin,INNER,SLANT,cmu,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",poppin,17,"Runnin' up on you, ooh-op, you done, opp",opp,END,SLANT,cmu,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",poppin,17,"Runnin' up on you, ooh-op, you done, opp",op,INNER,SLANT,cmu,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",son,17,"Runnin' up on you, ooh-op, you done, opp",done,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",son,17,"Runnin' up on you, ooh-op, you done, opp",Runnin,INNER,SLANT,cmu,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",stop,17,"Runnin' up on you, ooh-op, you done, opp",op,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",stop,17,"Runnin' up on you, ooh-op, you done, opp",opp,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",poppin,18,"When the rabbit got the gun, that's when the fun stop",stop,END,SLANT,cmu,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",have,18,"When the rabbit got the gun, that's when the fun stop",rabbit,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",poppin,18,"When the rabbit got the gun, that's when the fun stop",got,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",son,18,"When the rabbit got the gun, that's when the fun stop",fun,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",son,18,"When the rabbit got the gun, that's when the fun stop",gun,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",stop,18,"When the rabbit got the gun, that's when the fun stop",got,INNER,SLANT,cmu,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",stop,18,"When the rabbit got the gun, that's when the fun stop",stop,INNER,REPEAT,spelling,HIGH,N
+30 Clip,16,"Our shit don't stop, have my son poppin'",poppin,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,END,SLANT,cmu,MED,Y
+30 Clip,16,"Our shit don't stop, have my son poppin'",poppin,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,END,ASSONANCE,vowel,MED,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",op,17,"Runnin' up on you, ooh-op, you done, opp",opp,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",Runnin,17,"Runnin' up on you, ooh-op, you done, opp",done,INNER,SLANT,cmu,MED,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",opp,18,"When the rabbit got the gun, that's when the fun stop",stop,END,PERFECT,cmu,HIGH,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",done,18,"When the rabbit got the gun, that's when the fun stop",fun,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",done,18,"When the rabbit got the gun, that's when the fun stop",gun,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",op,18,"When the rabbit got the gun, that's when the fun stop",got,INNER,SLANT,cmu,MED,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",op,18,"When the rabbit got the gun, that's when the fun stop",stop,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",opp,18,"When the rabbit got the gun, that's when the fun stop",got,INNER,SLANT,cmu,MED,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",Runnin,18,"When the rabbit got the gun, that's when the fun stop",fun,INNER,SLANT,cmu,MED,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",Runnin,18,"When the rabbit got the gun, that's when the fun stop",gun,INNER,SLANT,cmu,MED,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",opp,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,END,SLANT,cmu,MED,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",done,19,"I'll grab the bag, run up on 'em and then bail on cops",run,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",op,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,INNER,SLANT,cmu,MED,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",Runnin,19,"I'll grab the bag, run up on 'em and then bail on cops",run,INNER,SLANT,cmu,MED,Y
+30 Clip,17,"Runnin' up on you, ooh-op, you done, opp",opp,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,END,SLANT,cmu,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",got,18,"When the rabbit got the gun, that's when the fun stop",stop,INNER,SLANT,cmu,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",gun,18,"When the rabbit got the gun, that's when the fun stop",fun,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",When,18,"When the rabbit got the gun, that's when the fun stop",when,INNER,REPEAT,spelling,HIGH,N
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",stop,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,END,SLANT,cmu,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",fun,19,"I'll grab the bag, run up on 'em and then bail on cops",run,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",got,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",gun,19,"I'll grab the bag, run up on 'em and then bail on cops",run,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",rabbit,19,"I'll grab the bag, run up on 'em and then bail on cops",bag,INNER,SLANT,cmu,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",rabbit,19,"I'll grab the bag, run up on 'em and then bail on cops",grab,INNER,SLANT,cmu,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",stop,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,END,SLANT,cmu,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",got,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,INNER,SLANT,cmu,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",got,20,"Coppin' blow, I'm not stoppin' bro, off the clock",Coppin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",got,20,"Coppin' blow, I'm not stoppin' bro, off the clock",not,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",got,20,"Coppin' blow, I'm not stoppin' bro, off the clock",stoppin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",stop,20,"Coppin' blow, I'm not stoppin' bro, off the clock",Coppin,INNER,SLANT,cmu,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",stop,20,"Coppin' blow, I'm not stoppin' bro, off the clock",not,INNER,SLANT,cmu,MED,Y
+30 Clip,18,"When the rabbit got the gun, that's when the fun stop",stop,20,"Coppin' blow, I'm not stoppin' bro, off the clock",stoppin,INNER,SLANT,cmu,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",grab,19,"I'll grab the bag, run up on 'em and then bail on cops",bag,INNER,SLANT,cmu,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,END,ASSONANCE,vowel,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,20,"Coppin' blow, I'm not stoppin' bro, off the clock",Coppin,INNER,SLANT,cmu,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,20,"Coppin' blow, I'm not stoppin' bro, off the clock",not,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,20,"Coppin' blow, I'm not stoppin' bro, off the clock",stoppin,INNER,SLANT,cmu,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",bag,21,"On that ass, money fast and my pockets slow",ass,INNER,SLANT,cmu,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",bag,21,"On that ass, money fast and my pockets slow",fast,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",cops,21,"On that ass, money fast and my pockets slow",pockets,INNER,SLANT,cmu,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",grab,21,"On that ass, money fast and my pockets slow",ass,INNER,SLANT,cmu,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",grab,21,"On that ass, money fast and my pockets slow",fast,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,19,"I'll grab the bag, run up on 'em and then bail on cops",run,21,"On that ass, money fast and my pockets slow",money,INNER,SLANT,cmu,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",blow,20,"Coppin' blow, I'm not stoppin' bro, off the clock",bro,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",Coppin,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",Coppin,20,"Coppin' blow, I'm not stoppin' bro, off the clock",not,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",Coppin,20,"Coppin' blow, I'm not stoppin' bro, off the clock",stoppin,INNER,SLANT,cmu,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",not,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,INNER,SLANT,cmu,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",not,20,"Coppin' blow, I'm not stoppin' bro, off the clock",stoppin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",stoppin,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",blow,21,"On that ass, money fast and my pockets slow",slow,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",bro,21,"On that ass, money fast and my pockets slow",slow,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,21,"On that ass, money fast and my pockets slow",pockets,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",Coppin,21,"On that ass, money fast and my pockets slow",pockets,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",not,21,"On that ass, money fast and my pockets slow",pockets,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",stoppin,21,"On that ass, money fast and my pockets slow",pockets,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",blow,22,"Heard you started shit, fully loaded, burners",loaded,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",bro,22,"Heard you started shit, fully loaded, burners",loaded,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",clock,22,"Heard you started shit, fully loaded, burners",started,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",Coppin,22,"Heard you started shit, fully loaded, burners",started,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",not,22,"Heard you started shit, fully loaded, burners",started,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,20,"Coppin' blow, I'm not stoppin' bro, off the clock",stoppin,22,"Heard you started shit, fully loaded, burners",started,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,21,"On that ass, money fast and my pockets slow",ass,21,"On that ass, money fast and my pockets slow",fast,INNER,SLANT,cmu,MED,Y
+30 Clip,21,"On that ass, money fast and my pockets slow",pockets,22,"Heard you started shit, fully loaded, burners",started,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,21,"On that ass, money fast and my pockets slow",slow,22,"Heard you started shit, fully loaded, burners",loaded,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,21,"On that ass, money fast and my pockets slow",money,23,"Pull up with blood, you know what's up, how we rockin', cousin?",blood,INNER,SLANT,cmu,MED,Y
+30 Clip,21,"On that ass, money fast and my pockets slow",money,23,"Pull up with blood, you know what's up, how we rockin', cousin?",cousin,INNER,SLANT,cmu,MED,Y
+30 Clip,21,"On that ass, money fast and my pockets slow",money,23,"Pull up with blood, you know what's up, how we rockin', cousin?",what's,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,21,"On that ass, money fast and my pockets slow",pockets,23,"Pull up with blood, you know what's up, how we rockin', cousin?",rockin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,21,"On that ass, money fast and my pockets slow",slow,23,"Pull up with blood, you know what's up, how we rockin', cousin?",know,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,22,"Heard you started shit, fully loaded, burners",Heard,22,"Heard you started shit, fully loaded, burners",burners,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,22,"Heard you started shit, fully loaded, burners",fully,23,"Pull up with blood, you know what's up, how we rockin', cousin?",Pull,INNER,SLANT,cmu,MED,Y
+30 Clip,22,"Heard you started shit, fully loaded, burners",loaded,23,"Pull up with blood, you know what's up, how we rockin', cousin?",know,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,22,"Heard you started shit, fully loaded, burners",started,23,"Pull up with blood, you know what's up, how we rockin', cousin?",rockin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,22,"Heard you started shit, fully loaded, burners",burners,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",worth,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,22,"Heard you started shit, fully loaded, burners",Heard,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",worth,INNER,SLANT,cmu,MED,Y
+30 Clip,22,"Heard you started shit, fully loaded, burners",loaded,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",go,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,22,"Heard you started shit, fully loaded, burners",loaded,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",gold,INNER,SLANT,cmu,MED,Y
+30 Clip,23,"Pull up with blood, you know what's up, how we rockin', cousin?",blood,23,"Pull up with blood, you know what's up, how we rockin', cousin?",cousin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,23,"Pull up with blood, you know what's up, how we rockin', cousin?",blood,23,"Pull up with blood, you know what's up, how we rockin', cousin?",what's,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,23,"Pull up with blood, you know what's up, how we rockin', cousin?",what's,23,"Pull up with blood, you know what's up, how we rockin', cousin?",cousin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,23,"Pull up with blood, you know what's up, how we rockin', cousin?",how,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",'round,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,23,"Pull up with blood, you know what's up, how we rockin', cousin?",know,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",go,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,23,"Pull up with blood, you know what's up, how we rockin', cousin?",know,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",gold,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",go,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",gold,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",gold,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",go,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",gold,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",gold,INNER,REPEAT,spelling,HIGH,N
+30 Clip,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",See,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",teeth,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",See,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",thirty,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",teeth,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",thirty,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",thirty,25,"Try to snatch mine, then in your ass goin' thirty",thirty,END,REPEAT,spelling,HIGH,N
+30 Clip,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",See,25,"Try to snatch mine, then in your ass goin' thirty",thirty,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,24,"See the gold it go 'round my neck, gold on my teeth, worth thirty",teeth,25,"Try to snatch mine, then in your ass goin' thirty",thirty,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",snatch,25,"Try to snatch mine, then in your ass goin' thirty",ass,INNER,SLANT,cmu,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",Try,25,"Try to snatch mine, then in your ass goin' thirty",mine,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",ass,26,"Niggas act bad, spank they ass like a kid",act,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",ass,26,"Niggas act bad, spank they ass like a kid",ass,INNER,REPEAT,spelling,HIGH,N
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",ass,26,"Niggas act bad, spank they ass like a kid",bad,INNER,SLANT,cmu,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",ass,26,"Niggas act bad, spank they ass like a kid",spank,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",mine,26,"Niggas act bad, spank they ass like a kid",like,INNER,SLANT,cmu,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",snatch,26,"Niggas act bad, spank they ass like a kid",act,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",snatch,26,"Niggas act bad, spank they ass like a kid",ass,INNER,SLANT,cmu,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",snatch,26,"Niggas act bad, spank they ass like a kid",bad,INNER,SLANT,cmu,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",snatch,26,"Niggas act bad, spank they ass like a kid",spank,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",Try,26,"Niggas act bad, spank they ass like a kid",like,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",ass,27,Have your ass swoll up like a dirty pig,ass,INNER,REPEAT,spelling,HIGH,N
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",ass,27,Have your ass swoll up like a dirty pig,Have,INNER,SLANT,cmu,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",mine,27,Have your ass swoll up like a dirty pig,like,INNER,SLANT,cmu,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",snatch,27,Have your ass swoll up like a dirty pig,ass,INNER,SLANT,cmu,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",snatch,27,Have your ass swoll up like a dirty pig,Have,INNER,SLANT,cmu,MED,Y
+30 Clip,25,"Try to snatch mine, then in your ass goin' thirty",Try,27,Have your ass swoll up like a dirty pig,like,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",act,26,"Niggas act bad, spank they ass like a kid",ass,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",act,26,"Niggas act bad, spank they ass like a kid",bad,INNER,SLANT,cmu,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",act,26,"Niggas act bad, spank they ass like a kid",spank,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",bad,26,"Niggas act bad, spank they ass like a kid",ass,INNER,SLANT,cmu,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",bad,26,"Niggas act bad, spank they ass like a kid",spank,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",Niggas,26,"Niggas act bad, spank they ass like a kid",ass,INNER,PERFECT,spelling,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",spank,26,"Niggas act bad, spank they ass like a kid",ass,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",kid,27,Have your ass swoll up like a dirty pig,pig,END,SLANT,cmu,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",act,27,Have your ass swoll up like a dirty pig,ass,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",act,27,Have your ass swoll up like a dirty pig,Have,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",ass,27,Have your ass swoll up like a dirty pig,ass,INNER,REPEAT,spelling,HIGH,N
+30 Clip,26,"Niggas act bad, spank they ass like a kid",ass,27,Have your ass swoll up like a dirty pig,Have,INNER,SLANT,cmu,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",bad,27,Have your ass swoll up like a dirty pig,ass,INNER,SLANT,cmu,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",bad,27,Have your ass swoll up like a dirty pig,Have,INNER,SLANT,cmu,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",like,27,Have your ass swoll up like a dirty pig,like,INNER,REPEAT,spelling,HIGH,N
+30 Clip,26,"Niggas act bad, spank they ass like a kid",Niggas,27,Have your ass swoll up like a dirty pig,ass,INNER,PERFECT,spelling,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",spank,27,Have your ass swoll up like a dirty pig,ass,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",spank,27,Have your ass swoll up like a dirty pig,Have,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",kid,28,Pistol talkin' niggas out of money tryna keep my tummy full,Pistol,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,26,"Niggas act bad, spank they ass like a kid",Niggas,28,Pistol talkin' niggas out of money tryna keep my tummy full,niggas,INNER,REPEAT,spelling,HIGH,N
+30 Clip,27,Have your ass swoll up like a dirty pig,Have,27,Have your ass swoll up like a dirty pig,ass,INNER,SLANT,cmu,MED,Y
+30 Clip,27,Have your ass swoll up like a dirty pig,pig,28,Pistol talkin' niggas out of money tryna keep my tummy full,Pistol,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,27,Have your ass swoll up like a dirty pig,like,29,Like the thirty round drum clip in my Tommy,Like,INNER,REPEAT,spelling,HIGH,N
+30 Clip,27,Have your ass swoll up like a dirty pig,pig,29,Like the thirty round drum clip in my Tommy,clip,INNER,SLANT,cmu,MED,Y
+30 Clip,28,Pistol talkin' niggas out of money tryna keep my tummy full,money,28,Pistol talkin' niggas out of money tryna keep my tummy full,tummy,INNER,SLANT,cmu,MED,Y
+30 Clip,28,Pistol talkin' niggas out of money tryna keep my tummy full,tryna,28,Pistol talkin' niggas out of money tryna keep my tummy full,keep,INNER,SLANT,spelling,LOW,Y
+30 Clip,28,Pistol talkin' niggas out of money tryna keep my tummy full,keep,29,Like the thirty round drum clip in my Tommy,thirty,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,28,Pistol talkin' niggas out of money tryna keep my tummy full,money,29,Like the thirty round drum clip in my Tommy,drum,INNER,SLANT,cmu,MED,Y
+30 Clip,28,Pistol talkin' niggas out of money tryna keep my tummy full,Pistol,29,Like the thirty round drum clip in my Tommy,clip,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,28,Pistol talkin' niggas out of money tryna keep my tummy full,talkin,29,Like the thirty round drum clip in my Tommy,Tommy,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,28,Pistol talkin' niggas out of money tryna keep my tummy full,tummy,29,Like the thirty round drum clip in my Tommy,drum,INNER,SLANT,cmu,MED,Y
+30 Clip,29,Like the thirty round drum clip in my Tommy,Like,30,"Ghetto night, lose your life to the crackpipe",life,INNER,SLANT,cmu,MED,Y
+30 Clip,29,Like the thirty round drum clip in my Tommy,Like,30,"Ghetto night, lose your life to the crackpipe",night,INNER,SLANT,cmu,MED,Y
+30 Clip,29,Like the thirty round drum clip in my Tommy,clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",fiendin,INNER,ASSONANCE,vowel,LOW,N
+30 Clip,29,Like the thirty round drum clip in my Tommy,clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",lick,INNER,SLANT,cmu,MED,Y
+30 Clip,29,Like the thirty round drum clip in my Tommy,Like,31,"Pockets hurtin', fiendin' for a lick, like a dyke",dyke,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,29,Like the thirty round drum clip in my Tommy,Like,31,"Pockets hurtin', fiendin' for a lick, like a dyke",like,INNER,REPEAT,spelling,HIGH,N
+30 Clip,29,Like the thirty round drum clip in my Tommy,Tommy,31,"Pockets hurtin', fiendin' for a lick, like a dyke",Pockets,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,29,Like the thirty round drum clip in my Tommy,Tommy,32,"In the crib, thirty models twerkin' ass, thirty bottles",bottles,END,ASSONANCE,vowel,MED,Y
+30 Clip,29,Like the thirty round drum clip in my Tommy,Tommy,33,"I'm so gone off that Hen, black, I took thirty swallows",swallows,END,ASSONANCE,vowel,MED,Y
+30 Clip,30,"Ghetto night, lose your life to the crackpipe",night,30,"Ghetto night, lose your life to the crackpipe",life,INNER,SLANT,cmu,MED,Y
+30 Clip,30,"Ghetto night, lose your life to the crackpipe",life,31,"Pockets hurtin', fiendin' for a lick, like a dyke",dyke,INNER,SLANT,cmu,MED,Y
+30 Clip,30,"Ghetto night, lose your life to the crackpipe",life,31,"Pockets hurtin', fiendin' for a lick, like a dyke",like,INNER,SLANT,cmu,MED,Y
+30 Clip,30,"Ghetto night, lose your life to the crackpipe",night,31,"Pockets hurtin', fiendin' for a lick, like a dyke",dyke,INNER,SLANT,cmu,MED,Y
+30 Clip,30,"Ghetto night, lose your life to the crackpipe",night,31,"Pockets hurtin', fiendin' for a lick, like a dyke",like,INNER,SLANT,cmu,MED,Y
+30 Clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",fiendin,31,"Pockets hurtin', fiendin' for a lick, like a dyke",lick,INNER,ASSONANCE,vowel,LOW,N
+30 Clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",like,31,"Pockets hurtin', fiendin' for a lick, like a dyke",dyke,INNER,PERFECT,cmu,HIGH,Y
+30 Clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",fiendin,32,"In the crib, thirty models twerkin' ass, thirty bottles",crib,INNER,ASSONANCE,vowel,LOW,N
+30 Clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",fiendin,32,"In the crib, thirty models twerkin' ass, thirty bottles",twerkin,INNER,PERFECT,spelling,MED,Y
+30 Clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",hurtin,32,"In the crib, thirty models twerkin' ass, thirty bottles",twerkin,INNER,SLANT,spelling,LOW,Y
+30 Clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",lick,32,"In the crib, thirty models twerkin' ass, thirty bottles",crib,INNER,SLANT,cmu,MED,Y
+30 Clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",Pockets,32,"In the crib, thirty models twerkin' ass, thirty bottles",bottles,INNER,SLANT,cmu,MED,Y
+30 Clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",Pockets,32,"In the crib, thirty models twerkin' ass, thirty bottles",models,INNER,SLANT,cmu,MED,Y
+30 Clip,31,"Pockets hurtin', fiendin' for a lick, like a dyke",Pockets,33,"I'm so gone off that Hen, black, I took thirty swallows",swallows,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",models,32,"In the crib, thirty models twerkin' ass, thirty bottles",bottles,INNER,SLANT,cmu,MED,Y
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",thirty,32,"In the crib, thirty models twerkin' ass, thirty bottles",thirty,INNER,REPEAT,spelling,HIGH,N
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",bottles,33,"I'm so gone off that Hen, black, I took thirty swallows",swallows,END,SLANT,cmu,MED,Y
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",ass,33,"I'm so gone off that Hen, black, I took thirty swallows",black,INNER,SLANT,cmu,MED,Y
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",models,33,"I'm so gone off that Hen, black, I took thirty swallows",swallows,INNER,SLANT,cmu,MED,Y
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",thirty,33,"I'm so gone off that Hen, black, I took thirty swallows",thirty,INNER,REPEAT,spelling,HIGH,N
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",ass,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",ballin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",ass,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",bands,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",thirty,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",jeans,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",thirty,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",Thirty,INNER,REPEAT,spelling,HIGH,N
+30 Clip,32,"In the crib, thirty models twerkin' ass, thirty bottles",twerkin,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",ballin,INNER,PERFECT,spelling,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",black,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",ballin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",black,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",bands,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",Hen,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",everywhere,INNER,SLANT,cmu,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",thirty,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",jeans,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",thirty,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",Thirty,INNER,REPEAT,spelling,HIGH,N
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",Hen,35,"These Balmain jeans cost two Gs, I got thirty pair",pair,INNER,SLANT,cmu,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",swallows,35,"These Balmain jeans cost two Gs, I got thirty pair",cost,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",swallows,35,"These Balmain jeans cost two Gs, I got thirty pair",got,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",thirty,35,"These Balmain jeans cost two Gs, I got thirty pair",jeans,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",thirty,35,"These Balmain jeans cost two Gs, I got thirty pair",These,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,33,"I'm so gone off that Hen, black, I took thirty swallows",thirty,35,"These Balmain jeans cost two Gs, I got thirty pair",thirty,INNER,REPEAT,spelling,HIGH,N
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",Balmain,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",ballin,INNER,SLANT,spelling,LOW,Y
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",bands,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",ballin,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",Thirty,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",jeans,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",everywhere,35,"These Balmain jeans cost two Gs, I got thirty pair",pair,END,PERFECT,cmu,HIGH,Y
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",ballin,35,"These Balmain jeans cost two Gs, I got thirty pair",Balmain,INNER,SLANT,spelling,LOW,Y
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",Balmain,35,"These Balmain jeans cost two Gs, I got thirty pair",Balmain,INNER,REPEAT,spelling,HIGH,N
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",jeans,35,"These Balmain jeans cost two Gs, I got thirty pair",jeans,INNER,REPEAT,spelling,HIGH,N
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",jeans,35,"These Balmain jeans cost two Gs, I got thirty pair",These,INNER,SLANT,cmu,MED,Y
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",jeans,35,"These Balmain jeans cost two Gs, I got thirty pair",thirty,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",Thirty,35,"These Balmain jeans cost two Gs, I got thirty pair",jeans,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",Thirty,35,"These Balmain jeans cost two Gs, I got thirty pair",These,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,34,"Thirty bands in my Balmain jeans, I'm ballin' everywhere",Thirty,35,"These Balmain jeans cost two Gs, I got thirty pair",thirty,INNER,REPEAT,spelling,HIGH,N
+30 Clip,35,"These Balmain jeans cost two Gs, I got thirty pair",cost,35,"These Balmain jeans cost two Gs, I got thirty pair",got,INNER,SLANT,cmu,MED,Y
+30 Clip,35,"These Balmain jeans cost two Gs, I got thirty pair",jeans,35,"These Balmain jeans cost two Gs, I got thirty pair",thirty,INNER,ASSONANCE,vowel,MED,Y
+30 Clip,35,"These Balmain jeans cost two Gs, I got thirty pair",These,35,"These Balmain jeans cost two Gs, I got thirty pair",jeans,INNER,SLANT,cmu,MED,Y
+30 Clip,35,"These Balmain jeans cost two Gs, I got thirty pair",These,35,"These Balmain jeans cost two Gs, I got thirty pair",thirty,INNER,ASSONANCE,vowel,MED,Y

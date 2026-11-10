@@ -1,0 +1,287 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,rolling,1,Bitch I'm rolling with my niggas and we smoking dope,dope,INNER,ASSONANCE,vowel,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,rolling,1,Bitch I'm rolling with my niggas and we smoking dope,smoking,INNER,SLANT,cmu,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,smoking,1,Bitch I'm rolling with my niggas and we smoking dope,dope,INNER,ASSONANCE,vowel,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,dope,2,"First first I lock it and load, run up on him with the scope",scope,END,PERFECT,cmu,HIGH,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,Bitch,2,"First first I lock it and load, run up on him with the scope",him,INNER,SLANT,cmu,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,dope,2,"First first I lock it and load, run up on him with the scope",load,INNER,SLANT,cmu,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,rolling,2,"First first I lock it and load, run up on him with the scope",load,INNER,ASSONANCE,vowel,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,rolling,2,"First first I lock it and load, run up on him with the scope",scope,INNER,ASSONANCE,vowel,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,smoking,2,"First first I lock it and load, run up on him with the scope",load,INNER,ASSONANCE,vowel,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,smoking,2,"First first I lock it and load, run up on him with the scope",scope,INNER,ASSONANCE,vowel,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,dope,3,"If if if if you ain't gettin shot, then you're getting poked",poked,END,SLANT,cmu,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,rolling,3,"If if if if you ain't gettin shot, then you're getting poked",poked,INNER,ASSONANCE,vowel,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,smoking,3,"If if if if you ain't gettin shot, then you're getting poked",poked,INNER,SLANT,cmu,MED,Y
+GBSB,1,Bitch I'm rolling with my niggas and we smoking dope,dope,5,GBSB we got so much dope,dope,END,REPEAT,spelling,HIGH,N
+GBSB,2,"First first I lock it and load, run up on him with the scope",First,2,"First first I lock it and load, run up on him with the scope",first,INNER,REPEAT,spelling,HIGH,N
+GBSB,2,"First first I lock it and load, run up on him with the scope",load,2,"First first I lock it and load, run up on him with the scope",scope,INNER,SLANT,cmu,MED,Y
+GBSB,2,"First first I lock it and load, run up on him with the scope",scope,3,"If if if if you ain't gettin shot, then you're getting poked",poked,END,SLANT,cmu,MED,Y
+GBSB,2,"First first I lock it and load, run up on him with the scope",load,3,"If if if if you ain't gettin shot, then you're getting poked",poked,INNER,SLANT,cmu,MED,Y
+GBSB,2,"First first I lock it and load, run up on him with the scope",lock,3,"If if if if you ain't gettin shot, then you're getting poked",shot,INNER,SLANT,cmu,MED,Y
+GBSB,2,"First first I lock it and load, run up on him with the scope",run,4,GBSB money on the floor,money,INNER,SLANT,cmu,MED,Y
+GBSB,2,"First first I lock it and load, run up on him with the scope",scope,5,GBSB we got so much dope,dope,END,PERFECT,cmu,HIGH,Y
+GBSB,2,"First first I lock it and load, run up on him with the scope",scope,6,"A lot, a lot of shooters, a a a a lot of scopes",scopes,END,SLANT,cmu,MED,Y
+GBSB,3,"If if if if you ain't gettin shot, then you're getting poked",ain't gettin,3,"If if if if you ain't gettin shot, then you're getting poked",shot getting,INNER,MULTI,multi,HIGH,Y
+GBSB,3,"If if if if you ain't gettin shot, then you're getting poked",gettin,3,"If if if if you ain't gettin shot, then you're getting poked",getting,INNER,MULTI,multi,HIGH,Y
+GBSB,3,"If if if if you ain't gettin shot, then you're getting poked",poked,5,GBSB we got so much dope,dope,END,SLANT,cmu,MED,Y
+GBSB,3,"If if if if you ain't gettin shot, then you're getting poked",shot,5,GBSB we got so much dope,got,INNER,PERFECT,cmu,HIGH,Y
+GBSB,3,"If if if if you ain't gettin shot, then you're getting poked",poked,6,"A lot, a lot of shooters, a a a a lot of scopes",scopes,END,ASSONANCE,vowel,MED,Y
+GBSB,3,"If if if if you ain't gettin shot, then you're getting poked",poked,7,"If you ain't gettin shot, then you're gettin poked",poked,END,REPEAT,spelling,HIGH,N
+GBSB,4,GBSB money on the floor,GBSB,5,GBSB we got so much dope,GBSB,INNER,REPEAT,spelling,HIGH,N
+GBSB,4,GBSB money on the floor,money,5,GBSB we got so much dope,much,INNER,SLANT,cmu,MED,Y
+GBSB,5,GBSB we got so much dope,dope,6,"A lot, a lot of shooters, a a a a lot of scopes",scopes,END,SLANT,cmu,MED,Y
+GBSB,5,GBSB we got so much dope,got,6,"A lot, a lot of shooters, a a a a lot of scopes",lot,INNER,PERFECT,cmu,HIGH,Y
+GBSB,5,GBSB we got so much dope,dope,7,"If you ain't gettin shot, then you're gettin poked",poked,END,SLANT,cmu,MED,Y
+GBSB,5,GBSB we got so much dope,got,7,"If you ain't gettin shot, then you're gettin poked",shot,INNER,PERFECT,cmu,HIGH,Y
+GBSB,5,GBSB we got so much dope,dope,8,"Fredo want the dope, Tadoe want the dope",dope,END,REPEAT,spelling,HIGH,N
+GBSB,5,GBSB we got so much dope,dope,9,I say I call my nigga Fredo up I say I gotta go,go,END,ASSONANCE,vowel,MED,Y
+GBSB,6,"A lot, a lot of shooters, a a a a lot of scopes",lot,6,"A lot, a lot of shooters, a a a a lot of scopes",lot,INNER,REPEAT,spelling,HIGH,N
+GBSB,6,"A lot, a lot of shooters, a a a a lot of scopes",scopes,7,"If you ain't gettin shot, then you're gettin poked",poked,END,ASSONANCE,vowel,MED,Y
+GBSB,6,"A lot, a lot of shooters, a a a a lot of scopes",lot,7,"If you ain't gettin shot, then you're gettin poked",shot,INNER,PERFECT,cmu,HIGH,Y
+GBSB,6,"A lot, a lot of shooters, a a a a lot of scopes",scopes,8,"Fredo want the dope, Tadoe want the dope",dope,END,SLANT,cmu,MED,Y
+GBSB,6,"A lot, a lot of shooters, a a a a lot of scopes",lot,8,"Fredo want the dope, Tadoe want the dope",want,INNER,SLANT,cmu,MED,Y
+GBSB,6,"A lot, a lot of shooters, a a a a lot of scopes",scopes,8,"Fredo want the dope, Tadoe want the dope",dope,INNER,SLANT,cmu,MED,Y
+GBSB,6,"A lot, a lot of shooters, a a a a lot of scopes",scopes,9,I say I call my nigga Fredo up I say I gotta go,go,END,ASSONANCE,vowel,MED,Y
+GBSB,6,"A lot, a lot of shooters, a a a a lot of scopes",scopes,10,"They taking road trips with dope, and bad ho",ho,END,ASSONANCE,vowel,MED,Y
+GBSB,7,"If you ain't gettin shot, then you're gettin poked",gettin,7,"If you ain't gettin shot, then you're gettin poked",gettin,INNER,REPEAT,spelling,HIGH,N
+GBSB,7,"If you ain't gettin shot, then you're gettin poked",poked,8,"Fredo want the dope, Tadoe want the dope",dope,END,SLANT,cmu,MED,Y
+GBSB,7,"If you ain't gettin shot, then you're gettin poked",poked,8,"Fredo want the dope, Tadoe want the dope",dope,INNER,SLANT,cmu,MED,Y
+GBSB,7,"If you ain't gettin shot, then you're gettin poked",shot,8,"Fredo want the dope, Tadoe want the dope",want,INNER,SLANT,cmu,MED,Y
+GBSB,7,"If you ain't gettin shot, then you're gettin poked",poked,9,I say I call my nigga Fredo up I say I gotta go,go,END,ASSONANCE,vowel,MED,Y
+GBSB,7,"If you ain't gettin shot, then you're gettin poked",ain't,9,I say I call my nigga Fredo up I say I gotta go,say,INNER,ASSONANCE,vowel,MED,Y
+GBSB,7,"If you ain't gettin shot, then you're gettin poked",shot,9,I say I call my nigga Fredo up I say I gotta go,gotta,INNER,SLANT,cmu,MED,Y
+GBSB,7,"If you ain't gettin shot, then you're gettin poked",poked,10,"They taking road trips with dope, and bad ho",ho,END,ASSONANCE,vowel,MED,Y
+GBSB,8,"Fredo want the dope, Tadoe want the dope",dope,8,"Fredo want the dope, Tadoe want the dope",dope,INNER,REPEAT,spelling,HIGH,N
+GBSB,8,"Fredo want the dope, Tadoe want the dope",want,8,"Fredo want the dope, Tadoe want the dope",want,INNER,REPEAT,spelling,HIGH,N
+GBSB,8,"Fredo want the dope, Tadoe want the dope",dope,9,I say I call my nigga Fredo up I say I gotta go,go,END,ASSONANCE,vowel,MED,Y
+GBSB,8,"Fredo want the dope, Tadoe want the dope",dope,9,I say I call my nigga Fredo up I say I gotta go,go,INNER,ASSONANCE,vowel,MED,Y
+GBSB,8,"Fredo want the dope, Tadoe want the dope",Fredo,9,I say I call my nigga Fredo up I say I gotta go,Fredo,INNER,REPEAT,spelling,HIGH,N
+GBSB,8,"Fredo want the dope, Tadoe want the dope",want,9,I say I call my nigga Fredo up I say I gotta go,gotta,INNER,SLANT,cmu,MED,Y
+GBSB,8,"Fredo want the dope, Tadoe want the dope",dope,10,"They taking road trips with dope, and bad ho",ho,END,ASSONANCE,vowel,MED,Y
+GBSB,8,"Fredo want the dope, Tadoe want the dope",dope,10,"They taking road trips with dope, and bad ho",dope,INNER,REPEAT,spelling,HIGH,N
+GBSB,8,"Fredo want the dope, Tadoe want the dope",dope,10,"They taking road trips with dope, and bad ho",ho,INNER,ASSONANCE,vowel,MED,Y
+GBSB,8,"Fredo want the dope, Tadoe want the dope",dope,10,"They taking road trips with dope, and bad ho",road,INNER,SLANT,cmu,MED,Y
+GBSB,8,"Fredo want the dope, Tadoe want the dope",Tadoe,10,"They taking road trips with dope, and bad ho",bad,INNER,SLANT,spelling,LOW,Y
+GBSB,8,"Fredo want the dope, Tadoe want the dope",dope,12,First I let it go I know I blow Geronimo,Geronimo,END,ASSONANCE,vowel,MED,Y
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,say,9,I say I call my nigga Fredo up I say I gotta go,say,INNER,REPEAT,spelling,HIGH,N
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,go,10,"They taking road trips with dope, and bad ho",ho,END,PERFECT,cmu,HIGH,Y
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,go,10,"They taking road trips with dope, and bad ho",dope,INNER,ASSONANCE,vowel,MED,Y
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,go,10,"They taking road trips with dope, and bad ho",road,INNER,ASSONANCE,vowel,MED,Y
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,say,10,"They taking road trips with dope, and bad ho",taking,INNER,ASSONANCE,vowel,MED,Y
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,call,11,Sosa Say we do the shit like we been here before,before,INNER,SLANT,cmu,MED,Y
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,Fredo,11,Sosa Say we do the shit like we been here before,here,INNER,SLANT,cmu,MED,Y
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,go,11,Sosa Say we do the shit like we been here before,Sosa,INNER,ASSONANCE,vowel,MED,Y
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,nigga,11,Sosa Say we do the shit like we been here before,shit,INNER,SLANT,spelling,LOW,Y
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,say,11,Sosa Say we do the shit like we been here before,Say,INNER,REPEAT,spelling,HIGH,N
+GBSB,9,I say I call my nigga Fredo up I say I gotta go,go,12,First I let it go I know I blow Geronimo,Geronimo,END,PERFECT,cmu,HIGH,Y
+GBSB,10,"They taking road trips with dope, and bad ho",dope,10,"They taking road trips with dope, and bad ho",ho,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",road,10,"They taking road trips with dope, and bad ho",dope,INNER,SLANT,cmu,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",road,10,"They taking road trips with dope, and bad ho",ho,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",dope,11,Sosa Say we do the shit like we been here before,Sosa,INNER,SLANT,cmu,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",ho,11,Sosa Say we do the shit like we been here before,Sosa,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",road,11,Sosa Say we do the shit like we been here before,Sosa,INNER,SLANT,cmu,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",taking,11,Sosa Say we do the shit like we been here before,Say,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",trips,11,Sosa Say we do the shit like we been here before,shit,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",ho,12,First I let it go I know I blow Geronimo,Geronimo,END,PERFECT,cmu,HIGH,Y
+GBSB,10,"They taking road trips with dope, and bad ho",dope,12,First I let it go I know I blow Geronimo,blow,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",dope,12,First I let it go I know I blow Geronimo,Geronimo,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",dope,12,First I let it go I know I blow Geronimo,go,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",dope,12,First I let it go I know I blow Geronimo,know,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",ho,12,First I let it go I know I blow Geronimo,blow,INNER,PERFECT,cmu,HIGH,Y
+GBSB,10,"They taking road trips with dope, and bad ho",ho,12,First I let it go I know I blow Geronimo,go,INNER,PERFECT,cmu,HIGH,Y
+GBSB,10,"They taking road trips with dope, and bad ho",ho,12,First I let it go I know I blow Geronimo,know,INNER,PERFECT,cmu,HIGH,Y
+GBSB,10,"They taking road trips with dope, and bad ho",road,12,First I let it go I know I blow Geronimo,blow,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",road,12,First I let it go I know I blow Geronimo,Geronimo,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",road,12,First I let it go I know I blow Geronimo,go,INNER,ASSONANCE,vowel,MED,Y
+GBSB,10,"They taking road trips with dope, and bad ho",road,12,First I let it go I know I blow Geronimo,know,INNER,ASSONANCE,vowel,MED,Y
+GBSB,11,Sosa Say we do the shit like we been here before,Sosa,12,First I let it go I know I blow Geronimo,blow,INNER,ASSONANCE,vowel,MED,Y
+GBSB,11,Sosa Say we do the shit like we been here before,Sosa,12,First I let it go I know I blow Geronimo,Geronimo,INNER,ASSONANCE,vowel,MED,Y
+GBSB,11,Sosa Say we do the shit like we been here before,Sosa,12,First I let it go I know I blow Geronimo,go,INNER,ASSONANCE,vowel,MED,Y
+GBSB,11,Sosa Say we do the shit like we been here before,Sosa,12,First I let it go I know I blow Geronimo,know,INNER,ASSONANCE,vowel,MED,Y
+GBSB,11,Sosa Say we do the shit like we been here before,Sosa,13,No Gresham Road but I'm flexin at the Texaco,No,INNER,ASSONANCE,vowel,MED,Y
+GBSB,11,Sosa Say we do the shit like we been here before,Sosa,13,No Gresham Road but I'm flexin at the Texaco,Road,INNER,SLANT,cmu,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,blow,12,First I let it go I know I blow Geronimo,Geronimo,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,go,12,First I let it go I know I blow Geronimo,blow,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,go,12,First I let it go I know I blow Geronimo,Geronimo,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,go,12,First I let it go I know I blow Geronimo,know,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,know,12,First I let it go I know I blow Geronimo,blow,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,know,12,First I let it go I know I blow Geronimo,Geronimo,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,blow,13,No Gresham Road but I'm flexin at the Texaco,No,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,blow,13,No Gresham Road but I'm flexin at the Texaco,Road,INNER,ASSONANCE,vowel,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,Geronimo,13,No Gresham Road but I'm flexin at the Texaco,No,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,Geronimo,13,No Gresham Road but I'm flexin at the Texaco,Road,INNER,ASSONANCE,vowel,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,go,13,No Gresham Road but I'm flexin at the Texaco,No,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,go,13,No Gresham Road but I'm flexin at the Texaco,Road,INNER,ASSONANCE,vowel,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,know,13,No Gresham Road but I'm flexin at the Texaco,No,INNER,PERFECT,cmu,HIGH,Y
+GBSB,12,First I let it go I know I blow Geronimo,know,13,No Gresham Road but I'm flexin at the Texaco,Road,INNER,ASSONANCE,vowel,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,let,13,No Gresham Road but I'm flexin at the Texaco,flexin,INNER,ASSONANCE,vowel,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,let,13,No Gresham Road but I'm flexin at the Texaco,Gresham,INNER,ASSONANCE,vowel,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,let,13,No Gresham Road but I'm flexin at the Texaco,Texaco,INNER,ASSONANCE,vowel,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,let,14,We getting plenty what the fuck you think This Is Semi for,getting,INNER,SLANT,cmu,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,let,14,We getting plenty what the fuck you think This Is Semi for,plenty,INNER,SLANT,cmu,MED,Y
+GBSB,12,First I let it go I know I blow Geronimo,let,14,We getting plenty what the fuck you think This Is Semi for,Semi,INNER,SLANT,cmu,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,flexin,13,No Gresham Road but I'm flexin at the Texaco,Texaco,INNER,SLANT,cmu,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Gresham,13,No Gresham Road but I'm flexin at the Texaco,flexin,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Gresham,13,No Gresham Road but I'm flexin at the Texaco,Texaco,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,No,13,No Gresham Road but I'm flexin at the Texaco,Road,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Texaco,14,We getting plenty what the fuck you think This Is Semi for,Semi,END,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,flexin,14,We getting plenty what the fuck you think This Is Semi for,getting,INNER,SLANT,cmu,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,flexin,14,We getting plenty what the fuck you think This Is Semi for,plenty,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,flexin,14,We getting plenty what the fuck you think This Is Semi for,Semi,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Gresham,14,We getting plenty what the fuck you think This Is Semi for,getting,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Gresham,14,We getting plenty what the fuck you think This Is Semi for,plenty,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Gresham,14,We getting plenty what the fuck you think This Is Semi for,Semi,INNER,SLANT,cmu,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Texaco,14,We getting plenty what the fuck you think This Is Semi for,getting,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Texaco,14,We getting plenty what the fuck you think This Is Semi for,plenty,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Texaco,15,"GBESB we ain't no Joke, thirty pop and tec 9",tec,END,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,flexin,15,"GBESB we ain't no Joke, thirty pop and tec 9",tec,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Gresham,15,"GBESB we ain't no Joke, thirty pop and tec 9",tec,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,No,15,"GBESB we ain't no Joke, thirty pop and tec 9",Joke,INNER,ASSONANCE,vowel,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,No,15,"GBESB we ain't no Joke, thirty pop and tec 9",no,INNER,REPEAT,spelling,HIGH,N
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Road,15,"GBESB we ain't no Joke, thirty pop and tec 9",Joke,INNER,SLANT,cmu,MED,Y
+GBSB,13,No Gresham Road but I'm flexin at the Texaco,Road,15,"GBESB we ain't no Joke, thirty pop and tec 9",no,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,getting,14,We getting plenty what the fuck you think This Is Semi for,plenty,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,getting,14,We getting plenty what the fuck you think This Is Semi for,Semi,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,plenty,14,We getting plenty what the fuck you think This Is Semi for,Semi,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,what,14,We getting plenty what the fuck you think This Is Semi for,fuck,INNER,SLANT,cmu,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,Semi,15,"GBESB we ain't no Joke, thirty pop and tec 9",tec,END,SLANT,cmu,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,getting,15,"GBESB we ain't no Joke, thirty pop and tec 9",tec,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,plenty,15,"GBESB we ain't no Joke, thirty pop and tec 9",tec,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,fuck,16,"With a fucking scoop, a lot of ex pills",fucking,INNER,SLANT,cmu,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,getting,16,"With a fucking scoop, a lot of ex pills",ex,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,plenty,16,"With a fucking scoop, a lot of ex pills",ex,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,Semi,16,"With a fucking scoop, a lot of ex pills",ex,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,think,16,"With a fucking scoop, a lot of ex pills",pills,INNER,ASSONANCE,vowel,MED,Y
+GBSB,14,We getting plenty what the fuck you think This Is Semi for,what,16,"With a fucking scoop, a lot of ex pills",fucking,INNER,ASSONANCE,vowel,MED,Y
+GBSB,15,"GBESB we ain't no Joke, thirty pop and tec 9",no,15,"GBESB we ain't no Joke, thirty pop and tec 9",Joke,INNER,ASSONANCE,vowel,MED,Y
+GBSB,15,"GBESB we ain't no Joke, thirty pop and tec 9",pop,16,"With a fucking scoop, a lot of ex pills",lot,INNER,SLANT,cmu,MED,Y
+GBSB,15,"GBESB we ain't no Joke, thirty pop and tec 9",tec,16,"With a fucking scoop, a lot of ex pills",ex,INNER,SLANT,cmu,MED,Y
+GBSB,15,"GBESB we ain't no Joke, thirty pop and tec 9",Joke,17,"A lot of fucking dope, a lot of bad bitches",dope,INNER,SLANT,cmu,MED,Y
+GBSB,15,"GBESB we ain't no Joke, thirty pop and tec 9",no,17,"A lot of fucking dope, a lot of bad bitches",dope,INNER,ASSONANCE,vowel,MED,Y
+GBSB,15,"GBESB we ain't no Joke, thirty pop and tec 9",pop,17,"A lot of fucking dope, a lot of bad bitches",lot,INNER,SLANT,cmu,MED,Y
+GBSB,16,"With a fucking scoop, a lot of ex pills",pills,17,"A lot of fucking dope, a lot of bad bitches",bitches,END,SLANT,cmu,MED,Y
+GBSB,16,"With a fucking scoop, a lot of ex pills",fucking,17,"A lot of fucking dope, a lot of bad bitches",fucking,INNER,REPEAT,spelling,HIGH,N
+GBSB,16,"With a fucking scoop, a lot of ex pills",lot,17,"A lot of fucking dope, a lot of bad bitches",lot,INNER,REPEAT,spelling,HIGH,N
+GBSB,16,"With a fucking scoop, a lot of ex pills",pills,18,They just give me throat,give,INNER,ASSONANCE,vowel,MED,Y
+GBSB,17,"A lot of fucking dope, a lot of bad bitches",lot,17,"A lot of fucking dope, a lot of bad bitches",lot,INNER,REPEAT,spelling,HIGH,N
+GBSB,17,"A lot of fucking dope, a lot of bad bitches",bitches,18,They just give me throat,give,INNER,ASSONANCE,vowel,MED,Y
+GBSB,17,"A lot of fucking dope, a lot of bad bitches",dope,18,They just give me throat,throat,INNER,SLANT,cmu,MED,Y
+GBSB,17,"A lot of fucking dope, a lot of bad bitches",bitches,19,She ain't tryin to bust kick kick her out the door,kick,INNER,ASSONANCE,vowel,MED,Y
+GBSB,17,"A lot of fucking dope, a lot of bad bitches",fucking,19,She ain't tryin to bust kick kick her out the door,bust,INNER,ASSONANCE,vowel,MED,Y
+GBSB,18,They just give me throat,give,19,She ain't tryin to bust kick kick her out the door,kick,INNER,SLANT,cmu,MED,Y
+GBSB,18,They just give me throat,throat,20,"Wanna get into it with us, then them guns blow",blow,END,ASSONANCE,vowel,MED,Y
+GBSB,18,They just give me throat,throat,22,"Shoot your ass up, just to let you know",know,END,ASSONANCE,vowel,MED,Y
+GBSB,19,She ain't tryin to bust kick kick her out the door,kick,19,She ain't tryin to bust kick kick her out the door,kick,INNER,REPEAT,spelling,HIGH,N
+GBSB,19,She ain't tryin to bust kick kick her out the door,bust,20,"Wanna get into it with us, then them guns blow",guns,INNER,ASSONANCE,vowel,MED,Y
+GBSB,19,She ain't tryin to bust kick kick her out the door,door,21,"I'ma, I'mma get the bussing soon I hit the door",door,END,REPEAT,spelling,HIGH,N
+GBSB,19,She ain't tryin to bust kick kick her out the door,bust,21,"I'ma, I'mma get the bussing soon I hit the door",bussing,INNER,SLANT,cmu,MED,Y
+GBSB,19,She ain't tryin to bust kick kick her out the door,kick,21,"I'ma, I'mma get the bussing soon I hit the door",hit,INNER,SLANT,cmu,MED,Y
+GBSB,19,She ain't tryin to bust kick kick her out the door,kick,21,"I'ma, I'mma get the bussing soon I hit the door",I'ma,INNER,SLANT,spelling,LOW,Y
+GBSB,20,"Wanna get into it with us, then them guns blow",get,21,"I'ma, I'mma get the bussing soon I hit the door",get,INNER,REPEAT,spelling,HIGH,N
+GBSB,20,"Wanna get into it with us, then them guns blow",guns,21,"I'ma, I'mma get the bussing soon I hit the door",bussing,INNER,ASSONANCE,vowel,MED,Y
+GBSB,20,"Wanna get into it with us, then them guns blow",blow,22,"Shoot your ass up, just to let you know",know,END,PERFECT,cmu,HIGH,Y
+GBSB,20,"Wanna get into it with us, then them guns blow",get,22,"Shoot your ass up, just to let you know",let,INNER,PERFECT,cmu,HIGH,Y
+GBSB,20,"Wanna get into it with us, then them guns blow",blow,23,Ride up on your ass and let the chopper go,go,END,PERFECT,cmu,HIGH,Y
+GBSB,20,"Wanna get into it with us, then them guns blow",blow,24,.223 will hit em leave his ass cold,cold,END,ASSONANCE,vowel,MED,Y
+GBSB,21,"I'ma, I'mma get the bussing soon I hit the door",I'ma,21,"I'ma, I'mma get the bussing soon I hit the door",hit,INNER,SLANT,spelling,LOW,Y
+GBSB,21,"I'ma, I'mma get the bussing soon I hit the door",I'ma,21,"I'ma, I'mma get the bussing soon I hit the door",I'mma,INNER,SLANT,spelling,LOW,Y
+GBSB,21,"I'ma, I'mma get the bussing soon I hit the door",get,22,"Shoot your ass up, just to let you know",let,INNER,PERFECT,cmu,HIGH,Y
+GBSB,21,"I'ma, I'mma get the bussing soon I hit the door",soon,22,"Shoot your ass up, just to let you know",Shoot,INNER,SLANT,cmu,MED,Y
+GBSB,21,"I'ma, I'mma get the bussing soon I hit the door",get,23,Ride up on your ass and let the chopper go,let,INNER,PERFECT,cmu,HIGH,Y
+GBSB,22,"Shoot your ass up, just to let you know",know,23,Ride up on your ass and let the chopper go,go,END,PERFECT,cmu,HIGH,Y
+GBSB,22,"Shoot your ass up, just to let you know",ass,23,Ride up on your ass and let the chopper go,ass,INNER,REPEAT,spelling,HIGH,N
+GBSB,22,"Shoot your ass up, just to let you know",let,23,Ride up on your ass and let the chopper go,let,INNER,REPEAT,spelling,HIGH,N
+GBSB,22,"Shoot your ass up, just to let you know",know,24,.223 will hit em leave his ass cold,cold,END,ASSONANCE,vowel,MED,Y
+GBSB,22,"Shoot your ass up, just to let you know",ass,24,.223 will hit em leave his ass cold,ass,INNER,REPEAT,spelling,HIGH,N
+GBSB,22,"Shoot your ass up, just to let you know",let,24,.223 will hit em leave his ass cold,em,INNER,SLANT,cmu,MED,Y
+GBSB,22,"Shoot your ass up, just to let you know",know,25,Smokin all this loud but they call it dope,dope,END,ASSONANCE,vowel,MED,Y
+GBSB,22,"Shoot your ass up, just to let you know",know,26,"GBE & slutty boys what you know, ..you know",know,END,REPEAT,spelling,HIGH,N
+GBSB,23,Ride up on your ass and let the chopper go,go,24,.223 will hit em leave his ass cold,cold,END,ASSONANCE,vowel,MED,Y
+GBSB,23,Ride up on your ass and let the chopper go,ass,24,.223 will hit em leave his ass cold,ass,INNER,REPEAT,spelling,HIGH,N
+GBSB,23,Ride up on your ass and let the chopper go,let,24,.223 will hit em leave his ass cold,em,INNER,SLANT,cmu,MED,Y
+GBSB,23,Ride up on your ass and let the chopper go,go,25,Smokin all this loud but they call it dope,dope,END,ASSONANCE,vowel,MED,Y
+GBSB,23,Ride up on your ass and let the chopper go,go,25,Smokin all this loud but they call it dope,Smokin,INNER,ASSONANCE,vowel,MED,Y
+GBSB,23,Ride up on your ass and let the chopper go,go,26,"GBE & slutty boys what you know, ..you know",know,END,PERFECT,cmu,HIGH,Y
+GBSB,23,Ride up on your ass and let the chopper go,go,27,Cock it back and shoot it and let it go,go,END,REPEAT,spelling,HIGH,N
+GBSB,24,.223 will hit em leave his ass cold,will,24,.223 will hit em leave his ass cold,hit,INNER,SLANT,cmu,MED,Y
+GBSB,24,.223 will hit em leave his ass cold,cold,25,Smokin all this loud but they call it dope,dope,END,ASSONANCE,vowel,MED,Y
+GBSB,24,.223 will hit em leave his ass cold,cold,25,Smokin all this loud but they call it dope,Smokin,INNER,ASSONANCE,vowel,MED,Y
+GBSB,24,.223 will hit em leave his ass cold,cold,26,"GBE & slutty boys what you know, ..you know",know,END,ASSONANCE,vowel,MED,Y
+GBSB,24,.223 will hit em leave his ass cold,cold,26,"GBE & slutty boys what you know, ..you know",know,INNER,ASSONANCE,vowel,MED,Y
+GBSB,24,.223 will hit em leave his ass cold,leave,26,"GBE & slutty boys what you know, ..you know",slutty,INNER,ASSONANCE,vowel,MED,Y
+GBSB,24,.223 will hit em leave his ass cold,cold,27,Cock it back and shoot it and let it go,go,END,ASSONANCE,vowel,MED,Y
+GBSB,24,.223 will hit em leave his ass cold,cold,28,Nigga bullshit I'm shooting at your throat,throat,END,ASSONANCE,vowel,MED,Y
+GBSB,25,Smokin all this loud but they call it dope,all,25,Smokin all this loud but they call it dope,call,INNER,PERFECT,cmu,HIGH,Y
+GBSB,25,Smokin all this loud but they call it dope,Smokin,25,Smokin all this loud but they call it dope,dope,INNER,ASSONANCE,vowel,MED,Y
+GBSB,25,Smokin all this loud but they call it dope,dope,26,"GBE & slutty boys what you know, ..you know",know,END,ASSONANCE,vowel,MED,Y
+GBSB,25,Smokin all this loud but they call it dope,dope,26,"GBE & slutty boys what you know, ..you know",know,INNER,ASSONANCE,vowel,MED,Y
+GBSB,25,Smokin all this loud but they call it dope,Smokin,26,"GBE & slutty boys what you know, ..you know",know,INNER,ASSONANCE,vowel,MED,Y
+GBSB,25,Smokin all this loud but they call it dope,dope,27,Cock it back and shoot it and let it go,go,END,ASSONANCE,vowel,MED,Y
+GBSB,25,Smokin all this loud but they call it dope,Smokin,27,Cock it back and shoot it and let it go,go,INNER,ASSONANCE,vowel,MED,Y
+GBSB,25,Smokin all this loud but they call it dope,dope,28,Nigga bullshit I'm shooting at your throat,throat,END,SLANT,cmu,MED,Y
+GBSB,26,"GBE & slutty boys what you know, ..you know",know,26,"GBE & slutty boys what you know, ..you know",know,INNER,REPEAT,spelling,HIGH,N
+GBSB,26,"GBE & slutty boys what you know, ..you know",know,27,Cock it back and shoot it and let it go,go,END,PERFECT,cmu,HIGH,Y
+GBSB,26,"GBE & slutty boys what you know, ..you know",know,27,Cock it back and shoot it and let it go,go,INNER,PERFECT,cmu,HIGH,Y
+GBSB,26,"GBE & slutty boys what you know, ..you know",know,28,Nigga bullshit I'm shooting at your throat,throat,END,ASSONANCE,vowel,MED,Y
+GBSB,26,"GBE & slutty boys what you know, ..you know",know,28,Nigga bullshit I'm shooting at your throat,throat,INNER,ASSONANCE,vowel,MED,Y
+GBSB,27,Cock it back and shoot it and let it go,go,28,Nigga bullshit I'm shooting at your throat,throat,END,ASSONANCE,vowel,MED,Y
+GBSB,27,Cock it back and shoot it and let it go,shoot,28,Nigga bullshit I'm shooting at your throat,shooting,INNER,SLANT,cmu,MED,Y
+GBSB,28,Nigga bullshit I'm shooting at your throat,Nigga,28,Nigga bullshit I'm shooting at your throat,bullshit,INNER,SLANT,spelling,LOW,Y
+GBSB,29,Riding Round Around Northeast With Yung Gleesh,Round,29,Riding Round Around Northeast With Yung Gleesh,Around,INNER,PERFECT,cmu,HIGH,Y
+GBSB,29,Riding Round Around Northeast With Yung Gleesh,Gleesh,30,He-he got the mack mack with that 100 Piece,Piece,END,SLANT,spelling,LOW,Y
+GBSB,29,Riding Round Around Northeast With Yung Gleesh,Northeast,30,He-he got the mack mack with that 100 Piece,Piece,INNER,SLANT,cmu,MED,Y
+GBSB,29,Riding Round Around Northeast With Yung Gleesh,Gleesh,31,So run up on that nigga make that glizzy speak,speak,END,SLANT,spelling,LOW,Y
+GBSB,29,Riding Round Around Northeast With Yung Gleesh,Northeast,31,So run up on that nigga make that glizzy speak,speak,INNER,ASSONANCE,vowel,MED,Y
+GBSB,29,Riding Round Around Northeast With Yung Gleesh,Yung,31,So run up on that nigga make that glizzy speak,run,INNER,SLANT,cmu,MED,Y
+GBSB,29,Riding Round Around Northeast With Yung Gleesh,Gleesh,32,Rob Him For his four G's then Spend His G's,G's,END,SLANT,spelling,LOW,Y
+GBSB,29,Riding Round Around Northeast With Yung Gleesh,Gleesh,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,END,SLANT,spelling,LOW,Y
+GBSB,30,He-he got the mack mack with that 100 Piece,mack,30,He-he got the mack mack with that 100 Piece,mack,INNER,REPEAT,spelling,HIGH,N
+GBSB,30,He-he got the mack mack with that 100 Piece,Piece,31,So run up on that nigga make that glizzy speak,speak,END,SLANT,cmu,MED,Y
+GBSB,30,He-he got the mack mack with that 100 Piece,Piece,32,Rob Him For his four G's then Spend His G's,G's,END,SLANT,cmu,MED,Y
+GBSB,30,He-he got the mack mack with that 100 Piece,got,32,Rob Him For his four G's then Spend His G's,Rob,INNER,SLANT,cmu,MED,Y
+GBSB,30,He-he got the mack mack with that 100 Piece,Piece,32,Rob Him For his four G's then Spend His G's,G's,INNER,SLANT,cmu,MED,Y
+GBSB,30,He-he got the mack mack with that 100 Piece,Piece,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,END,SLANT,cmu,MED,Y
+GBSB,30,He-he got the mack mack with that 100 Piece,Piece,34,Meatchi Turn your brains and your double G's,G's,END,SLANT,cmu,MED,Y
+GBSB,31,So run up on that nigga make that glizzy speak,speak,32,Rob Him For his four G's then Spend His G's,G's,END,SLANT,cmu,MED,Y
+GBSB,31,So run up on that nigga make that glizzy speak,speak,32,Rob Him For his four G's then Spend His G's,G's,INNER,SLANT,cmu,MED,Y
+GBSB,31,So run up on that nigga make that glizzy speak,speak,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,END,REPEAT,spelling,HIGH,N
+GBSB,31,So run up on that nigga make that glizzy speak,nigga,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",niggas,INNER,SLANT,spelling,LOW,Y
+GBSB,31,So run up on that nigga make that glizzy speak,speak,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",beast,INNER,ASSONANCE,vowel,MED,Y
+GBSB,31,So run up on that nigga make that glizzy speak,speak,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Fredo,INNER,SLANT,cmu,MED,Y
+GBSB,31,So run up on that nigga make that glizzy speak,speak,34,Meatchi Turn your brains and your double G's,G's,END,SLANT,cmu,MED,Y
+GBSB,31,So run up on that nigga make that glizzy speak,speak,35,Burgers for you fuck niggas that don't want no beef,beef,END,SLANT,cmu,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,G's,32,Rob Him For his four G's then Spend His G's,G's,INNER,REPEAT,spelling,HIGH,N
+GBSB,32,Rob Him For his four G's then Spend His G's,G's,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,END,SLANT,cmu,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,four,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",all,INNER,SLANT,cmu,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,four,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Call,INNER,SLANT,cmu,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,G's,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",beast,INNER,ASSONANCE,vowel,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,G's,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Fredo,INNER,SLANT,cmu,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,G's,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,INNER,SLANT,cmu,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,Him,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Finish,INNER,ASSONANCE,vowel,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,Spend,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Hemm,INNER,ASSONANCE,vowel,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,Spend,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",semi's,INNER,ASSONANCE,vowel,MED,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,G's,34,Meatchi Turn your brains and your double G's,G's,END,REPEAT,spelling,HIGH,N
+GBSB,32,Rob Him For his four G's then Spend His G's,G's,34,Meatchi Turn your brains and your double G's,G's,INNER,REPEAT,spelling,HIGH,N
+GBSB,32,Rob Him For his four G's then Spend His G's,G's,34,Meatchi Turn your brains and your double G's,Meatchi,INNER,SLANT,spelling,LOW,Y
+GBSB,32,Rob Him For his four G's then Spend His G's,G's,35,Burgers for you fuck niggas that don't want no beef,beef,END,SLANT,cmu,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",beast,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,INNER,ASSONANCE,vowel,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Call,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",all,INNER,PERFECT,cmu,HIGH,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Call,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",call,INNER,REPEAT,spelling,HIGH,N
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Fredo,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",beast,INNER,ASSONANCE,vowel,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Fredo,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,INNER,SLANT,cmu,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Hemm,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",semi's,INNER,SLANT,cmu,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,34,Meatchi Turn your brains and your double G's,G's,END,SLANT,cmu,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",beast,34,Meatchi Turn your brains and your double G's,G's,INNER,ASSONANCE,vowel,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Fredo,34,Meatchi Turn your brains and your double G's,G's,INNER,SLANT,cmu,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Fredo,34,Meatchi Turn your brains and your double G's,Meatchi,INNER,SLANT,spelling,LOW,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,34,Meatchi Turn your brains and your double G's,Meatchi,INNER,SLANT,spelling,LOW,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",speak,35,Burgers for you fuck niggas that don't want no beef,beef,END,SLANT,cmu,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",beast,35,Burgers for you fuck niggas that don't want no beef,beef,INNER,ASSONANCE,vowel,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",Fredo,35,Burgers for you fuck niggas that don't want no beef,beef,INNER,SLANT,cmu,MED,Y
+GBSB,33,"Call call Tadoe And Fredo To Finish Hemm, all my niggas beast and they semi's speak",niggas,35,Burgers for you fuck niggas that don't want no beef,niggas,INNER,REPEAT,spelling,HIGH,N
+GBSB,34,Meatchi Turn your brains and your double G's,Meatchi,34,Meatchi Turn your brains and your double G's,G's,INNER,SLANT,spelling,LOW,Y
+GBSB,34,Meatchi Turn your brains and your double G's,G's,35,Burgers for you fuck niggas that don't want no beef,beef,END,SLANT,cmu,MED,Y
+GBSB,34,Meatchi Turn your brains and your double G's,double,35,Burgers for you fuck niggas that don't want no beef,fuck,INNER,ASSONANCE,vowel,MED,Y
+GBSB,34,Meatchi Turn your brains and your double G's,Meatchi,35,Burgers for you fuck niggas that don't want no beef,beef,INNER,SLANT,spelling,LOW,Y
+GBSB,34,Meatchi Turn your brains and your double G's,Turn,35,Burgers for you fuck niggas that don't want no beef,Burgers,INNER,ASSONANCE,vowel,MED,Y
+GBSB,35,Burgers for you fuck niggas that don't want no beef,don't,35,Burgers for you fuck niggas that don't want no beef,no,INNER,ASSONANCE,vowel,MED,Y

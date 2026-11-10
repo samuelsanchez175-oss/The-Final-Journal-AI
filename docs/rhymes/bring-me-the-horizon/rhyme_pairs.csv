@@ -1,0 +1,90 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+AmEN!,1,I hope you have fun rotting in hell,hell,2,"Swim the witch, slay the infidel",infidel,END,PERFECT,cmu,HIGH,Y
+AmEN!,1,I hope you have fun rotting in hell,hell,3,"Suck a dick, heretic",heretic,END,ASSONANCE,vowel,MED,Y
+AmEN!,1,I hope you have fun rotting in hell,fun,3,"Suck a dick, heretic",Suck,INNER,SLANT,cmu,MED,Y
+AmEN!,1,I hope you have fun rotting in hell,hell,5,So tell all your friends (Friends),friends,END,ASSONANCE,vowel,MED,Y
+AmEN!,2,"Swim the witch, slay the infidel",Swim,2,"Swim the witch, slay the infidel",witch,INNER,SLANT,cmu,MED,Y
+AmEN!,2,"Swim the witch, slay the infidel",infidel,3,"Suck a dick, heretic",heretic,END,ASSONANCE,vowel,MED,Y
+AmEN!,2,"Swim the witch, slay the infidel",Swim,3,"Suck a dick, heretic",dick,INNER,SLANT,cmu,MED,Y
+AmEN!,2,"Swim the witch, slay the infidel",witch,3,"Suck a dick, heretic",dick,INNER,SLANT,cmu,MED,Y
+AmEN!,2,"Swim the witch, slay the infidel",infidel,5,So tell all your friends (Friends),friends,END,ASSONANCE,vowel,MED,Y
+AmEN!,3,"Suck a dick, heretic",heretic,5,So tell all your friends (Friends),friends,END,ASSONANCE,vowel,MED,Y
+AmEN!,3,"Suck a dick, heretic",heretic,5,So tell all your friends (Friends),tell,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,3,"Suck a dick, heretic",heretic,7,Too late to repent ('Pent),repent,END,ASSONANCE,vowel,MED,Y
+AmEN!,4,"And I'd like to see you burn, burn, burn",burn,4,"And I'd like to see you burn, burn, burn",burn,INNER,REPEAT,spelling,HIGH,N
+AmEN!,5,So tell all your friends (Friends),tell,5,So tell all your friends (Friends),friends,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,5,So tell all your friends (Friends),friends,6,This is the end of everything,end,INNER,SLANT,cmu,MED,Y
+AmEN!,5,So tell all your friends (Friends),tell,6,This is the end of everything,end,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,5,So tell all your friends (Friends),friends,7,Too late to repent ('Pent),repent,END,ASSONANCE,vowel,MED,Y
+AmEN!,5,So tell all your friends (Friends),tell,7,Too late to repent ('Pent),repent,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,6,This is the end of everything,end,7,Too late to repent ('Pent),repent,INNER,SLANT,cmu,MED,Y
+AmEN!,6,This is the end of everything,everything,8,The wicked will reap what they sow,wicked,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,6,This is the end of everything,everything,8,The wicked will reap what they sow,will,INNER,SLANT,cmu,MED,Y
+AmEN!,8,The wicked will reap what they sow,wicked,8,The wicked will reap what they sow,will,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,8,The wicked will reap what they sow,wicked,9,"We will sanctify (Rise, my brethren)",will,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,8,The wicked will reap what they sow,will,9,"We will sanctify (Rise, my brethren)",will,INNER,REPEAT,spelling,HIGH,N
+AmEN!,9,"We will sanctify (Rise, my brethren)",sanctify,10,Purify (Purge out the sin),Purify,END,MULTI,multi,HIGH,Y
+AmEN!,9,"We will sanctify (Rise, my brethren)",will,11,Rejoice in their sorrow and sing,sing,INNER,SLANT,cmu,MED,Y
+AmEN!,12,All hail Nex Gen (All hail Nex Gen),Nex,12,All hail Nex Gen (All hail Nex Gen),Gen,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,12,All hail Nex Gen (All hail Nex Gen),Gen,13,Can I get an amen?,amen,END,PERFECT,cmu,HIGH,Y
+AmEN!,12,All hail Nex Gen (All hail Nex Gen),Gen,13,Can I get an amen?,get,INNER,SLANT,cmu,MED,Y
+AmEN!,12,All hail Nex Gen (All hail Nex Gen),Nex,13,Can I get an amen?,amen,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,12,All hail Nex Gen (All hail Nex Gen),Nex,13,Can I get an amen?,get,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,12,All hail Nex Gen (All hail Nex Gen),Gen,14,Somebody call the exorcist,exorcist,END,ASSONANCE,vowel,MED,Y
+AmEN!,12,All hail Nex Gen (All hail Nex Gen),All,14,Somebody call the exorcist,call,INNER,PERFECT,cmu,HIGH,Y
+AmEN!,12,All hail Nex Gen (All hail Nex Gen),Nex,14,Somebody call the exorcist,exorcist,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,12,All hail Nex Gen (All hail Nex Gen),Gen,15,"This is heresy, the child is possessed",possessed,END,ASSONANCE,vowel,MED,Y
+AmEN!,13,Can I get an amen?,get,13,Can I get an amen?,amen,INNER,SLANT,cmu,MED,Y
+AmEN!,13,Can I get an amen?,amen,14,Somebody call the exorcist,exorcist,END,ASSONANCE,vowel,MED,Y
+AmEN!,13,Can I get an amen?,get,14,Somebody call the exorcist,exorcist,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,13,Can I get an amen?,amen,15,"This is heresy, the child is possessed",possessed,END,ASSONANCE,vowel,MED,Y
+AmEN!,13,Can I get an amen?,amen,15,"This is heresy, the child is possessed",heresy,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,13,Can I get an amen?,get,15,"This is heresy, the child is possessed",heresy,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,13,Can I get an amen?,get,15,"This is heresy, the child is possessed",possessed,INNER,SLANT,cmu,MED,Y
+AmEN!,14,Somebody call the exorcist,exorcist,15,"This is heresy, the child is possessed",possessed,END,ASSONANCE,vowel,MED,Y
+AmEN!,14,Somebody call the exorcist,exorcist,15,"This is heresy, the child is possessed",heresy,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,15,"This is heresy, the child is possessed",heresy,15,"This is heresy, the child is possessed",possessed,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,16,"Yeah, you fanatics prey on me, hate on me",prey,16,"Yeah, you fanatics prey on me, hate on me",hate,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,16,"Yeah, you fanatics prey on me, hate on me",hate,17,Patiently waiting to watch me bleed,Patiently,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,16,"Yeah, you fanatics prey on me, hate on me",hate,17,Patiently waiting to watch me bleed,waiting,INNER,SLANT,cmu,MED,Y
+AmEN!,16,"Yeah, you fanatics prey on me, hate on me",prey,17,Patiently waiting to watch me bleed,Patiently,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,16,"Yeah, you fanatics prey on me, hate on me",prey,17,Patiently waiting to watch me bleed,waiting,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,16,"Yeah, you fanatics prey on me, hate on me",fanatics,18,Get your head from out of my ass (Yeah),ass,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,17,Patiently waiting to watch me bleed,Patiently,17,Patiently waiting to watch me bleed,waiting,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,17,Patiently waiting to watch me bleed,bleed,19,You got me feeling like a human centipede,centipede,END,PERFECT,cmu,HIGH,Y
+AmEN!,17,Patiently waiting to watch me bleed,bleed,19,You got me feeling like a human centipede,feeling,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,17,Patiently waiting to watch me bleed,watch,19,You got me feeling like a human centipede,got,INNER,SLANT,cmu,MED,Y
+AmEN!,17,Patiently waiting to watch me bleed,bleed,20,Just let me breathe,breathe,END,SLANT,cmu,MED,Y
+AmEN!,18,Get your head from out of my ass (Yeah),Get,18,Get your head from out of my ass (Yeah),head,INNER,SLANT,cmu,MED,Y
+AmEN!,18,Get your head from out of my ass (Yeah),Get,20,Just let me breathe,let,INNER,PERFECT,cmu,HIGH,Y
+AmEN!,18,Get your head from out of my ass (Yeah),head,20,Just let me breathe,let,INNER,SLANT,cmu,MED,Y
+AmEN!,19,You got me feeling like a human centipede,feeling,19,You got me feeling like a human centipede,centipede,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,19,You got me feeling like a human centipede,centipede,20,Just let me breathe,breathe,END,SLANT,cmu,MED,Y
+AmEN!,19,You got me feeling like a human centipede,feeling,20,Just let me breathe,breathe,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,21,Stay the fuck away from me,Stay,21,Stay the fuck away from me,away,INNER,PERFECT,cmu,HIGH,Y
+AmEN!,22,I don't really want me,don't,23,As my own enemy,own,INNER,SLANT,cmu,MED,Y
+AmEN!,23,As my own enemy,enemy,25,Just let me suffer (Just let me breathe),let,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,23,As my own enemy,enemy,26,"Oh, just let me",let,END,ASSONANCE,vowel,MED,Y
+AmEN!,24,We'll bathe in the blood of the damned,blood,25,Just let me suffer (Just let me breathe),suffer,INNER,SLANT,cmu,MED,Y
+AmEN!,25,Just let me suffer (Just let me breathe),let,26,"Oh, just let me",let,INNER,REPEAT,spelling,HIGH,N
+AmEN!,25,Just let me suffer (Just let me breathe),suffer,27,"Oh, just let me suffer",suffer,END,REPEAT,spelling,HIGH,N
+AmEN!,25,Just let me suffer (Just let me breathe),let,27,"Oh, just let me suffer",let,INNER,REPEAT,spelling,HIGH,N
+AmEN!,26,"Oh, just let me",let,27,"Oh, just let me suffer",let,INNER,REPEAT,spelling,HIGH,N
+AmEN!,27,"Oh, just let me suffer",suffer,29,"Fallen from grace, corrupted our faith",corrupted,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,27,"Oh, just let me suffer",suffer,30,Thou will be done till kingdom come,come,END,SLANT,cmu,MED,Y
+AmEN!,28,I'm about to lose control,about,30,Thou will be done till kingdom come,Thou,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,29,"Fallen from grace, corrupted our faith",grace,29,"Fallen from grace, corrupted our faith",faith,INNER,SLANT,cmu,MED,Y
+AmEN!,29,"Fallen from grace, corrupted our faith",corrupted,30,Thou will be done till kingdom come,come,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,29,"Fallen from grace, corrupted our faith",corrupted,30,Thou will be done till kingdom come,done,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,30,Thou will be done till kingdom come,done,30,Thou will be done till kingdom come,come,INNER,SLANT,cmu,MED,Y
+AmEN!,30,Thou will be done till kingdom come,till,30,Thou will be done till kingdom come,kingdom,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,30,Thou will be done till kingdom come,will,30,Thou will be done till kingdom come,kingdom,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,30,Thou will be done till kingdom come,will,30,Thou will be done till kingdom come,till,INNER,PERFECT,cmu,HIGH,Y
+AmEN!,30,Thou will be done till kingdom come,kingdom,31,"We will sanctify, purify",will,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,30,Thou will be done till kingdom come,till,31,"We will sanctify, purify",will,INNER,PERFECT,cmu,HIGH,Y
+AmEN!,30,Thou will be done till kingdom come,will,31,"We will sanctify, purify",will,INNER,REPEAT,spelling,HIGH,N
+AmEN!,30,Thou will be done till kingdom come,come,32,I execute judgment on you,judgment,END,ASSONANCE,vowel,MED,Y
+AmEN!,30,Thou will be done till kingdom come,done,32,I execute judgment on you,judgment,INNER,ASSONANCE,vowel,MED,Y
+AmEN!,31,"We will sanctify, purify",sanctify,31,"We will sanctify, purify",purify,INNER,MULTI,multi,HIGH,Y
+AmEN!,31,"We will sanctify, purify",will sanctify,31,"We will sanctify, purify",sanctify purify,INNER,MULTI,multi,HIGH,Y
+AmEN!,32,I execute judgment on you,execute,34,"Wow, that's really cool",cool,INNER,SLANT,cmu,MED,Y

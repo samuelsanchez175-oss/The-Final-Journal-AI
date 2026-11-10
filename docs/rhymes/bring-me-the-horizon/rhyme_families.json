@@ -1,0 +1,786 @@
+[
+  {
+    "sound_key": "vow:EH",
+    "total": 27,
+    "end_count": 13,
+    "inner_count": 14,
+    "words": [
+      {
+        "word": "exorcist",
+        "count": 6
+      },
+      {
+        "word": "heretic",
+        "count": 5
+      },
+      {
+        "word": "friends",
+        "count": 5
+      },
+      {
+        "word": "tell",
+        "count": 4
+      },
+      {
+        "word": "nex",
+        "count": 4
+      },
+      {
+        "word": "amen",
+        "count": 4
+      },
+      {
+        "word": "possessed",
+        "count": 4
+      },
+      {
+        "word": "heresy",
+        "count": 4
+      },
+      {
+        "word": "repent",
+        "count": 3
+      },
+      {
+        "word": "gen",
+        "count": 3
+      },
+      {
+        "word": "get",
+        "count": 3
+      },
+      {
+        "word": "hell",
+        "count": 2
+      },
+      {
+        "word": "infidel",
+        "count": 2
+      },
+      {
+        "word": "enemy",
+        "count": 2
+      },
+      {
+        "word": "let",
+        "count": 2
+      },
+      {
+        "word": "end",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "I hope you have fun rotting in hell",
+      "Suck a dick, heretic",
+      "So tell all your friends (Friends)",
+      "Swim the witch, slay the infidel",
+      "Too late to repent ('Pent)"
+    ]
+  },
+  {
+    "sound_key": "vow:IH",
+    "total": 6,
+    "end_count": 0,
+    "inner_count": 6,
+    "words": [
+      {
+        "word": "will",
+        "count": 4
+      },
+      {
+        "word": "wicked",
+        "count": 3
+      },
+      {
+        "word": "kingdom",
+        "count": 3
+      },
+      {
+        "word": "everything",
+        "count": 1
+      },
+      {
+        "word": "till",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "This is the end of everything",
+      "The wicked will reap what they sow",
+      "We will sanctify (Rise, my brethren)",
+      "Thou will be done till kingdom come",
+      "We will sanctify, purify"
+    ]
+  },
+  {
+    "sound_key": "vow:AH",
+    "total": 5,
+    "end_count": 1,
+    "inner_count": 4,
+    "words": [
+      {
+        "word": "corrupted",
+        "count": 3
+      },
+      {
+        "word": "come",
+        "count": 2
+      },
+      {
+        "word": "done",
+        "count": 2
+      },
+      {
+        "word": "judgment",
+        "count": 2
+      },
+      {
+        "word": "suffer",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Oh, just let me suffer",
+      "Fallen from grace, corrupted our faith",
+      "Thou will be done till kingdom come",
+      "I execute judgment on you"
+    ]
+  },
+  {
+    "sound_key": "vow:EY",
+    "total": 5,
+    "end_count": 0,
+    "inner_count": 5,
+    "words": [
+      {
+        "word": "prey",
+        "count": 3
+      },
+      {
+        "word": "patiently",
+        "count": 3
+      },
+      {
+        "word": "hate",
+        "count": 2
+      },
+      {
+        "word": "waiting",
+        "count": 2
+      }
+    ],
+    "examples": [
+      "Yeah, you fanatics prey on me, hate on me",
+      "Patiently waiting to watch me bleed"
+    ]
+  },
+  {
+    "sound_key": "slant:EH:stop",
+    "total": 4,
+    "end_count": 0,
+    "inner_count": 4,
+    "words": [
+      {
+        "word": "get",
+        "count": 2
+      },
+      {
+        "word": "head",
+        "count": 2
+      },
+      {
+        "word": "end",
+        "count": 1
+      },
+      {
+        "word": "repent",
+        "count": 1
+      },
+      {
+        "word": "possessed",
+        "count": 1
+      },
+      {
+        "word": "let",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "This is the end of everything",
+      "Too late to repent ('Pent)",
+      "Can I get an amen?",
+      "This is heresy, the child is possessed",
+      "Get your head from out of my ass (Yeah)"
+    ]
+  },
+  {
+    "sound_key": "multi:AH-F-AY",
+    "total": 3,
+    "end_count": 1,
+    "inner_count": 2,
+    "words": [
+      {
+        "word": "sanctify",
+        "count": 2
+      },
+      {
+        "word": "purify",
+        "count": 2
+      },
+      {
+        "word": "will sanctify",
+        "count": 1
+      },
+      {
+        "word": "sanctify purify",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "We will sanctify (Rise, my brethren)",
+      "Purify (Purge out the sin)",
+      "We will sanctify, purify"
+    ]
+  },
+  {
+    "sound_key": "vow:IY",
+    "total": 3,
+    "end_count": 0,
+    "inner_count": 3,
+    "words": [
+      {
+        "word": "feeling",
+        "count": 3
+      },
+      {
+        "word": "bleed",
+        "count": 1
+      },
+      {
+        "word": "centipede",
+        "count": 1
+      },
+      {
+        "word": "breathe",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Patiently waiting to watch me bleed",
+      "You got me feeling like a human centipede",
+      "Just let me breathe"
+    ]
+  },
+  {
+    "sound_key": "cmu:IH-L",
+    "total": 2,
+    "end_count": 0,
+    "inner_count": 2,
+    "words": [
+      {
+        "word": "will",
+        "count": 2
+      },
+      {
+        "word": "till",
+        "count": 2
+      }
+    ],
+    "examples": [
+      "Thou will be done till kingdom come",
+      "We will sanctify, purify"
+    ]
+  },
+  {
+    "sound_key": "slant:EH:nas-stop",
+    "total": 2,
+    "end_count": 0,
+    "inner_count": 2,
+    "words": [
+      {
+        "word": "get",
+        "count": 2
+      },
+      {
+        "word": "gen",
+        "count": 1
+      },
+      {
+        "word": "amen",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "All hail Nex Gen (All hail Nex Gen)",
+      "Can I get an amen?"
+    ]
+  },
+  {
+    "sound_key": "slant:IH:liq-nas",
+    "total": 2,
+    "end_count": 0,
+    "inner_count": 2,
+    "words": [
+      {
+        "word": "will",
+        "count": 2
+      },
+      {
+        "word": "everything",
+        "count": 1
+      },
+      {
+        "word": "sing",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "This is the end of everything",
+      "The wicked will reap what they sow",
+      "We will sanctify (Rise, my brethren)",
+      "Rejoice in their sorrow and sing"
+    ]
+  },
+  {
+    "sound_key": "slant:IY:sib-stop",
+    "total": 2,
+    "end_count": 2,
+    "inner_count": 0,
+    "words": [
+      {
+        "word": "breathe",
+        "count": 2
+      },
+      {
+        "word": "bleed",
+        "count": 1
+      },
+      {
+        "word": "centipede",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Patiently waiting to watch me bleed",
+      "Just let me breathe",
+      "You got me feeling like a human centipede"
+    ]
+  },
+  {
+    "sound_key": "cmu:AO-L",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "all",
+        "count": 1
+      },
+      {
+        "word": "call",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "All hail Nex Gen (All hail Nex Gen)",
+      "Somebody call the exorcist"
+    ]
+  },
+  {
+    "sound_key": "cmu:EH-L",
+    "total": 1,
+    "end_count": 1,
+    "inner_count": 0,
+    "words": [
+      {
+        "word": "hell",
+        "count": 1
+      },
+      {
+        "word": "infidel",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "I hope you have fun rotting in hell",
+      "Swim the witch, slay the infidel"
+    ]
+  },
+  {
+    "sound_key": "cmu:EH-N",
+    "total": 1,
+    "end_count": 1,
+    "inner_count": 0,
+    "words": [
+      {
+        "word": "gen",
+        "count": 1
+      },
+      {
+        "word": "amen",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "All hail Nex Gen (All hail Nex Gen)",
+      "Can I get an amen?"
+    ]
+  },
+  {
+    "sound_key": "cmu:EH-T",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "get",
+        "count": 1
+      },
+      {
+        "word": "let",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Get your head from out of my ass (Yeah)",
+      "Just let me breathe"
+    ]
+  },
+  {
+    "sound_key": "cmu:EY",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "stay",
+        "count": 1
+      },
+      {
+        "word": "away",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Stay the fuck away from me"
+    ]
+  },
+  {
+    "sound_key": "cmu:IY-D",
+    "total": 1,
+    "end_count": 1,
+    "inner_count": 0,
+    "words": [
+      {
+        "word": "bleed",
+        "count": 1
+      },
+      {
+        "word": "centipede",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Patiently waiting to watch me bleed",
+      "You got me feeling like a human centipede"
+    ]
+  },
+  {
+    "sound_key": "slant:AA:sib-stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "watch",
+        "count": 1
+      },
+      {
+        "word": "got",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Patiently waiting to watch me bleed",
+      "You got me feeling like a human centipede"
+    ]
+  },
+  {
+    "sound_key": "slant:AH:fric-nas",
+    "total": 1,
+    "end_count": 1,
+    "inner_count": 0,
+    "words": [
+      {
+        "word": "suffer",
+        "count": 1
+      },
+      {
+        "word": "come",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Oh, just let me suffer",
+      "Thou will be done till kingdom come"
+    ]
+  },
+  {
+    "sound_key": "slant:AH:fric-stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "blood",
+        "count": 1
+      },
+      {
+        "word": "suffer",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "We'll bathe in the blood of the damned",
+      "Just let me suffer (Just let me breathe)"
+    ]
+  },
+  {
+    "sound_key": "slant:AH:nas",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "done",
+        "count": 1
+      },
+      {
+        "word": "come",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Thou will be done till kingdom come"
+    ]
+  },
+  {
+    "sound_key": "slant:AH:nas-stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "fun",
+        "count": 1
+      },
+      {
+        "word": "suck",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "I hope you have fun rotting in hell",
+      "Suck a dick, heretic"
+    ]
+  },
+  {
+    "sound_key": "slant:EH:sib-stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "friends",
+        "count": 1
+      },
+      {
+        "word": "end",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "So tell all your friends (Friends)",
+      "This is the end of everything"
+    ]
+  },
+  {
+    "sound_key": "slant:EY:nas-stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "hate",
+        "count": 1
+      },
+      {
+        "word": "waiting",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Yeah, you fanatics prey on me, hate on me",
+      "Patiently waiting to watch me bleed"
+    ]
+  },
+  {
+    "sound_key": "slant:EY:sib",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "grace",
+        "count": 1
+      },
+      {
+        "word": "faith",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Fallen from grace, corrupted our faith"
+    ]
+  },
+  {
+    "sound_key": "slant:IH:nas-sib",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "swim",
+        "count": 1
+      },
+      {
+        "word": "witch",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Swim the witch, slay the infidel"
+    ]
+  },
+  {
+    "sound_key": "slant:IH:nas-stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "swim",
+        "count": 1
+      },
+      {
+        "word": "dick",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Swim the witch, slay the infidel",
+      "Suck a dick, heretic"
+    ]
+  },
+  {
+    "sound_key": "slant:IH:sib-stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "witch",
+        "count": 1
+      },
+      {
+        "word": "dick",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Swim the witch, slay the infidel",
+      "Suck a dick, heretic"
+    ]
+  },
+  {
+    "sound_key": "slant:OW:nas-stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "don't",
+        "count": 1
+      },
+      {
+        "word": "own",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "I don't really want me",
+      "As my own enemy"
+    ]
+  },
+  {
+    "sound_key": "slant:UW:liq-stop",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "execute",
+        "count": 1
+      },
+      {
+        "word": "cool",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "I execute judgment on you",
+      "Wow, that's really cool"
+    ]
+  },
+  {
+    "sound_key": "vow:AE",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "fanatics",
+        "count": 1
+      },
+      {
+        "word": "ass",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "Yeah, you fanatics prey on me, hate on me",
+      "Get your head from out of my ass (Yeah)"
+    ]
+  },
+  {
+    "sound_key": "vow:AW",
+    "total": 1,
+    "end_count": 0,
+    "inner_count": 1,
+    "words": [
+      {
+        "word": "about",
+        "count": 1
+      },
+      {
+        "word": "thou",
+        "count": 1
+      }
+    ],
+    "examples": [
+      "I'm about to lose control",
+      "Thou will be done till kingdom come"
+    ]
+  }
+]

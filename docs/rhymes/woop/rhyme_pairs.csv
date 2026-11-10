@@ -1,0 +1,315 @@
+song,bar_index_a,bar_a,word_a,bar_index_b,bar_b,word_b,type,match,layer_used,confidence,core
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",guard,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",no bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",anybody guard,INNER,MULTI,multi,HIGH,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",Ar,INNER,SLANT,cmu,MED,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",bar,INNER,SLANT,cmu,MED,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",guard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",Ar,INNER,SLANT,cmu,MED,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",guard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",bar,INNER,SLANT,cmu,MED,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",late,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",day,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",pull,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",pull,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",anybody,3,Who dat there got them jays at the door in the room,there,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",bodyguard,3,Who dat there got them jays at the door in the room,got,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",guard,3,Who dat there got them jays at the door in the room,got,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,1,"I dont need no bodyguard, pull up late anybody guard",late,3,Who dat there got them jays at the door in the room,jays,INNER,SLANT,cmu,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",bar,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",Ar,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",gone,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",broad,INNER,SLANT,cmu,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",Ar,3,Who dat there got them jays at the door in the room,got,INNER,SLANT,cmu,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",bar,3,Who dat there got them jays at the door in the room,got,INNER,SLANT,cmu,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",broad,3,Who dat there got them jays at the door in the room,door,INNER,SLANT,cmu,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",day,3,Who dat there got them jays at the door in the room,jays,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",gone,3,Who dat there got them jays at the door in the room,door,INNER,SLANT,cmu,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",xanax,3,Who dat there got them jays at the door in the room,dat,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",broad,4,Who dat there case they pull up on you wrong with that chrome,wrong,INNER,SLANT,cmu,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",day,4,Who dat there case they pull up on you wrong with that chrome,case,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",gone,4,Who dat there case they pull up on you wrong with that chrome,wrong,INNER,SLANT,cmu,MED,Y
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",pull,4,Who dat there case they pull up on you wrong with that chrome,pull,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,2,"On a xanax bar and a Ar, we gone pull up broad day with that hk",xanax,4,Who dat there case they pull up on you wrong with that chrome,dat,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,3,Who dat there got them jays at the door in the room,Who,3,Who dat there got them jays at the door in the room,room,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,3,Who dat there got them jays at the door in the room,dat,4,Who dat there case they pull up on you wrong with that chrome,dat,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,3,Who dat there got them jays at the door in the room,door,4,Who dat there case they pull up on you wrong with that chrome,wrong,INNER,SLANT,cmu,MED,Y
+Bodyguard,3,Who dat there got them jays at the door in the room,jays,4,Who dat there case they pull up on you wrong with that chrome,case,INNER,SLANT,cmu,MED,Y
+Bodyguard,3,Who dat there got them jays at the door in the room,room,4,Who dat there case they pull up on you wrong with that chrome,Who,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,3,Who dat there got them jays at the door in the room,there,4,Who dat there case they pull up on you wrong with that chrome,there,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,3,Who dat there got them jays at the door in the room,Who,4,Who dat there case they pull up on you wrong with that chrome,Who,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,3,Who dat there got them jays at the door in the room,dat,5,Who dat there with them 30 clips right off the hip,dat,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,3,Who dat there got them jays at the door in the room,room,5,Who dat there with them 30 clips right off the hip,Who,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,3,Who dat there got them jays at the door in the room,there,5,Who dat there with them 30 clips right off the hip,there,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,3,Who dat there got them jays at the door in the room,Who,5,Who dat there with them 30 clips right off the hip,Who,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,4,Who dat there case they pull up on you wrong with that chrome,dat,5,Who dat there with them 30 clips right off the hip,dat,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,4,Who dat there case they pull up on you wrong with that chrome,there,5,Who dat there with them 30 clips right off the hip,there,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,4,Who dat there case they pull up on you wrong with that chrome,Who,5,Who dat there with them 30 clips right off the hip,Who,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,4,Who dat there case they pull up on you wrong with that chrome,chrome,6,Who dat there they dont need no bodyguard,no,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,4,Who dat there case they pull up on you wrong with that chrome,dat,6,Who dat there they dont need no bodyguard,dat,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,4,Who dat there case they pull up on you wrong with that chrome,there,6,Who dat there they dont need no bodyguard,there,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,4,Who dat there case they pull up on you wrong with that chrome,Who,6,Who dat there they dont need no bodyguard,Who,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,5,Who dat there with them 30 clips right off the hip,clips,5,Who dat there with them 30 clips right off the hip,hip,INNER,SLANT,cmu,MED,Y
+Bodyguard,5,Who dat there with them 30 clips right off the hip,dat,6,Who dat there they dont need no bodyguard,dat,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,5,Who dat there with them 30 clips right off the hip,there,6,Who dat there they dont need no bodyguard,there,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,5,Who dat there with them 30 clips right off the hip,Who,6,Who dat there they dont need no bodyguard,Who,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,5,Who dat there with them 30 clips right off the hip,hip,9,OG cookies pulling cookies out my cookie jar not no milk,milk,END,ASSONANCE,vowel,MED,Y
+Bodyguard,6,Who dat there they dont need no bodyguard,bodyguard,7,Know he hood he just pull up park it cross the yard,yard,END,PERFECT,cmu,HIGH,Y
+Bodyguard,6,Who dat there they dont need no bodyguard,bodyguard,7,Know he hood he just pull up park it cross the yard,park,INNER,SLANT,cmu,MED,Y
+Bodyguard,6,Who dat there they dont need no bodyguard,dont,7,Know he hood he just pull up park it cross the yard,Know,INNER,ASSONANCE,vowel,LOW,N
+Bodyguard,6,Who dat there they dont need no bodyguard,no,7,Know he hood he just pull up park it cross the yard,Know,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,6,Who dat there they dont need no bodyguard,bodyguard,8,Molly rock got the hood going monkey bars,bars,END,SLANT,cmu,MED,Y
+Bodyguard,6,Who dat there they dont need no bodyguard,bodyguard,8,Molly rock got the hood going monkey bars,got,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,6,Who dat there they dont need no bodyguard,bodyguard,8,Molly rock got the hood going monkey bars,Molly,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,6,Who dat there they dont need no bodyguard,bodyguard,8,Molly rock got the hood going monkey bars,rock,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,6,Who dat there they dont need no bodyguard,no,8,Molly rock got the hood going monkey bars,going,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,6,Who dat there they dont need no bodyguard,bodyguard,10,I just hit it till that bitch get hard,hard,END,PERFECT,cmu,HIGH,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,hood,7,Know he hood he just pull up park it cross the yard,pull,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,park,7,Know he hood he just pull up park it cross the yard,yard,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,yard,8,Molly rock got the hood going monkey bars,bars,END,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,hood,8,Molly rock got the hood going monkey bars,hood,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,7,Know he hood he just pull up park it cross the yard,Know,8,Molly rock got the hood going monkey bars,going,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,park,8,Molly rock got the hood going monkey bars,bars,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,park,8,Molly rock got the hood going monkey bars,got,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,park,8,Molly rock got the hood going monkey bars,Molly,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,park,8,Molly rock got the hood going monkey bars,rock,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,pull,8,Molly rock got the hood going monkey bars,hood,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,yard,8,Molly rock got the hood going monkey bars,got,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,yard,8,Molly rock got the hood going monkey bars,Molly,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,yard,8,Molly rock got the hood going monkey bars,rock,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,hood,9,OG cookies pulling cookies out my cookie jar not no milk,cookie,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,hood,9,OG cookies pulling cookies out my cookie jar not no milk,cookies,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,hood,9,OG cookies pulling cookies out my cookie jar not no milk,pulling,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,Know,9,OG cookies pulling cookies out my cookie jar not no milk,no,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,park,9,OG cookies pulling cookies out my cookie jar not no milk,jar,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,park,9,OG cookies pulling cookies out my cookie jar not no milk,not,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,park,9,OG cookies pulling cookies out my cookie jar not no milk,OG,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,pull,9,OG cookies pulling cookies out my cookie jar not no milk,cookie,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,pull,9,OG cookies pulling cookies out my cookie jar not no milk,cookies,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,pull,9,OG cookies pulling cookies out my cookie jar not no milk,pulling,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,yard,9,OG cookies pulling cookies out my cookie jar not no milk,jar,INNER,SLANT,cmu,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,yard,9,OG cookies pulling cookies out my cookie jar not no milk,not,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,yard,9,OG cookies pulling cookies out my cookie jar not no milk,OG,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,7,Know he hood he just pull up park it cross the yard,yard,10,I just hit it till that bitch get hard,hard,END,PERFECT,cmu,HIGH,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,got,8,Molly rock got the hood going monkey bars,bars,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,Molly,8,Molly rock got the hood going monkey bars,bars,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,Molly,8,Molly rock got the hood going monkey bars,got,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,Molly,8,Molly rock got the hood going monkey bars,rock,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,rock,8,Molly rock got the hood going monkey bars,bars,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,rock,8,Molly rock got the hood going monkey bars,got,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,bars,9,OG cookies pulling cookies out my cookie jar not no milk,jar,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,bars,9,OG cookies pulling cookies out my cookie jar not no milk,not,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,bars,9,OG cookies pulling cookies out my cookie jar not no milk,OG,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,going,9,OG cookies pulling cookies out my cookie jar not no milk,no,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,got,9,OG cookies pulling cookies out my cookie jar not no milk,jar,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,got,9,OG cookies pulling cookies out my cookie jar not no milk,not,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,got,9,OG cookies pulling cookies out my cookie jar not no milk,OG,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,hood,9,OG cookies pulling cookies out my cookie jar not no milk,cookie,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,hood,9,OG cookies pulling cookies out my cookie jar not no milk,cookies,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,hood,9,OG cookies pulling cookies out my cookie jar not no milk,pulling,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,Molly,9,OG cookies pulling cookies out my cookie jar not no milk,jar,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,Molly,9,OG cookies pulling cookies out my cookie jar not no milk,not,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,Molly,9,OG cookies pulling cookies out my cookie jar not no milk,OG,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,rock,9,OG cookies pulling cookies out my cookie jar not no milk,jar,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,rock,9,OG cookies pulling cookies out my cookie jar not no milk,not,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,rock,9,OG cookies pulling cookies out my cookie jar not no milk,OG,INNER,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,bars,10,I just hit it till that bitch get hard,hard,END,SLANT,cmu,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,got,10,I just hit it till that bitch get hard,hard,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,Molly,10,I just hit it till that bitch get hard,hard,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,8,Molly rock got the hood going monkey bars,rock,10,I just hit it till that bitch get hard,hard,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,cookies,9,OG cookies pulling cookies out my cookie jar not no milk,cookie,INNER,SLANT,cmu,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,cookies,9,OG cookies pulling cookies out my cookie jar not no milk,cookies,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,cookies,9,OG cookies pulling cookies out my cookie jar not no milk,pulling,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,jar,9,OG cookies pulling cookies out my cookie jar not no milk,not,INNER,SLANT,cmu,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,OG,9,OG cookies pulling cookies out my cookie jar not no milk,jar,INNER,SLANT,cmu,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,OG,9,OG cookies pulling cookies out my cookie jar not no milk,not,INNER,SLANT,cmu,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,pulling,9,OG cookies pulling cookies out my cookie jar not no milk,cookie,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,pulling,9,OG cookies pulling cookies out my cookie jar not no milk,cookies,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,jar,10,I just hit it till that bitch get hard,hard,INNER,SLANT,cmu,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,milk,10,I just hit it till that bitch get hard,bitch,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,milk,10,I just hit it till that bitch get hard,hit,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,milk,10,I just hit it till that bitch get hard,till,INNER,SLANT,cmu,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,not,10,I just hit it till that bitch get hard,hard,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,OG,10,I just hit it till that bitch get hard,hard,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,milk,11,.357 blue tips them my same shits,shits,END,ASSONANCE,vowel,MED,Y
+Bodyguard,9,OG cookies pulling cookies out my cookie jar not no milk,milk,11,.357 blue tips them my same shits,tips,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,10,I just hit it till that bitch get hard,hit,10,I just hit it till that bitch get hard,bitch,INNER,SLANT,cmu,MED,Y
+Bodyguard,10,I just hit it till that bitch get hard,hit,10,I just hit it till that bitch get hard,till,INNER,SLANT,cmu,MED,Y
+Bodyguard,10,I just hit it till that bitch get hard,till,10,I just hit it till that bitch get hard,bitch,INNER,SLANT,cmu,MED,Y
+Bodyguard,10,I just hit it till that bitch get hard,bitch,11,.357 blue tips them my same shits,shits,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,10,I just hit it till that bitch get hard,bitch,11,.357 blue tips them my same shits,tips,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,10,I just hit it till that bitch get hard,hit,11,.357 blue tips them my same shits,shits,INNER,SLANT,cmu,MED,Y
+Bodyguard,10,I just hit it till that bitch get hard,hit,11,.357 blue tips them my same shits,tips,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,10,I just hit it till that bitch get hard,till,11,.357 blue tips them my same shits,shits,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,10,I just hit it till that bitch get hard,till,11,.357 blue tips them my same shits,tips,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,11,.357 blue tips them my same shits,tips,11,.357 blue tips them my same shits,shits,INNER,SLANT,cmu,MED,Y
+Bodyguard,11,.357 blue tips them my same shits,same,12,Dirty face i might dirty face i might take sum,face,INNER,SLANT,cmu,MED,Y
+Bodyguard,11,.357 blue tips them my same shits,same,12,Dirty face i might dirty face i might take sum,take,INNER,SLANT,cmu,MED,Y
+Bodyguard,11,.357 blue tips them my same shits,same,13,Pull up on em i might pull up on em i might break sum,break,INNER,SLANT,cmu,MED,Y
+Bodyguard,12,Dirty face i might dirty face i might take sum,Dirty,12,Dirty face i might dirty face i might take sum,dirty,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,12,Dirty face i might dirty face i might take sum,face,12,Dirty face i might dirty face i might take sum,face,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,12,Dirty face i might dirty face i might take sum,face,12,Dirty face i might dirty face i might take sum,take,INNER,SLANT,cmu,MED,Y
+Bodyguard,12,Dirty face i might dirty face i might take sum,might,12,Dirty face i might dirty face i might take sum,might,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,12,Dirty face i might dirty face i might take sum,sum,13,Pull up on em i might pull up on em i might break sum,sum,END,REPEAT,spelling,HIGH,N
+Bodyguard,12,Dirty face i might dirty face i might take sum,face,13,Pull up on em i might pull up on em i might break sum,break,INNER,SLANT,cmu,MED,Y
+Bodyguard,12,Dirty face i might dirty face i might take sum,might,13,Pull up on em i might pull up on em i might break sum,might,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,12,Dirty face i might dirty face i might take sum,take,13,Pull up on em i might pull up on em i might break sum,break,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,12,Dirty face i might dirty face i might take sum,sum,14,50 rounds with them 50 rounds im gone shake sum,sum,END,REPEAT,spelling,HIGH,N
+Bodyguard,12,Dirty face i might dirty face i might take sum,face,14,50 rounds with them 50 rounds im gone shake sum,shake,INNER,SLANT,cmu,MED,Y
+Bodyguard,12,Dirty face i might dirty face i might take sum,take,14,50 rounds with them 50 rounds im gone shake sum,shake,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,13,Pull up on em i might pull up on em i might break sum,em,13,Pull up on em i might pull up on em i might break sum,em,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,13,Pull up on em i might pull up on em i might break sum,might,13,Pull up on em i might pull up on em i might break sum,might,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,13,Pull up on em i might pull up on em i might break sum,Pull,13,Pull up on em i might pull up on em i might break sum,pull,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,13,Pull up on em i might pull up on em i might break sum,sum,14,50 rounds with them 50 rounds im gone shake sum,sum,END,REPEAT,spelling,HIGH,N
+Bodyguard,13,Pull up on em i might pull up on em i might break sum,break,14,50 rounds with them 50 rounds im gone shake sum,shake,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,13,Pull up on em i might pull up on em i might break sum,em,15,My bodyguard i guard my own body i got bomb threat,threat,INNER,SLANT,cmu,MED,Y
+Bodyguard,13,Pull up on em i might pull up on em i might break sum,sum,17,Im rolling im with the woopers ready to hunt sum,sum,END,REPEAT,spelling,HIGH,N
+Bodyguard,14,50 rounds with them 50 rounds im gone shake sum,rounds,14,50 rounds with them 50 rounds im gone shake sum,rounds,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,14,50 rounds with them 50 rounds im gone shake sum,rounds,16,Im laughing im counting old hunnids old as yo grandma,counting,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,14,50 rounds with them 50 rounds im gone shake sum,sum,17,Im rolling im with the woopers ready to hunt sum,sum,END,REPEAT,spelling,HIGH,N
+Bodyguard,14,50 rounds with them 50 rounds im gone shake sum,sum,18,Do the dash on any nigga think he want sum he dont want nun,nun,END,SLANT,cmu,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,body,15,My bodyguard i guard my own body i got bomb threat,bomb,INNER,SLANT,cmu,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,body,15,My bodyguard i guard my own body i got bomb threat,got,INNER,SLANT,cmu,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,bodyguard,15,My bodyguard i guard my own body i got bomb threat,body,INNER,SLANT,cmu,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,bodyguard,15,My bodyguard i guard my own body i got bomb threat,bomb,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,bodyguard,15,My bodyguard i guard my own body i got bomb threat,got,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,bodyguard,15,My bodyguard i guard my own body i got bomb threat,guard,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,got,15,My bodyguard i guard my own body i got bomb threat,bomb,INNER,SLANT,cmu,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,guard,15,My bodyguard i guard my own body i got bomb threat,body,INNER,SLANT,cmu,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,guard,15,My bodyguard i guard my own body i got bomb threat,bomb,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,guard,15,My bodyguard i guard my own body i got bomb threat,got,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,own,16,Im laughing im counting old hunnids old as yo grandma,old,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,own,17,Im rolling im with the woopers ready to hunt sum,rolling,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,15,My bodyguard i guard my own body i got bomb threat,threat,17,Im rolling im with the woopers ready to hunt sum,ready,INNER,SLANT,cmu,MED,Y
+Bodyguard,16,Im laughing im counting old hunnids old as yo grandma,laughing,16,Im laughing im counting old hunnids old as yo grandma,grandma,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,16,Im laughing im counting old hunnids old as yo grandma,old,16,Im laughing im counting old hunnids old as yo grandma,old,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,16,Im laughing im counting old hunnids old as yo grandma,old,17,Im rolling im with the woopers ready to hunt sum,rolling,INNER,SLANT,cmu,MED,Y
+Bodyguard,16,Im laughing im counting old hunnids old as yo grandma,grandma,18,Do the dash on any nigga think he want sum he dont want nun,dash,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,16,Im laughing im counting old hunnids old as yo grandma,laughing,18,Do the dash on any nigga think he want sum he dont want nun,dash,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,17,Im rolling im with the woopers ready to hunt sum,hunt,17,Im rolling im with the woopers ready to hunt sum,sum,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,17,Im rolling im with the woopers ready to hunt sum,sum,18,Do the dash on any nigga think he want sum he dont want nun,nun,END,SLANT,cmu,MED,Y
+Bodyguard,17,Im rolling im with the woopers ready to hunt sum,hunt,18,Do the dash on any nigga think he want sum he dont want nun,nun,INNER,SLANT,cmu,MED,Y
+Bodyguard,17,Im rolling im with the woopers ready to hunt sum,hunt,18,Do the dash on any nigga think he want sum he dont want nun,sum,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,17,Im rolling im with the woopers ready to hunt sum,ready,18,Do the dash on any nigga think he want sum he dont want nun,any,INNER,SLANT,cmu,MED,Y
+Bodyguard,17,Im rolling im with the woopers ready to hunt sum,sum,18,Do the dash on any nigga think he want sum he dont want nun,sum,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,18,Do the dash on any nigga think he want sum he dont want nun,sum,18,Do the dash on any nigga think he want sum he dont want nun,nun,INNER,SLANT,cmu,MED,Y
+Bodyguard,18,Do the dash on any nigga think he want sum he dont want nun,want,18,Do the dash on any nigga think he want sum he dont want nun,want,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,18,Do the dash on any nigga think he want sum he dont want nun,dash,19,Who that its lil Kodak project baby,Kodak,INNER,SLANT,cmu,MED,Y
+Bodyguard,18,Do the dash on any nigga think he want sum he dont want nun,think,19,Who that its lil Kodak project baby,lil,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,18,Do the dash on any nigga think he want sum he dont want nun,want,19,Who that its lil Kodak project baby,project,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,18,Do the dash on any nigga think he want sum he dont want nun,any,20,Audi A8 im gettin to the damn cake,gettin,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,18,Do the dash on any nigga think he want sum he dont want nun,dash,20,Audi A8 im gettin to the damn cake,damn,INNER,SLANT,cmu,MED,Y
+Bodyguard,19,Who that its lil Kodak project baby,baby,20,Audi A8 im gettin to the damn cake,cake,END,SLANT,cmu,MED,Y
+Bodyguard,19,Who that its lil Kodak project baby,Kodak,20,Audi A8 im gettin to the damn cake,damn,INNER,SLANT,cmu,MED,Y
+Bodyguard,19,Who that its lil Kodak project baby,baby,21,In Club Lux you catch me sticking in the damn place,place,END,SLANT,cmu,MED,Y
+Bodyguard,19,Who that its lil Kodak project baby,Kodak,21,In Club Lux you catch me sticking in the damn place,catch,INNER,SLANT,cmu,MED,Y
+Bodyguard,19,Who that its lil Kodak project baby,Kodak,21,In Club Lux you catch me sticking in the damn place,damn,INNER,SLANT,cmu,MED,Y
+Bodyguard,19,Who that its lil Kodak project baby,lil,21,In Club Lux you catch me sticking in the damn place,sticking,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,19,Who that its lil Kodak project baby,baby,22,He caught a case he went to singing like he Ray J,J,END,ASSONANCE,vowel,MED,Y
+Bodyguard,20,Audi A8 im gettin to the damn cake,cake,21,In Club Lux you catch me sticking in the damn place,place,END,SLANT,cmu,MED,Y
+Bodyguard,20,Audi A8 im gettin to the damn cake,damn,21,In Club Lux you catch me sticking in the damn place,catch,INNER,SLANT,cmu,MED,Y
+Bodyguard,20,Audi A8 im gettin to the damn cake,damn,21,In Club Lux you catch me sticking in the damn place,damn,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,20,Audi A8 im gettin to the damn cake,cake,22,He caught a case he went to singing like he Ray J,J,END,ASSONANCE,vowel,MED,Y
+Bodyguard,20,Audi A8 im gettin to the damn cake,cake,22,He caught a case he went to singing like he Ray J,case,INNER,SLANT,cmu,MED,Y
+Bodyguard,20,Audi A8 im gettin to the damn cake,cake,22,He caught a case he went to singing like he Ray J,Ray,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,20,Audi A8 im gettin to the damn cake,gettin,22,He caught a case he went to singing like he Ray J,went,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,21,In Club Lux you catch me sticking in the damn place,catch,21,In Club Lux you catch me sticking in the damn place,damn,INNER,SLANT,cmu,MED,Y
+Bodyguard,21,In Club Lux you catch me sticking in the damn place,Club,21,In Club Lux you catch me sticking in the damn place,Lux,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,21,In Club Lux you catch me sticking in the damn place,place,22,He caught a case he went to singing like he Ray J,J,END,ASSONANCE,vowel,MED,Y
+Bodyguard,21,In Club Lux you catch me sticking in the damn place,place,22,He caught a case he went to singing like he Ray J,case,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,21,In Club Lux you catch me sticking in the damn place,place,22,He caught a case he went to singing like he Ray J,Ray,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,21,In Club Lux you catch me sticking in the damn place,sticking,22,He caught a case he went to singing like he Ray J,singing,INNER,SLANT,cmu,MED,Y
+Bodyguard,21,In Club Lux you catch me sticking in the damn place,Club,23,Look I ain't got no love for you niggas,love,INNER,SLANT,cmu,MED,Y
+Bodyguard,21,In Club Lux you catch me sticking in the damn place,Lux,23,Look I ain't got no love for you niggas,love,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,21,In Club Lux you catch me sticking in the damn place,place,23,Look I ain't got no love for you niggas,ain't,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,22,He caught a case he went to singing like he Ray J,case,22,He caught a case he went to singing like he Ray J,J,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,22,He caught a case he went to singing like he Ray J,case,22,He caught a case he went to singing like he Ray J,Ray,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,22,He caught a case he went to singing like he Ray J,Ray,22,He caught a case he went to singing like he Ray J,J,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,22,He caught a case he went to singing like he Ray J,case,23,Look I ain't got no love for you niggas,ain't,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,22,He caught a case he went to singing like he Ray J,caught,23,Look I ain't got no love for you niggas,got,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,22,He caught a case he went to singing like he Ray J,J,23,Look I ain't got no love for you niggas,ain't,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,22,He caught a case he went to singing like he Ray J,Ray,23,Look I ain't got no love for you niggas,ain't,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,22,He caught a case he went to singing like he Ray J,caught,24,Sniper gang I put some slugs throught you niggas,throught,INNER,SLANT,spelling,LOW,Y
+Bodyguard,22,He caught a case he went to singing like he Ray J,like,24,Sniper gang I put some slugs throught you niggas,Sniper,INNER,SLANT,cmu,MED,Y
+Bodyguard,23,Look I ain't got no love for you niggas,niggas,24,Sniper gang I put some slugs throught you niggas,niggas,END,REPEAT,spelling,HIGH,N
+Bodyguard,23,Look I ain't got no love for you niggas,Look,24,Sniper gang I put some slugs throught you niggas,put,INNER,SLANT,cmu,MED,Y
+Bodyguard,23,Look I ain't got no love for you niggas,love,24,Sniper gang I put some slugs throught you niggas,slugs,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,23,Look I ain't got no love for you niggas,love,24,Sniper gang I put some slugs throught you niggas,some,INNER,SLANT,cmu,MED,Y
+Bodyguard,23,Look I ain't got no love for you niggas,got,25,That tommy rip through yo body,body,INNER,SLANT,cmu,MED,Y
+Bodyguard,23,Look I ain't got no love for you niggas,got,25,That tommy rip through yo body,tommy,INNER,SLANT,cmu,MED,Y
+Bodyguard,24,Sniper gang I put some slugs throught you niggas,some,24,Sniper gang I put some slugs throught you niggas,slugs,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,24,Sniper gang I put some slugs throught you niggas,Sniper,26,Lil boy dont try me yo wifey she right here by me,by,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,24,Sniper gang I put some slugs throught you niggas,Sniper,26,Lil boy dont try me yo wifey she right here by me,right,INNER,SLANT,cmu,MED,Y
+Bodyguard,24,Sniper gang I put some slugs throught you niggas,Sniper,26,Lil boy dont try me yo wifey she right here by me,try,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,24,Sniper gang I put some slugs throught you niggas,throught,26,Lil boy dont try me yo wifey she right here by me,right,INNER,SLANT,spelling,LOW,Y
+Bodyguard,25,That tommy rip through yo body,tommy,25,That tommy rip through yo body,body,INNER,SLANT,cmu,MED,Y
+Bodyguard,25,That tommy rip through yo body,rip,26,Lil boy dont try me yo wifey she right here by me,Lil,INNER,SLANT,cmu,MED,Y
+Bodyguard,25,That tommy rip through yo body,rip,26,Lil boy dont try me yo wifey she right here by me,wifey,INNER,SLANT,spelling,LOW,Y
+Bodyguard,25,That tommy rip through yo body,body,27,She on a jolly she vibing,jolly,INNER,SLANT,cmu,MED,Y
+Bodyguard,25,That tommy rip through yo body,tommy,27,She on a jolly she vibing,jolly,INNER,SLANT,cmu,MED,Y
+Bodyguard,25,That tommy rip through yo body,body,28,She popping pussy she popping molly,molly,END,SLANT,cmu,MED,Y
+Bodyguard,25,That tommy rip through yo body,body,29,I'm pimping so call me Pippen I'm going Scotty,Scotty,END,SLANT,cmu,MED,Y
+Bodyguard,26,Lil boy dont try me yo wifey she right here by me,Lil,26,Lil boy dont try me yo wifey she right here by me,wifey,INNER,SLANT,spelling,LOW,Y
+Bodyguard,26,Lil boy dont try me yo wifey she right here by me,right,26,Lil boy dont try me yo wifey she right here by me,by,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,26,Lil boy dont try me yo wifey she right here by me,try,26,Lil boy dont try me yo wifey she right here by me,by,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,26,Lil boy dont try me yo wifey she right here by me,try,26,Lil boy dont try me yo wifey she right here by me,right,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,27,She on a jolly she vibing,jolly,28,She popping pussy she popping molly,molly,INNER,MULTI,multi,HIGH,Y
+Bodyguard,27,She on a jolly she vibing,jolly,28,She popping pussy she popping molly,popping,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,27,She on a jolly she vibing,vibing,28,She popping pussy she popping molly,popping,INNER,PERFECT,spelling,MED,Y
+Bodyguard,27,She on a jolly she vibing,jolly,29,I'm pimping so call me Pippen I'm going Scotty,Scotty,INNER,SLANT,cmu,MED,Y
+Bodyguard,27,She on a jolly she vibing,vibing,29,I'm pimping so call me Pippen I'm going Scotty,going,INNER,PERFECT,spelling,MED,Y
+Bodyguard,27,She on a jolly she vibing,vibing,29,I'm pimping so call me Pippen I'm going Scotty,pimping,INNER,PERFECT,spelling,MED,Y
+Bodyguard,27,She on a jolly she vibing,vibing,29,I'm pimping so call me Pippen I'm going Scotty,Pippen,INNER,SLANT,spelling,LOW,Y
+Bodyguard,28,She popping pussy she popping molly,popping,28,She popping pussy she popping molly,molly,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,28,She popping pussy she popping molly,popping,28,She popping pussy she popping molly,popping,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,28,She popping pussy she popping molly,molly,29,I'm pimping so call me Pippen I'm going Scotty,Scotty,END,SLANT,cmu,MED,Y
+Bodyguard,28,She popping pussy she popping molly,popping,29,I'm pimping so call me Pippen I'm going Scotty,pimping,INNER,PERFECT,spelling,MED,Y
+Bodyguard,28,She popping pussy she popping molly,popping,29,I'm pimping so call me Pippen I'm going Scotty,Scotty,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,29,I'm pimping so call me Pippen I'm going Scotty,pimping,29,I'm pimping so call me Pippen I'm going Scotty,Pippen,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,29,I'm pimping so call me Pippen I'm going Scotty,going,31,I'm grubbing at benihanas told em no onions,grubbing,INNER,PERFECT,spelling,MED,Y
+Bodyguard,29,I'm pimping so call me Pippen I'm going Scotty,going,31,I'm grubbing at benihanas told em no onions,no,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,29,I'm pimping so call me Pippen I'm going Scotty,going,31,I'm grubbing at benihanas told em no onions,told,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,29,I'm pimping so call me Pippen I'm going Scotty,pimping,31,I'm grubbing at benihanas told em no onions,grubbing,INNER,PERFECT,spelling,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,Hungry,30,Hungry I'm money hungry I need a hunni,hungry,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,30,Hungry I'm money hungry I need a hunni,Hungry,30,Hungry I'm money hungry I need a hunni,money,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,money,30,Hungry I'm money hungry I need a hunni,hungry,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,money,30,Hungry I'm money hungry I need a hunni,hunni,INNER,SLANT,spelling,LOW,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,Hungry,31,I'm grubbing at benihanas told em no onions,onions,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,hunni,31,I'm grubbing at benihanas told em no onions,grubbing,INNER,ASSONANCE,vowel,LOW,N
+Bodyguard,30,Hungry I'm money hungry I need a hunni,money,31,I'm grubbing at benihanas told em no onions,onions,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,Hungry,32,Im clutching I just snuck in the club with the piece,club,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,Hungry,32,Im clutching I just snuck in the club with the piece,clutching,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,Hungry,32,Im clutching I just snuck in the club with the piece,snuck,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,hunni,32,Im clutching I just snuck in the club with the piece,clutching,INNER,ASSONANCE,vowel,LOW,N
+Bodyguard,30,Hungry I'm money hungry I need a hunni,money,32,Im clutching I just snuck in the club with the piece,club,INNER,SLANT,cmu,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,money,32,Im clutching I just snuck in the club with the piece,clutching,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,money,32,Im clutching I just snuck in the club with the piece,snuck,INNER,SLANT,cmu,MED,Y
+Bodyguard,30,Hungry I'm money hungry I need a hunni,need,32,Im clutching I just snuck in the club with the piece,piece,INNER,SLANT,cmu,MED,Y
+Bodyguard,31,I'm grubbing at benihanas told em no onions,told,31,I'm grubbing at benihanas told em no onions,no,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,31,I'm grubbing at benihanas told em no onions,grubbing,32,Im clutching I just snuck in the club with the piece,clutching,INNER,PERFECT,spelling,MED,Y
+Bodyguard,31,I'm grubbing at benihanas told em no onions,onions,32,Im clutching I just snuck in the club with the piece,club,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,31,I'm grubbing at benihanas told em no onions,onions,32,Im clutching I just snuck in the club with the piece,clutching,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,31,I'm grubbing at benihanas told em no onions,onions,32,Im clutching I just snuck in the club with the piece,snuck,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,31,I'm grubbing at benihanas told em no onions,grubbing,33,Im busting so I dont need no damn security,busting,INNER,PERFECT,spelling,MED,Y
+Bodyguard,31,I'm grubbing at benihanas told em no onions,no,33,Im busting so I dont need no damn security,no,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,31,I'm grubbing at benihanas told em no onions,onions,33,Im busting so I dont need no damn security,busting,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,31,I'm grubbing at benihanas told em no onions,told,33,Im busting so I dont need no damn security,dont,INNER,ASSONANCE,vowel,LOW,N
+Bodyguard,31,I'm grubbing at benihanas told em no onions,told,33,Im busting so I dont need no damn security,no,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,clutching,32,Im clutching I just snuck in the club with the piece,club,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,clutching,32,Im clutching I just snuck in the club with the piece,snuck,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,snuck,32,Im clutching I just snuck in the club with the piece,club,INNER,SLANT,cmu,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,club,33,Im busting so I dont need no damn security,busting,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,clutching,33,Im busting so I dont need no damn security,busting,INNER,SLANT,cmu,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,piece,33,Im busting so I dont need no damn security,need,INNER,SLANT,cmu,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,snuck,33,Im busting so I dont need no damn security,busting,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,piece,34,30 deep pull up 30 deep where yo mama sleep,sleep,END,SLANT,cmu,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,piece,34,30 deep pull up 30 deep where yo mama sleep,deep,INNER,SLANT,cmu,MED,Y
+Bodyguard,32,Im clutching I just snuck in the club with the piece,piece,35,Ima fien Ima money fien money got me geeked,geeked,END,ASSONANCE,vowel,LOW,N
+Bodyguard,33,Im busting so I dont need no damn security,need,34,30 deep pull up 30 deep where yo mama sleep,deep,INNER,SLANT,cmu,MED,Y
+Bodyguard,33,Im busting so I dont need no damn security,need,34,30 deep pull up 30 deep where yo mama sleep,sleep,INNER,SLANT,cmu,MED,Y
+Bodyguard,33,Im busting so I dont need no damn security,security,34,30 deep pull up 30 deep where yo mama sleep,pull,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,33,Im busting so I dont need no damn security,busting,35,Ima fien Ima money fien money got me geeked,money,INNER,ASSONANCE,vowel,MED,Y
+Bodyguard,33,Im busting so I dont need no damn security,need,35,Ima fien Ima money fien money got me geeked,geeked,INNER,SLANT,spelling,LOW,Y
+Bodyguard,34,30 deep pull up 30 deep where yo mama sleep,deep,34,30 deep pull up 30 deep where yo mama sleep,deep,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,34,30 deep pull up 30 deep where yo mama sleep,deep,34,30 deep pull up 30 deep where yo mama sleep,sleep,INNER,PERFECT,cmu,HIGH,Y
+Bodyguard,34,30 deep pull up 30 deep where yo mama sleep,sleep,35,Ima fien Ima money fien money got me geeked,geeked,END,SLANT,spelling,LOW,Y
+Bodyguard,34,30 deep pull up 30 deep where yo mama sleep,deep,35,Ima fien Ima money fien money got me geeked,geeked,INNER,SLANT,spelling,LOW,Y
+Bodyguard,34,30 deep pull up 30 deep where yo mama sleep,mama,35,Ima fien Ima money fien money got me geeked,got,INNER,SLANT,cmu,MED,Y
+Bodyguard,35,Ima fien Ima money fien money got me geeked,fien,35,Ima fien Ima money fien money got me geeked,fien,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,35,Ima fien Ima money fien money got me geeked,fien,35,Ima fien Ima money fien money got me geeked,Ima,INNER,SLANT,spelling,LOW,Y
+Bodyguard,35,Ima fien Ima money fien money got me geeked,Ima,35,Ima fien Ima money fien money got me geeked,fien,INNER,SLANT,spelling,LOW,Y
+Bodyguard,35,Ima fien Ima money fien money got me geeked,Ima,35,Ima fien Ima money fien money got me geeked,Ima,INNER,REPEAT,spelling,HIGH,N
+Bodyguard,35,Ima fien Ima money fien money got me geeked,money,35,Ima fien Ima money fien money got me geeked,money,INNER,REPEAT,spelling,HIGH,N

@@ -316,6 +316,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 304 | lihtz | Lihtz | 1 | 36 | 234 | 41 | 193 | 234 | 2026-11-10 13:25 ET |
 | 305 | rocko | Rocko | 1 | 36 | 148 | 27 | 121 | 148 | 2026-11-10 13:25 ET |
 | 306 | ybs-skola | YBS Skola | 1 | 36 | 203 | 47 | 156 | 201 | 2026-11-10 13:25 ET |
+| 307 | bandman-kevo | Bandman Kevo | 1 | 35 | 197 | 35 | 162 | 194 | 2026-11-10 13:25 ET |
+| 308 | boosa-da-shoota | Boosa Da Shoota | 1 | 35 | 252 | 64 | 188 | 252 | 2026-11-10 13:25 ET |
+| 309 | joey-shady | Joey Shady | 1 | 35 | 273 | 37 | 236 | 269 | 2026-11-10 13:26 ET |
+| 310 | nino-breeze | Nino Breeze | 1 | 35 | 366 | 45 | 321 | 354 | 2026-11-10 13:26 ET |
+| 311 | project-pat | Project Pat | 1 | 35 | 309 | 36 | 273 | 306 | 2026-11-10 13:26 ET |
+| 312 | woop | Woop | 1 | 35 | 270 | 22 | 248 | 265 | 2026-11-10 13:26 ET |
+| 313 | bring-me-the-horizon | Bring Me The Horizon | 1 | 34 | 82 | 21 | 61 | 82 | 2026-11-10 13:26 ET |
+| 314 | choshane-johnson | Choshane Johnson | 1 | 34 | 157 | 34 | 123 | 157 | 2026-11-10 13:26 ET |
+| 315 | da-boi-hustlz | Da Boi Hustlz | 1 | 34 | 187 | 40 | 147 | 186 | 2026-11-10 13:26 ET |
+| 316 | jaydayoungan | JayDaYoungan | 1 | 34 | 235 | 64 | 171 | 235 | 2026-11-10 13:26 ET |
 
 ## Failures
 
@@ -323,7 +333,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 306/386: YBS Skola.
+Finished 316/386: JayDaYoungan.
 
 ## Final
 
