@@ -66,6 +66,16 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 | 54 | 2-chainz | 2 Chainz | 5 | 287 | 1488 | 302 | 1186 | 1456 | 2026-11-10 13:17 ET |
 | 55 | dave-east | Dave East | 5 | 274 | 1976 | 329 | 1647 | 1943 | 2026-11-10 13:17 ET |
 | 56 | polo-g | Polo G | 6 | 267 | 2556 | 437 | 2119 | 2526 | 2026-11-10 13:17 ET |
+| 57 | yg | YG | 5 | 257 | 1687 | 267 | 1420 | 1670 | 2026-11-10 13:17 ET |
+| 58 | 2pac | 2Pac | 1 | 250 | 1945 | 251 | 1694 | 1924 | 2026-11-10 13:17 ET |
+| 59 | q-money | Q Money | 4 | 238 | 1657 | 349 | 1308 | 1629 | 2026-11-10 13:17 ET |
+| 60 | capo-gbe | Capo (GBE) | 8 | 229 | 1793 | 214 | 1579 | 1778 | 2026-11-10 13:17 ET |
+| 61 | 21-lil-harold | 21 Lil Harold | 5 | 218 | 1634 | 248 | 1386 | 1599 | 2026-11-10 13:17 ET |
+| 62 | boosie-badazz | Boosie Badazz | 3 | 213 | 1637 | 181 | 1456 | 1617 | 2026-11-10 13:17 ET |
+| 63 | icewear-vezzo | Icewear Vezzo | 3 | 204 | 1476 | 294 | 1182 | 1448 | 2026-11-10 13:17 ET |
+| 64 | pnb-rock | PnB Rock | 6 | 197 | 1199 | 165 | 1034 | 1182 | 2026-11-10 13:17 ET |
+| 65 | kanye-west | Kanye West | 4 | 194 | 1113 | 268 | 845 | 1100 | 2026-11-10 13:17 ET |
+| 66 | hotblock-jmoe | HotBlock Jmoe | 4 | 192 | 1649 | 262 | 1387 | 1605 | 2026-11-10 13:17 ET |
 
 ## Failures
 
@@ -73,7 +83,7 @@ Stall: 2026-11-10 01:28 ET the process wedged uninterruptible while pairing G He
 
 ## Status
 
-Finished 56/386: Polo G.
+Finished 66/386: HotBlock Jmoe.
 
 ## Final
 
